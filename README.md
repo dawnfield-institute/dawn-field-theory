@@ -93,6 +93,37 @@ Dawn Field Theory is built to test these beliefs computationally.
 
 ---
 
+## 🧠 CIMM: Entropy-Based Post-Symbolic Intelligence (Legacy Spike)
+
+**CIMM (Cosmic Information Mining Model)** is the original AGI prototype developed within the Dawn Field Theory framework — a **post-symbolic intelligence engine** built entirely on entropy flow, collapse stabilization, and self-organizing field dynamics.
+
+It is now considered a **legacy spike implementation**:  
+> A functional proof-of-concept that demonstrated the viability of entropy-regulated cognition and collapse-based adaptation.
+
+A **new, more refined model is currently in development**, incorporating deeper simulation fidelity, multi-agent synchronization layers, and improved field interaction protocols.
+
+📎 **[View the full CIMM architecture →](./legacy_works/models/CIMM/README.md)**
+
+### ⚙️ CIMM Agents Do the Following:
+
+- Learn in real-time (no pretraining or checkpoints)
+- Self-prune based on Landauer information cost
+- Adapt to collapse deviations rather than fixed targets
+- Coordinate through shared entropy states
+
+---
+
+### 🔍 Why It Matters
+
+CIMM proved that:
+- Symbolic reasoning isn’t required for generalization
+- Collapse-driven feedback loops can support learning
+- Field-based memory and entropy stabilization create coherence without explicit logic
+
+CIMM anchors the **first wave** of Dawn Field Theory’s practical implementations, and lays the groundwork for a **fully field-theoretic model of intelligence** now in progress.
+
+
+---
 ## 📖 License
 
 This project is licensed under **AGPL-3.0**, with a custom augmentation known as the **Dawn Collective Open Insight License (DC-OIL)** in development.  
