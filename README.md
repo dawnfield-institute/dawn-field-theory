@@ -124,7 +124,7 @@ A refined multi-agent model is now in development, with stronger field interacti
 
 ## 🧠 Philosophy
 
-We believe:
+I believe:
 
 > Cognition is collapse regulation.  
 > Learning is the smoothing of entropy gradients.  
