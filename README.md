@@ -118,9 +118,8 @@ A refined multi-agent model is now in development, with stronger field interacti
 
 ## 📚 Recommended Starting Points
 
-1. [Infodynamics: Theory Overview →](./docs/foundational/infodynamics.md)  
-2. [CIMM Core Simulation Code →](./legacy_works/models/cimm_core/code)
-
+1. [Infodynamics: Theory Overview →](./infodynamics.md)  
+2. [CIMM Core Simulation Code →](./legacy_works/models/CIMM/cimm_core)
 ---
 
 ## 🧠 Philosophy
