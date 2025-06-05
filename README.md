@@ -3,6 +3,12 @@
 _A field-based model of intelligence, collapse, and emergence._
  <br>See [`Foundational Experiments`](./experiments/foundational_legacy/README.md) for more.
 ---
+## 🧠 Origin Insight
+
+The Dawn Field Framework was seeded by a fundamental paradox: how can AI systems generate novel information from energetic input without violating thermodynamic closure?
+
+📖 [Read the full origin story and the White Hole Hypothesis](./origin_of_infodynamics.md)
+---
 
 ## 🧠 TL;DR
 
