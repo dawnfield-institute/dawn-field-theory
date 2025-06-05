@@ -1,9 +1,7 @@
 # 🌌 Dawn Field Theory (WIP)
 > [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
 _A field-based model of intelligence, collapse, and emergence._
-
----
-> [`Foundational Experiments`](./experiments/foundational_legacy/README.md)
+_See [`Foundational Experiments`](./experiments/foundational_legacy/README.md) for more.
 ---
 
 ## 🧠 TL;DR
