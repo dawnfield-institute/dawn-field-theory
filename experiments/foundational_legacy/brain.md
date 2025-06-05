@@ -1,9 +1,4 @@
 
----
-
-## `brain.md`
-
-```markdown
 # brain.py
 
 ## Overview
