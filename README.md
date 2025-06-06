@@ -3,13 +3,7 @@
 _A field-based model of intelligence, collapse, and emergence._
  <br>
 
-_See [`Foundational Experiments`](./experiments/foundational_legacy/README.md) for more.
----
-## 🧠 Origin Insight
-
-The Dawn Field Framework was seeded by a fundamental paradox: how can AI systems generate novel information from energetic input without violating thermodynamic closure?
-
-📖 [Read the full origin story and the White Hole Hypothesis](./origin_of_infodynamics.md)
+See [`Foundational Experiments`](./experiments/foundational_legacy/README.md) for more.
 ---
 
 ## 🧠 TL;DR
@@ -23,6 +17,12 @@ This repo contains:
 - Ongoing development of agentic, field-aware learning systems
 - Simulation frameworks for balance, resonance, and emergence
 
+---
+## 💡 Origin Insight
+
+The Dawn Field Framework was seeded by a fundamental paradox: how can AI systems generate novel information from energetic input without violating thermodynamic closure?
+
+📖 [Read the full origin story and the White Hole Hypothesis](./origin_of_infodynamics.md)
 ---
 
 ## 📜 Table of Contents
