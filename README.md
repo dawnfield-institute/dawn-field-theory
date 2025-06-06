@@ -23,6 +23,7 @@ This repo contains:
 The Dawn Field Framework was seeded by a fundamental paradox: how can AI systems generate novel information from energetic input without violating thermodynamic closure?
 
 📖 [Read the full origin story and the White Hole Hypothesis](./origin_of_infodynamics.md)
+<br>
 ---
 
 ## 📜 Table of Contents
