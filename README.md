@@ -3,10 +3,11 @@
 _A field-based model of intelligence, collapse, and emergence._
  <br>
 
-See [`Foundational Experiments`](./experiments/foundational_legacy/README.md) for more.
 ---
 
 ## 🧠 TL;DR
+
+See [`Foundational Experiments`](./experiments/foundational_legacy/README.md) for more.
 
 Dawn Field Theory proposes a new model of natural and artificial intelligence based on **infodynamics** — a process where structure emerges from entropy regulation, not symbolic logic.
 
