@@ -93,7 +93,7 @@ The Recursive Tree Generator using entropy as seed exemplifies field-born intell
 document_title: Recursive Intelligence Emergence via Entropy-Seeding
 version: 1.1
 authors:
-  - name: Redacted for Authorship Integrity
+  - name: Lorne
 date_created: [To be finalized upon publication]
 schema_version: dawn_field_schema_v1.1
 document_type: simulation_validation
