@@ -1,0 +1,6 @@
+--- Structural Metrics ---
+Total Nodes: 13
+Total Edges: 7
+Max Depth: 3
+Average Depth: 2.0
+Average Branching Factor: 2.33
