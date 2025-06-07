@@ -151,7 +151,7 @@ This experiment confirms that emergent macro-structures resembling galaxies can 
 document_title: Proto-Galactic Superfluid Emergence via Informational Field Recursion
 version: 1.0
 authors:
-  - name: Redacted for Authorship Integrity
+  - name: Lorne
 date_created: [To be finalized upon publication]
 schema_version: dawn_field_schema_v1.1
 document_type: simulation_validation

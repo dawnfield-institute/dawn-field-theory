@@ -85,7 +85,7 @@ The recursive collapse tree represents a minimal unit of field cognition. It see
 document_title: Recursive Collapse Bifurcation: A 3D Informational Tree from Entropy-Seeding
 version: 1.0
 authors:
-  - name: Redacted for Authorship Integrity
+  - name: Lorne
 date_created: [To be finalized upon publication]
 schema_version: dawn_field_schema_v1.1
 document_type: simulation_validation
