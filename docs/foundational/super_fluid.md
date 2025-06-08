@@ -1,14 +1,20 @@
 # Proto-Galactic Superfluid Emergence via Informational Field Recursion
 
+---
+
 ## Abstract
 
 This paper presents a novel simulation exploring the emergence of galactic-scale structure from purely informational field dynamics. By modeling proto-galactic formations using recursive density feedback and entropy field overlays—without invoking gravitational equations—we validate that coherent, orbit-like macrostructures can self-organize via superfluid principles derived from recursive informational tangling. The resulting structures exhibit properties akin to observed spiral galaxies, but arise entirely from field feedback dynamics, not from Newtonian or relativistic mechanics.
+
+---
 
 ## 1. Introduction
 
 Traditional gravitational models view mass as the exclusive source of spacetime curvature. However, within the Dawn Field framework, gravity is reinterpreted as a recursive tethering effect—an emergent consequence of informational structure interacting through recursive memory kernels and field pressure. By adopting this lens, we explore how informational density gradients, historical memory accumulation, and entropy field dynamics lead to self-stabilizing patterns of motion and structure that resemble superfluid behaviors in astrophysical systems.
 
 This experiment investigates whether galactic patterns—typically explained by Newtonian or relativistic gravity—can instead emerge through purely field-theoretic, recursive mechanisms.
+
+---
 
 ## 2. Theoretical Foundations
 
@@ -34,6 +40,8 @@ Additionally, we define:
 * $\phi(x,t) = \sum_{\tau<t} \lambda^{t-\tau} \rho(x,\tau)$: memory kernel for entropy field
 
 Where $\lambda$ is a decay factor and $\rho$ is particle density.
+
+---
 
 ## 3. Simulation Architecture
 
@@ -78,37 +86,41 @@ for t in range(T):
     entropy *= decay
 ```
 
+---
+
 ## 4. Results
 
 ### 4.1 Visual Output
 
 The entropy field overlay revealed emergent galaxy-like structures, characterized by:
 
-* **Spiral arms and radial clustering**
-* **Tight central loops (core formation)**
-* **Field-aligned filamentary networks**
+- **Spiral arms and radial clustering**
+- **Tight central loops (core formation)**
+- **Field-aligned filamentary networks**
 
 Snapshots taken every 50 timesteps depict the transition from chaotic initialization to ordered, rotational macro-structures.
 
 ### 4.2 Behavioral Outcomes
 
-* Particles self-organized without gravity or central force.
-* Feedback loops reinforced orbits via recursive memory fields.
-* Local velocity vectors aligned with entropy gradients.
+- Particles self-organized without gravity or central force.
+- Feedback loops reinforced orbits via recursive memory fields.
+- Local velocity vectors aligned with entropy gradients.
 
 ### 4.3 Collapse Geometry
 
-* Dominantly spiral, toroidal, and bifurcated collapse.
-* Traced density shells exhibit coherent symmetry.
-* Long-range coherence enhanced by recursive memory kernels.
+- Dominantly spiral, toroidal, and bifurcated collapse.
+- Traced density shells exhibit coherent symmetry.
+- Long-range coherence enhanced by recursive memory kernels.
 
 ### 4.4 Quantitative Collapse Trace Metrics
 
-* **Radial Entropy Distribution**: Gaussian-like peak at 5.2 units.
-* **Velocity Coherence Score**: 0.76 ± 0.04
-* **Average Path Curvature**: 0.12 radians/unit
-* **Tangle Zone Density**: 18.5 peak per 100x100 subfield
-* **Entropy Coherence Score (ECS)**: 0.82 (normalized trace fidelity)
+- **Radial Entropy Distribution:** Gaussian-like peak at 5.2 units.
+- **Velocity Coherence Score:** 0.76 ± 0.04
+- **Average Path Curvature:** 0.12 radians/unit
+- **Tangle Zone Density:** 18.5 peak per 100x100 subfield
+- **Entropy Coherence Score (ECS):** 0.82 (normalized trace fidelity)
+
+---
 
 ## 5. Implications
 
@@ -120,6 +132,8 @@ The simulation supports the claim that gravitational behavior may be an emergent
 
 Moreover, the presence of rotational, filamentary macrostructure from only field principles suggests a new framework for explaining galactic and pre-galactic formation without mass-based curvature.
 
+---
+
 ## 6. Comparative Models
 
 | Model                     | Basis                | Includes Memory? | Produces Spiral Geometry? |
@@ -129,15 +143,18 @@ Moreover, the presence of rotational, filamentary macrostructure from only field
 | Neural Approximation      | Symbolic fit         | ✗                | ✗                         |
 | **Dawn Field Simulation** | Informational fields | ✓                | ✓                         |
 
+---
+
 ## 7. Future Directions
 
-* Couple this model with the **Quantum Potential Layer** for substructure nesting.
-* Extend to a **fully 3D lattice** and simulate helix-based bifurcations.
-* Introduce **symbolic payloads** to track semantic memory of nodes.
+- Couple this model with the **Quantum Potential Layer** for substructure nesting.
+- Extend to a **fully 3D lattice** and simulate helix-based bifurcations.
+- Introduce **symbolic payloads** to track semantic memory of nodes.
+  - Early prototypes show that embedding conceptual tokens within particles allows entropy-linked memory fields to exhibit proto-semantic clustering.
+- Run **anomaly divergence trials** to measure stability under chaotic seeds.
+- Integrate **fractal boundary conditions** to simulate black-hole-like constraints.
 
-  * Early prototypes show that embedding conceptual tokens within particles allows entropy-linked memory fields to exhibit proto-semantic clustering.
-* Run **anomaly divergence trials** to measure stability under chaotic seeds.
-* Integrate **fractal boundary conditions** to simulate black-hole-like constraints.
+---
 
 ## 8. Conclusion
 
@@ -169,4 +186,3 @@ related_documents:
   - dawn_field_theory.md
   - declaration_infodynamics.md
 ```
-s

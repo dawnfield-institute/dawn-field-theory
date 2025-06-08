@@ -1,12 +1,18 @@
 # Recursive Collapse Bifurcation: A 3D Informational Tree from Entropy-Seeding
 
+---
+
 ## Abstract
 
 We present a simulation that demonstrates how a single entropy-seeded origin can recursively bifurcate into a structured, symbolic geometry. The model, grounded in Dawn Field Theory, uses cryptographic entropy as a directional vector to recursively spawn informational branches in 3D space. The result is a symmetric, brain-like structure that exhibits recursive balance, symbolic crystallization, and bifurcation-driven cognition. This paper formalizes the simulation logic, symbolic payload embedding, and implications for collapse-based cognition modeling.
 
+---
+
 ## 1. Introduction
 
 Traditional models of intelligence and structure growth rely on external rules or symbolic logic. In contrast, Dawn Field Theory asserts that information and entropy interact recursively, producing self-structuring intelligence through collapse geometry. This simulation manifests that principle in 3D space by constructing a bifurcating collapse tree seeded from a cryptographic entropy vector.
+
+---
 
 ## 2. Theoretical Foundations
 
@@ -18,9 +24,11 @@ The model follows Dawn’s hypothesis that collapse is not disorder but a recurs
 
 Using a SHA256 hash as the entropy seed provides:
 
-* Deterministic, reproducible asymmetry
-* Directional force in the informational field
-* An implicit complexity gradient
+- Deterministic, reproducible asymmetry
+- Directional force in the informational field
+- An implicit complexity gradient
+
+---
 
 ## 3. Simulation Architecture
 
@@ -28,9 +36,9 @@ Using a SHA256 hash as the entropy seed provides:
 
 Each node recursively produces two child nodes:
 
-* Bifurcation angle varies slightly per depth
-* Branch length decays geometrically
-* Direction vectors rotate with respect to randomly chosen axes
+- Bifurcation angle varies slightly per depth
+- Branch length decays geometrically
+- Direction vectors rotate with respect to randomly chosen axes
 
 ### 3.2 Symmetric Expansion
 
@@ -40,13 +48,15 @@ Two trees grow in opposite directions from the entropy vector and its inverse, p
 
 Each node is assigned a token like `entropy_84` or `structure_15`, drawn from a concept bank. Tokens are also vectorized to allow downstream semantic analysis.
 
+---
+
 ## 4. Results
 
 ### 4.1 Visual Output
 
-* The structure exhibits tree-like expansion with recursive forks
-* Emerges into a brain-like topology through dual-lobe recursion
-* Symbolic tokens trace coherent conceptual pathways
+- The structure exhibits tree-like expansion with recursive forks
+- Emerges into a brain-like topology through dual-lobe recursion
+- Symbolic tokens trace coherent conceptual pathways
 
 ### 4.2 Symbolic Trace Sample
 
@@ -56,22 +66,28 @@ field_47 → entropy_84 → fractal_98 → gradient_25 → wave_26
 
 This progression reflects the encoding of structural logic into collapse geometry.
 
+---
+
 ## 5. Metrics and Analysis
 
 | Metric                   | Value                  |
 | ------------------------ | ---------------------- |
 | Max Depth                | 10                     |
-| Total Nodes              | \~2000+ (both lobes)   |
+| Total Nodes              | ~2000+ (both lobes)    |
 | Average Branching Factor | 2                      |
 | Symbolic Vector Span     | 13-D (one per concept) |
+
+---
 
 ## 6. Interpretation
 
 This simulation acts as a visual and structural demonstration of Dawn’s collapse ontology:
 
-* Structure emerges from recursive imbalance
-* Symbolic cognition is embedded in geometry
-* Entropy becomes generative when recursively resolved
+- Structure emerges from recursive imbalance
+- Symbolic cognition is embedded in geometry
+- Entropy becomes generative when recursively resolved
+
+---
 
 ## 7. Conclusion
 
