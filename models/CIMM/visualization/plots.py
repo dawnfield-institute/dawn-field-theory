@@ -38,7 +38,7 @@ def plot_stock_predictions(model, data, actual_prices):
     plt.show()
 
 
-def plot_live_predictions(predictions, actuals, confidence):
+def plot_live_predictions(predictions, actuals):
 
     plt.figure(figsize=(10, 5))
     plt.plot(range(len(predictions)), predictions, label="Predicted Values", linestyle='dotted')

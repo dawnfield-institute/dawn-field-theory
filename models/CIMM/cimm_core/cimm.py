@@ -61,16 +61,25 @@ def compute_error_metrics(y_true, y_pred):
     y_true = y_true.flatten()
     y_pred = y_pred.flatten()
 
-    y_true = torch.abs(y_true)
-    y_pred = torch.abs(y_pred)
+    # 🔧 Normalize while retaining sign — use mean centering instead of abs normalization
+    y_true = y_true - y_true.mean()
+    y_pred = y_pred - y_pred.mean()
+    # Optionally, for soft normalization:
+    # y_true = y_true / (torch.std(y_true) + 1e-9)
+    # y_pred = y_pred / (torch.std(y_pred) + 1e-9)
 
-    y_true = y_true / (torch.sum(y_true) + 1e-9)
-    y_pred = y_pred / (torch.sum(y_pred) + 1e-9)
+    # Optional pre-scaling for Wasserstein and similar metrics
+    y_true = y_true / (torch.norm(y_true) + 1e-9)
+    y_pred = y_pred / (torch.norm(y_pred) + 1e-9)
+
+    # For KL and JS only: use softmax to ensure valid probability distributions
+    y_true_prob = torch.softmax(y_true, dim=0)
+    y_pred_prob = torch.softmax(y_pred, dim=0)
 
     epsilon = 1e-9
-    kl_div = torch.sum(y_true * torch.log((y_true + epsilon) / (y_pred + epsilon)))
+    kl_div = torch.sum(y_true_prob * torch.log((y_true_prob + epsilon) / (y_pred_prob + epsilon)))
 
-    js_div = torch.sqrt(0.5 * (kl_div + torch.sum(y_pred * torch.log((y_pred + epsilon) / (y_true + epsilon)))))
+    js_div = torch.sqrt(0.5 * (kl_div + torch.sum(y_pred_prob * torch.log((y_pred_prob + epsilon) / (y_true_prob + epsilon)))))
     js_div = torch.nan_to_num(js_div, nan=0.0)
 
     wd = torch.sum(torch.abs(torch.cumsum(y_true, dim=0) - torch.cumsum(y_pred, dim=0)))
@@ -78,8 +87,14 @@ def compute_error_metrics(y_true, y_pred):
     noise = torch.normal(0, 1e-4, size=y_pred.shape)
     y_pred_noisy = y_pred + noise
 
+    # ✅ Let JS/Wasserstein/etc operate on signed inputs
+    # They can now detect waveform misalignment and directionality
+
+    # Optional: Add signed-delta heatmaps or store sign-only versions
+    signed_error = y_pred - y_true
+
     if torch.var(y_true) == 0 or torch.var(y_pred_noisy) == 0:
-        qwcs = 0.5
+        qwcs = torch.tensor(0.5)
     else:
         qwcs = 1 - torch.abs(torch.corrcoef(torch.stack([y_true, y_pred_noisy]))[0, 1])
 
@@ -350,6 +365,10 @@ class CIMM:
 
                 loss_fn = torch.nn.MSELoss()
                 loss = loss_fn(prediction, next_actual_value)  # Both tensors are now on the same device
+                # Copilot: Add a regularization term to encourage zero-centered predictions
+                symmetry_penalty = torch.abs(prediction.mean())
+                loss = loss + 0.01 * symmetry_penalty
+
                 # ✅ Use QPL feedback to adjust training updates
                 qpl_feedback = self.qpl_layer.compute_qpl(self.entropy_monitor, self.memory_module)
                 qpl_feedback_scalar = torch.tensor(qpl_feedback, dtype=torch.float32, requires_grad=True)  # Convert safely to tensor with grad
@@ -474,9 +493,9 @@ class CIMM:
 
         # ✅ Apply superfluid filter to post-process predictions
         if len(self.past_predictions) >= 3:
-            filtered_prediction = self.superfluid.apply_superfluid_filter(self.past_predictions[-10:])
+            filtered_prediction = self.superfluid.apply_superfluid_filter(torch.tensor(self.past_predictions[-10:], device=device))
         else:
-            filtered_prediction = torch.mean(torch.tensor(self.past_predictions))
+            filtered_prediction = torch.mean(torch.tensor(self.past_predictions, device=device))
 
         target = to_scalar(self.actual_values[-1]) if self.actual_values else to_scalar(filtered_prediction)
         prediction = to_scalar(filtered_prediction)
@@ -659,15 +678,16 @@ class CIMM:
         validation_data = validation_data.to(device)
         
         with torch.no_grad():
-            output = model(validation_data).numpy()
-            target = torch.zeros(validation_data.size(0))
+            output = model(validation_data)
+            target = torch.zeros(validation_data.size(0), device=output.device)
 
             # Compute quantum and entropy-aware error metrics
             metrics = compute_error_metrics(target, output)
 
             # Log entropy-aware feedback adjustments
             entropy_value = self.entropy_monitor.calculate_entropy(output)
-            adjusted_feedback = self.entropy_monitor.entropy_feedback_adjustment(target, output)  # ✅ Now correct!
+            # Ensure torch tensors for entropy_feedback_adjustment
+            adjusted_feedback = self.entropy_monitor.entropy_feedback_adjustment(target, output)
             
             # ✅ Introduce entropy-aware adjustment speed
             scaling_factor = 1 + 0.5 * entropy_value  # More entropy → Faster adaptation
