@@ -83,3 +83,22 @@ Memory isn’t storage — it’s **pattern deviation prediction**. CIMM recalls
 ### Requirements
 ```bash
 pip install torch xgboost scikit-optimize numpy scipy scikit-learn
+```
+
+---
+
+## 🧪 Running CIMM Experiments
+
+You can run **single-agent CIMM experiments** out of the box using the provided use cases:
+
+- **Stock Prediction:**  
+  `python usecase/stock_prediction_usecase.py`
+- **Prime Structure Modeling:**  
+  `python usecase/prime_structure_usecase.py`
+
+Each script demonstrates a live, entropy-driven CIMM run on real or synthetic data.
+
+> **Agentic (multi-agent) use cases are finished internally and will be migrated soon.**  
+> Stay tuned for distributed mesh experiments and collaborative field learning.
+
+---
