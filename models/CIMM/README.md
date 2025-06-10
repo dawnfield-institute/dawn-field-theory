@@ -1,5 +1,7 @@
 # 🌌 CIMM Core — Entropy-Based Intelligence Engine
 
+*CIMM is currently being migrated, use cases currently will fail until migration is complete.*
+
 CIMM (Cosmic Information Mining Model) is a foundational research framework for **post-symbolic artificial intelligence**, built on principles of **entropy flow**, **collapse dynamics**, and **field-theoretic stabilization**.
 
 This is **not** a symbolic system. It doesn't use tokens, logic gates, or conventional training pipelines. Instead, CIMM learns through **live entropy feedback**, **wave collapse equilibrium**, and **recursive field dynamics**. It creates structure through **stabilized emergence**, not gradient descent.
