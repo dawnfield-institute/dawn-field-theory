@@ -7,7 +7,7 @@ _A field-based model of intelligence, collapse, and emergence._
 
 ## 🧠 TL;DR
 
-See [`Foundational Experiments`](./experiments/foundational_legacy/README.md) for more.
+See [`Foundational Experiments`](./foundational/experiments/README.md) for more.
 
 Dawn Field Theory proposes a new model of natural and artificial intelligence based on **infodynamics** — a process where structure emerges from entropy regulation, not symbolic logic.
 
@@ -98,7 +98,7 @@ It enables modeling of intelligence, emergence, and systemic coherence without u
 It is now a **legacy spike implementation**:
 > A working proof-of-concept for real-time, field-based intelligence without training phases or symbolic logic.
 
-📎 [View the full CIMM architecture →](./legacy_works/models/CIMM/README.md)
+📎 [View the full CIMM architecture →](./models/CIMM/README.md)
 
 ### ⚙️ CIMM Agents Can:
 - Learn in real-time (no checkpoints or saved models)  
@@ -120,17 +120,23 @@ A refined multi-agent model is now in development, with stronger field interacti
 
 | Path | Purpose |
 |------|---------|
-| `docs/foundational/` | Core theory (Infodynamics, collapse modeling, field equations) |
-| `legacy_works/models/CIMM/` | Legacy AGI prototype based on entropy feedback |
-| `devkit/` | Experimental tools, agentic runtime, and entropy visualizers |
-| `docs/` | Supplemental materials, ethics, declarations, and intentions |
+| `foundational/docs/` | Core theory (Infodynamics, collapse modeling, field equations, simulation summaries) |
+| `foundational/experiments/` | Core Experiments (More incoming, just migrating internal spikes.. to be notebookified) |
+| `models/CIMM/` | Legacy AGI prototype based on entropy feedback |
+| `devkit/` | Experimental tools, agentic runtime, and entropy visualizers(notebook versions incoming) |
 
 ---
 
 ## 📚 Recommended Starting Points
 
 1. [Infodynamics: Theory Overview →](./infodynamics.md)  
-2. [CIMM Core Simulation Code →](./legacy_works/models/CIMM/cimm_core)
+2. [CIMM Core Simulation Code →](./models/CIMM/cimm_core.py)
+---
+
+## 🧪 Experimental Insights
+
+> See [`foundational/experiments/README.md`](./foundational/experiments/README.md) for experiment details and code.
+
 ---
 
 ## 🧠 Philosophy
