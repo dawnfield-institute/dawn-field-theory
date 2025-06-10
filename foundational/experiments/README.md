@@ -1,4 +1,4 @@
-# 🧪 Foundational Experiments
+# 🧪 Foundational Experiments(WIP)
 
 This directory contains simulation scripts and computational experiments that demonstrate and validate core concepts of Dawn Field Theory. Each experiment explores a different aspect of entropy, information, collapse dynamics, or field-based intelligence.
 
