@@ -127,7 +127,7 @@ class StockPredictionUseCase:
     def preprocess_stock_data(self, ticker):
         print(f"Preprocessing stock data for ticker: {ticker}")
         stock = yf.Ticker(ticker)
-        df = stock.history(period="9y", interval="1d")
+        df = stock.history(period="1y", interval="1d")
         
         df['Returns'] = df['Close'].pct_change()
         df['Log Returns'] = torch.log1p(torch.tensor(df['Returns'].values, dtype=torch.float32))

@@ -536,14 +536,26 @@ class EntropyMonitor:
         y_pred = torch.tensor(y_pred, dtype=torch.float32).flatten()
 
         # ✅ Ensure arrays have matching sizes
-        min_size = min(y_true.size, y_pred.size)
+        # Fix: .size is a method for torch tensors, so use .numel() or .shape[0]
+        def get_size(x):
+            if hasattr(x, 'shape'):
+                return x.shape[0]
+            elif hasattr(x, 'numel'):
+                return x.numel()
+            elif hasattr(x, 'size'):
+                return x.size if isinstance(x.size, int) else x.size[0]
+            else:
+                return len(x)
+        min_size = min(get_size(y_true), get_size(y_pred))
         y_true, y_pred = y_true[:min_size], y_pred[:min_size]
 
         # ✅ Prevent NaN by checking variance before computing correlation
         if torch.var(y_true) == 0 or torch.var(y_pred) == 0:
-            qwcs = 0.5  # Default to neutral stability if no variance
+            qwcs = torch.tensor(0.5, dtype=torch.float32, device=device)
         else:
-            qwcs = 1 - torch.abs(torch.corrcoef(torch.stack([y_true, y_pred]))[0, 1]).item()
+            qwcs = 1 - torch.abs(torch.corrcoef(torch.stack([y_true, y_pred]))[0, 1])
+            if not isinstance(qwcs, torch.Tensor):
+                qwcs = torch.tensor(qwcs, dtype=torch.float32, device=device)
 
         qwcs = torch.nan_to_num(qwcs, nan=0.5)  # ✅ Replace NaN with 0.5 (neutral value)
 
