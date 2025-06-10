@@ -8,7 +8,6 @@ from cimm_core.cimm_core import CIMMCoreWrapper
 from skopt.space import Real, Integer
 from collections import deque
 import torch
-from utils.device_utils import get_device
 
 def get_device():
     return torch.device("cuda" if torch.cuda.is_available() else "cpu")
