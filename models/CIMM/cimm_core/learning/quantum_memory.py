@@ -26,7 +26,14 @@ class QuantumMemory:
     """
 
     def __init__(self):
-        self.model = XGBRegressor(n_estimators=100, learning_rate=0.05, max_depth=3)
+        self.model = XGBRegressor(
+            n_estimators=100,
+            learning_rate=0.05,
+            max_depth=3,
+            tree_method='gpu_hist',         # <--- Enable GPU acceleration
+            predictor='gpu_predictor',      # <--- Use GPU for prediction
+            gpu_id=1                        # <--- (Optional) Specify GPU device
+        )
         self.training_data = []
         self.labels = []
         self.is_trained = False
@@ -74,14 +81,27 @@ class QuantumMemory:
         # Apply dynamic gate to prediction
         wave_delta *= (1 + collapse_gate)
 
-    def predict_correction(self, entropy, qbe_feedback, collapse_deviation, refinement_delta=0):
+    def predict_correction(self, entropy, qbe_feedback, collapse_deviation, refinement_delta=None):
         """Predict optimal correction for collapse errors using AI-trained delta refinements."""
 
-        # Ensure all inputs are scalar values
-        entropy = entropy.detach() if isinstance(entropy, torch.Tensor) else entropy
-        qbe_feedback = qbe_feedback.detach() if isinstance(qbe_feedback, torch.Tensor) else qbe_feedback
-        collapse_deviation = collapse_deviation.detach() if isinstance(collapse_deviation, torch.Tensor) else collapse_deviation
-        refinement_delta = refinement_delta.detach() if isinstance(refinement_delta, torch.Tensor) else refinement_delta
+        # Ensure refinement_delta is None
+        if refinement_delta is None:
+            refinement_delta = 0.0
+
+        # Ensure all inputs are scalar values (float)
+        def to_scalar(val):
+            # Unpack tuple/list recursively if needed
+            while isinstance(val, (list, tuple)):
+                if len(val) == 0:
+                    return 0.0
+                val = val[0]
+            if isinstance(val, torch.Tensor):
+                return val.item()
+            return float(val)
+        entropy = to_scalar(entropy)
+        qbe_feedback = to_scalar(qbe_feedback)
+        collapse_deviation = to_scalar(collapse_deviation)
+        refinement_delta = to_scalar(refinement_delta)
 
         # Compute QFI Score
         qfi_score = compute_quantum_fisher_information(self.past_entropies) if len(self.past_entropies) >= 3 else 0.0

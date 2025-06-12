@@ -334,6 +334,16 @@ class CIMM:
 
             # ✅ Fix: Ensure `loss` remains a PyTorch tensor
             loss = torch.tensor(1.0, dtype=torch.float32, device=device)  # Initialize `loss`
+            # Ensure qpl_feedback is a scalar float or tensor
+            if isinstance(qpl_feedback, (list, tuple)):
+                while isinstance(qpl_feedback, (list, tuple)):
+                    if len(qpl_feedback) == 0:
+                        qpl_feedback = 0.0
+                        break
+                    qpl_feedback = qpl_feedback[0]
+            if isinstance(qpl_feedback, torch.Tensor):
+                qpl_feedback = qpl_feedback.item()
+            qpl_feedback = float(qpl_feedback)
             loss = loss * (1 + 0.05 * qpl_feedback)  # Use the float `qpl_feedback`
 
             # ✅ Fix: Remove `.item()` from `qpl_feedback`
@@ -371,10 +381,20 @@ class CIMM:
 
                 # ✅ Use QPL feedback to adjust training updates
                 qpl_feedback = self.qpl_layer.compute_qpl(self.entropy_monitor, self.memory_module)
-                qpl_feedback_scalar = torch.tensor(qpl_feedback, dtype=torch.float32, requires_grad=True)  # Convert safely to tensor with grad
+                # Ensure qpl_feedback_scalar is on the same device as loss
+                if isinstance(qpl_feedback, (list, tuple)):
+                    while isinstance(qpl_feedback, (list, tuple)):
+                        if len(qpl_feedback) == 0:
+                            qpl_feedback = 0.0
+                            break
+                        qpl_feedback = qpl_feedback[0]
+                if isinstance(qpl_feedback, torch.Tensor):
+                    qpl_feedback = qpl_feedback.item()
+                qpl_feedback = float(qpl_feedback)
+                qpl_feedback_scalar = torch.tensor(qpl_feedback, dtype=torch.float32, device=loss.device, requires_grad=True)
 
                 # ✅ Modify loss gradients dynamically based on QPL strength
-                loss = torch.tensor(loss, dtype=torch.float32)  # Initialize `loss`
+                loss = torch.tensor(loss, dtype=torch.float32, device=loss.device)  # Ensure loss is on correct device
                 loss = loss * (1 + 0.05 * qpl_feedback_scalar)  # Now using a safe tensor
 
                 loss.backward()

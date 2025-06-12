@@ -14,7 +14,7 @@ class PrimeStructureUseCase:
     def __init__(self, hidden_size):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model = PrimeStructureModel(input_size=4, hidden_size=hidden_size).to(self.device)  # Update input_size to match features
-        self.num_of_primes = 100000  # Adjust as needed for your prime range
+        self.num_of_primes = 200000  # Adjust as needed for your prime range
     def execute(self, x):
         """
         Runs the Prime Structure Model and applies entropy-based corrections to improve precision.
@@ -50,6 +50,11 @@ class PrimeStructureUseCase:
         streaming_data = prime_data[anchor_size:]
         streaming_actuals = actual_values[anchor_size:]
 
+        # Ensure streaming_data and streaming_actuals have the same length
+        min_len = min(len(streaming_data), len(streaming_actuals))
+        streaming_data = streaming_data[:min_len]
+        streaming_actuals = streaming_actuals[:min_len]
+
         hidden_size = 64
 
         # Dynamically adjust Bayesian search space based on past convergence speed
@@ -76,7 +81,8 @@ class PrimeStructureUseCase:
 
         for i, new_data_point in enumerate(streaming_data):
             input_data = new_data_point.unsqueeze(0) if new_data_point.ndim == 1 else new_data_point
-            input_data = input_data.to(self.device)
+            # Ensure input_data is on the same device as the model
+            input_data = input_data.to(self.model.device)
             actual_value = streaming_actuals[i]
             if isinstance(actual_value, torch.Tensor):
                 target = actual_value.unsqueeze(0) if actual_value.ndim == 0 else actual_value
@@ -87,7 +93,10 @@ class PrimeStructureUseCase:
             optimizer.zero_grad()
             prediction = self.model(input_data)
             loss = loss_fn(prediction, target)
-            loss.backward()
+            # Scale-sensitive loss adjustment
+            scale_boost = torch.log1p(target.abs())  # Emphasize larger targets
+            weighted_loss = loss * scale_boost
+            weighted_loss.backward()
             optimizer.step()
 
             predictions.append(prediction.detach().cpu().item())
