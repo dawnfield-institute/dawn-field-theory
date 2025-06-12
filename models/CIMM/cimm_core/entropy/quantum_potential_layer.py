@@ -32,6 +32,14 @@ class QuantumPotentialLayer:
         entropy_level = entropy_monitor.entropy
         collapse_deviation = entropy_monitor.track_collapse_deviation()
 
+        # --- Entropy-Amplified Penalty Injection ---
+        entropy_cost = entropy_monitor.compute_neuron_energy_cost(entropy_level)
+        if not isinstance(entropy_cost, torch.Tensor):
+            entropy_cost = torch.tensor(entropy_cost, dtype=torch.float32, device=device)
+        entropy_weight = torch.exp(entropy_cost * 0.25)
+        # To use: adjusted_loss = entropy_weight * loss
+        # (You can apply this scaling in your training loop or loss computation.)
+
         # Store collapse deviation in memory buffer
         self.qpl_memory_buffer.append(collapse_deviation)
         if len(self.qpl_memory_buffer) > 10:  # Limit buffer size to 10
@@ -60,6 +68,10 @@ class QuantumPotentialLayer:
         refined_qpl = self.qpl + (self.qpl_target - self.qpl) * (0.94 + refinement_delta)  # 🔥 Reduce aggressive shifts
         refined_qpl -= self.qpl_momentum * (0.004 + refinement_delta)  # 🔧 Further stabilize momentum
 
+        # Amplify response in regions with sharp entropy deltas (like high prediction zones)
+        if collapse_deviation > 0.8:  # tweak threshold experimentally
+            refined_qpl += 0.015 * collapse_deviation  # sharper push
+
         # Introduce damping factor to prevent oscillations
         damping_factor = 0.985  # Reduce oscillations further (was 0.98)
         refined_qpl *= damping_factor
@@ -70,7 +82,8 @@ class QuantumPotentialLayer:
             self.qpl_memory = refined_qpl
 
         self.qpl = 0.87 * self.qpl + 0.13 * self.qpl_memory  # 🔧 Reduce weight of past QPL values
-        return self.qpl
+        # Return both qpl and entropy_weight for use in training
+        return self.qpl, entropy_weight
 
     def refine_qpl(self, qpl_value, deviation):
         """Refines QPL behavior using delta tracking corrections."""
@@ -101,19 +114,24 @@ class QuantumPotentialLayer:
         """
         qbe_feedback = self.compute_qpl(entropy_monitor, memory_module)
 
-        # Ensure qbe_feedback is moved to the CPU before using NumPy operations
+        # If compute_qpl returns a tuple (e.g., (qpl, entropy_weight)), extract the first element
+        if isinstance(qbe_feedback, (tuple, list)):
+            qbe_feedback = qbe_feedback[0]
+        # Ensure qbe_feedback is a tensor or float
         if isinstance(qbe_feedback, torch.Tensor):
-            qbe_feedback = qbe_feedback.detach()  # Already GPU-safe
+            qbe_feedback_scalar = qbe_feedback
+        else:
+            qbe_feedback_scalar = torch.tensor(qbe_feedback, dtype=torch.float32)
 
         # Ensure qbe_feedback does not cause overflow
-        if not torch.isfinite(qbe_feedback).all():
-            qbe_feedback = 0.0  # Reset to neutral if unstable
+        if not torch.isfinite(qbe_feedback_scalar).all():
+            qbe_feedback_scalar = torch.tensor(0.0, dtype=torch.float32)  # Reset to neutral if unstable
 
         # Adjust learning rate safely
-        adaptive_controller.learning_rate *= max(0.9, min(1.1, 1 + 0.12 * qbe_feedback))
+        adaptive_controller.learning_rate *= max(0.9, min(1.1, 1 + 0.12 * qbe_feedback_scalar))
 
         # Adjust Bayesian optimizer safely
-        bayesian_optimizer.qpl_constraint *= max(0.9, min(1.1, 1 + 0.10 * qbe_feedback))
+        bayesian_optimizer.qpl_constraint *= max(0.9, min(1.1, 1 + 0.10 * qbe_feedback_scalar))
 
         # ✅ Introduce higher-order correction term
         higher_order_correction = 0.03 * self.qpl_delta  # 🔧 Reduce high-order compensation from 0.05
@@ -128,12 +146,22 @@ class QuantumPotentialLayer:
         """
         qbe_feedback = self.compute_qpl(entropy_monitor, memory_module)
 
-        # ✅ Ensure qbe_feedback is on the same device as adaptive_controller.learning_rate
+        # ✅ Ensure qbe_feedback is a scalar float or tensor
+        if isinstance(qbe_feedback, (list, tuple)):
+            while isinstance(qbe_feedback, (list, tuple)):
+                if len(qbe_feedback) == 0:
+                    qbe_feedback = 0.0
+                    break
+                qbe_feedback = qbe_feedback[0]
         if isinstance(qbe_feedback, torch.Tensor):
-            qbe_feedback = qbe_feedback.to(device)
+            qbe_feedback = qbe_feedback.item()
+        qbe_feedback = float(qbe_feedback)
 
-        # ✅ Ensure adaptive_controller.learning_rate is a tensor and on the correct device
-        adaptive_controller.learning_rate = torch.tensor(adaptive_controller.learning_rate, device=device, dtype=torch.float32)
+        # ✅ Ensure qbe_feedback is on the same device as adaptive_controller.learning_rate
+        if isinstance(adaptive_controller.learning_rate, torch.Tensor):
+            adaptive_controller.learning_rate = adaptive_controller.learning_rate.to(device)
+        else:
+            adaptive_controller.learning_rate = torch.tensor(adaptive_controller.learning_rate, device=device, dtype=torch.float32)
 
         adaptive_controller.learning_rate *= (1 + 0.06 * qbe_feedback)  # 🔥 Lowered from 0.08
 
