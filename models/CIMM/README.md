@@ -98,6 +98,8 @@ You can run **single-agent CIMM experiments** out of the box using the provided 
 - **Prime Structure Modeling:**  
   `python usecase/prime_structure_usecase.py`
 
+**📊 [Prime Structure Modeling Results →](./prime_number_results.md)**
+
 Each script demonstrates a live, entropy-driven CIMM run on real or synthetic data.
 
 > **Agentic (multi-agent) use cases are finished internally and will be migrated soon.**  
