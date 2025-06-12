@@ -100,6 +100,8 @@ It is now a **legacy spike implementation**:
 
 📎 [View the full CIMM architecture →](./models/CIMM/README.md)
 
+**📊 [See Prime Structure Modeling Results →](./models/CIMM/prime_number_results.md)**
+
 ### ⚙️ CIMM Agents Can:
 - Learn in real-time (no checkpoints or saved models)  
 - Self-prune based on Landauer information cost  
