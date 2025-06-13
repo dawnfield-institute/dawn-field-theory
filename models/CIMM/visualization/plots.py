@@ -39,6 +39,15 @@ def plot_stock_predictions(model, data, actual_prices):
 
 
 def plot_live_predictions(predictions, actuals):
+    # Ensure predictions and actuals are on CPU and numpy arrays for matplotlib
+    if isinstance(predictions, torch.Tensor):
+        predictions = predictions.detach().cpu().numpy()
+    elif isinstance(predictions, list) and len(predictions) > 0 and isinstance(predictions[0], torch.Tensor):
+        predictions = torch.stack(predictions).detach().cpu().numpy()
+    if isinstance(actuals, torch.Tensor):
+        actuals = actuals.detach().cpu().numpy()
+    elif isinstance(actuals, list) and len(actuals) > 0 and isinstance(actuals[0], torch.Tensor):
+        actuals = torch.stack(actuals).detach().cpu().numpy()
 
     plt.figure(figsize=(10, 5))
     plt.plot(range(len(predictions)), predictions, label="Predicted Values", linestyle='dotted')

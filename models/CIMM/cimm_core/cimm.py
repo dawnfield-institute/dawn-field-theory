@@ -224,12 +224,14 @@ class CIMM:
         self.model_instance = model_class(*model_args).to(device)  # Pass model arguments and move to GPU
         self.param_space = param_space
         self.anchor_data = anchor_data
+        self.memory_module = QuantumMemory()  # Stores entropy learning history
         self.qpl_layer = QuantumPotentialLayer()  # Initialize QPL
         self.entropy_monitor = EntropyMonitor(1.0, 0.01)
+        # Only pass memory_module if AdaptiveController supports it
         self.controller = AdaptiveController(
-            self.model_instance, self.param_space, self.entropy_monitor, initial_entropy, learning_rate, lambda_factor, self.qpl_layer
-        )  # Pass self.qpl_layer to AdaptiveController
-        self.bayesian_optimizer = BayesianOptimizer(self.model_instance, self.param_space, self.entropy_monitor, self.controller, self.qpl_layer)  # Pass self.qpl_layer to BayesianOptimizer
+            self.model_instance, self.param_space, self.entropy_monitor, initial_entropy, learning_rate, lambda_factor, self.qpl_layer, memory_module=self.memory_module
+        )
+        self.bayesian_optimizer = BayesianOptimizer(self.model_instance, self.param_space, self.entropy_monitor, self.controller, self.qpl_layer)
 
         self.learning_rate = learning_rate  # Ensure learning_rate is initialized
         self.min_lr = 1e-6  # Minimum learning rate
@@ -255,7 +257,7 @@ class CIMM:
         self.entropy_threshold = entropy_threshold  # Add entropy_threshold attribute
 
         # 🔥 ADDITIONS: Reinforcement Learning and Quantum Memory
-        self.memory_module = QuantumMemory()  # Stores entropy learning history
+        
         self.rl_agent = QBEReinforcementLearner(learning_rate, 0.05, self.memory_module)  # Uses RL for adaptive tuning
 
         self.pretrain(anchor_data)
@@ -472,7 +474,9 @@ class CIMM:
         collapsed_prediction = ((1 - smoothing_factor) * prediction) + (smoothing_factor * probability_distribution * prediction)
 
         # 🔥 Apply Adaptive Alpha Based on AI-Refined QBE & Gravity Forces
-        adaptive_alpha = max(0.45, min(0.8, torch.abs(qbe_feedback + gravity_force + refinement_delta)))
+        combined_value = torch.abs(qbe_feedback + gravity_force + refinement_delta)
+        scalar_value = combined_value.mean().item() if combined_value.numel() > 1 else combined_value.item()
+        adaptive_alpha = max(0.45, min(0.8, scalar_value))
         final_prediction = ((1 - adaptive_alpha) * prediction) + (adaptive_alpha * collapsed_prediction)
 
         return final_prediction, probability_distribution
