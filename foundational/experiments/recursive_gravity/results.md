@@ -1,5 +1,5 @@
 ---
-title: Recursive Gravity & Proto-Galactic Superfluid: Experiment Results
+title: Recursive Gravity & Proto-Galactic Superfluid - Experiment Results
 version: 1.2
 status: VALIDATED
 date: 2025-06-14

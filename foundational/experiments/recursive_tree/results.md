@@ -1,5 +1,5 @@
 ---
-title: Recursive Gravity & Field Emergence: Experiment Results
+title: Recursive Gravity & Field Emergence - Experiment Results
 version: 1.2
 status: VALIDATED
 date: 2025-06-14
