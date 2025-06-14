@@ -12,8 +12,8 @@ keywords:
   - QBE scoring
   - symbolic correction
 linked_files:
-  - [reference_material/Entropy-Based Repair of BRCA1 Frameshift Mutation _5382insC__1_.md](./reference_material/Entropy-Based%20Repair%20of%20BRCA1%20Frameshift%20Mutation%20_5382insC__1_.md)
-  - [reference_material/Entropy-Based Mutation Detection and Repair in Protein Sequences.md](./reference_material/Entropy-Based%20Mutation%20Detection%20and%20Repair%20in%20Protein%20Sequences.md)
+  - ./reference_material/Entropy-Based%20Repair%20of%20BRCA1%20Frameshift%20Mutation%20_5382insC__1_.md
+  - ./reference_material/Entropy-Based%20Mutation%20Detection%20and%20Repair%20in%20Protein%20Sequences.md
 ---
 
 ## Summary
