@@ -1,11 +1,13 @@
-import yfinance as yf
-import torch
-import logging
-from skopt.space import Real, Integer
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+import finnhub
+import torch
+import logging
+from skopt.space import Real, Integer
+
+import pandas as pd
 from cimm_core.cimm import CIMM
 from cimm_core.models.base_cimm_model import BaseCIMMModel
 from scipy.signal import butter, filtfilt
@@ -13,31 +15,55 @@ from cimm_core.entropy.entropy_monitor import EntropyMonitor
 from cimm_core.models.financial_model import FinancialModel
 from visualization.plots import  plot_live_predictions
 from utils.logging import configure_logging
-import pandas as pd
 from cimm_core.utils import get_device  # Ensure device utility is imported
 
 device = get_device()  # Ensure device is set globally
 
-#if torch.cuda.is_available():
-#    torch.set_default_tensor_type(torch.cuda.FloatTensor)
+# --- Remove Finnhub API Key Setup and client ---
 
-def entropy_aware_smooth(series: pd.Series, max_window: int = 50) -> pd.Series:
+def entropy_aware_smooth(series, max_window: int = 50):
+    # Torch-only implementation, all on GPU
     ent_monitor = EntropyMonitor()
-    entropy = ent_monitor.measure_entropy(series.values)
-    window_size = max(5, int((1 - entropy) * max_window))
-    return series.rolling(window=window_size).mean()
+    # Accept pd.Series, torch.Tensor, or list/array-like
+    if isinstance(series, pd.Series):
+        values = torch.tensor(series.values, dtype=torch.float32, device=device)
+        index = series.index
+    elif isinstance(series, torch.Tensor):
+        values = series.to(dtype=torch.float32, device=device)
+        index = None
+    else:
+        values = torch.tensor(series, dtype=torch.float32, device=device)
+        index = None
+    entropy = ent_monitor.calculate_entropy(values)
+    if not torch.is_tensor(entropy):
+        entropy = torch.tensor(entropy, dtype=torch.float32, device=device)
+    if torch.isnan(entropy) or not torch.isfinite(entropy):
+        entropy = torch.tensor(0.5, device=device)
+    window_size = max(5, int((1 - entropy.item()) * max_window))
+    if len(values) < window_size:
+        smoothed = values.clone()
+    else:
+        pad_len = window_size - 1
+        left_pad = values[0].repeat(pad_len)
+        padded = torch.cat([left_pad, values])
+        smoothed = torch.stack([padded[i:i+len(values)] for i in range(window_size)], dim=0).mean(dim=0)
+    if index is not None and len(index) == len(smoothed):
+        return pd.Series(smoothed.cpu().tolist(), index=index)
+    else:
+        return pd.Series(smoothed.cpu().tolist())
 
 def entropy_weighted_collapse(outcomes, entropy_values):
     """
     Collapses outcomes based on entropy-weighted probabilities.
     """
-    weights = torch.softmax(torch.tensor(entropy_values, dtype=torch.float32), dim=0)  # Ensure weights are Float
-    outcomes = torch.tensor(outcomes, dtype=torch.float32)  # Ensure outcomes are Float
+    outcomes = torch.tensor(outcomes, dtype=torch.float32, device=device)
+    entropy_values = torch.tensor(entropy_values, dtype=torch.float32, device=device)
+    weights = torch.softmax(entropy_values, dim=0)
     return torch.dot(weights, outcomes)
 
 class StockPredictionUseCase:
     def __init__(self, hidden_size):
-        self.model = FinancialModel(hidden_size).to(device)  # Move model to device
+        self.model = FinancialModel(hidden_size).to(device)
         #configure_logging()
         print("Logging is configured.")
 
@@ -68,19 +94,16 @@ class StockPredictionUseCase:
         y = filtfilt(b, a, data)
         return y
 
-    def fetch_stock_data(self, ticker, period="5y", interval="1d"):
-        print(f"Fetching stock data for ticker: {ticker}")
-        if isinstance(ticker, torch.Tensor):
-            ticker = ticker[0].item()
-        if isinstance(ticker, list):
-            ticker = ticker[0]
-        if isinstance(ticker, (int, float)):
-            ticker = str(ticker)
-        if not isinstance(ticker, str):
-            raise ValueError("Ticker must be a string")
-        stock = yf.Ticker(ticker)
-        df = stock.history(period=period, interval=interval)
-        
+    def fetch_stock_data(self, csv_path):
+        import pandas as pd
+
+        df = pd.read_csv(csv_path)
+        # Ensure 'Close' column is numeric
+        if 'Close' in df.columns:
+            df['Close'] = pd.to_numeric(df['Close'], errors='coerce')
+        else:
+            raise ValueError("No 'Close' column found in CSV.")
+
         df['Returns'] = entropy_aware_smooth(df['Close'].pct_change())
         df['Log Returns'] = entropy_aware_smooth(torch.log1p(torch.tensor(df['Returns'].values, dtype=torch.float32)))
         df['Volatility'] = entropy_aware_smooth(torch.tensor(df['Close'].rolling(window=20).std().values, dtype=torch.float32))
@@ -98,85 +121,82 @@ class StockPredictionUseCase:
             df[col] = (df[col] - df[col].mean()) / df[col].std()
         
         df.dropna(inplace=True)
-        
+
         for col in ['Returns', 'Log Returns', 'Volatility', 'Moving Average', 'RSI', 'MACD', 'Signal Line']:
             df[col] = (df[col] - df[col].mean()) / df[col].std()
-        
-        entropy = EntropyMonitor().measure_entropy(df['Close'].values)
-        cutoff = 0.02 + 0.1 * entropy  # Range: [0.02–0.12]
 
-        vol_entropy = EntropyMonitor().measure_entropy(df['Volatility'].values)
+        # --- Fix: Use calculate_entropy instead of measure_entropy ---
+        entropy = EntropyMonitor().calculate_entropy(torch.tensor(df['Close'].values, dtype=torch.float32, device=device))
+        cutoff = 0.02 + 0.1 * entropy
+
+        vol_entropy = EntropyMonitor().calculate_entropy(torch.tensor(df['Volatility'].values, dtype=torch.float32, device=device))
         df['Volatility'] *= (1 + (1 - vol_entropy))
 
         fourier_transform = self.butter_lowpass_filter(df['Close'].values, cutoff=cutoff, fs=1.0, order=6).copy()
-        
-        num_samples = (len(df) // 10) * 10
-        combined_features = torch.stack([
-            torch.tensor(df['Returns'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Log Returns'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Volatility'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Moving Average'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['RSI'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['MACD'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Signal Line'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(fourier_transform[:num_samples], dtype=torch.float32)
-        ], dim=1)
 
-        return combined_features.to(device).reshape(-1, 10)  # Move tensor to device
-
-    def preprocess_stock_data(self, ticker):
-        print(f"Preprocessing stock data for ticker: {ticker}")
-        stock = yf.Ticker(ticker)
-        df = stock.history(period="1y", interval="1d")
-        
-        df['Returns'] = df['Close'].pct_change()
-        df['Log Returns'] = torch.log1p(torch.tensor(df['Returns'].values, dtype=torch.float32))
-        df['Volatility'] = torch.tensor(df['Close'].rolling(window=20).std().values, dtype=torch.float32)
-        df['Moving Average'] = torch.tensor(df['Close'].rolling(window=50).mean().values, dtype=torch.float32)
-        df['RSI'] = torch.tensor(self.calculate_rsi(df['Close']).values, dtype=torch.float32)
-        macd, signal_line = self.calculate_macd(df['Close'])
-        df['MACD'] = torch.tensor(macd.values, dtype=torch.float32)
-        df['Signal Line'] = torch.tensor(signal_line.values, dtype=torch.float32)
-        
-        df.dropna(inplace=True)
-        
-        for col in ['Returns', 'Log Returns', 'Volatility', 'Moving Average', 'RSI', 'MACD', 'Signal Line']:
-            df[col] = (df[col] - df[col].mean()) / df[col].std()
-        
-        fourier_transform = self.butter_lowpass_filter(df['Close'].values, cutoff=0.1, fs=1.0).copy()
-        
         num_samples = (len(df) // 10) * 10
+        # Stack exactly 10 features to match model input size
         combined_features = torch.stack([
-            torch.tensor(df['Returns'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Log Returns'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Volatility'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Moving Average'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['RSI'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['MACD'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(df['Signal Line'].values[:num_samples], dtype=torch.float32),
-            torch.tensor(fourier_transform[:num_samples], dtype=torch.float32)
+            torch.tensor(df['Returns'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['Log Returns'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['Volatility'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['Moving Average'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['RSI'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['MACD'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['Signal Line'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['Lag1_Close'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['Lag2_Close'].values[:num_samples], dtype=torch.float32, device=device),
+            torch.tensor(df['Price Momentum'].values[:num_samples], dtype=torch.float32, device=device)
         ], dim=1)
-      
-        return torch.tensor(combined_features, dtype=torch.float32).to(device).reshape(-1, 10)  # Move tensor to device
+        return combined_features  # Already on device
+
+    def preprocess_stock_data(self, csv_path="data/amd_full_history.csv"):
+        features = self.fetch_stock_data(csv_path)
+        # Already on device from fetch_stock_data
+        return features
 
     def live_stock_training(self):
-        #logging.info("Starting live stock training")
-        ticker = input("Enter stock ticker (e.g., TSLA, AMD, NIO): ").upper()
-        stock_data = self.preprocess_stock_data(ticker)
-        actual_values = yf.Ticker(ticker).history(period="10y", interval="1d")["Close"].values
+        csv_path = input("Enter CSV path (default: data/amd_full_history.csv): ").strip() or "data/amd_full_history.csv"
+        stock_data = self.preprocess_stock_data(csv_path)
+        # Already on device from preprocess_stock_data
+        try:
+            df = pd.read_csv(csv_path, parse_dates=['Date'], index_col='Date')
+        except ValueError:
+            df = pd.read_csv(csv_path)
+            date_col = None
+            for col in df.columns:
+                if col.lower() == "date":
+                    date_col = col
+                    break
+            if date_col:
+                df[date_col] = pd.to_datetime(df[date_col])
+                df.set_index(date_col, inplace=True)
+            else:
+                print("Warning: No 'Date' column found in CSV. Proceeding without date index.")
+        actual_values = df['Close'].values
+
+        # --- GPU-bound: Use only torch for all operations, no numpy ---
+        actual_values = pd.to_numeric(actual_values, errors='coerce')
+        actual_values = torch.tensor(actual_values, dtype=torch.float32, device=device)
+        nan_mask = torch.isnan(actual_values) | torch.isinf(actual_values)
+        actual_values[nan_mask] = 0.0
+        # Already on device
 
         anchor_size = int(0.1 * len(stock_data))
-        anchor_data = stock_data[:anchor_size]
-        streaming_data = stock_data[anchor_size:]
-        streaming_actuals = actual_values[anchor_size:]
+        anchor_data = stock_data[:anchor_size]  # Already on device
+        streaming_data = stock_data[anchor_size:]  # Already on device
+        streaming_actuals = actual_values[anchor_size:]  # Already on device
+
+        # Ensure all are on device
+        anchor_data = anchor_data.to(device)
+        streaming_data = streaming_data.to(device)
+        streaming_actuals = streaming_actuals.to(device)
 
         hidden_size = 64
         model_class = StockPredictionModel
-        model_args = (hidden_size,)  # Arguments for the model constructor
-        cimm = CIMM(model_class, model_args, param_space, anchor_data)  # Pass model class and arguments
-        # Ensure that the input tensor `x` is passed to the model during training or inference
-        # Example:
-        # output = cimm.model_instance(x)  # Pass the input tensor `x` here
+        model_args = (hidden_size,)
+        cimm = CIMM(model_class, model_args, param_space, anchor_data)
+
         entropy_monitor = EntropyMonitor(initial_entropy=1.0, learning_rate=0.01)
         entropy_monitor.prev_entropy = 0.0
 
@@ -195,126 +215,114 @@ class StockPredictionUseCase:
             print(f"Processing data point {i} with actual value {actual_value}")
 
             # Physics-based input transformation (no smoothing)
-            data_point = torch.abs(new_data_point).to(device)  # Move tensor to device
+            data_point = torch.abs(new_data_point).to(device)
             data_point = torch.log(torch.clamp(data_point + 1, min=1e-8))
-            actual_value = torch.tensor(actual_value, dtype=torch.float32).to(device)  # Move tensor to device
+            actual_value = float(actual_value)
+            actual_value = torch.tensor(actual_value, dtype=torch.float32, device=device)
             actual_value = torch.log(actual_value + 1)
-            actual_value = actual_value.cpu()  # ✅ Fix: move to CPU before use in metrics
+            actual_value = actual_value.cpu()  # Only for metrics
 
             result = cimm.run(data_point)
 
-            # Handle 1, 2, or 3-value returns
             if isinstance(result, tuple):
                 if len(result) == 3:
                     prediction, probs, alternatives = result
-                    probs = torch.tensor(probs, dtype=torch.float64).flatten()
-                    alternatives = torch.tensor(alternatives).flatten()
-
-                    # 🚨 Safety check: fallback if mismatch
+                    probs = torch.tensor(probs, dtype=torch.float64, device=device).flatten()
+                    alternatives = torch.tensor(alternatives, device=device).flatten()
                     if len(probs) != len(alternatives) or torch.isnan(probs).any() or probs.sum() == 0:
-                        probs = torch.ones(len(alternatives)) / len(alternatives)
-
-                    # ✅ Force-safe probability normalization
+                        probs = torch.ones(len(alternatives), device=device) / len(alternatives)
                     probs /= probs.sum()
-                    probs = torch.round(probs, decimals=12)  # truncate precision beyond float64 safety
-                    probs /= probs.sum()         # renormalize after rounding
-
-                    # ✅ Confirm safe
-                    assert torch.isclose(probs.sum(), torch.tensor(1.0)), f"Probabilities do not sum to 1. Current sum: {probs.sum()}"
-
-                    # 🧠 Safe final choice
+                    probs = torch.round(probs, decimals=12)
+                    probs /= probs.sum()
+                    assert torch.isclose(probs.sum(), torch.tensor(1.0, device=device)), f"Probabilities do not sum to 1. Current sum: {probs.sum()}"
                     try:
                         selected_idx = torch.multinomial(probs, 1).item()
                     except ValueError:
-                        selected_idx = torch.randint(len(alternatives), (1,)).item()  # fallback to uniform
+                        selected_idx = torch.randint(len(alternatives), (1,), device=device).item()
                     prediction = alternatives[selected_idx]
                 else:
                     prediction = result[0]
             else:
                 prediction = result
 
-            # Apply interference cancellation based on last 5 wave steps
-            last_wave = torch.tensor(predictions[-5:]) if len(predictions) >= 5 else torch.zeros(5)
+            last_wave = torch.tensor(predictions[-5:], device=device) if len(predictions) >= 5 else torch.zeros(5, device=device)
             destructive_interference = torch.std(last_wave) * 0.1
+            if isinstance(prediction, torch.Tensor):
+                destructive_interference = destructive_interference.to(prediction.device)
             prediction -= destructive_interference
 
-            # Generate ensemble predictions (example placeholder)
-            # Limit divergence to ±5% max to reduce volatility
             delta = 0.05 * prediction
             ensemble_features = torch.tensor([
                 prediction - delta,
                 prediction,
                 prediction + delta
-            ])
-            entropy_values = torch.tensor([entropy_monitor.calculate_entropy(new_data_point)] * len(ensemble_features))
-
-            # Apply entropy-weighted collapse
+            ], device=device)
+            entropy_values = torch.tensor([entropy_monitor.calculate_entropy(new_data_point)] * len(ensemble_features), device=device)
             collapsed_features = entropy_weighted_collapse(ensemble_features, entropy_values)
-
-            # Use collapsed features for further processing
             prediction = collapsed_features
 
-            # Replace prediction only if collapse succeeds
             if torch.isnan(prediction).any() or torch.isinf(prediction).any():
                 print("Invalid prediction collapse — reverting to last stable prediction")
-                prediction = predictions[-1] if predictions else 0.0
+                prediction = predictions[-1].to(device) if predictions else torch.tensor(0.0, device=device)
 
-            # Smooth final prediction using recent trend (moving average of past 3 predictions)
             if len(predictions) >= 3:
-                prediction = 0.6 * prediction + 0.4 * torch.mean(torch.tensor(predictions[-3:]))
+                prediction = 0.6 * prediction + 0.4 * torch.mean(torch.tensor(predictions[-3:], device=device))
 
-            # Detect anomalies
             if len(predictions) >= 20:
                 delta = torch.abs(prediction - actual_value.item())
-                threshold = 2.5 * torch.std(torch.tensor(predictions[-20:]))
+                threshold = 2.5 * torch.std(torch.tensor(predictions[-20:], device=device))
                 if delta > threshold:
                     print(f"⚠️ Anomaly detected at index {i}: Δ={float(delta):.4f}, threshold={float(threshold):.4f}")
 
-            # Ensure prediction is scalar and safe for smoothing
-            arr = torch.tensor(prediction).squeeze()
+            arr = torch.tensor(prediction, device=device).squeeze()
             scalar_pred = float(arr[0]) if (arr.ndimension() == 1 and len(arr) == 1) else float(torch.mean(arr))
             prediction = scalar_pred
 
-            # --- Financial Smoothing Block ---
             if len(predictions) >= 2:
                 recent_momentum = predictions[-1] - predictions[-2]
                 prediction += 0.1 * recent_momentum
 
             if len(predictions) >= 5:
-                recent_returns = torch.diff(torch.tensor(predictions[-5:]))
+                recent_returns = torch.diff(torch.tensor(predictions[-5:], device=device))
                 avg_return = torch.mean(recent_returns)
                 vol = torch.std(recent_returns) + 1e-8
                 sharpe_ratio = avg_return / vol
                 prediction *= (1 + 0.02 * sharpe_ratio)
 
             entropy = entropy_monitor.calculate_entropy(new_data_point)
-            entropy_tensor = torch.tensor(entropy, dtype=torch.float32)  # Ensure entropy is a tensor
+            entropy_tensor = torch.tensor(entropy, dtype=torch.float32, device=device)
             entropy_penalty = torch.clip(entropy_tensor - 0.8, 0, 1)
             prediction *= (1 - 0.05 * entropy_penalty)
 
-            # Append final smoothed prediction
             predictions.append(prediction)
             actuals.append(actual_value.item())
 
             cimm.give_feedback(data_point, actual_value)
 
-            # Update entropy monitor
             entropy = entropy_monitor.calculate_entropy(new_data_point)
-            entropy_change = torch.tensor(entropy - entropy_monitor.prev_entropy, dtype=torch.float32)  # Ensure tensor
+            entropy_change = torch.tensor(entropy - entropy_monitor.prev_entropy, dtype=torch.float32, device=device)
             clipped_change = torch.clip(entropy_change, -0.01, 0.01)
             entropy_monitor.learning_rate = (0.95 * entropy_monitor.learning_rate) + (0.05 * clipped_change.item())
 
             if abs(entropy - entropy_monitor.prev_entropy) > 0.03:
                 print("Updating model due to significant entropy change")
-                cimm.controller.update_model(anchor_data, streaming_actuals[:len(anchor_data)])  # Pass targets
+                anchor_data_device = anchor_data.to(device)
+                streaming_actuals_device = streaming_actuals.to(device)
+                anchor_data_device = anchor_data_device.contiguous()
+                streaming_actuals_device = streaming_actuals_device.contiguous()
+                if anchor_data_device.dim() == 1:
+                    anchor_data_device = anchor_data_device.unsqueeze(1)
+                if streaming_actuals_device.dim() == 1:
+                    streaming_actuals_device = streaming_actuals_device.unsqueeze(1)
+                streaming_actuals_device = streaming_actuals_device[:anchor_data_device.shape[0]]
+                cimm.controller.update_model(anchor_data_device, streaming_actuals_device)
 
             entropy_monitor.prev_entropy = entropy
             new_lr = entropy_monitor.qbe_learning_rate(optimizer, entropy, entropy_monitor.qbe_baseline, base_lr=0.01)
             scheduler.step(new_lr)
 
-        # Plot and evaluate
-        plot_live_predictions(predictions, actuals, None)
-        validation_data = torch.tensor(streaming_data, dtype=torch.float32)
+        plot_live_predictions(predictions, actuals)
+        validation_data = torch.tensor(streaming_data, dtype=torch.float32, device=device)
         metrics = cimm.evaluate_model(cimm.model_instance, validation_data)
         print(f"Error Metrics: {metrics}")
         print(f"Error Metrics: {metrics}")
