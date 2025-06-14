@@ -1,6 +1,6 @@
 ---
 
-title: Entropy-Based Mutation Detection and Repair: Results Summary
+title: Entropy-Based Mutation Detection and Repair - Results Summary
 experiment_id: dna_repair_entropy_2025_06_14
 version: 0.1
 status: VALIDATED
