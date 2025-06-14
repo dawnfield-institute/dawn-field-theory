@@ -48,7 +48,7 @@ class MetaController:
         return learning_rate
 
 class AdaptiveController:
-    def __init__(self, model, optimizer, entropy_monitor, initial_entropy, learning_rate, lambda_factor, qpl_layer, lambda_qbe=0.1):
+    def __init__(self, model, optimizer, entropy_monitor, initial_entropy, learning_rate, lambda_factor, qpl_layer, lambda_qbe=0.1, memory_module=None):
         self.model = model.to(device)  # Move model to GPU
         self.optimizer_instance = torch.optim.Adam(self.model.parameters(), lr=learning_rate)  # Initialize PyTorch optimizer
         self.entropy_monitor = entropy_monitor
@@ -71,6 +71,7 @@ class AdaptiveController:
         self.min_lr = 1e-5  # Prevent collapse
         self.max_lr = 0.05  # Lowered max to prevent spikes
         self.superfluid = SuperfluidDynamics()
+        self.memory_module = memory_module  # Memory module for QPL layer
 
 
     def update_model(self, data, targets):
@@ -78,6 +79,8 @@ class AdaptiveController:
         self.model.train()
         self.optimizer_instance.zero_grad()
         predictions = self.model(data)
+        # Ensure predictions and targets are on the same device
+        predictions = predictions.to(targets.device)
 
         # Ensure targets is a tensor and matches the shape of predictions
         if not isinstance(targets, torch.Tensor):
@@ -99,11 +102,22 @@ class AdaptiveController:
         """
         Enhances QBE loss with stronger local entropy penalties for finer adjustments.
         """
+        # Ensure targets are on the same device as predictions
+        targets = targets.to(predictions.device)
         base_loss = torch.nn.MSELoss()(predictions, targets)  
 
         # Compute entropy values
         S_actual = self.entropy_monitor.entropy
-        S_target = self.qpl_layer.compute_qpl(self.entropy_monitor, self.memory_module)
+        S_target = self.qpl_layer.compute_qpl(self.entropy_monitor, getattr(self, "memory_module", None))
+        # Fix: If S_target is a tuple, extract the first element or convert to float
+        if isinstance(S_target, (tuple, list)):
+            S_target = S_target[0]
+        if isinstance(S_target, torch.Tensor) and S_target.numel() > 1:
+            S_target = S_target.mean()
+        if isinstance(S_target, torch.Tensor):
+            S_target = S_target.item()
+        if isinstance(S_actual, torch.Tensor):
+            S_actual = S_actual.item()
 
         # 🔥 NEW: Strengthen local entropy force term
         local_entropy_change = abs(S_actual - S_target) * 0.8  # 🔥 Increased penalty
@@ -223,7 +237,16 @@ class AdaptiveController:
 
         # ✅ Compute entropy variance & QBE stabilization factor
         entropy_variance = torch.var(torch.tensor(self.entropy_monitor.past_entropies[-20:])) if len(self.entropy_monitor.past_entropies) >= 20 else 0.05
-        qbe_feedback = self.qpl_layer.compute_qpl(self.entropy_monitor)
+        qbe_feedback = self.qpl_layer.compute_qpl(self.entropy_monitor, getattr(self, "memory_module", None))
+
+        # --- Fix: Ensure qbe_feedback is a scalar (float or tensor), not a sequence ---
+        if isinstance(qbe_feedback, (tuple, list)):
+            qbe_feedback = qbe_feedback[0]
+        if isinstance(qbe_feedback, torch.Tensor) and qbe_feedback.numel() > 1:
+            qbe_feedback = qbe_feedback.mean()
+        if isinstance(qbe_feedback, torch.Tensor):
+            qbe_feedback = qbe_feedback.item()
+        qbe_feedback = float(qbe_feedback)
 
         # ✅ Dynamically modulate learning rate based on QBE feedback
         adaptive_scaling = 1 / (1 + torch.exp(-5 * torch.tensor(entropy_variance * qbe_feedback, dtype=torch.float32, device=device)))
