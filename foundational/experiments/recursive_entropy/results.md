@@ -1,5 +1,5 @@
 ---
-title: Recursive Entropy Tree: Experiment Results
+title: Recursive Entropy Tree - Experiment Results
 version: 1.0
 status: VALIDATED
 date: 2025-06-14
