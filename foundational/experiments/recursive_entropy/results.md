@@ -13,8 +13,8 @@ keywords:
 linked_files:
   - recursive_entopy.py
   - reference_material/recursive_entropy_2025-06-07_results.txt
-  - reference_material/recursive_entropy_preprune.png
-  - reference_material/recursive_entropy_postprune.png
+  - reference_material/recursive_entropy_2025-06-07_results1.png
+  - reference_material/recursive_entropy_2025-06-07_results2.png
 ---
 
 # Experiment Results Overview
@@ -35,10 +35,10 @@ This experiment tests how recursive tree structures can emerge from entropy-driv
 ## Visual Output
 
 **Pre-Pruning Tree:**  
-![Pre-Pruning Tree](./reference_material/recursive_entropy_preprune.png)
+![Pre-Pruning Tree](./reference_material/recursive_entropy_2025-06-07_results1.png)
 
 **Post-Pruning Tree:**  
-![Post-Pruning Tree](./reference_material/recursive_entropy_postprune.png)
+![Post-Pruning Tree](./reference_material/recursive_entropy_2025-06-07_results2.png)
 
 ---
 
