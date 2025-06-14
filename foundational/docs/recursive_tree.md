@@ -12,6 +12,8 @@ We present a simulation that demonstrates how a single entropy-seeded origin can
 
 Traditional models of intelligence and structure growth rely on external rules or symbolic logic. In contrast, Dawn Field Theory asserts that information and entropy interact recursively, producing self-structuring intelligence through collapse geometry. This simulation manifests that principle in 3D space by constructing a bifurcating collapse tree seeded from a cryptographic entropy vector.
 
+**For detailed experimental results and visualizations, see [Experiment Results](../experiments/recursive_tree/results.md).**
+
 ---
 
 ## 2. Theoretical Foundations
@@ -112,6 +114,7 @@ field_scope:
   - field_cognition
 experiment_links:
   - recursive_collapse_tree.py
+  - ../experiments/recursive_tree/results.md
 license: Copyleft (custom Dawn license)
 document_status: active_provisional
 data_provenance: verified_in_dawn_simulation_suite
@@ -119,4 +122,5 @@ related_documents:
   - declaration_infodynamics.md
   - dawn_field_theory.md
   - recursive_tree_entropy.md
+  - ../experiments/recursive_tree/results.md
 ```
