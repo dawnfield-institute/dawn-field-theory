@@ -1,27 +1,25 @@
 ---
-
 title: Infodynamics Arithmetic — Formalism for Collapse-Oriented Entropy-Information Dynamics
-authors: \["Dawn Field Group"]
+authors:
+  - "Lorne"
 version: 1.0.0
 date: 2025-06-14
 status: draft
-validated\_simulations:
-
-* recursive\_entopy.py
-* recursive\_tree.py
-* macro\_emergence\_knn.py
-* proto\_galactic\_superfluid.py
-* recursive\_gravity.py
-* symbolic\_bifractal\_expansion\_v1.py
-* symbolic\_bifractal\_expansion\_v2.py
-* vcpu.py
-* cosmo.py
-* brain.py
-  validation\_yamls:
-* InfoDyn\_Validation\_BifractalCollapse\_v0.2.yaml
-  linked\_framework: Dawn Field Theory
-  schema\_version: dawn\_v1
-
+validated_simulations:
+  - recursive_entopy.py
+  - recursive_tree.py
+  - macro_emergence_knn.py
+  - proto_galactic_superfluid.py
+  - recursive_gravity.py
+  - symbolic_bifractal_expansion_v1.py
+  - symbolic_bifractal_expansion_v2.py
+  - vcpu.py
+  - cosmo.py
+  - brain.py
+validation_yamls:
+  - InfoDyn_Validation_BifractalCollapse_v0.2.yaml
+linked_framework: Dawn Field Theory
+schema_version: dawn_v1
 ---
 
 # Infodynamics Arithmetic — Formalism for Collapse-Oriented Entropy-Information Dynamics
@@ -84,7 +82,7 @@ Time is represented recursively through symbolic ancestry. Traces reveal:
 
 From validated simulations:
 
-* `collapse_balance_field_score` $\approx 1058.23$: integrated $\Psi$-structure field potential, computed as the weighted integral of symbolic coherence across recursive states over time.
+* `collapse_balance_field_score` $\approx 1058.23`: integrated $\Psi$-structure field potential, computed as the weighted integral of symbolic coherence across recursive states over time.
 * `average_branching_factor \approx 2.33`: from entropy-seeded tree.
 
 ## 9. Future Work
