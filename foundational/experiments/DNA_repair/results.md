@@ -1,5 +1,4 @@
 ---
-
 title: Entropy-Based Mutation Detection and Repair - Results Summary
 experiment_id: dna_repair_entropy_2025_06_14
 version: 0.1
@@ -15,7 +14,7 @@ keywords:
 linked_files:
   - [reference_material/Entropy-Based Repair of BRCA1 Frameshift Mutation _5382insC__1_.md](./reference_material/Entropy-Based%20Repair%20of%20BRCA1%20Frameshift%20Mutation%20_5382insC__1_.md)
   - [reference_material/Entropy-Based Mutation Detection and Repair in Protein Sequences.md](./reference_material/Entropy-Based%20Mutation%20Detection%20and%20Repair%20in%20Protein%20Sequences.md)
-...
+---
 
 ## Summary
 
@@ -61,6 +60,7 @@ This document summarizes the results of entropy-driven mutation detection and re
 
 1. Extend to additional genes and real-world clinical mutations.
 2. Integrate semantic field models for context-aware repair.
+3. Develop clinical dashboards for entropy-based diagnostics.
 3. Develop clinical dashboards for entropy-based diagnostics.
 
 ## YAML Metadata
