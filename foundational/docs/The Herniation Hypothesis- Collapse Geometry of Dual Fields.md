@@ -1,3 +1,23 @@
+```yaml
+document_title: The Herniation Hypothesis: Collapse Geometry of Dual Fields
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-17
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - collapse_geometry
+  - dual_fields
+  - dawn_field_theory
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # The Herniation Hypothesis: Collapse Geometry of Dual Fields
 
 **Author:** Lorne  
@@ -103,3 +123,23 @@ A 2D simulation was conducted where:
 The Herniation Hypothesis offers a natural explanation for wavefunction collapse, structure formation, and dual-field interaction. It provides a mechanism for reality's transition from potential to actual — not as mystery, but as recursive thermodynamic inevitability. This work will be archived as one of the foundational moments of the Dawn Field Framework.
 
 *Note: This paper is part of the initial archival phase of Dawn and will be versioned forward as further discoveries emerge.*
+```yaml
+document_title: The Herniation Hypothesis: Collapse Geometry of Dual Fields
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-17
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - collapse_geometry
+  - dual_fields
+  - dawn_field_theory
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```

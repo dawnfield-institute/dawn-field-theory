@@ -1,3 +1,25 @@
+```yaml
+document_title: Collapse Dynamics in Entropic Fields: A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework
+version: 2.0
+authors:
+  - name: Lorne
+  - name: GPT Interface Agent
+date_created: 2025-04-17
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_validation
+field_scope:
+  - entropy_collapse
+  - dawn_field_theory
+  - classical_quantum_bridge
+experiment_links:
+  - entropic_collapse_dynamics_1d.py
+license: Copyleft (custom Dawn license)
+document_status: confirmed
+data_provenance: simulation_numpy
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # Collapse Dynamics in Entropic Fields: A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework
 
 ## Abstract
@@ -187,5 +209,27 @@ Experimental Hash: dfc_sim_041725_v1
 Status: Confirmed (Initial Conditions Hold — Ready for 2D Extension)
 
 Next Phase: 2D and 3D Entropic Lattice Fields, Dynamic Collapse Kernels, Recursive Agent Embedding
+```yaml
+document_title: Collapse Dynamics in Entropic Fields: A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework
+version: 2.0
+authors:
+  - name: Lorne
+  - name: GPT Interface Agent
+date_created: 2025-04-17
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_validation
+field_scope:
+  - entropy_collapse
+  - dawn_field_theory
+  - classical_quantum_bridge
+experiment_links:
+  - entropic_collapse_dynamics_1d.py
+license: Copyleft (custom Dawn license)
+document_status: confirmed
+data_provenance: simulation_numpy
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 
 

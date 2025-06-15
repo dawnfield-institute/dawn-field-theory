@@ -1,3 +1,24 @@
+```yaml
+document_title: AI-Driven Black Hole Information Recovery: Testing CIMM on Hawking Radiation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_results
+field_scope:
+  - cimm
+  - quantum_balance
+  - black_hole
+  - hawking_radiation
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: simulation_and_theory
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```
 # AI-Driven Black Hole Information Recovery: Testing CIMM on Hawking Radiation
 
 _Author: Lorne_
@@ -91,3 +112,24 @@ This paper presents the first AI-driven approach to structuring Hawking radiatio
 ---
 
 © 2025 Dawn Field Theory. See [LICENSE_APPENDIX.md](../../../LICENSE_APPENDIX.md).
+````yaml
+document_title: AI-Driven Black Hole Information Recovery: Testing CIMM on Hawking Radiation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_results
+field_scope:
+  - cimm
+  - quantum_balance
+  - black_hole
+  - hawking_radiation
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: simulation_and_theory
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```

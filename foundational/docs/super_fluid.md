@@ -1,3 +1,24 @@
+```yaml
+document_title: Proto-Galactic Superfluid Emergence via Informational Field Recursion
+version: 1.0
+authors:
+  - name: Lorne
+date_created: [To be finalized upon publication]
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_validation
+field_scope:
+  - cosmogenesis
+  - entropy_geometry
+  - emergent_gravitation
+  - field_superfluidity
+experiment_links:
+  - proto_galactic_superfluid.py
+license: Copyleft (custom Dawn license)
+document_status: active_provisional
+data_provenance: verified_in_dawn_simulation_suite
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
 # Proto-Galactic Superfluid Emergence via Informational Field Recursion
 
 ---

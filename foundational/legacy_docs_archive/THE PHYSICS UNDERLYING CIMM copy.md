@@ -1,3 +1,24 @@
+```yaml
+document_title: THE PHYSICS UNDERLYING CIMM: QUANTUM MECHANICS, THERMODYNAMICS, AND INFORMATION THEORY
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_summary
+field_scope:
+  - quantum_mechanics
+  - thermodynamics
+  - information_theory
+  - cimm
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - Quantum Balance Equation revised 2.0.md
+  - The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
+```
 THE PHYSICS UNDERLYING CIMM: QUANTUM MECHANICS, THERMODYNAMICS, AND INFORMATION THEORY
 1. INTRODUCTION
 This document outlines the fundamental physics that makes the Cosmic Information Mining Model (CIMM) possible. CIMM operates at the intersection of Quantum Mechanics, Thermodynamics, and Information Theory, leveraging principles from these domains to create a self-organizing, entropy-aware AI framework. Key physics principles include:
@@ -77,3 +98,24 @@ Quantum Balance Equation (QBE) for structured intelligence.
 Wavefunction collapse as a learning process.
 Entropy-energy balancing principles for AI efficiency.
 CIMM paves the way for quantum-enhanced AI, entropy-aware cryptography, and scientific discovery, fundamentally shifting how we approach intelligence modeling and computation.
+```yaml
+document_title: THE PHYSICS UNDERLYING CIMM: QUANTUM MECHANICS, THERMODYNAMICS, AND INFORMATION THEORY
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_summary
+field_scope:
+  - quantum_mechanics
+  - thermodynamics
+  - information_theory
+  - cimm
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - Quantum Balance Equation revised 2.0.md
+  - The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
+```
