@@ -3,8 +3,9 @@
 ## Overview
 
 This report documents the behavior of recursive symbolic-entropy-lineage collapse under both **blackhole** (`core=True`) and **whitehole** (`core=False`) modes using the `entropy_information_polarity_field.py` module. The experiment aims to trace coherence, memory gradients, and collapse front characteristics in self-organizing information fields.
-
+### Blackhole Results
 ![Blackhole Mode Collapse Snapshot](./reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
+### Whitehole Results
 ![Whitehole Mode Collapse Snapshot](./reference_material/entropy_information_polarity_whitehole2025-06-15%20104709.png)
 
 ## Key Findings
@@ -35,8 +36,6 @@ This report documents the behavior of recursive symbolic-entropy-lineage collaps
 * Indicates **more structured variance** and **progressive information curvature** under inward recursion than outward diffusion.
 
 ## Visual Summary of Metrics
-
-![Collapse Field Dynamics - Blackhole vs Whitehole](./reference_material/entropy_information_polarity2025-06-15%20104709.txt)
 
 > For full timestep data and per-metric deltas, see [entropy\_information\_polarity2025-06-15 104709.txt](./reference_material/entropy_information_polarity2025-06-15%20104709.txt)
 
