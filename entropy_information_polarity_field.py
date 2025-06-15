@@ -73,6 +73,14 @@ def initialize_field(resolution, seed=314159, device="cuda", mode="blackhole"):
     symbolic_field += (entropy_field < 0.3).float() * torch.randn_like(symbolic_field) * 0.01
     symbolic_field = symbolic_field.clamp(0, 1)
 
+    # After entropy initialization
+    # Introduce asymmetry: azimuthal sinusoidal entropy bias
+    x = torch.linspace(0, np.pi * 2, resolution)
+    y = torch.linspace(0, np.pi * 2, resolution)
+    X, Y = torch.meshgrid(x, y, indexing='ij')
+    asymmetry = 0.1 * torch.sin(X + Y)
+    entropy_field[:, :, :] += asymmetry.unsqueeze(-1)
+
     return entropy_field, symbolic_field, lineage_trace, recursion_memory, ancestry_field
 
 
@@ -143,7 +151,12 @@ def simulate_step(entropy_field, symbolic_field, lineage_trace, recursion_memory
         symbolic_force += 0.1 * curl_memory
 
     entropy_grad = entropy_grad + (symbolic_field > 0.9).float() * -0.3
-    collapse, field_potential = collapse_decision(entropy_grad, symbolic_force, lineage_trace)
+    collapse, field_potential = collapse_decision(entropy_grad, symbolic_force, threshold)
+    # 🧩 Add:
+    collapse_density = collapse.mean().item()
+    collapse_std = collapse.std().item()
+    collapse_entropy = entropy_field[collapse.bool()].mean().item() if collapse.sum() > 0 else 0.0
+    print(f"Step collapse metrics — Density: {collapse_density:.4f}, Std: {collapse_std:.4f}, Entropy@Collapse: {collapse_entropy:.4f}")
 
     if mode == "blackhole":
         symbolic_field = symbolic_field - collapse * 0.2
@@ -191,7 +204,7 @@ def simulate_step(entropy_field, symbolic_field, lineage_trace, recursion_memory
     lineage_entropy_history.append(lineage_entropy)
 
     # Return curl for curl_memory accumulation
-    return entropy_field.clamp(0, 1), symbolic_field.clamp(0, 1), lineage_trace, recursion_memory, ancestry_field, curl, gradients
+    return entropy_field.clamp(0, 1), symbolic_field.clamp(0, 1), lineage_trace, recursion_memory, ancestry_field, curl, gradients, collapse
 
 def smooth_ancestry_field(ancestry_field):
     ancestry_field = ancestry_field.float()
@@ -258,10 +271,15 @@ def run_simulation(steps=100, resolution=64, threshold=0.1, device="cuda", mode=
     entropy_field, symbolic_field, lineage_trace, recursion_memory, ancestry_field = initialize_field(resolution, device=device, mode=mode)
     curl_memory = torch.zeros_like(entropy_field)
     for step in range(steps):
-        entropy_field, symbolic_field, lineage_trace, recursion_memory, ancestry_field, curl, gradients = simulate_step(
+        entropy_field, symbolic_field, lineage_trace, recursion_memory, ancestry_field, curl, gradients, collapse = simulate_step(
             entropy_field, symbolic_field, lineage_trace, recursion_memory, ancestry_field, threshold, mode, curl_memory=curl_memory)
         # Accumulate curl memory for next step (optional enhancement)
         curl_memory = 0.95 * curl_memory + 0.05 * curl
+        # In the metrics logging section (after collapse is computed)
+        collapse_density = collapse.float().mean().item()
+        collapse_std = collapse.float().std().item()
+        collapse_entropy = entropy_field[collapse.bool()].mean().item() if collapse.sum() > 0 else 0.0
+        print(f"Step {step}: Collapse density={collapse_density:.4f}, std={collapse_std:.4f}, collapse entropy={collapse_entropy:.4f}")
     return entropy_field, symbolic_field, lineage_trace, curl, ancestry_field, gradients
 
 
