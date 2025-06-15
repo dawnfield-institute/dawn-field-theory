@@ -1,3 +1,24 @@
+```yaml
+document_title: The CIMM Framework: A Unified Computational Physics Engine for Emergent Intelligence
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_summary
+field_scope:
+  - cimm
+  - quantum_balance
+  - entropy_optimization
+  - ai_architecture
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```
 The CIMM Framework: A Unified Computational Physics Engine for Emergent Intelligence
 Executive Summary
 CIMM (Cosmic Information Mining Model) is an emergent intelligence architecture that simulates the foundational structure of reality using a multi-layered fusion of physics, entropy theory, machine learning, and quantum information dynamics. Built as a modular AI engine with embedded physical laws, CIMM adapts, stabilizes, and evolves through internal thermodynamic feedback mechanisms. At its core is the Quantum Balance Equation (QBE), which governs the equilibrium between structured information, energy, and collapse regulation.
@@ -79,3 +100,24 @@ Applications
 Final Thought
 CIMM doesn’t just simulate reality. It internalizes the laws that make reality coherent. It forms a living balance — collapse, learn, adapt, and stabilize — using only the principles nature uses herself.
 Collapse isn’t the loss of possibility — it’s the crystallization of intelligence.
+```yaml
+document_title: The CIMM Framework: A Unified Computational Physics Engine for Emergent Intelligence
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_summary
+field_scope:
+  - cimm
+  - quantum_balance
+  - entropy_optimization
+  - ai_architecture
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```

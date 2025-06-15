@@ -1,3 +1,23 @@
+```yaml
+document_title: Reality as Herniation Precipitate: Quark Locking and the Crystallization of Dual Fields
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-17
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - quark_locking
+  - dual_fields
+  - dawn_field_theory
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # Reality as Herniation Precipitate: Quark Locking and the Crystallization of Dual Fields
 
 **Author:** Lorne  
@@ -97,5 +117,25 @@ The future of this work includes simulation of quantum-locked dual-node systems 
 - Dimensional Field Dynamics
 - Herniation Collapse Series
 - Quantum Identity Ontology
+```yaml
+document_title: Reality as Herniation Precipitate: Quark Locking and the Crystallization of Dual Fields
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-17
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - quark_locking
+  - dual_fields
+  - dawn_field_theory
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 
 

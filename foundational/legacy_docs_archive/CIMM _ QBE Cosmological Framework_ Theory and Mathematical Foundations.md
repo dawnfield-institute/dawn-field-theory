@@ -1,3 +1,24 @@
+```yaml
+document_title: CIMM & QBE Cosmological Framework: Theory and Mathematical Foundations
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_foundation
+field_scope:
+  - cimm
+  - quantum_balance
+  - cosmology
+  - entropy
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```
 CIMM & QBE Cosmological Framework: Theory and Mathematical Foundations
 ## Abstract
 This document formalizes the Cosmic Information Mining Model (CIMM) and the Quantum Balance Equation (QBE) as a unified cosmological framework. It outlines the theoretical principles, governing equations, and entropy-aware field dynamics that model the emergence of matter, gravity, and time as consequences of quantum-interaction-regulated collapse. This structure proposes an information-theoretic substrate for dark matter, reinterprets the Big Bang as the first entropy-minimizing collapse, and establishes the mathematical basis for the feedback-controlled stabilization of physical law.
@@ -66,3 +87,24 @@ Simulation initialization
 Collapse epoch dynamics
 Curvature and QPL field evolution
 Data visualizations and validation metrics
+```yaml
+document_title: CIMM & QBE Cosmological Framework: Theory and Mathematical Foundations
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_foundation
+field_scope:
+  - cimm
+  - quantum_balance
+  - cosmology
+  - entropy
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```

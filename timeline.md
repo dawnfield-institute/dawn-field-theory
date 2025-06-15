@@ -41,6 +41,19 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 
 ---
 
+## Phase 2.5: 2025 Progress & Workflow Update (Ongoing)
+- Bifractal collapse and symbolic recursion validated in CUDA-accelerated 3D simulations
+- Recursive entropy/collapse tree experiments confirm symbolic geometry and adaptive pruning
+- Proto-galactic superfluid and emergent gravity simulated from informational recursion (no Newtonian force)
+- Cognition Index Protocol (CIP) introduced for machine-native comprehension benchmarking
+- Theory and experiments extended to show entropy as a substrate for both classical and quantum phenomena
+- **Development workflow:**  
+  - Model development during the week (core simulation, theory, protocol architecture)  
+  - Experiments and validation during the weekend (running, documenting, analyzing results)  
+  - Ongoing migration of legacy theory and integration of new ideas
+
+---
+
 ## Phase 3: Infodynamic Devkit (Q3 2025)
 - Modular development tools for infodynamic systems
 - Ontology-based schema tools and interface layers

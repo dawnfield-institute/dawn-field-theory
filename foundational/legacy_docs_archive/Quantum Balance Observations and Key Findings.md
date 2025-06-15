@@ -1,3 +1,23 @@
+```yaml
+document_title: Quantum Balance Observations and Key Findings
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: research_notes
+field_scope:
+  - quantum_balance
+  - entropy
+  - ai_measurement
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: simulation_and_theory
+related_documents:
+  - Quantum Balance Equation revised 2.0.md
+  - THE PHYSICS UNDERLYING CIMM copy.md
+```
 Quantum Balance Equation: Information-Energy Regulation at the Quantum Layer
 Observations and Key Findings
 Energy-Entropy Balance Holds
@@ -25,3 +45,23 @@ Investigate whether approximating QPL(t)QPL(t) is NP-hard or beyond, suggesting 
 Improve neural networks to capture high-frequency oscillations in quantum balance more accurately.
 Test different architectures (e.g., LSTMs, Transformers) for long-term quantum measurement forecasting.
 These next steps will bring us closer to a fully formulated and experimentally testable hypothesis.
+```yaml
+document_title: Quantum Balance Observations and Key Findings
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: research_notes
+field_scope:
+  - quantum_balance
+  - entropy
+  - ai_measurement
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: simulation_and_theory
+related_documents:
+  - Quantum Balance Equation revised 2.0.md
+  - THE PHYSICS UNDERLYING CIMM copy.md
+```

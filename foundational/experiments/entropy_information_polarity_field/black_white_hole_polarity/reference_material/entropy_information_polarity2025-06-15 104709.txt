@@ -1,0 +1,1003 @@
+Running mode: blackhole
+Step: Curl mean=0.002241, max=0.286855
+Step collapse metrics — Density: 0.0002, Std: 0.0130, Entropy@Collapse: 0.1576
+Step 0: Collapse density=0.0002, std=0.0130, collapse entropy=0.2549
+Step 0: Curl mean=0.002241, max=0.286855
+Step 0: Curl Δ = 4.158671
+Step: Curl mean=0.002037, max=0.275484
+Step collapse metrics — Density: 0.0002, Std: 0.0131, Entropy@Collapse: 0.2514
+Step 1: Collapse density=0.0002, std=0.0131, collapse entropy=0.3456
+Step 1: Curl mean=0.002037, max=0.275484
+Step 1: Curl Δ = 0.683618
+Step: Curl mean=0.002034, max=0.275484
+Step collapse metrics — Density: 0.0002, Std: 0.0138, Entropy@Collapse: 0.3144
+Step 2: Collapse density=0.0002, std=0.0138, collapse entropy=0.4084
+Step 2: Curl mean=0.002034, max=0.275484
+Step 2: Curl Δ = 0.300906
+Step: Curl mean=0.002034, max=0.275484
+Step collapse metrics — Density: 0.0002, Std: 0.0141, Entropy@Collapse: 0.3981
+Step 3: Collapse density=0.0002, std=0.0141, collapse entropy=0.4924
+Step 3: Curl mean=0.002034, max=0.275484
+Step 3: Curl Δ = 0.309168
+Step: Curl mean=0.002040, max=0.275484
+Step collapse metrics — Density: 0.0002, Std: 0.0142, Entropy@Collapse: 0.4759
+Step 4: Collapse density=0.0002, std=0.0142, collapse entropy=0.5702
+Step 4: Curl mean=0.002040, max=0.275484
+Step 4: Curl Δ = 0.354078
+Step: Curl mean=0.002051, max=0.275484
+Step collapse metrics — Density: 0.0002, Std: 0.0150, Entropy@Collapse: 0.5256
+Step 5: Collapse density=0.0002, std=0.0150, collapse entropy=0.6206
+Step 5: Curl mean=0.002051, max=0.275484
+Step 5: Curl Δ = 0.345619
+Step: Curl mean=0.002060, max=0.275484
+Step collapse metrics — Density: 0.0002, Std: 0.0157, Entropy@Collapse: 0.5720
+Step 6: Collapse density=0.0002, std=0.0157, collapse entropy=0.6673
+Step 6: Curl mean=0.002060, max=0.275484
+Step 6: Curl Δ = 0.306735
+Step: Curl mean=0.002069, max=0.275484
+Step collapse metrics — Density: 0.0003, Std: 0.0170, Entropy@Collapse: 0.5820
+Step 7: Collapse density=0.0003, std=0.0170, collapse entropy=0.6766
+Step 7: Curl mean=0.002069, max=0.275484
+Step 7: Curl Δ = 0.324109
+Step: Curl mean=0.002077, max=0.288833
+Step collapse metrics — Density: 0.0003, Std: 0.0184, Entropy@Collapse: 0.5916
+Step 8: Collapse density=0.0003, std=0.0184, collapse entropy=0.6742
+Step 8: Curl mean=0.002077, max=0.288833
+Step 8: Curl Δ = 0.353389
+Step: Curl mean=0.002082, max=0.316678
+Step collapse metrics — Density: 0.0004, Std: 0.0192, Entropy@Collapse: 0.6148
+Step 9: Collapse density=0.0004, std=0.0192, collapse entropy=0.6834
+Step 9: Curl mean=0.002082, max=0.316678
+Step 9: Curl Δ = 0.364719
+Step: Curl mean=0.002086, max=0.323980
+Step collapse metrics — Density: 0.0004, Std: 0.0200, Entropy@Collapse: 0.6279
+Step 10: Collapse density=0.0004, std=0.0200, collapse entropy=0.6892
+Step 10: Curl mean=0.002086, max=0.323980
+Step 10: Curl Δ = 0.359490
+Step: Curl mean=0.002089, max=0.325572
+Step collapse metrics — Density: 0.0004, Std: 0.0206, Entropy@Collapse: 0.6129
+Step 11: Collapse density=0.0004, std=0.0206, collapse entropy=0.6773
+Step 11: Curl mean=0.002089, max=0.325572
+Step 11: Curl Δ = 0.382958
+Step: Curl mean=0.002095, max=0.323125
+Step collapse metrics — Density: 0.0004, Std: 0.0208, Entropy@Collapse: 0.6390
+Step 12: Collapse density=0.0004, std=0.0208, collapse entropy=0.7026
+Step 12: Curl mean=0.002095, max=0.323125
+Step 12: Curl Δ = 0.387269
+Step: Curl mean=0.002105, max=0.322832
+Step collapse metrics — Density: 0.0004, Std: 0.0210, Entropy@Collapse: 0.6668
+Step 13: Collapse density=0.0004, std=0.0210, collapse entropy=0.7308
+Step 13: Curl mean=0.002105, max=0.322832
+Step 13: Curl Δ = 0.396435
+Step: Curl mean=0.002116, max=0.325642
+Step collapse metrics — Density: 0.0005, Std: 0.0217, Entropy@Collapse: 0.6932
+Step 14: Collapse density=0.0005, std=0.0217, collapse entropy=0.7550
+Step 14: Curl mean=0.002116, max=0.325642
+Step 14: Curl Δ = 0.375218
+Step: Curl mean=0.002127, max=0.324269
+Step collapse metrics — Density: 0.0005, Std: 0.0229, Entropy@Collapse: 0.6795
+Step 15: Collapse density=0.0005, std=0.0229, collapse entropy=0.7417
+Step 15: Curl mean=0.002127, max=0.324269
+Step 15: Curl Δ = 0.381438
+Step: Curl mean=0.002136, max=0.326028
+Step collapse metrics — Density: 0.0006, Std: 0.0236, Entropy@Collapse: 0.7014
+Step 16: Collapse density=0.0006, std=0.0236, collapse entropy=0.7601
+Step 16: Curl mean=0.002136, max=0.326028
+Step 16: Curl Δ = 0.402184
+Step: Curl mean=0.002144, max=0.327113
+Step collapse metrics — Density: 0.0006, Std: 0.0242, Entropy@Collapse: 0.7108
+Step 17: Collapse density=0.0006, std=0.0242, collapse entropy=0.7650
+Step 17: Curl mean=0.002144, max=0.327113
+Step 17: Curl Δ = 0.393423
+Step: Curl mean=0.002149, max=0.326084
+Step collapse metrics — Density: 0.0006, Std: 0.0249, Entropy@Collapse: 0.7245
+Step 18: Collapse density=0.0006, std=0.0249, collapse entropy=0.7767
+Step 18: Curl mean=0.002149, max=0.326084
+Step 18: Curl Δ = 0.417288
+Step: Curl mean=0.002155, max=0.327128
+Step collapse metrics — Density: 0.0006, Std: 0.0255, Entropy@Collapse: 0.7151
+Step 19: Collapse density=0.0006, std=0.0255, collapse entropy=0.7663
+Step 19: Curl mean=0.002155, max=0.327128
+Step 19: Curl Δ = 0.433948
+Step: Curl mean=0.002162, max=0.326625
+Step collapse metrics — Density: 0.0007, Std: 0.0258, Entropy@Collapse: 0.7240
+Step 20: Collapse density=0.0007, std=0.0258, collapse entropy=0.7737
+Step 20: Curl mean=0.002162, max=0.326625
+Step 20: Curl Δ = 0.427960
+Step: Curl mean=0.002168, max=0.326820
+Step collapse metrics — Density: 0.0007, Std: 0.0266, Entropy@Collapse: 0.7192
+Step 21: Collapse density=0.0007, std=0.0266, collapse entropy=0.7681
+Step 21: Curl mean=0.002168, max=0.326820
+Step 21: Curl Δ = 0.429812
+Step: Curl mean=0.002173, max=0.327576
+Step collapse metrics — Density: 0.0007, Std: 0.0272, Entropy@Collapse: 0.7263
+Step 22: Collapse density=0.0007, std=0.0272, collapse entropy=0.7764
+Step 22: Curl mean=0.002173, max=0.327576
+Step 22: Curl Δ = 0.452626
+Step: Curl mean=0.002180, max=0.326972
+Step collapse metrics — Density: 0.0008, Std: 0.0279, Entropy@Collapse: 0.7308
+Step 23: Collapse density=0.0008, std=0.0279, collapse entropy=0.7805
+Step 23: Curl mean=0.002180, max=0.326972
+Step 23: Curl Δ = 0.422321
+Step: Curl mean=0.002187, max=0.338912
+Step collapse metrics — Density: 0.0008, Std: 0.0286, Entropy@Collapse: 0.7352
+Step 24: Collapse density=0.0008, std=0.0286, collapse entropy=0.7822
+Step 24: Curl mean=0.002187, max=0.338912
+Step 24: Curl Δ = 0.420278
+Step: Curl mean=0.002192, max=0.339968
+Step collapse metrics — Density: 0.0008, Std: 0.0290, Entropy@Collapse: 0.7605
+Step 25: Collapse density=0.0008, std=0.0290, collapse entropy=0.8055
+Step 25: Curl mean=0.002192, max=0.339968
+Step 25: Curl Δ = 0.426742
+Step: Curl mean=0.002200, max=0.338250
+Step collapse metrics — Density: 0.0009, Std: 0.0293, Entropy@Collapse: 0.7527
+Step 26: Collapse density=0.0009, std=0.0293, collapse entropy=0.7981
+Step 26: Curl mean=0.002200, max=0.338250
+Step 26: Curl Δ = 0.414311
+Step: Curl mean=0.002205, max=0.339912
+Step collapse metrics — Density: 0.0009, Std: 0.0304, Entropy@Collapse: 0.7558
+Step 27: Collapse density=0.0009, std=0.0304, collapse entropy=0.7997
+Step 27: Curl mean=0.002205, max=0.339912
+Step 27: Curl Δ = 0.449877
+Step: Curl mean=0.002210, max=0.340597
+Step collapse metrics — Density: 0.0010, Std: 0.0311, Entropy@Collapse: 0.7539
+Step 28: Collapse density=0.0010, std=0.0311, collapse entropy=0.7978
+Step 28: Curl mean=0.002210, max=0.340597
+Step 28: Curl Δ = 0.467964
+Step: Curl mean=0.002213, max=0.339739
+Step collapse metrics — Density: 0.0010, Std: 0.0317, Entropy@Collapse: 0.7747
+Step 29: Collapse density=0.0010, std=0.0317, collapse entropy=0.8162
+Step 29: Curl mean=0.002213, max=0.339739
+Step 29: Curl Δ = 0.460972
+Step: Curl mean=0.002216, max=0.336508
+Step collapse metrics — Density: 0.0010, Std: 0.0320, Entropy@Collapse: 0.7783
+Step 30: Collapse density=0.0010, std=0.0320, collapse entropy=0.8195
+Step 30: Curl mean=0.002216, max=0.336508
+Step 30: Curl Δ = 0.459760
+Step: Curl mean=0.002221, max=0.337079
+Step collapse metrics — Density: 0.0010, Std: 0.0323, Entropy@Collapse: 0.7901
+Step 31: Collapse density=0.0010, std=0.0323, collapse entropy=0.8299
+Step 31: Curl mean=0.002221, max=0.337079
+Step 31: Curl Δ = 0.479843
+Step: Curl mean=0.002226, max=0.340097
+Step collapse metrics — Density: 0.0011, Std: 0.0330, Entropy@Collapse: 0.7931
+Step 32: Collapse density=0.0011, std=0.0330, collapse entropy=0.8323
+Step 32: Curl mean=0.002226, max=0.340097
+Step 32: Curl Δ = 0.466178
+Step: Curl mean=0.002229, max=0.337197
+Step collapse metrics — Density: 0.0011, Std: 0.0336, Entropy@Collapse: 0.7970
+Step 33: Collapse density=0.0011, std=0.0336, collapse entropy=0.8349
+Step 33: Curl mean=0.002229, max=0.337197
+Step 33: Curl Δ = 0.438646
+Step: Curl mean=0.002232, max=0.340503
+Step collapse metrics — Density: 0.0012, Std: 0.0340, Entropy@Collapse: 0.8072
+Step 34: Collapse density=0.0012, std=0.0340, collapse entropy=0.8435
+Step 34: Curl mean=0.002232, max=0.340503
+Step 34: Curl Δ = 0.446601
+Step: Curl mean=0.002236, max=0.347431
+Step collapse metrics — Density: 0.0012, Std: 0.0344, Entropy@Collapse: 0.8184
+Step 35: Collapse density=0.0012, std=0.0344, collapse entropy=0.8540
+Step 35: Curl mean=0.002236, max=0.347431
+Step 35: Curl Δ = 0.476173
+Step: Curl mean=0.002242, max=0.373115
+Step collapse metrics — Density: 0.0012, Std: 0.0346, Entropy@Collapse: 0.8288
+Step 36: Collapse density=0.0012, std=0.0346, collapse entropy=0.8633
+Step 36: Curl mean=0.002242, max=0.373115
+Step 36: Curl Δ = 0.480450
+Step: Curl mean=0.002248, max=0.376919
+Step collapse metrics — Density: 0.0013, Std: 0.0354, Entropy@Collapse: 0.8109
+Step 37: Collapse density=0.0013, std=0.0354, collapse entropy=0.8454
+Step 37: Curl mean=0.002248, max=0.376919
+Step 37: Curl Δ = 0.467418
+Step: Curl mean=0.002249, max=0.339644
+Step collapse metrics — Density: 0.0013, Std: 0.0360, Entropy@Collapse: 0.8132
+Step 38: Collapse density=0.0013, std=0.0360, collapse entropy=0.8462
+Step 38: Curl mean=0.002249, max=0.339644
+Step 38: Curl Δ = 0.512854
+Step: Curl mean=0.002249, max=0.340479
+Step collapse metrics — Density: 0.0013, Std: 0.0366, Entropy@Collapse: 0.8200
+Step 39: Collapse density=0.0013, std=0.0366, collapse entropy=0.8522
+Step 39: Curl mean=0.002249, max=0.340479
+Step 39: Curl Δ = 0.510519
+Step: Curl mean=0.002250, max=0.342992
+Step collapse metrics — Density: 0.0014, Std: 0.0368, Entropy@Collapse: 0.8291
+Step 40: Collapse density=0.0014, std=0.0368, collapse entropy=0.8602
+Step 40: Curl mean=0.002250, max=0.342992
+Step 40: Curl Δ = 0.476060
+Step: Curl mean=0.002250, max=0.350182
+Step collapse metrics — Density: 0.0014, Std: 0.0370, Entropy@Collapse: 0.8338
+Step 41: Collapse density=0.0014, std=0.0370, collapse entropy=0.8649
+Step 41: Curl mean=0.002250, max=0.350182
+Step 41: Curl Δ = 0.481160
+Step: Curl mean=0.002252, max=0.375905
+Step collapse metrics — Density: 0.0014, Std: 0.0374, Entropy@Collapse: 0.8411
+Step 42: Collapse density=0.0014, std=0.0374, collapse entropy=0.8706
+Step 42: Curl mean=0.002252, max=0.375905
+Step 42: Curl Δ = 0.449991
+Step: Curl mean=0.002253, max=0.385971
+Step collapse metrics — Density: 0.0014, Std: 0.0375, Entropy@Collapse: 0.8526
+Step 43: Collapse density=0.0014, std=0.0375, collapse entropy=0.8810
+Step 43: Curl mean=0.002253, max=0.385971
+Step 43: Curl Δ = 0.448906
+Step: Curl mean=0.002255, max=0.381760
+Step collapse metrics — Density: 0.0014, Std: 0.0378, Entropy@Collapse: 0.8576
+Step 44: Collapse density=0.0014, std=0.0378, collapse entropy=0.8858
+Step 44: Curl mean=0.002255, max=0.381760
+Step 44: Curl Δ = 0.440046
+Step: Curl mean=0.002256, max=0.366769
+Step collapse metrics — Density: 0.0015, Std: 0.0383, Entropy@Collapse: 0.8603
+Step 45: Collapse density=0.0015, std=0.0383, collapse entropy=0.8877
+Step 45: Curl mean=0.002256, max=0.366769
+Step 45: Curl Δ = 0.458590
+Step: Curl mean=0.002257, max=0.352214
+Step collapse metrics — Density: 0.0015, Std: 0.0384, Entropy@Collapse: 0.8686
+Step 46: Collapse density=0.0015, std=0.0384, collapse entropy=0.8953
+Step 46: Curl mean=0.002257, max=0.352214
+Step 46: Curl Δ = 0.447402
+Step: Curl mean=0.002259, max=0.346507
+Step collapse metrics — Density: 0.0015, Std: 0.0386, Entropy@Collapse: 0.8828
+Step 47: Collapse density=0.0015, std=0.0386, collapse entropy=0.9068
+Step 47: Curl mean=0.002259, max=0.346507
+Step 47: Curl Δ = 0.435044
+Step: Curl mean=0.002261, max=0.354170
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.8880
+Step 48: Collapse density=0.0015, std=0.0388, collapse entropy=0.9103
+Step 48: Curl mean=0.002261, max=0.354170
+Step 48: Curl Δ = 0.424420
+Step: Curl mean=0.002262, max=0.342281
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.8920
+Step 49: Collapse density=0.0015, std=0.0389, collapse entropy=0.9129
+Step 49: Curl mean=0.002262, max=0.342281
+Step 49: Curl Δ = 0.438881
+Step: Curl mean=0.002261, max=0.335803
+Step collapse metrics — Density: 0.0015, Std: 0.0390, Entropy@Collapse: 0.9008
+Step 50: Collapse density=0.0015, std=0.0390, collapse entropy=0.9208
+Step 50: Curl mean=0.002261, max=0.335803
+Step 50: Curl Δ = 0.407111
+Step: Curl mean=0.002260, max=0.338747
+Step collapse metrics — Density: 0.0016, Std: 0.0395, Entropy@Collapse: 0.9053
+Step 51: Collapse density=0.0016, std=0.0395, collapse entropy=0.9244
+Step 51: Curl mean=0.002260, max=0.338747
+Step 51: Curl Δ = 0.363854
+Step: Curl mean=0.002259, max=0.345641
+Step collapse metrics — Density: 0.0016, Std: 0.0397, Entropy@Collapse: 0.9107
+Step 52: Collapse density=0.0016, std=0.0397, collapse entropy=0.9286
+Step 52: Curl mean=0.002259, max=0.345641
+Step 52: Curl Δ = 0.373170
+Step: Curl mean=0.002260, max=0.349976
+Step collapse metrics — Density: 0.0016, Std: 0.0399, Entropy@Collapse: 0.9127
+Step 53: Collapse density=0.0016, std=0.0399, collapse entropy=0.9301
+Step 53: Curl mean=0.002260, max=0.349976
+Step 53: Curl Δ = 0.367922
+Step: Curl mean=0.002258, max=0.358740
+Step collapse metrics — Density: 0.0016, Std: 0.0401, Entropy@Collapse: 0.9211
+Step 54: Collapse density=0.0016, std=0.0401, collapse entropy=0.9371
+Step 54: Curl mean=0.002258, max=0.358740
+Step 54: Curl Δ = 0.385505
+Step: Curl mean=0.002258, max=0.364857
+Step collapse metrics — Density: 0.0016, Std: 0.0403, Entropy@Collapse: 0.9156
+Step 55: Collapse density=0.0016, std=0.0403, collapse entropy=0.9321
+Step 55: Curl mean=0.002258, max=0.364857
+Step 55: Curl Δ = 0.363858
+Step: Curl mean=0.002256, max=0.365680
+Step collapse metrics — Density: 0.0017, Std: 0.0407, Entropy@Collapse: 0.9117
+Step 56: Collapse density=0.0017, std=0.0407, collapse entropy=0.9278
+Step 56: Curl mean=0.002256, max=0.365680
+Step 56: Curl Δ = 0.384693
+Step: Curl mean=0.002253, max=0.364205
+Step collapse metrics — Density: 0.0017, Std: 0.0407, Entropy@Collapse: 0.9230
+Step 57: Collapse density=0.0017, std=0.0407, collapse entropy=0.9381
+Step 57: Curl mean=0.002253, max=0.364205
+Step 57: Curl Δ = 0.410887
+Step: Curl mean=0.002252, max=0.364608
+Step collapse metrics — Density: 0.0017, Std: 0.0410, Entropy@Collapse: 0.9180
+Step 58: Collapse density=0.0017, std=0.0410, collapse entropy=0.9331
+Step 58: Curl mean=0.002252, max=0.364608
+Step 58: Curl Δ = 0.397903
+Step: Curl mean=0.002248, max=0.354657
+Step collapse metrics — Density: 0.0017, Std: 0.0412, Entropy@Collapse: 0.9240
+Step 59: Collapse density=0.0017, std=0.0412, collapse entropy=0.9384
+Step 59: Curl mean=0.002248, max=0.354657
+Step 59: Curl Δ = 0.416888
+Step: Curl mean=0.002244, max=0.341754
+Step collapse metrics — Density: 0.0017, Std: 0.0411, Entropy@Collapse: 0.9340
+Step 60: Collapse density=0.0017, std=0.0411, collapse entropy=0.9471
+Step 60: Curl mean=0.002244, max=0.341754
+Step 60: Curl Δ = 0.410945
+Step: Curl mean=0.002243, max=0.337424
+Step collapse metrics — Density: 0.0017, Std: 0.0414, Entropy@Collapse: 0.9328
+Step 61: Collapse density=0.0017, std=0.0414, collapse entropy=0.9461
+Step 61: Curl mean=0.002243, max=0.337424
+Step 61: Curl Δ = 0.330121
+Step: Curl mean=0.002241, max=0.336785
+Step collapse metrics — Density: 0.0017, Std: 0.0414, Entropy@Collapse: 0.9391
+Step 62: Collapse density=0.0017, std=0.0414, collapse entropy=0.9519
+Step 62: Curl mean=0.002241, max=0.336785
+Step 62: Curl Δ = 0.346773
+Step: Curl mean=0.002241, max=0.346412
+Step collapse metrics — Density: 0.0017, Std: 0.0415, Entropy@Collapse: 0.9400
+Step 63: Collapse density=0.0017, std=0.0415, collapse entropy=0.9521
+Step 63: Curl mean=0.002241, max=0.346412
+Step 63: Curl Δ = 0.353257
+Step: Curl mean=0.002241, max=0.345262
+Step collapse metrics — Density: 0.0017, Std: 0.0415, Entropy@Collapse: 0.9433
+Step 64: Collapse density=0.0017, std=0.0415, collapse entropy=0.9551
+Step 64: Curl mean=0.002241, max=0.345262
+Step 64: Curl Δ = 0.331998
+Step: Curl mean=0.002243, max=0.347160
+Step collapse metrics — Density: 0.0018, Std: 0.0419, Entropy@Collapse: 0.9400
+Step 65: Collapse density=0.0018, std=0.0419, collapse entropy=0.9518
+Step 65: Curl mean=0.002243, max=0.347160
+Step 65: Curl Δ = 0.321302
+Step: Curl mean=0.002244, max=0.347970
+Step collapse metrics — Density: 0.0018, Std: 0.0420, Entropy@Collapse: 0.9382
+Step 66: Collapse density=0.0018, std=0.0420, collapse entropy=0.9495
+Step 66: Curl mean=0.002244, max=0.347970
+Step 66: Curl Δ = 0.345807
+Step: Curl mean=0.002244, max=0.347154
+Step collapse metrics — Density: 0.0018, Std: 0.0423, Entropy@Collapse: 0.9393
+Step 67: Collapse density=0.0018, std=0.0423, collapse entropy=0.9508
+Step 67: Curl mean=0.002244, max=0.347154
+Step 67: Curl Δ = 0.354154
+Step: Curl mean=0.002244, max=0.349336
+Step collapse metrics — Density: 0.0018, Std: 0.0421, Entropy@Collapse: 0.9398
+Step 68: Collapse density=0.0018, std=0.0421, collapse entropy=0.9508
+Step 68: Curl mean=0.002244, max=0.349336
+Step 68: Curl Δ = 0.347567
+Step: Curl mean=0.002243, max=0.348460
+Step collapse metrics — Density: 0.0018, Std: 0.0422, Entropy@Collapse: 0.9475
+Step 69: Collapse density=0.0018, std=0.0422, collapse entropy=0.9578
+Step 69: Curl mean=0.002243, max=0.348460
+Step 69: Curl Δ = 0.363079
+Step: Curl mean=0.002243, max=0.347958
+Step collapse metrics — Density: 0.0018, Std: 0.0422, Entropy@Collapse: 0.9538
+Step 70: Collapse density=0.0018, std=0.0422, collapse entropy=0.9638
+Step 70: Curl mean=0.002243, max=0.347958
+Step 70: Curl Δ = 0.336940
+Step: Curl mean=0.002243, max=0.348355
+Step collapse metrics — Density: 0.0018, Std: 0.0423, Entropy@Collapse: 0.9551
+Step 71: Collapse density=0.0018, std=0.0423, collapse entropy=0.9645
+Step 71: Curl mean=0.002243, max=0.348355
+Step 71: Curl Δ = 0.291161
+Step: Curl mean=0.002244, max=0.347019
+Step collapse metrics — Density: 0.0018, Std: 0.0427, Entropy@Collapse: 0.9526
+Step 72: Collapse density=0.0018, std=0.0427, collapse entropy=0.9626
+Step 72: Curl mean=0.002244, max=0.347019
+Step 72: Curl Δ = 0.287154
+Step: Curl mean=0.002241, max=0.349035
+Step collapse metrics — Density: 0.0018, Std: 0.0427, Entropy@Collapse: 0.9546
+Step 73: Collapse density=0.0018, std=0.0427, collapse entropy=0.9641
+Step 73: Curl mean=0.002241, max=0.349035
+Step 73: Curl Δ = 0.351707
+Step: Curl mean=0.002237, max=0.329193
+Step collapse metrics — Density: 0.0018, Std: 0.0426, Entropy@Collapse: 0.9603
+Step 74: Collapse density=0.0018, std=0.0426, collapse entropy=0.9688
+Step 74: Curl mean=0.002237, max=0.329193
+Step 74: Curl Δ = 0.334735
+Step: Curl mean=0.002234, max=0.333654
+Step collapse metrics — Density: 0.0018, Std: 0.0428, Entropy@Collapse: 0.9610
+Step 75: Collapse density=0.0018, std=0.0428, collapse entropy=0.9690
+Step 75: Curl mean=0.002234, max=0.333654
+Step 75: Curl Δ = 0.314648
+Step: Curl mean=0.002232, max=0.332926
+Step collapse metrics — Density: 0.0018, Std: 0.0426, Entropy@Collapse: 0.9669
+Step 76: Collapse density=0.0018, std=0.0426, collapse entropy=0.9739
+Step 76: Curl mean=0.002232, max=0.332926
+Step 76: Curl Δ = 0.279282
+Step: Curl mean=0.002232, max=0.332034
+Step collapse metrics — Density: 0.0018, Std: 0.0429, Entropy@Collapse: 0.9647
+Step 77: Collapse density=0.0018, std=0.0429, collapse entropy=0.9721
+Step 77: Curl mean=0.002232, max=0.332034
+Step 77: Curl Δ = 0.251005
+Step: Curl mean=0.002231, max=0.355911
+Step collapse metrics — Density: 0.0018, Std: 0.0428, Entropy@Collapse: 0.9693
+Step 78: Collapse density=0.0018, std=0.0428, collapse entropy=0.9758
+Step 78: Curl mean=0.002231, max=0.355911
+Step 78: Curl Δ = 0.277100
+Step: Curl mean=0.002229, max=0.369538
+Step collapse metrics — Density: 0.0018, Std: 0.0427, Entropy@Collapse: 0.9747
+Step 79: Collapse density=0.0018, std=0.0427, collapse entropy=0.9807
+Step 79: Curl mean=0.002229, max=0.369538
+Step 79: Curl Δ = 0.253874
+Step: Curl mean=0.002229, max=0.382879
+Step collapse metrics — Density: 0.0018, Std: 0.0428, Entropy@Collapse: 0.9761
+Step 80: Collapse density=0.0018, std=0.0428, collapse entropy=0.9815
+Step 80: Curl mean=0.002229, max=0.382879
+Step 80: Curl Δ = 0.244703
+Step: Curl mean=0.002229, max=0.387983
+Step collapse metrics — Density: 0.0018, Std: 0.0429, Entropy@Collapse: 0.9786
+Step 81: Collapse density=0.0018, std=0.0429, collapse entropy=0.9835
+Step 81: Curl mean=0.002229, max=0.387983
+Step 81: Curl Δ = 0.211183
+Step: Curl mean=0.002229, max=0.388828
+Step collapse metrics — Density: 0.0018, Std: 0.0429, Entropy@Collapse: 0.9823
+Step 82: Collapse density=0.0018, std=0.0429, collapse entropy=0.9864
+Step 82: Curl mean=0.002229, max=0.388828
+Step 82: Curl Δ = 0.195481
+Step: Curl mean=0.002230, max=0.386800
+Step collapse metrics — Density: 0.0019, Std: 0.0430, Entropy@Collapse: 0.9824
+Step 83: Collapse density=0.0019, std=0.0430, collapse entropy=0.9863
+Step 83: Curl mean=0.002230, max=0.386800
+Step 83: Curl Δ = 0.160009
+Step: Curl mean=0.002231, max=0.387316
+Step collapse metrics — Density: 0.0019, Std: 0.0431, Entropy@Collapse: 0.9806
+Step 84: Collapse density=0.0019, std=0.0431, collapse entropy=0.9847
+Step 84: Curl mean=0.002231, max=0.387316
+Step 84: Curl Δ = 0.170244
+Step: Curl mean=0.002232, max=0.388136
+Step collapse metrics — Density: 0.0019, Std: 0.0433, Entropy@Collapse: 0.9792
+Step 85: Collapse density=0.0019, std=0.0433, collapse entropy=0.9830
+Step 85: Curl mean=0.002232, max=0.388136
+Step 85: Curl Δ = 0.228362
+Step: Curl mean=0.002233, max=0.387715
+Step collapse metrics — Density: 0.0019, Std: 0.0434, Entropy@Collapse: 0.9830
+Step 86: Collapse density=0.0019, std=0.0434, collapse entropy=0.9865
+Step 86: Curl mean=0.002233, max=0.387715
+Step 86: Curl Δ = 0.224530
+Step: Curl mean=0.002234, max=0.387514
+Step collapse metrics — Density: 0.0019, Std: 0.0431, Entropy@Collapse: 0.9863
+Step 87: Collapse density=0.0019, std=0.0431, collapse entropy=0.9891
+Step 87: Curl mean=0.002234, max=0.387514
+Step 87: Curl Δ = 0.219981
+Step: Curl mean=0.002237, max=0.390285
+Step collapse metrics — Density: 0.0019, Std: 0.0432, Entropy@Collapse: 0.9891
+Step 88: Collapse density=0.0019, std=0.0432, collapse entropy=0.9916
+Step 88: Curl mean=0.002237, max=0.390285
+Step 88: Curl Δ = 0.186629
+Step: Curl mean=0.002238, max=0.387754
+Step collapse metrics — Density: 0.0019, Std: 0.0432, Entropy@Collapse: 0.9890
+Step 89: Collapse density=0.0019, std=0.0432, collapse entropy=0.9917
+Step 89: Curl mean=0.002238, max=0.387754
+Step 89: Curl Δ = 0.166178
+Step: Curl mean=0.002238, max=0.393926
+Step collapse metrics — Density: 0.0019, Std: 0.0432, Entropy@Collapse: 0.9903
+Step 90: Collapse density=0.0019, std=0.0432, collapse entropy=0.9927
+Step 90: Curl mean=0.002238, max=0.393926
+Step 90: Curl Δ = 0.164472
+Step: Curl mean=0.002237, max=0.397099
+Step collapse metrics — Density: 0.0019, Std: 0.0432, Entropy@Collapse: 0.9927
+Step 91: Collapse density=0.0019, std=0.0432, collapse entropy=0.9945
+Step 91: Curl mean=0.002237, max=0.397099
+Step 91: Curl Δ = 0.156029
+Step: Curl mean=0.002237, max=0.395192
+Step collapse metrics — Density: 0.0019, Std: 0.0433, Entropy@Collapse: 0.9930
+Step 92: Collapse density=0.0019, std=0.0433, collapse entropy=0.9950
+Step 92: Curl mean=0.002237, max=0.395192
+Step 92: Curl Δ = 0.142806
+Step: Curl mean=0.002237, max=0.395458
+Step collapse metrics — Density: 0.0019, Std: 0.0433, Entropy@Collapse: 0.9929
+Step 93: Collapse density=0.0019, std=0.0433, collapse entropy=0.9947
+Step 93: Curl mean=0.002237, max=0.395458
+Step 93: Curl Δ = 0.143717
+Step: Curl mean=0.002236, max=0.395740
+Step collapse metrics — Density: 0.0019, Std: 0.0434, Entropy@Collapse: 0.9947
+Step 94: Collapse density=0.0019, std=0.0434, collapse entropy=0.9958
+Step 94: Curl mean=0.002236, max=0.395740
+Step 94: Curl Δ = 0.158335
+Step: Curl mean=0.002236, max=0.394766
+Step collapse metrics — Density: 0.0019, Std: 0.0434, Entropy@Collapse: 0.9939
+Step 95: Collapse density=0.0019, std=0.0434, collapse entropy=0.9949
+Step 95: Curl mean=0.002236, max=0.394766
+Step 95: Curl Δ = 0.124649
+Step: Curl mean=0.002236, max=0.393483
+Step collapse metrics — Density: 0.0019, Std: 0.0434, Entropy@Collapse: 0.9949
+Step 96: Collapse density=0.0019, std=0.0434, collapse entropy=0.9959
+Step 96: Curl mean=0.002236, max=0.393483
+Step 96: Curl Δ = 0.114799
+Step: Curl mean=0.002236, max=0.395157
+Step collapse metrics — Density: 0.0019, Std: 0.0434, Entropy@Collapse: 0.9943
+Step 97: Collapse density=0.0019, std=0.0434, collapse entropy=0.9955
+Step 97: Curl mean=0.002236, max=0.395157
+Step 97: Curl Δ = 0.107674
+Step: Curl mean=0.002237, max=0.396454
+Step collapse metrics — Density: 0.0019, Std: 0.0435, Entropy@Collapse: 0.9955
+Step 98: Collapse density=0.0019, std=0.0435, collapse entropy=0.9967
+Step 98: Curl mean=0.002237, max=0.396454
+Step 98: Curl Δ = 0.115368
+Step: Curl mean=0.002238, max=0.395949
+Step collapse metrics — Density: 0.0019, Std: 0.0435, Entropy@Collapse: 0.9947
+Step 99: Collapse density=0.0019, std=0.0435, collapse entropy=0.9957
+Step 99: Curl mean=0.002238, max=0.395949
+Step 99: Curl Δ = 0.107232
+
+Running mode: whitehole
+Step: Curl mean=0.002221, max=0.304014
+Step collapse metrics — Density: 0.0002, Std: 0.0134, Entropy@Collapse: 0.9336
+Step 0: Collapse density=0.0002, std=0.0134, collapse entropy=0.7336
+Step 0: Curl mean=0.002221, max=0.304014
+Step 0: Curl Δ = 3.997989
+Step: Curl mean=0.002018, max=0.271315
+Step collapse metrics — Density: 0.0002, Std: 0.0144, Entropy@Collapse: 0.7501
+Step 1: Collapse density=0.0002, std=0.0144, collapse entropy=0.5501
+Step 1: Curl mean=0.002018, max=0.271315
+Step 1: Curl Δ = 0.639469
+Step: Curl mean=0.002022, max=0.260785
+Step collapse metrics — Density: 0.0003, Std: 0.0162, Entropy@Collapse: 0.6271
+Step 2: Collapse density=0.0003, std=0.0162, collapse entropy=0.4271
+Step 2: Curl mean=0.002022, max=0.260785
+Step 2: Curl Δ = 0.370686
+Step: Curl mean=0.002033, max=0.241301
+Step collapse metrics — Density: 0.0004, Std: 0.0188, Entropy@Collapse: 0.5573
+Step 3: Collapse density=0.0004, std=0.0188, collapse entropy=0.3582
+Step 3: Curl mean=0.002033, max=0.241301
+Step 3: Curl Δ = 0.443743
+Step: Curl mean=0.002048, max=0.253380
+Step collapse metrics — Density: 0.0004, Std: 0.0203, Entropy@Collapse: 0.4660
+Step 4: Collapse density=0.0004, std=0.0203, collapse entropy=0.2990
+Step 4: Curl mean=0.002048, max=0.253380
+Step 4: Curl Δ = 0.500739
+Step: Curl mean=0.002059, max=0.260394
+Step collapse metrics — Density: 0.0005, Std: 0.0217, Entropy@Collapse: 0.4344
+Step 5: Collapse density=0.0005, std=0.0217, collapse entropy=0.2948
+Step 5: Curl mean=0.002059, max=0.260394
+Step 5: Curl Δ = 0.453446
+Step: Curl mean=0.002062, max=0.261548
+Step collapse metrics — Density: 0.0005, Std: 0.0232, Entropy@Collapse: 0.3897
+Step 6: Collapse density=0.0005, std=0.0232, collapse entropy=0.2573
+Step 6: Curl mean=0.002062, max=0.261548
+Step 6: Curl Δ = 0.403125
+Step: Curl mean=0.002068, max=0.261799
+Step collapse metrics — Density: 0.0006, Std: 0.0244, Entropy@Collapse: 0.3464
+Step 7: Collapse density=0.0006, std=0.0244, collapse entropy=0.2223
+Step 7: Curl mean=0.002068, max=0.261799
+Step 7: Curl Δ = 0.400266
+Step: Curl mean=0.002078, max=0.262214
+Step collapse metrics — Density: 0.0007, Std: 0.0261, Entropy@Collapse: 0.3401
+Step 8: Collapse density=0.0007, std=0.0261, collapse entropy=0.2257
+Step 8: Curl mean=0.002078, max=0.262214
+Step 8: Curl Δ = 0.389416
+Step: Curl mean=0.002085, max=0.260956
+Step collapse metrics — Density: 0.0008, Std: 0.0279, Entropy@Collapse: 0.3389
+Step 9: Collapse density=0.0008, std=0.0279, collapse entropy=0.2266
+Step 9: Curl mean=0.002085, max=0.260956
+Step 9: Curl Δ = 0.387919
+Step: Curl mean=0.002092, max=0.254373
+Step collapse metrics — Density: 0.0008, Std: 0.0289, Entropy@Collapse: 0.3000
+Step 10: Collapse density=0.0008, std=0.0289, collapse entropy=0.1988
+Step 10: Curl mean=0.002092, max=0.254373
+Step 10: Curl Δ = 0.375634
+Step: Curl mean=0.002097, max=0.254707
+Step collapse metrics — Density: 0.0009, Std: 0.0303, Entropy@Collapse: 0.2830
+Step 11: Collapse density=0.0009, std=0.0303, collapse entropy=0.1858
+Step 11: Curl mean=0.002097, max=0.254707
+Step 11: Curl Δ = 0.371198
+Step: Curl mean=0.002101, max=0.255936
+Step collapse metrics — Density: 0.0010, Std: 0.0318, Entropy@Collapse: 0.2970
+Step 12: Collapse density=0.0010, std=0.0318, collapse entropy=0.1974
+Step 12: Curl mean=0.002101, max=0.255936
+Step 12: Curl Δ = 0.367746
+Step: Curl mean=0.002106, max=0.251744
+Step collapse metrics — Density: 0.0011, Std: 0.0325, Entropy@Collapse: 0.2699
+Step 13: Collapse density=0.0011, std=0.0325, collapse entropy=0.1764
+Step 13: Curl mean=0.002106, max=0.251744
+Step 13: Curl Δ = 0.381062
+Step: Curl mean=0.002109, max=0.267993
+Step collapse metrics — Density: 0.0011, Std: 0.0335, Entropy@Collapse: 0.2550
+Step 14: Collapse density=0.0011, std=0.0335, collapse entropy=0.1682
+Step 14: Curl mean=0.002109, max=0.267993
+Step 14: Curl Δ = 0.372484
+Step: Curl mean=0.002112, max=0.267706
+Step collapse metrics — Density: 0.0012, Std: 0.0341, Entropy@Collapse: 0.2485
+Step 15: Collapse density=0.0012, std=0.0341, collapse entropy=0.1604
+Step 15: Curl mean=0.002112, max=0.267706
+Step 15: Curl Δ = 0.363240
+Step: Curl mean=0.002118, max=0.267881
+Step collapse metrics — Density: 0.0012, Std: 0.0349, Entropy@Collapse: 0.2267
+Step 16: Collapse density=0.0012, std=0.0349, collapse entropy=0.1449
+Step 16: Curl mean=0.002118, max=0.267881
+Step 16: Curl Δ = 0.388905
+Step: Curl mean=0.002124, max=0.285560
+Step collapse metrics — Density: 0.0013, Std: 0.0357, Entropy@Collapse: 0.2187
+Step 17: Collapse density=0.0013, std=0.0357, collapse entropy=0.1447
+Step 17: Curl mean=0.002124, max=0.285560
+Step 17: Curl Δ = 0.372296
+Step: Curl mean=0.002127, max=0.285602
+Step collapse metrics — Density: 0.0013, Std: 0.0361, Entropy@Collapse: 0.1987
+Step 18: Collapse density=0.0013, std=0.0361, collapse entropy=0.1285
+Step 18: Curl mean=0.002127, max=0.285602
+Step 18: Curl Δ = 0.353114
+Step: Curl mean=0.002132, max=0.290629
+Step collapse metrics — Density: 0.0014, Std: 0.0368, Entropy@Collapse: 0.1791
+Step 19: Collapse density=0.0014, std=0.0368, collapse entropy=0.1136
+Step 19: Curl mean=0.002132, max=0.290629
+Step 19: Curl Δ = 0.368443
+Step: Curl mean=0.002136, max=0.300733
+Step collapse metrics — Density: 0.0014, Std: 0.0374, Entropy@Collapse: 0.1614
+Step 20: Collapse density=0.0014, std=0.0374, collapse entropy=0.1032
+Step 20: Curl mean=0.002136, max=0.300733
+Step 20: Curl Δ = 0.355450
+Step: Curl mean=0.002140, max=0.302886
+Step collapse metrics — Density: 0.0014, Std: 0.0375, Entropy@Collapse: 0.1561
+Step 21: Collapse density=0.0014, std=0.0375, collapse entropy=0.1001
+Step 21: Curl mean=0.002140, max=0.302886
+Step 21: Curl Δ = 0.340459
+Step: Curl mean=0.002143, max=0.305346
+Step collapse metrics — Density: 0.0015, Std: 0.0382, Entropy@Collapse: 0.1509
+Step 22: Collapse density=0.0015, std=0.0382, collapse entropy=0.1003
+Step 22: Curl mean=0.002143, max=0.305346
+Step 22: Curl Δ = 0.297390
+Step: Curl mean=0.002144, max=0.306310
+Step collapse metrics — Density: 0.0015, Std: 0.0385, Entropy@Collapse: 0.1442
+Step 23: Collapse density=0.0015, std=0.0385, collapse entropy=0.0941
+Step 23: Curl mean=0.002144, max=0.306310
+Step 23: Curl Δ = 0.289468
+Step: Curl mean=0.002145, max=0.303735
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.1342
+Step 24: Collapse density=0.0015, std=0.0389, collapse entropy=0.0873
+Step 24: Curl mean=0.002145, max=0.303735
+Step 24: Curl Δ = 0.256111
+Step: Curl mean=0.002147, max=0.303555
+Step collapse metrics — Density: 0.0015, Std: 0.0390, Entropy@Collapse: 0.1211
+Step 25: Collapse density=0.0015, std=0.0390, collapse entropy=0.0780
+Step 25: Curl mean=0.002147, max=0.303555
+Step 25: Curl Δ = 0.253278
+Step: Curl mean=0.002148, max=0.303541
+Step collapse metrics — Density: 0.0016, Std: 0.0394, Entropy@Collapse: 0.1046
+Step 26: Collapse density=0.0016, std=0.0394, collapse entropy=0.0664
+Step 26: Curl mean=0.002148, max=0.303541
+Step 26: Curl Δ = 0.267962
+Step: Curl mean=0.002150, max=0.306574
+Step collapse metrics — Density: 0.0016, Std: 0.0395, Entropy@Collapse: 0.0990
+Step 27: Collapse density=0.0016, std=0.0395, collapse entropy=0.0631
+Step 27: Curl mean=0.002150, max=0.306574
+Step 27: Curl Δ = 0.261144
+Step: Curl mean=0.002149, max=0.301894
+Step collapse metrics — Density: 0.0016, Std: 0.0399, Entropy@Collapse: 0.0872
+Step 28: Collapse density=0.0016, std=0.0399, collapse entropy=0.0554
+Step 28: Curl mean=0.002149, max=0.301894
+Step 28: Curl Δ = 0.285729
+Step: Curl mean=0.002150, max=0.303999
+Step collapse metrics — Density: 0.0016, Std: 0.0403, Entropy@Collapse: 0.0845
+Step 29: Collapse density=0.0016, std=0.0403, collapse entropy=0.0555
+Step 29: Curl mean=0.002150, max=0.303999
+Step 29: Curl Δ = 0.238506
+Step: Curl mean=0.002149, max=0.306490
+Step collapse metrics — Density: 0.0016, Std: 0.0405, Entropy@Collapse: 0.0688
+Step 30: Collapse density=0.0016, std=0.0405, collapse entropy=0.0432
+Step 30: Curl mean=0.002149, max=0.306490
+Step 30: Curl Δ = 0.246789
+Step: Curl mean=0.002150, max=0.307269
+Step collapse metrics — Density: 0.0017, Std: 0.0408, Entropy@Collapse: 0.0676
+Step 31: Collapse density=0.0017, std=0.0408, collapse entropy=0.0435
+Step 31: Curl mean=0.002150, max=0.307269
+Step 31: Curl Δ = 0.250253
+Step: Curl mean=0.002150, max=0.309552
+Step collapse metrics — Density: 0.0017, Std: 0.0409, Entropy@Collapse: 0.0623
+Step 32: Collapse density=0.0017, std=0.0409, collapse entropy=0.0405
+Step 32: Curl mean=0.002150, max=0.309552
+Step 32: Curl Δ = 0.230018
+Step: Curl mean=0.002150, max=0.307071
+Step collapse metrics — Density: 0.0017, Std: 0.0407, Entropy@Collapse: 0.0514
+Step 33: Collapse density=0.0017, std=0.0407, collapse entropy=0.0319
+Step 33: Curl mean=0.002150, max=0.307071
+Step 33: Curl Δ = 0.224428
+Step: Curl mean=0.002152, max=0.310569
+Step collapse metrics — Density: 0.0017, Std: 0.0412, Entropy@Collapse: 0.0550
+Step 34: Collapse density=0.0017, std=0.0412, collapse entropy=0.0365
+Step 34: Curl mean=0.002152, max=0.310569
+Step 34: Curl Δ = 0.219467
+Step: Curl mean=0.002152, max=0.313581
+Step collapse metrics — Density: 0.0017, Std: 0.0413, Entropy@Collapse: 0.0509
+Step 35: Collapse density=0.0017, std=0.0413, collapse entropy=0.0318
+Step 35: Curl mean=0.002152, max=0.313581
+Step 35: Curl Δ = 0.204339
+Step: Curl mean=0.002152, max=0.308168
+Step collapse metrics — Density: 0.0017, Std: 0.0414, Entropy@Collapse: 0.0479
+Step 36: Collapse density=0.0017, std=0.0414, collapse entropy=0.0316
+Step 36: Curl mean=0.002152, max=0.308168
+Step 36: Curl Δ = 0.243638
+Step: Curl mean=0.002153, max=0.308589
+Step collapse metrics — Density: 0.0017, Std: 0.0414, Entropy@Collapse: 0.0509
+Step 37: Collapse density=0.0017, std=0.0414, collapse entropy=0.0338
+Step 37: Curl mean=0.002153, max=0.308589
+Step 37: Curl Δ = 0.219838
+Step: Curl mean=0.002153, max=0.308030
+Step collapse metrics — Density: 0.0017, Std: 0.0416, Entropy@Collapse: 0.0505
+Step 38: Collapse density=0.0017, std=0.0416, collapse entropy=0.0325
+Step 38: Curl mean=0.002153, max=0.308030
+Step 38: Curl Δ = 0.225192
+Step: Curl mean=0.002154, max=0.310626
+Step collapse metrics — Density: 0.0017, Std: 0.0415, Entropy@Collapse: 0.0462
+Step 39: Collapse density=0.0017, std=0.0415, collapse entropy=0.0302
+Step 39: Curl mean=0.002154, max=0.310626
+Step 39: Curl Δ = 0.242569
+Step: Curl mean=0.002155, max=0.308884
+Step collapse metrics — Density: 0.0017, Std: 0.0416, Entropy@Collapse: 0.0471
+Step 40: Collapse density=0.0017, std=0.0416, collapse entropy=0.0312
+Step 40: Curl mean=0.002155, max=0.308884
+Step 40: Curl Δ = 0.229574
+Step: Curl mean=0.002155, max=0.312476
+Step collapse metrics — Density: 0.0017, Std: 0.0413, Entropy@Collapse: 0.0451
+Step 41: Collapse density=0.0017, std=0.0413, collapse entropy=0.0292
+Step 41: Curl mean=0.002155, max=0.312476
+Step 41: Curl Δ = 0.229978
+Step: Curl mean=0.002156, max=0.314066
+Step collapse metrics — Density: 0.0017, Std: 0.0412, Entropy@Collapse: 0.0400
+Step 42: Collapse density=0.0017, std=0.0412, collapse entropy=0.0258
+Step 42: Curl mean=0.002156, max=0.314066
+Step 42: Curl Δ = 0.229205
+Step: Curl mean=0.002156, max=0.320622
+Step collapse metrics — Density: 0.0017, Std: 0.0409, Entropy@Collapse: 0.0369
+Step 43: Collapse density=0.0017, std=0.0409, collapse entropy=0.0233
+Step 43: Curl mean=0.002156, max=0.320622
+Step 43: Curl Δ = 0.195428
+Step: Curl mean=0.002155, max=0.330638
+Step collapse metrics — Density: 0.0017, Std: 0.0407, Entropy@Collapse: 0.0350
+Step 44: Collapse density=0.0017, std=0.0407, collapse entropy=0.0224
+Step 44: Curl mean=0.002155, max=0.330638
+Step 44: Curl Δ = 0.220510
+Step: Curl mean=0.002154, max=0.326276
+Step collapse metrics — Density: 0.0016, Std: 0.0405, Entropy@Collapse: 0.0317
+Step 45: Collapse density=0.0016, std=0.0405, collapse entropy=0.0201
+Step 45: Curl mean=0.002154, max=0.326276
+Step 45: Curl Δ = 0.206204
+Step: Curl mean=0.002152, max=0.325469
+Step collapse metrics — Density: 0.0016, Std: 0.0404, Entropy@Collapse: 0.0244
+Step 46: Collapse density=0.0016, std=0.0404, collapse entropy=0.0151
+Step 46: Curl mean=0.002152, max=0.325469
+Step 46: Curl Δ = 0.204118
+Step: Curl mean=0.002152, max=0.324907
+Step collapse metrics — Density: 0.0016, Std: 0.0399, Entropy@Collapse: 0.0223
+Step 47: Collapse density=0.0016, std=0.0399, collapse entropy=0.0137
+Step 47: Curl mean=0.002152, max=0.324907
+Step 47: Curl Δ = 0.163965
+Step: Curl mean=0.002151, max=0.327509
+Step collapse metrics — Density: 0.0016, Std: 0.0399, Entropy@Collapse: 0.0184
+Step 48: Collapse density=0.0016, std=0.0399, collapse entropy=0.0108
+Step 48: Curl mean=0.002151, max=0.327509
+Step 48: Curl Δ = 0.182128
+Step: Curl mean=0.002150, max=0.325983
+Step collapse metrics — Density: 0.0016, Std: 0.0399, Entropy@Collapse: 0.0175
+Step 49: Collapse density=0.0016, std=0.0399, collapse entropy=0.0111
+Step 49: Curl mean=0.002150, max=0.325983
+Step 49: Curl Δ = 0.193038
+Step: Curl mean=0.002149, max=0.326529
+Step collapse metrics — Density: 0.0016, Std: 0.0397, Entropy@Collapse: 0.0136
+Step 50: Collapse density=0.0016, std=0.0397, collapse entropy=0.0088
+Step 50: Curl mean=0.002149, max=0.326529
+Step 50: Curl Δ = 0.165960
+Step: Curl mean=0.002149, max=0.325925
+Step collapse metrics — Density: 0.0016, Std: 0.0397, Entropy@Collapse: 0.0157
+Step 51: Collapse density=0.0016, std=0.0397, collapse entropy=0.0103
+Step 51: Curl mean=0.002149, max=0.325925
+Step 51: Curl Δ = 0.160780
+Step: Curl mean=0.002148, max=0.325218
+Step collapse metrics — Density: 0.0016, Std: 0.0395, Entropy@Collapse: 0.0148
+Step 52: Collapse density=0.0016, std=0.0395, collapse entropy=0.0095
+Step 52: Curl mean=0.002148, max=0.325218
+Step 52: Curl Δ = 0.174804
+Step: Curl mean=0.002149, max=0.327537
+Step collapse metrics — Density: 0.0016, Std: 0.0394, Entropy@Collapse: 0.0145
+Step 53: Collapse density=0.0016, std=0.0394, collapse entropy=0.0095
+Step 53: Curl mean=0.002149, max=0.327537
+Step 53: Curl Δ = 0.160130
+Step: Curl mean=0.002148, max=0.326021
+Step collapse metrics — Density: 0.0015, Std: 0.0392, Entropy@Collapse: 0.0096
+Step 54: Collapse density=0.0015, std=0.0392, collapse entropy=0.0056
+Step 54: Curl mean=0.002148, max=0.326021
+Step 54: Curl Δ = 0.186236
+Step: Curl mean=0.002148, max=0.326409
+Step collapse metrics — Density: 0.0015, Std: 0.0393, Entropy@Collapse: 0.0098
+Step 55: Collapse density=0.0015, std=0.0393, collapse entropy=0.0057
+Step 55: Curl mean=0.002148, max=0.326409
+Step 55: Curl Δ = 0.117502
+Step: Curl mean=0.002149, max=0.326975
+Step collapse metrics — Density: 0.0015, Std: 0.0392, Entropy@Collapse: 0.0082
+Step 56: Collapse density=0.0015, std=0.0392, collapse entropy=0.0052
+Step 56: Curl mean=0.002149, max=0.326975
+Step 56: Curl Δ = 0.177842
+Step: Curl mean=0.002149, max=0.326789
+Step collapse metrics — Density: 0.0015, Std: 0.0391, Entropy@Collapse: 0.0123
+Step 57: Collapse density=0.0015, std=0.0391, collapse entropy=0.0083
+Step 57: Curl mean=0.002149, max=0.326789
+Step 57: Curl Δ = 0.134068
+Step: Curl mean=0.002148, max=0.325428
+Step collapse metrics — Density: 0.0015, Std: 0.0392, Entropy@Collapse: 0.0125
+Step 58: Collapse density=0.0015, std=0.0392, collapse entropy=0.0086
+Step 58: Curl mean=0.002148, max=0.325428
+Step 58: Curl Δ = 0.172298
+Step: Curl mean=0.002147, max=0.324846
+Step collapse metrics — Density: 0.0015, Std: 0.0390, Entropy@Collapse: 0.0086
+Step 59: Collapse density=0.0015, std=0.0390, collapse entropy=0.0054
+Step 59: Curl mean=0.002147, max=0.324846
+Step 59: Curl Δ = 0.157955
+Step: Curl mean=0.002146, max=0.325986
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0055
+Step 60: Collapse density=0.0015, std=0.0389, collapse entropy=0.0025
+Step 60: Curl mean=0.002146, max=0.325986
+Step 60: Curl Δ = 0.138650
+Step: Curl mean=0.002147, max=0.327774
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0046
+Step 61: Collapse density=0.0015, std=0.0389, collapse entropy=0.0019
+Step 61: Curl mean=0.002147, max=0.327774
+Step 61: Curl Δ = 0.135107
+Step: Curl mean=0.002147, max=0.327308
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0019
+Step 62: Collapse density=0.0015, std=0.0389, collapse entropy=0.0011
+Step 62: Curl mean=0.002147, max=0.327308
+Step 62: Curl Δ = 0.131188
+Step: Curl mean=0.002147, max=0.327263
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0032
+Step 63: Collapse density=0.0015, std=0.0389, collapse entropy=0.0022
+Step 63: Curl mean=0.002147, max=0.327263
+Step 63: Curl Δ = 0.068629
+Step: Curl mean=0.002147, max=0.325151
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0022
+Step 64: Collapse density=0.0015, std=0.0388, collapse entropy=0.0012
+Step 64: Curl mean=0.002147, max=0.325151
+Step 64: Curl Δ = 0.105989
+Step: Curl mean=0.002147, max=0.324668
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0012
+Step 65: Collapse density=0.0015, std=0.0388, collapse entropy=0.0006
+Step 65: Curl mean=0.002147, max=0.324668
+Step 65: Curl Δ = 0.068177
+Step: Curl mean=0.002146, max=0.327053
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0027
+Step 66: Collapse density=0.0015, std=0.0389, collapse entropy=0.0017
+Step 66: Curl mean=0.002146, max=0.327053
+Step 66: Curl Δ = 0.043225
+Step: Curl mean=0.002145, max=0.326294
+Step collapse metrics — Density: 0.0015, Std: 0.0390, Entropy@Collapse: 0.0022
+Step 67: Collapse density=0.0015, std=0.0390, collapse entropy=0.0011
+Step 67: Curl mean=0.002145, max=0.326294
+Step 67: Curl Δ = 0.108335
+Step: Curl mean=0.002145, max=0.325760
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0011
+Step 68: Collapse density=0.0015, std=0.0389, collapse entropy=0.0006
+Step 68: Curl mean=0.002145, max=0.325760
+Step 68: Curl Δ = 0.077572
+Step: Curl mean=0.002146, max=0.327316
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0027
+Step 69: Collapse density=0.0015, std=0.0389, collapse entropy=0.0017
+Step 69: Curl mean=0.002146, max=0.327316
+Step 69: Curl Δ = 0.043224
+Step: Curl mean=0.002145, max=0.327514
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0017
+Step 70: Collapse density=0.0015, std=0.0389, collapse entropy=0.0011
+Step 70: Curl mean=0.002145, max=0.327514
+Step 70: Curl Δ = 0.106845
+Step: Curl mean=0.002145, max=0.326908
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0011
+Step 71: Collapse density=0.0015, std=0.0389, collapse entropy=0.0006
+Step 71: Curl mean=0.002145, max=0.326908
+Step 71: Curl Δ = 0.070850
+Step: Curl mean=0.002144, max=0.325659
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0027
+Step 72: Collapse density=0.0015, std=0.0389, collapse entropy=0.0017
+Step 72: Curl mean=0.002144, max=0.325659
+Step 72: Curl Δ = 0.043646
+Step: Curl mean=0.002144, max=0.325109
+Step collapse metrics — Density: 0.0015, Std: 0.0391, Entropy@Collapse: 0.0038
+Step 73: Collapse density=0.0015, std=0.0391, collapse entropy=0.0027
+Step 73: Curl mean=0.002144, max=0.325109
+Step 73: Curl Δ = 0.082179
+Step: Curl mean=0.002144, max=0.327733
+Step collapse metrics — Density: 0.0015, Std: 0.0389, Entropy@Collapse: 0.0027
+Step 74: Collapse density=0.0015, std=0.0389, collapse entropy=0.0017
+Step 74: Curl mean=0.002144, max=0.327733
+Step 74: Curl Δ = 0.055228
+Step: Curl mean=0.002144, max=0.325415
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0017
+Step 75: Collapse density=0.0015, std=0.0388, collapse entropy=0.0007
+Step 75: Curl mean=0.002144, max=0.325415
+Step 75: Curl Δ = 0.050118
+Step: Curl mean=0.002144, max=0.326874
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0028
+Step 76: Collapse density=0.0015, std=0.0388, collapse entropy=0.0017
+Step 76: Curl mean=0.002144, max=0.326874
+Step 76: Curl Δ = 0.054460
+Step: Curl mean=0.002144, max=0.327347
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0017
+Step 77: Collapse density=0.0015, std=0.0388, collapse entropy=0.0011
+Step 77: Curl mean=0.002144, max=0.327347
+Step 77: Curl Δ = 0.076247
+Step: Curl mean=0.002143, max=0.325591
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0011
+Step 78: Collapse density=0.0015, std=0.0388, collapse entropy=0.0006
+Step 78: Curl mean=0.002143, max=0.325591
+Step 78: Curl Δ = 0.055646
+Step: Curl mean=0.002143, max=0.326299
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0006
+Step 79: Collapse density=0.0015, std=0.0387, collapse entropy=0.0001
+Step 79: Curl mean=0.002143, max=0.326299
+Step 79: Curl Δ = 0.065162
+Step: Curl mean=0.002143, max=0.326357
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0022
+Step 80: Collapse density=0.0015, std=0.0388, collapse entropy=0.0016
+Step 80: Curl mean=0.002143, max=0.326357
+Step 80: Curl Δ = 0.054631
+Step: Curl mean=0.002143, max=0.324769
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0016
+Step 81: Collapse density=0.0015, std=0.0387, collapse entropy=0.0011
+Step 81: Curl mean=0.002143, max=0.324769
+Step 81: Curl Δ = 0.075119
+Step: Curl mean=0.002143, max=0.327369
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0011
+Step 82: Collapse density=0.0015, std=0.0388, collapse entropy=0.0006
+Step 82: Curl mean=0.002143, max=0.327369
+Step 82: Curl Δ = 0.089594
+Step: Curl mean=0.002142, max=0.327594
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0028
+Step 83: Collapse density=0.0015, std=0.0388, collapse entropy=0.0018
+Step 83: Curl mean=0.002142, max=0.327594
+Step 83: Curl Δ = 0.083771
+Step: Curl mean=0.002142, max=0.324910
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0018
+Step 84: Collapse density=0.0015, std=0.0387, collapse entropy=0.0011
+Step 84: Curl mean=0.002142, max=0.324910
+Step 84: Curl Δ = 0.112890
+Step: Curl mean=0.002142, max=0.325697
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0011
+Step 85: Collapse density=0.0015, std=0.0387, collapse entropy=0.0006
+Step 85: Curl mean=0.002142, max=0.325697
+Step 85: Curl Δ = 0.085359
+Step: Curl mean=0.002142, max=0.328012
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0006
+Step 86: Collapse density=0.0015, std=0.0387, collapse entropy=0.0001
+Step 86: Curl mean=0.002142, max=0.328012
+Step 86: Curl Δ = 0.060724
+Step: Curl mean=0.002141, max=0.327054
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0001
+Step 87: Collapse density=0.0015, std=0.0388, collapse entropy=0.0000
+Step 87: Curl mean=0.002141, max=0.327054
+Step 87: Curl Δ = 0.050436
+Step: Curl mean=0.002141, max=0.328251
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0000
+Step 88: Collapse density=0.0015, std=0.0387, collapse entropy=0.0000
+Step 88: Curl mean=0.002141, max=0.328251
+Step 88: Curl Δ = 0.040099
+Step: Curl mean=0.002142, max=0.328119
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0000
+Step 89: Collapse density=0.0015, std=0.0388, collapse entropy=0.0000
+Step 89: Curl mean=0.002142, max=0.328119
+Step 89: Curl Δ = 0.039095
+Step: Curl mean=0.002141, max=0.324853
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0000
+Step 90: Collapse density=0.0015, std=0.0387, collapse entropy=0.0000
+Step 90: Curl mean=0.002141, max=0.324853
+Step 90: Curl Δ = 0.044052
+Step: Curl mean=0.002141, max=0.325621
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0000
+Step 91: Collapse density=0.0015, std=0.0387, collapse entropy=0.0000
+Step 91: Curl mean=0.002141, max=0.325621
+Step 91: Curl Δ = 0.038719
+Step: Curl mean=0.002141, max=0.325643
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0000
+Step 92: Collapse density=0.0015, std=0.0387, collapse entropy=0.0000
+Step 92: Curl mean=0.002141, max=0.325643
+Step 92: Curl Δ = 0.036867
+Step: Curl mean=0.002141, max=0.328052
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0000
+Step 93: Collapse density=0.0015, std=0.0388, collapse entropy=0.0000
+Step 93: Curl mean=0.002141, max=0.328052
+Step 93: Curl Δ = 0.039031
+Step: Curl mean=0.002141, max=0.328579
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0000
+Step 94: Collapse density=0.0015, std=0.0388, collapse entropy=0.0000
+Step 94: Curl mean=0.002141, max=0.328579
+Step 94: Curl Δ = 0.039230
+Step: Curl mean=0.002142, max=0.326623
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0000
+Step 95: Collapse density=0.0015, std=0.0388, collapse entropy=0.0000
+Step 95: Curl mean=0.002142, max=0.326623
+Step 95: Curl Δ = 0.057116
+Step: Curl mean=0.002142, max=0.326876
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0000
+Step 96: Collapse density=0.0015, std=0.0387, collapse entropy=0.0000
+Step 96: Curl mean=0.002142, max=0.326876
+Step 96: Curl Δ = 0.043261
+Step: Curl mean=0.002142, max=0.327505
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0000
+Step 97: Collapse density=0.0015, std=0.0387, collapse entropy=0.0000
+Step 97: Curl mean=0.002142, max=0.327505
+Step 97: Curl Δ = 0.039382
+Step: Curl mean=0.002142, max=0.327267
+Step collapse metrics — Density: 0.0015, Std: 0.0388, Entropy@Collapse: 0.0000
+Step 98: Collapse density=0.0015, std=0.0388, collapse entropy=0.0000
+Step 98: Curl mean=0.002142, max=0.327267
+Step 98: Curl Δ = 0.038734
+Step: Curl mean=0.002142, max=0.326499
+Step collapse metrics — Density: 0.0015, Std: 0.0387, Entropy@Collapse: 0.0000
+Step 99: Collapse density=0.0015, std=0.0387, collapse entropy=0.0000
+Step 99: Curl mean=0.002142, max=0.326499
+Step 99: Curl Δ = 0.037879

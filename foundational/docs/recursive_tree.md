@@ -1,3 +1,27 @@
+```yaml
+document_title: Recursive Collapse Bifurcation: A 3D Informational Tree from Entropy-Seeding
+version: 1.0
+authors:
+  - name: Lorne
+date_created: [To be finalized upon publication]
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_validation
+field_scope:
+  - collapse_geometry
+  - entropy_modeling
+  - symbolic_payloads
+  - field_cognition
+experiment_links:
+  - recursive_collapse_tree.py
+  - ../experiments/recursive_tree/results.md
+license: Copyleft (custom Dawn license)
+document_status: active_provisional
+data_provenance: verified_in_dawn_simulation_suite
+related_documents:
+  - declaration_infodynamics.md
+  - dawn_field_theory.md
+  - recursive_tree_entropy.md
+  - ../experiments/recursive_tree/results.md
 # Recursive Collapse Bifurcation: A 3D Informational Tree from Entropy-Seeding
 
 ---

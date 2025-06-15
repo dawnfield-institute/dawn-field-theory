@@ -1,3 +1,23 @@
+```yaml
+document_title: Quantum Balance Equation revised 2.0
+version: 2.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_update
+field_scope:
+  - quantum_balance
+  - cimm
+  - entropy_optimization
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Observations and Key Findings.md
+```
 Quantum Balance Equation: Information-Energy Regulation at the Quantum Layer
 1. Introduction
 This document refines the mathematical formulation for the Quantum Balance Equation (QBE), which describes quantum mechanics as the regulatory boundary between information and energy. It further integrates experimental validation pathways to move from theory to empirical testing.
@@ -54,4 +74,24 @@ Appendix: CIM-QBE Agentic Framework Diagram
 The following diagram visually represents the CIM-QBE Agentic Framework:
 
 This diagram illustrates the interactions between the Guidance Agent, Observation Web, Entropy Balancing Agents, Recursive Learning Mechanisms, and QBE Regulatory System, ensuring structured knowledge extraction and entropy minimization.
+```yaml
+document_title: Quantum Balance Equation revised 2.0
+version: 2.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_update
+field_scope:
+  - quantum_balance
+  - cimm
+  - entropy_optimization
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Observations and Key Findings.md
+```
 
