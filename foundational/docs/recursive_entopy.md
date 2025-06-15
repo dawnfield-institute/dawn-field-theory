@@ -1,3 +1,26 @@
+```yaml
+document_title: Recursive Intelligence Emergence via Entropy-Seeding
+version: 1.1
+authors:
+  - name: Lorne
+date_created: [To be finalized upon publication]
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_validation
+field_scope:
+  - recursive_growth
+  - entropy_geometry
+  - post_symbolic_cognition
+  - memory_pruning
+experiment_links:
+  - recursive_tree_entropy.py
+  - recursive_tree_entropy_v1_1.py
+license: Copyleft (custom Dawn license)
+document_status: active_provisional
+data_provenance: verified_in_dawn_simulation_suite
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # Recursive Intelligence Emergence via Entropy-Seeding
 
 ## Abstract
@@ -95,29 +118,6 @@ This simulation validates that entropy alone can generate recursive cognitive ge
 The Recursive Tree Generator using entropy as seed exemplifies field-born intelligence. It supports the claim that cognition is an emergent property of recursive balance resolution, not symbolic programming.
 
 *For further reading, visualizations, and structural metrics, see [Recursive Entropy Tree: Experiment Results](../experiments/recursive_entropy/results.md).*
-
----
-
-### YAML Metadata
-
-```yaml
-document_title: Recursive Intelligence Emergence via Entropy-Seeding
-version: 1.1
-authors:
-  - name: Lorne
-date_created: [To be finalized upon publication]
-schema_version: dawn_field_schema_v1.1
-document_type: simulation_validation
-field_scope:
-  - recursive_growth
-  - entropy_geometry
-  - post_symbolic_cognition
-  - memory_pruning
-experiment_links:
-  - recursive_tree_entropy.py
-  - recursive_tree_entropy_v1_1.py
-license: Copyleft (custom Dawn license)
-document_status: active_provisional
 data_provenance: verified_in_dawn_simulation_suite
 related_documents:
   - dawn_field_theory.md

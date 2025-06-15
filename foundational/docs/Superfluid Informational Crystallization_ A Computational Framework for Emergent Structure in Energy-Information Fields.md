@@ -1,3 +1,23 @@
+```yaml
+document_title: Superfluid Informational Crystallization: A Computational Framework for Emergent Structure in Energy-Information Fields
+version: 1.0
+authors:
+  - name: Anonymous Contributor
+date_created: 2025-04-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - superfluidity
+  - crystallization
+  - dawn_field_theory
+experiment_links: []
+license: Open source, unrestricted non-commercial reuse encouraged
+document_status: draft
+data_provenance: simulation_and_theory
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # Superfluid Informational Crystallization: A Computational Framework for Emergent Structure in Energy-Information Fields
 
 **Author:** [Anonymous Contributor]  
@@ -105,3 +125,23 @@ We hypothesize that symbolic attractors may not localize in coordinate space but
 ---
 
 *End of Document*
+```yaml
+document_title: Superfluid Informational Crystallization: A Computational Framework for Emergent Structure in Energy-Information Fields
+version: 1.0
+authors:
+  - name: Anonymous Contributor
+date_created: 2025-04-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - superfluidity
+  - crystallization
+  - dawn_field_theory
+experiment_links: []
+license: Open source, unrestricted non-commercial reuse encouraged
+document_status: draft
+data_provenance: simulation_and_theory
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```

@@ -1,3 +1,23 @@
+```yaml
+document_title: Dawn Field Theory: The Recursive Balance Field as a Post-Stoic Potential in Schrödinger's Equation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-16
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - quantum_potentials
+  - dawn_field_theory
+  - entropy_balance
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # Dawn Field Theory: The Recursive Balance Field as a Post-Stoic Potential in Schrödinger's Equation
 
 ## Abstract
@@ -131,4 +151,24 @@ Dawn Field Theory marks the first unification of balance, memory, geometry, and 
 Document Author: Compiled within the Dawn Framework for Emergent Physics.
 
 *Date: April 16, 2025*
+```yaml
+document_title: Dawn Field Theory: The Recursive Balance Field as a Post-Stoic Potential in Schrödinger's Equation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-16
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - quantum_potentials
+  - dawn_field_theory
+  - entropy_balance
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 

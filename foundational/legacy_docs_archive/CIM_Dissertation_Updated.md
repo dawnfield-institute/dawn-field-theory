@@ -1,3 +1,23 @@
+```yaml
+document_title: Quantum Balance Equation and Cosmic Information Mining: Dissertation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: dissertation
+field_scope:
+  - quantum_balance
+  - cimm
+  - emergent_intelligence
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```
 Quantum Balance Equation and Cosmic Information Mining: Dissertation
 Chapter X: Computational Validation of the Quantum Balance Equation and Emergent Intelligence in CIM
 1. Introduction
@@ -45,3 +65,23 @@ Future research should explore:
 
 By further developing these models, we may uncover new insights into both artificial and biological intelligence formation, 
 reinforcing the hypothesis that structured intelligence is an inherent outcome of universal quantum equilibrium dynamics.
+```yaml
+document_title: Quantum Balance Equation and Cosmic Information Mining: Dissertation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: dissertation
+field_scope:
+  - quantum_balance
+  - cimm
+  - emergent_intelligence
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```
