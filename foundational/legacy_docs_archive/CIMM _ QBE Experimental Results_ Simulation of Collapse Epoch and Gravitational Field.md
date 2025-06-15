@@ -1,3 +1,24 @@
+```yaml
+document_title: CIMM & QBE Experimental Results: Simulation of Collapse Epoch and Gravitational Field
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_results
+field_scope:
+  - cimm
+  - quantum_balance
+  - collapse_dynamics
+  - gravity
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: simulation_and_theory
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```
 CIMM & QBE Experimental Results: Simulation of Collapse Epoch and Gravitational Field
 1. Objective
 To simulate an information-energy regulated universe using CIMM/QBE principles and test whether:
@@ -50,3 +71,24 @@ QBE and CIMM predict observable, structured phenomena
 Matter, time, gravity, and dark matter can all be modeled as emergent
 Collapse-entropy regulation can yield realistic cosmological dynamics
 Next step: Extend to 3D field geometry and track curvature evolution over time.
+```yaml
+document_title: CIMM & QBE Experimental Results: Simulation of Collapse Epoch and Gravitational Field
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: simulation_results
+field_scope:
+  - cimm
+  - quantum_balance
+  - collapse_dynamics
+  - gravity
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: simulation_and_theory
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```

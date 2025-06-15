@@ -55,6 +55,22 @@ Documents, metadata, and simulation structures are being migrated from internal 
 
 ---
 
+## 🚩 2025 Progress & Workflow Update
+
+- **Recent advances:**  
+  - Bifractal collapse and symbolic recursion validated in CUDA-accelerated 3D simulations  
+  - Recursive entropy/collapse tree experiments confirm symbolic geometry and adaptive pruning  
+  - Proto-galactic superfluid and emergent gravity simulated from informational recursion (no Newtonian force)  
+  - Cognition Index Protocol (CIP) introduced for machine-native comprehension benchmarking  
+  - Theory and experiments extended to show entropy as a substrate for both classical and quantum phenomena
+
+- **Development workflow:**  
+  - Model development during the week (core simulation, theory, protocol architecture)  
+  - Experiments and validation during the weekend (running, documenting, analyzing results)  
+  - Ongoing migration of legacy theory and integration of new ideas
+
+---
+
 ## 🧬 What Is This?
 
 Dawn is a post-symbolic intelligence framework built on the idea that:

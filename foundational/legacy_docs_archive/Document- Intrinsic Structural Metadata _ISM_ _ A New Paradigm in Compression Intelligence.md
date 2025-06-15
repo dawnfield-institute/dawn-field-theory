@@ -1,3 +1,23 @@
+```yaml
+document_title: Intrinsic Structural Metadata (ISM) — A New Paradigm in Compression Intelligence
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - compression
+  - entropy
+  - quantum_balance
+  - ism
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - Quantum Balance Equation revised 2.0.md
+```
 Document: Intrinsic Structural Metadata (ISM) — A New Paradigm in Compression Intelligence
 
 Overview: Intrinsic Structural Metadata (ISM) is a revolutionary concept in data compression and storage where the process of compression inherently extracts and preserves the data's identity, structure, and meaning. Rather than relying on externally attached metadata, ISM emerges directly from the data's entropy, frequency composition, and structural coherence during compression. This document outlines the value, theory, and broad potential of ISM in computation, AI, memory systems, and intelligent storage.
@@ -103,30 +123,24 @@ Enable compressed-domain computation across domains
 Identify structured vs. encrypted content without decryption
 
 Score entropy and structure for covert signal detection
-
-
-
-
-
----
-
-Why This Changes the Game:
-
-Traditional compression hides structure — ISM reveals it.
-
-Metadata usually requires separate storage — ISM builds it in.
-
-Query systems rely on indexes — ISM supports native pre-query from structure.
-
-AI models depend on decoded embeddings — ISM enables embedding-awareness during compression.
-
-Now supports wave-function level computation — using physics-aligned modeling for real-time signal evolution.
-
-
-
----
-
-Conclusion: ISM, powered by the CoreWave + QBE framework, introduces a new layer of computational intelligence to data compression. It enables models, systems, and storage devices to extract insight, identity, and intelligence from data as it is compressed. This self-describing, structure-preserving approach creates a future where data is not only stored efficiently but is aware of itself, queryable, and primed for intelligent action.
-
-ISM is not just a method. It's a foundational shift toward intelligent information architecture — and a step toward wave-based, physics-aligned computation inside compression itself.
+```yaml
+document_title: Intrinsic Structural Metadata (ISM) — A New Paradigm in Compression Intelligence
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - compression
+  - entropy
+  - quantum_balance
+  - ism
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - Quantum Balance Equation revised 2.0.md
+```
 

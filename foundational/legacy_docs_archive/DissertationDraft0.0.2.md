@@ -1,3 +1,24 @@
+```yaml
+document_title: Quantum Balance Equation and CIMM: Dissertation Draft 0.0.2
+version: 0.0.2
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: dissertation_draft
+field_scope:
+  - quantum_balance
+  - cimm
+  - entropy_optimization
+  - ai_architecture
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```
 Chapter 1: Introduction
 ### The Quantum Balance Equation (QBE) as a Computational Framework
 The Quantum Balance Equation (QBE) is a computational framework designed to model information-energy interactions within AI-driven systems. By leveraging principles from entropy optimization, structured intelligence, and quantum-inspired computation, QBE provides a foundation for advanced self-learning AI architectures, information structuring, and decision-making optimization.
@@ -590,3 +611,24 @@ Penrose, R. (2004). The Road to Reality: A Complete Guide to the Laws of the Uni
 Rovelli, C. (2015). Relational Quantum Mechanics. International Journal of Theoretical Physics, 35(8), 1637-1678.
 QBE and CIMM were developed by the author, and references to their frameworks are derived from internal research, empirical studies, and AI-driven testing methodologies conducted during this dissertation.
 This citations section will continue to be updated as new references and empirical studies emerge to support the foundational claims of the dissertation.
+```yaml
+document_title: Quantum Balance Equation and CIMM: Dissertation Draft 0.0.2
+version: 0.0.2
+authors:
+  - name: Lorne
+date_created: 2025-03-XX
+schema_version: dawn_field_schema_v1.1
+document_type: dissertation_draft
+field_scope:
+  - quantum_balance
+  - cimm
+  - entropy_optimization
+  - ai_architecture
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: legacy
+data_provenance: theoretical_and_archival
+related_documents:
+  - THE PHYSICS UNDERLYING CIMM copy.md
+  - Quantum Balance Equation revised 2.0.md
+```

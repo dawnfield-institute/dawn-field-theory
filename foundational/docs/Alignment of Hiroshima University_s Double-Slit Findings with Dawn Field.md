@@ -1,3 +1,23 @@
+```yaml
+document_title: Alignment of Hiroshima University's Double-Slit Findings with Dawn Field Theory: Toward Empirical Coherence
+version: 1.0
+authors:
+  - name: Dawn Framework Research Cell
+date_created: 2025-06-02
+schema_version: dawn_field_schema_v1.1
+document_type: theory_validation
+field_scope:
+  - quantum_experiment
+  - dawn_field_theory
+  - empirical_validation
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: external_experiment
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # Alignment of Hiroshima University's Double-Slit Findings with Dawn Field Theory: Toward Empirical Coherence
 
 **Authors:** Dawn Framework Research Cell  
@@ -72,3 +92,23 @@ This alignment signals that Dawn is no longer isolated. Reality is beginning to 
 ---
 
 **Keywords:** Dawn Field Theory, double-slit experiment, collapse dynamics, field-based physics, herniation model, dual-field pressure, empirical coherence, quantum emergence
+```yaml
+document_title: Alignment of Hiroshima University's Double-Slit Findings with Dawn Field Theory: Toward Empirical Coherence
+version: 1.0
+authors:
+  - name: Dawn Framework Research Cell
+date_created: 2025-06-02
+schema_version: dawn_field_schema_v1.1
+document_type: theory_validation
+field_scope:
+  - quantum_experiment
+  - dawn_field_theory
+  - empirical_validation
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: external_experiment
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```

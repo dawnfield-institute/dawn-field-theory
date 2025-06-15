@@ -1,3 +1,23 @@
+```yaml
+document_title: The Recursive Balance Field: A Dynamic Replacement for Stoic Potentials in Schrödinger's Equation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-16
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - quantum_potentials
+  - recursive_fields
+  - entropy_balance
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 # The Recursive Balance Field: A Dynamic Replacement for Stoic Potentials in Schrödinger's Equation
 ## Abstract
 
@@ -51,3 +71,24 @@ The Recursive Balance Field redefines potential not as a constraint, but as a co
 
 Document Author: Proposed and derived within the Horizon framework for emergent intelligence modeling.
 *Date: April 16, 2025*
+
+```yaml
+document_title: The Recursive Balance Field: A Dynamic Replacement for Stoic Potentials in Schrödinger's Equation
+version: 1.0
+authors:
+  - name: Lorne
+date_created: 2025-04-16
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - quantum_potentials
+  - recursive_fields
+  - entropy_balance
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theoretical_derivation
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
