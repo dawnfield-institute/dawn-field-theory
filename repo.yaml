@@ -647,3 +647,48 @@ structure:
             proficiency_required: novice
             embedding_hint: Quickstart and reference for using the DawnField GPT.
             children: []
+          - path: foundational/experiments/entropy_information_polarity_field
+            type: directory
+            description: Experiments and theory on entropy-information polarity and collapse dynamics.
+            semantic_tags: [entropy, information, polarity, collapse, experiment]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Field-theoretic intelligence via entropy-information collapse.
+            children:
+              - path: foundational/experiments/entropy_information_polarity_field/theory_draft.md
+                type: file
+                description: Theory and conceptual framework for entropy-information polarity field experiments.
+                semantic_tags: [theory, entropy, information, collapse]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Theoretical basis for EIPF experiments.
+                children: []
+              - path: foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity
+                type: directory
+                description: Blackhole and whitehole polarity experiment protocols and results.
+                semantic_tags: [blackhole, whitehole, polarity, protocol, results]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Collapse dynamics under blackhole/whitehole polarity.
+                children:
+                  - path: foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/experiment_protocol.md
+                    type: file
+                    description: Protocol for blackhole/whitehole collapse polarity experiments.
+                    semantic_tags: [protocol, experiment, blackhole, whitehole]
+                    ingestion_required: true
+                    estimated_context_weight: medium
+                    proficiency_required: expert
+                    embedding_hint: Experimental procedure for collapse polarity.
+                    children: []
+                  - path: foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/results.md
+                    type: file
+                    description: Results and analysis for blackhole/whitehole collapse polarity experiments.
+                    semantic_tags: [results, analysis, blackhole, whitehole]
+                    ingestion_required: true
+                    estimated_context_weight: medium
+                    proficiency_required: expert
+                    embedding_hint: Results for collapse polarity experiments.
+                    children: []
