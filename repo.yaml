@@ -692,3 +692,12 @@ structure:
                     proficiency_required: expert
                     embedding_hint: Results for collapse polarity experiments.
                     children: []
+                  - path: foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/entropy_information_polarity_field.py
+                    type: file
+                    description: Main simulation code for entropy-information polarity field blackhole/whitehole experiments.
+                    semantic_tags: [simulation, code, blackhole, whitehole, entropy, information]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Simulation logic for collapse polarity field experiments.
+                    children: []
