@@ -4,7 +4,13 @@ _A field-based model of intelligence, collapse, and emergence._
  <br>
 
 ---
+## 🧠 Explore with DawnField GPT
 
+Looking for an intelligent way to navigate this repository?
+
+- [🧠 Launch DawnField GPT v0.1](https://chatgpt.com/g/g-685015554f1c8191b9a32d84a0c248df-dawnfieldframeworkrepogptv0-1)
+- [📘 How to Use the GPT](./cognition_index_protocol/gpt/how_to_use_gpt.md)
+---
 
 ## 🧠 TL;DR
 
