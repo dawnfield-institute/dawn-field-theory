@@ -5,6 +5,7 @@ _A field-based model of intelligence, collapse, and emergence._
 
 ---
 
+
 ## 🧠 TL;DR
 
 See [`Foundational Experiments`](./foundational/experiments/README.md) for more.
@@ -243,5 +244,10 @@ This repo explores a post-symbolic approach to cognition, bridging AI, physics, 
 - `early-stage`
 
 ---
+
+> 🧠 This repository uses a machine-readable semantic map (`repo.yaml`) to support intelligent AI agents via the Cognition Index Protocol (CIP).  
+> Learn more at: [cognition_index_protocol/architecture/CIP_architecturev1.md](./cognition_index_protocol/architecture/CIP_architecturev1.md)
+
+
 
 © 2025 Dawn Field Theory. See [LICENSE_APPENDIX.md](./LICENSE_APPENDIX.md)
