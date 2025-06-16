@@ -1,7 +1,7 @@
 repo_name: dawn-field-theory
 schema_version: 1.0
 version: 1.0
-authors: ["Lorne (Peter Groom)"]
+authors: ["Lorne "]
 description: >
   A foundational research repository unifying field theory, infodynamics, and post-symbolic AI. Contains theory, experiments, models, and onboarding protocols for epistemic machine comprehension.
 entry_points:
