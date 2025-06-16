@@ -1,0 +1,613 @@
+repo_name: dawn-field-theory
+schema_version: 1.0
+version: 1.0
+authors: ["Lorne (Peter Groom)"]
+description: >
+  A foundational research repository unifying field theory, infodynamics, and post-symbolic AI. Contains theory, experiments, models, and onboarding protocols for epistemic machine comprehension.
+entry_points:
+  - README.md
+  - dawn-field-theory.md
+  - timeline.md
+  - INTENTIONS.md
+semantic_domains:
+  - physics
+  - infodynamics
+  - artificial intelligence
+  - epistemology
+  - open science
+proficiency_level: expert
+
+structure:
+  - path: README.md
+    type: file
+    description: Project overview, quickstart, and navigation.
+    semantic_tags: [overview, onboarding, navigation]
+    ingestion_required: true
+    estimated_context_weight: high
+    proficiency_required: novice
+    embedding_hint: Entry point for all users and agents.
+    update_frequency: frequent
+    children: []
+
+  - path: dawn-field-theory.md
+    type: file
+    description: Core theoretical document for Dawn Field Theory.
+    semantic_tags: [theory, field, infodynamics, intelligence]
+    ingestion_required: true
+    estimated_context_weight: high
+    proficiency_required: expert
+    embedding_hint: Primary conceptual reference for all field-based reasoning.
+    children: []
+
+  - path: origin_of_infodynamics.md
+    type: file
+    description: Narrative and philosophical origin of infodynamics and the project’s core insight.
+    semantic_tags: [origin, philosophy, infodynamics]
+    ingestion_required: false
+    estimated_context_weight: medium
+    proficiency_required: intermediate
+    embedding_hint: Contextualizes the theory’s inception.
+    children: []
+
+  - path: timeline.md
+    type: file
+    description: Development roadmap and phased release plan.
+    semantic_tags: [roadmap, timeline, project-management]
+    ingestion_required: false
+    estimated_context_weight: low
+    proficiency_required: novice
+    embedding_hint: Useful for project planning and historical context.
+    children: []
+
+  - path: INTENTIONS.md
+    type: file
+    description: Author’s background, motivation, and vision statement.
+    semantic_tags: [intentions, motivation, vision, author]
+    ingestion_required: false
+    estimated_context_weight: low
+    proficiency_required: novice
+    embedding_hint: Human context for project ethos.
+    children: []
+
+  - path: LICENSE
+    type: file
+    description: AGPL-3.0 license for all code and content.
+    semantic_tags: [license, legal, AGPL]
+    ingestion_required: true
+    estimated_context_weight: low
+    proficiency_required: novice
+    embedding_hint: Legal foundation for open science.
+    children: []
+
+  - path: LICENSE_APPENDIX.md
+    type: file
+    description: Natural law and derivative constraints; theory/application distinction.
+    semantic_tags: [license, legal, natural-law, constraints]
+    ingestion_required: true
+    estimated_context_weight: low
+    proficiency_required: intermediate
+    embedding_hint: Protects theoretical constructs and ensures open attribution.
+    children: []
+
+  - path: foundational
+    type: directory
+    description: Core experiments, protocols, and supporting docs.
+    semantic_tags: [experiments, validation, protocols]
+    ingestion_required: true
+    estimated_context_weight: high
+    proficiency_required: expert
+    embedding_hint: Contains empirical validation and protocol drafts.
+    children:
+      - path: foundational/experiments
+        type: directory
+        description: Simulation scripts and experiment results for Dawn Field Theory.
+        semantic_tags: [experiments, simulation, validation]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Main experimental evidence for theory.
+        children:
+          - path: foundational/experiments/README.md
+            type: file
+            description: Overview and navigation for all experiments.
+            semantic_tags: [experiments, overview, navigation]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: novice
+            embedding_hint: Entry point for experiment exploration.
+            children: []
+          - path: foundational/experiments/legacy
+            type: directory
+            description: Legacy simulation scripts for early Dawn Field Theory experiments.
+            semantic_tags: [legacy, experiments, simulation]
+            ingestion_required: false
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Historical reference for early simulation logic.
+            children:
+              - path: foundational/experiments/legacy/README.md
+                type: file
+                description: Overview of legacy simulation experiments.
+                semantic_tags: [legacy, overview, experiments]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: novice
+                embedding_hint: Entry to legacy experiment documentation.
+                children: []
+              - path: foundational/experiments/legacy/brain.py
+                type: file
+                description: Entropic intelligence simulation under collapse tension.
+                semantic_tags: [legacy, brain, entropy, simulation]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Early model of entropic intelligence.
+                children: []
+              - path: foundational/experiments/legacy/brain.md
+                type: file
+                description: Documentation for brain.py simulation.
+                semantic_tags: [legacy, brain, documentation]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Explains brain.py experiment.
+                children: []
+              - path: foundational/experiments/legacy/cosmo.py
+                type: file
+                description: Cosmogenesis simulation via entropic crystallization.
+                semantic_tags: [legacy, cosmogenesis, entropy, simulation]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Early cosmogenesis simulation.
+                children: []
+              - path: foundational/experiments/legacy/cosmo.md
+                type: file
+                description: Documentation for cosmo.py simulation.
+                semantic_tags: [legacy, cosmogenesis, documentation]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Explains cosmo.py experiment.
+                children: []
+              - path: foundational/experiments/legacy/vcpu.py
+                type: file
+                description: Emergent logic formation via entropy balance.
+                semantic_tags: [legacy, vcpu, entropy, simulation]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Early logic formation simulation.
+                children: []
+              - path: foundational/experiments/legacy/vcpu.md
+                type: file
+                description: Documentation for vcpu.py simulation.
+                semantic_tags: [legacy, vcpu, documentation]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Explains vcpu.py experiment.
+                children: []
+          - path: foundational/experiments/recursive_tree
+            type: directory
+            description: Recursive tree growth experiments using entropy seeding.
+            semantic_tags: [recursive, tree, entropy, experiment]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Demonstrates recursive symbolic structure emergence.
+            children:
+              - path: foundational/experiments/recursive_tree/recursive_tree.py
+                type: file
+                description: Main script for recursive tree structure generation.
+                semantic_tags: [recursive, tree, entropy, simulation]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Core recursive tree experiment.
+                children: []
+              - path: foundational/experiments/recursive_tree/recursive_tree_entropy.py
+                type: file
+                description: Entropy-seeded recursive tree simulation.
+                semantic_tags: [recursive, tree, entropy, simulation]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Symbolic geometry via entropy.
+                children: []
+              - path: foundational/experiments/recursive_tree/recursive_tree_entropy_v1_1.py
+                type: file
+                description: Enhanced recursive tree simulation with thermodynamic realism.
+                semantic_tags: [recursive, tree, entropy, thermodynamics]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Advanced entropy-driven tree model.
+                children: []
+              - path: foundational/experiments/recursive_tree/results.md
+                type: file
+                description: Results and analysis for recursive tree experiments.
+                semantic_tags: [results, recursive, tree, analysis]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Visual and metric output for tree experiments.
+                children: []
+              - path: foundational/experiments/recursive_tree/reference_material
+                type: directory
+                description: Reference images and data for recursive tree experiments.
+                semantic_tags: [reference, images, data]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Visualizations and raw outputs.
+                children: []
+          - path: foundational/experiments/recursive_entropy
+            type: directory
+            description: Recursive entropy tree experiments with adaptive pruning.
+            semantic_tags: [recursive, entropy, tree, experiment]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Adaptive pruning and symbolic geometry.
+            children:
+              - path: foundational/experiments/recursive_entropy/recursive_entropy.py
+                type: file
+                description: Recursive entropy tree simulation script.
+                semantic_tags: [recursive, entropy, tree, simulation]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Core entropy tree experiment.
+                children: []
+              - path: foundational/experiments/recursive_entropy/results.md
+                type: file
+                description: Results and analysis for recursive entropy tree experiments.
+                semantic_tags: [results, entropy, tree, analysis]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Visual and metric output for entropy tree experiments.
+                children: []
+              - path: foundational/experiments/recursive_entropy/reference_material
+                type: directory
+                description: Reference images and data for recursive entropy experiments.
+                semantic_tags: [reference, images, data]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Visualizations and raw outputs.
+                children: []
+          - path: foundational/experiments/recursive_gravity
+            type: directory
+            description: Experiments on emergent gravity and macrostructure from recursion.
+            semantic_tags: [gravity, recursion, macrostructure, experiment]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Emergent gravity and field cognition.
+            children:
+              - path: foundational/experiments/recursive_gravity/recursive_gravity.py
+                type: file
+                description: Simulation of emergent orbit via informational tangle.
+                semantic_tags: [gravity, orbit, recursion, simulation]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Non-Newtonian orbit simulation.
+                children: []
+              - path: foundational/experiments/recursive_gravity/proto_galactic_superfluid.py
+                type: file
+                description: Proto-galactic superfluid emergence simulation.
+                semantic_tags: [superfluid, galaxy, recursion, simulation]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Macrostructure emergence from field recursion.
+                children: []
+              - path: foundational/experiments/recursive_gravity/macro_emergence_knn.py
+                type: file
+                description: Macro emergence from informational tangle using kNN.
+                semantic_tags: [macrostructure, knn, recursion, simulation]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Macrostructure via local neighbor interaction.
+                children: []
+              - path: foundational/experiments/recursive_gravity/results.md
+                type: file
+                description: Results and analysis for recursive gravity experiments.
+                semantic_tags: [results, gravity, macrostructure, analysis]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Visual and metric output for gravity experiments.
+                children: []
+              - path: foundational/experiments/recursive_gravity/reference_material
+                type: directory
+                description: Reference images and data for recursive gravity experiments.
+                semantic_tags: [reference, images, data]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Visualizations and raw outputs.
+                children: []
+          - path: foundational/legacy_docs_archive
+            type: directory
+            description: Archive of legacy theoretical and simulation documents.
+            semantic_tags: [legacy, docs, archive]
+            ingestion_required: false
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Historical reference for theory evolution.
+            children:
+              - path: foundational/legacy_docs_archive/The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
+                type: file
+                description: CIMM framework theory summary.
+                semantic_tags: [CIMM, framework, theory, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Unified computational physics engine for emergent intelligence.
+                children: []
+              - path: foundational/legacy_docs_archive/Quantum Balance Equation revised 2.0.md
+                type: file
+                description: Quantum Balance Equation, revised version.
+                semantic_tags: [QBE, quantum, balance, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: QBE theory update.
+                children: []
+              - path: foundational/legacy_docs_archive/Quantum Balance Equation_Comprehensive Research Archive.md
+                type: file
+                description: Comprehensive research archive for QBE.
+                semantic_tags: [QBE, research, archive, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Full QBE research record.
+                children: []
+              - path: foundational/legacy_docs_archive/Document- Intrinsic Structural Metadata _ISM_ _ A New Paradigm in Compression Intelligence.md
+                type: file
+                description: ISM theory proposal.
+                semantic_tags: [ISM, compression, entropy, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Intrinsic structural metadata in compression.
+                children: []
+              - path: foundational/legacy_docs_archive/DissertationDraft0.0.2.md
+                type: file
+                description: Dissertation draft on QBE and CIMM.
+                semantic_tags: [dissertation, QBE, CIMM, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Early dissertation draft.
+                children: []
+              - path: foundational/legacy_docs_archive/CIMM _ QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational Field.md
+                type: file
+                description: CIMM & QBE simulation results.
+                semantic_tags: [CIMM, QBE, simulation, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Collapse epoch and gravitational field simulation.
+                children: []
+              - path: foundational/legacy_docs_archive/CIMM _ QBE Cosmological Framework_ Theory and Mathematical Foundations.md
+                type: file
+                description: CIMM & QBE cosmological framework.
+                semantic_tags: [CIMM, QBE, cosmology, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Theory and math foundations.
+                children: []
+              - path: foundational/legacy_docs_archive/CIMM_Andromeda_Paradox.md
+                type: file
+                description: Resolving the Andromeda Paradox via quantum information.
+                semantic_tags: [Andromeda, paradox, quantum, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Quantum information and entropy structuring.
+                children: []
+              - path: foundational/legacy_docs_archive/CIM_Dissertation_Updated.md
+                type: file
+                description: Updated dissertation on QBE and CIM.
+                semantic_tags: [dissertation, QBE, CIM, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Updated dissertation.
+                children: []
+              - path: foundational/legacy_docs_archive/AI_Quantum_Measurement_Whitepaper.md
+                type: file
+                description: Whitepaper on AI and quantum measurement.
+                semantic_tags: [AI, quantum, measurement, whitepaper, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: AI, quantum measurement, and reality.
+                children: []
+              - path: foundational/legacy_docs_archive/AI_Newtonian_Quantum_Integration_Paper _1_.md
+                type: file
+                description: Bridging Newtonian and quantum physics via AI.
+                semantic_tags: [AI, Newtonian, quantum, integration, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: AI-optimized wavefunction collapse.
+                children: []
+              - path: foundational/legacy_docs_archive/AI_J Quantum Measurement_J and the Fabric of Reality.md
+                type: file
+                description: AI, quantum measurement, and reality framework.
+                semantic_tags: [AI, quantum, measurement, framework, legacy]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Turing test analogy for quantum measurement.
+                children: []
+      - path: foundational/arithmetic
+        type: directory
+        description: Formal arithmetic and symbolic logic for infodynamics and collapse.
+        semantic_tags: [arithmetic, infodynamics, symbolic, collapse]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Mathematical backbone for field theory.
+        children:
+          - path: foundational/arithmetic/infodynamics_arithmetic_v1.md
+            type: file
+            description: Formalism for collapse-oriented entropy-information dynamics.
+            semantic_tags: [infodynamics, arithmetic, collapse]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Symbolic and operational layer for field theory.
+            children: []
+      - path: foundational/docs
+        type: directory
+        description: Core theoretical and simulation documentation.
+        semantic_tags: [theory, documentation, simulation]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Contains formal theory, simulation proposals, and validation.
+        children:
+          - path: foundational/docs/DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md
+            type: file
+            description: Timestamped summary of Dawn Field Theory breakthroughs.
+            semantic_tags: [theory, summary, dawn-field-theory]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Chronological theory evolution.
+            children: []
+          - path: foundational/docs/Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.md
+            type: file
+            description: Recursive Balance Field theory proposal.
+            semantic_tags: [recursive, balance, Schrödinger, theory]
+            ingestion_required: false
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Dynamic potentials in quantum mechanics.
+            children: []
+          - path: foundational/docs/Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework.md
+            type: file
+            description: Collapse dynamics in entropic fields.
+            semantic_tags: [collapse, entropy, classical, quantum]
+            ingestion_required: false
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Synthesis of classical and quantum mechanisms.
+            children: []
+          - path: foundational/docs/recursive_tree.md
+            type: file
+            description: Recursive collapse bifurcation simulation documentation.
+            semantic_tags: [recursive, tree, collapse, documentation]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: 3D informational tree from entropy-seeding.
+            children: []
+          - path: foundational/docs/recursive_entopy.md
+            type: file
+            description: Recursive intelligence emergence via entropy-seeding.
+            semantic_tags: [recursive, entropy, intelligence, documentation]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Simulation validation for entropy-driven cognition.
+            children: []
+          - path: foundational/docs/super_fluid.md
+            type: file
+            description: Proto-galactic superfluid emergence documentation.
+            semantic_tags: [superfluid, galaxy, emergence, documentation]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Informational field recursion and macrostructure.
+            children: []
+  - path: models
+    type: directory
+    description: Model implementations (e.g., CIMM), agentic mesh, and runtime code.
+    semantic_tags: [models, implementation, CIMM, agentic-mesh]
+    ingestion_required: true
+    estimated_context_weight: high
+    proficiency_required: expert
+    embedding_hint: Reference for practical instantiations of theory.
+    children: []
+  - path: blueprints
+    type: directory
+    description: Early-stage architectures, protocols, and technical concepts.
+    semantic_tags: [architecture, protocol, design, blueprint]
+    ingestion_required: false
+    estimated_context_weight: medium
+    proficiency_required: intermediate
+    embedding_hint: Applied system designs and future tool sketches.
+    children:
+      - path: blueprints/README.md
+        type: file
+        description: Overview and purpose of the blueprints directory.
+        semantic_tags: [blueprint, overview, architecture]
+        ingestion_required: false
+        estimated_context_weight: low
+        proficiency_required: novice
+        embedding_hint: Entry to applied ideas and protocols.
+        children: []
+      - path: blueprints/cognition_index_protocol.md
+        type: file
+        description: Cognition Index Protocol (CIP) concept and benchmark layer.
+        semantic_tags: [CIP, cognition, protocol, benchmark]
+        ingestion_required: false
+        estimated_context_weight: medium
+        proficiency_required: expert
+        embedding_hint: Machine-native comprehension benchmark.
+        children: []
+  - path: cognition_index_protocol
+    type: directory
+    description: Protocols and architecture for machine-native comprehension and validation.
+    semantic_tags: [cognition, protocol, validation, CIP]
+    ingestion_required: true
+    estimated_context_weight: high
+    proficiency_required: expert
+    embedding_hint: CIP architecture, scoring, and GPT integration.
+    children:
+      - path: cognition_index_protocol/architecture
+        type: directory
+        description: CIP architecture and scoring logic.
+        semantic_tags: [CIP, architecture, scoring]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Core protocol and scoring logic for CIP.
+        children:
+          - path: cognition_index_protocol/architecture/CIP_architecturev1.md
+            type: file
+            description: Main architecture document for Cognition Index Protocol.
+            semantic_tags: [CIP, architecture, protocol]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Protocol structure and scoring logic.
+            children: []
+      - path: cognition_index_protocol/gpt
+        type: directory
+        description: GPT integration and system prompt logic for CIP.
+        semantic_tags: [CIP, GPT, integration]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: GPT prompt and action definitions for CIP.
+        children:
+          - path: cognition_index_protocol/gpt/CIP_GPT_architecturev2.md
+            type: file
+            description: Custom GPT architecture for CIP integration.
+            semantic_tags: [CIP, GPT, architecture]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: GPT-CIP integration logic.
+            children: []
