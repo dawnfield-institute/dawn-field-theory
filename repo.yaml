@@ -611,3 +611,39 @@ structure:
             proficiency_required: expert
             embedding_hint: GPT-CIP integration logic.
             children: []
+          - path: cognition_index_protocol/gpt/prompt.txt
+            type: file
+            description: System prompt for the domain-specific Dawn Field Theory GPT.
+            semantic_tags: [prompt, GPT, system]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Core logic for GPT behavior and file loading.
+            children: []
+          - path: cognition_index_protocol/gpt/git_action.yaml
+            type: file
+            description: OpenAPI definition for repo navigation and file access Actions.
+            semantic_tags: [action, OpenAPI, navigation, GPT]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Defines Actions for GPT to interact with the repo.
+            children: []
+          - path: cognition_index_protocol/gpt/privacy-policy.md
+            type: file
+            description: Privacy policy for the Dawn Field Theory GPT.
+            semantic_tags: [privacy, policy, GPT]
+            ingestion_required: true
+            estimated_context_weight: low
+            proficiency_required: novice
+            embedding_hint: Privacy and compliance information for GPT users.
+            children: []
+          - path: cognition_index_protocol/gpt/how_to_use_gpt.md
+            type: file
+            description: User guide for the DawnField GPT, including usage, privacy, and licensing.
+            semantic_tags: [guide, usage, GPT, documentation]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: novice
+            embedding_hint: Quickstart and reference for using the DawnField GPT.
+            children: []
