@@ -37,7 +37,7 @@ This is the live GPT agent built to navigate and reason through this repository.
 * “What does the recursive tree experiment reveal about structural coherence?”
 * “List the most important theory documents in this repo and summarize them.”
 * “Which models are aligned with the principles in `infodynamics.md`?”
-* “Walk me through the neural architecture of `entropy_net.py`.”
+* “Walk me through the neural architecture of `entropy_monitor.py`.”
 
 ---
 
