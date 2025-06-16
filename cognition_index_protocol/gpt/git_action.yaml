@@ -1,0 +1,36 @@
+openapi: 3.1.0
+info:
+  title: DawnField Repo Navigation API
+  description: Provides access to metadata and file contents from the Dawn Field Theory repository.
+  version: v1.0.0
+
+servers:
+  - url: https://raw.githubusercontent.com/lornecodes/dawn-field-theory/main
+
+paths:
+  /repo.yaml:
+    get:
+      operationId: GetRepoMetadata
+      description: Retrieve the repo.yaml metadata file used for GPT-guided navigation.
+      parameters: []
+      responses:
+        '200':
+          description: Successfully retrieved repo.yaml
+
+  /{path}:
+    get:
+      operationId: GetFileContents
+      description: Fetch the contents of a specific file from the repository.
+      parameters:
+        - name: path
+          in: path
+          required: true
+          description: Relative path to the file from the repo root (e.g., models/core_model.py)
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successfully retrieved file contents
+
+components:
+  schemas: {}
