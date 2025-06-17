@@ -512,6 +512,15 @@ structure:
             proficiency_required: expert
             embedding_hint: Informational field recursion and macrostructure.
             children: []
+          - path: foundational/docs/Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
+            type: file
+            description: Maps Hiroshima University’s double-slit experiment results to Dawn Field Theory predictions.
+            semantic_tags: [quantum_experiment, theory_validation, dawn_field_theory]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Key empirical validation for Dawn Field Theory.
+            children: []
   - path: models
     type: directory
     description: Model implementations (e.g., CIMM), agentic mesh, and runtime code.
