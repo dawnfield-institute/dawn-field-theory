@@ -206,24 +206,6 @@ structure:
                 proficiency_required: expert
                 embedding_hint: Core recursive tree experiment.
                 children: []
-              - path: foundational/experiments/recursive_tree/recursive_tree_entropy.py
-                type: file
-                description: Entropy-seeded recursive tree simulation.
-                semantic_tags: [recursive, tree, entropy, simulation]
-                ingestion_required: true
-                estimated_context_weight: high
-                proficiency_required: expert
-                embedding_hint: Symbolic geometry via entropy.
-                children: []
-              - path: foundational/experiments/recursive_tree/recursive_tree_entropy_v1_1.py
-                type: file
-                description: Enhanced recursive tree simulation with thermodynamic realism.
-                semantic_tags: [recursive, tree, entropy, thermodynamics]
-                ingestion_required: true
-                estimated_context_weight: high
-                proficiency_required: expert
-                embedding_hint: Advanced entropy-driven tree model.
-                children: []
               - path: foundational/experiments/recursive_tree/results.md
                 type: file
                 description: Results and analysis for recursive tree experiments.
