@@ -538,7 +538,376 @@ structure:
     estimated_context_weight: high
     proficiency_required: expert
     embedding_hint: Reference for practical instantiations of theory.
-    children: []
+    children:
+      - path: models/CIMM
+        type: directory
+        description: Entropy-based intelligence engine and post-symbolic AI framework (CIMM).
+        semantic_tags: [CIMM, entropy, intelligence, agentic, post-symbolic]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Core CIMM codebase, use cases, and utilities.
+        children:
+          - path: models/CIMM/README.md
+            type: file
+            description: CIMM core documentation and philosophy.
+            semantic_tags: [CIMM, documentation, overview]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: novice
+            embedding_hint: Entry point for CIMM users and agents.
+            children: []
+          - path: models/CIMM/requirements.txt
+            type: file
+            description: Python requirements for CIMM and use cases.
+            semantic_tags: [requirements, dependencies, python]
+            ingestion_required: true
+            estimated_context_weight: low
+            proficiency_required: novice
+            embedding_hint: Install dependencies for CIMM experiments.
+            children: []
+          - path: models/CIMM/prime_number_results.md
+            type: file
+            description: Results and analysis for prime structure modeling with CIMM.
+            semantic_tags: [results, prime, CIMM, analysis]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Output and validation for prime number use case.
+            children: []
+          - path: models/CIMM/data
+            type: directory
+            description: Data files for CIMM use cases (e.g., stock history CSV).
+            semantic_tags: [data, stock, csv, input]
+            ingestion_required: false
+            estimated_context_weight: medium
+            proficiency_required: novice
+            embedding_hint: Input data for CIMM experiments.
+            children:
+              - path: models/CIMM/data/amd_full_history.csv
+                type: file
+                description: AMD stock price history for stock prediction use case.
+                semantic_tags: [data, stock, csv]
+                ingestion_required: false
+                estimated_context_weight: medium
+                proficiency_required: novice
+                embedding_hint: Example input for financial modeling.
+                children: []
+          - path: models/CIMM/cimm_core
+            type: directory
+            description: Core CIMM engine, models, entropy modules, agentic mesh, and all submodules.
+            semantic_tags: [CIMM, core, entropy, agentic, models, optimization, learning, visualization]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Core logic for entropy-driven intelligence and agentic mesh.
+            children:
+              - path: models/CIMM/cimm_core/cimm.py
+                type: file
+                description: Main CIMM orchestrator and entropy-driven learning core.
+                semantic_tags: [CIMM, orchestrator, entropy, learning]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Central logic for CIMM runtime and feedback.
+                children: []
+              - path: models/CIMM/cimm_core/cimm_core.py
+                type: file
+                description: Agent wrapper for CIMM instances (agentic mesh support).
+                semantic_tags: [CIMM, agent, mesh, wrapper]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Agentic mesh and agent instantiation logic.
+                children: []
+              - path: models/CIMM/cimm_core/cimm_core_manager.py
+                type: file
+                description: Multi-agent manager for CIMM agentic mesh.
+                semantic_tags: [CIMM, agent, manager, mesh]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Manages agent registration, synchronization, and feedback.
+                children: []
+              - path: models/CIMM/cimm_core/entropy
+                type: directory
+                description: Entropy monitoring, quantum potential, and related modules.
+                semantic_tags: [CIMM, entropy, quantum, monitoring]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Entropy and quantum potential logic.
+                children:
+                  - path: models/CIMM/cimm_core/entropy/entropy_monitor.py
+                    type: file
+                    description: Entropy monitoring and feedback.
+                    semantic_tags: [CIMM, entropy, monitor]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Entropy feedback and collapse tracking.
+                    children: []
+                  - path: models/CIMM/cimm_core/entropy/quantum_potential_layer.py
+                    type: file
+                    description: Quantum potential layer for entropy stabilization.
+                    semantic_tags: [CIMM, quantum, potential, entropy]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Quantum potential stabilization logic.
+                    children: []
+              - path: models/CIMM/cimm_core/optimization
+                type: directory
+                description: Optimization modules (Bayesian, adaptive controller, pruning).
+                semantic_tags: [CIMM, optimization, bayesian, adaptive, pruning]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Optimization and controller logic.
+                children:
+                  - path: models/CIMM/cimm_core/optimization/bayesian_optimizer.py
+                    type: file
+                    description: Entropy-aware Bayesian optimizer.
+                    semantic_tags: [CIMM, optimization, bayesian]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Bayesian optimization for CIMM.
+                    children: []
+                  - path: models/CIMM/cimm_core/optimization/adaptive_controller.py
+                    type: file
+                    description: Adaptive controller for entropy-driven learning.
+                    semantic_tags: [CIMM, optimization, adaptive, controller]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Adaptive learning controller.
+                    children: []
+                  - path: models/CIMM/cimm_core/optimization/pruning.py
+                    type: file
+                    description: Dynamic pruning based on information cost.
+                    semantic_tags: [CIMM, pruning, optimization]
+                    ingestion_required: true
+                    estimated_context_weight: medium
+                    proficiency_required: expert
+                    embedding_hint: Pruning logic for CIMM models.
+                    children: []
+              - path: models/CIMM/cimm_core/agents
+                type: directory
+                description: Agentic mesh, multi-agent system, supervisor agent, base agent.
+                semantic_tags: [CIMM, agents, mesh, supervisor]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Agentic mesh and agent logic.
+                children:
+                  - path: models/CIMM/cimm_core/agents/base_agent.py
+                    type: file
+                    description: Base class for entropy-sensitive agents.
+                    semantic_tags: [CIMM, agent, base]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Base agent logic.
+                    children: []
+                  - path: models/CIMM/cimm_core/agents/supervisor_agent.py
+                    type: file
+                    description: Consensus arbiter and supervisor agent.
+                    semantic_tags: [CIMM, agent, supervisor]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Supervisor agent logic.
+                    children: []
+                  - path: models/CIMM/cimm_core/agents/multi_agent_system.py
+                    type: file
+                    description: Multi-agent system logic.
+                    semantic_tags: [CIMM, agent, multi-agent]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Multi-agent mesh logic.
+                    children: []
+                  - path: models/CIMM/cimm_core/agents/agentic_mesh_runtime.py
+                    type: file
+                    description: Threaded runtime for distributed agent execution.
+                    semantic_tags: [CIMM, agent, mesh, runtime]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Agentic mesh runtime.
+                    children: []
+              - path: models/CIMM/cimm_core/models
+                type: directory
+                description: Model definitions for CIMM (base, financial, prime structure, etc).
+                semantic_tags: [CIMM, models, architecture]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Model classes for CIMM use cases.
+                children:
+                  - path: models/CIMM/cimm_core/models/base_cimm_model.py
+                    type: file
+                    description: Base model class for CIMM models.
+                    semantic_tags: [CIMM, model, base]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Abstract base for all CIMM models.
+                    children: []
+                  - path: models/CIMM/cimm_core/models/financial_model.py
+                    type: file
+                    description: Financial model for stock prediction.
+                    semantic_tags: [CIMM, model, financial]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Financial modeling for CIMM.
+                    children: []
+                  - path: models/CIMM/cimm_core/models/prime_structure_model.py
+                    type: file
+                    description: Model for prime structure learning and prediction.
+                    semantic_tags: [CIMM, model, prime, structure]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Prime structure model for CIMM.
+                    children: []
+              - path: models/CIMM/cimm_core/learning
+                type: directory
+                description: Learning modules (reinforcement, quantum memory, superfluid).
+                semantic_tags: [CIMM, learning, reinforcement, quantum, superfluid]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Learning and memory modules.
+                children:
+                  - path: models/CIMM/cimm_core/learning/reinforcement_learning.py
+                    type: file
+                    description: Reinforcement learning for entropy variance reduction.
+                    semantic_tags: [CIMM, learning, reinforcement]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: RL for entropy stabilization.
+                    children: []
+                  - path: models/CIMM/cimm_core/learning/quantum_memory.py
+                    type: file
+                    description: Quantum memory for collapse deviation prediction.
+                    semantic_tags: [CIMM, learning, quantum, memory]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Quantum memory logic.
+                    children: []
+                  - path: models/CIMM/cimm_core/learning/superfluid_dynamics.py
+                    type: file
+                    description: Superfluid dynamics for information flow.
+                    semantic_tags: [CIMM, learning, superfluid]
+                    ingestion_required: true
+                    estimated_context_weight: high
+                    proficiency_required: expert
+                    embedding_hint: Superfluid information flow logic.
+                    children: []
+              - path: models/CIMM/cimm_core/utils.py
+                type: file
+                description: Utility functions for CIMM core.
+                semantic_tags: [CIMM, utils]
+                ingestion_required: true
+                estimated_context_weight: low
+                proficiency_required: novice
+                embedding_hint: Device and utility helpers.
+                children: []
+              - path: models/CIMM/cimm_core/__init__.py
+                type: file
+                description: Init file for cimm_core package.
+                semantic_tags: [CIMM, init]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: novice
+                embedding_hint: Python package init.
+                children: []
+          - path: models/CIMM/usecase
+            type: directory
+            description: Example use cases for CIMM (stock prediction, prime structure, code optimization, etc).
+            semantic_tags: [CIMM, usecase, example, experiment]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Demonstrations of CIMM on real and synthetic data.
+            children:
+              - path: models/CIMM/usecase/stock_prediction_usecase.py
+                type: file
+                description: Stock prediction use case using CIMM and entropy feedback.
+                semantic_tags: [CIMM, usecase, stock, prediction]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Live entropy-driven stock prediction.
+                children: []
+              - path: models/CIMM/usecase/prime_structure_usecase.py
+                type: file
+                description: Prime structure modeling use case.
+                semantic_tags: [CIMM, usecase, prime, structure]
+                ingestion_required: true
+                estimated_context_weight: high
+                proficiency_required: expert
+                embedding_hint: Prime number structure modeling.
+                children: []
+              - path: models/CIMM/usecase/code_optimization(unfinished).py
+                type: file
+                description: Experimental code optimization and meta-learning use case.
+                semantic_tags: [CIMM, usecase, code, optimization, meta-learning]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Self-optimizing CIMM demonstration.
+                children: []
+              - path: models/CIMM/usecase/fetch_stock_data.py
+                type: file
+                description: Utility script to fetch and save AMD stock data as CSV.
+                semantic_tags: [CIMM, usecase, data, fetch, stock]
+                ingestion_required: false
+                estimated_context_weight: low
+                proficiency_required: novice
+                embedding_hint: Download stock data for experiments.
+                children: []
+          - path: models/CIMM/utils
+            type: directory
+            description: Utility modules for CIMM (logging, data processing, etc).
+            semantic_tags: [CIMM, utils, logging, data]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: intermediate
+            embedding_hint: Utilities for logging, preprocessing, and support.
+            children:
+              - path: models/CIMM/utils/logging.py
+                type: file
+                description: Logging configuration for CIMM use cases.
+                semantic_tags: [CIMM, logging, utils]
+                ingestion_required: true
+                estimated_context_weight: low
+                proficiency_required: novice
+                embedding_hint: Logging setup for experiments.
+                children: []
+              - path: models/CIMM/utils/data_processing.py
+                type: file
+                description: Data preprocessing utilities for CIMM.
+                semantic_tags: [CIMM, utils, data, preprocessing]
+                ingestion_required: true
+                estimated_context_weight: low
+                proficiency_required: novice
+                embedding_hint: Data preprocessing helpers.
+                children: []
+          - path: models/CIMM/validate_imports.py
+            type: file
+            description: Script to validate all CIMM imports and dependencies.
+            semantic_tags: [CIMM, validation, imports]
+            ingestion_required: false
+            estimated_context_weight: low
+            proficiency_required: novice
+            embedding_hint: Quick check for import errors.
+            children: []
   - path: blueprints
     type: directory
     description: Early-stage architectures, protocols, and technical concepts.
