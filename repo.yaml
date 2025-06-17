@@ -116,6 +116,61 @@ structure:
             proficiency_required: novice
             embedding_hint: Entry point for experiment exploration.
             children: []
+            # ...existing code...
+  - path: experiments
+    type: directory
+    description: All experimental protocols, simulations, and results.
+    semantic_tags: [experiments, simulation, validation]
+    ingestion_required: true
+    estimated_context_weight: high
+    proficiency_required: expert
+    embedding_hint: Contains all experiment code, data, and results.
+    children:
+      - path: experiments/pi_harmonics
+        type: directory
+        description: Pi-harmonic collapse experiment, code, and results.
+        semantic_tags: [pi, harmonics, collapse, experiment]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Pi-harmonic collapse simulation and validation.
+        children:
+          - path: experiments/pi_harmonics/pi_harmonics.py
+            type: file
+            description: Main simulation code for Pi-harmonic collapse experiment.
+            semantic_tags: [pi, harmonics, simulation, code]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Simulation logic for Pi-harmonic collapse.
+            children: []
+          - path: experiments/pi_harmonics/pi_harmonics.yaml
+            type: file
+            description: Experiment metadata and summary for Pi-harmonics.
+            semantic_tags: [pi, harmonics, metadata, experiment]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Metadata and summary for Pi-harmonics experiment.
+            children: []
+          - path: experiments/pi_harmonics/results.md
+            type: file
+            description: Results and analysis for Pi-harmonics experiment.
+            semantic_tags: [results, pi, harmonics, analysis]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Results and visual output for Pi-harmonics.
+            children: []
+            - path: experiments/pi_harmonics/reference_material/pi_harmonic_results2025-06-17 135126.png
+              type: file
+              description: Results image for Pi Harmonics experiment.
+              semantic_tags: [image]
+              ingestion_required: false
+              estimated_context_weight: low
+              proficiency_required: expert
+              embedding_hint: Visualizations and raw outputs for Pi-harmonics.
+              children: 
           - path: foundational/experiments/legacy
             type: directory
             description: Legacy simulation scripts for early Dawn Field Theory experiments.
@@ -521,6 +576,16 @@ structure:
             proficiency_required: expert
             embedding_hint: Key empirical validation for Dawn Field Theory.
             children: []
+          - path: foundational/docs/pi_harmonics.md
+            type: file
+            description: Pi-harmonics experiment theory, simulation, and validation.
+            semantic_tags: [pi, harmonics, collapse, theory, experiment]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Theory and validation for Pi-harmonic collapse.
+            children: []
+
   - path: models
     type: directory
     description: Model implementations (e.g., CIMM), agentic mesh, and runtime code.
