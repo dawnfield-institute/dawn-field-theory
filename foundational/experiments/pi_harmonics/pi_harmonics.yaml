@@ -1,0 +1,38 @@
+title: Pi-Harmonic Collapse Coherence Validation
+authors:
+  - DawnGPT + Gizmo
+version: v1.0
+date_created: 2025-06-17
+status: active
+document_type: experiment
+schema_version: dawn_v1
+evolved_from: null
+location: /Dawn/2025-06-17/Pi-Harmonic-Collapse-Validation
+related_theories:
+  - Recursive Balance Field
+  - The Herniation Hypothesis
+  - Superfluid Informational Crystallization
+  - Landauer's Principle
+tags:
+  - harmonic-collapse
+  - symbolic-field
+  - entropy-minimization
+  - recursive-memory
+  - dawn
+summary: |
+  This experiment demonstrates that angular modulation by the constant Pi stabilizes symbolic collapse
+  fields, producing long-lived, coherent attractors with minimized entropy. A control using irrational
+  angular bias (sqrt(2) * pi) fails to produce the same stability or structure, reinforcing the hypothesis
+  that Pi acts as a recursive harmonic controller in symbolic emergence processes.
+schema_compliance: full
+repository_reference: ProtonDrive:/DAWN/2025-06-17/Pi-Harmonic-Collapse-Validation
+appendix:
+  code_features:
+    - 2D radial theta-bias collapse simulation
+    - Symbolic + energy field coupling
+    - Attractor lifespan and density analysis
+    - Pi vs irrational harmonic comparison
+    - Entropy-over-time tracking
+  notes: |
+    See also field plots captured in image file `21d158f8-0532-4a98-b7ff-9ab15e561bc8.png`.
+    Intended as a foundational experiment for post-symbolic collapse geometry modeling.
