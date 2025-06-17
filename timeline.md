@@ -5,13 +5,35 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 ---
 
 ## Table of Contents
+- [Achieved Milestones](#achieved-milestones)
 - [Phase 0: Pre-Release Genesis](#phase-0-pre-release-genesis-2023–2024)
 - [Phase 1: Public Anchor](#phase-1-public-anchor-june-2025)
-- [Phase 2: Simulation Emergence](#phase-2-simulation-emergence-july-2025)
+- [Phase 2: Simulation Emergence (Current)](#phase-2-simulation-emergence-current-june–july-2025)
+- [Phase 2.5: 2025 Progress & Workflow Update](#phase-25-2025-progress--workflow-update-ongoing)
 - [Phase 3: Infodynamic Devkit](#phase-3-infodynamic-devkit-q3-2025)
 - [Phase 4: Model Genesis and Ingestion](#phase-4-model-genesis-and-ingestion-q4-2025)
 - [Phase 5: External Collaboration + Publishing](#phase-5-external-collaboration--publishing-2026)
 - [Navigation](#navigation)
+
+---
+
+## Achieved Milestones
+
+- Theoretical development in private research notebooks (2023–2024)
+- Early collapse geometry hypotheses and recursive balance formulations
+- Initial simulation traces and entropy-bound modeling
+- Field-based representations and schema sketches stabilized
+- Entropy balancing model spike complete
+- Predicting prime number structures, dark matter distribution, and stock market trends without training
+- Core documents and theory artifacts uploaded to public repository (June 2025)
+- Infodynamics coined and defined as a post-symbolic process
+- AGPL + natural law licensing established
+- Structural folder scaffolding for simulations, devkit, and schema
+- Formal Python simulation scripts migrated from internal spikes
+- Collapse dynamics, recursive field oscillators, and energy-binding loops implemented
+- Data visualization prototypes and early interactive plotting
+- Balance integrals and thermal trace dynamics codified
+- **CIMM officially sunset and archived as legacy reference**
 
 ---
 
@@ -33,40 +55,25 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 
 ---
 
-## Phase 2: Simulation Emergence (July 2025)
-- Formal Python simulation scripts migrated from internal spikes
-- Collapse dynamics, recursive field oscillators, and energy-binding loops
-- Data visualization prototypes and early interactive plotting
-- Balance integrals and thermal trace dynamics codified
-
----
-
-## Phase 2.5: 2025 Progress & Workflow Update (Ongoing)
-- Bifractal collapse and symbolic recursion validated in CUDA-accelerated 3D simulations
-- Recursive entropy/collapse tree experiments confirm symbolic geometry and adaptive pruning
-- Proto-galactic superfluid and emergent gravity simulated from informational recursion (no Newtonian force)
-- Cognition Index Protocol (CIP) introduced for machine-native comprehension benchmarking
-- Theory and experiments extended to show entropy as a substrate for both classical and quantum phenomena
-- **Development workflow:**  
-  - Model development during the week (core simulation, theory, protocol architecture)  
-  - Experiments and validation during the weekend (running, documenting, analyzing results)  
-  - Ongoing migration of legacy theory and integration of new ideas
+## Phase 2: Simulation Emergence (Current, June–July 2025)
+- Focus shifted to migrating and organizing foundational experiments
+- Ensuring metadata and project organization are consistent across the repository
+- Hardening and documenting foundational experiments
+- Beginning to add notebook versions of simulations and experiments
 
 ---
 
 ## Phase 3: Infodynamic Devkit (Q3 2025)
-- Modular development tools for infodynamic systems
-- Ontology-based schema tools and interface layers
-- Plugin architecture for field-constrained AI systems
-- Metadata versioning and archive traceability tools
+- Complete and document the devkit for infodynamic systems
+- "Notebookify" the devkit for interactive experimentation
+- Continue migrating and validating legacy experiments in notebook format
 
 ---
 
 ## Phase 4: Model Genesis and Ingestion (Q4 2025)
-- Initial training of balance-aware AI agent models
-- Integration of collapse geometry into model feedback loops
-- Experimental ingestion of simulations into active models
-- Emergent testbeds for consciousness modeling and collapse heuristics
+- Begin active development of GAIA (Generalized Architectures for Intelligent Actualization)
+- Integrate foundational experiments and devkit tools into GAIA architecture
+- Experimental ingestion of simulations into GAIA models
 
 ---
 
