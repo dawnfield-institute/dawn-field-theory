@@ -890,6 +890,104 @@ structure:
             proficiency_required: novice
             embedding_hint: Quick check for import errors.
             children: []
+      - path: models/GAIA
+        type: directory
+        description: Generalized Architectures for Intelligent Actualization (GAIA) — resonance-native, post-symbolic intelligence framework.
+        semantic_tags: [GAIA, resonance, intelligence, architecture]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Core GAIA theory, protocols, experiments, and architecture.
+        children:
+          - path: models/GAIA/README.md
+            type: file
+            description: GAIA overview, subsystem breakdown, and project structure.
+            semantic_tags: [GAIA, overview, documentation]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: novice
+            embedding_hint: Entry point for GAIA users and agents.
+            children: []
+          - path: models/GAIA/docs
+            type: directory
+            description: Documentation for GAIA architecture, theory, protocols, experiments, and meta.
+            semantic_tags: [GAIA, docs, architecture, theory, protocol, experiment, meta]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: All GAIA documentation and protocols.
+            children:
+              - path: models/GAIA/docs/architecture
+                type: directory
+                children:
+                  - path: models/GAIA/docs/architecture/overview.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/architecture/modules
+                    type: directory
+                    children:
+                      - path: models/GAIA/docs/architecture/modules/collapse_core.md
+                        type: file
+                        children: []
+                      - path: models/GAIA/docs/architecture/modules/field_engine.md
+                        type: file
+                        children: []
+                      - path: models/GAIA/docs/architecture/modules/meta_cognition_layer.md
+                        type: file
+                        children: []
+                      # ...add any other files in modules...
+              - path: models/GAIA/docs/experiments
+                type: directory
+                children:
+                  - path: models/GAIA/docs/experiments/collapse_dynamics_experiment.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/experiments/meta_cognitive_trace_experiment.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/experiments/recursive_entropy_feedback_experiment.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/experiments/resonance_alignment_experiment.md
+                    type: file
+                    children: []
+                  # ...add any other files in experiments...
+              - path: models/GAIA/docs/meta
+                type: directory
+                children:
+                  - path: models/GAIA/docs/meta/evaluation_criteria.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/meta/methodology.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/meta/symbolic_ethics.md
+                    type: file
+                    children: []
+              - path: models/GAIA/docs/protocols
+                type: directory
+                children:
+                  - path: models/GAIA/docs/protocols/collapse_tree_protocol.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/protocols/entropy_state_format.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/protocols/qsocket_protocol.md
+                    type: file
+                    children: []
+              - path: models/GAIA/docs/theory
+                type: directory
+                children:
+                  - path: models/GAIA/docs/theory/emergent_intelligence.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/theory/epistemic_field_theory.md
+                    type: file
+                    children: []
+                  - path: models/GAIA/docs/theory/recursive_balance_field.md
+                    type: file
+                    children: []
   - path: blueprints
     type: directory
     description: Early-stage architectures, protocols, and technical concepts.
@@ -916,6 +1014,15 @@ structure:
         estimated_context_weight: medium
         proficiency_required: expert
         embedding_hint: Machine-native comprehension benchmark.
+        children: []
+      - path: blueprints/qsocket.md
+        type: file
+        description: Q-Socket resonance-based communication protocol and simulation results.
+        semantic_tags: [qsocket, protocol, resonance, communication]
+        ingestion_required: false
+        estimated_context_weight: medium
+        proficiency_required: expert
+        embedding_hint: Resonance-based agent communication protocol and theory.
         children: []
   - path: cognition_index_protocol
     type: directory

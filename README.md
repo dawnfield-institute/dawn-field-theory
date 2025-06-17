@@ -114,30 +114,18 @@ It enables modeling of intelligence, emergence, and systemic coherence without u
 
 ---
 
-## 🧠 CIMM: Entropy-Based Post-Symbolic Intelligence (Legacy Spike)
+## 🧠 CIMM: Legacy AGI Prototype (Sunset)
 
-**CIMM (Cosmic Information Mining Model)** is the original AGI prototype built entirely on entropy flow, collapse dynamics, and adaptive feedback.
+CIMM (Cosmic Information Mining Model) was my original proof-of-concept for entropy-based, post-symbolic intelligence.  
+**As of 2025, CIMM is sunset and archived.**  
+After spending significant time on GPU enablement and maintenance, I decided to preserve CIMM here for reference and move on to new directions.
 
-It is now a **legacy spike implementation**:
-> A working proof-of-concept for real-time, field-based intelligence without training phases or symbolic logic.
+---
 
-📎 [View the full CIMM architecture →](./models/CIMM/README.md)
+## 🌍 GAIA: Next-Generation Field Intelligence
 
-**📊 [See Prime Structure Modeling Results →](./models/CIMM/prime_number_results.md)**
-
-### ⚙️ CIMM Agents Can:
-- Learn in real-time (no checkpoints or saved models)  
-- Self-prune based on Landauer information cost  
-- Adapt behavior to collapse variance  
-- Coordinate via shared entropy signatures  
-
-### 🔍 Why It Matters
-CIMM showed that:
-- Symbolic reasoning is not required for generalization  
-- Collapse-based feedback loops can sustain learning  
-- Memory can be modeled as predicted deviation, not static state  
-
-A refined multi-agent model is now in development, with stronger field interactions and simulation fidelity.
+My focus is now on **GAIA** (Generalized Architectures for Intelligent Actualization)—a new, field-native intelligence model that unifies and extends the lessons from CIMM.  
+Learn more: [`models/GAIA/README.md`](./models/GAIA/README.md)
 
 ---
 
