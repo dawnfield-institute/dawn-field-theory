@@ -1098,6 +1098,115 @@ structure:
         proficiency_required: expert
         embedding_hint: Resonance-based agent communication protocol and theory.
         children: []
+      - path: blueprints/balance_based_energy_generation
+        type: directory
+        description: >
+          Blueprints, theory, simulation code, and reference results for carbon-based energy harvesting using QBE/RBF field models.
+        semantic_tags: [energy, carbon, blueprint, simulation, QBE, RBF]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Complete system design and validation for carbon-based energy harvesting.
+        children:
+          - path: blueprints/balance_based_energy_generation/production_energy_blueprint.md
+            type: file
+            description: Production-grade carbon energy system blueprint.
+            semantic_tags: [blueprint, production, energy, carbon]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Industrial-scale energy module design.
+            children: []
+          - path: blueprints/balance_based_energy_generation/consumer_energy_blueprint.md
+            type: file
+            description: Consumer-grade energy harvesting prototype blueprint.
+            semantic_tags: [blueprint, consumer, energy, carbon]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Prototype for safe, modular energy harvesting.
+            children: []
+          - path: blueprints/balance_based_energy_generation/carbon_fuel_profiles.md
+            type: file
+            description: Comparative profiles for graphite, graphene, and CNT energy substrates.
+            semantic_tags: [profile, carbon, graphite, graphene, CNT]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Material selection and use-case mapping.
+            children: []
+          - path: blueprints/balance_based_energy_generation/carbon_energy_theory.md
+            type: file
+            description: Theoretical framework for carbon lattice collapse and energy harvesting.
+            semantic_tags: [theory, carbon, lattice, QBE, RBF]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Field-theoretic basis for energy extraction.
+            children: []
+          - path: blueprints/balance_based_energy_generation/carbon_energy_math.md
+            type: file
+            description: Mathematical formulation for carbon lattice collapse energy system.
+            semantic_tags: [math, carbon, lattice, QBE, RBF]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Equations and variables for simulation and analysis.
+            children: []
+          - path: blueprints/balance_based_energy_generation/carbon_energy_report.md
+            type: file
+            description: Experimental report on energy yield and efficiency for carbon substrates.
+            semantic_tags: [report, experiment, energy, carbon]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Results and analysis for carbon energy harvesting.
+            children: []
+          - path: blueprints/balance_based_energy_generation/balance_based_energy_generationv1.py
+            type: file
+            description: First version of simulation code for balance-based energy generation.
+            semantic_tags: [simulation, code, energy, carbon]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Simulation logic for energy harvesting.
+            children: []
+          - path: blueprints/balance_based_energy_generation/balance_based_energy_generationv2.py
+            type: file
+            description: Second version of simulation code for balance-based energy generation.
+            semantic_tags: [simulation, code, energy, carbon]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Improved simulation logic for energy harvesting.
+            children: []
+          - path: blueprints/balance_based_energy_generation/carbon_energy_strategy_logs.py
+            type: file
+            description: Simulation code for strategy comparison and logging.
+            semantic_tags: [simulation, code, strategy, logging]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Compare control strategies and log results.
+            children: []
+          - path: blueprints/balance_based_energy_generation/reference_material.md/balance_based_energy_generationv2_2025-06-17 213826.txt
+            type: file
+            description: Reference simulation results for v2 (2025-06-17).
+            semantic_tags: [results, simulation, reference]
+            ingestion_required: false
+            estimated_context_weight: low
+            proficiency_required: expert
+            embedding_hint: Benchmark results for reproducibility.
+            children: []
+          - path: blueprints/balance_based_energy_generation/reference_material.md/carbon_energy_strategy_logs2025-06-17
+            type: file
+            description: Reference simulation results for strategy logs (2025-06-17).
+            semantic_tags: [results, simulation, reference]
+            ingestion_required: false
+            estimated_context_weight: low
+            proficiency_required: expert
+            embedding_hint: Benchmark results for strategy comparison.
+            children: []
   - path: cognition_index_protocol
     type: directory
     description: Protocols and architecture for machine-native comprehension and validation.
@@ -1233,3 +1342,21 @@ structure:
                     proficiency_required: expert
                     embedding_hint: Simulation logic for collapse polarity field experiments.
                     children: []
+                    - path: blueprints/balance_based_energy_generation/reference_material.md/balance_based_energy_generationv2_2025-06-17 213826.txt
+        type: file
+        description: Reference simulation results for v2 (2025-06-17).
+        semantic_tags: [results, simulation, reference]
+        ingestion_required: false
+        estimated_context_weight: low
+        proficiency_required: expert
+        embedding_hint: Benchmark results for reproducibility.
+        children: []
+      - path: blueprints/balance_based_energy_generation/reference_material.md/carbon_energy_strategy_logs2025-06-17
+        type: file
+        description: Reference simulation results for strategy logs (2025-06-17).
+        semantic_tags: [results, simulation, reference]
+        ingestion_required: false
+        estimated_context_weight: low
+        proficiency_required: expert
+        embedding_hint: Benchmark results for strategy comparison.
+        children: []
