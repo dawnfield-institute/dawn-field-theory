@@ -12,11 +12,11 @@ These are documents and designs that:
 - Explore **how to implement** the ideas from the main framework
 - Sketch out future tools, platforms, and interfaces
 - May form the basis of future standalone modules or projects
-
-### Example inclusions:
-- `qsocket.md`: A resonance-based communication protocol for distributed cognitive systems
-- `cognition_index_protocol.md`: A proposed system for measuring machine understanding through question scaffolding
-- `agentic_framework_outline.md`: Concept architecture for a future agentic cognitive model
+- **Showcase recent enhancements** such as:
+  - Adaptive feedback and dynamic field control (see nuclear containment v2 roadmap)
+  - Gradient-aware and hierarchical containment architectures
+  - Predictive, noise-resilient, and multi-channel energy management strategies
+  - Modular, extensible simulation frameworks for rapid prototyping
 
 ---
 
@@ -26,6 +26,7 @@ This folder is intended to:
 - Provide **a home for in-progress, applied ideas**
 - Let others explore, comment on, or even build upon these ideas with transparency
 - Give me the room to move forward confidently without worrying about idea appropriation
+- **Serve as a living incubator** for concepts I may continue developing, but also as a resource for others to draw inspiration from or implement independently
 
 Many of these ideas are still evolving — and this is a way to open them up to **dialogue, exploration, and future development**, without locking them into premature implementation or hiding them behind closed doors.
 
@@ -46,4 +47,4 @@ See [`LICENSE.md`](./LICENSE.md) in this folder for details.
 ## 📬 Interested?
 
 If you’d like to discuss any of the ideas here, open an issue or reach out.  
-Curiosity and respectful dialogue are welcome.
+Curiosity, respectful dialogue, and creative reuse are welcome—whether you want to collaborate, adapt, or simply get inspired.
