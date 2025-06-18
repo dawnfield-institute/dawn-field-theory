@@ -1360,3 +1360,184 @@ structure:
         proficiency_required: expert
         embedding_hint: Benchmark results for strategy comparison.
         children: []
+  - path: blueprints/nuclear_containment
+    type: directory
+    description: >
+      Blueprints, theory, simulation code, and reference results for nuclear-scale entropy containment using informatic field theory.
+    semantic_tags: [nuclear, containment, entropy, blueprint, simulation, RBF, field-theory]
+    ingestion_required: true
+    estimated_context_weight: high
+    proficiency_required: expert
+    embedding_hint: Complete system design, theory, and validation for nuclear-scale containment.
+    children:
+      - path: blueprints/nuclear_containment/README.md
+        type: file
+        description: Overview and navigation for nuclear containment blueprints, theory, and experiments.
+        semantic_tags: [blueprint, overview, containment, navigation]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: novice
+        embedding_hint: Entry point for nuclear containment research and experiments.
+        children: []
+      - path: blueprints/nuclear_containment/v1
+        type: directory
+        description: First-generation blueprint, theory, math, and simulation results for nuclear containment.
+        semantic_tags: [v1, blueprint, theory, simulation, results]
+        ingestion_required: true
+        estimated_context_weight: high
+        proficiency_required: expert
+        embedding_hint: Baseline architecture and validation for nuclear containment.
+        children:
+          - path: blueprints/nuclear_containment/v1/blueprint.md
+            type: file
+            description: Design blueprint for macro-scale entropy stabilization using informatic fields.
+            semantic_tags: [blueprint, design, containment, entropy]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Core architecture for nuclear containment.
+            children: []
+          - path: blueprints/nuclear_containment/v1/containment_theory.md
+            type: file
+            description: Formal theory and results for informatic containment of nuclear entropy.
+            semantic_tags: [theory, containment, entropy, informatic]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Theoretical foundation for containment.
+            children: []
+          - path: blueprints/nuclear_containment/v1/containment_math.md
+            type: file
+            description: Mathematical formulation for nuclear containment field dynamics.
+            semantic_tags: [math, containment, field, RBF]
+            ingestion_required: true
+            estimated_context_weight: high
+            proficiency_required: expert
+            embedding_hint: Equations and update rules for simulation.
+            children: []
+          - path: blueprints/nuclear_containment/v1/containment_triptych_with_metrics.py
+            type: file
+            description: Simulation comparing uncontained, late, and pre-primed containment.
+            semantic_tags: [simulation, code, containment, metrics]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Main simulation and visualization for containment triptych.
+            children: []
+          - path: blueprints/nuclear_containment/v1/results.md
+            type: file
+            description: Results and analysis for baseline containment simulations.
+            semantic_tags: [results, analysis, containment, metrics]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Metrics and plots for containment effectiveness.
+            children: []
+          - path: blueprints/nuclear_containment/v1/experimental_archive
+            type: directory
+            description: Additional experiments, stress tests, and edge-case simulations.
+            semantic_tags: [experiment, archive, stress-test, simulation]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Extended and edge-case validation for containment.
+            children:
+              - path: blueprints/nuclear_containment/v1/experimental_archive/Containment2D_HighYield_Reflective.py
+                type: file
+                description: High-yield 2D field collapse simulator with recursive nullification and reflective boundary.
+                semantic_tags: [simulation, code, reflective, nullification]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Reflective containment and nullifier experiment.
+                children: []
+              - path: blueprints/nuclear_containment/v1/experimental_archive/Containment2D_HighYield_Reflective.yaml
+                type: file
+                description: Metadata and parameters for reflective containment simulation.
+                semantic_tags: [metadata, yaml, simulation, reflective]
+                ingestion_required: true
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Simulation parameters and summary.
+                children: []
+              - path: blueprints/nuclear_containment/v1/experimental_archive/Containment2D_HighYield.py
+                type: file
+                description: 2D high-yield containment simulation (non-reflective).
+                semantic_tags: [simulation, code, high-yield]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Alternative high-yield containment simulation.
+                children: []
+              - path: blueprints/nuclear_containment/v1/experimental_archive/improved_entropy_suppression_sim.py
+                type: file
+                description: Improved entropy suppression simulation for containment.
+                semantic_tags: [simulation, code, entropy, suppression]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Enhanced entropy suppression experiment.
+                children: []
+              - path: blueprints/nuclear_containment/v1/experimental_archive/nuclear_blast_simulation.py
+                type: file
+                description: Nuclear blast simulation for containment field testing.
+                semantic_tags: [simulation, code, nuclear, blast]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Core blast simulation for containment.
+                children: []
+              - path: blueprints/nuclear_containment/v1/experimental_archive/sub_meter.py
+                type: file
+                description: Sub-meter containment experiment with noise injection and failure probing.
+                semantic_tags: [simulation, code, sub-meter, noise]
+                ingestion_required: true
+                estimated_context_weight: medium
+                proficiency_required: expert
+                embedding_hint: Sub-meter and noise resilience test.
+                children: []
+              - path: blueprints/nuclear_containment/v1/experimental_archive/unfinished_full_containment_sim.py
+                type: file
+                description: Unfinished full containment simulation with advanced field logic.
+                semantic_tags: [simulation, code, unfinished, advanced]
+                ingestion_required: true
+                estimated_context_weight: low
+                proficiency_required: expert
+                embedding_hint: Prototype for advanced containment simulation.
+                children: []
+          - path: blueprints/nuclear_containment/v1/images
+            type: directory
+            description: Visualizations of simulation results for nuclear containment.
+            semantic_tags: [images, visualization, results]
+            ingestion_required: false
+            estimated_context_weight: low
+            proficiency_required: novice
+            embedding_hint: Plots and images for containment experiments.
+            children: []
+          - path: blueprints/nuclear_containment/v1/reference_material
+            type: directory
+            description: Supporting documents and background for v1 experiments.
+            semantic_tags: [reference, background, support]
+            ingestion_required: false
+            estimated_context_weight: low
+            proficiency_required: expert
+            embedding_hint: Reference data and supporting material.
+            children: []
+      - path: blueprints/nuclear_containment/v2
+        type: directory
+        description: Roadmap and planned enhancements for next-generation nuclear containment.
+        semantic_tags: [v2, roadmap, enhancement, containment]
+        ingestion_required: true
+        estimated_context_weight: medium
+        proficiency_required: expert
+        embedding_hint: Planned upgrades and future directions for containment.
+        children:
+          - path: blueprints/nuclear_containment/v2/v2_roadmap.md
+            type: file
+            description: Roadmap for efficiency enhancements and advanced containment techniques.
+            semantic_tags: [roadmap, enhancement, efficiency, containment]
+            ingestion_required: true
+            estimated_context_weight: medium
+            proficiency_required: expert
+            embedding_hint: Next steps and planned features for v2.
+            children: []

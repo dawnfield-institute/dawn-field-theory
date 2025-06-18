@@ -1,0 +1,30 @@
+file: Containment2D_HighYield_Reflective.py
+version: 1.0
+status: theoretical
+tags: [entropy_regulation, blast_containment, recursive_nullification, field_simulation, reflective_boundary]
+ethics: institutional_review_required
+summary: >
+  A high-yield 2D field collapse simulator with recursive nullification core, damping shell,
+  and a reflective outer boundary layer. Designed to test spatial energy confinement strategies
+  under extreme epistemic load. Models recursive collapse response, radial nullifier energy
+  deployment, and echo-preventing perimeter reflection. Originally scoped from nuclear nullification theory
+  under Dawn Field architecture.
+
+parameters:
+  grid_size: 150
+  t_steps: 400
+  containment_radius: 25
+  initial_blast_amplitude: 50.0
+  nullifier_gain: 3.5
+  damping: 0.01
+  noise_level: 0.01
+
+outputs:
+  - cumulative_energy_map: 2D heatmap of total energy across all time steps
+  - field_dynamics: not shown in this version, future candidate for animation
+  - energy_containment_integrity: qualitative stability indication based on leakage outside containment ring
+
+notes: |
+  This module does not yet include energy replenishment logic or field fatigue response.
+  Further work recommended on adaptive nullifier decay and 3D spatial extension.
+
