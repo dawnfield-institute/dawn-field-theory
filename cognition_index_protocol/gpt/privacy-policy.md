@@ -11,7 +11,7 @@ This GPT does not collect, process, store, or transmit any personal user data. A
 ## What APIs or Actions are used?
 
 This GPT uses Actions to:
-- Retrieve the `repo.yaml` metadata file
+- Retrieve the `.cip` metadata folder
 - Fetch individual files from the public repository
 
 These Actions use publicly accessible GitHub URLs and do not require or perform authentication.
