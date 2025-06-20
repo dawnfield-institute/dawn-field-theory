@@ -1,0 +1,12 @@
+schema_version: '2.0'
+directory_name: reference_material
+description: >
+  Reference materials for nuclear containment v1, including technical papers, standards, and supporting documentation.
+semantic_scope:
+  - reference
+  - nuclear containment
+  - blueprints
+files:
+- containment_metrics.csv
+- containment_triptych.png
+child_directories: []

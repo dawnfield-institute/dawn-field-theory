@@ -1,0 +1,34 @@
+schema_version: 2.0
+directory_name: legacy_docs_archive
+description: >
+  Archive of legacy documentation and historical records for foundational research. Contains deprecated or superseded documents.
+semantic_scope:
+  - legacy
+  - documentation
+  - archive
+files:
+- AI_Black_Hole_Information_Paper _1_.md
+- AI_Hawking_Radiation_Info_Paper _1_.md
+- AI_J Quantum Measurement_J and the Fabric of Reality.md
+- AI_Newtonian_Quantum_Integration_Paper _1_.md
+- AI_Quantum_Measurement_Whitepaper.md
+- AI_Wavefunction_Collapse_CIMM_Integration _1_.md
+- CIMM _ QBE Cosmological Framework_ Theory and Mathematical Foundations.md
+- CIMM _ QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational
+  Field.md
+- CIMM_Andromeda_Paradox.md
+- CIM_Dissertation_Updated.md
+- DissertationDraft0.0.2.md
+- Document- Intrinsic Structural Metadata _ISM_ _ A New Paradigm in Compression Intelligence.md
+- Entropy_Balanced_Learning_Rate_Integration_Guide.md
+- Quantum Balance Equation revised 2.0.md
+- Quantum Balance Equation.md
+- Quantum Balance Equation_ further insights.md
+- Quantum Balance Equation_Comprehensive Research Archive.md
+- Quantum Balance Observations and Key Findings.md
+- Security Entropy Leak Identifier _SELID__ Full Technical Documentation.md
+- THE PHYSICS UNDERLYING CIMM copy.md
+- THE PHYSICS UNDERLYING CIMM.md
+- The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
+child_directories:
+- docx

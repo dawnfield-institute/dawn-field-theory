@@ -1,0 +1,13 @@
+schema_version: 2.0
+directory_name: v5
+description: >
+  Version 5 reference material for hodge_conjecture experiments, including datasets and supporting documentation.
+semantic_scope:
+  - hodge conjecture
+  - reference
+  - versioning
+files:
+- fft_symmetry_vs_prime.png
+- peak_symmetry_data.csv
+- prime_modulated_symmetry_analysis.png
+child_directories: []

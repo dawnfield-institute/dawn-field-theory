@@ -1,0 +1,16 @@
+schema_version: 2.0
+directory_name: gpt
+description: >
+  GPT integration, metadata, and prompt engineering for cognition indexing in Dawn Field Theory.
+semantic_scope:
+  - GPT
+  - metadata
+  - prompt
+files:
+  - CIP_GPT_architecturev2.md
+  - git_action.yaml
+  - how_to_use_gpt.md
+  - metadata_architecturev3.md
+  - privacy-policy.md
+  - prompt.txt
+child_directories: []

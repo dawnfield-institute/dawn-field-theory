@@ -1,0 +1,63 @@
+schema_version: 2.0
+directory_name: v11
+description: >
+  Version 11 reference material for hodge_conjecture experiments, including datasets, plots, and supporting documentation.
+semantic_scope:
+  - hodge conjecture
+  - reference
+  - versioning
+files:
+- analysis_plot_p10_run0.png
+- analysis_plot_p10_run1.png
+- analysis_plot_p10_run2.png
+- analysis_plot_p10_run3.png
+- analysis_plot_p10_run4.png
+- analysis_plot_p11_run0.png
+- analysis_plot_p11_run1.png
+- analysis_plot_p11_run2.png
+- analysis_plot_p11_run3.png
+- analysis_plot_p11_run4.png
+- analysis_plot_p2_run0.png
+- analysis_plot_p2_run1.png
+- analysis_plot_p2_run2.png
+- analysis_plot_p2_run3.png
+- analysis_plot_p2_run4.png
+- analysis_plot_p3_run0.png
+- analysis_plot_p3_run1.png
+- analysis_plot_p3_run2.png
+- analysis_plot_p3_run3.png
+- analysis_plot_p3_run4.png
+- analysis_plot_p4_run0.png
+- analysis_plot_p4_run1.png
+- analysis_plot_p4_run2.png
+- analysis_plot_p4_run3.png
+- analysis_plot_p4_run4.png
+- analysis_plot_p5_run0.png
+- analysis_plot_p5_run1.png
+- analysis_plot_p5_run2.png
+- analysis_plot_p5_run3.png
+- analysis_plot_p5_run4.png
+- analysis_plot_p6_run0.png
+- analysis_plot_p6_run1.png
+- analysis_plot_p6_run2.png
+- analysis_plot_p6_run3.png
+- analysis_plot_p6_run4.png
+- analysis_plot_p7_run0.png
+- analysis_plot_p7_run1.png
+- analysis_plot_p7_run2.png
+- analysis_plot_p7_run3.png
+- analysis_plot_p7_run4.png
+- analysis_plot_p8_run0.png
+- analysis_plot_p8_run1.png
+- analysis_plot_p8_run2.png
+- analysis_plot_p8_run3.png
+- analysis_plot_p8_run4.png
+- analysis_plot_p9_run0.png
+- analysis_plot_p9_run1.png
+- analysis_plot_p9_run2.png
+- analysis_plot_p9_run3.png
+- analysis_plot_p9_run4.png
+- output.txt
+- results.md
+- robustness_results.csv
+child_directories: []

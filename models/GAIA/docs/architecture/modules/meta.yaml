@@ -1,0 +1,12 @@
+schema_version: 2.0
+directory_name: modules
+description: >
+  Modules and subcomponents for the GAIA model architecture.
+semantic_scope:
+  - modules
+  - architecture
+  - GAIA
+files:
+  - meta.yaml
+child_directories:
+  []

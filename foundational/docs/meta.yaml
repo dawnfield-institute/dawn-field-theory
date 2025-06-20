@@ -1,0 +1,23 @@
+schema_version: 2.0
+directory_name: docs
+description: >
+  Foundational documentation, theoretical papers, and supporting materials for Dawn Field Theory.
+semantic_scope:
+  - documentation
+  - theory
+files:
+  - Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
+  - Bifractal Time Emergence.md
+  - DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md
+  - Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.md
+  - Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.md
+  - The Herniation Hypothesis- Collapse Geometry of Dual Fields.md
+  - Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework.md
+  - Title- Dawn Field Theory- The Recursive Balance Field as a Post-Stoic Potential in Schrödinger_s Equation.md
+  - Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.md
+  - pi_harmonics.md
+  - recursive_entopy.md
+  - recursive_tree.md
+  - super_fluid.md
+child_directories:
+  - docx

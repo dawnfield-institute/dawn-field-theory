@@ -1,0 +1,15 @@
+schema_version: 2.0
+directory_name: recursive_gravity
+description: >
+  Recursive gravity experiments and supporting files for foundational research. Includes data, scripts, and analysis outputs.
+semantic_scope:
+  - recursive gravity
+  - experiments
+  - foundational
+files:
+- macro_emergence_knn.py
+- proto_galactic_superfluid.py
+- recursive_gravity.py
+- results.md
+child_directories:
+- reference_material

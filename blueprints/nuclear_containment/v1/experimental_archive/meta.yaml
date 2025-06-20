@@ -1,0 +1,17 @@
+schema_version: '2.0'
+directory_name: experimental_archive
+description: >
+  Archive of experimental data, results, and documentation for nuclear containment v1. Useful for historical analysis and validation.
+semantic_scope:
+  - experiments
+  - archive
+  - nuclear containment
+files:
+- Containment2D_HighYield.py
+- Containment2D_HighYield_Reflective.py
+- Containment2D_HighYield_Reflective.yaml
+- improved_entropy_suppression_sim.py
+- nuclear_blast_simulation.py
+- sub_meter.py
+- unfinished_full_containment_sim.py
+child_directories: []

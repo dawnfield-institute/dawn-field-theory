@@ -1,0 +1,13 @@
+schema_version: 2.0
+directory_name: nuclear_containment
+description: >
+  Blueprints, theory, and experimental results for nuclear containment protocols and simulations.
+semantic_scope:
+  - containment
+  - nuclear
+  - blueprint
+files:
+  - README.md
+child_directories:
+  - v1
+  - v2

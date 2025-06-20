@@ -1,0 +1,21 @@
+schema_version: 2.0
+directory_name: foundational
+description: >
+  Foundational theory, experiments, and documentation for Dawn Field Theory, including arithmetic, docs, and experimental results.
+semantic_scope:
+  - foundational
+  - theory
+  - experiment
+  - documentation
+files:
+  - whats_next.md
+child_directories:
+  - arithmetic
+  - docs
+  - experiments
+  - legacy_docs_archive
+  - pi_harmonics
+  - recursive_entropy
+  - recursive_gravity
+  - recursive_tree
+  - symbolic_bifractal

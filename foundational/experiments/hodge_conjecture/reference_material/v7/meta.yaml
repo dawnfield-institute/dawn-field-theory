@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: v7
+description: >
+  Version 7 reference material for hodge_conjecture experiments, including datasets and supporting documentation.
+semantic_scope:
+  - hodge conjecture
+  - reference
+  - versioning
+files:
+- fft_symmetry_vs_index.png
+- modulated_full_analysis.png
+- peak_symmetry_data.csv
+- results.md
+child_directories: []

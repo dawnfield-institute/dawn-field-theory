@@ -1,0 +1,23 @@
+schema_version: 2.0
+directory_name: CIMM
+description: >
+  Core implementation and modules for the CIMM (Collapse-Informed Meta-Model) framework in Dawn Field Theory.
+semantic_scope:
+  - CIMM
+  - model
+  - agent
+files:
+  - README.md
+  - __init__.py
+  - prime_number_results.md
+  - requirements.txt
+  - validate_imports.py
+child_directories:
+  - agents
+  - cimm_core
+  - data
+  - models
+  - results
+  - usecase
+  - utils
+  - visualization

@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: symbolic_bifractal
+description: >
+  Symbolic bifractal experiments and supporting files for foundational research. Includes data, scripts, and analysis outputs.
+semantic_scope:
+  - symbolic bifractal
+  - experiments
+  - foundational
+files:
+- results.md
+- symbolic_bifractal_expansion_v1.py
+- symbolic_bifractal_expansion_v2.py
+child_directories:
+- reference_material

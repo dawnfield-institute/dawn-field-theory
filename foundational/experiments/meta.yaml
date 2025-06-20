@@ -1,0 +1,20 @@
+schema_version: 2.0
+directory_name: experiments
+description: >
+  Experimental code, results, and protocols for Dawn Field Theory, including DNA repair, entropy fields, and Hodge Conjecture experiments.
+semantic_scope:
+  - experiment
+  - simulation
+  - results
+files:
+  - README.md
+child_directories:
+  - DNA_repair
+  - entropy_information_polarity_field
+  - hodge_conjecture
+  - legacy
+  - pi_harmonics
+  - recursive_entropy
+  - recursive_gravity
+  - recursive_tree
+  - symbolic_bifractal

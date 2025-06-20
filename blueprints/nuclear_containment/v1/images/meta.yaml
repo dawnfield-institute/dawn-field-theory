@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: images
+description: >
+  Image assets and diagrams for nuclear containment v1 blueprints. Includes schematics, renderings, and technical illustrations.
+semantic_scope:
+  - images
+  - diagrams
+  - nuclear containment
+files:
+- containment_triptych.png
+- full_containment_result.png
+- none_containment_result.png
+- shell_only_containment_result.png
+- side_by_side_comparison.png
+- uncontained_blast_control.png
+child_directories: []

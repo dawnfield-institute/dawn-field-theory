@@ -1,0 +1,11 @@
+schema_version: 2.0
+directory_name: v2
+description: >
+  Version 2 reference material for hodge_conjecture experiments, including datasets and supporting documentation.
+semantic_scope:
+  - hodge conjecture
+  - reference
+  - versioning
+files:
+- prime_modulated_collapsev22025-06-20 090250.png
+child_directories: []

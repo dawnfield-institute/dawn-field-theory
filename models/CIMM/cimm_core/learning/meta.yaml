@@ -1,0 +1,11 @@
+schema_version: 2.0
+directory_name: learning
+description: >
+  Learning algorithms and supporting files for the CIMM core.
+semantic_scope:
+  - learning
+  - CIMM
+files:
+  - meta.yaml
+child_directories:
+  []

@@ -1,0 +1,11 @@
+schema_version: '2.0'
+directory_name: v2
+description: >
+  Version 2 of the nuclear containment blueprint. Contains updated designs, documentation, and supporting materials.
+semantic_scope:
+  - nuclear containment
+  - blueprints
+  - versioning
+files:
+- v2_roadmap.md
+child_directories: []

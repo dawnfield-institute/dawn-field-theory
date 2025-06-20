@@ -1,0 +1,15 @@
+schema_version: 2.0
+directory_name: black_white_hole_polarity
+description: >
+  Black and white hole polarity experiments and supporting reference material for entropy/information polarity field studies.
+semantic_scope:
+  - black hole
+  - white hole
+  - polarity
+  - experiments
+files:
+- entropy_information_polarity_field.py
+- experiment_protocol.md
+- results.md
+child_directories:
+- reference_material

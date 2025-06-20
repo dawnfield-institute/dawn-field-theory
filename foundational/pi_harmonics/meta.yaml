@@ -1,0 +1,11 @@
+schema_version: 2.0
+directory_name: pi_harmonics
+description: >
+  Research and notes on pi harmonics, including mathematical models and experimental data related to harmonic analysis of pi-based systems.
+semantic_scope:
+  - mathematics
+  - harmonics
+  - pi
+  - research
+files: []
+child_directories: []

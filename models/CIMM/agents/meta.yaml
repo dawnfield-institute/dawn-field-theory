@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: agents
+description: >
+  Agent implementations for the CIMM framework, including base, supervisor, and specialized agents.
+semantic_scope:
+  - agent
+  - CIMM
+files:
+  - agentic_mesh_runtime.py
+  - base_agent.py
+  - dark_matter_agent.py
+  - prime_number_agent.py
+  - supervisor_agent.py
+child_directories: []
