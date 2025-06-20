@@ -1,0 +1,37 @@
+# instructions_v2.0.yaml: Usage and schema guidance for CIP v2.0
+
+cip_version: 2.0
+meta_yaml_schema_version: 2.0
+description: |
+  This file provides instructions for using the Cognition Index Protocol (CIP) with meta.yaml v2.0 schemas in the Dawn Field Theory repository.
+  - CIP agents should always look for a .cip directory in the repo root.
+  - Use the instructions_v2.0.yaml file to determine how to parse and interpret meta.yaml files.
+  - The meta.yaml schema version is specified in each meta.yaml file as schema_version.
+  - If a new meta.yaml schema is introduced, a new instructions_vX.Y.yaml file should be added here.
+
+usage:
+  - Always check the schema_version field in meta.yaml before parsing.
+  - For v2.0, expect the following fields:
+      - schema_version (string, required)
+      - directory_name (string, required)
+      - description (string, required)
+      - semantic_scope (list of strings, required)
+      - files (list of strings, required)
+      - child_directories (list of strings, required)
+      - proficiency_level (string, optional)
+      - estimated_context_weight (number, optional)
+  - If a meta.yaml uses a newer schema, consult the corresponding instructions file in .cip.
+
+examples:
+  - meta.yaml example:
+      schema_version: 2.0
+      directory_name: example
+      description: Example directory for CIP v2.0
+      semantic_scope:
+        - example
+        - test
+      files:
+        - meta.yaml
+        - README.md
+      child_directories:
+        - subdir

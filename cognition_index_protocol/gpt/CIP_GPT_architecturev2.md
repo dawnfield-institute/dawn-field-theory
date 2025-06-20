@@ -16,7 +16,7 @@ This architecture leverages:
 
 ## 🧰 Key Features
 
-* ✅ Ingests GitHub repositories using `repo.yaml` metadata
+* ✅ Ingests GitHub repositories using `.cip/meta.yaml` and versioned instructions files
 * ✅ Loads only necessary context based on user query
 * ✅ Uses `validation_questions.yaml` to test its comprehension
 * ✅ Scores answers against `validation_answers.yaml` (not preloaded)
@@ -29,7 +29,9 @@ This architecture leverages:
 
 ```bash
 /your-repo/
-  repo.yaml
+  .cip/
+    meta.yaml
+    instructions_v2.0.yaml
   /models/
   /experiments/
   /docs/
@@ -48,13 +50,14 @@ This architecture leverages:
 You are a domain-specific assistant for the {repo_name} project. Your task is not only to assist with queries, but also to prove your understanding by passing the Cognition Index Protocol (CIP).
 
 Follow this logic:
-1. Load and parse `repo.yaml`
-2. Identify relevant files using metadata, semantic tags, and context weight
-3. Ingest only those files
-4. When queried, answer relevant questions from `validation_questions.yaml`
-5. Ask the CIP Scorer API to compare your answers to `validation_answers.yaml`
-6. If your comprehension score is low, request more files or retry reasoning
-7. Log your results and build a running understanding map
+1. Load and parse `.cip/meta.yaml` to determine the current instructions version
+2. Load the specified instructions file from `.cip` (e.g., `instructions_v2.0.yaml`)
+3. Use the instructions to interpret `meta.yaml` files and identify relevant files using metadata, semantic tags, and context weight
+4. Ingest only those files
+5. When queried, answer relevant questions from `validation_questions.yaml`
+6. Ask the CIP Scorer API to compare your answers to `validation_answers.yaml`
+7. If your comprehension score is low, request more files or retry reasoning
+8. Log your results and build a running understanding map
 
 Never ingest the `validation_answers.yaml` directly. Treat it as a ground truth index for comparison only.
 ```
@@ -63,17 +66,27 @@ Never ingest the `validation_answers.yaml` directly. Treat it as a ground truth 
 
 ## 📈 GPT Action Definitions
 
-### 1. Fetch Metadata
+### 1. Fetch CIP Instructions Metadata
 
 ```json
 {
-  "name": "getRepoMetadata",
-  "url": "https://api.github.com/repos/{user}/{repo}/contents/repo.yaml",
+  "name": "getCIPInstructionsMeta",
+  "url": "https://api.github.com/repos/{user}/{repo}/contents/.cip/meta.yaml",
   "method": "GET"
 }
 ```
 
-### 2. Get File Contents
+### 2. Fetch Versioned CIP Instructions
+
+```json
+{
+  "name": "getCIPInstructions",
+  "url": "https://api.github.com/repos/{user}/{repo}/contents/.cip/instructions_v2.0.yaml",
+  "method": "GET"
+}
+```
+
+### 3. Get File Contents
 
 ```json
 {
@@ -83,7 +96,7 @@ Never ingest the `validation_answers.yaml` directly. Treat it as a ground truth 
 }
 ```
 
-### 3. Submit Answer for Scoring
+### 4. Submit Answer for Scoring
 
 ```json
 {
@@ -103,15 +116,16 @@ Never ingest the `validation_answers.yaml` directly. Treat it as a ground truth 
 
 ```mermaid
 graph TD
-  A[User Query] --> B[Load repo.yaml via Action]
-  B --> C[Match query to metadata semantic_tags]
-  C --> D[Fetch relevant files via Action]
-  D --> E[Construct internal repo model]
-  E --> F[If validation mode: answer CIP questions]
-  F --> G[Submit to CIP scoring API]
-  G --> H{Score < threshold?}
-  H -- Yes --> D
-  H -- No --> I[Log answer, respond to user]
+  A[User Query] --> B[Load .cip/meta.yaml via Action]
+  B --> C[Load versioned instructions file from .cip]
+  C --> D[Match query to metadata semantic_tags]
+  D --> E[Fetch relevant files via Action]
+  E --> F[Construct internal repo model]
+  F --> G[If validation mode: answer CIP questions]
+  G --> H[Submit to CIP scoring API]
+  H --> I{Score < threshold?}
+  I -- Yes --> E
+  I -- No --> J[Log answer, respond to user]
 ```
 
 ---
