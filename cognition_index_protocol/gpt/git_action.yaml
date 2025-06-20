@@ -32,5 +32,25 @@ paths:
         '200':
           description: Successfully retrieved file contents
 
+  /batch:
+    post:
+      operationId: GetFileCluster
+      description: Fetch the contents of multiple files or a cluster of files/directories in a single request.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                paths:
+                  type: array
+                  items:
+                    type: string
+                  description: List of relative paths to files or directories from the repo root (e.g., ["models/core_model.py", "foundational/experiments/"])
+      responses:
+        '200':
+          description: Successfully retrieved file cluster
+
 components:
   schemas: {}

@@ -8,7 +8,7 @@ _A field-based model of intelligence, collapse, and emergence._
 
 Looking for an intelligent way to navigate this repository?
 
-- [🧠 Launch DawnField GPT v0.1](https://chatgpt.com/g/g-685015554f1c8191b9a32d84a0c248df-dawnfieldframeworkrepogptv0-1)
+- [🧠 Launch DawnField GPT v0.2](https://chatgpt.com/g/g-6855ea1d2fc4819186339844c91c8a0c-dawnfieldframeworkrepogptv0-2)
 - [📘 How to Use the GPT](./cognition_index_protocol/gpt/how_to_use_gpt.md)
 ---
 
