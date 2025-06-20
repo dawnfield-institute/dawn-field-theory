@@ -244,4 +244,16 @@ This repo explores a post-symbolic approach to cognition, bridging AI, physics, 
 
 
 
+## 🤖 Machine-Readable Usage Guide
+
+This repository is designed for intelligent agents, bots, and crawlers to navigate using structured metadata:
+
+- **Start with `.cip/meta.yaml`** to determine the current instructions version.
+- **Load the specified instructions file** (e.g., `.cip/instructions_v2.0.yaml`) for schema and navigation rules.
+- **Use `map.yaml`** in the root directory for a plain directory and file map.
+- **Parse `meta.yaml`** in each directory for semantic context, file descriptions, and navigation hints.
+- **Ingest only relevant files** as indicated by metadata and semantic tags.
+
+For more details, see [cognition_index_protocol/gpt/metadata_architecturev3.md](cognition_index_protocol/gpt/metadata_architecturev3.md).
+
 © 2025 Dawn Field Theory. See [LICENSE_APPENDIX.md](./LICENSE_APPENDIX.md)
