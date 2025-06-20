@@ -1,0 +1,13 @@
+schema_version: 2.0
+directory_name: reference_material
+description: >
+  Reference materials for recursive gravity experiments, including datasets and supporting documentation.
+semantic_scope:
+  - reference
+  - recursive gravity
+  - experiments
+files:
+- macro_emergence_knn_2025-06-07_results.png
+- proto_galactic_superfluid_2025-06-07_results.png
+- recursive_gravity_2025-06-07_results.png
+child_directories: []

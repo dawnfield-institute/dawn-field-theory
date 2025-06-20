@@ -1,0 +1,23 @@
+schema_version: '2.0'
+directory_name: docx
+description: >
+  Microsoft Word and docx-format documentation for foundational theory. Includes drafts, reports, and supporting files.
+semantic_scope:
+  - documentation
+  - docx
+  - foundational
+files:
+- Alignment of Hiroshima University's Double-Slit Findings with Dawn Field.docx
+- DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
+- Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual
+  Fields.docx
+- Superfluid Informational Crystallization_ A Computational Framework for Emergent
+  Structure in Energy-Information Fields.docx
+- The Herniation Hypothesis- Collapse Geometry of Dual Fields.docx
+- Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum
+  Mechanisms under the Dawn Framework.docx
+- Title- Dawn Field Theory- The Recursive Balance Field as a Post-Stoic Potential
+  in Schrödinger_s Equation.docx
+- Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in
+  Schrödinger_s Equation.docx
+child_directories: []

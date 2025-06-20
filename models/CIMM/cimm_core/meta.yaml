@@ -1,0 +1,22 @@
+schema_version: 2.0
+directory_name: cimm_core
+description: >
+  Core modules and utilities for the CIMM framework, including entropy, learning, models, optimization, and supporting scripts.
+semantic_scope:
+  - CIMM
+  - core
+  - entropy
+  - learning
+  - optimization
+files:
+  - __init__.py
+  - cimm.py
+  - cimm_core.py
+  - cimm_core_manager.py
+  - utils.py
+child_directories:
+  - __pycache__
+  - entropy
+  - learning
+  - models
+  - optimization

@@ -1,0 +1,11 @@
+schema_version: 2.0
+directory_name: usecase
+description: >
+  Use cases and application examples for the CIMM model.
+semantic_scope:
+  - usecase
+  - CIMM
+files:
+  - meta.yaml
+child_directories:
+  []

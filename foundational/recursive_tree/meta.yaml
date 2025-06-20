@@ -1,0 +1,11 @@
+schema_version: '2.0'
+directory_name: recursive_tree
+description: >
+  Research, code, and documentation on recursive tree structures in mathematical and computational models.
+semantic_scope:
+  - recursion
+  - tree
+  - computation
+  - mathematics
+files: []
+child_directories: []

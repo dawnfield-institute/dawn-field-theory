@@ -1,0 +1,610 @@
+dawn-field-theory/
+  .gitignore
+  INTENTIONS.md
+  LICENSE
+  LICENSE_APPENDIX.md
+  README.md
+  blueprints/
+    LICENSE.md
+    README.md
+    balance_based_energy_generation/
+      README.md
+      balance_based_energy_generationv1.py
+      balance_based_energy_generationv2.py
+      carbon_energy_math.md
+      carbon_energy_report.md
+      carbon_energy_strategy_logs.py
+      carbon_energy_theory.md
+      carbon_fuel_profiles.md
+      consumer_energy_blueprint.md
+      production_energy_blueprint.md
+      reference_material.md/
+        balance_based_energy_generationv1_2025-06-17 213826.png
+        balance_based_energy_generationv2_2025-06-17 213826.png
+        balance_based_energy_generationv2_2025-06-17 213826.txt
+        carbon_energy_strategy_logs2025-06-17
+        carbon_energy_strategy_logs2025-06-17 214113.png
+    bias.py
+    cognition_index_protocol.md
+    nuclear_containment/
+      README.md
+      v1/
+        blueprint.md
+        containment_math.md
+        containment_theory.md
+        containment_triptych_with_metrics.py
+        experimental_archive/
+          Containment2D_HighYield.py
+          Containment2D_HighYield_Reflective.py
+          Containment2D_HighYield_Reflective.yaml
+          improved_entropy_suppression_sim.py
+          nuclear_blast_simulation.py
+          sub_meter.py
+          unfinished_full_containment_sim.py
+        images/
+          containment_triptych.png
+          full_containment_result.png
+          none_containment_result.png
+          shell_only_containment_result.png
+          side_by_side_comparison.png
+          uncontained_blast_control.png
+        reference_material/
+          containment_metrics.csv
+          containment_triptych.png
+        results.md
+      v2/
+        v2_roadmap.md
+    qsocket.md
+  cognition_index_protocol/
+    architecture/
+      CIP_architecturev1.md
+    gpt/
+      CIP_GPT_architecturev2.md
+      git_action.yaml
+      how_to_use_gpt.md
+      metadata_architecturev3.md
+      privacy-policy.md
+      prompt.txt
+  dawn-field-theory.md
+  devkit/
+    compression/
+      CompressionTest2.py
+      Compression_test1.py
+      EntropicCompression_test.py
+      compressiondoc.md
+    hash_evaluation/
+      SELID.py
+      SELID_validation.py
+      __pycache__/
+        SELID.cpython-311.pyc
+    random_number/
+      RandomNumberTest.py
+      random_number.md
+  foundational/
+    arithmetic/
+      hodge_mapping/
+        v0.1/
+          hodge_mapping.md
+      infodynamics_arithmetic_v1.md
+    docs/
+      Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
+      Bifractal Time Emergence.md
+      DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md
+      Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.md
+      Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.md
+      The Herniation Hypothesis- Collapse Geometry of Dual Fields.md
+      Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework.md
+      Title- Dawn Field Theory- The Recursive Balance Field as a Post-Stoic Potential in Schrödinger_s Equation.md
+      Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.md
+      docx/
+        Alignment of Hiroshima University's Double-Slit Findings with Dawn Field.docx
+        DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
+        Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.docx
+        Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.docx
+        The Herniation Hypothesis- Collapse Geometry of Dual Fields.docx
+        Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework.docx
+        Title- Dawn Field Theory- The Recursive Balance Field as a Post-Stoic Potential in Schrödinger_s Equation.docx
+        Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.docx
+      pi_harmonics.md
+      recursive_entopy.md
+      recursive_tree.md
+      super_fluid.md
+    experiments/
+      DNA_repair/
+        DNA_repairer.py
+        reference_material/
+          Entropy-Based Mutation Detection and Repair in Protein Sequences.md
+          Entropy-Based Repair of BRCA1 Frameshift Mutation _5382insC__1_.md
+          entropy_mutation_detection.png
+          entropy_repair.png
+        results.md
+      README.md
+      entropy_information_polarity_field/
+        black_white_hole_polarity/
+          entropy_information_polarity_field.py
+          experiment_protocol.md
+          reference_material/
+            entropy_information_polarity2025-06-15 104709.txt
+            entropy_information_polarity_blackhole2025-06-15 104709.png
+            entropy_information_polarity_whitehole2025-06-15 104709.png
+          results.md
+        theory_draft.md
+      hodge_conjecture/
+        hodge_field_simulation.py
+        meta.yaml
+        prime_modulated_collapse.py
+        prime_modulated_collapsev10.py
+        prime_modulated_collapsev11.py
+        prime_modulated_collapsev2.py
+        prime_modulated_collapsev3.py
+        prime_modulated_collapsev4.py
+        prime_modulated_collapsev5.py
+        prime_modulated_collapsev6.py
+        prime_modulated_collapsev7.py
+        prime_modulated_collapsev8.py
+        prime_modulated_collapsev9.py
+        reference_material/
+          hodge_field/
+            hodge_conjecture2025-06-20 090250.png
+            hodge_results.md
+          meta.yaml
+          v1/
+            prime_modulated_collapse2025-06-20 090250.png
+          v10/
+            analysis_plot_p10_run0.png
+            analysis_plot_p10_run1.png
+            analysis_plot_p10_run2.png
+            analysis_plot_p10_run3.png
+            analysis_plot_p10_run4.png
+            analysis_plot_p11_run0.png
+            analysis_plot_p11_run1.png
+            analysis_plot_p11_run2.png
+            analysis_plot_p11_run3.png
+            analysis_plot_p11_run4.png
+            analysis_plot_p2_run0.png
+            analysis_plot_p2_run1.png
+            analysis_plot_p2_run2.png
+            analysis_plot_p2_run3.png
+            analysis_plot_p2_run4.png
+            analysis_plot_p3_run0.png
+            analysis_plot_p3_run1.png
+            analysis_plot_p3_run2.png
+            analysis_plot_p3_run3.png
+            analysis_plot_p3_run4.png
+            analysis_plot_p4_run0.png
+            analysis_plot_p4_run1.png
+            analysis_plot_p4_run2.png
+            analysis_plot_p4_run3.png
+            analysis_plot_p4_run4.png
+            analysis_plot_p5_run0.png
+            analysis_plot_p5_run1.png
+            analysis_plot_p5_run2.png
+            analysis_plot_p5_run3.png
+            analysis_plot_p5_run4.png
+            analysis_plot_p6_run0.png
+            analysis_plot_p6_run1.png
+            analysis_plot_p6_run2.png
+            analysis_plot_p6_run3.png
+            analysis_plot_p6_run4.png
+            analysis_plot_p7_run0.png
+            analysis_plot_p7_run1.png
+            analysis_plot_p7_run2.png
+            analysis_plot_p7_run3.png
+            analysis_plot_p7_run4.png
+            analysis_plot_p8_run0.png
+            analysis_plot_p8_run1.png
+            analysis_plot_p8_run2.png
+            analysis_plot_p8_run3.png
+            analysis_plot_p8_run4.png
+            analysis_plot_p9_run0.png
+            analysis_plot_p9_run1.png
+            analysis_plot_p9_run2.png
+            analysis_plot_p9_run3.png
+            analysis_plot_p9_run4.png
+            fft_symmetry_vs_index.png
+            modulated_full_analysis.png
+            output.txt
+            peak_count_boxplot.png
+            results.md
+            robustness_results.csv
+            symmetry_score_boxplot.png
+          v11/
+            analysis_plot_p10_run0.png
+            analysis_plot_p10_run1.png
+            analysis_plot_p10_run2.png
+            analysis_plot_p10_run3.png
+            analysis_plot_p10_run4.png
+            analysis_plot_p11_run0.png
+            analysis_plot_p11_run1.png
+            analysis_plot_p11_run2.png
+            analysis_plot_p11_run3.png
+            analysis_plot_p11_run4.png
+            analysis_plot_p2_run0.png
+            analysis_plot_p2_run1.png
+            analysis_plot_p2_run2.png
+            analysis_plot_p2_run3.png
+            analysis_plot_p2_run4.png
+            analysis_plot_p3_run0.png
+            analysis_plot_p3_run1.png
+            analysis_plot_p3_run2.png
+            analysis_plot_p3_run3.png
+            analysis_plot_p3_run4.png
+            analysis_plot_p4_run0.png
+            analysis_plot_p4_run1.png
+            analysis_plot_p4_run2.png
+            analysis_plot_p4_run3.png
+            analysis_plot_p4_run4.png
+            analysis_plot_p5_run0.png
+            analysis_plot_p5_run1.png
+            analysis_plot_p5_run2.png
+            analysis_plot_p5_run3.png
+            analysis_plot_p5_run4.png
+            analysis_plot_p6_run0.png
+            analysis_plot_p6_run1.png
+            analysis_plot_p6_run2.png
+            analysis_plot_p6_run3.png
+            analysis_plot_p6_run4.png
+            analysis_plot_p7_run0.png
+            analysis_plot_p7_run1.png
+            analysis_plot_p7_run2.png
+            analysis_plot_p7_run3.png
+            analysis_plot_p7_run4.png
+            analysis_plot_p8_run0.png
+            analysis_plot_p8_run1.png
+            analysis_plot_p8_run2.png
+            analysis_plot_p8_run3.png
+            analysis_plot_p8_run4.png
+            analysis_plot_p9_run0.png
+            analysis_plot_p9_run1.png
+            analysis_plot_p9_run2.png
+            analysis_plot_p9_run3.png
+            analysis_plot_p9_run4.png
+            output.txt
+            results.md
+            robustness_results.csv
+          v2/
+            prime_modulated_collapsev22025-06-20 090250.png
+          v3/
+            peak_countsv3.csv
+            prime_modulated_collapsev32025-06-20 090250.png
+          v4/
+            peak_symmetry_data.csv
+            prime_modulated_collapsev42025-06-20 090250.png
+          v5/
+            fft_symmetry_vs_prime.png
+            peak_symmetry_data.csv
+            prime_modulated_symmetry_analysis.png
+          v6/
+            fft_symmetry_vs_prime.png
+            peak_symmetry_data.csv
+            prime_modulated_full_analysis.png
+          v7/
+            fft_symmetry_vs_index.png
+            modulated_full_analysis.png
+            peak_symmetry_data.csv
+            results.md
+          v8/
+            analysis_plot_p10_run0.png
+            analysis_plot_p10_run1.png
+            analysis_plot_p10_run2.png
+            analysis_plot_p10_run3.png
+            analysis_plot_p10_run4.png
+            analysis_plot_p11_run0.png
+            analysis_plot_p11_run1.png
+            analysis_plot_p11_run2.png
+            analysis_plot_p11_run3.png
+            analysis_plot_p11_run4.png
+            analysis_plot_p2_run0.png
+            analysis_plot_p2_run1.png
+            analysis_plot_p2_run2.png
+            analysis_plot_p2_run3.png
+            analysis_plot_p2_run4.png
+            analysis_plot_p3_run0.png
+            analysis_plot_p3_run1.png
+            analysis_plot_p3_run2.png
+            analysis_plot_p3_run3.png
+            analysis_plot_p3_run4.png
+            analysis_plot_p4_run0.png
+            analysis_plot_p4_run1.png
+            analysis_plot_p4_run2.png
+            analysis_plot_p4_run3.png
+            analysis_plot_p4_run4.png
+            analysis_plot_p5_run0.png
+            analysis_plot_p5_run1.png
+            analysis_plot_p5_run2.png
+            analysis_plot_p5_run3.png
+            analysis_plot_p5_run4.png
+            analysis_plot_p6_run0.png
+            analysis_plot_p6_run1.png
+            analysis_plot_p6_run2.png
+            analysis_plot_p6_run3.png
+            analysis_plot_p6_run4.png
+            analysis_plot_p7_run0.png
+            analysis_plot_p7_run1.png
+            analysis_plot_p7_run2.png
+            analysis_plot_p7_run3.png
+            analysis_plot_p7_run4.png
+            analysis_plot_p8_run0.png
+            analysis_plot_p8_run1.png
+            analysis_plot_p8_run2.png
+            analysis_plot_p8_run3.png
+            analysis_plot_p8_run4.png
+            analysis_plot_p9_run0.png
+            analysis_plot_p9_run1.png
+            analysis_plot_p9_run2.png
+            analysis_plot_p9_run3.png
+            analysis_plot_p9_run4.png
+            fft_symmetry_vs_index.png
+            modulated_full_analysis.png
+            robustness_results.csv
+          v9/
+            analysis_plot_p10_run0.png
+            analysis_plot_p10_run1.png
+            analysis_plot_p10_run2.png
+            analysis_plot_p10_run3.png
+            analysis_plot_p10_run4.png
+            analysis_plot_p11_run0.png
+            analysis_plot_p11_run1.png
+            analysis_plot_p11_run2.png
+            analysis_plot_p11_run3.png
+            analysis_plot_p11_run4.png
+            analysis_plot_p2_run0.png
+            analysis_plot_p2_run1.png
+            analysis_plot_p2_run2.png
+            analysis_plot_p2_run3.png
+            analysis_plot_p2_run4.png
+            analysis_plot_p3_run0.png
+            analysis_plot_p3_run1.png
+            analysis_plot_p3_run2.png
+            analysis_plot_p3_run3.png
+            analysis_plot_p3_run4.png
+            analysis_plot_p4_run0.png
+            analysis_plot_p4_run1.png
+            analysis_plot_p4_run2.png
+            analysis_plot_p4_run3.png
+            analysis_plot_p4_run4.png
+            analysis_plot_p5_run0.png
+            analysis_plot_p5_run1.png
+            analysis_plot_p5_run2.png
+            analysis_plot_p5_run3.png
+            analysis_plot_p5_run4.png
+            analysis_plot_p6_run0.png
+            analysis_plot_p6_run1.png
+            analysis_plot_p6_run2.png
+            analysis_plot_p6_run3.png
+            analysis_plot_p6_run4.png
+            analysis_plot_p7_run0.png
+            analysis_plot_p7_run1.png
+            analysis_plot_p7_run2.png
+            analysis_plot_p7_run3.png
+            analysis_plot_p7_run4.png
+            analysis_plot_p8_run0.png
+            analysis_plot_p8_run1.png
+            analysis_plot_p8_run2.png
+            analysis_plot_p8_run3.png
+            analysis_plot_p8_run4.png
+            analysis_plot_p9_run0.png
+            analysis_plot_p9_run1.png
+            analysis_plot_p9_run2.png
+            analysis_plot_p9_run3.png
+            analysis_plot_p9_run4.png
+            fft_symmetry_vs_index.png
+            modulated_full_analysis.png
+            robustness_results.csv
+        unification_plan.md
+      legacy/
+        README.md
+        brain.md
+        brain.py
+        cosmo.md
+        cosmo.py
+        vcpu.md
+        vcpu.py
+      pi_harmonics/
+        pi_harmonics.py
+        pi_harmonics.yaml
+        reference_material/
+          pi_harmonic_results2025-06-17 135126.png
+        results.md
+      recursive_entropy/
+        recursive_entopy.py
+        reference_material/
+          recursive_entropy_2025-06-07_results.txt
+          recursive_entropy_2025-06-07_results1.png
+          recursive_entropy_2025-06-07_results2.png
+        results.md
+      recursive_gravity/
+        macro_emergence_knn.py
+        proto_galactic_superfluid.py
+        recursive_gravity.py
+        reference_material/
+          macro_emergence_knn_2025-06-07_results.png
+          proto_galactic_superfluid_2025-06-07_results.png
+          recursive_gravity_2025-06-07_results.png
+        results.md
+      recursive_tree/
+        recursive_tree.py
+        reference_material/
+          recursive_tree_2025-06-07_results.png
+        results.md
+      symbolic_bifractal/
+        reference_material/
+          InfoDyn_Validation_BifractalCollapse_v0.2.yaml
+          InfoDyn_Validation_LineageTrace.tsv
+          symbolic_bifractal_expansion_v1_2025-06-14 093626.png
+          symbolic_bifractal_expansion_v2_2025-06-14 093626.png
+        results.md
+        symbolic_bifractal_expansion_v1.py
+        symbolic_bifractal_expansion_v2.py
+    legacy_docs_archive/
+      AI_Black_Hole_Information_Paper _1_.md
+      AI_Hawking_Radiation_Info_Paper _1_.md
+      AI_J Quantum Measurement_J and the Fabric of Reality.md
+      AI_Newtonian_Quantum_Integration_Paper _1_.md
+      AI_Quantum_Measurement_Whitepaper.md
+      AI_Wavefunction_Collapse_CIMM_Integration _1_.md
+      CIMM _ QBE Cosmological Framework_ Theory and Mathematical Foundations.md
+      CIMM _ QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational Field.md
+      CIMM_Andromeda_Paradox.md
+      CIM_Dissertation_Updated.md
+      DissertationDraft0.0.2.md
+      Document- Intrinsic Structural Metadata _ISM_ _ A New Paradigm in Compression Intelligence.md
+      Entropy_Balanced_Learning_Rate_Integration_Guide.md
+      Quantum Balance Equation revised 2.0.md
+      Quantum Balance Equation.md
+      Quantum Balance Equation_ further insights.md
+      Quantum Balance Equation_Comprehensive Research Archive.md
+      Quantum Balance Observations and Key Findings.md
+      Security Entropy Leak Identifier _SELID__ Full Technical Documentation.md
+      THE PHYSICS UNDERLYING CIMM copy.md
+      THE PHYSICS UNDERLYING CIMM.md
+      The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
+      docx/
+        AI^J Quantum Measurement^J and the Fabric of Reality.docx
+        AI_Black_Hole_Information_Paper (1).docx
+        AI_Hawking_Radiation_Info_Paper (1).docx
+        AI_Newtonian_Quantum_Integration_Paper (1).docx
+        AI_Quantum_Measurement_Whitepaper.docx
+        AI_Wavefunction_Collapse_CIMM_Integration (1).docx
+        CIMM & QBE Cosmological Framework_ Theory and Mathematical Foundations.docx
+        CIMM & QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational Field.docx
+        CIMM_Andromeda_Paradox.docx
+        CIM_Dissertation_Updated.docx
+        DissertationDraft0.0.2.docx
+        Document- Intrinsic Structural Metadata (ISM) — A New Paradigm in Compression Intelligence.docx
+        Entropy-Based Mutation Detection and Repair in Protein Sequences.docx
+        Entropy-Based Repair of BRCA1 Frameshift Mutation (5382insC)(1).docx
+        Entropy_Balanced_Learning_Rate_Integration_Guide.docx
+        Quantum Balance Equation revised 2.0.docx
+        Quantum Balance Equation, further insights.docx
+        Quantum Balance Equation.docx
+        Quantum Balance Equation_Comprehensive Research Archive.docx
+        Quantum Balance Observations and Key Findings.docx
+        Security Entropy Leak Identifier (SELID)_ Full Technical Documentation.docx
+        THE PHYSICS UNDERLYING CIMM copy.docx
+        THE PHYSICS UNDERLYING CIMM.docx
+        The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
+    whats_next.md
+  generate_path.py
+  infodynamics.md
+  models/
+    CIMM/
+      README.md
+      __init__.py
+      agents/
+        agentic_mesh_runtime.py
+        base_agent.py
+        dark_matter_agent.py
+        prime_number_agent.py
+        supervisor_agent.py
+      cimm_core/
+        __init__.py
+        __pycache__/
+          __init__.cpython-311.pyc
+          cimm.cpython-311.pyc
+          utils.cpython-311.pyc
+        cimm.py
+        cimm_core.py
+        cimm_core_manager.py
+        entropy/
+          __init__.py
+          __pycache__/
+            __init__.cpython-311.pyc
+            entropy_monitor.cpython-311.pyc
+            quantum_potential_layer.cpython-311.pyc
+          entropy_monitor.py
+          quantum_potential_layer.py
+        learning/
+          __pycache__/
+            quantum_memory.cpython-311.pyc
+            reinforcement_learning.cpython-311.pyc
+            superfluid_dynamics.cpython-311.pyc
+          quantum_memory.py
+          reinforcement_learning.py
+          superfluid_dynamics.py
+        models/
+          __init__.py
+          __pycache__/
+            __init__.cpython-311.pyc
+            base_cimm_model.cpython-311.pyc
+            financial_model.cpython-311.pyc
+            prime_structure_model.cpython-311.pyc
+          base_cimm_model.py
+          cryptography_model.py
+          financial_model.py
+          prime_structure_model.py
+        optimization/
+          __init__.py
+          __pycache__/
+            __init__.cpython-311.pyc
+            adaptive_controller.cpython-311.pyc
+            bayesian_optimizer.cpython-311.pyc
+            pruning.cpython-311.pyc
+          adaptive_controller.py
+          bayesian_optimizer.py
+          pruning.py
+        utils.py
+      data/
+        amd_full_history.csv
+      models/
+        example_model.py
+      prime_number_results.md
+      requirements.txt
+      results/
+        prime_number_structure/
+          Screenshot 2025-06-12 123836.png
+          error_metrics.txt
+      usecase/
+        __init__.py
+        code_optimization(unfinished).py
+        fetch_stock_data.py
+        prime_structure_usecase.py
+        stock_prediction_usecase.py
+      utils/
+        __init__.py
+        __pycache__/
+          __init__.cpython-311.pyc
+          logging.cpython-311.pyc
+        data_processing.py
+        logging.py
+      validate_imports.py
+      visualization/
+        __init__.py
+        __pycache__/
+          __init__.cpython-311.pyc
+          plots.cpython-311.pyc
+        plots.py
+    GAIA/
+      README.md
+      docs/
+        architecture/
+          modules/
+            collapse_core.md
+            field_engine.md
+            meta_cognition_layer.md
+            resonance_mesh.md
+            superfluid_memory.md
+            symbolic_crystallizer.md
+          overview.md
+        experiments/
+          collapse_dynamics_experiment.md
+          meta_cognitive_trace_experiment.md
+          recursive_entropy_feedback_experiment.md
+          resonance_alignment_experiment.md
+        meta/
+          evaluation_criteria.md
+          methodology.md
+          symbolic_ethics.md
+        protocols/
+          collapse_tree_protocol.md
+          entropy_state_format.md
+          qsocket_protocol.md
+        theory/
+          emergent_intelligence.md
+          epistemic_field_theory.md
+          recursive_balance_field.md
+  origin_of_infodynamics.md
+  repo.yaml
+  timeline.md
+  tools/
+    converter.py

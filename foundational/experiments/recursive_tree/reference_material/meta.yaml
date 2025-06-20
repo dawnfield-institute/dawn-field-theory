@@ -1,0 +1,11 @@
+schema_version: '2.0'
+directory_name: reference_material
+description: >
+  Reference materials for recursive tree experiments, including datasets and supporting documentation.
+semantic_scope:
+  - reference
+  - recursive tree
+  - experiments
+files:
+- recursive_tree_2025-06-07_results.png
+child_directories: []

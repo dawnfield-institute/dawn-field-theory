@@ -1,0 +1,30 @@
+# schema.yaml: Central registry of metadata schemas for Dawn Field Theory
+
+schemas:
+  meta_yaml:
+    version: 2.0
+    description: |
+      Schema for meta.yaml files used in every directory (including root).
+      Describes directory contents, semantic context, and structure.
+    fields:
+      - schema_version: required, string
+      - directory_name: required, string
+      - description: required, string
+      - semantic_scope: required, list of strings
+      - files: required, list of strings
+      - child_directories: required, list of strings
+      - proficiency_level: optional, string
+      - estimated_context_weight: optional, number
+  map_yaml:
+    version: 1.0
+    description: |
+      Schema for map.yaml in the root directory. Provides a plain, hierarchical listing of all files and folders in the repo. No metadata or semantic fields.
+    structure:
+      - root directory name (string, ends with /)
+      - nested files and directories (strings, directories end with /)
+  # Add new schemas here as needed
+
+notes:
+  - All schemas are YAML, designed for both human and LLM consumption.
+  - Update this file whenever a schema is changed or a new metadata file type is added.
+  - Use this file for validation and long-term maintainability.

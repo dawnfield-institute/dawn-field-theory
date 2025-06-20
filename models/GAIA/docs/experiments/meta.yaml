@@ -1,0 +1,11 @@
+schema_version: 2.0
+directory_name: experiments
+description: >
+  Experimental results and supporting files for the GAIA model documentation.
+semantic_scope:
+  - experiments
+  - GAIA
+files:
+  - meta.yaml
+child_directories:
+  []

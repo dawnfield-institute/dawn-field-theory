@@ -1,0 +1,35 @@
+schema_version: 2.0
+directory_name: docx
+description: >
+  Microsoft Word and docx-format legacy documentation for foundational research. Includes drafts, reports, and supporting files.
+semantic_scope:
+  - documentation
+  - docx
+  - legacy
+files:
+- AI^J Quantum Measurement^J and the Fabric of Reality.docx
+- AI_Black_Hole_Information_Paper (1).docx
+- AI_Hawking_Radiation_Info_Paper (1).docx
+- AI_Newtonian_Quantum_Integration_Paper (1).docx
+- AI_Quantum_Measurement_Whitepaper.docx
+- AI_Wavefunction_Collapse_CIMM_Integration (1).docx
+- CIMM & QBE Cosmological Framework_ Theory and Mathematical Foundations.docx
+- CIMM & QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational
+  Field.docx
+- CIMM_Andromeda_Paradox.docx
+- CIM_Dissertation_Updated.docx
+- DissertationDraft0.0.2.docx
+- Document- Intrinsic Structural Metadata (ISM) — A New Paradigm in Compression Intelligence.docx
+- Entropy-Based Mutation Detection and Repair in Protein Sequences.docx
+- Entropy-Based Repair of BRCA1 Frameshift Mutation (5382insC)(1).docx
+- Entropy_Balanced_Learning_Rate_Integration_Guide.docx
+- Quantum Balance Equation revised 2.0.docx
+- Quantum Balance Equation, further insights.docx
+- Quantum Balance Equation.docx
+- Quantum Balance Equation_Comprehensive Research Archive.docx
+- Quantum Balance Observations and Key Findings.docx
+- Security Entropy Leak Identifier (SELID)_ Full Technical Documentation.docx
+- THE PHYSICS UNDERLYING CIMM copy.docx
+- THE PHYSICS UNDERLYING CIMM.docx
+- The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
+child_directories: []

@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: reference_material
+description: >
+  Reference materials for symbolic bifractal experiments, including datasets and supporting documentation.
+semantic_scope:
+  - reference
+  - symbolic bifractal
+  - experiments
+files:
+- InfoDyn_Validation_BifractalCollapse_v0.2.yaml
+- InfoDyn_Validation_LineageTrace.tsv
+- symbolic_bifractal_expansion_v1_2025-06-14 093626.png
+- symbolic_bifractal_expansion_v2_2025-06-14 093626.png
+child_directories: []

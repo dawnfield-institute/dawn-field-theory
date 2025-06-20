@@ -1,0 +1,9 @@
+schema_version: 2.0
+directory_name: hodge_mapping
+description: >
+  Research and code for hodge mapping in arithmetic foundations. Includes theoretical notes and computational models.
+semantic_scope:
+- hodge_mapping
+files: []
+child_directories:
+- v0.1

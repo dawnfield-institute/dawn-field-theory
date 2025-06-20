@@ -1,0 +1,12 @@
+schema_version: 2.0
+directory_name: hash_evaluation
+description: >
+  Hash evaluation scripts and compiled Python cache for Dawn Field Theory.
+semantic_scope:
+  - hash
+  - devkit
+files:
+  - SELID.py
+  - SELID_validation.py
+child_directories:
+  - __pycache__

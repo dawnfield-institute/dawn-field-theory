@@ -1,0 +1,12 @@
+schema_version: 2.0
+directory_name: entropy_information_polarity_field
+description: >
+  Experiments and analysis on entropy and information polarity fields, including black/white hole polarity studies.
+semantic_scope:
+  - entropy
+  - information polarity
+  - experiments
+files:
+- theory_draft.md
+child_directories:
+- black_white_hole_polarity

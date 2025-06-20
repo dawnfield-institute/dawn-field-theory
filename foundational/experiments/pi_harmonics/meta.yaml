@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: pi_harmonics
+description: >
+  Pi harmonics experiments and supporting files for foundational research. Includes data, scripts, and analysis outputs.
+semantic_scope:
+  - pi harmonics
+  - experiments
+  - foundational
+files:
+- pi_harmonics.py
+- pi_harmonics.yaml
+- results.md
+child_directories:
+- reference_material

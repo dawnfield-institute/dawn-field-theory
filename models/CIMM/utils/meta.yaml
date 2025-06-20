@@ -1,0 +1,11 @@
+schema_version: 2.0
+directory_name: utils
+description: >
+  Utility scripts and supporting files for the CIMM model.
+semantic_scope:
+  - utils
+  - CIMM
+files:
+  - meta.yaml
+child_directories:
+  []

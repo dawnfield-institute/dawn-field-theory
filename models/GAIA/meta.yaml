@@ -1,0 +1,12 @@
+schema_version: 2.0
+directory_name: GAIA
+description: >
+  GAIA framework models, documentation, and protocols for Dawn Field Theory.
+semantic_scope:
+  - GAIA
+  - model
+  - protocol
+files:
+  - README.md
+child_directories:
+  - docs

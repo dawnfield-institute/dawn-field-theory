@@ -1,0 +1,10 @@
+schema_version: '2.0'
+directory_name: models
+description: >
+  Model definitions and supporting files for the CIMM model.
+semantic_scope:
+  - models
+  - CIMM
+files:
+- example_model.py
+child_directories: []

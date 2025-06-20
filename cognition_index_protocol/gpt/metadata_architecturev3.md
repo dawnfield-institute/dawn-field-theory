@@ -1,4 +1,3 @@
-
 # Modular Metadata Architecture for Dawn Field Theory Repository
 
 ## Purpose
@@ -9,107 +8,132 @@ This document outlines a scalable metadata architecture for the Dawn Field Theor
 
 ## 🌐 Architecture Overview
 
-The metadata system is organized into three primary layers:
-
-### 1. `repo.yaml`
-- **Purpose**: Entry point for agents, GPTs, and contributors.
-- **Scope**: Describes all root-level files and directories.
-- **Content**: Includes descriptions, semantic scope, proficiency levels, and estimated context weight for each item.
-
-### 2. `map.yaml`
-- **Purpose**: Pure directory tree mapping (static).
-- **Scope**: Reflects the current file/folder structure.
-- **Use Case**: Fast reference and structural validation.
-- **Auto-updated**: Can be regenerated on push via script.
-
-### 3. `meta.yaml` (One per directory)
-- **Purpose**: Contextual metadata for each directory.
-- **Scope**:
-  - `directory_name`: Name of the directory
-  - `description`: Purpose and contents
-  - `semantic_scope`: Tags like [entropy, collapse, symbolic]
-  - `files`: List of files
-  - `child_directories`: List of subfolders
-  - Optional: `breadcrumbs`, `priority_tier`, `parent_directory`
-- **Schema Validation**: Tied to `schema_version` (see `/cognition_index_protocol/schema/`)
+The metadata system is organized into three primary layers, with a unified approach: **every directory, including the root, contains a `meta.yaml` file** describing its contents and semantic context.
 
 ---
 
-## ✅ Validation Workflow
+### 1. `meta.yaml` (Directory Metadata)
+- **Purpose**: Entry point for agents, LLMs, and contributors at every directory level (including the root).
+- **Scope**: Describes all files and subdirectories within the current directory.
+- **Content**: Includes descriptions, semantic scope, proficiency levels, estimated context weight, and links to child directories.
 
-1. **File Generation**
-   - `map.yaml` is auto-generated on push or via `generate_map.py`.
-
-2. **Validation**
-   - `validate_meta.py` checks:
-     - All folders in `map.yaml` have a `meta.yaml`
-     - All `meta.yaml`s match real directory contents
-     - Schema conformity
-
-3. **CI Integration**
-   - Optional GitHub Action can reject push if:
-     - `meta.yaml` is missing or invalid
-     - `schema_version` is inconsistent
-
----
-
-## 📁 Recommended Directory Structure
-
-```
-repo.yaml
-map.yaml
-/docs/meta.yaml
-/experiments/meta.yaml
-/experiments/pi_harmonics/meta.yaml
-/models/CIMM/meta.yaml
-...
-/cognition_index_protocol/schema/meta_schema_v1.yaml
-/cognition_index_protocol/schema/meta_schema_v2.yaml
-```
-
----
-
-## 🧪 Schema Example (`meta_schema_v2.yaml`)
+#### Example (`meta.yaml` at any directory, including root):
 
 ```yaml
 schema_version: 2.0
-required_fields:
-  - directory_name
-  - description
-  - semantic_scope
-  - files
-  - child_directories
-optional_fields:
-  - parent_directory
-  - breadcrumbs
-  - priority_tier
-field_constraints:
-  files: list
-  semantic_scope: list
-  priority_tier: int
+directory_name: dawn-field-theory
+description: >
+  Root of the Dawn Field Theory repository. Contains foundational theory, experiments, models, and onboarding protocols for epistemic machine comprehension.
+semantic_scope:
+  - physics
+  - open science
+  - field theory
+  - infodynamics
+  - AI
+files:
+  - README.md
+  - INTENTIONS.md
+  - map.yaml
+  - meta.yaml
+child_directories:
+  - docs
+  - foundational
+  - cognition_index_protocol
+  - experiments
+  - models
 ```
 
 ---
 
-## 🛡️ Benefits
+### 2. `map.yaml` (Root Directory Map)
 
-- ✅ Reduces token bloat in LLM queries
-- ✅ Allows dynamic, contextual ingest
-- ✅ Supports modular editing and scalability
-- ✅ Enables recursive, self-validating navigation
-- ✅ Positions the repo for future automation
+- **Purpose:**  
+  `map.yaml` exists only in the root directory. It provides a plain, up-to-date map of the entire repository’s directory and file structure.
+- **Content:**  
+  No metadata, descriptions, or semantic data—just a hierarchical listing of folders and files.
+- **Use Case:**  
+  Helps AI agents, scripts, or users quickly locate files or understand the repo’s organization, especially when asked about specific files or paths.
+
+#### Example `map.yaml`
+
+```yaml
+dawn-field-theory/
+  README.md
+  meta.yaml
+  map.yaml
+  foundational/
+    meta.yaml
+    experiments/
+      meta.yaml
+      hodge_conjecture/
+        meta.yaml
+        prime_modulated_collapsev11.py
+        robustness_results.csv
+        output.txt
+        reference_material/
+          meta.yaml
+          v11/
+            meta.yaml
+            results.md
+            analysis_plot_p2_run0.png
+  cognition_index_protocol/
+    meta.yaml
+    gpt/
+      meta.yaml
+      metadata_architecturev3.md
+  docs/
+    meta.yaml
+  models/
+    meta.yaml
+```
 
 ---
 
-## 📌 Contributor Note
-
-All contributors must:
-- Update the appropriate `meta.yaml` when modifying directory content
-- Use `validate_meta.py` before committing
-- Adhere to current `schema_version` as declared in each file
+### 3. `schema.yaml` (Schema Registry)
+- **Purpose**: Central registry of all metadata schemas and their versions used in the repository.
+- **Scope**: Defines and documents the structure and evolution of `meta.yaml`, `map.yaml`, and any other metadata files.
+- **Usage**: Ensures consistency and enables validation across the repository.
 
 ---
 
-**Version**: 1.0  
-**Maintainer**: [You]  
-**Last Updated**: 2025-06-18
+## 🧩 Key Principles
+
+- **Uniformity:** Every directory, including the root, uses `meta.yaml` for metadata.
+- **Extensibility:** New fields and semantic domains can be added as the project evolves.
+- **Machine-Readability:** All metadata is YAML, designed for both human and LLM consumption.
+- **Maintainability:** Changes to schema or structure are tracked in `schema.yaml` for long-term integrity.
+
+---
+
+## 🚀 Getting Started
+
+1. **Add a `meta.yaml` to every directory** (including the root) describing its contents and semantic context.
+2. **(Optional) Add a `map.yaml`** for complex navigation or custom directory views.
+3. **Maintain and update `schema.yaml`** as schemas evolve.
+
+---
+
+## 📚 Example Directory Structure
+
+```
+dawn-field-theory/
+  meta.yaml
+  README.md
+  foundational/
+    meta.yaml
+    experiments/
+      meta.yaml
+      hodge_conjecture/
+        meta.yaml
+        reference_material/
+          meta.yaml
+          v11/
+            meta.yaml
+```
+
+---
+
+## 🔗 See Also
+
+- `schema.yaml` (for schema definitions and versioning)
+- Example `meta.yaml` templates in `/docs/metadata_examples/`

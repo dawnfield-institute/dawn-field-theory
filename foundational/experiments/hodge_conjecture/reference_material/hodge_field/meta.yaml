@@ -1,0 +1,12 @@
+schema_version: 2.0
+directory_name: hodge_field
+description: >
+  Hodge field reference material for hodge_conjecture experiments, including theoretical notes and supporting data.
+semantic_scope:
+  - hodge field
+  - reference
+  - experiments
+files:
+- hodge_conjecture2025-06-20 090250.png
+- hodge_results.md
+child_directories: []

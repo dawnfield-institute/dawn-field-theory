@@ -1,0 +1,11 @@
+schema_version: 2.0
+directory_name: models
+description: >
+  Model definitions and supporting files for the CIMM core.
+semantic_scope:
+  - models
+  - CIMM
+files:
+  - meta.yaml
+child_directories:
+  []
