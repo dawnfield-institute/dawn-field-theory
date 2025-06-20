@@ -8,6 +8,7 @@ description: |
   - Use the instructions_v2.0.yaml file to determine how to parse and interpret meta.yaml files.
   - The meta.yaml schema version is specified in each meta.yaml file as schema_version.
   - If a new meta.yaml schema is introduced, a new instructions_vX.Y.yaml file should be added here.
+  - When gathering context or answering questions about any directory, always consider not just the base-level directory but also all subdirectories and their meta.yaml files, as subdirectories are crucial for full understanding.
 
 usage:
   - Always check the schema_version field in meta.yaml before parsing.
