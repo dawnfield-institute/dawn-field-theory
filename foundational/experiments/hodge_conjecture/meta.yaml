@@ -1,0 +1,28 @@
+schema_version: 2.0
+directory_name: hodge_conjecture
+description: >
+  Experiments, code, and results for prime-modulated symbolic collapse and its connection to the Hodge Conjecture. Includes simulation scripts, statistical analysis, and theoretical mapping.
+semantic_scope:
+  - hodge_conjecture
+  - symbolic_collapse
+  - arithmetic_geometry
+  - experiment
+  - simulation
+  - robustness
+  - results
+files:
+  - hodge_field_simulation.py
+  - prime_modulated_collapse.py
+  - prime_modulated_collapsev2.py
+  - prime_modulated_collapsev3.py
+  - prime_modulated_collapsev4.py
+  - prime_modulated_collapsev5.py
+  - prime_modulated_collapsev6.py
+  - prime_modulated_collapsev7.py
+  - prime_modulated_collapsev8.py
+  - prime_modulated_collapsev9.py
+  - prime_modulated_collapsev10.py
+  - prime_modulated_collapsev11.py
+  - unification_plan.md
+child_directories:
+  - reference_material

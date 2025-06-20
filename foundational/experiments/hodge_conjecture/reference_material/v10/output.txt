@@ -1,0 +1,6 @@
+Prime Mean Symmetry: 6284.466035443355 +/- 587.5863328164118
+Non-Prime Mean Symmetry: 6469.0086935111485 +/- 34.637987736289936
+Prime Mean Peaks: 14.84 +/- 1.34412301024373
+Non-Prime Mean Peaks: 16 +/- 1.2909944487358056
+Symmetry t-test: TtestResult(statistic=-1.5676236234406185, pvalue=0.12353853647313726, df=48.0)
+Peaks t-test: TtestResult(statistic=-3.1121087271119894, pvalue=0.0031260651773996877, df=48.0)
