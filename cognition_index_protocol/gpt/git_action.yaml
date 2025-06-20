@@ -8,14 +8,14 @@ servers:
   - url: https://raw.githubusercontent.com/lornecodes/dawn-field-theory/main
 
 paths:
-  /repo.yaml:
+  /cip/instructions_v2.0.yaml:
     get:
-      operationId: GetRepoMetadata
-      description: Retrieve the repo.yaml metadata file used for GPT-guided navigation.
+      operationId: GetCIPInstructions
+      description: Retrieve the versioned CIP instructions file for meta.yaml v2.0.
       parameters: []
       responses:
         '200':
-          description: Successfully retrieved repo.yaml
+          description: Successfully retrieved instructions_v2.0.yaml
 
   /{path}:
     get:

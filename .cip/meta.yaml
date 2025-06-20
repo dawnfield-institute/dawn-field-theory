@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: .cip
+description: >
+  CIP (Cognition Index Protocol) configuration and instructions directory for the Dawn Field Theory repository. Contains versioned instructions files for agents and tools to interpret meta.yaml schemas and repository navigation protocols.
+semantic_scope:
+  - CIP
+  - configuration
+  - protocol
+  - schema guidance
+files:
+  - instructions_v2.0.yaml
+current_instructions_version: instructions_v2.0.yaml
+child_directories:
+  []

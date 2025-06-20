@@ -8,7 +8,7 @@ This document outlines a scalable metadata architecture for the Dawn Field Theor
 
 ## 🌐 Architecture Overview
 
-The metadata system is organized into three primary layers, with a unified approach: **every directory, including the root, contains a `meta.yaml` file** describing its contents and semantic context.
+The metadata system is organized into three primary layers, with a unified approach: **every directory, including the root, contains a `meta.yaml` file** describing its contents and semantic context. The `.cip` directory in the root contains versioned instructions for interpreting `meta.yaml` schemas and navigation protocols.
 
 ---
 
@@ -16,6 +16,7 @@ The metadata system is organized into three primary layers, with a unified appro
 - **Purpose**: Entry point for agents, LLMs, and contributors at every directory level (including the root).
 - **Scope**: Describes all files and subdirectories within the current directory.
 - **Content**: Includes descriptions, semantic scope, proficiency levels, estimated context weight, and links to child directories.
+- **Instructions**: Agents should first load `.cip/meta.yaml` to determine the current instructions version, then load the specified instructions file (e.g., `instructions_v2.0.yaml`) for schema and navigation guidance.
 
 #### Example (`meta.yaml` at any directory, including root):
 
@@ -53,6 +54,8 @@ child_directories:
   No metadata, descriptions, or semantic data—just a hierarchical listing of folders and files.
 - **Use Case:**  
   Helps AI agents, scripts, or users quickly locate files or understand the repo’s organization, especially when asked about specific files or paths.
+- **Instructions:**  
+  Agents should always consult `.cip` for the latest navigation and schema instructions before parsing `meta.yaml` or `map.yaml`.
 
 #### Example `map.yaml`
 
