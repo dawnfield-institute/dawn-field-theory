@@ -3,11 +3,7 @@ info:
   title: DawnField Repo Navigation API
   description: >
     Provides access to metadata and file contents from the Dawn Field Theory repository.
-
-    ⚠️ Use the `/batch` endpoint for 2–3 paths at a time only.
-    For larger sets, chunk into multiple requests. Fallback to `/path` if needed.
   version: v1.0.0
-
 servers:
   - url: https://raw.githubusercontent.com/lornecodes/dawn-field-theory/main
 
@@ -15,7 +11,6 @@ paths:
   /cip/instructions_v2.0.yaml:
     get:
       operationId: GetCIPInstructions
-      summary: Get CIP instructions for meta.yaml v2.0
       description: Retrieve the versioned CIP instructions file for meta.yaml v2.0.
       responses:
         '200':
@@ -24,11 +19,10 @@ paths:
   /{path}:
     get:
       operationId: GetFileContents
-      summary: Fetch the contents of a single file
       description: >
         Fetch the contents of a specific file from the repository.
-
-        Use this for individual file access or as a fallback from `/batch`.
+        
+        You can search for files one at a time using the `path` parameter.
       parameters:
         - name: path
           in: path
@@ -39,60 +33,6 @@ paths:
       responses:
         '200':
           description: Successfully retrieved file contents
-
-    /batch:
-    post:
-      operationId: GetFileCluster
-      summary: Batch-fetch contents of multiple files or directories (max 3)
-      description: >
-        Retrieve up to 3 files or shallow directories. 
-        Recursion is not supported — only top-level files are returned. 
-        Use `/path` for large sets or fallback. 
-        Errors for individual paths are listed in the `errors[]` field of the response.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                paths:
-                  type: array
-                  items:
-                    type: string
-                  maxItems: 3
-                  description: >
-                    List of relative paths to files or folders.
-                    Example: ["models/core_model.py", "data/schema.json"]
-      responses:
-        '200':
-          description: Successfully retrieved file cluster
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  results:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        path:
-                          type: string
-                        content:
-                          type: string
-                  errors:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        path:
-                          type: string
-                        error:
-                          type: string
-                        status:
-                          type: integer
-
 
 components:
   schemas: {}
