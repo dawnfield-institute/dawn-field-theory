@@ -1,0 +1,32 @@
+{
+  "testid_1": {
+    "sentence": "If the report isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.",
+    "role": "driver",
+    "entropy": 4.042,
+    "path": "reference_material\\2025-06-21_102536\\testid_1"
+  },
+  "testid_2": {
+    "sentence": "Before you leave for lunch, make sure all systems are shut down and the logs are archived.",
+    "role": "driver",
+    "entropy": 4.056,
+    "path": "reference_material\\2025-06-21_102536\\testid_2"
+  },
+  "testid_3": {
+    "sentence": "It would be great if you could send over the updated draft once you\u2019re done reviewing it.",
+    "role": "junction",
+    "entropy": 3.974,
+    "path": "reference_material\\2025-06-21_102536\\testid_3"
+  },
+  "testid_4": {
+    "sentence": "Since the client hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.",
+    "role": "junction",
+    "entropy": 3.845,
+    "path": "reference_material\\2025-06-21_102536\\testid_4"
+  },
+  "testid_5": {
+    "sentence": "Although the system is reporting errors, the backup routines appear to be functioning correctly.",
+    "role": "driver",
+    "entropy": 3.984,
+    "path": "reference_material\\2025-06-21_102536\\testid_5"
+  }
+}

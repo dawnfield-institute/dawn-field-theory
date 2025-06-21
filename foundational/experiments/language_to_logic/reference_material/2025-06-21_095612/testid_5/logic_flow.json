@@ -1,0 +1,80 @@
+{
+  "tree": {
+    "id": "5906d7b359",
+    "text": "Although the system is reporting errors, the backup routines appear to be functioning correctly.",
+    "role": "driver",
+    "entropy": 3.984,
+    "children": [
+      {
+        "id": "55356b40b8",
+        "text": "Although",
+        "role": "condition",
+        "entropy": 2.75,
+        "children": []
+      },
+      {
+        "id": "8fddeb890e",
+        "text": "the system is reporting errors, the backup routines appear to be functioning correctly.",
+        "role": "driver",
+        "entropy": 3.931,
+        "children": [
+          {
+            "id": "b9776d7ddf",
+            "text": "the",
+            "role": "end",
+            "entropy": 1.585,
+            "children": []
+          },
+          {
+            "id": "80812dbf6e",
+            "text": "system is reporting errors, the backup routines appear to be functioning correctly.",
+            "role": "driver",
+            "entropy": 3.929,
+            "children": [
+              {
+                "id": "bbc5e661e1",
+                "text": "system",
+                "role": "condition",
+                "entropy": 2.252,
+                "children": []
+              },
+              {
+                "id": "ae33e3822f",
+                "text": "is reporting errors, the backup routines appear to be functioning correctly.",
+                "role": "driver",
+                "entropy": 3.864,
+                "children": [
+                  {
+                    "id": "fa51fd49ab",
+                    "text": "is",
+                    "role": "end",
+                    "entropy": 1.0,
+                    "children": []
+                  },
+                  {
+                    "id": "ee65f5b136",
+                    "text": "reporting errors, the backup routines appear to be functioning correctly.",
+                    "role": "condition",
+                    "entropy": 3.852,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logic_trace": [
+    "DO 'Although the system is reporting errors, the backup routines appear to be functioning correctly.'",
+    "  IF 'Although' THEN",
+    "  DO 'the system is reporting errors, the backup routines appear to be functioning correctly.'",
+    "    END 'the'",
+    "    DO 'system is reporting errors, the backup routines appear to be functioning correctly.'",
+    "      IF 'system' THEN",
+    "      DO 'is reporting errors, the backup routines appear to be functioning correctly.'",
+    "        END 'is'",
+    "        IF 'reporting errors, the backup routines appear to be functioning correctly.' THEN"
+  ]
+}

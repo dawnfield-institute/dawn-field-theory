@@ -1,0 +1,80 @@
+{
+  "tree": {
+    "id": "b8be3c0402",
+    "text": "Since the client hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.",
+    "role": "junction",
+    "entropy": 3.845,
+    "children": [
+      {
+        "id": "98af1ed618",
+        "text": "Since",
+        "role": "condition",
+        "entropy": 2.322,
+        "children": []
+      },
+      {
+        "id": "093f7c5046",
+        "text": "the client hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.",
+        "role": "junction",
+        "entropy": 3.856,
+        "children": [
+          {
+            "id": "b9776d7ddf",
+            "text": "the",
+            "role": "end",
+            "entropy": 1.585,
+            "children": []
+          },
+          {
+            "id": "c60f629fa2",
+            "text": "client hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.",
+            "role": "driver",
+            "entropy": 3.874,
+            "children": [
+              {
+                "id": "948fe603f6",
+                "text": "client",
+                "role": "condition",
+                "entropy": 2.585,
+                "children": []
+              },
+              {
+                "id": "2a2894832b",
+                "text": "hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.",
+                "role": "driver",
+                "entropy": 3.868,
+                "children": [
+                  {
+                    "id": "712aaee4e2",
+                    "text": "hasn\u2019t",
+                    "role": "condition",
+                    "entropy": 2.322,
+                    "children": []
+                  },
+                  {
+                    "id": "d09130b9ed",
+                    "text": "responded, we might need to revise the proposal or consider postponing the launch.",
+                    "role": "condition",
+                    "entropy": 3.864,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logic_trace": [
+    "JUNCTION 'Since the client hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.'",
+    "  IF 'Since' THEN",
+    "  JUNCTION 'the client hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.'",
+    "    END 'the'",
+    "    DO 'client hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.'",
+    "      IF 'client' THEN",
+    "      DO 'hasn\u2019t responded, we might need to revise the proposal or consider postponing the launch.'",
+    "        IF 'hasn\u2019t' THEN",
+    "        IF 'responded, we might need to revise the proposal or consider postponing the launch.' THEN"
+  ]
+}
