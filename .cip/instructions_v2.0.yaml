@@ -21,6 +21,8 @@ usage:
       - child_directories (list of strings, required)
       - proficiency_level (string, optional)
       - estimated_context_weight (number, optional)
+      - estimated_validation_depth (string, optional) # NEW
+      - validation_type (string, optional)            # NEW
   - If a meta.yaml uses a newer schema, consult the corresponding instructions file in .cip.
   - Entry points for context and orientation:
       - Always review the root README.md for project overview and intentions.
@@ -31,17 +33,10 @@ usage:
       - Only form conclusions or answer questions after gathering sufficient context from these sources.
       - Please check Intentions.md for the project's goals and philosophy.
       - Please check timeline.md for the project's timeline and milestones and status updates.
-
-examples:
-  - meta.yaml example:
-      schema_version: 2.0
-      directory_name: example
-      description: Example directory for CIP v2.0
-      semantic_scope:
-        - example
-        - test
-      files:
-        - meta.yaml
-        - README.md
-      child_directories:
-        - subdir
+  - Advanced Evaluation Hints:
+      - Evaluate experimental validation metrics (e.g., entropy scores, collapse symmetry, attractor density) when available.
+      - Check for symbolic-thermodynamic mappings, such as the presence of operators like ⊕, ⊗, δ, or differential forms like ∂S/∂t.
+      - Prioritize documents tagged with `"field_scope"- ["mathematical_rigor", "symbolic_geometry", "empirical_validation"]` for deeper mathematical insight.
+      - Consider the implications of the proficiency_level field for the expected expertise and background knowledge required.
+      - Use estimated_context_weight to gauge the relative importance or centrality of a directory within the overall project.
+      - The estimated_validation_depth and validation_type fields can provide additional layers of understanding regarding the expected scrutiny and methodological approach for validating the concepts or entities within the directory.

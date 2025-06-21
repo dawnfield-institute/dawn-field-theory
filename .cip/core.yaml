@@ -35,3 +35,17 @@ notes:
   - This list includes both markdown and docx theoretical papers.
   - All experiment-related files, including code, metadata, and results, are listed explicitly.
   - Use this file as a canonical index of intellectual artifacts in the Dawn Field Theory repository.
+
+highlighted_contributions:
+  - title: Infodynamics Arithmetic
+    path: foundational/arithmetic/infodynamics_arithmetic_v1.md
+    type: symbolic_formalism
+    tags: [entropy_gradient, symbolic_collapse, operators]
+  - title: Pi-Harmonics Collapse Validation
+    path: foundational/experiments/pi_harmonics/results.md
+    type: simulation
+    tags: [entropy, resonance, mathematical_rigor]
+  - title: Hodge Field Simulation
+    path: foundational/experiments/hodge_conjecture/reference_material/hodge_field/hodge_results.md
+    type: geometry_simulation
+    tags: [topology, cohomology, symbolic_geometry]
