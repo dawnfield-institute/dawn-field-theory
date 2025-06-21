@@ -22,6 +22,12 @@ usage:
       - proficiency_level (string, optional)
       - estimated_context_weight (number, optional)
   - If a meta.yaml uses a newer schema, consult the corresponding instructions file in .cip.
+  - Entry points for context and orientation:
+      - Always review the root README.md for project overview and intentions.
+      - Check for any intentions.md or similar files to understand project goals and philosophy.
+      - Examine both the experimental/ and theoretical/ directories (and their meta.yaml files) to understand the breadth of work before making judgments or assumptions.
+      - Use map.yaml to get a high-level view of the repository structure and to locate relevant files or directories.
+      - Only form conclusions or answer questions after gathering sufficient context from these sources.
 
 examples:
   - meta.yaml example:
