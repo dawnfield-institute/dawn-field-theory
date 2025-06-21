@@ -1,0 +1,80 @@
+{
+  "tree": {
+    "id": "b3886669b8",
+    "text": "If the report isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.",
+    "role": "driver",
+    "entropy": 4.042,
+    "children": [
+      {
+        "id": "1e3abf61a3",
+        "text": "If",
+        "role": "end",
+        "entropy": 1.0,
+        "children": []
+      },
+      {
+        "id": "666eb89550",
+        "text": "the report isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.",
+        "role": "junction",
+        "entropy": 4.035,
+        "children": [
+          {
+            "id": "b9776d7ddf",
+            "text": "the",
+            "role": "end",
+            "entropy": 1.585,
+            "children": []
+          },
+          {
+            "id": "87d16c9fdc",
+            "text": "report isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.",
+            "role": "driver",
+            "entropy": 4.052,
+            "children": [
+              {
+                "id": "845e918313",
+                "text": "report",
+                "role": "condition",
+                "entropy": 2.252,
+                "children": []
+              },
+              {
+                "id": "8c54c7f837",
+                "text": "isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.",
+                "role": "driver",
+                "entropy": 4.051,
+                "children": [
+                  {
+                    "id": "d7ba3f8777",
+                    "text": "isn\u2019t",
+                    "role": "condition",
+                    "entropy": 2.0,
+                    "children": []
+                  },
+                  {
+                    "id": "0bbbc49bba",
+                    "text": "finalized by noon, tell the team to move forward without it and update the timeline accordingly.",
+                    "role": "condition",
+                    "entropy": 4.031,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logic_trace": [
+    "DO 'If the report isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.'",
+    "  END 'If'",
+    "  JUNCTION 'the report isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.'",
+    "    END 'the'",
+    "    DO 'report isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.'",
+    "      IF 'report' THEN",
+    "      DO 'isn\u2019t finalized by noon, tell the team to move forward without it and update the timeline accordingly.'",
+    "        IF 'isn\u2019t' THEN",
+    "        IF 'finalized by noon, tell the team to move forward without it and update the timeline accordingly.' THEN"
+  ]
+}

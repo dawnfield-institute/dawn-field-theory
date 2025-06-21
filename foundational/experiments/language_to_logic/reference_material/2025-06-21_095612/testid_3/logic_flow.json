@@ -1,0 +1,80 @@
+{
+  "tree": {
+    "id": "3ee6efd742",
+    "text": "It would be great if you could send over the updated draft once you\u2019re done reviewing it.",
+    "role": "junction",
+    "entropy": 3.974,
+    "children": [
+      {
+        "id": "555c7b8b38",
+        "text": "It",
+        "role": "end",
+        "entropy": 1.0,
+        "children": []
+      },
+      {
+        "id": "1a009df571",
+        "text": "would be great if you could send over the updated draft once you\u2019re done reviewing it.",
+        "role": "driver",
+        "entropy": 3.979,
+        "children": [
+          {
+            "id": "c6323a2117",
+            "text": "would",
+            "role": "condition",
+            "entropy": 2.322,
+            "children": []
+          },
+          {
+            "id": "e197fdf600",
+            "text": "be great if you could send over the updated draft once you\u2019re done reviewing it.",
+            "role": "driver",
+            "entropy": 3.952,
+            "children": [
+              {
+                "id": "46599c5bb5",
+                "text": "be",
+                "role": "end",
+                "entropy": 1.0,
+                "children": []
+              },
+              {
+                "id": "116a5c1cae",
+                "text": "great if you could send over the updated draft once you\u2019re done reviewing it.",
+                "role": "driver",
+                "entropy": 3.919,
+                "children": [
+                  {
+                    "id": "87765da6cc",
+                    "text": "great",
+                    "role": "condition",
+                    "entropy": 2.322,
+                    "children": []
+                  },
+                  {
+                    "id": "adba5b6087",
+                    "text": "if you could send over the updated draft once you\u2019re done reviewing it.",
+                    "role": "condition",
+                    "entropy": 3.911,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logic_trace": [
+    "JUNCTION 'It would be great if you could send over the updated draft once you\u2019re done reviewing it.'",
+    "  END 'It'",
+    "  DO 'would be great if you could send over the updated draft once you\u2019re done reviewing it.'",
+    "    IF 'would' THEN",
+    "    DO 'be great if you could send over the updated draft once you\u2019re done reviewing it.'",
+    "      END 'be'",
+    "      DO 'great if you could send over the updated draft once you\u2019re done reviewing it.'",
+    "        IF 'great' THEN",
+    "        IF 'if you could send over the updated draft once you\u2019re done reviewing it.' THEN"
+  ]
+}

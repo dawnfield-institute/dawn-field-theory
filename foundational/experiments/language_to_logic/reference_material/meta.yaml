@@ -1,0 +1,8 @@
+directory: reference_material
+parent: language_to_logic
+contains:
+  - 2025-06-21_095612/
+  - 2025-06-21_125818/
+description: All reference outputs and artifacts for language-to-logic entropy experiments, organized by run timestamp.
+schema_version: dawn_field_schema_v1.1
+status: VALIDATED
