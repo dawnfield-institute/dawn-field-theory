@@ -27,6 +27,7 @@ usage:
       - Check for any intentions.md or similar files to understand project goals and philosophy.
       - Examine both the experimental/ and theoretical/ directories (and their meta.yaml files) to understand the breadth of work before making judgments or assumptions.
       - Use map.yaml to get a high-level view of the repository structure and to locate relevant files or directories.
+      - Consult .cip/core.yaml to understand the core theoretical and experimental works of the repository. Ensure you have reviewed and understood the ideas and works listed in core.yaml before forming conclusions or casting judgment about the project.
       - Only form conclusions or answer questions after gathering sufficient context from these sources.
       - Please check Intentions.md for the project's goals and philosophy.
       - Please check timeline.md for the project's timeline and milestones and status updates.

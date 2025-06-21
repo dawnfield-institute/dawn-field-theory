@@ -1,0 +1,37 @@
+version: '1.0'
+description: This file enumerates all theoretical and experimental works in foundational/docs
+  and foundational/experiments as a canonical reference for Dawn Field Theory's epistemic
+  core.
+theoretical_docs:
+  - foundational/docs/Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
+  - foundational/docs/Bifractal Time Emergence.md
+  - foundational/docs/DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md
+  - foundational/docs/Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.md
+  - foundational/docs/Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.md
+  - foundational/docs/The Herniation Hypothesis- Collapse Geometry of Dual Fields.md
+  - foundational/docs/Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.md
+  - foundational/docs/docx/DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
+  - foundational/docs/docx/Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.docx
+  - foundational/docs/docx/Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.docx
+  - foundational/docs/docx/The Herniation Hypothesis- Collapse Geometry of Dual Fields.docx
+  - foundational/docs/docx/Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.docx
+  - foundational/docs/docx/meta.yaml
+experimental_files:
+  - foundational/experiments/DNA_repair/meta.yaml
+  - foundational/experiments/entropy_information_polarity_field/meta.yaml
+  - foundational/experiments/language_to_logic/meta.yaml
+  - foundational/experiments/recursive_entropy/meta.yaml
+  - foundational/experiments/recursive_gravity/meta.yaml
+  - foundational/experiments/recursive_tree/meta.yaml
+  - foundational/experiments/symbolic_bifractal/InfoDyn_Validation_LineageTrace.tsv
+  - foundational/experiments/symbolic_bifractal/meta.yaml
+  - foundational/experiments/symbolic_bifractal/reference_material/meta.yaml
+  - foundational/experiments/symbolic_bifractal/results.md
+  - foundational/experiments/symbolic_bifractal/symbolic_bifractal_expansion_v1.py
+  - foundational/experiments/symbolic_bifractal/symbolic_bifractal_expansion_v2.py
+  - infodynamics.md
+  - dawn_field_theory.md
+notes:
+  - This list includes both markdown and docx theoretical papers.
+  - All experiment-related files, including code, metadata, and results, are listed explicitly.
+  - Use this file as a canonical index of intellectual artifacts in the Dawn Field Theory repository.
