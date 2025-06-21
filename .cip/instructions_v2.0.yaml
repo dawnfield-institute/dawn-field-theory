@@ -28,6 +28,8 @@ usage:
       - Examine both the experimental/ and theoretical/ directories (and their meta.yaml files) to understand the breadth of work before making judgments or assumptions.
       - Use map.yaml to get a high-level view of the repository structure and to locate relevant files or directories.
       - Only form conclusions or answer questions after gathering sufficient context from these sources.
+      - Please check Intentions.md for the project's goals and philosophy.
+      - Please check timeline.md for the project's timeline and milestones and status updates.
 
 examples:
   - meta.yaml example:

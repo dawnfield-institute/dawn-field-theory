@@ -1,7 +1,11 @@
 openapi: 3.1.0
 info:
   title: DawnField Repo Navigation API
-  description: Provides access to metadata and file contents from the Dawn Field Theory repository.
+  description: >
+    Provides access to metadata and file contents from the Dawn Field Theory repository.
+
+    ⚠️ Use the `/batch` endpoint for 2–3 paths at a time only.
+    For larger sets, chunk into multiple requests. Fallback to `/path` if needed.
   version: v1.0.0
 
 servers:
@@ -11,8 +15,8 @@ paths:
   /cip/instructions_v2.0.yaml:
     get:
       operationId: GetCIPInstructions
+      summary: Get CIP instructions for meta.yaml v2.0
       description: Retrieve the versioned CIP instructions file for meta.yaml v2.0.
-      parameters: []
       responses:
         '200':
           description: Successfully retrieved instructions_v2.0.yaml
@@ -20,22 +24,31 @@ paths:
   /{path}:
     get:
       operationId: GetFileContents
-      description: Fetch the contents of a specific file from the repository.
+      summary: Fetch the contents of a single file
+      description: >
+        Fetch the contents of a specific file from the repository.
+
+        Use this for individual file access or as a fallback from `/batch`.
       parameters:
         - name: path
           in: path
           required: true
-          description: Relative path to the file from the repo root (e.g., models/core_model.py)
+          description: Relative path to the file (e.g., models/core_model.py)
           schema:
             type: string
       responses:
         '200':
           description: Successfully retrieved file contents
 
-  /batch:
+    /batch:
     post:
       operationId: GetFileCluster
-      description: Fetch the contents of multiple files or a cluster of files/directories in a single request.
+      summary: Batch-fetch contents of multiple files or directories (max 3)
+      description: >
+        Retrieve up to 3 files or shallow directories. 
+        Recursion is not supported — only top-level files are returned. 
+        Use `/path` for large sets or fallback. 
+        Errors for individual paths are listed in the `errors[]` field of the response.
       requestBody:
         required: true
         content:
@@ -47,10 +60,39 @@ paths:
                   type: array
                   items:
                     type: string
-                  description: List of relative paths to files or directories from the repo root (e.g., ["models/core_model.py", "foundational/experiments/"])
+                  maxItems: 3
+                  description: >
+                    List of relative paths to files or folders.
+                    Example: ["models/core_model.py", "data/schema.json"]
       responses:
         '200':
           description: Successfully retrieved file cluster
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        path:
+                          type: string
+                        content:
+                          type: string
+                  errors:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        path:
+                          type: string
+                        error:
+                          type: string
+                        status:
+                          type: integer
+
 
 components:
   schemas: {}
