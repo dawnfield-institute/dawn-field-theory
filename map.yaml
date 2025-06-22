@@ -66,6 +66,7 @@ dawn-field-theory/
         v2_roadmap.md
     qsocket.md
   cognition_index_protocol/
+    README.md
     architecture/
       CIP_architecturev1.md
       meta.yaml
@@ -80,6 +81,7 @@ dawn-field-theory/
     meta.yaml
   dawn-field-theory.md
   devkit/
+    README.md
     compression/
       CompressionTest2.py
       Compression_test1.py
@@ -98,7 +100,9 @@ dawn-field-theory/
       meta.yaml
       random_number.md
   foundational/
+    README.md
     arithmetic/
+      README.md
       hodge_mapping/
         meta.yaml
         v0.1/
@@ -111,6 +115,7 @@ dawn-field-theory/
       Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
       Bifractal Time Emergence.md
       DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md
+      README.md
       Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.md
       Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.md
       The Herniation Hypothesis- Collapse Geometry of Dual Fields.md
@@ -651,6 +656,7 @@ dawn-field-theory/
       Quantum Balance Equation_ further insights.md
       Quantum Balance Equation_Comprehensive Research Archive.md
       Quantum Balance Observations and Key Findings.md
+      README.md
       Security Entropy Leak Identifier _SELID__ Full Technical Documentation.md
       THE PHYSICS UNDERLYING CIMM copy.md
       THE PHYSICS UNDERLYING CIMM.md
@@ -833,6 +839,7 @@ dawn-field-theory/
           meta.yaml
           recursive_balance_field.md
       meta.yaml
+    README.md
     meta.yaml
   origin_of_infodynamics.md
   resources/
