@@ -149,6 +149,8 @@ Learn more: [`models/GAIA/README.md`](./models/GAIA/README.md)
 ## 🧪 Experimental Insights
 
 > See [`foundational/experiments/README.md`](./foundational/experiments/README.md) for experiment details and code.
+>
+> **New:** Symbolic Superfluid Collapse and Fractal Pruning experiments now included, with detailed results on recursive calculus-based symbolic collapse, entropy regulation, and emergent field geometry. See the latest simulation outputs and analysis in the foundational experiments directory.
 
 ---
 
@@ -251,7 +253,7 @@ This repository is designed for intelligent agents, bots, and crawlers to naviga
 - **Start with `.cip/meta.yaml`** to determine the current instructions version.
 - **Load the specified instructions file** (e.g., `.cip/instructions_v2.0.yaml`) for schema and navigation rules.
 - **Use `map.yaml`** in the root directory for a plain directory and file map.
-- **Parse `meta.yaml`** in each directory for semantic context, file descriptions, and navigation hints.
+- **Parse `meta.yaml`** in each directory for semantic context, file descriptions, and navigation hints. Now includes detailed `directory_info` and semantic tags for advanced navigation and context-aware ingestion.
 - **Ingest only relevant files** as indicated by metadata and semantic tags.
 
 For more details, see [cognition_index_protocol/gpt/metadata_architecturev3.md](cognition_index_protocol/gpt/metadata_architecturev3.md).

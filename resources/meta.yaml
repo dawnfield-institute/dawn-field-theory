@@ -1,0 +1,13 @@
+schema_version: 2.0
+directory_name: resources
+description: >
+  Shared resources, datasets, reference materials, and utility files for Dawn Field Theory.
+directory_info: |
+  This directory contains shared resources, datasets, reference materials, and utility files used across the Dawn Field Theory project. It serves as a central repository for assets that support experiments, documentation, and development.
+semantic_scope:
+  - resources
+  - datasets
+  - reference
+  - utilities
+files: []
+child_directories: []

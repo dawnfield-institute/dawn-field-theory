@@ -834,6 +834,9 @@ dawn-field-theory/
       meta.yaml
     meta.yaml
   origin_of_infodynamics.md
+  resources/
+    meta.yaml
+    recursive_structure.png
   schema.yaml
   timeline.md
   todo/
