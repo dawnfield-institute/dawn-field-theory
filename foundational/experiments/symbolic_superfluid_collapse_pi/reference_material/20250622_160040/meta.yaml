@@ -1,0 +1,15 @@
+schema_version: '2.0'
+directory_name: '20250622_160040'
+description: >
+  Output data and images from the symbolic superfluid collapse pi experiment, batch 20250622_160040.
+directory_info: |
+  This directory contains the output data, images, and statistics generated during the symbolic superfluid collapse pi experiment run on 2025-06-22 (batch 160040). It serves as a record of experiment results for analysis and reproducibility.
+semantic_scope:
+- experiment output
+- images
+- statistics
+files:
+- collapse_diagnostics.png
+- collapse_field.png
+- collapse_logs.csv
+child_directories: []

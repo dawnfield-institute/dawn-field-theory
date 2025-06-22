@@ -1,0 +1,18 @@
+schema_version: '2.0'
+# Directory info: Contains all code, data, and results for the symbolic fractal pruning experiment, which explores recursive calculus-based symbolic collapse and entropy regulation.
+directory_name: symbolic_fractal_pruning
+description: >
+  Symbolic fractal pruning experiment and supporting files for Dawn Field Theory. Includes simulation code, data, and analysis outputs.
+directory_info: |
+  This directory contains the full implementation and results of the symbolic fractal pruning experiment. It includes simulation scripts, configuration files, experiment outputs, and documentation for recursive calculus-based symbolic collapse and entropy regulation. Reference materials and visualizations are organized in subdirectories.
+semantic_scope:
+  - symbolic pruning
+  - experiments
+  - entropy
+  - recursive calculus
+files:
+  - symbolic_fractal_pruning.py
+  - results.md
+  - meta.yaml
+child_directories:
+  - reference_material
