@@ -1,0 +1,282 @@
+[
+  {
+    "step": 1,
+    "symbol_counts": {
+      "A": 2454,
+      "B": 2146,
+      "C": 1886,
+      "D": 1041
+    },
+    "entropy_score": 3808.400492852875,
+    "active_ratio": 0.1148529052734375,
+    "laplacian_weight": 0.3,
+    "gradient_weight": 0.3,
+    "prune_threshold": 0.15
+  },
+  {
+    "step": 2,
+    "symbol_counts": {
+      "A": 847,
+      "B": 719,
+      "C": 706,
+      "D": 353
+    },
+    "entropy_score": 811.2692111247013,
+    "active_ratio": 0.0400543212890625,
+    "laplacian_weight": 0.315,
+    "gradient_weight": 0.315,
+    "prune_threshold": 0.13572561270539393
+  },
+  {
+    "step": 3,
+    "symbol_counts": {
+      "A": 299,
+      "B": 249,
+      "C": 243,
+      "D": 133
+    },
+    "entropy_score": 129.1829583405449,
+    "active_ratio": 0.01409912109375,
+    "laplacian_weight": 0.33,
+    "gradient_weight": 0.33,
+    "prune_threshold": 0.12280961296169726
+  },
+  {
+    "step": 4,
+    "symbol_counts": {
+      "A": 98,
+      "B": 88,
+      "C": 94,
+      "D": 56
+    },
+    "entropy_score": 21.0,
+    "active_ratio": 0.005126953125,
+    "laplacian_weight": 0.345,
+    "gradient_weight": 0.345,
+    "prune_threshold": 0.11112273310225768
+  },
+  {
+    "step": 5,
+    "symbol_counts": {
+      "A": 37,
+      "B": 42,
+      "C": 32,
+      "D": 17
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.001953125,
+    "laplacian_weight": 0.36,
+    "gradient_weight": 0.36,
+    "prune_threshold": 0.10054800690534589
+  },
+  {
+    "step": 6,
+    "symbol_counts": {
+      "A": 14,
+      "B": 19,
+      "C": 11,
+      "D": 2
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.000701904296875,
+    "laplacian_weight": 0.375,
+    "gradient_weight": 0.375,
+    "prune_threshold": 0.09097959895689502
+  },
+  {
+    "step": 7,
+    "symbol_counts": {
+      "A": 5,
+      "B": 6,
+      "C": 4,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0002288818359375,
+    "laplacian_weight": 0.39,
+    "gradient_weight": 0.39,
+    "prune_threshold": 0.08232174541410398
+  },
+  {
+    "step": 8,
+    "symbol_counts": {
+      "A": 0,
+      "B": 2,
+      "C": 3,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 7.62939453125e-05,
+    "laplacian_weight": 0.405,
+    "gradient_weight": 0.405,
+    "prune_threshold": 0.07448779556871142
+  },
+  {
+    "step": 9,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 1.52587890625e-05,
+    "laplacian_weight": 0.42,
+    "gradient_weight": 0.42,
+    "prune_threshold": 0.06739934461758323
+  },
+  {
+    "step": 10,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.435,
+    "gradient_weight": 0.435,
+    "prune_threshold": 0.060985448961089865
+  },
+  {
+    "step": 11,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.44999999999999996,
+    "gradient_weight": 0.44999999999999996,
+    "prune_threshold": 0.05518191617571635
+  },
+  {
+    "step": 12,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.46499999999999997,
+    "gradient_weight": 0.46499999999999997,
+    "prune_threshold": 0.04993066255471193
+  },
+  {
+    "step": 13,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.48,
+    "gradient_weight": 0.48,
+    "prune_threshold": 0.04517913178683032
+  },
+  {
+    "step": 14,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.49499999999999994,
+    "gradient_weight": 0.49499999999999994,
+    "prune_threshold": 0.04087976895510189
+  },
+  {
+    "step": 15,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.51,
+    "gradient_weight": 0.51,
+    "prune_threshold": 0.03698954459124097
+  },
+  {
+    "step": 16,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.525,
+    "gradient_weight": 0.525,
+    "prune_threshold": 0.03346952402226447
+  },
+  {
+    "step": 17,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.54,
+    "gradient_weight": 0.54,
+    "prune_threshold": 0.030284477699198308
+  },
+  {
+    "step": 18,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.555,
+    "gradient_weight": 0.555,
+    "prune_threshold": 0.0274025286079102
+  },
+  {
+    "step": 19,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.57,
+    "gradient_weight": 0.57,
+    "prune_threshold": 0.02479483323323798
+  },
+  {
+    "step": 20,
+    "symbol_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "entropy_score": 0.0,
+    "active_ratio": 0.0,
+    "laplacian_weight": 0.585,
+    "gradient_weight": 0.585,
+    "prune_threshold": 0.02243529288339526
+  }
+]
