@@ -105,6 +105,7 @@ dawn-field-theory/
           meta.yaml
       infodynamics_arithmetic_v1.md
       meta.yaml
+      symbolic_geometry_arithmetic.md
     docs/
       Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
       Bifractal Time Emergence.md
@@ -127,6 +128,7 @@ dawn-field-theory/
         meta.yaml
       meta.yaml
       pi_harmonics.md
+      recursive_calculus_and_entropy_regulation.md
       recursive_entopy.md
       recursive_symbol_collapse.md
       recursive_tree.md
@@ -578,6 +580,57 @@ dawn-field-theory/
         results.md
         symbolic_bifractal_expansion_v1.py
         symbolic_bifractal_expansion_v2.py
+      symbolic_fractal_pruning/
+        meta.yaml
+        reference_material/
+          meta.yaml
+          pruning_20250622_163425/
+            active_ratio_over_time.png
+            entropy_over_time.png
+            meta.yaml
+            pruning_stats.json
+            step_01.png
+            step_02.png
+            step_03.png
+            step_04.png
+            step_05.png
+            step_06.png
+            step_07.png
+            step_08.png
+            step_09.png
+            step_10.png
+            step_11.png
+            step_12.png
+            step_13.png
+            step_14.png
+            step_15.png
+            step_16.png
+            step_17.png
+            step_18.png
+            step_19.png
+            step_20.png
+            symbol_lifetimes.png
+        results.md
+        symbolic_fractal_pruning.py
+      symbolic_superfluid_collapse_pi/
+        meta.yaml
+        reference_material/
+          20250622_160040/
+            collapse_diagnostics.png
+            collapse_field.png
+            collapse_logs.csv
+            meta.yaml
+          20250622_160535_batch/
+            RESULTS.md
+            average_speed.png
+            entropy_change.png
+            meta.yaml
+            particles_near_center.png
+            symbolic_entropy.png
+            symbolic_transitions.json
+          meta.yaml
+        results.md
+        symbolic_superfluid_collapse_pi.py
     legacy_docs_archive/
       AI_Black_Hole_Information_Paper _1_.md
       AI_Hawking_Radiation_Info_Paper _1_.md
@@ -630,7 +683,6 @@ dawn-field-theory/
       meta.yaml
     meta.yaml
     whats_next.md
-  generate_meta_yamls.py
   generate_path.py
   infodynamics.md
   map.yaml
@@ -784,6 +836,13 @@ dawn-field-theory/
   origin_of_infodynamics.md
   schema.yaml
   timeline.md
+  todo/
+    hodge/
+      hodge_paper.md
+      meta.yaml
+    meta.yaml
+    todolist.md
   tools/
     converter.py
+    generate_meta_yamls.py
     meta.yaml
