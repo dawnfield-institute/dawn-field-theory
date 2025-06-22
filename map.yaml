@@ -1,5 +1,6 @@
 dawn-field-theory/
   .gitignore
+  CONTRIBUTION.md
   INTENTIONS.md
   LICENSE
   LICENSE_APPENDIX.md
