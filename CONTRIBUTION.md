@@ -76,6 +76,9 @@ If you’d like to understand the philosophy and intentions behind this project,
 
 ---
 
+> **How to Use This Document:**  
+> This guide explains how to contribute to Dawn Field Theory, including both practical steps and the underlying philosophy. Contributions are valued from all backgrounds, and the project aims to balance open collaboration with a clear theoretical foundation.
+
 **Thank you.**
 
 — Lorne
