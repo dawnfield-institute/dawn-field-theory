@@ -8,6 +8,7 @@ Welcome to the root of it all! 🌱 This directory anchors the **core theories, 
 * `docs/` – 📘 Whitepapers and theoretical essays introducing the Dawn Field framework, recursive balance models, and collapse dynamics.
 * `experiments/` – 🧪 Simulation and modeling code with reproducible results exploring symbolic entropy, bifractal collapse, recursive gravity, and more.
 * `legacy_docs_archive/` – 🗂️ Historical documents outlining the philosophical and technical evolution of the framework.
+* `docs/empirical_alignment/` – 🔬 Comparative analyses aligning Dawn Field Theory with key quantum experiments and measurement phenomena.
 * `pi_harmonics/`, `recursive_entropy/`, `recursive_gravity/`, `recursive_tree/`, `symbolic_bifractal/` – 🎯 Specialized subdomains exploring harmonic structures, entropy management, gravitational recursion, symbolic collapse trees, and bifractal entropy propagation.
 * `whats_next.md` – 🔮 Roadmap and future research directions for expanding foundational insights.
 
