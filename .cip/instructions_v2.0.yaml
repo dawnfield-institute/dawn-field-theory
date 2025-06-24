@@ -9,6 +9,7 @@ description: |
   - The meta.yaml schema version is specified in each meta.yaml file as schema_version.
   - If a new meta.yaml schema is introduced, a new instructions_vX.Y.yaml file should be added here.
   - When gathering context or answering questions about any directory, always consider not just the base-level directory but also all subdirectories and their meta.yaml files, as subdirectories are crucial for full understanding.
+  - When resolving file or directory paths for navigation or data retrieval, always use map.yaml as the canonical source of truth for the repository structure. Do not rely on relative paths from meta.yaml; instead, cross-reference map.yaml to construct absolute or correct paths before fetching files.
 
 usage:
   - Always check the schema_version field in meta.yaml before parsing.

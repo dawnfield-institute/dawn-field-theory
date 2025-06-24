@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: empirical_alignment
+description: Empirical alignment documents connecting Dawn Field Theory to key quantum experiments and measurement phenomena.
+semantic_scope:
+  - empirical_alignment
+  - quantum_experiment
+  - empirical_validation
+  - theoretical_alignment
+files:
+  - Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md # Analysis of Hiroshima University's double-slit experiment and its alignment with Dawn Field Theory.
+  - Alignment_with_Measurement-Induced_Phase_Transitions.md # Relates measurement-induced phase transitions to recursive collapse and entropy regulation in Dawn Field Theory.
+  - Alignment_with_Quantum_Eraser.md # Connects quantum eraser experiments to symbolic memory and field-based epistemology in Dawn Field Theory.
+  - Alignment_with_Wheeler’sdelayed-choice.md # Discusses Wheeler’s delayed-choice experiment in the context of recursive field models and emergent intelligence.
+  - Alignment_with_ZeilingerArndt.md # Aligns Zeilinger/Arndt decoherence experiments with Dawn's symbolic geometry and entropy regulation.
+  - Alignment_with_flux_qubit.md # Examines flux qubit experiments and their implications for nonlocality and field resonance in Dawn Field Theory.
+  - Alignment_with_quantum_darwinism.md # Relates Quantum Darwinism to recursive symbolic collapse and field-based knowledge emergence.
+  - Alignment_with_serge_haroche.md # Connects Serge Haroche’s QND experiments to superfluid memory and recursive measurement in Dawn Field Theory.
+  - Alignment_with_weak_measurment_models.md # Discusses weak measurement models and their alignment with Dawn’s epistemic and symbolic framework.
+child_directories: []
