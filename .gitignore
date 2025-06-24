@@ -7,6 +7,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+*backlog/
+
 # Distribution / packaging
 .Python
 env/

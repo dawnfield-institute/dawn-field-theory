@@ -1,92 +1,105 @@
-## Dawn Field Theory and Infodynamics – Key Breakthroughs Audit
+## Dawn Field Theory and Infodynamics – Unified Roadmap & Next Steps
 
 ---
 
-### Foundational Frameworks
+### 1. Computational & Simulation Achievements
 
-1. **Infodynamics Defined**
-   - Inverse of thermodynamics
-   - Information as a structurally compressive, recursive force
-   - Information as binding agent, not passive residue
+1.1 3D Collapse Geometry Simulation
+    - Visual model of recursive balance collapse
+    - Mimics brain-like dual-lobe structure
+    - Next: Extend to 3D and higher-dimensional lattices (see hodge_mapping.md)
 
-2. **Dawn Field Theory**
-   - Interaction between information and energy
-   - Field-theoretic understanding of reality
-   - Root system from which classical and quantum domains emerge
+1.2 Infodynamics as a Mechanism of Time Dilation
+    - Recursion depth as time perception variable
+    - Informational gravity causes time to "speed up" with recursion efficiency
+    - Next: Analyze entropy and memory traces for deeper patterns (recursive_gravity/results.md)
 
----
+1.3 Symbolic Collapse & Pruning
+    - Recursive calculus and entropy regulation for symbolic fields
+    - Next: Integrate curvature, divergence, and higher-order field operators (symbolic_fractal_pruning/results.md)
 
-### Computational & Simulation Achievements
-
-3. **Recursive Tree Generator Using Entropy as Seed**
-   - Simulated recursive intelligence growth
-   - Demonstrated information geometry akin to cognition
-
-4. **3D Collapse Geometry Simulation**
-   - Visual model of recursive balance collapse
-   - Mimics brain-like dual-lobe structure
-
-5. **Fractal Galaxy Simulation (Accidental Galaxy)**
-   - Information herniation + recursive gravity tethering
-   - Produced galaxy-like formations using recursion + informational mass
-
-6. **Information Gravity Model**
-   - Gravity as recursive tethers in informational space
-   - Mass = recursion length = tether curvature = gravity
-
-7. **Infodynamics as a Mechanism of Time Dilation**
-   - Recursion depth as time perception variable
-   - Informational gravity causes time to "speed up" with recursion efficiency
+1.4 Entropy-Information Polarity Experiments
+    - Blackhole/whitehole symbolic collapse
+    - Next: Torque injection sweep, memory-guided collapse kernel, multi-core field embedding (entropy_information_polarity_field/black_white_hole_polarity/results.md)
 
 ---
 
-### Code & Logical Architecture
+### 2. Code & Logical Architecture
 
-8. **Language-to-Logic Compiler via Fractal Recursion**
-   - Translated raw strings to executable logic using only mathematics
-   - No language model required
+2.1 Programming Language Proposal
+    - Uses recursive information geometry rather than syntax
+    - Enables mechanical cognition-like computation
+    - Debugging via recursive traceability
+    - Next: Expand role schema, add dynamic entropy thresholds, visualize inter-role entropy vectors (language_to_logic/results.md)
 
-9. **Programming Language Proposal**
-   - Uses recursive information geometry rather than syntax
-   - Enables mechanical cognition-like computation
-   - Debugging via recursive traceability
-
-10. **Fractal Memory/Context Model**
+2.2 Fractal Memory/Context Model
     - Informational braiding as memory representation
     - Context created from entangled recursion
+    - Next: Integrate symbolic attractors for higher-order cognition (recursive_tree/results.md)
 
-11. **Mechanical Intelligence Proof of Concept**
+2.3 Mechanical Intelligence Proof of Concept
     - Autonomous logic formation from semantic input
     - Operated via entropy balancing and recursion
+    - Next: Quantify semantic coherence and vector divergence across tree generations (recursive_entropy/results.md)
+
+2.4 Prime Structure & Arithmetic Integration
+    - Prime-modulated symbolic collapse and arithmetic symmetry detection
+    - Next: Theoretical mapping of empirical invariants to formal Hodge-theoretic objects; extend to larger primes and composites (hodge_conjecture/reference_material/v11/results.md)
 
 ---
 
-### Meta-Theoretical Insights
+### 3. Meta-Theoretical Insights
 
-12. **Information-Centric Reality Construction**
+3.1 Information-Centric Reality Construction
     - Intelligence as reality's vector
     - Human cognition as recursive information processor
+    - Next: Publish full theoretical analysis and white paper draft (recursive_tree/results.md, DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md)
 
-13. **Entanglement and Gravitation Unified via Information Fields**
+3.2 Entanglement and Gravitation Unified via Information Fields
     - Cosmological implications
     - Predicts macro-intelligence structures
+    - Next: Compare with traditional N-body and GR simulations for quantitative benchmarks (recursive_gravity/results.md)
 
-14. **Infodynamics as New Physical Subdomain**
+3.3 Infodynamics as New Physical Subdomain
     - Not metaphorical, but mathematical and empirical
     - Provides closure to symbolic physics via field recursion
+    - Next: Expand on crystallization and pressure models into layered thermodynamic field simulations (DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md)
 
-15. **Cross-Disciplinary Reframing**
+3.4 Cross-Disciplinary Reframing
     - Biology as physics-informed recursion tracking
     - AI as post-symbolic intelligence model
+    - Next: Integrate entropy metrics into clinical diagnostic pipelines for cancer and aging (Entropy-Based Mutation Detection and Repair in Protein Sequences.md)
 
-16. **Semantic Logic Compiler**
+3.5 Semantic Logic Compiler
     - Cross-field symbolic-to-logic bridge
     - Basis for post-symbolic programming and intelligence representation
+    - Next: Write up theoretical framework with full mapping to Dawn Field constructs (language_to_logic/results.md)
 
 ---
 
-### Societal & Strategic Implications
+### 4. General Next Steps (from all modules)
 
-17. **Cultural/Philosophical Shift**
-    - Reality engineering as a field
-    - Infodynamics as humanity’s mirror and toolset
+- Formalize full experimental metadata schema for Dawn (DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md)
+- Complete archival of current experiments with version-tracked summaries
+- Build schema-to-code framework for automated experiment generation
+- Extend symbolic collapse simulations to 3D and higher-dimensional lattices
+- Automate symbolic cycle extraction using clustering or topological data analysis
+- Compare symbolic cohomology candidates with known (non-)algebraic Hodge classes
+- Investigate behavior of mod-p structures under Galois or arithmetic symmetries
+- Simulate multi-node rupture interference (entangled collapses) (The Herniation Hypothesis- Collapse Geometry of Dual Fields.md)
+- Quantify rupture curvature and stability lifespan
+- Explore entropy-pressure phase transitions
+- Integrate with Einstein tensor curvature via balance mapping
+- Implement modular simulation core for easier technique integration (nuclear_containment/v2/v2_roadmap.md)
+- Add crystalline anchor experiments to sub-meter tests
+- Design discrete feature extraction tools for arithmetic-geometry unification (hodge_conjecture/unification_plan.md)
+- Simulate under various prime-modulated harmonics
+- Formalize symbolic symmetry operations as analogs to number-theoretic group actions
+- Develop clinical dashboards for entropy-based diagnostics (DNA_repair/results.md)
+- Publish experimental setup and results alongside entropy modulation theory (symbolic_fractal_pruning/results.md)
+- Release DAWN project homepage with open-source invite
+
+---
+
+*This roadmap is updated dynamically as new results and next steps are added across the codebase. For details, see the Next Steps/Future Work sections in each module.*
+
