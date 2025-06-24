@@ -41,8 +41,8 @@ These documents are ideal for labs interested in theoretical grounding, experime
 
 ## ⚙️ Code & Models
 
-- [`models/CIMM/`](models/CIMM/README.md): The **Cosmic Information Mining Model** — a legacy AGI engine for entropy-informed agentic systems. Includes runnable experiments (e.g., stock prediction, prime structure modeling).
-- [`models/GAIA/`](models/GAIA/README.md): The **GAIA architecture** — a post-symbolic, field-based intelligence model with subsystems for field simulation, symbolic crystallization, resonance mesh communication, and meta-cognition.
+- [`models/CIMM/`](models/CIMM/README.md): The **Cosmic Information Mining Model** — a legacy AGI engine for entropy-informed agentic systems. The prime number structure experiment is operational; GPU enablement is in progress, and finance modeling experiments are temporarily offline during this transition.
+- [`models/GAIA/`](models/GAIA/README.md): The **GAIA architecture** — currently in the architecture and early development stage. Internal prototyping is ongoing; no runnable implementation is available yet.
 - [`cognition_index_protocol/`](cognition_index_protocol/): The **CIP** — a protocol for embedding, testing, and validating AI comprehension within codebases, supporting reflexive feedback and machine-native epistemology.
 
 All code is modular, documented, and designed for adaptation to new research questions.

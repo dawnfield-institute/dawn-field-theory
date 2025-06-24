@@ -124,6 +124,7 @@ It models cognition through:
 ## 🧠 CIMM: Legacy AGI Prototype (Sunset)
 
 CIMM (Cosmic Information Mining Model) was the first entropy-informed agentic system.  
+Currently, the prime number structure experiment is operational. GPU enablement is in progress, and some finance modeling experiments are temporarily offline during this transition.  
 Now preserved as a historical AGI engine.
 
 🗃️ [`models/CIMM/README.md`](./models/CIMM/README.md)
@@ -137,6 +138,8 @@ GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Fiel
 * Symbolic memory systems
 * Meta-cognitive trace protocols
 * Resonant agentic cognition
+
+> **Note:** GAIA is in the architecture and early development stage. Internal prototyping is ongoing; no runnable implementation is available yet.
 
 🌐 [`models/GAIA/README.md`](./models/GAIA/README.md)
 
