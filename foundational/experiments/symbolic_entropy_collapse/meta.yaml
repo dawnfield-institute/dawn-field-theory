@@ -1,0 +1,13 @@
+schema_version: '2.0'
+directory_name: symbolic_entropy_collapse
+description: Top-level experiment for symbolic entropy collapse studies.
+semantic_scope: foundational/experiments/symbolic_entropy_collapse
+files:
+- '[m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md'
+- '[x][F][v1.0][C1][I1]_symbolic_entropy_engine.py'
+child_directories:
+- reference_material
+title: Symbolic Entropy Collapse Experiment
+author: Lorne
+date: 2024-06-24
+date: 2024-06-24

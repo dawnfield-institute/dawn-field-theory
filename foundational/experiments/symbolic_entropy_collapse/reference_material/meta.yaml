@@ -1,0 +1,12 @@
+schema_version: '2.0'
+directory_name: reference_material
+title: Reference Material for Symbolic Entropy Collapse
+description: Reference material and data for symbolic entropy collapse experiments.
+author: Lorne
+date: 2024-06-24
+semantic_scope: foundational/experiments/symbolic_entropy_collapse/reference_material
+files: []
+child_directories:
+- '20250624_185441'
+child_directories:
+- '20250624_185441'

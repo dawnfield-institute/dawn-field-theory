@@ -1,0 +1,11 @@
+schema_version: '2.0'
+directory_name: Classical
+description: Classical model reference runs for symbolic entropy collapse.
+semantic_scope: foundational/experiments/symbolic_entropy_collapse/reference_material/20250624_185441/Classical
+files: []
+child_directories:
+- seed_101
+- seed_202
+- seed_303
+- seed_404
+- seed_42
