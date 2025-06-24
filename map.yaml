@@ -701,6 +701,7 @@ dawn-field-theory/
         meta.yaml
       meta.yaml
     lexicon.md
+    lexicon.yaml
     meta.yaml
     whats_next.md
   generate_path.py
