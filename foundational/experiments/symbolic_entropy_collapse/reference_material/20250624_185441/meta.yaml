@@ -1,0 +1,10 @@
+schema_version: '2.0'
+directory_name: '20250624_185441'
+description: Reference run performed on 2025-06-24 18:54:41 for symbolic entropy collapse.
+semantic_scope: foundational/experiments/symbolic_entropy_collapse/reference_material/20250624_185441
+files:
+- metadata.json
+child_directories:
+- Classical
+- Emergent
+- Emergent

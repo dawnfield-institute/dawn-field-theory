@@ -1,0 +1,23 @@
+[Emergent][Step 0] Entropy: 1.9998 Curvature: -0.0000
+[Emergent][Step 1] Entropy: 1.9679 Curvature: -0.0000
+[Emergent][Step 2] Entropy: 1.8981 Curvature: -0.0000
+[Emergent][Step 3] Entropy: 1.8138 Curvature: 0.0000
+[Emergent][Step 4] Entropy: 1.7324 Curvature: -0.0000
+[Emergent][Step 5] Entropy: 1.6486 Curvature: -0.0000
+[Emergent][Step 6] Entropy: 1.5746 Curvature: -0.0000
+[Emergent][Step 7] Entropy: 1.4937 Curvature: -0.0000
+[Emergent][Step 8] Entropy: 1.4147 Curvature: -0.0000
+[Emergent][Step 9] Entropy: 1.3419 Curvature: 0.0000
+[Emergent][Step 10] Entropy: 1.2723 Curvature: -0.0000
+[Emergent][Step 11] Entropy: 1.2035 Curvature: -0.0000
+[Emergent][Step 12] Entropy: 1.1280 Curvature: -0.0000
+[Emergent][Step 13] Entropy: 1.0431 Curvature: -0.0000
+[Emergent][Step 14] Entropy: 0.9573 Curvature: -0.0000
+[Emergent][Step 15] Entropy: 0.8680 Curvature: -0.0000
+[Emergent][Step 16] Entropy: 0.7849 Curvature: -0.0000
+[Emergent][Step 17] Entropy: 0.7121 Curvature: -0.0000
+[Emergent][Step 18] Entropy: 0.6527 Curvature: -0.0000
+[Emergent][Step 19] Entropy: 0.5865 Curvature: -0.0000
+[Emergent][Step 20] Entropy: 0.5130 Curvature: -0.0000
+[Emergent][Step 21] Entropy: 0.4482 Curvature: -0.0000
+[Emergent] Stopping at Step 21 — Reached entropy threshold 0.4482
