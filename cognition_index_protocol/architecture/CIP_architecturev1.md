@@ -20,7 +20,7 @@ This document outlines the complete architecture of CIP, including its file stru
 
 ```mermaid
 graph TD
-  A[repo.yaml metadata] --> B{Query received}
+  A[.cip/meta.yaml + map.yaml] --> B{Query received}
   B --> C[Metadata scan for matching files]
   C --> D[Selective file ingestion]
   D --> E[Build internal semantic model]
@@ -34,17 +34,23 @@ graph TD
 
 ---
 
-## 📂 CIP Directory Structure
+## 📂 CIP Directory Structure (v3)
 
 ```bash
 /your-repo/
-  repo.yaml                         # Metadata file describing repo structure
+  .cip/
+    meta.yaml                   # CIP metadata and current instructions version
+    instructions_v2.0.yaml      # Versioned schema/navigation instructions
+    filename_lexicon.yaml       # Tag definitions for filename metadata
+  map.yaml                      # Root-level plain directory/file map
   /cognition/
-    validation_questions.yaml      # Self-test question set
-    validation_answers.yaml        # Ground truth answer index (never ingested during reasoning)
-    rubric_criteria.json           # Optional rubric scoring guide
-    evaluate_cognition.py          # Script to run scoring loop
-    comprehension_log.json         # Output of scoring process
+    validation_questions.yaml   # Self-test question set
+    validation_answers.yaml     # Ground truth answer index (never ingested during reasoning)
+    rubric_criteria.json        # Optional rubric scoring guide
+    comprehension_log.json      # Output of scoring process
+  /models/
+  /experiments/
+  /docs/
 ```
 
 ---
@@ -53,22 +59,31 @@ graph TD
 
 ### Objective:
 
-Scan and classify content using `repo.yaml`, without loading large files unless necessary.
+Scan and classify content using `.cip/meta.yaml` and `map.yaml`, without loading large files unless necessary.
 
 ### Key Features:
 
-* Descriptions, semantic tags, and ingestion hints
+* Descriptions, semantic tags, and ingestion hints in `meta.yaml`
 * Context weight estimates
 * Ingestion flags (required vs optional)
+* Directory/file structure from `map.yaml`
+* Filename tags parsed using `.cip/filename_lexicon.yaml`
 
-### Example Entry:
+### Example Entry (`meta.yaml`):
 
 ```yaml
-- path: /models/core_model.py
-  description: Neural network implementing entropy field simulation.
-  semantic_tags: [neural-net, entropy, QBE]
-  ingestion_required: true
-  estimated_context_weight: medium
+schema_version: 2.0
+directory_name: models
+description: >
+  Core models for entropy field simulation and agent-based experiments.
+semantic_scope:
+  - neural-net
+  - entropy
+  - QBE
+files:
+  - [m][F][v1.0][C4][I5]_core_model.py
+  - [m][D][v0.3][C3][I3]_experimental_agent.py
+child_directories: []
 ```
 
 ### Benefits:
@@ -91,15 +106,15 @@ After planning, the AI ingests only relevant documents or code fragments. This p
 
 ---
 
-## 🔎 Phase 3: Self-Test via Validation Questions
+## 🔬 Phase 3: Self-Test via Validation Questions
 
-AI then attempts to answer a set of questions defined in `validation_questions.yaml`, without access to answers.
+AI then attempts to answer a set of questions defined in `cognition/validation_questions.yaml`, without access to answers.
 
 ### Example:
 
 ```yaml
 - id: QBE-01
-  target_files: [models/qbe_net.py, experiments/field_collapse.md]
+  target_files: [[m][F][v1.0][C4][I5]_core_model.py, experiments/field_collapse.md]
   question: >
     Describe how the QBE model dynamically regulates entropy in the simulation. Name any key functions or variables involved.
 ```
@@ -161,20 +176,50 @@ If comprehension score is low:
 
 ---
 
-## 🔄 Optional Enhancements
+## 🏷️ Filename Metadata Schema Protocol (v3)
 
-* **embedding\_hint** in `repo.yaml` for future vector search
-* **meta-evaluator agent** for score automation
-* **proficiency\_level** flag to modify test difficulty
+All files should use the bracket-based filename metadata schema:
+
+```
+[domain][type][version][complexity][importance][extras]_filename.ext
+```
+
+- **domain**: e.g., `[m]` (math), `[a]` (agent), `[id]` (infodynamics), etc.
+- **type**: `[D]` (draft), `[S]` (spec), `[F]` (final), `[T]` (test)
+- **version**: `[vX.Y]` (semantic version)
+- **complexity**: `[C1]` (trivial) to `[C5]` (expert)
+- **importance**: `[I1]` (optional) to `[I5]` (critical), `[core]`
+- **extras**: `[R]` (recursive), `[Q]` (quantum), `[E]` (entropy-driven), `[A]` (AI-interactive)
+
+See `.cip/filename_lexicon.yaml` for tag definitions.
 
 ---
 
-## 🌎 Future Applications
+## 🧩 Key Principles (v3)
 
-* AGI benchmarking via repo-level comprehension
-* Self-validating AI agents
-* Machine-native education interfaces
-* Peer-AI theory validation
+- **Uniformity:** Every directory, including the root, uses `meta.yaml` for metadata.
+- **Extensibility:** New fields and semantic domains can be added as the project evolves.
+- **Machine-Readability:** All metadata is YAML, designed for both human and LLM consumption.
+- **Maintainability:** Changes to schema or structure are tracked in `schema.yaml` for long-term integrity.
+- **Filename Metadata:** All files use bracket-based tags for self-describing, machine-parsable filenames.
+
+---
+
+## 🚀 Getting Started
+
+1. **Add a `meta.yaml` to every directory** (including the root) describing its contents and semantic context.
+2. **Add a `map.yaml`** at the root for a plain directory/file map.
+3. **Maintain and update `schema.yaml`** as schemas evolve.
+4. **Adopt the filename metadata schema** for all new and migrated files.
+
+---
+
+## 🔗 See Also
+
+- `.cip/filename_lexicon.yaml` (for filename tag definitions)
+- `schema.yaml` (for schema definitions and versioning)
+- Example `meta.yaml` templates in `/docs/metadata_examples/`
+- [Modular Metadata Architecture v3](../gpt/metadata_architecturev3.md)
 
 ---
 
@@ -199,5 +244,3 @@ CIP isn't just a new protocol for code comprehension. It is a **machine-native e
 This architecture builds the foundation for **trustworthy, interpretable, and verifiable machine intelligence**.
 
 > "Understanding must be measured, not assumed."
-
----

@@ -53,7 +53,7 @@
 3.1 Information-Centric Reality Construction
     - Intelligence as reality's vector
     - Human cognition as recursive information processor
-    - Next: Publish full theoretical analysis and white paper draft (recursive_tree/results.md, DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md)
+    - Next: Publish full theoretical analysis and white paper draft (recursive_tree/results.md, [m][S][v1.0][C3][I4]_dawn_field_theory_timed_summary.md)
 
 3.2 Entanglement and Gravitation Unified via Information Fields
     - Cosmological implications
@@ -63,7 +63,7 @@
 3.3 Infodynamics as New Physical Subdomain
     - Not metaphorical, but mathematical and empirical
     - Provides closure to symbolic physics via field recursion
-    - Next: Expand on crystallization and pressure models into layered thermodynamic field simulations (DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md)
+    - Next: Expand on crystallization and pressure models into layered thermodynamic field simulations ([m][S][v1.0][C3][I4]_dawn_field_theory_timed_summary.md)
 
 3.4 Cross-Disciplinary Reframing
     - Biology as physics-informed recursion tracking
@@ -79,14 +79,14 @@
 
 ### 4. General Next Steps (from all modules)
 
-- Formalize full experimental metadata schema for Dawn (DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md)
+- Formalize full experimental metadata schema for Dawn ([m][S][v1.0][C3][I4]_dawn_field_theory_timed_summary.md)
 - Complete archival of current experiments with version-tracked summaries
 - Build schema-to-code framework for automated experiment generation
 - Extend symbolic collapse simulations to 3D and higher-dimensional lattices
 - Automate symbolic cycle extraction using clustering or topological data analysis
 - Compare symbolic cohomology candidates with known (non-)algebraic Hodge classes
 - Investigate behavior of mod-p structures under Galois or arithmetic symmetries
-- Simulate multi-node rupture interference (entangled collapses) (The Herniation Hypothesis- Collapse Geometry of Dual Fields.md)
+- Simulate multi-node rupture interference (entangled collapses) ([m][F][v1.0][C4][I5]_herniation_hypothesis.md)
 - Quantify rupture curvature and stability lifespan
 - Explore entropy-pressure phase transitions
 - Integrate with Einstein tensor curvature via balance mapping
