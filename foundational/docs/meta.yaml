@@ -6,18 +6,18 @@ semantic_scope:
   - documentation
   - theory
 files:
-  - Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
-  - Bifractal Time Emergence.md
-  - DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md
-  - Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.md
-  - Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.md
-  - The Herniation Hypothesis- Collapse Geometry of Dual Fields.md
-  - Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework.md
-  - Title- Dawn Field Theory- The Recursive Balance Field as a Post-Stoic Potential in Schrödinger_s Equation.md
-  - Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.md
-  - pi_harmonics.md
-  - recursive_entopy.md
-  - recursive_tree.md
-  - super_fluid.md
+  - "[m][F][v1.0][C4][I5]_bifractal_time_emergence.md"
+  - "[m][S][v1.0][C3][I4]_dawn_field_theory_timed_summary.md"
+  - "[m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md"
+  - "[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md"
+  - "[m][F][v1.0][C4][I5]_herniation_hypothesis.md"
+  - "[m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md"
+  - "[m][F][v1.0][C4][I5]_dawn_field_theory_recursive_balance_field.md"
+  - "[m][F][v1.0][C4][I5]_recursive_balance_field.md"
+  - "[m][F][v1.0][C4][I5]_pi_harmonics.md"
+  - "[m][F][v1.1][C4][I5]_recursive_entopy.md"
+  - "[m][F][v1.0][C4][I4]_recursive_tree.md"
+  - "[m][F][v1.0][C4][I4]_super_fluid.md"
 child_directories:
   - docx
+  - empirical_alignment

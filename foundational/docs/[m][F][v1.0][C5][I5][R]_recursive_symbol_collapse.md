@@ -161,10 +161,10 @@ Such engines can operate on image, sound, or code fields, not just text. This mo
 
 # 6. Related Work
 
-* [Recursive Entropy Tree](./recursive_entopy.md)
-* [Pi-Harmonics in Symbolic Collapse](./pi_harmonics.md)
+* [Recursive Entropy Tree](./[m][F][v1.0][C4][I5]_pi_harmonics.md)
+* [Pi-Harmonics in Symbolic Collapse](./[m][F][v1.0][C4][I5]_pi_harmonics.md)
 * [Bifractal Collapse Fields](./Bifractal%20Time%20Emergence.md)
-* [Recursive Collapse Bifurcation](./recursive_tree.md)
+* [Recursive Collapse Bifurcation](./[m][F][v1.0][C4][I4]_recursive_tree.md)
 
 # 7. Quantitative Evaluation
 

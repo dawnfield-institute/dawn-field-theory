@@ -19,7 +19,7 @@ Welcome to the **library of Dawn Field Theory**! 📚 This directory houses the 
 
 * Supporting Theory:
 
-  * 🔢 `pi_harmonics.md`, `recursive_entopy.md`, `recursive_tree.md`, `super_fluid.md` – Complementary essays that support symbolic harmonics, recursive collapse, and informational fluidity.
+  * 🔢 `[m][F][v1.0][C4][I5]_pi_harmonics.md`, `[m][F][v1.0][C4][I5]_pi_harmonics.md`, `[m][F][v1.0][C4][I4]_recursive_tree.md`, `[m][F][v1.0][C4][I4]_super_fluid.md` – Complementary essays that support symbolic harmonics, recursive collapse, and informational fluidity.
 
 * `empirical_alignment/` – 🔬 Comparative studies aligning Dawn Field Theory with landmark quantum experiments (e.g., quantum eraser, delayed choice, decoherence, weak measurement, quantum Darwinism, flux qubits, and more).
 

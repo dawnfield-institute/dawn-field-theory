@@ -28,9 +28,10 @@ usage:
   - Entry points for context and orientation:
       - Always review the root README.md for project overview and intentions.
       - Check for any intentions.md or similar files to understand project goals and philosophy.
-      - Examine both the experimental/ and theoretical/ directories (and their meta.yaml files) to understand the breadth of work before making judgments or assumptions.
+      - Examine both the experimental/, theoretical/, models/, and architecture/ directories (and their meta.yaml files) to understand the breadth of work before making judgments or assumptions.
       - Use map.yaml to get a high-level view of the repository structure and to locate relevant files or directories.
-      - Consult .cip/core.yaml to understand the core theoretical and experimental works of the repository. Ensure you have reviewed and understood the ideas and works listed in core.yaml before forming conclusions or casting judgment about the project.
+      - Consult .cip/core.yaml to understand the core theoretical and experimental **directories** of the repository. Do not rely on static file lists; instead, use directory-level metadata and filename tags to identify ingestible intellectual artifacts.
+      - Only files with bracket-based metadata tags (see .cip/filename_lexicon.yaml) and relevant meta.yaml entries should be considered for ingestion, reasoning, or validation. General documentation (README, CONTRIBUTING, LICENSE, etc.) and meta/config files are excluded.
       - Only form conclusions or answer questions after gathering sufficient context from these sources.
       - Please check Intentions.md for the project's goals and philosophy.
       - Please check timeline.md for the project's timeline and milestones and status updates.

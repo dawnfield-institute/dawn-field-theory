@@ -140,3 +140,45 @@ dawn-field-theory/
 
 - `schema.yaml` (for schema definitions and versioning)
 - Example `meta.yaml` templates in `/docs/metadata_examples/`
+
+# Filename Metadata Schema Protocol for Dawn Field Repository
+
+This protocol defines a standardized, bracket-based filename format embedding essential metadata for all files in the Dawn Field repository.
+
+## Format
+
+```
+[domain][type][version][complexity][importance][extras]_filename.ext
+```
+
+- **domain**: e.g., `[m]` (math), `[a]` (agent), `[id]` (infodynamics), etc.
+- **type**: `[D]` (draft), `[S]` (spec), `[F]` (final), `[T]` (test)
+- **version**: `[vX.Y]` (semantic version)
+- **complexity**: `[C1]` (trivial) to `[C5]` (expert)
+- **importance**: `[I1]` (optional) to `[I5]` (critical), `[core]`
+- **extras**: `[R]` (recursive), `[Q]` (quantum), `[E]` (entropy-driven), `[A]` (AI-interactive)
+
+## Example
+
+```
+[m][D][v0.2][C3][I4][R]_recursive_entropy.md
+```
+
+## Guidelines
+
+- Use `.cip/filename_lexicon.yaml` for tag definitions.
+- Prefer clarity and brevity.
+- Limit path length to <250 characters.
+- Validation scripts will enforce compliance.
+
+## Integration
+
+- All new and migrated files should follow this schema.
+- CIP agents and scripts will parse these tags for semantic intent.
+
+## Scope
+
+Apply the bracket-based filename metadata schema **only** to files representing theoretical work, experiments, models, or architectural documents.  
+Do **not** apply to general documentation (README, CONTRIBUTING, etc.), licenses, or meta/config files.
+
+_Last updated: June 2025_

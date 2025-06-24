@@ -5,6 +5,19 @@ dawn-field-theory/
   LICENSE
   LICENSE_APPENDIX.md
   README.md
+  backlog/
+    meta.yaml
+    reference_material/
+      compare_20250622_215159/
+        comparison_trend.png
+        geometry_comparison.png
+        meta.yaml
+      compare_20250622_215351/
+        comparison_trend.png
+        geometry_comparison.png
+        meta.yaml
+      meta.yaml
+    test.py
   blueprints/
     LICENSE.md
     README.md
@@ -113,15 +126,21 @@ dawn-field-theory/
       meta.yaml
       symbolic_geometry_arithmetic.md
     docs/
-      Bifractal Time Emergence.md
-      DAWN FIELD THEORY _ TIMESTAMPED SUMMARY.md
       README.md
-      Reality as Herniation Precipitate- Quark Locking and the Crystallization of Dual Fields.md
-      Superfluid Informational Crystallization_ A Computational Framework for Emergent Structure in Energy-Information Fields.md
-      The Herniation Hypothesis- Collapse Geometry of Dual Fields.md
-      Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework.md
-      Title- Dawn Field Theory- The Recursive Balance Field as a Post-Stoic Potential in Schrödinger_s Equation.md
-      Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.md
+      [m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md
+      [m][F][v1.0][C4][I4]_recursive_tree.md
+      [m][F][v1.0][C4][I4]_super_fluid.md
+      [m][F][v1.0][C4][I5]_bifractal_time_emergence.md
+      [m][F][v1.0][C4][I5]_dawn_field_theory_recursive_balance_field.md
+      [m][F][v1.0][C4][I5]_herniation_hypothesis.md
+      [m][F][v1.0][C4][I5]_pi_harmonics.md
+      [m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md
+      [m][F][v1.0][C4][I5]_recursive_balance_field.md
+      [m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md
+      [m][F][v1.0][C5][I5][R]_recursive_symbol_collapse.md
+      [m][F][v1.1][C4][I5]_recursive_entopy.md
+      [m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
+      [m][S][v1.0][C3][I4]_dawn_field_theory_timed_summary.md
       docx/
         Alignment of Hiroshima University's Double-Slit Findings with Dawn Field.docx
         DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
@@ -133,24 +152,18 @@ dawn-field-theory/
         Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.docx
         meta.yaml
       empirical_alignment/
-        Alignment of Hiroshima University_s Double-Slit Findings with Dawn Field.md
-        Alignment_with_Measurement-Induced_Phase_Transitions.md
-        Alignment_with_Quantum_Eraser.md
-        Alignment_with_Wheeler’sdelayed-choice.md
-        Alignment_with_ZeilingerArndt.md
-        Alignment_with_flux_qubit.md
-        Alignment_with_quantum_darwinism.md
-        Alignment_with_serge_haroche.md
-        Alignment_with_weak_measurment_models.md
         README.md
+        [m][F][v1.0][C4][I4]_alignment_with_flux_qubit.md
+        [m][F][v1.0][C4][I4]_alignment_with_measurement_induced_phase_transitions.md
+        [m][F][v1.0][C4][I4]_alignment_with_quantum_darwinism.md
+        [m][F][v1.0][C4][I4]_alignment_with_quantum_eraser.md
+        [m][F][v1.0][C4][I4]_alignment_with_serge_haroche.md
+        [m][F][v1.0][C4][I4]_alignment_with_weak_measurement_models.md
+        [m][F][v1.0][C4][I4]_alignment_with_wheelers_delayed_choice.md
+        [m][F][v1.0][C4][I4]_alignment_with_zeilinger_arndt.md
+        [m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md
         meta.yaml
       meta.yaml
-      pi_harmonics.md
-      recursive_calculus_and_entropy_regulation.md
-      recursive_entopy.md
-      recursive_symbol_collapse.md
-      recursive_tree.md
-      super_fluid.md
     experiments/
       DNA_repair/
         DNA_repairer.py
