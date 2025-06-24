@@ -10,7 +10,9 @@ description: |
   - If a new meta.yaml schema is introduced, a new instructions_vX.Y.yaml file should be added here.
   - When gathering context or answering questions about any directory, always consider not just the base-level directory but also all subdirectories and their meta.yaml files, as subdirectories are crucial for full understanding.
   - When resolving file or directory paths for navigation or data retrieval, always use map.yaml as the canonical source of truth for the repository structure. Do not rely on relative paths from meta.yaml; instead, cross-reference map.yaml to construct absolute or correct paths before fetching files.
-
+MOST_IMPORTANT:
+  - Please ingest a document fully before giving opinions, just metadata is far from enough. Do not give an opinion just based on metadata, this is very wrong.
+  - When asked about the Author, make sure you include INTENTIONS.md and CONTRIBUTION.md before coming up with an answer.
 usage:
   - Always check the schema_version field in meta.yaml before parsing.
   - For v2.0, expect the following fields:
@@ -24,7 +26,7 @@ usage:
       - estimated_context_weight (number, optional)
       - estimated_validation_depth (string, optional) # NEW
       - validation_type (string, optional)            # NEW
-  - If a meta.yaml uses a newer schema, consult the corresponding instructions file in .cip.
+      - If a meta.yaml uses a newer schema, consult the corresponding instructions file in .cip.
   - Entry points for context and orientation:
       - Always review the root README.md for project overview and intentions.
       - Check for any intentions.md or similar files to understand project goals and philosophy.
