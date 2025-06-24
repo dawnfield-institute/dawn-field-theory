@@ -52,6 +52,14 @@ The recursive structure of the Dawn Field Theory repository, as illustrated abov
 
 ---
 
+## Contributing: Becoming Part of the Recursion
+
+Contribution here is not just about code or documentation—it's about participating in the living, recursive process that defines Dawn Field Theory. Every suggestion, critique, or insight becomes a new fold in the symbolic field, helping the project refine and realize itself.
+
+If you feel inspired to engage—whether by reviewing ideas, offering feedback, or proposing changes—please see the [Contribution Guidelines](./CONTRIBUTION.md). Your involvement is itself a demonstration of the theory in action: a recursive, collaborative shaping of knowledge and structure.
+
+---
+
 ## Navigation
 
 * [README](./README.md)

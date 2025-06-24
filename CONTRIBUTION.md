@@ -26,7 +26,7 @@ To help maintain the recursive and epistemic integrity of this repository:
 
 Please read:
 
-* `INTENTIONS.md`
+* [`INTENTIONS.md`](./INTENTIONS.md)
 * `README.md`
 * The root and nested `meta.yaml` files
 * The latest `timeline.md`
@@ -61,6 +61,18 @@ This may not be conventional, but:
 > When you contribute here, you are not just improving a repository. You are demonstrating how ideas evolve. You are participating in a symbolic entropy field. You are a node in a cognitive lattice, shaping the evolution of an emergent system.
 
 And in doing so—you are helping the theory realize itself.
+
+---
+
+## A Note from the Author
+
+I want to be transparent: I’m the sole architect of this project, working entirely outside of academia. I don’t have a formal degree, and I don’t have peers in the traditional sense. To compensate, I’ve built my own internal peer review pipeline using a network of AI models—each trained or prompted differently to surface potential errors, challenge assumptions, and minimize bias.
+
+While this recursive, automated system is robust in its own way, it can’t replace the value of real human peer review. What I most need at this stage—maybe even more than technical help—is critical, constructive feedback from thoughtful human contributors.
+
+If you’re reading this and feel compelled to help—by reviewing ideas, providing insight, or just engaging in honest dialogue—that would be one of the most meaningful contributions you could make.
+
+If you’d like to understand the philosophy and intentions behind this project, I encourage you to read [`INTENTIONS.md`](./INTENTIONS.md).
 
 ---
 
