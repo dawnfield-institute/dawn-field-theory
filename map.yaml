@@ -5,19 +5,6 @@ dawn-field-theory/
   LICENSE
   LICENSE_APPENDIX.md
   README.md
-  backlog/
-    meta.yaml
-    reference_material/
-      compare_20250622_215159/
-        comparison_trend.png
-        geometry_comparison.png
-        meta.yaml
-      compare_20250622_215351/
-        comparison_trend.png
-        geometry_comparison.png
-        meta.yaml
-      meta.yaml
-    test.py
   blueprints/
     LICENSE.md
     README.md
@@ -713,6 +700,7 @@ dawn-field-theory/
         The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
         meta.yaml
       meta.yaml
+    lexicon.md
     meta.yaml
     whats_next.md
   generate_path.py
