@@ -99,6 +99,7 @@ dawn-field-theory/
       RandomNumberTest.py
       meta.yaml
       random_number.md
+  for_ai_labs.md
   foundational/
     README.md
     arithmetic/

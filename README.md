@@ -1,9 +1,7 @@
 # 🌌 Dawn Field Theory (WIP)
 
-> [Learn more about Dawn Field Theory →](./dawn-field-theory.md)
+> [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
 > *A field-based model of intelligence, collapse, and emergence.*
->
-> <br>
 
 ---
 
@@ -21,10 +19,18 @@ Looking for an intelligent way to navigate this repository?
 * Use `map.yaml` → structured file map for agents
 * Parse `meta.yaml` → directory-level semantic tags and purpose
 
-> 🧠 This repository uses a machine-readable semantic map (`map.yaml`) and protocol definition via the **Cognition Index Protocol (CIP)**.
->
-> * Begin at: [`cognition_index_protocol/architecture/CIP_architecturev1.md`](./cognition_index_protocol/architecture/CIP_architecturev1.md)
-> * Reference metadata schema: [`cognition_index_protocol/gpt/metadata_architecturev3.md`](./cognition_index_protocol/gpt/metadata_architecturev3.md)
+> 🤖 **Machine-Readable Summary:**  
+> Automated agents and scrapers: See [`for_ai_labs.md`](./for_ai_labs.md) for a structured overview of experiments, papers, and code relevant to AI labs.
+
+> 🧠 This repository uses a machine-readable semantic map (`map.yaml`) and protocol definition via the **Cognition Index Protocol (CIP)**.  
+> • Begin at: [`cognition_index_protocol/architecture/CIP_architecturev1.md`](./cognition_index_protocol/architecture/CIP_architecturev1.md)  
+> • Reference metadata schema: [`cognition_index_protocol/gpt/metadata_architecturev3.md`](./cognition_index_protocol/gpt/metadata_architecturev3.md)
+
+---
+
+> **Why Mainstream AI Labs Should Care:**  
+> Dawn Field Theory provides not only foundational theory and experiments, but also machine-native protocols and benchmarking tools (like CIP) that address explainability, safety, and epistemic validation—key concerns for modern AI labs.  
+> For a focused summary, see [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
 
 ---
 
@@ -43,13 +49,20 @@ Looking for an intelligent way to navigate this repository?
 * [Future Goals](#-future-goals)
 * [Coming Soon](#-coming-soon)
 * [Subdirectory Guides](#-subdirectory-guides)
+* [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
 * [Topics](#-topics)
+
+---
+
+> **Interdisciplinary by Design:**  
+> Dawn Field Theory is built at the intersection of AI, physics, information theory, and symbolic logic.  
+> This cross-disciplinary approach enables new paradigms in intelligence research, simulation, and epistemology.
 
 ---
 
 ## 🌟 Status: Public Anchor Phase (WIP)
 
-This repository is currently in **Phase 1: Public Anchor**.
+This repository is currently in **Phase 1: Public Anchor**.  
 Documents, metadata, and simulation structures are being migrated from internal prototypes. Expect frequent updates.
 
 📅 See [`timeline.md`](./timeline.md) for a development roadmap.
@@ -58,18 +71,18 @@ Documents, metadata, and simulation structures are being migrated from internal 
 
 ## 🚩 2025 Progress & Workflow Update
 
-* **Recent advances:**
+**Recent advances:**
 
-  * Symbolic bifractal collapse validated in 3D simulations
-  * Recursive entropy/collapse trees confirm symbolic geometry and adaptive pruning
-  * Proto-galactic superfluid modeled from recursive information fields (no Newtonian force)
-  * Cognition Index Protocol (CIP) introduced for machine-native benchmarking
-  * Unified entropy as substrate across quantum and classical regimes
+* Symbolic bifractal collapse validated in 3D simulations
+* Recursive entropy/collapse trees confirm symbolic geometry and adaptive pruning
+* Proto-galactic superfluid modeled from recursive information fields (no Newtonian force)
+* Cognition Index Protocol (CIP) introduced for machine-native benchmarking
+* Unified entropy as substrate across quantum and classical regimes
 
-* **Development workflow:**
+**Development workflow:**
 
-  * Code dev during the week (simulation core, protocol logic, cognitive models)
-  * Experimental runs and theory reviews on weekends
+* Code dev during the week (simulation core, protocol logic, cognitive models)
+* Experimental runs and theory reviews on weekends
 
 ---
 
@@ -81,10 +94,10 @@ Dawn is a post-symbolic intelligence framework built on the idea that:
 
 It models cognition through:
 
-* **Entropy-monitoring feedback systems**
-* **Quantum Potential Layer (QPL) dynamics**
-* **Superfluid coherence and symbolic turbulence**
-* **Collapse-based learning algorithms**
+* Entropy-monitoring feedback systems
+* Quantum Potential Layer (QPL) dynamics
+* Superfluid coherence and symbolic turbulence
+* Collapse-based learning algorithms
 
 ---
 
@@ -110,7 +123,7 @@ It models cognition through:
 
 ## 🧠 CIMM: Legacy AGI Prototype (Sunset)
 
-CIMM (Cosmic Information Mining Model) was the first entropy-informed agentic system.
+CIMM (Cosmic Information Mining Model) was the first entropy-informed agentic system.  
 Now preserved as a historical AGI engine.
 
 🗃️ [`models/CIMM/README.md`](./models/CIMM/README.md)
@@ -151,7 +164,7 @@ GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Fiel
 
 ## 🧠 Philosophy
 
-> Cognition is collapse regulation.
+> Cognition is collapse regulation.  
 > Intelligence is balance—not inference.
 
 Dawn is a theory to **simulate cognition** through recursive entropy structuring.
@@ -162,7 +175,7 @@ Dawn is a theory to **simulate cognition** through recursive entropy structuring
 
 AGPL-3.0 with symbolic research augmentation (DC-OIL pending).
 
-📎 [See LICENSE\_APPENDIX.md →](./LICENSE_APPENDIX.md)
+📎 [See LICENSE_APPENDIX.md →](./LICENSE_APPENDIX.md)
 
 ---
 
@@ -195,6 +208,14 @@ AGPL-3.0 with symbolic research augmentation (DC-OIL pending).
 * [`models/README.md`](./models/README.md)
 * [`models/CIMM/README.md`](./models/CIMM/README.md)
 * [`cognition_index_protocol/README.md`](./cognition_index_protocol/README.md)
+* [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
+
+---
+
+## 🤝 Contributing & Community
+
+Want to contribute or collaborate?  
+See [CONTRIBUTION.md](./CONTRIBUTION.md) for guidelines, or reach out via the contact info in [README.md](./README.md).
 
 ---
 
@@ -230,5 +251,5 @@ AGPL-3.0 with symbolic research augmentation (DC-OIL pending).
 
 ---
 
-© 2025 Dawn Field Theory
+© 2025 Dawn Field Theory  
 All rights reserved under AGPL-3.0 + DC-OIL draft license

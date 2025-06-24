@@ -72,3 +72,6 @@ If you feel inspired to engage—whether by reviewing ideas, offering feedback, 
 © 2025 Dawn Field Theory. See [LICENSE\_APPENDIX.md](./LICENSE_APPENDIX.md).
 
 — Lorne
+
+> **Note:**  
+> This document shares the personal motivations and guiding philosophy behind Dawn Field Theory. While the project is deeply personal, it is also structured for rigorous, collaborative research. All are welcome—whether you are an academic, industry professional, or independent explorer.
