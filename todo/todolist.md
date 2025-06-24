@@ -8,6 +8,8 @@
 
 * [ ] Complete the repository migration using the tasks outlined in `whatsnext.md`; validate realignment of directories to match the new schema, check symbolic link integrity across environments, confirm consistent `meta.yaml` usage across branches, archive or adapt legacy content, and update all scripts for new path structures and semantic tag mappings.
 
+* [] Finish CIMM GPU migration, getting all usecases finished is a top priority.
+
 ---
 
 ### 🧠 ACTIVE RESEARCH & WRITING PIPELINE
