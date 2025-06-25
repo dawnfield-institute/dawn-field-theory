@@ -1,0 +1,28 @@
+Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*.
+Landauer, R. (1961). Irreversibility and heat generation in the computing process. *IBM Journal of Research and Development*.
+Jaynes, E. T. (1957). Information theory and statistical mechanics. *Physical Review*.
+Bennett, C. H. (1982). The thermodynamics of computation—a review. *International Journal of Theoretical Physics*.
+Lloyd, S. (2006). *Programming the Universe: A Quantum Computer Scientist Takes on the Cosmos*. Vintage.
+Holland, J. H. (1992). *Adaptation in Natural and Artificial Systems*. MIT Press.
+Kauffman, S. (1993). *The Origins of Order: Self-Organization and Selection in Evolution*. Oxford University Press.
+Wolfram, S. (2002). *A New Kind of Science*. Wolfram Media.
+Maturana, H. R., & Varela, F. J. (1980). *Autopoiesis and Cognition: The Realization of the Living*. D. Reidel.
+Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society*.
+Gödel, K. (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. *Monatshefte für Mathematik und Physik*.
+Chaitin, G. J. (1974). Information-theoretic limitations of formal systems. *Journal of the ACM*.
+Spencer-Brown, G. (1969). *Laws of Form*. Allen & Unwin.
+Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature*.
+Hebb, D. O. (1949). *The Organization of Behavior*. Wiley.
+Eliasmith, C., & Anderson, C. H. (2003). *Neural Engineering: Computation, Representation, and Dynamics in Neurobiological Systems*. MIT Press.
+Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*.
+Tegmark, M. (2000). Importance of quantum decoherence in brain processes. *Physical Review E*.
+Penrose, R. (1989). *The Emperor's New Mind*. Oxford University Press.
+Bekenstein, J. D. (2003). Information in the holographic universe. *Scientific American*.
+Mandelbrot, B. B. (1982). *The Fractal Geometry of Nature*. W. H. Freeman.
+Atiyah, M. F. (1970). *Global Theory of Elliptic Operators*. Cambridge University Press.
+Hodge, W. V. D. (1941). *The Theory and Applications of Harmonic Integrals*. Cambridge University Press.
+Baez, J., & Stay, M. (2011). Physics, topology, logic and computation: A Rosetta Stone.
+Schmidhuber, J. (2009). Simple algorithmic principles of discovery, subjective beauty, selective attention, curiosity & creativity. *IEEE Transactions on Autonomous Mental Development*.
+Pearl, J. (1988). *Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference*. Morgan Kaufmann.
+Hofstadter, D. R. (1979). *Gödel, Escher, Bach: An Eternal Golden Braid*. Basic Books.
+Cahill, R. T. (2005). Process physics: From information theory to quantum space and matter.
