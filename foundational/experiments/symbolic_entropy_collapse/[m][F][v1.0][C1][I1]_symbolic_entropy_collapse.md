@@ -79,10 +79,13 @@ We implement a modular Python simulation engine that supports:
 
 **Figures:**
 
-* ![Entropy Curves](reference_material/20250624_185441/entropy_curves.png)
-* ![Curvature Slices](reference_material/20250624_185441/curvature_slices.png)
-* ![Field Snapshots](reference_material/20250624_185441/field_snapshots.png)
-* ![Symbolic Distribution](reference_material/20250624_185441/symbol_distribution_over_time.png)
+* [Entropy Trace (Emergent, seed 101)](reference_material/20250624_185441/Emergent/seed_101/entropy_trace.csv)
+* [Entropy Trace (Classical, seed 202)](reference_material/20250624_185441/Classical/seed_202/entropy_trace.csv)
+* ![Curvature Slice (Axis 0, Step 0)](reference_material/20250624_185441/Classical/seed_101/curvature_slice_axis0_step0.png)
+* ![Curvature Slice (Axis 0, Step 50)](reference_material/20250624_185441/Classical/seed_101/curvature_slice_axis0_step50.png)
+* ![Symbolic Distribution (Step 0)](reference_material/20250624_185441/Classical/seed_101/symbol_distribution_step_0.png)
+* ![Symbolic Distribution (Step 99)](reference_material/20250624_185441/Classical/seed_101/symbol_distribution_step_99.png)
+* ![Field Snapshot (Curvature Axis 1, Step 50)](reference_material/20250624_185441/Classical/seed_101/curvature_slice_axis1_step50.png)
 
 **5. Discussion**
 
