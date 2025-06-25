@@ -11,6 +11,15 @@ Rather than relying solely on surface-level metadata or static documentation, CI
 
 This marks a step toward **machine-native epistemology** — where AI can not only read code, but interpret it meaningfully, reflect on it, and assess its own level of understanding.
 
+> **Note:**  
+> The first real-world adoption of CIP was not a planned test, but a happy accident: an external AI agent (GitHub Copilot) organically recognized and engaged with the protocol, without any explicit integration or prompting. This serendipitous event demonstrates CIP’s clarity and machine-readability in practice.
+
+---
+
+## 1.1. Should We Compare Pre- and Post-CIP?
+
+Given this organic adoption, it may be valuable to conduct a formal comparison between agentic behavior in repositories **with** and **without** CIP. Such a test could highlight the protocol’s impact on machine comprehension, reflexivity, and epistemic rigor.
+
 ---
 
 ## 2. Core Components

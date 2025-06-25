@@ -4,7 +4,12 @@
 
 ## 1. Overview
 
-This case study documents a real-world instance in which the **Cognition Index Protocol (CIP)**, as designed and documented within the Dawn Field Theory codebase, was **organically adopted and enacted by an external AI agent (GitHub Copilot)**—without any custom programming or explicit integration. This event provides a compelling demonstration of CIP’s clarity, universality, and practical value as a machine-native epistemic protocol.
+This case study documents a real-world instance in which the **Cognition Index Protocol (CIP)**, as designed and documented within the Dawn Field Theory codebase, was **organically adopted and enacted by an external AI agent (GitHub Copilot)**—without any custom programming or explicit integration. 
+
+> **This was not a planned test, but a happy accident:**  
+> The AI agent independently recognized and followed CIP, demonstrating the protocol’s practical clarity and universality.
+
+This event provides a compelling demonstration of CIP’s clarity, universality, and practical value as a machine-native epistemic protocol.
 
 ---
 
