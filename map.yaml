@@ -80,6 +80,11 @@ dawn-field-theory/
       prompt.txt
     meta.yaml
   dawn-field-theory.md
+  citations/
+    external_citations.md
+    citations_bibtex.bib
+    citations_apa.txt
+  external_citations.md
   devkit/
     README.md
     compression/
