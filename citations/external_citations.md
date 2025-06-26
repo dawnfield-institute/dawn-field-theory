@@ -56,9 +56,4 @@ This document collects foundational external works referenced or aligned with th
 
 ---
 
-### Suggestions for Further Improvement
 
-* **Add DOIs or Links:**  Where possible, include DOIs or URLs for easier access.
-* **Highlight Direct Citations:**  Consider marking which works are directly cited in your theory/experiment docs versus those that are more broadly influential.
-* **Expand as Needed:**  As you publish preprints or reference new works, keep this list updated.
-* **Optional:**  If you want to support formal academic publishing, consider a BibTeX or APA-formatted version for easy import into papers.
