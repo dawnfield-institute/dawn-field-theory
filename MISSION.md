@@ -68,7 +68,7 @@ This project was created outside the academic domain—but it seeks peer review 
 
 If you’re reading this and feel called to contribute symbolically, critically, or recursively—you are most welcome.
 
-Until contributions formally open, dialogue and commentary are deeply valued. Email **info@dawnfield.ca** or follow the updates at [dawnfield.ca](https://dawnfield.ca).
+Until contributions formally open, dialogue and commentary are deeply valued. Email **info@dawnfield.ca** or follow the updates at [dawnfield.ca](https://dawnfield.ca)(Currently working on getting this up).
 
 ---
 
