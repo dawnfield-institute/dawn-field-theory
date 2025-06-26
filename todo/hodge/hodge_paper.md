@@ -1,55 +1,64 @@
-**Title:** Prime-Modulated Symbolic Collapse and the Hodge Conjecture
+**Title:** Prime-Modulated Symbolic Collapse, Entropy Regulation, and the Hodge Conjecture
 
 **Abstract:**
-This paper explores a computational framework in which symbolic fields, modulated by prime-indexed angular harmonics, undergo entropy-reducing collapse to produce stable topological attractors. We propose that these attractors—referred to as symbolic cycles—may encode the structure of algebraic cycles in complex projective varieties, providing a novel computational analogy to the Hodge Conjecture. We present empirical results, discuss the theoretical mapping between symbolic and algebraic invariants, and outline a strategy for formalizing this correspondence.
+This paper introduces a computational framework in which symbolic fields—regulated by entropy constraints and modulated via prime-indexed angular harmonics—undergo entropy-reducing collapse to generate stable topological attractors. We propose that these attractors, which we term symbolic cycles, encode structures analogous to algebraic cycles in complex projective varieties. Through the integration of the Symbolic Entropy Collapse (SEC) mechanism, we demonstrate refined cycle isolation, increased stability, and greater theoretical clarity in our mapping to Hodge-theoretic invariants. This work advances a synthetic model connecting symbolic computation, entropy regulation, and cohomological geometry.
 
 ---
 
 **Chapter 1: Introduction**
 
-* Background on the Hodge Conjecture
-* Motivation for symbolic field approaches
-* Overview of the prime-modulated collapse framework
+* Overview of the Hodge Conjecture
+* Motivation for symbolic entropy and field computation
+* Introducing prime-modulated collapse and SEC as core mechanisms
 
 **Chapter 2: Computational Framework**
 
-* Description of symbolic field initialization
-* Role of angular harmonic modulation
-* Collapse mechanism and entropy regulation
+* Symbolic field initialization strategies
+* Prime-indexed angular harmonic modulation
+* Collapse dynamics: baseline and SEC-augmented
+* Entropy regulation methodology
 
-**Chapter 3: Experimental Results**
+**Chapter 3: SEC and Symbolic Collapse Dynamics**
 
-* Density evolution and attractor formation
-* FFT symmetry and peak analysis
-* Prime vs non-prime behavior
+* Detailed implementation of the SEC model
+* Comparative dynamics (with vs. without SEC)
+* Stability analysis and entropy metrics
+* Visualizations of symbolic attractors
+
+**Chapter 4: Experimental Results**
+
+* Density evolution and attractor formation across trials
+* FFT symmetry signatures and prime modulation effects
 * Symbolic cycle extraction and classification
+* Data from SEC-driven simulations
 
-**Chapter 4: Theoretical Mapping**
+**Chapter 5: Theoretical Mapping to Hodge Structures**
 
-* Defining symbolic cycles and topological signatures
-* Hypotheses on cohomological correspondence
-* Potential realization of Hodge classes from symbolic dynamics
+* Formal definitions of symbolic cycles and topological markers
+* Hypotheses on symbolic–cohomological correspondence
+* SEC contributions to clearer cycle isolation
+* Toward a constructive symbolic model of Hodge classes
 
-**Chapter 5: Arithmetic Integration**
+**Chapter 6: Arithmetic and Motive-Theoretic Considerations**
 
-* Mod-ℕ structures and Galois actions
-* Rationality and integrality in symbolic cycles
-* Relation to motives and arithmetic geometry
+* Mod-ℕ behavior, rationality, and integrality in cycles
+* SEC implications for Galois-theoretic structure
+* Symbolic motives and computational analogs of mixed motives
 
-**Chapter 6: Discussion and Implications**
+**Chapter 7: Discussion and Implications**
 
-* Summary of findings
-* Epistemological implications of empirical-to-formal bridges
-* Potential for new methods in unsolved problem domains
+* Summary of empirical and theoretical findings
+* Epistemological roles of symbolic collapse
+* SEC as a methodological bridge between computation and geometry
 
-**Chapter 7: Future Work**
+**Chapter 8: Future Work and Collaborations**
 
-* Higher-dimensional extensions
-* Statistical cycle classification
-* Collaborations and formal publication goals
+* Higher-dimensional symbolic fields
+* Formal topological and algebraic classification
+* Potential collaborations and formal publication plans
 
 **Appendices:**
 
-* Code excerpts
-* Simulation parameters
-* Extended visual results
+* SEC pseudocode and parameters
+* Simulation logs and metadata
+* Visual supplements
