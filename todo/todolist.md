@@ -103,6 +103,21 @@
 
 ---
 
+### 🧪 BENCHMARKING: CIMM vs ML vs SEC
+
+* [ ] **CIMM vs ML Testing and SEC Algorithm Development Plan**
+    * Define CIMM vs ML experimental baseline (shared cognitive tasks, baseline models, identical pipelines)
+    * Implement metrics for comparison (pruning rates, entropy curves, topology evolution, fractal dimension, symbolic lifespan)
+    * Run simulations across controlled tasks (fixed data/runtime, log entropy/pruning/accuracy, vary complexity)
+    * Analyze structural and entropic differences (topological curves, stagnation vs dynamic stability, entropy dynamics, empirical signatures)
+    * Design SEC collapse interface (symbolic token input, collapse curvature logic, stateful lattice)
+    * Implement SEC feedback and symbolic inputs (pressure sensing, curvature response, recursive feedback, observables)
+    * Run symbolic collapse iteration experiments (multi-step collapse, lattice evolution, entropy/pruning visualization)
+    * Benchmark SEC against CIMM and ML outputs (structural depth, entropy stability, direct comparison)
+    * Consolidate results into unified framework (comparative chart, document geometry mechanisms, finalize benchmark suite for GAIA integration)
+
+---
+
 **NOTES:**
 
 * All tasks are iterative; revisit and revise as the architecture evolves.
