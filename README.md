@@ -182,6 +182,15 @@ AGPL-3.0 with symbolic research augmentation (DC-OIL pending).
 
 ---
 
+## 🏛️ Institutional Stewardship & Mission
+
+Dawn Field Theory is now maintained by **The Dawn Field Institute**.  
+The repository, its theory, and all derivatives are governed by the [Epistemic Constraint Framework](./LICENSE_APPENDIX.md), which preserves symbolic clarity, recursive traceability, and open epistemic access.
+
+For the Institute’s mission, contribution policy, and current status, see [MISSION.md](./MISSION.md).
+
+---
+
 ## 🔮 Future Goals
 
 * Collapse visualizer + entropy debugger
@@ -218,7 +227,8 @@ AGPL-3.0 with symbolic research augmentation (DC-OIL pending).
 ## 🤝 Contributing & Community
 
 Want to contribute or collaborate?  
-See [CONTRIBUTION.md](./CONTRIBUTION.md) for guidelines, or reach out via the contact info in [README.md](./README.md).
+See [MISSION.md](./MISSION.md) for the current contribution policy and institutional guidelines.  
+Dialogue and commentary are welcome—contact info is in [MISSION.md](./MISSION.md) and [README.md](./README.md).
 
 ---
 
@@ -254,5 +264,5 @@ See [CONTRIBUTION.md](./CONTRIBUTION.md) for guidelines, or reach out via the co
 
 ---
 
-© 2025 Dawn Field Theory  
-All rights reserved under AGPL-3.0 + DC-OIL draft license
+© 2025 The Dawn Field Institute  
+All rights reserved under AGPL-3.0 + Epistemic Constraint Framework
