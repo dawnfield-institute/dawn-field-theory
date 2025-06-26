@@ -331,146 +331,67 @@ Submission of discrete sections to peer-reviewed venues in symbolic dynamics, ma
 
 ## Appendices
 
-* SEC simulation code and parameter descriptions
-* Hodge field analysis outputs (plots, logs, metrics)
-* Symbolic cycle catalog from all trials
-* Annotated references to foundational theoretical manuscripts
-* External references from symbolic dynamics and computational geometry added in main text
+### Appendix A: SEC Simulation Code and Parameters
 
----
-
-## Related Work
-
-This work is situated at the intersection of symbolic dynamics, computational topology, and Hodge theory. In symbolic dynamics, foundational texts such as Lind & Marcus (1995) have established the mathematical framework for symbolic systems and coding, which underpins the symbolic field models used here. Computational topology, as developed by Edelsbrunner & Harer (2010) and Ghrist (2008), provides the tools for extracting and analyzing persistent structures (cycles, attractors) from data, directly informing our approach to symbolic cycle detection and analysis.
-
-In the context of algebraic geometry and Hodge theory, the mapping of symbolic cycles to cohomology classes draws inspiration from the work of Grothendieck (1966) and Voisin (2002), who formalized the relationship between algebraic cycles and Hodge structures. Recent advances in motivic homotopy theory (Ayoub, 2014) and the study of barcodes in persistent homology (Ghrist, 2008) further motivate the computational analogies explored in this paper.
-
-By synthesizing these threads, our work proposes a novel computational framework that leverages entropy dynamics to surface geometric invariants, offering a new perspective on the emergence of cohomological structure from symbolic processes.
-
----
-
-## Worked Example: Symbolic-to-Hodge Mapping
-
-To illustrate the symbolic-to-Hodge mapping, consider a symbolic field `F` evolving under SEC dynamics with prime-modulated collapse. After sufficient iterations, persistent low-entropy regions emerge, forming symbolic cycles.
-
-**Step 1:**  
-Extract a symbolic cycle `c` from `F` by thresholding on entropy and recurrence:
-
-```
-c = { (i, j) | S(i, j) < tau,  R(i, j) > rho }
-```
-
-**Step 2:**  
-Compute the ancestry trace and harmonic signature of `c`, yielding a vector of symbolic invariants.
-
-**Step 3:**  
-Map `c` to a cohomology class via the symbolic-Hodge map:
-
-```
-phi_k(c) in H^{k,k}(X) ∩ H^{2k}(X, Q)
-```
-where the mapping is determined by the cycle's persistence, harmonic content, and integrality (validated by `psi(c)`).
-
-**Schematic:**
-
-1. **Symbolic Field `F`**  
-2. **Collapse & Pruning**  
-3. **Cycle Extraction (`c`)**  
-4. **Ancestry/Harmonic Analysis**  
-5. **Symbolic-Hodge Map (`phi_k`)**  
-6. **Cohomology Class `omega in H^{k,k}(X) ∩ H^{2k}(X, Q)`**
-
-This example demonstrates how computational symbolic processes can be systematically related to classical geometric invariants.
-
-## Appendices
-Appendix A: SEC Simulation Code and Parameters
 This appendix includes critical source files used to execute symbolic entropy collapse and bifractal pruning:
 
-symbolic_entropy_engine.py: core entropy minimization and symbolic update engine
+- `symbolic_entropy_engine.py`: core entropy minimization and symbolic update engine
+- `prime_modulated_collapsev11.py`: field harmonics via prime-indexed modulation
+- `symbolic_bifractal_expansion_v1.py`, `v2.py`: recursive pruning mechanisms
+- `hodge_field_simulation.py`: symbolic-to-geometric field experiments
 
-prime_modulated_collapsev11.py: field harmonics via prime-indexed modulation
+**Parameter defaults:**
 
-symbolic_bifractal_expansion_v1.py, v2.py: recursive pruning mechanisms
+- Grid size: 256 × 256
+- Symbolic alphabet: {0, 1, 2}
+- Entropy threshold: 0.55
+- Angular modulation: θ = pπ with p ∈ {3, 5, 7, 11}
 
-hodge_field_simulation.py: symbolic-to-geometric field experiments
+---
 
-Parameter defaults:
+### Appendix B: Hodge Field Analysis Outputs
 
-Grid size: 
-256
-×
-256
-256×256
-
-Symbolic alphabet: {0, 1, 2}
-
-Entropy threshold: 0.55
-
-Angular modulation: 
-𝜃
-=
-𝑝
-𝜋
-θ=pπ with 
-𝑝
-∈
-{
-3
-,
-5
-,
-7
-,
-11
-}
-p∈{3,5,7,11}
-
-Appendix B: Hodge Field Analysis Outputs
 This section includes selected figures, metrics, and logs from simulations:
 
-Entropy decay graphs
+- Entropy decay graphs
+- FFT spectra from prime and non-prime trials
+- Symbolic recurrence maps
+- Collapse ancestry trees (JSON format)
 
-FFT spectra from prime and non-prime trials
+All visualizations and structured data files are archived in `results.md`.
 
-Symbolic recurrence maps
+---
 
-Collapse ancestry trees (JSON format)
+### Appendix C: Symbolic Cycle Catalog
 
-All visualizations and structured data files are archived in results.md.
-
-Appendix C: Symbolic Cycle Catalog
 This includes symbolic attractors identified across all trials, with annotations for:
 
-Recurrence rate
-
-Local entropy
-
-Geometric symmetry (radial, lattice, spiral)
-
-Symbolic homology class (conjectural)
+- Recurrence rate
+- Local entropy
+- Geometric symmetry (radial, lattice, spiral)
+- Symbolic homology class (conjectural)
 
 Each entry includes field slice images and code to regenerate cycles.
 
-Appendix D: Annotated Theory References
+---
+
+### Appendix D: Annotated Theory References
+
 This appendix summarizes and references key foundational documents and operator definitions:
 
-- [infodynamics_arithmetic_v1.md](../arithmetic/infodynamics_arithmetic_v1.md): Defines ⊕, ⊗, δ, [I:H], Ψ(Σ), and the structural evolution equation. Diagnostics: collapse_balance_field_score, average_branching_factor. Validation: recursive_entopy.py, recursive_tree.py.
+- [infodynamics_arithmetic_v1.md](../arithmetic/infodynamics_arithmetic_v1.md): Defines ⊕, ⊗, δ, [I:H], Ψ(Σ), and the structural evolution equation. Diagnostics: `collapse_balance_field_score`, `average_branching_factor`. Validation: `recursive_entopy.py`, `recursive_tree.py`.
 - [symbolic_geometry_arithmetic.md](../arithmetic/symbolic_geometry_arithmetic.md): Collapse pressure Π(x, y), entropy modulation γ(x, y), recursive balance R(x, y), symbolic prune and drift operators. Diagnostics: entropy maps, active symbol ratio, persistence distributions.
 - [hodge_mapping.md](../arithmetic/hodge_mapping/v0.1/hodge_mapping.md): Symbolic-to-Hodge map φ_k, rationality/integrality test ψ, symbolic cycle extraction Z(F), mapping to cohomology classes. Validation: symbolic field attractor analysis, mod-p stability, FFT harmonic coherence.
 
-References
-Deligne, P. (1971). Théorie de Hodge. II. Publications Mathématiques de l'IHÉS, 40, 5–57.
+---
 
-Griffiths, P., & Harris, J. (1978). Principles of Algebraic Geometry. Wiley-Interscience.
+## References
 
-Weil, A. (1949). Numbers of solutions of equations in finite fields. Bulletin of the American Mathematical Society, 55(5), 497–508.
-
-Shannon, C. E. (1948). A mathematical theory of communication. Bell System Technical Journal, 27(3), 379–423.
-
-Mumford, D. (1970). Abelian Varieties. Oxford University Press.
-
-Voevodsky, V. (2000). Triangulated categories of motives over a field. In Cycles, Transfers, and Motivic Homology Theories (pp. 188–238). Princeton University Press.
-
-Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. Problems of Information Transmission, 1(1), 1–7.
-
-Grothendieck, A. (1966). On the de Rham cohomology of algebraic varieties. IHÉS.
+- Deligne, P. (1971). Théorie de Hodge. II. Publications Mathématiques de l'IHÉS, 40, 5–57.
+- Griffiths, P., & Harris, J. (1978). Principles of Algebraic Geometry. Wiley-Interscience.
+- Weil, A. (1949). Numbers of solutions of equations in finite fields. Bulletin of the American Mathematical Society, 55(5), 497–508.
+- Shannon, C. E. (1948). A mathematical theory of communication. Bell System Technical Journal, 27(3), 379–423.
+- Mumford, D. (1970). Abelian Varieties. Oxford University Press.
+- Voevodsky, V. (2000). Triangulated categories of motives over a field. In Cycles, Transfers, and Motivic Homology Theories (pp. 188–238). Princeton University Press.
+- Kolmogorov, A. N. (1965). Three approaches to the quantitative definition of information. Problems of Information Transmission, 1(1), 1–7.
+- Grothendieck, A. (1966). On the de Rham cohomology of algebraic varieties. IHÉS.
