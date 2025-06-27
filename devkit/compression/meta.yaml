@@ -6,8 +6,8 @@ semantic_scope:
   - compression
   - devkit
 files:
-  - CompressionTest2.py
-  - Compression_test1.py
-  - EntropicCompression_test.py
-  - compressiondoc.md
-child_directories: []
+  - FractalIntrinsicMetadataCompression.py
+  - Fractal_ISM_Field_Theory_Compression_Demo.ipynb
+  - fractal_ism_compression.md
+child_directories:
+  - legacy
