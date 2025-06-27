@@ -88,4 +88,4 @@ This model embodies the **Dawn Field Theory** premise:
 
 ---
 
-*This file is part of the [Dawn Field Theory](https://github.com/lornecodes/dawn-field-theory) project — an open exploration of intelligence, reality, and computation as entropic emergence.*
+*This file is part of the [Dawn Field Theory](https://github.com/dawnfield-institute/dawn-field-theory) project — an open exploration of intelligence, reality, and computation as entropic emergence.*

@@ -27,7 +27,7 @@ All experiments draw from principles in:
 - **Quantum Balance Equation (QBE)**: Energy-information equivalence
 - **Superfluid Crystallization**: Emergence of form from entropy gradient
 
-For a complete theoretical foundation, see the [📘 Timestamped Summary](https://github.com/lornecodes/dawn-field-theory/blob/main/theory/DAWN_FIELD_THEORY_TIMESTAMPED_SUMMARY.md).
+For a complete theoretical foundation, see the [📘 Timestamped Summary](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/theory/DAWN_FIELD_THEORY_TIMESTAMPED_SUMMARY.md).
 
 ---
 

@@ -1,6 +1,6 @@
 # 🧠 How to Use the DawnField GPT
 
-The **DawnField GPT** is a custom AI assistant built specifically to help users explore and understand the [`dawn-field-theory`](https://github.com/lornecodes/dawn-field-theory) repository. It uses intelligent metadata (from `.cip/meta.yaml`, versioned instructions, and `map.yaml`) to navigate the codebase like a researcher — not a search engine.
+The **DawnField GPT** is a custom AI assistant built specifically to help users explore and understand the [`dawn-field-theory`](https://github.com/dawnfield-institute/dawn-field-theory) repository. It uses intelligent metadata (from `.cip/meta.yaml`, versioned instructions, and `map.yaml`) to navigate the codebase like a researcher — not a search engine.
 
 ---
 
