@@ -5,7 +5,7 @@ info:
     Provides access to metadata and file contents from the Dawn Field Theory repository.
   version: v1.0.0
 servers:
-  - url: https://raw.githubusercontent.com/lornecodes/dawn-field-theory/main
+  - url: https://raw.githubusercontent.com/dawnfield-institute/dawn-field-theory/main
 
 paths:
   /cip/instructions_v2.0.yaml:

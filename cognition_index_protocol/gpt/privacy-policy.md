@@ -2,7 +2,7 @@
 
 _Last updated: 2025-06-14_
 
-This GPT tool uses public metadata and file content from the [Dawn Field Theory GitHub repository](https://github.com/lornecodes/dawn-field-theory) to assist users in navigating and understanding its structure and content.
+This GPT tool uses public metadata and file content from the [Dawn Field Theory GitHub repository](https://github.com/dawnfield-institute/dawn-field-theory) to assist users in navigating and understanding its structure and content.
 
 ## What data do we collect?
 
@@ -22,7 +22,7 @@ No data is collected or shared with third parties.
 
 ## Contact
 
-For any questions or concerns, please contact the repository maintainer via GitHub: [https://github.com/lornecodes](https://github.com/lornecodes)
+For any questions or concerns, please contact the repository maintainer via GitHub: [https://github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory)
 
 ---
 
@@ -30,7 +30,7 @@ This Privacy Policy may be updated to reflect changes in functionality or compli
 
 ## License and Usage Compliance
 
-All interactions with this GPT and its underlying content are governed by the license of the [Dawn Field Theory repository](https://github.com/lornecodes/dawn-field-theory). Users must comply with the terms specified in the repository's LICENSE file.
+All interactions with this GPT and its underlying content are governed by the license of the [Dawn Field Theory repository](https://github.com/dawnfield-institute/dawn-field-theory). Users must comply with the terms specified in the repository's LICENSE file.
 
 This includes restrictions on reproduction, redistribution, and commercial use, unless explicitly permitted by the license.
 

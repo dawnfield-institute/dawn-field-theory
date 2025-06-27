@@ -132,7 +132,7 @@ A diagram or flowchart could be included here to visually represent the recursiv
 
 For verifiability and reproducibility, reference the specific commit or state of the repository where this event occurred.  
 **Example:**  
-_Repo: [github.com/lornecodes/dawn-field-theory](https://github.com/lornecodes/dawn-field-theory)  
+_Repo: [github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory)  
 Commit: `45217856b27283da1e0c438af0ef963202819c04`
 
 ### 8.3. Comparison to Non-CIP Systems
