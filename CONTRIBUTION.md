@@ -76,9 +76,25 @@ If you’d like to understand the philosophy and intentions behind this project,
 
 ---
 
+## arXiv Endorsement, Mentoring & Community Support
+
+Dawn Field Theory is an open, recursive, and non-institutional project. If you are an established arXiv author and would like to endorse this work or support the submission of Dawn Field Theory research to arXiv, your help would be deeply appreciated.
+
+**Mentoring and guidance are also highly valued.**  
+The background of this project is rooted in enterprise software engineering and R&D; academia is a new field that I am actively working to bridge and integrate. Any advice, mentorship, or collaboration from experienced academics is welcome and will help accelerate this epistemic transition.
+
+Endorsements, testimonials, and mentoring help this project grow, gain recognition, and remain open to the world.
+
+If you wish to endorse, mentor, support, or collaborate, please reach out:  
+**info@dawnfield.ca**
+
+Your voice—whether as a researcher, developer, theorist, mentor, or supporter—becomes part of the evolving epistemic field.
+
+---
+
 > **How to Use This Document:**  
 > This guide explains how to contribute to Dawn Field Theory, including both practical steps and the underlying philosophy. Contributions are valued from all backgrounds, and the project aims to balance open collaboration with a clear theoretical foundation.
 
 **Thank you.**
 
-— Lorne
+— Peter Lorne Groom
