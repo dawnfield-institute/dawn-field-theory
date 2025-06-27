@@ -1,5 +1,5 @@
 # 🌌 Dawn Field Theory (WIP)
-> [Visit Dawn Field website for more info](dawnfield.ca)
+> [Visit Dawn Field website for more info](https://dawnfield.ca/)
 
 > [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
 > *A field-based model of intelligence, collapse, and emergence.*
