@@ -81,7 +81,7 @@ If you’d like to understand the philosophy and intentions behind this project,
 Dawn Field Theory is an open, recursive, and non-institutional project. If you are an established arXiv author and would like to endorse this work or support the submission of Dawn Field Theory research to arXiv, your help would be deeply appreciated.
 
 **Mentoring and guidance are also highly valued.**  
-The background of this project is rooted in enterprise software engineering and R&D; academia is a new field that I am actively working to bridge and integrate. Any advice, mentorship, or collaboration from experienced academics is welcome and will help accelerate this epistemic transition.
+The background experience of this project is rooted in enterprise software engineering and R&D; academia is a new field that I am actively working to bridge and integrate. Any advice, mentorship, or collaboration from experienced academics is welcome and will help accelerate this epistemic transition.
 
 Endorsements, testimonials, and mentoring help this project grow, gain recognition, and remain open to the world.
 
