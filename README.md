@@ -225,6 +225,7 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 ---
 
 ## 🤝 Contributing & Community
+[Visit Dawn Field website for more info](https://dawnfield.ca/)
 
 Want to contribute or collaborate?  
 See [MISSION.md](./MISSION.md) for the current contribution policy and institutional guidelines.  
