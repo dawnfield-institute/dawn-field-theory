@@ -88,11 +88,16 @@ dawn-field-theory/
   devkit/
     README.md
     compression/
-      CompressionTest2.py
-      Compression_test1.py
-      EntropicCompression_test.py
-      compressiondoc.md
+      FractalIntrinsicMetadataCompression.py
+      Fractal_ISM_Field_Theory_Compression_Demo.ipynb
+      fractal_ism_compression.md
       meta.yaml
+      legacy/
+        Compression_test1.py
+        CompressionTest2.py
+        EntropicCompression_test.py
+        compressiondoc.md
+        meta.yaml
     hash_evaluation/
       SELID.py
       SELID_validation.py
