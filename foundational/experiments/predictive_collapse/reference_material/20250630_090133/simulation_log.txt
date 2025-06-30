@@ -1,0 +1,37 @@
+Simulation Metadata
+Grid Size: 64
+Generations: 30
+alpha: 0.1, beta: 0.05, eta: 0.05, theta: 0.25
+threshold_kappa: 0.12, threshold_stability: 0.25
+
+Collapse Forecast (per generation):
+Generation 0: 0 collapse zones
+Generation 1: 0 collapse zones
+Generation 2: 47 collapse zones
+Generation 3: 52 collapse zones
+Generation 4: 58 collapse zones
+Generation 5: 57 collapse zones
+Generation 6: 55 collapse zones
+Generation 7: 60 collapse zones
+Generation 8: 57 collapse zones
+Generation 9: 64 collapse zones
+Generation 10: 68 collapse zones
+Generation 11: 63 collapse zones
+Generation 12: 65 collapse zones
+Generation 13: 63 collapse zones
+Generation 14: 63 collapse zones
+Generation 15: 66 collapse zones
+Generation 16: 69 collapse zones
+Generation 17: 70 collapse zones
+Generation 18: 71 collapse zones
+Generation 19: 69 collapse zones
+Generation 20: 71 collapse zones
+Generation 21: 71 collapse zones
+Generation 22: 76 collapse zones
+Generation 23: 74 collapse zones
+Generation 24: 77 collapse zones
+Generation 25: 78 collapse zones
+Generation 26: 75 collapse zones
+Generation 27: 77 collapse zones
+Generation 28: 70 collapse zones
+Generation 29: 75 collapse zones

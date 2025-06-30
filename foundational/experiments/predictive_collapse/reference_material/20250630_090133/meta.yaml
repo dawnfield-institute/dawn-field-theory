@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: '20250630_090133'
+description: Data and outputs from the predictive collapse experiment run on 2025-06-30, including forecasts, plots, and simulation logs.
+semantic_scope:
+- predictive_collapse
+- experiment_run
+- 2025-06-30
+- simulation_output
+files:
+- forecasted_collapse_data.csv
+- forecasted_collapse_plot.png
+- simulation_log.txt
+- snapshot_generation_29.png
+child_directories: []
