@@ -5,6 +5,15 @@ dawn-field-theory/
   LICENSE_APPENDIX.md
   MISSION.md
   README.md
+  dawn-field-theory.md
+  for_ai_labs.md
+  generate_path.py
+  infodynamics.md
+  map.yaml
+  meta.yaml
+  origin_of_infodynamics.md
+  schema.yaml
+  timeline.md
   backlog/
     [m][D][v0.1][C6][I1]_cimm_ml_vs_sec_benchmark_plan.md
     meta.yaml
@@ -12,6 +21,10 @@ dawn-field-theory/
   blueprints/
     LICENSE.md
     README.md
+    bias.py
+    cognition_index_protocol.md
+    meta.yaml
+    qsocket.md
     balance_based_energy_generation/
       README.md
       balance_based_energy_generationv1.py
@@ -31,9 +44,6 @@ dawn-field-theory/
         carbon_energy_strategy_logs2025-06-17
         carbon_energy_strategy_logs2025-06-17 214113.png
         meta.yaml
-    bias.py
-    cognition_index_protocol.md
-    meta.yaml
     nuclear_containment/
       README.md
       meta.yaml
@@ -42,6 +52,8 @@ dawn-field-theory/
         containment_math.md
         containment_theory.md
         containment_triptych_with_metrics.py
+        meta.yaml
+        results.md
         experimental_archive/
           Containment2D_HighYield.py
           Containment2D_HighYield_Reflective.py
@@ -59,16 +71,13 @@ dawn-field-theory/
           shell_only_containment_result.png
           side_by_side_comparison.png
           uncontained_blast_control.png
-        meta.yaml
         reference_material/
           containment_metrics.csv
           containment_triptych.png
           meta.yaml
-        results.md
       v2/
         meta.yaml
         v2_roadmap.md
-    qsocket.md
   citations/
     citations_apa.txt
     citations_bibtex.bib
@@ -76,10 +85,11 @@ dawn-field-theory/
     meta.yaml
   cognition_index_protocol/
     README.md
+    copilot_case_study.md
+    meta.yaml
     architecture/
       CIP_architecturev1.md
       meta.yaml
-    copilot_case_study.md
     gpt/
       CIP_GPT_architecturev2.md
       git_action.yaml
@@ -88,45 +98,46 @@ dawn-field-theory/
       metadata_architecturev3.md
       privacy-policy.md
       prompt.txt
-    meta.yaml
-  dawn-field-theory.md
   devkit/
     README.md
+    meta.yaml
     compression/
       FractalIntrinsicMetadataCompression.py
       Fractal_ISM_Field_Theory_Compression_Demo.ipynb
       fractal_ism_compression.md
+      meta.yaml
       legacy/
         CompressionTest2.py
         Compression_test1.py
         EntropicCompression_test.py
         compressiondoc.md
         meta.yaml
-      meta.yaml
     hash_evaluation/
       SELID.py
       SELID_validation.py
+      meta.yaml
       __pycache__/
         meta.yaml
-      meta.yaml
-    meta.yaml
     random_number/
       RandomNumberTest.py
       meta.yaml
       random_number.md
-  for_ai_labs.md
   foundational/
     README.md
+    lexicon.md
+    lexicon.yaml
+    meta.yaml
+    whats_next.md
     arithmetic/
       README.md
+      infodynamics_arithmetic_v1.md
+      meta.yaml
+      symbolic_geometry_arithmetic.md
       hodge_mapping/
         meta.yaml
         v0.1/
           hodge_mapping.md
           meta.yaml
-      infodynamics_arithmetic_v1.md
-      meta.yaml
-      symbolic_geometry_arithmetic.md
     docs/
       README.md
       [m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md
@@ -144,6 +155,7 @@ dawn-field-theory/
       [m][F][v1.1][C4][I5]_recursive_entopy.md
       [m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
       [m][S][v1.0][C3][I4]_dawn_field_theory_timed_summary.md
+      meta.yaml
       docx/
         Alignment of Hiroshima University's Double-Slit Findings with Dawn Field.docx
         DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
@@ -166,55 +178,51 @@ dawn-field-theory/
         [m][F][v1.0][C4][I4]_alignment_with_zeilinger_arndt.md
         [m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md
         meta.yaml
-      meta.yaml
     experiments/
+      README.md
+      meta.yaml
       DNA_repair/
         DNA_repairer.py
         meta.yaml
+        results.md
         reference_material/
           Entropy-Based Mutation Detection and Repair in Protein Sequences.md
           Entropy-Based Repair of BRCA1 Frameshift Mutation _5382insC__1_.md
           entropy_mutation_detection.png
           entropy_repair.png
           meta.yaml
-        results.md
-      README.md
       entropy_information_polarity_field/
+        meta.yaml
+        theory_draft.md
         black_white_hole_polarity/
           entropy_information_polarity_field.py
           experiment_protocol.md
           meta.yaml
+          results.md
           reference_material/
             entropy_information_polarity2025-06-15 104709.txt
             entropy_information_polarity_blackhole2025-06-15 104709.png
             entropy_information_polarity_whitehole2025-06-15 104709.png
             meta.yaml
-          results.md
-        meta.yaml
-        theory_draft.md
       hodge_conjecture/
         hodge_field_simulation.py
         meta.yaml
         prime_modulated_collapse.py
-        prime_modulated_collapsev10.py
-        prime_modulated_collapsev11.py
         prime_modulated_collapsev2.py
         prime_modulated_collapsev3.py
-        prime_modulated_collapsev4.py
-        prime_modulated_collapsev5.py
-        prime_modulated_collapsev6.py
-        prime_modulated_collapsev7.py
-        prime_modulated_collapsev8.py
-        prime_modulated_collapsev9.py
+        ...
+        prime_modulated_collapsev10.py
+        prime_modulated_collapsev11.py
+        unification_plan.md
         reference_material/
+          meta.yaml
           hodge_field/
-            hodge_conjecture2025-06-20 090250.png
+            hodge_conjecture2025-06-20 90250.png
             hodge_results.md
             meta.yaml
-          meta.yaml
           v1/
             meta.yaml
-            prime_modulated_collapse2025-06-20 090250.png
+            prime_modulated_collapse2025-06-20 90250.png
           v10/
             analysis_plot_p10_run0.png
             analysis_plot_p10_run1.png
@@ -331,15 +339,15 @@ dawn-field-theory/
             robustness_results.csv
           v2/
             meta.yaml
-            prime_modulated_collapsev22025-06-20 090250.png
+            prime_modulated_collapsev22025-06-20 90250.png
           v3/
             meta.yaml
             peak_countsv3.csv
-            prime_modulated_collapsev32025-06-20 090250.png
+            prime_modulated_collapsev32025-06-20 90250.png
           v4/
             meta.yaml
             peak_symmetry_data.csv
-            prime_modulated_collapsev42025-06-20 090250.png
+            prime_modulated_collapsev42025-06-20 90250.png
           v5/
             fft_symmetry_vs_prime.png
             meta.yaml
@@ -466,12 +474,30 @@ dawn-field-theory/
             meta.yaml
             modulated_full_analysis.png
             robustness_results.csv
-        unification_plan.md
       landauer_erasure_field_cost_map/
+        [id][T][v1.0][C2][I3][E]_landauer_erasure_field_cost_map.py
+        meta.yaml
+        results.md
+        reference_material/
+          meta.yaml
+          20250630_093247/
+            energy_curve.png
+            energy_over_time.csv
+            erasure_log.txt
+            erasure_result_plot.png
+            field_step_0.png
+            field_step_1.png
+            field_step_5.png
+            field_step_10.png
+            field_step_15.png
+            field_step_20.png
+            meta.yaml
       language_to_logic/
         language_to_logic.py
         meta.yaml
+        results.md
         reference_material/
+          meta.yaml
           2025-06-21_095416/
             meta.yaml
             testid_1/
@@ -557,8 +583,6 @@ dawn-field-theory/
               meta.yaml
             testid_5/
               meta.yaml
-          meta.yaml
-        results.md
       legacy/
         README.md
         brain.md
@@ -568,86 +592,389 @@ dawn-field-theory/
         meta.yaml
         vcpu.md
         vcpu.py
-      meta.yaml
       pi_harmonics/
         meta.yaml
         pi_harmonics.py
         pi_harmonics.yaml
+        results.md
         reference_material/
           meta.yaml
           pi_harmonic_results2025-06-17 135126.png
-        results.md
       predictive_collapse/
         [m][E][v1.0][C1][I1]_predictive_collapse_simulation.py
+        meta.yaml
+        results.md
         reference_material/
+          meta.yaml
           20250630_090133/
             forecasted_collapse_data.csv
             forecasted_collapse_plot.png
+            meta.yaml
             simulation_log.txt
             snapshot_generation_29.png
-        results.md
       recursive_entropy/
         meta.yaml
         recursive_entopy.py
+        results.md
         reference_material/
           meta.yaml
           recursive_entropy_2025-06-07_results.txt
           recursive_entropy_2025-06-07_results1.png
           recursive_entropy_2025-06-07_results2.png
-        results.md
       recursive_gravity/
         macro_emergence_knn.py
         meta.yaml
         proto_galactic_superfluid.py
         recursive_gravity.py
+        results.md
         reference_material/
           macro_emergence_knn_2025-06-07_results.png
           meta.yaml
           proto_galactic_superfluid_2025-06-07_results.png
           recursive_gravity_2025-06-07_results.png
-        results.md
       recursive_tree/
         meta.yaml
         recursive_tree.py
+        results.md
         reference_material/
           meta.yaml
           recursive_tree_2025-06-07_results.png
-        results.md
       symbolic_bifractal/
         meta.yaml
+        results.md
+        symbolic_bifractal_expansion_v1.py
+        symbolic_bifractal_expansion_v2.py
         reference_material/
           InfoDyn_Validation_BifractalCollapse_v0.2.yaml
           InfoDyn_Validation_LineageTrace.tsv
           meta.yaml
-          symbolic_bifractal_expansion_v1_2025-06-14 093626.png
-          symbolic_bifractal_expansion_v2_2025-06-14 093626.png
+          symbolic_bifractal_expansion_v1_2025-06-14 93626.png
+          symbolic_bifractal_expansion_v2_2025-06-14 93626.png
+      symbolic_emergence/
+        [id][S][v1.0][C3][I1][A]_symbolic_emergence.py
+        meta.yaml
         results.md
-        symbolic_bifractal_expansion_v1.py
-        symbolic_bifractal_expansion_v2.py
       symbolic_entropy_collapse/
         [m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md
         [x][F][v1.0][C1][I1]_symbolic_entropy_engine.py
         meta.yaml
         reference_material/
-          20250622_160040/
-            collapse_diagnostics.png
-            collapse_field.png
-            collapse_logs.csv
-            meta.yaml
-          20250622_160535_batch/
-            RESULTS.md
-            average_speed.png
-            entropy_change.png
-            meta.yaml
-            particles_near_center.png
-            symbolic_entropy.png
-            symbolic_transitions.json
           meta.yaml
+          20250624_185441/
+            meta.yaml
+            metadata.json
+            Classical/
+              meta.yaml
+              seed_101/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step98.png
+                curvature_slice_axis0_step99.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step98.png
+                curvature_slice_axis1_step99.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step98.png
+                curvature_slice_axis2_step99.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_98.csv
+                symbol_distribution_step_99.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_98.png
+                symbol_distribution_step_99.png
+              seed_202/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step98.png
+                curvature_slice_axis0_step99.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step98.png
+                curvature_slice_axis1_step99.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step98.png
+                curvature_slice_axis2_step99.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_98.csv
+                symbol_distribution_step_99.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_98.png
+                symbol_distribution_step_99.png
+              seed_303/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step98.png
+                curvature_slice_axis0_step99.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step98.png
+                curvature_slice_axis1_step99.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step98.png
+                curvature_slice_axis2_step99.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_98.csv
+                symbol_distribution_step_99.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_98.png
+                symbol_distribution_step_99.png
+              seed_404/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step98.png
+                curvature_slice_axis0_step99.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step98.png
+                curvature_slice_axis1_step99.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step98.png
+                curvature_slice_axis2_step99.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_98.csv
+                symbol_distribution_step_99.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_98.png
+                symbol_distribution_step_99.png
+              seed_42/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step98.png
+                curvature_slice_axis0_step99.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step98.png
+                curvature_slice_axis1_step99.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step98.png
+                curvature_slice_axis2_step99.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_98.csv
+                symbol_distribution_step_99.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_98.png
+                symbol_distribution_step_99.png
+            Emergent/
+              meta.yaml
+              seed_101/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step20.png
+                curvature_slice_axis0_step21.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step20.png
+                curvature_slice_axis1_step21.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step20.png
+                curvature_slice_axis2_step21.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_20.csv
+                symbol_distribution_step_21.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_20.png
+                symbol_distribution_step_21.png
+              seed_202/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step44.png
+                curvature_slice_axis0_step45.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step44.png
+                curvature_slice_axis1_step45.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step44.png
+                curvature_slice_axis2_step45.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_44.csv
+                symbol_distribution_step_45.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_44.png
+                symbol_distribution_step_45.png
+              seed_303/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step98.png
+                curvature_slice_axis0_step99.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step98.png
+                curvature_slice_axis1_step99.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step98.png
+                curvature_slice_axis2_step99.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_98.csv
+                symbol_distribution_step_99.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_98.png
+                symbol_distribution_step_99.png
+              seed_404/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step22.png
+                curvature_slice_axis0_step23.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step22.png
+                curvature_slice_axis1_step23.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step22.png
+                curvature_slice_axis2_step23.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_22.csv
+                symbol_distribution_step_23.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_22.png
+                symbol_distribution_step_23.png
+              seed_42/
+                curvature_slice_axis0_step0.png
+                curvature_slice_axis0_step1.png
+                ...
+                curvature_slice_axis0_step26.png
+                curvature_slice_axis0_step27.png
+                curvature_slice_axis1_step0.png
+                curvature_slice_axis1_step1.png
+                curvature_slice_axis1_step26.png
+                curvature_slice_axis1_step27.png
+                curvature_slice_axis2_step0.png
+                curvature_slice_axis2_step1.png
+                curvature_slice_axis2_step26.png
+                curvature_slice_axis2_step27.png
+                curvature_trace.csv
+                diversity_trace.csv
+                entropy_trace.csv
+                log.txt
+                meta.yaml
+                symbol_distribution_step_0.csv
+                symbol_distribution_step_1.csv
+                symbol_distribution_step_26.csv
+                symbol_distribution_step_27.csv
+                symbol_distribution_step_0.png
+                symbol_distribution_step_1.png
+                symbol_distribution_step_26.png
+                symbol_distribution_step_27.png
+      symbolic_fractal_pruning/
+        meta.yaml
         results.md
         symbolic_fractal_pruning.py
+        reference_material/
+          meta.yaml
+          pruning_20250622_163425/
+            active_ratio_over_time.png
+            entropy_over_time.png
+            meta.yaml
+            pruning_stats.json
+            step_1.png
+            step_2.png
+            ...
+            step_19.png
+            step_20.png
+            symbol_lifetimes.png
+      symbolic_memory_agentic_decay_test/
+        [id][T][v1.0][C4][I4][A]_symbolic_memory_agentic_decay_test.py
+        meta.yaml
+        results.md
+        reference_material/
+          meta.yaml
+          20250630_100030/
+            energy_curve.png
+            energy_over_time.csv
+            field_step_0.png
+            field_step_1.png
+            ...
+            field_step_45.png
+            field_step_50.png
+            meta.yaml
       symbolic_superfluid_collapse_pi/
         meta.yaml
+        results.md
+        symbolic_superfluid_collapse_pi.py
         reference_material/
+          meta.yaml
           20250622_160040/
             collapse_diagnostics.png
             collapse_field.png
@@ -661,9 +988,6 @@ dawn-field-theory/
             particles_near_center.png
             symbolic_entropy.png
             symbolic_transitions.json
-          meta.yaml
-        results.md
-        symbolic_superfluid_collapse_pi.py
     legacy_docs_archive/
       AI_Black_Hole_Information_Paper _1_.md
       AI_Hawking_Radiation_Info_Paper _1_.md
@@ -688,6 +1012,7 @@ dawn-field-theory/
       THE PHYSICS UNDERLYING CIMM copy.md
       THE PHYSICS UNDERLYING CIMM.md
       The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
+      meta.yaml
       docx/
         AI^J Quantum Measurement^J and the Fabric of Reality.docx
         AI_Black_Hole_Information_Paper (1).docx
@@ -714,19 +1039,16 @@ dawn-field-theory/
         THE PHYSICS UNDERLYING CIMM.docx
         The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
         meta.yaml
-      meta.yaml
-    lexicon.md
-    lexicon.yaml
-    meta.yaml
-    whats_next.md
-  generate_path.py
-  infodynamics.md
-  map.yaml
-  meta.yaml
   models/
+    README.md
+    meta.yaml
     CIMM/
       README.md
       __init__.py
+      meta.yaml
+      prime_number_results.md
+      requirements.txt
+      validate_imports.py
       agents/
         agentic_mesh_runtime.py
         base_agent.py
@@ -736,70 +1058,67 @@ dawn-field-theory/
         supervisor_agent.py
       cimm_core/
         __init__.py
+        cimm.py
+        cimm_core.py
+        cimm_core_manager.py
+        meta.yaml
+        utils.py
         __pycache__/
           __init__.cpython-311.pyc
           cimm.cpython-311.pyc
           meta.yaml
           utils.cpython-311.pyc
-        cimm.py
-        cimm_core.py
-        cimm_core_manager.py
         entropy/
           __init__.py
+          entropy_monitor.py
+          meta.yaml
+          quantum_potential_layer.py
           __pycache__/
             __init__.cpython-311.pyc
             entropy_monitor.cpython-311.pyc
             meta.yaml
             quantum_potential_layer.cpython-311.pyc
-          entropy_monitor.py
-          meta.yaml
-          quantum_potential_layer.py
         learning/
+          meta.yaml
+          quantum_memory.py
+          reinforcement_learning.py
+          superfluid_dynamics.py
           __pycache__/
             meta.yaml
             quantum_memory.cpython-311.pyc
             reinforcement_learning.cpython-311.pyc
             superfluid_dynamics.cpython-311.pyc
-          meta.yaml
-          quantum_memory.py
-          reinforcement_learning.py
-          superfluid_dynamics.py
-        meta.yaml
         models/
           __init__.py
+          base_cimm_model.py
+          cryptography_model.py
+          financial_model.py
+          meta.yaml
+          prime_structure_model.py
           __pycache__/
             __init__.cpython-311.pyc
             base_cimm_model.cpython-311.pyc
             financial_model.cpython-311.pyc
             meta.yaml
             prime_structure_model.cpython-311.pyc
-          base_cimm_model.py
-          cryptography_model.py
-          financial_model.py
-          meta.yaml
-          prime_structure_model.py
         optimization/
           __init__.py
+          adaptive_controller.py
+          bayesian_optimizer.py
+          meta.yaml
+          pruning.py
           __pycache__/
             __init__.cpython-311.pyc
             adaptive_controller.cpython-311.pyc
             bayesian_optimizer.cpython-311.pyc
             meta.yaml
             pruning.cpython-311.pyc
-          adaptive_controller.py
-          bayesian_optimizer.py
-          meta.yaml
-          pruning.py
-        utils.py
       data/
         amd_full_history.csv
         meta.yaml
-      meta.yaml
       models/
         example_model.py
         meta.yaml
-      prime_number_results.md
-      requirements.txt
       results/
         meta.yaml
         prime_number_structure/
@@ -815,27 +1134,29 @@ dawn-field-theory/
         stock_prediction_usecase.py
       utils/
         __init__.py
+        data_processing.py
+        logging.py
+        meta.yaml
         __pycache__/
           __init__.cpython-311.pyc
           logging.cpython-311.pyc
           meta.yaml
-        data_processing.py
-        logging.py
-        meta.yaml
-      validate_imports.py
       visualization/
         __init__.py
+        meta.yaml
+        plots.py
         __pycache__/
           __init__.cpython-311.pyc
           meta.yaml
           plots.cpython-311.pyc
-        meta.yaml
-        plots.py
     GAIA/
       README.md
+      meta.yaml
       docs/
+        meta.yaml
         architecture/
           meta.yaml
+          overview.md
           modules/
             collapse_core.md
             field_engine.md
@@ -844,7 +1165,6 @@ dawn-field-theory/
             resonance_mesh.md
             superfluid_memory.md
             symbolic_crystallizer.md
-          overview.md
         experiments/
           collapse_dynamics_experiment.md
           meta.yaml
@@ -856,7 +1176,6 @@ dawn-field-theory/
           meta.yaml
           methodology.md
           symbolic_ethics.md
-        meta.yaml
         protocols/
           collapse_tree_protocol.md
           entropy_state_format.md
@@ -867,21 +1186,15 @@ dawn-field-theory/
           epistemic_field_theory.md
           meta.yaml
           recursive_balance_field.md
-      meta.yaml
-    README.md
-    meta.yaml
-  origin_of_infodynamics.md
   resources/
     meta.yaml
     recursive_structure.png
-  schema.yaml
-  timeline.md
   todo/
+    meta.yaml
+    todolist.md
     hodge/
       hodge_paper.md
       meta.yaml
-    meta.yaml
-    todolist.md
   tools/
     converter.py
     generate_meta_yamls.py

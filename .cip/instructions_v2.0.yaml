@@ -44,3 +44,12 @@ usage:
       - Consider the implications of the proficiency_level field for the expected expertise and background knowledge required.
       - Use estimated_context_weight to gauge the relative importance or centrality of a directory within the overall project.
       - The estimated_validation_depth and validation_type fields can provide additional layers of understanding regarding the expected scrutiny and methodological approach for validating the concepts or entities within the directory.
+map_yaml_rules:
+  - map.yaml is the canonical source of truth for the repository structure.
+  - If a directory contains many files with sequential numbering (e.g., file_0.csv, file_1.csv, ..., file_99.csv), these may be compressed in map.yaml using one of the following notations:
+      - Ellipsis: Only the first two and last two files are listed, with "..." in between.
+      - Range notation: A pattern such as file_{0..99}.csv may be used to indicate a sequence.
+  - When parsing map.yaml, agents should recognize and expand these patterns as needed for navigation or data retrieval.
+  - If a file pattern is compressed, always check the actual directory for the full file list if precise enumeration is required.
+  - All other files and directories are listed explicitly.
+  - These rules are subject to change; always consult the latest instructions_vX.Y.yaml for current conventions.
