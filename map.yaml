@@ -7,12 +7,14 @@ dawn-field-theory/
   README.md
   dawn-field-theory.md
   for_ai_labs.md
+  generate_meta_yamls.py
   generate_path.py
   infodynamics.md
   map.yaml
   meta.yaml
   origin_of_infodynamics.md
   schema.yaml
+  test.py
   timeline.md
   backlog/
     [m][D][v0.1][C6][I1]_cimm_ml_vs_sec_benchmark_plan.md
@@ -25,6 +27,10 @@ dawn-field-theory/
     cognition_index_protocol.md
     meta.yaml
     qsocket.md
+    AI_detection/
+      [cip][experiment][v1.0][2025-06-30]_dawn_field_recursive_fractal_entropy_provenance_pipeline.py
+      [cip][protocol][v1.0][2025-06-30]_dawn_field_protocol_recursive_fractal_entropy_provenance.md
+      meta.yaml
     balance_based_energy_generation/
       README.md
       balance_based_energy_generationv1.py
@@ -1049,6 +1055,9 @@ dawn-field-theory/
       prime_number_results.md
       requirements.txt
       validate_imports.py
+      __pycache__/
+        __init__.cpython-311.pyc
+        meta.yaml
       agents/
         agentic_mesh_runtime.py
         base_agent.py
@@ -1197,5 +1206,4 @@ dawn-field-theory/
       meta.yaml
   tools/
     converter.py
-    generate_meta_yamls.py
     meta.yaml
