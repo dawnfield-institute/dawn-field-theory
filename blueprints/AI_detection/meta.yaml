@@ -1,0 +1,9 @@
+schema_version: '2.0'
+directory_name: AI_detection
+description: Auto-generated metadata for AI_detection directory.
+semantic_scope:
+- AI_detection
+files:
+- '[cip][experiment][v1.0][2025-06-30]_dawn_field_recursive_fractal_entropy_provenance_pipeline.py'
+- '[cip][protocol][v1.0][2025-06-30]_dawn_field_protocol_recursive_fractal_entropy_provenance.md'
+child_directories: []
