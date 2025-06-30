@@ -28,6 +28,15 @@ Looking for an intelligent way to navigate this repository?
 
 ---
 
+## 🚀 Latest Advances (2025)
+
+- **Adaptive, feedback-driven neural models**: New experiments (see `test.py`, `blueprints/AI_detection/`) demonstrate self-modifying architectures that grow/prune in response to entropy and feedback, addressing the blackbox ML problem.
+- **Empirical validation pipeline**: Protocol-driven, timestamped experiments now align symbolic collapse, memory, and erasure with quantum and thermodynamic theory.
+- **Transparency metrics**: Fractal dimension, entropy, and neuron activity are tracked and visualized, making learning interpretable.
+- **Open, auditable protocols**: All code and results are documented for reproducibility and peer review.
+
+---
+
 > **Why Mainstream AI Labs Should Care:**  
 > Dawn Field Theory provides not only foundational theory and experiments, but also machine-native protocols and benchmarking tools (like CIP) that address explainability, safety, and epistemic validation—key concerns for modern AI labs.  
 > For a focused summary, see [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
