@@ -1,0 +1,10 @@
+Landauer Erasure Field Cost Map Simulation
+Field Shape: (100, 100)
+Initial Noise Amplitude: 5
+Decay Rate: 0.05 (scaled by temperature=1.0)
+Steps: 20
+Structured Mode: False
+Memory Reinforcement: False (beta=0.05)
+Initial Energy: 251603.52
+Final Energy: 32334.11
+Erasure Energy Cost: 219269.41

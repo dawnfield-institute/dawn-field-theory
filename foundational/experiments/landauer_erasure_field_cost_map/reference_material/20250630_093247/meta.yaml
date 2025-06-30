@@ -1,0 +1,21 @@
+schema_version: '2.0'
+directory_name: '20250630_093247'
+description: Contains all output artifacts from the Landauer erasure field cost map experiment run on 2025-06-30. Includes energy data, erasure logs, and field state visualizations documenting the thermodynamic cost of information erasure.
+semantic_scope:
+- landauer_experiment_run
+- energy_decay
+- entropy
+- field_visualization
+- reproducible_research
+files:
+- energy_curve.png
+- energy_over_time.csv
+- erasure_log.txt
+- erasure_result_plot.png
+- field_step_0.png
+- field_step_1.png
+- field_step_10.png
+- field_step_15.png
+- field_step_20.png
+- field_step_5.png
+child_directories: []
