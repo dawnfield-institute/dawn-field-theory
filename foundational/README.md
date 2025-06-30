@@ -2,6 +2,12 @@
 
 Welcome to the root of it all! 🌱 This directory anchors the **core theories, computational proofs, and empirical validations** of the Dawn Field Framework. It’s where symbolic recursion meets math, simulation meets theory, and entropy finds its rhythm.
 
+## 🚀 Recent Advances (2025)
+
+- **Empirical validation pipeline**: New experiments align symbolic collapse, memory, and erasure with quantum and thermodynamic theory, using protocol-driven, timestamped methods.
+- **Transparency and metrics**: Fractal dimension, entropy, and neuron activity are now tracked and visualized in foundational experiments.
+- **Open science**: All results and protocols are documented for reproducibility and peer review.
+
 ## 📁 Contents
 
 * `arithmetic/` – 🧮 Core mathematical constructs including symbolic geometry, recursive calculus, and field-aligned arithmetic logic.
@@ -18,6 +24,6 @@ The `foundational/` scope synthesizes theoretical formulations with empirical gr
 
 * ⚖️ Entropy-regulated modeling of information-energy fields
 * 🔁 Recursive field theory applications (e.g., Hodge mapping, symbolic collapse)
-* 📊 Experimental validations of symbolic, arithmetic, and fractal constructs
+* 📈 Experimental validations of symbolic, arithmetic, and fractal constructs
 
 This directory is the recommended starting point for those seeking to engage with the architecture of **Dawn Field Theory** from first principles. 🧠✨

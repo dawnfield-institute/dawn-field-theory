@@ -2,7 +2,19 @@
 
 This directory contains early-stage **architectures**, **protocols**, and **technical concepts** developed alongside the core DAWN Field Theory and Infodynamics framework.
 
-While the rest of this repository focuses on simulation, theoretical grounding, and natural law experiments, the contents here represent **practical system designs** and **potentially applicable technologies** — things like communication protocols, cognition evaluators, agentic infrastructures, and more.
+## 🚀 Recent Advances (2025)
+
+- **AI Detection Blueprint**: New adaptive, feedback-driven neural models for explainable AI and blackbox mitigation (see `AI_detection/`).
+- **Protocol-driven validation**: Blueprints now integrate with the Cognition Index Protocol (CIP) for reproducible, auditable experiments.
+- **Transparency metrics**: Designs include entropy, fractal dimension, and neuron activity tracking for interpretability.
+
+---
+
+## 📁 Contents
+
+* `AI_detection/` – 🤖 Adaptive, feedback-driven neural models for explainable AI.
+* `balance_based_energy_generation/` – ⚡ Blueprints and simulations for programmable carbon-based energy harvesting.
+* `nuclear_containment/` – ☢️ Designs and simulations for nuclear-scale entropy containment using field-theoretic principles.
 
 ---
 
