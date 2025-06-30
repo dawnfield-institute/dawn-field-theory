@@ -1,0 +1,17 @@
+schema_version: '2.0'
+directory_name: symbolic_memory_agentic_decay_test
+description: Models symbolic memory reinforcement and decay in a spatial field, simulating agentic attention, learning, and thermodynamic loss. Includes directed decay, feedback amplification, field interaction, and control mode for pure decay comparison.
+semantic_scope:
+- symbolic_memory
+- agentic_decay
+- reinforcement_learning
+- thermodynamic_loss
+- field_dynamics
+- feedback_amplification
+- memory_decay
+- agent_interaction
+files:
+- '[id][T][v1.0][C4][I4][A]_symbolic_memory_agentic_decay_test.py'
+- results.md
+child_directories:
+- reference_material

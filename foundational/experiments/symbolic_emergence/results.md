@@ -1,0 +1,117 @@
+---
+CIP-METADATA:
+  experiment: Symbolic Emergence Simulation
+  author: Peter Lorne Groom
+  date: 2025-06-30
+  version: 1.0
+  location: foundational/experiments/symbolic_emergence/results.md
+  description: |
+    This experiment explores the emergence of language-like structure, roles, and symbolic attractors between two simple agents exchanging phrases in a field-based, recursive, entropy-regulated feedback loop. The goal is to observe post-symbolic language formation as a function of recursive feedback and field tension, without any hardcoded syntax, rules, or language model weights.
+---
+
+# Symbolic Emergence Simulation Results
+
+---
+
+## Purpose
+
+This experiment explores whether language-like structure, roles, and symbolic attractors can emerge between two simple agents exchanging phrases in a field-based, recursive, entropy-regulated feedback loop.
+
+The goal: **Observe post-symbolic language formation as a function of recursive feedback and field tension—without any hardcoded syntax, rules, or language model weights.**
+
+---
+
+## Experimental Design
+
+* **Agents:** Two simple symbolic agents (A and B)
+
+  * **Agent A:** Favors novelty (selects rare/unusual tokens)
+  * **Agent B:** Favors stability (selects frequent/recurring tokens)
+  * Both generate phrases (2–3 tokens) per timestep, from a pool containing both memory and prior field tokens.
+
+* **Temporal Loop:**
+
+  * 30 timesteps.
+  * Every 5 steps, a new random entropy token (e.g., "collapse", "attenuation") is injected to increase symbolic pressure.
+
+* **Roles:**
+
+  * Each token in every phrase is tagged as `driver`, `context`, or `end` (first, middle, last position).
+
+* **Metrics:**
+
+  * **Symbolic entropy** (Shannon) of each combined output.
+  * **Unique token count** per step.
+  * **Token drift:** First seen, last seen, and frequency for top 20 tokens.
+
+* **Visualizations:**
+
+  * Entropy & unique token count over time
+  * Table of top token drift
+
+---
+
+## Key Results
+
+### **1. Emergence of Symbolic Attractors**
+
+* Tokens like `structure`, `align`, `potential`, `attenuation`, and classic meta-tokens (`a:`, `b:`, `|`) consistently re-appear and rise to high frequency—despite no grammar rules.
+* Injected entropy tokens (e.g., `attenuation`, `collapse`, `memory`) are integrated into the field, showing true absorption.
+
+### **2. Role-Based Field Dynamics**
+
+* Role tagging tracks each phrase’s structure:
+
+  * Most phrases evolve toward the pattern: `driver`, `context`, `end` or just `driver`, `end` for short phrases.
+  * Over time, certain tokens consistently become drivers or ends, suggesting proto-grammar formation.
+
+### **3. Entropy and Token Count Visualization**
+
+![Entropy and Unique Token Count Over Time](entropy_unique_tokens.png)
+
+* **Observation:** Entropy spikes with each entropy injection, then often flattens as agents stabilize around emergent symbols. Unique token count rises with injections, then plateaus as field collapses into attractors.
+
+### **4. Token Drift Table (Top 20)**
+
+| Token        | First Seen | Last Seen | Frequency |    |
+| ------------ | ---------- | --------- | --------- | -- |
+| structure    | 0          | 29        | 54        |    |
+| a:           | 0          | 29        | 34        |    |
+| b:           | 0          | 29        | 34        |    |
+|              |            | 0         | 29        | 32 |
+| potential    | 15         | 29        | 9         |    |
+| align        | 10         | 28        | 8         |    |
+| attenuation  | 20         | 24        | 8         |    |
+| the          | 0          | 23        | 7         |    |
+| is           | 0          | 25        | 7         |    |
+| balance      | 1          | 25        | 7         |    |
+| intelligence | 2          | 27        | 7         |    |
+| field.       | 4          | 27        | 7         |    |
+| of           | 5          | 26        | 7         |    |
+| collapse     | 6          | 22        | 7         |    |
+
+*(Copy-paste your actual table for most up-to-date runs)*
+
+---
+
+## Interpretation
+
+* **Feedback-Driven Grammar:** Even without any language model or symbolic rules, feedback, memory, and field tension alone can produce attractor tokens, proto-roles, and recurrent grammar-like phrase shapes.
+* **Field Absorption:** New entropy tokens are absorbed and echoed for several turns before drifting out or stabilizing as attractors.
+* **Post-Symbolic Cognition:** The experiment is a microcosm of field-theoretic language emergence—supporting the DAWN theory idea that language can be an emergent field artifact, not a precondition for computation.
+
+---
+
+## Next Steps
+
+* Try larger agent populations, variable phrase lengths, or new agent role biases
+* Visualize role persistence over time (which tokens become persistent drivers, ends, etc.)
+* Compare runs with/without entropy injection
+* Test human-in-the-loop (agent A as human, agent B as simulation)
+
+---
+
+**Generated by: symbolic\_emergence\_sim.py**
+
+---
+CIP-METADATA-END

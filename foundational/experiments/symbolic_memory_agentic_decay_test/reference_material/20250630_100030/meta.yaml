@@ -1,0 +1,26 @@
+schema_version: '2.0'
+directory_name: '20250630_100030'
+description: Contains output data and visualizations from a specific run of the symbolic memory agentic decay test, including energy curves and field state images over time.
+semantic_scope:
+- experiment_run
+- symbolic_memory
+- agentic_decay
+- energy_curve
+- field_visualization
+- time_series_data
+files:
+- energy_curve.png
+- energy_over_time.csv
+- field_step_0.png
+- field_step_1.png
+- field_step_10.png
+- field_step_15.png
+- field_step_20.png
+- field_step_25.png
+- field_step_30.png
+- field_step_35.png
+- field_step_40.png
+- field_step_45.png
+- field_step_5.png
+- field_step_50.png
+child_directories: []

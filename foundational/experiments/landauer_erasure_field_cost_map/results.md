@@ -1,3 +1,13 @@
+---
+CIP-METADATA:
+  experiment: Landauer Erasure Field Cost Map
+  author: Peter Lorne Groom
+  date: 2025-06-30
+  version: 1.0
+  location: foundational/experiments/landauer_erasure_field_cost_map/results.md
+  description: |
+    This simulation visualizes and quantifies the energy cost of erasing symbolic information from a field governed by entropy decay. The goal is to demonstrate Landauer's principle through spatial and thermodynamic dynamics using a stochastic symbolic entropy substrate.
+---
 # Landauer Erasure Field Cost Map — Results Summary
 
 ## Objective
@@ -55,3 +65,5 @@ This simulation offers a visual and quantitative basis for Landauer's principle 
 ---
 
 *Simulation and documentation prepared for inclusion in symbolic thermodynamics whitepaper draft.*
+---
+CIP-METADATA-END

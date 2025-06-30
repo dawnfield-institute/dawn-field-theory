@@ -1,3 +1,13 @@
+---
+CIP-METADATA:
+  experiment: Symbolic Superfluid Collapse
+  author: Peter Lorne Groom
+  date: 2025-06-30
+  version: 1.0
+  location: foundational/experiments/symbolic_superfluid_collapse_pi/results.md
+  description: |
+    This experiment investigates the emergent behavior of symbolic particles within a synthetic superfluid-like field governed by pi-harmonic angular modulation and radial attractor geometry. The aim is to simulate how symbolic logic structures, entropy, and spatial dynamics converge in a shared system, toward a self-organizing, rest-state geometry.
+---
 # Symbolic Superfluid Collapse — Experiment Overview
 
 ## Purpose
@@ -66,3 +76,5 @@ Symbolic rules (e.g., `A + B -> C`) govern local interactions. We track:
 * [Simulation Script](../symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py)
 * [Raw Logs](reference_material/latest_batch/symbolic_transitions.json)
 * [RESULTS.md](reference_material/latest_batch/RESULTS.md)
+---
+CIP-METADATA-END

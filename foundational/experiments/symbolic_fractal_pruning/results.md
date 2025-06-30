@@ -1,3 +1,13 @@
+---
+CIP-METADATA:
+  experiment: Symbolic Fractal Pruning
+  author: Peter Lorne Groom
+  date: 2025-06-30
+  version: 1.0
+  location: foundational/experiments/symbolic_fractal_pruning/results.md
+  description: |
+    This experiment investigates whether recursive calculus operations (Laplacian, gradient) can prune a complex symbolic field seeded with fractured, non-uniform geometry. The aim is to explore the symbolic analogs of field collapse, entropy regulation, and symbolic morphogenesis — inspired by principles of recursion, balance, and information dynamics.
+---
 # Symbolic Fractal Pruning Experiment – Results Summary
 
 ## Objective
@@ -65,3 +75,5 @@ reference_material/pruning_YYYYMMDD_HHMMSS/
 ```
 
 Includes all visuals and `pruning_stats.json` for analysis and citation.
+---
+CIP-METADATA-END
