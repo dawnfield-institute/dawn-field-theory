@@ -1,10 +1,14 @@
 dawn-field-theory/
   .gitignore
   CONTRIBUTION.md
-  INTENTIONS.md
   LICENSE
   LICENSE_APPENDIX.md
+  MISSION.md
   README.md
+  backlog/
+    [m][D][v0.1][C6][I1]_cimm_ml_vs_sec_benchmark_plan.md
+    meta.yaml
+    output.txt
   blueprints/
     LICENSE.md
     README.md
@@ -65,11 +69,17 @@ dawn-field-theory/
         meta.yaml
         v2_roadmap.md
     qsocket.md
+  citations/
+    citations_apa.txt
+    citations_bibtex.bib
+    external_citations.md
+    meta.yaml
   cognition_index_protocol/
     README.md
     architecture/
       CIP_architecturev1.md
       meta.yaml
+    copilot_case_study.md
     gpt/
       CIP_GPT_architecturev2.md
       git_action.yaml
@@ -80,24 +90,19 @@ dawn-field-theory/
       prompt.txt
     meta.yaml
   dawn-field-theory.md
-  citations/
-    external_citations.md
-    citations_bibtex.bib
-    citations_apa.txt
-  external_citations.md
   devkit/
     README.md
     compression/
       FractalIntrinsicMetadataCompression.py
       Fractal_ISM_Field_Theory_Compression_Demo.ipynb
       fractal_ism_compression.md
-      meta.yaml
       legacy/
-        Compression_test1.py
         CompressionTest2.py
+        Compression_test1.py
         EntropicCompression_test.py
         compressiondoc.md
         meta.yaml
+      meta.yaml
     hash_evaluation/
       SELID.py
       SELID_validation.py
@@ -125,6 +130,7 @@ dawn-field-theory/
     docs/
       README.md
       [m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md
+      [m][F][v0.1][C5][I5]_symbolic_entropy_collapse_and_hodge_mapping.md
       [m][F][v1.0][C4][I4]_recursive_tree.md
       [m][F][v1.0][C4][I4]_super_fluid.md
       [m][F][v1.0][C4][I5]_bifractal_time_emergence.md
@@ -138,7 +144,6 @@ dawn-field-theory/
       [m][F][v1.1][C4][I5]_recursive_entopy.md
       [m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
       [m][S][v1.0][C3][I4]_dawn_field_theory_timed_summary.md
-      [m][F][v0.1][C5][I5]_symbolic_entropy_collapse_and_hodge_mapping.md
       docx/
         Alignment of Hiroshima University's Double-Slit Findings with Dawn Field.docx
         DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
@@ -462,6 +467,7 @@ dawn-field-theory/
             modulated_full_analysis.png
             robustness_results.csv
         unification_plan.md
+      landauer_erasure_field_cost_map/
       language_to_logic/
         language_to_logic.py
         meta.yaml
@@ -571,6 +577,15 @@ dawn-field-theory/
           meta.yaml
           pi_harmonic_results2025-06-17 135126.png
         results.md
+      predictive_collapse/
+        [m][E][v1.0][C1][I1]_predictive_collapse_simulation.py
+        reference_material/
+          20250630_090133/
+            forecasted_collapse_data.csv
+            forecasted_collapse_plot.png
+            simulation_log.txt
+            snapshot_generation_29.png
+        results.md
       recursive_entropy/
         meta.yaml
         recursive_entopy.py
@@ -612,42 +627,22 @@ dawn-field-theory/
       symbolic_entropy_collapse/
         [m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md
         [x][F][v1.0][C1][I1]_symbolic_entropy_engine.py
-        reference_material/
-          20250624_185441/
-            Classical/
-              seed_101/
-               
-            metadata.json
-      symbolic_fractal_pruning/
         meta.yaml
         reference_material/
-          meta.yaml
-          pruning_20250622_163425/
-            active_ratio_over_time.png
-            entropy_over_time.png
+          20250622_160040/
+            collapse_diagnostics.png
+            collapse_field.png
+            collapse_logs.csv
             meta.yaml
-            pruning_stats.json
-            step_01.png
-            step_02.png
-            step_03.png
-            step_04.png
-            step_05.png
-            step_06.png
-            step_07.png
-            step_08.png
-            step_09.png
-            step_10.png
-            step_11.png
-            step_12.png
-            step_13.png
-            step_14.png
-            step_15.png
-            step_16.png
-            step_17.png
-            step_18.png
-            step_19.png
-            step_20.png
-            symbol_lifetimes.png
+          20250622_160535_batch/
+            RESULTS.md
+            average_speed.png
+            entropy_change.png
+            meta.yaml
+            particles_near_center.png
+            symbolic_entropy.png
+            symbolic_transitions.json
+          meta.yaml
         results.md
         symbolic_fractal_pruning.py
       symbolic_superfluid_collapse_pi/
@@ -724,7 +719,6 @@ dawn-field-theory/
     lexicon.yaml
     meta.yaml
     whats_next.md
-  generate_meta_yamls.py
   generate_path.py
   infodynamics.md
   map.yaml
@@ -890,4 +884,5 @@ dawn-field-theory/
     todolist.md
   tools/
     converter.py
+    generate_meta_yamls.py
     meta.yaml
