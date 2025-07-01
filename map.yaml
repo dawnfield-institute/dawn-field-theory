@@ -1201,9 +1201,10 @@ dawn-field-theory/
   todo/
     meta.yaml
     todolist.md
-    hodge/
-      hodge_paper.md
+    left_for_first_release/
+      AI_Blackbox.md
       meta.yaml
+      quantum_testing.md
   tools/
     converter.py
     meta.yaml

@@ -130,3 +130,6 @@ dmypy.json
 
 # CIMM log file
 cimm.log
+
+# Ignore internal workspace directory
+/internal/
