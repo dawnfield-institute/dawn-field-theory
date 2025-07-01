@@ -274,5 +274,10 @@ Dialogue and commentary are welcome—contact info is in [MISSION.md](./MISSION.
 
 ---
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15783623.svg)](https://zenodo.org/records/15783623)
+
+> **Cite this work:**  
+> Groom, P. (2025). Dawn Field Theory. Zenodo. [https://doi.org/10.5281/zenodo.15783623](https://doi.org/10.5281/zenodo.15783623)
+
 © 2025 The Dawn Field Institute  
 All rights reserved under AGPL-3.0 + Epistemic Constraint Framework
