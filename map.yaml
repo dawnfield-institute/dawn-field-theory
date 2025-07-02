@@ -144,6 +144,7 @@ dawn-field-theory/
           meta.yaml
     docs/
       README.md
+      [id][F][v1.0][C5][I5][E]_landauer_erasure_cost_superfluidity_viscosity.md
       [id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md
       [id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md
       [id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md
@@ -1165,6 +1166,7 @@ dawn-field-theory/
       meta.yaml
       docs/
         meta.yaml
+        testing_plan.md
         architecture/
           meta.yaml
           overview.md
@@ -1205,6 +1207,7 @@ dawn-field-theory/
     todolist.md
     left_for_first_release/
       AI_Blackbox.md
+      cip_domain_upgrade.md
       meta.yaml
       quantum_testing.md
   tools/
