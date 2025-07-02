@@ -80,3 +80,18 @@ Partially adapted from:
 - Infodynamics Tensor Algebra prototype
 
 **Planned upgrade**: GPU-native parallel field tension model with live entropy decay visualization.
+
+---
+
+## 2025 Experimental Upgrades
+
+- **Protocol-driven Field Tension & Collapse:**
+  - Field Engine now supports protocol-driven field tension monitoring and collapse triggering, with all events timestamped and empirically validated.
+- **Live Entropy & Collapse Front Visualization:**
+  - Adds live visualization of entropy decay, collapse front propagation, and field pressure dynamics.
+- **Multi-Agent Field Dynamics:**
+  - Supports multi-agent field interactions and entangled collapse scenarios.
+- **Advanced Field Metrics:**
+  - Tracks fractal dimension, entropy divergence, and field attractor formation for all field states.
+
+These upgrades make the Field Engine more adaptive, empirically validated, and aligned with the latest experimental protocols.

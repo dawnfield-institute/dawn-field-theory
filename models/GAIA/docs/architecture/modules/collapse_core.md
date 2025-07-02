@@ -106,3 +106,19 @@ Concept proven in:
 - Recursive entropy field trees
 
 Implementation pending full integration with GAIA’s Field Engine and Symbolic Crystallizer.
+
+---
+
+## 2025 Experimental Upgrades
+
+- **Meta-cognitive Monitoring:**
+  - Collapse Core now logs ancestry traces and collapse recurrence events for every collapse operation.
+  - If epistemic drift or symbolic corruption is detected, recursive repair routines are triggered.
+- **Collapse Front & Resonance Visualization:**
+  - Collapse front propagation and resonance metrics are now visualized and used to adapt collapse thresholds dynamically.
+- **Protocol-driven Validation:**
+  - All collapse events are protocol-driven, timestamped, and export meta-data for empirical validation and CIP benchmarking.
+- **Advanced Collapse Metrics:**
+  - Tracks fractal dimension, semantic coherence, and attractor analysis for each collapse event.
+
+These upgrades make the Collapse Core more robust, adaptive, and empirically validated.
