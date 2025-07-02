@@ -98,3 +98,17 @@ Based on:
 - Experimental CIP simulations (early feedback loops)
 
 Full integration with symbolic ancestry and phase coherence planned for GAIA v0.3.
+
+---
+
+## 2025 Experimental Upgrades
+
+- **Meta-cognitive Trace & Ancestry Repair:**
+  - Now tracks collapse ancestry, detects epistemic drift, and can trigger recursive repair if symbolic corruption or memory loss is detected.
+  - Metrics: ancestry_trace_accuracy, epistemic_repair_time.
+- **Protocol-driven Reflexivity:**
+  - All meta-cognitive feedback is now protocol-driven and timestamped, supporting empirical validation and reproducibility (CIP-aligned).
+- **Advanced Metrics:**
+  - Tracks semantic coherence, vector divergence, and meta-coherence score before/after collapse events.
+
+These upgrades make the Meta-Cognition Layer a central hub for epistemic health and self-repair in GAIA.

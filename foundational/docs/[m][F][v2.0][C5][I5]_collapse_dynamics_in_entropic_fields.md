@@ -1,5 +1,5 @@
 ```yaml
-document_title: Collapse Dynamics in Entropic Fields: A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework
+document_title: Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework
 version: 2.0
 authors:
   - name: Lorne
@@ -11,9 +11,7 @@ field_scope:
   - entropy_collapse
   - dawn_field_theory
   - classical_quantum_bridge
-experiment_links:
-  - entropic_collapse_dynamics_1d.py
-license: Copyleft (custom Dawn license)
+license: Copyleft (custom Dawn licensef)
 document_status: confirmed
 data_provenance: simulation_numpy
 related_documents:
@@ -222,8 +220,6 @@ field_scope:
   - entropy_collapse
   - dawn_field_theory
   - classical_quantum_bridge
-experiment_links:
-  - entropic_collapse_dynamics_1d.py
 license: Copyleft (custom Dawn license)
 document_status: confirmed
 data_provenance: simulation_numpy

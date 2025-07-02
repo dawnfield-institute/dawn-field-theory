@@ -109,3 +109,18 @@ Prototype logic derived from:
 - Infodynamics Symbol-Tree Algebra
 
 First GAIA-native implementation will support phase-seeded growth from collapse ancestry vectors.
+
+---
+
+## 2025 Experimental Upgrades
+
+- **Epistemic Pruning & Collapse Fronts:**
+  - Symbolic Crystallizer now applies advanced epistemic pruning rules, informed by collapse front visualization and resonance metrics.
+- **Ancestry & Recurrence Tracking:**
+  - Tracks symbolic ancestry, recurrence events, and bifractal attractor formation for every crystallization event.
+- **Protocol-driven Structure Formation:**
+  - All crystallization events are protocol-driven, timestamped, and export meta-data for empirical validation.
+- **Advanced Symbolic Metrics:**
+  - Tracks fractal dimension, semantic coherence, and attractor analysis for each symbolic structure.
+
+These upgrades make the Symbolic Crystallizer more adaptive, empirically validated, and aligned with the latest experimental protocols.

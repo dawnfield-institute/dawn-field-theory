@@ -68,3 +68,28 @@ It is built not to simulate intelligence—but to **embody it**.
               ┌────────────────────────────┐
               │    Meta-Cognition Layer    │
               └────────────────────────────┘
+```
+
+---
+
+## 🧬 2025 Experimental Upgrades & Integration
+
+Recent Dawn Field experiments have led to several key upgrades across the GAIA architecture:
+
+- **Meta-Cognitive Trace & Ancestry Repair:**
+  - Meta-cognitive monitoring, ancestry tracking, and epistemic repair routines are now integrated, especially in the Meta-Cognition Layer and Collapse Core.
+  - New metrics: ancestry_trace_accuracy, epistemic_repair_time.
+- **Collapse Front Visualization & Resonance Monitoring:**
+  - Collapse front and resonance visualization are now part of the simulation pipeline.
+  - Resonance metrics adapt pruning thresholds dynamically.
+- **Multi-Agent and Interaction Effects:**
+  - Symbolic field models support multi-agent/entangled collapse and memory interference studies, especially in the Resonance Mesh.
+- **Empirical Validation Pipeline:**
+  - All experiments are protocol-driven, timestamped, and export meta-data for peer review.
+  - Cognition Index Protocol (CIP) is used for benchmarking and reflexive feedback.
+- **Advanced Metrics and Visualization:**
+  - Fractal dimension, semantic coherence, vector divergence, and attractor analysis are tracked and visualized throughout the architecture.
+- **Protocol and Schema Automation:**
+  - Pruning and collapse protocols are formalized as machine-readable schemas for automated experiment generation and meta-analysis.
+
+These integrations ensure GAIA remains at the frontier of emergent, epistemically robust intelligence architectures.

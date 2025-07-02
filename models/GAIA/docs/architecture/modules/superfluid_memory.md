@@ -96,3 +96,18 @@ Inspired by:
 - Quantum memory phase-space embeddings
 
 GAIA implementation will support live field visualization and entropy phase-drift mapping.
+
+---
+
+## 2025 Experimental Upgrades
+
+- **Memory Interference & Entangled Collapse:**
+  - Superfluid Memory now supports tracking of memory interference and entangled collapse events across multiple agents/fields.
+- **Recurrence & Attractor Analysis:**
+  - Tracks recurrence frequency, attractor stability, and memory decay curves for all stored structures.
+- **Protocol-driven Memory Validation:**
+  - All memory imprints and retrievals are protocol-driven, timestamped, and export meta-data for empirical validation.
+- **Advanced Memory Metrics:**
+  - Tracks fractal dimension, semantic coherence, and memory half-life for each macro-symbolic form.
+
+These upgrades make Superfluid Memory more robust, empirically validated, and aligned with the latest experimental protocols.

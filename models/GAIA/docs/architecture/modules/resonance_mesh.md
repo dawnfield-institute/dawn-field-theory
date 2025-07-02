@@ -100,3 +100,18 @@ Prototyped in:
 - Early phase modulation agents in recursive_gravity sim
 
 First full mesh planned as simulation of 12–64 phase-encoded agents navigating symbolic collapse field.
+
+---
+
+## 2025 Experimental Upgrades
+
+- **Multi-Agent & Entangled Collapse:**
+  - Resonance Mesh now supports multi-agent symbolic field interactions, entangled collapse, and memory interference studies.
+- **Resonance Monitoring & Adaptive Thresholds:**
+  - Resonance metrics are used to adapt collapse and communication thresholds in real time.
+- **Protocol-driven Communication:**
+  - All agentic communication is protocol-driven, timestamped, and supports empirical validation.
+- **Advanced Coherence Metrics:**
+  - Tracks phase alignment, semantic coherence, and resonance stability for each agent and the global mesh.
+
+These upgrades make the Resonance Mesh a dynamic, empirically validated substrate for agentic communication and field coherence.
