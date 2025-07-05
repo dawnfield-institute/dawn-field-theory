@@ -8,7 +8,7 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 - [Achieved Milestones](#achieved-milestones)
 - [Phase 0: Pre-Release Genesis](#phase-0-pre-release-genesis-2023–2024)
 - [Phase 1: Public Anchor](#phase-1-public-anchor-june-2025)
-- [Phase 2: Simulation Emergence (Current)](#phase-2-simulation-emergence-current-june–july-2025)
+- [Phase 2: Simulation Emergence (Wrapping Up)](#phase-2-simulation-emergence-wrapping-up-june–july-2025)
 - [Phase 2.5: 2025 Progress & Workflow Update](#phase-25-2025-progress--workflow-update-ongoing)
 - [Phase 3: Infodynamic Devkit](#phase-3-infodynamic-devkit-q3-2025)
 - [Phase 4: Model Genesis and Ingestion](#phase-4-model-genesis-and-ingestion-q4-2025)
@@ -55,11 +55,21 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 
 ---
 
-## Phase 2: Simulation Emergence (Current, June–July 2025)
-- Focus shifted to migrating and organizing foundational experiments
+## Phase 2: Simulation Emergence (Wrapping Up, June–July 2025)
+- Migration of foundational experiments and documents nearly complete
+- Two remaining papers to be uploaded
+- Finalizing AI whitebox testing: TinyCIMM vs classical ML model
+- Preparing for quantum empirical testing phase
 - Ensuring metadata and project organization are consistent across the repository
 - Hardening and documenting foundational experiments
-- Beginning to add notebook versions of simulations and experiments
+- Adding notebook versions of simulations and experiments
+
+---
+
+## Phase 2.5: 2025 Progress & Workflow Update (Ongoing)
+- Complete quantum empirical testing
+- Submit white papers for publication
+- Final project organization and documentation pass
 
 ---
 
