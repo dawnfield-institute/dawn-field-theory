@@ -7,6 +7,7 @@ dawn-field-theory/
   README.md
   dawn-field-theory.md
   for_ai_labs.md
+  generate_meta_yamls.py
   generate_path.py
   infodynamics.md
   map.yaml
@@ -1047,7 +1048,71 @@ dawn-field-theory/
         The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
         meta.yaml
   internal/
+    experiment_images.zip
+    meta.yaml
     test.py
+    backup/
+      meta.yaml
+      model_blackbox_backup.py
+    clean_sine/
+      meta.yaml
+      test_backup_cleansine.py
+      cleansine_experiment_images/
+        cimm_entropy_evolution_drift_sine.png
+        cimm_hidden_size_evolution_drift_sine.png
+        cimm_weights_step_0.png
+        cimm_weights_step_50.png
+        cimm_weights_step_100.png
+        cimm_weights_step_150.png
+        entropy_std_evolution_drift_sine.png
+        feedback_accuracy_drift_sine.png
+        fractal_dim_evolution_drift_sine.png
+        hidden_layer_size_evolution_drift_sine.png
+        loss_evolution_drift_sine.png
+        meta.yaml
+        mlp_weights_step_0.png
+        mlp_weights_step_50.png
+        mlp_weights_step_100.png
+        mlp_weights_step_150.png
+        output.txt
+        pred_vs_truth_drift_sine.png
+        qbe_pressure_evolution_drift_sine.png
+    experiment_images/
+      cimm_entropy_evolution_chaotic_sine.png
+      cimm_hidden_size_evolution_chaotic_sine.png
+      cimm_weights_step_0.png
+      cimm_weights_step_50.png
+      ...
+      cimm_weights_step_500.png
+      cimm_weights_step_550.png
+      curvature_step_0.png
+      curvature_step_10.png
+      curvature_step_580.png
+      curvature_step_590.png
+      entropy_std_evolution_chaotic_sine.png
+      feedback_accuracy_chaotic_sine.png
+      feedback_geometry_pca_0.png
+      feedback_geometry_pca_20.png
+      feedback_geometry_pca_560.png
+      feedback_geometry_pca_580.png
+      fractal_dim_evolution_chaotic_sine.png
+      hidden_layer_size_evolution_chaotic_sine.png
+      loss_evolution_chaotic_sine.png
+      meta.yaml
+      mlp_weights_step_0.png
+      mlp_weights_step_50.png
+      mlp_weights_step_500.png
+      mlp_weights_step_550.png
+      output.txt
+      pred_vs_truth_chaotic_sine.png
+      qbe_pressure_evolution_chaotic_sine.png
+      weight_hist_0.png
+      weight_hist_10.png
+      weight_hist_580.png
+      weight_hist_590.png
+    experiment_logs/
+      chaotic_sine_log.csv
+      meta.yaml
   models/
     README.md
     meta.yaml
@@ -1199,6 +1264,117 @@ dawn-field-theory/
           epistemic_field_theory.md
           meta.yaml
           recursive_balance_field.md
+    TinyCIMM/
+      TinyCIMM_fractal_explainability.md
+      goals.md
+      meta.yaml
+      tinycimm.py
+      __pycache__/
+        meta.yaml
+        tinycimm.cpython-311.pyc
+      experiment_images/
+        meta.yaml
+        amp_mod_sine/
+          cimm_weights_step_0.png
+          cimm_weights_step_50.png
+          cimm_weights_step_100.png
+          cimm_weights_step_150.png
+          feedback_geometry_pca_20.png
+          feedback_geometry_pca_40.png
+          ...
+          feedback_geometry_pca_160.png
+          feedback_geometry_pca_180.png
+          loss_evolution_overlay_amp_mod_sine.png
+          meta.yaml
+          pred_vs_truth_overlay_amp_mod_sine.png
+          weight_hist_0.png
+          weight_hist_10.png
+          weight_hist_180.png
+          weight_hist_190.png
+        chaotic_sine/
+          cimm_weights_step_0.png
+          cimm_weights_step_50.png
+          cimm_weights_step_100.png
+          cimm_weights_step_150.png
+          feedback_geometry_pca_20.png
+          feedback_geometry_pca_40.png
+          ...
+          feedback_geometry_pca_160.png
+          feedback_geometry_pca_180.png
+          loss_evolution_overlay_chaotic_sine.png
+          meta.yaml
+          pred_vs_truth_overlay_chaotic_sine.png
+          weight_hist_0.png
+          weight_hist_10.png
+          weight_hist_180.png
+          weight_hist_190.png
+        clean_sine/
+          cimm_weights_step_0.png
+          cimm_weights_step_50.png
+          cimm_weights_step_100.png
+          cimm_weights_step_150.png
+          feedback_geometry_pca_20.png
+          feedback_geometry_pca_40.png
+          ...
+          feedback_geometry_pca_160.png
+          feedback_geometry_pca_180.png
+          loss_evolution_overlay_clean_sine.png
+          meta.yaml
+          pred_vs_truth_overlay_clean_sine.png
+          weight_hist_0.png
+          weight_hist_10.png
+          weight_hist_180.png
+          weight_hist_190.png
+        freq_mod_sine/
+          cimm_weights_step_0.png
+          cimm_weights_step_50.png
+          cimm_weights_step_100.png
+          cimm_weights_step_150.png
+          feedback_geometry_pca_20.png
+          feedback_geometry_pca_40.png
+          ...
+          feedback_geometry_pca_160.png
+          feedback_geometry_pca_180.png
+          loss_evolution_overlay_freq_mod_sine.png
+          meta.yaml
+          pred_vs_truth_overlay_freq_mod_sine.png
+          weight_hist_0.png
+          weight_hist_10.png
+          weight_hist_180.png
+          weight_hist_190.png
+        noisy_sine/
+          cimm_weights_step_0.png
+          cimm_weights_step_50.png
+          cimm_weights_step_100.png
+          cimm_weights_step_150.png
+          feedback_geometry_pca_20.png
+          feedback_geometry_pca_40.png
+          ...
+          feedback_geometry_pca_160.png
+          feedback_geometry_pca_180.png
+          loss_evolution_overlay_noisy_sine.png
+          meta.yaml
+          pred_vs_truth_overlay_noisy_sine.png
+          weight_hist_0.png
+          weight_hist_10.png
+          weight_hist_180.png
+          weight_hist_190.png
+      experiment_logs/
+        clean_sine_log.csv
+        meta.yaml
+        tinycimm_amp_mod_sine_log.csv
+        tinycimm_chaotic_sine_log.csv
+        tinycimm_clean_sine_log.csv
+        tinycimm_freq_mod_sine_log.csv
+        tinycimm_mlp_amp_mod_sine_log.csv
+        tinycimm_mlp_chaotic_sine_log.csv
+        tinycimm_mlp_clean_sine_log.csv
+        tinycimm_mlp_freq_mod_sine_log.csv
+        tinycimm_mlp_noisy_sine_log.csv
+        tinycimm_noisy_sine_log.csv
+      experiments/
+        meta.yaml
+        run_experiment.py
   resources/
     meta.yaml
     recursive_structure.png
@@ -1212,5 +1388,4 @@ dawn-field-theory/
       quantum_testing.md
   tools/
     converter.py
-    generate_meta_yamls.py
     meta.yaml
