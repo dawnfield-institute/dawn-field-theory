@@ -233,7 +233,16 @@ def run_all_experiments():
     test_cases = [
         ("clean_sine", {}),
         ("amp_mod_sine", {}),
-        ("freq_mod_sine", {}),
+        ("freq_mod_sine", {
+            "hidden_size": 32,
+            "micro_memory_size": 20,
+            "symbolic_hold_steps": 5,
+            "growth_cooldown": 1,
+            "prune_margin": 1,
+            "hysteresis_steps": 1,
+            "min_interval": 1,
+            "cooldown_after_adapt": 2
+        }),
         ("noisy_sine", {}),
         ("chaotic_sine", {"hidden_size": 24, "micro_memory_size": 10, "symbolic_hold_steps": 20}),
     ]
@@ -241,7 +250,6 @@ def run_all_experiments():
         print(f"\n=== Running experiment: {test_name} ===")
         img_dir = os.path.join("experiment_images", test_name)
         os.makedirs(img_dir, exist_ok=True)
-        # Run TinyCIMM experiment (existing logic, but capture predictions and losses)
         x, y = get_signal(test_name, steps=200, seed=42)
         device = x.device
         if test_name == "clean_sine":
@@ -274,56 +282,12 @@ def run_all_experiments():
             if t % 10 == 0:
                 fd = fractal_dim(model.W)
                 cimm_fractals.append(fd if not (np.isnan(fd) or np.isinf(fd)) else np.nan)
-            # Save weights image
-            if t % 50 == 0:
-                plt.figure()
-                plt.imshow(model.W.detach().cpu().numpy(), aspect='auto', cmap='bwr')
-                plt.colorbar()
-                plt.title(f'TinyCIMM Weights at step {t}')
-                plt.tight_layout()
-                plt.savefig(os.path.join(img_dir, f'cimm_weights_step_{t}.png'))
-                plt.close()
-            # Save fractal diagnostic
-            if t % 10 == 0:
-                fd = fractal_dim(model.W)
-                if not np.isnan(fd):
-                    plt.figure()
-                    plt.title(f"Fractal Dim (step {t}) = {fd:.2f}")
-                    plt.imshow(np.abs(model.W.detach().cpu().numpy()) > 1e-5, aspect='auto', cmap='gray_r')
-                    plt.savefig(os.path.join(img_dir, f'fractal_dim_diag_{t}.png'))
-                    plt.close()
-                plt.figure()
-                plt.hist(model.W.detach().cpu().numpy().flatten(), bins=30)
-                plt.title(f"Weight Histogram (step {t})")
-                plt.savefig(os.path.join(img_dir, f'weight_hist_{t}.png'))
-                plt.close()
-            # PCA of activations
-            if t % 20 == 0 and hasattr(model, 'micro_memory') and len(model.micro_memory) >= 2:
-                activations = np.concatenate(model.micro_memory, axis=0)
-                if activations.shape[0] > 2 and activations.shape[1] > 1:
-                    pca = PCA(n_components=2)
-                    pca_proj = pca.fit_transform(activations)
-                    error_vals = np.abs((yhat - y).detach().cpu().numpy().flatten())
-                    n_points = pca_proj.shape[0]
-                    if len(error_vals) < n_points:
-                        error_vals = np.pad(error_vals, (0, n_points - len(error_vals)), mode='constant')
-                    elif len(error_vals) > n_points:
-                        error_vals = error_vals[-n_points:]
-                    plt.figure()
-                    plt.scatter(pca_proj[:,0], pca_proj[:,1], c=error_vals, cmap='coolwarm', s=10)
-                    plt.colorbar(label='Error Magnitude')
-                    plt.title(f'Neuron Activation PCA (step {t})')
-                    plt.tight_layout()
-                    plt.savefig(os.path.join(img_dir, f'feedback_geometry_pca_{t}.png'))
-                    plt.close()
-            # Store predictions for diagnostics
             cimm_raw_preds.append(yhat.detach().cpu().numpy().flatten())
-            # Smoothing (optional, can be expanded)
             curvature = torch.gradient(torch.gradient(y.squeeze())[0])[0].detach().cpu().numpy()
             yhat_smooth = conditional_smooth(yhat, curvature)
             cimm_smoothed_preds.append(yhat_smooth.detach().cpu().numpy().flatten())
         save_logs(logs, test_name)
-        # Run MLP benchmark and capture predictions/losses
+        # MLP benchmark (unchanged)
         class SimpleMLP(nn.Module):
             def __init__(self, input_size, hidden_size=16, output_size=1):
                 super().__init__()
@@ -348,7 +312,6 @@ def run_all_experiments():
             mlp_preds.append(yhat.detach().cpu().numpy().flatten())
         save_logs([{'step': t, 'loss': l} for t, l in enumerate(mlp_losses)], f"mlp_{test_name}")
         # Overlayed plots
-        # Predictions vs. Ground Truth
         plt.figure()
         plt.plot(x.cpu().numpy(), y.cpu().numpy(), label='Ground Truth')
         if len(cimm_raw_preds) > 0:
@@ -359,7 +322,6 @@ def run_all_experiments():
         plt.tight_layout()
         plt.savefig(os.path.join(img_dir, f'pred_vs_truth_overlay_{test_name}.png'))
         plt.close()
-        # Loss Evolution
         plt.figure()
         plt.plot(cimm_losses, label='TinyCIMM')
         plt.plot(mlp_losses, label='MLP')
@@ -370,7 +332,7 @@ def run_all_experiments():
         plt.tight_layout()
         plt.savefig(os.path.join(img_dir, f'loss_evolution_overlay_{test_name}.png'))
         plt.close()
-        # ...existing code for TinyCIMM-only plots (entropy, fractal, etc)...
+        # ...existing code for TinyCIMM-only plots...
 
 if __name__ == "__main__":
     run_all_experiments()
