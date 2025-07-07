@@ -40,7 +40,7 @@ The compiler performs the following operations:
 `If the report isn’t finalized by noon, tell the team to move forward without it and update the timeline accordingly.`
 
 **Collapse Tree:**
-![Collapse Tree 1](reference_material/2025-06-21_125818/testid_1/collapse_tree.png)
+![Collapse Tree 1](reference_material/2025-07-07_135536/testid_1/collapse_tree.png)
 
 **Logic Trace (partial):**
 
@@ -56,7 +56,7 @@ IF 'If the report isn’t finalized by noon'
 `Before you leave for lunch, make sure all systems are shut down and the logs are archived.`
 
 **Collapse Tree:**
-![Collapse Tree 2](reference_material/2025-06-21_125818/testid_2/collapse_tree.png)
+![Collapse Tree 2](reference_material/2025-07-07_135536/testid_2/collapse_tree.png)
 
 **Logic Trace (partial):**
 
@@ -72,7 +72,7 @@ IF 'Before you leave for lunch'
 `It would be great if you could send over the updated draft once you’re done reviewing it.`
 
 **Collapse Tree:**
-![Collapse Tree 3](reference_material/2025-06-21_125818/testid_3/collapse_tree.png)
+![Collapse Tree 3](reference_material/2025-07-07_135536/testid_3/collapse_tree.png)
 
 **Logic Trace (partial):**
 
