@@ -1,0 +1,80 @@
+{
+  "tree": {
+    "id": "eeecc730c5",
+    "text": "Before you leave for lunch, make sure all systems are shut down and the logs are archived.",
+    "role": "driver",
+    "entropy": 4.056,
+    "children": [
+      {
+        "id": "9bb7250050",
+        "text": "Before",
+        "role": "condition",
+        "entropy": 2.252,
+        "children": []
+      },
+      {
+        "id": "d975c85d98",
+        "text": "you leave for lunch, make sure all systems are shut down and the logs are archived.",
+        "role": "driver",
+        "entropy": 4.027,
+        "children": [
+          {
+            "id": "bb0347a468",
+            "text": "you",
+            "role": "end",
+            "entropy": 1.585,
+            "children": []
+          },
+          {
+            "id": "f6162bc8fa",
+            "text": "leave for lunch, make sure all systems are shut down and the logs are archived.",
+            "role": "junction",
+            "entropy": 3.998,
+            "children": [
+              {
+                "id": "af193190b8",
+                "text": "leave",
+                "role": "end",
+                "entropy": 1.922,
+                "children": []
+              },
+              {
+                "id": "b3de7c44b6",
+                "text": "for lunch, make sure all systems are shut down and the logs are archived.",
+                "role": "driver",
+                "entropy": 4.029,
+                "children": [
+                  {
+                    "id": "10c22bcf4c",
+                    "text": "for",
+                    "role": "end",
+                    "entropy": 1.585,
+                    "children": []
+                  },
+                  {
+                    "id": "2e4e44191a",
+                    "text": "lunch, make sure all systems are shut down and the logs are archived.",
+                    "role": "condition",
+                    "entropy": 3.969,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logic_trace": [
+    "DO 'Before you leave for lunch, make sure all systems are shut down and the logs are archived.'",
+    "  IF 'Before' THEN",
+    "  DO 'you leave for lunch, make sure all systems are shut down and the logs are archived.'",
+    "    END 'you'",
+    "    JUNCTION 'leave for lunch, make sure all systems are shut down and the logs are archived.'",
+    "      END 'leave'",
+    "      DO 'for lunch, make sure all systems are shut down and the logs are archived.'",
+    "        END 'for'",
+    "        IF 'lunch, make sure all systems are shut down and the logs are archived.' THEN"
+  ]
+}
