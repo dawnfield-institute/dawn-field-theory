@@ -86,16 +86,23 @@ def conditional_smooth(pred, curvature, window=3, threshold=0.1):
             smoothed[i] = pred_flat[i - window:i + window + 1].mean()
     return smoothed.unsqueeze(1).to(pred.device)
 
-def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
+def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42, **kwargs):
     x, y = get_signal(signal, steps, seed)
     device = x.device
-    model = model_cls(input_size=x.shape[1], hidden_size=8, output_size=1, device=device)
+    hidden_size = kwargs.pop('hidden_size', 8)  # Default to 8 if not provided
+    model = model_cls(input_size=x.shape[1], hidden_size=hidden_size, output_size=1, device=device, **kwargs)
     controller = FractalQBEController()
     entropy_monitor = EntropyMonitorLite(momentum=0.9)
+    model.set_entropy_monitor(entropy_monitor)  # Attach entropy monitor to model
     logs = []
     cimm_entropies, cimm_hsizes, cimm_fractals, cimm_feedbacks, cimm_losses = [], [], [], [], []
     cimm_raw_preds, cimm_smoothed_preds = [], []
     prev_yhat = None
+
+    # Create signal-specific subfolder
+    signal_img_dir = os.path.join(IMG_DIR, signal)
+    os.makedirs(signal_img_dir, exist_ok=True)
+
     for t in range(steps):
         yhat = model(x)
         loss = compute_loss(yhat, y)
@@ -119,6 +126,12 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
         cimm_hsizes.append(model.hidden_dim)
         cimm_losses.append(loss.item())
         cimm_feedbacks.append(float((torch.abs(yhat - y) < 0.3).float().mean().item()))
+
+        # Analyze results using TinyCIMM's built-in method
+        if t % 10 == 0:
+            analysis_results = model.analyze_results()
+            logs[-1].update(analysis_results)  # Add analysis results to logs
+
         # Fractal dimension logging
         if t % 10 == 0:
             fd = fractal_dim(model.W)
@@ -130,7 +143,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
             plt.colorbar()
             plt.title(f'TinyCIMM Weights at step {t}')
             plt.tight_layout()
-            plt.savefig(os.path.join(IMG_DIR, f'cimm_weights_step_{t}.png'))
+            plt.savefig(os.path.join(signal_img_dir, f'cimm_weights_step_{t}.png'))
             plt.close()
         # Save fractal diagnostic
         if t % 10 == 0:
@@ -139,12 +152,12 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
                 plt.figure()
                 plt.title(f"Fractal Dim (step {t}) = {fd:.2f}")
                 plt.imshow((torch.abs(model.W.detach()) > 1e-5).cpu().numpy(), aspect='auto', cmap='gray_r')
-                plt.savefig(os.path.join(IMG_DIR, f'fractal_dim_diag_{t}.png'))
+                plt.savefig(os.path.join(signal_img_dir, f'fractal_dim_diag_{t}.png'))
                 plt.close()
             plt.figure()
             plt.hist(model.W.detach().cpu().numpy().flatten(), bins=30)
             plt.title(f"Weight Histogram (step {t})")
-            plt.savefig(os.path.join(IMG_DIR, f'weight_hist_{t}.png'))
+            plt.savefig(os.path.join(signal_img_dir, f'weight_hist_{t}.png'))
             plt.close()
         # PCA of activations
         if t % 20 == 0 and hasattr(model, 'micro_memory') and len(model.micro_memory) >= 2:
@@ -161,9 +174,9 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
                 plt.figure()
                 plt.scatter(pca_proj[:,0], pca_proj[:,1], c=error_vals, cmap='coolwarm', s=10)
                 plt.colorbar(label='Error Magnitude')
-                plt.title(f'Neuron Activation PCA (step {t})')
+                plt.title(f'Neuron Activation PCA (step {t}')
                 plt.tight_layout()
-                plt.savefig(os.path.join(IMG_DIR, f'feedback_geometry_pca_{t}.png'))
+                plt.savefig(os.path.join(signal_img_dir, f'feedback_geometry_pca_{t}.png'))
                 plt.close()
         # Store predictions for diagnostics
         cimm_raw_preds.append(yhat.detach().cpu().numpy().flatten())
@@ -182,7 +195,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.legend()
     plt.title('Predictions vs. Ground Truth')
     plt.tight_layout()
-    plt.savefig(os.path.join(IMG_DIR, f'pred_vs_truth_{signal}.png'))
+    plt.savefig(os.path.join(signal_img_dir, f'pred_vs_truth_{signal}.png'))
     plt.close()
     plt.figure()
     plt.plot(cimm_entropies, label='TinyCIMM entropy')
@@ -191,7 +204,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.legend()
     plt.title('Entropy Evolution')
     plt.tight_layout()
-    plt.savefig(os.path.join(IMG_DIR, f'entropy_evolution_{signal}.png'))
+    plt.savefig(os.path.join(signal_img_dir, f'entropy_evolution_{signal}.png'))
     plt.close()
     plt.figure()
     plt.plot(cimm_hsizes, label='TinyCIMM hidden size')
@@ -200,7 +213,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.legend()
     plt.title('Hidden Layer Size Evolution')
     plt.tight_layout()
-    plt.savefig(os.path.join(IMG_DIR, f'hidden_layer_size_evolution_{signal}.png'))
+    plt.savefig(os.path.join(signal_img_dir, f'hidden_layer_size_evolution_{signal}.png'))
     plt.close()
     plt.figure()
     cfd_x = torch.arange(0, steps, 10)[:len(cimm_fractals)]
@@ -212,7 +225,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.legend()
     plt.title('Fractal Dimension Evolution')
     plt.tight_layout()
-    plt.savefig(os.path.join(IMG_DIR, f'fractal_dim_evolution_{signal}.png'))
+    plt.savefig(os.path.join(signal_img_dir, f'fractal_dim_evolution_{signal}.png'))
     plt.close()
     plt.figure()
     plt.plot(cimm_feedbacks, label='TinyCIMM Feedback (Accuracy)')
@@ -221,7 +234,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.legend()
     plt.title('TinyCIMM Feedback/Accuracy')
     plt.tight_layout()
-    plt.savefig(os.path.join(IMG_DIR, f'feedback_accuracy_{signal}.png'))
+    plt.savefig(os.path.join(signal_img_dir, f'feedback_accuracy_{signal}.png'))
     plt.close()
     plt.figure()
     plt.plot(cimm_losses, label='TinyCIMM MSE Loss')
@@ -230,9 +243,8 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.legend()
     plt.title('TinyCIMM Raw Loss Evolution')
     plt.tight_layout()
-    plt.savefig(os.path.join(IMG_DIR, f'loss_evolution_{signal}.png'))
+    plt.savefig(os.path.join(signal_img_dir, f'loss_evolution_{signal}.png'))
     plt.close()
-
 def run_all_experiments():
     test_cases = [
         ("clean_sine", {}),
@@ -252,91 +264,7 @@ def run_all_experiments():
     ]
     for test_name, model_kwargs in test_cases:
         print(f"\n=== Running experiment: {test_name} ===")
-        img_dir = os.path.join("experiment_images", test_name)
-        os.makedirs(img_dir, exist_ok=True)
-        x, y = get_signal(test_name, steps=200, seed=42)
-        device = x.device
-        if test_name == "clean_sine":
-            model = TinyCIMM(input_size=x.shape[1], hidden_size=8, output_size=1, device=device)
-        else:
-            hidden_size = model_kwargs.get("hidden_size", 8)
-            model_kwargs_no_hidden = {k: v for k, v in model_kwargs.items() if k != "hidden_size"}
-            model = TinyCIMM(input_size=x.shape[1], hidden_size=hidden_size, output_size=1, device=device, **model_kwargs_no_hidden)
-        controller = FractalQBEController()
-        entropy_monitor = EntropyMonitorLite(momentum=0.9)
-        logs = []
-        cimm_entropies, cimm_hsizes, cimm_fractals, cimm_feedbacks, cimm_losses = [], [], [], [], []
-        cimm_raw_preds, cimm_smoothed_preds = [], []
-        for t in range(200):
-            yhat = model(x)
-            loss = compute_loss(yhat, y)
-            entropy = compute_entropy(model)
-            entropy_monitor.update(yhat)
-            model.optimizer.zero_grad()
-            loss.backward()
-            model.optimizer.step()
-            if hasattr(model, 'grow_and_prune'):
-                avg_feedback = float(torch.abs(yhat - y).mean().item())
-                model.grow_and_prune(avg_feedback, entropy, float(loss.item()), controller, entropy_monitor=entropy_monitor)
-            logs.append({'step': t, 'loss': loss.item(), 'entropy': entropy, 'neurons': model.hidden_dim})
-            cimm_entropies.append(entropy)
-            cimm_hsizes.append(model.hidden_dim)
-            cimm_losses.append(loss.item())
-            cimm_feedbacks.append(float((torch.abs(yhat - y) < 0.3).float().mean().item()))
-            if t % 10 == 0:
-                fd = fractal_dim(model.W)
-                cimm_fractals.append(fd if not (torch.isnan(torch.tensor(fd)) or torch.isinf(torch.tensor(fd))) else float('nan'))
-            cimm_raw_preds.append(yhat.detach().cpu().numpy().flatten())
-            curvature = torch.gradient(torch.gradient(y.squeeze())[0])[0].detach()
-            yhat_smooth = conditional_smooth(yhat, curvature)
-            cimm_smoothed_preds.append(yhat_smooth.detach().cpu().numpy().flatten())
-        save_logs(logs, test_name)
-        # MLP benchmark (unchanged)
-        class SimpleMLP(nn.Module):
-            def __init__(self, input_size, hidden_size=16, output_size=1):
-                super().__init__()
-                self.net = nn.Sequential(
-                    nn.Linear(input_size, hidden_size),
-                    nn.ReLU(),
-                    nn.Linear(hidden_size, output_size)
-                )
-            def forward(self, x):
-                return self.net(x)
-        mlp_model = SimpleMLP(input_size=x.shape[1], hidden_size=16, output_size=1).to(device)
-        mlp_optimizer = torch.optim.Adam(mlp_model.parameters(), lr=0.01)
-        mlp_losses = []
-        mlp_preds = []
-        for t in range(200):
-            yhat = mlp_model(x)
-            loss = compute_loss(yhat, y)
-            mlp_optimizer.zero_grad()
-            loss.backward()
-            mlp_optimizer.step()
-            mlp_losses.append(loss.item())
-            mlp_preds.append(yhat.detach().cpu().numpy().flatten())
-        save_logs([{'step': t, 'loss': l} for t, l in enumerate(mlp_losses)], f"mlp_{test_name}")
-        # Overlayed plots
-        plt.figure()
-        plt.plot(x.cpu().numpy(), y.cpu().numpy(), label='Ground Truth')
-        if len(cimm_raw_preds) > 0:
-            plt.plot(x.cpu().numpy(), torch.tensor(cimm_raw_preds[-1]), label='TinyCIMM', linestyle='dashed')
-        plt.plot(x.cpu().numpy(), torch.tensor(mlp_preds[-1]), label='MLP', linestyle='dotted')
-        plt.legend()
-        plt.title('Predictions vs. Ground Truth (TinyCIMM vs MLP)')
-        plt.tight_layout()
-        plt.savefig(os.path.join(img_dir, f'pred_vs_truth_overlay_{test_name}.png'))
-        plt.close()
-        plt.figure()
-        plt.plot(cimm_losses, label='TinyCIMM')
-        plt.plot(mlp_losses, label='MLP')
-        plt.xlabel('Iteration')
-        plt.ylabel('MSE Loss')
-        plt.legend()
-        plt.title('Loss Evolution (TinyCIMM vs MLP)')
-        plt.tight_layout()
-        plt.savefig(os.path.join(img_dir, f'loss_evolution_overlay_{test_name}.png'))
-        plt.close()
-        # ...existing code for TinyCIMM-only plots...
+        run_experiment(TinyCIMM, signal=test_name, **model_kwargs)
 
 if __name__ == "__main__":
     run_all_experiments()

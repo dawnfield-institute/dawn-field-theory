@@ -7,7 +7,6 @@ dawn-field-theory/
   README.md
   dawn-field-theory.md
   for_ai_labs.md
-  generate_meta_yamls.py
   generate_path.py
   infodynamics.md
   map.yaml
@@ -591,6 +590,39 @@ dawn-field-theory/
               meta.yaml
             testid_5/
               meta.yaml
+          2025-07-07_135536/
+            index.json
+            meta.yaml
+            testid_1/
+              collapse_tree.png
+              entropy_heatmap.png
+              logic_flow.json
+              meta.yaml
+              report.md
+            testid_2/
+              collapse_tree.png
+              entropy_heatmap.png
+              logic_flow.json
+              meta.yaml
+              report.md
+            testid_3/
+              collapse_tree.png
+              entropy_heatmap.png
+              logic_flow.json
+              meta.yaml
+              report.md
+            testid_4/
+              collapse_tree.png
+              entropy_heatmap.png
+              logic_flow.json
+              meta.yaml
+              report.md
+            testid_5/
+              collapse_tree.png
+              entropy_heatmap.png
+              logic_flow.json
+              meta.yaml
+              report.md
       legacy/
         README.md
         brain.md
@@ -1048,6 +1080,7 @@ dawn-field-theory/
         The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
         meta.yaml
   internal/
+    TinyCIMM_fractal_explainability.md
     experiment_images.zip
     meta.yaml
     test.py
@@ -1265,13 +1298,17 @@ dawn-field-theory/
           meta.yaml
           recursive_balance_field.md
     TinyCIMM/
-      TinyCIMM_fractal_explainability.md
-      goals.md
+      explainability_plan.md
       meta.yaml
+      output.txt
       tinycimm.py
       __pycache__/
         meta.yaml
         tinycimm.cpython-311.pyc
+      docs/
+        TinyCIMM_fractal_explainability.md
+        goals.md
+        meta.yaml
       experiment_images/
         meta.yaml
         amp_mod_sine/
@@ -1279,13 +1316,19 @@ dawn-field-theory/
           cimm_weights_step_50.png
           cimm_weights_step_100.png
           cimm_weights_step_150.png
+          entropy_evolution_amp_mod_sine.png
+          feedback_accuracy_amp_mod_sine.png
           feedback_geometry_pca_20.png
           feedback_geometry_pca_40.png
           ...
           feedback_geometry_pca_160.png
           feedback_geometry_pca_180.png
+          fractal_dim_evolution_amp_mod_sine.png
+          hidden_layer_size_evolution_amp_mod_sine.png
+          loss_evolution_amp_mod_sine.png
           loss_evolution_overlay_amp_mod_sine.png
           meta.yaml
+          pred_vs_truth_amp_mod_sine.png
           pred_vs_truth_overlay_amp_mod_sine.png
           weight_hist_0.png
           weight_hist_10.png
@@ -1296,13 +1339,19 @@ dawn-field-theory/
           cimm_weights_step_50.png
           cimm_weights_step_100.png
           cimm_weights_step_150.png
+          entropy_evolution_chaotic_sine.png
+          feedback_accuracy_chaotic_sine.png
           feedback_geometry_pca_20.png
           feedback_geometry_pca_40.png
           ...
           feedback_geometry_pca_160.png
           feedback_geometry_pca_180.png
+          fractal_dim_evolution_chaotic_sine.png
+          hidden_layer_size_evolution_chaotic_sine.png
+          loss_evolution_chaotic_sine.png
           loss_evolution_overlay_chaotic_sine.png
           meta.yaml
+          pred_vs_truth_chaotic_sine.png
           pred_vs_truth_overlay_chaotic_sine.png
           weight_hist_0.png
           weight_hist_10.png
@@ -1310,19 +1359,31 @@ dawn-field-theory/
           weight_hist_190.png
         clean_sine/
           cimm_weights_step_0.png
-          cimm_weights_step_50.png
+          cimm_weights_step_1.png
+          ...
           cimm_weights_step_100.png
           cimm_weights_step_150.png
+          entropy_evolution_clean_sine.png
+          feedback_accuracy_clean_sine.png
           feedback_geometry_pca_20.png
           feedback_geometry_pca_40.png
-          ...
           feedback_geometry_pca_160.png
           feedback_geometry_pca_180.png
+          fractal_dim_diag_0.png
+          fractal_dim_diag_1.png
+          fractal_dim_diag_2.png
+          fractal_dim_diag_3.png
+          fractal_dim_diag_4.png
+          fractal_dim_diag_5.png
+          fractal_dim_evolution_clean_sine.png
+          hidden_layer_size_evolution_clean_sine.png
+          loss_evolution_clean_sine.png
           loss_evolution_overlay_clean_sine.png
           meta.yaml
+          pred_vs_truth_clean_sine.png
           pred_vs_truth_overlay_clean_sine.png
           weight_hist_0.png
-          weight_hist_10.png
+          weight_hist_1.png
           weight_hist_180.png
           weight_hist_190.png
         freq_mod_sine/
@@ -1330,13 +1391,19 @@ dawn-field-theory/
           cimm_weights_step_50.png
           cimm_weights_step_100.png
           cimm_weights_step_150.png
+          entropy_evolution_freq_mod_sine.png
+          feedback_accuracy_freq_mod_sine.png
           feedback_geometry_pca_20.png
           feedback_geometry_pca_40.png
           ...
           feedback_geometry_pca_160.png
           feedback_geometry_pca_180.png
+          fractal_dim_evolution_freq_mod_sine.png
+          hidden_layer_size_evolution_freq_mod_sine.png
+          loss_evolution_freq_mod_sine.png
           loss_evolution_overlay_freq_mod_sine.png
           meta.yaml
+          pred_vs_truth_freq_mod_sine.png
           pred_vs_truth_overlay_freq_mod_sine.png
           weight_hist_0.png
           weight_hist_10.png
@@ -1347,13 +1414,19 @@ dawn-field-theory/
           cimm_weights_step_50.png
           cimm_weights_step_100.png
           cimm_weights_step_150.png
+          entropy_evolution_noisy_sine.png
+          feedback_accuracy_noisy_sine.png
           feedback_geometry_pca_20.png
           feedback_geometry_pca_40.png
           ...
           feedback_geometry_pca_160.png
           feedback_geometry_pca_180.png
+          fractal_dim_evolution_noisy_sine.png
+          hidden_layer_size_evolution_noisy_sine.png
+          loss_evolution_noisy_sine.png
           loss_evolution_overlay_noisy_sine.png
           meta.yaml
+          pred_vs_truth_noisy_sine.png
           pred_vs_truth_overlay_noisy_sine.png
           weight_hist_0.png
           weight_hist_10.png
@@ -1363,8 +1436,10 @@ dawn-field-theory/
         clean_sine_log.csv
         meta.yaml
         tinycimm_amp_mod_sine_log.csv
+        tinycimm_amp_mod_sine_metrics.csv
         tinycimm_chaotic_sine_log.csv
         tinycimm_clean_sine_log.csv
+        tinycimm_clean_sine_metrics.csv
         tinycimm_freq_mod_sine_log.csv
         tinycimm_mlp_amp_mod_sine_log.csv
         tinycimm_mlp_chaotic_sine_log.csv
@@ -1372,9 +1447,33 @@ dawn-field-theory/
         tinycimm_mlp_freq_mod_sine_log.csv
         tinycimm_mlp_noisy_sine_log.csv
         tinycimm_noisy_sine_log.csv
+        amp_mod_sine/
+          meta.yaml
+          tinycimm_amp_mod_sine_log.csv
+          tinycimm_amp_mod_sine_metrics.csv
+        chaotic_sine/
+          meta.yaml
+          tinycimm_chaotic_sine_log.csv
+          tinycimm_chaotic_sine_metrics.csv
+        clean_sine/
+          meta.yaml
+          tinycimm_clean_sine_log.csv
+          tinycimm_clean_sine_metrics.csv
+        freq_mod_sine/
+          meta.yaml
+          tinycimm_freq_mod_sine_log.csv
+          tinycimm_freq_mod_sine_metrics.csv
+        noisy_sine/
+          meta.yaml
+          tinycimm_noisy_sine_log.csv
+          tinycimm_noisy_sine_metrics.csv
       experiments/
         meta.yaml
         run_experiment.py
+        status.md
+        __pycache__/
+          meta.yaml
+          run_experiment.cpython-311.pyc
   resources/
     meta.yaml
     recursive_structure.png
@@ -1388,4 +1487,5 @@ dawn-field-theory/
       quantum_testing.md
   tools/
     converter.py
+    generate_meta_yamls.py
     meta.yaml

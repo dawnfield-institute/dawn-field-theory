@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: testid_1
+description: Metadata for testid_1, focusing on collapse tree and entropy heatmap analysis.
+semantic_scope:
+- foundational
+- language_to_logic
+- experiment
+- testid_1
+- collapse_tree
+- entropy_heatmap
+files:
+- collapse_tree.png
+- entropy_heatmap.png
+- logic_flow.json
+- report.md
+child_directories: []

@@ -1,0 +1,13 @@
+schema_version: '2.0'
+directory_name: clean_sine
+description: Metadata for clean_sine experiment logs, including CSV metrics and logs.
+semantic_scope:
+- TinyCIMM
+- experiment_logs
+- clean_sine
+- metrics
+- logs
+files:
+- tinycimm_clean_sine_log.csv
+- tinycimm_clean_sine_metrics.csv
+child_directories: []
