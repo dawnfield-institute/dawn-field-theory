@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
 import math
 
 # --- TinyCIMM-specific utilities and controllers ---
@@ -50,12 +49,12 @@ class FractalQBEController:
         self.loss_hist.append(loss)
         if len(self.entropy_hist) < self.feedback_window:
             return "none", 0
-        ent_arr = np.array(self.entropy_hist[-self.feedback_window:])
-        feed_arr = np.array(self.feedback_hist[-self.feedback_window:])
-        loss_arr = np.array(self.loss_hist[-self.feedback_window:])
-        ent_mu, ent_std = ent_arr.mean(), ent_arr.std()
-        feed_mu, feed_var = feed_arr.mean(), feed_arr.var()
-        loss_mu, loss_var = loss_arr.mean(), loss_arr.var()
+        ent_arr = torch.tensor(self.entropy_hist[-self.feedback_window:])
+        feed_arr = torch.tensor(self.feedback_hist[-self.feedback_window:])
+        loss_arr = torch.tensor(self.loss_hist[-self.feedback_window:])
+        ent_mu, ent_std = ent_arr.mean().item(), ent_arr.std().item()
+        feed_mu, feed_var = feed_arr.mean().item(), feed_arr.var().item()
+        loss_mu, loss_var = loss_arr.mean().item(), loss_arr.var().item()
         lower = ent_mu - self.entropy_band
         upper = ent_mu + self.entropy_band
         grow_amt = prune_amt = 0
@@ -140,7 +139,7 @@ class TinyCIMM(nn.Module):
 
     def forward(self, x, y_true=None):
         h = torch.relu(x @ self.W.T + self.b)
-        self.micro_memory.append(h.detach().cpu().numpy())
+        self.micro_memory.append(h.detach().cpu())
         if len(self.micro_memory) > self.micro_memory_size:
             self.micro_memory.pop(0)
         y = h @ self.V.T + self.c
@@ -161,7 +160,7 @@ class TinyCIMM(nn.Module):
     def log_entropy(self):
         if self.W.shape[0] > 1 and torch.isfinite(self.W).all():
             ent = torch.std(self.W, dim=0).mean().item()
-            if np.isnan(ent) or np.isinf(ent):
+            if torch.isnan(torch.tensor(ent)) or torch.isinf(torch.tensor(ent)):
                 ent = 1e-6
         else:
             ent = 1e-6
@@ -212,27 +211,27 @@ class TinyCIMM(nn.Module):
         base_temperature = 300
         neuron_entropies = torch.std(self.W.data, dim=1).detach().cpu()
         entropy_var = float(torch.var(neuron_entropies))
-        if not np.isfinite(entropy_var) or np.isnan(entropy_var):
+        if not torch.isfinite(torch.tensor(entropy_var)) or torch.isnan(torch.tensor(entropy_var)):
             entropy_var = 0.0
-        entropy_var = float(np.clip(entropy_var, 0.0, 10.0))
+        entropy_var = float(max(min(entropy_var, 10.0), 0.0))
         loss_trend = getattr(self, 'prev_loss', loss)
         entropy_trend = getattr(self, 'prev_entropy', entropy)
         loss_delta = loss - loss_trend
         entropy_delta = entropy - entropy_trend
         qbe_pressure = 1.0 + 0.5 * max(0, loss_delta) + 0.5 * max(0, entropy_delta)
-        qbe_pressure = float(np.clip(qbe_pressure, 0.8, 1.2))
+        qbe_pressure = float(max(min(qbe_pressure, 1.2), 0.8))
         self.qbe_pressure_ma = qbe_pressure
         base_entropy_thresh = 0.03
         if self.last_h is not None:
             activation_var = float(torch.var(self.last_h.detach().cpu()))
         else:
             activation_var = 0.0
-        if not np.isfinite(activation_var) or np.isnan(activation_var):
+        if not torch.isfinite(torch.tensor(activation_var)) or torch.isnan(torch.tensor(activation_var)):
             activation_var = 0.0
-        activation_var = float(np.clip(activation_var, 0.0, 10.0))
+        activation_var = float(max(min(activation_var, 10.0), 0.0))
         dynamic_thresh = base_entropy_thresh * (1 + 0.15 * entropy_var + 0.15 * activation_var) * self.qbe_pressure_ma
         dynamic_thresh = 0.7 * getattr(self, 'last_prune_thresh', 0.03) + 0.3 * dynamic_thresh
-        if not np.isfinite(dynamic_thresh) or np.isnan(dynamic_thresh):
+        if not torch.isfinite(torch.tensor(dynamic_thresh)) or torch.isnan(torch.tensor(dynamic_thresh)):
             dynamic_thresh = base_entropy_thresh
         self.last_prune_thresh = dynamic_thresh
         # Update loss_ma safely
@@ -256,18 +255,18 @@ class TinyCIMM(nn.Module):
             min_interval = int(10 - 8 * frac)
             max_growth_per_step = max(1, int(self.hidden_dim * (0.1 + 0.4 * frac)))
         neuron_entropies = torch.std(self.W.data, dim=1).detach().cpu().numpy()
-        entropy_mean = np.mean(neuron_entropies)
-        entropy_std = np.std(neuron_entropies)
-        if not np.isfinite(entropy_mean) or np.isnan(entropy_mean):
+        entropy_mean = neuron_entropies.mean().item()
+        entropy_std = neuron_entropies.std().item()
+        if not torch.isfinite(torch.tensor(entropy_mean)) or torch.isnan(torch.tensor(entropy_mean)):
             entropy_mean = base_entropy_thresh
-        if not np.isfinite(entropy_std) or np.isnan(entropy_std):
+        if not torch.isfinite(torch.tensor(entropy_std)) or torch.isnan(torch.tensor(entropy_std)):
             entropy_std = 0.0
         adaptive_entropy_thresh = entropy_mean + 0.5 * entropy_std
         qbe_pressure_val = qbe_smoothed if qbe_smoothed is not None else self.qbe_pressure_ma
-        if not np.isfinite(qbe_pressure_val) or np.isnan(qbe_pressure_val):
+        if not torch.isfinite(torch.tensor(qbe_pressure_val)) or torch.isnan(torch.tensor(qbe_pressure_val)):
             qbe_pressure_val = 1.0
         dynamic_thresh = adaptive_entropy_thresh * qbe_pressure_val
-        if not np.isfinite(dynamic_thresh) or np.isnan(dynamic_thresh):
+        if not torch.isfinite(torch.tensor(dynamic_thresh)) or torch.isnan(torch.tensor(dynamic_thresh)):
             dynamic_thresh = base_entropy_thresh
         self.last_prune_thresh = dynamic_thresh
         # Only update loss_ma once per call
@@ -315,7 +314,7 @@ class TinyCIMM(nn.Module):
             if self.growth_hysteresis >= hysteresis_steps or loss > 0.2:
                 amt = min(max(amt, 2), max_growth_per_step, max_hidden - self.hidden_dim)
                 for _ in range(amt):
-                    scale = np.random.choice([0.05, -0.05]) * np.random.uniform(1.0, 2.0)
+                    scale = 0.05 * (1 if torch.rand(1).item() > 0.5 else -1) * (1.0 + torch.rand(1).item())
                     new_w = scale * torch.randn(1, self.W.shape[1], device=self.device)
                     new_b = torch.zeros(1, device=self.device)
                     new_v = scale * torch.randn(self.V.shape[0], 1, device=self.device)

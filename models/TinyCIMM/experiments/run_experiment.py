@@ -1,7 +1,5 @@
-from sympy import im
 import torch
 import torch.nn as nn
-import numpy as np
 import pandas as pd
 import os
 import sys
@@ -17,7 +15,6 @@ os.makedirs(IMG_DIR, exist_ok=True)
 # Placeholder for signal generator
 # Replace with actual import if available
 def get_signal(signal_type, steps, seed=42):
-    np.random.seed(seed)
     torch.manual_seed(seed)
     x = torch.linspace(-2, 2, steps).unsqueeze(1)
     if signal_type == "chaotic_sine":
@@ -52,36 +49,42 @@ def box_count(Z, k):
     count = 0
     for i in range(0, S[0], k):
         for j in range(0, S[1], k):
-            if np.any(Z[i:i+k, j:j+k]):
+            if torch.any(Z[i:i+k, j:j+k]):
                 count += 1
     return count
 
 def fractal_dim(weights):
     if isinstance(weights, torch.Tensor):
-        W = weights.data.cpu().numpy()
+        W = weights.detach().abs() > 1e-5
     else:
-        W = weights
+        W = torch.tensor(weights).abs() > 1e-5
     if W.ndim != 2 or min(W.shape) < 4:
-        return np.nan
-    Z = np.abs(W) > 1e-5
-    if not np.any(Z):
-        return np.nan
-    sizes = np.arange(2, min(Z.shape)//2+1)
-    counts = [box_count(Z, size) for size in sizes if size < Z.shape[0] and size < Z.shape[1] and box_count(Z, size) > 0]
+        return float('nan')
+    if not torch.any(W):
+        return float('nan')
+    min_size = min(W.shape) // 2 + 1
+    sizes = torch.arange(2, min_size)
+    counts = []
+    for size in sizes:
+        bc = box_count(W, int(size.item()))
+        if size < W.shape[0] and size < W.shape[1] and bc > 0:
+            counts.append(bc)
     if len(counts) > 1:
-        coeffs = np.polyfit(np.log(sizes[:len(counts)]), np.log(counts), 1)
-        return -coeffs[0]
+        sizes_log = torch.log(sizes[:len(counts)].float())
+        counts_log = torch.log(torch.tensor(counts, dtype=torch.float))
+        coeffs = torch.linalg.lstsq(sizes_log.unsqueeze(1), counts_log).solution
+        return -coeffs[0].item()
     else:
-        return np.nan
+        return float('nan')
 
 def conditional_smooth(pred, curvature, window=3, threshold=0.1):
-    pred_np = pred.detach().cpu().numpy().flatten()
-    smooth_mask = (np.abs(curvature) < threshold)
-    smoothed = pred_np.copy()
-    for i in range(window, len(pred_np) - window):
+    pred_flat = pred.detach().flatten()
+    smooth_mask = (curvature.abs() < threshold)
+    smoothed = pred_flat.clone()
+    for i in range(window, len(pred_flat) - window):
         if smooth_mask[i]:
-            smoothed[i] = np.mean(pred_np[i - window:i + window + 1])
-    return torch.tensor(smoothed).unsqueeze(1).to(pred.device)
+            smoothed[i] = pred_flat[i - window:i + window + 1].mean()
+    return smoothed.unsqueeze(1).to(pred.device)
 
 def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     x, y = get_signal(signal, steps, seed)
@@ -119,7 +122,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
         # Fractal dimension logging
         if t % 10 == 0:
             fd = fractal_dim(model.W)
-            cimm_fractals.append(fd if not (np.isnan(fd) or np.isinf(fd)) else np.nan)
+            cimm_fractals.append(fd if not (torch.isnan(torch.tensor(fd)) or torch.isinf(torch.tensor(fd))) else float('nan'))
         # Save weights image
         if t % 50 == 0:
             plt.figure()
@@ -132,10 +135,10 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
         # Save fractal diagnostic
         if t % 10 == 0:
             fd = fractal_dim(model.W)
-            if not np.isnan(fd):
+            if not torch.isnan(torch.tensor(fd)):
                 plt.figure()
                 plt.title(f"Fractal Dim (step {t}) = {fd:.2f}")
-                plt.imshow(np.abs(model.W.detach().cpu().numpy()) > 1e-5, aspect='auto', cmap='gray_r')
+                plt.imshow((torch.abs(model.W.detach()) > 1e-5).cpu().numpy(), aspect='auto', cmap='gray_r')
                 plt.savefig(os.path.join(IMG_DIR, f'fractal_dim_diag_{t}.png'))
                 plt.close()
             plt.figure()
@@ -145,14 +148,14 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
             plt.close()
         # PCA of activations
         if t % 20 == 0 and hasattr(model, 'micro_memory') and len(model.micro_memory) >= 2:
-            activations = np.concatenate(model.micro_memory, axis=0)
+            activations = torch.cat([torch.tensor(a) if not isinstance(a, torch.Tensor) else a for a in model.micro_memory], dim=0)
             if activations.shape[0] > 2 and activations.shape[1] > 1:
                 pca = PCA(n_components=2)
-                pca_proj = pca.fit_transform(activations)
-                error_vals = np.abs((yhat - y).detach().cpu().numpy().flatten())
+                pca_proj = pca.fit_transform(activations.cpu().numpy())
+                error_vals = torch.abs((yhat - y).detach().flatten()).cpu().numpy()
                 n_points = pca_proj.shape[0]
                 if len(error_vals) < n_points:
-                    error_vals = np.pad(error_vals, (0, n_points - len(error_vals)), mode='constant')
+                    error_vals = list(error_vals) + [0.0] * (n_points - len(error_vals))
                 elif len(error_vals) > n_points:
                     error_vals = error_vals[-n_points:]
                 plt.figure()
@@ -165,7 +168,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
         # Store predictions for diagnostics
         cimm_raw_preds.append(yhat.detach().cpu().numpy().flatten())
         # Smoothing (optional, can be expanded)
-        curvature = torch.gradient(torch.gradient(y.squeeze())[0])[0].detach().cpu().numpy()
+        curvature = torch.gradient(torch.gradient(y.squeeze())[0])[0].detach()
         yhat_smooth = conditional_smooth(yhat, curvature)
         cimm_smoothed_preds.append(yhat_smooth.detach().cpu().numpy().flatten())
     save_logs(logs, signal)
@@ -173,9 +176,9 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.figure()
     plt.plot(x.cpu().numpy(), y.cpu().numpy(), label='Ground Truth')
     if len(cimm_raw_preds) > 0:
-        plt.plot(x.cpu().numpy(), np.array(cimm_raw_preds)[-1], label='TinyCIMM Raw Prediction', linestyle='dashed')
+        plt.plot(x.cpu().numpy(), torch.tensor(cimm_raw_preds[-1]), label='TinyCIMM Raw Prediction', linestyle='dashed')
     if len(cimm_smoothed_preds) > 0:
-        plt.plot(x.cpu().numpy(), np.array(cimm_smoothed_preds)[-1], label='TinyCIMM Smoothed Prediction')
+        plt.plot(x.cpu().numpy(), torch.tensor(cimm_smoothed_preds[-1]), label='TinyCIMM Smoothed Prediction')
     plt.legend()
     plt.title('Predictions vs. Ground Truth')
     plt.tight_layout()
@@ -200,9 +203,10 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42):
     plt.savefig(os.path.join(IMG_DIR, f'hidden_layer_size_evolution_{signal}.png'))
     plt.close()
     plt.figure()
-    cfd_x = np.arange(0, steps, 10)[:len(cimm_fractals)]
-    cfd_np = np.array(cimm_fractals)
-    plt.plot(cfd_x[~np.isnan(cfd_np)], cfd_np[~np.isnan(cfd_np)], label='TinyCIMM fractal dim (W)')
+    cfd_x = torch.arange(0, steps, 10)[:len(cimm_fractals)]
+    cfd_np = torch.tensor(cimm_fractals)
+    mask = ~torch.isnan(cfd_np)
+    plt.plot(cfd_x[mask].cpu().numpy(), cfd_np[mask].cpu().numpy(), label='TinyCIMM fractal dim (W)')
     plt.xlabel('Iteration')
     plt.ylabel('Fractal Dimension')
     plt.legend()
@@ -281,9 +285,9 @@ def run_all_experiments():
             cimm_feedbacks.append(float((torch.abs(yhat - y) < 0.3).float().mean().item()))
             if t % 10 == 0:
                 fd = fractal_dim(model.W)
-                cimm_fractals.append(fd if not (np.isnan(fd) or np.isinf(fd)) else np.nan)
+                cimm_fractals.append(fd if not (torch.isnan(torch.tensor(fd)) or torch.isinf(torch.tensor(fd))) else float('nan'))
             cimm_raw_preds.append(yhat.detach().cpu().numpy().flatten())
-            curvature = torch.gradient(torch.gradient(y.squeeze())[0])[0].detach().cpu().numpy()
+            curvature = torch.gradient(torch.gradient(y.squeeze())[0])[0].detach()
             yhat_smooth = conditional_smooth(yhat, curvature)
             cimm_smoothed_preds.append(yhat_smooth.detach().cpu().numpy().flatten())
         save_logs(logs, test_name)
@@ -315,8 +319,8 @@ def run_all_experiments():
         plt.figure()
         plt.plot(x.cpu().numpy(), y.cpu().numpy(), label='Ground Truth')
         if len(cimm_raw_preds) > 0:
-            plt.plot(x.cpu().numpy(), np.array(cimm_raw_preds)[-1], label='TinyCIMM', linestyle='dashed')
-        plt.plot(x.cpu().numpy(), np.array(mlp_preds)[-1], label='MLP', linestyle='dotted')
+            plt.plot(x.cpu().numpy(), torch.tensor(cimm_raw_preds[-1]), label='TinyCIMM', linestyle='dashed')
+        plt.plot(x.cpu().numpy(), torch.tensor(mlp_preds[-1]), label='MLP', linestyle='dotted')
         plt.legend()
         plt.title('Predictions vs. Ground Truth (TinyCIMM vs MLP)')
         plt.tight_layout()
