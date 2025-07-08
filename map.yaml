@@ -1298,7 +1298,7 @@ dawn-field-theory/
           meta.yaml
           recursive_balance_field.md
     TinyCIMM/
-      explainability_plan.md
+      [id][F][v1.0][C4][I5][E]_symbolic_collapse_interpretability.md
       meta.yaml
       output.txt
       tinycimm.py
@@ -1307,6 +1307,7 @@ dawn-field-theory/
         tinycimm.cpython-311.pyc
       docs/
         TinyCIMM_fractal_explainability.md
+        explainability_plan.md
         goals.md
         meta.yaml
       experiment_images/
@@ -1481,6 +1482,7 @@ dawn-field-theory/
     meta.yaml
     todolist.md
     left_for_first_release/
+      AIXPreprint_skeleton.md
       AI_Blackbox.md
       cip_domain_upgrade.md
       meta.yaml
