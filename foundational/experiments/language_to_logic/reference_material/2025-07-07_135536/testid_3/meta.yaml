@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: testid_3
+description: Metadata for testid_3, focusing on collapse tree and logic flow analysis.
+semantic_scope:
+- foundational
+- language_to_logic
+- experiment
+- testid_3
+- collapse_tree
+- logic_flow
+files:
+- collapse_tree.png
+- entropy_heatmap.png
+- logic_flow.json
+- report.md
+child_directories: []

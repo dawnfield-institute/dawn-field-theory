@@ -395,4 +395,63 @@ class TinyCIMM(nn.Module):
     def estimate_frequency(self, x):
         return self.freq_estimator(x)
 
+    def analyze_results(self):
+        """
+        Analyze experiment results using the metrics defined in the explainability plan.
+        """
+        if len(self.micro_memory) < 2:
+            print("Insufficient micro_memory for analysis.")
+            return {
+                "activation_ancestry": None,
+                "entropy_alignment": None,
+                "phase_alignment": None,
+                "bifractal_consistency": None,
+                "attractor_density": None
+            }
+
+        # Activation Ancestry Trace
+        activation_ancestry = torch.mean(torch.stack([
+            torch.cosine_similarity(mem, self.micro_memory[-1]) for mem in self.micro_memory[:-1]
+        ]))
+
+        # Entropy Gradient Alignment Score
+        if len(self.entropy_monitor.past_entropies) > 1:
+            entropy_gradients = torch.cat([
+                g.unsqueeze(0) for g in torch.gradient(torch.tensor(self.entropy_monitor.past_entropies))
+            ], dim=0)
+            alignment_score = torch.mean(torch.abs(entropy_gradients))
+        else:
+            alignment_score = torch.tensor(0.0)
+
+        # Collapse Phase Alignment
+        if self.last_h is not None and self.last_x is not None:
+            phase_alignment = torch.mean(torch.abs(self.last_h - self.last_x))
+        else:
+            phase_alignment = torch.tensor(0.0)
+
+        # Bifractal Activation Consistency
+        bifractal_consistency = torch.mean(torch.tensor([
+            torch.sum(mem) for mem in self.micro_memory
+        ]))
+
+        # Semantic Attractor Density
+        attractor_density = torch.mean(torch.tensor([
+            torch.norm(mem) for mem in self.micro_memory
+        ]))
+
+        # Log the metrics
+        print("Activation Ancestry Trace:", activation_ancestry.item())
+        print("Entropy Gradient Alignment Score:", alignment_score.item())
+        print("Collapse Phase Alignment:", phase_alignment.item())
+        print("Bifractal Activation Consistency:", bifractal_consistency.item())
+        print("Semantic Attractor Density:", attractor_density.item())
+
+        return {
+            "activation_ancestry": activation_ancestry.item(),
+            "entropy_alignment": alignment_score.item(),
+            "phase_alignment": phase_alignment.item(),
+            "bifractal_consistency": bifractal_consistency.item(),
+            "attractor_density": attractor_density.item()
+        }
+
 # End of TinyCIMM module

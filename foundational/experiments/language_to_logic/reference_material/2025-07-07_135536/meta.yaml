@@ -1,0 +1,17 @@
+schema_version: '2.0'
+directory_name: 2025-07-07_135536
+description: Metadata for the foundational experiment on language-to-logic mapping conducted on 2025-07-07.
+semantic_scope:
+- foundational
+- language_to_logic
+- experiment
+- reference_material
+- 2025-07-07_135536
+files:
+- index.json
+child_directories:
+- testid_1
+- testid_2
+- testid_3
+- testid_4
+- testid_5
