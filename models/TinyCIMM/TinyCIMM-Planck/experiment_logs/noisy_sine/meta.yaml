@@ -1,0 +1,13 @@
+schema_version: '2.0'
+directory_name: noisy_sine
+description: Metadata for noisy_sine experiment logs, including CSV metrics and logs.
+semantic_scope:
+- TinyCIMM-Planck
+- experiment_logs
+- noisy_sine
+- metrics
+- logs
+files:
+- TinyCIMM-Planck_noisy_sine_log.csv
+- TinyCIMM-Planck_noisy_sine_metrics.csv
+child_directories: []

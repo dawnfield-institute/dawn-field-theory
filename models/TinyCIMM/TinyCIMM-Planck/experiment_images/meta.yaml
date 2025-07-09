@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: experiment_images
+description: Output images from TinyCIMM-Planck and MLP experiments, organized by signal type for direct model comparison and diagnostics.
+semantic_scope:
+- experiment
+- images
+- TinyCIMM-Planck
+- MLP
+- diagnostics
+files: []
+child_directories:
+- amp_mod_sine
+- chaotic_sine
+- clean_sine
+- freq_mod_sine
+- noisy_sine

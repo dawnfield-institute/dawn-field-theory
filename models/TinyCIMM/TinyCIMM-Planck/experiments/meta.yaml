@@ -1,0 +1,12 @@
+schema_version: '2.0'
+directory_name: experiments
+description: Contains experiment harness scripts for running, benchmarking, and analyzing TinyCIMM-Planck and classical ML models on various signal types.
+semantic_scope:
+- experiment
+- harness
+- benchmarking
+- TinyCIMM-Planck
+- MLP
+files:
+- run_experiment.py
+child_directories: []

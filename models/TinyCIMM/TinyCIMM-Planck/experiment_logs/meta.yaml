@@ -1,0 +1,22 @@
+schema_version: '2.0'
+directory_name: experiment_logs
+description: Log files for TinyCIMM-Planck and MLP experiments, including loss, metrics, and benchmarking results for all signal types.
+semantic_scope:
+- experiment
+- logs
+- TinyCIMM-Planck
+- MLP
+- benchmarking
+files:
+- TinyCIMM-Planck
+- TinyCIMM-Planck_mlp_amp_mod_sine_log.csv
+- TinyCIMM-Planck_mlp_chaotic_sine_log.csv
+- TinyCIMM-Planck_mlp_clean_sine_log.csv
+- TinyCIMM-Planck_mlp_freq_mod_sine_log.csv
+- TinyCIMM-Planck_mlp_noisy_sine_log.csv
+- TinyCIMM-Planck_amp_mod_sine_log.csv
+- TinyCIMM-Planck_chaotic_sine_log.csv
+- TinyCIMM-Planck_clean_sine_log.csv
+- TinyCIMM-Planck_freq_mod_sine_log.csv
+- TinyCIMM-Planck_noisy_sine_log.csv
+child_directories: []
