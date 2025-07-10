@@ -1,0 +1,21 @@
+schema_version: '2.0'
+directory_name: experiment_results
+description: Comprehensive results archive for TinyCIMM-Euler mathematical reasoning experiments. Contains timestamped experimental runs across multiple mathematical domains with complete logs, visualizations, and SCBF interpretability metrics. Organized by signal type and experiment configuration for reproducible research.
+semantic_scope:
+- experiment-results
+- experimental-archive
+- mathematical-domains
+- timestamped-runs
+- reproducible-research
+- SCBF-metrics
+- interpretability-data
+- visualization-outputs
+- experimental-logs
+- research-artifacts
+files: []
+child_directories:
+- algebraic_sequence_algebraic_reasoning
+- fibonacci_ratios_convergence_test
+- polynomial_sequence_polynomial_analysis
+- prime_deltas_enhanced_prime_recognition
+- recursive_sequence_recursive_patterns

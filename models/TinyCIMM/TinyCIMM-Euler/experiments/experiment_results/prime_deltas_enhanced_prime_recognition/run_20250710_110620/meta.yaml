@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: run_20250710_110620
+description: Prime delta recognition experimental run executed on July 10, 2025 at 11:06:20. Early morning experimental run testing enhanced prime number gap prediction with field-theoretic neural dynamics. Contains complete experimental artifacts including SCBF interpretability metrics, training logs, and visualization outputs from breakthrough prime pattern learning experiment.
+semantic_scope:
+- experimental-run
+- prime-delta-prediction
+- timestamp-20250710-110620
+- enhanced-prime-recognition
+- breakthrough-experiment
+- SCBF-interpretability
+- field-theoretic-dynamics
+- prime-pattern-learning
+- experimental-artifacts
+- mathematical-reasoning
+- interpretability-metrics
+files: []
+child_directories:
+- images
+- logs

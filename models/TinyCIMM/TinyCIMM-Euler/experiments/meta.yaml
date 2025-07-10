@@ -1,0 +1,24 @@
+schema_version: '2.0'
+directory_name: experiments
+description: TinyCIMM-Euler mathematical reasoning experiments suite. Contains breakthrough experiments in symbolic cognition including prime number delta prediction, golden ratio convergence, polynomial reconstruction, and recursive pattern discovery. Features field-theoretic neural dynamics with real-time SCBF interpretability metrics.
+semantic_scope:
+- experiments
+- mathematical-reasoning
+- prime-number-prediction
+- golden-ratio-convergence
+- polynomial-reconstruction
+- recursive-patterns
+- field-theoretic-dynamics
+- SCBF-interpretability
+- symbolic-cognition
+- neural-adaptation
+- breakthrough-results
+files:
+- '[id][F][v2.0][C6][I6][E]_mathematical_reasoning_breakthrough.md'
+- run_experiment.py
+- run_long_term_experiment.py
+- run_online_experiment.py
+child_directories:
+- __pycache__
+- experiment_results
+- tests

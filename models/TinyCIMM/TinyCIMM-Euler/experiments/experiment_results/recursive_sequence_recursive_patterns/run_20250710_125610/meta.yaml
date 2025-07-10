@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: run_20250710_125610
+description: Recursive pattern recognition experimental run executed on July 10, 2025 at 12:56:10. Tests meta-mathematical cognition and hierarchical reasoning through recursive sequence learning. Demonstrates TinyCIMM-Euler's capacity for self-referential mathematical understanding and nested pattern recognition with comprehensive field-theoretic analysis.
+semantic_scope:
+- experimental-run
+- recursive-patterns
+- meta-mathematical-cognition
+- timestamp-20250710-125610
+- hierarchical-reasoning
+- self-referential-learning
+- nested-patterns
+- recursive-cognition
+- meta-mathematics
+- field-theoretic-analysis
+- pattern-recursion
+files: []
+child_directories:
+- images
+- logs

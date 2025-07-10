@@ -1,0 +1,25 @@
+schema_version: '2.0'
+directory_name: images
+description: Visualization outputs from polynomial analysis experiment (run_20250710_125538). Contains algebraic reasoning plots, polynomial reconstruction visualizations, symbolic manipulation graphics, SCBF interpretability analysis, and comprehensive field-theoretic learning dynamics demonstrating artificial algebraic understanding.
+semantic_scope:
+- polynomial-visualizations
+- algebraic-reasoning-plots
+- symbolic-manipulation-graphics
+- SCBF-interpretability-plots
+- polynomial-reconstruction-visuals
+- field-dynamics-plots
+- algebraic-structure-visualization
+- mathematical-algebra-plots
+- symbolic-cognition-graphics
+- research-visualization
+- breakthrough-imagery
+files:
+- enhanced_scbf_interpretability_polynomial_sequence.png
+- field_aware_loss_analysis_polynomial_sequence.png
+- main_predictions_polynomial_sequence.png
+- math_weights_step_3200.png
+- math_weights_step_6400.png
+- math_weights_step_9600.png
+- mathematical_analysis_polynomial_sequence.png
+- mathematical_performance_polynomial_sequence.png
+child_directories: []

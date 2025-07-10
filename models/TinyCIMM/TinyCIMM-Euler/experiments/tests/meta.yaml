@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: tests
+description: Test suite directory for TinyCIMM-Euler experiments validation and verification. Contains unit tests, integration tests, and validation scripts ensuring experimental reproducibility and mathematical correctness of field-theoretic neural dynamics and SCBF interpretability frameworks.
+semantic_scope:
+- test-suite
+- experimental-validation
+- unit-tests
+- integration-tests
+- reproducibility-testing
+- mathematical-verification
+- field-dynamics-testing
+- SCBF-validation
+- experimental-verification
+- research-testing
+- quality-assurance
+files:
+- test_all_experiments.py
+- test_improved_primes.py
+child_directories: []

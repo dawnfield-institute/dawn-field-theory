@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: fibonacci_ratios_convergence_test
+description: Golden ratio convergence experiments through Fibonacci sequence ratio analysis. Tests TinyCIMM-Euler's ability to discover transcendental mathematical constants through field-theoretic learning dynamics. Demonstrates artificial discovery of the golden ratio (φ ≈ 1.618) through iterative ratio convergence patterns.
+semantic_scope:
+- fibonacci-ratios
+- golden-ratio-convergence
+- transcendental-mathematics
+- convergence-analysis
+- fibonacci-sequences
+- mathematical-constants
+- phi-discovery
+- ratio-learning
+- transcendental-learning
+- convergence-patterns
+- mathematical-discovery
+files: []
+child_directories:
+- run_20250710_110730
+- run_20250710_125505
