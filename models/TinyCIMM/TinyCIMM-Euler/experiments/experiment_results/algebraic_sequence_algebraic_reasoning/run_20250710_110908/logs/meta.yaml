@@ -1,0 +1,8 @@
+schema_version: '2.0'
+directory_name: logs
+description: Auto-generated metadata for logs directory.
+semantic_scope:
+- logs
+files:
+- tinycimm_euler_algebraic_sequence_algebraic_reasoning_log.csv
+child_directories: []

@@ -1,0 +1,25 @@
+schema_version: '2.0'
+directory_name: images
+description: Visualization outputs and interpretability plots from prime delta recognition experiment (run_20250710_110620). Contains comprehensive SCBF interpretability visualizations, mathematical reasoning performance plots, field-aware dynamics analysis, weight evolution tracking, and breakthrough prime pattern discovery visualizations from early morning experimental session.
+semantic_scope:
+- visualization-outputs
+- interpretability-plots
+- SCBF-visualizations
+- prime-pattern-plots
+- field-dynamics-visualization
+- weight-evolution-tracking
+- mathematical-reasoning-plots
+- breakthrough-visualizations
+- experimental-imagery
+- interpretability-graphics
+- research-visualization
+files:
+- enhanced_scbf_interpretability_prime_deltas.png
+- field_aware_loss_analysis_prime_deltas.png
+- main_predictions_prime_deltas.png
+- math_weights_step_3200.png
+- math_weights_step_6400.png
+- math_weights_step_9600.png
+- mathematical_analysis_prime_deltas.png
+- mathematical_performance_prime_deltas.png
+child_directories: []

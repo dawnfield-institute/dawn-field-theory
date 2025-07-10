@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: run_20250710_125643
+description: Algebraic reasoning experimental run executed on July 10, 2025 at 12:56:43. Tests advanced symbolic manipulation and algebraic structure understanding through field-theoretic neural dynamics. Evaluates TinyCIMM-Euler's capacity for equation solving, symbolic transformation, and algebraic relationship discovery with comprehensive SCBF interpretability metrics.
+semantic_scope:
+- experimental-run
+- algebraic-reasoning
+- symbolic-manipulation
+- timestamp-20250710-125643
+- equation-solving
+- algebraic-structures
+- symbolic-transformation
+- SCBF-interpretability
+- field-dynamics
+- mathematical-algebra
+- algebraic-relationships
+files: []
+child_directories:
+- images
+- logs

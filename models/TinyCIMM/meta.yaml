@@ -1,0 +1,20 @@
+schema_version: '2.0'
+directory_name: TinyCIMM
+description: TinyCIMM (Tiny Categorical Information Memory Matrix) - Revolutionary field-theoretic neural architecture for symbolic cognition and mathematical reasoning. Implements breakthrough SCBF (Symbolic Collapse Bifractal Framework) for real-time interpretability of artificial mathematical intuition.
+semantic_scope:
+- TinyCIMM
+- neural-architecture
+- field-theory
+- symbolic-cognition
+- mathematical-reasoning
+- interpretability
+- quantum-field-dynamics
+- SCBF-framework
+- artificial-intuition
+- symbolic-collapse
+files:
+- TinyCIMM_naming.md
+child_directories:
+- TinyCIMM-Euler
+- TinyCIMM-Euler_to_delete
+- TinyCIMM-Planck

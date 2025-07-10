@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: prime_deltas_enhanced_prime_recognition
+description: BREAKTHROUGH EXPERIMENTS - Prime number delta sequence prediction using TinyCIMM-Euler. Represents first successful artificial learning of prime number gaps through field-theoretic neural dynamics. Contains multiple experimental runs with enhanced configuration for normalized 8-step sequence prediction and comprehensive SCBF interpretability tracking.
+semantic_scope:
+- prime-deltas
+- prime-number-gaps
+- enhanced-prime-recognition
+- breakthrough-experiment
+- number-theory
+- mathematical-discovery
+- 8-step-sequences
+- field-theoretic-learning
+- SCBF-tracking
+- artificial-mathematical-intuition
+- prime-pattern-discovery
+files: []
+child_directories:
+- run_20250710_110620
+- run_20250710_125353

@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: polynomial_sequence_polynomial_analysis
+description: Algebraic reasoning experiments for polynomial sequence reconstruction and analysis. Tests TinyCIMM-Euler's capacity for symbolic algebraic manipulation and pattern recognition in polynomial structures. Demonstrates artificial understanding of algebraic relationships and coefficient learning through field-theoretic dynamics.
+semantic_scope:
+- polynomial-sequences
+- polynomial-analysis
+- algebraic-reasoning
+- symbolic-algebra
+- coefficient-learning
+- algebraic-manipulation
+- polynomial-reconstruction
+- algebraic-patterns
+- symbolic-mathematics
+- field-algebraic-learning
+- mathematical-structures
+files: []
+child_directories:
+- run_20250710_110803
+- run_20250710_125538

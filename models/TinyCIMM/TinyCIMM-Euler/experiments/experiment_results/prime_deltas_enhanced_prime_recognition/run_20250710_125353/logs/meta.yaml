@@ -1,0 +1,18 @@
+schema_version: '2.0'
+directory_name: logs
+description: Comprehensive experimental logs from prime delta recognition experiment (run_20250710_125353). Contains detailed CSV logs with timestamped SCBF interpretability metrics, field-aware adaptation signals, mathematical performance tracking, neural network evolution data, and complete experimental parameter recordings for reproducible research.
+semantic_scope:
+- experimental-logs
+- SCBF-metrics-logs
+- field-adaptation-logs
+- performance-tracking
+- neural-evolution-data
+- timestamped-metrics
+- reproducible-data
+- experimental-parameters
+- research-logs
+- interpretability-data
+- breakthrough-documentation
+files:
+- tinycimm_euler_prime_deltas_enhanced_prime_recognition_log.csv
+child_directories: []

@@ -1,0 +1,15 @@
+schema_version: '2.0'
+directory_name: images
+description: Auto-generated metadata for images directory.
+semantic_scope:
+- images
+files:
+- enhanced_scbf_interpretability_polynomial_sequence.png
+- field_aware_loss_analysis_polynomial_sequence.png
+- main_predictions_polynomial_sequence.png
+- math_weights_step_3200.png
+- math_weights_step_6400.png
+- math_weights_step_9600.png
+- mathematical_analysis_polynomial_sequence.png
+- mathematical_performance_polynomial_sequence.png
+child_directories: []
