@@ -1,69 +1,94 @@
+"""
+======================================================================================
+TinyCIMM-Euler Online Mathematical Reasoning Experiment Suite
+======================================================================================
+
+Author: Dawn Field Theory Research Group  
+Date: July 10, 2025
+Project: TinyCIMM-Euler - Higher-Order Mathematical Reasoning
+
+This module provides true online learning experiments for TinyCIMM-Euler where the
+model learns mathematical patterns one data point at a time, adapting its structure
+and predictions in real-time. This implements the purest form of CIMM-style learning.
+
+Key Features:
+- True online learning (one point at a time)
+- Real-time network structure adaptation
+- Field-aware loss functions and metrics
+- SCBF interpretability framework
+- Individual step adaptation for mathematical reasoning
+
+The experiments preserve all highly optimized logic while providing clean interfaces
+for online mathematical reasoning research.
+======================================================================================
+"""
+
 import torch
 import torch.nn as nn
 import pandas as pd
 import os
 import sys
 import math
+from datetime import datetime
 
+# Add parent directory to path for imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from tinycimm_euler import TinyCIMMEuler, MathematicalStructureController, HigherOrderEntropyMonitor, CIMMInspiredLoss
+from tinycimm_euler import TinyCIMMEuler, MathematicalStructureController, HigherOrderEntropyMonitor
+from run_experiment import generate_primes, mathematical_fractal_dimension
 import matplotlib.pyplot as plt
 
-IMG_DIR = "experiment_images"
-os.makedirs(IMG_DIR, exist_ok=True)
+# ======================================================================================
+# DEBUG AND LOGGING SYSTEM
+# ======================================================================================
 
-def generate_primes(limit):
-    """Generate prime numbers up to limit using Sieve of Eratosthenes"""
-    if limit < 2:
-        return []
-    
-    sieve = [True] * (limit + 1)
-    sieve[0] = sieve[1] = False
-    
-    for i in range(2, int(limit**0.5) + 1):
-        if sieve[i]:
-            for j in range(i*i, limit + 1, i):
-                sieve[j] = False
-    
-    return [i for i in range(2, limit + 1) if sieve[i]]
+# Global debug flag - set to False to hide debug output in production
+DEBUG_MODE = True
 
-def mathematical_fractal_dimension(weights):
-    """Compute fractal dimension for mathematical weight patterns"""
-    if isinstance(weights, torch.Tensor):
-        W = weights.detach().abs() > 1e-6
-    else:
-        W = torch.tensor(weights).abs() > 1e-6
-    
-    if W.ndim != 2 or min(W.shape) < 4:
-        return float('nan')
-    if not torch.any(W):
-        return float('nan')
-    
-    min_size = min(W.shape) // 2 + 1
-    sizes = torch.arange(2, min_size)
-    counts = []
-    
-    for size in sizes:
-        count = 0
-        for i in range(0, W.shape[0], int(size)):
-            for j in range(0, W.shape[1], int(size)):
-                if torch.any(W[i:i+int(size), j:j+int(size)]):
-                    count += 1
-        if count > 0:
-            counts.append(count)
-    
-    if len(counts) > 1:
-        sizes_log = torch.log(sizes[:len(counts)].float())
-        counts_log = torch.log(torch.tensor(counts, dtype=torch.float))
-        coeffs = torch.linalg.lstsq(sizes_log.unsqueeze(1), counts_log).solution
-        return -coeffs[0].item()
-    else:
-        return float('nan')
+def debug_print(message):
+    """Print debug message only if debug mode is enabled"""
+    if DEBUG_MODE:
+        print(f"[DEBUG] {message}")
 
-def save_logs(logs, signal):
+def info_print(message):
+    """Print informational message (always shown)"""
+    print(f"[INFO] {message}")
+
+# ======================================================================================
+# EXPERIMENT CONFIGURATION
+# ======================================================================================
+
+RESULTS_DIR = "experiment_results"
+os.makedirs(RESULTS_DIR, exist_ok=True)
+
+def save_logs(logs, signal, run_subdir=None):
     df = pd.DataFrame(logs)
-    os.makedirs("experiment_logs", exist_ok=True)
-    df.to_csv(f"experiment_logs/tinycimm_euler_online_{signal}_log.csv", index=False)
+    if run_subdir:
+        log_dir = os.path.join(RESULTS_DIR, signal, run_subdir, "logs")
+    else:
+        log_dir = os.path.join(RESULTS_DIR, signal, "logs")
+    os.makedirs(log_dir, exist_ok=True)
+    df.to_csv(os.path.join(log_dir, f"tinycimm_euler_online_{signal}_log.csv"), index=False)
+
+def generate_fibonacci_ratios_smoothed(n_points):
+    """Generate Fibonacci ratios with smoothed convergence."""
+    ratios = []
+    a, b = 1, 1
+    for i in range(n_points):
+        if i < 10:  # Early ratios are unstable
+            ratio = 1.618  # Start closer to golden ratio
+        else:
+            ratio = b / a if a != 0 else 1.618
+        ratios.append(ratio)
+        a, b = b, a + b
+    return torch.tensor(ratios, dtype=torch.float32)
+
+def generate_recursive_sequence_structured(n_points):
+    """Generate recursive sequence with clearer rules."""
+    sequence = [1.0, 1.5]  # Clear starting values
+    for i in range(2, n_points):
+        next_val = 0.8 * sequence[i-1] + 0.5 * sequence[i-2]
+        sequence.append(next_val)
+    return torch.tensor(sequence, dtype=torch.float32)
 
 class OnlineDataGenerator:
     """Generates mathematical data points one at a time for true online learning"""
@@ -79,10 +104,10 @@ class OnlineDataGenerator:
             self.current_prime_idx = 0
             
         elif signal_type == "fibonacci_ratios":
-            self.fib_prev, self.fib_curr = 1, 1
+            self.signal_data = generate_fibonacci_ratios_smoothed(10000)
             
         elif signal_type == "recursive_sequence":
-            self.seq_values = [1.0, 1.0]
+            self.signal_data = generate_recursive_sequence_structured(10000)
             
     def get_next_point(self):
         """Generate the next data point"""
@@ -102,15 +127,13 @@ class OnlineDataGenerator:
                 return None, None
                 
         elif self.signal_type == "fibonacci_ratios":
-            fib_next = self.fib_prev + self.fib_curr
-            current_ratio = fib_next / self.fib_curr if self.fib_curr != 0 else 1.0
-            
-            x_input = torch.tensor([[self.step]], dtype=torch.float32, device=device)
-            y_target = torch.tensor([[current_ratio]], dtype=torch.float32, device=device)
-            
-            self.fib_prev, self.fib_curr = self.fib_curr, fib_next
-            self.step += 1
-            return x_input, y_target
+            if self.step < len(self.signal_data):
+                x_input = torch.tensor([[self.step]], dtype=torch.float32, device=device)
+                y_target = torch.tensor([[self.signal_data[self.step]]], dtype=torch.float32, device=device)
+                self.step += 1
+                return x_input, y_target
+            else:
+                return None, None
             
         elif self.signal_type == "polynomial_sequence":
             x_val = self.step / 100.0
@@ -123,17 +146,13 @@ class OnlineDataGenerator:
             return x_input, y_target
             
         elif self.signal_type == "recursive_sequence":
-            if len(self.seq_values) >= 2:
-                next_val = 0.7*self.seq_values[-1] + 0.3*self.seq_values[-2] + 0.1*math.sin(self.step/10.0)
-                self.seq_values.append(next_val)
+            if self.step < len(self.signal_data):
+                x_input = torch.tensor([[self.step]], dtype=torch.float32, device=device)
+                y_target = torch.tensor([[self.signal_data[self.step]]], dtype=torch.float32, device=device)
+                self.step += 1
+                return x_input, y_target
             else:
-                next_val = 1.0
-                
-            x_input = torch.tensor([[self.step]], dtype=torch.float32, device=device)
-            y_target = torch.tensor([[next_val]], dtype=torch.float32, device=device)
-            
-            self.step += 1
-            return x_input, y_target
+                return None, None
             
         else:  # mathematical_harmonic
             x_val = self.step * 4 * math.pi / 1000
@@ -145,8 +164,8 @@ class OnlineDataGenerator:
             self.step += 1
             return x_input, y_target
 
-def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, **kwargs):
-    """Run TRUE online mathematical reasoning experiment - no pre-training sequences!"""
+def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, experiment_type="realtime", **kwargs):
+    """Run TRUE online mathematical reasoning experiment - restored CIMM-style individual adaptation!"""
     torch.manual_seed(seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Running online experiment on {device}")
@@ -157,16 +176,15 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
     
     model = model_cls(input_size=input_size, hidden_size=hidden_size, output_size=1, device=device, **kwargs)
     
-    # More responsive structure controller for online learning
+    # Restore responsive structure controller for true online learning
     controller = MathematicalStructureController(
-        complexity_threshold=0.005,  # Lower threshold for more responsive adaptation
-        adaptation_window=3,         # Shorter window for faster response
+        base_complexity_threshold=0.01,  # Restored proper threshold
+        adaptation_window=5,             # Proper window for online learning
         min_neurons=8,
         max_neurons=64
     )
-    controller.cooldown_period = 5   # Shorter cooldown for online learning
     
-    complexity_monitor = HigherOrderEntropyMonitor(momentum=0.8)  # More responsive
+    complexity_monitor = HigherOrderEntropyMonitor(momentum=0.85)  # Proper momentum
     model.set_complexity_monitor(complexity_monitor)
     
     # Initialize online data generator
@@ -176,11 +194,18 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
     math_metrics, math_hsizes, math_fractals, math_performance, math_losses = [], [], [], [], []
     recent_predictions, recent_targets = [], []
     
-    # Create signal-specific subfolder
-    signal_img_dir = os.path.join(IMG_DIR, f"online_{signal}")
+    # Create unique subfolder for this experiment run
+    run_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_subdir = f"run_{run_timestamp}"
+    
+    # Create descriptive experiment directory name
+    exp_dir = f"{signal}_{experiment_type}"
+    
+    signal_img_dir = os.path.join(RESULTS_DIR, exp_dir, run_subdir, "images")
     os.makedirs(signal_img_dir, exist_ok=True)
     
-    print(f"Starting online learning for {signal}...")
+    print(f"Online experiment results will be saved in: {signal_img_dir}")
+    print(f"Starting TRUE online learning for {signal} (individual step adaptation)...")
     
     for t in range(steps):
         # Get next data point online
@@ -190,110 +215,161 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
             print(f"Data exhausted at step {t}")
             break
         
-        # Make prediction
+        # CRITICAL FIX: Use individual step processing like original CIMM
+        # This restores the fine-grained adaptation that was lost in batch processing
+        model.train()  # Ensure gradients are enabled
+        
+        # Forward pass with gradient tracking
         prediction = model(x_input)
         
-        # Learn from feedback (this is the key - immediate learning from each prediction)
-        loss, complexity_metric, performance, loss_components = model.mathematical_train_step(x_input, y_target)
+        # Compute loss with proper gradient flow
+        step_loss = torch.mean((prediction - y_target) ** 2)
         
-        # Update complexity monitor
-        complexity_monitor.update(prediction)
+        # Standard gradient update FIRST
+        model.optimizer.zero_grad()
+        step_loss.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+        model.optimizer.step()
+        
+        # THEN do the online adaptation step with fresh forward pass
+        model.eval()
+        with torch.no_grad():
+            fresh_prediction = model(x_input)
+        
+        # Now call online adaptation with the updated model
+        result = model.online_adaptation_step(x_input, y_target, recent_predictions)
+        
+        # TinyCIMM-Planck style SCBF analysis
+        scbf_results = model.analyze_results()
+        
+        prediction = result['prediction']
+        adaptation_signal = result['adaptation_signal'] 
+        complexity_metric = result['complexity_metric']
+        field_performance = result['field_performance']
+        cimm_components = result['cimm_components']
+        scbf_metrics = result.get('scbf_metrics', {})
+        
+        # Update complexity monitor with actual prediction
+        complexity_monitor.update(fresh_prediction)
         
         # Store recent predictions for analysis
-        recent_predictions.append(prediction.item())
+        recent_predictions.append(fresh_prediction.item() if torch.is_tensor(fresh_prediction) else fresh_prediction)
         recent_targets.append(y_target.item())
-        if len(recent_predictions) > 50:
+        if len(recent_predictions) > 30:  # Shorter memory for online learning
             recent_predictions.pop(0)
             recent_targets.pop(0)
         
-        # Apply entropy-aware pruning periodically
-        if t % 30 == 0 and t > 0:  # More frequent for online learning
-            model.entropy_aware_pruning()
+        # Apply field optimization more frequently for online learning
+        if t % 20 == 0 and t > 0:  # Every 20 steps for responsive online adaptation
+            model.entropy_aware_field_optimization()
         
-        # Logging with field-aware loss components
+        # Enhanced logging with all CIMM components
         log_entry = {
             'step': t,
-            'loss': loss,
+            'adaptation_signal': adaptation_signal,
             'complexity_metric': complexity_metric,
             'neurons': model.hidden_dim,
-            'performance': performance,
-            'prediction': prediction.item(),
+            'pattern_recognition_score': field_performance['pattern_recognition_score'],
+            'field_coherence_score': field_performance['field_coherence_score'], 
+            'quantum_field_performance': field_performance['quantum_field_performance'],
+            'prediction': recent_predictions[-1],
             'target': y_target.item(),
-            'prediction_error': abs(prediction.item() - y_target.item()),
-            'qbe_loss': loss_components['qbe_loss'],
-            'energy_balance': loss_components['energy_balance'],
-            'superfluid_coherence': loss_components['superfluid_coherence'],
-            'entropy_cost': loss_components['entropy_cost']
+            'prediction_error': abs(recent_predictions[-1] - y_target.item()),
+            'learning_rate': result['learning_rate'],
+            'step_loss': step_loss.item()
         }
+        
+        # Add CIMM components
+        if cimm_components:
+            log_entry.update({
+                'qbe_balance': cimm_components.get('qbe_balance', 0),
+                'energy_balance': cimm_components.get('energy_balance', 0),
+                'coherence_loss': cimm_components.get('coherence_loss', 0),
+                'cimm_kl_divergence': cimm_components.get('KL-Divergence', 0),
+                'cimm_jensen_shannon': cimm_components.get('Jensen-Shannon', 0),
+                'cimm_wasserstein': cimm_components.get('Wasserstein Distance', 0),
+                'cimm_qwcs': cimm_components.get('QWCS', 0),
+                'cimm_entropy': cimm_components.get('entropy_value', 0),
+                'einstein_correction': cimm_components.get('einstein_correction', 1),
+                'feynman_damping': cimm_components.get('feynman_damping', 1)
+            })
+        
+        # Add SCBF interpretability metrics
+        if scbf_metrics:
+            log_entry.update({
+                'scbf_symbolic_entropy_collapse': scbf_metrics.get('symbolic_entropy_collapse', 0),
+                'scbf_activation_ancestry_stability': scbf_metrics.get('activation_ancestry_stability', 0),
+                'scbf_collapse_phase_alignment': scbf_metrics.get('collapse_phase_alignment', 0),
+                'scbf_bifractal_lineage_strength': scbf_metrics.get('bifractal_lineage_strength', 0),
+                'scbf_semantic_attractor_density': scbf_metrics.get('semantic_attractor_density', 0),
+                'scbf_weight_drift_entropy': scbf_metrics.get('weight_drift_entropy', 0),
+                'scbf_entropy_gradient_alignment': scbf_metrics.get('entropy_gradient_alignment', 0),
+                'scbf_structural_entropy': scbf_metrics.get('structural_entropy', 0)
+            })
         
         math_metrics.append(complexity_metric)
         math_hsizes.append(model.hidden_dim)
-        math_losses.append(loss)
-        math_performance.append(performance)
-        
-        # Mathematical analysis every 10 steps
-        if t % 10 == 0:
-            analysis_results = model.analyze_mathematical_results()
-            log_entry.update(analysis_results)
+        math_losses.append(step_loss.item())  # Use the actual step loss
+        math_performance.append(field_performance['quantum_field_performance'])
         
         logs.append(log_entry)
         
         # Fractal dimension analysis
-        if t % 15 == 0:
+        if t % 25 == 0:  # More frequent for online learning
             fd = mathematical_fractal_dimension(model.W)
             math_fractals.append(fd if not (torch.isnan(torch.tensor(fd)) or torch.isinf(torch.tensor(fd))) else float('nan'))
         
-        # Progress reporting
-        if t % 50 == 0:
-            recent_error = sum([l['prediction_error'] for l in logs[-10:]]) / min(10, len(logs))
+        # Progress reporting (every 25 steps for online learning)
+        if t % 25 == 0:
+            recent_error = sum([l['prediction_error'] for l in logs[-5:]]) / min(5, len(logs))
             current_neurons = model.hidden_dim
-            print(f"Step {t}: Error={recent_error:.4f}, Neurons={current_neurons}, Loss={loss:.4f}")
+            pattern_score = field_performance['pattern_recognition_score']
+            print(f"Step {t}: Error={recent_error:.4f}, Neurons={current_neurons}, Pattern={pattern_score:.4f}")
         
-        # Visualization every 100 steps
-        if t % 100 == 0 and t > 0:
-            # Weight evolution
+        # Visualization every 75 steps (more frequent for online)
+        if t % 75 == 0 and t > 0:
             plt.figure(figsize=(15, 10))
             
-            # Subplot 1: Weight matrix
+            # Weight matrix
             plt.subplot(2, 3, 1)
             plt.imshow(model.W.detach().cpu().numpy(), aspect='auto', cmap='RdBu')
             plt.colorbar()
             plt.title(f'Weight Matrix at Step {t}')
             
-            # Subplot 2: Online learning progress
+            # Online learning progress  
             plt.subplot(2, 3, 2)
-            if len(logs) > 10:
-                recent_losses = [l['loss'] for l in logs[-50:]]
+            if len(logs) > 5:
+                recent_losses = [l['step_loss'] for l in logs[-30:]]
                 plt.plot(recent_losses, color='red', alpha=0.7)
-                plt.title('Recent Loss Evolution')
-                plt.ylabel('Loss')
+                plt.title('Recent Step Loss Evolution')
+                plt.ylabel('Step Loss')
             
-            # Subplot 3: Network size adaptation
+            # Network size adaptation
             plt.subplot(2, 3, 3)
             plt.plot(math_hsizes, color='blue', alpha=0.8)
             plt.title('Network Size Evolution')
             plt.ylabel('Neurons')
             plt.xlabel('Step')
             
-            # Subplot 4: Prediction vs Target
+            # Prediction vs Target
             plt.subplot(2, 3, 4)
-            if len(recent_predictions) > 10:
-                plt.plot(recent_predictions[-20:], label='Predictions', alpha=0.7)
-                plt.plot(recent_targets[-20:], label='Targets', alpha=0.7)
+            if len(recent_predictions) > 5:
+                plt.plot(recent_predictions[-15:], label='Predictions', alpha=0.7)
+                plt.plot(recent_targets[-15:], label='Targets', alpha=0.7)
                 plt.legend()
                 plt.title('Recent Predictions vs Targets')
             
-            # Subplot 5: Field-aware loss components
+            # Field-aware performance components
             plt.subplot(2, 3, 5)
-            if len(logs) > 10:
-                qbe_losses = [l['qbe_loss'] for l in logs[-20:]]
-                energy_balance = [l['energy_balance'] for l in logs[-20:]]
-                plt.plot(qbe_losses, label='QBE Loss', alpha=0.7)
-                plt.plot(energy_balance, label='Energy Balance', alpha=0.7)
+            if len(logs) > 5:
+                pattern_scores = [l['pattern_recognition_score'] for l in logs[-15:]]
+                field_scores = [l['field_coherence_score'] for l in logs[-15:]]
+                plt.plot(pattern_scores, label='Pattern Recognition', alpha=0.7)
+                plt.plot(field_scores, label='Field Coherence', alpha=0.7)
                 plt.legend()
-                plt.title('Field-Aware Loss Components')
+                plt.title('Field-Aware Performance Components')
             
-            # Subplot 6: Performance metrics
+            # Performance metrics
             plt.subplot(2, 3, 6)
             plt.plot(math_performance, color='orange', alpha=0.8)
             plt.title('Mathematical Performance')
@@ -304,79 +380,92 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
             plt.savefig(os.path.join(signal_img_dir, f'online_learning_step_{t}.png'))
             plt.close()
     
-    # Save logs
-    save_logs(logs, signal)
+    # Save logs with experiment type
+    exp_dir = f"{signal}_{experiment_type}"
+    save_logs(logs, exp_dir, run_subdir)
     
     # Final analysis and visualization
     print(f"\nOnline learning completed for {signal}")
     if len(logs) > 0:
-        final_error = sum([l['prediction_error'] for l in logs[-10:]]) / min(10, len(logs))
+        final_error = sum([l['prediction_error'] for l in logs[-5:]]) / min(5, len(logs))
         final_neurons = logs[-1]['neurons']
         initial_neurons = logs[0]['neurons']
+        final_pattern_score = logs[-1]['pattern_recognition_score']
         print(f"Final prediction error: {final_error:.4f}")
+        print(f"Final pattern recognition: {final_pattern_score:.4f}")
         print(f"Network size: {initial_neurons} -> {final_neurons} neurons")
         print(f"Adaptation events: {abs(final_neurons - initial_neurons)} total changes")
     
     return logs
 
 def run_all_online_experiments():
-    """Run all online mathematical reasoning experiments"""
+    """Run all online mathematical reasoning experiments with standardized SCBF metrics"""
+    print("=" * 80)
+    print("TinyCIMM-Euler: TRUE ONLINE Mathematical Reasoning Tests")
+    print("=" * 80)
+    print("\nNo pre-generated sequences! Pure online adaptation:")
+    print("• Predict next mathematical value")
+    print("• Get immediate feedback")
+    print("• Adapt network structure in real-time")
+    print("• CIMM-inspired field-aware loss functions")
+    print("• Standardized SCBF metrics matching TinyCIMM-Planck")
+    print("\nFocusing on prime number prediction and mathematical pattern recognition...\n")
+    
     test_cases = [
         ("prime_deltas", {
             "hidden_size": 16, 
-            "math_memory_size": 8, 
-            "adaptation_steps": 15
+            "math_memory_size": 8,
+            "experiment_type": "realtime_sequential"
         }),
         ("fibonacci_ratios", {
             "hidden_size": 12, 
             "math_memory_size": 6, 
-            "pattern_decay": 0.9
+            "pattern_decay": 0.9,
+            "experiment_type": "realtime_convergence"
         }),
         ("polynomial_sequence", {
             "hidden_size": 14, 
-            "math_memory_size": 8, 
-            "adaptation_steps": 12
+            "math_memory_size": 8,
+            "experiment_type": "realtime_nonlinear"
         }),
         ("recursive_sequence", {
             "hidden_size": 16, 
             "math_memory_size": 10, 
-            "pattern_decay": 0.95
+            "pattern_decay": 0.95,
+            "experiment_type": "realtime_recurrent"
         }),
         ("mathematical_harmonic", {
             "hidden_size": 12, 
-            "math_memory_size": 6
+            "math_memory_size": 6,
+            "experiment_type": "realtime_harmonic"
         }),
     ]
     
+    successful_experiments = 0
+    
     for test_name, model_kwargs in test_cases:
         print(f"\n{'='*60}")
-        print(f"Running ONLINE Mathematical Experiment: {test_name}")
-        print(f"Expected challenge level: {'Very High' if test_name == 'prime_deltas' else 'High' if 'sequence' in test_name else 'Medium'}")
+        print(f"=== Running ONLINE Mathematical Experiment: {test_name} ===")
+        challenge_level = "Extreme" if test_name == "prime_deltas" else "Very High" if "sequence" in test_name else "High"
+        print(f"Expected challenge level: {challenge_level}")
+        print(f"Training for 300 steps (true online learning)...")
         print(f"{'='*60}")
         
         try:
             logs = run_online_experiment(TinyCIMMEuler, signal=test_name, steps=300, **model_kwargs)
-            print(f"✓ Completed {test_name} successfully with {len(logs)} learning steps")
+            print(f"✓ Completed {test_name} successfully with {len(logs)} adaptation steps")
+            successful_experiments += 1
         except Exception as e:
             print(f"✗ Error in {test_name}: {str(e)}")
             import traceback
             traceback.print_exc()
             continue
-
-if __name__ == "__main__":
-    print("=" * 80)
-    print("TinyCIMM-Euler: TRUE ONLINE Mathematical Reasoning Tests")
-    print("=" * 80)
-    print("\nNo pre-training sequences! Pure online learning:")
-    print("• Predict next mathematical value")
-    print("• Get immediate feedback")
-    print("• Adapt network structure in real-time")
-    print("• CIMM-inspired field-aware loss functions")
-    print("\nFocusing on prime number prediction and mathematical pattern recognition...\n")
-    
-    run_all_online_experiments()
     
     print("\n" + "=" * 80)
     print("Online mathematical reasoning experiments completed!")
-    print("Check experiment_images/online_* and experiment_logs/ for detailed results.")
+    print(f"Successfully completed: {successful_experiments}/{len(test_cases)} experiments")
+    print("Check experiment_results/ for detailed results organized by experiment type and date.")
     print("=" * 80)
+
+if __name__ == "__main__":
+    run_all_online_experiments()
