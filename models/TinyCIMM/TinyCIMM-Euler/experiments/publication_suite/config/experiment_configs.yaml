@@ -1,0 +1,278 @@
+# TinyCIMM-Euler Publication Suite Configuration Templates
+# ========================================================
+
+# Base Configuration Template
+base_config:
+  experiment_id: "exp_001"
+  experiment_type: "prime_sequence"
+  output_dir: "publication_outputs"
+  
+  # Logging Configuration
+  logging:
+    level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+    formats: ["json", "txt", "csv"]  # Available: json, txt, csv, all
+    log_metrics: true
+    log_arrays: true
+    summary_stats: true
+  
+  # Visualization Configuration
+  visualization:
+    save_figures: true
+    figure_format: "png"  # png, svg, pdf
+    figure_dpi: 300
+    style: "publication"  # publication, presentation, poster
+    color_scheme: "viridis"  # viridis, plasma, inferno, magma
+    
+    # Specific visualization settings
+    entropy_overlay:
+      enabled: true
+      overlay_alpha: 0.7
+      threshold: 0.5
+    
+    activation_overlay:
+      enabled: true
+      field_resolution: 50
+      show_topology: true
+    
+    neuron_trace:
+      enabled: true
+      trace_window: 100
+      specialization_threshold: 0.8
+    
+    convergence_timeline:
+      enabled: true
+      milestone_threshold: 0.1
+      abstraction_levels: 5
+  
+  # Analysis Configuration
+  analysis:
+    scbf_analysis: true
+    convergence_analysis: true
+    topology_mapping: true
+    
+    # SCBF Analysis Settings
+    scbf:
+      structure_detection: true
+      bias_detection: true
+      field_coherence: true
+      emergence_detection: true
+    
+    # Convergence Analysis Settings
+    convergence:
+      stability_window: 50
+      convergence_threshold: 0.01
+      quality_metrics: true
+      pattern_analysis: true
+  
+  # Experiment-specific settings (will be overridden by specific configs)
+  experiment:
+    domain: "prime"
+    sequence_length: 100
+    network_size: 10
+    learning_rate: 0.01
+    iterations: 1000
+
+# Prime Sequence Experiment Configuration
+prime_config:
+  experiment_id: "prime_exp_001"
+  experiment_type: "prime_sequence"
+  
+  # Inherit from base config
+  base: "base_config"
+  
+  # Override specific settings
+  experiment:
+    domain: "prime"
+    sequence_length: 200
+    network_size: 12
+    learning_rate: 0.008
+    iterations: 1500
+    prime_range: [2, 1000]
+    
+  # Prime-specific analysis
+  analysis:
+    prime_detection: true
+    pattern_recognition: true
+    mathematical_structure: true
+
+
+# Fibonacci Sequence Experiment Configuration
+fibonacci_config:
+  experiment_id: "fib_exp_001"
+  experiment_type: "fibonacci_sequence"
+  
+  base: "base_config"
+  
+  experiment:
+    domain: "fibonacci"
+    sequence_length: 150
+    network_size: 8
+    learning_rate: 0.012
+    iterations: 800
+    fibonacci_terms: 50
+    
+  analysis:
+    recursive_pattern: true
+    golden_ratio_emergence: true
+    self_similarity: true
+
+# Polynomial Experiment Configuration
+polynomial_config:
+  experiment_id: "poly_exp_001"
+  experiment_type: "polynomial_sequence"
+  
+  base: "base_config"
+  
+  experiment:
+    domain: "polynomial"
+    sequence_length: 300
+    network_size: 15
+    learning_rate: 0.005
+    iterations: 2000
+    polynomial_degree: 3
+    coefficient_range: [-5, 5]
+    
+  analysis:
+    polynomial_fitting: true
+    coefficient_extraction: true
+    degree_detection: true
+
+# Recursive Pattern Experiment Configuration
+recursive_config:
+  experiment_id: "rec_exp_001"
+  experiment_type: "recursive_pattern"
+  
+  base: "base_config"
+  
+  experiment:
+    domain: "recursive"
+    sequence_length: 250
+    network_size: 20
+    learning_rate: 0.006
+    iterations: 1800
+    recursion_depth: 5
+    pattern_complexity: "medium"
+    
+  analysis:
+    recursion_detection: true
+    depth_analysis: true
+    pattern_hierarchy: true
+
+# Algebraic Structure Experiment Configuration
+algebraic_config:
+  experiment_id: "alg_exp_001"
+  experiment_type: "algebraic_structure"
+  
+  base: "base_config"
+  
+  experiment:
+    domain: "algebraic"
+    sequence_length: 400
+    network_size: 25
+    learning_rate: 0.004
+    iterations: 2500
+    algebraic_operations: ["add", "multiply", "power"]
+    structure_complexity: "high"
+    
+  analysis:
+    algebraic_rules: true
+    operation_detection: true
+    structure_emergence: true
+
+# Long-term Experiment Configuration
+long_term_config:
+  experiment_id: "long_term_001"
+  experiment_type: "long_term_dynamics"
+  
+  base: "base_config"
+  
+  experiment:
+    domain: "mixed"
+    sequence_length: 1000
+    network_size: 30
+    learning_rate: 0.002
+    iterations: 10000
+    checkpoint_interval: 1000
+    
+  # Enhanced logging for long experiments
+  logging:
+    level: "DEBUG"
+    checkpoint_logs: true
+    memory_monitoring: true
+    
+  analysis:
+    long_term_stability: true
+    drift_detection: true
+    adaptation_analysis: true
+
+# Online Learning Experiment Configuration
+online_config:
+  experiment_id: "online_exp_001"
+  experiment_type: "online_learning"
+  
+  base: "base_config"
+  
+  experiment:
+    domain: "streaming"
+    batch_size: 10
+    network_size: 15
+    learning_rate: 0.01
+    stream_length: 5000
+    adaptation_rate: 0.1
+    
+  analysis:
+    online_adaptation: true
+    concept_drift: true
+    streaming_performance: true
+
+# Publication Quality Configuration
+publication_config:
+  experiment_id: "pub_quality_001"
+  experiment_type: "publication_ready"
+  
+  base: "base_config"
+  
+  # High-quality output settings
+  visualization:
+    figure_format: "svg"
+    figure_dpi: 600
+    style: "publication"
+    save_raw_data: true
+    
+  logging:
+    level: "INFO"
+    formats: ["json", "csv"]
+    detailed_metrics: true
+    
+  analysis:
+    comprehensive_analysis: true
+    statistical_testing: true
+    publication_metrics: true
+    
+  experiment:
+    replications: 5
+    statistical_significance: 0.05
+    confidence_intervals: true
+
+# Debug Configuration
+debug_config:
+  experiment_id: "debug_001"
+  experiment_type: "debugging"
+  
+  base: "base_config"
+  
+  # Debug-specific settings
+  logging:
+    level: "DEBUG"
+    formats: ["txt", "json"]
+    verbose_output: true
+    
+  experiment:
+    sequence_length: 50
+    network_size: 5
+    iterations: 100
+    debug_mode: true
+    
+  visualization:
+    debug_plots: true
+    intermediate_states: true
