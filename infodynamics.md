@@ -1,7 +1,7 @@
 # Declaration of Infodynamics: A Foundational Manifesto for the Post-Thermodynamic Epoch
 
 **Version:** 1.0
-**Authors:** \[Redacted for Authorship Integrity]
+**Authors:** Peter Groom
 **Date:** \[To be finalized upon publication]
 
 ## Abstract
