@@ -1,0 +1,24 @@
+schema_version: '2.0'
+directory_name: scbf
+description: Structural Cognitive Bifractal Framework - Core implementation for interpretable AI analysis with TinyCIMM-Euler integration, entropy collapse detection, and quantum-aware metrics.
+semantic_scope:
+- scbf
+- interpretable_ai
+- bifractal_analysis
+- entropy_collapse
+- quantum_metrics
+- tinycimm_integration
+- mathematical_reasoning
+files:
+- README.md
+- __init__.py
+- scbf_runner.py
+- test_scbf.py
+- tinycimm_scbf_experiment.py
+child_directories:
+- experiment_results
+- loggers
+- metrics
+- scbf_experiments
+- utils
+- visualization

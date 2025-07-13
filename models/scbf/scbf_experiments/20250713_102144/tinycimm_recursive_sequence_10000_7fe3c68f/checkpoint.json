@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "name": "tinycimm_recursive_sequence_10000",
+    "id": "7fe3c68f",
+    "start_time": "2025-07-13T10:21:44.497090",
+    "end_time": null,
+    "total_steps": 10000,
+    "scbf_metrics_count": 397,
+    "status": "running"
+  },
+  "logs": [
+    {
+      "step": 9990,
+      "loss": 0.6730747222900391,
+      "output": 1.877057433128357,
+      "target": 1.0566461086273193,
+      "quantum_metrics": {
+        "KL-Divergence": 0.03475501456312747,
+        "Jensen-Shannon": 0.17426983582897335,
+        "Wasserstein Distance": 3.738277184739873,
+        "QWCS": 0.02816680563884181
+      },
+      "timestamp": "2025-07-13T10:23:06.884876",
+      "step_id": 9990
+    },
+    {
+      "step": 9991,
+      "loss": 0.6782891750335693,
+      "output": 1.8689916133880615,
+      "target": 1.0454084873199463,
+      "quantum_metrics": {
+        "KL-Divergence": 0.056288031629954875,
+        "Jensen-Shannon": 0.2232715935345104,
+        "Wasserstein Distance": 4.881708121626514,
+        "QWCS": 0.048320729755854386
+      },
+      "timestamp": "2025-07-13T10:23:06.892474",
+      "step_id": 9991
+    },
+    {
+      "step": 9992,
+      "loss": 0.6419253349304199,
+      "output": 1.8433071374893188,
+      "target": 1.042104721069336,
+      "quantum_metrics": {
+        "KL-Divergence": 0.17664303310125115,
+        "Jensen-Shannon": 0.4309134660332395,
+        "Wasserstein Distance": 7.587402735014737,
+        "QWCS": 0.12440850915415444
+      },
+      "timestamp": "2025-07-13T10:23:06.901907",
+      "step_id": 9992
+    },
+    {
+      "step": 9993,
+      "loss": 0.6188612580299377,
+      "output": 1.8344831466674805,
+      "target": 1.0478057861328125,
+      "quantum_metrics": {
+        "KL-Divergence": 0.44012636155759316,
+        "Jensen-Shannon": 0.6526014244774048,
+        "Wasserstein Distance": 8.835805385982315,
+        "QWCS": 0.15947080980191622
+      },
+      "timestamp": "2025-07-13T10:23:06.909034",
+      "step_id": 9993
+    },
+    {
+      "step": 9994,
+      "loss": 0.5808023810386658,
+      "output": 1.8253575563430786,
+      "target": 1.06325364112854,
+      "quantum_metrics": {
+        "KL-Divergence": 1.4675573008592946,
+        "Jensen-Shannon": 1.0104660500345308,
+        "Wasserstein Distance": 11.48661699328477,
+        "QWCS": 0.24289994961333444
+      },
+      "timestamp": "2025-07-13T10:23:06.917036",
+      "step_id": 9994
+    },
+    {
+      "step": 9995,
+      "loss": 0.5288651585578918,
+      "output": 1.815977931022644,
+      "target": 1.0887467861175537,
+      "quantum_metrics": {
+        "KL-Divergence": 3.7559336693704073,
+        "Jensen-Shannon": 1.480581862838176,
+        "Wasserstein Distance": 18.60779612592012,
+        "QWCS": 0.5094056467397798
+      },
+      "timestamp": "2025-07-13T10:23:06.926311",
+      "step_id": 9995
+    },
+    {
+      "step": 9996,
+      "loss": 0.4656001031398773,
+      "output": 1.8063974380493164,
+      "target": 1.1240484714508057,
+      "quantum_metrics": {
+        "KL-Divergence": 6.795802205078539,
+        "Jensen-Shannon": 1.9379341947612907,
+        "Wasserstein Distance": 37.19634062752627,
+        "QWCS": 0.9130914183280636
+      },
+      "timestamp": "2025-07-13T10:23:06.933388",
+      "step_id": 9996
+    },
+    {
+      "step": 9997,
+      "loss": 0.39476412534713745,
+      "output": 1.7966749668121338,
+      "target": 1.168372392654419,
+      "quantum_metrics": {
+        "KL-Divergence": 8.971820117556737,
+        "Jensen-Shannon": 2.244112128969169,
+        "Wasserstein Distance": 55.02975789464769,
+        "QWCS": 0.3958010488284573
+      },
+      "timestamp": "2025-07-13T10:23:06.940387",
+      "step_id": 9997
+    },
+    {
+      "step": 9998,
+      "loss": 0.32079026103019714,
+      "output": 1.7868748903274536,
+      "target": 1.2204914093017578,
+      "quantum_metrics": {
+        "KL-Divergence": 9.635562550690365,
+        "Jensen-Shannon": 2.388032458788584,
+        "Wasserstein Distance": 61.281782535247046,
+        "QWCS": 0.2064498803404373
+      },
+      "timestamp": "2025-07-13T10:23:06.948564",
+      "step_id": 9998
+    },
+    {
+      "step": 9999,
+      "loss": 0.24821054935455322,
+      "output": 1.777065634727478,
+      "target": 1.2788583040237427,
+      "quantum_metrics": {
+        "KL-Divergence": 9.368721594433836,
+        "Jensen-Shannon": 2.4296377206038184,
+        "Wasserstein Distance": 63.59120600781662,
+        "QWCS": 0.12568730827201471
+      },
+      "timestamp": "2025-07-13T10:23:06.955564",
+      "step_id": 9999
+    }
+  ]
+}

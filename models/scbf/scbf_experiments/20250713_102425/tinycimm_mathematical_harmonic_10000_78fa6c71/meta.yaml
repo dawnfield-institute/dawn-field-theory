@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: tinycimm_mathematical_harmonic_10000_78fa6c71
+description: Mathematical harmonic experiment (10K steps) - Final loss 1.98e-07, best performance demonstrating exceptional alignment with harmonic mathematical structure.
+semantic_scope:
+- harmonic_experiment
+- 10000_steps
+- best_performance
+- exceptional_alignment
+- harmonic_structure
+- mathematical_elegance
+files:
+- checkpoint.json
+- experiment_results.json
+- experiment_summary.txt
+child_directories:
+- plots

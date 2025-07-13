@@ -1,0 +1,172 @@
+{
+  "experiments": {
+    "10973aa0": {
+      "name": "test_experiment",
+      "id": "10973aa0",
+      "start_time": "2025-07-12T12:57:50.902978",
+      "status": "completed",
+      "directory": "scbf_experiments\\test_experiment_10973aa0",
+      "end_time": "2025-07-12T12:57:50.903985"
+    },
+    "36ac7469": {
+      "name": "tinycimm_prime_deltas_100",
+      "id": "36ac7469",
+      "start_time": "2025-07-13T09:11:16.558556",
+      "status": "running",
+      "directory": "scbf_experiments\\tinycimm_prime_deltas_100_36ac7469"
+    },
+    "8d76e4b8": {
+      "name": "tinycimm_prime_deltas_50",
+      "id": "8d76e4b8",
+      "start_time": "2025-07-13T09:12:07.186637",
+      "status": "completed",
+      "directory": "scbf_experiments\\tinycimm_prime_deltas_50_8d76e4b8",
+      "end_time": "2025-07-13T09:12:13.805245"
+    },
+    "eb5851ae": {
+      "name": "tinycimm_prime_deltas_200",
+      "id": "eb5851ae",
+      "start_time": "2025-07-13T09:18:31.331728",
+      "status": "completed",
+      "directory": "scbf_experiments\\tinycimm_prime_deltas_200_eb5851ae",
+      "end_time": "2025-07-13T09:18:33.075000"
+    },
+    "f7615b5e": {
+      "name": "tinycimm_prime_deltas_20",
+      "id": "f7615b5e",
+      "start_time": "2025-07-13T09:19:38.328413",
+      "status": "completed",
+      "directory": "scbf_experiments\\tinycimm_prime_deltas_20_f7615b5e",
+      "end_time": "2025-07-13T09:19:39.842619"
+    },
+    "7a4fe591": {
+      "name": "tinycimm_prime_deltas_200",
+      "id": "7a4fe591",
+      "start_time": "2025-07-13T09:20:39.416882",
+      "status": "completed",
+      "directory": "scbf_experiments\\tinycimm_prime_deltas_200_7a4fe591",
+      "end_time": "2025-07-13T09:20:41.190270"
+    },
+    "141ac871": {
+      "name": "tinycimm_prime_deltas_30",
+      "id": "141ac871",
+      "start_time": "2025-07-13T09:29:47.466041",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_092947\\tinycimm_prime_deltas_30_141ac871",
+      "end_time": "2025-07-13T09:29:49.120165"
+    },
+    "ce50055f": {
+      "name": "tinycimm_prime_deltas_10000",
+      "id": "ce50055f",
+      "start_time": "2025-07-13T09:32:38.599140",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_093238\\tinycimm_prime_deltas_10000_ce50055f",
+      "end_time": "2025-07-13T09:32:51.966846"
+    },
+    "e9b9c5d6": {
+      "name": "tinycimm_prime_deltas_100",
+      "id": "e9b9c5d6",
+      "start_time": "2025-07-13T09:44:32.733141",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_094432\\tinycimm_prime_deltas_100_e9b9c5d6",
+      "end_time": "2025-07-13T09:44:34.395256"
+    },
+    "e4b7fb99": {
+      "name": "tinycimm_fibonacci_ratios_10000",
+      "id": "e4b7fb99",
+      "start_time": "2025-07-13T09:46:09.526761",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_094609\\tinycimm_fibonacci_ratios_10000_e4b7fb99",
+      "end_time": "2025-07-13T09:46:23.119664"
+    },
+    "2844b909": {
+      "name": "tinycimm_prime_deltas_200",
+      "id": "2844b909",
+      "start_time": "2025-07-13T09:53:45.582653",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_095345\\tinycimm_prime_deltas_200_2844b909",
+      "end_time": "2025-07-13T09:53:48.503203"
+    },
+    "93ccebfe": {
+      "name": "tinycimm_prime_deltas_100",
+      "id": "93ccebfe",
+      "start_time": "2025-07-13T09:57:49.627323",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_095749\\tinycimm_prime_deltas_100_93ccebfe",
+      "end_time": "2025-07-13T09:57:51.984971"
+    },
+    "2f83a477": {
+      "name": "tinycimm_prime_deltas_1000",
+      "id": "2f83a477",
+      "start_time": "2025-07-13T10:03:32.380153",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_100332\\tinycimm_prime_deltas_1000_2f83a477",
+      "end_time": "2025-07-13T10:03:42.313892"
+    },
+    "ded09dd9": {
+      "name": "tinycimm_fibonacci_ratios_10000",
+      "id": "ded09dd9",
+      "start_time": "2025-07-13T10:07:32.383220",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_100732\\tinycimm_fibonacci_ratios_10000_ded09dd9",
+      "end_time": "2025-07-13T10:08:52.430350"
+    },
+    "88df8163": {
+      "name": "tinycimm_sine_wave_10000",
+      "id": "88df8163",
+      "start_time": "2025-07-13T10:10:16.112280",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_101016\\tinycimm_sine_wave_10000_88df8163",
+      "end_time": "2025-07-13T10:11:41.300461"
+    },
+    "9692c3a7": {
+      "name": "tinycimm_fibonacci_ratios_10000",
+      "id": "9692c3a7",
+      "start_time": "2025-07-13T10:14:03.327701",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_101403\\tinycimm_fibonacci_ratios_10000_9692c3a7",
+      "end_time": "2025-07-13T10:15:21.326083"
+    },
+    "47bfb087": {
+      "name": "tinycimm_polynomial_sequence_10000",
+      "id": "47bfb087",
+      "start_time": "2025-07-13T10:18:47.790331",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_101847\\tinycimm_polynomial_sequence_10000_47bfb087",
+      "end_time": "2025-07-13T10:20:09.716266"
+    },
+    "7fe3c68f": {
+      "name": "tinycimm_recursive_sequence_10000",
+      "id": "7fe3c68f",
+      "start_time": "2025-07-13T10:21:44.497090",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_102144\\tinycimm_recursive_sequence_10000_7fe3c68f",
+      "end_time": "2025-07-13T10:23:06.956582"
+    },
+    "78fa6c71": {
+      "name": "tinycimm_mathematical_harmonic_10000",
+      "id": "78fa6c71",
+      "start_time": "2025-07-13T10:24:25.138058",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_102425\\tinycimm_mathematical_harmonic_10000_78fa6c71",
+      "end_time": "2025-07-13T10:25:48.300054"
+    },
+    "f1940154": {
+      "name": "tinycimm_prime_deltas_10000",
+      "id": "f1940154",
+      "start_time": "2025-07-13T10:29:31.770770",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_102931\\tinycimm_prime_deltas_10000_f1940154",
+      "end_time": "2025-07-13T10:30:57.768360"
+    },
+    "20886596": {
+      "name": "tinycimm_prime_deltas_100000",
+      "id": "20886596",
+      "start_time": "2025-07-13T10:48:41.101141",
+      "status": "completed",
+      "directory": "scbf_experiments\\20250713_104841\\tinycimm_prime_deltas_100000_20886596",
+      "end_time": "2025-07-13T11:03:25.313552"
+    }
+  },
+  "created": "2025-07-12T12:57:50.901280"
+}

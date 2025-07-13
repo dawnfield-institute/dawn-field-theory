@@ -1,0 +1,20 @@
+schema_version: '2.0'
+directory_name: scbf_experiments
+description: SCBF experimental results repository - contains timestamped experiment runs, data, visualizations, and analysis results from TinyCIMM-SCBF integration studies.
+semantic_scope:
+- scbf_experiments
+- experimental_results
+- tinycimm_scbf
+- mathematical_reasoning_experiments
+- interpretability_validation
+- experiment_data
+files:
+- '[cip][experiment][v1.0][2025-07-13]_scbf_interpretability_report.md'
+- experiment_registry.json
+child_directories:
+- '20250713_101403'
+- '20250713_101847'
+- '20250713_102144'
+- '20250713_102425'
+- '20250713_102931'
+- '20250713_104841'

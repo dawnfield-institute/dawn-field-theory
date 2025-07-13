@@ -1,8 +1,12 @@
 schema_version: '2.0'
 directory_name: images
-description: Auto-generated metadata for images directory.
+description: Visual outputs from TinyCIMM-Euler algebraic sequence experiment showing SCBF interpretability analysis, field-aware loss dynamics, prediction accuracy, and mathematical weight evolution during algebraic reasoning tasks.
 semantic_scope:
-- images
+- algebraic_experiment_visualization
+- tinycimm_euler_images
+- scbf_interpretability_plots
+- field_aware_loss_analysis
+- algebraic_reasoning_visualization
 files:
 - enhanced_scbf_interpretability_algebraic_sequence.png
 - field_aware_loss_analysis_algebraic_sequence.png

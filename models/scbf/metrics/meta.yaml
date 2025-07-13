@@ -1,0 +1,21 @@
+schema_version: '2.0'
+directory_name: metrics
+description: SCBF core metrics implementation - entropy collapse detection, bifractal lineage analysis, activation ancestry tracking, and semantic attractor identification.
+semantic_scope:
+- metrics
+- entropy_collapse
+- bifractal_lineage
+- activation_ancestry
+- semantic_attractors
+- quantum_metrics
+- interpretability_metrics
+files:
+- __init__.py
+- activation_ancestry.py
+- bifractal_lineage.py
+- entropy_collapse.py
+- phase_alignment.py
+- semantic_attractors.py
+- validation.py
+child_directories:
+- __pycache__

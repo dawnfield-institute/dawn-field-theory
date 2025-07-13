@@ -1,0 +1,23 @@
+schema_versdescription: SCBF experimental session containing TinyCIMM-Fibonacci ratios analysis with 10K iterations, demonstrating SCBF interpretability framework capabilities on mathematical golden ratio sequences.
+semantic_scope:
+- fibonacci_experiment_session
+- scbf_interpretability_experiment
+- mathematical_golden_ratio_analysis
+- neural_adaptation_experiment
+- experimental_timestamp_20250713_101403: '2.0'
+directory_name: 20250713_101403
+description: Fibonacci ratios experiment session - TinyCIMM-SCBF integration testing mathematical reasoning on fibonacci sequences with interpretability analysis.
+semantic_scope:
+- experiment_session
+- fibonacci_ratios
+- tinycimm_scbf
+- mathematical_reasoning
+- interpretability_analysis
+- 2025-07-13a_version: '2.0'
+directory_name: '20250713_101403'
+description: Auto-generated metadata for 20250713_101403 directory.
+semantic_scope:
+- '20250713_101403'
+files: []
+child_directories:
+- tinycimm_fibonacci_ratios_10000_9692c3a7

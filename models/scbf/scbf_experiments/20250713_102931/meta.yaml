@@ -1,0 +1,24 @@
+schema_versidescription: SCBF experimental session containing TinyCIMM-Prime deltas analysis with 10K iterations, demonstrating SCBF interpretability framework capabilities on prime number gap patterns.
+semantic_scope:
+- prime_deltas_experiment_session
+- scbf_interpretability_experiment
+- prime_pattern_analysis
+- neural_adaptation_experiment
+- experimental_timestamp_20250713_102931 '2.0'
+directory_name: 20250713_102931
+description: Prime deltas experiment session (10K steps) - TinyCIMM-SCBF testing on challenging prime number gap patterns requiring significant network adaptation.
+semantic_scope:
+- experiment_session
+- prime_deltas
+- tinycimm_scbf
+- prime_gaps
+- challenging_patterns
+- network_adaptation
+- 2025-07-13a_version: '2.0'
+directory_name: '20250713_102931'
+description: Auto-generated metadata for 20250713_102931 directory.
+semantic_scope:
+- '20250713_102931'
+files: []
+child_directories:
+- tinycimm_prime_deltas_10000_f1940154

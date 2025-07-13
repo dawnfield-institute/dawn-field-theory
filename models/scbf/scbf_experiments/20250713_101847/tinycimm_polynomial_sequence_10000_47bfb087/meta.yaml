@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: tinycimm_polynomial_sequence_10000_47bfb087
+description: Polynomial sequence experiment (10K steps) - Final loss 2.80e-06, excellent performance on structured mathematical patterns with clear interpretability insights.
+semantic_scope:
+- polynomial_experiment
+- 10000_steps
+- excellent_performance
+- structured_patterns
+- mathematical_sequence
+- interpretability_insights
+files:
+- checkpoint.json
+- experiment_results.json
+- experiment_summary.txt
+child_directories:
+- plots

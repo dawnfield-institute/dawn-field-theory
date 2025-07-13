@@ -1,0 +1,19 @@
+SCBF Experiment Summary Report
+==================================================
+
+Experiment: tinycimm_mathematical_harmonic_10000
+ID: 78fa6c71
+Duration: 83.2 seconds
+Start Time: 2025-07-13T10:24:25.138058
+End Time: 2025-07-13T10:25:48.300054
+
+Results:
+- Total Steps: 10000
+- SCBF Analyzed Steps: 200
+- Success Rate: 2.0%
+
+Metrics Breakdown:
+- entropy_collapse: 200 occurrences
+- activation_ancestry: 0 occurrences
+- semantic_attractors: 0 occurrences
+- bifractal_lineage: 200 occurrences

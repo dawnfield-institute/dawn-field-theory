@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: tinycimm_prime_deltas_10000_f1940154
+description: Prime deltas experiment (10K steps) - Final loss 4.68, challenging prime gap patterns requiring significant network growth (32→130 neurons) and structural adaptation.
+semantic_scope:
+- prime_deltas_experiment
+- 10000_steps
+- challenging_patterns
+- prime_gaps
+- network_growth
+- structural_adaptation
+files:
+- checkpoint.json
+- experiment_results.json
+- experiment_summary.txt
+child_directories:
+- plots

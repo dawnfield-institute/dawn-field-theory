@@ -1,8 +1,12 @@
 schema_version: '2.0'
 directory_name: logs
-description: Auto-generated metadata for logs directory.
+description: Experimental logs from TinyCIMM-Euler recursive sequence experiment (refined run) documenting optimized training progress, enhanced SCBF interpretability metrics, and improved recursive pattern analysis performance.
 semantic_scope:
-- logs
+- recursive_experiment_logs_refined
+- tinycimm_euler_logs
+- scbf_interpretability_optimization
+- field_aware_loss_optimization
+- recursive_pattern_refinement
 files:
 - tinycimm_euler_recursive_sequence_recursive_patterns_log.csv
 child_directories: []
