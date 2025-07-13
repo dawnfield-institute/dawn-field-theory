@@ -1,0 +1,21 @@
+schema_version: '2.0'
+directory_name: plots
+description: Visual outputs from TinyCIMM-Prime Deltas (100K) extended experiment showing SCBF interpretability analysis of large-scale prime number gap patterns through entropy dynamics, neural adaptation, and comprehensive experimental visualization demonstrating 6x performance improvement.
+semantic_scope:
+- prime_deltas_extended_visualization
+- scbf_interpretability_plots
+- neural_adaptation_tracking
+- entropy_dynamics_visualization
+- large_scale_prime_analysis
+files:
+- activation_ancestry.png
+- bifractal_evolution.png
+- complete_dashboard.png
+- entropy_collapse.png
+- live_adaptation_dynamics.png
+- neural_growth.png
+- predictions_vs_actual.png
+- quantum_metrics_analysis.png
+- semantic_attractors.png
+- weight_analysis.png
+child_directories: []

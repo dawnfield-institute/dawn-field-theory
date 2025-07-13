@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: utils
+description: SCBF utility functions - helper tools, data processing utilities, and common functions supporting the SCBF framework implementation.
+semantic_scope:
+- utils
+- scbf_utilities
+- helper_functions
+- data_processing
+- common_tools
+- framework_support
+- tools
+files:
+- __init__.py
+- scbf_utils.py
+child_directories:
+- __pycache__

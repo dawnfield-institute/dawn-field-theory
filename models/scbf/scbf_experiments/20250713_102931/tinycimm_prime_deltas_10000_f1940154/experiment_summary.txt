@@ -1,0 +1,19 @@
+SCBF Experiment Summary Report
+==================================================
+
+Experiment: tinycimm_prime_deltas_10000
+ID: f1940154
+Duration: 86.0 seconds
+Start Time: 2025-07-13T10:29:31.770770
+End Time: 2025-07-13T10:30:57.768360
+
+Results:
+- Total Steps: 10000
+- SCBF Analyzed Steps: 200
+- Success Rate: 2.0%
+
+Metrics Breakdown:
+- entropy_collapse: 200 occurrences
+- activation_ancestry: 200 occurrences
+- semantic_attractors: 115 occurrences
+- bifractal_lineage: 200 occurrences

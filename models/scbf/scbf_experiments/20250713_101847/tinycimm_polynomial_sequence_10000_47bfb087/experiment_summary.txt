@@ -1,0 +1,19 @@
+SCBF Experiment Summary Report
+==================================================
+
+Experiment: tinycimm_polynomial_sequence_10000
+ID: 47bfb087
+Duration: 81.9 seconds
+Start Time: 2025-07-13T10:18:47.790331
+End Time: 2025-07-13T10:20:09.716266
+
+Results:
+- Total Steps: 10000
+- SCBF Analyzed Steps: 200
+- Success Rate: 2.0%
+
+Metrics Breakdown:
+- entropy_collapse: 200 occurrences
+- activation_ancestry: 0 occurrences
+- semantic_attractors: 0 occurrences
+- bifractal_lineage: 200 occurrences

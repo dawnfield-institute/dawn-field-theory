@@ -1,0 +1,19 @@
+SCBF Experiment Summary Report
+==================================================
+
+Experiment: tinycimm_fibonacci_ratios_10000
+ID: 9692c3a7
+Duration: 78.0 seconds
+Start Time: 2025-07-13T10:14:03.327701
+End Time: 2025-07-13T10:15:21.326083
+
+Results:
+- Total Steps: 10000
+- SCBF Analyzed Steps: 200
+- Success Rate: 2.0%
+
+Metrics Breakdown:
+- entropy_collapse: 200 occurrences
+- activation_ancestry: 0 occurrences
+- semantic_attractors: 0 occurrences
+- bifractal_lineage: 188 occurrences

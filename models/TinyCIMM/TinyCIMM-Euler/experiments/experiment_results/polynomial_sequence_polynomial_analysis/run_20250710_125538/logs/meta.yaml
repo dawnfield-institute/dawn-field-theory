@@ -1,8 +1,12 @@
 schema_version: '2.0'
 directory_name: logs
-description: Auto-generated metadata for logs directory.
+description: Experimental logs from TinyCIMM-Euler polynomial sequence experiment (refined run) documenting optimized training progress, enhanced SCBF interpretability metrics, and improved polynomial pattern analysis performance.
 semantic_scope:
-- logs
+- polynomial_experiment_logs_refined
+- tinycimm_euler_logs
+- scbf_interpretability_optimization
+- field_aware_loss_optimization
+- polynomial_analysis_refinement
 files:
 - tinycimm_euler_polynomial_sequence_polynomial_analysis_log.csv
 child_directories: []

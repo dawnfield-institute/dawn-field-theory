@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: plots
+description: Visual outputs from TinyCIMM-Fibonacci experiment showing SCBF interpretability analysis through bifractal evolution tracking, entropy collapse detection, neural network growth patterns, and comprehensive experimental dashboard.
+semantic_scope:
+- fibonacci_experiment_visualization
+- scbf_interpretability_plots
+- neural_evolution_tracking
+- entropy_dynamics_visualization
+- experimental_dashboard
+files:
+- bifractal_evolution.png
+- complete_dashboard.png
+- entropy_collapse.png
+- neural_growth.png
+- predictions_vs_actual.png
+- quantum_metrics_analysis.png
+- training_dynamics.png
+- weight_analysis.png
+child_directories: []

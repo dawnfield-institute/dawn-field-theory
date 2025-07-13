@@ -1146,6 +1146,15 @@ dawn-field-theory/
     experiment_logs/
       chaotic_sine_log.csv
       meta.yaml
+    publication_suite/
+      analysis/
+        meta.yaml
+      config/
+        meta.yaml
+      pub_logging/
+        meta.yaml
+      visualizations/
+        meta.yaml
   models/
     README.md
     meta.yaml
@@ -1484,11 +1493,6 @@ dawn-field-theory/
             meta.yaml
             test_all_experiments.py
             test_improved_primes.py
-      TinyCIMM-Euler_to_delete/
-        meta.yaml
-        experiments/
-          meta.yaml
-          run_long_term_experiment.py
       TinyCIMM-Planck/
         [id][F][v1.0][C4][I5][E]_symbolic_collapse_interpretability.md
         meta.yaml
@@ -1674,11 +1678,174 @@ dawn-field-theory/
           __pycache__/
             meta.yaml
             run_experiment.cpython-311.pyc
+    scbf/
+      README.md
+      __init__.py
+      meta.yaml
+      scbf_runner.py
+      test_scbf.py
+      tinycimm_scbf_experiment.py
+      experiment_results/
+        meta.yaml
+      loggers/
+        __init__.py
+        experiment_logger.py
+        meta.yaml
+        __pycache__/
+          __init__.cpython-311.pyc
+          experiment_logger.cpython-311.pyc
+          meta.yaml
+      metrics/
+        __init__.py
+        activation_ancestry.py
+        bifractal_lineage.py
+        entropy_collapse.py
+        meta.yaml
+        phase_alignment.py
+        semantic_attractors.py
+        validation.py
+        __pycache__/
+          __init__.cpython-311.pyc
+          activation_ancestry.cpython-311.pyc
+          bifractal_lineage.cpython-311.pyc
+          entropy_collapse.cpython-311.pyc
+          meta.yaml
+          phase_alignment.cpython-311.pyc
+          semantic_attractors.cpython-311.pyc
+          validation.cpython-311.pyc
+      scbf_experiments/
+        [cip][experiment][v1.0][2025-07-13]_scbf_interpretability_report.md
+        experiment_registry.json
+        meta.yaml
+        20250713_101403/
+          meta.yaml
+          tinycimm_fibonacci_ratios_10000_9692c3a7/
+            checkpoint.json
+            experiment_results.json
+            experiment_summary.txt
+            meta.yaml
+            plots/
+              bifractal_evolution.png
+              complete_dashboard.png
+              entropy_collapse.png
+              meta.yaml
+              neural_growth.png
+              predictions_vs_actual.png
+              quantum_metrics_analysis.png
+              training_dynamics.png
+              weight_analysis.png
+        20250713_101847/
+          meta.yaml
+          tinycimm_polynomial_sequence_10000_47bfb087/
+            checkpoint.json
+            experiment_results.json
+            experiment_summary.txt
+            meta.yaml
+            plots/
+              bifractal_evolution.png
+              complete_dashboard.png
+              entropy_collapse.png
+              meta.yaml
+              neural_growth.png
+              predictions_vs_actual.png
+              quantum_metrics_analysis.png
+              training_dynamics.png
+              weight_analysis.png
+        20250713_102144/
+          meta.yaml
+          tinycimm_recursive_sequence_10000_7fe3c68f/
+            checkpoint.json
+            experiment_results.json
+            experiment_summary.txt
+            meta.yaml
+            plots/
+              bifractal_evolution.png
+              complete_dashboard.png
+              entropy_collapse.png
+              meta.yaml
+              neural_growth.png
+              predictions_vs_actual.png
+              quantum_metrics_analysis.png
+              training_dynamics.png
+              weight_analysis.png
+        20250713_102425/
+          meta.yaml
+          tinycimm_mathematical_harmonic_10000_78fa6c71/
+            checkpoint.json
+            experiment_results.json
+            experiment_summary.txt
+            meta.yaml
+            plots/
+              bifractal_evolution.png
+              complete_dashboard.png
+              entropy_collapse.png
+              meta.yaml
+              neural_growth.png
+              predictions_vs_actual.png
+              quantum_metrics_analysis.png
+              training_dynamics.png
+              weight_analysis.png
+        20250713_102931/
+          meta.yaml
+          tinycimm_prime_deltas_10000_f1940154/
+            checkpoint.json
+            experiment_results.json
+            experiment_summary.txt
+            meta.yaml
+            plots/
+              activation_ancestry.png
+              bifractal_evolution.png
+              complete_dashboard.png
+              entropy_collapse.png
+              live_adaptation_dynamics.png
+              meta.yaml
+              neural_growth.png
+              predictions_vs_actual.png
+              quantum_metrics_analysis.png
+              semantic_attractors.png
+              weight_analysis.png
+        20250713_104841/
+          meta.yaml
+          tinycimm_prime_deltas_100000_20886596/
+            checkpoint.json
+            experiment_results.json
+            experiment_summary.txt
+            meta.yaml
+            plots/
+              activation_ancestry.png
+              bifractal_evolution.png
+              complete_dashboard.png
+              entropy_collapse.png
+              live_adaptation_dynamics.png
+              meta.yaml
+              neural_growth.png
+              predictions_vs_actual.png
+              quantum_metrics_analysis.png
+              semantic_attractors.png
+              weight_analysis.png
+      utils/
+        __init__.py
+        meta.yaml
+        scbf_utils.py
+        __pycache__/
+          __init__.cpython-311.pyc
+          meta.yaml
+          scbf_utils.cpython-311.pyc
+      visualization/
+        __init__.py
+        meta.yaml
+        scbf_plots.py
+        __pycache__/
+          __init__.cpython-311.pyc
+          meta.yaml
+          scbf_plots.cpython-311.pyc
   resources/
     meta.yaml
     recursive_structure.png
   todo/
+    mathmatics_next_steps.md
     meta.yaml
+    roadmap_draft.md
     todolist.md
     left_for_first_release/
       AIXPreprint_skeleton.md

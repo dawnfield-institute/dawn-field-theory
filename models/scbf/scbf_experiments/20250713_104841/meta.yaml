@@ -1,0 +1,24 @@
+schema_versidescription: SCBF experimental session containing TinyCIMM-Prime deltas extended analysis with 100K iterations, demonstrating SCBF interpretability framework capabilities on large-scale prime number gap patterns with 6x performance improvement.
+semantic_scope:
+- prime_deltas_extended_experiment_session
+- scbf_interpretability_experiment
+- large_scale_prime_analysis
+- neural_adaptation_experiment
+- experimental_timestamp_20250713_104841 '2.0'
+directory_name: 20250713_104841
+description: Extended prime deltas experiment session (100K steps) - Comprehensive validation of hierarchical pattern discovery in prime number sequences.
+semantic_scope:
+- experiment_session
+- prime_deltas_extended
+- tinycimm_scbf
+- 100000_steps
+- hierarchical_discovery
+- prime_validation
+- 2025-07-13a_version: '2.0'
+directory_name: '20250713_104841'
+description: Auto-generated metadata for 20250713_104841 directory.
+semantic_scope:
+- '20250713_104841'
+files: []
+child_directories:
+- tinycimm_prime_deltas_100000_20886596

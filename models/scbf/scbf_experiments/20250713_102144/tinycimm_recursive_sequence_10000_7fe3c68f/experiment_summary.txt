@@ -1,0 +1,19 @@
+SCBF Experiment Summary Report
+==================================================
+
+Experiment: tinycimm_recursive_sequence_10000
+ID: 7fe3c68f
+Duration: 82.5 seconds
+Start Time: 2025-07-13T10:21:44.497090
+End Time: 2025-07-13T10:23:06.956582
+
+Results:
+- Total Steps: 10000
+- SCBF Analyzed Steps: 200
+- Success Rate: 2.0%
+
+Metrics Breakdown:
+- entropy_collapse: 200 occurrences
+- activation_ancestry: 0 occurrences
+- semantic_attractors: 0 occurrences
+- bifractal_lineage: 197 occurrences

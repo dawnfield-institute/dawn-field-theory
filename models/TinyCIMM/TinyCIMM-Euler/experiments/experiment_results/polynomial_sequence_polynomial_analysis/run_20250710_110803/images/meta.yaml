@@ -1,8 +1,12 @@
 schema_version: '2.0'
 directory_name: images
-description: Auto-generated metadata for images directory.
+description: Visual outputs from TinyCIMM-Euler polynomial sequence experiment showing SCBF interpretability analysis, field-aware loss dynamics, and polynomial pattern recognition visualization during mathematical sequence analysis.
 semantic_scope:
-- images
+- polynomial_experiment_visualization
+- tinycimm_euler_images
+- scbf_interpretability_plots
+- field_aware_loss_analysis
+- polynomial_pattern_visualization
 files:
 - enhanced_scbf_interpretability_polynomial_sequence.png
 - field_aware_loss_analysis_polynomial_sequence.png
