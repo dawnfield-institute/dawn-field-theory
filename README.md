@@ -242,6 +242,11 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 ## 🤝 Contributing & Community
 [Visit Dawn Field website for more info](https://dawnfield.ca/)
 
+**Join the Discord for announcements:**
+[https://discord.gg/bMRQnn3D](https://discord.gg/bMRQnn3D)
+
+*Currently, the Discord is for project announcements only until the migration phase ends. Afterward, channels will be added for roadmaps, diaries, notes, idea tracking, and discussion.*
+
 Want to contribute or collaborate?  
 See [MISSION.md](./MISSION.md) for the current contribution policy and institutional guidelines.  
 Dialogue and commentary are welcome—contact info is in [MISSION.md](./MISSION.md) and [README.md](./README.md).
