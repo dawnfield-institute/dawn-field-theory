@@ -225,7 +225,8 @@ def format_experiment_summary(summary: Dict[str, Any]) -> str:
         "=" * 40,
         f"Total Steps: {summary.get('total_steps', 'N/A')}",
         f"SCBF Analyzed Steps: {summary.get('scbf_analyzed_steps', 'N/A')}",
-        f"Success Rate: {summary.get('success_rate', 0):.1f}%",
+        f"Analysis Coverage: {summary.get('analysis_coverage', 0):.1f}%",
+        f"SCBF Success Rate: {summary.get('scbf_success_rate', 0):.1f}%",
         "",
         "Metrics Breakdown:",
     ]

@@ -107,7 +107,8 @@ class SCBFExperimentRunner:
         print(f"\n📋 Experiment Summary:")
         print(f"   Total Steps: {summary['total_steps']}")
         print(f"   SCBF Steps: {summary['scbf_analyzed_steps']}")
-        print(f"   Success Rate: {summary['success_rate']:.1f}%")
+        print(f"   Analysis Coverage: {summary['analysis_coverage']:.1f}%")
+        print(f"   SCBF Success Rate: {summary['scbf_success_rate']:.1f}%")
         
         print(f"\n🔬 Metrics Breakdown:")
         for metric, count in summary['metrics_breakdown'].items():
