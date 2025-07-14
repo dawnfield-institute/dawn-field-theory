@@ -7,24 +7,31 @@
 
 ## 🧠 Explore with DawnField GPT
 
+
 Looking for an intelligent way to navigate this repository?
 
 * [🧠 Launch DawnField GPT v0.2](https://chatgpt.com/g/g-6855ea1d2fc4819186339844c91c8a0c-dawnfieldframeworkrepogptv0-2)
 * [📘 How to Use the GPT](./cognition_index_protocol/gpt/how_to_use_gpt.md)
 
-🔍 **Machine-Native Navigation**:
+---
 
-* Start with `.cip/meta.yaml` → determine the active instructions version
-* Load `.cip/instructions_*.yaml` → schema + navigation rules
-* Use `map.yaml` → structured file map for agents
-* Parse `meta.yaml` → directory-level semantic tags and purpose
+## � Semantic Search & Machine-Native Navigation
 
-> 🤖 **Machine-Readable Summary:**  
-> Automated agents and scrapers: See [`for_ai_labs.md`](./for_ai_labs.md) for a structured overview of experiments, papers, and code relevant to AI labs.
+Dawn Field Theory is designed for both human and machine-native exploration. The repository supports deep semantic search and protocol-driven navigation:
 
-> 🧠 This repository uses a machine-readable semantic map (`map.yaml`) and protocol definition via the **Cognition Index Protocol (CIP)**.  
-> • Begin at: [`cognition_index_protocol/architecture/CIP_architecturev1.md`](./cognition_index_protocol/architecture/CIP_architecturev1.md)  
-> • Reference metadata schema: [`cognition_index_protocol/gpt/metadata_architecturev3.md`](./cognition_index_protocol/gpt/metadata_architecturev3.md)
+* **Semantic Search:**
+  * Use the [Cognition Index Protocol (CIP)](./cognition_index_protocol/README.md) and `map.yaml` for structured, machine-readable file mapping and navigation.
+  * Search by concept, protocol, experiment, or theory—discover connections across code, papers, and results.
+  * Key files: `.cip/meta.yaml`, `.cip/instructions_*.yaml`, `map.yaml`, and directory-level `meta.yaml` files provide semantic tags, navigation rules, and schema.
+  * Automated agents and scrapers: See [`for_ai_labs.md`](./for_ai_labs.md) for a structured overview of experiments, papers, and code relevant to AI labs.
+  * Begin at: [`cognition_index_protocol/architecture/CIP_architecturev1.md`](./cognition_index_protocol/architecture/CIP_architecturev1.md)
+  * Reference metadata schema: [`cognition_index_protocol/gpt/metadata_architecturev3.md`](./cognition_index_protocol/gpt/metadata_architecturev3.md)
+* **How to Use:**
+  * Start with CIP and `map.yaml` for navigation rules and semantic tags.
+  * Use semantic search tools (repo-native GPTs, custom agents, or your own scripts) to find protocols, experiments, and theoretical constructs.
+  * All major subdirectories and files are tagged for discoverability and alignment.
+
+---
 
 ---
 
@@ -69,7 +76,7 @@ Looking for an intelligent way to navigate this repository?
 
 ---
 
-## 🌟 Status: Public Anchor Phase (WIP)
+## 🌟 Status: Public Anchor Phase (WIP)(this is wrapping up)
 
 This repository is currently in **Phase 1: Public Anchor**.  
 Documents, metadata, and simulation structures are being migrated from internal prototypes. Expect frequent updates.
@@ -78,15 +85,9 @@ Documents, metadata, and simulation structures are being migrated from internal 
 
 ---
 
-## 🚩 2025 Progress & Workflow Update
+## �️ Roadmaps & Planning
 
-**Recent advances:**
-
-* Symbolic bifractal collapse validated in 3D simulations
-* Recursive entropy/collapse trees confirm symbolic geometry and adaptive pruning
-* Proto-galactic superfluid modeled from recursive information fields (no Newtonian force)
-* Cognition Index Protocol (CIP) introduced for machine-native benchmarking
-* Unified entropy as substrate across quantum and classical regimes
+For all project roadmaps, timelines, and planning details, see [`roadmaps/README.md`](./roadmaps/README.md).
 
 **Development workflow:**
 
@@ -130,27 +131,30 @@ It models cognition through:
 
 ---
 
-## 🧠 CIMM: Legacy AGI Prototype (Sunset)
 
-CIMM (Cosmic Information Mining Model) was the first entropy-informed agentic system.  
-Currently, the prime number structure experiment is operational. GPU enablement is in progress, and some finance modeling experiments are temporarily offline during this transition.  
-Now preserved as a historical AGI engine.
+## � Models: TinyCIMM, SCBF (XAI), GAIA, and CIMM
 
-🗃️ [`models/CIMM/README.md`](./models/CIMM/README.md)
+### TinyCIMM: Minimalist Symbolic Cognition
+TinyCIMM is the newest, ultra-lightweight agentic model for symbolic cognition and recursive collapse. It demonstrates how minimal entropy-informed architectures can achieve adaptive learning, symbolic memory, and field-based intelligence. Explore its code and experiments for a hands-on introduction to Dawn’s core principles.
 
----
+🧩 [`models/TinyCIMM/README.md`](./models/TinyCIMM/README.md)
 
-## 🌍 GAIA: Next-Generation Field Intelligence
+### SCBF: Symbolic Collapse Benchmark Framework (XAI)
+SCBF is the explainable AI (XAI) suite for benchmarking symbolic collapse, transparency, and interpretability. It provides tools and protocols for visualizing collapse events, tracing entropy, and validating agentic decisions. SCBF is the recommended starting point for XAI research and practical explainability in Dawn Field Theory.
 
+� [`models/scbf/README.md`](./models/scbf/README.md)
+
+### GAIA: Next-Generation Field Intelligence
 GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Field into:
-
 * Symbolic memory systems
 * Meta-cognitive trace protocols
 * Resonant agentic cognition
-
 > **Note:** GAIA is in the architecture and early development stage. Internal prototyping is ongoing; no runnable implementation is available yet.
-
 🌐 [`models/GAIA/README.md`](./models/GAIA/README.md)
+
+### CIMM: Legacy AGI Prototype (Sunset)
+CIMM (Cosmic Information Mining Model) was the first entropy-informed agentic system. It is now preserved as a historical AGI engine and reference for early Dawn Field experiments.
+🗃️ [`models/CIMM/README.md`](./models/CIMM/README.md)
 
 ---
 
@@ -160,8 +164,10 @@ GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Fiel
 | --------------------------- | ----------------------------------------------------------------------- |
 | `foundational/docs/`        | Core theory (Infodynamics, collapse geometry, symbolic recursion)       |
 | `foundational/experiments/` | Simulations and results (entropy fields, bifractals, symbolic collapse) |
+| `models/TinyCIMM/`          | Minimalist symbolic cognition and recursive collapse                    |
+| `models/scbf/`              | Symbolic Collapse Benchmark Framework (XAI, explainability)             |
+| `models/GAIA/`              | Next-generation field intelligence                                      |
 | `models/CIMM/`              | Legacy post-symbolic AGI runtime                                        |
-| `models/GAIA/`              | Modern symbolic cognition experiments                                   |
 | `devkit/`                   | Tools and experimental harnesses for entropy/collapse modeling          |
 
 ---
