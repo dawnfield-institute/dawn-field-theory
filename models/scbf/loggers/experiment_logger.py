@@ -142,7 +142,7 @@ class SCBFExperimentLogger:
         summary = {
             'total_steps': len(self.logs),
             'scbf_analyzed_steps': len(scbf_logs),
-            'success_rate': len(scbf_logs) / len(self.logs) * 100,
+            'analysis_coverage': len(scbf_logs) / len(self.logs) * 100,
             'metrics_breakdown': {}
         }
         
@@ -151,6 +151,15 @@ class SCBFExperimentLogger:
         ancestry_count = sum(1 for log in scbf_logs if 'ancestry' in log['scbf'])
         attractor_count = sum(1 for log in scbf_logs if 'attractors' in log['scbf'])
         lineage_count = sum(1 for log in scbf_logs if 'lineage' in log['scbf'])
+        
+        # Calculate actual success rate: percentage of SCBF analyses that produced meaningful metrics
+        successful_analyses = sum(1 for log in scbf_logs 
+                                if any(metric in log['scbf'] for metric in 
+                                      ['entropy_collapse', 'ancestry', 'attractors', 'lineage']))
+        scbf_success_rate = (successful_analyses / len(scbf_logs) * 100) if scbf_logs else 0
+        
+        summary['scbf_success_rate'] = scbf_success_rate
+        summary['successful_analyses'] = successful_analyses
         
         summary['metrics_breakdown'] = {
             'entropy_collapse': entropy_count,
@@ -179,7 +188,9 @@ class SCBFExperimentLogger:
             f.write(f"Results:\n")
             f.write(f"- Total Steps: {summary['total_steps']}\n")
             f.write(f"- SCBF Analyzed Steps: {summary['scbf_analyzed_steps']}\n")
-            f.write(f"- Success Rate: {summary['success_rate']:.1f}%\n\n")
+            f.write(f"- Analysis Coverage: {summary['analysis_coverage']:.1f}%\n")
+            f.write(f"- SCBF Success Rate: {summary['scbf_success_rate']:.1f}%\n")
+            f.write(f"- Successful Analyses: {summary['successful_analyses']}\n\n")
             
             f.write(f"Metrics Breakdown:\n")
             for metric, count in summary['metrics_breakdown'].items():
