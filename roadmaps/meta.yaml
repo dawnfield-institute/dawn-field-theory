@@ -1,0 +1,21 @@
+schema_version: '2.0'
+directory_name: roadmaps
+description: |
+  Roadmaps for the Dawn Field Theory project, including development, publication, and research plans for SEC, SCBF, and related frameworks.
+semantic_scope:
+- roadmaps
+files:
+- README.md
+semantic_tags:
+  - roadmap
+  - planning
+  - sec
+  - scbf
+  - dawn_field_theory
+- cip_protocol_roadmap.md
+- core_project_roadmap.md
+- gaia_roadmap.md
+- math_arithmetic_roadmap.md
+- publication_framework_roadmap.md
+- xai_scbf_roadmap.md
+child_directories: []
