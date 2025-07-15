@@ -247,6 +247,9 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 
 *Currently, the Discord is for project announcements only until the migration phase ends. Afterward, channels will be added for roadmaps, diaries, notes, idea tracking, and discussion.*
 
+**Follow the author on Medium:**
+[https://medium.com/@lornecodes](https://medium.com/@lornecodes)
+
 Want to contribute or collaborate?  
 See [MISSION.md](./MISSION.md) for the current contribution policy and institutional guidelines.  
 Dialogue and commentary are welcome—contact info is in [MISSION.md](./MISSION.md) and [README.md](./README.md).
