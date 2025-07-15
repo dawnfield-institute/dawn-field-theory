@@ -15,7 +15,13 @@ semantic_scope:
 - interpretability_monitoring
 - 2025-07-13a_version: '2.0'
 directory_name: '20250713_101847'
-description: Auto-generated metadata for 20250713_101847 directory.
+description: |
+  SCBF experiment run (timestamp: 20250713_101847) for symbolic collapse benchmarking and interpretability analysis.
+semantic_tags:
+  - scbf
+  - symbolic_collapse
+  - benchmarking
+  - interpretability
 semantic_scope:
 - '20250713_101847'
 files: []

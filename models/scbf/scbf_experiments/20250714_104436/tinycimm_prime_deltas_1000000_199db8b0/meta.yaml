@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: tinycimm_prime_deltas_1000000_199db8b0
+description: |
+  TinyCIMM prime deltas experiment (timestamp: 20250714_104436, hash: 199db8b0) for SCBF symbolic collapse benchmarking.
+semantic_scope:
+- tinycimm_prime_deltas_1000000_199db8b0
+files:
+- results_location.txt
+semantic_tags:
+  - scbf
+  - tinycimm
+  - symbolic_collapse
+  - benchmarking
+child_directories: []
