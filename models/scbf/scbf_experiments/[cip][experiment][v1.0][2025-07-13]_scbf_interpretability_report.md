@@ -24,6 +24,7 @@ This report presents a professional, balanced analysis of our initial experiment
 - **Framework**: SCBF (preliminary cognitive and structural analysis)
 - **Signals Tested**: fibonacci_ratios, polynomial_sequence, mathematical_harmonic, recursive_sequence, prime_deltas
 - **Steps**: 1000–100000 per experiment (extended analysis at 100K for prime deltas)
+- **SCBF Analysis**: Every 50 steps (2% coverage) to capture learning dynamics while maintaining computational efficiency
 - **Metrics**: MSE, KL-Divergence, Jensen-Shannon, Wasserstein, QWCS, Entropy Collapse, Bifractal Lineage, Attractors, Ancestry
 - **Hardware**: CUDA-enabled GPU (PyTorch)
 
@@ -34,7 +35,7 @@ This report presents a professional, balanced analysis of our initial experiment
 - **Mathematical Harmonic**: Final loss ≈ 1.98e-07 (excellent)
 - **Recursive Sequence**: Final loss ≈ 0.248 (moderate, required network growth)
 - **Prime Deltas (10K steps)**: Final loss ≈ 4.68 (challenging, required significant network growth)
-- **Prime Deltas (100K steps)**: Final loss ≈ 0.78 (6x improvement, validates hierarchical pattern discovery)
+- **Prime Deltas (100K steps)**: Final loss ≈ 0.78 (6x improvement over 10K baseline, validates benefit of extended adaptation time)
 
 ### 2.2 Initial Interpretability Metrics
 - **Entropy Collapse**: Detected potential learning breakthroughs (e.g., sharp spike for fibonacci, gradual for primes)
@@ -47,7 +48,7 @@ Extended adaptation experiments (100K steps) on prime gaps revealed several sign
 
 - **Hierarchical Pattern Discovery**: Multiple entropy collapse events at steps ~4K, ~42K, and ~75K demonstrated distinct stages of mathematical insight
 - **Progressive Network Evolution**: Initial growth from 32→130 neurons, followed by plateau (150-160), secondary expansion (~185), and optimization (~180)
-- **Performance Breakthrough**: Loss decreased from 4.68 (10K steps) to 0.78 (100K steps), a 6x improvement
+- **Performance Breakthrough**: Loss decreased from 4.68 (10K steps) to 0.78 (100K steps), a 6x improvement over the shorter training duration
 - **Fractal Dimension Refinement**: Further reduction from 0.71 (10K) to 0.68 (100K), indicating more efficient structural representation
 - **Statistical Pattern Recognition**: Development of capacity to track medium-term prime gap trends while maintaining adaptation to sudden large gaps
 
@@ -70,6 +71,8 @@ Extended adaptation experiments (100K steps) on prime gaps revealed several sign
 - The interpretability metrics show promise but require further refinement and theoretical grounding.
 - **Extended experiments (100K steps) on prime gaps validated that sufficient adaptation time enables discovery of hierarchical patterns in complex mathematical sequences.**
 - Current metrics provide observational insights but need development to offer causal explanations.
+- **SCBF Analysis Coverage**: Currently set to analyze every 50th step (2% of total steps), which provides adequate sampling for interpretability metrics but may miss some rapid transitions.
+- **Analysis Efficiency**: Future versions should implement adaptive sampling intervals that increase frequency during detected learning transitions.
 
 ## 5. Post v1.0 Development Roadmap
 
@@ -97,7 +100,7 @@ Extended adaptation experiments (100K steps) on prime gaps revealed several sign
 - This initial SCBF + TinyCIMM-Euler integration shows promising potential for interpretable mathematical reasoning.
 - While preliminary, the results suggest a viable path toward deeper, multi-layered explainability.
 - **The extended prime gap experiments (100K steps) provide compelling evidence that the SCBF framework can detect multiple stages of mathematical concept formation, even in domains traditionally considered highly complex and irregular.**
-- **The observed correlation between adaptation time, network structure evolution, and performance improvement validates the framework's ability to quantify mathematical complexity and reasoning requirements.**
+- **The observed correlation between extended adaptation time, network structure evolution, and performance improvement validates the framework's ability to quantify mathematical complexity and reasoning requirements.**
 - The roadmap for post v1.0 development outlines a comprehensive approach to transform these initial findings into a robust interpretability framework.
 
 ---
