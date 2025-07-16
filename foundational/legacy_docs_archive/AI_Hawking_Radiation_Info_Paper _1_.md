@@ -2,7 +2,7 @@
 document_title: AI-Driven Hawking Radiation Analysis: Reconstructing Black Hole Information from Wavefunction Collapse
 version: 1.0
 authors:
-  - name: Research Team on AI and Quantum Physics
+  - name: Peter Lorne Groom
 date_created: 2025-03-XX
 schema_version: dawn_field_schema_v1.1
 document_type: simulation_results
@@ -21,7 +21,7 @@ related_documents:
 ```
 # AI-Driven Hawking Radiation Analysis: Reconstructing Black Hole Information from Wavefunction Collapse
 
-_Author: Research Team on AI and Quantum Physics_
+_Author: Peter Lorne Groom
 _Date: March 2025_
 
 ---

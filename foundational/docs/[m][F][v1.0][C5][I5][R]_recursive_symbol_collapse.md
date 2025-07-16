@@ -1,9 +1,7 @@
 ---
 title: Recursive Symbolic Collapse via Entropy Field Segmentation: A Post-Linguistic Compiler
 authors:
-  - DawnFrameworkEngine2025
-  - Lorne
-  - Entropica Research Group
+  - Peter Lorne Groom
 version: 1.0
 date: 2025-06-21
 document_type: theoretical_paper

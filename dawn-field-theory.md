@@ -84,7 +84,7 @@ Dawn Field Theory is active and evolving. Simulations continue to validate its a
 document_title: Dawn Field Theory
 version: 1.0
 authors:
-  - name: Redacted for Authorship Integrity
+  - name: Peter Groom
 date_created: [To be finalized upon publication]
 schema_version: dawn_field_schema_v1.1
 document_type: theoretical_framework

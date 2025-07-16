@@ -1,3 +1,24 @@
+#
+```yaml
+document_title: Decoherence Test Results: Symbolic Stability vs Quantum Coherence
+cip_tags: [id, Q, v1.0, C4, I3]
+authors:
+  - name: Peter Lorne Groom
+date_created: 2025-07-16
+schema_version: dawn_field_schema_v1.1
+experiment_type: empirical_validation
+related_files:
+  - decoherence_soft_metrics.json
+  - coherence_decay_soft.png
+  - entropy_trace_soft.png
+  - stability_trace_soft.png
+  - field_snapshot_step0.png
+  - field_snapshot_step25.png
+  - field_snapshot_step49.png
+  - stability_vs_quantum.json
+description: |
+  This document reports the empirical comparison of symbolic entropy collapse (SEC) and quantum decoherence, using a protocol-driven, reproducible experiment.
+```
 
 # Decoherence Test Results: Symbolic Stability vs Quantum Coherence
 
@@ -65,19 +86,19 @@ The inverse behavior between symbolic stability and quantum coherence suggests t
 ## Visuals Included
 
 **Coherence Decay Comparison:**
-![Coherence Decay](./results/decoherence_soft_20250716_110903/coherence_decay_soft.png)
+![Coherence Decay](./reference_material/decoherence_soft_20250716_110903/coherence_decay_soft.png)
 
 **Entropy Trace:**<br>
-![Entropy Trace](./results/decoherence_soft_20250716_110903/entropy_trace_soft.png)
+![Entropy Trace](./reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
 
 **Stability Trace:**<br>
-![Stability Trace](./results/decoherence_soft_20250716_110903/stability_trace_soft.png)
+![Stability Trace](./reference_material/decoherence_soft_20250716_110903/stability_trace_soft.png)
 
 **Field Snapshots:**
 <p float="left">
-  <img src="./results/decoherence_soft_20250716_110903/field_snapshot_step0.png" width="32%"/>
-  <img src="./results/decoherence_soft_20250716_110903/field_snapshot_step25.png" width="32%"/>
-  <img src="./results/decoherence_soft_20250716_110903/field_snapshot_step49.png" width="32%"/>
+  <img src="./reference_material/decoherence_soft_20250716_110903/field_snapshot_step0.png" width="32%"/>
+  <img src="./reference_material/decoherence_soft_20250716_110903/field_snapshot_step25.png" width="32%"/>
+  <img src="./reference_material/decoherence_soft_20250716_110903/field_snapshot_step49.png" width="32%"/>
 </p>
 
 

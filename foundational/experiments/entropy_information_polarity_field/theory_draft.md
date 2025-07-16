@@ -71,7 +71,6 @@ MORE NOTES:
 
 authors:
 
-* DawnFrameworkEngine2025
 * Lorne
 
 date: 2025-06-14

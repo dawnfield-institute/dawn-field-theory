@@ -1,7 +1,6 @@
 ---
 title: Recursive Collapse Coherence via Pi-Harmonic Angular Modulation
 authors:
-  - DawnFrameworkEngine2025
   - Lorne
 date: 2025-06-17
 version: 1.0

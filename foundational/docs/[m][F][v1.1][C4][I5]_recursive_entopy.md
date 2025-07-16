@@ -2,7 +2,7 @@
 document_title: Recursive Intelligence Emergence via Entropy-Seeding
 version: 1.1
 authors:
-  - name: Lorne
+  - name: Peter Lorne Groom
 date_created: [To be finalized upon publication]
 schema_version: dawn_field_schema_v1.1
 document_type: simulation_validation

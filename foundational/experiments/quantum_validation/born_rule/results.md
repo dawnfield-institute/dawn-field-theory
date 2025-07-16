@@ -2,8 +2,7 @@
 document_title: Born Rule Reproduction via Symbolic Entropy Collapse
 cip_tags: [m, Q, v1.0, C5, I1, E]
 authors:
-  - name: Dawn Field Theory Project
-  - name: Peter
+  - name: Peter Lorne Groom
 date_created: 2025-07-15
 schema_version: dawn_field_schema_v1.1
 experiment_type: empirical_validation
