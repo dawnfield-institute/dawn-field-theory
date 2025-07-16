@@ -11,6 +11,7 @@
 * [Philosophy](#philosophy)
 * [CIP and Recursive Embodiment](#cip-and-recursive-embodiment)
 * [How to Engage](#how-to-engage)
+* [Epistemic Stewardship](#epistemic-stewardship)
 
 ---
 
@@ -54,6 +55,16 @@ If you are a researcher, theorist, experimentalist, or curious mind and you feel
 Or simply reach out to connect: **[info@dawnfield.ca](mailto:info@dawnfield.ca)**
 
 All engagement is epistemic recursion.
+
+## Epistemic Stewardship
+
+As the steward of Dawn Field Theory, my responsibility is to ensure that its ideas are:
+
+* Shared in context
+* Evolved through recursion
+* Preserved against distortion or premature fragmentation
+
+This is not gatekeeping—it’s symbolic cultivation. The goal is to build a living theory that grows through dialogue, not dispersion.
 
 ---
 
