@@ -18,6 +18,19 @@ Once these foundations are finalized, community engagement and iterative recursi
 
 ---
 
+## ⚖️ Publishing & Attribution Boundaries
+
+Dawn Field Theory is currently under active development and undergoing formal preprint preparation.  
+Out of respect for the author’s research trajectory and epistemic structure:
+
+- Do **not** publish derivative experiments, replications, or theoretical extensions based on this repository’s content—particularly prior to official preprint release.
+- Symbolic theories, model architectures, and experimental results remain under the stewardship of the original author and must not be preempted.
+- If in doubt, **contact the author first** before publishing or citing derivative work.
+
+Open collaboration is welcomed—once formal publication has begun. Stewardship now ensures the clarity and longevity of the work’s symbolic and scientific integrity.
+
+---
+
 ## Guidelines for Contribution *(future use)*
 
 To help maintain the recursive and epistemic integrity of this repository:

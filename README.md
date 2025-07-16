@@ -5,6 +5,14 @@
 
 ---
 
+> ⚠️ **Summer 2025 Update: Consolidation Phase**
+> I’m currently entering a short post-1.0 publishing and consolidation phase.
+> While active development will slow temporarily, this project remains under my direct stewardship.
+> Please **do not publish experimental derivatives or replications** of this work—especially theoretical results or extensions—until official preprints are released and properly cited.
+> See `MISSION.md` and `CONTRIBUTION.md` for more details.
+
+---
+
 ## 🧠 Explore with DawnField GPT
 
 
