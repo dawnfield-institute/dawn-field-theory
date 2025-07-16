@@ -2,8 +2,7 @@
 document_title: Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework
 version: 2.0
 authors:
-  - name: Lorne
-  - name: GPT Interface Agent
+  - name: Peter Lorne Groom
 date_created: 2025-04-17
 schema_version: dawn_field_schema_v1.1
 document_type: simulation_validation
@@ -196,7 +195,7 @@ Simulation: Entropic Collapse Dynamics 1D, Newtonian Mechanics Overlay
 
 *Date: April 17, 2025*
 
-Authors: [REDACTED], GPT Interface Agent
+Authors: Peter Groom
 
 Tags: entropy, information physics, dawn theory, collapse, AGI, field dynamics, unification
 
@@ -211,8 +210,7 @@ Next Phase: 2D and 3D Entropic Lattice Fields, Dynamic Collapse Kernels, Recursi
 document_title: Collapse Dynamics in Entropic Fields: A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework
 version: 2.0
 authors:
-  - name: Lorne
-  - name: GPT Interface Agent
+  - name: Peter Lorne Groom
 date_created: 2025-04-17
 schema_version: dawn_field_schema_v1.1
 document_type: simulation_validation

@@ -1,7 +1,6 @@
 ```yaml
 document_title: The Law of InfoDynamics: Bifractal Collapse and Semantic Recursion in Field Intelligence
 authors:
-  - DawnFrameworkEngine2025
   - Lorne
 version: 0.1
 date: 2025-06-14

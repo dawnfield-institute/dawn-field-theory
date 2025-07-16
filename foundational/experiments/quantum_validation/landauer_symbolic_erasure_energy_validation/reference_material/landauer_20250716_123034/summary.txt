@@ -1,0 +1,25 @@
+Landauer Erasure Test Summary
+-----------------------------
+Steps: 50
+Base temperature: 300 K
+Final entropy: 0.9913 bits
+Final cumulative Landauer energy (measured): 4.2690e-21 J
+
+Theoretical minimum energy per bit erased (kTln2 at 300 K):
+  k_B = 1.380649e-23 J/K
+  T = 300 K
+  kTln2 = 2.87e-21 J/bit
+
+Expected minimum for 0.9913 bits erased: 2.85e-21 J
+Measured cumulative energy: 4.27e-21 J
+Ratio (measured/theoretical): 1.50
+
+Agreement: The measured energy is within a factor of {ratio:.2f} of the theoretical minimum, consistent with Landauer's bound.
+
+Interpretation:
+- The symbolic erasure process respects the physical lower bound set by Landauer’s principle.
+- The experiment demonstrates that the cumulative energy cost of erasure in this model is physically meaningful and reproducible.
+- Adaptive temperature feedback is tracked, providing a realistic extension for future studies.
+
+See 'energy_vs_entropy.png' for the cumulative energy plot.
+See 'adaptive_temperature_trace.png' for temperature feedback.

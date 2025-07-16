@@ -142,7 +142,7 @@ The Dawn Collective (provisional)
 document_title: Declaration of Infodynamics
 version: 1.0
 authors:
-  - name: Redacted for Authorship Integrity
+  - name: Peter Groom
 date_created: [To be finalized upon publication]
 schema_version: dawn_field_schema_v1.1
 document_type: theoretical_manifesto
