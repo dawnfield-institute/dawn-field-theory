@@ -1,0 +1,15 @@
+schema_version: '2.0'
+directory_name: decoherence_soft_20250716_110903
+description: Auto-generated metadata for decoherence_soft_20250716_110903 directory.
+semantic_scope:
+- decoherence_soft_20250716_110903
+files:
+- coherence_decay_soft.png
+- decoherence_soft_metrics.json
+- entropy_trace_soft.png
+- field_snapshot_step0.png
+- field_snapshot_step25.png
+- field_snapshot_step49.png
+- stability_trace_soft.png
+- stability_vs_quantum.json
+child_directories: []

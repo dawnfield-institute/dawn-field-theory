@@ -1,0 +1,15 @@
+schema_version: '2.0'
+directory_name: results
+description: Results and visualizations for SEC vs quantum decoherence experiment, including plots and metrics for entropy, coherence, stability, and quantum comparison.
+semantic_scope:
+  - results
+  - plots
+  - metrics
+  - entropy
+  - coherence
+  - stability
+  - quantum_comparison
+files: []
+child_directories:
+  - decoherence_soft_20250716_110903
+- decoherence_soft_20250716_110903
