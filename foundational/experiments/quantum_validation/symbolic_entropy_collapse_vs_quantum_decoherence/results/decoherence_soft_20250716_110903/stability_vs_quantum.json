@@ -1,0 +1,302 @@
+[
+    {
+        "step": 0,
+        "stability": 0.503,
+        "quantum_prob": 1.0,
+        "coherence": 0.006000000000000005
+    },
+    {
+        "step": 1,
+        "stability": 0.524,
+        "quantum_prob": 0.9048374180359595,
+        "coherence": 0.04800000000000004
+    },
+    {
+        "step": 2,
+        "stability": 0.558,
+        "quantum_prob": 0.8187307530779818,
+        "coherence": 0.11600000000000005
+    },
+    {
+        "step": 3,
+        "stability": 0.605,
+        "quantum_prob": 0.7408182206817179,
+        "coherence": 0.20999999999999996
+    },
+    {
+        "step": 4,
+        "stability": 0.644,
+        "quantum_prob": 0.6703200460356393,
+        "coherence": 0.28800000000000003
+    },
+    {
+        "step": 5,
+        "stability": 0.692,
+        "quantum_prob": 0.6065306597126334,
+        "coherence": 0.38399999999999995
+    },
+    {
+        "step": 6,
+        "stability": 0.738,
+        "quantum_prob": 0.5488116360940264,
+        "coherence": 0.476
+    },
+    {
+        "step": 7,
+        "stability": 0.779,
+        "quantum_prob": 0.49658530379140947,
+        "coherence": 0.558
+    },
+    {
+        "step": 8,
+        "stability": 0.835,
+        "quantum_prob": 0.44932896411722156,
+        "coherence": 0.6699999999999999
+    },
+    {
+        "step": 9,
+        "stability": 0.862,
+        "quantum_prob": 0.4065696597405991,
+        "coherence": 0.724
+    },
+    {
+        "step": 10,
+        "stability": 0.897,
+        "quantum_prob": 0.36787944117144233,
+        "coherence": 0.794
+    },
+    {
+        "step": 11,
+        "stability": 0.923,
+        "quantum_prob": 0.33287108369807955,
+        "coherence": 0.8460000000000001
+    },
+    {
+        "step": 12,
+        "stability": 0.942,
+        "quantum_prob": 0.301194211912202,
+        "coherence": 0.8839999999999999
+    },
+    {
+        "step": 13,
+        "stability": 0.96,
+        "quantum_prob": 0.2725317930340126,
+        "coherence": 0.9199999999999999
+    },
+    {
+        "step": 14,
+        "stability": 0.97,
+        "quantum_prob": 0.24659696394160643,
+        "coherence": 0.94
+    },
+    {
+        "step": 15,
+        "stability": 0.982,
+        "quantum_prob": 0.22313016014842982,
+        "coherence": 0.964
+    },
+    {
+        "step": 16,
+        "stability": 0.989,
+        "quantum_prob": 0.20189651799465538,
+        "coherence": 0.978
+    },
+    {
+        "step": 17,
+        "stability": 0.994,
+        "quantum_prob": 0.1826835240527346,
+        "coherence": 0.988
+    },
+    {
+        "step": 18,
+        "stability": 0.996,
+        "quantum_prob": 0.16529888822158653,
+        "coherence": 0.992
+    },
+    {
+        "step": 19,
+        "stability": 0.997,
+        "quantum_prob": 0.14956861922263504,
+        "coherence": 0.994
+    },
+    {
+        "step": 20,
+        "stability": 0.997,
+        "quantum_prob": 0.1353352832366127,
+        "coherence": 0.994
+    },
+    {
+        "step": 21,
+        "stability": 0.998,
+        "quantum_prob": 0.1224564282529819,
+        "coherence": 0.996
+    },
+    {
+        "step": 22,
+        "stability": 0.999,
+        "quantum_prob": 0.11080315836233387,
+        "coherence": 0.998
+    },
+    {
+        "step": 23,
+        "stability": 0.999,
+        "quantum_prob": 0.1002588437228037,
+        "coherence": 0.998
+    },
+    {
+        "step": 24,
+        "stability": 0.999,
+        "quantum_prob": 0.09071795328941247,
+        "coherence": 0.998
+    },
+    {
+        "step": 25,
+        "stability": 1.0,
+        "quantum_prob": 0.0820849986238988,
+        "coherence": 1.0
+    },
+    {
+        "step": 26,
+        "stability": 1.0,
+        "quantum_prob": 0.07427357821433388,
+        "coherence": 1.0
+    },
+    {
+        "step": 27,
+        "stability": 1.0,
+        "quantum_prob": 0.06720551273974976,
+        "coherence": 1.0
+    },
+    {
+        "step": 28,
+        "stability": 1.0,
+        "quantum_prob": 0.06081006262521795,
+        "coherence": 1.0
+    },
+    {
+        "step": 29,
+        "stability": 1.0,
+        "quantum_prob": 0.05502322005640721,
+        "coherence": 1.0
+    },
+    {
+        "step": 30,
+        "stability": 1.0,
+        "quantum_prob": 0.049787068367863944,
+        "coherence": 1.0
+    },
+    {
+        "step": 31,
+        "stability": 1.0,
+        "quantum_prob": 0.0450492023935578,
+        "coherence": 1.0
+    },
+    {
+        "step": 32,
+        "stability": 1.0,
+        "quantum_prob": 0.04076220397836621,
+        "coherence": 1.0
+    },
+    {
+        "step": 33,
+        "stability": 1.0,
+        "quantum_prob": 0.036883167401239994,
+        "coherence": 1.0
+    },
+    {
+        "step": 34,
+        "stability": 1.0,
+        "quantum_prob": 0.033373269960326066,
+        "coherence": 1.0
+    },
+    {
+        "step": 35,
+        "stability": 1.0,
+        "quantum_prob": 0.0301973834223185,
+        "coherence": 1.0
+    },
+    {
+        "step": 36,
+        "stability": 1.0,
+        "quantum_prob": 0.02732372244729256,
+        "coherence": 1.0
+    },
+    {
+        "step": 37,
+        "stability": 1.0,
+        "quantum_prob": 0.024723526470339388,
+        "coherence": 1.0
+    },
+    {
+        "step": 38,
+        "stability": 1.0,
+        "quantum_prob": 0.02237077185616559,
+        "coherence": 1.0
+    },
+    {
+        "step": 39,
+        "stability": 1.0,
+        "quantum_prob": 0.02024191144580438,
+        "coherence": 1.0
+    },
+    {
+        "step": 40,
+        "stability": 1.0,
+        "quantum_prob": 0.01831563888873418,
+        "coherence": 1.0
+    },
+    {
+        "step": 41,
+        "stability": 1.0,
+        "quantum_prob": 0.016572675401761237,
+        "coherence": 1.0
+    },
+    {
+        "step": 42,
+        "stability": 1.0,
+        "quantum_prob": 0.014995576820477703,
+        "coherence": 1.0
+    },
+    {
+        "step": 43,
+        "stability": 1.0,
+        "quantum_prob": 0.013568559012200934,
+        "coherence": 1.0
+    },
+    {
+        "step": 44,
+        "stability": 1.0,
+        "quantum_prob": 0.012277339903068436,
+        "coherence": 1.0
+    },
+    {
+        "step": 45,
+        "stability": 1.0,
+        "quantum_prob": 0.011108996538242306,
+        "coherence": 1.0
+    },
+    {
+        "step": 46,
+        "stability": 1.0,
+        "quantum_prob": 0.010051835744633576,
+        "coherence": 1.0
+    },
+    {
+        "step": 47,
+        "stability": 1.0,
+        "quantum_prob": 0.009095277101695816,
+        "coherence": 1.0
+    },
+    {
+        "step": 48,
+        "stability": 1.0,
+        "quantum_prob": 0.008229747049020023,
+        "coherence": 1.0
+    },
+    {
+        "step": 49,
+        "stability": 1.0,
+        "quantum_prob": 0.007446583070924338,
+        "coherence": 1.0
+    }
+]

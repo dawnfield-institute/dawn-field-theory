@@ -674,6 +674,22 @@ dawn-field-theory/
               entropy_over_trials_0.8.png
               meta.yaml
               summary.json
+        symbolic_entropy_collapse_vs_quantum_decoherence/
+          [cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py
+          meta.yaml
+          results.md
+          results/
+            meta.yaml
+            decoherence_soft_20250716_110903/
+              coherence_decay_soft.png
+              decoherence_soft_metrics.json
+              entropy_trace_soft.png
+              field_snapshot_step0.png
+              field_snapshot_step25.png
+              field_snapshot_step49.png
+              meta.yaml
+              stability_trace_soft.png
+              stability_vs_quantum.json
       recursive_entropy/
         meta.yaml
         recursive_entopy.py
@@ -1105,6 +1121,8 @@ dawn-field-theory/
     meta.yaml
     QuantumTesting/
       meta.yaml
+      agentic_decay/
+        meta.yaml
     backup/
       TinyCIMM_fractal_explainability.md
       experiment_images.zip
@@ -1885,6 +1903,7 @@ dawn-field-theory/
     xai_scbf_roadmap.md
   todo/
     cip_domain_upgrade.md
+    entropy_minimized_architecture.md
     mathmatics_next_steps.md
     meta.yaml
     roadmap_draft.md
