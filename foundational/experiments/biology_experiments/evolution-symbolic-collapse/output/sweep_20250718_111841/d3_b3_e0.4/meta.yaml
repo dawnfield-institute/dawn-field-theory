@@ -1,0 +1,10 @@
+schema_version: '2.0'
+directory_name: d3_b3_e0.4
+description: >
+  Output for symbolic collapse experiment with depth=3, breadth=3, extinction_rate=0.4. Contains metrics, traces, plots, and provenance for this configuration.
+semantic_scope:
+  - symbolic collapse
+  - experiment output
+  - entropy metrics
+files:
+child_directories: []

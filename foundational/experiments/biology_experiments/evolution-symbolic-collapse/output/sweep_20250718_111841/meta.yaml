@@ -1,0 +1,40 @@
+schema_version: '2.0'
+directory_name: sweep_20250718_111841
+description: >
+  Contains outputs from a full parameter sweep of symbolic collapse entropy experiments. Includes metrics, entropy traces, statistical results, and provenance logs for each configuration. Supports reproducibility and meta-analysis under Dawn Field Theory and Infodynamics.
+semantic_scope:
+  - symbolic collapse
+  - parameter sweep
+  - entropy analysis
+  - statistical testing
+  - provenance
+files:
+- sweep_provenance.json
+child_directories:
+- d3_b3_e0.4
+- d3_b3_e0.7
+- d3_b3_e1.0
+- d3_b4_e0.4
+- d3_b4_e0.7
+- d3_b4_e1.0
+- d3_b5_e0.4
+- d3_b5_e0.7
+- d3_b5_e1.0
+- d4_b3_e0.4
+- d4_b3_e0.7
+- d4_b3_e1.0
+- d4_b4_e0.4
+- d4_b4_e0.7
+- d4_b4_e1.0
+- d4_b5_e0.4
+- d4_b5_e0.7
+- d4_b5_e1.0
+- d5_b3_e0.4
+- d5_b3_e0.7
+- d5_b3_e1.0
+- d5_b4_e0.4
+- d5_b4_e0.7
+- d5_b4_e1.0
+- d5_b5_e0.4
+- d5_b5_e0.7
+- d5_b5_e1.0

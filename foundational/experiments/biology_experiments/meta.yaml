@@ -1,0 +1,12 @@
+schema_version: '2.0'
+directory_name: biology_experiments
+description: >
+  Contains biological test experiments, datasets, and validation scripts for Dawn Field Theory. Includes symbolic collapse, quantum validation, and evolutionary analysis modules.
+semantic_scope:
+  - biological tests
+  - symbolic collapse
+  - quantum validation
+  - evolutionary analysis
+files: []
+child_directories:
+- evolution-symbolic-collapse

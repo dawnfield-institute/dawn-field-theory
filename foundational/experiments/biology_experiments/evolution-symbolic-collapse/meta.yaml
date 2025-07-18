@@ -1,0 +1,18 @@
+schema_version: 2.0
+directory_name: evolution-symbolic-collapse
+description: >
+  Contains code, results, and metadata for symbolic collapse entropy experiments on biological trees. Includes CIP-compliant experiment scripts, analysis outputs, and provenance logs.
+semantic_scope:
+  - symbolic collapse
+  - entropy
+  - biological trees
+  - infodynamics
+  - statistical testing
+files:
+  - [id][E][v1.0][C4][I5]_symbolic_entropy_collapse_experiment.py
+  - results.md
+  - sweep_analysis.py
+  - sweep_provenance.json
+  - output/
+child_directories:
+  - output

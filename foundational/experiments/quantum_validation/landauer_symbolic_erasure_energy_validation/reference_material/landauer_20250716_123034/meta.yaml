@@ -1,0 +1,15 @@
+schema_version: '2.0'
+directory_name: landauer_20250716_123034
+description: >
+  Reference materials and data for Landauer symbolic erasure energy validation experiment (run 20250716_123034).
+semantic_scope:
+  - quantum validation
+  - landauer erasure
+  - reference material
+files:
+- adaptive_temperature_trace.png
+- energy_vs_entropy.png
+- entropy_injection_trace.png
+- landauer_erasure_results.json
+- summary.txt
+child_directories: []
