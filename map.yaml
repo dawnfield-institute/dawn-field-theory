@@ -7,7 +7,6 @@ dawn-field-theory/
   README.md
   dawn-field-theory.md
   for_ai_labs.md
-  generate_meta_yamls.py
   generate_path.py
   infodynamics.md
   map.yaml
@@ -199,6 +198,250 @@ dawn-field-theory/
           entropy_mutation_detection.png
           entropy_repair.png
           meta.yaml
+      biology_experiments/
+        meta.yaml
+        evolution-symbolic-collapse/
+          README.md
+          [id][E][v1.0][C4][I5]_symbolic_entropy_collapse_experiment.py
+          fetch_test_data.py
+          meta.yaml
+          output.txt
+          requirements.txt
+          results.md
+          sweep_analysis.py
+          data/
+            extinctions.csv
+            meta.yaml
+            tree.nwk
+          output/
+            sweep_20250718_111841/
+              meta.yaml
+              sweep_provenance.json
+              d3_b3_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b3_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b3_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b4_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b4_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b4_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b5_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b5_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d3_b5_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b3_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b3_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b3_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b4_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b4_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b4_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b5_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b5_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d4_b5_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b3_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b3_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b3_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b4_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b4_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b4_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b5_e0.4/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b5_e0.7/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+              d5_b5_e1.0/
+                entropy_waves.png
+                meta.yaml
+                metrics.json
+                provenance.json
+                real_entropy_traces.json
+                sim_entropy_traces.json
+                ttest_results.json
+            sweep_analysis_20250718_113706/
+              meta.yaml
+              p_value_tree_depth_0.png
+              p_value_tree_depth_1.png
+              p_value_tree_depth_2.png
+              p_value_tree_depth_3.png
+              p_value_tree_depth_4.png
+              p_value_tree_depth_5.png
+              summary_p_value.csv
       entropy_information_polarity_field/
         meta.yaml
         theory_draft.md
@@ -674,11 +917,24 @@ dawn-field-theory/
               entropy_over_trials_0.8.png
               meta.yaml
               summary.json
+        landauer_symbolic_erasure_energy_validation/
+          [id][T][v1.0][C3][I4][E]_landauer_symbolic_erasure_energy_validation.py
+          meta.yaml
+          results.md
+          reference_material/
+            meta.yaml
+            landauer_20250716_123034/
+              adaptive_temperature_trace.png
+              energy_vs_entropy.png
+              entropy_injection_trace.png
+              landauer_erasure_results.json
+              meta.yaml
+              summary.txt
         symbolic_entropy_collapse_vs_quantum_decoherence/
           [cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py
           meta.yaml
           results.md
-          results/
+          reference_material/
             meta.yaml
             decoherence_soft_20250716_110903/
               coherence_decay_soft.png
@@ -1121,8 +1377,6 @@ dawn-field-theory/
     meta.yaml
     QuantumTesting/
       meta.yaml
-      agentic_decay/
-        meta.yaml
     backup/
       TinyCIMM_fractal_explainability.md
       experiment_images.zip
@@ -1199,6 +1453,8 @@ dawn-field-theory/
           meta.yaml
         visualizations/
           meta.yaml
+    biology_tests/
+      meta.yaml
   models/
     README.md
     meta.yaml
@@ -1914,4 +2170,5 @@ dawn-field-theory/
       quantum_testing.md
   tools/
     converter.py
+    generate_meta_yamls.py
     meta.yaml

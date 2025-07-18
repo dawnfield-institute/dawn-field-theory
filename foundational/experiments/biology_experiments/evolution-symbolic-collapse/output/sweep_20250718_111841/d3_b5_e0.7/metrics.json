@@ -1,0 +1,262 @@
+[
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0013740214313534733,
+      "Jensen-Shannon": 0.018466555569235092,
+      "Wasserstein": 0.03542520032001936,
+      "QWCS": 0.3624029873991773
+    },
+    "2": {
+      "KL-Divergence": 0.0023034766982953526,
+      "Jensen-Shannon": 0.02394586279670521,
+      "Wasserstein": 0.024516249586909265,
+      "QWCS": 0.9913224487635934
+    },
+    "3": {
+      "KL-Divergence": 0.0022776579806984693,
+      "Jensen-Shannon": 0.02388535887981719,
+      "Wasserstein": 0.007952308531060636,
+      "QWCS": 0.909696808491435
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0007963164645749016,
+      "Jensen-Shannon": 0.014120086385477714,
+      "Wasserstein": 0.051091817420930406,
+      "QWCS": 0.9754315426875707
+    },
+    "2": {
+      "KL-Divergence": 0.0015886984655566869,
+      "Jensen-Shannon": 0.019837639054800526,
+      "Wasserstein": 0.014750277810106335,
+      "QWCS": 0.677033436756155
+    },
+    "3": {
+      "KL-Divergence": 0.0020656559277205766,
+      "Jensen-Shannon": 0.022747971397894046,
+      "Wasserstein": 0.010691986812501749,
+      "QWCS": 0.8461396609406512
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0020847059885997707,
+      "Jensen-Shannon": 0.02281593886717289,
+      "Wasserstein": 0.03748523942841761,
+      "QWCS": 0.8310751802618241
+    },
+    "2": {
+      "KL-Divergence": 0.0027766350334522093,
+      "Jensen-Shannon": 0.026174598065068916,
+      "Wasserstein": 0.01545884208765971,
+      "QWCS": 0.7457526488216708
+    },
+    "3": {
+      "KL-Divergence": 0.002769451536996341,
+      "Jensen-Shannon": 0.026321364538987337,
+      "Wasserstein": 0.007308285614479912,
+      "QWCS": 0.9731007312193843
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 5.935142776650811e-05,
+      "Jensen-Shannon": 0.0038560472077060165,
+      "Wasserstein": 0.018505464574486076,
+      "QWCS": 0.06128138083196111
+    },
+    "2": {
+      "KL-Divergence": 0.002739811941159123,
+      "Jensen-Shannon": 0.026147637532940235,
+      "Wasserstein": 0.011175001013928156,
+      "QWCS": 0.8863015569563715
+    },
+    "3": {
+      "KL-Divergence": 0.002656139080195553,
+      "Jensen-Shannon": 0.025745425975508694,
+      "Wasserstein": 0.0103890906228903,
+      "QWCS": 0.9401839062510681
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.004102799152211092,
+      "Jensen-Shannon": 0.032043637808188884,
+      "Wasserstein": 0.02667182203404095,
+      "QWCS": 0.7083243333664686
+    },
+    "2": {
+      "KL-Divergence": 0.002617696151030491,
+      "Jensen-Shannon": 0.02551363939919713,
+      "Wasserstein": 0.009180347264358062,
+      "QWCS": 0.769452014372202
+    },
+    "3": {
+      "KL-Divergence": 0.0022404581441801273,
+      "Jensen-Shannon": 0.023647360521674668,
+      "Wasserstein": 0.007566991622213986,
+      "QWCS": 0.9876649501222783
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0008340711554478592,
+      "Jensen-Shannon": 0.01447855400131335,
+      "Wasserstein": 0.05196691866844259,
+      "QWCS": 0.007035639115447245
+    },
+    "2": {
+      "KL-Divergence": 0.0019833912809093107,
+      "Jensen-Shannon": 0.02227628304620171,
+      "Wasserstein": 0.021218786185120974,
+      "QWCS": 0.7890478881600602
+    },
+    "3": {
+      "KL-Divergence": 0.002116383620176118,
+      "Jensen-Shannon": 0.02299270062502157,
+      "Wasserstein": 0.009443667993849386,
+      "QWCS": 0.8416966005172806
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0053755664887462015,
+      "Jensen-Shannon": 0.03629877724092739,
+      "Wasserstein": 0.04975507666175096,
+      "QWCS": 0.048574638809302684
+    },
+    "2": {
+      "KL-Divergence": 0.003028234626852278,
+      "Jensen-Shannon": 0.027467694127584492,
+      "Wasserstein": 0.02116775806884782,
+      "QWCS": 0.8547869111145356
+    },
+    "3": {
+      "KL-Divergence": 0.0020022954012555052,
+      "Jensen-Shannon": 0.02237222365517641,
+      "Wasserstein": 0.007073119792883445,
+      "QWCS": 0.7556655252612214
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0072426505754421885,
+      "Jensen-Shannon": 0.042898919953424465,
+      "Wasserstein": 0.04965366614786928,
+      "QWCS": 0.6052726751880899
+    },
+    "2": {
+      "KL-Divergence": 0.0018786096045077946,
+      "Jensen-Shannon": 0.021704592507522276,
+      "Wasserstein": 0.013019770684481236,
+      "QWCS": 0.9914789241909885
+    },
+    "3": {
+      "KL-Divergence": 0.0022858173543312457,
+      "Jensen-Shannon": 0.023864252881529362,
+      "Wasserstein": 0.007129710454672623,
+      "QWCS": 0.9048792846893702
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0036002224903857703,
+      "Jensen-Shannon": 0.03009273153098994,
+      "Wasserstein": 0.04500410958242598,
+      "QWCS": 0.5039101063943419
+    },
+    "2": {
+      "KL-Divergence": 0.0022753979384170257,
+      "Jensen-Shannon": 0.02382110697195299,
+      "Wasserstein": 0.005579480073489183,
+      "QWCS": 0.6164165597801134
+    },
+    "3": {
+      "KL-Divergence": 0.0028010464512989476,
+      "Jensen-Shannon": 0.02647892232055469,
+      "Wasserstein": 0.006605749298033682,
+      "QWCS": 0.8539592884331657
+    }
+  },
+  {
+    "0": {
+      "KL-Divergence": 0.0,
+      "Jensen-Shannon": 0.0,
+      "Wasserstein": 0.0,
+      "QWCS": 0.5
+    },
+    "1": {
+      "KL-Divergence": 0.0028552323639609483,
+      "Jensen-Shannon": 0.026778889203826654,
+      "Wasserstein": 0.05241871491503983,
+      "QWCS": 0.537310467517222
+    },
+    "2": {
+      "KL-Divergence": 0.0015533757344484464,
+      "Jensen-Shannon": 0.019695847005578068,
+      "Wasserstein": 0.023953007673130945,
+      "QWCS": 0.9350806713625146
+    },
+    "3": {
+      "KL-Divergence": 0.002887977769965207,
+      "Jensen-Shannon": 0.026922104982854043,
+      "Wasserstein": 0.00925324111030529,
+      "QWCS": 0.9208298430660417
+    }
+  }
+]

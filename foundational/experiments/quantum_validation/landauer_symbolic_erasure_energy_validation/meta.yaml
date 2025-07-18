@@ -1,0 +1,11 @@
+schema_version: '2.0'
+directory_name: landauer_symbolic_erasure_energy_validation
+description: >
+  Contains code, data, and results for Landauer symbolic erasure energy validation experiments under Dawn Field Theory.
+semantic_scope:
+  - quantum validation
+  - landauer erasure
+  - symbolic collapse
+files: []
+child_directories:
+  - reference_material

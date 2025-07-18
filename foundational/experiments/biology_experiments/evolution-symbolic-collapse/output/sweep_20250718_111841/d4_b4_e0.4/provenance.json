@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-07-18T11:18:56.104438",
+  "newick_path": "C:\\Users\\peter\\repos\\dawn-field-theory\\biology_tests\\evolution-symbolic-collapse\\data\\tree.nwk",
+  "extinction_csv": "C:\\Users\\peter\\repos\\dawn-field-theory\\biology_tests\\evolution-symbolic-collapse\\data\\extinctions.csv",
+  "depth": 4,
+  "breadth": 4,
+  "extinction_rate": 0.4,
+  "extinction_model": "default",
+  "n_replicates": 10,
+  "seed": 42,
+  "out_dir": "output\\sweep_20250718_111841\\d4_b4_e0.4"
+}

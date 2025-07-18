@@ -1,0 +1,18 @@
+schema_version: '2.0'
+directory_name: sweep_analysis_20250718_113706
+description: >
+  Contains meta-analysis outputs, plots, and summary tables for symbolic collapse entropy sweep. Supports reproducibility and machine-native comprehension under Dawn Field Theory.
+semantic_scope:
+  - symbolic collapse
+  - meta-analysis
+  - entropy sweep
+  - statistical visualization
+files:
+- p_value_tree_depth_0.png
+- p_value_tree_depth_1.png
+- p_value_tree_depth_2.png
+- p_value_tree_depth_3.png
+- p_value_tree_depth_4.png
+- p_value_tree_depth_5.png
+- summary_p_value.csv
+child_directories: []
