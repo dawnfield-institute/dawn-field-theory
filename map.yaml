@@ -946,6 +946,22 @@ dawn-field-theory/
               meta.yaml
               stability_trace_soft.png
               stability_vs_quantum.json
+        symbolic_interference/
+          [id][T][v1.0][C3][I4][Q]_symbolic_quantum_interference_validation.py
+          meta.yaml
+          results.md
+          results/
+            meta.yaml
+            interference_test_20250721_121752/
+              heatmap_mse.png
+              heatmap_pearson_corr.png
+              parameter_sweep_results.csv
+              symbolic_vs_quantum_interference_noise0.0_prime1.png
+              symbolic_vs_quantum_interference_noise0.0_prime7.png
+              symbolic_vs_quantum_interference_noise0.5_prime1.png
+              symbolic_vs_quantum_interference_noise0.5_prime7.png
+              symbolic_vs_quantum_interference_noise1.0_prime1.png
+              symbolic_vs_quantum_interference_noise1.0_prime7.png
       recursive_entropy/
         meta.yaml
         recursive_entopy.py
