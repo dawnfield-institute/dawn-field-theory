@@ -1,15 +1,20 @@
 schema_version: '2.0'
 directory_name: quantum_validation
-description: |
-  Collection of empirical and theoretical experiments validating quantum mechanical principles using Symbolic Entropy Collapse (SEC) and related frameworks. Includes Born rule reproduction and other quantum validation protocols.
+description: >
+  Contains experiments and protocols for validating quantum phenomena using symbolic field theory, including double-slit interference, symbolic collapse, and analytic comparison.
 semantic_scope:
-- quantum_validation
-files: []
+  - quantum validation
+  - symbolic field theory
+  - experiment
+  - analytic comparison
+files:
+  - meta.yaml
 child_directories:
+  - symbolic_interference
 semantic_tags:
   - quantum
   - symbolic_entropy_collapse
   - empirical_validation
   - protocol
   - born_rule
-- born_rule
+  - symbolic_interference

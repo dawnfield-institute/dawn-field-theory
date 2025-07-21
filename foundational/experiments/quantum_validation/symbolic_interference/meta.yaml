@@ -1,0 +1,18 @@
+schema_version: 2.0
+directory_name: symbolic_interference
+parent_directory: quantum_validation
+created: 2025-07-21
+description: >
+  Contains experiments and validation scripts for symbolic interference and quantum analogues, including parameter sweeps, overlays, and statistical analysis of symbolic vs. quantum interference patterns.
+semantic_scope:
+  - quantum interference
+  - symbolic field theory
+  - quantum validation
+  - parameter sweep
+  - experiment
+files:
+  - [id][T][v1.0][C3][I4][Q]_symbolic_quantum_interference_validation.py
+  - meta.yaml
+  - results/
+child_directories:
+  - results
