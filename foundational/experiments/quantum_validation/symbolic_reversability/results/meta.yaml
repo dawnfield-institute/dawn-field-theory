@@ -1,0 +1,19 @@
+schema_version: 2.0
+directory_name: symbolic_reversability/results
+parent_directory: symbolic_reversability
+semantic_scope:
+  - symbolic entropy collapse
+  - reversibility
+  - hysteresis
+  - infodynamics
+  - quantum balance equation
+  - experiment
+  - thermodynamics
+files:
+  - results.zip
+  - metadata
+description: >
+  This directory contains the results of rigorous experiments testing reversibility and hysteresis in symbolic fields, including parameter sweeps over decay rates, entropy and energy traces, and fidelity analysis. Results empirically validate the Symbolic Entropy Collapse (SEC) framework and its thermodynamic implications for field theory.
+proficiency_level: expert
+context_weight: high
+child_directories: []
