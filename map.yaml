@@ -969,6 +969,13 @@ dawn-field-theory/
               symbolic_vs_quantum_interference_noise0.5_prime7.png
               symbolic_vs_quantum_interference_noise1.0_prime1.png
               symbolic_vs_quantum_interference_noise1.0_prime7.png
+        symbolic_reversability/
+          [id][E][v1.0][C4][I5][Q]_symbolic_field_reversibility_experiment.py
+          meta.yaml
+          results.md
+          results/
+            meta.yaml
+            results.zip
       recursive_entropy/
         meta.yaml
         recursive_entopy.py
