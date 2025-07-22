@@ -930,6 +930,13 @@ dawn-field-theory/
               landauer_erasure_results.json
               meta.yaml
               summary.txt
+        symbolic_entanglement/
+          [id][F][v1.0][C4][I5][Q]_symbolic_entanglement_test.py
+          meta.yaml
+          results.md
+          results/
+            entanglement_emulation_pubready_20250722_131723.zip
+            meta.yaml
         symbolic_entropy_collapse_vs_quantum_decoherence/
           [cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py
           meta.yaml
@@ -2164,6 +2171,7 @@ dawn-field-theory/
   resources/
     meta.yaml
     recursive_structure.png
+  results/
   roadmaps/
     README.md
     cip_protocol_roadmap.md
