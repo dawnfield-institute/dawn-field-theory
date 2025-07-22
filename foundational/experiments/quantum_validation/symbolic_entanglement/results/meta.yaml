@@ -1,0 +1,12 @@
+schema_version: '2.0'
+directory_name: results
+description: >
+  Contains all output files, plots, and summary statistics for symbolic entanglement emulation experiments. Results are provided as zip archives and JSON summaries for each parameter sweep and seed.
+semantic_scope:
+  - experiment outputs
+  - quantum validation
+  - symbolic entanglement
+files:
+  - results.zip
+  - summary_pubready.json
+child_directories: []

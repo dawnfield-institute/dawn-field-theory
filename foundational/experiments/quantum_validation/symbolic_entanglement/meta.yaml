@@ -1,0 +1,13 @@
+schema_version: '2.0'
+directory_name: symbolic_entanglement
+description: >
+  Symbolic entanglement emulation experiment scripts and outputs for quantum validation. Contains multi-seed, parameter sweep, control, and Bell-type metric analysis.
+semantic_scope:
+  - quantum validation
+  - symbolic entanglement
+  - field theory
+files:
+  - [id][F][v1.0][C4][I5][Q]_symbolic_entanglement_test.py
+  - summary_pubready.json
+  - results.zip
+child_directories: []
