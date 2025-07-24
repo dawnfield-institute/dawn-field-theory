@@ -1407,6 +1407,10 @@ dawn-field-theory/
     meta.yaml
     QuantumTesting/
       meta.yaml
+      results.md
+      reversability.py
+      results/
+        meta.yaml
     backup/
       TinyCIMM_fractal_explainability.md
       experiment_images.zip
@@ -2178,7 +2182,6 @@ dawn-field-theory/
   resources/
     meta.yaml
     recursive_structure.png
-  results/
   roadmaps/
     README.md
     cip_protocol_roadmap.md
@@ -2190,15 +2193,15 @@ dawn-field-theory/
     xai_scbf_roadmap.md
   todo/
     cip_domain_upgrade.md
-    entropy_minimized_architecture.md
-    mathmatics_next_steps.md
     meta.yaml
+    quantum_EM.md
     roadmap_draft.md
     todolist.md
     left_for_first_release/
       AIXPreprint_skeleton.md
+      entropy_minimized_architecture.md
+      mathmatics_next_steps.md
       meta.yaml
-      quantum_testing.md
   tools/
     converter.py
     generate_meta_yamls.py
