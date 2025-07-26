@@ -1,11 +1,12 @@
 schema_version: '2.0'
 directory_name: interference_test_20250721_121752
-description: Results from symbolic quantum interference validation test (2025-07-21); contains raw and processed data, figures, and analysis logs.
+description: Results from symbolic quantum interference validation test (2025-07-21);
+  contains raw and processed data, figures, and analysis logs.
 semantic_scope:
-  - quantum validation
-  - symbolic interference
-  - experiment results
-  - quantum-classical bridge
+- quantum validation
+- symbolic interference
+- experiment results
+- quantum-classical bridge
 files:
 - heatmap_mse.png
 - heatmap_pearson_corr.png
