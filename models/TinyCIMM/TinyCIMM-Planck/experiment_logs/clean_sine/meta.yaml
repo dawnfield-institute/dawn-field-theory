@@ -8,6 +8,6 @@ semantic_scope:
 - metrics
 - logs
 files:
-- TinyCIMM-Planck_clean_sine_log.csv
-- TinyCIMM-Planck_clean_sine_metrics.csv
+- TinyplanckPlanck_planck_clean_sine_log.csv
+- TinyplanckPlanck_planck_clean_sine_metrics.csv
 child_directories: []

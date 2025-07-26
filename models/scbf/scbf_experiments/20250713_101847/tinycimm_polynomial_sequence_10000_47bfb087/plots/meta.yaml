@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: plots
-description: Visual outputs from TinyCIMM-Polynomial experiment showing SCBF interpretability analysis of structured mathematical sequences through entropy dynamics, neural adaptation patterns, and comprehensive experimental visualization.
+description: Visual outputs from TinyCIMM-Polynomial experiment showing SCBF interpretability
+  analysis of structured mathematical sequences through entropy dynamics, neural adaptation
+  patterns, and comprehensive experimental visualization.
 semantic_scope:
 - polynomial_experiment_visualization
 - scbf_interpretability_plots

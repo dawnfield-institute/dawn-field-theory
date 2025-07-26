@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: entropy
-description: >
-  Entropy-related modules and supporting files for the CIMM core.
+description: 'Entropy-related modules and supporting files for the CIMM core.
+
+  '
 semantic_scope:
-  - entropy
-  - CIMM
+- entropy
+- CIMM
 files:
-  - meta.yaml
-child_directories:
-  []
+- __init__.py
+- entropy_monitor.py
+- quantum_potential_layer.py
+child_directories: []

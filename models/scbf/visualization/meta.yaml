@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: visualization
-description: SCBF visualization tools - generates real-time plots, interpretability dashboards, and analytical visualizations for experimental results and cognitive dynamics.
+description: SCBF visualization tools - generates real-time plots, interpretability
+  dashboards, and analytical visualizations for experimental results and cognitive
+  dynamics.
 semantic_scope:
 - visualization
 - scbf_plots
@@ -12,5 +14,4 @@ semantic_scope:
 files:
 - __init__.py
 - scbf_plots.py
-child_directories:
-- __pycache__
+child_directories: []

@@ -1,24 +1,23 @@
 schema_version: 2.0
 directory_name: foundational
-description: >
-  Foundational theory, experiments, and documentation for Dawn Field Theory, including arithmetic, docs, experimental results, and a structured lexicon for both human and machine reference.
+description: 'Foundational theory, experiments, and documentation for Dawn Field Theory,
+  including arithmetic, docs, experimental results, and a structured lexicon for both
+  human and machine reference.
+
+  '
 semantic_scope:
-  - foundational
-  - theory
-  - experiment
-  - documentation
-  - lexicon
+- foundational
+- theory
+- experiment
+- documentation
+- lexicon
 files:
-  - whats_next.md
-  - lexicon.md
-  - lexicon.yaml
+- README.md
+- lexicon.md
+- lexicon.yaml
+- whats_next.md
 child_directories:
-  - arithmetic
-  - docs
-  - experiments
-  - legacy_docs_archive
-  - pi_harmonics
-  - recursive_entropy
-  - recursive_gravity
-  - recursive_tree
-  - symbolic_bifractal
+- arithmetic
+- docs
+- experiments
+- legacy_docs_archive

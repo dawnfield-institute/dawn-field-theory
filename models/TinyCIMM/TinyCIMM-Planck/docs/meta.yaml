@@ -1,13 +1,14 @@
 schema_version: '2.0'
 directory_name: docs
-description: Metadata for TinyCIMM-Planck documentation, including fractal explainability and goals.
+description: Metadata for TinyCIMM-Planck documentation, including fractal explainability
+  and goals.
 semantic_scope:
 - TinyCIMM-Planck
 - documentation
 - fractal_explainability
 - goals
 files:
-- TinyCIMM-Planck
-- TinyCIMM-Planck_fractal_explainability.md
+- TinyplanckPlanck_planck_fractal_explainability.md
+- explainability_plan.md
 - goals.md
 child_directories: []

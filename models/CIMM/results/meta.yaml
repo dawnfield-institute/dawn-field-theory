@@ -1,11 +1,11 @@
-schema_version: "2.0"
-directory_name: "results"
-description: >
-  Results and output data for the CIMM model.
+schema_version: '2.0'
+directory_name: results
+description: 'Results and output data for the CIMM model.
+
+  '
 semantic_scope:
-  - results
-  - CIMM
-files:
-  - meta.yaml
+- results
+- CIMM
+files: []
 child_directories:
-  - prime_number_structure
+- prime_number_structure

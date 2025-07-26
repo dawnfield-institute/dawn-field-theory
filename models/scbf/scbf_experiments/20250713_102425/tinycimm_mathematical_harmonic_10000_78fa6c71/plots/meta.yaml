@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: plots
-description: Visual outputs from TinyCIMM-Harmonic experiment showing SCBF interpretability analysis of harmonic mathematical patterns through entropy dynamics, neural growth patterns, and comprehensive experimental dashboard.
+description: Visual outputs from TinyCIMM-Harmonic experiment showing SCBF interpretability
+  analysis of harmonic mathematical patterns through entropy dynamics, neural growth
+  patterns, and comprehensive experimental dashboard.
 semantic_scope:
 - harmonic_experiment_visualization
 - scbf_interpretability_plots

@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: images
-description: Visual outputs from TinyCIMM-Euler algebraic sequence experiment showing SCBF interpretability analysis, field-aware loss dynamics, prediction accuracy, and mathematical weight evolution during algebraic reasoning tasks.
+description: Visual outputs from TinyCIMM-Euler algebraic sequence experiment showing
+  SCBF interpretability analysis, field-aware loss dynamics, prediction accuracy,
+  and mathematical weight evolution during algebraic reasoning tasks.
 semantic_scope:
 - algebraic_experiment_visualization
 - tinycimm_euler_images

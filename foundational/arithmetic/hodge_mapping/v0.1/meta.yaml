@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: v0.1
-description: >
-  Version 0.1 of hodge mapping research. Contains early code, notes, and results for arithmetic experiments.
+description: 'Version 0.1 of hodge mapping research. Contains early code, notes, and
+  results for arithmetic experiments.
+
+  '
 semantic_scope:
-  - hodge mapping
-  - arithmetic
-  - versioning
+- hodge mapping
+- arithmetic
+- versioning
 files:
 - hodge_mapping.md
 child_directories: []

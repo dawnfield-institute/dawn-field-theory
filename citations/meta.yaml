@@ -1,18 +1,21 @@
 schema_version: 2.0
 directory_name: citations
-description: >
-  Contains citation and bibliography resources for the Dawn Field Theory project, including external references, BibTeX, and APA-formatted citation lists.
+description: 'Contains citation and bibliography resources for the Dawn Field Theory
+  project, including external references, BibTeX, and APA-formatted citation lists.
+
+  '
 semantic_scope:
-  - bibliography
-  - references
-  - academic publishing
-  - information theory
-  - field theory
+- bibliography
+- references
+- academic publishing
+- information theory
+- field theory
 files:
-  - external_citations.md
-  - citations_bibtex.bib
-  - citations_apa.txt
+- citations_apa.txt
+- citations_bibtex.bib
+- external_citations.md
 parent_directory: dawn-field-theory
 notes:
-  - Keep citation files updated as new references are added.
-  - Consider adding DOIs or URLs for easier access.
+- Keep citation files updated as new references are added.
+- Consider adding DOIs or URLs for easier access.
+child_directories: []

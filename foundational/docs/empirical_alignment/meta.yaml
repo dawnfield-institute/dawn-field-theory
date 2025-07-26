@@ -1,19 +1,21 @@
 schema_version: '2.0'
 directory_name: empirical_alignment
-description: Empirical alignment documents connecting Dawn Field Theory to key quantum experiments and measurement phenomena.
+description: Empirical alignment documents connecting Dawn Field Theory to key quantum
+  experiments and measurement phenomena.
 semantic_scope:
-  - empirical_alignment
-  - quantum_experiment
-  - empirical_validation
-  - theoretical_alignment
+- empirical_alignment
+- quantum_experiment
+- empirical_validation
+- theoretical_alignment
 files:
-  - "[m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_flux_qubit.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_measurement_induced_phase_transitions.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_quantum_darwinism.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_quantum_eraser.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_serge_haroche.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_weak_measurement_models.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_wheelers_delayed_choice.md"
-  - "[m][F][v1.0][C4][I4]_alignment_with_zeilinger_arndt.md"
+- README.md
+- '[m][F][v1.0][C4][I4]_alignment_with_flux_qubit.md'
+- '[m][F][v1.0][C4][I4]_alignment_with_measurement_induced_phase_transitions.md'
+- '[m][F][v1.0][C4][I4]_alignment_with_quantum_darwinism.md'
+- '[m][F][v1.0][C4][I4]_alignment_with_quantum_eraser.md'
+- '[m][F][v1.0][C4][I4]_alignment_with_serge_haroche.md'
+- '[m][F][v1.0][C4][I4]_alignment_with_weak_measurement_models.md'
+- '[m][F][v1.0][C4][I4]_alignment_with_wheelers_delayed_choice.md'
+- '[m][F][v1.0][C4][I4]_alignment_with_zeilinger_arndt.md'
+- '[m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md'
 child_directories: []

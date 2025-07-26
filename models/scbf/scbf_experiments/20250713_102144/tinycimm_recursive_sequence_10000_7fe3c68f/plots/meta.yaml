@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: plots
-description: Visual outputs from TinyCIMM-Recursive experiment showing SCBF interpretability analysis of recursive mathematical patterns through bifractal evolution tracking, entropy collapse detection, and neural adaptation visualization.
+description: Visual outputs from TinyCIMM-Recursive experiment showing SCBF interpretability
+  analysis of recursive mathematical patterns through bifractal evolution tracking,
+  entropy collapse detection, and neural adaptation visualization.
 semantic_scope:
 - recursive_experiment_visualization
 - scbf_interpretability_plots

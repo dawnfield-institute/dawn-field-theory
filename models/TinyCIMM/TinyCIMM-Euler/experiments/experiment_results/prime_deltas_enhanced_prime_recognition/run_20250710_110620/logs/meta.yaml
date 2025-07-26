@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: logs
-description: Comprehensive experimental logs from prime delta recognition experiment (run_20250710_110620). Contains detailed CSV logs with timestamped SCBF interpretability metrics, field-aware adaptation signals, mathematical performance tracking, neural network evolution data, and complete experimental parameter recordings from early morning breakthrough session.
+description: Comprehensive experimental logs from prime delta recognition experiment
+  (run_20250710_110620). Contains detailed CSV logs with timestamped SCBF interpretability
+  metrics, field-aware adaptation signals, mathematical performance tracking, neural
+  network evolution data, and complete experimental parameter recordings from early
+  morning breakthrough session.
 semantic_scope:
 - experimental-logs
 - SCBF-metrics-logs

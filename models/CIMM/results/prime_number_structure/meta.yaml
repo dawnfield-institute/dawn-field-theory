@@ -1,12 +1,13 @@
 schema_version: 2.0
 directory_name: prime_number_structure
-description: >
-  Prime number structure results and supporting files for the CIMM model.
+description: 'Prime number structure results and supporting files for the CIMM model.
+
+  '
 semantic_scope:
-  - prime numbers
-  - results
-  - CIMM
+- prime numbers
+- results
+- CIMM
 files:
-  - meta.yaml
-child_directories:
-  []
+- Screenshot 2025-06-12 123836.png
+- error_metrics.txt
+child_directories: []

@@ -1,11 +1,13 @@
 schema_version: '2.0'
 directory_name: decoherence_soft_20250716_110903
-description: >
-  Reference materials and data for symbolic entropy collapse vs quantum decoherence experiment (run 20250716_110903).
+description: 'Reference materials and data for symbolic entropy collapse vs quantum
+  decoherence experiment (run 20250716_110903).
+
+  '
 semantic_scope:
-  - quantum validation
-  - decoherence
-  - reference material
+- quantum validation
+- decoherence
+- reference material
 files:
 - coherence_decay_soft.png
 - decoherence_soft_metrics.json

@@ -1,6 +1,7 @@
 name: TinyCIMM-Euler
 version: 1.0.0
-description: TinyCIMM-Euler - Higher-order mathematical reasoning version of TinyCIMM, designed for complex mathematical pattern recognition and sequence prediction tasks.
+description: TinyCIMM-Euler - Higher-order mathematical reasoning version of TinyCIMM,
+  designed for complex mathematical pattern recognition and sequence prediction tasks.
 type: neural_network_model
 category: artificial_intelligence
 subcategory: mathematical_reasoning
@@ -8,63 +9,70 @@ status: development
 priority: high
 created: 2025-07-08
 last_modified: 2025-07-08
-
 components:
-  - tinycimm_euler.py
-  - experiments/run_experiment.py
-
+- tinycimm_euler.py
+- experiments/run_experiment.py
 features:
-  - Higher-order mathematical pattern recognition
-  - Mathematical structure adaptation
-  - Complex sequence prediction
-  - Mathematical memory systems
-  - Fractal dimension analysis
-
+- Higher-order mathematical pattern recognition
+- Mathematical structure adaptation
+- Complex sequence prediction
+- Mathematical memory systems
+- Fractal dimension analysis
 key_concepts:
-  - Higher-order mathematical reasoning
-  - Prime number sequence prediction
-  - Mathematical complexity metrics
-  - Pattern recognition and memory
-  - Adaptive mathematical structures
-
+- Higher-order mathematical reasoning
+- Prime number sequence prediction
+- Mathematical complexity metrics
+- Pattern recognition and memory
+- Adaptive mathematical structures
 experimental_signals:
-  - prime_deltas: Prime number delta sequences for prediction
-  - fibonacci_ratios: Fibonacci sequence and golden ratio convergence
-  - polynomial_sequence: Higher-order polynomial sequences
-  - recursive_sequence: Mathematical recursive sequences
-  - mathematical_harmonic: Complex harmonic progressions
-
+- prime_deltas: Prime number delta sequences for prediction
+- fibonacci_ratios: Fibonacci sequence and golden ratio convergence
+- polynomial_sequence: Higher-order polynomial sequences
+- recursive_sequence: Mathematical recursive sequences
+- mathematical_harmonic: Complex harmonic progressions
 performance_metrics:
-  - mathematical_complexity: Complexity of learned patterns
-  - pattern_recognition_score: Pattern correlation analysis
-  - quantum_balance_equation: QBE field-aware balance metric
-  - field_coherence_score: Field coherence and stability
-  - reasoning_consistency: Mathematical reasoning stability
-  - higher_order_performance: Higher-order pattern complexity
-
+- mathematical_complexity: Complexity of learned patterns
+- pattern_recognition_score: Pattern correlation analysis
+- quantum_balance_equation: QBE field-aware balance metric
+- field_coherence_score: Field coherence and stability
+- reasoning_consistency: Mathematical reasoning stability
+- higher_order_performance: Higher-order pattern complexity
 dependencies:
-  - torch
-  - matplotlib
-  - pandas
-  - sklearn
-
+- torch
+- matplotlib
+- pandas
+- sklearn
 mathematical_foundations:
-  - Higher-order derivatives and calculus
-  - Mathematical sequence analysis
-  - Pattern recognition theory
-  - Complexity theory
-  - Number theory (prime numbers)
+- Higher-order derivatives and calculus
+- Mathematical sequence analysis
+- Pattern recognition theory
+- Complexity theory
+- Number theory (prime numbers)
+notes: 'TinyCIMM-Euler represents a significant advancement in the TinyCIMM family,
 
-notes: |
-  TinyCIMM-Euler represents a significant advancement in the TinyCIMM family,
-  building upon TinyCIMM-Planck's foundation to tackle higher-order mathematical
+  building upon TinyCIMM-Planck''s foundation to tackle higher-order mathematical
+
   reasoning tasks. The model is specifically designed to handle complex mathematical
+
   patterns, with prime number prediction serving as the primary benchmark for
+
   evaluating its mathematical reasoning capabilities. This version introduces
+
   mathematical memory systems, complexity-aware adaptation, and enhanced pattern
+
   recognition for challenging mathematical sequences.
-  
+
+
   Key Innovation: This model uses field-aware, pattern-centric metrics instead of
+
   traditional distance-based loss functions. The Quantum Balance Equation (QBE)
+
   measures field coherence and pattern structure growth, focusing on abstract
+
   mathematical reasoning rather than simple prediction accuracy.
+
+  '
+files:
+- tinycimm_euler.py
+child_directories:
+- experiments

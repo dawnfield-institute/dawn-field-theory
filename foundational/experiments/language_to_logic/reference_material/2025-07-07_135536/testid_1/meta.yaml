@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: testid_1
-description: Metadata for testid_1, focusing on collapse tree and entropy heatmap analysis.
+description: Metadata for testid_1, focusing on collapse tree and entropy heatmap
+  analysis.
 semantic_scope:
 - foundational
 - language_to_logic

@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: tinycimm_recursive_sequence_10000_7fe3c68f
-description: Recursive sequence experiment (10K steps) - Final loss 0.248, moderate complexity requiring network growth to handle recursive mathematical patterns.
+description: Recursive sequence experiment (10K steps) - Final loss 0.248, moderate
+  complexity requiring network growth to handle recursive mathematical patterns.
 semantic_scope:
 - recursive_experiment
 - 10000_steps

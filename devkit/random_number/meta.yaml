@@ -1,11 +1,12 @@
 schema_version: 2.0
 directory_name: random_number
-description: >
-  Random number generation scripts and documentation for Dawn Field Theory.
+description: 'Random number generation scripts and documentation for Dawn Field Theory.
+
+  '
 semantic_scope:
-  - random
-  - devkit
+- random
+- devkit
 files:
-  - RandomNumberTest.py
-  - random_number.md
+- RandomNumberTest.py
+- random_number.md
 child_directories: []

@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: images
-description: Visualization outputs from recursive pattern recognition experiment (run_20250710_125610). Contains meta-mathematical cognition plots, hierarchical reasoning visualizations, recursive pattern graphics, SCBF interpretability analysis, and comprehensive field-theoretic learning dynamics demonstrating artificial understanding of self-referential mathematical structures.
+description: Visualization outputs from recursive pattern recognition experiment (run_20250710_125610).
+  Contains meta-mathematical cognition plots, hierarchical reasoning visualizations,
+  recursive pattern graphics, SCBF interpretability analysis, and comprehensive field-theoretic
+  learning dynamics demonstrating artificial understanding of self-referential mathematical
+  structures.
 semantic_scope:
 - recursive-pattern-visualizations
 - meta-mathematical-plots

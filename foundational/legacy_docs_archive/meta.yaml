@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: legacy_docs_archive
-description: >
-  Archive of legacy documentation and historical records for foundational research. Contains deprecated or superseded documents.
+description: 'Archive of legacy documentation and historical records for foundational
+  research. Contains deprecated or superseded documents.
+
+  '
 semantic_scope:
-  - legacy
-  - documentation
-  - archive
+- legacy
+- documentation
+- archive
 files:
 - AI_Black_Hole_Information_Paper _1_.md
 - AI_Hawking_Radiation_Info_Paper _1_.md
@@ -26,6 +28,7 @@ files:
 - Quantum Balance Equation_ further insights.md
 - Quantum Balance Equation_Comprehensive Research Archive.md
 - Quantum Balance Observations and Key Findings.md
+- README.md
 - Security Entropy Leak Identifier _SELID__ Full Technical Documentation.md
 - THE PHYSICS UNDERLYING CIMM copy.md
 - THE PHYSICS UNDERLYING CIMM.md
