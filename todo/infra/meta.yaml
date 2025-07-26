@@ -11,5 +11,6 @@ files:
 - auto_llm_infra.md
 - cip_domain_upgrade.md
 - kronos.md
+- mcp_server_detailed_design.md
 - ollama_self_hosted_runner.md
 child_directories: []
