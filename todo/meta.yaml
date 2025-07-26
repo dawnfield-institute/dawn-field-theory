@@ -12,13 +12,11 @@ semantic_scope:
 - planning
 - project management
 files:
-- cip_domain_upgrade.md
-- kronos.md
-- ollama_self_hosted_runner.md
-- prometheus.md
-- quantum_EM.md
 - roadmap_draft.md
-- synergy_integration_plan.md
 - todolist.md
 child_directories:
+- biological
+- infra
 - left_for_first_release
+- sdk
+- theory

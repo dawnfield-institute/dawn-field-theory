@@ -1,11 +1,12 @@
 schema_version: '2.0'
 directory_name: biological
-description: Notes, plans, and data related to biological modeling, experiments, and integration with symbolic field theory.
+description: Notes, plans, and data related to biological modeling, experiments, and
+  integration with symbolic field theory.
 semantic_scope:
-  - biology
-  - modeling
-  - symbolic field theory
-  - integration
+- biology
+- modeling
+- symbolic field theory
+- integration
 files:
 - historical_collapse.md
 child_directories: []
