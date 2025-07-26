@@ -1,0 +1,12 @@
+schema_version: '2.0'
+directory_name: output
+description: Output files from symbolic collapse evolution experiments; includes result logs, figures, and processed data for biological entropy analysis.
+semantic_scope:
+  - biology
+  - evolution
+  - symbolic collapse
+  - experiment output
+files: []
+child_directories:
+- sweep_20250718_111841
+- sweep_analysis_20250718_113706

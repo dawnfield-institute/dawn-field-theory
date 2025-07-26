@@ -1,7 +1,10 @@
 import os
 import yaml
 
-REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+import sys
+
+# Set REPO_ROOT to the current working directory so the script can be called from the repo root
+REPO_ROOT = os.getcwd()
 REPO_NAME = os.path.basename(REPO_ROOT)
 
 META_FILENAME = 'meta.yaml'
