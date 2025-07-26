@@ -1,11 +1,12 @@
 schema_version: '2.0'
 directory_name: infra
-description: Infrastructure plans, scripts, and resources for project automation, deployment, and environment management.
+description: Infrastructure plans, scripts, and resources for project automation,
+  deployment, and environment management.
 semantic_scope:
-  - infrastructure
-  - automation
-  - deployment
-  - environment management
+- infrastructure
+- automation
+- deployment
+- environment management
 files:
 - auto_llm_infra.md
 - cip_domain_upgrade.md

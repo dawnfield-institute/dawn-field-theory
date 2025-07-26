@@ -1,12 +1,13 @@
 schema_version: '2.0'
 directory_name: theory
-description: Theoretical notes, drafts, and documents on symbolic entropy, collapse, bifractality, and field computation.
+description: Theoretical notes, drafts, and documents on symbolic entropy, collapse,
+  bifractality, and field computation.
 semantic_scope:
-  - theory
-  - symbolic entropy
-  - collapse
-  - bifractality
-  - field computation
+- theory
+- symbolic entropy
+- collapse
+- bifractality
+- field computation
 files:
 - quantum_EM.md
 child_directories: []
