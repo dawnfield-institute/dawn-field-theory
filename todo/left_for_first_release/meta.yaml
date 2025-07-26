@@ -16,6 +16,7 @@ semantic_scope:
 - release_documentation
 files:
 - AIXPreprint_skeleton.md
+- SECPreprint_skeleton.md
 - entropy_minimized_architecture.md
 - mathmatics_next_steps.md
 child_directories: []
