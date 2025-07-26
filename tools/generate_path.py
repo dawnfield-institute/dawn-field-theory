@@ -3,7 +3,19 @@ import yaml
 import re
 from collections import defaultdict
 
-REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# Find the repo root by traversing up from the current file until .git or a known marker is found
+def find_repo_root(start_path):
+    current = os.path.abspath(start_path)
+    while True:
+        if os.path.isdir(os.path.join(current, '.git')) or os.path.exists(os.path.join(current, 'README.md')):
+            return current
+        parent = os.path.dirname(current)
+        if parent == current:
+            raise RuntimeError('Could not find repo root')
+        current = parent
+
+REPO_ROOT = find_repo_root(os.path.dirname(os.path.abspath(__file__)))
 REPO_NAME = os.path.basename(REPO_ROOT)
 OUTPUT_FILE = os.path.join(REPO_ROOT, 'map.yaml')
 
