@@ -1,11 +1,15 @@
 schema_version: 2.0
 directory_name: usecase
-description: >
-  Use cases and application examples for the CIMM model.
+description: 'Use cases and application examples for the CIMM model.
+
+  '
 semantic_scope:
-  - usecase
-  - CIMM
+- usecase
+- CIMM
 files:
-  - meta.yaml
-child_directories:
-  []
+- __init__.py
+- code_optimization(unfinished).py
+- fetch_stock_data.py
+- prime_structure_usecase.py
+- stock_prediction_usecase.py
+child_directories: []

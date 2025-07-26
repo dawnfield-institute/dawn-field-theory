@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: meta
-description: >
-  Meta information and supporting files for the GAIA model documentation.
+description: 'Meta information and supporting files for the GAIA model documentation.
+
+  '
 semantic_scope:
-  - meta
-  - GAIA
+- meta
+- GAIA
 files:
-  - meta.yaml
-child_directories:
-  []
+- evaluation_criteria.md
+- methodology.md
+- symbolic_ethics.md
+child_directories: []

@@ -1,11 +1,13 @@
 schema_version: '2.0'
 directory_name: experimental_archive
-description: >
-  Archive of experimental data, results, and documentation for nuclear containment v1. Useful for historical analysis and validation.
+description: 'Archive of experimental data, results, and documentation for nuclear
+  containment v1. Useful for historical analysis and validation.
+
+  '
 semantic_scope:
-  - experiments
-  - archive
-  - nuclear containment
+- experiments
+- archive
+- nuclear containment
 files:
 - Containment2D_HighYield.py
 - Containment2D_HighYield_Reflective.py

@@ -1,17 +1,21 @@
 schema_version: '2.0'
 directory_name: born_rule
-description: |
-  Empirical validation of the Born rule using Symbolic Entropy Collapse (SEC). Contains code, results, and documentation for protocol-driven quantum probability reproduction experiments.
+description: 'Empirical validation of the Born rule using Symbolic Entropy Collapse
+  (SEC). Contains code, results, and documentation for protocol-driven quantum probability
+  reproduction experiments.
+
+  '
 semantic_scope:
 - born_rule
 files:
 - '[m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py'
+- results.md
 semantic_tags:
-  - born_rule
-  - symbolic_entropy_collapse
-  - quantum
-  - empirical
-  - protocol
+- born_rule
+- symbolic_entropy_collapse
+- quantum
+- empirical
+- protocol
 - results.md
 child_directories:
 - reference_material

@@ -1,14 +1,17 @@
 schema_version: 2.0
 directory_name: cognition_index_protocol
-description: >
-  Protocols, architectures, and GPT integration for cognition indexing in Dawn Field Theory.
+description: 'Protocols, architectures, and GPT integration for cognition indexing
+  in Dawn Field Theory.
+
+  '
 semantic_scope:
-  - cognition
-  - protocol
-  - GPT
-  - architecture
+- cognition
+- protocol
+- GPT
+- architecture
 files:
-  - meta.yaml
+- README.md
+- copilot_case_study.md
 child_directories:
-  - architecture
-  - gpt
+- architecture
+- gpt

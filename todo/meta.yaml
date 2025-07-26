@@ -1,13 +1,24 @@
 schema_version: '2.0'
 directory_name: todo
-description: >
-  Project TODOs, planning notes, and task tracking for Dawn Field Theory.
-directory_info: |
-  This directory contains project TODO lists, planning notes, and task tracking documents for Dawn Field Theory. It serves as a workspace for managing ongoing and future work items, as well as organizing project priorities.
+description: 'Project TODOs, planning notes, and task tracking for Dawn Field Theory.
+
+  '
+directory_info: 'This directory contains project TODO lists, planning notes, and task
+  tracking documents for Dawn Field Theory. It serves as a workspace for managing
+  ongoing and future work items, as well as organizing project priorities.
+
+  '
 semantic_scope:
 - planning
 - project management
 files:
-- meta.yaml
+- cip_domain_upgrade.md
+- kronos.md
+- ollama_self_hosted_runner.md
+- prometheus.md
+- quantum_EM.md
+- roadmap_draft.md
+- synergy_integration_plan.md
+- todolist.md
 child_directories:
-- hodge
+- left_for_first_release

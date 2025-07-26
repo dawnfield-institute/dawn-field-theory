@@ -1,10 +1,13 @@
 schema_version: '2.0'
 directory_name: reference_material
-description: >
-  Contains reference materials for Landauer symbolic erasure energy validation experiments.
+description: 'Contains reference materials for Landauer symbolic erasure energy validation
+  experiments.
+
+  '
 semantic_scope:
-  - quantum validation
-  - landauer erasure
-  - reference material
+- quantum validation
+- landauer erasure
+- reference material
 files: []
-child_directories: []
+child_directories:
+- landauer_20250716_123034

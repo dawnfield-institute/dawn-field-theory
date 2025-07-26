@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: images
-description: Visualization outputs from golden ratio convergence experiment (run_20250710_110730). Contains convergence analysis plots, ratio evolution visualizations, SCBF interpretability graphics, transcendental constant discovery visualizations, and comprehensive field-theoretic learning dynamics plots from early experimental session.
+description: Visualization outputs from golden ratio convergence experiment (run_20250710_110730).
+  Contains convergence analysis plots, ratio evolution visualizations, SCBF interpretability
+  graphics, transcendental constant discovery visualizations, and comprehensive field-theoretic
+  learning dynamics plots from early experimental session.
 semantic_scope:
 - convergence-visualizations
 - golden-ratio-plots

@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: plots
-description: Visual outputs from TinyCIMM-Prime Deltas (10K) experiment showing SCBF interpretability analysis of prime number gap patterns through entropy dynamics, neural adaptation, and comprehensive experimental visualization.
+description: Visual outputs from TinyCIMM-Prime Deltas (10K) experiment showing SCBF
+  interpretability analysis of prime number gap patterns through entropy dynamics,
+  neural adaptation, and comprehensive experimental visualization.
 semantic_scope:
 - prime_deltas_experiment_visualization
 - scbf_interpretability_plots

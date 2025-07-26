@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: protocols
-description: >
-  Protocols and procedures for the GAIA model.
+description: 'Protocols and procedures for the GAIA model.
+
+  '
 semantic_scope:
-  - protocols
-  - GAIA
+- protocols
+- GAIA
 files:
-  - meta.yaml
-child_directories:
-  []
+- collapse_tree_protocol.md
+- entropy_state_format.md
+- qsocket_protocol.md
+child_directories: []

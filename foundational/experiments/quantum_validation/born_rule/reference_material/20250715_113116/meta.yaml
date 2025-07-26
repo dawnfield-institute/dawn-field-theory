@@ -1,14 +1,23 @@
 schema_version: '2.0'
 directory_name: '20250715_113116'
-description: |
-  Output artifacts (plots, summary, data) for Born rule validation run (timestamp: 20250715_113116) using Symbolic Entropy Collapse (SEC).
+description: 'Output artifacts (plots, summary, data) for Born rule validation run
+  (timestamp: 20250715_113116) using Symbolic Entropy Collapse (SEC).
+
+  '
 semantic_scope:
-  - '20250715_113116'
+- '20250715_113116'
 files:
+- born_rule_comparison_0.5.png
+- born_rule_comparison_0.7.png
+- born_rule_comparison_0.8.png
+- entropy_over_trials_0.5.png
+- entropy_over_trials_0.7.png
+- entropy_over_trials_0.8.png
+- summary.json
 child_directories: []
 semantic_tags:
-  - results
-  - born_rule
-  - quantum
-  - symbolic_entropy_collapse
-  - empirical
+- results
+- born_rule
+- quantum
+- symbolic_entropy_collapse
+- empirical

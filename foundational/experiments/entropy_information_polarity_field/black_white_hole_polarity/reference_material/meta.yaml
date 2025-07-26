@@ -1,12 +1,14 @@
 schema_version: 2.0
 directory_name: reference_material
-description: >
-  Reference materials for black/white hole polarity experiments, including datasets and supporting documentation.
+description: 'Reference materials for black/white hole polarity experiments, including
+  datasets and supporting documentation.
+
+  '
 semantic_scope:
-  - reference
-  - black hole
-  - white hole
-  - experiments
+- reference
+- black hole
+- white hole
+- experiments
 files:
 - entropy_information_polarity2025-06-15 104709.txt
 - entropy_information_polarity_blackhole2025-06-15 104709.png

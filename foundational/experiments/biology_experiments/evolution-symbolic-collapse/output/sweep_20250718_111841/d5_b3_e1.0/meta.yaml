@@ -1,11 +1,13 @@
 schema_version: '2.0'
 directory_name: d5_b3_e1.0
-description: >
-  Output for symbolic collapse experiment with depth=5, breadth=3, extinction_rate=1.0. Contains metrics, traces, plots, and provenance for this configuration.
+description: 'Output for symbolic collapse experiment with depth=5, breadth=3, extinction_rate=1.0.
+  Contains metrics, traces, plots, and provenance for this configuration.
+
+  '
 semantic_scope:
-  - symbolic collapse
-  - experiment output
-  - entropy metrics
+- symbolic collapse
+- experiment output
+- entropy metrics
 files:
 - entropy_waves.png
 - metrics.json

@@ -1,11 +1,15 @@
 schema_version: '2.0'
 directory_name: symbolic_entropy_collapse_vs_quantum_decoherence
-description: >
-  Contains code, data, and results for symbolic entropy collapse vs quantum decoherence experiments under Dawn Field Theory.
+description: 'Contains code, data, and results for symbolic entropy collapse vs quantum
+  decoherence experiments under Dawn Field Theory.
+
+  '
 semantic_scope:
-  - quantum validation
-  - decoherence
-  - symbolic collapse
-files: []
+- quantum validation
+- decoherence
+- symbolic collapse
+files:
+- '[cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py'
+- results.md
 child_directories:
-  - reference_material
+- reference_material

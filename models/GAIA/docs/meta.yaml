@@ -1,15 +1,17 @@
-schema_version: "2.0"
-directory_name: "docs"
-description: >
-  Documentation for the GAIA model, including theory, protocols, meta information, experiments, and architecture.
+schema_version: '2.0'
+directory_name: docs
+description: 'Documentation for the GAIA model, including theory, protocols, meta
+  information, experiments, and architecture.
+
+  '
 semantic_scope:
-  - documentation
-  - GAIA
+- documentation
+- GAIA
 files:
-  - meta.yaml
+- testing_plan.md
 child_directories:
-  - theory
-  - protocols
-  - meta
-  - experiments
-  - architecture
+- architecture
+- experiments
+- meta
+- protocols
+- theory

@@ -1,9 +1,14 @@
 schema_version: '2.0'
 directory_name: pruning_20250622_163425
-description: >
-  Output data and images from the symbolic fractal pruning experiment, batch 20250622_163425.
-directory_info: |
-  This directory contains the output data, images, and statistics generated during the symbolic fractal pruning experiment run on 2025-06-22 (batch 163425). It serves as a record of experiment results for analysis and reproducibility.
+description: 'Output data and images from the symbolic fractal pruning experiment,
+  batch 20250622_163425.
+
+  '
+directory_info: 'This directory contains the output data, images, and statistics generated
+  during the symbolic fractal pruning experiment run on 2025-06-22 (batch 163425).
+  It serves as a record of experiment results for analysis and reproducibility.
+
+  '
 semantic_scope:
 - experiment output
 - images

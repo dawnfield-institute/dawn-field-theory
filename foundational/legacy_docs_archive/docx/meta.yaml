@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: docx
-description: >
-  Microsoft Word and docx-format legacy documentation for foundational research. Includes drafts, reports, and supporting files.
+description: 'Microsoft Word and docx-format legacy documentation for foundational
+  research. Includes drafts, reports, and supporting files.
+
+  '
 semantic_scope:
-  - documentation
-  - docx
-  - legacy
+- documentation
+- docx
+- legacy
 files:
 - AI^J Quantum Measurement^J and the Fabric of Reality.docx
 - AI_Black_Hole_Information_Paper (1).docx

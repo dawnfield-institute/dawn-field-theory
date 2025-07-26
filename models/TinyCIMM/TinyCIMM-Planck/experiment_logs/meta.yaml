@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: experiment_logs
-description: Log files for TinyCIMM-Planck and MLP experiments, including loss, metrics, and benchmarking results for all signal types.
+description: Log files for TinyCIMM-Planck and MLP experiments, including loss, metrics,
+  and benchmarking results for all signal types.
 semantic_scope:
 - experiment
 - logs
@@ -8,15 +9,27 @@ semantic_scope:
 - MLP
 - benchmarking
 files:
-- TinyCIMM-Planck
-- TinyCIMM-Planck_mlp_amp_mod_sine_log.csv
-- TinyCIMM-Planck_mlp_chaotic_sine_log.csv
-- TinyCIMM-Planck_mlp_clean_sine_log.csv
-- TinyCIMM-Planck_mlp_freq_mod_sine_log.csv
-- TinyCIMM-Planck_mlp_noisy_sine_log.csv
-- TinyCIMM-Planck_amp_mod_sine_log.csv
-- TinyCIMM-Planck_chaotic_sine_log.csv
-- TinyCIMM-Planck_clean_sine_log.csv
-- TinyCIMM-Planck_freq_mod_sine_log.csv
-- TinyCIMM-Planck_noisy_sine_log.csv
-child_directories: []
+- TinyplanckPlanck_planck_amp_mod_sine_log.csv
+- TinyplanckPlanck_planck_amp_mod_sine_metrics.csv
+- TinyplanckPlanck_planck_chaotic_sine_log.csv
+- TinyplanckPlanck_planck_clean_sine_log.csv
+- TinyplanckPlanck_planck_clean_sine_metrics.csv
+- TinyplanckPlanck_planck_freq_mod_sine_log.csv
+- TinyplanckPlanck_planck_mlp_amp_mod_sine_log.csv
+- TinyplanckPlanck_planck_mlp_chaotic_sine_log.csv
+- TinyplanckPlanck_planck_mlp_clean_sine_log.csv
+- TinyplanckPlanck_planck_mlp_freq_mod_sine_log.csv
+- TinyplanckPlanck_planck_mlp_noisy_sine_log.csv
+- TinyplanckPlanck_planck_noisy_sine_log.csv
+- clean_sine_log.csv
+- tinycimm_planck_amp_mod_sine_log.csv
+- tinycimm_planck_chaotic_sine_log.csv
+- tinycimm_planck_clean_sine_log.csv
+- tinycimm_planck_freq_mod_sine_log.csv
+- tinycimm_planck_noisy_sine_log.csv
+child_directories:
+- amp_mod_sine
+- chaotic_sine
+- clean_sine
+- freq_mod_sine
+- noisy_sine

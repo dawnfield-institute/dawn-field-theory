@@ -1,11 +1,14 @@
 schema_version: 2.0
 directory_name: optimization
-description: >
-  Optimization routines and supporting files for the CIMM core.
+description: 'Optimization routines and supporting files for the CIMM core.
+
+  '
 semantic_scope:
-  - optimization
-  - CIMM
+- optimization
+- CIMM
 files:
-  - meta.yaml
-child_directories:
-  []
+- __init__.py
+- adaptive_controller.py
+- bayesian_optimizer.py
+- pruning.py
+child_directories: []

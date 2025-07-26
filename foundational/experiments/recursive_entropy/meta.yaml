@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: recursive_entropy
-description: >
-  Recursive entropy experiments and supporting files for foundational research. Includes data, scripts, and analysis outputs.
+description: 'Recursive entropy experiments and supporting files for foundational
+  research. Includes data, scripts, and analysis outputs.
+
+  '
 semantic_scope:
-  - recursive entropy
-  - experiments
-  - foundational
+- recursive entropy
+- experiments
+- foundational
 files:
 - recursive_entopy.py
 - results.md

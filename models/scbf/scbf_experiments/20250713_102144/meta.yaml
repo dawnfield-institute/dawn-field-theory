@@ -1,29 +1,18 @@
-schema_versdescription: SCBF experimental session containing TinyCIMM-Recursive sequence analysis with 10K iterations, demonstrating SCBF interpretability framework capabilities on recursive mathematical patterns.
-semantic_scope:
-- recursive_experiment_session
-- scbf_interpretability_experiment
-- recursive_pattern_analysis
-- neural_adaptation_experiment
-- experimental_timestamp_20250713_102144: '2.0'
-directory_name: 20250713_102144
-description: Recursive sequence experiment session - TinyCIMM-SCBF testing on recursive mathematical patterns requiring adaptive network growth.
-semantic_scope:
-- experiment_session
-- recursive_sequence
-- tinycimm_scbf
-- adaptive_growth
-- recursive_patterns
-- 2025-07-13a_version: '2.0'
-directory_name: '20250713_102144'
-description: |
-  SCBF experiment run (timestamp: 20250713_102144) for symbolic collapse benchmarking and interpretability analysis.
-semantic_tags:
-  - scbf
-  - symbolic_collapse
-  - benchmarking
-  - interpretability
+schema_versdescription: SCBF experimental session containing TinyCIMM-Recursive sequence
+  analysis with 10K iterations, demonstrating SCBF interpretability framework capabilities
+  on recursive mathematical patterns.
 semantic_scope:
 - '20250713_102144'
+directory_name: '20250713_102144'
+description: 'SCBF experiment run (timestamp: 20250713_102144) for symbolic collapse
+  benchmarking and interpretability analysis.
+
+  '
+semantic_tags:
+- scbf
+- symbolic_collapse
+- benchmarking
+- interpretability
 files: []
 child_directories:
 - tinycimm_recursive_sequence_10000_7fe3c68f
