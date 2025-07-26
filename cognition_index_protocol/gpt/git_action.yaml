@@ -8,10 +8,10 @@ servers:
   - url: https://raw.githubusercontent.com/dawnfield-institute/dawn-field-theory/main
 
 paths:
-  /cip/instructions_v2.0.yaml:
+  /.cip/instructions_v2.0.yaml:
     get:
       operationId: GetCIPInstructions
-      description: Retrieve the versioned CIP instructions file for meta.yaml v2.0.
+      description: Retrieve the versioned CIP instructions file for meta.yaml v2.0 (dot-prefixed path).
       responses:
         '200':
           description: Successfully retrieved instructions_v2.0.yaml
