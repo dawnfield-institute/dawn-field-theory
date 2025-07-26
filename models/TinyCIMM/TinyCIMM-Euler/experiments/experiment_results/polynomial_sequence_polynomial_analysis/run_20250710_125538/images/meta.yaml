@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: images
-description: Visualization outputs from polynomial analysis experiment (run_20250710_125538). Contains algebraic reasoning plots, polynomial reconstruction visualizations, symbolic manipulation graphics, SCBF interpretability analysis, and comprehensive field-theoretic learning dynamics demonstrating artificial algebraic understanding.
+description: Visualization outputs from polynomial analysis experiment (run_20250710_125538).
+  Contains algebraic reasoning plots, polynomial reconstruction visualizations, symbolic
+  manipulation graphics, SCBF interpretability analysis, and comprehensive field-theoretic
+  learning dynamics demonstrating artificial algebraic understanding.
 semantic_scope:
 - polynomial-visualizations
 - algebraic-reasoning-plots

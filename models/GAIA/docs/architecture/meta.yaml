@@ -1,11 +1,12 @@
 schema_version: 2.0
 directory_name: architecture
-description: >
-  Architecture documentation and supporting files for the GAIA model.
+description: 'Architecture documentation and supporting files for the GAIA model.
+
+  '
 semantic_scope:
-  - architecture
-  - GAIA
+- architecture
+- GAIA
 files:
-  - meta.yaml
+- overview.md
 child_directories:
-  - modules
+- modules

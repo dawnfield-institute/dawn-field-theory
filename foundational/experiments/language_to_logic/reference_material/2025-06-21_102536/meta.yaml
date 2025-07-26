@@ -1,12 +1,13 @@
 schema_version: '2.0'
 directory_name: 2025-06-21_102536
-description: Reference material and outputs for language-to-logic entropy experiment run at 2025-06-21_102536.
+description: Reference material and outputs for language-to-logic entropy experiment
+  run at 2025-06-21_102536.
 semantic_scope:
 - language-to-logic
 - entropy collapse
 - symbolic recursion
 files:
-- meta.yaml
+- index.json
 child_directories:
 - testid_1
 - testid_2

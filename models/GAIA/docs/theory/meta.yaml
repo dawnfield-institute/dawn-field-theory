@@ -1,11 +1,13 @@
-schema_version: "2.0"
-directory_name: "theory"
-description: >
-  Theoretical background and supporting documents for the GAIA model.
+schema_version: '2.0'
+directory_name: theory
+description: 'Theoretical background and supporting documents for the GAIA model.
+
+  '
 semantic_scope:
-  - theory
-  - GAIA
+- theory
+- GAIA
 files:
-  - meta.yaml
-child_directories:
-  []
+- emergent_intelligence.md
+- epistemic_field_theory.md
+- recursive_balance_field.md
+child_directories: []

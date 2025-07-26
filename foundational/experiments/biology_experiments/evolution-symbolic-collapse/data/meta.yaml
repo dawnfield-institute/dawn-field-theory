@@ -1,11 +1,13 @@
 schema_version: '2.0'
 directory_name: data
-description: >
-  Contains input data for symbolic collapse experiments, including phylogenetic trees and extinction datasets.
+description: 'Contains input data for symbolic collapse experiments, including phylogenetic
+  trees and extinction datasets.
+
+  '
 semantic_scope:
-  - input data
-  - phylogenetic trees
-  - extinction datasets
+- input data
+- phylogenetic trees
+- extinction datasets
 files:
 - extinctions.csv
 - tree.nwk

@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: tinycimm_fibonacci_ratios_10000_9692c3a7
-description: Fibonacci ratios experiment (10K steps) - Final loss 3.18e-07, excellent convergence demonstrating clean entropy collapse and efficient pattern recognition.
+description: Fibonacci ratios experiment (10K steps) - Final loss 3.18e-07, excellent
+  convergence demonstrating clean entropy collapse and efficient pattern recognition.
 semantic_scope:
 - fibonacci_experiment
 - 10000_steps

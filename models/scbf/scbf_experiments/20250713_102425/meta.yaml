@@ -1,29 +1,18 @@
-schema_versdescription: SCBF experimental session containing TinyCIMM-Mathematical harmonic analysis with 10K iterations, demonstrating SCBF interpretability framework capabilities on harmonic mathematical patterns.
-semantic_scope:
-- harmonic_experiment_session
-- scbf_interpretability_experiment
-- harmonic_pattern_analysis
-- neural_adaptation_experiment
-- experimental_timestamp_20250713_102425: '2.0'
-directory_name: 20250713_102425
-description: Mathematical harmonic experiment session - TinyCIMM-SCBF testing on harmonic mathematical sequences showing exceptional convergence properties.
-semantic_scope:
-- experiment_session
-- mathematical_harmonic
-- tinycimm_scbf
-- harmonic_sequences
-- exceptional_convergence
-- 2025-07-13a_version: '2.0'
-directory_name: '20250713_102425'
-description: |
-  SCBF experiment run (timestamp: 20250713_102425) for symbolic collapse benchmarking and interpretability analysis.
-semantic_tags:
-  - scbf
-  - symbolic_collapse
-  - benchmarking
-  - interpretability
+schema_versdescription: SCBF experimental session containing TinyCIMM-Mathematical
+  harmonic analysis with 10K iterations, demonstrating SCBF interpretability framework
+  capabilities on harmonic mathematical patterns.
 semantic_scope:
 - '20250713_102425'
+directory_name: '20250713_102425'
+description: 'SCBF experiment run (timestamp: 20250713_102425) for symbolic collapse
+  benchmarking and interpretability analysis.
+
+  '
+semantic_tags:
+- scbf
+- symbolic_collapse
+- benchmarking
+- interpretability
 files: []
 child_directories:
 - tinycimm_mathematical_harmonic_10000_78fa6c71

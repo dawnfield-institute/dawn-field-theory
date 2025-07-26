@@ -1,20 +1,27 @@
 schema_version: '2.0'
 directory_name: quantum_validation
-description: >
-  Contains experiments and protocols for validating quantum phenomena using symbolic field theory, including double-slit interference, symbolic collapse, and analytic comparison.
+description: 'Contains experiments and protocols for validating quantum phenomena
+  using symbolic field theory, including double-slit interference, symbolic collapse,
+  and analytic comparison.
+
+  '
 semantic_scope:
-  - quantum validation
-  - symbolic field theory
-  - experiment
-  - analytic comparison
-files:
-  - meta.yaml
+- quantum validation
+- symbolic field theory
+- experiment
+- analytic comparison
+files: []
 child_directories:
-  - symbolic_interference
+- born_rule
+- landauer_symbolic_erasure_energy_validation
+- symbolic_entanglement
+- symbolic_entropy_collapse_vs_quantum_decoherence
+- symbolic_interference
+- symbolic_reversability
 semantic_tags:
-  - quantum
-  - symbolic_entropy_collapse
-  - empirical_validation
-  - protocol
-  - born_rule
-  - symbolic_interference
+- quantum
+- symbolic_entropy_collapse
+- empirical_validation
+- protocol
+- born_rule
+- symbolic_interference

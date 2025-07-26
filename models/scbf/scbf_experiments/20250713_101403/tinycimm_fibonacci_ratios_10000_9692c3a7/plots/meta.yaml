@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: plots
-description: Visual outputs from TinyCIMM-Fibonacci experiment showing SCBF interpretability analysis through bifractal evolution tracking, entropy collapse detection, neural network growth patterns, and comprehensive experimental dashboard.
+description: Visual outputs from TinyCIMM-Fibonacci experiment showing SCBF interpretability
+  analysis through bifractal evolution tracking, entropy collapse detection, neural
+  network growth patterns, and comprehensive experimental dashboard.
 semantic_scope:
 - fibonacci_experiment_visualization
 - scbf_interpretability_plots

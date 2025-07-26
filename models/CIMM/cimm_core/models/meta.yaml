@@ -1,11 +1,15 @@
 schema_version: 2.0
 directory_name: models
-description: >
-  Model definitions and supporting files for the CIMM core.
+description: 'Model definitions and supporting files for the CIMM core.
+
+  '
 semantic_scope:
-  - models
-  - CIMM
+- models
+- CIMM
 files:
-  - meta.yaml
-child_directories:
-  []
+- __init__.py
+- base_cimm_model.py
+- cryptography_model.py
+- financial_model.py
+- prime_structure_model.py
+child_directories: []

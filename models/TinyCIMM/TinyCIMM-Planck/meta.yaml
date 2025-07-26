@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: TinyCIMM-Planck
-description: Metadata for TinyCIMM-Planck documentation, including fractal explainability and goals.
+description: Metadata for TinyCIMM-Planck documentation, including fractal explainability
+  and goals.
 semantic_scope:
 - TinyCIMM-Planck
 - model
@@ -8,11 +9,12 @@ semantic_scope:
 - adaptive
 - experiment
 files:
-- TinyCIMM_Planck_fractal_explainability.md
-- goals.md
+- '[id][F][v1.0][C4][I5][E]_symbolic_collapse_interpretability.md'
+- output.txt
+- report.md
 - tinycimm_planck.py
 child_directories:
-- __pycache__
+- docs
 - experiment_images
 - experiment_logs
 - experiments

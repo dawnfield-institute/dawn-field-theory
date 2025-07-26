@@ -1,13 +1,14 @@
 schema_version: 2.0
 directory_name: compression
-description: >
-  Compression utilities and test scripts for Dawn Field Theory.
+description: 'Compression utilities and test scripts for Dawn Field Theory.
+
+  '
 semantic_scope:
-  - compression
-  - devkit
+- compression
+- devkit
 files:
-  - FractalIntrinsicMetadataCompression.py
-  - Fractal_ISM_Field_Theory_Compression_Demo.ipynb
-  - fractal_ism_compression.md
+- FractalIntrinsicMetadataCompression.py
+- Fractal_ISM_Field_Theory_Compression_Demo.ipynb
+- fractal_ism_compression.md
 child_directories:
-  - legacy
+- legacy

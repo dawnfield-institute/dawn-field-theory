@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: reference_material
-description: >
-  Reference materials for pi harmonics experiments, including datasets and supporting documentation.
+description: 'Reference materials for pi harmonics experiments, including datasets
+  and supporting documentation.
+
+  '
 semantic_scope:
-  - reference
-  - pi harmonics
-  - experiments
+- reference
+- pi harmonics
+- experiments
 files:
 - pi_harmonic_results2025-06-17 135126.png
 child_directories: []

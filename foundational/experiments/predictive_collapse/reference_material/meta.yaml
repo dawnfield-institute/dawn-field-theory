@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: reference_material
-description: Reference materials and supporting data for predictive collapse experiments, including background, datasets, and documentation.
+description: Reference materials and supporting data for predictive collapse experiments,
+  including background, datasets, and documentation.
 semantic_scope:
 - reference_material
 - predictive_collapse

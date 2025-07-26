@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: algebraic_sequence_algebraic_reasoning
-description: Advanced algebraic reasoning experiments testing TinyCIMM-Euler's symbolic manipulation capabilities across complex algebraic structures. Evaluates artificial understanding of algebraic relationships, equation solving, and symbolic transformation through field-theoretic neural dynamics.
+description: Advanced algebraic reasoning experiments testing TinyCIMM-Euler's symbolic
+  manipulation capabilities across complex algebraic structures. Evaluates artificial
+  understanding of algebraic relationships, equation solving, and symbolic transformation
+  through field-theoretic neural dynamics.
 semantic_scope:
 - algebraic-sequences
 - algebraic-reasoning

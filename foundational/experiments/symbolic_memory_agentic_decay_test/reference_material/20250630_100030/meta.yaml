@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: '20250630_100030'
-description: Contains output data and visualizations from a specific run of the symbolic memory agentic decay test, including energy curves and field state images over time.
+description: Contains output data and visualizations from a specific run of the symbolic
+  memory agentic decay test, including energy curves and field state images over time.
 semantic_scope:
 - experiment_run
 - symbolic_memory

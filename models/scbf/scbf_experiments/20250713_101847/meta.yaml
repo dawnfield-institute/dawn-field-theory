@@ -1,29 +1,18 @@
-schema_versdescription: SCBF experimental session containing TinyCIMM-Polynomial sequence analysis with 10K iterations, demonstrating SCBF interpretability framework capabilities on structured mathematical sequences.
-semantic_scope:
-- polynomial_experiment_session
-- scbf_interpretability_experiment
-- mathematical_sequence_analysis
-- neural_adaptation_experiment
-- experimental_timestamp_20250713_101847: '2.0'
-directory_name: 20250713_101847
-description: Polynomial sequence experiment session - TinyCIMM-SCBF testing on structured polynomial patterns with real-time interpretability monitoring.
-semantic_scope:
-- experiment_session
-- polynomial_sequence
-- tinycimm_scbf
-- structured_patterns
-- interpretability_monitoring
-- 2025-07-13a_version: '2.0'
-directory_name: '20250713_101847'
-description: |
-  SCBF experiment run (timestamp: 20250713_101847) for symbolic collapse benchmarking and interpretability analysis.
-semantic_tags:
-  - scbf
-  - symbolic_collapse
-  - benchmarking
-  - interpretability
+schema_versdescription: SCBF experimental session containing TinyCIMM-Polynomial sequence
+  analysis with 10K iterations, demonstrating SCBF interpretability framework capabilities
+  on structured mathematical sequences.
 semantic_scope:
 - '20250713_101847'
+directory_name: '20250713_101847'
+description: 'SCBF experiment run (timestamp: 20250713_101847) for symbolic collapse
+  benchmarking and interpretability analysis.
+
+  '
+semantic_tags:
+- scbf
+- symbolic_collapse
+- benchmarking
+- interpretability
 files: []
 child_directories:
 - tinycimm_polynomial_sequence_10000_47bfb087

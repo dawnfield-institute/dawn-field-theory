@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: logs
-description: Experimental logs from TinyCIMM-Euler polynomial sequence experiment (refined run) documenting optimized training progress, enhanced SCBF interpretability metrics, and improved polynomial pattern analysis performance.
+description: Experimental logs from TinyCIMM-Euler polynomial sequence experiment
+  (refined run) documenting optimized training progress, enhanced SCBF interpretability
+  metrics, and improved polynomial pattern analysis performance.
 semantic_scope:
 - polynomial_experiment_logs_refined
 - tinycimm_euler_logs

@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: logs
-description: Comprehensive experimental logs from golden ratio convergence experiment (run_20250710_125505). Contains detailed convergence tracking data, ratio evolution metrics, SCBF interpretability measurements, transcendental constant discovery documentation, and complete field-theoretic learning parameter logs for reproducible mathematical constant discovery research.
+description: Comprehensive experimental logs from golden ratio convergence experiment
+  (run_20250710_125505). Contains detailed convergence tracking data, ratio evolution
+  metrics, SCBF interpretability measurements, transcendental constant discovery documentation,
+  and complete field-theoretic learning parameter logs for reproducible mathematical
+  constant discovery research.
 semantic_scope:
 - convergence-logs
 - ratio-evolution-data

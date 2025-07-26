@@ -1,12 +1,16 @@
 schema_version: 2.0
 directory_name: tools
-description: >
-  Utility scripts and tools for Dawn Field Theory, including format converters and automation helpers.
+description: 'Utility scripts and tools for Dawn Field Theory, including format converters
+  and automation helpers.
+
+  '
 semantic_scope:
-  - tools
-  - utility
-  - automation
+- tools
+- utility
+- automation
 files:
-  - meta.yaml
-  - converter.py
+- converter.py
+- generate_meta_yamls.py
+- generate_path.py
+- update_meta_yamls.py
 child_directories: []

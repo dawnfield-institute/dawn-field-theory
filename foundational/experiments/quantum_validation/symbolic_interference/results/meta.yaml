@@ -2,18 +2,14 @@ schema_version: 2.0
 directory_name: results
 parent_directory: symbolic_interference
 created: 2025-07-21
-description: >
-  Stores all output data, summary statistics, overlay plots, heatmaps, and CSVs from symbolic vs. quantum interference validation experiments.
+description: 'Stores all output data, summary statistics, overlay plots, heatmaps,
+  and CSVs from symbolic vs. quantum interference validation experiments.
+
+  '
 semantic_scope:
-  - experiment results
-  - quantum validation
-  - symbolic interference
-files:
-  - parameter_sweep_results.csv
-  - summary.json
-  - symbolic_interference.png
-  - symbolic_vs_quantum_interference.png
-  - heatmap_pearson_corr.png
-  - heatmap_mse.png
-  - meta.yaml
-child_directories: []
+- experiment results
+- quantum validation
+- symbolic interference
+files: []
+child_directories:
+- interference_test_20250721_121752

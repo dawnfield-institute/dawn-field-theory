@@ -1,11 +1,14 @@
 schema_version: 2.0
 directory_name: experiments
-description: >
-  Experimental results and supporting files for the GAIA model documentation.
+description: 'Experimental results and supporting files for the GAIA model documentation.
+
+  '
 semantic_scope:
-  - experiments
-  - GAIA
+- experiments
+- GAIA
 files:
-  - meta.yaml
-child_directories:
-  []
+- collapse_dynamics_experiment.md
+- meta_cognitive_trace_experiment.md
+- recursive_entropy_feedback_experiment.md
+- resonance_alignment_experiment.md
+child_directories: []

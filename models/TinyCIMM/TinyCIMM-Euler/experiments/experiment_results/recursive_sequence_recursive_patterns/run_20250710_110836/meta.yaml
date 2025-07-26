@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: run_20250710_110836
-description: Recursive pattern recognition experimental run executed on July 10, 2025 at 11:08:36. Early session testing meta-mathematical cognition through recursive sequence learning and hierarchical pattern discovery. Evaluates artificial understanding of self-referential mathematical structures with SCBF interpretability tracking.
+description: Recursive pattern recognition experimental run executed on July 10, 2025
+  at 11:08:36. Early session testing meta-mathematical cognition through recursive
+  sequence learning and hierarchical pattern discovery. Evaluates artificial understanding
+  of self-referential mathematical structures with SCBF interpretability tracking.
 semantic_scope:
 - experimental-run
 - recursive-learning

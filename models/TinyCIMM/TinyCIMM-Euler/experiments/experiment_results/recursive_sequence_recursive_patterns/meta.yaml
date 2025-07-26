@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: recursive_sequence_recursive_patterns
-description: Meta-mathematical cognition experiments testing recursive pattern discovery and hierarchical mathematical reasoning. Evaluates TinyCIMM-Euler's ability to understand self-referential mathematical structures and nested pattern recognition. Represents advancement toward artificial meta-mathematical thinking and recursive symbolic cognition.
+description: Meta-mathematical cognition experiments testing recursive pattern discovery
+  and hierarchical mathematical reasoning. Evaluates TinyCIMM-Euler's ability to understand
+  self-referential mathematical structures and nested pattern recognition. Represents
+  advancement toward artificial meta-mathematical thinking and recursive symbolic
+  cognition.
 semantic_scope:
 - recursive-sequences
 - recursive-patterns

@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: chaotic_sine
-description: Images and diagnostics for chaotic sine experiments, including TinyCIMM-Planck and MLP overlays and benchmarking plots.
+description: Images and diagnostics for chaotic sine experiments, including TinyCIMM-Planck
+  and MLP overlays and benchmarking plots.
 semantic_scope:
 - chaotic_sine
 - experiment
@@ -9,10 +10,8 @@ semantic_scope:
 - MLP
 - diagnostics
 files:
-- planck_weights_step_0.png
-- planck_weights_step_100.png
-- planck_weights_step_150.png
-- planck_weights_step_50.png
+- entropy_evolution_chaotic_sine.png
+- feedback_accuracy_chaotic_sine.png
 - feedback_geometry_pca_100.png
 - feedback_geometry_pca_120.png
 - feedback_geometry_pca_140.png
@@ -22,7 +21,15 @@ files:
 - feedback_geometry_pca_40.png
 - feedback_geometry_pca_60.png
 - feedback_geometry_pca_80.png
+- fractal_dim_evolution_chaotic_sine.png
+- hidden_layer_size_evolution_chaotic_sine.png
+- loss_evolution_chaotic_sine.png
 - loss_evolution_overlay_chaotic_sine.png
+- planck_weights_step_0.png
+- planck_weights_step_100.png
+- planck_weights_step_150.png
+- planck_weights_step_50.png
+- pred_vs_truth_chaotic_sine.png
 - pred_vs_truth_overlay_chaotic_sine.png
 - weight_hist_0.png
 - weight_hist_10.png

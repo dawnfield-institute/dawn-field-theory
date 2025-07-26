@@ -1,10 +1,14 @@
 schema_version: '2.0'
 directory_name: landauer_erasure_field_cost_map
-description: Metadata for experiments exploring the energy cost of information erasure, based on Landauer's principle, and mapping field effects.
+description: Metadata for experiments exploring the energy cost of information erasure,
+  based on Landauer's principle, and mapping field effects.
 semantic_scope:
 - landauer_erasure
 - field_cost
 - information_erasure
 - thermodynamics
-files: []
-child_directories: []
+files:
+- '[id][T][v1.0][C2][I3][E]_landauer_erasure_field_cost_map.py'
+- results.md
+child_directories:
+- reference_material

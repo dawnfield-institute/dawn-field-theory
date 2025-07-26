@@ -1,9 +1,14 @@
 schema_version: '2.0'
 directory_name: 20250622_160535_batch
-description: >
-  Output data and images from the symbolic superfluid collapse pi experiment, batch 20250622_160535_batch.
-directory_info: |
-  This directory contains the output data, images, and statistics generated during the symbolic superfluid collapse pi experiment run on 2025-06-22 (batch 160535_batch). It serves as a record of experiment results for analysis and reproducibility.
+description: 'Output data and images from the symbolic superfluid collapse pi experiment,
+  batch 20250622_160535_batch.
+
+  '
+directory_info: 'This directory contains the output data, images, and statistics generated
+  during the symbolic superfluid collapse pi experiment run on 2025-06-22 (batch 160535_batch).
+  It serves as a record of experiment results for analysis and reproducibility.
+
+  '
 semantic_scope:
 - experiment output
 - images

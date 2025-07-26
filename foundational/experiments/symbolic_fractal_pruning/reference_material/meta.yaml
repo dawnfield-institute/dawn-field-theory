@@ -1,9 +1,15 @@
 schema_version: '2.0'
 directory_name: reference_material
-description: >
-  Reference data, images, and supporting files for the symbolic fractal pruning experiment.
-directory_info: |
-  This directory contains reference materials for the symbolic fractal pruning experiment, including images, data files, and supporting documentation. It serves as an archive for experiment outputs and visualizations used in analysis and reporting.
+description: 'Reference data, images, and supporting files for the symbolic fractal
+  pruning experiment.
+
+  '
+directory_info: 'This directory contains reference materials for the symbolic fractal
+  pruning experiment, including images, data files, and supporting documentation.
+  It serves as an archive for experiment outputs and visualizations used in analysis
+  and reporting.
+
+  '
 semantic_scope:
 - reference
 - experiment data

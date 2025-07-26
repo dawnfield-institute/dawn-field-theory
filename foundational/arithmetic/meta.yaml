@@ -1,10 +1,15 @@
 schema_version: 2.0
 directory_name: arithmetic
-description: >
-  Arithmetic theory, mappings, and supporting documents for Dawn Field Theory.
+description: 'Arithmetic theory, mappings, and supporting documents for Dawn Field
+  Theory.
+
+  '
 semantic_scope:
-  - arithmetic
-  - theory
-files: []
+- arithmetic
+- theory
+files:
+- README.md
+- infodynamics_arithmetic_v1.md
+- symbolic_geometry_arithmetic.md
 child_directories:
-  - hodge_mapping
+- hodge_mapping
