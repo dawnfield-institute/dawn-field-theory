@@ -2037,6 +2037,7 @@ dawn-field-theory/
       auto_llm_infra.md
       cip_domain_upgrade.md
       kronos.md
+      mcp_server_detailed_design.md
       meta.yaml
       ollama_self_hosted_runner.md
     left_for_first_release/
