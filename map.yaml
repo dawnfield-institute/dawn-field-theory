@@ -208,6 +208,7 @@ dawn-field-theory/
             meta.yaml
             tree.nwk
           output/
+            meta.yaml
             sweep_20250718_111841/
               meta.yaml
               sweep_provenance.json
@@ -956,6 +957,7 @@ dawn-field-theory/
             interference_test_20250721_121752/
               heatmap_mse.png
               heatmap_pearson_corr.png
+              meta.yaml
               parameter_sweep_results.csv
               symbolic_vs_quantum_interference_noise0.0_prime1.png
               symbolic_vs_quantum_interference_noise0.0_prime7.png
@@ -2025,20 +2027,32 @@ dawn-field-theory/
     publication_framework_roadmap.md
     xai_scbf_roadmap.md
   todo/
-    cip_domain_upgrade.md
-    kronos.md
     meta.yaml
-    ollama_self_hosted_runner.md
-    prometheus.md
-    quantum_EM.md
     roadmap_draft.md
-    synergy_integration_plan.md
     todolist.md
+    biological/
+      historical_collapse.md
+      meta.yaml
+    infra/
+      auto_llm_infra.md
+      cip_domain_upgrade.md
+      kronos.md
+      meta.yaml
+      ollama_self_hosted_runner.md
     left_for_first_release/
       AIXPreprint_skeleton.md
+      SECPreprint_skeleton.md
       entropy_minimized_architecture.md
       mathmatics_next_steps.md
       meta.yaml
+    sdk/
+      fracton.md
+      meta.yaml
+      prometheus.md
+      synergy_integration_plan.md
+    theory/
+      meta.yaml
+      quantum_EM.md
   tools/
     converter.py
     generate_meta_yamls.py
