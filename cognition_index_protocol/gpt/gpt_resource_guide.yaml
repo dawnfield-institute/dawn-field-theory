@@ -1,0 +1,155 @@
+
+# DawnField GPT Resource Guide (v1.0)
+#
+# NOTE: This document serves as a staging area for upcoming CIP (Cognition Index Protocol) updates. It organizes and abstracts major theories, blueprints, devkit, and models, providing instructions and document paths for each. Future CIP releases will integrate and formalize this structure.
+
+# This guide organizes the codebase by major theories and frameworks. For each theory, instructions are provided for how the GPT should use/cite the theory, and all related documents are listed. Roadmaps and todos are included as context, not as primary theory anchors.
+
+theories:
+  - name: Entropy Collapse & Field Dynamics
+    description: >
+      Core theoretical foundation of Dawn Field Theory. Explores how entropy collapse, symbolic recursion, and field dynamics give rise to structure, intelligence, and emergent computation. Includes both classical and quantum analogs, formal collapse operators, and the link between entropy and symbolic geometry.
+    documents:
+      - foundational/docs/[m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
+      - foundational/docs/[id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md
+      - foundational/docs/[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md
+      - foundational/docs/[id][F][v1.0][C5][I5][E]_landauer_erasure_cost_superfluidity_viscosity.md
+      - foundational/docs/[m][F][v0.1][C5][I5]_symbolic_entropy_collapse_and_hodge_mapping.md
+      - foundational/docs/[m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md
+      - foundational/docs/[id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md
+      - foundational/docs/[m][F][v1.0][C5][I5][R]_recursive_symbol_collapse.md
+    experiments:
+      - blueprints/AI_detection/[cip][experiment][v1.0][2025-06-30]_dawn_field_recursive_fractal_entropy_provenance_pipeline.py
+      - blueprints/balance_based_energy_generation/balance_based_energy_generationv1.py
+      - blueprints/balance_based_energy_generation/balance_based_energy_generationv2.py
+      - models/CIMM/entropy_collapse.py
+      - models/scbf/entropy_collapse_sim.py
+
+  - name: Recursive Balance Field & Quantum Potentials
+    instruction: >
+      For topics involving recursive balance, quantum potentials, or the replacement of static potentials in physics, reference these documents. Use them to explain the theoretical and mathematical basis for balance-driven field dynamics.
+    description: >
+      Theoretical and mathematical framework for replacing static quantum potentials with adaptive, information-driven balance fields. Explains how recursive feedback, memory, and field resonance generate emergent structure and stability in physical and informational systems.
+    documents:
+      - foundational/docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md
+      - foundational/docs/[m][F][v1.0][C4][I5]_dawn_field_theory_recursive_balance_field.md
+      - foundational/docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md
+      - foundational/docs/[m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md
+    experiments:
+      - models/CIMM/recursive_balance_field.py
+      - models/scbf/recursive_balance_sim.py
+
+  - name: Bifractal Collapse & Semantic Recursion
+    instruction: >
+      When discussing bifractal collapse, semantic recursion, or the Law of InfoDynamics, use these papers to ground your explanation. Always connect emergent intelligence and time structure to these foundational works.
+    description: >
+      Explores the Law of InfoDynamics, bifractal collapse, and the recursive interplay between ancestry and emergence in time and intelligence. These works formalize the mathematical and ontological basis for semantic recursion and field intelligence.
+    documents:
+      - foundational/docs/[m][F][v1.0][C4][I5]_bifractal_time_emergence.md
+      - foundational/docs/[m][F][v1.1][C4][I5]_recursive_entopy.md
+    experiments:
+      - models/scbf/bifractal_collapse_sim.py
+      - models/GAIA/semantic_recursion_experiment.py
+
+  - name: Superfluidity, Crystallization & Collapse Coherence
+    instruction: >
+      For questions about superfluid informational fields, crystallization, or pi-harmonic collapse coherence, cite these simulation and theory documents. Use them to explain emergent structure and field coherence.
+    description: >
+      Simulation and theoretical work on superfluid informational fields, symbolic crystallization, and the role of pi-harmonic modulation in collapse coherence. Demonstrates how field-theoretic principles yield stable, interpretable structure in both physical and symbolic domains.
+    documents:
+      - foundational/docs/[m][F][v1.0][C4][I4]_super_fluid.md
+      - foundational/docs/[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md
+      - foundational/docs/[m][F][v1.0][C4][I5]_pi_harmonics.md
+    experiments:
+      - models/scbf/superfluid_sim.py
+      - models/GAIA/crystallization_experiment.py
+      - blueprints/AI_detection/pi_harmonics.py
+
+  - name: Recursive Collapse Trees & Field Intelligence
+    instruction: >
+      When referencing recursive tree simulations, field intelligence, or entropy-seeded growth, use these as the primary sources. Summarize simulation results and their implications for symbolic cognition.
+    description: >
+      Simulation studies of recursive tree growth, entropy-seeded intelligence, and the emergence of symbolic cognition from field dynamics. These works provide empirical grounding for Dawn’s claims about self-organizing intelligence.
+    documents:
+      - foundational/docs/[m][F][v1.0][C4][I4]_recursive_tree.md
+      - foundational/docs/[m][F][v1.1][C4][I5]_recursive_entopy.md
+    experiments:
+      - models/GAIA/recursive_tree_sim.py
+      - models/CIMM/recursive_tree_entropy.py
+      - blueprints/AI_detection/recursive_tree_experiment.py
+
+  - name: Lexicon & Reference
+    instruction: >
+      Use the lexicon to define or clarify any specialized term or concept. Always link to the relevant entry when explaining vocabulary.
+    description: >
+      The evolving dictionary and semantic map of Dawn Field Theory’s key terms and concepts. Essential for clarifying specialized vocabulary and ensuring consistent use of terminology across the project.
+    documents:
+      - foundational/lexicon.md
+
+  - name: CIP, GPT Architecture & Validation
+    instruction: >
+      For system design, validation, and epistemic feedback, cite these as the authoritative sources for CIP integration and GPT architecture.
+    description: >
+      Core documents for system design, validation, and epistemic feedback. These define the Cognition Index Protocol (CIP), Custom GPT integration, and the architecture for self-evaluating, epistemically-aware AI.
+    documents:
+      - cognition_index_protocol/gpt/CIP_GPT_architecturev2.md
+      - cognition_index_protocol/gpt/meta.yaml
+
+  - name: Roadmaps & Future Directions
+    instruction: >
+      Use these documents to contextualize project vision, future plans, and ongoing todos. Kronos/FDO is one of many future-facing initiatives.
+    description: >
+      Living roadmaps, planning documents, and future-facing initiatives. Includes project vision, major milestones, and ongoing todos. Kronos/FDO is just one of many tracked directions.
+    documents:
+      - todo/kronos.md
+      - roadmaps/core_project_roadmap.md
+      - roadmaps/cip_protocol_roadmap.md
+      - roadmaps/gaia_roadmap.md
+      - roadmaps/math_arithmetic_roadmap.md
+      - roadmaps/publication_framework_roadmap.md
+      - roadmaps/xai_scbf_roadmap.md
+      - todo/prometheus.md
+      - todo/quantum_EM.md
+      - todo/synergy_integration_plan.md
+      - todo/todolist.md
+      - todo/cip_domain_upgrade.md
+      - todo/roadmap_draft.md
+  
+  - name: Blueprints (Protocols, Architectures, Applied Concepts)
+    description: >
+      Early-stage architectures, protocols, and technical concepts developed alongside the core theory. Blueprints serve as a living incubator for applied ideas, technical designs, and future modules. Includes AI detection, energy generation, and nuclear containment protocols.
+    instruction: >
+      Reference blueprints for implementation details, protocol design, and applied technical concepts. Use them to ground discussions of practical architecture, simulation frameworks, and experimental protocols.
+    documents:
+      - blueprints/AI_detection/[cip][protocol][v1.0][2025-06-30]_dawn_field_protocol_recursive_fractal_entropy_provenance.md
+      - blueprints/AI_detection/[cip][experiment][v1.0][2025-06-30]_dawn_field_recursive_fractal_entropy_provenance_pipeline.py
+      - blueprints/balance_based_energy_generation/balance_based_energy_generationv1.py
+      - blueprints/balance_based_energy_generation/balance_based_energy_generationv2.py
+      - blueprints/nuclear_containment/v1/blueprint.md
+      - blueprints/nuclear_containment/v1/containment_theory.md
+      - blueprints/nuclear_containment/v1/containment_math.md
+      - blueprints/nuclear_containment/README.md
+      - blueprints/README.md
+  
+  - name: DevKit (Tools & Experimental Harnesses)
+    description: >
+      Developer toolkit for prototyping, testing, and validating symbolic and entropic algorithms. Includes compression, hash evaluation, random number generation, and experimental modules for stress-testing field theoretic principles.
+    instruction: >
+      Use DevKit resources for any question about tool development, algorithm prototyping, or experimental validation. Reference these for implementation details, test protocols, and developer guidance.
+    documents:
+      - devkit/README.md
+      - devkit/compression/
+      - devkit/hash_evaluation/
+      - devkit/random_number/
+  
+  - name: Models (Symbolic Cognition Engines)
+    description: >
+      Full implementation of symbolic models, learning architectures, and simulation frameworks. Models bridge abstract theory with executable code, powering simulations in emergent field intelligence and symbolic collapse.
+    instruction: >
+      Reference the models section for any question about implementation, simulation, or the technical foundation of Dawn Field Theory. Use these documents to explain model architecture, experiment design, and the connection between theory and practice.
+    documents:
+      - models/README.md
+      - models/TinyCIMM/README.md
+      - models/scbf/README.md
+      - models/GAIA/README.md
+      - models/CIMM/README.md

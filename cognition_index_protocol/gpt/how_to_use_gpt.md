@@ -6,7 +6,7 @@ The **DawnField GPT** is a custom AI assistant built specifically to help users 
 
 ## 🚀 Try It Now
 
-> [🧠 Launch DawnField GPT v0.2](https://chatgpt.com/g/g-6855ea1d2fc4819186339844c91c8a0c-dawnfieldframeworkrepogptv0-2)
+> [🧠 Launch DawnField GPT v0.2](https://chatgpt.com/g/g-685b2fa488888191bab9a5d7bfc38ca9-dawnfieldframeworkrepogptv0-3)
 
 This is the live GPT agent built to navigate and reason through this repository.
 

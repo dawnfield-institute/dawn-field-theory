@@ -18,7 +18,7 @@
 
 Looking for an intelligent way to navigate this repository?
 
-* [🧠 Launch DawnField GPT v0.2](https://chatgpt.com/g/g-6855ea1d2fc4819186339844c91c8a0c-dawnfieldframeworkrepogptv0-2)
+* [🧠 Launch DawnField GPT v0.3](https://chatgpt.com/g/g-685b2fa488888191bab9a5d7bfc38ca9-dawnfieldframeworkrepogptv0-3)
 * [📘 How to Use the GPT](./cognition_index_protocol/gpt/how_to_use_gpt.md)
 
 ---
