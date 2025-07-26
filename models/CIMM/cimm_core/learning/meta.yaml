@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: learning
-description: >
-  Learning algorithms and supporting files for the CIMM core.
+description: 'Learning algorithms and supporting files for the CIMM core.
+
+  '
 semantic_scope:
-  - learning
-  - CIMM
+- learning
+- CIMM
 files:
-  - meta.yaml
-child_directories:
-  []
+- quantum_memory.py
+- reinforcement_learning.py
+- superfluid_dynamics.py
+child_directories: []

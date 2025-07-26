@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: run_20250710_110803
-description: Polynomial analysis experimental run executed on July 10, 2025 at 11:08:03. Early session testing polynomial sequence learning and algebraic reasoning through field-theoretic neural dynamics. Evaluates symbolic manipulation capabilities and algebraic structure understanding with comprehensive SCBF interpretability metrics.
+description: Polynomial analysis experimental run executed on July 10, 2025 at 11:08:03.
+  Early session testing polynomial sequence learning and algebraic reasoning through
+  field-theoretic neural dynamics. Evaluates symbolic manipulation capabilities and
+  algebraic structure understanding with comprehensive SCBF interpretability metrics.
 semantic_scope:
 - experimental-run
 - polynomial-learning

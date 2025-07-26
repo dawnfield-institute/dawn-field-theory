@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: reference_material
-description: >
-  Reference materials for recursive entropy experiments, including datasets and supporting documentation.
+description: 'Reference materials for recursive entropy experiments, including datasets
+  and supporting documentation.
+
+  '
 semantic_scope:
-  - reference
-  - recursive entropy
-  - experiments
+- reference
+- recursive entropy
+- experiments
 files:
 - recursive_entropy_2025-06-07_results.txt
 - recursive_entropy_2025-06-07_results1.png

@@ -1,11 +1,13 @@
 schema_version: '2.0'
 directory_name: v1
-description: >
-  Version 1 of the nuclear containment blueprint. Contains experimental archives, images, and reference materials for early-stage designs.
+description: 'Version 1 of the nuclear containment blueprint. Contains experimental
+  archives, images, and reference materials for early-stage designs.
+
+  '
 semantic_scope:
-  - nuclear containment
-  - blueprints
-  - versioning
+- nuclear containment
+- blueprints
+- versioning
 files:
 - blueprint.md
 - containment_math.md

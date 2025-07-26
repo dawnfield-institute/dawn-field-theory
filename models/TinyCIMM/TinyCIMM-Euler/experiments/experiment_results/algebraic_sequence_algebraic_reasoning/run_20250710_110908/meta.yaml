@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: run_20250710_110908
-description: Algebraic reasoning experimental run executed on July 10, 2025 at 11:09:08. Early session testing algebraic sequence learning and symbolic mathematical reasoning through field-theoretic neural dynamics. Contains comprehensive evaluation of symbolic manipulation capabilities with SCBF interpretability tracking and algebraic pattern analysis.
+description: Algebraic reasoning experimental run executed on July 10, 2025 at 11:09:08.
+  Early session testing algebraic sequence learning and symbolic mathematical reasoning
+  through field-theoretic neural dynamics. Contains comprehensive evaluation of symbolic
+  manipulation capabilities with SCBF interpretability tracking and algebraic pattern
+  analysis.
 semantic_scope:
 - experimental-run
 - algebraic-learning

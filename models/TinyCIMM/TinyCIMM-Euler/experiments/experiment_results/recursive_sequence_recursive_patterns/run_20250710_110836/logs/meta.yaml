@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: logs
-description: Experimental logs from TinyCIMM-Euler recursive sequence experiment documenting training progress, SCBF interpretability metrics, field-aware loss evolution, and recursive pattern analysis performance data.
+description: Experimental logs from TinyCIMM-Euler recursive sequence experiment documenting
+  training progress, SCBF interpretability metrics, field-aware loss evolution, and
+  recursive pattern analysis performance data.
 semantic_scope:
 - recursive_experiment_logs
 - tinycimm_euler_logs

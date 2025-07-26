@@ -2,13 +2,8 @@ schema_version: 2.0
 directory_name: testid_4
 description: Outputs for testid_4 in language-to-logic entropy experiment run at 2025-06-21_095416.
 semantic_scope:
-  - language-to-logic
-  - entropy collapse
-  - symbolic recursion
-files:
-  - meta.yaml
-  - collapse_tree.png
-  - logic_flow.json
-  - report.md
-  - entropy_heatmap.png
+- language-to-logic
+- entropy collapse
+- symbolic recursion
+files: []
 child_directories: []

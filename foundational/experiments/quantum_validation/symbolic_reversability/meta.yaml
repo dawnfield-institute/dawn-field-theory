@@ -2,20 +2,23 @@ schema_version: 2.0
 directory_name: symbolic_reversability
 parent_directory: quantum_validation
 semantic_scope:
-  - symbolic entropy collapse
-  - reversibility
-  - hysteresis
-  - infodynamics
-  - quantum balance equation
-  - experiment
-  - thermodynamics
+- symbolic entropy collapse
+- reversibility
+- hysteresis
+- infodynamics
+- quantum balance equation
+- experiment
+- thermodynamics
 files:
-  - results.md
-  - entropy_energy_trace.png
-  - summary.json
-  - field_snapshots (in-memory)
-description: >
-  This folder contains the results and analysis of symbolic field reversibility experiments, including parameter sweeps, entropy and energy traces, and fidelity analysis. The work provides empirical validation for the Symbolic Entropy Collapse (SEC) framework and its thermodynamic implications for field theory.
+- '[id][E][v1.0][C4][I5][Q]_symbolic_field_reversibility_experiment.py'
+- results.md
+description: 'This folder contains the results and analysis of symbolic field reversibility
+  experiments, including parameter sweeps, entropy and energy traces, and fidelity
+  analysis. The work provides empirical validation for the Symbolic Entropy Collapse
+  (SEC) framework and its thermodynamic implications for field theory.
+
+  '
 proficiency_level: expert
 context_weight: high
-child_directories: []
+child_directories:
+- results

@@ -1,11 +1,12 @@
 schema_version: '2.0'
 directory_name: data
-description: >
-  Data files and supporting datasets for CIMM model experiments and analysis.
+description: 'Data files and supporting datasets for CIMM model experiments and analysis.
+
+  '
 semantic_scope:
-  - data
-  - CIMM
-  - experiments
+- data
+- CIMM
+- experiments
 files:
 - amd_full_history.csv
 child_directories: []

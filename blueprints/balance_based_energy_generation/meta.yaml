@@ -1,21 +1,23 @@
 schema_version: 2.0
 directory_name: balance_based_energy_generation
-description: >
-  Blueprints and scripts for balance-based energy generation, including reference material and strategy logs.
+description: 'Blueprints and scripts for balance-based energy generation, including
+  reference material and strategy logs.
+
+  '
 semantic_scope:
-  - energy
-  - blueprint
-  - balance
+- energy
+- blueprint
+- balance
 files:
-  - README.md
-  - balance_based_energy_generationv1.py
-  - balance_based_energy_generationv2.py
-  - carbon_energy_math.md
-  - carbon_energy_report.md
-  - carbon_energy_strategy_logs.py
-  - carbon_energy_theory.md
-  - carbon_fuel_profiles.md
-  - consumer_energy_blueprint.md
-  - production_energy_blueprint.md
+- README.md
+- balance_based_energy_generationv1.py
+- balance_based_energy_generationv2.py
+- carbon_energy_math.md
+- carbon_energy_report.md
+- carbon_energy_strategy_logs.py
+- carbon_energy_theory.md
+- carbon_fuel_profiles.md
+- consumer_energy_blueprint.md
+- production_energy_blueprint.md
 child_directories:
-  - reference_material
+- reference_material

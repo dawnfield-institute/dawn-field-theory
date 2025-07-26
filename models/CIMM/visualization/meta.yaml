@@ -1,11 +1,12 @@
 schema_version: 2.0
 directory_name: visualization
-description: >
-  Visualization tools and supporting files for the CIMM model.
+description: 'Visualization tools and supporting files for the CIMM model.
+
+  '
 semantic_scope:
-  - visualization
-  - CIMM
+- visualization
+- CIMM
 files:
-  - meta.yaml
-child_directories:
-  []
+- __init__.py
+- plots.py
+child_directories: []

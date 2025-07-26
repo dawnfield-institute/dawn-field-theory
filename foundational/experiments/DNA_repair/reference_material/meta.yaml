@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: reference_material
-description: >
-  Reference materials for DNA repair experiments, including datasets, papers, and supporting documentation.
+description: 'Reference materials for DNA repair experiments, including datasets,
+  papers, and supporting documentation.
+
+  '
 semantic_scope:
-  - reference
-  - DNA repair
-  - experiments
+- reference
+- DNA repair
+- experiments
 files:
 - Entropy-Based Mutation Detection and Repair in Protein Sequences.md
 - Entropy-Based Repair of BRCA1 Frameshift Mutation _5382insC__1_.md

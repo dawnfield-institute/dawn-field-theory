@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: images
-description: Visualization outputs and interpretability plots from prime delta recognition experiment (run_20250710_110620). Contains comprehensive SCBF interpretability visualizations, mathematical reasoning performance plots, field-aware dynamics analysis, weight evolution tracking, and breakthrough prime pattern discovery visualizations from early morning experimental session.
+description: Visualization outputs and interpretability plots from prime delta recognition
+  experiment (run_20250710_110620). Contains comprehensive SCBF interpretability visualizations,
+  mathematical reasoning performance plots, field-aware dynamics analysis, weight
+  evolution tracking, and breakthrough prime pattern discovery visualizations from
+  early morning experimental session.
 semantic_scope:
 - visualization-outputs
 - interpretability-plots

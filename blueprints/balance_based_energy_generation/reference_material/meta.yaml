@@ -1,11 +1,13 @@
 schema_version: 2.0
 directory_name: reference_material
-description: >
-  Reference materials and supporting documents for balance-based energy generation blueprints. Includes datasets, papers, and technical notes.
+description: 'Reference materials and supporting documents for balance-based energy
+  generation blueprints. Includes datasets, papers, and technical notes.
+
+  '
 semantic_scope:
-  - reference
-  - energy generation
-  - blueprints
+- reference
+- energy generation
+- blueprints
 files:
 - balance_based_energy_generationv1_2025-06-17 213826.png
 - balance_based_energy_generationv2_2025-06-17 213826.png

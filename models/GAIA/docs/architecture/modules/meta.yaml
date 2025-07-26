@@ -1,12 +1,17 @@
 schema_version: 2.0
 directory_name: modules
-description: >
-  Modules and subcomponents for the GAIA model architecture.
+description: 'Modules and subcomponents for the GAIA model architecture.
+
+  '
 semantic_scope:
-  - modules
-  - architecture
-  - GAIA
+- modules
+- architecture
+- GAIA
 files:
-  - meta.yaml
-child_directories:
-  []
+- collapse_core.md
+- field_engine.md
+- meta_cognition_layer.md
+- resonance_mesh.md
+- superfluid_memory.md
+- symbolic_crystallizer.md
+child_directories: []

@@ -1,15 +1,18 @@
 schema_version: 2.0
 directory_name: devkit
-description: >
-  Developer tools and utilities for Dawn Field Theory, including compression, hash evaluation, and random number modules.
+description: 'Developer tools and utilities for Dawn Field Theory, including compression,
+  hash evaluation, and random number modules.
+
+  '
 semantic_scope:
-  - devkit
-  - tools
-  - compression
-  - hash
-  - random
-files: []
+- devkit
+- tools
+- compression
+- hash
+- random
+files:
+- README.md
 child_directories:
-  - compression
-  - hash_evaluation
-  - random_number
+- compression
+- hash_evaluation
+- random_number

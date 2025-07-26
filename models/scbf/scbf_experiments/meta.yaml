@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: scbf_experiments
-description: SCBF experimental results repository - contains timestamped experiment runs, data, visualizations, and analysis results from TinyCIMM-SCBF integration studies.
+description: SCBF experimental results repository - contains timestamped experiment
+  runs, data, visualizations, and analysis results from TinyCIMM-SCBF integration
+  studies.
 semantic_scope:
 - scbf_experiments
 - experimental_results
@@ -18,3 +20,5 @@ child_directories:
 - '20250713_102425'
 - '20250713_102931'
 - '20250713_104841'
+- '20250714_104111'
+- '20250714_104436'

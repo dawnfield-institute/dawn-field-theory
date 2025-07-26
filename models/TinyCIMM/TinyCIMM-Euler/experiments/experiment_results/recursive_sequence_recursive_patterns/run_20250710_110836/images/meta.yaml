@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: images
-description: Visual outputs from TinyCIMM-Euler recursive sequence experiment showing SCBF interpretability analysis, field-aware loss dynamics, and recursive pattern recognition visualization during mathematical sequence analysis.
+description: Visual outputs from TinyCIMM-Euler recursive sequence experiment showing
+  SCBF interpretability analysis, field-aware loss dynamics, and recursive pattern
+  recognition visualization during mathematical sequence analysis.
 semantic_scope:
 - recursive_experiment_visualization
 - tinycimm_euler_images

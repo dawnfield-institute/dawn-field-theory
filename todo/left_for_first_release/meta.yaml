@@ -1,16 +1,21 @@
 schema_version: '2.0'
 directory_name: left_for_first_release
-description: >
-  Contains final research logs, experiment summaries, and validation plans to be completed before the first full public release. Includes adaptive neural architecture benchmarking (MiniCIMM/QBE), quantum collapse simulation results, and the empirical validation roadmap for Dawn Field Theory.
+description: 'Contains final research logs, experiment summaries, and validation plans
+  to be completed before the first full public release. Includes adaptive neural architecture
+  benchmarking (MiniCIMM/QBE), quantum collapse simulation results, and the empirical
+  validation roadmap for Dawn Field Theory.
+
+  '
 semantic_scope:
-  - prerelease_milestones
-  - empirical_validation
-  - adaptive_neural_architectures
-  - quantum_collapse
-  - symbolic_field_theory
-  - experiment_benchmarks
-  - release_documentation
+- prerelease_milestones
+- empirical_validation
+- adaptive_neural_architectures
+- quantum_collapse
+- symbolic_field_theory
+- experiment_benchmarks
+- release_documentation
 files:
-  - AI_Blackbox.md
-  - quantum_testing.md
+- AIXPreprint_skeleton.md
+- entropy_minimized_architecture.md
+- mathmatics_next_steps.md
 child_directories: []

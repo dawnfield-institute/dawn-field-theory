@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: loggers
-description: SCBF experiment logging infrastructure - handles real-time data collection, experiment tracking, and result serialization for interpretability analysis.
+description: SCBF experiment logging infrastructure - handles real-time data collection,
+  experiment tracking, and result serialization for interpretability analysis.
 semantic_scope:
 - loggers
 - experiment_logging
@@ -11,5 +12,4 @@ semantic_scope:
 files:
 - __init__.py
 - experiment_logger.py
-child_directories:
-- __pycache__
+child_directories: []

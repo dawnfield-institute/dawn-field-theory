@@ -1,10 +1,11 @@
 schema_version: '2.0'
 directory_name: AI_detection
-description: Blueprint for an adaptive, feedback-driven AI detection module within the Dawn Field Theory framework.
-  This module explores interpretable, entropy-aware neural architectures that dynamically grow and prune
-  in response to feedback, aiming to address the blackbox problem in machine learning. Includes experiment
-  protocols, metrics for transparency (entropy, fractal dimension), and integration points for further research
-  on explainable and self-organizing AI
+description: Blueprint for an adaptive, feedback-driven AI detection module within
+  the Dawn Field Theory framework. This module explores interpretable, entropy-aware
+  neural architectures that dynamically grow and prune in response to feedback, aiming
+  to address the blackbox problem in machine learning. Includes experiment protocols,
+  metrics for transparency (entropy, fractal dimension), and integration points for
+  further research on explainable and self-organizing AI
 semantic_scope:
 - AI_detection
 files:
@@ -23,4 +24,3 @@ semantic_tags:
 - entropy
 - self-organizing
 - neural-networks
-

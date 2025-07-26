@@ -1,8 +1,14 @@
 directory: language_to_logic
 parent: experiments
 contains:
-  - reference_material/
-  - (experiment scripts, e.g., language_to_logic.py)
-description: Experiments and reference outputs for entropy-based language-to-logic symbolic collapse under the Dawn Field Theory framework.
+- reference_material/
+- (experiment scripts, e.g., language_to_logic.py)
+description: Experiments and reference outputs for entropy-based language-to-logic
+  symbolic collapse under the Dawn Field Theory framework.
 schema_version: dawn_field_schema_v1.1
 status: ACTIVE
+files:
+- language_to_logic.py
+- results.md
+child_directories:
+- reference_material

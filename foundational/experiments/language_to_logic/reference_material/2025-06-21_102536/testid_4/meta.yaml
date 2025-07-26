@@ -6,9 +6,8 @@ semantic_scope:
 - entropy collapse
 - symbolic recursion
 files:
-- meta.yaml
 - collapse_tree.png
+- entropy_heatmap.png
 - logic_flow.json
 - report.md
-- entropy_heatmap.png
 child_directories: []

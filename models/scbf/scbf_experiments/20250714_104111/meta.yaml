@@ -1,13 +1,15 @@
 schema_version: '2.0'
 directory_name: '20250714_104111'
-description: |
-  SCBF experiment run (timestamp: 20250714_104111) for symbolic collapse benchmarking and interpretability analysis.
+description: 'SCBF experiment run (timestamp: 20250714_104111) for symbolic collapse
+  benchmarking and interpretability analysis.
+
+  '
 semantic_scope:
 - '20250714_104111'
 files: []
 child_directories: []
 semantic_tags:
-  - scbf
-  - symbolic_collapse
-  - benchmarking
-  - interpretability
+- scbf
+- symbolic_collapse
+- benchmarking
+- interpretability
