@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: sdk
+description: Software development kit for field-theoretic and bifractal agent systems; includes core modules, utilities, and integration tools.
+semantic_scope:
+  - sdk
+  - field theory
+  - bifractal agents
+  - core modules
+  - integration
+files:
+- fracton.md
+- prometheus.md
+- synergy_integration_plan.md
+child_directories: []

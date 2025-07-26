@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: infra
+description: Infrastructure plans, scripts, and resources for project automation, deployment, and environment management.
+semantic_scope:
+  - infrastructure
+  - automation
+  - deployment
+  - environment management
+files:
+- auto_llm_infra.md
+- cip_domain_upgrade.md
+- kronos.md
+- ollama_self_hosted_runner.md
+child_directories: []
