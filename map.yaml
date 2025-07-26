@@ -7,17 +7,12 @@ dawn-field-theory/
   README.md
   dawn-field-theory.md
   for_ai_labs.md
-  generate_path.py
   infodynamics.md
   map.yaml
   meta.yaml
   origin_of_infodynamics.md
   schema.yaml
   timeline.md
-  backlog/
-    [m][D][v0.1][C6][I1]_cimm_ml_vs_sec_benchmark_plan.md
-    meta.yaml
-    output.txt
   blueprints/
     LICENSE.md
     README.md
@@ -97,6 +92,7 @@ dawn-field-theory/
     gpt/
       CIP_GPT_architecturev2.md
       git_action.yaml
+      gpt_resource_guide.yaml
       how_to_use_gpt.md
       meta.yaml
       metadata_architecturev3.md
@@ -120,8 +116,6 @@ dawn-field-theory/
       SELID.py
       SELID_validation.py
       meta.yaml
-      __pycache__/
-        meta.yaml
     random_number/
       RandomNumberTest.py
       meta.yaml
@@ -1403,92 +1397,6 @@ dawn-field-theory/
         THE PHYSICS UNDERLYING CIMM.docx
         The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
         meta.yaml
-  internal/
-    meta.yaml
-    QuantumTesting/
-      meta.yaml
-      results.md
-      reversability.py
-      results/
-        meta.yaml
-    backup/
-      TinyCIMM_fractal_explainability.md
-      experiment_images.zip
-      experiment_results.zip
-      meta.yaml
-      model_blackbox_backup.py
-      test.py
-      clean_sine/
-        meta.yaml
-        test_backup_cleansine.py
-        cleansine_experiment_images/
-          cimm_entropy_evolution_drift_sine.png
-          cimm_hidden_size_evolution_drift_sine.png
-          cimm_weights_step_0.png
-          cimm_weights_step_50.png
-          cimm_weights_step_100.png
-          cimm_weights_step_150.png
-          entropy_std_evolution_drift_sine.png
-          feedback_accuracy_drift_sine.png
-          fractal_dim_evolution_drift_sine.png
-          hidden_layer_size_evolution_drift_sine.png
-          loss_evolution_drift_sine.png
-          meta.yaml
-          mlp_weights_step_0.png
-          mlp_weights_step_50.png
-          mlp_weights_step_100.png
-          mlp_weights_step_150.png
-          output.txt
-          pred_vs_truth_drift_sine.png
-          qbe_pressure_evolution_drift_sine.png
-      experiment_images/
-        cimm_entropy_evolution_chaotic_sine.png
-        cimm_hidden_size_evolution_chaotic_sine.png
-        cimm_weights_step_0.png
-        cimm_weights_step_50.png
-        ...
-        cimm_weights_step_500.png
-        cimm_weights_step_550.png
-        curvature_step_0.png
-        curvature_step_10.png
-        curvature_step_580.png
-        curvature_step_590.png
-        entropy_std_evolution_chaotic_sine.png
-        feedback_accuracy_chaotic_sine.png
-        feedback_geometry_pca_0.png
-        feedback_geometry_pca_20.png
-        feedback_geometry_pca_560.png
-        feedback_geometry_pca_580.png
-        fractal_dim_evolution_chaotic_sine.png
-        hidden_layer_size_evolution_chaotic_sine.png
-        loss_evolution_chaotic_sine.png
-        meta.yaml
-        mlp_weights_step_0.png
-        mlp_weights_step_50.png
-        mlp_weights_step_500.png
-        mlp_weights_step_550.png
-        output.txt
-        pred_vs_truth_chaotic_sine.png
-        qbe_pressure_evolution_chaotic_sine.png
-        weight_hist_0.png
-        weight_hist_10.png
-        weight_hist_580.png
-        weight_hist_590.png
-      experiment_logs/
-        chaotic_sine_log.csv
-        meta.yaml
-      publication_suite/
-        meta.yaml
-        analysis/
-          meta.yaml
-        config/
-          meta.yaml
-        pub_logging/
-          meta.yaml
-        visualizations/
-          meta.yaml
-    biology_tests/
-      meta.yaml
   models/
     README.md
     meta.yaml
@@ -1499,9 +1407,6 @@ dawn-field-theory/
       prime_number_results.md
       requirements.txt
       validate_imports.py
-      __pycache__/
-        __init__.cpython-311.pyc
-        meta.yaml
       agents/
         agentic_mesh_runtime.py
         base_agent.py
@@ -1516,31 +1421,16 @@ dawn-field-theory/
         cimm_core_manager.py
         meta.yaml
         utils.py
-        __pycache__/
-          __init__.cpython-311.pyc
-          cimm.cpython-311.pyc
-          meta.yaml
-          utils.cpython-311.pyc
         entropy/
           __init__.py
           entropy_monitor.py
           meta.yaml
           quantum_potential_layer.py
-          __pycache__/
-            __init__.cpython-311.pyc
-            entropy_monitor.cpython-311.pyc
-            meta.yaml
-            quantum_potential_layer.cpython-311.pyc
         learning/
           meta.yaml
           quantum_memory.py
           reinforcement_learning.py
           superfluid_dynamics.py
-          __pycache__/
-            meta.yaml
-            quantum_memory.cpython-311.pyc
-            reinforcement_learning.cpython-311.pyc
-            superfluid_dynamics.cpython-311.pyc
         models/
           __init__.py
           base_cimm_model.py
@@ -1548,24 +1438,12 @@ dawn-field-theory/
           financial_model.py
           meta.yaml
           prime_structure_model.py
-          __pycache__/
-            __init__.cpython-311.pyc
-            base_cimm_model.cpython-311.pyc
-            financial_model.cpython-311.pyc
-            meta.yaml
-            prime_structure_model.cpython-311.pyc
         optimization/
           __init__.py
           adaptive_controller.py
           bayesian_optimizer.py
           meta.yaml
           pruning.py
-          __pycache__/
-            __init__.cpython-311.pyc
-            adaptive_controller.cpython-311.pyc
-            bayesian_optimizer.cpython-311.pyc
-            meta.yaml
-            pruning.cpython-311.pyc
       data/
         amd_full_history.csv
         meta.yaml
@@ -1590,18 +1468,10 @@ dawn-field-theory/
         data_processing.py
         logging.py
         meta.yaml
-        __pycache__/
-          __init__.cpython-311.pyc
-          logging.cpython-311.pyc
-          meta.yaml
       visualization/
         __init__.py
         meta.yaml
         plots.py
-        __pycache__/
-          __init__.cpython-311.pyc
-          meta.yaml
-          plots.cpython-311.pyc
     GAIA/
       README.md
       meta.yaml
@@ -1647,21 +1517,12 @@ dawn-field-theory/
       TinyCIMM-Euler/
         meta.yaml
         tinycimm_euler.py
-        __pycache__/
-          enhanced_scbf.cpython-311.pyc
-          mathematical_scbf.cpython-311.pyc
-          meta.yaml
-          tinycimm_euler.cpython-311.pyc
         experiments/
           [id][F][v2.0][C6][I6][E]_mathematical_reasoning_breakthrough.md
           meta.yaml
           run_experiment.py
           run_long_term_experiment.py
           run_online_experiment.py
-          __pycache__/
-            meta.yaml
-            run_experiment.cpython-311.pyc
-            run_online_experiment.cpython-311.pyc
           experiment_results/
             meta.yaml
             algebraic_sequence_algebraic_reasoning/
@@ -1834,10 +1695,6 @@ dawn-field-theory/
         output.txt
         report.md
         tinycimm_planck.py
-        __pycache__/
-          TinyplanckPlanck_planck.cpython-311.pyc
-          meta.yaml
-          tinycimm_planck.cpython-311.pyc
         docs/
           TinyplanckPlanck_planck_fractal_explainability.md
           explainability_plan.md
@@ -2010,9 +1867,6 @@ dawn-field-theory/
           meta.yaml
           run_experiment.py
           status.md
-          __pycache__/
-            meta.yaml
-            run_experiment.cpython-311.pyc
     scbf/
       README.md
       __init__.py
@@ -2024,10 +1878,6 @@ dawn-field-theory/
         __init__.py
         experiment_logger.py
         meta.yaml
-        __pycache__/
-          __init__.cpython-311.pyc
-          experiment_logger.cpython-311.pyc
-          meta.yaml
       metrics/
         __init__.py
         activation_ancestry.py
@@ -2037,15 +1887,6 @@ dawn-field-theory/
         phase_alignment.py
         semantic_attractors.py
         validation.py
-        __pycache__/
-          __init__.cpython-311.pyc
-          activation_ancestry.cpython-311.pyc
-          bifractal_lineage.cpython-311.pyc
-          entropy_collapse.cpython-311.pyc
-          meta.yaml
-          phase_alignment.cpython-311.pyc
-          semantic_attractors.cpython-311.pyc
-          validation.cpython-311.pyc
       scbf_experiments/
         [cip][experiment][v1.0][2025-07-13]_scbf_interpretability_report.md
         experiment_registry.json
@@ -2167,18 +2008,10 @@ dawn-field-theory/
         __init__.py
         meta.yaml
         scbf_utils.py
-        __pycache__/
-          __init__.cpython-311.pyc
-          meta.yaml
-          scbf_utils.cpython-311.pyc
       visualization/
         __init__.py
         meta.yaml
         scbf_plots.py
-        __pycache__/
-          __init__.cpython-311.pyc
-          meta.yaml
-          scbf_plots.cpython-311.pyc
   resources/
     meta.yaml
     recursive_structure.png
@@ -2193,9 +2026,13 @@ dawn-field-theory/
     xai_scbf_roadmap.md
   todo/
     cip_domain_upgrade.md
+    kronos.md
     meta.yaml
+    ollama_self_hosted_runner.md
+    prometheus.md
     quantum_EM.md
     roadmap_draft.md
+    synergy_integration_plan.md
     todolist.md
     left_for_first_release/
       AIXPreprint_skeleton.md
@@ -2205,4 +2042,6 @@ dawn-field-theory/
   tools/
     converter.py
     generate_meta_yamls.py
+    generate_path.py
     meta.yaml
+    update_meta_yamls.py
