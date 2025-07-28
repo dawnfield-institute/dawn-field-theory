@@ -1,10 +1,16 @@
 # Symbolic Cognition and Collapse-Aware Interpretability in Neural Systems: A Formal Framework for Bifractal AI Diagnostics
 
+
 ## Abstract
 
-\[Drafted separately]
+[Drafted separately]
+
+All theoretical claims, simulations, and empirical results in this preprint will explicitly cite relevant papers and experiment logs from the #semantic_search and the open Dawn Field Theory codebase.
+
 
 ## 1. Introduction
+
+This preprint is part of a series that draws directly from the open Dawn Field Theory codebase. All key concepts, models, and results are cross-referenced with foundational documents, simulations, and prior preprints identified via #semantic_search.
 
 * Background on the limitations of post-hoc explainable AI
 * Motivation: interpretability via symbolic emergence rather than attribution
@@ -178,9 +184,11 @@
 
 * \[Will include foundational neuro, AI interpretability, and field computation literature]
 
+
 ## Appendix
 
 * Mathematical expansions (collapse operators, bifractal space definitions)
 * Model configuration and training details
 * Additional visualizations
-* Reproducibility artifacts: code, data, and experiment logs
+* Reproducibility artifacts: code, data, and experiment logs (all simulation and experiment references are cited from the #semantic_search and open codebase)
+* How to cite code, data, and experiments from the open repository and Zenodo DOI
