@@ -1,11 +1,13 @@
 schema_version: '2.0'
 directory_name: drafts
-description: Auto-generated metadata for drafts directory.
-description: >
-  Drafts and in-progress documents for DFT preprints, including theoretical development, experiment writeups, and supporting materials for Infodynamics and related concepts.
+description: 'Drafts and in-progress documents for DFT preprints, including theoretical
+  development, experiment writeups, and supporting materials for Infodynamics and
+  related concepts.
+
+  '
 semantic_scope:
-  - infodynamics-drafts
-  - dft-preprint-development
+- infodynamics-drafts
+- dft-preprint-development
 files:
 - DFT_Infodynamics_preprint_draft.md
 child_directories: []
