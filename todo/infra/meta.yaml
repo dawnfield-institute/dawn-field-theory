@@ -8,6 +8,7 @@ semantic_scope:
 - deployment
 - environment management
 files:
+- MCP_server_spec_architecturee_draft.md
 - auto_llm_infra.md
 - cip_domain_upgrade.md
 - kronos.md
