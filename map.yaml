@@ -2041,11 +2041,21 @@ dawn-field-theory/
       meta.yaml
       ollama_self_hosted_runner.md
     left_for_first_release/
-      AIXPreprint_skeleton.md
-      SECPreprint_skeleton.md
       entropy_minimized_architecture.md
       mathmatics_next_steps.md
       meta.yaml
+      preprints/
+        AIXPreprint_skeleton.md
+        CIPPreprint_skeleton.md
+        DFT_PreprintSeries_Prelude_and_Guide.md
+        RecursiveMathematicalPlasticity_EntropyAwareArchitecture_skeleton.md
+        ResonantSymbolicConvergencePreprint_skeleton.md
+        SECPreprint_skeleton.md
+        infodynamicsDFTPreprint_skeleton.md
+        meta.yaml
+        drafts/
+          DFT_Infodynamics_preprint_draft.md
+          meta.yaml
     sdk/
       fracton.md
       meta.yaml
