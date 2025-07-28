@@ -2,13 +2,19 @@
 
 ## Title: **Symbolic Entropy Collapse: Topological Dynamics, Recursive Harmonics, and Quantum Validation**
 
+
 ### **Abstract**
 
 This paper presents a unified framework for symbolic entropy collapse as a foundational mechanism in both emergent computation and quantum decoherence. We propose and validate a recursive-symbolic model that merges entropy field theory, Hodge-theoretic projections, and π-harmonic resonance to explain symbolic constraint convergence and collapse. Experimental validations include direct simulations of quantum decay curves, symbolic field geometries, superfluid collapse dynamics, and biological entropy analysis. Symbolic cognition models (TinyCIMM-Euler, SCBF) further support symbolic collapse as an applied substrate for mathematical and cognitive tasks.
 
+All theoretical claims, simulations, and empirical results in this preprint will explicitly cite relevant papers and experiment logs from the #semantic_search and the open Dawn Field Theory codebase.
+
 ---
 
+
 ### **1. Introduction**
+
+This preprint is part of a series that draws directly from the open Dawn Field Theory codebase. All key concepts, models, and results are cross-referenced with foundational documents, simulations, and prior preprints identified via #semantic_search.
 
 * Context: Collapse in symbolic systems, cognition, and quantum mechanics
 * Goal: Bridge recursive symbolic theory with experimental decoherence
@@ -123,10 +129,12 @@ This paper presents a unified framework for symbolic entropy collapse as a found
 
 ---
 
+
 ### **Appendices**
 
 * Full equations and collapse operators
-* Experimental batch logs and visualizations
+* Experimental batch logs and visualizations (all simulation and experiment references are cited from the #semantic_search and open codebase)
 * Symbolic logic trace comparisons
 * Model architecture summaries and SCBF/QBE metrics
 * Reproducibility artifacts: code, data, and experiment logs
+* How to cite code, data, and experiments from the open repository and Zenodo DOI
