@@ -1,13 +1,16 @@
 schema_version: '2.0'
 directory_name: preprints
-description: Auto-generated metadata for preprints directory.
-description: >
-  Contains all preprints, working papers, and theoretical manuscripts for the Dawn Field Theory (DFT) project, including Infodynamics, Symbolic Entropy Collapse, and Recursive Balance Fields. Linked to code, simulations, and reproducibility artifacts.
+description: 'Contains all preprints, working papers, and theoretical manuscripts
+  for the Dawn Field Theory (DFT) project, including Infodynamics, Symbolic Entropy
+  Collapse, and Recursive Balance Fields. Linked to code, simulations, and reproducibility
+  artifacts.
+
+  '
 semantic_scope:
-  - infodynamics
-  - symbolic-entropy-collapse
-  - recursive-balance-fields
-  - dawn-field-theory
+- infodynamics
+- symbolic-entropy-collapse
+- recursive-balance-fields
+- dawn-field-theory
 files:
 - AIXPreprint_skeleton.md
 - CIPPreprint_skeleton.md
