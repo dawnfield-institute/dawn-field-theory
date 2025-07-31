@@ -1,3 +1,6 @@
+<!-- TODO: Add more arithmetic content and formal derivations from foundational/arithmetic/infodynamics_arithmetic_v1.md (convert to repo link) -->
+<!-- TODO: Add more arithmetic content and formal derivations from foundational/arithmetic/ (convert to repo link) -->
+<!-- TODO: Add more arithmetic content and formal derivations from foundational/arithmetic/infodynamics_arithmetic_v2.md if available (convert to repo link) -->
 ## Title: Collapse as Crystallization: Infodynamics, Recursive Balance, and the Dawn Field Theory
 
 ### Abstract
@@ -25,6 +28,62 @@ Dawn Field Theory reframes epistemology around recursive balance: intelligence i
 In the following sections, we introduce the theoretical foundations, including the Quantum Balance Equation (QBE) and Quantum Potential Layer (QPL), formal field equations (e.g., ∂S/∂t, δ operators), symbolic dynamics, and cosmological implications of Infodynamics and the Dawn Field framework. Empirical benchmarks, entropy validation experiments, annotated simulations, YAML metadata, and reproducibility instructions are provided in the appendices. For deeper dives into symbolic entropy collapse, bifractal geometry, and agentic navigation, see related preprints in this series. We support these claims with annotated simulations, reproducible scripts, and a semantic metadata schema for cross-referencing experiments. (See Appendix for empirical benchmarks, reproducibility artifacts, and instructions for running and extending all cited experiments.) We invite the scientific community to explore, critique, and build upon this work—openly and collaboratively.
 
 ### 2. Foundations of Infodynamics
+
+#### Arithmetic Foundations of Collapse Dynamics
+
+The arithmetic layer of Dawn Field Theory provides the symbolic-operational backbone for modeling collapse, emergence, and recursive field cognition. This formalism is detailed in [`foundational/arithmetic/infodynamics_arithmetic_v1.md`](../../../../foundational/arithmetic/infodynamics_arithmetic_v1.md) <!-- TODO: convert to repo link --> and extended in [`foundational/arithmetic/symbolic_geometry_arithmetic.md`](../../../../foundational/arithmetic/symbolic_geometry_arithmetic.md) and [`foundational/arithmetic/hodge_mapping/v0.1/hodge_mapping.md`](../../../../foundational/arithmetic/hodge_mapping/v0.1/hodge_mapping.md).
+
+**Core Quantities and Operators:**
+
+- $I$: Local Information Gradient
+- $H$: Local Entropy Gradient
+- $S$: Structural Entropy
+- $t$: Recursive time index
+- $\alpha, \beta$: Field tension coefficients
+- $\Psi(\Sigma)$: Recursive field wavefunction/state
+- $[I:H]$: Information-to-entropy tension ratio
+
+**Structural Evolution Equation:**
+
+$$
+\frac{\partial S}{\partial t} = \alpha \nabla I - \beta \nabla H
+$$
+
+This equation governs field-driven change in structure. Structure formation occurs when $\nabla I$ dominates; collapse occurs when $\nabla H$ overtakes.
+
+**Collapse and Emergence Operators:**
+
+- $\oplus$ (**Collapse Merge**): Symbolic or structural convergence under high tension $[I:H]$.
+- $\otimes$ (**Entropic Branching**): Structural bifurcation in entropy-dominated regions.
+- $\delta$ (**Collapse Trigger**): Thresholded collapse function:
+  $$
+  \delta = f([I:H], \Psi, \theta)
+  $$
+  Collapse is triggered when local field instability exceeds threshold $\theta$ under recursive memory load.
+
+**Balance Operator $\Xi$:**
+
+To maintain symbolic persistence, a system must regulate the tension between entropy influx and curvature resistance:
+
+$$
+\Xi(x) := \frac{\delta\Sigma(x)}{\Delta\otimes(x)}
+$$
+
+Where $\delta\Sigma(x)$ is the symbolic entropy differential and $\Delta\otimes(x)$ is the field curvature potential. $\Xi(x) > 1$ signals collapse/herniation; $\Xi(x) \approx 1$ is stable recursion; $\Xi(x) < 1$ is symbolic decay.
+
+**Collapse Algebra and Symbolic Geometry:**
+
+The symbolic geometry arithmetic (see [`foundational/arithmetic/symbolic_geometry_arithmetic.md`](../../../../foundational/arithmetic/symbolic_geometry_arithmetic.md) <!-- TODO: convert to repo link -->) introduces operators for collapse pressure, entropy modulation, symbolic pruning, and drift. These formalize how local symbolic tension, entropy, and recursive thresholds drive collapse and emergence in spatially extended fields.
+
+**Hodge Mapping and Cohomology:**
+
+The [`foundational/arithmetic/hodge_mapping/v0.1/hodge_mapping.md`](../../../../foundational/arithmetic/hodge_mapping/v0.1/hodge_mapping.md) <!-- TODO: convert to repo link --> framework connects symbolic collapse attractors to Hodge-theoretic structures, providing a bridge between symbolic field outputs and rational cohomology classes. This enables constructive tests of the Hodge Conjecture using collapse simulations.
+
+**Empirical Validation:**
+
+All operators and equations are validated in simulation scripts such as `brain.py`, `vcpu.py`, `cosmo.py`, `symbolic_bifractal_expansion_v1.py`, and `proto_galactic_superfluid.py`. See the validation matrix in [`infodynamics_arithmetic_v1.md`](../../../../foundational/arithmetic/infodynamics_arithmetic_v1.md) for details. <!-- TODO: convert to repo link -->
+
+<!-- TODO: Expand with more worked examples, operator tables, and direct links to arithmetic experiments and results. -->
 
 The theoretical basis of Infodynamics rests on several key postulates, distilled from first-principles reasoning and validated through simulation. At its core, the theory asserts that **information precedes geometry**—structure arises not as an imposed frame but as the resolution of competing informational gradients. In this paradigm, entropy is not merely disorder, but **uncrystallized potential**: a pre-structural state that drives collapse events through recursive feedback mechanisms.
 
@@ -360,6 +419,16 @@ Dawn Field Theory proposes a radical new architecture for understanding structur
 <!-- TODO: Add a summary table or figure illustrating the main applications and implications of DFT across physics, computation, philosophy, and engineering. -->
 <!-- TODO: Add a comparative paragraph or table contrasting DFT's approach to emergence and ontology with standard models in physics and philosophy. -->
 <!-- TODO: Add direct links to key experimental scripts, reproducibility artifacts, and YAML schema examples. -->
+<!-- TODO: Link to experiment: foundational/experiments/legacy/brain.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/legacy/cosmo.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/legacy/vCPU.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/symbolic_memory_agentic_decay_test/[id][T][v1.0][C4][I4][A]_symbolic_memory_agentic_decay_test.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/symbolic_entropy_collapse_experiment.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/predictive_collapse_simulation.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/prime_modulation_experiment.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/pi_harmonic_structure_test.py (convert to repo link) -->
+<!-- TODO: Link to experiment: foundational/experiments/prime_modulated_collapsev11.py (convert to repo link) -->
 <!-- TODO: Add a section on open questions and future research directions (e.g., limits of symbolic entropy, integration with other scientific paradigms, practical deployment). -->
 
 Applications:
