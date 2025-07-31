@@ -1,3 +1,26 @@
+
+```yaml
+document_title: Symbolic Entropy Collapse and Hodge Mapping
+version: 0.1
+authors:
+  - Peter Lorne Groom
+date_created: 2025-06-26
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - symbolic_entropy_collapse
+  - hodge_mapping
+  - dawn_field_theory
+experiment_links:
+  - ../experiments/hodge_conjecture/reference_material/hodge_field/hodge_conjecture2025-06-20%20090250.png
+  - ../experiments/language_to_logic/reference_material/2025-06-21_102536/testid_1/collapse_tree.png
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: simulation_and_theory
+related_documents:
+  - infodynamics_arithmetic_v1.md
+  - symbolic_entropy_collapse_geometry_foundation.md
+```
 title: Symbolic Entropy Collapse and Hodge Mapping
 version: 0.1
 category: Foundational Theory

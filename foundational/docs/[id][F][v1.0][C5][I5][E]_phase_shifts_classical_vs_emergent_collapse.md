@@ -1,4 +1,24 @@
 # Phase Shifts in Informational Fields: Classical vs Emergent Collapse
+```yaml
+document_title: Phase Shifts in Informational Fields: Classical vs Emergent Collapse
+version: 1.0
+authors:
+  - Peter Lorne Groom
+date_created: 2025-07-31
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - phase_shifts
+  - entropy_collapse
+  - symbolic_vs_classical
+experiment_links: []
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: simulation_and_theory
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
 
 ## Abstract
 

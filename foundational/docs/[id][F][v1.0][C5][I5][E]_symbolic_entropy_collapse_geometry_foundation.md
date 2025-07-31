@@ -1,3 +1,28 @@
+# CIP Metadata
+```yaml
+document_title: Toward a Geometry of Collapse: Symbolic Entropy as a New Foundation for Physics
+version: 1.0
+authors:
+  - Peter Lorne Groom
+date_created: 2025-07-31
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - symbolic_entropy
+  - collapse_geometry
+  - dawn_field_theory
+experiment_links:
+  - ../experiments/symbolic_entropy_collapse/results.md
+  - ../experiments/symbolic_bifractal/results.md
+  - ../experiments/symbolic_superfluid_collapse_pi/results.md
+  - ../experiments/landauer_erasure_field_cost_map/results.md
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: simulation_and_theory
+related_documents:
+  - symbolic_collapse_recursive_field_pruning.md
+  - dawn_field_theory.md
+```
 # Toward a Geometry of Collapse: Symbolic Entropy as a New Foundation for Physics
 
 ## Abstract

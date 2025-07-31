@@ -1,3 +1,26 @@
+# CIP Metadata
+```yaml
+document_title: Symbolic Collapse via Recursive Field Pruning
+version: 1.0
+authors:
+  - Peter Lorne Groom
+date_created: 2025-07-31
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - symbolic_collapse
+  - recursive_field
+  - entropy_regulation
+experiment_links:
+  - ../experiments/symbolic_fractal_pruning/results.md
+  - ../experiments/symbolic_entropy_collapse/results.md
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: simulation_and_theory
+related_documents:
+  - symbolic_entropy_collapse_geometry_foundation.md
+  - symbolic_fractal_pruning
+```
 # Symbolic Collapse via Recursive Field Pruning
 
 ## Abstract
