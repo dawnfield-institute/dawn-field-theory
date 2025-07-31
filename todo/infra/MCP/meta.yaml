@@ -1,0 +1,17 @@
+schema_version: '2.0'
+directory_name: MCP
+description: >
+  Metadata for the MCP (Multi-Repository Copilot Protocol) infrastructure, covering
+  multi-repo orchestration, auditability, agent integration, and knowledge ingestion tools.
+semantic_scope:
+  - MCP
+  - multi-repo
+  - audit
+  - agent-integration
+  - knowledge-ingestion
+  - orchestration
+files:
+- MCP_server_spec_architecturee_draft.md
+- auto_llm_infra.md
+- mcp_server_detailed_design.md
+child_directories: []
