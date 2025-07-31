@@ -1,3 +1,27 @@
+
+```yaml
+document_title: Landauer Erasure Cost, Superfluidity, and Viscosity in Symbolic Informational Fields
+version: 1.0
+authors:
+  - Peter Lorne Groom
+date_created: 2025-07-31
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - landauer_principle
+  - symbolic_fields
+  - superfluidity
+  - viscosity
+experiment_links:
+  - ../experiments/landauer_erasure_field_cost_map/results.md
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theory_and_experiment
+related_documents:
+  - dawn_field_theory.md
+  - declaration_infodynamics.md
+```
+
 # Landauer Erasure Cost, Superfluidity, and Viscosity in Symbolic Informational Fields
 
 ## Abstract

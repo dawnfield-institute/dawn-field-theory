@@ -1,3 +1,30 @@
+
+```yaml
+document_title: The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository
+version: 0.1
+authors:
+  - Peter Lorne Groom
+date_created: 2025-07-31
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - epistemic_collapse
+  - recursive_repository
+  - scrutiny_engine
+experiment_links:
+  - ../experiments/landauer_erasure_field_cost_map/results.md
+  - ../experiments/entropy_information_polarity_field/black_white_hole_polarity/experiment_protocol.md
+  - ../experiments/entropy_information_polarity_field/black_white_hole_polarity/results.md
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: theory_and_experiment
+related_documents:
+  - cip_domain_upgrade.md
+  - scrutiny_engine
+  - entropy_minimized_architecture.md
+  - CIPPreprint_skeleton.md
+```
+
 **Title:** The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository
 
 **Abstract:**

@@ -1,3 +1,26 @@
+# CIP Metadata
+```yaml
+document_title: Toward a Theory of Symbolic Collapse via Recursive Calculus and Entropy Regulation
+version: 0.9
+authors:
+  - Peter Lorne Groom
+date_created: 2025-07-31
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - symbolic_collapse
+  - recursive_calculus
+  - entropy_regulation
+experiment_links:
+  - ../experiments/symbolic_superfluid_collapse_pi/results.md
+  - ../experiments/symbolic_fractal_pruning/results.md
+license: Copyleft (custom Dawn license)
+document_status: draft
+data_provenance: simulation_and_theory
+related_documents:
+  - symbolic_entropy_collapse_geometry_foundation.md
+  - symbolic_collapse_recursive_field_pruning.md
+```
 # Toward a Theory of Symbolic Collapse via Recursive Calculus and Entropy Regulation
 
 ## Abstract
