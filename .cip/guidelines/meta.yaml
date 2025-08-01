@@ -1,0 +1,38 @@
+schema_version: 2.0
+directory_name: guidelines
+description: >
+  Custom CIP (Cognition Index Protocol) guidelines directory containing specialized guidance documents for AI agents, research protocols, and methodology standards. This directory serves as a repository for evolving best practices, ethical guidelines, and operational protocols that inform how AI systems should approach research, writing, and collaboration within the Dawn Field Theory ecosystem.
+semantic_scope:
+  - CIP guidelines
+  - AI agent protocols
+  - research methodology
+  - writing standards
+  - humility principles
+  - scientific positioning
+  - collaboration frameworks
+  - ethical guidelines
+purpose: >
+  Maintains versioned guidelines that ensure consistent, humble, and scientifically rigorous approaches across all Dawn Field Theory research activities. These guidelines inform both human researchers and AI agents on appropriate scientific positioning, collaborative methodologies, and ethical considerations for theoretical physics research.
+files:
+  - GenerationHumilityGuidelines.md
+guideline_types:
+  humility_frameworks:
+    - GenerationHumilityGuidelines.md
+  research_protocols: []
+  collaboration_standards: []
+  ethical_frameworks: []
+child_directories: []
+usage_notes: >
+  Guidelines in this directory should be referenced by AI agents when:
+  1. Generating scientific content or preprints
+  2. Positioning research claims and findings
+  3. Collaborating with human researchers
+  4. Engaging with the broader scientific community
+  5. Making decisions about research methodology and approach
+update_policy: >
+  Guidelines should be versioned and updated based on:
+  - Community feedback and collaboration experiences
+  - Evolving scientific standards and best practices
+  - Lessons learned from research publication processes
+  - Ethical considerations and responsibility frameworks
+  - Cross-disciplinary collaboration requirements
