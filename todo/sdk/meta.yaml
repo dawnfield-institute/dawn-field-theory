@@ -9,6 +9,7 @@ semantic_scope:
 - core modules
 - integration
 files:
+- field_decomp.md
 - fracton.md
 - prometheus.md
 - synergy_integration_plan.md
