@@ -9,5 +9,8 @@ semantic_scope:
 - infodynamics-drafts
 - dft-preprint-development
 files:
+- AIXPreprint_draft.md
 - DFT_Infodynamics_preprint_draft.md
+- RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
+- SECPreprint_draft.md
 child_directories: []
