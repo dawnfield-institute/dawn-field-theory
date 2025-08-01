@@ -138,6 +138,7 @@ dawn-field-theory/
           meta.yaml
     docs/
       README.md
+      [id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md
       [id][F][v1.0][C5][I5][E]_landauer_erasure_cost_superfluidity_viscosity.md
       [id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md
       [id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md
@@ -1399,6 +1400,10 @@ dawn-field-theory/
         THE PHYSICS UNDERLYING CIMM.docx
         The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
         meta.yaml
+  mcp/
+    README.md
+    meta.yaml
+    server.py
   models/
     README.md
     meta.yaml
@@ -2034,13 +2039,16 @@ dawn-field-theory/
       historical_collapse.md
       meta.yaml
     infra/
-      MCP_server_spec_architecturee_draft.md
-      auto_llm_infra.md
+      CIP2.0MultiRepo.md
       cip_domain_upgrade.md
       kronos.md
-      mcp_server_detailed_design.md
       meta.yaml
       ollama_self_hosted_runner.md
+      MCP/
+        MCP_server_spec_architecturee_draft.md
+        auto_llm_infra.md
+        mcp_server_detailed_design.md
+        meta.yaml
     left_for_first_release/
       entropy_minimized_architecture.md
       mathmatics_next_steps.md
@@ -2055,9 +2063,13 @@ dawn-field-theory/
         infodynamicsDFTPreprint_skeleton.md
         meta.yaml
         drafts/
+          AIXPreprint_draft.md
           DFT_Infodynamics_preprint_draft.md
+          RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
+          SECPreprint_draft.md
           meta.yaml
     sdk/
+      field_decomp.md
       fracton.md
       meta.yaml
       prometheus.md
