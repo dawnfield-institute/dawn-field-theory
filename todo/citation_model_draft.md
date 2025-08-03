@@ -180,6 +180,69 @@ Use schema validation and linting to prevent malformed files.
 
 ---
 
+Scalability Contingency: Centralized Citation Repository
+
+As the Dawn Field ecosystem scales beyond a single repository, the per-repository citation model may become administratively complex. A potential solution is migrating to a centralized citation repository that manages attribution across all Dawn Field Institute repositories.
+
+Architecture Overview:
+
+A dedicated repository (e.g., dawn-field-citations) would contain:
+
+```
+dawn-field-citations/
+├── repositories/
+│   ├── dawn-field-theory/
+│   │   ├── PR-42-entropy-simulator.yaml
+│   │   └── PR-51-bifractal-metrics.yaml
+│   ├── quantum-substrate/
+│   └── consciousness-framework/
+├── contributors/
+│   ├── jane-doe.yaml
+│   └── peter-groom.yaml
+├── indices/
+│   ├── by-repository.json
+│   ├── by-contributor.json
+│   └── by-topic.json
+└── tools/
+    ├── citation-validator.py
+    └── cross-reference-builder.py
+```
+
+Schema Example:
+
+```yaml
+repository_url: "https://github.com/dawnfield-institute/dawn-field-theory"
+repository_name: "dawn-field-theory"
+citation_type: "pull_request"
+reference_id: "PR-42"
+title: "Entropy Collapse Simulator V2"
+authors:
+  - name: "Jane Doe"
+    orcid: "0000-0002-1825-0097"
+    role: "lead_developer"
+doi: "10.5281/zenodo.1234567"
+date: "2025-08-01"
+related_paths:
+  - "entropy/simulator-v2/"
+dependencies:
+  - repository: "quantum-substrate"
+    citation_id: "PR-15"
+```
+
+Benefits:
+
+- Cross-repository attribution for contributors working across multiple projects
+- Unified dependency mapping and research graph construction
+- Centralized DOI management and Zenodo integration
+- Single citation schema and review process
+- Enhanced administrative efficiency at ecosystem scale
+- Citation-as-a-service model keeping individual repositories clean and focused
+
+This approach would be triggered when citation management overhead exceeds the benefits of per-repository systems, likely around 5-10 active repositories with regular contributions.
+
+
+---
+
 Long-Term Vision
 
 This citation schema may form the basis for a more general-purpose audit layer in CIP — enabling symbolic provenance, DOI-backed module lineage, and structured epistemic recursion over all computational work.
