@@ -12,6 +12,7 @@ semantic_scope:
 - planning
 - project management
 files:
+- citation_model_draft.md
 - roadmap_draft.md
 - todolist.md
 child_directories:
