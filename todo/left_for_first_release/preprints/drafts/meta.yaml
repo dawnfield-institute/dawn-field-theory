@@ -15,4 +15,5 @@ files:
 - RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
 - ResonantSymbolicConvergencePreprint_draft.md
 - SECPreprint_draft.md
-child_directories: []
+child_directories:
+- suggestions
