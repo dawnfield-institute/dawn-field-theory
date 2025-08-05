@@ -2041,6 +2041,7 @@ dawn-field-theory/
       meta.yaml
     infra/
       CIP2.0MultiRepo.md
+      brainstem.md
       cip_domain_upgrade.md
       kronos.md
       meta.yaml
@@ -2071,6 +2072,8 @@ dawn-field-theory/
           ResonantSymbolicConvergencePreprint_draft.md
           SECPreprint_draft.md
           meta.yaml
+          suggestions/
+            comprehensive_review_checklist.md
     sdk/
       field_decomp.md
       fracton.md
