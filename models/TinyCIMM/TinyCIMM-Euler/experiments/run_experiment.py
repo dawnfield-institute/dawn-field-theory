@@ -128,7 +128,7 @@ def create_sequences(deltas, sequence_length=4, prediction_horizon=1):
     """
     Create sequences for mathematical pattern prediction
     
-    Converts a list of values into input-output sequences for training.
+    Converts a list of values into input-output sequences for online adaptation.
     This is crucial for teaching TinyCIMM-Euler to recognize mathematical patterns.
     
     Args:
@@ -137,7 +137,7 @@ def create_sequences(deltas, sequence_length=4, prediction_horizon=1):
         prediction_horizon (int): Number of future values to predict
         
     Returns:
-        tuple: (X, y) tensors for training
+        tuple: (X, y) tensors for online adaptation
     """
     debug_print(f"Creating sequences: length={sequence_length}, horizon={prediction_horizon}")
     
@@ -172,7 +172,7 @@ def get_signal(signal_type, steps, seed=42):
         seed (int): Random seed for reproducibility
         
     Returns:
-        tuple: (x, y) tensors for training
+        tuple: (x, y) tensors for online adaptation
     """
     debug_print(f"Generating signal: {signal_type}, steps: {steps}, seed: {seed}")
     torch.manual_seed(seed)  # Set seed for reproducibility
@@ -210,7 +210,7 @@ def get_signal(signal_type, steps, seed=42):
         
         info_print(f"Prime deltas normalized: mean={mean_delta:.2f}, std={std_delta:.2f}")
         info_print(f"Using 8-step sequences for better pattern capture")
-        debug_print(f"Created {len(x_seq)} training sequences")
+        debug_print(f"Created {len(x_seq)} adaptation sequences")
         
         return torch.tensor(x_seq, dtype=torch.float32), torch.tensor(y_seq, dtype=torch.float32).squeeze()
     
@@ -635,7 +635,7 @@ def run_experiment(model_cls, signal="prime_deltas", steps=10000, seed=42, batch
     Run comprehensive online mathematical reasoning experiment with TinyCIMM-Euler
     
     This is the main experiment runner that orchestrates the complete experiment
-    pipeline: data generation, model initialization, training, and evaluation.
+    pipeline: data generation, model initialization, online adaptation, and evaluation.
     
     The experiment implements the Dawn Field Theory approach with:
     - Field-aware adaptation signals instead of traditional loss
@@ -646,9 +646,9 @@ def run_experiment(model_cls, signal="prime_deltas", steps=10000, seed=42, batch
     Args:
         model_cls: TinyCIMM-Euler model class
         signal (str): Type of mathematical signal to learn
-        steps (int): Number of training steps
+        steps (int): Number of adaptation steps
         seed (int): Random seed for reproducibility
-        batch_size (int): Batch size for training (adaptive)
+        batch_size (int): Batch size for online updates (adaptive)
         experiment_type (str): Type of experiment ("standard", "long_term", etc.)
         **kwargs: Additional model configuration parameters
         
@@ -744,9 +744,9 @@ def run_experiment(model_cls, signal="prime_deltas", steps=10000, seed=42, batch
     prev_weights = None
     signal_specific_adaptations = 0
     
-    debug_print(f"Starting training loop with initial LR: {initial_lr}")
+    debug_print(f"Starting online adaptation loop with initial LR: {initial_lr}")
     
-    # Main training loop with individual step processing
+    # Main online adaptation loop with individual step processing
     for batch_idx in range(num_batches):
         # Calculate batch boundaries and prepare data
         batch_start = batch_idx * effective_batch_size
@@ -965,7 +965,7 @@ def run_experiment(model_cls, signal="prime_deltas", steps=10000, seed=42, batch
     
     # Save comprehensive experiment logs
     save_logs(logs, signal, run_subdir, experiment_type)
-    info_print(f"Training completed! Saved {len(logs)} log entries.")
+    info_print(f"Online adaptation completed! Saved {len(logs)} log entries.")
     debug_print(f"Final model stats: neurons={model.hidden_dim}, total_adaptations={signal_specific_adaptations}")
     
     # Begin comprehensive visualization and analysis
@@ -1152,7 +1152,7 @@ def run_experiment(model_cls, signal="prime_deltas", steps=10000, seed=42, batch
         plt.plot(range(len(math_losses)), math_losses, label='Loss Evolution', color='red', alpha=0.8)
         plt.xlabel('Iteration')
         plt.ylabel('Loss')
-        plt.title(f'Training Loss Evolution (n={len(math_losses)})')
+        plt.title(f'Adaptation Loss Evolution (n={len(math_losses)})')
         plt.legend()
     else:
         plt.text(0.5, 0.5, 'No loss data available', horizontalalignment='center', verticalalignment='center')
@@ -1190,15 +1190,15 @@ def run_experiment(model_cls, signal="prime_deltas", steps=10000, seed=42, batch
     
     plt.subplot(1, 3, 2)
     if len(math_losses) > 0:
-        plt.plot(range(len(math_losses)), math_losses, label='Field Adaptation Signal', color='red', alpha=0.8)
+        plt.plot(range(len(math_losses)), math_losses, label='Adaptation Loss', color='red', alpha=0.8)
         plt.xlabel('Iteration')
-        plt.ylabel('Adaptation Signal')
-        plt.title(f'Field-Aware Adaptation Signal Evolution (n={len(math_losses)})')
+        plt.ylabel('Loss')
+        plt.title(f'Adaptation Loss Evolution (n={len(math_losses)})')
         plt.legend()
-        debug_print(f"Plotted {len(math_losses)} field adaptation signal points")
+        debug_print(f"Plotted {len(math_losses)} adaptation loss points")
     else:
-        plt.text(0.5, 0.5, 'No adaptation signal data available', horizontalalignment='center', verticalalignment='center')
-        debug_print("No field adaptation signal data available for plotting")
+        plt.text(0.5, 0.5, 'No adaptation loss data available', horizontalalignment='center', verticalalignment='center')
+        debug_print("No adaptation loss data available for plotting")
     
     plt.subplot(1, 3, 3)
     if math_fractals:
@@ -1474,8 +1474,7 @@ def run_all_mathematical_experiments():
     """
     Run comprehensive long-term mathematical reasoning experiments
     
-    This function executes the full suite of mathematical reasoning experiments
-    across all signal types, implementing CIMM-style long-term learning with
+    This function executes the full suite of mathematical reasoning experiments across all signal types, implementing CIMM-style long-term online learning with
     10,000 steps per experiment for deep pattern understanding.
     """
     info_print("Starting comprehensive mathematical reasoning experiment suite")
@@ -1525,7 +1524,7 @@ def run_all_mathematical_experiments():
         info_print(f"\n=== Running Long-term Mathematical Experiment: {test_name} ===")
         challenge_level = 'Extreme' if test_name == 'prime_deltas' else 'Very High' if 'sequence' in test_name else 'High'
         info_print(f"Expected challenge level: {challenge_level}")
-        info_print(f"Training for 10,000 steps (CIMM-style long-term learning)...")
+        info_print(f"Adapting for 10,000 steps (CIMM-style long-term online learning)...")
         debug_print(f"Configuration: {model_kwargs}")
         
         try:
@@ -1571,7 +1570,7 @@ if __name__ == "__main__":
     info_print("TinyCIMM-Euler: Long-term Mathematical Reasoning (CIMM-Style)")
     info_print("=" * 60)
     info_print("\nFocusing on long-term online learning for mathematical patterns...")
-    info_print("No pre-training - pure online learning like CIMM over 10,000 steps.\n")
+    info_print("No pre-training - pure online adaptation like CIMM over 10,000 steps.\n")
     debug_print(f"Debug mode is {'ENABLED' if DEBUG_MODE else 'DISABLED'}")
     
     # Ask user for test type

@@ -4,6 +4,8 @@
 
 This preprint series presents the theoretical, empirical, and architectural foundations of the Dawn Field Theory (DFT) and its applications in adaptive intelligence, epistemic protocols, and agentic systems. Each preprint addresses a distinct pillar of the DFT ecosystem, while together they form a cohesive vision for the future of computation, cognition, and open science.
 
+> Series-wide note: Core models (e.g., TinyCIMM) use no offline training. Adaptation occurs online during prediction (inference-time), guided by collapse-aware metrics.
+
 ---
 
 ## Series Structure and Thematic Progression

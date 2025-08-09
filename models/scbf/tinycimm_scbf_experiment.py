@@ -438,7 +438,7 @@ def run_tinycimm_scbf_experiment(signal="prime_deltas", steps=1000, scbf_interva
         y_batch = y[step:step+1] if step < len(y) else y[-1:]
         
         # Forward pass - live adaptation inference
-        model.train()
+        model.train()  # enable gradients for online adaptation (no offline training)
         output = model(x_batch)
         
         # Compute MSE loss for adaptation feedback (like original TinyCIMM-Euler)

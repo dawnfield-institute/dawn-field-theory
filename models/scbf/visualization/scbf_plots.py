@@ -1,6 +1,6 @@
 """
 SCBF Visualization Module
-===================        print("No live adaptation data found")
+===================        print("No adaptation data found")
         return
     
     fig, axes = plt.subplots(2, 3, figsize=(18, 12))

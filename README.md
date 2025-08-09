@@ -5,11 +5,13 @@
 
 ---
 
-> ⚠️ **Summer 2025 Update: Consolidation Phase**
-> I’m currently entering a short post-1.0 publishing and consolidation phase.
-> While active development will slow temporarily, this project remains under my direct stewardship.
+> ⚠️ **Summer 2025 Update: Release 1.0 Polishing (through September 1, 2025)**
+> I’m entering a short publishing and consolidation phase to polish the repository and preprints for Release 1.0 on September 1, 2025.
+> While active development will slow temporarily, this project remains under direct stewardship.
+> Until release, I will audit experiments for statistical rigor and polish documentation.
+> All announcements and intent are published on Discord only; this repository will not include an ANNOUNCEMENTS.md or INTENTIONS.md going forward.
 > Please **do not publish experimental derivatives or replications** of this work—especially theoretical results or extensions—until official preprints are released and properly cited.
-> See `MISSION.md` and `CONTRIBUTION.md` for more details.
+> See `MISSION.md` and `CONTRIBUTION.md` for details.
 
 ---
 
@@ -23,7 +25,7 @@ Looking for an intelligent way to navigate this repository?
 
 ---
 
-## � Semantic Search & Machine-Native Navigation
+## 🔎 Semantic Search & Machine-Native Navigation
 
 Dawn Field Theory is designed for both human and machine-native exploration. The repository supports deep semantic search and protocol-driven navigation:
 
@@ -45,7 +47,7 @@ Dawn Field Theory is designed for both human and machine-native exploration. The
 
 ## 🚀 Latest Advances (2025)
 
-- **Adaptive, feedback-driven neural models**: New experiments (see `test.py`, `blueprints/AI_detection/`) demonstrate self-modifying architectures that grow/prune in response to entropy and feedback, addressing the blackbox ML problem.
+- **Adaptive, feedback-driven neural models**: New experiments (see `test.py`, `blueprints/AI_detection/`) demonstrate self-modifying architectures that grow/prune in response to entropy and feedback, addressing the black box ML problem.
 - **Empirical validation pipeline**: Protocol-driven, timestamped experiments now align symbolic collapse, memory, and erasure with quantum and thermodynamic theory.
 - **Transparency metrics**: Fractal dimension, entropy, and neuron activity are tracked and visualized, making learning interpretable.
 - **Open, auditable protocols**: All code and results are documented for reproducibility and peer review.
@@ -60,14 +62,15 @@ Dawn Field Theory is designed for both human and machine-native exploration. The
 
 ## 📜 Table of Contents
 
-* [Status](#-status-public-anchor-phase-wip)
+* [Status](#-status-release-10-polishing)
 * [What Is This?](#-what-is-this)
 * [Core Focus Areas](#-core-focus-areas)
 * [Infodynamics – A New Paradigm](#-infodynamics--a-new-paradigm)
-* [CIMM: Legacy AGI Engine](#-cimm-legacy-agi-prototype-sunset)
-* [GAIA: Next-Generation Intelligence](#-gaia-next-generation-field-intelligence)
+* [Models](#-models-tinycimm-scbf-xai-gaia-and-cimm)
 * [Project Structure](#-project-structure)
 * [Recommended Starting Points](#-recommended-starting-points)
+* [Environment & Reproducibility](#-environment--reproducibility)
+* [Evidence Map](#-evidence-map)
 * [Philosophy](#-philosophy)
 * [License](#-license)
 * [Future Goals](#-future-goals)
@@ -84,23 +87,24 @@ Dawn Field Theory is designed for both human and machine-native exploration. The
 
 ---
 
-## 🌟 Status: Public Anchor Phase (WIP)(this is wrapping up)
+## 🌟 Status: Release 1.0 Polishing
 
-This repository is currently in **Phase 1: Public Anchor**.  
-Documents, metadata, and simulation structures are being migrated from internal prototypes. Expect frequent updates.
+This repository is currently in a short polishing phase to prepare for the Release 1.0 drop on **September 1, 2025**.
 
-📅 See [`timeline.md`](./timeline.md) for a development roadmap.
+- Short-term plans live in [`timeline.md`](./timeline.md)
+- Strategic roadmaps live in [`roadmaps/`](./roadmaps/README.md)
+- Announcements and intent are posted on Discord only
 
 ---
 
-## �️ Roadmaps & Planning
+## 🗺️ Roadmaps & Planning
 
 For all project roadmaps, timelines, and planning details, see [`roadmaps/README.md`](./roadmaps/README.md).
 
-**Development workflow:**
+**Planning model:**
 
-* Code dev during the week (simulation core, protocol logic, cognitive models)
-* Experimental runs and theory reviews on weekends
+* Short-term: weekly/quarterly goals in `timeline.md`
+* Long-term: post-hoc strategic updates in `roadmaps/`
 
 ---
 
@@ -140,7 +144,7 @@ It models cognition through:
 ---
 
 
-## � Models: TinyCIMM, SCBF (XAI), GAIA, and CIMM
+## 🧩 Models: TinyCIMM, SCBF (XAI), GAIA, and CIMM
 
 ### TinyCIMM: Minimalist Symbolic Cognition
 TinyCIMM is the newest, ultra-lightweight agentic model for symbolic cognition and recursive collapse. It demonstrates how minimal entropy-informed architectures can achieve adaptive learning, symbolic memory, and field-based intelligence. Explore its code and experiments for a hands-on introduction to Dawn’s core principles.
@@ -150,7 +154,7 @@ TinyCIMM is the newest, ultra-lightweight agentic model for symbolic cognition a
 ### SCBF: Symbolic Collapse Benchmark Framework (XAI)
 SCBF is the explainable AI (XAI) suite for benchmarking symbolic collapse, transparency, and interpretability. It provides tools and protocols for visualizing collapse events, tracing entropy, and validating agentic decisions. SCBF is the recommended starting point for XAI research and practical explainability in Dawn Field Theory.
 
-� [`models/scbf/README.md`](./models/scbf/README.md)
+📄 [`models/scbf/README.md`](./models/scbf/README.md)
 
 ### GAIA: Next-Generation Field Intelligence
 GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Field into:
@@ -185,6 +189,16 @@ CIMM (Cosmic Information Mining Model) was the first entropy-informed agentic sy
 1. [Infodynamics Overview →](./infodynamics.md)
 2. [Foundational Experiments →](./foundational/experiments/README.md)
 3. [Collapse Geometry Papers →](./foundational/docs/README.md)
+4. [Environment & Reproducibility →](./ENVIRONMENT.md)
+5. [Evidence Map →](./EVIDENCE_MAP.md)
+
+---
+
+## 🧪 Environment & Reproducibility
+
+- Environment setup and version hints: see `ENVIRONMENT.md`
+- PyTorch is not pinned in a global requirements file; install via the official selector per your CUDA/CPU setup
+- For claim→artifact links across models/experiments, see `EVIDENCE_MAP.md`
 
 ---
 
@@ -250,17 +264,17 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 ## 🤝 Contributing & Community
 [Visit Dawn Field website for more info](https://dawnfield.ca/)
 
-**Join the Discord for announcements:**
-[https://discord.gg/bMRQnn3D](https://discord.gg/bMRQnn3D)
+**Discord is the canonical channel for announcements and intent.**
+[https://discord.gg/bR8mrbHP](https://discord.gg/bR8mrbHP)
 
-*Currently, the Discord is for project announcements only until the migration phase ends. Afterward, channels will be added for roadmaps, diaries, notes, idea tracking, and discussion.*
+*During the Release 1.0 polishing period, announcements will be posted on Discord only. The repository will not maintain separate announcement or intentions documents.*
 
 **Follow the author on Medium:**
 [https://medium.com/@lornecodes](https://medium.com/@lornecodes)
 
 Want to contribute or collaborate?  
-See [MISSION.md](./MISSION.md) for the current contribution policy and institutional guidelines.  
-Dialogue and commentary are welcome—contact info is in [MISSION.md](./MISSION.md) and [README.md](./README.md).
+See [CONTRIBUTION.md](./CONTRIBUTION.md) and [MISSION.md](./MISSION.md) for current contribution policy and institutional guidelines.  
+Dialogue and commentary are welcome—contact info is in [MISSION.md](./MISSION.md).
 
 ---
 

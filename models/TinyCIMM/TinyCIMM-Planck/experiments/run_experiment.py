@@ -108,7 +108,7 @@ def run_experiment(model_cls, signal="chaotic_sine", steps=200, seed=42, **kwarg
         loss = compute_loss(yhat, y)
         entropy = compute_entropy(model)
         entropy_monitor.update(yhat)
-        # --- TRAINING STEP: update weights ---
+        # --- ONLINE ADAPTATION STEP: update weights ---
         model.optimizer.zero_grad()
         loss.backward()
         model.optimizer.step()
