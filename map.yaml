@@ -1,6 +1,8 @@
 dawn-field-theory/
   .gitignore
   CONTRIBUTION.md
+  ENVIRONMENT.md
+  EVIDENCE_MAP.md
   LICENSE
   LICENSE_APPENDIX.md
   MISSION.md
@@ -2027,9 +2029,11 @@ dawn-field-theory/
     cip_protocol_roadmap.md
     core_project_roadmap.md
     gaia_roadmap.md
+    general_experiments_roadmap.md
     math_arithmetic_roadmap.md
     meta.yaml
     publication_framework_roadmap.md
+    symbolic_entropy_roadmap.md
     xai_scbf_roadmap.md
   todo/
     citation_model_draft.md
@@ -2068,12 +2072,14 @@ dawn-field-theory/
           AIXPreprint_draft.md
           CIPPreprint_draft.md
           DFT_Infodynamics_preprint_draft.md
+          RELEASE_CHECKLIST.md
           RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
           ResonantSymbolicConvergencePreprint_draft.md
           SECPreprint_draft.md
           meta.yaml
-          suggestions/
-            comprehensive_review_checklist.md
+        resources/
+          CIM.docx
+          CIM.md
     sdk/
       field_decomp.md
       fracton.md
