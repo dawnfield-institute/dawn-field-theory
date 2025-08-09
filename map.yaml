@@ -1876,6 +1876,9 @@ dawn-field-theory/
           meta.yaml
           run_experiment.py
           status.md
+    docs/
+      cimm_general_architecture.md
+      meta.yaml
     scbf/
       README.md
       __init__.py
