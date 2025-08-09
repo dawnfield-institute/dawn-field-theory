@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: docs
+description: 'Documentation for the CIMM architecture (distinct from GAIA), capturing the
+  training-optional, dynamic, collapse/resonance/entropy design and its abstraction
+  into TinyCIMM variants.'
+semantic_scope:
+- models
+- CIMM
+- docs
+- architecture
+- TinyCIMM
+files:
+- cimm_general_architecture.md
+child_directories: []
