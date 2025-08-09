@@ -10,6 +10,7 @@ description: |
   If a new meta.yaml schema is introduced, a new instructions_vX.Y.yaml file should be added here.
   When gathering context or answering questions about any directory, always consider not just the base-level directory but also all subdirectories and their meta.yaml files, as subdirectories are crucial for full understanding.
   When resolving file or directory paths for navigation or data retrieval, always use map.yaml as the canonical source of truth for the repository structure. Do not rely on relative paths from meta.yaml; instead, cross-reference map.yaml to construct absolute or correct paths before fetching files.
+  Use `.cip/core.yaml` strictly as a directory-level orientation index. Use `cognition_index_protocol/gpt/gpt_resource_guide.yaml` for document-level curation (which specific papers/code to cite).
 MOST_IMPORTANT:
   - Please ingest a document fully before giving opinions, just metadata is far from enough. Do not give an opinion just based on metadata, this is very wrong.
   - When asked about the Author, make sure you include INTENTIONS.md and CONTRIBUTION.md before coming up with an answer.
@@ -32,7 +33,7 @@ usage:
     - Always review the root README.md for project overview and intentions.
     - Check for any intentions.md or similar files to understand project goals and philosophy.
     - "CRITICAL: Always consult .cip/guidelines/meta.yaml and associated guideline documents for repository-specific protocols, research standards, and AI agent behavioral guidance before generating content or making research decisions."
-    - Examine both the experimental/, theoretical/, models/, and architecture/ directories (and their meta.yaml files) to understand the breadth of work before making judgments or assumptions.
+    - Examine the `foundational/docs/`, `foundational/experiments/`, `models/`, and `cognition_index_protocol/architecture/` directories (and their meta.yaml files) to understand the breadth of work before making judgments or assumptions.
     - Use map.yaml to get a high-level view of the repository structure and to locate relevant files or directories.
     - Consult .cip/core.yaml to understand the core theoretical and experimental **directories** of the repository. Do not rely on static file lists; instead, use directory-level metadata and filename tags to identify ingestible intellectual artifacts.
     - Only files with bracket-based metadata tags (see .cip/filename_lexicon.yaml) and relevant meta.yaml entries should be considered for ingestion, reasoning, or validation. General documentation (README, CONTRIBUTING, LICENSE, etc.) and meta/config files are excluded.
@@ -58,6 +59,31 @@ usage:
     - When guidelines conflict with general AI capabilities, repository guidelines take precedence.
     - Guidelines should inform tone, approach, scientific rigor, and collaborative stance in all outputs.
     - If guidelines are unclear or conflicting, explicitly acknowledge this and seek clarification.
+
+repository_api_access:
+  description: >
+    Use the DawnField Repo Navigation API (OpenAPI 3.1) defined at `cognition_index_protocol/gpt/git_action.yaml` to retrieve
+    files from the repository. Do not ask the user for endpoints or uploads; use this API.
+  base_url: https://raw.githubusercontent.com/dawnfield-institute/dawn-field-theory/main
+  operations:
+    GetCIPInstructions: "/.cip/instructions_v2.0.yaml"
+    GetFileContents: "/{path}"
+  rules:
+    - Always retrieve `map.yaml` via this API (never by manual upload).
+    - Do not request manual uploads for any file retrievable via this API.
+
+execution_flow:
+  - GET /.cip/instructions_v2.0.yaml
+  - GET /map.yaml
+  - Parse map.yaml according to map_yaml_rules; expand compressed patterns as needed.
+  - Locate target directories and their meta.yaml using map.yaml paths; fetch them via GetFileContents.
+  - Fetch referenced primary documentation or experiment files listed in meta.yaml.
+  - Proceed to analysis/answers only after ingesting the above and cite file paths.
+
+failure_mode:
+  - If the API/tools are unavailable, respond exactly with: "Insufficient context for evaluation. Context loading required."
+  - Do not ask the user for endpoint links or file uploads.
+
 map_yaml_rules:
   - map.yaml is the canonical source of truth for the repository structure.
   - If a directory contains many files with sequential numbering (e.g., file_0.csv, file_1.csv, ..., file_99.csv), these may be compressed in map.yaml using one of the following notations:
