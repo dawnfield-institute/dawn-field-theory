@@ -15,13 +15,21 @@ This roadmap tracks the main repository’s architectural, theoretical, and publ
 
 ---
 
-## Current Priorities
-- Finalize migration and README/meta.yaml updates
-- Complete preprint series and empirical validation suite
-- Harden and document all foundational experiments
-- Prepare for GAIA bootloader and toolkit development
-- Expand XAI benchmarking and interpretability infrastructure
-- Audit and standardize all semantic tags and naming conventions
+## Current Priorities (Release 1.0 Polishing)
+- Preprint polish: Methods/Experiments/Results rigor; reproducibility anchors
+- README, CONTRIBUTION, and roadmaps refresh
+- Evidence map and environment pinning notes
+- Standardize meta.yaml and schema usage across directories
+- Tag release, DOI citation, and release checklist
+
+---
+
+## Post-1.0 Goals (Q3–Q4 2025)
+- GAIA kickoff: bootloader, feedback modules, and resonance mesh specs
+- Recursion tooling: evidence map generator, CIP validators, dashboarding
+- Community engagement: lift contribution freeze, mentorship outreach, issue templates
+- XAI expansion: SCBF visualizers, narrative dashboards, benchmarking suites
+- Notebookification and dataset curation for key experiments
 
 ---
 
@@ -36,6 +44,7 @@ This roadmap tracks the main repository’s architectural, theoretical, and publ
 
 ## Links
 - [Timeline](../timeline.md)
-- [TODOs](../todo/todolist.md)
+- [README](../README.md)
+- [CONTRIBUTION](../CONTRIBUTION.md)
 - [Publication Framework](../todo/left_for_first_release/AIXPreprint_skeleton.md)
 - [CIP Protocol Extensions](../todo/cip_domain_upgrade.md)

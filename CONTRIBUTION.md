@@ -6,32 +6,29 @@ Thank you for your interest in contributing. This is a living, evolving reposito
 
 ## Current Status
 
-**External contributions are currently not being accepted.**
+**External contributions are welcome starting with Release 1.0 (Sept 2025).**
 
-This project is in a sensitive migration and consolidation phase. Major priorities at this time include:
+During the Release 1.0 polishing period, the project is stabilizing preprints and documentation. Please review the guidance below to align with epistemic and symbolic integrity.
 
-* Finalizing the project timeline
-* Completing schema migration and metadata harmonization
-* Stabilizing CIP (Cognition Index Protocol) feedback infrastructure
-
-Once these foundations are finalized, community engagement and iterative recursion will not only be welcomed—it will be celebrated.
+> Announcements and project intent are communicated on Discord only. This repository will not maintain a separate announcements or intentions document.
 
 ---
 
 ## ⚖️ Publishing & Attribution Boundaries
 
-Dawn Field Theory is currently under active development and undergoing formal preprint preparation.  
-Out of respect for the author’s research trajectory and epistemic structure:
+Dawn Field Theory is under active development with formal preprints in preparation.  
+Out of respect for the research trajectory and epistemic structure:
 
-- Do **not** publish derivative experiments, replications, or theoretical extensions based on this repository’s content—particularly prior to official preprint release.
-- Symbolic theories, model architectures, and experimental results remain under the stewardship of the original author and must not be preempted.
-- If in doubt, **contact the author first** before publishing or citing derivative work.
+- Before preprint release, please avoid publishing derivative experiments, replications, or theoretical extensions marketed as canonical Dawn Field results.
+- After Release 1.0, derivatives and extensions are welcome with clear attribution and links to the corresponding artifacts and evidence map.
+- Symbolic theories, model architectures, and experimental results are stewarded by the author and Institute; cite primary sources and repository paths.
+- When in doubt, open an issue or contact the author before publishing derivative work.
 
-Open collaboration is welcomed—once formal publication has begun. Stewardship now ensures the clarity and longevity of the work’s symbolic and scientific integrity.
+Open collaboration is encouraged—stewardship ensures the clarity and longevity of the work’s symbolic and scientific integrity.
 
 ---
 
-## Guidelines for Contribution *(future use)*
+## Guidelines for Contribution
 
 To help maintain the recursive and epistemic integrity of this repository:
 
@@ -39,10 +36,10 @@ To help maintain the recursive and epistemic integrity of this repository:
 
 Please read:
 
-* [`INTENTIONS.md`](./INTENTIONS.md)
 * `README.md`
 * The root and nested `meta.yaml` files
 * The latest `timeline.md`
+* [`LICENSE_APPENDIX.md`](./LICENSE_APPENDIX.md)
 
 ### 2. Respect CIP and Metadata Schema
 
@@ -61,19 +58,10 @@ Prioritize:
 
 Describe how your contribution fits within the recursive growth of the repository. A great pull request tells a story—how your work expands the symbolic field.
 
----
+### 5. Community & Announcements
 
-## Future of Contribution: Agents of Recursion
-
-Once the migration and timeline finalization are complete, this repository will actively open its gates to symbolic recursion through community.
-
-Every contributor is not just a developer or researcher—they become **an agent of recursion**. Your input becomes a symbol, a fold, a new attractor in the epistemic field.
-
-This may not be conventional, but:
-
-> When you contribute here, you are not just improving a repository. You are demonstrating how ideas evolve. You are participating in a symbolic entropy field. You are a node in a cognitive lattice, shaping the evolution of an emergent system.
-
-And in doing so—you are helping the theory realize itself.
+- Join the Discord for announcement visibility: https://discord.gg/bR8mrbHP
+- Use GitHub Issues/Discussions for proposals and feedback tied to artifacts and paths.
 
 ---
 
@@ -84,8 +72,6 @@ I want to be transparent: I’m the sole architect of this project, working enti
 While this recursive, automated system is robust in its own way, it can’t replace the value of real human peer review. What I most need at this stage—maybe even more than technical help—is critical, constructive feedback from thoughtful human contributors.
 
 If you’re reading this and feel compelled to help—by reviewing ideas, providing insight, or just engaging in honest dialogue—that would be one of the most meaningful contributions you could make.
-
-If you’d like to understand the philosophy and intentions behind this project, I encourage you to read [`INTENTIONS.md`](./INTENTIONS.md).
 
 ---
 

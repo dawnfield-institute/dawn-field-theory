@@ -14,6 +14,8 @@ files:
 - math_arithmetic_roadmap.md
 - publication_framework_roadmap.md
 - xai_scbf_roadmap.md
+- symbolic_entropy_roadmap.md
+- general_experiments_roadmap.md
 semantic_tags:
 - roadmap
 - planning
@@ -26,4 +28,6 @@ semantic_tags:
 - math_arithmetic_roadmap.md
 - publication_framework_roadmap.md
 - xai_scbf_roadmap.md
+- symbolic-entropy
+- experiments
 child_directories: []

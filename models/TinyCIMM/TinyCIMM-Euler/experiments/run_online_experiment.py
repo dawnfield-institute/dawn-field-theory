@@ -7,12 +7,10 @@ Author: Dawn Field Theory Research Group
 Date: July 10, 2025
 Project: TinyCIMM-Euler - Higher-Order Mathematical Reasoning
 
-This module provides true online learning experiments for TinyCIMM-Euler where the
-model learns mathematical patterns one data point at a time, adapting its structure
-and predictions in real-time. This implements the purest form of CIMM-style learning.
+This module provides true online adaptation experiments for TinyCIMM-Euler where the
+model updates during prediction (no offline training).
 
-Key Features:
-- True online learning (one point at a time)
+- True online adaptation (one point at a time)
 - Real-time network structure adaptation
 - Field-aware loss functions and metrics
 - SCBF interpretability framework
@@ -91,7 +89,7 @@ def generate_recursive_sequence_structured(n_points):
     return torch.tensor(sequence, dtype=torch.float32)
 
 class OnlineDataGenerator:
-    """Generates mathematical data points one at a time for true online learning"""
+    """Generates mathematical data points one at a time for true online adaptation"""
     
     def __init__(self, signal_type, seed=42):
         torch.manual_seed(seed)
@@ -170,16 +168,16 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Running online experiment on {device}")
     
-    # Initialize model for online learning
-    input_size = 1  # Always single value input for online learning
+    # Initialize model for online adaptation
+    input_size = 1  # Always single value input for online adaptation
     hidden_size = kwargs.pop('hidden_size', 16)
     
     model = model_cls(input_size=input_size, hidden_size=hidden_size, output_size=1, device=device, **kwargs)
     
-    # Restore responsive structure controller for true online learning
+    # Restore responsive structure controller for true online adaptation
     controller = MathematicalStructureController(
         base_complexity_threshold=0.01,  # Restored proper threshold
-        adaptation_window=5,             # Proper window for online learning
+        adaptation_window=5,             # Proper window for online adaptation
         min_neurons=8,
         max_neurons=64
     )
@@ -205,7 +203,7 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
     os.makedirs(signal_img_dir, exist_ok=True)
     
     print(f"Online experiment results will be saved in: {signal_img_dir}")
-    print(f"Starting TRUE online learning for {signal} (individual step adaptation)...")
+    print(f"Starting TRUE online adaptation for {signal} (individual step updates)...")
     
     for t in range(steps):
         # Get next data point online
@@ -217,7 +215,7 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
         
         # CRITICAL FIX: Use individual step processing like original CIMM
         # This restores the fine-grained adaptation that was lost in batch processing
-        model.train()  # Ensure gradients are enabled
+        model.train()  # Ensure gradients are enabled for online adaptation
         
         # Forward pass with gradient tracking
         prediction = model(x_input)
@@ -255,11 +253,11 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
         # Store recent predictions for analysis
         recent_predictions.append(fresh_prediction.item() if torch.is_tensor(fresh_prediction) else fresh_prediction)
         recent_targets.append(y_target.item())
-        if len(recent_predictions) > 30:  # Shorter memory for online learning
+        if len(recent_predictions) > 30:  # Shorter memory for online adaptation
             recent_predictions.pop(0)
             recent_targets.pop(0)
         
-        # Apply field optimization more frequently for online learning
+        # Apply field optimization more frequently for online adaptation
         if t % 20 == 0 and t > 0:  # Every 20 steps for responsive online adaptation
             model.entropy_aware_field_optimization()
         
@@ -315,11 +313,11 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
         logs.append(log_entry)
         
         # Fractal dimension analysis
-        if t % 25 == 0:  # More frequent for online learning
+        if t % 25 == 0:  # More frequent for online adaptation
             fd = mathematical_fractal_dimension(model.W)
             math_fractals.append(fd if not (torch.isnan(torch.tensor(fd)) or torch.isinf(torch.tensor(fd))) else float('nan'))
         
-        # Progress reporting (every 25 steps for online learning)
+        # Progress reporting (every 25 steps for online adaptation)
         if t % 25 == 0:
             recent_error = sum([l['prediction_error'] for l in logs[-5:]]) / min(5, len(logs))
             current_neurons = model.hidden_dim
@@ -336,7 +334,7 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
             plt.colorbar()
             plt.title(f'Weight Matrix at Step {t}')
             
-            # Online learning progress  
+            # Online adaptation progress  
             plt.subplot(2, 3, 2)
             if len(logs) > 5:
                 recent_losses = [l['step_loss'] for l in logs[-30:]]
@@ -385,7 +383,7 @@ def run_online_experiment(model_cls, signal="prime_deltas", steps=500, seed=42, 
     save_logs(logs, exp_dir, run_subdir)
     
     # Final analysis and visualization
-    print(f"\nOnline learning completed for {signal}")
+    print(f"\nOnline adaptation completed for {signal}")
     if len(logs) > 0:
         final_error = sum([l['prediction_error'] for l in logs[-5:]]) / min(5, len(logs))
         final_neurons = logs[-1]['neurons']
@@ -448,7 +446,7 @@ def run_all_online_experiments():
         print(f"=== Running ONLINE Mathematical Experiment: {test_name} ===")
         challenge_level = "Extreme" if test_name == "prime_deltas" else "Very High" if "sequence" in test_name else "High"
         print(f"Expected challenge level: {challenge_level}")
-        print(f"Training for 300 steps (true online learning)...")
+        print(f"Adapting for 300 steps (true online, no offline training)...")
         print(f"{'='*60}")
         
         try:

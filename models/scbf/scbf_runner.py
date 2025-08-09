@@ -135,7 +135,7 @@ def analyze_experiment(experiment_id: str) -> None:
 
 # Built-in experiment functions
 def run_scbf_analysis_step(model, step_idx, x_batch=None, prev_weights=None):
-    """Run SCBF analysis for a single training step."""
+    """Run SCBF analysis for a single adaptation step."""
     try:
         # Import SCBF metrics
         from metrics.entropy_collapse import compute_symbolic_entropy_collapse
@@ -277,7 +277,7 @@ def example_tinycimm_experiment(logger, model_cls=None, steps=100, **kwargs):
     print(f"Running example experiment with {steps} steps...")
     
     for step in range(steps):
-        # Simulate training step
+        # Simulate adaptation step
         x_batch = np.random.randn(1, 32)
         
         # Run SCBF analysis
@@ -312,7 +312,7 @@ def main():
     parser.add_argument('--list', action='store_true', help='List available experiments')
     parser.add_argument('--completed', action='store_true', help='List completed experiments')
     parser.add_argument('--analyze', '-a', type=str, help='Analyze completed experiment by ID')
-    parser.add_argument('--steps', type=int, default=100, help='Number of training steps')
+    parser.add_argument('--steps', type=int, default=100, help='Number of adaptation steps')
     
     args = parser.parse_args()
     

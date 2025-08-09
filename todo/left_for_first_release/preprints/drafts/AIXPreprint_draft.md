@@ -89,6 +89,8 @@ where $\mathbf{h}_t$ represents hidden activations and $\mathbf{x}_t$ represents
 
 ## 3. Experimental Design
 
+**Note on learning paradigm**: The TinyCIMM family in this study uses no offline training. Adaptation occurs online during prediction (inference-time), with field/parameter updates guided by SCBF collapse metrics.
+
 ### 3.1 TinyCIMM-Euler Architecture
 
 TinyCIMM-Euler implements field-theoretic neural dynamics with entropy-regulated feedback loops and dynamic structural adaptation. The core architecture consists of:
@@ -176,7 +178,7 @@ SCBF provides a modular, model-agnostic infrastructure for symbolic collapse ana
 
 ### 4.3 Interpretability Dashboard
 
-**Real-time Visualization**: Live plots of entropy collapse events, lineage stability, and phase alignment during model training and inference.
+**Real-time Visualization**: Live plots of entropy collapse events, lineage stability, and phase alignment during online adaptation (inference-time updates) and prediction.
 
 **Interactive Exploration**: PCA/t-SNE projections with collapse event overlays enabling investigation of symbolic attractor formation.
 
@@ -299,7 +301,7 @@ To illustrate SCBF's practical utility, consider a scenario where TinyCIMM-Euler
    - Incremental complexity reintroduction to rebuild symbolic hierarchies
    - Ancestry-guided learning rate adjustment to preserve established patterns
 
-**Validation**: This diagnostic approach achieved 87% agreement with expert mathematical reasoning assessments in controlled studies, significantly outperforming attention-based failure analysis (52% agreement) and enabling 3.2x faster model recovery compared to blind retraining approaches.
+**Validation**: This diagnostic approach achieved 87% agreement with expert mathematical reasoning assessments in controlled studies, significantly outperforming attention-based failure analysis (52% agreement) and enabling 3.2x faster model recovery compared to blind re-initialization approaches.
 
 ## 7. Discussion
 
@@ -325,7 +327,7 @@ To contextualize SCBF's advantages, we provide direct comparison across key inte
 | **Attention Visualization** | Limited temporal scope | Attention weights only | Moderate | Moderate insight | Low |
 | **LIME/SHAP** | No temporal tracking | Local attribution | Low correlation | High local utility | Moderate |
 | **Integrated Gradients** | Path-based but static | Attribution paths | Low to moderate | Good for vision | Moderate |
-| ****SCBF (Ours)** | **Real-time dynamics** | **Full collapse process** | **High neuroscience grounding** | **High diagnostic precision** | **<5% training overhead** |
+| ****SCBF (Ours)** | **Real-time dynamics** | **Full collapse process** | **High neuroscience grounding** | **High diagnostic precision** | **<5% online adaptation overhead** |
 
 **Key Advantages of SCBF**:
 - **Process-Centric**: Reveals *how* understanding emerges, not just *what* was decided
@@ -351,7 +353,7 @@ This measurability enables scientific investigation of machine cognition using r
 
 **Scale Constraints**: Current experiments focus on relatively small networks (40-139 neurons) and specific mathematical domains. Scaling to large language models and diverse task domains remains an open challenge, though Recursive Entropy Decomposition techniques may help address computational tractability through more efficient entropy analysis.
 
-**Computational Overhead**: Real-time SCBF analysis adds computational cost, though optimizations have reduced this to <5% training time increase.
+**Computational Overhead**: Real-time SCBF analysis adds computational cost, though optimizations have reduced this to <5% inference-time (online adaptation) overhead.
 
 **Threshold Sensitivity**: Collapse detection depends on adaptive thresholds that may require domain-specific tuning. Future RED integration could provide more principled threshold setting through entropy layer decomposition.
 
@@ -376,7 +378,7 @@ This measurability enables scientific investigation of machine cognition using r
 
 **Symbolic Cognition Instrumentation**: Development of standardized symbolic metrics for AI safety and alignment applications, enhanced by RED's entropy classification capabilities.
 
-**Neuro-Symbolic AI Integration**: Leveraging symbolic collapse insights combined with RED's structural analysis to guide hybrid architecture design and training methodologies.
+**Neuro-Symbolic AI Integration**: Leveraging symbolic collapse insights combined with RED's structural analysis to guide hybrid architecture design and online adaptation methodologies.
 
 ### 7.5 Reproducibility and Open Science
 

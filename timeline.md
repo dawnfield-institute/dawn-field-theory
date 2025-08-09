@@ -6,6 +6,7 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 
 ## Table of Contents
 - [Achieved Milestones](#achieved-milestones)
+- [Quarterly Planning (Rolling)](#quarterly-planning-rolling)
 - [Phase 0: Pre-Release Genesis](#phase-0-pre-release-genesis-2023–2024)
 - [Phase 1: Public Anchor](#phase-1-public-anchor-june-2025)
 - [Phase 2: Simulation Emergence (Wrapping Up)](#phase-2-simulation-emergence-wrapping-up-june–july-2025)
@@ -34,6 +35,29 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 - Data visualization prototypes and early interactive plotting
 - Balance integrals and thermal trace dynamics codified
 - **CIMM officially sunset and archived as legacy reference**
+
+---
+
+## Quarterly Planning (Rolling)
+
+> Short-term planning lives here. Announcements and intent visibility are on Discord only.
+
+### Q3 2025 (July–September)
+
+- Release 1.0 polishing sprint (through Sept 1):
+  - Preprint polish (Methods/Results rigor; reproducibility anchors)
+  - Repo polish (README, roadmaps, meta.yaml consistency)
+  - Evidence map and environment pinning notes
+- Post-1.0 prep (Sept):
+  - Lift contribution freeze and publish updated philosophy
+  - Launch 1.1 roadmap scaffolding
+  - GAIA kickoff notes and integration plan
+
+#### Weekly Goal Layout (example)
+- Week A: Preprint pass + SCBF/TinyCIMM validation re-run
+- Week B: README/CONTRIBUTION/roadmaps updates + DOI/tag
+- Week C: Evidence map, CIP checks, and release checklist
+- Week D: Final QA, archive notebooks, and publish
 
 ---
 
@@ -98,7 +122,7 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 ## Navigation
 - [README](./README.md)
 - [Timeline](./timeline.md)
-- [Intentions](./INTENTIONS.md)
+- [Discord (announcements only)](https://discord.gg/bR8mrbHP)
 - [License Appendix](./LICENSE_APPENDIX.md)
 
 ---

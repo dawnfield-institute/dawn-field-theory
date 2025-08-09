@@ -55,7 +55,7 @@ class SCBFExperimentLogger:
         return hashlib.md5(hash_input).hexdigest()[:8]
     
     def log_step(self, step_data: Dict[str, Any]) -> None:
-        """Log a single training step with SCBF metrics."""
+        """Log a single adaptation step with SCBF metrics."""
         # Add timestamp
         step_data['timestamp'] = datetime.now().isoformat()
         step_data['step_id'] = len(self.logs)

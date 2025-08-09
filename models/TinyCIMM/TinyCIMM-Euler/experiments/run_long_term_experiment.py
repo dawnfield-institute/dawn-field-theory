@@ -61,7 +61,7 @@ def run_extreme_long_term_experiment():
     prolonged exposure to mathematical patterns.
     
     Experiment Details:
-    - 100,000 training steps per signal type
+    - 100,000 adaptation steps per signal type
     - Individual step adaptation (CIMM-style)
     - Field-aware optimization
     - Comprehensive SCBF metrics tracking
@@ -119,7 +119,7 @@ def run_extreme_long_term_experiment():
         # Determine expected difficulty level for this signal type
         challenge_level = "Extreme" if test_name == "prime_deltas" else "Very High" if "sequence" in test_name else "High"
         info_print(f"Expected challenge level: {challenge_level}")
-        info_print(f"Training for 100,000 steps (CIMM-style long-term learning)...")
+        info_print(f"Adapting for 100,000 steps (CIMM-style long-term online learning)...")
         debug_print(f"Model configuration: {model_kwargs}")
         info_print(f"{'='*60}")
         
@@ -220,7 +220,7 @@ def run_cimm_style_experiment():
         print(f"=== Running CIMM-Style 1M Step Experiment: {test_name} ===")
         challenge_level = "Extreme" if test_name == "prime_deltas" else "Very High" if "sequence" in test_name else "High"
         print(f"Expected challenge level: {challenge_level}")
-        print(f"Training for 1,000,000 steps (true CIMM-style)...")
+        print(f"Adapting for 1,000,000 steps (true CIMM-style online)...")
         print(f"{'='*60}")
         
         try:
