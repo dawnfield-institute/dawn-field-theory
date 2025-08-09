@@ -7,12 +7,12 @@
 
 > ⚠️ **Summer 2025 Update: Release 1.0 Polishing (through September 1, 2025)**
 > I’m entering a short publishing and consolidation phase to polish the repository and preprints for Release 1.0 on September 1, 2025.
-> While active development will slow temporarily, this project remains under direct stewardship.
+> While active development will slow temporarily, this project remains under direct stewardship.s
 > Until release, I will audit experiments for statistical rigor and polish documentation.
 > All announcements and intent are published on Discord only; this repository will not include an ANNOUNCEMENTS.md or INTENTIONS.md going forward.
 > Please **do not publish experimental derivatives or replications** of this work—especially theoretical results or extensions—until official preprints are released and properly cited.
 > See `MISSION.md` and `CONTRIBUTION.md` for details.
-
+> Discord link has been fixed
 ---
 
 ## 🧠 Explore with DawnField GPT
