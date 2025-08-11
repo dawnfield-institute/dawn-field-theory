@@ -2090,6 +2090,8 @@ dawn-field-theory/
       prometheus.md
       synergy_integration_plan.md
     theory/
+      anomaly_analysis.md
+      cosmov2.md
       meta.yaml
       quantum_EM.md
   tools/
