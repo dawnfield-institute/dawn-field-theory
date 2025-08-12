@@ -9,5 +9,7 @@ semantic_scope:
 - bifractality
 - field computation
 files:
+- anomaly_analysis.md
+- cosmov2.md
 - quantum_EM.md
 child_directories: []
