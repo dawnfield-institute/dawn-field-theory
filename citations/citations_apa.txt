@@ -26,3 +26,25 @@ Schmidhuber, J. (2009). Simple algorithmic principles of discovery, subjective b
 Pearl, J. (1988). *Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference*. Morgan Kaufmann.
 Hofstadter, D. R. (1979). *Gödel, Escher, Bach: An Eternal Golden Braid*. Basic Books.
 Cahill, R. T. (2005). Process physics: From information theory to quantum space and matter.
+Simonyan, K., Vedaldi, A., & Zisserman, A. (2014). Deep inside convolutional networks: Visualising image classification models and saliency maps. *ICLR Workshop*.
+Bahdanau, D., Cho, K., & Bengio, Y. (2015). Neural machine translation by jointly learning to align and translate. *ICLR*.
+Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "Why should I trust you?": Explaining the predictions of any classifier. *KDD*.
+Garcez, A. D. A., & Lamb, L. C. (2020). Neurosymbolic AI: The 3rd wave. *arXiv preprint arXiv:2012.05876*.
+Lake, B. M., Ullman, T. D., Tenenbaum, J. B., & Gershman, S. J. (2017). Building machines that learn and think like people. *Behavioral and Brain Sciences*.
+Lipton, Z. C. (2018). The mythos of model interpretability: In machine learning, the concept of interpretability is both important and slippery. *Queue*.
+Montavon, G., Samek, W., & Müller, K. R. (2018). Methods for interpreting and understanding deep neural networks. *Digital Signal Processing*.
+Battaglia, P. W., Hamrick, J. B., Bapst, V., et al. (2018). Relational inductive biases, deep learning, and graph networks. *arXiv preprint arXiv:1806.01261*.
+
+/* Codebase & Model Citations */
+Dawn Field Theory Collaborative. (2025). *Dawn Field Theory Repository* (Version 2.0) [Computer software]. GitHub. https://github.com/dawnfield-institute/dawn-field-theory
+Dawn Field Theory Collaborative. (2025). TinyCIMM-Euler: Entropy-regulated mathematical reasoning architecture (Version 1.0) [Computer software]. In *Dawn Field Theory Repository*.
+Dawn Field Theory Collaborative. (2025). TinyCIMM-Planck: Minimal symbolic collapse prototype (Version 1.0) [Computer software]. In *Dawn Field Theory Repository*.
+Dawn Field Theory Collaborative. (2025). SCBF (Symbolic Collapse Benchmarking Framework) (Version 1.0) [Computer software]. In *Dawn Field Theory Repository*.
+Dawn Field Theory Collaborative. (2025). Prime delta collapse experiment script (prime_delta.py) (Version 1.0) [Computer software]. In *Dawn Field Theory Repository*.
+Dawn Field Theory Collaborative. (2025). Golden ratio convergence experiment script (golden_ratio.py) (Version 1.0) [Computer software]. In *Dawn Field Theory Repository*.
+Dawn Field Theory Collaborative. (2025). Polynomial reconstruction experiment script (polynomial.py) (Version 1.0) [Computer software]. In *Dawn Field Theory Repository*.
+Dawn Field Theory Collaborative. (2025). Signal processing suite (signal_processing_suite.py) (Version 1.0) [Computer software]. In *Dawn Field Theory Repository*.
+Nonaka, I. (1994). A dynamic theory of organizational knowledge creation. *Organization Science*, 5(1), 14-37.
+Nonaka, I., & Takeuchi, H. (1995). *The Knowledge-Creating Company*. Oxford University Press.
+Berners-Lee, T. (2001). The semantic web. *Scientific American*, 284(5), 28-37.
+Fielding, R. T., & Taylor, R. N. (2002). Principled design of the modern Web architecture. *ACM Transactions on Internet Technology (TOIT)*, 2(2), 115-150.
