@@ -413,3 +413,44 @@ For citation and reproduction of specific experiments or theoretical claims, con
 [^7]: Resonance Mesh Protocol. Dawn Field Theory Repository, `models/GAIA/docs/architecture/modules/resonance_mesh.md`
 
 [^8]: Symbolic Entropy Collapse Theory. Dawn Field Theory Repository, `foundational/experiments/symbolic_entropy_collapse/[m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md`
+---
+## Repository Mapping & Traceability (ITER2)
+| Concept | Source Path | TRACE Placeholder | Status |
+|---------|-------------|-------------------|--------|
+| Symbolic resonance mesh | models/GAIA/docs/architecture/modules/resonance_mesh.md | [TRACE: models/GAIA/docs/architecture/modules/resonance_mesh.md#core] | Pending |
+| Superfluid memory | models/GAIA/docs/architecture/modules/superfluid_memory.md | [TRACE: models/GAIA/docs/architecture/modules/superfluid_memory.md#impl] | Pending |
+| Symbolic bifractal ancestry | foundational/experiments/symbolic_bifractal/ | [TRACE: foundational/experiments/symbolic_bifractal/*#ancestry] | Pending |
+| Emergent language experiment | foundational/experiments/symbolic_emergence/ | [TRACE: foundational/experiments/symbolic_emergence/*#results] | Pending |
+| SEC theoretical link | foundational/experiments/symbolic_entropy_collapse/ | [TRACE: foundational/experiments/symbolic_entropy_collapse/*#sec] | Pending |
+## Template Compliance Audit (ITER2)
+| Required Section | Present? | Notes |
+|------------------|----------|-------|
+| Abstract | Yes | Add Keywords |
+| Keywords | No | Add |
+| Introduction | Yes | OK |
+| Background / Theory | Yes | Possibly condense |
+| Methods | Partial | Rename Section 4 |
+| Experiments / Evaluation | Yes | Add summary table |
+| Results | Partial | Create synthesis |
+| Discussion | Missing | Add |
+| Alignment & Ethics | Missing | Add |
+| Roadmap & Future Work | Missing | Add |
+| Conclusion | Missing | Add |
+| References | Footnotes only | Convert |
+| Appendix | Missing | Add |
+## Planned Edits (ITER2)
+- Add Keywords & Conclusion.
+- Promote footnotes to References list.
+- Insert TRACE tags.
+- Add Discussion & Ethics subsections.
+<!-- ITER2_CHECKLIST -->
+- [ ] Template normalized
+- [ ] All sections present (Intro, Methods, Results, Discussion, Conclusion)
+- [ ] TRACE tags resolved
+- [ ] Citations updated
+- [ ] Terminology validated
+- [ ] Equations numbered (n/a) 
+- [ ] Figures / diagrams referenced
+- [ ] Acronyms defined on first use
+- [ ] Abstract ≤ 250 words
+- [ ] Limitations section present

@@ -508,3 +508,46 @@ The implications of SEC extend beyond any single domain to suggest new ways of i
 *This work represents a serious, systematic exploration of novel theoretical possibilities. While our computational results are encouraging, we emphasize that this is investigative science requiring community engagement, independent validation, and continued development. We offer these tools and findings not as final answers, but as contributions to an ongoing collaborative investigation.*
 
 *We invite researchers to explore whether these computational correspondences might indicate deeper principles in symbolic entropy dynamics, encourage the community to test these protocols across multiple domains, and welcome collaboration in extending these methods to new areas of investigation. Several important questions remain unresolved about the relationship between symbolic collapse and physical phenomena, and alternative explanations for these patterns merit investigation.*
+---
+## Repository Mapping & Traceability (ITER2)
+| Claim / Phenomenon | Source Path | TRACE Placeholder | Status |
+|--------------------|-------------|-------------------|--------|
+| Quantum decoherence correspondence | foundational/experiments/quantum_validation_suite.py | [TRACE: foundational/experiments/quantum_validation_suite.py#decoherence] | Pending |
+| Born rule reproduction | foundational/experiments/quantum_validation_suite.py | [TRACE: foundational/experiments/quantum_validation_suite.py#born] | Pending |
+| Biological entropy correlations | foundational/experiments/biological_correlation_analysis.py | [TRACE: foundational/experiments/biological_correlation_analysis.py#correlation] | Pending |
+| Superfluid collapse dynamics | foundational/experiments/symbolic_superfluid_collapse_pi.py | [TRACE: foundational/experiments/symbolic_superfluid_collapse_pi.py#lattice] | Pending |
+| π-harmonic resonance experiments | foundational/experiments/pi_harmonic_structure_test.py | [TRACE: foundational/experiments/pi_harmonic_structure_test.py#harmonics] | Pending |
+| Symbolic entropy engine | models/scbf/ | [TRACE: models/scbf/symbolic_entropy_engine.py#core] | Pending |
+| Hodge projection implementation (planned) | (Planned) | [TRACE: models/scbf/hodge_projection.py#draft] | Planned |
+## Template Compliance Audit (ITER2)
+| Required Section | Present? | Notes |
+|------------------|----------|-------|
+| Abstract | Yes | Word count check |
+| Keywords | No | Add |
+| Introduction | Yes | OK |
+| Background / Theory | Yes | Consolidate repetitive definitions |
+| Methods | Partial | Add explicit Methods header |
+| Experiments / Evaluation | Partial | Aggregate |
+| Results | Partial | Add summary metrics table |
+| Discussion | Missing | Add |
+| Alignment & Ethics | Missing | Add |
+| Roadmap & Future Work | Missing | Add |
+| Conclusion | Partial | Add explicit section |
+| References | Present | Normalize formatting |
+| Appendix | Yes | Anchor cross-links |
+## Planned Edits (ITER2)
+- Add Keywords, Methods, Results (aggregated), Discussion, Conclusion.
+- Insert TRACE tags for empirical claims.
+- Normalize references.
+- Add ethics / limitations subsection.
+<!-- ITER2_CHECKLIST -->
+- [ ] Template normalized
+- [ ] All sections present (Intro, Methods, Results, Discussion, Conclusion)
+- [ ] TRACE tags resolved
+- [ ] Citations updated
+- [ ] Terminology validated
+- [ ] Equations numbered
+- [ ] Figures / diagrams referenced
+- [ ] Acronyms defined on first use
+- [ ] Abstract ≤ 250 words
+- [ ] Limitations section present

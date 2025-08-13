@@ -661,3 +661,44 @@ class ThermodynamicOptimizer:
 *This work represents systematic exploration of adaptive intelligence principles through mathematical and architectural plasticity. While our results suggest promising directions for both mathematical discovery and AI system design, we emphasize that this constitutes investigative research requiring community engagement and independent validation. We offer these frameworks and findings as contributions to ongoing collaborative investigation rather than established solutions.*
 
 *We invite mathematicians to explore base-dependent entropy patterns in their domains of expertise, encourage AI researchers to test entropy-aware architectural principles in their systems, and welcome collaboration in developing adaptive intelligence methodologies that bridge mathematical and computational plasticity.*
+---
+## Repository Mapping & Traceability (ITER2)
+| Claim / Component | Source Path | TRACE Placeholder | Status |
+|-------------------|-------------|-------------------|--------|
+| Multi-base analysis engine | devkit/ (confirm path) | [TRACE: devkit/*/multi_base.py#engine] | Pending |
+| Entropy-aware architecture redesign | todo/left_for_first_release/entropy_minimized_architecture.md | [TRACE: todo/left_for_first_release/entropy_minimized_architecture.md#design] | Pending |
+| Landauer erasure experiments | foundational/experiments/ | [TRACE: foundational/experiments/landauer_erasure/*#results] | Pending |
+| Production hallucination reduction metrics | (add path) | [TRACE: models/logs/hallucination_reduction.md#metrics] | TODO |
+| Base-invariant pattern detection | tools/ (planned) | [TRACE: tools/base_invariant_analysis.py#detect] | Planned |
+## Template Compliance Audit (ITER2)
+| Required Section | Present? | Notes |
+|------------------|----------|-------|
+| Abstract | Yes | Needs cleanup |
+| Keywords | No | Add |
+| Introduction | Yes | OK |
+| Background / Theory | Yes | Consolidate repetition |
+| Methods | Partial | Add header |
+| Experiments / Evaluation | Partial | Summarize empirics |
+| Results | Partial | Separate from methods |
+| Discussion | Missing | Add |
+| Alignment & Ethics | Missing | Add |
+| Roadmap & Future Work | Missing | Add |
+| Conclusion | Missing | Add |
+| References | Missing | Add placeholder |
+| Appendix | Missing | Consider |
+## Planned Edits (ITER2)
+- Clean abstract.
+- Add required missing sections.
+- Insert TRACE tags for metrics and thermodynamic claims.
+- Add references.
+<!-- ITER2_CHECKLIST -->
+- [ ] Template normalized
+- [ ] All sections present (Intro, Methods, Results, Discussion, Conclusion)
+- [ ] TRACE tags resolved
+- [ ] Citations updated
+- [ ] Terminology validated
+- [ ] Equations numbered
+- [ ] Figures / diagrams referenced
+- [ ] Acronyms defined on first use
+- [ ] Abstract ≤ 250 words
+- [ ] Limitations section present

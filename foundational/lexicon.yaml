@@ -271,3 +271,30 @@ terms:
     related_documents:
       - foundational/docs/[m][F][v1.0][C4][I5]_gaia_architecture.md
     example: GAIA introduces meta-cognitive feedback to field intelligence.
+
+  - name: Activation Ancestry
+    description: Provenance chain of activations or symbolic states contributing to a final collapse decision; used for interpretability and lineage scoring.
+    tags: [lineage, interpretability, provenance, core]
+    status: core
+    see_also: [Entropy Collapse, Collapse Narrative]
+    related_documents:
+      - models/scbf/docs/[m][F][v1.0][C4][I5]_activation_ancestry_metric.md
+    example: Activation ancestry identifies which prior symbolic states most influenced the collapse outcome.
+
+  - name: Phase Alignment
+    description: Degree to which recursive symbolic generations maintain stable phase relationships (temporal or structural) across collapse cycles.
+    tags: [phase, stability, metrics, experimental]
+    status: experimental
+    see_also: [Activation Ancestry, Attractor Density]
+    related_documents:
+      - models/scbf/docs/[m][F][v1.0][C4][I5]_phase_alignment_metric.md
+    example: High phase alignment indicates coherent symbolic progression toward collapse.
+
+  - name: Collapse Narrative
+    description: Human-interpretable reconstruction of a collapse event integrating activation ancestry, metrics (entropy, attractor density), and decision thresholds.
+    tags: [interpretability, narrative, collapse, core]
+    status: core
+    see_also: [Activation Ancestry, Entropy Collapse]
+    related_documents:
+      - models/scbf/docs/[m][F][v1.0][C4][I5]_collapse_narrative_spec.md
+    example: The collapse narrative explains why a specific symbolic attractor was selected.
