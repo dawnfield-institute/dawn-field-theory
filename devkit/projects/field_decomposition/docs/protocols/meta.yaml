@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: protocols
-description: Communication and integration protocols for Field Decomposition including signal flow protocols, layer interaction standards, SCBF integration specifications, and inter-layer communication frameworks for 6-layer signal processing.
+description: Communication and integration protocols for Field Decomposition including
+  signal flow protocols, layer interaction standards, SCBF integration specifications,
+  and inter-layer communication frameworks for 6-layer signal processing.
 semantic_scope:
 - protocols
 - field-decomposition

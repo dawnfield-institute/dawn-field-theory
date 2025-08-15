@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: infrastructure
-description: Core infrastructure components for Dawn Field Theory ecosystem including shared utilities, configuration management, communication protocols, and system-wide integration patterns.
+description: Core infrastructure components for Dawn Field Theory ecosystem including
+  shared utilities, configuration management, communication protocols, and system-wide
+  integration patterns.
 semantic_scope:
 - infrastructure
 - system-architecture

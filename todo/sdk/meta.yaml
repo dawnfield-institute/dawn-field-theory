@@ -8,9 +8,5 @@ semantic_scope:
 - bifractal agents
 - core modules
 - integration
-files:
-- field_decomp.md
-- fracton.md
-- prometheus.md
-- synergy_integration_plan.md
+files: []
 child_directories: []
