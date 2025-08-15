@@ -118,10 +118,171 @@ dawn-field-theory/
       SELID.py
       SELID_validation.py
       meta.yaml
+    infrastructure/
+      meta.yaml
+    projects/
+      IMPLEMENTATION_GUIDE.md
+      PHASED_ROADMAP.md
+      README.md
+      meta.yaml
+      synergy_integration_plan.md
+      aletheia/
+        README.md
+        meta.yaml
+        project_aletheia_design.md
+        docs/
+          meta.yaml
+          architecture/
+            meta.yaml
+            overview.md
+            modules/
+              architect_agent.md
+              brainstem_ui.md
+              builder_agent.md
+              component_registry.md
+              entropy_engine.md
+              entropy_sec_engine.md
+              execution_engine.md
+              flow_orchestrator.md
+              mcp_interface.md
+              meta.yaml
+              pruning_controller.md
+              tester_agent.md
+          meta/
+            meta.yaml
+          protocols/
+            meta.yaml
+          theory/
+            meta.yaml
+      brainstem/
+        README.md
+        brainstem.md
+        meta.yaml
+        docs/
+          meta.yaml
+          architecture/
+            meta.yaml
+            overview.md
+            modules/
+              cip_mcp_bridge.md
+              cognitive_interface_layer.md
+              fractal_visualization_engine.md
+              integration_services.md
+              knowledge_organization_system.md
+              meta.yaml
+              user_ai_interaction_layer.md
+          experiments/
+            meta.yaml
+          protocols/
+            meta.yaml
+      field_decomposition/
+        README.md
+        field_decomp.md
+        meta.yaml
+        docs/
+          implementation_roadmap.md
+          meta.yaml
+          architecture/
+            meta.yaml
+            overview.md
+            modules/
+              meta.yaml
+              sec_classifier.md
+              signal_decomposer.md
+          protocols/
+            field_decomposition_protocol.md
+            meta.yaml
+      fracton/
+        README.md
+        fracton.md
+        meta.yaml
+        docs/
+          implementation_roadmap.md
+          meta.yaml
+          architecture/
+            meta.yaml
+            overview.md
+            modules/
+              entropy_dispatch.md
+              homeostatic_controller.md
+              meta.yaml
+              quantum_symbolic_core.md
+              recursive_engine.md
+              tool_bindings.md
+          experiments/
+            meta.yaml
+          theory/
+            meta.yaml
+      kronos/
+        README.md
+        kronos.md
+        meta.yaml
+        docs/
+          fdo_specification.md
+          implementation_roadmap.md
+          meta.yaml
+          architecture/
+            meta.yaml
+            overview.md
+            modules/
+              causality_verification_engine.md
+              distributed_clock_synchronizer.md
+              fdo_parser.md
+              meta.yaml
+              temporal_event_processor.md
+      mcp_server/
+        README.md
+        meta.yaml
+        MCP/
+          MCP_server_spec_architecturee_draft.md
+          auto_llm_infra.md
+          mcp_server_detailed_design.md
+          meta.yaml
+        docs/
+          meta.yaml
+          architecture/
+            meta.yaml
+            overview.md
+            modules/
+              agentic_orchestrator_provenance.md
+              cip_middleware_tools.md
+              context_processing_engine.md
+              meta.yaml
+              model_registry.md
+              protocol_compliance_engine.md
+              protocol_validator.md
+              session_state_manager.md
+          experiments/
+            meta.yaml
+          theory/
+            meta.yaml
+      prometheus/
+        README.md
+        meta.yaml
+        prometheus.md
+        docs/
+          meta.yaml
+          architecture/
+            meta.yaml
+            overview.md
+            modules/
+              differential_privacy_engine.md
+              homomorphic_encryption_service.md
+              meta.yaml
+              privacy_preservation_engine.md
+              real_time_monitoring_engine.md
+              threat_detection_engine.md
+              visualization_dashboard.md
+          experiments/
+            meta.yaml
+          theory/
+            meta.yaml
     random_number/
       RandomNumberTest.py
       meta.yaml
       random_number.md
+    sdk/
+      meta.yaml
   foundational/
     README.md
     lexicon.md
@@ -2033,9 +2194,12 @@ dawn-field-theory/
     core_project_roadmap.md
     gaia_roadmap.md
     general_experiments_roadmap.md
+    infrastructure_tools_roadmap.md
+    kronos_roadmap.md
     math_arithmetic_roadmap.md
     meta.yaml
     publication_framework_roadmap.md
+    sdk_analysis_tools_roadmap.md
     symbolic_entropy_roadmap.md
     xai_scbf_roadmap.md
   todo/
@@ -2048,16 +2212,9 @@ dawn-field-theory/
       meta.yaml
     infra/
       CIP2.0MultiRepo.md
-      brainstem.md
       cip_domain_upgrade.md
-      kronos.md
       meta.yaml
       ollama_self_hosted_runner.md
-      MCP/
-        MCP_server_spec_architecturee_draft.md
-        auto_llm_infra.md
-        mcp_server_detailed_design.md
-        meta.yaml
     left_for_first_release/
       entropy_minimized_architecture.md
       mathmatics_next_steps.md
@@ -2075,6 +2232,7 @@ dawn-field-theory/
           AIXPreprint_draft.md
           CIPPreprint_draft.md
           DFT_Infodynamics_preprint_draft.md
+          ITERATION_PLAN_v2.md
           RELEASE_CHECKLIST.md
           RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
           ResonantSymbolicConvergencePreprint_draft.md
@@ -2083,12 +2241,9 @@ dawn-field-theory/
         resources/
           CIM.docx
           CIM.md
+          meta.yaml
     sdk/
-      field_decomp.md
-      fracton.md
       meta.yaml
-      prometheus.md
-      synergy_integration_plan.md
     theory/
       anomaly_analysis.md
       cosmov2.md
