@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: modules
+description: Individual module specifications for Fracton's 6-module architecture including fractal node orchestrator for distributed coordination, swarm intelligence engine, neural network interface, distributed computation manager, consciousness simulator, and ecosystem monitor.
+semantic_scope:
+- modules
+- fracton
+- fractal-node-orchestrator
+- swarm-intelligence-engine
+- neural-network-interface
+- distributed-computation-manager
+- consciousness-simulator
+- ecosystem-monitor
+files:
+- entropy_dispatch.md
+- homeostatic_controller.md
+- quantum_symbolic_core.md
+- recursive_engine.md
+- tool_bindings.md
+child_directories: []

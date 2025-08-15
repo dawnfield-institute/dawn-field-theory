@@ -1,0 +1,20 @@
+schema_version: '2.0'
+directory_name: modules
+description: Individual module specifications for Brainstem's 6-module architecture including CIP-MCP bridge, knowledge organization system, fractal visualization engine, cognitive interface layer, user-AI interaction layer, and integration services.
+semantic_scope:
+- modules
+- brainstem
+- cip-mcp-bridge
+- knowledge-organization
+- fractal-visualization-engine
+- cognitive-interface-layer
+- user-ai-interaction
+- integration-services
+files:
+- cip_mcp_bridge.md
+- cognitive_interface_layer.md
+- fractal_visualization_engine.md
+- integration_services.md
+- knowledge_organization_system.md
+- user_ai_interaction_layer.md
+child_directories: []

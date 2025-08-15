@@ -1,0 +1,27 @@
+schema_version: '2.0'
+directory_name: modules
+description: Individual module specifications for Aletheia's 10-module architecture including architect agent, builder agent, tester agent, flow orchestrator, entropy SEC engine, component registry, pruning controller, execution engine, MCP interface, and Brainstem UI.
+semantic_scope:
+- modules
+- aletheia
+- module-specifications
+- architect-agent
+- builder-agent
+- tester-agent
+- flow-orchestrator
+- entropy-sec-engine
+- component-registry
+- execution-engine
+files:
+- architect_agent.md
+- brainstem_ui.md
+- builder_agent.md
+- component_registry.md
+- entropy_engine.md
+- entropy_sec_engine.md
+- execution_engine.md
+- flow_orchestrator.md
+- mcp_interface.md
+- pruning_controller.md
+- tester_agent.md
+child_directories: []

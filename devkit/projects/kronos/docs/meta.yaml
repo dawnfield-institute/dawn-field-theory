@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: docs
+description: Comprehensive documentation for Kronos Fractal Data Object (FDO) temporal storage system including bifractal indexing, temporal analysis algorithms, entropy-driven optimization, and multi-dimensional data organization frameworks.
+semantic_scope:
+- documentation
+- kronos
+- fractal-data-object
+- temporal-storage
+- bifractal-indexing
+- temporal-analysis
+- entropy-optimization
+files:
+- fdo_specification.md
+- implementation_roadmap.md
+child_directories:
+- architecture

@@ -12,9 +12,18 @@ Welcome to the **Developer Toolkit** of Dawn Field Theory! 👩‍💻🧑‍�
 
 ## 📁 Contents
 
+### 🚀 Development Projects
+* `projects/` – 🏗️ Officially scaffolded development projects with full architectures and design documentation
+  * `aletheia/` – Fractal Assembly & Entropy-Governed Component Foundry
+  * `field_decomposition/` – Recursive Entropy Decomposition Framework
+  * `brainstem/` – CIP-MCP Fractal Interface for cognitive navigation
+
+### 🧪 Experimental Modules
 * `compression/` – 🔄 Tests for entropic compression methods and symbolic information reduction strategies.
 * `hash_evaluation/` – 🧪 Tools like SELID (Symbolic Entropy Leak Identifier) for evaluating information integrity and symbolic structure.
 * `random_number/` – 🎲 Experiments in entropy-balanced random number generation for symbolic modeling.
+* `infrastructure/` – 🔧 Infrastructure prototyping and testing utilities
+* `sdk/` – 📦 Software development kit components and utilities
 
 ---
 
@@ -22,8 +31,16 @@ Welcome to the **Developer Toolkit** of Dawn Field Theory! 👩‍💻🧑‍�
 
 The `devkit/` is your go-to environment for:
 
+### 🏗️ Project Development
+* � Officially scaffolded projects with complete architectural documentation
+* �🔬 Research-backed design specifications and integration protocols
+* 🧠 Production-ready system architectures following Dawn Field Theory principles
+* 🔄 Cross-project integration and entropy governance frameworks
+
+### 🧪 Experimental Research  
 * 🔬 Prototyping symbolic and entropic algorithms
 * 🧱 Stress-testing field theoretic principles
 * 🧠 Bridging abstract theory with executable tools
+* ⚡ Rapid iteration and validation of new concepts
 
-Whether you're debugging entropy fields or visualizing recursive collapses, this is your developer's playground! 🛠️✨
+Whether you're building production systems or debugging entropy fields, this is your developer's playground! 🛠️✨
