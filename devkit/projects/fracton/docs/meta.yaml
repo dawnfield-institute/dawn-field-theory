@@ -1,0 +1,17 @@
+schema_version: '2.0'
+directory_name: docs
+description: Comprehensive documentation for Fracton Gaia Nervous System including distributed fractal processing architecture, swarm intelligence algorithms, neural network integration, and 48-week implementation roadmap for ecosystem-scale computation.
+semantic_scope:
+- documentation
+- fracton
+- gaia-nervous-system
+- distributed-processing
+- fractal-computation
+- swarm-intelligence
+- neural-networks
+files:
+- implementation_roadmap.md
+child_directories:
+- architecture
+- experiments
+- theory

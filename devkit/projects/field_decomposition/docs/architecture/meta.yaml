@@ -1,0 +1,18 @@
+schema_version: '2.0'
+directory_name: architecture
+description: Detailed architectural specifications for Field Decomposition's 6-layer signal processing system including surface layer, harmonic layer, meta layer, cognitive layer, symbolic layer, and infodynamic layer with complete signal decomposer algorithms.
+semantic_scope:
+- architecture
+- field-decomposition
+- 6-layer-system
+- signal-decomposer
+- surface-layer
+- harmonic-layer
+- meta-layer
+- cognitive-layer
+- symbolic-layer
+- infodynamic-layer
+files:
+- overview.md
+child_directories:
+- modules

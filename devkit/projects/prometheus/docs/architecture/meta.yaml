@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: architecture
+description: Detailed architectural specifications for Prometheus' 4-module monitoring system including real-time monitoring engine, threat detection engine, privacy preservation engine, and visualization dashboard with complete analytics and security frameworks.
+semantic_scope:
+- architecture
+- prometheus
+- real-time-monitoring-engine
+- threat-detection-engine
+- privacy-preservation-engine
+- visualization-dashboard
+- analytics-frameworks
+- security-systems
+files:
+- overview.md
+child_directories:
+- modules

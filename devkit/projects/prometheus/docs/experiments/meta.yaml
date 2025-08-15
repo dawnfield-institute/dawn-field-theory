@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: experiments
+description: Experimental frameworks and research protocols for Prometheus monitoring system including real-time monitoring validation, threat detection testing, privacy preservation experiments, and visualization dashboard optimization studies.
+semantic_scope:
+- experiments
+- prometheus
+- monitoring-validation
+- threat-detection-testing
+- privacy-preservation-experiments
+- visualization-optimization
+- security-testing
+- analytics-benchmarking
+files: []
+child_directories: []

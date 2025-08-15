@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: docs
+description: Comprehensive documentation for Prometheus monitoring and analytics system including real-time monitoring engines, threat detection algorithms, privacy preservation frameworks, and visualization dashboards for DFT ecosystem oversight.
+semantic_scope:
+- documentation
+- prometheus
+- monitoring-analytics
+- real-time-monitoring
+- threat-detection
+- privacy-preservation
+- visualization-dashboards
+files: []
+child_directories:
+- architecture
+- experiments
+- theory

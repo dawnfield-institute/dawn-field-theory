@@ -1,0 +1,15 @@
+schema_version: '2.0'
+directory_name: architecture
+description: Detailed architectural specifications for MCP Server's 4-module protocol implementation including protocol compliance engine, context processing engine, model registry, and session state manager with complete MCP standards integration.
+semantic_scope:
+- architecture
+- mcp-server
+- protocol-compliance-engine
+- context-processing-engine
+- model-registry
+- session-state-manager
+- mcp-standards
+files:
+- overview.md
+child_directories:
+- modules

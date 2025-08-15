@@ -1,0 +1,13 @@
+schema_version: '2.0'
+directory_name: protocols
+description: Communication and integration protocols for Brainstem including CIP-MCP bridge specifications, knowledge organization standards, fractal visualization protocols, and user-AI interaction communication frameworks.
+semantic_scope:
+- protocols
+- brainstem
+- cip-mcp-protocols
+- knowledge-organization-standards
+- fractal-visualization-protocols
+- user-ai-communication
+- integration-frameworks
+files: []
+child_directories: []
