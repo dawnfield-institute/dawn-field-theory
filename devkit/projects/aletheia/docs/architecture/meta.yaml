@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: architecture
-description: Detailed architectural specifications for Aletheia Fractal Assembly Foundry including system design, component interactions, data flow patterns, and integration interfaces for fractal component assembly.
+description: Detailed architectural specifications for Aletheia Fractal Assembly Foundry
+  including system design, component interactions, data flow patterns, and integration
+  interfaces for fractal component assembly.
 semantic_scope:
 - architecture
 - aletheia

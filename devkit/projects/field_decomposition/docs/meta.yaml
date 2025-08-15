@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: docs
-description: Comprehensive documentation for Field Decomposition project including 6-layer signal decomposition architecture, layer-specific analysis algorithms, implementation roadmaps, and foundational signal processing frameworks for DFT ecosystem.
+description: Comprehensive documentation for Field Decomposition project including
+  6-layer signal decomposition architecture, layer-specific analysis algorithms, implementation
+  roadmaps, and foundational signal processing frameworks for DFT ecosystem.
 semantic_scope:
 - documentation
 - field-decomposition

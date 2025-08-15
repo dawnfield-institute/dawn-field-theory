@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: experiments
-description: Experimental frameworks and research protocols for MCP Server including protocol compliance testing, context processing validation, model registry experiments, and session management benchmarking for Model Context Protocol implementation.
+description: Experimental frameworks and research protocols for MCP Server including
+  protocol compliance testing, context processing validation, model registry experiments,
+  and session management benchmarking for Model Context Protocol implementation.
 semantic_scope:
 - experiments
 - mcp-server

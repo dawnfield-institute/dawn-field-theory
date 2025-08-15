@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: theory
-description: Theoretical foundations for Prometheus monitoring and analytics system including real-time monitoring theory, threat detection mathematics, privacy preservation algorithms, and visualization theory for comprehensive DFT ecosystem oversight.
+description: Theoretical foundations for Prometheus monitoring and analytics system
+  including real-time monitoring theory, threat detection mathematics, privacy preservation
+  algorithms, and visualization theory for comprehensive DFT ecosystem oversight.
 semantic_scope:
 - theory
 - prometheus
