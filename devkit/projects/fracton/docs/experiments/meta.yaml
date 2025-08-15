@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: experiments
-description: Experimental frameworks and research protocols for Fracton Gaia Nervous System including distributed processing experiments, swarm intelligence validation, consciousness simulation studies, and ecosystem-scale computation benchmarks.
+description: Experimental frameworks and research protocols for Fracton Gaia Nervous
+  System including distributed processing experiments, swarm intelligence validation,
+  consciousness simulation studies, and ecosystem-scale computation benchmarks.
 semantic_scope:
 - experiments
 - fracton

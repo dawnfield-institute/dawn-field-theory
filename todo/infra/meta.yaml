@@ -9,9 +9,6 @@ semantic_scope:
 - environment management
 files:
 - CIP2.0MultiRepo.md
-- brainstem.md
 - cip_domain_upgrade.md
-- kronos.md
 - ollama_self_hosted_runner.md
-child_directories:
-- MCP
+child_directories: []
