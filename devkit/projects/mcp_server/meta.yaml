@@ -1,48 +1,54 @@
-project_name: "MCP Server"
-project_type: "protocol_implementation"
-version: "0.1.0"
-status: "planning"
-complexity: "C5"
-importance: "I5"
-description: "Model Context Protocol (MCP) server for standards-compliant repository integration and context management."
+project_name: MCP Server
+project_type: protocol_implementation
+version: 0.1.0
+status: planning
+complexity: C5
+importance: I5
+description: Model Context Protocol (MCP) server for standards-compliant repository
+  integration and context management.
 authors:
-  - "Peter Lorne Groom"
-created_date: "2025-08-13"
-last_updated: "2025-08-13"
+- Peter Lorne Groom
+created_date: '2025-08-13'
+last_updated: '2025-08-13'
 tags:
-  - "mcp_server"
-  - "protocol"
-  - "context_management"
-  - "repository_integration"
-  - "session_management"
+- mcp_server
+- protocol
+- context_management
+- repository_integration
+- session_management
 dependencies:
   internal:
-    - "Brainstem"
-    - "Aletheia"
-    - "Kronos"
+  - Brainstem
+  - Aletheia
+  - Kronos
   external:
-    - "Python 3.11+"
-    - "Web server libraries"
+  - Python 3.11+
+  - Web server libraries
 integration_points:
-  - name: "Brainstem"
-    purpose: "CIP-MCP bridge and interface"
-  - name: "Aletheia"
-    purpose: "Context management and protocol compliance"
-  - name: "Kronos"
-    purpose: "Session state and temporal coordination"
+- name: Brainstem
+  purpose: CIP-MCP bridge and interface
+- name: Aletheia
+  purpose: Context management and protocol compliance
+- name: Kronos
+  purpose: Session state and temporal coordination
 roadmap:
   phase_0:
-    - "Define MCP protocol requirements"
-    - "Design standards-compliant API"
+  - Define MCP protocol requirements
+  - Design standards-compliant API
   phase_1:
-    - "Prototype context management modules"
-    - "Integrate with Brainstem and Aletheia"
+  - Prototype context management modules
+  - Integrate with Brainstem and Aletheia
   phase_2:
-    - "Develop advanced session management"
-    - "Optimize for scalability and security"
+  - Develop advanced session management
+  - Optimize for scalability and security
 success_metrics:
-  - "Protocol Compliance"
-  - "Integration Robustness"
-  - "Context Management Quality"
-  - "Session Reliability"
-license: "Dawn Field Theory License"
+- Protocol Compliance
+- Integration Robustness
+- Context Management Quality
+- Session Reliability
+license: Dawn Field Theory License
+files:
+- README.md
+child_directories:
+- MCP
+- docs

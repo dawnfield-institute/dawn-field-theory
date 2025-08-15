@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: sdk
-description: Software Development Kit for Dawn Field Theory applications providing APIs, libraries, tools, and utilities for building DFT-compatible systems and applications.
+description: Software Development Kit for Dawn Field Theory applications providing
+  APIs, libraries, tools, and utilities for building DFT-compatible systems and applications.
 semantic_scope:
 - sdk
 - api

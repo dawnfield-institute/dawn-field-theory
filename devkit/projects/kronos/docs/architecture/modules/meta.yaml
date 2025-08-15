@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: modules
-description: Individual module specifications for Kronos' 4-module architecture including temporal indexer for time-based organization, fractal organizer for hierarchical storage, entropy optimizer for performance enhancement, and query processor for data retrieval.
+description: Individual module specifications for Kronos' 4-module architecture including
+  temporal indexer for time-based organization, fractal organizer for hierarchical
+  storage, entropy optimizer for performance enhancement, and query processor for
+  data retrieval.
 semantic_scope:
 - modules
 - kronos
