@@ -2248,6 +2248,7 @@ dawn-field-theory/
       anomaly_analysis.md
       cosmov2.md
       meta.yaml
+      navier_stokes_fractal_pattern_solution.md
       quantum_EM.md
   tools/
     converter.py
