@@ -1,48 +1,54 @@
-project_name: "Kronos"
-project_type: "temporal_coordination"
-version: "0.1.0"
-status: "planning"
-complexity: "C4"
-importance: "I5"
-description: "Temporal coordination, component storage, and system-wide scheduling for Dawn Field Theory."
+project_name: Kronos
+project_type: temporal_coordination
+version: 0.1.0
+status: planning
+complexity: C4
+importance: I5
+description: Temporal coordination, component storage, and system-wide scheduling
+  for Dawn Field Theory.
 authors:
-  - "Peter Lorne Groom"
-created_date: "2025-08-13"
-last_updated: "2025-08-13"
+- Peter Lorne Groom
+created_date: '2025-08-13'
+last_updated: '2025-08-13'
 tags:
-  - "kronos"
-  - "temporal_coordination"
-  - "component_storage"
-  - "scheduling"
-  - "version_management"
+- kronos
+- temporal_coordination
+- component_storage
+- scheduling
+- version_management
 dependencies:
   internal:
-    - "Aletheia"
-    - "Fracton"
-    - "GAIA"
+  - Aletheia
+  - Fracton
+  - GAIA
   external:
-    - "Python 3.11+"
-    - "Database libraries"
+  - Python 3.11+
+  - Database libraries
 integration_points:
-  - name: "Aletheia"
-    purpose: "Component registry and version management"
-  - name: "Fracton"
-    purpose: "Temporal coordination for distributed execution"
-  - name: "GAIA"
-    purpose: "Temporal analytics and system evolution"
+- name: Aletheia
+  purpose: Component registry and version management
+- name: Fracton
+  purpose: Temporal coordination for distributed execution
+- name: GAIA
+  purpose: Temporal analytics and system evolution
 roadmap:
   phase_0:
-    - "Define temporal coordination requirements"
-    - "Design component storage schema"
+  - Define temporal coordination requirements
+  - Design component storage schema
   phase_1:
-    - "Prototype scheduling and version management"
-    - "Integrate with Aletheia and Fracton"
+  - Prototype scheduling and version management
+  - Integrate with Aletheia and Fracton
   phase_2:
-    - "Develop advanced temporal analytics"
-    - "Optimize for scalability and reliability"
+  - Develop advanced temporal analytics
+  - Optimize for scalability and reliability
 success_metrics:
-  - "Coordination Efficiency"
-  - "Storage Reliability"
-  - "Integration with Core Projects"
-  - "Temporal Analytics Quality"
-license: "Dawn Field Theory License"
+- Coordination Efficiency
+- Storage Reliability
+- Integration with Core Projects
+- Temporal Analytics Quality
+license: Dawn Field Theory License
+files:
+- README.md
+- kronos.md
+child_directories:
+- docs

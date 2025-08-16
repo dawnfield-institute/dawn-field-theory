@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: docs
-description: Comprehensive documentation for MCP Server Model Context Protocol implementation including protocol compliance engines, context processing algorithms, model registry frameworks, and session state management for standards-compliant repository integration.
+description: Comprehensive documentation for MCP Server Model Context Protocol implementation
+  including protocol compliance engines, context processing algorithms, model registry
+  frameworks, and session state management for standards-compliant repository integration.
 semantic_scope:
 - documentation
 - mcp-server

@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: architecture
-description: Detailed architectural specifications for Fracton's 6-module Gaia Nervous System including fractal node orchestrator, swarm intelligence engine, neural network interface, distributed computation manager, consciousness simulator, and ecosystem monitor.
+description: Detailed architectural specifications for Fracton's 6-module Gaia Nervous
+  System including fractal node orchestrator, swarm intelligence engine, neural network
+  interface, distributed computation manager, consciousness simulator, and ecosystem
+  monitor.
 semantic_scope:
 - architecture
 - fracton

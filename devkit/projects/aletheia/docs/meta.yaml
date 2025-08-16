@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: docs
-description: Comprehensive documentation for Aletheia Fractal Assembly Foundry including architecture specifications, module documentation, protocols, and theoretical foundations for fractal component assembly and execution.
+description: Comprehensive documentation for Aletheia Fractal Assembly Foundry including
+  architecture specifications, module documentation, protocols, and theoretical foundations
+  for fractal component assembly and execution.
 semantic_scope:
 - documentation
 - aletheia

@@ -15,4 +15,7 @@ files:
 child_directories:
 - compression
 - hash_evaluation
+- infrastructure
+- projects
 - random_number
+- sdk
