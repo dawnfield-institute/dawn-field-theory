@@ -306,6 +306,7 @@ dawn-field-theory/
       [id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md
       [id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md
       [id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md
+      [id][F][v1.0][C6][I6][E]_tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md
       [m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md
       [m][F][v0.1][C5][I5]_symbolic_entropy_collapse_and_hodge_mapping.md
       [m][F][v1.0][C4][I4]_recursive_tree.md
@@ -1859,6 +1860,29 @@ dawn-field-theory/
             meta.yaml
             test_all_experiments.py
             test_improved_primes.py
+      TinyCIMM-Navier/
+        README.md
+        SCBF_NEURAL_DYNAMICS_ANALYSIS.md
+        meta.yaml
+        tinycimm_navier.py
+        experiments/
+          meta.yaml
+          run_live_cimm_experiment.py
+          test_scbf_integration.py
+          tinycimm_navier_dashboard.py
+          results/
+            meta.yaml
+            live_cimm_experiment_20250816_171852/
+              DASHBOARD_INDEX.md
+              comprehensive_live_cimm_results.json
+              meta.yaml
+              images/
+                field_aware_flow_analysis.png
+                main_flow_predictions_live_cimm.png
+                meta.yaml
+                neural_weights_extreme_turbulence_evolution.png
+                reynolds_performance_analysis.png
+                turbulent_breakthrough_interpretability.png
       TinyCIMM-Planck/
         [id][F][v1.0][C4][I5][E]_symbolic_collapse_interpretability.md
         meta.yaml
