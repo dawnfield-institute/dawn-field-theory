@@ -1,48 +1,53 @@
-project_name: "Prometheus"
-project_type: "monitoring_analytics"
-version: "0.1.0"
-status: "planning"
-complexity: "C4"
-importance: "I4"
-description: "Comprehensive monitoring and analytics system for Dawn Field Theory projects."
+project_name: Prometheus
+project_type: monitoring_analytics
+version: 0.1.0
+status: planning
+complexity: C4
+importance: I4
+description: Comprehensive monitoring and analytics system for Dawn Field Theory projects.
 authors:
-  - "Peter Lorne Groom"
-created_date: "2025-08-13"
-last_updated: "2025-08-13"
+- Peter Lorne Groom
+created_date: '2025-08-13'
+last_updated: '2025-08-13'
 tags:
-  - "prometheus"
-  - "monitoring"
-  - "analytics"
-  - "system_health"
-  - "predictive_analytics"
+- prometheus
+- monitoring
+- analytics
+- system_health
+- predictive_analytics
 dependencies:
   internal:
-    - "Aletheia"
-    - "GAIA"
-    - "Kronos"
+  - Aletheia
+  - GAIA
+  - Kronos
   external:
-    - "Python 3.11+"
-    - "Analytics libraries"
+  - Python 3.11+
+  - Analytics libraries
 integration_points:
-  - name: "Aletheia"
-    purpose: "Component and system monitoring"
-  - name: "GAIA"
-    purpose: "Emergent behavior analytics"
-  - name: "Kronos"
-    purpose: "Temporal analytics and event logging"
+- name: Aletheia
+  purpose: Component and system monitoring
+- name: GAIA
+  purpose: Emergent behavior analytics
+- name: Kronos
+  purpose: Temporal analytics and event logging
 roadmap:
   phase_0:
-    - "Define monitoring and analytics requirements"
-    - "Design system health metrics"
+  - Define monitoring and analytics requirements
+  - Design system health metrics
   phase_1:
-    - "Prototype real-time monitoring tools"
-    - "Integrate with Aletheia and GAIA"
+  - Prototype real-time monitoring tools
+  - Integrate with Aletheia and GAIA
   phase_2:
-    - "Develop predictive analytics modules"
-    - "Optimize for scalability and reliability"
+  - Develop predictive analytics modules
+  - Optimize for scalability and reliability
 success_metrics:
-  - "Monitoring Coverage"
-  - "Analytics Accuracy"
-  - "Integration with Core Projects"
-  - "System Health Improvement"
-license: "Dawn Field Theory License"
+- Monitoring Coverage
+- Analytics Accuracy
+- Integration with Core Projects
+- System Health Improvement
+license: Dawn Field Theory License
+files:
+- README.md
+- prometheus.md
+child_directories:
+- docs

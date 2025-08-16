@@ -12,8 +12,11 @@ files:
 - core_project_roadmap.md
 - gaia_roadmap.md
 - general_experiments_roadmap.md
+- infrastructure_tools_roadmap.md
+- kronos_roadmap.md
 - math_arithmetic_roadmap.md
 - publication_framework_roadmap.md
+- sdk_analysis_tools_roadmap.md
 - symbolic_entropy_roadmap.md
 - xai_scbf_roadmap.md
 semantic_tags:

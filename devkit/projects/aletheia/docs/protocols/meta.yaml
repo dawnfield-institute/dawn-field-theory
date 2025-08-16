@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: protocols
-description: Communication and integration protocols for Aletheia Fractal Assembly Foundry including MCP interface specifications, Brainstem integration protocols, component assembly workflows, and inter-module communication standards.
+description: Communication and integration protocols for Aletheia Fractal Assembly
+  Foundry including MCP interface specifications, Brainstem integration protocols,
+  component assembly workflows, and inter-module communication standards.
 semantic_scope:
 - protocols
 - aletheia

@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: modules
-description: Individual module specifications for Field Decomposition's signal processing layers including surface analysis, harmonic decomposition, meta-pattern recognition, cognitive processing, symbolic analysis, and infodynamic field computation modules.
+description: Individual module specifications for Field Decomposition's signal processing
+  layers including surface analysis, harmonic decomposition, meta-pattern recognition,
+  cognitive processing, symbolic analysis, and infodynamic field computation modules.
 semantic_scope:
 - modules
 - field-decomposition
