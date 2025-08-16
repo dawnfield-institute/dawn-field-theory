@@ -1,25 +1,24 @@
----
 schema_version: 2.0
 directory_name: experiments
-description: >
-  TinyCIMM-Navier experimental validation suite for fluid dynamics learning.
-  Progressive validation from laminar flows to turbulent regimes using SCBF
-  interpretability framework.
+description: 'TinyCIMM-Navier experimental validation suite for fluid dynamics learning.
+  Progressive validation from laminar flows to turbulent regimes using SCBF interpretability
+  framework.
+
+  '
 semantic_scope:
-  - flow_validation
-  - reynolds_regime_testing
-  - pattern_recognition_validation
-  - turbulence_learning
-  - interpretability_analysis
+- flow_validation
+- reynolds_regime_testing
+- pattern_recognition_validation
+- turbulence_learning
+- interpretability_analysis
 files:
-  - run_flow_experiment.py
-  - laminar_validation.py
-  - turbulent_challenge.py
+- run_live_cimm_experiment.py
+- test_scbf_integration.py
+- tinycimm_navier_dashboard.py
 child_directories:
-  - results
-  - benchmarks
+- results
 validation_stages:
-  - laminar_flows
-  - transition_regimes
-  - turbulent_patterns
-  - cross_validation
+- laminar_flows
+- transition_regimes
+- turbulent_patterns
+- cross_validation
