@@ -1,12 +1,13 @@
 schema_version: '2.0'
 directory_name: live_cimm_experiment_20250816_171852
-description: |
-  Revolutionary TinyCIMM-Navier live CIMM experiment session (17:18:52 UTC) achieving perfect 
-  4/4 turbulent breakthrough detection and demonstrating the mathematical inverse of SEC through 
-  macro emergence patterns. This landmark experiment includes comprehensive dashboard visualizations, 
-  complete SCBF neural dynamics integration, and definitive proof of concept for unified 
-  complexity theory. Contains publication-quality scientific visualizations and breakthrough 
-  documentation establishing TinyCIMM as the foundation for macro-to-micro emergence mathematics.
+description: "Revolutionary TinyCIMM-Navier live CIMM experiment session (17:18:52\
+  \ UTC) achieving perfect \n4/4 turbulent breakthrough detection and demonstrating\
+  \ the mathematical inverse of SEC through \nmacro emergence patterns. This landmark\
+  \ experiment includes comprehensive dashboard visualizations, \ncomplete SCBF neural\
+  \ dynamics integration, and definitive proof of concept for unified \ncomplexity\
+  \ theory. Contains publication-quality scientific visualizations and breakthrough\
+  \ \ndocumentation establishing TinyCIMM as the foundation for macro-to-micro emergence\
+  \ mathematics.\n"
 semantic_scope:
 - live_cimm_experiment_20250816_171852
 - revolutionary-experiment

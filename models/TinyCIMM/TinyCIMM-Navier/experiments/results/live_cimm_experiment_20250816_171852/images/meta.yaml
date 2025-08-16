@@ -1,13 +1,14 @@
 schema_version: '2.0'
 directory_name: images
-description: |
-  Publication-quality scientific visualization dashboards for the revolutionary TinyCIMM-Navier 
-  experiment demonstrating perfect turbulent breakthrough detection and macro-to-micro emergence. 
-  Contains five comprehensive analytical dashboards: main flow predictions with live CIMM analysis, 
-  turbulent breakthrough interpretability mapping, Reynolds performance analysis across regimes, 
-  field-aware flow dynamics visualization, and neural weights evolution during extreme turbulence. 
-  These visualizations represent the first scientific documentation of unified complexity theory 
-  in action, showing the mathematical inverse relationship between SEC and CIMM operations.
+description: "Publication-quality scientific visualization dashboards for the revolutionary\
+  \ TinyCIMM-Navier \nexperiment demonstrating perfect turbulent breakthrough detection\
+  \ and macro-to-micro emergence. \nContains five comprehensive analytical dashboards:\
+  \ main flow predictions with live CIMM analysis, \nturbulent breakthrough interpretability\
+  \ mapping, Reynolds performance analysis across regimes, \nfield-aware flow dynamics\
+  \ visualization, and neural weights evolution during extreme turbulence. \nThese\
+  \ visualizations represent the first scientific documentation of unified complexity\
+  \ theory \nin action, showing the mathematical inverse relationship between SEC\
+  \ and CIMM operations.\n"
 semantic_scope:
 - images
 - scientific-visualization
