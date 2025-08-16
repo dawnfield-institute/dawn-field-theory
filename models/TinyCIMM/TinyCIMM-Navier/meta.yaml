@@ -1,0 +1,31 @@
+---
+schema_version: 2.0
+directory_name: TinyCIMM-Navier
+description: >
+  TinyCIMM-Navier: Field-theoretic neural architecture for fluid dynamics
+  learning through symbolic entropy collapse and pattern recognition.
+  Applies proven TinyCIMM mathematical reasoning paradigm to Navier-Stokes
+  equations via entropy-driven flow pattern navigation.
+semantic_scope:
+  - fluid_dynamics
+  - navier_stokes
+  - symbolic_collapse
+  - pattern_recognition
+  - turbulence_prediction
+  - reynolds_regimes
+  - flow_interpretability
+files:
+  - tinycimm_navier.py
+  - flow_pattern_library.py
+child_directories:
+  - experiments
+  - validation
+  - flow_benchmarks
+related_models:
+  - ../TinyCIMM-Euler
+  - ../TinyCIMM-Planck
+  - ../../scbf
+integration:
+  scbf: true
+  validation_framework: true
+  interpretability: true

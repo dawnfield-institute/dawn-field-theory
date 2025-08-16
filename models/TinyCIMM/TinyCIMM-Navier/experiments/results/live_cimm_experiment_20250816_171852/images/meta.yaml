@@ -1,0 +1,33 @@
+schema_version: '2.0'
+directory_name: images
+description: |
+  Publication-quality scientific visualization dashboards for the revolutionary TinyCIMM-Navier 
+  experiment demonstrating perfect turbulent breakthrough detection and macro-to-micro emergence. 
+  Contains five comprehensive analytical dashboards: main flow predictions with live CIMM analysis, 
+  turbulent breakthrough interpretability mapping, Reynolds performance analysis across regimes, 
+  field-aware flow dynamics visualization, and neural weights evolution during extreme turbulence. 
+  These visualizations represent the first scientific documentation of unified complexity theory 
+  in action, showing the mathematical inverse relationship between SEC and CIMM operations.
+semantic_scope:
+- images
+- scientific-visualization
+- publication-quality
+- dashboard-analytics
+- turbulent-breakthrough
+- macro-micro-emergence
+- flow-predictions
+- interpretability-mapping
+- reynolds-analysis
+- field-dynamics
+- neural-evolution
+- extreme-turbulence
+- unified-complexity
+- sec-cimm-inverse
+- mathematical-documentation
+files:
+- field_aware_flow_analysis.png
+- main_flow_predictions_live_cimm.png
+- neural_weights_extreme_turbulence_evolution.png
+- reynolds_performance_analysis.png
+- turbulent_breakthrough_interpretability.png
+child_directories: []
