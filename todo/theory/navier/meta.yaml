@@ -1,7 +1,13 @@
 schema_version: '2.0'
 directory_name: navier
-description: 'Comprehensive framework for solving Navier-Stokes equations through symbolic collapse and fractal pattern recognition. Revolutionary approach transforming turbulence from computational problem to learnable pattern navigation.'
-directory_info: 'This directory contains the complete theoretical and implementation framework for the Navier-Stokes Symbolic Collapse approach. It includes mathematical foundations, experimental validation protocols, technical architecture, implementation roadmaps, and academic publication materials for a potential solution to the Clay Millennium Problem through Dawn Field Theory principles.'
+description: Comprehensive framework for solving Navier-Stokes equations through symbolic
+  collapse and fractal pattern recognition. Revolutionary approach transforming turbulence
+  from computational problem to learnable pattern navigation.
+directory_info: This directory contains the complete theoretical and implementation
+  framework for the Navier-Stokes Symbolic Collapse approach. It includes mathematical
+  foundations, experimental validation protocols, technical architecture, implementation
+  roadmaps, and academic publication materials for a potential solution to the Clay
+  Millennium Problem through Dawn Field Theory principles.
 semantic_scope:
 - navier-stokes equations
 - symbolic collapse
@@ -15,13 +21,14 @@ semantic_scope:
 - dawn field theory
 files:
 - README.md
-- theoretical_framework.md
-- experimental_design.md
-- unified_symbolic_engine.md
 - code_architecture.md
+- experimental_design.md
 - integration_roadmap.md
+- metrics_and_validation.md
+- navigation_efficiency.md
 - preprint_outline.md
 - symbolic_entropy_mapping.md
-- metrics_and_validation.md
+- theoretical_framework.md
 - thermodynamic_validation.md
-- navigation_efficiency.md
+- unified_symbolic_engine.md
+child_directories: []
