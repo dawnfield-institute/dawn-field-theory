@@ -11,5 +11,6 @@ semantic_scope:
 files:
 - anomaly_analysis.md
 - cosmov2.md
+- navier_stokes_fractal_pattern_solution.md
 - quantum_EM.md
 child_directories: []
