@@ -1,11 +1,11 @@
 schema_version: '2.0'
 directory_name: results
-description: |
-  TinyCIMM-Navier experiment results directory containing comprehensive live CIMM experiments 
-  demonstrating perfect turbulent breakthrough detection (4/4 success rate) and macro-to-micro 
-  emergence patterns. Contains timestamped experiment sessions with neural dynamics tracking, 
-  SCBF metrics integration, and revolutionary dashboard visualizations showing the mathematical 
-  inverse of SEC (macro emergence vs micro actualization).
+description: "TinyCIMM-Navier experiment results directory containing comprehensive\
+  \ live CIMM experiments \ndemonstrating perfect turbulent breakthrough detection\
+  \ (4/4 success rate) and macro-to-micro \nemergence patterns. Contains timestamped\
+  \ experiment sessions with neural dynamics tracking, \nSCBF metrics integration,\
+  \ and revolutionary dashboard visualizations showing the mathematical \ninverse\
+  \ of SEC (macro emergence vs micro actualization).\n"
 semantic_scope:
 - results
 - analysis
@@ -21,7 +21,4 @@ semantic_scope:
 - experimental-validation
 files: []
 child_directories:
-- live_cimm_experiment_20250816_170117
-- live_cimm_experiment_20250816_170501
-- live_cimm_experiment_20250816_171203
 - live_cimm_experiment_20250816_171852

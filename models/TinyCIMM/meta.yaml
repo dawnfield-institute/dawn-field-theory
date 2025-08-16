@@ -20,4 +20,5 @@ files:
 - TinyCIMM_naming.md
 child_directories:
 - TinyCIMM-Euler
+- TinyCIMM-Navier
 - TinyCIMM-Planck
