@@ -1,0 +1,27 @@
+# TinyCIMM-Navier Live CIMM default config (override by setting TINYCIMM_NAVIER_CONFIG)
+seed: 1337
+thermo:
+  temperature_K: 300.0
+breakthrough:
+  collapse_magnitude: 0.08
+  entropy_budget: 2.5
+  min_new_patterns: 2
+sweep:
+  num_seeds: 3
+  complexities: [1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0]
+  targeted:
+    # High-power sampling around suspected boundaries
+    num_seeds: 12
+    cells:
+      - name: extreme_turbulence
+        complexities: [4.50, 4.75, 5.00, 5.25, 5.50, 6.00]
+        steps: 320
+        breakthrough_overrides:
+          warmup_steps: 20
+          delta_entropy: 0.05
+      - name: high_re_chaos
+        complexities: [3.00, 3.25, 3.50, 3.75, 4.00, 4.50, 6.00]
+        steps: 300
+        breakthrough_overrides:
+          warmup_steps: 16
+          delta_entropy: 0.05

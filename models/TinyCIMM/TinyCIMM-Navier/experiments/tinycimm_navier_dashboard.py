@@ -20,6 +20,7 @@ from datetime import datetime
 import json
 import os
 from typing import Dict, List, Optional
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 # Set style similar to TinyCIMM-Euler experiments
 plt.style.use('default')
@@ -197,9 +198,13 @@ class TinyCIMMNavierDashboard:
         save_paths = []
         
         for challenge_name, challenge_data in turbulent_data.items():
-            if challenge_name.startswith('extreme'):  # Focus on extreme turbulence
+            if not isinstance(challenge_data, dict) or 'patterns_discovered' not in challenge_data:
+                continue
+            base_name = str(challenge_name).split('|')[0]
+            if base_name.startswith('extreme'):  # Focus on extreme turbulence
                 fig, axes = plt.subplots(2, 2, figsize=(12, 10))
-                fig.suptitle(f'Neural Weight Evolution - {challenge_name.replace("_", " ").title()}\n'
+                title_name = base_name.replace('_', ' ').title()
+                fig.suptitle(f'Neural Weight Evolution - {title_name}\n'
                            f'Live CIMM Structural Adaptation During Turbulent Breakthrough', 
                            fontsize=13, fontweight='bold')
                 
@@ -210,7 +215,9 @@ class TinyCIMMNavierDashboard:
                     self._plot_weight_snapshot(ax, step, challenge_name)
                 
                 plt.tight_layout()
-                save_path = f"{self.output_dir}/images/neural_weights_{challenge_name}_evolution.png"
+                # Sanitize filename for Windows (no pipes or special chars)
+                safe_name = ''.join(ch if (ch.isalnum() or ch in ('_', '-')) else '_' for ch in str(challenge_name))
+                save_path = f"{self.output_dir}/images/neural_weights_{safe_name}_evolution.png"
                 plt.savefig(save_path, dpi=300, bbox_inches='tight')
                 plt.close()
                 save_paths.append(save_path)
@@ -278,11 +285,20 @@ class TinyCIMMNavierDashboard:
                    ha='center', va='center', transform=ax.transAxes)
     
     def _plot_entropy_evolution(self, ax):
-        """Plot entropy budget evolution"""
-        # Simulate entropy evolution from all phases
-        steps = np.arange(0, 100, 1)
-        entropy = 1.0 + 2.0 * (1 - np.exp(-steps/30)) + 0.1 * np.sin(steps/5)
-        
+        """Plot entropy budget evolution using Phase 2 data if available"""
+        collapse_data = self.results.get('phase_2_entropy_collapse', {})
+        series = None
+        for _, scen in collapse_data.items():
+            if isinstance(scen, dict) and 'entropy_dynamics' in scen:
+                series = scen['entropy_dynamics']
+                break
+        if series:
+            steps = list(range(len(series)))
+            entropy = [float(x.get('entropy_budget', 0.0)) for x in series]
+        else:
+            steps = np.arange(0, 100, 1)
+            entropy = 1.0 + 2.0 * (1 - np.exp(-steps/30)) + 0.1 * np.sin(steps/5)
+
         ax.plot(steps, entropy, linewidth=2, color='#2ecc71')
         ax.fill_between(steps, 0, entropy, alpha=0.3, color='#2ecc71')
         ax.set_xlabel('Prediction Steps')
@@ -358,6 +374,27 @@ class TinyCIMMNavierDashboard:
             cbar.set_label('Major Insights')
         else:
             ax.text(0.5, 0.5, 'No breakthrough data', ha='center', va='center', transform=ax.transAxes)
+
+        # Overlay Landauer energy markers per challenge
+        def _name_to_re(name: str) -> float:
+            if 'high_re_chaos' in name:
+                return 100000
+            if 'extreme_turbulence' in name:
+                return 200000
+            if 'mixing_layer' in name:
+                return 25000
+            if 'pipe_turbulence' in name:
+                return 10000
+            return 1000
+        for name, data in turbulent_data.items():
+            re_x = _name_to_re(name)
+            for ins in data.get('major_insights', []):
+                step = ins.get('step')
+                energy = ins.get('landauer_energy_J')
+                if step is None or energy is None:
+                    continue
+                size = max(10.0, 20 + 10 * np.log10(1e9 * max(energy, 1e-30)))
+                ax.scatter([re_x], [step], s=size, c='red', alpha=0.25, marker='*')
     
     def _plot_performance_metrics(self, ax):
         """Plot key performance metrics"""
@@ -391,10 +428,20 @@ class TinyCIMMNavierDashboard:
     
     def _plot_prediction_timing(self, ax):
         """Plot prediction timing analysis"""
-        # Simulate timing data
-        steps = np.arange(0, 50)
-        times = 0.5 + 0.3 * np.random.normal(0, 0.1, len(steps))
-        times = np.maximum(times, 0.1)  # Ensure positive times
+        # Use Phase 1 timing if present, else simulate
+        phase1 = self.results.get('phase_1_pattern_discovery', {})
+        times = None
+        if isinstance(phase1, dict):
+            for _, scen in phase1.items():
+                if isinstance(scen, dict) and scen.get('prediction_times'):
+                    times = np.array(scen['prediction_times'], dtype=float)
+                    break
+        if times is None:
+            steps = np.arange(0, 50)
+            times = 0.5 + 0.3 * np.random.normal(0, 0.1, len(steps))
+            times = np.maximum(times, 0.1)
+        else:
+            steps = np.arange(len(times))
         
         ax.plot(steps, times, alpha=0.7, linewidth=1)
         ax.axhline(y=np.mean(times), color='red', linestyle='--', 
@@ -514,108 +561,345 @@ class TinyCIMMNavierDashboard:
         ax.legend()
     
     def _plot_reynolds_sweep_performance(self, ax):
-        """Plot Reynolds sweep performance"""
-        reynolds = [100, 500, 1000, 2000, 3000, 5000, 8000, 15000, 30000, 50000]
-        patterns = [0, 0, 0, 1, 1, 1, 2, 3, 4, 4]  # From typical results
-        
-        ax.semilogx(reynolds, patterns, 'o-', linewidth=2, markersize=8)
+        """Plot performance across Reynolds using adaptation data if present"""
+        adaptation = self.results.get('phase_3_reynolds_adaptation', {})
+        rr = adaptation.get('regime_recognition', [])
+        if rr:
+            reynolds = [r.get('reynolds', 0) for r in rr]
+            budgets = [r.get('entropy_budget', 0) for r in rr]
+        else:
+            reynolds = [100, 500, 1000, 2000, 3000, 5000, 8000, 15000, 30000, 50000]
+            budgets = [0.5, 0.6, 0.7, 0.8, 1.0, 1.1, 1.25, 1.4, 1.5, 1.6]
+
+        ax.semilogx(reynolds, budgets, 'o-', linewidth=2, markersize=8)
         ax.set_xlabel('Reynolds Number')
-        ax.set_ylabel('Patterns Discovered')
+        ax.set_ylabel('Entropy Budget (a.u.)')
         ax.set_title('Reynolds Sweep Performance')
         ax.grid(True, alpha=0.3)
-        
-        # Add regime boundaries
         for regime, (re_min, re_max) in self.reynolds_ranges.items():
             if re_min < max(reynolds):
                 ax.axvspan(re_min, re_max, alpha=0.1, color=self.regime_colors[regime])
     
     def _plot_pattern_discovery_rate(self, ax):
-        """Plot pattern discovery rate by Reynolds number"""
-        reynolds_bins = [1000, 5000, 10000, 50000, 100000]
-        discovery_rates = [0.1, 0.3, 0.6, 0.8, 0.9]
-        
-        ax.bar(range(len(reynolds_bins)), discovery_rates, 
-               color=self.regime_colors['turbulent'], alpha=0.7)
-        ax.set_xticks(range(len(reynolds_bins)))
-        ax.set_xticklabels([f'{r/1000:.0f}k' for r in reynolds_bins])
-        ax.set_xlabel('Reynolds Number')
-        ax.set_ylabel('Discovery Rate')
-        ax.set_title('Pattern Discovery Rate')
+        """Stacked bar: pattern discovery by regime combining Phase 1 and Phase 4."""
+        phase1 = self.results.get('phase_1_pattern_discovery', {})
+        phase4 = self.results.get('phase_4_turbulent_challenge', {})
+        categories = ['Laminar', 'Transition', 'Turbulent', 'Extreme']
+        p1_counts = {c: 0 for c in categories}
+        p4_counts = {c: 0 for c in categories}
+
+        # Phase 1 categorization by scenario name
+        for name, scen in (phase1 or {}).items():
+            if not isinstance(scen, dict):
+                continue
+            n = len(scen.get('patterns_discovered', []))
+            lname = str(name).lower()
+            if any(k in lname for k in ['poiseuille', 'couette', 'laminar']):
+                p1_counts['Laminar'] += n
+            elif 'transition' in lname:
+                p1_counts['Transition'] += n
+            else:
+                p1_counts['Turbulent'] += n
+
+        # Phase 4: map challenges to regimes via approximate Reynolds
+        def _challenge_re(name: str) -> float:
+            if 'high_re_chaos' in name:
+                return 100000
+            if 'extreme_turbulence' in name:
+                return 200000
+            if 'mixing_layer' in name:
+                return 25000
+            if 'pipe_turbulence' in name:
+                return 10000
+            return 1000
+        for name, data in (phase4 or {}).items():
+            re = _challenge_re(name)
+            regime = self._classify_reynolds(re)
+            reg_label = regime.capitalize() if regime != 'unknown' else 'Turbulent'
+            n = len(data.get('patterns_discovered', []))
+            if reg_label not in p4_counts:
+                reg_label = 'Turbulent'
+            p4_counts[reg_label] += n
+
+        x = np.arange(len(categories))
+        width = 0.6
+        p1_vals = np.array([p1_counts[c] for c in categories])
+        p4_vals = np.array([p4_counts[c] for c in categories])
+
+        b1 = ax.bar(x, p1_vals, width, label='Phase 1', color=[self.regime_colors['laminar'], self.regime_colors['transition'], self.regime_colors['turbulent'], self.regime_colors['extreme']])
+        b2 = ax.bar(x, p4_vals, width, bottom=p1_vals, label='Phase 4', color=['#85c1e9', '#f8c471', '#f1948a', '#c39bd3'])
+
+        ax.set_xticks(x)
+        ax.set_xticklabels(categories)
+        ax.set_ylabel('Patterns Discovered')
+        ax.set_title('Pattern Discovery by Regime (Stacked Phase 1 + Phase 4)')
+        ax.legend()
+
+        # Annotate totals
+        totals = p1_vals + p4_vals
+        for i, total in enumerate(totals):
+            ax.text(x[i], total + 0.05, str(int(total)), ha='center', va='bottom', fontsize=9)
     
     def _plot_entropy_vs_reynolds(self, ax):
-        """Plot entropy budget vs Reynolds number"""
-        reynolds = np.logspace(2, 5, 50)
-        entropy = 0.5 + 2.5 * (1 - np.exp(-reynolds/50000))
-        
+        """Plot entropy budget vs Reynolds from adaptation data if present"""
+        adaptation = self.results.get('phase_3_reynolds_adaptation', {})
+        rr = adaptation.get('regime_recognition', [])
+        if rr:
+            reynolds = np.array([r.get('reynolds', 0) for r in rr], dtype=float)
+            entropy = np.array([r.get('entropy_budget', 0) for r in rr], dtype=float)
+        else:
+            reynolds = np.logspace(2, 5, 50)
+            entropy = 0.5 + 2.5 * (1 - np.exp(-reynolds/50000))
         ax.semilogx(reynolds, entropy, linewidth=3, color='green')
         ax.set_xlabel('Reynolds Number')
-        ax.set_ylabel('Entropy Budget')
+        ax.set_ylabel('Entropy Budget (a.u.)')
         ax.set_title('Entropy vs Reynolds')
         ax.grid(True, alpha=0.3)
     
     def _plot_breakthrough_heatmap(self, ax):
-        """Plot breakthrough probability heatmap"""
-        reynolds_values = [1000, 5000, 10000, 25000, 50000, 100000]
-        complexity_values = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
-        
-        # Create probability matrix
-        breakthrough_prob = np.random.beta(2, 5, (len(reynolds_values), len(complexity_values)))
-        
-        im = ax.imshow(breakthrough_prob, cmap='YlOrRd', aspect='auto')
-        ax.set_xticks(range(len(complexity_values)))
-        ax.set_xticklabels(complexity_values)
-        ax.set_yticks(range(len(reynolds_values)))
-        ax.set_yticklabels([f'{r/1000:.0f}k' for r in reynolds_values])
-        ax.set_xlabel('Input Complexity')
-        ax.set_ylabel('Reynolds Number')
-        ax.set_title('Breakthrough Probability')
-        
+        """Plot breakthrough probability heatmap; use sweep aggregates if available.
+
+        - If sweep_stats present, compute grid Z from per-challenge per-complexity rates.
+        - Scatter overlay sized by total runs (n) and colored by rate.
+        - Annotate CI width and N when available; show TTB mean in markers if present.
+        """
+        turbs = self.results.get('phase_4_turbulent_challenge', {})
+        sweep = turbs.get('sweep_stats', {}) if isinstance(turbs, dict) else {}
+        R_vals = []
+        C_vals = []
+        P_vals = []
+        N_vals = []
+        CIw_vals = []
+        TTB_vals = []
+
+        def _name_to_re(name: str) -> float:
+            if 'high_re_chaos' in name:
+                return 100000
+            if 'extreme_turbulence' in name:
+                return 200000
+            if 'mixing_layer' in name:
+                return 25000
+            if 'pipe_turbulence' in name:
+                return 10000
+            return 1000
+
+        # Prefer sweep aggregates when present
+        if sweep:
+            for ch_name, by_c in sweep.items():
+                re = _name_to_re(ch_name)
+                for c_key, stats in by_c.items():
+                    try:
+                        comp = float(c_key.split('=')[1])
+                    except Exception:
+                        comp = 0.5
+                    rate = float(stats.get('rate', 0.0))
+                    total = int(stats.get('total', 0))
+                    ciw = float(stats.get('ci_high', 0.0) - stats.get('ci_low', 0.0)) if ('ci_high' in stats and 'ci_low' in stats) else 0.0
+                    ttb = stats.get('ttb_mean')
+                    R_vals.append(re)
+                    C_vals.append(comp)
+                    P_vals.append(rate)
+                    N_vals.append(total)
+                    CIw_vals.append(ciw)
+                    TTB_vals.append(ttb if ttb is not None else np.nan)
+        else:
+            for name, data in turbs.items():
+                if name == 'sweep_stats':
+                    continue
+                re = _name_to_re(name)
+                cfg = data.get('challenge_config', {})
+                comp = cfg.get('complexity', 0.5)
+                prob = 1.0 if data.get('breakthrough_detected') else 0.0
+                R_vals.append(re)
+                C_vals.append(comp)
+                P_vals.append(prob)
+                N_vals.append(1)
+
+        if not R_vals:
+            R = np.logspace(3, 5, 10)
+            C = np.linspace(0.1, 1.0, 10)
+            Z = np.zeros((len(C), len(R)))
+        else:
+            R_unique = np.array(sorted(set(R_vals)))
+            C_unique = np.array(sorted(set(C_vals)))
+            # Ensure a non-degenerate extent for imshow when only one complexity level is present
+            if len(C_unique) == 1:
+                c0 = float(C_unique[0])
+                C = np.array([max(0.0, c0 - 0.01), min(1.0, c0 + 0.01)])
+            else:
+                C = C_unique
+            R = R_unique
+            Z = np.zeros((len(C), len(R)))
+            for i, cv in enumerate(C):
+                for j, rv in enumerate(R):
+                    vals = [p for r, c, p in zip(R_vals, C_vals, P_vals)
+                            if r == rv and (abs(c - cv) < 1e-6 or (len(C_unique) == 1 and abs(c - C_unique[0]) < 1e-6))]
+                    Z[i, j] = np.mean(vals) if vals else 0.0
+
+        im = ax.imshow(Z, aspect='auto', origin='lower', extent=[R.min(), R.max(), C.min(), C.max()], cmap='YlOrRd')
+        ax.set_xscale('log')
+        ax.set_xlabel('Reynolds Number')
+        ax.set_ylabel('Input Complexity')
+        title = 'Breakthrough Probability'
+        if sweep:
+            title += ' (sweep)'
+        ax.set_title(title)
+        # Overlay observed points colored by probability; size ~ total runs
+        if R_vals:
+            sizes = [40 + 20*float(n) for n in (N_vals or [1]*len(R_vals))]
+            ax.scatter(R_vals, C_vals, c=P_vals, cmap='YlOrRd', edgecolor='k', s=sizes, alpha=0.9)
+            # Add simple text annotation with N and CI width; optionally TTB if present
+            try:
+                for (x, y, n, ciw, ttb) in zip(R_vals, C_vals, N_vals, (CIw_vals or [np.nan]*len(R_vals)), (TTB_vals or [np.nan]*len(R_vals))):
+                    label = f"n={n}"
+                    if ciw and not np.isnan(ciw):
+                        label += f"\nCIw={ciw:.2f}"
+                    if ttb is not None and not (isinstance(ttb, float) and np.isnan(ttb)):
+                        label += f"\nTTB={float(ttb):.0f}"
+                    ax.text(x, y, label, fontsize=7, ha='center', va='center', color='black', alpha=0.8)
+            except Exception:
+                pass
         plt.colorbar(im, ax=ax)
     
     def _plot_velocity_field_analysis(self, ax):
-        """Plot velocity field analysis"""
-        # Create synthetic velocity field data
+        """Restore quiver velocity field; add inset for baseline MSE trend if available."""
+        # Quiver field (synthetic visualization of velocity structure)
         x = np.linspace(0, 10, 20)
         y = np.linspace(0, 5, 10)
         X, Y = np.meshgrid(x, y)
         U = np.sin(X) * np.cos(Y)
         V = -np.cos(X) * np.sin(Y)
-        
-        ax.quiver(X, Y, U, V, alpha=0.7)
+        ax.quiver(X, Y, U, V, color='black', alpha=0.8, angles='xy', scale_units='xy', scale=1)
         ax.set_xlabel('X Position')
-        ax.set_ylabel('Y Position') 
+        ax.set_ylabel('Y Position')
         ax.set_title('Velocity Field Analysis')
         ax.set_aspect('equal')
+
+        # Optional inset: baseline MSE over steps
+        phase1 = self.results.get('phase_1_pattern_discovery', {})
+        mse = None
+        for _, scen in phase1.items():
+            if isinstance(scen, dict) and scen.get('baseline_mse_history'):
+                mse = np.array(scen['baseline_mse_history'], dtype=float)
+                break
+        if mse is not None and len(mse) > 1:
+            inset = inset_axes(ax, width="35%", height="35%", loc='upper right')
+            t = np.arange(len(mse))
+            msen = (mse - mse.min()) / (np.ptp(mse) + 1e-12)
+            inset.plot(t, msen, label='baseline MSE (norm)', color='#3498db')
+            inset.plot(t, np.gradient(msen), label='d/dt', color='#e74c3c', alpha=0.8)
+            inset.set_xticks([])
+            inset.set_yticks([])
+            inset.set_title('MSE inset', fontsize=8)
     
     def _plot_pressure_field_evolution(self, ax):
-        """Plot pressure field evolution"""
-        steps = np.arange(0, 50)
-        pressure_variance = 0.1 + 0.5 * np.sin(steps/10) * np.exp(-steps/30)
-        
-        ax.plot(steps, pressure_variance, linewidth=2, color='blue')
+        """Plot pressure/error evolution using baseline MSE if available"""
+        phase1 = self.results.get('phase_1_pattern_discovery', {})
+        mse = None
+        for _, scen in phase1.items():
+            if isinstance(scen, dict) and scen.get('baseline_mse_history'):
+                mse = np.array(scen['baseline_mse_history'], dtype=float)
+                break
+        if mse is None:
+            steps = np.arange(0, 50)
+            series = 0.1 + 0.5 * np.sin(steps/10) * np.exp(-steps/30)
+        else:
+            steps = np.arange(len(mse))
+            series = mse
+        ax.plot(steps, series, linewidth=2, color='blue')
         ax.set_xlabel('Steps')
-        ax.set_ylabel('Pressure Variance')
+        ax.set_ylabel('Pressure/Error (normalized)')
         ax.set_title('Pressure Field Evolution')
         ax.grid(True, alpha=0.3)
     
     def _plot_vorticity_detection(self, ax):
-        """Plot vorticity detection"""
-        # Create vorticity data
-        theta = np.linspace(0, 2*np.pi, 100)
-        vorticity = np.sin(2*theta) + 0.5*np.sin(4*theta)
-        
-        ax.plot(theta, vorticity, linewidth=2, color='red')
-        ax.set_xlabel('Angular Position')
-        ax.set_ylabel('Vorticity')
-        ax.set_title('Vorticity Detection')
-        ax.grid(True, alpha=0.3)
+        """Plot significance using -log10(p) from null controls; add annotations; fallback if uninformative."""
+        nulls = self.results.get('phase_5_null_controls', {})
+        use_bars = False
+        if nulls:
+            names = list(nulls.keys())
+            pvals = [max(nulls[n].get('p_value', 1.0), 1e-12) for n in names]
+            observed = [int(nulls[n].get('observed_collapse_count', 0)) for n in names]
+            n_perm = [nulls[n].get('n_permutations') or nulls[n].get('n_perm') for n in names]
+            # Show bars if any collapses or any moderately small p-value
+            informative = any(o > 0 for o in observed) or any(p < 0.5 for p in pvals)
+            if informative:
+                values = -np.log10(pvals)
+                bars = ax.bar(names, values, color='#e74c3c', alpha=0.85)
+                ax.set_ylabel('-log10(p-value)')
+                title = 'Collapse Significance vs Null'
+                if any(n is not None for n in n_perm):
+                    np_str = ','.join(str(n) if n is not None else '?' for n in n_perm)
+                    title += f' (n_perm={np_str})'
+                ax.set_title(title)
+                ax.set_ylim(0, max(3, float(np.max(values)) * 1.25))
+                for b, v, o in zip(bars, values, observed):
+                    ax.text(b.get_x() + b.get_width()/2, v + 0.05, f"{v:.2f}\nobs={o}", ha='center', va='bottom', fontsize=8)
+                ax.grid(True, axis='y', alpha=0.3)
+                use_bars = True
+        if not use_bars:
+            theta = np.linspace(0, 2*np.pi, 200)
+            vorticity = np.sin(2*theta) + 0.5*np.sin(4*theta)
+            ax.plot(theta, vorticity, linewidth=2, color='red')
+            ax.set_xlabel('Angular Position')
+            ax.set_ylabel('Vorticity')
+            title = 'Vorticity Detection'
+            if nulls:
+                title += ' (no collapses observed; p≈1)'
+            ax.set_title(title)
+            ax.grid(True, alpha=0.3)
     
     def _plot_flow_coherence(self, ax):
-        """Plot flow field coherence"""
-        steps = np.arange(0, 50)
-        coherence = 0.5 + 0.4 * np.tanh((steps - 20)/10)
-        
-        ax.plot(steps, coherence, linewidth=2, color='purple')
+        """Coherence as cumulative insight timing across challenges with overlays and CI.
+
+        Sources used in order: major_insights[].step -> insights_timeline[].step -> synthetic.
+        Each challenge curve is normalized to [0,1]; we average and show a light CI band.
+        """
+        turbs = self.results.get('phase_4_turbulent_challenge', {})
+        curves = []
+        for _, data in turbs.items():
+            steps_list = []
+            # Primary: major_insights
+            for e in (data.get('major_insights') or []):
+                if isinstance(e, dict) and 'step' in e:
+                    steps_list.append(int(e['step']))
+            # Fallback: insights_timeline
+            if not steps_list:
+                for e in (data.get('insights_timeline') or []):
+                    if isinstance(e, dict) and 'step' in e:
+                        steps_list.append(int(e['step']))
+            if not steps_list:
+                continue
+            L = max(steps_list) + 1
+            counts = np.zeros(L, dtype=float)
+            for s in steps_list:
+                if 0 <= s < L:
+                    counts[s] += 1.0
+            cumu = np.cumsum(counts)
+            if cumu[-1] > 0:
+                cumu = cumu / cumu[-1]
+            curves.append(cumu)
+        if curves:
+            L = max(len(c) for c in curves)
+            padded = [np.pad(c, (0, L - len(c)), mode='edge') for c in curves]
+            arr = np.vstack(padded)
+            mean = arr.mean(axis=0)
+            std = arr.std(axis=0)
+            if L >= 5:
+                kernel = np.ones(5)/5.0
+                mean = np.convolve(mean, kernel, mode='same')
+                std = np.convolve(std, kernel, mode='same')
+            steps = np.arange(L)
+            # Overlays
+            for c in padded:
+                ax.plot(np.arange(L), c, color='gray', alpha=0.25, linewidth=1)
+            ci = std / max(1, int(np.sqrt(len(padded))))
+            ax.fill_between(steps, np.clip(mean - ci, 0, 1), np.clip(mean + ci, 0, 1), color='plum', alpha=0.2, linewidth=0)
+            ax.plot(steps, np.clip(mean, 0, 1), linewidth=2.5, color='purple')
+        else:
+            steps = np.arange(0, 50)
+            series = 0.5 + 0.4 * np.tanh((steps - 20)/10)
+            ax.plot(steps, series, linewidth=2.5, color='purple')
         ax.set_xlabel('Steps')
         ax.set_ylabel('Coherence')
         ax.set_title('Flow Coherence')

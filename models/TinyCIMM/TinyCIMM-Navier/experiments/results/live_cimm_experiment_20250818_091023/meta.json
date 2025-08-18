@@ -1,0 +1,81 @@
+{
+  "experiment_id": "20250818_091023",
+  "timestamp": "2025-08-18T09:10:23.294394",
+  "git_commit": "6098e11b29d7261552fdddfb3b5f86a312bb59d4",
+  "config": {
+    "seed": 1337,
+    "thermo": {
+      "temperature_K": 300.0
+    },
+    "null_controls": {
+      "n_permutations": 1000,
+      "tau_percentile": 60,
+      "sensitive_tau_percentile": 40,
+      "jitter_sigma": 0.05
+    },
+    "breakthrough": {
+      "collapse_magnitude": 0.08,
+      "entropy_budget": 2.5,
+      "min_new_patterns": 2,
+      "warmup_steps": 5,
+      "delta_entropy": 0.15
+    },
+    "sweep": {
+      "num_seeds": 3,
+      "complexities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0
+      ],
+      "targeted": {
+        "num_seeds": 12,
+        "cells": [
+          {
+            "name": "extreme_turbulence",
+            "complexities": [
+              4.5,
+              4.75,
+              5.0,
+              5.25,
+              5.5,
+              6.0
+            ],
+            "steps": 320,
+            "breakthrough_overrides": {
+              "warmup_steps": 20,
+              "delta_entropy": 0.05
+            }
+          },
+          {
+            "name": "high_re_chaos",
+            "complexities": [
+              3.0,
+              3.25,
+              3.5,
+              3.75,
+              4.0,
+              4.5,
+              6.0
+            ],
+            "steps": 300,
+            "breakthrough_overrides": {
+              "warmup_steps": 16,
+              "delta_entropy": 0.05
+            }
+          }
+        ]
+      }
+    }
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "torch": "2.0.1+cu117",
+  "numpy": "1.26.4"
+}
