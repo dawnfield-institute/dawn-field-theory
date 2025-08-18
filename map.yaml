@@ -345,6 +345,22 @@ dawn-field-theory/
         [m][F][v1.0][C4][I4]_alignment_with_zeilinger_arndt.md
         [m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md
         meta.yaml
+      preprints/
+        drafts/
+          AIXPreprint_draft.md
+          CIPPreprint_draft.md
+          DFT_Infodynamics_preprint_draft.md
+          ITERATION_PLAN_v2.md
+          NavierStokesSymbolicCollapse_draft.md
+          RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
+          ResonantSymbolicConvergencePreprint_draft.md
+          SECPreprint_draft.md
+          meta.yaml
+          resources/
+            CIM.docx
+            CIM.md
+            entropy_minimized_architecture.md
+            mathmatics_next_steps.md
     experiments/
       README.md
       meta.yaml
@@ -2490,34 +2506,6 @@ dawn-field-theory/
       cip_domain_upgrade.md
       meta.yaml
       ollama_self_hosted_runner.md
-    left_for_first_release/
-      entropy_minimized_architecture.md
-      mathmatics_next_steps.md
-      meta.yaml
-      preprints/
-        AIXPreprint_skeleton.md
-        CIPPreprint_skeleton.md
-        DFT_PreprintSeries_Prelude_and_Guide.md
-        RecursiveMathematicalPlasticity_EntropyAwareArchitecture_skeleton.md
-        ResonantSymbolicConvergencePreprint_skeleton.md
-        SECPreprint_skeleton.md
-        infodynamicsDFTPreprint_skeleton.md
-        meta.yaml
-        drafts/
-          AIXPreprint_draft.md
-          CIPPreprint_draft.md
-          DFT_Infodynamics_preprint_draft.md
-          ITERATION_PLAN_v2.md
-          NavierStokesSymbolicCollapse_draft.md
-          RELEASE_CHECKLIST.md
-          RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
-          ResonantSymbolicConvergencePreprint_draft.md
-          SECPreprint_draft.md
-          meta.yaml
-        resources/
-          CIM.docx
-          CIM.md
-          meta.yaml
     sdk/
       meta.yaml
     theory/
