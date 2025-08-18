@@ -1,0 +1,398 @@
+{
+  "results": [
+    {
+      "reynolds": 10.0,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 10.0,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 10.0,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 88.42105263157895,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 88.42105263157895,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 88.42105263157895,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 166.8421052631579,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 166.8421052631579,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 166.8421052631579,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 245.26315789473682,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 245.26315789473682,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 245.26315789473682,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 323.6842105263158,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 323.6842105263158,
+      "geometry": "channel",
+      "execution_time": 0.001039743423461914,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 323.6842105263158,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 0.9989594172736732,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 402.10526315789474,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 402.10526315789474,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 0.9989594172736732,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 402.10526315789474,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 480.52631578947364,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 480.52631578947364,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 0.9989594172736732,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 480.52631578947364,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 0.9989594172736732,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 558.9473684210526,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 558.9473684210526,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 0.9989594172736732,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 558.9473684210526,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 0.9989594172736732,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 637.3684210526316,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 637.3684210526316,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 637.3684210526316,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 0.9989594172736732,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 715.7894736842105,
+      "geometry": "pipe",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 715.7894736842105,
+      "geometry": "channel",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    },
+    {
+      "reynolds": 715.7894736842105,
+      "geometry": "cavity",
+      "execution_time": 0.0,
+      "max_velocity": 3.6484128252147836,
+      "tree_nodes": 3,
+      "tree_depth": 1,
+      "navigation_path": [
+        0,
+        2
+      ],
+      "success": true
+    }
+  ],
+  "execution_time": 0.001039743423461914,
+  "total_tests": 30,
+  "success_rate": 1.0,
+  "timestamp": "2025-08-18T14:15:46.650448"
+}

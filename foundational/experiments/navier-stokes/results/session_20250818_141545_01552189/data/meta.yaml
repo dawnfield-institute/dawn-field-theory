@@ -1,0 +1,10 @@
+schema_version: '2.0'
+directory_name: data
+description: Auto-generated metadata for data directory.
+semantic_scope:
+- data
+files:
+- performance_test_results.json
+- unit_test_results.json
+- visualization_test_results.json
+child_directories: []

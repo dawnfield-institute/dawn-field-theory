@@ -1,0 +1,44 @@
+# Default configuration for symbolic Navier-Stokes engine
+
+# Pattern Tree Configuration
+pattern_tree:
+  max_depth: 10
+  branching_factor: 4
+  initial_patterns: ["laminar", "turbulent"]
+
+# Entropy Configuration  
+entropy:
+  vector_length: 128
+  hierarchy_levels: 4
+  hash_algorithm: "sha256"
+
+# Navigation Configuration
+navigation:
+  algorithm: "greedy"
+  distance_metric: "l2"
+  optimization: false
+
+# Memory Configuration
+memory:
+  max_history: 1000
+  compression: true
+  reversibility_threshold: 0.95
+
+# Thermodynamic Configuration
+thermodynamics:
+  temperature: 300.0  # Kelvin
+  landauer_validation: true
+  energy_tolerance: 1e-3
+
+# Validation Configuration
+validation:
+  classical_solutions: true
+  cfd_benchmarks: false
+  experimental_data: false
+  performance_metrics: true
+
+# Visualization Configuration
+visualization:
+  field_resolution: [32, 32]
+  save_plots: false
+  plot_format: "png"

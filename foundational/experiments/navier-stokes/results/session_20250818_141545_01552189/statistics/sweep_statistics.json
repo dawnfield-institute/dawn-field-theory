@@ -1,0 +1,42 @@
+{
+  "total_simulations": 1000,
+  "execution_time": {
+    "mean": 5.3683996200561524e-05,
+    "std": 0.00022734066929883573,
+    "min": 0.0,
+    "max": 0.0012230873107910156,
+    "median": 0.0
+  },
+  "reynolds_range": {
+    "min": 10.0,
+    "max": 49999.99999999999,
+    "mean": 8745.386785656725
+  },
+  "regime_distribution": {
+    "turbulent": 530,
+    "laminar": 315,
+    "transition": 155
+  },
+  "geometry_distribution": {
+    "cavity": 335,
+    "channel": 334,
+    "pipe": 331
+  },
+  "tree_statistics": {
+    "avg_nodes": 3.0,
+    "max_nodes": 3,
+    "avg_depth": 1.0,
+    "max_depth": 1
+  },
+  "navigation_efficiency": {
+    "avg_path_length": 2.0,
+    "max_path_length": 2,
+    "path_length_std": 0.0
+  },
+  "complexity_analysis": {
+    "log_reynolds_time_correlation": -0.055361182608340644,
+    "suggests_log_scaling": false,
+    "tree_growth_bounded": true,
+    "path_length_bounded": true
+  }
+}

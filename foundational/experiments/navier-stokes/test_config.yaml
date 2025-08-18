@@ -1,0 +1,45 @@
+output:
+  export_formats:
+  - json
+  - csv
+  generate_report: true
+  save_raw_data: true
+parameter_sweeps:
+  geometries:
+  - pipe
+  - channel
+  - cavity
+  pressure_gradients:
+  - -0.05
+  - -0.1
+  - -0.15
+  - -0.2
+  - -0.25
+  reynolds_ranges:
+    laminar:
+      count: 20
+      max: 1500
+      min: 10
+    transition:
+      count: 15
+      max: 3000
+      min: 1500
+    turbulent:
+      count: 25
+      max: 50000
+      min: 3000
+  sample_size: 500
+  velocities:
+  - 0.5
+  - 1.0
+  - 1.5
+  - 2.0
+  - 2.5
+performance:
+  max_reynolds: 100000
+  timeout_seconds: 300
+test_suite:
+  parameter_sweeps: true
+  performance_tests: true
+  unit_tests: true
+  visualization_tests: true

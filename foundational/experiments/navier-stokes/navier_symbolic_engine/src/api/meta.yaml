@@ -1,0 +1,18 @@
+schema_version: '2.0'
+directory_name: api
+description: Application Programming Interface for experimental symbolic navigation engine. Provides standardized interfaces for configuration management, engine operations, and result handling. Designed to enable reproducible experimentation and facilitate community exploration of symbolic approaches to fluid dynamics computation.
+semantic_scope:
+- api
+- engine-interface
+- configuration-management
+- result-handling
+- standardized-interface
+- reproducible-experimentation
+- community-tools
+files:
+- __init__.py
+- config_manager.py
+- engine_interface.py
+- result_manager.py
+child_directories:
+- __pycache__

@@ -1,0 +1,20 @@
+schema_version: '2.0'
+directory_name: core
+description: Core algorithmic components for experimental symbolic navigation. Contains entropy-driven navigation logic, pattern tree structures, memory tracking systems, solution composition methods, and thermodynamic validation protocols. These fundamental components explore whether pattern-based approaches might offer computational alternatives to traditional fluid dynamics methods.
+semantic_scope:
+- core-algorithms
+- entropy-navigation
+- pattern-trees
+- memory-tracking
+- solution-composition
+- thermodynamic-validation
+- experimental-computation
+files:
+- __init__.py
+- entropy_navigator.py
+- memory_tracker.py
+- pattern_tree.py
+- solution_composer.py
+- thermodynamic_validator.py
+child_directories:
+- __pycache__

@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: live_cimm_experiment_20250818_091023
+description: TinyCIMM-Navier experimental results from August 18, 2025 live cognition study. Contains comprehensive results from symbolic collapse investigations in fluid dynamics contexts, exploring real-time pattern recognition without traditional training loops. These preliminary findings suggest promising cognitive architecture characteristics that warrant community investigation.
+semantic_scope:
+- tinycimm-navier
+- live-cognition-experiment
+- symbolic-collapse
+- fluid-dynamics-cognition
+- real-time-pattern-recognition
+- cognitive-architecture
+- experimental-results
+files:
+- comprehensive_live_cimm_results.json
+- meta.json
+child_directories:
+- images
