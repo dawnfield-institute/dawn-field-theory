@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We present a real-time interpretability framework grounded in symbolic entropy collapse (SEC) that treats representational stabilization events (collapse) as the primitive unit of explanation. The Symbolic Collapse Benchmarking Framework (SCBF) instruments TinyCIMM-Euler and TinyCIMM-Planck architectures with bifractal lineage tracking, activation ancestry stability, semantic attractor density, and phase alignment metrics—enabling cognition diagnostics beyond post-hoc attribution. Across mathematical reasoning tasks (prime deltas, transcendental ratio convergence, polynomial reconstruction) and signal analysis benchmarks, collapse events correlate with breakthrough accuracy improvements and emergent symbolic structure formation. Symbolic metrics achieve >95% ancestry stability and statistically significant correlation (r = 0.847, p < 0.001) between entropy collapse and task insight moments. The framework produces mechanistic, temporally grounded narratives more predictive than gradient or attention saliency, while maintaining low (<5%) online adaptation overhead. We outline neurobiological analogies, limitations, and a roadmap toward Recursive Entropy Decomposition for layered collapse attribution. All claims are trace-linked to open code, experiments, and reproducibility artifacts.
+We present a real-time interpretability framework grounded in symbolic entropy collapse (SEC) that treats representational stabilization events (collapse) as the primitive unit of explanation. The Symbolic Collapse Benchmarking Framework (SCBF) instruments TinyCIMM-Euler and TinyCIMM-Planck architectures with bifractal lineage tracking, activation ancestry stability, semantic attractor density, and phase alignment metrics—enabling cognition diagnostics beyond post-hoc attribution. Across mathematical reasoning tasks (prime deltas, transcendental ratio convergence, polynomial reconstruction) and signal analysis benchmarks, collapse events show correlation with improved accuracy and emergent symbolic structure formation. Symbolic metrics achieve >95% ancestry stability and statistically significant correlation (r = 0.847, p < 0.001) between entropy collapse and task insight moments. The framework produces mechanistic, temporally grounded narratives more predictive than gradient or attention saliency, while maintaining low (<5%) online adaptation overhead. We outline neurobiological analogies, limitations, and a roadmap toward Recursive Entropy Decomposition for layered collapse attribution. All claims are trace-linked to open code, experiments, and reproducibility artifacts.
 
 All theoretical claims, simulations, and empirical results cite experiments from the open Dawn Field Theory codebase and cross-reference foundational documents validated through systematic evaluation.
 
@@ -30,7 +30,7 @@ Unlike conventional XAI methods that analyze final states, our framework monitor
 * **Theoretical Framework**: A formal model of symbolic entropy collapse grounded in bifractal dynamics and recursive field theory
 * **Experimental Validation**: Comprehensive experiments across TinyCIMM-Euler and TinyCIMM-Planck architectures demonstrating measurable symbolic cognition
 * **SCBF Framework**: A modular, model-agnostic benchmarking suite for symbolic collapse analysis with real-time interpretability dashboards
-* **Mathematical Reasoning Applications**: Breakthrough results in prime number prediction, transcendental mathematics, and algebraic pattern recognition
+* **Mathematical Reasoning Applications**: Promising results in prime number prediction, transcendental mathematics, and algebraic pattern recognition
 * **Neurobiological Analogies**: Detailed mappings between symbolic metrics and cognitive neuroscience phenomena
 * **Cross-Model Transferability**: Evidence for symbolic metric generalization across different neural architectures
 
@@ -193,7 +193,7 @@ SCBF provides a modular, model-agnostic infrastructure for symbolic collapse ana
 
 ## 5. Results and Analysis
 
-### 5.1 Mathematical Reasoning Breakthrough Results
+### 5.1 Mathematical Reasoning Results
 
 **Prime Number Delta Prediction**: TinyCIMM-Euler achieved unprecedented performance in predicting prime number differences, with symbolic collapse events correlating with mathematical insight formation. The model demonstrated:
 
@@ -218,7 +218,7 @@ SCBF provides a modular, model-agnostic infrastructure for symbolic collapse ana
 
 ### 5.2 Symbolic Collapse Interpretability Analysis
 
-**Collapse Event Correlation**: Statistical analysis revealed significant correlation (r = 0.847, p < 0.001) between symbolic entropy collapse events and mathematical breakthrough moments across all experimental domains.
+**Collapse Event Correlation**: Statistical analysis revealed significant correlation (r = 0.847, p < 0.001) between symbolic entropy collapse events and mathematical insight moments across all experimental domains.
 
 **Stability Metrics**: Activation ancestry traces achieved >95% consistency during stable learning phases, with notable disruptions during complexity transitions correlating with architectural adaptations.
 
@@ -427,7 +427,7 @@ Key contributions include:
 
 1. **Theoretical Foundation**: Formal framework connecting symbolic collapse to interpretability through bifractal dynamics and recursive field theory
 
-2. **Experimental Validation**: Breakthrough results in mathematical reasoning tasks with quantitative symbolic metrics achieving >95% stability consistency
+2. **Experimental Validation**: Promising results in mathematical reasoning tasks with quantitative symbolic metrics achieving >95% stability consistency
 
 3. **Practical Framework**: Model-agnostic SCBF suite enabling interpretability analysis across neural architectures
 
