@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: navier-stokes
-description: Experimental exploration of symbolic navigation approaches to Navier-Stokes equations. Investigates whether pattern recognition methods might offer alternative computational pathways for fluid dynamics simulation. Contains preliminary computational studies, validation frameworks, and initial performance analysis suggesting potential efficiency improvements that warrant further investigation.
+description: Experimental exploration of symbolic navigation approaches to Navier-Stokes
+  equations. Investigates whether pattern recognition methods might offer alternative
+  computational pathways for fluid dynamics simulation. Contains preliminary computational
+  studies, validation frameworks, and initial performance analysis suggesting potential
+  efficiency improvements that warrant further investigation.
 semantic_scope:
 - navier-stokes
 - symbolic-navigation
@@ -25,7 +29,6 @@ files:
 - validate_theoretical_compliance.py
 - visualization_test.py
 child_directories:
-- __pycache__
 - navier_symbolic_engine
 - results
 - tests

@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: examples
-description: Example implementations demonstrating symbolic navigation approaches to classic fluid dynamics problems. Contains experimental applications to cavity flow, cylinder flow, and pipe flow scenarios. These examples illustrate the methodology and enable independent exploration of pattern-based computational alternatives to traditional CFD.
+description: Example implementations demonstrating symbolic navigation approaches
+  to classic fluid dynamics problems. Contains experimental applications to cavity
+  flow, cylinder flow, and pipe flow scenarios. These examples illustrate the methodology
+  and enable independent exploration of pattern-based computational alternatives to
+  traditional CFD.
 semantic_scope:
 - examples
 - cavity-flow
