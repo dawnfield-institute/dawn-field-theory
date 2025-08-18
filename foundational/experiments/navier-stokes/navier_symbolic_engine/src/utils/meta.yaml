@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: utils
+description: Utility functions for experimental symbolic navigation computations. Contains entropy hashing algorithms, field operation tools, metrics calculators, and visualization components. These utilities support reproducible experimentation and enable community exploration of pattern-based computational approaches to fluid dynamics.
+semantic_scope:
+- utilities
+- entropy-hashing
+- field-operations
+- metrics-calculation
+- visualization-tools
+- experimental-support
+- community-tools
+files:
+- __init__.py
+- entropy_hasher.py
+- field_operations.py
+- metrics_calculator.py
+- visualization.py
+child_directories:
+- __pycache__

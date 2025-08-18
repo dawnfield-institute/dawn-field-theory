@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: unit
+description: Auto-generated metadata for unit directory.
+semantic_scope:
+- unit
+files:
+- __init__.py
+- test_engine.py
+- test_entropy.py
+- test_imports.py
+- test_patterns.py
+- test_thermodynamics.py
+child_directories:
+- __pycache__

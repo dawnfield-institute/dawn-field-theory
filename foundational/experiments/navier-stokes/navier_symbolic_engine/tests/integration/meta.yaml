@@ -1,0 +1,7 @@
+schema_version: '2.0'
+directory_name: integration
+description: Auto-generated metadata for integration directory.
+semantic_scope:
+- integration
+files: []
+child_directories: []

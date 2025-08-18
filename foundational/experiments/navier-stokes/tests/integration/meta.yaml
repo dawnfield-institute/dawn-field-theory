@@ -1,0 +1,10 @@
+schema_version: '2.0'
+directory_name: integration
+description: Auto-generated metadata for integration directory.
+semantic_scope:
+- integration
+files:
+- __init__.py
+- test_workflow.py
+child_directories:
+- __pycache__

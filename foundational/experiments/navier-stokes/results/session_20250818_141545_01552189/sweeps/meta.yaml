@@ -1,0 +1,10 @@
+schema_version: '2.0'
+directory_name: sweeps
+description: Auto-generated metadata for sweeps directory.
+semantic_scope:
+- sweeps
+files:
+- parameter_sweep_data.csv
+- parameter_sweep_data.pkl
+- parameter_sweep_results.json
+child_directories: []
