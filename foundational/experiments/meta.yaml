@@ -18,6 +18,7 @@ child_directories:
 - landauer_erasure_field_cost_map
 - language_to_logic
 - legacy
+- navier-stokes
 - pi_harmonics
 - predictive_collapse
 - quantum_validation

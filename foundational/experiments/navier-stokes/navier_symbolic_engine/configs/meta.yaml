@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: configs
-description: Configuration files for experimental symbolic navigation parameters. Contains settings for pattern library construction, entropy thresholds, navigation algorithms, and validation protocols. These configurations enable reproducible experimentation and parameter exploration for investigating symbolic approaches to fluid dynamics.
+description: Configuration files for experimental symbolic navigation parameters.
+  Contains settings for pattern library construction, entropy thresholds, navigation
+  algorithms, and validation protocols. These configurations enable reproducible experimentation
+  and parameter exploration for investigating symbolic approaches to fluid dynamics.
 semantic_scope:
 - configuration
 - experimental-parameters

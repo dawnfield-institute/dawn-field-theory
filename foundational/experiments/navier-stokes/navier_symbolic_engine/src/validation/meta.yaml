@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: validation
-description: Validation frameworks for experimental symbolic navigation methods. Contains benchmarking protocols against established CFD methods, classical analytical solutions, and experimental data. Enables systematic assessment of pattern-based approaches and facilitates independent verification of computational results by the research community.
+description: Validation frameworks for experimental symbolic navigation methods. Contains
+  benchmarking protocols against established CFD methods, classical analytical solutions,
+  and experimental data. Enables systematic assessment of pattern-based approaches
+  and facilitates independent verification of computational results by the research
+  community.
 semantic_scope:
 - validation
 - cfd-benchmarks
@@ -14,5 +18,4 @@ files:
 - cfd_benchmarks.py
 - classical_solutions.py
 - experimental_data.py
-child_directories:
-- __pycache__
+child_directories: []

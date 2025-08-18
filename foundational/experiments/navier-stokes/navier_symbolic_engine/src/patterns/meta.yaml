@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: patterns
-description: Pattern library implementations for experimental fluid dynamics computation. Contains flow pattern templates for laminar, transitional, and turbulent regimes derived from analytical solutions and validated numerical results. Explores whether pre-encoded flow patterns might enable efficient navigation through solution space as an alternative to temporal evolution methods.
+description: Pattern library implementations for experimental fluid dynamics computation.
+  Contains flow pattern templates for laminar, transitional, and turbulent regimes
+  derived from analytical solutions and validated numerical results. Explores whether
+  pre-encoded flow patterns might enable efficient navigation through solution space
+  as an alternative to temporal evolution methods.
 semantic_scope:
 - flow-patterns
 - pattern-library
@@ -15,5 +19,4 @@ files:
 - pattern_library.py
 - transitional_patterns.py
 - turbulent_patterns.py
-child_directories:
-- __pycache__
+child_directories: []
