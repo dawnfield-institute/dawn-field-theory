@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: images
-description: Visual outputs from TinyCIMM-Navier live cognition experiments. Contains neural weight evolution visualizations, field-aware flow analysis, and turbulent breakthrough detection imagery. These experimental visualizations document real-time symbolic collapse dynamics in fluid dynamics contexts, suggesting promising cognitive interpretability patterns that merit community investigation.
+description: Visual outputs from TinyCIMM-Navier live cognition experiments. Contains
+  neural weight evolution visualizations, field-aware flow analysis, and turbulent
+  breakthrough detection imagery. These experimental visualizations document real-time
+  symbolic collapse dynamics in fluid dynamics contexts, suggesting promising cognitive
+  interpretability patterns that merit community investigation.
 semantic_scope:
 - experimental-visualizations
 - neural-weight-evolution
