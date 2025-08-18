@@ -7,6 +7,7 @@ dawn-field-theory/
   LICENSE_APPENDIX.md
   MISSION.md
   README.md
+  REGISTRY_TERMS.md
   dawn-field-theory.md
   for_ai_labs.md
   infodynamics.md
@@ -1036,6 +1037,151 @@ dawn-field-theory/
         meta.yaml
         vcpu.md
         vcpu.py
+      navier-stokes/
+        TEST_RESULTS.md
+        comprehensive_results.py
+        demo_tests.py
+        meta.yaml
+        performance_test.py
+        pytest.ini
+        run_tests.py
+        test_config.yaml
+        test_engine.py
+        unified_experimental_framework.py
+        unified_navier_stokes_test.py
+        unified_test_runner.py
+        validate_theoretical_compliance.py
+        visualization_test.py
+        navier_symbolic_engine/
+          LICENSE
+          README.md
+          meta.yaml
+          requirements.txt
+          setup.py
+          configs/
+            default.yaml
+            high_performance.yaml
+            meta.yaml
+            validation.yaml
+          docs/
+            api_reference.md
+            development_guide.md
+            meta.yaml
+            user_guide.md
+          examples/
+            cavity_flow.py
+            cylinder_flow.py
+            meta.yaml
+            pipe_flow.py
+          src/
+            meta.yaml
+            api/
+              __init__.py
+              config_manager.py
+              engine_interface.py
+              meta.yaml
+              result_manager.py
+            core/
+              __init__.py
+              entropy_navigator.py
+              memory_tracker.py
+              meta.yaml
+              pattern_tree.py
+              solution_composer.py
+              thermodynamic_validator.py
+            experiments/
+              __init__.py
+              memory_reversibility.py
+              meta.yaml
+              reynolds_differentiation.py
+              thermodynamic_compliance.py
+              tree_generation.py
+            patterns/
+              __init__.py
+              laminar_patterns.py
+              meta.yaml
+              pattern_library.py
+              transitional_patterns.py
+              turbulent_patterns.py
+            utils/
+              __init__.py
+              entropy_hasher.py
+              field_operations.py
+              meta.yaml
+              metrics_calculator.py
+              visualization.py
+            validation/
+              __init__.py
+              cfd_benchmarks.py
+              classical_solutions.py
+              experimental_data.py
+              meta.yaml
+          tests/
+            meta.yaml
+            fixtures/
+              meta.yaml
+            integration/
+              meta.yaml
+            performance/
+              meta.yaml
+            unit/
+              meta.yaml
+        results/
+          COMPREHENSIVE_SUMMARY.md
+          README.md
+          meta.yaml
+          session_20250818_141545_01552189/
+            meta.yaml
+            benchmarks/
+              meta.yaml
+            configs/
+              meta.yaml
+              test_config.yaml
+            data/
+              meta.yaml
+              performance_test_results.json
+              unit_test_results.json
+              visualization_test_results.json
+            hashes/
+              meta.yaml
+            reports/
+              comprehensive_report.json
+              meta.yaml
+              test_report.md
+            statistics/
+              meta.yaml
+              sweep_statistics.json
+            sweeps/
+              meta.yaml
+              parameter_sweep_data.csv
+              parameter_sweep_data.pkl
+              parameter_sweep_results.json
+            visualizations/
+              meta.yaml
+              velocity_cavity_Re1500.png
+              velocity_channel_Re2000.png
+              velocity_pipe_Re1000.png
+        tests/
+          README.md
+          __init__.py
+          meta.yaml
+          pytest.ini
+          integration/
+            __init__.py
+            meta.yaml
+            test_workflow.py
+          performance/
+            __init__.py
+            meta.yaml
+            test_benchmarks.py
+          unit/
+            __init__.py
+            meta.yaml
+            test_engine.py
+            test_entropy.py
+            test_imports.py
+            test_patterns.py
+            test_thermodynamics.py
       pi_harmonics/
         meta.yaml
         pi_harmonics.py
@@ -1866,8 +2012,10 @@ dawn-field-theory/
         meta.yaml
         tinycimm_navier.py
         experiments/
+          config.live_cimm.yaml
           meta.yaml
           run_live_cimm_experiment.py
+          summarize_turbulent_sweep.py
           test_scbf_integration.py
           tinycimm_navier_dashboard.py
           results/
@@ -1881,6 +2029,109 @@ dawn-field-theory/
                 main_flow_predictions_live_cimm.png
                 meta.yaml
                 neural_weights_extreme_turbulence_evolution.png
+                reynolds_performance_analysis.png
+                turbulent_breakthrough_interpretability.png
+            live_cimm_experiment_20250818_091023/
+              comprehensive_live_cimm_results.json
+              meta.json
+              meta.yaml
+              images/
+                field_aware_flow_analysis.png
+                main_flow_predictions_live_cimm.png
+                meta.yaml
+                neural_weights_extreme_turbulence_s0_c1_00_evolution.png
+                neural_weights_extreme_turbulence_s0_c1_50_evolution.png
+                neural_weights_extreme_turbulence_s0_c2_00_evolution.png
+                neural_weights_extreme_turbulence_s0_c2_50_evolution.png
+                neural_weights_extreme_turbulence_s0_c3_00_evolution.png
+                neural_weights_extreme_turbulence_s0_c3_50_evolution.png
+                neural_weights_extreme_turbulence_s0_c4_00_evolution.png
+                neural_weights_extreme_turbulence_s0_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s0_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s0_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s0_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s0_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s0_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s10_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s10_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s10_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s10_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s10_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s10_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s11_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s11_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s11_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s11_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s11_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s11_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s1_c1_00_evolution.png
+                neural_weights_extreme_turbulence_s1_c1_50_evolution.png
+                neural_weights_extreme_turbulence_s1_c2_00_evolution.png
+                neural_weights_extreme_turbulence_s1_c2_50_evolution.png
+                neural_weights_extreme_turbulence_s1_c3_00_evolution.png
+                neural_weights_extreme_turbulence_s1_c3_50_evolution.png
+                neural_weights_extreme_turbulence_s1_c4_00_evolution.png
+                neural_weights_extreme_turbulence_s1_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s1_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s1_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s1_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s1_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s1_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s2_c1_00_evolution.png
+                neural_weights_extreme_turbulence_s2_c1_50_evolution.png
+                neural_weights_extreme_turbulence_s2_c2_00_evolution.png
+                neural_weights_extreme_turbulence_s2_c2_50_evolution.png
+                neural_weights_extreme_turbulence_s2_c3_00_evolution.png
+                neural_weights_extreme_turbulence_s2_c3_50_evolution.png
+                neural_weights_extreme_turbulence_s2_c4_00_evolution.png
+                neural_weights_extreme_turbulence_s2_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s2_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s2_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s2_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s2_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s2_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s3_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s3_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s3_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s3_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s3_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s3_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s4_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s4_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s4_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s4_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s4_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s4_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s5_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s5_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s5_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s5_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s5_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s5_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s6_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s6_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s6_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s6_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s6_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s6_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s7_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s7_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s7_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s7_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s7_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s7_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s8_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s8_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s8_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s8_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s8_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s8_c6_00_evolution.png
+                neural_weights_extreme_turbulence_s9_c4_50_evolution.png
+                neural_weights_extreme_turbulence_s9_c4_75_evolution.png
+                neural_weights_extreme_turbulence_s9_c5_00_evolution.png
+                neural_weights_extreme_turbulence_s9_c5_25_evolution.png
+                neural_weights_extreme_turbulence_s9_c5_50_evolution.png
+                neural_weights_extreme_turbulence_s9_c6_00_evolution.png
                 reynolds_performance_analysis.png
                 turbulent_breakthrough_interpretability.png
       TinyCIMM-Planck/
@@ -2257,6 +2508,7 @@ dawn-field-theory/
           CIPPreprint_draft.md
           DFT_Infodynamics_preprint_draft.md
           ITERATION_PLAN_v2.md
+          NavierStokesSymbolicCollapse_draft.md
           RELEASE_CHECKLIST.md
           RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
           ResonantSymbolicConvergencePreprint_draft.md
@@ -2281,6 +2533,7 @@ dawn-field-theory/
         meta.yaml
         metrics_and_validation.md
         navigation_efficiency.md
+        next_steps.md
         preprint_outline.md
         symbolic_entropy_mapping.md
         theoretical_framework.md
