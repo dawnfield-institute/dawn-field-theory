@@ -6,5 +6,4 @@ semantic_scope:
 files:
 - __init__.py
 - test_benchmarks.py
-child_directories:
-- __pycache__
+child_directories: []

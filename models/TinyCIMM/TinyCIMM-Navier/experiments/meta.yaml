@@ -12,7 +12,9 @@ semantic_scope:
 - turbulence_learning
 - interpretability_analysis
 files:
+- config.live_cimm.yaml
 - run_live_cimm_experiment.py
+- summarize_turbulent_sweep.py
 - test_scbf_integration.py
 - tinycimm_navier_dashboard.py
 child_directories:

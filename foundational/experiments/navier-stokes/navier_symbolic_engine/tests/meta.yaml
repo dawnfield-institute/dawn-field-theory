@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: tests
-description: Comprehensive test suite for experimental symbolic navigation engine. Contains unit tests, integration tests, performance benchmarks, and test fixtures to ensure reproducible results and enable community validation. Facilitates independent verification of computational methods and supports collaborative development of alternative fluid dynamics approaches.
+description: Comprehensive test suite for experimental symbolic navigation engine.
+  Contains unit tests, integration tests, performance benchmarks, and test fixtures
+  to ensure reproducible results and enable community validation. Facilitates independent
+  verification of computational methods and supports collaborative development of
+  alternative fluid dynamics approaches.
 semantic_scope:
 - test-suite
 - unit-tests

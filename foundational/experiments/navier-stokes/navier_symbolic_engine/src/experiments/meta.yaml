@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: experiments
-description: Experimental protocols for investigating symbolic navigation approaches. Contains studies on memory reversibility, Reynolds number differentiation, thermodynamic compliance validation, and pattern tree generation. These experimental modules explore fundamental questions about alternative computational methods for fluid dynamics simulation.
+description: Experimental protocols for investigating symbolic navigation approaches.
+  Contains studies on memory reversibility, Reynolds number differentiation, thermodynamic
+  compliance validation, and pattern tree generation. These experimental modules explore
+  fundamental questions about alternative computational methods for fluid dynamics
+  simulation.
 semantic_scope:
 - experimental-protocols
 - memory-reversibility
@@ -15,5 +19,4 @@ files:
 - reynolds_differentiation.py
 - thermodynamic_compliance.py
 - tree_generation.py
-child_directories:
-- __pycache__
+child_directories: []

@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: session_20250818_141545_01552189
-description: Experimental session results from August 18, 2025 symbolic navigation validation study. Contains comprehensive data collection including performance benchmarks, statistical analysis, visualization outputs, and reproducibility artifacts. These preliminary computational results suggest efficiency patterns that merit independent investigation and community validation.
+description: Experimental session results from August 18, 2025 symbolic navigation
+  validation study. Contains comprehensive data collection including performance benchmarks,
+  statistical analysis, visualization outputs, and reproducibility artifacts. These
+  preliminary computational results suggest efficiency patterns that merit independent
+  investigation and community validation.
 semantic_scope:
 - experimental-session
 - validation-study
