@@ -9,7 +9,7 @@ We explore Dawn Field Theory (DFT) as a potential unified framework for investig
 
 <!-- NOTE: This document integrates both manual theoretical analysis and automated, code-driven validation. All empirical claims are supported by reproducible scripts and semantic hash citations. See Appendix for details on the transition from manual derivation to automated validation. -->
 
-Through comprehensive empirical validation—including quantum phenomena reproduction, biological evolution correlation, and working AI implementations—we demonstrate that DFT provides testable predictions across multiple domains. All theoretical claims and empirical results are directly linked to open-source models, simulation scripts, and reproducibility artifacts in the Dawn Field Theory codebase, with semantic hash citations for full transparency. By bridging thermodynamics (see explicit Landauer’s Principle and entropy-as-fuel discussion in Section 2.2), symbolic emergence, and field dynamics, DFT offers a new epistemology for physics, cognition, and computation—inviting the scientific community to explore, validate, and extend this open, reproducible paradigm.
+Through computational validation studies—including quantum phenomena correspondence, biological evolution correlation, and working AI implementations—our preliminary results suggest that DFT may provide testable predictions across multiple domains. All theoretical claims and empirical results are directly linked to open-source models, simulation scripts, and reproducibility artifacts in the Dawn Field Theory codebase, with semantic hash citations for full transparency. By exploring potential connections between thermodynamics (see explicit Landauer’s Principle and entropy-as-fuel discussion in Section 2.2), symbolic emergence, and field dynamics, DFT proposes a new perspective for investigating physics, cognition, and computation—inviting the scientific community to explore, validate, and extend this open, reproducible paradigm.
 
 ---
 
@@ -769,14 +769,14 @@ All frameworks are implemented in open-source Dawn Field Theory codebase with co
 
 ## 10. Conclusions
 
-Dawn Field Theory represents a fundamental reconceptualization of reality, intelligence, and scientific methodology through the lens of recursive field dynamics and symbolic entropy collapse. This work has demonstrated that:
+Dawn Field Theory proposes a potential reconceptualization of reality, intelligence, and scientific methodology through the lens of recursive field dynamics and symbolic entropy collapse. This work suggests that:
 
 ### Theoretical Unification
-DFT provides a unified framework spanning quantum mechanics, cosmology, biology, and artificial intelligence through consistent field-theoretic principles. The same recursive collapse dynamics that reproduce quantum phenomena also drive biological evolution, generate intelligent behavior, and shape cosmic structure formation.
+DFT may provide a potential unified framework spanning quantum mechanics, cosmology, biology, and artificial intelligence through consistent field-theoretic principles. The same recursive collapse dynamics that reproduce quantum phenomena also drive biological evolution, generate intelligent behavior, and shape cosmic structure formation.
 
 ### Empirical Validation  
-Comprehensive computational validation demonstrates DFT's predictive power across multiple domains:
-- **Quantum reproduction** with statistical precision (r > 0.95 for decoherence, error < 0.02 for Born rule)
+Computational validation studies suggest DFT's potential across multiple domains:
+- **Quantum correspondence** with promising statistical agreement (r > 0.95 for decoherence, error < 0.02 for Born rule)
 - **Biological correlation** with evolutionary patterns (r > 0.8 across taxonomic groups)
 - **Working AI systems** implementing DFT principles (TinyCIMM, SCBF)
 - **Cosmological modeling** reproducing galactic structure through field dynamics
