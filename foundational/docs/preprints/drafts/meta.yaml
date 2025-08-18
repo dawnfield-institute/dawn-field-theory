@@ -14,8 +14,8 @@ files:
 - DFT_Infodynamics_preprint_draft.md
 - ITERATION_PLAN_v2.md
 - NavierStokesSymbolicCollapse_draft.md
-- RELEASE_CHECKLIST.md
 - RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
 - ResonantSymbolicConvergencePreprint_draft.md
 - SECPreprint_draft.md
-child_directories: []
+child_directories:
+- resources
