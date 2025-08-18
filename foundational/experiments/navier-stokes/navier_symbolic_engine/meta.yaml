@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: navier_symbolic_engine
-description: Core symbolic navigation engine for experimental fluid dynamics computation. Explores entropy-driven pattern traversal as an alternative to traditional CFD methods. Contains preliminary implementations of pattern libraries, navigation algorithms, and validation protocols. Early computational studies suggest promising efficiency characteristics that merit community investigation and independent validation.
+description: Core symbolic navigation engine for experimental fluid dynamics computation.
+  Explores entropy-driven pattern traversal as an alternative to traditional CFD methods.
+  Contains preliminary implementations of pattern libraries, navigation algorithms,
+  and validation protocols. Early computational studies suggest promising efficiency
+  characteristics that merit community investigation and independent validation.
 semantic_scope:
 - symbolic-engine
 - pattern-navigation
