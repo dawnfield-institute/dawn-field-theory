@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: results
-description: Experimental results from symbolic navigation studies. Contains preliminary computational findings, performance analysis, and validation data from pattern-based approaches to fluid dynamics. These early results suggest promising efficiency characteristics that warrant community investigation and independent replication to validate the computational methodology.
+description: Experimental results from symbolic navigation studies. Contains preliminary
+  computational findings, performance analysis, and validation data from pattern-based
+  approaches to fluid dynamics. These early results suggest promising efficiency characteristics
+  that warrant community investigation and independent replication to validate the
+  computational methodology.
 semantic_scope:
 - experimental-results
 - computational-findings

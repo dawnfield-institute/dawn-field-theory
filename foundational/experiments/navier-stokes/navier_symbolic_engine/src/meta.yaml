@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: src
-description: Source code for experimental symbolic navigation engine. Contains core implementations of pattern libraries, entropy-driven navigation algorithms, validation frameworks, and experimental protocols. Organized into modular components to facilitate independent investigation and community extension of these alternative computational approaches.
+description: Source code for experimental symbolic navigation engine. Contains core
+  implementations of pattern libraries, entropy-driven navigation algorithms, validation
+  frameworks, and experimental protocols. Organized into modular components to facilitate
+  independent investigation and community extension of these alternative computational
+  approaches.
 semantic_scope:
 - source-code
 - core-implementation

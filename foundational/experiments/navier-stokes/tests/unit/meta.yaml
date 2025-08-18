@@ -10,5 +10,4 @@ files:
 - test_imports.py
 - test_patterns.py
 - test_thermodynamics.py
-child_directories:
-- __pycache__
+child_directories: []

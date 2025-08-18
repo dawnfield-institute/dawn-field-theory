@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: docs
-description: Documentation for experimental symbolic navigation engine. Contains guides for understanding, extending, and validating the pattern-based approach to fluid dynamics computation. Includes API references and development protocols to facilitate community participation in exploring these alternative computational methods.
+description: Documentation for experimental symbolic navigation engine. Contains guides
+  for understanding, extending, and validating the pattern-based approach to fluid
+  dynamics computation. Includes API references and development protocols to facilitate
+  community participation in exploring these alternative computational methods.
 semantic_scope:
 - documentation
 - user-guides
