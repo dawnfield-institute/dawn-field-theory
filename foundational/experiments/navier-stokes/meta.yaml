@@ -15,19 +15,9 @@ semantic_scope:
 - computational-exploration
 - alternative-methods
 files:
-- TEST_RESULTS.md
-- comprehensive_results.py
-- demo_tests.py
-- performance_test.py
 - pytest.ini
-- run_tests.py
 - test_config.yaml
-- test_engine.py
 - unified_experimental_framework.py
-- unified_navier_stokes_test.py
-- unified_test_runner.py
-- validate_theoretical_compliance.py
-- visualization_test.py
 child_directories:
 - navier_symbolic_engine
 - results
