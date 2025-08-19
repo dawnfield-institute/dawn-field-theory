@@ -12,10 +12,10 @@ files:
 - AIXPreprint_draft.md
 - CIPPreprint_draft.md
 - DFT_Infodynamics_preprint_draft.md
-- ITERATION_PLAN_v2.md
 - NavierStokesSymbolicCollapse_draft.md
 - RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
 - ResonantSymbolicConvergencePreprint_draft.md
 - SECPreprint_draft.md
+- SynthesisPreprint_draft.md
 child_directories:
 - resources
