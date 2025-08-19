@@ -1,0 +1,15 @@
+schema_version: '2.0'
+
+directory_name: preprints
+description: >
+	Collection of preprint manuscripts and draft publications related to Dawn Field Theory and the Cognition Index Protocol (CIP).
+	Includes foundational research, protocol documentation, and empirical results.
+semantic_scope:
+	- preprint
+	- research
+	- cognition_index_protocol
+	- documentation
+	- empirical_results
+files: []
+child_directories:
+	- drafts
