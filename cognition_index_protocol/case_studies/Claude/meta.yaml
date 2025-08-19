@@ -1,0 +1,16 @@
+schema_version: '2.0'
+
+directory_name: Claude
+description: >
+	Case study evaluating the Cognition Index Protocol (CIP) using the Claude AI system.
+	Contains benchmark results and a detailed reproduction guide for empirical validation.
+semantic_scope:
+	- cognition_index_protocol
+	- Claude
+	- benchmark
+	- AI_comprehension
+	- reproducibility
+files:
+	- Claude_Sonnet4_results.md   # Benchmark results for Claude Sonnet4
+	- repro_guide.md              # Step-by-step reproduction guide for CIP benchmark
+child_directories: []
