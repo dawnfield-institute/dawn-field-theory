@@ -9,6 +9,7 @@ semantic_scope:
 - theory
 files:
 - README.md
+- '[id][A][v2.0][C4][I5]gradient_descent_infodynamics_bridge.md'
 - '[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md'
 - '[id][F][v1.0][C5][I5][E]_landauer_erasure_cost_superfluidity_viscosity.md'
 - '[id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md'
@@ -30,6 +31,7 @@ files:
 - '[m][F][v1.1][C4][I5]_recursive_entopy.md'
 - '[m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md'
 child_directories:
+- bridges
 - docx
 - empirical_alignment
 - preprints
