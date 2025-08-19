@@ -11,7 +11,7 @@ semantic_scope:
 - architecture
 files:
 - README.md
-- copilot_case_study.md
 child_directories:
 - architecture
+- case_studies
 - gpt
