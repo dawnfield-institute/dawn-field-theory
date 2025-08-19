@@ -18,6 +18,5 @@ files:
 child_directories:
 - biological
 - infra
-- left_for_first_release
 - sdk
 - theory
