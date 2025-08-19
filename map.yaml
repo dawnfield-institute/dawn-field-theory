@@ -87,11 +87,19 @@ dawn-field-theory/
     meta.yaml
   cognition_index_protocol/
     README.md
-    copilot_case_study.md
     meta.yaml
     architecture/
       CIP_architecturev1.md
       meta.yaml
+    case_studies/
+      meta.yaml
+      Claude/
+        Claude_Sonnet4_results.md
+        meta.yaml
+        repro_guide.md
+      GitHubCopilot/
+        copilot_case_study.md
+        meta.yaml
     gpt/
       CIP_GPT_architecturev2.md
       git_action.yaml
@@ -346,21 +354,23 @@ dawn-field-theory/
         [m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md
         meta.yaml
       preprints/
+        meta.yaml
         drafts/
           AIXPreprint_draft.md
           CIPPreprint_draft.md
           DFT_Infodynamics_preprint_draft.md
-          ITERATION_PLAN_v2.md
           NavierStokesSymbolicCollapse_draft.md
           RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
           ResonantSymbolicConvergencePreprint_draft.md
           SECPreprint_draft.md
+          SynthesisPreprint_draft.md
           meta.yaml
           resources/
             CIM.docx
             CIM.md
             entropy_minimized_architecture.md
             mathmatics_next_steps.md
+            meta.yaml
     experiments/
       README.md
       meta.yaml
