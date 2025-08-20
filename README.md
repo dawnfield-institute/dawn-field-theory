@@ -1,4 +1,6 @@
-# 🌌 ---
+# 🌌 Dawn Field Theory (WIP)
+
+---
 
 
 > ⚠️ **Summer 2025 Update: Release 1.0 Polishing (through September 1, 2025)**
