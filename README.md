@@ -1,35 +1,4 @@
-# 🌌 ---
-
-## 🚨 **CRITICAL NOTICE: Research Program Under Major Revision (August 2025)**
-
-**Important Update**: This research program is undergoing fundamental restructuring following comprehensive critical analysis that identified serious theoretical gaps. 
-
-### **Key Issues Identified and Being Addressed:**
-- **Pattern Construction vs. Discovery**: Current implementations construct patterns rather than discover them from dynamics
-- **Circular Reasoning**: Mathematical claims lack rigorous foundation and assume what needs to be proven
-- **Validation Issues**: "Success" rates reflect pattern matching against hardcoded solutions, not genuine discovery
-- **Inappropriate Claims**: References to Millennium Problem solutions and quantum correspondence are unsupported
-
-### **Current Status:**
-- ❌ **Millennium Problem Claims**: RETRACTED - this work makes no progress on Navier-Stokes Millennium Problem
-- ❌ **Mathematical Proofs**: No rigorous proofs established - computational explorations only
-- ❌ **Universal Theory**: No demonstration of general applicability beyond simple test cases
-- ✅ **Computational Framework**: Useful for pattern-based approximation within limited scope
-- ✅ **Research Questions**: Interesting directions for information-theoretic approaches to fluid dynamics
-
-### **For Critical Analysis Details:**
-- [`CRITICAL_ANALYSIS_RESPONSE.md`](./CRITICAL_ANALYSIS_RESPONSE.md) - Full acknowledgment of issues
-- [`RESEARCH_PROGRAM_RESTRUCTURING.md`](./RESEARCH_PROGRAM_RESTRUCTURING.md) - Correction plan and timeline
-
-**Users should treat all theoretical claims as preliminary speculation requiring substantial mathematical development and validation.**
-
----
-
-> ⚠️ **Summer 2025 Update: Release 1.0 Polishing - ON HOLD**
-> The planned Release 1.0 is postponed pending major theoretical restructuring.
-> **Do not publish experimental derivatives** until fundamental issues are resolved.
-> See `MISSION.md` and `CONTRIBUTION.md` for details.
----Theory (WIP)
+# 🌌 Dawn Field Theory (WIP)
 
 > [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
 > *A field-based model of intelligence, collapse, and emergence.*
