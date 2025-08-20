@@ -2,7 +2,6 @@ dawn-field-theory/
   .gitignore
   CONTRIBUTION.md
   ENVIRONMENT.md
-  EVIDENCE_MAP.md
   LICENSE
   LICENSE_APPENDIX.md
   MISSION.md
@@ -308,6 +307,58 @@ dawn-field-theory/
         v0.1/
           hodge_mapping.md
           meta.yaml
+      macro_emergence_dynamics/
+        README.md
+        comprehensive_analysis.py
+        master_recursive_gravity_experiment.py
+        meta.yaml
+        computational_validation/
+          README.md
+          benchmark_comparison.py
+          complexity_evolution_tracker_fixed.py
+          enhanced_pattern_extraction.py
+          infodynamics_framework_analysis.md
+          meta.yaml
+          pattern_discovery_engine.py
+          pragmatic_med_framework.py
+          run_refactored_framework.py
+          unified_med_testing_framework.py
+          validated_results.md
+          results/
+            meta.yaml
+            unified_med_results_32x32_20250820_95947.json
+            unified_med_results_64x64_20250820_95947.json
+        formal_papers/
+          README.md
+          med_mathematical_foundations.md
+          med_mathematical_framework_integration_v1.0.md
+          meta.yaml
+        insights/
+          depth_2_recursion_insight.md
+          meta.yaml
+        notes/
+          med_formal_framework.md
+          med_formal_paper_draft.md
+          meta.yaml
+        proofs/
+          01_sec_navier_stokes_equivalence.md
+          02_bounded_complexity_regularity.md
+          03_optimal_parameter_convergence_theorem_v0.1.md
+          04_resolution_independence_investigation_v0.2.md
+          04_resolution_independence_theorem_v0.1.md
+          meta.yaml
+          proof_balance_operator_stability_v0.1.md
+          proof_development_plan_v1.0.md
+          proof_universal_bounded_complexity_v0.1.md
+        results/
+          meta.yaml
+          comprehensive_analysis_20250820_155352/
+            comprehensive_results.json
+            conclusive_report.md
+            meta.yaml
+          parameter_study_20250820_135936/
+            meta.yaml
+            parameter_study_results_20250820_135936.json
     docs/
       README.md
       [id][A][v2.0][C4][I5]gradient_descent_infodynamics_bridge.md
@@ -1333,6 +1384,8 @@ dawn-field-theory/
           meta.yaml
           recursive_tree_2025-06-07_results.png
       symbolic_bifractal/
+        InfoDyn_Validation_BifractalCollapse_v0.1.yaml
+        InfoDyn_Validation_LineageTrace.tsv
         meta.yaml
         results.md
         symbolic_bifractal_expansion_v1.py
@@ -2344,6 +2397,13 @@ dawn-field-theory/
       scbf_runner.py
       test_scbf.py
       tinycimm_scbf_experiment.py
+      docs/
+        meta.yaml
+        med/
+          implementation_roadmap.md
+          med_scbf_integration_design.md
+          meta.yaml
+          qsocket_emergence_architecture.md
       loggers/
         __init__.py
         experiment_logger.py
