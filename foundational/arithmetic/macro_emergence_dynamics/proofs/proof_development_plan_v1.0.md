@@ -29,6 +29,8 @@
 | Universal Bounded Complexity | Draft | v0.1 | Computational validation Re=10-50k | Formal mathematical proof |
 | Balance Operator Stability | Conceptual | v0.0 | Experimental observation Ξ ≈ 1 | Mathematical formulation |
 | NS-Infodynamics Equivalence | Draft | v0.1 | Pattern library validation | Rigorous correspondence proof |
+| **Optimal Parameter Convergence** | **Draft** | **v0.1** | **Quality=0.910309 breakthrough** | **Analytical uniqueness proof** |
+| **Resolution Independence** | **Draft** | **v0.1** | **Scale invariance 16×16→64×64** | **Convergence rate analysis** |
 | MED Framework Validation | Draft | v0.1 | Bounded complexity evidence | Complete testbed methodology |
 | Testbed Applications | Planned | v0.0 | No experiments yet | Apply to other dynamical systems |
 | Testbed Success Analysis | Completed | v1.0 | NS validation complete | Document methodology |

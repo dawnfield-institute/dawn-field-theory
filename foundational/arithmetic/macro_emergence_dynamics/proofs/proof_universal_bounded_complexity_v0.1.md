@@ -1,20 +1,24 @@
-# Universal Bounded Complexity Theorem
-## Proof v0.1 - Infodynamics Foundation
+# Universal Bounded Complexity: Computational Investigation
+## Exploratory Analysis v0.1 - Infodynamics Foundation
 
 **Date**: August 20, 2025  
 **Version**: 0.1  
-**Status**: Draft with Computational Validation  
+**Status**: Computational Investigation with Theoretical Framework  
 **Dependencies**: Infodynamics Arithmetic v1.0, MED Experimental Framework  
 
 ---
 
-## Theorem Statement
+## Conjecture Statement
 
-**Universal Bounded Complexity Theorem**: For any infodynamics system with balance operator Ξ satisfying the stability condition, the symbolic complexity remains universally bounded:
+**Universal Bounded Complexity Conjecture**: Our computational studies suggest that for infodynamics systems with balance operators satisfying stability conditions, symbolic complexity may remain universally bounded:
 
 $$\sup_{x \in \mathbb{R}^d, t \geq 0} \{\text{depth}(S(x,t)), \text{nodes}(S(x,t))\} \leq C(\text{initial data})$$
 
-where $S(x,t)$ is the structural entropy field and $C$ depends only on initial conditions.
+where $S(x,t)$ represents the structural entropy field and $C$ depends only on initial conditions.
+
+**Computational Evidence**: Across 1000+ fluid simulations, observed depth(S) ≤ 1, nodes(S) ≤ 3 consistently
+
+*Note: This represents computational exploration of bounded complexity behavior. Independent validation and rigorous mathematical proof development are essential next steps.*
 
 ---
 
@@ -39,40 +43,48 @@ The system is stable if $\Xi(x,t) = 1 + O(\epsilon)$ for small $\epsilon$, meani
 
 ---
 
-## Proof Strategy v0.1
+## Investigation Strategy v0.1
 
-### Step 1: Balance Control Mechanism
-**Claim**: When $\Xi > 1$ (excess symbolic pressure), the collapse merge operator ⊕ reduces complexity.
+### Step 1: Balance Control Mechanism Exploration
+**Observation**: When Ξ > 1 (excess symbolic pressure), the collapse merge operator ⊕ appears to reduce complexity.
 
-**Evidence**:
-- **Computational validation**: In 1000+ fluid simulations, whenever local complexity exceeded thresholds, automatic pattern merging reduced symbolic depth
-- **Mechanism**: $P_1 \oplus P_2 = \lim_{t \to \infty} \text{argmin}_{P} H(P)$ where $H(P)$ is pattern entropy
-- **Result**: depth(P₁ ⊕ P₂) ≤ max(depth(P₁), depth(P₂))
+**Computational Evidence**:
+- **Validation Studies**: In 1000+ fluid simulations, whenever local complexity exceeded thresholds, automatic pattern merging appeared to reduce symbolic depth
+- **Mechanism Hypothesis**: $P_1 \oplus P_2 = \lim_{t \to \infty} \text{argmin}_{P} H(P)$ where $H(P)$ represents pattern entropy
+- **Observed Result**: depth(P₁ ⊕ P₂) ≤ max(depth(P₁), depth(P₂)) in all tested cases
 
-### Step 2: Branching Limitation  
-**Claim**: When $\Xi < 1$ (symbolic decay), the entropic branching operator ⊗ is entropy-limited.
+*Note: This mechanism requires theoretical justification and independent validation.*
 
-**Evidence**:
-- **Experimental observation**: Pattern creation events always remained bounded by available symbolic entropy
-- **Thermodynamic constraint**: All pattern transitions respect Landauer bounds: $E_{cost} \geq k_B T S_{erased} \ln(2)$
-- **Computational result**: Maximum observed branching factor = 2.33 across all simulations
+### Step 2: Branching Limitation Investigation  
+**Observation**: When Ξ < 1 (symbolic decay), the entropic branching operator ⊗ appears entropy-limited.
 
-### Step 3: Convergence to Balance
-**Claim**: $\Xi(x,t) \to 1$ as $t \to \infty$ through feedback mechanisms.
+**Computational Evidence**:
+- **Pattern Creation Events**: All observed pattern creation remained bounded by available symbolic entropy
+- **Thermodynamic Consideration**: Pattern transitions appear to respect Landauer bounds: $E_{cost} \geq k_B T S_{erased} \ln(2)$
+- **Computational Result**: Maximum observed branching factor = 2.33 across all simulations
 
-**Evidence**:
-- **Recursive gravity experiments**: Balance values consistently converged to Ξ ≈ 1.0 ± 0.1
-- **Stability analysis**: No finite-time blow-up observed in any computational test
-- **Pattern library convergence**: All fluid flows represented by ≤ 8 fundamental patterns
+*Note: These observations warrant theoretical investigation of branching limitations.*
 
-### Step 4: Universal Bounds
-**Claim**: Feedback control implies global complexity bounds.
+### Step 3: Convergence to Balance Investigation
+**Observation**: Ξ(x,t) appears to approach 1 as t → ∞ through feedback mechanisms.
 
-**Argument Sketch**:
+**Computational Evidence**:
+- **Recursive Gravity Experiments**: Balance values consistently converged to Ξ ≈ 1.0 ± 0.1
+- **Stability Analysis**: No finite-time blow-up observed in any computational test
+- **Pattern Library Convergence**: All fluid flows represented by ≤ 8 fundamental patterns
+
+*Note: The mechanism driving this convergence requires theoretical analysis.*
+
+### Step 4: Universal Bounds Investigation
+**Hypothesis**: Feedback control may imply global complexity bounds.
+
+**Conceptual Framework**:
 1. **Feedback Loop**: Ξ > 1 → collapse (⊕) → reduced complexity
 2. **Energy Conservation**: Bounded initial energy → bounded pattern creation
-3. **Thermodynamic Limits**: Landauer bounds prevent infinite complexity generation
-4. **Convergence**: Steps 1-3 → $\Xi \to 1$ → stable bounded complexity
+3. **Thermodynamic Limits**: Landauer bounds may prevent infinite complexity generation
+4. **Convergence**: Steps 1-3 → Ξ → 1 → stable bounded complexity
+
+*Note: This framework requires rigorous mathematical development.*
 
 ---
 
