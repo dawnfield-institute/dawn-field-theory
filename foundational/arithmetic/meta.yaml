@@ -13,3 +13,4 @@ files:
 - symbolic_geometry_arithmetic.md
 child_directories:
 - hodge_mapping
+- macro_emergence_dynamics

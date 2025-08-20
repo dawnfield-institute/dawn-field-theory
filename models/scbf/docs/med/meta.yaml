@@ -1,6 +1,10 @@
 schema_version: '2.0'
 directory_name: med
-description: MED (Macro Emergence Dynamics) integration documentation within SCBF framework. Documents the promising exploration of MED principles through Navier-Stokes testbed achieving quality breakthrough >0.91, integration roadmap with SCBF bounded complexity theory, and qsocket emergence architecture for potential cross-domain application of investigated MED principles.
+description: MED (Macro Emergence Dynamics) integration documentation within SCBF
+  framework. Documents the promising exploration of MED principles through Navier-Stokes
+  testbed achieving quality breakthrough >0.91, integration roadmap with SCBF bounded
+  complexity theory, and qsocket emergence architecture for potential cross-domain
+  application of investigated MED principles.
 semantic_scope:
 - med_framework_integration
 - scbf_med_coupling

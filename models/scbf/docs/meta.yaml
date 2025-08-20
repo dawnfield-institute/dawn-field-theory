@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: docs
-description: SCBF (Symbolic Complexity Bounded Framework) documentation containing theoretical foundations and implementation details for symbolic complexity management. Includes comprehensive MED (Macro Emergence Dynamics) documentation exploring the investigation of bounded complexity principles through Navier-Stokes testbed methodology.
+description: SCBF (Symbolic Complexity Bounded Framework) documentation containing
+  theoretical foundations and implementation details for symbolic complexity management.
+  Includes comprehensive MED (Macro Emergence Dynamics) documentation exploring the
+  investigation of bounded complexity principles through Navier-Stokes testbed methodology.
 semantic_scope:
 - scbf_documentation
 - symbolic_complexity_framework
