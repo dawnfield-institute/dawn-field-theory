@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: results
+description: Comprehensive experimental results achieving quality breakthrough >0.91 for MED framework exploration through Navier-Stokes testbed. Contains promising analysis suggesting statistical reproducibility, resolution independence, and potential optimal parameter discovery indicating scientific promise for continued investigation.
+semantic_scope:
+- quality_breakthrough_results
+- comprehensive_investigation
+- statistical_reproducibility
+- potential_optimal_parameters
+- investigation_ready_results
+- navier_stokes_testbed
+- med_framework_exploration
+- scientific_findings
+files: []
+child_directories:
+- comprehensive_analysis_20250820_155352
+- parameter_study_20250820_135936

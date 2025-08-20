@@ -1,0 +1,77 @@
+{
+  "sec_results": {
+    "taylor_green": {
+      "error": 0.5354894592050702,
+      "description": "SEC_1_attractors",
+      "success": false
+    },
+    "double_vortex": {
+      "error": 0.535499859119364,
+      "description": "SEC_1_attractors",
+      "success": false
+    },
+    "shear_layer": {
+      "error": 0.5089581532361989,
+      "description": "SEC_1_attractors",
+      "success": false
+    },
+    "wavy_channel": {
+      "error": 0.5354732079360855,
+      "description": "SEC_1_attractors",
+      "success": false
+    },
+    "complex_multimode": {
+      "error": 0.5353831538659711,
+      "description": "SEC_1_attractors",
+      "success": false
+    }
+  },
+  "pod_results": {
+    "taylor_green": {
+      "error": 0.6907246616684632,
+      "success": false
+    },
+    "double_vortex": {
+      "error": 0.3906014535700971,
+      "success": false
+    },
+    "shear_layer": {
+      "error": 0.5186793205641723,
+      "success": false
+    },
+    "wavy_channel": {
+      "error": 0.36407179250931315,
+      "success": false
+    },
+    "complex_multimode": {
+      "error": 0.6895554077356773,
+      "success": false
+    }
+  },
+  "physics_results": {
+    "taylor_green": {
+      "error": 7.974727499821279e-16,
+      "success": true
+    },
+    "double_vortex": {
+      "error": 0.9999998716013562,
+      "success": false
+    },
+    "shear_layer": {
+      "error": 0.395209769326976,
+      "success": false
+    },
+    "wavy_channel": {
+      "error": 0.9495340925979371,
+      "success": false
+    },
+    "complex_multimode": {
+      "error": 9.878172545200324e-16,
+      "success": true
+    }
+  },
+  "summary": {
+    "sec_success_rate": 0.0,
+    "timestamp": "2025-08-20T09:59:47.262773"
+  }
+}
