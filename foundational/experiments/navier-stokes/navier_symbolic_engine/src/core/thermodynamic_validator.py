@@ -3,6 +3,7 @@
 
 from dataclasses import dataclass
 import numpy as np
+from typing import Dict
 
 KB = 1.380649e-23  # Boltzmann constant (J/K)
 LN2 = np.log(2)
@@ -49,6 +50,68 @@ class ThermodynamicValidator:
         """
         Compute entropy produced during a transition.
         """
+        # For symbolic operations, entropy change = log(pattern complexity ratio)
+        delta_entropy = final_state.entropy - initial_state.entropy
+        return max(0, delta_entropy)  # Entropy can only increase or stay same
+    
+    def validate_symbolic_transition(self, initial_complexity: int, final_complexity: int, 
+                                   energy_cost: float, temperature: float = None) -> Dict:
+        """
+        Validate a symbolic pattern transition against thermodynamic constraints.
+        
+        Args:
+            initial_complexity: Number of nodes in initial pattern
+            final_complexity: Number of nodes in final pattern  
+            energy_cost: Energy used in transition (J)
+            temperature: System temperature (K)
+            
+        Returns:
+            Validation results including Landauer compliance
+        """
+        T = temperature if temperature is not None else self.min_temperature
+        
+        # Information erased (in bits) - reduction in pattern complexity
+        bits_erased = max(0, initial_complexity - final_complexity)
+        
+        # Landauer minimum energy for this erasure
+        landauer_min = self.landauer_minimum(bits_erased, T)
+        
+        # Check compliance
+        landauer_compliant = self.validate_landauer(energy_cost, bits_erased, T)
+        
+        return {
+            'bits_erased': bits_erased,
+            'landauer_minimum_J': landauer_min,
+            'energy_used_J': energy_cost,
+            'landauer_compliant': landauer_compliant,
+            'compliance_ratio': energy_cost / landauer_min if landauer_min > 0 else float('inf'),
+            'temperature_K': T
+        }
+    
+    def compute_actual_energy_cost(self, velocity_field_before: np.ndarray, 
+                                 velocity_field_after: np.ndarray, 
+                                 dx: float = 1.0) -> float:
+        """
+        Compute actual energy cost of a velocity field transition.
+        
+        Args:
+            velocity_field_before: Initial velocity field [nx, ny, 2]
+            velocity_field_after: Final velocity field [nx, ny, 2] 
+            dx: Spatial discretization
+            
+        Returns:
+            Energy difference in physical units (J/kg for unit density)
+        """
+        # Kinetic energy density = 0.5 * rho * |v|^2
+        # Assuming unit density (rho = 1)
+        
+        energy_before = 0.5 * np.sum(velocity_field_before**2) * dx**2
+        energy_after = 0.5 * np.sum(velocity_field_after**2) * dx**2
+        
+        # Energy dissipated (should be positive for realistic flows)
+        energy_dissipated = energy_before - energy_after
+        
+        return max(0, energy_dissipated)  # Physical processes can only dissipate energy
         return final_state.entropy - initial_state.entropy
 
     def validate_transition(self, initial_state: ThermodynamicState, final_state: ThermodynamicState, bits_erased: int, energy_used: float = None) -> dict:

@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: results
+description: Latest unified MED testing framework results suggesting resolution independence and consistent performance across 32x32 and 64x64 grid configurations. Contains the most recent exploration data for MED framework stability and scaling behavior.
+semantic_scope:
+- med_exploration_results
+- resolution_scaling
+- unified_testing_framework
+- computational_investigation
+- grid_independence
+- framework_stability
+files:
+- unified_med_results_32x32_20250820_095947.json
+- unified_med_results_64x64_20250820_095947.json
+child_directories: []

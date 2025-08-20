@@ -1,0 +1,3078 @@
+{
+  "study_metadata": {
+    "study_id": "param_study_20250820_135936_cec85f02",
+    "timestamp": "2025-08-20T16:59:36.541701+00:00",
+    "study_directory": "results/parameter_study_20250820_135936",
+    "git_info": {
+      "commit_hash": "cec85f028208121708671b1f7590a102ad77e5bc",
+      "commit_hash_short": "cec85f02",
+      "branch": "main",
+      "commit_message": "updated arithmetic",
+      "has_uncommitted_changes": true,
+      "status": "M README.md\n M foundational/arithmetic/infodynamics_arithmetic_v1.md\n M foundational/arithmetic/macro_emergence_dynamics/README.md\n D foundational/arithmetic/macro_emergence_dynamics/computational_validation/VALIDATION_SUMMARY.md\n D foundational/arithmetic/macro_emergence_dynamics/computational_validation/bounded_complexity_regularity_validator.py\n D foundational/arithmetic/macro_emergence_dynamics/computational_validation/sec_navier_equivalence_validator.py\n D foundational/arithmetic/macro_emergence_dynamics/computational_validation/validation_results/bounded_complexity_regularity_20250819_204725.json\n D foundational/arithmetic/macro_emergence_dynamics/computational_validation/validation_results/bounded_complexity_regularity_20250819_204850.json\n D foundational/arithmetic/macro_emergence_dynamics/computational_validation/validation_results/meta.yaml\n D foundational/arithmetic/macro_emergence_dynamics/computational_validation/validation_results/sec_navier_equivalence_20250819_204714.json\n M foundational/arithmetic/macro_emergence_dynamics/formal_papers/README.md\n D foundational/arithmetic/macro_emergence_dynamics/formal_papers/clay_institute_submission.md\n M foundational/arithmetic/macro_emergence_dynamics/formal_papers/med_mathematical_foundations.md\n M foundational/arithmetic/macro_emergence_dynamics/formal_papers/meta.yaml\n M foundational/arithmetic/macro_emergence_dynamics/formal_papers/navier_stokes_millennium_proof.md\n M foundational/arithmetic/macro_emergence_dynamics/meta.yaml\n M foundational/arithmetic/macro_emergence_dynamics/notes/med_formal_paper_draft.md\n D foundational/arithmetic/macro_emergence_dynamics/proofs/01_sec_navier_stokes_equivalence.md\n D foundational/arithmetic/macro_emergence_dynamics/proofs/02_bounded_complexity_regularity.md\n M foundational/arithmetic/macro_emergence_dynamics/proofs/meta.yaml\n M foundational/docs/preprints/drafts/NavierStokesSymbolicCollapse_draft.md\n M foundational/experiments/navier-stokes/navier_symbolic_engine/src/core/thermodynamic_validator.py\n M foundational/experiments/symbolic_entropy_collapse/[m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md\n M infodynamics.md\n?? RESEARCH_PROGRAM_RESTRUCTURING.md\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/README.md\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/benchmark_comparison.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/complexity_evolution_tracker.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/complexity_evolution_tracker_fixed.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/enhanced_pattern_extraction.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/infodynamics_framework_analysis.md\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/pattern_discovery_engine.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/pragmatic_med_framework.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/results/\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/run_refactored_framework.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/unified_med_testing_framework.py\n?? foundational/arithmetic/macro_emergence_dynamics/computational_validation/validated_results.md\n?? foundational/arithmetic/macro_emergence_dynamics/framework_demo.py\n?? foundational/arithmetic/macro_emergence_dynamics/legacy_scripts/\n?? foundational/arithmetic/macro_emergence_dynamics/master_recursive_gravity_experiment.py\n?? foundational/arithmetic/macro_emergence_dynamics/proofs/proof_balance_operator_stability_v0.1.md\n?? foundational/arithmetic/macro_emergence_dynamics/proofs/proof_development_plan_v1.0.md\n?? foundational/arithmetic/macro_emergence_dynamics/proofs/proof_universal_bounded_complexity_v0.1.md\n?? foundational/arithmetic/macro_emergence_dynamics/results/\n?? foundational/experiments/symbolic_bifractal/InfoDyn_Validation_BifractalCollapse_v0.1.yaml\n?? foundational/experiments/symbolic_bifractal/InfoDyn_Validation_LineageTrace.tsv"
+    },
+    "system_info": {
+      "platform": "Windows-10-10.0.26100-SP0",
+      "python_version": "3.11.9",
+      "numpy_version": "1.26.4",
+      "working_directory": "C:\\Users\\peter\\repos\\dawn-field-theory\\foundational\\arithmetic\\macro_emergence_dynamics",
+      "hostname": "Geeves"
+    },
+    "parameter_ranges": {
+      "alpha_recursive": [
+        0.001,
+        0.005,
+        0.01,
+        0.02,
+        0.05
+      ],
+      "xi_threshold": [
+        0.8,
+        1.0,
+        1.2,
+        1.5,
+        2.0
+      ],
+      "viscosity": [
+        0.005,
+        0.01,
+        0.015,
+        0.02
+      ]
+    },
+    "total_combinations": 100
+  },
+  "optimization_results": {
+    "alpha_0.001_xi_0.8_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8521404878830504,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1409206816911537,
+        "thermodynamic_cost": 2.6782121401675645,
+        "final_reynolds": 0.008088589617811745,
+        "final_xi": 0.0010030868588290804,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.892519136314413,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41257627238206424,
+        "thermodynamic_cost": 142.05935104465715,
+        "final_reynolds": 5.445663837811153,
+        "final_xi": 0.4366289304794706,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254723352562029,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24803636123397074,
+        "thermodynamic_cost": 221.46794139316327,
+        "final_reynolds": 9.270734770276812,
+        "final_xi": 1.0621186747318014,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_0.8_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8776482291472202,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12561203021915154,
+        "thermodynamic_cost": 2.917126950043251,
+        "final_reynolds": 0.012065728852160056,
+        "final_xi": 0.002060679536657027,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9023310069847837,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40373849724643235,
+        "thermodynamic_cost": 143.81848078966044,
+        "final_reynolds": 2.783425696413594,
+        "final_xi": 0.44625335134036626,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291816518645438,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25059759067450155,
+        "thermodynamic_cost": 220.9998778643113,
+        "final_reynolds": 4.572723861547424,
+        "final_xi": 1.0503540506276974,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_0.8_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8514233390311875,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.09972965339541606,
+        "thermodynamic_cost": 2.558747282028155,
+        "final_reynolds": 0.0034989072747718315,
+        "final_xi": 0.0011538531988467147,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9066994867023812,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40123874004882554,
+        "thermodynamic_cost": 141.89949206364423,
+        "final_reynolds": 1.8138565346386442,
+        "final_xi": 0.43650263341014484,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832423856018767,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2519954158318507,
+        "thermodynamic_cost": 220.61504249990497,
+        "final_reynolds": 2.9970548065424523,
+        "final_xi": 1.035075330497552,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_0.8_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8624396837527897,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.147768784723538,
+        "thermodynamic_cost": 2.547226603387679,
+        "final_reynolds": 0.00455396589431822,
+        "final_xi": 0.0015731025081357865,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9086792673589521,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4051469584042132,
+        "thermodynamic_cost": 142.63767907172868,
+        "final_reynolds": 1.3660608175405993,
+        "final_xi": 0.4382657916821642,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366033429751134,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24972493054924344,
+        "thermodynamic_cost": 220.169379047046,
+        "final_reynolds": 2.2284119165809404,
+        "final_xi": 1.0242633784157635,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_1.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8186769938582804,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.14977332905868446,
+        "thermodynamic_cost": 1.9276400853228433,
+        "final_reynolds": 0.007102023584013375,
+        "final_xi": 0.0006878870537433495,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8923142376799257,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40948763933486276,
+        "thermodynamic_cost": 144.1003388629565,
+        "final_reynolds": 5.59455553864392,
+        "final_xi": 0.4482945741847272,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254726720661787,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24833238932454335,
+        "thermodynamic_cost": 221.49049028553745,
+        "final_reynolds": 9.26200367441989,
+        "final_xi": 1.0613931347339056,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_1.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8110869362553532,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11565881149352365,
+        "thermodynamic_cost": 1.8657292757236743,
+        "final_reynolds": 0.00251562044553523,
+        "final_xi": 0.000557846006482621,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.902556647698398,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4115754722806236,
+        "thermodynamic_cost": 141.5416598461414,
+        "final_reynolds": 2.7027914479848527,
+        "final_xi": 0.43354727917469815,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8293619626876194,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2500143282403474,
+        "thermodynamic_cost": 221.3429022707289,
+        "final_reynolds": 4.530650630222495,
+        "final_xi": 1.0399535339021055,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_1.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.9133670804004396,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11062160453273517,
+        "thermodynamic_cost": 3.775163083345129,
+        "final_reynolds": 0.014582278506148839,
+        "final_xi": 0.003640899141381708,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9064195886525996,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4114506819219301,
+        "thermodynamic_cost": 143.32550524320658,
+        "final_reynolds": 1.8380819067585148,
+        "final_xi": 0.44205325605036244,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832551123805275,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24921147145379008,
+        "thermodynamic_cost": 220.6011994800771,
+        "final_reynolds": 3.005603307418842,
+        "final_xi": 1.0357950735112853,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_1.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8616235031112733,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.10747442946092939,
+        "thermodynamic_cost": 2.523934319828147,
+        "final_reynolds": 0.004785781349762566,
+        "final_xi": 0.0016563582395887969,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.908460985613746,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40710261774248957,
+        "thermodynamic_cost": 142.07547858026987,
+        "final_reynolds": 1.3526621889260992,
+        "final_xi": 0.4340552563674647,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8368494355298384,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2495971588436601,
+        "thermodynamic_cost": 220.4127131183746,
+        "final_reynolds": 2.2152175277108115,
+        "final_xi": 1.0181661241587021,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.001_xi_1.2_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8734892602586738,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.13872227277509347,
+        "thermodynamic_cost": 2.7468904288879754,
+        "final_reynolds": 0.02038428348970126,
+        "final_xi": 0.001786326945427995,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8922786849843335,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4116607604209278,
+        "thermodynamic_cost": 144.15877677853751,
+        "final_reynolds": 5.599827101732246,
+        "final_xi": 0.4487170672545242,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253197865981745,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2516851161260477,
+        "thermodynamic_cost": 221.4433933531607,
+        "final_reynolds": 9.225517479924559,
+        "final_xi": 1.0604574051880888,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_1.2_visc_0.01": {
+      "flat": {
+        "quality_score": 0.869982619652807,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16318113208289983,
+        "thermodynamic_cost": 2.733134003986797,
+        "final_reynolds": 0.010153243513411344,
+        "final_xi": 0.0018289642571503563,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9020371294060414,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41053399877103114,
+        "thermodynamic_cost": 144.73951235154115,
+        "final_reynolds": 2.8045108585502234,
+        "final_xi": 0.449474398741942,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8290834436022939,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25174237104549835,
+        "thermodynamic_cost": 221.1037302453442,
+        "final_reynolds": 4.533041204515363,
+        "final_xi": 1.0446354706958492,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_1.2_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8816660597128015,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1020000008930656,
+        "thermodynamic_cost": 3.0258538106012156,
+        "final_reynolds": 0.007506091605722624,
+        "final_xi": 0.00201661771814102,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9063189752319724,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4068539930719244,
+        "thermodynamic_cost": 143.98409124274565,
+        "final_reynolds": 1.8532521850548813,
+        "final_xi": 0.4456806837101329,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8326378253740173,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24867788712990813,
+        "thermodynamic_cost": 220.6937796744079,
+        "final_reynolds": 3.001548279995244,
+        "final_xi": 1.0345497040190015,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_1.2_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8532550640274068,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1521407935619016,
+        "thermodynamic_cost": 2.333909834438084,
+        "final_reynolds": 0.003762138134487849,
+        "final_xi": 0.001288350082302414,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9085560643429336,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40350665300728145,
+        "thermodynamic_cost": 144.222412909708,
+        "final_reynolds": 1.3919726733837154,
+        "final_xi": 0.4463696696896936,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8365937226084257,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24891154189893222,
+        "thermodynamic_cost": 220.09779290187436,
+        "final_reynolds": 2.2356843746368416,
+        "final_xi": 1.02763627562036,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_1.5_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8836155601779364,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.15764758912658286,
+        "thermodynamic_cost": 3.105960404498784,
+        "final_reynolds": 0.023115476485133634,
+        "final_xi": 0.002093236234946981,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.892907622671072,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4067938635314522,
+        "thermodynamic_cost": 141.47021584939938,
+        "final_reynolds": 5.435947554568146,
+        "final_xi": 0.4359300578934616,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.825416385139237,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2520466031873977,
+        "thermodynamic_cost": 221.59881083820056,
+        "final_reynolds": 9.185580384163508,
+        "final_xi": 1.0562331571058166,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_1.5_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8762283853854572,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12828027276289128,
+        "thermodynamic_cost": 3.0383259044582864,
+        "final_reynolds": 0.009169574585896515,
+        "final_xi": 0.0017052606123976236,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9021591914393895,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41324341875278114,
+        "thermodynamic_cost": 144.21197588933367,
+        "final_reynolds": 2.788794280170861,
+        "final_xi": 0.4469941063374637,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291694177024175,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2522666455086818,
+        "thermodynamic_cost": 221.22817487287242,
+        "final_reynolds": 4.521818879181182,
+        "final_xi": 1.041655132654904,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_1.5_visc_0.015": {
+      "flat": {
+        "quality_score": 0.858158353424793,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12292562506024755,
+        "thermodynamic_cost": 2.487520289925676,
+        "final_reynolds": 0.003912916531719649,
+        "final_xi": 0.0012263692218922816,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9063499620837674,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4055374088446034,
+        "thermodynamic_cost": 145.27032327596163,
+        "final_reynolds": 1.885188235518979,
+        "final_xi": 0.4531721141895919,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324941548293469,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2517571338021913,
+        "thermodynamic_cost": 220.6381698763965,
+        "final_reynolds": 2.9998057807287832,
+        "final_xi": 1.0344608619450428,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_1.5_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8636931546678729,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.17981300784403648,
+        "thermodynamic_cost": 2.796651852644878,
+        "final_reynolds": 0.0037682902607782858,
+        "final_xi": 0.0014860024024301107,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9084274965589839,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40223418119183285,
+        "thermodynamic_cost": 144.43698431225062,
+        "final_reynolds": 1.3939333344236395,
+        "final_xi": 0.44700292016160015,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8367145290388613,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25104771657510017,
+        "thermodynamic_cost": 220.31165936949037,
+        "final_reynolds": 2.218763380284151,
+        "final_xi": 1.0203965042724013,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_2.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8931666893255468,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1002809980209658,
+        "thermodynamic_cost": 3.3530269790709273,
+        "final_reynolds": 0.031484861988860795,
+        "final_xi": 0.0027020793518982896,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8922860640945949,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41036547920206373,
+        "thermodynamic_cost": 143.83545041232722,
+        "final_reynolds": 5.567474537129696,
+        "final_xi": 0.4462225859574986,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8252156821831246,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2529916007280335,
+        "thermodynamic_cost": 221.45767090003523,
+        "final_reynolds": 9.196206137534388,
+        "final_xi": 1.0589560169472838,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_2.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.9020239325842284,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11784306438385819,
+        "thermodynamic_cost": 3.609706664778536,
+        "final_reynolds": 0.018267814534310645,
+        "final_xi": 0.003100354104972022,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9022957462223292,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4057915060507521,
+        "thermodynamic_cost": 143.94353846441405,
+        "final_reynolds": 2.786123038496092,
+        "final_xi": 0.4466274327587357,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8292423570491145,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25174383305116216,
+        "thermodynamic_cost": 221.30265462655353,
+        "final_reynolds": 4.534277351250953,
+        "final_xi": 1.0415023627545668,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_2.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8662632834683371,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.20255644143809498,
+        "thermodynamic_cost": 2.5875172045691155,
+        "final_reynolds": 0.005777711547274121,
+        "final_xi": 0.0016072419098221644,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9062010121043436,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41528984994078877,
+        "thermodynamic_cost": 142.2930638430135,
+        "final_reynolds": 1.8069392217166653,
+        "final_xi": 0.43474251058636404,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324761588344267,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24921685076571704,
+        "thermodynamic_cost": 220.49225234593987,
+        "final_reynolds": 3.0230327039966123,
+        "final_xi": 1.04057274256788,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.001_xi_2.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8905946075299601,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.17012848141367193,
+        "thermodynamic_cost": 3.36114029121002,
+        "final_reynolds": 0.008014164720201788,
+        "final_xi": 0.002714143399085358,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9085564889272154,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40489592002701813,
+        "thermodynamic_cost": 145.0966233163266,
+        "final_reynolds": 1.4084071835455176,
+        "final_xi": 0.4514747649386624,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8367333678597153,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24688528758731262,
+        "thermodynamic_cost": 220.15352380965706,
+        "final_reynolds": 2.2450341588368303,
+        "final_xi": 1.028993191764635,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_0.8_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8892100635582011,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11655815767658265,
+        "thermodynamic_cost": 3.3221659565178294,
+        "final_reynolds": 0.03133581446731784,
+        "final_xi": 0.002656550296461728,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8922393095629823,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4113738997892256,
+        "thermodynamic_cost": 143.89727357031185,
+        "final_reynolds": 5.572025179970688,
+        "final_xi": 0.4465581028922613,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253784351359549,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25213857363945313,
+        "thermodynamic_cost": 221.44321348322367,
+        "final_reynolds": 9.230177267299666,
+        "final_xi": 1.0611255870797214,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_0.8_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8375662045158808,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1961429422459033,
+        "thermodynamic_cost": 2.3191956940434513,
+        "final_reynolds": 0.005191278980993093,
+        "final_xi": 0.0009360215771302071,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9021271634645162,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4067751619447608,
+        "thermodynamic_cost": 145.27481462740658,
+        "final_reynolds": 2.829526378607155,
+        "final_xi": 0.4533968221659982,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8289629547585439,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25317294882205005,
+        "thermodynamic_cost": 220.9231343694406,
+        "final_reynolds": 4.562878448523762,
+        "final_xi": 1.0502817411043566,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_0.8_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8110712579410762,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11065993602395108,
+        "thermodynamic_cost": 1.8668254399861997,
+        "final_reynolds": 0.001740898968040388,
+        "final_xi": 0.000595993150712375,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9064978059520188,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41046628706833743,
+        "thermodynamic_cost": 141.3841039364514,
+        "final_reynolds": 1.7941044724529593,
+        "final_xi": 0.4317536469094318,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832602934555,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24912558255138895,
+        "thermodynamic_cost": 220.63524517589886,
+        "final_reynolds": 3.00844147134693,
+        "final_xi": 1.0366794785692621,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_0.8_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8302753715609653,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11920058976568747,
+        "thermodynamic_cost": 2.0639781078609136,
+        "final_reynolds": 0.002286944473396864,
+        "final_xi": 0.0008116566373715423,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9082606755600945,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4055978125475818,
+        "thermodynamic_cost": 144.89226071925336,
+        "final_reynolds": 1.3984979207551942,
+        "final_xi": 0.4484026362114789,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.836600792783169,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24989967896533646,
+        "thermodynamic_cost": 220.1746316576913,
+        "final_reynolds": 2.2287463624391344,
+        "final_xi": 1.0252394321202496,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_1.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8739605573626363,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1364290235961593,
+        "thermodynamic_cost": 2.624083260410896,
+        "final_reynolds": 0.024310875125284775,
+        "final_xi": 0.002064436583071245,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8923688473470542,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4094503626943327,
+        "thermodynamic_cost": 143.36719950953182,
+        "final_reynolds": 5.541744797732301,
+        "final_xi": 0.4441799349934858,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8252308254504189,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2530435003276546,
+        "thermodynamic_cost": 221.4611046156416,
+        "final_reynolds": 9.185441010971173,
+        "final_xi": 1.0583515398457872,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_1.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.9050908136309546,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.13924844504031456,
+        "thermodynamic_cost": 3.642291795479811,
+        "final_reynolds": 0.020655982419310395,
+        "final_xi": 0.0034126509898581184,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9023010173780216,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4123062428797979,
+        "thermodynamic_cost": 142.6860136764595,
+        "final_reynolds": 2.738680842896857,
+        "final_xi": 0.4391722111365564,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291681212924641,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2513814560702811,
+        "thermodynamic_cost": 221.14439242152937,
+        "final_reynolds": 4.5421132787562355,
+        "final_xi": 1.0444600800365302,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_1.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8676729126995949,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.13359071095445504,
+        "thermodynamic_cost": 2.7735056042991837,
+        "final_reynolds": 0.006454188158052204,
+        "final_xi": 0.001711128681766029,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.90630361344608,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4109412847934099,
+        "thermodynamic_cost": 144.58903336842644,
+        "final_reynolds": 1.866303301034704,
+        "final_xi": 0.4487104681899746,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324772262182236,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2519376821666824,
+        "thermodynamic_cost": 220.7475693655806,
+        "final_reynolds": 2.9800673108330202,
+        "final_xi": 1.030176972867139,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_1.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8664907415063766,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.187012642432298,
+        "thermodynamic_cost": 2.5435790636749025,
+        "final_reynolds": 0.005004088193194045,
+        "final_xi": 0.0017256752243653382,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9089450806797391,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4035614226760441,
+        "thermodynamic_cost": 142.7027354950465,
+        "final_reynolds": 1.373297092033877,
+        "final_xi": 0.44053362052843126,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8367339147398131,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24887114990941842,
+        "thermodynamic_cost": 220.27457197177148,
+        "final_reynolds": 2.223635151898921,
+        "final_xi": 1.0223437489352984,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.005_xi_1.2_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8342965388061868,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1699468160347639,
+        "thermodynamic_cost": 2.2007373286052787,
+        "final_reynolds": 0.010846969357029074,
+        "final_xi": 0.000983245358281443,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8923801611247241,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4086380727132098,
+        "thermodynamic_cost": 144.3010738259417,
+        "final_reynolds": 5.621575466999425,
+        "final_xi": 0.4504504510195294,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8251420354775699,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2549592610207603,
+        "thermodynamic_cost": 221.48251800408133,
+        "final_reynolds": 9.170256277520812,
+        "final_xi": 1.0578319363187532,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_1.2_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8553237805035042,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.13205895485357463,
+        "thermodynamic_cost": 2.418063155138716,
+        "final_reynolds": 0.008668028385272886,
+        "final_xi": 0.0015353704931963,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9022082789709917,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40831711795333736,
+        "thermodynamic_cost": 144.36880017983185,
+        "final_reynolds": 2.79786019852215,
+        "final_xi": 0.4484081778738468,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291447440955917,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25156043186360794,
+        "thermodynamic_cost": 221.12191886023632,
+        "final_reynolds": 4.544109265549707,
+        "final_xi": 1.0450722774768177,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_1.2_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8751481896921378,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.13222969877937563,
+        "thermodynamic_cost": 2.930032604973047,
+        "final_reynolds": 0.007489531425254031,
+        "final_xi": 0.002009864246557377,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9065080102287272,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4051692833218519,
+        "thermodynamic_cost": 143.96837033439954,
+        "final_reynolds": 1.8560414543462773,
+        "final_xi": 0.44636906616047567,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8326345574993054,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24970778352873962,
+        "thermodynamic_cost": 220.7296553400183,
+        "final_reynolds": 2.997616687072111,
+        "final_xi": 1.0337455367928512,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_1.2_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8634100870184668,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11248956349625927,
+        "thermodynamic_cost": 2.6561556146967003,
+        "final_reynolds": 0.005143274514194816,
+        "final_xi": 0.0017229064560419323,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.908441184970144,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4119211094865623,
+        "thermodynamic_cost": 143.57352406686155,
+        "final_reynolds": 1.3775318602327187,
+        "final_xi": 0.44178606811075427,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366426706479614,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25194218156525783,
+        "thermodynamic_cost": 220.35668504675516,
+        "final_reynolds": 2.204646094187128,
+        "final_xi": 1.0166491821907238,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_1.5_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8943126681901391,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16304273022426607,
+        "thermodynamic_cost": 3.393704136121446,
+        "final_reynolds": 0.03317747257646442,
+        "final_xi": 0.002807420369771399,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8923856287617399,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4128389517818129,
+        "thermodynamic_cost": 142.79835263114404,
+        "final_reynolds": 5.491547669410167,
+        "final_xi": 0.4402303827557027,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253441254818469,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2506915903666393,
+        "thermodynamic_cost": 221.41080707320245,
+        "final_reynolds": 9.226665609348164,
+        "final_xi": 1.0610726977492018,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_1.5_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8311556153210752,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.17959426013065258,
+        "thermodynamic_cost": 2.234869267855796,
+        "final_reynolds": 0.003974148966154985,
+        "final_xi": 0.0008656563998018992,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9022858949277834,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4026438611093426,
+        "thermodynamic_cost": 145.07004260795668,
+        "final_reynolds": 2.8311867284152785,
+        "final_xi": 0.45371020916102944,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8290604593369103,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2530240483315287,
+        "thermodynamic_cost": 221.0926240363509,
+        "final_reynolds": 4.5393276054941625,
+        "final_xi": 1.0449141717808301,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_1.5_visc_0.015": {
+      "flat": {
+        "quality_score": 0.9160206366135798,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1512269227095793,
+        "thermodynamic_cost": 3.9450558774092594,
+        "final_reynolds": 0.01562791046000041,
+        "final_xi": 0.003922411454096794,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.906426441677147,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40621768904589156,
+        "thermodynamic_cost": 143.8295472486184,
+        "final_reynolds": 1.8522276658104362,
+        "final_xi": 0.44543459512898187,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832528722876054,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2508145137081215,
+        "thermodynamic_cost": 220.66579850214703,
+        "final_reynolds": 2.999245136832529,
+        "final_xi": 1.0344587381013466,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_1.5_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8555066985308487,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11735323868418258,
+        "thermodynamic_cost": 2.4477600354701217,
+        "final_reynolds": 0.004008004476296734,
+        "final_xi": 0.0014113409974315218,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.908677615640657,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4060964817344255,
+        "thermodynamic_cost": 142.51443888828948,
+        "final_reynolds": 1.3639558526305569,
+        "final_xi": 0.4375837611721807,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.83662898825024,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2510182975273315,
+        "thermodynamic_cost": 220.25602562503377,
+        "final_reynolds": 2.2171747029472213,
+        "final_xi": 1.02086615564382,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_2.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.9142953084093085,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.188365536120311,
+        "thermodynamic_cost": 4.1933664654158225,
+        "final_reynolds": 0.048297343448071156,
+        "final_xi": 0.003996433711368753,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8922045033151997,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4113603275438556,
+        "thermodynamic_cost": 144.15901455102411,
+        "final_reynolds": 5.589340070216899,
+        "final_xi": 0.4479340176135359,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253114514088274,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2517511662857844,
+        "thermodynamic_cost": 221.36418234130286,
+        "final_reynolds": 9.255708638840416,
+        "final_xi": 1.063563078514821,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_2.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8746001406758775,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16531859610997307,
+        "thermodynamic_cost": 2.641591261536173,
+        "final_reynolds": 0.012835592429634906,
+        "final_xi": 0.002159305006106502,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9024639432508127,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4089513891017331,
+        "thermodynamic_cost": 143.6079431352341,
+        "final_reynolds": 2.7806279223977506,
+        "final_xi": 0.4457469667001904,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291874819541803,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24988043418202843,
+        "thermodynamic_cost": 221.1637073868716,
+        "final_reynolds": 4.537565820241523,
+        "final_xi": 1.0436467292688127,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_2.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8664480472111192,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.149191123105223,
+        "thermodynamic_cost": 2.4953729895499874,
+        "final_reynolds": 0.006406222215924537,
+        "final_xi": 0.0016937181914359728,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9064138059955079,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40477913388153125,
+        "thermodynamic_cost": 144.36190376103875,
+        "final_reynolds": 1.8642741842357216,
+        "final_xi": 0.4482835296283492,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8323560760227072,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2524382050994901,
+        "thermodynamic_cost": 220.5437710071776,
+        "final_reynolds": 2.998937065362221,
+        "final_xi": 1.0366547391804635,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.005_xi_2.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.9055788945420534,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1222733171481686,
+        "thermodynamic_cost": 4.017837615080148,
+        "final_reynolds": 0.00868770819267763,
+        "final_xi": 0.003042634744270578,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9086415545412039,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40446174306107774,
+        "thermodynamic_cost": 143.05143825965376,
+        "final_reynolds": 1.373782270561071,
+        "final_xi": 0.4406447006666474,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8369127411620246,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25059320236685584,
+        "thermodynamic_cost": 220.59520993134404,
+        "final_reynolds": 2.1961087658895746,
+        "final_xi": 1.0118030621117737,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_0.8_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8767309777436573,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11905669807026835,
+        "thermodynamic_cost": 2.935025577279434,
+        "final_reynolds": 0.016844820987081285,
+        "final_xi": 0.0016485114299654114,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8921909322535106,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41074244433928747,
+        "thermodynamic_cost": 143.95475756993986,
+        "final_reynolds": 5.572933291082131,
+        "final_xi": 0.4466288812024305,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254015273419478,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.252078750691981,
+        "thermodynamic_cost": 221.57978762623472,
+        "final_reynolds": 9.19359026203262,
+        "final_xi": 1.0568849088503127,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_0.8_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8747487862417599,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.14358620295432417,
+        "thermodynamic_cost": 2.955744327626239,
+        "final_reynolds": 0.00948828564475203,
+        "final_xi": 0.0017562253055085576,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9020130104506626,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4105346649309317,
+        "thermodynamic_cost": 145.71878860585508,
+        "final_reynolds": 2.8410665322086444,
+        "final_xi": 0.4551537138917608,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291143757291283,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2519600414942618,
+        "thermodynamic_cost": 221.11791858941527,
+        "final_reynolds": 4.545544843795189,
+        "final_xi": 1.0450055675674021,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_0.8_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8561601029615385,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12785701085565346,
+        "thermodynamic_cost": 2.4226123553251178,
+        "final_reynolds": 0.0059491654224935984,
+        "final_xi": 0.0015375745975369746,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9062461700462968,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41296949228040986,
+        "thermodynamic_cost": 142.6391630400909,
+        "final_reynolds": 1.817970589802308,
+        "final_xi": 0.4373607485375957,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832524041583696,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2520516919524848,
+        "thermodynamic_cost": 220.7383136462775,
+        "final_reynolds": 2.982008608619002,
+        "final_xi": 1.0306937478837672,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_0.8_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8747528092267917,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16734153619563563,
+        "thermodynamic_cost": 2.7470570695577132,
+        "final_reynolds": 0.006232713613950712,
+        "final_xi": 0.002114287265128509,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9083458733717427,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40914444292707486,
+        "thermodynamic_cost": 144.5733563317895,
+        "final_reynolds": 1.3944509614956913,
+        "final_xi": 0.4470881380698861,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366122356117094,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25165207440846693,
+        "thermodynamic_cost": 220.31139823461422,
+        "final_reynolds": 2.2106808885235734,
+        "final_xi": 1.0189684436030397,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_1.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8966146908317981,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.14252613953647114,
+        "thermodynamic_cost": 3.311346786818069,
+        "final_reynolds": 0.03313568732336215,
+        "final_xi": 0.002769358227028413,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8925091888611004,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4116527961971026,
+        "thermodynamic_cost": 143.13018185771415,
+        "final_reynolds": 5.526917358645343,
+        "final_xi": 0.4430364068105558,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254271452249841,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25149182545234344,
+        "thermodynamic_cost": 221.5909486255256,
+        "final_reynolds": 9.200554952159035,
+        "final_xi": 1.0568150620353498,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_1.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8475760205887783,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1731416753199358,
+        "thermodynamic_cost": 2.376966895883602,
+        "final_reynolds": 0.006672061077419333,
+        "final_xi": 0.0012054439457937181,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9024588528604882,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40914666730167415,
+        "thermodynamic_cost": 141.97210921018802,
+        "final_reynolds": 2.7153509262776905,
+        "final_xi": 0.4355315309322205,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.829255140803915,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24932144126342193,
+        "thermodynamic_cost": 221.16845848459485,
+        "final_reynolds": 4.5497221147737505,
+        "final_xi": 1.0447878693239183,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_1.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8537914695856816,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16931366762877792,
+        "thermodynamic_cost": 2.555582370022747,
+        "final_reynolds": 0.0036347924817163647,
+        "final_xi": 0.0010648732425492403,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9063181862150359,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41175623375907155,
+        "thermodynamic_cost": 142.8471864758171,
+        "final_reynolds": 1.8241509026068794,
+        "final_xi": 0.4387909955228428,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324593454022101,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24989793145611947,
+        "thermodynamic_cost": 220.59940833382876,
+        "final_reynolds": 2.9986539153582186,
+        "final_xi": 1.0359245079425379,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_1.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8758096553994855,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.09069577835141764,
+        "thermodynamic_cost": 2.8078196982405035,
+        "final_reynolds": 0.006300101671225228,
+        "final_xi": 0.0021040919881170125,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9084850163575542,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4046370242971649,
+        "thermodynamic_cost": 144.17635609016145,
+        "final_reynolds": 1.3895719549994814,
+        "final_xi": 0.44561491330431047,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366760755762824,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25033131553329174,
+        "thermodynamic_cost": 220.3168840136847,
+        "final_reynolds": 2.216024035859132,
+        "final_xi": 1.019936032875539,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.01_xi_1.2_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8494444442612276,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.09942804962878425,
+        "thermodynamic_cost": 2.413396385489278,
+        "final_reynolds": 0.013126280136657535,
+        "final_xi": 0.0011677776358061634,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8920068740937565,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4073241085246392,
+        "thermodynamic_cost": 145.8593879922867,
+        "final_reynolds": 5.71971847564519,
+        "final_xi": 0.4580979175107546,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.825329325941428,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2522712146443358,
+        "thermodynamic_cost": 221.6323499043154,
+        "final_reynolds": 9.174801133862507,
+        "final_xi": 1.0550520805525159,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_1.2_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8327747823957331,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1558241306397509,
+        "thermodynamic_cost": 2.2638895464488877,
+        "final_reynolds": 0.0036269477561327508,
+        "final_xi": 0.0007467354509175867,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.90212275904245,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4141623086913038,
+        "thermodynamic_cost": 144.3183204626133,
+        "final_reynolds": 2.7918625442160923,
+        "final_xi": 0.44744774781899876,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8292898930069876,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2495108439882618,
+        "thermodynamic_cost": 221.18553924310604,
+        "final_reynolds": 4.5551487090601315,
+        "final_xi": 1.0452462762030164,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_1.2_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8960362271601481,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.09555157541812596,
+        "thermodynamic_cost": 3.337290233652583,
+        "final_reynolds": 0.010961085263075833,
+        "final_xi": 0.002780380134824865,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9062639937794047,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40780294265922357,
+        "thermodynamic_cost": 144.23915095591747,
+        "final_reynolds": 1.8577803355160016,
+        "final_xi": 0.446723719649032,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832639231740599,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2506054869334906,
+        "thermodynamic_cost": 220.81115979133514,
+        "final_reynolds": 2.9922658223512224,
+        "final_xi": 1.0315432710168988,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_1.2_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8396334494132282,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11941814023338747,
+        "thermodynamic_cost": 2.2630843314792646,
+        "final_reynolds": 0.0023418894831334167,
+        "final_xi": 0.0009508135635030413,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9081808809404044,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4090057362871268,
+        "thermodynamic_cost": 144.40767090109978,
+        "final_reynolds": 1.3873894944546314,
+        "final_xi": 0.4448977763491653,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366965793178262,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2519368737112827,
+        "thermodynamic_cost": 220.43474226112917,
+        "final_reynolds": 2.2016211076649417,
+        "final_xi": 1.0150520247981478,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_1.5_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8770314742061621,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.15619083233434436,
+        "thermodynamic_cost": 2.6928988395815314,
+        "final_reynolds": 0.025897763417607425,
+        "final_xi": 0.00213723004460894,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8921520291579398,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4080391449621879,
+        "thermodynamic_cost": 145.4647214388872,
+        "final_reynolds": 5.697324803010453,
+        "final_xi": 0.45637809823978226,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254085701970063,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24924010576865135,
+        "thermodynamic_cost": 221.47219411569463,
+        "final_reynolds": 9.246850546116436,
+        "final_xi": 1.061175419124386,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_1.5_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8805329815728085,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11773378487311655,
+        "thermodynamic_cost": 3.0034760745235114,
+        "final_reynolds": 0.010006837425803605,
+        "final_xi": 0.0018658090839716716,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9022396374692677,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4087963110871077,
+        "thermodynamic_cost": 144.29408080509168,
+        "final_reynolds": 2.796280077143736,
+        "final_xi": 0.4481832108690995,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8293928515877029,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2499134772019771,
+        "thermodynamic_cost": 221.40914460370317,
+        "final_reynolds": 4.5226569632880755,
+        "final_xi": 1.039144082301826,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_1.5_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8524771640787699,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.22829299205701759,
+        "thermodynamic_cost": 2.3725687105116178,
+        "final_reynolds": 0.004175169044128478,
+        "final_xi": 0.0011726111796341887,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9063013268916276,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4038027588423338,
+        "thermodynamic_cost": 144.7022476336654,
+        "final_reynolds": 1.8708031266369871,
+        "final_xi": 0.4498039095608233,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8325167689111718,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2512281630259497,
+        "thermodynamic_cost": 220.74524161532406,
+        "final_reynolds": 2.9839544943586516,
+        "final_xi": 1.030774300200235,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_1.5_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8762516985543224,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.15473387892410698,
+        "thermodynamic_cost": 2.7906678543649006,
+        "final_reynolds": 0.005978446225377713,
+        "final_xi": 0.002073994894561515,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9087466745676217,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4088200502074518,
+        "thermodynamic_cost": 142.2392062434967,
+        "final_reynolds": 1.3598305637136474,
+        "final_xi": 0.4362684055151175,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.836657094177311,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24974553980895287,
+        "thermodynamic_cost": 220.2223972077899,
+        "final_reynolds": 2.2297161069411935,
+        "final_xi": 1.0246660712605626,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_2.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.9125379648491827,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.08955516099235937,
+        "thermodynamic_cost": 3.822334784738383,
+        "final_reynolds": 0.042180380715064886,
+        "final_xi": 0.0035984814812821285,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8924362112767764,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41196096507931085,
+        "thermodynamic_cost": 143.37988301204297,
+        "final_reynolds": 5.540970965885587,
+        "final_xi": 0.4441264610367518,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254629212570137,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24951984463938554,
+        "thermodynamic_cost": 221.39435616157664,
+        "final_reynolds": 9.272490573438288,
+        "final_xi": 1.0628627397636716,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_2.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8843410377172155,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.13870599917571247,
+        "thermodynamic_cost": 2.869936313586524,
+        "final_reynolds": 0.011979197570636485,
+        "final_xi": 0.0021180209292131725,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9022046841369336,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4107469666898361,
+        "thermodynamic_cost": 143.36013204371613,
+        "final_reynolds": 2.757368155239835,
+        "final_xi": 0.44212106885132996,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291942066011954,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2517604860173309,
+        "thermodynamic_cost": 221.2458736065633,
+        "final_reynolds": 4.517528967734174,
+        "final_xi": 1.040875752157472,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_2.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8792928739673179,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.17564231564022972,
+        "thermodynamic_cost": 2.9819024899797446,
+        "final_reynolds": 0.006329175476845555,
+        "final_xi": 0.0018295679887771125,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9062778294317383,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41119954298143535,
+        "thermodynamic_cost": 142.880224692049,
+        "final_reynolds": 1.8242879104769378,
+        "final_xi": 0.43881186437935693,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8325357968944815,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2525170956473137,
+        "thermodynamic_cost": 220.75516140399156,
+        "final_reynolds": 2.983585004449893,
+        "final_xi": 1.031162797390342,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.01_xi_2.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8387777774955133,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1542897884164352,
+        "thermodynamic_cost": 2.3697221100126935,
+        "final_reynolds": 0.0018092418537222791,
+        "final_xi": 0.0008616664591993262,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9087401320831452,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40498309447496156,
+        "thermodynamic_cost": 142.14307576260808,
+        "final_reynolds": 1.3595267043697432,
+        "final_xi": 0.43619176769068635,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.836551129212137,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25190524055686114,
+        "thermodynamic_cost": 220.1795027909831,
+        "final_reynolds": 2.2257963895151343,
+        "final_xi": 1.0243070425634793,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_0.8_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8785904432252162,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16408127259543642,
+        "thermodynamic_cost": 2.813227620235101,
+        "final_reynolds": 0.024271738156320784,
+        "final_xi": 0.00205906636083332,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8928589201647069,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40814596289397254,
+        "thermodynamic_cost": 141.58307438232924,
+        "final_reynolds": 5.431574210061469,
+        "final_xi": 0.4356132717560816,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253937041124507,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25164385502934916,
+        "thermodynamic_cost": 221.4491998868744,
+        "final_reynolds": 9.24716690683436,
+        "final_xi": 1.0617771923285602,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_0.8_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8717123569541525,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1263528423383003,
+        "thermodynamic_cost": 2.9299440350817476,
+        "final_reynolds": 0.01032492409521694,
+        "final_xi": 0.001734916210885766,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9021685096410618,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41050241083703903,
+        "thermodynamic_cost": 143.34535840606537,
+        "final_reynolds": 2.756687665396718,
+        "final_xi": 0.4419919847468879,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.829044287537643,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25258336311015867,
+        "thermodynamic_cost": 221.03424770462695,
+        "final_reynolds": 4.546355158242325,
+        "final_xi": 1.047598368050632,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_0.8_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8975981679876686,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16581986602473683,
+        "thermodynamic_cost": 3.3203196405185293,
+        "final_reynolds": 0.011446454535936242,
+        "final_xi": 0.002840222329839513,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9062821096427988,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40165845452280413,
+        "thermodynamic_cost": 145.40538054981056,
+        "final_reynolds": 1.8869711395276765,
+        "final_xi": 0.4536421795300961,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832580740691209,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2504428196210323,
+        "thermodynamic_cost": 220.6981913923963,
+        "final_reynolds": 2.999677824876637,
+        "final_xi": 1.0342555426039663,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_0.8_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8905442793098822,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1033258521649731,
+        "thermodynamic_cost": 3.2036397208996528,
+        "final_reynolds": 0.006985450047641456,
+        "final_xi": 0.0024220023962213404,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9088755562939621,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4032270273074286,
+        "thermodynamic_cost": 144.87944692865383,
+        "final_reynolds": 1.410479330822883,
+        "final_xi": 0.4521384999665075,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8364697662473123,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2501506803727784,
+        "thermodynamic_cost": 220.10029281378166,
+        "final_reynolds": 2.227916040568556,
+        "final_xi": 1.0263216765341028,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_1.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8532337317238395,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.14559717799253227,
+        "thermodynamic_cost": 2.4391509314454587,
+        "final_reynolds": 0.014481755023501922,
+        "final_xi": 0.0012828471891372843,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8920593849066658,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41441420150116903,
+        "thermodynamic_cost": 144.22680270723984,
+        "final_reynolds": 5.585166290607734,
+        "final_xi": 0.4475483281896896,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253981934024458,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2537632660992531,
+        "thermodynamic_cost": 221.72619746243575,
+        "final_reynolds": 9.159785313337613,
+        "final_xi": 1.052988494936813,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_1.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8416065272844256,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.15426661522949098,
+        "thermodynamic_cost": 2.183488539611069,
+        "final_reynolds": 0.006773840797768365,
+        "final_xi": 0.001189366439973867,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9020110052205766,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4052833850390114,
+        "thermodynamic_cost": 145.6262518684211,
+        "final_reynolds": 2.8379709306761978,
+        "final_xi": 0.4547354384882583,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.829194407919129,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2504859536473658,
+        "thermodynamic_cost": 221.0378453011895,
+        "final_reynolds": 4.56644825327687,
+        "final_xi": 1.0489110668326647,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_1.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8661614287653155,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.0956957055552006,
+        "thermodynamic_cost": 2.588126982269798,
+        "final_reynolds": 0.004814082671971657,
+        "final_xi": 0.0013658463561248592,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.906095185045774,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4127809261107777,
+        "thermodynamic_cost": 145.201112494428,
+        "final_reynolds": 1.8759213597342066,
+        "final_xi": 0.4509488682000976,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8325862915049692,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2492295186395107,
+        "thermodynamic_cost": 220.7675364078247,
+        "final_reynolds": 2.9921271328823265,
+        "final_xi": 1.032186599981733,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_1.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8461208377335082,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.10244902686225166,
+        "thermodynamic_cost": 2.318543667787796,
+        "final_reynolds": 0.0023327311616043096,
+        "final_xi": 0.0009914183097613559,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9085559363757044,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40290865561004363,
+        "thermodynamic_cost": 144.10125247232054,
+        "final_reynolds": 1.390406789121134,
+        "final_xi": 0.4458969459274852,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.83662938830881,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2521673089463676,
+        "thermodynamic_cost": 220.30437410103988,
+        "final_reynolds": 2.2116012547093895,
+        "final_xi": 1.0184824145294824,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.02_xi_1.2_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8914133005535101,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16238786469095653,
+        "thermodynamic_cost": 3.2660418011708083,
+        "final_reynolds": 0.029138404374232818,
+        "final_xi": 0.0024689582489556814,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8920607873555503,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40739084382901986,
+        "thermodynamic_cost": 144.56449752232962,
+        "final_reynolds": 5.614464114653435,
+        "final_xi": 0.4499210927785797,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8252987798246605,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25223590289450115,
+        "thermodynamic_cost": 221.37671725471225,
+        "final_reynolds": 9.243050210124052,
+        "final_xi": 1.0630553986697504,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_1.2_visc_0.01": {
+      "flat": {
+        "quality_score": 0.85583199550007,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2087840719171655,
+        "thermodynamic_cost": 2.445437545544008,
+        "final_reynolds": 0.008573102394642129,
+        "final_xi": 0.0015031134157059852,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9021667615127745,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4077022697463637,
+        "thermodynamic_cost": 144.30595673195643,
+        "final_reynolds": 2.795286877671356,
+        "final_xi": 0.4480336040834703,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291699635835489,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2518669925101051,
+        "thermodynamic_cost": 221.06233336967156,
+        "final_reynolds": 4.5593806460341595,
+        "final_xi": 1.0481781904164593,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_1.2_visc_0.015": {
+      "flat": {
+        "quality_score": 0.9041439690752315,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11429550577869943,
+        "thermodynamic_cost": 3.692084843104942,
+        "final_reynolds": 0.013597816858699879,
+        "final_xi": 0.0034099366506379365,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9061703568044678,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41055980340054316,
+        "thermodynamic_cost": 144.1049403380309,
+        "final_reynolds": 1.850918147011902,
+        "final_xi": 0.4451097352021997,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8326424543015424,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24988150892045924,
+        "thermodynamic_cost": 220.81793459380873,
+        "final_reynolds": 2.990748037234322,
+        "final_xi": 1.0308982159278561,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_1.2_visc_0.02": {
+      "flat": {
+        "quality_score": 0.870223794421515,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.10062730446455957,
+        "thermodynamic_cost": 2.668198244724331,
+        "final_reynolds": 0.005030872859888385,
+        "final_xi": 0.0017226222160973911,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9086768099680779,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4082698463935007,
+        "thermodynamic_cost": 140.9177379661927,
+        "final_reynolds": 1.3361914181402392,
+        "final_xi": 0.4288474753167571,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366975415742152,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2508828627933731,
+        "thermodynamic_cost": 220.34596020153035,
+        "final_reynolds": 2.2114693552103626,
+        "final_xi": 1.0186242731485025,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_1.5_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8674459219733985,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.18802557647725499,
+        "thermodynamic_cost": 2.7241386339962594,
+        "final_reynolds": 0.013978330418066209,
+        "final_xi": 0.0014101240957706176,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8923506541459302,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4103943244195423,
+        "thermodynamic_cost": 144.03156573806663,
+        "final_reynolds": 5.591496356215353,
+        "final_xi": 0.44807111857170656,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253647457614016,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2503248962987942,
+        "thermodynamic_cost": 221.34751671850677,
+        "final_reynolds": 9.273595762102987,
+        "final_xi": 1.0646489680976696,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_1.5_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8492502234000017,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.18964444610596137,
+        "thermodynamic_cost": 2.413417352686429,
+        "final_reynolds": 0.006038427957815306,
+        "final_xi": 0.001148547080674051,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9023378817667306,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4042237548708826,
+        "thermodynamic_cost": 143.6562775384125,
+        "final_reynolds": 2.7759335131754392,
+        "final_xi": 0.4450483898692865,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8292389638373284,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25260965818619063,
+        "thermodynamic_cost": 221.25390788802838,
+        "final_reynolds": 4.529115381039129,
+        "final_xi": 1.0417885470158283,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_1.5_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8835000607861794,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.08516800417846893,
+        "thermodynamic_cost": 2.911315799929623,
+        "final_reynolds": 0.010019504248037712,
+        "final_xi": 0.002500385158704023,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9063942845453695,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40792887348047824,
+        "thermodynamic_cost": 143.63406105595502,
+        "final_reynolds": 1.8469814412635919,
+        "final_xi": 0.4441941656719822,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8325729578805223,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2516636634571484,
+        "thermodynamic_cost": 220.75478333573602,
+        "final_reynolds": 2.99162206260458,
+        "final_xi": 1.0318837823201394,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_1.5_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8406829567677668,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1354941973874198,
+        "thermodynamic_cost": 2.254119148811851,
+        "final_reynolds": 0.004147008328496713,
+        "final_xi": 0.0013852534584843689,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9086691053492046,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40769091508483907,
+        "thermodynamic_cost": 142.63246632177038,
+        "final_reynolds": 1.3655501810282984,
+        "final_xi": 0.43808429361025647,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8368060138880001,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24945333420992713,
+        "thermodynamic_cost": 220.4164075239459,
+        "final_reynolds": 2.214629862446606,
+        "final_xi": 1.0183041778383348,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_2.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8867735648546103,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1954487623946716,
+        "thermodynamic_cost": 3.2493703769992135,
+        "final_reynolds": 0.025050719913467193,
+        "final_xi": 0.002263149820143963,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8924431284517298,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4093983235764597,
+        "thermodynamic_cost": 143.42852532740562,
+        "final_reynolds": 5.555166416208457,
+        "final_xi": 0.44521706644014425,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8251644178819649,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2536215676164321,
+        "thermodynamic_cost": 221.4359811224254,
+        "final_reynolds": 9.196822085327783,
+        "final_xi": 1.0590143348365482,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_2.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8782236743195636,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.18069599107743256,
+        "thermodynamic_cost": 2.9192813800199997,
+        "final_reynolds": 0.01378016721423533,
+        "final_xi": 0.00231013812427439,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.902444307815769,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4045828839710868,
+        "thermodynamic_cost": 143.17862670110006,
+        "final_reynolds": 2.7628717221098835,
+        "final_xi": 0.44301413899453,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291984352365805,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2512490296256789,
+        "thermodynamic_cost": 221.15974216753395,
+        "final_reynolds": 4.547511622123074,
+        "final_xi": 1.0453086302691639,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_2.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8959514592500796,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.15665485897871156,
+        "thermodynamic_cost": 3.334739451524844,
+        "final_reynolds": 0.011374532621853476,
+        "final_xi": 0.002848984509265482,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.906269284286339,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4104830306381949,
+        "thermodynamic_cost": 143.93847628708858,
+        "final_reynolds": 1.85147147953655,
+        "final_xi": 0.44524378756294725,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324145562198421,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2527375526810912,
+        "thermodynamic_cost": 220.60350743350233,
+        "final_reynolds": 2.997933213760557,
+        "final_xi": 1.0358857362085354,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.02_xi_2.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8591323347926804,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11891035011157332,
+        "thermodynamic_cost": 2.4319279449459175,
+        "final_reynolds": 0.00432720326556498,
+        "final_xi": 0.0014877439883765422,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9083990588995522,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4075535358702907,
+        "thermodynamic_cost": 143.21686187090359,
+        "final_reynolds": 1.3702873326912839,
+        "final_xi": 0.43956725452599454,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8368109134288476,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2522379842871675,
+        "thermodynamic_cost": 220.54694675795648,
+        "final_reynolds": 2.1989527227333694,
+        "final_xi": 1.012776209088603,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_0.8_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8647459727991332,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12416136149761478,
+        "thermodynamic_cost": 2.384200926860028,
+        "final_reynolds": 0.02079211758599208,
+        "final_xi": 0.001736044397883889,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8925135551064186,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.404880151919083,
+        "thermodynamic_cost": 144.0947704269048,
+        "final_reynolds": 5.611092829581713,
+        "final_xi": 0.44967733405841204,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8253495666533488,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2543310333002367,
+        "thermodynamic_cost": 221.63490743201962,
+        "final_reynolds": 9.169598933118468,
+        "final_xi": 1.0555385048676902,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_0.8_visc_0.01": {
+      "flat": {
+        "quality_score": 0.871862881503943,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.11639020505568214,
+        "thermodynamic_cost": 2.7375698915954163,
+        "final_reynolds": 0.011325682666759838,
+        "final_xi": 0.0019419343430705479,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9024877804172721,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41051657725188645,
+        "thermodynamic_cost": 142.0256739162396,
+        "final_reynolds": 2.720091978624958,
+        "final_xi": 0.43625858562509556,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8290624319747627,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2519719698397005,
+        "thermodynamic_cost": 221.11575490940803,
+        "final_reynolds": 4.539328210374853,
+        "final_xi": 1.0452931716268488,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_0.8_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8949817079682537,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.128770579620622,
+        "thermodynamic_cost": 3.5773570239356207,
+        "final_reynolds": 0.009825310253211853,
+        "final_xi": 0.00259520507500282,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9066436058527602,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4058227609013514,
+        "thermodynamic_cost": 142.64903051459856,
+        "final_reynolds": 1.8283073144829418,
+        "final_xi": 0.4398432570652311,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324414709343523,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25433207842883027,
+        "thermodynamic_cost": 220.71330740848614,
+        "final_reynolds": 2.987250088389858,
+        "final_xi": 1.032025659621322,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_0.8_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8666297807547726,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.10754062211683214,
+        "thermodynamic_cost": 2.586550425980929,
+        "final_reynolds": 0.004908937431484363,
+        "final_xi": 0.0016740011327822449,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.908435470422693,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40730068050994694,
+        "thermodynamic_cost": 143.7651585401498,
+        "final_reynolds": 1.3813438955181623,
+        "final_xi": 0.443024931039083,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8368353311159206,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25077501587064166,
+        "thermodynamic_cost": 220.47690930532252,
+        "final_reynolds": 2.213592727320018,
+        "final_xi": 1.0171147434188579,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_1.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8683666100449932,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1360964379727827,
+        "thermodynamic_cost": 2.7612144936783247,
+        "final_reynolds": 0.025751999210861867,
+        "final_xi": 0.002163836183655912,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8925541627571659,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4072630073801978,
+        "thermodynamic_cost": 142.95278821902858,
+        "final_reynolds": 5.525334502631439,
+        "final_xi": 0.442906857164752,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254237924254202,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2511328058659175,
+        "thermodynamic_cost": 221.7027979360914,
+        "final_reynolds": 9.171040453826725,
+        "final_xi": 1.0543310408178064,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_1.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8619135516695389,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12092688764101088,
+        "thermodynamic_cost": 2.582582221562266,
+        "final_reynolds": 0.005752288101952503,
+        "final_xi": 0.0012530798702864287,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9025872726238348,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4046854918179223,
+        "thermodynamic_cost": 142.36047334688757,
+        "final_reynolds": 2.7376941677186415,
+        "final_xi": 0.4390778463575451,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8290928534265856,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2527442946132136,
+        "thermodynamic_cost": 221.159102579548,
+        "final_reynolds": 4.5356219953637265,
+        "final_xi": 1.043853137435959,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_1.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8645626634103114,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12560816727881807,
+        "thermodynamic_cost": 2.573291304058628,
+        "final_reynolds": 0.006326876540844117,
+        "final_xi": 0.0016270457154646976,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9061616815262362,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41560963945639345,
+        "thermodynamic_cost": 143.24766795362908,
+        "final_reynolds": 1.8293804895646102,
+        "final_xi": 0.4400157721761258,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324697903803284,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.253970814398175,
+        "thermodynamic_cost": 220.77407325971805,
+        "final_reynolds": 2.974329625669732,
+        "final_xi": 1.0292171608609832,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_1.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.9041237120766129,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.13653612137681914,
+        "thermodynamic_cost": 3.660539680886486,
+        "final_reynolds": 0.010546182781283617,
+        "final_xi": 0.003526217930058475,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9085862437558143,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4025562003964986,
+        "thermodynamic_cost": 143.86682682648163,
+        "final_reynolds": 1.3878118652103275,
+        "final_xi": 0.4450546792744793,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8367898506002419,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24729415560781545,
+        "thermodynamic_cost": 220.30007140405644,
+        "final_reynolds": 2.2293158446505976,
+        "final_xi": 1.0237660045721306,
+        "regime": "turbulent"
+      }
+    },
+    "alpha_0.05_xi_1.2_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8807241769906438,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.15048763801965712,
+        "thermodynamic_cost": 2.993303975665671,
+        "final_reynolds": 0.026416100789946727,
+        "final_xi": 0.002275629939264303,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8924701089220383,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41025569949293506,
+        "thermodynamic_cost": 143.40243289547857,
+        "final_reynolds": 5.555532397181739,
+        "final_xi": 0.4452452874014638,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254153371358072,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25069929829180865,
+        "thermodynamic_cost": 221.57017536771622,
+        "final_reynolds": 9.207282400066651,
+        "final_xi": 1.0580443606894647,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_1.2_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8358663958990796,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1529705905377212,
+        "thermodynamic_cost": 2.115285460160268,
+        "final_reynolds": 0.006470128901011412,
+        "final_xi": 0.0011425250020669494,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9023816542562285,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4107821972845,
+        "thermodynamic_cost": 143.24998953787366,
+        "final_reynolds": 2.762932592919657,
+        "final_xi": 0.4429480387657747,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291379625794311,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2523788501993296,
+        "thermodynamic_cost": 221.05625795386828,
+        "final_reynolds": 4.561653206059775,
+        "final_xi": 1.0489557384361925,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_1.2_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8473428423801753,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.15768255938823297,
+        "thermodynamic_cost": 2.3778800914035743,
+        "final_reynolds": 0.0033739328890098584,
+        "final_xi": 0.001035545267107625,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9060363680560344,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.41440156723936084,
+        "thermodynamic_cost": 142.00247332001484,
+        "final_reynolds": 1.7963259179771816,
+        "final_xi": 0.4322587179426988,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8325932680006399,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2500787991379765,
+        "thermodynamic_cost": 220.6787375649364,
+        "final_reynolds": 3.0109535655631765,
+        "final_xi": 1.0363475825188726,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_1.2_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8883350389891503,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1262377280916951,
+        "thermodynamic_cost": 3.3893363837418478,
+        "final_reynolds": 0.006847037568992424,
+        "final_xi": 0.0023847652062557205,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9086515038089242,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4031094524789908,
+        "thermodynamic_cost": 143.17851810284276,
+        "final_reynolds": 1.3763938028455358,
+        "final_xi": 0.44148303726832244,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366772169769039,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24842042874908288,
+        "thermodynamic_cost": 220.14060383316746,
+        "final_reynolds": 2.2427186745761065,
+        "final_xi": 1.0288685813152545,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_1.5_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8402782582960407,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.18004923043916254,
+        "thermodynamic_cost": 2.3004374294763723,
+        "final_reynolds": 0.008500655317143545,
+        "final_xi": 0.0008480445199452477,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8923385931546552,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4078434170110551,
+        "thermodynamic_cost": 144.70039914486767,
+        "final_reynolds": 5.650713634262253,
+        "final_xi": 0.45273263113782425,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254057688336082,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2505234204307693,
+        "thermodynamic_cost": 221.541767421572,
+        "final_reynolds": 9.244976270663983,
+        "final_xi": 1.060698271563897,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_1.5_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8343173374367242,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12332976929958371,
+        "thermodynamic_cost": 2.1395330757152853,
+        "final_reynolds": 0.00575683178064959,
+        "final_xi": 0.0010017281229238754,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9022572670000771,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.410366139839376,
+        "thermodynamic_cost": 144.0368299235658,
+        "final_reynolds": 2.786654169081028,
+        "final_xi": 0.4467012044930654,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8290987468555304,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25266221262127037,
+        "thermodynamic_cost": 221.1783574803293,
+        "final_reynolds": 4.526162848580588,
+        "final_xi": 1.0425586992232205,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_1.5_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8456502028781022,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.12411949290389819,
+        "thermodynamic_cost": 2.4514348759853237,
+        "final_reynolds": 0.0031840086951674764,
+        "final_xi": 0.0009742437554190377,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9062546493394686,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4068880472072493,
+        "thermodynamic_cost": 144.571893299143,
+        "final_reynolds": 1.8651631773092872,
+        "final_xi": 0.44843831571956005,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8324111570996838,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24972056910439377,
+        "thermodynamic_cost": 220.41245054618838,
+        "final_reynolds": 3.0298500672301905,
+        "final_xi": 1.0438674355981477,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_1.5_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8456784114674812,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1529707500439865,
+        "thermodynamic_cost": 2.28518272376228,
+        "final_reynolds": 0.003063685195636835,
+        "final_xi": 0.0010907550674970252,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9088616973181892,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40109217774176037,
+        "thermodynamic_cost": 142.42391030998996,
+        "final_reynolds": 1.3663063438140104,
+        "final_xi": 0.4383477398189962,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8366747631711936,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25068764696218726,
+        "thermodynamic_cost": 220.34493553790458,
+        "final_reynolds": 2.2161019110440763,
+        "final_xi": 1.020592014078606,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_2.0_visc_0.005": {
+      "flat": {
+        "quality_score": 0.8785987414885055,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.09839446083637367,
+        "thermodynamic_cost": 2.9106010016092903,
+        "final_reynolds": 0.026025790547680738,
+        "final_xi": 0.002189478631423702,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.8925179043679036,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40995576919939924,
+        "thermodynamic_cost": 142.89971053460962,
+        "final_reynolds": 5.516209456840581,
+        "final_xi": 0.44218070532247095,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8254374729756142,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25058671575301683,
+        "thermodynamic_cost": 221.5562304901318,
+        "final_reynolds": 9.211633266619252,
+        "final_xi": 1.0583773332332371,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_2.0_visc_0.01": {
+      "flat": {
+        "quality_score": 0.8894593371203555,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.16532361548278443,
+        "thermodynamic_cost": 3.3276644338915933,
+        "final_reynolds": 0.014209939046615602,
+        "final_xi": 0.0025234053920111044,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9024094049004571,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4098942141552344,
+        "thermodynamic_cost": 143.08355085364838,
+        "final_reynolds": 2.75569761479384,
+        "final_xi": 0.4418397690283764,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8291357224702974,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25216720975681395,
+        "thermodynamic_cost": 221.16149307068233,
+        "final_reynolds": 4.5412899481175115,
+        "final_xi": 1.044423364595764,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_2.0_visc_0.015": {
+      "flat": {
+        "quality_score": 0.8701233940583224,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1921212336727519,
+        "thermodynamic_cost": 2.656915525692015,
+        "final_reynolds": 0.006453166119379928,
+        "final_xi": 0.0017273386443740512,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9064096754668941,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.40960150103808957,
+        "thermodynamic_cost": 143.5077566802484,
+        "final_reynolds": 1.8438290401035713,
+        "final_xi": 0.4434404955848922,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.832623784896934,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.2499937759598091,
+        "thermodynamic_cost": 220.74266381463846,
+        "final_reynolds": 2.9992852709223494,
+        "final_xi": 1.0338050973665311,
+        "regime": "transitional"
+      }
+    },
+    "alpha_0.05_xi_2.0_visc_0.02": {
+      "flat": {
+        "quality_score": 0.8832002772543496,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1596800891311352,
+        "thermodynamic_cost": 2.9375155026670945,
+        "final_reynolds": 0.006074928335015259,
+        "final_xi": 0.0021050244272163383,
+        "regime": "laminar"
+      },
+      "tilt": {
+        "quality_score": 0.9082863290005215,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4146397788486087,
+        "thermodynamic_cost": 143.12357497863218,
+        "final_reynolds": 1.3664009943287523,
+        "final_xi": 0.43829722584686837,
+        "regime": "transitional"
+      },
+      "drain": {
+        "quality_score": 0.8367987426667414,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.24888093609498707,
+        "thermodynamic_cost": 220.36703374425008,
+        "final_reynolds": 2.2172933384933153,
+        "final_xi": 1.0198162315732975,
+        "regime": "transitional"
+      }
+    }
+  },
+  "optimal_parameters": {
+    "flat": {
+      "quality_score": 0.9160206366135798,
+      "params": {
+        "alpha": 0.005,
+        "xi": 1.5,
+        "viscosity": 0.015
+      },
+      "results": {
+        "quality_score": 0.9160206366135798,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.1512269227095793,
+        "thermodynamic_cost": 3.9450558774092594,
+        "final_reynolds": 0.01562791046000041,
+        "final_xi": 0.003922411454096794,
+        "regime": "laminar"
+      }
+    },
+    "tilt": {
+      "quality_score": 0.9089450806797391,
+      "params": {
+        "alpha": 0.005,
+        "xi": 1.0,
+        "viscosity": 0.02
+      },
+      "results": {
+        "quality_score": 0.9089450806797391,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.4035614226760441,
+        "thermodynamic_cost": 142.7027354950465,
+        "final_reynolds": 1.373297092033877,
+        "final_xi": 0.44053362052843126,
+        "regime": "transitional"
+      }
+    },
+    "drain": {
+      "quality_score": 0.8369127411620246,
+      "params": {
+        "alpha": 0.005,
+        "xi": 2.0,
+        "viscosity": 0.02
+      },
+      "results": {
+        "quality_score": 0.8369127411620246,
+        "universal_bounds_satisfied": true,
+        "quantum_coherence": 0.25059320236685584,
+        "thermodynamic_cost": 220.59520993134404,
+        "final_reynolds": 2.1961087658895746,
+        "final_xi": 1.0118030621117737,
+        "regime": "transitional"
+      }
+    }
+  },
+  "sensitivity_analysis": {
+    "alpha_sensitivity": {
+      "0.001": {
+        "mean_quality": 0.8671318538291715,
+        "std_quality": 0.03260903965959786,
+        "count": 60
+      },
+      "0.005": {
+        "mean_quality": 0.8672260720705322,
+        "std_quality": 0.03396929985990714,
+        "count": 60
+      },
+      "0.01": {
+        "mean_quality": 0.867345015127622,
+        "std_quality": 0.03184457705534083,
+        "count": 60
+      },
+      "0.02": {
+        "mean_quality": 0.8682351096668965,
+        "std_quality": 0.03156684789539098,
+        "count": 60
+      },
+      "0.05": {
+        "mean_quality": 0.866741354228557,
+        "std_quality": 0.03163776610248872,
+        "count": 60
+      }
+    },
+    "xi_sensitivity": {
+      "0.8": {
+        "mean_quality": 0.8666217338751991,
+        "std_quality": 0.03201022512386487,
+        "count": 60
+      },
+      "1.0": {
+        "mean_quality": 0.8660858354950978,
+        "std_quality": 0.03302556384846408,
+        "count": 60
+      },
+      "1.2": {
+        "mean_quality": 0.8660507617399769,
+        "std_quality": 0.03186462175481773,
+        "count": 60
+      },
+      "1.5": {
+        "mean_quality": 0.8656536100508577,
+        "std_quality": 0.032062379899027216,
+        "count": 60
+      },
+      "2.0": {
+        "mean_quality": 0.8722674637616478,
+        "std_quality": 0.03225527028719519,
+        "count": 60
+      }
+    },
+    "viscosity_sensitivity": {
+      "0.005": {
+        "mean_quality": 0.8639070138089386,
+        "std_quality": 0.03113202558332211,
+        "count": 75
+      },
+      "0.01": {
+        "mean_quality": 0.8644928559150348,
+        "std_quality": 0.032803762607979604,
+        "count": 75
+      },
+      "0.015": {
+        "mean_quality": 0.8704862746131768,
+        "std_quality": 0.033129929456005076,
+        "count": 75
+      },
+      "0.02": {
+        "mean_quality": 0.870457379601073,
+        "std_quality": 0.031647830094671675,
+        "count": 75
+      }
+    }
+  }
+}
