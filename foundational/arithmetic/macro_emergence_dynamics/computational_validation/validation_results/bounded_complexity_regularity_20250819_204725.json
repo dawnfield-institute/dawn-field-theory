@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-08-19T20:47:25.583726",
+  "theorem": "Bounded Symbolic Complexity Implies Regularity",
+  "experimental_bounds": {
+    "max_depth": 1,
+    "max_nodes": 3
+  },
+  "pattern_bounds": {
+    "laminar": {
+      "max_gradient": 7.919191919191918,
+      "max_energy": 34.47811411919035,
+      "reynolds_tested": [
+        100,
+        1000,
+        10000
+      ],
+      "grid_size": [
+        100,
+        100
+      ]
+    },
+    "transitional": {
+      "max_gradient": 8.71062649898336,
+      "max_energy": 34.653415641401544,
+      "reynolds_tested": [
+        100,
+        1000,
+        10000
+      ],
+      "grid_size": [
+        100,
+        100
+      ]
+    },
+    "turbulent": {
+      "max_gradient": 9.507549426444822,
+      "max_energy": 34.87624219307938,
+      "reynolds_tested": [
+        100,
+        1000,
+        10000
+      ],
+      "grid_size": [
+        100,
+        100
+      ]
+    },
+    "global_bounds": {
+      "max_gradient_all_patterns": 9.507549426444822,
+      "max_energy_all_patterns": 34.87624219307938,
+      "gradient_bound_satisfied": true,
+      "energy_bound_satisfied": true
+    }
+  },
+  "composition_validation": {
+    "n_tests": 100,
+    "max_composition_gradient": 8.783683091783272,
+    "max_composition_energy": 35.2459001167863,
+    "gradient_bounded": 
