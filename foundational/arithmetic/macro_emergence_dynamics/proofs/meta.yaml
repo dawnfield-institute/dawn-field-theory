@@ -1,0 +1,12 @@
+schema_version: 2.0
+directory_name: proofs
+description: >
+  Detailed mathematical proofs supporting the MED framework and Navier-Stokes solution.
+  Contains step-by-step proof documentation for core theorems.
+semantic_scope:
+  - mathematical proofs
+  - theorem documentation
+  - rigorous mathematics
+files:
+  - 01_sec_navier_stokes_equivalence.md
+  - 02_bounded_complexity_regularity.md

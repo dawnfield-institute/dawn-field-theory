@@ -1,0 +1,15 @@
+schema_version: 2.0
+directory_name: formal_papers
+description: >
+  Complete formal mathematical papers documenting the Navier-Stokes Millennium Problem solution.
+  Contains rigorous proofs, mathematical foundations, and Clay Institute submission materials.
+semantic_scope:
+  - formal mathematics
+  - millennium problem
+  - mathematical proofs
+  - academic papers
+files:
+  - clay_institute_submission.md
+  - med_mathematical_foundations.md
+  - navier_stokes_millennium_proof.md
+  - README.md

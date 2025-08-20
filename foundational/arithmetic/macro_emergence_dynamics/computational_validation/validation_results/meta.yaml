@@ -1,0 +1,25 @@
+schema_version: 2.0
+directory_name: validation_results
+description: >
+  Timestamped JSON output files from computational validation runs.
+  Contains experimental evidence supporting bounded symbolic complexity claims
+  for Navier-Stokes flows across Reynolds number ranges.
+semantic_scope:
+  - experimental data
+  - validation results
+  - json output
+  - computational evidence
+  - reynolds scaling
+parent_framework: computational_validation
+result_types:
+  - SEC-Navier-Stokes equivalence data
+  - bounded complexity regularity measurements
+  - pattern convergence metrics
+  - energy conservation validation
+files:
+  - bounded_complexity_regularity_20250819_204725.json
+  - bounded_complexity_regularity_20250819_204850.json
+  - sec_navier_equivalence_20250819_204714.json
+data_format: JSON
+timestamp_format: YYYYMMDD_HHMMSS
+retention_policy: "Permanent - critical validation evidence"
