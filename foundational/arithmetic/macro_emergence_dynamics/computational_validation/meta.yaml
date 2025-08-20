@@ -1,17 +1,26 @@
 schema_version: 2.0
 directory_name: computational_validation
-description: >
-  Computational validation scripts and results for the Macro Emergence Dynamics (MED) framework.
-  Contains Python validators that test core mathematical claims of the Navier-Stokes Millennium Problem solution.
+description: 'Computational validation scripts and results for the Macro Emergence
+  Dynamics (MED) framework. Contains Python validators that test core mathematical
+  claims of the Navier-Stokes Millennium Problem solution.
+
+  '
 semantic_scope:
-  - computational validation
-  - navier-stokes
-  - symbolic entropy collapse
-  - bounded complexity
-  - fluid dynamics
+- computational validation
+- navier-stokes
+- symbolic entropy collapse
+- bounded complexity
+- fluid dynamics
 files:
-  - bounded_complexity_regularity_validator.py
-  - sec_navier_equivalence_validator.py
-  - VALIDATION_SUMMARY.md
+- README.md
+- benchmark_comparison.py
+- complexity_evolution_tracker_fixed.py
+- enhanced_pattern_extraction.py
+- infodynamics_framework_analysis.md
+- pattern_discovery_engine.py
+- pragmatic_med_framework.py
+- run_refactored_framework.py
+- unified_med_testing_framework.py
+- validated_results.md
 child_directories:
-  - validation_results
+- results

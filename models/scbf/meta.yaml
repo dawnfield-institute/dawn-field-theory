@@ -18,6 +18,7 @@ files:
 - test_scbf.py
 - tinycimm_scbf_experiment.py
 child_directories:
+- docs
 - loggers
 - metrics
 - scbf_experiments
