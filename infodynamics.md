@@ -1,30 +1,28 @@
-# Declaration of Infodynamics: Exploring Scale-Invariant Information-Entropy Field Dynamics
+# Declaration of Infodynamics: A Foundational Manifesto for the Post-Thermodynamic Epoch
 
-**Version:** 2.0 - Computational Studies Update
+**Version:** 1.0
 **Authors:** Peter Groom
-**Date:** \[Updated with scale-invariant computational investigations]
+**Date:** \[To be finalized upon publication]
 
 ## Abstract
 
-Infodynamics explores information and entropy as potential fundamental dual axes governing structural genesis and collapse in physical reality. This updated declaration incorporates promising computational studies suggesting scale-invariant behavior of continuous entropy-information fields with bounded complexity. Our computational framework indicates 40% physics baseline correspondence with encouraging Taylor-Green vortex capture across grid scales, suggesting SEC₁ attractor convergence (depth ≤ 1, nodes ≤ 3) and potential discretization artifact reduction through continuous gradient approaches.
+Infodynamics reconfigures the foundations of physical reality by defining information and entropy not as epiphenomena, but as the dual axes of structural genesis and collapse. This declaration formalizes the theoretical and experimental underpinnings of Infodynamics, its emergence from Dawn Field Theory, and its consequences for physics, computation, consciousness, and governance. This document establishes the epistemic, ontological, and operational principles of the field, offering a consolidated roadmap for scientific, engineering, and philosophical engagement.
 
-*Note: This work represents ongoing theoretical and computational exploration. While our results are encouraging, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.*
+## 1. Introduction: Collapse as Construction
 
-## 1. Introduction: Exploring Scale-Invariant Collapse as Potential Universal Construction
+Infodynamics emerges from the recognition that information is not passive, but active; not representational, but generative. Entropy, in this frame, is not decay, but potential unshaped. The Dawn Field Framework posits that what we interpret as physical processes are emergent equilibria of energetic and informational gradients. This declaration consolidates over a decade of field synthesis, simulation research, and collapse experimentation into a coherent theoretical infrastructure.
 
-Infodynamics emerges from investigating whether information might generate reality through scale-invariant entropy collapse mechanisms. Our computational studies suggest that continuous entropy-information fields H(u) = |u| + 0.3|ω| with scale-adaptive parameters might maintain universal bounded complexity across resolutions, warranting investigation of Dawn Field Theory's foundational claim that physical processes could be emergent equilibria of information-entropy gradients with thermodynamic constraints.
+## 2. Foundational Postulates
 
-## 2. Foundational Explorations
+### 2.1 Information Precedes Geometry
 
-### 2.1 Information Potentially Preceding Geometry
+Spatial geometry arises from underlying information differentials. Informational density gradients determine the emergence of geometric form, connectivity, and metric curvature.
 
-We explore whether spatial geometry might arise from underlying information differentials. Informational density gradients could potentially determine the emergence of geometric form, connectivity, and metric curvature.
+$\nabla \rho_{\text{info}} \Rightarrow \mathcal{G}(x,y,z,t)$
 
-$\nabla \rho_{\text{info}} \Rightarrow \mathcal{G}(x,y,z,t)$ *(under investigation)*
+### 2.2 Entropy as Uncrystallized Potential
 
-### 2.2 Entropy as Potential Uncrystallized Field
-
-We investigate reframing entropy as a reservoir of latent configuration. Rather than merely measuring disorder, it might function as an active field in which structural configurations await stabilization via recursive interaction.
+Entropy is reframed as a reservoir of latent configuration. Rather than measuring disorder, it becomes the active field in which structural configurations await stabilization via recursive interaction.
 
 ### 2.3 Collapse as Field Resolution
 
