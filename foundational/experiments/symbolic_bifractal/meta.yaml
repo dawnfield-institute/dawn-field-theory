@@ -9,6 +9,8 @@ semantic_scope:
 - experiments
 - foundational
 files:
+- InfoDyn_Validation_BifractalCollapse_v0.1.yaml
+- InfoDyn_Validation_LineageTrace.tsv
 - results.md
 - symbolic_bifractal_expansion_v1.py
 - symbolic_bifractal_expansion_v2.py
