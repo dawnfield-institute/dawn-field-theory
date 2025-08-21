@@ -1,5 +1,33 @@
 # [id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md
 
+```yaml
+document_title: Arithmetic Identity and Structural Novelty in Computation: A CIP Perspective
+version: 1.0
+authors:
+  - Peter Lorne Groom
+date_created: 2025-08-21
+schema_version: dawn_field_schema_v1.1
+document_type: theory_proposal
+field_scope:
+  - computational_novelty
+  - arithmetic_identity
+  - infodynamics
+  - structural_emergence
+experiment_links:
+  - ../experiments/quantum_validation/born_rule/results.md
+  - ../experiments/symbolic_entropy_collapse/results.md
+  - ../experiments/landauer_erasure_field_cost_map/results.md
+  - ../experiments/recursive_gravity/results.md
+license: Copyleft (custom Dawn license)
+document_status: complete
+data_provenance: theory_and_experiment
+related_documents:
+  - symbolic_entropy_collapse_geometry_foundation.md
+  - dawn_field_theory_recursive_balance_field.md
+  - symbolic_entropy_collapse_deep_learning_bridge.md
+  - landauer_erasure_cost_superfluidity_viscosity.md
+```
+
 ## Title: Arithmetic Identity and Structural Novelty in Computation: A CIP Perspective
 
 ### Abstract
