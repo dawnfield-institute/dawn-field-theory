@@ -8,6 +8,8 @@ description: 'Drafts and in-progress documents for DFT preprints, including theo
 semantic_scope:
 - infodynamics-drafts
 - dft-preprint-development
+hardware_standard: 'RTX 3070ti + i9-12gen (see resources/hardware_configuration.md)'
+reproducibility_notes: 'All performance metrics and timing results specific to documented hardware configuration'
 files:
 - AIXPreprint_draft.md
 - CIPPreprint_draft.md

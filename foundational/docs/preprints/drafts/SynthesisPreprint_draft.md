@@ -359,6 +359,20 @@ This formal thought experiment on Cosmic Information Mining via AI-driven energy
 
 ---
 
+## Appendix B: Hardware Specifications
+
+Complete hardware specifications and computational environment details are maintained in the centralized hardware timeline:
+
+**Hardware Specification Reference**: 
+- Repository: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/resources/specs/hardware_timeline.yaml
+- Commit: f53f931fed5e3fcd053616fc5e264cdcca4dbea1
+- Hardware Period: primary_development (February 2025 - current)
+- Platform: ASUS ROG Zephyrus M16 gaming laptop with RTX 3070Ti GPU
+
+All computational results across the Dawn Field Theory investigation were obtained using the hardware configuration documented at the above reference point for full reproducibility and scientific verification.
+
+---
+
 ## Citations
 
 [1] Groom, P. (2025). "Symbolic Cognition and Collapse-Aware Interpretability (AIX)." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/AIXPreprint_draft.md

@@ -769,6 +769,18 @@ This work builds on the theoretical foundations of Dawn Field Theory developed t
 
 All experimental results are fully reproducible using provided code and configuration files. Complete experimental protocols and validation procedures are documented in the repository structure with session-specific result preservation.
 
+### Appendix D: Hardware Specifications
+
+Complete hardware specifications and computational environment details are maintained in the centralized hardware timeline:
+
+**Hardware Specification Reference**: 
+- Repository: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/resources/specs/hardware_timeline.yaml
+- Commit: f53f931fed5e3fcd053616fc5e264cdcca4dbea1
+- Hardware Period: primary_development (February 2025 - current)
+- Platform: ASUS ROG Zephyrus M16 gaming laptop with RTX 3070Ti GPU
+
+All computational results in this preprint were obtained using the hardware configuration documented at the above reference point for full reproducibility and scientific verification.
+
 ---
 
 *Manuscript prepared for Dawn Field Theory Preprint Series - September 2025*
