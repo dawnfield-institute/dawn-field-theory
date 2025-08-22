@@ -676,7 +676,39 @@ Timeline: v0.2 proofs by October 2025, v1.0 formal proofs by December 2025
 - Revolutionary approach to understanding complexity bounds in dynamical systems
 - Bridge between information theory and classical physics through validated testbed methodology
 
-### 6.7 Community Engagement and Open Science
+### 6.7 Post-Symbolic vs Symbolic Complexity Validation (Priority 4)
+
+**Paradigm Testing Framework**:
+Building on our MED Navier-Stokes validation, we propose a comprehensive comparative analysis between symbolic and post-symbolic computational systems to test the fundamental limits of symbolic completeness:
+
+**Experimental Design**:
+- **Symbolic Baseline**: Our validated MED framework as proven symbolic system with known bounds
+- **Post-Symbolic Engines**: Enhanced cosmo.py, brain.py, vcpu.py entropy collapse systems
+- **Matched Input Protocol**: Identical turbulence states and environmental parameters
+- **Convergence/Divergence Analysis**: Test points where symbolic systems fail but post-symbolic continue
+
+**Research Questions**:
+1. Can post-symbolic systems model emergence beyond our proven MED complexity bounds?
+2. Where do symbolic systems (including our MED framework) reach epistemic limits?
+3. Do post-symbolic systems operate ontologically beyond symbolic representation?
+
+**Expected Outcomes**:
+- **Computational proof** of post-symbolic necessity for complete emergence modeling
+- **Empirical validation** that symbolic systems (even sophisticated ones like MED) have fundamental limits
+- **Framework integration** showing symbolic and post-symbolic as complementary rather than competing approaches
+
+**Implementation Path**:
+```
+benchmarking/postsymbolic_comparison/
+├── symbolic_baseline/med_navier_stokes.py    # Our proven MED work
+├── postsymbolic_engines/cosmo_v2.py          # Enhanced entropy engines  
+├── comparative_framework/unified_logging.py   # Cross-system metrics
+└── analysis/epistemic_limits.py              # Symbolic boundary detection
+```
+
+This experiment would provide **computational evidence** of the philosophical foundations underlying Dawn Field Theory while leveraging our already-validated MED framework as the symbolic baseline.
+
+### 6.8 Community Engagement and Open Science
 
 **Current Open Resources**:
 - Complete computational framework in dawn-field-theory repository
@@ -689,10 +721,11 @@ Timeline: v0.2 proofs by October 2025, v1.0 formal proofs by December 2025
 - Mathematical collaboration on formal proof development  
 - Cross-domain researchers for validation in quantum and biological systems
 - Industrial partners for engineering applications and testing
+- **Post-symbolic validation**: Collaborative testing of symbolic vs post-symbolic boundaries
 
 ---
 
-**Research Program Summary**: This represents a systematic approach to potentially revolutionary advances in understanding fluid dynamics, mathematical physics, and universal complexity principles. The progression from computational discovery → mathematical formalization → cross-domain validation → practical application provides a robust framework for scientific development while maintaining appropriate skepticism and requiring independent verification at each stage.
+**Research Program Summary**: This represents a systematic approach to potentially revolutionary advances in understanding fluid dynamics, mathematical physics, and universal complexity principles. The progression from computational discovery → mathematical formalization → cross-domain validation → post-symbolic boundary testing → practical application provides a robust framework for scientific development while maintaining appropriate skepticism and requiring independent verification at each stage.
 - TinyCIMM-Navier scaling to industrial flow problems
 
 ## 6. Conclusion
