@@ -11,6 +11,7 @@ semantic_scope:
 files:
 - anomaly_analysis.md
 - cosmov2.md
+- postsymbolic_vs_symbolic_validation.md
 - quantum_EM.md
 child_directories:
 - navier
