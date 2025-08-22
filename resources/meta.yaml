@@ -17,5 +17,5 @@ semantic_scope:
 - hardware-specifications
 files:
 - recursive_structure.png
-child_directories: 
+child_directories:
 - specs
