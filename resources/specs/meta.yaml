@@ -1,36 +1,32 @@
 schema_version: '1.0'
 directory_name: specs
-description: 'Hardware specifications and computational platform documentation for Dawn Field Theory development'
+description: Hardware specifications and computational platform documentation for
+  Dawn Field Theory development
 semantic_scope:
-  - hardware-specifications
-  - computational-platforms
-  - performance-baselines
-  - reproducibility-context
-
-# Primary Hardware Timeline Document
-primary_spec: 'hardware_timeline.yaml'
-
-# Hardware Documentation Standards
+- hardware-specifications
+- computational-platforms
+- performance-baselines
+- reproducibility-context
+primary_spec: hardware_timeline.yaml
 documentation_standards:
-  citation_format: 'RTX 3070ti + i9-12gen (see resources/specs/hardware_timeline.yaml)'
-  performance_context: 'All metrics specific to documented configuration'
-  reproducibility_note: 'Relative ratios transferable, absolute timing platform-specific'
-
-# Cross-Reference Integration
+  citation_format: RTX 3070ti + i9-12gen (see resources/specs/hardware_timeline.yaml)
+  performance_context: All metrics specific to documented configuration
+  reproducibility_note: Relative ratios transferable, absolute timing platform-specific
 integration_points:
-  preprints: 'foundational/docs/preprints/drafts/*'
-  experiments: 'foundational/experiments/*'
-  models: 'models/*'
-  validation: 'foundational/arithmetic/macro_emergence_dynamics/*'
-
-# Maintenance Schedule
+  preprints: foundational/docs/preprints/drafts/*
+  experiments: foundational/experiments/*
+  models: models/*
+  validation: foundational/arithmetic/macro_emergence_dynamics/*
 maintenance:
-  review_frequency: 'quarterly'
+  review_frequency: quarterly
   update_triggers:
-    - 'hardware platform changes'
-    - 'significant performance improvements'
-    - 'new computational frameworks'
-    - 'cross-platform validation'
-
+  - hardware platform changes
+  - significant performance improvements
+  - new computational frameworks
+  - cross-platform validation
 created: '2025-08-22'
 last_updated: '2025-08-22'
+files:
+- citation_template.md
+- hardware_timeline.yaml
+child_directories: []
