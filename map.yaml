@@ -414,19 +414,20 @@ dawn-field-theory/
       preprints/
         meta.yaml
         drafts/
-          AIXPreprint_draft.md
-          CIPPreprint_draft.md
-          DFT_Infodynamics_preprint_draft.md
-          NavierStokesSymbolicCollapse_draft.md
-          RecursiveMathematicalPlasticity_EntropyAwareArchitecture_draft.md
-          ResonantSymbolicConvergencePreprint_draft.md
-          SECPreprint_draft.md
-          SynthesisPreprint_draft.md
+          [ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.md
+          [ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.md
+          [cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.md
+          [id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.md
+          [id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md
+          [id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md
+          [m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md
+          [m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md
           meta.yaml
           resources/
             CIM.docx
             CIM.md
             entropy_minimized_architecture.md
+            hardware_configuration.md
             mathmatics_next_steps.md
             meta.yaml
     experiments/
@@ -2546,6 +2547,10 @@ dawn-field-theory/
   resources/
     meta.yaml
     recursive_structure.png
+    specs/
+      citation_template.md
+      hardware_timeline.yaml
+      meta.yaml
   roadmaps/
     README.md
     cip_protocol_roadmap.md
