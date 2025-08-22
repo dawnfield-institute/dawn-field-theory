@@ -9,8 +9,8 @@ semantic_scope:
 - theory
 files:
 - README.md
-- '[id][A][v2.0][C4][I5]gradient_descent_infodynamics_bridge.md'
 - '[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md'
+- '[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md'
 - '[id][F][v1.0][C5][I5][E]_landauer_erasure_cost_superfluidity_viscosity.md'
 - '[id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md'
 - '[id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md'
