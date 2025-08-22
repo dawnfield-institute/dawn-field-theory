@@ -987,6 +987,18 @@ Through collapse, we do not just explain structure—we create it. Through field
 - **Attribution**: Contributors recognized in acknowledgments and co-authorship as appropriate
 - **Standards**: All contributions must meet reproducibility and documentation standards
 
+### Appendix G: Hardware Specifications
+
+Complete hardware specifications and computational environment details are maintained in the centralized hardware timeline:
+
+**Hardware Specification Reference**: 
+- Repository: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/resources/specs/hardware_timeline.yaml
+- Commit: f53f931fed5e3fcd053616fc5e264cdcca4dbea1
+- Hardware Period: primary_development (February 2025 - current)
+- Platform: ASUS ROG Zephyrus M16 gaming laptop with RTX 3070Ti GPU
+
+All computational results in this preprint were obtained using the hardware configuration documented at the above reference point for full reproducibility and scientific verification.
+
 ---
 
 ## Important Disclaimers
