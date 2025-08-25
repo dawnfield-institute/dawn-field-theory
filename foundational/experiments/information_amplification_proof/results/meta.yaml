@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: results
-description: Comprehensive experimental results and data analysis from information amplification studies. Contains quantitative evidence demonstrating 46.2x information amplification ratios, weight analysis findings, and empirical validation of emergent information generation supporting Dawn Field Theory.
+description: Comprehensive experimental results and data analysis from information
+  amplification studies. Contains quantitative evidence demonstrating 46.2x information
+  amplification ratios, weight analysis findings, and empirical validation of emergent
+  information generation supporting Dawn Field Theory.
 semantic_scope:
 - experimental_results
 - quantitative_analysis
