@@ -8,7 +8,7 @@ contributor:
 
 contribution:
   pr_number: TEST
-  title: "Test Citation Automation"
+  title: "Test Citation Automation1"
   description: >
     This is a test entry to verify the automated citation ingestion and processing workflow.
     Please ignore and delete after confirming successful automation.
