@@ -65,6 +65,27 @@ def process_citation_file(file_path: Path, contributors_index: Dict[str, Any]) -
     contributor = citation_data['contributor']
     contributor_id = contributor['name'].lower().replace(' ', '_')
     
+    # Ensure contributors_index has the expected structure
+    if 'contributors' not in contributors_index:
+        contributors_index['contributors'] = {}
+    
+    # Convert existing list format to dict format if needed
+    if isinstance(contributors_index['contributors'], list):
+        existing_contributors = contributors_index['contributors']
+        contributors_index['contributors'] = {}
+        for contrib in existing_contributors:
+            if isinstance(contrib, dict) and 'name' in contrib:
+                key = contrib['name'].lower().replace(' ', '_')
+                # Convert old format to new format
+                contributors_index['contributors'][key] = {
+                    'name': contrib['name'],
+                    'email': contrib.get('email', ''),
+                    'orcid': contrib.get('orcid', ''),
+                    'github': contrib.get('github', ''),
+                    'affiliation': contrib.get('affiliation', ''),
+                    'contributions': []  # Reset to new format
+                }
+    
     # Add to contributors index
     if contributor_id not in contributors_index['contributors']:
         contributors_index['contributors'][contributor_id] = {
