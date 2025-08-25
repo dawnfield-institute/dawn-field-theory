@@ -11,7 +11,7 @@ contributor:
   email: "john.doe@example.com"
   github: "johndoe"
   orcid: "https://orcid.org/0000-0000-0000-0000"  # Optional
-  affiliation: "Independent Researcher"  # Optional
+  affiliation: "Independent Researcher1"  # Optional
 
 contribution:
   title: "Recursive Entropy Operator for Information Amplification"
