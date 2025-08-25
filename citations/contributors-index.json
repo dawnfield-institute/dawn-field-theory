@@ -9,6 +9,34 @@
       "name": "Peter Lorne Groom",
       "orcid": ""
     },
+    "test_contributor": {
+      "affiliation": "Dawn Field Theory Testing",
+      "contributions": [
+        {
+          "date": "2025-08-25",
+          "description": "This test validates the complete citation workflow including PR submission, automated processing, and file archival. This contribution demonstrates the citation system's capability to handle real-world PR scenarios.\n",
+          "files": [
+            "tools/process_citations.py",
+            ".github/workflows/process-citations.yml",
+            "citations/README.md"
+          ],
+          "keywords": [
+            "automation",
+            "testing",
+            "citation-workflow",
+            "github-actions"
+          ],
+          "notes": "Test entry for validating citation automation workflow. Safe to delete after successful testing.",
+          "pr_number": "TEST-WORKFLOW",
+          "title": "Citation Workflow Validation Test",
+          "type": "validation"
+        }
+      ],
+      "email": "test.contributor@example.com",
+      "github": "testcontrib",
+      "name": "Test Contributor",
+      "orcid": "https://orcid.org/0000-0000-0000-TEST"
+    },
     "test_user": {
       "affiliation": "Dawn Field Theory Project",
       "contributions": [
@@ -29,7 +57,7 @@
       "orcid": "0000-0000-0000-TEST"
     }
   },
-  "last_updated": "2025-08-25T13:44:23.136418",
+  "last_updated": "2025-08-25T16:58:00.148650",
   "notes": "This index is automatically updated when new citable PRs are merged. For manual updates, modify citations/ YAML files and regenerate.",
   "repository": "dawn-field-theory"
 }
