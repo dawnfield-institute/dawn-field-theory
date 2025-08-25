@@ -1,10 +1,6 @@
 name: Process Citations
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'citations/pending/*.yaml'
   pull_request:
     branches: [ main ]
     types: [ closed ]
@@ -13,7 +9,7 @@ on:
 
 jobs:
   process-citations:
-    if: github.event_name == 'push' || (github.event.pull_request.merged == true)
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     
     steps:

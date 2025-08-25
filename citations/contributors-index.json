@@ -1,14 +1,35 @@
 {
-  "repository": "dawn-field-theory",
-  "last_updated": "2025-08-25",
   "citations": [],
-  "contributors": [
-    {
-      "name": "Peter Lorne Groom",
-      "role": "primary_author",
+  "contributors": {
+    "peter_lorne_groom": {
       "affiliation": "Dawn Field Institute",
-      "contributions": ["foundational_theory", "repository_architecture", "core_experiments"]
+      "contributions": [],
+      "email": "",
+      "github": "",
+      "name": "Peter Lorne Groom",
+      "orcid": ""
+    },
+    "test_user": {
+      "affiliation": "Dawn Field Theory Project",
+      "contributions": [
+        {
+          "date": "2025-08-25",
+          "description": "This is a test entry to verify the automated citation ingestion and processing workflow. Please ignore and delete after confirming successful automation.\n",
+          "files": [
+            "test/test_citation_automation.py"
+          ],
+          "pr_number": "TEST",
+          "title": "Test Citation Automation",
+          "type": "validation"
+        }
+      ],
+      "email": "test@example.com",
+      "github": "",
+      "name": "Test User",
+      "orcid": "0000-0000-0000-TEST"
     }
-  ],
-  "notes": "This index is automatically updated when new citable PRs are merged. For manual updates, modify citations/ YAML files and regenerate."
+  },
+  "last_updated": "2025-08-25T13:44:23.136418",
+  "notes": "This index is automatically updated when new citable PRs are merged. For manual updates, modify citations/ YAML files and regenerate.",
+  "repository": "dawn-field-theory"
 }
