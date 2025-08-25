@@ -12,5 +12,6 @@ files:
 - converter.py
 - generate_meta_yamls.py
 - generate_path.py
+- process_citations.py
 - update_meta_yamls.py
 child_directories: []
