@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: amplification
-description: Focused results from amplification-specific experiments demonstrating emergent information generation. Contains timestamped experimental data showing quantitative evidence of computational systems generating novel information content beyond their encoded parameters.
+description: Focused results from amplification-specific experiments demonstrating
+  emergent information generation. Contains timestamped experimental data showing
+  quantitative evidence of computational systems generating novel information content
+  beyond their encoded parameters.
 semantic_scope:
 - amplification_focused_results
 - emergent_information
