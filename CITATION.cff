@@ -15,6 +15,10 @@ authors:
   family-names: User
   email: test@example.com
   orcid: 0000-0000-0000-TEST
+- given-names: Test
+  family-names: Contributor
+  email: test.contributor@example.com
+  orcid: 0000-0000-0000-TEST
 repository-code: https://github.com/dawnfield-institute/dawn-field-theory
 url: https://github.com/dawnfield-institute/dawn-field-theory
 license: GPL-3.0-or-later
