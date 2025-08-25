@@ -83,6 +83,7 @@ dawn-field-theory/
   citations/
     README.md
     contributors-index.json
+    contributors_bibtex.bib
     meta.yaml
     pr-citation-template.yaml
     external_citations/
@@ -93,7 +94,7 @@ dawn-field-theory/
     pending/
       README.md
       example-pr-123-entropy-operator.yaml
-      pr-TEST-citation-automation.yaml
+      pr-TEST-WORKFLOW-validation.yaml
     processed/
       README.md
   cognition_index_protocol/
@@ -2656,3 +2657,4 @@ dawn-field-theory/
     meta.yaml
     process_citations.py
     update_meta_yamls.py
+    validate_citations.py
