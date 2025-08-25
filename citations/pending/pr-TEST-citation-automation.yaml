@@ -7,22 +7,15 @@ contributor:
   affiliation: Dawn Field Theory Project
 
 contribution:
-  pr_number: TEST
-  title: "Test Citation Automation1"
+  title: "Test Citation Automation"
   description: >
     This is a test entry to verify the automated citation ingestion and processing workflow.
     Please ignore and delete after confirming successful automation.
-  files_modified:
+  files:
     - test/test_citation_automation.py
-  date_merged: 2025-08-25
 
-citation:
-  preferred_citation: >
-    Test User. "Test Citation Automation." Dawn Field Theory Project, 2025. https://github.com/dawnfieldtheory/dawn-field-theory/pull/TEST
-  bibtex: |
-    @misc{testuser2025testcitation,
-      author = {Test User},
-      title = {Test Citation Automation},
-      year = {2025},
-      howpublished = {\url{https://github.com/dawnfieldtheory/dawn-field-theory/pull/TEST}},
-      note = {Dawn Field Theory Project, TEST ENTRY}
+type: "validation"  # Options: implementation, theory, experiment, documentation, validation
+
+# These will be automatically populated by the system
+date: "2025-08-25"
+pr_number: "TEST"
