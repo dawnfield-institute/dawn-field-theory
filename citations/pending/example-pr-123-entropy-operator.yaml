@@ -1,0 +1,37 @@
+# EXAMPLE FILE - DO NOT PROCESS
+# This is an example of how to submit citation data for your contribution
+# Copy this file to citations/pending/ and rename it to pr-{PR_NUMBER}-{description}.yaml
+# 
+# This example file is blacklisted from automated processing
+# 
+# For real contributions, remove the "example-" prefix and use actual PR numbers
+
+contributor:
+  name: "John Doe"
+  email: "john.doe@example.com"
+  github: "johndoe"
+  orcid: "https://orcid.org/0000-0000-0000-0000"  # Optional
+  affiliation: "Independent Researcher"  # Optional
+
+contribution:
+  title: "Recursive Entropy Operator for Information Amplification"
+  description: "Implemented a new entropy-based operator for detecting symbolic field collapse patterns in neural networks, with validation experiments."
+  files:
+    - "blueprints/operators/entropy_recursive.py"
+    - "foundational/experiments/entropy_validation.py"
+    - "foundational/docs/entropy_operator_theory.md"
+  
+type: "implementation"  # Options: implementation, theory, experiment, documentation, validation
+
+# Automatically populated by the system
+date: "2025-01-15"
+pr_number: "123"
+
+# Optional fields
+doi: ""  # If you register this work with Zenodo
+keywords:
+  - "entropy"
+  - "information amplification"
+  - "symbolic fields"
+  
+notes: "This implementation extends the theoretical framework with practical operators for field collapse detection."

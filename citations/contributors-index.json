@@ -1,0 +1,14 @@
+{
+  "repository": "dawn-field-theory",
+  "last_updated": "2025-08-25",
+  "citations": [],
+  "contributors": [
+    {
+      "name": "Peter Lorne Groom",
+      "role": "primary_author",
+      "affiliation": "Dawn Field Institute",
+      "contributions": ["foundational_theory", "repository_architecture", "core_experiments"]
+    }
+  ],
+  "notes": "This index is automatically updated when new citable PRs are merged. For manual updates, modify citations/ YAML files and regenerate."
+}
