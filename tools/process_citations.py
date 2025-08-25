@@ -83,8 +83,14 @@ def process_citation_file(file_path: Path, contributors_index: Dict[str, Any]) -
         'date': citation_data.get('date', datetime.now().strftime('%Y-%m-%d')),
         'description': citation_data['contribution'].get('description', ''),
         'files': citation_data['contribution'].get('files', []),
-        'pr_number': citation_data.get('pr_number', '')
+        'pr_number': citation_data.get('pr_number', ''),
+        'doi': citation_data.get('doi', ''),
+        'keywords': citation_data.get('keywords', []),
+        'notes': citation_data.get('notes', '')
     }
+    
+    # Remove empty optional fields for cleaner output
+    contribution_entry = {k: v for k, v in contribution_entry.items() if v}
     
     contributors_index['contributors'][contributor_id]['contributions'].append(contribution_entry)
     
@@ -95,19 +101,45 @@ def generate_bibtex_entries(contributors_index: Dict[str, Any]) -> str:
     """Generate BibTeX entries for all contributors."""
     bibtex_entries = []
     
-    for contributor_id, contributor in contributors_index['contributors'].items():
-        for i, contribution in enumerate(contributor['contributions']):
+    # Handle both dict and list structures for backwards compatibility
+    contributors = contributors_index.get('contributors', {})
+    if isinstance(contributors, list):
+        # Convert list to dict format
+        contributors_dict = {}
+        for i, contributor in enumerate(contributors):
+            key = contributor.get('name', f'contributor_{i}').lower().replace(' ', '_')
+            contributors_dict[key] = contributor
+        contributors = contributors_dict
+    
+    for contributor_id, contributor in contributors.items():
+        for i, contribution in enumerate(contributor.get('contributions', [])):
             entry_id = f"dawnfield_{contributor_id}_{i+1}"
             
-            bibtex_entry = f"""@misc{{{entry_id},
-  author       = {{{contributor['name']}}},
-  title        = {{{contribution['title']}}},
-  year         = {{{contribution['date'][:4]}}},
-  note         = {{Contribution to Dawn Field Theory Repository}},
-  url          = {{https://github.com/dawnfield-institute/dawn-field-theory}},
-  type         = {{{contribution['type']}}}
-}}"""
+            # Build BibTeX entry with optional fields
+            bibtex_lines = [
+                f"@misc{{{entry_id},",
+                f"  author       = {{{contributor['name']}}},",
+                f"  title        = {{{contribution['title']}}},",
+                f"  year         = {{{contribution['date'][:4]}}},",
+                f"  note         = {{Contribution to Dawn Field Theory Repository}},",
+                f"  url          = {{https://github.com/dawnfield-institute/dawn-field-theory}},",
+                f"  type         = {{{contribution['type']}}}"
+            ]
             
+            # Add optional fields if present
+            if contribution.get('doi'):
+                bibtex_lines.append(f"  doi          = {{{contribution['doi']}}},")
+            if contribution.get('keywords'):
+                keywords_str = ', '.join(contribution['keywords'])
+                bibtex_lines.append(f"  keywords     = {{{keywords_str}}},")
+            if contribution.get('pr_number'):
+                bibtex_lines.append(f"  note         = {{PR #{contribution['pr_number']}, Dawn Field Theory}},")
+            
+            # Remove trailing comma from last line and close entry
+            bibtex_lines[-1] = bibtex_lines[-1].rstrip(',')
+            bibtex_lines.append("}")
+            
+            bibtex_entry = '\n'.join(bibtex_lines)
             bibtex_entries.append(bibtex_entry)
     
     return '\n\n'.join(bibtex_entries)
@@ -121,7 +153,17 @@ def update_citation_cff(contributors_index: Dict[str, Any], citation_cff_path: P
         # Update authors list
         authors = [citation_cff.get('authors', [{}])[0]]  # Keep main author first
         
-        for contributor_id, contributor in contributors_index['contributors'].items():
+        # Handle both dict and list structures for backwards compatibility
+        contributors = contributors_index.get('contributors', {})
+        if isinstance(contributors, list):
+            # Convert list to dict format
+            contributors_dict = {}
+            for i, contributor in enumerate(contributors):
+                key = contributor.get('name', f'contributor_{i}').lower().replace(' ', '_')
+                contributors_dict[key] = contributor
+            contributors = contributors_dict
+        
+        for contributor_id, contributor in contributors.items():
             if contributor['name'] != citation_cff.get('authors', [{}])[0].get('given-names', '') + ' ' + citation_cff.get('authors', [{}])[0].get('family-names', ''):
                 author_entry = {
                     'given-names': contributor['name'].split()[0],
