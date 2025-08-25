@@ -9,8 +9,8 @@
 - **Original Document Verification**: [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]  
 - **Imperfection Engine Methodology**: [The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bid%5D%5BF%5D%5Bv0.1%5D%5BC5%5D%5BI5%5D%5BR%5D_imperfection_engine_epistemic_collapse_dawn_field_repo.md)
 - **All The Code**: [Dawn Field Theory Repository](https://github.com/dawnfield-institute/dawn-field-theory)
-- **Complete Archive**: Available to serious collaborators (it's extensive)
-- **Contact Me**: [Contact information for endorsement and collaboration]
+- **Complete Archive**: Available to serious collaborators (it's extensive—every AI conversation, failed experiment, and breakthrough moment documented with cryptographic timestamps for full transparency)
+- **Contact Me**: [Peter Groom](mailto:peter@dawnfield.ca)
 **Date:** August 2025  
 **Version:** 1.0 Draft  
 **Status:** Synthesis Preprint  
@@ -224,7 +224,7 @@ Looking back at my journey from that first "what if we could mine information fr
 - **Original Document Verification**: [CIM.docx](resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]  
 - **My Methodology**: Imperfection Engine Framework (described in Section 1.2)
 - **All The Code**: [Dawn Field Theory Repository](https://github.com/dawnfield-institute/dawn-field-theory)
-- **Complete Archive**: Available to serious collaborators (it's extensive)
+- **Complete Archive**: Available to serious collaborators (it's extensive—every AI conversation, failed experiment, and breakthrough moment documented with cryptographic timestamps for full transparency)
 - **Contact Me**: [Contact information for endorsement and collaboration]
 
 ---

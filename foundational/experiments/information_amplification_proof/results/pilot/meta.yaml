@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: pilot
+description: Pilot study results from initial information amplification experiments using language models. Contains baseline measurements and preliminary evidence of emergent information generation, establishing foundational data for comprehensive validation studies.
+semantic_scope:
+- pilot_study_results
+- language_model_analysis
+- baseline_measurements
+- preliminary_evidence
+- initial_validation
+- computational_pilot
+- emergent_patterns
+files:
+- pilot_language_model_20250825_102630.json
+child_directories: []

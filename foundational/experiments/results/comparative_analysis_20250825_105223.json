@@ -1,0 +1,14 @@
+{
+  "basic_test": {
+    "status": "skipped",
+    "error": "Script basic_test.py not found"
+  },
+  "pilot_study": {
+    "status": "skipped",
+    "error": "Script pilot_study.py not found"
+  },
+  "amplification_focused": {
+    "status": "skipped",
+    "error": "Script amplification_focused_test.py not found"
+  }
+}

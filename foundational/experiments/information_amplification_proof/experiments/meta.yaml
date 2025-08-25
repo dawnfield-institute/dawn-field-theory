@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: experiments
+description: Experimental protocols and test suites for validating information amplification hypotheses. Contains pilot studies, scale tests, weight analysis experiments, and comprehensive validation protocols demonstrating emergent information generation in computational systems.
+semantic_scope:
+- experimental_validation
+- pilot_studies
+- weight_analysis
+- scale_testing
+- amplification_measurement
+- empirical_research
+- computational_experiments
+- sec_integration
+files:
+- basic_test.py
+- pilot_study.py
+- pilot_study_clean.py
+- scale_test.py
+- weight_analysis.py
+child_directories: []
