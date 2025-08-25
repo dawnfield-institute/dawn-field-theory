@@ -13,6 +13,7 @@
 - [ ] I have reviewed the publishing boundaries and citation process
 - [ ] I have added/updated documentation as needed
 - [ ] I have included a citation YAML in `citations/pending/` for substantial contributions
+- [ ] Citation validation has passed (automatically checked when PR is opened)
 
 ---
 
@@ -35,7 +36,15 @@ If your PR represents a substantial theoretical, experimental, or code contribut
 1. **Copy the template**: `citations/pr-citation-template.yaml` to `citations/pending/`
 2. **Rename it**: Use pattern `pr-{PR_NUMBER}-{short-description}.yaml`
 3. **Fill in your details**: Contributor info, contribution description, and affected files
-4. **Include in this PR**: The completed citation YAML will be automatically processed upon merge
+4. **Validate locally** (optional): Run `python tools/validate_citations.py` to check formatting
+5. **Include in this PR**: The citation YAML will be automatically validated when you open the PR
+6. **Review feedback**: Address any validation issues shown in the automated comment
+7. **Merge**: Your citation will be automatically processed and integrated upon merge
+
+**Automated Workflow:**
+- 🔍 **On PR open/update**: Citation files are validated and results posted as comments
+- ✅ **On PR merge**: Valid citations are processed, integrated, and archived automatically
+
 
 **What qualifies for citation:**
 - ✅ New experimental frameworks or validations
