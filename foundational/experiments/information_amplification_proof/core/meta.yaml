@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: core
-description: Core computational engines for information amplification measurement and analysis. Includes compression algorithms, text generation utilities, SEC-based weight interpretation, and foundational measurement infrastructure for empirical validation of emergent information generation.
+description: Core computational engines for information amplification measurement
+  and analysis. Includes compression algorithms, text generation utilities, SEC-based
+  weight interpretation, and foundational measurement infrastructure for empirical
+  validation of emergent information generation.
 semantic_scope:
 - compression_analysis
 - sec_weight_interpretation

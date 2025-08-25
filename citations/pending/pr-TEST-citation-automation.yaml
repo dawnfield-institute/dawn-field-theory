@@ -1,0 +1,28 @@
+# TEST CITATION ENTRY -- for CI automation test only. Safe to delete after test.
+
+contributor:
+  name: Test User
+  orcid: 0000-0000-0000-TEST
+  email: test@example.com
+  affiliation: Dawn Field Theory Project
+
+contribution:
+  pr_number: TEST
+  title: "Test Citation Automation"
+  description: >
+    This is a test entry to verify the automated citation ingestion and processing workflow.
+    Please ignore and delete after confirming successful automation.
+  files_modified:
+    - test/test_citation_automation.py
+  date_merged: 2025-08-25
+
+citation:
+  preferred_citation: >
+    Test User. "Test Citation Automation." Dawn Field Theory Project, 2025. https://github.com/dawnfieldtheory/dawn-field-theory/pull/TEST
+  bibtex: |
+    @misc{testuser2025testcitation,
+      author = {Test User},
+      title = {Test Citation Automation},
+      year = {2025},
+      howpublished = {\url{https://github.com/dawnfieldtheory/dawn-field-theory/pull/TEST}},
+      note = {Dawn Field Theory Project, TEST ENTRY}
