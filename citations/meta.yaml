@@ -13,6 +13,7 @@ semantic_scope:
 files:
 - README.md
 - contributors-index.json
+- contributors_bibtex.bib
 - pr-citation-template.yaml
 parent_directory: dawn-field-theory
 notes:

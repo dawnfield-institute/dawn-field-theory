@@ -14,4 +14,5 @@ files:
 - generate_path.py
 - process_citations.py
 - update_meta_yamls.py
+- validate_citations.py
 child_directories: []
