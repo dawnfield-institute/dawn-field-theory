@@ -11,11 +11,14 @@ semantic_scope:
 - information theory
 - field theory
 files:
-- citations_apa.txt
-- citations_bibtex.bib
-- external_citations.md
+- README.md
+- contributors-index.json
+- pr-citation-template.yaml
 parent_directory: dawn-field-theory
 notes:
 - Keep citation files updated as new references are added.
 - Consider adding DOIs or URLs for easier access.
-child_directories: []
+child_directories:
+- external_citations
+- pending
+- processed

@@ -11,6 +11,7 @@ semantic_scope:
 files:
 - anomaly_analysis.md
 - cosmov2.md
+- information_amplification_proof_framework.md
 - postsymbolic_vs_symbolic_validation.md
 - quantum_EM.md
 child_directories:
