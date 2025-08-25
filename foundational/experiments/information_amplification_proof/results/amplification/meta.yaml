@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: amplification
+description: Focused results from amplification-specific experiments demonstrating emergent information generation. Contains timestamped experimental data showing quantitative evidence of computational systems generating novel information content beyond their encoded parameters.
+semantic_scope:
+- amplification_focused_results
+- emergent_information
+- computational_emergence
+- quantitative_evidence
+- novel_information_generation
+- empirical_amplification
+- dawn_field_validation
+files:
+- amplification_focused_20250825_102740.json
+child_directories: []

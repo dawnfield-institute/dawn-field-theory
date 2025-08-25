@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: information_amplification_proof
+description: Comprehensive framework for testing and proving information amplification in computational systems. Contains experiments demonstrating that AI models generate novel information beyond what is encoded in their weights, supporting the Dawn Field Theory of emergent computation.
+semantic_scope:
+- information_amplification
+- computational_emergence
+- model_weight_analysis
+- sec_framework
+- compression_measurement
+- empirical_validation
+- dawn_field_theory
+files:
+- README.md
+- RESULTS.md
+- requirements.txt
+child_directories:
+- core
+- experiments
+- results

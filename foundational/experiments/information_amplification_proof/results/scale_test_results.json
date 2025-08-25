@@ -1,0 +1,250 @@
+{
+  "scale_test_results": [
+    {
+      "input": {
+        "raw_size": 7,
+        "compressed_size": 15,
+        "compression_ratio": 2.142857142857143,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 64,
+          "gzip": 27,
+          "zlib": 15
+        }
+      },
+      "model": {
+        "raw_size": 43,
+        "compressed_size": 47,
+        "compression_ratio": 1.0930232558139534,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 100,
+          "gzip": 59,
+          "zlib": 47
+        }
+      },
+      "output": {
+        "raw_size": 9733,
+        "compressed_size": 1748,
+        "compression_ratio": 0.17959519161615123,
+        "best_algorithm": "lzma",
+        "all_compressions": {
+          "lzma": 1748,
+          "gzip": 1924,
+          "zlib": 1912
+        }
+      },
+      "system_capacity": 162,
+      "surplus_bytes": 1586,
+      "amplification_ratio": 10.790123456790123,
+      "overhead_bytes": 100,
+      "timestamp": "2025-08-25T11:17:36.278141",
+      "generation_metadata": {
+        "prompt": "analyze",
+        "scale_factor": 1,
+        "output_length": 9544,
+        "output_lines": 408
+      },
+      "scale_factor": 1
+    },
+    {
+      "input": {
+        "raw_size": 7,
+        "compressed_size": 15,
+        "compression_ratio": 2.142857142857143,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 64,
+          "gzip": 27,
+          "zlib": 15
+        }
+      },
+      "model": {
+        "raw_size": 43,
+        "compressed_size": 47,
+        "compression_ratio": 1.0930232558139534,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 100,
+          "gzip": 59,
+          "zlib": 47
+        }
+      },
+      "output": {
+        "raw_size": 28633,
+        "compressed_size": 2804,
+        "compression_ratio": 0.09792896308455279,
+        "best_algorithm": "lzma",
+        "all_compressions": {
+          "lzma": 2804,
+          "gzip": 3469,
+          "zlib": 3457
+        }
+      },
+      "system_capacity": 162,
+      "surplus_bytes": 2642,
+      "amplification_ratio": 17.308641975308642,
+      "overhead_bytes": 100,
+      "timestamp": "2025-08-25T11:17:36.341863",
+      "generation_metadata": {
+        "prompt": "analyze",
+        "scale_factor": 2,
+        "output_length": 28173,
+        "output_lines": 1160
+      },
+      "scale_factor": 2
+    },
+    {
+      "input": {
+        "raw_size": 7,
+        "compressed_size": 15,
+        "compression_ratio": 2.142857142857143,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 64,
+          "gzip": 27,
+          "zlib": 15
+        }
+      },
+      "model": {
+        "raw_size": 43,
+        "compressed_size": 47,
+        "compression_ratio": 1.0930232558139534,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 100,
+          "gzip": 59,
+          "zlib": 47
+        }
+      },
+      "output": {
+        "raw_size": 57011,
+        "compressed_size": 4052,
+        "compression_ratio": 0.07107400326252829,
+        "best_algorithm": "lzma",
+        "all_compressions": {
+          "lzma": 4052,
+          "gzip": 5414,
+          "zlib": 5402
+        }
+      },
+      "system_capacity": 162,
+      "surplus_bytes": 3890,
+      "amplification_ratio": 25.012345679012345,
+      "overhead_bytes": 100,
+      "timestamp": "2025-08-25T11:17:36.403577",
+      "generation_metadata": {
+        "prompt": "analyze",
+        "scale_factor": 3,
+        "output_length": 56198,
+        "output_lines": 2274
+      },
+      "scale_factor": 3
+    },
+    {
+      "input": {
+        "raw_size": 7,
+        "compressed_size": 15,
+        "compression_ratio": 2.142857142857143,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 64,
+          "gzip": 27,
+          "zlib": 15
+        }
+      },
+      "model": {
+        "raw_size": 43,
+        "compressed_size": 47,
+        "compression_ratio": 1.0930232558139534,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 100,
+          "gzip": 59,
+          "zlib": 47
+        }
+      },
+      "output": {
+        "raw_size": 75172,
+        "compressed_size": 4852,
+        "compression_ratio": 0.0645453094237216,
+        "best_algorithm": "lzma",
+        "all_compressions": {
+          "lzma": 4852,
+          "gzip": 6711,
+          "zlib": 6699
+        }
+      },
+      "system_capacity": 162,
+      "surplus_bytes": 4690,
+      "amplification_ratio": 29.950617283950617,
+      "overhead_bytes": 100,
+      "timestamp": "2025-08-25T11:17:36.466443",
+      "generation_metadata": {
+        "prompt": "analyze",
+        "scale_factor": 4,
+        "output_length": 74088,
+        "output_lines": 2943
+      },
+      "scale_factor": 4
+    },
+    {
+      "input": {
+        "raw_size": 7,
+        "compressed_size": 15,
+        "compression_ratio": 2.142857142857143,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 64,
+          "gzip": 27,
+          "zlib": 15
+        }
+      },
+      "model": {
+        "raw_size": 43,
+        "compressed_size": 47,
+        "compression_ratio": 1.0930232558139534,
+        "best_algorithm": "zlib",
+        "all_compressions": {
+          "lzma": 100,
+          "gzip": 59,
+          "zlib": 47
+        }
+      },
+      "output": {
+        "raw_size": 93458,
+        "compressed_size": 5636,
+        "compression_ratio": 0.06030516381690171,
+        "best_algorithm": "lzma",
+        "all_compressions": {
+          "lzma": 5636,
+          "gzip": 7909,
+          "zlib": 7897
+        }
+      },
+      "system_capacity": 162,
+      "surplus_bytes": 5474,
+      "amplification_ratio": 34.79012345679013,
+      "overhead_bytes": 100,
+      "timestamp": "2025-08-25T11:17:36.540667",
+      "generation_metadata": {
+        "prompt": "analyze",
+        "scale_factor": 5,
+        "output_length": 92103,
+        "output_lines": 3612
+      },
+      "scale_factor": 5
+    }
+  ],
+  "input_prompt": "analyze",
+  "model_data": {
+    "params": [
+      0.1,
+      0.2
+    ],
+    "vocab": [
+      "a",
+      "b"
+    ]
+  }
+}
