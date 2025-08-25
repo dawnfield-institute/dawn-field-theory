@@ -1,0 +1,107 @@
+name: Process Citations
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'citations/pending/*.yaml'
+  pull_request:
+    branches: [ main ]
+    types: [ closed ]
+    paths:
+      - 'citations/pending/*.yaml'
+
+jobs:
+  process-citations:
+    if: github.event_name == 'push' || (github.event.pull_request.merged == true)
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml
+
+    - name: Check for pending citations
+      id: check-pending
+      run: |
+        # Count non-blacklisted YAML files
+        count=$(find citations/pending/ -name "*.yaml" -not -name "example-*.yaml" -not -name "README.md" | wc -l)
+        if [ $count -gt 0 ]; then
+          echo "has-pending=true" >> $GITHUB_OUTPUT
+          echo "Found $count pending citation files:"
+          find citations/pending/ -name "*.yaml" -not -name "example-*.yaml" -not -name "README.md"
+        else
+          echo "has-pending=false" >> $GITHUB_OUTPUT
+          echo "No pending citation files found (excluding examples)"
+        fi
+
+    - name: Process citations
+      if: steps.check-pending.outputs.has-pending == 'true'
+      run: |
+        python tools/process_citations.py
+
+    - name: Commit and push changes
+      if: steps.check-pending.outputs.has-pending == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Citation Processor"
+        
+        # Add all citation-related changes
+        git add citations/contributors-index.json
+        git add citations/contributors_bibtex.bib
+        git add citations/processed/
+        git add CITATION.cff
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No citation changes to commit"
+        else
+          git commit -m "🔄 Auto-process citations: Update contributor index and citations
+          
+          - Processed pending citation files
+          - Updated contributors index
+          - Generated BibTeX entries
+          - Updated CITATION.cff
+          - Moved processed files to archive
+          
+          [skip ci]"
+          
+          git push origin main
+          echo "✅ Citation processing complete and changes pushed"
+        fi
+
+    - name: Comment on PR (if applicable)
+      if: github.event_name == 'pull_request' && steps.check-pending.outputs.has-pending == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '🎉 **Citation Processing Complete!**\n\nYour contribution has been added to the citation system:\n- Contributors index updated\n- BibTeX entries generated\n- CITATION.cff updated\n\nThank you for your contribution to Dawn Field Theory! 🚀'
+          })
+
+    - name: Summary
+      if: steps.check-pending.outputs.has-pending == 'true'
+      run: |
+        echo "📊 Citation Processing Summary:"
+        echo "✅ Processed pending citation files"
+        echo "✅ Updated contributors-index.json"
+        echo "✅ Generated contributors_bibtex.bib"
+        echo "✅ Updated CITATION.cff"
+        echo "✅ Archived processed files"
+        echo ""
+        echo "🎯 Citation system is up to date!"

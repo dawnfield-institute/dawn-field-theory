@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Dawn Field Theory Repository"
+abstract: "A unified framework exploring how energy and information interact as dynamic fields, investigating physical structure, wavefunction collapse, time evolution, and intelligence as recursive balance phenomena."
+authors:
+  - family-names: "Groom"
+    given-names: "Peter Lorne"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # Update with your ORCID if you have one
+    affiliation: "Dawn Field Institute"
+    email: "info@dawnfield.ca"
+repository-code: "https://github.com/dawnfield-institute/dawn-field-theory"
+url: "https://github.com/dawnfield-institute/dawn-field-theory"
+license: "GPL-3.0-or-later"
+version: "1.0"
+date-released: "2025-09-01"
+doi: "10.5281/zenodo.15783623"
+keywords:
+  - "information theory"
+  - "field dynamics"
+  - "entropy"
+  - "emergence"
+  - "recursive systems"
+  - "computational physics"
+  - "infodynamics"
+preferred-citation:
+  type: software
+  title: "Dawn Field Theory Repository"
+  authors:
+    - family-names: "Groom"
+      given-names: "Peter Lorne"
+      affiliation: "Dawn Field Institute"
+  year: 2025
+  url: "https://github.com/dawnfield-institute/dawn-field-theory"
+  notes: "For component-specific citations, see pull request metadata in citations/ folder"

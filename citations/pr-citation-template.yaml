@@ -1,0 +1,43 @@
+# Pull Request Citation Template
+# Copy this file to citations/pending/ and rename to pr-{PR_NUMBER}-{description}.yaml
+
+contributor:
+  name: "Your Full Name"
+  email: "your.email@example.com"
+  github: "your-github-username"
+  orcid: "https://orcid.org/0000-0000-0000-0000"  # Optional but recommended
+  affiliation: "Your Institution or 'Independent Researcher'"  # Optional
+
+contribution:
+  title: "Brief descriptive title of your contribution"
+  description: |
+    Detailed description of what this PR contributes to the Dawn Field Theory repository.
+    Include key methodological or theoretical contributions.
+  files:
+    - "path/to/your/main/contribution.py"
+    - "path/to/documentation.md"
+    - "path/to/tests.py"
+
+type: "implementation"  # Options: implementation, theory, experiment, documentation, validation
+
+# These will be automatically populated by the system
+date: "YYYY-MM-DD"
+pr_number: ""
+
+# Optional fields
+doi: ""  # Can be added later via Zenodo upload
+keywords:
+  - "relevant"
+  - "keywords"
+notes: "Any additional notes about your contribution"
+
+# Instructions:
+# 1. Copy this file to citations/pending/
+# 2. Rename to pr-{PR_NUMBER}-{short-description}.yaml (e.g., pr-123-entropy-operator.yaml)
+# 3. Fill in all required fields (contributor, contribution, type)
+# 4. Include the file in your PR
+# 5. The automation will process it when your PR is merged
+
+# Only use this for substantial contributions:
+# ✅ New experiments, theory extensions, major implementations
+# ❌ Minor fixes, typos, formatting changes

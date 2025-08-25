@@ -2,13 +2,134 @@
 
 Thank you for your interest in contributing. This is a living, evolving repository—and your contributions matter.
 
+## TL;DR - Quick Contributor Checklist
+- [ ] Read foundational docs (see Quick Start below)
+- [ ] Email info@dawnfield.ca to register as contributor  
+- [ ] Join Discord for announcements
+- [ ] **Review publishing boundaries and engagement philosophy (sections below)**
+- [ ] **Review citation guidelines** - see `citations/README.md` for attribution process
+- [ ] Engage through Issues, Discussions, or PRs only
+- [ ] Follow project boundaries and [code of conduct](CODE_OF_CONDUCT.md) (if available)
+
+---
+
+## Quick Start for New Contributors
+
+1. **Read the foundations:** 
+   - `README.md`, `timeline.md`, and `LICENSE_APPENDIX.md`
+   - `infodynamics.md` and `dawn-field-theory.md` (core theory overview)
+   - [`foundational/docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md`](foundational/docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md) (computational novelty thesis)
+   - [`foundational/docs/[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md`](foundational/docs/[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md) (repository philosophy)
+
+2. **Understand the bridges:** Browse [`foundational/docs/bridges/`](foundational/docs/bridges/) to see how Dawn Field Theory connects to existing frameworks (deep learning, AI systems, gradient descent)
+
+3. **Register:** Email info@dawnfield.ca with your background and interests
+
+4. **Join Discord:** Get access to announcements and contributor discussions
+
+5. **Start contributing:** Open Issues for questions, Discussions for theory, PRs for improvements
+
+---
+
+## Project Governance
+This project is architected and maintained independently, outside of traditional academic institutions. This approach provides freedom from institutional constraints while maintaining rigorous standards through alternative validation methods.
+
+The project employs a comprehensive internal review pipeline using AI models to challenge assumptions, surface errors, and minimize bias. While robust, this system benefits from human peer review from serious contributors.
+
+**Project standards:**
+- All work is validated through open code, data, and reproducible results
+- Engagement occurs through proper channels (issues, PRs, discussions)  
+- Merit-based evaluation supersedes credential-based gatekeeping
+- Quality contributions are welcome regardless of institutional background
+
+Contributors genuinely interested in advancing the science within these structured boundaries are valued and encouraged.
+
+---
+
+## Engagement Philosophy
+
+This project values **constructive, actionable engagement**. All feedback, critique, and collaboration must be channeled through formal repository mechanisms:
+
+- **GitHub Issues** for bugs, questions, or suggestions
+- **GitHub Discussions** for theoretical debate and exploration  
+- **Pull Requests** for concrete improvements
+- **Email registration** for potential contributors (see below)
+
+**What we don't accommodate:**
+- Endless circular debates
+- Ego-driven arguments  
+- Off-platform engagement demands
+- Non-actionable criticism
+
+**Enforcement:** Violations of these boundaries may result in removal from the project, closure of unproductive discussions, or public clarification of project standards.
+
+The work stands on its merits. If you see problems, submit an issue or PR. If you want to debate theory, use Discussions. If you can't engage within these boundaries, this may not be the right project for you.
+
+---
+
+## Contributor Registration
+
+**To submit Pull Requests or participate in private discussions, please register first.**
+
+Send an email to **info@dawnfield.ca** with:
+- Your name and background
+- Your interest in the project (specific areas/papers)
+- How you'd like to contribute (code, theory, validation, etc.)
+- Links to your work/profile (GitHub, papers, etc.)
+- **ORCID ID** (optional but recommended for citation purposes)
+
+You'll receive:
+- Access to the private contributors' Discord channel
+- Permission to submit PRs (GitHub handle will be added to contributors list)
+- Early access to drafts and experimental results
+- **Citation guidance** for substantial contributions
+
+**Why registration?** This ensures contributors are genuinely interested in advancing the work rather than wasting time on unproductive engagement.
+
+---
+
+## 📝 Citation & Attribution
+
+### Repository Citation
+When citing the Dawn Field Theory repository as a whole, use the provided `CITATION.cff` file or the Zenodo DOI:
+
+**DOI:** [10.5281/zenodo.15783623](https://doi.org/10.5281/zenodo.15783623)
+
+**BibTeX:**
+```bibtex
+@software{dawnfield_theory,
+  author       = {Peter Lorne Groom},
+  title        = {Dawn Field Theory Repository},
+  year         = {2025},
+  doi          = {10.5281/zenodo.15783623},
+  url          = {https://github.com/dawnfield-institute/dawn-field-theory}
+}
+```
+
+### Contributor Attribution
+For substantial contributions, we maintain an automated citation system:
+- **Process:** Copy `citations/pr-citation-template.yaml` to `citations/pending/` and fill in your details
+- **Automatic Processing:** When your PR is merged, citation data is automatically integrated into the project's citation index
+- **Template:** Use `citations/pr-citation-template.yaml` as your starting point
+- **Criteria:** New experiments, theory extensions, major implementations qualify for citation
+- **Generated Outputs:** Your contribution will appear in the contributors index, BibTeX file, and updated CITATION.cff
+
+**How it works:**
+1. Copy the template to `citations/pending/pr-{PR_NUMBER}-{description}.yaml`
+2. Fill in your contributor info and contribution details
+3. Include the file in your PR
+4. Upon merge, GitHub Actions automatically processes and integrates your citation
+5. Your processed citation file moves to `citations/processed/` for record-keeping
+
+This automated system ensures proper academic attribution while maintaining clear intellectual boundaries for the foundational work.
+
 ---
 
 ## Current Status
 
 **External contributions are welcome starting with Release 1.0 (Sept 2025).**
 
-During the Release 1.0 polishing period, the project is stabilizing preprints and documentation. Please review the guidance below to align with epistemic and symbolic integrity.
+During the Release 1.0 polishing period, the project is stabilizing preprints and documentation. Registered contributors can participate in review and feedback.
 
 > Announcements and project intent are communicated on Discord only. This repository will not maintain a separate announcements or intentions document.
 
@@ -49,19 +170,40 @@ Every directory and experiment follows a schema (see `.cip/meta.yaml` and `.cip/
 
 Prioritize:
 
-* Experimental validation modules
-* Symbolic or entropy-based operators
-* Visualization of field collapse, pruning, or emergence
-* Recursive design proposals (structural or functional)
+* **Experimental validation modules** (e.g., "Added compression-based information amplification test for GPT-4")
+* **Symbolic or entropy-based operators** (e.g., "Implemented SEC collapse detection algorithm for neural networks")
+* **Visualization of field collapse, pruning, or emergence** (e.g., "Created interactive plot showing entropy dynamics in MED experiments")
+* **Recursive design proposals** (structural or functional, e.g., "Proposed self-modifying schema for meta.yaml evolution")
+* **Documentation improvements** (e.g., "Clarified mathematical notation in symbolic entropy collapse preprint")
+* **Replication studies** (e.g., "Reproduced information amplification results with different models/prompts")
 
 ### 4. Create a Feedback Loop
 
 Describe how your contribution fits within the recursive growth of the repository. A great pull request tells a story—how your work expands the symbolic field.
 
-### 5. Community & Announcements
+### 5. Citation for Substantial Contributions
+
+For substantial contributions (new experiments, theory extensions, major implementations):
+- **Copy the template**: `citations/pr-citation-template.yaml` to `citations/pending/`
+- **Rename**: Use pattern `pr-{PR_NUMBER}-{short-description}.yaml`
+- **Fill in details**: Your contributor info, contribution description, and affected files
+- **Include in PR**: Add the completed citation YAML to your pull request
+- **Automatic processing**: Upon merge, GitHub Actions will integrate your citation into the project's citation system
+
+**What qualifies for citation:**
+- ✅ New experimental frameworks or validations
+- ✅ Theoretical extensions or novel operators
+- ✅ Major implementations (>100 lines of significant code)
+- ✅ Substantial documentation contributions
+- ❌ Minor bug fixes, typos, or formatting changes
+
+See `citations/README.md` for complete guidelines and examples.
+
+### 6. Community & Code of Conduct
 
 - Join the Discord for announcement visibility: https://discord.gg/bR8mrbHP
-- Use GitHub Issues/Discussions for proposals and feedback tied to artifacts and paths.
+- Use GitHub Issues/Discussions for proposals and feedback tied to artifacts and paths
+- **Code of Conduct:** All contributors are expected to engage respectfully and constructively. Harassment, personal attacks, or disruptive behavior will result in removal from the project.
 
 ---
 

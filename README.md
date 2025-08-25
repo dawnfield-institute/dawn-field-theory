@@ -181,6 +181,8 @@ CIMM (Cosmic Information Mining Model) was the first entropy-informed agentic sy
 | `models/GAIA/`              | Next-generation field intelligence                                      |
 | `models/CIMM/`              | Legacy post-symbolic AGI runtime                                        |
 | `devkit/`                   | Tools and experimental harnesses for entropy/collapse modeling          |
+| `citations/`                | Automated citation system for contributors and external references      |
+| `cognition_index_protocol/` | Machine-readable navigation and semantic search protocols               |
 
 ---
 
@@ -257,24 +259,34 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 * [`models/README.md`](./models/README.md)
 * [`models/CIMM/README.md`](./models/CIMM/README.md)
 * [`cognition_index_protocol/README.md`](./cognition_index_protocol/README.md)
+* [`citations/README.md`](./citations/README.md) - Automated citation system
+* [`citations/external_citations/README.md`](./citations/external_citations/README.md) - External references
 * [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
 
 ---
 
 ## 🤝 Contributing & Community
-[Visit Dawn Field website for more info](https://dawnfield.ca/)
 
-**Discord is the canonical channel for announcements and intent.**
-[https://discord.gg/bR8mrbHP](https://discord.gg/bR8mrbHP)
+**Ready to contribute?** See our comprehensive [CONTRIBUTION.md](./CONTRIBUTION.md) for:
+- 📝 **Contributor registration** (required for PRs)
+- 🎯 **Contribution guidelines** and project boundaries
+- 🏷️ **Automated citation system** for substantial contributions
+- 📋 **Quick start checklist** for new contributors
+- ⚖️ **Publishing & attribution boundaries** 
 
-*During the Release 1.0 polishing period, announcements will be posted on Discord only. The repository will not maintain separate announcement or intentions documents.*
+**Citation & Attribution:**
+- Substantial contributions are automatically cited via our GitHub Actions workflow
+- See [`citations/README.md`](./citations/README.md) for the full citation system
+- External references and foundational literature: [`citations/external_citations/`](./citations/external_citations/)
 
-**Follow the author on Medium:**
-[https://medium.com/@lornecodes](https://medium.com/@lornecodes)
+**Community Channels:**
+- [Visit Dawn Field website for more info](https://dawnfield.ca/)
+- **Discord** (canonical announcements): [https://discord.gg/bR8mrbHP](https://discord.gg/bR8mrbHP)
+- **Follow the author on Medium**: [https://medium.com/@lornecodes](https://medium.com/@lornecodes)
 
-Want to contribute or collaborate?  
-See [CONTRIBUTION.md](./CONTRIBUTION.md) and [MISSION.md](./MISSION.md) for current contribution policy and institutional guidelines.  
-Dialogue and commentary are welcome—contact info is in [MISSION.md](./MISSION.md).
+*During Release 1.0 polishing, announcements are Discord-only. No separate announcement files will be maintained in the repository.*
+
+**Project Governance:** See [MISSION.md](./MISSION.md) for institutional guidelines and stewardship details.
 
 ---
 
