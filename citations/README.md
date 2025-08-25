@@ -25,7 +25,13 @@ This folder contains the automated citation infrastructure for tracking and attr
 2. **Rename**: Use pattern `pr-{PR_NUMBER}-{short-description}.yaml`
 3. **Fill in details**: Your contributor info, contribution description, and affected files
 4. **Include in PR**: Add the completed citation YAML to your pull request
-5. **Automatic processing**: Upon merge, GitHub Actions processes and integrates your citation
+5. **Automatic validation**: When you open the PR, citation files are automatically validated
+6. **Review feedback**: Address any validation issues shown in the automated PR comments
+7. **Automatic processing**: Upon merge, GitHub Actions processes and integrates your citation
+
+**Two-stage workflow:**
+- 🔍 **PR Validation**: Files validated on PR open/update with feedback via comments
+- ✅ **Merge Processing**: Valid citations processed and integrated when PR is merged
 
 ### What qualifies as citable:
 - ✅ New experimental modules or validation frameworks
@@ -65,10 +71,11 @@ citations/
 
 ## Technical Details
 
-The citation system is powered by:
-- **GitHub Actions**: `.github/workflows/process-citations.yml`
-- **Processing Script**: `tools/process_citations.py`
-- **Trigger**: Automatic on PR merge with files in `citations/pending/`
+The citation system is powered by two GitHub Actions workflows:
+- **Validation**: `.github/workflows/validate-citations.yml` - Validates citation files on PR open/update
+- **Processing**: `.github/workflows/process-citations.yml` - Processes citations on PR merge
+- **Processing Script**: `tools/process_citations.py` - Core citation processing logic
+- **Validation Script**: `tools/validate_citations.py` - Citation validation and error checking
 
 ## External Citations
 
