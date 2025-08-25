@@ -45,6 +45,7 @@ If your PR represents a substantial theoretical, experimental, or code contribut
 - 🔍 **On PR open/update**: Citation files are validated and results posted as comments
 - ✅ **On PR merge**: Valid citations are processed, integrated, and archived automatically
 
+
 **What qualifies for citation:**
 - ✅ New experimental frameworks or validations
 - ✅ Theoretical extensions or novel operators
