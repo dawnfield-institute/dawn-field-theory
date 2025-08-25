@@ -1,5 +1,6 @@
 dawn-field-theory/
   .gitignore
+  CITATION.cff
   CONTRIBUTION.md
   ENVIRONMENT.md
   LICENSE
@@ -80,10 +81,21 @@ dawn-field-theory/
         meta.yaml
         v2_roadmap.md
   citations/
-    citations_apa.txt
-    citations_bibtex.bib
-    external_citations.md
+    README.md
+    contributors-index.json
     meta.yaml
+    pr-citation-template.yaml
+    external_citations/
+      README.md
+      citations_apa.txt
+      citations_bibtex.bib
+      external_citations.md
+    pending/
+      README.md
+      example-pr-123-entropy-operator.yaml
+      pr-TEST-citation-automation.yaml
+    processed/
+      README.md
   cognition_index_protocol/
     README.md
     meta.yaml
@@ -971,6 +983,39 @@ dawn-field-theory/
             meta.yaml
             modulated_full_analysis.png
             robustness_results.csv
+      information_amplification_proof/
+        README.md
+        RESULTS.md
+        meta.yaml
+        requirements.txt
+        core/
+          __init__.py
+          amplification_test.py
+          compression_engine.py
+          measurement.py
+          meta.yaml
+          sec_weight_interpreter.py
+          text_generator.py
+        experiments/
+          basic_test.py
+          meta.yaml
+          pilot_study.py
+          pilot_study_clean.py
+          scale_test.py
+          weight_analysis.py
+        results/
+          README.md
+          basic_measurement_results.json
+          meta.yaml
+          pilot_study_results.json
+          scale_test_results.json
+          weight_analysis_results.json
+          amplification/
+            amplification_focused_20250825_102740.json
+            meta.yaml
+          pilot/
+            meta.yaml
+            pilot_language_model_20250825_102630.json
       landauer_erasure_field_cost_map/
         [id][T][v1.0][C2][I3][E]_landauer_erasure_field_cost_map.py
         meta.yaml
@@ -1385,6 +1430,9 @@ dawn-field-theory/
         reference_material/
           meta.yaml
           recursive_tree_2025-06-07_results.png
+      results/
+        comparative_analysis_20250825_105223.json
+        meta.yaml
       symbolic_bifractal/
         InfoDyn_Validation_BifractalCollapse_v0.1.yaml
         InfoDyn_Validation_LineageTrace.tsv
@@ -2583,6 +2631,7 @@ dawn-field-theory/
     theory/
       anomaly_analysis.md
       cosmov2.md
+      information_amplification_proof_framework.md
       meta.yaml
       postsymbolic_vs_symbolic_validation.md
       quantum_EM.md
@@ -2605,4 +2654,5 @@ dawn-field-theory/
     generate_meta_yamls.py
     generate_path.py
     meta.yaml
+    process_citations.py
     update_meta_yamls.py
