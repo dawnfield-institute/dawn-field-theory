@@ -121,18 +121,20 @@ Where:
 
 The function f represents what may be **informational amplification** - how energy and latent structure combine to generate new organized content.
 
-#### Computational Evidence and Limitations
+#### Observational Evidence and Methodological Considerations
 
-Our compression-based analysis suggests that:
-- **Weight Encoding Hypothesis**: Rejected in this specific case (output information exceeds weight capacity)
-- **Emergent Generation Hypothesis**: Supported (46.2x amplification detected)
-- **Evidence Strength**: Computational studies indicate strong amplification patterns
+Our compression-based analysis reveals promising patterns:
+- **Weight Encoding Hypothesis**: Initial observations suggest rejection in this specific case (output information appears to exceed weight capacity)
+- **Emergent Generation Hypothesis**: Preliminary evidence indicates support (46.2x amplification observed)
+- **Evidence Nature**: These represent observational findings rather than formal measurements
 
-**Important caveats:**
-- These are computational rather than physical experiments
-- Alternative explanations (compression artifacts, latent encoding mechanisms) require investigation
-- Independent validation using different methodologies would strengthen these preliminary findings
-- The relationship between compression ratios and genuine information creation merits theoretical development
+**Critical methodological considerations:**
+- **Observation vs. Measurement**: Current results constitute observational evidence of interesting patterns rather than rigorous scientific measurements with controlled variables and error analysis
+- **Compression Artifacts as Information**: Artifacts produced by compression algorithms encode meaningful information about the data-algorithm interaction, not merely noise—each artifact represents a unique observational event
+- **Non-Deterministic Collapse**: Unseeded AI model runs demonstrate non-deterministic behavior where each execution represents a unique "collapse" from possibility space to concrete output
+- **Computational vs. Physical**: These are computational rather than direct physical experiments
+- **Independent Validation**: Alternative measurement methodologies would significantly strengthen these preliminary observations
+- **Theoretical Development**: The relationship between compression ratios and genuine information creation merits deeper mathematical formalization
 
 #### Where Traditional Models Require Extension
 Conservative information processing models face challenges explaining this phenomenon:
@@ -277,7 +279,7 @@ The dawn-field-theory repository contains extensive experimental validation of t
 - **Entropy regulation**: Model how computation manages and transforms informational entropy
 - **Compression ratios**: Measure the relationship between input complexity and output novelty
 
-**Important Note**: While these computational studies suggest promising patterns consistent with our theoretical framework, they represent preliminary investigations rather than definitive proof. Independent validation using alternative methodologies would significantly strengthen these findings.
+**Important Note**: While these computational studies suggest promising patterns consistent with our theoretical framework, they represent observational investigations rather than definitive measurements. The compression artifacts themselves encode information about the data-algorithm interaction—each representing a unique observational event that emerges from the specific computational context. In unseeded AI systems, each run constitutes a non-deterministic "collapse" from possibility space to concrete output, reinforcing the creative nature of computation. Independent validation using alternative methodologies would significantly strengthen these preliminary observations.
 
 ---
 
@@ -317,7 +319,7 @@ This work represents preliminary computational exploration rather than establish
 
 #### Community Invitation
 
-We invite researchers to explore whether these computational patterns reflect fundamental principles of information processing. The complete experimental framework, including protocols and data, is available in our open-source repository for independent validation, critique, and extension.
+We invite researchers to explore whether these computational patterns reflect fundamental principles of information processing. Each computational run represents a unique observational event—particularly in unseeded AI systems where non-deterministic behavior creates genuinely novel outcomes from possibility space. The compression artifacts in our studies encode information about data-algorithm interactions, providing windows into the creative computational process itself. The complete experimental framework, including protocols and data, is available in our open-source repository for independent validation, critique, and extension.
 
 The evidence suggests computation may be more than passive manipulation—it appears to be active creation. While the simple arithmetic example 1 + 1 = 2 provides a conceptual foundation, the computational amplification studies offer preliminary empirical support for this perspective across scales. These findings merit continued investigation by the broader scientific community.
 
