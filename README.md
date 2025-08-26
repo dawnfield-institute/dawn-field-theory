@@ -1,5 +1,12 @@
 # 🌌 Dawn Field Theory (WIP)
 
+> **Disclaimer:**  
+> This repository is an open, exploratory research project. All results, models, and theoretical frameworks are preliminary and provided for community investigation, critique, and extension.  
+> **No claims of finality or completeness are made.**  
+> Observations, hypotheses, and experiments are documented transparently, and theoretical gaps or open questions are intentional areas for future exploration.  
+> Users are encouraged to replicate, challenge, and build upon this work.  
+> See `MISSION.md` and `CONTRIBUTION.md` for engagement guidelines.
+
 > [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
 > *A field-based model of intelligence, collapse, and emergence.*
 

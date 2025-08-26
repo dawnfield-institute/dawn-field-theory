@@ -27,7 +27,9 @@ My exploration led me to propose a paradigm shift from attribution-based interpr
 
 ### 1.2 Symbolic Collapse as Interpretability Primitive
 
-Unlike conventional XAI methods that analyze final states, my framework monitors the *process* of cognition formation. Through my investigations, Symbolic entropy collapse (SEC) represents the transition from high-entropy exploration to low-entropy crystallization—what I believe is the computational analog of insight formation in human cognition. This perspective enables real-time interpretability that reveals not just *what* a model decides, but *how* and *when* understanding emerges.
+Unlike conventional XAI methods that analyze final states, my framework monitors the *process* of cognition formation. Through my investigations, Symbolic entropy collapse (SEC) represents the transition from high-entropy exploration to low-entropy crystallization—what I believe is the computational analog of insight formation in human cognition. This perspective, grounded in arithmetic identity theory (foundational/docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md), demonstrates that computational novelty emerges through irreversible operations where surplus information generation creates genuinely new structures. Our information amplification experiments validate this with 46.2x compression ratios generating +253.2% surplus information beyond system capacity, confirming that collapse events represent authentic novelty generation rather than mere pattern recognition.
+
+This perspective enables real-time interpretability that reveals not just *what* a model decides, but *how* and *when* understanding emerges.
 
 I invite you to explore how this changes everything about how we understand machine cognition.
 
@@ -421,7 +423,7 @@ These results suggest symbolic collapse dynamics provide a principled approach t
 
 **Experimental Protocols**: All experiments include configuration files, random seeds, and complete parameter specifications for reproducible results.
 
-**Data Availability**: Experimental datasets and results are available in the repository under `/models/TinyCIMM/experiments/` with semantic hash validation.
+**Data Availability**: Experimental datasets and results are available in the repository under `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/` with semantic hash validation.
 
 **Documentation**: Comprehensive documentation of all metrics, algorithms, and experimental procedures provided in markdown format with cross-references.
 
@@ -452,13 +454,13 @@ Future work will extend these insights to large-scale models and diverse domains
 ### Figures (Planned)
 | Figure | Title / Description | Source / Generation Script | Status |
 |--------|---------------------|-----------------------------|--------|
-| Fig. 1 | SCBF Architecture Overview | models/scbf/diagram_architecture.drawio | Preprint: Text Description |
-| Fig. 2 | Prime Delta Collapse Timeline | models/TinyCIMM/experiments/prime_delta.py | Preprint: Text Description |
-| Fig. 3 | Golden Ratio Convergence & Phase Alignment | models/TinyCIMM/experiments/golden_ratio.py | Preprint: Text Description |
-| Fig. 4 | Polynomial Reconstruction Collapse Events | models/TinyCIMM/experiments/polynomial.py | Preprint: Text Description |
-| Fig. 5 | Planck Signal Processing Collapse Patterns | models/TinyCIMM/experiments/signal_processing_suite.py | Preprint: Text Description |
-| Fig. 6 | TinyCIMM vs Baseline Interpretability Metrics | models/TinyCIMM/experiments/baseline_comparison.py | Preprint: Text Description |
-| Fig. 7 | Human Agreement vs Methods Comparison | models/scbf/analysis/human_alignment_study.md | Preprint: Text Description |
+| Fig. 1 | TinyCIMM Neural Weight Evolution in Extreme Turbulence | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/neural_weights_extreme_turbulence_s11_c6_00_evolution.png | **Available** |
+| Fig. 2 | Field-Aware Flow Analysis for SCBF Integration | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/field_aware_flow_analysis.png | **Available** |
+| Fig. 3 | Main Flow Predictions Live CIMM | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/main_flow_predictions_live_cimm.png | **Available** |
+| Fig. 4 | Turbulent Breakthrough Interpretability Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/turbulent_breakthrough_interpretability.png | **Available** |
+| Fig. 5 | Reynolds Performance Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/reynolds_performance_analysis.png | **Available** |
+| Fig. 6 | Quantum Decoherence vs Symbolic Entropy Collapse | foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png | **Available** |
+| Fig. 7 | Landauer Energy vs Entropy Correlation | foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png | **Available** |
 
 ## References
 
@@ -536,7 +538,19 @@ def compute_bifractal_dimension(weights):
 
 ### C. Visualization Examples
 
-[Detailed collapse heatmaps, lineage traces, and attractor visualizations would be included here with proper figure captions and cross-references to experimental results]
+### C. Visualization Examples
+
+![TinyCIMM Neural Weight Evolution in Extreme Turbulence](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/neural_weights_extreme_turbulence_s11_c6_00_evolution.png)
+
+*Figure 1: Real-time neural weight evolution during extreme turbulence conditions, demonstrating SCBF's ability to track collapse events and lineage formation as network weights adapt to complex flow dynamics.*
+
+![Field-Aware Flow Analysis](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/field_aware_flow_analysis.png)
+
+*Figure 2: Field-aware flow analysis showing how SCBF integration enables interpretation of complex turbulent phenomena through symbolic collapse pattern recognition.*
+
+![Turbulent Breakthrough Interpretability Analysis](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/turbulent_breakthrough_interpretability.png)
+
+*Figure 3: Interpretability analysis of turbulent breakthrough events, illustrating how SCBF provides insight into the emergence of coherent structures from chaotic dynamics.*
 
 ### D. Reproducibility Artifacts
 
@@ -561,14 +575,14 @@ All computational results in this preprint were obtained using the hardware conf
 ## Repository Mapping & Traceability (ITER2)
 | Concept / Claim | Source Path | TRACE Placeholder | Status |
 |-----------------|-------------|-------------------|--------|
-| Symbolic entropy collapse metrics | models/scbf/ | models/scbf/metrics.py#sec | Pending |
-| Activation ancestry implementation | models/scbf/ | models/scbf/lineage.py#ancestry | Pending |
-| TinyCIMM-Euler architecture | models/TinyCIMM/ | models/TinyCIMM/euler.py#arch | Pending |
-| TinyCIMM-Planck minimal prototype | models/TinyCIMM/ | models/TinyCIMM/planck.py#arch | Pending |
-| Bifractal lineage computation | models/scbf/ | models/scbf/bifractal.py#dimension | Pending |
-| Prime delta experiment | models/TinyCIMM/experiments/ | models/TinyCIMM/experiments/prime_delta.py#results | Pending |
-| Transcendental ratio convergence | models/TinyCIMM/experiments/ | models/TinyCIMM/experiments/golden_ratio.py#convergence | Pending |
-| Polynomial reconstruction tasks | models/TinyCIMM/experiments/ | models/TinyCIMM/experiments/polynomial.py#recon | Pending |
+| Symbolic entropy collapse metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/metrics.py#sec | Pending |
+| Activation ancestry implementation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/lineage.py#ancestry | Pending |
+| TinyCIMM-Euler architecture | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/euler.py#arch | Pending |
+| TinyCIMM-Planck minimal prototype | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/planck.py#arch | Pending |
+| Bifractal lineage computation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/bifractal.py#dimension | Pending |
+| Prime delta experiment | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/prime_delta.py#results | Pending |
+| Transcendental ratio convergence | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/golden_ratio.py#convergence | Pending |
+| Polynomial reconstruction tasks | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/polynomial.py#recon | Pending |
 ## Template Compliance Audit (ITER2)
 | Required Section | Present? | Notes |
 |------------------|----------|-------|

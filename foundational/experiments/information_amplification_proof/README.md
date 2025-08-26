@@ -6,9 +6,11 @@ This framework provides comprehensive tools and experimental protocols for empir
 
 ## Key Findings
 
-🔬 **Empirical Evidence**: Our experiments demonstrate **46.2x information amplification** ratios, where model outputs contain 46 times more compressed information than the model weights themselves.
+🔬 **Observational Evidence**: Our computational studies suggest **46.2x information amplification** patterns, where model outputs appear to contain 46 times more compressed information than the model weights themselves.
 
-📊 **Quantitative Results**: Weight analysis shows 110 bytes of compressed weight information producing 5,084 bytes of compressed output information, providing strong evidence against the "it's just in the weights" argument.
+📊 **Preliminary Results**: Weight analysis indicates 110 bytes of compressed weight information producing 5,084 bytes of compressed output information, providing initial evidence warranting investigation of emergent generation hypotheses.
+
+⚠️ **Methodological Note**: These represent observational findings rather than formal scientific measurements. Each compression result encodes information about the unique data-algorithm interaction, particularly valuable in unseeded AI systems where non-deterministic behavior creates genuinely novel computational events.
 
 ## Framework Architecture
 
@@ -36,8 +38,9 @@ information_amplification_proof/
 
 ### 1. Compression Engine (`core/compression_engine.py`)
 - **Multi-algorithm compression**: Tests gzip, bz2, lzma, and zlib
-- **Information content measurement**: Quantifies true information density
-- **Comparative analysis**: Measures compression ratios across different data types
+- **Information content observation**: Quantifies patterns in information density
+- **Comparative analysis**: Measures compression patterns across different data types
+- **Artifact interpretation**: Compression artifacts encode meaningful information about data-algorithm interactions, not merely noise
 
 ### 2. SEC Weight Interpreter (`core/sec_weight_interpreter.py`)
 - **Symbolic Entropy Collapse (SEC) integration**: Uses TinyCIMM framework for advanced analysis
@@ -79,39 +82,41 @@ cat ../results/weight_analysis_results.json
 ## Key Experiments
 
 ### Weight Analysis Experiment
-**Purpose**: Test whether amplified information is pre-encoded in model weights or emerges during computation.
+**Purpose**: Investigate whether observed information amplification patterns might be pre-encoded in model weights or emerge during computation.
 
 **Methodology**:
 1. Extract and compress model weight data
 2. Generate model outputs and compress them
-3. Compare information content ratios
+3. Compare information content patterns
 4. Apply SEC analysis for symbolic pattern detection
 
-**Results**: Demonstrates 46.2x amplification ratio, providing strong evidence for emergent information generation.
+**Observational Results**: Suggests 46.2x amplification patterns, warranting investigation of emergent information generation hypotheses. Each computational run represents a unique observational event, particularly in unseeded systems where non-deterministic behavior creates novel outcomes.
 
 ### Pilot Study
-**Purpose**: Establish baseline measurements and validate experimental methodology.
+**Purpose**: Establish baseline observational patterns and validate experimental methodology.
 
 **Methodology**:
-1. Use simple language models for controlled testing
-2. Measure compression ratios across different prompts
+1. Use simple language models for controlled investigation
+2. Observe compression patterns across different prompts
 3. Validate measurement consistency and reliability
+4. Document non-deterministic behavior in unseeded runs
 
 ### Scale Testing
-**Purpose**: Validate amplification phenomenon across different model sizes and architectures.
+**Purpose**: Investigate amplification patterns across different model sizes and architectures.
 
 **Methodology**:
-1. Test multiple model configurations
-2. Measure scaling relationships
+1. Observe multiple model configurations
+2. Document scaling relationships
 3. Identify amplification patterns across computational complexity
+4. Study how non-deterministic behavior scales with model size
 
 ## Theoretical Foundation
 
 ### Information Amplification Hypothesis
-The framework tests the core hypothesis that computational systems can generate **genuinely novel information** that exceeds what is directly encoded in their parameters. This challenges reductionist views of computation and supports theories of emergent complexity.
+The framework investigates the hypothesis that computational systems might generate **genuinely novel information** that exceeds what is directly encoded in their parameters. This challenges reductionist views of computation and invites exploration of theories of emergent complexity. Each computational run, particularly in unseeded AI systems, represents a unique observational event where possibility space collapses into concrete, novel outcomes.
 
 ### Dawn Field Theory Integration
-Results from this framework provide empirical support for **Dawn Field Theory**, which proposes that information fields can amplify and generate novel patterns through computational processes.
+Observational results from this framework suggest promising correspondence with **Dawn Field Theory**, which proposes that information fields can amplify and generate novel patterns through computational processes. The non-deterministic nature of unseeded AI systems provides windows into how possibility space might collapse into structured information.
 
 ### SEC Framework Connection
 Integration with the **Symbolic Entropy Collapse (SEC)** framework allows for analysis of symbolic pattern emergence and fractal information structures in computational systems.

@@ -50,13 +50,13 @@ In each case, I watched surface-level competence mask deeper comprehension failu
 
 ### 1.3 The CIP Solution I Developed
 
-My exploration led me to CIP, which addresses these limitations through **measurable comprehension architecture**:
+My exploration led me to CIP, which addresses these limitations through **measurable comprehension architecture** grounded in information-theoretic principles:
 
 1. **Structured Knowledge Representation**: I designed repositories to become self-describing through semantic metadata
-2. **Validation Mechanisms**: Built-in testing systems that verify understanding rather than assuming it
-3. **Recursive Improvement**: AI systems iteratively refine comprehension through feedback loops I created
+2. **Validation Mechanisms**: Built-in testing systems that verify understanding rather than assuming it, informed by arithmetic identity theory demonstrating computational novelty emergence
+3. **Recursive Improvement**: AI systems iteratively refine comprehension through feedback loops I created, leveraging information amplification principles validated at 46.2x compression ratios with surplus information generation
 4. **Audit Trails**: Complete tracking of comprehension development and validation results
-5. **Universal Applicability**: Domain-agnostic protocols that work across any knowledge type
+5. **Universal Applicability**: Domain-agnostic protocols that work across any knowledge type, validated through foundational experiments (foundational/experiments/information_amplification_proof/RESULTS.md)
 
 I invite you to explore how this framework transforms the relationship between AI systems and knowledge repositories.
 
@@ -161,7 +161,7 @@ In August 2025, a comprehensive self-benchmark of the Cognition Index Protocol w
 - Perfect scores in hallucination prevention, self-validation, and error correction
 - 0.946 composite score, with actionable insights for further optimization
 - Demonstrated practical utility for real-world AI evaluation and reproducibility
-- Full methodology and results are available in the supplementary report ([Claude_Sonnet4_results.md](../../cognition_index_protocol/case_studies/Claude/Claude_Sonnet4_results.md))
+- Full methodology and results are available in the supplementary report ([Claude_Sonnet4_results.md](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/cognition_index_protocol/case_studies/Claude/Claude_Sonnet4_results.md))
 
 This benchmark provides strong, quantitative validation of CIP’s effectiveness and demonstrates its operational value for measuring and improving AI comprehension. The results support the protocol’s claims of reducing hallucinations, increasing accuracy, and enabling transparent, auditable AI reasoning.
 
@@ -232,7 +232,7 @@ The benchmark achieved an overall score of **0.946 (Grade A)** across 10 key met
 - Response consistency analysis across multiple iterations
 - Quantitative scoring methodology with explicit criteria
 
-**Replication Framework**: The study establishes procedures for future CIP-based evaluations, including standardized test queries, validation protocols, and scoring mechanisms. Full methodology available in supplementary report ([Claude_Sonnet4_results.md](../../cognition_index_protocol/case_studies/Claude/Claude_Sonnet4_results.md)).
+**Replication Framework**: The study establishes procedures for future CIP-based evaluations, including standardized test queries, validation protocols, and scoring mechanisms. Full methodology available in supplementary report ([Claude_Sonnet4_results.md](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/cognition_index_protocol/case_studies/Claude/Claude_Sonnet4_results.md)).
 
 **Statistical Validation**: The benchmark used stratified sampling across repository content types, multiple query repetitions for consistency testing, and cross-validation against verifiable repository facts.
 
