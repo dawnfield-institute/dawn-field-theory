@@ -94,7 +94,6 @@ dawn-field-theory/
     pending/
       README.md
       example-pr-123-entropy-operator.yaml
-      pr-TEST-WORKFLOW-validation.yaml
     processed/
       README.md
   cognition_index_protocol/
