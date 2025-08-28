@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: results
-description: Experimental results and analysis outputs from information amplification studies. Contains timestamped experiment runs, statistical analyses, and computational validation of information amplification mechanisms within Dawn Field Theory frameworks.
+description: Experimental results and analysis outputs from information amplification
+  studies. Contains timestamped experiment runs, statistical analyses, and computational
+  validation of information amplification mechanisms within Dawn Field Theory frameworks.
 semantic_scope:
 - results
 - analysis
