@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: external_citations
-description: External academic citations and references supporting Dawn Field Theory research. Contains formatted bibliographic records in multiple citation formats (APA, BibTeX) for third-party scholarly works that inform or validate DFT theoretical frameworks.
+description: External academic citations and references supporting Dawn Field Theory
+  research. Contains formatted bibliographic records in multiple citation formats
+  (APA, BibTeX) for third-party scholarly works that inform or validate DFT theoretical
+  frameworks.
 semantic_scope:
 - external_citations
 - bibliography
