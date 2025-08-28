@@ -1,0 +1,14 @@
+schema_version: '2.0'
+directory_name: pending
+description: Citation requests awaiting processing and validation. Contains pending citation templates and requests from pull requests that require review, formatting, and integration into the main citation database. Each entry represents a contribution pending bibliographic validation.
+semantic_scope:
+- pending
+- citation_workflow
+- pull_request_citations
+- citation_review
+- bibliographic_validation
+- contribution_tracking
+files:
+- README.md
+- example-pr-123-entropy-operator.yaml
+child_directories: []

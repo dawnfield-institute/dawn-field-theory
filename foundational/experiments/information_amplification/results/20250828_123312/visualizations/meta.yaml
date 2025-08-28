@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: visualizations
+description: Visual outputs and graphical analyses from the August 28, 2025 information amplification experiment. Contains charts, plots, and visual representations of entropy dynamics, amplification patterns, and experimental validation results.
+semantic_scope:
+- visualizations
+- experimental_plots
+- entropy_visualization
+- amplification_charts
+- graphical_analysis
+- visual_validation
+- data_visualization
+- experimental_graphics
+files:
+- amplification_comparison.png
+- quantum_metrics_radar.png
+child_directories: []

@@ -1,0 +1,392 @@
+{
+  "experiment_id": "unified_1756394467",
+  "timestamp": "2025-08-28T12:21:07.247563",
+  "null_control_results": {
+    "method": "null_control",
+    "combinatorial_amplification": 3.125,
+    "complexity_amplification": 12.005208333333334,
+    "compression_analysis": {
+      "raw_size": 2305,
+      "compressed_size": 1092,
+      "compression_ratio": 0.4737527114967462,
+      "best_algorithm": "lzma",
+      "all_compressions": {
+        "lzma": 1092,
+        "gzip": 1115,
+        "zlib": 1103
+      }
+    },
+    "unique_outputs": 200,
+    "total_outputs": 200,
+    "description": "Pure random control (no structure expected)"
+  },
+  "baseline_results": {
+    "method": "baseline_stochastic",
+    "combinatorial_amplification": 3.125,
+    "complexity_amplification": 11.202247191011235,
+    "entropy_production": 0.6961398267078129,
+    "novel_structures": 298,
+    "hierarchical_emergence": {
+      "2-gram": 64,
+      "3-gram": 362,
+      "4-gram": 958,
+      "5-gram": 1312,
+      "6-gram": 1258,
+      "7-gram": 1075
+    },
+    "unique_outputs": 200,
+    "total_outputs": 200
+  },
+  "sec_motif_results": {
+    "method": "sec_motif_based",
+    "combinatorial_amplification": 3.125,
+    "complexity_amplification": 12.020833333333334,
+    "compression_analysis": {
+      "raw_size": 2345,
+      "compressed_size": 1488,
+      "compression_ratio": 0.63454157782516,
+      "best_algorithm": "zlib",
+      "all_compressions": {
+        "lzma": 1664,
+        "gzip": 1500,
+        "zlib": 1488
+      }
+    },
+    "unique_outputs": 200,
+    "total_outputs": 200
+  },
+  "authentic_sec_results": {
+    "method": "authentic_sec_field",
+    "combinatorial_amplification": 2.859375,
+    "complexity_amplification": 17.089887640449437,
+    "attractor_emergence_events": 173014,
+    "authentic_attractors_detected": 0,
+    "field_evolution_steps": 68,
+    "energy_conservation_stability": 42891.6403977145,
+    "coherence_improvement": -14.390846980177596,
+    "critical_collapse_events": 173014,
+    "hierarchical_emergence": {
+      "2-gram": 32,
+      "3-gram": 128,
+      "4-gram": 505,
+      "5-gram": 1505,
+      "6-gram": 2552,
+      "7-gram": 2902
+    },
+    "unique_outputs": 183,
+    "total_outputs": 200
+  },
+  "compression_analysis": {
+    "null_control": {
+      "raw_size": 2305,
+      "compressed_size": 1092,
+      "compression_ratio": 0.4737527114967462,
+      "best_algorithm": "lzma",
+      "all_compressions": {
+        "lzma": 1092,
+        "gzip": 1115,
+        "zlib": 1103
+      },
+      "unique_outputs": 200,
+      "total_outputs": 200,
+      "avg_output_length": 11.525
+    },
+    "baseline": {
+      "raw_size": 2278,
+      "compressed_size": 997,
+      "compression_ratio": 0.4376646180860404,
+      "best_algorithm": "zlib",
+      "all_compressions": {
+        "lzma": 1100,
+        "gzip": 1009,
+        "zlib": 997
+      },
+      "unique_outputs": 200,
+      "total_outputs": 200,
+      "avg_output_length": 11.39
+    },
+    "motif": {
+      "raw_size": 2345,
+      "compressed_size": 1488,
+      "compression_ratio": 0.63454157782516,
+      "best_algorithm": "zlib",
+      "all_compressions": {
+        "lzma": 1664,
+        "gzip": 1500,
+        "zlib": 1488
+      },
+      "unique_outputs": 200,
+      "total_outputs": 200,
+      "avg_output_length": 11.54
+    },
+    "sec_field": {
+      "raw_size": 4170,
+      "compressed_size": 1521,
+      "compression_ratio": 0.3647482014388489,
+      "best_algorithm": "zlib",
+      "all_compressions": {
+        "lzma": 1560,
+        "gzip": 1533,
+        "zlib": 1521
+      },
+      "unique_outputs": 183,
+      "total_outputs": 200,
+      "avg_output_length": 20.85
+    },
+    "compression_comparison": {
+      "null_control_vs_baseline": {
+        "complexity_ratio": 1.0,
+        "compression_advantage": 0
+      },
+      "null_control_vs_motif": {
+        "complexity_ratio": 1.0,
+        "compression_advantage": 0
+      },
+      "null_control_vs_sec_field": {
+        "complexity_ratio": 1.0,
+        "compression_advantage": 0
+      },
+      "baseline_vs_motif": {
+        "complexity_ratio": 1.0,
+        "compression_advantage": 0
+      },
+      "baseline_vs_sec_field": {
+        "complexity_ratio": 1.0,
+        "compression_advantage": 0
+      },
+      "motif_vs_sec_field": {
+        "complexity_ratio": 1.0,
+        "compression_advantage": 0
+      }
+    }
+  },
+  "quantum_validation": {
+    "null_control": {
+      "quantum_validation": {
+        "born_rule_compliance": 0.8330312341992676,
+        "decoherence_correlation": 0.0,
+        "average_entanglement": 1.48573421277166,
+        "quantum_amplification_factor": 1.488724680621937,
+        "coherence_preservation": 0.4209979735507557
+      },
+      "detailed_analysis": {
+        "born_rule_details": {
+          "born_rule_compliance": 0.8330312341992676,
+          "ks_statistic": 0.1669687658007324,
+          "unique_quantum_states": 130,
+          "entropy_quantum": 6.859690752090841
+        },
+        "decoherence_details": {
+          "decoherence_correlation": 0.0,
+          "mean_correlation": 0.47186310767553047,
+          "correlation_variance": 0.02273845999559353,
+          "correlation_sequence_length": 199
+        },
+        "entanglement_details": {
+          "average_entanglement": 1.48573421277166,
+          "entanglement_variance": 0.19564631249214454,
+          "max_entanglement": 2.584962500721156,
+          "entanglement_distribution": [
+            6,
+            34,
+            85,
+            63,
+            12
+          ]
+        },
+        "input_quantum_info": 2.1929244315008436,
+        "output_quantum_info": 3.264660723914136
+      }
+    },
+    "baseline": {
+      "quantum_validation": {
+        "born_rule_compliance": 0.8175870236556355,
+        "decoherence_correlation": 0.0,
+        "average_entanglement": 1.250042688250334,
+        "quantum_amplification_factor": 1.3425048357520257,
+        "coherence_preservation": 0.5902474417542137
+      },
+      "detailed_analysis": {
+        "born_rule_details": {
+          "born_rule_compliance": 0.8175870236556355,
+          "ks_statistic": 0.18241297634436443,
+          "unique_quantum_states": 137,
+          "entropy_quantum": 6.966111814666564
+        },
+        "decoherence_details": {
+          "decoherence_correlation": 0.0,
+          "mean_correlation": 0.4895403709753981,
+          "correlation_variance": 0.021506384765264997,
+          "correlation_sequence_length": 199
+        },
+        "entanglement_details": {
+          "average_entanglement": 1.250042688250334,
+          "entanglement_variance": 0.18679968301018982,
+          "max_entanglement": 2.321928094887362,
+          "entanglement_distribution": [
+            7,
+            34,
+            81,
+            61,
+            17
+          ]
+        },
+        "input_quantum_info": 2.1929244315008436,
+        "output_quantum_info": 2.9440116537286443
+      }
+    },
+    "motif": {
+      "quantum_validation": {
+        "born_rule_compliance": 0.8207793421675563,
+        "decoherence_correlation": 0.0004612201128229981,
+        "average_entanglement": 2.155362251699789,
+        "quantum_amplification_factor": 2.5579452658764334,
+        "coherence_preservation": 0.13269294432535983
+      },
+      "detailed_analysis": {
+        "born_rule_details": {
+          "born_rule_compliance": 0.8207793421675563,
+          "ks_statistic": 0.17922065783244365,
+          "unique_quantum_states": 134,
+          "entropy_quantum": 6.911014064623294
+        },
+        "decoherence_details": {
+          "decoherence_correlation": 0.0004612201128229981,
+          "mean_correlation": 0.2036698239095528,
+          "correlation_variance": 0.018539486656939008,
+          "correlation_sequence_length": 199
+        },
+        "entanglement_details": {
+          "average_entanglement": 2.155362251699789,
+          "entanglement_variance": 0.22830218320137444,
+          "max_entanglement": 2.9999999999999996,
+          "entanglement_distribution": [
+            1,
+            6,
+            28,
+            96,
+            69
+          ]
+        },
+        "input_quantum_info": 2.1929244315008436,
+        "output_quantum_info": 5.609380667982352
+      }
+    },
+    "sec_field": {
+      "quantum_validation": {
+        "born_rule_compliance": 0.8501680076572091,
+        "decoherence_correlation": 0.0,
+        "average_entanglement": 0.6667584940605914,
+        "quantum_amplification_factor": 1.3850260372093623,
+        "coherence_preservation": 0.4411677533940167
+      },
+      "detailed_analysis": {
+        "born_rule_details": {
+          "born_rule_compliance": 0.8501680076572091,
+          "ks_statistic": 0.14983199234279085,
+          "unique_quantum_states": 133,
+          "entropy_quantum": 6.702558700889421
+        },
+        "decoherence_details": {
+          "decoherence_correlation": 0.0,
+          "mean_correlation": 0.10869126959098147,
+          "correlation_variance": 0.003476239511555929,
+          "correlation_sequence_length": 199
+        },
+        "entanglement_details": {
+          "average_entanglement": 0.6667584940605914,
+          "entanglement_variance": 0.04878639735184653,
+          "max_entanglement": 1.3627402784989338,
+          "entanglement_distribution": [
+            30,
+            62,
+            61,
+            26,
+            3
+          ]
+        },
+        "input_quantum_info": 2.1929244315008436,
+        "output_quantum_info": 3.0372574352612074
+      }
+    },
+    "quantum_comparison": {
+      "null_control": {
+        "born_rule_score": 0.8330312341992676,
+        "decoherence_score": 0.0,
+        "entanglement_score": 1.48573421277166,
+        "quantum_amplification": 1.488724680621937
+      },
+      "baseline": {
+        "born_rule_score": 0.8175870236556355,
+        "decoherence_score": 0.0,
+        "entanglement_score": 1.250042688250334,
+        "quantum_amplification": 1.3425048357520257
+      },
+      "motif": {
+        "born_rule_score": 0.8207793421675563,
+        "decoherence_score": 0.0004612201128229981,
+        "entanglement_score": 2.155362251699789,
+        "quantum_amplification": 2.5579452658764334
+      },
+      "sec_field": {
+        "born_rule_score": 0.8501680076572091,
+        "decoherence_score": 0.0,
+        "entanglement_score": 0.6667584940605914,
+        "quantum_amplification": 1.3850260372093623
+      }
+    }
+  },
+  "comparative_metrics": {
+    "combinatorial_amplification": {
+      "values": {
+        "null_control": 3.125,
+        "baseline": 3.125,
+        "motif": 3.125,
+        "sec_field": 2.859375
+      },
+      "best_method": "null_control",
+      "worst_method": "sec_field",
+      "best_value": 3.125,
+      "worst_value": 2.859375,
+      "improvement_ratio": 1.092896174863388
+    },
+    "complexity_amplification": {
+      "values": {
+        "null_control": 12.005208333333334,
+        "baseline": 11.202247191011235,
+        "motif": 12.020833333333334,
+        "sec_field": 17.089887640449437
+      },
+      "best_method": "sec_field",
+      "worst_method": "baseline",
+      "best_value": 17.089887640449437,
+      "worst_value": 11.202247191011235,
+      "improvement_ratio": 1.5255767301905716
+    },
+    "overall_ranking": {
+      "sec_field": 3.0,
+      "motif": 1.2780693384223925,
+      "null_control": 1.2727616094147587,
+      "baseline": 1.0
+    },
+    "weighted_scores": {
+      "null_control": 1.2727616094147587,
+      "baseline": 1.0,
+      "motif": 1.2780693384223925,
+      "sec_field": 3.0
+    }
+  },
+  "field_diagnostics": {
+    "field_size": 64,
+    "mean_entropy": -0.09006562201474091,
+    "entropy_variance": 0.5333573328262483,
+    "potential_range": [
+      23.025850929940457,
+      23.025850929940457
+    ],
+    "flow_magnitude": 0.0,
+    "evolution_history_length": 68,
+    "critical_events_count": 173014,
+    "attractor_count": 0
+  }
+}

@@ -1,0 +1,94 @@
+STATISTICAL ANALYSIS OF INFORMATION AMPLIFICATION
+============================================================
+
+Number of trials: 3
+
+BASELINE METHOD:
+------------------------------
+  combinatorial:
+    Mean ± Std: 3.125 ± 0.000
+    Range: [3.125, 3.125]
+    Median: 3.125
+
+  complexity:
+    Mean ± Std: 11.532 ± 0.262
+    Range: [11.202, 11.843]
+    Median: 11.551
+
+  born_rule:
+    Mean ± Std: 0.802 ± 0.019
+    Range: [0.776, 0.818]
+    Median: 0.813
+
+  quantum_amp:
+    Mean ± Std: 1.351 ± 0.009
+    Range: [1.343, 1.364]
+    Median: 1.347
+
+MOTIF METHOD:
+------------------------------
+  combinatorial:
+    Mean ± Std: 3.125 ± 0.000
+    Range: [3.125, 3.125]
+    Median: 3.125
+
+  complexity:
+    Mean ± Std: 12.075 ± 0.050
+    Range: [12.021, 12.141]
+    Median: 12.062
+
+  born_rule:
+    Mean ± Std: 0.794 ± 0.022
+    Range: [0.767, 0.821]
+    Median: 0.794
+
+  quantum_amp:
+    Mean ± Std: 2.549 ± 0.007
+    Range: [2.541, 2.558]
+    Median: 2.549
+
+SEC_FIELD METHOD:
+------------------------------
+  combinatorial:
+    Mean ± Std: 2.719 ± 0.340
+    Range: [2.250, 3.047]
+    Median: 2.859
+
+  complexity:
+    Mean ± Std: 16.172 ± 1.881
+    Range: [13.551, 17.876]
+    Median: 17.090
+
+  born_rule:
+    Mean ± Std: 0.796 ± 0.044
+    Range: [0.743, 0.850]
+    Median: 0.794
+
+  quantum_amp:
+    Mean ± Std: 1.353 ± 0.040
+    Range: [1.296, 1.385]
+    Median: 1.377
+
+  emergence_events:
+    Mean ± Std: 186336.667 ± 20888.050
+    Range: [170165.000, 215831.000]
+    Median: 173014.000
+
+  attractors:
+    Mean ± Std: 0.000 ± 0.000
+    Range: [0.000, 0.000]
+    Median: 0.000
+
+STATISTICAL SIGNIFICANCE TESTS:
+----------------------------------------
+
+COMPLEXITY_AMPLIFICATION:
+  baseline_vs_motif: p = 0.0450 *
+  baseline_vs_sec_field: p = 0.0259 *
+  motif_vs_sec_field: p = 0.0370 *
+
+BORN_RULE_COMPLIANCE:
+  baseline_vs_sec_field: p = 0.8482 ns
+  motif_vs_sec_field: p = 0.9656 ns
+
+*** p < 0.001, ** p < 0.01, * p < 0.05, ns = not significant

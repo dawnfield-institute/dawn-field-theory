@@ -1,22 +1,15 @@
 schema_version: '2.0'
 directory_name: information_amplification_proof
-description: Comprehensive framework for testing and proving information amplification
-  in computational systems. Contains experiments demonstrating that AI models generate
-  novel information beyond what is encoded in their weights, supporting the Dawn Field
-  Theory of emergent computation.
+description: Theoretical and computational proof frameworks for information amplification mechanisms. Contains unified amplification framework implementations, mathematical proofs, and validation algorithms demonstrating information amplification within Dawn Field Theory contexts.
 semantic_scope:
-- information_amplification
-- computational_emergence
-- model_weight_analysis
-- sec_framework
-- compression_measurement
-- empirical_validation
-- dawn_field_theory
+- information_amplification_proof
+- theoretical_proof
+- mathematical_validation
+- amplification_framework
+- computational_proof
+- algorithmic_validation
+- unified_framework
+- dft_mathematical_foundation
 files:
-- README.md
-- RESULTS.md
-- requirements.txt
-child_directories:
-- core
-- experiments
-- results
+- unified_amplification_framework.py
+child_directories: []

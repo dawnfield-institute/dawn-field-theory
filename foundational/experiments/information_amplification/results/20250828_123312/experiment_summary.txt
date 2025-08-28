@@ -1,0 +1,41 @@
+Unified Information Amplification Experiment
+===================================================
+
+Experiment ID: unified_1756395191
+Timestamp: 2025-08-28T12:33:11.400485
+Directory: results\20250828_123312
+
+COMBINATORIAL AMPLIFICATION:
+  Baseline:     3.125x
+  SEC Motif:    3.125x
+  SEC Field:    2.562x
+
+COMPLEXITY AMPLIFICATION:
+  Baseline:     11.404x
+  SEC Motif:    11.948x
+  SEC Field:    15.562x
+
+SEC FIELD DYNAMICS:
+  Emergence events:     82021
+  Authentic attractors: 24
+  Evolution steps:      63
+  Coherence improvement: 50.027
+
+QUANTUM VALIDATION SUMMARY:
+  BASELINE:
+    Born rule compliance: 0.824
+    Quantum amplification: 1.353
+  MOTIF:
+    Born rule compliance: 0.785
+    Quantum amplification: 2.544
+  SEC_FIELD:
+    Born rule compliance: 0.850
+    Quantum amplification: 1.414
+
+WEIGHTED RANKING:
+  1. SEC_FIELD: 2.897 points
+  2. MOTIF: 1.261 points
+  3. SHUFFLED_CONTROL: 1.209 points
+  4. NULL_CONTROL: 1.116 points
+  5. BASELINE: 1.000 points
+  6. IDENTITY_CONTROL: 0.271 points
