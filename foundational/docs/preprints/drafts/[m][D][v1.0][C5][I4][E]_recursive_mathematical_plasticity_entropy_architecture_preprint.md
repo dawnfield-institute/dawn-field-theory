@@ -389,7 +389,7 @@ We emphasize open science, reproducibility, and transparent reporting. All code,
 
 ## Roadmap & Future Work
 
-Future work will focus on: (1) extending recursive base analysis to higher-dimensional and more complex mathematical domains; (2) deploying entropy-aware architecture in large-scale, real-world AI systems; (3) developing automated theorem synthesis and entropy-guided AI training; (4) integrating with frameworks such as RED and SCBF for deeper diagnostics; and (5) broadening empirical validation and community collaboration. [TRACE: tools/base_invariant_analysis.py#detect]
+Future work will focus on: (1) extending recursive base analysis to higher-dimensional and more complex mathematical domains; (2) deploying entropy-aware architecture in large-scale, real-world AI systems; (3) developing automated theorem synthesis and entropy-guided AI training; (4) integrating with frameworks such as RED and SCBF for deeper diagnostics; and (5) broadening empirical validation and community collaboration. [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/ tools/base_invariant_analysis.py#detect]
 
 ## Conclusion
 
@@ -670,11 +670,11 @@ All computational results in this preprint were obtained using the hardware conf
 
 | Claim / Component | Source Path | TRACE Reference | Status |
 |-------------------|-------------|-----------------|--------|
-| Multi-base analysis engine | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/tools/base_invariant_analysis.py | [TRACE: tools/base_invariant_analysis.py#detect] | **Resolved** |
-| Entropy-aware architecture design | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md | [TRACE: foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md#design] | **Available** |
-| Landauer erasure validation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/ | [TRACE: foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/] | **Available** |
-| Mathematical reasoning metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/ | [TRACE: models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/*/logs/*_log.csv#accuracy] | **Available** |
-| Base-invariant pattern detection | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/tools/base_invariant_analysis.py | [TRACE: tools/base_invariant_analysis.py#detect] | **Available** |
+| Multi-base analysis engine | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/tools/base_invariant_analysis.py | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/ tools/base_invariant_analysis.py#detect] | **Resolved** |
+| Entropy-aware architecture design | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md#design] | **Available** |
+| Landauer erasure validation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/ | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/] | **Available** |
+| Mathematical reasoning metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/ | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/*/logs/*_log.csv#accuracy] | **Available** |
+| Base-invariant pattern detection | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/tools/base_invariant_analysis.py | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/ tools/base_invariant_analysis.py#detect] | **Available** |
 
 ### Reproducibility and Version Control
 

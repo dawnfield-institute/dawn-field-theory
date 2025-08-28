@@ -158,7 +158,8 @@ Over time, certain tokens consistently occupied specific roles, suggesting spont
 
 #### 4.2.3 Entropy Regulation and Stability
 
-![Entropy Waves from Evolution-Symbolic-Collapse Experiments](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
+**Figure: Entropy Waves from Evolution-Symbolic-Collapse Experiments**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
 
 *Figure 1: Entropy evolution patterns from our most recent symbolic-biological evolution experiments (July 18, 2025), showing characteristic collapse and stabilization cycles that demonstrate the entropy regulation mechanisms underlying symbolic convergence.*
 
@@ -400,7 +401,7 @@ This field exhibits several key properties:
 
 ## Discussion
 
-This work demonstrates that symbolic resonance and entropic field dynamics provide a foundation for adaptive, co-evolutionary human-agent systems. The empirical and theoretical results suggest that mutual adaptation, emergent communication, and entropy-guided evolution are not only possible but naturally arise in well-designed symbolic ecologies. However, the generalizability of these findings and the long-term stability of symbolic convergence require further study. [TRACE: foundational/experiments/symbolic_emergence/]
+This work demonstrates that symbolic resonance and entropic field dynamics provide a foundation for adaptive, co-evolutionary human-agent systems. The empirical and theoretical results suggest that mutual adaptation, emergent communication, and entropy-guided evolution are not only possible but naturally arise in well-designed symbolic ecologies. However, the generalizability of these findings and the long-term stability of symbolic convergence require further study. [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/symbolic_emergence/]
 
 ## Alignment & Ethics
 
@@ -408,7 +409,7 @@ We emphasize open science, reproducibility, and transparent reporting. All code,
 
 ## Roadmap & Future Work
 
-Future work will focus on: (1) developing symbolic ancestry tracking and resonance quality metrics; (2) deploying entropy regulation interfaces in real-world systems; (3) integrating with frameworks such as GAIA and SCBF for deeper diagnostics; (4) broadening empirical validation and community collaboration; and (5) exploring applications in education, creativity, and organizational intelligence. [TRACE: models/GAIA/docs/architecture/]
+Future work will focus on: (1) developing symbolic ancestry tracking and resonance quality metrics; (2) deploying entropy regulation interfaces in real-world systems; (3) integrating with frameworks such as GAIA and SCBF for deeper diagnostics; (4) broadening empirical validation and community collaboration; and (5) exploring applications in education, creativity, and organizational intelligence. [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/models/GAIA/docs/architecture/]
 
 ## Limitations
 
@@ -564,11 +565,13 @@ Terminology validated
 Equations numbered (n/a)
 Figures / diagrams referenced
 
-![Symbolic Entropy Collapse from Superfluid Pi Experiments](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/symbolic_entropy.png)
+**Figure: Symbolic Entropy Collapse from Superfluid Pi Experiments**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/symbolic_entropy.png)
 
 *Figure 2: Symbolic entropy collapse patterns from our superfluid π-harmonic recursion experiments (June 22, 2025), demonstrating the recursive collapse dynamics that enable symbolic memory formation and coherent pattern emergence.*
 
-![Entropy Change Dynamics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/entropy_change.png)
+**Figure: Entropy Change Dynamics**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/entropy_change.png)
 
 *Figure 3: Rate of entropy change during symbolic superfluid collapse events, showing the characteristic rapid descent followed by plateau formation that indicates successful symbolic attractor stabilization.*
 Acronyms defined on first use

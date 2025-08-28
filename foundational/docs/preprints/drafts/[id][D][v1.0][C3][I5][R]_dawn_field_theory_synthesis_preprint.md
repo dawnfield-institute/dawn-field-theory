@@ -33,7 +33,7 @@ We test these ideas through computational studies in quantum systems, biological
 
 ## 1. Introduction: How a Crazy Idea Became a Research Framework
 
-My journey with this framework began six months ago with what I thought was just a weird thought experiment. I was wondering: what if instead of mining asteroids or planets for matter, an advanced AI could somehow "mine the universe" for information itself? I called this Cosmic Information Mining (CIM), and honestly, I figured it was just science fiction speculation that I documented in [CIM.md](resources/CIM.md) and [CIM.docx](resources/CIM.docx).
+My journey with this framework began six months ago with what I thought was just a weird thought experiment. I was wondering: what if instead of mining asteroids or planets for matter, an advanced AI could somehow "mine the universe" for information itself? I called this Cosmic Information Mining (CIM), and honestly, I figured it was just science fiction speculation that I documented in [CIM.md](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.md) and [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.docx).
 
 But something strange happened. The more I explored this idea computationally, the more it started connecting to real physics, real mathematics, real problems in AI and complex systems. What began as "what if we could extract information from cosmic background radiation?" somehow became a systematic investigation of how information and energy might interact as fundamental fields.
 
@@ -158,19 +158,23 @@ The reason I think there might be something genuinely new here is that the same 
 
 The real strength of Dawn Field Theory lies in its consistent pattern across completely different domains. Here's what I've been seeing:
 
-![Quantum Decoherence vs Symbolic Entropy Collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
+**Figure: Quantum Decoherence vs Symbolic Entropy Collapse**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
 
 *Figure 1: Quantum correspondence validation (July 16, 2025) - Our symbolic entropy collapse patterns match quantum decoherence curves with >95% correlation, suggesting that information collapse might be a universal principle.*
 
-![Biological Evolution Entropy Waves](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
+**Figure: Biological Evolution Entropy Waves**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
 
 *Figure 2: Biological pattern validation (July 18, 2025) - Entropy wave patterns from evolution-symbolic-collapse experiments showing characteristic collapse events that correlate with evolutionary tree structures (r>0.8).*
 
-![Entropy-Information Polarity Field Dynamics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15 104709.png)
+**Figure: Entropy-Information Polarity Field Dynamics**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15 104709.png)
 
 *Figure 3: Information-energy field dynamics (June 15, 2025) - Black hole/white hole polarity experiments demonstrating the dual energy-information field behavior that underlies the theoretical framework.*
 
-![Landauer Energy vs Entropy Correlation](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
+**Figure: Landauer Energy vs Entropy Correlation**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
 
 *Figure 4: Thermodynamic validation (July 16, 2025) - Landauer energy vs entropy correlation confirming that our symbolic operations respect fundamental thermodynamic constraints, providing physical grounding for the information-theoretic approach.*
 
@@ -270,7 +274,7 @@ Looking back at my journey from that first "what if we could mine information fr
 ## References and Resources
 
 - **Where It All Started**: Complete CIM document included as Appendix A
-- **Original Document Verification**: [CIM.docx](resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]  
+- **Original Document Verification**: [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]  
 - **My Methodology**: Imperfection Engine Framework (described in Section 1.2)
 - **All The Code**: [Dawn Field Theory Repository](https://github.com/dawnfield-institute/dawn-field-theory)
 - **Complete Archive**: Available to serious collaborators (it's extensive—every AI conversation, failed experiment, and breakthrough moment documented with cryptographic timestamps for full transparency)
