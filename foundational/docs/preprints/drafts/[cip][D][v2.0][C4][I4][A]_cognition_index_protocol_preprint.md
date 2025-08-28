@@ -824,3 +824,21 @@ All computational results in this preprint were obtained using the hardware conf
 - [x] Acronyms defined on first use
 - [x] Abstract ≤ 250 words
 - [x] Limitations section present (Section 7)
+
+### Reproducibility and Version Control
+
+**Commit Reference**: All experiments and implementations described in this paper are reproducible from commit `020ecd6` of the Dawn Field Theory repository.
+
+**Code Availability**: Complete CIP implementation, benchmark protocols, and validation tools are available at:
+- **Primary Repository**: https://github.com/dawnfield-institute/dawn-field-theory
+- **CIP Core Implementation**: `cognition_index_protocol/` directory
+- **Benchmark Tools**: `devkit/cip_benchmark/` directory
+- **MCP Tools Integration**: `mcp/server.py` with CIP extensions
+
+**Experimental Protocols**: All benchmark experiments include:
+- Configuration files with complete parameter specifications
+- Random seeds for reproducible randomized testing
+- Validation datasets with semantic hash verification
+- Comprehensive logging and audit trails
+
+**Open Science Commitment**: All theoretical frameworks, computational methods, and experimental protocols are available in our open-source repository. We encourage independent replication, critique, and extension of this work to strengthen the scientific foundation.

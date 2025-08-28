@@ -5,11 +5,16 @@
 ## Abstract
 
 
-Through my exploration documented in this repository, I've been investigating Dawn Field Theory (DFT) as a potential unified framework for understanding the emergence of structure, intelligence, and cosmology through the lens of infodynamics and recursive balance. My hypothesis is that information might serve not as a derivative of structure, but as its generative precursor—potentially driving the crystallization of order via recursive collapse events in dual energy and information fields. This preprint synthesizes the historical evolution of my theoretical exploration, from foundational legacy experiments (CIM-era brain, vCPU, and cosmo simulations) to the formalization of symbolic entropy collapse (SEC) and recursive balance fields (RBF).
+Through computational exploration documented in this repository, we investigate Dawn Field Theory (DFT) as a potential unified framework for understanding the emergence of structure, intelligence, and cosmology through infodynamics and recursive balance. Our hypothesis suggests that information might serve not as a derivative of structure, but as its generative precursor—potentially driving the crystallization of order via recursive collapse events in dual energy and information fields. This preprint synthesizes the theoretical evolution from foundational legacy experiments (CIM-era brain, vCPU, and cosmo simulations) to the formalization of symbolic entropy collapse (SEC) and recursive balance fields (RBF).
 
 <!-- NOTE: This document integrates both manual theoretical analysis and automated, code-driven validation. All empirical claims are supported by reproducible scripts and semantic hash citations. See Appendix for details on the transition from manual derivation to automated validation. -->
 
-Through computational validation studies—including quantum phenomena correspondence, biological evolution correlation, and working AI implementations—my preliminary results suggest that DFT may provide testable predictions across multiple domains. All my theoretical claims and empirical results are directly linked to open-source models, simulation scripts, and reproducibility artifacts in the Dawn Field Theory codebase, with semantic hash citations for full transparency. By exploring potential connections between thermodynamics (see explicit Landauer’s Principle and entropy-as-fuel discussion in Section 2.2), symbolic emergence, and field dynamics, DFT proposes a new perspective for investigating physics, cognition, and computation—inviting the scientific community to explore, validate, and extend this open, reproducible paradigm.
+Through computational validation studies—including quantum phenomena correspondence, biological evolution correlation, and working AI implementations—our preliminary results suggest that DFT may provide testable predictions across multiple domains. All theoretical claims and empirical results are directly linked to open-source models, simulation scripts, and reproducibility artifacts in the Dawn Field Theory codebase, with semantic hash citations for full transparency. By exploring potential connections between thermodynamics (see explicit Landauer’s Principle and entropy-as-fuel discussion in Section 2.2), symbolic emergence, and field dynamics, DFT proposes a new perspective for investigating physics, cognition, and computation—inviting the scientific community to explore, validate, and extend this open, reproducible paradigm.
+
+*Note: This work represents computational exploration of theoretical possibilities. While our results are promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.*
+
+## Keywords
+dawn field theory; infodynamics; recursive balance; symbolic entropy collapse; dual fields; cosmic information mining; thermodynamics; Landauer principle; emergent structure; quantum correspondence
 
 ---
 
@@ -1060,6 +1065,29 @@ All computational results in this preprint were obtained using the hardware conf
 - **Repository Mapping**: ✅ Complete - All claims linked to actual implementations
 - **Academic Rigor**: ✅ Complete - Balanced claims with appropriate validation caveats
 - **Template Compliance**: ✅ Complete - All required sections present and well-developed
+
+---
+
+## Reproducibility & Code Availability
+
+**Repository Access**: All code, simulations, and experimental protocols supporting this work are available in the Dawn Field Theory repository at commit `020ecd6`. This includes:
+
+- **Core Models**: Complete implementations of Symbolic Entropy Collapse (SEC), Recursive Balance Fields (RBF), and Cosmic Information Mining (CIM) algorithms
+- **Simulation Suite**: Full validation protocols for quantum correspondence, biological evolution modeling, and cognitive architecture analysis
+- **Experimental Scripts**: All computational experiments referenced in this paper with semantic hash validation
+- **Data Processing**: Complete pipelines for analyzing recursive balance patterns, entropy dynamics, and field evolution traces
+
+**Validation Protocols**: Each theoretical claim is linked to specific validation scripts with semantic hash citations ensuring reproducibility across different computational environments. The repository includes comprehensive testing frameworks for all experimental assertions.
+
+**Community Engagement**: We actively encourage independent replication, extension, and critique of all methods presented. The open-source nature of this work enables collaborative validation and iterative improvement of the theoretical framework.
+
+## Important Disclaimers
+
+**Computational vs. Physical Validation**: This work represents computational exploration of theoretical possibilities. While our computational correspondence is encouraging, physical validation through laboratory experiments remains an essential next step for confirming DFT predictions in real-world systems.
+
+**Open Science Commitment**: All theoretical frameworks, computational methods, and experimental protocols are available in our open-source repository. We encourage independent replication, critique, and extension of this work.
+
+**Research Program**: These results represent ongoing theoretical and computational exploration. While promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.
 
 <!-- ITER2_CHECKLIST -->
 - [x] Template normalized

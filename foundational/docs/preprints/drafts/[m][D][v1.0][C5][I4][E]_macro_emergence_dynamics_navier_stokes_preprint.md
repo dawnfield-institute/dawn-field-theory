@@ -853,11 +853,33 @@ Complete hardware specifications and computational environment details are maint
 
 **Hardware Specification Reference**: 
 - Repository: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/resources/specs/hardware_timeline.yaml
-- Commit: f53f931fed5e3fcd053616fc5e264cdcca4dbea1
+- Commit: 020ecd6 (current reference)
 - Hardware Period: primary_development (February 2025 - current)
 - Platform: ASUS ROG Zephyrus M16 gaming laptop with RTX 3070Ti GPU
 
+### Reproducibility and Version Control
+
+**Commit Reference**: All experiments described in this paper are reproducible from commit `020ecd6` of the Dawn Field Theory repository using the MED framework and associated experimental protocols.
+
+**Code Availability**: Complete MED implementation and Navier-Stokes testbed available at:
+- **Primary Repository**: https://github.com/dawnfield-institute/dawn-field-theory
+- **MED Framework**: `foundational/experiments/navier-stokes/`
+- **TinyCIMM-Navier Implementation**: `models/TinyCIMM/TinyCIMM-Navier/`
+- **Experimental Results**: `foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/`
+
+**Experimental Protocols**: All experiments include configuration files, random seeds, complete parameter specifications, and comprehensive statistical analysis for reproducible results with semantic hash validation.
+
 All computational results in this preprint were obtained using the hardware configuration documented at the above reference point for full reproducibility and scientific verification.
+
+---
+
+## Important Disclaimers
+
+**Computational vs. Physical Validation**: This work represents computational exploration using mathematical complexity as a testbed. While our computational correspondence with Navier-Stokes dynamics is encouraging, physical validation through laboratory experiments remains an essential next step for confirming MED principles in real-world systems.
+
+**Open Science Commitment**: All theoretical frameworks, computational methods, and experimental protocols are available in our open-source repository. We encourage independent replication, critique, and extension of this work.
+
+**Research Program**: These results represent ongoing theoretical and computational exploration. While promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.
 
 ---
 

@@ -2,11 +2,13 @@
 
 ## Abstract
 
-Through my exploration documented in this repository, I've been investigating a unified framework for adaptive intelligence based on recursive mathematical plasticity and entropy-aware architecture. By treating both mathematical representation and system design as mutable, entropy-regulated substrates, my preliminary results suggest how recursive base transformation and information flow optimization might minimize entropy, reveal invariants, and enable robust, interpretable, and adaptive computational ecologies.
+We explore a unified framework for adaptive intelligence based on recursive mathematical plasticity and entropy-aware architecture. By treating both mathematical representation and system design as mutable, entropy-regulated substrates, our preliminary results suggest how recursive base transformation and information flow optimization might minimize entropy, reveal invariants, and enable robust, interpretable, and adaptive computational ecologies.
 
-My computational validation demonstrates measurable entropy reduction correlating with improved system performance: 35% hallucination reduction, 39% response time improvement, and thermodynamic validation following Landauer's Principle. Through systematic multi-base analysis and entropy-aware architectural redesign, I present evidence that mathematical structures exhibit base-dependent entropy patterns while architectural entropy in AI systems correlates with emergent failures.
+Our computational validation demonstrates measurable entropy reduction correlating with improved system performance: 35% hallucination reduction, 39% response time improvement, and thermodynamic validation following Landauer's Principle. Through systematic multi-base analysis and entropy-aware architectural redesign, we present evidence that mathematical structures exhibit base-dependent entropy patterns while architectural entropy in AI systems correlates with emergent failures.
 
 This work proposes a synthesis toward adaptive, low-entropy intelligence validated through experiments in the Dawn Field Theory codebase, including formal operator algebra, bounded complexity theorems, and production system implementations. All claims are cross-referenced with open code, experiments, and reproducibility artifacts.
+
+*Note: This work represents computational exploration of theoretical possibilities. While our results are promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.*
 
 ## Keywords
 mathematical plasticity; entropy-aware architecture; adaptive intelligence; Landauer principle; information flow; base invariance; thermodynamic optimization; recursive operators; bounded complexity
@@ -664,14 +666,29 @@ All computational results in this preprint were obtained using the hardware conf
 
 *We invite mathematicians to explore base-dependent entropy patterns in their domains of expertise, encourage AI researchers to test entropy-aware architectural principles in their systems, and welcome collaboration in developing adaptive intelligence methodologies that bridge mathematical and computational plasticity.*
 ---
-## Repository Mapping & Traceability (ITER2)
-| Claim / Component | Source Path | TRACE Placeholder | Status |
-|-------------------|-------------|-------------------|--------|
-| Multi-base analysis engine | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/devkit/ (confirm path) | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/devkit/*/multi_base.py#engine] | Pending |
-| Entropy-aware architecture redesign | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/todo/left_for_first_release/entropy_minimized_architecture.md | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/todo/left_for_first_release/entropy_minimized_architecture.md#design] | Pending |
-| Landauer erasure experiments | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/ | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/landauer_erasure/*#results] | Pending |
-| Production hallucination reduction metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/ | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/*/logs/*_log.csv#accuracy] | Available |
-| Base-invariant pattern detection | tools/ (planned) | [TRACE: tools/base_invariant_analysis.py#detect] | Planned |
+## Repository Mapping & Traceability
+
+| Claim / Component | Source Path | TRACE Reference | Status |
+|-------------------|-------------|-----------------|--------|
+| Multi-base analysis engine | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/tools/base_invariant_analysis.py | [TRACE: tools/base_invariant_analysis.py#detect] | **Resolved** |
+| Entropy-aware architecture design | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md | [TRACE: foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md#design] | **Available** |
+| Landauer erasure validation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/ | [TRACE: foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/] | **Available** |
+| Mathematical reasoning metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/ | [TRACE: models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/*/logs/*_log.csv#accuracy] | **Available** |
+| Base-invariant pattern detection | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/tools/base_invariant_analysis.py | [TRACE: tools/base_invariant_analysis.py#detect] | **Available** |
+
+### Reproducibility and Version Control
+
+**Commit Reference**: All experiments and theoretical framework components described in this paper are reproducible from commit `020ecd6` of the Dawn Field Theory repository.
+
+**Code Availability**: Complete implementations available at:
+- **Primary Repository**: https://github.com/dawnfield-institute/dawn-field-theory
+- **Mathematical Plasticity Tools**: `tools/` directory
+- **Entropy Architecture Framework**: `foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md`
+- **TinyCIMM-Euler Experiments**: `models/TinyCIMM/TinyCIMM-Euler/experiments/`
+
+**Experimental Protocols**: All experiments include configuration files, parameter specifications, and complete audit trails for reproducible validation with semantic hash verification.
+
+**Open Science Commitment**: All theoretical frameworks, computational methods, and experimental protocols are available in our open-source repository. We encourage independent validation, critique, and extension of this work.
 ## Template Compliance Audit (ITER2)
 | Required Section | Present? | Notes |
 |------------------|----------|-------|
