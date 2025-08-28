@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: '20250828_123312'
-description: Information amplification experiment run from August 28, 2025, 12:33:12. Contains unified experimental results, statistical summaries, and visualization outputs validating information amplification mechanisms and entropy dynamics within DFT frameworks.
+description: Information amplification experiment run from August 28, 2025, 12:33:12.
+  Contains unified experimental results, statistical summaries, and visualization
+  outputs validating information amplification mechanisms and entropy dynamics within
+  DFT frameworks.
 semantic_scope:
 - '20250828_123312'
 - experiment_run

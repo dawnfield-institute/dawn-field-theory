@@ -15,6 +15,7 @@ child_directories:
 - biology_experiments
 - entropy_information_polarity_field
 - hodge_conjecture
+- information_amplification
 - information_amplification_proof
 - landauer_erasure_field_cost_map
 - language_to_logic

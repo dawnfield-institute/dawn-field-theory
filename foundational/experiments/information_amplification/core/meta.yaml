@@ -14,9 +14,10 @@ semantic_scope:
 - computational_core
 files:
 - __init__.py
-- amplification_test.py
+- baseline_generator.py
 - compression_engine.py
 - measurement.py
-- sec_weight_interpreter.py
+- quantum_validator.py
+- sec_field_engine.py
 - text_generator.py
 child_directories: []
