@@ -100,15 +100,18 @@ where Ξ(x,y,t) maintains system complexity near unity through entropy regulatio
 
 ### 1.4 Experimental Validation Results
 
-![TinyCIMM Field-Aware Flow Analysis](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/field_aware_flow_analysis.png)
+**Figure: TinyCIMM Field-Aware Flow Analysis**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/field_aware_flow_analysis.png)
 
 *Figure 1: Field-aware flow analysis from our latest TinyCIMM-Navier experiments (August 18, 2025), demonstrating successful application of MED principles to complex turbulent flow dynamics. The bounded complexity validation is evident in the stable pattern formation despite extreme turbulence conditions.*
 
-![Main Flow Predictions](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/main_flow_predictions_live_cimm.png)
+**Figure: Main Flow Predictions**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/main_flow_predictions_live_cimm.png)
 
 *Figure 2: Live CIMM flow prediction results showing the balance operator Ξ maintaining system stability across multiple Reynolds regimes, validating MED's universal complexity regulation principles.*
 
-![Reynolds Performance Analysis](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/reynolds_performance_analysis.png)
+**Figure: Reynolds Performance Analysis**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/reynolds_performance_analysis.png)
 
 *Figure 3: Comprehensive Reynolds performance analysis across our parameter sweep, demonstrating consistent bounded complexity behavior and the achievement of our breakthrough quality score (0.910309) that validates MED framework maturity.*
 

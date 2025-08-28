@@ -50,11 +50,13 @@ Dawn Field Theory explores fundamental questions in physics and cognition:
 
 Our computational investigations suggest promising correspondence across multiple domains:
 
-![Entropy Information Polarity Field - Black Hole Mode](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
+**Figure 1: Entropy Information Polarity Field - Black Hole Mode**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
 
 *Figure 1: Entropy-information polarity field dynamics in black hole mode (June 15, 2025), demonstrating the dual energy-information field behavior that underlies Dawn Field Theory. The polarity patterns show how information crystallization occurs through recursive collapse events.*
 
-![Entropy Information Polarity Field - White Hole Mode](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_whitehole2025-06-15%20104709.png)
+**Figure 2: Entropy Information Polarity Field - White Hole Mode**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_whitehole2025-06-15%20104709.png)
 
 *Figure 2: Complementary white hole mode dynamics, showing the information expansion and dispersal that balances crystallization events. Together, these polarity modes demonstrate the recursive balance field (RBF) principles central to DFT.*
 

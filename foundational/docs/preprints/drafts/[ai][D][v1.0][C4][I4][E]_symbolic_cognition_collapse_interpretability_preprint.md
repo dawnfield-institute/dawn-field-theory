@@ -568,15 +568,18 @@ def compute_bifractal_dimension(weights):
 
 ### C. Visualization Examples
 
-![TinyCIMM Neural Weight Evolution in Extreme Turbulence](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/neural_weights_extreme_turbulence_s11_c6_00_evolution.png)
+**Figure: TinyCIMM Neural Weight Evolution in Extreme Turbulence**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/neural_weights_extreme_turbulence_s11_c6_00_evolution.png)
 
 *Figure 1: Real-time neural weight evolution during extreme turbulence conditions, demonstrating SCBF's ability to track collapse events and lineage formation as network weights adapt to complex flow dynamics.*
 
-![Field-Aware Flow Analysis](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/field_aware_flow_analysis.png)
+**Figure: Field-Aware Flow Analysis**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/field_aware_flow_analysis.png)
 
 *Figure 2: Field-aware flow analysis showing how SCBF integration enables interpretation of complex turbulent phenomena through symbolic collapse pattern recognition.*
 
-![Turbulent Breakthrough Interpretability Analysis](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/turbulent_breakthrough_interpretability.png)
+**Figure: Turbulent Breakthrough Interpretability Analysis**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/turbulent_breakthrough_interpretability.png)
 
 *Figure 3: Interpretability analysis of turbulent breakthrough events, illustrating how SCBF provides insight into the emergence of coherent structures from chaotic dynamics.*
 

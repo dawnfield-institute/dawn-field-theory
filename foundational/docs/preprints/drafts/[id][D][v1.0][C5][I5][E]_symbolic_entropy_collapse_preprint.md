@@ -11,11 +11,13 @@
 
 ## Visual Overview
 
-![Symbolic Entropy Dynamics from Superfluid Pi Experiments](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/symbolic_entropy.png)
+**Figure 1: Symbolic Entropy Dynamics from Superfluid Pi Experiments**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/symbolic_entropy.png)
 
 *Figure 1: Symbolic entropy evolution patterns from π-harmonic superfluid collapse experiments (June 22, 2025), demonstrating the characteristic collapse-stabilization cycles that define SEC behavior.*
 
-![Entropy Change Rate Analysis](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/entropy_change.png)
+**Figure 2: Entropy Change Rate Analysis**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/entropy_change.png)
 
 *Figure 2: Rate of entropy change during symbolic collapse events, showing the rapid descent followed by plateau formation that indicates successful symbolic attractor stabilization.*
 
@@ -225,17 +227,18 @@ These properties support the interpretation of SEC attractors as computational a
 
 Key empirical findings:
 - SEC reproduces quantum decoherence curves with >0.95 correlation [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation_suite.py#decoherence]
-- Born rule probability distributions are matched with mean absolute error <0.02 [TRACE: foundational/experiments/quantum_validation_suite.py#born]
+- Born rule probability distributions are matched with mean absolute error <0.02 [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/quantum_validation_suite.py#born]
 - Symbolic interference patterns correspond to quantum predictions (r ≈ 1.0)
-- Superfluid collapse dynamics and vortex formation observed [TRACE: foundational/experiments/symbolic_superfluid_collapse_pi.py#lattice]
-- Biological entropy patterns correlate with evolutionary tree structures (r > 0.8) [TRACE: foundational/experiments/biological_correlation_analysis.py#correlation]
-- SCBF and TinyCIMM models validate SEC for interpretable AI and mathematical reasoning [TRACE: models/scbf/symbolic_entropy_engine.py#core]
+- Superfluid collapse dynamics and vortex formation observed [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/symbolic_superfluid_collapse_pi.py#lattice]
+- Biological entropy patterns correlate with evolutionary tree structures (r > 0.8) [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/biological_correlation_analysis.py#correlation]
+- SCBF and TinyCIMM models validate SEC for interpretable AI and mathematical reasoning [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/models/scbf/symbolic_entropy_engine.py#core]
 
 ## 5. Experimental Verification and Quantum Validation
 
 ### 5.1 Quantum Decoherence Reproduction
 
-![Quantum Decoherence vs Symbolic Entropy Collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
+**Figure 3: Quantum Decoherence vs Symbolic Entropy Collapse**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
 
 *Figure 3: Experimental validation of symbolic entropy collapse correspondence with quantum decoherence (July 16, 2025). The entropy trace shows remarkable correspondence with theoretical quantum decoherence curves, achieving correlation >0.95.*
 
@@ -257,11 +260,13 @@ Our most striking empirical result is the precise reproduction of quantum decohe
 
 ### 5.2 Born Rule Validation
 
-![Born Rule Entropy Correspondence (p=0.7)](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.7.png)
+**Figure: Born Rule Entropy Correspondence (p=0.7)**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.7.png)
 
 *Figure 4: Born rule statistical validation for p=0.7 parameter (July 15, 2025), showing entropy evolution over trials that matches quantum mechanical probability distributions.*
 
-![Born Rule Entropy Correspondence (p=0.8)](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.8.png)
+**Figure: Born Rule Entropy Correspondence (p=0.8)**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.8.png)
 
 *Figure 5: Born rule validation for p=0.8 parameter, demonstrating SEC's ability to reproduce quantum probability distributions across different parameter regimes.*
 
@@ -283,11 +288,13 @@ These computational correspondences suggest that SEC mechanisms might account fo
 
 ### 5.4 Thermodynamic Validation
 
-![Landauer Energy vs Entropy Correlation](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
+**Figure: Landauer Energy vs Entropy Correlation**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
 
 *Figure 6: Landauer principle validation (July 16, 2025) showing the fundamental relationship between information erasure energy and entropy change in our symbolic systems, confirming thermodynamic consistency.*
 
-![Entropy Injection Trace](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/entropy_injection_trace.png)
+**Figure: Entropy Injection Trace**
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/entropy_injection_trace.png)
 
 *Figure 7: Entropy injection trace during symbolic erasure operations, demonstrating the thermodynamic cost of information processing consistent with Landauer's principle.*
 
@@ -478,10 +485,10 @@ print(f"SEC-Biology correlation: {correlation_results.pearson_r:.3f}")
 ```
 
 **Results**:
-- SEC entropy measures correlate with biological diversity indices (r > 0.8) [TRACE: foundational/experiments/biological_correlation_analysis.py#diversity_correlation]
-- Predicted collapse events correspond to mass extinction boundaries [TRACE: foundational/biology_experiments/evolution-symbolic-collapse/extinction_analysis.py#mass_extinctions]
-- Branching patterns match SEC bifurcation dynamics [TRACE: foundational/biology_experiments/evolution-symbolic-collapse/branching_dynamics.py#bifurcation_analysis]
-- No significant deviation across multiple taxonomic datasets [TRACE: foundational/biology_experiments/multi_taxa_validation/results/statistical_summary.json]
+- SEC entropy measures correlate with biological diversity indices (r > 0.8) [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/biological_correlation_analysis.py#diversity_correlation]
+- Predicted collapse events correspond to mass extinction boundaries [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/biology_experiments/evolution-symbolic-collapse/extinction_analysis.py#mass_extinctions]
+- Branching patterns match SEC bifurcation dynamics [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/biology_experiments/evolution-symbolic-collapse/branching_dynamics.py#bifurcation_analysis]
+- No significant deviation across multiple taxonomic datasets [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/biology_experiments/multi_taxa_validation/results/statistical_summary.json]
 
 **Experimental Validation Data:**
 - **Sample Size**: 15+ phylogenetic trees spanning 500M+ years
@@ -668,7 +675,7 @@ This integration represents a novel approach to adaptive AI systems based on fun
 
 ## Discussion
 
-SEC provides a potential bridge between quantum and classical physics, suggesting that quantum phenomena may emerge from discrete symbolic processes. Attractors in SEC correspond to topological invariants, and recursive memory offers a new perspective on temporal structure. The framework's post-symbolic computation paradigm and integration with RED techniques point toward new approaches for AI, physics, and biology. However, scalability, theoretical completeness, and predictive precision remain open challenges. [TRACE: foundational/experiments/quantum_validation_suite.py#decoherence, models/scbf/hodge_projection.py#draft]
+SEC provides a potential bridge between quantum and classical physics, suggesting that quantum phenomena may emerge from discrete symbolic processes. Attractors in SEC correspond to topological invariants, and recursive memory offers a new perspective on temporal structure. The framework's post-symbolic computation paradigm and integration with RED techniques point toward new approaches for AI, physics, and biology. However, scalability, theoretical completeness, and predictive precision remain open challenges. [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/quantum_validation_suite.py#decoherence, models/scbf/hodge_projection.py#draft]
 
 ### Comparative Framework Analysis
 
