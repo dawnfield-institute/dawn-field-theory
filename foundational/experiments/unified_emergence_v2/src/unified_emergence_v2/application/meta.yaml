@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: application
+description: Application layer implementing the core business logic for emergence detection, pattern analysis, and framework orchestration. Contains the main UnifiedEmergenceFramework class and pattern correlation analysis with 90.5% ± 8.5% validation accuracy.
+semantic_scope:
+- application_services
+- business_logic
+- emergence_orchestration
+- pattern_correlation
+- framework_coordination
+- validation_pipeline
+- statistical_analysis
+files:
+- __init__.py
+- framework.py
+- pattern_analyzer.py
+child_directories: []

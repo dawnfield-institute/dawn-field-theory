@@ -1,0 +1,13 @@
+schema_version: '2.0'
+directory_name: 20250829_175920_sweep_session_20250829_175919
+description: Auto-generated metadata for 20250829_175920_sweep_session_20250829_175919
+  directory.
+semantic_scope:
+- 20250829_175920_sweep_session_20250829_175919
+files:
+- sweep_analysis.json
+- sweep_config.json
+- sweep_report.md
+- sweep_statistics.csv
+child_directories:
+- visualizations
