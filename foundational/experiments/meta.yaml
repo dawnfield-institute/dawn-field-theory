@@ -16,7 +16,6 @@ child_directories:
 - entropy_information_polarity_field
 - hodge_conjecture
 - information_amplification
-- information_amplification_proof
 - landauer_erasure_field_cost_map
 - language_to_logic
 - legacy
@@ -34,3 +33,4 @@ child_directories:
 - symbolic_fractal_pruning
 - symbolic_memory_agentic_decay_test
 - symbolic_superfluid_collapse_pi
+- unified_emergence_v2

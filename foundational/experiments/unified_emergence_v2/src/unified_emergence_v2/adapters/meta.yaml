@@ -1,6 +1,9 @@
 schema_version: '2.0'
 directory_name: adapters
-description: Domain adapters implementing the hexagonal architecture pattern, translating between external systems (gravity simulation, MED, Navier-Stokes, Hodge theory, TinyCIMM) and the core emergence detection framework. Each adapter extracts emergence signatures from domain-specific data.
+description: Domain adapters implementing the hexagonal architecture pattern, translating
+  between external systems (gravity simulation, MED, Navier-Stokes, Hodge theory,
+  TinyCIMM) and the core emergence detection framework. Each adapter extracts emergence
+  signatures from domain-specific data.
 semantic_scope:
 - domain_adapters
 - hexagonal_architecture
