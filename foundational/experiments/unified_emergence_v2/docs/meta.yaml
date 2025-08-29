@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: docs
-description: Comprehensive documentation for the Unified Emergence Framework v2 including architectural decisions, API design patterns, Clean Architecture implementation, and technical specifications for the production-ready emergence detection system.
+description: Comprehensive documentation for the Unified Emergence Framework v2 including
+  architectural decisions, API design patterns, Clean Architecture implementation,
+  and technical specifications for the production-ready emergence detection system.
 semantic_scope:
 - technical_documentation
 - architecture_documentation

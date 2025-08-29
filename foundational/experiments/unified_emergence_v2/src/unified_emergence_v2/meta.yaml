@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: unified_emergence_v2
-description: Core framework package implementing Clean Architecture for emergence pattern detection with domain adapters, application services, infrastructure components, and statistical analysis capabilities.
+description: Core framework package implementing Clean Architecture for emergence
+  pattern detection with domain adapters, application services, infrastructure components,
+  and statistical analysis capabilities.
 semantic_scope:
 - emergence_framework_core
 - clean_architecture_layers
