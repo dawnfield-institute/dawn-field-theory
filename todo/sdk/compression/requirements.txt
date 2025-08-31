@@ -1,0 +1,38 @@
+# Dependencies for CIP-SC Semantic Compression
+# Install with: pip install -r requirements.txt
+
+# Core numerical computing
+numpy>=1.21.0
+
+# Visualization and plotting
+matplotlib>=3.5.0
+
+# Protocol buffer support
+protobuf>=3.19.0
+
+# Cryptographic operations
+cryptography>=3.4.0
+
+# Data serialization
+msgpack>=1.0.0
+
+# Optional: Performance enhancements
+# numba>=0.56.0          # JIT compilation for speed
+# scipy>=1.7.0           # Advanced mathematical functions
+
+# Optional: Machine learning (for future Tier 2/3 compressors)
+# torch>=1.11.0          # PyTorch for LLM-based compression
+# transformers>=4.20.0   # Hugging Face transformers
+# sentencepiece>=0.1.96  # Text tokenization
+
+# Optional: Advanced compression comparisons
+# lzma                   # LZMA compression for benchmarks
+# brotli>=1.0.0          # Brotli compression for benchmarks
+
+# Development and testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Documentation
+sphinx>=4.5.0
+sphinx-rtd-theme>=1.0.0
