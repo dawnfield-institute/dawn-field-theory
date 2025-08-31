@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: domain
-description: Domain layer containing core business entities, value objects, and protocol definitions for emergence detection. Defines EmergenceResults, ValidationMetrics, CorrelationMatrix, and clean interface contracts with proper TYPE_CHECKING imports.
+description: Domain layer containing core business entities, value objects, and protocol
+  definitions for emergence detection. Defines EmergenceResults, ValidationMetrics,
+  CorrelationMatrix, and clean interface contracts with proper TYPE_CHECKING imports.
 semantic_scope:
 - domain_models
 - value_objects

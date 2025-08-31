@@ -1018,9 +1018,6 @@ dawn-field-theory/
             run_3_results.json
             statistical_analysis.json
             statistical_summary.txt
-      information_amplification_proof/
-        meta.yaml
-        unified_amplification_framework.py
       landauer_erasure_field_cost_map/
         [id][T][v1.0][C2][I3][E]_landauer_erasure_field_cost_map.py
         meta.yaml
@@ -1178,7 +1175,6 @@ dawn-field-theory/
         test_config.yaml
         unified_experimental_framework.py
         navier_symbolic_engine/
-          LICENSE
           README.md
           meta.yaml
           requirements.txt
@@ -1789,6 +1785,68 @@ dawn-field-theory/
             particles_near_center.png
             symbolic_entropy.png
             symbolic_transitions.json
+      unified_emergence_v2/
+        README.md
+        meta.yaml
+        requirements.txt
+        run_validation.py
+        docs/
+          meta.yaml
+          architecture/
+            api_design.md
+            data_flow.md
+            domain_adapters.md
+            meta.yaml
+            overview.md
+            testing_strategy.md
+        results/
+          meta.yaml
+          20250829_175920_sweep_session_20250829_175919/
+            meta.yaml
+            sweep_analysis.json
+            sweep_config.json
+            sweep_report.md
+            sweep_statistics.csv
+            visualizations/
+              domain_field_comparison.png
+              meta.yaml
+              metric_distributions.png
+              parameter_performance.png
+              statistical_summary.png
+        src/
+          meta.yaml
+          unified_emergence_v2/
+            __init__.py
+            meta.yaml
+            adapters/
+              __init__.py
+              gravity_adapter.py
+              hodge_adapter.py
+              med_adapter.py
+              meta.yaml
+              navier_adapter.py
+              tinycimm_adapter.py
+            application/
+              __init__.py
+              framework.py
+              meta.yaml
+              pattern_analyzer.py
+            domain/
+              __init__.py
+              meta.yaml
+              models.py
+              protocols.py
+            infrastructure/
+              __init__.py
+              meta.yaml
+              results_repository.py
+              results_repository_enhanced.py
+              statistical_analyzer.py
+              test_runner.py
+              test_runner_old.py
+              test_runner_standalone.py
+            results/
+              meta.yaml
     legacy_docs_archive/
       AI_Black_Hole_Information_Paper _1_.md
       AI_Hawking_Radiation_Info_Paper _1_.md
