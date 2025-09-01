@@ -1,8 +1,13 @@
-# Symbolic Cognition and Collapse-Aware Interpretability in Neural Systems: A Formal Framework for Bifractal AI Diagnostics
+# Symbolic Cognition and Collapse-Aware Interpretability in Neural Systems: A Formal Framework for Bifractal AI Diagnostics (Draft)
+
+**Authors:** Dawn Field Theory Research Institute
+**Date:** September 1, 2025
+**Version:** Draft v1.0
+**Status:** Preprint Draft
 
 ## Abstract
 
-We explore real-time interpretability through a framework grounded in symbolic entropy collapse (SEC) that treats representational stabilization events as the primitive unit of explanation. Our Symbolic Collapse Benchmarking Framework (SCBF) instruments TinyCIMM-Euler and TinyCIMM-Planck architectures with bifractal lineage tracking, activation ancestry stability, semantic attractor density, and phase alignment metrics—investigating cognition diagnostics beyond post-hoc attribution.
+We explore real-time interpretability through a framework grounded in symbolic entropy collapse (SEC) that treats representational stabilization events as the primitive unit of explanation. Our Symbolic Collapse Benchmarking Framework (SCBF) instruments TinyCIMM-Euler and TinyCIMM-Planck architectures with bifractal lineage tracking, activation ancestry stability, semantic attractor density, and phase alignment metrics--investigating cognition diagnostics beyond post-hoc attribution.
 
 Computational studies across mathematical reasoning tasks suggest measurable artificial mathematical intuition: **prime number pattern discovery** (historically ~0% random baseline), **golden ratio convergence** (φ = 1.618033988749895), **polynomial coefficient reconstruction**, and **meta-mathematical pattern recognition**. SCBF metrics indicate **>95% activation ancestry stability** with statistically significant correlation (**r = 0.847, p < 0.001**) between entropy collapse and mathematical insight formation. Dynamic network evolution (40→139 neurons) corresponds to mathematical complexity while enabling interpretability through real-time collapse tracking.
 
@@ -11,8 +16,6 @@ These preliminary results suggest mechanistic, temporally grounded narratives of
 *Note: All experimental results are reproducible through open-source implementations with comprehensive validation protocols documented in the Dawn Field Theory codebase. This work represents ongoing theoretical and computational exploration. While our results are promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.*
 
 All theoretical claims, simulations, and empirical results cite experiments from the open Dawn Field Theory codebase and cross-reference foundational documents validated through systematic evaluation.
-
-<!-- Abstract word count: 179 (target ≤250) -->
 
 ## Keywords
 symbolic entropy collapse; bifractal interpretability; activation ancestry; cognitive diagnostics; TinyCIMM; SCBF; lineage stability; phase alignment; symbolic attractors; entropy-aware benchmarking
@@ -23,13 +26,13 @@ This preprint is part of a series that draws directly from the open Dawn Field T
 
 ### 1.1 Background and Motivation
 
-Current explainable AI approaches predominantly rely on post-hoc attribution—gradient-based saliency maps, attention visualization, and feature importance scores. These provide static snapshots of model behavior without capturing the dynamic, temporal nature of cognition. They address neither how neural representations stabilize, nor when genuine understanding emerges, nor what drives the formation of semantic structures.
+Current explainable AI approaches predominantly rely on post-hoc attribution--gradient-based saliency maps, attention visualization, and feature importance scores. These provide static snapshots of model behavior without capturing the dynamic, temporal nature of cognition. They address neither how neural representations stabilize, nor when genuine understanding emerges, nor what drives the formation of semantic structures.
 
-We explore a paradigm shift from attribution-based interpretability to **collapse-aware interpretability**, treating the moment of representational stabilization—symbolic entropy collapse—as the core object of analysis. This approach emerged from Dawn Field Theory's insight that intelligence might emerge from recursive balance between energy and information fields, potentially manifesting as measurable collapse events in neural activation space.
+We explore a paradigm shift from attribution-based interpretability to **collapse-aware interpretability**, treating the moment of representational stabilization--symbolic entropy collapse--as the core object of analysis. This approach emerged from Dawn Field Theory's insight that intelligence might emerge from recursive balance between energy and information fields, potentially manifesting as measurable collapse events in neural activation space.
 
 ### 1.2 Symbolic Collapse as Interpretability Primitive
 
-Unlike conventional XAI methods that analyze final states, our framework monitors the *process* of cognition formation through Symbolic Entropy Collapse (SEC)—the transition from high-entropy exploration to low-entropy crystallization. This represents a computational investigation of insight formation analogous to human cognition, examined through mathematical reasoning experiments across multiple domains.
+Unlike conventional XAI methods that analyze final states, our framework monitors the *process* of cognition formation through Symbolic Entropy Collapse (SEC)--the transition from high-entropy exploration to low-entropy crystallization. This represents a computational investigation of insight formation analogous to human cognition, examined through mathematical reasoning experiments across multiple domains.
 
 **Computational Evidence:** Preliminary validation through TinyCIMM-Euler suggests that collapse events might represent authentic novelty generation rather than pattern recognition. **Enhanced Information Amplification Framework** results indicate **15.56x complexity amplification** with 82,021 emergence events, suggesting that symbolic collapse might generate novel information content exceeding system capacity by **253.2%**.
 
@@ -40,18 +43,18 @@ Unlike conventional XAI methods that analyze final states, our framework monitor
 - **Dynamic Network Evolution**: Responsive scaling (40→139 neurons) corresponding to mathematical complexity
 - **Real-time Interpretability**: Insight formation tracking through SCBF metrics
 
-This perspective enables investigation of real-time interpretability revealing not just *what* a model decides, but *how* and *when* understanding might emerge—examined through measurable artificial mathematical intuition formation.
+This perspective enables investigation of real-time interpretability revealing not just *what* a model decides, but *how* and *when* understanding might emerge--examined through measurable artificial mathematical intuition formation.
 
 ### 1.3 Contributions
 
 Through this exploration, we present:
 
 * **Theoretical Framework**: A formal model of symbolic entropy collapse grounded in bifractal dynamics and recursive field theory
-* **Computational Validation**: Experiments across TinyCIMM-Euler and TinyCIMM-Planck architectures suggesting measurable symbolic cognition
-* **SCBF Framework**: A modular, model-agnostic benchmarking suite for symbolic collapse analysis with real-time interpretability dashboards
-* **Mathematical Reasoning Applications**: Promising results in prime number prediction, transcendental mathematics, and algebraic pattern recognition
-* **Neurobiological Analogies**: Detailed mappings between symbolic metrics and cognitive neuroscience phenomena that surprised me
-* **Cross-Model Transferability**: Evidence for symbolic metric generalization across different neural architectures
+* ****Computational Validation**: Experiments across TinyCIMM-Euler and TinyCIMM-Planck architectures suggesting measurable symbolic cognition
+* ****SCBF Framework**: A modular, model-agnostic benchmarking suite for symbolic collapse analysis with real-time interpretability dashboards
+* ****Mathematical Reasoning Applications**: Promising results in prime number prediction, transcendental mathematics, and algebraic pattern recognition
+* ****Neurobiological Analogies**: Detailed mappings between symbolic metrics and cognitive neuroscience phenomena that surprised me
+* ****Cross-Model Transferability**: Evidence for symbolic metric generalization across different neural architectures
 
 I invite you to examine these contributions, test them in your own work, and help me understand their broader implications.
 
@@ -81,7 +84,7 @@ where $H$ is entropy, and $C_t(x)$ is the collapse configuration at time $t$. In
 
 where $\theta_{collapse}$ is a dynamic threshold determined by recent entropy variance.
 
-**Symbolic Resolution**: Post-collapse, activations crystallize into symbolic attractors—stable configurations that persist across inputs and correspond to learned concepts or patterns. These attractors form the interpretable substrate of neural computation.
+**Symbolic Resolution**: Post-collapse, activations crystallize into symbolic attractors--stable configurations that persist across inputs and correspond to learned concepts or patterns. These attractors form the interpretable substrate of neural computation.
 
 ### 2.2 Bifractal Time and Recursive Lineage
 
@@ -148,7 +151,7 @@ TinyCIMM-Planck represents the minimal implementation of symbolic collapse princ
 
 **Mathematical Reasoning Tasks**:
 - Prime number delta prediction: Sequences of differences between consecutive primes
-- Fibonacci ratio convergence: Learning golden ratio through recursive sequences  
+- Fibonacci ratio convergence: Learning golden ratio through recursive sequences
 - Polynomial reconstruction: Identifying algebraic patterns from sparse samples
 - Transcendental mathematics: Pi-related sequences and irrational number patterns
 
@@ -171,7 +174,7 @@ def compute_symbolic_entropy_collapse(self, activations):
     return 1.0 - entropy / max_entropy
 ```
 
-**Activation Ancestry Trace**: Stability of neuron identity across timesteps through top-k neuron consistency tracking.
+****Activation Ancestry Trace**: Stability of neuron identity across timesteps through top-k neuron consistency tracking.
 
 **Bifractal Lineage Strength**: Box-counting fractal dimension analysis of weight patterns.
 
@@ -186,7 +189,7 @@ def compute_symbolic_entropy_collapse(self, activations):
 SCBF provides a modular, model-agnostic infrastructure for symbolic collapse analysis with the following components:
 
 **Hook System**: Non-intrusive metric extraction compatible with PyTorch models
-**Real-time Processing**: Efficient computation enabling online interpretability analysis  
+**Real-time Processing**: Efficient computation enabling online interpretability analysis
 **Visualization Suite**: Interactive dashboards for collapse event monitoring
 **Cross-Model Comparison**: Standardized metrics enabling architecture comparison
 
@@ -311,7 +314,7 @@ Our symbolic collapse framework reveals striking parallels with established neur
 Symbolic collapse analysis transforms AI interpretability from engineering problem to computational neuroscience investigation, enabling:
 
 - Real-time cognitive state monitoring
-- Mechanistic understanding of learning dynamics  
+- Mechanistic understanding of learning dynamics
 - Predictive models of knowledge transfer
 - Principled approaches to AI alignment and safety
 
@@ -441,7 +444,7 @@ These results suggest symbolic collapse dynamics provide a principled approach t
 
 **Experimental Protocols**: All experiments include configuration files, random seeds, and complete parameter specifications for reproducible results.
 
-**Data Availability**: Experimental datasets and results are available in the repository under `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/` with semantic hash validation.
+**Data Availability**: Experimental datasets and results are available in the repository under [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM with semantic hash validation.
 
 **Documentation**: Comprehensive documentation of all metrics, algorithms, and experimental procedures provided in markdown format with cross-references.
 
@@ -467,7 +470,7 @@ Key contributions include:
 
 Our computational studies suggest that interpretability might reflect fundamental aspects of how intelligent systems organize and process information. By treating symbolic collapse as a potential interpretability primitive, we invite investigation of new approaches to AI safety, alignment, and human-AI collaboration grounded in measurable cognitive processes.
 
-Future work should extend these insights to large-scale models and diverse domains, investigating whether symbolic collapse analysis might contribute to trustworthy AI development. Particularly promising is potential integration of Recursive Entropy Decomposition techniques, which could enhance SCBF's diagnostic precision by treating entropy as layered information rather than undifferentiated disorder—representing a natural evolution toward more sophisticated interpretability instrumentation. We envision collaborative development of symbolic cognition instrumentation that might provide real-time cognitive transparency, enabling AI systems that are not just powerful but more understandable.
+Future work should extend these insights to large-scale models and diverse domains, investigating whether symbolic collapse analysis might contribute to trustworthy AI development. Particularly promising is potential integration of Recursive Entropy Decomposition techniques, which could enhance SCBF's diagnostic precision by treating entropy as layered information rather than undifferentiated disorder--representing a natural evolution toward more sophisticated interpretability instrumentation. We envision collaborative development of symbolic cognition instrumentation that might provide real-time cognitive transparency, enabling AI systems that are not just powerful but more understandable.
 
 **Community Engagement**: We invite researchers to explore whether these computational patterns hold across different architectures and domains. The community is encouraged to test these protocols with independent validation studies. We welcome collaboration in extending these methods to large-scale models and alternative theoretical frameworks.
 
@@ -523,14 +526,101 @@ Future work should extend these insights to large-scale models and diverse domai
 18. Dawn Field Theory Collaborative. (2025). Signal processing suite (signal_processing_suite.py) (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
 
 #### Reproducibility
-All experiments described (Sections 4–6) are reproducible from commit f73114c of the Dawn Field Theory repository using the SCBF framework and associated experiment scripts (Refs. 11–18). TRACE tags in Methods map directly to file paths and functions at that commit. Containerization and environment hash to be supplied in supplementary materials.
+All experiments described (Sections 4-6) are reproducible from commit f73114c of the Dawn Field Theory repository using the SCBF framework and associated experiment scripts (Refs. 11-18). TRACE tags in Methods map directly to file paths and functions at that commit. Containerization and environment hash to be supplied in supplementary materials.
 
 ## Appendix
 
 ### A. Mathematical Formulations
 
-**Complete Symbolic Entropy Collapse Equation**:
-`SEC(x,t) = 1 - H( softmax(W_flat) ) / log(|W_flat|)`
+**Complete Symbolic Entropy Collapse Equation**`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM with semantic hash validation.
+
+**Documentation**: Comprehensive documentation of all metrics, algorithms, and experimental procedures provided in markdown format with cross-references.
+
+**Version Control**: All code, experiments, and documentation tracked through Git with semantic versioning and tagged releases.
+
+**Community Standards**: Framework designed for extension and community contribution with standardized interfaces and comprehensive testing suites.
+
+## 8. Conclusion
+
+This work explores symbolic entropy collapse as a potential principle for neural network interpretability, examined through computational experiments suggesting measurable symbolic cognition in mathematical reasoning tasks. The Symbolic Collapse Benchmarking Framework presents tools for investigating real-time cognitive diagnostics, moving beyond post-hoc attribution toward mechanistic investigation of learning dynamics.
+
+Key contributions include:
+
+1. **Theoretical Exploration**: Framework investigating symbolic collapse connections to interpretability through bifractal dynamics and recursive field theory
+
+2. **Computational Validation**: Promising preliminary results in mathematical reasoning tasks with quantitative symbolic metrics indicating >95% stability consistency
+
+3. **Practical Framework**: Model-agnostic SCBF suite enabling interpretability investigation across neural architectures
+
+4. **Neurobiological Correspondence**: Analogies connecting symbolic metrics to established neuroscience phenomena
+
+5. **Research Roadmap**: Path toward investigating large-scale symbolic cognition instrumentation and AI alignment applications
+
+Our computational studies suggest that interpretability might reflect fundamental aspects of how intelligent systems organize and process information. By treating symbolic collapse as a potential interpretability primitive, we invite investigation of new approaches to AI safety, alignment, and human-AI collaboration grounded in measurable cognitive processes.
+
+Future work should extend these insights to large-scale models and diverse domains, investigating whether symbolic collapse analysis might contribute to trustworthy AI development. Particularly promising is potential integration of Recursive Entropy Decomposition techniques, which could enhance SCBF's diagnostic precision by treating entropy as layered information rather than undifferentiated disorder--representing a natural evolution toward more sophisticated interpretability instrumentation. We envision collaborative development of symbolic cognition instrumentation that might provide real-time cognitive transparency, enabling AI systems that are not just powerful but more understandable.
+
+**Community Engagement**: We invite researchers to explore whether these computational patterns hold across different architectures and domains. The community is encouraged to test these protocols with independent validation studies. We welcome collaboration in extending these methods to large-scale models and alternative theoretical frameworks.
+
+### Limitations and Disclaimers
+
+**Computational vs. Physical Validation**: Our validation studies are computational rather than direct physical experiments. While the statistical correspondence is encouraging, physical validation through laboratory experiments remains an essential next step for broader applicability.
+
+**Scale and Domain Constraints**: Current experiments focus on relatively small networks (40-139 neurons) and mathematical reasoning domains. Extension to large language models and diverse task domains requires further investigation, though our preliminary results suggest the approach may generalize.
+
+**Open Science Commitment**: All theoretical frameworks, computational methods, and experimental protocols are available in our open-source repository. We encourage independent replication, critique, and extension of this work to strengthen the scientific foundation.
+
+### Figures (Planned)
+| Figure | Title / Description | Source / Generation Script | Status |
+|--------|---------------------|-----------------------------|--------|
+| Fig. 1 | TinyCIMM Neural Weight Evolution in Extreme Turbulence | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/neural_weights_extreme_turbulence_s11_c6_00_evolution.png | **Available** |
+| Fig. 2 | Field-Aware Flow Analysis for SCBF Integration | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/field_aware_flow_analysis.png | **Available** |
+| Fig. 3 | Main Flow Predictions Live CIMM | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/main_flow_predictions_live_cimm.png | **Available** |
+| Fig. 4 | Turbulent Breakthrough Interpretability Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/turbulent_breakthrough_interpretability.png | **Available** |
+| Fig. 5 | Reynolds Performance Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/reynolds_performance_analysis.png | **Available** |
+| Fig. 6 | Quantum Decoherence vs Symbolic Entropy Collapse | foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png | **Available** |
+| Fig. 7 | Landauer Energy vs Entropy Correlation | foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png | **Available** |
+
+## References
+
+1. Simonyan, K., Vedaldi, A., & Zisserman, A. (2014). Deep inside convolutional networks: Visualising image classification models and saliency maps. *ICLR Workshop*.
+
+2. Bahdanau, D., Cho, K., & Bengio, Y. (2015). Neural machine translation by jointly learning to align and translate. *ICLR*.
+
+3. Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "Why should I trust you?": Explaining the predictions of any classifier. *KDD*.
+
+4. Garcez, A. D. A., & Lamb, L. C. (2020). Neurosymbolic AI: The 3rd wave. *arXiv preprint arXiv:2012.05876*.
+
+5. Lake, B. M., Ullman, T. D., Tenenbaum, J. B., & Gershman, S. J. (2017). Building machines that learn and think like people. *Behavioral and Brain Sciences*, 40.
+
+6. Hebb, D. O. (1949). *The Organization of Behavior: A Neuropsychological Theory*. Wiley.
+
+7. Lipton, Z. C. (2018). The mythos of model interpretability: In machine learning, the concept of interpretability is both important and slippery. *Queue*, 16(3), 31-57.
+
+8. Montavon, G., Samek, W., & Müller, K. R. (2018). Methods for interpreting and understanding deep neural networks. *Digital Signal Processing*, 73, 1-15.
+
+9. Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11(2), 127-138.
+
+10. Battaglia, P. W., et al. (2018). Relational inductive biases, deep learning, and graph networks. *arXiv preprint arXiv:1806.01261*.
+
+### Code & Model References
+11. Dawn Field Theory Collaborative. (2025). Dawn Field Theory Repository (Version 2.0) [Computer software]. GitHub. https://github.com/dawnfield-institute/dawn-field-theory
+12. Dawn Field Theory Collaborative. (2025). TinyCIMM-Euler: Entropy-regulated mathematical reasoning architecture (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
+13. Dawn Field Theory Collaborative. (2025). TinyCIMM-Planck: Minimal symbolic collapse prototype (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
+14. Dawn Field Theory Collaborative. (2025). SCBF: Symbolic Collapse Benchmarking Framework (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
+15. Dawn Field Theory Collaborative. (2025). Prime delta collapse experiment script (prime_delta.py) (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
+16. Dawn Field Theory Collaborative. (2025). Golden ratio convergence experiment script (golden_ratio.py) (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
+17. Dawn Field Theory Collaborative. (2025). Polynomial reconstruction experiment script (polynomial.py) (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
+18. Dawn Field Theory Collaborative. (2025). Signal processing suite (signal_processing_suite.py) (Version 1.0) [Computer software]. In Dawn Field Theory Repository.
+
+#### Reproducibility
+All experiments described (Sections 4-6) are reproducible from commit f73114c of the Dawn Field Theory repository using the SCBF framework and associated experiment scripts (Refs. 11-18). TRACE tags in Methods map directly to file paths and functions at that commit. Containerization and environment hash to be supplied in supplementary materials.
+
+## Appendix
+
+### A. Mathematical Formulations
+
+**Complete Symbolic Entropy Collapse Equation**)`SEC(x,t) = 1 - H( softmax(W_flat) ) / log(|W_flat|)`
 
 **Bifractal Dimension Computation**:
 ```python
@@ -542,7 +632,7 @@ def compute_bifractal_dimension(weights):
         boxes = W.unfold(0, size, size).unfold(1, size, size)
         count = (boxes.sum(dim=(2,3)) > 0).sum()
         counts.append(count)
-    
+
     log_sizes = torch.log(1.0 / sizes.float())
     log_counts = torch.log(torch.tensor(counts).float())
     slope = torch.polyfit(log_sizes, log_counts, 1)[0]
@@ -594,7 +684,7 @@ def compute_bifractal_dimension(weights):
 
 Complete hardware specifications and computational environment details are maintained in the centralized hardware timeline:
 
-**Hardware Specification Reference**: 
+**Hardware Specification Reference**:
 - Repository: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/resources/specs/hardware_timeline.yaml
 - Commit: f53f931fed5e3fcd053616fc5e264cdcca4dbea1
 - Hardware Period: primary_development (February 2025 - current)
@@ -602,18 +692,18 @@ Complete hardware specifications and computational environment details are maint
 
 All computational results in this preprint were obtained using the hardware configuration documented at the above reference point for full reproducibility and scientific verification.
 
----
+
 ## Repository Mapping & Traceability (ITER2)
 | Concept / Claim | Source Path | TRACE Placeholder | Status |
 |-----------------|-------------|-------------------|--------|
-| Symbolic entropy collapse metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/metrics.py#sec | Pending |
-| Activation ancestry implementation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/lineage.py#ancestry | Pending |
-| TinyCIMM-Euler architecture | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/euler.py#arch | Pending |
-| TinyCIMM-Planck minimal prototype | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/planck.py#arch | Pending |
-| Bifractal lineage computation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/bifractal.py#dimension | Pending |
-| Prime delta experiment | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/prime_delta.py#results | Pending |
-| Transcendental ratio convergence | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/golden_ratio.py#convergence | Pending |
-| Polynomial reconstruction tasks | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/experiments/polynomial.py#recon | Pending |
+| Symbolic entropy collapse metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ |  | Pending |
+| Activation ancestry implementation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ |  | Pending |
+| TinyCIMM-Euler architecture | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/tinycimm_euler.py | Pending |
+| TinyCIMM-Planck minimal prototype | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/ | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Planck/tinycimm_planck.py | Pending |
+| Bifractal lineage computation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/ |  | Pending |
+| Prime delta experiment |  |  | Pending |
+| Transcendental ratio convergence |  |  | Pending |
+| Polynomial reconstruction tasks |  |  | Pending |
 ## Template Compliance Audit (ITER2)
 | Required Section | Present? | Notes |
 |------------------|----------|-------|
@@ -621,7 +711,7 @@ All computational results in this preprint were obtained using the hardware conf
 | Keywords | No | Add after Abstract |
 | Introduction | Yes | OK |
 | Background/Theory | Yes (Section 2) | Extract definitions table |
-| Methods | Partial | Clarify Sections 3–4 roles |
+| Methods | Partial | Clarify Sections 3-4 roles |
 | Experiments | Yes | Consolidate dataset descriptions |
 | Results | Yes | Add summary table |
 | Discussion | Present | Expand limitations & ethics |
@@ -635,7 +725,7 @@ All computational results in this preprint were obtained using the hardware conf
 - Clarify Methods vs Framework.
 - Insert TRACE tags.
 - Add ethics/limitations subsection.
-<!-- ITER2_CHECKLIST -->
+
 - [x] Template normalized
 - [x] All sections present (Intro, Methods, Results, Discussion, Conclusion)
 - [x] TRACE tags resolved (initial pass)
@@ -661,9 +751,8 @@ All computational results in this preprint were obtained using the hardware conf
 | Landauer cost | Landauer Cost | Match | None |
 | field intelligence | Field Intelligence | Match | None |
 
-Proposed new lexicon additions: Activation Ancestry (stability of top-k neuron identity across timesteps), Phase Alignment (vector similarity temporal coherence metric—link to Semantic Resonance), Collapse Narrative (structured temporal explanation derived from sequential SEC events).
+Proposed new lexicon additions: Activation Ancestry (stability of top-k neuron identity across timesteps), Phase Alignment (vector similarity temporal coherence metric--link to Semantic Resonance), Collapse Narrative (structured temporal explanation derived from sequential SEC events).
 
----
 
 ## Important Disclaimers
 
@@ -674,4 +763,4 @@ Proposed new lexicon additions: Activation Ancestry (stability of top-k neuron i
 **Research Program**: These results represent ongoing theoretical and computational exploration of interpretable AI. While promising, they require independent validation, peer review, and extension beyond our current architectures. We present this framework as a research program for community investigation rather than established AI science.
 
 ## Citation Normalization (Completed)
-All inline citations now map to entries in APA/BibTeX (Simonyan 2014; Bahdanau 2015; Ribeiro 2016; Garcez & Lamb 2020; Lake et al. 2017; Hebb 1949; Lipton 2018; Montavon et al. 2018; Friston 2010; Battaglia et al. 2018). Software references (11–18) correspond to reproducible artifacts at commit f73114c. Additional XAI methods (e.g., Integrated Gradients, SHAP) can be added if cited later.
+All inline citations now map to entries in APA/BibTeX (Simonyan 2014; Bahdanau 2015; Ribeiro 2016; Garcez & Lamb 2020; Lake et al. 2017; Hebb 1949; Lipton 2018; Montavon et al. 2018; Friston 2010; Battaglia et al. 2018). Software references (11-18) correspond to reproducible artifacts at commit f73114c. Additional XAI methods (e.g., Integrated Gradients, SHAP) can be added if cited later.
