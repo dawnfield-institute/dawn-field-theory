@@ -72,10 +72,10 @@ sec_params = SECParameters(
     centroid_strength=0.0      # NO centroid pull - let system be chaotic
 )
 
-# Temporal progression parameters
-n_particles = 15000
-n_redshift_bins = 5  # Number of evolutionary stages
-steps_per_bin = 1000  # Evolution steps per redshift bin
+# Temporal progression parameters - Phase 2 Enhanced Resolution
+n_particles = 25000          # Increased for richer cosmic structure formation  
+n_redshift_bins = 5          # Number of evolutionary stages
+steps_per_bin = 1000         # Evolution steps per redshift bin
 total_steps = n_redshift_bins * steps_per_bin
 
 # Physics parameters
@@ -83,7 +83,7 @@ G = 4.498e-6  # Gravitational constant (kpc³/M☉/Gyr²)
 dt = 0.01
 damping = 0.999
 noise_strength = 0.0001
-spatial_bounds = 20.0
+spatial_bounds = 25.0  # Increased for larger particle count and more structure formation room
 
 # Universal Physical Constants for Emergent Gravity Anchoring
 c_light = 299792.458  # Speed of light (km/s)
@@ -94,6 +94,11 @@ R_U = 46.5e9         # Observable universe radius (light-years → need to conve
 t_U = 13.8           # Age of universe (Gyr)
 H0 = 67.4            # Hubble constant (km/s/Mpc)
 
+# Cosmological parameters for co-moving coordinates
+omega_m = 0.3        # Matter density parameter
+omega_lambda = 0.7   # Dark energy density parameter
+omega_k = 0.0        # Curvature density parameter (flat universe)
+
 # Convert R_U to kpc for consistency with simulation units
 R_U_kpc = R_U * 0.3066  # Convert ly to kpc: R_U ≈ 14.3 billion kpc
 
@@ -101,6 +106,61 @@ R_U_kpc = R_U * 0.3066  # Convert ly to kpc: R_U ≈ 14.3 billion kpc
 # H0 = 67.4 km/s/Mpc = 67.4 km/s/1000kpc = 0.0674 km/s/kpc
 # Convert km/s to kpc/Gyr: 1 km/s = 1.022e-6 kpc/Gyr
 H0_sim = H0 * 1.022e-6  # Hubble constant in simulation units (1/Gyr)
+
+# Co-moving coordinate functions
+def scale_factor(redshift):
+    """Compute scale factor a(t) from redshift: a = 1/(1+z)"""
+    return 1.0 / (1.0 + redshift)
+
+def hubble_parameter(redshift):
+    """Compute H(z) = H0 * sqrt(Ωm*(1+z)³ + ΩΛ) in simulation units"""
+    z_plus_1 = 1.0 + redshift
+    if isinstance(redshift, torch.Tensor):
+        return H0_sim * torch.sqrt(omega_m * z_plus_1**3 + omega_lambda)
+    else:
+        return H0_sim * (omega_m * z_plus_1**3 + omega_lambda)**0.5
+
+def conformal_time_derivative(redshift):
+    """Compute da/dt in conformal time for co-moving coordinates"""
+    return hubble_parameter(redshift) * scale_factor(redshift)
+
+# 🌌 PHASE 3: TIDAL FORCES - External cosmic web influence
+def compute_tidal_tensor(positions, redshift, device):
+    """
+    Compute tidal force tensor from external cosmic web structure.
+    Simulates gravitational influence from large-scale structure beyond simulation volume.
+    """
+    # Tidal strength scales with cosmic evolution and distance
+    a = scale_factor(redshift)
+    tidal_strength = 1e-8 * (1.0 + redshift)**0.5  # Stronger at higher redshift
+    
+    # Create anisotropic tidal field (filamentary cosmic web geometry)
+    # Major axis: x-direction (main filament)
+    # Minor axes: y,z-directions (compression perpendicular to filament)
+    tidal_tensor = torch.zeros((3, 3), device=device)
+    tidal_tensor[0, 0] = tidal_strength * 2.0   # Stretching along x (filament direction)
+    tidal_tensor[1, 1] = -tidal_strength        # Compression along y
+    tidal_tensor[2, 2] = -tidal_strength        # Compression along z
+    
+    return tidal_tensor
+
+def apply_tidal_forces(positions, velocities, redshift, dt, device):
+    """
+    Apply external tidal forces from cosmic web beyond simulation volume.
+    This simulates being embedded in a larger cosmic structure.
+    """
+    tidal_tensor = compute_tidal_tensor(positions, redshift, device)
+    
+    # Apply tidal acceleration: a_tidal = T · r (where T is tidal tensor)
+    tidal_forces = torch.zeros_like(positions)
+    for i in range(3):
+        for j in range(3):
+            tidal_forces[:, i] += tidal_tensor[i, j] * positions[:, j]
+    
+    # Scale tidal forces (they should be subtle but measurable)
+    tidal_forces *= 0.1  # Modest external influence
+    
+    return tidal_forces
 
 # Base Physically-Anchored Emergent Gravity Parameters (used as reference)
 # α: viscosity coefficient tied to light horizon
@@ -552,7 +612,7 @@ def run_temporal_gradient_simulation():
     print(f"Dynamic Emergent Gravity: QBE-controlled viscosity + Landauer scaffolding")
     if OSCILLATORY_HUM_ENABLED:
         print(f"Oscillatory Hum: SEC-coupled cosmic heartbeat modulation")
-    print(f"🌌 Phase 1: Hubble Expansion - Local patch embedded in expanding universe")
+    print(f"🌌 Phase 3: Tidal Forces - External cosmic web influence beyond simulation volume")
     print(f"QBE = Quantum Balance Equation for adaptive parameter control")
     print(f"Redshift bins: {n_redshift_bins}, Steps per bin: {steps_per_bin}")
     print(f"Total evolution: {total_steps} steps")
@@ -563,7 +623,7 @@ def run_temporal_gradient_simulation():
     
     try:
         position_bins, metadata = fetcher.fetch_temporal_gradient_data(
-            total_limit=5000, z_bins=n_redshift_bins
+            total_limit=15000, z_bins=n_redshift_bins  # 3x more galaxy data for richer cosmic structure
         )
         print(f"✓ Loaded {len(position_bins)} redshift bins")
         for i, bin_meta in enumerate(metadata['bin_metadata']):
@@ -587,10 +647,10 @@ def run_temporal_gradient_simulation():
           f"clustering={sec_params.clustering_strength:.4f}, "
           f"branching={sec_params.branching_bias:.4f}")
     print(f"QBE Dynamic Parameters: α_base={alpha_base:.6e}, β_base={beta_base:.6e}")
-    print(f"🌌 Hubble Expansion: H0={H0} km/s/Mpc → {H0_sim:.6e} 1/Gyr (simulation units)")
+    print(f"🌌 Co-moving Expansion: Ωₘ={omega_m}, Ωₗ={omega_lambda}, H(z) evolution")
     print(f"QBE Controller (Quantum Balance Equation): {qbe_controller.get_equilibrium_status()}")
-    print(f"Integration: SEC + emergent gravity + Hubble expansion + oscillatory hum")
-    print(f"Evolution: Primitive cosmic web → natural structure formation in expanding universe")
+    print(f"Integration: SEC + emergent gravity + cosmological expansion + tidal forces + oscillatory hum")
+    print(f"Evolution: Primitive cosmic web → natural structure formation in expanding universe with external tidal influence")
     
     # Simulation tracking
     step = 0
@@ -625,14 +685,33 @@ def run_temporal_gradient_simulation():
         # Apply SEC forces with oscillatory hum modulation
         forces = apply_sec_forces_cuda(positions, velocities, sec_params, n_particles, time_step=step)
         
-        # 🌌 PHASE 1: HUBBLE EXPANSION - Local patch embedded in expanding universe
-        # Add Hubble flow: v = H0 * r (expansion from center of mass)
+        # 🌌 PHASE 2: CO-MOVING COORDINATES - Proper cosmological expansion
+        # Get current cosmological redshift and calculate scale factor
+        current_redshift_range = metadata['bin_metadata'][current_bin]['redshift_range']
+        current_z = (current_redshift_range[0] + current_redshift_range[1]) / 2.0  # Midpoint redshift
+        
+        # Calculate cosmological parameters at current redshift
+        a = scale_factor(current_z)  # Scale factor a(z) = 1/(1+z)
+        H_z = hubble_parameter(current_z)  # H(z) with matter and dark energy evolution
+        H_z_sim = H_z * (1e-3 / 3.156e16) * 3.156e16  # Convert to simulation units
+        
+        # Apply proper cosmological expansion: v = H(z) * r
         center_of_mass = torch.mean(positions, dim=0)
         displacement_from_center = positions - center_of_mass
-        hubble_velocity = H0_sim * displacement_from_center
+        hubble_velocity = H_z_sim * displacement_from_center
         
-        # Apply Hubble expansion
+        # Scale expansion by scale factor evolution (proper co-moving physics)
+        # In co-moving coordinates, physical distances scale as a(t) = 1/(1+z)
+        scale_evolution_factor = a  # Current scale factor relative to z=0
+        hubble_velocity *= scale_evolution_factor
+        
+        # Apply cosmologically-correct Hubble expansion
         velocities += hubble_velocity * dt
+        
+        # 🌌 PHASE 3: TIDAL FORCES - External cosmic web influence
+        # Apply gravitational influence from large-scale structure beyond simulation volume
+        tidal_forces = apply_tidal_forces(positions, velocities, current_z, dt, device)
+        velocities += tidal_forces * dt
         
         # Update physics with SEC forces
         velocities += forces * dt
@@ -674,11 +753,21 @@ def run_temporal_gradient_simulation():
                 kinetic_energies.append(kinetic_energy.cpu())
                 similarities.append(overall_similarity.cpu())
                 
-                # Progress update
+                # Progress update with cosmological information
                 elapsed = time.time() - start_time
                 bin_progress = steps_in_current_bin / steps_per_bin * 100
                 
+                # Get current cosmological parameters for display
+                current_redshift_range = metadata['bin_metadata'][current_bin]['redshift_range']
+                current_z = (current_redshift_range[0] + current_redshift_range[1]) / 2.0
+                a = scale_factor(current_z)
+                H_z = hubble_parameter(current_z)
+                
+                # Calculate tidal strength for display
+                tidal_strength = 1e-8 * (1.0 + current_z)**0.5 * 0.1
+                
                 print(f"Step {step:4d} | Bin {current_bin+1}/{n_redshift_bins} ({bin_progress:5.1f}%) | "
+                      f"z={current_z:.2f} a={a:.3f} H={H_z:.3e} T={tidal_strength:.2e} | "
                       f"Fractal_D={fractal_dim:.3f} | Entropy={spatial_entropy:.3f} | "
                       f"Similarity={overall_similarity:.3f} | Time={elapsed:.1f}s")
                 
