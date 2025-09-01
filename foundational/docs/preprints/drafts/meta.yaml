@@ -21,4 +21,5 @@ files:
 - '[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md'
 - '[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md'
 child_directories:
+- pdfs
 - resources
