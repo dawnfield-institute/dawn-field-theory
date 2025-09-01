@@ -438,6 +438,16 @@ dawn-field-theory/
           [m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md
           [m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md
           meta.yaml
+          pdfs/
+            [ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.pdf
+            [ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.pdf
+            [cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.pdf
+            [id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.pdf
+            [id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.pdf
+            [id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.pdf
+            [m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.pdf
+            [m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.pdf
+            meta.yaml
           resources/
             CIM.docx
             CIM.md
@@ -2676,6 +2686,20 @@ dawn-field-theory/
     sdk_analysis_tools_roadmap.md
     symbolic_entropy_roadmap.md
     xai_scbf_roadmap.md
+  spikes/
+    darkmatter_SEC_WIP/
+      README.md
+      astro_data_fetcher.py
+      cosmic_web_simple.py
+      darkmatter.py
+      darkmatter_3d_analysis.png
+      darkmatter_3d_cuda.py
+      darkmatter_cosmic_web.py
+      darkmatter_temporal_gradient.py
+      galaxy_temporal_gradient.py
+      sec_auto_tuning_engine.py
+      sec_simulation_based_tuning.py
+      test_astro_fetcher.py
   todo/
     citation_model_draft.md
     meta.yaml
@@ -2690,7 +2714,23 @@ dawn-field-theory/
       meta.yaml
       ollama_self_hosted_runner.md
     sdk/
+      README.md
       meta.yaml
+      compression/
+        __init__.py
+        requirements.txt
+        core/
+          compression_engine.py
+        docs/
+          architecture.md
+          quickstart.md
+        examples/
+          geometric_compression_demo.py
+        protocol/
+          cipsc_protocol.py
+          specification.md
+        validation/
+          validation_suite.py
     theory/
       anomaly_analysis.md
       cosmov2.md
@@ -2716,6 +2756,8 @@ dawn-field-theory/
     converter.py
     generate_meta_yamls.py
     generate_path.py
+    link_checker.py
+    link_fixer.py
     meta.yaml
     process_citations.py
     update_meta_yamls.py
