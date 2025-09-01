@@ -2667,6 +2667,7 @@ dawn-field-theory/
         scbf_plots.py
   resources/
     meta.yaml
+    publications_registry.yaml
     recursive_structure.png
     specs/
       citation_template.md
