@@ -1,26 +1,9 @@
 # 🌌 Dawn Field Theory (WIP)
 
-> **Disclaimer:**  
-> This repository is an open, exploratory research project. All results, models, and theoretical frameworks are preliminary and provided for community investigation, critique, and extension.  
-> **No claims of finality or completeness are made.**  
-> Observations, hypotheses, and experiments are documented transparently, and theoretical gaps or open questions are intentional areas for future exploration.  
-> Users are encouraged to replicate, challenge, and build upon this work.  
-> See `MISSION.md` and `CONTRIBUTION.md` for engagement guidelines.
-
 > [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
 > *A field-based model of intelligence, collapse, and emergence.*
-
 ---
 
-> ⚠️ **Summer 2025 Update: Release 1.0 Polishing (through September 1, 2025)**
-> I’m entering a short publishing and consolidation phase to polish the repository and preprints for Release 1.0 on September 1, 2025.
-> While active development will slow temporarily, this project remains under direct stewardship.
-> Until release, I will audit experiments for statistical rigor and polish documentation.
-> All announcements and intent are published on Discord only; this repository will not include an ANNOUNCEMENTS.md or INTENTIONS.md going forward.
-> Please **do not publish experimental derivatives or replications** of this work—especially theoretical results or extensions—until official preprints are released and properly cited.
-> See `MISSION.md` and `CONTRIBUTION.md` for details.
-> Discord link has been fixed
----
 
 ## 🧠 Explore with DawnField GPT
 
@@ -333,6 +316,14 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 
 > **Cite this work:**  
 > Groom, P. (2025). Dawn Field Theory. Zenodo. [https://doi.org/10.5281/zenodo.15783623](https://doi.org/10.5281/zenodo.15783623)
+
+> **Disclaimer:**  
+> This repository is an open, exploratory research project. All results, models, and theoretical frameworks are preliminary and provided for community investigation, critique, and extension.  
+> **No claims of finality or completeness are made.**  
+> Observations, hypotheses, and experiments are documented transparently, and theoretical gaps or open questions are intentional areas for future exploration.  
+> Users are encouraged to replicate, challenge, and build upon this work.  
+> See `MISSION.md` and `CONTRIBUTION.md` for engagement guidelines.
+
 
 © 2025 The Dawn Field Institute  
 All rights reserved under AGPL-3.0 + Epistemic Constraint Framework

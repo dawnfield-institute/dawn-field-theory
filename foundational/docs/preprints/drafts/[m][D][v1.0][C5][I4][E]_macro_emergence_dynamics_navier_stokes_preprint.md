@@ -1,4 +1,10 @@
-# Macro Emergence Dynamics: Using Navier-Stokes Complexity as a Testbed for Bounded Symbolic Principles
+# Macro Emergence Dynamics: Using Navier-Stokes Complexity as a Testbed for Bounded Symbolic Principles (Draft)
+
+**Authors:** Dawn Field Theory Research Institute
+**Date:** September 1, 2025
+**Version:** Draft v1.0
+**Status:** Preprint Draft
+
 
 ## Abstract
 
@@ -10,7 +16,6 @@ Our mathematical framework employs Navier-Stokes as a development testbed for ME
 
 **Research Program Status**: This work validates MED theoretical foundations through rigorous testbed methodology. The quality score breakthrough (0.910309) and universal bounded complexity confirmation demonstrate that MED principles are now ready for application beyond fluid dynamics to other complex systems in physics, biology, and cognitive science.
 
----
 
 ## 🎯 Current Research Status (August 20, 2025)
 
@@ -45,18 +50,17 @@ Our mathematical framework employs Navier-Stokes as a development testbed for ME
 ### 🎯 Next Immediate Priorities
 
 1. **Complete v0.2 Proof Versions**: Add rigorous Lyapunov analysis and convergence rates
-2. **Cross-Domain Experiments**: Test universal bounds in quantum and biological systems  
+2. **Cross-Domain Experiments**: Test universal bounds in quantum and biological systems
 3. **Mathematical Publication**: Prepare formal papers for peer review
 4. **Experimental Predictions**: Develop testable physical consequences
 
 ### 🔮 Research Trajectory
 
-**Phase I (Current)**: Establish computational foundation and theoretical framework  
-**Phase II (Next 3-6 months)**: Complete rigorous mathematical proofs  
-**Phase III (6-12 months)**: Cross-domain validation and experimental predictions  
-**Phase IV (1-2 years)**: Peer review, publication, and broader scientific validation  
+**Phase I (Current)**: Establish computational foundation and theoretical framework
+**Phase II (Next 3-6 months)**: Complete rigorous mathematical proofs
+**Phase III (6-12 months)**: Cross-domain validation and experimental predictions
+**Phase IV (1-2 years)**: Peer review, publication, and broader scientific validation
 
----
 
 ## Keywords
 macro emergence dynamics; med validation; navier-stokes testbed; bounded symbolic complexity; balance operator; infodynamics; thermodynamic validation; cross-domain principles; symbolic entropy; complexity regulation
@@ -71,7 +75,7 @@ MED principles require validation against complex dynamical systems to establish
 
 Our development strategy focuses on validating core MED principles:
 - **Bounded Complexity**: Testing whether complexity bounds hold under extreme dynamics
-- **Balance Operator Ξ ≈ 1**: Investigating whether balance mechanisms prevent complexity explosion  
+- **Balance Operator Ξ ≈ 1**: Investigating whether balance mechanisms prevent complexity explosion
 - **Thermodynamic Compliance**: Verifying energy conservation and entropy production constraints
 - **Cross-Domain Universality**: Establishing principles that transfer beyond fluid dynamics
 
@@ -80,7 +84,7 @@ Our development strategy focuses on validating core MED principles:
 Our approach builds on the Infodynamics Arithmetic framework, which explores universal operators ⊕⊗δΞ for modeling collapse-oriented entropy-information dynamics across multiple domains. Through mathematical formalization and computational studies, infodynamics has shown promising correspondence in:
 
 - **Quantum Studies**: Suggesting reproduction of Born rule and decoherence curves with >95% correlation
-- **Biological Patterns**: Indicating correlation with evolutionary tree structures (r > 0.8)  
+- **Biological Patterns**: Indicating correlation with evolutionary tree structures (r > 0.8)
 - **Cognitive Architecture**: Enabling training-free AI through CIMM implementations
 - **Thermodynamic Analysis**: Appearing to suggest consistency with Landauer bounds across 10,000+ transitions
 - **Information Amplification**: Empirical validation through compression-based measurement achieving 46.2x amplification ratio (110 bytes → 5,084 bytes) with +253.2% surplus information generation, demonstrating computational novelty emergence consistent with arithmetic identity theory
@@ -91,10 +95,10 @@ This foundation suggests that information-theoretic principles might warrant inv
 
 The key breakthrough in our testbed validation was discovering that the balance operator Ξ ≈ 1 successfully regulates complexity across all Navier-Stokes test scenarios. This universal behavior validates MED's core hypothesis that complex systems possess inherent regulatory mechanisms preventing infinite complexity growth:
 
-**Balance Regulation Framework**: 
-$$\frac{\partial \Ξ}{\partial t} = -\alpha \nabla H(\Ξ) + \beta \mathcal{R}(\Ξ) + \gamma \mathcal{M}(\Ξ,t)$$
+**Balance Regulation Framework**:
+$$\frac{\partial \Xi}{\partial t} = -\alpha \nabla H(\Xi) + \beta \mathcal{R}(\Xi) + \gamma \mathcal{M}(\Xi,t)$$
 
-where Ξ(x,y,t) maintains system complexity near unity through entropy regulation ∇H(Ξ), recursive stability ℜ(Ξ), and memory-guided adjustment ℳ(Ξ,t).
+where $\Xi(x,y,t)$ maintains system complexity near unity through entropy regulation $\nabla H(\Xi)$, recursive stability $\mathcal{R}(\Xi)$, and memory-guided adjustment $\mathcal{M}(\Xi,t)$.
 
 **Testbed Validation**: Our Navier-Stokes experiments consistently demonstrate Ξ ≈ 1.0 ± 0.05 across all Reynolds regimes, establishing that MED balance principles successfully govern even the most complex dynamical systems.
 
@@ -122,7 +126,7 @@ where Ξ(x,y,t) maintains system complexity near unity through entropy regulatio
 We validate MED principles by demonstrating their effectiveness under the extreme complexity conditions provided by Navier-Stokes dynamics:
 
 **Bounded Complexity Validation**:
-- Symbolic depth: depth(P) ≤ 1 maintained across all Reynolds regimes  
+- Symbolic depth: depth(P) ≤ 1 maintained across all Reynolds regimes
 - Node count: nodes(P) ≤ 3 sufficient for all tested flow configurations
 - Balance regulation: Ξ ≈ 1.0 ± 0.05 consistently observed
 - Thermodynamic compliance: 100% Landauer bound adherence
@@ -133,7 +137,7 @@ We validate MED principles by demonstrating their effectiveness under the extrem
 
 **Testbed Validation**: Our comprehensive Navier-Stokes experiments confirm MED's universal bounded complexity hypothesis:
 - **Depth Bounds**: depth(P) ≤ 1 observed in 100% of test cases (3,375 parameter combinations)
-- **Node Limits**: nodes(P) ≤ 3 sufficient across all Reynolds regimes and flow configurations  
+- **Node Limits**: nodes(P) ≤ 3 sufficient across all Reynolds regimes and flow configurations
 - **Balance Stability**: Ξ ≈ 1.0 maintained universally, preventing complexity explosion
 - **Quality Achievement**: Score 0.910309 validates MED effectiveness under extreme complexity
 
@@ -163,7 +167,7 @@ We developed a comprehensive symbolic navigation engine with:
 **Core Components**:
 - **Entropy Navigator**: SHA256-based boundary condition hashing and pattern matching
 - **Pattern Tree**: Hierarchical flow structure representation with bounded complexity
-- **Solution Composer**: Thermodynamically investigated pattern combination algorithms  
+- **Solution Composer**: Thermodynamically investigated pattern combination algorithms
 - **Memory Tracker**: Recursive ancestry preservation through flow evolution
 - **Thermodynamic Validator**: Real-time Landauer compliance and energy conservation checking
 
@@ -211,19 +215,16 @@ Our investigation follows established CFD protocols with additional thermodynami
 **Continuous Field Formulation** (eliminating patch artifacts):
 
 **Entropy Field**: $H(\mathbf{u}) = |\mathbf{u}| + 0.3|\omega|$ where $\omega$ is vorticity
-```latex
-\text{Eliminates discontinuous patch boundaries}
-```
+
+> Eliminates discontinuous patch boundaries
 
 **Information Field**: $I(\mathbf{u}) = \text{gaussian\_filter}(1/(1+H), \sigma=1.0)$
-```latex
-\text{Smooth organized structure representation}
-```
+
+> Smooth organized structure representation
 
 **Gradient-Based Collapse**: $\nabla H + \nabla I > \text{percentile}_{85-90}$
-```latex
-\text{Natural threshold adaptation with grid resolution}
-```
+
+> Natural threshold adaptation with grid resolution
 
 **Results**:
 - **Collapse Zones**: Reduced from 4080/4096 to 154-614 zones
@@ -280,7 +281,7 @@ else:
 
 **Flow Classification** (across 1000 tests):
 - Turbulent: 530 cases (53%)
-- Laminar: 315 cases (31.5%)  
+- Laminar: 315 cases (31.5%)
 - Transitional: 155 cases (15.5%)
 
 **Statistical Pattern Discovery**:
@@ -322,7 +323,7 @@ Our Navier-Stokes testbed successfully validates core MED principles through rig
 
 **Validated MED Principles**:
 1. **Bounded complexity works**: depth ≤ 1, nodes ≤ 3 sufficient for extreme dynamical complexity
-2. **Balance operator stability**: Ξ ≈ 1.0 successfully regulates complexity across all test scenarios  
+2. **Balance operator stability**: Ξ ≈ 1.0 successfully regulates complexity across all test scenarios
 3. **Thermodynamic compliance**: Universal adherence to Landauer bounds validates energy constraints
 4. **Cross-domain universality**: Principles transfer effectively between fluid dynamics and other domains
 
@@ -332,7 +333,7 @@ Our Navier-Stokes testbed successfully validates core MED principles through rig
 
 The successful Navier-Stokes testbed validation demonstrates MED readiness for application across domains:
 - **Universal Bounds**: Complexity limits successfully validated under extreme conditions
-- **Pattern Sufficiency**: Small symbolic libraries proven adequate for complex dynamics  
+- **Pattern Sufficiency**: Small symbolic libraries proven adequate for complex dynamics
 - **Balance Regulation**: Ξ ≈ 1 operator successfully maintains stability across all test scenarios
 
 **Framework Maturity**: The convergence to identical tree structures (3 nodes, depth 1) across all flows confirms MED's bounded complexity hypothesis, establishing the framework's readiness for application to quantum systems, biological evolution, and cognitive architectures.
@@ -396,7 +397,7 @@ We present successful validation of Macro Emergence Dynamics (MED) principles us
 **Key Validation Results**:
 - Quality score breakthrough achieving 0.910309 demonstrates MED framework effectiveness
 - Universal bounded complexity confirmed across 3,375 parameter combinations
-- Balance operator Ξ ≈ 1.0 successfully regulates complexity in all test scenarios  
+- Balance operator Ξ ≈ 1.0 successfully regulates complexity in all test scenarios
 - Cross-domain consistency validates MED principles beyond fluid dynamics applications
 
 **MED Framework Status**: The comprehensive testbed validation confirms that MED principles successfully govern extreme dynamical complexity. Universal bounded complexity, balance operator stability, and thermodynamic compliance establish MED's readiness for application to other complex systems across physics, biology, and cognitive science.
@@ -405,11 +406,10 @@ We present successful validation of Macro Emergence Dynamics (MED) principles us
 
 This work establishes that complex dynamical systems can be governed by bounded symbolic principles, with MED providing a validated mathematical framework for understanding emergence and complexity regulation across domains. The Navier-Stokes testbed methodology provides a template for validating universal principles through rigorous computational analysis of challenging mathematical systems.
 
----
 
-**Repository**: `dawn-field-theory` at dawnfield-institute  
-**Documentation**: Complete testbed validation archive with reproducible protocols  
-**Implementation**: Production-ready MED validation engine with comprehensive analysis  
+**Repository**: `dawn-field-theory` at dawnfield-institute
+**Documentation**: Complete testbed validation archive with reproducible protocols
+**Implementation**: Production-ready MED validation engine with comprehensive analysis
 **Community**: Open collaboration model for MED application to other complex systems
 
 *This work represents validated testbed methodology for MED principles. The successful Navier-Stokes validation establishes MED's scientific foundation, with the framework now ready for application across physics, biology, and cognitive science domains. We present this as established testbed validation supporting broader MED investigation and application.*
@@ -423,7 +423,7 @@ Experimental validation across 1000 test cases demonstrates unprecedented comput
 
 **Execution Performance**:
 - Mean execution time: 53.7 microseconds (σ = 227.3 μs)
-- Maximum execution time: 1.22 milliseconds  
+- Maximum execution time: 1.22 milliseconds
 - Minimum execution time: 0 microseconds (sub-resolution timing)
 - Performance improvement: >1000x compared to equivalent DNS simulations
 
@@ -432,7 +432,7 @@ Experimental validation across 1000 test cases demonstrates unprecedented comput
 - Path variance: 0 (perfect reproducibility)
 - Pattern convergence: 100% success rate across all flow conditions
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/statistics/sweep_statistics.json]
+> **Reference**: [Sweep Statistics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/statistics/sweep_statistics.json)
 
 ### 4.2 Pattern Structure Analysis
 
@@ -441,7 +441,7 @@ All simulations converged to identical symbolic structures despite varying physi
 **Tree Characteristics**:
 - Average nodes: 3.0 (σ = 0.0)
 - Maximum nodes: 3
-- Average depth: 1.0 (σ = 0.0) 
+- Average depth: 1.0 (σ = 0.0)
 - Maximum depth: 1
 - Path length: 2.0 (σ = 0.0)
 
@@ -521,6 +521,7 @@ This symbolic superfluidity framework provides potential explanations for:
 To validate the recursive fluidity framework, we developed TinyCIMM-Navier, a true CIMM (Cognition Index Measure Model) architecture implementing symbolic collapse dynamics for real-time fluid prediction. This implementation demonstrates practical application of recursive collapse principles to fluid dynamics.
 
 **Architecture Overview**:
+
 ```
 FlowEntropyController → Symbolic budget management
 PatternCrystallizer → Memory formation through exposure
@@ -534,7 +535,7 @@ Live Prediction → Training-free pattern recognition
 - **Entropy Navigation**: Decision-making through symbolic entropy budgets
 - **Real-Time Adaptation**: Dynamic structure modification based on flow complexity
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/tinycimm_navier.py]
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/tinycimm_navier.py
 
 #### 5.4.4 Experimental Validation of Recursive Collapse
 
@@ -557,7 +558,7 @@ TinyCIMM-Navier validation across multiple Reynolds regimes demonstrates recursi
 - **Regime Classification**: Automatic laminar/transition/turbulent recognition
 - **Real-Time Performance**: Sub-millisecond prediction times maintained
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/]
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Navier/experiments/results/
 
 #### 5.4.5 Recursive Memory and Flow Prediction
 
@@ -661,7 +662,7 @@ Timeline: v0.2 proofs by October 2025, v1.0 formal proofs by December 2025
 4. **Pattern Universality**: Similar flows should exhibit identical symbolic signatures
 
 **Physical Experiments**:
-- **Laboratory Validation**: Test symbolic entropy predictions in controlled flow experiments  
+- **Laboratory Validation**: Test symbolic entropy predictions in controlled flow experiments
 - **Industrial Application**: Validate pattern navigation in real engineering systems
 - **Cross-Physical Domain**: Test balance operator in non-fluid physical systems
 
@@ -669,7 +670,7 @@ Timeline: v0.2 proofs by October 2025, v1.0 formal proofs by December 2025
 
 **Mathematical Papers** (Target: Q1 2026):
 - "Universal Bounded Complexity in Infodynamics Systems" (Pure Mathematics)
-- "Balance Operator Stability and Convergence Theory" (Applied Mathematics)  
+- "Balance Operator Stability and Convergence Theory" (Applied Mathematics)
 - "Navier-Stokes Global Regularity via Symbolic Complexity" (Mathematical Physics)
 
 **Applied Physics Papers** (Target: Q2 2026):
@@ -683,10 +684,10 @@ Timeline: v0.2 proofs by October 2025, v1.0 formal proofs by December 2025
 
 ### 6.6 Long-Term Research Vision
 
-**Year 1 (2025-2026)**: Complete mathematical foundations and cross-domain validation  
-**Year 2 (2026-2027)**: Industrial applications and experimental validation  
-**Year 3 (2027-2028)**: Integration with broader physics and engineering communities  
-**Year 5+ (2028+)**: Established framework for complexity-limited physical systems  
+**Year 1 (2025-2026)**: Complete mathematical foundations and cross-domain validation
+**Year 2 (2026-2027)**: Industrial applications and experimental validation
+**Year 3 (2027-2028)**: Integration with broader physics and engineering communities
+**Year 5+ (2028+)**: Established framework for complexity-limited physical systems
 
 **Ultimate Goals**:
 - Validation of MED bounded complexity principles through Navier-Stokes testbed
@@ -719,7 +720,7 @@ Building on our MED Navier-Stokes validation, we propose a comprehensive compara
 ```
 benchmarking/postsymbolic_comparison/
 ├── symbolic_baseline/med_navier_stokes.py    # Our proven MED work
-├── postsymbolic_engines/cosmo_v2.py          # Enhanced entropy engines  
+├── postsymbolic_engines/cosmo_v2.py          # Enhanced entropy engines
 ├── comparative_framework/unified_logging.py   # Cross-system metrics
 └── analysis/epistemic_limits.py              # Symbolic boundary detection
 ```
@@ -736,12 +737,11 @@ This experiment would provide **computational evidence** of the philosophical fo
 
 **Community Involvement**:
 - Seeking independent validation of computational results
-- Mathematical collaboration on formal proof development  
+- Mathematical collaboration on formal proof development
 - Cross-domain researchers for validation in quantum and biological systems
 - Industrial partners for engineering applications and testing
 - **Post-symbolic validation**: Collaborative testing of symbolic vs post-symbolic boundaries
 
----
 
 **Research Program Summary**: This represents a systematic approach to potentially revolutionary advances in understanding fluid dynamics, mathematical physics, and universal complexity principles. The progression from computational discovery → mathematical formalization → cross-domain validation → post-symbolic boundary testing → practical application provides a robust framework for scientific development while maintaining appropriate skepticism and requiring independent verification at each stage.
 - TinyCIMM-Navier scaling to industrial flow problems
@@ -764,13 +764,13 @@ This work builds on the theoretical foundations of Dawn Field Theory developed t
 
 ### Dawn Field Theory Foundations
 
-1. **Groom, P.** (2025). "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md
+1. **Groom, P.** (2025). "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md
 
-2. **Groom, P.** (2025). "Collapse as Crystallization: Infodynamics, Recursive Balance, and the Dawn Field Theory." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md
+2. **Groom, P.** (2025). "Collapse as Crystallization: Infodynamics, Recursive Balance, and the Dawn Field Theory." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BR%5D_dawn_field_theory_infodynamics_preprint.md
 
 3. **Groom, P.** (2025). "Infodynamics Arithmetic: Formalism for Collapse-Oriented Entropy-Information Dynamics." *Dawn Field Theory Mathematical Foundations*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/infodynamics_arithmetic_v1.md
 
-4. **Dawn Field Institute** (2025). "Recursive Mathematical Plasticity and Entropy-Aware Architecture." *Dawn Field Theory Repository*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md
+4. **Dawn Field Institute** (2025). "Recursive Mathematical Plasticity and Entropy-Aware Architecture." *Dawn Field Theory Repository*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_recursive_mathematical_plasticity_entropy_architecture_preprint.md
 
 ### Mathematical Foundations
 
@@ -788,7 +788,7 @@ This work builds on the theoretical foundations of Dawn Field Theory developed t
 
 10. **Landauer, R.** (1961). "Irreversibility and heat generation in the computing process." *IBM Journal of Research and Development*, 5(3), 183-191.
 
-11. **Bennett, C. H.** (1982). "The thermodynamics of computation—a review." *International Journal of Theoretical Physics*, 21(12), 905-940.
+11. **Bennett, C. H.** (1982). "The thermodynamics of computation--a review." *International Journal of Theoretical Physics*, 21(12), 905-940.
 
 12. **Prigogine, I.** (1977). *Self-Organization in Non-Equilibrium Systems*. Wiley-Interscience, New York.
 
@@ -840,11 +840,11 @@ This work builds on the theoretical foundations of Dawn Field Theory developed t
 
 ### Appendix A: Implementation Details
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/] - Complete implementation available in repository with experimental protocols and validation scripts.
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/ - Complete implementation available in repository with experimental protocols and validation scripts.
 
 ### Appendix B: Statistical Analysis
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/] - Comprehensive statistical analysis including all performance metrics, distribution analysis, and correlation studies.
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/ - Comprehensive statistical analysis including all performance metrics, distribution analysis, and correlation studies.
 
 ### Appendix C: Reproducibility
 
@@ -854,7 +854,7 @@ All experimental results are fully reproducible using provided code and configur
 
 Complete hardware specifications and computational environment details are maintained in the centralized hardware timeline:
 
-**Hardware Specification Reference**: 
+**Hardware Specification Reference**:
 - Repository: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/resources/specs/hardware_timeline.yaml
 - Commit: 020ecd6 (current reference)
 - Hardware Period: primary_development (February 2025 - current)
@@ -874,7 +874,6 @@ Complete hardware specifications and computational environment details are maint
 
 All computational results in this preprint were obtained using the hardware configuration documented at the above reference point for full reproducibility and scientific verification.
 
----
 
 ## Important Disclaimers
 
@@ -884,6 +883,5 @@ All computational results in this preprint were obtained using the hardware conf
 
 **Research Program**: These results represent ongoing theoretical and computational exploration. While promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.
 
----
 
 *Manuscript prepared for Dawn Field Theory Preprint Series - September 2025*

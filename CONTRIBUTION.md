@@ -125,23 +125,11 @@ This automated system ensures proper academic attribution while maintaining clea
 
 ---
 
-## Current Status
-
-**External contributions are welcome starting with Release 1.0 (Sept 2025).**
-
-During the Release 1.0 polishing period, the project is stabilizing preprints and documentation. Registered contributors can participate in review and feedback.
-
-> Announcements and project intent are communicated on Discord only. This repository will not maintain a separate announcements or intentions document.
-
----
-
 ## ⚖️ Publishing & Attribution Boundaries
 
 Dawn Field Theory is under active development with formal preprints in preparation.  
 Out of respect for the research trajectory and epistemic structure:
-
-- Before preprint release, please avoid publishing derivative experiments, replications, or theoretical extensions marketed as canonical Dawn Field results.
-- After Release 1.0, derivatives and extensions are welcome with clear attribution and links to the corresponding artifacts and evidence map.
+W
 - Symbolic theories, model architectures, and experimental results are stewarded by the author and Institute; cite primary sources and repository paths.
 - When in doubt, open an issue or contact the author before publishing derivative work.
 
