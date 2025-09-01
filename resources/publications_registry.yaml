@@ -1,0 +1,126 @@
+title: "Dawn Field Theory Publications Registry"
+version: "1.0.0"
+last_updated: "2025-09-01"
+schema_version: "2.0"
+
+description: |
+  Central registry for all Dawn Field Theory publications, preprints, and drafts.
+  Maps external publication URLs to internal repository files and implementation code.
+
+researchgate_preprints:
+  - id: "symbolic_entropy_collapse"
+    title: "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence"
+    external_url: "https://www.researchgate.net/publication/395136462_Symbolic_Entropy_Collapse_Exploring_Topological_Dynamics_Recursive_Harmonics_and_Quantum_Correspondence_Draft"
+    status: "draft"
+    publication_id: "395136462"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.pdf"
+    repository_mapping:
+      - "foundational/experiments/symbolic_entropy_collapse/"
+      - "foundational/arithmetic/SEC/"
+      - "devkit/compression/"
+    tags: ["entropy", "collapse", "quantum", "topological", "dynamics"]
+    
+  - id: "cognition_index_protocol"
+    title: "Cognition Index Protocol (CIP): Demonstrable Machine Comprehension Through Structured Repository Intelligence"
+    external_url: "https://www.researchgate.net/publication/395136460_Cognition_Index_Protocol_CIP_Demonstrable_Machine_Comprehension_Through_Structured_Repository_Intelligence_Draft"
+    status: "draft"
+    publication_id: "395136460"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.pdf"
+    repository_mapping:
+      - "cognition_index_protocol/"
+      - "devkit/infrastructure/"
+      - "meta.yaml (all directories)"
+    tags: ["cip", "machine-comprehension", "repository-intelligence", "protocol"]
+    
+  - id: "symbolic_cognition_interpretability"
+    title: "Symbolic Cognition and Collapse-Aware Interpretability in Neural Systems: A Formal Framework for Bifractal AI Diagnostics"
+    external_url: "https://www.researchgate.net/publication/395136353_Symbolic_Cognition_and_Collapse-Aware_Interpretability_in_Neural_Systems_A_Formal_Framework_for_Bifractal_AI_Diagnostics_Draft"
+    status: "draft"
+    publication_id: "395136353"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.pdf"
+    repository_mapping:
+      - "models/scbf/"
+      - "models/TinyCIMM/"
+      - "devkit/hash_evaluation/"
+    tags: ["ai", "interpretability", "neural-systems", "bifractal", "diagnostics"]
+    
+  - id: "resonant_symbolic_convergence"
+    title: "Resonant Symbolic Convergence: A Framework for Human-Agent Co-Computational Ecology"
+    external_url: "https://www.researchgate.net/publication/395136055_Resonant_Symbolic_Convergence_A_Framework_for_Human-Agent_Co-Computational_Ecology_Draft"
+    status: "draft"
+    publication_id: "395136055"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.pdf"
+    repository_mapping:
+      - "models/TinyCIMM/"
+      - "cognition_index_protocol/"
+      - "foundational/experiments/recursive_gravity/"
+    tags: ["ai", "human-agent", "convergence", "co-computational", "ecology"]
+    
+  - id: "dawn_field_theory_unified"
+    title: "From Cosmic Information Mining to Dawn Field Theory: A Unified Framework for Symbolic Entropy Collapse, Recursive Intelligence, and Field Dynamics"
+    external_url: "https://www.researchgate.net/publication/395135998_From_Cosmic_Information_Mining_to_Dawn_Field_Theory_A_Unified_Framework_for_Symbolic_En-_tropy_Collapse_Recursive_Intelligence_and_Field_Dynamics_Draft"
+    status: "draft"
+    publication_id: "395135998"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.pdf"
+    repository_mapping:
+      - "foundational/docs/"
+      - "foundational/arithmetic/"
+      - "infodynamics.md"
+      - "dawn-field-theory.md"
+    tags: ["cosmic-information", "field-theory", "synthesis", "unified-framework"]
+
+pending_drafts:
+  - title: "Dawn Field Theory: Infodynamics and Recursive Mathematical Architecture"
+    local_file: "foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md"
+    status: "completing"
+    target_completion: "2025-09-02"
+    
+  - title: "Macro Emergence Dynamics: Navier-Stokes Extensions"
+    local_file: "foundational/docs/preprints/drafts/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md"
+    status: "completing"
+    target_completion: "2025-09-02"
+    
+  - title: "Recursive Mathematical Plasticity: Entropy Architecture"
+    local_file: "foundational/docs/preprints/drafts/[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md"
+    status: "completing"
+    target_completion: "2025-09-02"
+
+citation_formats:
+  bibtex: |
+    @preprint{groom2025_{id},
+      author = {Groom, Peter},
+      title = {{title}},
+      url = {{external_url}},
+      year = {2025},
+      note = {Draft preprint},
+      repository = {https://github.com/dawnfield-institute/dawn-field-theory}
+    }
+  
+  apa: |
+    Groom, P. (2025). {title}. ResearchGate. {external_url}
+  
+  ieee: |
+    P. Groom, "{title}," ResearchGate, 2025. [Online]. Available: {external_url}
+
+repository_metadata:
+  total_preprints: 5
+  total_drafts: 8
+  completion_rate: "62.5%"
+  next_submission_target: "Q4 2025"
+  peer_review_status: "preparation_phase"
+
+semantic_scope:
+  - publications-registry
+  - research-traceability
+  - academic-workflow
+  - preprint-management
