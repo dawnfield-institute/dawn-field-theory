@@ -18,7 +18,6 @@ Based on darkmatter_temporal_gradient.py but adapted for cosmic web scales
 """
 
 import torch
-import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 import time
@@ -47,7 +46,9 @@ steps_per_bin = 1000         # Evolution steps per redshift bin
 total_steps = n_redshift_bins * steps_per_bin
 
 # 🔑 COSMIC WEB PHYSICS - The key changes for large-scale structure
-G = 4.498e-8  # MUCH WEAKER gravitational constant (cosmic web scale, not galaxy scale)
+# Cosmic web scale: Needs substantial gravity to form structure (not too weak!)
+# Galaxy formation uses G=4.498e-6, cosmic web needs ~3x weaker (not 10x or 100x)
+G = 1.5e-6  # Gravitational constant for cosmic web scale (3x weaker than galaxy)
 dt = 0.01
 damping = 0.999
 noise_strength = 0.0001
@@ -132,15 +133,15 @@ T_CMB = 2.725  # CMB temperature (K)
 # Much higher viscosity (α) for cosmic web scale physics
 # Lower force coupling (β) for weaker gravitational clustering
 
-# α: MUCH HIGHER viscosity coefficient for cosmic web scale
-alpha_base = 1.0 / (c_light * t_U * 1e3)  # 1000x higher viscosity for cosmic web
+# α: Moderately higher viscosity coefficient for cosmic web scale
+alpha_base = 1.0 / (c_light * t_U * 10)  # 10x higher viscosity for cosmic web
 
-# β: MUCH LOWER force coefficient for weaker clustering  
-beta_base = k_B * T_CMB / (m_p * c_light**2 * R_U**2) * 1e-3  # 1000x weaker for web structure
+# β: Moderately lower force coefficient for weaker clustering  
+beta_base = k_B * T_CMB / (m_p * c_light**2 * R_U**2) * 0.1  # 10x weaker for web structure
 
 print(f"🌌 Cosmic Web Emergent Gravity Parameters:")
-print(f"α_base = {alpha_base:.6e} (cosmic web viscosity - 1000x higher)")
-print(f"β_base = {beta_base:.6e} (weak clustering - 1000x lower)")
+print(f"α_base = {alpha_base:.6e} (cosmic web viscosity - 10x higher)")
+print(f"β_base = {beta_base:.6e} (weak clustering - 10x lower)")
 print(f"QBE Controller: Optimized for large-scale filamentary structure")
 print(f"Physical basis: High viscosity + weak clustering = cosmic web")
 
@@ -191,32 +192,32 @@ def apply_sec_forces_cuda(positions, velocities, sec_params, n_particles, time_s
     return forces
 
 def compute_fractal_dimension_cuda(positions):
-    """Simplified fractal dimension computation for cosmic web structure"""
+    """Simplified fractal dimension computation for cosmic web structure using pure PyTorch"""
     n_particles = positions.shape[0]
     if n_particles < 10:
-        return torch.tensor(1.5)
+        return torch.tensor(1.5, device=positions.device)
     
     # Use correlation dimension approximation
     # Sample subset for performance
     sample_size = min(n_particles, 2000)
-    sample_indices = torch.randperm(n_particles)[:sample_size]
+    sample_indices = torch.randperm(n_particles, device=positions.device)[:sample_size]
     sample_positions = positions[sample_indices]
     
     distances = torch.cdist(sample_positions, sample_positions)
     distances = distances[distances > 0]  # Remove self-distances
     
     if len(distances) == 0:
-        return torch.tensor(1.5)
+        return torch.tensor(1.5, device=positions.device)
     
     median_dist = torch.median(distances)
     count_close = torch.sum(distances < median_dist * 0.5).float()
     
     if count_close > 0:
-        # Rough approximation of fractal dimension
-        fractal_dim = torch.log(count_close) / torch.log(2.0)
+        # Rough approximation of fractal dimension (pure PyTorch)
+        fractal_dim = torch.log(count_close) / torch.log(torch.tensor(2.0, device=positions.device))
         return torch.clamp(fractal_dim, 1.0, 3.0)
     else:
-        return torch.tensor(1.5)
+        return torch.tensor(1.5, device=positions.device)
 
 def compute_clustering_metrics_cuda(positions):
     """Simplified clustering metrics for cosmic web structure"""
@@ -258,62 +259,77 @@ HUM_SEC_COUPLING = 0.005  # REDUCED SEC coupling
 
 # Add these functions after the tidal force functions and before the main function
 
-def generate_sha_entropy_seed(hash_input, shape):
+def generate_torch_entropy_seed(hash_input, shape, device='cuda'):
     """
     Generate deterministic pseudo-random field using SHA-256 entropy seeding.
+    Pure PyTorch implementation - no NumPy, stays on GPU for performance.
     Creates evenly distributed initial conditions based on cryptographic hash.
-    From legacy cosmo.py - proven method for uniform cosmic structure seeding.
     """
+    # Generate SHA-256 hash
     digest = hashlib.sha256(hash_input.encode()).digest()
-    seed = int.from_bytes(digest[:4], 'big')
-    np.random.seed(seed)
-    return np.random.rand(*shape)
+    
+    # Convert hash bytes to multiple seeds for better distribution
+    seeds = []
+    for i in range(0, len(digest), 4):
+        seed = int.from_bytes(digest[i:i+4], 'big')
+        seeds.append(seed)
+    
+    # Generate deterministic random numbers using PyTorch
+    total_elements = 1
+    for dim in shape:
+        total_elements *= dim
+    
+    # Use multiple seeds to create better entropy
+    values = []
+    for i, seed in enumerate(seeds):
+        generator = torch.Generator(device=device)
+        generator.manual_seed(seed)
+        chunk_size = total_elements // len(seeds) + (1 if i < total_elements % len(seeds) else 0)
+        chunk = torch.rand(chunk_size, generator=generator, device=device)
+        values.append(chunk)
+    
+    # Concatenate and reshape to desired shape
+    all_values = torch.cat(values)[:total_elements]
+    return all_values.reshape(shape)
 
 def generate_cosmic_web_initial_conditions(n_particles, spatial_bounds=50.0, device='cuda'):
     """
-    Generate initial conditions optimized for cosmic web formation using SHA entropy seeding.
-    Lower density, evenly distributed using cryptographic entropy for realistic cosmic structure.
+    Generate initial conditions using pure PyTorch SHA entropy seeding.
+    No NumPy - stays on GPU for maximum performance.
     """
     print(f"🌌 Generating SHA-seeded cosmic web initial conditions...")
-    print(f"   Approach: Cryptographic entropy for even distribution")
-    print(f"   Purpose: Realistic cosmic web filament formation (not galaxy clustering)")
+    print(f"   Method: Pure PyTorch cryptographic entropy (GPU-only)")
+    print(f"   Purpose: Realistic cosmic web filament formation")
     
-    # Use SHA-256 entropy seeding for evenly distributed cosmic structure
-    # Different hash inputs create different but deterministic patterns
+    # Use SHA-256 entropy seeding with pure PyTorch (no NumPy!)
     hash_positions = "CIMM:cosmic_web:positions:dark_matter"
     hash_velocities = "CIMM:cosmic_web:velocities:initial"
     
-    # Generate positions using SHA entropy (evenly distributed)
-    pos_entropy = generate_sha_entropy_seed(hash_positions, (n_particles, 3))
-    
-    # Convert to simulation coordinates (centered around origin)
-    positions = torch.tensor(pos_entropy, device=device, dtype=torch.float32)
+    # Generate positions using PyTorch entropy (GPU-only, evenly distributed)
+    positions = generate_torch_entropy_seed(hash_positions, (n_particles, 3), device)
     positions = (positions - 0.5) * 2.0 * spatial_bounds  # Scale to [-bounds, +bounds]
     
-    # Generate velocities using separate SHA entropy
-    vel_entropy = generate_sha_entropy_seed(hash_velocities, (n_particles, 3))
-    velocities = torch.tensor(vel_entropy, device=device, dtype=torch.float32)
-    velocities = (velocities - 0.5) * 0.002  # Very small initial velocities for cosmic web
+    # Generate velocities using separate PyTorch entropy
+    velocities = generate_torch_entropy_seed(hash_velocities, (n_particles, 3), device)
+    velocities = (velocities - 0.5) * 0.002  # Very small initial velocities
     
-    # Add subtle anisotropic perturbations to seed filamentary structure
-    # This mimics quantum fluctuations in the early universe
+    # Add anisotropic perturbations using PyTorch entropy
     hash_perturbations = "CIMM:cosmic_web:quantum_fluctuations"
-    perturb_entropy = generate_sha_entropy_seed(hash_perturbations, (n_particles, 3))
-    perturbations = torch.tensor(perturb_entropy, device=device, dtype=torch.float32)
+    perturbations = generate_torch_entropy_seed(hash_perturbations, (n_particles, 3), device)
     
     # Apply anisotropic perturbations (stronger along x-axis for filament seeding)
     perturbations[:, 0] *= 0.1  # Weak perturbations along main axis
     perturbations[:, 1] *= 0.05  # Stronger compression along y
     perturbations[:, 2] *= 0.05  # Stronger compression along z
     
-    # Add perturbations to positions
+    # Add perturbations to positions (all GPU operations)
     positions += perturbations
     
     print(f"✓ Generated SHA-seeded cosmic web with {n_particles} particles")
-    print(f"   Method: SHA-256 cryptographic entropy for even distribution")
+    print(f"   Method: Pure PyTorch SHA-256 entropy (no NumPy, GPU-only)")
     print(f"   Position range: [{positions.min():.2f}, {positions.max():.2f}]")
     print(f"   Velocity RMS: {torch.sqrt(torch.mean(velocities**2)):.6f}")
-    print(f"   Distribution: Evenly spread with anisotropic quantum fluctuation seeds")
+    print(f"   Performance: All operations on GPU, no CPU/GPU transfers")
     
     return positions, velocities
 
@@ -448,8 +464,9 @@ def main():
             # Cosmic web oscillations (slower than galaxy scale)
             sec_field_avg = torch.mean(torch.norm(forces, dim=1))
             dynamic_freq = HUM_BASE_FREQ * (1.0 + HUM_SEC_COUPLING * sec_field_avg.item())
-            hum_modulation = 1.0 + HUM_AMPLITUDE * torch.cos(dynamic_freq * step)
-            forces *= hum_modulation.unsqueeze(1)
+            hum_modulation = 1.0 + HUM_AMPLITUDE * torch.cos(torch.tensor(dynamic_freq * step, device=device))
+            # Apply scalar modulation to all force components
+            forces *= hum_modulation
         
         # 🌌 COSMIC WEB COSMOLOGICAL PHYSICS
         # Get current cosmological redshift and calculate scale factor
