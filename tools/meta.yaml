@@ -12,6 +12,8 @@ files:
 - converter.py
 - generate_meta_yamls.py
 - generate_path.py
+- link_checker.py
+- link_fixer.py
 - process_citations.py
 - update_meta_yamls.py
 - validate_citations.py

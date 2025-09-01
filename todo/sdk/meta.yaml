@@ -1,12 +1,12 @@
 schema_version: '2.0'
 directory_name: sdk
-description: Complete CIP-SC semantic compression implementation achieving 1,000:1+ ratios;
-  includes protocol specification, proven geometric compressor, validation framework,
-  and comprehensive documentation.
+description: Complete CIP-SC semantic compression implementation achieving 1,000:1+
+  ratios; includes protocol specification, proven geometric compressor, validation
+  framework, and comprehensive documentation.
 semantic_scope:
 - CIP-SC protocol
 - semantic compression
-- information amplification  
+- information amplification
 - geometric compression
 - compression engine
 - protocol implementation
