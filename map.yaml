@@ -1990,9 +1990,15 @@ dawn-field-theory/
     GAIA/
       README.md
       meta.yaml
+      phase3_agi_validation_report.md
+      test_phase1.py
+      test_phase2.py
+      test_phase3.py
       docs/
+        GAIA_v2_upgrade_summary.md
         meta.yaml
         testing_plan.md
+        testing_strategy_v2.md
         architecture/
           meta.yaml
           overview.md
@@ -2025,6 +2031,16 @@ dawn-field-theory/
           epistemic_field_theory.md
           meta.yaml
           recursive_balance_field.md
+      src/
+        __init__.py
+        core/
+          __init__.py
+          adaptive_controller.py
+          collapse_core.py
+          data_structures.py
+          field_engine.py
+          gaia.py
+          test.py
     TinyCIMM/
       README.md
       TinyCIMM_naming.md

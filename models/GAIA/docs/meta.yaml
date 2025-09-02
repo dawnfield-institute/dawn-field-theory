@@ -8,7 +8,9 @@ semantic_scope:
 - documentation
 - GAIA
 files:
+- GAIA_v2_upgrade_summary.md
 - testing_plan.md
+- testing_strategy_v2.md
 child_directories:
 - architecture
 - experiments
