@@ -7,12 +7,12 @@ description: |
   Central registry for all Dawn Field Theory publications, preprints, and drafts.
   Maps external publication URLs to internal repository files and implementation code.
 
-researchgate_preprints:
+published_preprints:
   - id: "symbolic_entropy_collapse"
     title: "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence"
-    external_url: "https://www.researchgate.net/publication/395136462_Symbolic_Entropy_Collapse_Exploring_Topological_Dynamics_Recursive_Harmonics_and_Quantum_Correspondence_Draft"
+    external_url: "https://zenodo.org/records/17024434"
     status: "draft"
-    publication_id: "395136462"
+    publication_id: "17024434"
     local_files:
       markdown: "foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
       pdf: "foundational/docs/preprints/drafts/pdfs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.pdf"
@@ -24,9 +24,9 @@ researchgate_preprints:
     
   - id: "cognition_index_protocol"
     title: "Cognition Index Protocol (CIP): Demonstrable Machine Comprehension Through Structured Repository Intelligence"
-    external_url: "https://www.researchgate.net/publication/395136460_Cognition_Index_Protocol_CIP_Demonstrable_Machine_Comprehension_Through_Structured_Repository_Intelligence_Draft"
+    external_url: "https://zenodo.org/records/17024220"
     status: "draft"
-    publication_id: "395136460"
+    publication_id: "17024220"
     local_files:
       markdown: "foundational/docs/preprints/drafts/[cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.md"
       pdf: "foundational/docs/preprints/drafts/pdfs/[cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.pdf"
@@ -38,9 +38,9 @@ researchgate_preprints:
     
   - id: "symbolic_cognition_interpretability"
     title: "Symbolic Cognition and Collapse-Aware Interpretability in Neural Systems: A Formal Framework for Bifractal AI Diagnostics"
-    external_url: "https://www.researchgate.net/publication/395136353_Symbolic_Cognition_and_Collapse-Aware_Interpretability_in_Neural_Systems_A_Formal_Framework_for_Bifractal_AI_Diagnostics_Draft"
+    external_url: "https://zenodo.org/records/17024098"
     status: "draft"
-    publication_id: "395136353"
+    publication_id: "17024098"
     local_files:
       markdown: "foundational/docs/preprints/drafts/[ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.md"
       pdf: "foundational/docs/preprints/drafts/pdfs/[ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.pdf"
@@ -52,9 +52,9 @@ researchgate_preprints:
     
   - id: "resonant_symbolic_convergence"
     title: "Resonant Symbolic Convergence: A Framework for Human-Agent Co-Computational Ecology"
-    external_url: "https://www.researchgate.net/publication/395136055_Resonant_Symbolic_Convergence_A_Framework_for_Human-Agent_Co-Computational_Ecology_Draft"
+    external_url: "https://zenodo.org/records/17023921"
     status: "draft"
-    publication_id: "395136055"
+    publication_id: "17023921"
     local_files:
       markdown: "foundational/docs/preprints/drafts/[ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.md"
       pdf: "foundational/docs/preprints/drafts/pdfs/[ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.pdf"
@@ -66,9 +66,9 @@ researchgate_preprints:
     
   - id: "dawn_field_theory_unified"
     title: "From Cosmic Information Mining to Dawn Field Theory: A Unified Framework for Symbolic Entropy Collapse, Recursive Intelligence, and Field Dynamics"
-    external_url: "https://www.researchgate.net/publication/395135998_From_Cosmic_Information_Mining_to_Dawn_Field_Theory_A_Unified_Framework_for_Symbolic_En-_tropy_Collapse_Recursive_Intelligence_and_Field_Dynamics_Draft"
+    external_url: "https://zenodo.org/records/17024367"
     status: "draft"
-    publication_id: "395135998"
+    publication_id: "17024367"
     local_files:
       markdown: "foundational/docs/preprints/drafts/[id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.md"
       pdf: "foundational/docs/preprints/drafts/pdfs/[id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.pdf"
@@ -80,20 +80,32 @@ researchgate_preprints:
     tags: ["cosmic-information", "field-theory", "synthesis", "unified-framework"]
 
 pending_drafts:
-  - title: "Dawn Field Theory: Infodynamics and Recursive Mathematical Architecture"
-    local_file: "foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md"
-    status: "completing"
-    target_completion: "2025-09-02"
+  - id: "dawn_field_theory_infodynamics"
+    title: "Dawn Field Theory: Infodynamics and Recursive Mathematical Architecture"
+    external_url: "https://zenodo.org/records/17041188"
+    status: "draft"
+    publication_id: "17041188"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.pdf"
     
-  - title: "Macro Emergence Dynamics: Navier-Stokes Extensions"
-    local_file: "foundational/docs/preprints/drafts/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md"
-    status: "completing"
-    target_completion: "2025-09-02"
+  - id: "macro_emergence_dynamics"
+    title: "Macro Emergence Dynamics: Navier-Stokes Extensions"
+    external_url: "https://zenodo.org/records/17041215"
+    status: "draft"
+    publication_id: "17041215"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.pdf"
     
-  - title: "Recursive Mathematical Plasticity: Entropy Architecture"
-    local_file: "foundational/docs/preprints/drafts/[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md"
-    status: "completing"
-    target_completion: "2025-09-02"
+  - id: "recursive_mathematical_plasticity"
+    title: "Recursive Mathematical Plasticity: Entropy Architecture"
+    external_url: "https://zenodo.org/records/17041249"
+    status: "draft"
+    publication_id: "17041249"
+    local_files:
+      markdown: "foundational/docs/preprints/drafts/[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md"
+      pdf: "foundational/docs/preprints/drafts/pdfs/[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.pdf"
 
 citation_formats:
   bibtex: |
@@ -107,20 +119,22 @@ citation_formats:
     }
   
   apa: |
-    Groom, P. (2025). {title}. ResearchGate. {external_url}
+    Groom, P. (2025). {title}. Zenodo. {external_url}
   
   ieee: |
-    P. Groom, "{title}," ResearchGate, 2025. [Online]. Available: {external_url}
+    P. Groom, "{title}," Zenodo, 2025. [Online]. Available: {external_url}
 
 repository_metadata:
-  total_preprints: 5
+  total_published: 0
+  total_preprints: 8
   total_drafts: 8
-  completion_rate: "62.5%"
-  next_submission_target: "Q4 2025"
-  peer_review_status: "preparation_phase"
+  completion_rate: "100%"
+  publication_platform: "Zenodo"
+  peer_review_status: "draft_preprints"
 
 semantic_scope:
   - publications-registry
   - research-traceability
   - academic-workflow
-  - preprint-management
+  - zenodo-publications
+  - publication-management
