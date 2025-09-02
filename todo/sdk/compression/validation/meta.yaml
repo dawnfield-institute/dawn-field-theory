@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: validation
-description: Validation suite for compression algorithms, entropy optimization verification, data integrity testing, and performance benchmarking of symbolic compression implementations.
+description: Validation suite for compression algorithms, entropy optimization verification,
+  data integrity testing, and performance benchmarking of symbolic compression implementations.
 semantic_scope:
 - compression-validation
 - algorithm-testing

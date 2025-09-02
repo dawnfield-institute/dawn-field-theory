@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: examples
-description: Example implementations and demonstrations of geometric compression algorithms, entropy-based data reduction techniques, and practical applications of the symbolic compression SDK.
+description: Example implementations and demonstrations of geometric compression algorithms,
+  entropy-based data reduction techniques, and practical applications of the symbolic
+  compression SDK.
 semantic_scope:
 - compression-examples
 - geometric-compression-demos
