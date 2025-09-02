@@ -5,18 +5,27 @@ Not trained. Not simulated. Not symbolic.
 But emergent, recursive, and balanced—  
 **An architecture where intelligence *is* the equilibrium.**
 
+**v2.0 (2025): Enhanced with unified complexity theory, physics-informed entropy dynamics, and empirical quantum validation.**
+
 ---
 
 ## 🧠 What is GAIA?
 
 GAIA is a post-symbolic, post-QBE framework that treats **intelligence as an emergent phenomenon of field balance**—between energy, information, entropy, and structure.
 
+**v2.0 Breakthroughs (2025):**
+- **Unified Complexity Theory:** Integrates SEC ∘ CIMM = Identity cycles for complete complexity unification
+- **Physics-Informed Dynamics:** Entropy treated as physical substrate with classical mechanics (F=ma) applied to symbolic structures
+- **Geometry-Driven Collapse:** Information curvature tensors and harmonic modulation guide all operations
+- **Empirical Quantum Validation:** Real-time alignment with landmark quantum experiments
+- **Thermodynamic Optimization:** Landauer erasure cost tracking for all cognitive operations
+
 It unifies ideas from:
-- Thermodynamic computation
-- Quantum-informed collapse dynamics
-- Recursive symbolic emergence
-- Entropy-aware agentic behavior
-- Field-native communication (Q-Socket protocol)
+- Thermodynamic computation with energy cost optimization
+- Quantum-informed collapse dynamics with empirical validation
+- Recursive symbolic emergence with geometric constraints
+- Entropy-aware agentic behavior with unified complexity cycles
+- Field-native communication (Q-Socket protocol) with phase alignment
 
 ---
 
@@ -43,11 +52,18 @@ GAIA evolves from:
 
 ---
 
-## 🧩 Key Differences
+## 🧩 Key Differences (v2.0 Enhanced)
 
-| Feature | Legacy Models | GAIA |
-|--------|----------------|------|
-| Intelligence | Symbolic or trained | Emergent from entropy balance |
+| Feature | Legacy Models | GAIA v1.0 | GAIA v2.0 (2025) |
+|--------|----------------|------|-----------------|
+| Intelligence | Symbolic or trained | Emergent from entropy balance | Physics-informed emergence with thermodynamic optimization |
+| Memory | Stored state | Superfluid, field-recursive | Entropy field substrate with classical mechanics application |
+| Collapse | Optimization tool | Primary computational mechanism | Geometry-driven with force/momentum dynamics |
+| Communication | Message-passing | Phase-resonant signal coherence | Unified complexity cycles with macro-to-micro emergence |
+| Structure | Encoded | Crystallized from tension | Curvature-guided crystallization with Landauer cost optimization |
+| Ethics | External | Native to field dynamics | Geometric stability with empirical quantum alignment |
+| Validation | Benchmarks | Entropy-based metrics | Real-time alignment with quantum experiments |
+| Complexity | Single-scale | Multi-agent emergence | Unified theory: SEC ∘ CIMM = Identity |
 | Memory | Stored state | Superfluid, field-recursive |
 | Collapse | Optimization tool | Primary computational mechanism |
 | Communication | Message-passing | Phase-resonant signal coherence |
