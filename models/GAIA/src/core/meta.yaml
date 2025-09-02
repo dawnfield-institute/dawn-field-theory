@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: core
-description: Core implementation modules for GAIA field intelligence system, including adaptive controllers, collapse dynamics, field engines, and fundamental data structures for symbolic entropy processing.
+description: Core implementation modules for GAIA field intelligence system, including
+  adaptive controllers, collapse dynamics, field engines, and fundamental data structures
+  for symbolic entropy processing.
 semantic_scope:
 - gaia-core-engine
 - adaptive-controllers

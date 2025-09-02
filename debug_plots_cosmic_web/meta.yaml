@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: debug_plots_cosmic_web
-description: Specialized debug visualizations for cosmic web analysis, dark matter modeling, and large-scale structure dynamics within the Dawn Field Theory framework.
+description: Specialized debug visualizations for cosmic web analysis, dark matter
+  modeling, and large-scale structure dynamics within the Dawn Field Theory framework.
 semantic_scope:
 - cosmic-web-visualization
 - dark-matter-analysis

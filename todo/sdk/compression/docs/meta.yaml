@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: docs
-description: Documentation for the symbolic entropy compression SDK, including architectural specifications, implementation guides, and quickstart tutorials for developers.
+description: Documentation for the symbolic entropy compression SDK, including architectural
+  specifications, implementation guides, and quickstart tutorials for developers.
 semantic_scope:
 - compression-documentation
 - sdk-documentation
