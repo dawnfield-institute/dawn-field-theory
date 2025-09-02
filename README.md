@@ -1,4 +1,4 @@
-# 🌌 Dawn Field Theory (WIP)
+# 🌌 Dawn Field Theory 1.0
 
 > [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
 > *A field-based model of intelligence, collapse, and emergence.*

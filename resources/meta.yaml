@@ -16,6 +16,7 @@ semantic_scope:
 - utilities
 - hardware-specifications
 files:
+- publications_registry.yaml
 - recursive_structure.png
 child_directories:
 - specs
