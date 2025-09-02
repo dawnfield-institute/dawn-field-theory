@@ -1,0 +1,15 @@
+schema_version: '2.0'
+directory_name: core
+description: Core compression engine implementing symbolic entropy algorithms, geometric data reduction, and information-theoretic compression methods for optimal data encoding and storage.
+semantic_scope:
+- compression-engine
+- symbolic-entropy-algorithms
+- geometric-compression
+- information-theory
+- data-reduction
+- compression-core
+- algorithmic-implementation
+- entropy-encoding
+files:
+- compression_engine.py
+child_directories: []

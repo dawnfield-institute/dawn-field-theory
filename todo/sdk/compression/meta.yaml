@@ -1,0 +1,25 @@
+schema_version: '2.0'
+directory_name: compression
+description: Symbolic entropy compression SDK implementing information-theoretic compression algorithms, geometric data reduction, and entropy-optimized encoding protocols for Dawn Field Theory applications.
+semantic_scope:
+- symbolic-entropy-compression
+- information-compression
+- geometric-data-reduction
+- entropy-optimization
+- compression-algorithms
+- data-encoding
+- sdk-development
+- compression-protocols
+- information-theory
+files:
+- __init__.py
+- requirements.txt
+child_directories:
+- adapters
+- core
+- docs
+- examples
+- protocol
+- validation
+- protocol
+- validation

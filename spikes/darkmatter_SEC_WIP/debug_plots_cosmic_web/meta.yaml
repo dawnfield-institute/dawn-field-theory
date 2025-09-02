@@ -1,0 +1,13 @@
+schema_version: '2.0'
+directory_name: debug_plots_cosmic_web
+description: Specialized debug visualizations for cosmic web structure analysis, large-scale dark matter distribution patterns, and cosmic field dynamics within the SEC research framework.
+semantic_scope:
+- cosmic-web-debugging
+- large-scale-structure-visualization
+- dark-matter-distribution-analysis
+- cosmic-field-debugging
+- structure-formation-diagnostics
+- sec-cosmic-analysis
+- visualization-tools
+files: []
+child_directories: []
