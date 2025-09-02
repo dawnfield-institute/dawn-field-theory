@@ -312,6 +312,28 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 
 ---
 
+## 📚 Draft Preprints
+
+Core Dawn Field Theory research is available as draft preprints on Zenodo:
+
+### Foundational Theory
+- **[Symbolic Entropy Collapse](https://zenodo.org/records/17024434)** - Topological dynamics, recursive harmonics, and quantum correspondence
+- **[Dawn Field Theory Synthesis](https://zenodo.org/records/17024367)** - Unified framework for symbolic entropy collapse, recursive intelligence, and field dynamics
+- **[Dawn Field Theory: Infodynamics](https://zenodo.org/records/17041188)** - Infodynamics and recursive mathematical architecture
+
+### Cognitive Architecture & AI
+- **[Cognition Index Protocol (CIP)](https://zenodo.org/records/17024220)** - Demonstrable machine comprehension through structured repository intelligence
+- **[Symbolic Cognition & Interpretability](https://zenodo.org/records/17024098)** - Formal framework for bifractal AI diagnostics
+- **[Resonant Symbolic Convergence](https://zenodo.org/records/17023921)** - Framework for human-agent co-computational ecology
+
+### Mathematical & Engineering Frameworks
+- **[Recursive Mathematical Plasticity](https://zenodo.org/records/17041249)** - Entropy architecture for adaptive intelligence systems
+- **[Macro Emergence Dynamics](https://zenodo.org/records/17041215)** - Navier-Stokes extensions for field dynamics
+
+> See [`resources/publications_registry.yaml`](./resources/publications_registry.yaml) for complete publication metadata and repository mappings.
+
+---
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15783623.svg)](https://zenodo.org/records/15783623)
 
 > **Cite this work:**  
