@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: src
+description: Source code directory for GAIA (Generalized Architectures for Intelligent Actualization) - next-generation field intelligence system implementing symbolic memory, meta-cognitive protocols, and resonant agentic cognition.
+semantic_scope:
+- gaia-source-code
+- field-intelligence
+- symbolic-memory
+- meta-cognitive-protocols
+- resonant-cognition
+- adaptive-architectures
+- next-generation-ai
+- source-implementation
+files:
+- __init__.py
+child_directories:
+- core
