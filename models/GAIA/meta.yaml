@@ -9,5 +9,10 @@ semantic_scope:
 - protocol
 files:
 - README.md
+- phase3_agi_validation_report.md
+- test_phase1.py
+- test_phase2.py
+- test_phase3.py
 child_directories:
 - docs
+- src
