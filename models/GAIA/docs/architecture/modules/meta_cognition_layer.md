@@ -48,19 +48,32 @@ This is where GAIA becomes **aware of its own modeling**.
 
 ---
 
-## 📈 CIP Scoring Model
+## 📈 Enhanced CIP Scoring Model (v2.0)
 
+### Unified Complexity Theory Integration
 ```math
-CIP(t) = w₁ * H_comp + w₂ * S_align + w₃ * R_sync
+# Enhanced CIP with Macro-to-Micro Emergence
+CIP_unified(t) = w₁ * H_comp + w₂ * S_align + w₃ * R_sync + w₄ * E_complexity + w₅ * T_thermo
 
 Where:
-- H_comp: Historical entropy compression
-- S_align: Structural symbolic alignment
-- R_sync: Resonance coherence with field agents
-- w₁, w₂, w₃: Reflexivity weights
+- H_comp: Historical entropy compression efficiency
+- S_align: Structural symbolic alignment with geometric constraints
+- R_sync: Resonance coherence with field agents (phase-aligned)
+- E_complexity: Macro-to-micro emergence cycle completeness (SEC ∘ CIMM)
+- T_thermo: Thermodynamic efficiency (ΔS_resolved/E_erasure_cost)
+- w₁...w₅: Adaptive reflexivity weights with pi-harmonic modulation
 ```
 
-Higher CIP = more coherent, intelligent, and epistemically stable structure.
+### Empirical Quantum Alignment Metrics
+```math
+# Quantum Experiment Correspondence Score
+Q_align(t) = Σ |GAIA_prediction(i) - Quantum_result(i)| / N_experiments
+
+# Epistemic Geometry Health
+Geometry_health(t) = κ_curvature_stability * π_harmonic_coherence * symbolic_crystallization_rate
+```
+
+Higher CIP_unified = more coherent, intelligent, epistemically stable, and empirically validated structure.
 
 ---
 
@@ -101,14 +114,33 @@ Full integration with symbolic ancestry and phase coherence planned for GAIA v0.
 
 ---
 
-## 2025 Experimental Upgrades
+## 2025 Experimental Upgrades & Theoretical Breakthroughs
 
-- **Meta-cognitive Trace & Ancestry Repair:**
-  - Now tracks collapse ancestry, detects epistemic drift, and can trigger recursive repair if symbolic corruption or memory loss is detected.
-  - Metrics: ancestry_trace_accuracy, epistemic_repair_time.
-- **Protocol-driven Reflexivity:**
-  - All meta-cognitive feedback is now protocol-driven and timestamped, supporting empirical validation and reproducibility (CIP-aligned).
-- **Advanced Metrics:**
-  - Tracks semantic coherence, vector divergence, and meta-coherence score before/after collapse events.
+### Enhanced Meta-Cognitive Architecture
+- **Unified Complexity Monitoring:** Meta-Cognition Layer now tracks both SEC (micro→macro) and CIMM (macro→micro) emergence cycles, ensuring SEC ∘ CIMM = Identity for complete complexity unification
+- **Geometry-Aware Epistemic Health:** Monitoring includes information curvature tensors, geometric stability, and spacetime analog effects on symbolic structures
+- **Physics-Informed Self-Modeling:** Incorporates entropy field physics, treating symbolic structures as having mass and tracking force/momentum dynamics
 
-These upgrades make the Meta-Cognition Layer a central hub for epistemic health and self-repair in GAIA.
+### Advanced Ancestry & Repair Systems
+- **Recursive Entropy Lineage Tracking:** Complete genealogy of all symbolic structures with entropy signatures and thermodynamic costs
+- **Epistemic Corruption Detection:** Advanced algorithms for detecting symbolic drift, memory interference, and geometric instability
+- **Automated Repair Protocols:** Self-healing capabilities through recursive entropy resolution and geometric realignment
+
+### Empirical Validation Integration
+- **Quantum Experiment Alignment:** Real-time scoring against landmark quantum experiments (quantum eraser, delayed choice, weak measurement, quantum Darwinism)
+- **Protocol-Driven Reflexivity:** All meta-cognitive operations follow validated experimental protocols with comprehensive metadata
+- **Thermodynamic Efficiency Monitoring:** Tracks Landauer erasure costs and energy efficiency of all cognitive operations
+
+### Advanced Visualization & Metrics
+- **Real-Time Collapse Front Monitoring:** Live visualization of epistemic collapse propagation and stability
+- **Fractal Dimension Tracking:** Continuous monitoring of symbolic structure complexity and self-similarity
+- **Semantic Coherence Analysis:** Vector divergence and attractor analysis for semantic stability
+- **Pi-Harmonic Coherence:** Monitoring of harmonic stability in recursive structures with frequency analysis
+
+### Cognition Index Protocol (CIP) v2.0
+- **Enhanced Scoring:** Incorporates thermodynamic efficiency, geometric stability, and empirical alignment
+- **Adaptive Weight Modulation:** Pi-harmonic modulation of reflexivity weights based on recursive depth
+- **Multi-Scale Assessment:** Evaluation across micro, macro, and unified complexity scales
+- **Continuous Calibration:** Real-time calibration against experimental validation protocols
+
+These upgrades establish the Meta-Cognition Layer as a sophisticated epistemic monitoring and self-repair system, incorporating the latest breakthroughs in unified complexity theory and empirical validation.
