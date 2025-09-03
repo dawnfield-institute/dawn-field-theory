@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: adapters
-description: Compression adapters for interfacing with external data formats, legacy systems, and third-party compression libraries within the symbolic entropy compression framework.
+description: Compression adapters for interfacing with external data formats, legacy
+  systems, and third-party compression libraries within the symbolic entropy compression
+  framework.
 semantic_scope:
 - compression-adapters
 - data-format-interfaces
