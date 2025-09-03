@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: spikes
-description: Experimental research spikes and exploratory implementations for testing novel Dawn Field Theory concepts, early-stage prototypes, and investigative computational studies.
+description: Experimental research spikes and exploratory implementations for testing
+  novel Dawn Field Theory concepts, early-stage prototypes, and investigative computational
+  studies.
 semantic_scope:
 - experimental-research
 - prototype-development
