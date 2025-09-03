@@ -31,9 +31,43 @@ except ImportError:
     # Fallback for direct execution
     from data_structures import FieldState, CollapseEvent, SymbolicStructure
 
-# SCBF Integration - temporarily disabled for testing
+# SCBF Integration - enabled for production with fallbacks
 SCBF_AVAILABLE = False
-logging.warning("SCBF integration disabled for testing")
+try:
+    import sys
+    from pathlib import Path
+    # Add repository root to path for SCBF imports
+    repo_root = str(Path(__file__).resolve().parents[5])  # Get to repo root
+    if repo_root not in sys.path:
+        sys.path.append(repo_root)
+    
+    # Try importing SCBF components
+    from models.scbf.metrics.entropy_collapse import compute_symbolic_entropy_collapse
+    from models.scbf.scbf_runner import run_scbf_analysis_step
+    SCBF_AVAILABLE = True
+    logging.info("SCBF integration enabled successfully")
+except ImportError as e:
+    # Fallback to local SCBF implementations
+    logging.warning(f"External SCBF unavailable, using fallbacks: {e}")
+    
+    def compute_symbolic_entropy_collapse(activations, **kwargs):
+        """Fallback implementation for symbolic entropy collapse"""
+        activations = torch.tensor(activations) if not isinstance(activations, torch.Tensor) else activations
+        probs = torch.softmax(activations.flatten(), dim=0)
+        entropy = -torch.sum(probs * torch.log(probs + 1e-8)).item()
+        max_entropy = torch.log(torch.tensor(float(probs.numel()))).item()
+        collapse_magnitude = 1.0 - entropy / max_entropy
+        return {
+            'collapse_magnitude': collapse_magnitude,
+            'collapse_rate': collapse_magnitude * 0.1,  # Simplified rate
+            'symbolic_states': int(torch.sum(probs > 0.01).item())
+        }
+    
+    def run_scbf_analysis_step(model, step_idx, x_batch=None, **kwargs):
+        """Fallback implementation for SCBF analysis"""
+        if x_batch is not None:
+            return compute_symbolic_entropy_collapse(x_batch)
+        return {'fallback': True, 'collapse_magnitude': 0.5}
 
 
 class CollapseType(Enum):
@@ -80,9 +114,10 @@ class CollapseCore:
                  geometric_guidance: bool = True,
                  thermodynamic_optimization: bool = True,
                  scbf_logging: bool = True,
-                 temperature: float = 1.0):
+                 temperature: float = 1.0,
+                 scbf_tracker=None):  # SCBF integration hook
         """
-        Initialize the Collapse Core
+        Initialize the Collapse Core with SCBF tracking
         
         Args:
             field_shape: Shape of the associated field
@@ -90,12 +125,14 @@ class CollapseCore:
             thermodynamic_optimization: Enable Landauer cost optimization
             scbf_logging: Enable SCBF ancestry tracking
             temperature: Thermodynamic temperature for cost calculations
+            scbf_tracker: Optional SCBF tracker for debugging and metrics
         """
         self.field_shape = field_shape
         self.geometric_guidance = geometric_guidance
         self.thermodynamic_optimization = thermodynamic_optimization
         self.scbf_logging = scbf_logging and SCBF_AVAILABLE
         self.temperature = temperature
+        self.scbf_tracker = scbf_tracker  # Store SCBF tracker
         
         # Constants
         self.k_boltzmann = 1.380649e-23  # Boltzmann constant
@@ -106,12 +143,15 @@ class CollapseCore:
         self.collapse_history: List[CollapseEvent] = []
         self.curvature_cache: Optional[CurvatureTensor] = None
         
-        # SCBF Integration - disabled for testing
-        if self.scbf_logging:
-            # self.ancestry_metrics = ActivationAncestryMetrics()
-            # self.lineage_metrics = BifractalLineageMetrics()
-            # self.logger = ExperimentLogger(experiment_name="gaia_collapse_core")
-            logging.info("SCBF logging requested but disabled for testing")
+        # SCBF Integration
+        if self.scbf_logging and SCBF_AVAILABLE:
+            try:
+                self.scbf_logger = self._initialize_scbf_logger()
+                logging.info("SCBF ancestry tracking initialized")
+            except Exception as e:
+                logging.warning(f"SCBF initialization failed: {e}")
+                self.scbf_logging = False
+        else:
             self.scbf_logging = False
         
         logging.info(f"Collapse Core initialized with geometric_guidance={geometric_guidance}")
@@ -120,7 +160,7 @@ class CollapseCore:
                              collapse_event: CollapseEvent,
                              field_state: FieldState) -> Optional[SymbolicStructure]:
         """
-        Process a collapse event and potentially crystallize symbolic structure
+        Process a collapse event and potentially crystallize symbolic structure with SCBF tracking
         
         Args:
             collapse_event: The collapse event from Field Engine
@@ -130,6 +170,19 @@ class CollapseCore:
             SymbolicStructure if crystallization occurred, None otherwise
         """
         logging.debug(f"Processing collapse event at {collapse_event.location}")
+        
+        # SCBF tracking hook - track collapse event processing
+        if self.scbf_tracker:
+            combined_field = field_state.energy_field + field_state.information_field
+            self.scbf_tracker.track_operation(
+                operation_name="process_collapse_event",
+                input_data=combined_field,
+                metadata={
+                    'collapse_location': collapse_event.location,
+                    'field_pressure': float(field_state.field_pressure),
+                    'entropy_delta': float(collapse_event.entropy_delta)
+                }
+            )
         
         # 1. Evaluate collapse conditions
         if not self._should_crystallize(collapse_event, field_state):
@@ -157,6 +210,18 @@ class CollapseCore:
         # 6. Log to SCBF if enabled
         if self.scbf_logging:
             self._log_scbf_ancestry(symbolic_structure)
+        
+        # SCBF tracking hook - track crystallized structure
+        if self.scbf_tracker and symbolic_structure:
+            self.scbf_tracker.track_operation(
+                operation_name="structure_crystallization",
+                input_data=symbolic_structure.symbolic_content,
+                metadata={
+                    'structure_id': symbolic_structure.structure_id,
+                    'entropy_signature': float(symbolic_structure.entropy_signature),
+                    'collapse_type': collapse_type.value
+                }
+            )
         
         # 7. Store and return
         self.symbolic_structures.append(symbolic_structure)
@@ -535,16 +600,56 @@ class CollapseCore:
         if not self.scbf_logging:
             return
         
-        ancestry_data = {
-            'structure_id': structure.structure_id,
-            'creation_timestamp': structure.creation_timestamp,
-            'collapse_location': structure.collapse_location,
-            'entropy_signature': structure.entropy_signature,
-            'thermodynamic_cost': structure.thermodynamic_cost,
-            'geometric_properties': structure.geometric_properties
-        }
-        
-        self.logger.log_metrics(ancestry_data)
+        try:
+            # Convert structure data to activation format for SCBF analysis
+            activations = structure.symbolic_content.detach().cpu().numpy()
+            if activations.ndim == 1:
+                activations = activations.reshape(1, -1)
+            
+            # Run SCBF analysis (using fallback if external SCBF unavailable)
+            scbf_results = run_scbf_analysis_step(
+                model=None,  # We're analyzing structure directly
+                step_idx=len(self.symbolic_structures),
+                x_batch=activations
+            )
+            
+            # Create enhanced ancestry data
+            ancestry_data = {
+                'structure_id': structure.structure_id,
+                'creation_timestamp': structure.creation_timestamp,
+                'collapse_location': structure.collapse_location,
+                'entropy_signature': structure.entropy_signature,
+                'thermodynamic_cost': structure.thermodynamic_cost,
+                'geometric_properties': structure.geometric_properties,
+                'scbf_analysis': scbf_results,
+                'scbf_available': SCBF_AVAILABLE
+            }
+            
+            # Log to SCBF logger
+            if hasattr(self, 'scbf_logger') and self.scbf_logger:
+                self.scbf_logger.log_metrics(ancestry_data)
+            
+        except Exception as e:
+            logging.warning(f"SCBF ancestry logging failed: {e}")
+    
+    def _initialize_scbf_logger(self):
+        """Initialize SCBF logger for ancestry tracking"""
+        try:
+            if SCBF_AVAILABLE:
+                from models.scbf.loggers import create_experiment_logger
+                return create_experiment_logger("gaia_collapse_ancestry")
+            else:
+                # Fallback logger
+                class FallbackLogger:
+                    def log_metrics(self, data): 
+                        logging.debug(f"SCBF metrics: {data.get('structure_id', 'unknown')}")
+                return FallbackLogger()
+        except ImportError:
+            logging.warning("SCBF logger creation failed, using fallback")
+            class FallbackLogger:
+                def log_metrics(self, data): 
+                    logging.debug(f"SCBF metrics: {data.get('structure_id', 'unknown')}")
+            return FallbackLogger()
     
     def get_symbolic_structures(self) -> List[SymbolicStructure]:
         """Get all crystallized symbolic structures"""

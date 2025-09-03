@@ -48,6 +48,8 @@ class FieldEngine:
     Simulates Energy/Information field interactions with entropy tension monitoring.
     Triggers collapse events based on thermodynamic principles.
     Uses RBF/QBE balance-based auto-tuning for dynamic threshold adaptation.
+    
+    Now includes SCBF tracking hooks for comprehensive debugging and metrics.
     """
     
     def __init__(self, 
@@ -56,9 +58,11 @@ class FieldEngine:
                  temperature: float = 1.0,
                  pi_harmonic_modulation: bool = True,
                  enable_adaptive_tuning: bool = True,  # Enable auto-tuning
+                 adaptive_tuning: bool = True,  # Backward compatibility
+                 scbf_tracker=None,  # SCBF integration hook
                  **kwargs):  # Added kwargs to handle extra parameters
         """
-        Initialize the Field Engine with adaptive threshold controller
+        Initialize the Field Engine with adaptive threshold controller and optional SCBF tracking
         
         Args:
             field_shape: Shape of the entropy field tensor
@@ -66,12 +70,15 @@ class FieldEngine:
             temperature: Thermodynamic temperature for cost calculations
             pi_harmonic_modulation: Enable pi-harmonic frequency modulation
             enable_adaptive_tuning: Enable RBF/QBE auto-tuning
+            adaptive_tuning: Backward compatibility parameter
+            scbf_tracker: Optional SCBF tracker for debugging and metrics
         """
         self.field_shape = field_shape
         self.base_collapse_threshold = collapse_threshold
         self.temperature = temperature
         self.pi_harmonic_modulation = pi_harmonic_modulation
-        self.enable_adaptive_tuning = enable_adaptive_tuning
+        self.enable_adaptive_tuning = enable_adaptive_tuning or adaptive_tuning
+        self.scbf_tracker = scbf_tracker  # Store SCBF tracker
         
         # Initialize adaptive controller (like CIMM/TinyCIMM pattern)
         if enable_adaptive_tuning:
@@ -104,13 +111,21 @@ class FieldEngine:
                        stimulus_type: str = "energy",
                        location: Optional[Tuple[int, ...]] = None) -> None:
         """
-        Inject external stimulus into the field
+        Inject external stimulus into the field with SCBF tracking
         
         Args:
             stimulus: Input data to inject 
             stimulus_type: Type of stimulus ("energy" or "information")
             location: Specific field location to inject (None for center)
         """
+        # SCBF tracking hook - track stimulus injection
+        if self.scbf_tracker:
+            self.scbf_tracker.track_operation(
+                operation_name=f"inject_stimulus_{stimulus_type}",
+                input_data=stimulus,
+                metadata={'stimulus_type': stimulus_type, 'location': location}
+            )
+        
         # Ensure stimulus is on correct device
         if not isinstance(stimulus, torch.Tensor):
             stimulus = torch.tensor(stimulus, dtype=torch.float32, device=device)
@@ -134,6 +149,15 @@ class FieldEngine:
             raise ValueError(f"Unknown stimulus type: {stimulus_type}")
             
         logging.debug(f"Injected {stimulus_type} stimulus at {location}")
+        
+        # SCBF tracking hook - track field state after injection
+        if self.scbf_tracker:
+            combined_field = self.energy_field + self.information_field
+            self.scbf_tracker.track_operation(
+                operation_name=f"field_state_post_injection",
+                input_data=combined_field,
+                metadata={'post_injection': True, 'stimulus_type': stimulus_type}
+            )
     
     def step(self) -> Optional[CollapseEvent]:
         """
