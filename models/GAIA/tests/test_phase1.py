@@ -30,9 +30,9 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src', 'core'))
 
 # Import GAIA core components
-from src.core.field_engine import FieldEngine
-from src.core.collapse_core import CollapseCore
-from src.core.data_structures import FieldState, CollapseEvent, SymbolicStructure 
+from ..src.core.field_engine import FieldEngine
+from ..src.core.collapse_core import CollapseCore
+from ..src.core.data_structures import FieldState, CollapseEvent, SymbolicStructure 
 
 
 # Create a simple GAIA class for testing
