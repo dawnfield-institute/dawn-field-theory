@@ -123,6 +123,10 @@ dawn-field-theory/
       metadata_architecturev3.md
       privacy-policy.md
       prompt.txt
+  debug_plots/
+    meta.yaml
+  debug_plots_cosmic_web/
+    meta.yaml
   devkit/
     README.md
     meta.yaml
@@ -2033,6 +2037,7 @@ dawn-field-theory/
           recursive_balance_field.md
       src/
         __init__.py
+        meta.yaml
         core/
           __init__.py
           adaptive_controller.py
@@ -2040,6 +2045,7 @@ dawn-field-theory/
           data_structures.py
           field_engine.py
           gaia.py
+          meta.yaml
           test.py
     TinyCIMM/
       README.md
@@ -2704,6 +2710,7 @@ dawn-field-theory/
     symbolic_entropy_roadmap.md
     xai_scbf_roadmap.md
   spikes/
+    meta.yaml
     darkmatter_SEC_WIP/
       README.md
       astro_data_fetcher.py
@@ -2714,9 +2721,14 @@ dawn-field-theory/
       darkmatter_cosmic_web.py
       darkmatter_temporal_gradient.py
       galaxy_temporal_gradient.py
+      meta.yaml
       sec_auto_tuning_engine.py
       sec_simulation_based_tuning.py
       test_astro_fetcher.py
+      debug_plots/
+        meta.yaml
+      debug_plots_cosmic_web/
+        meta.yaml
   todo/
     citation_model_draft.md
     meta.yaml
@@ -2735,18 +2747,26 @@ dawn-field-theory/
       meta.yaml
       compression/
         __init__.py
+        meta.yaml
         requirements.txt
+        adapters/
+          meta.yaml
         core/
           compression_engine.py
+          meta.yaml
         docs/
           architecture.md
+          meta.yaml
           quickstart.md
         examples/
           geometric_compression_demo.py
+          meta.yaml
         protocol/
           cipsc_protocol.py
+          meta.yaml
           specification.md
         validation/
+          meta.yaml
           validation_suite.py
     theory/
       anomaly_analysis.md

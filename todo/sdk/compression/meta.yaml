@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: compression
-description: Symbolic entropy compression SDK implementing information-theoretic compression algorithms, geometric data reduction, and entropy-optimized encoding protocols for Dawn Field Theory applications.
+description: Symbolic entropy compression SDK implementing information-theoretic compression
+  algorithms, geometric data reduction, and entropy-optimized encoding protocols for
+  Dawn Field Theory applications.
 semantic_scope:
 - symbolic-entropy-compression
 - information-compression
@@ -19,7 +21,5 @@ child_directories:
 - core
 - docs
 - examples
-- protocol
-- validation
 - protocol
 - validation

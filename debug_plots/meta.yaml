@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: debug_plots
-description: Debug visualization and diagnostic plots for Dawn Field Theory experiments, symbolic collapse analysis, and entropy monitoring across various computational models.
+description: Debug visualization and diagnostic plots for Dawn Field Theory experiments,
+  symbolic collapse analysis, and entropy monitoring across various computational
+  models.
 semantic_scope:
 - debug-visualization
 - experimental-diagnostics
