@@ -123,10 +123,6 @@ dawn-field-theory/
       metadata_architecturev3.md
       privacy-policy.md
       prompt.txt
-  debug_plots/
-    meta.yaml
-  debug_plots_cosmic_web/
-    meta.yaml
   devkit/
     README.md
     meta.yaml
@@ -1994,10 +1990,6 @@ dawn-field-theory/
     GAIA/
       README.md
       meta.yaml
-      phase3_agi_validation_report.md
-      test_phase1.py
-      test_phase2.py
-      test_phase3.py
       docs/
         GAIA_v2_upgrade_summary.md
         meta.yaml
@@ -2035,18 +2027,6 @@ dawn-field-theory/
           epistemic_field_theory.md
           meta.yaml
           recursive_balance_field.md
-      src/
-        __init__.py
-        meta.yaml
-        core/
-          __init__.py
-          adaptive_controller.py
-          collapse_core.py
-          data_structures.py
-          field_engine.py
-          gaia.py
-          meta.yaml
-          test.py
     TinyCIMM/
       README.md
       TinyCIMM_naming.md
@@ -2709,6 +2689,59 @@ dawn-field-theory/
     sdk_analysis_tools_roadmap.md
     symbolic_entropy_roadmap.md
     xai_scbf_roadmap.md
+  sdk/
+    meta.yaml
+    fracton/
+      ARCHITECTURE.md
+      README.md
+      ROADMAP.md
+      SETUP.md
+      SPEC.md
+      STATUS.md
+      __init__.py
+      meta.yaml
+      pytest.ini
+      requirements-dev.txt
+      setup.py
+      validate_fracton.py
+      core/
+        __init__.py
+        bifractal_trace.py
+        entropy_dispatch.py
+        gpu_accelerated_memory_field.py
+        memory_field.py
+        meta.yaml
+        recursive_engine.py
+      examples/
+        __init__.py
+        gaia_integration.py
+        meta.yaml
+      lang/
+        __init__.py
+        compiler.py
+        context.py
+        decorators.py
+        meta.yaml
+        primitives.py
+      tests/
+        README.md
+        TESTING_GUIDE.md
+        __init__.py
+        conftest.py
+        meta.yaml
+        run_tests.py
+        test_api.py
+        test_bifractal_trace.py
+        test_entropy_dispatch.py
+        test_gpu_acceleration.py
+        test_lang.py
+        test_med_compliance.py
+        test_memory_field.py
+        test_recursive_engine.py
+        test_sec_compliance.py
+      tools/
+        __init__.py
+        meta.yaml
   spikes/
     meta.yaml
     darkmatter_SEC_WIP/
@@ -2729,6 +2762,67 @@ dawn-field-theory/
         meta.yaml
       debug_plots_cosmic_web/
         meta.yaml
+    gaia/
+      gaia_runtime.py
+      meta.yaml
+      phase3_agi_validation_report.md
+      applications/
+        language_dataset.json
+        language_learning.py
+        meta.yaml
+        archive/
+          meta.yaml
+          extended_training_logs/
+            meta.yaml
+            gaia_extended_20250903_165655/
+              meta.yaml
+      long_term_training_output/
+        meta.yaml
+        20250904_164755_c8380ac9/
+          meta.yaml
+          dashboards/
+            meta.yaml
+          debug/
+            meta.yaml
+          logs/
+            meta.yaml
+          metrics/
+            meta.yaml
+          plots/
+            meta.yaml
+          raw_data/
+            meta.yaml
+      modules/
+        meta.yaml
+        phase1_module.py
+        phase2_module.py
+        phase3_module.py
+      sdk/
+        meta.yaml
+        assessment/
+          meta.yaml
+        core/
+          meta.yaml
+        dynamics/
+          meta.yaml
+        learning/
+          meta.yaml
+        storage/
+          meta.yaml
+      src/
+        __init__.py
+        meta.yaml
+        scbf_core.py
+        core/
+          __init__.py
+          gaia.py
+          meta.yaml
+          test.py
+      tests/
+        meta.yaml
+        test_phase1.py
+        test_phase2.py
+        test_phase3.py
   todo/
     citation_model_draft.md
     meta.yaml
@@ -2738,7 +2832,10 @@ dawn-field-theory/
       historical_collapse.md
       meta.yaml
     infra/
+      AWP.md
+      AWP_bridge.md
       CIP2.0MultiRepo.md
+      awp_net.md
       cip_domain_upgrade.md
       meta.yaml
       ollama_self_hosted_runner.md
