@@ -12,19 +12,20 @@ from ..core.memory_field import MemoryField
 
 
 def recurse(func: Callable, memory: MemoryField, context: ExecutionContext, 
-           trace: Optional[BifractalTrace] = None) -> Any:
+           trace: Optional[BifractalTrace] = None, max_depth: Optional[int] = None) -> Any:
     """
     Initiate a recursive call with proper tracing and context management.
     
     This is the primary function for making recursive calls within the Fracton
     runtime. It handles entropy checking, trace recording, and execution context
-    propagation.
+    propagation with built-in recursion safety.
     
     Args:
         func: The function to call recursively
         memory: Shared memory field
         context: Execution context for the call
         trace: Optional bifractal trace for recording the call
+        max_depth: Override default maximum recursion depth
         
     Returns:
         Result of the recursive function call
@@ -43,6 +44,16 @@ def recurse(func: Callable, memory: MemoryField, context: ExecutionContext,
             b = fracton.recurse(fibonacci, memory, context.deeper(2))
             return a + b
     """
+    # Safety check: prevent infinite recursion
+    effective_max_depth = max_depth or 100  # Conservative default
+    if context.depth >= effective_max_depth:
+        from ..core.recursive_engine import StackOverflowError
+        raise StackOverflowError(context.depth, effective_max_depth)
+    
+    # Additional safety: check if function is marked as recursive
+    if not hasattr(func, '_fracton_recursive') or not func._fracton_recursive:
+        raise ValueError(f"Function {func.__name__} must be decorated with @recursive to use recurse()")
+    
     executor = get_default_executor()
     
     # Record call in trace if provided
