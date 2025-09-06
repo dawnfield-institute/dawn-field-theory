@@ -106,14 +106,19 @@ def _transform_field_operations(code: str) -> str:
 
 def _transform_recurse_calls(code: str) -> str:
     """Transform 'recurse funcname(args)' to 'fracton.recurse(funcname, args)'."""
-    # Simple pattern for recurse calls
-    pattern = r'recurse\s+(\w+)\s*\(([^)]*)\)'
+    # Handle both simple and complex recurse calls
+    # Pattern: recurse function_name(args) -> fracton.recurse(function_name, args)
     
     def replacement_func(match):
         func_name = match.group(1)
-        args = match.group(2)
-        return f'fracton.recurse({func_name}, {args})'
+        args = match.group(2).strip()
+        if args:
+            return f'fracton.recurse({func_name}, {args})'
+        else:
+            return f'fracton.recurse({func_name})'
     
+    # Match patterns like "recurse fibonacci(memory, context.deeper())"
+    pattern = r'recurse\s+(\w+)\s*\(([^)]*)\)'
     return re.sub(pattern, replacement_func, code)
 
 
