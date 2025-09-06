@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: core
-description: GAIA SDK core components providing fundamental APIs, base classes, and essential functionality for building GAIA-integrated applications and cognitive systems.
+description: GAIA SDK core components providing fundamental APIs, base classes, and
+  essential functionality for building GAIA-integrated applications and cognitive
+  systems.
 semantic_scope:
 - core_components
 - fundamental_apis

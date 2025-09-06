@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: modules
-description: GAIA modular components implementing phased learning systems with specialized modules for different stages of cognitive development and training progression.
+description: GAIA modular components implementing phased learning systems with specialized
+  modules for different stages of cognitive development and training progression.
 semantic_scope:
 - gaia_modules
 - modular_components

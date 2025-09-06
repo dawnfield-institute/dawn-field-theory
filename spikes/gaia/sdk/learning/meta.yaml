@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: learning
-description: GAIA learning framework implementing Cognition Index Memory Model (CIMM) algorithms, adaptive learning strategies, and cognitive development protocols for AI systems.
+description: GAIA learning framework implementing Cognition Index Memory Model (CIMM)
+  algorithms, adaptive learning strategies, and cognitive development protocols for
+  AI systems.
 semantic_scope:
 - learning_framework
 - cognition_index_memory_model
