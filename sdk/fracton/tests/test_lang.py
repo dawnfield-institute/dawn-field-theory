@@ -447,48 +447,198 @@ class TestFractonIntegration:
 class TestFractonDSLCompiler:
     """Test the Fracton DSL compilation features."""
     
-    def test_compile_simple_dsl(self):
-        """Test compilation of simple DSL expressions."""
+    def test_compile_simple_recursive_function(self):
+        """Test compilation of simple recursive function declaration."""
+        
+        from fracton.lang.compiler import compile_fracton_dsl
         
         dsl_code = """
-        recursive fibonacci(n):
-            if n <= 1:
-                return 1
-            else:
-                return fibonacci(n-1) + fibonacci(n-2)
-        """
+recursive fibonacci(memory, context):
+    if context.depth <= 1:
+        return 1
+    else:
+        return context.depth
+"""
         
-        compiled_func = compile_fracton_dsl(dsl_code)
+        compiled_code = compile_fracton_dsl(dsl_code)
         
-        # Should return a callable function
-        assert callable(compiled_func)
-        assert hasattr(compiled_func, '_fracton_recursive')
+        # Should transform recursive declaration
+        assert "@fracton.recursive" in compiled_code
+        assert "def fibonacci(" in compiled_code
+        assert "recursive fibonacci(" not in compiled_code
     
-    def test_compile_dsl_with_entropy_gates(self):
-        """Test DSL compilation with entropy gates."""
+    def test_compile_entropy_gate_decorator(self):
+        """Test compilation of entropy gate syntax."""
+        
+        from fracton.lang.compiler import compile_fracton_dsl
         
         dsl_code = """
-        @entropy_gate(0.3, 0.9)
-        recursive process_data(data):
-            return crystallize(data)
-        """
+recursive process_data(memory, context):
+    entropy_gate(0.3, 0.9)
+    return "processed"
+"""
         
-        compiled_func = compile_fracton_dsl(dsl_code)
+        compiled_code = compile_fracton_dsl(dsl_code)
         
-        assert callable(compiled_func)
-        assert hasattr(compiled_func, '_fracton_recursive')
-        assert hasattr(compiled_func, '_fracton_entropy_gate')
+        # Should transform entropy_gate to decorator
+        assert "@fracton.entropy_gate(0.3, 0.9)" in compiled_code
+        assert "entropy_gate(0.3, 0.9)" not in compiled_code.replace("@fracton.entropy_gate(0.3, 0.9)", "")
     
-    def test_compile_invalid_dsl(self):
-        """Test compilation error handling."""
+    def test_compile_field_transform_syntax(self):
+        """Test compilation of field_transform conditional syntax."""
         
-        invalid_dsl = """
-        recursive broken_function(:
-            return invalid_syntax
-        """
+        from fracton.lang.compiler import compile_fracton_dsl
         
-        with pytest.raises(SyntaxError):
-            compile_fracton_dsl(invalid_dsl)
+        dsl_code = """
+recursive adaptive_function(memory, context):
+    field_transform entropy > 0.5:
+        return "high_entropy_path"
+    else:
+        return "low_entropy_path"
+"""
+        
+        compiled_code = compile_fracton_dsl(dsl_code)
+        
+        # Should transform field_transform to if statement
+        assert "if context.entropy > 0.5:" in compiled_code
+        assert "field_transform entropy > 0.5:" not in compiled_code
+    
+    def test_compile_recurse_calls(self):
+        """Test compilation of recurse call syntax."""
+        
+        from fracton.lang.compiler import compile_fracton_dsl
+        
+        dsl_code = """
+recursive factorial(memory, context):
+    if context.depth <= 1:
+        return 1
+    return recurse factorial(memory, context.deeper())
+"""
+        
+        compiled_code = compile_fracton_dsl(dsl_code)
+        
+        # Should transform recurse calls
+        assert "fracton.recurse(factorial, memory, context.deeper())" in compiled_code
+        assert "recurse factorial(" not in compiled_code
+    
+    def test_validate_fracton_syntax_valid(self):
+        """Test syntax validation with valid code."""
+        
+        from fracton.lang.compiler import validate_fracton_syntax
+        
+        valid_code = """
+recursive test_function(memory, context):
+    entropy_gate(0.5, 0.8)
+    if context.entropy > 0.6:
+        return "valid"
+"""
+        
+        is_valid, errors = validate_fracton_syntax(valid_code)
+        
+        assert is_valid is True
+        assert len(errors) == 0
+    
+    def test_validate_fracton_syntax_invalid_entropy(self):
+        """Test syntax validation catches invalid entropy values."""
+        
+        from fracton.lang.compiler import validate_fracton_syntax
+        
+        invalid_code = """
+recursive bad_function(memory, context):
+    if context.entropy > 1.5:  # Invalid: > 1.0
+        return "bad"
+"""
+        
+        is_valid, errors = validate_fracton_syntax(invalid_code)
+        
+        assert is_valid is False
+        assert len(errors) > 0
+        assert "Entropy value 1.5 outside valid range" in errors[0]
+    
+    def test_validate_fracton_syntax_unmatched_parens(self):
+        """Test syntax validation catches unmatched parentheses."""
+        
+        from fracton.lang.compiler import validate_fracton_syntax
+        
+        invalid_code = """
+recursive bad_function(memory, context:
+    return "missing paren"
+"""
+        
+        is_valid, errors = validate_fracton_syntax(invalid_code)
+        
+        assert is_valid is False
+        assert len(errors) > 0
+        assert "Unmatched parentheses" in errors[0]
+    
+    def test_get_dsl_examples(self):
+        """Test DSL example retrieval."""
+        
+        from fracton.lang.compiler import get_dsl_example, list_dsl_examples
+        
+        # Test listing examples
+        examples = list_dsl_examples()
+        assert len(examples) > 0
+        assert "fibonacci" in examples
+        
+        # Test getting specific example
+        fib_example = get_dsl_example("fibonacci")
+        assert "recursive fibonacci" in fib_example
+        assert "entropy_gate" in fib_example
+        
+        # Test error for invalid example
+        with pytest.raises(ValueError, match="Unknown example"):
+            get_dsl_example("nonexistent")
+    
+    def test_compile_full_fibonacci_example(self):
+        """Test compilation of the complete fibonacci example."""
+        
+        from fracton.lang.compiler import get_dsl_example, compile_fracton_dsl
+        
+        fib_dsl = get_dsl_example("fibonacci")
+        compiled = compile_fracton_dsl(fib_dsl)
+        
+        # Should have all transformations applied
+        assert "@fracton.recursive" in compiled
+        assert "@fracton.entropy_gate" in compiled
+        assert "if context.entropy > 0.5:" in compiled
+        assert "fracton.recurse(fibonacci," in compiled
+    
+    def test_compile_with_optimization(self):
+        """Test compilation with optimization enabled."""
+        
+        from fracton.lang.compiler import compile_fracton_dsl
+        
+        dsl_code = """
+import something
+import something
+recursive test(memory, context):
+    return "test"
+"""
+        
+        compiled = compile_fracton_dsl(dsl_code, optimize=True)
+        
+        # Should deduplicate imports
+        import_count = compiled.count("import something")
+        assert import_count == 1
+    
+    def test_compile_without_optimization(self):
+        """Test compilation without optimization."""
+        
+        from fracton.lang.compiler import compile_fracton_dsl
+        
+        dsl_code = """
+import something
+import something
+recursive test(memory, context):
+    return "test"
+"""
+        
+        compiled = compile_fracton_dsl(dsl_code, optimize=False)
+        
+        # Should keep duplicate imports
+        import_count = compiled.count("import something")
+        assert import_count == 2
 
 
 class TestFractonErrorHandling:
