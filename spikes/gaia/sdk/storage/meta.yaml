@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: storage
-description: GAIA storage systems providing persistent data management, memory storage, knowledge base management, and data persistence layers for cognitive architectures.
+description: GAIA storage systems providing persistent data management, memory storage,
+  knowledge base management, and data persistence layers for cognitive architectures.
 semantic_scope:
 - storage_systems
 - data_management

@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: metrics
-description: Performance metrics and quantitative measurements from GAIA training including accuracy scores, learning rates, convergence data, and system performance indicators.
+description: Performance metrics and quantitative measurements from GAIA training
+  including accuracy scores, learning rates, convergence data, and system performance
+  indicators.
 semantic_scope:
 - performance_metrics
 - quantitative_data

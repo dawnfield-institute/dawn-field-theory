@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: plots
-description: Generated plots, charts, and visual analytics from GAIA training sessions including learning curves, performance graphs, and data visualizations.
+description: Generated plots, charts, and visual analytics from GAIA training sessions
+  including learning curves, performance graphs, and data visualizations.
 semantic_scope:
 - plots
 - charts

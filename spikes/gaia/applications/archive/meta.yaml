@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: archive
-description: GAIA application archive containing historical training outputs, experiment results, execution logs, and preserved application states for analysis and reference.
+description: GAIA application archive containing historical training outputs, experiment
+  results, execution logs, and preserved application states for analysis and reference.
 semantic_scope:
 - archive
 - historical_data
@@ -12,4 +13,3 @@ semantic_scope:
 files: []
 child_directories:
 - extended_training_logs
-- output
