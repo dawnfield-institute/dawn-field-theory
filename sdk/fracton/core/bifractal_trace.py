@@ -574,6 +574,34 @@ class BifractalTrace:
             parent_entry_id=parent_entry_id
         )
     
+    def get_entries(self) -> List[TraceEntry]:
+        """Get all trace entries."""
+        return self.recorder.get_entries()
+    
+    def get_operation_count(self) -> int:
+        """Get the number of recorded operations."""
+        return len(self.recorder.get_entries())
+    
+    def is_empty(self) -> bool:
+        """Check if the trace is empty."""
+        return self.get_operation_count() == 0
+    
+    def get_operation(self, operation_id: str) -> Optional[Dict[str, Any]]:
+        """Get operation data by ID."""
+        # Try to find the entry with the given ID
+        for entry in self.recorder.get_entries():
+            if entry.entry_id == operation_id:
+                return {
+                    "operation_type": entry.function_name,
+                    "context": {
+                        "entropy": entry.context.entropy if entry.context else 0.5,
+                        "depth": entry.context.depth if entry.context else 0
+                    },
+                    "input_data": entry.parameters,
+                    "output_data": entry.result if hasattr(entry, 'result') else {}
+                }
+        return None
+    
     def get_forward_trace(self) -> List[TraceEntry]:
         """Get forward trace (chronological order)."""
         return self.recorder.get_entries()

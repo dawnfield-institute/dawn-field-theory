@@ -8,11 +8,28 @@ and tail recursion optimization.
 
 import time
 import uuid
+from enum import Enum
+from typing import Union, Callable
 from typing import Any, Callable, Dict, List, Optional, Union
 from dataclasses import dataclass, field
 from contextlib import contextmanager
 import threading
 from collections import deque
+
+
+class TrampolineResult(Enum):
+    """Enumeration for trampoline execution results."""
+    CONTINUE = "continue"
+    COMPLETE = "complete"
+
+
+@dataclass
+class Continuation:
+    """Represents a continuation in the trampoline execution."""
+    func: Callable
+    memory: Any
+    context: 'ExecutionContext'
+    result_type: TrampolineResult = TrampolineResult.CONTINUE
 
 
 @dataclass
@@ -291,27 +308,69 @@ class RecursiveExecutor:
                 
                 # Handle tail recursion optimization
                 if self._is_tail_recursive_call(func):
-                    # Reuse current stack frame
-                    result = func(memory, exec_context)
+                    # Use trampoline for tail recursion
+                    return self._execute_trampoline(func, memory, exec_context)
                 else:
-                    # Push new frame and execute
+                    # Push new frame and execute with trampoline
                     self.call_stack.push(func, exec_context, exec_context.trace_id)
                     try:
-                        result = func(memory, exec_context)
+                        return self._execute_trampoline(func, memory, exec_context)
                     finally:
                         self.call_stack.pop()
-                
-                # Update statistics
-                execution_time = time.time() - start_time
-                self._update_stats(func, exec_context, execution_time)
-                
-                return result
                 
         except Exception as e:
             # Add execution context to exception
             if hasattr(e, 'execution_context'):
                 e.execution_context = exec_context
             raise
+    
+    def _execute_trampoline(self, func: Callable, memory: Any, context: 'ExecutionContext') -> Any:
+        """
+        Execute a function using trampoline-based recursion management.
+        
+        This prevents deep recursion by converting recursive calls into
+        an iterative loop with continuations.
+        """
+        import threading
+        start_time = time.time()
+        continuation_queue = deque([Continuation(func, memory, context)])
+        result = None
+        
+        # Mark that we're in trampoline execution
+        current_thread = threading.current_thread()
+        old_value = getattr(current_thread, '_fracton_in_trampoline', False)
+        current_thread._fracton_in_trampoline = True
+        
+        try:
+            while continuation_queue:
+                current = continuation_queue.popleft()
+                
+                try:
+                    # Execute the function
+                    temp_result = current.func(current.memory, current.context)
+                    
+                    # Check if result is a continuation (recursive call)
+                    if isinstance(temp_result, Continuation):
+                        # Add to queue for further processing
+                        continuation_queue.append(temp_result)
+                    else:
+                        # Final result
+                        result = temp_result
+                        
+                except Exception as e:
+                    # Add execution context to exception
+                    if hasattr(e, 'execution_context'):
+                        e.execution_context = current.context
+                    raise
+        finally:
+            # Restore previous thread state
+            current_thread._fracton_in_trampoline = old_value
+        
+        # Update statistics
+        execution_time = time.time() - start_time
+        self._update_stats(func, context, execution_time)
+        
+        return result
     
     def get_execution_stats(self) -> ExecutionStats:
         """Get current execution statistics."""
