@@ -1,0 +1,32 @@
+schema_version: '2.0'
+directory_name: fracton
+description: Fracton SDK - A comprehensive software development kit implementing fractal computation patterns, bifractal traces, entropy dispatch mechanisms, and recursive memory field processing for distributed cognitive systems.
+semantic_scope:
+- fractal_computation
+- cognitive_computing
+- memory_fields
+- entropy_processing
+- recursive_systems
+- bifractal_traces
+- distributed_processing
+- computational_physics
+- sdk
+- development_toolkit
+files:
+- ARCHITECTURE.md
+- README.md
+- ROADMAP.md
+- SETUP.md
+- SPEC.md
+- STATUS.md
+- __init__.py
+- pytest.ini
+- requirements-dev.txt
+- setup.py
+- validate_fracton.py
+child_directories:
+- core
+- examples
+- lang
+- tests
+- tools

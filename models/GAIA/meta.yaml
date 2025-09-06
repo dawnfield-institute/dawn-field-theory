@@ -1,0 +1,16 @@
+schema_version: '2.0'
+directory_name: GAIA
+description: Global Artificial Intelligence Architecture - A comprehensive AI system implementing recursive information processing, memory field dynamics, and cognition indexing protocols for autonomous learning and adaptation.
+semantic_scope:
+- artificial_intelligence
+- cognitive_architecture
+- memory_systems
+- recursive_processing
+- autonomous_learning
+- cognition_indexing
+- neural_networks
+- adaptive_systems
+files:
+- README.md
+child_directories:
+- docs
