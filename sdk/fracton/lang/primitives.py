@@ -5,8 +5,9 @@ This module provides the fundamental runtime functions for the Fracton language,
 including recursive calls, crystallization, branching, and context management.
 """
 
+import uuid
 from typing import Any, Callable, Dict, List, Optional, Union
-from ..core.recursive_engine import ExecutionContext, get_default_executor
+from ..core.recursive_engine import ExecutionContext, get_default_executor, Continuation
 from ..core.bifractal_trace import BifractalTrace
 from ..core.memory_field import MemoryField
 
@@ -54,31 +55,27 @@ def recurse(func: Callable, memory: MemoryField, context: ExecutionContext,
     if not hasattr(func, '_fracton_recursive') or not func._fracton_recursive:
         raise ValueError(f"Function {func.__name__} must be decorated with @recursive to use recurse()")
     
-    executor = get_default_executor()
+    # Check if we're inside a trampoline execution
+    import threading
+    current_thread = threading.current_thread()
+    in_trampoline = getattr(current_thread, '_fracton_in_trampoline', False)
     
-    # Record call in trace if provided
-    if trace:
-        entry_id = trace.record_call(func, context)
-        
-        try:
-            # Execute through the recursive engine
-            result = executor.execute(func, memory, context)
-            
-            # Record successful return
-            trace.record_return(func, context, result, entry_id)
-            return result
-            
-        except Exception as e:
-            # Record error
-            trace.record_error(func, context, e, entry_id)
-            raise
+    if in_trampoline:
+        # We're inside a trampoline, return a continuation
+        if trace:
+            entry_id = trace.record_call(func, context)
+        return Continuation(func, memory, context)
     else:
-        # Execute without tracing
+        # We're called directly, execute through the executor with trampoline
+        executor = get_default_executor()
         return executor.execute(func, memory, context)
 
 
-def crystallize(data: Any, patterns: Optional[List] = None, 
-               entropy_threshold: float = 0.3) -> Any:
+def crystallize(data: Any, memory: Optional[MemoryField] = None, 
+                context: Optional[ExecutionContext] = None,
+                patterns: Optional[List] = None, 
+                entropy_threshold: float = 0.3,
+                trace: Optional[BifractalTrace] = None) -> Any:
     """
     Crystallize data into stable structures based on entropy patterns.
     
@@ -87,39 +84,71 @@ def crystallize(data: Any, patterns: Optional[List] = None,
     
     Args:
         data: Data to crystallize
+        memory: Optional memory field to store crystallized data
+        context: Optional execution context for entropy awareness
         patterns: Optional list of patterns to reinforce
         entropy_threshold: Entropy level below which crystallization occurs
+        trace: Optional bifractal trace for recording crystallization
         
     Returns:
-        Crystallized data structure
+        If memory is provided, returns the storage ID. Otherwise returns crystallized data.
         
     Example:
         chaotic_data = {"values": [1, 5, 2, 8, 3, 7, 4, 6]}
         stable_data = fracton.crystallize(chaotic_data)
         # Result: {"values": [1, 2, 3, 4, 5, 6, 7, 8]}  # Sorted
     """
-    # Calculate current entropy of data
-    current_entropy = _calculate_data_entropy(data)
+    # Use context entropy if available, otherwise calculate from data
+    if context and hasattr(context, 'entropy'):
+        current_entropy = context.entropy
+    else:
+        current_entropy = _calculate_data_entropy(data)
+    
+    # Record in trace if provided
+    if trace:
+        trace_id = trace.record_operation(
+            operation_type="crystallization",
+            context=context,
+            input_data={"data": data, "entropy_threshold": entropy_threshold}
+        )
     
     if current_entropy <= entropy_threshold:
         # Already stable enough
-        return data
-    
-    # Apply crystallization based on data type
-    if isinstance(data, dict):
-        return _crystallize_dict(data, patterns)
-    elif isinstance(data, list):
-        return _crystallize_list(data, patterns)
-    elif isinstance(data, str):
-        return _crystallize_string(data, patterns)
+        crystallized_data = data
     else:
-        # For other types, try to find inherent order
-        return _crystallize_generic(data, patterns)
+        # Apply crystallization based on data type
+        if isinstance(data, dict):
+            crystallized_data = _crystallize_dict(data, patterns)
+        elif isinstance(data, list):
+            crystallized_data = _crystallize_list(data, patterns)
+        elif isinstance(data, str):
+            crystallized_data = _crystallize_string(data, patterns)
+        else:
+            # For other types, try to find inherent order
+            crystallized_data = _crystallize_generic(data, patterns)
+    
+    # Update trace with result if provided
+    if trace:
+        trace.record_operation(
+            operation_type="crystallization_complete",
+            context=context,
+            output_data={"crystallized_data": crystallized_data},
+            parent_operation=trace_id
+        )
+    
+    # Store in memory if provided
+    if memory:
+        crystal_id = f"crystal_{uuid.uuid4().hex[:8]}"
+        memory.set(crystal_id, crystallized_data)
+        return crystal_id
+    else:
+        return crystallized_data
 
 
-def branch(condition: Union[bool, Callable], 
-          if_true: Callable, if_false: Callable,
-          memory: MemoryField, context: ExecutionContext) -> Any:
+def branch(condition: Union[bool, Callable, List], 
+          if_true: Union[Callable, List, MemoryField] = None, 
+          if_false: Union[Callable, ExecutionContext, List] = None,
+          memory: MemoryField = None, context: Union[ExecutionContext, List] = None) -> Any:
     """
     Entropy-aware conditional branching for recursive operations.
     
@@ -127,16 +156,17 @@ def branch(condition: Union[bool, Callable],
     and execution context for optimal path selection.
     
     Args:
-        condition: Boolean condition or function that returns boolean
-        if_true: Function to call if condition is true
-        if_false: Function to call if condition is false
-        memory: Shared memory field
-        context: Execution context
+        condition: Boolean condition, function that returns boolean, or list of functions
+        if_true: Function to call if condition is true, or MemoryField for multi-branch
+        if_false: Function to call if condition is false, or contexts for multi-branch
+        memory: Shared memory field (traditional mode)
+        context: Execution context or list of contexts for multi-branch
         
     Returns:
-        Result of the selected branch function
+        Result of the selected branch function, or list of results for multi-branch
         
     Example:
+        # Simple branch
         result = fracton.branch(
             context.entropy > 0.5,
             high_entropy_path,
@@ -144,7 +174,30 @@ def branch(condition: Union[bool, Callable],
             memory,
             context
         )
+        
+        # Multi-branch over contexts: branch(functions_list, memory, contexts_list)
+        results = fracton.branch(
+            [func1, func2],
+            memory,
+            [context1, context2]
+        )
     """
+    # Handle multi-branch case: branch([func1, func2], memory, [ctx1, ctx2])
+    if isinstance(condition, list) and if_false is not None and isinstance(if_false, list):
+        functions = condition
+        memory_field = if_true  # Second arg is memory
+        contexts = if_false     # Third arg is contexts list
+        results = []
+        for func, ctx in zip(functions, contexts):
+            # For non-recursive functions, call directly
+            if hasattr(func, '_fracton_recursive') and func._fracton_recursive:
+                result = recurse(func, memory_field, ctx)
+            else:
+                result = func(memory_field, ctx)
+            results.append(result)
+        return results
+    
+    # Handle traditional branch case: branch(condition, if_true, if_false, memory, context)
     # Evaluate condition if it's a callable
     if callable(condition):
         condition_result = condition(memory, context)
@@ -152,10 +205,13 @@ def branch(condition: Union[bool, Callable],
         condition_result = condition
     
     # Select and execute branch
-    if condition_result:
-        return recurse(if_true, memory, context)
+    selected_func = if_true if condition_result else if_false
+    
+    # For non-recursive functions, call directly
+    if hasattr(selected_func, '_fracton_recursive') and selected_func._fracton_recursive:
+        return recurse(selected_func, memory, context)
     else:
-        return recurse(if_false, memory, context)
+        return selected_func(memory, context)
 
 
 def merge_contexts(*contexts: ExecutionContext) -> ExecutionContext:
