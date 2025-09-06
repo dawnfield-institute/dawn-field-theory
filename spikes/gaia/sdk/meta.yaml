@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: sdk
-description: GAIA Software Development Kit providing comprehensive APIs, tools, and frameworks for building applications that integrate with the Global Artificial Intelligence Architecture.
+description: GAIA Software Development Kit providing comprehensive APIs, tools, and
+  frameworks for building applications that integrate with the Global Artificial Intelligence
+  Architecture.
 semantic_scope:
 - gaia_sdk
 - development_kit

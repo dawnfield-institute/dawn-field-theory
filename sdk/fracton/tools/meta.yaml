@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: tools
-description: Utility tools and helper scripts for fracton SDK development, debugging, analysis, and maintenance operations.
+description: Utility tools and helper scripts for fracton SDK development, debugging,
+  analysis, and maintenance operations.
 semantic_scope:
 - development_tools
 - utilities

@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: dynamics
-description: GAIA dynamics system implementing temporal evolution, state transitions, and dynamic behavior modeling for cognitive systems and adaptive learning environments.
+description: GAIA dynamics system implementing temporal evolution, state transitions,
+  and dynamic behavior modeling for cognitive systems and adaptive learning environments.
 semantic_scope:
 - system_dynamics
 - temporal_evolution

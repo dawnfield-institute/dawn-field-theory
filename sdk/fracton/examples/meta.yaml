@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: examples
-description: Fracton SDK examples and demonstrations including GAIA integration patterns, implementation guides, and practical applications of fractal computation systems.
+description: Fracton SDK examples and demonstrations including GAIA integration patterns,
+  implementation guides, and practical applications of fractal computation systems.
 semantic_scope:
 - code_examples
 - demonstrations

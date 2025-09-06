@@ -1,6 +1,7 @@
 schema_version: '2.0'
 directory_name: raw_data
-description: Raw unprocessed data from GAIA training sessions including input datasets, intermediate computational results, and unfiltered training outputs.
+description: Raw unprocessed data from GAIA training sessions including input datasets,
+  intermediate computational results, and unfiltered training outputs.
 semantic_scope:
 - raw_data
 - unprocessed_data
