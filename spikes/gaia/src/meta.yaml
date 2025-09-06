@@ -14,5 +14,6 @@ semantic_scope:
 - source-implementation
 files:
 - __init__.py
+- scbf_core.py
 child_directories:
 - core

@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: extended_training_logs
-description: Extended GAIA training logs containing comprehensive learning session records, training progression data, and long-term cognitive development traces from GAIA system evolution.
+description: Extended GAIA training logs containing comprehensive learning session
+  records, training progression data, and long-term cognitive development traces from
+  GAIA system evolution.
 semantic_scope:
 - extended_training
 - training_logs

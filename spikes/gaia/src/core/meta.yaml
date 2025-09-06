@@ -15,10 +15,6 @@ semantic_scope:
 - intelligence-architecture
 files:
 - __init__.py
-- adaptive_controller.py
-- collapse_core.py
-- data_structures.py
-- field_engine.py
 - gaia.py
 - test.py
 child_directories: []

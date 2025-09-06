@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: fracton
-description: Fracton SDK - A comprehensive software development kit implementing fractal computation patterns, bifractal traces, entropy dispatch mechanisms, and recursive memory field processing for distributed cognitive systems.
+description: Fracton SDK - A comprehensive software development kit implementing fractal
+  computation patterns, bifractal traces, entropy dispatch mechanisms, and recursive
+  memory field processing for distributed cognitive systems.
 semantic_scope:
 - fractal_computation
 - cognitive_computing

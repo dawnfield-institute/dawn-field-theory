@@ -8,11 +8,12 @@ semantic_scope:
 - model
 - protocol
 files:
-- README.md
+- gaia_runtime.py
 - phase3_agi_validation_report.md
-- test_phase1.py
-- test_phase2.py
-- test_phase3.py
 child_directories:
-- docs
+- applications
+- long_term_training_output
+- modules
+- sdk
 - src
+- tests

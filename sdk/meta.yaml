@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: sdk
-description: Software Development Kit collection providing comprehensive tools and frameworks for Dawn Field Theory implementations, including fracton computation systems and advanced cognitive architectures.
+description: Software Development Kit collection providing comprehensive tools and
+  frameworks for Dawn Field Theory implementations, including fracton computation
+  systems and advanced cognitive architectures.
 semantic_scope:
 - software_development_kit
 - development_frameworks

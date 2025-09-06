@@ -1,6 +1,8 @@
 schema_version: '2.0'
 directory_name: tests
-description: Comprehensive test suite for fracton SDK including unit tests, integration tests, compliance verification (MED/SEC), performance benchmarks, and validation of fractal computation algorithms.
+description: Comprehensive test suite for fracton SDK including unit tests, integration
+  tests, compliance verification (MED/SEC), performance benchmarks, and validation
+  of fractal computation algorithms.
 semantic_scope:
 - testing_framework
 - unit_tests
