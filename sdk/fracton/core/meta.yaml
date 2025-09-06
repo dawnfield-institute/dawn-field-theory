@@ -1,0 +1,20 @@
+schema_version: '2.0'
+directory_name: core
+description: Core fracton computation engine implementing bifractal trace analysis, entropy dispatch systems, GPU-accelerated memory fields, and recursive cognitive processing algorithms.
+semantic_scope:
+- core_algorithms
+- bifractal_processing
+- entropy_dispatch
+- memory_field_dynamics
+- recursive_engines
+- gpu_acceleration
+- cognitive_processing
+- computational_core
+files:
+- __init__.py
+- bifractal_trace.py
+- entropy_dispatch.py
+- gpu_accelerated_memory_field.py
+- memory_field.py
+- recursive_engine.py
+child_directories: []

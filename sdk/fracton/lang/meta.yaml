@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: lang
+description: Fracton domain-specific language (DSL) implementation including compiler infrastructure, context management, primitive operations, and decorators for fractal computation programming.
+semantic_scope:
+- domain_specific_language
+- compiler_design
+- language_primitives
+- context_management
+- programming_language
+- fractal_programming
+- code_compilation
+- language_design
+files:
+- __init__.py
+- compiler.py
+- context.py
+- decorators.py
+- primitives.py
+child_directories: []

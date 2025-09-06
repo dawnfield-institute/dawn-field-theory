@@ -1,0 +1,29 @@
+schema_version: '2.0'
+directory_name: tests
+description: Comprehensive test suite for fracton SDK including unit tests, integration tests, compliance verification (MED/SEC), performance benchmarks, and validation of fractal computation algorithms.
+semantic_scope:
+- testing_framework
+- unit_tests
+- integration_tests
+- compliance_testing
+- performance_testing
+- med_compliance
+- sec_compliance
+- test_automation
+- quality_assurance
+files:
+- README.md
+- TESTING_GUIDE.md
+- __init__.py
+- conftest.py
+- run_tests.py
+- test_api.py
+- test_bifractal_trace.py
+- test_entropy_dispatch.py
+- test_gpu_acceleration.py
+- test_lang.py
+- test_med_compliance.py
+- test_memory_field.py
+- test_recursive_engine.py
+- test_sec_compliance.py
+child_directories: []
