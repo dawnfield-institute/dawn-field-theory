@@ -1,51 +1,31 @@
-# 🗺️ Da## 🚀 S## 🚀 Strategic Implementation Plans
+# 🗺️ Dawn Field Theory Roadmaps
 
-- **`../devkit/projects/PHASED_ROADMAP.md`** – 3-phase strategy building on proven SCBF/SEC/QPL foundations
-- **`../devkit/projects/IMPLEMENTATION_GUIDE.md`** – Tactical implementation details for Phase 1 projectsc Implementation Plans
+Welcome to the roadmap hub for Dawn Field Theory! This directory contains detailed, living roadmaps for the core theoretical framework and associated research domains. Each roadmap is designed to help contributors, agents, and collaborators track progress, plan next steps, and understand the evolving architecture of the theoretical foundation.
 
-- **`../devkit/projects/PHASED_ROADMAP.md`** – 3-phase strategy building on proven SCBF/SEC/QPL foundations
-- **`../devkit/projects/IMPLEMENTATION_GUIDE.md`** – Tactical implementation details for Phase 1 projects
-
----
-
-## 📚 Domain-Specific Roadmapseory Roadmaps
-
-Welcome to the roadmap hub for Dawn Field Theory! This directory contains detailed, living roadmaps for every major project and research domain in the repository. Each roadmap is designed to help contributors, agents, and collaborators track progress, plan next steps, and understand the evolving architecture of the framework.
-
-> Announcement visibility: Discord is the exclusive channel for announcements and project intent. This repository will not maintain a separate announcements or intentions document.
+> **Note:** Implementation-specific roadmaps have been moved to their respective repositories:
+> - **CIP Protocol roadmaps** → [cip-core/roadmap/](https://github.com/dawnfield-institute/cip-core/tree/main/roadmap)
+> - **Model & SCBF roadmaps** → [dawn-models/roadmaps/](https://github.com/dawnfield-institute/dawn-models/tree/main/roadmaps)
+> - **Infrastructure & SDK roadmaps** → [cip-core/roadmap/](https://github.com/dawnfield-institute/cip-core/tree/main/roadmap)
 
 ---
 
-## � Strategic Implementation Plans
+## 🚀 Strategic Implementation Plans
 
-> **New**: Phased implementation approach integrating validated DFT theory with practical deliverables
-
-- **`phased_implementation_roadmap.md`** – Master 3-phase strategy building on proven SCBF/SEC/QPL foundations
-- **`implementation_priorities.md`** – Current focus areas and immediate next steps
-- **`integration_strategy.md`** – How new projects connect to existing validated theory
+- **`core_project_roadmap.md`** – Master strategy for Dawn Field Theory theoretical foundation
+- **`publication_framework_roadmap.md`** – Academic publication and documentation framework
 
 ---
 
-## 📚 Project-Specific Roadmaps
+## 📚 Theory-Specific Roadmaps
 
 ### **Core Infrastructure & Systems**
-- `core_project_roadmap.md` – Main repository architecture, migration, and publication goals
-- `kronos_roadmap.md` – **NEW**: Temporal coordination & FDO document architecture  
-- `infrastructure_tools_roadmap.md` – **NEW**: MCP Server, Brainstem, Prometheus development tools
-- `xai_scbf_roadmap.md` – XAI infrastructure and Symbolic Collapse Benchmark Framework (SCBF)
-- `cip_protocol_roadmap.md` – Cognition Index Protocol (CIP) upgrades, tagging, and agentic navigation
-
-### **SDK & Development Tools**
-- `sdk_analysis_tools_roadmap.md` – **NEW**: Aletheia, Field Decomposition, Fracton development suite
+- `core_project_roadmap.md` – Main repository architecture, theoretical development, and publication goals
+- `kronos_roadmap.md` – Temporal coordination & FDO document architecture for theoretical knowledge management
+- `publication_framework_roadmap.md` – Release-ready documentation and reproducible artifacts
 
 ### **Research & Theory**  
-- `math_arithmetic_roadmap.md` – Recursive mathematics, base transformation, and entropy reduction
-- `symbolic_entropy_roadmap.md` – Plans to refine SEC models and experiments
-- `gaia_roadmap.md` – GAIA model development, bootstrapping, and integration
-
-### **Publication & Documentation**
-- `publication_framework_roadmap.md` – Release-ready documentation, preprints, and publication pipeline
-- `general_experiments_roadmap.md` – Exploratory experiments in early/incomplete stages
+- `math_arithmetic_roadmap.md` – Recursive mathematics, base transformation, and entropy reduction foundations
+- `general_experiments_roadmap.md` – Exploratory theoretical experiments and validation studies
 
 ---
 

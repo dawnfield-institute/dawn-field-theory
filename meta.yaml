@@ -1,13 +1,18 @@
-schema_version: 2.0
+schema_version: '2.0'
 directory_name: dawn-field-theory
 description: >
-  Root of the Dawn Field Theory repository. Contains foundational theory, experiments, models, and onboarding protocols for epistemic machine comprehension.
+  Dawn Field Theory foundational repository containing core theoretical framework,
+  experimental validations, and research documentation. References implementation
+  repositories: dawn-models (production models), cip-core (navigation protocol), 
+  and fracton (computational language).
+repository_role: foundational_theory
 semantic_scope:
   - physics
-  - open science
-  - field theory
+  - open_science
+  - field_theory
   - infodynamics
-  - AI
+  - consciousness_research
+  - theoretical_framework
 files:
   - README.md
   - INTENTIONS.md
@@ -15,8 +20,13 @@ files:
   - meta.yaml
 child_directories:
   - blueprints
-  - cognition_index_protocol
   - devkit
   - foundational
+  - internal
+  - resources
+  - roadmaps
+  - spikes
+  - todo
+  - tools
   - models
   - tools
