@@ -133,7 +133,7 @@ It models cognition through:
 ---
 
 
-## 🧩 Implementation Repositories
+## 🧩 Dawn Field Ecosystem
 
 Dawn Field Theory is implemented across specialized repositories:
 
