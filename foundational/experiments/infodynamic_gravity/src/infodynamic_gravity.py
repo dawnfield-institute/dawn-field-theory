@@ -5,19 +5,25 @@ This module implements the formalized infodynamic gravity arithmetic:
 - I(r) = I₀ × exp(-r/λ_c) with quantum coherence floor for dark matter
 - F = -k_B T ln(2) × ∇I for Landauer-based forces
 - Recursive field evolution using Fracton's engine
+- Scale-dependent parameters: galaxy → cosmic web transition
 """
 
 import numpy as np
 from typing import Dict, Any, Optional, Tuple
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import logging
 
 try:
     from fracton import RecursiveExecutor, MemoryField, EntropyDispatcher, ExecutionContext
-    FRACTON_AVAILABLE = True
-except ImportError:
-    FRACTON_AVAILABLE = False
-    logging.warning("Fracton not available. Install with: pip install fracton")
+except ImportError as e:
+    raise ImportError(f"Fracton is required for infodynamic gravity experiments. Install with: pip install fracton\nError: {e}")
+
+from scale_dependent_arithmetic import (
+    calculate_characteristic_length, 
+    get_scale_dependent_parameters,
+    analyze_system_scale,
+    ScaleRegimes
+)
 
 # Physical constants
 K_B = 1.380649e-23  # Boltzmann constant (J/K)
@@ -26,12 +32,17 @@ KPC_TO_METERS = 3.086e19  # meters per kiloparsec
 
 @dataclass
 class InfoGravityConfig:
-    """Configuration for infodynamic gravity simulation"""
+    """Configuration for infodynamic gravity simulation with scale-dependent parameters"""
+    # Scale-dependent mode (if True, parameters auto-adjust based on system scale)
+    scale_dependent: bool = True
+    scale_regimes: ScaleRegimes = field(default_factory=ScaleRegimes)
+    
+    # Fixed parameters (used when scale_dependent=False or as fallback)
     lambda_c: float = 3.086e19  # Coherence length (1 kpc in meters) - will be mass-dependent
     T_info: float = 2.7         # Information temperature (K) - CMB temperature
-    alpha_info: float = 1e-4    # Information coupling constant (increased from 1e-6)
+    alpha_info: float = 0.005857    # Validated α from darkmatter_SEC_WIP (63% similarity)
     quantum_floor: float = 0.25 # Quantum coherence floor ratio (25% for dark matter)
-    kappa: float = 1e4          # Force amplification factor
+    kappa: float = 1e55        # Force amplification factor
     beta_floor: float = 0.25    # Quantum floor coefficient
     gamma: float = 0.2          # Power law decay exponent
     lambda_0: float = 30 * 3.086e19  # Base coherence length (30 kpc)
@@ -44,22 +55,24 @@ class InfoGravityField:
     """
     Infodynamic gravity field implementation using Fracton's recursive engine
     
-    Implements the formalized arithmetic:
+    Implements the formalized arithmetic with scale-dependent parameters:
     - Information coherence: I(r) = I₀ × exp(-r/λ_c) + I_quantum_floor
     - Landauer forces: F = -k_B T ln(2) × ∇I
+    - Scale adaptation: Parameters adjust based on system characteristic length
     - Recursive evolution for global information conservation
     """
     
     def __init__(self, config: InfoGravityConfig):
-        if not FRACTON_AVAILABLE:
-            raise ImportError("Fracton package required. Install with: pip install fracton")
-            
         self.config = config
         
-        # Initialize Fracton components
+        # Initialize Fracton components (required)
         self.recursive_engine = RecursiveExecutor()
         self.memory_field = MemoryField()
         self.entropy_dispatch = EntropyDispatcher()
+        
+        # Scale analysis (will be set when particles are provided)
+        self.scale_analysis = None
+        self.effective_params = None
         
         # Derived constants
         self.landauer_factor = K_B * config.T_info * np.log(2) * config.kappa
@@ -72,14 +85,69 @@ class InfoGravityField:
         self.force_history = []
         self.density_history = []
         
-        logging.info(f"InfoGravityField initialized with λ_c={config.lambda_c:.2e}m, "
-                    f"T_info={config.T_info}K, α={config.alpha_info}")
+        logging.info(f"InfoGravityField initialized with scale_dependent={config.scale_dependent}")
+    
+    def analyze_system_scale(self, positions: np.ndarray, masses: np.ndarray) -> Dict[str, Any]:
+        """
+        Analyze system scale and set appropriate parameters.
+        
+        Args:
+            positions: (N, 3) array of particle positions in meters
+            masses: (N,) array of particle masses in kg
+            
+        Returns:
+            Complete scale analysis including effective parameters
+        """
+        # Convert positions to kpc for scale analysis
+        positions_kpc = positions / KPC_TO_METERS
+        masses_solar = masses / SOLAR_MASS
+        
+        # Perform scale analysis
+        self.scale_analysis = analyze_system_scale(positions_kpc, masses_solar)
+        
+        if self.config.scale_dependent:
+            # Use scale-dependent parameters
+            scale_params = get_scale_dependent_parameters(
+                self.scale_analysis["L_characteristic"], 
+                self.config.scale_regimes
+            )
+            
+            # Convert to physical units and create effective parameters
+            self.effective_params = {
+                "kappa": scale_params["κ"] * 1e50,  # Convert to appropriate SI force scale
+                "lambda_c": scale_params["λ_c"] * KPC_TO_METERS,  # Convert kpc to meters
+                "beta_floor": scale_params["β_floor"],
+                "gamma": self.config.gamma,  # Keep fixed
+                "T_info": self.config.T_info,  # Keep fixed
+                "alpha_info": self.config.alpha_info  # Keep fixed
+            }
+            
+            # Update landauer factor with new kappa
+            self.landauer_factor = K_B * self.effective_params["T_info"] * np.log(2) * self.effective_params["kappa"]
+            
+            logging.info(f"Scale-adapted parameters: {scale_params['scale_regime']} regime, "
+                        f"L={self.scale_analysis['L_characteristic']:.0f} kpc, "
+                        f"Expected DM: {self.scale_analysis['expected_dark_matter_fraction']:.1%}")
+        else:
+            # Use fixed parameters from config
+            self.effective_params = {
+                "kappa": self.config.kappa,
+                "lambda_c": self.config.lambda_c,
+                "beta_floor": self.config.beta_floor,
+                "gamma": self.config.gamma,
+                "T_info": self.config.T_info,
+                "alpha_info": self.config.alpha_info
+            }
+            
+            logging.info("Using fixed parameters (scale_dependent=False)")
+        
+        return self.scale_analysis
     
     def calculate_coherence_matrix(self, positions: np.ndarray, masses: np.ndarray) -> np.ndarray:
         """
         Calculate information coherence matrix I(r) between all particle pairs
         
-        Uses v2.0 formulation:
+        Uses v2.0 formulation with scale-dependent parameters:
         I(r) = I₀ × exp(-r/λ_c) + I_quantum
         where I_quantum = β_floor × I₀ × (1 + r/λ_c)^(-γ)
         
@@ -90,12 +158,18 @@ class InfoGravityField:
         Returns:
             (N, N) symmetric matrix of information coherence values
         """
+        # Analyze system scale and set parameters if not already done
+        if self.effective_params is None:
+            self.analyze_system_scale(positions, masses)
+        
         N = len(masses)
         I_matrix = np.zeros((N, N))
         
-        # Calculate mass-dependent coherence length: λ_c = λ₀ × (M_total/M_sun)^0.2
-        total_mass = np.sum(masses)
-        lambda_c_eff = self.config.lambda_0 * (total_mass / SOLAR_MASS)**0.2
+        # Use effective parameters (either scale-dependent or fixed)
+        lambda_c_eff = self.effective_params["lambda_c"]
+        beta_floor = self.effective_params["beta_floor"]
+        gamma = self.effective_params["gamma"]
+        alpha_info = self.effective_params["alpha_info"]
         
         # Calculate pairwise information coherence
         for i in range(N):
@@ -103,23 +177,33 @@ class InfoGravityField:
                 r_ij = np.linalg.norm(positions[i] - positions[j])
                 
                 # Base information content I₀ = α × (m_i × m_j)/m_p²
-                I_0 = self.config.alpha_info * (masses[i] * masses[j]) / (self.m_proton**2)
+                I_0 = alpha_info * (masses[i] * masses[j]) / (self.m_proton**2)
                 
                 # Exponential decay component
                 I_coherent = I_0 * np.exp(-r_ij / lambda_c_eff)
                 
                 # Quantum coherence floor: I_quantum = β_floor × I₀ × (1 + r/λ_c)^(-γ)
                 r_normalized = r_ij / lambda_c_eff
-                I_quantum_floor = (self.config.beta_floor * I_0 * 
-                                 (1 + r_normalized)**(-self.config.gamma))
+                I_quantum_floor = (beta_floor * I_0 * 
+                                 (1 + r_normalized)**(-gamma))
                 
                 # Total information = coherent + quantum floor
                 I_matrix[i, j] = I_coherent + I_quantum_floor
                 I_matrix[j, i] = I_matrix[i, j]  # Symmetric
+                
+                # Debug dark matter emergence if requested
+                if hasattr(self.config, 'debug_dark_matter') and self.config.debug_dark_matter:
+                    if r_ij > 0:  # Avoid division by zero
+                        r_kpc = r_ij / KPC_TO_METERS
+                        quantum_dominates = I_quantum_floor > I_coherent
+                        print(f"Dark matter debug: r={r_kpc:.6f} kpc, r_norm={r_normalized:.6f}")
+                        print(f"  I_0={I_0:.2e}, I_coherent={I_coherent:.2e}, I_quantum={I_quantum_floor:.2e}")
+                        print(f"  Quantum dominates: {quantum_dominates}")
         
         # Store in Fracton memory field for history tracking
         self.memory_field.set('coherence_matrix', I_matrix)
         self.memory_field.set('lambda_c_effective', lambda_c_eff)
+        self.memory_field.set('scale_analysis', self.scale_analysis)
         self.coherence_history.append(np.sum(I_matrix))
         
         return I_matrix
@@ -185,8 +269,12 @@ class InfoGravityField:
                 r_hat = r_vec / r
                 r_normalized = r / lambda_c_eff
                 
-                # Base information content I₀ = α × (m_i × m_j)/m_p²
-                I_0 = self.config.alpha_info * (masses[i] * masses[j]) / (self.m_proton**2)
+                # Base information content with normalized mass scaling
+                # Use solar mass as natural unit to avoid extreme values
+                m_solar = 1.989e30  # kg
+                mass_ratio_i = masses[i] / m_solar
+                mass_ratio_j = masses[j] / m_solar
+                I_0 = self.config.alpha_info * mass_ratio_i * mass_ratio_j
                 
                 # Calculate information gradients (piecewise)
                 I_coherent = I_0 * np.exp(-r_normalized)
@@ -217,6 +305,44 @@ class InfoGravityField:
         
         return forces
     
+    def compute_cosmic_web_tidal_forces(self, positions: np.ndarray, 
+                                       redshift: float = 0.0) -> np.ndarray:
+        """
+        Compute tidal forces for cosmic web structure formation
+        Based on darkmatter_SEC_WIP cosmic web implementation
+        
+        Args:
+            positions: (N, 3) array of particle positions  
+            redshift: Cosmological redshift for evolution
+            
+        Returns:
+            (N, 3) array of tidal forces
+        """
+        N = len(positions)
+        
+        # Tidal strength scales with cosmic evolution
+        scale_factor = 1.0 / (1.0 + redshift)
+        tidal_strength = 5e-7 * (1.0 + redshift)**0.5
+        
+        # Create anisotropic tidal tensor for filamentary structure
+        # Major axis: x-direction (cosmic web spine)
+        # Minor axes: y,z-directions (compression for filaments)
+        tidal_tensor = np.zeros((3, 3))
+        tidal_tensor[0, 0] = tidal_strength * 3.0   # Stretching along spine
+        tidal_tensor[1, 1] = -tidal_strength * 1.5  # Compression
+        tidal_tensor[2, 2] = -tidal_strength * 1.5  # Compression
+        
+        # Apply tidal acceleration: a_tidal = T · r
+        tidal_forces = np.zeros_like(positions)
+        for i in range(3):
+            for j in range(3):
+                tidal_forces[:, i] += tidal_tensor[i, j] * positions[:, j]
+        
+        # Scale for cosmic web influence
+        tidal_forces *= 0.5
+        
+        return tidal_forces
+    
     def recursive_evolution_step(self, state: Dict[str, Any], dt: float) -> Dict[str, Any]:
         """
         Single recursive evolution step using Fracton's engine
@@ -238,10 +364,17 @@ class InfoGravityField:
         # Compute infodynamic forces
         info_forces = self.compute_information_forces(positions, masses, velocities)
         
+        # Add cosmic web tidal forces for structure formation
+        redshift = state.get('redshift', 0.0)  # Get redshift from state or default to 0
+        tidal_forces = self.compute_cosmic_web_tidal_forces(positions, redshift)
+        
+        # Combine forces
+        total_forces = info_forces + tidal_forces
+        
         # Use Fracton's recursive engine for stable integration
         def physics_step(memory, context):
-            # Calculate accelerations
-            accel = info_forces / masses.reshape(-1, 1)
+            # Calculate accelerations from combined forces
+            accel = total_forces / masses.reshape(-1, 1)
             
             # Update velocities with damping: v += a*dt*(1 - ξ*v²/v_max²)
             v_mag_sq = np.sum(velocities**2, axis=1)
@@ -301,13 +434,22 @@ class InfoGravityField:
                 r_ij = np.linalg.norm(positions[i] - positions[j])
                 r_normalized = r_ij / lambda_c_eff
                 
-                # Base information
-                I_0 = self.config.alpha_info * (masses[i] * masses[j]) / (self.m_proton**2)
+                # Base information with normalized mass scaling (same as force calculation)
+                m_solar = 1.989e30  # kg
+                mass_ratio_i = masses[i] / m_solar
+                mass_ratio_j = masses[j] / m_solar
+                I_0 = self.config.alpha_info * mass_ratio_i * mass_ratio_j
                 
                 # Components
                 I_coherent = I_0 * np.exp(-r_normalized)
                 I_quantum = (self.config.beta_floor * I_0 * 
                            (1 + r_normalized)**(-self.config.gamma))
+                
+                # Debug output for first few pairs
+                if i == 0 and j == 1:
+                    print(f"Dark matter debug: r={r_ij/KPC_TO_METERS:.6f} kpc, r_norm={r_normalized:.6f}")
+                    print(f"  I_0={I_0:.2e}, I_coherent={I_coherent:.2e}, I_quantum={I_quantum:.2e}")
+                    print(f"  Quantum dominates: {I_quantum > I_coherent}")
                 
                 # If quantum floor dominates, count it as dark matter
                 if I_quantum > I_coherent:
@@ -366,36 +508,43 @@ class InfoGravityField:
             'memory_field_keys': list(self.memory_field.keys()) if hasattr(self.memory_field, 'keys') else ['coherence_matrix']
         }
 
-def create_two_body_test() -> Tuple[InfoGravityField, Dict[str, Any]]:
+def create_two_body_test(separation_kpc: float = 100.0, 
+                         mass_solar: float = 1.0,
+                         scale_dependent: bool = True) -> Tuple[InfoGravityField, Dict[str, Any]]:
     """
-    Create a simple two-body test case for validation using v2.0 parameters
+    Create a simple two-body test case for infodynamic gravity with scale-appropriate parameters.
     
+    Args:
+        separation_kpc: Initial separation in kiloparsecs (default: 100 kpc for cosmic web scale)
+        mass_solar: Mass of each body in solar masses
+        scale_dependent: Whether to use scale-dependent parameters
+        
     Returns:
-        Configured InfoGravityField and initial state
+        Tuple of (InfoGravityField, initial_state)
     """
+    # Create scale-dependent config (will auto-adjust based on system scale)
     config = InfoGravityConfig(
-        lambda_0=30 * KPC_TO_METERS,  # 30 kpc base coherence length
+        scale_dependent=scale_dependent,
         T_info=2.7,
-        alpha_info=1e-4,              # Increased coupling
-        beta_floor=0.25,              # 25% quantum floor
-        gamma=0.2,                    # Power law decay
-        kappa=1e-2                    # Much smaller force amplification
+        alpha_info=0.005857  # Validated from darkmatter_SEC_WIP
     )
     
     gravity_field = InfoGravityField(config)
     
-    # Two solar masses separated by 1 kpc
+    # Initial positions 
+    separation = separation_kpc * KPC_TO_METERS
     initial_state = {
         'positions': np.array([
             [0, 0, 0],
-            [KPC_TO_METERS, 0, 0]
+            [separation, 0, 0]  
         ]),
         'velocities': np.array([
             [0, 0, 0],
             [0, 0, 0]
         ]),
-        'masses': np.array([SOLAR_MASS, SOLAR_MASS]),
-        'time': 0.0
+        'masses': np.array([mass_solar * SOLAR_MASS, mass_solar * SOLAR_MASS]),
+        'time': 0.0,
+        'dt': 3.15e13  # 1 Myr in seconds
     }
     
     return gravity_field, initial_state
@@ -415,9 +564,13 @@ if __name__ == "__main__":
         
         separation = np.linalg.norm(state['positions'][1] - state['positions'][0])
         
+        # Debug velocity
+        velocity_magnitude = np.linalg.norm(state['velocities'][1] - state['velocities'][0])
+        
         print(f"Step {step+1}: separation={separation/KPC_TO_METERS:.3f} kpc, "
               f"total_info={state['total_information']:.2e}, "
-              f"dark_matter={state['dark_matter_fraction']:.1%}")
+              f"dark_matter={state['dark_matter_fraction']:.1%}, "
+              f"velocity={velocity_magnitude:.2e} m/s")
     
     # Validate conservation
     conservation = gravity.validate_conservation_laws(state)

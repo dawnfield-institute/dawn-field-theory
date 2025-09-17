@@ -14,18 +14,19 @@ from dataclasses import dataclass, field
 import logging
 
 try:
-    from fracton.core.entropy_dispatch import EntropyDispatch
+    from fracton.core.entropy_dispatch import EntropyDispatcher
     from fracton.core.bifractal_trace import BifractalTrace
-    FRACTON_AVAILABLE = True
-except ImportError:
-    FRACTON_AVAILABLE = False
-    logging.warning("Fracton not available for SEC dynamics")
+except ImportError as e:
+    raise ImportError(f"Fracton is required for SEC dynamics. Install with: pip install fracton\nError: {e}")
 
 @dataclass
 class SECConfig:
-    """Configuration for Structured Entropy Collapse dynamics"""
-    collapse_threshold: float = 0.8       # Entropy threshold for collapse
-    stabilization_factor: float = 0.95    # Post-collapse entropy reduction
+    """Configuration for Structured Entropy Collapse dynamics with validated parameters"""
+    # Validated parameters from darkmatter_SEC_WIP (63% similarity to observations)
+    collapse_threshold: float = 1.0571    # ξ threshold from MED validation
+    stabilization_factor: float = 0.55    # Entropy threshold for balance (Ξ ≈ 1)
+    clustering_strength: float = 0.25     # Crystallization threshold
+    branching_bias: float = 0.12          # Collapse curvature threshold
     memory_depth: int = 100               # History tracking depth
     force_amplification: float = 1e6      # Collapse force scaling
     entropy_floor: float = 0.01           # Minimum entropy level
@@ -52,18 +53,11 @@ class SECDynamics:
     """
     
     def __init__(self, config: SECConfig):
-        if not FRACTON_AVAILABLE:
-            logging.warning("Fracton not available - using fallback SEC implementation")
-            
         self.config = config
         
-        # Initialize Fracton components if available
-        if FRACTON_AVAILABLE:
-            self.entropy_dispatch = EntropyDispatch()
-            self.bifractal_trace = BifractalTrace()
-        else:
-            self.entropy_dispatch = None
-            self.bifractal_trace = None
+        # Initialize Fracton components (required)
+        self.entropy_dispatch = EntropyDispatcher()
+        self.bifractal_trace = BifractalTrace()
         
         # State tracking
         self.collapse_history: List[CollapseEvent] = []

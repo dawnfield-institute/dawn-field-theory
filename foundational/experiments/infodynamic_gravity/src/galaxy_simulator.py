@@ -181,21 +181,35 @@ class GalaxySimulator:
             'masses': masses,
             'time': 0.0,
             'dt': 10 * MYR_TO_SECONDS,  # 10 Myr timestep
+            'redshift': 3.0,  # Start at high redshift for temporal gradient evolution
             'N_disk': N_disk,
             'N_bulge': N_bulge
         }
     
     def evolve_step(self):
-        """Single evolution step combining infodynamic gravity + SEC"""
+        """Single evolution step combining infodynamic gravity + SEC + temporal gradient"""
         
-        # Infodynamic gravity evolution
-        self.state = self.gravity_field.recursive_evolution_step(self.state, self.state['dt'])
+        # Temporal gradient evolution: redshift decreases with time
+        # Simulate cosmic evolution from z=3 to z=0 over simulation time
+        total_cosmic_time = 5000 * MYR_TO_SECONDS  # 5 Gyr simulation
+        z_initial = 3.0
+        z_final = 0.0
+        
+        # Calculate current redshift based on elapsed time
+        time_fraction = self.time / total_cosmic_time
+        current_redshift = z_initial * (1 - time_fraction) + z_final * time_fraction
+        current_redshift = max(current_redshift, 0.0)  # Don't go negative
+        self.state['redshift'] = current_redshift
+        
+        # Infodynamic gravity evolution (now includes tidal forces via redshift)
+        dt = self.state.get('dt', 10 * MYR_TO_SECONDS)
+        self.state = self.gravity_field.recursive_evolution_step(self.state, dt)
         
         # SEC collapse dynamics
         self.state = self.sec_dynamics.execute_collapse_step(self.state)
         
         # Update time
-        self.time += self.state['dt']
+        self.time += dt
         self.state['time'] = self.time
     
     def run_simulation(self, n_steps: int, save_interval: int = 10) -> List[Dict[str, Any]]:
@@ -210,7 +224,7 @@ class GalaxySimulator:
             List of trajectory snapshots
         """
         
-        print(f"Starting galaxy simulation: {n_steps} steps, {n_steps * self.state['dt'] / MYR_TO_SECONDS:.1f} Myr total")
+        print(f"Starting galaxy simulation: {n_steps} steps, {n_steps * self.state.get('dt', 10*MYR_TO_SECONDS) / MYR_TO_SECONDS:.1f} Myr total")
         
         start_time = time.time()
         
