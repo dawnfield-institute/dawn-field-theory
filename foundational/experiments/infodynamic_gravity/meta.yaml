@@ -1,0 +1,32 @@
+schema_version: '2.0'
+directory_name: infodynamic_gravity
+description: >
+  Experimental implementation of infodynamic gravity theory using Fracton as 
+  computational backend. Tests the formalized arithmetic for information-based 
+  gravity with Landauer principle integration, recursive field dynamics, and 
+  dark matter emergence through quantum coherence floors.
+semantic_scope:
+- infodynamic_gravity
+- fracton_integration  
+- dark_matter_simulation
+- landauer_principle
+- sec_dynamics
+- recursive_gravity
+- information_theory
+- galaxy_rotation_curves
+files:
+- README.md
+- requirements.txt
+- infodynamic_gravity.py
+- sec_dynamics.py
+- galaxy_simulator.py
+- validation_tests.py
+- run_experiments.py
+child_directories:
+- results
+- reference_material
+generation_context:
+  generator: ai_enhanced
+  file_count: 0
+  directory_count: 0
+  primary_file_types: {}

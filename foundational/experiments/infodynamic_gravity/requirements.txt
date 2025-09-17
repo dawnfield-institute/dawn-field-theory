@@ -1,0 +1,7 @@
+fracton>=0.1.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+scipy>=1.7.0
+astropy>=5.0.0
+pytest>=6.0.0
+cupy>=9.0.0  # Optional: for GPU acceleration
