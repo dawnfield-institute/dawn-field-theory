@@ -12,8 +12,12 @@ from dataclasses import dataclass
 import logging
 import time
 
-from infodynamic_gravity import InfoGravityField, InfoGravityConfig
-from sec_dynamics import SECDynamics, SECConfig
+try:
+    from .infodynamic_gravity import InfoGravityField, InfoGravityConfig
+    from .sec_dynamics import SECDynamics, SECConfig
+except ImportError:
+    from infodynamic_gravity import InfoGravityField, InfoGravityConfig
+    from sec_dynamics import SECDynamics, SECConfig
 
 # Astronomical constants
 SOLAR_MASS = 1.989e30  # kg
