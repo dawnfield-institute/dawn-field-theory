@@ -44,6 +44,14 @@ def run_scale_summary():
     
     os.system("python tests/test_scale_dependent_summary.py")
 
+def run_parameter_sweep():
+    """Run QBE-enhanced parameter sweep analysis"""
+    print("=" * 60)
+    print("QBE-ENHANCED PARAMETER SWEEP ANALYSIS")
+    print("=" * 60)
+    
+    os.system("python src/parameter_sweep_analysis.py")
+
 def run_parameter_investigation():
     """Run parameter investigation experiments"""
     print("=" * 60)
@@ -193,6 +201,10 @@ def run_all():
     run_validation_suite()
     print()
     
+    # QBE parameter sweep (NEW)
+    run_parameter_sweep()
+    print()
+    
     # Scale-dependent summary  
     run_scale_summary()
     print()
@@ -214,18 +226,19 @@ def run_all():
 def show_menu():
     """Show interactive menu"""
     print("=" * 60)
-    print("INFODYNAMIC GRAVITY EXPERIMENT RUNNER v3.0")
+    print("INFODYNAMIC GRAVITY EXPERIMENT RUNNER v3.1")
     print("=" * 60)
     print()
     print("1. Run Validation Suite")
-    print("2. Run Cosmic Web Experiment") 
-    print("3. Run Hierarchical Information Test")
-    print("4. Run Scale-Dependent Summary")
-    print("5. Run Parameter Investigation (NEW)")
-    print("6. Run All Experiments")
-    print("7. Exit")
+    print("2. Run QBE Parameter Sweep (NEW)")
+    print("3. Run Cosmic Web Experiment") 
+    print("4. Run Hierarchical Information Test")
+    print("5. Run Scale-Dependent Summary")
+    print("6. Run Parameter Investigation")
+    print("7. Run All Experiments")
+    print("8. Exit")
     print()
-    print("Note: v3.0 focuses on parameter iteration and investigation")
+    print("Note: v3.1 includes QBE autotuner with enhanced Landauer forces")
 
 def main():
     """Main runner interface"""
@@ -234,6 +247,8 @@ def main():
         arg = sys.argv[1].lower()
         if arg == "validation":
             run_validation_suite()
+        elif arg == "qbe" or arg == "sweep":
+            run_parameter_sweep()
         elif arg == "cosmic":
             run_cosmic_web_experiment()
         elif arg == "hierarchical":
@@ -246,30 +261,32 @@ def main():
             run_all()
         else:
             print(f"Unknown command: {arg}")
-            print("Usage: python run.py [validation|cosmic|hierarchical|scale|investigate|all]")
+            print("Usage: python run.py [validation|qbe|cosmic|hierarchical|scale|investigate|all]")
     else:
         # Interactive mode
         while True:
             show_menu()
-            choice = input("Select option (1-7): ").strip()
+            choice = input("Select option (1-8): ").strip()
             
             if choice == "1":
                 run_validation_suite()
             elif choice == "2":
-                run_cosmic_web_experiment()
+                run_parameter_sweep()
             elif choice == "3":
-                run_hierarchical_test()
+                run_cosmic_web_experiment()
             elif choice == "4":
-                run_scale_summary()
+                run_hierarchical_test()
             elif choice == "5":
-                run_parameter_investigation()
+                run_scale_summary()
             elif choice == "6":
-                run_all()
+                run_parameter_investigation()
             elif choice == "7":
+                run_all()
+            elif choice == "8":
                 print("Goodbye!")
                 break
             else:
-                print("Invalid choice. Please select 1-7.")
+                print("Invalid choice. Please select 1-8.")
             
             input("\nPress Enter to continue...")
 
