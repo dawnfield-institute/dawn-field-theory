@@ -1,0 +1,9 @@
+{
+  "N": 128,
+  "alpha": 0.25,
+  "eta": 0.2,
+  "noise": 0.005,
+  "seed": 1,
+  "use_fft": true,
+  "steps": 300
+}
