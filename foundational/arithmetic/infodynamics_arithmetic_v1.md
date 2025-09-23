@@ -28,6 +28,10 @@ linked_framework: Dawn Field Theory
 schema_version: dawn_v1
 ---
 
+> **Note on Amplification and Conservation:**
+> 
+> Amplification factors (such as 15.56x) reported in experiments are *empirical observations* measured from the local (child) perspective in specific computational contexts. These are not universal constants or theoretical predictions of the framework, but context-dependent outcomes. The global (parent) perspective always maintains conservation, as enforced by the PAC meta-law. This distinction is crucial for interpreting results and for ongoing theoretical development.
+
 # Infodynamics Arithmetic — Formalism for Collapse-Oriented Entropy-Information Dynamics
 
 ## 1. Introduction
