@@ -1,0 +1,33 @@
+PAC PHYSICS ENGINE - RAW MEASUREMENT SUMMARY
+==================================================
+
+Timestamp: 2025-09-22T14:40:12.108394
+Device: cpu
+
+CONSERVATION MEASUREMENTS:
+  total_residual_norm: 0.0
+  mean_residual: 0.0
+  max_violation: 0.0
+  violation_count: 0
+  conservation_quality: 1.0
+  conservation_stability: 1.0
+  global_balance: 1.0
+
+AMPLIFICATION MEASUREMENTS:
+  parent_perspective: {'observed_ratio': 1.0, 'initial_content': 69.31112670898438, 'final_content': 69.31112670898438, 'conservation_enforced': True}
+  child_perspective: {'observed_ratio': 2.9332698363030536, 'initial_content': 23.33382225036621, 'final_content': 68.44439697265625, 'conservation_visible': False, 'reference_ratio': 15.56, 'relative_to_reference': 0.18851348562358955, 'viewing_concentration_region': True}
+  spatial_redistribution: {'concentration_points': 13, 'field_size': 64, 'concentration_fraction': 0.203125}
+  engine_reported_ratio: 1.0
+  entropy_change: -1.3990235328674316
+  resonance_strength: 0.0
+  amplification_mode: AmplificationMode.CRITICAL
+  methodology: spatial_redistribution_measurement
+
+CROSS-SCALE MEASUREMENTS:
+  conservation_consistency: 0.8166666666666668
+  temporal_synchronization: 0.5
+  validation_passed: False
+
+SIGNATURE MEASUREMENTS:
+  detected_count: 5
+  overall_validation_score: 0.7886029411764706

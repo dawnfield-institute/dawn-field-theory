@@ -1,0 +1,133 @@
+{
+  "conservation": {
+    "total_residual_norm": 0.0,
+    "mean_residual": 0.0,
+    "max_violation": 0.0,
+    "violation_count": 0,
+    "conservation_quality": 1.0,
+    "conservation_stability": 1.0,
+    "global_balance": 1.0
+  },
+  "amplification": {
+    "parent_perspective": {
+      "observed_ratio": 1.0,
+      "initial_content": 64.0,
+      "final_content": 64.0,
+      "conservation_enforced": true
+    },
+    "child_perspective": {
+      "observed_ratio": 1.0,
+      "initial_content": 16.0,
+      "final_content": 16.0,
+      "conservation_visible": false,
+      "reference_ratio": 15.56,
+      "relative_to_reference": 0.06426735218508997
+    },
+    "engine_reported_ratio": 1.0,
+    "entropy_change": 0.0,
+    "resonance_strength": 0.0,
+    "amplification_mode": "AmplificationMode.CRITICAL",
+    "methodology": "dual_perspective_measurement"
+  },
+  "cross_scale": {
+    "scale_correlations": {
+      "overall": 0.0
+    },
+    "conservation_consistency": 0.8166666666666668,
+    "temporal_synchronization": 0.5,
+    "validation_passed": false
+  },
+  "signatures": {
+    "detected_count": 5,
+    "signature_completeness": 0.625,
+    "temporal_consistency": 1.0,
+    "spatial_coherence": 1.0,
+    "overall_validation_score": 0.7886029411764706,
+    "detections": [
+      {
+        "type": "SignatureType.AMPLIFICATION_15_56X",
+        "strength": 0.0,
+        "confidence": 0.0,
+        "frequency": 0.0,
+        "metadata": {
+          "measured_ratio": 0.0,
+          "target_ratio": 15.56,
+          "error": 15.56,
+          "deviation": 1.0,
+          "within_tolerance": false,
+          "timestep": 0,
+          "actual_amplification": 0.0,
+          "target_amplification": 15.56
+        }
+      },
+      {
+        "type": "SignatureType.BALANCE_OPERATOR_XI",
+        "strength": 0.95,
+        "confidence": 0.9641471951565603,
+        "frequency": 0.0,
+        "metadata": {
+          "measured_xi": 1.095,
+          "target_xi": 1.0571,
+          "conservation_quality": 0.95,
+          "error": 0.037900000000000045,
+          "deviation": 0.035852804843439647,
+          "within_tolerance": false,
+          "timestep": 0,
+          "balance_operator_measured": 1.095,
+          "balance_operator_target": 1.0571
+        }
+      },
+      {
+        "type": "SignatureType.ENTROPY_COLLAPSE",
+        "strength": 1.0,
+        "confidence": 1.0,
+        "frequency": 0.0,
+        "metadata": {
+          "collapse_strength": 0.1,
+          "num_collapses": 0,
+          "locations": [],
+          "timestep": 0
+        }
+      },
+      {
+        "type": "SignatureType.PAC_RESONANCE",
+        "strength": 0.925,
+        "confidence": 0.925,
+        "frequency": 0.0,
+        "metadata": {
+          "pac_resonance": 0.925,
+          "conservation_metrics": [
+            0.95,
+            0.9
+          ],
+          "timestep": 0
+        }
+      },
+      {
+        "type": "SignatureType.CONSCIOUSNESS_THRESHOLD",
+        "strength": 0.7,
+        "confidence": 0.0,
+        "frequency": 0.0,
+        "metadata": {
+          "awareness_metric": 0.7,
+          "consciousness_level": "none",
+          "emergence_locations": [],
+          "timestep": 0
+        }
+      }
+    ]
+  },
+  "system": {
+    "device": "cpu",
+    "spatial_resolution": "unknown",
+    "timestamp": "2025-09-22T14:38:36.614951",
+    "engine_version": "2.0.0",
+    "frameworks": [
+      "PAC",
+      "SEC",
+      "MED",
+      "IAF",
+      "SCBF"
+    ]
+  }
+}
