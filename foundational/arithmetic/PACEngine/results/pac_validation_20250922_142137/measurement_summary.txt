@@ -1,0 +1,31 @@
+PAC PHYSICS ENGINE - RAW MEASUREMENT SUMMARY
+==================================================
+
+Timestamp: 2025-09-22T14:21:37.600444
+Device: cuda
+
+CONSERVATION MEASUREMENTS:
+  total_residual_norm: 0.0
+  mean_residual: 0.0
+  max_violation: 0.0
+  violation_count: 0
+  conservation_quality: 1.0
+  conservation_stability: 1.0
+  global_balance: 1.0
+
+AMPLIFICATION MEASUREMENTS:
+  measured_ratio: 1.0
+  target_ratio: 15.56
+  deviation: 14.56
+  entropy_change: 0.0
+  resonance_strength: 0.0
+  amplification_mode: AmplificationMode.CRITICAL
+
+CROSS-SCALE MEASUREMENTS:
+  conservation_consistency: 0.8166666666666668
+  temporal_synchronization: 0.5
+  validation_passed: False
+
+SIGNATURE MEASUREMENTS:
+  detected_count: 5
+  overall_validation_score: 0.7886029411764706
