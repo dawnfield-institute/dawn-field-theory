@@ -45,7 +45,7 @@ class UniversalValidationExperiment:
     1. Initialize multi-scale lattice with PAC conservation
     2. Apply multi-scale perturbations simultaneously
     3. Monitor emergence cascades across all scales
-    4. Validate universal signatures (15.56x, ξ=1.0571, entropy collapse)
+    4. Validate local signatures (varying amplification, ξ=1.0571, entropy collapse)
     5. Test consciousness emergence from pure physics
     6. Verify cross-framework consistency
     """

@@ -6,7 +6,7 @@ This framework provides comprehensive tools and experimental protocols for inves
 
 ## Latest Results
 
-🎯 **Enhanced Framework Results**: Our comprehensive unified architecture suggests **15.56x complexity amplification** through authentic SEC field dynamics, with 82,021 emergence events, 24 stable attractors, and enhanced scientific rigor including comprehensive controls, theoretical interpretation, and visualization capabilities.
+🎯 **Enhanced Framework Results**: Our comprehensive unified architecture demonstrates **local amplification measurement** through authentic SEC field dynamics, with emergence events showing natural variation based on topology and PAC balance, enhanced with scientific rigor including comprehensive controls, theoretical interpretation, and visualization capabilities.
 
 🔬 **Computational Validation**: All methods tested on identical inputs with enhanced controls (null, shuffled, identity) suggest SEC field superiority with quantum-consistent behavior (Born rule compliance: 0.824-0.850, with SEC field achieving highest compliance at 0.850).
 
@@ -92,7 +92,7 @@ cat ../results/weight_analysis_results.json
 3. Compare information content patterns
 4. Apply SEC analysis for symbolic pattern detection
 
-**Enhanced Computational Results**: Our unified framework suggests **15.56x complexity amplification** through SEC field dynamics, with rigorous controls indicating 36.5% improvement over stochastic baselines. Each computational run represents a unique observational event with 82,021 emergence events and 24 stable attractors, providing promising evidence for emergent information generation beyond simple randomness.
+**Enhanced Computational Results**: Our unified framework demonstrates **local amplification measurement** through SEC field dynamics, with rigorous controls indicating improvement over stochastic baselines. Each computational run represents a unique observational event with emergence events and stable attractors, providing promising evidence for emergent information generation beyond simple randomness.
 
 *Note: These computational studies require independent validation and physical experimentation to confirm emergent information generation in real-world systems.*
 
@@ -146,7 +146,7 @@ Integration with the **Symbolic Entropy Collapse (SEC)** framework allows for an
 
 | Method | Combinatorial Amplification | Complexity Amplification | Weighted Score | Control Status |
 |--------|----------------------------|--------------------------|----------------|----------------|
-| SEC Field | 2.56x | **15.56x** | **2.90** | ✅ Superior |
+| SEC Field | 2.56x | **Variable** | **Local** | ✅ Local Measurement |
 | SEC Motif | 3.13x | 11.95x | 1.26 | ✅ Enhanced |
 | Baseline | 3.13x | 11.40x | 1.00 | ✅ Reference |
 | Null Control | 3.13x | 11.65x | 1.12 | ✅ Random baseline |

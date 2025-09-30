@@ -1,7 +1,7 @@
 """
 Information Amplification Module
 
-Implements the universal 15.56x information amplification phenomenon
+Implements local information amplification phenomenon varying with topology
 through PAC conservation dynamics across information scales.
 """
 
@@ -28,7 +28,7 @@ class InfoAmpResult:
     amplification_mode: AmplificationMode
 
 class InformationAmplificationModule:
-    """Universal 15.56x Information Amplification through PAC Conservation"""
+    """Local Information Amplification through PAC Conservation"""
     
     def __init__(self, target_amplification: float = 15.56, device: str = "auto"):
         self.target_amplification = target_amplification
@@ -188,7 +188,7 @@ class InformationAmplificationModule:
         return density
     
     def _detect_amplification_resonance(self, ratio: float) -> float:
-        """Detect resonance with universal 15.56x signature"""
+        """Detect resonance with local amplification signature"""
         target_ratio = self.target_amplification
         error = abs(ratio - target_ratio) / target_ratio
         

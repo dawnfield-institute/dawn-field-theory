@@ -15,6 +15,7 @@ Welcome to the playground of ideas! 🛠️ This directory brings the theoretica
 * `legacy/` – 📜 Archival simulations covering early implementations of symbolic field behavior (`brain`, `cosmo`, `vcpu`).
 * `pi_harmonics/` – 🎵 Symbolic harmonic resonance patterns derived from π-symmetry structures, with computational validation. Includes code, YAML configs, and results.
 * `predictive_collapse/` – 🔮 Experiments in forecasting symbolic collapse outcomes using entropy-informed predictors. Contains simulation scripts and results.
+* `pre_field_recursion/` – 🌀 Pre-Field Recursion experimental framework investigating Möbius topology as computational substrate. Studies natural information amplification emergence, PAC conservation laws, and universal constants in geometric computational systems.
 * `recursive_entropy/` – 🔁🔥 Recursive symbolic entropy collapse simulations and analysis. Includes main code and results.
 * `recursive_gravity/` – 🌌 Emergent superfluid and galactic structure simulations grounded in recursive gravitational field modeling. Features multiple simulation scripts and results.
 * `recursive_tree/` – 🌳 Tests of symbolic tree-like recursive pattern formation under entropy constraints. Includes code and results.

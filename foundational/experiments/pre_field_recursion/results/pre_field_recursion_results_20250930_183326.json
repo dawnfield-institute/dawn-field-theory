@@ -1,0 +1,4634 @@
+{
+  "total_experiments": 100,
+  "successful_experiments": 100,
+  "success_rate": 100.0,
+  "pac_consistency": 100.0,
+  "amplification_stats": {
+    "count": 100,
+    "mean": 0.500442986806304,
+    "std": 0.0003663100805905286,
+    "min": 0.500010072078447,
+    "max": 0.5017764848608569,
+    "median": 0.500345835913873,
+    "natural_range": [
+      0.500010072078447,
+      0.5017764848608569
+    ]
+  },
+  "amplification_range": [
+    0.500010072078447,
+    0.5017764848608569
+  ],
+  "xi_convergence_rate": 100.0,
+  "average_xi": 1.0571009999999996,
+  "xi_target": 1.0571,
+  "experiment_details": [
+    {
+      "experiment_id": 0,
+      "parent_point": 59,
+      "children_indices": [
+        57,
+        58,
+        60,
+        61
+      ],
+      "pac_validation": {
+        "parent_value": -0.02846887682722321,
+        "children_sum": -0.028468876827223207,
+        "children_values": [
+          -0.007463705809076205,
+          -0.006669616401410956,
+          -0.007226511184450557,
+          -0.007109043432285492
+        ],
+        "deviation": 3.469446951953614e-18,
+        "relative_deviation": 1.2186806571293933e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.623588"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004099766093126,
+        "input_magnitude": 0.02846887682722321,
+        "output_magnitude": 0.01424610998720417,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9988081190818223,
+        "entropy_change": 1.9988081190818223,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.623588"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.623588"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.623588"
+    },
+    {
+      "experiment_id": 1,
+      "parent_point": 24,
+      "children_indices": [
+        22,
+        23,
+        25,
+        26
+      ],
+      "pac_validation": {
+        "parent_value": -0.08786003156592814,
+        "children_sum": -0.08786003156592816,
+        "children_values": [
+          -0.02218210733953888,
+          -0.021846453832492098,
+          -0.021839223094100732,
+          -0.021992247299796444
+        ],
+        "deviation": 1.3877787807814457e-17,
+        "relative_deviation": 1.579533669686982e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.623588"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.500010072078447,
+        "input_magnitude": 0.08786003156592814,
+        "output_magnitude": 0.04393090071609436,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9999709749049916,
+        "entropy_change": 1.9999709749049916,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.623588"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.623588"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.623588"
+    },
+    {
+      "experiment_id": 2,
+      "parent_point": 4,
+      "children_indices": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "pac_validation": {
+        "parent_value": -0.687962719115127,
+        "children_sum": -0.687962719115127,
+        "children_values": [
+          -0.169741816947228,
+          -0.1664270609236126,
+          -0.17926943152414604,
+          -0.17252440972014033
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.623588"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001885925964956,
+        "input_magnitude": 0.687962719115127,
+        "output_magnitude": 0.3441111042330536,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9994579946756286,
+        "entropy_change": 1.9994579946756286,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 3,
+      "parent_point": 54,
+      "children_indices": [
+        52,
+        53,
+        55,
+        56
+      ],
+      "pac_validation": {
+        "parent_value": 0.4157107029295637,
+        "children_sum": 0.4157107029295637,
+        "children_values": [
+          0.09835252214174234,
+          0.09788551455641772,
+          0.10832365927293634,
+          0.11114900695846727
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5008040407999123,
+        "input_magnitude": 0.4157107029295637,
+        "output_magnitude": 0.2081895998308974,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9976804065539773,
+        "entropy_change": 1.9976804065539773,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 4,
+      "parent_point": 26,
+      "children_indices": [
+        24,
+        25,
+        27,
+        28
+      ],
+      "pac_validation": {
+        "parent_value": -0.6006524356832805,
+        "children_sum": -0.6006524356832805,
+        "children_values": [
+          -0.16340223059373563,
+          -0.14002255600831057,
+          -0.15506322130775135,
+          -0.14216442777348295
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5010136954100045,
+        "input_magnitude": 0.6006524356832805,
+        "output_magnitude": 0.3009350964587004,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9970851551973543,
+        "entropy_change": 1.9970851551973543,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 5,
+      "parent_point": 13,
+      "children_indices": [
+        11,
+        12,
+        14,
+        15
+      ],
+      "pac_validation": {
+        "parent_value": -0.5753217786434477,
+        "children_sum": -0.5753217786434477,
+        "children_values": [
+          -0.12316060374240434,
+          -0.15403155816449896,
+          -0.15027936407150733,
+          -0.147850252665037
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5017764848608569,
+        "input_magnitude": 0.5753217786434477,
+        "output_magnitude": 0.2886829397516052,
+        "input_entropy": -0.0,
+        "output_entropy": 1.994699898832853,
+        "entropy_change": 1.994699898832853,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 6,
+      "parent_point": 12,
+      "children_indices": [
+        10,
+        11,
+        13,
+        14
+      ],
+      "pac_validation": {
+        "parent_value": 0.6648852816008435,
+        "children_sum": 0.6648852816008436,
+        "children_values": [
+          0.1640530695614022,
+          0.16185969338992243,
+          0.18468977180500276,
+          0.15428274684451612
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.6697963623921316e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999997,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5011463221572703,
+        "input_magnitude": 0.6648852816008435,
+        "output_magnitude": 0.3332048135307637,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9967424336163095,
+        "entropy_change": 1.9967424336163095,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 7,
+      "parent_point": 3,
+      "children_indices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "pac_validation": {
+        "parent_value": 0.1973169683940732,
+        "children_sum": 0.19731696839407317,
+        "children_values": [
+          0.04811096270141838,
+          0.049533579713113514,
+          0.05229794474473778,
+          0.04737448123480351
+        ],
+        "deviation": 2.7755575615628914e-17,
+        "relative_deviation": 1.406649202120146e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003635666191284,
+        "input_magnitude": 0.1973169683940732,
+        "output_magnitude": 0.09873022206013231,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9989585798718592,
+        "entropy_change": 1.9989585798718592,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 8,
+      "parent_point": 35,
+      "children_indices": [
+        33,
+        34,
+        36,
+        37
+      ],
+      "pac_validation": {
+        "parent_value": -0.1973169683940732,
+        "children_sum": -0.1973169683940732,
+        "children_values": [
+          -0.05011032924912058,
+          -0.04894533081740033,
+          -0.04870635123603978,
+          -0.04955495709151251
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000307286423058,
+        "input_magnitude": 0.1973169683940732,
+        "output_magnitude": 0.09866454747957926,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9999114254276498,
+        "entropy_change": 1.9999114254276498,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 9,
+      "parent_point": 41,
+      "children_indices": [
+        39,
+        40,
+        42,
+        43
+      ],
+      "pac_validation": {
+        "parent_value": -0.416145155592091,
+        "children_sum": -0.416145155592091,
+        "children_values": [
+          -0.10432950402595197,
+          -0.10091327313913574,
+          -0.10560047095156275,
+          -0.10530190747544053
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000801871016198,
+        "input_magnitude": 0.416145155592091,
+        "output_magnitude": 0.20810594726992554,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997672711766794,
+        "entropy_change": 1.9997672711766794,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 10,
+      "parent_point": 43,
+      "children_indices": [
+        41,
+        42,
+        44,
+        45
+      ],
+      "pac_validation": {
+        "parent_value": -0.9398197043239886,
+        "children_sum": -0.9398197043239885,
+        "children_values": [
+          -0.22252746286212627,
+          -0.23629974206868512,
+          -0.24292958849769922,
+          -0.23806291089547793
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.1813149048877825e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002597709614238,
+        "input_magnitude": 0.9398197043239886,
+        "output_magnitude": 0.47015399003015157,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9992435873174272,
+        "entropy_change": 1.9992435873174272,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 11,
+      "parent_point": 24,
+      "children_indices": [
+        22,
+        23,
+        25,
+        26
+      ],
+      "pac_validation": {
+        "parent_value": -0.08786003156592814,
+        "children_sum": -0.08786003156592813,
+        "children_values": [
+          -0.021943831985771035,
+          -0.021532656980196258,
+          -0.02160343483230138,
+          -0.022780107767659458
+        ],
+        "deviation": 1.3877787807814457e-17,
+        "relative_deviation": 1.579533669686982e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001272606015388,
+        "input_magnitude": 0.08786003156592814,
+        "output_magnitude": 0.043941196903432365,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9996350394746425,
+        "entropy_change": 1.9996350394746425,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 12,
+      "parent_point": 51,
+      "children_indices": [
+        49,
+        50,
+        52,
+        53
+      ],
+      "pac_validation": {
+        "parent_value": 0.4175417196039162,
+        "children_sum": 0.4175417196039162,
+        "children_values": [
+          0.10189757848039252,
+          0.10362159356334073,
+          0.10960332246386799,
+          0.10241922509631493
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002171432729984,
+        "input_magnitude": 0.4175417196039162,
+        "output_magnitude": 0.20886152617756623,
+        "input_entropy": -0.0,
+        "output_entropy": 1.999379393951767,
+        "entropy_change": 1.999379393951767,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 13,
+      "parent_point": 61,
+      "children_indices": [
+        59,
+        60,
+        62,
+        63
+      ],
+      "pac_validation": {
+        "parent_value": 0.9070991745600046,
+        "children_sum": 0.9070991745600046,
+        "children_values": [
+          0.22341771054170034,
+          0.2246239210781332,
+          0.2330380957252025,
+          0.22601944721496847
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000676835617478,
+        "input_magnitude": 0.9070991745600046,
+        "output_magnitude": 0.453610982982995,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9998056923237397,
+        "entropy_change": 1.9998056923237397,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 14,
+      "parent_point": 53,
+      "children_indices": [
+        51,
+        52,
+        54,
+        55
+      ],
+      "pac_validation": {
+        "parent_value": 0.7210122786959163,
+        "children_sum": 0.7210122786959163,
+        "children_values": [
+          0.18739941992519185,
+          0.17153859432453003,
+          0.17871067116464628,
+          0.18336359328154822
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002674372276702,
+        "input_magnitude": 0.7210122786959163,
+        "output_magnitude": 0.36069896487288877,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9992251130419487,
+        "entropy_change": 1.9992251130419487,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 15,
+      "parent_point": 57,
+      "children_indices": [
+        55,
+        56,
+        58,
+        59
+      ],
+      "pac_validation": {
+        "parent_value": -0.5703519227860272,
+        "children_sum": -0.5703519227860271,
+        "children_values": [
+          -0.1572981982197789,
+          -0.14380754056741238,
+          -0.14318910736875437,
+          -0.1260570766300815
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.9465578711508386e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999997,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5015086614759328,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.28603642936664503,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9956036843316958,
+        "entropy_change": 1.9956036843316958,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 16,
+      "parent_point": 53,
+      "children_indices": [
+        51,
+        52,
+        54,
+        55
+      ],
+      "pac_validation": {
+        "parent_value": 0.7210122786959163,
+        "children_sum": 0.7210122786959163,
+        "children_values": [
+          0.17462423706091493,
+          0.1731705609785208,
+          0.18826581481333962,
+          0.18495166584314104
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003233036906217,
+        "input_magnitude": 0.7210122786959163,
+        "output_magnitude": 0.36073924527864415,
+        "input_entropy": -0.0,
+        "output_entropy": 1.999067478638906,
+        "entropy_change": 1.999067478638906,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 17,
+      "parent_point": 52,
+      "children_indices": [
+        50,
+        51,
+        53,
+        54
+      ],
+      "pac_validation": {
+        "parent_value": -0.22370578944475894,
+        "children_sum": -0.22370578944475894,
+        "children_values": [
+          -0.05494120597161428,
+          -0.05591209221327458,
+          -0.05374584562188889,
+          -0.05910664563798118
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003164114135668,
+        "input_magnitude": 0.22370578944475894,
+        "output_magnitude": 0.11192367778744075,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9990935237768537,
+        "entropy_change": 1.9990935237768537,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 18,
+      "parent_point": 10,
+      "children_indices": [
+        8,
+        9,
+        11,
+        12
+      ],
+      "pac_validation": {
+        "parent_value": -0.9588310114083951,
+        "children_sum": -0.9588310114083952,
+        "children_values": [
+          -0.25337533373793936,
+          -0.2455413217987662,
+          -0.2391776119677114,
+          -0.22073674390397827
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.1578922786345706e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5006315793071883,
+        "input_magnitude": 0.9588310114083951,
+        "output_magnitude": 0.48002108353009354,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9981571509250569,
+        "entropy_change": 1.9981571509250569,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 19,
+      "parent_point": 33,
+      "children_indices": [
+        31,
+        32,
+        34,
+        35
+      ],
+      "pac_validation": {
+        "parent_value": -0.9014286128198323,
+        "children_sum": -0.9014286128198323,
+        "children_values": [
+          -0.22218257597341015,
+          -0.20411345597054228,
+          -0.239956420492136,
+          -0.23517616038374395
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5009478453991444,
+        "input_magnitude": 0.9014286128198323,
+        "output_magnitude": 0.45156872137323456,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9972301638802348,
+        "entropy_change": 1.9972301638802348,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.624576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.624576"
+    },
+    {
+      "experiment_id": 20,
+      "parent_point": 28,
+      "children_indices": [
+        26,
+        27,
+        29,
+        30
+      ],
+      "pac_validation": {
+        "parent_value": 0.18482913772408494,
+        "children_sum": 0.18482913772408494,
+        "children_values": [
+          0.045125150912878935,
+          0.04806846162739817,
+          0.04774645467925632,
+          0.04388907050455151
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003622077540447,
+        "input_magnitude": 0.18482913772408494,
+        "output_magnitude": 0.09248151540889953,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9989519787036418,
+        "entropy_change": 1.9989519787036418,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 21,
+      "parent_point": 62,
+      "children_indices": [
+        60,
+        61,
+        63,
+        0
+      ],
+      "pac_validation": {
+        "parent_value": -0.21508970380287673,
+        "children_sum": -0.2150897038028767,
+        "children_values": [
+          -0.05138729042223518,
+          -0.05642028267042817,
+          -0.05169043435623147,
+          -0.055591696353981895
+        ],
+        "deviation": 2.7755575615628914e-17,
+        "relative_deviation": 1.290418607906312e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004395576729469,
+        "input_magnitude": 0.21508970380287673,
+        "output_magnitude": 0.10763939623111679,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9987315184769452,
+        "entropy_change": 1.9987315184769452,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 22,
+      "parent_point": 63,
+      "children_indices": [
+        61,
+        62,
+        0,
+        1
+      ],
+      "pac_validation": {
+        "parent_value": 0.6589517526254169,
+        "children_sum": 0.6589517526254169,
+        "children_values": [
+          0.16811228248308277,
+          0.15836563204773674,
+          0.16745552955207044,
+          0.16501830854252697
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001369089645952,
+        "input_magnitude": 0.6589517526254169,
+        "output_magnitude": 0.3295660927148786,
+        "input_entropy": -0.0,
+        "output_entropy": 1.999602141430631,
+        "entropy_change": 1.999602141430631,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 23,
+      "parent_point": 49,
+      "children_indices": [
+        47,
+        48,
+        50,
+        51
+      ],
+      "pac_validation": {
+        "parent_value": -0.04951286326447568,
+        "children_sum": -0.04951286326447568,
+        "children_values": [
+          -0.012047591616939721,
+          -0.013312881408735195,
+          -0.012410308793273726,
+          -0.011742081445527037
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5005661064636441,
+        "input_magnitude": 0.04951286326447568,
+        "output_magnitude": 0.02478446118416539,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9983810467079393,
+        "entropy_change": 1.9983810467079393,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 24,
+      "parent_point": 59,
+      "children_indices": [
+        57,
+        58,
+        60,
+        61
+      ],
+      "pac_validation": {
+        "parent_value": -0.02846887682722321,
+        "children_sum": -0.028468876827223214,
+        "children_values": [
+          -0.0071480723651422134,
+          -0.00699193062326097,
+          -0.007222721316178483,
+          -0.007106152522641545
+        ],
+        "deviation": 3.469446951953614e-18,
+        "relative_deviation": 1.2186806571293933e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000344258435413,
+        "input_magnitude": 0.02846887682722321,
+        "output_magnitude": 0.014235418478711055,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9999005327798056,
+        "entropy_change": 1.9999005327798056,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 25,
+      "parent_point": 40,
+      "children_indices": [
+        38,
+        39,
+        41,
+        42
+      ],
+      "pac_validation": {
+        "parent_value": -0.2022300234864176,
+        "children_sum": -0.2022300234864176,
+        "children_values": [
+          -0.048705442266126595,
+          -0.05418219271326336,
+          -0.05042883633578902,
+          -0.048913552171238626
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004713928758772,
+        "input_magnitude": 0.2022300234864176,
+        "output_magnitude": 0.10121034153556877,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9986554848545275,
+        "entropy_change": 1.9986554848545275,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 26,
+      "parent_point": 10,
+      "children_indices": [
+        8,
+        9,
+        11,
+        12
+      ],
+      "pac_validation": {
+        "parent_value": -0.9588310114083951,
+        "children_sum": -0.9588310114083951,
+        "children_values": [
+          -0.23859609057307232,
+          -0.22739459437491258,
+          -0.2420371398994627,
+          -0.2508031865609475
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003059728878733,
+        "input_magnitude": 0.9588310114083951,
+        "output_magnitude": 0.47970888199774064,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9991143913347256,
+        "entropy_change": 1.9991143913347256,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 27,
+      "parent_point": 24,
+      "children_indices": [
+        22,
+        23,
+        25,
+        26
+      ],
+      "pac_validation": {
+        "parent_value": -0.08786003156592814,
+        "children_sum": -0.08786003156592814,
+        "children_values": [
+          -0.020411466675752367,
+          -0.021940167076449826,
+          -0.02376890380466371,
+          -0.021739494009062242
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5007403146122067,
+        "input_magnitude": 0.08786003156592814,
+        "output_magnitude": 0.04399505984816127,
+        "input_entropy": -0.0,
+        "output_entropy": 1.997872196026696,
+        "entropy_change": 1.997872196026696,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 28,
+      "parent_point": 32,
+      "children_indices": [
+        30,
+        31,
+        33,
+        34
+      ],
+      "pac_validation": {
+        "parent_value": 0.250919762305275,
+        "children_sum": 0.250919762305275,
+        "children_values": [
+          0.06425410302706074,
+          0.06306704440834891,
+          0.06281862269675745,
+          0.06077999217310791
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000992087300571,
+        "input_magnitude": 0.250919762305275,
+        "output_magnitude": 0.12548477458360205,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997127429716823,
+        "entropy_change": 1.9997127429716823,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 29,
+      "parent_point": 7,
+      "children_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "pac_validation": {
+        "parent_value": 0.7323522915498704,
+        "children_sum": 0.7323522915498704,
+        "children_values": [
+          0.185501865726158,
+          0.19022598969322033,
+          0.17367321055046597,
+          0.18295122558002602
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002710877990799,
+        "input_magnitude": 0.7323522915498704,
+        "output_magnitude": 0.36637467754580255,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9992128342151716,
+        "entropy_change": 1.9992128342151716,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 30,
+      "parent_point": 50,
+      "children_indices": [
+        48,
+        49,
+        51,
+        52
+      ],
+      "pac_validation": {
+        "parent_value": 0.13610996271576847,
+        "children_sum": 0.13610996271576847,
+        "children_values": [
+          0.03187896517935323,
+          0.0353479953802738,
+          0.03465979561702402,
+          0.03422320653911741
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003668112209417,
+        "input_magnitude": 0.13610996271576847,
+        "output_magnitude": 0.06810490801949035,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9989294298041016,
+        "entropy_change": 1.9989294298041016,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 31,
+      "parent_point": 50,
+      "children_indices": [
+        48,
+        49,
+        51,
+        52
+      ],
+      "pac_validation": {
+        "parent_value": 0.13610996271576847,
+        "children_sum": 0.13610996271576847,
+        "children_values": [
+          0.03340493782234742,
+          0.03434153165740737,
+          0.03295630423032406,
+          0.03540718900568962
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001908961171382,
+        "input_magnitude": 0.13610996271576847,
+        "output_magnitude": 0.0680809642212705,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9994507829612007,
+        "entropy_change": 1.9994507829612007,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 32,
+      "parent_point": 27,
+      "children_indices": [
+        25,
+        26,
+        28,
+        29
+      ],
+      "pac_validation": {
+        "parent_value": 0.02846887682722321,
+        "children_sum": 0.028468876827223218,
+        "children_values": [
+          0.007449195648954946,
+          0.007287001116024121,
+          0.007144999801021018,
+          0.00658768026122313
+        ],
+        "deviation": 6.938893903907228e-18,
+        "relative_deviation": 2.4373613142587866e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999997,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5005182132111281,
+        "input_magnitude": 0.02846887682722321,
+        "output_magnitude": 0.014249191361689452,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9984850268989507,
+        "entropy_change": 1.9984850268989507,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 33,
+      "parent_point": 3,
+      "children_indices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "pac_validation": {
+        "parent_value": 0.1973169683940732,
+        "children_sum": 0.1973169683940732,
+        "children_values": [
+          0.04911157902613121,
+          0.04866946105300747,
+          0.04870186895478301,
+          0.05083405936015151
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000806623542601,
+        "input_magnitude": 0.1973169683940732,
+        "output_magnitude": 0.09867440024824273,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997686453608,
+        "entropy_change": 1.9997686453608,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 34,
+      "parent_point": 52,
+      "children_indices": [
+        50,
+        51,
+        53,
+        54
+      ],
+      "pac_validation": {
+        "parent_value": -0.22370578944475894,
+        "children_sum": -0.22370578944475894,
+        "children_values": [
+          -0.05477206899792456,
+          -0.05557117111293492,
+          -0.05632082819429494,
+          -0.05704172113960451
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000571098080812,
+        "input_magnitude": 0.22370578944475894,
+        "output_magnitude": 0.1118656705170813,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9998351499167364,
+        "entropy_change": 1.9998351499167364,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 35,
+      "parent_point": 31,
+      "children_indices": [
+        29,
+        30,
+        32,
+        33
+      ],
+      "pac_validation": {
+        "parent_value": -0.6589517526254169,
+        "children_sum": -0.6589517526254169,
+        "children_values": [
+          -0.16713549007371303,
+          -0.156403523864916,
+          -0.16169412434672864,
+          -0.1737186143400592
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003801443946658,
+        "input_magnitude": 0.6589517526254169,
+        "output_magnitude": 0.3297263731278242,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9989040140542578,
+        "entropy_change": 1.9989040140542578,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 36,
+      "parent_point": 30,
+      "children_indices": [
+        28,
+        29,
+        31,
+        32
+      ],
+      "pac_validation": {
+        "parent_value": 0.21508970380287673,
+        "children_sum": 0.21508970380287673,
+        "children_values": [
+          0.051789258237226625,
+          0.05861115835864244,
+          0.05257562472619535,
+          0.052113662480812326
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5006810682378355,
+        "input_magnitude": 0.21508970380287673,
+        "output_magnitude": 0.10769134266698395,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9980699093610412,
+        "entropy_change": 1.9980699093610412,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 37,
+      "parent_point": 25,
+      "children_indices": [
+        23,
+        24,
+        26,
+        27
+      ],
+      "pac_validation": {
+        "parent_value": 0.5703519227860272,
+        "children_sum": 0.5703519227860272,
+        "children_values": [
+          0.14459873219800837,
+          0.1459800631454704,
+          0.13154155687719304,
+          0.14823157056535544
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5005205474915408,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.28547285665571537,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9984727723321156,
+        "entropy_change": 1.9984727723321156,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.625587"
+    },
+    {
+      "experiment_id": 38,
+      "parent_point": 28,
+      "children_indices": [
+        26,
+        27,
+        29,
+        30
+      ],
+      "pac_validation": {
+        "parent_value": 0.18482913772408494,
+        "children_sum": 0.18482913772408496,
+        "children_values": [
+          0.046478805145709644,
+          0.044110970888402073,
+          0.04953712831174117,
+          0.044702233378232065
+        ],
+        "deviation": 2.7755575615628914e-17,
+        "relative_deviation": 1.5016883137258777e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.500521401109316,
+        "input_magnitude": 0.18482913772408494,
+        "output_magnitude": 0.09251093897948573,
+        "input_entropy": -0.0,
+        "output_entropy": 1.99850864523113,
+        "entropy_change": 1.99850864523113,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.625587"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 39,
+      "parent_point": 59,
+      "children_indices": [
+        57,
+        58,
+        60,
+        61
+      ],
+      "pac_validation": {
+        "parent_value": -0.02846887682722321,
+        "children_sum": -0.02846887682722321,
+        "children_values": [
+          -0.007474329646809916,
+          -0.006286578282882165,
+          -0.007454457365695402,
+          -0.007253511531835727
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5011705291820795,
+        "input_magnitude": 0.02846887682722321,
+        "output_magnitude": 0.014267762064718897,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9965311285923049,
+        "entropy_change": 1.9965311285923049,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 40,
+      "parent_point": 63,
+      "children_indices": [
+        61,
+        62,
+        0,
+        1
+      ],
+      "pac_validation": {
+        "parent_value": 0.6589517526254169,
+        "children_sum": 0.6589517526254169,
+        "children_values": [
+          0.16066089888638396,
+          0.16418802108218594,
+          0.15238601197134913,
+          0.18171682068549788
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5010531488998985,
+        "input_magnitude": 0.6589517526254169,
+        "output_magnitude": 0.3301698506260721,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9969934131856195,
+        "entropy_change": 1.9969934131856195,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 41,
+      "parent_point": 62,
+      "children_indices": [
+        60,
+        61,
+        63,
+        0
+      ],
+      "pac_validation": {
+        "parent_value": -0.21508970380287673,
+        "children_sum": -0.21508970380287673,
+        "children_values": [
+          -0.05253099117558932,
+          -0.053861930234686495,
+          -0.05723301439380863,
+          -0.05146376799879228
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004073845333125,
+        "input_magnitude": 0.21508970380287673,
+        "output_magnitude": 0.10763247612004241,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9988339737576375,
+        "entropy_change": 1.9988339737576375,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 42,
+      "parent_point": 57,
+      "children_indices": [
+        55,
+        56,
+        58,
+        59
+      ],
+      "pac_validation": {
+        "parent_value": -0.5703519227860272,
+        "children_sum": -0.5703519227860272,
+        "children_values": [
+          -0.1430663929082685,
+          -0.13587706938530444,
+          -0.15432211823469327,
+          -0.13708634225776103
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5006550346728019,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.28554956167813766,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9981309815970747,
+        "entropy_change": 1.9981309815970747,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 43,
+      "parent_point": 7,
+      "children_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "pac_validation": {
+        "parent_value": 0.7323522915498704,
+        "children_sum": 0.7323522915498704,
+        "children_values": [
+          0.17779774111136498,
+          0.19056723210380377,
+          0.17765984903912818,
+          0.1863274692955734
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002309284449662,
+        "input_magnitude": 0.7323522915498704,
+        "output_magnitude": 0.3663452667507902,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9993348117555876,
+        "entropy_change": 1.9993348117555876,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 44,
+      "parent_point": 44,
+      "children_indices": [
+        42,
+        43,
+        45,
+        46
+      ],
+      "pac_validation": {
+        "parent_value": -0.6648852816008435,
+        "children_sum": -0.6648852816008435,
+        "children_values": [
+          -0.1651598995313024,
+          -0.17277860849016044,
+          -0.1684094250059454,
+          -0.15853734857343518
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002441444129195,
+        "input_magnitude": 0.6648852816008435,
+        "output_magnitude": 0.332604968827157,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9992930365168269,
+        "entropy_change": 1.9992930365168269,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 45,
+      "parent_point": 15,
+      "children_indices": [
+        13,
+        14,
+        16,
+        17
+      ],
+      "pac_validation": {
+        "parent_value": -0.6331909802931324,
+        "children_sum": -0.6331909802931324,
+        "children_values": [
+          -0.1599125684262934,
+          -0.15653345976509647,
+          -0.15173746765303706,
+          -0.16500748444870544
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002338465160334,
+        "input_magnitude": 0.6331909802931324,
+        "output_magnitude": 0.31674355965129153,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9993251972032224,
+        "entropy_change": 1.9993251972032224,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 46,
+      "parent_point": 62,
+      "children_indices": [
+        60,
+        61,
+        63,
+        0
+      ],
+      "pac_validation": {
+        "parent_value": -0.21508970380287673,
+        "children_sum": -0.21508970380287673,
+        "children_values": [
+          -0.04938738133956775,
+          -0.054837010743186025,
+          -0.05564023797516481,
+          -0.05522507374495814
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5005608366747375,
+        "input_magnitude": 0.21508970380287673,
+        "output_magnitude": 0.10766548209568944,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9983509704435947,
+        "entropy_change": 1.9983509704435947,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 47,
+      "parent_point": 61,
+      "children_indices": [
+        59,
+        60,
+        62,
+        63
+      ],
+      "pac_validation": {
+        "parent_value": 0.9070991745600046,
+        "children_sum": 0.9070991745600046,
+        "children_values": [
+          0.23296575765489155,
+          0.23705641113084502,
+          0.21362998985496517,
+          0.22344701591930277
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003983441695873,
+        "input_magnitude": 0.9070991745600046,
+        "output_magnitude": 0.4539109249474257,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9988445992957302,
+        "entropy_change": 1.9988445992957302,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 48,
+      "parent_point": 0,
+      "children_indices": [
+        62,
+        63,
+        1,
+        2
+      ],
+      "pac_validation": {
+        "parent_value": -0.250919762305275,
+        "children_sum": -0.250919762305275,
+        "children_values": [
+          -0.06670161589858185,
+          -0.06291994263623157,
+          -0.06126705707149167,
+          -0.060031146698969945
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004006262008581,
+        "input_magnitude": 0.250919762305275,
+        "output_magnitude": 0.1255604061837301,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9988527030695007,
+        "entropy_change": 1.9988527030695007,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 49,
+      "parent_point": 60,
+      "children_indices": [
+        58,
+        59,
+        61,
+        62
+      ],
+      "pac_validation": {
+        "parent_value": -0.18482913772408494,
+        "children_sum": -0.18482913772408496,
+        "children_values": [
+          -0.04680586873896827,
+          -0.043862338295227565,
+          -0.050743025172110615,
+          -0.04341790551777849
+        ],
+        "deviation": 2.7755575615628914e-17,
+        "relative_deviation": 1.5016883137258777e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.501000428931343,
+        "input_magnitude": 0.18482913772408494,
+        "output_magnitude": 0.09259947727877682,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9971431339735872,
+        "entropy_change": 1.9971431339735872,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 50,
+      "parent_point": 11,
+      "children_indices": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "pac_validation": {
+        "parent_value": 0.9398197043239886,
+        "children_sum": 0.9398197043239886,
+        "children_values": [
+          0.22724537151244795,
+          0.2438395753707128,
+          0.23716266475041164,
+          0.2315720926904163
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001751065655382,
+        "input_magnitude": 0.9398197043239886,
+        "output_magnitude": 0.4700744207626436,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9994955606963123,
+        "entropy_change": 1.9994955606963123,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 51,
+      "parent_point": 27,
+      "children_indices": [
+        25,
+        26,
+        28,
+        29
+      ],
+      "pac_validation": {
+        "parent_value": 0.02846887682722321,
+        "children_sum": 0.02846887682722321,
+        "children_values": [
+          0.007254517487742037,
+          0.007372241497989897,
+          0.006766721112039787,
+          0.007075396729451492
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002571715566699,
+        "input_magnitude": 0.02846887682722321,
+        "output_magnitude": 0.014241759798981908,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9992535394581716,
+        "entropy_change": 1.9992535394581716,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 52,
+      "parent_point": 47,
+      "children_indices": [
+        45,
+        46,
+        48,
+        49
+      ],
+      "pac_validation": {
+        "parent_value": 0.6331909802931324,
+        "children_sum": 0.6331909802931324,
+        "children_values": [
+          0.14967198121022757,
+          0.1627002747399081,
+          0.1707443005224345,
+          0.1500744238205622
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5007883570670794,
+        "input_magnitude": 0.6331909802931324,
+        "output_magnitude": 0.3170946707306912,
+        "input_entropy": -0.0,
+        "output_entropy": 1.99773423464164,
+        "entropy_change": 1.99773423464164,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 53,
+      "parent_point": 57,
+      "children_indices": [
+        55,
+        56,
+        58,
+        59
+      ],
+      "pac_validation": {
+        "parent_value": -0.5703519227860272,
+        "children_sum": -0.5703519227860272,
+        "children_values": [
+          -0.13563678800192827,
+          -0.1372038573202393,
+          -0.1475534344633627,
+          -0.14995784300049697
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004801808427767,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.28544983345997627,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9986139748128648,
+        "entropy_change": 1.9986139748128648,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 54,
+      "parent_point": 57,
+      "children_indices": [
+        55,
+        56,
+        58,
+        59
+      ],
+      "pac_validation": {
+        "parent_value": -0.5703519227860272,
+        "children_sum": -0.5703519227860272,
+        "children_values": [
+          -0.14810954325050166,
+          -0.14273310894000668,
+          -0.13433747625235068,
+          -0.14517179434316813
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003234588727753,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.2853604467830432,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9990581776514906,
+        "entropy_change": 1.9990581776514906,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 55,
+      "parent_point": 15,
+      "children_indices": [
+        13,
+        14,
+        16,
+        17
+      ],
+      "pac_validation": {
+        "parent_value": -0.6331909802931324,
+        "children_sum": -0.6331909802931324,
+        "children_values": [
+          -0.1553041220493345,
+          -0.16163030600700548,
+          -0.15632718146378055,
+          -0.15992937077301186
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000663737909228,
+        "input_magnitude": 0.6331909802931324,
+        "output_magnitude": 0.31663751743230634,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9998085664120206,
+        "entropy_change": 1.9998085664120206,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 56,
+      "parent_point": 26,
+      "children_indices": [
+        24,
+        25,
+        27,
+        28
+      ],
+      "pac_validation": {
+        "parent_value": -0.6006524356832805,
+        "children_sum": -0.6006524356832805,
+        "children_values": [
+          -0.14712019947208702,
+          -0.14393167917043773,
+          -0.15945039940526104,
+          -0.15015015763549483
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003722288165605,
+        "input_magnitude": 0.6006524356832805,
+        "output_magnitude": 0.3005497979869388,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9989344796515718,
+        "entropy_change": 1.9989344796515718,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.626576"
+    },
+    {
+      "experiment_id": 57,
+      "parent_point": 60,
+      "children_indices": [
+        58,
+        59,
+        61,
+        62
+      ],
+      "pac_validation": {
+        "parent_value": -0.18482913772408494,
+        "children_sum": -0.18482913772408494,
+        "children_values": [
+          -0.04524920880788405,
+          -0.04667210690759299,
+          -0.04582107333135278,
+          -0.04708674867725508
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000601976711702,
+        "input_magnitude": 0.18482913772408494,
+        "output_magnitude": 0.09242569514569784,
+        "input_entropy": -0.0,
+        "output_entropy": 1.999826190522704,
+        "entropy_change": 1.999826190522704,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.626576"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 58,
+      "parent_point": 9,
+      "children_indices": [
+        7,
+        8,
+        10,
+        11
+      ],
+      "pac_validation": {
+        "parent_value": 0.416145155592091,
+        "children_sum": 0.416145155592091,
+        "children_values": [
+          0.10491224799972579,
+          0.1038765178566371,
+          0.10555694637921,
+          0.10179944335651805
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000468211047207,
+        "input_magnitude": 0.416145155592091,
+        "output_magnitude": 0.20809206217195444,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9998645144146983,
+        "entropy_change": 1.9998645144146983,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 59,
+      "parent_point": 60,
+      "children_indices": [
+        58,
+        59,
+        61,
+        62
+      ],
+      "pac_validation": {
+        "parent_value": -0.18482913772408494,
+        "children_sum": -0.18482913772408494,
+        "children_values": [
+          -0.044955761109466946,
+          -0.0470436173585993,
+          -0.04608579286816292,
+          -0.04674396638785577
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000751821407213,
+        "input_magnitude": 0.18482913772408494,
+        "output_magnitude": 0.09242846471228423,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997822888306955,
+        "entropy_change": 1.9997822888306955,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 60,
+      "parent_point": 25,
+      "children_indices": [
+        23,
+        24,
+        26,
+        27
+      ],
+      "pac_validation": {
+        "parent_value": 0.5703519227860272,
+        "children_sum": 0.5703519227860272,
+        "children_values": [
+          0.13739790351568473,
+          0.1545574552717504,
+          0.1452155054372403,
+          0.13318105856135182
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5008158060827408,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.2856412579609254,
+        "input_entropy": -0.0,
+        "output_entropy": 1.997657864087304,
+        "entropy_change": 1.997657864087304,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 61,
+      "parent_point": 57,
+      "children_indices": [
+        55,
+        56,
+        58,
+        59
+      ],
+      "pac_validation": {
+        "parent_value": -0.5703519227860272,
+        "children_sum": -0.5703519227860272,
+        "children_values": [
+          -0.1417678235645001,
+          -0.1381992802058202,
+          -0.14597414890371777,
+          -0.14441067011198913
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001067255942885,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.2852368325409265,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9996911508689643,
+        "entropy_change": 1.9996911508689643,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 62,
+      "parent_point": 20,
+      "children_indices": [
+        18,
+        19,
+        21,
+        22
+      ],
+      "pac_validation": {
+        "parent_value": 0.22370578944475894,
+        "children_sum": 0.22370578944475894,
+        "children_values": [
+          0.05582423852771716,
+          0.05706540280143493,
+          0.06037542529808153,
+          0.05044072281752533
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.501021934586674,
+        "input_magnitude": 0.22370578944475894,
+        "output_magnitude": 0.11208150740585228,
+        "input_entropy": -0.0,
+        "output_entropy": 1.997018233866532,
+        "entropy_change": 1.997018233866532,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 63,
+      "parent_point": 34,
+      "children_indices": [
+        32,
+        33,
+        35,
+        36
+      ],
+      "pac_validation": {
+        "parent_value": -0.4639878836228102,
+        "children_sum": -0.4639878836228102,
+        "children_values": [
+          -0.1172528203356214,
+          -0.11645111320286874,
+          -0.10972133136907393,
+          -0.1205626187152461
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.500287964384834,
+        "input_magnitude": 0.4639878836228102,
+        "output_magnitude": 0.23212755379688296,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9991627603244229,
+        "entropy_change": 1.9991627603244229,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 64,
+      "parent_point": 23,
+      "children_indices": [
+        21,
+        22,
+        24,
+        25
+      ],
+      "pac_validation": {
+        "parent_value": -0.2672763134126166,
+        "children_sum": -0.2672763134126166,
+        "children_values": [
+          -0.0669718254551125,
+          -0.0639965422224946,
+          -0.06502075604319359,
+          -0.07128718969181594
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004363926554508,
+        "input_magnitude": 0.2672763134126166,
+        "output_magnitude": 0.13375479412645752,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9987518669795676,
+        "entropy_change": 1.9987518669795676,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 65,
+      "parent_point": 22,
+      "children_indices": [
+        20,
+        21,
+        23,
+        24
+      ],
+      "pac_validation": {
+        "parent_value": -0.4157107029295637,
+        "children_sum": -0.4157107029295637,
+        "children_values": [
+          -0.10708246490384332,
+          -0.10360328637212818,
+          -0.10489966225557723,
+          -0.10012528939801495
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001473079046891,
+        "input_magnitude": 0.4157107029295637,
+        "output_magnitude": 0.20791658893738724,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9995736010378917,
+        "entropy_change": 1.9995736010378917,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 66,
+      "parent_point": 47,
+      "children_indices": [
+        45,
+        46,
+        48,
+        49
+      ],
+      "pac_validation": {
+        "parent_value": 0.6331909802931324,
+        "children_sum": 0.6331909802931323,
+        "children_values": [
+          0.15026457301249976,
+          0.1558229122242749,
+          0.1655960328536216,
+          0.16150746220273604
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.753377826246332e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999997,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003346687961207,
+        "input_magnitude": 0.6331909802931324,
+        "output_magnitude": 0.31680739940965535,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9990319887988437,
+        "entropy_change": 1.9990319887988437,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 67,
+      "parent_point": 30,
+      "children_indices": [
+        28,
+        29,
+        31,
+        32
+      ],
+      "pac_validation": {
+        "parent_value": 0.21508970380287673,
+        "children_sum": 0.21508970380287676,
+        "children_values": [
+          0.05271153919089928,
+          0.05405090562761264,
+          0.05025086821861886,
+          0.05807639076574598
+        ],
+        "deviation": 2.7755575615628914e-17,
+        "relative_deviation": 1.290418607906312e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5006939850292429,
+        "input_magnitude": 0.21508970380287673,
+        "output_magnitude": 0.10769412093582184,
+        "input_entropy": -0.0,
+        "output_entropy": 1.998007921569818,
+        "entropy_change": 1.998007921569818,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 68,
+      "parent_point": 34,
+      "children_indices": [
+        32,
+        33,
+        35,
+        36
+      ],
+      "pac_validation": {
+        "parent_value": -0.4639878836228102,
+        "children_sum": -0.4639878836228102,
+        "children_values": [
+          -0.1140820139108786,
+          -0.10816812058645933,
+          -0.1225853496280276,
+          -0.11915239949744467
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5005493025374388,
+        "input_magnitude": 0.4639878836228102,
+        "output_magnitude": 0.23224881153321997,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9984066794981397,
+        "entropy_change": 1.9984066794981397,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.627573"
+    },
+    {
+      "experiment_id": 69,
+      "parent_point": 52,
+      "children_indices": [
+        50,
+        51,
+        53,
+        54
+      ],
+      "pac_validation": {
+        "parent_value": -0.22370578944475894,
+        "children_sum": -0.22370578944475894,
+        "children_values": [
+          -0.05716314641412261,
+          -0.0552327625028893,
+          -0.06105247057938811,
+          -0.050257409948358936
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5012059707822157,
+        "input_magnitude": 0.22370578944475894,
+        "output_magnitude": 0.11212267736826236,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9964949203557116,
+        "entropy_change": 1.9964949203557116,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.627573"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 70,
+      "parent_point": 22,
+      "children_indices": [
+        20,
+        21,
+        23,
+        24
+      ],
+      "pac_validation": {
+        "parent_value": -0.4157107029295637,
+        "children_sum": -0.4157107029295637,
+        "children_values": [
+          -0.09760937474606679,
+          -0.10493151433876542,
+          -0.10656583060468734,
+          -0.10660398324004415
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003184529871346,
+        "input_magnitude": 0.4157107029295637,
+        "output_magnitude": 0.2079877357799136,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9990689511384367,
+        "entropy_change": 1.9990689511384367,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 71,
+      "parent_point": 37,
+      "children_indices": [
+        35,
+        36,
+        38,
+        39
+      ],
+      "pac_validation": {
+        "parent_value": 0.6880109593275947,
+        "children_sum": 0.6880109593275947,
+        "children_values": [
+          0.17518657774971724,
+          0.1687200509246751,
+          0.16902883772321461,
+          0.17507549292998764
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000828029541207,
+        "input_magnitude": 0.6880109593275947,
+        "output_magnitude": 0.3440624490036971,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997610435262512,
+        "entropy_change": 1.9997610435262512,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 72,
+      "parent_point": 36,
+      "children_indices": [
+        34,
+        35,
+        37,
+        38
+      ],
+      "pac_validation": {
+        "parent_value": 0.687962719115127,
+        "children_sum": 0.687962719115127,
+        "children_values": [
+          0.17778594766674227,
+          0.16138436987972896,
+          0.17644765301748883,
+          0.17234474855116683
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003507569085786,
+        "input_magnitude": 0.687962719115127,
+        "output_magnitude": 0.34422266723413764,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9989763205440623,
+        "entropy_change": 1.9989763205440623,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 73,
+      "parent_point": 44,
+      "children_indices": [
+        42,
+        43,
+        45,
+        46
+      ],
+      "pac_validation": {
+        "parent_value": -0.6648852816008435,
+        "children_sum": -0.6648852816008435,
+        "children_values": [
+          -0.17221723517873153,
+          -0.15539282168567037,
+          -0.18362706962845382,
+          -0.1536481551079878
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5013875573073284,
+        "input_magnitude": 0.6648852816008435,
+        "output_magnitude": 0.33336520723144214,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9960149624801757,
+        "entropy_change": 1.9960149624801757,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 74,
+      "parent_point": 25,
+      "children_indices": [
+        23,
+        24,
+        26,
+        27
+      ],
+      "pac_validation": {
+        "parent_value": 0.5703519227860272,
+        "children_sum": 0.5703519227860271,
+        "children_values": [
+          0.1457408736969673,
+          0.13753176394308253,
+          0.14681122710348152,
+          0.14026805804249579
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.9465578711508386e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999997,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.500180489022021,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.285278903653765,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9994783168096184,
+        "entropy_change": 1.9994783168096184,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 75,
+      "parent_point": 61,
+      "children_indices": [
+        59,
+        60,
+        62,
+        63
+      ],
+      "pac_validation": {
+        "parent_value": 0.9070991745600046,
+        "children_sum": 0.9070991745600046,
+        "children_values": [
+          0.2260471334149418,
+          0.21300815534288328,
+          0.22827664659845315,
+          0.2397672392037263
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5004386703962197,
+        "input_magnitude": 0.9070991745600046,
+        "output_magnitude": 0.4539475048343171,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9987308445201224,
+        "entropy_change": 1.9987308445201224,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 76,
+      "parent_point": 61,
+      "children_indices": [
+        59,
+        60,
+        62,
+        63
+      ],
+      "pac_validation": {
+        "parent_value": 0.9070991745600046,
+        "children_sum": 0.9070991745600046,
+        "children_values": [
+          0.23130494216914183,
+          0.2096486843475336,
+          0.2381838281768305,
+          0.2279617198664986
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5005410114845914,
+        "input_magnitude": 0.9070991745600046,
+        "output_magnitude": 0.4540403383511026,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9984191613922415,
+        "entropy_change": 1.9984191613922415,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 77,
+      "parent_point": 52,
+      "children_indices": [
+        50,
+        51,
+        53,
+        54
+      ],
+      "pac_validation": {
+        "parent_value": -0.22370578944475894,
+        "children_sum": -0.22370578944475897,
+        "children_values": [
+          -0.05683701680489486,
+          -0.054281593017730945,
+          -0.05570737325025578,
+          -0.05687980637187737
+        ],
+        "deviation": 2.7755575615628914e-17,
+        "relative_deviation": 1.2407178054943798e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000897438491881,
+        "input_magnitude": 0.22370578944475894,
+        "output_magnitude": 0.11187297094100992,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997400275445198,
+        "entropy_change": 1.9997400275445198,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 78,
+      "parent_point": 17,
+      "children_indices": [
+        15,
+        16,
+        18,
+        19
+      ],
+      "pac_validation": {
+        "parent_value": 0.04951286326447568,
+        "children_sum": 0.04951286326447568,
+        "children_values": [
+          0.012147974031078614,
+          0.012095797609914291,
+          0.011884714875311305,
+          0.013384376748171471
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5005661330678997,
+        "input_magnitude": 0.04951286326447568,
+        "output_magnitude": 0.024784462501418254,
+        "input_entropy": -0.0,
+        "output_entropy": 1.99839159351913,
+        "entropy_change": 1.99839159351913,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 79,
+      "parent_point": 22,
+      "children_indices": [
+        20,
+        21,
+        23,
+        24
+      ],
+      "pac_validation": {
+        "parent_value": -0.4157107029295637,
+        "children_sum": -0.4157107029295637,
+        "children_values": [
+          -0.09247377856500408,
+          -0.1080530631278402,
+          -0.10821635198904679,
+          -0.10696750924767263
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5010164913697757,
+        "input_magnitude": 0.4157107029295637,
+        "output_magnitude": 0.20827791780663313,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9969881331201795,
+        "entropy_change": 1.9969881331201795,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 80,
+      "parent_point": 25,
+      "children_indices": [
+        23,
+        24,
+        26,
+        27
+      ],
+      "pac_validation": {
+        "parent_value": 0.5703519227860272,
+        "children_sum": 0.5703519227860272,
+        "children_values": [
+          0.14015890309375453,
+          0.14581986113171813,
+          0.14411012538158124,
+          0.14026303317897332
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000739806233828,
+        "input_magnitude": 0.5703519227860272,
+        "output_magnitude": 0.2852181563838089,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997867236520102,
+        "entropy_change": 1.9997867236520102,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 81,
+      "parent_point": 35,
+      "children_indices": [
+        33,
+        34,
+        36,
+        37
+      ],
+      "pac_validation": {
+        "parent_value": -0.1973169683940732,
+        "children_sum": -0.1973169683940732,
+        "children_values": [
+          -0.05404170611928768,
+          -0.048430053527532935,
+          -0.04791488099413916,
+          -0.04693032775311343
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5007897157863666,
+        "input_magnitude": 0.1973169683940732,
+        "output_magnitude": 0.09881430852189539,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9977607100708996,
+        "entropy_change": 1.9977607100708996,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 82,
+      "parent_point": 28,
+      "children_indices": [
+        26,
+        27,
+        29,
+        30
+      ],
+      "pac_validation": {
+        "parent_value": 0.18482913772408494,
+        "children_sum": 0.18482913772408494,
+        "children_values": [
+          0.04508178205882676,
+          0.046864648519887794,
+          0.047168188614530135,
+          0.04571451853084024
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000838596656231,
+        "input_magnitude": 0.18482913772408494,
+        "output_magnitude": 0.09243006857172942,
+        "input_entropy": -0.0,
+        "output_entropy": 1.999757766029683,
+        "entropy_change": 1.999757766029683,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 83,
+      "parent_point": 9,
+      "children_indices": [
+        7,
+        8,
+        10,
+        11
+      ],
+      "pac_validation": {
+        "parent_value": 0.416145155592091,
+        "children_sum": 0.416145155592091,
+        "children_values": [
+          0.10971505532849864,
+          0.10113926198732054,
+          0.09466841873215087,
+          0.11062241954412094
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5009909250137317,
+        "input_magnitude": 0.416145155592091,
+        "output_magnitude": 0.20848494644006493,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9971149729148077,
+        "entropy_change": 1.9971149729148077,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 84,
+      "parent_point": 21,
+      "children_indices": [
+        19,
+        20,
+        22,
+        23
+      ],
+      "pac_validation": {
+        "parent_value": -0.7210122786959163,
+        "children_sum": -0.7210122786959162,
+        "children_values": [
+          -0.18068302028221808,
+          -0.1719060720237514,
+          -0.18104338059443598,
+          -0.18737980579551083
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.5398115364043447e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002332247357026,
+        "input_magnitude": 0.7210122786959163,
+        "output_magnitude": 0.3606742972460954,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9993244368491871,
+        "entropy_change": 1.9993244368491871,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 85,
+      "parent_point": 4,
+      "children_indices": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "pac_validation": {
+        "parent_value": -0.687962719115127,
+        "children_sum": -0.6879627191151271,
+        "children_values": [
+          -0.15877236044587933,
+          -0.16912426311327736,
+          -0.17450311845976246,
+          -0.1855629770962078
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.6137837033569933e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5007884459021742,
+        "input_magnitude": 0.687962719115127,
+        "output_magnitude": 0.3445237809442984,
+        "input_entropy": -0.0,
+        "output_entropy": 1.99772317656,
+        "entropy_change": 1.99772317656,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 86,
+      "parent_point": 45,
+      "children_indices": [
+        43,
+        44,
+        46,
+        47
+      ],
+      "pac_validation": {
+        "parent_value": 0.5753217786434477,
+        "children_sum": 0.5753217786434477,
+        "children_values": [
+          0.14080175628707908,
+          0.14017088482548756,
+          0.14929993491922136,
+          0.1450492026116597
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001630151692619,
+        "input_magnitude": 0.5753217786434477,
+        "output_magnitude": 0.2877546754988495,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9995312713529207,
+        "entropy_change": 1.9995312713529207,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.628559"
+    },
+    {
+      "experiment_id": 87,
+      "parent_point": 39,
+      "children_indices": [
+        37,
+        38,
+        40,
+        41
+      ],
+      "pac_validation": {
+        "parent_value": -0.7323522915498704,
+        "children_sum": -0.7323522915498702,
+        "children_values": [
+          -0.19559263767382876,
+          -0.16985236796364264,
+          -0.17850660071601943,
+          -0.18840068519637945
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.5159685269443233e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.628559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5007094229749144,
+        "input_magnitude": 0.7323522915498704,
+        "output_magnitude": 0.36669569331629187,
+        "input_entropy": -0.0,
+        "output_entropy": 1.99794703350341,
+        "entropy_change": 1.99794703350341,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 88,
+      "parent_point": 33,
+      "children_indices": [
+        31,
+        32,
+        34,
+        35
+      ],
+      "pac_validation": {
+        "parent_value": -0.9014286128198323,
+        "children_sum": -0.9014286128198323,
+        "children_values": [
+          -0.21535633961168976,
+          -0.23075983128630814,
+          -0.21916927817215495,
+          -0.23614316374967947
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003491794089397,
+        "input_magnitude": 0.9014286128198323,
+        "output_magnitude": 0.4510290667201419,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9989927500945577,
+        "entropy_change": 1.9989927500945577,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 89,
+      "parent_point": 43,
+      "children_indices": [
+        41,
+        42,
+        44,
+        45
+      ],
+      "pac_validation": {
+        "parent_value": -0.9398197043239886,
+        "children_sum": -0.9398197043239886,
+        "children_values": [
+          -0.22261060251600412,
+          -0.2327194408693292,
+          -0.24665780563588674,
+          -0.23783185530276857
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5003424924188062,
+        "input_magnitude": 0.9398197043239886,
+        "output_magnitude": 0.47023173328577,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9990097892111904,
+        "entropy_change": 1.9990097892111904,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 90,
+      "parent_point": 46,
+      "children_indices": [
+        44,
+        45,
+        47,
+        48
+      ],
+      "pac_validation": {
+        "parent_value": 0.6363500655857988,
+        "children_sum": 0.6363500655857988,
+        "children_values": [
+          0.16486528930220207,
+          0.15065317444780302,
+          0.1628992022541285,
+          0.15793239958166516
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002971991962534,
+        "input_magnitude": 0.6363500655857988,
+        "output_magnitude": 0.3183641555209273,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9991366286861374,
+        "entropy_change": 1.9991366286861374,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 91,
+      "parent_point": 38,
+      "children_indices": [
+        36,
+        37,
+        39,
+        40
+      ],
+      "pac_validation": {
+        "parent_value": 0.8838327756636011,
+        "children_sum": 0.883832775663601,
+        "children_values": [
+          0.24348627282074875,
+          0.21236249964578485,
+          0.2187203614755041,
+          0.20926364172156334
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.2561460212782634e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999999,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.50092490929868,
+        "input_magnitude": 0.8838327756636011,
+        "output_magnitude": 0.44273385298449003,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9973766275270597,
+        "entropy_change": 1.9973766275270597,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 92,
+      "parent_point": 62,
+      "children_indices": [
+        60,
+        61,
+        63,
+        0
+      ],
+      "pac_validation": {
+        "parent_value": -0.21508970380287673,
+        "children_sum": -0.21508970380287673,
+        "children_values": [
+          -0.054713837814677466,
+          -0.051061532985626115,
+          -0.053353660229930655,
+          -0.0559606727726425
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5002852183539243,
+        "input_magnitude": 0.21508970380287673,
+        "output_magnitude": 0.10760619943270308,
+        "input_entropy": -0.0,
+        "output_entropy": 1.999173158421405,
+        "entropy_change": 1.999173158421405,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 93,
+      "parent_point": 29,
+      "children_indices": [
+        27,
+        28,
+        30,
+        31
+      ],
+      "pac_validation": {
+        "parent_value": -0.9070991745600046,
+        "children_sum": -0.9070991745600046,
+        "children_values": [
+          -0.22158092971594792,
+          -0.22896071237700003,
+          -0.23287732640947426,
+          -0.22368020605758232
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000954807726343,
+        "input_magnitude": 0.9070991745600046,
+        "output_magnitude": 0.4536361978100452,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9997247995222027,
+        "entropy_change": 1.9997247995222027,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 94,
+      "parent_point": 59,
+      "children_indices": [
+        57,
+        58,
+        60,
+        61
+      ],
+      "pac_validation": {
+        "parent_value": -0.02846887682722321,
+        "children_sum": -0.02846887682722321,
+        "children_values": [
+          -0.007542419364506266,
+          -0.006571247730649126,
+          -0.006866728743819572,
+          -0.007488480988248247
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5008376452166584,
+        "input_magnitude": 0.02846887682722321,
+        "output_magnitude": 0.014258285232109567,
+        "input_entropy": -0.0,
+        "output_entropy": 1.99757091215896,
+        "entropy_change": 1.99757091215896,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 95,
+      "parent_point": 10,
+      "children_indices": [
+        8,
+        9,
+        11,
+        12
+      ],
+      "pac_validation": {
+        "parent_value": -0.9588310114083951,
+        "children_sum": -0.9588310114083951,
+        "children_values": [
+          -0.22888268567724626,
+          -0.2445413313423981,
+          -0.23943540196680677,
+          -0.24597159242194397
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001955935156391,
+        "input_magnitude": 0.9588310114083951,
+        "output_magnitude": 0.4796030468326227,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9994314080301248,
+        "entropy_change": 1.9994314080301248,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 96,
+      "parent_point": 2,
+      "children_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "pac_validation": {
+        "parent_value": 0.4639878836228102,
+        "children_sum": 0.4639878836228102,
+        "children_values": [
+          0.11400822890508584,
+          0.11998195310514195,
+          0.11419582716273703,
+          0.11580187444984537
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001073688536076,
+        "input_magnitude": 0.4639878836228102,
+        "output_magnitude": 0.2320437596585575,
+        "input_entropy": -0.0,
+        "output_entropy": 1.999692029294093,
+        "entropy_change": 1.999692029294093,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 97,
+      "parent_point": 50,
+      "children_indices": [
+        48,
+        49,
+        51,
+        52
+      ],
+      "pac_validation": {
+        "parent_value": 0.13610996271576847,
+        "children_sum": 0.13610996271576847,
+        "children_values": [
+          0.03391611443427064,
+          0.03435247205200583,
+          0.03286366150849192,
+          0.034977714721000086
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5001282061496304,
+        "input_magnitude": 0.13610996271576847,
+        "output_magnitude": 0.06807243149213037,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9996289217460035,
+        "entropy_change": 1.9996289217460035,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 98,
+      "parent_point": 33,
+      "children_indices": [
+        31,
+        32,
+        34,
+        35
+      ],
+      "pac_validation": {
+        "parent_value": -0.9014286128198323,
+        "children_sum": -0.9014286128198323,
+        "children_values": [
+          -0.22368516953384948,
+          -0.22868827475542367,
+          -0.2265086338711665,
+          -0.2225465346593927
+        ],
+        "deviation": 0.0,
+        "relative_deviation": 0.0,
+        "is_consistent": "True",
+        "consistency_percentage": 100.0,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000284487810875,
+        "input_magnitude": 0.9014286128198323,
+        "output_magnitude": 0.4507399509551883,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9999179705638308,
+        "entropy_change": 1.9999179705638308,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    },
+    {
+      "experiment_id": 99,
+      "parent_point": 46,
+      "children_indices": [
+        44,
+        45,
+        47,
+        48
+      ],
+      "pac_validation": {
+        "parent_value": 0.6363500655857988,
+        "children_sum": 0.6363500655857987,
+        "children_values": [
+          0.1551503811839626,
+          0.1624183374731239,
+          0.1598227613229033,
+          0.15895858560580892
+        ],
+        "deviation": 1.1102230246251565e-16,
+        "relative_deviation": 1.7446733876001554e-16,
+        "is_consistent": "True",
+        "consistency_percentage": 99.99999999999997,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "amplification_measurement": {
+        "amplification_factor": 0.5000670486893946,
+        "input_magnitude": 0.6363500655857988,
+        "output_magnitude": 0.318217699230793,
+        "input_entropy": -0.0,
+        "output_entropy": 1.9998061546892871,
+        "entropy_change": 1.9998061546892871,
+        "is_valid": true,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "xi_validation": {
+        "measured_xi": 1.0571009999999998,
+        "target_xi": 1.0571,
+        "deviation": 9.999999999177334e-07,
+        "converged": "True",
+        "convergence_quality": 8.22666379463044e-11,
+        "timestamp": "2025-09-30T18:33:26.629559"
+      },
+      "topology_size": 64,
+      "successful": true,
+      "timestamp": "2025-09-30T18:33:26.629559"
+    }
+  ],
+  "summary": {
+    "framework": "Pre-Field Recursion",
+    "approach": "Natural amplification emergence with PAC conservation",
+    "total_experiments": 100,
+    "successful_rate": 100.0,
+    "data_collection_complete": true
+  }
+}

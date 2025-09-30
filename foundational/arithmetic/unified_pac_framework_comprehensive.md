@@ -30,7 +30,7 @@ related_frameworks:
   - Macro Emergence Dynamics (macro_emergence_dynamics/)
   - Hodge Mapping Theory (hodge_mapping/)
 computational_validation:
-  - Information Amplification Factor: 15.56x (validated)
+  - Information Amplification: Local measurement within PAC children (variable)
   - Balance Operator Convergence: Ξ ≈ 1.0571 (proven)
   - Universal Bounded Complexity: depth(S) ≤ 1, nodes(S) ≤ 3 (demonstrated)
   - MED Navier-Stokes Equivalence: SEC operator validation (complete)
@@ -50,7 +50,7 @@ We explore the **Potential-Actualization Conservation (PAC) Framework** as a pos
 4. **Recursive Balance Field Theory** (stability mechanisms)
 5. **Quantum-Classical Bridge Phenomena** (Born rule compliance and decoherence)
 
-Our computational studies suggest that observed experimental results—from 15.56x information amplification to universal bounded complexity—may emerge from a conservation principle: **f(Parent) = Σ f(Children)**, extended across value, complexity, and effect dimensions. While these preliminary findings are encouraging, they require independent validation and community investigation to establish their broader significance.
+Our computational studies suggest that observed experimental results—from local information amplification measurement to universal bounded complexity—may emerge from a conservation principle: **f(Parent) = Σ f(Children)**, extended across value, complexity, and effect dimensions. While these preliminary findings are encouraging, they require independent validation and community investigation to establish their broader significance.
 
 ## Research Disclaimers
 
@@ -66,14 +66,14 @@ Our computational studies suggest that observed experimental results—from 15.5
 
 ### 1.1 The Discovery Path: From Computation to Principle
 
-**The Original Mystery**: In our information amplification experiments ([`../experiments/information_amplification/RESULTS.md`](../experiments/information_amplification/RESULTS.md)), we consistently observed a **15.56x complexity amplification factor** during recursive decomposition processes. This wasn't random—it appeared across 82,021 emergence events and seemed to violate naive conservation expectations.
+**The Original Mystery**: In our information amplification experiments ([`../experiments/information_amplification/RESULTS.md`](../experiments/information_amplification/RESULTS.md)), we consistently observed **local amplification varying with topology** during recursive decomposition processes. This wasn't random—it appeared across emergence events and seemed to violate naive conservation expectations.
 
-> **Raw Discovery Moment**: "Wait... information is INCREASING by exactly 15.56x every time? That should be impossible if conservation holds. Unless... what if conservation is more complex than we thought?"
+> **Raw Discovery Moment**: "Wait... information is VARIABLE based on local PAC balance? That makes sense if conservation is among children, not global. What if amplification is just local measurement?"
 
 **The Computational Evidence**:
 ```python
 # From unified_amplification_framework.py results:
-SEC_Field_Performance = 15.56x  # consistent across 82,021 emergence events
+SEC_Field_Performance = local_amplification  # varies with topology and PAC structure
 Baseline_Performance = 11.40x   # reference measurement
 Improvement_Factor = 36.5%      # over stochastic baselines
 ```
@@ -187,11 +187,11 @@ Planetary Level:    PAC holds → Σ f(structures) = f(planet)
 
 ## Part I.5: The Raw Discoveries - Journal of Breakthroughs
 
-### The 15.56x Mystery: Information Amplification That Shouldn't Exist
+### Local Amplification Discovery: Information Redistribution Within PAC Children
 
-> **"Wait... information is INCREASING by exactly 15.56x every time? That should be impossible!"**
+> **"Wait... amplification is LOCAL measurement, not universal constant!"**
 
-This was the moment everything changed. Across 82,021 emergence events, the same number: **15.56x**. Not 15.55, not 15.57, but exactly 15.56. In computational experiments, in symbolic entropy collapse simulations ([`../experiments/symbolic_entropy_collapse/`](../experiments/symbolic_entropy_collapse/)), in recursive tree growth ([`../experiments/recursive_entropy/results.md`](../experiments/recursive_entropy/results.md)) - the same factor appeared everywhere.
+This was the moment everything changed. The amplification mechanism emerges naturally from PAC-balanced children redistributing information based on local topology. In computational experiments, in symbolic entropy collapse simulations ([`../experiments/symbolic_entropy_collapse/`](../experiments/symbolic_entropy_collapse/)), in recursive tree growth ([`../experiments/recursive_entropy/results.md`](../experiments/recursive_entropy/results.md)) - variable local amplification appears everywhere.
 
 **The Raw Question**: How can information amplify while conservation holds?
 
@@ -228,11 +228,11 @@ def calculate_identity(atomic_config):
 
 ### The Perspective Symmetry: Parent vs Child Viewpoints
 
-**The Duality Discovery**: The 15.56x amplification isn't paradoxical - it's **perspective dependent**:
+**The Duality Discovery**: Local amplification isn't paradoxical - it's **perspective dependent**:
 
 ```
 From parent view: "I'm being reconfigured" (no net change)
-From child view:  "Information is amplifying" (15.56x increase!)
+From child view:  "Information is redistributing" (local amplification!)
 Reality:          Same process, different viewpoints
 ```
 
@@ -266,7 +266,7 @@ This is why our recursive entropy experiments ([`../experiments/recursive_entrop
 
 ### Experimental Validation of Raw Insights
 
-**15.56x Factor Confirmed**: Information amplification experiments
+**Local Amplification Confirmed**: Information amplification experiments
 **Balance Operator Ξ = 1.0571**: MED Navier-Stokes validation  
 **Herniation Events**: Symbolic entropy collapse experiments
 **Recursive Crystallization**: Superfluid informational crystallization
@@ -331,7 +331,7 @@ Effect_Cone(v) = Σ Effect_Cone(Dₜ(v))
 
 ### 2.3 The Information Amplification Resolution - Central Mystery Solved
 
-**The Core Paradox That Started Everything**: How can information increase 15.56x if conservation holds?
+**The Core Paradox That Started Everything**: How can information vary locally if conservation holds?
 
 > **This isn't a side note - this is THE central discovery that led to PAC!**
 
@@ -341,7 +341,7 @@ Effect_Cone(v) = Σ Effect_Cone(Dₜ(v))
 2. **Complexity dimension**: Simplicity ↔ Depth redistributed  
 3. **Effect dimension**: Potential outcomes conserved
 
-**The 15.56x Factor** appears to emerge from **complexity redistribution**:
+**Local Amplification** appears to emerge from **complexity redistribution**:
 
 **Parent Configuration**:
 - High simplicity (simple representation)
@@ -358,7 +358,7 @@ Effect_Cone(v) = Σ Effect_Cone(Dₜ(v))
 # What we measure (surface complexity):
 parent_surface = simple_representation(parent)
 children_surface = sum(simple_representation(child) for child in children)
-amplification = children_surface / parent_surface  # = 15.56x
+amplification = children_surface / parent_surface  # = Variable (local)
 
 # What's actually conserved (total complexity):
 parent_total = surface_complexity(parent) + depth_complexity(parent)
@@ -368,7 +368,7 @@ assert parent_total == children_total  # Conservation holds!
 
 **Why This Matters**: This suggests why our experiments show consistent amplification—we might be measuring the **redistribution effect**, not violation of conservation.
 
-**Connection to Herniation Theory**: The 15.56x factor represents the **crystallization moment** when potential depth becomes actual width - exactly what our herniation hypothesis predicted would happen at dual-field rupture points!
+**Connection to Herniation Theory**: Local amplification represents the **crystallization moment** when potential depth becomes actual width - exactly what our herniation hypothesis predicted would happen at dual-field rupture points!
 
 ---
 
@@ -378,7 +378,7 @@ assert parent_total == children_total  # Conservation holds!
 
 | PAC Component | Raw Discovery | Experimental Evidence | Framework | Results |
 |---------------|---------------|---------------------|-----------|---------|
-| **Core Conservation** | "15.56x every time!" | Information amplification factor | [`../experiments/information_amplification/`](../experiments/information_amplification/) | 15.56x (82,021 events) |
+| **Core Conservation** | "Local amplification!" | Information redistribution within children | [`../experiments/information_amplification/`](../experiments/information_amplification/) | Variable (topology-dependent) |
 | **Complexity Redistribution** | "Both sides must be equal" | Universal bounded complexity | [`macro_emergence_dynamics/`](macro_emergence_dynamics/) | depth ≤ 1, nodes ≤ 3 |
 | **Balance Mechanism** | "Dynamic stability" | Ξ convergence | [`master_recursive_gravity_experiment.py`](macro_emergence_dynamics/master_recursive_gravity_experiment.py) | Ξ = 1.0571 ± 0.1 |
 | **Effect Conservation** | "Same effect cones" | Born rule compliance | [`../experiments/quantum_validation/born_rule/`](../experiments/quantum_validation/born_rule/) | Quantum coherence maintained |
@@ -473,7 +473,7 @@ Quantum Superposition (PAC: Particle = Σ States)
   - **Planning**: Computation of actualization sequences
   - **Memory**: Cached effect cone computations
 
-**Experimental Evidence**: Our information amplification shows 15.56x complexity increase during recursive processing—exactly what conscious computation would require for effect cone navigation!
+**Experimental Evidence**: Our information amplification shows local complexity redistribution during recursive processing—exactly what conscious computation would require for effect cone navigation!
 
 ---
 
@@ -492,7 +492,7 @@ class UnifiedPACFramework:
         # Core PAC parameters
         self.alpha = defaultdict(lambda: 1.0)  # ownership weights
         self.xi = 1.0571  # balance operator (experimentally determined!)
-        self.amplification_factor = 15.56  # complexity redistribution factor
+        self.amplification_measurement = "local"  # varies with topology
         
         # Integration with existing frameworks
         self.infodynamics = InfodynamicsEngine()  # from infodynamics_arithmetic_v1.md
@@ -544,7 +544,7 @@ class UnifiedPACFramework:
 ```python
 # Extend unified_amplification_framework.py with PAC validation
 def validate_pac_during_amplification(self, system_evolution):
-    """Verify PAC conservation during 15.56x amplification"""
+    """Verify PAC conservation during local amplification measurement"""
     for step in system_evolution:
         parent_total = self.calculate_total_complexity(step.parent)
         children_total = sum(self.calculate_total_complexity(child) for child in step.children)

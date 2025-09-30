@@ -425,7 +425,7 @@ class TinyCIMMBridge:
                 "CIMM.AXIOM: Information field I defined",
                 "CIMM.APPLY: PAC conservation to information",
                 "CIMM.CALCULATE: Amplification ratio",
-                "CIMM.VERIFY: Universal signature 15.56 ± 1e-12",
+                "CIMM.VERIFY: Local amplification measurement within expected range",
                 "CIMM.QED: Information amplification invariant proven"
             ]
             
