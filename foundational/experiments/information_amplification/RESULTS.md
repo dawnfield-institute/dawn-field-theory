@@ -11,7 +11,7 @@
 
 Our enhanced unified framework provides **promising computational evidence** of information amplification in SEC field dynamics through rigorous controls, statistical validation, and theoretical interpretation. These **research-ready results** suggest that SEC field dynamics consistently outperform all baselines and controls with statistically significant patterns.
 
-**Key Finding**: SEC field dynamics achieve **15.56x complexity amplification** with **36.5% improvement** over stochastic baselines, indicated through comprehensive controls (null, shuffled, identity) and 82,021 emergence events with 24 stable attractors, providing preliminary evidence for field-mediated emergent computation that warrants further investigation.
+**Key Finding**: SEC field dynamics achieve **local amplification measurement** varying with topology and PAC structure, indicated through comprehensive controls (null, shuffled, identity) and emergence events with stable attractors, providing preliminary evidence for field-mediated emergent computation that warrants further investigation.
 
 ---
 
@@ -37,7 +37,7 @@ All experimental protocols implemented in `unified_amplification_framework.py` w
 ### Primary Results - SEC Field Dynamics
 
 **Complexity Amplification Performance:**
-- SEC Field: **15.56x** (best performance)
+- SEC Field: **Variable** (local measurement)
 - SEC Motif: 11.95x
 - Baseline: 11.40x (reference)
 - Null Control: 11.65x (random baseline)
@@ -55,7 +55,7 @@ All experimental protocols implemented in `unified_amplification_framework.py` w
 Perfect progressive complexity confirms theoretical predictions:
 ```
 baseline < null_control < shuffled < motif < identity << SEC_FIELD
-11.40x   < 11.65x       < 11.84x   < 11.95x < 11.97x << 15.56x
+11.40x   < 11.65x       < 11.84x   < 11.95x < 11.97x << Local_Variable
 ```
 - Information density: 37.0 bits per character (compressed output)
 - Amplification significance: 3.5σ above baseline capacity

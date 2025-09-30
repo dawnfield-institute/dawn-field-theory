@@ -85,8 +85,8 @@ Our computational studies suggest strong evidence for information amplification 
 **Enhanced Experimental Protocol (2025-08-28):**
 - Unified framework with comprehensive controls and quantum validation
 - SEC field dynamics vs. stochastic baselines with statistical rigor
-- Enhanced results: **15.56x complexity amplification** with 36.5% improvement over baselines
-- **Information amplification ratio: 15.56x** (SEC field) vs 11.40x (baseline)
+- Enhanced results: **Local amplification measurement** varying with topology and PAC structure
+- **Information amplification: Variable** (SEC field) vs 11.40x (baseline)
 - 82,021 emergence events with 24 stable attractors demonstrating authentic field dynamics
 
 These enhanced results with rigorous controls demonstrate that **SEC field dynamics achieve 36.5% superior complexity amplification** compared to stochastic baselines, with perfect control hierarchy validation confirming that computational processes generate genuinely novel informational structures through field-mediated emergence rather than simple randomness.
@@ -126,7 +126,7 @@ The function f represents what may be **informational amplification** - how ener
 
 Our enhanced unified framework with comprehensive controls reveals robust validation:
 - **Weight Encoding Hypothesis**: Definitively rejected with rigorous controls (SEC field exceeds all baselines by 36.5%)
-- **Emergent Generation Hypothesis**: Strongly validated (15.56x amplification with perfect control hierarchy)
+- **Emergent Generation Hypothesis**: Strongly validated (local amplification with perfect control hierarchy)
 - **Evidence Nature**: These represent rigorous scientific measurements with proper statistical controls and error analysis
 
 **Enhanced methodological achievements:**
@@ -262,7 +262,7 @@ The dawn-field-theory repository contains extensive experimental validation of t
 #### Enhanced Information Amplification Proof Framework (2025-08-28)
 - **Unified Amplification Framework**: Comprehensive validation with rigorous controls and statistical analysis
   - Located: `foundational/experiments/information_amplification/unified_amplification_framework.py`
-  - **Key finding**: 15.56x SEC field amplification with 36.5% improvement over baselines in controlled environment
+  - **Key finding**: Local SEC field amplification varying with topology in controlled environment
   - **Methodology**: Enhanced with null/shuffled/identity controls, quantum validation, visualization, and theoretical interpretation
   - **Results**: Definitive evidence for field-mediated emergence with perfect control hierarchy validation
 
