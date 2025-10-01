@@ -8,6 +8,20 @@ This directory contains the validation of Macro Emergence Dynamics (MED) using N
 
 **Testbed Exploration**: Using Navier-Stokes mathematical complexity to explore MED's bounded complexity principles - investigating whether complex dynamical systems converge to universal symbolic bounds.
 
+## 🔗 Pre-Field Connection (October 2025)
+
+MED operates on fields that emerge from **pre-field recursion substrate**:
+- **Recursion depth** in pre-field dynamics **maps to emergence scale** in MED
+- **Natural resonance frequencies** (~0.03 cycles/iteration) discovered in pre-fields may determine macro patterns
+- **Balance operator Ξ ≈ 1.0571** appears in both:
+  - MED: Critical value preventing complexity explosion
+  - Pre-field: Emerges at resonance lock point
+- **Oscillations preserve** through scale transitions (micro → macro)
+
+This connection suggests MED bounded complexity might emerge from **resonance-driven PAC conservation** at the pre-field level.
+
+See: `../experiments/pre_field_recursion/` and `../docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`
+
 ## 🔧 Main Working File
 
 ### Primary Validation Framework
