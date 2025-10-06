@@ -1,0 +1,92 @@
+{
+  "ligo": {
+    "event": "GW150914",
+    "redshift": 0.09,
+    "peak_freq_observed": 32.927536231884055,
+    "peak_freq_corrected": 35.89101449275364,
+    "matches": [],
+    "match_found": false
+  },
+  "cmb": {
+    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 4 and the array at index 1 has size 3"
+  },
+  "solar": {
+    "oscillations": {
+      "5-minute": 0.0033333333333333335,
+      "granulation": 0.022,
+      "supergranulation": 6.808278867102396e-06,
+      "solar_cycle": 2.8807352558208136e-09
+    },
+    "matches": [
+      {
+        "mode": "granulation",
+        "frequency": 0.022,
+        "target": 0.02,
+        "harmonic": 1,
+        "error": 0.09999999999999991
+      }
+    ],
+    "signature_found": true
+  },
+  "earth": {
+    "oscillations": {
+      "primary_microseism": 0.07,
+      "secondary_microseism": 0.14,
+      "earth_mode_0S2": 0.0003097,
+      "lamb_wave": 0.003,
+      "ocean_swell": 0.025,
+      "infragravity": 0.01
+    },
+    "matches": [
+      {
+        "type": "infragravity",
+        "frequency": 0.01,
+        "error": 0.0,
+        "harmonic": 0.5
+      }
+    ],
+    "signature_found": true
+  },
+  "pulsar": {
+    "frequencies": {
+      "gwb_peak": 3.168808781402895e-08,
+      "5yr_residual": 6.33761756280579e-09,
+      "10yr_residual": 3.168808781402895e-09,
+      "15yr_residual": 2.11253918760193e-09,
+      "smbh_orbital": 1.1574074074074074e-11
+    },
+    "scaling_factors": [
+      {
+        "name": "gwb_peak",
+        "frequency": 3.168808781402895e-08,
+        "scaling_to_fMAS": 631152.0000000001,
+        "log10_scaling": 5.800133962749209
+      },
+      {
+        "name": "5yr_residual",
+        "frequency": 6.33761756280579e-09,
+        "scaling_to_fMAS": 3155760.0,
+        "log10_scaling": 6.499103967085228
+      },
+      {
+        "name": "10yr_residual",
+        "frequency": 3.168808781402895e-09,
+        "scaling_to_fMAS": 6311520.0,
+        "log10_scaling": 6.800133962749209
+      },
+      {
+        "name": "15yr_residual",
+        "frequency": 2.11253918760193e-09,
+        "scaling_to_fMAS": 9467280.0,
+        "log10_scaling": 6.97622522180489
+      },
+      {
+        "name": "smbh_orbital",
+        "frequency": 1.1574074074074074e-11,
+        "scaling_to_fMAS": 1728000000.0,
+        "log10_scaling": 9.237543738142875
+      }
+    ],
+    "signature_found": false
+  }
+}

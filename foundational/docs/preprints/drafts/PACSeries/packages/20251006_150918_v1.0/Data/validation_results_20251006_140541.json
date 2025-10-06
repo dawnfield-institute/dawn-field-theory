@@ -1,0 +1,141 @@
+{
+  "ligo": {
+    "event": "GW150914",
+    "redshift": 0.09,
+    "peak_freq_observed": 32.927536231884055,
+    "peak_freq_corrected": 35.89101449275364,
+    "matches": [],
+    "match_found": false
+  },
+  "cmb": {
+    "acoustic_peaks": {
+      "1": 220.0,
+      "2": 537.5,
+      "3": 810.8,
+      "4": 1120.7,
+      "5": 1444.8
+    },
+    "peak_ratios": [
+      2.4431818181818183,
+      1.5084651162790697,
+      1.382215096201283,
+      1.2891942535915053
+    ],
+    "expected_ratios": [
+      1.219,
+      1.438,
+      1.657,
+      1.876
+    ],
+    "correlation": -0.8697956759619093,
+    "peak_frequencies": [
+      1.058959550947847e-18,
+      2.587230721065763e-18,
+      3.902747290493247e-18,
+      5.394436221578419e-18,
+      6.95447617822477e-18
+    ],
+    "frequency_matches": [],
+    "signature_found": false
+  },
+  "solar": {
+    "oscillations": {
+      "5-minute": 0.0033333333333333335,
+      "granulation": 0.022,
+      "supergranulation": 6.808278867102396e-06,
+      "solar_cycle": 2.8807352558208136e-09
+    },
+    "matches": [
+      {
+        "mode": "granulation",
+        "frequency": 0.022,
+        "target": 0.02,
+        "harmonic": 1,
+        "error": 0.09999999999999991
+      }
+    ],
+    "signature_found": true
+  },
+  "earth": {
+    "oscillations": {
+      "primary_microseism": 0.07,
+      "secondary_microseism": 0.14,
+      "earth_mode_0S2": 0.0003097,
+      "lamb_wave": 0.003,
+      "ocean_swell": 0.025,
+      "infragravity": 0.01
+    },
+    "matches": [
+      {
+        "type": "infragravity",
+        "frequency": 0.01,
+        "error": 0.0,
+        "harmonic": 0.5
+      }
+    ],
+    "signature_found": true
+  },
+  "pulsar": {
+    "frequencies": {
+      "gwb_peak": 3.168808781402895e-08,
+      "5yr_residual": 6.33761756280579e-09,
+      "10yr_residual": 3.168808781402895e-09,
+      "15yr_residual": 2.11253918760193e-09,
+      "smbh_orbital": 1.1574074074074074e-11
+    },
+    "scaling_factors": [
+      {
+        "name": "gwb_peak",
+        "frequency": 3.168808781402895e-08,
+        "scaling_to_fMAS": 631152.0000000001,
+        "log10_scaling": 5.800133962749209
+      },
+      {
+        "name": "5yr_residual",
+        "frequency": 6.33761756280579e-09,
+        "scaling_to_fMAS": 3155760.0,
+        "log10_scaling": 6.499103967085228
+      },
+      {
+        "name": "10yr_residual",
+        "frequency": 3.168808781402895e-09,
+        "scaling_to_fMAS": 6311520.0,
+        "log10_scaling": 6.800133962749209
+      },
+      {
+        "name": "15yr_residual",
+        "frequency": 2.11253918760193e-09,
+        "scaling_to_fMAS": 9467280.0,
+        "log10_scaling": 6.97622522180489
+      },
+      {
+        "name": "smbh_orbital",
+        "frequency": 1.1574074074074074e-11,
+        "scaling_to_fMAS": 1728000000.0,
+        "log10_scaling": 9.237543738142875
+      }
+    ],
+    "signature_found": false
+  },
+  "phase_transitions": {
+    "transitions": {
+      "gw_phase": {
+        "raw_freq": 1075.0,
+        "normalized_freq": 0.6885106988796075,
+        "matches_fMAS": false
+      },
+      "cmb_phase": {
+        "scattering_rate": 1.9936198457000002e-23,
+        "observed_rate": 1.810735554677566e-26,
+        "matches_fMAS": false
+      },
+      "solar_convection": {
+        "turnover_freq": 0.002,
+        "pattern_freq": 8e-05,
+        "matches_fMAS": false
+      },
+      "ocean_computation": {
+        "phase_velocity": 17.670936544119517,
+        "group_velocity": 8.835468272059758,
+        "interaction_freq": 0.00441773413602988,
+        "matches_fMAS": 
