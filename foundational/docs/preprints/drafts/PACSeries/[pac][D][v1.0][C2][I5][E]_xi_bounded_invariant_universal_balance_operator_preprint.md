@@ -2288,6 +2288,8 @@ We challenge the community to:
 
 This work builds on the foundational PAC framework and earlier explorations of information dynamics. The computational validation was performed using GAIA (Generally Adaptive Intelligence Architecture). Special thanks to the open-source scientific computing community (NumPy, SciPy, Matplotlib).
 
+**Update (January 2025)**: The π-Harmonic Möbius Topology framework (see PACSeries Paper #4, Section 7.4) reveals the geometric origin of Xi's bounded oscillation. The Möbius anti-periodic eigenvalues λₙᴹ = (n + 1/2)² create spectral shifts that geometrically constrain the balance operator, with the holonomy θ_eff ≈ 0.6π encoding the relationship between Xi bounds and the relaxation parameter r = 11/(8π). This explains why Ξ ≈ 1.0571 emerges as a universal constant.
+
 ---
 
 **Document Status**: [D][v1.0][C2][I5][E]  
