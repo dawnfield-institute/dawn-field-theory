@@ -76,13 +76,28 @@ Dawn Field Theory is designed for both human and machine-native exploration. The
 
 ---
 
-## 🌟 Status: Release 1.0 Polishing
+## 🌟 Status: October 2025
 
-This repository is currently in a short polishing phase to prepare for the Release 1.0 drop on **September 1, 2025**.
+**PACSeries v1.0 Published!** 🎉
+- ✅ [Universal Resonance at 0.020 Hz](https://zenodo.org/records/17295103) - Complete 4-paper series with validation code
+- 🔬 100% computational reproducibility achieved
+- 🌍 Community validation phase active
+- 📊 Next milestone: Physical experimental validation
 
-- Short-term plans live in [`timeline.md`](./timeline.md)
-- Strategic roadmaps live in [`roadmaps/`](./roadmaps/README.md)
-- Announcements and intent are posted on Discord only
+- Short-term plans: [`timeline.md`](./timeline.md)
+- Strategic roadmaps: [`roadmaps/`](./roadmaps/README.md)
+- Announcements: Discord only
+
+---
+
+## 🎯 Key Discovery: Universal 0.020 Hz Resonance
+
+Our PACSeries research identifies a universal organizing frequency emerging across systems from quantum to cosmic scales:
+- **Mathematical identity**: r = 11/(8π) 
+- **Convergence point**: Iteration 91 = √2 × π phase coverage
+- **Validation**: 100% reproducibility, r = -0.999632 cosmic correlation
+- **Scale range**: 20+ orders of magnitude (brain waves to quasars)
+- **[Read the complete papers →](https://zenodo.org/records/17295103)**
 
 ---
 
@@ -185,28 +200,6 @@ CIMM (Cosmic Information Mining Model) provides the stable, production-ready imp
 
 🗃️ **Implementation**: [dawn-models/stable/cimm-legacy/](https://github.com/dawnfield-institute/dawn-models/tree/main/stable/cimm-legacy)
 
-### GAIA: Next-Generation Field Intelligence
-GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Field into:
-* Symbolic memory systems
-* Meta-cognitive trace protocols
-* Resonant agentic cognition
-> **Note:** GAIA is in the architecture and early development stage. Internal prototyping is ongoing; no runnable implementation is available yet.
-
-### TinyCIMM: Minimalist Symbolic Cognition
-TinyCIMM is the newest, ultra-lightweight agentic model for symbolic cognition and recursive collapse. It demonstrates how minimal entropy-informed architectures can achieve adaptive learning, symbolic memory, and field-based intelligence. Explore its code and experiments for a hands-on introduction to Dawn’s core principles.
-
-
-### SCBF: Symbolic Collapse Benchmark Framework (XAI)
-SCBF is the explainable AI (XAI) suite for benchmarking symbolic collapse, transparency, and interpretability. It provides tools and protocols for visualizing collapse events, tracing entropy, and validating agentic decisions. SCBF is the recommended starting point for XAI research and practical explainability in Dawn Field Theory.
-
-
-### GAIA: Next-Generation Field Intelligence
-GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Field into:
-* Symbolic memory systems
-* Meta-cognitive trace protocols
-* Resonant agentic cognition
-> **Note:** GAIA is in the architecture and early development stage. Internal prototyping is ongoing; no runnable implementation is available yet.
-
 ---
 
 ## 📂 Project Structure
@@ -224,11 +217,11 @@ GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Fiel
 
 ## 📚 Recommended Starting Points
 
-1. [Infodynamics Overview →](./infodynamics.md)
-2. [Foundational Experiments →](./foundational/experiments/README.md)
-3. [Collapse Geometry Papers →](./foundational/docs/README.md)
-4. [Environment & Reproducibility →](./ENVIRONMENT.md)
-5. [Evidence Map →](./EVIDENCE_MAP.md)
+1. **[PACSeries Papers →](https://zenodo.org/records/17295103)** - Latest breakthrough: 0.020 Hz universal frequency
+2. [Infodynamics Overview →](./infodynamics.md)
+3. [Foundational Experiments →](./foundational/experiments/README.md)
+4. [Collapse Geometry Papers →](./foundational/docs/README.md)
+5. [Environment & Reproducibility →](./ENVIRONMENT.md)
 
 ---
 
@@ -236,7 +229,7 @@ GAIA (Generalized Architectures for Intelligent Actualization) extends Dawn Fiel
 
 - Environment setup and version hints: see `ENVIRONMENT.md`
 - PyTorch is not pinned in a global requirements file; install via the official selector per your CUDA/CPU setup
-- For claim→artifact links across models/experiments, see `EVIDENCE_MAP.md`
+- All experiments are documented with reproducible code and data in the PACSeries package
 
 ---
 
@@ -286,16 +279,11 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 
 ## 📚 Subdirectory Guides
 
-* [`foundational/README.md`](./foundational/README.md)
-* [`foundational/docs/README.md`](./foundational/docs/README.md)
-* [`foundational/experiments/README.md`](./foundational/experiments/README.md)
-* [`foundational/arithmetic/README.md`](./foundational/arithmetic/README.md)
-* [`foundational/legacy_docs_archive/README.md`](./foundational/legacy_docs_archive/README.md)
-* [`devkit/README.md`](./devkit/README.md)
-* [`models/README.md`](./models/README.md)
-* [`models/CIMM/README.md`](./models/CIMM/README.md)
-* [`citations/README.md`](./citations/README.md) - Automated citation system
-* [`citations/external_citations/README.md`](./citations/external_citations/README.md) - External references
+* [`foundational/`](./foundational/) - Core theory, experiments, and arithmetic frameworks
+* [`citations/`](./citations/) - Automated citation system and external references
+* [`devkit/`](./devkit/) - Development tools and experimental utilities
+* [`blueprints/`](./blueprints/) - Experimental prototypes and theoretical sketches
+* [`roadmaps/`](./roadmaps/) - Development roadmaps and planning documents
 * [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
 
 ---
@@ -361,19 +349,22 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 
 Core Dawn Field Theory research is available as draft preprints on Zenodo:
 
+### PACSeries: Universal Resonance
+- **[The Dawn Field Papers: Universal Resonance at 0.020 Hz](https://zenodo.org/records/17295103)** — PACSeries v1.0: Computational evidence for information-driven reality (4 papers + complete validation code)
+
 ### Foundational Theory
-- **[Symbolic Entropy Collapse](https://zenodo.org/records/17024434)** - Topological dynamics, recursive harmonics, and quantum correspondence
-- **[Dawn Field Theory Synthesis](https://zenodo.org/records/17024367)** - Unified framework for symbolic entropy collapse, recursive intelligence, and field dynamics
-- **[Dawn Field Theory: Infodynamics](https://zenodo.org/records/17041188)** - Infodynamics and recursive mathematical architecture
+- **[Symbolic Entropy Collapse](https://zenodo.org/records/17024434)** — Topological dynamics, recursive harmonics, and quantum correspondence
+- **[Dawn Field Theory Synthesis](https://zenodo.org/records/17024367)** — Unified framework for symbolic entropy collapse, recursive intelligence, and field dynamics
+- **[Dawn Field Theory: Infodynamics](https://zenodo.org/records/17041188)** — Infodynamics and recursive mathematical architecture
 
 ### Cognitive Architecture & AI
-- **[Cognition Index Protocol (CIP)](https://zenodo.org/records/17024220)** - Demonstrable machine comprehension through structured repository intelligence
-- **[Symbolic Cognition & Interpretability](https://zenodo.org/records/17024098)** - Formal framework for bifractal AI diagnostics
-- **[Resonant Symbolic Convergence](https://zenodo.org/records/17023921)** - Framework for human-agent co-computational ecology
+- **[Cognition Index Protocol (CIP)](https://zenodo.org/records/17024220)** — Demonstrable machine comprehension through structured repository intelligence
+- **[Symbolic Cognition & Interpretability](https://zenodo.org/records/17024098)** — Formal framework for bifractal AI diagnostics
+- **[Resonant Symbolic Convergence](https://zenodo.org/records/17023921)** — Framework for human-agent co-computational ecology
 
 ### Mathematical & Engineering Frameworks
-- **[Recursive Mathematical Plasticity](https://zenodo.org/records/17041249)** - Entropy architecture for adaptive intelligence systems
-- **[Macro Emergence Dynamics](https://zenodo.org/records/17041215)** - Navier-Stokes extensions for field dynamics
+- **[Recursive Mathematical Plasticity](https://zenodo.org/records/17041249)** — Entropy architecture for adaptive intelligence systems
+- **[Macro Emergence Dynamics](https://zenodo.org/records/17041215)** — Navier-Stokes extensions for field dynamics
 
 > See [`resources/publications_registry.yaml`](./resources/publications_registry.yaml) for complete publication metadata and repository mappings.
 

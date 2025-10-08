@@ -327,13 +327,13 @@ But represents something new: the **fundamental frequency at which reality "comp
 - **Dawn Field Theory**: https://github.com/dawnfield-institute/dawn-field-theory
 
 ### Specific Code References
-- Unified validation: `/dawn-models/research/GAIA/usecases/unified_mas_med_validation.py`
-- π-harmonic analysis: `/dawn-field-theory/foundational/experiments/pre_field_recursion/pi_harmonic_fmas_analysis.py`
-- Real data validation: `/dawn-field-theory/foundational/experiments/pre_field_recursion/validate_with_real_data.py`
+- Unified validation: [`dawn-models/research/GAIA/usecases/unified_mas_med_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/unified_mas_med_validation.py)
+- π-harmonic analysis: [`dawn-field-theory/foundational/experiments/pre_field_recursion/pi_harmonic_fmas_analysis.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/pi_harmonic_fmas_analysis.py)
+- Real data validation: [`dawn-field-theory/foundational/experiments/pre_field_recursion/validate_with_real_data.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/validate_with_real_data.py)
 
 ### Documentation
-- Comprehensive notes: `/dawn-field-theory/foundational/experiments/pre_field_recursion/notes/`
-- PACSeries papers: `/dawn-field-theory/foundational/docs/preprints/drafts/PACSeries/`
+- Comprehensive notes: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion/notes)
+- PACSeries papers: [`dawn-field-theory/foundational/docs/preprints/drafts/PACSeries/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/docs/preprints/drafts/PACSeries)
 
 ---
 

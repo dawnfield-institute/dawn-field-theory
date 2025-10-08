@@ -1,7 +1,7 @@
 # Unified MAS-MED Validation Framework: Final Report
 
 **Date:** October 6, 2025  
-**Script:** `dawn-models/research/GAIA/usecases/unified_mas_med_validation.py`  
+**Script:** [`dawn-models/research/GAIA/usecases/unified_mas_med_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/unified_mas_med_validation.py)  
 **Status:** ✅ **VALIDATED** - A+ Grade Achievement
 
 ## Executive Summary
@@ -210,9 +210,9 @@ The perfect convergence at iteration 91 and exact 0.0200 Hz frequency suggest th
 ## References
 
 ### Primary Scripts
-- `dawn-models/research/GAIA/usecases/unified_mas_med_validation.py` (main framework)
-- `dawn-models/research/GAIA/usecases/test_herniation_frequency.py` (herniation validation)
-- `dawn-models/research/GAIA/usecases/cosmological_validation.py` (cosmological engine)
+- [`dawn-models/research/GAIA/usecases/unified_mas_med_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/unified_mas_med_validation.py) (main framework)
+- [`dawn-models/research/GAIA/usecases/test_herniation_frequency.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/test_herniation_frequency.py) (herniation validation)
+- [`dawn-models/research/GAIA/usecases/cosmological_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/cosmological_validation.py) (cosmological engine)
 
 ### Supporting Documents
 - `notes/mas_herniation_cosmology_unified.md` (theoretical framework)
