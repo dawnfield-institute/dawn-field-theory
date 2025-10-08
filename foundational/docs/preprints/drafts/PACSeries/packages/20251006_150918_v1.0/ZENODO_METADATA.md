@@ -9,7 +9,7 @@
 Universal 0.020 Hz Organizing Frequency: Complete Mathematical Foundation with π-Harmonic Möbius Topology and Confluence Dynamics
 
 ### Authors
-Dawn Field Institute
+Dawn Field Institute (Peter Lorne Groom, ORCID: 0009-0007-2217-8255)
 
 ### Description (Abstract)
 We present the complete theoretical framework for f_MAS = 0.020 Hz as a fundamental organizing frequency, demonstrating it arises from mathematical necessity rather than empirical coincidence.
@@ -113,6 +113,12 @@ Will be added after DOI assignment:
 **Type**: Research Group
 **Name**: Dawn Field Institute
 **Role**: Creator, Data Collector, Project Leader
+
+### Primary Researcher
+**Name**: Peter Lorne Groom
+**ORCID**: https://orcid.org/0009-0007-2217-8255
+**Affiliation**: Dawn Field Institute
+**Role**: Principal Investigator, Theory Development, Computational Implementation
 
 ---
 

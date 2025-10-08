@@ -214,6 +214,12 @@ physics, comparable to the speed of light or Planck's constant.
 
 ---
 
+## Author Information
+
+**Primary Researcher**: Peter Lorne Groom  
+**ORCID**: https://orcid.org/0009-0007-2217-8255  
+**Affiliation**: Dawn Field Institute  
+
 ## Contact for Collaboration
 
 For inquiries about:
