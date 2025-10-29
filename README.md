@@ -391,3 +391,15 @@ Core Dawn Field Theory research is available as draft preprints on Zenodo:
 
 © 2025 The Dawn Field Institute  
 All rights reserved under AGPL-3.0 + Epistemic Constraint Framework
+
+
+
+information conservation, potential-actualization conservation, PAC theory, 
+Dawn Field Theory, information geometry, E=mc2, embedding spaces, 
+semantic amplification, information physics, Noether theorem, 
+symbolic entropy collapse, macro emergence dynamics, LLM physics, 
+model-specific constants, information relativity, collapse irreversibility, 
+Landauer principle, fractal dimension, hierarchical decomposition, 
+geometric validation, conservation laws, emergence, consciousness, 
+artificial intelligence, machine learning interpretability, 
+transfer learning, information theory, computational physics
