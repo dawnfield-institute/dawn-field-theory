@@ -1,0 +1,81 @@
+{
+  "target_alpha": 0.0072973525692838015,
+  "target_inverse": 137.035999084,
+  "pac_constants": {
+    "xi_pac": 1.0571,
+    "xi_min": 1.0015,
+    "pi": 3.141592653589793,
+    "phi": 1.618033988749895
+  },
+  "spectral_sums": {
+    "N=10": {
+      "xi": 1.1493506493506493,
+      "delta": 0.14935064935064934,
+      "pi_over_delta": 21.035011680557744,
+      "delta_times_xi": 0.17165626581210996
+    },
+    "N=50": {
+      "xi": 1.029994175888177,
+      "delta": 0.029994175888176988,
+      "pi_over_delta": 104.74008905269294,
+      "delta_times_xi": 0.030893826475387885
+    },
+    "N=100": {
+      "xi": 1.014999261120142,
+      "delta": 0.014999261120141938,
+      "pi_over_delta": 209.44982745657168,
+      "delta_times_xi": 0.01522423895429214
+    },
+    "N=500": {
+      "xi": 1.0029999940179581,
+      "delta": 0.002999994017958141,
+      "pi_over_delta": 1047.1996393272902,
+      "delta_times_xi": 0.0030089939820659253
+    },
+    "N=1000": {
+      "xi": 1.0014999992511238,
+      "delta": 0.0014999992511237625,
+      "pi_over_delta": 2094.3961480222,
+      "delta_times_xi": 0.0015022492488771344
+    },
+    "at_N=137": {
+      "xi": 1.0109486166007906,
+      "delta": 0.010948616600790606,
+      "observation": "What is special about N=137 in the spectral sum?"
+    },
+    "N_at_xi_pac": {
+      "N": 27,
+      "xi": 1.0555194805194805,
+      "observation": "\u039e drops below 1.0571 at N=27"
+    }
+  },
+  "geometric": {
+    "pi_squared_times_xi_pac": {
+      "value": 10.433158812391559,
+      "target": 137,
+      "error_pct": 92.38455561139303,
+      "promising": false
+    },
+    "pi_cubed_over_xi_pac": {
+      "value": 29.331450837479725,
+      "target": 137,
+      "error_pct": 78.59018187045275,
+      "promising": false
+    },
+    "4pi_squared_over_xi_minus_1": {
+      "value": 691.3908512146669,
+      "target": 137,
+      "error_pct": 404.66485490121676,
+      "promising": false
+    },
+    "2pi_over_xi_minus_1": {
+      "value": 110.03827157932739,
+      "target": 137,
+      "error_pct": 19.680093737717236,
+      "promising": false
+    },
+    "pi_over_ln_xi": {
+      "value": 56.57539532420457,
+      "target": 137,
+      "error_pct": 58.70409100423023,
+      "promising": 

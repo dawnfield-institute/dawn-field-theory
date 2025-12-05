@@ -20,6 +20,7 @@ child_directories:
 - language_to_logic
 - legacy
 - navier-stokes
+- pac_confluence_xi
 - pi_harmonics
 - predictive_collapse
 - pre_field_recursion
