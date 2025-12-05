@@ -5,11 +5,22 @@
 
 ---
 
-> **📢 Project Status Update (October 2025)**  
-> Due to increased work commitments over the next 2 months, all roadmaps are temporarily paused. The project is **not frozen**—work continues behind the scenes—but updates and documentation will be delayed. Expected to resume regular updates in December 2025. Thank you for your patience and continued interest.
+> **📢 Project Status Update (December 2025)**
+>
+> **I'm back!** After an intense couple of months at work for a major release, development is resuming. December will be a slower recovery month, but I'm excited about everything ahead.
+>
+> **What's Happening:**
+> - **GRIMM** — Our Dawn Field-native AI agent framework (currently private) is in active development. It implements field dynamics, entropy-driven cognition, and the PAC (Potential-Actual-Crest) model for agent memory and reasoning. GRIMM will be open-sourced once stable.
+> - **Kronos** — The fractal memory system powering GRIMM's temporal navigation will soon become a standalone repository for broader use.
+> - **Reality Engine** — The Dawn Field simulation engine will be restarted soon and developed into a comprehensive testbed for all theoretical work once the core theory stabilizes.
+>
+> **Under Review:**
+> - All roadmaps are being reviewed and will be updated soon
+> - All draft preprints are being reviewed for new iterations
+>
+> Thank you for your patience and continued interest!
 
 ---
-
 
 ## 🧠 Explore with DawnField GPT
 
