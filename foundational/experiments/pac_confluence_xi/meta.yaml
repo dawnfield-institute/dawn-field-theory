@@ -1,0 +1,49 @@
+schema_version: 2.0
+directory_name: pac_confluence_xi
+description: |
+  SEC Phase Theory: Unified derivation of Standard Model coupling constants
+  from Fibonacci numbers and Möbius topology.
+  
+  CORE HYPOTHESIS: All fundamental interactions arise from SEC (Symbolic 
+  Entropy Collapse) phase cycling on a Möbius manifold. Coupling constants
+  encode the recursion depth at which phase coherence saturates.
+  
+  DERIVED FORMULAS:
+  - α (EM):    (2/3φF₁₀)(1 - F₁₀/4πF₇²) = 0.00729731  [5.7 ppm error]
+  - sin²θ_W:  F₄/F₇ = 3/13 = 0.2308                   [0.19% error]
+  - α_s:      3/(2φF₆) = 3/(2φ×8) = 0.1159            [1.71% error]
+  
+  KEY PATTERN: F₇ = 13 appears in ALL three formulas as the
+  "universal base phase depth" of the Standard Model.
+  
+  STATUS: Three independent coupling constants from one unified framework.
+          Mathematical structure is compelling; physical derivation needed.
+
+semantic_scope:
+  - sec
+  - phase cycling
+  - mobius topology
+  - fibonacci
+  - coupling constants
+  - fine structure
+  - weak mixing angle
+  - strong coupling
+  - standard model
+  - unification
+
+files:
+  - sec_unified_couplings.py     # All three couplings in one script
+  - SEC_PHASE_THEORY.md          # Full theory document
+  - alpha_comprehensive.py       # Detailed α analysis
+  - alpha_from_fibonacci.py      # Original α derivation
+  - ALPHA_DERIVATION_ANALYSIS.md # Critical assessment
+  - standard_model_bridge.py     # Z-Xi relationship tests
+  - results.md                   # Experiment results
+
+linked_work:
+  - ../../arithmetic/confluence_operator_recursive_arithmetic.md
+  - ../../arithmetic/unified_pac_framework_comprehensive.md
+  - ../../../todo/theory/quantum_EM.md
+
+child_directories:
+  - reference_material
