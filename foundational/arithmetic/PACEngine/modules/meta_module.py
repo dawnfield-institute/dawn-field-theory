@@ -3,6 +3,9 @@ Meta-Module for Cross-Module Interactions
 
 Orchestrates interactions between all physics modules while
 maintaining PAC conservation across all scales and phenomena.
+
+Updated December 2025: Added PAC-SEC Unification module for
+attraction (4/5) + repulsion (1/5) = complete physics framework.
 """
 
 import torch
@@ -16,6 +19,7 @@ from .geometric_sec import GeometricSECModule, SECResult
 from .fluid_med import FluidMEDModule, MEDResult
 from .information_amp import InformationAmplificationModule, InfoAmpResult
 from .consciousness_scbf import ConsciousnessSCBFModule, SCBFResult
+from .pac_sec_unification import PACSECUnificationModule, UnificationResult, UnificationMode
 
 class InteractionType(Enum):
     QUANTUM_GEOMETRIC = "quantum_geometric"
@@ -24,6 +28,7 @@ class InteractionType(Enum):
     INFORMATION_CONSCIOUSNESS = "information_consciousness"
     CONSCIOUSNESS_QUANTUM = "consciousness_quantum"
     UNIVERSAL_COUPLING = "universal_coupling"
+    PAC_SEC_UNIFICATION = "pac_sec_unification"  # New: attraction-repulsion duality
 
 @dataclass
 class MetaSystemState:
@@ -42,6 +47,9 @@ class MetaModule:
     
     Manages interactions between quantum, geometric, fluid, information,
     and consciousness modules while maintaining universal PAC conservation.
+    
+    Updated December 2025: Added PAC-SEC unification module implementing
+    the attraction (4/5) + repulsion (1/5) = complete physics framework.
     """
     
     def __init__(self, device: str = "auto"):
@@ -53,6 +61,7 @@ class MetaModule:
         self.fluid_module = FluidMEDModule(device=device)
         self.information_module = InformationAmplificationModule(device=device)
         self.consciousness_module = ConsciousnessSCBFModule(device=device)
+        self.unification_module = PACSECUnificationModule(device=device)  # PAC-SEC unification
         
         # Cross-module interaction strengths
         self.interaction_strengths = {
@@ -61,7 +70,8 @@ class MetaModule:
             InteractionType.FLUID_INFORMATION: 0.15,
             InteractionType.INFORMATION_CONSCIOUSNESS: 0.25,
             InteractionType.CONSCIOUSNESS_QUANTUM: 0.05,
-            InteractionType.UNIVERSAL_COUPLING: 0.1
+            InteractionType.UNIVERSAL_COUPLING: 0.1,
+            InteractionType.PAC_SEC_UNIFICATION: 0.8  # Strong coupling for fundamental duality
         }
         
         # Universal signature targets
@@ -69,7 +79,10 @@ class MetaModule:
             "amplification_15_56x": 15.56,
             "balance_xi": 1.0571,
             "entropy_collapse": 0.1,
-            "consciousness_threshold": 0.5
+            "consciousness_threshold": 0.5,
+            "attraction_fraction": 0.8,     # 4/5 from PAC-SEC unification
+            "repulsion_fraction": 0.2,      # 1/5 from PAC-SEC unification
+            "phi_squared_ratio": 2.618      # Lepton-quark hierarchy
         }
     
     def evolve_meta_system(self, 

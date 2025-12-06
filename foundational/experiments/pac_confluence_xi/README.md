@@ -3,9 +3,10 @@
 ## Fibonacci Arithmetic as the Language of Physics
 
 **Status**: Research / Testable Predictions  
-**Version**: 3.0.0  
+**Version**: 0.5.0 (Bell Resolution & PAC-SEC Unification)  
 **Date**: 2025-12-06  
-**Framework**: Dawn Field Theory - PAC (Potential-Actualization Conservation)
+**Framework**: Dawn Field Theory - PAC (Potential-Actualization Conservation)  
+**Scripts**: 45 validated | **Papers**: 11 documents
 
 ---
 
@@ -26,8 +27,9 @@ This recursion governs how potential actualizes into children. Its solution $\Ps
 4. **Neutrino mixing angles**: θ₁₂ = arctan(F₃/F₄), θ₁₃ = arctan(F₃/F₇)
 5. **Quark mixing**: θ₁₂(CKM) = arctan(F₄/F₇) = arctan(3/13) (Cabibbo angle)
 6. **A testable prediction** for a 13th gauge boson (Z' at 395 GeV)
-7. **(NEW) Tree geometry**: θ₁₂(PMNS)/θ₁₂(CKM) = φ² (0.8σ agreement)
-8. **(NEW) Weinberg-Cabibbo connection**: sin²θ_W ≈ tan(θ_C) (0.4σ agreement)
+7. **Tree geometry**: θ₁₂(PMNS)/θ₁₂(CKM) = φ² (0.8σ agreement)
+8. **Weinberg-Cabibbo connection**: sin²θ_W ≈ tan(θ_C) (0.4σ agreement)
+9. **(NEW) PAC-SEC Unification**: Attraction (4/5) + Repulsion (1/5) = Full QM
 
 ---
 
