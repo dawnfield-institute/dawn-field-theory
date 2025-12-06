@@ -1,0 +1,22 @@
+{
+  "experiment": "06_2d_turbulence_fibonacci",
+  "timestamp": "20251206_135155",
+  "findings": {
+    "enstrophy_exponent": {
+      "value": 3,
+      "fibonacci": "F_4",
+      "exact": true
+    },
+    "energy_exponent": {
+      "value": 1.6666666666666667,
+      "fibonacci": "F_5/F_4",
+      "exact": true
+    },
+    "cascade_ratio": {
+      "value": 1.8,
+      "xi_times_ratio": 1.08,
+      "xi_connection": "approximate"
+    }
+  },
+  "conclusion": "2D turbulence exponents are Fibonacci: enstrophy=F_4=3, energy=F_5/F_4=5/3"
+}
