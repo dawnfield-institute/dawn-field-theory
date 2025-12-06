@@ -29,6 +29,7 @@ child_directories:
 - recursive_gravity
 - recursive_tree
 - results
+- standard_model_connection
 - symbolic_bifractal
 - symbolic_emergence
 - symbolic_entropy_collapse
