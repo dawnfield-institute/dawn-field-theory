@@ -1,0 +1,9 @@
+{
+  "experiment": "07_pac_sec_duality_tests",
+  "timestamp": "20251206_140316",
+  "tests": {
+    "triangle": {
+      "pac_contribution": 0.7999999999999999,
+      "sec_contribution": 0.19999999999999998,
+      "theta_degrees": 63.43494882292201,
+      "is_exact": 

@@ -1,0 +1,107 @@
+{
+  "experiment": "07_pac_sec_duality_tests",
+  "timestamp": "20251206_140710",
+  "tests": {
+    "triangle": {
+      "pac_contribution": 0.7999999999999999,
+      "sec_contribution": 0.19999999999999998,
+      "theta_degrees": 63.43494882292201,
+      "is_exact": true
+    },
+    "bell": {
+      "golden_state": {
+        "alpha": 0.8506508083520399,
+        "beta": 0.5257311121191336,
+        "two_alpha_beta_sq": 0.7999999999999997,
+        "S": 2.6832815729997477,
+        "is_exact_four_fifths": true
+      },
+      "fibonacci_state": {
+        "alpha": 0.7861513777574233,
+        "beta": 0.6180339887498949,
+        "two_alpha_beta_sq": 0.9442719099991589,
+        "S": 2.788743021505681
+      },
+      "S_max": 2.8284271247461903,
+      "sec_gap": 0.1451455517464426
+    },
+    "cosmology": {
+      "observed": {
+        "dark_energy": 0.68,
+        "dark_matter": 0.27,
+        "baryons": 0.05
+      },
+      "equilibrium": {
+        "repulsion": 0.6180339887498948,
+        "attraction": 0.38196601125010515
+      },
+      "past_equilibrium": true
+    },
+    "thermodynamics": {
+      "carnot_80_percent": {
+        "T_ratio": 0.2,
+        "efficiency": 0.8
+      },
+      "carnot_golden": {
+        "T_ratio": 0.38196601125010515,
+        "efficiency": 0.6180339887498948
+      },
+      "landauer_ln2": 0.6931471805599453,
+      "inverse_phi": 0.6180339887498948,
+      "wien_constant": 4.965,
+      "anti_fibonacci": {
+        "pattern": "F_n/F_{n+1} ratios",
+        "converges_to": 0.6180339887498948,
+        "interpretation": "entropy/dissipation direction"
+      }
+    },
+    "local_nonlocal": {
+      "S_classical": 2.0,
+      "S_pac": 2.6832815729997477,
+      "S_qm": 2.8284271247461903,
+      "pac_fraction_of_violation": 0.8247938202278062,
+      "expected_fraction": 0.8
+    },
+    "thermo_coefficients": {
+      "monatomic_gamma": {
+        "value": 1.6666666666666667,
+        "fibonacci": "F_5/F_4",
+        "type": "structure"
+      },
+      "monatomic_gamma_minus_1": {
+        "value": 0.6666666666666666,
+        "fibonacci": "F_3/F_4",
+        "type": "entropy"
+      },
+      "diatomic_gamma": {
+        "value": 1.4,
+        "fibonacci": "none"
+      },
+      "triatomic_gamma": {
+        "value": 1.3333333333333333,
+        "fibonacci": "close"
+      },
+      "sackur_tetrode_coefficient": {
+        "value": 2.5,
+        "fibonacci": "F_5/F_3"
+      },
+      "duality": {
+        "structure": "F_{n+1}/F_n ratios",
+        "entropy": "F_n/F_{n+1} ratios",
+        "example": "\u03b3=5/3 (structure) vs \u03b3-1=2/3 (entropy)"
+      }
+    }
+  },
+  "synthesis": {
+    "confirmed": [
+      "anti_fibonacci_inverse",
+      "gamma_minus_1",
+      "phi_inverse_convergence"
+    ],
+    "plausible": [
+      "cascade_direction",
+      "cosmological_balance"
+    ],
+    "uncertain": []
+  }
+}
