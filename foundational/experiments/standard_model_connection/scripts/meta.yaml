@@ -1,0 +1,19 @@
+schema_version: 2.0
+directory_name: scripts
+description: |
+  Computational experiments for Standard Model physics connections.
+  Scripts are numbered by research track and ordered by development.
+
+semantic_scope:
+  - computation
+  - validation
+  - physics simulation
+
+files:
+  - 01_rg_flow_mapping.py
+  - 02_casimir_pac_derivation.py
+  - 03_intermittency_golden_ratio.py
+  - 04_higgs_coupling_prediction.py
+  - 05_anomaly_cancellation_fibonacci.py
+
+child_directories: []

@@ -1,0 +1,13 @@
+schema_version: 2.0
+directory_name: papers
+description: |
+  Theory documents and analysis papers for Standard Model connections.
+
+semantic_scope:
+  - theory
+  - analysis
+  - documentation
+
+files: []
+
+child_directories: []

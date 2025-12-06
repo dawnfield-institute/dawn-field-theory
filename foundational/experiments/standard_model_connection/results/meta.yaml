@@ -1,0 +1,14 @@
+schema_version: 2.0
+directory_name: results
+description: |
+  Output files, analysis results, and figures from Standard Model
+  connection experiments.
+
+semantic_scope:
+  - results
+  - output
+  - figures
+
+files: []
+
+child_directories: []
