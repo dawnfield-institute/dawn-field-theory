@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-12-07T09:12:11.063997",
+  "xi_mean_target": 1.028,
+  "geometric_mean": 1.0289245113223806,
+  "spectral_at_F10": 0.7590289204968104,
+  "gauge_depth": 7,
+  "balance_depth": 10,
+  "depth_gap": 3,
+  "F10_over_F7": 4.230769230769231,
+  "phi_cubed": 4.23606797749979,
+  "key_finding": "\u039e_mean is geometric mean; balance at F\u2081\u2080, gauge at F\u2087, gap of 3 levels"
+}

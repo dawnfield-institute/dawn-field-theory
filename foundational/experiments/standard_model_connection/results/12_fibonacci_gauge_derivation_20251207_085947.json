@@ -1,0 +1,33 @@
+{
+  "timestamp": "20251207_085947",
+  "title": "Fibonacci Gauge Derivation from First Principles",
+  "key_results": {
+    "golden_ratio_forced": true,
+    "equation": "r\u00b2 = r + 1",
+    "fibonacci_is_conservation": true,
+    "SU2_dim": {
+      "value": 3,
+      "fibonacci_index": 4
+    },
+    "SU3_dim": {
+      "value": 8,
+      "fibonacci_index": 6
+    },
+    "total_gauge_dim": {
+      "value": 13,
+      "fibonacci_index": 7
+    },
+    "weinberg_prediction": 0.23076923076923078,
+    "weinberg_measured": 0.23121,
+    "weinberg_error_percent": 0.19
+  },
+  "derivation_chain": [
+    "M\u00f6bius topology \u2192 recursive collapse",
+    "Noether \u2192 conservation at each level",
+    "Self-similarity \u2192 scale invariance",
+    "Conservation + Self-similarity \u2192 Golden ratio (unique)",
+    "Integer + Golden \u2192 Fibonacci",
+    "Gauge dims = Fibonacci (SU(2)=F\u2084, SU(3)=F\u2086)",
+    "sin\u00b2\u03b8_W = F\u2084/F\u2087 = 3/13 (derived, not fitted)"
+  ]
+}

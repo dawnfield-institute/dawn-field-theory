@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-12-07T09:20:57.507936",
+  "F5": 5,
+  "primary_interpretation": "Electroweak particles after symmetry breaking",
+  "electroweak_particles": [
+    "W+",
+    "W-",
+    "Z",
+    "\u03b3",
+    "H"
+  ],
+  "gamma_matrices": [
+    "\u03b3\u2070",
+    "\u03b3\u00b9",
+    "\u03b3\u00b2",
+    "\u03b3\u00b3",
+    "\u03b3\u2075"
+  ],
+  "F3_interpretation": "Chirality / M\u00f6bius duality",
+  "why_not_gauge": "F\u2085 represents post-symmetry-breaking structure, not Lie group dimension",
+  "complete_assignment": {
+    "F1": "U(1)_Y",
+    "F2": "U(1)_EM",
+    "F3": "Chirality",
+    "F4": "SU(2)_L",
+    "F5": "Electroweak particles",
+    "F6": "SU(3)_c",
+    "F7": "Total SM"
+  }
+}
