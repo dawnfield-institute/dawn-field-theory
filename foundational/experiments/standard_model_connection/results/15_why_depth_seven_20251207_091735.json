@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-12-07T09:17:35.881074",
+  "depth": 7,
+  "F7": 13,
+  "magic_number_connection": {
+    "F7_times_2pi": 81.68140899333463,
+    "nearest_magic": 82,
+    "error_percent": 0.3885256178845998
+  },
+  "minimal_completeness": {
+    "gauge_generators": 12,
+    "F7_excess": 1
+  },
+  "phi_convergence": {
+    "F7_over_F6": 1.625,
+    "error_from_phi_percent": 0.43052317185790945
+  },
+  "fibonacci_decomposition": {
+    "F7": 13,
+    "F6_plus_F4_plus_F2_plus_F1": 13
+  },
+  "lucas_product": {
+    "F7_times_L7": 377,
+    "equals_F14": true
+  },
+  "conclusion": "Depth 7 is uniquely determined by multiple independent constraints"
+}

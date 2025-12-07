@@ -1,0 +1,26 @@
+{
+  "timestamp": "20251206_143651",
+  "hypothesis": "Time as balance-seeking on M\u00f6bius topology",
+  "results": {
+    "fibonacci_attractor": {
+      "mean_ratio": 1.0000000295001301,
+      "closest_fibonacci": "F3/F4",
+      "distance": 0.3333333628334635,
+      "is_attractor": "False"
+    },
+    "gauge_emergence": {
+      "weinberg_depth": 7,
+      "ratio_at_depth": 0.23076923076923078,
+      "matches": true
+    },
+    "xi_oscillation": {
+      "frequency": 0.02999940001199976,
+      "match_quality": 0.9999800003999921
+    },
+    "universality": {
+      "variance": 3.545455326346007e-05,
+      "is_universal": "True"
+    }
+  },
+  "key_insight": "Fibonacci ratios are not inputs - they are what conservation looks like under recursive M\u00f6bius topology"
+}
