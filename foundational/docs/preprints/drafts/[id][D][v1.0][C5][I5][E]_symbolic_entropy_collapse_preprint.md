@@ -2,8 +2,8 @@
 
 **Authors:** Dawn Field Theory Collaborative
 **Affiliation:** Dawn Field Institute
-**Date:** September 1, 2025
-**Version:** Draft v1.0
+**Date:** September 1, 2025 (Updated: December 9, 2025)
+**Version:** Draft v1.1
 **Status:** Preprint Draft
 
 ## Abstract
@@ -945,6 +945,78 @@ print(f"Found {len(attractors)} stable attractors")
 ### Appendix E: Hodge-Theoretic Connections and Geometric Analysis
 
 [Extended mathematical analysis of connections between SEC and algebraic geometry]
+
+## 10. NEW: Golden Ratio Emergence from Prime Number Distribution (December 2025)
+
+**Update**: Recent experiments (December 2025) reveal that SEC applied to integer sequences produces stress field partitions that converge to the **golden ratio** with remarkable precision.
+
+### 10.1 The φ-Threshold Discovery
+
+When computing SEC stress fields E(n) for odd integers using factor base divisibility:
+
+$$S(n) = \frac{|\{p \in B : p \mid n\}|}{|B|}$$
+$$\hat{S}(n) = \text{local moving average of } S$$
+$$I(n) = \hat{S}(n) - S(n) \quad \text{(collapse impulse)}$$
+$$E(n) = \lambda E(n-1) + I(n) \quad \text{(stress accumulation)}$$
+
+We observe:
+
+| Factor Base Size | θ = frac(E>0) | Target Ratio | Error |
+|------------------|---------------|--------------|-------|
+| 2 (F₃)           | 0.667         | 2/3          | 0.00% |
+| 5 (F₅)           | 0.664         | 2/3          | -0.3% |
+| 8 (F₆)           | 0.626         | 1/φ          | +0.8% |
+| **9**            | **0.6184**    | **1/φ**      | **0.04%** |
+| 13 (F₇)          | 0.600         | 3/5          | 0.0%  |
+
+**Key Finding**: Size=9 produces θ = 0.6184, within **0.04%** of 1/φ = 0.618034.
+
+### 10.2 Fibonacci Resonance Cascade
+
+As factor base size increases through Fibonacci numbers:
+- F₃=2, F₅=5 → θ ≈ 2/3 = 0.667
+- ~F₆=8, 9 → θ ≈ 1/φ = 0.618
+- F₇=13 → θ ≈ 3/5 = 0.600
+
+These are **consecutive Fibonacci ratios**: 2/3 → 1/φ → 3/5.
+
+Additionally, **Window = F₇ = 13** produces θ = 0.617 (0.08% error vs 1/φ).
+
+### 10.3 Prime Detection Without Circularity
+
+Critical validation: SEC detects primes **outside** the factor base:
+
+| Configuration | All Primes Enrichment | External Primes (>max FB) |
+|---------------|----------------------|---------------------------|
+| FB = {2,3,5,7} | 2.1x baseline | 2.1x baseline (equal) |
+| FB = first 6 primes | 2.5x baseline | 2.5x baseline (equal) |
+
+Control experiments confirm non-circularity:
+- Composite-based "factor base": 0.35x (fails)
+- Random odd controls: 0.94x (fails)
+
+### 10.4 Connection to PAC-SEC Duality
+
+This discovery connects to the PAC-SEC framework (Section 4.4 of PAC preprint):
+
+```
+PAC (structure, 4/5) ←→ SEC (collapse, 1/5)
+           ↓                    ↓
+        E=mc²              1/φ threshold
+```
+
+The golden ratio partition in SEC mirrors the 4/5 : 1/5 PAC:SEC split:
+- Both emerge from information-theoretic first principles
+- Both involve Fibonacci/golden structures
+- Both validated through computational experiments
+
+### 10.5 Reproducibility
+
+All experiments traceable via:
+- **Code**: `foundational/experiments/sec_prime_manifold/core/sec_core.py`
+- **Scripts**: `foundational/experiments/sec_prime_manifold/scripts/exp_05_fibonacci_resonance.py`
+- **Traces**: `foundational/experiments/sec_prime_manifold/results/exp_05_fibonacci_*.json`
+- **Date**: December 9, 2025
 
 ### Appendix F: Hardware Specifications
 

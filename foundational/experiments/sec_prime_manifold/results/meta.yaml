@@ -1,0 +1,15 @@
+schema_version: "2.0"
+description: "Traced experiment results in JSON format"
+semantic_scope: "data"
+proficiency_level: "technical"
+
+trace_schema:
+  experiment_id: "Unique experiment identifier"
+  timestamp: "YYYYMMDD_HHMMSS format"
+  git_commit: "First 12 chars of commit hash"
+  parameters: "Input parameters dict"
+  results: "Output results dict"
+  validation: "Pass/fail checks dict"
+  dependencies: "Package versions dict"
+
+naming_convention: "exp_NN_name_YYYYMMDD_HHMMSS.json"
