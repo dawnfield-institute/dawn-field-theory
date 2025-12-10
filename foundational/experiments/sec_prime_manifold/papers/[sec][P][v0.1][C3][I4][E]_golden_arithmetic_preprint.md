@@ -1,14 +1,16 @@
 # Golden Ratios in Prime Distribution: Fibonacci Resonance in Symbolic Entropy Collapse
 
-**Draft Version 0.2 | December 2025**
+**Draft Version 0.3 | December 2025**
 
 ## Abstract
 
 We report the discovery that the golden ratio φ emerges naturally from a symbolic entropy framework applied to prime number distribution. Specifically, when measuring stress accumulation E(n) from entropy collapse around integer n, the fraction of odd integers with positive stress converges to 1/φ ≈ 0.618 through multiple parameter configurations: factor base size=9 achieves 0.07% error, while the joint optimal configuration (size=8, window=21) achieves 0.037% error. The threshold cascades through Fibonacci ratios as size increases.
 
+**New in v0.3:** We observe that φ appears specifically on the **odd number manifold**. Even numbers give frac(E>0)≈0.38, all numbers give ≈0.50, but odd numbers yield 0.618 with 0.07% error. This is *consistent with* a phase boundary interpretation, though the mechanism remains unproven. Notably, 2 must remain in the factor base even when measuring on odds—removing it collapses the signal to 0.50. Size 9 is empirically optimal; whether its equality to 3² is meaningful or coincidental is an open question.
+
 **New in v0.2:** We establish statistical significance through bootstrap confidence intervals (p=0.82 that θ=1/φ), null hypothesis testing (p<0.01 vs random bases), and permutation tests (p=0.004 for Fibonacci cascade). We demonstrate definitive predictive power (AUC=0.724, 3.66x density ratio, Cohen's d=0.844). Most significantly, we discover that the SEC stress field has **prime-periodic harmonic structure**: FFT analysis reveals 99.96% of spectral power concentrated at factor base prime periods, with the harmonic power ratio relating to φ through closure. This explains WHY φ emerges.
 
-**Keywords:** Golden ratio, Fibonacci numbers, prime distribution, symbolic entropy, information theory, harmonic analysis
+**Keywords:** Golden ratio, Fibonacci numbers, prime distribution, symbolic entropy, information theory, harmonic analysis, phase transition
 
 ---
 
@@ -200,7 +202,26 @@ This explains WHY φ emerges: the first 9 primes form a "harmonic closure" where
 
 ## 4. Discussion
 
-### 4.1 Why φ? — The Harmonic Closure Explanation
+### 4.1 The Odd Manifold Observation (NEW v0.3)
+
+The most significant finding is that **φ appears specifically on the odd number manifold**:
+
+| Manifold | frac(E>0) | Error vs 1/φ | Status |
+|----------|-----------|--------------|--------|
+| ALL integers | 0.500 | 0.118 | Random (no signal) |
+| EVEN integers | 0.383 | 0.235 | Below random (unexplained) |
+| **ODD integers** | **0.618** | **0.0007** | **Matches 1/φ** |
+
+**Observations:**
+- φ emergence requires measuring on odd numbers only
+- Even numbers produce frac(E>0) ≈ 0.38—the reason for this specific value is unknown
+- The result converges as n→∞ (error: 0.25% at 10K → 0.04% at 500K)
+
+**Hypothesis (unproven):** The odd manifold may represent a phase boundary between order (composite structure) and disorder (prime collapse). If so, φ appearing at this boundary would be consistent with its role in other critical phenomena.
+
+**Critical observation:** Removing 2 from the factor base destroys the signal (odds → 0.50). The mechanism for why 2-in-base is required remains unclear.
+
+### 4.2 Why φ? — The Harmonic Closure Explanation
 
 The golden ratio satisfies φ² = φ + 1, making it the unique positive number where geometric and arithmetic growth coincide. 
 
@@ -208,22 +229,24 @@ The golden ratio satisfies φ² = φ + 1, making it the unique positive number w
 
 The ratio (power_fraction) / (1/φ) ≈ φ suggests the golden ratio marks the transition from "incomplete" to "complete" harmonic coverage.
 
-### 4.2 Why Size 9?
+### 4.3 Why Size 9?
 
-Nine is notable:
+Nine is the empirical optimum, achieving 0.07% error vs 1/φ. Several observations:
 - 9 = 8 + 1 = F₆ + 1 (Fibonacci-adjacent)
-- 9 = 3² (first composite square > 4)
+- 9 = 3² (first odd prime squared)
 - First 9 primes span [2, 23], covering the "prime desert" before 29
-- **NEW:** Size 9 achieves 99.94% harmonic concentration (closure threshold)
+- Size 9 achieves 99.94% harmonic concentration (closure threshold)
 
-### 4.3 Why Window 13?
+**Open question:** Is the fact that 9 = 3² structurally meaningful (3 being the smallest odd prime, with 9 as its first "self-interaction"), or is this a coincidence? The empirical data cannot distinguish between these possibilities.
+
+### 4.4 Why Window 13?
 
 - 13 = F₇ (Fibonacci number)
 - 13 is the "PAC closure number" from related work
 - Window=13 creates symmetric [-6, +6] neighborhood
-- **NEW:** F₇=13 relates to PAC structure (1+3+8+1=13 = PAC depth sum)
+- F₇=13 relates to PAC structure (1+3+8+1=13 = PAC depth sum)
 
-### 4.4 Connection to PAC-SEC Duality
+### 4.5 Connection to PAC-SEC Duality
 
 Prior work established:
 - PAC (Potential-Actualization Conservation) = 4/5 of structure
@@ -233,9 +256,10 @@ Prior work established:
 The current discovery adds:
 - SEC's internal partition is also golden (1/φ ≈ 0.618 vs 1-1/φ ≈ 0.382)
 - This mirrors the 4/5 : 1/5 PAC:SEC split scaled by 1/φ
-- **NEW:** Harmonic structure connects SEC to Hodge prime modulation (angular harmonics)
+- Harmonic structure connects SEC to Hodge prime modulation (angular harmonics)
+- **Phase transition interpretation:** PAC boundary ↔ SEC boundary ↔ φ
 
-### 4.5 Connection to Hodge Prime Modulation (NEW)
+### 4.6 Connection to Hodge Prime Modulation
 
 The Hodge conjecture experiments use θ = pπ angular modulation and find prime modulation produces more coherent symbolic attractors. SEC and Hodge probe the **same structure**:
 

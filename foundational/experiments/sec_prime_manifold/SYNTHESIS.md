@@ -9,16 +9,42 @@ This document connects two independent research threads that have converged on r
 
 Both demonstrate that fundamental physical/mathematical constants arise naturally from information-theoretic first principles.
 
+## Critical Observation (Dec 10, 2025)
+
+**We observe φ emergence specifically on the ODD MANIFOLD.**
+
+| Manifold | frac(E>0) | Status |
+|----------|-----------|--------|
+| ALL numbers | 0.500 | Random (no signal) |
+| EVEN numbers | 0.383 | Below random (unexplained) |
+| **ODD numbers** | **0.618** | **Matches 1/φ with 0.07% error** |
+
+### What We Know (Empirical)
+- φ appears only when measuring on odd numbers
+- Size 9 gives optimal φ-match (error 0.00071)
+- 2 must be in the factor base (removing it destroys the signal)
+- The result converges as n→∞ (error: 0.25% at 10K → 0.04% at 500K)
+
+### What We Don't Know (Open Questions)
+- **Why 1/φ specifically?** No analytical derivation exists
+- **Why is 2-in-base required?** Mechanism unclear
+- **Is 9 = 3² meaningful?** Or coincidental with the empirical optimum?
+- **Why do evens give 0.38?** No closed form
+
+### Plausible Interpretation (Unproven)
+The odd manifold *may* represent a phase boundary between order (composite structure) and disorder (prime collapse). If so, φ appearing at this boundary would be consistent with its role in other phase transition phenomena.
+
 ## Key Parallels
 
 | Aspect | SEC Prime Manifold | Euclidean Distance Validation |
 |--------|-------------------|------------------------------|
 | **Target constant** | φ (golden ratio) | c (speed of light) |
 | **Method** | Symbolic entropy + stress accumulation | Information geometry + collapse hierarchy |
-| **Domain** | Prime number distribution | Semantic embeddings |
+| **Domain** | Prime number distribution (ODD manifold) | Semantic embeddings |
 | **Key equation** | θ = frac(E>0) → 1/φ | E = mc² emerges from distance conservation |
 | **Fibonacci connection** | Size=9, Window=F₇=13 | Hierarchical branching structures |
 | **PAC connection** | SEC is 1/5 of PAC structure | PAC = Potential-Actualization Conservation |
+| **Phase interpretation** | Order/disorder boundary | Potential/actualization boundary |
 
 ## The Deeper Connection
 
