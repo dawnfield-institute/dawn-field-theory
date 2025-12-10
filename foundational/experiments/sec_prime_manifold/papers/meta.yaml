@@ -1,0 +1,20 @@
+schema_version: "1.0"
+description: "Paper drafts and publication materials for SEC-PAC prime detection"
+semantic_scope: "academic_publications"
+estimated_context_weight: 0.3
+validation_type: "manual_review"
+
+files:
+  - "[sec][P][v0.1][C3][I4][E]_golden_arithmetic_preprint.md":
+      description: "Main paper: Golden ratios emerging from symbolic entropy collapse"
+      status: "outline"
+      
+child_directories: []
+
+publication_targets:
+  primary: "arXiv math.NT"
+  secondary: "Journal of Number Theory"
+  
+related_work:
+  - "../../../internal/publications/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
+  - "../../../internal/publications/[pac][D][v1.0][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md"

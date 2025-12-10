@@ -3,23 +3,29 @@ directory_name: drafts
 description: 'Drafts and in-progress documents for DFT preprints, including theoretical
   development, experiment writeups, and supporting materials for Infodynamics and
   related concepts.
-
+  
+  Updated December 9, 2025: Added golden ratio / Fibonacci resonance findings to SEC and PAC preprints.
   '
 semantic_scope:
 - infodynamics-drafts
 - dft-preprint-development
+- sec-prime-manifold
 hardware_standard: RTX 3070ti + i9-12gen (see resources/hardware_configuration.md)
 reproducibility_notes: All performance metrics and timing results specific to documented
   hardware configuration
+last_updated: '2025-12-09'
 files:
 - '[ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.md'
 - '[ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.md'
 - '[cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.md'
 - '[id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.md'
-- '[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md'
+- '[id][D][v1.1][C5][I5][E]_symbolic_entropy_collapse_preprint.md'  # Updated Dec 2025 with φ-threshold
 - '[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md'
 - '[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md'
 - '[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md'
+- '[pac][D][v1.1][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md'  # Updated Dec 2025 with PAC-SEC duality
+- '[sec][D][v1.0][C4][I5][E]_golden_ratio_prime_distribution_preprint.md'  # NEW Dec 2025 - Fibonacci resonance discovery
 child_directories:
 - pdfs
 - resources
+- PACSeries
