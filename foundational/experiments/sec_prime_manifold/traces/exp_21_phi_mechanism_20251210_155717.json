@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-12-10T15:57:15.109064",
+  "I_distribution": {
+    "I_odd_mean": 0.05500132933353704,
+    "I_odd_std": 0.09982653933898857,
+    "I_odd_skew": -0.71304109654895,
+    "I_odd_kurtosis": 0.22837232522692874,
+    "I_prime_mean": 0.16609041745684786,
+    "I_prime_std": 0.003496914962771323,
+    "I_composite_mean": 0.028633891098764876,
+    "I_composite_std": 0.09329186322259217,
+    "prime_fraction": 0.19182383647672954,
+    "I_positive_fraction": 0.7403548070961419
+  },
+  "theory": {
+    "mu_E": 5.500132933353699,
+    "sigma_E": 0.7076515749843422,
+    "z_score": 7.772374326271227,
+    "predicted_positive_frac": 0.9999999999999961,
+    "z_for_phi": 0.30032141489065384,
+    "required_I_mean_over_std_for_phi": 0.02128922064774952,
+    "actual_I_mean_over_std": 0.5509690078183002
+  },
+  "two_component_test": {
+    "with_2": {
+      "factor_base": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19",
+        "23"
+      ],
+      "frac_E_positive": 0.6184323686473729,
+      "I_odd_mean": 0.05500132933353704,
+      "error_vs_phi": 0.00039836864737297084
+    },
+    "without_2": {
+      "factor_base": [
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19",
+        "23",
+        "29"
+      ],
+      "frac_E_positive": 0.503270065401308,
+      "I_odd_mean": -4.722882346450218e-06,
+      "error_vs_phi": 0.11476393459869194
+    },
+    "I_mean_difference": 0.05500605221588349,
+    "hypothesis_supported": "True"
+  },
+  "bias_analysis": {
+    "factor_base_size": 9,
+    "theoretical_2_bias": 0.05555555555555555,
+    "empirical_I_mean_odd": 0.05500132933353704,
+    "residual": -0.0005542262220185126,
+    "ratio": 0.9900239280036668
+  },
+  "mechanism": {
+    "actual_I_ratio": 0.5509690078183002,
+    "required_I_ratio_for_phi": 0.02128922064774952,
+    "match": false,
+    "I_mean_from_2_component": 0.05555555555555555,
+    "required_I_std_for_phi": 2.60956267374815,
+    "actual_I_std": 0.09982653933898857,
+    "S_var_theoretical": 0.009939931684179042,
+    "S_var_actual": 0.009938704447906135
+  }
+}
