@@ -1,0 +1,15 @@
+schema_version: "2.0"
+description: "Daily research journals for Prime Harmonic Manifold experiments"
+semantic_scope: "research_documentation"
+proficiency_level: "research"
+
+# See ../JOURNAL_SCHEMA.md for full schema specification
+
+files:
+  - "[2025-12-12_cross_experiment_synthesis.md]": "Cross-experiment synthesis linking SEC, PHM, and PAC findings"
+  - "[2025-12-12_from_phi_to_pi_squared.md]": "Major correction: φ refuted, 1/π² validated"
+  - "[2025-12-12_critical_validation.md]": "Skeptical validation experiments"
+  - "[2025-12-12_asymptotic_cramer_breakthrough.md]": "Cramér comparison and asymptotic analysis"
+  - "[2025-12-11_phi_eigenvalue_discovery.md]": "Initial discovery of λ₁ ≈ 1/φ (later refuted)"
+
+chronological_order: "descending"

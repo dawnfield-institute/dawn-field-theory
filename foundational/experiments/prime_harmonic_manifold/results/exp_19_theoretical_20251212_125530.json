@@ -1,0 +1,75 @@
+{
+  "experiment": "exp_19_theoretical",
+  "timestamp": "2025-12-12T12:55:30.401539",
+  "results": {
+    "measured_slope": -0.11522402021599068,
+    "measured_intercept": 1.1413981488417928,
+    "pi_sq_inv": 0.10132118364233778,
+    "slope_ratio": 1.1372154970349508,
+    "data": [
+      {
+        "limit": 10000,
+        "n_primes": 1229,
+        "log10_n": 3.089551882886454,
+        "lambda1": 0.80483806845145
+      },
+      {
+        "limit": 20000,
+        "n_primes": 2262,
+        "log10_n": 3.3544926005894364,
+        "lambda1": 0.7633458076559514
+      },
+      {
+        "limit": 50000,
+        "n_primes": 5133,
+        "log10_n": 3.710371264260763,
+        "lambda1": 0.7134496910506705
+      },
+      {
+        "limit": 100000,
+        "n_primes": 9592,
+        "log10_n": 3.9819091700907925,
+        "lambda1": 0.6655953110711935
+      },
+      {
+        "limit": 200000,
+        "n_primes": 17984,
+        "log10_n": 4.254886293888967,
+        "lambda1": 0.632451260020366
+      },
+      {
+        "limit": 500000,
+        "n_primes": 41538,
+        "log10_n": 4.61844558199508,
+        "lambda1": 0.5965400500922293
+      },
+      {
+        "limit": 1000000,
+        "n_primes": 78498,
+        "log10_n": 4.894858591776733,
+        "lambda1": 0.5707997961193998
+      },
+      {
+        "limit": 2000000,
+        "n_primes": 148933,
+        "log10_n": 5.172990937711895,
+        "lambda1": 0.5484971085157213
+      },
+      {
+        "limit": 5000000,
+        "n_primes": 348513,
+        "log10_n": 5.542218982499925,
+        "lambda1": 0.5271462372391648
+      }
+    ]
+  },
+  "hypotheses": [
+    "PNT connection",
+    "Riemann zeta",
+    "Hardy-Littlewood",
+    "Random Matrix Theory",
+    "Heat kernel",
+    "Gap correlations"
+  ],
+  "most_promising": "Random Matrix Theory (GUE)"
+}
