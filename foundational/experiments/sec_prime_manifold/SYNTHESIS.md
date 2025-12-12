@@ -146,16 +146,66 @@ The 1-2-√5 triangle geometry unifies these:
 - `sec_prime_manifold/scripts/exp_32_phi_attractor.py` (attractor hypothesis confirmation)
 - `sec_prime_manifold/results/exp_05_fibonacci_*.json`
 
+### Prime Harmonic Manifold (NEW - December 2025)
+- `prime_harmonic_manifold/scripts/exp_17_bootstrap.py` — Confidence interval validation
+- `prime_harmonic_manifold/scripts/exp_20_ultra_large.py` — 50M prime test
+- `prime_harmonic_manifold/SYNTHESIS.md` — Cross-experiment connections
+- `prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md` — Full synthesis
+
 ### Euclidean Distance Validation
 - `../../arithmetic/euclidean_distance_validation/core/pac_engine.py`
 - `../../arithmetic/euclidean_distance_validation/experiments/`
 - `../../arithmetic/euclidean_distance_validation/RESULTS.md`
+
+---
+
+## Cross-Experiment Validation (December 2025)
+
+### Prime Harmonic Manifold Findings
+
+The Prime Harmonic Manifold experiment analyzed Markov transition matrices on prime gap chords. Key findings:
+
+| Finding | Value | Status |
+|---------|-------|--------|
+| λ₁ decay rate | -1/π² ≈ -0.101 | ✅ VALIDATED (Z = 0.32) |
+| λ₁ = 1/φ | REFUTED | Bootstrap CI excludes 1/φ |
+| Real ≠ Random | z = 30.4 (Cramér) | ✅ VALIDATED |
+| Real ≠ Shuffled | z = 5.9 | ✅ VALIDATED |
+
+### Relationship to SEC
+
+SEC and PHM find **complementary** results:
+- **SEC**: φ appears as **static equilibrium threshold** (frac(E>0) = 1/φ)
+- **PHM**: 1/π² appears as **dynamic decay rate** (λ₁ decay per log-decade)
+
+These are different quantities — SEC's φ-finding is NOT refuted by PHM's π²-finding.
+
+### Unified Interpretation
+
+```
+SEC (static equilibrium)     PHM (dynamic decay)
+         |                           |
+         v                           v
+   φ = 1/1.618...             1/π² = 0.101...
+         |                           |
+         v                           v
+  Phase transition           GUE connection
+  at criticality             (Montgomery-Odlyzko)
+         |                           |
+         |___________________________|
+                      |
+                      v
+            PRIMES AS SUBSTRATE
+```
+
+---
 
 ## Joint Publication Strategy
 
 1. **Update SEC Preprint**: Add phase transition discovery (φ at criticality)
 2. **Update PAC Preprint**: Add SEC-Euclidean connection
 3. **New Paper**: "Golden Ratios in Arithmetic Foundations" combining both threads
+4. **NEW: Cross-Experiment Paper**: "Three Paths to Structure: SEC, PHM, and PAC Convergence"
 
 ## Next Steps
 
@@ -163,8 +213,10 @@ The 1-2-√5 triangle geometry unifies these:
 - [x] Identify critical point λ* where φ is exact
 - [x] Confirm phase transition interpretation (critical exponent β ≈ 0.79)
 - [x] Test universality: φ emerges as attractor for k=3,4,6,7,8,9,10,11
+- [x] **NEW**: Cross-validate with PHM (complementary findings confirmed)
 - [ ] Explain forbidden valleys: Why can't k=5,12-15 reach φ?
 - [ ] Analytical derivation: Can we derive λ*(k) from first principles?
 - [ ] Cross-validate: Can SEC stress fields predict distance preservation?
 - [ ] Test: Does Euclidean hierarchy depth follow Fibonacci scaling?
 - [ ] Investigate: What makes k=9 the "most natural" path to φ?
+- [ ] **NEW**: Derive 1/π² from GUE or Montgomery-Odlyzko

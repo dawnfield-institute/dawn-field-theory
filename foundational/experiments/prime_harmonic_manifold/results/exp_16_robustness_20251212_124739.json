@@ -1,0 +1,16 @@
+{
+  "experiment": "exp_16_robustness",
+  "timestamp": "2025-12-12T12:47:39.614426",
+  "parameters": {
+    "prime_limit": 500000,
+    "n_cramer": 10
+  },
+  "results": [
+    {
+      "n_gaps": 2,
+      "topK": 10,
+      "real_lambda1": 0.38889892535825604,
+      "cramer_mean": 0.22483564704795683,
+      "cramer_std": 0.010838122288897398,
+      "z_score": 15.13761091977769,
+      "significant": 

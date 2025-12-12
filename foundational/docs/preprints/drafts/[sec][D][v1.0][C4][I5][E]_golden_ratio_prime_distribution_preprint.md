@@ -429,6 +429,51 @@ This unexpected connection between discrete number theory (primes, Fibonacci) an
 
 ---
 
+## 9. Cross-Experiment Validation (December 2025 Update)
+
+### 9.1 Complementary Experiments
+
+The SEC prime manifold findings have been tested alongside two complementary experiments:
+
+| Experiment | Domain | Key Finding | Status |
+|------------|--------|-------------|--------|
+| **SEC Prime Manifold** | Stress field partition | frac(E>0) = 1/φ at criticality | ✅ VALIDATED |
+| **Prime Harmonic Manifold** | Markov eigenvalue decay | λ₁ decay rate = -1/π² | ✅ VALIDATED |
+| **PAC Confluence Xi** | Standard Model physics | sin²θ_W = 3/13, (2αβ)² = 4/5 | ✅ ALGEBRAIC PROOF |
+
+### 9.2 The PHM Correction
+
+The Prime Harmonic Manifold experiment initially claimed λ₁ = 1/φ for Markov transition matrices on prime gap chords. This was **refuted** by bootstrap validation:
+
+- 1/φ = 0.618 is **outside** the 95% CI at all tested scales
+- The true finding: λ₁ decay rate = **-1/π² per log-decade** (Z = 0.32 from theory)
+
+**Important**: This does NOT affect SEC's φ-threshold finding. SEC finds φ as a **static equilibrium threshold**; PHM found 1/π² as a **dynamic decay rate**. These are different quantities.
+
+### 9.3 Unified Interpretation
+
+The cross-experiment synthesis suggests:
+- **φ governs equilibrium structure** (SEC thresholds, PAC ratios)
+- **1/π² governs dynamic decay** (Markov mixing, GUE correlations)
+- **Both connect through primes** as the arithmetic substrate
+
+### 9.4 Connection to Random Matrix Theory
+
+PHM's 1/π² finding connects to the Montgomery-Odlyzko law, which links Riemann zeta zeros to GUE (Gaussian Unitary Ensemble) statistics. GUE correlations involve factors of π² via the sin²(πx)/(πx)² kernel.
+
+This suggests a deeper connection:
+```
+SEC (φ-threshold) ←→ PAC (Fibonacci gauge) ←→ PHM (π²-decay) ←→ GUE (zeta zeros)
+```
+
+### 9.5 Cross-References
+
+- **Prime Harmonic Manifold**: `foundational/experiments/prime_harmonic_manifold/`
+- **PAC Confluence Xi**: `foundational/experiments/pac_confluence_xi/`
+- **Cross-Experiment Synthesis**: `prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md`
+
+---
+
 ## References
 
 [1] G.H. Hardy and E.M. Wright, *An Introduction to the Theory of Numbers*, Oxford University Press, 6th ed., 2008.

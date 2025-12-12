@@ -1,0 +1,21 @@
+{
+  "experiment": "exp_06_predictive_power",
+  "timestamp": "2025-12-11T22:15:05.871860",
+  "parameters": {
+    "prime_limit": 500000,
+    "top_k": 25,
+    "train_size": 33228,
+    "test_size": 8308
+  },
+  "results": {
+    "n_predictions": 8307,
+    "baseline_ll": -44177.83534116273,
+    "markov_ll": -125003.59500038966,
+    "baseline_perplexity": 204.00521984154366,
+    "markov_perplexity": 3429698.8841476412,
+    "perplexity_improvement_pct": -1681081.9260367851,
+    "baseline_accuracy": 2.38353196099675,
+    "markov_accuracy": 7.3191284458890085
+  },
+  "conclusion": "MODEST_IMPROVEMENT"
+}

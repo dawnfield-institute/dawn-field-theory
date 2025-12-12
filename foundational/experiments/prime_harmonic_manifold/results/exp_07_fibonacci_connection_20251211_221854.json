@@ -1,0 +1,46 @@
+{
+  "experiment": "exp_07_fibonacci_connection",
+  "timestamp": "2025-12-11T22:18:54.263845",
+  "parameters": {
+    "prime_limit": 500000
+  },
+  "results": {
+    "fibonacci": {
+      "fib_fraction": 0.1905289260177673,
+      "expected_fraction": 0.1905289260177673,
+      "enrichment": 1.0
+    },
+    "ratio_analysis": [
+      {
+        "n_ratios": 41536,
+        "near_phi_count": 3776,
+        "near_phi_fraction": 0.09090909090909091,
+        "tolerance": 0.05
+      },
+      {
+        "n_ratios": 41536,
+        "near_phi_count": 4799,
+        "near_phi_fraction": 0.11553832819722651,
+        "tolerance": 0.1
+      },
+      {
+        "n_ratios": 41536,
+        "near_phi_count": 10331,
+        "near_phi_fraction": 0.24872399845916796,
+        "tolerance": 0.15
+      },
+      {
+        "n_ratios": 41536,
+        "near_phi_count": 12411,
+        "near_phi_fraction": 0.29880104006163327,
+        "tolerance": 0.2
+      }
+    ],
+    "ratio_stats": {
+      "mean": 1.9506777476690005,
+      "median": 1.0,
+      "std": 2.7650690553093975
+    }
+  },
+  "conclusion": "NO_ENRICHMENT"
+}

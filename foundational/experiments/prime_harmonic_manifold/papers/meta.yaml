@@ -1,0 +1,17 @@
+schema_version: "2.0"
+description: "Preprint drafts for Prime Harmonic Manifold"
+semantic_scope: "publication"
+proficiency_level: "research"
+
+files:
+  - "[phm][P][v0.1][C3][I4][E]_prime_chord_eigenvalue_preprint.md": "Main φ-eigenvalue discovery paper"
+
+# Paper naming convention:
+# [tag][status][version][confidence][impact][type]_title.md
+#
+# tag: phm (prime harmonic manifold)
+# status: P (preprint), D (draft), F (final)
+# version: v0.1, v1.0, etc.
+# confidence: C1-C5 (1=speculative, 5=proven)
+# impact: I1-I5 (1=minor, 5=major)
+# type: E (empirical), T (theoretical), R (review)

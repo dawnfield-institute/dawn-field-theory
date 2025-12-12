@@ -1,0 +1,116 @@
+{
+  "experiment": "exp_04_mobius_spectrum",
+  "timestamp": "2025-12-11T22:14:49.069325",
+  "parameters": {
+    "n_max": 10000
+  },
+  "results": {
+    "mu_counts": {
+      "plus1": 3030,
+      "minus1": 3053,
+      "zero": 3917
+    },
+    "n_peaks": 609,
+    "top_peaks": [
+      {
+        "frequency": 0.3667,
+        "power": 76277.42036174612,
+        "closest_harmonic": "1/3",
+        "distance": 0.03336666666666671
+      },
+      {
+        "frequency": 0.0333,
+        "power": 66031.47348636952,
+        "closest_harmonic": "1/4",
+        "distance": 0.2167
+      },
+      {
+        "frequency": 0.2333,
+        "power": 58717.178442481156,
+        "closest_harmonic": "1/4",
+        "distance": 0.016699999999999993
+      },
+      {
+        "frequency": 0.4333,
+        "power": 58068.043235996076,
+        "closest_harmonic": "1/2",
+        "distance": 0.06669999999999998
+      },
+      {
+        "frequency": 0.29050000000000004,
+        "power": 55849.434027233714,
+        "closest_harmonic": "1/4",
+        "distance": 0.040500000000000036
+      },
+      {
+        "frequency": 0.0524,
+        "power": 51169.13838357992,
+        "closest_harmonic": "1/4",
+        "distance": 0.1976
+      },
+      {
+        "frequency": 0.1381,
+        "power": 49767.4379250514,
+        "closest_harmonic": "1/4",
+        "distance": 0.1119
+      },
+      {
+        "frequency": 0.061900000000000004,
+        "power": 46097.41222298822,
+        "closest_harmonic": "1/4",
+        "distance": 0.1881
+      },
+      {
+        "frequency": 0.0746,
+        "power": 45918.99003679027,
+        "closest_harmonic": "1/4",
+        "distance": 0.1754
+      },
+      {
+        "frequency": 0.4238,
+        "power": 45398.904806937404,
+        "closest_harmonic": "1/2",
+        "distance": 0.07619999999999999
+      }
+    ],
+    "phi_harmonic_powers": [
+      {
+        "label": "1/\u03c6\u00b3",
+        "target": 4.236067977499791,
+        "actual_freq": 0.4999,
+        "power": 2012.1159890783758
+      },
+      {
+        "label": "1/\u03c6\u2074",
+        "target": 6.854101966249687,
+        "actual_freq": 0.4999,
+        "power": 2012.1159890783758
+      },
+      {
+        "label": "1/\u03c6\u2075",
+        "target": 11.09016994374948,
+        "actual_freq": 0.4999,
+        "power": 2012.1159890783758
+      },
+      {
+        "label": "1/2",
+        "target": 0.5,
+        "actual_freq": 0.4999,
+        "power": 2012.1159890783758
+      },
+      {
+        "label": "1/3",
+        "target": 0.3333333333333333,
+        "actual_freq": 0.33330000000000004,
+        "power": 106.31457461768649
+      },
+      {
+        "label": "1/4",
+        "target": 0.25,
+        "actual_freq": 0.25,
+        "power": 865.0000000000003
+      }
+    ]
+  },
+  "conclusion": "INCONCLUSIVE"
+}

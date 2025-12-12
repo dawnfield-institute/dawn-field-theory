@@ -1,0 +1,17 @@
+schema_version: "2.0"
+description: "Experiment scripts for Prime Harmonic Manifold"
+semantic_scope: "experimental_scripts"
+proficiency_level: "research"
+
+files:
+  - "[exp_01_chord_analysis.py]": "Baseline chord extraction and eigenvalue analysis"
+  - "[exp_02_eigenvalue_scaling.py]": "Scale invariance test across prime ranges"
+  - "[exp_03_vocabulary_scaling.py]": "Vocabulary size effect on λ₁"
+  - "[exp_04_mobius_spectrum.py]": "Möbius function FFT for φ-harmonics"
+  - "[exp_05_motif_enrichment.py]": "Palindrome and motif enrichment vs shuffled"
+  - "[exp_06_predictive_power.py]": "Markov prediction accuracy test"
+  - "[exp_07_fibonacci_connection.py]": "Fibonacci gap fraction and ratio analysis"
+  - "[exp_08_pac_depth.py]": "Autocorrelation decay and PAC depth estimate"
+  - "[exp_09_local_entropy.py]": "Local chord entropy and curvature analysis"
+
+# Run all: for f in exp_*.py; do python $f; done

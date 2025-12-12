@@ -1,0 +1,26 @@
+{
+  "experiment": "exp_09_local_entropy",
+  "timestamp": "2025-12-11T22:19:12.161941",
+  "parameters": {
+    "prime_limit": 500000,
+    "window": 50
+  },
+  "results": {
+    "entropy_stats": {
+      "mean": 5.234923888342561,
+      "std": 0.15775157548661187,
+      "min": 3.7185629370480653,
+      "max": 5.563856182849788
+    },
+    "curvature_stats": {
+      "mean": 9.310064123060657,
+      "std": 1.8294015221493498
+    },
+    "norm_curvature_stats": {
+      "mean": 0.7726580928676415,
+      "std": 0.12603476102915082
+    },
+    "entropy_curvature_correlation": 0.48122745502748077
+  },
+  "conclusion": "STRUCTURED"
+}

@@ -1,0 +1,116 @@
+{
+  "experiment": "exp_05_motif_enrichment",
+  "timestamp": "2025-12-11T22:15:01.151918",
+  "parameters": {
+    "prime_limit": 500000,
+    "n_shuffle": 100
+  },
+  "results": {
+    "palindrome": {
+      "motifs": {
+        "(2.0, 4.0, 2.0)": {
+          "real": 103,
+          "shuffled_mean": 54.53,
+          "enrichment": 1.8888685127452778
+        },
+        "(4.0, 2.0, 4.0)": {
+          "real": 219,
+          "shuffled_mean": 55.07,
+          "enrichment": 3.97675685491193
+        },
+        "(6.0, 4.0, 6.0)": {
+          "real": 233,
+          "shuffled_mean": 149.89,
+          "enrichment": 1.554473280405631
+        },
+        "(2.0, 6.0, 2.0)": {
+          "real": 0,
+          "shuffled_mean": 88.93,
+          "enrichment": 0.0
+        },
+        "(6.0, 2.0, 6.0)": {
+          "real": 144,
+          "shuffled_mean": 148.16,
+          "enrichment": 0.9719222462203024
+        },
+        "(4.0, 6.0, 4.0)": {
+          "real": 0,
+          "shuffled_mean": 90.72,
+          "enrichment": 0.0
+        },
+        "(2.0, 10.0, 2.0)": {
+          "real": 199,
+          "shuffled_mean": 46.17,
+          "enrichment": 4.310158111327702
+        },
+        "(6.0, 8.0, 6.0)": {
+          "real": 190,
+          "shuffled_mean": 100.27,
+          "enrichment": 1.894883813703002
+        },
+        "(8.0, 6.0, 8.0)": {
+          "real": 0,
+          "shuffled_mean": 40.57,
+          "enrichment": 0.0
+        },
+        "(4.0, 8.0, 4.0)": {
+          "real": 53,
+          "shuffled_mean": 36.67,
+          "enrichment": 1.445323152440687
+        }
+      },
+      "mean_enrichment": 1.6042385971754531
+    },
+    "twin_adjacent": {
+      "motifs": {
+        "(2.0, 2.0, 2.0)": {
+          "real": 0,
+          "shuffled_mean": 56.08,
+          "enrichment": 0.0
+        },
+        "(2.0, 2.0, 4.0)": {
+          "real": 1,
+          "shuffled_mean": 55.36,
+          "enrichment": 0.018063583815028903
+        },
+        "(4.0, 2.0, 2.0)": {
+          "real": 0,
+          "shuffled_mean": 55.47,
+          "enrichment": 0.0
+        },
+        "(2.0, 4.0, 4.0)": {
+          "real": 0,
+          "shuffled_mean": 54.44,
+          "enrichment": 0.0
+        }
+      },
+      "mean_enrichment": 0.004515895953757226
+    },
+    "arithmetic": {
+      "motifs": {
+        "(2.0, 4.0, 6.0)": {
+          "real": 177,
+          "shuffled_mean": 90.31,
+          "enrichment": 1.9599158454213266
+        },
+        "(6.0, 4.0, 2.0)": {
+          "real": 195,
+          "shuffled_mean": 90.85,
+          "enrichment": 2.1463951568519537
+        },
+        "(4.0, 6.0, 8.0)": {
+          "real": 179,
+          "shuffled_mean": 60.91,
+          "enrichment": 2.9387621080282385
+        },
+        "(8.0, 6.0, 4.0)": {
+          "real": 171,
+          "shuffled_mean": 60.36,
+          "enrichment": 2.8330019880715707
+        }
+      },
+      "mean_enrichment": 2.469518774593272
+    }
+  },
+  "conclusion": "PALINDROMES_ENRICHED"
+}

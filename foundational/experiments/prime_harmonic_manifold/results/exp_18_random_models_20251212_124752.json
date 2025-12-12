@@ -1,0 +1,21 @@
+{
+  "experiment": "exp_18_random_models",
+  "timestamp": "2025-12-12T12:47:52.327990",
+  "parameters": {
+    "prime_limit": 500000,
+    "n_trials": 20,
+    "n_gaps": 41537,
+    "mean_gap": 12.036906854130052,
+    "std_gap": 9.604571268054995
+  },
+  "results": {
+    "real_lambda1": 0.5965400500922293,
+    "real_unique": 633,
+    "models": [
+      {
+        "model": "Cram\u00e9r (exponential)",
+        "mean_lambda1": 0.5662307711486345,
+        "std_lambda1": 0.005738676990602641,
+        "mean_unique": 1041.05,
+        "z_score": 5.2815795336151,
+        "significant": 

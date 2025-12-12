@@ -1,0 +1,15 @@
+{
+  "experiment": "exp_17_bootstrap",
+  "timestamp": "2025-12-12T12:49:22.697946",
+  "parameters": {
+    "prime_limit": 2000000,
+    "n_bootstrap": 500
+  },
+  "results": {
+    "full_scale": {
+      "point_estimate": 0.5484971085157213,
+      "boot_mean": 0.5497272515412449,
+      "boot_std": 0.004985310816541652,
+      "ci_lo": 0.541649405016941,
+      "ci_hi": 0.5595563095311071,
+      "phi_inv_in_ci": 
