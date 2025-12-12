@@ -1,0 +1,77 @@
+{
+  "experiment": "exp_25_very_large_scale",
+  "timestamp": "2025-12-12T15:12:04.331674",
+  "theory_decay": -0.10132118364233778,
+  "scales_tested": [
+    10000,
+    100000,
+    1000000,
+    10000000,
+    50000000
+  ],
+  "results": [
+    {
+      "n_primes": 10000,
+      "max_prime": 104729,
+      "vocab_size": 345,
+      "lambda_1": 0.4708591965201902,
+      "cramer_mean": 0.3782118580635408,
+      "cramer_std": 0.06935217432399891,
+      "cramer_z": 1.3358966659620553
+    },
+    {
+      "n_primes": 100000,
+      "max_prime": 1299709,
+      "vocab_size": 887,
+      "lambda_1": 0.48142024202068745,
+      "cramer_mean": 0.23393262938082876,
+      "cramer_std": 0.017982784486568714,
+      "cramer_z": 13.762474483565457
+    },
+    {
+      "n_primes": 1000000,
+      "max_prime": 15485863,
+      "vocab_size": 1885,
+      "lambda_1": 0.4916255978321105,
+      "cramer_mean": 0.1347630840302256,
+      "cramer_std": 0.007677521152315176,
+      "cramer_z": 46.481475820391864
+    },
+    {
+      "n_primes": 10000000,
+      "max_prime": 179424673,
+      "vocab_size": 3605,
+      "lambda_1": 0.4943702219656391,
+      "cramer_mean": 0.08029921555230465,
+      "cramer_std": 0.006021288251281439,
+      "cramer_z": 68.76784321448366
+    },
+    {
+      "n_primes": 50000000,
+      "max_prime": 982451653,
+      "vocab_size": 5445,
+      "lambda_1": 0.49596998610079546,
+      "cramer_mean": 0.05737231819744495,
+      "cramer_std": 0.004533129479028237,
+      "cramer_z": 96.7538363800216
+    }
+  ],
+  "decay_analysis": {
+    "measured_slope": 0.0061121773231700375,
+    "theory_slope": -0.10132118364233778,
+    "difference": 0.10743336096550782,
+    "relative_error_pct": 106.03247722089976,
+    "z_from_theory": 130.60268957836288,
+    "confirmed": "False"
+  },
+  "cramer_analysis": {
+    "z_values": [
+      1.3358966659620553,
+      13.762474483565457,
+      46.481475820391864,
+      68.76784321448366,
+      96.7538363800216
+    ],
+    "divergence_increases": "True"
+  }
+}

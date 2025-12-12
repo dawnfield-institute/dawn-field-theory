@@ -37,9 +37,11 @@ Three experiments have converged on unified structure in prime number dynamics:
 | Experiment | Focus | Key Finding | Precision |
 |------------|-------|-------------|-----------|
 | **sec_prime_manifold/** | SEC stress field | frac(E>0) = 1/φ at criticality | 0.000006 error |
-| **prime_harmonic_manifold/** | Markov eigenvalue | λ₁ decay = -1/π² per log-decade | Z = 0.32 |
+| **prime_harmonic_manifold/** | Markov eigenvalue | λ₁ → 1/2, Cramér z = 97 at 50M | Asymptotic |
 | **pac_confluence_xi/** | Standard Model | sin²θ_W = 3/13, (2αβ)² = 4/5 | Algebraic proof |
 | **standard_model_connection/** | Physics mechanism | Fibonacci → gauge groups | Ongoing |
+
+**Note**: PHM originally claimed λ₁ decay = -1/π². This was refuted by large-scale testing (50M primes). The corrected finding (λ₁ → 1/2, z = 97) is actually stronger — primes diverge from random by 97 standard deviations.
 
 ### The Unified Picture
 

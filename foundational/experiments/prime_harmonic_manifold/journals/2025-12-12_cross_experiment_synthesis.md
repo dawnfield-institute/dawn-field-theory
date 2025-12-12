@@ -1,7 +1,7 @@
 ---
 date: 2025-12-12
-status: ✅ SYNTHESIS (UPDATED)
-tags: [cross-validation, pac-sec-unity, fibonacci-structure, gue-connection, dawn-field-theory]
+status: ✅ SYNTHESIS (CORRECTED 15:20)
+tags: [cross-validation, pac-sec-unity, fibonacci-structure, dawn-field-theory, correction]
 experiments: [prime_harmonic_manifold, sec_prime_manifold, pac_confluence_xi, standard_model_connection, scbf, vcpu, tinycimm]
 ---
 
@@ -13,12 +13,14 @@ This journal documents the convergence of **predicted results from Dawn Field Th
 
 **CRITICAL CONTEXT**: These experiments are not finding coincidences — they are **testing predictions** from a unified theoretical framework (PAC/SEC). The theory came first; the experiments validate it.
 
+**CORRECTION (15:20)**: PHM 1/π² claim refuted by large-scale testing. See [2025-12-12_scale_validation_correction.md](2025-12-12_scale_validation_correction.md).
+
 ### Full Validation Table
 
 | Domain | Prediction Source | Experiment | Key Finding | Status |
 |--------|------------------|------------|-------------|--------|
 | **Primes** | SEC | sec_prime_manifold | frac(E>0) = 1/φ at phase transition | ✅ error 0.000006 |
-| **Primes** | PHM | prime_harmonic_manifold | λ₁ decay = -1/π² per log-decade | ✅ Z = 0.32 |
+| **Primes** | PHM | prime_harmonic_manifold | λ₁ → 1/2, Cramér z = 97 at 50M | ✅ (corrected) |
 | **Physics** | PAC | pac_confluence_xi | sin²θ_W = 3/13 = 0.2308 | ✅ 0.19% from measured |
 | **Physics** | PAC | pac_confluence_xi | (2αβ)² = 4/5 exactly | ✅ Algebraic proof |
 | **Physics** | PAC | pac_confluence_xi | Koide = 2/3 | ✅ 0.5 ppm |
@@ -27,7 +29,9 @@ This journal documents the convergence of **predicted results from Dawn Field Th
 | **Cognition** | PAC | vcpu | P/A → 2/3 | ✅ 119x speedup |
 | **Cognition** | PAC | vcpu | 0.02-0.03 Hz oscillations | ✅ Confirmed |
 
-**Key Insight**: This is not three experiments finding three coincidences — this is one theoretical framework (Dawn Field Theory) making predictions that are being confirmed across mathematics, physics, machine learning, and cognition.
+**Note on PHM correction**: The original claim (λ₁ decay = -1/π²) was based on small-scale data (N < 50K). Large-scale testing (N = 50M) shows λ₁ asymptotes to 1/2, with Cramér divergence growing to z = 97. The prime structure finding is **stronger**, but the specific numerology was wrong.
+
+**Key Insight**: This is one theoretical framework (Dawn Field Theory) making predictions across domains. Some predictions hold (SEC, PAC, Pythia, vCPU); some numerological claims get corrected (PHM 1/π²). This is how science works.
 
 ---
 
