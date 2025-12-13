@@ -1,0 +1,13 @@
+schema_version: "2.0"
+description: "Research journal entries for PAC cosmology validation"
+semantic_scope: "documentation"
+proficiency_level: "research"
+
+files:
+  - "[2025-12-13_framework_design.md]": "Initial framework design and validation philosophy"
+
+notes: |
+  Journal naming: YYYY-MM-DD_descriptive_slug.md
+  One file per day, exception for major discoveries.
+  Required sections: Summary, Timeline, Key Findings
+  Status markers: ✅ Confirmed | ❌ Failed | 🔄 In Progress | 💡 Insight
