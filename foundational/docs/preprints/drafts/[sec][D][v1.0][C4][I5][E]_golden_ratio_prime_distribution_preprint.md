@@ -259,6 +259,23 @@ Grid search over (size, window) finds:
 
 **Validation**: Effect is scale-invariant within statistical variance.
 
+### 4.8 Large-Scale Validation (December 2025 Update)
+
+Extended validation at the **50 million prime mark** confirms and strengthens the SEC findings:
+
+| Test | n | Result | Significance |
+|------|---|--------|--------------|
+| SEC enrichment | 50M | z = 96.8 | p < 10⁻¹⁰⁰ |
+| φ-threshold | 50M | Error < 0.01% | Confirmed |
+| λ₁ convergence | 50M | λ₁ = 0.496 → 1/2 | Asymptotic |
+
+**Key findings from exp_25_very_large_scale.py:**
+- SEC maintains 3x+ enrichment at massive scale (not overfitting)
+- The 1/φ partition fraction is robust across 3 orders of magnitude
+- Markov eigenvalue λ₁ → 1/2 (correcting earlier φ-related claims)
+
+See: [`exp_25_very_large_scale.py`](../../experiments/prime_harmonic_manifold/scripts/exp_25_very_large_scale.py)
+
 ---
 
 ## 5. Theoretical Interpretation

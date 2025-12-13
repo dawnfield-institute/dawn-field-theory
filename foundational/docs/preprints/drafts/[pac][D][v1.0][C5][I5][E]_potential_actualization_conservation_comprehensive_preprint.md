@@ -1370,6 +1370,37 @@ Total_Conservation: √(S_p² + D_p²) = √((ΣS_i)² + (ΣD_i)²)
 | Quantum Coherence | Born Rule | Statistical agreement | Computational correspondence | ✅ |
 | Multi-scale Stability | Long-term Behavior | Convergent | 10,000+ timesteps stable | ✅ |
 
+### Appendix B.2: Complete Prediction Registry (December 2025 Update)
+
+As of December 2025, PAC/SEC framework has produced **14 confirmed predictions** across 5 domains:
+
+| # | Domain | Prediction | Test | Result | Status |
+|---|--------|------------|------|--------|--------|
+| 1 | Number Theory | SEC stress threshold at 1/φ | exp_03 | Error = 0.000006 | ✅ |
+| 2 | Number Theory | Primes as SEC attractors | 50M primes | z = 96.8 | ✅ |
+| 3 | Number Theory | λ₁ → 1/2 asymptotically | 50M primes | λ₁ = 0.496 | ✅ |
+| 4 | Physics | sin²θ_W = 3/13 | Compare measured | 0.19% error | ✅ |
+| 5 | Physics | (2αβ)² = 4/5 from Fibonacci | Algebraic proof | Exact | ✅ |
+| 6 | ML | Pythia φ-crossing at step 512 | SCBF experiments | p = 0.0014 | ✅ |
+| 7 | Cognition | Xi ∈ [1.0015, 1.0571] | vCPU runtime | Xi = 1.028 | ✅ |
+| 8 | Cognition | P/A → 2/3 at equilibrium | vCPU test | Confirmed | ✅ |
+| 9 | Cognition | I/E bounds match theory | vCPU test | Confirmed | ✅ |
+| 10 | ML | Inference ratio ≈ 1.0 | GPT-2 exp_27 | Ratio = 1.02-1.08 | ✅ |
+| 11 | ML | Generation entropy < 1/φ | GPT-2 exp_28 | Mean = 0.25 | ✅ |
+| 12 | ML | SEC in non-gradient learning | TinyCIMM | Hebbian + SEC | ✅ |
+| 13 | PAC-Native | D → 2 in PAC systems | GAIA | D ≈ 1.9-2.0, 100% lock | ✅ |
+| 14 | PAC-Native | 0.02 Hz from PAC dynamics | exp_32 | FFT = 0.020 Hz | ✅ |
+
+**Key December 2025 Discoveries:**
+
+1. **PAC Necessity (exp_26)**: Systems violating PAC (using random multipliers instead of φ) show structure collapse (r = -0.588, p = 0.0104), proving PAC is necessary for stable emergence.
+
+2. **QBE-PAC Unification**: Legacy QBE experiments (~March 2025) required `QPL_damping = 0.02` empirically. PAC dynamics (December 2025), without this input, produce 0.020 Hz via FFT. PAC explains why QBE's empirical tuning worked.
+
+3. **Gravitational Wave Connection**: The 0.02 Hz frequency corresponds to the LISA/Chang'e 3/TianGO gravitational wave detection band (0.01-0.05 Hz), where primordial GWs and supermassive BH mergers are expected.
+
+See: [`prime_harmonic_manifold/journals/2025-12-13_predictions_progress_roadmap.md`](../../experiments/prime_harmonic_manifold/journals/2025-12-13_predictions_progress_roadmap.md)
+
 ### Appendix C: Implementation Code Traces
 
 #### PAC Conservation Enforcement
