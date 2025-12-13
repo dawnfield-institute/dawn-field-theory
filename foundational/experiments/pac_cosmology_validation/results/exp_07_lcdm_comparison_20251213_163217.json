@@ -1,0 +1,438 @@
+{
+  "experiment": "exp_07_lcdm_comparison",
+  "timestamp": "2025-12-13T16:32:17.530269",
+  "purpose": "Rigorous comparison of \u039bCDM vs PAC/SEC for JWST SMBHs",
+  "objects": [
+    {
+      "name": "UHZ-1",
+      "z": 10.073,
+      "log_m_obs": 7.5,
+      "t_gyr": 0.46708972273622196,
+      "sec_enhancement": 1.1704173501377513,
+      "scenarios": {
+        "lcdm_optimistic": {
+          "duty": 1.0,
+          "eddington": 1.0,
+          "log_seed": 2.992122463598643,
+          "viability": {
+            "log_m_seed": 2.992122463598643,
+            "viable_mechanisms": [
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              },
+              {
+                "mechanism": "runaway_stellar",
+                "name": "Runaway stellar collisions",
+                "formation": "Dense star cluster core collapse"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "lcdm_moderate": {
+          "duty": 0.5,
+          "eddington": 0.5,
+          "log_seed": 6.373030615899661,
+          "viability": {
+            "log_m_seed": 6.373030615899661,
+            "viable_mechanisms": [],
+            "n_viable": 0,
+            "assessment": "IMPOSSIBLE - exceeds all known formation mechanisms"
+          }
+        },
+        "lcdm_realistic": {
+          "duty": 0.2,
+          "eddington": 0.3,
+          "log_seed": 7.229527347815918,
+          "viability": {
+            "log_m_seed": 7.229527347815918,
+            "viable_mechanisms": [],
+            "n_viable": 0,
+            "assessment": "IMPOSSIBLE - exceeds all known formation mechanisms"
+          }
+        },
+        "pac_sec": {
+          "duty": 0.7233577034077168,
+          "eddington": 1.0,
+          "enhancement": 1.1704173501377513,
+          "log_seed": 4.239192058025478,
+          "viability": {
+            "log_m_seed": 4.239192058025478,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              },
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "pac_moderate": {
+          "duty": 0.7233577034077168,
+          "eddington": 0.5,
+          "enhancement": 1.1704173501377513,
+          "log_seed": 5.869596029012739,
+          "viability": {
+            "log_m_seed": 5.869596029012739,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              }
+            ],
+            "n_viable": 1,
+            "assessment": "CONSTRAINED - requires Direct collapse BHs (DCBHs)"
+          }
+        }
+      }
+    },
+    {
+      "name": "GN-z11",
+      "z": 10.603,
+      "log_m_obs": 6.2,
+      "t_gyr": 0.43543780446306957,
+      "sec_enhancement": 1.170470035577338,
+      "scenarios": {
+        "lcdm_optimistic": {
+          "duty": 1.0,
+          "eddington": 1.0,
+          "log_seed": 1.9975947624360386,
+          "viability": {
+            "log_m_seed": 1.9975947624360386,
+            "viable_mechanisms": [
+              {
+                "mechanism": "pop_iii_stellar",
+                "name": "Pop III stellar remnants",
+                "formation": "First stars collapse to BHs"
+              },
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "lcdm_moderate": {
+          "duty": 0.5,
+          "eddington": 0.5,
+          "log_seed": 5.14939869060901,
+          "viability": {
+            "log_m_seed": 5.14939869060901,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              }
+            ],
+            "n_viable": 1,
+            "assessment": "CONSTRAINED - requires Direct collapse BHs (DCBHs)"
+          }
+        },
+        "lcdm_realistic": {
+          "duty": 0.2,
+          "eddington": 0.3,
+          "log_seed": 5.947855685746163,
+          "viability": {
+            "log_m_seed": 5.947855685746163,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              }
+            ],
+            "n_viable": 1,
+            "assessment": "CONSTRAINED - requires Direct collapse BHs (DCBHs)"
+          }
+        },
+        "pac_sec": {
+          "duty": 0.7233902648000936,
+          "eddington": 1.0,
+          "enhancement": 1.170470035577338,
+          "log_seed": 3.1600209624013056,
+          "viability": {
+            "log_m_seed": 3.1600209624013056,
+            "viable_mechanisms": [
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              },
+              {
+                "mechanism": "runaway_stellar",
+                "name": "Runaway stellar collisions",
+                "formation": "Dense star cluster core collapse"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "pac_moderate": {
+          "duty": 0.7233902648000936,
+          "eddington": 0.5,
+          "enhancement": 1.170470035577338,
+          "log_seed": 4.680010481200653,
+          "viability": {
+            "log_m_seed": 4.680010481200653,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              },
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        }
+      }
+    },
+    {
+      "name": "CEERS-1019",
+      "z": 8.68,
+      "log_m_obs": 6.95,
+      "t_gyr": 0.5714888452071556,
+      "sec_enhancement": 1.1702175057123048,
+      "scenarios": {
+        "lcdm_optimistic": {
+          "duty": 1.0,
+          "eddington": 1.0,
+          "log_seed": 1.4345677346060153,
+          "viability": {
+            "log_m_seed": 1.4345677346060153,
+            "viable_mechanisms": [
+              {
+                "mechanism": "pop_iii_stellar",
+                "name": "Pop III stellar remnants",
+                "formation": "First stars collapse to BHs"
+              },
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "lcdm_moderate": {
+          "duty": 0.5,
+          "eddington": 0.5,
+          "log_seed": 5.571141933651504,
+          "viability": {
+            "log_m_seed": 5.571141933651504,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              }
+            ],
+            "n_viable": 1,
+            "assessment": "CONSTRAINED - requires Direct collapse BHs (DCBHs)"
+          }
+        },
+        "lcdm_realistic": {
+          "duty": 0.2,
+          "eddington": 0.3,
+          "log_seed": 6.6190740640763615,
+          "viability": {
+            "log_m_seed": 6.6190740640763615,
+            "viable_mechanisms": [],
+            "n_viable": 0,
+            "assessment": "IMPOSSIBLE - exceeds all known formation mechanisms"
+          }
+        },
+        "pac_sec": {
+          "duty": 0.7232341927603286,
+          "eddington": 1.0,
+          "enhancement": 1.1702175057123048,
+          "log_seed": 2.961050797813511,
+          "viability": {
+            "log_m_seed": 2.961050797813511,
+            "viable_mechanisms": [
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              },
+              {
+                "mechanism": "runaway_stellar",
+                "name": "Runaway stellar collisions",
+                "formation": "Dense star cluster core collapse"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "pac_moderate": {
+          "duty": 0.7232341927603286,
+          "eddington": 0.5,
+          "enhancement": 1.1702175057123048,
+          "log_seed": 4.955525398906755,
+          "viability": {
+            "log_m_seed": 4.955525398906755,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              },
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        }
+      }
+    },
+    {
+      "name": "GLASS-z12",
+      "z": 12.5,
+      "log_m_obs": 6.0,
+      "t_gyr": 0.34689475761290334,
+      "sec_enhancement": 1.1705978556721646,
+      "scenarios": {
+        "lcdm_optimistic": {
+          "duty": 1.0,
+          "eddington": 1.0,
+          "log_seed": 2.652122688167778,
+          "viability": {
+            "log_m_seed": 2.652122688167778,
+            "viable_mechanisms": [
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              },
+              {
+                "mechanism": "runaway_stellar",
+                "name": "Runaway stellar collisions",
+                "formation": "Dense star cluster core collapse"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "lcdm_moderate": {
+          "duty": 0.5,
+          "eddington": 0.5,
+          "log_seed": 5.163030672041945,
+          "viability": {
+            "log_m_seed": 5.163030672041945,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              }
+            ],
+            "n_viable": 1,
+            "assessment": "CONSTRAINED - requires Direct collapse BHs (DCBHs)"
+          }
+        },
+        "lcdm_realistic": {
+          "duty": 0.2,
+          "eddington": 0.3,
+          "log_seed": 5.799127361290067,
+          "viability": {
+            "log_m_seed": 5.799127361290067,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              }
+            ],
+            "n_viable": 1,
+            "assessment": "CONSTRAINED - requires Direct collapse BHs (DCBHs)"
+          }
+        },
+        "pac_sec": {
+          "duty": 0.7234692619631417,
+          "eddington": 1.0,
+          "enhancement": 1.1705978556721646,
+          "log_seed": 3.5779136720655957,
+          "viability": {
+            "log_m_seed": 3.5779136720655957,
+            "viable_mechanisms": [
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              },
+              {
+                "mechanism": "runaway_stellar",
+                "name": "Runaway stellar collisions",
+                "formation": "Dense star cluster core collapse"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        },
+        "pac_moderate": {
+          "duty": 0.7234692619631417,
+          "eddington": 0.5,
+          "enhancement": 1.1705978556721646,
+          "log_seed": 4.788956836032797,
+          "viability": {
+            "log_m_seed": 4.788956836032797,
+            "viable_mechanisms": [
+              {
+                "mechanism": "direct_collapse",
+                "name": "Direct collapse BHs (DCBHs)",
+                "formation": "Primordial gas cloud collapse without fragmentation"
+              },
+              {
+                "mechanism": "primordial",
+                "name": "Primordial BHs",
+                "formation": "Early universe density fluctuations"
+              }
+            ],
+            "n_viable": 2,
+            "assessment": "VIABLE - multiple mechanisms possible"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "lcdm_optimistic_viable": 4,
+    "lcdm_moderate_viable": 3,
+    "lcdm_realistic_viable": 2,
+    "pac_optimistic_viable": 4,
+    "pac_moderate_viable": 4,
+    "n_objects": 4,
+    "verdict": "\u039bCDM_TENSION_PAC_HELPS"
+  },
+  "conclusion": "\u039bCDM with realistic parameters (2/4 viable) shows tension with JWST SMBHs. PAC/SEC enhancement (4/4 viable) provides modest but principled improvement. The 17% enhancement is derived from SEC dynamics, not fitted."
+}
