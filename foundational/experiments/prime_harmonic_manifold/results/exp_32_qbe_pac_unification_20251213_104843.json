@@ -1,0 +1,59 @@
+{
+  "experiment": "exp_32_qbe_pac_unification",
+  "timestamp": "2025-12-13T10:48:43.047069",
+  "tests": {
+    "legacy_analysis": {
+      "brain.py": {
+        "parameter_name": "QPL_damping",
+        "value": 0.02,
+        "usage": "val_info -= QPL * QPL_damping",
+        "type": "damping_coefficient",
+        "is_frequency": false,
+        "interpretation": "Reduces information field by factor proportional to QPL"
+      },
+      "cosmo.py": {
+        "parameter_name": "QPL_damping",
+        "value": 0.02,
+        "usage": "val_info -= QPL * QPL_damping",
+        "type": "damping_coefficient",
+        "is_frequency": false,
+        "interpretation": "Reduces information field by factor proportional to QPL"
+      },
+      "vcpu.py": {
+        "parameter_name": "QPL_damping",
+        "value": 0.02,
+        "usage": "val_info -= QPL * QPL_damping",
+        "type": "damping_coefficient",
+        "is_frequency": false,
+        "interpretation": "Reduces information field by factor proportional to QPL"
+      }
+    },
+    "pac_dynamics": {
+      "has_damping_parameter": false,
+      "xi_operator": 1.0571,
+      "mass_squared": 0.054,
+      "welch_frequency": 0.390625,
+      "fft_frequency": 0.02
+    },
+    "qbe_dynamics": {
+      "has_damping_parameter": true,
+      "qpl_damping": 0.02,
+      "welch_frequency": 0.390625,
+      "fft_frequency": 0.02
+    },
+    "theoretical": {
+      "xi": 1.0571,
+      "mass_squared": 0.054015703339324504,
+      "mass": 0.23241278652286862,
+      "theoretical_frequency": 0.03698964381287598,
+      "legacy_damping": 0.02,
+      "ratio_to_legacy": 1.8494821906437988
+    }
+  },
+  "conclusion": {
+    "pac_theoretical_frequency": 0.03698964381287598,
+    "legacy_damping": 0.02,
+    "close_match": false,
+    "interpretation": "PAC and QBE have different timescales"
+  }
+}

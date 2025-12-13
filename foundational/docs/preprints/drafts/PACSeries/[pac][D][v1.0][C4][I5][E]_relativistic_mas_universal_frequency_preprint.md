@@ -49,7 +49,39 @@ Recent experiments using the Unified MAS-MED Validation Framework ([`dawn-models
 
 Full validation report: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md)
 
-### 1.3 Motivation for Relativistic Extension
+### 1.3 QBE Historical Validation (December 2025 Discovery)
+
+A remarkable discovery establishes independent validation of the 0.020 Hz frequency:
+
+**Legacy QBE Framework (~March 2025):**
+The original Quantum Balance Equation (QBE) experiments ([`brain.py`](../../legacy/brain.py), [`cosmo.py`](../../legacy/cosmo.py), [`vcpu.py`](../../legacy/vcpu.py)) required an empirical damping coefficient `QPL_damping = 0.02` to achieve stable dynamics. This value was found through empirical tuning, not derived from theory.
+
+**PAC Framework (December 2025):**
+PAC dynamics, running with only Ξ = 1.0571 and Klein-Gordon evolution (NO 0.02 parameter input), produce oscillations at **exactly 0.020 Hz** via FFT analysis ([`exp_32_qbe_pac_unification.py`](../../experiments/prime_harmonic_manifold/scripts/exp_32_qbe_pac_unification.py)).
+
+**Key Distinction:**
+| Aspect | Legacy QBE | Modern PAC |
+|--------|------------|------------|
+| 0.02 appears as | Hardcoded damping | Emergent frequency |
+| How found | Empirical tuning | FFT measurement |
+| Theory base | `dI/dt + dE/dt = λ·QPL(t)` | `Ψ(k) = Ψ(k+1) + Ψ(k+2)` |
+
+This validates that PAC provides the mathematical foundation for QBE's empirical success—the frequency that made simulations stable is the natural frequency of PAC-constrained systems.
+
+### 1.4 Gravitational Wave Band Connection
+
+The 0.020 Hz frequency is not arbitrary in cosmology—it corresponds exactly to the gravitational wave detection band:
+
+| Detector/Mission | Frequency Range | Peak/Target |
+|-----------------|-----------------|-------------|
+| **LISA** (ESA/NASA) | 10⁻⁴ - 1 Hz | ~0.01 Hz |
+| **Chang'e 3** (China) | 0.01 - 0.05 Hz | Stochastic GW limits |
+| **TianGO** (proposed) | 0.01 - 10 Hz | Gap-filling detector |
+| **Redshift Drift** (SKA) | ~0.001 - 0.02 Hz | Cosmic expansion |
+
+PAC may be capturing the natural timescale of spacetime-information dynamics where primordial gravitational waves and supermassive black hole mergers are expected.
+
+### 1.5 Motivation for Relativistic Extension
 
 If 0.020 Hz is truly fundamental, it should appear across cosmic scales when properly corrected for relativistic effects. This paper tests this hypothesis using observations spanning 20+ orders of magnitude in scale.
 

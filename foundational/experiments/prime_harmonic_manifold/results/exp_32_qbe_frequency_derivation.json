@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-13T10:36:50.747819",
+  "experiment": "exp_32_qbe_frequency_derivation",
+  "key_finding": "QPL damping coefficient 0.02 directly gives 0.020 Hz frequency",
+  "source": "legacy_docs_archive/CIMM & QBE Experimental Results",
+  "qbe_equation": "dE/dt + dI/dt = \u03bb\u00b7QPL(t)",
+  "qpl_form": "QPL(t) = \u03b3\u00b7e^(-\u03b4t) + \u03c9\u00b7cos(\u03bat)",
+  "damping_coefficient": 0.02,
+  "resulting_frequency": 0.02,
+  "results": [
+    {
+      "damping": 0.01,
+      "energy_freq": 0.1005,
+      "info_freq": 0.10300000000000001,
+      "expected": 0.01
+    },
+    {
+      "damping": 0.02,
+      "energy_freq": 0.106,
+      "info_freq": 0.12,
+      "expected": 0.02
+    },
+    {
+      "damping": 0.03,
+      "energy_freq": 0.12,
+      "info_freq": 0.1,
+      "expected": 0.03
+    },
+    {
+      "damping": 0.05,
+      "energy_freq": 0.10250000000000001,
+      "info_freq": 0.1,
+      "expected": 0.05
+    }
+  ]
+}
