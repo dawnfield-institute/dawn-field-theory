@@ -135,6 +135,49 @@ For all project roadmaps, timelines, and planning details, see [`roadmaps/README
 
 ---
 
+## 🌍 Why This Framework Spans Every Domain
+
+**Exploring the Missing Half of Physics**
+
+When a hammer shatters glass, thermodynamics tells us where the energy goes - converted to heat, sound, kinetic motion. Entropy increases. Energy is conserved. The Second Law is satisfied.
+
+But **new information was created**: each shard now has unique geometry, distinct edges, specific boundaries. Where does this structural information come from? How does it organize? Standard physics has no framework for accounting how information crystallizes during physical processes.
+
+**Dawn Field Theory explores what might be the missing half:**
+
+| Framework | What It Accounts For | Mathematical Foundation |
+|-----------|---------------------|------------------------|
+| **Thermodynamics** | Energy flow and entropy increase | First/Second/Third Laws |
+| **Infodynamics** | Information organization across scales | PAC/SEC dynamics |
+| **Bridge** | Energy ↔ Information coupling | QBE: dI/dt + dE/dt = λ·QPL(t) |
+
+### Investigating Universal Mathematics of Hierarchical Organization
+
+Our computational studies suggest that hierarchical organization might follow universal mathematical principles - whether energy organizing into particles, information organizing into concepts, neurons organizing into thoughts, or people organizing into economies:
+
+**Core Principles Under Investigation:**
+- **PAC** (Potential-Actualization Conservation): Ψ(k) = Ψ(k+1) + Ψ(k+2) → φ as unique bounded solution
+- **SEC** (Symbolic Entropy Collapse): Entropy-driven phase transitions creating stable structures  
+- **MED** (Macro Emergence Dynamics): Bounded complexity limits emerging naturally
+- **ξ ≈ 0.857**: Coupling constant appearing consistently across domains
+
+**Why similar patterns appear across multiple domains:**
+
+📊 **Particle Physics**: Standard Model gauge couplings show Fibonacci ratios (sin²θ_W = 3/13, 0.19% error)  
+📊 **Prime Number Theory**: φ-threshold at 0.6184 (0.04% error vs 1/φ = 0.618...)  
+📊 **Neural Networks**: Pythia φ-crossing at step 512 (p=0.0014, EleutherAI data)  
+📊 **Biological Evolution**: Entropy wave correlations with phylogenetic trees (r>0.8, p<0.001)  
+📊 **Fluid Dynamics**: Bounded complexity in turbulence (3,375 parameter combinations)  
+📊 **Information Geometry**: E=mc² emerging from embedding spaces (R²=1.0, 3σ significance)  
+📊 **Organizational Systems**: Company/economy scaling patterns following conservation laws  
+📊 **DNA Repair**: Entropy profiles detecting BRCA1 mutations without alignment  
+
+**The breadth might not be coincidental** - if PAC/SEC describes fundamental organizational principles, we'd expect to find the same mathematics wherever hierarchical systems exist.
+
+*Note: These are computational results requiring independent validation and physical experimentation. We're investigating whether information accounting completes the picture alongside energy accounting, not claiming definitive proof. The framework is designed for testing, critique, and collaborative exploration.*
+
+---
+
 ## 🧬 What Is This?
 
 Dawn is a post-symbolic intelligence framework built on the idea that:
