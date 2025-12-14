@@ -291,6 +291,7 @@ class EmbeddingGenerator:
         self,
         strategy: Optional[EmbeddingStrategy] = None,
         model: Optional[str] = None,
+        model_name: Optional[str] = None,
         dimension: int = 128,
         seed: Optional[int] = None
     ):
@@ -299,12 +300,19 @@ class EmbeddingGenerator:
         
         Args:
             strategy: Custom embedding strategy (overrides other args)
-            model: Model name for pretrained embeddings ('bert', 'sentence', 'synthetic')
+            model: Model type ('sentence-transformers', 'bert', 'synthetic', 'ollama')
+            model_name: Specific model name for the chosen type
             dimension: For synthetic embeddings
             seed: Random seed
         """
         if strategy is not None:
             self.strategy = strategy
+        elif model == 'sentence-transformers':
+            model_name = model_name or 'all-MiniLM-L6-v2'
+            self.strategy = SentenceEmbedding(model_name=model_name)
+        elif model == 'ollama':
+            model_name = model_name or 'llama3.2:latest'
+            self.strategy = OllamaEmbedding(model_name=model_name)
         elif model == 'synthetic' or model is None:
             self.strategy = SyntheticEmbedding(dimension=dimension, seed=seed)
         elif model.startswith('bert') or model.startswith('gpt'):
