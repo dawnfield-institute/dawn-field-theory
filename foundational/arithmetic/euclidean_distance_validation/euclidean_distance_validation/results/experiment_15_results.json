@@ -1,0 +1,47 @@
+{
+  "intra_domain": {
+    "code": {
+      "n_pairs": 15,
+      "mean_variation": 1.6765365253262643,
+      "max_variation": 1.8390571933427287,
+      "std_variation": 0.08211795378091503
+    },
+    "biology": {
+      "n_pairs": 15,
+      "mean_variation": 1.8001213600191341,
+      "max_variation": 1.8770092077392446,
+      "std_variation": 0.045740552881195065
+    },
+    "physics": {
+      "n_pairs": 15,
+      "mean_variation": 1.8451099464633955,
+      "max_variation": 1.9565191592915392,
+      "std_variation": 0.07170678493862997
+    }
+  },
+  "cross_domain": {
+    "code_vs_biology": {
+      "n_pairs": 25,
+      "mean_variation": 1.3151392331558174,
+      "max_variation": 1.391141187659454,
+      "std_variation": 0.04436258513974771
+    },
+    "code_vs_physics": {
+      "n_pairs": 25,
+      "mean_variation": 1.26241485827434,
+      "max_variation": 1.3252906795858683,
+      "std_variation": 0.030349714729527126
+    },
+    "biology_vs_physics": {
+      "n_pairs": 25,
+      "mean_variation": 1.3268286040911588,
+      "max_variation": 1.3685535875839512,
+      "std_variation": 0.026762516429338645
+    }
+  },
+  "variation_stats": {
+    "intra_mean": 1.7739226106029313,
+    "cross_mean": 1.3014608985071054,
+    "overall_max": 1.9565191592915392
+  }
+}

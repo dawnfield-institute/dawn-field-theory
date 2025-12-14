@@ -1,0 +1,65 @@
+{
+  "euclidean": {
+    "code": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0
+    },
+    "biology": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0
+    },
+    "physics": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0
+    },
+    "code_vs_biology": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0
+    },
+    "code_vs_physics": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0
+    },
+    "biology_vs_physics": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0
+    }
+  },
+  "graph": {
+    "code": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0000000000000002,
+      "n_pairs": 15
+    },
+    "biology": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0000000000000002,
+      "n_pairs": 15
+    },
+    "physics": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0000000000000002,
+      "n_pairs": 15
+    },
+    "code_vs_biology": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0000000000000002,
+      "n_pairs": 9
+    },
+    "code_vs_physics": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0000000000000002,
+      "n_pairs": 9
+    },
+    "biology_vs_physics": {
+      "mean_variation": 1.0,
+      "max_variation": 1.0000000000000002,
+      "n_pairs": 9
+    }
+  },
+  "comparison": {
+    "graph_mean": 1.0,
+    "graph_max": 1.0000000000000002,
+    "amplification": 1.0
+  }
+}

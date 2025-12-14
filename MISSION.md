@@ -40,7 +40,7 @@ Our primary domains of inquiry include:
 * Recursive balance models and herniation geometries
 * Epistemic regulation and feedback systems
 * Field collapse simulations and recursive pruning mechanisms
-* QBE (Qualitative Boundary Entropy) dynamics
+* QBE (Quantum Balance Equation) dynamics
 * Emergent symbolic intelligence and post-symbolic representations
 * The repository as living epistemic machine—a self-refining system that evolves through imperfection
 * Scrutiny engines and forward hypothesis pipelines for automated epistemic pressure
