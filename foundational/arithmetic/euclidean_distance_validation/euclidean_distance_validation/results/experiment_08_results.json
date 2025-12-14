@@ -1,0 +1,26 @@
+{
+  "shuffle": {
+    "test": "shuffle_embeddings",
+    "original_r2": 0.01795841305312633,
+    "null_mean": 0.017550483878520786,
+    "null_std": 0.025163112891642657,
+    "p_value": 0.3,
+    "significant": false
+  },
+  "permute": {
+    "test": "permute_values",
+    "original_r2": 0.01795841305312633,
+    "null_mean": 0.013038021361913647,
+    "null_std": 0.017172037403517002,
+    "p_value": 0.27,
+    "significant": false
+  },
+  "random": {
+    "test": "independent_random",
+    "original_r2": 0.01795841305312633,
+    "null_mean": 0.009041342305931286,
+    "null_std": 0.011705199877558551,
+    "p_value": 0.16,
+    "significant": false
+  }
+}

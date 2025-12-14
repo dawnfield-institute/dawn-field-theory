@@ -1,0 +1,80 @@
+{
+  "byval": {
+    "code_L2_1": {
+      "local_mean": 0.07205511844470672,
+      "local_max": 2.2802740899021576,
+      "nonlocal_mean": 0.0,
+      "nonlocal_max": 0.0,
+      "depth2_mean": 0.0,
+      "depth2_max": 0.0,
+      "n_local": 114,
+      "n_nonlocal": 351,
+      "n_depth2": 0
+    },
+    "biology_root": {
+      "local_mean": 0.022762135421371055,
+      "local_max": 0.3515088804813542,
+      "nonlocal_mean": 0.0,
+      "nonlocal_max": 0.0,
+      "depth2_mean": 0.0,
+      "depth2_max": 0.0,
+      "n_local": 140,
+      "n_nonlocal": 190,
+      "n_depth2": 135
+    },
+    "physics_L3_0_0": {
+      "local_mean": 0.17613116736294207,
+      "local_max": 2.0602102731423164,
+      "nonlocal_mean": 0.0,
+      "nonlocal_max": 0.0,
+      "depth2_mean": 0.0,
+      "depth2_max": 0.0,
+      "n_local": 59,
+      "n_nonlocal": 406,
+      "n_depth2": 0
+    }
+  },
+  "byref": {
+    "code_L2_1": {
+      "local_mean": 0.12602723707451877,
+      "local_max": 2.089785964354523,
+      "nonlocal_mean": 0.0008367915689259185,
+      "nonlocal_max": 0.040339010023101134,
+      "depth2_mean": 0.0,
+      "depth2_max": 0.0,
+      "n_local": 114,
+      "n_nonlocal": 351,
+      "n_depth2": 0
+    },
+    "biology_root": {
+      "local_mean": 0.03062576234717869,
+      "local_max": 0.20722667098146752,
+      "nonlocal_mean": 0.0009287480063170298,
+      "nonlocal_max": 0.01809891008135654,
+      "depth2_mean": 0.019494849079323973,
+      "depth2_max": 0.0530218703528087,
+      "n_local": 140,
+      "n_nonlocal": 190,
+      "n_depth2": 135
+    },
+    "physics_L3_0_0": {
+      "local_mean": 0.20746254559574206,
+      "local_max": 2.0681392027385175,
+      "nonlocal_mean": 0.0005929550511477533,
+      "nonlocal_max": 0.12787495364589418,
+      "depth2_mean": 0.0,
+      "depth2_max": 0.0,
+      "n_local": 59,
+      "n_nonlocal": 406,
+      "n_depth2": 0
+    }
+  },
+  "summary": {
+    "byval_nonlocal_mean": 0.0,
+    "byref_nonlocal_mean": 0.0007861648754635672,
+    "nonlocal_amplification": 0.0,
+    "byval_depth2_mean": 0.0,
+    "byref_depth2_mean": 0.0064982830264413245,
+    "depth2_amplification": 0.0
+  }
+}
