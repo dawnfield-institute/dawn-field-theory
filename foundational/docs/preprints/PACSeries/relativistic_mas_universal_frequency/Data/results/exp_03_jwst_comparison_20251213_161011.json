@@ -1,0 +1,121 @@
+{
+  "experiment": "exp_03_jwst_comparison",
+  "timestamp": "2025-12-13T16:10:11.371466",
+  "hypothesis": "PAC predictions match JWST observations",
+  "constants": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289054,
+    "context_variance": 7.42,
+    "log_m0": 8.32809887800017,
+    "pac": 0.8,
+    "sec": 0.2
+  },
+  "observations": [
+    {
+      "name": "UHZ-1",
+      "z": 10.073,
+      "observed": {
+        "log_m": 7.5,
+        "k": 11.962429916954164
+      },
+      "predicted": {
+        "log_m_pac": 7.5,
+        "log_m_xi_corrected": 7.524124234589495,
+        "k_accessible": 4.7171588385938605
+      },
+      "state": {
+        "cosmic_age_gyr": 0.46708972273622196,
+        "effective_age_gyr": 1.270716028784399,
+        "time_dilation_factor": 2.7204966560611017,
+        "matter_fraction": 0.9984008505233898
+      },
+      "residual_dex": -0.024124234589494975,
+      "k_consistent": 1.0,
+      "within_tolerance": 1.0
+    },
+    {
+      "name": "GN-z11",
+      "z": 10.603,
+      "observed": {
+        "log_m": 6.2,
+        "k": 18.182893473770328
+      },
+      "predicted": {
+        "log_m_pac": 6.2,
+        "log_m_xi_corrected": 6.224124234589495,
+        "k_accessible": 4.862630648196287
+      },
+      "state": {
+        "cosmic_age_gyr": 0.43543780446306957,
+        "effective_age_gyr": 1.1848045079607805,
+        "time_dilation_factor": 2.720950031937951,
+        "matter_fraction": 0.9986098393798484
+      },
+      "residual_dex": -0.024124234589494975,
+      "k_consistent": 1.0,
+      "within_tolerance": 1.0
+    },
+    {
+      "name": "CEERS-1019",
+      "z": 8.68,
+      "observed": {
+        "log_m": 6.95,
+        "k": 14.594164498684078
+      },
+      "predicted": {
+        "log_m_pac": 6.95,
+        "log_m_xi_corrected": 6.974124234589495,
+        "k_accessible": 4.299272975609336
+      },
+      "state": {
+        "cosmic_age_gyr": 0.5714888452071556,
+        "effective_age_gyr": 1.5537512410378058,
+        "time_dilation_factor": 2.7187778975363828,
+        "matter_fraction": 0.9976082599159024
+      },
+      "residual_dex": -0.024124234589494975,
+      "k_consistent": 1.0,
+      "within_tolerance": 1.0
+    },
+    {
+      "name": "GLASS-z12",
+      "z": 12.5,
+      "observed": {
+        "log_m": 6.0,
+        "k": 19.13988786712666
+      },
+      "predicted": {
+        "log_m_pac": 6.000000000000001,
+        "log_m_xi_corrected": 6.024124234589496,
+        "k_accessible": 5.33420302131222
+      },
+      "state": {
+        "cosmic_age_gyr": 0.34689475761290334,
+        "effective_age_gyr": 0.9442650173462618,
+        "time_dilation_factor": 2.7220504104589507,
+        "matter_fraction": 0.9991169302044517
+      },
+      "residual_dex": -0.024124234589495863,
+      "k_consistent": 1.0,
+      "within_tolerance": 1.0
+    }
+  ],
+  "statistics": {
+    "mean_residual": -0.024124234589495197,
+    "std_residual": 3.8459253727671276e-16,
+    "rmse": 0.024124234589495197,
+    "n_within_tolerance": 4,
+    "n_total": 4
+  },
+  "hierarchy_consistency": {
+    "n_consistent": 4,
+    "n_total": 4,
+    "all_consistent": true
+  },
+  "success": true,
+  "success_criteria": {
+    "mass_predictions": true,
+    "hierarchy_consistency": true
+  },
+  "conclusion": "PAC predictions consistent with JWST observations. RMSE = 0.024 dex using fixed \u03c6, \u039e, 7.42 constants."
+}

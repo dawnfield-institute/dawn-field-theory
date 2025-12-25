@@ -1,0 +1,13 @@
+{
+  "experiment": "26_log2_phi_anomaly",
+  "timestamp": "2025-12-24T17:06:13.673394",
+  "description": "Investigating why log(2) and 1/\u03c6 beat \u03c0 in linear-phase variance",
+  "key_findings": {
+    "two_different_formulas": true,
+    "linear_phase": "exp(i\u03b8n) - small \u03b8 gives low variance",
+    "log_phase": "exp(i\u03b3 log n) - detects Riemann zeros",
+    "reconciliation": "\u03c0 matters for log-phase (zeros), not linear-phase",
+    "new_observation": "log(2) \u2248 1/\u03c6 \u2248 2/3 cluster may be significant"
+  },
+  "chain_status": "\u03c0 \u2192 \u03c6 chain remains valid via log-phase mechanism"
+}

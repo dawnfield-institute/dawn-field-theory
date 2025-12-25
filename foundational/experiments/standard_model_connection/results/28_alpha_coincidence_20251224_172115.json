@@ -1,0 +1,26 @@
+{
+  "timestamp": "20251224_172115",
+  "alpha_formula_value": 0.007297310889743783,
+  "alpha_codata": 0.0072973525692838015,
+  "error_ppm": 5.7115974077431835,
+  "same_structure": {
+    "total_formulas": 11554,
+    "matches_6ppm": 1,
+    "matches_100ppm": 1,
+    "matches_1000ppm": 6,
+    "p_6ppm": 8.655011251514626e-05
+  },
+  "information": {
+    "bits_matched": 17.420606650046796,
+    "bits_freedom": 17,
+    "total_combinations": 131072,
+    "expected_random_matches": 0.786432
+  },
+  "constrained": {
+    "total_formulas": 1640599,
+    "matches_6ppm": 3,
+    "probability": 1.8286004075340774e-06,
+    "p_value": 0.9968524874164706
+  },
+  "verdict": "NOT SIGNIFICANT (p \u2265 0.05)"
+}

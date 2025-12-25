@@ -1,0 +1,21 @@
+{
+  "experiment": "27_two_thirds_cluster",
+  "timestamp": "2025-12-24T17:10:23.856768",
+  "koide_verification": {
+    "Q": 0.6666605114773855,
+    "target": 0.6666666666666666,
+    "error_percent": 0.0009232783921730991
+  },
+  "cluster_members": {
+    "2/3": 0.6666666666666666,
+    "1/phi": 0.6180339887498948,
+    "log(2)": 0.6931471805599453
+  },
+  "hypothesis": "2/3 is universal partition constant for recursive conservation systems",
+  "connections": [
+    "Fibonacci",
+    "Koide formula",
+    "She-Leveque turbulence",
+    "M\u00f6bius coherence"
+  ]
+}

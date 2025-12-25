@@ -1,0 +1,28 @@
+{
+  "title": "Symbolic Cognition Collapse Interpretability",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "AGPL-3.0",
+  "creators": [
+    {
+      "name": "Groom, Peter"
+    }
+  ],
+  "keywords": [
+    "Dawn Field Theory",
+    "infodynamics",
+    "PAC framework",
+    "Dawn Field Theory",
+    "AI"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/dawn-field-institute/dawn-field-theory",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "version": "1.0",
+  "description": "We explore real-time interpretability through a framework grounded in symbolic entropy collapse (SEC) that treats representational stabilization events as the primitive unit of explanation. Our Symbolic Collapse Benchmarking Framework (SCBF) instruments TinyCIMM-Euler and TinyCIMM-Planck architectures with bifractal lineage tracking, activation ancestry stability, semantic attractor density, and phase alignment metrics--investigating cognition diagnostics beyond post-hoc attribution.\n\nComputational studies across mathematical reasoning tasks suggest measurable artificial mathematical intuition: **prime number pattern discovery** (historically ~0% random baseline), **golden ratio convergence** (\u03c6 = 1.618033988749895), **polynomial coefficient reconstruction**, and **meta-mathematical pattern recognition**. SCBF metrics indicate **>95% activation ancestry stability** with statistically significant correlation (**r = 0.847, p < 0.001**) between entropy collapse and mathematical insight formation. Dynamic network evolution (40\u2192139 neurons) corresponds to mathematical complexity while enabling interpretability through real-time collapse tracking.\n\nThese preliminary results suggest mechanistic, temporally grounded narratives of artificial cognition formation, examined across five mathematical domains with **<5% online adaptation overhead**. Cross-architecture validation indicates **3.2x higher activation ancestry stability** and **2.1x more coherent phase alignment** compared to traditional neural architectures, warranting investigation of collapse-aware interpretability as an approach to understanding artificial mathematical reasoning.\n\n*Note: All experimental results are reproducible through open-source implementations with comprehensive validation protocols documented in the Dawn Field Theory codebase. This work represents ongoing theoretical and computational exploration. While our results are promising, they require independent validation, peer review, and extension "
+}

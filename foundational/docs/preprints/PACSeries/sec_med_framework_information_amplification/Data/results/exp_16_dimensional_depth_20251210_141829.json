@@ -1,0 +1,281 @@
+{
+  "lattice_2d": [
+    {
+      "grid_size": 30,
+      "factor_base_size": 3,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.4677777777777778,
+      "error_vs_phi": -0.150256210972117,
+      "S_mean": 0.5,
+      "I_mean": 0.0,
+      "E_mean": 0.0
+    },
+    {
+      "grid_size": 30,
+      "factor_base_size": 5,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.48,
+      "error_vs_phi": -0.1380339887498948,
+      "S_mean": 0.44,
+      "I_mean": 6.172839506187497e-06,
+      "E_mean": -0.004648148148141818
+    },
+    {
+      "grid_size": 30,
+      "factor_base_size": 6,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.55,
+      "error_vs_phi": -0.06803398874989475,
+      "S_mean": 0.4,
+      "I_mean": 1.0288065843619255e-05,
+      "E_mean": 0.02313271604938168
+    },
+    {
+      "grid_size": 30,
+      "factor_base_size": 8,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.53,
+      "error_vs_phi": -0.08803398874989476,
+      "S_mean": 0.35,
+      "I_mean": 1.5432098765424828e-05,
+      "E_mean": 0.034699074074072946
+    },
+    {
+      "grid_size": 30,
+      "factor_base_size": 9,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.5333333333333333,
+      "error_vs_phi": -0.08470065541656147,
+      "S_mean": 0.3333333333333333,
+      "I_mean": 1.7146776406038394e-05,
+      "E_mean": 0.028261316872428128
+    },
+    {
+      "grid_size": 30,
+      "factor_base_size": 10,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.5366666666666666,
+      "error_vs_phi": -0.08136732208322817,
+      "S_mean": 0.32,
+      "I_mean": 1.8518518518516604e-05,
+      "E_mean": 0.04163888888888855
+    },
+    {
+      "grid_size": 30,
+      "factor_base_size": 12,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.5566666666666666,
+      "error_vs_phi": -0.06136732208322815,
+      "S_mean": 0.3,
+      "I_mean": 2.0576131687238324e-05,
+      "E_mean": 0.046265432098762896
+    },
+    {
+      "grid_size": 30,
+      "factor_base_size": 15,
+      "n_gaussian_primes": 760,
+      "frac_E_positive": 0.42777777777777776,
+      "error_vs_phi": -0.19025621097211703,
+      "S_mean": 0.2622222222222222,
+      "I_mean": -0.0007181069958847739,
+      "E_mean": -0.09614197530864156
+    }
+  ],
+  "recursion_analysis": {
+    "clustering": {
+      "2": {
+        "n_clusters": 2,
+        "within_cluster_variance": 0.35506313224946684,
+        "centroids": [
+          -0.7989333711916009,
+          0.8072214616527004
+        ]
+      },
+      "3": {
+        "n_clusters": 3,
+        "within_cluster_variance": 0.1975293457115553,
+        "centroids": [
+          -1.2216355682300026,
+          -0.0002783245399416634,
+          1.2172949153098611
+        ]
+      },
+      "4": {
+        "n_clusters": 4,
+        "within_cluster_variance": 0.12952184877062517,
+        "centroids": [
+          -1.5336995972010512,
+          -0.4932984815388989,
+          0.4114798949912756,
+          1.4597888191452506
+        ]
+      },
+      "5": {
+        "n_clusters": 5,
+        "within_cluster_variance": 0.09290158072012802,
+        "centroids": [
+          -1.7059186876786772,
+          -0.7591822397001172,
+          0.0007403583432746496,
+          0.7524637022294984,
+          1.6801108032338847
+        ]
+      }
+    },
+    "size_sequences": {
+      "powers_of_3": {
+        "sizes_tested": [
+          3,
+          9,
+          27
+        ],
+        "results": [
+          {
+            "size": 3,
+            "frac_E_positive": 0.7333893355734229,
+            "error_vs_phi": 0.1153553468235281,
+            "abs_error": 0.1153553468235281
+          },
+          {
+            "size": 9,
+            "frac_E_positive": 0.6187447497899916,
+            "error_vs_phi": 0.000710761040096819,
+            "abs_error": 0.000710761040096819
+          },
+          {
+            "size": 27,
+            "frac_E_positive": 0.5704228169126765,
+            "error_vs_phi": -0.0476111718372183,
+            "abs_error": 0.0476111718372183
+          }
+        ],
+        "best_size": 9,
+        "best_error": 0.000710761040096819
+      },
+      "powers_of_2": {
+        "sizes_tested": [
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "results": [
+          {
+            "size": 2,
+            "frac_E_positive": 0.6666666666666666,
+            "error_vs_phi": 0.04863267791677184,
+            "abs_error": 0.04863267791677184
+          },
+          {
+            "size": 4,
+            "frac_E_positive": 0.6763070522820913,
+            "error_vs_phi": 0.05827306353219652,
+            "abs_error": 0.05827306353219652
+          },
+          {
+            "size": 8,
+            "frac_E_positive": 0.6262250490019601,
+            "error_vs_phi": 0.008191060252065285,
+            "abs_error": 0.008191060252065285
+          },
+          {
+            "size": 16,
+            "frac_E_positive": 0.5913436537461498,
+            "error_vs_phi": -0.026690335003744958,
+            "abs_error": 0.026690335003744958
+          },
+          {
+            "size": 32,
+            "frac_E_positive": 0.5646225849033961,
+            "error_vs_phi": -0.05341140384649867,
+            "abs_error": 0.05341140384649867
+          }
+        ],
+        "best_size": 8,
+        "best_error": 0.008191060252065285
+      },
+      "fibonacci": {
+        "sizes_tested": [
+          2,
+          3,
+          5,
+          8,
+          13,
+          21
+        ],
+        "results": [
+          {
+            "size": 2,
+            "frac_E_positive": 0.6666666666666666,
+            "error_vs_phi": 0.04863267791677184,
+            "abs_error": 0.04863267791677184
+          },
+          {
+            "size": 3,
+            "frac_E_positive": 0.7333893355734229,
+            "error_vs_phi": 0.1153553468235281,
+            "abs_error": 0.1153553468235281
+          },
+          {
+            "size": 5,
+            "frac_E_positive": 0.6641065642625705,
+            "error_vs_phi": 0.04607257551267574,
+            "abs_error": 0.04607257551267574
+          },
+          {
+            "size": 8,
+            "frac_E_positive": 0.6262250490019601,
+            "error_vs_phi": 0.008191060252065285,
+            "abs_error": 0.008191060252065285
+          },
+          {
+            "size": 13,
+            "frac_E_positive": 0.5995439817592704,
+            "error_vs_phi": -0.01849000699062442,
+            "abs_error": 0.01849000699062442
+          },
+          {
+            "size": 21,
+            "frac_E_positive": 0.5759030361214449,
+            "error_vs_phi": -0.0421309526284499,
+            "abs_error": 0.0421309526284499
+          }
+        ],
+        "best_size": 8,
+        "best_error": 0.008191060252065285
+      }
+    },
+    "optimal_k_clusters": 5
+  },
+  "predictions": {
+    "power_law": {
+      "formula": "D^(D - base_dim)",
+      "prediction_1d": 9,
+      "observed_1d": 9,
+      "prediction_2d": 3,
+      "prediction_0d": 27
+    },
+    "linear": {
+      "formula": "D * (D - base_dim + 1)",
+      "prediction_1d": 9,
+      "observed_1d": 9,
+      "prediction_2d": 6,
+      "prediction_0d": 12
+    },
+    "fibonacci": {
+      "formula": "Fib(D + base_dim + 3)",
+      "prediction_1d": 8,
+      "observed_1d": 9,
+      "prediction_2d": 5,
+      "prediction_0d": 13
+    }
+  },
+  "validation": {
+    "1d_matches_9": true,
+    "2d_matches_power_law": false,
+    "2d_matches_linear": false,
+    "clustering_suggests_3": false,
+    "powers_of_3_best": true
+  }
+}

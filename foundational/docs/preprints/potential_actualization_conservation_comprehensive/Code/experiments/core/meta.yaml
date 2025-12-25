@@ -1,0 +1,23 @@
+schema_version: '2.0'
+directory_name: core
+description: Core computational engines for information amplification measurement
+  and analysis. Includes compression algorithms, text generation utilities, SEC-based
+  weight interpretation, and foundational measurement infrastructure for empirical
+  validation of emergent information generation.
+semantic_scope:
+- compression_analysis
+- sec_weight_interpretation
+- measurement_infrastructure
+- text_generation
+- amplification_testing
+- symbolic_entropy_collapse
+- computational_core
+files:
+- __init__.py
+- baseline_generator.py
+- compression_engine.py
+- measurement.py
+- quantum_validator.py
+- sec_field_engine.py
+- text_generator.py
+child_directories: []

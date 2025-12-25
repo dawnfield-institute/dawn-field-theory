@@ -1,0 +1,61 @@
+{
+  "experiment_id": "exp_01_baseline_validation",
+  "timestamp": "20251209_201520",
+  "git_commit": "3a089726b832",
+  "parameters": {
+    "n_max": 50000,
+    "factor_base": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29
+    ],
+    "window": 101,
+    "lambda": 0.99
+  },
+  "results": {
+    "baseline_prime_rate": 0.20528821152846113,
+    "n_analyzed": 24999,
+    "enrichment": {
+      "positive_I": {
+        "0.01": 0.6746987951807228,
+        "0.05": 0.6541232986389112,
+        "0.1": 0.6430572228891557
+      },
+      "abs_I": {
+        "0.01": 0.0,
+        "0.05": 0.5044035228182546,
+        "0.1": 0.5766306522609044
+      },
+      "abs_E": {
+        "0.01": 0.5502008032128514,
+        "0.05": 0.41793434747798236,
+        "0.1": 0.37374949979991995
+      }
+    },
+    "phi_threshold": {
+      "frac_E_positive": 0.6101844073762951,
+      "error_vs_phi": -0.007849581373599701,
+      "prime_rate_E_pos": 0.28392552773043134,
+      "prime_rate_E_neg": 0.08219599794766547,
+      "ratio": 3.4542500221386434
+    }
+  },
+  "validation": {
+    "top_1pct_above_60pct": true,
+    "top_10pct_above_60pct": true,
+    "enrichment_above_3x": true,
+    "phi_within_1pct": "True"
+  },
+  "dependencies": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.15.2"
+  }
+}

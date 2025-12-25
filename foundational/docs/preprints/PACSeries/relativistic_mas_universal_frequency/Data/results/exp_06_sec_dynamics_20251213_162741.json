@@ -1,0 +1,138 @@
+{
+  "experiment": "exp_06_sec_dynamics",
+  "timestamp": "2025-12-13T16:27:41.682609",
+  "purpose": "Verify SEC phase transition mechanism for SMBH enhancement",
+  "theoretical_basis": {
+    "L_plus": 2.95,
+    "L_minus": 1.84,
+    "run_ratio": 1.6032608695652175,
+    "run_ratio_error_pct": 0.913028977598376,
+    "k_equilibrium": 2.0
+  },
+  "test_1_scaling": {
+    "results": [
+      {
+        "z": 0,
+        "k_level": 2.40056993614698,
+        "run_ratio": 1.4693679319246935,
+        "duty_cycle": 0.5950380714547578,
+        "enhancement": 0.9627918242139867
+      },
+      {
+        "z": 2,
+        "k_level": 0.24120854892136645,
+        "run_ratio": 2.4704181976452735,
+        "duty_cycle": 0.7118502892018853,
+        "enhancement": 1.1517979628300925
+      },
+      {
+        "z": 5,
+        "k_level": 0.03225473356984199,
+        "run_ratio": 2.5977949018853246,
+        "duty_cycle": 0.7220519714795366,
+        "enhancement": 1.1683046314977599
+      },
+      {
+        "z": 8,
+        "k_level": 0.00962446406993478,
+        "run_ratio": 2.6119784138547852,
+        "duty_cycle": 0.7231434174234787,
+        "enhancement": 1.1700706281319413
+      },
+      {
+        "z": 10,
+        "k_level": 0.0052785011658231795,
+        "run_ratio": 2.6147110951030266,
+        "duty_cycle": 0.7233527179102268,
+        "enhancement": 1.1704092834333617
+      },
+      {
+        "z": 12,
+        "k_level": 0.0031999113153384773,
+        "run_ratio": 2.6160190941025134,
+        "duty_cycle": 0.723452787726997,
+        "enhancement": 1.1705711997981438
+      },
+      {
+        "z": 15,
+        "k_level": 0.0017171458950657748,
+        "run_ratio": 2.6169525571410586,
+        "duty_cycle": 0.7235241590256223,
+        "enhancement": 1.1706866809851408
+      },
+      {
+        "z": 20,
+        "k_level": 0.0007596924379131842,
+        "run_ratio": 2.6175554912332317,
+        "duty_cycle": 0.7235702389573856,
+        "enhancement": 1.170761239880933
+      }
+    ],
+    "duty_equilibrium": 0.6180339887498949
+  },
+  "test_2_asymptotes": {
+    "z_0": {
+      "k": 2.40056993614698,
+      "run_ratio": 1.4693679319246935,
+      "duty_cycle": 0.5950380714547578,
+      "enhancement": 0.9627918242139867
+    },
+    "z_50": {
+      "k": 5.304934252903237e-05,
+      "run_ratio": 2.6180005724153705,
+      "duty_cycle": 0.7236042449455994,
+      "enhancement": 1.170816262725684
+    },
+    "max_enhancement": 1.6180339887498947,
+    "asymptote_low_ok": 1.0,
+    "asymptote_bounded_ok": 1.0
+  },
+  "test_3_seeds": {
+    "results": [
+      {
+        "name": "UHZ-1",
+        "z": 10.073,
+        "enhancement": 1.1704173501377513,
+        "log_seed_eddington": 2.992122463598643,
+        "log_seed_sec": 2.22390191909963,
+        "physical": "DC seed"
+      },
+      {
+        "name": "GN-z11",
+        "z": 10.603,
+        "enhancement": 1.170470035577338,
+        "log_seed_eddington": 1.9975947624360386,
+        "log_seed_sec": 1.2812105920781178,
+        "physical": "Stellar OK"
+      },
+      {
+        "name": "CEERS-1019",
+        "z": 8.68,
+        "enhancement": 1.1702175057123048,
+        "log_seed_eddington": 1.4345677346060153,
+        "log_seed_sec": 0.49574461146548426,
+        "physical": "Stellar OK"
+      },
+      {
+        "name": "GLASS-z12",
+        "z": 12.5,
+        "enhancement": 1.1705978556721646,
+        "log_seed_eddington": 2.652122688167778,
+        "log_seed_sec": 2.08098199771571,
+        "physical": "DC seed"
+      }
+    ],
+    "n_physical": 4,
+    "n_total": 4
+  },
+  "test_4_mechanism": {
+    "run_ratio_equilibrium": 1.618033988749895,
+    "duty_equilibrium": 0.6180339887498949,
+    "run_ratio_z10": 2.618033988749895,
+    "duty_z10": 0.7236067977499789,
+    "enhancement_z10": 1.1708203932499368,
+    "mechanism": "Duty cycle change from run-length asymmetry"
+  },
+  "success": true,
+  "conclusion": "SEC dynamics CORRECTED. Run ratio \u03c6^\u0394k increases, but enhancement is from DUTY CYCLE = R/(R+1). At z=10: run ratio = 2.6\u00d7, but duty cycle enhancement = 1.17\u00d7. This is MODEST acceleration, not magic. 4/4 seed masses are physical (stellar/DC)."
+}

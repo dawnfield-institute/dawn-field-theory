@@ -1,0 +1,45 @@
+{
+  "created": "2025-12-20T12:05:26.448456",
+  "files": [
+    {
+      "path": "CITATION.md",
+      "size": 524,
+      "sha256": "ab895d839bc97ba39df16f6020230850ae32c9018bfb31be947664987bf14202"
+    },
+    {
+      "path": "Code\\reproduce.py",
+      "size": 1542,
+      "sha256": "6aa84b3a89a74207843480c4b7d43ded596dae10e000e2397fbd09cd939c87d0"
+    },
+    {
+      "path": "Code\\requirements.txt",
+      "size": 29,
+      "sha256": "a5f970ab390ee008df119c8afd34294344f9b59a02068da8d86afbe839b97eb5"
+    },
+    {
+      "path": "Code\\trace.yaml",
+      "size": 181,
+      "sha256": "79351676979d52a2c28cc0f49c9a14bc2265090a66b2184dfa34ec27b8e7cbb9"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "meta.yaml",
+      "size": 564,
+      "sha256": "7ece2abe414491e98f660ef618e0610d8e080a16b917b148768a480517be0450"
+    },
+    {
+      "path": "paper.md",
+      "size": 57985,
+      "sha256": "034f045541d8be67ba2eef9fd6cbfeed65acb7a1e5ff225459887d55eed19d71"
+    },
+    {
+      "path": "README.md",
+      "size": 1354,
+      "sha256": "216c2f3ae3cbb04572ec6e7ce98be52c4a4357649d68e6422cd3af75c65c0595"
+    }
+  ]
+}

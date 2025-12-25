@@ -1,0 +1,84 @@
+{
+  "experiment_id": "exp_04_mobius_structure",
+  "timestamp": "2025-12-24T14:04:17.414263",
+  "core_hypothesis": "\u039e emerges from antiperiodic (M\u00f6bius) structure of prime gaps",
+  "tests": [
+    {
+      "name": "half_twist_symmetry",
+      "data": {
+        "6": {
+          "gap_size": 6,
+          "n_segments": 1933,
+          "mean_antiperiodic_correlation": 0.06466632177961718,
+          "std": 0.9979069429698818,
+          "is_antiperiodic": "False"
+        },
+        "8": {
+          "gap_size": 8,
+          "n_segments": 772,
+          "mean_antiperiodic_correlation": -0.2673499086906283,
+          "std": 0.6577425469899681,
+          "is_antiperiodic": "False"
+        },
+        "10": {
+          "gap_size": 10,
+          "n_segments": 916,
+          "mean_antiperiodic_correlation": 0.01110626881496216,
+          "std": 0.6198594138204028,
+          "is_antiperiodic": "False"
+        },
+        "12": {
+          "gap_size": 12,
+          "n_segments": 964,
+          "mean_antiperiodic_correlation": -0.037789415514597635,
+          "std": 0.5050884635467057,
+          "is_antiperiodic": "False"
+        },
+        "14": {
+          "gap_size": 14,
+          "n_segments": 484,
+          "mean_antiperiodic_correlation": -0.19413667792750233,
+          "std": 0.47010383970999686,
+          "is_antiperiodic": "False"
+        }
+      }
+    },
+    {
+      "name": "spectral_xi",
+      "data": {
+        "segment_length": 4096,
+        "integer_power": 59929.84653114965,
+        "half_integer_power": 0.0,
+        "power_ratio": 0.0,
+        "expected_xi": 1.0571428571428572,
+        "difference_from_xi": 1.0571428571428572
+      }
+    },
+    {
+      "name": "confluence_cycles",
+      "data": {
+        "n_cycles": 9125,
+        "mean_confluence_ratio": -0.1978791633975467,
+        "abs_mean": 1.2616430623362016,
+        "xi_comparison": 1.0571428571428572,
+        "xi_inv_comparison": 0.9459459459459459,
+        "difference_from_xi": 0.20450020519334444,
+        "difference_from_xi_inv": 0.31569711639025566
+      }
+    },
+    {
+      "name": "stress_at_primes",
+      "data": {
+        "mean_E_prime": 0.08090951539000654,
+        "mean_E_composite": -0.008561555915238906,
+        "ratio": -9.450328443921492,
+        "prime_positive_fraction": 0.8701787394167451
+      }
+    }
+  ],
+  "summary": {
+    "antiperiodic_gaps": [],
+    "spectral_xi_match": false,
+    "findings": []
+  }
+}

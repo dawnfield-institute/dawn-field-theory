@@ -1,0 +1,263 @@
+{
+  "experiment": "exp_04_predictions",
+  "timestamp": "2025-12-13T16:05:31.306622",
+  "purpose": "Generate falsifiable predictions for z > 15 observations",
+  "max_mass_predictions": [
+    {
+      "z": 10,
+      "cosmic_age_gyr": 0.47174927427085817,
+      "effective_age_gyr": 1.2833595803213682,
+      "time_dilation": 2.7204272487857994,
+      "pac_enhancement": 2.6147110951030266,
+      "n_efolds": 59.65536948752081,
+      "log_m_max": 11.0,
+      "k_min": 42.866684862923066
+    },
+    {
+      "z": 12,
+      "cosmic_age_gyr": 0.3671201216723257,
+      "effective_age_gyr": 0.9992352138490789,
+      "time_dilation": 2.7218208833046464,
+      "pac_enhancement": 2.616019094102513,
+      "n_efolds": 46.47143820317864,
+      "log_m_max": 11.0,
+      "k_min": 42.866684862923066
+    },
+    {
+      "z": 15,
+      "cosmic_age_gyr": 0.26876489524197666,
+      "effective_age_gyr": 0.7317972120735884,
+      "time_dilation": 2.722815460756996,
+      "pac_enhancement": 2.6169525571410586,
+      "n_efolds": 34.04584151901644,
+      "log_m_max": 11.0,
+      "k_min": 42.866684862923066
+    },
+    {
+      "z": 17,
+      "cosmic_age_gyr": 0.2251686368537624,
+      "effective_age_gyr": 0.6131698347566674,
+      "time_dilation": 2.7231582662859726,
+      "pac_enhancement": 2.6172742980873798,
+      "n_efolds": 28.53037597993087,
+      "log_m_max": 11.0,
+      "k_min": 42.866684862923066
+    },
+    {
+      "z": 20,
+      "cosmic_age_gyr": 0.1785915830669226,
+      "effective_age_gyr": 0.4863866522987148,
+      "time_dilation": 2.7234578693244123,
+      "pac_enhancement": 2.6175554912332317,
+      "n_efolds": 22.633672045991993,
+      "log_m_max": 11.0,
+      "k_min": 42.866684862923066
+    },
+    {
+      "z": 25,
+      "cosmic_age_gyr": 0.12951038441898347,
+      "effective_age_gyr": 0.35274730713986513,
+      "time_dilation": 2.723699020139422,
+      "pac_enhancement": 2.617781823905458,
+      "n_efolds": 16.416275361108177,
+      "log_m_max": 11.0,
+      "k_min": 42.866684862923066
+    },
+    {
+      "z": 30,
+      "cosmic_age_gyr": 0.0993683164447534,
+      "effective_age_gyr": 0.27066033170146236,
+      "time_dilation": 2.7238091716280968,
+      "pac_enhancement": 2.6178852068477076,
+      "n_efolds": 12.596580950075591,
+      "log_m_max": 11.0,
+      "k_min": 42.866684862923066
+    }
+  ],
+  "range_predictions": [
+    {
+      "z": 10,
+      "log_m_typical_low": 9.0,
+      "log_m_typical_high": 10.5,
+      "log_m_max": 11.0,
+      "k_range": [
+        42.96335749898958,
+        43.2836960106381
+      ]
+    },
+    {
+      "z": 12,
+      "log_m_typical_low": 9.0,
+      "log_m_typical_high": 10.5,
+      "log_m_max": 11.0,
+      "k_range": [
+        42.96335749898958,
+        43.2836960106381
+      ]
+    },
+    {
+      "z": 15,
+      "log_m_typical_low": 9.0,
+      "log_m_typical_high": 10.5,
+      "log_m_max": 11.0,
+      "k_range": [
+        42.96335749898958,
+        43.2836960106381
+      ]
+    },
+    {
+      "z": 17,
+      "log_m_typical_low": 9.0,
+      "log_m_typical_high": 10.5,
+      "log_m_max": 11.0,
+      "k_range": [
+        42.96335749898958,
+        43.2836960106381
+      ]
+    },
+    {
+      "z": 20,
+      "log_m_typical_low": 9.0,
+      "log_m_typical_high": 10.5,
+      "log_m_max": 11.0,
+      "k_range": [
+        42.96335749898958,
+        43.2836960106381
+      ]
+    }
+  ],
+  "ratio_predictions": [
+    {
+      "z": 0,
+      "mbh_mstar_ratio": 0.0025899622580231882,
+      "log_ratio": -2.586706564587356,
+      "cosmic_age_gyr": 13.796155235872646,
+      "matter_fraction": 0.315
+    },
+    {
+      "z": 2,
+      "mbh_mstar_ratio": 0.0656956853505485,
+      "log_ratio": -1.1824631523577207,
+      "cosmic_age_gyr": 3.272978732413758,
+      "matter_fraction": 0.9254624591947769
+    },
+    {
+      "z": 5,
+      "mbh_mstar_ratio": 0.09440241680049914,
+      "log_ratio": -1.0250168871671317,
+      "cosmic_age_gyr": 1.17010418865692,
+      "matter_fraction": 0.9900327391778828
+    },
+    {
+      "z": 8,
+      "mbh_mstar_ratio": 0.09829125896868976,
+      "log_ratio": -1.007485102213197,
+      "cosmic_age_gyr": 0.6374583287117109,
+      "matter_fraction": 0.997025877040639
+    },
+    {
+      "z": 10,
+      "mbh_mstar_ratio": 0.09905871217187143,
+      "log_ratio": -1.0041073224295316,
+      "cosmic_age_gyr": 0.47174927427085817,
+      "matter_fraction": 0.9983688534349328
+    },
+    {
+      "z": 12,
+      "mbh_mstar_ratio": 0.09942817161567483,
+      "log_ratio": -1.002490546751665,
+      "cosmic_age_gyr": 0.3671201216723257,
+      "matter_fraction": 0.9990111730230679
+    },
+    {
+      "z": 15,
+      "mbh_mstar_ratio": 0.09969268135240358,
+      "log_ratio": -1.001336722981539,
+      "cosmic_age_gyr": 0.26876489524197666,
+      "matter_fraction": 0.9994693727366036
+    },
+    {
+      "z": 17,
+      "mbh_mstar_ratio": 0.09978401409897256,
+      "log_ratio": -1.000939029300741,
+      "cosmic_age_gyr": 0.2251686368537624,
+      "matter_fraction": 0.9996272646393853
+    },
+    {
+      "z": 20,
+      "mbh_mstar_ratio": 0.09986390504130097,
+      "log_ratio": -1.0005914554576614,
+      "cosmic_age_gyr": 0.1785915830669226,
+      "matter_fraction": 0.9997652421261867
+    }
+  ],
+  "falsification_criteria": [
+    {
+      "id": "MAX_MASS_z15",
+      "statement": "No SMBH at z > 15 should exceed 10^11.0 M_sun",
+      "falsified_if": "Any confirmed SMBH at z > 15 with M > 10^11.5 M_sun",
+      "predicted_limit_log_m": 11.0
+    },
+    {
+      "id": "MAX_MASS_z17",
+      "statement": "No SMBH at z > 17 should exceed 10^11.0 M_sun",
+      "falsified_if": "Any confirmed SMBH at z > 17 with M > 10^11.5 M_sun",
+      "predicted_limit_log_m": 11.0
+    },
+    {
+      "id": "MAX_MASS_z20",
+      "statement": "No SMBH at z > 20 should exceed 10^11.0 M_sun",
+      "falsified_if": "Any confirmed SMBH at z > 20 with M > 10^11.5 M_sun",
+      "predicted_limit_log_m": 11.0
+    },
+    {
+      "id": "AGE_MASS_RELATION",
+      "statement": "SMBHs require minimum cosmic age proportional to log(M) - log(M_seed)",
+      "falsified_if": "SMBH with mass requiring growth time > cosmic age even with PAC enhancement"
+    },
+    {
+      "id": "RATIO_EVOLUTION",
+      "statement": "MBH/M* ratio should increase with z (from ~0.001 at z=0 to ~0.1 at z=15)",
+      "falsified_if": "Systematic evidence of MBH/M* DECREASING with z at z > 8"
+    },
+    {
+      "id": "K_QUANTIZATION",
+      "statement": "SMBH masses should cluster near \u03c6-spaced mass levels",
+      "falsified_if": "Large sample showing uniform mass distribution (no \u03c6-clustering)"
+    },
+    {
+      "id": "PAC_SEC_BALANCE",
+      "statement": "~80% of SMBHs should show net mass growth (PAC > SEC)",
+      "falsified_if": "Majority of high-z SMBHs showing mass loss signatures"
+    }
+  ],
+  "specific_predictions": [
+    {
+      "id": "PRED_01",
+      "prediction": "At z=15, max SMBH mass \u2248 10^11.0 M_sun",
+      "uncertainty": "\u00b10.5 dex"
+    },
+    {
+      "id": "PRED_02",
+      "prediction": "At z=20, max SMBH mass \u2248 10^11.0 M_sun",
+      "uncertainty": "\u00b10.5 dex"
+    },
+    {
+      "id": "PRED_03",
+      "prediction": "MBH/M* ratio at z=15 should be ~10x higher than z=0",
+      "uncertainty": "Factor of 3"
+    },
+    {
+      "id": "PRED_04",
+      "prediction": "SMBH mass function should show \u03c6-spaced peaks",
+      "uncertainty": "Requires sample of N>20 SMBHs"
+    },
+    {
+      "id": "PRED_05",
+      "prediction": "Time dilation factor 7.42 should affect AGN variability timescales",
+      "uncertainty": "Needs long-baseline monitoring"
+    }
+  ],
+  "success": true,
+  "conclusion": "PAC cosmology makes specific, falsifiable predictions for z > 15 SMBHs. Maximum mass at z=15: 10^11.0 M_sun. Maximum mass at z=20: 10^11.0 M_sun. Framework is testable with future JWST observations."
+}

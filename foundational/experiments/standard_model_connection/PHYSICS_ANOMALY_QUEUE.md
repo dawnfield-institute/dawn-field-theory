@@ -1,14 +1,66 @@
 # Physics Anomaly Alignment Queue
 
-**Date**: December 7, 2025  
-**Status**: Queued (after HuggingFace bifractal experiment)  
-**Priority**: High after ML validation completes
+**Date**: December 24, 2025 (Updated)  
+**Status**: Phase 0 Complete — π → φ mechanism provides foundation  
+**Priority**: High after mechanism integration
 
 ---
 
 ## Purpose
 
-Test PAC/Fibonacci framework predictions against published experimental data with unexplained features or anomalies. Unlike the HuggingFace experiment (computational), these are physics tests against external measurements.
+Test PAC/Fibonacci framework predictions against published experimental data with unexplained features or anomalies. The December 24, 2025 discovery of the π → φ chain now provides mechanistic grounding for these tests.
+
+---
+
+## NEW: Tier 0 — Mechanism Validation
+
+### 0.1 Extended Riemann Zero Detection
+**Status**: Ready to test ⭐ HIGH PRIORITY  
+**Data**: Odlyzko tables (first 100+ zeros)
+
+**The Connection**:
+Möbius coherence formula: $Z_\mu(\gamma) = |\sum_{n=1}^{N} \mu(n) e^{i\gamma \log n} n^{-1/2}|$
+
+**Already validated**: 20/20 zeros found with <0.06 average error
+
+**Test**:
+- Use formula to predict zeros 61-100 BEFORE checking Odlyzko tables
+- Document prediction accuracy for zeros not used in derivation
+- This is a genuine out-of-sample prediction
+
+**Success criterion**: <0.1 average error on zeros 61-100
+
+---
+
+### 0.2 π Uniqueness Test
+**Status**: Analytical work needed  
+**Data**: N/A (mathematical proof)
+
+**The Connection**:
+- π gives variance 0.0095 at σ=½
+- e gives variance 0.1815 (19× worse)
+- Why is π special?
+
+**Test**:
+- Systematic scan of transcendentals (√2, √3, e, γ, etc.)
+- Prove no other constant achieves comparable coherence
+- Connect to RH-critical line geometry
+
+---
+
+### 0.3 GUE/RMT Connection
+**Status**: Literature review + analysis  
+**Data**: Random matrix theory predictions
+
+**The Connection**:
+- Montgomery-Odlyzko law: Zeta zeros → GUE statistics
+- GUE kernel: sin²(πx)/(πx)²
+- π appears explicitly in RMT!
+
+**Test**:
+- Does our π-coherence connect to GUE sin kernel?
+- Can we derive 1/π² decay rate from GUE?
+- What does Möbius coherence look like in RMT language?
 
 ---
 
@@ -171,11 +223,16 @@ Koide Q = 2/3 = F₃/(F₃+F₂). Extensions exist:
 
 ## Implementation Order
 
-### Phase 1 (Concurrent with HuggingFace experiment)
+### Phase 0 (Immediate — December 2025)
+0. **Extended zero detection**: Predict zeros 61-100
+0. **π uniqueness**: Analytical proof attempt
+0. **GUE connection**: Literature review + analysis
+
+### Phase 1 (Concurrent with mechanism validation)
 1. **She-Leveque**: Write derivation attempt
 2. **Magic numbers**: Full table analysis script
 
-### Phase 2 (After HuggingFace results)
+### Phase 2 (After Phase 0/1 results)
 3. **W mass / cos(θ_W)**: Precision comparison
 4. **Muon g-2**: Generation structure analysis
 
@@ -200,7 +257,26 @@ For each test:
 
 ## References
 
+### Internal
 - Standard Model connection papers (this directory)
-- Empirical alignment documents (`foundational/docs/empirical_alignment/`)
-- GAIA validation results
+- Oscillation Attractor Dynamics (`../oscillation_attractor_dynamics/`)
+- SEC Prime Manifold (`../sec_prime_manifold/`)
+- PAC Confluence Xi (`../pac_confluence_xi/`)
+- Prime Harmonic Manifold (`../prime_harmonic_manifold/`)
+
+### External
 - PDG (Particle Data Group) for experimental values
+- Odlyzko zeta zero tables
+- Montgomery-Odlyzko law papers
+- GUE/RMT literature (Keating-Snaith, Berry-Keating)
+
+---
+
+## Changelog
+
+### December 24, 2025
+- Added Tier 0: Mechanism Validation (highest priority)
+- Added extended zero detection test (zeros 61-100)
+- Added π uniqueness test
+- Added GUE/RMT connection investigation
+- Updated implementation order to prioritize mechanism validation

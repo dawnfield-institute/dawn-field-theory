@@ -1,0 +1,5 @@
+schema_version: "2.0"
+description: "Core analysis functions for oscillation dynamics"
+semantic_scope: "implementation"
+files:
+  - "[oscillation_engine.py]": "Zero-crossing detection and oscillation analysis"

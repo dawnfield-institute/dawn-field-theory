@@ -1,0 +1,8 @@
+{
+  "experiment": "exp_01_recursion_test",
+  "timestamp": "2025-12-13T16:02:29.170655",
+  "hypothesis": "PAC recursion only holds for \u03c6 = (1+\u221a5)/2",
+  "test_1_true_phi": {
+    "phi": 1.618033988749895,
+    "recursion_error": 4.6213451375136356e-17,
+    "is_valid": 

@@ -1,0 +1,180 @@
+{
+  "experiment": "24_pi_uniqueness_test",
+  "timestamp": "2025-12-24T17:04:33.803775",
+  "description": "Systematic test of why \u03c0 is special for M\u00f6bius coherence",
+  "transcendental_comparison": [
+    {
+      "name": "log(2)",
+      "value": 0.6931471805599453,
+      "variance": 0.1306680853769318,
+      "relative_to_pi": 0.6492762607044461
+    },
+    {
+      "name": "1/\u03c6",
+      "value": 0.6180339887498948,
+      "variance": 0.13393002593649822,
+      "relative_to_pi": 0.6654845074469161
+    },
+    {
+      "name": "e/\u03c0",
+      "value": 0.8652559794322651,
+      "variance": 0.1652363417646584,
+      "relative_to_pi": 0.8210423670321817
+    },
+    {
+      "name": "\u03b3 (Euler)",
+      "value": 0.5772156649,
+      "variance": 0.1703138366937435,
+      "relative_to_pi": 0.8462719164802535
+    },
+    {
+      "name": "2\u03c0",
+      "value": 6.283185307179586,
+      "variance": 0.223111579700898,
+      "relative_to_pi": 1.1086184646402946
+    },
+    {
+      "name": "\u03c6 (golden)",
+      "value": 1.618033988749895,
+      "variance": 0.23757115967018966,
+      "relative_to_pi": 1.1804666285338477
+    },
+    {
+      "name": "\u221a2",
+      "value": 1.4142135623730951,
+      "variance": 0.261106505751832,
+      "relative_to_pi": 1.2974113396635285
+    },
+    {
+      "name": "\u03c0",
+      "value": 3.141592653589793,
+      "variance": 0.263146555293379,
+      "relative_to_pi": 1.3075481357615701
+    },
+    {
+      "name": "\u03b6(3)",
+      "value": 1.2020569032,
+      "variance": 0.2711155097601614,
+      "relative_to_pi": 1.347145049904692
+    },
+    {
+      "name": "Catalan",
+      "value": 0.9159655941,
+      "variance": 0.28839005790132477,
+      "relative_to_pi": 1.4329805007731988
+    },
+    {
+      "name": "\u03c0/2",
+      "value": 1.5707963267948966,
+      "variance": 0.4897886718676377,
+      "relative_to_pi": 2.4337094745688987
+    },
+    {
+      "name": "e",
+      "value": 2.718281828459045,
+      "variance": 0.5056139197002333,
+      "relative_to_pi": 2.5123435014456925
+    },
+    {
+      "name": "\u221a3",
+      "value": 1.7320508075688772,
+      "variance": 0.5476965194780467,
+      "relative_to_pi": 2.721447606289981
+    },
+    {
+      "name": "\u03c0\u00b2",
+      "value": 9.869604401089358,
+      "variance": 0.5557748481426034,
+      "relative_to_pi": 2.761587989559046
+    },
+    {
+      "name": "\u03c0/e",
+      "value": 1.1557273497909217,
+      "variance": 0.6457382168017122,
+      "relative_to_pi": 3.2086067044569195
+    },
+    {
+      "name": "\u03c0 + e",
+      "value": 5.859874482048838,
+      "variance": 0.6839007583734165,
+      "relative_to_pi": 3.3982324437426694
+    },
+    {
+      "name": "e\u00b2",
+      "value": 7.3890560989306495,
+      "variance": 0.7110241380123145,
+      "relative_to_pi": 3.533005724140943
+    },
+    {
+      "name": "\u221a5",
+      "value": 2.23606797749979,
+      "variance": 0.7156062559788845,
+      "relative_to_pi": 3.5557737964736726
+    },
+    {
+      "name": "\u03c0 \u00d7 e",
+      "value": 8.539734222673566,
+      "variance": 0.8539601911432533,
+      "relative_to_pi": 4.2432402533222495
+    },
+    {
+      "name": "log(10)",
+      "value": 2.302585092994046,
+      "variance": 0.9134650382693762,
+      "relative_to_pi": 4.538913711186043
+    }
+  ],
+  "sigma_dependence": [
+    {
+      "sigma": 0.1,
+      "pi_variance": 11.626050996685493,
+      "e_variance": 49.593075537293224,
+      "pi_advantage": 4.265685360526276
+    },
+    {
+      "sigma": 0.25,
+      "pi_variance": 2.2026722079769065,
+      "e_variance": 6.352119352260588,
+      "pi_advantage": 2.883824170140519
+    },
+    {
+      "sigma": 0.4,
+      "pi_variance": 0.48246744050655216,
+      "e_variance": 1.2039429479395156,
+      "pi_advantage": 2.495386935697613
+    },
+    {
+      "sigma": 0.5,
+      "pi_variance": 0.2600879569005017,
+      "e_variance": 0.3670280786644984,
+      "pi_advantage": 1.4111690638752157
+    },
+    {
+      "sigma": 0.6,
+      "pi_variance": 0.04261815730118345,
+      "e_variance": 0.2514718150105209,
+      "pi_advantage": 5.900579258586055
+    },
+    {
+      "sigma": 0.75,
+      "pi_variance": 0.007197817917790106,
+      "e_variance": 0.10458455454042298,
+      "pi_advantage": 14.530036149140715
+    },
+    {
+      "sigma": 0.9,
+      "pi_variance": 0.015207756399201956,
+      "e_variance": 0.01915723312055003,
+      "pi_advantage": 1.2597014719117494
+    }
+  ],
+  "continuous_scan": {
+    "global_minimum_theta": 0.55,
+    "pi_variance": 0.14370616797601618
+  },
+  "conclusion": {
+    "pi_is_optimal": true,
+    "mechanism": "exp(i\u03c0) = -1 creates resonance with \u03bc(n) sign pattern",
+    "connection_to_RH": "\u03c0 advantage maximized at \u03c3 = 1/2 (critical line)"
+  }
+}

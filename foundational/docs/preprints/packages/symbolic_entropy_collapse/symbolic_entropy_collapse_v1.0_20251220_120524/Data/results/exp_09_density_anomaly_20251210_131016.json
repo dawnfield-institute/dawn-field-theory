@@ -1,0 +1,51 @@
+{
+  "experiment_id": "exp_09_density_anomaly",
+  "timestamp": "20251210_131016",
+  "git_commit": "73346e4ca09a",
+  "parameters": {
+    "n_max": 500000,
+    "window_size": 1000
+  },
+  "results": {
+    "anomaly_prediction": {
+      "pearson_frac_vs_anomaly": -0.016736152109251293,
+      "p_value_frac": 0.7091887515020258,
+      "pearson_mean_E_vs_anomaly": -0.10945098217373876,
+      "p_value_mean_E": 0.014438249238591994,
+      "pearson_phi_dev_vs_anomaly": -0.016736152109251293,
+      "p_value_phi_dev": 0.7091887515020258,
+      "spearman_frac": -0.023079112685074527,
+      "p_spearman_frac": 0.6070255612973419,
+      "spearman_mean": -0.09428505203177438,
+      "p_spearman_mean": 0.03524094605027326,
+      "sign_accuracy": 0.5070140280561122,
+      "sign_accuracy_p_value": 0.3941360189095619,
+      "pct_positive_anomaly_when_high_frac": 0.5,
+      "pct_negative_anomaly_when_low_frac": 0.5070140280561122,
+      "prediction_significant": "False"
+    },
+    "extreme_anomalies": {
+      "mean_anomaly_high_phi_dev": -0.6297093819102676,
+      "mean_anomaly_low_phi_dev": 0.7098206776776604,
+      "mean_anomaly_mid": -0.15910105271481084,
+      "effect_size_high": -0.08840212753146837,
+      "effect_size_low": 0.16322390586741228,
+      "t_stat_high": -0.7318657150570717,
+      "p_value_high": 0.4645954867987353,
+      "t_stat_low": 1.1834863200596528,
+      "p_value_low": 0.23718222698312239,
+      "extremes_predictive": "False"
+    }
+  },
+  "validation": {
+    "anomaly_correlation_significant": "False",
+    "sign_prediction_above_chance": "False",
+    "extremes_predictive": "False",
+    "sec_predicts_density_anomalies": "False"
+  },
+  "dependencies": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.15.2"
+  }
+}

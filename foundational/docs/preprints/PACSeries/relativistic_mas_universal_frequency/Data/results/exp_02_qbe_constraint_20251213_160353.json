@@ -1,0 +1,184 @@
+{
+  "experiment": "exp_02_qbe_constraint",
+  "timestamp": "2025-12-13T16:03:53.457352",
+  "hypothesis": "QBE constrains allowed information-energy states",
+  "test_1_qpl": [
+    {
+      "z": 0,
+      "age_gyr": 13.796155235872646,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    },
+    {
+      "z": 2,
+      "age_gyr": 3.272978732413758,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    },
+    {
+      "z": 5,
+      "age_gyr": 1.17010418865692,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    },
+    {
+      "z": 8,
+      "age_gyr": 0.6374583287117109,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    },
+    {
+      "z": 10,
+      "age_gyr": 0.47174927427085817,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    },
+    {
+      "z": 12,
+      "age_gyr": 0.3671201216723257,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    },
+    {
+      "z": 15,
+      "age_gyr": 0.26876489524197666,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    },
+    {
+      "z": 20,
+      "age_gyr": 0.1785915830669226,
+      "qpl": 0.7071067811865475,
+      "lambda_qpl": 0.7071067811865475
+    }
+  ],
+  "test_2_jwst_qbe": {
+    "n_objects": 4,
+    "n_physical": 4,
+    "n_balanced": 4,
+    "all_physical": true,
+    "details": [
+      {
+        "z": 10.073,
+        "observed_log_mass": 7.5,
+        "k_from_mass": 11.962429916954164,
+        "t_cosmic_gyr": 0.37452527927137197,
+        "qpl": 0.7071067811865475,
+        "dE_dt": 70272836.89263067,
+        "required_dI_dt": -70272836.18552388,
+        "implied_growth_rate": 33816119.75295049,
+        "is_physical": 1.0,
+        "qbe_residual": 2.7995441520545228e-09,
+        "qbe_balanced": 1.0,
+        "name": "UHZ-1"
+      },
+      {
+        "z": 10.603,
+        "observed_log_mass": 6.2,
+        "k_from_mass": 18.182893473770328,
+        "t_cosmic_gyr": 0.349159327249647,
+        "qpl": 0.7071067811865475,
+        "dE_dt": 3521984.87213581,
+        "required_dI_dt": -3521984.165029029,
+        "implied_growth_rate": 1694820.4278846423,
+        "is_physical": 1.0,
+        "qbe_residual": 4.712377155158265e-10,
+        "qbe_balanced": 1.0,
+        "name": "GN-z11"
+      },
+      {
+        "z": 8.68,
+        "observed_log_mass": 6.95,
+        "k_from_mass": 14.594164498684078,
+        "t_cosmic_gyr": 0.45821156932636914,
+        "qpl": 0.7071067811865475,
+        "dE_dt": 19805576.402972132,
+        "required_dI_dt": -19805575.69586535,
+        "implied_growth_rate": 9530677.226963492,
+        "is_physical": 1.0,
+        "qbe_residual": 9.257461464073913e-10,
+        "qbe_balanced": 1.0,
+        "name": "CEERS-1019"
+      },
+      {
+        "z": 12.5,
+        "observed_log_mass": 6.0,
+        "k_from_mass": 19.13988786712666,
+        "t_cosmic_gyr": 0.27821364979759555,
+        "qpl": 0.7071067811865475,
+        "dE_dt": 2222222.2222222225,
+        "required_dI_dt": -2222221.5151154413,
+        "implied_growth_rate": 1069359.2709754186,
+        "is_physical": 1.0,
+        "qbe_residual": 4.712377155158265e-10,
+        "qbe_balanced": 1.0,
+        "name": "GLASS-z12"
+      }
+    ]
+  },
+  "test_3_allowed_range": [
+    {
+      "z": 8,
+      "min_log_m": 4.0,
+      "max_log_m": 10.0,
+      "range": 6.0
+    },
+    {
+      "z": 10,
+      "min_log_m": 4.0,
+      "max_log_m": 10.0,
+      "range": 6.0
+    },
+    {
+      "z": 12,
+      "min_log_m": 4.0,
+      "max_log_m": 10.0,
+      "range": 6.0
+    },
+    {
+      "z": 15,
+      "min_log_m": 4.0,
+      "max_log_m": 10.0,
+      "range": 6.0
+    },
+    {
+      "z": 20,
+      "min_log_m": 4.0,
+      "max_log_m": 10.0,
+      "range": 6.0
+    }
+  ],
+  "test_4_in_range": {
+    "n_in_range": 4,
+    "n_total": 4,
+    "all_in_range": true,
+    "details": [
+      {
+        "name": "UHZ-1",
+        "z": 10.073,
+        "log_m": 7.5,
+        "in_qbe_range": 1.0
+      },
+      {
+        "name": "GN-z11",
+        "z": 10.603,
+        "log_m": 6.2,
+        "in_qbe_range": 1.0
+      },
+      {
+        "name": "CEERS-1019",
+        "z": 8.68,
+        "log_m": 6.95,
+        "in_qbe_range": 1.0
+      },
+      {
+        "name": "GLASS-z12",
+        "z": 12.5,
+        "log_m": 6.0,
+        "in_qbe_range": 1.0
+      }
+    ]
+  },
+  "success": true,
+  "conclusion": "QBE provides physical constraints - all observations are QBE-consistent"
+}
