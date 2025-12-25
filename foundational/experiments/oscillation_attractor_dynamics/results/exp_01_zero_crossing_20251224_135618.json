@@ -1,0 +1,184 @@
+{
+  "experiment_id": "exp_01_zero_crossing_detection",
+  "hypothesis": "Primes are zero-crossings in oscillatory attractor dynamics",
+  "timestamp": "2025-12-24T13:56:11.174350",
+  "tests": [
+    {
+      "name": "baseline",
+      "parameters": {
+        "n_max": 100000,
+        "factor_base_size": 9,
+        "window": 13,
+        "lambda": 0.99,
+        "proximity": 2
+      },
+      "zero_crossings": {
+        "total_crossings": 45163,
+        "prime_crossings": 21414,
+        "crossing_fraction": 0.47414919292341073,
+        "expected_fraction": 0.4796,
+        "enrichment": 0.9886346808244594,
+        "p_value": 0.989929398251757
+      },
+      "oscillation": {
+        "damping_exponent": 0.005478186732693996,
+        "damping_error": 0.018167653508661525,
+        "r_squared": 8.731272952877678e-05,
+        "damping_vs_phi": 0.9911361076697824,
+        "damping_vs_xi_inv": 0.9942087740254378,
+        "damping_vs_pi2_inv": 0.945932464113014
+      },
+      "intervals": {
+        "crossing_gap_mean": 2.211992382976839,
+        "crossing_gap_std": 1.5338495394198224,
+        "crossing_gap_median": 2.0,
+        "prime_gap_mean": 10.425294546971118,
+        "prime_gap_std": 8.023647561431403,
+        "prime_gap_median": 8.0,
+        "gap_ratio": 0.21217552875947218,
+        "n_crossings": 45163,
+        "n_primes_in_range": 9592,
+        "ks_statistic": 0.25440517151496195,
+        "ks_pvalue": 0.0
+      }
+    },
+    {
+      "name": "scale_dependence",
+      "scales": [
+        {
+          "n_max": 10000,
+          "enrichment": 0.9267199747118499,
+          "p_value": 0.9999999996051115,
+          "crossing_fraction": 0.5694694244604317
+        },
+        {
+          "n_max": 50000,
+          "enrichment": 0.972322933251784,
+          "p_value": 0.9999906514783437,
+          "crossing_fraction": 0.4990933616381407
+        },
+        {
+          "n_max": 100000,
+          "enrichment": 0.9886346808244594,
+          "p_value": 0.989929398251757,
+          "crossing_fraction": 0.47414919292341073
+        },
+        {
+          "n_max": 200000,
+          "enrichment": 0.9997940453286792,
+          "p_value": 0.5236072112823422,
+          "crossing_fraction": 0.4495074027797742
+        }
+      ]
+    },
+    {
+      "name": "lambda_sweep",
+      "lambdas": [
+        {
+          "lambda": 0.9,
+          "total_crossings": 45685,
+          "enrichment": 0.987790069485324,
+          "p_value": 0.9939704322178994
+        },
+        {
+          "lambda": 0.95,
+          "total_crossings": 45299,
+          "enrichment": 0.9881060696124154,
+          "p_value": 0.9925588805407886
+        },
+        {
+          "lambda": 0.98,
+          "total_crossings": 45205,
+          "enrichment": 0.9886847600667111,
+          "p_value": 0.9896814308027043
+        },
+        {
+          "lambda": 0.99,
+          "total_crossings": 45163,
+          "enrichment": 0.9886346808244594,
+          "p_value": 0.989929398251757
+        },
+        {
+          "lambda": 0.995,
+          "total_crossings": 45153,
+          "enrichment": 0.9885765655597767,
+          "p_value": 0.9902363761168064
+        },
+        {
+          "lambda": 0.999,
+          "total_crossings": 45129,
+          "enrichment": 0.9883168574430992,
+          "p_value": 0.9915223001588623
+        }
+      ]
+    },
+    {
+      "name": "proximity_sensitivity",
+      "proximities": [
+        {
+          "proximity": 0,
+          "crossing_fraction": 0.15277993047406063,
+          "expected_fraction": 0.09592,
+          "enrichment": 1.5927849298796979,
+          "p_value": 4.381977e-318
+        },
+        {
+          "proximity": 1,
+          "crossing_fraction": 0.3325509819985386,
+          "expected_fraction": 0.28776,
+          "enrichment": 1.1556539546793807,
+          "p_value": 1.051305463130606e-95
+        },
+        {
+          "proximity": 2,
+          "crossing_fraction": 0.47414919292341073,
+          "expected_fraction": 0.4796,
+          "enrichment": 0.9886346808244594,
+          "p_value": 0.989929398251757
+        },
+        {
+          "proximity": 3,
+          "crossing_fraction": 0.581316564444346,
+          "expected_fraction": 0.67144,
+          "enrichment": 0.8657758912849189,
+          "p_value": 1.0
+        },
+        {
+          "proximity": 5,
+          "crossing_fraction": 0.7423111839337511,
+          "expected_fraction": 1.0,
+          "enrichment": 0.7423111839337511,
+          "p_value": 1.0
+        },
+        {
+          "proximity": 10,
+          "crossing_fraction": 0.926289219050993,
+          "expected_fraction": 1.0,
+          "enrichment": 0.926289219050993,
+          "p_value": 1.0
+        }
+      ]
+    },
+    {
+      "name": "manifold_comparison",
+      "all_numbers": {
+        "total_crossings": 45163,
+        "enrichment": 0.9886346808244594,
+        "p_value": 0.989929398251757
+      },
+      "odd_manifold": {
+        "total_crossings": 23018,
+        "enrichment": 0.8809895496508383,
+        "p_value": 1.0
+      }
+    }
+  ],
+  "summary": {
+    "baseline_enrichment": 0.9886346808244594,
+    "baseline_p_value": 0.989929398251757,
+    "hypothesis_supported": "False",
+    "key_findings": [
+      "No significant enrichment of primes at zero-crossings"
+    ]
+  }
+}

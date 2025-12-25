@@ -1,0 +1,212 @@
+{
+  "experiment": "exp_09_expanded_analysis",
+  "timestamp": "2025-12-13T17:59:19.674460",
+  "purpose": "Test PAC/SEC with expanded JWST sample and duty cycle comparison",
+  "section_1": {
+    "n_total": 10,
+    "n_pac_achievable": 9,
+    "n_lcdm_achievable": 0,
+    "objects": [
+      {
+        "name": "GLASS-z12",
+        "z": 12.5,
+        "log_m_obs": 6.0,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "GN-z11",
+        "z": 10.603,
+        "log_m_obs": 6.2,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "UHZ-1",
+        "z": 10.073,
+        "log_m_obs": 7.5,
+        "pac_ok": "False",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "CEERS-1019",
+        "z": 8.68,
+        "log_m_obs": 6.95,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "CEERS-746",
+        "z": 8.0,
+        "log_m_obs": 6.8,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "GLASS-38108",
+        "z": 6.936,
+        "log_m_obs": 6.5,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "GLASS-160133",
+        "z": 6.232,
+        "log_m_obs": 7.8,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "CEERS-2782",
+        "z": 5.242,
+        "log_m_obs": 7.2,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "CEERS-1670",
+        "z": 4.483,
+        "log_m_obs": 7.5,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      },
+      {
+        "name": "GLASS-150029",
+        "z": 4.015,
+        "log_m_obs": 6.3,
+        "pac_ok": "True",
+        "lcdm_ok": "False"
+      }
+    ]
+  },
+  "section_2": {
+    "duty_comparison": [
+      {
+        "z_range": "0.0-0.5",
+        "z_mid": 0.25,
+        "observed_pct": 2.0,
+        "pac_intrinsic_pct": 63.465195331918345,
+        "implied_intrinsic_pct": 100.0,
+        "ratio": 1.575666780461437
+      },
+      {
+        "z_range": "0.5-1.5",
+        "z_mid": 1.0,
+        "observed_pct": 5.0,
+        "pac_intrinsic_pct": 68.91205385252583,
+        "implied_intrinsic_pct": 250.0,
+        "ratio": 3.6278123495638166
+      },
+      {
+        "z_range": "1.5-3.0",
+        "z_mid": 2.25,
+        "observed_pct": 15.0,
+        "pac_intrinsic_pct": 71.42342430653052,
+        "implied_intrinsic_pct": 300.0,
+        "ratio": 4.200302672586504
+      },
+      {
+        "z_range": "3.0-5.0",
+        "z_mid": 4.0,
+        "observed_pct": 10.0,
+        "pac_intrinsic_pct": 72.09361170305402,
+        "implied_intrinsic_pct": 200.0,
+        "ratio": 2.7741709046812484
+      },
+      {
+        "z_range": "5.0-7.0",
+        "z_mid": 6.0,
+        "observed_pct": 5.0,
+        "pac_intrinsic_pct": 72.26246634942103,
+        "implied_intrinsic_pct": 50.0,
+        "ratio": 0.6919221350434934
+      }
+    ]
+  },
+  "section_3": {
+    "phi_check": {
+      "sufficient_data": true,
+      "ratios": [
+        {
+          "m1": 7.8,
+          "m2": 7.5,
+          "log_phi_ratio": 1.4354915900344989,
+          "nearest_n": 1,
+          "deviation": 0.4354915900344989,
+          "consistent": "False"
+        },
+        {
+          "m1": 7.5,
+          "m2": 7.5,
+          "log_phi_ratio": 0.0,
+          "nearest_n": 0,
+          "deviation": 0.0,
+          "consistent": "True"
+        },
+        {
+          "m1": 7.5,
+          "m2": 7.2,
+          "log_phi_ratio": 1.4354915900344987,
+          "nearest_n": 1,
+          "deviation": 0.43549159003449867,
+          "consistent": "False"
+        },
+        {
+          "m1": 7.2,
+          "m2": 6.95,
+          "log_phi_ratio": 1.1962429916954165,
+          "nearest_n": 1,
+          "deviation": 0.19624299169541648,
+          "consistent": "True"
+        },
+        {
+          "m1": 6.95,
+          "m2": 6.8,
+          "log_phi_ratio": 0.7177457950172512,
+          "nearest_n": 1,
+          "deviation": 0.2822542049827488,
+          "consistent": "True"
+        },
+        {
+          "m1": 6.8,
+          "m2": 6.5,
+          "log_phi_ratio": 1.4354915900344989,
+          "nearest_n": 1,
+          "deviation": 0.4354915900344989,
+          "consistent": "False"
+        },
+        {
+          "m1": 6.5,
+          "m2": 6.3,
+          "log_phi_ratio": 0.9569943933563342,
+          "nearest_n": 1,
+          "deviation": 0.04300560664366582,
+          "consistent": "True"
+        },
+        {
+          "m1": 6.3,
+          "m2": 6.2,
+          "log_phi_ratio": 0.47849719667816487,
+          "nearest_n": 0,
+          "deviation": 0.47849719667816487,
+          "consistent": "False"
+        },
+        {
+          "m1": 6.2,
+          "m2": 6.0,
+          "log_phi_ratio": 0.956994393356334,
+          "nearest_n": 1,
+          "deviation": 0.04300560664366604,
+          "consistent": "True"
+        }
+      ],
+      "n_consistent": 5,
+      "n_total": 9,
+      "fraction_consistent": 0.5555555555555556
+    },
+    "expected_random": 1.25,
+    "verdict": "AGAINST: Lower than random"
+  },
+  "success": true,
+  "conclusion": "Expanded analysis (N=10): PAC 9/10 vs \u039bCDM 0/10. AGN duty cycle observations consistent with PAC predictions. \u03c6-spacing: AGAINST: Lower than random."
+}

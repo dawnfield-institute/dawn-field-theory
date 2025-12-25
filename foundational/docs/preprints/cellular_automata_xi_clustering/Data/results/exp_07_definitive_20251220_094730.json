@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-12-20T09:47:28.743632",
+  "methodology": "exp_02 density-based P/A ratio",
+  "constants": {
+    "xi": 1.0571,
+    "phi": 1.618033988749895
+  },
+  "top_10_closest_to_xi": [
+    {
+      "rule": 1,
+      "ratio": 1.0404040404040404,
+      "distance": 0.016695959595959486,
+      "class": "CLASS_II"
+    },
+    {
+      "rule": 9,
+      "ratio": 1.0404040404040404,
+      "distance": 0.016695959595959486,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 33,
+      "ratio": 1.0404040404040404,
+      "distance": 0.016695959595959486,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 37,
+      "ratio": 1.0404040404040404,
+      "distance": 0.016695959595959486,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 41,
+      "ratio": 1.0404040404040404,
+      "distance": 0.016695959595959486,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 65,
+      "ratio": 1.0404040404040404,
+      "distance": 0.016695959595959486,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 97,
+      "ratio": 1.0404040404040404,
+      "distance": 0.016695959595959486,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 54,
+      "ratio": 1.0301507537688444,
+      "distance": 0.026949246231155577,
+      "class": "CLASS_IV"
+    },
+    {
+      "rule": 45,
+      "ratio": 1.0236425566018834,
+      "distance": 0.033457443398116515,
+      "class": "CLASS_III"
+    },
+    {
+      "rule": 101,
+      "ratio": 1.0236425566018834,
+      "distance": 0.033457443398116515,
+      "class": "UNKNOWN"
+    }
+  ],
+  "class_iv": {
+    "rules": [
+      54,
+      106,
+      110,
+      124,
+      137,
+      193
+    ],
+    "mean_ratio": 17.531556625551215,
+    "mean_distance_from_xi": 16.681580719418932,
+    "min_distance_from_xi": 0.026949246231155577
+  },
+  "binomial_test": {
+    "class_iv_in_top_10": 1,
+    "expected_by_chance": 0.234375,
+    "p_value": 0.21113909477898818,
+    "significant": "False"
+  },
+  "mann_whitney": {
+    "class_iv_mean_distance": 16.681580719418932,
+    "other_mean_distance": 36.300404386026614,
+    "u_statistic": 53.5,
+    "p_value": 0.14265425139725219,
+    "significant": "False"
+  },
+  "bootstrap_rule_110": {
+    "n_measurements": 120,
+    "mean": 0.8835120046568302,
+    "std": 0.19385200933990673,
+    "ci_95_lower": 0.8500528967060158,
+    "ci_95_upper": 0.9196797510929202,
+    "contains_xi": "False"
+  },
+  "monte_carlo": {
+    "threshold": 0.01,
+    "all_near_xi": 0,
+    "class_iv_near_xi": 0,
+    "prob_random": 0.0,
+    "prob_class_iv": 0.0,
+    "enrichment": 0.0
+  },
+  "definitive_finding": {
+    "top_4_rules": [
+      1,
+      9,
+      33,
+      37
+    ],
+    "top_4_class_iv_count": 0,
+    "probability_by_chance": 1.0,
+    "all_top_4_are_class_iv": false
+  },
+  "summary": {
+    "all_significant": "False",
+    "conclusion": "Needs investigation"
+  }
+}

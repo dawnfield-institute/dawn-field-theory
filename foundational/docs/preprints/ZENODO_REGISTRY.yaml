@@ -1,0 +1,132 @@
+# Zenodo Publication Registry
+# Tracks all papers uploaded to Zenodo with DOIs and version history
+
+schema_version: '2.0'
+updated: '2025-12-20'
+
+# Papers already on Zenodo
+published:
+  # PACSeries (bundled upload)
+  - slug: PACSeries
+    zenodo_record: 17295103
+    doi: 10.5281/zenodo.17295103
+    version: "1.0"
+    upload_date: "2025-12"
+    papers_included:
+      - xi_bounded_invariant_universal_balance_operator
+      - mobius_confluence_operator_temporal_emergence
+      - gaia_computational_validation_dawn_field_theory
+      - relativistic_mas_universal_frequency
+      - sec_med_framework_information_amplification
+
+  # Foundational Theory
+  - slug: symbolic_entropy_collapse
+    zenodo_record: 17024434
+    doi: 10.5281/zenodo.17024434
+    version: "1.0"
+    upload_date: "2025-12"
+    status: needs_update  # Check for changes
+
+  - slug: dawn_field_theory_synthesis
+    zenodo_record: 17024367
+    doi: 10.5281/zenodo.17024367
+    version: "1.0"
+    upload_date: "2025-12"
+    status: needs_update
+
+  - slug: dawn_field_theory_infodynamics
+    zenodo_record: 17041188
+    doi: 10.5281/zenodo.17041188
+    version: "1.0"
+    upload_date: "2025-12"
+    status: needs_update
+
+  # Cognitive Architecture & AI
+  - slug: cognition_index_protocol
+    zenodo_record: 17024220
+    doi: 10.5281/zenodo.17024220
+    version: "2.0"
+    upload_date: "2025-12"
+    status: current
+    note: "No code needed - protocol/methodology paper"
+
+  - slug: symbolic_cognition_collapse_interpretability
+    zenodo_record: 17024098
+    doi: 10.5281/zenodo.17024098
+    version: "1.0"
+    upload_date: "2025-12"
+    status: needs_update
+
+  - slug: resonant_symbolic_convergence_human_agent
+    zenodo_record: 17023921
+    doi: 10.5281/zenodo.17023921
+    version: "1.0"
+    upload_date: "2025-12"
+    status: current
+    note: "No code needed - framework paper"
+
+  # Mathematical & Engineering
+  - slug: recursive_mathematical_plasticity_entropy_architecture
+    zenodo_record: 17041249
+    doi: 10.5281/zenodo.17041249
+    version: "1.0"
+    upload_date: "2025-12"
+    status: current
+    note: "No code needed - theoretical architecture paper"
+
+  - slug: macro_emergence_dynamics_navier_stokes
+    zenodo_record: 17041215
+    doi: 10.5281/zenodo.17041215
+    version: "1.0"
+    upload_date: "2025-12"
+    status: needs_update
+
+# Papers NOT yet on Zenodo (need first upload)
+pending_upload:
+  # Tier 1 - High Priority (Validation Papers)
+  - slug: cellular_automata_xi_clustering
+    priority: 1
+    status: ready
+    has_code: true
+    has_data: true
+    experiment_count: 7
+    note: "NEW - Tier 1 validation p < 10^-7"
+
+  - slug: ml_validation_pythia_gpt2
+    priority: 1
+    status: needs_code
+    has_code: false
+    note: "NEW - Multi-model ML validation"
+
+  - slug: golden_ratio_prime_distribution
+    priority: 1
+    status: ready
+    has_code: true
+    has_data: true
+    experiment_count: 32
+    note: "NEW - Analytical + numerical proof"
+
+  # Tier 1 - Core Theory  
+  - slug: pac_necessity_proof
+    priority: 2
+    status: needs_code
+    has_code: false
+    note: "NEW - PAC theoretical foundation"
+
+  - slug: qbe_pac_unification
+    priority: 2
+    status: needs_code
+    has_code: false
+    note: "NEW - QBE-PAC bridge"
+
+  - slug: potential_actualization_conservation_comprehensive
+    priority: 2
+    status: needs_code
+    has_code: false
+    note: "NEW - Comprehensive PAC framework"
+
+  - slug: gaia_field_native_intelligence_comprehensive
+    priority: 3
+    status: needs_code
+    has_code: false
+    note: "NEW - GAIA comprehensive"

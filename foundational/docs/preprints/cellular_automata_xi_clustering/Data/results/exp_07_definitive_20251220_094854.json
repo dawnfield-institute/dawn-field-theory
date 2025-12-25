@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-12-20T09:48:35.464377",
+  "methodology": "PACEmbedder (entropy + MI + structure)",
+  "constants": {
+    "xi": 1.0571,
+    "phi": 1.618033988749895
+  },
+  "top_10_closest_to_xi": [
+    {
+      "rule": 124,
+      "ratio": 1.0578703573748742,
+      "distance": 0.0007703573748742976,
+      "class": "CLASS_IV"
+    },
+    {
+      "rule": 110,
+      "ratio": 1.0578703573748747,
+      "distance": 0.0007703573748747417,
+      "class": "CLASS_IV"
+    },
+    {
+      "rule": 137,
+      "ratio": 1.055308838542706,
+      "distance": 0.001791161457293855,
+      "class": "CLASS_IV"
+    },
+    {
+      "rule": 193,
+      "ratio": 1.0553088385427056,
+      "distance": 0.001791161457294299,
+      "class": "CLASS_IV"
+    },
+    {
+      "rule": 58,
+      "ratio": 1.0406408928564521,
+      "distance": 0.016459107143547813,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 114,
+      "ratio": 1.0406408928564521,
+      "distance": 0.016459107143547813,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 186,
+      "ratio": 1.0406408928564521,
+      "distance": 0.016459107143547813,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 242,
+      "ratio": 1.0406408928564521,
+      "distance": 0.016459107143547813,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 163,
+      "ratio": 1.0378839682941274,
+      "distance": 0.019216031705872494,
+      "class": "UNKNOWN"
+    },
+    {
+      "rule": 177,
+      "ratio": 1.0378839682941272,
+      "distance": 0.019216031705872716,
+      "class": "UNKNOWN"
+    }
+  ],
+  "class_iv": {
+    "rules": [
+      54,
+      106,
+      110,
+      124,
+      137,
+      193
+    ],
+    "mean_ratio": 5.393621993383587,
+    "mean_distance_from_xi": 4.552944816219266,
+    "min_distance_from_xi": 0.0007703573748742976
+  },
+  "binomial_test": {
+    "class_iv_in_top_10": 4,
+    "expected_by_chance": 0.234375,
+    "p_value": 5.6577284163703226e-05,
+    "significant": "True"
+  },
+  "mann_whitney": {
+    "class_iv_mean_distance": 4.552944816219266,
+    "other_mean_distance": 26.20443283791154,
+    "u_statistic": 27.5,
+    "p_value": 0.009160792913845814,
+    "significant": "True"
+  },
+  "bootstrap_rule_110": {
+    "n_measurements": 200,
+    "mean": 2.0203522482482525,
+    "std": 1.0755364721645937,
+    "ci_95_lower": 1.8723563893265347,
+    "ci_95_upper": 2.1685035337004135,
+    "contains_xi": "False"
+  },
+  "monte_carlo": {
+    "threshold": 0.01,
+    "all_near_xi": 4,
+    "class_iv_near_xi": 4,
+    "prob_random": 0.015625,
+    "prob_class_iv": 0.6666666666666666,
+    "enrichment": 42.666666393599996
+  },
+  "definitive_finding": {
+    "top_4_rules": [
+      124,
+      110,
+      137,
+      193
+    ],
+    "top_4_class_iv_count": 4,
+    "probability_by_chance": 8.581597028341696e-08,
+    "all_top_4_are_class_iv": true
+  },
+  "summary": {
+    "all_significant": true,
+    "conclusion": "Class IV rules cluster at \u039e with p < 10^-7"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2025-12-24",
+  "timestamp": "20251224_172121",
+  "author": "Dawn Field Institute",
+  "status": "PREDICTION (pre-measurement)",
+  "primary_prediction": {
+    "name": "Lambda from Fibonacci",
+    "formula": "\u03bb = F\u2081/F\u2086 = 1/8",
+    "value": 0.125,
+    "uncertainty": 0.003,
+    "derivation": "From m_H/v = F\u2081/F\u2083 implies \u03bb = (F\u2081/F\u2083)\u00b2/2 = 1/8"
+  },
+  "alternative_prediction": {
+    "name": "Lambda from golden ratio",
+    "formula": "\u03bb = 1/(2\u03c6\u00b3)",
+    "value": 0.11803398874989485,
+    "uncertainty": 0.002,
+    "derivation": "Pure golden ratio structure with doublet factor"
+  },
+  "sm_reference": {
+    "lambda_sm": 0.12909439857441693,
+    "formula": "\u03bb = m_H\u00b2/(2v\u00b2)",
+    "m_H": 125.11,
+    "v": 246.22
+  },
+  "experimental_status": {
+    "atlas_2024": "\u03bb/\u03bb_SM \u2208 [-0.4, 6.3] at 95% CL",
+    "cms_2024": "\u03bb/\u03bb_SM \u2208 [-1.2, 7.2] at 95% CL",
+    "lhc_run3_expected": "\u00b150% by 2027",
+    "hl_lhc_expected": "\u00b15% by 2035-2040"
+  },
+  "falsification_criterion": {
+    "description": "Prediction is falsified if HL-LHC measures \u03bb/\u03bb_SM significantly different from 0.97",
+    "primary_ratio": 0.9689922480620154,
+    "alternative_ratio": 0.9143230849156769
+  },
+  "predictions_table": [
+    {
+      "formula": "F\u2081/F\u2086 = 1/8",
+      "value": 0.125,
+      "error_vs_sm": 3.2
+    },
+    {
+      "formula": "y_t\u00b2/F\u2086",
+      "value": 0.12280723488046748,
+      "error_vs_sm": 4.870206425203797
+    },
+    {
+      "formula": "1/(2\u03c6\u00b3)",
+      "value": 0.11803398874989485,
+      "error_vs_sm": 8.567691508432313
+    },
+    {
+      "formula": "g\u00b2/F\u2084",
+      "value": 0.13245734128799022,
+      "error_vs_sm": 2.605026051254045
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "experiment": "23_extended_zero_detection",
+  "timestamp": "2025-12-24T17:04:10.343736",
+  "description": "Out-of-sample Riemann zero prediction (61-100)",
+  "method": "M\u00f6bius coherence: Z_\u03bc(\u03b3) = |\u03a3 \u03bc(n) exp(i\u03b3 log n) n^(-1/2)|",
+  "training_zeros": "1-20 (formula developed)",
+  "test_zeros": "61-100 (out-of-sample)",
+  "results": {
+    "matched_count": 40,
+    "total_zeros": 40,
+    "detection_rate": 1.0,
+    "average_error": 0.264440911799818,
+    "success_criterion_error": 0.1,
+    "success_criterion_rate": 0.8,
+    "success": 

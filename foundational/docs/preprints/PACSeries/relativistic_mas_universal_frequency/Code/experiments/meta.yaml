@@ -1,0 +1,9 @@
+schema_version: "2.0"
+description: "Experiment scripts for PAC cosmology validation"
+semantic_scope: "implementation"
+proficiency_level: "research"
+files:
+  - "[exp_01_recursion_test.py]": "Test that PAC recursion is load-bearing"
+  - "[exp_02_qbe_constraint.py]": "Test QBE constrains allowed states"
+  - "[exp_03_jwst_comparison.py]": "Compare predictions to JWST observations"
+  - "[exp_04_predictions.py]": "Generate falsifiable predictions for z>15"

@@ -1,0 +1,111 @@
+{
+  "experiment_id": "exp_02_prime_causality",
+  "timestamp": "2025-12-24T13:57:22.857990",
+  "tests": [
+    {
+      "name": "crossings_after_primes",
+      "n_primes": 17958,
+      "mean_lag": 2.181423321082526,
+      "median_lag": 2.0,
+      "std_lag": 1.4594974095525284,
+      "peak_lag": 1,
+      "histogram": [
+        8391,
+        3551,
+        2888,
+        1454,
+        1177,
+        238,
+        203,
+        41,
+        12,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "crossings_before_primes",
+      "n_primes": 17958,
+      "mean_lag": 2.1618777146675576,
+      "median_lag": 2.0,
+      "peak_lag": 1,
+      "histogram": [
+        8470,
+        3555,
+        2843,
+        1480,
+        1161,
+        219,
+        176,
+        46,
+        6,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "asymmetry",
+      "mean_after": 2.181423321082526,
+      "mean_before": 2.1618777146675576,
+      "asymmetry": -0.004500173083580166,
+      "causal": "False"
+    },
+    {
+      "name": "crossing_direction",
+      "positive_going": 2296,
+      "negative_going": 15662,
+      "positive_fraction": 0.1278538812785388,
+      "phi_comparison": 0.6180339887498948,
+      "difference_from_phi": 0.490180107471356
+    },
+    {
+      "name": "exact_coincidence",
+      "exact_matches": 13009,
+      "expected": 8120.970005,
+      "enrichment": 1.6019022348303822
+    }
+  ],
+  "summary": {
+    "asymmetry": -0.004500173083580166,
+    "causal_relationship": "False",
+    "key_finding": "No clear causal pattern"
+  }
+}

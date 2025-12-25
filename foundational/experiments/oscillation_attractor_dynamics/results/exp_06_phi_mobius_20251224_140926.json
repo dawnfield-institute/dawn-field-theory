@@ -1,0 +1,305 @@
+{
+  "experiment_id": "exp_06_phi_mobius_pairs",
+  "timestamp": "2025-12-24T14:09:24.741937",
+  "tests": [
+    {
+      "name": "phi_ratio_analysis",
+      "data": {
+        "n_mobius_pairs": 262,
+        "mean_ratio": 1.465775157181491,
+        "median_ratio": 1.2,
+        "std_ratio": 0.7498173588493919,
+        "near_phi_count": 47,
+        "near_one_count": 159,
+        "phi": 1.618033988749895,
+        "diff_from_phi": 0.15225883156840392,
+        "top_pairs": [
+          {
+            "pair": [
+              "4",
+              "6"
+            ],
+            "count_ab": 1026,
+            "count_ba": 1017,
+            "ratio": 1.008849557522124,
+            "diff_from_phi": 0.609184431227771,
+            "diff_from_1": 0.008849557522123908
+          },
+          {
+            "pair": [
+              "2",
+              "10"
+            ],
+            "count_ab": 864,
+            "count_ba": 855,
+            "ratio": 1.0105263157894737,
+            "diff_from_phi": 0.6075076729604212,
+            "diff_from_1": 0.010526315789473717
+          },
+          {
+            "pair": [
+              "2",
+              "4"
+            ],
+            "count_ab": 826,
+            "count_ba": 882,
+            "ratio": 1.0677966101694916,
+            "diff_from_phi": 0.5502373785804033,
+            "diff_from_1": 0.06779661016949157
+          },
+          {
+            "pair": [
+              "6",
+              "2"
+            ],
+            "count_ab": 716,
+            "count_ba": 740,
+            "ratio": 1.0335195530726258,
+            "diff_from_phi": 0.5845144356772691,
+            "diff_from_1": 0.033519553072625774
+          },
+          {
+            "pair": [
+              "6",
+              "12"
+            ],
+            "count_ab": 706,
+            "count_ba": 726,
+            "ratio": 1.028328611898017,
+            "diff_from_phi": 0.5897053768518778,
+            "diff_from_1": 0.028328611898017053
+          },
+          {
+            "pair": [
+              "6",
+              "8"
+            ],
+            "count_ab": 678,
+            "count_ba": 673,
+            "ratio": 1.0074294205052006,
+            "diff_from_phi": 0.6106045682446943,
+            "diff_from_1": 0.007429420505200568
+          },
+          {
+            "pair": [
+              "10",
+              "6"
+            ],
+            "count_ab": 640,
+            "count_ba": 640,
+            "ratio": 1.0,
+            "diff_from_phi": 0.6180339887498949,
+            "diff_from_1": 0.0
+          },
+          {
+            "pair": [
+              "8",
+              "10"
+            ],
+            "count_ab": 582,
+            "count_ba": 562,
+            "ratio": 1.0355871886120998,
+            "diff_from_phi": 0.5824468001377952,
+            "diff_from_1": 0.03558718861209975
+          },
+          {
+            "pair": [
+              "2",
+              "12"
+            ],
+            "count_ab": 527,
+            "count_ba": 562,
+            "ratio": 1.0664136622390892,
+            "diff_from_phi": 0.5516203265108057,
+            "diff_from_1": 0.06641366223908918
+          },
+          {
+            "pair": [
+              "8",
+              "4"
+            ],
+            "count_ab": 537,
+            "count_ba": 549,
+            "ratio": 1.0223463687150838,
+            "diff_from_phi": 0.5956876200348111,
+            "diff_from_1": 0.022346368715083775
+          }
+        ]
+      }
+    },
+    {
+      "name": "symmetric_asymmetric",
+      "data": {
+        "symmetric_count": 1668,
+        "mobius_count": 39736,
+        "orphan_count": 128,
+        "total": 41532,
+        "symmetric_fraction": 0.04016180294712511,
+        "mobius_fraction": 0.9567562361552537,
+        "orphan_fraction": 0.0030819608976211115,
+        "sym_to_mobius_ratio": 0.04197704852023354,
+        "sym_mob_diff_from_phi": 1.5760569402296614,
+        "sym_mob_diff_from_phi_inv": 0.5760569402296613,
+        "mobius_to_orphan_ratio": 310.4375,
+        "mob_orph_diff_from_phi": 308.8194660112501
+      }
+    },
+    {
+      "name": "fibonacci_enrichment",
+      "data": {
+        "fib_gaps_in_mobius": [
+          8,
+          2,
+          34
+        ],
+        "nonfib_gaps_in_mobius": 35,
+        "fib_in_all_gaps": [
+          8,
+          2,
+          34
+        ],
+        "enrichment": 1.2571428571428573,
+        "all_mobius_gaps": [
+          "2",
+          "4",
+          "6",
+          "8",
+          "10",
+          "12",
+          "14",
+          "16",
+          "18",
+          "20",
+          "22",
+          "24",
+          "26",
+          "28",
+          "30",
+          "32",
+          "34",
+          "36",
+          "38",
+          "40",
+          "42",
+          "44",
+          "46",
+          "48",
+          "50",
+          "52",
+          "54",
+          "56",
+          "58",
+          "60",
+          "62",
+          "64",
+          "66",
+          "68",
+          "70",
+          "72",
+          "78",
+          "112"
+        ]
+      }
+    },
+    {
+      "name": "imbalance_analysis",
+      "data": {
+        "mean_imbalance": 0.01528465895966296,
+        "std_imbalance": 0.21325855797978688,
+        "increasing_total": 19865,
+        "decreasing_total": 19871,
+        "inc_dec_ratio": 0.9996980524382265,
+        "diff_from_phi": 0.6183359363116684,
+        "diff_from_phi_inv": 0.3816640636883317,
+        "top_imbalanced": [
+          {
+            "pair": [
+              "12",
+              "58"
+            ],
+            "increasing_count": 1,
+            "decreasing_count": 7,
+            "imbalance": -0.75
+          },
+          {
+            "pair": [
+              "2",
+              "70"
+            ],
+            "increasing_count": 6,
+            "decreasing_count": 1,
+            "imbalance": 0.7142857142857143
+          },
+          {
+            "pair": [
+              "2",
+              "58"
+            ],
+            "increasing_count": 5,
+            "decreasing_count": 1,
+            "imbalance": 0.6666666666666666
+          },
+          {
+            "pair": [
+              "2",
+              "60"
+            ],
+            "increasing_count": 8,
+            "decreasing_count": 2,
+            "imbalance": 0.6
+          },
+          {
+            "pair": [
+              "22",
+              "48"
+            ],
+            "increasing_count": 4,
+            "decreasing_count": 1,
+            "imbalance": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "name": "scale_dependence",
+      "data": [
+        {
+          "n_max": 10000,
+          "n_gaps": 1224,
+          "inc_dec_ratio": 1.017825311942959,
+          "diff_from_phi": 0.6002086768069359
+        },
+        {
+          "n_max": 50000,
+          "n_gaps": 5128,
+          "inc_dec_ratio": 1.0159062369192131,
+          "diff_from_phi": 0.6021277518306818
+        },
+        {
+          "n_max": 100000,
+          "n_gaps": 9587,
+          "inc_dec_ratio": 1.015746285207363,
+          "diff_from_phi": 0.6022877035425318
+        },
+        {
+          "n_max": 200000,
+          "n_gaps": 17979,
+          "inc_dec_ratio": 1.0063202247191012,
+          "diff_from_phi": 0.6117137640307937
+        },
+        {
+          "n_max": 500000,
+          "n_gaps": 41533,
+          "inc_dec_ratio": 0.9996980524382265,
+          "diff_from_phi": 0.6183359363116684
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "findings": [
+      "Mean pair ratio 1.466 approaches \u03c6",
+      "Fibonacci gaps 1.3x enriched in M\u00f6bius pairs"
+    ]
+  }
+}

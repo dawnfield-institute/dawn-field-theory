@@ -1,0 +1,38 @@
+{
+  "timestamp": "20251224_173106",
+  "xi_theory": 1.0571198664289054,
+  "xi_ca": 1.0579,
+  "agreement_pct": 0.0737980238447348,
+  "connections": {
+    "\u039e (CA vs theory)": {
+      "ca_value": 1.0579,
+      "theory_value": 1.0571198664289054,
+      "error_pct": 0.0737980238447348
+    },
+    "sin\u00b2\u03b8_W": {
+      "pac_value": 0.23076923076923078,
+      "measured": 0.23122,
+      "error_pct": 0.19495252606574986
+    },
+    "\u03b1 (fine structure)": {
+      "formula": "2/(3\u03c6F\u2081\u2080) \u00d7 (1 - F\u2081\u2080/(4\u03c0F\u2087\u00b2))",
+      "pac_value": 0.007297310889743783,
+      "measured": 0.0072973525205055605,
+      "error_ppm": 5.704913070888655
+    },
+    "Koide Q": {
+      "pac_value": 0.6666666666666666,
+      "measured": 0.666661,
+      "error_pct": 0.0008500072250636509
+    },
+    "SEC frac(E>0)": {
+      "measured": 0.6184,
+      "target": 0.6180339887498948,
+      "error_pct": 0.05922186429349846
+    }
+  },
+  "predictions": {
+    "higgs_lambda": 0.125,
+    "higgs_error_pct": 3.2
+  }
+}

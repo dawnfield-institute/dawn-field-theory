@@ -1,0 +1,170 @@
+{
+  "created": "2025-12-20T12:05:18.311475",
+  "files": [
+    {
+      "path": "CITATION.md",
+      "size": 510,
+      "sha256": "d94c801cc102c5a35b8cddd777eec04ecd279a7dbbc227f184b16dc42a060abf"
+    },
+    {
+      "path": "Code\\core\\__pycache__\\ca_simulator.cpython-311.pyc",
+      "size": 11816,
+      "sha256": "6f15ef82a48f191964273ff001ac2e96c04e065b0db2209e26fcb38f2fef1541"
+    },
+    {
+      "path": "Code\\core\\__pycache__\\invariant_metrics.cpython-311.pyc",
+      "size": 25728,
+      "sha256": "f557828add080682f9a07b9cf8a9d3ee8594ef11f76bb46c3c8f4babc27c1991"
+    },
+    {
+      "path": "Code\\core\\__pycache__\\pac_embedding.cpython-311.pyc",
+      "size": 16070,
+      "sha256": "a39438d34f750000d2eb16d3b1d84029cea921065c1842fb5c058678e785ca84"
+    },
+    {
+      "path": "Code\\core\\ca_simulator.py",
+      "size": 8486,
+      "sha256": "6acfb9ebb20a786de9983521b243a378539a936b709b17aba1c27af0d6306a87"
+    },
+    {
+      "path": "Code\\core\\invariant_metrics.py",
+      "size": 19251,
+      "sha256": "dbf5e6a4dc241f98b34366d1d0b30f42f4b8fe2532d1c195e20c65caefc50db8"
+    },
+    {
+      "path": "Code\\core\\meta.yaml",
+      "size": 466,
+      "sha256": "264e2a13ca4225b8abe7c22996ac98aa3980009607e3b504b6c52f8158ff65d4"
+    },
+    {
+      "path": "Code\\core\\pac_embedding.py",
+      "size": 11597,
+      "sha256": "66db97391bafa5ba1c1705afc037c79fdcb2141738a115c4262c0b9d93736a68"
+    },
+    {
+      "path": "Code\\experiments\\exp_01_baseline_ca.py",
+      "size": 11214,
+      "sha256": "9e222775e45c164d057646b8aba93972734df6e0fb988d09d77219e490cdd960"
+    },
+    {
+      "path": "Code\\experiments\\exp_02_full_sweep.py",
+      "size": 13643,
+      "sha256": "2306cfff460ff2c7c1a6e94be7d64a4f90e75de392e96accb5036a0be03b17ed"
+    },
+    {
+      "path": "Code\\experiments\\exp_03_attractor_detection.py",
+      "size": 23081,
+      "sha256": "a21ac9f4b6d922b2e053390af22c7c7329cd069a95d1b37ecb4e712d67f39283"
+    },
+    {
+      "path": "Code\\experiments\\exp_04_xi_approach_dynamics.py",
+      "size": 18288,
+      "sha256": "a709abc6193beac8d69906a46f58221188c25f538e4493253a4dc001850e7801"
+    },
+    {
+      "path": "Code\\experiments\\exp_05_xi_necessity.py",
+      "size": 17394,
+      "sha256": "0dc17c8599bc82cfd5330a5b7db98e771c95b925f542bb82be9da0a68a590d81"
+    },
+    {
+      "path": "Code\\experiments\\exp_06_statistical_falsification.py",
+      "size": 18564,
+      "sha256": "87435607747686afd27b6bac985cbfa610fc4f396e147c4d772fb3a5926380cc"
+    },
+    {
+      "path": "Code\\experiments\\exp_07_definitive_proof.py",
+      "size": 11819,
+      "sha256": "9047547b57fc9593a17d388b3f74a17e92911344e3ff080b682aeedc5c7082f2"
+    },
+    {
+      "path": "Code\\experiments\\meta.yaml",
+      "size": 333,
+      "sha256": "de3eab18115d2d5a2febb704d3dfcdd6e4dc6cea562bddc2ede3a3f39d1ac9cb"
+    },
+    {
+      "path": "Code\\reproduce.py",
+      "size": 1542,
+      "sha256": "6aa84b3a89a74207843480c4b7d43ded596dae10e000e2397fbd09cd939c87d0"
+    },
+    {
+      "path": "Code\\requirements.txt",
+      "size": 224,
+      "sha256": "0dd3b1465a8392a788a27d28978a8862f2545950eb3e68c6bbef3b0b775a2edd"
+    },
+    {
+      "path": "Code\\trace.yaml",
+      "size": 5926,
+      "sha256": "8be4d5a4487260af5461b521c37ab6e4366c9284d2c3d0d4248376a22bd76663"
+    },
+    {
+      "path": "Data\\results\\exp_01_baseline_20251220_090456.json",
+      "size": 2189,
+      "sha256": "a665dded0c3b0e8b53f343a8a2ba668d7c077a69b127ac53a07b276097aaeea6"
+    },
+    {
+      "path": "Data\\results\\exp_01_baseline_20251220_090518.json",
+      "size": 4047,
+      "sha256": "9e8b3e191ce149252a1df58d7aecc28c6424ce2cdf9368c260895f1ec76d627f"
+    },
+    {
+      "path": "Data\\results\\exp_02_full_sweep_20251220_090809.json",
+      "size": 57562,
+      "sha256": "995f387858de1326b9145f624fcdaced8d2c8ef24a7b732331651580179bffc9"
+    },
+    {
+      "path": "Data\\results\\exp_03_attractor_detection_20251220_091658.json",
+      "size": 16781,
+      "sha256": "73fe3bd5765276f1528116cd55867a0857b09bd6ed7bc977352a53b1d4b668ce"
+    },
+    {
+      "path": "Data\\results\\exp_03_attractor_detection_20251220_091810.json",
+      "size": 16781,
+      "sha256": "7b777a5a8d3bb40eba3a37cf34a73b5c3059ce553fd3c110833a4b0204ececb2"
+    },
+    {
+      "path": "Data\\results\\exp_04_xi_approach_20251220_093058.json",
+      "size": 35764,
+      "sha256": "0f694a5a89f5d1c31e8cc176f6cf5126a012081e090cfde6b0191716ad959aeb"
+    },
+    {
+      "path": "Data\\results\\exp_05_xi_necessity_20251220_094456.json",
+      "size": 70715,
+      "sha256": "b4c54b15cccdd8493636d674e7e1f620448899653eec43377bb17b009c545e9a"
+    },
+    {
+      "path": "Data\\results\\exp_06_falsification_20251220_094603.json",
+      "size": 2877,
+      "sha256": "2f444a640b6137795f4df7f3772f3a506b56ae96cf04e2d3c7c79e7af17cecb8"
+    },
+    {
+      "path": "Data\\results\\exp_07_definitive_20251220_094730.json",
+      "size": 2929,
+      "sha256": "5b9f5a52e0a50c31c865191776932d3bac1d12bfef210a23b890c534483f2758"
+    },
+    {
+      "path": "Data\\results\\exp_07_definitive_20251220_094854.json",
+      "size": 3029,
+      "sha256": "3de7fd7966c77cbfdae353f4f906a284cc60316e4105e95b192d0b8eb49e9fc5"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "meta.yaml",
+      "size": 549,
+      "sha256": "b40b574dc84dc6a65c025cfeb55e14948aa3f7f50d856637cc150bf06d878781"
+    },
+    {
+      "path": "paper.md",
+      "size": 17341,
+      "sha256": "7b63e101c1a7a01b3138beecedbb2781b93be009c8d159ccbe0989a7a718f690"
+    },
+    {
+      "path": "README.md",
+      "size": 1349,
+      "sha256": "9e90567245dda661542bbacedd513acd1c0f149b86db172bad5a6fafab468213"
+    }
+  ]
+}
