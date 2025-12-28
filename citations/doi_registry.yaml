@@ -1,0 +1,275 @@
+# DOI Registry for Dawn Field Theory
+# Canonical source of truth for all Zenodo publications
+# Updated: 2025-12-28
+
+schema_version: "1.0"
+last_updated: "2025-12-28"
+maintainer: "Peter Lorne Groom <peter@dawnfield.ca>"
+
+# =============================================================================
+# PUBLISHED PAPERS
+# =============================================================================
+
+published:
+  # ---------------------------------------------------------------------------
+  # Core Theory Papers
+  # ---------------------------------------------------------------------------
+  
+  - id: dawn_field_theory_synthesis
+    title: "From Cosmic Information Mining to Dawn Field Theory: A Unified Framework for Symbolic Entropy Collapse, Recursive Intelligence, and Field Dynamics"
+    short_title: "Dawn Field Theory Synthesis"
+    doi: "10.5281/zenodo.17024367"
+    zenodo_record: 17024367
+    url: "https://zenodo.org/records/17024367"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: core_theory
+    status: published
+    
+  - id: dawn_field_theory_infodynamics
+    title: "Collapse as Crystallization: Infodynamics, Recursive Balance, and the Dawn Field Theory"
+    short_title: "Dawn Field Theory Infodynamics"
+    doi: "10.5281/zenodo.17041188"
+    zenodo_record: 17041188
+    url: "https://zenodo.org/records/17041188"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: core_theory
+    status: published
+    
+  - id: symbolic_entropy_collapse
+    title: "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence"
+    short_title: "Symbolic Entropy Collapse (SEC)"
+    doi: "10.5281/zenodo.17024434"
+    zenodo_record: 17024434
+    url: "https://zenodo.org/records/17024434"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: core_theory
+    status: published
+
+  # ---------------------------------------------------------------------------
+  # Mathematical & Physics Papers
+  # ---------------------------------------------------------------------------
+  
+  - id: macro_emergence_dynamics_navier_stokes
+    title: "Macro Emergence Dynamics: Using Navier-Stokes Complexity as a Testbed for Bounded Symbolic Principles"
+    short_title: "MED Navier-Stokes"
+    doi: "10.5281/zenodo.17041215"
+    zenodo_record: 17041215
+    url: "https://zenodo.org/records/17041215"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: mathematical
+    status: published
+    
+  - id: recursive_mathematical_plasticity
+    title: "Recursive Mathematical Plasticity: Entropy Architecture"
+    short_title: "Recursive Mathematical Plasticity"
+    doi: "10.5281/zenodo.17041249"
+    zenodo_record: 17041249
+    url: "https://zenodo.org/records/17041249"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: mathematical
+    status: published
+    note: "Theoretical architecture paper - no code required"
+
+  # ---------------------------------------------------------------------------
+  # PAC Series Bundle
+  # ---------------------------------------------------------------------------
+  
+  - id: pac_series_bundle
+    title: "PAC Series: Validation Papers Bundle"
+    short_title: "PACSeries"
+    doi: "10.5281/zenodo.17295103"
+    zenodo_record: 17295103
+    url: "https://zenodo.org/records/17295103"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: validation
+    status: published
+    papers_included:
+      - xi_bounded_invariant_universal_balance_operator
+      - mobius_confluence_operator_temporal_emergence
+      - gaia_computational_validation_dawn_field_theory
+      - relativistic_mas_universal_frequency
+      - sec_med_framework_information_amplification
+
+  # ---------------------------------------------------------------------------
+  # Cognitive & AI Papers
+  # ---------------------------------------------------------------------------
+  
+  - id: cognition_index_protocol
+    title: "Cognition Index Protocol (CIP): Demonstrable Machine Comprehension Through Structured Repository Intelligence"
+    short_title: "Cognition Index Protocol"
+    doi: "10.5281/zenodo.17024220"
+    zenodo_record: 17024220
+    url: "https://zenodo.org/records/17024220"
+    version: "2.0"
+    upload_date: "2025-12"
+    category: cognitive
+    status: published
+    note: "Protocol/methodology paper - no code required"
+    
+  - id: symbolic_cognition_collapse_interpretability
+    title: "Symbolic Cognition and Collapse-Aware Interpretability in Neural Systems"
+    short_title: "Symbolic Cognition Collapse"
+    doi: "10.5281/zenodo.17024098"
+    zenodo_record: 17024098
+    url: "https://zenodo.org/records/17024098"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: cognitive
+    status: published
+    
+  - id: resonant_symbolic_convergence
+    title: "Resonant Symbolic Convergence: A Framework for Human-Agent Co-Computational Ecology"
+    short_title: "Human-Agent Resonance"
+    doi: "10.5281/zenodo.17023921"
+    zenodo_record: 17023921
+    url: "https://zenodo.org/records/17023921"
+    version: "1.0"
+    upload_date: "2025-12"
+    category: cognitive
+    status: published
+    note: "Framework paper - no code required"
+
+# =============================================================================
+# PENDING UPLOADS (December 28, 2025)
+# =============================================================================
+
+pending:
+  # ---------------------------------------------------------------------------
+  # Tier 1: High Priority Validation Papers
+  # ---------------------------------------------------------------------------
+  
+  - id: cellular_automata_xi_clustering
+    title: "Cellular Automata Edge-of-Chaos Rules Cluster at the Universal Balance Operator Ξ"
+    short_title: "CA Xi Clustering"
+    doi: null  # To be assigned
+    zenodo_record: null
+    version: "1.0"
+    category: validation
+    priority: 1
+    package: "cellular_automata_xi_clustering_v1.0_20251228_103333.zip"
+    has_code: true
+    has_data: true
+    has_figures: true
+    
+  - id: golden_ratio_prime_distribution
+    title: "The Golden Ratio in Prime Number Distribution: Fibonacci Resonance in Symbolic Entropy Collapse"
+    short_title: "Golden Ratio Primes"
+    doi: null
+    zenodo_record: null
+    version: "1.0"
+    category: validation
+    priority: 1
+    package: "golden_ratio_prime_distribution_v1.0_20251228_103344.zip"
+    has_code: true
+    has_data: true
+    has_figures: true
+    
+  - id: ml_validation_pythia_gpt2
+    title: "Machine Learning Validation of SEC/PAC Dynamics: Evidence from Pythia and GPT-2"
+    short_title: "ML Validation Pythia GPT2"
+    doi: null
+    zenodo_record: null
+    version: "1.0"
+    category: validation
+    priority: 1
+    package: "ml_validation_pythia_gpt2_v1.0_20251228_103345.zip"
+    has_code: true
+    has_data: true
+    has_figures: true
+
+  # ---------------------------------------------------------------------------
+  # Tier 2: Supporting Papers
+  # ---------------------------------------------------------------------------
+  
+  - id: pac_necessity_proof
+    title: "PAC Necessity Proof: The Golden Ratio as Universal Attractor"
+    short_title: "PAC Necessity Proof"
+    doi: null
+    zenodo_record: null
+    version: "1.0"
+    category: theoretical
+    priority: 2
+    package: "pac_necessity_proof_v1.0_20251228_122846.zip"
+    has_code: true
+    has_data: true
+    has_figures: false
+    
+  - id: qbe_pac_unification
+    title: "QBE-PAC Unification: The 0.02 Hz Bridge Between Legacy and Modern Frameworks"
+    short_title: "QBE-PAC Unification"
+    doi: null
+    zenodo_record: null
+    version: "1.0"
+    category: theoretical
+    priority: 2
+    package: "qbe_pac_unification_v1.0_20251228_122847.zip"
+    has_code: true
+    has_data: true
+    has_figures: true
+    
+  - id: gaia_field_native_intelligence
+    title: "Field-Native Intelligence: A Systematic Exploration of Learning Without Backpropagation Through Physics-Based Dynamics"
+    short_title: "GAIA Field Native Intelligence"
+    doi: null
+    zenodo_record: null
+    version: "1.0"
+    category: ai_architecture
+    priority: 2
+    package: "gaia_field_native_intelligence_comprehensive_v1.0_20251228_122848.zip"
+    has_code: true
+    has_data: true
+    has_figures: true
+    
+  - id: potential_actualization_conservation_comprehensive
+    title: "Potential-Actualization Conservation: A Unifying Mathematical Framework for Physics, Information Theory, and Intelligent Systems"
+    short_title: "PAC Comprehensive"
+    doi: null
+    zenodo_record: null
+    version: "1.0"
+    category: theoretical
+    priority: 2
+    package: "potential_actualization_conservation_comprehensive_v1.0_20251228_122849.zip"
+    has_code: true
+    has_data: true
+    has_figures: true
+
+# =============================================================================
+# VERSION UPDATES PENDING
+# =============================================================================
+
+pending_updates:
+  - id: dawn_field_theory_synthesis
+    current_doi: "10.5281/zenodo.17024367"
+    new_version: "2.0"
+    package: "dawn_field_theory_synthesis_v1.0_20251228_122856.zip"
+    update_notes: "Added reproducibility package with Code, Data, Figures"
+    
+  - id: dawn_field_theory_infodynamics
+    current_doi: "10.5281/zenodo.17041188"
+    new_version: "2.0"
+    package: "dawn_field_theory_infodynamics_v1.0_20251228_122857.zip"
+    update_notes: "Added reproducibility package with Code, Data, Figures"
+    
+  - id: macro_emergence_dynamics_navier_stokes
+    current_doi: "10.5281/zenodo.17041215"
+    new_version: "2.0"
+    package: "macro_emergence_dynamics_navier_stokes_v1.0_20251228_122857.zip"
+    update_notes: "Added reproducibility package with Code, Data, 9 Figures"
+
+# =============================================================================
+# REPOSITORY METADATA
+# =============================================================================
+
+repository:
+  name: "Dawn Field Theory"
+  url: "https://github.com/dawnfield-institute/dawn-field-theory"
+  license: "AGPL-3.0"
+  author: "Peter Lorne Groom"
+  affiliation: "Dawn Field Institute"
+  contact: "peter@dawnfield.ca"
