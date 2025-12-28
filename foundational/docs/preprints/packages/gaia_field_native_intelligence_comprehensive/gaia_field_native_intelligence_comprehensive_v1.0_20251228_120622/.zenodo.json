@@ -1,0 +1,32 @@
+{
+  "title": "GAIA: Field-Native Intelligence Through PAC-Governed Semantic Evolution",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "AGPL-3.0",
+  "creators": [
+    {
+      "name": "Groom, Peter"
+    }
+  ],
+  "keywords": [
+    "Dawn Field Theory",
+    "infodynamics",
+    "PAC framework",
+    "Dawn Field Theory",
+    "PAC",
+    "GAIA",
+    "Field-Native Intelligence",
+    "Oracle Distillation",
+    "Backprop-Free Learning"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/dawn-field-institute/dawn-field-theory",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "version": "1.0",
+  "description": "We present a comprehensive experimental exploration of **field-native intelligence**\u2014a computational approach where learning emerges from physics-based dynamics rather than gradient descent. Through 21 proof-of-concept experiments (POC-001 through POC-021), we investigate whether pattern encoding, attention, generation, and knowledge transfer can arise from field evolution equations, resonance phenomena, and conservation principles.\n\n**Core Investigation**: Can meaningful computation emerge without backpropagation? Our experiments suggest promising results: pattern encoding achieves 21/23 syntactic tests, resonance training reaches 0.83 semantic separation, field-native attention achieves 0.999 within-class similarity, and multi-oracle distillation demonstrates 74.9% oracle agreement without any gradient updates.\n\n**Key Findings**:\n- **POC-001 through POC-006**: Symbol grounding through field perturbations shows encouraging preliminary results\n- **POC-007 through POC-014**: Infrastructure for tiered memory, persistence, and continuous learning achieved 100% hit rate at 12.5x memory savings\n- **POC-016 through POC-021**: Knowledge transfer via PAC tree grafting achieved 100% structural validation (17/17 tests)\n\n**Multi-Oracle Integration**: Combining embeddings from GPT-2 (Radford et al., 2019), Pythia-70M (Biderman et al., 2023), Qwen2.5-1.5B (Alibaba Cloud), and SmolLM2-360M (HuggingFace) improved hit rates from 68.3% to 74.9% (+6.6%) with 3x faster learning in early epochs.\n\n**Disclaimer**: These findings represent preliminary computational explorations requiring independent validation, theoretical formalization, and comparison with established benchmarks. We present this work as an invitation for community investigation rather than established science.\n\n---"
+}

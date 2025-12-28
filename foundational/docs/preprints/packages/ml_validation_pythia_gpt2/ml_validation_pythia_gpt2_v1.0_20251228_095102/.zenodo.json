@@ -1,0 +1,28 @@
+{
+  "title": "Ml Validation Pythia Gpt2",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "AGPL-3.0",
+  "creators": [
+    {
+      "name": "Groom, Peter"
+    }
+  ],
+  "keywords": [
+    "Dawn Field Theory",
+    "infodynamics",
+    "PAC framework",
+    "Dawn Field Theory",
+    "PAC"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/dawn-field-institute/dawn-field-theory",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "version": "1.0",
+  "description": "We present external validation of SEC (Self-Energy Conservation) and PAC (Potential-Actualization Conservation) dynamics in production machine learning systems. Analysis of training dynamics across Pythia models (70M to 12B parameters) reveals that delta ratios converge toward the golden ratio \u03c6 at precisely **step 512**, with combined statistical significance **p = 0.0014**. \n\nComplementary experiments on GPT-2 demonstrate:\n- **Inference dynamics**: Attention entropy ratios stabilize at \u2248 1.0 (post-collapse equilibrium)\n- **Generation dynamics**: Token selection entropy falls below 1/\u03c6 (post-collapse regime)\n\nThese findings provide architecture-independent, training-independent evidence that SEC phase dynamics emerge in real-world neural network systems\u2014systems designed and trained with no knowledge of Dawn Field Theory.\n\n**Keywords:** SEC, PAC, transformer dynamics, Pythia, GPT-2, \u03c6-convergence, entropy collapse, external validation\n\n---"
+}

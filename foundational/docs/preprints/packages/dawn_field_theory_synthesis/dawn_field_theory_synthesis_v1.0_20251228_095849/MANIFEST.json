@@ -1,0 +1,110 @@
+{
+  "created": "2025-12-28T09:58:49.513022",
+  "files": [
+    {
+      "path": "CITATION.md",
+      "size": 501,
+      "sha256": "1ed5384ec3f86d783ae7ce1d74ae708fdba759834a29d3071bbd895af5a25633"
+    },
+    {
+      "path": "Code\\experiments\\core\\__init__.py",
+      "size": 542,
+      "sha256": "0f446579d3f4e1b8a18a6c266d4356c7c3adfc7ba0cf4203d90fc24b9ed57258"
+    },
+    {
+      "path": "Code\\experiments\\core\\baseline_generator.py",
+      "size": 5195,
+      "sha256": "68dea8062328235d19ad62440d98e7df8d7a001816e1cdad80d75ad012801174"
+    },
+    {
+      "path": "Code\\experiments\\core\\compression_engine.py",
+      "size": 2876,
+      "sha256": "806dced4a3e2dba09dde77b426eec5397daa68cae2c64d4db939a0c4155764f4"
+    },
+    {
+      "path": "Code\\experiments\\core\\measurement.py",
+      "size": 3026,
+      "sha256": "becb3ffb617350321c2485a589fd42924469c72948027b035bca030066323032"
+    },
+    {
+      "path": "Code\\experiments\\core\\meta.yaml",
+      "size": 726,
+      "sha256": "d68ef34b11759e20108275802c1e6831ba41d8b159947ebb8123312bce8f9730"
+    },
+    {
+      "path": "Code\\experiments\\core\\quantum_validator.py",
+      "size": 13772,
+      "sha256": "b7ffed9306e75058ab791a0417e4040f0630ca1c2972200f5803d328351d9275"
+    },
+    {
+      "path": "Code\\experiments\\core\\sec_field_engine.py",
+      "size": 14402,
+      "sha256": "e70e9ed6d393e0cd955e0320df5d72f021b1437f1b50a1c8552c0e0602e11769"
+    },
+    {
+      "path": "Code\\experiments\\core\\text_generator.py",
+      "size": 6295,
+      "sha256": "08800d97995aa7ebc153b8f4a3efd5a7713be2b4ef18066cfd61b37c26a8577e"
+    },
+    {
+      "path": "Code\\experiments\\exp_01_unified_amplification.py",
+      "size": 74045,
+      "sha256": "198423c511ac681b6fa68d50c5f928883ac8efe79c1d8b81ccec26b72f73a98a"
+    },
+    {
+      "path": "Code\\experiments\\results\\20251223_134822\\experiment_summary.txt",
+      "size": 1048,
+      "sha256": "3110a85c0630880876db8e11d7974f766876544df37832128ba05ac150b4236e"
+    },
+    {
+      "path": "Code\\experiments\\results\\20251223_134822\\unified_results_unified_1766512100.json",
+      "size": 20680,
+      "sha256": "94a17254424b4b36297c932c80c7986f84ce2ede8ed0a4589c774141983f9814"
+    },
+    {
+      "path": "Code\\experiments\\results\\20251223_134822\\visualizations\\amplification_comparison.png",
+      "size": 140250,
+      "sha256": "594c99b7c249218517a576a98f543359798a5c531d78a204b67dfdf87631a550"
+    },
+    {
+      "path": "Code\\experiments\\results\\20251223_134822\\visualizations\\quantum_metrics_radar.png",
+      "size": 405482,
+      "sha256": "de3514d700c3e0b639a52ccd733077128b730d570a956ea455b677f24e5eac03"
+    },
+    {
+      "path": "Code\\reproduce.py",
+      "size": 1542,
+      "sha256": "6aa84b3a89a74207843480c4b7d43ded596dae10e000e2397fbd09cd939c87d0"
+    },
+    {
+      "path": "Code\\requirements.txt",
+      "size": 29,
+      "sha256": "a5f970ab390ee008df119c8afd34294344f9b59a02068da8d86afbe839b97eb5"
+    },
+    {
+      "path": "Code\\trace.yaml",
+      "size": 3086,
+      "sha256": "c4e6e804f4bf2647518b7be009d40ef4951feef17f77039b40e1da5939348a94"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "meta.yaml",
+      "size": 534,
+      "sha256": "9f3639e68cbc6e27053ea86bac3f20f8ba8ea40d5de92b0402e77bca4155f666"
+    },
+    {
+      "path": "paper.md",
+      "size": 47896,
+      "sha256": "63398e9b4f0fb3b19d2b25b20c4864702ec3f1d5d4891af35b3aad37f8c73467"
+    },
+    {
+      "path": "README.md",
+      "size": 1344,
+      "sha256": "5027b560ec603cfaad0ccf8a14d4078bed1aff66239aa4b7f0c65088e0c85357"
+    }
+  ]
+}

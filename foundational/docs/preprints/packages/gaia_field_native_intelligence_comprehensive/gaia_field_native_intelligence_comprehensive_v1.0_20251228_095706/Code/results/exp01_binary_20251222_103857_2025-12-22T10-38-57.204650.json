@@ -1,0 +1,172 @@
+{
+  "experiment_id": "exp01_binary_20251222_103857",
+  "timestamp": "2025-12-22T10:38:57.204650",
+  "device": "cpu",
+  "parameters": {
+    "field_dims": [
+      64,
+      64
+    ],
+    "mass_squared": 0.1,
+    "dt": 0.01,
+    "xi_target": 1.0571
+  },
+  "encodings": [],
+  "metrics": {
+    "tests_passed": 5,
+    "tests_total": 5,
+    "test_results": [
+      {
+        "test": "distinctiveness",
+        "patterns_tested": 10,
+        "avg_distance": 1.2679999947547913,
+        "min_distance": 0.8017931580543518,
+        "min_pair": [
+          "0001",
+          "0101"
+        ],
+        "success": true
+      },
+      {
+        "test": "similarity",
+        "avg_similar_pair_sim": 0.616785429418087,
+        "avg_different_pair_sim": -0.32302590196855024,
+        "separation": 0.9398113313866372,
+        "success": true
+      },
+      {
+        "test": "evolution_stability",
+        "detailed_results": [
+          {
+            "pattern": "0101",
+            "steps": 10,
+            "correlation": 0.9999990463256836,
+            "energy_delta": 0.0024547576904296875,
+            "survived": true
+          },
+          {
+            "pattern": "0101",
+            "steps": 50,
+            "correlation": 0.999504029750824,
+            "energy_delta": 0.0546262264251709,
+            "survived": true
+          },
+          {
+            "pattern": "0101",
+            "steps": 100,
+            "correlation": 0.9932866096496582,
+            "energy_delta": 0.19360584020614624,
+            "survived": true
+          },
+          {
+            "pattern": "0101",
+            "steps": 200,
+            "correlation": 0.9364787340164185,
+            "energy_delta": 0.5708410739898682,
+            "survived": true
+          },
+          {
+            "pattern": "1010",
+            "steps": 10,
+            "correlation": 0.999998927116394,
+            "energy_delta": 0.0024547576904296875,
+            "survived": true
+          },
+          {
+            "pattern": "1010",
+            "steps": 50,
+            "correlation": 0.999459981918335,
+            "energy_delta": 0.05462634563446045,
+            "survived": true
+          },
+          {
+            "pattern": "1010",
+            "steps": 100,
+            "correlation": 0.9926614761352539,
+            "energy_delta": 0.19360703229904175,
+            "survived": true
+          },
+          {
+            "pattern": "1010",
+            "steps": 200,
+            "correlation": 0.9298403859138489,
+            "energy_delta": 0.5707858800888062,
+            "survived": true
+          },
+          {
+            "pattern": "1111",
+            "steps": 10,
+            "correlation": 0.9999964237213135,
+            "energy_delta": 0.004138469696044922,
+            "survived": true
+          },
+          {
+            "pattern": "1111",
+            "steps": 50,
+            "correlation": 0.9981114864349365,
+            "energy_delta": 0.08929753303527832,
+            "survived": true
+          },
+          {
+            "pattern": "1111",
+            "steps": 100,
+            "correlation": 0.9716014862060547,
+            "energy_delta": 0.28995758295059204,
+            "survived": true
+          },
+          {
+            "pattern": "1111",
+            "steps": 200,
+            "correlation": 0.6672732830047607,
+            "energy_delta": 0.6800824403762817,
+            "survived": true
+          },
+          {
+            "pattern": "0110",
+            "steps": 10,
+            "correlation": 0.9999986886978149,
+            "energy_delta": 0.0026842355728149414,
+            "survived": true
+          },
+          {
+            "pattern": "0110",
+            "steps": 50,
+            "correlation": 0.9993842244148254,
+            "energy_delta": 0.059447526931762695,
+            "survived": true
+          },
+          {
+            "pattern": "0110",
+            "steps": 100,
+            "correlation": 0.9915640950202942,
+            "energy_delta": 0.20788514614105225,
+            "survived": true
+          },
+          {
+            "pattern": "0110",
+            "steps": 200,
+            "correlation": 0.91804039478302,
+            "energy_delta": 0.5921681523323059,
+            "survived": true
+          }
+        ],
+        "survival_rate_100": 1.0,
+        "success": true
+      },
+      {
+        "test": "conservation",
+        "max_residual": 0.0,
+        "avg_residual": 0.0,
+        "success": true
+      },
+      {
+        "test": "determinism",
+        "pattern": "01010101",
+        "runs": 5,
+        "success": true
+      }
+    ]
+  },
+  "success": true,
+  "notes": "Binary pattern encoding baseline experiment"
+}

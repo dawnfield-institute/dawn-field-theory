@@ -2,7 +2,8 @@
 # Tracks all papers uploaded to Zenodo with DOIs and version history
 
 schema_version: '2.0'
-updated: '2025-12-20'
+updated: '2025-12-28'
+last_audit: '2025-12-28'
 
 # Papers already on Zenodo
 published:
@@ -83,50 +84,66 @@ published:
 
 # Papers NOT yet on Zenodo (need first upload)
 pending_upload:
-  # Tier 1 - High Priority (Validation Papers)
+  # Tier 1 - High Priority (Validation Papers) - READY NOW
   - slug: cellular_automata_xi_clustering
     priority: 1
     status: ready
     has_code: true
     has_data: true
+    has_figures: true
     experiment_count: 7
-    note: "NEW - Tier 1 validation p < 10^-7"
-
-  - slug: ml_validation_pythia_gpt2
-    priority: 1
-    status: needs_code
-    has_code: false
-    note: "NEW - Multi-model ML validation"
+    package: "cellular_automata_xi_clustering_v1.0_20251228_095048.zip"
+    note: "NEW - Tier 1 validation p < 10^-7 - UPLOAD FIRST"
 
   - slug: golden_ratio_prime_distribution
     priority: 1
     status: ready
     has_code: true
     has_data: true
+    has_figures: true
     experiment_count: 32
+    package: "golden_ratio_prime_distribution_v1.0_20251228_095054.zip"
     note: "NEW - Analytical + numerical proof"
 
-  # Tier 1 - Core Theory  
+  - slug: ml_validation_pythia_gpt2
+    priority: 1
+    status: ready
+    has_code: true
+    has_data: true
+    has_figures: true
+    experiment_count: 3
+    package: "ml_validation_pythia_gpt2_v1.0_20251228_095102.zip"
+    note: "NEW - Multi-model ML validation - READY FOR UPLOAD"
+
+  # Tier 2 - Need Data Relocation
   - slug: pac_necessity_proof
     priority: 2
-    status: needs_code
-    has_code: false
-    note: "NEW - PAC theoretical foundation"
+    status: needs_data_move
+    has_code: true
+    has_data: true  # In Code/results/, needs move to Data/results/
+    has_figures: false
+    note: "Copy Code/results/exp_26_pac_violation_20251222_094620.json → Data/results/"
 
   - slug: qbe_pac_unification
     priority: 2
-    status: needs_code
-    has_code: false
-    note: "NEW - QBE-PAC bridge"
+    status: needs_data_move
+    has_code: true
+    has_data: true  # In Code/results/, needs move to Data/results/
+    has_figures: true  # 1 figure
+    note: "Copy Code/results/exp_32_qbe_pac_unification_20251222_094825.json → Data/results/"
+
+  - slug: gaia_field_native_intelligence_comprehensive
+    priority: 2
+    status: needs_data_move
+    has_code: true
+    has_data: true  # In Code/results/, needs move to Data/results/
+    has_figures: true  # 22 figures
+    note: "Copy Code/results/*.json → Data/results/"
 
   - slug: potential_actualization_conservation_comprehensive
     priority: 2
-    status: needs_code
-    has_code: false
-    note: "NEW - Comprehensive PAC framework"
-
-  - slug: gaia_field_native_intelligence_comprehensive
-    priority: 3
-    status: needs_code
-    has_code: false
-    note: "NEW - GAIA comprehensive"
+    status: needs_data_move
+    has_code: true
+    has_data: true  # In Code/experiments/results/, needs move
+    has_figures: true  # 28 figures
+    note: "Copy Code/experiments/results/20251222_095505/* → Data/results/"

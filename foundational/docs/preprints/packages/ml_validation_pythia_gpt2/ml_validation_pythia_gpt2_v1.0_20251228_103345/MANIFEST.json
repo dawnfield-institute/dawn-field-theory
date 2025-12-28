@@ -1,0 +1,140 @@
+{
+  "created": "2025-12-28T10:33:45.996033",
+  "files": [
+    {
+      "path": "CITATION.md",
+      "size": 498,
+      "sha256": "eebf1af11a1173c873ff5c451b4460447fde459566b3e173c69747a6a78f9cbc"
+    },
+    {
+      "path": "Code\\experiments\\exp_01_pythia_phi_convergence.py",
+      "size": 9850,
+      "sha256": "0a20444ac5b0d14d3848632514ad022bb03338ef8a7379a1f0ee5eef314e1dc5"
+    },
+    {
+      "path": "Code\\experiments\\exp_02_gpt2_inference_dynamics.py",
+      "size": 14146,
+      "sha256": "04008101864519e72ec0f561d21f2ab3e63037c2aeb24ba54f8cfc0376f0a781"
+    },
+    {
+      "path": "Code\\experiments\\exp_03_gpt2_generation_dynamics.py",
+      "size": 11606,
+      "sha256": "f39dacad6baa11deeaf366160ff593602382555a0abc25fe8abe3757b910839d"
+    },
+    {
+      "path": "Code\\experiments\\meta.yaml",
+      "size": 1171,
+      "sha256": "8d80c5f984160f36e5d119774641935cc68327e4ead787e6335227db753d6699"
+    },
+    {
+      "path": "Code\\reproduce.py",
+      "size": 2038,
+      "sha256": "24dc5d92e8065ffc796fa79c34b4a9ee35d01c4fef2087798dc4005b6ccb066b"
+    },
+    {
+      "path": "Code\\requirements.txt",
+      "size": 292,
+      "sha256": "693fa541edc5e50efcf3b14a17eff17458b201d07065ec33967ad6488cf3d9b3"
+    },
+    {
+      "path": "Code\\results\\exp_27_gpt2_entropy_20251222_093918.json",
+      "size": 18308,
+      "sha256": "b16935bace90c96ed3c087c7e141a90fd14de62f62aade596cff4c0323511b56"
+    },
+    {
+      "path": "Code\\results\\exp_28_generation_sec_20251222_094451.json",
+      "size": 79839,
+      "sha256": "51576d4c55df676e5fcc945ee399bd93af277deb23127850452e3793ca0d972c"
+    },
+    {
+      "path": "Code\\trace.yaml",
+      "size": 1313,
+      "sha256": "68fbba422b7996fa6d37fae68e2f6ce3659718b96568d345e2fd3d4497229ba1"
+    },
+    {
+      "path": "Data\\results\\exp_27_gpt2_entropy_20251222_093918.json",
+      "size": 18308,
+      "sha256": "b16935bace90c96ed3c087c7e141a90fd14de62f62aade596cff4c0323511b56"
+    },
+    {
+      "path": "Data\\results\\exp_28_generation_sec_20251222_094451.json",
+      "size": 79839,
+      "sha256": "51576d4c55df676e5fcc945ee399bd93af277deb23127850452e3793ca0d972c"
+    },
+    {
+      "path": "Figures\\exp_29_frequency_spectra.png",
+      "size": 168201,
+      "sha256": "28fba40b69ed0578cbfdb87dcb7f124a8cd0a4a3726b1484beae02a483d70dc9"
+    },
+    {
+      "path": "Figures\\exp_30_pac_enhanced_spectra.png",
+      "size": 171526,
+      "sha256": "bffe3a2735701aeb62a293dfe2818b53effb8d6c92c21b9906f056da812a9f2c"
+    },
+    {
+      "path": "Figures\\exp_31_klein_gordon_spectra.png",
+      "size": 127406,
+      "sha256": "85ab8fe8e680dbe36783acc5adcbe637fe8dcac71898f6d2b3a7afb775a4b3b8"
+    },
+    {
+      "path": "Figures\\exp_32_qbe_frequency_derivation.png",
+      "size": 210870,
+      "sha256": "27ab83b331b73eaa3dd10f49f65f81a19cc3a56f8e47bd3258bee362fcb28d0e"
+    },
+    {
+      "path": "Figures\\fig1_lambda_scaling.png",
+      "size": 86422,
+      "sha256": "24f5c40eee16183037456e529c9e0bad92df25da4d380f42e33760b4db1620a6"
+    },
+    {
+      "path": "Figures\\fig2_chord_vocabulary.png",
+      "size": 61452,
+      "sha256": "5c029e3cc28563d7d06d627caa99aa1370d1101147bf188df1b3d80160f55172"
+    },
+    {
+      "path": "Figures\\fig3_gap_distribution.png",
+      "size": 53888,
+      "sha256": "161e6aa0210886ee59d4e5ac287bfe6d55b09001cbda72df4295a8b5abb09ac2"
+    },
+    {
+      "path": "Figures\\fig4_eigenvalue_spectrum.png",
+      "size": 95346,
+      "sha256": "823873522d470eec727aec112f4e4cc19d10ebdac6bcd74fc92c436f32648f22"
+    },
+    {
+      "path": "Figures\\fig5_decay_rate.png",
+      "size": 95982,
+      "sha256": "626da1b8dfac837f20b7cf53ece1698b8dcfda903ac5270e35767773db85bb67"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "MECHANISMS.md",
+      "size": 11952,
+      "sha256": "94d6c3b0ef48908500a7c4e2fb7a619e828c59d6331ea864352023582c1cec3d"
+    },
+    {
+      "path": "meta.yaml",
+      "size": 531,
+      "sha256": "1c3c5804cfede2104d3603ca01ef0bbd38ab5e0e8492dbf4f9b24390acd0a36d"
+    },
+    {
+      "path": "paper.md",
+      "size": 12004,
+      "sha256": "b8f59cfb736990ccec16d8e495ee17629342e65633d2640f83ac0d6c7ad8c484"
+    },
+    {
+      "path": "README.md",
+      "size": 1343,
+      "sha256": "954232d07036bfb02c41f21ce03654ff24069ec6d6840bc740c79ccebcd0782c"
+    },
+    {
+      "path": "UNIFIED_EVIDENCE.md",
+      "size": 16776,
+      "sha256": "66f952d098572c63630d36bb8de07c940cb4580fcca868223300d62e6c85c12d"
+    }
+  ]
+}

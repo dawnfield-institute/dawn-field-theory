@@ -1,0 +1,24 @@
+{
+  "experiment": "exp_26_pac_violation",
+  "timestamp": "2025-12-22T09:46:20.154092",
+  "hypothesis": "Breaking PAC breaks structure - PAC is necessary",
+  "parameters": {
+    "depth": 16,
+    "num_tests": 18
+  },
+  "results": [
+    {
+      "name": "PAC-compliant (\u03c6, 1:1)",
+      "parameters": {
+        "depth": 50,
+        "base": 1.618033988749895,
+        "a": 1.0,
+        "b": 1.0
+      },
+      "pac_deviation": {
+        "base_from_phi": 0.0,
+        "coeff_from_pac": 0.0,
+        "total": 0.0
+      },
+      "metrics": {
+        "converged": 
