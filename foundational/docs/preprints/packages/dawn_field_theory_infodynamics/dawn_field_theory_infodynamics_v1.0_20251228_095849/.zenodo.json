@@ -1,0 +1,32 @@
+{
+  "title": "Collapse as Crystallization: Infodynamics, Recursive Balance, and Dawn Field Theory",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "AGPL-3.0",
+  "creators": [
+    {
+      "name": "Groom, Peter"
+    }
+  ],
+  "keywords": [
+    "Dawn Field Theory",
+    "infodynamics",
+    "PAC framework",
+    "Dawn Field Theory",
+    "Infodynamics",
+    "Symbolic Entropy Collapse",
+    "Recursive Balance Field",
+    "Information Crystallization",
+    "CIM Legacy"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/dawn-field-institute/dawn-field-theory",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "version": "1.0",
+  "description": "Through computational exploration documented in this repository, we investigate Dawn Field Theory (DFT) as a potential unified framework for understanding the emergence of structure, intelligence, and cosmology through infodynamics and recursive balance. Our hypothesis suggests that information might serve not as a derivative of structure, but as its generative precursor--potentially driving the crystallization of order via recursive collapse events in dual energy and information fields. This preprint synthesizes the theoretical evolution from foundational legacy experiments (CIM-era brain, vCPU, and cosmo simulations) to the formalization of symbolic entropy collapse (SEC) and recursive balance fields (RBF).\n\nThrough computational validation studies--including quantum phenomena correspondence, biological evolution correlation, and working AI implementations--our preliminary results suggest that DFT may provide testable predictions across multiple domains. All theoretical claims and empirical results are directly linked to open-source models, simulation scripts, and reproducibility artifacts in the Dawn Field Theory codebase, with semantic hash citations for full transparency. By exploring potential connections between thermodynamics (see explicit Landauer\u2019s Principle and entropy-as-fuel discussion in Section 2.2), symbolic emergence, and field dynamics, DFT proposes a new perspective for investigating physics, cognition, and computation--inviting the scientific community to explore, validate, and extend this open, reproducible paradigm.\n\n*Note: This work represents computational exploration of theoretical possibilities. While our results are promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.*"
+}

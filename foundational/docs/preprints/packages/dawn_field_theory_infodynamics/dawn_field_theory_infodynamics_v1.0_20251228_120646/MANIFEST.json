@@ -1,0 +1,80 @@
+{
+  "created": "2025-12-28T12:06:46.898241",
+  "files": [
+    {
+      "path": "CITATION.md",
+      "size": 507,
+      "sha256": "b2edb6b24f0c051cbf4d47f1026f8cb665ad6e789c4f7bb8cbe8decec8876e0d"
+    },
+    {
+      "path": "Code\\experiments\\exp_01_brain_recursive_collapse.py",
+      "size": 3564,
+      "sha256": "e084e6324297235343a60f798b4c09f97a37a7538cab11a86c568ac8beadf309"
+    },
+    {
+      "path": "Code\\experiments\\exp_02_cosmo_entropic_crystallization.py",
+      "size": 3632,
+      "sha256": "05a952435f113faa6bedc3bd343384f4e01399471af3c341e4ab646f38126bdd"
+    },
+    {
+      "path": "Code\\experiments\\exp_02_cosmo_field_dynamics.py",
+      "size": 3632,
+      "sha256": "05a952435f113faa6bedc3bd343384f4e01399471af3c341e4ab646f38126bdd"
+    },
+    {
+      "path": "Code\\experiments\\exp_03_symbolic_entropy_collapse.py",
+      "size": 12064,
+      "sha256": "a2171ca2ff9b5ae4e389c061449de86897e9661e3a01b7732fcc85d6ca578ecc"
+    },
+    {
+      "path": "Code\\experiments\\exp_03_vcpu_emergent_logic.py",
+      "size": 8004,
+      "sha256": "faff294568ee0f77ac24e0f21399588c112f05b02c5653683df2ab02833a5ebf"
+    },
+    {
+      "path": "Code\\experiments\\exp_05_quantum_validator.py",
+      "size": 13772,
+      "sha256": "b7ffed9306e75058ab791a0417e4040f0630ca1c2972200f5803d328351d9275"
+    },
+    {
+      "path": "Code\\reproduce.py",
+      "size": 1542,
+      "sha256": "6aa84b3a89a74207843480c4b7d43ded596dae10e000e2397fbd09cd939c87d0"
+    },
+    {
+      "path": "Code\\requirements.txt",
+      "size": 29,
+      "sha256": "a5f970ab390ee008df119c8afd34294344f9b59a02068da8d86afbe839b97eb5"
+    },
+    {
+      "path": "Code\\trace.yaml",
+      "size": 3155,
+      "sha256": "69c7f2e75400f05077effb96c774f029ab163a7024cb3f50d10b63e648595c82"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "meta.yaml",
+      "size": 1458,
+      "sha256": "c6ac5c3161b246b29491308de9af64ad65c186a38c6c6e5861105cc965115313"
+    },
+    {
+      "path": "paper.md",
+      "size": 90819,
+      "sha256": "5e0844a560db0c27547a486f3ee3ad8a5903bd5cd09a5c402786a0cf9eacb5f8"
+    },
+    {
+      "path": "README.md",
+      "size": 1347,
+      "sha256": "033dc88d1176e529e5739cbb0877e0aceff81b73b7df402a515c4b7ac304d75f"
+    },
+    {
+      "path": "UNIFIED_EVIDENCE.md",
+      "size": 16776,
+      "sha256": "66f952d098572c63630d36bb8de07c940cb4580fcca868223300d62e6c85c12d"
+    }
+  ]
+}

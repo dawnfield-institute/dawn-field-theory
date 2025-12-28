@@ -1,0 +1,35 @@
+schema_version: '2.0'
+description: PAC Comprehensive experiments
+semantic_scope: implementation
+proficiency_level: experimental
+
+experiments:
+  - "[exp_01_information_amplification.py]": "Unified information amplification framework"
+
+key_results:
+  exp_01:
+    finding: "SEC Field dynamics produce consistent information amplification"
+    amplification_measured: "~15.9x (varies naturally with topology)"
+    emergence_events: "170,540 detected"
+    authentic_attractors: "4,008 detected"
+    
+important_correction:
+  note: "See FOUNDATIONAL_AMPLIFICATION_CORRECTION.md"
+  key_point: "15.56x is a LOCAL MEASUREMENT, not a universal constant"
+  what_matters:
+    - "PAC consistency (~9%) - proper local balance among children"
+    - "Xi convergence (1.0571) - the TRUE universal constant"
+    - "Natural variation is expected (64x to 105x observed in calibrations)"
+  what_doesnt_matter:
+    - "Hitting exactly 15.56x"
+    - "Forcing convergence to a predetermined value"
+
+core_modules:
+  note: "experiments/core/ contains supporting modules from information_amplification experiment"
+  modules:
+    - measurement.py
+    - compression_engine.py
+    - text_generator.py
+    - baseline_generator.py
+    - sec_field_engine.py
+    - quantum_validator.py

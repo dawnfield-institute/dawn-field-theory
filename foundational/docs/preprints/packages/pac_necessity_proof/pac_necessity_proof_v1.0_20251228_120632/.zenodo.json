@@ -1,0 +1,28 @@
+{
+  "title": "Pac Necessity Proof",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "AGPL-3.0",
+  "creators": [
+    {
+      "name": "Groom, Peter"
+    }
+  ],
+  "keywords": [
+    "Dawn Field Theory",
+    "infodynamics",
+    "PAC framework",
+    "Dawn Field Theory",
+    "PAC"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/dawn-field-institute/dawn-field-theory",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "version": "1.0",
+  "description": "We present experimental evidence that Potential-Actualization Conservation (PAC) is not merely observed in structure\u2014it is **required** for structure. Through systematic violation testing (exp_26), we demonstrate that:\n\n1. **Greater PAC deviation correlates with less structure** (r = \u22120.588, p = 0.0104)\n2. **Greater PAC deviation correlates with failed convergence** (r = \u22120.684, p = 0.0018)\n3. **\u03c6 is a universal attractor**: Systems with 1:1 coefficients converge to \u03c6 regardless of initial conditions\n\nThis establishes PAC as a **constraint** from which the golden ratio emerges, rather than a pattern we project onto data. The implications extend to number theory, physics, machine learning, and cognitive architectures.\n\n**Keywords:** PAC, golden ratio, attractor dynamics, necessity proof, \u03c6 emergence, structural stability\n\n---"
+}

@@ -1,0 +1,100 @@
+{
+  "experiment_id": "exp_07_statistical_significance",
+  "timestamp": "20251210_130710",
+  "git_commit": "73346e4ca09a",
+  "parameters": {
+    "n_max": 50000
+  },
+  "results": {
+    "bootstrap_ci": {
+      "point_estimate": 0.6187447497899916,
+      "ci_low": 0.6127845113804552,
+      "ci_high": 0.6247459898395936,
+      "se": 0.0030815941436541146,
+      "phi_in_ci": "True",
+      "z_score_from_phi": 0.2306471932913293,
+      "p_value_two_sided": 0.8175889009913366,
+      "n_bootstrap": 2000,
+      "confidence": 0.95
+    },
+    "null_hypothesis": {
+      "true_threshold": 0.6187447497899916,
+      "true_error": 0.000710761040096819,
+      "random_mean": 0.5803460138405536,
+      "random_std": 0.05315445798191938,
+      "random_min_error": 0.0011507786408008203,
+      "random_max_error": 0.12939590844599302,
+      "n_close_to_phi": 6,
+      "p_value": 0.0,
+      "null_rejected": "True",
+      "n_random": 100
+    },
+    "permutation_test": {
+      "true_min_size": 9,
+      "true_min_error": 0.000710761040096819,
+      "true_v_score": 0.21385782170321294,
+      "perm_min_size_mean": 12.993,
+      "perm_min_size_mode": 6,
+      "p_min_at_9": 0.043,
+      "p_v_score": 0.004,
+      "cascade_significant": "True",
+      "n_permutations": 1000
+    },
+    "convergence": {
+      "scale_results": [
+        {
+          "n_max": 10000,
+          "threshold": 0.6205241048209642,
+          "error": 0.002490116071069415,
+          "abs_error": 0.002490116071069415,
+          "elapsed": 0.03964877128601074
+        },
+        {
+          "n_max": 50000,
+          "threshold": 0.6187447497899916,
+          "error": 0.000710761040096819,
+          "abs_error": 0.000710761040096819,
+          "elapsed": 0.23702406883239746
+        },
+        {
+          "n_max": 100000,
+          "threshold": 0.6184323686473729,
+          "error": 0.0003983798974781516,
+          "abs_error": 0.0003983798974781516,
+          "elapsed": 0.42363548278808594
+        },
+        {
+          "n_max": 500000,
+          "threshold": 0.6185824743298973,
+          "error": 0.0005484855800025334,
+          "abs_error": 0.0005484855800025334,
+          "elapsed": 2.0574216842651367
+        },
+        {
+          "n_max": 1000000,
+          "threshold": 0.6187712375424751,
+          "error": 0.0007372487925803028,
+          "abs_error": 0.0007372487925803028,
+          "elapsed": 4.31379771232605
+        }
+      ],
+      "convergence_slope": -0.2445181403318248,
+      "convergence_r2": 0.417412974500342,
+      "convergence_p_value": 0.23888086702706737,
+      "converging": "False",
+      "extrapolated_limit": 8.558392402196505e-05
+    }
+  },
+  "validation": {
+    "phi_in_95pct_ci": "True",
+    "null_rejected_p05": "True",
+    "cascade_significant_p05": "True",
+    "converging_to_phi": "False",
+    "overall_definitive": "True"
+  },
+  "dependencies": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.15.2"
+  }
+}

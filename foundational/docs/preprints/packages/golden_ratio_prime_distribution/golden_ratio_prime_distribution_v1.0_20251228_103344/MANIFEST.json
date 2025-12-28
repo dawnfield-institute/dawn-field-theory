@@ -1,0 +1,375 @@
+{
+  "created": "2025-12-28T10:33:45.023158",
+  "files": [
+    {
+      "path": "CITATION.md",
+      "size": 509,
+      "sha256": "8ce49a273f4b87f63c27159114fc47ba08db277a658b1309de686aa6091d80db"
+    },
+    {
+      "path": "Code\\core\\meta.yaml",
+      "size": 383,
+      "sha256": "d37a94b2eb627d6a5525f699f500106d0344dcb9452ce7bede83405c79892eaa"
+    },
+    {
+      "path": "Code\\core\\sec_core.py",
+      "size": 11015,
+      "sha256": "1e9165b3d70470fb69dc5334ff9b0dd88e768f93582de4f06f2f2854f84f255d"
+    },
+    {
+      "path": "Code\\experiments\\exp_01_baseline_validation.py",
+      "size": 4198,
+      "sha256": "95e1ac397ea5684f51cf668c9834bd9bb7cefbc848b103f4270ae480de6767a4"
+    },
+    {
+      "path": "Code\\experiments\\exp_02_factor_base_independence.py",
+      "size": 7577,
+      "sha256": "09e2e84d3a76861f6823bf0a6f309435a03b3a5b9990278e184f4a29a2f128f0"
+    },
+    {
+      "path": "Code\\experiments\\exp_03_phi_threshold.py",
+      "size": 11727,
+      "sha256": "1a8a60514f37fee5842d375f3b706c34f8a0a5cc140b3a1ae7cba4295c7ad2a9"
+    },
+    {
+      "path": "Code\\experiments\\exp_04_robustness.py",
+      "size": 11139,
+      "sha256": "b6ee301d63aac222712a64f01d35c56827712c01b4cfc8a40c4939a201eea8c5"
+    },
+    {
+      "path": "Code\\experiments\\exp_05_fibonacci_resonance.py",
+      "size": 10096,
+      "sha256": "9eec2eee695b0ed38bf6fa67273014e42840c4d742c26b6b3d032cb0126da300"
+    },
+    {
+      "path": "Code\\experiments\\exp_06_large_scale_verification.py",
+      "size": 6103,
+      "sha256": "cec01e246c3d2570b674877b8a60655eb0e11acf72ad18f25ee76ddc7676c456"
+    },
+    {
+      "path": "Code\\experiments\\exp_07_statistical_significance.py",
+      "size": 14371,
+      "sha256": "415fe26e47a363e0d5439a932745a585811f3c7e0afe9840cd19a8afe6e2b915"
+    },
+    {
+      "path": "Code\\experiments\\exp_08_prime_density_prediction.py",
+      "size": 17547,
+      "sha256": "e0c9e2399378b4b8287d73830856814c969bea54b501d975ad2a1b2bdf18ad90"
+    },
+    {
+      "path": "Code\\experiments\\exp_09_density_anomaly_prediction.py",
+      "size": 12239,
+      "sha256": "c56b1237bd17a359eae49886e0aa7bd246393a28afc9dbd85da08bba25c35085"
+    },
+    {
+      "path": "Code\\experiments\\exp_10_prime_prediction_definitive.py",
+      "size": 10694,
+      "sha256": "6f2ef5318d501f40d515c94a30551ff01ffeaa5951f71390be05373185821505"
+    },
+    {
+      "path": "Code\\experiments\\exp_11_sec_hodge_bridge.py",
+      "size": 12375,
+      "sha256": "0966cf7f950dfe6b9d6f3f961674743400a46e66acd788c991f22ee32c78f80b"
+    },
+    {
+      "path": "Code\\experiments\\exp_12_harmonic_structure.py",
+      "size": 10635,
+      "sha256": "f3893e13c021feeeeec88e46a713ba00319751489fae63dc4cd299d56472711c"
+    },
+    {
+      "path": "Code\\experiments\\exp_13_analytical_phi_derivation.py",
+      "size": 18331,
+      "sha256": "85a1251c1dd061d2e9d0505cf5cde3ef2392122ba9618ec001e47a6c1206cb37"
+    },
+    {
+      "path": "Code\\experiments\\exp_14_cross_validation.py",
+      "size": 15989,
+      "sha256": "0c059886f4e6aea31d2caf04b3eff16d52fd3bc646e5fc01c045f57b4b4c9726"
+    },
+    {
+      "path": "Code\\experiments\\exp_15_extended_harmonic.py",
+      "size": 18936,
+      "sha256": "e06fecd31f8baebe6d8308b47210fda97958c4ffb51fb2c2ea16ed2578ddf308"
+    },
+    {
+      "path": "Code\\experiments\\exp_16_dimensional_depth_hypothesis.py",
+      "size": 15968,
+      "sha256": "854eafdc451ad61ef119874c2d7aac01d86c31d30e9afb4989a279b5f4615851"
+    },
+    {
+      "path": "Code\\experiments\\exp_17_formula_discrimination.py",
+      "size": 15683,
+      "sha256": "bfc42d6f78abe7656f80ecdf0396b0ecb875a0046e6fab94dbf3f0eadfc3cb28"
+    },
+    {
+      "path": "Code\\experiments\\exp_18_why_9_structural.py",
+      "size": 17842,
+      "sha256": "ed02c0b09091b22d9cb154216deddbb685e0cecb8c6621212648697a49bdf24f"
+    },
+    {
+      "path": "Code\\experiments\\exp_19_why_size_9_phi.py",
+      "size": 10108,
+      "sha256": "ca426640820d8253d279bd6653537a65a30a3f3515d431ea2fc5c8a4f94a455a"
+    },
+    {
+      "path": "Code\\experiments\\exp_20_phase_transition_proof.py",
+      "size": 15098,
+      "sha256": "6876113e3ef5082bde2344465e13db2e0041ec803869d7cd6423b01b9854eb63"
+    },
+    {
+      "path": "Code\\experiments\\exp_21_phi_mechanism.py",
+      "size": 19232,
+      "sha256": "4ecef9f6b1bbb9b635d86a281bb8335de39d84570f837457c87dfe24a0114a14"
+    },
+    {
+      "path": "Code\\experiments\\exp_22_alternating_dynamics.py",
+      "size": 13819,
+      "sha256": "840477fc63c66f39be9314efa4e2d6fbe84cdf9ba91e48ef269bf29aec4b8538"
+    },
+    {
+      "path": "Code\\experiments\\exp_23_real_mechanism.py",
+      "size": 15396,
+      "sha256": "90dc1949c26607ca5497460f28af687f1d661c66fa63544470b752d35885c7b1"
+    },
+    {
+      "path": "Code\\experiments\\exp_24_run_length_proof.py",
+      "size": 13422,
+      "sha256": "0c2f0b160e2e04cdbbbd056f5ddd161429e5c2238140adae2d7047ad7666f288"
+    },
+    {
+      "path": "Code\\experiments\\exp_25_ratio_analysis.py",
+      "size": 7941,
+      "sha256": "654709f0c6e212720e78a72e490a59e69444c29ed62fd4b5ca8181f5470c0178"
+    },
+    {
+      "path": "Code\\experiments\\exp_26_phi_lambda.py",
+      "size": 7734,
+      "sha256": "e428a31de84c3bed4317a5cfc009aa52645413cd1107d6f82fe18cc56bf93b54"
+    },
+    {
+      "path": "Code\\experiments\\exp_27_true_relationship.py",
+      "size": 7297,
+      "sha256": "5b47265b0ada224918a7570ec5ae8b5f9f29f7206d0fe5f96cb112428045f25c"
+    },
+    {
+      "path": "Code\\experiments\\exp_28_optimal_lambda.py",
+      "size": 8661,
+      "sha256": "7599b89605694da8c9cac526ed8f184b9db8a6f490332430a422b285b8200a18"
+    },
+    {
+      "path": "Code\\experiments\\exp_29_phase_transition.py",
+      "size": 12828,
+      "sha256": "e74286d27ba2db83b49d17e7935060fbe4196fd211d205ef44fa9b8dc108fa2a"
+    },
+    {
+      "path": "Code\\experiments\\exp_30_xi_lambda_relationship.py",
+      "size": 5242,
+      "sha256": "22fa0e71e4e741f79f8edb2205a467fd3c0fb609e5e5d6ca4f7556f9c570099f"
+    },
+    {
+      "path": "Code\\experiments\\exp_31_xi_lambda_universal.py",
+      "size": 5926,
+      "sha256": "5ac225b188f32bfe9da0ff0f6d90a4994d75bfcc8987b79cf8ceb487a405ebd5"
+    },
+    {
+      "path": "Code\\experiments\\exp_32_phi_attractor.py",
+      "size": 7881,
+      "sha256": "628c7967f9421ed0cf276b1dfc012a3a41da7f045d033883484cc5a6241a0989"
+    },
+    {
+      "path": "Code\\experiments\\exp_32_phi_attractor_20251210_163903.json",
+      "size": 5283,
+      "sha256": "ebff32e64c0427cc8ff87edd50a018c6b4877be825d9a2d48a70bacbf4b3407c"
+    },
+    {
+      "path": "Code\\experiments\\meta.yaml",
+      "size": 813,
+      "sha256": "71cf4a9d4f28a93e0703b33ec8c692852c03b925d34bb47e4f42993ae8f48540"
+    },
+    {
+      "path": "Code\\reproduce.py",
+      "size": 1542,
+      "sha256": "6aa84b3a89a74207843480c4b7d43ded596dae10e000e2397fbd09cd939c87d0"
+    },
+    {
+      "path": "Code\\requirements.txt",
+      "size": 29,
+      "sha256": "a5f970ab390ee008df119c8afd34294344f9b59a02068da8d86afbe839b97eb5"
+    },
+    {
+      "path": "Code\\trace.yaml",
+      "size": 16078,
+      "sha256": "9af4a7cb50c567bef8d679d763c20c18713bc21b5f4b2af96df9de3cb2b3fc17"
+    },
+    {
+      "path": "Data\\results\\exp_01_baseline_20251209_201520.json",
+      "size": 1384,
+      "sha256": "c7e2eb69baa2f73d97da3395800eb438403019ba81236a991009ca339bc6dc3f"
+    },
+    {
+      "path": "Data\\results\\exp_02_independence_20251209_201713.json",
+      "size": 4399,
+      "sha256": "a4a37c09fc864d42b333cc3838b562a2af5e4603f7897b11c6a077138575d940"
+    },
+    {
+      "path": "Data\\results\\exp_03_phi_threshold_20251210_120958.json",
+      "size": 1790,
+      "sha256": "219029c27ce237ea1f89e933bbd8605f2c4b8ad04c0934911b5a369154d87d20"
+    },
+    {
+      "path": "Data\\results\\exp_03_phi_threshold_20251210_143206.json",
+      "size": 1790,
+      "sha256": "219029c27ce237ea1f89e933bbd8605f2c4b8ad04c0934911b5a369154d87d20"
+    },
+    {
+      "path": "Data\\results\\exp_04_robustness_20251209_201951.json",
+      "size": 3961,
+      "sha256": "207dfb16c5a56905ccdf37becf55160d05262323b5ba4a2978880f413f85bc11"
+    },
+    {
+      "path": "Data\\results\\exp_05_fibonacci_20251209_201705.json",
+      "size": 19956,
+      "sha256": "6b9b5220033f120c01523895f59239de5feb572cd1d9234b771599000d1da191"
+    },
+    {
+      "path": "Data\\results\\exp_06_large_scale_20251210_121006.json",
+      "size": 3402,
+      "sha256": "04e8e480d49f7379087baae799892444d09e9b6f1b16534d5b06c588f7c57a97"
+    },
+    {
+      "path": "Data\\results\\exp_07_statistical_20251210_130710.json",
+      "size": 3026,
+      "sha256": "153c6f57ea69acc7277056012b0fc4ec79e6881544dc07e9f8bb5cab36a86ef5"
+    },
+    {
+      "path": "Data\\results\\exp_07_statistical_20251210_130735.json",
+      "size": 3026,
+      "sha256": "290e0927bd27dd06ac0ff999cd0b1d79b7badab2c68a20ebe7bb689d87eb8e0a"
+    },
+    {
+      "path": "Data\\results\\exp_08_prime_density_20251210_130849.json",
+      "size": 2251,
+      "sha256": "75c6bf11ddd4b7ff44e50f6d1d556e776659ffe641950973a9c77cba1c5af02f"
+    },
+    {
+      "path": "Data\\results\\exp_09_density_anomaly_20251210_131016.json",
+      "size": 1801,
+      "sha256": "4c5fefaaf59a35e6f5a22c204b50e1c151abdbd001d5865eb7212439a0e6e9da"
+    },
+    {
+      "path": "Data\\results\\exp_10_prime_prediction_20251210_131207.json",
+      "size": 1752,
+      "sha256": "6178e3083cdbc850c8778a1bc0aaa7d7469ca64017d7bbb547f1d3feebe7344e"
+    },
+    {
+      "path": "Data\\results\\exp_10_prime_prediction_20251210_131223.json",
+      "size": 1752,
+      "sha256": "9b837b47ece3b774b9d05d2378cbc38a0eaec9ea8833912514a34ede7ed2d6b3"
+    },
+    {
+      "path": "Data\\results\\exp_10_prime_prediction_20251210_131230.json",
+      "size": 1752,
+      "sha256": "392aecbf04806d49fc724d12e1ec1d6c516be9dc65a23112d7a8327448a03fed"
+    },
+    {
+      "path": "Data\\results\\exp_11_sec_hodge_bridge_20251210_131533.json",
+      "size": 5286,
+      "sha256": "16250363dfadccd141371188a02cbf75a6e7e9d043fea5e3c627c5cada7cd84b"
+    },
+    {
+      "path": "Data\\results\\exp_12_harmonic_structure_20251210_131727.json",
+      "size": 10478,
+      "sha256": "c9bfa7355d2dd5a621ac50cc421d74f3abda35e0ed221826509cbfda5e58d299"
+    },
+    {
+      "path": "Data\\results\\exp_13_analytical_derivation_20251210_135320.json",
+      "size": 16763,
+      "sha256": "5574fd9e32bdac07c52305a7cc20c0242775d8e2a7aa3deb750ad86c5d52fd2a"
+    },
+    {
+      "path": "Data\\results\\exp_14_cross_validation_20251210_135443.json",
+      "size": 7249,
+      "sha256": "ef917970157ed65d1d03b15c6e7f42d9c291428b0c7fe52250dfe8a062d9c447"
+    },
+    {
+      "path": "Data\\results\\exp_14_cross_validation_20251210_140223.json",
+      "size": 956,
+      "sha256": "925c54433971397a73d95c08dffd0ab3e397f29ed174f9e48cc5793ddd4043fa"
+    },
+    {
+      "path": "Data\\results\\exp_15_extended_harmonic_20251210_135620.json",
+      "size": 26896,
+      "sha256": "f1715498c5b2136368f834d178902fff3b13701f5c87c968fe56c04a2fe9909c"
+    },
+    {
+      "path": "Data\\results\\exp_16_dimensional_depth_20251210_141829.json",
+      "size": 7719,
+      "sha256": "006fabfdc0dd28a549370b0cc5b9315b4c07b698e3aef4b2b841047d7dd70ecb"
+    },
+    {
+      "path": "Data\\results\\exp_16_dimensional_depth_20251210_141928.json",
+      "size": 7720,
+      "sha256": "765014aea8f6fbcadddbb7ae483a9410a9a2a75d2215f3c6fc605fc271c55f88"
+    },
+    {
+      "path": "Data\\results\\exp_24_run_length_proof_20251210_160818.json",
+      "size": 1015,
+      "sha256": "14515ab968d6e00f1f1f1ae55a31454882f22dd45c97a98e1a678f3e3611b6a5"
+    },
+    {
+      "path": "Data\\results\\exp_26_phi_lambda_20251210_161326.json",
+      "size": 1454,
+      "sha256": "eb3e2df0333f725bc2dc1d98589addc0d61f860960715b0f8dd61b5aab68c30d"
+    },
+    {
+      "path": "Data\\results\\exp_27_true_relationship_20251210_161414.json",
+      "size": 1791,
+      "sha256": "eac5b067f57c1f4cff8f2e413185a0ae7aaf21b3bb76b0685a6b01e4646bb80d"
+    },
+    {
+      "path": "Data\\results\\exp_28_optimal_lambda_20251210_161537.json",
+      "size": 1416,
+      "sha256": "c6314dff09ff45415cae6525e17bdc778a8bd190c2175013b279e18c0207ce11"
+    },
+    {
+      "path": "Data\\results\\exp_29_phase_transition_20251210_161759.json",
+      "size": 11941,
+      "sha256": "d8ed5fa7d7ad65b04921a318ce275cf3769651dea91c2039c0b58ab988641dae"
+    },
+    {
+      "path": "Figures\\exp_29_phase_transition.png",
+      "size": 162086,
+      "sha256": "fc956ad7772c102f9908b63e688be50018fa6cd41dab7f01f9c9d3efc03dff69"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "MECHANISMS.md",
+      "size": 9292,
+      "sha256": "b7a28a35637d75eba6dc39fd4c614722e85861f7145e569c7e3f866945e767dd"
+    },
+    {
+      "path": "meta.yaml",
+      "size": 549,
+      "sha256": "c25cdc2de7f94160ae368cfa9926fe760a428973dc8f5ef112d74f856c10c5d3"
+    },
+    {
+      "path": "paper.md",
+      "size": 25133,
+      "sha256": "1737f613f608b944de5bf2afbf8cd0839d35b077ec212403600dca93513ee9ea"
+    },
+    {
+      "path": "README.md",
+      "size": 1349,
+      "sha256": "4891cf32c93f13f05d4688378b39d30d8bee87b733fa8f62dac188d2673503a6"
+    },
+    {
+      "path": "UNIFIED_EVIDENCE.md",
+      "size": 16776,
+      "sha256": "66f952d098572c63630d36bb8de07c940cb4580fcca868223300d62e6c85c12d"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "created": "2025-12-28T09:58:48.971811",
+  "files": [
+    {
+      "path": "CITATION.md",
+      "size": 498,
+      "sha256": "76f8f08b87dca4681da5c3bf74e5ea62928050ccf5cf828ccc44d98af864e9f2"
+    },
+    {
+      "path": "Code\\core\\__init__.py",
+      "size": 542,
+      "sha256": "0f446579d3f4e1b8a18a6c266d4356c7c3adfc7ba0cf4203d90fc24b9ed57258"
+    },
+    {
+      "path": "Code\\core\\baseline_generator.py",
+      "size": 5195,
+      "sha256": "68dea8062328235d19ad62440d98e7df8d7a001816e1cdad80d75ad012801174"
+    },
+    {
+      "path": "Code\\core\\compression_engine.py",
+      "size": 2876,
+      "sha256": "806dced4a3e2dba09dde77b426eec5397daa68cae2c64d4db939a0c4155764f4"
+    },
+    {
+      "path": "Code\\core\\measurement.py",
+      "size": 3026,
+      "sha256": "becb3ffb617350321c2485a589fd42924469c72948027b035bca030066323032"
+    },
+    {
+      "path": "Code\\core\\meta.yaml",
+      "size": 383,
+      "sha256": "d37a94b2eb627d6a5525f699f500106d0344dcb9452ce7bede83405c79892eaa"
+    },
+    {
+      "path": "Code\\core\\quantum_validator.py",
+      "size": 13772,
+      "sha256": "b7ffed9306e75058ab791a0417e4040f0630ca1c2972200f5803d328351d9275"
+    },
+    {
+      "path": "Code\\core\\sec_field_engine.py",
+      "size": 14402,
+      "sha256": "e70e9ed6d393e0cd955e0320df5d72f021b1437f1b50a1c8552c0e0602e11769"
+    },
+    {
+      "path": "Code\\core\\text_generator.py",
+      "size": 6295,
+      "sha256": "08800d97995aa7ebc153b8f4a3efd5a7713be2b4ef18066cfd61b37c26a8577e"
+    },
+    {
+      "path": "Code\\experiments\\exp_01_sec_decoherence.py",
+      "size": 8574,
+      "sha256": "cc26ed285e7b8c1da3a65ccc673760a3b2c6fd54b7aa6ae5c36c2f4759442418"
+    },
+    {
+      "path": "Code\\experiments\\exp_02_born_rule.py",
+      "size": 6289,
+      "sha256": "7d7179dee94af1073f129faff9f071021ce647f05a0116ad1c81d9996cfe3b12"
+    },
+    {
+      "path": "Code\\experiments\\exp_03_landauer.py",
+      "size": 6526,
+      "sha256": "572b4b5eeb98126204c3b8240449816a9197edacf54d9ae5a38218f21aa855b6"
+    },
+    {
+      "path": "Code\\experiments\\exp_04_unified_amplification.py",
+      "size": 74045,
+      "sha256": "198423c511ac681b6fa68d50c5f928883ac8efe79c1d8b81ccec26b72f73a98a"
+    },
+    {
+      "path": "Code\\experiments\\exp_05_superfluid_pi.py",
+      "size": 7112,
+      "sha256": "3f38c5a85805328b1c1d0c2e47a1ec9fb7b299127a6ddaf552ea42d7f56c9fa2"
+    },
+    {
+      "path": "Code\\reproduce.py",
+      "size": 1542,
+      "sha256": "6aa84b3a89a74207843480c4b7d43ded596dae10e000e2397fbd09cd939c87d0"
+    },
+    {
+      "path": "Code\\requirements.txt",
+      "size": 29,
+      "sha256": "a5f970ab390ee008df119c8afd34294344f9b59a02068da8d86afbe839b97eb5"
+    },
+    {
+      "path": "Code\\trace.yaml",
+      "size": 3307,
+      "sha256": "b111f5562f2cf7c48ebe45b8a1ad9b628c7d2820c5ababe0c7d3a46cf0505ead"
+    },
+    {
+      "path": "Data\\results\\exp_01_baseline_20251209_201520.json",
+      "size": 1384,
+      "sha256": "c7e2eb69baa2f73d97da3395800eb438403019ba81236a991009ca339bc6dc3f"
+    },
+    {
+      "path": "Data\\results\\exp_02_independence_20251209_201713.json",
+      "size": 4399,
+      "sha256": "a4a37c09fc864d42b333cc3838b562a2af5e4603f7897b11c6a077138575d940"
+    },
+    {
+      "path": "Data\\results\\exp_03_phi_threshold_20251210_120958.json",
+      "size": 1790,
+      "sha256": "219029c27ce237ea1f89e933bbd8605f2c4b8ad04c0934911b5a369154d87d20"
+    },
+    {
+      "path": "Data\\results\\exp_03_phi_threshold_20251210_143206.json",
+      "size": 1790,
+      "sha256": "219029c27ce237ea1f89e933bbd8605f2c4b8ad04c0934911b5a369154d87d20"
+    },
+    {
+      "path": "Data\\results\\exp_04_robustness_20251209_201951.json",
+      "size": 3961,
+      "sha256": "207dfb16c5a56905ccdf37becf55160d05262323b5ba4a2978880f413f85bc11"
+    },
+    {
+      "path": "Data\\results\\exp_05_fibonacci_20251209_201705.json",
+      "size": 19956,
+      "sha256": "6b9b5220033f120c01523895f59239de5feb572cd1d9234b771599000d1da191"
+    },
+    {
+      "path": "Data\\results\\exp_06_large_scale_20251210_121006.json",
+      "size": 3402,
+      "sha256": "04e8e480d49f7379087baae799892444d09e9b6f1b16534d5b06c588f7c57a97"
+    },
+    {
+      "path": "Data\\results\\exp_07_statistical_20251210_130710.json",
+      "size": 3026,
+      "sha256": "153c6f57ea69acc7277056012b0fc4ec79e6881544dc07e9f8bb5cab36a86ef5"
+    },
+    {
+      "path": "Data\\results\\exp_07_statistical_20251210_130735.json",
+      "size": 3026,
+      "sha256": "290e0927bd27dd06ac0ff999cd0b1d79b7badab2c68a20ebe7bb689d87eb8e0a"
+    },
+    {
+      "path": "Data\\results\\exp_08_prime_density_20251210_130849.json",
+      "size": 2251,
+      "sha256": "75c6bf11ddd4b7ff44e50f6d1d556e776659ffe641950973a9c77cba1c5af02f"
+    },
+    {
+      "path": "Data\\results\\exp_09_density_anomaly_20251210_131016.json",
+      "size": 1801,
+      "sha256": "4c5fefaaf59a35e6f5a22c204b50e1c151abdbd001d5865eb7212439a0e6e9da"
+    },
+    {
+      "path": "Data\\results\\exp_10_prime_prediction_20251210_131207.json",
+      "size": 1752,
+      "sha256": "6178e3083cdbc850c8778a1bc0aaa7d7469ca64017d7bbb547f1d3feebe7344e"
+    },
+    {
+      "path": "Data\\results\\exp_10_prime_prediction_20251210_131223.json",
+      "size": 1752,
+      "sha256": "9b837b47ece3b774b9d05d2378cbc38a0eaec9ea8833912514a34ede7ed2d6b3"
+    },
+    {
+      "path": "Data\\results\\exp_10_prime_prediction_20251210_131230.json",
+      "size": 1752,
+      "sha256": "392aecbf04806d49fc724d12e1ec1d6c516be9dc65a23112d7a8327448a03fed"
+    },
+    {
+      "path": "Data\\results\\exp_11_sec_hodge_bridge_20251210_131533.json",
+      "size": 5286,
+      "sha256": "16250363dfadccd141371188a02cbf75a6e7e9d043fea5e3c627c5cada7cd84b"
+    },
+    {
+      "path": "Data\\results\\exp_12_harmonic_structure_20251210_131727.json",
+      "size": 10478,
+      "sha256": "c9bfa7355d2dd5a621ac50cc421d74f3abda35e0ed221826509cbfda5e58d299"
+    },
+    {
+      "path": "Data\\results\\exp_13_analytical_derivation_20251210_135320.json",
+      "size": 16763,
+      "sha256": "5574fd9e32bdac07c52305a7cc20c0242775d8e2a7aa3deb750ad86c5d52fd2a"
+    },
+    {
+      "path": "Data\\results\\exp_14_cross_validation_20251210_135443.json",
+      "size": 7249,
+      "sha256": "ef917970157ed65d1d03b15c6e7f42d9c291428b0c7fe52250dfe8a062d9c447"
+    },
+    {
+      "path": "Data\\results\\exp_14_cross_validation_20251210_140223.json",
+      "size": 956,
+      "sha256": "925c54433971397a73d95c08dffd0ab3e397f29ed174f9e48cc5793ddd4043fa"
+    },
+    {
+      "path": "Data\\results\\exp_15_extended_harmonic_20251210_135620.json",
+      "size": 26896,
+      "sha256": "f1715498c5b2136368f834d178902fff3b13701f5c87c968fe56c04a2fe9909c"
+    },
+    {
+      "path": "Data\\results\\exp_16_dimensional_depth_20251210_141829.json",
+      "size": 7719,
+      "sha256": "006fabfdc0dd28a549370b0cc5b9315b4c07b698e3aef4b2b841047d7dd70ecb"
+    },
+    {
+      "path": "Data\\results\\exp_16_dimensional_depth_20251210_141928.json",
+      "size": 7720,
+      "sha256": "765014aea8f6fbcadddbb7ae483a9410a9a2a75d2215f3c6fc605fc271c55f88"
+    },
+    {
+      "path": "Data\\results\\exp_24_run_length_proof_20251210_160818.json",
+      "size": 1015,
+      "sha256": "14515ab968d6e00f1f1f1ae55a31454882f22dd45c97a98e1a678f3e3611b6a5"
+    },
+    {
+      "path": "Data\\results\\exp_26_phi_lambda_20251210_161326.json",
+      "size": 1454,
+      "sha256": "eb3e2df0333f725bc2dc1d98589addc0d61f860960715b0f8dd61b5aab68c30d"
+    },
+    {
+      "path": "Data\\results\\exp_27_true_relationship_20251210_161414.json",
+      "size": 1791,
+      "sha256": "eac5b067f57c1f4cff8f2e413185a0ae7aaf21b3bb76b0685a6b01e4646bb80d"
+    },
+    {
+      "path": "Data\\results\\exp_28_optimal_lambda_20251210_161537.json",
+      "size": 1416,
+      "sha256": "c6314dff09ff45415cae6525e17bdc778a8bd190c2175013b279e18c0207ce11"
+    },
+    {
+      "path": "Data\\results\\exp_29_phase_transition_20251210_161759.json",
+      "size": 11941,
+      "sha256": "d8ed5fa7d7ad65b04921a318ce275cf3769651dea91c2039c0b58ab988641dae"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "meta.yaml",
+      "size": 528,
+      "sha256": "043c1bbec9fceee27a630f1fc75d5b1318a4feffc9fc67f428237c3fb61c121d"
+    },
+    {
+      "path": "paper.md",
+      "size": 75380,
+      "sha256": "dd49bc8bf998743cac5e0a40ab2dd5271d87156a8e7e4f7c6f9ec6e8e9fc7c7d"
+    },
+    {
+      "path": "README.md",
+      "size": 1342,
+      "sha256": "441a4477ede90476de1ab1b97e2b8be8ccb257e861b2569d80ea222f65bc5a1c"
+    }
+  ]
+}

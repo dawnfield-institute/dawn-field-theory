@@ -1,0 +1,53 @@
+{
+  "experiment_id": "exp_10_prime_prediction_definitive",
+  "timestamp": "20251210_131230",
+  "git_commit": "73346e4ca09a",
+  "parameters": {
+    "n_max": 100000,
+    "factor_base_size": 9
+  },
+  "results": {
+    "n_test": 49950,
+    "n_primes": "9567",
+    "base_rate": 0.19153153153153152,
+    "auc_E_value": 0.7235834243655102,
+    "auc_E_sign": 0.6468429789469499,
+    "auc_baseline": 0.5316206060119542,
+    "auc_combined": 0.6952515480103243,
+    "pr_auc": 0.36338725613200246,
+    "precision_top_1pct": 0.531062124248497,
+    "lift_top_1pct": 2.772713818983216,
+    "precision_top_5pct": 0.4769723668402083,
+    "lift_top_5pct": 2.4903072774818025,
+    "precision_top_10pct": 0.4344344344344344,
+    "lift_top_10pct": 2.2682136510922963,
+    "precision_top_20pct": 0.3825825825825826,
+    "lift_top_20pct": 1.997491376607087,
+    "density_E_positive": 0.26508013598834385,
+    "density_E_negative": 0.07238394964594808,
+    "density_ratio": 3.6621397047954893,
+    "frac_primes_in_E_positive": 0.8557541549074945,
+    "t_statistic": 71.8097502379081,
+    "p_value_ttest": 0.0,
+    "cohens_d": 0.8436260137581534,
+    "u_statistic": 279552231.0,
+    "p_value_mannwhitney": 0.0,
+    "mean_E_primes": 0.08434050745843576,
+    "mean_E_composites": 0.014226542724501924,
+    "frac_E_positive_primes": 0.8557541549074945,
+    "frac_E_positive_composites": 0.5620681970135948
+  },
+  "validation": {
+    "auc_above_0.6": "True",
+    "auc_beats_baseline": "True",
+    "density_ratio_above_2": "True",
+    "p_value_below_0.001": "True",
+    "cohens_d_large": "True",
+    "lift_top_10_above_1.5": "True"
+  },
+  "dependencies": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.15.2"
+  }
+}

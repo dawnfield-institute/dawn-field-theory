@@ -1,0 +1,69 @@
+# Code Provenance Trace for Dawn Field Theory Infodynamics Paper
+# This file links included code to its original source locations
+
+schema_version: "1.0"
+paper: "dawn_field_theory_infodynamics"
+trace_date: "2025-12-23"
+
+experiments:
+  - file: "experiments/exp_01_brain_recursive_collapse.py"
+    source_repo: "dawn-field-theory"
+    source_path: "foundational/experiments/legacy/brain.py"
+    description: "Legacy CIM-era brain simulation showing recursive collapse memory formation"
+    requires_cuda: true
+    verified: false
+    note: "Requires CUDA-capable GPU and matplotlib display"
+
+  - file: "experiments/exp_02_cosmo_entropic_crystallization.py"
+    source_repo: "dawn-field-theory"
+    source_path: "foundational/experiments/legacy/cosmo.py"
+    description: "Legacy CIM-era cosmological simulation showing entropy crystallization"
+    requires_cuda: true
+    verified: false
+    note: "Requires CUDA-capable GPU"
+
+  - file: "experiments/exp_03_vcpu_emergent_logic.py"
+    source_repo: "dawn-field-theory"
+    source_path: "foundational/experiments/legacy/vcpu.py"
+    description: "Virtual CPU demonstrating emergent logic without external programming"
+    requires_cuda: true
+    verified: true
+    results:
+      - "I/O encoding scores computed for bit patterns"
+      - "Collapse dynamics showing bit 0 vs bit 1 differentiation"
+      - "Multi-cycle QPL field updates"
+
+  - file: "experiments/exp_03_symbolic_entropy_collapse.py"
+    source_repo: "dawn-field-theory"
+    source_path: "foundational/experiments/symbolic_entropy_collapse/[x][F][v1.0][C1][I1]_symbolic_entropy_engine.py"
+    description: "Symbolic entropy collapse engine for SEC dynamics"
+    requires_data: true
+    verified: false
+    note: "Requires extinctions.csv data file"
+
+  - file: "experiments/exp_05_quantum_validator.py"
+    source_repo: "dawn-field-theory"
+    source_path: "foundational/experiments/information_amplification/core/quantum_validator.py"
+    description: "Quantum-inspired validation metrics for Born rule compliance"
+    verified: true
+    note: "Module - import and use QuantumValidator class"
+
+paper_claims_supported:
+  - claim: "Information precedes geometry - structure arises from informational gradients"
+    evidence: "Legacy simulations demonstrate symbolic pattern stabilization"
+    
+  - claim: "Entropy as uncrystallized potential drives collapse events"
+    evidence: "cosmo.py and vcpu.py show entropy-driven crystallization"
+    
+  - claim: "Recursive collapse stabilizes symbolic patterns"
+    evidence: "brain.py demonstrates memory formation through collapse"
+    
+  - claim: "SEC dynamics correlate with quantum probability distributions"
+    evidence: "quantum_validator.py implements Born rule compliance testing"
+
+notes: |
+  This is a foundational theoretical paper synthesizing the evolution from
+  CIM-era experiments to formal SEC/RBF frameworks. The legacy experiments
+  require CUDA and are provided for historical documentation and reproducibility
+  on GPU-capable systems. The quantum_validator provides validation utilities
+  for future experiments.
