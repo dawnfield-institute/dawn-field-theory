@@ -1,9 +1,22 @@
-schema_version: "2.0"
+schema_version: '2.0'
 directory_name: results
-description: |
-  JSON output from experiment scripts. Each result file is timestamped
+description: 'JSON output from experiment scripts. Each result file is timestamped
+
   and contains full experimental data for reproducibility.
+
+  '
 semantic_scope:
-  - data
-  - results
-files: []
+- data
+- results
+files:
+- exp_01_baseline_20251220_090456.json
+- exp_01_baseline_20251220_090518.json
+- exp_02_full_sweep_20251220_090809.json
+- exp_03_attractor_detection_20251220_091658.json
+- exp_03_attractor_detection_20251220_091810.json
+- exp_04_xi_approach_20251220_093058.json
+- exp_05_xi_necessity_20251220_094456.json
+- exp_06_falsification_20251220_094603.json
+- exp_07_definitive_20251220_094730.json
+- exp_07_definitive_20251220_094854.json
+child_directories: []

@@ -1,4 +1,13 @@
-schema_version: "2.0"
-description: "JSON result files from oscillation experiments"
-semantic_scope: "data"
-validation_type: "automated"
+schema_version: '2.0'
+description: JSON result files from oscillation experiments
+semantic_scope: data
+validation_type: automated
+files:
+- exp_01_zero_crossing_20251224_135618.json
+- exp_02_causality_20251224_135723.json
+- exp_03_injection_halos_20251224_140203.json
+- exp_04_mobius_structure_20251224_140417.json
+- exp_05_consecutive_gaps_20251224_140607.json
+- exp_06_phi_mobius_20251224_140926.json
+- exp_07_deep_structure_20251224_141046.json
+child_directories: []

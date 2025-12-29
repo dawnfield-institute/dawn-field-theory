@@ -9,26 +9,33 @@ semantic_scope:
 - simulation
 - results
 files:
+- JOURNAL_SCHEMA.md
 - README.md
 child_directories:
 - DNA_repair
 - biology_experiments
+- cellular_automata_pac_attractors
 - entropy_information_polarity_field
 - hodge_conjecture
 - information_amplification
+- journals
 - landauer_erasure_field_cost_map
 - language_to_logic
 - legacy
 - navier-stokes
+- oscillation_attractor_dynamics
 - pac_confluence_xi
+- pac_cosmology_validation
 - pi_harmonics
-- predictive_collapse
 - pre_field_recursion
+- predictive_collapse
+- prime_harmonic_manifold
 - quantum_validation
 - recursive_entropy
 - recursive_gravity
 - recursive_tree
 - results
+- sec_prime_manifold
 - standard_model_connection
 - symbolic_bifractal
 - symbolic_emergence

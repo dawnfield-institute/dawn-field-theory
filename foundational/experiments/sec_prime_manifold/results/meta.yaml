@@ -1,15 +1,43 @@
-schema_version: "2.0"
-description: "Traced experiment results in JSON format"
-semantic_scope: "data"
-proficiency_level: "technical"
-
+schema_version: '2.0'
+description: Traced experiment results in JSON format
+semantic_scope: data
+proficiency_level: technical
 trace_schema:
-  experiment_id: "Unique experiment identifier"
-  timestamp: "YYYYMMDD_HHMMSS format"
-  git_commit: "First 12 chars of commit hash"
-  parameters: "Input parameters dict"
-  results: "Output results dict"
-  validation: "Pass/fail checks dict"
-  dependencies: "Package versions dict"
-
-naming_convention: "exp_NN_name_YYYYMMDD_HHMMSS.json"
+  experiment_id: Unique experiment identifier
+  timestamp: YYYYMMDD_HHMMSS format
+  git_commit: First 12 chars of commit hash
+  parameters: Input parameters dict
+  results: Output results dict
+  validation: Pass/fail checks dict
+  dependencies: Package versions dict
+naming_convention: exp_NN_name_YYYYMMDD_HHMMSS.json
+files:
+- exp_01_baseline_20251209_201520.json
+- exp_02_independence_20251209_201713.json
+- exp_03_phi_threshold_20251210_120958.json
+- exp_03_phi_threshold_20251210_143206.json
+- exp_04_robustness_20251209_201951.json
+- exp_05_fibonacci_20251209_201705.json
+- exp_06_large_scale_20251210_121006.json
+- exp_07_statistical_20251210_130710.json
+- exp_07_statistical_20251210_130735.json
+- exp_08_prime_density_20251210_130849.json
+- exp_09_density_anomaly_20251210_131016.json
+- exp_10_prime_prediction_20251210_131207.json
+- exp_10_prime_prediction_20251210_131223.json
+- exp_10_prime_prediction_20251210_131230.json
+- exp_11_sec_hodge_bridge_20251210_131533.json
+- exp_12_harmonic_structure_20251210_131727.json
+- exp_13_analytical_derivation_20251210_135320.json
+- exp_14_cross_validation_20251210_135443.json
+- exp_14_cross_validation_20251210_140223.json
+- exp_15_extended_harmonic_20251210_135620.json
+- exp_16_dimensional_depth_20251210_141829.json
+- exp_16_dimensional_depth_20251210_141928.json
+- exp_24_run_length_proof_20251210_160818.json
+- exp_26_phi_lambda_20251210_161326.json
+- exp_27_true_relationship_20251210_161414.json
+- exp_28_optimal_lambda_20251210_161537.json
+- exp_29_phase_transition.png
+- exp_29_phase_transition_20251210_161759.json
+child_directories: []

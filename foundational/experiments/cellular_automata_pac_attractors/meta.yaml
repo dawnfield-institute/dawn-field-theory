@@ -1,42 +1,36 @@
-schema_version: "2.0"
+schema_version: '2.0'
 directory_name: cellular_automata_pac_attractors
-description: |
-  Multi-path validation of cellular automata rules as discrete attractor states 
-  in PAC (Potential-Actualization-Conservation) phase space. Tests whether the 
-  same dimensionless invariants emerge from conservation physics, geometric 
-  topology, and information theory frameworks.
+description: "Multi-path validation of cellular automata rules as discrete attractor\
+  \ states \nin PAC (Potential-Actualization-Conservation) phase space. Tests whether\
+  \ the \nsame dimensionless invariants emerge from conservation physics, geometric\
+  \ \ntopology, and information theory frameworks.\n"
 semantic_scope:
-  - experiment
-  - validation
-  - cellular_automata
-  - pac_attractors
+- experiment
+- validation
+- cellular_automata
+- pac_attractors
 proficiency_level: research
 estimated_context_weight: medium
-
 files:
-  - "[README.md]": "Experiment overview and methodology"
-  - "[SYNTHESIS.md]": "Cross-experiment connections and unified findings"
-  - "[requirements.txt]": "Python dependencies"
-
+- README.md
+- SYNTHESIS.md
+- requirements.txt
 child_directories:
-  - core
-  - scripts
-  - results
-  - journals
-
+- core
+- journals
+- results
+- scripts
 dependencies:
   internal:
-    - "../../arithmetic/PACEngine"
-    - "../information_amplification"
-    - "../sec_prime_manifold"
+  - ../../arithmetic/PACEngine
+  - ../information_amplification
+  - ../sec_prime_manifold
   external:
-    - numpy
-    - scipy
-    - matplotlib
-
+  - numpy
+  - scipy
+  - matplotlib
 research_questions:
-  - "Do CA rules cluster non-randomly in PAC phase space?"
-  - "Do the same dimensionless invariants emerge from 3 independent frameworks?"
-  - "Does Rule 110 (edge-of-chaos) show φ-related invariants?"
-
-preregistration_reference: "../../../CA.md"
+- Do CA rules cluster non-randomly in PAC phase space?
+- Do the same dimensionless invariants emerge from 3 independent frameworks?
+- Does Rule 110 (edge-of-chaos) show φ-related invariants?
+preregistration_reference: ../../../CA.md
