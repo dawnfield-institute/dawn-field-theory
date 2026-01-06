@@ -1,0 +1,118 @@
+{
+  "experiment": "exp_08_falsification_criteria",
+  "timestamp": "2025-12-13T16:33:45.241855",
+  "purpose": "Establish concrete falsification criteria for PAC/SEC cosmology",
+  "criterion_1": {
+    "name": "SEC Enhancement Factor",
+    "prediction": 1.1708203932499368,
+    "uncertainty": 0.05,
+    "range_low": 1.1,
+    "range_high": 1.25,
+    "falsification": "Enhancement outside [1.10, 1.25] falsifies SEC dynamics"
+  },
+  "criterion_2": {
+    "name": "Maximum Seed Mass",
+    "prediction": "PAC/SEC allows seeds in 10^4-10^6 M\u2609 range for z>10 SMBHs",
+    "threshold": 6.0,
+    "falsification": "If seeds must exceed 10^6 M\u2609, PAC/SEC is insufficient",
+    "predictions": [
+      {
+        "name": "UHZ-1",
+        "z": 10.073,
+        "log_m_obs": 7.5,
+        "log_seed_pac": 5.869596029012739,
+        "log_seed_lcdm": 7.229527347815918
+      },
+      {
+        "name": "GN-z11",
+        "z": 10.603,
+        "log_m_obs": 6.2,
+        "log_seed_pac": 4.680010481200653,
+        "log_seed_lcdm": 5.947855685746163
+      },
+      {
+        "name": "GLASS-z12",
+        "z": 12.5,
+        "log_m_obs": 6.0,
+        "log_seed_pac": 4.788956836032798,
+        "log_seed_lcdm": 5.799127361290067
+      }
+    ]
+  },
+  "criterion_3": {
+    "name": "Duty Cycle Evolution",
+    "prediction": "Duty cycle increases from ~60% at z=0 to ~72% at z>8",
+    "z_low_duty": 0.595,
+    "z_high_duty": 0.723,
+    "falsification": "If observed duty cycle decreases or stays constant with z",
+    "evolution": [
+      {
+        "z": 0,
+        "k_level": 2.40056993614698,
+        "duty_cycle": 0.5950380714547578,
+        "enhancement": 0.9627918242139867
+      },
+      {
+        "z": 1,
+        "k_level": 0.6916401137558055,
+        "duty_cycle": 0.6891205385252582,
+        "enhancement": 1.115020453679499
+      },
+      {
+        "z": 2,
+        "k_level": 0.24120854892136645,
+        "duty_cycle": 0.7118502892018853,
+        "enhancement": 1.1517979628300925
+      },
+      {
+        "z": 4,
+        "k_level": 0.05533466212150184,
+        "duty_cycle": 0.7209361170305402,
+        "enhancement": 1.1664991410727859
+      },
+      {
+        "z": 6,
+        "k_level": 0.020387258020669208,
+        "duty_cycle": 0.7226246634942103,
+        "enhancement": 1.1692312666425875
+      },
+      {
+        "z": 8,
+        "k_level": 0.00962446406993478,
+        "duty_cycle": 0.7231434174234787,
+        "enhancement": 1.1700706281319413
+      },
+      {
+        "z": 10,
+        "k_level": 0.0052785011658231795,
+        "duty_cycle": 0.7233527179102268,
+        "enhancement": 1.1704092834333617
+      },
+      {
+        "z": 12,
+        "k_level": 0.0031999113153384773,
+        "duty_cycle": 0.723452787726997,
+        "enhancement": 1.1705711997981438
+      },
+      {
+        "z": 15,
+        "k_level": 0.0017171458950657748,
+        "duty_cycle": 0.7235241590256223,
+        "enhancement": 1.1706866809851408
+      }
+    ]
+  },
+  "criterion_4": {
+    "name": "\u03c6-Scaling Signature",
+    "prediction": "Run-length ratio = \u03c6 = 1.6180 at z~0, \u03c6\u00b2 = 2.6180 at z>8",
+    "phi": 1.618033988749895,
+    "phi_squared": 2.618033988749895,
+    "falsification": "If observed ratios differ significantly from \u03c6 or \u03c6\u00b2"
+  },
+  "summary": {
+    "n_criteria": 4,
+    "all_derived": true,
+    "distinguishing": true,
+    "note": "These predictions differ from \u039bCDM which has no specific duty cycle or enhancement predictions"
+  }
+}

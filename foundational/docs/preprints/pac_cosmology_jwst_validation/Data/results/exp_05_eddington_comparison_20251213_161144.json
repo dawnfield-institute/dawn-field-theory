@@ -1,0 +1,125 @@
+{
+  "experiment": "exp_05_eddington_comparison",
+  "timestamp": "2025-12-13T16:11:44.015530",
+  "purpose": "Compare Eddington growth to PAC-enhanced growth",
+  "parameters": {
+    "t_edd_myr": 45.0,
+    "seeds": {
+      "stellar": 100,
+      "dc_low": 10000.0,
+      "dc_high": 100000.0,
+      "heavy": 1000000.0
+    }
+  },
+  "test_1_eddington": [
+    {
+      "name": "UHZ-1",
+      "z": 10.073,
+      "age_myr": 467.089722736222,
+      "log_m_eddington": 6.507877536401357,
+      "log_m_observed": 7.5,
+      "deficit_dex": 0.9921224635986432
+    },
+    {
+      "name": "GN-z11",
+      "z": 10.603,
+      "age_myr": 435.43780446306954,
+      "log_m_eddington": 6.202405237563962,
+      "log_m_observed": 6.2,
+      "deficit_dex": -0.002405237563961826
+    },
+    {
+      "name": "CEERS-1019",
+      "z": 8.68,
+      "age_myr": 571.4888452071556,
+      "log_m_eddington": 7.515432265393985,
+      "log_m_observed": 6.95,
+      "deficit_dex": -0.5654322653939845
+    },
+    {
+      "name": "GLASS-z12",
+      "z": 12.5,
+      "age_myr": 346.89475761290333,
+      "log_m_eddington": 5.347877311832222,
+      "log_m_observed": 6.0,
+      "deficit_dex": 0.6521226881677782
+    }
+  ],
+  "test_2_seeds": [
+    {
+      "name": "UHZ-1",
+      "z": 10.073,
+      "log_m_observed": 7.5,
+      "log_m_seed_required": 2.992122463598643,
+      "physical": "Direct collapse"
+    },
+    {
+      "name": "GN-z11",
+      "z": 10.603,
+      "log_m_observed": 6.2,
+      "log_m_seed_required": 1.9975947624360386,
+      "physical": "Stellar OK"
+    },
+    {
+      "name": "CEERS-1019",
+      "z": 8.68,
+      "log_m_observed": 6.95,
+      "log_m_seed_required": 1.4345677346060153,
+      "physical": "Stellar OK"
+    },
+    {
+      "name": "GLASS-z12",
+      "z": 12.5,
+      "log_m_observed": 6.0,
+      "log_m_seed_required": 2.652122688167778,
+      "physical": "Direct collapse"
+    }
+  ],
+  "test_3_pac": [
+    {
+      "name": "UHZ-1",
+      "z": 10.073,
+      "enhancement": 2.6147762374666983,
+      "t_edd_effective_myr": 17.209885631972025,
+      "log_m_seed_pac": -4.2870910635921895,
+      "log_m_seed_eddington": 2.992122463598643,
+      "seed_reduction_dex": 7.279213527190833
+    },
+    {
+      "name": "GN-z11",
+      "z": 10.603,
+      "enhancement": 2.6152017544765678,
+      "t_edd_effective_myr": 17.207085427719417,
+      "log_m_seed_pac": -4.79013755029879,
+      "log_m_seed_eddington": 1.9975947624360386,
+      "seed_reduction_dex": 6.787732312734828
+    },
+    {
+      "name": "CEERS-1019",
+      "z": 8.68,
+      "enhancement": 2.6131630925565466,
+      "t_edd_effective_myr": 17.220509553414427,
+      "log_m_seed_pac": -7.462724035423105,
+      "log_m_seed_eddington": 1.4345677346060153,
+      "seed_reduction_dex": 8.89729177002912
+    },
+    {
+      "name": "GLASS-z12",
+      "z": 12.5,
+      "enhancement": 2.6162345173602786,
+      "t_edd_effective_myr": 17.20029290241304,
+      "log_m_seed_pac": -2.7588321831027987,
+      "log_m_seed_eddington": 2.652122688167778,
+      "seed_reduction_dex": 5.410954871270577
+    }
+  ],
+  "assessment": {
+    "avg_enhancement": 2.614843900465023,
+    "avg_seed_reduction_dex": 7.09379812030634,
+    "avg_pac_seed_log": -4.824696208104221,
+    "assessment": "PAC allows stellar seeds (100 M\u2609) - TESTABLE",
+    "pac_helps": true
+  },
+  "success": true,
+  "conclusion": "Standard Eddington requires 10^3-10^5 M\u2609 seeds. PAC enhancement (2.61\u00d7) reduces requirement to 10^-4.8 M\u2609. PAC allows stellar seeds (100 M\u2609) - TESTABLE"
+}

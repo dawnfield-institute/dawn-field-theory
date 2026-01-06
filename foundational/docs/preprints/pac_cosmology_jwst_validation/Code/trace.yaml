@@ -1,0 +1,102 @@
+schema_version: '1.0'
+created: '2025-01-05T12:00:00.000000'
+description: Traces code files back to their original repository locations
+source_repository: dawn-field-theory
+experiment_folder: foundational/experiments/pac_cosmology_validation
+
+files:
+  # Core modules
+  - local: core/constants.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/core/constants.py
+    repo: dawn-field-theory
+
+  - local: core/pac_cosmology.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/core/pac_cosmology.py
+    repo: dawn-field-theory
+
+  - local: core/pac_constraints.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/core/pac_constraints.py
+    repo: dawn-field-theory
+
+  - local: core/qbe_dynamics.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/core/qbe_dynamics.py
+    repo: dawn-field-theory
+
+  - local: core/sec_dynamics.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/core/sec_dynamics.py
+    repo: dawn-field-theory
+
+  # Experiment scripts
+  - local: experiments/exp_01_recursion_test.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_01_recursion_test.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_02_qbe_constraint.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_02_qbe_constraint.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_03_jwst_comparison.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_03_jwst_comparison.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_03b_jwst_redesigned.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_03b_jwst_redesigned.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_04_predictions.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_04_predictions.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_05_eddington_comparison.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_05_eddington_comparison.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_06_sec_dynamics.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_06_sec_dynamics.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_07_lcdm_comparison.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_07_lcdm_comparison.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_08_falsification_criteria.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_08_falsification_criteria.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_09_expanded_analysis.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_09_expanded_analysis.py
+    repo: dawn-field-theory
+
+  - local: experiments/exp_10_uhz1_heavy_seeds.py
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/scripts/exp_10_uhz1_heavy_seeds.py
+    repo: dawn-field-theory
+
+  # Results
+  - local: ../Data/results/exp_03b_jwst_redesigned.json
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/results/exp_03b_jwst_redesigned_20251213_163555.json
+    repo: dawn-field-theory
+
+  - local: ../Data/results/exp_07_lcdm_comparison.json
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/results/exp_07_lcdm_comparison_20251213_163217.json
+    repo: dawn-field-theory
+
+  - local: ../Data/results/exp_08_falsification.json
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/results/exp_08_falsification_20251213_163345.json
+    repo: dawn-field-theory
+
+  - local: ../Data/results/exp_09_expanded.json
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/results/exp_09_expanded_20251213_180057.json
+    repo: dawn-field-theory
+
+  - local: ../Data/results/exp_10_uhz1_heavy_seeds.json
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/results/exp_10_uhz1_heavy_seeds_20251213_180546.json
+    repo: dawn-field-theory
+
+  # Journals
+  - local: journals/2025-12-13_framework_design.md
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/journals/2025-12-13_framework_design.md
+    repo: dawn-field-theory
+
+  - local: journals/2025-12-13_pac_sec_information_dynamics.md
+    source: dawn-field-theory/foundational/experiments/pac_cosmology_validation/journals/2025-12-13_pac_sec_information_dynamics.md
+    repo: dawn-field-theory
