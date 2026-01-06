@@ -1,0 +1,119 @@
+{
+  "experiment": "exp_12_zeckendorf_validation",
+  "timestamp": "2026-01-06T16:59:43.800554",
+  "tests": {
+    "zeckendorf_representations": {
+      "1": {
+        "zeckendorf": "1",
+        "fibonacci_sum": "F_1=1"
+      },
+      "2": {
+        "zeckendorf": "10",
+        "fibonacci_sum": "F_2=2"
+      },
+      "3": {
+        "zeckendorf": "100",
+        "fibonacci_sum": "F_3=3"
+      },
+      "4": {
+        "zeckendorf": "101",
+        "fibonacci_sum": "F_3=3 + F_1=1"
+      },
+      "5": {
+        "zeckendorf": "1000",
+        "fibonacci_sum": "F_4=5"
+      },
+      "6": {
+        "zeckendorf": "1001",
+        "fibonacci_sum": "F_4=5 + F_1=1"
+      },
+      "7": {
+        "zeckendorf": "1010",
+        "fibonacci_sum": "F_4=5 + F_2=2"
+      },
+      "8": {
+        "zeckendorf": "10000",
+        "fibonacci_sum": "F_5=8"
+      },
+      "9": {
+        "zeckendorf": "10001",
+        "fibonacci_sum": "F_5=8 + F_1=1"
+      },
+      "10": {
+        "zeckendorf": "10010",
+        "fibonacci_sum": "F_5=8 + F_2=2"
+      },
+      "11": {
+        "zeckendorf": "10100",
+        "fibonacci_sum": "F_5=8 + F_3=3"
+      },
+      "12": {
+        "zeckendorf": "10101",
+        "fibonacci_sum": "F_5=8 + F_3=3 + F_1=1"
+      },
+      "13": {
+        "zeckendorf": "100000",
+        "fibonacci_sum": "F_6=13"
+      },
+      "14": {
+        "zeckendorf": "100001",
+        "fibonacci_sum": "F_6=13 + F_1=1"
+      },
+      "15": {
+        "zeckendorf": "100010",
+        "fibonacci_sum": "F_6=13 + F_2=2"
+      },
+      "16": {
+        "zeckendorf": "100100",
+        "fibonacci_sum": "F_6=13 + F_3=3"
+      },
+      "17": {
+        "zeckendorf": "100101",
+        "fibonacci_sum": "F_6=13 + F_3=3 + F_1=1"
+      },
+      "18": {
+        "zeckendorf": "101000",
+        "fibonacci_sum": "F_6=13 + F_4=5"
+      },
+      "19": {
+        "zeckendorf": "101001",
+        "fibonacci_sum": "F_6=13 + F_4=5 + F_1=1"
+      },
+      "20": {
+        "zeckendorf": "101010",
+        "fibonacci_sum": "F_6=13 + F_4=5 + F_2=2"
+      }
+    },
+    "zeckendorf_property": {
+      "range_checked": [
+        1,
+        1000
+      ],
+      "violations": [],
+      "property_holds": true
+    },
+    "roundtrip": {
+      "range_checked": [
+        1,
+        1000
+      ],
+      "errors": 0,
+      "all_correct": true
+    },
+    "phi_powers": {
+      "phi_minus_2": "0.01",
+      "phi_minus_1": "0.1",
+      "phi_0": "1.0",
+      "phi_1": "10.0",
+      "phi_2": "100.0",
+      "all_exact": true
+    }
+  },
+  "conclusion": {
+    "zeckendorf_unique": true,
+    "no_consecutive_ones": true,
+    "phi_exact_representation": true,
+    "pac_recursion_builtin": true,
+    "summary": "Base-\u03c6 is the natural coordinate system for PAC"
+  }
+}
