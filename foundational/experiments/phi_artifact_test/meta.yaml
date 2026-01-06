@@ -1,0 +1,24 @@
+schema_version: "2.0"
+description: "Tests whether φ appearances in PAC/SEC are artifacts of framework construction vs genuine domain properties"
+semantic_scope: "validation"
+proficiency_level: "research"
+hypothesis: "If φ is baked into PAC/SEC, it will appear even in null domains and disappear under alternative recursions"
+falsification_target: "PAC/SEC cross-domain φ convergence"
+
+files:
+  - "[exp_01_null_domain.py]": "Apply PAC/SEC to randomized data where no structure exists"
+  - "[exp_02_alternative_recursion.py]": "Replace Fibonacci with other recursions on same domains"
+  - "[exp_03_anti_phi_construction.py]": "Synthetic systems designed to NOT have golden structure"
+  - "[exp_04_blind_detection_baseline.py]": "Compare PAC detection vs naive ratio-finding"
+  - "[README.md]": "Experiment overview and hypothesis"
+
+child_directories:
+  - name: "results"
+    description: "JSON outputs from experiments"
+  - name: "journals"
+    description: "Daily research logs"
+  - name: "scripts"
+    description: "Experiment scripts"
+
+validation_type: "automated"
+estimated_context_weight: 0.9

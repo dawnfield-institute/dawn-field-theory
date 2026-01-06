@@ -1,0 +1,270 @@
+{
+  "recursion_limits": {
+    "fibonacci": {
+      "expected": 1.618033988749895,
+      "observed": 1.618033988749895,
+      "difference": 0.0,
+      "symbol": "\u03c6"
+    },
+    "tribonacci": {
+      "expected": 1.839,
+      "observed": 1.839286755214161,
+      "difference": 0.00028675521416099414,
+      "symbol": "tribonacci"
+    },
+    "lucas": {
+      "expected": 1.618033988749895,
+      "observed": 1.618033988749895,
+      "difference": 0.0,
+      "symbol": "\u03c6"
+    },
+    "pell": {
+      "expected": 2.414213562373095,
+      "observed": 2.414213562373095,
+      "difference": 0.0,
+      "symbol": "1+\u221a2"
+    },
+    "exponential_2": {
+      "expected": 2.0,
+      "observed": 2.0,
+      "difference": 0.0,
+      "symbol": "2"
+    },
+    "exponential_e": {
+      "expected": 2.718281828459045,
+      "observed": 2.718281828459045,
+      "difference": 0.0,
+      "symbol": "e"
+    },
+    "linear": {
+      "expected": 1.0,
+      "observed": 1.002022312922302,
+      "difference": 0.0020223129223020386,
+      "symbol": "1"
+    }
+  },
+  "domain_analyses": {
+    "prime_gaps": {
+      "convergent_ratio": 1.7399999999340447,
+      "ratio_std": 1.655750920524938,
+      "dist_to_phi": 0.12196601118414985,
+      "dist_to_2": 0.26000000006595525,
+      "dist_to_e": 0.9782818285250003,
+      "dist_to_sqrt2_plus_1": 0.6742135624390502,
+      "dist_to_tribonacci": 0.09900000006595522,
+      "is_phi": "False",
+      "closest_constant": "tribonacci"
+    },
+    "rule110": {
+      "convergent_ratio": 1.0282349491139438,
+      "ratio_std": 0.1435493667281537,
+      "dist_to_phi": 0.5897990396359512,
+      "dist_to_2": 0.9717650508860562,
+      "dist_to_e": 1.6900468793451013,
+      "dist_to_sqrt2_plus_1": 1.3859786132591512,
+      "dist_to_tribonacci": 0.8107650508860562,
+      "is_phi": "False",
+      "closest_constant": "phi"
+    },
+    "jwst_masses": {
+      "convergent_ratio": 5.690217786615203,
+      "ratio_std": 11.779063412136185,
+      "dist_to_phi": 4.072183797865308,
+      "dist_to_2": 3.690217786615203,
+      "dist_to_e": 2.9719359581561577,
+      "dist_to_sqrt2_plus_1": 3.276004224242108,
+      "dist_to_tribonacci": 3.851217786615203,
+      "is_phi": "False",
+      "closest_constant": "e"
+    },
+    "pure_fibonacci": {
+      "convergent_ratio": 1.618033988749895,
+      "ratio_std": 1.5700924586837752e-16,
+      "dist_to_phi": 0.0,
+      "dist_to_2": 0.3819660112501051,
+      "dist_to_e": 1.1002478397091502,
+      "dist_to_sqrt2_plus_1": 0.7961795736232,
+      "dist_to_tribonacci": 0.22096601125010507,
+      "is_phi": "True",
+      "closest_constant": "phi"
+    },
+    "random_walk": {
+      "convergent_ratio": 0.9984290130434713,
+      "ratio_std": 0.012269455783107876,
+      "dist_to_phi": 0.6196049757064236,
+      "dist_to_2": 1.0015709869565286,
+      "dist_to_e": 1.7198528154155737,
+      "dist_to_sqrt2_plus_1": 1.4157845493296235,
+      "dist_to_tribonacci": 0.8405709869565287,
+      "is_phi": "False",
+      "closest_constant": "phi"
+    }
+  },
+  "cross_tests": {
+    "prime_gaps": {
+      "fibonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 1.2753419617197965
+      },
+      "tribonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 1.0785279178261995
+      },
+      "lucas": {
+        "domain_finds_phi": "False",
+        "correlation": 1.2753419617197967
+      },
+      "pell": {
+        "domain_finds_phi": "False",
+        "correlation": 0.8298976700707079
+      },
+      "exponential_2": {
+        "domain_finds_phi": "False",
+        "correlation": 0.9843570228559004
+      },
+      "exponential_e": {
+        "domain_finds_phi": "False",
+        "correlation": 0.7585943299498998
+      },
+      "linear": {
+        "domain_finds_phi": "False",
+        "correlation": 16.981666666666662
+      }
+    },
+    "rule110": {
+      "fibonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 2.254695462202936
+      },
+      "tribonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 1.87683147997508
+      },
+      "lucas": {
+        "domain_finds_phi": "False",
+        "correlation": 2.2546954622029363
+      },
+      "pell": {
+        "domain_finds_phi": "False",
+        "correlation": 1.4451190750582545
+      },
+      "exponential_2": {
+        "domain_finds_phi": "False",
+        "correlation": 1.706360254679898
+      },
+      "exponential_e": {
+        "domain_finds_phi": "False",
+        "correlation": 1.3336028197432264
+      },
+      "linear": {
+        "domain_finds_phi": "False",
+        "correlation": 31.099206349206348
+      }
+    },
+    "jwst_masses": {
+      "fibonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 0
+      },
+      "tribonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 0
+      },
+      "lucas": {
+        "domain_finds_phi": "False",
+        "correlation": 0
+      },
+      "pell": {
+        "domain_finds_phi": "False",
+        "correlation": 0
+      },
+      "exponential_2": {
+        "domain_finds_phi": "False",
+        "correlation": 0
+      },
+      "exponential_e": {
+        "domain_finds_phi": "False",
+        "correlation": 0
+      },
+      "linear": {
+        "domain_finds_phi": "False",
+        "correlation": 0
+      }
+    },
+    "pure_fibonacci": {
+      "fibonacci": {
+        "domain_finds_phi": "True",
+        "correlation": 1.618033988749895
+      },
+      "tribonacci": {
+        "domain_finds_phi": "True",
+        "correlation": 1.5060655793142708
+      },
+      "lucas": {
+        "domain_finds_phi": "True",
+        "correlation": 1.618033988749895
+      },
+      "pell": {
+        "domain_finds_phi": "True",
+        "correlation": 1.3440825170409967
+      },
+      "exponential_2": {
+        "domain_finds_phi": "True",
+        "correlation": 1.4472135954999579
+      },
+      "exponential_e": {
+        "domain_finds_phi": "True",
+        "correlation": 1.2942671703142818
+      },
+      "linear": {
+        "domain_finds_phi": "True",
+        "correlation": 2.5756733089748964
+      }
+    },
+    "random_walk": {
+      "fibonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 2.573952659843823
+      },
+      "tribonacci": {
+        "domain_finds_phi": "False",
+        "correlation": 2.160488472165997
+      },
+      "lucas": {
+        "domain_finds_phi": "False",
+        "correlation": 2.5739526598438234
+      },
+      "pell": {
+        "domain_finds_phi": "False",
+        "correlation": 1.6885128449327917
+      },
+      "exponential_2": {
+        "domain_finds_phi": "False",
+        "correlation": 1.9742627833750355
+      },
+      "exponential_e": {
+        "domain_finds_phi": "False",
+        "correlation": 1.566041465185969
+      },
+      "linear": {
+        "domain_finds_phi": "False",
+        "correlation": 48.262681151753874
+      }
+    }
+  },
+  "interpretation": {
+    "structured_phi_count": 1,
+    "structured_total": 3,
+    "null_phi_count": 0,
+    "null_total": 2,
+    "recursion_independent": true,
+    "artifact_hypothesis": "rejected"
+  },
+  "metadata": {
+    "timestamp": "2026-01-06T09:57:58.900009",
+    "experiment": "exp_02_alternative_recursion",
+    "hypothesis": "\u03c6 appears due to Fibonacci recursion, not domain structure",
+    "phi": 1.618033988749895,
+    "tolerance": 0.05
+  }
+}

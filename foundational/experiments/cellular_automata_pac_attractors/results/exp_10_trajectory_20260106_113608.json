@@ -1,0 +1,570 @@
+{
+  "timestamp": "2026-01-06T11:36:07.153353",
+  "checkpoints": [
+    50,
+    100,
+    150,
+    200,
+    250,
+    300
+  ],
+  "xi": 1.0571428,
+  "trajectories": [
+    {
+      "rule": 0,
+      "class": "CLASS_I",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        }
+      ]
+    },
+    {
+      "rule": 8,
+      "class": "CLASS_I",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 100.0,
+          "distance_from_xi": 98.9428572
+        }
+      ]
+    },
+    {
+      "rule": 4,
+      "class": "CLASS_II",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 13.129134230787331,
+          "distance_from_xi": 12.071991430787332
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        }
+      ]
+    },
+    {
+      "rule": 13,
+      "class": "UNKNOWN",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.4983830347396414,
+          "distance_from_xi": 0.5587597652603586
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 0.0018995930986333974,
+          "distance_from_xi": 1.0552432069013666
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 0.4116409582282226,
+          "distance_from_xi": 0.6455018417717775
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 0.6833972490350636,
+          "distance_from_xi": 0.37374555096493645
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 0.8315464470843601,
+          "distance_from_xi": 0.22559635291563995
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 0.920286482895139,
+          "distance_from_xi": 0.136856317104861
+        }
+      ]
+    },
+    {
+      "rule": 108,
+      "class": "UNKNOWN",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 13.129134230787331,
+          "distance_from_xi": 12.071991430787332
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 13.129134230787335,
+          "distance_from_xi": 12.071991430787335
+        }
+      ]
+    },
+    {
+      "rule": 30,
+      "class": "CLASS_III",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.8385078666193554,
+          "distance_from_xi": 0.21863493338064466
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 1.953003694144628,
+          "distance_from_xi": 0.895860894144628
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 2.491041733029953,
+          "distance_from_xi": 1.4338989330299527
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 2.9562318308025786,
+          "distance_from_xi": 1.8990890308025785
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 3.2144021578043356,
+          "distance_from_xi": 2.1572593578043353
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 3.469358027581883,
+          "distance_from_xi": 2.412215227581883
+        }
+      ]
+    },
+    {
+      "rule": 45,
+      "class": "CLASS_III",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.195300780821234,
+          "distance_from_xi": 0.861842019178766
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 0.5582568990641954,
+          "distance_from_xi": 0.49888590093580465
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 1.3220329470504504,
+          "distance_from_xi": 0.26489014705045033
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 1.7454765869679028,
+          "distance_from_xi": 0.6883337869679027
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 2.157821695143894,
+          "distance_from_xi": 1.1006788951438942
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 2.441671334049256,
+          "distance_from_xi": 1.3845285340492561
+        }
+      ]
+    },
+    {
+      "rule": 90,
+      "class": "CLASS_III",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 2.567582424415266,
+          "distance_from_xi": 1.5104396244152658
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 3.2915378085382976,
+          "distance_from_xi": 2.2343950085382973
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 2.2462035271203074,
+          "distance_from_xi": 1.1890607271203073
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 1.9514686842574605,
+          "distance_from_xi": 0.8943258842574604
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 1.69184568557277,
+          "distance_from_xi": 0.6347028855727699
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 2.0356922275808205,
+          "distance_from_xi": 0.9785494275808204
+        }
+      ]
+    },
+    {
+      "rule": 150,
+      "class": "CLASS_III",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 1.6005146537404404,
+          "distance_from_xi": 0.5433718537404404
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 1.3181426137055487,
+          "distance_from_xi": 0.2609998137055487
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 1.2955566027843488,
+          "distance_from_xi": 0.23841380278434876
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 1.1914713139191653,
+          "distance_from_xi": 0.13432851391916523
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 1.135351252985336,
+          "distance_from_xi": 0.07820845298533596
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 1.0437909190381367,
+          "distance_from_xi": 0.01335188096186335
+        }
+      ]
+    },
+    {
+      "rule": 54,
+      "class": "CLASS_IV",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.49032953515593836,
+          "distance_from_xi": 0.5668132648440617
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 0.2527152156160619,
+          "distance_from_xi": 0.8044275843839381
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 0.2880924040347501,
+          "distance_from_xi": 0.7690503959652499
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 0.4114138544075576,
+          "distance_from_xi": 0.6457289455924424
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 0.5087943700558466,
+          "distance_from_xi": 0.5483484299441534
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 0.5843802338507584,
+          "distance_from_xi": 0.4727625661492416
+        }
+      ]
+    },
+    {
+      "rule": 106,
+      "class": "CLASS_IV",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 27.67281237290982,
+          "distance_from_xi": 26.61566957290982
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 27.723959714058807,
+          "distance_from_xi": 26.666816914058806
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 27.69832416298489,
+          "distance_from_xi": 26.641181362984888
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 27.723959714058807,
+          "distance_from_xi": 26.666816914058806
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 27.70856800226629,
+          "distance_from_xi": 26.65142520226629
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 27.723959714058807,
+          "distance_from_xi": 26.666816914058806
+        }
+      ]
+    },
+    {
+      "rule": 110,
+      "class": "CLASS_IV",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.9136474324777674,
+          "distance_from_xi": 0.1434953675222327
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 0.5427580897917914,
+          "distance_from_xi": 0.5143847102082086
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 0.921641715040914,
+          "distance_from_xi": 0.13550108495908608
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 1.0578703573748747,
+          "distance_from_xi": 0.0007275573748746211
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 0.9704606664421859,
+          "distance_from_xi": 0.08668213355781418
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 0.9419472023681561,
+          "distance_from_xi": 0.11519559763184395
+        }
+      ]
+    },
+    {
+      "rule": 124,
+      "class": "CLASS_IV",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.9136474324777674,
+          "distance_from_xi": 0.1434953675222327
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 0.5427580897917913,
+          "distance_from_xi": 0.5143847102082088
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 0.9216417150409142,
+          "distance_from_xi": 0.13550108495908586
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 1.0578703573748742,
+          "distance_from_xi": 0.000727557374874177
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 0.9704606664421859,
+          "distance_from_xi": 0.08668213355781418
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 0.9419472023681564,
+          "distance_from_xi": 0.11519559763184362
+        }
+      ]
+    },
+    {
+      "rule": 137,
+      "class": "CLASS_IV",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.8719875829719319,
+          "distance_from_xi": 0.18515521702806814
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 0.5387703989055591,
+          "distance_from_xi": 0.5183724010944409
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 0.8875366430453432,
+          "distance_from_xi": 0.16960615695465686
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 1.055308838542706,
+          "distance_from_xi": 0.0018339614572939755
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 0.9630113779894225,
+          "distance_from_xi": 0.09413142201057756
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 0.9434723543385038,
+          "distance_from_xi": 0.1136704456614962
+        }
+      ]
+    },
+    {
+      "rule": 193,
+      "class": "CLASS_IV",
+      "trajectory": [
+        {
+          "steps": 50,
+          "pa_ratio": 0.8719875829719319,
+          "distance_from_xi": 0.18515521702806814
+        },
+        {
+          "steps": 100,
+          "pa_ratio": 0.5387703989055593,
+          "distance_from_xi": 0.5183724010944407
+        },
+        {
+          "steps": 150,
+          "pa_ratio": 0.8875366430453432,
+          "distance_from_xi": 0.16960615695465686
+        },
+        {
+          "steps": 200,
+          "pa_ratio": 1.0553088385427056,
+          "distance_from_xi": 0.0018339614572944196
+        },
+        {
+          "steps": 250,
+          "pa_ratio": 0.9630113779894224,
+          "distance_from_xi": 0.09413142201057767
+        },
+        {
+          "steps": 300,
+          "pa_ratio": 0.9434723543385038,
+          "distance_from_xi": 0.1136704456614962
+        }
+      ]
+    }
+  ],
+  "class_i_summary": {
+    "mean_final_pa": 100.0,
+    "mean_final_distance": 98.9428572
+  },
+  "class_ii_summary": {
+    "mean_final_pa": 13.129134230787335,
+    "mean_final_distance": 12.071991430787335
+  },
+  "class_iii_summary": {
+    "mean_final_pa": 2.247628127062524,
+    "mean_final_distance": 1.1971612675434558
+  },
+  "class_iv_summary": {
+    "mean_final_pa": 5.346529843553814,
+    "mean_final_distance": 4.599551927799122
+  }
+}

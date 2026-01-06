@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-01-06T12:37:56.952049",
+  "falsification_target": "Is SEC prime separation robust without \u03c6-targeting?",
+  "config_results": [
+    {
+      "name": "Default",
+      "config": {
+        "n_max": 10000,
+        "factor_base_size": 10,
+        "window": 101,
+        "lam": 0.99,
+        "name": "Default"
+      },
+      "enrichment": 3.4881126119132637,
+      "prime_rate_above": 0.34021632251720746,
+      "prime_rate_below": 0.09753593429158111,
+      "frac_positive": 0.6103220644128826
+    },
+    {
+      "name": "Small FB",
+      "config": {
+        "n_max": 10000,
+        "factor_base_size": 5,
+        "window": 101,
+        "lam": 0.99,
+        "name": "Small FB"
+      },
+      "enrichment": 5.78955921310832,
+      "prime_rate_above": 0.3395432692307692,
+      "prime_rate_below": 0.05864751645721125,
+      "frac_positive": 0.6657331466293258
+    },
+    {
+      "name": "Large FB",
+      "config": {
+        "n_max": 10000,
+        "factor_base_size": 20,
+        "window": 101,
+        "lam": 0.99,
+        "name": "Large FB"
+      },
+      "enrichment": 2.310593450121425,
+      "prime_rate_above": 0.32220309810671255,
+      "prime_rate_below": 0.13944603629417382,
+      "frac_positive": 0.581116223244649
+    },
+    {
+      "name": "Small Window",
+      "config": {
+        "n_max": 10000,
+        "factor_base_size": 10,
+        "window": 51,
+        "lam": 0.99,
+        "name": "Small Window"
+      },
+      "enrichment": 3.5561199224663618,
+      "prime_rate_above": 0.3397331597787179,
+      "prime_rate_below": 0.09553478712357218,
+      "frac_positive": 0.6147229445889177
+    },
+    {
+      "name": "Large Window",
+      "config": {
+        "n_max": 10000,
+        "factor_base_size": 10,
+        "window": 201,
+        "lam": 0.99,
+        "name": "Large Window"
+      },
+      "enrichment": 3.660251012903272,
+      "prime_rate_above": 0.3425016371971185,
+      "prime_rate_below": 0.093573264781491,
+      "frac_positive": 0.6109221844368874
+    },
+    {
+      "name": "Low Lambda",
+      "config": {
+        "n_max": 10000,
+        "factor_base_size": 10,
+        "window": 101,
+        "lam": 0.95,
+        "name": "Low Lambda"
+      },
+      "enrichment": 3.8742406163386107,
+      "prime_rate_above": 0.34626767510687273,
+      "prime_rate_below": 0.08937691521961184,
+      "frac_positive": 0.6083216643328666
+    },
+    {
+      "name": "Smaller N",
+      "config": {
+        "n_max": 5000,
+        "factor_base_size": 10,
+        "window": 101,
+        "lam": 0.99,
+        "name": "Smaller N"
+      },
+      "enrichment": 3.5105217788144616,
+      "prime_rate_above": 0.37178642056690836,
+      "prime_rate_below": 0.10590631364562118,
+      "frac_positive": 0.6070428171268507
+    },
+    {
+      "name": "Larger N",
+      "config": {
+        "n_max": 20000,
+        "factor_base_size": 10,
+        "window": 101,
+        "lam": 0.99,
+        "name": "Larger N"
+      },
+      "enrichment": 3.454979898809832,
+      "prime_rate_above": 0.31352863726135616,
+      "prime_rate_below": 0.09074687738975273,
+      "frac_positive": 0.6076607660766077
+    }
+  ],
+  "summary": {
+    "n_valid": 8,
+    "mean_enrichment": 3.7055473130594434,
+    "std_enrichment": 0.9006897667248811,
+    "min_enrichment": 2.310593450121425,
+    "max_enrichment": 5.78955921310832
+  },
+  "verdict": "ROBUST",
+  "explanation": "All configs show enrichment > 1.5\u00d7 (min=2.31\u00d7)",
+  "phi_comparison": {
+    "mean_frac_positive": 0.6132302263561235,
+    "phi_inv": 0.618033988749895,
+    "difference": 0.00480376239377156,
+    "matches_phi": true
+  }
+}
