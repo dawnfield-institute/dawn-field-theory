@@ -1,0 +1,10 @@
+{
+  "experiment": "exp_10_base_agnostic_pac",
+  "timestamp": "2026-01-06T16:59:27.328345",
+  "hypothesis": "PAC relationships are base-invariant",
+  "tests": [
+    {
+      "name": "Golden Ratio Identity",
+      "formula": "\u03c6\u00b2 - \u03c6 - 1 = 0",
+      "deviation": 0.0,
+      "is_invariant": 
