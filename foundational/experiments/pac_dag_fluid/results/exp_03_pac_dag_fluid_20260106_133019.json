@@ -1,0 +1,69 @@
+{
+  "experiment": "pac_dag_fluid_conservative",
+  "timestamp": "2026-01-06T13:30:19.400907",
+  "parameters": {
+    "total_value": 100.0,
+    "rows": 8,
+    "cols": 12,
+    "num_steps": 500,
+    "dt": 0.1,
+    "viscosity": 0.05
+  },
+  "structure": {
+    "total_nodes": 96,
+    "layers": 8
+  },
+  "conservation": {
+    "initial_value": 100.0,
+    "final_value": 100.0,
+    "max_error": 2.842170943040401e-14,
+    "final_error": 0.0,
+    "machine_precision_maintained": true
+  },
+  "power_spectrum": {
+    "slope": null,
+    "kolmogorov_expected": -1.6666666666666667,
+    "final_spectrum": [
+      [
+        1.0,
+        69.4445438285275
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ],
+      [
+        5.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        7.0,
+        0.0
+      ],
+      [
+        8.0,
+        0.0
+      ]
+    ]
+  },
+  "xi_analysis": {
+    "pa_ratio": null,
+    "expected_xi": 1.0571198664289054
+  },
+  "constants_used": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289054
+  }
+}

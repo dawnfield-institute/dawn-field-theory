@@ -1,0 +1,72 @@
+{
+  "experiment": "pac_tree_blowup",
+  "timestamp": "2026-01-06T13:23:17.676921",
+  "parameters": {
+    "root_value": 100.0,
+    "levels": 6,
+    "branch_factor": 3,
+    "diffusion_rate": 0.3,
+    "integration_rate": 0.2
+  },
+  "initial_state": {
+    "root_smoothness": 1.0,
+    "leaf_discreteness": 0.5916222421823899
+  },
+  "amplitude_analysis": [
+    {
+      "amplitude": 0.01,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.6511409949834561
+    },
+    {
+      "amplitude": 0.05,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.6360732924574573
+    },
+    {
+      "amplitude": 0.1,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.648737307522016
+    },
+    {
+      "amplitude": 0.2,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.702813547967918
+    },
+    {
+      "amplitude": 0.5,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.6939360937372268
+    }
+  ],
+  "depth_analysis": [
+    {
+      "injection_depth": 1,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.647413980579331
+    },
+    {
+      "injection_depth": 2,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.6852594394736202
+    },
+    {
+      "injection_depth": 3,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.7266384829785651
+    },
+    {
+      "injection_depth": 4,
+      "root_smoothness": 1.0,
+      "leaf_discreteness": 0.7093806606264983
+    }
+  ],
+  "findings": {
+    "root_remains_smooth": true,
+    "leaf_fragments_with_amplitude": false
+  },
+  "constants_used": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289054
+  }
+}

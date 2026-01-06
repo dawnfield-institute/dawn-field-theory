@@ -1,0 +1,25 @@
+{
+  "experiment": "ab_testing_prediction",
+  "timestamp": "2026-01-06T13:31:50.525463",
+  "threshold": 3.5699456,
+  "main_test": {
+    "n_samples": 200,
+    "control_accuracy": 0.5,
+    "treatment_accuracy": 0.77,
+    "improvement": 0.27,
+    "z_statistic": 5.608290087036864,
+    "p_value": 2.0433533309827112e-08
+  },
+  "wrong_threshold_test": {
+    "correct_threshold_accuracy": 0.77,
+    "wrong_high_accuracy": 0.73,
+    "wrong_low_accuracy": 0.84,
+    "correct_threshold": 3.5699456,
+    "wrong_high": 3.7484428800000003,
+    "wrong_low": 3.39144832
+  },
+  "constants": {
+    "xi": 1.0571198664289054,
+    "feigenbaum": 3.5699456
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "experiment": "pac_tree_basic",
+  "timestamp": "2026-01-06T13:33:15.212532",
+  "parameters": {
+    "root_value": 100.0,
+    "levels": 6,
+    "branch_factor": 3,
+    "sec_decay": 0.5
+  },
+  "metrics": {
+    "total_nodes": 364,
+    "max_depth": 5,
+    "conservation_verified": true,
+    "root_smoothness": 1.0,
+    "leaf_discreteness": 0.59162224218239,
+    "hypothesis_validated": true
+  },
+  "level_analysis": [
+    {
+      "depth": 0,
+      "num_nodes": 1,
+      "total_value": 100.0,
+      "smoothness": 1.0,
+      "discreteness": 0.0,
+      "avg_sec_field": 1.0
+    },
+    {
+      "depth": 1,
+      "num_nodes": 3,
+      "total_value": 100.0,
+      "smoothness": 3.7266531724513362e-06,
+      "discreteness": 0.29781149867344037,
+      "avg_sec_field": 0.20217688657087782
+    },
+    {
+      "depth": 2,
+      "num_nodes": 9,
+      "total_value": 100.0,
+      "smoothness": 0.0003118723257258398,
+      "discreteness": 0.40273131200955414,
+      "avg_sec_field": 0.04087549346349359
+    },
+    {
+      "depth": 3,
+      "num_nodes": 27,
+      "total_value": 100.0,
+      "smoothness": 0.014026218902752047,
+      "discreteness": 0.478486872875987,
+      "avg_sec_field": 0.008264080005497401
+    },
+    {
+      "depth": 4,
+      "num_nodes": 81,
+      "total_value": 100.0,
+      "smoothness": 0.11761961346672105,
+      "discreteness": 0.5396471296896368,
+      "avg_sec_field": 0.0016708059658841078
+    },
+    {
+      "depth": 5,
+      "num_nodes": 243,
+      "total_value": 100.0,
+      "smoothness": 0.34586420343118396,
+      "discreteness": 0.59162224218239,
+      "avg_sec_field": 0.0003377983482464971
+    }
+  ],
+  "constants_used": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289054
+  }
+}

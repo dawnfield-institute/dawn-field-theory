@@ -1,0 +1,29 @@
+{
+  "experiment": "lorenz_analysis",
+  "timestamp": "2026-01-06T13:36:23.889253",
+  "parameters": {
+    "sigma": 10,
+    "rho": 28,
+    "beta": 2.6666666666666665
+  },
+  "lyapunov_exponents": [
+    0.8918287131739652,
+    0.031035288697890375,
+    -14.62295552961049
+  ],
+  "dimensions": {
+    "kaplan_yorke": 2.0631106345090853,
+    "correlation": 2.033718128381353,
+    "predicted_xi": 2.0571198664289057,
+    "observed_literature": 2.06
+  },
+  "errors": {
+    "predicted_vs_observed": 0.1398123092764272,
+    "ky_vs_observed": 0.15100167519831162
+  },
+  "xi_analysis": {
+    "xi": 1.0571198664289054,
+    "xi_minus_1": 0.05711986642890543,
+    "dimension_formula": "2 + (\u03be-1)"
+  }
+}

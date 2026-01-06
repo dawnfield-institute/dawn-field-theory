@@ -1,0 +1,45 @@
+{
+  "experiment": "cross_domain_suite",
+  "timestamp": "2026-01-06T13:36:29.931670",
+  "xi": 1.0571198664289054,
+  "domains": {
+    "logistic": {
+      "threshold": 3.567708851730398,
+      "known_value": 3.5699456,
+      "xi_relationship": "r*/3.37",
+      "xi_ratio": 1.0586673150535304,
+      "error": 0.0014638345884582242
+    },
+    "lorenz": {
+      "dimension_observed": 2.06,
+      "dimension_predicted": 2.0571198664289057,
+      "xi_relationship": "D = 2 + (\u03be-1)",
+      "error": 0.0013981230927642722
+    },
+    "three_body": {
+      "threshold": 0.15,
+      "xi_minus_1": 0.05711986642890543,
+      "xi_relationship": "\u03bc* \u2248 \u03be-1",
+      "ratio": 2.6260565610162683
+    },
+    "henon": {
+      "threshold": 1.4,
+      "xi_relationship": "a*/1.32 \u2248 \u03be",
+      "ratio": 1.0606060606060606
+    },
+    "statistics": {
+      "observed_ratios": [
+        1.0586673150535304,
+        1.0504226244065082,
+        2.6260565610162683,
+        1.0606060606060606
+      ],
+      "expected": 1.0571198664289054,
+      "mean_ratio": 1.4489381402705919,
+      "std": 0.6796203929318554,
+      "t_statistic": 0.998570915007525,
+      "p_value": 0.3915935631828066,
+      "mean_error_percent": 37.381465186896214
+    }
+  }
+}
