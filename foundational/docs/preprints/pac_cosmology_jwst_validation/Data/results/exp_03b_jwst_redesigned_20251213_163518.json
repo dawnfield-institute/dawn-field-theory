@@ -1,0 +1,123 @@
+{
+  "experiment": "exp_03b_jwst_comparison_redesigned",
+  "timestamp": "2025-12-13T16:35:18.445876",
+  "purpose": "Make actual testable predictions for JWST SMBHs",
+  "test_1_max_mass": {
+    "seed_mass": 2.0,
+    "results": [
+      {
+        "name": "UHZ-1",
+        "z": 10.073,
+        "log_m_obs": 7.5,
+        "log_m_max_lcdm": 2.2704726521840812,
+        "log_m_max_pac": 3.630403970987261,
+        "achievable_lcdm": "False",
+        "achievable_pac": "False"
+      },
+      {
+        "name": "GN-z11",
+        "z": 10.603,
+        "log_m_obs": 6.2,
+        "log_m_max_lcdm": 2.2521443142538375,
+        "log_m_max_pac": 3.5199895187993473,
+        "achievable_lcdm": "False",
+        "achievable_pac": "False"
+      },
+      {
+        "name": "CEERS-1019",
+        "z": 8.68,
+        "log_m_obs": 6.95,
+        "log_m_max_lcdm": 2.330925935923639,
+        "log_m_max_pac": 3.994474601093245,
+        "achievable_lcdm": "False",
+        "achievable_pac": "False"
+      },
+      {
+        "name": "GLASS-z12",
+        "z": 12.5,
+        "log_m_obs": 6.0,
+        "log_m_max_lcdm": 2.2008726387099333,
+        "log_m_max_pac": 3.211043163967202,
+        "achievable_lcdm": "False",
+        "achievable_pac": "False"
+      }
+    ],
+    "n_lcdm_achievable": 0,
+    "n_pac_achievable": 0
+  },
+  "test_2_phi_spacing": {
+    "sufficient_data": true,
+    "ratios": [
+      {
+        "m1": 7.5,
+        "m2": 6.95,
+        "ratio": 3.5481338923357533,
+        "log_phi_ratio": 2.6317345817299156,
+        "nearest_n": 3,
+        "deviation": 0.3682654182700844,
+        "consistent": "False"
+      },
+      {
+        "m1": 6.95,
+        "m2": 6.2,
+        "ratio": 5.62341325190349,
+        "log_phi_ratio": 3.588728975086249,
+        "nearest_n": 4,
+        "deviation": 0.4112710249137508,
+        "consistent": "False"
+      },
+      {
+        "m1": 6.2,
+        "m2": 6.0,
+        "ratio": 1.584893192461114,
+        "log_phi_ratio": 0.956994393356334,
+        "nearest_n": 1,
+        "deviation": 0.04300560664366604,
+        "consistent": "True"
+      }
+    ],
+    "n_consistent": 1,
+    "n_total": 3,
+    "fraction_consistent": 0.3333333333333333
+  },
+  "test_3_residuals": {
+    "results": [
+      {
+        "name": "UHZ-1",
+        "z": 10.073,
+        "log_m_obs": 7.5,
+        "log_m_max_pred": 3.630403970987261,
+        "residual": 3.869596029012739,
+        "status": "\u2717 EXCEEDS"
+      },
+      {
+        "name": "GN-z11",
+        "z": 10.603,
+        "log_m_obs": 6.2,
+        "log_m_max_pred": 3.5199895187993473,
+        "residual": 2.680010481200653,
+        "status": "\u2717 EXCEEDS"
+      },
+      {
+        "name": "CEERS-1019",
+        "z": 8.68,
+        "log_m_obs": 6.95,
+        "log_m_max_pred": 3.994474601093245,
+        "residual": 2.9555253989067554,
+        "status": "\u2717 EXCEEDS"
+      },
+      {
+        "name": "GLASS-z12",
+        "z": 12.5,
+        "log_m_obs": 6.0,
+        "log_m_max_pred": 3.211043163967202,
+        "residual": 2.788956836032798,
+        "status": "\u2717 EXCEEDS"
+      }
+    ],
+    "mean_residual": 3.0735221862882365,
+    "std_residual": 0.46996960154605855
+  },
+  "success": false,
+  "conclusion": "PAC/SEC predictions: 0/4 achievable, mean residual +3.074 dex. \u039bCDM realistic: only 0/4 achievable. \u03c6-spacing: 33% consistent."
+}

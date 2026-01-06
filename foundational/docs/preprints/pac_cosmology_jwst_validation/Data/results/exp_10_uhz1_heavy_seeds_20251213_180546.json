@@ -1,0 +1,130 @@
+{
+  "experiment": "exp_10_uhz1_heavy_seeds",
+  "timestamp": "2025-12-13T18:05:46.913241",
+  "section_1": {
+    "uhz1": {
+      "z": 10.073,
+      "log_m_bh": 7.5,
+      "log_m_bh_low": 7.0,
+      "log_m_bh_high": 8.0
+    },
+    "seed_tests": [
+      {
+        "log_seed": 4,
+        "log_max": 5.630403970987261,
+        "can_reach": false
+      },
+      {
+        "log_seed": 5,
+        "log_max": 6.630403970987261,
+        "can_reach": false
+      },
+      {
+        "log_seed": 5.5,
+        "log_max": 7.130403970987261,
+        "can_reach": false
+      },
+      {
+        "log_seed": 6,
+        "log_max": 7.630403970987261,
+        "can_reach": true
+      },
+      {
+        "log_seed": 6.5,
+        "log_max": 8.130403970987262,
+        "can_reach": true
+      },
+      {
+        "log_seed": 7.0,
+        "log_max": 8.630403970987262,
+        "can_reach": true
+      }
+    ],
+    "required_seed_lower": 5.369140625,
+    "required_seed_central": 5.873046875
+  },
+  "section_2": {
+    "super_eddington_for_lower": 1.2864321608040201,
+    "super_eddington_for_central": 1.5728643216080402,
+    "physically_plausible": true
+  },
+  "section_3": {
+    "n_dc_ok": 9,
+    "n_heavy_ok": 10,
+    "n_total": 10,
+    "comparisons": [
+      {
+        "name": "UHZ-1",
+        "z": 10.073,
+        "log_m_obs": 7.5,
+        "dc_ok": false,
+        "heavy_ok": true
+      },
+      {
+        "name": "GN-z11",
+        "z": 10.603,
+        "log_m_obs": 6.2,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "GLASS-z12",
+        "z": 12.5,
+        "log_m_obs": 6.0,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "CEERS-1019",
+        "z": 8.68,
+        "log_m_obs": 6.95,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "CEERS-746",
+        "z": 8.0,
+        "log_m_obs": 6.8,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "CEERS-2782",
+        "z": 5.242,
+        "log_m_obs": 7.2,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "CEERS-1670",
+        "z": 4.483,
+        "log_m_obs": 7.5,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "GLASS-38108",
+        "z": 6.936,
+        "log_m_obs": 6.5,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "GLASS-160133",
+        "z": 6.232,
+        "log_m_obs": 7.8,
+        "dc_ok": true,
+        "heavy_ok": true
+      },
+      {
+        "name": "GLASS-150029",
+        "z": 4.015,
+        "log_m_obs": 6.3,
+        "dc_ok": true,
+        "heavy_ok": true
+      }
+    ]
+  },
+  "conclusion": "- UHZ-1 is CONSISTENT with PAC + heavy seeds (log M_seed ~ 5.4)\n- Heavy seeds (10^5.5 - 10^6 M\u2609) are physically plausible from direct collapse\n- The original Goulding+ paper explicitly invokes heavy seeds\n- PAC explains WHY growth is fast; heavy seeds explain WHY mass is high early\n- No tension with PAC framework - tension is for \u039bCDM even with heavy seeds\n\nPAC STATUS: CONSISTENT (with heavy seed assumption)",
+  "success": true
+}

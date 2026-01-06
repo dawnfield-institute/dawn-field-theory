@@ -1,0 +1,15 @@
+{
+  "experiment": "exp_10_uhz1_heavy_seeds",
+  "timestamp": "2025-12-13T18:03:36.579485",
+  "section_1": {
+    "uhz1": {
+      "z": 10.073,
+      "log_m_bh": 7.5,
+      "log_m_bh_low": 7.0,
+      "log_m_bh_high": 8.0
+    },
+    "seed_tests": [
+      {
+        "log_seed": 4,
+        "log_max": 8.152183818382301,
+        "can_reach": 

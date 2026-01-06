@@ -1,0 +1,114 @@
+{
+  "catalog_version": "1.0",
+  "created": "2025-01-05",
+  "description": "JWST High-Redshift SMBH Catalog for PAC Validation",
+  "objects": [
+    {
+      "name": "GLASS-z12",
+      "redshift": 12.5,
+      "log_m_bh": 6.0,
+      "log_m_bh_err": 0.5,
+      "log_m_star": 8.0,
+      "source": "Castellano+2024",
+      "notes": "Highest z candidate (photometric)"
+    },
+    {
+      "name": "GN-z11",
+      "redshift": 10.603,
+      "log_m_bh": 6.2,
+      "log_m_bh_err": 0.3,
+      "log_m_star": 9.0,
+      "source": "Maiolino+2023",
+      "notes": "5x super-Eddington, outflow detected"
+    },
+    {
+      "name": "UHZ-1",
+      "redshift": 10.073,
+      "log_m_bh": 7.5,
+      "log_m_bh_low": 7.0,
+      "log_m_bh_high": 8.0,
+      "log_m_star": 6.85,
+      "source": "Goulding+2023",
+      "notes": "X-ray detected, Compton-thick, heavy seed required"
+    },
+    {
+      "name": "CEERS-1019",
+      "redshift": 8.68,
+      "log_m_bh": 7.0,
+      "log_m_bh_err": 0.4,
+      "log_m_star": 9.5,
+      "source": "Larson+2023",
+      "notes": "Spectroscopic AGN"
+    },
+    {
+      "name": "CEERS-746",
+      "redshift": 8.0,
+      "log_m_bh": 6.8,
+      "log_m_bh_err": 0.4,
+      "source": "CEERS",
+      "notes": "Broad Halpha"
+    },
+    {
+      "name": "GLASS-38108",
+      "redshift": 6.94,
+      "log_m_bh": 6.5,
+      "log_m_bh_err": 0.3,
+      "source": "Harikane+2023",
+      "notes": "Census sample"
+    },
+    {
+      "name": "GLASS-160133",
+      "redshift": 6.23,
+      "log_m_bh": 7.8,
+      "log_m_bh_err": 0.4,
+      "source": "Harikane+2023",
+      "notes": "Census sample"
+    },
+    {
+      "name": "CEERS-2782",
+      "redshift": 5.242,
+      "log_m_bh": 7.2,
+      "log_m_bh_err": 0.3,
+      "source": "Harikane+2023",
+      "notes": "Census sample"
+    },
+    {
+      "name": "CEERS-1670",
+      "redshift": 4.483,
+      "log_m_bh": 7.5,
+      "log_m_bh_err": 0.3,
+      "source": "Harikane+2023",
+      "notes": "Census sample"
+    },
+    {
+      "name": "GLASS-150029",
+      "redshift": 4.01,
+      "log_m_bh": 6.3,
+      "log_m_bh_err": 0.3,
+      "source": "Harikane+2023",
+      "notes": "Census sample"
+    }
+  ],
+  "references": [
+    {
+      "key": "Goulding+2023",
+      "citation": "Goulding, A. D., et al. (2023). ApJ Letters, 955, L24."
+    },
+    {
+      "key": "Maiolino+2023",
+      "citation": "Maiolino, R., et al. (2023). Nature, 627, 59-63."
+    },
+    {
+      "key": "Larson+2023",
+      "citation": "Larson, R. L., et al. (2023). ApJ, 953, L29."
+    },
+    {
+      "key": "Castellano+2024",
+      "citation": "Castellano, M., et al. (2024). ApJ Letters, 938, L15."
+    },
+    {
+      "key": "Harikane+2023",
+      "citation": "Harikane, Y., et al. (2023). ApJS, 265, 5."
+    }
+  ]
+}

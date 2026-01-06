@@ -1,0 +1,92 @@
+{
+  "experiment": "exp_01_recursion_test",
+  "timestamp": "2025-12-13T16:03:48.599470",
+  "hypothesis": "PAC recursion only holds for \u03c6 = (1+\u221a5)/2",
+  "test_1_true_phi": {
+    "phi": 1.618033988749895,
+    "recursion_error": 4.6213451375136356e-17,
+    "is_valid": 1
+  },
+  "test_2_identities": {
+    "fibonacci_valid": 1,
+    "fibonacci_error": 0.0,
+    "sum_valid": 1,
+    "sum_error": 0.0
+  },
+  "test_3_alternatives": {
+    "tested": 9,
+    "all_fail": true,
+    "details": [
+      {
+        "phi": 1.2,
+        "recursion_error": 0.5277777777777778,
+        "fibonacci_error": 0.76,
+        "sum_error": 0.5277777777777777,
+        "all_valid": 0
+      },
+      {
+        "phi": 1.4,
+        "recursion_error": 0.22448979591836749,
+        "fibonacci_error": 0.44000000000000017,
+        "sum_error": 0.22448979591836737,
+        "all_valid": 0
+      },
+      {
+        "phi": 1.5,
+        "recursion_error": 0.1111111111111111,
+        "fibonacci_error": 0.25,
+        "sum_error": 0.11111111111111116,
+        "all_valid": 0
+      },
+      {
+        "phi": 1.55,
+        "recursion_error": 0.06139438085327779,
+        "fibonacci_error": 0.14749999999999974,
+        "sum_error": 0.06139438085327775,
+        "all_valid": 0
+      },
+      {
+        "phi": 1.6,
+        "recursion_error": 0.015624999999999927,
+        "fibonacci_error": 0.03999999999999959,
+        "sum_error": 0.015625,
+        "all_valid": 0
+      },
+      {
+        "phi": 1.62,
+        "recursion_error": 0.0016765736930346746,
+        "fibonacci_error": 0.004400000000000404,
+        "sum_error": 0.0016765736930346442,
+        "all_valid": 0
+      },
+      {
+        "phi": 1.65,
+        "recursion_error": 0.026629935720844742,
+        "fibonacci_error": 0.07249999999999979,
+        "sum_error": 0.026629935720844822,
+        "all_valid": 0
+      },
+      {
+        "phi": 1.7,
+        "recursion_error": 0.06574394463667815,
+        "fibonacci_error": 0.18999999999999972,
+        "sum_error": 0.0657439446366781,
+        "all_valid": 0
+      },
+      {
+        "phi": 2.0,
+        "recursion_error": 0.25,
+        "fibonacci_error": 1.0,
+        "sum_error": 0.25,
+        "all_valid": 0
+      }
+    ]
+  },
+  "test_4_loadbearing": {
+    "is_loadbearing": true,
+    "true_phi_works": true,
+    "all_others_fail": true
+  },
+  "success": true,
+  "conclusion": "\u03c6 = 1.618... is STRUCTURALLY NECESSARY for PAC recursion"
+}
