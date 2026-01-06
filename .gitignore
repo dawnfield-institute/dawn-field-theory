@@ -135,3 +135,6 @@ cimm.log
 
 # Ignore internal workspace directory
 /internal/
+
+# Claude local settings
+.claude/

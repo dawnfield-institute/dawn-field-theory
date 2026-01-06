@@ -1,0 +1,722 @@
+{
+  "run_time": "2026-01-06T08:49:15.719328",
+  "n_objects": 69,
+  "n_falsified": 15,
+  "falsification_rate": 0.21739130434782608,
+  "by_type": {
+    "enhancement": 0,
+    "seed_mass": 15,
+    "eddington": 0
+  },
+  "enhancement_stats": {
+    "min": 0.10570496613975244,
+    "max": 1.1691477396220051,
+    "mean": 0.4269213612669517,
+    "median": 0.3992099510707124,
+    "percentile_90": 0.676257795853245,
+    "percentile_95": 0.8285046596176824,
+    "percentile_99": 1.1595091944291862
+  },
+  "seed_stats": {
+    "min": 0.4961562020971497,
+    "max": 5.348865921098966,
+    "mean": 2.756673985268268
+  },
+  "detailed_results": [
+    {
+      "id": "GN-z11",
+      "z": 10.603,
+      "log_m": 6.2,
+      "enhancement_excess": 0.5717200120783679,
+      "required_seed": 4.101070498411184,
+      "required_f_edd": 0.28586000603918393,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "UHZ-1",
+      "z": 10.073,
+      "log_m": 7.6,
+      "enhancement_excess": 1.1549734084560952,
+      "required_seed": 5.348865921098966,
+      "required_f_edd": 0.5774867042280475,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-dormant",
+      "z": 6.68,
+      "log_m": 8.6,
+      "enhancement_excess": 0.9261167953173407,
+      "required_seed": 4.712801303029567,
+      "required_f_edd": 0.46305839765867035,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "CEERS-1670",
+      "z": 5.242,
+      "log_m": 7.11,
+      "enhancement_excess": 0.3992099510707124,
+      "required_seed": 1.824560610674122,
+      "required_f_edd": 0.19960497553535625,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.8 M\u2609"
+    },
+    {
+      "id": "CEERS-3210",
+      "z": 5.624,
+      "log_m": 7.4,
+      "enhancement_excess": 0.4957374576926951,
+      "required_seed": 2.558727744378463,
+      "required_f_edd": 0.24786872884634759,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "CEERS-1019",
+      "z": 8.679,
+      "log_m": 6.95,
+      "enhancement_excess": 0.7083155293132505,
+      "required_seed": 4.196989626373675,
+      "required_f_edd": 0.35415776465662524,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "GLASS-z12",
+      "z": 12.3,
+      "log_m": 7.0,
+      "enhancement_excess": 1.1691477396220051,
+      "required_seed": 5.289352207406554,
+      "required_f_edd": 0.5845738698110026,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "HARIKANE-01",
+      "z": 4.015,
+      "log_m": 7.8,
+      "enhancement_excess": 0.38439300338889965,
+      "required_seed": 0.5157883329963413,
+      "required_f_edd": 0.19219650169444982,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^0.5 M\u2609"
+    },
+    {
+      "id": "HARIKANE-02",
+      "z": 4.478,
+      "log_m": 6.9,
+      "enhancement_excess": 0.29669680584998315,
+      "required_seed": 0.4961562020971497,
+      "required_f_edd": 0.14834840292499155,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^0.5 M\u2609"
+    },
+    {
+      "id": "HARIKANE-03",
+      "z": 5.15,
+      "log_m": 7.2,
+      "enhancement_excess": 0.40721996630786594,
+      "required_seed": 1.797514409849052,
+      "required_f_edd": 0.20360998315393294,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.8 M\u2609"
+    },
+    {
+      "id": "HARIKANE-04",
+      "z": 5.548,
+      "log_m": 6.7,
+      "enhancement_excess": 0.3452035167651205,
+      "required_seed": 1.775368826104124,
+      "required_f_edd": 0.17260175838256026,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.8 M\u2609"
+    },
+    {
+      "id": "HARIKANE-05",
+      "z": 5.867,
+      "log_m": 7.0,
+      "enhancement_excess": 0.43575368686620497,
+      "required_seed": 2.4102511113943015,
+      "required_f_edd": 0.21787684343310249,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "HARIKANE-06",
+      "z": 6.21,
+      "log_m": 6.5,
+      "enhancement_excess": 0.3513176484450436,
+      "required_seed": 2.2303596712573235,
+      "required_f_edd": 0.1756588242225218,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "HARIKANE-07",
+      "z": 6.685,
+      "log_m": 7.4,
+      "enhancement_excess": 0.6180091630915238,
+      "required_seed": 3.5165624341324317,
+      "required_f_edd": 0.3090045815457619,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "HARIKANE-08",
+      "z": 6.93,
+      "log_m": 6.8,
+      "enhancement_excess": 0.4856652704738137,
+      "required_seed": 3.0937436349032637,
+      "required_f_edd": 0.24283263523690685,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-01",
+      "z": 6.12,
+      "log_m": 6.3,
+      "enhancement_excess": 0.29885145728381207,
+      "required_seed": 1.9500128464643192,
+      "required_f_edd": 0.14942572864190604,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^2.0 M\u2609"
+    },
+    {
+      "id": "COSMOS-02",
+      "z": 6.35,
+      "log_m": 5.8,
+      "enhancement_excess": 0.19279747201485978,
+      "required_seed": 1.6505679994686853,
+      "required_f_edd": 0.09639873600742989,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.7 M\u2609"
+    },
+    {
+      "id": "COSMOS-03",
+      "z": 6.48,
+      "log_m": 6.5,
+      "enhancement_excess": 0.37103611845656226,
+      "required_seed": 2.45726689293833,
+      "required_f_edd": 0.18551805922828116,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-04",
+      "z": 6.62,
+      "log_m": 6.0,
+      "enhancement_excess": 0.25427136104717946,
+      "required_seed": 2.0671937418290205,
+      "required_f_edd": 0.12713568052358973,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-05",
+      "z": 6.78,
+      "log_m": 6.7,
+      "enhancement_excess": 0.44583104232313303,
+      "required_seed": 2.8868962933992828,
+      "required_f_edd": 0.22291552116156654,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-06",
+      "z": 6.91,
+      "log_m": 5.5,
+      "enhancement_excess": 0.13440084434551622,
+      "required_seed": 1.7797852763885516,
+      "required_f_edd": 0.06720042217275812,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.8 M\u2609"
+    },
+    {
+      "id": "COSMOS-07",
+      "z": 7.05,
+      "log_m": 6.2,
+      "enhancement_excess": 0.3310987939681922,
+      "required_seed": 2.575704104451432,
+      "required_f_edd": 0.16554939698409613,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-08",
+      "z": 7.18,
+      "log_m": 6.4,
+      "enhancement_excess": 0.39561012803090123,
+      "required_seed": 2.8611623899309118,
+      "required_f_edd": 0.1978050640154506,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-09",
+      "z": 7.32,
+      "log_m": 5.9,
+      "enhancement_excess": 0.26083368378062893,
+      "required_seed": 2.449525402720092,
+      "required_f_edd": 0.13041684189031444,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-10",
+      "z": 7.45,
+      "log_m": 6.6,
+      "enhancement_excess": 0.47454559563272847,
+      "required_seed": 3.228353492846851,
+      "required_f_edd": 0.23727279781636423,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-11",
+      "z": 7.58,
+      "log_m": 6.1,
+      "enhancement_excess": 0.3337624332399637,
+      "required_seed": 2.8042426275423944,
+      "required_f_edd": 0.16688121661998184,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-12",
+      "z": 7.72,
+      "log_m": 6.8,
+      "enhancement_excess": 0.5595022282168332,
+      "required_seed": 3.5828546353841935,
+      "required_f_edd": 0.2797511141084166,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-13",
+      "z": 7.85,
+      "log_m": 5.7,
+      "enhancement_excess": 0.22244173395767272,
+      "required_seed": 2.5531085082568206,
+      "required_f_edd": 0.11122086697883637,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-14",
+      "z": 8.02,
+      "log_m": 6.3,
+      "enhancement_excess": 0.42500542672884783,
+      "required_seed": 3.2412155275151444,
+      "required_f_edd": 0.21250271336442392,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-15",
+      "z": 6.08,
+      "log_m": 7.1,
+      "enhancement_excess": 0.47874144270666524,
+      "required_seed": 2.71349861811167,
+      "required_f_edd": 0.2393707213533326,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-16",
+      "z": 6.25,
+      "log_m": 5.6,
+      "enhancement_excess": 0.14168607794738172,
+      "required_seed": 1.365286126257069,
+      "required_f_edd": 0.07084303897369086,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.4 M\u2609"
+    },
+    {
+      "id": "COSMOS-17",
+      "z": 6.42,
+      "log_m": 6.9,
+      "enhancement_excess": 0.46438775003201244,
+      "required_seed": 2.8085914736790007,
+      "required_f_edd": 0.2321938750160062,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-18",
+      "z": 6.55,
+      "log_m": 6.0,
+      "enhancement_excess": 0.250806118698805,
+      "required_seed": 2.012856443901564,
+      "required_f_edd": 0.12540305934940252,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-19",
+      "z": 6.68,
+      "log_m": 6.4,
+      "enhancement_excess": 0.3601565315122993,
+      "required_seed": 2.5128013030295673,
+      "required_f_edd": 0.18007826575614966,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-20",
+      "z": 6.82,
+      "log_m": 5.4,
+      "enhancement_excess": 0.10570496613975244,
+      "required_seed": 1.6158826154755985,
+      "required_f_edd": 0.052852483069876215,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.6 M\u2609"
+    },
+    {
+      "id": "COSMOS-21",
+      "z": 6.95,
+      "log_m": 6.7,
+      "enhancement_excess": 0.4604070952712315,
+      "required_seed": 3.007615548369191,
+      "required_f_edd": 0.23020354763561582,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-22",
+      "z": 7.1,
+      "log_m": 6.2,
+      "enhancement_excess": 0.33416624098378034,
+      "required_seed": 2.608972981629688,
+      "required_f_edd": 0.1670831204918902,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-23",
+      "z": 7.24,
+      "log_m": 5.9,
+      "enhancement_excess": 0.25710509173537127,
+      "required_seed": 2.399485895338328,
+      "required_f_edd": 0.12855254586768566,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-24",
+      "z": 7.38,
+      "log_m": 6.5,
+      "enhancement_excess": 0.4394037059609667,
+      "required_seed": 3.086282774471527,
+      "required_f_edd": 0.21970185298048334,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-25",
+      "z": 7.52,
+      "log_m": 6.0,
+      "enhancement_excess": 0.30026173219914976,
+      "required_seed": 2.6695722672486744,
+      "required_f_edd": 0.15013086609957488,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-26",
+      "z": 7.65,
+      "log_m": 6.8,
+      "enhancement_excess": 0.5528156564732184,
+      "required_seed": 3.543941711992373,
+      "required_f_edd": 0.27640782823660914,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-27",
+      "z": 7.78,
+      "log_m": 5.6,
+      "enhancement_excess": 0.1884184905192339,
+      "required_seed": 2.415599157245391,
+      "required_f_edd": 0.09420924525961696,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-28",
+      "z": 7.92,
+      "log_m": 6.3,
+      "enhancement_excess": 0.4179917997993406,
+      "required_seed": 3.1898911399121403,
+      "required_f_edd": 0.2089958998996703,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-29",
+      "z": 6.15,
+      "log_m": 6.9,
+      "enhancement_excess": 0.43951677084654095,
+      "required_seed": 2.57707053284801,
+      "required_f_edd": 0.21975838542327047,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-30",
+      "z": 6.32,
+      "log_m": 5.5,
+      "enhancement_excess": 0.11976860871698691,
+      "required_seed": 1.3252833913976634,
+      "required_f_edd": 0.05988430435849346,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.3 M\u2609"
+    },
+    {
+      "id": "JADES-01",
+      "z": 5.52,
+      "log_m": 6.8,
+      "enhancement_excess": 0.36320054120138523,
+      "required_seed": 1.8440602482419024,
+      "required_f_edd": 0.18160027060069261,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.8 M\u2609"
+    },
+    {
+      "id": "JADES-02",
+      "z": 5.88,
+      "log_m": 7.2,
+      "enhancement_excess": 0.4806744460628991,
+      "required_seed": 2.623097653682807,
+      "required_f_edd": 0.24033722303144955,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-03",
+      "z": 6.24,
+      "log_m": 6.5,
+      "enhancement_excess": 0.35349003033614596,
+      "required_seed": 2.2565988535133563,
+      "required_f_edd": 0.17674501516807295,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-04",
+      "z": 6.65,
+      "log_m": 7.0,
+      "enhancement_excess": 0.5115230115057374,
+      "required_seed": 3.090107473146265,
+      "required_f_edd": 0.25576150575286877,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-05",
+      "z": 7.12,
+      "log_m": 6.6,
+      "enhancement_excess": 0.4471945973096229,
+      "required_seed": 3.022139244020848,
+      "required_f_edd": 0.22359729865481143,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-06",
+      "z": 7.55,
+      "log_m": 7.3,
+      "enhancement_excess": 0.6942311830001943,
+      "required_seed": 3.9869825840142994,
+      "required_f_edd": 0.3471155915000972,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-07",
+      "z": 8.12,
+      "log_m": 6.4,
+      "enhancement_excess": 0.46529416572400367,
+      "required_seed": 3.391150753370005,
+      "required_f_edd": 0.23264708286200184,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-08",
+      "z": 8.68,
+      "log_m": 6.9,
+      "enhancement_excess": 0.6902601571221685,
+      "required_seed": 4.14741464447046,
+      "required_f_edd": 0.3451300785610842,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-09",
+      "z": 9.25,
+      "log_m": 6.7,
+      "enhancement_excess": 0.672757205536014,
+      "required_seed": 4.173085407319364,
+      "required_f_edd": 0.3363786027680071,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "JADES-10",
+      "z": 9.88,
+      "log_m": 7.1,
+      "enhancement_excess": 0.9086307464873056,
+      "required_seed": 4.788830134663137,
+      "required_f_edd": 0.4543153732436528,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-31",
+      "z": 6.05,
+      "log_m": 6.4,
+      "enhancement_excess": 0.31715680379669753,
+      "required_seed": 1.9857797050527024,
+      "required_f_edd": 0.15857840189834876,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^2.0 M\u2609"
+    },
+    {
+      "id": "COSMOS-32",
+      "z": 6.18,
+      "log_m": 5.9,
+      "enhancement_excess": 0.20948996563884004,
+      "required_seed": 1.6038515078493205,
+      "required_f_edd": 0.10474498281942003,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^1.6 M\u2609"
+    },
+    {
+      "id": "COSMOS-33",
+      "z": 6.38,
+      "log_m": 6.7,
+      "enhancement_excess": 0.4121812284253825,
+      "required_seed": 2.575600627194131,
+      "required_f_edd": 0.20609061421269123,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-34",
+      "z": 6.52,
+      "log_m": 6.1,
+      "enhancement_excess": 0.27425867901962486,
+      "required_seed": 2.0891880033401318,
+      "required_f_edd": 0.13712933950981243,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-35",
+      "z": 6.72,
+      "log_m": 6.5,
+      "enhancement_excess": 0.3888753350142153,
+      "required_seed": 2.642722705863647,
+      "required_f_edd": 0.19443766750710767,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-36",
+      "z": 6.88,
+      "log_m": 5.7,
+      "enhancement_excess": 0.1870999408588089,
+      "required_seed": 1.9586840124752327,
+      "required_f_edd": 0.09354997042940445,
+      "is_falsified": "True",
+      "reason": "Requires seed < 10^2.0 M\u2609"
+    },
+    {
+      "id": "COSMOS-37",
+      "z": 7.02,
+      "log_m": 6.3,
+      "enhancement_excess": 0.3567015977050274,
+      "required_seed": 2.6554971203828797,
+      "required_f_edd": 0.17835079885251368,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-38",
+      "z": 7.15,
+      "log_m": 6.8,
+      "enhancement_excess": 0.5058651374450222,
+      "required_seed": 3.241739375258637,
+      "required_f_edd": 0.2529325687225111,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-39",
+      "z": 7.28,
+      "log_m": 6.0,
+      "enhancement_excess": 0.28774119863520287,
+      "required_seed": 2.524654777476631,
+      "required_f_edd": 0.14387059931760143,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-40",
+      "z": 7.42,
+      "log_m": 6.6,
+      "enhancement_excess": 0.47203612597118877,
+      "required_seed": 3.210428922769234,
+      "required_f_edd": 0.23601806298559438,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-41",
+      "z": 7.55,
+      "log_m": 6.2,
+      "enhancement_excess": 0.36220757373923196,
+      "required_seed": 2.8869825840142997,
+      "required_f_edd": 0.18110378686961595,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-42",
+      "z": 7.68,
+      "log_m": 5.8,
+      "enhancement_excess": 0.24696797978573493,
+      "required_seed": 2.560713673513199,
+      "required_f_edd": 0.12348398989286745,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-43",
+      "z": 7.82,
+      "log_m": 6.4,
+      "enhancement_excess": 0.4426350109611179,
+      "required_seed": 3.2371232158972183,
+      "required_f_edd": 0.22131750548055898,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    },
+    {
+      "id": "COSMOS-44",
+      "z": 7.95,
+      "log_m": 7.0,
+      "enhancement_excess": 0.6462949128296023,
+      "required_seed": 3.90543750183083,
+      "required_f_edd": 0.32314745641480114,
+      "is_falsified": "False",
+      "reason": "PASSES"
+    }
+  ],
+  "falsification_predictions": {
+    "max_z10_mass": 8.5,
+    "min_seed_mass": 2.0,
+    "max_z15_mass": 6.7
+  }
+}
