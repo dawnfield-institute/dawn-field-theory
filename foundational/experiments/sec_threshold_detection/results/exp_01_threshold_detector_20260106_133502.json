@@ -1,0 +1,26 @@
+{
+  "experiment": "sec_threshold_detector",
+  "timestamp": "2026-01-06T13:35:02.505508",
+  "constants": {
+    "xi": 1.0571198664289054,
+    "xi_minus_1": 0.05711986642890543,
+    "phi": 1.618033988749895
+  },
+  "results": {
+    "logistic": {
+      "detected_threshold": 2.5254237288135593,
+      "known_threshold": 3.5699456,
+      "error_percent": 29.258761567303456,
+      "xi_ratio": 0.7493838957903737,
+      "xi_expected": 1.0571198664289054
+    },
+    "lorenz": {
+      "detected_threshold": 20.256410256410255,
+      "known_threshold": 24.74,
+      "error_percent": 18.1228364736853,
+      "predicted_dimension": 2.0571198664289057,
+      "observed_dimension": 2.06,
+      "dimension_error_percent": 0.1398123092764272
+    }
+  }
+}

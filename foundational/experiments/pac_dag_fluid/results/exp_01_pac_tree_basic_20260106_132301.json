@@ -1,0 +1,13 @@
+{
+  "experiment": "pac_tree_basic",
+  "timestamp": "2026-01-06T13:23:01.641270",
+  "parameters": {
+    "root_value": 100.0,
+    "levels": 6,
+    "branch_factor": 3,
+    "sec_decay": 0.5
+  },
+  "metrics": {
+    "total_nodes": 364,
+    "max_depth": 5,
+    "conservation_verified": 
