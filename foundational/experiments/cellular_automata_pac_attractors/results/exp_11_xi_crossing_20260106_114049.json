@@ -1,0 +1,421 @@
+{
+  "timestamp": "2026-01-06T11:40:44.712688",
+  "xi": 1.0571428,
+  "parameters": {
+    "width": 101,
+    "max_steps": 500
+  },
+  "rule_results": [
+    {
+      "rule": 0,
+      "class": "CLASS_I",
+      "crosses_xi": false,
+      "min_dist": 8.942857200333808,
+      "mean_dist": 8.942857200333808,
+      "n_crossings": 0,
+      "pa_range": [
+        10.000000000333808,
+        10.000000000333808
+      ]
+    },
+    {
+      "rule": 1,
+      "class": "CLASS_II",
+      "crosses_xi": false,
+      "min_dist": 0.19275090586028076,
+      "mean_dist": 0.19335621463257557,
+      "n_crossings": 0,
+      "pa_range": [
+        1.2498937058602808,
+        1.2512331263162562
+      ]
+    },
+    {
+      "rule": 2,
+      "class": "CLASS_II",
+      "crosses_xi": false,
+      "min_dist": 6.630941075016385,
+      "mean_dist": 6.630941075016385,
+      "n_crossings": 0,
+      "pa_range": [
+        7.688083875016385,
+        7.688083875016385
+      ]
+    },
+    {
+      "rule": 4,
+      "class": "CLASS_II",
+      "crosses_xi": false,
+      "min_dist": 4.822857322874784,
+      "mean_dist": 4.822857322874784,
+      "n_crossings": 0,
+      "pa_range": [
+        5.880000122874784,
+        5.880000122874784
+      ]
+    },
+    {
+      "rule": 5,
+      "class": "CLASS_II",
+      "crosses_xi": false,
+      "min_dist": 0.32589483540694353,
+      "mean_dist": 0.3263500779667341,
+      "n_crossings": 0,
+      "pa_range": [
+        1.3830376354069436,
+        1.3840544639625498
+      ]
+    },
+    {
+      "rule": 8,
+      "class": "CLASS_I",
+      "crosses_xi": false,
+      "min_dist": 8.942857200333808,
+      "mean_dist": 8.942857200333808,
+      "n_crossings": 0,
+      "pa_range": [
+        10.000000000333808,
+        10.000000000333808
+      ]
+    },
+    {
+      "rule": 18,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.5399445251215411,
+      "mean_dist": 0.6318197982726974,
+      "n_crossings": 0,
+      "pa_range": [
+        1.5970873251215412,
+        1.8747048944818716
+      ]
+    },
+    {
+      "rule": 22,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.10772407789872163,
+      "mean_dist": 0.23403683448820808,
+      "n_crossings": 0,
+      "pa_range": [
+        1.1648668778987217,
+        1.4284703155035712
+      ]
+    },
+    {
+      "rule": 30,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.5245021193714103,
+      "mean_dist": 1.6090233572935388,
+      "n_crossings": 0,
+      "pa_range": [
+        1.5816449193714104,
+        3.1702558385540724
+      ]
+    },
+    {
+      "rule": 32,
+      "class": "CLASS_I",
+      "crosses_xi": false,
+      "min_dist": 8.942857200333808,
+      "mean_dist": 8.942857200333808,
+      "n_crossings": 0,
+      "pa_range": [
+        10.000000000333808,
+        10.000000000333808
+      ]
+    },
+    {
+      "rule": 45,
+      "class": "CLASS_III",
+      "crosses_xi": true,
+      "min_dist": 0.039618046861245704,
+      "mean_dist": 0.906651322447638,
+      "n_crossings": 1,
+      "pa_range": [
+        0.46894275385749795,
+        2.5933681715893075
+      ]
+    },
+    {
+      "rule": 50,
+      "class": "CLASS_II",
+      "crosses_xi": false,
+      "min_dist": 0.2615240622574029,
+      "mean_dist": 0.32988192574537245,
+      "n_crossings": 0,
+      "pa_range": [
+        0.5436478145690432,
+        0.7956187377425972
+      ]
+    },
+    {
+      "rule": 51,
+      "class": "CLASS_II",
+      "crosses_xi": false,
+      "min_dist": 0.16289295659106973,
+      "mean_dist": 0.16290302386086702,
+      "n_crossings": 0,
+      "pa_range": [
+        1.2200357565910698,
+        1.2201030578426777
+      ]
+    },
+    {
+      "rule": 54,
+      "class": "CLASS_IV",
+      "crosses_xi": false,
+      "min_dist": 0.3364416125610188,
+      "mean_dist": 0.5465486978591094,
+      "n_crossings": 0,
+      "pa_range": [
+        0.21340395913592108,
+        0.7207011874389813
+      ]
+    },
+    {
+      "rule": 60,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.10604586460404608,
+      "mean_dist": 0.2565132295994833,
+      "n_crossings": 0,
+      "pa_range": [
+        1.1631886646040461,
+        1.5739080170942314
+      ]
+    },
+    {
+      "rule": 76,
+      "class": "CLASS_II",
+      "crosses_xi": false,
+      "min_dist": 4.822857322874784,
+      "mean_dist": 4.822857322874784,
+      "n_crossings": 0,
+      "pa_range": [
+        5.880000122874784,
+        5.880000122874784
+      ]
+    },
+    {
+      "rule": 77,
+      "class": "CLASS_II",
+      "crosses_xi": true,
+      "min_dist": 0.0013746086167945037,
+      "mean_dist": 0.09773556710002079,
+      "n_crossings": 1,
+      "pa_range": [
+        0.6229685316663588,
+        1.0585174086167946
+      ]
+    },
+    {
+      "rule": 90,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.3128571676178693,
+      "mean_dist": 0.5479267053872677,
+      "n_crossings": 0,
+      "pa_range": [
+        1.3699999676178694,
+        2.3807340162844346
+      ]
+    },
+    {
+      "rule": 105,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.5743360822317335,
+      "mean_dist": 0.7215006810584051,
+      "n_crossings": 0,
+      "pa_range": [
+        0.2702138450809776,
+        0.48280671776826656
+      ]
+    },
+    {
+      "rule": 106,
+      "class": "CLASS_IV",
+      "crosses_xi": false,
+      "min_dist": 6.630941075016385,
+      "mean_dist": 6.630941075016385,
+      "n_crossings": 0,
+      "pa_range": [
+        7.688083875016385,
+        7.688083875016385
+      ]
+    },
+    {
+      "rule": 110,
+      "class": "CLASS_IV",
+      "crosses_xi": true,
+      "min_dist": 0.01081482030586356,
+      "mean_dist": 0.18084711096078826,
+      "n_crossings": 1,
+      "pa_range": [
+        0.4790628590568207,
+        1.152661433704465
+      ]
+    },
+    {
+      "rule": 122,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.11813438802785903,
+      "mean_dist": 0.35367758288795725,
+      "n_crossings": 0,
+      "pa_range": [
+        0.41509788470029385,
+        0.939008411972141
+      ]
+    },
+    {
+      "rule": 124,
+      "class": "CLASS_IV",
+      "crosses_xi": true,
+      "min_dist": 0.01081482030586356,
+      "mean_dist": 0.18084711096078818,
+      "n_crossings": 1,
+      "pa_range": [
+        0.4790628590568207,
+        1.152661433704465
+      ]
+    },
+    {
+      "rule": 126,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.027772617465372074,
+      "mean_dist": 0.09827412227170691,
+      "n_crossings": 0,
+      "pa_range": [
+        1.0849154174653721,
+        1.2819096471282392
+      ]
+    },
+    {
+      "rule": 128,
+      "class": "CLASS_I",
+      "crosses_xi": false,
+      "min_dist": 8.942857200333808,
+      "mean_dist": 8.942857200333808,
+      "n_crossings": 0,
+      "pa_range": [
+        10.000000000333808,
+        10.000000000333808
+      ]
+    },
+    {
+      "rule": 136,
+      "class": "CLASS_I",
+      "crosses_xi": false,
+      "min_dist": 8.942857200333808,
+      "mean_dist": 8.942857200333808,
+      "n_crossings": 0,
+      "pa_range": [
+        10.000000000333808,
+        10.000000000333808
+      ]
+    },
+    {
+      "rule": 137,
+      "class": "CLASS_IV",
+      "crosses_xi": true,
+      "min_dist": 0.01727981326778072,
+      "mean_dist": 0.18391149130231052,
+      "n_crossings": 1,
+      "pa_range": [
+        0.4746137581430865,
+        1.1526770903258907
+      ]
+    },
+    {
+      "rule": 146,
+      "class": "CLASS_III",
+      "crosses_xi": false,
+      "min_dist": 0.5399445251215411,
+      "mean_dist": 0.6318197982726974,
+      "n_crossings": 0,
+      "pa_range": [
+        1.5970873251215412,
+        1.8747048944818716
+      ]
+    },
+    {
+      "rule": 150,
+      "class": "CLASS_III",
+      "crosses_xi": true,
+      "min_dist": 0.0013957988425761236,
+      "mean_dist": 0.11063739414094771,
+      "n_crossings": 3,
+      "pa_range": [
+        0.8614977103040855,
+        1.0631480065906396
+      ]
+    },
+    {
+      "rule": 160,
+      "class": "CLASS_I",
+      "crosses_xi": false,
+      "min_dist": 8.942857200333808,
+      "mean_dist": 8.942857200333808,
+      "n_crossings": 0,
+      "pa_range": [
+        10.000000000333808,
+        10.000000000333808
+      ]
+    },
+    {
+      "rule": 193,
+      "class": "CLASS_IV",
+      "crosses_xi": true,
+      "min_dist": 0.01727981326778072,
+      "mean_dist": 0.18391149130231052,
+      "n_crossings": 1,
+      "pa_range": [
+        0.47461375814308665,
+        1.1526770903258907
+      ]
+    }
+  ],
+  "class_summaries": {
+    "CLASS_I": {
+      "total_rules": 6,
+      "rules_crossing_xi": 0,
+      "crossing_percentage": 0.0,
+      "mean_min_distance": 8.942857200333806,
+      "avg_n_crossings": 0.0
+    },
+    "CLASS_II": {
+      "total_rules": 8,
+      "rules_crossing_xi": 1,
+      "crossing_percentage": 12.5,
+      "mean_min_distance": 2.1526366361873057,
+      "avg_n_crossings": 0.125
+    },
+    "CLASS_III": {
+      "total_rules": 11,
+      "rules_crossing_xi": 2,
+      "crossing_percentage": 18.181818181818183,
+      "mean_min_distance": 0.26293411028762875,
+      "avg_n_crossings": 0.36363636363636365
+    },
+    "CLASS_IV": {
+      "total_rules": 6,
+      "rules_crossing_xi": 4,
+      "crossing_percentage": 66.66666666666667,
+      "mean_min_distance": 1.1705953257874488,
+      "avg_n_crossings": 0.6666666666666666
+    }
+  },
+  "fisher_test": {
+    "class_iv_crosses": 4,
+    "class_iv_total": 6,
+    "other_crosses": 3,
+    "other_total": 25,
+    "odds_ratio": 14.666666666666666,
+    "p_value": 0.013814019375754636,
+    "significant": true
+  }
+}

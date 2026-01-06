@@ -1,0 +1,50 @@
+{
+  "null_domains": {
+    "gaussian_walk": {
+      "mean_phi_rate": 0.0,
+      "std_phi_rate": 0.0,
+      "n_trials": 50
+    },
+    "uniform_random": {
+      "mean_phi_rate": 0.06521066557080642,
+      "std_phi_rate": 0.008778996453198665,
+      "n_trials": 50
+    },
+    "exponential_random": {
+      "mean_phi_rate": 0.06784001876834181,
+      "std_phi_rate": 0.007936299366780525,
+      "n_trials": 50
+    },
+    "powerlaw_random": {
+      "mean_phi_rate": 0.07985806222512223,
+      "std_phi_rate": 0.009937251515956388,
+      "n_trials": 50
+    },
+    "shuffled_fibonacci": {
+      "mean_phi_rate": 0.16236159920863621,
+      "std_phi_rate": 0.0864789052102125,
+      "n_trials": 50
+    }
+  },
+  "structured_domains": {
+    "fibonacci": {
+      "mean_phi_rate": 0.49671342685370745,
+      "std_phi_rate": 0.0006025369289929028,
+      "n_trials": 50
+    },
+    "golden_spiral": {
+      "mean_phi_rate": 0.0,
+      "std_phi_rate": 0.0,
+      "n_trials": 50
+    },
+    "fib_modulated": {
+      "mean_phi_rate": 0.002446460003934922,
+      "std_phi_rate": 0.0021446276828009005,
+      "n_trials": 50
+    }
+  },
+  "comparison": {
+    "null_mean": 0.07505406915458133,
+    "structured_mean": 0.16638662895254747,
+    "separation_ratio": 2.216890178041761,
+    "artifact_hypothesis_supported": 

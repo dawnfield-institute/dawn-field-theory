@@ -1,0 +1,281 @@
+{
+  "null_hypothesis": {
+    "tol_0.05": {
+      "analytical_probability": 0.06180339887498948,
+      "monte_carlo_probability": 0.0612,
+      "monte_carlo_std": 0.002396968084893914,
+      "tolerance": 0.05,
+      "phi_inverse": 0.6180339887498948,
+      "window_size": 0.06180339887498948
+    },
+    "tol_0.1": {
+      "analytical_probability": 0.12360679774997896,
+      "monte_carlo_probability": 0.1206,
+      "monte_carlo_std": 0.0032566184916259376,
+      "tolerance": 0.1,
+      "phi_inverse": 0.6180339887498948,
+      "window_size": 0.12360679774997896
+    },
+    "tol_0.15": {
+      "analytical_probability": 0.18541019662496844,
+      "monte_carlo_probability": 0.1919,
+      "monte_carlo_std": 0.003937948577622618,
+      "tolerance": 0.15,
+      "phi_inverse": 0.6180339887498948,
+      "window_size": 0.18541019662496844
+    }
+  },
+  "parameter_sweeps": {
+    "percolation": [
+      {
+        "name": "percolation_30x30_n50",
+        "critical": 0.6266666666666667,
+        "dist_to_phi": 0.008632677916771914,
+        "within_tol": true,
+        "ci": [
+          0.553,
+          0.6266666666666667
+        ]
+      },
+      {
+        "name": "percolation_30x30_n100",
+        "critical": 0.6266666666666667,
+        "dist_to_phi": 0.008632677916771914,
+        "within_tol": true,
+        "ci": [
+          0.5663333333333334,
+          0.6336666666666666
+        ]
+      },
+      {
+        "name": "percolation_50x50_n50",
+        "critical": 0.5866666666666667,
+        "dist_to_phi": 0.03136732208322812,
+        "within_tol": true,
+        "ci": [
+          0.5733333333333334,
+          0.6000000000000001
+        ]
+      },
+      {
+        "name": "percolation_50x50_n100",
+        "critical": 0.6000000000000001,
+        "dist_to_phi": 0.018033988749894703,
+        "within_tol": true,
+        "ci": [
+          0.5866666666666667,
+          0.6133333333333334
+        ]
+      },
+      {
+        "name": "percolation_75x75_n50",
+        "critical": 0.5866666666666667,
+        "dist_to_phi": 0.03136732208322812,
+        "within_tol": true,
+        "ci": [
+          0.5866666666666667,
+          0.6000000000000001
+        ]
+      },
+      {
+        "name": "percolation_75x75_n100",
+        "critical": 0.5866666666666667,
+        "dist_to_phi": 0.03136732208322812,
+        "within_tol": true,
+        "ci": [
+          0.5866666666666667,
+          0.6000000000000001
+        ]
+      }
+    ],
+    "ca_lambda": [
+      {
+        "name": "ca_lambda_w50_s100_r20",
+        "critical": 0.7666666666666666,
+        "dist_to_phi": 0.14863267791677182,
+        "within_tol": true,
+        "ci": [
+          0.7666666666666666,
+          0.8333333333333333
+        ]
+      },
+      {
+        "name": "ca_lambda_w50_s100_r30",
+        "critical": 0.7666666666666666,
+        "dist_to_phi": 0.14863267791677182,
+        "within_tol": true,
+        "ci": [
+          0.7666666666666666,
+          0.8333333333333333
+        ]
+      },
+      {
+        "name": "ca_lambda_w50_s200_r20",
+        "critical": 0.8333333333333333,
+        "dist_to_phi": 0.21529934458343847,
+        "within_tol": false,
+        "ci": [
+          0.6333333333333333,
+          0.8333333333333333
+        ]
+      },
+      {
+        "name": "ca_lambda_w50_s200_r30",
+        "critical": 0.6333333333333333,
+        "dist_to_phi": 0.015299344583438512,
+        "within_tol": true,
+        "ci": [
+          0.6333333333333333,
+          0.8333333333333333
+        ]
+      },
+      {
+        "name": "ca_lambda_w100_s100_r20",
+        "critical": 0.7666666666666666,
+        "dist_to_phi": 0.14863267791677182,
+        "within_tol": true,
+        "ci": [
+          0.7666666666666666,
+          0.8333333333333333
+        ]
+      },
+      {
+        "name": "ca_lambda_w100_s100_r30",
+        "critical": 0.7666666666666666,
+        "dist_to_phi": 0.14863267791677182,
+        "within_tol": true,
+        "ci": [
+          0.7666666666666666,
+          0.8683333333333327
+        ]
+      },
+      {
+        "name": "ca_lambda_w100_s200_r20",
+        "critical": 0.7666666666666666,
+        "dist_to_phi": 0.14863267791677182,
+        "within_tol": true,
+        "ci": [
+          0.7666666666666666,
+          0.8333333333333333
+        ]
+      },
+      {
+        "name": "ca_lambda_w100_s200_r30",
+        "critical": 0.7666666666666666,
+        "dist_to_phi": 0.14863267791677182,
+        "within_tol": true,
+        "ci": [
+          0.7666666666666666,
+          0.9
+        ]
+      }
+    ],
+    "ising": [
+      {
+        "name": "ising_L10_sw200",
+        "critical": 2.603448275862069,
+        "dist_to_phi": 0.06630985081886032,
+        "within_tol": true,
+        "ci": [
+          2.4034482758620688,
+          2.803448275862069
+        ]
+      },
+      {
+        "name": "ising_L15_sw200",
+        "critical": 2.4655172413793105,
+        "dist_to_phi": 0.13527536806023954,
+        "within_tol": false,
+        "ci": [
+          2.2655172413793103,
+          2.6655172413793107
+        ]
+      }
+    ],
+    "logistic": [
+      {
+        "name": "logistic_iter500",
+        "critical": 3.5822784810126582,
+        "dist_to_phi": 0.10348499859187732,
+        "within_tol": false,
+        "ci": [
+          3.5322784810126584,
+          3.632278481012658
+        ]
+      },
+      {
+        "name": "logistic_iter1000",
+        "critical": 3.5822784810126582,
+        "dist_to_phi": 0.10348499859187732,
+        "within_tol": false,
+        "ci": [
+          3.5322784810126584,
+          3.632278481012658
+        ]
+      }
+    ]
+  },
+  "by_system_type": {
+    "information_systems": {
+      "n_total": 14,
+      "n_within_phi_tolerance": 13,
+      "rate": 0.9285714285714286,
+      "mean_distance_to_phi": 0.08941400482147362,
+      "std_distance_to_phi": 0.07103108648747819
+    },
+    "energy_systems": {
+      "n_total": 4,
+      "n_within_phi_tolerance": 1,
+      "rate": 0.25,
+      "mean_distance_to_phi": 0.10213880401571362,
+      "std_distance_to_phi": 0.02442012614388518
+    }
+  },
+  "significance_tests": {
+    "information_systems": {
+      "k_successes": 13,
+      "n_trials": 14,
+      "p_null": 0.1206,
+      "expected_under_null": 1.6884,
+      "observed_rate": 0.9285714285714286,
+      "pvalue": 1.4192633550919426e-11,
+      "significant_at_005": true,
+      "significant_at_001": true,
+      "odds_ratio": 63.19624101713653
+    },
+    "energy_systems": {
+      "k_successes": 1,
+      "n_trials": 4,
+      "p_null": 0.1206,
+      "expected_under_null": 0.4824,
+      "observed_rate": 0.25,
+      "pvalue": 0.40193850085619043,
+      "significant_at_005": false,
+      "significant_at_001": false,
+      "odds_ratio": 2.083392561004501
+    },
+    "null_probability": 0.1206,
+    "info_vs_energy_comparison": {
+      "u_statistic": 28.0,
+      "pvalue": 0.5216358877187072,
+      "info_mean_distance": 0.08941400482147362,
+      "energy_mean_distance": 0.10213880401571362,
+      "info_closer_to_phi": true,
+      "significant": false
+    }
+  },
+  "final_verdict": {
+    "verdict": "PARTIALLY SUPPORTED",
+    "explanation": "\u03c6 appears at information-theoretic boundaries more than chance, but the distinction from energy systems is not clear.",
+    "info_significant": true,
+    "energy_not_significant": true,
+    "info_closer_than_energy": false,
+    "hypothesis": "\u03c6 marks information-theoretic boundaries specifically"
+  },
+  "metadata": {
+    "timestamp": "2026-01-06T10:30:31.866302",
+    "experiment": "exp_05_rigorous_boundary_validation",
+    "phi": 1.618033988749895,
+    "phi_inverse": 0.6180339887498948
+  }
+}

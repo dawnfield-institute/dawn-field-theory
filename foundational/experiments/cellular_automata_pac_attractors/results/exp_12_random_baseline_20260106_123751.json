@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-01-06T12:37:45.783144",
+  "xi": 1.0571428,
+  "falsification_target": "Is \u039e \u2248 1.057 an artifact of embedding metrics?",
+  "random_stats": {
+    "n": 1000,
+    "mean": 3.7729307018721414,
+    "std": 0.12505826518315688,
+    "median": 3.7659439115851283,
+    "min": 3.4095272499035882,
+    "max": 4.205145399605963
+  },
+  "class_iv_stats": {
+    "n": 6,
+    "mean": 5.393621993383587,
+    "std": 9.989209071265561,
+    "median": 1.0565895979587903,
+    "ratios": [
+      0.4114138544075576,
+      27.723959714058807,
+      1.0578703573748747,
+      1.0578703573748742,
+      1.055308838542706,
+      1.0553088385427056
+    ]
+  },
+  "xi_proximity": {
+    "tolerance": 0.05,
+    "xi_low": 1.00428566,
+    "xi_high": 1.10999994,
+    "random_near_xi": 0,
+    "random_near_xi_pct": 0.0,
+    "class_iv_near_xi": 4,
+    "class_iv_near_xi_pct": 66.66666666666667
+  },
+  "fisher_test": {
+    "odds_ratio": Infinity,
+    "p_value": 3.535931251099897e-10,
+    "significant": true
+  },
+  "mann_whitney": {
+    "u_statistic": 1000.0,
+    "p_value": 0.0029043909919037646,
+    "significant": true
+  },
+  "verdict": "\u039e IS GENUINE",
+  "explanation": "Class IV is infx more likely to be near \u039e than random (p=0.0000)"
+}

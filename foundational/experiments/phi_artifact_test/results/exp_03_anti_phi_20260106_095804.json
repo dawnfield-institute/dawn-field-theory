@@ -1,0 +1,178 @@
+{
+  "anti_phi_systems": {
+    "sqrt2_pell": {
+      "expected_ratio": 2.414213562373095,
+      "expected_symbol": "1+\u221a2",
+      "pac_analysis": {
+        "consecutive": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 2.413531104545609,
+          "closest_to_phi": 0.3819660112501051
+        },
+        "skip1": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 5.82705946829673,
+          "closest_to_phi": 3.381966011250105
+        },
+        "any_phi_detected": "False"
+      },
+      "phi_incorrectly_detected": "False"
+    },
+    "exponential_e": {
+      "expected_ratio": 1.0202422306794698,
+      "expected_symbol": "e^\u03b4",
+      "pac_analysis": {
+        "consecutive": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.0202422306794698,
+          "closest_to_phi": 0.5977917580704246
+        },
+        "skip1": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.0408942092618207,
+          "closest_to_phi": 0.5771397794880735
+        },
+        "any_phi_detected": "False"
+      },
+      "phi_incorrectly_detected": "False"
+    },
+    "pi_based": {
+      "expected_ratio": 1.1212823532318632,
+      "expected_symbol": "\u03c0^0.1",
+      "pac_analysis": {
+        "consecutive": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.121282353231863,
+          "closest_to_phi": 0.4967516355180315
+        },
+        "skip1": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.2572741156691847,
+          "closest_to_phi": 0.3607598730807098
+        },
+        "any_phi_detected": "False"
+      },
+      "phi_incorrectly_detected": "False"
+    },
+    "harmonic_integers": {
+      "expected_ratio": 1.0,
+      "expected_symbol": "1",
+      "pac_analysis": {
+        "consecutive": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.0136088645891592,
+          "closest_to_phi": 0.1180339887498949
+        },
+        "skip1": {
+          "phi_detected": "True",
+          "phi_rate": 0.002008032128514056,
+          "mean_ratio": 1.02726433502801,
+          "closest_to_phi": 0.04863267791677184
+        },
+        "any_phi_detected": "True"
+      },
+      "phi_incorrectly_detected": "True"
+    },
+    "silver_ratio": {
+      "expected_ratio": 2.414213562373095,
+      "expected_symbol": "\u03b4_s (silver)",
+      "pac_analysis": {
+        "consecutive": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 2.414213562373095,
+          "closest_to_phi": 0.7961795736231996
+        },
+        "skip1": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 5.828427124746189,
+          "closest_to_phi": 4.210393135996293
+        },
+        "any_phi_detected": "False"
+      },
+      "phi_incorrectly_detected": "False"
+    },
+    "plastic_ratio": {
+      "expected_ratio": 1.324717957244746,
+      "expected_symbol": "\u03c1 (plastic)",
+      "pac_analysis": {
+        "consecutive": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.3244320837235493,
+          "closest_to_phi": 0.1180339887498949
+        },
+        "skip1": {
+          "phi_detected": "True",
+          "phi_rate": 0.002008032128514056,
+          "mean_ratio": 1.7541828628912983,
+          "closest_to_phi": 0.04863267791677184
+        },
+        "any_phi_detected": "True"
+      },
+      "phi_incorrectly_detected": "True"
+    },
+    "anti_phi_explicit": {
+      "expected_ratio": null,
+      "expected_symbol": "anti-\u03c6",
+      "pac_analysis": {
+        "consecutive": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.3194006541031016,
+          "closest_to_phi": 0.2999999999999998
+        },
+        "skip1": {
+          "phi_detected": "False",
+          "phi_rate": 0.0,
+          "mean_ratio": 1.7390185239778695,
+          "closest_to_phi": 0.11917960675006278
+        },
+        "any_phi_detected": "False"
+      },
+      "phi_incorrectly_detected": "False"
+    }
+  },
+  "positive_control": {
+    "expected_ratio": 1.618033988749895,
+    "pac_analysis": {
+      "consecutive": {
+        "phi_detected": "True",
+        "phi_rate": 0.9939879759519038,
+        "mean_ratio": 1.61739580645716,
+        "closest_to_phi": 0.0
+      },
+      "skip1": {
+        "phi_detected": "False",
+        "phi_rate": 0.0,
+        "mean_ratio": 2.6173945249666124,
+        "closest_to_phi": 0.3819660112501051
+      },
+      "any_phi_detected": "True"
+    },
+    "phi_correctly_detected": "True"
+  },
+  "specificity_analysis": {
+    "n_anti_phi_systems": 7,
+    "false_positives": 2,
+    "true_negatives": 5,
+    "specificity": 0.7142857142857143,
+    "sensitivity": 1.0,
+    "artifact_hypothesis_supported": false
+  },
+  "metadata": {
+    "timestamp": "2026-01-06T09:58:04.623677",
+    "experiment": "exp_03_anti_phi_construction",
+    "hypothesis": "PAC finds \u03c6 even in systems designed to exclude it",
+    "phi": 1.618033988749895,
+    "tolerance": 0.05
+  }
+}

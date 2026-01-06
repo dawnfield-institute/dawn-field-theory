@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-01-06T11:20:09.507840",
+  "hypothesis": "Distance from theoretical constants predicts performance",
+  "constants": {
+    "xi": 1.0571428,
+    "phi_inv": 0.618034
+  },
+  "ca_results": {
+    "class4_in_top10": 0,
+    "prob_by_chance": NaN
+  },
+  "sec_results": {
+    "correlation": 0.22872070533558322,
+    "p_value": 0.0058267117676398155
+  }
+}
