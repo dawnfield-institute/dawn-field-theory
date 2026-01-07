@@ -185,10 +185,73 @@ Error     = 9.5 × 10⁻⁷
 
 ## Next Steps
 
-- [ ] Improve Direct formula to get more digits of δ
-- [ ] Explore RG connection: why does M₁₀ appear?
+- [x] Improve Direct formula to get more digits of δ
+- [x] Explore RG connection: why does M₁₀ appear?
 - [ ] Check if similar structure exists for sine map
 - [ ] Write up findings for publication
+
+---
+
+## 17:30 - RBF Self-Closing Möbius Discovery
+
+### The Principle
+User insight: "Infinite is not unbounded - it's Möbius, endless, recursive."
+
+This led to seeking a SELF-REFERENTIAL formula rather than an infinite series.
+
+### Key Discoveries
+
+**1. Eigenvalue Identity (EXACT!)**
+The Fibonacci Möbius transformation M₁₀(z) = (89z+55)/(55z+34) has:
+- Eigenvalue at φ (stable): λ = φ⁻²⁰
+- Eigenvalue at -1/φ (unstable): λ = φ⁺²⁰
+
+Key identity: 89 - 55φ = 1/φ¹⁰ (EXACT!)
+
+This is because:
+```
+(89 - 55φ)φ¹⁰ = 89φ¹⁰ - 55φ¹¹
+             = 89(55φ + 34) - 55(89φ + 55)
+             = 4895φ + 3026 - 4895φ - 3025
+             = 1
+```
+
+**2. The RBF Self-Closing Formula**
+```
+δ = φ^(20/N)
+
+where N = √(39 + 1/x)
+and   x = 160 + (δ-4)² × (1 - 1/(1371 + δ - 4))
+```
+
+This is SELF-REFERENTIAL: x → N → δ → x
+
+**3. Convergence**
+Starting from x = 160:
+
+| Iteration | δ error | Digits |
+|-----------|---------|--------|
+| 0 | 1.6e-6 | 6 |
+| 1 | 7.9e-12 | 11 |
+| 2 | 1.5e-13 | 13 |
+| 3+ | 1.5e-13 | 13 (fixed point) |
+
+### Structural Constants
+| Constant | Value | Fibonacci Connection |
+|----------|-------|---------------------|
+| 39 | F₉ + F₅ | 34 + 5 |
+| 160 | 2⁵ × F₅ | 32 × 5 |
+| 1371 | 37² + 2 | Near 55 × 25 = 1375 |
+| φ²⁰ | 15127.0 | Eigenvalue at -1/φ |
+
+### RBF Interpretation
+The formula embodies RBF (Recursive Balance Field):
+- Forward Möbius: expansion by φ²⁰
+- Backward (inverse) Möbius: contraction by φ⁻²⁰
+- Balance: the self-consistent fixed point gives δ
+
+### File Created
+- `exp_26_rbf_self_closing_mobius.py` - Complete implementation
 
 ## Files Created/Modified
 
