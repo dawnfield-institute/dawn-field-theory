@@ -1,0 +1,10 @@
+{
+  "M_Zprime_GeV": 395.14626666666663,
+  "M_uncertainty_GeV": 19.757313333333332,
+  "coupling_ratio": 0.07692307692307693,
+  "width_MeV": 63.979487179487194,
+  "cross_section_ratio": 3.501277966457758e-05,
+  "prediction_documented": true,
+  "testable": true,
+  "not_currently_excluded": true
+}

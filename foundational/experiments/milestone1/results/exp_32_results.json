@@ -1,0 +1,11 @@
+{
+  "baseline_patterns": 6452,
+  "sec_patterns": 1370,
+  "baseline_entropy": 12.65484073856899,
+  "sec_entropy": 10.056492637912594,
+  "n_attractors_sec": 1,
+  "sec_born_compliance": 0.85,
+  "sec_superior": true,
+  "born_emerges": true,
+  "validated": true
+}

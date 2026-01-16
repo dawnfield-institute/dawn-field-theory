@@ -1,6 +1,6 @@
 {
   "experiment": "exp_03_med_bounds",
-  "timestamp": "2026-01-16T11:17:02.398401",
+  "timestamp": "2026-01-16T15:00:19.385098",
   "conclusion": "MED bounds derived from stability, information, and dimensions",
   "bounds": {
     "depth": 2,

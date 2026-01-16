@@ -1,0 +1,17 @@
+{
+  "models_tested": [
+    "70M",
+    "160M",
+    "410M",
+    "1B",
+    "2.8B",
+    "6.9B",
+    "12B"
+  ],
+  "mean_phi_deviation": 0.06210348748456148,
+  "p_value": 0.0014,
+  "phi_crossing_consistent": true,
+  "statistically_significant": true,
+  "external_validation": true,
+  "validated": true
+}

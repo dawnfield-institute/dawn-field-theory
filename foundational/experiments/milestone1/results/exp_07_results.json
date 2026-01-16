@@ -1,6 +1,6 @@
 {
   "experiment": "exp_07_xi_falsification",
-  "timestamp": "2026-01-16T11:17:03.228423",
+  "timestamp": "2026-01-16T15:00:20.014760",
   "tests": {
     "phenomenon_convergence": {
       "methods": 4,

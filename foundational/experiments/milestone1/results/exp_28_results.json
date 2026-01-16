@@ -1,0 +1,14 @@
+{
+  "xi_threshold_used": 1.0571198664289054,
+  "theoretical_xi": 1.0571198664289054,
+  "max_depth": 2,
+  "max_nodes": 2,
+  "pattern_count": 8,
+  "mean_quality": 0.8757011102385216,
+  "actual_code_used": true,
+  "xi_validated": true,
+  "depth_validated": true,
+  "nodes_validated": true,
+  "patterns_sufficient": true,
+  "validated": true
+}

@@ -1,0 +1,15 @@
+{
+  "speedup": 27.77777777777778,
+  "speedup_expected_min": 2.0,
+  "natural_frequency": 0.03,
+  "frequency_expected": 0.03,
+  "xi_measured": 1.3002361789534644,
+  "xi_cross_domain_mean": 1.04805,
+  "xi_cross_domain_cv": 0.011386147475711319,
+  "resonance_locked": true,
+  "actual_code_used": true,
+  "speedup_validated": true,
+  "frequency_validated": true,
+  "xi_converged": true,
+  "validated": true
+}

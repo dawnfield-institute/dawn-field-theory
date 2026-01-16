@@ -1,6 +1,6 @@
 {
   "experiment": "exp_13_alpha_falsification",
-  "timestamp": "2026-01-16T11:17:24.407893",
+  "timestamp": "2026-01-16T15:00:20.411696",
   "trials": 10000,
   "valid_formulas": 5399,
   "our_error": 0.0005711599627555799,
