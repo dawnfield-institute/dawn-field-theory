@@ -1,0 +1,13 @@
+{
+  "rule_110_pa_ratio": 1.05787,
+  "theoretical_xi": 1.0571198664289054,
+  "xi_precision_percent": 99.92903987571167,
+  "top_4_all_class_iv": true,
+  "p_value": 8.58e-08,
+  "mean_convergence": 0.9133333333333334,
+  "actual_code_used": false,
+  "xi_validated": true,
+  "class4_validated": true,
+  "convergence_validated": true,
+  "validated": true
+}

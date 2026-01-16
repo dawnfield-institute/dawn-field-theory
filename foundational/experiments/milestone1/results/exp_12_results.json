@@ -1,6 +1,6 @@
 {
   "experiment": "exp_12_alpha_formula",
-  "timestamp": "2026-01-16T11:17:24.079534",
+  "timestamp": "2026-01-16T15:00:20.170337",
   "formula": "\u03b1 = (F\u2083/(F\u2084\u00b7\u03c6\u00b7F\u2081\u2080)) \u00d7 (1 - F\u2081\u2080/(4\u03c0\u00b7F\u2087\u00b2))",
   "components": {
     "F_3": 2,

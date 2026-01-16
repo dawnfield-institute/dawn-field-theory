@@ -1,6 +1,6 @@
 {
   "experiment": "exp_05_fibonacci_integers",
-  "timestamp": "2026-01-16T11:17:02.807214",
+  "timestamp": "2026-01-16T15:00:19.698447",
   "conclusion": "Fibonacci emerges from PAC + integer constraint",
   "binet_formula": "F(k) = (\u03c6\u1d4f - \u03c8\u1d4f) / \u221a5",
   "verification": {

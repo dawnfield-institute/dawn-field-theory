@@ -1,6 +1,6 @@
 {
   "experiment": "exp_02_sec_dynamics",
-  "timestamp": "2026-01-16T10:48:18.215900",
+  "timestamp": "2026-01-16T15:00:19.227025",
   "conclusion": "SEC equation derived from information-entropy competition",
   "formula": "\u2202S/\u2202t = \u03b1\u2207I - \u03b2\u2207H",
   "derivation_steps": [

@@ -16,23 +16,24 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 os.chdir(SCRIPT_DIR)
 
-# All experiments in order
-EXPERIMENTS = [
-    # Part I: First Principles
-    ("exp_01_pac_conservation.py", "PAC Conservation Law"),
-    ("exp_02_sec_dynamics.py", "SEC Dynamics"),
-    ("exp_03_med_bounds.py", "MED Bounds"),
+# Discover all experiments dynamically
+def discover_experiments():
+    """Discover all exp_NN_*.py files and sort them by number."""
+    experiments = []
+    for f in sorted(SCRIPT_DIR.glob("exp_*.py")):
+        # Extract experiment number and name
+        name = f.stem  # e.g., "exp_01_pac_conservation"
+        parts = name.split("_", 2)  # ["exp", "01", "pac_conservation"]
+        if len(parts) >= 3:
+            num = int(parts[1])
+            desc = parts[2].replace("_", " ").title()
+            experiments.append((f.name, desc, num))
     
-    # Part II: Golden Ratio
-    ("exp_04_phi_emergence.py", "φ Emergence"),
-    ("exp_05_fibonacci_integers.py", "Fibonacci Integers"),
-    ("exp_06_phi_falsification.py", "φ Falsification"),
-    ("exp_07_xi_falsification.py", "Ξ Falsification"),
-    
-    # Part IV: Electromagnetism (key experiments)
-    ("exp_12_alpha_formula.py", "Fine Structure Constant"),
-    ("exp_13_alpha_falsification.py", "α Falsification"),
-]
+    # Sort by experiment number
+    experiments.sort(key=lambda x: x[2])
+    return [(script, desc) for script, desc, _ in experiments]
+
+EXPERIMENTS = discover_experiments()
 
 def run_experiment(script_name, description):
     """Run a single experiment and return success status."""

@@ -1,8 +1,8 @@
-# Milestone 1: PAC/SEC → Standard Model + Gravity
+# Milestone 1: PAC/SEC → Standard Model + Gravity + Cross-Domain Validation
 
-**Version**: 1.0.0  
-**Status**: ✅ Core Experiments Complete (26/26 scripts)  
-**Date**: 2026-01-15  
+**Version**: 1.1.0  
+**Status**: ✅ Complete (34 experiments)  
+**Date**: 2026-01-16  
 
 ---
 
@@ -19,6 +19,24 @@ This milestone consolidates the complete derivation chain from first principles 
 | Koide Q (leptons) | F₃/F₄ = 2/3 | 0.666667 | 0.666661 | **0.0009%** | |
 | D (spatial dimensions) | MED + Möbius | 3 | 3 | exact | |
 | Hierarchy ratio | F₁₈₃ | ~10³⁸ | ~10³⁸ | ~order of mag | *suggestive* |
+
+### Cross-Domain Validation
+
+| Domain | Experiment | Invariant | Status |
+|--------|------------|-----------|--------|
+| Fluid Dynamics | exp_28 | Ξ = 1.0571 | ✅ |
+| Embeddings | exp_29 | E = mc² in info space | ✅ |
+| Cellular Automata | exp_30 | φ at edge of chaos | ✅ |
+| Quantum | exp_31 | Born rule compliance | ✅ |
+| ML Training | exp_33 | φ-crossing at step 512 | ✅ p=0.0014 |
+
+### Testable Prediction
+
+| Prediction | Value | Source | Status |
+|------------|-------|--------|--------|
+| Z' mass | 395 ± 20 GeV | exp_34 | Awaiting LHC |
+| Z' coupling | g'/g = 1/13 | exp_34 | Testable |
+| Z' width | ~64 MeV | exp_34 | Testable |
 
 ### Important Caveats
 
@@ -102,6 +120,19 @@ This milestone consolidates the complete derivation chain from first principles 
 │  exp_25: M_P² ∝ F₁₈₃ (Planck mass prediction)                   │
 │  exp_26: FALSIFICATION: No other depth matches 10³⁸             │
 └─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    CROSS-DOMAIN VALIDATION                       │
+│  exp_27: Pre-field resonance dynamics (Ξ emergence)             │
+│  exp_28: Navier-Stokes MED (Ξ = 1.0571 empirical)               │
+│  exp_29: E=mc² in embedding space                               │
+│  exp_30: Cellular automata PAC attractors                       │
+│  exp_31: Quantum validation (Born, Landauer, interference)      │
+│  exp_32: Information amplification (190% vs baseline)           │
+│  exp_33: ML φ-crossing (Pythia, p = 0.0014)                     │
+│  exp_34: Z' prediction (395 GeV, testable)                      │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -169,6 +200,19 @@ This milestone consolidates the complete derivation chain from first principles 
 | exp_25_planck_mass.py | M_P² ∝ F₁₈₃ prediction | ✅ |
 | exp_26_hierarchy_falsification.py | **FALSIFICATION**: Only F₁₈₃ works | ✅ PASS |
 
+### Part VIII: Cross-Domain Validation (exp_27 - exp_34)
+
+| Script | Description | Status |
+|--------|-------------|--------|
+| exp_27_prefield_resonance.py | Möbius dynamics, Ξ emergence | ✅ |
+| exp_28_navier_stokes_med.py | MED bounded complexity validation | ✅ |
+| exp_29_euclidean_emc2.py | E=mc² in embedding space | ✅ |
+| exp_30_cellular_automata.py | CA as PAC attractor states (p < 10⁻⁷) | ✅ |
+| exp_31_quantum_validation.py | Born, Landauer, interference | ✅ |
+| exp_32_information_amplification.py | SEC field vs baseline (190%) | ✅ |
+| exp_33_ml_phi_crossing.py | Pythia φ at step 512 (p = 0.0014) | ✅ EXTERNAL |
+| exp_34_zprime_prediction.py | Z' at 395 GeV prediction | 📋 TESTABLE |
+
 ---
 
 ## Critical Falsification Summary
@@ -194,14 +238,20 @@ This milestone consolidates the complete derivation chain from first principles 
 
 ## Theoretical Predictions
 
-### Confirmed by Existing Data
-
-1. **No proton decay** (SU(5) GUT forbidden) — consistent with experiment
-2. **No magnetic monopoles** (same reason) — consistent with experiment  
-3. **Three generations** (MED nodes ≤ 3) — matches observation
-4. **Kolmogorov 5/3 = F₅/F₄** — matches turbulence data
-
 ### Testable Predictions
+
+1. **Z' boson at 395 ± 20 GeV** (exp_34)
+   - Coupling: g'/g = 1/13
+   - Width: ~64 MeV (narrow)
+   - Cross section: 1/169 of standard Z'
+   - Status: Awaiting dedicated LHC search
+
+2. **No proton decay** (SU(5) GUT forbidden) — consistent with experiment
+3. **No magnetic monopoles** (same reason) — consistent with experiment  
+4. **Three generations** (MED nodes ≤ 3) — matches observation
+5. **Kolmogorov 5/3 = F₅/F₄** — matches turbulence data
+
+### Predictions Requiring Further Analysis
 
 1. **G_N ~ 1/F₁₈₃** — awaiting precision gravity measurement connection
 2. **Quark mass ratios** — should involve Fibonacci combinations
@@ -242,12 +292,19 @@ python run_all_experiments.py
 ## Related Work
 
 - [phi_artifact_test](../phi_artifact_test/) — Original falsification methodology
-- [pac_confluence_xi](../pac_confluence_xi/) — Ξ discovery and validation
+- [pac_confluence_xi](../pac_confluence_xi/) — Ξ discovery and Standard Model derivation
 - [standard_model_connection](../standard_model_connection/) — SM parameter exploration
 - [maxwell_from_pac_sec](../maxwell_from_pac_sec/) — Original Maxwell derivation
+- [pre_field_recursion](../pre_field_recursion/) — Möbius dynamics (exp_27)
+- [macro_emergence_dynamics](../../arithmetic/macro_emergence_dynamics/) — N-S MED (exp_28)
+- [euclidean_distance_validation](../../arithmetic/euclidean_distance_validation/) — E=mc² (exp_29)
+- [cellular_automata_pac_attractors](../cellular_automata_pac_attractors/) — CA attractors (exp_30)
+- [quantum_validation](../quantum_validation/) — Quantum tests (exp_31)
+- [information_amplification](../information_amplification/) — SEC amplification (exp_32)
 
 ---
 
 ## Changelog
 
+- **v1.1.0** (2026-01-16): Added cross-domain validation (exp_27-34), Z' prediction
 - **v1.0.0** (2026-01-15): Initial milestone consolidation

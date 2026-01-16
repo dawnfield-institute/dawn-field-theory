@@ -1,0 +1,17 @@
+{
+  "born_rule": {
+    "all_chi_pass": true,
+    "mean_kl_divergence": 0.00016,
+    "validated": true
+  },
+  "landauer": {
+    "ratio": 1.5,
+    "bound_respected": true
+  },
+  "interference": {
+    "low_noise_r": 1.0,
+    "high_noise_r": 0.45,
+    "validated": true
+  },
+  "validated": true
+}

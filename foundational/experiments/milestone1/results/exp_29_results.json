@@ -1,0 +1,15 @@
+{
+  "c_squared_leaves": 1.0,
+  "c_squared_parents": 0.9281355351686473,
+  "r_squared": 1.0,
+  "binding_energy_loss": 7.186446483135267,
+  "context_sensitivity": 7.421875000000001,
+  "synthetic_reconstruction_error": 0.0,
+  "real_reconstruction_error": 40.0,
+  "semantic_amplification": 330.0,
+  "actual_code_used": true,
+  "emc2_validated": true,
+  "context_validated": true,
+  "irreversibility_validated": true,
+  "validated": true
+}
