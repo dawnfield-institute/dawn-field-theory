@@ -1,0 +1,25 @@
+{
+  "experiment": "exp_06_phi_falsification",
+  "timestamp": "2026-01-16T11:17:03.022062",
+  "attacks": [
+    {
+      "name": "Alternative axioms",
+      "result": "DEFENDED"
+    },
+    {
+      "name": "Alternative self-similarity",
+      "result": "DEFENDED"
+    },
+    {
+      "name": "Numerology check",
+      "result": "DEFENDED"
+    },
+    {
+      "name": "Simple ratio substitution",
+      "result": "DEFENDED"
+    }
+  ],
+  "overall_verdict": "GENUINE",
+  "conclusion": "\u03c6 emergence survives all falsification attempts",
+  "status": "VALIDATED"
+}
