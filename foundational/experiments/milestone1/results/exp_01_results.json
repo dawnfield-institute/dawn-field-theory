@@ -1,0 +1,15 @@
+{
+  "experiment": "exp_01_pac_conservation",
+  "timestamp": "2026-01-16T10:48:12.093627",
+  "conclusion": "PAC is unique linear symmetric conservation law",
+  "formula": "f(P) = f(C\u2081) + f(C\u2082)",
+  "derivation_steps": [
+    "Start with general bivariate function",
+    "Impose linearity",
+    "Impose child symmetry",
+    "Impose normalization",
+    "Unique result: additive conservation"
+  ],
+  "tests_passed": true,
+  "status": "VALIDATED"
+}

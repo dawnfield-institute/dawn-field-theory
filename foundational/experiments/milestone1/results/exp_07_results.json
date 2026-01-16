@@ -1,0 +1,10 @@
+{
+  "experiment": "exp_07_xi_falsification",
+  "timestamp": "2026-01-16T11:17:03.228423",
+  "tests": {
+    "phenomenon_convergence": {
+      "methods": 4,
+      "mean": 1.0572749999999997,
+      "std": 0.0017823790281531473,
+      "spread_percent": 0.16858234878845596,
+      "converged": 

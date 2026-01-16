@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_02_sec_dynamics",
+  "timestamp": "2026-01-16T10:48:18.215900",
+  "conclusion": "SEC equation derived from information-entropy competition",
+  "formula": "\u2202S/\u2202t = \u03b1\u2207I - \u03b2\u2207H",
+  "derivation_steps": [
+    "Identify competing tendencies: information concentration vs entropy diffusion",
+    "Write flux equations using gradient (Fick's law analog)",
+    "Structure grows where information flux exceeds entropy flux",
+    "Simplest PDE: SEC equation"
+  ],
+  "simulation": {
+    "structure_formed": true,
+    "max_structure": 0.3045833236777399,
+    "balance_ratio": 1.25
+  },
+  "status": "VALIDATED"
+}

@@ -1,0 +1,16 @@
+schema_version: "2.0"
+description: "JSON output results from all milestone 1 experiments"
+semantic_scope: "data"
+proficiency_level: "research"
+
+files:
+  - "[exp_01_results.json]": "PAC conservation derivation results"
+  - "[exp_02_results.json]": "SEC dynamics derivation results"
+  - "[exp_03_results.json]": "MED bounds derivation results"
+  - "[exp_04_results.json]": "φ emergence derivation results"
+  - "[exp_05_results.json]": "Fibonacci integer constraint results"
+  - "[exp_06_results.json]": "φ falsification test results"
+  - "[exp_07_results.json]": "Ξ falsification test results"
+  - "[exp_12_results.json]": "Fine structure α derivation results"
+  - "[exp_13_results.json]": "α falsification test results"
+  - "[milestone1_summary.json]": "Complete milestone summary"

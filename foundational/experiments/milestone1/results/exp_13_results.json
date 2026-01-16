@@ -1,0 +1,30 @@
+{
+  "experiment": "exp_13_alpha_falsification",
+  "timestamp": "2026-01-16T11:17:24.407893",
+  "trials": 10000,
+  "valid_formulas": 5399,
+  "our_error": 0.0005711599627555799,
+  "count_at_precision": 0,
+  "probability_random": 0.0,
+  "best_random": {
+    "indices": [
+      "5",
+      "2",
+      "14",
+      "13",
+      "7"
+    ],
+    "values": [
+      5,
+      1,
+      377,
+      233,
+      13
+    ],
+    "alpha": 0.0072974460044896525,
+    "error": 0.0012803984563559004
+  },
+  "verdict": "UNIQUE",
+  "passed": true,
+  "status": "VALIDATED"
+}
