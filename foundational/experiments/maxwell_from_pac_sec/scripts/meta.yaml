@@ -1,0 +1,9 @@
+schema_version: "2.0"
+description: "Numbered experiment scripts for Maxwell derivation"
+semantic_scope: "implementation"
+files:
+  - "[exp_01_sec_wave_speed.py]": "Derive c from SEC parameters"
+  - "[exp_02_charge_quantization.py]": "Charge from topological collapse"
+  - "[exp_03_curl_projection.py]": "Gradient to curl via depth=2"
+  - "[exp_04_fibonacci_alpha.py]": "Fine structure from F-ratios"
+  - "[exp_05_3d_necessity.py]": "Why 3 spatial dimensions"

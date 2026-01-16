@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-01-15T10:09:26.345177",
+  "hypothesis": "Curl emerges from depth-2 projection onto observable space",
+  "tests": {
+    "gradient_to_curl": {
+      "gradient_curl": 2.339960711585563e-16,
+      "curl_error": 1.2706889650370246,
+      "mechanism": "z-derivative in curl formula comes from hidden dimension"
+    },
+    "med_depth_necessity": {
+      "curl_requires_2d": true,
+      "med_depth": 2,
+      "curl_exists_at_depth_2": "False"
+    },
+    "faraday_induction": {
+      "faraday_error": 0.0,
+      "mechanism": "SEC time evolution couples E curl to B rate"
+    },
+    "three_dimensions": {
+      "curl_components_3d": 3,
+      "med_nodes": 3,
+      "mechanism": "Curl algebra closure requires exactly 3D"
+    }
+  }
+}

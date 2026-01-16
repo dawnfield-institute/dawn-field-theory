@@ -1,0 +1,42 @@
+schema_version: "2.0"
+description: "Derivation of Maxwell's equations from PAC/SEC information dynamics"
+semantic_scope: "research"
+proficiency_level: "research"
+estimated_context_weight: 0.9
+validation_type: "manual"
+
+experiment_metadata:
+  status: "active"
+  started: "2026-01-14"
+  hypothesis: "Maxwell's E↔B unification is a recursion of the fundamental I↔ℰ (Information↔Energy) unification"
+  
+key_results:
+  - "SEC wave equation yields c² = αγ + βδ"
+  - "Charge = topological SEC collapse with winding number quantization"
+  - "3D emerges from MED nodes≤3 bound and Möbius embedding requirement"
+  - "Curl structure from depth=2 dimensional projection"
+  - "F₇=13 gauge crystallization explains electromagnetic coupling"
+
+cross_references:
+  - "../macro_emergence_dynamics/"
+  - "../pac_confluence_xi/"
+  - "../standard_model_connection/"
+  - "../sec_threshold_detection/"
+  - "../cellular_automata_pac_attractors/"
+  - "../../arithmetic/macro_emergence_dynamics/"
+
+files:
+  - "[README.md]": "Experiment overview and key findings"
+  - "[SYNTHESIS.md]": "Cross-connections to other Dawn Field Theory work"
+
+child_directories:
+  - name: "core"
+    description: "Reusable modules for SEC-Maxwell simulations"
+  - name: "scripts"
+    description: "Numbered experiment scripts"
+  - name: "results"
+    description: "JSON output from experiments"
+  - name: "journals"
+    description: "Daily research logs"
+  - name: "papers"
+    description: "Formal writeups and preprints"

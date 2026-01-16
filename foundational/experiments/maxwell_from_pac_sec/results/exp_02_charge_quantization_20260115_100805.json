@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-01-15T10:08:05.635828",
+  "hypothesis": "Charge emerges as quantized SEC collapse with winding number",
+  "tests": {
+    "winding_quantization": [
+      {
+        "n_target": 0.0,
+        "n_measured": 0,
+        "is_integer": true
+      },
+      {
+        "n_target": 0.5,
+        "n_measured": 0,
+        "is_integer": true
+      },
+      {
+        "n_target": 1.0,
+        "n_measured": 1,
+        "is_integer": true
+      },
+      {
+        "n_target": 1.5,
+        "n_measured": 1,
+        "is_integer": false
+      },
+      {
+        "n_target": 2.0,
+        "n_measured": 2,
+        "is_integer": true
+      },
+      {
+        "n_target": -1.0,
+        "n_measured": -1,
+        "is_integer": true
+      },
+      {
+        "n_target": 3.0,
+        "n_measured": 3,
+        "is_integer": true
+      }
+    ],
+    "coulomb_emergence": {
+      "measured_power": -1.9999999984011236,
+      "expected_power": -2,
+      "error_pct": 7.99438182319534e-08
+    },
+    "pair_creation": {
+      "charge_1": 1,
+      "charge_2": -1,
+      "total_winding": 0,
+      "conserved": true
+    },
+    "fractional_charges": {
+      "up_quark": 0.6666666666666666,
+      "down_quark": -0.3333333333333333,
+      "proton": 1.0,
+      "neutron": 0.0,
+      "proton_correct": true,
+      "neutron_correct": true,
+      "med_nodes": 3,
+      "colors": 3
+    },
+    "elementary_charge": {
+      "alpha_measured": 0.0072973525643,
+      "alpha_pac": 0.007297310889743783,
+      "e_measured": 1.602176634e-19,
+      "e_derived": 1.6021766339963758e-19,
+      "e_pac": 1.6021720590429975e-19,
+      "error_pct": 0.00028554635645454786
+    }
+  }
+}
