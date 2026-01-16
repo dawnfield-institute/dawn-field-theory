@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-01-15T10:06:00.892535",
+  "target_c": 299792458.0,
+  "constants": {
+    "PHI": 1.618033988749895,
+    "XI": 1.0571198664289054,
+    "XI_MEAN": 1.0289341797357832,
+    "F_7": 13,
+    "F_10": 55
+  },
+  "models": [
+    {
+      "name": "Symmetric",
+      "hypothesis": "\u03b1=\u03b2, \u03b3=\u03b4 (full I\u2194H symmetry)",
+      "parameters": {
+        "alpha": 211985280.00038323,
+        "beta": 211985280.00038323,
+        "gamma": 211985280.00038323,
+        "delta": 211985280.00038323
+      },
+      "ratios": {
+        "alpha/beta": 1.0,
+        "gamma/delta": 1.0,
+        "alpha/gamma": 1.0
+      },
+      "analysis": {
+        "c_sec": 299792458.0,
+        "c_sec_sq": 8.987551787368176e+16,
+        "c_true": 299792458.0,
+        "error_abs": 0.0,
+        "error_rel": 0.0,
+        "error_pct": 0.0,
+        "eps_mu_product": 1.1126500560536185e-17
+      }
+    },
+    {
+      "name": "Xi-balanced",
+      "hypothesis": "\u03b1/\u03b2 = \u039e (information dominance)",
+      "parameters": {
+        "alpha": 220960751.52031407,
+        "beta": 209021472.90708813,
+        "gamma": 209021472.90708813,
+        "delta": 209021472.90708813
+      },
+      "ratios": {
+        "alpha/beta": 1.0571198664289054,
+        "gamma/delta": 1.0,
+        "alpha/gamma": 1.0571198664289054
+      },
+      "analysis": {
+        "c_sec": 299792457.99999994,
+        "c_sec_sq": 8.987551787368173e+16,
+        "c_true": 299792458.0,
+        "error_abs": -5.960464477539063e-08,
+        "error_rel": 1.9881969404110434e-16,
+        "error_pct": 1.9881969404110434e-14,
+        "eps_mu_product": 1.1126500560536188e-17
+      }
+    },
+    {
+      "name": "Phi-structured",
+      "hypothesis": "\u03b1/\u03b3 = \u03c6, \u03b2/\u03b4 = 1/\u03c6 (golden hierarchy)",
+      "parameters": {
+        "alpha": 324388793.24108255,
+        "beta": 123905493.44853137,
+        "gamma": 200483299.7925512,
+        "delta": 200483299.7925512
+      },
+      "ratios": {
+        "alpha/beta": 2.618033988749895,
+        "gamma/delta": 1.0,
+        "alpha/gamma": 1.618033988749895
+      },
+      "analysis": {
+        "c_sec": 299792458.0,
+        "c_sec_sq": 8.987551787368176e+16,
+        "c_true": 299792458.0,
+        "error_abs": 0.0,
+        "error_rel": 0.0,
+        "error_pct": 0.0,
+        "eps_mu_product": 1.1126500560536185e-17
+      }
+    },
+    {
+      "name": "Fibonacci-nested",
+      "hypothesis": "\u03b1/\u03b2 = F\u2081\u2080/F\u2087 = 55/13 \u2248 \u03c6\u00b3",
+      "parameters": {
+        "alpha": 554571133.4401759,
+        "beta": 131080449.72222339,
+        "gamma": 131080449.72222339,
+        "delta": 131080449.72222339
+      },
+      "ratios": {
+        "alpha/beta": 4.230769230769231,
+        "gamma/delta": 1.0,
+        "alpha/gamma": 4.230769230769231
+      },
+      "analysis": {
+        "c_sec": 299792457.99999994,
+        "c_sec_sq": 8.987551787368174e+16,
+        "c_true": 299792458.0,
+        "error_abs": -5.960464477539063e-08,
+        "error_rel": 1.9881969404110434e-16,
+        "error_pct": 1.9881969404110434e-14,
+        "eps_mu_product": 1.1126500560536187e-17
+      }
+    },
+    {
+      "name": "Xi-mean",
+      "hypothesis": "\u03b1/\u03b2 = \u039e_mean = \u221a(\u039e\u00d7\u039e_min) \u2248 1.0289",
+      "parameters": {
+        "alpha": 216558042.85403976,
+        "beta": 210468314.80479056,
+        "gamma": 210468314.80479056,
+        "delta": 210468314.80479056
+      },
+      "ratios": {
+        "alpha/beta": 1.0289341797357832,
+        "gamma/delta": 1.0,
+        "alpha/gamma": 1.0289341797357832
+      },
+      "analysis": {
+        "c_sec": 299792458.0,
+        "c_sec_sq": 8.987551787368178e+16,
+        "c_true": 299792458.0,
+        "error_abs": 0.0,
+        "error_rel": 0.0,
+        "error_pct": 0.0,
+        "eps_mu_product": 1.1126500560536183e-17
+      }
+    }
+  ]
+}

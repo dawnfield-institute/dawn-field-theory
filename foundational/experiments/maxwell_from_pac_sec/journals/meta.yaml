@@ -1,0 +1,5 @@
+schema_version: "2.0"
+description: "Daily research logs for Maxwell from PAC/SEC experiment"
+semantic_scope: "documentation"
+files:
+  - "[2026-01-15_experiment_initialization.md]": "Initial experiment setup and integration mapping"

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-01-15T10:12:30.348223",
+  "alpha_measured": 0.0072973525643,
+  "alpha_inverse": 137.03599917759013,
+  "models": {
+    "simple_fib": {
+      "model": "F_1/F_12",
+      "value": 0.006944444444444444,
+      "error_pct": 4.836111682229084
+    },
+    "phi_power": {
+      "model": "\u03c6^(-10)",
+      "value": 0.008130618755783347,
+      "error_pct": 11.418746513082553
+    },
+    "xi_corrected": {
+      "model": "(F\u2083/(F\u2084\u00b7\u03c6\u00b7F\u2081\u2080)) \u00d7 (1 - F\u2081\u2080/(4\u03c0\u00b7F\u2087\u00b2))",
+      "value": 0.007297310889743783,
+      "error_pct": 0.0005710914451416693
+    },
+    "gauge_depth": {
+      "model": "GUT \u00d7 sin\u00b2\u03b8_W (rough)",
+      "value": 0.005494505494505495,
+      "error_pct": 24.705494957368057
+    },
+    "mystery_137": {
+      "zeckendorf": [
+        11,
+        9,
+        7,
+        2
+      ],
+      "note": "137 = 89 + 34 + 8 + 5 + 1 = F\u2081\u2081 + F\u2089 + F\u2086 + F\u2085 + F\u2082"
+    },
+    "sec_coupling": {
+      "xi_deviation": 0.05711986642890543,
+      "phi_xi_product": 0.09532043889234611,
+      "error_pct": 1206.233158565907
+    }
+  }
+}
