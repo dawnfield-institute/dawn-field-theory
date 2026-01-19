@@ -1,0 +1,162 @@
+{
+  "timestamp": "2026-01-19T17:24:06.190621",
+  "parameters": {
+    "n_max": 50000,
+    "window": 101
+  },
+  "hypothesis": "\u03c6 signatures require edge-of-chaos (computational saturation)",
+  "cah_condition": "Condition 4: System is COMPUTATIONALLY SATURATED",
+  "k_sweep": [
+    {
+      "k": 3,
+      "frac_E_positive": 0.73336,
+      "dist_from_phi_inv": 0.11532601125010522,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.3760531275552775,
+      "normalized_entropy": -20.16697462038588
+    },
+    {
+      "k": 4,
+      "frac_E_positive": 0.67624,
+      "dist_from_phi_inv": 0.05820601125010516,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.10076880927817437,
+      "normalized_entropy": -10.88440571451298
+    },
+    {
+      "k": 5,
+      "frac_E_positive": 0.66476,
+      "dist_from_phi_inv": 0.046726011250105226,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.07002401984185189,
+      "normalized_entropy": -11.23445332589273
+    },
+    {
+      "k": 6,
+      "frac_E_positive": 0.64796,
+      "dist_from_phi_inv": 0.02992601125010519,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.0296915009510055,
+      "normalized_entropy": -12.613343955190956
+    },
+    {
+      "k": 7,
+      "frac_E_positive": 0.63656,
+      "dist_from_phi_inv": 0.018526011250105223,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.019409789324476266,
+      "normalized_entropy": -14.519587336032773
+    },
+    {
+      "k": 8,
+      "frac_E_positive": 0.62696,
+      "dist_from_phi_inv": 0.00892601125010517,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.040223613500125155,
+      "normalized_entropy": -16.405446752633885
+    },
+    {
+      "k": 9,
+      "frac_E_positive": 0.62004,
+      "dist_from_phi_inv": 0.002006011250105244,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.057473126315904746,
+      "normalized_entropy": -18.59475805907983
+    },
+    {
+      "k": 10,
+      "frac_E_positive": 0.61092,
+      "dist_from_phi_inv": 0.007113988749894773,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.06791204658018529,
+      "normalized_entropy": -19.595828229126564
+    },
+    {
+      "k": 11,
+      "frac_E_positive": 0.60724,
+      "dist_from_phi_inv": 0.01079398874989479,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.09620946655472291,
+      "normalized_entropy": -22.545904993195236
+    },
+    {
+      "k": 12,
+      "frac_E_positive": 0.60248,
+      "dist_from_phi_inv": 0.015553988749894776,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.11362603355493471,
+      "normalized_entropy": -23.64515635147739
+    },
+    {
+      "k": 13,
+      "frac_E_positive": 0.60012,
+      "dist_from_phi_inv": 0.017913988749894805,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.11927562180103468,
+      "normalized_entropy": -25.973279697585443
+    },
+    {
+      "k": 14,
+      "frac_E_positive": 0.5998,
+      "dist_from_phi_inv": 0.01823398874989479,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.13506098103519282,
+      "normalized_entropy": -27.654245289842947
+    },
+    {
+      "k": 15,
+      "frac_E_positive": 0.59532,
+      "dist_from_phi_inv": 0.02271398874989483,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.13771961062366916,
+      "normalized_entropy": -27.85202860378885
+    }
+  ],
+  "best_k": {
+    "k": 9,
+    "frac_E_positive": 0.62004,
+    "dist_from_phi_inv": 0.002006011250105244,
+    "ac_decay_time": 1,
+    "spectral_slope": 0.057473126315904746,
+    "normalized_entropy": -18.59475805907983
+  },
+  "edge_of_chaos_metrics": {
+    "lyapunov_proxy": 0.015804184497374335,
+    "ac_decay_time": 1,
+    "spectral_slope": 0.057473126315904746,
+    "normalized_entropy": -18.59475805907983
+  },
+  "comparison": {
+    "ordered": {
+      "k": 3,
+      "frac_E_positive": 0.73336,
+      "dist_from_phi_inv": 0.11532601125010522,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.3760531275552775,
+      "normalized_entropy": -20.16697462038588
+    },
+    "edge": {
+      "k": 9,
+      "frac_E_positive": 0.62004,
+      "dist_from_phi_inv": 0.002006011250105244,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.057473126315904746,
+      "normalized_entropy": -18.59475805907983
+    },
+    "chaotic": {
+      "k": 15,
+      "frac_E_positive": 0.59532,
+      "dist_from_phi_inv": 0.02271398874989483,
+      "ac_decay_time": 1,
+      "spectral_slope": 0.13771961062366916,
+      "normalized_entropy": -27.85202860378885
+    }
+  },
+  "conclusion": {
+    "supports_cah": false,
+    "edge_best": true,
+    "near_zero_lyapunov": false,
+    "intermediate_entropy": false,
+    "summary": "PARTIAL: Edge-of-chaos is best, but Lyapunov/entropy don't confirm EOC"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-01-19T17:29:44.088485",
+  "parameters": {
+    "n_max": 50000,
+    "window": 101
+  },
+  "optimal_kurtosis": -0.15,
+  "optimal": {
+    "conditions": {
+      "closed": 1.0,
+      "recursive": 0.98,
+      "conserving": 0.9999861262214772,
+      "balanced": 0.9999967833991164,
+      "kurtosis": -0.15056715130758525,
+      "product": 0.9799832514719155
+    },
+    "phi_distance": 0.002006011250105244
+  },
+  "violations": {
+    "closed_violated": {
+      "conditions": {
+        "closed": 0.16666666666666666,
+        "recursive": 0.98,
+        "conserving": 0.9999861262214772,
+        "balanced": 0.9859591562876864,
+        "kurtosis": -0.11239634475106897,
+        "product": 0.16103776129375752
+      },
+      "phi_distance": 0.0119139887498948
+    },
+    "recursive_violated": {
+      "conditions": {
+        "closed": 1.0,
+        "recursive": 0.1,
+        "conserving": 0.9999861262214772,
+        "balanced": 0.680398469803222,
+        "kurtosis": 0.046233704401006825,
+        "product": 0.06803890301055447
+      },
+      "phi_distance": 0.12156601125010524
+    },
+    "conserving_violated": {
+      "conditions": {
+        "closed": 1.0,
+        "recursive": 0.98,
+        "conserving": 0.5326031157185281,
+        "balanced": 1.6288212760684366e-05,
+        "kurtosis": -1.2000032788168924,
+        "product": 8.501649808510247e-06
+      },
+      "phi_distance": 0.3819660112501052
+    },
+    "balanced_violated": {
+      "conditions": {
+        "closed": 1.0,
+        "recursive": 0.98,
+        "conserving": 0.9999974313380566,
+        "balanced": 0.25545793199499894,
+        "kurtosis": -0.519418127955392,
+        "product": 0.25034813029373226
+      },
+      "phi_distance": 0.11532601125010522
+    }
+  },
+  "sweep": {
+    "n_configs": 84,
+    "correlation": {
+      "r": -0.42067628142657176,
+      "p": 6.767071927788982e-05
+    }
+  },
+  "conclusion": {
+    "status": "VALIDATED",
+    "optimal_best": true,
+    "negative_correlation": true,
+    "summary": "\u2705 VALIDATED: Refined CAH holds. Product score predicts \u03c6 proximity."
+  }
+}

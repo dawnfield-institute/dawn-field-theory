@@ -1,0 +1,357 @@
+{
+  "timestamp": "2026-01-19T17:28:29.086543",
+  "parameters": {
+    "n_max": 50000,
+    "window": 101,
+    "lam": 0.98
+  },
+  "coverage": [
+    {
+      "k": 3,
+      "largest_prime": 5,
+      "product": 30,
+      "coverage_fraction": 0.7333346666933339,
+      "smooth_count": 264,
+      "smooth_fraction": 0.00528
+    },
+    {
+      "k": 4,
+      "largest_prime": 7,
+      "product": 210,
+      "coverage_fraction": 0.7714354287085742,
+      "smooth_count": 565,
+      "smooth_fraction": 0.0113
+    },
+    {
+      "k": 5,
+      "largest_prime": 11,
+      "product": 2310,
+      "coverage_fraction": 0.7921958439168784,
+      "smooth_count": 945,
+      "smooth_fraction": 0.0189
+    },
+    {
+      "k": 6,
+      "largest_prime": 13,
+      "product": 30030,
+      "coverage_fraction": 0.8081761635232705,
+      "smooth_count": 1419,
+      "smooth_fraction": 0.02838
+    },
+    {
+      "k": 7,
+      "largest_prime": 17,
+      "product": 510510,
+      "coverage_fraction": 0.8194963899277986,
+      "smooth_count": 1936,
+      "smooth_fraction": 0.03872
+    },
+    {
+      "k": 8,
+      "largest_prime": 19,
+      "product": 9699690,
+      "coverage_fraction": 0.8289565791315826,
+      "smooth_count": 2514,
+      "smooth_fraction": 0.05028
+    },
+    {
+      "k": 9,
+      "largest_prime": 23,
+      "product": 223092870,
+      "coverage_fraction": 0.8362967259345186,
+      "smooth_count": 3103,
+      "smooth_fraction": 0.06206
+    },
+    {
+      "k": 10,
+      "largest_prime": 29,
+      "product": -2120241362,
+      "coverage_fraction": 0.8418768375367507,
+      "smooth_count": 3669,
+      "smooth_fraction": 0.07338
+    },
+    {
+      "k": 11,
+      "largest_prime": 31,
+      "product": -1302972782,
+      "coverage_fraction": 0.8469369387387747,
+      "smooth_count": 4260,
+      "smooth_fraction": 0.0852
+    },
+    {
+      "k": 12,
+      "largest_prime": 37,
+      "product": -965352678,
+      "coverage_fraction": 0.8510770215404309,
+      "smooth_count": 4823,
+      "smooth_fraction": 0.09646
+    },
+    {
+      "k": 13,
+      "largest_prime": 41,
+      "product": -924754134,
+      "coverage_fraction": 0.8548370967419349,
+      "smooth_count": 5379,
+      "smooth_fraction": 0.10758
+    },
+    {
+      "k": 14,
+      "largest_prime": 43,
+      "product": -1109722098,
+      "coverage_fraction": 0.8584171683433669,
+      "smooth_count": 5945,
+      "smooth_fraction": 0.1189
+    },
+    {
+      "k": 15,
+      "largest_prime": 47,
+      "product": -617331054,
+      "coverage_fraction": 0.8617372347446949,
+      "smooth_count": 6497,
+      "smooth_fraction": 0.12994
+    }
+  ],
+  "structure": [
+    {
+      "mean_E": 1.959503742966949e-05,
+      "median_E": 0.01417127844920657,
+      "skewness": -0.009250307599801135,
+      "kurtosis": -0.519418127955392,
+      "frac_positive": 0.50004999900002,
+      "crossing_rate": 0.5333493330133398,
+      "mean_run_length": 1.87487344857325,
+      "std_run_length": 1.3633384908505957,
+      "impulse_asymmetry": 0.36366852581219816,
+      "k": 3,
+      "phi_distance": 0.11532601125010522
+    },
+    {
+      "mean_E": 1.202863806972112e-05,
+      "median_E": 0.001065367161151659,
+      "skewness": -0.012238021836155173,
+      "kurtosis": -0.3655924573137459,
+      "frac_positive": 0.500029999400012,
+      "crossing_rate": 0.5714085718285634,
+      "mean_run_length": 1.75,
+      "std_run_length": 0.8684921786790665,
+      "impulse_asymmetry": 0.5000330623369756,
+      "k": 4,
+      "phi_distance": 0.05820601125010516
+    },
+    {
+      "mean_E": 2.934095442777605e-05,
+      "median_E": 0.00039936283416071305,
+      "skewness": -0.016175685102331236,
+      "kurtosis": -0.2839854587325319,
+      "frac_positive": 0.5012499750005,
+      "crossing_rate": 0.5418891622167556,
+      "mean_run_length": 1.8453277236492471,
+      "std_run_length": 1.014668918824891,
+      "impulse_asymmetry": 0.5954313688914278,
+      "k": 5,
+      "phi_distance": 0.046726011250105226
+    },
+    {
+      "mean_E": 5.879860810351066e-05,
+      "median_E": 0.0003190665571597695,
+      "skewness": -0.019036382129411455,
+      "kurtosis": -0.2331268985165864,
+      "frac_positive": 0.501089978200436,
+      "crossing_rate": 0.509109817803644,
+      "mean_run_length": 1.9641356012098834,
+      "std_run_length": 1.2254303449570445,
+      "impulse_asymmetry": 0.6818347143539569,
+      "k": 6,
+      "phi_distance": 0.02992601125010519
+    },
+    {
+      "mean_E": 7.972413441170353e-05,
+      "median_E": 0.0004482361727964901,
+      "skewness": -0.02140121848622959,
+      "kurtosis": -0.19519687991478474,
+      "frac_positive": 0.50164996700066,
+      "crossing_rate": 0.48059038819223615,
+      "mean_run_length": 2.080687445383047,
+      "std_run_length": 1.4001157243556845,
+      "impulse_asymmetry": 0.7514735832482173,
+      "k": 7,
+      "phi_distance": 0.018526011250105223
+    },
+    {
+      "mean_E": 7.99456346787053e-05,
+      "median_E": 0.0005130664825864634,
+      "skewness": -0.023743921369799553,
+      "kurtosis": -0.16904958264285241,
+      "frac_positive": 0.502069958600828,
+      "crossing_rate": 0.45419091618167634,
+      "mean_run_length": 2.201620360177887,
+      "std_run_length": 1.611156400531877,
+      "impulse_asymmetry": 0.8174370357553473,
+      "k": 8,
+      "phi_distance": 0.00892601125010517
+    },
+    {
+      "mean_E": 7.480503732184871e-05,
+      "median_E": 0.0004775545467654019,
+      "skewness": -0.02535579652986733,
+      "kurtosis": -0.15056715130758525,
+      "frac_positive": 0.501789964200716,
+      "crossing_rate": 0.4353312933741325,
+      "mean_run_length": 2.2969955898566705,
+      "std_run_length": 1.8047230125785219,
+      "impulse_asymmetry": 0.8750383834911548,
+      "k": 9,
+      "phi_distance": 0.002006011250105244
+    },
+    {
+      "mean_E": 8.743956194612531e-05,
+      "median_E": 0.0004749399489892836,
+      "skewness": -0.027626908596784336,
+      "kurtosis": -0.1400988840490185,
+      "frac_positive": 0.5017099658006839,
+      "crossing_rate": 0.4115517689646207,
+      "mean_run_length": 2.4297098984401573,
+      "std_run_length": 1.9603568422192643,
+      "impulse_asymmetry": 0.9226982485878362,
+      "k": 10,
+      "phi_distance": 0.007113988749894773
+    },
+    {
+      "mean_E": 8.214681431350288e-05,
+      "median_E": 0.0003920523758699779,
+      "skewness": -0.030487213901669252,
+      "kurtosis": -0.13015093835705693,
+      "frac_positive": 0.501989960200796,
+      "crossing_rate": 0.3910321793564129,
+      "mean_run_length": 2.5572034981844216,
+      "std_run_length": 2.1245457080683865,
+      "impulse_asymmetry": 0.9687365921569734,
+      "k": 11,
+      "phi_distance": 0.01079398874989479
+    },
+    {
+      "mean_E": 8.421594979329109e-05,
+      "median_E": 0.0003680368425441616,
+      "skewness": -0.032501142032630784,
+      "kurtosis": -0.12419075393983015,
+      "frac_positive": 0.50164996700066,
+      "crossing_rate": 0.37949241015179697,
+      "mean_run_length": 2.634959949409781,
+      "std_run_length": 2.2524622040534608,
+      "impulse_asymmetry": 1.0084416706563737,
+      "k": 12,
+      "phi_distance": 0.015553988749894776
+    },
+    {
+      "mean_E": 8.426043612400511e-05,
+      "median_E": 0.0004982123474691971,
+      "skewness": -0.03757128860881376,
+      "kurtosis": -0.12057920517026144,
+      "frac_positive": 0.502309953800924,
+      "crossing_rate": 0.3663326733465331,
+      "mean_run_length": 2.7296102194562724,
+      "std_run_length": 2.387228998103383,
+      "impulse_asymmetry": 1.0436645215616782,
+      "k": 13,
+      "phi_distance": 0.017913988749894805
+    },
+    {
+      "mean_E": 8.215071745521518e-05,
+      "median_E": 0.0006916926872838486,
+      "skewness": -0.0381674361343385,
+      "kurtosis": -0.10146560104711133,
+      "frac_positive": 0.503869922601548,
+      "crossing_rate": 0.3592928141437171,
+      "mean_run_length": 2.7830902816431036,
+      "std_run_length": 2.484211559115311,
+      "impulse_asymmetry": 1.0768649028814157,
+      "k": 14,
+      "phi_distance": 0.01823398874989479
+    },
+    {
+      "mean_E": 8.205895936646266e-05,
+      "median_E": 0.000744204308841933,
+      "skewness": -0.03836756589919841,
+      "kurtosis": -0.09255683416347749,
+      "frac_positive": 0.503689926201476,
+      "crossing_rate": 0.34669306613867723,
+      "mean_run_length": 2.884229349330872,
+      "std_run_length": 2.618143453756018,
+      "impulse_asymmetry": 1.106716827864318,
+      "k": 15,
+      "phi_distance": 0.02271398874989483
+    }
+  ],
+  "correlations": {
+    "skewness": {
+      "r": 0.6915066495245977,
+      "p": 0.008840775977216591
+    },
+    "kurtosis": {
+      "r": -0.9349526316930832,
+      "p": 2.78833541121599e-06
+    },
+    "crossing_rate": {
+      "r": 0.6368158493132198,
+      "p": 0.019253952548567755
+    },
+    "mean_run_length": {
+      "r": -0.5799210618828939,
+      "p": 0.0377522025011394
+    },
+    "impulse_asymmetry": {
+      "r": -0.7979579073303529,
+      "p": 0.001079164569451319
+    },
+    "coverage_fraction": {
+      "r": -0.8901881614811415,
+      "p": 4.548288692573847e-05
+    },
+    "smooth_fraction": {
+      "r": -0.6096642142428873,
+      "p": 0.02694995188495256
+    }
+  },
+  "k9_analysis": {
+    "factor_base": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23
+    ],
+    "structure": {
+      "mean_E": 7.480503732184871e-05,
+      "median_E": 0.0004775545467654019,
+      "skewness": -0.02535579652986733,
+      "kurtosis": -0.15056715130758525,
+      "frac_positive": 0.501789964200716,
+      "crossing_rate": 0.4353312933741325,
+      "mean_run_length": 2.2969955898566705,
+      "std_run_length": 1.8047230125785219,
+      "impulse_asymmetry": 0.8750383834911548,
+      "k": 9,
+      "phi_distance": 0.002006011250105244
+    },
+    "coverage": {
+      "k": 9,
+      "largest_prime": 23,
+      "product": 223092870,
+      "coverage_fraction": 0.8362967259345186,
+      "smooth_count": 3103,
+      "smooth_fraction": 0.06206
+    }
+  },
+  "conclusion": {
+    "strongest_correlate": "kurtosis",
+    "correlation": {
+      "r": -0.9349526316930832,
+      "p": 2.78833541121599e-06
+    },
+    "significant": true
+  }
+}

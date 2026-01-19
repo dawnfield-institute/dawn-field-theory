@@ -1,0 +1,84 @@
+{
+  "experiment": "exp_07_mass_resonance",
+  "timestamp": "2026-01-19T14:54:33.742285",
+  "charge_topology": {
+    "definition": "n = (1/2\u03c0) \u222e d\u03b8 (winding number)",
+    "quantization": "Must be integer for single-valued fields",
+    "values": [
+      "0",
+      "\u00b1e",
+      "\u00b12e",
+      "..."
+    ],
+    "sec_interpretation": "Phase singularity in SEC field",
+    "conservation": "Topological: cannot be continuously unwound",
+    "quarks": "Fractional charge \u00b11/3, \u00b12/3 (but always sum to integers)"
+  },
+  "mass_amplitude": {
+    "definition": "m \u221d \u221a(\u222b |S|\u00b2 dV) (field amplitude)",
+    "quantization": "Not required - amplitude is continuous",
+    "values": "Any non-negative real number",
+    "sec_interpretation": "Amplitude (energy) of SEC resonance",
+    "conservation": "Energy conservation (not topological)",
+    "relationship": "E = mc\u00b2 connects mass to SEC energy"
+  },
+  "difference": {
+    "charge_domain": "S\u00b9 (circle) \u2192 \u03c0\u2081(S\u00b9) = Z (integers)",
+    "mass_domain": "R\u207a (positive reals) \u2192 trivial topology",
+    "em_coupling": "Phase \u2192 antisymmetric \u2192 curl structure",
+    "grav_coupling": "Amplitude \u2192 symmetric \u2192 divergence structure",
+    "conclusion": "Topology explains quantization difference"
+  },
+  "koide_formula": {
+    "formula": "Q = (m_e + m_\u03bc + m_\u03c4) / (\u221am_e + \u221am_\u03bc + \u221am_\u03c4)\u00b2",
+    "computed": 0.66663234501809,
+    "fibonacci_prediction": 0.6666666666666666,
+    "error": 5.148247286496099e-05,
+    "error_percent": 0.005148247286496099,
+    "interpretation": "Lepton masses satisfy Fibonacci ratio F\u2083/F\u2084 = 2/3"
+  },
+  "fibonacci_mass": {
+    "hypothesis": "m/M_P encodes Fibonacci structure",
+    "particles": {
+      "electron": {
+        "m_MeV": 0.511,
+        "m_over_M_P": 4.185009382494519e-23,
+        "log10_ratio": -22.37830356401217,
+        "approx_fib_index": 105.40727927974393
+      },
+      "proton": {
+        "m_MeV": 938.3,
+        "m_over_M_P": 7.684528969852459e-20,
+        "log10_ratio": -19.114382747821136,
+        "approx_fib_index": 89.7895096724747
+      },
+      "W_boson": {
+        "m_MeV": 80400.0,
+        "m_over_M_P": 6.584633157584331e-18,
+        "log10_ratio": -17.181468415398435,
+        "approx_fib_index": 80.54056877764155
+      },
+      "Higgs": {
+        "m_MeV": 125100.0,
+        "m_over_M_P": 1.024549263698756e-17,
+        "log10_ratio": -16.989467154453465,
+        "approx_fib_index": 79.62184812643315
+      }
+    }
+  },
+  "gravity_coupling": {
+    "em_coupling": "Phase defects (winding number)",
+    "grav_coupling": "Energy density (amplitude squared)",
+    "sec_symmetric": "Symmetric part of S gives T_\u03bc\u03bd structure",
+    "einstein_form": "G_\u03bc\u03bd = 8\u03c0G/c\u2074 T_\u03bc\u03bd",
+    "key_insight": "Gravity couples to energy because symmetric projection \u221d |S|\u00b2"
+  },
+  "equivalence_principle": {
+    "weak_ep": "m_inertial = m_gravitational",
+    "strong_ep": "Gravity is locally equivalent to acceleration",
+    "sec_explanation": "Symmetric projection treats all amplitude equally",
+    "universality": "All energy gravitates the same because SEC is universal",
+    "test": "E\u00f6tv\u00f6s experiments confirm to 10\u207b\u00b9\u2075"
+  },
+  "conclusion": "Mass is amplitude (continuous), charge is phase (discrete)"
+}

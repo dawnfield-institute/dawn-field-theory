@@ -1,0 +1,22 @@
+{
+  "experiment": "exp_11_pac_web_3d",
+  "timestamp": "2026-01-19T16:11:51.063901",
+  "config": {
+    "n_nodes": 3000,
+    "box_size": 80.0,
+    "interaction_radius": 8.0,
+    "pac_strength": 0.8,
+    "sec_balance": 1.0571198664289054,
+    "n_steps": 500
+  },
+  "metrics": {
+    "void_fraction": 0.914520263671875,
+    "filament_fraction": 0.01708984375,
+    "density_cv": 3.413484219468564,
+    "clustering": 0.48950434113638863,
+    "max_entropy": 73.30419158935547,
+    "mean_entropy": 15.707144737243652
+  },
+  "elapsed_seconds": 8.78961443901062,
+  "is_web": false
+}

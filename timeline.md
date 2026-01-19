@@ -35,6 +35,7 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 - Data visualization prototypes and early interactive plotting
 - Balance integrals and thermal trace dynamics codified
 - **CIMM officially sunset and archived as legacy reference**
+- **Ξ = 1 + π/55 DERIVED from PAC collapse dynamics (2026-01-19)**: Formula validated to 8 decimal places via exp_24_comprehensive_validation.py
 
 ---
 

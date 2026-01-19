@@ -1,0 +1,12 @@
+schema_version: "2.0"
+description: "Experiment scripts for gravity from Maxwell derivation"
+semantic_scope: implementation
+files:
+  - "[exp_01_sec_wave_unification.py]": "Show same wave equation underlies EM and gravity"
+  - "[exp_02_projection_duality.py]": "Antisymmetric→curl, symmetric→divergence"
+  - "[exp_03_f183_hierarchy.py]": "Verify G/α matches F₁₈₃ structure"
+  - "[exp_04_gravitational_alpha.py]": "Define gravitational fine structure constant"
+  - "[exp_05_schwarzschild_sec.py]": "Black hole as SEC collapse"
+  - "[exp_06_gw_speed.py]": "Gravitational wave speed from SEC"
+  - "[exp_07_mass_resonance.py]": "Mass as continuous resonance"
+  - "[exp_08_falsification.py]": "What would break this hypothesis?"

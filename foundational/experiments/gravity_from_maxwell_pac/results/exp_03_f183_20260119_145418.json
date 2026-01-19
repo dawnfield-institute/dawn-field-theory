@@ -1,0 +1,73 @@
+{
+  "experiment": "exp_03_f183_hierarchy",
+  "timestamp": "2026-01-19T14:54:18.761717",
+  "formula_183": {
+    "F7": 13,
+    "F7_squared": 169,
+    "formula": "13\u00b2 + 13 + 1 = 169 + 13 + 1 = 183",
+    "expected": 183,
+    "match": true,
+    "interpretation": {
+      "F7_squared": "Two-body (squared) gauge interaction",
+      "F7": "Linear single-body correction",
+      "1": "Vacuum/zero-point contribution",
+      "total": "Gravity depth in Fibonacci sequence"
+    }
+  },
+  "properties_183": {
+    "value": 183,
+    "prime_factorization": [
+      3,
+      61
+    ],
+    "is_fibonacci": false,
+    "is_projective_plane_order_13": true,
+    "cyclotomic": "\u03a6_3(13) = 13\u00b2 - 13 + 1 = 157 (close but not same)",
+    "binary": "0b10110111",
+    "formula_interpretation": "Order of projective plane with q = F\u2087 = 13"
+  },
+  "f183_calculation": {
+    "k": 183,
+    "log10_Fk": 37.895253163578104,
+    "mantissa": 7.856935059939986,
+    "exponent": 37,
+    "scientific": "7.857 \u00d7 10^37",
+    "approximate": "~10^37"
+  },
+  "em_gravity_hierarchy": {
+    "mass_method": {
+      "ratio": 1.6931505346988092e+38,
+      "log10": 38.228695572097536
+    },
+    "coupling_method": {
+      "alpha_EM": 0.0072973525693,
+      "alpha_G": 5.906149391364588e-39,
+      "ratio": 1.2355516404596027e+36,
+      "log10": 36.09186090165875
+    },
+    "force_method": {
+      "ratio": 1.2356157161800577e+36,
+      "log10": 36.09188342359094
+    },
+    "average_log10": 36.804146632449076
+  },
+  "comparison": {
+    "f183_log10": 37.895253163578104,
+    "all_match": false,
+    "best_match": "mass_squared"
+  },
+  "g_derivation": {
+    "formula": "G = \u210fc / (M_ref\u00b2 \u00d7 F\u2081\u2088\u2083)",
+    "M_ref": 2.4553815503759514e-27,
+    "ratios": {
+      "M_ref": 2.4553815503759514e-27,
+      "M_ref_to_proton": 1.467983601683249,
+      "M_ref_to_electron": 2695.555549869307,
+      "M_ref_to_planck": 1.1281670680044213e-19,
+      "phi_exponent": 0.7977562886508165,
+      "closest_fib_to_phi_exp": 1.0,
+      "fib_value": 1.0
+    }
+  },
+  "conclusion": "F\u2081\u2088\u2083 \u2248 10\u00b3\u2078 matches EM/gravity hierarchy"
+}

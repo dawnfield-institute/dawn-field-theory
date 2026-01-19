@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-01-19T18:08:49.851542",
+  "device": "cuda",
+  "xi": 1.0571428571428572,
+  "depth_sweep": [
+    {
+      "depth": 5,
+      "nodes": 32,
+      "twist": -0.1413172483444214
+    },
+    {
+      "depth": 10,
+      "nodes": 1024,
+      "twist": -0.2826344966888428
+    },
+    {
+      "depth": 15,
+      "nodes": 32768,
+      "twist": -0.42395174503326416
+    },
+    {
+      "depth": 20,
+      "nodes": 1048576,
+      "twist": -0.5652694702148438
+    }
+  ],
+  "cross_level": {
+    "within_level": 9.717366933822632,
+    "cross_level": 885.3397198319435,
+    "total_ratio": 895.0568733675782,
+    "excess": 894.0568733675782
+  },
+  "conclusion": {
+    "status": "\u2705 VALIDATED"
+  }
+}

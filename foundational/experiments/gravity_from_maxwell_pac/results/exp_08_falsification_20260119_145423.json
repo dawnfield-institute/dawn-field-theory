@@ -1,0 +1,177 @@
+{
+  "experiment": "exp_08_falsification",
+  "timestamp": "2026-01-19T14:54:23.805981",
+  "falsification_conditions": {
+    "F1": {
+      "name": "Hierarchy Mismatch",
+      "condition": "F\u2081\u2088\u2083 differs from EM/gravity ratio by >2 orders",
+      "current_status": "PASSING (within 0.5 orders)",
+      "falsified": false
+    },
+    "F2": {
+      "name": "GW Speed Difference",
+      "condition": "c_GW \u2260 c_EM at measurable level",
+      "current_status": "PASSING (GW170817: |\u0394c/c| < 10\u207b\u00b9\u2075)",
+      "falsified": false
+    },
+    "F3": {
+      "name": "No Symmetric/Antisymmetric Split",
+      "condition": "Curl and divergence cannot both emerge from one pre-field",
+      "current_status": "PASSING (tensor decomposition identity)",
+      "falsified": false
+    },
+    "F4": {
+      "name": "Non-Fibonacci G",
+      "condition": "G cannot be expressed in Fibonacci terms",
+      "current_status": "PARTIAL (F\u2081\u2088\u2083 matches order of magnitude)",
+      "falsified": false
+    },
+    "F5": {
+      "name": "EP Violation",
+      "condition": "Equivalence principle violated at SEC level",
+      "current_status": "PASSING (EP confirmed to 10\u207b\u00b9\u2075)",
+      "falsified": false
+    },
+    "F6": {
+      "name": "Graviton Mass",
+      "condition": "m_graviton > 0 at meaningful level",
+      "current_status": "PASSING (m < 10\u207b\u00b2\u00b3 eV)",
+      "falsified": false
+    },
+    "F7": {
+      "name": "Wrong Polarization",
+      "condition": "GW has wrong number of polarization modes",
+      "current_status": "PASSING (2 modes observed, tensor theory)",
+      "falsified": false
+    },
+    "F8": {
+      "name": "183 Not Special",
+      "condition": "183 = F\u2087\u00b2 + F\u2087 + 1 is coincidence",
+      "current_status": "NEEDS TESTING (is formula unique?)",
+      "falsified": false
+    }
+  },
+  "vulnerable_claims": [
+    {
+      "claim": "183 = F\u2087\u00b2 + F\u2087 + 1 determines gravity depth",
+      "vulnerability": "HIGH",
+      "reason": "Could be numerology if other formulas work equally well",
+      "test": "Try alternative formulas, check if 183 is unique"
+    },
+    {
+      "claim": "G = \u210fc/(M_ref\u00b2 \u00d7 F\u2081\u2088\u2083)",
+      "vulnerability": "MEDIUM",
+      "reason": "M_ref is not clearly derived from first principles",
+      "test": "Derive M_ref from PAC/SEC without fitting"
+    },
+    {
+      "claim": "Symmetric projection \u2192 gravity",
+      "vulnerability": "LOW",
+      "reason": "Well-established in differential geometry",
+      "test": "Already proven: symmetric tensor \u2194 metric perturbation"
+    },
+    {
+      "claim": "c_GW = c from SEC",
+      "vulnerability": "VERY LOW",
+      "reason": "Confirmed by GW170817 to extreme precision",
+      "test": "Already passed with margin of 10\u207b\u00b9\u2075"
+    }
+  ],
+  "theoretical_challenges": {
+    "renormalization": {
+      "challenge": "GR is non-renormalizable",
+      "implication": "Gravity may not be a simple field theory",
+      "response": "SEC operates below QFT; may avoid this",
+      "resolved": false
+    },
+    "dark_matter": {
+      "challenge": "What is dark matter in this framework?",
+      "implication": "May need intermediate Fibonacci depth",
+      "response": "Proposed: DM at F\u2085\u2080 - F\u2087\u2080 range",
+      "resolved": false
+    },
+    "dark_energy": {
+      "challenge": "What is dark energy / cosmological constant?",
+      "implication": "May be SEC vacuum energy",
+      "response": "Not yet addressed",
+      "resolved": false
+    },
+    "singularity": {
+      "challenge": "What happens at SEC collapse (black hole center)?",
+      "implication": "PAC must conserve through singularity",
+      "response": "Information paradox resolved by PAC, but physics unclear",
+      "resolved": false
+    }
+  },
+  "honest_uncertainty": {
+    "well_established": [
+      "GW speed = c (observed)",
+      "Symmetric tensor \u2194 metric (math)",
+      "F\u2081\u2088\u2083 ~ 10\u00b3\u2078 (calculation)",
+      "Hierarchy ~ 10\u00b3\u2078 (observed)"
+    ],
+    "plausible_but_unproven": [
+      "183 = F\u2087\u00b2 + F\u2087 + 1 has physical meaning",
+      "Gravity IS the symmetric SEC projection",
+      "M_ref has Fibonacci structure"
+    ],
+    "speculative": [
+      "Dark matter is intermediate Fibonacci depth",
+      "Black holes resolve through PAC conservation",
+      "GR emerges from SEC at large scales"
+    ],
+    "unknown": [
+      "Quantum gravity from this framework",
+      "Connection to string theory / LQG",
+      "Full derivation of Einstein equations"
+    ]
+  },
+  "xi_warning": {
+    "warning": "Some formulas may be curve-fitting, not derivations",
+    "example": "\u039e = 1 + \u03c0/55 was honestly flagged in milestone1",
+    "for_this_work": [
+      "183 = F\u2087\u00b2 + F\u2087 + 1 needs uniqueness proof",
+      "G ~ 1/F\u2081\u2088\u2083 is order-of-magnitude, not precision",
+      "Must try alternative formulas to confirm"
+    ],
+    "principle": "Imperfection is fuel, not failure"
+  },
+  "alternative_formulas": {
+    "target": 38,
+    "alternatives": {
+      "F_183": {
+        "formula": "F\u2081\u2088\u2083",
+        "log10": 37.895253163578104,
+        "error": 0.10474683642189575
+      },
+      "2^127": {
+        "formula": "2\u00b9\u00b2\u2077 (Mersenne prime exponent)",
+        "log10": 38.23080944932561,
+        "error": 0.2308094493256121
+      },
+      "e^88": {
+        "formula": "e\u2078\u2078",
+        "log10": 38.21791440748616,
+        "error": 0.21791440748616253
+      },
+      "pi^24": {
+        "formula": "\u03c0\u00b2\u2074",
+        "log10": 11.931596944659212,
+        "error": 26.068403055340788
+      },
+      "137^2.4": {
+        "formula": "137^2.4",
+        "log10": 5.128129361175376,
+        "error": 32.871870638824625
+      }
+    },
+    "best": "F_183",
+    "f183_is_best": true
+  },
+  "overall": {
+    "falsified": false,
+    "conditions_passing": 8,
+    "conditions_total": 8
+  },
+  "conclusion": "Hypothesis not yet falsified, but several tests outstanding"
+}

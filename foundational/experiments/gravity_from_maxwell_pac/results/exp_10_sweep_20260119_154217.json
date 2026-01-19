@@ -1,0 +1,259 @@
+{
+  "experiment": "exp_10_phase_transition_sweep",
+  "timestamp": "2026-01-19T15:42:37.923185",
+  "config": {
+    "n_nodes": 2000,
+    "n_steps": 400,
+    "interaction_radius": 6.0,
+    "pac_strength": 0.8
+  },
+  "critical_point": {
+    "sec_balance": 1.5,
+    "metrics": {
+      "void_fraction": 0.773125,
+      "filament_fraction": 0.04546875,
+      "density_cv": 2.1754614008454958,
+      "clustering": 0.6584211435481084,
+      "sec_balance": 1.5,
+      "max_entropy": 73.234130859375,
+      "mean_entropy": 16.11754608154297,
+      "structure_type": "clump"
+    }
+  },
+  "sweep_results": [
+    {
+      "void_fraction": 0.73953125,
+      "filament_fraction": 0.0521875,
+      "density_cv": 1.8708329635535224,
+      "clustering": 0.649993791133739,
+      "sec_balance": 0.5,
+      "max_entropy": 27.294635772705078,
+      "mean_entropy": 6.236954212188721,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.7496875,
+      "filament_fraction": 0.05015625,
+      "density_cv": 1.9578702559477859,
+      "clustering": 0.6135853593374299,
+      "sec_balance": 0.55,
+      "max_entropy": 35.41978454589844,
+      "mean_entropy": 6.913270473480225,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.75078125,
+      "filament_fraction": 0.04984375,
+      "density_cv": 1.9367722072425768,
+      "clustering": 0.6398455832260994,
+      "sec_balance": 0.6,
+      "max_entropy": 46.76919937133789,
+      "mean_entropy": 7.450840950012207,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.758125,
+      "filament_fraction": 0.0484375,
+      "density_cv": 2.0174490548407715,
+      "clustering": 0.6443863886561181,
+      "sec_balance": 0.65,
+      "max_entropy": 45.53229522705078,
+      "mean_entropy": 8.024715423583984,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.75671875,
+      "filament_fraction": 0.04875,
+      "density_cv": 2.006383670839504,
+      "clustering": 0.6785170386624527,
+      "sec_balance": 0.7,
+      "max_entropy": 39.86071014404297,
+      "mean_entropy": 8.367461204528809,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.75875,
+      "filament_fraction": 0.04828125,
+      "density_cv": 2.0289233974821776,
+      "clustering": 0.6655670873076385,
+      "sec_balance": 0.75,
+      "max_entropy": 43.60924530029297,
+      "mean_entropy": 8.903182029724121,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.76078125,
+      "filament_fraction": 0.0478125,
+      "density_cv": 2.050738948709902,
+      "clustering": 0.6500769851162108,
+      "sec_balance": 0.8,
+      "max_entropy": 35.17152786254883,
+      "mean_entropy": 9.257131576538086,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.756875,
+      "filament_fraction": 0.04859375,
+      "density_cv": 2.0196492613644805,
+      "clustering": 0.6709134443570867,
+      "sec_balance": 0.8500000000000001,
+      "max_entropy": 49.5230712890625,
+      "mean_entropy": 9.840963363647461,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.764375,
+      "filament_fraction": 0.0471875,
+      "density_cv": 2.1189066515174413,
+      "clustering": 0.6659454177427235,
+      "sec_balance": 0.9,
+      "max_entropy": 49.069889068603516,
+      "mean_entropy": 10.230539321899414,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.7653125,
+      "filament_fraction": 0.04703125,
+      "density_cv": 2.098768940572129,
+      "clustering": 0.6649740747362775,
+      "sec_balance": 0.95,
+      "max_entropy": 50.36014175415039,
+      "mean_entropy": 10.855628967285156,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.76078125,
+      "filament_fraction": 0.0478125,
+      "density_cv": 2.04848699990118,
+      "clustering": 0.6654873687632671,
+      "sec_balance": 1.0,
+      "max_entropy": 42.80223846435547,
+      "mean_entropy": 11.291751861572266,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.7675,
+      "filament_fraction": 0.0465625,
+      "density_cv": 2.09026652121657,
+      "clustering": 0.6417248988598749,
+      "sec_balance": 1.05,
+      "max_entropy": 48.2741813659668,
+      "mean_entropy": 11.910604476928711,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.768125,
+      "filament_fraction": 0.04640625,
+      "density_cv": 2.1176799646928512,
+      "clustering": 0.6450909340706521,
+      "sec_balance": 1.1,
+      "max_entropy": 62.418174743652344,
+      "mean_entropy": 12.539717674255371,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.76890625,
+      "filament_fraction": 0.04625,
+      "density_cv": 2.1403155211890597,
+      "clustering": 0.6748276681720942,
+      "sec_balance": 1.15,
+      "max_entropy": 70.97952270507812,
+      "mean_entropy": 13.096089363098145,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.7696875,
+      "filament_fraction": 0.04609375,
+      "density_cv": 2.1447569862281717,
+      "clustering": 0.6672572402044293,
+      "sec_balance": 1.2000000000000002,
+      "max_entropy": 62.98109817504883,
+      "mean_entropy": 13.863683700561523,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.770625,
+      "filament_fraction": 0.0459375,
+      "density_cv": 2.123207012368625,
+      "clustering": 0.6584321024826869,
+      "sec_balance": 1.25,
+      "max_entropy": 62.09988784790039,
+      "mean_entropy": 14.049802780151367,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.7703125,
+      "filament_fraction": 0.0459375,
+      "density_cv": 2.157086124518943,
+      "clustering": 0.6415262712516347,
+      "sec_balance": 1.3,
+      "max_entropy": 70.50621795654297,
+      "mean_entropy": 14.260212898254395,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.76828125,
+      "filament_fraction": 0.04640625,
+      "density_cv": 2.115087407433535,
+      "clustering": 0.6480540199606722,
+      "sec_balance": 1.35,
+      "max_entropy": 56.075164794921875,
+      "mean_entropy": 14.680962562561035,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.769375,
+      "filament_fraction": 0.04609375,
+      "density_cv": 2.142221910917485,
+      "clustering": 0.6391708889912483,
+      "sec_balance": 1.4,
+      "max_entropy": 62.99019241333008,
+      "mean_entropy": 15.68139362335205,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.7725,
+      "filament_fraction": 0.04546875,
+      "density_cv": 2.15814575292772,
+      "clustering": 0.6461378773462503,
+      "sec_balance": 1.4500000000000002,
+      "max_entropy": 70.92680358886719,
+      "mean_entropy": 15.966282844543457,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.773125,
+      "filament_fraction": 0.04546875,
+      "density_cv": 2.1754614008454958,
+      "clustering": 0.6584211435481084,
+      "sec_balance": 1.5,
+      "max_entropy": 73.234130859375,
+      "mean_entropy": 16.11754608154297,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.76859375,
+      "filament_fraction": 0.04625,
+      "density_cv": 2.120160438082028,
+      "clustering": 0.656933264318989,
+      "sec_balance": 1.55,
+      "max_entropy": 75.01023864746094,
+      "mean_entropy": 16.480632781982422,
+      "structure_type": "clump"
+    },
+    {
+      "void_fraction": 0.771875,
+      "filament_fraction": 0.045625,
+      "density_cv": 2.1604560940720035,
+      "clustering": 0.6492143605370917,
+      "sec_balance": 1.6,
+      "max_entropy": 70.63983917236328,
+      "mean_entropy": 17.27155876159668,
+      "structure_type": "clump"
+    }
+  ],
+  "analysis": {
+    "phi": 1.618033988749895,
+    "critical_sec_over_inv_phi": 2.4270509831248424
+  }
+}
