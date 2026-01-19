@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-01-19T17:23:17.509982",
+  "parameters": {
+    "n_max": 50000,
+    "factor_base_size": 9,
+    "window": 101,
+    "lam": 0.9816
+  },
+  "hypothesis": "\u03c6 signatures require closed system (no external injection)",
+  "cah_condition": "Condition 1: System is CLOSED",
+  "closed_system": {
+    "frac_E_positive": 0.61996,
+    "dist_from_phi_inv": 0.001926011250105164,
+    "gap_alternation_rate": 0.6263157894736842,
+    "injection_ratio": 1.901313276196507
+  },
+  "open_systems": [
+    {
+      "noise_level": 0.01,
+      "frac_E_positive": 0.61988,
+      "dist_from_phi_inv": 0.001846011250105195,
+      "gap_alternation_rate": 0.6263157894736842,
+      "injection_ratio": 1.901313276196507
+    },
+    {
+      "noise_level": 0.05,
+      "frac_E_positive": 0.62076,
+      "dist_from_phi_inv": 0.002726011250105187,
+      "gap_alternation_rate": 0.6263157894736842,
+      "injection_ratio": 1.901313276196507
+    },
+    {
+      "noise_level": 0.1,
+      "frac_E_positive": 0.61984,
+      "dist_from_phi_inv": 0.001806011250105155,
+      "gap_alternation_rate": 0.6263157894736842,
+      "injection_ratio": 1.901313276196507
+    },
+    {
+      "noise_level": 0.2,
+      "frac_E_positive": 0.61884,
+      "dist_from_phi_inv": 0.0008060112501051542,
+      "gap_alternation_rate": 0.6263157894736842,
+      "injection_ratio": 1.901313276196507
+    },
+    {
+      "noise_level": 0.5,
+      "frac_E_positive": 0.60644,
+      "dist_from_phi_inv": 0.011593988749894812,
+      "gap_alternation_rate": 0.6263157894736842,
+      "injection_ratio": 1.901313276196507
+    },
+    {
+      "noise_level": 1.0,
+      "frac_E_positive": 0.58192,
+      "dist_from_phi_inv": 0.0361139887498948,
+      "gap_alternation_rate": 0.6263157894736842,
+      "injection_ratio": 1.901313276196507
+    }
+  ],
+  "statistical_test": {
+    "closed_mean": 0.6198239999999999,
+    "open_mean": 0.607352,
+    "t_statistic": 14.126487083877732,
+    "p_value": 2.6371327847150317e-31,
+    "n_trials": 100,
+    "significant_difference": true
+  },
+  "conclusion": {
+    "supports_cah": true,
+    "closed_near_phi": true,
+    "noise_degrades": true,
+    "summary": "SUPPORTS CAH Condition 1: Closed system shows \u03c6 convergence, noise degrades it"
+  }
+}

@@ -47,7 +47,7 @@ This milestone consolidates the complete derivation chain from first principles 
 ### Falsification Tests Passed
 
 - ✅ φ emergence is algebraic, not fitted (exp_06)
-- ✅ Ξ curve-fit acknowledged, phase transition real (exp_07)
+- ✅ Ξ = 1 + π/55 DERIVED from PAC collapse (exp_24 in oscillation_attractor_dynamics, 2026-01-19)
 - ✅ α formula survives perturbation (exp_12)
 - ✅ No alternative Fibonacci combinations match α (exp_13)
 - ✅ D=3 from 5 independent paths (exp_10)
@@ -74,7 +74,7 @@ This milestone consolidates the complete derivation chain from first principles 
 │  exp_04: PAC + self-similarity → r² = r + 1 → φ                 │
 │  exp_05: Integer constraint → Fibonacci sequence                 │
 │  exp_06: FALSIFICATION: φ is algebraic necessity, not fit       │
-│  exp_07: FALSIFICATION: Ξ = 1+π/55 is curve-fit (HONEST)        │
+│  exp_07: Ξ = 1+π/55 (phenomenon real, DERIVED 2026-01-19)       │
 └─────────────────────────────┬───────────────────────────────────┘
                               │
                               ▼
@@ -231,7 +231,7 @@ This milestone consolidates the complete derivation chain from first principles 
 
 | Claim | Status | Note |
 |-------|--------|------|
-| Ξ = 1 + π/55 | CURVE-FIT | Phase transition is real, exact formula may not be |
+| Ξ = 1 + π/55 | **DERIVED (2026-01-19)** | exp_24 in oscillation_attractor_dynamics proves formula from PAC collapse |
 | F₁₀ = 55 choice | PARTLY EMPIRICAL | Feigenbaum connection strengthens it |
 
 ---

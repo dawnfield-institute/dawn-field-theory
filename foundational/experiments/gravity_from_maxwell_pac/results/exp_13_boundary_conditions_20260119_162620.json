@@ -1,0 +1,538 @@
+{
+  "experiment": "exp_13_boundary_conditions",
+  "timestamp": "2026-01-19T17:07:50.316589",
+  "hypothesis": "\u039e is saturation bound for closed recursive systems",
+  "xi": 1.0571198664289054,
+  "results": [
+    {
+      "boundary": "CLOSED",
+      "description": "Periodic boundary, no particle flux",
+      "asymmetry_history": [
+        {
+          "step": 0,
+          "asymmetry": 0.7066046595573425
+        },
+        {
+          "step": 50,
+          "asymmetry": 1.1990681886672974
+        },
+        {
+          "step": 100,
+          "asymmetry": 0.6397771239280701
+        },
+        {
+          "step": 150,
+          "asymmetry": 0.6028919219970703
+        },
+        {
+          "step": 200,
+          "asymmetry": 0.5802762508392334
+        },
+        {
+          "step": 250,
+          "asymmetry": 0.5700415372848511
+        },
+        {
+          "step": 300,
+          "asymmetry": 0.43061262369155884
+        },
+        {
+          "step": 350,
+          "asymmetry": 0.36552557349205017
+        },
+        {
+          "step": 400,
+          "asymmetry": 0.25784850120544434
+        }
+      ],
+      "clustering_history": [
+        {
+          "step": 0,
+          "clustering_ratio": 9.483579309362941
+        },
+        {
+          "step": 50,
+          "clustering_ratio": 0.7382301765810076
+        },
+        {
+          "step": 100,
+          "clustering_ratio": 0.27110077735022486
+        },
+        {
+          "step": 150,
+          "clustering_ratio": 0.180073570377326
+        },
+        {
+          "step": 200,
+          "clustering_ratio": 0.1257946253974812
+        },
+        {
+          "step": 250,
+          "clustering_ratio": 0.10281131917287668
+        },
+        {
+          "step": 300,
+          "clustering_ratio": 0.08946000727592641
+        },
+        {
+          "step": 350,
+          "clustering_ratio": 0.07693153682920172
+        },
+        {
+          "step": 400,
+          "clustering_ratio": 0.07011836883897499
+        }
+      ],
+      "n_nodes_history": [
+        {
+          "step": 0,
+          "n_nodes": 2500
+        },
+        {
+          "step": 50,
+          "n_nodes": 2500
+        },
+        {
+          "step": 100,
+          "n_nodes": 2500
+        },
+        {
+          "step": 150,
+          "n_nodes": 2500
+        },
+        {
+          "step": 200,
+          "n_nodes": 2500
+        },
+        {
+          "step": 250,
+          "n_nodes": 2500
+        },
+        {
+          "step": 300,
+          "n_nodes": 2500
+        },
+        {
+          "step": 350,
+          "n_nodes": 2500
+        },
+        {
+          "step": 400,
+          "n_nodes": 2500
+        }
+      ],
+      "final_asymmetry": 0.25784850120544434,
+      "final_clustering_ratio": 0.07011836883897499,
+      "distance_from_xi": 0.756083950936906,
+      "convergence_ratio": 0.4435902909041416,
+      "pac_status": {
+        "current_mass": 2500.34423828125,
+        "initial_mass": 2500.34423828125,
+        "total_injected": 0.0,
+        "total_removed": 0.0,
+        "expected_mass": 2500.34423828125,
+        "pac_conservation": 1.0,
+        "n_nodes": 2500
+      }
+    },
+    {
+      "boundary": "OPEN_INJECT",
+      "description": "Inject 5 particles per step",
+      "asymmetry_history": [
+        {
+          "step": 0,
+          "asymmetry": 0.7066046595573425
+        },
+        {
+          "step": 50,
+          "asymmetry": 1.1708784103393555
+        },
+        {
+          "step": 100,
+          "asymmetry": 0.7727509140968323
+        },
+        {
+          "step": 150,
+          "asymmetry": 0.8330891132354736
+        },
+        {
+          "step": 200,
+          "asymmetry": 0.7128830552101135
+        },
+        {
+          "step": 250,
+          "asymmetry": 0.6670172214508057
+        },
+        {
+          "step": 300,
+          "asymmetry": 0.6587154865264893
+        },
+        {
+          "step": 350,
+          "asymmetry": 0.5705775618553162
+        },
+        {
+          "step": 400,
+          "asymmetry": 0.6420235633850098
+        }
+      ],
+      "clustering_history": [
+        {
+          "step": 0,
+          "clustering_ratio": 9.492635410226406
+        },
+        {
+          "step": 50,
+          "clustering_ratio": 0.7340054975527578
+        },
+        {
+          "step": 100,
+          "clustering_ratio": 0.3110786343266214
+        },
+        {
+          "step": 150,
+          "clustering_ratio": 0.2074282056625075
+        },
+        {
+          "step": 200,
+          "clustering_ratio": 0.16031190487997313
+        },
+        {
+          "step": 250,
+          "clustering_ratio": 0.12747501939138964
+        },
+        {
+          "step": 300,
+          "clustering_ratio": 0.1107637984014022
+        },
+        {
+          "step": 350,
+          "clustering_ratio": 0.09936603626505128
+        },
+        {
+          "step": 400,
+          "clustering_ratio": 0.09076565451946485
+        }
+      ],
+      "n_nodes_history": [
+        {
+          "step": 0,
+          "n_nodes": 2500
+        },
+        {
+          "step": 50,
+          "n_nodes": 2750
+        },
+        {
+          "step": 100,
+          "n_nodes": 3000
+        },
+        {
+          "step": 150,
+          "n_nodes": 3250
+        },
+        {
+          "step": 200,
+          "n_nodes": 3500
+        },
+        {
+          "step": 250,
+          "n_nodes": 3750
+        },
+        {
+          "step": 300,
+          "n_nodes": 4000
+        },
+        {
+          "step": 350,
+          "n_nodes": 4250
+        },
+        {
+          "step": 400,
+          "n_nodes": 4500
+        }
+      ],
+      "final_asymmetry": 0.6420235633850098,
+      "final_clustering_ratio": 0.09076565451946485,
+      "distance_from_xi": 0.3926672047571553,
+      "convergence_ratio": 0.8993399670987375,
+      "pac_status": {
+        "current_mass": 4501.04296875,
+        "initial_mass": 2500.34423828125,
+        "total_injected": 2000.6990776062012,
+        "total_removed": 0.0,
+        "expected_mass": 4501.043315887451,
+        "pac_conservation": 0.9999999228762252,
+        "n_nodes": 4500
+      }
+    },
+    {
+      "boundary": "LEAKY",
+      "description": "Remove 0.2% of particles per step",
+      "asymmetry_history": [
+        {
+          "step": 0,
+          "asymmetry": 0.7066046595573425
+        },
+        {
+          "step": 50,
+          "asymmetry": 0.8519494533538818
+        },
+        {
+          "step": 100,
+          "asymmetry": 0.6730884313583374
+        },
+        {
+          "step": 150,
+          "asymmetry": 0.47514986991882324
+        },
+        {
+          "step": 200,
+          "asymmetry": 0.3504343628883362
+        },
+        {
+          "step": 250,
+          "asymmetry": 0.32902488112449646
+        },
+        {
+          "step": 300,
+          "asymmetry": 0.25627750158309937
+        },
+        {
+          "step": 350,
+          "asymmetry": 0.23393943905830383
+        },
+        {
+          "step": 400,
+          "asymmetry": 0.23912324011325836
+        }
+      ],
+      "clustering_history": [
+        {
+          "step": 0,
+          "clustering_ratio": 9.494605764166462
+        },
+        {
+          "step": 50,
+          "clustering_ratio": 0.6712916741723908
+        },
+        {
+          "step": 100,
+          "clustering_ratio": 0.27130356411935364
+        },
+        {
+          "step": 150,
+          "clustering_ratio": 0.16506697110680849
+        },
+        {
+          "step": 200,
+          "clustering_ratio": 0.12271194656863038
+        },
+        {
+          "step": 250,
+          "clustering_ratio": 0.09799982767284252
+        },
+        {
+          "step": 300,
+          "clustering_ratio": 0.08317377512576629
+        },
+        {
+          "step": 350,
+          "clustering_ratio": 0.0698692833826481
+        },
+        {
+          "step": 400,
+          "clustering_ratio": 0.06536501574576335
+        }
+      ],
+      "n_nodes_history": [
+        {
+          "step": 0,
+          "n_nodes": 2500
+        },
+        {
+          "step": 50,
+          "n_nodes": 2299
+        },
+        {
+          "step": 100,
+          "n_nodes": 2099
+        },
+        {
+          "step": 150,
+          "n_nodes": 1924
+        },
+        {
+          "step": 200,
+          "n_nodes": 1774
+        },
+        {
+          "step": 250,
+          "n_nodes": 1624
+        },
+        {
+          "step": 300,
+          "n_nodes": 1482
+        },
+        {
+          "step": 350,
+          "n_nodes": 1382
+        },
+        {
+          "step": 400,
+          "n_nodes": 1282
+        }
+      ],
+      "final_asymmetry": 0.23912324011325836,
+      "final_clustering_ratio": 0.06536501574576335,
+      "distance_from_xi": 0.7737974209859009,
+      "convergence_ratio": 0.6804207708886929,
+      "pac_status": {
+        "current_mass": 1280.966064453125,
+        "initial_mass": 2500.34423828125,
+        "total_injected": 0.0,
+        "total_removed": 1219.3780997991562,
+        "expected_mass": 1280.9661384820938,
+        "pac_conservation": 0.9999999422084889,
+        "n_nodes": 1282
+      }
+    },
+    {
+      "boundary": "BALANCED",
+      "description": "Inject 3, remove 0.1% per step",
+      "asymmetry_history": [
+        {
+          "step": 0,
+          "asymmetry": 0.7066046595573425
+        },
+        {
+          "step": 50,
+          "asymmetry": 1.1139119863510132
+        },
+        {
+          "step": 100,
+          "asymmetry": 0.7289407849311829
+        },
+        {
+          "step": 150,
+          "asymmetry": 0.6587374806404114
+        },
+        {
+          "step": 200,
+          "asymmetry": 0.5261600017547607
+        },
+        {
+          "step": 250,
+          "asymmetry": 0.4616386294364929
+        },
+        {
+          "step": 300,
+          "asymmetry": 0.4060317575931549
+        },
+        {
+          "step": 350,
+          "asymmetry": 0.46248629689216614
+        },
+        {
+          "step": 400,
+          "asymmetry": 0.4433364272117615
+        }
+      ],
+      "clustering_history": [
+        {
+          "step": 0,
+          "clustering_ratio": 9.482511195927165
+        },
+        {
+          "step": 50,
+          "clustering_ratio": 0.7241273379349832
+        },
+        {
+          "step": 100,
+          "clustering_ratio": 0.2938036752905308
+        },
+        {
+          "step": 150,
+          "clustering_ratio": 0.18804994297184321
+        },
+        {
+          "step": 200,
+          "clustering_ratio": 0.13869887647346166
+        },
+        {
+          "step": 250,
+          "clustering_ratio": 0.1166326738495292
+        },
+        {
+          "step": 300,
+          "clustering_ratio": 0.10024727911706546
+        },
+        {
+          "step": 350,
+          "clustering_ratio": 0.08993826594057328
+        },
+        {
+          "step": 400,
+          "clustering_ratio": 0.0846965269779885
+        }
+      ],
+      "n_nodes_history": [
+        {
+          "step": 0,
+          "n_nodes": 2500
+        },
+        {
+          "step": 50,
+          "n_nodes": 2550
+        },
+        {
+          "step": 100,
+          "n_nodes": 2600
+        },
+        {
+          "step": 150,
+          "n_nodes": 2650
+        },
+        {
+          "step": 200,
+          "n_nodes": 2700
+        },
+        {
+          "step": 250,
+          "n_nodes": 2750
+        },
+        {
+          "step": 300,
+          "n_nodes": 2800
+        },
+        {
+          "step": 350,
+          "n_nodes": 2850
+        },
+        {
+          "step": 400,
+          "n_nodes": 2900
+        }
+      ],
+      "final_asymmetry": 0.4433364272117615,
+      "final_clustering_ratio": 0.0846965269779885,
+      "distance_from_xi": 0.5806185832932909,
+      "convergence_ratio": 0.8409902605205721,
+      "pac_status": {
+        "current_mass": 2907.212646484375,
+        "initial_mass": 2500.34423828125,
+        "total_injected": 1203.9600868225098,
+        "total_removed": 797.0914777517319,
+        "expected_mass": 2907.212847352028,
+        "pac_conservation": 0.9999999309071391,
+        "n_nodes": 2900
+      }
+    }
+  ],
+  "predictions": {
+    "closed_closest": false,
+    "open_different": true,
+    "leaky_below": true
+  },
+  "elapsed_seconds": 218.093740940094
+}

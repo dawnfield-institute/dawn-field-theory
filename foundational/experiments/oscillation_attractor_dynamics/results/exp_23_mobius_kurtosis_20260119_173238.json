@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-01-19T17:32:36.611692",
+  "optimal_kurtosis": -0.15,
+  "mobius": {
+    "mean_kurtosis": -0.810682932534572,
+    "std_kurtosis": 0.5671040829097798,
+    "median_kurtosis": -0.9531236052511418
+  },
+  "cylinder": {
+    "mean_kurtosis": -0.8957639558310975,
+    "std_kurtosis": 0.5065126313025461,
+    "median_kurtosis": -1.0210877988610843
+  },
+  "comparison": {
+    "t_statistic": 2.4995289601275945,
+    "p_value": 0.012595516048864327,
+    "mobius_dist_from_optimal": 0.660682932534572,
+    "cylinder_dist_from_optimal": 0.7457639558310974
+  },
+  "spectral": {
+    "mobius_sum": 51.49742551159022,
+    "cylinder_sum": 51.51308768942918,
+    "ratio": 0.9996959573082984,
+    "xi": 1.0571428571428572,
+    "diff_from_xi": 0.05744689983455875
+  },
+  "conclusion": {
+    "status": "SUPPORTED",
+    "mobius_closer": true,
+    "significantly_different": true,
+    "summary": "\u2705 SUPPORTS: M\u00f6bius topology imposes kurtosis closer to optimal"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "experiment": "exp_10_phase_transition_sweep",
+  "timestamp": "2026-01-19T15:34:32.074428",
+  "config": {
+    "n_nodes": 2000,
+    "n_steps": 400,
+    "interaction_radius": 6.0,
+    "pac_strength": 0.8
+  },
+  "critical_point": {
+    "sec_balance": 0.2,
+    "metrics": {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.2,
+      "structure_type": "web"
+    }
+  },
+  "sweep_results": [
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.2,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.25,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.30000000000000004,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.35000000000000003,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.4,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.45,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.5,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.55,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.6000000000000001,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.65,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.7,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.75,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.8,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.8500000000000001,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.9000000000000001,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 0.95,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 1.0,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 1.05,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 1.1,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 1.1500000000000001,
+      "structure_type": "web"
+    },
+    {
+      "void_fraction": 0.6875,
+      "filament_fraction": 0.0625,
+      "density_cv": 1.4942155263846975,
+      "clustering": 0.5358780123066362,
+      "sec_balance": 1.2,
+      "structure_type": "web"
+    }
+  ],
+  "analysis": {
+    "phi": 1.618033988749895,
+    "critical_sec_over_inv_phi": 0.323606797749979
+  }
+}

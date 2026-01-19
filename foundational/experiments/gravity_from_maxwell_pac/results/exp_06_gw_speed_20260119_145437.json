@@ -1,0 +1,83 @@
+{
+  "experiment": "exp_06_gw_speed",
+  "timestamp": "2026-01-19T14:54:37.978129",
+  "gw170817": {
+    "event": "GW170817 / GRB 170817A",
+    "date": "2017-08-17",
+    "distance_mpc": 40.0,
+    "distance_m": 1.2344e+24,
+    "time_delay_observed": 1.7,
+    "travel_time": 4117515191125989.0,
+    "naive_fractional_diff": 4.128703650356448e-16,
+    "published_constraint": 3e-15,
+    "constraint_log10": -14.522878745280337,
+    "interpretation": "GW and EM travel at same speed to 10\u207b\u00b9\u2075 precision"
+  },
+  "sec_prediction": {
+    "sec_wave_equation": "\u2202\u00b2S/\u2202t\u00b2 = (\u03b1\u03b3 + \u03b2\u03b4)\u2207\u00b2S",
+    "wave_speed_squared": "c\u00b2 = \u03b1\u03b3 + \u03b2\u03b4",
+    "em_projection": "E, B = antisymmetric(S)",
+    "gw_projection": "h_\u03bc\u03bd = symmetric(S)",
+    "prediction": "c_EM = c_GW (exact)",
+    "reason": "Same underlying wave equation, different projections"
+  },
+  "massless_mediators": {
+    "photon": {
+      "spin": 1,
+      "mass": 0,
+      "speed": "c",
+      "sec_interpretation": "Antisymmetric SEC mode"
+    },
+    "graviton": {
+      "spin": 2,
+      "mass": 0,
+      "speed": "c",
+      "sec_interpretation": "Symmetric SEC mode"
+    },
+    "unification": "Both are massless because they ARE the wave, not particles in a wave"
+  },
+  "lorentz_invariance": {
+    "requirement": "Special relativity: one universal c",
+    "if_violated": "Causality violation, frame-dependent physics",
+    "constraint": "c_GW = c_EM = c (universal)",
+    "sec_respects": "SEC wave equation is Lorentz invariant"
+  },
+  "graviton_mass_limit": {
+    "mass_limit_ev": 7.7e-23,
+    "mass_limit_kg": 1.37214e-58,
+    "ratio_to_electron": 1.506849315068493e-28,
+    "log10_ratio": -27.82193017496223,
+    "interpretation": "Graviton mass < 10\u207b\u00b2\u2078 \u00d7 electron mass",
+    "sec_prediction": "Graviton is exactly massless (infinite Fibonacci depth)"
+  },
+  "polarization": {
+    "em_polarizations": {
+      "number": 2,
+      "types": [
+        "linear (x, y)",
+        "circular (L, R)"
+      ],
+      "spin": 1,
+      "helicity": [
+        1,
+        -1
+      ]
+    },
+    "gw_polarizations": {
+      "number": 2,
+      "types": [
+        "plus (+)",
+        "cross (\u00d7)"
+      ],
+      "spin": 2,
+      "helicity": [
+        2,
+        -2
+      ]
+    },
+    "commonality": "Both transverse, speed c",
+    "difference": "Spin and how they couple to matter",
+    "sec_origin": "Polarization = projection type of SEC field"
+  },
+  "conclusion": "c_GW = c_EM confirmed, SEC predicts this exactly"
+}

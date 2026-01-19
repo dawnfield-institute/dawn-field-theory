@@ -1,0 +1,63 @@
+{
+  "experiment": "exp_01_sec_wave_unification",
+  "timestamp": "2026-01-19T14:54:04.071243",
+  "sec_parameters": {
+    "symmetric": {
+      "alpha": 211985280.00038323,
+      "beta": 211985280.00038323,
+      "gamma": 211985280.00038323,
+      "delta": 211985280.00038323,
+      "c_squared": 8.987551787368176e+16,
+      "c": 299792458.0,
+      "interpretation": "Fully symmetric SEC - information and entropy equal"
+    },
+    "xi_balanced": {
+      "alpha": 308116768.81766766,
+      "beta": 291468147.1823323,
+      "gamma": 149896229.0,
+      "delta": 149896229.0,
+      "c_squared": 8.987551787368176e+16,
+      "c": 299792458.0,
+      "xi_ratio": 1.0571198664289054,
+      "interpretation": "\u039e-balanced SEC - slight information dominance"
+    }
+  },
+  "em_properties": {
+    "wave_type": "electromagnetic",
+    "speed": 299792458,
+    "sec_prediction": 299792458.0,
+    "polarization": "transverse (2 modes)",
+    "source": "accelerating charge (antisymmetric projection)",
+    "mediator": "photon (massless, spin-1)"
+  },
+  "gw_properties": {
+    "wave_type": "gravitational",
+    "speed": 299792458,
+    "sec_prediction": 299792458.0,
+    "polarization": "transverse (2 modes: +, \u00d7)",
+    "source": "accelerating mass (symmetric projection)",
+    "mediator": "graviton (massless, spin-2)"
+  },
+  "ligo_verification": {
+    "event": "GW170817",
+    "distance_mly": 130,
+    "time_delay_seconds": 1.7,
+    "fractional_speed_difference": 4.143708817574984e-16,
+    "conclusion": "|c_GW - c_EM|/c < 4.1e-16",
+    "consistent_with_sec": true
+  },
+  "wave_comparison": {
+    "em_wave": {
+      "equation": "\u2202\u00b2E/\u2202t\u00b2 = c\u00b2\u2207\u00b2E",
+      "from_maxwell": "\u2207\u00d7(\u2207\u00d7E) = -\u03bc\u2080\u03b5\u2080 \u2202\u00b2E/\u2202t\u00b2",
+      "from_sec": "\u2202\u00b2S/\u2202t\u00b2 = (\u03b1\u03b3+\u03b2\u03b4)\u2207\u00b2S with S\u2192E projection"
+    },
+    "gw_wave": {
+      "equation": "\u2202\u00b2h/\u2202t\u00b2 = c\u00b2\u2207\u00b2h",
+      "from_einstein": "Linearized GR in TT gauge",
+      "from_sec": "\u2202\u00b2S/\u2202t\u00b2 = (\u03b1\u03b3+\u03b2\u03b4)\u2207\u00b2S with S\u2192h projection"
+    },
+    "unification": "SAME WAVE EQUATION, different projection of S"
+  },
+  "conclusion": "SEC wave equation unifies EM and gravitational waves"
+}

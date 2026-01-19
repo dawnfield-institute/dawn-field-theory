@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-01-19T17:24:16.124554",
+  "parameters": {
+    "n_max": 50000,
+    "window": 101
+  },
+  "hypothesis": "\u039e emerges IFF all 4 CAH conditions are met",
+  "xi": 1.0571428571428572,
+  "phi_inv": 0.6180339887498948,
+  "optimal": {
+    "conditions": {
+      "closed": 1.0,
+      "recursive": 0.98,
+      "conserving": 0.9999861262214772,
+      "saturated": 1.0,
+      "product": 0.9799864036970476
+    },
+    "phi_distance": 0.002006011250105244
+  },
+  "violations": {
+    "closed_violated": {
+      "conditions": {
+        "closed": 0.16666666666666666,
+        "recursive": 0.98,
+        "conserving": 0.9999861262214772,
+        "saturated": 1.0,
+        "product": 0.16333106728284127
+      },
+      "phi_distance": 0.0119139887498948
+    },
+    "recursive_violated": {
+      "conditions": {
+        "closed": 1.0,
+        "recursive": 0.1,
+        "conserving": 0.9999861262214772,
+        "saturated": 1.0,
+        "product": 0.09999861262214772
+      },
+      "phi_distance": 0.12156601125010524
+    },
+    "conserving_violated": {
+      "conditions": {
+        "closed": 1.0,
+        "recursive": 0.98,
+        "conserving": 0.5326031157185281,
+        "saturated": 1.0,
+        "product": 0.5219510534041576
+      },
+      "phi_distance": 0.3819660112501052
+    },
+    "saturated_violated": {
+      "conditions": {
+        "closed": 1.0,
+        "recursive": 0.98,
+        "conserving": 0.9999974313380566,
+        "saturated": 0.01831563888873418,
+        "product": 0.017949280005208606
+      },
+      "phi_distance": 0.11532601125010522
+    }
+  },
+  "correlation": {
+    "pearson_r": 0.00031491772275845373,
+    "p_value": 0.9988079847192668,
+    "n_samples": 25
+  },
+  "conclusion": {
+    "status": "PARTIAL",
+    "optimal_near_phi": true,
+    "violations_worse": true,
+    "negative_correlation": false,
+    "summary": "\ud83d\udd04 PARTIAL: Optimal shows \u03c6 and violations hurt, but correlation weak"
+  }
+}

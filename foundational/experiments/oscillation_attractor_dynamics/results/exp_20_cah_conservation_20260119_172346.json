@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-01-19T17:23:44.547231",
+  "parameters": {
+    "n_max": 50000,
+    "factor_base_size": 9,
+    "window": 101,
+    "lam": 0.98
+  },
+  "hypothesis": "\u03c6 signatures require conservation (bounded cumulative impulse)",
+  "cah_condition": "Condition 3: System is INTERNALLY CONSERVING",
+  "standard_sec": {
+    "final_cumsum_I": 0.07905042851740765,
+    "max_cumsum_I": 0.4368335466480049,
+    "drift_rate": 1.580976950809137e-06,
+    "variance_stability": 0.008847668306040396,
+    "mean_reversion": 0.6070705039103846,
+    "frac_E_positive": 0.62004,
+    "dist_from_phi_inv": 0.002006011250105244
+  },
+  "drift_analysis": [
+    {
+      "drift": 0.0001,
+      "frac_E_positive": 0.9944,
+      "dist_from_phi_inv": 0.37636601125010516
+    },
+    {
+      "drift": 0.0005,
+      "frac_E_positive": 0.99924,
+      "dist_from_phi_inv": 0.3812060112501052
+    },
+    {
+      "drift": 0.001,
+      "frac_E_positive": 0.99988,
+      "dist_from_phi_inv": 0.3818460112501052
+    },
+    {
+      "drift": 0.005,
+      "frac_E_positive": 1.0,
+      "dist_from_phi_inv": 0.3819660112501052
+    },
+    {
+      "drift": 0.01,
+      "frac_E_positive": 1.0,
+      "dist_from_phi_inv": 0.3819660112501052
+    }
+  ],
+  "detrending": {
+    "before_dist": 0.3819660112501052,
+    "after_dist": 0.001846011250105195,
+    "detrending_helps": 

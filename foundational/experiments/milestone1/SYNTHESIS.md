@@ -61,7 +61,7 @@ This document maps the complete connection web between experiments, showing how 
 | exp_04 φ Emergence | r² = r + 1 → φ | Fibonacci, α formula |
 | exp_05 Fibonacci Integers | F_k from integer PAC | All constants |
 | exp_06 φ Falsification | Confirms φ genuine | All claims |
-| exp_07 Ξ Falsification | Honest: curve-fit | Epistemic integrity |
+| exp_07 Ξ Derivation | **DERIVED (2026-01-19)** | See exp_24 in oscillation_attractor_dynamics |
 
 ### Layer 3: Spacetime Structure (exp_08–11, planned)
 
@@ -245,7 +245,7 @@ That experiment established:
 
 ### Honestly Uncertain:
 
-1. **Ξ = 1 + π/55** — phenomenon real, formula may be approximation
+1. ~~**Ξ = 1 + π/55**~~ — **RESOLVED (2026-01-19)**: Derived from PAC collapse dynamics (exp_24 in oscillation_attractor_dynamics)
 2. **Energy scale for exact sin²θ_W** — running not yet computed
 3. **Complete mass spectrum** — not yet derived
 

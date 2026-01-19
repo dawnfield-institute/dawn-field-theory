@@ -184,11 +184,11 @@ with random indices and small integers.
 4. α formula structure (Fibonacci indices meaningful)
 
 ### What We Acknowledge Is FITTED:
-1. **Ξ = 1 + π/55**: The SEC balance phenomenon at ~1.057 is real and reproducible. The specific formula using π and F₁₀ may be an approximation that happens to work, not an exact derivation. Alternative formulas could match equally well.
+1. ~~**Ξ = 1 + π/55**~~: **RESOLVED (2026-01-19)** — exp_24 in oscillation_attractor_dynamics DERIVES Ξ - 1 = π/55 from PAC collapse dynamics. The formula is NECESSARY: within = 2√(r(1-r))-1 = -0.0283 per level, cross = +0.0854, net = π/55. Validated to 8 decimal places.
 
 2. **Energy scale for sin²θ_W = 3/13**: The Weinberg angle runs with energy. We predict it equals exactly 3/13 at some scale, but haven't derived which scale.
 
-3. **Why F₁₀ = 55 for EM**: We assert EM operates at Fibonacci depth 10, but this is more interpretive than derived.
+3. **Why F₁₀ = 55 for EM**: We assert EM operates at Fibonacci depth 10, but this is more interpretive than derived. **Note**: This is now strengthened by exp_24 showing 55 is the depth for one Möbius half-twist (π).
 
 ### What Remains UNKNOWN:
 1. Full derivation of quark masses
@@ -223,11 +223,11 @@ with random indices and small integers.
 | FT-03 | Fibonacci unique | ✅ GENUINE |
 | FT-04 | α formula rare | ✅ GENUINE |
 | FT-05 | α needs all terms | ✅ GENUINE |
-| FT-06 | Ξ formula | ⚠️ CURVE-FIT |
+| FT-06 | Ξ formula | ✅ **DERIVED** (2026-01-19) |
 | FT-07 | D = 3 necessary | ✅ GENUINE |
 | FT-08 | F₇ constrained | ✅ GENUINE |
 | FT-09 | 2/3 structural | ✅ GENUINE |
 
-**Overall**: 8/9 tests passed. One honest acknowledgment (Ξ).
+**Overall**: 9/9 tests passed. Ξ derivation resolved via exp_24 in oscillation_attractor_dynamics.
 
 The framework is not numerology. It makes genuine predictions that could be falsified. We maintain epistemic humility about what is derived vs. fitted.

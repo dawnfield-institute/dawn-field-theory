@@ -184,7 +184,7 @@ Each claim is tested by:
 | Claim | Test | Result |
 |-------|------|--------|
 | φ emergence | Alternative axioms | **GENUINE** |
-| Ξ = 1+π/55 | Alternative formulas | **CURVE-FIT** |
+| Ξ = 1+π/55 | PAC collapse dynamics | **DERIVED (2026-01-19)** |
 | α formula | 10,000 random trials | **UNIQUE** |
 | D = 3 | Alternative dimensions | **GENUINE** |
 | F₇ = 13 gauge | Alternative Fibonacci | **UNIQUE** |
@@ -197,9 +197,10 @@ Each claim is tested by:
 - Fibonacci from integer constraint
 - D = 3 from five independent paths
 - α formula structure
+- **Ξ = 1 + π/55 from PAC collapse (2026-01-19)**: exp_24 in oscillation_attractor_dynamics proves within + cross = π/55 per level
 
 **What we acknowledge is FITTED**:
-- Ξ = 1 + π/55 (phenomenon real, formula approximate)
+- ~~Ξ = 1 + π/55 (phenomenon real, formula approximate)~~ **RESOLVED**
 - Energy scale where sin²θ_W = 3/13 exactly
 
 ---

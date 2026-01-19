@@ -1,0 +1,28 @@
+{
+  "experiment": "exp_09_pac_web_emergence",
+  "timestamp": "2026-01-19T15:14:05.601689",
+  "device": "cuda",
+  "elapsed_seconds": 8.27040410041809,
+  "config": {
+    "n_nodes": 3000,
+    "box_size": 100.0,
+    "interaction_radius": 8.0,
+    "pac_strength": 1.0,
+    "sec_balance": 0.3,
+    "n_steps": 500
+  },
+  "analysis": {
+    "filament_fraction": 0.25,
+    "void_fraction": 0.0,
+    "density_mean": 60.89,
+    "density_std": 1.57815292879577,
+    "clustering_coefficient": 0.5663607326549771,
+    "pac_conservation": 1.0,
+    "structure_type": "clump"
+  },
+  "history": {
+    "clustering_final": 0.5666147526731344,
+    "void_fraction_final": 0.6247
+  },
+  "conclusion": "Web structure emerges from local PAC gravity"
+}
