@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-01-22T11:39:09.909984",
+  "n_proteins": 300,
+  "contact_counts": {
+    "all": 111397,
+    "coil_coil": 23217,
+    "helix_helix": 17065,
+    "sheet_sheet": 22413
+  },
+  "analyses": {
+    "all": {
+      "Fibonacci (all)": {
+        "name": "Fibonacci (all)",
+        "n_distances": 106645,
+        "observed": 16276,
+        "expected": 4352.857142857143,
+        "enrichment": 3.739153265507056,
+        "z_score": 183.2848668638401
+      },
+      "Far-Fibonacci (21,34,55,89)": {
+        "name": "Far-Fibonacci (21,34,55,89)",
+        "n_distances": 106645,
+        "observed": 3680,
+        "expected": 2176.4285714285716,
+        "enrichment": 1.6908434525763045,
+        "z_score": 33.30024661363069
+      },
+      "Helix-only (not Fib)": {
+        "name": "Helix-only (not Fib)",
+        "n_distances": 106645,
+        "observed": 18725,
+        "expected": 7073.392857142857,
+        "enrichment": 2.647244452298604,
+        "z_score": 136.7732652080889
+      },
+      "Overlap (Fib \u2229 Helix)": {
+        "name": "Overlap (Fib \u2229 Helix)",
+        "n_distances": 106645,
+        "observed": 5240,
+        "expected": 1088.2142857142858,
+        "enrichment": 4.815228093206432,
+        "z_score": 123.28673740578276
+      },
+      "Primes": {
+        "name": "Primes",
+        "n_distances": 106645,
+        "observed": 32142,
+        "expected": 23940.714285714286,
+        "enrichment": 1.3425664588119461,
+        "z_score": 62.502909831584674
+      }
+    },
+    "coil_coil": {
+      "Fibonacci (all)": {
+        "name": "Fibonacci (all)",
+        "n_distances": 22064,
+        "observed": 3156,
+        "expected": 900.5714285714286,
+        "enrichment": 3.5044416243654823,
+        "z_score": 75.1633087309132
+      },
+      "Far-Fibonacci (21,34,55,89)": {
+        "name": "Far-Fibonacci (21,34,55,89)",
+        "n_distances": 22064,
+        "observed": 745,
+        "expected": 450.2857142857143,
+        "enrichment": 1.654505076142132,
+        "z_score": 14.217595287542638
+      },
+      "Helix-only (not Fib)": {
+        "name": "Helix-only (not Fib)",
+        "n_distances": 22064,
+        "observed": 3832,
+        "expected": 1463.4285714285713,
+        "enrichment": 2.6185083951581416,
+        "z_score": 64.47286128588603
+      },
+      "Overlap (Fib \u2229 Helix)": {
+        "name": "Overlap (Fib \u2229 Helix)",
+        "n_distances": 22064,
+        "observed": 957,
+        "expected": 225.14285714285714,
+        "enrichment": 4.250634517766498,
+        "z_score": 47.03246519397156
+      },
+      "Primes": {
+        "name": "Primes",
+        "n_distances": 22064,
+        "observed": 6631,
+        "expected": 4953.142857142857,
+        "enrichment": 1.3387459621596678,
+        "z_score": 28.748843735523344
+      }
+    },
+    "helix_helix": {
+      "Fibonacci (all)": {
+        "name": "Fibonacci (all)",
+        "n_distances": 16001,
+        "observed": 2460,
+        "expected": 653.1020408163265,
+        "enrichment": 3.766639585025936,
+        "z_score": 71.1780424664919
+      },
+      "Far-Fibonacci (21,34,55,89)": {
+        "name": "Far-Fibonacci (21,34,55,89)",
+        "n_distances": 16001,
+        "observed": 716,
+        "expected": 326.55102040816325,
+        "enrichment": 2.1926129616898944,
+        "z_score": 22.024632710909213
+      },
+      "Helix-only (not Fib)": {
+        "name": "Helix-only (not Fib)",
+        "n_distances": 16001,
+        "observed": 2699,
+        "expected": 1061.2908163265306,
+        "enrichment": 2.5431295159437153,
+        "z_score": 52.054620631883914
+      },
+      "Overlap (Fib \u2229 Helix)": {
+        "name": "Overlap (Fib \u2229 Helix)",
+        "n_distances": 16001,
+        "observed": 777,
+        "expected": 163.27551020408163,
+        "enrichment": 4.758827573276671,
+        "z_score": 46.87860383883012
+      },
+      "Primes": {
+        "name": "Primes",
+        "n_distances": 16001,
+        "observed": 4491,
+        "expected": 3592.061224489796,
+        "enrichment": 1.2502570862048394,
+        "z_score": 18.429372178585485
+      }
+    },
+    "sheet_sheet": {
+      "Fibonacci (all)": {
+        "name": "Fibonacci (all)",
+        "n_distances": 21857,
+        "observed": 2547,
+        "expected": 892.1224489795918,
+        "enrichment": 2.8549892482957406,
+        "z_score": 56.344114373978705
+      },
+      "Far-Fibonacci (21,34,55,89)": {
+        "name": "Far-Fibonacci (21,34,55,89)",
+        "n_distances": 21857,
+        "observed": 703,
+        "expected": 446.0612244897959,
+        "enrichment": 1.5760168367113512,
+        "z_score": 12.50555851023466
+      },
+      "Helix-only (not Fib)": {
+        "name": "Helix-only (not Fib)",
+        "n_distances": 21857,
+        "observed": 4403,
+        "expected": 1449.6989795918366,
+        "enrichment": 3.0371822440267335,
+        "z_score": 78.09770768085713
+      },
+      "Overlap (Fib \u2229 Helix)": {
+        "name": "Overlap (Fib \u2229 Helix)",
+        "n_distances": 21857,
+        "observed": 1360,
+        "expected": 223.03061224489795,
+        "enrichment": 6.097817632794985,
+        "z_score": 73.77286274667046
+      },
+      "Primes": {
+        "name": "Primes",
+        "n_distances": 21857,
+        "observed": 5997,
+        "expected": 4906.673469387755,
+        "enrichment": 1.2222129794074708,
+        "z_score": 18.65350166568653
+      }
+    }
+  },
+  "verdict": {
+    "coil_fib_significant": true,
+    "sheet_fib_significant": true,
+    "far_fib_coil_significant": true,
+    "exceeds_helix_explanation": true
+  }
+}

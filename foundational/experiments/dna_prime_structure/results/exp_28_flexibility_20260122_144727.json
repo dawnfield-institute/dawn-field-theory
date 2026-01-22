@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-01-22T14:47:27.032259",
+  "results": {
+    "rigid": {
+      "enrichment": 4.005200670263201,
+      "z_score": 100.83496275611748,
+      "fib_rate": 9.451800991771565,
+      "n_contacts": 36702
+    },
+    "flexible": {
+      "enrichment": 6.91840572867485,
+      "z_score": 114.18617078102463,
+      "fib_rate": 15.417060119609694,
+      "n_contacts": 15885
+    },
+    "rigid-flex": {
+      "enrichment": 4.420636917743108,
+      "z_score": 76.77446341159164,
+      "fib_rate": 10.94894592629872,
+      "n_contacts": 17883
+    }
+  },
+  "proteins": 60
+}

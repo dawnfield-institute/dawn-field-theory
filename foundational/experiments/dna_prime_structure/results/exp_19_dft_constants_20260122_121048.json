@@ -1,0 +1,166 @@
+{
+  "timestamp": "2026-01-22T12:09:40.451891",
+  "n_proteins": 300,
+  "n_contacts": 112238,
+  "tests": {
+    "fibonacci": {
+      "observed": 16372,
+      "expected": 4385.632653061224,
+      "enrichment": 3.7330988012806197,
+      "z": 176.36020585421116
+    },
+    "f7_f10": {
+      "F7_13": {
+        "count": 2034,
+        "expected": 548.204081632653,
+        "enrichment": 3.7102970739334378
+      },
+      "F10_55": {
+        "count": 651,
+        "expected": 548.204081632653,
+        "enrichment": 1.187513960241233
+      }
+    },
+    "phi_scaled": {
+      "observed": 0,
+      "expected": 0.0,
+      "enrichment": 0,
+      "z": 0.0
+    },
+    "gap_6_hub": {
+      "count_6": 4570,
+      "fraction": 0.040717047702204245,
+      "expected_fraction": 0.0024752475247524753,
+      "enrichment": 16.449687271690514
+    },
+    "mobius_pairs": {
+      "mobius_patterns": 825,
+      "total_pairs": 31038,
+      "direct_mirrors": 0
+    },
+    "two_thirds": {
+      "near_two_thirds": 0,
+      "near_three_halves": 0,
+      "fib_adjacent_pairs": 8738,
+      "total_pairs": 112237
+    },
+    "xi_modulation": {
+      "xi_related_hits": 24200,
+      "total": 112238,
+      "fraction": 0.21561325041429819
+    },
+    "phi_triplets": {
+      "phi_triplets": 249,
+      "unique_distances": 404,
+      "triplet_fraction": 0.6163366336633663
+    }
+  },
+  "top_distances": [
+    [
+      5,
+      7217
+    ],
+    [
+      6,
+      4570
+    ],
+    [
+      7,
+      3375
+    ],
+    [
+      8,
+      3250
+    ],
+    [
+      9,
+      2556
+    ],
+    [
+      11,
+      2276
+    ],
+    [
+      12,
+      2265
+    ],
+    [
+      10,
+      2261
+    ],
+    [
+      13,
+      2034
+    ],
+    [
+      16,
+      1746
+    ],
+    [
+      14,
+      1717
+    ],
+    [
+      15,
+      1675
+    ],
+    [
+      25,
+      1608
+    ],
+    [
+      26,
+      1598
+    ],
+    [
+      27,
+      1562
+    ],
+    [
+      17,
+      1520
+    ],
+    [
+      24,
+      1477
+    ],
+    [
+      19,
+      1432
+    ],
+    [
+      28,
+      1432
+    ],
+    [
+      30,
+      1424
+    ],
+    [
+      18,
+      1415
+    ],
+    [
+      21,
+      1408
+    ],
+    [
+      31,
+      1400
+    ],
+    [
+      29,
+      1396
+    ],
+    [
+      34,
+      1395
+    ]
+  ],
+  "findings": [
+    "\u2705 Fibonacci enrichment: 3.73x (z=176.4)",
+    "\u2705 F\u2087=13 (gauge closure): 3.71x enrichment",
+    "\u2705 Gap 6 hub pattern: 16.45x enrichment"
+  ],
+  "dft_constants_present": true
+}

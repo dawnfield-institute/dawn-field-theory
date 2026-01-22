@@ -1,0 +1,535 @@
+{
+  "timestamp": "2026-01-22T10:41:49.871923",
+  "goal": "Hunt for prime/Fibonacci signatures in protein structure",
+  "n_proteins": 10,
+  "total_residues": 2502,
+  "property_runs": {
+    "hydrophobic": {
+      "n_runs": 665,
+      "mean_run": 1.7834586466165414,
+      "mode_run": 1,
+      "prime_frac": 0.3593984962406015,
+      "prime_expected": 0.46153846153846156,
+      "prime_enrichment": 0.7786967418546366,
+      "fib_frac": 0.9473684210526315,
+      "fib_expected": 0.46153846153846156,
+      "fib_enrichment": 2.052631578947368,
+      "n_gaps": 655,
+      "mean_gap": 1.9740458015267175
+    },
+    "hydrophilic": {
+      "n_runs": 662,
+      "mean_run": 1.9290030211480362,
+      "mode_run": 1,
+      "prime_frac": 0.4093655589123867,
+      "prime_expected": 0.4444444444444444,
+      "prime_enrichment": 0.9210725075528701,
+      "fib_frac": 0.904833836858006,
+      "fib_expected": 0.5555555555555556,
+      "fib_enrichment": 1.6287009063444107,
+      "n_gaps": 652,
+      "mean_gap": 1.8328220858895705
+    },
+    "charged_pos": {
+      "n_runs": 315,
+      "mean_run": 1.1428571428571428,
+      "mode_run": 1,
+      "prime_frac": 0.12380952380952381,
+      "prime_expected": 0.6666666666666666,
+      "prime_enrichment": 0.18571428571428572,
+      "fib_frac": 1.0,
+      "fib_expected": 1.0,
+      "fib_enrichment": 1.0,
+      "n_gaps": 305,
+      "mean_gap": 6.521311475409836
+    },
+    "charged_neg": {
+      "n_runs": 305,
+      "mean_run": 1.137704918032787,
+      "mode_run": 1,
+      "prime_frac": 0.12131147540983607,
+      "prime_expected": 0.6666666666666666,
+      "prime_enrichment": 0.1819672131147541,
+      "fib_frac": 1.0,
+      "fib_expected": 1.0,
+      "fib_enrichment": 1.0,
+      "n_gaps": 295,
+      "mean_gap": 6.779661016949152
+    },
+    "small": {
+      "n_runs": 413,
+      "mean_run": 1.278450363196126,
+      "mode_run": 1,
+      "prime_frac": 0.2106537530266344,
+      "prime_expected": 0.5,
+      "prime_enrichment": 0.4213075060532688,
+      "fib_frac": 0.9927360774818402,
+      "fib_expected": 0.6666666666666666,
+      "fib_enrichment": 1.4891041162227605,
+      "n_gaps": 403,
+      "mean_gap": 4.791563275434243
+    },
+    "large": {
+      "n_runs": 634,
+      "mean_run": 2.085173501577287,
+      "mode_run": 1,
+      "prime_frac": 0.3501577287066246,
+      "prime_expected": 0.5714285714285714,
+      "prime_enrichment": 0.612776025236593,
+      "fib_frac": 0.8422712933753943,
+      "fib_expected": 0.5714285714285714,
+      "fib_enrichment": 1.47397476340694,
+      "n_gaps": 624,
+      "mean_gap": 1.873397435897436
+    }
+  },
+  "domain_segments": {
+    "n_segments": 10,
+    "mean_length": 7.3,
+    "prime_frac": 0.1,
+    "fib_frac": 0.3,
+    "length_distribution": [
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "charge_patterns": {
+    "n_pairs": 4335,
+    "mean_distance": 24.515109573241062,
+    "prime_frac": 0.31557093425605537,
+    "fib_frac": 0.14209919261822376,
+    "top_distances": [
+      [
+        10,
+        148
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        4,
+        115
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        24,
+        110
+      ],
+      [
+        18,
+        109
+      ],
+      [
+        23,
+        107
+      ],
+      [
+        36,
+        107
+      ],
+      [
+        3,
+        107
+      ],
+      [
+        5,
+        106
+      ],
+      [
+        31,
+        100
+      ],
+      [
+        22,
+        100
+      ],
+      [
+        7,
+        99
+      ],
+      [
+        11,
+        99
+      ],
+      [
+        26,
+        99
+      ]
+    ],
+    "primes_in_top10": [
+      29,
+      23,
+      3,
+      5
+    ],
+    "fibs_in_top10": [
+      3,
+      5
+    ]
+  },
+  "repeat_patterns": {
+    "Hemoglobin_alpha_motif3": {
+      "n_repeated_motifs": 2,
+      "n_spacings": 2,
+      "mean_spacing": 28.0,
+      "prime_spacings": 2,
+      "fib_spacings": 1
+    },
+    "Myoglobin_motif3": {
+      "n_repeated_motifs": 3,
+      "n_spacings": 3,
+      "mean_spacing": 22.333333333333332,
+      "prime_spacings": 1,
+      "fib_spacings": 0
+    },
+    "Lysozyme_motif3": {
+      "n_repeated_motifs": 1,
+      "n_spacings": 1,
+      "mean_spacing": 127.0,
+      "prime_spacings": 1,
+      "fib_spacings": 0
+    },
+    "Cytochrome_c_motif3": {
+      "n_repeated_motifs": 3,
+      "n_spacings": 3,
+      "mean_spacing": 15.333333333333334,
+      "prime_spacings": 2,
+      "fib_spacings": 0
+    },
+    "Cytochrome_c_motif4": {
+      "n_repeated_motifs": 1,
+      "n_spacings": 1,
+      "mean_spacing": 17.0,
+      "prime_spacings": 1,
+      "fib_spacings": 0
+    },
+    "Ubiquitin_motif3": {
+      "n_repeated_motifs": 76,
+      "n_spacings": 606,
+      "mean_spacing": 76.0,
+      "prime_spacings": 0,
+      "fib_spacings": 0
+    },
+    "Ubiquitin_motif4": {
+      "n_repeated_motifs": 76,
+      "n_spacings": 605,
+      "mean_spacing": 76.0,
+      "prime_spacings": 0,
+      "fib_spacings": 0
+    },
+    "Ubiquitin_motif5": {
+      "n_repeated_motifs": 76,
+      "n_spacings": 604,
+      "mean_spacing": 76.0,
+      "prime_spacings": 0,
+      "fib_spacings": 0
+    },
+    "Ubiquitin_motif6": {
+      "n_repeated_motifs": 76,
+      "n_spacings": 603,
+      "mean_spacing": 76.0,
+      "prime_spacings": 0,
+      "fib_spacings": 0
+    },
+    "Insulin_motif3": {
+      "n_repeated_motifs": 5,
+      "n_spacings": 6,
+      "mean_spacing": 17.166666666666668,
+      "prime_spacings": 3,
+      "fib_spacings": 3
+    },
+    "Insulin_motif4": {
+      "n_repeated_motifs": 2,
+      "n_spacings": 2,
+      "mean_spacing": 6.0,
+      "prime_spacings": 1,
+      "fib_spacings": 1
+    },
+    "Actin_motif3": {
+      "n_repeated_motifs": 11,
+      "n_spacings": 11,
+      "mean_spacing": 149.54545454545453,
+      "prime_spacings": 1,
+      "fib_spacings": 1
+    },
+    "Actin_motif4": {
+      "n_repeated_motifs": 1,
+      "n_spacings": 1,
+      "mean_spacing": 335.0,
+      "prime_spacings": 0,
+      "fib_spacings": 0
+    },
+    "Tubulin_alpha_motif3": {
+      "n_repeated_motifs": 21,
+      "n_spacings": 23,
+      "mean_spacing": 137.52173913043478,
+      "prime_spacings": 1,
+      "fib_spacings": 1
+    },
+    "Tubulin_alpha_motif4": {
+      "n_repeated_motifs": 2,
+      "n_spacings": 2,
+      "mean_spacing": 18.0,
+      "prime_spacings": 0,
+      "fib_spacings": 0
+    },
+    "Calmodulin_motif3": {
+      "n_repeated_motifs": 13,
+      "n_spacings": 13,
+      "mean_spacing": 63.30769230769231,
+      "prime_spacings": 8,
+      "fib_spacings": 0
+    },
+    "Calmodulin_motif4": {
+      "n_repeated_motifs": 5,
+      "n_spacings": 5,
+      "mean_spacing": 66.4,
+      "prime_spacings": 4,
+      "fib_spacings": 0
+    },
+    "Calmodulin_motif5": {
+      "n_repeated_motifs": 1,
+      "n_spacings": 1,
+      "mean_spacing": 73.0,
+      "prime_spacings": 1,
+      "fib_spacings": 0
+    },
+    "Ferritin_motif3": {
+      "n_repeated_motifs": 4,
+      "n_spacings": 4,
+      "mean_spacing": 63.0,
+      "prime_spacings": 1,
+      "fib_spacings": 1
+    },
+    "Ferritin_motif4": {
+      "n_repeated_motifs": 1,
+      "n_spacings": 1,
+      "mean_spacing": 68.0,
+      "prime_spacings": 0,
+      "fib_spacings": 0
+    }
+  },
+  "periodicity": {
+    "Hemoglobin_alpha": {
+      "top_periods": [
+        [
+          14,
+          0.13395618466040998
+        ],
+        [
+          44,
+          0.11005895512937766
+        ],
+        [
+          4,
+          0.10489229080778376
+        ],
+        [
+          29,
+          0.10252705041437435
+        ]
+      ],
+      "prime_periods": [
+        29
+      ],
+      "fib_periods": []
+    },
+    "Myoglobin": {
+      "top_periods": [
+        [
+          8,
+          0.12987012987012986
+        ],
+        [
+          14,
+          0.11688311688311688
+        ]
+      ],
+      "prime_periods": [],
+      "fib_periods": [
+        8
+      ]
+    },
+    "Lysozyme": {
+      "top_periods": [
+        [
+          37,
+          0.12646198830409355
+        ],
+        [
+          3,
+          0.11383752173225857
+        ],
+        [
+          6,
+          0.10633001422475108
+        ],
+        [
+          17,
+          0.10024498182392919
+        ]
+      ],
+      "prime_periods": [
+        37,
+        3,
+        17
+      ],
+      "fib_periods": [
+        3
+      ]
+    },
+    "Cytochrome_c": {
+      "top_periods": [
+        [
+          24,
+          0.13975563909774444
+        ],
+        [
+          48,
+          0.1380639097744361
+        ],
+        [
+          21,
+          0.1320175438596492
+        ],
+        [
+          34,
+          0.10231829573934842
+        ]
+      ],
+      "prime_periods": [],
+      "fib_periods": [
+        21,
+        34
+      ]
+    },
+    "Ubiquitin": {
+      "top_periods": [
+        [
+          33,
+          0.24661373271183307
+        ],
+        [
+          43,
+          0.23434361732466782
+        ],
+        [
+          9,
+          0.2005815967013333
+        ],
+        [
+          2,
+          0.14965462349375414
+        ],
+        [
+          20,
+          0.1411268322868694
+        ]
+      ],
+      "prime_periods": [
+        43,
+        2
+      ],
+      "fib_periods": [
+        2
+      ]
+    },
+    "Insulin": {
+      "top_periods": [
+        [
+          3,
+          0.247130883301096
+        ],
+        [
+          6,
+          0.2372539989561266
+        ],
+        [
+          9,
+          0.21150409873814127
+        ],
+        [
+          11,
+          0.1925363053022628
+        ]
+      ],
+      "prime_periods": [
+        3,
+        11
+      ],
+      "fib_periods": [
+        3
+      ]
+    },
+    "Actin": {
+      "top_periods": [
+        [
+          12,
+          0.19999408351348272
+        ],
+        [
+          38,
+          0.1359220237417984
+        ]
+      ],
+      "prime_periods": [],
+      "fib_periods": []
+    },
+    "Calmodulin": {
+      "top_periods": [
+        [
+          36,
+          0.2565797050312292
+        ],
+        [
+          20,
+          0.1701902178573966
+        ],
+        [
+          4,
+          0.15645498406070896
+        ],
+        [
+          32,
+          0.10888704298585432
+        ],
+        [
+          39,
+          0.10146749291246734
+        ]
+      ],
+      "prime_periods": [],
+      "fib_periods": []
+    },
+    "Ferritin": {
+      "top_periods": [
+        [
+          11,
+          0.19321378999887448
+        ],
+        [
+          48,
+          0.14787860599467295
+        ],
+        [
+          45,
+          0.11699240974853373
+        ],
+        [
+          15,
+          0.10446912005602024
+        ]
+      ],
+      "prime_periods": [
+        11
+      ],
+      "fib_periods": []
+    }
+  }
+}

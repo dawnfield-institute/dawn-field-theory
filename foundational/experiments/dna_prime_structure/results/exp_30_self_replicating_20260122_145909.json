@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-01-22T14:59:09.713290",
+  "results": {
+    "replication": {
+      "with_template": [
+        0.8136646151542664,
+        0.7340425252914429,
+        0.8269230723381042,
+        0.7857142686843872,
+        0.7540106773376465,
+        0.849397599697113,
+        0.8727272748947144,
+        0.7487179636955261
+      ],
+      "without_template": [
+        0.9124087691307068,
+        0.8055555820465088,
+        0.8723404407501221,
+        0.8439716100692749,
+        0.8150684833526611,
+        0.8707482814788818,
+        0.7702702879905701,
+        0.7628205418586731
+      ],
+      "fidelity_ratio": 0.959720639062736
+    },
+    "evolution": {
+      "history": [
+        {
+          "generation": 0,
+          "mean_fitness": 19.6875,
+          "max_fitness": 25.0
+        },
+        {
+          "generation": 1,
+          "mean_fitness": 28.25,
+          "max_fitness": 39.0
+        },
+        {
+          "generation": 2,
+          "mean_fitness": 40.4375,
+          "max_fitness": 65.0
+        },
+        {
+          "generation": 3,
+          "mean_fitness": 53.75,
+          "max_fitness": 78.0
+        },
+        {
+          "generation": 4,
+          "mean_fitness": 73.375,
+          "max_fitness": 99.0
+        },
+        {
+          "generation": 5,
+          "mean_fitness": 94.3125,
+          "max_fitness": 110.0
+        },
+        {
+          "generation": 6,
+          "mean_fitness": 107.5625,
+          "max_fitness": 119.0
+        },
+        {
+          "generation": 7,
+          "mean_fitness": 113.25,
+          "max_fitness": 120.0
+        }
+      ],
+      "improvement_ratio": 5.752380952380952
+    },
+    "inheritance": {
+      "lineage": [
+        35,
+        43,
+        54,
+        59,
+        83,
+        96,
+        105,
+        108,
+        115,
+        109,
+        117
+      ],
+      "preservation_ratio": 2.54
+    },
+    "summary": {
+      "replication_fidelity": 0.959720639062736,
+      "evolution_improvement": 5.752380952380952,
+      "inheritance_preservation": 2.54,
+      "all_passed": 

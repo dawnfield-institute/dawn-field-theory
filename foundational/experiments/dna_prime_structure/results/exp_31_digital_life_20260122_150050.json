@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-01-22T15:00:50.586937",
+  "results": {
+    "simulation_1": {
+      "initial_fib": 11.733333333333333,
+      "final_fib": 12.0,
+      "fib_increase": 1.0227272727272727,
+      "generations_evolved": 0.0,
+      "final_population": 0
+    },
+    "simulation_2": {
+      "initial_fib": 10.6,
+      "final_fib": 12.0,
+      "mutation_rate": 0.3,
+      "survived": false
+    },
+    "verdict": {
+      "sim1_success": false,
+      "sim2_success": false,
+      "overall_success": false
+    }
+  }
+}

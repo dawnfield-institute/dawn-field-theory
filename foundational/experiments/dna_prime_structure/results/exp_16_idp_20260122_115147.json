@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-01-22T11:51:46.817396",
+  "protein_type": "intrinsically_disordered",
+  "n_proteins": 19,
+  "n_stable_contacts": 3418,
+  "n_transient_contacts": 397,
+  "analyses": {
+    "stable": {
+      "Fibonacci (all)": {
+        "name": "Fibonacci (all)",
+        "n_distances": 3274,
+        "observed": 518,
+        "expected": 133.6326530612245,
+        "enrichment": 3.8762981062919977,
+        "z_score": 34.25330300398664
+      },
+      "Far-Fibonacci": {
+        "name": "Far-Fibonacci",
+        "n_distances": 3274,
+        "observed": 112,
+        "expected": 66.81632653061224,
+        "enrichment": 1.67623701893708,
+        "z_score": 5.4756172107071
+      },
+      "Primes": {
+        "name": "Primes",
+        "n_distances": 3274,
+        "observed": 1004,
+        "expected": 734.9795918367347,
+        "enrichment": 1.366024323874049,
+        "z_score": 11.413247387996899
+      }
+    },
+    "transient": {
+      "Fibonacci (all)": {
+        "name": "Fibonacci (all)",
+        "n_distances": 397,
+        "observed": 89,
+        "expected": 16.20408163265306,
+        "enrichment": 5.492443324937028,
+        "z_score": 18.41485830299437
+      },
+      "Far-Fibonacci": {
+        "name": "Far-Fibonacci",
+        "n_distances": 397,
+        "observed": 33,
+        "expected": 8.10204081632653,
+        "enrichment": 4.073047858942066,
+        "z_score": 9.370841929240399
+      },
+      "Primes": {
+        "name": "Primes",
+        "n_distances": 397,
+        "observed": 122,
+        "expected": 89.12244897959184,
+        "enrichment": 1.368903137165102,
+        "z_score": 3.942524042886354
+      }
+    }
+  },
+  "verdict": {
+    "stable_fib_significant": true,
+    "transient_fib_significant": true
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "timestamp": "2026-01-22T11:51:51.044969",
+  "proteins_per_organism": 60,
+  "organisms": {
+    "human": {
+      "n_proteins": 60,
+      "n_contacts": 15389,
+      "fibonacci": {
+        "n_distances": 15096,
+        "observed": 2444,
+        "expected": 616.1632653061224,
+        "enrichment": 3.9664811870694225,
+        "z_score": 74.4827287717506
+      },
+      "far_fibonacci": {
+        "n_distances": 15096,
+        "observed": 506,
+        "expected": 308.0816326530612,
+        "enrichment": 1.6424218335983043,
+        "z_score": 11.053487048873366
+      },
+      "primes": {
+        "n_distances": 15096,
+        "observed": 4666,
+        "expected": 3388.8979591836733,
+        "enrichment": 1.3768487739075974,
+        "z_score": 26.24864803059491
+      }
+    },
+    "ecoli": {
+      "n_proteins": 60,
+      "n_contacts": 29459,
+      "fibonacci": {
+        "n_distances": 27380,
+        "observed": 3883,
+        "expected": 1117.5510204081634,
+        "enrichment": 3.474561723886048,
+        "z_score": 83.03839235304834
+      },
+      "far_fibonacci": {
+        "n_distances": 27380,
+        "observed": 1074,
+        "expected": 558.7755102040817,
+        "enrichment": 1.9220598977355732,
+        "z_score": 21.600793646267714
+      },
+      "primes": {
+        "n_distances": 27380,
+        "observed": 8338,
+        "expected": 6146.530612244898,
+        "enrichment": 1.3565376186997808,
+        "z_score": 33.40707364565491
+      }
+    },
+    "yeast": {
+      "n_proteins": 60,
+      "n_contacts": 30317,
+      "fibonacci": {
+        "n_distances": 27786,
+        "observed": 3699,
+        "expected": 1134.1224489795918,
+        "enrichment": 3.261552580436191,
+        "z_score": 78.9874152607311
+      },
+      "far_fibonacci": {
+        "n_distances": 27786,
+        "observed": 629,
+        "expected": 567.0612244897959,
+        "enrichment": 1.1092276686100915,
+        "z_score": 2.619012525723238
+      },
+      "primes": {
+        "n_distances": 27786,
+        "observed": 7723,
+        "expected": 6237.673469387755,
+        "enrichment": 1.238121879560014,
+        "z_score": 22.22601212211546
+      }
+    },
+    "archaea": {
+      "n_proteins": 60,
+      "n_contacts": 20793,
+      "fibonacci": {
+        "n_distances": 19793,
+        "observed": 2958,
+        "expected": 807.8775510204082,
+        "enrichment": 3.6614459657454654,
+        "z_score": 77.10550770852988
+      },
+      "far_fibonacci": {
+        "n_distances": 19793,
+        "observed": 617,
+        "expected": 403.9387755102041,
+        "enrichment": 1.5274592027484464,
+        "z_score": 10.79960943104262
+      },
+      "primes": {
+        "n_distances": 19793,
+        "observed": 6174,
+        "expected": 4443.326530612245,
+        "enrichment": 1.3894995016603666,
+        "z_score": 31.554553198583726
+      }
+    },
+    "thermophile": {
+      "n_proteins": 60,
+      "n_contacts": 32642,
+      "fibonacci": {
+        "n_distances": 30586,
+        "observed": 4124,
+        "expected": 1248.408163265306,
+        "enrichment": 3.303406787419081,
+        "z_score": 84.40082414530104
+      },
+      "far_fibonacci": {
+        "n_distances": 30586,
+        "observed": 1155,
+        "expected": 624.204081632653,
+        "enrichment": 1.8503563721964298,
+        "z_score": 21.913772737431838
+      },
+      "primes": {
+        "n_distances": 30586,
+        "observed": 8938,
+        "expected": 6866.244897959184,
+        "enrichment": 1.3017304411406287,
+        "z_score": 28.926267311366345
+      }
+    }
+  },
+  "summary": {
+    "organisms_tested": 5,
+    "organisms_significant": 5,
+    "universal": true
+  }
+}

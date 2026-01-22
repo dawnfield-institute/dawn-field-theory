@@ -1,0 +1,191 @@
+{
+  "timestamp": "2026-01-22T09:36:00.362227",
+  "tests": {
+    "gap_ranges": {
+      "small": {
+        "range": [
+          2,
+          10
+        ],
+        "n_gaps": 1044,
+        "prime_count": 531,
+        "observed_frac": 0.5086206896551724,
+        "expected_frac": 0.4444444444444444,
+        "enrichment": 1.144396551724138
+      },
+      "medium": {
+        "range": [
+          11,
+          30
+        ],
+        "n_gaps": 847,
+        "prime_count": 303,
+        "observed_frac": 0.3577331759149941,
+        "expected_frac": 0.3,
+        "enrichment": 1.192443919716647
+      },
+      "large": {
+        "range": [
+          31,
+          100
+        ],
+        "n_gaps": 390,
+        "prime_count": 104,
+        "observed_frac": 0.26666666666666666,
+        "expected_frac": 0.21428571428571427,
+        "enrichment": 1.2444444444444445
+      }
+    },
+    "shuffled_comparison": {
+      "Hemoglobin_alpha_human": {
+        "real_prime_frac": 0.43089430894308944,
+        "shuffled_mean": 0.396910569105691,
+        "shuffled_std": 0.04784164285083582,
+        "z_score": 0.7103380614113824,
+        "enrichment_vs_shuffled": 1.0856206472757068
+      },
+      "Hemoglobin_beta_human": {
+        "real_prime_frac": 0.390625,
+        "shuffled_mean": 0.37296875,
+        "shuffled_std": 0.04281392561495033,
+        "z_score": 0.41239502676751844,
+        "enrichment_vs_shuffled": 1.0473397570171763
+      },
+      "Insulin_human": {
+        "real_prime_frac": 0.4111111111111111,
+        "shuffled_mean": 0.3877777777777777,
+        "shuffled_std": 0.049851631720387896,
+        "z_score": 0.46805555862659365,
+        "enrichment_vs_shuffled": 1.0601719197707737
+      }
+    },
+    "random_sequences": {
+      "n_sequences": 100,
+      "sequence_length": 400,
+      "mean_prime_frac": 0.36223684210526325,
+      "std_prime_frac": 0.026711174480079744,
+      "min_prime_frac": 0.3,
+      "max_prime_frac": 0.4368421052631579
+    },
+    "real_vs_random": {
+      "real_prime_frac": 0.3808174828004856,
+      "random_mean": 0.36223684210526325,
+      "random_std": 0.026711174480079744,
+      "z_score": 0.6956130180303061
+    },
+    "aa_frequency_effect": {
+      "aa_stats": {
+        "M": {
+          "frequency": 0.013138686131386862,
+          "n_gaps": 8,
+          "mean_gap": 76.0,
+          "prime_fraction": 0.0
+        },
+        "Q": {
+          "frequency": 0.07883211678832117,
+          "n_gaps": 53,
+          "mean_gap": 12.60377358490566,
+          "prime_fraction": 0.33962264150943394
+        },
+        "I": {
+          "frequency": 0.09197080291970802,
+          "n_gaps": 62,
+          "mean_gap": 10.741935483870968,
+          "prime_fraction": 0.2903225806451613
+        },
+        "F": {
+          "frequency": 0.026277372262773723,
+          "n_gaps": 17,
+          "mean_gap": 38.1764705882353,
+          "prime_fraction": 0.5294117647058824
+        },
+        "V": {
+          "frequency": 0.05401459854014599,
+          "n_gaps": 36,
+          "mean_gap": 18.88888888888889,
+          "prime_fraction": 0.25
+        },
+        "K": {
+          "frequency": 0.09197080291970802,
+          "n_gaps": 62,
+          "mean_gap": 10.725806451612904,
+          "prime_fraction": 0.41935483870967744
+        },
+        "T": {
+          "frequency": 0.09197080291970802,
+          "n_gaps": 62,
+          "mean_gap": 10.758064516129032,
+          "prime_fraction": 0.7096774193548387
+        },
+        "L": {
+          "frequency": 0.11824817518248175,
+          "n_gaps": 80,
+          "mean_gap": 8.4125,
+          "prime_fraction": 0.775
+        },
+        "G": {
+          "frequency": 0.07883211678832117,
+          "n_gaps": 53,
+          "mean_gap": 12.716981132075471,
+          "prime_fraction": 0.0
+        },
+        "E": {
+          "frequency": 0.07883211678832117,
+          "n_gaps": 53,
+          "mean_gap": 12.377358490566039,
+          "prime_fraction": 0.5094339622641509
+        },
+        "P": {
+          "frequency": 0.03941605839416058,
+          "n_gaps": 26,
+          "mean_gap": 24.115384615384617,
+          "prime_fraction": 0.0
+        },
+        "S": {
+          "frequency": 0.03941605839416058,
+          "n_gaps": 26,
+          "mean_gap": 25.115384615384617,
+          "prime_fraction": 0.6538461538461539
+        },
+        "D": {
+          "frequency": 0.06569343065693431,
+          "n_gaps": 44,
+          "mean_gap": 14.659090909090908,
+          "prime_fraction": 0.6136363636363636
+        },
+        "N": {
+          "frequency": 0.026277372262773723,
+          "n_gaps": 17,
+          "mean_gap": 37.8235294117647,
+          "prime_fraction": 0.47058823529411764
+        },
+        "A": {
+          "frequency": 0.026277372262773723,
+          "n_gaps": 17,
+          "mean_gap": 36.8235294117647,
+          "prime_fraction": 0.0
+        },
+        "R": {
+          "frequency": 0.052554744525547446,
+          "n_gaps": 35,
+          "mean_gap": 18.285714285714285,
+          "prime_fraction": 0.2571428571428571
+        },
+        "Y": {
+          "frequency": 0.013138686131386862,
+          "n_gaps": 8,
+          "mean_gap": 76.0,
+          "prime_fraction": 0.0
+        },
+        "H": {
+          "frequency": 0.013138686131386862,
+          "n_gaps": 8,
+          "mean_gap": 76.0,
+          "prime_fraction": 0.0
+        }
+      },
+      "freq_primefrac_correlation": 0.5567585801805509,
+      "correlation_pvalue": 0.016397525494377115
+    }
+  }
+}

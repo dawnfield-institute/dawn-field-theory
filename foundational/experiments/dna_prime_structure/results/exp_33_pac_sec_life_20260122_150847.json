@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-01-22T15:08:47.210430",
+  "constants": {
+    "PHI": 1.618033988749895,
+    "XI": 1.0571198664289054
+  },
+  "thresholds": {
+    "reproduction": 61.80339887498948,
+    "death": 23.60679774997897
+  },
+  "results": {
+    "final_population": 12,
+    "pac_conservation": false,
+    "phi_verified": true,
+    "sec_growth": true,
+    "initial_fib": 28.833333333333332,
+    "final_fib": 28.833333333333332
+  }
+}

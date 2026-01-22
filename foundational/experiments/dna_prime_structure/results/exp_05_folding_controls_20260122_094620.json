@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-01-22T09:46:19.994967",
+  "tests": {
+    "vs_uniform": {
+      "real_score": 0.4270833333333333,
+      "uniform_mean": 1.1832395833333336,
+      "uniform_std": 0.0804826336458766,
+      "z_score": -9.395272194087063
+    },
+    "vs_shifted": {
+      "real_score": 0.4270833333333333,
+      "shifted_mean": 0.5519427083333333,
+      "shifted_std": 0.034623576845376744,
+      "z_score": -3.6061951530196192
+    },
+    "vs_exponential": {
+      "real_score": 0.4270833333333333,
+      "exp_mean": 0.5766979166666667,
+      "exp_std": 0.06616529487321675,
+      "z_score": -2.2612244624620623
+    },
+    "sensitivity_no_3": {
+      "n_without_3": 104,
+      "score_without_3": 0.7884615384615384,
+      "enrichment_without_3": 0.9783653846153846,
+      "z_vs_uniform": -4.143398357146861
+    }
+  }
+}

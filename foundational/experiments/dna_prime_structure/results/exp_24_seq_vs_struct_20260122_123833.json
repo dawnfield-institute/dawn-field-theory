@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-01-22T12:38:33.407247",
+  "proteins": 200,
+  "contacts": 1659177,
+  "sequence_enrichment": 1.2804239692329389,
+  "sequence_z": 103.3508666592045,
+  "distance_enrichment": 0.5781058922586318,
+  "distance_z": -258.8033528194159,
+  "fib_seq_to_fib_dist_rate": 15.120972486996635,
+  "non_fib_seq_to_fib_dist_rate": 11.155966777261401
+}

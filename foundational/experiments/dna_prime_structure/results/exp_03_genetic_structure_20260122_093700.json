@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-01-22T09:36:57.749758",
+  "tests": {
+    "codon_spacing": {
+      "start_codon": {
+        "n_occurrences": 1568,
+        "n_gaps": 1567,
+        "mean_gap": 63.69623484365029,
+        "prime_fraction": 0.2616464582003829,
+        "expected_fraction": 0.19047619047619047,
+        "enrichment": 1.3736439055520102
+      },
+      "stop_codon": {
+        "n_occurrences": 4683,
+        "n_gaps": 4682,
+        "mean_gap": 21.334258863733446,
+        "prime_fraction": 0.3265698419478855,
+        "expected_fraction": 0.23,
+        "enrichment": 1.4198688780342847
+      },
+      "start_vs_shuffled": {
+        "real_frac": 0.2616464582003829,
+        "shuffled_mean": 0.25860020796608063,
+        "shuffled_std": 0.010318845193112857,
+        "z_score": 0.29521232049642937
+      }
+    },
+    "reading_frame": {
+      "n_orfs": 1566,
+      "orf_lengths": {
+        "mean": 20.98722860791826,
+        "prime_fraction": 0.3716475095785441
+      },
+      "orf_gaps": {
+        "n_gaps": 796,
+        "mean": 60.280150753768844,
+        "prime_fraction": 0.2701005025125628
+      }
+    },
+    "divisibility_by_3": {
+      "divisible_by_3": 506,
+      "total": 1567,
+      "fraction": 0.3229100191448628,
+      "expected": 0.3333333333333333,
+      "enrichment": 0.9687300574345884,
+      "chi2": 0.7661135928525845,
+      "p_value": 0.38142203519527684
+    }
+  }
+}

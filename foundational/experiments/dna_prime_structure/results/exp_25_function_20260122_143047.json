@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-01-22T14:30:47.488676",
+  "proteins_per_type": 50,
+  "results": {
+    "enzyme": {
+      "overall": {
+        "enrichment": 3.7181221387716725,
+        "z_score": 247.72111661579555,
+        "observed": 26708,
+        "total": 178682,
+        "fib_rate": 14.947224678479087
+      },
+      "n_proteins": 50,
+      "n_contacts": 178682,
+      "n_functional": 50
+    },
+    "structural": {
+      "overall": {
+        "enrichment": 3.819988096629858,
+        "z_score": 291.18998018408536,
+        "observed": 32308,
+        "total": 282273,
+        "fib_rate": 11.445657218366616
+      },
+      "n_proteins": 46,
+      "n_contacts": 282273,
+      "n_functional": 46
+    },
+    "binding": {
+      "overall": {
+        "enrichment": 3.8185555627895873,
+        "z_score": 277.79082356036315,
+        "observed": 28294,
+        "total": 184314,
+        "fib_rate": 15.350977136842562
+      },
+      "n_proteins": 50,
+      "n_contacts": 184314,
+      "n_functional": 50
+    }
+  }
+}

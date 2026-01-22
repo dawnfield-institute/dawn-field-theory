@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-01-22T09:47:12.992177",
+  "hypothesis": "Protein fold hierarchy shows \u03c6 relationships",
+  "tests": {
+    "consecutive_ratios": {
+      "n_pairs": 197,
+      "mean_ratio": 2.2505547751740647,
+      "mean_phi_distance": 1.0107529751797752,
+      "z_score": 0.3115643821253933,
+      "significant": "False"
+    },
+    "helix_strand_count_ratio": {
+      "n_proteins": 7,
+      "mean_ratio": 1.9551793444650587,
+      "mean_phi_distance": 0.8798644721096015,
+      "per_protein": {
+        "Hemoglobin_alpha": {
+          "n_helix": 10,
+          "n_strand": 2,
+          "ratio": 5.0,
+          "distance_from_phi": 3.381966011250105
+        },
+        "Lysozyme": {
+          "n_helix": 8,
+          "n_strand": 9,
+          "ratio": 1.125,
+          "distance_from_phi": 0.4930339887498949
+        },
+        "Cytochrome_c": {
+          "n_helix": 5,
+          "n_strand": 5,
+          "ratio": 1.0,
+          "distance_from_phi": 0.6180339887498949
+        },
+        "Ubiquitin": {
+          "n_helix": 11,
+          "n_strand": 26,
+          "ratio": 2.3636363636363638,
+          "distance_from_phi": 0.7456023748864689
+        },
+        "Insulin": {
+          "n_helix": 7,
+          "n_strand": 4,
+          "ratio": 1.75,
+          "distance_from_phi": 0.1319660112501051
+        },
+        "Actin": {
+          "n_helix": 22,
+          "n_strand": 21,
+          "ratio": 1.0476190476190477,
+          "distance_from_phi": 0.5704149411308472
+        },
+        "Tubulin_alpha": {
+          "n_helix": 21,
+          "n_strand": 15,
+          "ratio": 1.4,
+          "distance_from_phi": 0.218033988749895
+        }
+      }
+    },
+    "helix_strand_length_ratio": {
+      "n_proteins": 7,
+      "mean_ratio": 4.432519695098136,
+      "mean_phi_distance": 2.8555734733842923,
+      "per_protein": {
+        "Hemoglobin_alpha": {
+          "helix_length": 109,
+          "strand_length": 6,
+          "ratio": 18.166666666666668,
+          "distance_from_phi": 16.54863267791677
+        },
+        "Lysozyme": {
+          "helix_length": 55,
+          "strand_length": 27,
+          "ratio": 2.037037037037037,
+          "distance_from_phi": 0.4190030482871423
+        },
+        "Cytochrome_c": {
+          "helix_length": 43,
+          "strand_length": 16,
+          "ratio": 2.6875,
+          "distance_from_phi": 1.069466011250105
+        },
+        "Ubiquitin": {
+          "helix_length": 69,
+          "strand_length": 120,
+          "ratio": 1.7391304347826086,
+          "distance_from_phi": 0.12109644603271374
+        },
+        "Insulin": {
+          "helix_length": 36,
+          "strand_length": 13,
+          "ratio": 2.769230769230769,
+          "distance_from_phi": 1.1511967804808743
+        },
+        "Actin": {
+          "helix_length": 143,
+          "strand_length": 97,
+          "ratio": 1.4742268041237114,
+          "distance_from_phi": 0.14380718462618347
+        },
+        "Tubulin_alpha": {
+          "helix_length": 196,
+          "strand_length": 91,
+          "ratio": 2.1538461538461537,
+          "distance_from_phi": 0.5358121650962588
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-01-22T12:00:42.031803",
+  "molecule_type": "RNA",
+  "n_structures": 120,
+  "n_contacts": 30026,
+  "analyses": {
+    "Fibonacci (all)": {
+      "name": "Fibonacci (all)",
+      "n_distances": 28966,
+      "observed": 3181,
+      "expected": 1176.284263959391,
+      "enrichment": 2.7042782917903745,
+      "z_score": 61.12925400990125
+    },
+    "Far-Fibonacci": {
+      "name": "Far-Fibonacci",
+      "n_distances": 28966,
+      "observed": 1158,
+      "expected": 588.1421319796955,
+      "enrichment": 1.968911827660015,
+      "z_score": 23.823937342086428
+    },
+    "RNA A-helix (~11bp)": {
+      "name": "RNA A-helix (~11bp)",
+      "n_distances": 28966,
+      "observed": 1670,
+      "expected": 588.1421319796955,
+      "enrichment": 2.839449699647863,
+      "z_score": 44.86847584129107
+    },
+    "Primes": {
+      "name": "Primes",
+      "n_distances": 28966,
+      "observed": 7682,
+      "expected": 6469.563451776649,
+      "enrichment": 1.187406238034561,
+      "z_score": 17.816724526706334
+    }
+  },
+  "top_distances": [
+    [
+      4,
+      1296
+    ],
+    [
+      5,
+      722
+    ],
+    [
+      13,
+      663
+    ],
+    [
+      14,
+      656
+    ],
+    [
+      15,
+      650
+    ],
+    [
+      8,
+      605
+    ],
+    [
+      6,
+      605
+    ],
+    [
+      7,
+      596
+    ],
+    [
+      10,
+      589
+    ],
+    [
+      11,
+      576
+    ],
+    [
+      12,
+      564
+    ],
+    [
+      9,
+      551
+    ],
+    [
+      17,
+      532
+    ],
+    [
+      16,
+      531
+    ],
+    [
+      22,
+      504
+    ],
+    [
+      18,
+      500
+    ],
+    [
+      20,
+      484
+    ],
+    [
+      23,
+      483
+    ],
+    [
+      21,
+      476
+    ],
+    [
+      19,
+      452
+    ]
+  ],
+  "verdict": {
+    "fib_significant": true,
+    "far_fib_significant": true
+  }
+}

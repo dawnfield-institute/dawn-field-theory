@@ -1,0 +1,151 @@
+{
+  "timestamp": "2026-01-22T12:24:57.270311",
+  "proteins_analyzed": 200,
+  "contact_threshold": 8.0,
+  "pair_results": {
+    "aromatic-aromatic": {
+      "enrichment": 0.4391470749043193,
+      "z_score": -29.150020725996665,
+      "observed": 502,
+      "expected": 1143.125,
+      "total": 1829
+    },
+    "hydrophobic-hydrophobic": {
+      "enrichment": 0.5132932351152261,
+      "z_score": -75.8625116949966,
+      "observed": 4747,
+      "expected": 9248.125,
+      "total": 14797
+    },
+    "polar-polar": {
+      "enrichment": 0.5299797889063552,
+      "z_score": -40.07486201133139,
+      "observed": 1475,
+      "expected": 2783.125,
+      "total": 4453
+    },
+    "aromatic-hydrophobic": {
+      "enrichment": 0.4905789653991093,
+      "z_score": -64.49015883101193,
+      "observed": 2685,
+      "expected": 5473.125,
+      "total": 8757
+    },
+    "aromatic_HIS-PHE": {
+      "enrichment": 0.16436058700209644,
+      "z_score": -22.819465169225573,
+      "observed": 49,
+      "expected": 298.125,
+      "total": 477
+    },
+    "aromatic_PHE-TYR": {
+      "enrichment": 0.6100719424460431,
+      "z_score": -8.174772217600726,
+      "observed": 106,
+      "expected": 173.75,
+      "total": 278
+    },
+    "aromatic_HIS-TYR": {
+      "enrichment": 0.24386617100371746,
+      "z_score": -15.527500470143602,
+      "observed": 41,
+      "expected": 168.125,
+      "total": 269
+    },
+    "aromatic_TYR-TYR": {
+      "enrichment": 0.850909090909091,
+      "z_score": -2.863386220687081,
+      "observed": 117,
+      "expected": 137.5,
+      "total": 220
+    },
+    "aromatic_PHE-TRP": {
+      "enrichment": 0.2981366459627329,
+      "z_score": -11.258444196074022,
+      "observed": 30,
+      "expected": 100.625,
+      "total": 161
+    },
+    "aromatic_PHE-PHE": {
+      "enrichment": 0.5583892617449664,
+      "z_score": -6.946640479648301,
+      "observed": 52,
+      "expected": 93.125,
+      "total": 149
+    },
+    "aromatic_TRP-TYR": {
+      "enrichment": 0.5981308411214953,
+      "z_score": -5.2260091713748515,
+      "observed": 40,
+      "expected": 66.875,
+      "total": 107
+    },
+    "aromatic_HIS-HIS": {
+      "enrichment": 0.9035294117647059,
+      "z_score": -1.260019651237993,
+      "observed": 48,
+      "expected": 53.125,
+      "total": 85
+    },
+    "aromatic_HIS-TRP": {
+      "enrichment": 0.38620689655172413,
+      "z_score": -6.369783180110555,
+      "observed": 14,
+      "expected": 36.25,
+      "total": 58
+    }
+  },
+  "fibonacci_set": [
+    1,
+    2,
+    3,
+    34,
+    5,
+    8,
+    233,
+    13,
+    144,
+    21,
+    55,
+    89
+  ],
+  "contact_counts": {
+    "('charged_neg', 'hydrophobic')": 5906,
+    "('hydrophobic', 'hydrophobic')": 14797,
+    "('aromatic', 'hydrophobic')": 8757,
+    "('hydrophobic', 'polar')": 12142,
+    "('aromatic', 'charged_pos')": 2269,
+    "('hydrophobic', 'special')": 9320,
+    "('charged_pos', 'special')": 2410,
+    "('charged_pos', 'hydrophobic')": 6278,
+    "('charged_neg', 'charged_pos')": 2835,
+    "('charged_neg', 'special')": 3094,
+    "('special', 'special')": 2712,
+    "('aromatic', 'aromatic')": 1829,
+    "('aromatic_specific', ('TYR', 'TYR'))": 220,
+    "('aromatic', 'polar')": 4533,
+    "('charged_pos', 'polar')": 4565,
+    "('aromatic', 'charged_neg')": 2062,
+    "('charged_neg', 'polar')": 3062,
+    "('aromatic', 'special')": 3359,
+    "('polar', 'special')": 5207,
+    "('polar', 'polar')": 4453,
+    "('aromatic_specific', ('HIS', 'PHE'))": 477,
+    "('charged_pos', 'charged_pos')": 967,
+    "('aromatic_specific', ('PHE', 'TRP'))": 161,
+    "('aromatic_specific', ('HIS', 'HIS'))": 85,
+    "('charged_neg', 'charged_neg')": 547,
+    "('aromatic_specific', ('PHE', 'PHE'))": 149,
+    "('aromatic_specific', ('PHE', 'TYR'))": 278,
+    "('other', 'polar')": 18,
+    "('hydrophobic', 'other')": 24,
+    "('charged_neg', 'other')": 6,
+    "('aromatic', 'other')": 8,
+    "('aromatic_specific', ('TRP', 'TYR'))": 107,
+    "('charged_pos', 'other')": 6,
+    "('aromatic_specific', ('TRP', 'TRP'))": 25,
+    "('aromatic_specific', ('HIS', 'TRP'))": 58,
+    "('aromatic_specific', ('HIS', 'TYR'))": 269,
+    "('other', 'special')": 3
+  }
+}

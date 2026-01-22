@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-01-22T10:42:59.549209",
+  "run_lengths": {
+    "n": 278,
+    "max": 29,
+    "mean": 4.91726618705036,
+    "n_prime": 183,
+    "expected_prime": 95.86206896551724,
+    "prime_enrichment": 1.9089928057553958,
+    "z_prime": 11.095287475247131,
+    "n_fib": 171,
+    "expected_fib": 67.10344827586206,
+    "fib_enrichment": 2.5483042137718397,
+    "z_fib": 14.324360721313912
+  },
+  "start_positions": {
+    "n": 278,
+    "max": 1458,
+    "mean": 394.1223021582734,
+    "n_prime": 44,
+    "expected_prime": 18.113854595336075,
+    "prime_enrichment": 2.4290798939795533,
+    "z_prime": 6.255371430058429,
+    "n_fib": 13,
+    "expected_fib": 2.0973936899862826,
+    "fib_enrichment": 6.198168737737083,
+    "z_fib": 7.7648097064677035
+  },
+  "boundary_gaps": {
+    "n": 833,
+    "max": 21,
+    "mean": 1.7563025210084033,
+    "n_prime": 278,
+    "expected_prime": 317.3333333333333,
+    "prime_enrichment": 0.8760504201680673,
+    "z_prime": -2.822614681791658,
+    "n_fib": 795,
+    "expected_fib": 277.6666666666667,
+    "fib_enrichment": 2.8631452581032413,
+    "z_fib": 37.43888333847808
+  }
+}
