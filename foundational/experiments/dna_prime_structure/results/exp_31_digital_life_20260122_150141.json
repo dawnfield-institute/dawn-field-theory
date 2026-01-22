@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-01-22T15:01:41.084450",
+  "results": {
+    "simulation_1": {
+      "initial_fib": 11.933333333333334,
+      "final_fib": 17.55,
+      "fib_increase": 1.4706703910614525,
+      "generations_evolved": 1.15,
+      "final_population": 40
+    },
+    "simulation_2": {
+      "initial_fib": 11.15,
+      "final_fib": 16.86,
+      "mutation_rate": 0.3,
+      "survived": true
+    },
+    "top_organisms": [
+      {
+        "id": 36,
+        "fib_contacts": 42,
+        "generation": 4,
+        "age": 18
+      },
+      {
+        "id": 38,
+        "fib_contacts": 33,
+        "generation": 3,
+        "age": 15
+      },
+      {
+        "id": 27,
+        "fib_contacts": 31,
+        "generation": 3,
+        "age": 25
+      },
+      {
+        "id": 34,
+        "fib_contacts": 31,
+        "generation": 2,
+        "age": 19
+      },
+      {
+        "id": 35,
+        "fib_contacts": 28,
+        "generation": 4,
+        "age": 18
+      }
+    ],
+    "verdict": {
+      "sim1_success": true,
+      "sim2_success": true,
+      "overall_success": true
+    }
+  }
+}

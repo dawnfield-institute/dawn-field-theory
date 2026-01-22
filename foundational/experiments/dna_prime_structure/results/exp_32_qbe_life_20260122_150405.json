@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-01-22T15:04:05.608366",
+  "constants": {
+    "PHI": 1.618033988749895,
+    "PHI_INV": 0.6180339887498948,
+    "XI": 1.0571198664289054
+  },
+  "results": {
+    "simulation": {
+      "initial_info": 12.375,
+      "final_info": 14.46,
+      "initial_balance": 0.7215483796234636,
+      "final_balance": 0.17786238306647648,
+      "initial_qpl": 0.9814298949224105,
+      "final_qpl": 0.31070260500619235,
+      "final_population": 50
+    },
+    "verdict": {
+      "qbe_success": false
+    }
+  }
+}

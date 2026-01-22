@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-01-22T14:45:25.012285",
+  "results": {
+    "collagen": {
+      "enrichment": 2.523698019388901,
+      "z_score": 164.71976737284007,
+      "fib_rate": 8.816412294808387,
+      "n_contacts": 263656
+    },
+    "keratin": {
+      "enrichment": 6.802791222133102,
+      "z_score": 318.3116065282333,
+      "fib_rate": 9.531056002988585,
+      "n_contacts": 182026
+    },
+    "actin": {
+      "enrichment": 7.005985470625394,
+      "z_score": 309.703468576325,
+      "fib_rate": 14.153506001263423,
+      "n_contacts": 94980
+    },
+    "tubulin": {
+      "enrichment": 4.573077824838544,
+      "z_score": 487.34908759594066,
+      "fib_rate": 10.190702673734917,
+      "n_contacts": 656834
+    },
+    "fibronectin": {
+      "enrichment": 10.25119141103075,
+      "z_score": 843.2481736869897,
+      "fib_rate": 9.437230297841886,
+      "n_contacts": 804823
+    },
+    "elastin": {
+      "enrichment": 4.174744535313498,
+      "z_score": 278.4958416395856,
+      "fib_rate": 11.28309333868513,
+      "n_contacts": 239172
+    },
+    "myosin": {
+      "enrichment": 9.646763042111878,
+      "z_score": 604.9292392091371,
+      "fib_rate": 10.457195709606374,
+      "n_contacts": 391386
+    }
+  }
+}

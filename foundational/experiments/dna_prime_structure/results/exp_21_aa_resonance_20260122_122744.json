@@ -1,0 +1,159 @@
+{
+  "timestamp": "2026-01-22T12:27:44.390964",
+  "proteins_analyzed": 200,
+  "contact_threshold": 40.0,
+  "pair_results": {
+    "aromatic-aromatic": {
+      "enrichment": 0.5909797822706065,
+      "z_score": -42.35865128853626,
+      "observed": 5244,
+      "expected": 8873.4,
+      "total": 44367
+    },
+    "hydrophobic-hydrophobic": {
+      "enrichment": 0.6170550777219936,
+      "z_score": -121.1507199736486,
+      "observed": 46532,
+      "expected": 75409.8,
+      "total": 377049
+    },
+    "polar-polar": {
+      "enrichment": 0.5406052449384984,
+      "z_score": -84.16693568553364,
+      "observed": 16710,
+      "expected": 30909.800000000003,
+      "total": 154549
+    },
+    "aromatic-hydrophobic": {
+      "enrichment": 0.59768815963899,
+      "z_score": -98.21714022196869,
+      "observed": 30569,
+      "expected": 51145.4,
+      "total": 255727
+    },
+    "aromatic_PHE-TYR": {
+      "enrichment": 0.5283138247390066,
+      "z_score": -23.15279711346243,
+      "observed": 1002,
+      "expected": 1896.6000000000001,
+      "total": 9483
+    },
+    "aromatic_HIS-PHE": {
+      "enrichment": 0.5513016845329249,
+      "z_score": -18.91312161347655,
+      "observed": 648,
+      "expected": 1175.4,
+      "total": 5877
+    },
+    "aromatic_HIS-TYR": {
+      "enrichment": 0.5180139810001793,
+      "z_score": -18.24633634222753,
+      "observed": 578,
+      "expected": 1115.8,
+      "total": 5579
+    },
+    "aromatic_TYR-TYR": {
+      "enrichment": 0.7842340511986996,
+      "z_score": -7.75895997626117,
+      "observed": 772,
+      "expected": 984.4000000000001,
+      "total": 4922
+    },
+    "aromatic_PHE-PHE": {
+      "enrichment": 0.5660377358490566,
+      "z_score": -14.413628556752908,
+      "observed": 492,
+      "expected": 869.2,
+      "total": 4346
+    },
+    "aromatic_TRP-TYR": {
+      "enrichment": 0.4872335441555399,
+      "z_score": -16.716591874248742,
+      "observed": 416,
+      "expected": 853.8000000000001,
+      "total": 4269
+    },
+    "aromatic_PHE-TRP": {
+      "enrichment": 0.8498475609756098,
+      "z_score": -4.421082905446869,
+      "observed": 669,
+      "expected": 787.2,
+      "total": 3936
+    },
+    "aromatic_HIS-HIS": {
+      "enrichment": 0.5638297872340425,
+      "z_score": -12.026518028833655,
+      "observed": 318,
+      "expected": 564.0,
+      "total": 2820
+    },
+    "aromatic_HIS-TRP": {
+      "enrichment": 0.547640249332146,
+      "z_score": -10.776348520649059,
+      "observed": 246,
+      "expected": 449.20000000000005,
+      "total": 2246
+    },
+    "aromatic_TRP-TRP": {
+      "enrichment": 0.5793025871766029,
+      "z_score": -6.330489341217267,
+      "observed": 103,
+      "expected": 177.8,
+      "total": 889
+    }
+  },
+  "fibonacci_set": [
+    1,
+    2,
+    3,
+    34,
+    5,
+    8,
+    233,
+    13,
+    144,
+    21,
+    55,
+    89
+  ],
+  "contact_counts": {
+    "('charged_neg', 'hydrophobic')": 283766,
+    "('hydrophobic', 'hydrophobic')": 377049,
+    "('charged_pos', 'hydrophobic')": 281264,
+    "('hydrophobic', 'special')": 317874,
+    "('aromatic', 'hydrophobic')": 255727,
+    "('hydrophobic', 'polar')": 477461,
+    "('charged_pos', 'polar')": 176570,
+    "('charged_neg', 'polar')": 176609,
+    "('polar', 'special')": 207167,
+    "('aromatic', 'polar')": 164110,
+    "('polar', 'polar')": 154549,
+    "('aromatic', 'charged_pos')": 95521,
+    "('aromatic', 'charged_neg')": 98260,
+    "('aromatic', 'special')": 109317,
+    "('aromatic', 'aromatic')": 44367,
+    "('aromatic_specific', ('PHE', 'TYR'))": 9483,
+    "('aromatic_specific', ('HIS', 'PHE'))": 5877,
+    "('aromatic_specific', ('PHE', 'PHE'))": 4346,
+    "('aromatic_specific', ('PHE', 'TRP'))": 3936,
+    "('charged_neg', 'charged_neg')": 52963,
+    "('charged_neg', 'special')": 118377,
+    "('charged_neg', 'charged_pos')": 105302,
+    "('charged_pos', 'special')": 115393,
+    "('charged_pos', 'charged_pos')": 52875,
+    "('special', 'special')": 70076,
+    "('aromatic_specific', ('TYR', 'TYR'))": 4922,
+    "('aromatic_specific', ('HIS', 'TYR'))": 5579,
+    "('aromatic_specific', ('TRP', 'TYR'))": 4269,
+    "('aromatic_specific', ('HIS', 'TRP'))": 2246,
+    "('aromatic_specific', ('TRP', 'TRP'))": 889,
+    "('aromatic_specific', ('HIS', 'HIS'))": 2820,
+    "('charged_pos', 'other')": 180,
+    "('other', 'special')": 240,
+    "('charged_neg', 'other')": 165,
+    "('hydrophobic', 'other')": 474,
+    "('other', 'other')": 14,
+    "('aromatic', 'other')": 152,
+    "('other', 'polar')": 376
+  }
+}

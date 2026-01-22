@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-01-22T11:15:12.547124",
+  "comparison": {
+    "SEC": {
+      "distance": 2.8923385943465694,
+      "analysis": [
+        {
+          "length": 217,
+          "hydrophobic_fraction": 0.4930875576036866,
+          "n_runs": 86,
+          "mean_run_length": 2.5232558139534884,
+          "fib_runs": 71,
+          "fib_run_fraction": 0.8255813953488372,
+          "mean_ratio": 2.5908963585434175,
+          "phi_distance": 1.2778206573242676
+        },
+        {
+          "length": 178,
+          "hydrophobic_fraction": 0.4606741573033708,
+          "n_runs": 60,
+          "mean_run_length": 2.966666666666667,
+          "fib_runs": 40,
+          "fib_run_fraction": 0.6666666666666666,
+          "mean_ratio": 2.8446327683615817,
+          "phi_distance": 1.444335880473208
+        },
+        {
+          "length": 239,
+          "hydrophobic_fraction": 0.47280334728033474,
+          "n_runs": 97,
+          "mean_run_length": 2.463917525773196,
+          "fib_runs": 76,
+          "fib_run_fraction": 0.7835051546391752,
+          "mean_ratio": 2.209895833333333,
+          "phi_distance": 1.0006116826649503
+        }
+      ]
+    },
+    "Phi": {
+      "distance": 1.8860947346544794,
+      "analysis": [
+        {
+          "length": 203,
+          "hydrophobic_fraction": 0.5073891625615764,
+          "n_runs": 197,
+          "mean_run_length": 1.0304568527918783,
+          "fib_runs": 197,
+          "fib_run_fraction": 1.0,
+          "mean_ratio": 1.030612244897959,
+          "phi_distance": 0.6297268258289797
+        },
+        {
+          "length": 111,
+          "hydrophobic_fraction": 0.4864864864864865,
+          "n_runs": 109,
+          "mean_run_length": 1.018348623853211,
+          "fib_runs": 109,
+          "fib_run_fraction": 1.0,
+          "mean_ratio": 1.037037037037037,
+          "phi_distance": 0.6321808780554545
+        },
+        {
+          "length": 250,
+          "hydrophobic_fraction": 0.496,
+          "n_runs": 248,
+          "mean_run_length": 1.0080645161290323,
+          "fib_runs": 248,
+          "fib_run_fraction": 1.0,
+          "mean_ratio": 1.0161943319838056,
+          "phi_distance": 0.6242196731426093
+        }
+      ]
+    },
+    "Natural": {
+      "distance": 0.37803797268513417,
+      "analysis": [
+        {
+          "length": 197,
+          "hydrophobic_fraction": 0.38071065989847713,
+          "n_runs": 95,
+          "mean_run_length": 2.0210526315789474,
+          "fib_runs": 89,
+          "fib_run_fraction": 0.9368421052631579,
+          "mean_ratio": 2.1693262411347516,
+          "phi_distance": 1.000002753209233
+        },
+        {
+          "length": 141,
+          "hydrophobic_fraction": 0.48936170212765956,
+          "n_runs": 59,
+          "mean_run_length": 2.3220338983050848,
+          "fib_runs": 53,
+          "fib_run_fraction": 0.8983050847457628,
+          "mean_ratio": 2.2738095238095237,
+          "phi_distance": 0.9294712763670459
+        },
+        {
+          "length": 221,
+          "hydrophobic_fraction": 0.4343891402714932,
+          "n_runs": 102,
+          "mean_run_length": 2.1176470588235294,
+          "fib_runs": 90,
+          "fib_run_fraction": 0.8823529411764706,
+          "mean_ratio": 2.3316831683168315,
+          "phi_distance": 1.1150351642780767
+        }
+      ]
+    }
+  }
+}

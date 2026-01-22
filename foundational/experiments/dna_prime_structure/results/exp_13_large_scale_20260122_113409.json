@@ -1,0 +1,196 @@
+{
+  "timestamp": "2026-01-22T11:34:09.526172",
+  "parameters": {
+    "max_proteins": 500,
+    "n_shuffles": 200,
+    "proteins_processed": 500,
+    "proteins_failed": 23
+  },
+  "aggregate": {
+    "n_contacts": 199802,
+    "mean_seq_distance": 55.23113382248426,
+    "fib_count": 27578,
+    "fib_enrichment": 7.208058199840064,
+    "prime_count": 58473,
+    "prime_enrichment": 1.5454800252249727,
+    "helix_count": 17978,
+    "helix_enrichment": 8.458033453118587,
+    "z_fib": 390.7075239989845,
+    "z_prime": 133.59018107584328,
+    "top_distances": [
+      [
+        5,
+        12037
+      ],
+      [
+        6,
+        7810
+      ],
+      [
+        7,
+        5805
+      ],
+      [
+        8,
+        5316
+      ],
+      [
+        9,
+        4469
+      ],
+      [
+        10,
+        4061
+      ],
+      [
+        11,
+        3980
+      ],
+      [
+        12,
+        3950
+      ],
+      [
+        13,
+        3560
+      ],
+      [
+        14,
+        3176
+      ],
+      [
+        15,
+        3022
+      ],
+      [
+        16,
+        3005
+      ],
+      [
+        25,
+        2964
+      ],
+      [
+        27,
+        2963
+      ],
+      [
+        26,
+        2944
+      ],
+      [
+        28,
+        2840
+      ],
+      [
+        24,
+        2787
+      ],
+      [
+        29,
+        2748
+      ],
+      [
+        30,
+        2718
+      ],
+      [
+        17,
+        2656
+      ],
+      [
+        23,
+        2591
+      ],
+      [
+        31,
+        2570
+      ],
+      [
+        22,
+        2544
+      ],
+      [
+        21,
+        2525
+      ],
+      [
+        19,
+        2513
+      ],
+      [
+        32,
+        2487
+      ],
+      [
+        18,
+        2473
+      ],
+      [
+        20,
+        2420
+      ],
+      [
+        33,
+        2336
+      ],
+      [
+        34,
+        2311
+      ]
+    ],
+    "ss_breakdown": {
+      "HH": 25823,
+      "HE": 0,
+      "HC": 0,
+      "EE": 42195,
+      "EC": 0,
+      "CC": 44346
+    }
+  },
+  "by_class": {
+    "all-alpha": {
+      "n_structures": 159,
+      "n_contacts": 41785,
+      "fib_enrichment": 9.58835307726058,
+      "prime_enrichment": 1.6498786592145722,
+      "helix_enrichment": 9.227866459255713,
+      "z_fib": 249.1303331857904,
+      "z_prime": 65.14348656509235
+    },
+    "all-beta": {
+      "n_structures": 36,
+      "n_contacts": 20511,
+      "fib_enrichment": 5.042985064924512,
+      "prime_enrichment": 1.4230217931841451,
+      "helix_enrichment": 7.955536053824777,
+      "z_fib": 89.18133702079881,
+      "z_prime": 26.101884128979137
+    },
+    "alpha-beta": {
+      "n_structures": 196,
+      "n_contacts": 97123,
+      "fib_enrichment": 6.384550175207383,
+      "prime_enrichment": 1.5152753713089633,
+      "helix_enrichment": 7.733080732679181,
+      "z_fib": 243.22719363766376,
+      "z_prime": 77.16994530376445
+    },
+    "other": {
+      "n_structures": 109,
+      "n_contacts": 40383,
+      "fib_enrichment": 6.237195519566814,
+      "prime_enrichment": 1.528124617048174,
+      "helix_enrichment": 7.578040264467721,
+      "z_fib": 162.66246564933667,
+      "z_prime": 52.25996908987329
+    }
+  },
+  "verdict": {
+    "fib_significant": true,
+    "prime_significant": true,
+    "helix_explains_fib": true,
+    "z_fib": 390.7075239989845,
+    "z_prime": 133.59018107584328
+  }
+}

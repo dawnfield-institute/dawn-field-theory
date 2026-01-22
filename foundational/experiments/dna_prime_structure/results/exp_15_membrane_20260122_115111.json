@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-01-22T11:51:04.804868",
+  "protein_type": "membrane",
+  "n_proteins": 150,
+  "n_contacts": 81807,
+  "analyses": {
+    "Fibonacci (all)": {
+      "name": "Fibonacci (all)",
+      "n_distances": 77988,
+      "observed": 10843,
+      "expected": 3183.183673469388,
+      "enrichment": 3.406338154587885,
+      "z_score": 134.45907715458725
+    },
+    "Far-Fibonacci": {
+      "name": "Far-Fibonacci",
+      "n_distances": 77988,
+      "observed": 2996,
+      "expected": 1591.591836734694,
+      "enrichment": 1.8823921628968558,
+      "z_score": 36.39519192481748
+    },
+    "Primes": {
+      "name": "Primes",
+      "n_distances": 77988,
+      "observed": 22544,
+      "expected": 17507.51020408163,
+      "enrichment": 1.2876759594716205,
+      "z_score": 44.85746540699558
+    }
+  },
+  "verdict": {
+    "fib_significant": true
+  }
+}

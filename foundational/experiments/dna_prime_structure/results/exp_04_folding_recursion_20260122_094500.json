@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-01-22T09:44:54.256038",
+  "hypothesis": "Protein folding is recursive (PAC), showing Fibonacci/\u03c6 in structure",
+  "tests": {
+    "element_lengths": {
+      "n_elements": 205,
+      "mean_length": 6.053658536585366,
+      "std_length": 4.3608064571330685,
+      "by_type": {
+        "HELIX": {
+          "count": 94,
+          "mean": 8.191489361702128,
+          "std": 5.421149669511858,
+          "mode": 3
+        },
+        "STRAND": {
+          "count": 82,
+          "mean": 4.512195121951219,
+          "std": 1.8691585588239927,
+          "mode": 3
+        },
+        "TURN": {
+          "count": 29,
+          "mean": 3.4827586206896552,
+          "std": 1.070632737673105,
+          "mode": 3
+        }
+      },
+      "fibonacci_analysis": {
+        "mean_distance_to_fibonacci": 0.5317073170731708,
+        "random_mean_distance": 1.4369756097560975,
+        "z_score": -12.423724104758785,
+        "closer_than_random": "True",
+        "exact_matches": 125,
+        "expected_matches": 68.33333333333333,
+        "enrichment": 1.829268292682927
+      },
+      "length_distribution": {
+        "min": 3,
+        "max": 24,
+        "median": 4.0,
+        "mode": 3
+      },
+      "top_lengths": [
+        [
+          3,
+          88
+        ],
+        [
+          5,
+          26
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          15,
+          4
+        ]
+      ]
+    },
+    "phi_ratios": {
+      "n_ratios": 197,
+      "mean_ratio": 2.2505547751740647,
+      "std_ratio": 1.4185239913529109,
+      "mean_distance_from_phi": 1.0107529751797752,
+      "random_mean_distance": 1.4752752729071312,
+      "z_score": -6.16224454453069,
+      "closer_to_phi_than_random": "True",
+      "ratios_within_10pct_of_phi": 35,
+      "fraction_near_phi": 0.17766497461928935
+    },
+    "gap_structure": {
+      "n_gaps": 132,
+      "mean_gap": 3.4166666666666665,
+      "std_gap": 2.8070303154613763,
+      "prime_fraction": 0.5075757575757576,
+      "expected_prime": 0.4444444444444444,
+      "prime_enrichment": 1.1420454545454546,
+      "fibonacci_matches": 103,
+      "expected_fibonacci": 48.63157894736842,
+      "fibonacci_enrichment": 2.1179653679653683
+    }
+  }
+}

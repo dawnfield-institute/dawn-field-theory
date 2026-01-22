@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-01-22T09:16:25.661732",
+  "n_proteins": 10,
+  "per_protein": {
+    "Hemoglobin_alpha_human": {
+      "length": 142,
+      "n_gaps": 123,
+      "prime_fraction": 0.45689655172413796,
+      "enrichment": 1.7684941105809335
+    },
+    "Hemoglobin_beta_human": {
+      "length": 147,
+      "n_gaps": 128,
+      "prime_fraction": 0.42735042735042733,
+      "enrichment": 1.6693933424593503
+    },
+    "Insulin_human": {
+      "length": 110,
+      "n_gaps": 90,
+      "prime_fraction": 0.4625,
+      "enrichment": 1.6502386155836046
+    },
+    "Myoglobin_human": {
+      "length": 154,
+      "n_gaps": 134,
+      "prime_fraction": 0.3671875,
+      "enrichment": 1.44740083764474
+    },
+    "Cytochrome_c_human": {
+      "length": 105,
+      "n_gaps": 85,
+      "prime_fraction": 0.5,
+      "enrichment": 1.7174365000451954
+    },
+    "Ubiquitin_human": {
+      "length": 685,
+      "n_gaps": 667,
+      "prime_fraction": 0.428125,
+      "enrichment": 1.5268536783799744
+    },
+    "Histone_H4_human": {
+      "length": 103,
+      "n_gaps": 85,
+      "prime_fraction": 0.45454545454545453,
+      "enrichment": 1.6327673073334579
+    },
+    "Actin_human": {
+      "length": 375,
+      "n_gaps": 355,
+      "prime_fraction": 0.39457831325301207,
+      "enrichment": 1.8449145142664003
+    },
+    "Tubulin_alpha_human": {
+      "length": 451,
+      "n_gaps": 431,
+      "prime_fraction": 0.3765586034912718,
+      "enrichment": 1.8443874435080005
+    },
+    "p53_human": {
+      "length": 393,
+      "n_gaps": 373,
+      "prime_fraction": 0.3799392097264438,
+      "enrichment": 1.5369671334948176
+    }
+  },
+  "aggregate": {
+    "total_gaps": 2471,
+    "prime_enrichment": {
+      "n_gaps": 2296,
+      "observed_prime_count": 941,
+      "observed_fraction": 0.4098432055749129,
+      "theoretical_density": 0.2037037037037037,
+      "shuffled_mean": 0.20395557491289198,
+      "shuffled_std": 0.008431413168060141,
+      "enrichment": 2.009472924434422,
+      "z_score": 24.419112971709644,
+      "p_value": 0.0,
+      "significant": "True",
+      "max_gap": 325,
+      "mean_gap": 18.105836236933797
+    },
+    "gap_distribution": {
+      "gap_2_count": 195,
+      "gap_2_fraction": 0.07891541885876163,
+      "gap_6_count": 124,
+      "gap_6_fraction": 0.05018211250505868,
+      "top_10_gaps": [
+        [
+          2,
+          195
+        ],
+        [
+          1,
+          175
+        ],
+        [
+          4,
+          126
+        ],
+        [
+          7,
+          125
+        ],
+        [
+          6,
+          124
+        ],
+        [
+          3,
+          121
+        ],
+        [
+          10,
+          104
+        ],
+        [
+          11,
+          91
+        ],
+        [
+          5,
+          90
+        ],
+        [
+          8,
+          86
+        ]
+      ],
+      "unique_gaps": 105
+    },
+    "mobius_pairs": {
+      "total_pairs": 2470,
+      "observed_matches": 1595,
+      "observed_rate": 0.645748987854251,
+      "shuffled_mean": 0.6937368421052632,
+      "shuffled_std": 0.0098456435982748,
+      "enrichment": 0.9308270062385835,
+      "z_score": -4.874019029027296,
+      "p_value": 0.9999994532477504,
+      "significant": "False"
+    }
+  }
+}

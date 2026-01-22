@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-01-22T14:46:34.855585",
+  "results": {
+    "active_sites": {
+      "enrichment": 1.8825648414985592,
+      "z_score": 5.03081583119119,
+      "fib_rate": 11.239193083573488,
+      "n_contacts": 347
+    },
+    "mixed": {
+      "enrichment": 2.9266363293407527,
+      "z_score": 49.33146269164123,
+      "fib_rate": 14.363859285107988,
+      "n_contacts": 10603
+    },
+    "structural": {
+      "enrichment": 3.455969034321364,
+      "z_score": 244.81108428278546,
+      "fib_rate": 15.532445098073545,
+      "n_contacts": 171351
+    }
+  }
+}

@@ -1,0 +1,8279 @@
+{
+  "timestamp": "2026-01-22T09:14:42.200394",
+  "n_proteins": 10,
+  "proteins": {
+    "Hemoglobin_alpha_human": {
+      "length": 142,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 2,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.26425736993644544,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              32,
+              1
+            ],
+            [
+              44,
+              1
+            ]
+          ],
+          "mean_gap": 38.0,
+          "std_gap": 6.0
+        },
+        "V": {
+          "n_gaps": 12,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.5833333333333334,
+          "expected_prime_density": 0.2749075777424936,
+          "enrichment": 2.1219252598403915,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              3
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              38,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              14,
+              1
+            ]
+          ],
+          "mean_gap": 11.166666666666666,
+          "std_gap": 9.379350842261006
+        },
+        "L": {
+          "n_gaps": 15,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.30341307554227914,
+          "enrichment": 1.3183347464017316,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 8.8,
+          "std_gap": 6.7448745973022595
+        },
+        "S": {
+          "n_gaps": 10,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.6,
+          "expected_prime_density": 0.28853900817779266,
+          "enrichment": 2.079441541679836,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.1,
+          "most_common_gaps": [
+            [
+              3,
+              2
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "mean_gap": 13.5,
+          "std_gap": 10.688779163215974
+        },
+        "P": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.28599966750267436,
+          "enrichment": 1.74825378073324,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              33,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "mean_gap": 19.166666666666668,
+          "std_gap": 11.05164643340027
+        },
+        "A": {
+          "n_gaps": 18,
+          "n_prime_gaps": 10,
+          "observed_prime_density": 0.5555555555555556,
+          "expected_prime_density": 0.31066746727980593,
+          "enrichment": 1.7882643471490003,
+          "gap_6_count": 2,
+          "gap_2_count": 4,
+          "gap_6_fraction": 0.1111111111111111,
+          "gap_2_fraction": 0.2222222222222222,
+          "most_common_gaps": [
+            [
+              2,
+              4
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              22,
+              1
+            ]
+          ],
+          "mean_gap": 6.833333333333333,
+          "std_gap": 6.317963807008289
+        },
+        "D": {
+          "n_gaps": 6,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.269282508064391,
+          "enrichment": 1.2378573555681025,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              2
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              32,
+              1
+            ]
+          ],
+          "mean_gap": 19.833333333333332,
+          "std_gap": 12.347964294660972
+        },
+        "K": {
+          "n_gaps": 9,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.2222222222222222,
+          "expected_prime_density": 0.2969742043733701,
+          "enrichment": 0.7482879622192165,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "mean_gap": 14.555555555555555,
+          "std_gap": 9.616087343741691
+        },
+        "T": {
+          "n_gaps": 7,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.42857142857142855,
+          "expected_prime_density": 0.269282508064391,
+          "enrichment": 1.5915308857304176,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.14285714285714285,
+          "most_common_gaps": [
+            [
+              30,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "mean_gap": 18.285714285714285,
+          "std_gap": 13.551112613406492
+        },
+        "N": {
+          "n_gaps": 3,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.6666666666666666,
+          "expected_prime_density": 0.2452460618098304,
+          "enrichment": 2.718358295937146,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              59,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "mean_gap": 29.333333333333332,
+          "std_gap": 21.296843793284385
+        },
+        "G": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.30692767643013485,
+          "enrichment": 1.629048269010741,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.16666666666666666,
+          "gap_2_fraction": 0.16666666666666666,
+          "most_common_gaps": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mean_gap": 7.333333333333333,
+          "std_gap": 8.439325934114777
+        },
+        "H": {
+          "n_gaps": 9,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.2222222222222222,
+          "expected_prime_density": 0.31066746727980593,
+          "enrichment": 0.7153057388596,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.1111111111111111,
+          "most_common_gaps": [
+            [
+              14,
+              2
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ],
+          "mean_gap": 11.333333333333334,
+          "std_gap": 6.324555320336759
+        },
+        "E": {
+          "n_gaps": 3,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.22449978268220952,
+          "enrichment": 1.4847824320845024,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              86,
+              1
+            ]
+          ],
+          "mean_gap": 31.0,
+          "std_gap": 38.89301565405628
+        },
+        "Y": {
+          "n_gaps": 2,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2181040551873126,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              18,
+              1
+            ],
+            [
+              98,
+              1
+            ]
+          ],
+          "mean_gap": 58.0,
+          "std_gap": 40.0
+        },
+        "R": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.24325728130826463,
+          "enrichment": 2.0554369320866557,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              61,
+              1
+            ],
+            [
+              49,
+              1
+            ]
+          ],
+          "mean_gap": 55.0,
+          "std_gap": 6.0
+        },
+        "F": {
+          "n_gaps": 6,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.8333333333333334,
+          "expected_prime_density": 0.2530848692773169,
+          "enrichment": 3.2927030988178565,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              52,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "mean_gap": 15.833333333333334,
+          "std_gap": 17.072557577065666
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 122,
+        "mobius_matches": 36,
+        "observed_rate": 0.29508196721311475,
+        "expected_rate": 0.0006925207756232687,
+        "enrichment": 426.0983606557377,
+        "top_pairs": [
+          [
+            [
+              8,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              14,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              4
+            ],
+            2
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              3,
+              4
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              6,
+              2
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              25
+            ],
+            2
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              3,
+              7
+            ],
+            2
+          ]
+        ]
+      }
+    },
+    "Hemoglobin_beta_human": {
+      "length": 147,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.24954251462921184,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              55,
+              1
+            ]
+          ],
+          "mean_gap": 55.0,
+          "std_gap": 0.0
+        },
+        "V": {
+          "n_gaps": 15,
+          "n_prime_gaps": 11,
+          "observed_prime_density": 0.7333333333333333,
+          "expected_prime_density": 0.29120667621996243,
+          "enrichment": 2.5182572832891075,
+          "gap_6_count": 1,
+          "gap_2_count": 3,
+          "gap_6_fraction": 0.06666666666666667,
+          "gap_2_fraction": 0.2,
+          "most_common_gaps": [
+            [
+              7,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 8.933333333333334,
+          "std_gap": 7.602338821412497
+        },
+        "H": {
+          "n_gaps": 7,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.5714285714285714,
+          "expected_prime_density": 0.24325728130826463,
+          "enrichment": 2.3490707795276062,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              61,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "mean_gap": 20.428571428571427,
+          "std_gap": 18.093859596615665
+        },
+        "L": {
+          "n_gaps": 15,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.5333333333333333,
+          "expected_prime_density": 0.30341307554227914,
+          "enrichment": 1.7577796618689754,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              27,
+              1
+            ]
+          ],
+          "mean_gap": 9.066666666666666,
+          "std_gap": 7.02819717676984
+        },
+        "T": {
+          "n_gaps": 6,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.16666666666666666,
+          "expected_prime_density": 0.2790553132756236,
+          "enrichment": 0.5972531564093517,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              8,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              36,
+              1
+            ]
+          ],
+          "mean_gap": 19.833333333333332,
+          "std_gap": 12.811670027318408
+        },
+        "P": {
+          "n_gaps": 5,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.267546386419054,
+          "enrichment": 1.4950678473133474,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              31,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              24,
+              1
+            ]
+          ],
+          "mean_gap": 23.8,
+          "std_gap": 12.188519188154071
+        },
+        "E": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.25973030217227155,
+          "enrichment": 1.925073800855029,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              15,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              20,
+              1
+            ]
+          ],
+          "mean_gap": 19.0,
+          "std_gap": 13.503086067019396
+        },
+        "K": {
+          "n_gaps": 9,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.2222222222222222,
+          "expected_prime_density": 0.267546386419054,
+          "enrichment": 0.8305932485074151,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.1111111111111111,
+          "most_common_gaps": [
+            [
+              12,
+              2
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              25,
+              1
+            ]
+          ],
+          "mean_gap": 15.0,
+          "std_gap": 11.440668201153676
+        },
+        "S": {
+          "n_gaps": 4,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.75,
+          "expected_prime_density": 0.28126641406272834,
+          "enrichment": 2.6665110461170602,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              35,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "mean_gap": 20.0,
+          "std_gap": 10.816653826391969
+        },
+        "A": {
+          "n_gaps": 13,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.46153846153846156,
+          "expected_prime_density": 0.2969742043733701,
+          "enrichment": 1.5541365369168343,
+          "gap_6_count": 2,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.15384615384615385,
+          "gap_2_fraction": 0.15384615384615385,
+          "most_common_gaps": [
+            [
+              3,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 10.076923076923077,
+          "std_gap": 8.343228838742307
+        },
+        "W": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.32351545314867247,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              22,
+              1
+            ]
+          ],
+          "mean_gap": 22.0,
+          "std_gap": 0.0
+        },
+        "G": {
+          "n_gaps": 11,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.36363636363636365,
+          "expected_prime_density": 0.31465798044412485,
+          "enrichment": 1.155655938308344,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              8,
+              2
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "mean_gap": 10.818181818181818,
+          "std_gap": 5.920967086521375
+        },
+        "N": {
+          "n_gaps": 5,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.2749075777424936,
+          "enrichment": 1.4550344638905544,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.2,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              38,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              31,
+              1
+            ]
+          ],
+          "mean_gap": 24.0,
+          "std_gap": 10.714476188783099
+        },
+        "D": {
+          "n_gaps": 6,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.30692767643013485,
+          "enrichment": 1.086032179340494,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.16666666666666666,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              5,
+              2
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "mean_gap": 13.0,
+          "std_gap": 8.306623862918075
+        },
+        "R": {
+          "n_gaps": 2,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.24044917348149392,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              1
+            ],
+            [
+              64,
+              1
+            ]
+          ],
+          "mean_gap": 37.0,
+          "std_gap": 27.0
+        },
+        "Y": {
+          "n_gaps": 2,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.21959311237518594,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              95,
+              1
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "mean_gap": 55.0,
+          "std_gap": 40.0
+        },
+        "Q": {
+          "n_gaps": 2,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.22334705684109696,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              88,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "mean_gap": 46.0,
+          "std_gap": 42.0
+        },
+        "F": {
+          "n_gaps": 6,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.16666666666666666,
+          "expected_prime_density": 0.30692767643013485,
+          "enrichment": 0.543016089670247,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "mean_gap": 13.333333333333334,
+          "std_gap": 7.951240294584376
+        },
+        "C": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.3396232718951086,
+          "enrichment": 2.9444389791664403,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              19,
+              1
+            ]
+          ],
+          "mean_gap": 19.0,
+          "std_gap": 0.0
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 127,
+        "mobius_matches": 16,
+        "observed_rate": 0.12598425196850394,
+        "expected_rate": 0.000625,
+        "enrichment": 201.57480314960628,
+        "top_pairs": [
+          [
+            [
+              2,
+              2
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              15,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              16
+            ],
+            2
+          ],
+          [
+            [
+              7,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              5,
+              9
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              4
+            ],
+            2
+          ],
+          [
+            [
+              15,
+              4
+            ],
+            2
+          ],
+          [
+            [
+              4,
+              17
+            ],
+            2
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            2
+          ]
+        ]
+      }
+    },
+    "Insulin_human": {
+      "length": 110,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.7213475204444817,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              4,
+              1
+            ]
+          ],
+          "mean_gap": 4.0,
+          "std_gap": 0.0
+        },
+        "A": {
+          "n_gaps": 7,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.42857142857142855,
+          "expected_prime_density": 0.33380820069533407,
+          "enrichment": 1.2838852600945674,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              7,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 11.0,
+          "std_gap": 5.503245795502349
+        },
+        "L": {
+          "n_gaps": 16,
+          "n_prime_gaps": 9,
+          "observed_prime_density": 0.5625,
+          "expected_prime_density": 0.33380820069533407,
+          "enrichment": 1.6850994038741198,
+          "gap_6_count": 0,
+          "gap_2_count": 5,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.3125,
+          "most_common_gaps": [
+            [
+              2,
+              5
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 6.1875,
+          "std_gap": 5.479721137977735
+        },
+        "W": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.3898712452512801,
+          "enrichment": 2.5649493574615367,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 13.0,
+          "std_gap": 0.0
+        },
+        "R": {
+          "n_gaps": 3,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2710850306818168,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              40,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              33,
+              1
+            ]
+          ],
+          "mean_gap": 27.333333333333332,
+          "std_gap": 13.27487183449325
+        },
+        "P": {
+          "n_gaps": 5,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.6,
+          "expected_prime_density": 0.29120667621996243,
+          "enrichment": 2.060392322691088,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.2,
+          "most_common_gaps": [
+            [
+              10,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 14.0,
+          "std_gap": 10.334408546211051
+        },
+        "G": {
+          "n_gaps": 9,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.5555555555555556,
+          "expected_prime_density": 0.35295612386476116,
+          "enrichment": 1.5740074133645645,
+          "gap_6_count": 1,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.1111111111111111,
+          "gap_2_fraction": 0.2222222222222222,
+          "most_common_gaps": [
+            [
+              2,
+              2
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "mean_gap": 7.777777777777778,
+          "std_gap": 5.202088849208722
+        },
+        "D": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2710850306818168,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              40,
+              1
+            ]
+          ],
+          "mean_gap": 40.0,
+          "std_gap": 0.0
+        },
+        "F": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.318928988903801,
+          "enrichment": 3.1354942159291497,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              23,
+              1
+            ]
+          ],
+          "mean_gap": 23.0,
+          "std_gap": 0.0
+        },
+        "V": {
+          "n_gaps": 5,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.2,
+          "expected_prime_density": 0.30692767643013485,
+          "enrichment": 0.6516193076042964,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.2,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              26,
+              1
+            ]
+          ],
+          "mean_gap": 13.2,
+          "std_gap": 8.840814442120138
+        },
+        "N": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2282049114186687,
+          "enrichment": 2.1910133173369406,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              80,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "mean_gap": 41.5,
+          "std_gap": 38.5
+        },
+        "Q": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2835784920513334,
+          "enrichment": 1.7631802623080808,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              34,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ],
+          "mean_gap": 12.666666666666666,
+          "std_gap": 10.011104945120804
+        },
+        "H": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.6213349345596119,
+          "enrichment": 1.6094379124341003,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              5,
+              1
+            ]
+          ],
+          "mean_gap": 5.0,
+          "std_gap": 0.0
+        },
+        "C": {
+          "n_gaps": 4,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2530848692773169,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              12,
+              1
+            ],
+            [
+              52,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              9,
+              1
+            ]
+          ],
+          "mean_gap": 19.25,
+          "std_gap": 19.122957407263137
+        },
+        "S": {
+          "n_gaps": 4,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.75,
+          "expected_prime_density": 0.265872585674852,
+          "enrichment": 2.820900086770172,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              43,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "mean_gap": 17.0,
+          "std_gap": 15.427248620541512
+        },
+        "E": {
+          "n_gaps": 7,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.2857142857142857,
+          "expected_prime_density": 0.36067376022224085,
+          "enrichment": 0.7921682063542231,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.14285714285714285,
+          "most_common_gaps": [
+            [
+              8,
+              2
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 9.857142857142858,
+          "std_gap": 4.15515416349971
+        },
+        "Y": {
+          "n_gaps": 3,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.6666666666666666,
+          "expected_prime_density": 0.2518706487516997,
+          "enrichment": 2.646861275701414,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              1
+            ],
+            [
+              53,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "mean_gap": 22.666666666666668,
+          "std_gap": 21.545816814923082
+        },
+        "T": {
+          "n_gaps": 2,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.265872585674852,
+          "enrichment": 3.761200115693563,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              1
+            ],
+            [
+              43,
+              1
+            ]
+          ],
+          "mean_gap": 23.0,
+          "std_gap": 20.0
+        },
+        "K": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.28126641406272834,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              35,
+              1
+            ]
+          ],
+          "mean_gap": 35.0,
+          "std_gap": 0.0
+        },
+        "I": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.48089834696298783,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              8,
+              1
+            ]
+          ],
+          "mean_gap": 8.0,
+          "std_gap": 0.0
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 89,
+        "mobius_matches": 20,
+        "observed_rate": 0.2247191011235955,
+        "expected_rate": 0.0012755102040816326,
+        "enrichment": 176.1797752808989,
+        "top_pairs": [
+          [
+            [
+              1,
+              2
+            ],
+            4
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              20,
+              7
+            ],
+            2
+          ],
+          [
+            [
+              3,
+              13
+            ],
+            2
+          ],
+          [
+            [
+              4,
+              10
+            ],
+            1
+          ],
+          [
+            [
+              10,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              3,
+              7
+            ],
+            1
+          ],
+          [
+            [
+              7,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              14
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "Myoglobin_human": {
+      "length": 154,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 3,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.23090777506376875,
+          "enrichment": 1.4435777800954437,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              55,
+              1
+            ],
+            [
+              76,
+              1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "mean_gap": 47.333333333333336,
+          "std_gap": 27.0842307543625
+        },
+        "G": {
+          "n_gaps": 13,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.38461538461538464,
+          "expected_prime_density": 0.269282508064391,
+          "enrichment": 1.4282969487324262,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.07692307692307693,
+          "gap_2_fraction": 0.07692307692307693,
+          "most_common_gaps": [
+            [
+              10,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              21,
+              1
+            ]
+          ],
+          "mean_gap": 11.615384615384615,
+          "std_gap": 11.418867393239083
+        },
+        "L": {
+          "n_gaps": 16,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.4375,
+          "expected_prime_density": 0.33380820069533407,
+          "enrichment": 1.310632869679871,
+          "gap_6_count": 0,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.125,
+          "most_common_gaps": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "mean_gap": 9.1875,
+          "std_gap": 5.456862079070718
+        },
+        "S": {
+          "n_gaps": 6,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.16666666666666666,
+          "expected_prime_density": 0.25831776680732876,
+          "enrichment": 0.6452001684846485,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              48,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              27,
+              1
+            ]
+          ],
+          "mean_gap": 23.5,
+          "std_gap": 14.5
+        },
+        "D": {
+          "n_gaps": 7,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.14285714285714285,
+          "expected_prime_density": 0.2422988705246811,
+          "enrichment": 0.589590626435013,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              16,
+              1
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              62,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "mean_gap": 19.571428571428573,
+          "std_gap": 18.383666219594758
+        },
+        "E": {
+          "n_gaps": 13,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.46153846153846156,
+          "expected_prime_density": 0.30341307554227914,
+          "enrichment": 1.5211554766173827,
+          "gap_6_count": 0,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.15384615384615385,
+          "most_common_gaps": [
+            [
+              12,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              27,
+              1
+            ]
+          ],
+          "mean_gap": 10.923076923076923,
+          "std_gap": 7.956241270092868
+        },
+        "W": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.5138983423697507,
+          "enrichment": 1.9459101490553132,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 7.0,
+          "std_gap": 0.0
+        },
+        "Q": {
+          "n_gaps": 6,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.16666666666666666,
+          "expected_prime_density": 0.23955611574701857,
+          "enrichment": 0.6957312116492728,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              18,
+              1
+            ],
+            [
+              65,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              24,
+              1
+            ]
+          ],
+          "mean_gap": 24.0,
+          "std_gap": 19.60442127004348
+        },
+        "V": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2710850306818168,
+          "enrichment": 1.8444397270569683,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 17.333333333333332,
+          "std_gap": 14.149990184527418
+        },
+        "N": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2088776448560291,
+          "enrichment": 2.393745871391023,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              120,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 66.5,
+          "std_gap": 53.5
+        },
+        "K": {
+          "n_gaps": 16,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.375,
+          "expected_prime_density": 0.3459762562611936,
+          "enrichment": 1.0838894092110616,
+          "gap_6_count": 2,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.125,
+          "gap_2_fraction": 0.125,
+          "most_common_gaps": [
+            [
+              8,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 8.0,
+          "std_gap": 4.987484335815001
+        },
+        "A": {
+          "n_gaps": 11,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.45454545454545453,
+          "expected_prime_density": 0.2749075777424936,
+          "enrichment": 1.6534482544210842,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.09090909090909091,
+          "gap_2_fraction": 0.09090909090909091,
+          "most_common_gaps": [
+            [
+              9,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              38,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "mean_gap": 11.272727272727273,
+          "std_gap": 11.458152390256776
+        },
+        "I": {
+          "n_gaps": 6,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.26269731101386307,
+          "enrichment": 1.2688874965901065,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              9,
+              1
+            ],
+            [
+              45,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "mean_gap": 15.0,
+          "std_gap": 13.69914839202301
+        },
+        "P": {
+          "n_gaps": 4,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.25433477814404226,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              15,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              20,
+              1
+            ]
+          ],
+          "mean_gap": 24.5,
+          "std_gap": 15.56438241627338
+        },
+        "H": {
+          "n_gaps": 7,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.2857142857142857,
+          "expected_prime_density": 0.32351545314867247,
+          "enrichment": 0.8831549866738047,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              12,
+              2
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              22,
+              1
+            ]
+          ],
+          "mean_gap": 13.428571428571429,
+          "std_gap": 5.233331166861201
+        },
+        "R": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.21357795232369067,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              108,
+              1
+            ]
+          ],
+          "mean_gap": 108.0,
+          "std_gap": 0.0
+        },
+        "F": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2442393366759723,
+          "enrichment": 2.04717228111105,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 19.666666666666668,
+          "std_gap": 18.580156679162375
+        },
+        "T": {
+          "n_gaps": 3,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.3001016285004131,
+          "enrichment": 1.1107348367250678,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              28,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              25,
+              1
+            ]
+          ],
+          "mean_gap": 18.666666666666668,
+          "std_gap": 11.145502331533658
+        },
+        "Y": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.265872585674852,
+          "enrichment": 3.761200115693563,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              43,
+              1
+            ]
+          ],
+          "mean_gap": 43.0,
+          "std_gap": 0.0
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 133,
+        "mobius_matches": 24,
+        "observed_rate": 0.18045112781954886,
+        "expected_rate": 0.0005408328826392645,
+        "enrichment": 333.65413533834584,
+        "top_pairs": [
+          [
+            [
+              3,
+              4
+            ],
+            3
+          ],
+          [
+            [
+              11,
+              4
+            ],
+            2
+          ],
+          [
+            [
+              8,
+              9
+            ],
+            2
+          ],
+          [
+            [
+              8,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              55,
+              76
+            ],
+            1
+          ],
+          [
+            [
+              76,
+              11
+            ],
+            1
+          ],
+          [
+            [
+              4,
+              10
+            ],
+            1
+          ],
+          [
+            [
+              10,
+              8
+            ],
+            1
+          ],
+          [
+            [
+              8,
+              2
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "Cytochrome_c_human": {
+      "length": 105,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 3,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.2518706487516997,
+          "enrichment": 1.323430637850707,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              12,
+              1
+            ],
+            [
+              53,
+              1
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "mean_gap": 26.666666666666668,
+          "std_gap": 18.660713336371206
+        },
+        "G": {
+          "n_gaps": 11,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.7272727272727273,
+          "expected_prime_density": 0.35295612386476116,
+          "enrichment": 2.060518795677248,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              5,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 7.454545454545454,
+          "std_gap": 4.942646261479341
+        },
+        "D": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2442393366759723,
+          "enrichment": 2.04717228111105,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              60,
+              1
+            ],
+            [
+              31,
+              1
+            ]
+          ],
+          "mean_gap": 45.5,
+          "std_gap": 14.5
+        },
+        "V": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.24136313830927508,
+          "enrichment": 2.0715673631957663,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              17,
+              1
+            ],
+            [
+              63,
+              1
+            ]
+          ],
+          "mean_gap": 40.0,
+          "std_gap": 23.0
+        },
+        "E": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2710850306818168,
+          "enrichment": 1.8444397270569683,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              17,
+              1
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              14,
+              1
+            ]
+          ],
+          "mean_gap": 16.5,
+          "std_gap": 12.148388096094616
+        },
+        "K": {
+          "n_gaps": 12,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.6666666666666666,
+          "expected_prime_density": 0.35295612386476116,
+          "enrichment": 1.8888088960374774,
+          "gap_6_count": 1,
+          "gap_2_count": 3,
+          "gap_6_fraction": 0.08333333333333333,
+          "gap_2_fraction": 0.25,
+          "most_common_gaps": [
+            [
+              2,
+              3
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "mean_gap": 7.5,
+          "std_gap": 4.890466917040404
+        },
+        "I": {
+          "n_gaps": 6,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.2611892565642242,
+          "enrichment": 1.2762137988296984,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.16666666666666666,
+          "gap_2_fraction": 0.16666666666666666,
+          "most_common_gaps": [
+            [
+              2,
+              1
+            ],
+            [
+              46,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ],
+          "mean_gap": 14.166666666666666,
+          "std_gap": 15.037915044609372
+        },
+        "F": {
+          "n_gaps": 2,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2611892565642242,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              26,
+              1
+            ],
+            [
+              46,
+              1
+            ]
+          ],
+          "mean_gap": 36.0,
+          "std_gap": 10.0
+        },
+        "C": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.9102392266268373,
+          "enrichment": 1.0986122886681098,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              1
+            ]
+          ],
+          "mean_gap": 3.0,
+          "std_gap": 0.0
+        },
+        "S": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.28853900817779266,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              32,
+              1
+            ]
+          ],
+          "mean_gap": 32.0,
+          "std_gap": 0.0
+        },
+        "Q": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.30692767643013485,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              26,
+              1
+            ]
+          ],
+          "mean_gap": 26.0,
+          "std_gap": 0.0
+        },
+        "H": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.48089834696298783,
+          "enrichment": 1.0397207708399179,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              8,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 7.5,
+          "std_gap": 0.5
+        },
+        "T": {
+          "n_gaps": 6,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.31465798044412485,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              9,
+              2
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              24,
+              1
+            ]
+          ],
+          "mean_gap": 13.833333333333334,
+          "std_gap": 5.07991688470939
+        },
+        "P": {
+          "n_gaps": 3,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.30341307554227914,
+          "enrichment": 1.0986122886681096,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              14,
+              1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "mean_gap": 15.333333333333334,
+          "std_gap": 9.030811456096044
+        },
+        "N": {
+          "n_gaps": 4,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.25,
+          "expected_prime_density": 0.28599966750267436,
+          "enrichment": 0.87412689036662,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.25,
+          "most_common_gaps": [
+            [
+              21,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              33,
+              1
+            ]
+          ],
+          "mean_gap": 18.0,
+          "std_gap": 11.113055385446435
+        },
+        "L": {
+          "n_gaps": 5,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.2969742043733701,
+          "enrichment": 1.3469183319945897,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              4,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              26,
+              1
+            ]
+          ],
+          "mean_gap": 13.2,
+          "std_gap": 11.72006825918689
+        },
+        "R": {
+          "n_gaps": 1,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.2518706487516997,
+          "enrichment": 3.9702919135521215,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              53,
+              1
+            ]
+          ],
+          "mean_gap": 53.0,
+          "std_gap": 0.0
+        },
+        "A": {
+          "n_gaps": 4,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.75,
+          "expected_prime_density": 0.269282508064391,
+          "enrichment": 2.7851790500282307,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              7,
+              1
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "mean_gap": 14.25,
+          "std_gap": 15.481844205391036
+        },
+        "Y": {
+          "n_gaps": 4,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 1.0,
+          "expected_prime_density": 0.318928988903801,
+          "enrichment": 3.1354942159291497,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.25,
+          "most_common_gaps": [
+            [
+              2,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              23,
+              1
+            ]
+          ],
+          "mean_gap": 12.75,
+          "std_gap": 8.554969316134336
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 84,
+        "mobius_matches": 14,
+        "observed_rate": 0.16666666666666666,
+        "expected_rate": 0.0009182736455463728,
+        "enrichment": 181.5,
+        "top_pairs": [
+          [
+            [
+              17,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              5,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              14,
+              2
+            ],
+            2
+          ],
+          [
+            [
+              7,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              12,
+              53
+            ],
+            1
+          ],
+          [
+            [
+              53,
+              15
+            ],
+            1
+          ],
+          [
+            [
+              15,
+              5
+            ],
+            1
+          ],
+          [
+            [
+              5,
+              17
+            ],
+            1
+          ],
+          [
+            [
+              5,
+              5
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "Ubiquitin_human": {
+      "length": 685,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 8,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.23090777506376875,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              76,
+              8
+            ]
+          ],
+          "mean_gap": 76.0,
+          "std_gap": 0.0
+        },
+        "Q": {
+          "n_gaps": 44,
+          "n_prime_gaps": 18,
+          "observed_prime_density": 0.4090909090909091,
+          "expected_prime_density": 0.2969742043733701,
+          "enrichment": 1.3775301122671941,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              29,
+              9
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              13,
+              9
+            ],
+            [
+              16,
+              8
+            ]
+          ],
+          "mean_gap": 14.977272727272727,
+          "std_gap": 7.647009624575289
+        },
+        "I": {
+          "n_gaps": 62,
+          "n_prime_gaps": 18,
+          "observed_prime_density": 0.2903225806451613,
+          "expected_prime_density": 0.3459762562611936,
+          "enrichment": 0.8391401877763058,
+          "gap_6_count": 9,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.14516129032258066,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              18
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              17,
+              9
+            ],
+            [
+              18,
+              8
+            ]
+          ],
+          "mean_gap": 10.741935483870968,
+          "std_gap": 4.362359097903734
+        },
+        "F": {
+          "n_gaps": 17,
+          "n_prime_gaps": 9,
+          "observed_prime_density": 0.5294117647058824,
+          "expected_prime_density": 0.269282508064391,
+          "enrichment": 1.9660087411963982,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              41,
+              9
+            ],
+            [
+              35,
+              8
+            ]
+          ],
+          "mean_gap": 38.1764705882353,
+          "std_gap": 2.994805190907731
+        },
+        "V": {
+          "n_gaps": 36,
+          "n_prime_gaps": 9,
+          "observed_prime_density": 0.25,
+          "expected_prime_density": 0.26425736993644544,
+          "enrichment": 0.9460474084795653,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              12,
+              9
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              44,
+              9
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 18.88888888888889,
+          "std_gap": 14.55025348724928
+        },
+        "K": {
+          "n_gaps": 62,
+          "n_prime_gaps": 26,
+          "observed_prime_density": 0.41935483870967744,
+          "expected_prime_density": 0.3396232718951086,
+          "enrichment": 1.2347647331988298,
+          "gap_6_count": 0,
+          "gap_2_count": 9,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.14516129032258066,
+          "most_common_gaps": [
+            [
+              15,
+              18
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              16,
+              9
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              19,
+              8
+            ]
+          ],
+          "mean_gap": 10.725806451612904,
+          "std_gap": 6.368190493074732
+        },
+        "T": {
+          "n_gaps": 62,
+          "n_prime_gaps": 44,
+          "observed_prime_density": 0.7096774193548387,
+          "expected_prime_density": 0.28599966750267436,
+          "enrichment": 2.4813924629762116,
+          "gap_6_count": 0,
+          "gap_2_count": 18,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.2903225806451613,
+          "most_common_gaps": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              33,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              17,
+              8
+            ]
+          ],
+          "mean_gap": 10.758064516129032,
+          "std_gap": 10.438275540236624
+        },
+        "L": {
+          "n_gaps": 80,
+          "n_prime_gaps": 62,
+          "observed_prime_density": 0.775,
+          "expected_prime_density": 0.3001016285004131,
+          "enrichment": 2.582458495385783,
+          "gap_6_count": 9,
+          "gap_2_count": 27,
+          "gap_6_fraction": 0.1125,
+          "gap_2_fraction": 0.3375,
+          "most_common_gaps": [
+            [
+              2,
+              27
+            ],
+            [
+              7,
+              18
+            ],
+            [
+              11,
+              17
+            ],
+            [
+              28,
+              9
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          "mean_gap": 8.4125,
+          "std_gap": 7.717988322743174
+        },
+        "G": {
+          "n_gaps": 44,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.31066746727980593,
+          "enrichment": 0.0,
+          "gap_6_count": 9,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.20454545454545456,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              25,
+              9
+            ],
+            [
+              12,
+              9
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              22,
+              9
+            ],
+            [
+              10,
+              8
+            ]
+          ],
+          "mean_gap": 15.113636363636363,
+          "std_gap": 7.308823773951435
+        },
+        "E": {
+          "n_gaps": 53,
+          "n_prime_gaps": 27,
+          "observed_prime_density": 0.5094339622641509,
+          "expected_prime_density": 0.3001016285004131,
+          "enrichment": 1.6975381466930282,
+          "gap_6_count": 9,
+          "gap_2_count": 9,
+          "gap_6_fraction": 0.16981132075471697,
+          "gap_2_fraction": 0.16981132075471697,
+          "most_common_gaps": [
+            [
+              2,
+              9
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              17,
+              9
+            ],
+            [
+              13,
+              9
+            ],
+            [
+              28,
+              8
+            ]
+          ],
+          "mean_gap": 12.377358490566039,
+          "std_gap": 8.166259195546209
+        },
+        "P": {
+          "n_gaps": 17,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2473379469500514,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              18,
+              9
+            ],
+            [
+              57,
+              8
+            ]
+          ],
+          "mean_gap": 36.35294117647059,
+          "std_gap": 19.46623374090025
+        },
+        "S": {
+          "n_gaps": 26,
+          "n_prime_gaps": 17,
+          "observed_prime_density": 0.6538461538461539,
+          "expected_prime_density": 0.2769378934088574,
+          "enrichment": 2.3609847890366082,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              37,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              31,
+              8
+            ]
+          ],
+          "mean_gap": 25.115384615384617,
+          "std_gap": 12.686537149753315
+        },
+        "D": {
+          "n_gaps": 44,
+          "n_prime_gaps": 27,
+          "observed_prime_density": 0.6136363636363636,
+          "expected_prime_density": 0.2729584204093974,
+          "enrichment": 2.2480946464886467,
+          "gap_6_count": 9,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.20454545454545456,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              11,
+              9
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              13,
+              9
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              39,
+              8
+            ]
+          ],
+          "mean_gap": 14.659090909090908,
+          "std_gap": 11.762697552815352
+        },
+        "N": {
+          "n_gaps": 17,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.47058823529411764,
+          "expected_prime_density": 0.269282508064391,
+          "enrichment": 1.7475633255079095,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              35,
+              9
+            ],
+            [
+              41,
+              8
+            ]
+          ],
+          "mean_gap": 37.8235294117647,
+          "std_gap": 2.994805190907731
+        },
+        "A": {
+          "n_gaps": 17,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.24627854581449443,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              18,
+              9
+            ],
+            [
+              58,
+              8
+            ]
+          ],
+          "mean_gap": 36.8235294117647,
+          "std_gap": 19.965367939384873
+        },
+        "R": {
+          "n_gaps": 35,
+          "n_prime_gaps": 9,
+          "observed_prime_density": 0.2571428571428571,
+          "expected_prime_density": 0.26425736993644544,
+          "enrichment": 0.9730773344361242,
+          "gap_6_count": 0,
+          "gap_2_count": 9,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.2571428571428571,
+          "most_common_gaps": [
+            [
+              12,
+              9
+            ],
+            [
+              18,
+              9
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              44,
+              8
+            ]
+          ],
+          "mean_gap": 18.285714285714285,
+          "std_gap": 15.14986360819591
+        },
+        "Y": {
+          "n_gaps": 8,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.23090777506376875,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              76,
+              8
+            ]
+          ],
+          "mean_gap": 76.0,
+          "std_gap": 0.0
+        },
+        "H": {
+          "n_gaps": 8,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.23090777506376875,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              76,
+              8
+            ]
+          ],
+          "mean_gap": 76.0,
+          "std_gap": 0.0
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 666,
+        "mobius_matches": 102,
+        "observed_rate": 0.15315315315315314,
+        "expected_rate": 0.0009765625,
+        "enrichment": 156.82882882882882,
+        "top_pairs": [
+          [
+            [
+              76,
+              76
+            ],
+            22
+          ],
+          [
+            [
+              7,
+              6
+            ],
+            18
+          ],
+          [
+            [
+              11,
+              7
+            ],
+            18
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            18
+          ],
+          [
+            [
+              41,
+              35
+            ],
+            16
+          ],
+          [
+            [
+              35,
+              41
+            ],
+            16
+          ],
+          [
+            [
+              29,
+              9
+            ],
+            9
+          ],
+          [
+            [
+              9,
+              1
+            ],
+            9
+          ],
+          [
+            [
+              1,
+              8
+            ],
+            9
+          ],
+          [
+            [
+              8,
+              13
+            ],
+            9
+          ]
+        ]
+      }
+    },
+    "Histone_H4_human": {
+      "length": 103,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.22569202144874392,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              84,
+              1
+            ]
+          ],
+          "mean_gap": 84.0,
+          "std_gap": 0.0
+        },
+        "S": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2611892565642242,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              46,
+              1
+            ]
+          ],
+          "mean_gap": 46.0,
+          "std_gap": 0.0
+        },
+        "G": {
+          "n_gaps": 12,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.6666666666666666,
+          "expected_prime_density": 0.2749075777424936,
+          "enrichment": 2.42505743981759,
+          "gap_6_count": 1,
+          "gap_2_count": 6,
+          "gap_6_fraction": 0.08333333333333333,
+          "gap_2_fraction": 0.5,
+          "most_common_gaps": [
+            [
+              2,
+              6
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              38,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "mean_gap": 8.0,
+          "std_gap": 9.958246164193104
+        },
+        "R": {
+          "n_gaps": 11,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.45454545454545453,
+          "expected_prime_density": 0.3789231816899512,
+          "enrichment": 1.199571513461481,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.09090909090909091,
+          "most_common_gaps": [
+            [
+              14,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "mean_gap": 8.181818181818182,
+          "std_gap": 4.549089455707929
+        },
+        "K": {
+          "n_gaps": 10,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.3459762562611936,
+          "enrichment": 1.1561487031584659,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.1,
+          "most_common_gaps": [
+            [
+              4,
+              3
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "mean_gap": 8.6,
+          "std_gap": 5.517245689653489
+        },
+        "L": {
+          "n_gaps": 7,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.14285714285714285,
+          "expected_prime_density": 0.3001016285004131,
+          "enrichment": 0.4760292157393148,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              12,
+              2
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 12.428571428571429,
+          "std_gap": 7.188426071662357
+        },
+        "A": {
+          "n_gaps": 6,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.6666666666666666,
+          "expected_prime_density": 0.29120667621996243,
+          "enrichment": 2.2893248029900977,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.16666666666666666,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              7,
+              2
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "mean_gap": 12.333333333333334,
+          "std_gap": 9.410396142328736
+        },
+        "H": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2473379469500514,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              57,
+              1
+            ]
+          ],
+          "mean_gap": 57.0,
+          "std_gap": 0.0
+        },
+        "V": {
+          "n_gaps": 7,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.7142857142857143,
+          "expected_prime_density": 0.32351545314867247,
+          "enrichment": 2.207887466684512,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              5,
+              3
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "mean_gap": 9.285714285714286,
+          "std_gap": 6.340668863192042
+        },
+        "D": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.26425736993644544,
+          "enrichment": 1.8920948169591305,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              44,
+              1
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "mean_gap": 30.5,
+          "std_gap": 13.5
+        },
+        "N": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2729584204093974,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              39,
+              1
+            ]
+          ],
+          "mean_gap": 39.0,
+          "std_gap": 0.0
+        },
+        "I": {
+          "n_gaps": 5,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.36067376022224085,
+          "enrichment": 1.1090354888959126,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 8.0,
+          "std_gap": 5.0990195135927845
+        },
+        "Q": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.23868315209103041,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              66,
+              1
+            ]
+          ],
+          "mean_gap": 66.0,
+          "std_gap": 0.0
+        },
+        "T": {
+          "n_gaps": 6,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.6666666666666666,
+          "expected_prime_density": 0.31465798044412485,
+          "enrichment": 2.118702553565297,
+          "gap_6_count": 0,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.3333333333333333,
+          "most_common_gaps": [
+            [
+              2,
+              2
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              14,
+              1
+            ]
+          ],
+          "mean_gap": 11.0,
+          "std_gap": 8.082903768654761
+        },
+        "Y": {
+          "n_gaps": 3,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.3284587387530511,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              21,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ],
+          "mean_gap": 15.666666666666666,
+          "std_gap": 4.4969125210773475
+        },
+        "E": {
+          "n_gaps": 2,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.4170323914242463,
+          "enrichment": 1.1989476363991853,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "mean_gap": 10.5,
+          "std_gap": 0.5
+        },
+        "F": {
+          "n_gaps": 1,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.2729584204093974,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              39,
+              1
+            ]
+          ],
+          "mean_gap": 39.0,
+          "std_gap": 0.0
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 84,
+        "mobius_matches": 18,
+        "observed_rate": 0.21428571428571427,
+        "expected_rate": 0.0011111111111111111,
+        "enrichment": 192.85714285714283,
+        "top_pairs": [
+          [
+            [
+              2,
+              2
+            ],
+            3
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              1,
+              14
+            ],
+            2
+          ],
+          [
+            [
+              14,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              4,
+              4
+            ],
+            2
+          ],
+          [
+            [
+              3,
+              5
+            ],
+            2
+          ],
+          [
+            [
+              84,
+              46
+            ],
+            1
+          ],
+          [
+            [
+              46,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            1
+          ],
+          [
+            [
+              14,
+              13
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    "Actin_human": {
+      "length": 375,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 16,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.25,
+          "expected_prime_density": 0.267546386419054,
+          "enrichment": 0.934417404570842,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              37,
+              3
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              35,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              14,
+              1
+            ]
+          ],
+          "mean_gap": 22.125,
+          "std_gap": 12.766533397911902
+        },
+        "D": {
+          "n_gaps": 18,
+          "n_prime_gaps": 10,
+          "observed_prime_density": 0.5555555555555556,
+          "expected_prime_density": 0.23307527170850925,
+          "enrichment": 2.383588578415773,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.05555555555555555,
+          "most_common_gaps": [
+            [
+              5,
+              2
+            ],
+            [
+              24,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              22,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              73,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              42,
+              1
+            ]
+          ],
+          "mean_gap": 19.833333333333332,
+          "std_gap": 18.70902931147893
+        },
+        "I": {
+          "n_gaps": 26,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.3076923076923077,
+          "expected_prime_density": 0.2769378934088574,
+          "enrichment": 1.1110516654289921,
+          "gap_6_count": 0,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.07692307692307693,
+          "most_common_gaps": [
+            [
+              4,
+              3
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              37,
+              1
+            ]
+          ],
+          "mean_gap": 13.961538461538462,
+          "std_gap": 9.740797508144524
+        },
+        "A": {
+          "n_gaps": 26,
+          "n_prime_gaps": 11,
+          "observed_prime_density": 0.4230769230769231,
+          "expected_prime_density": 0.2729584204093974,
+          "enrichment": 1.5499683887471583,
+          "gap_6_count": 2,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.07692307692307693,
+          "gap_2_fraction": 0.07692307692307693,
+          "most_common_gaps": [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              29,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "mean_gap": 13.038461538461538,
+          "std_gap": 10.657178040503135
+        },
+        "L": {
+          "n_gaps": 25,
+          "n_prime_gaps": 12,
+          "observed_prime_density": 0.48,
+          "expected_prime_density": 0.2473379469500514,
+          "enrichment": 1.9406646085605839,
+          "gap_6_count": 3,
+          "gap_2_count": 4,
+          "gap_6_fraction": 0.12,
+          "gap_2_fraction": 0.16,
+          "most_common_gaps": [
+            [
+              2,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              26,
+              2
+            ],
+            [
+              57,
+              1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              29,
+              1
+            ]
+          ],
+          "mean_gap": 13.6,
+          "std_gap": 13.218169313486644
+        },
+        "V": {
+          "n_gaps": 20,
+          "n_prime_gaps": 10,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2611892565642242,
+          "enrichment": 1.9143206982445478,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.05,
+          "most_common_gaps": [
+            [
+              20,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              31,
+              2
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "mean_gap": 18.0,
+          "std_gap": 13.435028842544403
+        },
+        "N": {
+          "n_gaps": 8,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.25,
+          "expected_prime_density": 0.2074567608530314,
+          "enrichment": 1.2050703914012593,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              66,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              124,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 35.5,
+          "std_gap": 37.8021163428716
+        },
+        "G": {
+          "n_gaps": 25,
+          "n_prime_gaps": 11,
+          "observed_prime_density": 0.44,
+          "expected_prime_density": 0.23382699798647663,
+          "enrichment": 1.8817330923670643,
+          "gap_6_count": 4,
+          "gap_2_count": 3,
+          "gap_6_fraction": 0.16,
+          "gap_2_fraction": 0.12,
+          "most_common_gaps": [
+            [
+              6,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              72,
+              1
+            ]
+          ],
+          "mean_gap": 14.04,
+          "std_gap": 16.11081624251236
+        },
+        "S": {
+          "n_gaps": 21,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.22755980665670933,
+          "enrichment": 1.464816384890813,
+          "gap_6_count": 2,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.09523809523809523,
+          "gap_2_fraction": 0.047619047619047616,
+          "most_common_gaps": [
+            [
+              19,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              81,
+              1
+            ],
+            [
+              44,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              23,
+              1
+            ]
+          ],
+          "mean_gap": 16.714285714285715,
+          "std_gap": 17.918181394600175
+        },
+        "C": {
+          "n_gaps": 5,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.18873916581775485,
+          "enrichment": 2.1193269466192146,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              200,
+              1
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              89,
+              1
+            ]
+          ],
+          "mean_gap": 71.4,
+          "std_gap": 69.89306117205054
+        },
+        "K": {
+          "n_gaps": 18,
+          "n_prime_gaps": 11,
+          "observed_prime_density": 0.6111111111111112,
+          "expected_prime_density": 0.23307527170850925,
+          "enrichment": 2.6219474362573503,
+          "gap_6_count": 0,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.1111111111111111,
+          "most_common_gaps": [
+            [
+              11,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              73,
+              1
+            ],
+            [
+              22,
+              1
+            ]
+          ],
+          "mean_gap": 19.72222222222222,
+          "std_gap": 17.184636405669508
+        },
+        "F": {
+          "n_gaps": 12,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.6666666666666666,
+          "expected_prime_density": 0.23307527170850925,
+          "enrichment": 2.860306294098927,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              73,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "mean_gap": 29.5,
+          "std_gap": 24.625528759128535
+        },
+        "P": {
+          "n_gaps": 17,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.29411764705882354,
+          "expected_prime_density": 0.23459420572161058,
+          "enrichment": 1.2537293756003869,
+          "gap_6_count": 2,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.11764705882352941,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              6,
+              2
+            ],
+            [
+              34,
+              2
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              18,
+              1
+            ]
+          ],
+          "mean_gap": 19.941176470588236,
+          "std_gap": 17.754769328550417
+        },
+        "R": {
+          "n_gaps": 17,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.4117647058823529,
+          "expected_prime_density": 0.26425736993644544,
+          "enrichment": 1.5581957316134016,
+          "gap_6_count": 1,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.058823529411764705,
+          "gap_2_fraction": 0.11764705882352941,
+          "most_common_gaps": [
+            [
+              2,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ],
+          "mean_gap": 20.235294117647058,
+          "std_gap": 12.932082366164373
+        },
+        "H": {
+          "n_gaps": 7,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.14285714285714285,
+          "expected_prime_density": 0.2162174871877535,
+          "enrichment": 0.6607104018977529,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              33,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              102,
+              1
+            ],
+            [
+              96,
+              1
+            ]
+          ],
+          "mean_gap": 47.142857142857146,
+          "std_gap": 36.372786418375135
+        },
+        "Q": {
+          "n_gaps": 10,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.1,
+          "expected_prime_density": 0.22334705684109696,
+          "enrichment": 0.44773368144782066,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.1,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              8,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              62,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              88,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "mean_gap": 31.8,
+          "std_gap": 26.045345073544333
+        },
+        "Y": {
+          "n_gaps": 14,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.2857142857142857,
+          "expected_prime_density": 0.2506903984389969,
+          "enrichment": 1.1397097275897925,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              22,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              54,
+              1
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "mean_gap": 22.071428571428573,
+          "std_gap": 12.85337246303356
+        },
+        "E": {
+          "n_gaps": 24,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.267546386419054,
+          "enrichment": 1.2458898727611227,
+          "gap_6_count": 3,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.125,
+          "gap_2_fraction": 0.08333333333333333,
+          "most_common_gaps": [
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "mean_gap": 12.75,
+          "std_gap": 10.674151020104597
+        },
+        "T": {
+          "n_gaps": 20,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.3001016285004131,
+          "enrichment": 1.3328818040700816,
+          "gap_6_count": 3,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.15,
+          "gap_2_fraction": 0.05,
+          "most_common_gaps": [
+            [
+              6,
+              3
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              8,
+              1
+            ]
+          ],
+          "mean_gap": 14.0,
+          "std_gap": 7.962411694957753
+        },
+        "W": {
+          "n_gaps": 3,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.1805923124338364,
+          "enrichment": 1.8457780890061788,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              7,
+              1
+            ],
+            [
+              254,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 92.33333333333333,
+          "std_gap": 114.37462811111368
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 354,
+        "mobius_matches": 82,
+        "observed_rate": 0.23163841807909605,
+        "expected_rate": 0.000244140625,
+        "enrichment": 948.7909604519774,
+        "top_pairs": [
+          [
+            [
+              1,
+              1
+            ],
+            4
+          ],
+          [
+            [
+              7,
+              4
+            ],
+            3
+          ],
+          [
+            [
+              8,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              10,
+              2
+            ],
+            3
+          ],
+          [
+            [
+              15,
+              6
+            ],
+            3
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              26
+            ],
+            2
+          ],
+          [
+            [
+              5,
+              3
+            ],
+            2
+          ],
+          [
+            [
+              24,
+              11
+            ],
+            2
+          ],
+          [
+            [
+              22,
+              42
+            ],
+            2
+          ]
+        ]
+      }
+    },
+    "Tubulin_alpha_human": {
+      "length": 451,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 9,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.1111111111111111,
+          "expected_prime_density": 0.20961352064055247,
+          "enrichment": 0.5300760693850739,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              35,
+              1
+            ],
+            [
+              118,
+              1
+            ],
+            [
+              49,
+              1
+            ],
+            [
+              99,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              64,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "mean_gap": 47.111111111111114,
+          "std_gap": 37.12275266507184
+        },
+        "R": {
+          "n_gaps": 19,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.21052631578947367,
+          "expected_prime_density": 0.2422988705246811,
+          "enrichment": 0.8688703968515982,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.05263157894736842,
+          "gap_2_fraction": 0.05263157894736842,
+          "most_common_gaps": [
+            [
+              21,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              62,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              58,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "mean_gap": 22.05263157894737,
+          "std_gap": 16.50350420273007
+        },
+        "E": {
+          "n_gaps": 31,
+          "n_prime_gaps": 19,
+          "observed_prime_density": 0.6129032258064516,
+          "expected_prime_density": 0.2227848098240302,
+          "enrichment": 2.7510997104809887,
+          "gap_6_count": 3,
+          "gap_2_count": 4,
+          "gap_6_fraction": 0.0967741935483871,
+          "gap_2_fraction": 0.12903225806451613,
+          "most_common_gaps": [
+            [
+              13,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              25,
+              2
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              28,
+              1
+            ]
+          ],
+          "mean_gap": 14.258064516129032,
+          "std_gap": 16.879014919153278
+        },
+        "C": {
+          "n_gaps": 10,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.21531348711084464,
+          "enrichment": 2.3221954495706862,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              10,
+              2
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              104,
+              1
+            ],
+            [
+              71,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              82,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              29,
+              1
+            ]
+          ],
+          "mean_gap": 37.1,
+          "std_gap": 33.569182295671126
+        },
+        "I": {
+          "n_gaps": 25,
+          "n_prime_gaps": 11,
+          "observed_prime_density": 0.44,
+          "expected_prime_density": 0.25694917118487537,
+          "enrichment": 1.7124009311686756,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.04,
+          "gap_2_fraction": 0.04,
+          "most_common_gaps": [
+            [
+              3,
+              3
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              18,
+              1
+            ]
+          ],
+          "mean_gap": 15.12,
+          "std_gap": 12.120462037397749
+        },
+        "S": {
+          "n_gaps": 19,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.2631578947368421,
+          "expected_prime_density": 0.2211514277946646,
+          "enrichment": 1.1899443623813264,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.05263157894736842,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              7,
+              3
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              86,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          "mean_gap": 22.736842105263158,
+          "std_gap": 25.65734142453324
+        },
+        "H": {
+          "n_gaps": 12,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.4166666666666667,
+          "expected_prime_density": 0.22569202144874392,
+          "enrichment": 1.8461736661847141,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              20,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              53,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              69,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              26,
+              1
+            ]
+          ],
+          "mean_gap": 33.166666666666664,
+          "std_gap": 22.707683476939888
+        },
+        "V": {
+          "n_gaps": 30,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.23333333333333334,
+          "expected_prime_density": 0.25831776680732876,
+          "enrichment": 0.9032802358785079,
+          "gap_6_count": 1,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.03333333333333333,
+          "gap_2_fraction": 0.06666666666666667,
+          "most_common_gaps": [
+            [
+              4,
+              6
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              22,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              48,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "mean_gap": 14.266666666666667,
+          "std_gap": 11.529479124786553
+        },
+        "G": {
+          "n_gaps": 31,
+          "n_prime_gaps": 13,
+          "observed_prime_density": 0.41935483870967744,
+          "expected_prime_density": 0.23537745555238682,
+          "enrichment": 1.7816270369884413,
+          "gap_6_count": 1,
+          "gap_2_count": 5,
+          "gap_6_fraction": 0.03225806451612903,
+          "gap_2_fraction": 0.16129032258064516,
+          "most_common_gaps": [
+            [
+              2,
+              5
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              20,
+              2
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              22,
+              1
+            ]
+          ],
+          "mean_gap": 13.96774193548387,
+          "std_gap": 16.637470091037784
+        },
+        "Q": {
+          "n_gaps": 15,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.2473379469500514,
+          "enrichment": 1.6172205071338202,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.06666666666666667,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              16,
+              3
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              50,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              43,
+              1
+            ],
+            [
+              57,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              29,
+              1
+            ]
+          ],
+          "mean_gap": 24.066666666666666,
+          "std_gap": 17.101526897392006
+        },
+        "A": {
+          "n_gaps": 32,
+          "n_prime_gaps": 18,
+          "observed_prime_density": 0.5625,
+          "expected_prime_density": 0.25831776680732876,
+          "enrichment": 2.177550568635689,
+          "gap_6_count": 1,
+          "gap_2_count": 4,
+          "gap_6_fraction": 0.03125,
+          "gap_2_fraction": 0.125,
+          "most_common_gaps": [
+            [
+              5,
+              5
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              48,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "mean_gap": 12.875,
+          "std_gap": 12.421629321469869
+        },
+        "N": {
+          "n_gaps": 14,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.21428571428571427,
+          "expected_prime_density": 0.22569202144874392,
+          "enrichment": 0.9494607426092814,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.07142857142857142,
+          "most_common_gaps": [
+            [
+              10,
+              2
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              84,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              35,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 25.785714285714285,
+          "std_gap": 20.560637050402097
+        },
+        "W": {
+          "n_gaps": 3,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.17289595872557093,
+          "enrichment": 1.9279417274432458,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              325,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "mean_gap": 128.66666666666666,
+          "std_gap": 139.14580681988068
+        },
+        "L": {
+          "n_gaps": 29,
+          "n_prime_gaps": 9,
+          "observed_prime_density": 0.3103448275862069,
+          "expected_prime_density": 0.25562221863533147,
+          "enrichment": 1.2140761051328728,
+          "gap_6_count": 5,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.1724137931034483,
+          "gap_2_fraction": 0.034482758620689655,
+          "most_common_gaps": [
+            [
+              6,
+              5
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              22,
+              2
+            ],
+            [
+              31,
+              2
+            ],
+            [
+              44,
+              1
+            ],
+            [
+              25,
+              1
+            ]
+          ],
+          "mean_gap": 13.89655172413793,
+          "std_gap": 12.05259974126689
+        },
+        "Y": {
+          "n_gaps": 18,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.3888888888888889,
+          "expected_prime_density": 0.2452460618098304,
+          "enrichment": 1.5857090059633354,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              38,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              53,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              14,
+              1
+            ]
+          ],
+          "mean_gap": 23.72222222222222,
+          "std_gap": 15.83879048256581
+        },
+        "P": {
+          "n_gaps": 18,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.3888888888888889,
+          "expected_prime_density": 0.22569202144874392,
+          "enrichment": 1.7230954217723997,
+          "gap_6_count": 1,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.05555555555555555,
+          "gap_2_fraction": 0.1111111111111111,
+          "most_common_gaps": [
+            [
+              9,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              84,
+              1
+            ],
+            [
+              38,
+              1
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              24,
+              1
+            ]
+          ],
+          "mean_gap": 18.38888888888889,
+          "std_gap": 19.439761340810083
+        },
+        "D": {
+          "n_gaps": 25,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.28,
+          "expected_prime_density": 0.24954251462921184,
+          "enrichment": 1.122053291865092,
+          "gap_6_count": 4,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.16,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              7,
+              6
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              22,
+              3
+            ],
+            [
+              18,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              55,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 16.16,
+          "std_gap": 12.798999960934449
+        },
+        "K": {
+          "n_gaps": 17,
+          "n_prime_gaps": 5,
+          "observed_prime_density": 0.29411764705882354,
+          "expected_prime_density": 0.21113980144539465,
+          "enrichment": 1.3929995436454399,
+          "gap_6_count": 0,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.11764705882352941,
+          "most_common_gaps": [
+            [
+              2,
+              2
+            ],
+            [
+              24,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              36,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              114,
+              1
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "mean_gap": 22.88235294117647,
+          "std_gap": 25.03616760970646
+        },
+        "T": {
+          "n_gaps": 26,
+          "n_prime_gaps": 12,
+          "observed_prime_density": 0.46153846153846156,
+          "expected_prime_density": 0.267546386419054,
+          "enrichment": 1.7250782853615545,
+          "gap_6_count": 0,
+          "gap_2_count": 3,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.11538461538461539,
+          "most_common_gaps": [
+            [
+              2,
+              3
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              21,
+              2
+            ],
+            [
+              29,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "mean_gap": 13.0,
+          "std_gap": 9.599679481828868
+        },
+        "F": {
+          "n_gaps": 18,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.25831776680732876,
+          "enrichment": 1.290400336969297,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              3,
+              3
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              20,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              48,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              29,
+              1
+            ]
+          ],
+          "mean_gap": 20.444444444444443,
+          "std_gap": 15.478379983498927
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 430,
+        "mobius_matches": 92,
+        "observed_rate": 0.21395348837209302,
+        "expected_rate": 0.00021003990758244065,
+        "enrichment": 1018.6325581395349,
+        "top_pairs": [
+          [
+            [
+              1,
+              2
+            ],
+            6
+          ],
+          [
+            [
+              1,
+              4
+            ],
+            5
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            4
+          ],
+          [
+            [
+              3,
+              3
+            ],
+            4
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            4
+          ],
+          [
+            [
+              6,
+              4
+            ],
+            3
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              10,
+              10
+            ],
+            3
+          ]
+        ]
+      }
+    },
+    "p53_human": {
+      "length": 393,
+      "amino_acids": {
+        "M": {
+          "n_gaps": 11,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.18181818181818182,
+          "expected_prime_density": 0.2201045822301589,
+          "enrichment": 0.8260535967763644,
+          "gap_6_count": 1,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.09090909090909091,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              39,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              67,
+              1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              94,
+              1
+            ]
+          ],
+          "mean_gap": 34.81818181818182,
+          "std_gap": 29.2724449449965
+        },
+        "E": {
+          "n_gaps": 26,
+          "n_prime_gaps": 11,
+          "observed_prime_density": 0.4230769230769231,
+          "expected_prime_density": 0.21576234609177827,
+          "enrichment": 1.960846879635615,
+          "gap_6_count": 4,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.15384615384615385,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              6,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              103,
+              1
+            ],
+            [
+              18,
+              1
+            ]
+          ],
+          "mean_gap": 14.73076923076923,
+          "std_gap": 19.65775965853941
+        },
+        "P": {
+          "n_gaps": 37,
+          "n_prime_gaps": 22,
+          "observed_prime_density": 0.5945945945945946,
+          "expected_prime_density": 0.2769378934088574,
+          "enrichment": 2.1470322723830524,
+          "gap_6_count": 1,
+          "gap_2_count": 7,
+          "gap_6_fraction": 0.02702702702702703,
+          "gap_2_fraction": 0.1891891891891892,
+          "most_common_gaps": [
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              28,
+              2
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              9,
+              1
+            ]
+          ],
+          "mean_gap": 10.243243243243244,
+          "std_gap": 10.10593993222826
+        },
+        "Q": {
+          "n_gaps": 14,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.21428571428571427,
+          "expected_prime_density": 0.2071116448532039,
+          "enrichment": 1.0346386579933504,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.07142857142857142,
+          "most_common_gaps": [
+            [
+              14,
+              2
+            ],
+            [
+              21,
+              2
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              48,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              25,
+              1
+            ]
+          ],
+          "mean_gap": 26.428571428571427,
+          "std_gap": 29.63037602990332
+        },
+        "S": {
+          "n_gaps": 30,
+          "n_prime_gaps": 14,
+          "observed_prime_density": 0.4666666666666667,
+          "expected_prime_density": 0.25973030217227155,
+          "enrichment": 1.7967355474646938,
+          "gap_6_count": 2,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.06666666666666667,
+          "gap_2_fraction": 0.06666666666666667,
+          "most_common_gaps": [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              44,
+              1
+            ]
+          ],
+          "mean_gap": 12.633333333333333,
+          "std_gap": 11.754384524744609
+        },
+        "D": {
+          "n_gaps": 16,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.25,
+          "expected_prime_density": 0.2239186238120062,
+          "enrichment": 1.116477029663646,
+          "gap_6_count": 1,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.0625,
+          "gap_2_fraction": 0.125,
+          "most_common_gaps": [
+            [
+              20,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              87,
+              1
+            ],
+            [
+              36,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              31,
+              1
+            ]
+          ],
+          "mean_gap": 23.9375,
+          "std_gap": 20.701656787561713
+        },
+        "V": {
+          "n_gaps": 14,
+          "n_prime_gaps": 4,
+          "observed_prime_density": 0.2857142857142857,
+          "expected_prime_density": 0.25973030217227155,
+          "enrichment": 1.1000421719171594,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.07142857142857142,
+          "gap_2_fraction": 0.07142857142857142,
+          "most_common_gaps": [
+            [
+              21,
+              2
+            ],
+            [
+              24,
+              2
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "mean_gap": 18.642857142857142,
+          "std_gap": 12.99784126503399
+        },
+        "L": {
+          "n_gaps": 29,
+          "n_prime_gaps": 13,
+          "observed_prime_density": 0.4482758620689655,
+          "expected_prime_density": 0.25831776680732876,
+          "enrichment": 1.7353659704069857,
+          "gap_6_count": 2,
+          "gap_2_count": 2,
+          "gap_6_fraction": 0.06896551724137931,
+          "gap_2_fraction": 0.06896551724137931,
+          "most_common_gaps": [
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              48,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "mean_gap": 12.655172413793103,
+          "std_gap": 12.4575855912523
+        },
+        "T": {
+          "n_gaps": 20,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.25831776680732876,
+          "enrichment": 1.5484804043631566,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.05,
+          "most_common_gaps": [
+            [
+              5,
+              2
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "mean_gap": 18.4,
+          "std_gap": 12.350708481702577
+        },
+        "F": {
+          "n_gaps": 10,
+          "n_prime_gaps": 1,
+          "observed_prime_density": 0.1,
+          "expected_prime_density": 0.22953106112437666,
+          "enrichment": 0.4356708826689592,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              58,
+              2
+            ],
+            [
+              35,
+              1
+            ],
+            [
+              55,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              78,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              44,
+              1
+            ]
+          ],
+          "mean_gap": 36.6,
+          "std_gap": 24.83626380919642
+        },
+        "W": {
+          "n_gaps": 3,
+          "n_prime_gaps": 0,
+          "observed_prime_density": 0.0,
+          "expected_prime_density": 0.24954251462921184,
+          "enrichment": 0.0,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              30,
+              1
+            ],
+            [
+              38,
+              1
+            ],
+            [
+              55,
+              1
+            ]
+          ],
+          "mean_gap": 41.0,
+          "std_gap": 10.424330514074594
+        },
+        "K": {
+          "n_gaps": 14,
+          "n_prime_gaps": 6,
+          "observed_prime_density": 0.42857142857142855,
+          "expected_prime_density": 0.2064329849677758,
+          "enrichment": 2.0760801799108246,
+          "gap_6_count": 1,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.07142857142857142,
+          "gap_2_fraction": 0.07142857142857142,
+          "most_common_gaps": [
+            [
+              13,
+              2
+            ],
+            [
+              77,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              127,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "mean_gap": 25.5,
+          "std_gap": 33.474403867518156
+        },
+        "N": {
+          "n_gaps": 11,
+          "n_prime_gaps": 2,
+          "observed_prime_density": 0.18181818181818182,
+          "expected_prime_density": 0.21667906533553166,
+          "enrichment": 0.8391128212438654,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              101,
+              1
+            ],
+            [
+              69,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              22,
+              1
+            ]
+          ],
+          "mean_gap": 28.545454545454547,
+          "std_gap": 28.80140033326548
+        },
+        "A": {
+          "n_gaps": 20,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.4,
+          "expected_prime_density": 0.2239186238120062,
+          "enrichment": 1.7863632474618334,
+          "gap_6_count": 2,
+          "gap_2_count": 6,
+          "gap_6_fraction": 0.1,
+          "gap_2_fraction": 0.3,
+          "most_common_gaps": [
+            [
+              2,
+              6
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              31,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              87,
+              1
+            ]
+          ],
+          "mean_gap": 16.1,
+          "std_gap": 20.121878639928234
+        },
+        "I": {
+          "n_gaps": 6,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.5,
+          "expected_prime_density": 0.2119318086698044,
+          "enrichment": 2.359249435647547,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              112,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              77,
+              1
+            ]
+          ],
+          "mean_gap": 46.833333333333336,
+          "std_gap": 36.83484159807879
+        },
+        "G": {
+          "n_gaps": 20,
+          "n_prime_gaps": 7,
+          "observed_prime_density": 0.35,
+          "expected_prime_density": 0.2611892565642242,
+          "enrichment": 1.3400244887711834,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              4,
+              3
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              46,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              27,
+              1
+            ]
+          ],
+          "mean_gap": 16.4,
+          "std_gap": 11.612062693595828
+        },
+        "R": {
+          "n_gaps": 22,
+          "n_prime_gaps": 8,
+          "observed_prime_density": 0.36363636363636365,
+          "expected_prime_density": 0.2611892565642242,
+          "enrichment": 1.3922332350869437,
+          "gap_6_count": 3,
+          "gap_2_count": 4,
+          "gap_6_fraction": 0.13636363636363635,
+          "gap_2_fraction": 0.18181818181818182,
+          "most_common_gaps": [
+            [
+              2,
+              4
+            ],
+            [
+              16,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              45,
+              1
+            ],
+            [
+              46,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              35,
+              1
+            ],
+            [
+              18,
+              1
+            ]
+          ],
+          "mean_gap": 14.136363636363637,
+          "std_gap": 13.088146804527351
+        },
+        "Y": {
+          "n_gaps": 8,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.375,
+          "expected_prime_density": 0.22168724132403095,
+          "enrichment": 1.6915723149438187,
+          "gap_6_count": 0,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.125,
+          "most_common_gaps": [
+            [
+              4,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              91,
+              1
+            ]
+          ],
+          "mean_gap": 28.0,
+          "std_gap": 27.258026340878022
+        },
+        "H": {
+          "n_gaps": 9,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.23699447183691388,
+          "enrichment": 1.4065025683920356,
+          "gap_6_count": 0,
+          "gap_2_count": 0,
+          "gap_6_fraction": 0.0,
+          "gap_2_fraction": 0.0,
+          "most_common_gaps": [
+            [
+              53,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              63,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "mean_gap": 29.22222222222222,
+          "std_gap": 23.4936292914473
+        },
+        "C": {
+          "n_gaps": 9,
+          "n_prime_gaps": 3,
+          "observed_prime_density": 0.3333333333333333,
+          "expected_prime_density": 0.25973030217227155,
+          "enrichment": 1.2833825339033527,
+          "gap_6_count": 2,
+          "gap_2_count": 1,
+          "gap_6_fraction": 0.2222222222222222,
+          "gap_2_fraction": 0.1111111111111111,
+          "most_common_gaps": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              35,
+              1
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "mean_gap": 17.0,
+          "std_gap": 15.69146972791976
+        }
+      },
+      "mobius_pairs": {
+        "total_pairs": 372,
+        "mobius_matches": 110,
+        "observed_rate": 0.2956989247311828,
+        "expected_rate": 0.000244140625,
+        "enrichment": 1211.1827956989248,
+        "top_pairs": [
+          [
+            [
+              4,
+              1
+            ],
+            7
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            6
+          ],
+          [
+            [
+              1,
+              8
+            ],
+            5
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            4
+          ],
+          [
+            [
+              1,
+              4
+            ],
+            4
+          ],
+          [
+            [
+              13,
+              14
+            ],
+            3
+          ],
+          [
+            [
+              1,
+              7
+            ],
+            3
+          ],
+          [
+            [
+              3,
+              4
+            ],
+            3
+          ],
+          [
+            [
+              7,
+              2
+            ],
+            3
+          ],
+          [
+            [
+              3,
+              2
+            ],
+            3
+          ]
+        ]
+      }
+    }
+  },
+  "aggregate": {
+    "total_gaps": 2471,
+    "primeness": {
+      "n_gaps": 2296,
+      "n_prime_gaps": 941,
+      "observed_prime_density": 0.4098432055749129,
+      "expected_prime_density": 0.17289595872557093,
+      "enrichment": 2.3704614532109245,
+      "gap_6_count": 124,
+      "gap_2_count": 195,
+      "gap_6_fraction": 0.05400696864111498,
+      "gap_2_fraction": 0.08493031358885017,
+      "most_common_gaps": [
+        [
+          2,
+          195
+        ],
+        [
+          4,
+          126
+        ],
+        [
+          7,
+          125
+        ],
+        [
+          6,
+          124
+        ],
+        [
+          3,
+          121
+        ],
+        [
+          10,
+          104
+        ],
+        [
+          11,
+          91
+        ],
+        [
+          5,
+          90
+        ],
+        [
+          8,
+          86
+        ],
+        [
+          12,
+          77
+        ]
+      ],
+      "mean_gap": 18.105836236933797,
+      "std_gap": 20.239004002457957
+    },
+    "mobius_pairs": {
+      "total_pairs": 2470,
+      "mobius_matches": 1078,
+      "observed_rate": 0.43643724696356273,
+      "expected_rate": 9.070294784580499e-05,
+      "enrichment": 4811.720647773279,
+      "top_pairs": [
+        [
+          [
+            2,
+            2
+          ],
+          33
+        ],
+        [
+          [
+            76,
+            76
+          ],
+          22
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          19
+        ],
+        [
+          [
+            7,
+            6
+          ],
+          19
+        ],
+        [
+          [
+            11,
+            7
+          ],
+          19
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          18
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          17
+        ],
+        [
+          [
+            4,
+            1
+          ],
+          16
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          16
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          16
+        ]
+      ]
+    }
+  }
+}
