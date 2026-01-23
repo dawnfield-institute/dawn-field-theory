@@ -1,0 +1,87 @@
+{
+  "experiment": "exp_12_eigenvalue_proof",
+  "tests": [
+    {
+      "name": "chain_eigenvalues",
+      "results": [
+        [
+          2,
+          -0.61803399
+        ],
+        [
+          3,
+          -0.61803399
+        ],
+        [
+          4,
+          -0.61803399
+        ],
+        [
+          5,
+          -0.61803399
+        ],
+        [
+          8,
+          -0.61803399
+        ],
+        [
+          13,
+          -0.61803399
+        ],
+        [
+          21,
+          -0.61803399
+        ]
+      ]
+    },
+    {
+      "name": "tree_eigenvalues",
+      "results": [
+        [
+          3,
+          0.6180339887498948,
+          true
+        ],
+        [
+          7,
+          0.6180339887498948,
+          true
+        ],
+        [
+          15,
+          0.6180339887498948,
+          true
+        ],
+        [
+          31,
+          0.6180339887498948,
+          true
+        ]
+      ]
+    }
+  ],
+  "conclusion": {
+    "eigenvalue_finding": "Trivially true for any \u03b1 (upper triangular)",
+    "real_significance": "\u03c6 is the unique self-similar collapse ratio",
+    "algebraic_identities": [
+      "\u03c6\u00b2 = \u03c6 + 1",
+      "1/\u03c6 = \u03c6 - 1"
+    ],
+    "why_phi_matters": [
+      "Self-similarity of collapse",
+      "Fibonacci recurrence",
+      "Stability (\u03c1 < 1)",
+      "Information optimality"
+    ]
+  },
+  "_metadata": {
+    "script": "exp_12",
+    "timestamp": "2026-01-22T16:30:24.122528",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

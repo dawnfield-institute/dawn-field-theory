@@ -1,0 +1,56 @@
+{
+  "experiment": "exp_07_falsification",
+  "tests": [
+    {
+      "name": "F1_delta_bounded",
+      "max_delta": 0.0,
+      "total_C": 29.174883567558933,
+      "passed": "True"
+    },
+    {
+      "name": "F2_sync_async_equivalent",
+      "sync_P": -20.371841587569417,
+      "sync_A": 43.299063778601024,
+      "async_P": -20.371841587569417,
+      "async_A": 43.299063778601024,
+      "passed": "True"
+    },
+    {
+      "name": "F3_conservation_always",
+      "n_violations": 0,
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "F4_reconcile_clears_delta",
+      "delta_before": 0.0,
+      "delta_after": 0.0,
+      "passed": true
+    },
+    {
+      "name": "F5_extreme_conditions",
+      "n_nodes": 50,
+      "n_injections": 60,
+      "final_error": 2.2737367544323206e-13,
+      "passed": "True"
+    }
+  ],
+  "falsified": false,
+  "summary": {
+    "all_passed": true,
+    "n_passed": 5,
+    "n_total": 5,
+    "falsified": false,
+    "conclusion": "Model validated"
+  },
+  "_metadata": {
+    "script": "exp_07",
+    "timestamp": "2026-01-22T16:12:33.637891",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

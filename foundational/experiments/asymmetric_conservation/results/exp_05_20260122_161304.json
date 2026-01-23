@@ -1,0 +1,43 @@
+{
+  "experiment": "exp_05_xi_from_reconciliation",
+  "xi_target": 1.0571198664289054,
+  "tests": [
+    {
+      "name": "interval_statistics",
+      "error": "no data"
+    },
+    {
+      "name": "threshold_sweep",
+      "results": [],
+      "xi_threshold_result": null
+    },
+    {
+      "name": "long_run_convergence",
+      "estimates": [],
+      "final_estimate": null,
+      "converging": false
+    },
+    {
+      "name": "fibonacci_55_search",
+      "events_per_recon": [],
+      "mean_events": null
+    }
+  ],
+  "summary": {
+    "xi_target": 1.0571198664289054,
+    "best_estimate": null,
+    "best_error": Infinity,
+    "xi_emerged": false,
+    "conclusion": "\u039e mechanism unclear - needs more research"
+  },
+  "_metadata": {
+    "script": "exp_05",
+    "timestamp": "2026-01-22T16:13:04.873536",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

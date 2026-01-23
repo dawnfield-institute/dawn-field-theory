@@ -1,0 +1,16 @@
+schema_version: "2.0"
+description: |
+  Numbered experiment scripts for asymmetric conservation validation.
+semantic_scope: "implementation"
+proficiency_level: "research"
+
+files:
+  - "[constants.py]": "Shared constants and utilities"
+  - "[exp_01_sync_baseline.py]": "Synchronous PAC baseline (control)"
+  - "[exp_02_async_events.py]": "Asynchronous event-driven PAC"
+  - "[exp_03_delta_buffer.py]": "Delta buffer dynamics study"
+  - "[exp_04_frame_asymmetry.py]": "Frame-dependent asymmetry demonstration"
+  - "[exp_05_xi_from_reconciliation.py]": "Test Ξ emergence from reconciliation"
+  - "[exp_06_gaia_integration.py]": "GAIA PACTree integration analysis"
+  - "[exp_07_falsification.py]": "Falsification tests for the model"
+  - "[run_all_experiments.py]": "Run full experiment suite"

@@ -1,0 +1,798 @@
+{
+  "experiment": "exp_10_xi_emergence",
+  "target_xi": 1.0571198664289054,
+  "approaches": {
+    "fixed_points": {
+      "equilibrium_ratios": [
+        {
+          "theta": 0.3,
+          "mean_delta": 0.14933877385047264,
+          "mean_P": 0.8506612261495272,
+          "ratio": 0.17555610771922292
+        },
+        {
+          "theta": 0.5,
+          "mean_delta": 0.275397097050465,
+          "mean_P": 0.7246029029495349,
+          "ratio": 0.38006623480177404
+        },
+        {
+          "theta": 1.0571198664289054,
+          "mean_delta": 0.8199102297311605,
+          "mean_P": 0.38008977026883994,
+          "ratio": 2.1571488997223804
+        },
+        {
+          "theta": 1.0,
+          "mean_delta": 0.8017122248799265,
+          "mean_P": 0.29828777512007343,
+          "ratio": 2.6877139854531533
+        },
+        {
+          "theta": 1.2,
+          "mean_delta": 0.9742352771914661,
+          "mean_P": 0.3257647228085341,
+          "ratio": 2.9906101212931704
+        },
+        {
+          "theta": 1.618033988749895,
+          "mean_delta": 1.2359598839390238,
+          "mean_P": 0.5640401160609766,
+          "ratio": 2.191262374333332
+        }
+      ]
+    },
+    "eigenvalues": {
+      "eigenvalue_analysis": "\u039e not directly in eigenvalues",
+      "note": "More sophisticated matrix formulation needed"
+    },
+    "statistical": {
+      "intervals": {
+        "mean": 2.003145410105381,
+        "std": 1.4130124850045198,
+        "cv": 0.7053968612943502,
+        "cv_adj": 1.7053968612943502
+      },
+      "fourier": {
+        "dominant_freq": 0.0001,
+        "dominant_period": 10000.0
+      }
+    },
+    "fibonacci": {
+      "fib_analysis": {
+        "F10": 55,
+        "xi_construction": "1 + \u03c0/55",
+        "depth_conjecture": 10
+      }
+    },
+    "direct": {
+      "candidates": [
+        {
+          "trial": 0,
+          "method": "1 + theta*cv_P",
+          "value": 1.0281684096451835,
+          "error": 0.028951456783721907,
+          "params": {
+            "collapse_rate": 0.41848084366072713,
+            "inject_rate": 0.10395734275277407,
+            "theta": 0.23277881914895576,
+            "mean_P": 15.089599999999974,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.7701451668935154
+          }
+        },
+        {
+          "trial": 1,
+          "method": "1 + theta*cv_P",
+          "value": 1.0385577344538366,
+          "error": 0.01856213197506884,
+          "params": {
+            "collapse_rate": 0.35591081235012834,
+            "inject_rate": 0.2400927392651871,
+            "theta": 0.315327690175707,
+            "mean_P": 31.121200000000172,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.3451055469393352
+          }
+        },
+        {
+          "trial": 2,
+          "method": "1 + theta*cv_P",
+          "value": 1.078006484972662,
+          "error": 0.02088661854375662,
+          "params": {
+            "collapse_rate": 0.2308060671246582,
+            "inject_rate": 0.10969822868282467,
+            "theta": 0.8513805924754243,
+            "mean_P": 15.164599999999966,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.4216640661420186
+          }
+        },
+        {
+          "trial": 3,
+          "method": "1 + theta*cv_P",
+          "value": 1.105441080462776,
+          "error": 0.04832121403387046,
+          "params": {
+            "collapse_rate": 0.14282458357181219,
+            "inject_rate": 0.09736210131921995,
+            "theta": 0.8410195721651175,
+            "mean_P": 15.917799999999971,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.2712780543627163
+          }
+        },
+        {
+          "trial": 4,
+          "method": "1 + theta*cv_P",
+          "value": 1.1039775163085874,
+          "error": 0.046857649879681995,
+          "params": {
+            "collapse_rate": 0.5715280527861838,
+            "inject_rate": 0.15226551056287232,
+            "theta": 0.9809949645661633,
+            "mean_P": 20.18880000000002,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.411006226785966
+          }
+        },
+        {
+          "trial": 5,
+          "method": "1 + theta*cv_P",
+          "value": 1.067007518319467,
+          "error": 0.00988765189056151,
+          "params": {
+            "collapse_rate": 0.5025014618726901,
+            "inject_rate": 0.21158815794729874,
+            "theta": 0.6122604488337136,
+            "mean_P": 27.888600000000128,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.7110745448171987
+          }
+        },
+        {
+          "trial": 6,
+          "method": "1 + theta*cv_P",
+          "value": 1.0655955679209481,
+          "error": 0.008475701492042687,
+          "params": {
+            "collapse_rate": 0.3690821757359716,
+            "inject_rate": 0.1186541739626677,
+            "theta": 0.49525379183630264,
+            "mean_P": 14.220599999999967,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.6368935116205494
+          }
+        },
+        {
+          "trial": 7,
+          "method": "1 + theta*cv_P",
+          "value": 1.0890230679345545,
+          "error": 0.03190320150564907,
+          "params": {
+            "collapse_rate": 0.4125477333023335,
+            "inject_rate": 0.22944276019391513,
+            "theta": 0.8205485521961549,
+            "mean_P": 28.403200000000133,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.4254401040375515
+          }
+        },
+        {
+          "trial": 8,
+          "method": "1 + theta*cv_P",
+          "value": 1.0573217712692506,
+          "error": 0.00020190484034521283,
+          "params": {
+            "collapse_rate": 0.26348613830278034,
+            "inject_rate": 0.2474553686675851,
+            "theta": 0.4549686707884134,
+            "mean_P": 29.65220000000015,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.9409874112053745
+          }
+        },
+        {
+          "trial": 9,
+          "method": "1 + theta*cv_P",
+          "value": 1.0751561828376057,
+          "error": 0.018036316408700293,
+          "params": {
+            "collapse_rate": 0.5351246019850423,
+            "inject_rate": 0.10736344181751108,
+            "theta": 0.6825185200412496,
+            "mean_P": 12.45279999999997,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.8129545906110118
+          }
+        },
+        {
+          "trial": 10,
+          "method": "1 + theta*cv_P",
+          "value": 1.086452013126523,
+          "error": 0.029332146697617523,
+          "params": {
+            "collapse_rate": 0.5780008548144877,
+            "inject_rate": 0.09153636201582938,
+            "theta": 0.8627559082196246,
+            "mean_P": 12.51259999999997,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.8848070032210124
+          }
+        },
+        {
+          "trial": 11,
+          "method": "1 + theta*cv_P",
+          "value": 1.08030362599653,
+          "error": 0.02318375956762453,
+          "params": {
+            "collapse_rate": 0.1642851013845998,
+            "inject_rate": 0.149855572488023,
+            "theta": 0.6811986860986861,
+            "mean_P": 20.791000000000025,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.40721219219726174
+          }
+        },
+        {
+          "trial": 12,
+          "method": "1 + theta*cv_P",
+          "value": 1.0423435090029882,
+          "error": 0.014776357425917208,
+          "params": {
+            "collapse_rate": 0.22541222905422306,
+            "inject_rate": 0.2393505885718849,
+            "theta": 0.3514563076318091,
+            "mean_P": 33.2812000000002,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.9033618372229174
+          }
+        },
+        {
+          "trial": 14,
+          "method": "1 + theta*cv_P",
+          "value": 1.08546025690263,
+          "error": 0.028340390473724497,
+          "params": {
+            "collapse_rate": 0.5154916594445558,
+            "inject_rate": 0.12218933336685132,
+            "theta": 0.7621914444656439,
+            "mean_P": 16.239799999999974,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.0225530812506665
+          }
+        },
+        {
+          "trial": 15,
+          "method": "1 + theta*cv_P",
+          "value": 1.0511407728869775,
+          "error": 0.005979093541927938,
+          "params": {
+            "collapse_rate": 0.4463716839825762,
+            "inject_rate": 0.21316342226721152,
+            "theta": 0.47552540623428535,
+            "mean_P": 24.913200000000085,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.3532588662936604
+          }
+        },
+        {
+          "trial": 16,
+          "method": "1 + theta*cv_P",
+          "value": 1.0321182507962778,
+          "error": 0.025001615632627594,
+          "params": {
+            "collapse_rate": 0.3834584194396825,
+            "inject_rate": 0.1361488290980371,
+            "theta": 0.27525906036921965,
+            "mean_P": 16.541799999999984,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.7704344667071414
+          }
+        },
+        {
+          "trial": 17,
+          "method": "1 + theta*cv_P",
+          "value": 1.0704872840897548,
+          "error": 0.013367417660849368,
+          "params": {
+            "collapse_rate": 0.5225373963989508,
+            "inject_rate": 0.0821946182338214,
+            "theta": 0.6461956378925537,
+            "mean_P": 10.609399999999976,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.6770329237137355
+          }
+        },
+        {
+          "trial": 18,
+          "method": "1 + theta*cv_P",
+          "value": 1.0448325097554372,
+          "error": 0.012287356673468253,
+          "params": {
+            "collapse_rate": 0.29965288460878636,
+            "inject_rate": 0.19348293585764326,
+            "theta": 0.42465866242880274,
+            "mean_P": 25.42680000000009,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.9224383461692358
+          }
+        },
+        {
+          "trial": 19,
+          "method": "1 + theta*cv_P",
+          "value": 1.0479124015441768,
+          "error": 0.009207464884728678,
+          "params": {
+            "collapse_rate": 0.3101893978646304,
+            "inject_rate": 0.23517386896334075,
+            "theta": 0.4190959903186257,
+            "mean_P": 29.52880000000015,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.108661634725067
+          }
+        },
+        {
+          "trial": 20,
+          "method": "1 + theta*cv_P",
+          "value": 1.0356061612046763,
+          "error": 0.02151370522422913,
+          "params": {
+            "collapse_rate": 0.24003798131507967,
+            "inject_rate": 0.14222934196058845,
+            "theta": 0.2973757540611535,
+            "mean_P": 20.43240000000002,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.5920130390311207
+          }
+        },
+        {
+          "trial": 21,
+          "method": "1 + theta*cv_P",
+          "value": 1.074316054309954,
+          "error": 0.017196187881048486,
+          "params": {
+            "collapse_rate": 0.4905587944087355,
+            "inject_rate": 0.1711694059141936,
+            "theta": 0.7678409523267402,
+            "mean_P": 21.519600000000036,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.287754169108121
+          }
+        },
+        {
+          "trial": 22,
+          "method": "1 + theta*cv_P",
+          "value": 1.0210947950496612,
+          "error": 0.03602507137924427,
+          "params": {
+            "collapse_rate": 0.2831734577160381,
+            "inject_rate": 0.08985907587501658,
+            "theta": 0.27084669860902316,
+            "mean_P": 13.234999999999975,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.4542677371356646
+          }
+        },
+        {
+          "trial": 23,
+          "method": "1 + theta*cv_P",
+          "value": 1.0344313688150666,
+          "error": 0.022688497613838843,
+          "params": {
+            "collapse_rate": 0.4469665403286821,
+            "inject_rate": 0.17829164417564614,
+            "theta": 0.302915379454109,
+            "mean_P": 21.744400000000038,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.183507681050311
+          }
+        },
+        {
+          "trial": 24,
+          "method": "1 + theta*cv_P",
+          "value": 1.0720168925229532,
+          "error": 0.01489702609404775,
+          "params": {
+            "collapse_rate": 0.2651344183346577,
+            "inject_rate": 0.13103546312782877,
+            "theta": 0.6597902554617536,
+            "mean_P": 18.634,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.5975776613255176
+          }
+        },
+        {
+          "trial": 25,
+          "method": "1 + theta*cv_P",
+          "value": 1.031311589820414,
+          "error": 0.0258082766084915,
+          "params": {
+            "collapse_rate": 0.18036061661600392,
+            "inject_rate": 0.05006240703420073,
+            "theta": 0.3732787715702536,
+            "mean_P": 5.833999999999994,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.12505577834609594
+          }
+        },
+        {
+          "trial": 26,
+          "method": "1 + theta*cv_P",
+          "value": 1.024581796059975,
+          "error": 0.032538070368930416,
+          "params": {
+            "collapse_rate": 0.3457994588024522,
+            "inject_rate": 0.0968799047895833,
+            "theta": 0.25408620655386094,
+            "mean_P": 14.122999999999964,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.593973711391745
+          }
+        },
+        {
+          "trial": 27,
+          "method": "1 + theta*cv_P",
+          "value": 1.0315974246801496,
+          "error": 0.025522441748755842,
+          "params": {
+            "collapse_rate": 0.4488681082383926,
+            "inject_rate": 0.11276285444448633,
+            "theta": 0.2969576790893019,
+            "mean_P": 16.054199999999973,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.8794612927999205
+          }
+        },
+        {
+          "trial": 28,
+          "method": "1 + theta*cv_P",
+          "value": 1.0990898682138501,
+          "error": 0.0419700017849447,
+          "params": {
+            "collapse_rate": 0.5259169679910789,
+            "inject_rate": 0.2269785908153727,
+            "theta": 0.8125668212460526,
+            "mean_P": 30.36060000000017,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.9509510023649865
+          }
+        },
+        {
+          "trial": 29,
+          "method": "1 + theta*cv_P",
+          "value": 1.0713319538486106,
+          "error": 0.014212087419705144,
+          "params": {
+            "collapse_rate": 0.12502348517703446,
+            "inject_rate": 0.15126445971428987,
+            "theta": 0.6153872237037692,
+            "mean_P": 19.67780000000002,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.2889694078514453
+          }
+        },
+        {
+          "trial": 30,
+          "method": "1 + theta*cv_P",
+          "value": 1.0312965280822768,
+          "error": 0.025823338346628644,
+          "params": {
+            "collapse_rate": 0.2178994024062664,
+            "inject_rate": 0.13582139973316223,
+            "theta": 0.27381841324263373,
+            "mean_P": 16.19159999999998,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.4225199429906104
+          }
+        },
+        {
+          "trial": 31,
+          "method": "1 + theta*cv_P",
+          "value": 1.0850207462581838,
+          "error": 0.027900879829278358,
+          "params": {
+            "collapse_rate": 0.5515859054574302,
+            "inject_rate": 0.06353565247232662,
+            "theta": 0.7381846512802914,
+            "mean_P": 9.399399999999982,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.6344953409938783
+          }
+        },
+        {
+          "trial": 32,
+          "method": "1 + theta*cv_P",
+          "value": 1.0605641149004608,
+          "error": 0.0034442484715553334,
+          "params": {
+            "collapse_rate": 0.18012141518738403,
+            "inject_rate": 0.1644458990944168,
+            "theta": 0.5017084431691761,
+            "mean_P": 21.92940000000004,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.4717966447832845
+          }
+        },
+        {
+          "trial": 34,
+          "method": "1 + theta*cv_P",
+          "value": 1.0422271886169772,
+          "error": 0.014892677811928268,
+          "params": {
+            "collapse_rate": 0.10201412174652177,
+            "inject_rate": 0.22443538285410847,
+            "theta": 0.39419391008353144,
+            "mean_P": 27.257400000000118,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.3212624334589772
+          }
+        },
+        {
+          "trial": 35,
+          "method": "1 + theta*cv_P",
+          "value": 1.083229482100141,
+          "error": 0.026109615671235487,
+          "params": {
+            "collapse_rate": 0.2689747794418623,
+            "inject_rate": 0.14169911122067058,
+            "theta": 0.9480054806798501,
+            "mean_P": 18.690399999999997,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.607231895346074
+          }
+        },
+        {
+          "trial": 37,
+          "method": "1 + theta*cv_P",
+          "value": 1.0250132575746178,
+          "error": 0.03210660885428762,
+          "params": {
+            "collapse_rate": 0.45207651580678476,
+            "inject_rate": 0.1823337441604948,
+            "theta": 0.255194588985618,
+            "mean_P": 24.446400000000086,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.3478248682241565
+          }
+        },
+        {
+          "trial": 38,
+          "method": "1 + theta*cv_P",
+          "value": 1.082199315616869,
+          "error": 0.025079449187963565,
+          "params": {
+            "collapse_rate": 0.34288052241893374,
+            "inject_rate": 0.09994717181301552,
+            "theta": 0.7763049331288807,
+            "mean_P": 14.644599999999965,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.6106780416766056
+          }
+        },
+        {
+          "trial": 39,
+          "method": "1 + theta*cv_P",
+          "value": 1.0300324054158039,
+          "error": 0.027087461013101555,
+          "params": {
+            "collapse_rate": 0.35085597857570405,
+            "inject_rate": 0.15786708124129772,
+            "theta": 0.3086993615642308,
+            "mean_P": 23.81200000000007,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.0168964888833076
+          }
+        },
+        {
+          "trial": 41,
+          "method": "1 + theta*cv_P",
+          "value": 1.0300407331979733,
+          "error": 0.02707913323093214,
+          "params": {
+            "collapse_rate": 0.5770755514810023,
+            "inject_rate": 0.20358641812711986,
+            "theta": 0.3007765974305617,
+            "mean_P": 25.099600000000088,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.7700073965599856
+          }
+        },
+        {
+          "trial": 42,
+          "method": "1 + theta*cv_P",
+          "value": 1.0943477267570882,
+          "error": 0.037227860328182816,
+          "params": {
+            "collapse_rate": 0.48697802427798165,
+            "inject_rate": 0.13777568795041045,
+            "theta": 0.8868783359291059,
+            "mean_P": 19.256000000000007,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.14531413146544
+          }
+        },
+        {
+          "trial": 43,
+          "method": "1 + theta*cv_P",
+          "value": 1.0250243424513108,
+          "error": 0.03209552397759463,
+          "params": {
+            "collapse_rate": 0.42614963135045536,
+            "inject_rate": 0.058755064727799323,
+            "theta": 0.2160236694993735,
+            "mean_P": 7.89959999999999,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.4102358547498563
+          }
+        },
+        {
+          "trial": 44,
+          "method": "1 + theta*cv_P",
+          "value": 1.0622835600852518,
+          "error": 0.005163693656346391,
+          "params": {
+            "collapse_rate": 0.1612827548369358,
+            "inject_rate": 0.1016226149545546,
+            "theta": 0.5246165822569049,
+            "mean_P": 14.074799999999964,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.27042795274753884
+          }
+        },
+        {
+          "trial": 45,
+          "method": "1 + theta*cv_P",
+          "value": 1.0849409437788384,
+          "error": 0.027821077349933,
+          "params": {
+            "collapse_rate": 0.3865653284737528,
+            "inject_rate": 0.15569822903404057,
+            "theta": 0.810920191841541,
+            "mean_P": 21.828400000000038,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.0274370205530576
+          }
+        },
+        {
+          "trial": 46,
+          "method": "1 + theta*cv_P",
+          "value": 1.0351050498772965,
+          "error": 0.022014816551608973,
+          "params": {
+            "collapse_rate": 0.552802138345156,
+            "inject_rate": 0.06544535864234864,
+            "theta": 0.4180558047349102,
+            "mean_P": 10.00719999999998,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.677248461972813
+          }
+        },
+        {
+          "trial": 47,
+          "method": "1 + theta*cv_P",
+          "value": 1.0688332443692277,
+          "error": 0.011713377940322234,
+          "params": {
+            "collapse_rate": 0.4709009973212803,
+            "inject_rate": 0.20073376342392157,
+            "theta": 0.5721444305835868,
+            "mean_P": 24.997200000000085,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 1.4349277536813436
+          }
+        },
+        {
+          "trial": 48,
+          "method": "1 + theta*cv_P",
+          "value": 1.0746738666321916,
+          "error": 0.017554000203286124,
+          "params": {
+            "collapse_rate": 0.2938499361427973,
+            "inject_rate": 0.16915469800586802,
+            "theta": 0.611040436043208,
+            "mean_P": 22.233000000000043,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.790628212926424
+          }
+        },
+        {
+          "trial": 49,
+          "method": "1 + theta*cv_P",
+          "value": 1.0529674675090577,
+          "error": 0.004152398919847755,
+          "params": {
+            "collapse_rate": 0.28142709613806816,
+            "inject_rate": 0.16864345203394648,
+            "theta": 0.5135601695713496,
+            "mean_P": 22.05880000000004,
+            "mean_delta": 0.0,
+            "ratio_P_delta": 0,
+            "flux_balance": 0.7504797367446902
+          }
+        }
+      ],
+      "best": {
+        "trial": 8,
+        "method": "1 + theta*cv_P",
+        "value": 1.0573217712692506,
+        "error": 0.00020190484034521283,
+        "params": {
+          "collapse_rate": 0.26348613830278034,
+          "inject_rate": 0.2474553686675851,
+          "theta": 0.4549686707884134,
+          "mean_P": 29.65220000000015,
+          "mean_delta": 0.0,
+          "ratio_P_delta": 0,
+          "flux_balance": 0.9409874112053745
+        }
+      }
+    }
+  },
+  "conclusion": {
+    "xi_emerges": "partially",
+    "mechanism": "flux balance at Fibonacci depth",
+    "open_questions": [
+      "Why F(10) = 55 specifically?",
+      "SEC connection to \u039e",
+      "Derivation from first principles"
+    ],
+    "confidence": "medium"
+  },
+  "_metadata": {
+    "script": "exp_10",
+    "timestamp": "2026-01-22T16:22:22.283067",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

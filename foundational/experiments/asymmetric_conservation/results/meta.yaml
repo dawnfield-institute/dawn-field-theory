@@ -1,0 +1,8 @@
+schema_version: "2.0"
+description: "Results from asymmetric conservation experiments"
+semantic_scope: "data"
+proficiency_level: "research"
+
+files: []
+  # Results are auto-generated as:
+  # exp_NN_YYYYMMDD_HHMMSS.json

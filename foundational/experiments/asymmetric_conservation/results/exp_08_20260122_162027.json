@@ -1,0 +1,168 @@
+{
+  "experiment": "exp_08_poisson_async",
+  "tests": [
+    {
+      "name": "basic_poisson",
+      "time": 10.430985068674001,
+      "events": 7,
+      "collapses": 7,
+      "reconciliations": 1,
+      "max_delta": 0.7416407864998737,
+      "conservation": {
+        "total_P": 0.8721359549995796,
+        "total_A": 1.8695048315002942,
+        "total_delta": 0.49442719099991583,
+        "total_C": 3.2360679774997894,
+        "error": 4.440892098500626e-16,
+        "conserved": "True"
+      },
+      "delta_stats": {
+        "n_samples": 6,
+        "mean_delta": 0.37082039324993693,
+        "max_delta": 0.7416407864998737,
+        "std_delta": 0.23668899773757002,
+        "n_zero_crossings": 3,
+        "oscillation_freq": 0.7766081469498515
+      },
+      "interval_stats": {
+        "n_intervals": 0
+      }
+    },
+    {
+      "name": "high_threshold_accumulation",
+      "reconcile_threshold": 2.0,
+      "max_delta": 1.8541019662496845,
+      "reconciliations": 0,
+      "delta_trace_sample": [
+        [
+          0.08160236467833082,
+          0.23176274578121053
+        ],
+        [
+          0.10402760982074262,
+          0.46352549156242107
+        ],
+        [
+          0.13745147355187912,
+          0.6952882373436315
+        ],
+        [
+          0.22381751066065636,
+          0.9270509831248421
+        ],
+        [
+          0.273747062637459,
+          1.1588137289060527
+        ],
+        [
+          0.5306422178868015,
+          1.3905764746872633
+        ],
+        [
+          2.0903296493696795,
+          1.622339220468474
+        ],
+        [
+          3.8119718673599,
+          1.8541019662496845
+        ]
+      ],
+      "conserved": "True"
+    },
+    {
+      "name": "interval_distribution",
+      "threshold_results": [
+        {
+          "threshold": 0.3,
+          "n_intervals": 20,
+          "mean": 2.151420913065986,
+          "std": 1.637956097113621,
+          "is_xi": false
+        },
+        {
+          "threshold": 0.5,
+          "n_intervals": 10,
+          "mean": 3.6674293251759784,
+          "std": 2.105611727551112,
+          "is_xi": false
+        }
+      ]
+    },
+    {
+      "name": "xi_search",
+      "simulation_time": 190.24092517857483,
+      "events": 50,
+      "reconciliations": 7,
+      "interval_stats": {
+        "n_intervals": 6,
+        "mean": 26.718310584739232,
+        "std": 19.909988313914795,
+        "median": 33.69174318099999,
+        "min": 0.6343653921732293,
+        "max": 46.067660682651,
+        "cv": 0.7451814084864645
+      },
+      "delta_stats": {
+        "n_samples": 30,
+        "mean_delta": 0.4569771444994731,
+        "max_delta": 0.9270509831248421,
+        "std_delta": 0.331572903892936,
+        "n_zero_crossings": 15,
+        "oscillation_freq": 0.07886930342659455
+      },
+      "xi_attempts": [
+        {
+          "method": "1 + CV",
+          "value": 1.7451814084864645,
+          "error": 0.6880615420575591
+        },
+        {
+          "method": "mean/std/10",
+          "value": 0.13419551113481168,
+          "error": 0.9229243552940938
+        },
+        {
+          "method": "1+\u03c0/mean",
+          "value": 1.117582009671831,
+          "error": 0.06046214324292554
+        },
+        {
+          "method": "1+osc/10",
+          "value": 1.0078869303426594,
+          "error": 0.049232936086246015
+        }
+      ]
+    },
+    {
+      "name": "continuous_time_asymmetry",
+      "P_t0": 1.0,
+      "A_t0": 0.0,
+      "P_t30": 1.8386991009990747,
+      "A_t30": 3.2386991009990744,
+      "delta_A": 3.2386991009990744,
+      "apparent_violation": "True",
+      "injection": 2.0
+    }
+  ],
+  "summary": {
+    "poisson_works": true,
+    "delta_accumulates": "True",
+    "frame_asymmetry": "True",
+    "xi_attempts": 4,
+    "best_xi_attempt": [
+      "1+osc/10",
+      1.0078869303426594,
+      0.049232936086246015
+    ]
+  },
+  "_metadata": {
+    "script": "exp_08",
+    "timestamp": "2026-01-22T16:20:27.133409",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

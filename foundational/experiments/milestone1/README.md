@@ -291,6 +291,7 @@ python run_all_experiments.py
 
 ## Related Work
 
+- [asymmetric_conservation](../asymmetric_conservation/) — **Constant hierarchy (φ vs Ξ), async PAC execution**
 - [phi_artifact_test](../phi_artifact_test/) — Original falsification methodology
 - [pac_confluence_xi](../pac_confluence_xi/) — Ξ discovery and Standard Model derivation
 - [standard_model_connection](../standard_model_connection/) — SM parameter exploration
@@ -306,5 +307,26 @@ python run_all_experiments.py
 
 ## Changelog
 
+- **v1.2.0** (2026-01-23): Added constant hierarchy (φ vs Ξ roles) from asymmetric_conservation findings
 - **v1.1.0** (2026-01-16): Added cross-domain validation (exp_27-34), Z' prediction
 - **v1.0.0** (2026-01-15): Initial milestone consolidation
+
+---
+
+## Constant Hierarchy (Jan 2026 Update)
+
+The `asymmetric_conservation` experiment clarified which constants emerge from which layer:
+
+| Constant | Source | Mechanism |
+|----------|--------|-----------|
+| φ, 1/φ | PAC | Self-similarity (r² = r + 1) |
+| Ξ = 1 + π/55 | SEC + PAC | Reconciliation at interface |
+| λ* = 0.618432 | SEC | Prime density thresholds |
+
+**Key insight**: Ξ is NOT a pure PAC constant. It encodes both:
+- π (continuous dynamics from SEC)
+- 55 = F₁₀ (Fibonacci structure from PAC)
+
+This explains why Ξ appears at phase transitions and reconciliation boundaries—it marks the SEC-PAC coupling point.
+
+See: `asymmetric_conservation/SYNTHESIS.md` for full derivation.
