@@ -1,0 +1,171 @@
+{
+  "experiment": "exp_04_frame_asymmetry",
+  "tests": [
+    {
+      "name": "frame_asymmetry_demo",
+      "measurements": [
+        {
+          "label": "t\u2081",
+          "P": 6.2863138413028095,
+          "A": 0.0,
+          "delta": 0.0,
+          "C": 6.2863138413028095
+        },
+        {
+          "label": "t\u2082",
+          "P": -6.838096469129264,
+          "A": 15.124410310432074,
+          "delta": 0.0,
+          "C": 8.28631384130281
+        }
+      ],
+      "window": {
+        "window": "t\u2081 \u2192 t\u2082",
+        "delta_A": 15.124410310432074,
+        "delta_P": -13.124410310432072,
+        "initial_P": 6.2863138413028095,
+        "apparent_asymmetry": "True",
+        "hidden_injection": 2.000000000000001
+      },
+      "apparent_asymmetry": "True",
+      "injection_hidden": 2.0,
+      "conservation_intact": true
+    },
+    {
+      "name": "multiple_windows",
+      "measurements": [
+        {
+          "label": "t0",
+          "P": 10.084903651314974,
+          "A": 0.0,
+          "delta": 0.0,
+          "C": 10.084903651314974
+        },
+        {
+          "label": "t1",
+          "P": 0.5620124183302934,
+          "A": 9.522891232984682,
+          "delta": 0.0,
+          "C": 10.084903651314974
+        },
+        {
+          "label": "t2",
+          "P": 0.5392662220886542,
+          "A": 10.545637429226321,
+          "delta": 0.0,
+          "C": 11.084903651314974
+        },
+        {
+          "label": "t3",
+          "P": 0.5392662220886542,
+          "A": 10.545637429226321,
+          "delta": 0.0,
+          "C": 11.084903651314974
+        },
+        {
+          "label": "t4",
+          "P": -10.531768156701151,
+          "A": 22.11667180801613,
+          "delta": 0.0,
+          "C": 11.584903651314974
+        }
+      ],
+      "windows": [
+        {
+          "window": "t0 \u2192 t1",
+          "delta_A": 9.522891232984682,
+          "delta_P": -9.52289123298468,
+          "initial_P": 10.084903651314974,
+          "apparent_asymmetry": "False",
+          "hidden_injection": 0.0
+        },
+        {
+          "window": "t1 \u2192 t2",
+          "delta_A": 1.0227461962416395,
+          "delta_P": -0.022746196241639205,
+          "initial_P": 0.5620124183302934,
+          "apparent_asymmetry": "True",
+          "hidden_injection": 1.0
+        },
+        {
+          "window": "t2 \u2192 t3",
+          "delta_A": 0.0,
+          "delta_P": 0.0,
+          "initial_P": 0.5392662220886542,
+          "apparent_asymmetry": "False",
+          "hidden_injection": 0.0
+        },
+        {
+          "window": "t3 \u2192 t4",
+          "delta_A": 11.571034378789808,
+          "delta_P": -11.071034378789806,
+          "initial_P": 0.5392662220886542,
+          "apparent_asymmetry": "True",
+          "hidden_injection": 0.5
+        },
+        {
+          "window": "t0 \u2192 t4",
+          "delta_A": 22.11667180801613,
+          "delta_P": -20.616671808016125,
+          "initial_P": 10.084903651314974,
+          "apparent_asymmetry": "True",
+          "hidden_injection": 1.5
+        }
+      ],
+      "asymmetric_windows": 3,
+      "total_windows": 5
+    },
+    {
+      "name": "different_observers",
+      "observer_A": {
+        "window": "A_t0 \u2192 A_t15",
+        "delta_A": 8.380090608663215,
+        "delta_P": -6.880090608663215,
+        "initial_P": 7.382370725841408,
+        "apparent_asymmetry": "True",
+        "hidden_injection": 1.5
+      },
+      "observer_B": {
+        "window": "B_t5 \u2192 B_t15",
+        "delta_A": 1.513404093676817,
+        "delta_P": -0.01340409367681783,
+        "initial_P": 0.5156842108550108,
+        "apparent_asymmetry": "True",
+        "hidden_injection": 1.5
+      },
+      "A_sees_asymmetry": "True",
+      "B_sees_asymmetry": "True",
+      "different_conclusions": "False"
+    },
+    {
+      "name": "delta_resolves_asymmetry",
+      "window": {
+        "window": "start \u2192 end",
+        "delta_A": 8.418134734826157,
+        "delta_P": -7.218134734826156,
+        "initial_P": 7.865670515962837,
+        "apparent_asymmetry": "True",
+        "hidden_injection": 1.1999999999999993
+      },
+      "final_delta": 0.0,
+      "resolved": "True"
+    }
+  ],
+  "summary": {
+    "frame_dependence_demonstrated": true,
+    "asymmetry_observed": "True",
+    "observers_disagree": "False",
+    "delta_resolves": "True",
+    "key_insight": "Asymmetry is a frame effect, not a violation"
+  },
+  "_metadata": {
+    "script": "exp_04",
+    "timestamp": "2026-01-22T16:12:26.866469",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

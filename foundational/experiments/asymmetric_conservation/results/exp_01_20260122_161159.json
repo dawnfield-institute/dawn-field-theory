@@ -1,0 +1,53 @@
+{
+  "experiment": "exp_01_sync_baseline",
+  "tests": [
+    {
+      "name": "basic_sync",
+      "steps": 3,
+      "collapses": 4,
+      "final_P": 0.6180339887498949,
+      "final_A": 0.9999999999999999,
+      "max_conservation_error": 2.220446049250313e-16,
+      "all_conserved": true,
+      "P_history": [
+        1.0,
+        0.6180339887498949,
+        0.6180339887498949
+      ],
+      "A_history": [
+        0.6180339887498948,
+        0.9999999999999999,
+        0.9999999999999999
+      ]
+    },
+    {
+      "name": "sync_with_injection",
+      "injection_amount": 0.5,
+      "final_P": 0.5508252808328427,
+      "final_A": 1.0185760300002804,
+      "total_C": 1.569401310833123,
+      "conserved": "True"
+    },
+    {
+      "name": "no_local_asymmetry",
+      "max_asymmetry": 0.0,
+      "is_zero": true
+    }
+  ],
+  "summary": {
+    "baseline_established": true,
+    "all_tests_passed": true,
+    "sync_has_no_asymmetry": true,
+    "conservation_strict": true
+  },
+  "_metadata": {
+    "script": "exp_01",
+    "timestamp": "2026-01-22T16:11:59.562277",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

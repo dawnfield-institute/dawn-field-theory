@@ -1,0 +1,12 @@
+schema_version: "2.0"
+description: |
+  Core library for asymmetric conservation experiments.
+  Implements PAC-native tensors, event system, and async execution.
+semantic_scope: "implementation"
+proficiency_level: "research"
+
+files:
+  - "[__init__.py]": "Module exports"
+  - "[pac_tensors.py]": "PAC tensor definitions (P, A, Δ, θ) and event tensors"
+  - "[event_system.py]": "Event queue, reconciliation boundaries, async executor"
+  - "[async_pac.py]": "Async PAC tree implementation for comparison with GAIA"

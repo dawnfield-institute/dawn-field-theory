@@ -1,0 +1,100 @@
+{
+  "experiment": "exp_06_gaia_integration",
+  "gaia_available": false,
+  "tests": [
+    {
+      "name": "initial_state",
+      "async_nodes": 51,
+      "async_total_P": 49.999998450279236,
+      "async_total_A": 0.0,
+      "async_conserved": "True"
+    },
+    {
+      "name": "async_execution",
+      "events_processed": 100,
+      "reconciliations": 0,
+      "max_asymmetry": 0.0,
+      "final_P": 7.294901461414559,
+      "final_A": 42.70509698886466,
+      "conserved": "True"
+    },
+    {
+      "name": "embedding_comparison",
+      "async_embeddings_stored": 10
+    },
+    {
+      "name": "v5_proposal",
+      "changes": [
+        {
+          "component": "PACNode",
+          "current": "delta: Tensor (embedding delta only)",
+          "proposed": "P, A, delta, theta: float (full PAC state)",
+          "rationale": "Enable asymmetric conservation tracking"
+        },
+        {
+          "component": "PACTree.graft_embeddings",
+          "current": "Synchronous, immediate conservation",
+          "proposed": "Queue events, reconcile at threshold",
+          "rationale": "Allow local asymmetry during batch operations"
+        },
+        {
+          "component": "PACTree.learn_transitions",
+          "current": "Synchronous update per sequence",
+          "proposed": "Event-driven, reconcile at \u039e threshold",
+          "rationale": "Better matches SEC collapse dynamics"
+        },
+        {
+          "component": "New: ReconciliationBoundary",
+          "current": "N/A",
+          "proposed": "delta_threshold=XI, triggers reconcile()",
+          "rationale": "Explicit reconciliation control"
+        },
+        {
+          "component": "New: EventQueue",
+          "current": "N/A",
+          "proposed": "Priority queue for PAC events",
+          "rationale": "Enable async execution model"
+        }
+      ],
+      "benefits": [
+        "True PAC-native execution (not sync approximation)",
+        "Local asymmetry during learning (more natural)",
+        "Reconciliation at \u039e threshold (physics-aligned)",
+        "Event-indexed state tracking (matches theory)"
+      ],
+      "risks": [
+        "May break existing tests (need migration)",
+        "Performance overhead of event queue",
+        "Complexity increase"
+      ],
+      "migration_path": [
+        "1. Add \u0394 buffer to existing PACNode (non-breaking)",
+        "2. Add optional event queue (default: immediate)",
+        "3. Add reconciliation boundary (default: every call)",
+        "4. Gradually increase async behavior"
+      ]
+    },
+    {
+      "name": "backward_compatibility",
+      "sync_mode_delta": 0.0,
+      "is_compatible": "True"
+    }
+  ],
+  "summary": {
+    "gaia_available": false,
+    "async_model_works": "True",
+    "backward_compatible": "True",
+    "recommendation": "Implement GAIA v5 with optional async PAC",
+    "priority": "Medium - architectural improvement, not urgent fix"
+  },
+  "_metadata": {
+    "script": "exp_06",
+    "timestamp": "2026-01-22T16:12:53.093772",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

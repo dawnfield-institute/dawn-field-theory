@@ -1,0 +1,93 @@
+{
+  "experiment": "exp_02_async_events",
+  "tests": [
+    {
+      "name": "basic_async",
+      "events_processed": 15,
+      "final_P": -15.96526441579337,
+      "final_A": 33.93316206638262,
+      "final_delta": 0.0,
+      "is_conserved": "True",
+      "max_asymmetry": 0.0,
+      "reconciliations": 1
+    },
+    {
+      "name": "local_asymmetry_observed",
+      "max_asymmetry": 0.0,
+      "nonzero_asymmetry_steps": 0,
+      "total_steps": 30,
+      "asymmetry_history": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "still_conserved": "True"
+    },
+    {
+      "name": "async_with_injection",
+      "injection_total": 0.8,
+      "C_before": 6.2256136552059385,
+      "C_after": 7.025613655205937,
+      "window_delta_A": 0.0,
+      "window_delta_P": 0.8,
+      "initial_P": 0.908304791183661,
+      "conserved_with_injection": "True"
+    },
+    {
+      "name": "ordering_independence",
+      "final_states": [
+        {
+          "seed": 42,
+          "P": -7.168097700226615,
+          "A": 16.711751880087288
+        },
+        {
+          "seed": 123,
+          "P": -7.168097700226615,
+          "A": 16.711751880087288
+        },
+        {
+          "seed": 456,
+          "P": -7.168097700226615,
+          "A": 16.711751880087288
+        }
+      ],
+      "P_consistent": "True",
+      "A_consistent": "True",
+      "order_independent": "True"
+    }
+  ],
+  "summary": {
+    "async_conservation_works": true,
+    "local_asymmetry_observed": false,
+    "order_independent": "True",
+    "model_validated": false
+  },
+  "_metadata": {
+    "script": "exp_02",
+    "timestamp": "2026-01-22T16:12:20.924955",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

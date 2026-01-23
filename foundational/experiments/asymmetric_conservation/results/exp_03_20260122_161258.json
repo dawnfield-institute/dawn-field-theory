@@ -1,0 +1,234 @@
+{
+  "experiment": "exp_03_delta_buffer",
+  "tests": [
+    {
+      "name": "delta_accumulation",
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "std_delta": 0.0,
+      "reconciliation_count": 0,
+      "delta_trace_sample": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reconciliation_points": []
+    },
+    {
+      "name": "threshold_sensitivity",
+      "results": [
+        {
+          "threshold": 0.1,
+          "reconciliations": 0,
+          "max_asymmetry": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "reconciliations": 0,
+          "max_asymmetry": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "reconciliations": 0,
+          "max_asymmetry": 0.0
+        },
+        {
+          "threshold": 1.0,
+          "reconciliations": 0,
+          "max_asymmetry": 0.0
+        },
+        {
+          "threshold": 1.0571198664289054,
+          "reconciliations": 0,
+          "max_asymmetry": 0.0
+        }
+      ]
+    },
+    {
+      "name": "per_node_distribution",
+      "node_deltas": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      },
+      "root_delta": 0.0,
+      "mean_child_delta": 0.0,
+      "root_is_largest": "True"
+    },
+    {
+      "name": "delta_zeroes_after_reconcile",
+      "delta_after_reconcile": [],
+      "final_delta": 0.0,
+      "all_zero": true
+    },
+    {
+      "name": "conservation_with_delta",
+      "all_conserved": true,
+      "max_error": 0.0,
+      "sample_checks": [
+        {
+          "step": 0,
+          "P": 7.3875814287033865,
+          "A": 11.953357846299586,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 1,
+          "P": 2.821805011107186,
+          "A": 16.519134263895786,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 2,
+          "P": 1.077833604618171,
+          "A": 18.263105670384803,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 3,
+          "P": 0.5282508586458478,
+          "A": 18.812688416357126,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 4,
+          "P": 0.5282508586458478,
+          "A": 18.812688416357126,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 5,
+          "P": 0.5282508586458478,
+          "A": 18.812688416357126,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 6,
+          "P": 0.5282508586458478,
+          "A": 18.812688416357126,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 7,
+          "P": 0.5282508586458478,
+          "A": 18.812688416357126,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 8,
+          "P": 0.5282508586458478,
+          "A": 18.812688416357126,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        },
+        {
+          "step": 9,
+          "P": 0.5282508586458478,
+          "A": 18.812688416357126,
+          "delta": 0.0,
+          "C": 19.340939275002974,
+          "error": 0.0,
+          "conserved": "True"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "delta_accumulates": "False",
+    "delta_zeroes": true,
+    "conservation_holds": true,
+    "root_accumulates_most": "True",
+    "model_confirmed": true
+  },
+  "_metadata": {
+    "script": "exp_03",
+    "timestamp": "2026-01-22T16:12:58.887824",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

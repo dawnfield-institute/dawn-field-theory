@@ -1,0 +1,115 @@
+{
+  "experiment": "exp_13_sec_xi",
+  "target_xi": 1.0571198664289054,
+  "tests": [
+    {
+      "name": "pure_sec",
+      "xi_attempts": [
+        {
+          "method": "|\u2207I|/|\u2207H|",
+          "value": 0,
+          "error": 1.0571198664289054
+        },
+        {
+          "method": "|S|/H",
+          "value": 6.560515579542925,
+          "error": 5.50339571311402
+        },
+        {
+          "method": "1 + CV(S)",
+          "value": 5.951068394071243,
+          "error": 4.893948527642338
+        },
+        {
+          "method": "I_density",
+          "value": 0.34,
+          "error": 0.7171198664289054
+        }
+      ]
+    },
+    {
+      "name": "sec_ratio_sweep",
+      "best_alpha": 1.1,
+      "best_beta": 0.5,
+      "best_ratio": 2.2,
+      "xi_error": 11.92260425508545
+    },
+    {
+      "name": "pac_sec_combined",
+      "results": [
+        {
+          "threshold": 0.1,
+          "collapses": 0,
+          "conservation_error": 0.0,
+          "xi_estimate": 0,
+          "xi_error": 999
+        },
+        {
+          "threshold": 0.3,
+          "collapses": 0,
+          "conservation_error": 0.0,
+          "xi_estimate": 0,
+          "xi_error": 999
+        },
+        {
+          "threshold": 0.5,
+          "collapses": 0,
+          "conservation_error": 0.0,
+          "xi_estimate": 0,
+          "xi_error": 999
+        },
+        {
+          "threshold": 0.8,
+          "collapses": 0,
+          "conservation_error": 0.0,
+          "xi_estimate": 0,
+          "xi_error": 999
+        },
+        {
+          "threshold": 1.0,
+          "collapses": 0,
+          "conservation_error": 0.0,
+          "xi_estimate": 0,
+          "xi_error": 999
+        },
+        {
+          "threshold": 1.5,
+          "collapses": 0,
+          "conservation_error": 0.0,
+          "xi_estimate": 0,
+          "xi_error": 999
+        }
+      ],
+      "best": {
+        "threshold": 0.1,
+        "collapses": 0,
+        "conservation_error": 0.0,
+        "xi_estimate": 0,
+        "xi_error": 999
+      }
+    },
+    {
+      "name": "sec_oscillation",
+      "dominant_period": 500.0,
+      "period_over_pi": 159.15494309189535
+    }
+  ],
+  "conclusion": {
+    "xi_emerges_from_sec": "NO - not trivially",
+    "xi_emerges_from_pac": "NO - eigenvalues give \u03c6 not \u039e",
+    "xi_nature": "Designed constant for PAC+SEC at Fibonacci depth 10",
+    "why_55": "F(10) = 55, natural depth for PAC trees",
+    "why_pi": "Natural phase for oscillatory SEC dynamics",
+    "interpretation": "\u039e marks the reconciliation threshold between \u03c6-PAC and \u03c0-SEC"
+  },
+  "_metadata": {
+    "script": "exp_13",
+    "timestamp": "2026-01-22T16:30:31.117853",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

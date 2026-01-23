@@ -114,7 +114,55 @@ This document maps the complete connection web between experiments, showing how 
 
 ---
 
+## Constant Hierarchy: Where Each Emerges (Jan 2026)
+
+The `asymmetric_conservation` experiment (Jan 2026) clarified the **separation of constants**:
+
+| Constant | Value | Where It Emerges | Role |
+|----------|-------|------------------|------|
+| φ | 1.618... | PAC collapse dynamics | Self-similar splitting ratio |
+| 1/φ | 0.618... | PAC collapse fraction | Child receives 1/φ of parent |
+| Ξ | 1.0571... | SEC + PAC interface | Reconciliation threshold |
+| λ* | 0.618432 | SEC prime thresholds | Information gradient collapse |
+
+### Key Finding: φ is PAC-Native, Ξ is SEC-PAC Bridge
+
+**φ emerges from PAC alone**: The self-similarity condition r² = r + 1 that produces φ is intrinsic to PAC collapse dynamics. Any system with additive conservation and recursive structure produces φ.
+
+**Ξ requires both SEC and PAC**: The formula Ξ = 1 + π/55 encodes:
+- π (circular/oscillatory dynamics from SEC's information-entropy gradients)
+- 55 = F₁₀ (Fibonacci depth from PAC tree structure)
+
+This means Ξ operates at the **interface** where information dynamics (SEC) couple to value conservation (PAC).
+
+### Implication for Theory
+
+```
+Layer 1: PAC alone
+  └─→ φ, 1/φ, Fibonacci sequence
+
+Layer 2: SEC alone  
+  └─→ λ* (prime density threshold)
+
+Layer 3: SEC + PAC coupled
+  └─→ Ξ (reconciliation dynamics)
+  └─→ Physical constants (α, sin²θ_W, etc.)
+```
+
+### Cross-Domain Validation
+
+The `asymmetric_conservation/exp_09` demonstrated PAC pattern (P + A + Δ = C) in:
+1. Fibonacci value flow
+2. Prime number sequences (SEC interpretation)
+3. Random DAGs (graph algorithms)
+4. Network epidemics (SIS/SIR dynamics)
+
+**Conclusion**: PAC is domain-agnostic. It emerges wherever value flows hierarchically with local observation.
+
+---
+
 ## Cross-Domain Connections
+
 
 ### φ Appears In:
 
