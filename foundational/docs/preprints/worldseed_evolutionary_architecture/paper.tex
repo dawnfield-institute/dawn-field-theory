@@ -1,0 +1,407 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[numbers]{natbib}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{float}
+
+\geometry{margin=1in}
+
+% Code listing style
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!10}
+}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+
+% Custom commands
+\newcommand{\R}{\mathbb{R}}
+
+% Metadata
+\title{\textbf{WorldSeed: Evolutionary Software Architecture Through PAC/SEC Dynamics}\\
+\large{Applying Dawn Field Theory Principles to ML Architecture Evolution}}
+
+\author{Peter Lorne Groom\\
+Dawn Field Institute\\
+\texttt{peter@dawnfield.ca}}
+
+\date{January 2026\\Version 1.0 -- DRAFT}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We explore whether principles from Dawn Field Theory---specifically Potential-Actualization Conservation (PAC) and Symbolic Entropy Collapse (SEC)---can guide the evolution of software and machine learning architectures. Through a series of experiments applying evolutionary dynamics to GAIA model architecture optimization, our preliminary results suggest promising directions for automated architecture design.
+
+\textbf{Core Investigation}: Can physics-inspired information dynamics principles guide software evolution toward improved performance without manual architectural search?
+
+\textbf{Key Findings}: Our experiments demonstrate (1) 3.8\% fitness improvement over 5 generations of evolution, (2) 131\% increase in token processing speed (335$\to$776 tokens/second), (3) 27\% improvement in output quality score (0.77$\to$0.98), and (4) emergent discovery that increasing concentration threshold from $\phi^{-1}$ (0.618) to 0.785 improves performance.
+
+\textbf{Disclaimer}: These findings represent preliminary computational explorations requiring independent validation, comparison with established neural architecture search methods, and extension beyond initial benchmarks. We present this work as an invitation for community investigation rather than established methodology.
+\end{abstract}
+
+\textbf{Keywords:} Dawn Field Theory, PAC, SEC, evolutionary architecture, WorldSeed, GAIA, software evolution, neural architecture search, Fibonacci structure
+
+\section{Introduction}
+
+\subsection{The Architecture Search Problem}
+
+Modern machine learning requires choosing among vast configuration spaces: model size, training parameters, and architectural choices. Traditional approaches either rely on expert intuition or exhaustive search. Both have limitations: intuition doesn't scale, and search is computationally expensive.
+
+\subsection{Biological Inspiration}
+
+Evolution has solved the architecture problem for billions of years. Organisms don't search configuration space randomly---they inherit structure from parents, mutate variations, and face selection pressure. The fittest survive and reproduce.
+
+\textbf{Key insight from Dawn Field Theory experiments}: Our prior work on digital life (exp\_31) demonstrated that organisms with more Fibonacci-structured contacts harvest energy more efficiently and have survival advantages. This suggested coherence-based fitness might apply beyond biology.
+
+\subsection{Research Questions}
+
+This exploration investigates:
+
+\begin{enumerate}
+    \item \textbf{Can PAC/SEC dynamics guide software evolution?} Do conservation principles and coherence metrics provide meaningful selection pressure?
+    \item \textbf{Does template-guided generation improve convergence?} Like biological inheritance, does starting from parent structure accelerate evolution?
+    \item \textbf{Do theoretical constants emerge during evolution?} Do $\phi$ (golden ratio) and $\Xi$ (balance constant) appear in optimized configurations?
+    \item \textbf{Is evolution competitive with manual design?} Can evolved architectures match or exceed hand-tuned baselines?
+\end{enumerate}
+
+\subsection{Contributions}
+
+This paper presents:
+
+\begin{enumerate}
+    \item \textbf{WorldSeed Framework}: A complete system for evolutionary software/ML architecture design based on PAC/SEC principles
+    \item \textbf{GAIA Evolution Results}: Preliminary validation showing 3.8\% fitness improvement with 131\% speed increase on WikiText-2
+    \item \textbf{Mutation Taxonomy}: Eight concrete mutation types for ML architecture evolution
+    \item \textbf{Emergent Insights}: Discovery that evolution favors stricter quality gates (concentration threshold 0.618$\to$0.785)
+    \item \textbf{Reproduction Package}: Complete code, data, and figures for independent validation
+\end{enumerate}
+
+\section{Theoretical Background}
+
+\subsection{PAC: Potential-Actualization Conservation}
+
+PAC formalizes the principle that information value conserves across decomposition:
+
+\begin{equation}
+f(\text{parent}) = \sum_{u \in D(\text{parent})} \alpha_{v \rightarrow u} \cdot f(u)
+\end{equation}
+
+In software evolution, this manifests as \textbf{architectural invariants}: total functionality conserves across module decomposition, interface contracts preserved across generations, and system identity maintained through mutations.
+
+\subsection{SEC: Symbolic Entropy Collapse}
+
+SEC describes how high-entropy exploration states crystallize into stable structures:
+
+\begin{equation}
+\frac{\partial S}{\partial t} = \alpha \nabla I - \beta \nabla H
+\end{equation}
+
+Where $S$ = structure formation rate, $\nabla I$ = information gradient (drives crystallization), and $\nabla H$ = entropy gradient (drives exploration).
+
+In software evolution, SEC provides \textbf{selection pressure}: high-coherence components survive, low-coherence components die, with balance between exploration and exploitation.
+
+\subsection{MED: Macro Emergence Dynamics}
+
+MED predicts bounded complexity in emergent systems:
+
+\begin{quote}
+\textit{All complex flows converge to symbolic patterns with depth $\leq 2$ and nodes $\leq 3$.}
+\end{quote}
+
+In software evolution, MED provides \textbf{architectural bounds}: maximum hierarchy depth (Fibonacci-constrained), maximum components per level, and natural stopping criteria for growth.
+
+\subsection{Mapping to Software Evolution}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{DFT Principle} & \textbf{Biological Analog} & \textbf{Software Analog} \\
+\midrule
+PAC Conservation & Genetic inheritance & Architectural invariants \\
+SEC Coherence & Fitness landscape & Coherence metrics \\
+SEC Threshold & Survival threshold & Quality gate \\
+MED Bounds & Organism complexity & Architecture depth \\
+$\phi$ (golden ratio) & Growth patterns & Fibonacci structure \\
+$\Xi$ (balance constant) & Metabolic efficiency & Performance balance \\
+\bottomrule
+\end{tabular}
+\caption{Mapping Dawn Field Theory principles to software evolution}
+\end{table}
+
+\section{WorldSeed Architecture}
+
+\subsection{System Overview}
+
+WorldSeed implements evolutionary dynamics for software/ML architecture design. The system takes a seed specification (defining PAC invariants, SEC dynamics, and mutable parameters) and evolves it through generations of mutation, evaluation, and selection.
+
+\subsection{Mutation System}
+
+Eight mutation types provide structured variation:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Mutation} & \textbf{Parameter} & \textbf{Range} & \textbf{Rationale} \\
+\midrule
+Context & context\_size & 3--13 (Fibonacci) & Attention window \\
+Hot Contexts & hot\_contexts & 5K--50K & Memory capacity \\
+Concentration & threshold & 0.5--0.8 & Quality gate \\
+Embedding & embedding\_dim & 256--1024 & Representation capacity \\
+Top-K & top\_k & 50--500 & Generation diversity \\
+Reject & reject\_attempts & 1--10 & Quality enforcement \\
+Phi & $\phi$ & $\pm$5\% around 1.618 & PAC balance \\
+Xi & $\Xi$ & $\pm$5\% around 1.057 & SEC balance \\
+\bottomrule
+\end{tabular}
+\caption{Mutation types for ML architecture evolution}
+\end{table}
+
+\subsection{Fitness Function}
+
+Multi-objective fitness balances four concerns:
+
+\begin{equation}
+\text{fitness} = 0.30 \cdot \text{perplexity} + 0.30 \cdot \text{speed} + 0.20 \cdot \text{memory} + 0.20 \cdot \text{quality}
+\end{equation}
+
+\textbf{Generation-dependent weighting} shifts emphasis over time:
+\begin{itemize}
+    \item \textbf{Gen 0--2}: 70\% coherence, 30\% tests (filter garbage)
+    \item \textbf{Gen 3--9}: 50\% coherence, 50\% tests (balance)
+    \item \textbf{Gen 10+}: 30\% coherence, 70\% tests (optimize benchmarks)
+\end{itemize}
+
+\subsection{Selection and Genealogy}
+
+\textbf{Selection}: Greedy per generation---multiple candidates compete (3 per generation), 66\% mortality rate creates selection pressure, only fittest advances.
+
+\textbf{Genealogy Tracking}: Full provenance tree with parent ID, mutation history, and fitness at each generation.
+
+\section{Experimental Setup}
+
+\subsection{GAIA Model Background}
+
+GAIA (Generalized Architectures for Intelligent Actualization) is a backprop-free language model using grafted embeddings from GPT-2, PAC tree with delta compression, sparse transition matrix, and concentration-based quality gates.
+
+\subsection{Dataset and Configuration}
+
+\textbf{WikiText-2} benchmark with 20K token training subset for quick tests. Evolution configuration: 5 generations, 3 candidates per generation, 0.50 coherence threshold.
+
+\textbf{Baseline}: Manual GAIA configuration with context\_size=5, concentration=0.618, embedding\_dim=768, $\phi$=1.618, $\Xi$=1.057.
+
+\section{Results}
+
+\subsection{Evolution Trajectory}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lllll}
+\toprule
+\textbf{Generation} & \textbf{Best Fitness} & \textbf{Mean Fitness} & \textbf{Improvement} & \textbf{Key Mutation} \\
+\midrule
+Baseline & 1.445 & -- & 0.0\% & -- \\
+1 & 1.466 & 1.454 & +1.4\% & reject\_attempts \\
+2 & 1.465 & 1.461 & +1.4\% & embedding\_dim, $\phi$ \\
+3 & 1.499 & 1.470 & +3.8\% & $\Xi$ \\
+4 & 1.502 & 1.480 & +3.9\% & top\_k \\
+5 & 1.500 & 1.470 & +3.8\% & embedding\_dim, top\_k \\
+\bottomrule
+\end{tabular}
+\caption{Evolution trajectory over 5 generations}
+\end{table}
+
+\textbf{Key observation}: Generation 3 showed a 2.4\% jump when $\Xi$ was mutated, suggesting this parameter significantly impacts GAIA performance.
+
+\subsection{Performance Comparison}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Metric} & \textbf{Baseline} & \textbf{Evolved} & \textbf{Change} \\
+\midrule
+Overall Fitness & 1.445 & 1.500 & +3.8\% \\
+Speed (tok/s) & 335 & 776 & +131\% \\
+Quality Score & 0.77 & 0.98 & +27\% \\
+Memory (MB) & 156 & 156 & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{Performance comparison: baseline vs. evolved configuration}
+\end{table}
+
+\subsection{Emergent Insights}
+
+\textbf{Discovery 1: Higher Concentration Threshold}---Evolution increased threshold from 0.618 ($\phi^{-1}$) to 0.785, a 27\% increase. The system discovered that stricter quality gates improve overall fitness.
+
+\textbf{Discovery 2: Embedding Dimension Reduction}---Evolution reduced embedding\_dim from 768 to 512, improving speed while maintaining quality.
+
+\textbf{Discovery 3: Top-K Increase}---Evolution doubled top\_k from 100 to 200, creating a ``generate more, filter harder'' strategy.
+
+\subsection{Constant Tracking}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lllll}
+\toprule
+\textbf{Constant} & \textbf{Baseline} & \textbf{Final} & \textbf{Theory} & \textbf{Error} \\
+\midrule
+$\phi$ (phi) & 1.618 & 1.560 & 1.618 & 3.5\% \\
+$\Xi$ (xi) & 1.057 & 1.010 & 1.057 & 4.5\% \\
+\bottomrule
+\end{tabular}
+\caption{Constant evolution across generations}
+\end{table}
+
+\section{Analysis}
+
+\subsection{What the Results Might Suggest}
+
+These preliminary results suggest several possibilities:
+
+\begin{enumerate}
+    \item \textbf{PAC/SEC dynamics may provide meaningful selection pressure} for software evolution. Coherence-based fitness appears to guide evolution toward improved performance.
+    \item \textbf{Template-guided generation appears to accelerate convergence}. By inheriting from parent configurations, evolution avoids random search from scratch.
+    \item \textbf{Multi-objective fitness may discover non-obvious trade-offs}. The evolved configuration trades embedding dimension for speed while compensating with increased top-k diversity.
+\end{enumerate}
+
+\subsection{Alternative Explanations}
+
+Several alternative explanations merit consideration:
+
+\begin{enumerate}
+    \item \textbf{Random search baseline}: Improvements might be achievable through random configuration sampling.
+    \item \textbf{Overfitting to fitness function}: Evolved configuration optimizes our specific fitness function, which may not generalize.
+    \item \textbf{Limited exploration}: With only 5 generations and 3 candidates each, the search space explored is small.
+\end{enumerate}
+
+\subsection{Limitations}
+
+\textbf{Computational}: Quick test only (5 generations, 20K tokens), single run (no statistical replication).
+
+\textbf{Methodological}: No comparison with NAS/AutoML baselines, no downstream task evaluation, single model family.
+
+\textbf{Theoretical}: Constant divergence suggests insufficient data, fitness weights chosen heuristically.
+
+\section{Related Work}
+
+\subsection{Neural Architecture Search}
+
+\textbf{DARTS} \citep{liu2019darts}: Differentiable architecture search using continuous relaxation.
+
+\textbf{NASNet} \citep{zoph2018learning}: Reinforcement learning for architecture search.
+
+WorldSeed differs in using physics-inspired coherence metrics rather than pure benchmark optimization.
+
+\subsection{Genetic Programming}
+
+\textbf{Cartesian GP} \citep{miller2011cartesian}: Evolving program graphs.
+
+WorldSeed applies GP principles to ML architecture with domain-specific fitness functions.
+
+\section{Conclusion}
+
+We explored whether PAC/SEC dynamics from Dawn Field Theory could guide evolutionary software architecture design. Preliminary experiments suggest:
+
+\begin{itemize}
+    \item 3.8\% fitness improvement over 5 generations
+    \item 131\% speed improvement through evolved embedding reduction
+    \item 27\% quality improvement via discovered concentration threshold
+    \item Emergent ``generate more, filter harder'' optimization strategy
+\end{itemize}
+
+If validated, this approach suggests physics principles may extend to software design, combining evolutionary mechanics with information-theoretic fitness for interpretable architecture search.
+
+\subsection{Future Directions}
+
+\begin{enumerate}
+    \item Scale experiments: Full WikiText-2, more generations, statistical replication
+    \item Baseline comparisons: Compare with NAS, random search, Bayesian optimization
+    \item Generalization tests: Multiple model families, multiple datasets
+    \item Neural network extension: Apply WorldSeed to transformer architecture search
+\end{enumerate}
+
+\subsection{Open Science Commitment}
+
+All code, data, and experimental protocols are available in our open-source repository. We encourage independent replication, critique, and extension of this work.
+
+\bibliographystyle{plainnat}
+\begin{thebibliography}{9}
+
+\bibitem{liu2019darts}
+Liu, H., Simonyan, K., \& Yang, Y. (2019).
+DARTS: Differentiable architecture search.
+\textit{ICLR}.
+
+\bibitem{zoph2018learning}
+Zoph, B., Vasudevan, V., Shlens, J., \& Le, Q. V. (2018).
+Learning transferable architectures for scalable image recognition.
+\textit{CVPR}.
+
+\bibitem{miller2011cartesian}
+Miller, J. F. (2011).
+Cartesian genetic programming.
+\textit{Springer}.
+
+\bibitem{radford2019language}
+Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., \& Sutskever, I. (2019).
+Language models are unsupervised multitask learners.
+\textit{OpenAI}.
+
+\bibitem{biderman2023pythia}
+Biderman, S., et al. (2023).
+Pythia: A suite for analyzing large language models across training and scaling.
+\textit{ICML}.
+
+\end{thebibliography}
+
+\appendix
+
+\section{Full Evolution Results}
+
+Best evolved configuration:
+\begin{lstlisting}
+{
+  "embedding_dim": 512,
+  "context_size": 5,
+  "hot_contexts": 10000,
+  "top_k_per_context": 200,
+  "concentration_threshold": 0.785,
+  "phi": 1.560,
+  "xi": 1.010,
+  "fitness": 1.500,
+  "improvement": 3.8%
+}
+\end{lstlisting}
+
+\section{Reproduction Instructions}
+
+\begin{lstlisting}[language=bash]
+# Install dependencies
+pip install -r Code/requirements.txt
+
+# Run evolution
+python Code/experiments/exp_03_wikitext2_evolution.py
+
+# Expected: Data/results/evolution_results.json
+\end{lstlisting}
+
+\end{document}

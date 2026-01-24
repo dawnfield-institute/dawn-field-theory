@@ -1,0 +1,165 @@
+{
+  "experiment": "worldseed_wikitext2_evolution",
+  "paper_version": "1.0",
+  "date": "2026-01-24",
+  "best_config": {
+    "embedding_source": "gpt2",
+    "embedding_dim": 512,
+    "vocab_size": 50257,
+    "tree_depth": 1,
+    "delta_compression": "none",
+    "context_size": 5,
+    "hot_contexts": 10000,
+    "top_k_per_context": 200,
+    "concentration_threshold": 0.785,
+    "reject_attempts": 3,
+    "phi": 1.5604674190850831,
+    "xi": 1.0097609980105087,
+    "lambda_star": 0.618432,
+    "generation": 5,
+    "parent_id": "gen4",
+    "mutation_history": [
+      "reject_attempts",
+      "embedding_dim",
+      "phi",
+      "hot_contexts",
+      "concentration",
+      "reject_attempts",
+      "phi",
+      "xi",
+      "concentration",
+      "embedding_dim",
+      "top_k"
+    ]
+  },
+  "best_fitness": {
+    "perplexity": 5003075584.0,
+    "speed": 776.0302840797658,
+    "memory": 156.2289276123047,
+    "quality": 0.9813626435660026,
+    "overall_fitness": 1.4997260915158193,
+    "metrics": {
+      "context_size": 5,
+      "concentration_threshold": 0.7850901148528021,
+      "phi": 1.5604674190850831,
+      "xi": 1.0097609980105087,
+      "train_time": 0.9169316291809082
+    }
+  },
+  "baseline_fitness": {
+    "perplexity": 5003075584.0,
+    "speed": 335.3165729836295,
+    "memory": 156.2289276123047,
+    "quality": 0.7725,
+    "overall_fitness": 1.4447321514697347,
+    "metrics": {
+      "context_size": 5,
+      "concentration_threshold": 0.618,
+      "phi": 1.618033988749895,
+      "xi": 1.0571,
+      "train_time": 0.7745583057403564
+    }
+  },
+  "improvement_percentage": 3.806514584045142,
+  "evolution_history": [
+    {
+      "generation": 1,
+      "population_size": 3,
+      "best_fitness": 1.465571135251854,
+      "mean_fitness": 1.4553603415499647,
+      "worst_fitness": 1.435099750171544,
+      "mean_phi": 1.618033988749895,
+      "mean_xi": 1.0571,
+      "mean_lambda": 0.618432,
+      "mutations_applied": ["reject_attempts"],
+      "timestamp": "2026-01-24T13:02:16.017031",
+      "improvement_percentage": 1.4424115751088928
+    },
+    {
+      "generation": 2,
+      "population_size": 3,
+      "best_fitness": 1.465483145052685,
+      "mean_fitness": 1.4610938656271018,
+      "worst_fitness": 1.453294898181858,
+      "mean_phi": 1.6105475439669659,
+      "mean_xi": 1.0463983841649107,
+      "mean_lambda": 0.618432,
+      "mutations_applied": ["reject_attempts", "embedding_dim", "phi"],
+      "timestamp": "2026-01-24T13:02:23.420450",
+      "improvement_percentage": 1.4363211590355625
+    },
+    {
+      "generation": 3,
+      "population_size": 3,
+      "best_fitness": 1.4991862267271021,
+      "mean_fitness": 1.472209948484439,
+      "worst_fitness": 1.4497550874318448,
+      "mean_phi": 1.5838722426290992,
+      "mean_xi": 1.0413203326701694,
+      "mean_lambda": 0.618432,
+      "mutations_applied": ["xi"],
+      "timestamp": "2026-01-24T13:02:31.145792",
+      "improvement_percentage": 3.7691467724291217
+    },
+    {
+      "generation": 4,
+      "population_size": 3,
+      "best_fitness": 1.5015237836204456,
+      "mean_fitness": 1.4802512373557521,
+      "worst_fitness": 1.4639991459259416,
+      "mean_phi": 1.5604674190850831,
+      "mean_xi": 1.0097609980105087,
+      "mean_lambda": 0.618432,
+      "mutations_applied": ["top_k"],
+      "timestamp": "2026-01-24T13:02:39.423137",
+      "improvement_percentage": 3.9309454069348826
+    },
+    {
+      "generation": 5,
+      "population_size": 3,
+      "best_fitness": 1.4997260915158193,
+      "mean_fitness": 1.4701569733054534,
+      "worst_fitness": 1.4179536795750074,
+      "mean_phi": 1.5604674190850831,
+      "mean_xi": 1.0251127078417188,
+      "mean_lambda": 0.618432,
+      "mutations_applied": ["embedding_dim", "top_k"],
+      "timestamp": "2026-01-24T13:02:48.915746",
+      "improvement_percentage": 3.806514584045151
+    }
+  ],
+  "constant_convergence": {
+    "phi_final": 1.5604674190850831,
+    "phi_theory": 1.618033988749895,
+    "phi_error_percent": 3.56,
+    "xi_final": 1.0097609980105087,
+    "xi_theory": 1.0571,
+    "xi_error_percent": 4.48
+  },
+  "key_findings": {
+    "concentration_evolution": {
+      "baseline": 0.618,
+      "evolved": 0.785,
+      "change_percent": 27.0,
+      "interpretation": "Evolution discovered stricter quality gates improve overall fitness"
+    },
+    "speed_improvement": {
+      "baseline_tok_per_sec": 335.3,
+      "evolved_tok_per_sec": 776.0,
+      "change_percent": 131.4,
+      "interpretation": "Reduced embedding dimension improves speed without quality loss"
+    },
+    "quality_improvement": {
+      "baseline": 0.773,
+      "evolved": 0.981,
+      "change_percent": 27.0,
+      "interpretation": "Higher concentration threshold improves output quality"
+    },
+    "mutation_breakthrough": {
+      "generation": 3,
+      "mutation": "xi",
+      "fitness_jump_percent": 2.3,
+      "interpretation": "Ξ (xi) appears to be a critical parameter for GAIA performance"
+    }
+  }
+}
