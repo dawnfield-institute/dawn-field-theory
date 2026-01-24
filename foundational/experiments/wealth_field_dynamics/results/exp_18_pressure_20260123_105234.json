@@ -1,0 +1,173 @@
+{
+  "experiment": "exp_18_non_equilibrium_pressure",
+  "timestamp": "2026-01-23T10:52:34.986540",
+  "key_insight": "Constants mark equilibrium; deviation is the signal",
+  "pressures_phi2": [
+    {
+      "ratio": 1.7051,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.9129339887498948,
+      "relative_pressure": -0.3487097542174457,
+      "pressure_pct": 34.87097542174457,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 1.831,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.7870339887498949,
+      "relative_pressure": -0.3006202334010575,
+      "pressure_pct": 30.062023340105746,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.0422,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.5758339887498951,
+      "relative_pressure": -0.21994901182503535,
+      "pressure_pct": 21.994901182503533,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.4863,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.13173398874989495,
+      "relative_pressure": -0.0503179062288636,
+      "pressure_pct": 5.031790622886359,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.3481,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.2699339887498948,
+      "relative_pressure": -0.10310560898362808,
+      "pressure_pct": 10.310560898362809,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.3149,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.3031339887498947,
+      "relative_pressure": -0.11578688055713153,
+      "pressure_pct": 11.578688055713153,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.1398,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.47823398874989476,
+      "relative_pressure": -0.18266912912702496,
+      "pressure_pct": 18.266912912702495,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.1795,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.4385339887498949,
+      "relative_pressure": -0.16750507848039584,
+      "pressure_pct": 16.750507848039582,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.229,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.3890339887498948,
+      "relative_pressure": -0.1485977609235156,
+      "pressure_pct": 14.85977609235156,
+      "direction": "depleting"
+    },
+    {
+      "ratio": 2.3177,
+      "equilibrium": 2.618033988749895,
+      "delta": -0.30033398874989503,
+      "relative_pressure": -0.11471737572563136,
+      "pressure_pct": 11.471737572563136,
+      "direction": "depleting"
+    }
+  ],
+  "pressures_phi": [
+    {
+      "ratio": 1.7051,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.08706601125010516,
+      "relative_pressure": 0.05380975421744571,
+      "pressure_pct": 5.380975421744571,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 1.831,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.21296601125010506,
+      "relative_pressure": 0.1316202334010574,
+      "pressure_pct": 13.16202334010574,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.0422,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.4241660112501049,
+      "relative_pressure": 0.2621490118250351,
+      "pressure_pct": 26.214901182503507,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.4863,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.868266011250105,
+      "relative_pressure": 0.5366179062288635,
+      "pressure_pct": 53.66179062288635,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.3481,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.7300660112501052,
+      "relative_pressure": 0.4512056089836281,
+      "pressure_pct": 45.12056089836281,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.3149,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.6968660112501053,
+      "relative_pressure": 0.43068688055713167,
+      "pressure_pct": 43.06868805571317,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.1398,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.5217660112501052,
+      "relative_pressure": 0.322469129127025,
+      "pressure_pct": 32.246912912702506,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.1795,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.5614660112501051,
+      "relative_pressure": 0.34700507848039575,
+      "pressure_pct": 34.70050784803958,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.229,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.6109660112501052,
+      "relative_pressure": 0.3775977609235156,
+      "pressure_pct": 37.75977609235156,
+      "direction": "accumulating"
+    },
+    {
+      "ratio": 2.3177,
+      "equilibrium": 1.618033988749895,
+      "delta": 0.699666011250105,
+      "relative_pressure": 0.43241737572563116,
+      "pressure_pct": 43.24173757256312,
+      "direction": "accumulating"
+    }
+  ],
+  "mean_pressure_phi2": -0.17519787394697298,
+  "std_pressure": 0.0875455468666529,
+  "trajectory": "converging_to_phi_squared",
+  "estimated_phi2_arrival": 2042
+}

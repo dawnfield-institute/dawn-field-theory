@@ -1,0 +1,259 @@
+{
+  "experiment": "exp_01_movielens_validation",
+  "timestamp": "20260120_214249",
+  "phases": {
+    "data_loading": {
+      "n_samples": 10000,
+      "feature_spaces": {
+        "genres": 19,
+        "temporal": 2,
+        "rating_stats": 2,
+        "tags": 50
+      },
+      "target": "rating_mean"
+    },
+    "convergence_full": {
+      "mean": 0.002611507936507936,
+      "std": 0.002547328231765466,
+      "min": 0.0003888888888888888,
+      "max": 0.007041666666666667,
+      "median": 0.0012950396825396825,
+      "q25": 0.0005222222222222221,
+      "q75": 0.005126190476190476,
+      "n_above_threshold": "0",
+      "n_total": 12,
+      "fraction_structured": 0.0,
+      "has_exploitable_structure": "False"
+    },
+    "convergence_pairs": [
+      {
+        "source_space": "genres",
+        "target_space": "temporal",
+        "convergence": 0.007041666666666667,
+        "entropy_proxy": 0.9929583333333334,
+        "is_high_convergence": false,
+        "n_source_features": 19,
+        "n_target_features": 2,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "temporal",
+        "target_space": "genres",
+        "convergence": 0.007041666666666667,
+        "entropy_proxy": 0.9929583333333334,
+        "is_high_convergence": false,
+        "n_source_features": 2,
+        "n_target_features": 19,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "genres",
+        "target_space": "rating_stats",
+        "convergence": 0.0005222222222222221,
+        "entropy_proxy": 0.9994777777777778,
+        "is_high_convergence": false,
+        "n_source_features": 19,
+        "n_target_features": 2,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "rating_stats",
+        "target_space": "genres",
+        "convergence": 0.0005222222222222221,
+        "entropy_proxy": 0.9994777777777778,
+        "is_high_convergence": false,
+        "n_source_features": 2,
+        "n_target_features": 19,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "genres",
+        "target_space": "tags",
+        "convergence": 0.005126190476190476,
+        "entropy_proxy": 0.9948738095238095,
+        "is_high_convergence": false,
+        "n_source_features": 19,
+        "n_target_features": 50,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "tags",
+        "target_space": "genres",
+        "convergence": 0.005126190476190476,
+        "entropy_proxy": 0.9948738095238095,
+        "is_high_convergence": false,
+        "n_source_features": 50,
+        "n_target_features": 19,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "temporal",
+        "target_space": "rating_stats",
+        "convergence": 0.0003888888888888888,
+        "entropy_proxy": 0.9996111111111111,
+        "is_high_convergence": false,
+        "n_source_features": 2,
+        "n_target_features": 2,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "rating_stats",
+        "target_space": "temporal",
+        "convergence": 0.0003888888888888888,
+        "entropy_proxy": 0.9996111111111111,
+        "is_high_convergence": false,
+        "n_source_features": 2,
+        "n_target_features": 2,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "temporal",
+        "target_space": "tags",
+        "convergence": 0.0009694444444444444,
+        "entropy_proxy": 0.9990305555555555,
+        "is_high_convergence": false,
+        "n_source_features": 2,
+        "n_target_features": 50,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "tags",
+        "target_space": "temporal",
+        "convergence": 0.0009694444444444444,
+        "entropy_proxy": 0.9990305555555555,
+        "is_high_convergence": false,
+        "n_source_features": 50,
+        "n_target_features": 2,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "rating_stats",
+        "target_space": "tags",
+        "convergence": 0.0016206349206349206,
+        "entropy_proxy": 0.9983793650793651,
+        "is_high_convergence": false,
+        "n_source_features": 2,
+        "n_target_features": 50,
+        "n_samples": 10000,
+        "k": 5
+      },
+      {
+        "source_space": "tags",
+        "target_space": "rating_stats",
+        "convergence": 0.0016206349206349206,
+        "entropy_proxy": 0.9983793650793651,
+        "is_high_convergence": false,
+        "n_source_features": 50,
+        "n_target_features": 2,
+        "n_samples": 10000,
+        "k": 5
+      }
+    ],
+    "model_without_hidden": {
+      "hidden_space": "genres",
+      "remaining_spaces": [
+        "temporal",
+        "rating_stats",
+        "tags"
+      ],
+      "n_remaining_features": 54,
+      "r2": 0.8226955907086136
+    },
+    "residual_without_hidden": {
+      "mean_residual": 0.010927530765476763,
+      "std_residual": 0.19911975069696647,
+      "conservation_quality": 0.8610159248359678,
+      "n_clusters": 1,
+      "systematic_fraction": 1.0
+    },
+    "residual_correlation": {
+      "n_significant": 8,
+      "max_correlation": 0.09890789670563327,
+      "top_correlations": [
+        {
+          "feature": "genre_Documentary",
+          "correlation": 0.09890789670563327,
+          "p_value": 9.362338655005896e-06,
+          "significant": true
+        },
+        {
+          "feature": "genre_Animation",
+          "correlation": 0.09585408611020106,
+          "p_value": 1.755337061456386e-05,
+          "significant": true
+        },
+        {
+          "feature": "genre_Children",
+          "correlation": 0.07577956251994616,
+          "p_value": 0.0006945436131911385,
+          "significant": true
+        },
+        {
+          "feature": "genre_Fantasy",
+          "correlation": 0.06706745299947225,
+          "p_value": 0.002692257223770497,
+          "significant": true
+        },
+        {
+          "feature": "genre_Action",
+          "correlation": 0.05944961337242817,
+          "p_value": 0.007828981106033993,
+          "significant": true
+        }
+      ],
+      "h1_validated": true
+    },
+    "with_hidden_added": {
+      "r2_with": 0.8229526522787676,
+      "r2_improvement": 0.00025706157015392694,
+      "mean_residual_with": 0.012041474421487309,
+      "residual_reduction_pct": 0.14397200987631192,
+      "h2_validated": "False"
+    },
+    "hypothesis_generation": {
+      "n_hypotheses": 4,
+      "top_hypotheses": [
+        {
+          "type": "unexplored",
+          "description": "Space 'genres' has low convergence with 3 target spaces",
+          "confidence": 0.4
+        },
+        {
+          "type": "unexplored",
+          "description": "Space 'temporal' has low convergence with 3 target spaces",
+          "confidence": 0.4
+        },
+        {
+          "type": "unexplored",
+          "description": "Space 'rating_stats' has low convergence with 3 target spaces",
+          "confidence": 0.4
+        },
+        {
+          "type": "unexplored",
+          "description": "Space 'tags' has low convergence with 3 target spaces",
+          "confidence": 0.4
+        }
+      ]
+    }
+  },
+  "summary": {
+    "h1_validated": true,
+    "h2_validated": "False",
+    "overall_success": "False",
+    "r2_without": 0.8226955907086136,
+    "r2_with": 0.8229526522787676,
+    "residual_reduction_pct": 0.14397200987631192,
+    "n_significant_correlations": 8,
+    "mean_convergence": 0.002611507936507936
+  }
+}

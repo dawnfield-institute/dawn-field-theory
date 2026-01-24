@@ -1,0 +1,30 @@
+{
+  "experiment": "exp_08d_xi_threshold_suppression",
+  "timestamp": "2026-01-23T09:27:17.931417",
+  "epistemic_status": "exploratory hypothesis generation",
+  "baseline_gini": 0.37,
+  "xi_threshold": 1.0571198664289054,
+  "threshold_gini": 0.391134350578695,
+  "current_gini": 0.55,
+  "current_ratio": 1.4864864864864866,
+  "observations": {
+    "threshold_crossed": "early 1980s",
+    "interventions_counted": 10,
+    "crises_counted": 5,
+    "intervention_ratio": 2.0
+  },
+  "interpretations": [
+    "Natural cycle (no intervention effect)",
+    "Threshold dynamics (\u039e-related)",
+    "Intervention-accumulation",
+    "Spurious correlation"
+  ],
+  "caveats": [
+    "Correlation not causation",
+    "Simplified data model",
+    "\u039e-application is speculative",
+    "Economic complexity not captured",
+    "Requires domain expert validation"
+  ],
+  "call_to_action": "Invite economist review of these patterns"
+}

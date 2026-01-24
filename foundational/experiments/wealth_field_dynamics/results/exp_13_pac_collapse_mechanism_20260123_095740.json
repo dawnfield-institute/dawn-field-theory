@@ -1,0 +1,32 @@
+{
+  "experiment": "exp_13_pac_collapse_mechanism",
+  "timestamp": "2026-01-23T09:57:40.367266",
+  "purpose": "Connect exp_12 response type finding to PAC collapse dynamics",
+  "constants": {
+    "phi": 1.618033988749895,
+    "phi_inv": 0.6180339887498948,
+    "xi": 1.0571198664289054,
+    "within_per_level": -0.028263456486708582,
+    "pi_over_55": 0.057119866428905326
+  },
+  "simulation": {
+    "no_collapse": {
+      "description": "Collapse always prevented (pure stabilization)",
+      "final_stress": 1.3872630473719305,
+      "final_gini": 1.0436315236859652,
+      "max_stress": 1.3872630473719305
+    },
+    "periodic_collapse": {
+      "description": "Collapse permitted when stress > \u039e (redistributive)",
+      "final_stress": 0.023773908082437643,
+      "final_gini": 0.3618869540412188,
+      "max_stress": 0.05686683489013859
+    },
+    "threshold_stabilize": {
+      "description": "Collapse prevented unless stress >> \u039e (delayed)",
+      "final_stress": 0.10947942237156089,
+      "final_gini": 0.40473971118578045,
+      "max_stress": 0.1483125654547054
+    }
+  }
+}

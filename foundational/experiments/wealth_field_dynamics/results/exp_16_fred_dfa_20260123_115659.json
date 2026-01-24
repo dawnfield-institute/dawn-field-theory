@@ -1,0 +1,709 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-23T11:56:59.615300",
+    "data_source": "Federal Reserve DFA",
+    "years": [
+      1989,
+      1992,
+      1995,
+      1998,
+      2001,
+      2004,
+      2007,
+      2010,
+      2013,
+      2016,
+      2019,
+      2022,
+      2025
+    ],
+    "constants": {
+      "phi": 1.618033988749895,
+      "phi_squared": 2.618033988749895,
+      "xi": 1.0571198664289054
+    }
+  },
+  "raw_shares": [
+    {
+      "year": 1989,
+      "top_1_pct": 23.5,
+      "next_9_pct": 35.1,
+      "next_40_pct": 35.8,
+      "bottom_50_pct": 3.6,
+      "top_10_pct": 58.6
+    },
+    {
+      "year": 1992,
+      "top_1_pct": 28.6,
+      "next_9_pct": 33.8,
+      "next_40_pct": 32.9,
+      "bottom_50_pct": 4.0,
+      "top_10_pct": 62.4
+    },
+    {
+      "year": 1995,
+      "top_1_pct": 27.8,
+      "next_9_pct": 34.8,
+      "next_40_pct": 32.8,
+      "bottom_50_pct": 3.7,
+      "top_10_pct": 62.599999999999994
+    },
+    {
+      "year": 1998,
+      "top_1_pct": 28.5,
+      "next_9_pct": 34.7,
+      "next_40_pct": 32.3,
+      "bottom_50_pct": 3.5,
+      "top_10_pct": 63.2
+    },
+    {
+      "year": 2001,
+      "top_1_pct": 29.4,
+      "next_9_pct": 35.1,
+      "next_40_pct": 31.3,
+      "bottom_50_pct": 3.3,
+      "top_10_pct": 64.5
+    },
+    {
+      "year": 2004,
+      "top_1_pct": 29.8,
+      "next_9_pct": 35.4,
+      "next_40_pct": 30.8,
+      "bottom_50_pct": 3.2,
+      "top_10_pct": 65.2
+    },
+    {
+      "year": 2007,
+      "top_1_pct": 31.8,
+      "next_9_pct": 35.2,
+      "next_40_pct": 29.5,
+      "bottom_50_pct": 2.8,
+      "top_10_pct": 67.0
+    },
+    {
+      "year": 2010,
+      "top_1_pct": 30.3,
+      "next_9_pct": 36.1,
+      "next_40_pct": 30.1,
+      "bottom_50_pct": 2.7,
+      "top_10_pct": 66.4
+    },
+    {
+      "year": 2013,
+      "top_1_pct": 31.2,
+      "next_9_pct": 36.4,
+      "next_40_pct": 29.2,
+      "bottom_50_pct": 2.5,
+      "top_10_pct": 67.6
+    },
+    {
+      "year": 2016,
+      "top_1_pct": 31.8,
+      "next_9_pct": 36.5,
+      "next_40_pct": 28.8,
+      "bottom_50_pct": 2.4,
+      "top_10_pct": 68.3
+    },
+    {
+      "year": 2019,
+      "top_1_pct": 32.1,
+      "next_9_pct": 36.8,
+      "next_40_pct": 28.4,
+      "bottom_50_pct": 2.3,
+      "top_10_pct": 68.9
+    },
+    {
+      "year": 2022,
+      "top_1_pct": 34.2,
+      "next_9_pct": 36.3,
+      "next_40_pct": 27.2,
+      "bottom_50_pct": 2.0,
+      "top_10_pct": 70.5
+    },
+    {
+      "year": 2025,
+      "top_1_pct": 35.5,
+      "next_9_pct": 36.0,
+      "next_40_pct": 26.3,
+      "bottom_50_pct": 1.9,
+      "top_10_pct": 71.5
+    }
+  ],
+  "ratios": [
+    {
+      "year": 1989,
+      "top10_next40": 1.6368715083798884,
+      "top10_bottom50": 16.27777777777778,
+      "top1_next9": 0.6695156695156695,
+      "top1_next40": 0.6564245810055866,
+      "next9_next40": 0.9804469273743018,
+      "top10_bottom90": 1.4154589371980677
+    },
+    {
+      "year": 1992,
+      "top10_next40": 1.8966565349544073,
+      "top10_bottom50": 15.6,
+      "top1_next9": 0.8461538461538463,
+      "top1_next40": 0.8693009118541034,
+      "next9_next40": 1.0273556231003038,
+      "top10_bottom90": 1.6595744680851063
+    },
+    {
+      "year": 1995,
+      "top10_next40": 1.9085365853658536,
+      "top10_bottom50": 16.918918918918916,
+      "top1_next9": 0.7988505747126438,
+      "top1_next40": 0.8475609756097562,
+      "next9_next40": 1.0609756097560976,
+      "top10_bottom90": 1.6737967914438499
+    },
+    {
+      "year": 1998,
+      "top10_next40": 1.9566563467492262,
+      "top10_bottom50": 18.057142857142857,
+      "top1_next9": 0.8213256484149856,
+      "top1_next40": 0.8823529411764707,
+      "next9_next40": 1.0743034055727556,
+      "top10_bottom90": 1.7173913043478264
+    },
+    {
+      "year": 2001,
+      "top10_next40": 2.060702875399361,
+      "top10_bottom50": 19.545454545454547,
+      "top1_next9": 0.8376068376068375,
+      "top1_next40": 0.939297124600639,
+      "next9_next40": 1.121405750798722,
+      "top10_bottom90": 1.8169014084507042
+    },
+    {
+      "year": 2004,
+      "top10_next40": 2.116883116883117,
+      "top10_bottom50": 20.375,
+      "top1_next9": 0.8418079096045198,
+      "top1_next40": 0.9675324675324676,
+      "next9_next40": 1.1493506493506493,
+      "top10_bottom90": 1.8735632183908049
+    },
+    {
+      "year": 2007,
+      "top10_next40": 2.2711864406779663,
+      "top10_bottom50": 23.92857142857143,
+      "top1_next9": 0.9034090909090908,
+      "top1_next40": 1.0779661016949154,
+      "next9_next40": 1.193220338983051,
+      "top10_bottom90": 2.0303030303030303
+    },
+    {
+      "year": 2010,
+      "top10_next40": 2.205980066445183,
+      "top10_bottom50": 24.59259259259259,
+      "top1_next9": 0.8393351800554016,
+      "top1_next40": 1.0066445182724253,
+      "next9_next40": 1.1993355481727574,
+      "top10_bottom90": 1.9761904761904767
+    },
+    {
+      "year": 2013,
+      "top10_next40": 2.315068493150685,
+      "top10_bottom50": 27.04,
+      "top1_next9": 0.8571428571428572,
+      "top1_next40": 1.0684931506849316,
+      "next9_next40": 1.2465753424657533,
+      "top10_bottom90": 2.0864197530864192
+    },
+    {
+      "year": 2016,
+      "top10_next40": 2.3715277777777777,
+      "top10_bottom50": 28.458333333333332,
+      "top1_next9": 0.8712328767123287,
+      "top1_next40": 1.1041666666666667,
+      "next9_next40": 1.2673611111111112,
+      "top10_bottom90": 2.1545741324921135
+    },
+    {
+      "year": 2019,
+      "top10_next40": 2.4260563380281694,
+      "top10_bottom50": 29.95652173913044,
+      "top1_next9": 0.8722826086956523,
+      "top1_next40": 1.1302816901408452,
+      "next9_next40": 1.295774647887324,
+      "top10_bottom90": 2.215434083601287
+    },
+    {
+      "year": 2022,
+      "top10_next40": 2.5919117647058822,
+      "top10_bottom50": 35.25,
+      "top1_next9": 0.9421487603305787,
+      "top1_next40": 1.2573529411764708,
+      "next9_next40": 1.3345588235294117,
+      "top10_bottom90": 2.389830508474576
+    },
+    {
+      "year": 2025,
+      "top10_next40": 2.7186311787072244,
+      "top10_bottom50": 37.631578947368425,
+      "top1_next9": 0.9861111111111112,
+      "top1_next40": 1.3498098859315588,
+      "next9_next40": 1.3688212927756653,
+      "top10_bottom90": 2.508771929824561
+    }
+  ],
+  "trajectory_analysis": {
+    "top10_next40": {
+      "ratio_name": "top10_next40",
+      "start_year": 1989,
+      "end_year": 2025,
+      "start_value": 1.6368715083798884,
+      "end_value": 2.7186311787072244,
+      "trend_slope": 0.02542006531047754,
+      "trend_per_decade": 0.2542006531047754,
+      "equilibria": {
+        "\u03c6": {
+          "value": 1.618033988749895,
+          "start_distance": 0.01883751962999347,
+          "end_distance": 1.1005971899573295,
+          "start_pressure_pct": 1.1642227395079308,
+          "end_pressure_pct": 68.0206471316254,
+          "direction": "moving_away_above",
+          "projected_crossing_year": 1984.4792469510937,
+          "years_to_crossing": -40.52075304890627
+        },
+        "\u03c6\u00b2": {
+          "value": 2.618033988749895,
+          "start_distance": -0.9811624803700065,
+          "end_distance": 0.10059718995732947,
+          "start_pressure_pct": 37.477071901519096,
+          "end_pressure_pct": 3.842470739097027,
+          "direction": "approaching_from_below",
+          "projected_crossing_year": 2023.8182489475923,
+          "years_to_crossing": -1.1817510524076624
+        }
+      }
+    },
+    "top1_next9": {
+      "ratio_name": "top1_next9",
+      "start_year": 1989,
+      "end_year": 2025,
+      "start_value": 0.6695156695156695,
+      "end_value": 0.9861111111111112,
+      "trend_slope": 0.0052373559538521726,
+      "trend_per_decade": 0.05237355953852173,
+      "equilibria": {
+        "\u03c6": {
+          "value": 1.618033988749895,
+          "start_distance": -0.9485183192342254,
+          "end_distance": -0.6319228776387837,
+          "start_pressure_pct": 58.621656023867445,
+          "end_pressure_pct": 39.054981664940925,
+          "direction": "approaching_from_below",
+          "projected_crossing_year": 2153.1030655461304,
+          "years_to_crossing": 128.10306554613044
+        },
+        "\u03c6\u00b2": {
+          "value": 2.618033988749895,
+          "start_distance": -1.9485183192342252,
+          "end_distance": -1.6319228776387837,
+          "start_pressure_pct": 74.42677702456561,
+          "end_pressure_pct": 62.33390722394796,
+          "direction": "approaching_from_below",
+          "projected_crossing_year": 2344.0391044198072,
+          "years_to_crossing": 319.03910441980724
+        }
+      }
+    },
+    "top10_bottom50": {
+      "ratio_name": "top10_bottom50",
+      "start_year": 1989,
+      "end_year": 2025,
+      "start_value": 16.27777777777778,
+      "end_value": 37.631578947368425,
+      "trend_slope": 0.6024422586605023,
+      "trend_per_decade": 6.024422586605023,
+      "equilibria": {
+        "\u03c6": {
+          "value": 1.618033988749895,
+          "start_distance": 14.659743789027884,
+          "end_distance": 36.01354495861853,
+          "start_pressure_pct": 906.02199279844,
+          "end_pressure_pct": 2225.7594839798676,
+          "direction": "moving_away_above",
+          "projected_crossing_year": 1969.6395793915046,
+          "years_to_crossing": -55.36042060849536
+        },
+        "\u03c6\u00b2": {
+          "value": 2.618033988749895,
+          "start_distance": 13.659743789027884,
+          "end_distance": 35.01354495861853,
+          "start_pressure_pct": 521.7557849793378,
+          "end_pressure_pct": 1337.398410756975,
+          "direction": "moving_away_above",
+          "projected_crossing_year": 1971.2994895084069,
+          "years_to_crossing": -53.70051049159315
+        }
+      }
+    }
+  },
+  "emergence_rate_analysis": {
+    "top10_next40": {
+      "ratio_name": "top10_next40",
+      "equilibrium_gap": 1.0,
+      "gap_closed": 1.081759670327336,
+      "gap_closure_fraction": 1.081759670327336,
+      "years_elapsed": 36,
+      "annual_gap_closure_rate": 0.030048879731314888,
+      "xi_fractional": 0.05711986642890543,
+      "ratio_to_xi": 0.5260670517973882,
+      "interpretation": "Within factor of 2 of \u039e - consistent with PAC emergence dynamics"
+    },
+    "top1_next9": {
+      "ratio_name": "top1_next9",
+      "equilibrium_gap": 1.0,
+      "gap_closed": 0.3165954415954415,
+      "gap_closure_fraction": 0.3165954415954415,
+      "years_elapsed": 36,
+      "annual_gap_closure_rate": 0.008794317822095598,
+      "xi_fractional": 0.05711986642890543,
+      "ratio_to_xi": 0.15396250677584297,
+      "interpretation": "Within order of magnitude of \u039e - possible relationship"
+    },
+    "top10_bottom50": {
+      "ratio_name": "top10_bottom50",
+      "equilibrium_gap": 1.0,
+      "gap_closed": 21.353801169590646,
+      "gap_closure_fraction": 21.353801169590646,
+      "years_elapsed": 36,
+      "annual_gap_closure_rate": 0.5931611435997401,
+      "xi_fractional": 0.05711986642890543,
+      "ratio_to_xi": 10.384498085933403,
+      "interpretation": "Differs significantly from \u039e - may not be PAC-governed"
+    }
+  },
+  "equilibrium_periods": {
+    "top10_next40": [
+      {
+        "year": 1989,
+        "value": 1.6368715083798884,
+        "nearest_equilibrium": "\u03c6",
+        "equilibrium_value": 1.618033988749895,
+        "distance": 0.01883751962999347,
+        "pressure_pct": 1.1642227395079308
+      },
+      {
+        "year": 1992,
+        "value": 1.8966565349544073,
+        "nearest_equilibrium": "2",
+        "equilibrium_value": 2.0,
+        "distance": 0.10334346504559266,
+        "pressure_pct": 5.167173252279634
+      },
+      {
+        "year": 1995,
+        "value": 1.9085365853658536,
+        "nearest_equilibrium": "2",
+        "equilibrium_value": 2.0,
+        "distance": 0.09146341463414642,
+        "pressure_pct": 4.573170731707322
+      },
+      {
+        "year": 1998,
+        "value": 1.9566563467492262,
+        "nearest_equilibrium": "2",
+        "equilibrium_value": 2.0,
+        "distance": 0.04334365325077383,
+        "pressure_pct": 2.1671826625386914
+      },
+      {
+        "year": 2001,
+        "value": 2.060702875399361,
+        "nearest_equilibrium": "2",
+        "equilibrium_value": 2.0,
+        "distance": 0.060702875399361034,
+        "pressure_pct": 3.0351437699680517
+      },
+      {
+        "year": 2004,
+        "value": 2.116883116883117,
+        "nearest_equilibrium": "2",
+        "equilibrium_value": 2.0,
+        "distance": 0.11688311688311703,
+        "pressure_pct": 5.844155844155852
+      },
+      {
+        "year": 2007,
+        "value": 2.2711864406779663,
+        "nearest_equilibrium": "2",
+        "equilibrium_value": 2.0,
+        "distance": 0.27118644067796627,
+        "pressure_pct": 13.559322033898313
+      },
+      {
+        "year": 2010,
+        "value": 2.205980066445183,
+        "nearest_equilibrium": "2",
+        "equilibrium_value": 2.0,
+        "distance": 0.20598006644518296,
+        "pressure_pct": 10.299003322259148
+      },
+      {
+        "year": 2013,
+        "value": 2.315068493150685,
+        "nearest_equilibrium": "\u03c6\u00b2",
+        "equilibrium_value": 2.618033988749895,
+        "distance": 0.30296549559921004,
+        "pressure_pct": 11.572252190044155
+      },
+      {
+        "year": 2016,
+        "value": 2.3715277777777777,
+        "nearest_equilibrium": "\u03c6\u00b2",
+        "equilibrium_value": 2.618033988749895,
+        "distance": 0.24650621097211722,
+        "pressure_pct": 9.415699415339652
+      },
+      {
+        "year": 2019,
+        "value": 2.4260563380281694,
+        "nearest_equilibrium": "\u03c6\u00b2",
+        "equilibrium_value": 2.618033988749895,
+        "distance": 0.19197765072172546,
+        "pressure_pct": 7.3328937495343345
+      },
+      {
+        "year": 2022,
+        "value": 2.5919117647058822,
+        "nearest_equilibrium": "\u03c6\u00b2",
+        "equilibrium_value": 2.618033988749895,
+        "distance": 0.026122224044012654,
+        "pressure_pct": 0.9977801723073104
+      },
+      {
+        "year": 2025,
+        "value": 2.7186311787072244,
+        "nearest_equilibrium": "e",
+        "equilibrium_value": 2.718281828459045,
+        "distance": 0.00034935024817928095,
+        "pressure_pct": 0.012851877407329857
+      }
+    ],
+    "top1_next9": [
+      {
+        "year": 1989,
+        "value": 0.6695156695156695,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.33048433048433046,
+        "pressure_pct": 33.04843304843305
+      },
+      {
+        "year": 1992,
+        "value": 0.8461538461538463,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.15384615384615374,
+        "pressure_pct": 15.384615384615374
+      },
+      {
+        "year": 1995,
+        "value": 0.7988505747126438,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.20114942528735624,
+        "pressure_pct": 20.114942528735625
+      },
+      {
+        "year": 1998,
+        "value": 0.8213256484149856,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.17867435158501443,
+        "pressure_pct": 17.867435158501443
+      },
+      {
+        "year": 2001,
+        "value": 0.8376068376068375,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.16239316239316248,
+        "pressure_pct": 16.23931623931625
+      },
+      {
+        "year": 2004,
+        "value": 0.8418079096045198,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.1581920903954802,
+        "pressure_pct": 15.81920903954802
+      },
+      {
+        "year": 2007,
+        "value": 0.9034090909090908,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.09659090909090917,
+        "pressure_pct": 9.659090909090917
+      },
+      {
+        "year": 2010,
+        "value": 0.8393351800554016,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.16066481994459836,
+        "pressure_pct": 16.066481994459835
+      },
+      {
+        "year": 2013,
+        "value": 0.8571428571428572,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.1428571428571428,
+        "pressure_pct": 14.28571428571428
+      },
+      {
+        "year": 2016,
+        "value": 0.8712328767123287,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.12876712328767126,
+        "pressure_pct": 12.876712328767127
+      },
+      {
+        "year": 2019,
+        "value": 0.8722826086956523,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.12771739130434767,
+        "pressure_pct": 12.771739130434767
+      },
+      {
+        "year": 2022,
+        "value": 0.9421487603305787,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.057851239669421295,
+        "pressure_pct": 5.7851239669421295
+      },
+      {
+        "year": 2025,
+        "value": 0.9861111111111112,
+        "nearest_equilibrium": "1",
+        "equilibrium_value": 1.0,
+        "distance": 0.01388888888888884,
+        "pressure_pct": 1.388888888888884
+      }
+    ],
+    "top10_bottom50": [
+      {
+        "year": 1989,
+        "value": 16.27777777777778,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 13.277777777777779,
+        "pressure_pct": 442.59259259259267
+      },
+      {
+        "year": 1992,
+        "value": 15.6,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 12.6,
+        "pressure_pct": 420.0
+      },
+      {
+        "year": 1995,
+        "value": 16.918918918918916,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 13.918918918918916,
+        "pressure_pct": 463.96396396396386
+      },
+      {
+        "year": 1998,
+        "value": 18.057142857142857,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 15.057142857142857,
+        "pressure_pct": 501.9047619047619
+      },
+      {
+        "year": 2001,
+        "value": 19.545454545454547,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 16.545454545454547,
+        "pressure_pct": 551.5151515151515
+      },
+      {
+        "year": 2004,
+        "value": 20.375,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 17.375,
+        "pressure_pct": 579.1666666666667
+      },
+      {
+        "year": 2007,
+        "value": 23.92857142857143,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 20.92857142857143,
+        "pressure_pct": 697.6190476190477
+      },
+      {
+        "year": 2010,
+        "value": 24.59259259259259,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 21.59259259259259,
+        "pressure_pct": 719.7530864197531
+      },
+      {
+        "year": 2013,
+        "value": 27.04,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 24.04,
+        "pressure_pct": 801.3333333333334
+      },
+      {
+        "year": 2016,
+        "value": 28.458333333333332,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 25.458333333333332,
+        "pressure_pct": 848.6111111111111
+      },
+      {
+        "year": 2019,
+        "value": 29.95652173913044,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 26.95652173913044,
+        "pressure_pct": 898.5507246376815
+      },
+      {
+        "year": 2022,
+        "value": 35.25,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 32.25,
+        "pressure_pct": 1075.0
+      },
+      {
+        "year": 2025,
+        "value": 37.631578947368425,
+        "nearest_equilibrium": "3",
+        "equilibrium_value": 3.0,
+        "distance": 34.631578947368425,
+        "pressure_pct": 1154.3859649122808
+      }
+    ]
+  },
+  "key_findings": [
+    "1. Top10/Next40 ratio started at 1.64 in 1989 (~0.02 from \u03c6)",
+    "2. Currently at 2.72, trending toward \u03c6\u00b2 (2.62)",
+    "3. Projected to reach \u03c6\u00b2 equilibrium around 2024",
+    "4. Gap closure rate is 0.53x the \u039e emergence rate",
+    "5. System pressure: 1.2% from \u03c6 (1989) \u2192 3.8% from \u03c6\u00b2 (now)",
+    "6. System was closer to equilibrium in 1989 than now"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "experiment": "exp_08c_stress_pattern_exploration",
+  "timestamp": "2026-01-23T09:27:12.784022",
+  "epistemic_status": "exploratory hypothesis generation",
+  "current_stress": 7.9364698694400015,
+  "avg_pre_crisis_stress": 3.827761777777778,
+  "stress_ratio": 2.073397021600323,
+  "events": [
+    {
+      "year": 1971,
+      "type": "intervention",
+      "name": "Nixon Shock (gold standard)",
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1987,
+      "type": "crisis",
+      "name": "Black Monday",
+      "pressure_before": 2.4346666666666668,
+      "released": 0.5356266666666667
+    },
+    {
+      "year": 1998,
+      "type": "intervention",
+      "name": "LTCM Bailout",
+      "pressure": 5.4323733333333335,
+      "stress": 0.4346666666666667
+    },
+    {
+      "year": 2000,
+      "type": "crisis",
+      "name": "Dot-com Crash",
+      "pressure_before": 6.024373333333333,
+      "released": 2.951942933333333
+    },
+    {
+      "year": 2008,
+      "type": "crisis",
+      "name": "Financial Crisis",
+      "pressure_before": 6.539097066666669,
+      "released": 3.5311124160000014
+    },
+    {
+      "year": 2009,
+      "type": "intervention",
+      "name": "QE1",
+      "pressure": 3.4913179840000006,
+      "stress": 0.5944444444444443
+    },
+    {
+      "year": 2010,
+      "type": "intervention",
+      "name": "QE2",
+      "pressure": 3.935762428444445,
+      "stress": 0.555555555555556
+    },
+    {
+      "year": 2012,
+      "type": "intervention",
+      "name": "QE3 (unlimited)",
+      "pressure": 4.713984650666667,
+      "stress": 0.5453333333333334
+    },
+    {
+      "year": 2019,
+      "type": "intervention",
+      "name": "Repo market intervention",
+      "pressure": 7.707317984000001,
+      "stress": 0.6040000000000002
+    },
+    {
+      "year": 2020,
+      "type": "crisis",
+      "name": "COVID Shock",
+      "pressure_before": 8.161317984000002,
+      "released": 2.774848114560001
+    },
+    {
+      "year": 2023,
+      "type": "intervention",
+      "name": "SVB/banking intervention",
+      "pressure": 6.784469869440001,
+      "stress": 0.5280000000000001
+    }
+  ],
+  "interpretations_considered": [
+    "Improved policy",
+    "Delayed dynamics",
+    "Pressure accumulation",
+    "Structural change"
+  ],
+  "caveats": [
+    "Simplified model",
+    "Correlation not causation",
+    "Expert review required",
+    "Multiple interpretations possible"
+  ],
+  "call_to_action": "Expert economic review of patterns"
+}

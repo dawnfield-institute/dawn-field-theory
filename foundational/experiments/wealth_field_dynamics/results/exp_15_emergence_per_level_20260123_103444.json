@@ -1,0 +1,37 @@
+{
+  "experiment": "exp_15_emergence_per_level",
+  "timestamp": "2026-01-23T10:34:44.596276",
+  "purpose": "Test if emergence per restructuring \u2248 \u03c0/55",
+  "correct_framing": "\u039e - 1 = \u03c0/55 is emergence per level, not threshold",
+  "constants": {
+    "phi": 1.618033988749895,
+    "phi_inv": 0.6180339887498948,
+    "xi": 1.0571198664289054,
+    "xi_minus_1": 0.05711986642890543,
+    "pi_over_55": 0.057119866428905326,
+    "within_per_level": -0.028263456486708582,
+    "cross_correction": 0.0853833229156139
+  },
+  "emergence_estimates": [
+    {
+      "event": "New Deal (1933-1939)",
+      "emergence_per_unit": 0.15559009082439815,
+      "excess_annual": 0.018670810898927775
+    },
+    {
+      "event": "Post-WWII GI Bill (1944-1956)",
+      "emergence_per_unit": 0.346323967130974,
+      "excess_annual": 0.027705917370477923
+    },
+    {
+      "event": "Great Society (1964-1968)",
+      "emergence_per_unit": 1.2335191321304966,
+      "excess_annual": 0.061675956606524834
+    },
+    {
+      "event": "UK Attlee Government (1945-1951)",
+      "emergence_per_unit": 0.03945407778106716,
+      "excess_annual": 0.007890815556213432
+    }
+  ]
+}

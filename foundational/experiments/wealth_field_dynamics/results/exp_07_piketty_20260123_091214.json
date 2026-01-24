@@ -1,0 +1,58 @@
+{
+  "experiment": "exp_07_piketty_connection",
+  "timestamp": "2026-01-23T09:12:14.104389",
+  "piketty_data": {
+    "Antiquity-1000": {
+      "r": 4.5,
+      "g": 0.1,
+      "ratio": 45.0
+    },
+    "1000-1500": {
+      "r": 4.5,
+      "g": 0.2,
+      "ratio": 22.5
+    },
+    "1500-1700": {
+      "r": 4.5,
+      "g": 0.3,
+      "ratio": 15.0
+    },
+    "1700-1820": {
+      "r": 5.0,
+      "g": 0.6,
+      "ratio": 8.3
+    },
+    "1820-1913": {
+      "r": 5.0,
+      "g": 1.5,
+      "ratio": 3.3
+    },
+    "1913-1950": {
+      "r": 4.0,
+      "g": 1.5,
+      "ratio": 2.7
+    },
+    "1950-2012": {
+      "r": 4.5,
+      "g": 3.0,
+      "ratio": 1.5
+    },
+    "2012-2100_proj": {
+      "r": 4.5,
+      "g": 1.5,
+      "ratio": 3.0
+    }
+  },
+  "industrial_era_mean_ratio": 3.7600000000000002,
+  "industrial_era_std": 2.3508296407864187,
+  "phi_comparisons": {
+    "phi": 1.618033988749895,
+    "phi_squared": 2.618033988749895,
+    "xi_times_phi": 1.710455874064718
+  },
+  "closest_match": "phi_squared",
+  "deviation_from_phi_squared": 0.4361922023003954,
+  "interpretation": "r/g \u2248 \u03c6\u00b2 is the natural attractor",
+  "connection_to_pac": "\u03c6-splitting explains why r > g",
+  "status": "hypothesis_consistent"
+}

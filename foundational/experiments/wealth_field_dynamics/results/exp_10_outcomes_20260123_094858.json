@@ -1,0 +1,99 @@
+{
+  "experiment": "exp_10_correction_vs_intervention",
+  "timestamp": "2026-01-23T09:48:58.284614",
+  "crisis_results": [
+    {
+      "year": 1929,
+      "pre_slope": 1.0000000000000009,
+      "post_slope": -1.200000000000001,
+      "trajectory_change": -2.200000000000002,
+      "event_gini": 0.54,
+      "direction": "slowed/reversed"
+    },
+    {
+      "year": 1987,
+      "pre_slope": 0.9199999999999996,
+      "post_slope": 0.5000000000000004,
+      "trajectory_change": -0.4199999999999992,
+      "event_gini": 0.432,
+      "direction": "slowed/reversed"
+    },
+    {
+      "year": 2000,
+      "pre_slope": 0.20000000000000018,
+      "post_slope": 0.40000000000000036,
+      "trajectory_change": 0.20000000000000018,
+      "event_gini": 0.48,
+      "direction": "continued/accelerated"
+    },
+    {
+      "year": 2008,
+      "pre_slope": 0.5333333333333334,
+      "post_slope": 0.16000000000000014,
+      "trajectory_change": -0.37333333333333324,
+      "event_gini": 0.52,
+      "direction": "slowed/reversed"
+    },
+    {
+      "year": 2020,
+      "pre_slope": 0.20000000000000018,
+      "post_slope": 0.20000000000000018,
+      "trajectory_change": 0.0,
+      "event_gini": 0.54,
+      "direction": "continued/accelerated"
+    }
+  ],
+  "intervention_results": [
+    {
+      "year": 1971,
+      "pre_slope": 0.19999999999999854,
+      "post_slope": 0.20000000000000018,
+      "trajectory_change": 1.6479873021779667e-15,
+      "event_gini": 0.352,
+      "direction": "continued/accelerated"
+    },
+    {
+      "year": 1998,
+      "pre_slope": 0.30000000000000027,
+      "post_slope": 0.3600000000000003,
+      "trajectory_change": 0.06000000000000007,
+      "event_gini": 0.476,
+      "direction": "continued/accelerated"
+    },
+    {
+      "year": 2009,
+      "pre_slope": 0.6133333333333335,
+      "post_slope": 0.20000000000000018,
+      "trajectory_change": -0.41333333333333333,
+      "event_gini": 0.52,
+      "direction": "slowed/reversed"
+    },
+    {
+      "year": 2010,
+      "pre_slope": 0.5333333333333334,
+      "post_slope": 0.20000000000000018,
+      "trajectory_change": -0.3333333333333332,
+      "event_gini": 0.52,
+      "direction": "slowed/reversed"
+    },
+    {
+      "year": 2012,
+      "pre_slope": 0.17333333333333423,
+      "post_slope": 0.20000000000000018,
+      "trajectory_change": 0.026666666666665943,
+      "event_gini": 0.524,
+      "direction": "continued/accelerated"
+    },
+    {
+      "year": 2020,
+      "pre_slope": 0.20000000000000018,
+      "post_slope": 0.20000000000000018,
+      "trajectory_change": 0.0,
+      "event_gini": 0.54,
+      "direction": "continued/accelerated"
+    }
+  ],
+  "crisis_avg_change": -0.5586666666666668,
+  "intervention_avg_change": -0.1099999999999998,
+  "refined_hypothesis": "Response type (redistributive vs stabilizing) matters more than crisis vs intervention"
+}

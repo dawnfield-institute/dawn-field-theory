@@ -1,0 +1,21 @@
+{
+  "experiment": "exp_01_phi_wealth_splitting",
+  "timestamp": "2026-01-23T08:54:04.135523",
+  "derivation": {
+    "axiom_1": "PAC conservation: W_total = W\u2081 + W\u2082",
+    "axiom_2": "Self-similarity: W\u2081/W\u2082 = W_total/W\u2081",
+    "equation": "r\u00b2 = r + 1",
+    "solution": "r = \u03c6 = (1+\u221a5)/2"
+  },
+  "phi_value": 1.618033988749895,
+  "phi_squared": 2.618033988749895,
+  "phi_plus_1": 2.618033988749895,
+  "numerical_error": 0.0,
+  "verified": true,
+  "economic_predictions": {
+    "stable_share_larger": 0.6180339887498949,
+    "stable_share_smaller": 0.38196601125010515,
+    "ratio": 1.618033988749895
+  },
+  "conclusion": "\u03c6 is ALGEBRAICALLY NECESSARY for self-similar wealth splitting, not fitted"
+}

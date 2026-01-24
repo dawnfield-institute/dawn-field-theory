@@ -1,0 +1,114 @@
+{
+  "experiment": "exp_05_historical_policy_comparison",
+  "timestamp": "2026-01-23T09:02:27.226964",
+  "core_finding": "Trickle-down fails without enforcement because \u03c6-gradient points upward",
+  "historical_comparison": {
+    "years": [
+      1945,
+      1950,
+      1955,
+      1960,
+      1965,
+      1970,
+      1975,
+      1980,
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2015,
+      2020,
+      2025
+    ],
+    "model_gini": [
+      0.42,
+      0.411232559010557,
+      0.4049610630420298,
+      0.40142538889611473,
+      0.3983438432148272,
+      0.40506499353744463,
+      0.4109672565214668,
+      0.4161504032538541,
+      0.4226527102842187,
+      0.43754682975999654,
+      0.46099733895909956,
+      0.47624328824921025,
+      0.4908228732016304,
+      0.5062129136108152,
+      0.5199301984127611,
+      0.5296917398528758,
+      0.5398645284619047
+    ],
+    "actual_gini": [
+      0.42,
+      0.38,
+      0.36,
+      0.35,
+      0.34,
+      0.35,
+      0.36,
+      0.37,
+      0.42,
+      0.45,
+      0.47,
+      0.48,
+      0.5,
+      0.52,
+      0.53,
+      0.54,
+      0.55
+    ],
+    "enforcement": [
+      0.7629999999999999,
+      0.742,
+      0.712,
+      0.712,
+      0.565,
+      0.565,
+      0.565,
+      0.5349999999999999,
+      0.39499999999999996,
+      0.241,
+      0.32499999999999996,
+      0.30999999999999994,
+      0.27499999999999997,
+      0.27499999999999997,
+      0.30999999999999994,
+      0.28900000000000003
+    ]
+  },
+  "correlation": {
+    "enforcement_vs_gini": -0.809271037983382,
+    "interpretation": "negative = enforcement reduces inequality"
+  },
+  "era_summary": {
+    "post_ww2": {
+      "years": "1945-1980",
+      "avg_enforcement": 0.7,
+      "gini_trend": "decreasing"
+    },
+    "neoliberal": {
+      "years": "1980-2000",
+      "avg_enforcement": 0.4,
+      "gini_trend": "increasing"
+    },
+    "modern": {
+      "years": "2000-2025",
+      "avg_enforcement": 0.35,
+      "gini_trend": "increasing"
+    }
+  },
+  "predictions": {
+    "stable_gini_0.35_requires_enforcement": 0.65,
+    "minimum_top_rate_for_stability": "60-75%"
+  },
+  "average_model_error": 0.024675794544248206,
+  "falsification": "consistent_with_data",
+  "caveats": [
+    "Simplified enforcement parameter",
+    "Many factors not modeled",
+    "Tests trend not precise values"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "experiment": "exp_03_med_hierarchy_bounds",
+  "timestamp": "2026-01-23T08:58:36.552964",
+  "med_bounds": {
+    "depth": 2,
+    "nodes": 3
+  },
+  "predictions": {
+    "optimal_team_size": "5 \u00b1 2 (Fibonacci)",
+    "span_of_control_range": [
+      3,
+      8
+    ],
+    "effective_hierarchy_depth": 2,
+    "information_fidelity_at_depth_2": 0.38196601125010515
+  },
+  "fidelity_decay": [
+    {
+      "depth": 0,
+      "fidelity": 1.0,
+      "percent": 100.0
+    },
+    {
+      "depth": 1,
+      "fidelity": 0.6180339887498948,
+      "percent": 61.803398874989476
+    },
+    {
+      "depth": 2,
+      "fidelity": 0.38196601125010515,
+      "percent": 38.19660112501052
+    },
+    {
+      "depth": 3,
+      "fidelity": 0.23606797749978967,
+      "percent": 23.606797749978966
+    },
+    {
+      "depth": 4,
+      "fidelity": 0.14589803375031543,
+      "percent": 14.589803375031543
+    },
+    {
+      "depth": 5,
+      "fidelity": 0.09016994374947422,
+      "percent": 9.016994374947423
+    }
+  ],
+  "fibonacci_sweet_spots": [
+    3,
+    5,
+    8,
+    13
+  ],
+  "status": "predictions_derived",
+  "falsification": "requires_empirical_validation"
+}

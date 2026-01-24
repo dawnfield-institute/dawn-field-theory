@@ -1,0 +1,25 @@
+{
+  "experiment": "exp_08e_intervention_cascade",
+  "timestamp": "2026-01-23T09:27:22.048835",
+  "epistemic_status": "exploratory pattern observation",
+  "observations": {
+    "total_intervention_magnitude": 36.0,
+    "total_crisis_magnitude": 26.0,
+    "net_balance": 10.0,
+    "correlation_intervention_gini": 0.7960054451673412,
+    "escalation_pattern": "magnitude appears to increase over decades"
+  },
+  "models_considered": [
+    "healthy oscillation",
+    "pressure accumulation"
+  ],
+  "conclusion": "Cannot distinguish between models with this data",
+  "call_to_action": "Domain expert review and econometric analysis",
+  "caveats": [
+    "Magnitude estimates are subjective",
+    "Correlation not causation",
+    "Many confounding factors",
+    "Simplified model",
+    "Not economic policy analysis"
+  ]
+}
