@@ -1,0 +1,22 @@
+# WorldSeed Evolutionary Architecture - Dependencies
+
+# Core
+torch>=2.0.0
+numpy>=1.24.0
+pyyaml>=6.0
+
+# GAIA dependencies
+transformers>=4.30.0
+datasets>=2.14.0
+tokenizers>=0.13.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+tqdm>=4.65.0
+python-dateutil>=2.8.0
+
+# Optional: GPU acceleration
+# torch-cuda (install separately based on CUDA version)

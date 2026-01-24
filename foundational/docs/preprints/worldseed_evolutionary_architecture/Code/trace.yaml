@@ -1,0 +1,53 @@
+schema_version: "1.0"
+created: "2026-01-24T14:00:00"
+description: "Traces code files back to their original repository locations"
+source_repository: "dawn-field-theory"
+
+files:
+  # Core modules
+  - local: "core/worldseed_gaia_real.py"
+    source: "internal/project_worldseed/worldseed_gaia_real.py"
+    repo: "dawn-field-institute"
+    description: "Main evolution engine with real GAIA integration"
+
+  - local: "core/gaia_utils.py"
+    source: "internal/project_worldseed/gaia_utils.py"
+    repo: "dawn-field-institute"
+    description: "GAIA utility functions and bug fixes"
+
+  - local: "core/worldseed_evolution.py"
+    source: "internal/project_worldseed/worldseed_evolution.py"
+    repo: "dawn-field-institute"
+    description: "Software evolution framework"
+
+  # Experiments
+  - local: "experiments/exp_01_basic_evolution.py"
+    source: "internal/project_worldseed/worldseed_gaia.py"
+    repo: "dawn-field-institute"
+    description: "Basic evolution engine with mock fitness"
+
+  - local: "experiments/exp_02_real_gaia_integration.py"
+    source: "internal/project_worldseed/run_mini_evolution.py"
+    repo: "dawn-field-institute"
+    description: "Real GAIA model training and evaluation"
+
+  - local: "experiments/exp_03_wikitext2_evolution.py"
+    source: "internal/project_worldseed/run_wikitext2_evolution.py"
+    repo: "dawn-field-institute"
+    description: "Full WikiText-2 benchmark evolution"
+
+dependencies:
+  gaia_prime:
+    source: "dawn-models/research/GAIA/gaia_prime.py"
+    repo: "dawn-models"
+    description: "GAIA Prime model implementation"
+
+  grafted_embeddings:
+    source: "dawn-models/research/GAIA/grafted_embeddings.py"
+    repo: "dawn-models"
+    description: "Embedding extraction from pre-trained models"
+
+  pac_tree:
+    source: "dawn-models/research/GAIA/pac_tree.py"
+    repo: "dawn-models"
+    description: "Hierarchical PAC tree implementation"
