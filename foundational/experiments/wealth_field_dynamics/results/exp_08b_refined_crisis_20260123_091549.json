@@ -1,0 +1,202 @@
+{
+  "experiment": "exp_08b_refined_crisis",
+  "timestamp": "2026-01-23T09:15:49.881296",
+  "method": "composite_score",
+  "components": [
+    "acceleration",
+    "volatility",
+    "trend_deviation",
+    "rate"
+  ],
+  "weights": {
+    "acceleration": 0.35,
+    "volatility": 0.25,
+    "trend": 0.2,
+    "rate": 0.2
+  },
+  "optimal_threshold": 0.6,
+  "metrics": {
+    "threshold": 0.6,
+    "tp": 3,
+    "fn": 2,
+    "fp": 2,
+    "tn": 6,
+    "precision": 0.6,
+    "recall": 0.6,
+    "f1": 0.6
+  },
+  "crisis_scores": [
+    {
+      "year": 1929.0,
+      "gini": 0.54,
+      "first_derivative": -0.001666666666666668,
+      "second_derivative": -0.020000000000000018,
+      "volatility": 0.0,
+      "trend_deviation": -0.008181818181818401,
+      "accel_score": 7.407407407407394,
+      "vol_score": 0.0,
+      "trend_score": 0.08181818181818401,
+      "rate_score": 0.03333333333333336,
+      "composite": 2.6156228956228915
+    },
+    {
+      "year": 1987.0,
+      "gini": 0.44,
+      "first_derivative": 0.008333333333333331,
+      "second_derivative": 0.0,
+      "volatility": 0.003999999999999981,
+      "trend_deviation": 0.001345454545454261,
+      "accel_score": 0.0,
+      "vol_score": 0.9378101028094746,
+      "trend_score": 0.01345454545454261,
+      "rate_score": 0.16666666666666663,
+      "composite": 0.2704767681266105
+    },
+    {
+      "year": 2000.0,
+      "gini": 0.48,
+      "first_derivative": -0.001666666666666668,
+      "second_derivative": 0.0,
+      "volatility": 0.007483314773547889,
+      "trend_deviation": -0.011454545454545606,
+      "accel_score": 0.0,
+      "vol_score": 1.75448204928416,
+      "trend_score": 0.11454545454545606,
+      "rate_score": 0.03333333333333336,
+      "composite": 0.46819626989679786
+    },
+    {
+      "year": 2008.0,
+      "gini": 0.52,
+      "first_derivative": 0.003333333333333336,
+      "second_derivative": -0.010000000000000009,
+      "volatility": 0.006324555320336764,
+      "trend_deviation": 0.004181818181818064,
+      "accel_score": 3.703703703703697,
+      "vol_score": 1.4828079687973146,
+      "trend_score": 0.041818181818180644,
+      "rate_score": 0.06666666666666672,
+      "composite": 1.688695258192592
+    },
+    {
+      "year": 2020.0,
+      "gini": 0.54,
+      "first_derivative": 0.001666666666666668,
+      "second_derivative": 0.010000000000000009,
+      "volatility": 0.0040000000000000036,
+      "trend_deviation": -0.005090909090909257,
+      "accel_score": 3.703703703703697,
+      "vol_score": 0.9378101028094799,
+      "trend_score": 0.05090909090909257,
+      "rate_score": 0.03333333333333336,
+      "composite": 1.547597306847149
+    }
+  ],
+  "control_scores": [
+    {
+      "year": 1935.0,
+      "gini": 0.47,
+      "first_derivative": -0.009,
+      "second_derivative": 0.0020000000000000018,
+      "volatility": 0.0040000000000000036,
+      "trend_deviation": -0.01418181818181835,
+      "accel_score": 0.7407407407407395,
+      "vol_score": 0.9378101028094799,
+      "trend_score": 0.1418181818181835,
+      "rate_score": 0.18,
+      "composite": 0.5580754213252654
+    },
+    {
+      "year": 1950.0,
+      "gini": 0.38,
+      "first_derivative": -0.005999999999999996,
+      "second_derivative": 0.0040000000000000036,
+      "volatility": 2.2215299868541707e-17,
+      "trend_deviation": -0.0018181818181818299,
+      "accel_score": 1.481481481481479,
+      "vol_score": 5.208433163415126e-15,
+      "trend_score": 0.0181818181818183,
+      "rate_score": 0.11999999999999991,
+      "composite": 0.5461548821548826
+    },
+    {
+      "year": 1965.0,
+      "gini": 0.34,
+      "first_derivative": 0.0,
+      "second_derivative": 0.0040000000000000036,
+      "volatility": 2.2205138108521492e-17,
+      "trend_deviation": 0.0019999999999997797,
+      "accel_score": 1.481481481481479,
+      "vol_score": 5.206050713112805e-15,
+      "trend_score": 0.019999999999997797,
+      "rate_score": 0.0,
+      "composite": 0.5225185185185185
+    },
+    {
+      "year": 1975.0,
+      "gini": 0.36,
+      "first_derivative": 0.0020000000000000018,
+      "second_derivative": 0.0,
+      "volatility": 0.0,
+      "trend_deviation": -0.0020000000000000573,
+      "accel_score": 0.0,
+      "vol_score": 0.0,
+      "trend_score": 0.020000000000000573,
+      "rate_score": 0.040000000000000036,
+      "composite": 0.012000000000000122
+    },
+    {
+      "year": 1985.0,
+      "gini": 0.42,
+      "first_derivative": 0.011666666666666667,
+      "second_derivative": -0.009999999999999953,
+      "volatility": 0.006324555320336747,
+      "trend_deviation": 0.01072727272727253,
+      "accel_score": 3.7037037037036766,
+      "vol_score": 1.4828079687973106,
+      "trend_score": 0.1072727272727253,
+      "rate_score": 0.23333333333333334,
+      "composite": 1.735119500616826
+    },
+    {
+      "year": 1995.0,
+      "gini": 0.47,
+      "first_derivative": 0.003333333333333327,
+      "second_derivative": 0.0,
+      "volatility": 0.004898979485566347,
+      "trend_deviation": -0.007090909090909203,
+      "accel_score": 0.0,
+      "vol_score": 1.148578113755126,
+      "trend_score": 0.07090909090909203,
+      "rate_score": 0.06666666666666654,
+      "composite": 0.31465967995393324
+    },
+    {
+      "year": 2010.0,
+      "gini": 0.52,
+      "first_derivative": 0.001666666666666668,
+      "second_derivative": -0.010000000000000009,
+      "volatility": 0.008000000000000007,
+      "trend_deviation": -0.011090909090909262,
+      "accel_score": 3.703703703703697,
+      "vol_score": 1.8756202056189597,
+      "trend_score": 0.11090909090909262,
+      "rate_score": 0.03333333333333336,
+      "composite": 1.7940498325495189
+    },
+    {
+      "year": 2015.0,
+      "gini": 0.53,
+      "first_derivative": 0.003333333333333336,
+      "second_derivative": 0.0,
+      "volatility": 0.0040000000000000036,
+      "trend_deviation": -0.0038181818181819427,
+      "accel_score": 0.0,
+      "vol_score": 0.9378101028094799,
+      "trend_score": 0.03818181818181943,
+      "rate_score": 0.06666666666666672,
+      "composite": 0.2554222226720672
+    }
+  ],
+  "improvement_over_exp_08": "specificity improved from 0% to measured value"
+}

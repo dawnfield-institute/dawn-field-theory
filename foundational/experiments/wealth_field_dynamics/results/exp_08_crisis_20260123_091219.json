@@ -1,0 +1,125 @@
+{
+  "experiment": "exp_08_crisis_prediction",
+  "timestamp": "2026-01-23T09:12:19.172693",
+  "xi_value": 1.0571198664289054,
+  "threshold": 0.3,
+  "crisis_analysis": [
+    {
+      "year": 1929,
+      "gini": 0.54,
+      "rate": -0.0010000000000000009,
+      "natural_rate": 0.005711986642890543,
+      "pressure": -0.17507043740108472,
+      "xi_deviation": 1.1750704374010847,
+      "crisis_signal": true,
+      "crisis_name": "Great Depression",
+      "severity": "extreme"
+    },
+    {
+      "year": 1987,
+      "gini": 0.44,
+      "rate": 0.008499999999999997,
+      "natural_rate": 0.005711986642890543,
+      "pressure": 1.4880987179092182,
+      "xi_deviation": 0.4880987179092182,
+      "crisis_signal": true,
+      "crisis_name": "Black Monday",
+      "severity": "moderate"
+    },
+    {
+      "year": 2000,
+      "gini": 0.48,
+      "rate": 0.0030000000000000027,
+      "natural_rate": 0.005711986642890543,
+      "pressure": 0.5252113122032541,
+      "xi_deviation": 0.4747886877967459,
+      "crisis_signal": true,
+      "crisis_name": "Dot-com Crash",
+      "severity": "moderate"
+    },
+    {
+      "year": 2008,
+      "gini": 0.52,
+      "rate": 0.005600000000000005,
+      "natural_rate": 0.005711986642890543,
+      "pressure": 0.9803944494460745,
+      "xi_deviation": 0.019605550553925544,
+      "crisis_signal": false,
+      "crisis_name": "Financial Crisis",
+      "severity": "severe"
+    },
+    {
+      "year": 2020,
+      "gini": 0.54,
+      "rate": 0.0020000000000000018,
+      "natural_rate": 0.005711986642890543,
+      "pressure": 0.35014087480216943,
+      "xi_deviation": 0.6498591251978305,
+      "crisis_signal": true,
+      "crisis_name": "COVID Shock",
+      "severity": "moderate"
+    }
+  ],
+  "non_crisis_analysis": [
+    {
+      "year": 1935,
+      "gini": 0.47,
+      "rate": -0.010000000000000004,
+      "natural_rate": 0.005711986642890543,
+      "pressure": -1.750704374010846,
+      "xi_deviation": 2.750704374010846,
+      "crisis_signal": true,
+      "is_crisis": false
+    },
+    {
+      "year": 1955,
+      "gini": 0.37833333333333335,
+      "rate": -0.0003333333333333355,
+      "natural_rate": 0.005711986642890543,
+      "pressure": -0.05835681246702856,
+      "xi_deviation": 1.0583568124670286,
+      "crisis_signal": true,
+      "is_crisis": false
+    },
+    {
+      "year": 1975,
+      "gini": 0.37166666666666665,
+      "rate": -0.0003333333333333355,
+      "natural_rate": 0.005711986642890543,
+      "pressure": -0.05835681246702856,
+      "xi_deviation": 1.0583568124670286,
+      "crisis_signal": true,
+      "is_crisis": false
+    },
+    {
+      "year": 1995,
+      "gini": 0.47,
+      "rate": 0.0018333333333333313,
+      "natural_rate": 0.005711986642890543,
+      "pressure": 0.3209624685686547,
+      "xi_deviation": 0.6790375314313453,
+      "crisis_signal": true,
+      "is_crisis": false
+    },
+    {
+      "year": 2015,
+      "gini": 0.53,
+      "rate": 0.0020000000000000018,
+      "natural_rate": 0.005711986642890543,
+      "pressure": 0.35014087480216943,
+      "xi_deviation": 0.6498591251978305,
+      "crisis_signal": true,
+      "is_crisis": false
+    }
+  ],
+  "accuracy": {
+    "true_positives": 4,
+    "false_negatives": 1,
+    "true_negatives": 0,
+    "false_positives": 5,
+    "sensitivity": 0.8,
+    "specificity": 0.0
+  },
+  "interpretation": "xi_deviation_shows_promise",
+  "status": "suggestive_not_definitive"
+}

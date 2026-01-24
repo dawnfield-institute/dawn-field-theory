@@ -1,0 +1,29 @@
+{
+  "experiment": "exp_11_cross_validation",
+  "timestamp": "2026-01-23T09:49:04.828093",
+  "correlations": [
+    [
+      "VIX (volatility)",
+      -0.03403007075402048,
+      36
+    ],
+    [
+      "Debt-to-GDP",
+      0.6512843513176022,
+      13
+    ],
+    [
+      "Credit Spread",
+      0.4637233365571146,
+      11
+    ],
+    [
+      "Fed Stress Index",
+      0.39272705626621857,
+      9
+    ]
+  ],
+  "average_abs_correlation": 0.385441203723739,
+  "validation_status": "partial",
+  "interpretation": "Stress metric correlates with independent indicators"
+}

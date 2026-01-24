@@ -1,0 +1,483 @@
+{
+  "experiment": "exp_03_property_convergence",
+  "timestamp": "20260120_215630",
+  "key_insight": "Properties (what it IS) vs Descriptors (how we label it)",
+  "phases": {
+    "data": {
+      "n_samples": 6497,
+      "n_red": "1599",
+      "n_white": "4898",
+      "spaces": {
+        "acidity": [
+          "fixed acidity",
+          "volatile acidity",
+          "citric acid",
+          "pH"
+        ],
+        "sulfur": [
+          "free sulfur dioxide",
+          "total sulfur dioxide",
+          "sulphates"
+        ],
+        "body": [
+          "residual sugar",
+          "density",
+          "alcohol"
+        ],
+        "minerals": [
+          "chlorides"
+        ]
+      }
+    },
+    "convergence": {
+      "pairs": [
+        {
+          "source_space": "acidity",
+          "target_space": "body",
+          "convergence": 0.0563959922894816,
+          "entropy_proxy": 0.9436040077105184,
+          "is_high_convergence": true,
+          "n_source_features": 4,
+          "n_target_features": 3,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "body",
+          "target_space": "acidity",
+          "convergence": 0.0563959922894816,
+          "entropy_proxy": 0.9436040077105184,
+          "is_high_convergence": true,
+          "n_source_features": 3,
+          "n_target_features": 4,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "sulfur",
+          "target_space": "body",
+          "convergence": 0.04685801261143727,
+          "entropy_proxy": 0.9531419873885627,
+          "is_high_convergence": false,
+          "n_source_features": 3,
+          "n_target_features": 3,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "body",
+          "target_space": "sulfur",
+          "convergence": 0.04685801261143727,
+          "entropy_proxy": 0.9531419873885627,
+          "is_high_convergence": false,
+          "n_source_features": 3,
+          "n_target_features": 3,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "acidity",
+          "target_space": "sulfur",
+          "convergence": 0.045925958500993125,
+          "entropy_proxy": 0.9540740414990069,
+          "is_high_convergence": false,
+          "n_source_features": 4,
+          "n_target_features": 3,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "sulfur",
+          "target_space": "acidity",
+          "convergence": 0.045925958500993125,
+          "entropy_proxy": 0.9540740414990069,
+          "is_high_convergence": false,
+          "n_source_features": 3,
+          "n_target_features": 4,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "body",
+          "target_space": "minerals",
+          "convergence": 0.0051666092531107155,
+          "entropy_proxy": 0.9948333907468893,
+          "is_high_convergence": false,
+          "n_source_features": 3,
+          "n_target_features": 1,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "minerals",
+          "target_space": "body",
+          "convergence": 0.0051666092531107155,
+          "entropy_proxy": 0.9948333907468893,
+          "is_high_convergence": false,
+          "n_source_features": 1,
+          "n_target_features": 3,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "acidity",
+          "target_space": "minerals",
+          "convergence": 0.004796475051977591,
+          "entropy_proxy": 0.9952035249480224,
+          "is_high_convergence": false,
+          "n_source_features": 4,
+          "n_target_features": 1,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "minerals",
+          "target_space": "acidity",
+          "convergence": 0.004796475051977591,
+          "entropy_proxy": 0.9952035249480224,
+          "is_high_convergence": false,
+          "n_source_features": 1,
+          "n_target_features": 4,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "sulfur",
+          "target_space": "minerals",
+          "convergence": 0.004476425016674363,
+          "entropy_proxy": 0.9955235749833257,
+          "is_high_convergence": false,
+          "n_source_features": 3,
+          "n_target_features": 1,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "minerals",
+          "target_space": "sulfur",
+          "convergence": 0.004476425016674363,
+          "entropy_proxy": 0.9955235749833257,
+          "is_high_convergence": false,
+          "n_source_features": 1,
+          "n_target_features": 3,
+          "n_samples": 6497,
+          "k": 5
+        }
+      ],
+      "stats": {
+        "mean": 0.027269912120612454,
+        "std": 0.022705449856355163,
+        "min": 0.004476425016674363,
+        "max": 0.0563959922894816,
+        "median": 0.02554628387705192,
+        "q25": 0.004796475051977591,
+        "q75": 0.04685801261143727,
+        "n_above_threshold": "2",
+        "n_total": 12,
+        "fraction_structured": 0.16666666666666666,
+        "has_exploitable_structure": "False"
+      }
+    },
+    "convergence_red": [
+      {
+        "source_space": "acidity",
+        "target_space": "body",
+        "convergence": 0.046859644420620024,
+        "entropy_proxy": 0.9531403555793799,
+        "is_high_convergence": false,
+        "n_source_features": 4,
+        "n_target_features": 3,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "body",
+        "target_space": "acidity",
+        "convergence": 0.046859644420620024,
+        "entropy_proxy": 0.9531403555793799,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 4,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "sulfur",
+        "target_space": "body",
+        "convergence": 0.03731498853450072,
+        "entropy_proxy": 0.9626850114654992,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 3,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "body",
+        "target_space": "sulfur",
+        "convergence": 0.03731498853450072,
+        "entropy_proxy": 0.9626850114654992,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 3,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "acidity",
+        "target_space": "sulfur",
+        "convergence": 0.03497225448444961,
+        "entropy_proxy": 0.9650277455155504,
+        "is_high_convergence": false,
+        "n_source_features": 4,
+        "n_target_features": 3,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "sulfur",
+        "target_space": "acidity",
+        "convergence": 0.03497225448444961,
+        "entropy_proxy": 0.9650277455155504,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 4,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "body",
+        "target_space": "minerals",
+        "convergence": 0.012607085777817485,
+        "entropy_proxy": 0.9873929142221826,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 1,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "minerals",
+        "target_space": "body",
+        "convergence": 0.012607085777817485,
+        "entropy_proxy": 0.9873929142221826,
+        "is_high_convergence": false,
+        "n_source_features": 1,
+        "n_target_features": 3,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "acidity",
+        "target_space": "minerals",
+        "convergence": 0.011969286359530262,
+        "entropy_proxy": 0.9880307136404698,
+        "is_high_convergence": false,
+        "n_source_features": 4,
+        "n_target_features": 1,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "minerals",
+        "target_space": "acidity",
+        "convergence": 0.011969286359530262,
+        "entropy_proxy": 0.9880307136404698,
+        "is_high_convergence": false,
+        "n_source_features": 1,
+        "n_target_features": 4,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "sulfur",
+        "target_space": "minerals",
+        "convergence": 0.011465499270377318,
+        "entropy_proxy": 0.9885345007296227,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 1,
+        "n_samples": 1599,
+        "k": 5
+      },
+      {
+        "source_space": "minerals",
+        "target_space": "sulfur",
+        "convergence": 0.011465499270377318,
+        "entropy_proxy": 0.9885345007296227,
+        "is_high_convergence": false,
+        "n_source_features": 1,
+        "n_target_features": 3,
+        "n_samples": 1599,
+        "k": 5
+      }
+    ],
+    "convergence_white": [
+      {
+        "source_space": "acidity",
+        "target_space": "body",
+        "convergence": 0.05938445883321343,
+        "entropy_proxy": 0.9406155411667866,
+        "is_high_convergence": true,
+        "n_source_features": 4,
+        "n_target_features": 3,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "body",
+        "target_space": "acidity",
+        "convergence": 0.05938445883321343,
+        "entropy_proxy": 0.9406155411667866,
+        "is_high_convergence": true,
+        "n_source_features": 3,
+        "n_target_features": 4,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "sulfur",
+        "target_space": "body",
+        "convergence": 0.052665649082553945,
+        "entropy_proxy": 0.9473343509174461,
+        "is_high_convergence": true,
+        "n_source_features": 3,
+        "n_target_features": 3,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "body",
+        "target_space": "sulfur",
+        "convergence": 0.052665649082553945,
+        "entropy_proxy": 0.9473343509174461,
+        "is_high_convergence": true,
+        "n_source_features": 3,
+        "n_target_features": 3,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "acidity",
+        "target_space": "sulfur",
+        "convergence": 0.05202236740619754,
+        "entropy_proxy": 0.9479776325938024,
+        "is_high_convergence": true,
+        "n_source_features": 4,
+        "n_target_features": 3,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "sulfur",
+        "target_space": "acidity",
+        "convergence": 0.05202236740619754,
+        "entropy_proxy": 0.9479776325938024,
+        "is_high_convergence": true,
+        "n_source_features": 3,
+        "n_target_features": 4,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "sulfur",
+        "target_space": "minerals",
+        "convergence": 0.005302617848554966,
+        "entropy_proxy": 0.994697382151445,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 1,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "minerals",
+        "target_space": "sulfur",
+        "convergence": 0.005302617848554966,
+        "entropy_proxy": 0.994697382151445,
+        "is_high_convergence": false,
+        "n_source_features": 1,
+        "n_target_features": 3,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "body",
+        "target_space": "minerals",
+        "convergence": 0.0052199796483177454,
+        "entropy_proxy": 0.9947800203516822,
+        "is_high_convergence": false,
+        "n_source_features": 3,
+        "n_target_features": 1,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "minerals",
+        "target_space": "body",
+        "convergence": 0.0052199796483177454,
+        "entropy_proxy": 0.9947800203516822,
+        "is_high_convergence": false,
+        "n_source_features": 1,
+        "n_target_features": 3,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "acidity",
+        "target_space": "minerals",
+        "convergence": 0.005199725187475288,
+        "entropy_proxy": 0.9948002748125248,
+        "is_high_convergence": false,
+        "n_source_features": 4,
+        "n_target_features": 1,
+        "n_samples": 4898,
+        "k": 5
+      },
+      {
+        "source_space": "minerals",
+        "target_space": "acidity",
+        "convergence": 0.005199725187475288,
+        "entropy_proxy": 0.9948002748125248,
+        "is_high_convergence": false,
+        "n_source_features": 1,
+        "n_target_features": 4,
+        "n_samples": 4898,
+        "k": 5
+      }
+    ],
+    "interpretation": {
+      "n_discoveries": 2,
+      "discoveries": [
+        {
+          "source_space": "acidity",
+          "target_space": "body",
+          "convergence": 0.0563959922894816,
+          "entropy_proxy": 0.9436040077105184,
+          "is_high_convergence": true,
+          "n_source_features": 4,
+          "n_target_features": 3,
+          "n_samples": 6497,
+          "k": 5
+        },
+        {
+          "source_space": "body",
+          "target_space": "acidity",
+          "convergence": 0.0563959922894816,
+          "entropy_proxy": 0.9436040077105184,
+          "is_high_convergence": true,
+          "n_source_features": 3,
+          "n_target_features": 4,
+          "n_samples": 6497,
+          "k": 5
+        }
+      ]
+    }
+  },
+  "summary": {
+    "validated": true,
+    "max_convergence": 0.0563959922894816,
+    "n_discoveries": 2,
+    "note": "Wine has fewer property dimensions than cannabis chemistry"
+  }
+}

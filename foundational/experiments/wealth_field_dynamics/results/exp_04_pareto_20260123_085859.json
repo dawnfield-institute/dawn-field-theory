@@ -1,0 +1,77 @@
+{
+  "experiment": "exp_04_pareto_from_fibonacci",
+  "timestamp": "2026-01-23T08:58:59.431713",
+  "derivation": {
+    "pareto_80_20_depth": 3.3445518763691093,
+    "formula": "1 - 1/\u03c6^x = 0.80 \u2192 x = log(5)/log(\u03c6) \u2248 3.33",
+    "interpretation": "80/20 is \u03c6 at depth 3.33"
+  },
+  "phi_depth_table": [
+    {
+      "depth": 1,
+      "top_fraction": 0.3819660112501052
+    },
+    {
+      "depth": 2,
+      "top_fraction": 0.6180339887498949
+    },
+    {
+      "depth": 3,
+      "top_fraction": 0.7639320225002103
+    },
+    {
+      "depth": 4,
+      "top_fraction": 0.8541019662496846
+    },
+    {
+      "depth": 5,
+      "top_fraction": 0.9098300562505258
+    }
+  ],
+  "pareto_exponents": {
+    "pure_phi_splitting": 2.0,
+    "80_20_implied": 1.160964047443681,
+    "empirical_range": [
+      1.0,
+      1.5
+    ]
+  },
+  "predictions": {
+    "80_20_requires_depth": 3.33,
+    "med_bounded_systems": "less_than_80_20",
+    "deeper_systems": "more_extreme_concentration"
+  },
+  "fibonacci_data": {
+    "sequence": [
+      1,
+      1,
+      2,
+      3,
+      5,
+      8,
+      13,
+      21,
+      34,
+      55,
+      89,
+      144
+    ],
+    "cumulative": [
+      1,
+      2,
+      4,
+      7,
+      12,
+      20,
+      33,
+      54,
+      88,
+      143,
+      232,
+      376
+    ],
+    "total": 376
+  },
+  "status": "derived",
+  "falsification": "awaiting_empirical_comparison"
+}

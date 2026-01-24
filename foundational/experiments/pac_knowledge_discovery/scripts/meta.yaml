@@ -2,11 +2,11 @@ schema_version: "2.0"
 description: "Experiment scripts for PAC knowledge discovery"
 semantic_scope: "implementation"
 proficiency_level: "research"
-files: []
+files:
+  - "[exp_01_synthetic_validation.py]": "Hide known feature, verify residual detects it"
 
 planned_scripts:
-  - exp_01_synthetic_validation.py: "Hide known feature, verify residual detects it"
-  - exp_02_cross_domain_convergence.py: "N² analysis across domains"
+  - exp_02_cross_domain_convergence.py: "N² analysis across public datasets"
   - exp_03_residual_clustering.py: "Cluster residuals to count missing children"
   - exp_04_hypothesis_generator.py: "AI-guided discovery suggestions"
   - exp_05_acquisition_validation.py: "Add hypothesized data, verify residual decrease"

@@ -1,0 +1,23 @@
+{
+  "experiment": "exp_14_phi_ratio_redistribution",
+  "timestamp": "2026-01-23T10:34:40.509333",
+  "purpose": "Test whether wealth redistribution follows \u03c6-ratio splits",
+  "correct_framing": "\u039e is emergence per level, not a threshold",
+  "constants": {
+    "phi": 1.618033988749895,
+    "phi_inv": 0.6180339887498948,
+    "xi": 1.0571198664289054,
+    "xi_minus_1": 0.05711986642890543,
+    "pi_over_55": 0.057119866428905326
+  },
+  "simulation": {
+    "initial_gini": 0.46489797042699066,
+    "gini_phi": 0.36692321393836647,
+    "gini_equal": 0.34230217309946864,
+    "gini_aggressive": 0.3497889604235429,
+    "emergence_phi": 0.25647842012728844,
+    "emergence_equal": 0.24519159465504403,
+    "emergence_aggressive": 0.12789890000383083,
+    "pac_prediction": 0.057119866428905326
+  }
+}

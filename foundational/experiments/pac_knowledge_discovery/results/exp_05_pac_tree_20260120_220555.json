@@ -1,0 +1,5098 @@
+{
+  "experiment": "exp_05_pac_tree_construction",
+  "timestamp": "20260120_220555",
+  "phases": {
+    "data": {
+      "n_proteins": 6594,
+      "spaces": {
+        "amino_acid": 20,
+        "GO_BP": 30,
+        "GO_MF": 30,
+        "GO_CC": 30
+      }
+    },
+    "convergence": [
+      {
+        "source_space": "amino_acid",
+        "target_space": "GO_BP",
+        "convergence": 0.00425744850031494,
+        "entropy_proxy": 0.995742551499685,
+        "is_high_convergence": false,
+        "n_source_features": 20,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_BP",
+        "target_space": "amino_acid",
+        "convergence": 0.00425744850031494,
+        "entropy_proxy": 0.995742551499685,
+        "is_high_convergence": false,
+        "n_source_features": 30,
+        "n_target_features": 20,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "amino_acid",
+        "target_space": "GO_MF",
+        "convergence": 0.006253892487366769,
+        "entropy_proxy": 0.9937461075126333,
+        "is_high_convergence": false,
+        "n_source_features": 20,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_MF",
+        "target_space": "amino_acid",
+        "convergence": 0.006253892487366769,
+        "entropy_proxy": 0.9937461075126333,
+        "is_high_convergence": false,
+        "n_source_features": 30,
+        "n_target_features": 20,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "amino_acid",
+        "target_space": "GO_CC",
+        "convergence": 0.006360206018564166,
+        "entropy_proxy": 0.9936397939814359,
+        "is_high_convergence": false,
+        "n_source_features": 20,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_CC",
+        "target_space": "amino_acid",
+        "convergence": 0.006360206018564166,
+        "entropy_proxy": 0.9936397939814359,
+        "is_high_convergence": false,
+        "n_source_features": 30,
+        "n_target_features": 20,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_BP",
+        "target_space": "GO_MF",
+        "convergence": 0.17299096079340998,
+        "entropy_proxy": 0.8270090392065901,
+        "is_high_convergence": true,
+        "n_source_features": 30,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_MF",
+        "target_space": "GO_BP",
+        "convergence": 0.17299096079340998,
+        "entropy_proxy": 0.8270090392065901,
+        "is_high_convergence": true,
+        "n_source_features": 30,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_BP",
+        "target_space": "GO_CC",
+        "convergence": 0.017853047651809263,
+        "entropy_proxy": 0.9821469523481907,
+        "is_high_convergence": false,
+        "n_source_features": 30,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_CC",
+        "target_space": "GO_BP",
+        "convergence": 0.017853047651809263,
+        "entropy_proxy": 0.9821469523481907,
+        "is_high_convergence": false,
+        "n_source_features": 30,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_MF",
+        "target_space": "GO_CC",
+        "convergence": 0.017524596533588666,
+        "entropy_proxy": 0.9824754034664114,
+        "is_high_convergence": false,
+        "n_source_features": 30,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      },
+      {
+        "source_space": "GO_CC",
+        "target_space": "GO_MF",
+        "convergence": 0.017524596533588666,
+        "entropy_proxy": 0.9824754034664114,
+        "is_high_convergence": false,
+        "n_source_features": 30,
+        "n_target_features": 30,
+        "n_samples": 6594,
+        "k": 10
+      }
+    ],
+    "hierarchy": {
+      "GO_BP": 0,
+      "GO_MF": 0,
+      "amino_acid": 1,
+      "GO_CC": 2
+    },
+    "tree": {
+      "n_nodes": 368,
+      "levels": 3
+    },
+    "conservation": {
+      "count": {
+        "valid": "True",
+        "mean_relative_error": 0.0,
+        "max_relative_error": 0.0,
+        "n_nodes_checked": 116,
+        "errors": [
+          {
+            "node": "proteome",
+            "level": -1,
+            "value": 6594,
+            "child_sum": 6594,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c0",
+            "level": 0,
+            "value": 160,
+            "child_sum": 160,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c1",
+            "level": 0,
+            "value": 149,
+            "child_sum": 149,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c2",
+            "level": 0,
+            "value": 5904,
+            "child_sum": 5904,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c3",
+            "level": 0,
+            "value": 182,
+            "child_sum": 182,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c4",
+            "level": 0,
+            "value": 199,
+            "child_sum": 199,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 6,
+            "child_sum": 6,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 129,
+            "child_sum": 129,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 118,
+            "child_sum": 118,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 5,
+            "child_sum": 5,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 173,
+            "child_sum": 173,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 4901,
+            "child_sum": 4901,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 546,
+            "child_sum": 546,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 235,
+            "child_sum": 235,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 49,
+            "child_sum": 49,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 34,
+            "child_sum": 34,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 16,
+            "child_sum": 16,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 18,
+            "child_sum": 18,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 88,
+            "child_sum": 88,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 26,
+            "child_sum": 26,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 119,
+            "child_sum": 119,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 41,
+            "child_sum": 41,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 24,
+            "child_sum": 24,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 7,
+            "child_sum": 7,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 6,
+            "child_sum": 6,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 44,
+            "child_sum": 44,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 19,
+            "child_sum": 19,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 20,
+            "child_sum": 20,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 26,
+            "child_sum": 26,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 20,
+            "child_sum": 20,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 14,
+            "child_sum": 14,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 21,
+            "child_sum": 21,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 18,
+            "child_sum": 18,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 21,
+            "child_sum": 21,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 44,
+            "child_sum": 44,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 5,
+            "child_sum": 5,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 28,
+            "child_sum": 28,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 41,
+            "child_sum": 41,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 58,
+            "child_sum": 58,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 11,
+            "child_sum": 11,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 35,
+            "child_sum": 35,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 241,
+            "child_sum": 241,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 1579,
+            "child_sum": 1579,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 1210,
+            "child_sum": 1210,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 898,
+            "child_sum": 898,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 973,
+            "child_sum": 973,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 64,
+            "child_sum": 64,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 104,
+            "child_sum": 104,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 113,
+            "child_sum": 113,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 176,
+            "child_sum": 176,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 89,
+            "child_sum": 89,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 33,
+            "child_sum": 33,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 62,
+            "child_sum": 62,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 37,
+            "child_sum": 37,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 92,
+            "child_sum": 92,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 11,
+            "child_sum": 11,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 31,
+            "child_sum": 31,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 3,
+            "child_sum": 3,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 2,
+            "child_sum": 2,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 12,
+            "child_sum": 12,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 1,
+            "child_sum": 1,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 6,
+            "child_sum": 6,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 5,
+            "child_sum": 5,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 1,
+            "child_sum": 1,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 13,
+            "child_sum": 13,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 1,
+            "child_sum": 1,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 3,
+            "child_sum": 3,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 1,
+            "child_sum": 1,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 2,
+            "child_sum": 2,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 1,
+            "child_sum": 1,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 6,
+            "child_sum": 6,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 7,
+            "child_sum": 7,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 3,
+            "child_sum": 3,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 1,
+            "child_sum": 1,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 26,
+            "child_sum": 26,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 7,
+            "child_sum": 7,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 29,
+            "child_sum": 29,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 18,
+            "child_sum": 18,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 4,
+            "child_sum": 4,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 2,
+            "child_sum": 2,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 9,
+            "child_sum": 9,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 2,
+            "child_sum": 2,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 15,
+            "child_sum": 15,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 30,
+            "child_sum": 30,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 4,
+            "child_sum": 4,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 22,
+            "child_sum": 22,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 48,
+            "child_sum": 48,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 13,
+            "child_sum": 13,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 10,
+            "child_sum": 10,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 4,
+            "child_sum": 4,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 13,
+            "child_sum": 13,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 1,
+            "child_sum": 1,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 12,
+            "child_sum": 12,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 2,
+            "child_sum": 2,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 5,
+            "child_sum": 5,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 3,
+            "child_sum": 3,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 2,
+            "child_sum": 2,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 8,
+            "child_sum": 8,
+            "error": 0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 7,
+            "child_sum": 7,
+            "error": 0,
+            "relative_error": 0.0
+          }
+        ]
+      },
+      "hydrophobicity": {
+        "valid": "True",
+        "mean_relative_error": 5.296343620105476e-17,
+        "max_relative_error": 3.760621834455254e-16,
+        "n_nodes_checked": 116,
+        "errors": [
+          {
+            "node": "proteome",
+            "level": -1,
+            "value": 1543.9563582372127,
+            "child_sum": 1543.9563582372125,
+            "error": 2.2737367544323206e-13,
+            "relative_error": 1.4726690571929914e-16
+          },
+          {
+            "node": "GO_BP_c0",
+            "level": 0,
+            "value": 37.81822877090591,
+            "child_sum": 37.81822877090591,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c1",
+            "level": 0,
+            "value": 36.31116495654972,
+            "child_sum": 36.31116495654972,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c2",
+            "level": 0,
+            "value": 1382.5188453254275,
+            "child_sum": 1382.5188453254277,
+            "error": 2.2737367544323206e-13,
+            "relative_error": 1.6446334616850098e-16
+          },
+          {
+            "node": "GO_BP_c3",
+            "level": 0,
+            "value": 41.71210212801803,
+            "child_sum": 41.71210212801803,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_BP_c4",
+            "level": 0,
+            "value": 45.59601705631145,
+            "child_sum": 45.59601705631146,
+            "error": 7.105427357601002e-15,
+            "relative_error": 1.558343867804449e-16
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 2.2106000371385646,
+            "child_sum": 2.2106000371385646,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 1.4983208786180229,
+            "child_sum": 1.4983208786180229,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 30.359553096176043,
+            "child_sum": 30.359553096176047,
+            "error": 3.552713678800501e-15,
+            "relative_error": 1.1702127720872102e-16
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 1.9112147510730249,
+            "child_sum": 1.9112147510730249,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 1.8385400079002532,
+            "child_sum": 1.8385400079002532,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 28.445098651331293,
+            "child_sum": 28.4450986513313,
+            "error": 7.105427357601002e-15,
+            "relative_error": 2.497944354033187e-16
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 2.031226378267565,
+            "child_sum": 2.031226378267565,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 2.3682094192044216,
+            "child_sum": 2.3682094192044216,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 1.2939075117166547,
+            "child_sum": 1.2939075117166547,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 2.172722996029787,
+            "child_sum": 2.172722996029787,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 40.69198019972309,
+            "child_sum": 40.6919801997231,
+            "error": 7.105427357601002e-15,
+            "relative_error": 1.746149320511405e-16
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 1142.5073119746046,
+            "child_sum": 1142.5073119746046,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 132.03195474142728,
+            "child_sum": 132.03195474142726,
+            "error": 2.842170943040401e-14,
+            "relative_error": 2.1526386916004819e-16
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 57.71585283960253,
+            "child_sum": 57.715852839602526,
+            "error": 7.105427357601002e-15,
+            "relative_error": 1.2311049751526005e-16
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 9.571745570070048,
+            "child_sum": 9.571745570070048,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 7.109961415794127,
+            "child_sum": 7.109961415794128,
+            "error": 8.881784197001252e-16,
+            "relative_error": 1.2492028687063172e-16
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 4.072454713663174,
+            "child_sum": 4.072454713663175,
+            "error": 8.881784197001252e-16,
+            "relative_error": 2.1809411820351674e-16
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 3.922037127831186,
+            "child_sum": 3.922037127831185,
+            "error": 8.881784197001252e-16,
+            "relative_error": 2.264584425775876e-16
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 20.766764639740114,
+            "child_sum": 20.76676463974011,
+            "error": 3.552713678800501e-15,
+            "relative_error": 1.7107689813182962e-16
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 5.840884230989434,
+            "child_sum": 5.840884230989434,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c0",
+            "level": 0,
+            "value": 27.873639811702056,
+            "child_sum": 27.87363981170205,
+            "error": 7.105427357601002e-15,
+            "relative_error": 2.549156624538846e-16
+          },
+          {
+            "node": "GO_MF_c1",
+            "level": 0,
+            "value": 8.517075808314125,
+            "child_sum": 8.517075808314125,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c2",
+            "level": 0,
+            "value": 5.673545276383568,
+            "child_sum": 5.673545276383567,
+            "error": 8.881784197001252e-16,
+            "relative_error": 1.5654733970260443e-16
+          },
+          {
+            "node": "GO_MF_c3",
+            "level": 0,
+            "value": 1.9311448479737563,
+            "child_sum": 1.9311448479737563,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "GO_MF_c4",
+            "level": 0,
+            "value": 1.6006113119379526,
+            "child_sum": 1.6006113119379526,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 2.2106000371385646,
+            "child_sum": 2.2106000371385646,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 1.4983208786180229,
+            "child_sum": 1.4983208786180229,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 10.963055730208493,
+            "child_sum": 10.963055730208493,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 4.010347630701815,
+            "child_sum": 4.010347630701814,
+            "error": 8.881784197001252e-16,
+            "relative_error": 2.2147167814095288e-16
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 5.39717589418823,
+            "child_sum": 5.397175894188232,
+            "error": 1.7763568394002505e-15,
+            "relative_error": 3.2912709799083287e-16
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 5.252337125351007,
+            "child_sum": 5.252337125351007,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 4.7366367157265,
+            "child_sum": 4.736636715726501,
+            "error": 8.881784197001252e-16,
+            "relative_error": 1.8751246359071837e-16
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 1.9112147510730249,
+            "child_sum": 1.9112147510730249,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 1.8385400079002532,
+            "child_sum": 1.8385400079002532,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 3.0732259845472227,
+            "child_sum": 3.0732259845472227,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 4.723572104818046,
+            "child_sum": 4.7235721048180475,
+            "error": 1.7763568394002505e-15,
+            "relative_error": 3.760621834455254e-16
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 4.467817852571729,
+            "child_sum": 4.467817852571729,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 5.713359180381458,
+            "child_sum": 5.713359180381458,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 10.467123529012843,
+            "child_sum": 10.467123529012841,
+            "error": 1.7763568394002505e-15,
+            "relative_error": 1.6970821395931105e-16
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 2.031226378267565,
+            "child_sum": 2.031226378267565,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 2.3682094192044216,
+            "child_sum": 2.3682094192044216,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 1.2939075117166547,
+            "child_sum": 1.2939075117166547,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 2.172722996029787,
+            "child_sum": 2.172722996029787,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 7.6286397551919585,
+            "child_sum": 7.628639755191958,
+            "error": 8.881784197001252e-16,
+            "relative_error": 1.1642683993508042e-16
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 10.229635397190362,
+            "child_sum": 10.22963539719036,
+            "error": 1.7763568394002505e-15,
+            "relative_error": 1.7364810869878497e-16
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 13.426447457296087,
+            "child_sum": 13.426447457296085,
+            "error": 1.7763568394002505e-15,
+            "relative_error": 1.3230281837769065e-16
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 2.5787256912113787,
+            "child_sum": 2.578725691211379,
+            "error": 4.440892098500626e-16,
+            "relative_error": 1.7221265967278896e-16
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 6.828531898833312,
+            "child_sum": 6.828531898833312,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 50.96612909330845,
+            "child_sum": 50.96612909330845,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 355.81335655888233,
+            "child_sum": 355.81335655888233,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 296.51372623455643,
+            "child_sum": 296.5137262345564,
+            "error": 5.684341886080802e-14,
+            "relative_error": 1.9170585990289763e-16
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 191.7774063770712,
+            "child_sum": 191.7774063770712,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 247.43669371078622,
+            "child_sum": 247.4366937107862,
+            "error": 2.842170943040401e-14,
+            "relative_error": 1.1486457002058241e-16
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 13.551249780820925,
+            "child_sum": 13.551249780820926,
+            "error": 1.7763568394002505e-15,
+            "relative_error": 1.310843551798689e-16
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 27.04743286209744,
+            "child_sum": 27.047432862097438,
+            "error": 3.552713678800501e-15,
+            "relative_error": 1.313512338458948e-16
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 29.287394095306826,
+            "child_sum": 29.28739409530683,
+            "error": 3.552713678800501e-15,
+            "relative_error": 1.2130521640946564e-16
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 40.34344971755428,
+            "child_sum": 40.34344971755428,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 21.802428285647796,
+            "child_sum": 21.802428285647796,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 8.614071605022517,
+            "child_sum": 8.614071605022517,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 16.540228830321343,
+            "child_sum": 16.540228830321347,
+            "error": 3.552713678800501e-15,
+            "relative_error": 2.1479229309619405e-16
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 7.626233686876493,
+            "child_sum": 7.6262336868764935,
+            "error": 8.881784197001252e-16,
+            "relative_error": 1.1646357247464574e-16
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 22.405348076243804,
+            "child_sum": 22.405348076243804,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 2.5299706411383687,
+            "child_sum": 2.5299706411383687,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 5.961325534104834,
+            "child_sum": 5.961325534104834,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 0.637827061903535,
+            "child_sum": 0.637827061903535,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 0.44587051211570183,
+            "child_sum": 0.44587051211570183,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 2.3319064084342713,
+            "child_sum": 2.3319064084342713,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 0.1948160535117057,
+            "child_sum": 0.1948160535117057,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 1.3949468776235765,
+            "child_sum": 1.3949468776235765,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 0.8332841042871386,
+            "child_sum": 0.8332841042871386,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 0.19930069930069932,
+            "child_sum": 0.19930069930069932,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 2.974728265290945,
+            "child_sum": 2.9747282652909446,
+            "error": 4.440892098500626e-16,
+            "relative_error": 1.4928731979713389e-16
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 1.7077014692917687,
+            "child_sum": 1.7077014692917687,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 2.289314204236931,
+            "child_sum": 2.289314204236931,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 0.21649484536082475,
+            "child_sum": 0.21649484536082475,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 0.7170194823173968,
+            "child_sum": 0.7170194823173968,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 0.29452054794520544,
+            "child_sum": 0.29452054794520544,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 0.5551056338028169,
+            "child_sum": 0.5551056338028169,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 0.17130307467057102,
+            "child_sum": 0.17130307467057102,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 1.1654676249013545,
+            "child_sum": 1.1654676249013545,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 1.7739668697466573,
+            "child_sum": 1.7739668697466573,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 0.6192465783801524,
+            "child_sum": 0.6192465783801524,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 0.19205298013245034,
+            "child_sum": 0.19205298013245034,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 6.317099832783524,
+            "child_sum": 6.317099832783525,
+            "error": 8.881784197001252e-16,
+            "relative_error": 1.4059907919941236e-16
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 2.2710780686423506,
+            "child_sum": 2.2710780686423506,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 1.417014761360888,
+            "child_sum": 1.417014761360888,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 6.406667181582635,
+            "child_sum": 6.406667181582635,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 4.354904795370714,
+            "child_sum": 4.354904795370714,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 0.8034980611936375,
+            "child_sum": 0.8034980611936375,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 0.41747366844706235,
+            "child_sum": 0.41747366844706235,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 2.0505965321215633,
+            "child_sum": 2.0505965321215633,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 2.1783831577464134,
+            "child_sum": 2.1783831577464134,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 0.3909328114807567,
+            "child_sum": 0.3909328114807567,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 3.118290494775274,
+            "child_sum": 3.118290494775274,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 8.209023503323909,
+            "child_sum": 8.209023503323909,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 0.8879405855589576,
+            "child_sum": 0.8879405855589576,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 4.464243018821603,
+            "child_sum": 4.464243018821603,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 11.194142209222306,
+            "child_sum": 11.194142209222306,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 2.7427498700369513,
+            "child_sum": 2.742749870036951,
+            "error": 4.440892098500626e-16,
+            "relative_error": 1.6191385685639634e-16
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 2.166084524616841,
+            "child_sum": 2.166084524616841,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 0.6684519559726068,
+            "child_sum": 0.6684519559726068,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 2.788769049524459,
+            "child_sum": 2.788769049524459,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 0.1510204081632653,
+            "child_sum": 0.1510204081632653,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c0",
+            "level": 1,
+            "value": 3.0361256363310494,
+            "child_sum": 3.0361256363310503,
+            "error": 8.881784197001252e-16,
+            "relative_error": 2.92536780781387e-16
+          },
+          {
+            "node": "amino_acid_c1",
+            "level": 1,
+            "value": 0.43667210662314704,
+            "child_sum": 0.43667210662314704,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c2",
+            "level": 1,
+            "value": 1.12394480221181,
+            "child_sum": 1.12394480221181,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c3",
+            "level": 1,
+            "value": 0.5171848129039909,
+            "child_sum": 0.5171848129039909,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_c4",
+            "level": 1,
+            "value": 0.5596179183135706,
+            "child_sum": 0.5596179183135706,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 1.9311448479737563,
+            "child_sum": 1.9311448479737563,
+            "error": 0.0,
+            "relative_error": 0.0
+          },
+          {
+            "node": "amino_acid_cluster_0",
+            "level": 1,
+            "value": 1.6006113119379526,
+            "child_sum": 1.6006113119379526,
+            "error": 0.0,
+            "relative_error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "n_nodes": 368,
+    "max_depth": 3,
+    "count_conservation_error": 0.0,
+    "tree": {
+      "name": "proteome",
+      "level": -1,
+      "n_members": 6594,
+      "value": 1543.9563582372127,
+      "conservation_error": 2.2737367544323206e-13,
+      "children": [
+        {
+          "name": "GO_BP_c0",
+          "level": 0,
+          "n_members": 160,
+          "value": 37.81822877090591,
+          "conservation_error": 0.0,
+          "children": [
+            {
+              "name": "GO_MF_c0",
+              "level": 0,
+              "n_members": 9,
+              "value": 2.2106000371385646,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 9,
+                  "value": 2.2106000371385646,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.2106000371385646,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c1",
+              "level": 0,
+              "n_members": 6,
+              "value": 1.4983208786180229,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 6,
+                  "value": 1.4983208786180229,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.4983208786180229,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c2",
+              "level": 0,
+              "n_members": 129,
+              "value": 30.359553096176043,
+              "conservation_error": 3.552713678800501e-15,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 44,
+                  "value": 10.963055730208493,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.378020458563384,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.4608986349025823,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 14,
+                      "value": 3.5389747691114746,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.21875,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.3664118676310526,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 19,
+                  "value": 4.010347630701815,
+                  "conservation_error": 8.881784197001252e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.2469775572993984,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.2183763373190686,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.21384928716904278,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.2896101280002394,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.041534320914065,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 20,
+                  "value": 5.39717589418823,
+                  "conservation_error": 1.7763568394002505e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.473418336088409,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 2.1730303388692427,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 2.002312895010325,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.256,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4924143242202541,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 26,
+                  "value": 5.252337125351007,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.3919536427264363,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 11,
+                      "value": 2.3106267243756675,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.8006709665602063,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4214808558558559,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.3276049358328408,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 20,
+                  "value": 4.7366367157265,
+                  "conservation_error": 8.881784197001252e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.49542531423560365,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.3246995865575626,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.7660040411552467,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.9155278004803573,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.2349799732977303,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c3",
+              "level": 0,
+              "n_members": 8,
+              "value": 1.9112147510730249,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 8,
+                  "value": 1.9112147510730249,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.9112147510730249,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c4",
+              "level": 0,
+              "n_members": 8,
+              "value": 1.8385400079002532,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 8,
+                  "value": 1.8385400079002532,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.8385400079002532,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GO_BP_c1",
+          "level": 0,
+          "n_members": 149,
+          "value": 36.31116495654972,
+          "conservation_error": 0.0,
+          "children": [
+            {
+              "name": "GO_MF_c0",
+              "level": 0,
+              "n_members": 118,
+              "value": 28.445098651331293,
+              "conservation_error": 7.105427357601002e-15,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 14,
+                  "value": 3.0732259845472227,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.6734991699099148,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.5259858442871588,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.8530137200072371,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.785095066434866,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.23563218390804597,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 21,
+                  "value": 4.723572104818046,
+                  "conservation_error": 1.7763568394002505e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.1904761904761905,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.2808013861557592,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.632541824290743,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.5224219317356572,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.0973307721596972,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 18,
+                  "value": 4.467817852571729,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.5799702927985106,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.7158645650831065,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.6957617625093353,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.9553683149657614,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.5208529172150154,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 21,
+                  "value": 5.713359180381458,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.5923120870749894,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 2.2152315090808123,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 2.0393646236594276,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.5408695652173913,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.3255813953488372,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 44,
+                  "value": 10.467123529012843,
+                  "conservation_error": 1.7763568394002505e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 12,
+                      "value": 2.8128674719043145,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.616179640443051,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.132570703398976,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.384121957386955,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.5213837558795458,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c1",
+              "level": 0,
+              "n_members": 8,
+              "value": 2.031226378267565,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 8,
+                  "value": 2.031226378267565,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 2.031226378267565,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c2",
+              "level": 0,
+              "n_members": 9,
+              "value": 2.3682094192044216,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 9,
+                  "value": 2.3682094192044216,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.3682094192044216,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c3",
+              "level": 0,
+              "n_members": 5,
+              "value": 1.2939075117166547,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 5,
+                  "value": 1.2939075117166547,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.2939075117166547,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c4",
+              "level": 0,
+              "n_members": 9,
+              "value": 2.172722996029787,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 9,
+                  "value": 2.172722996029787,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.172722996029787,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GO_BP_c2",
+          "level": 0,
+          "n_members": 5904,
+          "value": 1382.5188453254275,
+          "conservation_error": 2.2737367544323206e-13,
+          "children": [
+            {
+              "name": "GO_MF_c0",
+              "level": 0,
+              "n_members": 173,
+              "value": 40.69198019972309,
+              "conservation_error": 7.105427357601002e-15,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 28,
+                  "value": 7.6286397551919585,
+                  "conservation_error": 8.881784197001252e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.3252913679503737,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.9961780011735166,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.25777414075286414,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.7299414753802476,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.3194547699349561,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 41,
+                  "value": 10.229635397190362,
+                  "conservation_error": 1.7763568394002505e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4738236379823247,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 11,
+                      "value": 2.7460969940915883,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.4651683796042487,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.186445571453081,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.358100814059118,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 58,
+                  "value": 13.426447457296087,
+                  "conservation_error": 1.7763568394002505e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.830835851102614,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 13,
+                      "value": 2.930476844353265,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.1951175193466796,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 22,
+                      "value": 5.125504262922968,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.344512979570557,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 11,
+                  "value": 2.5787256912113787,
+                  "conservation_error": 4.440892098500626e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.47857976752449116,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.47467883705206226,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.4175024848649138,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.2079646017699115,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 35,
+                  "value": 6.828531898833312,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.1265201174037731,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.3702629747441009,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 11,
+                      "value": 2.2174304751082774,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 1.9449065668712775,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.16941176470588237,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c1",
+              "level": 0,
+              "n_members": 4901,
+              "value": 1142.5073119746046,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 241,
+                  "value": 50.96612909330845,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 58,
+                      "value": 13.084055486365171,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 34,
+                      "value": 7.715627385736243,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 1.932564019386644,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 112,
+                      "value": 22.461202481711357,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 27,
+                      "value": 5.772679720109036,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 1579,
+                  "value": 355.81335655888233,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 92,
+                      "value": 21.57102409631626,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 418,
+                      "value": 95.72117747539231,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 205,
+                      "value": 44.06212204125944,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 318,
+                      "value": 70.34700690889709,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 546,
+                      "value": 124.11202603701722,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 1210,
+                  "value": 296.51372623455643,
+                  "conservation_error": 5.684341886080802e-14,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 441,
+                      "value": 108.38577231922345,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 295,
+                      "value": 74.17419069920626,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 152,
+                      "value": 37.13291404730295,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 198,
+                      "value": 48.85099781743443,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 124,
+                      "value": 27.969851351389305,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 898,
+                  "value": 191.7774063770712,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 337,
+                      "value": 74.48875920689187,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 348,
+                      "value": 72.04181563614321,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 41,
+                      "value": 7.672484557831042,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 118,
+                      "value": 25.451092525935625,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 54,
+                      "value": 12.123254450269465,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 973,
+                  "value": 247.43669371078622,
+                  "conservation_error": 2.842170943040401e-14,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 230,
+                      "value": 57.558611957621345,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 170,
+                      "value": 43.66050775966883,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 287,
+                      "value": 76.59848984183581,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 144,
+                      "value": 34.40399803927656,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 142,
+                      "value": 35.215086112383645,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c2",
+              "level": 0,
+              "n_members": 546,
+              "value": 132.03195474142728,
+              "conservation_error": 2.842170943040401e-14,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 64,
+                  "value": 13.551249780820925,
+                  "conservation_error": 1.7763568394002505e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 16,
+                      "value": 3.395801086504715,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 18,
+                      "value": 3.7964894184186653,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.1792337124862655,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.6545545099780643,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 21,
+                      "value": 4.5251710534332155,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 104,
+                  "value": 27.04743286209744,
+                  "conservation_error": 3.552713678800501e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 31,
+                      "value": 7.968956219751182,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 27,
+                      "value": 7.314537029992897,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.600290919774213,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.272897357279227,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 27,
+                      "value": 6.890751335299919,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 113,
+                  "value": 29.287394095306826,
+                  "conservation_error": 3.552713678800501e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 30,
+                      "value": 7.762187292180862,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 18,
+                      "value": 4.55389444197473,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 18,
+                      "value": 4.845997852874022,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 26,
+                      "value": 6.902767673748071,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 21,
+                      "value": 5.222546834529146,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 176,
+                  "value": 40.34344971755428,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 33,
+                      "value": 7.728368837903812,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 34,
+                      "value": 7.822121976673178,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 55,
+                      "value": 12.736376215853044,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 37,
+                      "value": 8.128799672987252,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 17,
+                      "value": 3.927783014136993,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 89,
+                  "value": 21.802428285647796,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 23,
+                      "value": 5.691750918756886,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 15,
+                      "value": 3.700580412832365,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.9869716142970645,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 24,
+                      "value": 5.8839035802867405,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 23,
+                      "value": 5.539221759474739,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c3",
+              "level": 0,
+              "n_members": 235,
+              "value": 57.71585283960253,
+              "conservation_error": 7.105427357601002e-15,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 33,
+                  "value": 8.614071605022517,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 11,
+                      "value": 2.812730399962864,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.2290414076114557,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.740289659513095,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.5669498969712476,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.26506024096385544,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 62,
+                  "value": 16.540228830321343,
+                  "conservation_error": 3.552713678800501e-15,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 20,
+                      "value": 5.449595604814574,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 2.1783299485927476,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 11,
+                      "value": 2.7555901177139512,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 16,
+                      "value": 4.303732385030591,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.8529807741694824,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 37,
+                  "value": 7.626233686876493,
+                  "conservation_error": 8.881784197001252e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.159411387622978,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.1419870199898332,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.7522351588758336,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.6203009749642474,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 1.9522991454236014,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 92,
+                  "value": 22.405348076243804,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.6564108990082829,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 21,
+                      "value": 5.130654045643607,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 22,
+                      "value": 5.32018131895674,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 27,
+                      "value": 6.533125483735621,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 15,
+                      "value": 3.7649763288995537,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 11,
+                  "value": 2.5299706411383687,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.5112810042555536,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.3006535947712418,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.3142857142857143,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.17204301075268819,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.23170731707317074,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c4",
+              "level": 0,
+              "n_members": 49,
+              "value": 9.571745570070048,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 31,
+                  "value": 5.961325534104834,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 31,
+                      "value": 5.961325534104834,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 3,
+                  "value": 0.637827061903535,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.637827061903535,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 2,
+                  "value": 0.44587051211570183,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.44587051211570183,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 12,
+                  "value": 2.3319064084342713,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 12,
+                      "value": 2.3319064084342713,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 1,
+                  "value": 0.1948160535117057,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.1948160535117057,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GO_BP_c3",
+          "level": 0,
+          "n_members": 182,
+          "value": 41.71210212801803,
+          "conservation_error": 0.0,
+          "children": [
+            {
+              "name": "GO_MF_c0",
+              "level": 0,
+              "n_members": 34,
+              "value": 7.109961415794127,
+              "conservation_error": 8.881784197001252e-16,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 6,
+                  "value": 1.3949468776235765,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.3949468776235765,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 5,
+                  "value": 0.8332841042871386,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 0.8332841042871386,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 1,
+                  "value": 0.19930069930069932,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.19930069930069932,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 13,
+                  "value": 2.974728265290945,
+                  "conservation_error": 4.440892098500626e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.1407555424156948,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.1560013023735416,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.18980891719745224,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.2235576923076923,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.2646048109965636,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 9,
+                  "value": 1.7077014692917687,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 1.7077014692917687,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c1",
+              "level": 0,
+              "n_members": 16,
+              "value": 4.072454713663174,
+              "conservation_error": 8.881784197001252e-16,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 9,
+                  "value": 2.289314204236931,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.289314204236931,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 1,
+                  "value": 0.21649484536082475,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.21649484536082475,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 3,
+                  "value": 0.7170194823173968,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.7170194823173968,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 1,
+                  "value": 0.29452054794520544,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.29452054794520544,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 2,
+                  "value": 0.5551056338028169,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.5551056338028169,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c2",
+              "level": 0,
+              "n_members": 18,
+              "value": 3.922037127831186,
+              "conservation_error": 8.881784197001252e-16,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 1,
+                  "value": 0.17130307467057102,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.17130307467057102,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 6,
+                  "value": 1.1654676249013545,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.1654676249013545,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 7,
+                  "value": 1.7739668697466573,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.7739668697466573,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 3,
+                  "value": 0.6192465783801524,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.6192465783801524,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 1,
+                  "value": 0.19205298013245034,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.19205298013245034,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c3",
+              "level": 0,
+              "n_members": 88,
+              "value": 20.766764639740114,
+              "conservation_error": 3.552713678800501e-15,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 26,
+                  "value": 6.317099832783524,
+                  "conservation_error": 8.881784197001252e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.2616323306872954,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.9103472031412987,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.9838416330030038,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.7377152293680697,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.4235634365838565,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 7,
+                  "value": 2.2710780686423506,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 2.2710780686423506,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 8,
+                  "value": 1.417014761360888,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.417014761360888,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 29,
+                  "value": 6.406667181582635,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 12,
+                      "value": 2.6347956824562404,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4669919006129106,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 2.1491951369133058,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4452994604182132,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.710385001181965,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 18,
+                  "value": 4.354904795370714,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.185348467849585,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.23114956736711992,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.481082598850433,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.2157134230485422,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.24161073825503357,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c4",
+              "level": 0,
+              "n_members": 26,
+              "value": 5.840884230989434,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 4,
+                  "value": 0.8034980611936375,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.8034980611936375,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 2,
+                  "value": 0.41747366844706235,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.41747366844706235,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 9,
+                  "value": 2.0505965321215633,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.0505965321215633,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 9,
+                  "value": 2.1783831577464134,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 9,
+                      "value": 2.1783831577464134,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 2,
+                  "value": 0.3909328114807567,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.3909328114807567,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GO_BP_c4",
+          "level": 0,
+          "n_members": 199,
+          "value": 45.59601705631145,
+          "conservation_error": 7.105427357601002e-15,
+          "children": [
+            {
+              "name": "GO_MF_c0",
+              "level": 0,
+              "n_members": 119,
+              "value": 27.873639811702056,
+              "conservation_error": 7.105427357601002e-15,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 15,
+                  "value": 3.118290494775274,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.630641549503054,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4395629856704926,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.23300970873786409,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4413664621428427,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.3737097887210207,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 30,
+                  "value": 8.209023503323909,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.8775429275429274,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 14,
+                      "value": 3.867244379111683,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 6,
+                      "value": 1.671450614813232,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 1.053271089774421,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.7395144920816461,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 4,
+                  "value": 0.8879405855589576,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.8879405855589576,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 22,
+                  "value": 4.464243018821603,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.698527600903044,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.19780219780219782,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 10,
+                      "value": 1.9514557392687633,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.40030739928152953,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.21615008156606852,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 48,
+                  "value": 11.194142209222306,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 18,
+                      "value": 4.036405898565718,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 13,
+                      "value": 3.048169201440727,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.2683756064853853,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 11,
+                      "value": 2.5721559697355527,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.2690355329949239,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c1",
+              "level": 0,
+              "n_members": 41,
+              "value": 8.517075808314125,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 13,
+                  "value": 2.7427498700369513,
+                  "conservation_error": 4.440892098500626e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.20212765957446807,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.9258275183395955,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.5683451480348518,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.5974344824203182,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4490150616677174,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 10,
+                  "value": 2.166084524616841,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.6436544566504838,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.43935001252729156,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.23809523809523808,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4328690023920079,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4121158149518199,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 4,
+                  "value": 0.6684519559726068,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 0.6684519559726068,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 13,
+                  "value": 2.788769049524459,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.27530864197530863,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 0.9735974941573347,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4202083105721257,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.7002176412140539,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.4194369616056363,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 1,
+                  "value": 0.1510204081632653,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.1510204081632653,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c2",
+              "level": 0,
+              "n_members": 24,
+              "value": 5.673545276383568,
+              "conservation_error": 8.881784197001252e-16,
+              "children": [
+                {
+                  "name": "amino_acid_c0",
+                  "level": 1,
+                  "n_members": 12,
+                  "value": 3.0361256363310494,
+                  "conservation_error": 8.881784197001252e-16,
+                  "children": [
+                    {
+                      "name": "GO_CC_c0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.7373069634556423,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c1",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.7371742807120005,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c2",
+                      "level": 2,
+                      "n_members": 4,
+                      "value": 1.0349484453556634,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c3",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.2788018433179723,
+                      "conservation_error": 0.0,
+                      "children": []
+                    },
+                    {
+                      "name": "GO_CC_c4",
+                      "level": 2,
+                      "n_members": 1,
+                      "value": 0.24789410348977137,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c1",
+                  "level": 1,
+                  "n_members": 2,
+                  "value": 0.43667210662314704,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.43667210662314704,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c2",
+                  "level": 1,
+                  "n_members": 5,
+                  "value": 1.12394480221181,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 5,
+                      "value": 1.12394480221181,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c3",
+                  "level": 1,
+                  "n_members": 3,
+                  "value": 0.5171848129039909,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 3,
+                      "value": 0.5171848129039909,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "amino_acid_c4",
+                  "level": 1,
+                  "n_members": 2,
+                  "value": 0.5596179183135706,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 2,
+                      "value": 0.5596179183135706,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c3",
+              "level": 0,
+              "n_members": 8,
+              "value": 1.9311448479737563,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 8,
+                  "value": 1.9311448479737563,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 8,
+                      "value": 1.9311448479737563,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "GO_MF_c4",
+              "level": 0,
+              "n_members": 7,
+              "value": 1.6006113119379526,
+              "conservation_error": 0.0,
+              "children": [
+                {
+                  "name": "amino_acid_cluster_0",
+                  "level": 1,
+                  "n_members": 7,
+                  "value": 1.6006113119379526,
+                  "conservation_error": 0.0,
+                  "children": [
+                    {
+                      "name": "GO_CC_cluster_0",
+                      "level": 2,
+                      "n_members": 7,
+                      "value": 1.6006113119379526,
+                      "conservation_error": 0.0,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

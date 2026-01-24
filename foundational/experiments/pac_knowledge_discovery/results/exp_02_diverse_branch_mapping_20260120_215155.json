@@ -1,0 +1,296 @@
+{
+  "experiment": "exp_02_diverse_branch_mapping",
+  "timestamp": "20260120_215155",
+  "hypothesis": "Unrelated feature spaces may have hidden convergence revealing unknown structure",
+  "phases": {
+    "data": {
+      "n_samples": 5000,
+      "spaces": {
+        "temporal": [
+          "hour_mean",
+          "hour_std",
+          "dow_mean",
+          "dow_std",
+          "month_mean",
+          "month_std"
+        ],
+        "behavioral": [
+          "exceed_mean",
+          "exceed_std",
+          "harsh_pct",
+          "active_pct",
+          "user_consistency"
+        ],
+        "velocity": [
+          "initial_rating",
+          "final_rating",
+          "rating_trend",
+          "burst_ratio",
+          "lifespan_days"
+        ],
+        "structural": [
+          "year",
+          "decade",
+          "title_length",
+          "n_genres",
+          "log_ratings"
+        ],
+        "polarization": [
+          "rating_std",
+          "pct_5star",
+          "pct_1star",
+          "polarization",
+          "range"
+        ]
+      }
+    },
+    "convergence": {
+      "pairs": [
+        {
+          "source_space": "velocity",
+          "target_space": "polarization",
+          "convergence": 0.03774206349206349,
+          "entropy_proxy": 0.9622579365079365,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "polarization",
+          "target_space": "velocity",
+          "convergence": 0.03774206349206349,
+          "entropy_proxy": 0.9622579365079365,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "behavioral",
+          "target_space": "polarization",
+          "convergence": 0.013657142857142856,
+          "entropy_proxy": 0.9863428571428572,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "polarization",
+          "target_space": "behavioral",
+          "convergence": 0.013657142857142856,
+          "entropy_proxy": 0.9863428571428572,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "behavioral",
+          "target_space": "velocity",
+          "convergence": 0.011934126984126983,
+          "entropy_proxy": 0.988065873015873,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "velocity",
+          "target_space": "behavioral",
+          "convergence": 0.011934126984126983,
+          "entropy_proxy": 0.988065873015873,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "temporal",
+          "target_space": "behavioral",
+          "convergence": 0.008464285714285716,
+          "entropy_proxy": 0.9915357142857143,
+          "is_high_convergence": false,
+          "n_source_features": 6,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "behavioral",
+          "target_space": "temporal",
+          "convergence": 0.008464285714285716,
+          "entropy_proxy": 0.9915357142857143,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 6,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "temporal",
+          "target_space": "velocity",
+          "convergence": 0.004552380952380952,
+          "entropy_proxy": 0.995447619047619,
+          "is_high_convergence": false,
+          "n_source_features": 6,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "velocity",
+          "target_space": "temporal",
+          "convergence": 0.004552380952380952,
+          "entropy_proxy": 0.995447619047619,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 6,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "temporal",
+          "target_space": "structural",
+          "convergence": 0.004161111111111111,
+          "entropy_proxy": 0.9958388888888889,
+          "is_high_convergence": false,
+          "n_source_features": 6,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "structural",
+          "target_space": "temporal",
+          "convergence": 0.004161111111111111,
+          "entropy_proxy": 0.9958388888888889,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 6,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "temporal",
+          "target_space": "polarization",
+          "convergence": 0.00385,
+          "entropy_proxy": 0.99615,
+          "is_high_convergence": false,
+          "n_source_features": 6,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "polarization",
+          "target_space": "temporal",
+          "convergence": 0.00385,
+          "entropy_proxy": 0.99615,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 6,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "behavioral",
+          "target_space": "structural",
+          "convergence": 0.0037166666666666663,
+          "entropy_proxy": 0.9962833333333333,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "structural",
+          "target_space": "behavioral",
+          "convergence": 0.0037166666666666663,
+          "entropy_proxy": 0.9962833333333333,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "structural",
+          "target_space": "velocity",
+          "convergence": 0.003477777777777778,
+          "entropy_proxy": 0.9965222222222222,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "velocity",
+          "target_space": "structural",
+          "convergence": 0.003477777777777778,
+          "entropy_proxy": 0.9965222222222222,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "structural",
+          "target_space": "polarization",
+          "convergence": 0.003327777777777777,
+          "entropy_proxy": 0.9966722222222222,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        },
+        {
+          "source_space": "polarization",
+          "target_space": "structural",
+          "convergence": 0.003327777777777777,
+          "entropy_proxy": 0.9966722222222222,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 5,
+          "n_samples": 5000,
+          "k": 5
+        }
+      ],
+      "stats": {
+        "mean": 0.009488333333333335,
+        "std": 0.010072774717409525,
+        "min": 0.003327777777777777,
+        "max": 0.03774206349206349,
+        "median": 0.004356746031746031,
+        "q25": 0.0037166666666666663,
+        "q75": 0.011934126984126983,
+        "n_above_threshold": "0",
+        "n_total": 20,
+        "fraction_structured": 0.0,
+        "has_exploitable_structure": "False"
+      }
+    },
+    "discoveries": {
+      "n_strong": 0,
+      "n_weak": 2,
+      "top_discovery": null
+    }
+  },
+  "summary": {
+    "validated": false,
+    "max_convergence": 0.03774206349206349,
+    "n_discoveries": 0,
+    "interpretation": "Branches orthogonal"
+  }
+}

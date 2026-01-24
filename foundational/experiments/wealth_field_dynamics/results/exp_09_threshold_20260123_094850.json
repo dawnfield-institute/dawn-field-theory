@@ -1,0 +1,153 @@
+{
+  "experiment": "exp_09_threshold_specificity",
+  "timestamp": "2026-01-23T09:48:50.943436",
+  "xi_value": 1.0571198664289054,
+  "xi_rank": 4,
+  "total_thresholds_tested": 13,
+  "all_results": [
+    {
+      "threshold": 1.03,
+      "crossing_year": 1981,
+      "pre_trend": -0.16532258064516137,
+      "post_trend": 3.491875274483972,
+      "trend_change": 3.6571978551291333,
+      "pre_variance": 0.00010934443288241407,
+      "post_variance": 0.0021524938271604956,
+      "pre_years": 31,
+      "post_years": 45
+    },
+    {
+      "threshold": 1.04,
+      "crossing_year": 1981,
+      "pre_trend": -0.16532258064516137,
+      "post_trend": 3.491875274483972,
+      "trend_change": 3.6571978551291333,
+      "pre_variance": 0.00010934443288241407,
+      "post_variance": 0.0021524938271604956,
+      "pre_years": 31,
+      "post_years": 45
+    },
+    {
+      "threshold": 1.05,
+      "crossing_year": 1981,
+      "pre_trend": -0.16532258064516137,
+      "post_trend": 3.491875274483972,
+      "trend_change": 3.6571978551291333,
+      "pre_variance": 0.00010934443288241407,
+      "post_variance": 0.0021524938271604956,
+      "pre_years": 31,
+      "post_years": 45
+    },
+    {
+      "threshold": 1.06,
+      "crossing_year": 1982,
+      "pre_trend": -0.016495601173020583,
+      "post_trend": 3.39299976509279,
+      "trend_change": 3.4094953662658107,
+      "pre_variance": 0.00012271484374999997,
+      "post_variance": 0.001930298438934804,
+      "pre_years": 32,
+      "post_years": 44
+    },
+    {
+      "threshold": 1.07,
+      "crossing_year": 1982,
+      "pre_trend": -0.016495601173020583,
+      "post_trend": 3.39299976509279,
+      "trend_change": 3.4094953662658107,
+      "pre_variance": 0.00012271484374999997,
+      "post_variance": 0.001930298438934804,
+      "pre_years": 32,
+      "post_years": 44
+    },
+    {
+      "threshold": 1.08,
+      "crossing_year": 1982,
+      "pre_trend": -0.016495601173020583,
+      "post_trend": 3.39299976509279,
+      "trend_change": 3.4094953662658107,
+      "pre_variance": 0.00012271484374999997,
+      "post_variance": 0.001930298438934804,
+      "pre_years": 32,
+      "post_years": 44
+    },
+    {
+      "threshold": 1.09,
+      "crossing_year": 1983,
+      "pre_trend": 0.16042780748663102,
+      "post_trend": 3.3016208597603964,
+      "trend_change": 3.1411930522737657,
+      "pre_variance": 0.00015063360881542703,
+      "post_variance": 0.001735054383750978,
+      "pre_years": 33,
+      "post_years": 43
+    },
+    {
+      "threshold": 1.1,
+      "crossing_year": 1983,
+      "pre_trend": 0.16042780748663102,
+      "post_trend": 3.3016208597603964,
+      "trend_change": 3.1411930522737657,
+      "pre_variance": 0.00015063360881542703,
+      "post_variance": 0.001735054383750978,
+      "pre_years": 33,
+      "post_years": 43
+    },
+    {
+      "threshold": 1.11,
+      "crossing_year": 1984,
+      "pre_trend": 0.35752482811306335,
+      "post_trend": 3.21989033843827,
+      "trend_change": 2.8623655103252066,
+      "pre_variance": 0.00019612456747404835,
+      "post_variance": 0.001566481481481483,
+      "pre_years": 34,
+      "post_years": 42
+    },
+    {
+      "threshold": 1.12,
+      "crossing_year": 1984,
+      "pre_trend": 0.35752482811306335,
+      "post_trend": 3.21989033843827,
+      "trend_change": 2.8623655103252066,
+      "pre_variance": 0.00019612456747404835,
+      "post_variance": 0.001566481481481483,
+      "pre_years": 34,
+      "post_years": 42
+    },
+    {
+      "threshold": 1.1300000000000001,
+      "crossing_year": 1984,
+      "pre_trend": 0.35752482811306335,
+      "post_trend": 3.21989033843827,
+      "trend_change": 2.8623655103252066,
+      "pre_variance": 0.00019612456747404835,
+      "post_variance": 0.001566481481481483,
+      "pre_years": 34,
+      "post_years": 42
+    },
+    {
+      "threshold": 1.1400000000000001,
+      "crossing_year": 1985,
+      "pre_trend": 0.5686274509803919,
+      "post_trend": 3.1504065040650424,
+      "trend_change": 2.5817790530846505,
+      "pre_variance": 0.0002615510204081632,
+      "post_variance": 0.0014241707978055404,
+      "pre_years": 35,
+      "post_years": 41
+    },
+    {
+      "threshold": 1.1500000000000001,
+      "crossing_year": 1985,
+      "pre_trend": 0.5686274509803919,
+      "post_trend": 3.1504065040650424,
+      "trend_change": 2.5817790530846505,
+      "pre_variance": 0.0002615510204081632,
+      "post_variance": 0.0014241707978055404,
+      "pre_years": 35,
+      "post_years": 41
+    }
+  ],
+  "conclusion": "\u039e-hypothesis tested, see interpretation"
+}

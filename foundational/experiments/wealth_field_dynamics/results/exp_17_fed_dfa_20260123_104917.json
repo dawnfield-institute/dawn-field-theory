@@ -1,0 +1,27 @@
+{
+  "experiment": "exp_17_fed_dfa_phi_analysis",
+  "timestamp": "2026-01-23T10:49:17.203438",
+  "data_source": "Federal Reserve DFA",
+  "data_url": "https://www.federalreserve.gov/releases/z1/dataviz/dfa/",
+  "latest_ratios": {
+    "top_01_to_next_09": 0.8313293253173013,
+    "next_09_to_next_9": 0.47523809523809524,
+    "next_9_to_next_40": 1.239181746656176,
+    "next_40_to_bottom_50": 11.962352941176471,
+    "top_1_to_next_9": 0.8703174603174603,
+    "top_10_to_next_40": 2.317663257277734,
+    "top_10_to_bottom_50": 27.72470588235294,
+    "top_1_to_bottom_50": 12.901176470588235,
+    "top_01_share": 14.393939393939393,
+    "top_1_share": 31.708304418228078,
+    "top_10_share": 68.1413370344668,
+    "next_40_share": 29.40087901919963,
+    "bottom_50_share": 2.4577839463335645
+  },
+  "historical_mean_top10_next40": 2.159362001129485,
+  "phi_wins": 1,
+  "int_wins": 5,
+  "key_finding": "INTEGER PATTERNS MORE COMMON",
+  "phi_squared": 2.618033988749895,
+  "mean_error_phi2": 17.51971095835255
+}

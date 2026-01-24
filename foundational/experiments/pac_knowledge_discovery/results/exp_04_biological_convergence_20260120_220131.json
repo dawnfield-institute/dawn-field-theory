@@ -1,0 +1,266 @@
+{
+  "experiment": "exp_04_biological_convergence",
+  "timestamp": "20260120_220131",
+  "domain": "DNA/Protein structure and function",
+  "key_insight": "Sequence \u2192 Structure \u2192 Function is true hierarchy",
+  "phases": {
+    "data": {
+      "n_proteins": 6594
+    },
+    "spaces": {
+      "amino_acid": 20,
+      "biochemical": 5,
+      "size": 1,
+      "GO_BP": 30,
+      "GO_MF": 30,
+      "GO_CC": 30
+    },
+    "convergence": {
+      "pairs": [
+        {
+          "source_space": "GO_MF",
+          "target_space": "GO_BP",
+          "convergence": 0.17299096079340998,
+          "entropy_proxy": 0.8270090392065901,
+          "is_high_convergence": true,
+          "n_source_features": 30,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_BP",
+          "target_space": "GO_MF",
+          "convergence": 0.17299096079340998,
+          "entropy_proxy": 0.8270090392065901,
+          "is_high_convergence": true,
+          "n_source_features": 30,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "amino_acid",
+          "target_space": "biochemical",
+          "convergence": 0.05835390465169296,
+          "entropy_proxy": 0.941646095348307,
+          "is_high_convergence": true,
+          "n_source_features": 20,
+          "n_target_features": 5,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "biochemical",
+          "target_space": "amino_acid",
+          "convergence": 0.05835390465169296,
+          "entropy_proxy": 0.941646095348307,
+          "is_high_convergence": true,
+          "n_source_features": 5,
+          "n_target_features": 20,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_CC",
+          "target_space": "GO_BP",
+          "convergence": 0.017853047651809263,
+          "entropy_proxy": 0.9821469523481907,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_BP",
+          "target_space": "GO_CC",
+          "convergence": 0.017853047651809263,
+          "entropy_proxy": 0.9821469523481907,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_MF",
+          "target_space": "GO_CC",
+          "convergence": 0.017524596533588666,
+          "entropy_proxy": 0.9824754034664114,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_CC",
+          "target_space": "GO_MF",
+          "convergence": 0.017524596533588666,
+          "entropy_proxy": 0.9824754034664114,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_CC",
+          "target_space": "amino_acid",
+          "convergence": 0.006360206018564166,
+          "entropy_proxy": 0.9936397939814359,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 20,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "amino_acid",
+          "target_space": "GO_CC",
+          "convergence": 0.006360206018564166,
+          "entropy_proxy": 0.9936397939814359,
+          "is_high_convergence": false,
+          "n_source_features": 20,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_MF",
+          "target_space": "amino_acid",
+          "convergence": 0.006253892487366769,
+          "entropy_proxy": 0.9937461075126333,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 20,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "amino_acid",
+          "target_space": "GO_MF",
+          "convergence": 0.006253892487366769,
+          "entropy_proxy": 0.9937461075126333,
+          "is_high_convergence": false,
+          "n_source_features": 20,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "biochemical",
+          "target_space": "GO_CC",
+          "convergence": 0.004285658465718018,
+          "entropy_proxy": 0.995714341534282,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_CC",
+          "target_space": "biochemical",
+          "convergence": 0.004285658465718018,
+          "entropy_proxy": 0.995714341534282,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 5,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_BP",
+          "target_space": "amino_acid",
+          "convergence": 0.00425744850031494,
+          "entropy_proxy": 0.995742551499685,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 20,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "amino_acid",
+          "target_space": "GO_BP",
+          "convergence": 0.00425744850031494,
+          "entropy_proxy": 0.995742551499685,
+          "is_high_convergence": false,
+          "n_source_features": 20,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_MF",
+          "target_space": "biochemical",
+          "convergence": 0.003787900976310366,
+          "entropy_proxy": 0.9962120990236897,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 5,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "biochemical",
+          "target_space": "GO_MF",
+          "convergence": 0.003787900976310366,
+          "entropy_proxy": 0.9962120990236897,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "biochemical",
+          "target_space": "GO_BP",
+          "convergence": 0.003305391512585218,
+          "entropy_proxy": 0.9966946084874148,
+          "is_high_convergence": false,
+          "n_source_features": 5,
+          "n_target_features": 30,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "GO_BP",
+          "target_space": "biochemical",
+          "convergence": 0.003305391512585218,
+          "entropy_proxy": 0.9966946084874148,
+          "is_high_convergence": false,
+          "n_source_features": 30,
+          "n_target_features": 5,
+          "n_samples": 6594,
+          "k": 10
+        }
+      ],
+      "stats": {
+        "mean": 0.02949730075913603,
+        "std": 0.05039574973409671,
+        "min": 0.003305391512585218,
+        "max": 0.17299096079340998,
+        "median": 0.0063070492529654675,
+        "q25": 0.00425744850031494,
+        "q75": 0.017853047651809263,
+        "n_above_threshold": "4",
+        "n_total": 20,
+        "fraction_structured": 0.2,
+        "has_exploitable_structure": "True"
+      }
+    },
+    "interpretation": {
+      "n_discoveries": 4,
+      "biological_meaning": "Sequence-function relationships in proteome"
+    }
+  },
+  "summary": {
+    "validated": true,
+    "max_convergence": 0.17299096079340998,
+    "n_discoveries": 4,
+    "biological_domain": "proteome"
+  }
+}

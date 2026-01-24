@@ -1,0 +1,65 @@
+{
+  "experiment": "exp_04_biological_convergence",
+  "timestamp": "20260120_220019",
+  "domain": "DNA/Protein structure and function",
+  "key_insight": "Sequence \u2192 Structure \u2192 Function is true hierarchy",
+  "phases": {
+    "data": {
+      "n_proteins": 6594
+    },
+    "spaces": {
+      "amino_acid": 20,
+      "biochemical": 5,
+      "size": 1
+    },
+    "convergence": {
+      "pairs": [
+        {
+          "source_space": "amino_acid",
+          "target_space": "biochemical",
+          "convergence": 0.05835390465169296,
+          "entropy_proxy": 0.941646095348307,
+          "is_high_convergence": true,
+          "n_source_features": 20,
+          "n_target_features": 5,
+          "n_samples": 6594,
+          "k": 10
+        },
+        {
+          "source_space": "biochemical",
+          "target_space": "amino_acid",
+          "convergence": 0.05835390465169296,
+          "entropy_proxy": 0.941646095348307,
+          "is_high_convergence": true,
+          "n_source_features": 5,
+          "n_target_features": 20,
+          "n_samples": 6594,
+          "k": 10
+        }
+      ],
+      "stats": {
+        "mean": 0.05835390465169296,
+        "std": 0.0,
+        "min": 0.05835390465169296,
+        "max": 0.05835390465169296,
+        "median": 0.05835390465169296,
+        "q25": 0.05835390465169296,
+        "q75": 0.05835390465169296,
+        "n_above_threshold": "2",
+        "n_total": 2,
+        "fraction_structured": 1.0,
+        "has_exploitable_structure": "False"
+      }
+    },
+    "interpretation": {
+      "n_discoveries": 2,
+      "biological_meaning": "Sequence-function relationships in proteome"
+    }
+  },
+  "summary": {
+    "validated": true,
+    "max_convergence": 0.05835390465169296,
+    "n_discoveries": 2,
+    "biological_domain": "proteome"
+  }
+}

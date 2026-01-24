@@ -1,0 +1,280 @@
+{
+  "experiment": "exp_01_convergence_bridging",
+  "timestamp": "20260120_214646",
+  "phases": {
+    "data": {
+      "n_samples": 5000
+    },
+    "feature_spaces": {
+      "n_genres": 19,
+      "n_terms": 100,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Animation",
+        "Children",
+        "Comedy",
+        "Crime",
+        "Documentary",
+        "Drama",
+        "Fantasy",
+        "Film-Noir",
+        "Horror",
+        "IMAX",
+        "Musical",
+        "Mystery",
+        "Romance",
+        "Sci-Fi",
+        "Thriller",
+        "War",
+        "Western"
+      ],
+      "sample_terms": [
+        "good",
+        "great",
+        "original",
+        "oscar",
+        "movie",
+        "(best",
+        "ending",
+        "story",
+        "mentor",
+        "plot",
+        "based",
+        "acting",
+        "nudity",
+        "comedy",
+        "dialogue",
+        "funny",
+        "life",
+        "drama",
+        "fun",
+        "soundtrack"
+      ]
+    },
+    "baseline": {
+      "convergence": 0.005127777777777777,
+      "above_threshold": "False"
+    },
+    "bridging": {
+      "n_candidates_tested": 77,
+      "top_bridges": [
+        {
+          "name": "term_movie",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007916666666666666,
+          "lift": 0.0027888888888888885,
+          "relative_lift": 0.5438786565547129,
+          "coverage": 0.5162
+        },
+        {
+          "name": "term_acting",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007824603174603175,
+          "lift": 0.002696825396825398,
+          "relative_lift": 0.5259247794459065,
+          "coverage": 0.2724
+        },
+        {
+          "name": "term_soundtrack",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007577777777777777,
+          "lift": 0.00245,
+          "relative_lift": 0.47778981581798485,
+          "coverage": 0.3352
+        },
+        {
+          "name": "term_plot",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.0075722222222222215,
+          "lift": 0.0024444444444444444,
+          "relative_lift": 0.47670639219935,
+          "coverage": 0.3028
+        },
+        {
+          "name": "term_runaway",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007502380952380952,
+          "lift": 0.002374603174603175,
+          "relative_lift": 0.46308620956508295,
+          "coverage": 0.3714
+        },
+        {
+          "name": "term_good",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007461111111111111,
+          "lift": 0.002333333333333334,
+          "relative_lift": 0.4550379198266524,
+          "coverage": 0.5896
+        },
+        {
+          "name": "term_great",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.0074,
+          "lift": 0.0022722222222222232,
+          "relative_lift": 0.4431202600216687,
+          "coverage": 0.5168
+        },
+        {
+          "name": "term_(best",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007344444444444446,
+          "lift": 0.002216666666666669,
+          "relative_lift": 0.4322860238353201,
+          "coverage": 0.2848
+        },
+        {
+          "name": "term_book",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.0072388888888888885,
+          "lift": 0.0021111111111111113,
+          "relative_lift": 0.41170097508125686,
+          "coverage": 0.1998
+        },
+        {
+          "name": "term_fun",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007227777777777777,
+          "lift": 0.0021000000000000003,
+          "relative_lift": 0.40953412784398713,
+          "coverage": 0.4486
+        },
+        {
+          "name": "term_story",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.00721111111111111,
+          "lift": 0.002083333333333333,
+          "relative_lift": 0.4062838569880823,
+          "coverage": 0.5048
+        },
+        {
+          "name": "term_very",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007163492063492064,
+          "lift": 0.0020357142857142865,
+          "relative_lift": 0.39699736882835496,
+          "coverage": 0.2884
+        },
+        {
+          "name": "term_oscar",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007144444444444443,
+          "lift": 0.0020166666666666657,
+          "relative_lift": 0.39328277356446356,
+          "coverage": 0.2962
+        },
+        {
+          "name": "term_bad",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007116666666666666,
+          "lift": 0.001988888888888889,
+          "relative_lift": 0.3878656554712894,
+          "coverage": 0.193
+        },
+        {
+          "name": "term_based",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.00709126984126984,
+          "lift": 0.001963492063492063,
+          "relative_lift": 0.3829128617861012,
+          "coverage": 0.2646
+        },
+        {
+          "name": "term_funny",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.0070666666666666655,
+          "lift": 0.0019388888888888884,
+          "relative_lift": 0.3781148429035753,
+          "coverage": 0.2514
+        },
+        {
+          "name": "bridge_war_war",
+          "type": "semantic_bridge",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007062698412698413,
+          "lift": 0.0019349206349206357,
+          "relative_lift": 0.37734096889026486,
+          "coverage": 0.0951
+        },
+        {
+          "name": "term_dialogue",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007043650793650792,
+          "lift": 0.001915873015873015,
+          "relative_lift": 0.3736263736263735,
+          "coverage": 0.3318
+        },
+        {
+          "name": "term_ending",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.007016666666666666,
+          "lift": 0.0018888888888888887,
+          "relative_lift": 0.36836403033586135,
+          "coverage": 0.4504
+        },
+        {
+          "name": "term_violence",
+          "type": "single_term",
+          "baseline": 0.005127777777777777,
+          "with_bridge": 0.006996031746031747,
+          "lift": 0.0018682539682539695,
+          "relative_lift": 0.3643398854666463,
+          "coverage": 0.2342
+        }
+      ],
+      "positive_lift_count": 77,
+      "mean_lift": 0.0012069985569985577
+    },
+    "analysis": {
+      "n_positive_bridges": 36,
+      "bridges_by_type": {
+        "single_term": 29,
+        "semantic_bridge": 6,
+        "single_genre": 1
+      },
+      "best_bridge": {
+        "name": "term_movie",
+        "type": "single_term",
+        "baseline": 0.005127777777777777,
+        "with_bridge": 0.007916666666666666,
+        "lift": 0.0027888888888888885,
+        "relative_lift": 0.5438786565547129,
+        "coverage": 0.5162
+      },
+      "h1_validated": true
+    }
+  },
+  "summary": {
+    "baseline_convergence": 0.005127777777777777,
+    "n_bridges_tested": 77,
+    "n_positive_bridges": 36,
+    "best_bridge": {
+      "name": "term_movie",
+      "type": "single_term",
+      "baseline": 0.005127777777777777,
+      "with_bridge": 0.007916666666666666,
+      "lift": 0.0027888888888888885,
+      "relative_lift": 0.5438786565547129,
+      "coverage": 0.5162
+    },
+    "validated": true
+  }
+}

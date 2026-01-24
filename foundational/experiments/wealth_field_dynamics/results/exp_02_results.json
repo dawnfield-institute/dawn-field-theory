@@ -1,0 +1,31 @@
+{
+  "experiment": "exp_02_xi_inequality_threshold",
+  "timestamp": "2026-01-23T08:54:04.347412",
+  "xi_value": 1.0571198664289054,
+  "xi_formula": "1 + \u03c0/55",
+  "xi_components": {
+    "baseline": 1,
+    "pi_contribution": 3.141592653589793,
+    "fibonacci_depth": 55
+  },
+  "derived_ratios": {
+    "xi_1": 1.0571198664289054,
+    "xi_2": 1.117502411998667,
+    "xi_3": 1.1813340005060105,
+    "xi_inv": 0.9459665187999313
+  },
+  "predictions": [
+    "Gini dynamics stabilize at local \u039e \u2248 1.0571",
+    "Concentration ratios cluster near \u039e powers",
+    "Crisis occurs at \u039e deviation > 30%",
+    "Organizational depth bounded by MED (\u22482)"
+  ],
+  "example_calculation": {
+    "us_top10_share": 0.669,
+    "us_bottom50_share": 0.025,
+    "concentration_ratio": 26.76,
+    "implied_xi_exponent": 59.17228601803491,
+    "nearest_fibonacci": 55
+  },
+  "status": "predictions_derived_not_yet_tested"
+}

@@ -1,0 +1,35 @@
+{
+  "experiment": "exp_16_equal_division_puzzle",
+  "timestamp": "2026-01-23T10:47:45.018368",
+  "tension": {
+    "pac_major_share": 0.6180339887498948,
+    "pac_minor_share": 0.3819660112501052,
+    "pac_ratio": 1.6180339887498945,
+    "empirical_ratio": 1.0,
+    "discrepancy_pct": 61.80339887498945
+  },
+  "resolutions_proposed": 4,
+  "predictions": 4,
+  "aggregate_test": {
+    "wealth_shares": {
+      "bottom_50": 2.6,
+      "next_40": 27.6,
+      "top_10": 69.8,
+      "top_1": 31.4
+    },
+    "ratios": {
+      "top10_to_next40": 2.5289855072463765,
+      "top1_to_next9": 0.8177083333333334,
+      "next40_to_bottom50": 10.615384615384615
+    },
+    "phi": 1.618033988749895,
+    "phi_squared": 2.618033988749895
+  },
+  "status": "TENSION_IDENTIFIED",
+  "next_steps": [
+    "Download IRS Table 4 data",
+    "Analyze Fed DFA quintile ratios",
+    "Cross-cultural comparison via WID.world",
+    "Seek business succession data"
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "experiment": "exp_08c_suppression_pressure",
+  "timestamp": "2026-01-23T09:20:47.742643",
+  "core_insight": "Crisis is correction; sustained stress without crisis is suppression",
+  "current_pressure": 7.9364698694400015,
+  "avg_pre_crisis_pressure": 3.827761777777778,
+  "pressure_ratio": 2.073397021600323,
+  "events": [
+    {
+      "year": 1971,
+      "type": "intervention",
+      "name": "Nixon Shock (gold standard)",
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1987,
+      "type": "crisis",
+      "name": "Black Monday",
+      "pressure_before": 2.4346666666666668,
+      "released": 0.5356266666666667
+    },
+    {
+      "year": 1998,
+      "type": "intervention",
+      "name": "LTCM Bailout",
+      "pressure": 5.4323733333333335,
+      "stress": 0.4346666666666667
+    },
+    {
+      "year": 2000,
+      "type": "crisis",
+      "name": "Dot-com Crash",
+      "pressure_before": 6.024373333333333,
+      "released": 2.951942933333333
+    },
+    {
+      "year": 2008,
+      "type": "crisis",
+      "name": "Financial Crisis",
+      "pressure_before": 6.539097066666669,
+      "released": 3.5311124160000014
+    },
+    {
+      "year": 2009,
+      "type": "intervention",
+      "name": "QE1",
+      "pressure": 3.4913179840000006,
+      "stress": 0.5944444444444443
+    },
+    {
+      "year": 2010,
+      "type": "intervention",
+      "name": "QE2",
+      "pressure": 3.935762428444445,
+      "stress": 0.555555555555556
+    },
+    {
+      "year": 2012,
+      "type": "intervention",
+      "name": "QE3 (unlimited)",
+      "pressure": 4.713984650666667,
+      "stress": 0.5453333333333334
+    },
+    {
+      "year": 2019,
+      "type": "intervention",
+      "name": "Repo market intervention",
+      "pressure": 7.707317984000001,
+      "stress": 0.6040000000000002
+    },
+    {
+      "year": 2020,
+      "type": "crisis",
+      "name": "COVID Shock",
+      "pressure_before": 8.161317984000002,
+      "released": 2.774848114560001
+    },
+    {
+      "year": 2023,
+      "type": "intervention",
+      "name": "SVB/banking intervention",
+      "pressure": 6.784469869440001,
+      "stress": 0.5280000000000001
+    }
+  ],
+  "pressure_history": [
+    {
+      "year": 1970,
+      "pressure": 0,
+      "stress": 0.09999999999999963
+    },
+    {
+      "year": 1971,
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1972,
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1973,
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1974,
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1975,
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1976,
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1977,
+      "pressure": 0,
+      "stress": 0.10000000000000009
+    },
+    {
+      "year": 1978,
+      "pressure": 0.016666666666666802,
+      "stress": 0.1666666666666668
+    },
+    {
+      "year": 1979,
+      "pressure": 0.10000000000000034,
+      "stress": 0.23333333333333353
+    },
+    {
+      "year": 1980,
+      "pressure": 0.2500000000000001,
+      "stress": 0.29999999999999977
+    },
+    {
+      "year": 1981,
+      "pressure": 0.4966666666666667,
+      "stress": 0.39666666666666656
+    },
+    {
+      "year": 1982,
+      "pressure": 0.84,
+      "stress": 0.4933333333333333
+    },
+    {
+      "year": 1983,
+      "pressure": 1.2466666666666666,
+      "stress": 0.5566666666666665
+    },
+    {
+      "year": 1984,
+      "pressure": 1.65,
+      "stress": 0.5533333333333332
+    },
+    {
+      "year": 1985,
+      "pressure": 2.05,
+      "stress": 0.5499999999999998
+    },
+    {
+      "year": 1986,
+      "pressure": 2.4346666666666668,
+      "stress": 0.5346666666666671
+    },
+    {
+      "year": 1987,
+      "pressure": 2.268373333333334,
+      "stress": 0.5193333333333336
+    },
+    {
+      "year": 1988,
+      "pressure": 2.6057066666666673,
+      "stress": 0.48733333333333356
+    },
+    {
+      "year": 1989,
+      "pressure": 2.9443733333333344,
+      "stress": 0.48866666666666697
+    },
+    {
+      "year": 1990,
+      "pressure": 3.2843733333333343,
+      "stress": 0.48999999999999977
+    },
+    {
+      "year": 1991,
+      "pressure": 3.6197066666666675,
+      "stress": 0.4853333333333332
+    },
+    {
+      "year": 1992,
+      "pressure": 3.950373333333334,
+      "stress": 0.48066666666666646
+    },
+    {
+      "year": 1993,
+      "pressure": 4.259706666666667,
+      "stress": 0.4593333333333329
+    },
+    {
+      "year": 1994,
+      "pressure": 4.564373333333333,
+      "stress": 0.4546666666666663
+    },
+    {
+      "year": 1995,
+      "pressure": 4.864373333333333,
+      "stress": 0.4499999999999996
+    },
+    {
+      "year": 1996,
+      "pressure": 5.153706666666666,
+      "stress": 0.4393333333333334
+    },
+    {
+      "year": 1997,
+      "pressure": 5.4323733333333335,
+      "stress": 0.4286666666666667
+    },
+    {
+      "year": 1998,
+      "pressure": 5.71704,
+      "stress": 0.4346666666666667
+    },
+    {
+      "year": 1999,
+      "pressure": 6.024373333333333,
+      "stress": 0.4573333333333334
+    },
+    {
+      "year": 2000,
+      "pressure": 3.4024304,
+      "stress": 0.4800000000000001
+    },
+    {
+      "year": 2001,
+      "pressure": 3.7610970666666668,
+      "stress": 0.5086666666666668
+    },
+    {
+      "year": 2002,
+      "pressure": 4.1484304000000005,
+      "stress": 0.5373333333333334
+    },
+    {
+      "year": 2003,
+      "pressure": 4.586652622222223,
+      "stress": 0.5882222222222228
+    },
+    {
+      "year": 2004,
+      "pressure": 5.059097066666667,
+      "stress": 0.6224444444444444
+    },
+    {
+      "year": 2005,
+      "pressure": 5.565763733333334,
+      "stress": 0.656666666666667
+    },
+    {
+      "year": 2006,
+      "pressure": 6.059097066666668,
+      "stress": 0.6433333333333336
+    },
+    {
+      "year": 2007,
+      "pressure": 6.539097066666669,
+      "stress": 0.6300000000000001
+    },
+    {
+      "year": 2008,
+      "pressure": 3.4913179840000006,
+      "stress": 0.6333333333333335
+    },
+    {
+      "year": 2009,
+      "pressure": 3.935762428444445,
+      "stress": 0.5944444444444443
+    },
+    {
+      "year": 2010,
+      "pressure": 4.341317984000001,
+      "stress": 0.555555555555556
+    },
+    {
+      "year": 2011,
+      "pressure": 4.713984650666667,
+      "stress": 0.5226666666666668
+    },
+    {
+      "year": 2012,
+      "pressure": 5.1093179840000005,
+      "stress": 0.5453333333333334
+    },
+    {
+      "year": 2013,
+      "pressure": 5.527317984000001,
+      "stress": 0.5680000000000002
+    },
+    {
+      "year": 2014,
+      "pressure": 5.951317984000001,
+      "stress": 0.5740000000000002
+    },
+    {
+      "year": 2015,
+      "pressure": 6.381317984000001,
+      "stress": 0.5800000000000002
+    },
+    {
+      "year": 2016,
+      "pressure": 6.817317984000001,
+      "stress": 0.5860000000000002
+    },
+    {
+      "year": 2017,
+      "pressure": 7.259317984000001,
+      "stress": 0.5920000000000002
+    },
+    {
+      "year": 2018,
+      "pressure": 7.707317984000001,
+      "stress": 0.5980000000000002
+    },
+    {
+      "year": 2019,
+      "pressure": 8.161317984000002,
+      "stress": 0.6040000000000002
+    },
+    {
+      "year": 2020,
+      "pressure": 5.846469869440001,
+      "stress": 0.6100000000000002
+    },
+    {
+      "year": 2021,
+      "pressure": 6.312469869440001,
+      "stress": 0.6160000000000002
+    },
+    {
+      "year": 2022,
+      "pressure": 6.784469869440001,
+      "stress": 0.6220000000000002
+    },
+    {
+      "year": 2023,
+      "pressure": 7.1624698694400015,
+      "stress": 0.5280000000000001
+    },
+    {
+      "year": 2024,
+      "pressure": 7.546469869440002,
+      "stress": 0.5340000000000001
+    },
+    {
+      "year": 2025,
+      "pressure": 7.9364698694400015,
+      "stress": 0.5400000000000001
+    }
+  ],
+  "interpretation": {
+    "healthy_cycle": "stress \u2192 crisis \u2192 release \u2192 equilibrium",
+    "corrupted_cycle": "stress \u2192 intervention \u2192 accumulation \u2192 bigger crisis",
+    "current_state": "suppressed instability"
+  },
+  "predictions": [
+    "Current pressure exceeds historical pre-crisis levels",
+    "Either correction is overdue or intervention is intensifying",
+    "Longer suppression \u2192 larger eventual correction"
+  ]
+}
