@@ -1,6 +1,9 @@
 *.log
 *.pyc
 
+# Large dataset files
+foundational/experiments/pac_knowledge_discovery/data/ml-25m/
+foundational/experiments/pac_knowledge_discovery/data/ml-25m.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
