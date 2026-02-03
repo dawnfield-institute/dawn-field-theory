@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-03T16:22:07.139365",
+  "experiment": "exp_03_proton_electron",
+  "target": 1836.15267343,
+  "candidates": [],
+  "alpha_connection": {
+    "mp_me_times_alpha": 13.399053339487434,
+    "nearest_fib": 13,
+    "interpretation": "mp/me \u2248 F_7 / \u03b1"
+  }
+}

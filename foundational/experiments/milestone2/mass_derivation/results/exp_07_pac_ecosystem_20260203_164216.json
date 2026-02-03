@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-02-03T16:42:16.308606",
+  "experiment": "exp_07_pac_ecosystem",
+  "results": {
+    "structure": {
+      "mu/e": {
+        "base": 192,
+        "correction": 1.0769230769230769,
+        "correction_delta": 0.07692307692307693,
+        "type": "multiplicative"
+      },
+      "tau/e": {
+        "base": 3471,
+        "correction": 5,
+        "correction_delta": 5,
+        "type": "additive"
+      },
+      "p/e": {
+        "base": 14688,
+        "correction": 0.125,
+        "correction_delta": -0.875,
+        "type": "divisive"
+      }
+    },
+    "pac_sum": {
+      "lepton_sum": 3684.9965630066367,
+      "p/e": 1836.1526734252586,
+      "ratio": 2.0069118523420193
+    },
+    "koide_pac": {
+      "Q": 0.6666605114773857,
+      "numerator": 3684.9965630066367,
+      "denominator": 5527.5458791466735,
+      "waste": 1842.5493161400366
+    },
+    "qbe": {
+      "log_mu": 5.3315987604059885,
+      "log_tau": 8.153990784157852,
+      "log_p": 7.515427723183593,
+      "log_sum": 21.001017267747432
+    },
+    "rbf": {
+      "r1": 206.76828298766566,
+      "r2": 16.81702933242618,
+      "ratio": 12.295172881037923,
+      "exponent": 0.5293706729605708
+    },
+    "second_constraint": {
+      "indices": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12
+      ],
+      "lepton_frac_sum": 2.0069118523420193
+    }
+  }
+}

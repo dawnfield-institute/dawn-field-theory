@@ -1,0 +1,721 @@
+{
+  "timestamp": "2026-02-03T16:21:55.408445",
+  "experiment": "exp_01_mass_survey",
+  "results": {
+    "mu/e": {
+      "name": "mu/e",
+      "measured": 206.768283,
+      "n_matches": 10,
+      "best_matches": [
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_6 \u00d7 F_7",
+          "value": 208,
+          "error_pct": 0.5956991962834083
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_4 \u00d7 F_9",
+          "value": 204,
+          "error_pct": 1.3388334805681956
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_5 \u00d7 F_8",
+          "value": 210,
+          "error_pct": 1.5629655347092104
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_15 / F_4",
+          "value": 203.33333333333334,
+          "error_pct": 1.6612555933767919
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_5 \u00d7 F_5 \u00d7 F_6",
+          "value": 200,
+          "error_pct": 3.2733661574198
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_17 / F_6",
+          "value": 199.625,
+          "error_pct": 3.454728595874638
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_19 / F_8",
+          "value": 199.0952380952381,
+          "error_pct": 3.7109390248028973
+        },
+        {
+          "type": "phi_power",
+          "formula": "\u03c6^11",
+          "value": 199.0050249987407,
+          "error_pct": 3.7545690705664407
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_18 / F_7",
+          "value": 198.76923076923077,
+          "error_pct": 3.8686069810664447
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_16 / F_5",
+          "value": 197.4,
+          "error_pct": 4.53081239737334
+        }
+      ],
+      "best_error_pct": 0.5956991962834083
+    },
+    "tau/e": {
+      "name": "tau/e",
+      "measured": 3477.23,
+      "n_matches": 11,
+      "best_matches": [
+        {
+          "type": "fib_product_3",
+          "formula": "F_4 \u00d7 F_7 \u00d7 F_11",
+          "value": 3471,
+          "error_pct": 0.17916560020476122
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_4 \u00d7 F_9 \u00d7 F_9",
+          "value": 3468,
+          "error_pct": 0.26544117012679685
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_4 \u00d7 F_8 \u00d7 F_10",
+          "value": 3465,
+          "error_pct": 0.3517167400488325
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_6 \u00d7 F_6 \u00d7 F_10",
+          "value": 3520,
+          "error_pct": 1.2300020418551543
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_6 \u00d7 F_8 \u00d7 F_8",
+          "value": 3528,
+          "error_pct": 1.460070228313916
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_6 \u00d7 F_7 \u00d7 F_9",
+          "value": 3536,
+          "error_pct": 1.6901384147726777
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_7 \u00d7 F_7 \u00d7 F_8",
+          "value": 3549,
+          "error_pct": 2.063999217768165
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_5 \u00d7 F_6 \u00d7 F_11",
+          "value": 3560,
+          "error_pct": 2.3803429741489626
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_5 \u00d7 F_8 \u00d7 F_9",
+          "value": 3570,
+          "error_pct": 2.667928207222415
+        },
+        {
+          "type": "phi_power",
+          "formula": "\u03c6^17",
+          "value": 3571.000280033584,
+          "error_pct": 2.6966947838821183
+        }
+      ],
+      "best_error_pct": 0.17916560020476122
+    },
+    "tau/mu": {
+      "name": "tau/mu",
+      "measured": 16.817,
+      "n_matches": 5,
+      "best_matches": [
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_3 \u00d7 F_3 \u00d7 \u03c6^3",
+          "value": 16.94427190999916,
+          "error_pct": 0.7568050781896833
+        },
+        {
+          "type": "fib_squared_phi",
+          "formula": "F_3\u00b2 \u00d7 \u03c6^3",
+          "value": 16.94427190999916,
+          "error_pct": 0.7568050781896833
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_9 / F_3",
+          "value": 17.0,
+          "error_pct": 1.0881845751323056
+        },
+        {
+          "type": "fib_product",
+          "formula": "F_3 \u00d7 F_6",
+          "value": 16,
+          "error_pct": 4.858179223404889
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_2 \u00d7 F_3 \u00d7 F_6",
+          "value": 16,
+          "error_pct": 4.858179223404889
+        }
+      ],
+      "best_error_pct": 0.7568050781896833
+    },
+    "p/e": {
+      "name": "p/e",
+      "measured": 1836.15267343,
+      "n_matches": 45,
+      "best_matches": [
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_4 \u00d7 F_11 \u00d7 \u03c6^4",
+          "value": 1830.045224988666,
+          "error_pct": 0.33262203790086603
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_11 \u00d7 F_4 \u00d7 \u03c6^4",
+          "value": 1830.045224988666,
+          "error_pct": 0.33262203790086603
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_6 \u00d7 F_10 \u00d7 \u03c6^3",
+          "value": 1863.8699100999074,
+          "error_pct": 1.5095278879032739
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_10 \u00d7 F_6 \u00d7 \u03c6^3",
+          "value": 1863.8699100999074,
+          "error_pct": 1.5095278879032739
+        },
+        {
+          "type": "fib_product",
+          "formula": "F_6 \u00d7 F_13",
+          "value": 1864,
+          "error_pct": 1.516612805294678
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_6 \u00d7 F_11 \u00d7 \u03c6^2",
+          "value": 1864.0401999899252,
+          "error_pct": 1.5188021651723682
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_11 \u00d7 F_6 \u00d7 \u03c6^2",
+          "value": 1864.0401999899252,
+          "error_pct": 1.5188021651723682
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_6 \u00d7 F_9 \u00d7 \u03c6^4",
+          "value": 1864.3157348199145,
+          "error_pct": 1.5338082610148547
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_9 \u00d7 F_6 \u00d7 \u03c6^4",
+          "value": 1864.3157348199145,
+          "error_pct": 1.5338082610148547
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_8 \u00d7 F_8 \u00d7 \u03c6^3",
+          "value": 1868.1059780774074,
+          "error_pct": 1.7402313603757897
+        }
+      ],
+      "best_error_pct": 0.33262203790086603
+    },
+    "n/e": {
+      "name": "n/e",
+      "measured": 1838.68366173,
+      "n_matches": 45,
+      "best_matches": [
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_4 \u00d7 F_11 \u00d7 \u03c6^4",
+          "value": 1830.045224988666,
+          "error_pct": 0.46981636488825196
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_11 \u00d7 F_4 \u00d7 \u03c6^4",
+          "value": 1830.045224988666,
+          "error_pct": 0.46981636488825196
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_6 \u00d7 F_10 \u00d7 \u03c6^3",
+          "value": 1863.8699100999074,
+          "error_pct": 1.3697978012275307
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_10 \u00d7 F_6 \u00d7 \u03c6^3",
+          "value": 1863.8699100999074,
+          "error_pct": 1.3697978012275307
+        },
+        {
+          "type": "fib_product",
+          "formula": "F_6 \u00d7 F_13",
+          "value": 1864,
+          "error_pct": 1.3768729660750918
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_6 \u00d7 F_11 \u00d7 \u03c6^2",
+          "value": 1864.0401999899252,
+          "error_pct": 1.3790593122509962
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_11 \u00d7 F_6 \u00d7 \u03c6^2",
+          "value": 1864.0401999899252,
+          "error_pct": 1.3790593122509962
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_6 \u00d7 F_9 \u00d7 \u03c6^4",
+          "value": 1864.3157348199145,
+          "error_pct": 1.3940447518741468
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_9 \u00d7 F_6 \u00d7 \u03c6^4",
+          "value": 1864.3157348199145,
+          "error_pct": 1.3940447518741468
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_8 \u00d7 F_8 \u00d7 \u03c6^3",
+          "value": 1868.1059780774074,
+          "error_pct": 1.600183705321238
+        }
+      ],
+      "best_error_pct": 0.46981636488825196
+    },
+    "n/p": {
+      "name": "n/p",
+      "measured": 1.00137841931,
+      "n_matches": 26,
+      "best_matches": [
+        {
+          "type": "pure_fib",
+          "formula": "F_1",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "pure_fib",
+          "formula": "F_2",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_product",
+          "formula": "F_2 \u00d7 F_2",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_2 \u00d7 F_2 \u00d7 F_2",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_2 / F_2",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_3 / F_3",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_4 / F_4",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_5 / F_5",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_6 / F_6",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_7 / F_7",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        }
+      ],
+      "best_error_pct": 0.1376521885652114
+    },
+    "c/u": {
+      "name": "c/u",
+      "measured": 554,
+      "n_matches": 5,
+      "best_matches": [
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_5 \u00d7 F_10",
+          "value": 550,
+          "error_pct": 0.7220216606498195
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_7 \u00d7 F_8",
+          "value": 546,
+          "error_pct": 1.444043321299639
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_6 \u00d7 F_9",
+          "value": 544,
+          "error_pct": 1.8050541516245486
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_4 \u00d7 F_11",
+          "value": 534,
+          "error_pct": 3.6101083032490973
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_17 / F_4",
+          "value": 532.3333333333334,
+          "error_pct": 3.9109506618531817
+        }
+      ],
+      "best_error_pct": 0.7220216606498195
+    },
+    "s/d": {
+      "name": "s/d",
+      "measured": 19.5,
+      "n_matches": 1,
+      "best_matches": [
+        {
+          "type": "fib_product_3",
+          "formula": "F_3 \u00d7 F_3 \u00d7 F_5",
+          "value": 20,
+          "error_pct": 2.564102564102564
+        }
+      ],
+      "best_error_pct": 2.564102564102564
+    },
+    "b/s": {
+      "name": "b/s",
+      "measured": 44.2,
+      "n_matches": 4,
+      "best_matches": [
+        {
+          "type": "fib_ratio",
+          "formula": "F_11 / F_3",
+          "value": 44.5,
+          "error_pct": 0.6787330316742016
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_4 \u00d7 F_4 \u00d7 F_5",
+          "value": 45,
+          "error_pct": 1.8099547511312153
+        },
+        {
+          "type": "fib_product",
+          "formula": "F_3 \u00d7 F_8",
+          "value": 42,
+          "error_pct": 4.977375565610866
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_2 \u00d7 F_3 \u00d7 F_8",
+          "value": 42,
+          "error_pct": 4.977375565610866
+        }
+      ],
+      "best_error_pct": 0.6787330316742016
+    },
+    "t/b": {
+      "name": "t/b",
+      "measured": 41.4,
+      "n_matches": 19,
+      "best_matches": [
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_3 \u00d7 F_4 \u00d7 \u03c6^4",
+          "value": 41.12461179749811,
+          "error_pct": 0.6651888949320937
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_4 \u00d7 F_3 \u00d7 \u03c6^4",
+          "value": 41.12461179749811,
+          "error_pct": 0.6651888949320937
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_3 \u00d7 F_6 \u00d7 \u03c6^2",
+          "value": 41.88854381999832,
+          "error_pct": 1.1800575362278258
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_6 \u00d7 F_3 \u00d7 \u03c6^2",
+          "value": 41.88854381999832,
+          "error_pct": 1.1800575362278258
+        },
+        {
+          "type": "fib_product",
+          "formula": "F_3 \u00d7 F_8",
+          "value": 42,
+          "error_pct": 1.4492753623188441
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_2 \u00d7 F_3 \u00d7 F_8",
+          "value": 42,
+          "error_pct": 1.4492753623188441
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_3 \u00d7 F_8 \u00d7 \u03c6^0",
+          "value": 42.0,
+          "error_pct": 1.4492753623188441
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_8 \u00d7 F_3 \u00d7 \u03c6^0",
+          "value": 42.0,
+          "error_pct": 1.4492753623188441
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_3 \u00d7 F_10 \u00d7 \u03c6^-2",
+          "value": 42.016261237511564,
+          "error_pct": 1.4885537137960525
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_10 \u00d7 F_3 \u00d7 \u03c6^-2",
+          "value": 42.016261237511564,
+          "error_pct": 1.4885537137960525
+        }
+      ],
+      "best_error_pct": 0.6651888949320937
+    },
+    "W/e": {
+      "name": "W/e",
+      "measured": 157327,
+      "n_matches": 0,
+      "best_matches": [],
+      "best_error_pct": null
+    },
+    "Z/W": {
+      "name": "Z/W",
+      "measured": 1.134,
+      "n_matches": 5,
+      "best_matches": [
+        {
+          "type": "fib_phi",
+          "formula": "F_4 \u00d7 \u03c6^-2",
+          "value": 1.1458980337503155,
+          "error_pct": 1.0492093254246577
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_2 \u00d7 F_4 \u00d7 \u03c6^-2",
+          "value": 1.1458980337503155,
+          "error_pct": 1.0492093254246577
+        },
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_4 \u00d7 F_2 \u00d7 \u03c6^-2",
+          "value": 1.1458980337503155,
+          "error_pct": 1.0492093254246577
+        },
+        {
+          "type": "xi_corrected",
+          "formula": "F_2 \u00d7 \u039e^2",
+          "value": 1.117502411998667,
+          "error_pct": 1.4548137567313002
+        },
+        {
+          "type": "xi_corrected",
+          "formula": "F_2 \u00d7 \u039e^3",
+          "value": 1.1813340005060105,
+          "error_pct": 4.174074118695816
+        }
+      ],
+      "best_error_pct": 1.0492093254246577
+    },
+    "H/W": {
+      "name": "H/W",
+      "measured": 1.553,
+      "n_matches": 18,
+      "best_matches": [
+        {
+          "type": "fib_fib_phi",
+          "formula": "F_3 \u00d7 F_3 \u00d7 \u03c6^-2",
+          "value": 1.5278640450004206,
+          "error_pct": 1.6185418544481214
+        },
+        {
+          "type": "fib_squared_phi",
+          "formula": "F_3\u00b2 \u00d7 \u03c6^-2",
+          "value": 1.5278640450004206,
+          "error_pct": 1.6185418544481214
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_6 / F_5",
+          "value": 1.6,
+          "error_pct": 3.026400515132013
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_4 / F_3",
+          "value": 1.5,
+          "error_pct": 3.4127495170637436
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_8 / F_7",
+          "value": 1.6153846153846154,
+          "error_pct": 4.017038981623663
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_10 / F_9",
+          "value": 1.6176470588235294,
+          "error_pct": 4.162721109048906
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_12 / F_11",
+          "value": 1.6179775280898876,
+          "error_pct": 4.184000520920004
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_14 / F_13",
+          "value": 1.6180257510729614,
+          "error_pct": 4.187105671150128
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_16 / F_15",
+          "value": 1.618032786885246,
+          "error_pct": 4.187558717659115
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_18 / F_17",
+          "value": 1.6180338134001253,
+          "error_pct": 4.187624816492297
+        }
+      ],
+      "best_error_pct": 1.6185418544481214
+    }
+  },
+  "summary": {
+    "total_ratios": 13,
+    "ratios_with_matches": 12,
+    "best_overall": {
+      "name": "n/p",
+      "measured": 1.00137841931,
+      "n_matches": 26,
+      "best_matches": [
+        {
+          "type": "pure_fib",
+          "formula": "F_1",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "pure_fib",
+          "formula": "F_2",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_product",
+          "formula": "F_2 \u00d7 F_2",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_product_3",
+          "formula": "F_2 \u00d7 F_2 \u00d7 F_2",
+          "value": 1,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_2 / F_2",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_3 / F_3",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_4 / F_4",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_5 / F_5",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_6 / F_6",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        },
+        {
+          "type": "fib_ratio",
+          "formula": "F_7 / F_7",
+          "value": 1.0,
+          "error_pct": 0.1376521885652114
+        }
+      ],
+      "best_error_pct": 0.1376521885652114
+    }
+  }
+}
