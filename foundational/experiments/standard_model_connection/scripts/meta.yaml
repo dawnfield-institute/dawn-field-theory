@@ -15,5 +15,15 @@ files:
   - 03_intermittency_golden_ratio.py
   - 04_higgs_coupling_prediction.py
   - 05_anomaly_cancellation_fibonacci.py
+  - 12_fibonacci_gauge_derivation.py
+  - 15_why_depth_seven.py
+  - 19_weinberg_angle_analysis.py
+  - 23_extended_zero_detection.py
+  - 24_pi_uniqueness_test.py
+  - 25_gue_rmt_connection.py
+  - 28_alpha_coincidence_probability.py
+  - 29_higgs_self_coupling_prediction.py
+  - 30_ca_physics_unification.py
+  - 31_prefield_weinberg_derivation.py: "NEW: Derives sin²θ_W from pre-field E/B geometry"
 
 child_directories: []

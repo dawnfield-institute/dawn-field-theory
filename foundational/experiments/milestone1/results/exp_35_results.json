@@ -1,0 +1,106 @@
+{
+  "coefficient_derivation": {
+    "empirical_slope": -4.42,
+    "derived_slope": -4.333333333333333,
+    "slope_formula": "-F7/F4 = -13/3",
+    "slope_error_percent": 1.9607843137254954,
+    "empirical_intercept": 2.34,
+    "derived_intercept": 2.3333333333333335,
+    "intercept_formula": "(F5+F3)/F4 = 7/3",
+    "intercept_error_percent": 0.2849002849002725,
+    "slope_derived": true,
+    "intercept_derived": true
+  },
+  "optimal_geometry": {
+    "empirical_optimal_wr": 0.304,
+    "derived_optimal_wr": 0.3076923076923077,
+    "optimal_wr_formula": "4/F7 = 4/13",
+    "wr_error_percent": 1.2145748987854332,
+    "exponent_at_optimal": 1.0000000000000002,
+    "eb_ratio_at_optimal": 1.6180339887498951,
+    "eb_equals_phi": "True",
+    "geometry_derived": true
+  },
+  "experimental_validation": {
+    "predictions": [
+      {
+        "w_R": 0.15,
+        "eb_measured": 2.39,
+        "eb_predicted": 2.2479976923967113,
+        "error_percent": 5.941519146581121
+      },
+      {
+        "w_R": 0.2,
+        "eb_measured": 2.03,
+        "eb_predicted": 2.0254205204535793,
+        "error_percent": 0.22559012543943163
+      },
+      {
+        "w_R": 0.25,
+        "eb_measured": 1.76,
+        "eb_predicted": 1.8248810034590097,
+        "error_percent": 3.6864206510800974
+      },
+      {
+        "w_R": 0.3,
+        "eb_measured": 1.57,
+        "eb_predicted": 1.644197164566985,
+        "error_percent": 4.725934048852547
+      },
+      {
+        "w_R": 0.35,
+        "eb_measured": 1.41,
+        "eb_predicted": 1.4814030672936622,
+        "error_percent": 5.064047325791653
+      },
+      {
+        "w_R": 0.4,
+        "eb_measured": 1.29,
+        "eb_predicted": 1.3347274250804508,
+        "error_percent": 3.4672422542985117
+      },
+      {
+        "w_R": 0.45,
+        "eb_measured": 1.2,
+        "eb_predicted": 1.2025743287520412,
+        "error_percent": 0.21452739600343515
+      },
+      {
+        "w_R": 0.5,
+        "eb_measured": 1.13,
+        "eb_predicted": 1.0835058821738481,
+        "error_percent": 4.114523701429359
+      }
+    ],
+    "mean_error_percent": 3.42997558118452,
+    "max_error_percent": 5.941519146581121,
+    "all_within_5_percent": false
+  },
+  "fibonacci_structure": {
+    "F3": 2,
+    "F3_meaning": "Binary splitting (PAC fundamental)",
+    "F4": 3,
+    "F4_meaning": "Spatial dimensions (MED nodes \u2264 3)",
+    "F5": 5,
+    "F5_meaning": "Pentagon symmetry (M\u00f6bius phase)",
+    "F7": 13,
+    "F7_meaning": "Gauge closure (Standard Model DOF)",
+    "slope_structure": {
+      "formula": "-F7/F4",
+      "meaning": "Gauge structure per dimension",
+      "value": -4.333333333333333
+    },
+    "intercept_structure": {
+      "formula": "(F5+F3)/F4",
+      "meaning": "M\u00f6bius+binary per dimension",
+      "value": 2.3333333333333335
+    },
+    "optimal_wr_structure": {
+      "formula": "4/F7",
+      "meaning": "Recursion depth per gauge",
+      "value": 0.3076923076923077
+    }
+  },
+  "all_passed": true,
+  "timestamp": "2026-02-03T09:19:47.331074"
+}

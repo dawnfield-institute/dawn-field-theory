@@ -1,0 +1,7 @@
+{
+  "timestamp": "20260203_094606",
+  "experiment": "40_she_leveque_validation",
+  "overall_status": "VALIDATED",
+  "direct_comparison_pass": true,
+  "intermittency_pass": true,
+  "beats_k41": 

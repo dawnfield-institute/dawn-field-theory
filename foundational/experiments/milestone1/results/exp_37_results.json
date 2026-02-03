@@ -1,0 +1,85 @@
+{
+  "algebraic": {
+    "slope": -4.333333333333333,
+    "intercept": 2.3333333333333335,
+    "numerator_raw": -1.3333333333333335,
+    "wr_from_algebra": 0.30769230769230776,
+    "simplified_numerator": -4,
+    "simplified_wr": 0.3076923076923077,
+    "equals_4_over_13": true,
+    "derivation_steps": [
+      "f(w/R) = -(F\u2087/F\u2084) \u00d7 w/R + (F\u2085+F\u2083)/F\u2084",
+      "f(w/R) = -(13/3) \u00d7 w/R + (5+2)/3",
+      "f(w/R) = -4.3333 \u00d7 w/R + 2.3333",
+      "Set f(w/R) = 1 (for E/B = \u03c6)",
+      "-4.3333 \u00d7 w/R + 2.3333 = 1",
+      "w/R = (1 - 2.3333) / -4.3333",
+      "w/R = -1.3333 / -4.3333",
+      "w/R = 0.3076923077",
+      "w/R = 4/13 exactly"
+    ]
+  },
+  "numerator": {
+    "numerator": 4,
+    "representations": {
+      "(F\u2085+F\u2083) - F\u2084": 4,
+      "2 \u00d7 F\u2083": 4,
+      "F\u2083 + F\u2083": 4,
+      "F\u2084 + 1": 4,
+      "2\u00b2": 4
+    },
+    "valid_representations": {
+      "(F\u2085+F\u2083) - F\u2084": 4,
+      "2 \u00d7 F\u2083": 4,
+      "F\u2083 + F\u2083": 4,
+      "F\u2084 + 1": 4,
+      "2\u00b2": 4
+    },
+    "meaning": "Dimensional surplus of M\u00f6bius+binary over spatial D=3",
+    "not_fibonacci": true
+  },
+  "denominator": {
+    "denominator": 13,
+    "equals_13": true,
+    "gauge_breakdown": {
+      "U(1)": 1,
+      "SU(2)": 3,
+      "SU(3)": 8,
+      "Higgs": 1
+    },
+    "total_gauge_dof": 13,
+    "matches_f7": true,
+    "meaning": "Optimal geometry distributes surplus across gauge structure"
+  },
+  "geometric": {
+    "optimal_wr": 0.3076923076923077,
+    "optimal_wr_decimal": 0.3076923076923077,
+    "eb_at_various_wr": {
+      "0.1": 2.495034277567822,
+      "0.2": 2.0254205204535793,
+      "0.3076923076923077": 1.6180339887498951,
+      "0.4": 1.3347274250804508,
+      "0.5": 1.0835058821738481
+    },
+    "narrow_limit": 2.495034277567822,
+    "wide_limit": 1.0835058821738481,
+    "optimal_eb": 1.6180339887498951,
+    "interpretation": {
+      "narrow": "E dominates (electric field stronger)",
+      "wide": "B dominates (magnetic field stronger)",
+      "optimal": "E/B = \u03c6 (golden balance)"
+    }
+  },
+  "alpha_connection": {
+    "alpha_predicted": 0.007297310889743783,
+    "alpha_measured": 0.0072973525693,
+    "wr_optimal": 0.3076923076923077,
+    "wr_squared": 0.09467455621301776,
+    "alpha_over_wr_squared": 0.0770778462729187,
+    "both_use_f7": true,
+    "connection_found": "F\u2087 appears in both formulas",
+    "speculation": "\u03b1 may encode EM coupling at optimal geometry"
+  },
+  "all_passed": true,
+  "timestamp": "2026-02-03T09:19:58.137971"
+}

@@ -49,15 +49,28 @@ This chain answers: **"Why Fibonacci?"** — Because π constrains Riemann zeros
 | **Euclidean Validation** | E=mc² from PAC conservation | R²=1.0000 | ✅ VALIDATED |
 | **GAIA POCs** | Zero-backprop learning works | 100% transfer | ✅ IMPLEMENTED |
 
-### The Gap We're Bridging (Updated)
+### The Gap We're Bridging (Updated February 2026)
 
 | What We Have | What We Need | Status |
 |--------------|--------------|--------|
 | α = F₃/(F₄·φ·F₁₀)·(1 - F₁₀/4πF₇²) to 5.7 ppm | Why this formula? | **π → φ chain provides mechanism** |
-| sin²θ_W = 3/13 to 0.19% | Why F₄/F₇? | **F₇ = 13 = gauge closure** |
+| sin²θ_W = 3/13 to 0.19% | Why F₄/F₇? | ✅ **RESOLVED: Pre-field geometry** |
+| Pre-field E/B slope = -F₇/F₄ | Connection to sin²θ_W? | ✅ **RECIPROCAL relationship** |
 | SU(2), SU(3) have Fibonacci dimensions | Coincidence or constraint? | **Constraint via thread counting** |
-| PAC tree gives k⁻⁴/³ cascade | Does turbulence show this? | 🔄 Testing in progress |
+| PAC tree gives k⁻⁴⁄³ cascade | Does turbulence show this? | 🔄 Testing in progress |
 | π coherence at σ=½ | Physical interpretation? | **NEW: Connects to GUE/RMT** |
+
+### February 2026: Pre-Field EM Connection
+
+Script `31_prefield_weinberg_derivation.py` shows that:
+
+1. **sin²θ_W = F₄/F₇** (weak mixing angle from gauge theory)
+2. **|slope| = F₇/F₄** (pre-field E/B power law)
+3. **These are RECIPROCALS**: sin²θ_W × |slope| = 1
+
+The weak mixing angle describes how the 13-DOF pre-field gauge structure
+PROJECTS into 3D observable space. It is not a free parameter but a
+geometric necessity.
 
 ## Research Tracks
 

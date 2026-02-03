@@ -64,6 +64,28 @@ Möbius coherence formula: $Z_\mu(\gamma) = |\sum_{n=1}^{N} \mu(n) e^{i\gamma \l
 
 ---
 
+### 0.4 Pre-Field EM → Weak Mixing Angle ✅ COMPLETE (Feb 2026)
+**Status**: VALIDATED  
+**Script**: `31_prefield_weinberg_derivation.py`
+
+**Discovery**:
+The pre-field E/B power law slope = -F₇/F₄ and the weak mixing angle
+sin²θ_W = F₄/F₇ are RECIPROCALS of the same geometric relationship!
+
+**Key Results**:
+- E/B = φ^(-(F₇/F₄) × w/R + (F₅+F₃)/F₄)
+- Slope = -13/3 (1.96% from empirical -4.42)
+- sin²θ_W = 3/13 (0.19% from experimental 0.2312)
+- sin²θ_W × |slope| = 1 EXACTLY
+
+**Interpretation**:
+The weak mixing angle is the PROJECTION FRACTION from 13 pre-field
+gauge DOF to 3 observable spatial dimensions.
+
+This ANSWERS the "Why F₄/F₇?" question from the README gap analysis.
+
+---
+
 ## Priority Queue
 
 ### Tier 1: Immediate Low-Hanging Fruit

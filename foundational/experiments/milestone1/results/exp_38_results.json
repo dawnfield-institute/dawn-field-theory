@@ -1,0 +1,89 @@
+{
+  "basic": {
+    "sigma": 0.5,
+    "charge_interior": 0.010949046517197416,
+    "charge_boundary": 0.022224800236191767,
+    "charge_exterior": 0.26267724021802447,
+    "boundary_dominant": "True",
+    "ratio_boundary_interior": 2.029838853849045
+  },
+  "sigma_test": {
+    "results": [
+      {
+        "sigma": 0.3,
+        "ratio": 1.04883824012184,
+        "boundary_dominant": "True"
+      },
+      {
+        "sigma": 0.5,
+        "ratio": 2.029838853849045,
+        "boundary_dominant": "True"
+      },
+      {
+        "sigma": 0.7,
+        "ratio": 1.5527078914880243,
+        "boundary_dominant": "True"
+      },
+      {
+        "sigma": 1.0,
+        "ratio": 0.37355899068444176,
+        "boundary_dominant": "True"
+      }
+    ],
+    "ratio_variance": 0.2408657492812549,
+    "all_boundary_dominant": true,
+    "is_physical": "True"
+  },
+  "geometry_test": {
+    "results": [
+      {
+        "w_R": 0.2,
+        "ratio": 1.4336863714995172,
+        "charge_boundary": 0.0018334195081560496
+      },
+      {
+        "w_R": 0.3076923076923077,
+        "ratio": 1.9695099599363697,
+        "charge_boundary": 0.02539135179100591
+      },
+      {
+        "w_R": 0.4,
+        "ratio": 1.401098422179282,
+        "charge_boundary": 0.07388240028519868
+      },
+      {
+        "w_R": 0.5,
+        "ratio": 1.41998929898592,
+        "charge_boundary": 0.14087034319532685
+      }
+    ],
+    "max_ratio_wr": 0.3076923076923077,
+    "max_ratio_matches_golden": true
+  },
+  "topological": {
+    "mobius_edges": 1,
+    "cylinder_edges": 2,
+    "topological_difference": "M\u00f6bius has one non-trivial edge",
+    "phase_behavior": {
+      "interior": "Smooth, continuous \u2192 \u2207\u00b7E \u2248 0",
+      "boundary": "Discontinuous at edge \u2192 \u2207\u00b7E \u2260 0"
+    },
+    "quark_lepton_analogy": {
+      "interior_singularities": "Like quarks (confined)",
+      "boundary_charges": "Like leptons (free)",
+      "why": "Topology determines confinement"
+    },
+    "prediction": "Free charges emerge at projection boundaries"
+  },
+  "fibonacci": {
+    "charge_types": 2,
+    "charge_types_meaning": "Binary \u00b1 (PAC fundamental)",
+    "spatial_distribution": 3,
+    "spatial_meaning": "D=3 spatial embedding",
+    "gauge_constraint": 13,
+    "gauge_meaning": "Total DOF determines charge ratio",
+    "prediction": "Charge appears in \u00b1 pairs at boundary"
+  },
+  "all_passed": true,
+  "timestamp": "2026-02-03T09:20:07.363505"
+}

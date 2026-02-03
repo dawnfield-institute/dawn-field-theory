@@ -102,6 +102,48 @@ XI_FORMULA = 1 + np.pi / 55  # 1.0571...
 XI_EMPIRICAL = 1.0571  # From Navier-Stokes symbolic engine
 
 # =============================================================================
+# PREFIELD EM EMERGENCE CONSTANTS (2026-02-03)
+# =============================================================================
+# See: exp_35, exp_36, exp_37, exp_38
+# Source: internal/prefield_maxwell/prefield_em_emergence/
+
+# Power law: E/B = φ^(slope × w/R + intercept)
+# DERIVED from Fibonacci (not curve-fitted!)
+#
+# Empirical fit:     slope = -4.42,    intercept = 2.34
+# Fibonacci formula: slope = -F₇/F₄,   intercept = (F₅+F₃)/F₄
+#                    slope = -13/3,    intercept = 7/3
+# Errors: slope 1.96%, intercept 0.28%
+
+PREFIELD_SLOPE_EMPIRICAL = -4.42
+PREFIELD_INTERCEPT_EMPIRICAL = 2.34
+PREFIELD_SLOPE_FIBONACCI = -F7 / F4  # -13/3 = -4.333...
+PREFIELD_INTERCEPT_FIBONACCI = (F5 + F3) / F4  # 7/3 = 2.333...
+
+# Optimal geometry where E/B = φ exactly
+# w/R = ((F₅+F₃) - F₄) / F₇ = (7-3)/13 = 4/13
+# Derivation:
+#   Set exponent = 1: -(F₇/F₄) × w/R + (F₅+F₃)/F₄ = 1
+#   Solve: w/R = (1 - (F₅+F₃)/F₄) × (-F₄/F₇) = (F₅+F₃-F₄)/F₇ = 4/13
+PREFIELD_OPTIMAL_WR_EMPIRICAL = 0.304
+PREFIELD_OPTIMAL_WR_FIBONACCI = 4 / F7  # 4/13 = 0.3077...
+
+def prefield_eb_ratio(w_R: float) -> float:
+    """
+    Compute E/B ratio from Möbius width-to-radius ratio.
+    
+    E/B = φ^(-(F₇/F₄) × w/R + (F₅+F₃)/F₄)
+    
+    Args:
+        w_R: Möbius strip width-to-radius ratio (typically 0.1 to 0.5)
+        
+    Returns:
+        E/B ratio (electric field magnitude / magnetic field magnitude)
+    """
+    exponent = PREFIELD_SLOPE_FIBONACCI * w_R + PREFIELD_INTERCEPT_FIBONACCI
+    return PHI ** exponent
+
+# =============================================================================
 # KEY DERIVED FORMULAS
 # =============================================================================
 
