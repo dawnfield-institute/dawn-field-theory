@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-02-03T00:00:00",
+  "method": "fibonacci_derivation",
+  "formula": "ζ_p = p/(F₄)² + F₃[1 - (F₃/F₄)^(p/F₄)]",
+  "pre_registration": {
+    "commit": "19e4b6b",
+    "note": "Predictions generated BEFORE validation"
+  },
+  "predictions": {
+    "1": {
+      "fibonacci_prediction": 0.364,
+      "k41_prediction": 0.3333,
+      "intermittency_correction": 0.0306
+    },
+    "2": {
+      "fibonacci_prediction": 0.6959,
+      "k41_prediction": 0.6667,
+      "intermittency_correction": 0.0293
+    },
+    "3": {
+      "fibonacci_prediction": 1.0,
+      "k41_prediction": 1.0,
+      "intermittency_correction": 0.0
+    },
+    "4": {
+      "fibonacci_prediction": 1.2797,
+      "k41_prediction": 1.3333,
+      "intermittency_correction": -0.0537
+    },
+    "5": {
+      "fibonacci_prediction": 1.538,
+      "k41_prediction": 1.6667,
+      "intermittency_correction": -0.1286
+    },
+    "6": {
+      "fibonacci_prediction": 1.7778,
+      "k41_prediction": 2.0,
+      "intermittency_correction": -0.2222
+    },
+    "7": {
+      "fibonacci_prediction": 2.0013,
+      "k41_prediction": 2.3333,
+      "intermittency_correction": -0.332
+    },
+    "8": {
+      "fibonacci_prediction": 2.2105,
+      "k41_prediction": 2.6667,
+      "intermittency_correction": -0.4561
+    },
+    "9": {
+      "fibonacci_prediction": 2.4074,
+      "k41_prediction": 3.0,
+      "intermittency_correction": -0.5926
+    },
+    "10": {
+      "fibonacci_prediction": 2.5934,
+      "k41_prediction": 3.3333,
+      "intermittency_correction": -0.74
+    }
+  },
+  "decomposition": {
+    "beta": {
+      "value": "0.6666666666666666",
+      "fibonacci": "F₃/F₄",
+      "meaning": "Forward cascade fraction"
+    },
+    "C0": {
+      "value": "2",
+      "fibonacci": "F₃",
+      "meaning": "Binary splitting multiplier"
+    },
+    "dimensional_factor": {
+      "value": "9",
+      "fibonacci": "(F₄)²",
+      "meaning": "3D cascade scaling"
+    },
+    "exponent_base": {
+      "value": "3",
+      "fibonacci": "F₄",
+      "meaning": "Spatial dimensions"
+    }
+  }
+}

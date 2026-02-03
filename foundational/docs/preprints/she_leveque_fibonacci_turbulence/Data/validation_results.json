@@ -1,0 +1,117 @@
+{
+  "timestamp": "2025-02-03T00:00:00",
+  "validation_commit": "ecdca28",
+  "verdict": "VALIDATED",
+  "results": {
+    "1": {
+      "prediction": 0.364,
+      "measured": 0.37,
+      "uncertainty": 0.02,
+      "error_percent": 1.64,
+      "k41_error_percent": 9.91,
+      "sigma_distance": 0.3,
+      "within_2sigma": true,
+      "source": "Benzi et al. 1993"
+    },
+    "2": {
+      "prediction": 0.6959,
+      "measured": 0.7,
+      "uncertainty": 0.02,
+      "error_percent": 0.58,
+      "k41_error_percent": 4.76,
+      "sigma_distance": 0.2,
+      "within_2sigma": true,
+      "source": "Benzi et al. 1993"
+    },
+    "3": {
+      "prediction": 1.0,
+      "measured": 1.0,
+      "uncertainty": 0.01,
+      "error_percent": 0.0,
+      "k41_error_percent": 0.0,
+      "sigma_distance": 0.0,
+      "within_2sigma": true,
+      "source": "Definition (normalization)"
+    },
+    "4": {
+      "prediction": 1.2797,
+      "measured": 1.28,
+      "uncertainty": 0.03,
+      "error_percent": 0.03,
+      "k41_error_percent": 4.17,
+      "sigma_distance": 0.01,
+      "within_2sigma": true,
+      "source": "She & Leveque 1994"
+    },
+    "5": {
+      "prediction": 1.538,
+      "measured": 1.54,
+      "uncertainty": 0.04,
+      "error_percent": 0.13,
+      "k41_error_percent": 8.23,
+      "sigma_distance": 0.05,
+      "within_2sigma": true,
+      "source": "Gotoh et al. 2002"
+    },
+    "6": {
+      "prediction": 1.7778,
+      "measured": 1.77,
+      "uncertainty": 0.05,
+      "error_percent": 0.44,
+      "k41_error_percent": 12.99,
+      "sigma_distance": 0.16,
+      "within_2sigma": true,
+      "source": "Gotoh et al. 2002"
+    },
+    "7": {
+      "prediction": 2.0013,
+      "measured": 1.98,
+      "uncertainty": 0.06,
+      "error_percent": 1.07,
+      "k41_error_percent": 17.85,
+      "sigma_distance": 0.35,
+      "within_2sigma": true,
+      "source": "Gotoh et al. 2002"
+    },
+    "8": {
+      "prediction": 2.2105,
+      "measured": 2.17,
+      "uncertainty": 0.08,
+      "error_percent": 1.87,
+      "k41_error_percent": 22.89,
+      "sigma_distance": 0.51,
+      "within_2sigma": true,
+      "source": "Gotoh et al. 2002"
+    },
+    "9": {
+      "prediction": 2.4074,
+      "measured": 2.35,
+      "uncertainty": 0.1,
+      "error_percent": 2.44,
+      "k41_error_percent": 27.66,
+      "sigma_distance": 0.57,
+      "within_2sigma": true,
+      "source": "Gotoh et al. 2002"
+    },
+    "10": {
+      "prediction": 2.5934,
+      "measured": 2.51,
+      "uncertainty": 0.12,
+      "error_percent": 3.32,
+      "k41_error_percent": 32.8,
+      "sigma_distance": 0.69,
+      "within_2sigma": true,
+      "source": "Gotoh et al. 2002"
+    }
+  },
+  "summary": {
+    "mean_error_all": 1.15,
+    "max_error_all": 3.32,
+    "mean_error_p1_6": 0.47,
+    "max_error_p1_6": 1.64,
+    "mean_k41_error_p1_6": 6.68,
+    "within_2sigma_count": 10,
+    "total_predictions": 10,
+    "improvement_over_k41": 14.3
+  }
+}
