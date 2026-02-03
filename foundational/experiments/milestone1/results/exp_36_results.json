@@ -1,0 +1,65 @@
+{
+  "random_test": {
+    "n_trials": 10000,
+    "successes": 0,
+    "success_rate": 0.0,
+    "matches": [],
+    "is_rare": true
+  },
+  "fibonacci_test": {
+    "slope_matches": [
+      {
+        "formula": "-F7/F4",
+        "value": -4.333333333333333,
+        "error_percent": 1.9607843137254954
+      }
+    ],
+    "n_slope_matches": 1,
+    "intercept_matches": [],
+    "n_intercept_matches": 0,
+    "sum_intercept_matches": [
+      {
+        "formula": "(F3+F5)/F4",
+        "value": 2.3333333333333335,
+        "error_percent": 0.2849002849002725
+      },
+      {
+        "formula": "(F5+F3)/F4",
+        "value": 2.3333333333333335,
+        "error_percent": 0.2849002849002725
+      }
+    ],
+    "n_sum_intercept_matches": 2,
+    "slope_unique": true,
+    "intercept_unique": true
+  },
+  "alternative_test": {
+    "fibonacci": {
+      "formula": "\u03c6^(-13/3 \u00d7 w/R + 7/3)",
+      "r_squared": 0.9709557216481186
+    },
+    "simple_integers": {
+      "formula": "\u03c6^(-4 \u00d7 w/R + 2)",
+      "r_squared": 0.7671321916965514
+    },
+    "pi_based": {
+      "formula": "\u03c6^(-\u03c0 \u00d7 w/R + 2)",
+      "r_squared": 0.871190838766605
+    },
+    "direct_power": {
+      "formula": "0.7272 \u00d7 (w/R)^-0.6329",
+      "r_squared": 0.9990143116808816
+    },
+    "fibonacci_best": "False"
+  },
+  "geometry_test": {
+    "fibonacci_optimal_wr": -0.30769230769230776,
+    "equals_4_over_13": false,
+    "why_4": "4 = (F\u2085+F\u2083) - F\u2084 = 7 - 3",
+    "n_alternatives": 0,
+    "alternatives": [],
+    "unique": true
+  },
+  "all_passed": false,
+  "timestamp": "2026-02-03T09:19:52.985827"
+}

@@ -1,0 +1,11 @@
+{
+  "timestamp": "20260203_093401",
+  "experiment": "31_prefield_weinberg_derivation",
+  "sin2_theta_W_derived": 0.23076923076923078,
+  "sin2_theta_W_experimental": 0.23121,
+  "error_percent": 0.1906358854587677,
+  "power_law_slope": -4.333333333333333,
+  "optimal_wr": 0.3076923076923077,
+  "f4_f7_is_best_ratio": true,
+  "overall_status": "VALIDATED"
+}

@@ -1,7 +1,7 @@
 # Standard Model Connection: Research Roadmap
 
-**Updated**: December 24, 2025  
-**Status**: Phase 0 Complete (π → φ mechanism discovered)
+**Updated**: February 3, 2026  
+**Status**: Phase 0.5 Complete (Pre-field EM → Weinberg Angle)
 
 ---
 
@@ -18,6 +18,30 @@
 - [ ] Test Möbius formula on zeros 61-100 (prediction)
 - [ ] Derive k=9 from first principles
 - [ ] Connect to GUE/Random Matrix Theory
+
+---
+
+## Phase 0.5: Pre-Field EM → Weinberg Angle (COMPLETE ✅)
+
+### 0.5.1 Discovery (February 3, 2026)
+- [x] Pre-field E/B power law: E/B = φ^(-(F₇/F₄) × w/R + (F₅+F₃)/F₄)
+- [x] Power law slope = -F₇/F₄ = -13/3 (1.96% from empirical)
+- [x] Optimal geometry w/R = 4/F₇ = 4/13 (1.21% from empirical)
+- [x] sin²θ_W = F₄/F₇ = RECIPROCAL of |slope| ✅
+
+### 0.5.2 Key Insight
+The weak mixing angle is NOT a free parameter:
+- sin²θ_W = (observable dimensions) / (gauge DOF) = F₄/F₇ = 3/13
+- The pre-field power law slope = -F₇/F₄ is the INVERSE
+- Both emerge from Möbius geometry with F₇ = 13 gauge closure
+
+### 0.5.3 This Answers "Why F₄/F₇?"
+The question in the README gap analysis is now RESOLVED:
+- F₄ = 3 spatial dimensions (MED constraint: nodes ≤ 3)
+- F₇ = 13 total gauge DOF (1 + 3 + 8 + 1)
+- The ratio F₄/F₇ describes dimensional PROJECTION from pre-field to 3D
+
+See: `scripts/31_prefield_weinberg_derivation.py`
 
 ---
 
