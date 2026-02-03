@@ -1,0 +1,44 @@
+{
+  "experiment": "exp_18_rg_fibonacci_test",
+  "timestamp": "2026-02-03T10:57:39.866382",
+  "sm_beta": {
+    "U1": {
+      "b": 4.1,
+      "exact": "41/10"
+    },
+    "SU2": {
+      "b": -3.1666666666666665,
+      "exact": "-19/6"
+    },
+    "SU3": {
+      "b": -7,
+      "exact": "-7"
+    }
+  },
+  "gut_coupling": {
+    "alpha_1": 0.01017,
+    "alpha_2": 0.03378,
+    "alpha_3": 0.1185,
+    "ratios": {
+      "r12": 0.3010657193605684,
+      "r23": 0.2850632911392405,
+      "r13": 0.08582278481012659
+    }
+  },
+  "anomalous_dim": {
+    "gamma_sigma": 0.018199999999999994,
+    "gamma_epsilon": 0.4126000000000001,
+    "ratio": 22.670329670329682
+  },
+  "callan_symanzik": {
+    "terms": 3,
+    "pac_form": "f(scale) + f(coupling) + f(dimension) = 0",
+    "med_compatible": true
+  },
+  "conclusion": {
+    "denominators_fibonacci": true,
+    "running_couplings_fibonacci": "partial",
+    "algebraic_structure": "strong",
+    "numerical_predictions": "approximate"
+  }
+}

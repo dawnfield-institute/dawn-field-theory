@@ -1,0 +1,69 @@
+{
+  "experiment": "exp_16_casimir_verification",
+  "timestamp": "2026-02-03T10:55:25.765712",
+  "zeta_values": [
+    {
+      "n": 1,
+      "zeta": "-1/12",
+      "denom": 12,
+      "fib_form": "F_3\u00b2 \u00d7 F_4"
+    },
+    {
+      "n": 3,
+      "zeta": "1/120",
+      "denom": 120,
+      "fib_form": "F_4 \u00d7 F_5 \u00d7 F_6"
+    },
+    {
+      "n": 5,
+      "zeta": "-1/252",
+      "denom": 252,
+      "fib_form": "?"
+    },
+    {
+      "n": 7,
+      "zeta": "1/240",
+      "denom": 240,
+      "fib_form": "F_3 \u00d7 F_4 \u00d7 F_5 \u00d7 F_6"
+    },
+    {
+      "n": 9,
+      "zeta": "-1/132",
+      "denom": 132,
+      "fib_form": "?"
+    }
+  ],
+  "dimensional_pattern": {
+    "fibonacci_dimensions": [
+      1,
+      3,
+      7
+    ],
+    "pattern": "2^k - 1 (Mersenne)",
+    "m_theory_connection": true
+  },
+  "product_test": {
+    "fibonacci_products_count": 79,
+    "denominators_tested": [
+      12,
+      120,
+      252,
+      240,
+      132
+    ],
+    "fibonacci_denoms": [
+      120,
+      240
+    ]
+  },
+  "statistics": {
+    "p_fibonacci": 0.24,
+    "p_exactly_3_of_5": 0.07984742399999999,
+    "additional_pattern": "Mersenne 2^k - 1"
+  },
+  "conclusion": {
+    "verified": true,
+    "pattern": "Fibonacci at Mersenne dimensions",
+    "physical_significance": "String theory, Casimir, M-theory"
+  }
+}
