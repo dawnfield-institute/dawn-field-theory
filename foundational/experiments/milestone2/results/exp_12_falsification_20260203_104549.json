@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-02-03T10:45:49.516317",
+  "experiment": "exp_12_falsification",
+  "results": {
+    "test1_random_params": {
+      "fibonacci_mse": 5.403123292054844e-05,
+      "fibonacci_r2": 0.9998923079946573,
+      "random_mean_mse": 1.4064886518433584,
+      "random_std_mse": 2.1213132177375615,
+      "random_min_mse": 8.911779142497842e-05,
+      "better_count": 0,
+      "p_value": 0.0,
+      "null_rejected": true
+    },
+    "test2_dof": {
+      "n_params_apparent": 4,
+      "n_params_effective": 0,
+      "n_data": 10,
+      "dof": 6,
+      "r2": 0.9998923079946573,
+      "adj_r2": 0.9998061543903832,
+      "bic_fibonacci": -89.04912403206681,
+      "bic_k41": -18.338522618018533,
+      "fibonacci_preferred": 

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-02-03T10:47:20.779245",
+  "experiment": "exp_12_falsification",
+  "results": {
+    "test1_random_params": {
+      "fibonacci_mse": 5.403123292054844e-05,
+      "fibonacci_r2": 0.9998923079946573,
+      "random_mean_mse": 1.4064886518433584,
+      "random_std_mse": 2.1213132177375615,
+      "random_min_mse": 8.911779142497842e-05,
+      "better_count": 0,
+      "p_value": 0.0,
+      "null_rejected": true
+    },
+    "test2_dof": {
+      "n_params_apparent": 4,
+      "n_params_effective": 0,
+      "n_data": 10,
+      "dof": 6,
+      "r2": 0.9998923079946573,
+      "adj_r2": 0.9998061543903832,
+      "bic_fibonacci": -89.04912403206681,
+      "bic_k41": -18.338522618018533,
+      "fibonacci_preferred": true
+    },
+    "test3_generalization": {
+      "cv_mse_3d": 5.403123292054844e-05,
+      "train_mse_3d": 5.403123292054844e-05,
+      "cv_ratio": 1.0,
+      "mse_2d": 0.5059488478951522,
+      "r2_2d": -0.12316081391917244,
+      "generalizes_well": true
+    },
+    "test4_k_formula": {
+      "k_3d_predicted": 9,
+      "k_3d_optimal": 8.97,
+      "k_2d_predicted": 4,
+      "k_2d_observed": 4,
+      "p_coincidence": 0.0025000000000000005,
+      "is_pattern": true
+    },
+    "test5_alternatives": {
+      "fibonacci_mse": 5.403123292054844e-05,
+      "integer_mse": 0.00016180464128892706,
+      "powers2_mse": 0.0567570198440547,
+      "e_mse": 1.6999099670139952,
+      "pi_mse": 2.073333600148572,
+      "best_model": "Fibonacci",
+      "fibonacci_is_best": true
+    },
+    "summary": {
+      "passed": 5,
+      "total": 5,
+      "robust": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-02-03T10:38:01.542794",
+  "experiment": "exp_09_geometric_zero_detection",
+  "parameters": {
+    "n_max": 10000,
+    "n_gamma": 5000
+  },
+  "results": {
+    "landscape": {
+      "gamma_min": 10.0,
+      "gamma_max": 240.0,
+      "n_points": 5000,
+      "max_amplitude": 13.789630336816426
+    },
+    "geometric_comparison": {
+      "zero_mean_E": 2.495713364978444,
+      "zero_mean_M": 5.062014877615314,
+      "random_mean_E": 2.1360711811383624,
+      "random_mean_M": 4.977536842066443,
+      "zero_c2_mean": 0.5160630771827927,
+      "zero_c2_var": 0.1432449195110251,
+      "random_c2_var": 0.19672759350203925
+    },
+    "geometric_detection": {
+      "n_peaks": 157,
+      "n_matched": 72,
+      "detection_rate": 0.72,
+      "mean_error": 0.2879398277405478
+    }
+  },
+  "conclusions": {
+    "zeros_have_higher_energy": true,
+    "c2_variance_lower_at_zeros": true,
+    "geometric_detection_works": true
+  }
+}

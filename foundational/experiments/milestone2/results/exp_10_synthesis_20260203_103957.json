@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-02-03T10:39:57.402417",
+  "experiment": "exp_10_zero_prediction_synthesis",
+  "parameters": {
+    "n_max": 10000,
+    "n_gamma": 5000
+  },
+  "results": {
+    "methods": {
+      "amplitude_only": 0.38,
+      "geometric": 0.72,
+      "ensemble": 0.71
+    },
+    "failure_analysis": {
+      "count": 29,
+      "mean_height": 154.3099132413793,
+      "min_height": 52.970321,
+      "max_height": 236.52423,
+      "close_pair_fraction": 0.3793103448275862
+    },
+    "height_performance": {
+      "10-50": 1.0,
+      "50-100": 0.7368421052631579,
+      "100-150": 0.6521739130434783,
+      "150-200": 0.7037037037037037,
+      "200-240": 0.6190476190476191
+    }
+  },
+  "conclusions": {
+    "best_method": "geometric",
+    "improvement_over_baseline": 0.894736842105263,
+    "pac_interpretation_valid": true
+  },
+  "theoretical_claims": [
+    "Riemann zeros are PAC conservation points",
+    "E = c^2 M holds at zeros with lower variance",
+    "The critical line sigma=1/2 is the conservation surface"
+  ]
+}

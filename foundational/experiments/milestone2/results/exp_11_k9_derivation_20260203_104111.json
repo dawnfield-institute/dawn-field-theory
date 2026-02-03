@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-02-03T10:41:11.120902",
+  "experiment": "exp_11_k9_derivation",
+  "results": {
+    "optimality": {
+      "optimal_k": 8.969696969696969,
+      "optimal_mse": 4.560372609470602e-05,
+      "mse_at_9": 5.403123292054844e-05,
+      "k9_near_optimal": 

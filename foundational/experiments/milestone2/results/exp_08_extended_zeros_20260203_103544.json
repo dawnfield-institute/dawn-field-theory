@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-02-03T10:35:44.333096",
+  "experiment": "exp_08_extended_zero_prediction",
+  "parameters": {
+    "n_max": 10000
+  },
+  "results": {
+    "validation": {
+      "n_peaks": 45,
+      "n_matched": 23,
+      "n_zeros": 30,
+      "mean_error": 0.31825784300846005,
+      "max_error": 0.49689587693846704
+    },
+    "extension_31_60": {
+      "n_peaks": 8,
+      "n_matched": 5,
+      "n_zeros": 30,
+      "mean_error": 0.23470818492328363,
+      "max_error": 0.3906358952635003
+    },
+    "extension_61_100": {
+      "n_peaks": 10,
+      "n_matched": 10,
+      "n_zeros": 40,
+      "mean_error": 0.17361623339586743,
+      "max_error": 0.29354412507817074
+    },
+    "error_analysis": {
+      "height_error_correlation": -0.5050597963871225,
+      "total_matched": 38,
+      "total_zeros": 100
+    },
+    "overall": {
+      "detection_rate": 0.38,
+      "n_max": 10000,
+      "overall_mean_error": 0.269200885467623
+    }
+  },
+  "conclusions": {
+    "extends_exp_14": false,
+    "works_at_height_100_150": false,
+    "works_at_height_200_plus": false
+  }
+}
