@@ -1,0 +1,38 @@
+{
+  "timestamp": "20260203_174331",
+  "experiment": "32_unified_sm_from_pac_fibonacci",
+  "predictions": {
+    "alpha": 0.007297310889743783,
+    "sin2_theta_W": 0.23076923076923078,
+    "Koide_Q": 0.6666666666666666,
+    "PAC_sum": 2.0,
+    "casimir_240": 240.0,
+    "prefield_slope": -4.333333333333333,
+    "MW_MZ_ratio": 0.8770580193070292
+  },
+  "errors": {
+    "alpha": 0.0005711597407743183,
+    "sin2_theta_W": 0.1906358854587677,
+    "Koide_Q": 0.0008500072250636509,
+    "PAC_sum": 0.34877927254609453,
+    "casimir_240": 0.0,
+    "prefield_slope": 0.07698229407235488,
+    "MW_MZ_ratio": 0.49788392032340006
+  },
+  "tests": {
+    "specificity": {
+      "random_hit_rate": 0.0206,
+      "specific_matches": 1,
+      "total_pairs": 42,
+      "fibonacci_specific": true
+    },
+    "joint": {
+      "joint_hit_rate": 0.0,
+      "n_trials": 10000,
+      "expected_if_independent": 0.00010000000000000002,
+      "conclusion": "significant"
+    }
+  },
+  "average_error": 0.15938607705235075,
+  "overall_status": "VALIDATED"
+}
