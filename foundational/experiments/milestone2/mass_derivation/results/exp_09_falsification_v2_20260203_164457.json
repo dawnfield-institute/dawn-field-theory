@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-02-03T16:44:57.538298",
+  "experiment": "exp_09_falsification_v2",
+  "results": {
+    "koide": {
+      "Q_measured": 0.66666051,
+      "close_ratios": 1,
+      "p_value": 2e-05
+    },
+    "pac": {
+      "pac_ratio": 2.0069127890744993,
+      "error_from_2": 0.3456394537249663
+    },
+    "joint": {
+      "p_koide": 0.001,
+      "p_pac": 0.01,
+      "p_joint": 1e-05
+    },
+    "residuals": {
+      "delta_mu": 0.8082829999999888,
+      "delta_tau": 12.190000000000055,
+      "ratio": 15.081351457348756
+    },
+    "monte_carlo": {
+      "n_trials": 100000,
+      "hits_koide": 6154,
+      "hits_pac": 1264,
+      "hits_both": 66
+    }
+  }
+}

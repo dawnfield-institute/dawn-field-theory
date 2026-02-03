@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-02-03T16:35:09.920505",
+  "experiment": "exp_06_validate_tight",
+  "results": {
+    "formulas": {
+      "mu/e": {
+        "formula_text": "F_4 \u00d7 F_6\u00b2 \u00d7 (1 + 1/F_7)",
+        "formula_numeric": "3 \u00d7 64 \u00d7 14/13",
+        "value": 206.76923076923077,
+        "measured": 206.768283,
+        "error_pct": 0.00045837263676309816,
+        "error_ppm": 4.583726367630982
+      },
+      "tau/e": {
+        "formula_text": "F_4 \u00d7 F_7 \u00d7 F_11 + F_5",
+        "formula_numeric": "3471 + 5",
+        "value": 3476,
+        "measured": 3477.23,
+        "error_pct": 0.03537298366803514
+      },
+      "p/e": {
+        "formula_text": "F_4 \u00d7 F_9 \u00d7 F_12 / F_6",
+        "formula_numeric": "3 \u00d7 34 \u00d7 144 / 8",
+        "value": 1836.0,
+        "measured": 1836.15267343,
+        "error_pct": 0.008314854870692768
+      }
+    },
+    "cross_check": {
+      "tau/mu_derived": 16.811011904761905,
+      "tau/mu_measured": 16.817,
+      "tau/mu_error": 0.035607392746001484,
+      "tau/mu_direct": 16.8,
+      "tau/mu_direct_error": 0.1010881845751291,
+      "p/mu_derived": 8.879464285714285,
+      "p/mu_measured": 8.88024337,
+      "p/mu_error": 0.008773231242150353
+    },
+    "index_structure": {
+      "\u03bc/e": {
+        "indices": [
+          4,
+          6,
+          6,
+          7,
+          7
+        ],
+        "ops": "\u00d7 \u00d7 \u00d7 - \u00f7"
+      },
+      "\u03c4/e": {
+        "indices": [
+          4,
+          7,
+          11,
+          5
+        ],
+        "ops": "\u00d7 \u00d7 +"
+      },
+      "p/e": {
+        "indices": [
+          4,
+          9,
+          12,
+          6
+        ],
+        "ops": "\u00d7 \u00d7 \u00f7"
+      }
+    },
+    "precision": {
+      "errors": {
+        "\u03bc/e": 0.0005,
+        "\u03c4/e": 0.035,
+        "p/e": 0.0083
+      },
+      "average": 0.014600000000000002,
+      "rms": 0.020769689453624483,
+      "max": 0.035,
+      "min": 0.0005
+    },
+    "koide": {
+      "Q_derived": 0.6739361746177983,
+      "Q_measured": 0.666660553567342,
+      "expected": 0.6666666666666666,
+      "derived_error": 1.0904261926697523,
+      "measured_error": 0.0009169648986950829
+    }
+  }
+}

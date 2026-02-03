@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-02-03T16:22:02.221397",
+  "experiment": "exp_02_koide_derivation",
+  "koide_Q": 0.6666605114773855,
+  "koide_Q_fibonacci": 0.6666666666666666,
+  "second_constraints": [
+    {
+      "type": "ratio_of_ratios",
+      "formula": "F_9/F_3",
+      "value": 17.0,
+      "error_pct": 1.0880082561372257
+    }
+  ],
+  "koide_params": {
+    "M": 313.84112670139905,
+    "eps": 1.414200505188708,
+    "delta": 2.316624733884652
+  },
+  "measured_ratios": {
+    "mu/e": 206.76828298766566,
+    "tau/e": 3477.228280018971,
+    "tau/mu": 16.81702933242618
+  }
+}
