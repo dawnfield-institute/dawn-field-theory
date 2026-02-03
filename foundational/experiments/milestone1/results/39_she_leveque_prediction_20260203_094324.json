@@ -1,0 +1,22 @@
+{
+  "timestamp": "20260203_094324",
+  "experiment": "39_she_leveque_prediction",
+  "status": "PREDICTION_PHASE",
+  "formula": "\u03b6_p = p/9 + 2 \u00d7 [1 - (2/3)^(p/3)]",
+  "fibonacci_components": {
+    "beta": "2/3 = F3/F4",
+    "C0": "2 = F3",
+    "dimensional_factor": "9 = F4^2",
+    "exponent_base": "3 = F4"
+  },
+  "predictions": {
+    "zeta_1": 0.3639501816385133,
+    "zeta_2": 0.6959365654844464,
+    "zeta_3": 1.0,
+    "zeta_4": 1.2796704914627126,
+    "zeta_5": 1.5380317843970386,
+    "zeta_6": 1.7777777777777777
+  },
+  "asymptotic_slope": 0.1111111111111111,
+  "falsification_threshold": 0.05
+}
