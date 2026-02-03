@@ -1,0 +1,71 @@
+{
+  "experiment": "exp_14_casimir_baseline",
+  "timestamp": "2026-02-03T10:53:18.269126",
+  "factor_240": {
+    "value": 240,
+    "factorization": "2^4 \u00d7 3 \u00d7 5",
+    "fibonacci_form": "F_3^4 \u00d7 F_4 \u00d7 F_5"
+  },
+  "approximations": [
+    {
+      "formula": "F_1 / (F_1 \u00d7 24)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_1 / (F_2 \u00d7 24)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_1 / (F_4 \u00d7 8)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_2 / (F_1 \u00d7 24)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_2 / (F_2 \u00d7 24)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_2 / (F_4 \u00d7 8)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_3 / (F_1 \u00d7 48)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_3 / (F_2 \u00d7 48)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_3 / (F_3 \u00d7 24)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    },
+    {
+      "formula": "F_3 / (F_4 \u00d7 16)",
+      "value": 0.041666666666666664,
+      "error_pct": 1.321183642337778
+    }
+  ],
+  "phi_analysis": {
+    "240_over_pi2": 24.317084074161066,
+    "phi_7": 29.03444185374864,
+    "ratio": 0.8375254532754686
+  },
+  "sec_interpretation": {
+    "factorial_form": "5! \u00d7 2 = 240",
+    "combinatorial": "4! \u00d7 10 = 240",
+    "dimensional_hint": "Mode counting in bounded vacuum"
+  }
+}

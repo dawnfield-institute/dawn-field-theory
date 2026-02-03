@@ -1,0 +1,34 @@
+{
+  "experiment": "exp_17_rg_pac_connection",
+  "timestamp": "2026-02-03T10:56:39.828604",
+  "qcd_running": {
+    "beta_0": 2.3077466748324826,
+    "numerator": 29,
+    "fibonacci_form": "F_8 + F_6"
+  },
+  "pac_scale": {
+    "pac_form": "f(IR) = \u03a3 f(UV)",
+    "beta_interpretation": "infinitesimal PAC balance"
+  },
+  "fixed_points": {
+    "phi_fixed_point": true,
+    "pac_satisfied": true,
+    "phi": 1.618033988749895
+  },
+  "wilson_fisher": {
+    "nu_experimental": 0.6301,
+    "nu_phi": 0.6180339887498948,
+    "difference_pct": 1.914935922886082
+  },
+  "c_theorem": {
+    "c_uv_gt_ir": true,
+    "pac_interpretation": "information binding",
+    "sec_interpretation": "entropy production"
+  },
+  "conclusion": {
+    "pac_rg_connection": true,
+    "phi_is_fixed_point": true,
+    "wilson_fisher_near_phi": true,
+    "qcd_fibonacci": "29 = F_8 + F_6"
+  }
+}

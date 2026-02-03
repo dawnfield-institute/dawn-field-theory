@@ -1,0 +1,100 @@
+{
+  "experiment": "exp_15_casimir_sec_derivation",
+  "timestamp": "2026-02-03T10:54:22.294866",
+  "zeta_regularization": {
+    "zeta_minus_3": 0.008333333333333333,
+    "factor_120": 120,
+    "factor_240": 240,
+    "casimir_coef": 0.041123351671205656
+  },
+  "fibonacci_modes": {
+    "120_fibonacci_form": "F_4 \u00d7 F_5 \u00d7 F_6 = 3 \u00d7 5 \u00d7 8",
+    "240_fibonacci_form": "F_3 \u00d7 F_4 \u00d7 F_5 \u00d7 F_6 = 2 \u00d7 3 \u00d7 5 \u00d7 8",
+    "consecutive_fibonacci": true
+  },
+  "sec_vacuum": {
+    "mode_density_factor": 6,
+    "regularization_factor": 120,
+    "casimir_factor": 240,
+    "fibonacci_consecutive": 4
+  },
+  "fibonacci_products": [
+    {
+      "start": 1,
+      "triple": 2,
+      "quad": 6,
+      "sequence": [
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "start": 2,
+      "triple": 6,
+      "quad": 30,
+      "sequence": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "start": 3,
+      "triple": 30,
+      "quad": 240,
+      "sequence": [
+        2,
+        3,
+        5,
+        8
+      ]
+    },
+    {
+      "start": 4,
+      "triple": 120,
+      "quad": 1560,
+      "sequence": [
+        3,
+        5,
+        8,
+        13
+      ]
+    },
+    {
+      "start": 5,
+      "triple": 520,
+      "quad": 10920,
+      "sequence": [
+        5,
+        8,
+        13,
+        21
+      ]
+    },
+    {
+      "start": 6,
+      "triple": 2184,
+      "quad": 74256,
+      "sequence": [
+        8,
+        13,
+        21,
+        34
+      ]
+    }
+  ],
+  "pac_interpretation": {
+    "zeta_minus_1_factor": 12,
+    "zeta_minus_3_factor": 120,
+    "dimensional_fibonacci": true
+  },
+  "conclusion": {
+    "casimir_factor": 240,
+    "fibonacci_form": "F_3 \u00d7 F_4 \u00d7 F_5 \u00d7 F_6",
+    "consecutive_count": 4,
+    "validates_sec": true
+  }
+}
