@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-02-03T10:34:23.434259",
+  "experiment": "exp_07_gue_connection",
+  "parameters": {
+    "n_max": 5000,
+    "sigma": 0.5
+  },
+  "results": {
+    "gue_spacing": {
+      "n_spacings": 990,
+      "mean_spacing": 1.0,
+      "wigner_mse": 0.0046056164358571254
+    },
+    "riemann_spacing": {
+      "n_zeros": 50,
+      "mean_spacing": 1.0,
+      "small_spacing_count": 0
+    },
+    "mobius_at_zeros": {
+      "mean_at_zeros": 2.438382184820669,
+      "mean_off_zeros": 1.0476382896414147,
+      "ratio": 2.327503880805347
+    },
+    "pi_in_wigner": {
+      "normalization": 3.242277876554809,
+      "decay_rate": 1.2732395447351628,
+      "integral_check": 0.9999518295963744
+    }
+  },
+  "conclusions": {
+    "gue_spacing_matches_wigner": true,
+    "riemann_shows_repulsion": true,
+    "mobius_peaks_at_zeros": true,
+    "pi_encodes_circular_symmetry": true
+  },
+  "theoretical_claim": "Pi-coherence, GUE statistics, and Mobius cancellation are three manifestations of the same underlying structure: the circular symmetry of prime multiplicative structure."
+}

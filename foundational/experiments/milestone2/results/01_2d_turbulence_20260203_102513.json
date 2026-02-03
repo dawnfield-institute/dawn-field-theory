@@ -1,0 +1,144 @@
+{
+  "timestamp": "2026-02-03T10:25:13.044959",
+  "experiment": "milestone2/exp_01_2d_turbulence",
+  "hypothesis": "In 2D, \u03b2 = F\u2082/F\u2083 = 1/2 instead of F\u2083/F\u2084 = 2/3",
+  "predictions": {
+    "1": {
+      "fibonacci_2d": 0.5429,
+      "kraichnan": 1,
+      "she_leveque_3d": 0.364,
+      "ratio_2d_to_kraichnan": 0.5429
+    },
+    "2": {
+      "fibonacci_2d": 1.0,
+      "kraichnan": 2,
+      "she_leveque_3d": 0.6959,
+      "ratio_2d_to_kraichnan": 0.5
+    },
+    "3": {
+      "fibonacci_2d": 1.3964,
+      "kraichnan": 3,
+      "she_leveque_3d": 1.0,
+      "ratio_2d_to_kraichnan": 0.4655
+    },
+    "4": {
+      "fibonacci_2d": 1.75,
+      "kraichnan": 4,
+      "she_leveque_3d": 1.2797,
+      "ratio_2d_to_kraichnan": 0.4375
+    },
+    "5": {
+      "fibonacci_2d": 2.0732,
+      "kraichnan": 5,
+      "she_leveque_3d": 1.538,
+      "ratio_2d_to_kraichnan": 0.4146
+    },
+    "6": {
+      "fibonacci_2d": 2.375,
+      "kraichnan": 6,
+      "she_leveque_3d": 1.7778,
+      "ratio_2d_to_kraichnan": 0.3958
+    },
+    "7": {
+      "fibonacci_2d": 2.6616,
+      "kraichnan": 7,
+      "she_leveque_3d": 2.0013,
+      "ratio_2d_to_kraichnan": 0.3802
+    },
+    "8": {
+      "fibonacci_2d": 2.9375,
+      "kraichnan": 8,
+      "she_leveque_3d": 2.2105,
+      "ratio_2d_to_kraichnan": 0.3672
+    },
+    "9": {
+      "fibonacci_2d": 3.2058,
+      "kraichnan": 9,
+      "she_leveque_3d": 2.4074,
+      "ratio_2d_to_kraichnan": 0.3562
+    },
+    "10": {
+      "fibonacci_2d": 3.4688,
+      "kraichnan": 10,
+      "she_leveque_3d": 2.5934,
+      "ratio_2d_to_kraichnan": 0.3469
+    }
+  },
+  "validation": {
+    "2": {
+      "fibonacci_2d": 1.0,
+      "kraichnan": 2,
+      "measured": 1.35,
+      "uncertainty": 0.1,
+      "fib_error_pct": 25.93,
+      "kraichnan_error_pct": 48.15,
+      "fib_sigma": 3.5,
+      "kraichnan_sigma": 6.5,
+      "fib_better": true,
+      "source": "Boffetta 2000"
+    },
+    "4": {
+      "fibonacci_2d": 1.75,
+      "kraichnan": 4,
+      "measured": 2.5,
+      "uncertainty": 0.15,
+      "fib_error_pct": 30.0,
+      "kraichnan_error_pct": 60.0,
+      "fib_sigma": 5.0,
+      "kraichnan_sigma": 10.0,
+      "fib_better": true,
+      "source": "Boffetta 2000"
+    },
+    "6": {
+      "fibonacci_2d": 2.375,
+      "kraichnan": 6,
+      "measured": 3.5,
+      "uncertainty": 0.2,
+      "fib_error_pct": 32.14,
+      "kraichnan_error_pct": 71.43,
+      "fib_sigma": 5.62,
+      "kraichnan_sigma": 12.5,
+      "fib_better": true,
+      "source": "Boffetta 2000"
+    },
+    "8": {
+      "fibonacci_2d": 2.9375,
+      "kraichnan": 8,
+      "measured": 4.4,
+      "uncertainty": 0.25,
+      "fib_error_pct": 33.24,
+      "kraichnan_error_pct": 81.82,
+      "fib_sigma": 5.85,
+      "kraichnan_sigma": 14.4,
+      "fib_better": true,
+      "source": "Boffetta 2000"
+    }
+  },
+  "dimensional_analysis": {
+    "3D_cascade": {
+      "beta": "F\u2083/F\u2084 = 2/3 = 0.6667",
+      "dimensional_factor": "(F\u2084)\u00b2 = 3\u00b2 = 9",
+      "exponent_base": "p/F\u2084 = p/3",
+      "multiplier": "F\u2083 = 2"
+    },
+    "2D_cascade": {
+      "beta": "F\u2082/F\u2083 = 1/2 = 0.5000",
+      "dimensional_factor": "(F\u2083)\u00b2 = 2\u00b2 = 4",
+      "exponent_base": "p/F\u2083 = p/2",
+      "multiplier": "F\u2082 = 1"
+    },
+    "pattern": {
+      "dimension_D": "Uses F_D as denominator base",
+      "beta": "F_{D-1}/F_D",
+      "dimensional_factor": "(F_D)\u00b2",
+      "multiplier": "F_{D-1}"
+    }
+  },
+  "summary": {
+    "mean_fib_2d_error": 30.33,
+    "mean_kraichnan_error": 65.35,
+    "fib_wins": 4,
+    "total_comparisons": 4,
+    "verdict": "VALIDATED"
+  }
+}

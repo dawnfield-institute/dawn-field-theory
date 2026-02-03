@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-02-03T10:29:09.815521",
+  "experiment": "milestone2/exp_04_med_dimensional",
+  "med_bounds": {
+    "depth_max": 2,
+    "nodes_max": 3,
+    "xi_balance": 1.0571
+  },
+  "dimensional_analysis": {
+    "1": {
+      "effective_depth": 1.0,
+      "dim_factor": 1,
+      "beta": 1.0,
+      "C0": 1
+    },
+    "2": {
+      "effective_depth": 1.5,
+      "dim_factor": 4,
+      "beta": 0.5,
+      "C0": 1
+    },
+    "3": {
+      "effective_depth": 2.0,
+      "dim_factor": 9,
+      "beta": 0.6666666666666666,
+      "C0": 2
+    },
+    "4": {
+      "effective_depth": 2.5,
+      "dim_factor": 16,
+      "beta": 0.6,
+      "C0": 3
+    },
+    "5": {
+      "effective_depth": 3.0,
+      "dim_factor": 25,
+      "beta": 0.625,
+      "C0": 5
+    }
+  },
+  "key_insight": "d_total = d_physical + d_symbolic",
+  "resolution_hypothesis": "2D enstrophy uses F\u2084/F\u2085 (one index higher than 3D energy)"
+}

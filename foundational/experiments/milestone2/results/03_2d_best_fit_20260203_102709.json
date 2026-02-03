@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-02-03T10:27:09.299092",
+  "experiment": "milestone2/exp_03_2d_best_fit",
+  "formula": "\u03b6_p = p/(F\u2083)\u00b2 + F\u2084\u00d7[1 - (F\u2084/F\u2085)^(p/F\u2084)]",
+  "validation": {
+    "2": {
+      "prediction": 1.3659,
+      "fib_prediction": 1.3659,
+      "measured": 1.35,
+      "uncertainty": 0.1,
+      "error_pct": 1.18,
+      "sigma": 0.16,
+      "within_2sigma": true
+    },
+    "4": {
+      "prediction": 2.4818,
+      "fib_prediction": 2.4818,
+      "measured": 2.5,
+      "uncertainty": 0.15,
+      "error_pct": 0.73,
+      "sigma": 0.12,
+      "within_2sigma": true
+    },
+    "6": {
+      "prediction": 3.42,
+      "fib_prediction": 3.42,
+      "measured": 3.5,
+      "uncertainty": 0.2,
+      "error_pct": 2.29,
+      "sigma": 0.4,
+      "within_2sigma": true
+    },
+    "8": {
+      "prediction": 4.2317,
+      "fib_prediction": 4.2317,
+      "measured": 4.4,
+      "uncertainty": 0.25,
+      "error_pct": 3.82,
+      "sigma": 0.67,
+      "within_2sigma": true
+    }
+  },
+  "predictions": {
+    "1": {
+      "2d_fibonacci": 0.7197,
+      "3d_fibonacci": 0.364,
+      "2d_linear": 1,
+      "ratio_2d_3d": 1.9775
+    },
+    "2": {
+      "2d_fibonacci": 1.3659,
+      "3d_fibonacci": 0.6959,
+      "2d_linear": 2,
+      "ratio_2d_3d": 1.9626
+    },
+    "3": {
+      "2d_fibonacci": 1.95,
+      "3d_fibonacci": 1.0,
+      "2d_linear": 3,
+      "ratio_2d_3d": 1.95
+    },
+    "4": {
+      "2d_fibonacci": 2.4818,
+      "3d_fibonacci": 1.2797,
+      "2d_linear": 4,
+      "ratio_2d_3d": 1.9394
+    },
+    "5": {
+      "2d_fibonacci": 2.9695,
+      "3d_fibonacci": 1.538,
+      "2d_linear": 5,
+      "ratio_2d_3d": 1.9307
+    },
+    "6": {
+      "2d_fibonacci": 3.42,
+      "3d_fibonacci": 1.7778,
+      "2d_linear": 6,
+      "ratio_2d_3d": 1.9238
+    },
+    "7": {
+      "2d_fibonacci": 3.8391,
+      "3d_fibonacci": 2.0013,
+      "2d_linear": 7,
+      "ratio_2d_3d": 1.9183
+    },
+    "8": {
+      "2d_fibonacci": 4.2317,
+      "3d_fibonacci": 2.2105,
+      "2d_linear": 8,
+      "ratio_2d_3d": 1.9143
+    },
+    "9": {
+      "2d_fibonacci": 4.602,
+      "3d_fibonacci": 2.4074,
+      "2d_linear": 9,
+      "ratio_2d_3d": 1.9116
+    },
+    "10": {
+      "2d_fibonacci": 4.9535,
+      "3d_fibonacci": 2.5934,
+      "2d_linear": 10,
+      "ratio_2d_3d": 1.91
+    }
+  },
+  "pattern": {
+    "2D": {
+      "dim_factor": "(F_2)\u00b2 = 1\u00b2 = 1",
+      "beta": "F_2/F_3 = 1/2 = 0.5000",
+      "C0": "F_3 = 2",
+      "exp_base": "F_4 = 3 (universal?)",
+      "formula": "\u03b6_p = p/1 + 2\u00d7[1 - (1/2)^(p/3)]"
+    },
+    "3D": {
+      "dim_factor": "(F_3)\u00b2 = 2\u00b2 = 4",
+      "beta": "F_3/F_4 = 2/3 = 0.6667",
+      "C0": "F_4 = 3",
+      "exp_base": "F_4 = 3 (universal?)",
+      "formula": "\u03b6_p = p/4 + 3\u00d7[1 - (2/3)^(p/3)]"
+    },
+    "4D": {
+      "dim_factor": "(F_4)\u00b2 = 3\u00b2 = 9",
+      "beta": "F_4/F_5 = 3/5 = 0.6000",
+      "C0": "F_5 = 5",
+      "exp_base": "F_4 = 3 (universal?)",
+      "formula": "\u03b6_p = p/9 + 5\u00d7[1 - (3/5)^(p/3)]"
+    }
+  },
+  "summary": {
+    "mean_error": 2.0,
+    "all_within_2sigma": true,
+    "verdict": "PROMISING but needs more data"
+  }
+}

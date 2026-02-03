@@ -1,0 +1,192 @@
+{
+  "timestamp": "2026-02-03T10:31:41.044306",
+  "experiment": "exp_05_transcendental_comparison",
+  "parameters": {
+    "n_max": 10000,
+    "sigma": 0.5
+  },
+  "results": {
+    "\u03c0": {
+      "theta": 3.141592653589793,
+      "variance": 6.517318162323708e-25,
+      "envelope_growth": Infinity,
+      "is_transcendental": true,
+      "convergence_sigma": 0.3
+    },
+    "e": {
+      "theta": 2.718281828459045,
+      "variance": 0.034534559561787435,
+      "envelope_growth": 0.42940564446353874,
+      "is_transcendental": true,
+      "pi_advantage_ratio": 5.298891154559555e+22,
+      "convergence_sigma": 0.5
+    },
+    "ln(2)": {
+      "theta": 0.6931471805599453,
+      "variance": 0.011542718373350273,
+      "envelope_growth": 0.5649922225053612,
+      "is_transcendental": true,
+      "pi_advantage_ratio": 1.7710840695300335e+22,
+      "convergence_sigma": 0.37142857142857144
+    },
+    "ln(3)": {
+      "theta": 1.0986122886681098,
+      "variance": 0.004632646606982609,
+      "envelope_growth": 0.9394025710561715,
+      "is_transcendental": true,
+      "pi_advantage_ratio": 7.108209990059575e+21
+    },
+    "\u03b3 (Euler)": {
+      "theta": 0.5772156649,
+      "variance": 0.020365324717761545,
+      "envelope_growth": 0.5910793186964369,
+      "is_transcendental": true,
+      "pi_advantage_ratio": 3.1248013692951914e+22,
+      "convergence_sigma": 0.35714285714285715
+    },
+    "\u221a2": {
+      "theta": 1.4142135623730951,
+      "variance": 0.02242069015548763,
+      "envelope_growth": 0.9284297831119989,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 3.4401711865319884e+22,
+      "convergence_sigma": 0.39999999999999997
+    },
+    "\u221a3": {
+      "theta": 1.7320508075688772,
+      "variance": 0.0458978515351971,
+      "envelope_growth": 0.456129158575914,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 7.0424445135317e+22
+    },
+    "\u221a5": {
+      "theta": 2.23606797749979,
+      "variance": 0.02137054835904804,
+      "envelope_growth": 0.6446039200324073,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 3.279040216663062e+22
+    },
+    "\u03c6": {
+      "theta": 1.618033988749895,
+      "variance": 0.07805500360282569,
+      "envelope_growth": 1.236761274037903,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 1.1976552572507168e+23,
+      "convergence_sigma": 0.5
+    },
+    "\u03c0/2": {
+      "theta": 1.5707963267948966,
+      "variance": 0.010030872736853824,
+      "envelope_growth": 0.421256075100596,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 1.5391104879368633e+22
+    },
+    "\u03c0/3": {
+      "theta": 1.0471975511965976,
+      "variance": 0.005571673793466413,
+      "envelope_growth": 0.25449018379353733,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 8.549028380532321e+21
+    },
+    "\u03c0/4": {
+      "theta": 0.7853981633974483,
+      "variance": 0.014168514342091248,
+      "envelope_growth": 0.5612258339384482,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 2.1739792333599305e+22
+    },
+    "2\u03c0": {
+      "theta": 6.283185307179586,
+      "variance": 7.757990107298294e-25,
+      "envelope_growth": Infinity,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 1.1903654101386132
+    },
+    "22/7": {
+      "theta": 3.142857142857143,
+      "variance": 0.21345763042402321,
+      "envelope_growth": 1.1543257888808571,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 3.2752372234642637e+23
+    },
+    "355/113": {
+      "theta": 3.1415929203539825,
+      "variance": 5.2232261240051675e-06,
+      "envelope_growth": 5.273606644541831,
+      "is_transcendental": false,
+      "pi_advantage_ratio": 8.014379525309011e+18
+    }
+  },
+  "rankings": {
+    "by_variance": [
+      [
+        "\u03c0",
+        6.517318162323708e-25
+      ],
+      [
+        "2\u03c0",
+        7.757990107298294e-25
+      ],
+      [
+        "355/113",
+        5.2232261240051675e-06
+      ],
+      [
+        "ln(3)",
+        0.004632646606982609
+      ],
+      [
+        "\u03c0/3",
+        0.005571673793466413
+      ],
+      [
+        "\u03c0/2",
+        0.010030872736853824
+      ],
+      [
+        "ln(2)",
+        0.011542718373350273
+      ],
+      [
+        "\u03c0/4",
+        0.014168514342091248
+      ],
+      [
+        "\u03b3 (Euler)",
+        0.020365324717761545
+      ],
+      [
+        "\u221a5",
+        0.02137054835904804
+      ],
+      [
+        "\u221a2",
+        0.02242069015548763
+      ],
+      [
+        "e",
+        0.034534559561787435
+      ],
+      [
+        "\u221a3",
+        0.0458978515351971
+      ],
+      [
+        "\u03c6",
+        0.07805500360282569
+      ],
+      [
+        "22/7",
+        0.21345763042402321
+      ]
+    ],
+    "pi_rank": 1,
+    "pi_advantage_over_e": 5.298891154559555e+22
+  },
+  "conclusions": {
+    "pi_is_minimum": true,
+    "pi_advantage_factor": 5.298891154559555e+22,
+    "rational_approx_fail": true,
+    "transcendentals_not_all_equal": true
+  }
+}

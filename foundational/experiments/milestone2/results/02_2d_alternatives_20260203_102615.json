@@ -1,0 +1,139 @@
+{
+  "timestamp": "2026-02-03T10:26:15.027055",
+  "experiment": "milestone2/exp_02_2d_alternatives",
+  "top_10_combinations": [
+    {
+      "beta": "F4/F5=0.6000",
+      "C0": 3,
+      "dim_factor": 4,
+      "exp_base": 3,
+      "mean_error": 2.0,
+      "beta_val": 0.6
+    },
+    {
+      "beta": "F3/F4=0.6667",
+      "C0": 5,
+      "dim_factor": 9,
+      "exp_base": 3,
+      "mean_error": 2.94,
+      "beta_val": 0.6666666666666666
+    },
+    {
+      "beta": "F6/F7=0.6154",
+      "C0": 3,
+      "dim_factor": 4,
+      "exp_base": 3,
+      "mean_error": 3.32,
+      "beta_val": 0.6153846153846154
+    },
+    {
+      "beta": "F5/F6=0.6250",
+      "C0": 3,
+      "dim_factor": 4,
+      "exp_base": 3,
+      "mean_error": 4.51,
+      "beta_val": 0.625
+    },
+    {
+      "beta": "F3/F4=0.6667",
+      "C0": 3,
+      "dim_factor": 4,
+      "exp_base": 2,
+      "mean_error": 5.28,
+      "beta_val": 0.6666666666666666
+    },
+    {
+      "beta": "F2/F3=0.5000",
+      "C0": 2,
+      "dim_factor": 4,
+      "exp_base": 2,
+      "mean_error": 7.55,
+      "beta_val": 0.5
+    },
+    {
+      "beta": "F5/F6=0.6250",
+      "C0": 5,
+      "dim_factor": 9,
+      "exp_base": 3,
+      "mean_error": 8.62,
+      "beta_val": 0.625
+    },
+    {
+      "beta": "F3/F4=0.6667",
+      "C0": 3,
+      "dim_factor": 4,
+      "exp_base": 3,
+      "mean_error": 9.81,
+      "beta_val": 0.6666666666666666
+    },
+    {
+      "beta": "F4/F5=0.6000",
+      "C0": 2,
+      "dim_factor": 4,
+      "exp_base": 2,
+      "mean_error": 9.96,
+      "beta_val": 0.6
+    },
+    {
+      "beta": "F2/F3=0.5000",
+      "C0": 3,
+      "dim_factor": 4,
+      "exp_base": 3,
+      "mean_error": 10.42,
+      "beta_val": 0.5
+    }
+  ],
+  "formula_comparison": {
+    "original_2d_shift": {
+      "predictions": {
+        "2": 1.0,
+        "4": 1.75,
+        "6": 2.375,
+        "8": 2.938
+      },
+      "mean_error": 30.33,
+      "desc": "\u03b6_p = p/4 + 1\u00d7[1-(1/2)^(p/2)]"
+    },
+    "3d_formula": {
+      "predictions": {
+        "2": 0.696,
+        "4": 1.28,
+        "6": 1.778,
+        "8": 2.211
+      },
+      "mean_error": 49.06,
+      "desc": "\u03b6_p = p/9 + 2\u00d7[1-(2/3)^(p/3)] (3D She-Leveque)"
+    },
+    "enstrophy_linear": {
+      "predictions": {
+        "2": 2,
+        "4": 4,
+        "6": 6,
+        "8": 8
+      },
+      "mean_error": 65.35,
+      "desc": "\u03b6_p = p (Kraichnan linear)"
+    },
+    "modified_enstrophy": {
+      "predictions": {
+        "2": 1.25,
+        "4": 2.219,
+        "6": 3.012,
+        "8": 3.695
+      },
+      "mean_error": 12.16,
+      "desc": "\u03b6_p = p/4 + 2\u00d7[1-(5/8)^(p/2)]"
+    },
+    "log_correction": {
+      "predictions": {
+        "2": 1.85,
+        "4": 3.8,
+        "6": 5.775,
+        "8": 7.76
+      },
+      "mean_error": 57.6,
+      "desc": "\u03b6_p = p \u00d7 [1 - c/log(p)] (log correction)"
+    }
+  },
+  "conclusion": "2D turbulence has different physics; She-Leveque structure may be 3D-specific"
+}
