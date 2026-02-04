@@ -1,0 +1,244 @@
+{
+  "timestamp": "2026-02-04T13:08:08.442881",
+  "experiment": "exp_03_prime_base_cases",
+  "hypothesis": "Primes are base cases (primitives), not stuck recursions",
+  "analysis": {},
+  "pac_validation": [
+    {
+      "n": 6,
+      "factors": [
+        2,
+        3
+      ],
+      "log_n": 1.791759469228055,
+      "sum_log_factors": 1.791759469228055,
+      "pac_error": 0.0
+    },
+    {
+      "n": 12,
+      "factors": [
+        2,
+        2,
+        3
+      ],
+      "log_n": 2.4849066497880004,
+      "sum_log_factors": 2.4849066497880004,
+      "pac_error": 0.0
+    },
+    {
+      "n": 15,
+      "factors": [
+        3,
+        5
+      ],
+      "log_n": 2.70805020110221,
+      "sum_log_factors": 2.70805020110221,
+      "pac_error": 0.0
+    },
+    {
+      "n": 28,
+      "factors": [
+        2,
+        2,
+        7
+      ],
+      "log_n": 3.332204510175204,
+      "sum_log_factors": 3.332204510175204,
+      "pac_error": 0.0
+    },
+    {
+      "n": 30,
+      "factors": [
+        2,
+        3,
+        5
+      ],
+      "log_n": 3.4011973816621555,
+      "sum_log_factors": 3.401197381662155,
+      "pac_error": 4.440892098500626e-16
+    },
+    {
+      "n": 60,
+      "factors": [
+        2,
+        2,
+        3,
+        5
+      ],
+      "log_n": 4.0943445622221,
+      "sum_log_factors": 4.0943445622221,
+      "pac_error": 0.0
+    },
+    {
+      "n": 100,
+      "factors": [
+        2,
+        2,
+        5,
+        5
+      ],
+      "log_n": 4.605170185988092,
+      "sum_log_factors": 4.605170185988091,
+      "pac_error": 8.881784197001252e-16
+    },
+    {
+      "n": 360,
+      "factors": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        5
+      ],
+      "log_n": 5.886104031450156,
+      "sum_log_factors": 5.886104031450156,
+      "pac_error": 0.0
+    },
+    {
+      "n": 1000,
+      "factors": [
+        2,
+        2,
+        2,
+        5,
+        5,
+        5
+      ],
+      "log_n": 6.907755278982137,
+      "sum_log_factors": 6.907755278982137,
+      "pac_error": 0.0
+    },
+    {
+      "n": 2520,
+      "factors": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        5,
+        7
+      ],
+      "log_n": 7.832014180505469,
+      "sum_log_factors": 7.832014180505469,
+      "pac_error": 0.0
+    }
+  ],
+  "depth_analysis": [
+    {
+      "depth": 0,
+      "count": 168,
+      "examples": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ]
+    },
+    {
+      "depth": 1,
+      "count": 299,
+      "examples": [
+        4,
+        6,
+        9,
+        10,
+        14
+      ]
+    },
+    {
+      "depth": 2,
+      "count": 247,
+      "examples": [
+        8,
+        12,
+        18,
+        20,
+        27
+      ]
+    },
+    {
+      "depth": 3,
+      "count": 149,
+      "examples": [
+        16,
+        24,
+        36,
+        40,
+        54
+      ]
+    },
+    {
+      "depth": 4,
+      "count": 76,
+      "examples": [
+        32,
+        48,
+        72,
+        80,
+        108
+      ]
+    },
+    {
+      "depth": 5,
+      "count": 37,
+      "examples": [
+        64,
+        96,
+        144,
+        160,
+        216
+      ]
+    },
+    {
+      "depth": 6,
+      "count": 14,
+      "examples": [
+        128,
+        192,
+        288,
+        320,
+        432
+      ]
+    },
+    {
+      "depth": 7,
+      "count": 7,
+      "examples": [
+        256,
+        384,
+        576,
+        640,
+        864
+      ]
+    },
+    {
+      "depth": 8,
+      "count": 2,
+      "examples": [
+        512,
+        768
+      ]
+    }
+  ],
+  "phi_structure": {
+    "mean_depth": 1.87987987987988,
+    "std_depth": 1.4885568134849805,
+    "phi_proximity": 0.16182966053283535,
+    "inv_phi_proximity": 2.0417095404127155,
+    "phi_crossings": [
+      22,
+      23,
+      25
+    ],
+    "final_composite_prime_ratio": 4.946428571425628
+  },
+  "conclusion": {
+    "pac_exact": true,
+    "primes_are_base_cases": true,
+    "factorization_is_actualization": true,
+    "insight": "Primes don't resolve because they ARE the resolution"
+  }
+}

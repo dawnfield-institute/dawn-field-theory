@@ -1,0 +1,628 @@
+{
+  "timestamp": "2026-02-04T12:54:41.346370",
+  "experiment": "exp_02_landauer_bounded_recursion",
+  "hypothesis": "Landauer cost naturally bounds recursion to MED limits (depth \u2264 2)",
+  "fibonacci_trials": [
+    {
+      "n": 5,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 5,
+      "budget": 10,
+      "result": 4,
+      "max_depth": 4,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 5,
+      "budget": 20,
+      "result": 5,
+      "max_depth": 4,
+      "calls": 15,
+      "terminated_by": "complete"
+    },
+    {
+      "n": 5,
+      "budget": 50,
+      "result": 5,
+      "max_depth": 4,
+      "calls": 15,
+      "terminated_by": "complete"
+    },
+    {
+      "n": 5,
+      "budget": 100,
+      "result": 5,
+      "max_depth": 4,
+      "calls": 15,
+      "terminated_by": "complete"
+    },
+    {
+      "n": 5,
+      "budget": 500,
+      "result": 5,
+      "max_depth": 4,
+      "calls": 15,
+      "terminated_by": "complete"
+    },
+    {
+      "n": 8,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 8,
+      "budget": 10,
+      "result": 2,
+      "max_depth": 7,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 8,
+      "budget": 20,
+      "result": 6,
+      "max_depth": 7,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 8,
+      "budget": 50,
+      "result": 15,
+      "max_depth": 7,
+      "calls": 50,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 8,
+      "budget": 100,
+      "result": 21,
+      "max_depth": 7,
+      "calls": 67,
+      "terminated_by": "complete"
+    },
+    {
+      "n": 8,
+      "budget": 500,
+      "result": 21,
+      "max_depth": 7,
+      "calls": 67,
+      "terminated_by": "complete"
+    },
+    {
+      "n": 10,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 10,
+      "budget": 10,
+      "result": 1,
+      "max_depth": 9,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 10,
+      "budget": 20,
+      "result": 5,
+      "max_depth": 9,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 10,
+      "budget": 50,
+      "result": 14,
+      "max_depth": 9,
+      "calls": 50,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 10,
+      "budget": 100,
+      "result": 30,
+      "max_depth": 9,
+      "calls": 100,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 10,
+      "budget": 500,
+      "result": 55,
+      "max_depth": 9,
+      "calls": 177,
+      "terminated_by": "complete"
+    },
+    {
+      "n": 13,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 13,
+      "budget": 10,
+      "result": 1,
+      "max_depth": 9,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 13,
+      "budget": 20,
+      "result": 4,
+      "max_depth": 12,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 13,
+      "budget": 50,
+      "result": 14,
+      "max_depth": 12,
+      "calls": 50,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 13,
+      "budget": 100,
+      "result": 30,
+      "max_depth": 12,
+      "calls": 100,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 13,
+      "budget": 500,
+      "result": 153,
+      "max_depth": 12,
+      "calls": 500,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 15,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 15,
+      "budget": 10,
+      "result": 1,
+      "max_depth": 9,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 15,
+      "budget": 20,
+      "result": 4,
+      "max_depth": 14,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 15,
+      "budget": 50,
+      "result": 14,
+      "max_depth": 14,
+      "calls": 50,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 15,
+      "budget": 100,
+      "result": 30,
+      "max_depth": 14,
+      "calls": 100,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 15,
+      "budget": 500,
+      "result": 153,
+      "max_depth": 14,
+      "calls": 500,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 20,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 20,
+      "budget": 10,
+      "result": 1,
+      "max_depth": 9,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 20,
+      "budget": 20,
+      "result": 1,
+      "max_depth": 19,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 20,
+      "budget": 50,
+      "result": 12,
+      "max_depth": 19,
+      "calls": 50,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 20,
+      "budget": 100,
+      "result": 27,
+      "max_depth": 19,
+      "calls": 100,
+      "terminated_by": "budget"
+    },
+    {
+      "n": 20,
+      "budget": 500,
+      "result": 151,
+      "max_depth": 19,
+      "calls": 500,
+      "terminated_by": "budget"
+    }
+  ],
+  "ackermann_trials": [
+    {
+      "m": 1,
+      "n": 1,
+      "budget": 5,
+      "result": 3,
+      "max_depth": 2,
+      "calls": 4,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "budget": 10,
+      "result": 3,
+      "max_depth": 2,
+      "calls": 4,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "budget": 20,
+      "result": 3,
+      "max_depth": 2,
+      "calls": 4,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "budget": 50,
+      "result": 3,
+      "max_depth": 2,
+      "calls": 4,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "budget": 100,
+      "result": 3,
+      "max_depth": 2,
+      "calls": 4,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "budget": 500,
+      "result": 3,
+      "max_depth": 2,
+      "calls": 4,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "budget": 5,
+      "result": 3,
+      "max_depth": 3,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "budget": 10,
+      "result": 4,
+      "max_depth": 3,
+      "calls": 6,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "budget": 20,
+      "result": 4,
+      "max_depth": 3,
+      "calls": 6,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "budget": 50,
+      "result": 4,
+      "max_depth": 3,
+      "calls": 6,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "budget": 100,
+      "result": 4,
+      "max_depth": 3,
+      "calls": 6,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "budget": 500,
+      "result": 4,
+      "max_depth": 3,
+      "calls": 6,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "budget": 5,
+      "result": 2,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "budget": 10,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "budget": 20,
+      "result": 5,
+      "max_depth": 5,
+      "calls": 14,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "budget": 50,
+      "result": 5,
+      "max_depth": 5,
+      "calls": 14,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "budget": 100,
+      "result": 5,
+      "max_depth": 5,
+      "calls": 14,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "budget": 500,
+      "result": 5,
+      "max_depth": 5,
+      "calls": 14,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "budget": 10,
+      "result": 2,
+      "max_depth": 5,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "budget": 20,
+      "result": 2,
+      "max_depth": 6,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "budget": 50,
+      "result": 7,
+      "max_depth": 7,
+      "calls": 27,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "budget": 100,
+      "result": 7,
+      "max_depth": 7,
+      "calls": 27,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "budget": 500,
+      "result": 7,
+      "max_depth": 7,
+      "calls": 27,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "budget": 5,
+      "result": 2,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "budget": 10,
+      "result": 3,
+      "max_depth": 6,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "budget": 20,
+      "result": 3,
+      "max_depth": 7,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "budget": 50,
+      "result": 5,
+      "max_depth": 11,
+      "calls": 50,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "budget": 100,
+      "result": 7,
+      "max_depth": 14,
+      "calls": 100,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "budget": 500,
+      "result": 13,
+      "max_depth": 14,
+      "calls": 106,
+      "terminated_by": "complete"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "budget": 5,
+      "result": 1,
+      "max_depth": 4,
+      "calls": 5,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "budget": 10,
+      "result": 4,
+      "max_depth": 7,
+      "calls": 10,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "budget": 20,
+      "result": 4,
+      "max_depth": 8,
+      "calls": 20,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "budget": 50,
+      "result": 6,
+      "max_depth": 12,
+      "calls": 50,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "budget": 100,
+      "result": 6,
+      "max_depth": 15,
+      "calls": 100,
+      "terminated_by": "budget"
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "budget": 500,
+      "result": 14,
+      "max_depth": 29,
+      "calls": 500,
+      "terminated_by": "budget"
+    }
+  ],
+  "med_emergence": {},
+  "conclusion": {
+    "med_bounded_trials": 0,
+    "budget_terminated_trials": 46,
+    "supports_hypothesis": false,
+    "key_insight": "Energy budget bounds recursion depth; MED emerges from thermodynamics"
+  }
+}

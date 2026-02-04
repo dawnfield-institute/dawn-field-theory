@@ -1,0 +1,10 @@
+schema_version: "2.0"
+description: "Experiment scripts for recursive knot actualization hypothesis"
+semantic_scope: "implementation"
+proficiency_level: "research"
+
+files:
+  - "[exp_01_ackermann_fibonacci.py]": "Test for φ-clustering in Ackermann outputs"
+  - "[exp_02_landauer_bounded_recursion.py]": "Simulate recursion with erasure cost"
+  - "[exp_03_knot_invariants.py]": "Compute knot invariants for dependency graphs"
+  - "[exp_04_observer_relative_halting.py]": "Demonstrate observer-relative partiality"
