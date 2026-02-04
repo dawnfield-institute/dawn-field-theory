@@ -1,0 +1,575 @@
+{
+  "timestamp": "2026-02-04T12:54:35.877340",
+  "experiment": "exp_01_ackermann_fibonacci",
+  "hypothesis": "Ackermann outputs cluster around \u03c6-related values",
+  "ackermann_values": [
+    {
+      "m": 0,
+      "n": 0,
+      "value": 1,
+      "recursion_depth": 1,
+      "analysis": {
+        "value": 1,
+        "nearest_fibonacci": {
+          "index": 1,
+          "value": 1,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 0,
+          "phi_to_power": 1,
+          "ratio": 1,
+          "distance_pct": 0
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 0,
+      "n": 1,
+      "value": 2,
+      "recursion_depth": 1,
+      "analysis": {
+        "value": 2,
+        "nearest_fibonacci": {
+          "index": 3,
+          "value": 2,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 1,
+          "phi_to_power": 1.618033988749895,
+          "ratio": 1.2360679774997896,
+          "distance_pct": 23.60679774997896
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 0,
+      "n": 2,
+      "value": 3,
+      "recursion_depth": 1,
+      "analysis": {
+        "value": 3,
+        "nearest_fibonacci": {
+          "index": 4,
+          "value": 3,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 2,
+          "phi_to_power": 2.618033988749895,
+          "ratio": 1.1458980337503155,
+          "distance_pct": 14.58980337503155
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 0,
+      "n": 3,
+      "value": 4,
+      "recursion_depth": 1,
+      "analysis": {
+        "value": 4,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 0.8,
+          "distance_pct": 19.999999999999996
+        },
+        "phi_power": {
+          "exponent": 3,
+          "phi_to_power": 4.23606797749979,
+          "ratio": 0.9442719099991588,
+          "distance_pct": 5.572809000084122
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 0,
+      "n": 4,
+      "value": 5,
+      "recursion_depth": 1,
+      "analysis": {
+        "value": 5,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 3,
+          "phi_to_power": 4.23606797749979,
+          "ratio": 1.1803398874989484,
+          "distance_pct": 18.033988749894835
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 0,
+      "n": 5,
+      "value": 6,
+      "recursion_depth": 1,
+      "analysis": {
+        "value": 6,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 1.2,
+          "distance_pct": 19.999999999999996
+        },
+        "phi_power": {
+          "exponent": 4,
+          "phi_to_power": 6.854101966249686,
+          "ratio": 0.8753882025018926,
+          "distance_pct": 12.461179749810736
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 1,
+      "n": 0,
+      "value": 2,
+      "recursion_depth": 2,
+      "analysis": {
+        "value": 2,
+        "nearest_fibonacci": {
+          "index": 3,
+          "value": 2,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 1,
+          "phi_to_power": 1.618033988749895,
+          "ratio": 1.2360679774997896,
+          "distance_pct": 23.60679774997896
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "value": 3,
+      "recursion_depth": 4,
+      "analysis": {
+        "value": 3,
+        "nearest_fibonacci": {
+          "index": 4,
+          "value": 3,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 2,
+          "phi_to_power": 2.618033988749895,
+          "ratio": 1.1458980337503155,
+          "distance_pct": 14.58980337503155
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "value": 4,
+      "recursion_depth": 6,
+      "analysis": {
+        "value": 4,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 0.8,
+          "distance_pct": 19.999999999999996
+        },
+        "phi_power": {
+          "exponent": 3,
+          "phi_to_power": 4.23606797749979,
+          "ratio": 0.9442719099991588,
+          "distance_pct": 5.572809000084122
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 1,
+      "n": 3,
+      "value": 5,
+      "recursion_depth": 8,
+      "analysis": {
+        "value": 5,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 3,
+          "phi_to_power": 4.23606797749979,
+          "ratio": 1.1803398874989484,
+          "distance_pct": 18.033988749894835
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 1,
+      "n": 4,
+      "value": 6,
+      "recursion_depth": 10,
+      "analysis": {
+        "value": 6,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 1.2,
+          "distance_pct": 19.999999999999996
+        },
+        "phi_power": {
+          "exponent": 4,
+          "phi_to_power": 6.854101966249686,
+          "ratio": 0.8753882025018926,
+          "distance_pct": 12.461179749810736
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 1,
+      "n": 5,
+      "value": 7,
+      "recursion_depth": 12,
+      "analysis": {
+        "value": 7,
+        "nearest_fibonacci": {
+          "index": 6,
+          "value": 8,
+          "ratio": 0.875,
+          "distance_pct": 12.5
+        },
+        "phi_power": {
+          "exponent": 4,
+          "phi_to_power": 6.854101966249686,
+          "ratio": 1.021286236252208,
+          "distance_pct": 2.1286236252207935
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 0,
+      "value": 3,
+      "recursion_depth": 5,
+      "analysis": {
+        "value": 3,
+        "nearest_fibonacci": {
+          "index": 4,
+          "value": 3,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 2,
+          "phi_to_power": 2.618033988749895,
+          "ratio": 1.1458980337503155,
+          "distance_pct": 14.58980337503155
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "value": 5,
+      "recursion_depth": 14,
+      "analysis": {
+        "value": 5,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 3,
+          "phi_to_power": 4.23606797749979,
+          "ratio": 1.1803398874989484,
+          "distance_pct": 18.033988749894835
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "value": 7,
+      "recursion_depth": 27,
+      "analysis": {
+        "value": 7,
+        "nearest_fibonacci": {
+          "index": 6,
+          "value": 8,
+          "ratio": 0.875,
+          "distance_pct": 12.5
+        },
+        "phi_power": {
+          "exponent": 4,
+          "phi_to_power": 6.854101966249686,
+          "ratio": 1.021286236252208,
+          "distance_pct": 2.1286236252207935
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "value": 9,
+      "recursion_depth": 44,
+      "analysis": {
+        "value": 9,
+        "nearest_fibonacci": {
+          "index": 6,
+          "value": 8,
+          "ratio": 1.125,
+          "distance_pct": 12.5
+        },
+        "phi_power": {
+          "exponent": 5,
+          "phi_to_power": 11.090169943749476,
+          "ratio": 0.8115294937452681,
+          "distance_pct": 18.847050625473194
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 4,
+      "value": 11,
+      "recursion_depth": 65,
+      "analysis": {
+        "value": 11,
+        "nearest_fibonacci": {
+          "index": 7,
+          "value": 13,
+          "ratio": 0.8461538461538461,
+          "distance_pct": 15.384615384615385
+        },
+        "phi_power": {
+          "exponent": 5,
+          "phi_to_power": 11.090169943749476,
+          "ratio": 0.9918693812442164,
+          "distance_pct": 0.8130618755783581
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 5,
+      "value": 13,
+      "recursion_depth": 90,
+      "analysis": {
+        "value": 13,
+        "nearest_fibonacci": {
+          "index": 7,
+          "value": 13,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 5,
+          "phi_to_power": 11.090169943749476,
+          "ratio": 1.172209268743165,
+          "distance_pct": 17.22092687431649
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 3,
+      "n": 0,
+      "value": 5,
+      "recursion_depth": 15,
+      "analysis": {
+        "value": 5,
+        "nearest_fibonacci": {
+          "index": 5,
+          "value": 5,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 3,
+          "phi_to_power": 4.23606797749979,
+          "ratio": 1.1803398874989484,
+          "distance_pct": 18.033988749894835
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "value": 13,
+      "recursion_depth": 106,
+      "analysis": {
+        "value": 13,
+        "nearest_fibonacci": {
+          "index": 7,
+          "value": 13,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 5,
+          "phi_to_power": 11.090169943749476,
+          "ratio": 1.172209268743165,
+          "distance_pct": 17.22092687431649
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "value": 29,
+      "recursion_depth": 541,
+      "analysis": {
+        "value": 29,
+        "nearest_fibonacci": {
+          "index": 9,
+          "value": 34,
+          "ratio": 0.8529411764705882,
+          "distance_pct": 14.70588235294118
+        },
+        "phi_power": {
+          "exponent": 7,
+          "phi_to_power": 29.03444185374864,
+          "ratio": 0.9988137587103576,
+          "distance_pct": 0.1186241289642398
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "value": 61,
+      "recursion_depth": 2432,
+      "analysis": {
+        "value": 61,
+        "nearest_fibonacci": {
+          "index": 10,
+          "value": 55,
+          "ratio": 1.1090909090909091,
+          "distance_pct": 10.909090909090914
+        },
+        "phi_power": {
+          "exponent": 9,
+          "phi_to_power": 76.01315561749645,
+          "ratio": 0.8024926672819149,
+          "distance_pct": 19.750733271808507
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 3,
+      "n": 4,
+      "value": 125,
+      "recursion_depth": 10307,
+      "analysis": {
+        "value": 125,
+        "nearest_fibonacci": {
+          "index": 12,
+          "value": 144,
+          "ratio": 0.8680555555555556,
+          "distance_pct": 13.194444444444443
+        },
+        "phi_power": {
+          "exponent": 10,
+          "phi_to_power": 122.99186938124426,
+          "ratio": 1.0163273444729182,
+          "distance_pct": 1.632734447291817
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 3,
+      "n": 5,
+      "value": 253,
+      "recursion_depth": 42438,
+      "analysis": {
+        "value": 253,
+        "nearest_fibonacci": {
+          "index": 13,
+          "value": 233,
+          "ratio": 1.0858369098712446,
+          "distance_pct": 8.58369098712446
+        },
+        "phi_power": {
+          "exponent": 11,
+          "phi_to_power": 199.0050249987407,
+          "ratio": 1.2713246813822965,
+          "distance_pct": 27.132468138229648
+        },
+        "valid": true
+      }
+    },
+    {
+      "m": 4,
+      "n": 0,
+      "value": 13,
+      "recursion_depth": 107,
+      "analysis": {
+        "value": 13,
+        "nearest_fibonacci": {
+          "index": 7,
+          "value": 13,
+          "ratio": 1.0,
+          "distance_pct": 0.0
+        },
+        "phi_power": {
+          "exponent": 5,
+          "phi_to_power": 11.090169943749476,
+          "ratio": 1.172209268743165,
+          "distance_pct": 17.22092687431649
+        },
+        "valid": true
+      }
+    }
+  ],
+  "phi_statistics": {
+    "average_distance_pct": 12.936065539406336,
+    "within_20_pct": 22,
+    "total_values": 25,
+    "clustering_ratio": 0.88
+  },
+  "fibonacci_statistics": {
+    "average_distance_pct": 7.211108963128655,
+    "within_20_pct": 25,
+    "total_values": 25,
+    "clustering_ratio": 1.0
+  },
+  "conclusion": {
+    "phi_clustering_detected": true,
+    "fibonacci_clustering_detected": true,
+    "supports_hypothesis": true,
+    "notes": "Ackermann outputs show structure relative to \u03c6/Fibonacci, not random distribution"
+  }
+}

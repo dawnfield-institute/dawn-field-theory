@@ -1,0 +1,3188 @@
+{
+  "timestamp": "2026-02-04T12:58:57.568545",
+  "experiment": "exp_02b_relational_collapse",
+  "hypothesis": "MED bounds emerge from relational tension limits, not individual depletion",
+  "model": "Hammer-and-Glass: collapse creates structure through relational bifurcation",
+  "fibonacci_trials": [
+    {
+      "n": 3,
+      "nodes": 5,
+      "max_depth": 2,
+      "collapse_events": 0,
+      "final_value": 0.0,
+      "expected_value": 2.0,
+      "pac_error": "inf",
+      "history": []
+    },
+    {
+      "n": 5,
+      "nodes": 15,
+      "max_depth": 4,
+      "collapse_events": 4,
+      "final_value": 5.0,
+      "expected_value": 5.0,
+      "pac_error": 0.0,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 0.18033988749894814,
+          "edges_remaining": 8
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 0.4164078649987377,
+          "edges_remaining": 4
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 7,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 2,
+          "total_tension_before": 0.4164078649987377,
+          "edges_remaining": 2
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 11,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 3,
+          "total_tension_before": 0.4164078649987377,
+          "edges_remaining": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "nodes": 67,
+      "max_depth": 7,
+      "collapse_events": 17,
+      "final_value": 21.0,
+      "expected_value": 21.0,
+      "pac_error": 0.0,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 21.0,
+          "children_values": [
+            12.978713763747791,
+            8.021286236252209
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 0.04257247250441765,
+          "edges_remaining": 60
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 0.15402865250610098,
+          "edges_remaining": 54
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 4,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 2,
+          "total_tension_before": 0.44582472000673246,
+          "edges_remaining": 48
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 6,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 3,
+          "total_tension_before": 0.44582472000673246,
+          "edges_remaining": 46
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 13,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 4,
+          "total_tension_before": 0.681892697506522,
+          "edges_remaining": 42
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 19,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 5,
+          "total_tension_before": 0.9179606750063116,
+          "edges_remaining": 38
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 24,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 6,
+          "total_tension_before": 0.9179606750063116,
+          "edges_remaining": 36
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 27,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 7,
+          "total_tension_before": 1.0983005625052598,
+          "edges_remaining": 30
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 29,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 8,
+          "total_tension_before": 1.3343685400050493,
+          "edges_remaining": 26
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 34,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 9,
+          "total_tension_before": 1.3343685400050493,
+          "edges_remaining": 24
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 38,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 10,
+          "total_tension_before": 1.3343685400050493,
+          "edges_remaining": 22
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 43,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 11,
+          "total_tension_before": 1.5147084275039975,
+          "edges_remaining": 16
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 45,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 12,
+          "total_tension_before": 1.750776405003787,
+          "edges_remaining": 12
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 50,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 13,
+          "total_tension_before": 1.750776405003787,
+          "edges_remaining": 10
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 54,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 14,
+          "total_tension_before": 1.750776405003787,
+          "edges_remaining": 8
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 58,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 15,
+          "total_tension_before": 2.0425724725044185,
+          "edges_remaining": 2
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 60,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 16,
+          "total_tension_before": 2.0425724725044185,
+          "edges_remaining": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "nodes": 177,
+      "max_depth": 9,
+      "collapse_events": 44,
+      "final_value": 55.0,
+      "expected_value": 55.0,
+      "pac_error": 0.0,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 55.0,
+          "children_values": [
+            33.991869381244214,
+            21.008130618755786
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 0.01626123751157138,
+          "edges_remaining": 170
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 2,
+          "parent_value": 21.0,
+          "children_values": [
+            12.978713763747791,
+            8.021286236252209
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 0.05883371001598903,
+          "edges_remaining": 164
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 4,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 2,
+          "total_tension_before": 0.17028989001767236,
+          "edges_remaining": 158
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 6,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 3,
+          "total_tension_before": 0.46208595751830384,
+          "edges_remaining": 152
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 8,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 4,
+          "total_tension_before": 0.46208595751830384,
+          "edges_remaining": 150
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 15,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 5,
+          "total_tension_before": 0.6981539350180934,
+          "edges_remaining": 146
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 21,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 6,
+          "total_tension_before": 0.934221912517883,
+          "edges_remaining": 142
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 26,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 7,
+          "total_tension_before": 0.934221912517883,
+          "edges_remaining": 140
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 29,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 8,
+          "total_tension_before": 1.1145618000168311,
+          "edges_remaining": 134
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 31,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 9,
+          "total_tension_before": 1.3506297775166207,
+          "edges_remaining": 130
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 36,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 10,
+          "total_tension_before": 1.3506297775166207,
+          "edges_remaining": 128
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 40,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 11,
+          "total_tension_before": 1.3506297775166207,
+          "edges_remaining": 126
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 45,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 12,
+          "total_tension_before": 1.5309696650155689,
+          "edges_remaining": 120
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 47,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 13,
+          "total_tension_before": 1.7670376425153584,
+          "edges_remaining": 116
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 52,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 14,
+          "total_tension_before": 1.7670376425153584,
+          "edges_remaining": 114
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 56,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 15,
+          "total_tension_before": 1.7670376425153584,
+          "edges_remaining": 112
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 60,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 16,
+          "total_tension_before": 2.05883371001599,
+          "edges_remaining": 106
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 62,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 17,
+          "total_tension_before": 2.05883371001599,
+          "edges_remaining": 104
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 69,
+          "children_actualized": 2,
+          "parent_value": 13.0,
+          "children_values": [
+            8.034441853748632,
+            4.965558146251368
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 18,
+          "total_tension_before": 2.127717417513254,
+          "edges_remaining": 98
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 71,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 19,
+          "total_tension_before": 2.308057305012202,
+          "edges_remaining": 92
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 73,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 20,
+          "total_tension_before": 2.5441252825119913,
+          "edges_remaining": 88
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 78,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 21,
+          "total_tension_before": 2.5441252825119913,
+          "edges_remaining": 86
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 82,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 22,
+          "total_tension_before": 2.5441252825119913,
+          "edges_remaining": 84
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 86,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 23,
+          "total_tension_before": 2.835921350012623,
+          "edges_remaining": 78
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 88,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 24,
+          "total_tension_before": 2.835921350012623,
+          "edges_remaining": 76
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 96,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 25,
+          "total_tension_before": 3.1277174175132543,
+          "edges_remaining": 70
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 98,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 26,
+          "total_tension_before": 3.1277174175132543,
+          "edges_remaining": 68
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 105,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 27,
+          "total_tension_before": 3.3637853950130436,
+          "edges_remaining": 64
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 111,
+          "children_actualized": 2,
+          "parent_value": 13.0,
+          "children_values": [
+            8.034441853748632,
+            4.965558146251368
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 28,
+          "total_tension_before": 3.4326691025103075,
+          "edges_remaining": 58
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 113,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 29,
+          "total_tension_before": 3.6130089900092557,
+          "edges_remaining": 52
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 115,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 30,
+          "total_tension_before": 3.849076967509045,
+          "edges_remaining": 48
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 120,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 31,
+          "total_tension_before": 3.849076967509045,
+          "edges_remaining": 46
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 124,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 32,
+          "total_tension_before": 3.849076967509045,
+          "edges_remaining": 44
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 128,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 33,
+          "total_tension_before": 4.140873035009676,
+          "edges_remaining": 38
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 130,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 34,
+          "total_tension_before": 4.140873035009676,
+          "edges_remaining": 36
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 138,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 35,
+          "total_tension_before": 4.432669102510307,
+          "edges_remaining": 30
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 140,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 36,
+          "total_tension_before": 4.432669102510307,
+          "edges_remaining": 28
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 147,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 37,
+          "total_tension_before": 4.6687370800100965,
+          "edges_remaining": 24
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 152,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 38,
+          "total_tension_before": 4.78019326001178,
+          "edges_remaining": 18
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 154,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 39,
+          "total_tension_before": 5.071989327512411,
+          "edges_remaining": 12
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 156,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 40,
+          "total_tension_before": 5.071989327512411,
+          "edges_remaining": 10
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 163,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 41,
+          "total_tension_before": 5.308057305012201,
+          "edges_remaining": 6
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 169,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 42,
+          "total_tension_before": 5.544125282511991,
+          "edges_remaining": 2
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 174,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 43,
+          "total_tension_before": 5.544125282511991,
+          "edges_remaining": 0
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "nodes": 753,
+      "max_depth": 12,
+      "collapse_events": 100,
+      "final_value": 233.0,
+      "expected_value": 233.0,
+      "pac_error": 0.0,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 233.0,
+          "children_values": [
+            144.0019193787255,
+            88.99808062127451
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 0.0038387574509783917,
+          "edges_remaining": 746
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 2,
+          "parent_value": 89.0,
+          "children_values": [
+            55.00502499874064,
+            33.99497500125936
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 0.013888754932253278,
+          "edges_remaining": 740
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 4,
+          "children_actualized": 2,
+          "parent_value": 34.0,
+          "children_values": [
+            21.013155617496423,
+            12.986844382503577
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 2,
+          "total_tension_before": 0.040199989925099544,
+          "edges_remaining": 734
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 6,
+          "children_actualized": 2,
+          "parent_value": 13.0,
+          "children_values": [
+            8.034441853748632,
+            4.965558146251368
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 3,
+          "total_tension_before": 0.10908369742236346,
+          "edges_remaining": 728
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 8,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 4,
+          "total_tension_before": 0.2894235849213116,
+          "edges_remaining": 722
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 10,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 5,
+          "total_tension_before": 0.5254915624211012,
+          "edges_remaining": 718
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 15,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 6,
+          "total_tension_before": 0.5254915624211012,
+          "edges_remaining": 716
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 19,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 7,
+          "total_tension_before": 0.5254915624211012,
+          "edges_remaining": 714
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 23,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 8,
+          "total_tension_before": 0.8172876299217327,
+          "edges_remaining": 708
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 25,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 9,
+          "total_tension_before": 0.8172876299217327,
+          "edges_remaining": 706
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 33,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 10,
+          "total_tension_before": 1.1090836974223641,
+          "edges_remaining": 700
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 35,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 11,
+          "total_tension_before": 1.1090836974223641,
+          "edges_remaining": 698
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 42,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 12,
+          "total_tension_before": 1.3451516749221537,
+          "edges_remaining": 694
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 47,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 13,
+          "total_tension_before": 1.456607854923837,
+          "edges_remaining": 688
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 49,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 14,
+          "total_tension_before": 1.7484039224244685,
+          "edges_remaining": 682
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 51,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 15,
+          "total_tension_before": 1.7484039224244685,
+          "edges_remaining": 680
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 58,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 16,
+          "total_tension_before": 1.984471899924258,
+          "edges_remaining": 676
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 64,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 17,
+          "total_tension_before": 2.2205398774240477,
+          "edges_remaining": 672
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 69,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 18,
+          "total_tension_before": 2.2205398774240477,
+          "edges_remaining": 670
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 73,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 19,
+          "total_tension_before": 2.331996057425731,
+          "edges_remaining": 664
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 75,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 20,
+          "total_tension_before": 2.6237921249263625,
+          "edges_remaining": 658
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 77,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 21,
+          "total_tension_before": 2.6237921249263625,
+          "edges_remaining": 656
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 84,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 22,
+          "total_tension_before": 2.8598601024261523,
+          "edges_remaining": 652
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 90,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 23,
+          "total_tension_before": 3.095928079925942,
+          "edges_remaining": 648
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 95,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 24,
+          "total_tension_before": 3.095928079925942,
+          "edges_remaining": 646
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 98,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 25,
+          "total_tension_before": 3.2762679674248902,
+          "edges_remaining": 640
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 100,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 26,
+          "total_tension_before": 3.5123359449246796,
+          "edges_remaining": 636
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 105,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 27,
+          "total_tension_before": 3.5123359449246796,
+          "edges_remaining": 634
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 109,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 28,
+          "total_tension_before": 3.5123359449246796,
+          "edges_remaining": 632
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 113,
+          "children_actualized": 2,
+          "parent_value": 21.0,
+          "children_values": [
+            12.978713763747791,
+            8.021286236252209
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 29,
+          "total_tension_before": 3.5549084174290972,
+          "edges_remaining": 626
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 115,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 30,
+          "total_tension_before": 3.6663645974307806,
+          "edges_remaining": 620
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 117,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 31,
+          "total_tension_before": 3.958160664931412,
+          "edges_remaining": 614
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 119,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 32,
+          "total_tension_before": 3.958160664931412,
+          "edges_remaining": 612
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 126,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 33,
+          "total_tension_before": 4.194228642431201,
+          "edges_remaining": 608
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 132,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 34,
+          "total_tension_before": 4.430296619930991,
+          "edges_remaining": 604
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 137,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 35,
+          "total_tension_before": 4.430296619930991,
+          "edges_remaining": 602
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 140,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 36,
+          "total_tension_before": 4.610636507429939,
+          "edges_remaining": 596
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 142,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 37,
+          "total_tension_before": 4.846704484929729,
+          "edges_remaining": 592
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 147,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 38,
+          "total_tension_before": 4.846704484929729,
+          "edges_remaining": 590
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 151,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 39,
+          "total_tension_before": 4.846704484929729,
+          "edges_remaining": 588
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 156,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 40,
+          "total_tension_before": 5.027044372428678,
+          "edges_remaining": 582
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 158,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 41,
+          "total_tension_before": 5.263112349928468,
+          "edges_remaining": 578
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 163,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 42,
+          "total_tension_before": 5.263112349928468,
+          "edges_remaining": 576
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 167,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 43,
+          "total_tension_before": 5.263112349928468,
+          "edges_remaining": 574
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 171,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 44,
+          "total_tension_before": 5.554908417429099,
+          "edges_remaining": 568
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 173,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 45,
+          "total_tension_before": 5.554908417429099,
+          "edges_remaining": 566
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 181,
+          "children_actualized": 2,
+          "parent_value": 21.0,
+          "children_values": [
+            12.978713763747791,
+            8.021286236252209
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 46,
+          "total_tension_before": 5.597480889933516,
+          "edges_remaining": 560
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 183,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 47,
+          "total_tension_before": 5.7089370699352,
+          "edges_remaining": 554
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 185,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 48,
+          "total_tension_before": 6.000733137435831,
+          "edges_remaining": 548
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 187,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 49,
+          "total_tension_before": 6.000733137435831,
+          "edges_remaining": 546
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 194,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 50,
+          "total_tension_before": 6.236801114935621,
+          "edges_remaining": 542
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 200,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 51,
+          "total_tension_before": 6.472869092435411,
+          "edges_remaining": 538
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 205,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 52,
+          "total_tension_before": 6.472869092435411,
+          "edges_remaining": 536
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 208,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 53,
+          "total_tension_before": 6.653208979934359,
+          "edges_remaining": 530
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 210,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 54,
+          "total_tension_before": 6.889276957434149,
+          "edges_remaining": 526
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 215,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 55,
+          "total_tension_before": 6.889276957434149,
+          "edges_remaining": 524
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 219,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 56,
+          "total_tension_before": 6.889276957434149,
+          "edges_remaining": 522
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 224,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 57,
+          "total_tension_before": 7.069616844933098,
+          "edges_remaining": 516
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 226,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 58,
+          "total_tension_before": 7.305684822432887,
+          "edges_remaining": 512
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 231,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 59,
+          "total_tension_before": 7.305684822432887,
+          "edges_remaining": 510
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 235,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 60,
+          "total_tension_before": 7.305684822432887,
+          "edges_remaining": 508
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 239,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 61,
+          "total_tension_before": 7.597480889933518,
+          "edges_remaining": 502
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 241,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 62,
+          "total_tension_before": 7.597480889933518,
+          "edges_remaining": 500
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 248,
+          "children_actualized": 2,
+          "parent_value": 13.0,
+          "children_values": [
+            8.034441853748632,
+            4.965558146251368
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 63,
+          "total_tension_before": 7.666364597430782,
+          "edges_remaining": 494
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 250,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 64,
+          "total_tension_before": 7.846704484929731,
+          "edges_remaining": 488
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 252,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 65,
+          "total_tension_before": 8.08277246242952,
+          "edges_remaining": 484
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 257,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 66,
+          "total_tension_before": 8.08277246242952,
+          "edges_remaining": 482
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 261,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 67,
+          "total_tension_before": 8.08277246242952,
+          "edges_remaining": 480
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 265,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 68,
+          "total_tension_before": 8.374568529930151,
+          "edges_remaining": 474
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 267,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 69,
+          "total_tension_before": 8.374568529930151,
+          "edges_remaining": 472
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 275,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 70,
+          "total_tension_before": 8.666364597430782,
+          "edges_remaining": 466
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 277,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 71,
+          "total_tension_before": 8.666364597430782,
+          "edges_remaining": 464
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 284,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 72,
+          "total_tension_before": 8.902432574930572,
+          "edges_remaining": 460
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 289,
+          "children_actualized": 2,
+          "parent_value": 55.0,
+          "children_values": [
+            33.991869381244214,
+            21.008130618755786
+          ],
+          "pac_error": 0.0,
+          "depth": 2,
+          "phi_ratio_used": true,
+          "step": 73,
+          "total_tension_before": 8.918693812442143,
+          "edges_remaining": 454
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 291,
+          "children_actualized": 2,
+          "parent_value": 21.0,
+          "children_values": [
+            12.978713763747791,
+            8.021286236252209
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 74,
+          "total_tension_before": 8.96126628494656,
+          "edges_remaining": 448
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 293,
+          "children_actualized": 2,
+          "parent_value": 8.0,
+          "children_values": [
+            4.944271909999158,
+            3.0557280900008417
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 75,
+          "total_tension_before": 9.072722464948242,
+          "edges_remaining": 442
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 295,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 76,
+          "total_tension_before": 9.364518532448873,
+          "edges_remaining": 436
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 297,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 10,
+          "phi_ratio_used": true,
+          "step": 77,
+          "total_tension_before": 9.364518532448873,
+          "edges_remaining": 434
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 304,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 78,
+          "total_tension_before": 9.600586509948663,
+          "edges_remaining": 430
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 310,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 79,
+          "total_tension_before": 9.836654487448452,
+          "edges_remaining": 426
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 315,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 80,
+          "total_tension_before": 9.836654487448452,
+          "edges_remaining": 424
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 318,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 81,
+          "total_tension_before": 10.016994374947402,
+          "edges_remaining": 418
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 320,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 82,
+          "total_tension_before": 10.253062352447191,
+          "edges_remaining": 414
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 325,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 83,
+          "total_tension_before": 10.253062352447191,
+          "edges_remaining": 412
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 329,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 84,
+          "total_tension_before": 10.253062352447191,
+          "edges_remaining": 410
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 334,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 85,
+          "total_tension_before": 10.43340223994614,
+          "edges_remaining": 404
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 336,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 86,
+          "total_tension_before": 10.66947021744593,
+          "edges_remaining": 400
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 341,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 87,
+          "total_tension_before": 10.66947021744593,
+          "edges_remaining": 398
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 345,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 88,
+          "total_tension_before": 10.66947021744593,
+          "edges_remaining": 396
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 349,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 89,
+          "total_tension_before": 10.96126628494656,
+          "edges_remaining": 390
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 351,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 90,
+          "total_tension_before": 10.96126628494656,
+          "edges_remaining": 388
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 358,
+          "children_actualized": 2,
+          "parent_value": 13.0,
+          "children_values": [
+            8.034441853748632,
+            4.965558146251368
+          ],
+          "pac_error": 0.0,
+          "depth": 4,
+          "phi_ratio_used": true,
+          "step": 91,
+          "total_tension_before": 11.030149992443825,
+          "edges_remaining": 382
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 360,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 92,
+          "total_tension_before": 11.210489879942774,
+          "edges_remaining": 376
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 362,
+          "children_actualized": 2,
+          "parent_value": 2.0,
+          "children_values": [
+            1.2360679774997896,
+            0.7639320225002104
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 93,
+          "total_tension_before": 11.446557857442563,
+          "edges_remaining": 372
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 367,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 94,
+          "total_tension_before": 11.446557857442563,
+          "edges_remaining": 370
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 371,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 95,
+          "total_tension_before": 11.446557857442563,
+          "edges_remaining": 368
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 375,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 96,
+          "total_tension_before": 11.738353924943194,
+          "edges_remaining": 362
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 377,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 97,
+          "total_tension_before": 11.738353924943194,
+          "edges_remaining": 360
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 385,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 6,
+          "phi_ratio_used": true,
+          "step": 98,
+          "total_tension_before": 12.030149992443825,
+          "edges_remaining": 354
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 387,
+          "children_actualized": 2,
+          "parent_value": 1.0,
+          "children_values": [
+            0.6180339887498948,
+            0.3819660112501052
+          ],
+          "pac_error": 0.0,
+          "depth": 8,
+          "phi_ratio_used": true,
+          "step": 99,
+          "total_tension_before": 12.030149992443825,
+          "edges_remaining": 352
+        }
+      ]
+    }
+  ],
+  "ackermann_trials": [
+    {
+      "m": 1,
+      "n": 1,
+      "nodes": 4,
+      "max_depth": 1,
+      "collapse_events": 1,
+      "converged": false,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 0.14589803375031574,
+          "edges_remaining": 0
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "n": 1,
+      "nodes": 10,
+      "max_depth": 1,
+      "collapse_events": 3,
+      "converged": false,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 4.0,
+          "children_values": [
+            2.472135954999579,
+            1.5278640450004208
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 4.0,
+          "edges_remaining": 4
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 3.1458980337503157,
+          "edges_remaining": 1
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 7,
+          "children_actualized": 1,
+          "parent_value": 2.0,
+          "children_values": [
+            2.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 2,
+          "total_tension_before": 3.1458980337503157,
+          "edges_remaining": 0
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "nodes": 15,
+      "max_depth": 1,
+      "collapse_events": 5,
+      "converged": false,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 7.0,
+          "edges_remaining": 8
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 3,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 6.145898033750315,
+          "edges_remaining": 4
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 7,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 2,
+          "total_tension_before": 5.2917960675006315,
+          "edges_remaining": 1
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 1,
+          "parent_value": 3.0,
+          "children_values": [
+            3.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 3,
+          "total_tension_before": 5.2917960675006315,
+          "edges_remaining": 1
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 12,
+          "children_actualized": 1,
+          "parent_value": 2.0,
+          "children_values": [
+            2.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 4,
+          "total_tension_before": 5.2917960675006315,
+          "edges_remaining": 0
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "n": 1,
+      "nodes": 21,
+      "max_depth": 1,
+      "collapse_events": 7,
+      "converged": false,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 5.0,
+          "children_values": [
+            3.090169943749474,
+            1.909830056250526
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 11.0,
+          "edges_remaining": 15
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 2,
+          "parent_value": 4.0,
+          "children_values": [
+            2.472135954999579,
+            1.5278640450004208
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 11.0,
+          "edges_remaining": 10
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 4,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 2,
+          "total_tension_before": 10.0,
+          "edges_remaining": 8
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 13,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 3,
+          "total_tension_before": 9.145898033750315,
+          "edges_remaining": 4
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 17,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 4,
+          "total_tension_before": 8.29179606750063,
+          "edges_remaining": 1
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 8,
+          "children_actualized": 1,
+          "parent_value": 2.0,
+          "children_values": [
+            2.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 5,
+          "total_tension_before": 8.29179606750063,
+          "edges_remaining": 0
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 12,
+          "children_actualized": 1,
+          "parent_value": 3.0,
+          "children_values": [
+            3.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 6,
+          "total_tension_before": 8.29179606750063,
+          "edges_remaining": 0
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "n": 2,
+      "nodes": 28,
+      "max_depth": 1,
+      "collapse_events": 9,
+      "converged": false,
+      "history": [
+        {
+          "type": "relational_collapse",
+          "node_id": 0,
+          "children_actualized": 2,
+          "parent_value": 6.0,
+          "children_values": [
+            3.7082039324993685,
+            2.2917960675006315
+          ],
+          "pac_error": 0.0,
+          "depth": 0,
+          "phi_ratio_used": true,
+          "step": 0,
+          "total_tension_before": 17.0,
+          "edges_remaining": 21
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 3,
+          "children_actualized": 2,
+          "parent_value": 4.0,
+          "children_values": [
+            2.472135954999579,
+            1.5278640450004208
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 1,
+          "total_tension_before": 17.0,
+          "edges_remaining": 15
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 9,
+          "children_actualized": 2,
+          "parent_value": 4.0,
+          "children_values": [
+            2.472135954999579,
+            1.5278640450004208
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 2,
+          "total_tension_before": 17.0,
+          "edges_remaining": 10
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 11,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 3,
+          "total_tension_before": 16.0,
+          "edges_remaining": 8
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 20,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 4,
+          "total_tension_before": 15.145898033750315,
+          "edges_remaining": 4
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 24,
+          "children_actualized": 2,
+          "parent_value": 3.0,
+          "children_values": [
+            1.8541019662496843,
+            1.1458980337503157
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": true,
+          "step": 5,
+          "total_tension_before": 14.29179606750063,
+          "edges_remaining": 1
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 2,
+          "children_actualized": 1,
+          "parent_value": 4.0,
+          "children_values": [
+            4.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 6,
+          "total_tension_before": 14.29179606750063,
+          "edges_remaining": 1
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 15,
+          "children_actualized": 1,
+          "parent_value": 2.0,
+          "children_values": [
+            2.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 7,
+          "total_tension_before": 14.29179606750063,
+          "edges_remaining": 0
+        },
+        {
+          "type": "relational_collapse",
+          "node_id": 19,
+          "children_actualized": 1,
+          "parent_value": 3.0,
+          "children_values": [
+            3.0
+          ],
+          "pac_error": 0.0,
+          "depth": 1,
+          "phi_ratio_used": false,
+          "step": 8,
+          "total_tension_before": 14.29179606750063,
+          "edges_remaining": 0
+        }
+      ]
+    }
+  ],
+  "med_analysis": {
+    "fib_initial_depths": [
+      2,
+      4,
+      7,
+      9,
+      12
+    ],
+    "fib_final_depths": [
+      2,
+      2,
+      6,
+      8,
+      10
+    ],
+    "ack_initial_depths": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "ack_final_depths": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "fib_med_compliant": 2,
+    "ack_med_compliant": 5,
+    "total_med_compliant": 7,
+    "total_trials": 10,
+    "phi_collapse_ratio": 1.0
+  },
+  "conclusion": {
+    "model": "relational_tension",
+    "key_finding": "Collapse is driven by edge tension, not node depletion",
+    "pac_conserved": true,
+    "phi_emergence": true,
+    "insight": "Partial recursion = sustained tension; actualization = collapse into structure"
+  }
+}
