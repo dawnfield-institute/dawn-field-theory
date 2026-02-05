@@ -1,0 +1,85 @@
+{
+  "f1_mertens": {
+    "ratios": [
+      0.9868594532129483,
+      0.9918603432020675,
+      0.9961328337540577,
+      0.9984072175879964,
+      0.9987697373973717,
+      0.9996235991214689,
+      0.9996958388747003,
+      0.9998833015984515,
+      0.9999610624019313
+    ],
+    "scales": [
+      100,
+      500,
+      1000,
+      5000,
+      10000,
+      50000,
+      100000,
+      500000,
+      1000000
+    ],
+    "mean_ratio": 0.9967992652389993,
+    "std_ratio": 0.004294446782124014,
+    "failures": [
+      [
+        100,
+        0.9868594532129483
+      ]
+    ],
+    "falsified": true
+  },
+  "f2_gamma": {
+    "tests": {
+      "gap_ratio": 0.9055366579640179,
+      "twin_constant": 0.6601702017083263,
+      "twin_ratio_to_e_gamma": 1.1758109374417256,
+      "gap_reciprocal_sum": 1641.1710135942938,
+      "ratio_to_harmonic": 178.9994672284284
+    },
+    "falsified": false,
+    "note": "\u03b3 universality not falsified but needs stronger tests"
+  },
+  "f3_xi_nested": {
+    "exp_pi_55": 1.0587827152925986,
+    "gamma_ln_phi": 1.0584274899611363,
+    "error": 0.0003552253314622611,
+    "relative_error": 0.0003356161237604518,
+    "taylor_analysis": {
+      "order_1": 1.0571198664289054,
+      "order_2": 1.0587512059993334,
+      "order_3": 1.058782266632121,
+      "order_4": 1.05878271017692
+    },
+    "falsified_exact": true,
+    "validated_approximate": true,
+    "unexplained_residual": 0.0003552253314622611
+  },
+  "f4_zero_interface": {
+    "spacing_ratio": 1.9542174065579578,
+    "spacing_ratio_times_e_gamma": 3.480602721576716,
+    "frac_below_1": 0.5656565656565656,
+    "ratio_below_above": 1.3023255813953487,
+    "gue_violated": false,
+    "spacing_distribution": {
+      "very_small": 0.0,
+      "somewhat_small": 0.1717171717171717,
+      "medium": 0.6565656565656566,
+      "large": 0.1717171717171717
+    }
+  },
+  "f5_cross_domain": {
+    "domains_checked": [
+      "prime_statistics",
+      "turbulence",
+      "particle_physics",
+      "pac_dynamics"
+    ],
+    "consistency": "no_clear_inconsistency",
+    "note": "More precision measurements needed"
+  },
+  "timestamp": "2026-02-05T16:46:01.098543"
+}
