@@ -5,7 +5,7 @@
 
 ---
 
-## NEW DISCOVERIES (Exp 11-13)
+## NEW DISCOVERIES (Exp 11-19)
 
 ### E-Ω Bridge: INVERSION RESOLVED
 
@@ -25,22 +25,36 @@
 - **Our view**: Crystallization creates DEEP structure (many factors)
 - **Both correct**: Discharged entropy = Accumulated structure
 
-### φ at Exact Transition: f(Ω=4)/f(Ω=5) = 1/φ
+### CORRECTED: Inverse Fibonacci Constraint (exp_15-19)
 
-**Discovery (exp_13)**: The cleanest φ signature yet found:
+**Initial Claim (exp_13)**: f(5)/f(4) = 1/φ with error 0.07%  
+**FALSIFIED (exp_14-16)**: The φ crossing at N≈500k was COINCIDENTAL.
+
+**The REAL Discovery (exp_17-19)**: Inverse Fibonacci at k=4
 
 ```
-f(Ω=4)/f(Ω=5) = 0.6188
-1/φ = 0.6180
-Error = 0.0007 (< 0.12%)
+f(4) = f(5) + f(6)   [error: 0.46% at N=2M]
+
+This implies: r(4) × (1 + r(5)) = 1
+where r(k) = f(k+1)/f(k)
 ```
 
-**Interpretation**: φ governs the transition from **shallow** (Ω ≤ 4) to **deep** (Ω ≥ 5) crystallization.
+**Falsification v2 Results (exp_19)**: 6/6 tests passed
+- Bootstrap 95% CI: [0.935, 1.054] contains 1.0 ✓
+- Scale sensitivity: error 8.7% → 0.5% → 1.9% ✓  
+- Prediction: r(4) predictable from r(5) within 1.84% ✓
 
-Why k=4 exactly?
-- Ω=2-4: Simple composites (products of few small primes)
-- Ω≥5: Complex composites (products of many primes or powers)
-- k=4 marks the "surface" → "bulk" transition
+**Why k=4?**
+- Distribution peaks at k=3 (mode)
+- k=4 is where descent begins (inflection point)
+- Inverse Fibonacci holds ONLY at k=4, not globally
+- This couples r(4) and r(5), but doesn't imply r = 1/φ
+
+**Key Correction**: φ does NOT govern the ratio directly. The constraint is:
+```
+r(4) = 1/(1 + r(5))
+```
+At N=5M: r(4)×(1+r(5)) = 1.019 ≈ 1 ✓
 
 ### Even-Odd Oscillation Structure
 
@@ -104,6 +118,8 @@ frac > 1/φ              frac = 1/φ exactly         frac < 1/φ
 **Bridge**: If primes inject structure and composites crystallize, the balance point (criticality) is where φ emerges. This is the "growth rate" - the natural tempo of structure formation.
 
 **Parameter**: λ* = 0.9816 is the critical decay rate - how fast the system "forgets" vs "accumulates."
+
+**Update (exp_18-19)**: The φ crossing in our experiment was at N≈500k (specific scale), not universal. The SEC manifold φ at criticality may be a different phenomenon - criticality-specific vs scale-dependent.
 
 ---
 

@@ -1,0 +1,8 @@
+{
+  "F1_null_model": true,
+  "F2_bootstrap_ci": true,
+  "F3_scale_sensitivity": true,
+  "F4_alternative_models": true,
+  "F5_prediction": true,
+  "F6_exactness": true
+}
