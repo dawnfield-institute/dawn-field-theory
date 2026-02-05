@@ -1,0 +1,12 @@
+schema_version: "2.0"
+description: "Numbered experiment scripts following exp_NN_name.py convention"
+semantic_scope: "implementation"
+proficiency_level: "research"
+
+files:
+  - "[exp_01_pac_conservation.py]": "Test PAC conservation in factorization"
+  - "[exp_02_minimal_seed.py]": "Verify primes as minimal generating set"
+  - "[exp_03_irreducibility.py]": "Information-theoretic primality analysis"
+  - "[exp_04_local_vs_global.py]": "Test local vs global prime density influence"
+  - "[exp_05_frontier_dynamics.py]": "Analyze behavior at number line frontier"
+  - "[exp_06_slot_analysis.py]": "Test for predictable prime slots"
