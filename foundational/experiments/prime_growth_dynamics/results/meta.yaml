@@ -1,0 +1,4 @@
+schema_version: "2.0"
+description: "JSON experiment outputs with timestamps"
+semantic_scope: "data"
+proficiency_level: "research"

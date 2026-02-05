@@ -1,0 +1,62 @@
+{
+  "experiment": "exp_01_pac_conservation",
+  "timestamp": "2026-02-05T11:02:49.146347",
+  "limit": 5000,
+  "hypothesis": "Primes are base cases, composites fully derive from them",
+  "tests": {
+    "log": {
+      "function": "log",
+      "n_composites": 4330,
+      "exact_count": 4330,
+      "max_error": 1.7763568394002505e-15,
+      "conserved": true
+    },
+    "complexity": {
+      "function": "factorization_complexity",
+      "mean_error": 0.04902845548415567,
+      "std_error": 0.09568898391538871,
+      "max_error": 0.6179197916065703,
+      "n_composites": 4330,
+      "conserved": "False"
+    },
+    "entropy": {
+      "function": "entropy",
+      "prime_entropy_mean": 0.0,
+      "composite_entropy_mean": 1.2411342270427792,
+      "composite_entropy_std": 0.37383190370810127,
+      "conserved": false,
+      "note": "Entropy measures structure, not additive quantity"
+    },
+    "omega": {
+      "function": "big_omega",
+      "n_composites": 4330,
+      "exact_count": 4330,
+      "conserved": true
+    },
+    "depth": {
+      "function": "factorization_depth",
+      "mean_depth": 3.4406466512702076,
+      "max_depth": 12,
+      "depth_distribution": {
+        "2": 1365,
+        "3": 1273,
+        "4": 832,
+        "5": 452,
+        "6": 224,
+        "7": 104,
+        "8": 47,
+        "9": 22,
+        "10": 7,
+        "11": 3,
+        "12": 1
+      },
+      "log_correlation": 0.11029792967171981,
+      "interpretation": "Primes are shallow base cases - reachable in O(log n) steps"
+    }
+  },
+  "summary": {
+    "exactly_conserved_count": 2,
+    "key_finding": "Primes are shallow base cases (depth = O(log n))",
+    "supports_hypothesis": true
+  }
+}

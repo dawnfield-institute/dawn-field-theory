@@ -1,0 +1,379 @@
+{
+  "timestamp": "2026-02-05T12:04:39.514142",
+  "parameters": {
+    "limit": 100000,
+    "max_distance": 50
+  },
+  "persistence": {
+    "distances": [
+      {
+        "distance": 1,
+        "count": 17957,
+        "mean_depth": 4.6171966364092,
+        "std_depth": 1.7367165987484199,
+        "parity": "odd"
+      },
+      {
+        "distance": 2,
+        "count": 15518,
+        "mean_depth": 3.041177986853976,
+        "std_depth": 1.0749056999274713,
+        "parity": "even"
+      },
+      {
+        "distance": 3,
+        "count": 12363,
+        "mean_depth": 3.9640863867993206,
+        "std_depth": 1.5549591447159876,
+        "parity": "odd"
+      },
+      {
+        "distance": 4,
+        "count": 9651,
+        "mean_depth": 2.9085068904776707,
+        "std_depth": 1.011550473810628,
+        "parity": "even"
+      },
+      {
+        "distance": 5,
+        "count": 7962,
+        "mean_depth": 4.433936196935443,
+        "std_depth": 1.7199973723476467,
+        "parity": "odd"
+      },
+      {
+        "distance": 6,
+        "count": 6081,
+        "mean_depth": 2.464397303075152,
+        "std_depth": 0.6740663640747371,
+        "parity": "even"
+      },
+      {
+        "distance": 7,
+        "count": 4632,
+        "mean_depth": 4.53087219343696,
+        "std_depth": 1.757949847106082,
+        "parity": "odd"
+      },
+      {
+        "distance": 8,
+        "count": 3809,
+        "mean_depth": 2.9188763454975057,
+        "std_depth": 1.0080991335773553,
+        "parity": "even"
+      },
+      {
+        "distance": 9,
+        "count": 2956,
+        "mean_depth": 3.956021650879567,
+        "std_depth": 1.5524973402261446,
+        "parity": "odd"
+      },
+      {
+        "distance": 10,
+        "count": 2204,
+        "mean_depth": 2.6565335753176043,
+        "std_depth": 0.8766388365813687,
+        "parity": "even"
+      },
+      {
+        "distance": 11,
+        "count": 1743,
+        "mean_depth": 4.747561675272519,
+        "std_depth": 1.7876549393111567,
+        "parity": "odd"
+      },
+      {
+        "distance": 12,
+        "count": 1314,
+        "mean_depth": 2.423896499238965,
+        "std_depth": 0.6582360338479075,
+        "parity": "even"
+      },
+      {
+        "distance": 13,
+        "count": 1020,
+        "mean_depth": 4.529411764705882,
+        "std_depth": 1.8191322239309835,
+        "parity": "odd"
+      },
+      {
+        "distance": 14,
+        "count": 834,
+        "mean_depth": 2.894484412470024,
+        "std_depth": 1.0490461157918929,
+        "parity": "even"
+      },
+      {
+        "distance": 15,
+        "count": 590,
+        "mean_depth": 3.6796610169491526,
+        "std_depth": 1.431192607157871,
+        "parity": "odd"
+      },
+      {
+        "distance": 16,
+        "count": 412,
+        "mean_depth": 2.808252427184466,
+        "std_depth": 1.0058852872294406,
+        "parity": "even"
+      },
+      {
+        "distance": 17,
+        "count": 347,
+        "mean_depth": 4.824207492795389,
+        "std_depth": 1.9130496921022115,
+        "parity": "odd"
+      },
+      {
+        "distance": 18,
+        "count": 260,
+        "mean_depth": 2.4346153846153844,
+        "std_depth": 0.6860115309612664,
+        "parity": "even"
+      },
+      {
+        "distance": 19,
+        "count": 187,
+        "mean_depth": 4.518716577540107,
+        "std_depth": 1.656989905905312,
+        "parity": "odd"
+      },
+      {
+        "distance": 20,
+        "count": 140,
+        "mean_depth": 2.7357142857142858,
+        "std_depth": 0.8189369691903525,
+        "parity": "even"
+      },
+      {
+        "distance": 21,
+        "count": 93,
+        "mean_depth": 3.870967741935484,
+        "std_depth": 1.5758076359346167,
+        "parity": "odd"
+      },
+      {
+        "distance": 22,
+        "count": 69,
+        "mean_depth": 2.7971014492753623,
+        "std_depth": 0.8502544626883167,
+        "parity": "even"
+      },
+      {
+        "distance": 23,
+        "count": 60,
+        "mean_depth": 5.083333333333333,
+        "std_depth": 1.8621262374752645,
+        "parity": "odd"
+      },
+      {
+        "distance": 24,
+        "count": 53,
+        "mean_depth": 2.358490566037736,
+        "std_depth": 0.5579612484008017,
+        "parity": "even"
+      },
+      {
+        "distance": 25,
+        "count": 45,
+        "mean_depth": 3.9555555555555557,
+        "std_depth": 1.4452988925785866,
+        "parity": "odd"
+      },
+      {
+        "distance": 26,
+        "count": 33,
+        "mean_depth": 3.1818181818181817,
+        "std_depth": 0.8461141122266493,
+        "parity": "even"
+      },
+      {
+        "distance": 27,
+        "count": 22,
+        "mean_depth": 4.090909090909091,
+        "std_depth": 1.508991808147505,
+        "parity": "odd"
+      },
+      {
+        "distance": 28,
+        "count": 17,
+        "mean_depth": 2.5294117647058822,
+        "std_depth": 0.7174300539794393,
+        "parity": "even"
+      },
+      {
+        "distance": 29,
+        "count": 12,
+        "mean_depth": 4.833333333333333,
+        "std_depth": 1.8504708655481243,
+        "parity": "odd"
+      }
+    ],
+    "range_analysis": [
+      {
+        "range": "1-10",
+        "even_mean": 2.797898420244382,
+        "odd_mean": 4.300422612892098,
+        "amplitude": 1.5025241926477162,
+        "persists": true
+      },
+      {
+        "range": "11-20",
+        "even_mean": 2.6593926018446252,
+        "odd_mean": 4.45991170545261,
+        "amplitude": 1.8005191036079848,
+        "persists": true
+      },
+      {
+        "range": "21-30",
+        "even_mean": 2.7167054904592907,
+        "odd_mean": 4.366819811013359,
+        "amplitude": 1.6501143205540685,
+        "persists": true
+      }
+    ],
+    "pattern_match_rate": 1.0,
+    "spectrum": {
+      "1": 0.05215706395125356,
+      "2": 0.04691634574084484,
+      "3": 0.056414870552110856,
+      "4": 0.053963748795240456,
+      "5": 0.10653392991054972,
+      "6": 0.007752488445736031,
+      "7": 0.06454932482985154,
+      "8": 0.109466993497818,
+      "9": 0.19601673130093816,
+      "10": 0.08212060035561121
+    },
+    "freq2_dominant": false
+  },
+  "constellations": {
+    "constellation_counts": {
+      "twin+sexy+triple": 347,
+      "twin+cousin+sexy": 55,
+      "twin+cousin+sexy+triple": 160,
+      "cousin+sexy": 928,
+      "twin+sexy": 391,
+      "sexy": 2485,
+      "twin+cousin": 292,
+      "cousin": 995,
+      "twin": 1201,
+      "isolated": 2742
+    },
+    "depth_by_constellation": [
+      {
+        "constellation": "twin+cousin",
+        "count": 876,
+        "mean_depth": 4.461187214611872,
+        "std_depth": 1.6456628244472729
+      },
+      {
+        "constellation": "twin+cousin+sexy",
+        "count": 165,
+        "mean_depth": 4.375757575757576,
+        "std_depth": 1.4027478049481203
+      },
+      {
+        "constellation": "twin+cousin+sexy+triple",
+        "count": 480,
+        "mean_depth": 4.26875,
+        "std_depth": 1.4422286526172134
+      },
+      {
+        "constellation": "twin+sexy",
+        "count": 1564,
+        "mean_depth": 4.208439897698209,
+        "std_depth": 1.5723231206547867
+      },
+      {
+        "constellation": "twin",
+        "count": 9714,
+        "mean_depth": 3.8546427836112827,
+        "std_depth": 1.6626527749417588
+      },
+      {
+        "constellation": "twin+sexy+triple",
+        "count": 2668,
+        "mean_depth": 3.845577211394303,
+        "std_depth": 1.6431080924987758
+      },
+      {
+        "constellation": "cousin+sexy",
+        "count": 5924,
+        "mean_depth": 3.7680621201890614,
+        "std_depth": 1.5418807161021855
+      },
+      {
+        "constellation": "sexy",
+        "count": 23416,
+        "mean_depth": 3.727579432866416,
+        "std_depth": 1.6024648588476949
+      },
+      {
+        "constellation": "cousin",
+        "count": 9196,
+        "mean_depth": 3.7018268812527184,
+        "std_depth": 1.570611325459019
+      },
+      {
+        "constellation": "isolated",
+        "count": 37737,
+        "mean_depth": 3.653735061080637,
+        "std_depth": 1.6315727955025727
+      }
+    ],
+    "hypotheses": {
+      "twins_deeper": true
+    }
+  },
+  "phase_coherence": {
+    "ranges": [
+      {
+        "range": "4-25000",
+        "even_mean": 2.6507225744038054,
+        "odd_mean": 4.136959408768402,
+        "amplitude": 1.4862368343645969,
+        "phase": "odd_high"
+      },
+      {
+        "range": "25000-50000",
+        "even_mean": 2.7458740749354704,
+        "odd_mean": 4.298002766372439,
+        "amplitude": 1.5521286914369683,
+        "phase": "odd_high"
+      },
+      {
+        "range": "50000-75000",
+        "even_mean": 2.7915008574479767,
+        "odd_mean": 4.333681447208049,
+        "amplitude": 1.542180589760072,
+        "phase": "odd_high"
+      },
+      {
+        "range": "75000-100000",
+        "even_mean": 2.8216666104586743,
+        "odd_mean": 4.363916238688745,
+        "amplitude": 1.5422496282300706,
+        "phase": "odd_high"
+      }
+    ],
+    "phase_coherent": true,
+    "dominant_phase": "odd_high"
+  },
+  "theoretical": {
+    "model": {
+      "alpha": 3.5453636656789755,
+      "beta": 0.7290172154580774,
+      "residual_std": 1.4202629660760193,
+      "t_statistic": 108.72335798801075
+    },
+    "omega_correlation": {
+      "even_omega_odd": 1525,
+      "even_omega_even": 2778,
+      "odd_omega_odd": 2833,
+      "odd_omega_even": 2864,
+      "difference": 0.1428753655382713
+    }
+  }
+}

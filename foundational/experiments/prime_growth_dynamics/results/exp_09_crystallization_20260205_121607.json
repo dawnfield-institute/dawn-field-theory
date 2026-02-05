@@ -1,0 +1,336 @@
+{
+  "timestamp": "2026-02-05T12:16:07.556391",
+  "limit": 50000,
+  "omega_gradient": {
+    "omega_by_position": [
+      {
+        "position": 0.0,
+        "mean_omega": 4.323607427055703,
+        "std_omega": 1.7654504486882805,
+        "count": 2262
+      },
+      {
+        "position": 0.1,
+        "mean_omega": 3.758523866827116,
+        "std_omega": 1.6420540709268718,
+        "count": 4986
+      },
+      {
+        "position": 0.2,
+        "mean_omega": 3.5230900191530115,
+        "std_omega": 1.5100236066568995,
+        "count": 4699
+      },
+      {
+        "position": 0.3,
+        "mean_omega": 3.391696750902527,
+        "std_omega": 1.4474420591655464,
+        "count": 4986
+      },
+      {
+        "position": 0.4,
+        "mean_omega": 3.2481254260395365,
+        "std_omega": 1.5086255793643146,
+        "count": 2934
+      },
+      {
+        "position": 0.5,
+        "mean_omega": 3.8301095631002298,
+        "std_omega": 1.6350884646516002,
+        "count": 7393
+      },
+      {
+        "position": 0.6,
+        "mean_omega": 3.250300842358604,
+        "std_omega": 1.4083590933261858,
+        "count": 4986
+      },
+      {
+        "position": 0.7,
+        "mean_omega": 3.5622472866567354,
+        "std_omega": 1.5128611871603421,
+        "count": 4699
+      },
+      {
+        "position": 0.8,
+        "mean_omega": 3.690734055354994,
+        "std_omega": 1.5965805934702506,
+        "count": 4986
+      },
+      {
+        "position": 0.9,
+        "mean_omega": 4.161213360599864,
+        "std_omega": 1.7205706837606702,
+        "count": 2934
+      }
+    ]
+  },
+  "first_bubble": {
+    "cascade_data": [
+      {
+        "factors_of_2": 0,
+        "mean_distance": 4.79166456938642,
+        "mean_omega": 2.8132581668092818,
+        "fraction_2": 0.0,
+        "count": 19867
+      },
+      {
+        "factors_of_2": 1,
+        "mean_distance": 3.9311144891591328,
+        "mean_omega": 3.3765101208096646,
+        "fraction_2": 0.2961637798260787,
+        "count": 12499
+      },
+      {
+        "factors_of_2": 2,
+        "mean_distance": 3.93056,
+        "mean_omega": 4.3072,
+        "fraction_2": 0.46433878157503716,
+        "count": 6250
+      },
+      {
+        "factors_of_2": 3,
+        "mean_distance": 3.97408,
+        "mean_omega": 5.23232,
+        "fraction_2": 0.5733594275579476,
+        "count": 3125
+      },
+      {
+        "factors_of_2": 4,
+        "mean_distance": 3.8693982074263764,
+        "mean_omega": 6.15044814340589,
+        "fraction_2": 0.650359113146664,
+        "count": 1562
+      },
+      {
+        "factors_of_2": 5,
+        "mean_distance": 3.888604353393086,
+        "mean_omega": 7.062740076824584,
+        "fraction_2": 0.7079405366207396,
+        "count": 781
+      },
+      {
+        "factors_of_2": 6,
+        "mean_distance": 3.9514066496163682,
+        "mean_omega": 7.966751918158568,
+        "fraction_2": 0.7531300160513643,
+        "count": 391
+      },
+      {
+        "factors_of_2": 7,
+        "mean_distance": 4.251282051282051,
+        "mean_omega": 8.861538461538462,
+        "fraction_2": 0.7899305555555555,
+        "count": 195
+      }
+    ]
+  },
+  "threshold": {
+    "threshold_data": [
+      {
+        "gap": 2,
+        "count": 705,
+        "mean_local_density": 0.11330830204422195,
+        "mean_omega": 5.270921985815603,
+        "potential": 0.5
+      },
+      {
+        "gap": 4,
+        "count": 692,
+        "mean_local_density": 0.11645453534904401,
+        "mean_omega": 3.856936416184971,
+        "potential": 0.25
+      },
+      {
+        "gap": 6,
+        "count": 1098,
+        "mean_local_density": 0.1130013403443654,
+        "mean_omega": 3.76120218579235,
+        "potential": 0.16666666666666666
+      },
+      {
+        "gap": 8,
+        "count": 417,
+        "mean_local_density": 0.10762501110222933,
+        "mean_omega": 3.760534429599178,
+        "potential": 0.125
+      },
+      {
+        "gap": 10,
+        "count": 489,
+        "mean_local_density": 0.11108012641754973,
+        "mean_omega": 3.5741876846171325,
+        "potential": 0.1
+      },
+      {
+        "gap": 12,
+        "count": 534,
+        "mean_local_density": 0.10869783306581059,
+        "mean_omega": 3.6280217909431394,
+        "potential": 0.08333333333333333
+      },
+      {
+        "gap": 14,
+        "count": 244,
+        "mean_local_density": 0.10440034512510785,
+        "mean_omega": 3.618221941992434,
+        "potential": 0.07142857142857142
+      },
+      {
+        "gap": 16,
+        "count": 175,
+        "mean_local_density": 0.10344827586206896,
+        "mean_omega": 3.517714285714286,
+        "potential": 0.0625
+      },
+      {
+        "gap": 18,
+        "count": 261,
+        "mean_local_density": 0.10091564387297877,
+        "mean_omega": 3.5616407482533243,
+        "potential": 0.05555555555555555
+      },
+      {
+        "gap": 20,
+        "count": 106,
+        "mean_local_density": 0.0979559748427673,
+        "mean_omega": 3.585898709036743,
+        "potential": 0.05
+      },
+      {
+        "gap": 22,
+        "count": 103,
+        "mean_local_density": 0.10313544485118574,
+        "mean_omega": 3.515950069348128,
+        "potential": 0.045454545454545456
+      },
+      {
+        "gap": 24,
+        "count": 83,
+        "mean_local_density": 0.0969685192382433,
+        "mean_omega": 3.536930330015715,
+        "potential": 0.041666666666666664
+      },
+      {
+        "gap": 26,
+        "count": 35,
+        "mean_local_density": 0.09909297052154195,
+        "mean_omega": 3.541714285714286,
+        "potential": 0.038461538461538464
+      },
+      {
+        "gap": 28,
+        "count": 39,
+        "mean_local_density": 0.10056089743589744,
+        "mean_omega": 3.4757834757834756,
+        "potential": 0.03571428571428571
+      },
+      {
+        "gap": 30,
+        "count": 66,
+        "mean_local_density": 0.09498834498834499,
+        "mean_omega": 3.523510971786834,
+        "potential": 0.03333333333333333
+      }
+    ]
+  },
+  "propagation": {
+    "propagation": [
+      {
+        "seed": 2,
+        "mean_propagation": 24999,
+        "max_propagation": 49996,
+        "count": 24998
+      },
+      {
+        "seed": 3,
+        "mean_propagation": 24999,
+        "max_propagation": 49992,
+        "count": 8332
+      },
+      {
+        "seed": 5,
+        "mean_propagation": 25000,
+        "max_propagation": 49980,
+        "count": 3332
+      },
+      {
+        "seed": 7,
+        "mean_propagation": 25009.25,
+        "max_propagation": 49980,
+        "count": 1904
+      },
+      {
+        "seed": 11,
+        "mean_propagation": 24989.814850530376,
+        "max_propagation": 49940,
+        "count": 1037
+      },
+      {
+        "seed": 13,
+        "mean_propagation": 25013.335839598996,
+        "max_propagation": 49920,
+        "count": 798
+      },
+      {
+        "seed": 17,
+        "mean_propagation": 25136.470796460177,
+        "max_propagation": 49980,
+        "count": 565
+      },
+      {
+        "seed": 19,
+        "mean_propagation": 25039.82627118644,
+        "max_propagation": 49894,
+        "count": 472
+      },
+      {
+        "seed": 23,
+        "mean_propagation": 24879.087431693988,
+        "max_propagation": 49956,
+        "count": 366
+      },
+      {
+        "seed": 29,
+        "mean_propagation": 24721.978417266186,
+        "max_propagation": 49938,
+        "count": 278
+      },
+      {
+        "seed": 31,
+        "mean_propagation": 24454.079365079364,
+        "max_propagation": 49848,
+        "count": 252
+      },
+      {
+        "seed": 37,
+        "mean_propagation": 23891.941747572815,
+        "max_propagation": 49062,
+        "count": 206
+      },
+      {
+        "seed": 41,
+        "mean_propagation": 24113.26203208556,
+        "max_propagation": 49856,
+        "count": 187
+      },
+      {
+        "seed": 43,
+        "mean_propagation": 24259.247191011236,
+        "max_propagation": 49536,
+        "count": 178
+      },
+      {
+        "seed": 47,
+        "mean_propagation": 24801.757575757576,
+        "max_propagation": 49914,
+        "count": 165
+      }
+    ]
+  },
+  "entropy_zones": {
+    "small_gaps": 2495,
+    "medium_gaps": 2226,
+    "large_gaps": 410
+  }
+}
