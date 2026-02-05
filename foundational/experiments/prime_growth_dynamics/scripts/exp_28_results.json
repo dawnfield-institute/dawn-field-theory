@@ -1,0 +1,285 @@
+{
+  "timestamp": "2026-02-05T18:07:29.284969",
+  "hypothesis": "\u039e is instantaneous balance, \u03b3+ln(\u03c6) is accumulated balance",
+  "constants": {
+    "xi": 1.0571198664289054,
+    "gamma": 0.5772156649015329,
+    "ln_phi": 0.48121182505960347,
+    "gamma_plus_ln_phi": 1.0584274899611363,
+    "gap": 0.001307623532230906,
+    "gap_percent": 0.12369680806853399
+  },
+  "tests": {
+    "mertens_connection": {
+      "description": "Testing if Mertens sum relates to \u03b3 + ln(\u03c6)",
+      "results": [
+        {
+          "limit": 100,
+          "sqrt_limit": 10,
+          "num_primes_used": 4,
+          "mertens_sum": 1.4759065198095775,
+          "ln_ln_sqrt": 0.834032445247956,
+          "gamma": 0.5772156649015329,
+          "mertens_minus_gamma": 0.8986908549080447,
+          "ratio_to_ln_phi": 1.8675577118179334
+        },
+        {
+          "limit": 1000,
+          "sqrt_limit": 31,
+          "num_primes_used": 11,
+          "mertens_sum": 1.8782841555792442,
+          "ln_ln_sqrt": 1.2337220363428747,
+          "gamma": 0.5772156649015329,
+          "mertens_minus_gamma": 1.3010684906777112,
+          "ratio_to_ln_phi": 2.703733414108349
+        },
+        {
+          "limit": 10000,
+          "sqrt_limit": 100,
+          "num_primes_used": 25,
+          "mertens_sum": 2.117622938358181,
+          "ln_ln_sqrt": 1.5271796258079011,
+          "gamma": 0.5772156649015329,
+          "mertens_minus_gamma": 1.540407273456648,
+          "ratio_to_ln_phi": 3.2011002083455686
+        },
+        {
+          "limit": 100000,
+          "sqrt_limit": 316,
+          "num_primes_used": 65,
+          "mertens_sum": 2.3380113895813635,
+          "ln_ln_sqrt": 1.7501980023354358,
+          "gamma": 0.5772156649015329,
+          "mertens_minus_gamma": 1.7607957246798307,
+          "ratio_to_ln_phi": 3.659086566423708
+        },
+        {
+          "limit": 1000000,
+          "sqrt_limit": 1000,
+          "num_primes_used": 168,
+          "mertens_sum": 2.513735061884805,
+          "ln_ln_sqrt": 1.9326447339160655,
+          "gamma": 0.5772156649015329,
+          "mertens_minus_gamma": 1.9365193969832721,
+          "ratio_to_ln_phi": 4.02425563158888
+        }
+      ]
+    },
+    "local_vs_global": {
+      "limit": 1000000,
+      "num_waves": 168,
+      "samples": [
+        {
+          "wave": 1,
+          "prime": 2,
+          "avg_balance": 1.6931461805594452,
+          "error_from_xi_%": 60.165959824321824,
+          "error_from_gamma_ln_phi_%": 59.9680844099783
+        },
+        {
+          "wave": 5,
+          "prime": 11,
+          "avg_balance": 1.3142394899559864,
+          "error_from_xi_%": 24.322655518306167,
+          "error_from_gamma_ln_phi_%": 24.16906235156865
+        },
+        {
+          "wave": 10,
+          "prime": 29,
+          "avg_balance": 1.1845488414048595,
+          "error_from_xi_%": 12.054354385224684,
+          "error_from_gamma_ln_phi_%": 11.915917966978931
+        },
+        {
+          "wave": 20,
+          "prime": 71,
+          "avg_balance": 1.1027491051423481,
+          "error_from_xi_%": 4.316373210124645,
+          "error_from_gamma_ln_phi_%": 4.187496602420938
+        },
+        {
+          "wave": 50,
+          "prime": 229,
+          "avg_balance": 1.0459429778100722,
+          "error_from_xi_%": 1.057296241777227,
+          "error_from_gamma_ln_phi_%": 1.179534003932813
+        },
+        {
+          "wave": 100,
+          "prime": 541,
+          "avg_balance": 1.0247482067453395,
+          "error_from_xi_%": 3.0622506218638943,
+          "error_from_gamma_ln_phi_%": 3.1820113834187618
+        },
+        {
+          "wave": 168,
+          "prime": 997,
+          "avg_balance": 1.0151469115013383,
+          "error_from_xi_%": 3.970501005657711,
+          "error_from_gamma_ln_phi_%": 4.089139678466518
+        }
+      ],
+      "final_avg_balance": 1.0151469115013383,
+      "final_error_from_xi_%": 3.970501005657711,
+      "final_error_from_gamma_ln_phi_%": 4.089139678466518,
+      "mean_per_wave_info_cost": 0.01514691150133835,
+      "cumulative_info_div_waves": 0.015146911501338348,
+      "cumulative_info_cost": 2.5446811322248424,
+      "hypothesis_test": {
+        "xi_minus_1": 0.05711986642890543,
+        "ln_phi": 0.48121182505960347,
+        "gamma": 0.5772156649015329,
+        "cumulative_vs_xi_minus_1": 44.54984388648903,
+        "cumulative_vs_ln_phi": 5.288068579589987,
+        "cumulative_vs_gamma": 4.408544824678206
+      }
+    },
+    "expansion_factors": {
+      "description": "Testing expansion factors at each prime",
+      "target_e_gamma": 1.781072417990198,
+      "samples": [
+        {
+          "prime": 467,
+          "expansion": 1.002145922746781,
+          "running_product": 11.068477193049006,
+          "running_product_over_ln_p": 1.8008272464802706,
+          "e_gamma_times_ln_p": 10.947057512720242
+        },
+        {
+          "prime": 479,
+          "expansion": 1.002092050209205,
+          "running_product": 11.091633003076305,
+          "running_product_over_ln_p": 1.7971761312804686,
+          "e_gamma_times_ln_p": 10.992245706142208
+        },
+        {
+          "prime": 487,
+          "expansion": 1.0020576131687242,
+          "running_product": 11.114455293206092,
+          "running_product_over_ln_p": 1.7960537999256558,
+          "e_gamma_times_ln_p": 11.0217465448607
+        },
+        {
+          "prime": 491,
+          "expansion": 1.0020408163265306,
+          "running_product": 11.137137855028962,
+          "running_product_over_ln_p": 1.7973433836145905,
+          "e_gamma_times_ln_p": 11.03631572563215
+        },
+        {
+          "prime": 499,
+          "expansion": 1.002008032128514,
+          "running_product": 11.15950158566155,
+          "running_product_over_ln_p": 1.7962673656861905,
+          "e_gamma_times_ln_p": 11.065101360980801
+        },
+        {
+          "prime": 503,
+          "expansion": 1.00199203187251,
+          "running_product": 11.181731668501513,
+          "running_product_over_ln_p": 1.7975355010925318,
+          "e_gamma_times_ln_p": 11.079321575585599
+        },
+        {
+          "prime": 509,
+          "expansion": 1.0019685039370079,
+          "running_product": 11.203742951313524,
+          "running_product_over_ln_p": 1.7976472361360292,
+          "e_gamma_times_ln_p": 11.100441258835852
+        },
+        {
+          "prime": 521,
+          "expansion": 1.001923076923077,
+          "running_product": 11.22528861083528,
+          "running_product_over_ln_p": 1.7943953220498317,
+          "e_gamma_times_ln_p": 11.141943853207952
+        },
+        {
+          "prime": 523,
+          "expansion": 1.0019157088122606,
+          "running_product": 11.246792995147226,
+          "running_product_over_ln_p": 1.7967324268743756,
+          "e_gamma_times_ln_p": 11.148767893808737
+        },
+        {
+          "prime": 541,
+          "expansion": 1.0018518518518518,
+          "running_product": 11.267620389582683,
+          "running_product_over_ln_p": 1.7903813317278174,
+          "e_gamma_times_ln_p": 11.209035492401231
+        }
+      ],
+      "final_product_over_ln": 1.7903813317278174,
+      "error_from_e_gamma": 0.5226577899692494
+    },
+    "xi_as_rate": {
+      "description": "Testing if \u039e is an information rate",
+      "results": [
+        {
+          "limit": 1000,
+          "pi_x": 168,
+          "theta_x": 956.2452651200589,
+          "theta_over_x": 0.9562452651200589,
+          "composites": 831,
+          "info_cost_smoothing": 6.7226297948554485,
+          "theta_over_info_cost": 142.2427374852374,
+          "ratio_comparison": {
+            "xi": 1.0571198664289054,
+            "gamma_ln_phi": 1.0584274899611363,
+            "e_gamma": 1.781072417990198
+          }
+        },
+        {
+          "limit": 10000,
+          "pi_x": 1229,
+          "theta_x": 9895.991379156982,
+          "theta_over_x": 0.9895991379156982,
+          "composites": 8770,
+          "info_cost_smoothing": 9.079092085366229,
+          "theta_over_info_cost": 1089.9758793180915,
+          "ratio_comparison": {
+            "xi": 1.0571198664289054,
+            "gamma_ln_phi": 1.0584274899611363,
+            "e_gamma": 1.781072417990198
+          }
+        },
+        {
+          "limit": 100000,
+          "pi_x": 9592,
+          "theta_x": 99685.38926861253,
+          "theta_over_x": 0.9968538926861253,
+          "composites": 90407,
+          "info_cost_smoothing": 11.412076977010758,
+          "theta_over_info_cost": 8735.07858993813,
+          "ratio_comparison": {
+            "xi": 1.0571198664289054,
+            "gamma_ln_phi": 1.0584274899611363,
+            "e_gamma": 1.781072417990198
+          }
+        },
+        {
+          "limit": 1000000,
+          "pi_x": 78498,
+          "theta_x": 998484.1750256323,
+          "theta_over_x": 0.9984841750256322,
+          "composites": 921501,
+          "info_cost_smoothing": 13.733759141278622,
+          "theta_over_info_cost": 72702.90419063464,
+          "ratio_comparison": {
+            "xi": 1.0571198664289054,
+            "gamma_ln_phi": 1.0584274899611363,
+            "e_gamma": 1.781072417990198
+          }
+        }
+      ]
+    }
+  },
+  "summary": {
+    "final_avg_balance": 1.0151469115013383,
+    "closer_to": "xi",
+    "e_gamma": 1.781072417990198,
+    "xi_over_e_gamma": 0.5935299742734679,
+    "inv_phi": 0.6180339887498948,
+    "error_xi_e_gamma_vs_inv_phi": 3.9648328283678214
+  }
+}
