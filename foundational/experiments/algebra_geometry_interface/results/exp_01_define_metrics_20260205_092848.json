@@ -1,0 +1,312 @@
+{
+  "experiment": "exp_01_define_metrics",
+  "timestamp": "2026-02-05T09:28:48.581963",
+  "hypothesis": "Algebraic and geometric complexity metrics discriminate system types",
+  "tests": {
+    "primes": {
+      "description": "Prime numbers (base cases)",
+      "samples": [
+        {
+          "n": 2,
+          "algebraic": 1,
+          "geometric": 1,
+          "ratio": 1.0
+        },
+        {
+          "n": 3,
+          "algebraic": 1,
+          "geometric": 1,
+          "ratio": 1.0
+        },
+        {
+          "n": 5,
+          "algebraic": 1.1,
+          "geometric": 1,
+          "ratio": 1.1
+        },
+        {
+          "n": 7,
+          "algebraic": 1.1,
+          "geometric": 1,
+          "ratio": 1.1
+        },
+        {
+          "n": 11,
+          "algebraic": 1.2,
+          "geometric": 1,
+          "ratio": 1.2
+        }
+      ],
+      "avg_algebraic": 1.2866666666666666,
+      "avg_geometric": 1.0,
+      "avg_ratio": 1.2866666666666666,
+      "prediction": "Low algebraic, low geometric",
+      "validated": "True"
+    },
+    "highly_composite": {
+      "description": "Highly composite numbers",
+      "samples": [
+        {
+          "n": 12,
+          "algebraic": 3.1,
+          "geometric": 15,
+          "ratio": 0.20666666666666667
+        },
+        {
+          "n": 24,
+          "algebraic": 4.1,
+          "geometric": 28,
+          "ratio": 0.1464285714285714
+        },
+        {
+          "n": 36,
+          "algebraic": 4.199999999999999,
+          "geometric": 28,
+          "ratio": 0.14999999999999997
+        },
+        {
+          "n": 48,
+          "algebraic": 5.1,
+          "geometric": 45,
+          "ratio": 0.11333333333333333
+        },
+        {
+          "n": 60,
+          "algebraic": 4.2,
+          "geometric": 28,
+          "ratio": 0.15
+        }
+      ],
+      "avg_algebraic": 5.07,
+      "avg_geometric": 45.7,
+      "avg_ratio": 0.11094091903719912,
+      "prediction": "High algebraic, high geometric",
+      "validated": "True"
+    },
+    "ca_classes": {
+      "class_1": {
+        "class": "Class I (uniform)",
+        "rules": [
+          {
+            "rule": 0,
+            "algebraic": 0.02,
+            "geometric": 4.0,
+            "ratio": 0.005,
+            "distance_from_xi": 1.0521198664289055
+          },
+          {
+            "rule": 8,
+            "algebraic": 3.02,
+            "geometric": 4.0,
+            "ratio": 0.755,
+            "distance_from_xi": 0.3021198664289054
+          },
+          {
+            "rule": 32,
+            "algebraic": 3.02,
+            "geometric": 4.0,
+            "ratio": 0.755,
+            "distance_from_xi": 0.3021198664289054
+          },
+          {
+            "rule": 128,
+            "algebraic": 2.02,
+            "geometric": 4.0,
+            "ratio": 0.505,
+            "distance_from_xi": 0.5521198664289054
+          }
+        ],
+        "avg_algebraic": 2.02,
+        "avg_geometric": 4.0,
+        "avg_ratio": 0.505,
+        "avg_xi_distance": 0.5521198664289054
+      },
+      "class_2": {
+        "class": "Class II (periodic)",
+        "rules": [
+          {
+            "rule": 4,
+            "algebraic": 3.0,
+            "geometric": 2.0192079207920792,
+            "ratio": 1.4857310973815827,
+            "distance_from_xi": 0.4286112309526773
+          },
+          {
+            "rule": 36,
+            "algebraic": 6.0,
+            "geometric": 2.0192079207920792,
+            "ratio": 2.9714621947631654,
+            "distance_from_xi": 1.91434232833426
+          },
+          {
+            "rule": 50,
+            "algebraic": 59.0,
+            "geometric": 101.4950495049505,
+            "ratio": 0.5813091405716515,
+            "distance_from_xi": 0.4758107258572539
+          },
+          {
+            "rule": 108,
+            "algebraic": 8.0,
+            "geometric": 2.0192079207920792,
+            "ratio": 3.9619495930175543,
+            "distance_from_xi": 2.904829726588649
+          }
+        ],
+        "avg_algebraic": 19.0,
+        "avg_geometric": 26.888168316831685,
+        "avg_ratio": 2.250113006433488,
+        "avg_xi_distance": 1.4308985029332102
+      },
+      "class_3": {
+        "class": "Class III (chaotic)",
+        "rules": [
+          {
+            "rule": 30,
+            "algebraic": 35.4,
+            "geometric": 139.750099009901,
+            "ratio": 0.25330930175220834,
+            "distance_from_xi": 0.8038105646766971
+          },
+          {
+            "rule": 45,
+            "algebraic": 91.16,
+            "geometric": 153.91396039603958,
+            "ratio": 0.592278957447616,
+            "distance_from_xi": 0.4648409089812894
+          },
+          {
+            "rule": 73,
+            "algebraic": 84.12,
+            "geometric": 140.4570297029703,
+            "ratio": 0.5989020284559036,
+            "distance_from_xi": 0.45821783797300186
+          },
+          {
+            "rule": 105,
+            "algebraic": 91.72,
+            "geometric": 113.77544554455446,
+            "ratio": 0.8061493370648455,
+            "distance_from_xi": 0.25097052936405995
+          }
+        ],
+        "avg_algebraic": 75.6,
+        "avg_geometric": 136.97413366336633,
+        "avg_ratio": 0.5626599061801434,
+        "avg_xi_distance": 0.49445996024876204
+      },
+      "class_4": {
+        "class": "Class IV (complex)",
+        "rules": [
+          {
+            "rule": 110,
+            "algebraic": 19.82,
+            "geometric": 145.07732673267327,
+            "ratio": 0.13661679909860294,
+            "distance_from_xi": 0.9205030673303025
+          },
+          {
+            "rule": 124,
+            "algebraic": 17.82,
+            "geometric": 145.07732673267327,
+            "ratio": 0.12283104742366822,
+            "distance_from_xi": 0.9342888190052372
+          },
+          {
+            "rule": 137,
+            "algebraic": 20.2,
+            "geometric": 136.180099009901,
+            "ratio": 0.14833298071351347,
+            "distance_from_xi": 0.908786885715392
+          },
+          {
+            "rule": 193,
+            "algebraic": 18.2,
+            "geometric": 136.180099009901,
+            "ratio": 0.13364654697950223,
+            "distance_from_xi": 0.9234733194494031
+          }
+        ],
+        "avg_algebraic": 19.01,
+        "avg_geometric": 140.62871287128715,
+        "avg_ratio": 0.13535684355382172,
+        "avg_xi_distance": 0.9217630228750837
+      }
+    },
+    "xi_emergence": {
+      "description": "\u039e emergence at algebra-geometry interface",
+      "xi_value": 1.0571198664289054,
+      "top_10_closest_to_xi": [
+        {
+          "rule": 53,
+          "ratio": 1.0584620236247877,
+          "distance_from_xi": 0.0013421571958822653,
+          "distance_from_phi": 0.5595719651251072
+        },
+        {
+          "rule": 83,
+          "ratio": 1.0584620236247877,
+          "distance_from_xi": 0.0013421571958822653,
+          "distance_from_phi": 0.5595719651251072
+        },
+        {
+          "rule": 85,
+          "ratio": 1.0628049824603696,
+          "distance_from_xi": 0.005685116031464155,
+          "distance_from_phi": 0.5552290062895253
+        },
+        {
+          "rule": 27,
+          "ratio": 1.0390407020903878,
+          "distance_from_xi": 0.01807916433851764,
+          "distance_from_phi": 0.5789932866595071
+        },
+        {
+          "rule": 39,
+          "ratio": 1.0390407020903878,
+          "distance_from_xi": 0.01807916433851764,
+          "distance_from_phi": 0.5789932866595071
+        },
+        {
+          "rule": 117,
+          "ratio": 1.0332728066100811,
+          "distance_from_xi": 0.02384705981882429,
+          "distance_from_phi": 0.5847611821398138
+        },
+        {
+          "rule": 35,
+          "ratio": 1.029330041323188,
+          "distance_from_xi": 0.02778982510571737,
+          "distance_from_phi": 0.5887039474267068
+        },
+        {
+          "rule": 49,
+          "ratio": 1.029330041323188,
+          "distance_from_xi": 0.02778982510571737,
+          "distance_from_phi": 0.5887039474267068
+        },
+        {
+          "rule": 59,
+          "ratio": 1.0289656603382091,
+          "distance_from_xi": 0.0281542060906963,
+          "distance_from_phi": 0.5890683284116858
+        },
+        {
+          "rule": 115,
+          "ratio": 1.0289656603382091,
+          "distance_from_xi": 0.0281542060906963,
+          "distance_from_phi": 0.5890683284116858
+        }
+      ],
+      "class_4_rules_in_top_10": [],
+      "class_4_count_in_top_10": 0,
+      "prediction": "Class IV rules cluster near \u039e",
+      "validated": false
+    }
+  },
+  "summary": {
+    "all_tests_passed": false,
+    "metrics_discriminate": true,
+    "xi_correlates_with_class_4": false
+  }
+}

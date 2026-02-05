@@ -1,0 +1,1840 @@
+{
+  "experiment": "exp_02_deep_rqm_sec",
+  "timestamp": "2026-02-05T09:39:15.673763",
+  "tests": {
+    "relative_state": {
+      "test": "Relative state correspondence",
+      "rqm_formalism": "State |\u03c8\u27e9_S^O is S relative to O",
+      "sec_formalism": "Value v(node|ref) = I(node) - I(ref)",
+      "trials": [
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        },
+        {
+          "rqm_01_defined": true,
+          "rqm_12_defined": false,
+          "sec_01_defined": true,
+          "sec_12_defined": false,
+          "agreement": true
+        }
+      ],
+      "agreement_rate": 1.0,
+      "correspondence_validated": "True"
+    },
+    "interaction_info": {
+      "test": "Interaction information correspondence",
+      "rqm_metric": "Entanglement (von Neumann entropy)",
+      "sec_metric": "Information exchange (density difference)",
+      "trials": [
+        {
+          "rqm_entanglement": 0.12015128902438071,
+          "sec_info_exchange": 0.1486181509796961
+        },
+        {
+          "rqm_entanglement": 0.07567450499199595,
+          "sec_info_exchange": 0.19710741440804203
+        },
+        {
+          "rqm_entanglement": 0.05805440110902861,
+          "sec_info_exchange": 0.21548175082898557
+        },
+        {
+          "rqm_entanglement": 0.3042386197155856,
+          "sec_info_exchange": 0.36699994848229267
+        },
+        {
+          "rqm_entanglement": 0.1271262060352309,
+          "sec_info_exchange": 0.07121408730992274
+        },
+        {
+          "rqm_entanglement": 0.16449352658284036,
+          "sec_info_exchange": 0.11471139455530321
+        },
+        {
+          "rqm_entanglement": 0.29990650554473824,
+          "sec_info_exchange": 0.04643559148298848
+        },
+        {
+          "rqm_entanglement": 0.40899794588950683,
+          "sec_info_exchange": 0.2889771080798459
+        },
+        {
+          "rqm_entanglement": 0.18722712371225858,
+          "sec_info_exchange": 0.27788931613272294
+        },
+        {
+          "rqm_entanglement": 0.048408346272419515,
+          "sec_info_exchange": 0.39055662343366104
+        },
+        {
+          "rqm_entanglement": 0.17832529275100029,
+          "sec_info_exchange": 0.019039384630964218
+        },
+        {
+          "rqm_entanglement": 0.19342593496277263,
+          "sec_info_exchange": 0.06778038067714265
+        },
+        {
+          "rqm_entanglement": 0.07452219262622564,
+          "sec_info_exchange": 0.30353906012406284
+        },
+        {
+          "rqm_entanglement": 0.14569154595946346,
+          "sec_info_exchange": 0.018777853366708785
+        },
+        {
+          "rqm_entanglement": 0.11488938480420227,
+          "sec_info_exchange": 0.5465938946760134
+        },
+        {
+          "rqm_entanglement": 0.46220500252500674,
+          "sec_info_exchange": 0.005315817589537475
+        },
+        {
+          "rqm_entanglement": 0.025553510880729442,
+          "sec_info_exchange": 0.04107620426702452
+        },
+        {
+          "rqm_entanglement": 0.23121075927937454,
+          "sec_info_exchange": 0.22897205966340728
+        },
+        {
+          "rqm_entanglement": 0.344328366001374,
+          "sec_info_exchange": 0.23285930489140128
+        },
+        {
+          "rqm_entanglement": 0.10806813816695814,
+          "sec_info_exchange": 0.2500519001227959
+        },
+        {
+          "rqm_entanglement": 0.18174860769846843,
+          "sec_info_exchange": 0.2747581580518389
+        },
+        {
+          "rqm_entanglement": 0.24440488352086692,
+          "sec_info_exchange": 0.6542863647867598
+        },
+        {
+          "rqm_entanglement": 0.3890500542840592,
+          "sec_info_exchange": 0.6946893332542575
+        },
+        {
+          "rqm_entanglement": 0.046121660832227226,
+          "sec_info_exchange": 0.16572902806016243
+        },
+        {
+          "rqm_entanglement": 0.15902978984580673,
+          "sec_info_exchange": 0.16829167384905153
+        },
+        {
+          "rqm_entanglement": 0.5092041433494383,
+          "sec_info_exchange": 0.04678986034281418
+        },
+        {
+          "rqm_entanglement": 0.32394068686045446,
+          "sec_info_exchange": 0.08277537318137773
+        },
+        {
+          "rqm_entanglement": 0.6047478536249212,
+          "sec_info_exchange": 0.499414919824381
+        },
+        {
+          "rqm_entanglement": 0.029270618856622178,
+          "sec_info_exchange": 0.09887251835775002
+        },
+        {
+          "rqm_entanglement": 0.285023451687482,
+          "sec_info_exchange": 0.03587237191537773
+        },
+        {
+          "rqm_entanglement": 0.4662857135035273,
+          "sec_info_exchange": 0.240673548154542
+        },
+        {
+          "rqm_entanglement": 0.16273314301152858,
+          "sec_info_exchange": 0.67539685097039
+        },
+        {
+          "rqm_entanglement": 0.38394733252572116,
+          "sec_info_exchange": 0.36524928253197975
+        },
+        {
+          "rqm_entanglement": 0.1357552604945393,
+          "sec_info_exchange": 0.006695625418708828
+        },
+        {
+          "rqm_entanglement": 0.26976186678162817,
+          "sec_info_exchange": 0.3853456773373487
+        },
+        {
+          "rqm_entanglement": 0.0010205679490727657,
+          "sec_info_exchange": 0.10077038652812154
+        },
+        {
+          "rqm_entanglement": 0.06875126161803748,
+          "sec_info_exchange": 0.38224443962351906
+        },
+        {
+          "rqm_entanglement": 0.35632493106040597,
+          "sec_info_exchange": 0.4333843285941654
+        },
+        {
+          "rqm_entanglement": 0.1093363279452629,
+          "sec_info_exchange": 0.3871388656261404
+        },
+        {
+          "rqm_entanglement": 0.3354811641425416,
+          "sec_info_exchange": 0.21046540345270393
+        },
+        {
+          "rqm_entanglement": 0.2652771938013788,
+          "sec_info_exchange": 0.023797721295889085
+        },
+        {
+          "rqm_entanglement": 0.19890558613683937,
+          "sec_info_exchange": 0.881670442229396
+        },
+        {
+          "rqm_entanglement": 0.32873615470103623,
+          "sec_info_exchange": 0.5629918226617825
+        },
+        {
+          "rqm_entanglement": 0.4083453261079712,
+          "sec_info_exchange": 0.5782866603427121
+        },
+        {
+          "rqm_entanglement": 0.15884939330817174,
+          "sec_info_exchange": 0.5245629309701438
+        },
+        {
+          "rqm_entanglement": 0.1855955591998119,
+          "sec_info_exchange": 0.47212699004080216
+        },
+        {
+          "rqm_entanglement": 0.01326017542897252,
+          "sec_info_exchange": 0.03475452110354671
+        },
+        {
+          "rqm_entanglement": 0.03128376058045509,
+          "sec_info_exchange": 0.4832673499828415
+        },
+        {
+          "rqm_entanglement": 0.18430914403691848,
+          "sec_info_exchange": 0.8651642765803661
+        },
+        {
+          "rqm_entanglement": 0.11465449187540039,
+          "sec_info_exchange": 0.05557004412518318
+        }
+      ],
+      "pearson_correlation": 0.14025637843072686,
+      "pearson_p_value": 0.33130381639111656,
+      "spearman_correlation": 0.16350540216086432,
+      "spearman_p_value": 0.25655523066197966,
+      "rqm_stats": {
+        "mean": 0.21247309403209322,
+        "std": 0.1427496424706048
+      },
+      "sec_stats": {
+        "mean": 0.2844606802979315,
+        "std": 0.23049503341239794
+      },
+      "distribution_similarity": 0.9042065508644591,
+      "both_nonnegative": true,
+      "correspondence_validated": true
+    },
+    "observer_equivalence": {
+      "test": "Observer equivalence",
+      "rqm_claim": "Any physical system can be an observer",
+      "sec_claim": "Any node can be collapse center",
+      "trials": [
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.2515450283580929,
+            0.31261301072959524,
+            -1.0536180014238155,
+            0.37709760190010133,
+            0.11236236043602604
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.6506008882861254,
+            0.1052133675000928,
+            -0.38668644376619143,
+            -0.015474643147169204,
+            -0.3536531688728575
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.7105097392393404,
+            0.15713148468929525,
+            0.05734419737300456,
+            -0.45437393783483654,
+            -0.47061148346680354
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.10457110718743634,
+            -0.5022805889792585,
+            0.480803890994515,
+            -0.2580126228984325,
+            0.17491821369573973
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.26175678011230846,
+            0.7718829061211662,
+            -0.511739044881629,
+            -0.5187599283918617,
+            -0.003140712959983999
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.2962759128954102,
+            0.4441587661201343,
+            0.10618705422573657,
+            0.026595955414151162,
+            -0.2806658628646118
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.4540495017929135,
+            -0.12087424364975985,
+            -0.5310699705079748,
+            -0.15495179697414496,
+            0.35284650933896616
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.5138784318367441,
+            -0.8285631402787036,
+            0.26155351409260386,
+            0.9733079951629402,
+            -0.9201768008135846
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.38618040841608325,
+            0.8627945005629454,
+            -0.43576676238207773,
+            -0.28032723471919796,
+            0.23947990495441351
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.6239443843852932,
+            -0.13813173774003917,
+            0.22765678831827224,
+            0.024521277410318953,
+            0.509898056396741
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.2249777649150985,
+            -0.5229261166212422,
+            -0.12599504298177716,
+            0.08619734851466443,
+            0.3377460461732564
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.17453213899433903,
+            0.9217292179860386,
+            -0.505524774260409,
+            -0.1835231459660606,
+            -0.407213436753908
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.4118409492889799,
+            -0.08003868380280599,
+            -0.47292450764160165,
+            0.09068155134261441,
+            0.05044069081281338
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.18899226961102314,
+            -0.2163601263416326,
+            0.7526964057797867,
+            -0.11249564810240517,
+            -0.23484836172472573
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.9148560796265652,
+            0.4450880834728256,
+            0.029277188066838405,
+            -0.4628025396298684,
+            0.9032933477167695
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.5085283953006605,
+            -0.062268500569848784,
+            -0.31499251929734723,
+            0.041781556362929406,
+            -0.17304893179639386
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.6300676727388936,
+            -0.5165826202355033,
+            -0.3451083635311699,
+            0.6223528248227419,
+            -0.3907295137949623
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.7041066975283174,
+            0.32265282000813683,
+            -0.49300975290796495,
+            0.24824403125634856,
+            0.6262195991717969
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.193888853825155,
+            -0.0878991706195642,
+            -0.33454007954299453,
+            0.8190629709216637,
+            -0.5905125745842599
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.9467296021166813,
+            -0.10861350903159889,
+            -0.6163522651055647,
+            -0.8828389583752082,
+            0.6610751303956905
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.6823408851204699,
+            0.2733679593479341,
+            0.35332811709627865,
+            0.03240595836208743,
+            0.023238850314169668
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.14754227817329613,
+            -0.11631249741919641,
+            -0.26926829704844524,
+            0.5710893728902684,
+            -0.037966300249330565
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.13462126610463554,
+            0.24570164921244642,
+            0.39505597130287684,
+            -0.21029466862163168,
+            -0.29584168578905606
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.19403231448092464,
+            0.5795673977597849,
+            -0.7610948032426688,
+            0.7498360273688673,
+            -0.7623409363669083
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.12764448881086887,
+            -0.03897975741574977,
+            0.8165729079461788,
+            -0.8145145166046286,
+            -0.09072312273666941
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.6093744227430846,
+            -0.5239705866276074,
+            0.3793725428640964,
+            -0.1701616364817854,
+            -0.2946147424977881
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.6780424379095863,
+            0.25437856138323683,
+            0.2823792326789972,
+            0.4252154313249398,
+            -0.28393078747758765
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.33918333379672505,
+            0.17043221191823496,
+            -0.19266224729196055,
+            -0.002188054073921003,
+            -0.3147652443490785
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            -0.48396049149698506,
+            0.5038361803418988,
+            -0.17719330759209495,
+            0.11800707508564762,
+            0.039310543661533554
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        },
+        {
+          "rqm_observe_counts": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "rqm_symmetric": true,
+          "sec_potentials": [
+            0.30645320234830553,
+            -0.04470028788470631,
+            -0.20529612604518446,
+            -0.7737131426191896,
+            0.7172563542007747
+          ],
+          "sec_can_collapse": [
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+          ],
+          "sec_symmetric": true,
+          "both_symmetric": true
+        }
+      ],
+      "symmetry_rate": 1.0,
+      "correspondence_validated": "True"
+    },
+    "consistency_conservation": {
+      "test": "Consistency-conservation correspondence",
+      "rqm_claim": "Communication establishes consistency",
+      "pac_claim": "Links enforce conservation",
+      "trials": [
+        {
+          "rqm_overlap": 0.03454932193294673,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.773088277149481,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.30491852242288264,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.8565885443012996,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9563060212303117,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.6463860195560738,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.36417445215938027,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.40385631244361914,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.07061922001465581,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9607198669221516,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.011871679754835848,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.5407760109670933,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.2652917254868682,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.7392931823395806,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.6410674064047004,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.3897103788727248,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9624189367034678,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.6510213911838479,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.11340583302727061,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.6624454499740118,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.5655823197463298,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9115545102429661,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.7213072664154964,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.032704935759423175,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.2453452771475355,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.6932133239522476,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.049839282566514896,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9896003397864344,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9203661923585282,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.6061466750369102,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.20360091858199303,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.2679258179759353,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.13419042868395317,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9039399462996165,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.008058220698450682,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.24396582995314262,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.1891695356615389,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9384220008679591,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.16201702775849444,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.05741989429617244,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.17430404661449755,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.7462612138660046,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.4859919044968971,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.36934388923079825,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.022030823728029163,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9742101127627381,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.9964554649005682,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.6771690724041626,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.2232341000658338,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        },
+        {
+          "rqm_overlap": 0.8110924828782962,
+          "rqm_consistent": "True",
+          "pac_error_before": 0.0,
+          "pac_error_after": 0.0,
+          "pac_conserved": true,
+          "pac_adjustment_works": true,
+          "both_enforce_constraint": true
+        }
+      ],
+      "constraint_enforcement_rate": 1.0,
+      "correspondence_validated": "True"
+    }
+  },
+  "summary": {
+    "all_tests_passed": true,
+    "validated_count": "4",
+    "total_tests": 4
+  }
+}

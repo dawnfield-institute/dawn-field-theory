@@ -1,0 +1,10 @@
+schema_version: "2.0"
+description: "Numbered experiment scripts for algebra-geometry interface testing"
+semantic_scope: "implementation"
+proficiency_level: "research"
+
+files:
+  - "[exp_01_define_metrics.py]": "Validate complexity metric definitions"
+  - "[exp_02_ca_sweep.py]": "Test all 256 CA rules for Aₓ/Gₓ ratios"
+  - "[exp_03_factorization_sweep.py]": "Test factorization trees for ratio patterns"
+  - "[exp_04_cross_experiment.py]": "Reanalyze prior experiments with new metrics"

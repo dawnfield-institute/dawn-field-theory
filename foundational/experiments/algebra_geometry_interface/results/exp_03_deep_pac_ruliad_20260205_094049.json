@@ -1,0 +1,618 @@
+{
+  "experiment": "exp_03_deep_pac_ruliad",
+  "timestamp": "2026-02-05T09:40:49.354212",
+  "tests": {
+    "state_space": {
+      "test": "State space completeness",
+      "ruliad_claim": "Contains all possible computational states",
+      "pac_claim": "Contains all valid conservation-satisfying distributions",
+      "trials": [
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        },
+        {
+          "ruliad_states": 12,
+          "pac_trees": 85,
+          "ruliad_nontrivial": true,
+          "pac_nontrivial": true,
+          "both_complete": true
+        }
+      ],
+      "completeness_rate": 1.0,
+      "correspondence_validated": "True",
+      "all_pac_trees_valid": true
+    },
+    "observer_sampling": {
+      "test": "Observer sampling correspondence",
+      "ruliad_claim": "Observer samples causally connected subset",
+      "pac_claim": "Node sees descendant subtree only",
+      "trials": [
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        },
+        {
+          "ruliad_total": 12,
+          "ruliad_visible": 12,
+          "ruliad_sees_subset": true,
+          "pac_total": 7,
+          "pac_subtree": 3,
+          "pac_sees_subset": true,
+          "both_subset": true
+        }
+      ],
+      "subset_rate": 1.0,
+      "correspondence_validated": "True"
+    },
+    "equivalence": {
+      "test": "Computational equivalence correspondence",
+      "ruliad_claim": "Rules producing same output are equivalent",
+      "pac_claim": "Trees with same signature are equivalent",
+      "trials": [
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        },
+        {
+          "pac_n_trees": 36,
+          "pac_n_classes": 13,
+          "pac_has_equivalence": true,
+          "same_root_in_class": true,
+          "ruliad_equivalent": true,
+          "both_have_equivalence": true
+        }
+      ],
+      "equivalence_rate": 1.0,
+      "correspondence_validated": "True"
+    },
+    "branching": {
+      "test": "Multi-way branching correspondence",
+      "ruliad_claim": "Evolution branches into multiple paths",
+      "pac_claim": "Tree branches into multiple children",
+      "trials": [
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        },
+        {
+          "ruliad_branching_states": 7,
+          "ruliad_branches": true,
+          "pac_branching_trees": 773,
+          "pac_branches": true,
+          "avg_pac_branch_factor": 1.7885726606295815,
+          "both_branch": true
+        }
+      ],
+      "branch_rate": 1.0,
+      "correspondence_validated": "True"
+    }
+  },
+  "summary": {
+    "all_tests_passed": true,
+    "validated_count": "4",
+    "total_tests": 4
+  }
+}
