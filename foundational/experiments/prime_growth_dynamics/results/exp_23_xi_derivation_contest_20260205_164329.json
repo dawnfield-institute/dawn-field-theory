@@ -1,0 +1,133 @@
+{
+  "part1_pac_derive": {
+    "within_level": -0.028263456486708582,
+    "implied_cross": 0.0853833229156139,
+    "doc_within": -0.0283,
+    "doc_cross": 0.0854,
+    "doc_net": 0.057100000000000005,
+    "pi_over_55": 0.057119866428905326,
+    "gamma_phi_minus_1": 0.058427489961136336,
+    "doc_net_vs_pi_55_error": 1.986642890532131e-05,
+    "gamma_phi_vs_pi_55_error": 0.00130762353223101
+  },
+  "part2_gamma_phi_tests": {
+    "ln_of_target_vs_pi_55": {
+      "ln_target": 0.0567843066116383,
+      "pi_55": 0.057119866428905326,
+      "error": 0.00033555981726702405,
+      "relative_error": 0.005874660398316601
+    },
+    "zeta_ratios": {
+      "zeta_2_over_phi": 1.0166251625647955,
+      "zeta_4_over_target": 1.0225766469376933
+    },
+    "fibonacci_growth": {
+      "ln_phi": 0.48121182505960347,
+      "asymptotic_ln_Fn_over_n": 0.4746096387094515
+    },
+    "fibonacci_series": {
+      "fib_harmonic": 2.359885650431898,
+      "fib_product": 6.573910855433289
+    },
+    "55_connection": {
+      "55_times_gamma_phi_minus_1": 3.2135119478624983,
+      "55_times_pi_55": 3.141592653589793,
+      "ratio": 1.0228926223743633
+    }
+  },
+  "part3_first_principles": {
+    "within_level": -0.028263456486708582,
+    "cross_required": 0.0853833229156139,
+    "critical_depth_pi_55": 55.0,
+    "critical_depth_gamma_phi": 53.76908464969925,
+    "fibonacci_depths": {
+      "F_5": {
+        "fib": 8,
+        "xi": 1.3926990816987241,
+        "error_vs_gamma_phi": 0.3342715917375878
+      },
+      "F_6": {
+        "fib": 13,
+        "xi": 1.241660973353061,
+        "error_vs_gamma_phi": 0.1832334833919247
+      },
+      "F_7": {
+        "fib": 21,
+        "xi": 1.1495996501709425,
+        "error_vs_gamma_phi": 0.09117216020980612
+      },
+      "F_8": {
+        "fib": 34,
+        "xi": 1.0923997839291115,
+        "error_vs_gamma_phi": 0.03397229396797519
+      },
+      "F_9": {
+        "fib": 55,
+        "xi": 1.0571198664289054,
+        "error_vs_gamma_phi": 0.001307623532230906
+      },
+      "F_10": {
+        "fib": 89,
+        "xi": 1.0352987938605596,
+        "error_vs_gamma_phi": 0.023128696100576773
+      },
+      "F_11": {
+        "fib": 144,
+        "xi": 1.021816615649929,
+        "error_vs_gamma_phi": 0.03661087431120724
+      }
+    }
+  },
+  "part4_verdict": {
+    "pi_55": 0.057119866428905326,
+    "gamma_phi_minus_1": 0.058427489961136336,
+    "difference": 0.00130762353223101,
+    "relative_error": 0.022892622374363455,
+    "exp_pi_55": 1.0587827152925986,
+    "gamma_ln_phi": 1.0584274899611363,
+    "exp_pi_55_vs_gamma_ln_phi": 0.0003552253314622611,
+    "verdict": "neither_exact",
+    "recommendation": "use_pi_55_for_topology"
+  },
+  "part5_falsification": [
+    {
+      "id": "F1",
+      "name": "Precision turbulence measurement",
+      "prediction_pi_55": 1.0571198664289054,
+      "prediction_gamma_phi": 1.0584274899611363,
+      "distinguishing_precision": 0.13
+    },
+    {
+      "id": "F2",
+      "name": "Critical depth for \u03c0 twist",
+      "prediction_pi_55": 55.0,
+      "prediction_gamma_phi": 53.76908464969925
+    },
+    {
+      "id": "F3",
+      "name": "Temperature independence",
+      "prediction_pi_55": "temperature_independent",
+      "prediction_gamma_phi": "may_have_thermal_corrections"
+    },
+    {
+      "id": "F4",
+      "name": "Higher Fibonacci behavior",
+      "test": "Look for quantized twist at Fibonacci depths",
+      "prediction": "2\u03c0 at 110, \u03c0/2 at ~27-28"
+    },
+    {
+      "id": "F5",
+      "name": "Prime statistics",
+      "test": "Look for \u03b3+ln(\u03c6) as unit in prime distributions",
+      "status": "untested"
+    }
+  ],
+  "timestamp": "2026-02-05T16:43:29.659151",
+  "constants": {
+    "gamma": 0.5772156649015329,
+    "phi": 1.618033988749895,
+    "inv_phi": 0.6180339887498948,
+    "xi_from_pi": 1.0571198664289054,
+    "xi_from_gamma_phi": 1.0584274899611363
+  }
+}

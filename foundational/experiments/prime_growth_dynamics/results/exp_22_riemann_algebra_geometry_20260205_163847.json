@@ -1,0 +1,42 @@
+{
+  "exp_01_spacing": {
+    "mean_spacing": 2.2463586363636363,
+    "std_spacing": 1.0437953804169415,
+    "small_spacing_rate": 0.08080808080808081,
+    "mean_ratio_to_prediction": 1.6522679186763238,
+    "std_ratio": 0.6015698583523926,
+    "mertens_ratio": 1.471404408542236
+  },
+  "exp_02_gamma": {
+    "mertens_ratio": 0.9987697373973717,
+    "harmonic_gamma_approx": 0.5772656640681646,
+    "harmonic_error": 4.999916663173121e-05,
+    "zero_count_ratio": 1.0107649751416397
+  },
+  "exp_03_phi": {
+    "mean_spacing_ratio": 1.2159221666031228,
+    "distance_to_phi": 0.4021118221467721,
+    "distance_to_inv_phi": 0.597888177853228,
+    "bulk_fraction": 0.797979797979798,
+    "small_large_ratio": 1.302325581395349
+  },
+  "exp_04_decomposition": {
+    "interpretation": "zeros_as_resonance_frequencies",
+    "rh_meaning": "all_interference_at_interface"
+  },
+  "exp_05_constants": {
+    "gamma": 0.5772156649015329,
+    "phi": 1.618033988749895,
+    "xi": 1.0571,
+    "mertens_factor": 1.1229189671337703,
+    "first_zero": 14.134725,
+    "first_zero_over_2pi": 2.2496113529945903
+  },
+  "synthesis": {
+    "framework": "algebra_geometry_interface",
+    "key_constant": "gamma_euler_mascheroni",
+    "zeros_interpretation": "interface_resonance_frequencies",
+    "rh_interpretation": "all_interference_at_balance_point"
+  },
+  "timestamp": "2026-02-05T16:38:47.649830"
+}
