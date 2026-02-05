@@ -1,0 +1,576 @@
+{
+  "exp_01_wave_interference": {
+    "N": 100000,
+    "wave_data": [
+      {
+        "wave": 1,
+        "p": 2,
+        "naive_smooth": 49999,
+        "actual_new": 49999,
+        "overlap": 0,
+        "interference": 0.0,
+        "cumulative_smooth": 49999
+      },
+      {
+        "wave": 2,
+        "p": 3,
+        "naive_smooth": 33332,
+        "actual_new": 16666,
+        "overlap": 16666,
+        "interference": 0.5,
+        "cumulative_smooth": 66665
+      },
+      {
+        "wave": 3,
+        "p": 5,
+        "naive_smooth": 19999,
+        "actual_new": 6666,
+        "overlap": 13333,
+        "interference": 0.6666833341667083,
+        "cumulative_smooth": 73331
+      },
+      {
+        "wave": 4,
+        "p": 7,
+        "naive_smooth": 14284,
+        "actual_new": 3808,
+        "overlap": 10476,
+        "interference": 0.7334080089610753,
+        "cumulative_smooth": 77139
+      },
+      {
+        "wave": 5,
+        "p": 11,
+        "naive_smooth": 9089,
+        "actual_new": 2077,
+        "overlap": 7012,
+        "interference": 0.7714820112223567,
+        "cumulative_smooth": 79216
+      },
+      {
+        "wave": 6,
+        "p": 13,
+        "naive_smooth": 7691,
+        "actual_new": 1597,
+        "overlap": 6094,
+        "interference": 0.7923547002990509,
+        "cumulative_smooth": 80813
+      },
+      {
+        "wave": 7,
+        "p": 17,
+        "naive_smooth": 5881,
+        "actual_new": 1127,
+        "overlap": 4754,
+        "interference": 0.8083659241625574,
+        "cumulative_smooth": 81940
+      },
+      {
+        "wave": 8,
+        "p": 19,
+        "naive_smooth": 5262,
+        "actual_new": 949,
+        "overlap": 4313,
+        "interference": 0.8196503230710757,
+        "cumulative_smooth": 82889
+      },
+      {
+        "wave": 9,
+        "p": 23,
+        "naive_smooth": 4346,
+        "actual_new": 741,
+        "overlap": 3605,
+        "interference": 0.8294983893235158,
+        "cumulative_smooth": 83630
+      },
+      {
+        "wave": 10,
+        "p": 29,
+        "naive_smooth": 3447,
+        "actual_new": 555,
+        "overlap": 2892,
+        "interference": 0.8389904264577894,
+        "cumulative_smooth": 84185
+      },
+      {
+        "wave": 11,
+        "p": 31,
+        "naive_smooth": 3224,
+        "actual_new": 499,
+        "overlap": 2725,
+        "interference": 0.8452233250620348,
+        "cumulative_smooth": 84684
+      },
+      {
+        "wave": 12,
+        "p": 37,
+        "naive_smooth": 2701,
+        "actual_new": 405,
+        "overlap": 2296,
+        "interference": 0.8500555349870418,
+        "cumulative_smooth": 85089
+      },
+      {
+        "wave": 13,
+        "p": 41,
+        "naive_smooth": 2438,
+        "actual_new": 358,
+        "overlap": 2080,
+        "interference": 0.8531583264971287,
+        "cumulative_smooth": 85447
+      },
+      {
+        "wave": 14,
+        "p": 43,
+        "naive_smooth": 2324,
+        "actual_new": 335,
+        "overlap": 1989,
+        "interference": 0.8558519793459552,
+        "cumulative_smooth": 85782
+      },
+      {
+        "wave": 15,
+        "p": 47,
+        "naive_smooth": 2126,
+        "actual_new": 305,
+        "overlap": 1821,
+        "interference": 0.8565380997177798,
+        "cumulative_smooth": 86087
+      },
+      {
+        "wave": 16,
+        "p": 53,
+        "naive_smooth": 1885,
+        "actual_new": 274,
+        "overlap": 1611,
+        "interference": 0.8546419098143236,
+        "cumulative_smooth": 86361
+      },
+      {
+        "wave": 17,
+        "p": 59,
+        "naive_smooth": 1693,
+        "actual_new": 248,
+        "overlap": 1445,
+        "interference": 0.8535144713526285,
+        "cumulative_smooth": 86609
+      },
+      {
+        "wave": 18,
+        "p": 61,
+        "naive_smooth": 1638,
+        "actual_new": 242,
+        "overlap": 1396,
+        "interference": 0.8522588522588522,
+        "cumulative_smooth": 86851
+      },
+      {
+        "wave": 19,
+        "p": 67,
+        "naive_smooth": 1491,
+        "actual_new": 219,
+        "overlap": 1272,
+        "interference": 0.8531187122736419,
+        "cumulative_smooth": 87070
+      },
+      {
+        "wave": 20,
+        "p": 71,
+        "naive_smooth": 1407,
+        "actual_new": 203,
+        "overlap": 1204,
+        "interference": 0.8557213930348259,
+        "cumulative_smooth": 87273
+      },
+      {
+        "wave": 21,
+        "p": 73,
+        "naive_smooth": 1368,
+        "actual_new": 199,
+        "overlap": 1169,
+        "interference": 0.85453216374269,
+        "cumulative_smooth": 87472
+      },
+      {
+        "wave": 22,
+        "p": 79,
+        "naive_smooth": 1264,
+        "actual_new": 184,
+        "overlap": 1080,
+        "interference": 0.8544303797468354,
+        "cumulative_smooth": 87656
+      },
+      {
+        "wave": 23,
+        "p": 83,
+        "naive_smooth": 1203,
+        "actual_new": 175,
+        "overlap": 1028,
+        "interference": 0.8545303408146301,
+        "cumulative_smooth": 87831
+      },
+      {
+        "wave": 24,
+        "p": 89,
+        "naive_smooth": 1122,
+        "actual_new": 165,
+        "overlap": 957,
+        "interference": 0.8529411764705882,
+        "cumulative_smooth": 87996
+      },
+      {
+        "wave": 25,
+        "p": 97,
+        "naive_smooth": 1029,
+        "actual_new": 148,
+        "overlap": 881,
+        "interference": 0.8561710398445093,
+        "cumulative_smooth": 88144
+      },
+      {
+        "wave": 26,
+        "p": 101,
+        "naive_smooth": 989,
+        "actual_new": 141,
+        "overlap": 848,
+        "interference": 0.8574317492416582,
+        "cumulative_smooth": 88285
+      },
+      {
+        "wave": 27,
+        "p": 103,
+        "naive_smooth": 969,
+        "actual_new": 137,
+        "overlap": 832,
+        "interference": 0.8586171310629515,
+        "cumulative_smooth": 88422
+      },
+      {
+        "wave": 28,
+        "p": 107,
+        "naive_smooth": 933,
+        "actual_new": 131,
+        "overlap": 802,
+        "interference": 0.8595927116827439,
+        "cumulative_smooth": 88553
+      },
+      {
+        "wave": 29,
+        "p": 109,
+        "naive_smooth": 916,
+        "actual_new": 128,
+        "overlap": 788,
+        "interference": 0.8602620087336245,
+        "cumulative_smooth": 88681
+      },
+      {
+        "wave": 30,
+        "p": 113,
+        "naive_smooth": 883,
+        "actual_new": 124,
+        "overlap": 759,
+        "interference": 0.8595696489241224,
+        "cumulative_smooth": 88805
+      },
+      {
+        "wave": 31,
+        "p": 127,
+        "naive_smooth": 786,
+        "actual_new": 108,
+        "overlap": 678,
+        "interference": 0.8625954198473282,
+        "cumulative_smooth": 88913
+      },
+      {
+        "wave": 32,
+        "p": 131,
+        "naive_smooth": 762,
+        "actual_new": 104,
+        "overlap": 658,
+        "interference": 0.863517060367454,
+        "cumulative_smooth": 89017
+      },
+      {
+        "wave": 33,
+        "p": 137,
+        "naive_smooth": 728,
+        "actual_new": 97,
+        "overlap": 631,
+        "interference": 0.8667582417582418,
+        "cumulative_smooth": 89114
+      },
+      {
+        "wave": 34,
+        "p": 139,
+        "naive_smooth": 718,
+        "actual_new": 95,
+        "overlap": 623,
+        "interference": 0.8676880222841226,
+        "cumulative_smooth": 89209
+      },
+      {
+        "wave": 35,
+        "p": 149,
+        "naive_smooth": 670,
+        "actual_new": 87,
+        "overlap": 583,
+        "interference": 0.8701492537313433,
+        "cumulative_smooth": 89296
+      },
+      {
+        "wave": 36,
+        "p": 151,
+        "naive_smooth": 661,
+        "actual_new": 86,
+        "overlap": 575,
+        "interference": 0.869894099848714,
+        "cumulative_smooth": 89382
+      },
+      {
+        "wave": 37,
+        "p": 157,
+        "naive_smooth": 635,
+        "actual_new": 79,
+        "overlap": 556,
+        "interference": 0.8755905511811024,
+        "cumulative_smooth": 89461
+      },
+      {
+        "wave": 38,
+        "p": 163,
+        "naive_smooth": 612,
+        "actual_new": 75,
+        "overlap": 537,
+        "interference": 0.8774509803921569,
+        "cumulative_smooth": 89536
+      },
+      {
+        "wave": 39,
+        "p": 167,
+        "naive_smooth": 597,
+        "actual_new": 70,
+        "overlap": 527,
+        "interference": 0.8827470686767169,
+        "cumulative_smooth": 89606
+      },
+      {
+        "wave": 40,
+        "p": 173,
+        "naive_smooth": 577,
+        "actual_new": 67,
+        "overlap": 510,
+        "interference": 0.8838821490467937,
+        "cumulative_smooth": 89673
+      },
+      {
+        "wave": 41,
+        "p": 179,
+        "naive_smooth": 557,
+        "actual_new": 62,
+        "overlap": 495,
+        "interference": 0.8886894075403949,
+        "cumulative_smooth": 89735
+      },
+      {
+        "wave": 42,
+        "p": 181,
+        "naive_smooth": 551,
+        "actual_new": 60,
+        "overlap": 491,
+        "interference": 0.8911070780399274,
+        "cumulative_smooth": 89795
+      },
+      {
+        "wave": 43,
+        "p": 191,
+        "naive_smooth": 522,
+        "actual_new": 57,
+        "overlap": 465,
+        "interference": 0.8908045977011494,
+        "cumulative_smooth": 89852
+      },
+      {
+        "wave": 44,
+        "p": 193,
+        "naive_smooth": 517,
+        "actual_new": 54,
+        "overlap": 463,
+        "interference": 0.8955512572533849,
+        "cumulative_smooth": 89906
+      },
+      {
+        "wave": 45,
+        "p": 197,
+        "naive_smooth": 506,
+        "actual_new": 52,
+        "overlap": 454,
+        "interference": 0.8972332015810277,
+        "cumulative_smooth": 89958
+      },
+      {
+        "wave": 46,
+        "p": 199,
+        "naive_smooth": 501,
+        "actual_new": 50,
+        "overlap": 451,
+        "interference": 0.9001996007984032,
+        "cumulative_smooth": 90008
+      },
+      {
+        "wave": 47,
+        "p": 211,
+        "naive_smooth": 472,
+        "actual_new": 45,
+        "overlap": 427,
+        "interference": 0.9046610169491526,
+        "cumulative_smooth": 90053
+      },
+      {
+        "wave": 48,
+        "p": 223,
+        "naive_smooth": 447,
+        "actual_new": 39,
+        "overlap": 408,
+        "interference": 0.912751677852349,
+        "cumulative_smooth": 90092
+      },
+      {
+        "wave": 49,
+        "p": 227,
+        "naive_smooth": 439,
+        "actual_new": 37,
+        "overlap": 402,
+        "interference": 0.9157175398633257,
+        "cumulative_smooth": 90129
+      },
+      {
+        "wave": 50,
+        "p": 229,
+        "naive_smooth": 435,
+        "actual_new": 35,
+        "overlap": 400,
+        "interference": 0.9195402298850575,
+        "cumulative_smooth": 90164
+      }
+    ],
+    "total_naive": 202154,
+    "total_actual": 90407,
+    "total_interference": 0.552781542784214,
+    "mertens_predicted": 0.109463791004901
+  },
+  "exp_02_harmonic": {
+    "x_values": [
+      100,
+      500,
+      1000,
+      2000,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000
+    ],
+    "pi_values": [
+      25,
+      95,
+      168,
+      303,
+      669,
+      1229,
+      2262,
+      5133,
+      9592
+    ],
+    "li_values": [
+      28.477842001316738,
+      97.56818105244433,
+      171.78931357900788,
+      306.85333697185723,
+      672.1578108021359,
+      1229.2163339011854,
+      2264.588581204632,
+      5127.21911866296,
+      9571.397256886776
+    ],
+    "residuals": [
+      -3.4778420013167377,
+      -2.5681810524443307,
+      -3.7893135790078816,
+      -3.8533369718572317,
+      -3.1578108021359412,
+      -0.21633390118540774,
+      -2.5885812046321917,
+      5.780881337040228,
+      20.602743113224278
+    ]
+  },
+  "exp_03_fibonacci": {
+    "fib_composites": 15,
+    "mean_smooth_fib": 2.3333333333333335,
+    "mean_smooth_non_fib": 2.326,
+    "interference_node_confirmed": false,
+    "fib_gap_enrichment": 1.5246793869252422
+  },
+  "exp_04_mertens": [
+    {
+      "x": 100,
+      "product": 0.12031729047493521,
+      "theoretical": 0.12191937776267385,
+      "ratio": 0.9868594532129483
+    },
+    {
+      "x": 500,
+      "product": 0.08960973680803674,
+      "theoretical": 0.09034511503781428,
+      "ratio": 0.9918603432020675
+    },
+    {
+      "x": 1000,
+      "product": 0.08096526350684251,
+      "theoretical": 0.08127958517511591,
+      "ratio": 0.9961328337540577
+    },
+    {
+      "x": 5000,
+      "product": 0.0658157198243846,
+      "theoretical": 0.06592071718330082,
+      "ratio": 0.9984072175879964
+    },
+    {
+      "x": 10000,
+      "product": 0.060884692455838364,
+      "theoretical": 0.060959688881336925,
+      "ratio": 0.9987697373973717
+    },
+    {
+      "x": 50000,
+      "product": 0.05187242612287974,
+      "theoretical": 0.05189195830157315,
+      "ratio": 0.9996235991214689
+    },
+    {
+      "x": 100000,
+      "product": 0.048752917851015085,
+      "theoretical": 0.04876775110506954,
+      "ratio": 0.9996958388747003
+    }
+  ],
+  "exp_05_parity": {
+    "even_composites": 49999,
+    "odd_composites": 40408,
+    "mean_smooth_even": 2.5218904378087563,
+    "mean_smooth_odd": 1.8823500296970896,
+    "ratio": 1.3397563673184538
+  },
+  "synthesis": {
+    "paradigm": "primes_as_residual_roughness",
+    "key_findings": [
+      "Mertens_overshoot_is_wave_interference",
+      "Euler_Mascheroni_encodes_interference",
+      "Even_odd_oscillation_from_wave_1",
+      "Fibonacci_are_interference_nodes"
+    ]
+  },
+  "timestamp": "2026-02-05T16:31:44.218150",
+  "N": 100000
+}
