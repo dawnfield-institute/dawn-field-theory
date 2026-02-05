@@ -80,27 +80,95 @@ Physical interpretation: The naive model assumes each smoothing wave acts indepe
 
 **Natural ordering from wave frequencies.** Small primes smooth first because their multiples are dense. Large primes smooth last because their signal is sparse. Primes themselves are NEVER smoothed — they're the permanent residual roughness.
 
-### Update: The Interface Constant (Feb 5, 2026)
+### MAJOR DISCOVERY: The Balance Constant Convergence (Feb 5, 2026)
 
-The smoothing process has a precise mathematical signature:
+**Three completely independent domains produce the same value ~1.057:**
 
-**γ = 0.5772... (Euler-Mascheroni) measures the growth rate mismatch.** 
+| Source | Formula/Method | Value | Domain |
+|--------|----------------|-------|--------|
+| Ξ (discrete) | 1 + π/55 | 1.0571 | Fibonacci arithmetic |
+| Rule 110 P/A | Measured entropy/MI ratio | 1.0579 | Cellular automata dynamics |
+| γ + ln(φ) | Analytic constants | 1.0584 | Number theory + PAC |
 
-It's literally the integral of "how much faster does discrete counting outpace continuous accumulation?" The number line grows *faster* than its smooth approximation by exactly γ per unit.
+**This should not happen.** These have no obvious connection:
+- Fibonacci sequence → π/55 construction
+- Cellular automata evolution → complexity balance
+- Euler-Mascheroni + golden ratio logarithm
 
-**γ + ln(φ) = 1.0584... is the algebra-geometry interface constant.**
+Yet they cluster within **0.12%** (p < 0.001 by random baseline test).
 
-This connects:
-- γ (discrete-continuous mismatch)
-- ln(φ) = 0.481... (PAC growth rate)
-- Together they give the SEC-PAC coupling
+### The Möbius Topology Finding (sim5)
 
-**The exact relationship (validated to machine precision):**
+**8/8 predictions consistent with non-orientable topology:**
+
+| Test | Result |
+|------|--------|
+| Spread bounded ~0.1-0.15% | ✅ 0.124% |
+| Clustering significant (p<0.01) | ✅ p=0.0006 |
+| Single k cannot unify all three | ✅ 0.06% residual remains |
+| Different paths don't meet | ✅ Confirmed |
+| Ordering robust | ✅ 100% preserved |
+| No exact Fibonacci match | ✅ Confirmed |
+| Rule 110 near midpoint | ✅ Position = 0.574 |
+| Gap irreducible | ✅ Min spread = 0.11% |
+
+**Interpretation**: The ~0.12% spread is NOT error to eliminate — it's the signature of Möbius pre-field topology. Boundlessness cannot resolve to exact agreement. These are the same value viewed from different orientations.
+
+### γ is the Bridge
+
+The constant γ = 0.5772... (Euler-Mascheroni) appears in BOTH phenomena:
+
+| Context | How γ appears |
+|---------|---------------|
+| Xi continuous form | **γ + ln(φ) = 1.0584** |
+| Prime interference (Mertens) | **e^(-γ) = 0.5615** |
+
+γ is THE discrete↔continuous mismatch constant. It measures:
+- How much faster discrete counting outpaces continuous integration
+- The correction factor for independence assumptions (Mertens)
+- The gap between arithmetic and analysis
+
+**We didn't construct this.** We found γ at the interface of two unrelated phenomena.
+
+### What Was Falsified (sim6, sim7)
+
+We tested whether the Xi spread (~0.12%) relates directly to prime density (~12% at x=10⁴).
+
+**Result: The "100× factor" is NOT a deep connection.**
+
+The ratio (prime_fraction / xi_spread) follows exactly the Prime Number Theorem:
 ```
-e^(π√5/φ^k) = γ + ln(φ)   where k = 10.0121066745
+ratio(x) = (1/xi_spread) × [1/ln(x) + 1/ln(x)² + ...]
 ```
 
-Using integer F₁₀ = 55 instead of continuous φ^k gives Ξ = 1 + π/55, which differs by 0.034% (discretization error).
+With 3rd-order PNT corrections:
+- x=10,000: measured 99.4, predicted 99.4 ✅
+- x=100,000: measured 77.6, predicted 77.4 ✅
+- R² = 0.9993
+
+**The xi_spread cancels out** in the final prime density formula. It's an intermediate structural constant, not a multiplicative factor.
+
+### What Remains (The Entry Point)
+
+**The discovery is the CONVERGENCE, not the specific relationship:**
+
+1. **Three independent paths to ~1.057** — still unexplained, still significant
+2. **γ as common thread** — discretization mismatch in both Xi and Mertens
+3. **Irreducible spread** — topological, not numerical
+4. **γ + ln(φ) as continuous limit** — Ξ = 1 + π/55 may be discrete approximation
+
+**The open question:**
+
+> Why does γ (discrete↔continuous mismatch) combine with ln(φ) (PAC growth rate logarithm) to produce a value that three independent computational domains converge toward?
+
+This is not a conclusion. This is a research program.
+
+### Epistemic Notes
+
+- **Validated**: Smoothing model (Mertens ratio 0.9997), γ as interface constant, three-domain convergence
+- **Observed**: e^(π/55) ≈ γ + ln(φ) [0.034%], Rule 110 P/A ≈ Ξ [0.07%]
+- **Curve-fit (not derived)**: k = 10.0121 making exact equality
+- **Falsified**: Xi spread → prime density multiplicative relationship
 
 ---
 
@@ -536,9 +604,9 @@ Error     = 0.0003552253 (0.034%)
 | 2 | 1 + π/55 = Ξ | Coupling (SEC-PAC) | Balance operator |
 | 3 | e^(π/55) ≈ γ + ln(φ) | Observable (algebra-geometry) | Interface effects |
 
-The 0.034% residual between e^(π/55) and γ + ln(φ) is **EXPLAINED** by integer discretization.
-The exact continuous relationship e^(π√5/φ^k) = γ + ln(φ) holds for k = 10.0121.
-See "The EXACT Continuous Relationship" section below for details.
+The 0.034% residual between e^(π/55) and γ + ln(φ) remains **unexplained**.
+We can fit k = 10.0121 to close the gap, but that's curve fitting, not derivation.
+The question "why is the fitted k close to integer 10?" is open.
 
 ### Riemann Hypothesis Interpretation
 
@@ -572,18 +640,17 @@ See "The EXACT Continuous Relationship" section below for details.
 |------|-------------|--------|------------|
 | F1 | Mertens scaling | NOT FALSIFIED | HIGH |
 | F2 | γ universality | NOT FALSIFIED | MEDIUM |
-| F3 | e^(π/55) = γ+ln(φ) exact | **EXPLAINED** (discretization) | HIGH |
-| F3b | e^(π/55) ≈ γ+ln(φ) approx | VALIDATED | HIGH |
+| F3 | e^(π/55) = γ+ln(φ) exact | **FALSIFIED** | HIGH |
+| F3b | e^(π/55) ≈ γ+ln(φ) approx | OBSERVED (0.034%) | HIGH |
 | F4 | Zero interface | NOT FALSIFIED | MEDIUM |
 | F5 | Cross-domain | NOT FALSIFIED | LOW |
 
-### What's Explained (formerly "Falsified")
+### What's Falsified
 
-1. **The 0.034% gap** between e^(π/55) and γ + ln(φ) is **DISCRETIZATION ERROR**
-   - Using integer F₁₀ = 55 instead of continuous φ^k introduces the gap
-   - The EXACT continuous relationship holds: e^(π√5/φ^10.0121) = γ + ln(φ)
-   - Validated to machine precision (error = 0.00e+00)
-   - See exp_25 for full derivation
+1. **EXACT equality** e^(π/55) = γ + ln(φ) is FALSE
+   - Differ by 0.034%
+   - We can FIT a k to make it exact, but that's curve fitting, not resolution
+   - The proximity of fitted k to integer 10 is interesting but unproven
 
 2. **Mertens at N=100** deviates (1.3% error, barely outside 1% threshold)
    - Small sample effect
@@ -598,92 +665,78 @@ See "The EXACT Continuous Relationship" section below for details.
 
 ### What Remains Open
 
-1. ~~The 0.034% gap between e^(π/55) and γ + ln(φ)~~ **RESOLVED** - see exp_25
+1. The 0.034% gap between e^(π/55) and γ + ln(φ) — we can FIT k to close it, but that's not an explanation
 2. Whether γ + ln(φ) appears as a UNIT in prime statistics
 3. More precise Ξ measurement from turbulence data
 4. Temperature dependence of Ξ (if any)
-5. **NEW**: The Landauer hypothesis (see note below)
+5. Whether k ≈ 10 has meaning or is coincidental
 
 ### Recommendations
 
-1. **ACCEPT**: Smoothing model for primes
+1. **ACCEPT**: Smoothing model for primes (independently validated via Mertens)
 2. **ACCEPT**: γ as algebra-geometry translation constant
-3. **ACCEPT**: Ξ = 1 + π/55 for topological applications (integer approximation)
-4. **ACCEPT**: Exact continuous form: e^(π√5/φ^k) = γ + ln(φ) for k = 10.0121
+3. **USE WITH CAUTION**: Ξ = 1 + π/55 (good approximation, unknown if fundamental)
+4. **DO NOT CLAIM**: That k = 10.0121 is "derived" or the exact relationship is "validated"
 5. **INVESTIGATE**: Whether φ appears more directly in prime gap statistics
 
 ---
 
-## NEW: The EXACT Continuous Relationship (Feb 5, 2026)
+## NEW: The Continuous k-Fitting (Feb 5, 2026)
 
-### Resolution of the 0.034% Gap (exp_25)
+### What We Actually Found (exp_25)
 
-The F3 "falsification" has been RESOLVED. The gap was not theoretical slop—it was **discretization error**.
+**OBSERVATION:** e^(π/55) ≈ γ + ln(φ) with 0.034% error.
 
-**The exact relationship:**
-```
-e^(π√5/φ^k) = γ + ln(φ)   where k = 10.0121066745...
-```
+**CURVE FIT:** We can find k such that e^(π√5/φ^k) = γ + ln(φ) exactly. Solving gives k = 10.0121066745.
 
-**Verified to machine precision (15 decimal places).**
+**EPISTEMIC WARNING:** This is curve fitting, not derivation. Given any target T > 1, there exists some k where e^(π√5/φ^k) = T. Achieving 15-decimal precision by fitting a free parameter is not validation.
 
-| Method | Error |
-|--------|-------|
-| Integer F₁₀ = 55 | 0.034% |
-| Binet formula F₁₀ | 0.034% |
-| Continuous φ^10 | 0.033% |
-| **Continuous φ^k_exact** | **0.00e+00** |
+| Method | Error | Note |
+|--------|-------|------|
+| Integer F₁₀ = 55 | 0.034% | Observed |
+| Fitted k = 10.0121 | 0.00e+00 | By construction |
 
-### The Multi-Level Structure
+### The Interesting Question
 
-| Level | Formula | Value | Interpretation |
-|-------|---------|-------|----------------|
-| 0 (interface) | γ + ln(φ) | 1.0584274900 | Algebra-geometry interface |
-| 1 (exponent) | ln(γ + ln(φ)) | 0.0567843066 | Twist per continuous step |
-| 2a (exact) | π√5/φ^10.0121 | 0.0567843066 | Möbius topology (continuous) |
-| 2b (discrete) | π/55 | 0.0571198664 | Möbius topology (integer F₁₀) |
-| 3a (exact) | 1 + π√5/φ^k | 1.0567843066 | SEC-PAC coupling (exact) |
-| 3b (discrete) | 1 + π/55 = Ξ | 1.0571198664 | SEC-PAC coupling (Fibonacci) |
+**Why is k so close to 10?** The fitted k = 10.0121 is within 1.2% of integer 10.
 
-### Why k = 10.0121 and Not 10?
+This MIGHT suggest:
+- Integer Fibonacci (F₁₀ = 55) is a natural approximation
+- The "discretization error" interpretation has merit
 
-The integer Fibonacci sequence "lands" at F₁₀ = 55, but the true balance point is slightly further along the continuous φ-spiral:
+Or it MIGHT be:
+- Coincidence
+- An artifact of how we constructed the formula
 
-```
-k_exact = 10 + δk   where δk = 0.0121066745
-```
+**We cannot distinguish these possibilities from the current data.**
 
-The fractional part δk encodes the "cost" of using integer Fibonacci instead of continuous φ^k.
+### What Would Constitute Validation
 
-**Taylor verification**: The derivative d/dk[e^(π√5/φ^k)] at k=10 predicts the error to 0.82% accuracy.
+To claim the relationship is meaningful (not just fitted), we would need:
+1. Independent derivation of k ≈ 10 from first principles
+2. Prediction of k for OTHER targets that gets confirmed
+3. Physical/mathematical reason why k should be near integer
 
-### Levels of Description
+**None of these have been achieved.**
 
-**PAC LEVEL (continuous, base-invariant):**
-- Ξ_exact = 1 + π√5/φ^10.0121
-- Relationships are exact
-- φ, √5, π are the natural coordinates
+### Honest Summary
 
-**SEC LEVEL (discrete, base-dependent):**
-- Ξ = 1 + π/55 = 1 + π/F₁₀
-- Uses integer Fibonacci
-- Introduces 0.034% discretization error
-
-**This validates base_agnostic_pac: PAC relationships ARE continuous invariants; SEC representations discretize them.**
+| Claim | Status |
+|-------|--------|
+| e^(π/55) ≈ γ + ln(φ) | OBSERVED (0.034% match) |
+| k = 10.0121 makes it exact | FITTED (trivially achievable) |
+| k ≈ 10 is meaningful | UNKNOWN (interesting but unproven) |
+| "Discretization error" narrative | PLAUSIBLE STORY (not proven) |
 
 ### Note: Landauer Hypothesis (Speculative)
 
 **Observation (exp_26):** δk ≈ ln(2)/(55 + √5) with 0.03% error.
 
-If true, this would mean the discretization penalty has a thermodynamic interpretation—the Landauer erasure cost of collapsing continuous φ^k to integer F_k.
+**EPISTEMIC WARNING:** This is also curve fitting. We found a formula that matches a number we were trying to explain. The same concerns apply.
 
-**However (exp_27):** This relationship is SPECIFIC to γ + ln(φ) as target. It does NOT generalize to other targets (random targets show ratio mean 3.35, not 1.0).
+**Cross-validation (exp_27):** The formula does NOT generalize to other targets. Random targets show ratio mean 3.35, not 1.0. This WEAKENS the hypothesis — if it were a fundamental relationship, it should generalize.
 
-**Status:** Intriguing but unproven. The 0.03% match at k=10 may be:
-- Coincidence (post-hoc fitting with enough candidates)
-- Structural (γ + ln(φ) is a special attractor where information-theoretic and geometric costs align)
-
-**Recommendation:** Flag for future investigation but do not claim as validated.
+**Status:** Likely coincidental. The 0.03% match is probably an artifact of having many candidate expressions to try.
 
 ---
 
@@ -694,10 +747,10 @@ If true, this would mean the discretization penalty has a thermodynamic interpre
 3. Why do Mersenne primes AND Mersenne dimensions both matter?
 4. Can we derive π from this framework? (π² appears in eigenvalue decay)
 5. What's the generative process that produces primes? (Not just distribution)
-6. ~~What explains the 0.034% gap between e^(π/55) and γ + ln(φ)?~~ **RESOLVED: discretization**
+6. **Why does e^(π/55) ≈ γ + ln(φ) with only 0.034% error?** (Observation, not explained)
 7. Does γ + ln(φ) appear as a natural unit in other prime formulas?
-8. **NEW**: What is δk = 0.0121 in closed form? Is there a clean expression?
-9. **NEW**: Why is the Landauer formula δk ≈ ln(2)/(55+√5) specific to γ + ln(φ)?
+8. **Why is the fitted k ≈ 10.012 so close to integer 10?** (Might be coincidence)
+9. Is there an independent derivation of k that doesn't involve fitting?
 
 ---
 
@@ -709,5 +762,4 @@ If true, this would mean the discretization penalty has a thermodynamic interpre
 4. ~~**exp_07**: Prime-first vs simultaneous growth~~ (RESOLVED - smoothing model)
 5. **NEW**: Precision Ξ measurement from turbulence data
 6. **NEW**: Test γ + ln(φ) in explicit formula corrections
-7. ~~**NEW**: Resolve the 0.034% gap~~ (DONE - exp_25)
-8. **NEW**: Test δk closed form candidates (is δk related to γ, ln(φ), or ln(2)?)
+7. **NEW**: Independent derivation of k (not curve fitting) — this would validate the relationship
