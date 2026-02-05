@@ -1,0 +1,69 @@
+{
+  "experiment": "exp_03_growth_models",
+  "timestamp": "2026-02-05T11:02:58.619405",
+  "limit": 10000,
+  "andys_question": "All at once, unit-by-unit, piece-at-a-time, or type sequence?",
+  "tests": {
+    "discrete_continuous": {
+      "simple_fraction_ratio": 0.967400162999185,
+      "gap_diff_diversity": 29,
+      "interpretation": "High simple-fraction ratio suggests discrete structure"
+    },
+    "residue_classes": {
+      "mod6_pattern": "Primes > 3 are \u2261 1 or 5 (mod 6)",
+      "mod30_pattern": "Primes > 5 are \u2261 1,7,11,13,17,19,23,29 (mod 30)",
+      "interpretation": "Channels are predetermined; primes fill them in order"
+    },
+    "depth_cascade": {
+      "depth_medians": {
+        "1": 4523.0,
+        "2": 4778.0,
+        "3": 5037.0,
+        "4": 5126.5,
+        "5": 5364.0,
+        "6": 5256.0,
+        "7": 5508.0,
+        "8": 5472.0,
+        "9": 5888.0,
+        "10": 6080.0,
+        "11": 5120.0,
+        "12": 6144.0,
+        "13": 8192.0
+      },
+      "position_depth_correlation": 0.06660140476215912,
+      "interpretation": "Cascade enforced (primes \u2192 composites), but not strictly ordered within types"
+    },
+    "fibonacci_timing": {
+      "fibonacci_primes": [
+        2,
+        3,
+        5,
+        13,
+        89,
+        233,
+        1597
+      ],
+      "fib_gap_ratio": 0.251628664495114,
+      "fib_enrichment": 13.660117559864085,
+      "near_phi_ratio": 0.020374898125509373,
+      "mean_gap_ratio": 1.7075611335678933,
+      "interpretation": "Fibonacci timing detected: gaps prefer Fibonacci values"
+    },
+    "prime_first": {
+      "generation_distribution": {
+        "0": 1,
+        "1": 1229,
+        "2": 8770
+      },
+      "n_generations": 3,
+      "interpretation": "Primes generate all structure; composites are intersection points"
+    }
+  },
+  "summary": {
+    "structure": "Discrete",
+    "constraints": "Channel (residue class)",
+    "ordering": "Type cascade (primes \u2192 composites)",
+    "mechanism": "Prime injection + Composite crystallization",
+    "answer_to_andy": "Crystallization model: primes seed, composites form at intersections"
+  }
+}

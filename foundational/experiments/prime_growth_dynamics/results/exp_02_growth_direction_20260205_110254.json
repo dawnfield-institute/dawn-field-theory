@@ -1,0 +1,93 @@
+{
+  "experiment": "exp_02_growth_direction",
+  "timestamp": "2026-02-05T11:02:53.878492",
+  "limit": 50000,
+  "andys_question": "Does 12 grow from 11, or does 1 push up?",
+  "tests": {
+    "local_vs_global": {
+      "local_correlation": -0.1991055185707084,
+      "global_correlation": -0.12964394868976684,
+      "winner": "LOCAL (Model B: Frontier Accretion)",
+      "window_size": 100
+    },
+    "history_dependence": {
+      "autocorrelations": [
+        [
+          1,
+          -0.07247496888631963
+        ],
+        [
+          2,
+          -0.031361842321193725
+        ],
+        [
+          3,
+          -0.02032132365928127
+        ],
+        [
+          4,
+          0.024693949836374886
+        ],
+        [
+          5,
+          -0.00788416204813369
+        ],
+        [
+          6,
+          0.0032916259802331237
+        ],
+        [
+          7,
+          0.03444783545745724
+        ],
+        [
+          8,
+          0.018817181564021852
+        ],
+        [
+          9,
+          0.014130339169645628
+        ],
+        [
+          10,
+          -0.010907876885136046
+        ]
+      ],
+      "decay_tau": 33.235172232930516,
+      "sec_memory": 54.3478260869566,
+      "interpretation": "Long memory: Model A (Stack Growth) favored"
+    },
+    "slot_predictability": {
+      "correlation": 0.14813396959212113,
+      "mae": 5.480796326161086,
+      "rmse": 7.391185717116118,
+      "residual_std": 7.390990336656778,
+      "structure_ratio": 0.7628650040959267,
+      "interpretation": "Moderate slot structure with local variation"
+    },
+    "growth_sequence": {
+      "depth_counts": {
+        "0": 1,
+        "1": 1229,
+        "2": 2625,
+        "3": 2569,
+        "4": 1712,
+        "5": 963,
+        "6": 485,
+        "7": 231,
+        "8": 105,
+        "9": 47
+      },
+      "interpretation": "Primes (depth 1) generate all higher depths via multiplication"
+    }
+  },
+  "summary": {
+    "model_scores": {
+      "Stack Growth (A)": 0.39717369667418856,
+      "Frontier (B)": 0.11459706224535461,
+      "Slot-In (C)": 0.14813396959212113
+    },
+    "best_model": "Stack Growth (A)",
+    "key_finding": "Hybrid: primes inject structure, composites crystallize with long memory"
+  }
+}

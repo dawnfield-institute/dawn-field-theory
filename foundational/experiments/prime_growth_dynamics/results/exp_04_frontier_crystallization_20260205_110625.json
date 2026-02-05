@@ -1,0 +1,122 @@
+{
+  "experiment": "exp_04_frontier_crystallization",
+  "timestamp": "2026-02-05T11:06:22.026352",
+  "limit": 30000,
+  "hypothesis": "Primes are frontier points; composites are crystallized interior",
+  "tests": {
+    "frontier_signature": {
+      "prime_signature": "All 1 (create new structure)",
+      "composite_signature": "All 0 (redundant)",
+      "distance_depth_correlation": -0.11496123125750903,
+      "mean_frontier_distance": 4.019511830448922,
+      "interpretation": "Primes ARE the frontier; composites fill interior"
+    },
+    "crystallization_layers": {
+      "layer_statistics": {
+        "1": {
+          "mean": 4.472923588039867,
+          "std": 1.6796904152763326,
+          "n": 6020
+        },
+        "2": {
+          "mean": 2.945536767597326,
+          "std": 1.0177266505881783,
+          "n": 5086
+        },
+        "3": {
+          "mean": 3.8374004623683535,
+          "std": 1.5170979038966117,
+          "n": 3893
+        },
+        "4": {
+          "mean": 2.7943506717189113,
+          "std": 0.9478709305983793,
+          "n": 2903
+        },
+        "5": {
+          "mean": 4.333617747440273,
+          "std": 1.7071310635734598,
+          "n": 2344
+        },
+        "6": {
+          "mean": 2.3867595818815333,
+          "std": 0.6117405901461382,
+          "n": 1722
+        },
+        "7": {
+          "mean": 4.3974151857835215,
+          "std": 1.7176438121518887,
+          "n": 1238
+        },
+        "8": {
+          "mean": 2.8324768756423433,
+          "std": 0.9690449047755375,
+          "n": 973
+        },
+        "9": {
+          "mean": 3.8123249299719886,
+          "std": 1.4333226860800459,
+          "n": 714
+        },
+        "10": {
+          "mean": 2.544,
+          "std": 0.8222311110630637,
+          "n": 500
+        },
+        "11": {
+          "mean": 4.64021164021164,
+          "std": 1.657968399719271,
+          "n": 378
+        },
+        "12": {
+          "mean": 2.3163636363636364,
+          "std": 0.5307845432988405,
+          "n": 275
+        },
+        "13": {
+          "mean": 4.303738317757009,
+          "std": 1.714775004104029,
+          "n": 214
+        },
+        "14": {
+          "mean": 2.813953488372093,
+          "std": 0.8893638686499044,
+          "n": 172
+        },
+        "15": {
+          "mean": 3.4537037037037037,
+          "std": 1.349789141689664,
+          "n": 108
+        }
+      },
+      "depth_gradient": -0.08154592553170387,
+      "interpretation": "NEGATIVE gradient: deeper crystallization near frontier"
+    },
+    "frontier_interior_ratio": {
+      "prime_density": 0.10816666666666666,
+      "prime_composite_ratio": 0.12129027435149885,
+      "one_over_phi": 0.6180339887498948,
+      "one_over_phi_squared": 0.38196601125010515
+    },
+    "sec_frontier_correlation": {
+      "stress_distance_correlation": -0.2759321926881073,
+      "frontier_positive_fraction": 0.9077321069272779,
+      "interior_positive_fraction": 0.8348159509202454,
+      "phi_comparison": 0.6180339887498948
+    },
+    "injection_crystallization_balance": {
+      "mean_injection_crystallization_ratio": 0.12203610896405713,
+      "std_ratio": 0.030802864582585708,
+      "inv_phi": 0.6180339887498948,
+      "inv_phi_squared": 0.38196601125010515,
+      "first_half_mean": 0.1330569232638521,
+      "second_half_mean": 0.11101529466426215
+    }
+  },
+  "synthesis": {
+    "primes": "Frontier points (injection, expansion)",
+    "composites": "Interior points (crystallization)",
+    "phi": "Balance point of frontier/interior dynamics",
+    "growth_model": "Boundary-driven expansion with wake crystallization"
+  }
+}
