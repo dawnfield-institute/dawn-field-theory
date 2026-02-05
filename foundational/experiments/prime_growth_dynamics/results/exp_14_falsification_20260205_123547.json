@@ -1,0 +1,14 @@
+{
+  "null_model": {
+    "real_ratio": 1.6758158247653108,
+    "null_mean": 1.769866991643986,
+    "null_std": 0.019761372991190847,
+    "p_value": 0.0,
+    "survives": true
+  },
+  "bootstrap_ci": {
+    "point_estimate": 1.6758158247653108,
+    "ci_low": 1.6390329670329669,
+    "ci_high": 1.7189145035396625,
+    "one_over_phi": 0.6180339887498948,
+    "in_ci": 
