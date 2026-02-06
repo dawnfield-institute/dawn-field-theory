@@ -1,0 +1,6 @@
+schema_version: "2.0"
+description: "Draft papers and theoretical writeups"
+semantic_scope: "publication"
+files:
+  - "[journal.md]": "Main theoretical paper: The Structure Cost of Erasure"
+  - "[addendum_ln_phi_emergence.md]": "Addendum on ln(φ) emergence in ratios"

@@ -1,0 +1,33 @@
+schema_version: "2.0"
+description: "Landauer erasure experiments demonstrating emergent structure (ξ) from information loss"
+semantic_scope: "implementation"
+proficiency_level: "research"
+estimated_context_weight: 0.8
+validation_type: "automated"
+
+files:
+  - "[README.md]": "Experiment overview and key findings"
+  - "[SYNTHESIS.md]": "Cross-connections to PAC framework and standard model"
+
+child_directories:
+  - name: "scripts"
+    description: "Experiment scripts numbered exp_NN_name.py"
+  - name: "results"
+    description: "JSON output files with timestamps"
+  - name: "journals"
+    description: "Daily research logs"
+  - name: "papers"
+    description: "Draft papers and documentation"
+
+key_findings:
+  - "ξ (structure creation) is temperature-independent → topological, not thermodynamic"
+  - "PAC conservation: P = A + ξ + Θ (Potential = Actual + Structure + Thermal)"
+  - "A/(A+ξ) ≈ ln(φ) at 0.86% precision - golden ratio emergence in information partitioning"
+
+connections:
+  - experiment: "standard_model_connection"
+    relation: "Provides physical mechanism for φ emergence in coupling constants"
+  - experiment: "prime_growth_dynamics"
+    relation: "Shares γ + ln(φ) = Ξ decomposition framework"
+  - experiment: "pac_confluence_xi"
+    relation: "Another domain showing Fibonacci/golden ratio constraints"

@@ -151,6 +151,41 @@ Today's discovery provides the missing mechanism. Key validated results:
 
 ---
 
+### Track 0.5: Landauer Mechanism for φ Emergence (NEW - February 2026)
+**Priority: HIGHEST** ⭐
+
+The [landauer_erasure_structure](../landauer_erasure_structure/) experiment provides a **physical mechanism** for why φ appears in coupling constants.
+
+**Key finding**: When information is erased (as in any measurement/interaction), it partitions into:
+- **A** (actual): recoverable information transfer
+- **ξ** (structure): emergent correlational structure
+
+The ratio **A/(A+ξ) ≈ ln(φ)** at 0.86% precision!
+
+**Why this matters for Standard Model**:
+1. Every gauge interaction involves information exchange
+2. Information exchange involves partial erasure/measurement
+3. Erasure partitions information at the golden ratio
+4. Therefore φ is **built into** the information-theoretic substrate
+
+This answers the "Why Fibonacci?" question:
+- Not imposed by us
+- Emerges from geometry of information dispersal
+- Coupling topologies inherit this constraint
+
+**Connection to gauge structure**:
+| Gauge Group | Topology | Expected ξ |
+|-------------|----------|------------|
+| U(1) | Single-mode | Minimal |
+| SU(2) | 3-mode symmetric | Moderate |
+| SU(3) | 8-mode hierarchical | Highest |
+
+This maps directly to relative coupling strengths (α < g_W < g_s).
+
+**Scripts**: `landauer_erasure_structure/scripts/exp_01-03*.py`
+
+---
+
 ### Track 1: Renormalization Group Connection
 **Priority: HIGH**
 

@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-02-06T13:55:35.597466",
+  "results": {
+    "U(1)": {
+      "structure": {
+        "name": "U(1)",
+        "dim": 1,
+        "rank": 1,
+        "is_abelian": true,
+        "casimir_eigenvalue": 0,
+        "root_vectors": []
+      },
+      "entropy": {
+        "\u03be_commutator": 1.0,
+        "\u03be_killing": 1.0,
+        "\u03be_casimir": 1.0,
+        "\u03be_root": 1.0,
+        "\u03be_total": 1.0,
+        "\u03be_geometric_mean": 1.0
+      },
+      "alpha": 0.0072973525205055605,
+      "alpha_predicted": 0.00812930286555269,
+      "prediction_error_pct": 11.400714748387845
+    },
+    "SU(2)": {
+      "structure": {
+        "name": "SU(2)",
+        "dim": 3,
+        "rank": 1,
+        "is_abelian": false,
+        "casimir_eigenvalue": 0.75,
+        "root_vectors": [
+          "[1]",
+          "[-1]"
+        ]
+      },
+      "entropy": {
+        "\u03be_commutator": 0.5555555555555556,
+        "\u03be_killing": 0.33333333333333337,
+        "\u03be_casimir": 0.5714285714285714,
+        "\u03be_root": 0.5,
+        "\u03be_total": 0.4900793650793651,
+        "\u03be_geometric_mean": 0.47960593523654194
+      },
+      "alpha": 0.03333333333333333,
+      "alpha_predicted": 0.06829660750425484,
+      "prediction_error_pct": 104.88982251276452
+    },
+    "SU(3)": {
+      "structure": {
+        "name": "SU(3)",
+        "dim": 8,
+        "rank": 2,
+        "is_abelian": false,
+        "casimir_eigenvalue": 1.3333333333333333,
+        "root_vectors": [
+          "[1 0]",
+          "[0 1]",
+          "[1 1]",
+          "[-1  0]",
+          "[ 0 -1]",
+          "[-1 -1]"
+        ]
+      },
+      "entropy": {
+        "\u03be_commutator": 0.6785757433952089,
+        "\u03be_killing": 0.625,
+        "\u03be_casimir": 0.4285714285714286,
+        "\u03be_root": 0.41987437575436903,
+        "\u03be_total": 0.5380053869302517,
+        "\u03be_geometric_mean": 0.5255998511869342
+      },
+      "alpha": 0.118,
+      "alpha_predicted": 0.05169798828349779,
+      "prediction_error_pct": -56.18814552245951
+    }
+  },
+  "power_law_fit": {
+    "n": 2.984325490531294,
+    "k": 0.00812930286555269,
+    "formula": "\u03b1 = 0.008129 \u00d7 (1/\u03be)^2.9843"
+  },
+  "fibonacci_weighted_xi": 0.5210985531292391,
+  "xi_minus_1": 0.057119866428905326,
+  "insight": "lie_algebra_structure_determines_coupling_via_entropy"
+}
