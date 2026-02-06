@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-02-06T13:49:41.479857",
+  "n_samples": 500000,
+  "seed": 42,
+  "results": {
+    "U(1) - EM": {
+      "P": 1.0,
+      "A": 0.999999879921603,
+      "xi": 0.0,
+      "theta": 1.2007839700345357e-07,
+      "conservation_check": 1.0,
+      "n_modes": 1
+    },
+    "SU(2) - Weak": {
+      "P": 1.0,
+      "A": 0.24772512064755858,
+      "xi": 0.027598611304728925,
+      "theta": 0.7246762680477125,
+      "conservation_check": 1.0,
+      "n_modes": 3
+    },
+    "SU(3) - Strong": {
+      "P": 1.0,
+      "A": 0.12181665312487332,
+      "xi": 0.007931612340528865,
+      "theta": 0.8702517345345978,
+      "conservation_check": 1.0,
+      "n_modes": 8
+    },
+    "Higgs": {
+      "P": 1.0,
+      "A": 0.9999971720273331,
+      "xi": 0.0,
+      "theta": 2.827972666930023e-06,
+      "conservation_check": 1.0,
+      "n_modes": 1
+    },
+    "Full SM (13 modes)": {
+      "P": 1.0,
+      "A": 0.0656681607159286,
+      "xi": 0.002638393070026562,
+      "theta": 0.9316934462140448,
+      "conservation_check": 1.0,
+      "n_modes": 13
+    }
+  },
+  "insight": "local_topology_determines_xi_under_global_conservation"
+}

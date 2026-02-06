@@ -1,0 +1,7 @@
+schema_version: "2.0"
+description: "Experiment scripts for Landauer erasure structure analysis"
+semantic_scope: "implementation"
+files:
+  - "[exp_01_landauer_xi.py]": "Core erasure simulation with full information budget"
+  - "[exp_02_topology_analysis.py]": "Temperature independence and topology dependence"
+  - "[exp_03_ratio_analysis.py]": "Analysis of ratios against PAC constants"
