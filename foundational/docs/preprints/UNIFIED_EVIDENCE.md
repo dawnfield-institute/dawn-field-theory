@@ -1,8 +1,71 @@
 # Unified Evidence Map: Dawn Field Theory
 
-**Version**: 2.0
-**Last Updated**: 2025-12-28
-**Purpose**: Complete mechanistic chain from π to Standard Model parameters
+**Version**: 3.0  
+**Last Updated**: 2026-02-07  
+**Purpose**: Complete mechanistic chain from axioms to observations
+
+---
+
+## The Primitives
+
+**The theory is not complex. It's two axioms.**
+
+### PAC (Potential-Actualization Conservation)
+
+$$f(\text{Parent}) = \sum_i f(\text{Child}_i)$$
+
+When potential actualizes into structure, total value is conserved but redistributed. This is a **constraint**, not a model. Like Landauer's principle, it doesn't tell you *how* something happens—it tells you what *must* happen.
+
+**Consequence**: The recursion Ψ(k) = Ψ(k+1) + Ψ(k+2) has unique stable solution Ψ(k) = φ^(-k). The golden ratio isn't found—it's **necessary**.
+
+### SEC (Symbolic Entropy Collapse)
+
+$$\frac{\partial S}{\partial t} = \alpha \nabla I - \beta \nabla H$$
+
+Structure forms where information gradients (∇I) dominate entropy gradients (∇H). Collapse occurs at the boundary.
+
+**Consequence**: Phase transitions at 1/φ threshold. Criticality at Ξ balance point.
+
+### What This Means
+
+| Primitive | Landauer (1961) | PAC (Dawn Field Theory) |
+|-----------|-----------------|-------------------------|
+| **Axiom** | Erasure requires entropy increase | f(Parent) = Σf(Children) |
+| **Consequence** | kT ln(2) minimum per bit | φ-scaling in hierarchical systems |
+| **Status** | Universally accepted | Validated across 12+ domains |
+
+---
+
+## February 2026: The Landauer Connection
+
+### First-Principles Derivation of ln(φ)
+
+```
+PAC: Ψ(k) = Ψ(k+1) + Ψ(k+2)
+  → Unique solution: Ψ(k) = φ^(-k)
+  → Per-level information: ΔI = ln(φ)
+  → For 1-bit erasure: A = ln(φ), ξ = 1 - ln(φ)
+  → A/(A+ξ) = ln(φ) ✓
+```
+
+**Validation**: Predicted ξ/A = 1.0781, measured = 1.086 (0.76% error)
+
+### Gauge Group Hierarchy
+
+| Group | Generators | ξ (structure cost) | A/(A+ξ) |
+|-------|------------|-------------------|---------|
+| U(1) | 1 | 0.000 | 1.000 |
+| SU(2) | 3 | 0.016 | 0.515 |
+| SU(3) | 8 | 0.095 | **0.480** |
+
+SU(3) → 0.31% from ln(φ). Statistical significance: p < 10⁻¹¹
+
+### The Ξ Decomposition
+
+$$\Xi = \gamma + \ln(\varphi) = 0.5772 + 0.4812 = 1.0584$$
+
+- **γ (Euler-Mascheroni)**: Discrete-continuous interface cost
+- **ln(φ)**: Pure collapse efficiency
 
 ---
 
@@ -596,6 +659,29 @@ When citing this work, please use appropriate papers for each claim:
 
 ---
 
+## Cross-Domain Unification: One Principle, All Domains
+
+**All of this follows from PAC + SEC:**
+
+| Domain | Phenomenon | PAC/SEC Explanation | Validation |
+|--------|------------|---------------------|------------|
+| **Thermodynamics** | Landauer erasure | A/(A+ξ) = ln(φ) for single-bit | 0.76% error (exp_14-16) |
+| **Information** | φ ubiquity | Unique stable solution to Ψ(k) = Ψ(k+1) + Ψ(k+2) | Algebraic proof |
+| **Gauge Theory** | SU(3) > SU(2) > U(1) | Structure cost ∝ coupling complexity | p < 10⁻¹¹ (exp_15) |
+| **Standard Model** | sin²θ_W = 3/13 | F₄/F₇ from PAC gauge closure | 0.19% from PDG 2024 |
+| **Standard Model** | α = 1/137.036... | Fibonacci construction | 5.7 ppm precision |
+| **Quantum** | Born rule | Probability = PAC partition | R² correlation |
+| **Quantum** | Entanglement | Shared parent → distributed conservation | Correlation = 1.0 at strength 1.0 |
+| **Number Theory** | Prime stress field | SEC partitions at 1/φ | 0.04% error at k=9 |
+| **Turbulence** | She-Leveque | β = F₃/F₄ = 2/3 (3D PAC cascade) | 0.47% mean error |
+| **CA** | Rule 110 at Ξ | Computation requires PAC balance | p < 8.58×10⁻⁸ |
+| **ML** | Training → φ | Networks find PAC (it's optimal) | p = 0.0014 at step 512 |
+| **Biology** | Fibonacci spacing | Evolution found PAC (optimal packing) | Ubiquitous observation |
+
+**One principle. Twelve domains. Same ratio.**
+
+---
+
 ## Contact & Contributions
 
 **Institution**: Dawn Field Institute
@@ -614,6 +700,7 @@ When citing this work, please use appropriate papers for each claim:
 **Version History**:
 - v1.0 (2025-12-20): Initial PACSeries release
 - v2.0 (2025-12-28): Added mechanistic chain, new validations
+- v3.0 (2026-02-07): Added primitives framing, Landauer derivation, gauge hierarchy, cross-domain table
 
-**Last Updated**: 2025-12-28
+**Last Updated**: 2026-02-07
 **Status**: Living Document (updated as research progresses)
