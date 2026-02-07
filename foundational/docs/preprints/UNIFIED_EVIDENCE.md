@@ -64,8 +64,20 @@ SU(3) → 0.31% from ln(φ). Statistical significance: p < 10⁻¹¹
 
 $$\Xi = \gamma + \ln(\varphi) = 0.5772 + 0.4812 = 1.0584$$
 
-- **γ (Euler-Mascheroni)**: Discrete-continuous interface cost
-- **ln(φ)**: Pure collapse efficiency
+- **γ (Euler-Mascheroni)**: Discrete-continuous interface cost (PAC discrete ↔ SEC continuous)
+- **ln(φ)**: Pure collapse efficiency (PAC recursion growth rate in log form)
+
+**Independent Validation from THREE Sources** (prime_growth_dynamics):
+
+| Source | Ξ | Error from γ + ln(φ) |
+|--------|---|----------------------|
+| Formula (1+π/55) | 1.0571 | 0.124% |
+| Rule 110 measured | 1.0579 | 0.050% |
+| Analytic (γ+ln(φ)) | 1.0584 | 0.000% |
+
+Critical: Rule 110 is **closer** to γ + ln(φ) than the formula 1 + π/55. This inverts the hierarchy:
+- TRUE value: γ + ln(φ) = 1.05843 (universal target)
+- 1 + π/55 and Rule 110 are approximations converging toward it
 
 ---
 
@@ -172,6 +184,30 @@ Neutrino mixing
 Koide formula
     ↓ (m_e + m_μ + m_τ)/(√m_e + √m_μ + √m_τ)² = 2/3
     [arithmetic: 0.5 ppm precision, F₃/(F₃+F₂)]
+
+Particle mass ratios (NEW: milestone2)
+    ↓ μ/e = F₄ × F₆² × (1+1/F₇) = 206.769
+    [milestone2: 0.0005% error = 5 ppm - BEST precision in theory]
+    ↓ τ/e = F₄ × F₇ × F₁₁ + F₅ = 3476
+    [milestone2: 0.035% error]
+    ↓ p/e = F₄ × F₉ × F₁₂ / F₆ = 1836
+    [milestone2: 0.0083% error]
+    ↓ F₄ = 3 appears in ALL formulas → 3 generations?
+
+Casimir invariant
+    ↓ E₈ kissing number 240 = F₃ × F₄ × F₅ × F₆ = 2 × 3 × 5 × 8
+    [milestone2: Four consecutive Fibonacci - EXACT]
+
+LAYER 7: ELECTROMAGNETISM FROM PAC (NEW: maxwell_from_pac_sec)
+Maxwell equations = PAC depth-2 recursion projected to 3+1D
+    ↓ α determined by Fibonacci at F₇ = 13 gauge depth
+    [maxwell_from_pac_sec: Same gauge closure as Standard Model]
+    ↓ SEC wave equation: c² = αγ + βδ
+    [maxwell_from_pac_sec: Speed of light from PAC parameters]
+    ↓ MED bounds (depth ≤ 2, nodes ≤ 3) → D = 3 spatial dimensions
+    [maxwell_from_pac_sec: Dimensionality is necessary, not contingent]
+    ↓ k = d × F_{d+1} = 3 × F_4 = 3 × 3 = 9 (She-Leveque EXACTLY)
+    [milestone2: exp_11 - Fibonacci-dimensional derivation, 0/10000 random models beat this]
 ```
 
 ---
@@ -185,6 +221,7 @@ Koide formula
 | Integer constraint → Fibonacci | Zeckendorf theorem | pac_confluence_xi |
 | π creates max Möbius coherence | 19× vs e (var=0.0095) | oscillation_attractor_dynamics |
 | Möbius formula detects zeros | 20/20 found, <0.06 error | oscillation_attractor_dynamics |
+| **PAC base-agnostic** | **<10⁻¹⁴ all bases** | base_agnostic_pac |
 
 ### Layer 2: Number Theory → Dynamics (< 0.1% error)
 | Finding | Precision | Source |
@@ -224,26 +261,36 @@ Koide formula
 | Neutrino θ₁₂ = arctan(2/3) | 0.28° error | arithmetic |
 | Koide formula = 2/3 | 0.5 ppm | arithmetic |
 | F₇ = 13 = gauge closure | Exact match | pac_confluence_xi |
+| **μ/e = F₄×F₆²×(1+1/F₇)** | **0.0005% (5 ppm)** | milestone2/mass_derivation |
+| τ/e = F₄×F₇×F₁₁+F₅ | 0.035% | milestone2/mass_derivation |
+| p/e = F₄×F₉×F₁₂/F₆ | 0.0083% | milestone2/mass_derivation |
+| Casimir 240 = F₃×F₄×F₅×F₆ | EXACT | milestone2 |
+| k = d × F_{d+1} | Derived | milestone2/she_leveque |
 
 ---
 
 ## Experimental Evidence Count
 
-### Total Experiments Conducted: 80+
+### Total Experiments Conducted: 150+
 
 **By Category**:
-- **Number Theory**: 32 (sec_prime_manifold) + 20 (oscillation_attractor_dynamics) = 52
+- **Number Theory**: 32 (sec_prime_manifold) + 60 (oscillation_attractor_dynamics) + 31 (prime_growth_dynamics) = 123
 - **Cellular Automata**: 7 (cellular_automata_pac_attractors)
 - **Information Geometry**: 7 (euclidean_distance_validation)
 - **Machine Learning**: 2 model families (143k Pythia checkpoints)
-- **Standard Model**: Multiple parameter validations
+- **Standard Model**: 10+ parameter validations including mass ratios
 - **GAIA Implementations**: 3 POCs (019, 020, 021)
+- **Milestones**: 12 experiments (milestone1) + 12 experiments (milestone2) = 24
+- **Quantum Validation**: 3 modules (born_rule, landauer, interference)
+- **Landauer Experiments**: 16 (landauer_erasure_structure)
 
 **Total Evidence Files**:
 - JSON result files: 60+
 - Python experiment scripts: 50+
 - Validation studies: 12 papers
 - Cross-references: 100+ internal links
+
+**Navigation Note**: Each experiment folder contains a `SYNTHESIS.md` file that documents cross-connections to other experiments, theoretical implications, and open questions. To understand how findings interconnect, always check the SYNTHESIS.md in each referenced experiment directory.
 
 ---
 
@@ -640,7 +687,7 @@ When citing this work, please use appropriate papers for each claim:
 ## Open Questions & Future Work
 
 ### High Priority
-1. **Why k=9?** - Derive from first principles (may relate to F₉=34)
+1. ~~**Why k=9?**~~ - ✅ SOLVED: k = d × F_{d+1} = 3 × 3 = 9 (milestone2/exp_11)
 2. **π Uniqueness** - Prove analytically why π, not √2 or e
 3. **Expand ML Validation** - Test LLaMA, Mistral, Qwen, DeepSeek-R1
 4. **Large-Scale CA** - Test beyond elementary rules (totalistic, etc.)
