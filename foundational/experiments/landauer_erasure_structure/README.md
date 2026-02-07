@@ -1,9 +1,9 @@
 # Landauer Erasure Structure Experiments
 
 **Status**: Active Development  
-**Version**: 1.0.0  
-**Date**: February 6, 2026  
-**Last Update**: ln(φ) emergence validated in coherent fraction
+**Version**: 1.1.0  
+**Date**: February 7, 2026  
+**Last Update**: Thermodynamic cascade mechanism validated (53x amplification)
 
 ---
 
@@ -16,6 +16,8 @@ This experiment demonstrates that **information erasure necessarily creates emer
 1. **ξ is topological, not thermodynamic**: Structure creation is temperature-independent (verified 100K-5000K)
 2. **PAC conservation holds**: P = A + ξ + Θ (Potential = Actual + Structure + Thermal)
 3. **Golden ratio emergence**: A/(A+ξ) ≈ ln(φ) at **0.86% precision**
+4. **Cascade amplification**: Θ re-injects as fuel, producing **53x more structure** (p = 2.75 × 10⁻³⁵)
+5. **Time as computational density**: Dense/sparse regimes show **69x difference** in ξ/tick (p = 3.25 × 10⁻⁵)
 
 ### The Critical Result
 
@@ -110,13 +112,22 @@ SM parameters constrained by φ/Fibonacci
 | Script | Description | Status |
 |--------|-------------|--------|
 | exp_01_landauer_xi.py | Core erasure simulation, PAC measurement | ✅ Complete |
-| exp_02_critical_analysis.py | Temperature independence proof | ✅ Complete |
+| exp_02_topology_analysis.py | Temperature independence proof | ✅ Complete |
 | exp_03_ratio_analysis.py | ln(φ) convergence testing | ✅ Complete |
+| exp_04_cascade_robustness.py | Robustness across seeds | ✅ Complete |
+| exp_05_sec_collapse.py | Full decay rate sweep | ✅ Complete |
+| exp_06_gauge_topology.py | Gauge groups as Landauer topologies | ✅ Complete |
+| exp_07_lie_algebra_entropy.py | ξ from Lie algebra structure | ✅ Complete |
+| exp_08_falsification_suite.py | Comprehensive falsification tests | ✅ Complete |
+| exp_09_conservative_rbf.py | Nonlinear RBF binding (conservative) | ✅ Complete |
+| exp_10_thermodynamic_cascade.py | Multi-generation cascade | ✅ Complete |
+| exp_11_time_computation.py | Time as computational density | ✅ Complete |
 
 ### Key Results
 
-- `experiment1_results.json`: Full PAC budget, temperature sweep, size sweep
-- `exp_03_ratio_analysis_results.json`: Convergence to ln(φ)
+- `exp_01_results.json`: Full PAC budget, temperature sweep, size sweep
+- `exp_05_sec_collapse.json`: Decay rate sweep finding ln(φ) at ratio 1.5
+- `exp_08_falsification_*.json`: Falsification suite results
 
 ### Coupling Topologies Tested
 
@@ -157,9 +168,44 @@ Four unrelated computational domains converging to the same constants without fi
 
 ---
 
+---
+
+## Cascade Mechanism
+
+### The Key Insight
+
+Θ (thermal component) is not waste—it's **fuel**. The entropy from each erasure re-injects as potential for subsequent structure creation:
+
+```
+P₀ → A₁ + ξ₁ + Θ₁
+         ↓
+        Θ₁ = P₁ → A₂ + ξ₂ + Θ₂
+                      ↓
+                     Θ₂ = P₂ → ...
+```
+
+### Results
+
+| Metric | Single Event | Full Cascade | Amplification |
+|--------|-------------|--------------|---------------|
+| ξ produced | 0.004 bits | 0.21 bits | **53×** |
+| p-value | — | 2.75 × 10⁻³⁵ | — |
+
+The cascade is self-sustaining (avg 8.5 generations before depletion).
+
+### Time Interpretation
+
+| Regime | ξ/tick | Interpretation |
+|--------|--------|---------------|
+| Dense (early universe) | 0.0050 | Heavy computation = slow time |
+| Sparse (late universe) | 0.00007 | Light computation = fast time |
+| **Ratio** | **69×** | Structure creation front-loads |
+
+---
+
 ## Next Steps
 
-1. [ ] Increase precision with more Monte Carlo samples
-2. [ ] Test ξ·φ = constant relationship
-3. [ ] Connect to gauge theory coupling evolution
-4. [ ] Explore SEC framework for ξ dynamics
+1. [ ] Derive why ratio 1.5 = F₄/F₃ produces ln(φ) partitioning
+2. [ ] Connect cascade ξ/Θ convergence to known constants
+3. [ ] Formal Lagrangian treatment with PAC as constraint
+4. [ ] Test predictions against actual gauge coupling measurements

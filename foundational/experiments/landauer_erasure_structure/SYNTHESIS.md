@@ -1,7 +1,7 @@
 # Synthesis: Landauer Erasure Structure
 
 **Status**: Active Research - Evidence Established  
-**Last Updated**: 2026-02-06
+**Last Updated**: 2026-02-07
 
 ---
 
@@ -22,6 +22,12 @@ The fine structure constant α is not a "magic number" - it's the thermodynamic 
 4. **Gauge groups as topologies**: SU(3) most coherent (lowest ξ) → strongest coupling
 5. **The α formula with Landauer interpretation**: α = (F₃/F₄) × (1/φ) × [(Ξ-1)/π] × correction
 6. **Falsification survives**: F₁₀ = 55 uniquely optimal; only 2/3M tuples satisfy both α AND sin²θ_W
+
+### Cascade Findings (exp_09 through exp_11)
+7. **Θ is generative**: Thermal component re-injects as potential for next generation
+8. **Cascade amplification**: 53× more ξ than single event (p = 2.75 × 10⁻³⁵)
+9. **Nonlinear RBF creates emergent ξ** beyond linear coupling (p = 2.10 × 10⁻³²)
+10. **Time = computational density**: 69× difference between dense/sparse regimes (p = 3.25 × 10⁻⁵)
 
 ---
 
