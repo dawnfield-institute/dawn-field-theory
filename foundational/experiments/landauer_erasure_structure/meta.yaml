@@ -1,8 +1,8 @@
 schema_version: "2.0"
-description: "Landauer erasure experiments demonstrating emergent structure (ξ) from information loss"
+description: "Landauer erasure experiments demonstrating emergent structure (ξ) from information loss and thermodynamic cascade amplification"
 semantic_scope: "implementation"
 proficiency_level: "research"
-estimated_context_weight: 0.8
+estimated_context_weight: 0.9
 validation_type: "automated"
 
 files:
@@ -11,7 +11,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Experiment scripts numbered exp_NN_name.py"
+    description: "Experiment scripts numbered exp_NN_name.py (11 total)"
   - name: "results"
     description: "JSON output files with timestamps"
   - name: "journals"
@@ -23,6 +23,9 @@ key_findings:
   - "ξ (structure creation) is temperature-independent → topological, not thermodynamic"
   - "PAC conservation: P = A + ξ + Θ (Potential = Actual + Structure + Thermal)"
   - "A/(A+ξ) ≈ ln(φ) at 0.86% precision - golden ratio emergence in information partitioning"
+  - "Θ re-injects as fuel: cascade produces 53× more ξ than single event (p = 2.75 × 10⁻³⁵)"
+  - "Time = computational density: 69× difference between dense/sparse regimes"
+  - "Nonlinear RBF binding creates emergent ξ beyond linear coupling (p = 2.10 × 10⁻³²)"
 
 connections:
   - experiment: "standard_model_connection"
