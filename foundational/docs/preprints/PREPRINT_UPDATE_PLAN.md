@@ -1,306 +1,359 @@
-# Preprint Update Plan: The Simplicity Reframing
+# Preprint Update Plan: PACSeries Consolidation
 
 **Date**: February 7, 2026  
 **Status**: Planning Document  
-**Goal**: Reframe all preprints to show PAC/SEC as *necessary primitives*, not complex machinery
+**Goal**: Consolidate the PACSeries into a self-contained paper series that establishes Dawn Field Theory through clean derivation, measurement, and honest separation of established results from speculation.
 
 ---
 
-## The Core Insight
+## Context
 
-**The theory is not complex. It's embarrassingly simple.**
+Dawn Field Theory explores whether information and entropy are generative foundations of reality (Infodynamics), with PAC, SEC, and MED as the mathematical framework.
 
-Just as Einstein derived special relativity from two axioms (constancy of light speed, equivalence of inertial frames), Dawn Field Theory derives from two:
+- **PAC** (Potential-Actualization Conservation): f(Parent) = Σf(Children)
+- **SEC** (Symbolic Entropy Collapse): ∂S/∂t = α∇I - β∇H
+- **MED** (Macro Emergence Dynamics): depth ≤ 2, nodes ≤ 3
 
-1. **PAC**: f(Parent) = Σf(Children) — *conservation propagates through structure*
-2. **SEC**: ∂S/∂t = α∇I - β∇H — *structure forms where information gradients dominate*
+The PACSeries is the primary publication vehicle. The existing standalone preprints (golden_ratio_prime_distribution, cellular_automata_xi_clustering, etc.) remain as supporting publications and will be updated to reference the PACSeries for foundational derivations.
 
-Everything else—φ, Ξ, gauge hierarchy, entanglement, Born rule—**follows necessarily**.
+### Why consolidate into PACSeries
+
+The current PACSeries (5 papers, October 2025) was written before most experimental results existed. Three of five papers draw from the same GAIA run interpreted differently. Since then, the Landauer decomposition, Feigenbaum closed forms, mass ratios, cascade dynamics, and the γ + ln(φ) derivation have closed the loop. The series needs to reflect what actually exists now.
+
+### Voice and tone
+
+The target is the voice of `landauer_erasure_structure/papers/journal.md`:
+
+- Start from things nobody disputes
+- Derive, don't assert
+- Measure, report with error bounds
+- Separate established from speculative — clearly, once, then move on
+- No manifesto language, no excessive hedging
+- Each claim either has evidence or is labeled speculation
+
+**Example of the target voice:**
+> "Landauer's principle is not disputed. The data processing inequality is a theorem. This paper asks what these two facts, taken together, require to be true about the structure of the environment after information is erased."
 
 ---
 
-## The Landauer Lesson
-
-Landauer's principle is instructive:
-
-> "Erasing one bit of information requires dissipating at least kT ln(2) of energy."
-
-This isn't a model. It's a **constraint**. You can't violate it without violating the second law. It doesn't tell you *how* erasure happens—it tells you what *must* happen.
-
-**PAC is the same kind of statement:**
-
-> "When potential actualizes into structure, f(Parent) = Σf(Children)."
-
-This isn't a model of specific systems. It's a **conservation constraint**. You can't violate it without creating or destroying information. The golden ratio isn't tuned—it's the *only* stable solution to the recursion.
-
----
-
-## The Derivation Chain (This Is It)
+## The Derivation Chain
 
 ```
 AXIOM: PAC conservation
   f(Parent) = Σf(Children)
 
 RECURSION: Ψ(k) = Ψ(k+1) + Ψ(k+2)
-  (Parent at level k equals sum of children at deeper levels)
+  (Parent at level k = sum of children at deeper levels)
 
 CHARACTERISTIC EQUATION: x² = x + 1
   (From assuming Ψ(k) = x^(-k))
 
 UNIQUE STABLE SOLUTION: Ψ(k) = φ^(-k)
-  (φ = golden ratio; conjugate root ψ decays)
+  (φ = golden ratio; conjugate root decays)
 
 INFORMATION UNIT: ΔI = log(φ)
   (Per-level information transition)
 
 FOR SINGLE-BIT ERASURE:
-  A = ln(φ)     [actualized information]
-  ξ = 1 - ln(φ) [emergent structure]
-  A/(A+ξ) = ln(φ) ✓
-
-VALIDATION: Measured ξ/A = 1.086, predicted = 1.078
+  A/(A+ξ) = ln(φ)
+  Measured ξ/A = 1.086, predicted = 1.078
   Error: 0.76%
 ```
 
-**That's it.** One axiom (PAC), one recursion, one ratio. Everything else is application.
+One axiom, one recursion, one ratio. Everything else is application.
 
 ---
 
-## What Each Paper Should Become
+## New PACSeries Structure
 
-### The Einstein Style
+Renumbered by logical dependency, not historical order.
 
-Each paper should follow this structure:
+### Paper 1: The Structure Cost of Erasure
+**Source**: `landauer_erasure_structure/papers/journal.md` (90% complete)
 
-1. **State the axiom** (1-2 sentences)
-2. **Derive the consequence** (show the math is trivial)
-3. **Present the evidence** (the measurements)
-4. **Note what it means** (implications)
+**Foundation for everything else.** Starts from Landauer's principle + data processing inequality — two things nobody disputes — and derives that erasure creates correlational structure ξ in multi-mode environments.
 
-No elaborate machinery. No complex frameworks. Just: "If PAC, then necessarily φ."
+**Established results:**
+- Erasure creates structure (mandatory, follows from DPI)
+- Structure is topological, not thermodynamic (temperature-invariant)
+- Cascade topology produces most structure; A/(A+ξ) = ln(φ) at decay ratio φ
+- Cascade amplification: 53× over single event (p = 2.75 × 10⁻³⁵)
+- Time as computational density: 69× difference dense/sparse (p = 3.25 × 10⁻⁵)
+- PAC conserves ratios, not magnitudes (A/(A+ξ) stable; I_total varies 3×)
+- PAC as binding constraint, not redistribution
 
-### Paper-by-Paper Reframing
+**Speculative (labeled as such):**
+- Gauge coupling constants may encode accumulated ξ from topologically distinct interactions
+- ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) prediction (falsifiable, not yet computed)
 
-| Paper | Current Framing | Einstein Reframing |
-|-------|-----------------|-------------------|
-| **golden_ratio_prime_distribution** | "φ appears, mechanism unknown" | "PAC recursion → φ is necessary. Primes reveal the constraint." |
-| **xi_bounded_invariant** | "Ξ emerges empirically" | "Ξ = γ + ln(φ): discrete cost + continuous collapse. Two terms, one operator." |
-| **cellular_automata_xi_clustering** | "Rule 110 clusters at Ξ" | "Computation requires balance. PAC sets the balance point. Rule 110 found it." |
-| **pac_necessity_proof** | "φ is an attractor" | "φ is the ONLY attractor. PAC violation → structural collapse." |
-| **symbolic_entropy_collapse** | "SEC describes collapse dynamics" | "Structure forms where ∇I > ∇H. That's it. SEC is gradient flow." |
-| **potential_actualization_conservation** | "15.56x amplification observed" | "PAC conserves ratios, not magnitudes. Apparent amplification is redistribution." |
-| **qbe_pac_unification** | "0.02 Hz emerges mysteriously" | "Klein-Gordon + PAC mass → natural frequency. No mystery." |
-| **ml_validation_pythia_gpt2** | "Training converges to φ" | "Neural networks find PAC because PAC is optimal. They had no choice." |
-
----
-
-## The Primitives
-
-### Landauer (1961)
-**Axiom**: Information erasure requires entropy increase  
-**Consequence**: kT ln(2) minimum energy per bit  
-**Status**: Experimentally confirmed, universally accepted
-
-### PAC (Dawn Field Theory)
-**Axiom**: f(Parent) = Σf(Children)  
-**Consequence**: φ-scaling in hierarchical systems  
-**Status**: Computationally validated across 12+ domains, awaiting physical experiments
-
-### SEC (Dawn Field Theory)  
-**Axiom**: ∂S/∂t = α∇I - β∇H  
-**Consequence**: Structure crystallizes at information-entropy boundaries  
-**Status**: Same as PAC
+**Work remaining:**
+- Trim Section 13 (cross-corpus convergence) to short pointers to other PACSeries papers
+- Final edit pass for consistency
 
 ---
 
-## Flagship Quantitative Results
+### Paper 2: The Balance Constant and Its Decomposition
+**Source**: Rewrite of current `xi_bounded_invariant_universal_balance_operator`
 
-### Mass Ratios to 5 ppm (NEW FROM SURVEY)
+**Establishes Ξ = γ + ln(φ) from three independent domains.**
 
-The milestone2/mass_derivation experiments achieved **better precision than α**:
+**Core content:**
+- γ = Euler-Mascheroni = discrete-continuous interface cost (defined as H_n - ln(n))
+- ln(φ) = collapse efficiency (derived in Paper 1 from Landauer erasure)
+- Ξ = γ + ln(φ) = total reconciliation threshold
 
-| Ratio | Formula | Measured | Error |
-|-------|---------|----------|-------|
-| **μ/e** | F₄ × F₆² × (1 + 1/F₇) | 206.768 | **0.0005%** (5 ppm) |
-| **τ/e** | F₄ × F₇ × F₁₁ + F₅ | 3477.23 | 0.035% |
-| **p/e** | F₄ × F₉ × F₁₂ / F₆ | 1836.15 | 0.0083% |
+**Three independent sources:**
 
-**F₄ = 3 appears in ALL formulas** — may relate to 3 lepton generations.
+| Source | Ξ value | Error from γ + ln(φ) | Domain |
+|--------|---------|----------------------|--------|
+| Formula (1+π/55) | 1.0571 | 0.124% | Fibonacci arithmetic |
+| Rule 110 measured | 1.0579 | 0.050% | Cellular automata |
+| Analytic (γ+ln(φ)) | 1.0584 | 0.000% | Number theory |
 
-### Ξ = γ + ln(φ) from THREE Independent Sources (NEW FROM SURVEY)
+**Supporting evidence:**
+- Base-agnostic PAC: φ² = φ + 1 holds to < 10⁻¹⁴ across ALL numerical bases (binary, ternary, hex). 55 = F₁₀ is structural, not a decimal coincidence.
+- Conditional Attractor Hypothesis: Ξ is not a universal constant — it's the maximum sustainable computational asymmetry under PAC conservation. Emergence conditions: closed, recursive, conserving, computationally saturated. (Fisher exact p = 3.5 × 10⁻¹⁰)
+- Möbius topology: ~0.12% irreducible spread between three sources is signature of non-orientable topology, not error to eliminate.
 
-The prime_growth_dynamics experiments found **independent validation** of the Landauer decomposition:
-
-| Source | Ξ | Error from γ + ln(φ) |
-|--------|---|----------------------|
-| Formula (1+π/55) | 1.0571 | 0.124% |
-| Rule 110 measured | 1.0579 | 0.050% |
-| Analytic (γ+ln(φ)) | 1.0584 | 0.000% |
-
-Three independent computational domains → same value. This validates exp_16's first-principles derivation.
-
-### Casimir 240 = Four Consecutive Fibonacci
-
-From milestone2: **240 = F₃ × F₄ × F₅ × F₆ = 2 × 3 × 5 × 8**
-
-The Casimir invariant of E₈ (root lattice kissing number) decomposes into four consecutive Fibonacci numbers.
-
-### Maxwell from PAC Depth-2 Recursion (NEW FROM SURVEY)
-
-From maxwell_from_pac_sec: Maxwell's equations = level-2 PAC recursion projected to 3+1D.
-- α determined by Fibonacci at F₇ = 13 gauge depth
-- SEC wave equation gives c² = αγ + βδ
-- MED bounds (depth ≤ 2, nodes ≤ 3) → D = 3 spatial dimensions
-
-### Base-Agnostic PAC (<10⁻¹⁴)
-
-From base_agnostic_pac: PAC relationships hold **exactly across ALL numerical bases** (binary, ternary, hex, etc.) to <10⁻¹⁴ precision. The 55 = F₁₀ is not a decimal coincidence—it's fundamental.
+**Key distinction from current paper:** Drop the 0.03 Hz oscillation framing and the "reality tax" language. Lead with the decomposition and the three-way convergence. The story is γ + ln(φ), not spectral ratios.
 
 ---
 
-## The Unification Table
+### Paper 3: Feigenbaum Constants from Fibonacci Arithmetic
+**Source**: Rewrite of current `sec_threshold_detection` preprint + `sec_threshold_detection` experiment
 
-All of this follows from PAC + SEC:
+**Pure mathematics. No physics claims required. Hardest result to dismiss.**
 
-| Domain | Phenomenon | PAC/SEC Explanation |
-|--------|------------|---------------------|
-| **Thermodynamics** | Landauer erasure | Energy → Structure via ξ; A/(A+ξ) = ln(φ) |
-| **Information** | Golden ratio | PAC recursion has unique stable solution φ^(-k) |
-| **Gauge Theory** | SU(3) > SU(2) > U(1) | Structure cost scales with coupling complexity |
-| **Quantum** | Born rule | |p|² is PAC partition of probability amplitude |
-| **Quantum** | Interference | Phase-aware PAC; collapse respects phase |
-| **Quantum** | Entanglement | Shared parent → distributed conservation |
-| **Number Theory** | Prime distribution | Stress field partitions at 1/φ |
-| **Turbulence** | She-Leveque | β = F₃/F₄ = 2/3 from 3D PAC cascade |
-| **Biology** | Fibonacci | Evolution found PAC (it's optimal) |
-| **ML** | Training dynamics | Networks converge to φ because PAC is optimal |
-| **CA** | Edge of chaos | Computation requires PAC balance point |
-| **Particle Masses** | μ/e = 206.768 | F₄ × F₆² × (1+1/F₇) to **5 ppm** |
-| **Electromagnetism** | Maxwell equations | PAC depth-2 recursion in 3+1D |
-| **Lie Algebras** | Casimir 240 | F₃ × F₄ × F₅ × F₆ (four consecutive!) |
+**Core result — closed-form expressions:**
 
-**One principle. Fifteen domains. Same ratio.**
+| Constant | Formula | Precision |
+|----------|---------|-----------|
+| r∞ (accumulation) | π(55+√(17-π/(55d)))(55+π)/55² - correction | **13 digits** |
+| δ (bifurcation) | (50050 + 32π) / (10725 + 5π) | **8 digits** |
+| α (scaling) | (5 + π/540) / 2 | **6 digits** |
 
----
+**Structural constants**: 55 = F₁₀, 17 = 2⁴+1 (Fermat prime), 52 = F₁₀ - F₄
 
-## Update Roadmap
+**Statistical validation:**
+- Exhaustive search of 3,920,499 combinations
+- Only ONE match at 7+ digits: (55, 17, 52)
+- Precision degrades by millions for ±1 deviation in any parameter
+- Combined probability: 1 in 280 billion against coincidence
 
-### Phase 1: New Paper (PACSeries #6)
-**"PAC as Universal Conservation: From Landauer to Gauge Hierarchy"**
+**Additional results:**
+- RBF self-closing formula: δ = φ^(20/N)
+- Universality across all quadratic-max maps (not just logistic)
+- Cross-domain validation: 5/5 domains, joint probability 1-in-120B
 
-This is the anchor paper that:
-- Presents PAC as primitive (like Landauer)
-- Derives ln(φ) from first principles
-- Shows gauge hierarchy result
-- Provides the reference for all other updates
-
-### Phase 2: Tier 1 Updates (Core Papers)
-
-**NEW**: Standalone paper for Euclidean Distance Validation (E=mc² in Semantic Space)
-
-This is arguably the most **immediately applicable** work in the corpus:
-- **Engineering applications ready**: Model characterization via c², transfer learning prediction, emergence detection
-- **Testable on any LLM**: Works with any model that exposes embeddings
-- **Proactive peer review defense**: Experiment 25 defeats "too perfect" criticism
-- **Profound insight**: Semantic amplification (+330%) vs physical binding (-91%)
-- **Landauer validation**: 40% irreversibility validates thermodynamic principles
-
-**Recommend**: Create standalone preprint before Tier 2 papers. Target venues: Nature Physics, Physical Review X, or PNAS.
-
-| Paper | Key Addition |
-|-------|-------------|
-| golden_ratio_prime_distribution | Add Section: "Why φ: The PAC Derivation" |
-| xi_bounded_invariant | Add: Ξ = γ + ln(φ) decomposition (3 independent sources), base-agnostic validation |
-| sec_med_framework | Add: ln(φ) derivation, gauge hierarchy, Maxwell from PAC depth-2 |
-| symbolic_entropy_collapse | Add: PAC conserves ratios, not absolutes; primes as residual roughness |
-
-### Phase 3: Tier 2 Updates (Supporting Papers)
-
-| Paper | Key Addition |
-|-------|-------------|
-| cellular_automata_xi_clustering | Connect criticality to PAC recursion; Rule 110 → γ + ln(φ) |
-| pac_necessity_proof | Add Landauer validation (0.76% error); base-agnostic proof |
-| pac_cosmology_jwst_validation | Add gauge hierarchy; mass ratios (μ/e to 5 ppm!) |
-| potential_actualization_conservation | Clarify ratio vs magnitude conservation; Casimir 240 |
-
-### Phase 4: Tier 3 Updates (Completeness)
-
-| Paper | Key Addition |
-|-------|-------------|
-| qbe_pac_unification | Add entanglement as distributed PAC |
-| ml_validation_pythia_gpt2 | Reference PAC recursion governing training |
-| macro_emergence_dynamics_navier_stokes | Add k = d × F_{d+1} derivation (explains She-Leveque k=9) |
-| she_leveque_fibonacci_turbulence | Add k = d × F_{d+1}; MED bounds → D=3 necessity |
+**Framing**: "Here are closed-form expressions for universal constants that have lacked closed forms since their discovery in 1978. They use Fibonacci numbers. Draw your own conclusions."
 
 ---
 
-## The Simplicity Manifesto
+### Paper 4: Standard Model Parameters from Fibonacci Arithmetic
+**Source**: milestone1/milestone2 experiments + `pac_confluence_xi`
 
-**What we're NOT saying:**
-- "We found a pattern and it's φ"
-- "We built a complex framework that predicts things"
-- "Our model fits the data"
+**The quantitative predictions.**
 
-**What we ARE saying:**
-- "PAC is a conservation constraint, like energy conservation"
-- "φ is the unique solution, like c is the speed limit"
-- "Everything else follows necessarily"
+**Gauge couplings:**
 
-**The theory is two equations:**
+| Parameter | PAC Formula | Measured | Error |
+|-----------|-------------|----------|-------|
+| Fine structure α | F₃/(F₄·φ·F₁₀) × correction | 0.0072973 | **5.7 ppm** |
+| Weak mixing sin²θ_W | F₄/F₇ = 3/13 | 0.2312 | **0.19%** |
+| Strong coupling α_s | F₄/(2φF₆) | 0.118 | 1.71% |
+| Koide Q | F₃/(F₃+F₂) = 2/3 | 0.6667 | **0.5 ppm** |
+| Cabibbo angle | arctan(F₄/F₇) | 13.00° | <0.05° |
 
-$$f(\text{Parent}) = \sum_i f(\text{Child}_i)$$
+**Mass ratios:**
 
-$$\frac{\partial S}{\partial t} = \alpha \nabla I - \beta \nabla H$$
+| Ratio | Formula | Error |
+|-------|---------|-------|
+| μ/e | F₄ × F₆² × (1 + 1/F₇) | **5 ppm** |
+| p/e | F₄ × F₉ × F₁₂ / F₆ | 0.0083% |
+| τ/e | F₄ × F₇ × F₁₁ + F₅ | 0.035% |
 
-**That's the theory.** The rest is application.
+**F₄ = 3 in all mass formulas — possibly related to 3 lepton generations.**
+
+**Structural findings:**
+- Casimir 240 = F₃ × F₄ × F₅ × F₆ (four consecutive Fibonacci)
+- k = d × F_{d+1} derives She-Leveque from first principles (3D: k=9, 0.47% error)
+- Bell inequality (2αβ)² = 4/5 (exact algebraic proof)
+
+**What makes this not numerology:**
+- Individual Fibonacci matches are trivial (P = 0.16)
+- Joint constraints are significant (P < 10⁻⁵)
+- The null hypothesis is falsified by the pattern, not individual values
+- α formula has Landauer interpretation: payment rate through 55 hierarchy levels (Paper 1)
 
 ---
 
-## Writing Guidelines for Updates
+### Paper 5: Classical Physics from Information Geometry
+**Source**: `maxwell_from_pac_sec` + `milestone2` experiments
+
+**Derives electromagnetism from PAC/SEC/MED.**
+
+**Core argument:**
+- Maxwell's equations = level-2 PAC recursion projected to 3+1D
+- SEC wave equation ∂²S/∂t² = c²∇²S gives speed of light
+- MED bounds (depth ≤ 2, nodes ≤ 3) → D = 3 spatial dimensions as necessity
+- Curl structure emerges from depth-2 projection
+- α determined by Fibonacci gauge crystallization at F₇ = 13
+- Charge = winding number, magnetism = projection artifact of hidden dimension
+
+**Connections:**
+- She-Leveque k = d × F_{d+1} in turbulence
+- Mersenne dimensions (d = 2^k - 1) host Fibonacci structure; non-Mersenne don't
+
+**Speculative extension (labeled):**
+- Gravity as deeper recursion: F₁₈₃ ≈ 10³⁸ matches gravitational hierarchy
+- EM uses antisymmetric projection (curl), gravity uses symmetric (divergence)
+
+---
+
+### Paper 6: Computational Validation
+**Source**: Rewrite of current GAIA validation + SEC-MED framework papers
+
+**Demonstrates PAC/SEC/MED in working computational systems.** Consolidates what are currently papers #2, #3, and #4 into one focused paper.
+
+**Key results (trimmed to essentials):**
+- PAC conservation residual < 7×10⁻¹¹ across 500-iteration evolutions
+- Cosmological parallel: r = -0.999632 (entropy ↓89%, structure ↑92%)
+- GAIA WikiText-2 perplexity 5.91 vs GPT-2 baseline 29.41
+- 100% memory retrieval at depth 1000
+- Resonance locking at 0.020 Hz (= 2/3 × 0.030 Hz continuous field limit)
+- Emergent capabilities not explicitly programmed
+
+**What this paper is NOT:**
+- Not three separate papers about the same GAIA run
+- Not the theoretical anchor (that's Paper 1)
+- Not the place for MAS/herniation framework (fold into Paper 5 if needed)
+
+---
+
+## Existing Standalone Preprints
+
+These stay as separate publications. Each gets a short update referencing the PACSeries for foundational derivations.
+
+### Tier 1 Updates (Core — reference PACSeries directly)
+
+| Paper | Update |
+|-------|--------|
+| golden_ratio_prime_distribution | Add "Why φ" section pointing to Paper 1 derivation. Add primes as residual roughness (prime_growth_dynamics) |
+| cellular_automata_xi_clustering | Connect Rule 110 to γ + ln(φ) (Paper 2). Add conditional attractor hypothesis |
+| pac_necessity_proof | Reference Paper 1 Landauer validation (0.76% error). Add base-agnostic proof |
+| symbolic_entropy_collapse | Reference Paper 1 for ratio vs magnitude conservation. Add SEC gradient flow framing |
+
+### Tier 2 Updates (Supporting)
+
+| Paper | Update |
+|-------|--------|
+| pac_cosmology_jwst_validation | Reference Paper 4 for gauge hierarchy and mass ratios |
+| potential_actualization_conservation | Clarify ratio vs magnitude conservation per Paper 1 findings |
+| macro_emergence_dynamics_navier_stokes | Add k = d × F_{d+1} from Paper 5 |
+| she_leveque_fibonacci_turbulence | Add k = d × F_{d+1}; MED bounds → D=3 |
+
+### Tier 3 Updates (Completeness)
+
+| Paper | Update |
+|-------|--------|
+| qbe_pac_unification | Reference Paper 6 for 0.020 Hz emergence |
+| ml_validation_pythia_gpt2 | Reference Paper 1 for why networks converge to φ |
+
+---
+
+## Quantitative Evidence Summary
+
+All results that the PACSeries must present with full error bounds:
+
+### Derivations (from PAC axiom)
+- φ as unique stable solution of PAC recursion
+- ln(φ) as collapse efficiency ratio (Paper 1: 0.76% error)
+- Ξ = γ + ln(φ) decomposition (Paper 2: three sources within 0.12%)
+- MED bounds → D = 3 spatial dimensions (Paper 5)
+
+### Measurements
+| Result | Value | Error | Paper |
+|--------|-------|-------|-------|
+| A/(A+ξ) vs ln(φ) | 0.487 | 1.2% | 1 |
+| ξ/A vs (1-ln(φ))/ln(φ) | 1.086 vs 1.078 | 0.76% | 1 |
+| Cascade amplification | 53× | p = 2.75×10⁻³⁵ | 1 |
+| Dense/sparse time density ratio | 69× | p = 3.25×10⁻⁵ | 1 |
+| Ξ three-source clustering | 0.12% spread | p < 0.001 | 2 |
+| Base-agnostic PAC | φ²=φ+1 | < 10⁻¹⁴ | 2 |
+| Feigenbaum r∞ | closed form | 13 digits | 3 |
+| Feigenbaum δ | closed form | 8 digits | 3 |
+| Feigenbaum α | closed form | 6 digits | 3 |
+| Fine structure α | Fibonacci formula | 5.7 ppm | 4 |
+| sin²θ_W | F₄/F₇ = 3/13 | 0.19% | 4 |
+| μ/e mass ratio | Fibonacci formula | 5 ppm | 4 |
+| p/e mass ratio | Fibonacci formula | 0.0083% | 4 |
+| Casimir 240 | F₃×F₄×F₅×F₆ | exact | 4 |
+| She-Leveque k (3D) | 3×F₄ = 9 | 0.47% | 5 |
+| PAC conservation residual | — | < 7×10⁻¹¹ | 6 |
+| Cosmological correlation | r = -0.9996 | ±0.0001 | 6 |
+
+### Falsifiable Predictions (untested)
+| Prediction | Test | Paper |
+|------------|------|-------|
+| ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) | Compute ξ for gauge group topologies | 1 |
+| She-Leveque k=20 in 4D | 4D turbulence simulation | 5 |
+| Additional mass ratios | Extend Fibonacci formula to quarks | 4 |
+
+---
+
+## Writing Guidelines
+
+### The standard each paper must meet:
+
+1. Start from something established (a known law, a theorem, a measurement)
+2. Derive the consequence (show the math, keep it short)
+3. Present the measurement (with error bounds)
+4. Separate established from speculative (clearly, once)
+5. State what would falsify the claim
 
 ### Do:
-- Start with the axiom
-- Show derivation is trivial (≤5 lines of math)
-- Present clean measurements
-- State implications clearly
-- Use "necessary" and "constraint" language
+- State what is known, then what follows
+- Show derivation is short (≤10 lines of math)
+- Report measurements with proper error analysis
+- Name limitations honestly
+- Use "necessary" and "constraint" language where warranted
 
 ### Don't:
-- Build elaborate machinery
-- Use jargon when simple words work
-- Hedge excessively (state uncertainty once, then proceed)
-- Treat φ as mysterious (it's inevitable)
+- Use manifesto language ("we invite you to explore")
+- Hedge every sentence ("appears to", "may represent", "potentially suggests")
+- Build elaborate machinery before presenting results
+- Treat φ as mysterious — it's the only stable solution
+- Use "significance" language for things that haven't been independently validated
 
-### Example Rewrite
+### Example of target voice:
 
-**Before:**
-> "We observe that the stress field partition fraction converges to approximately 0.618, which corresponds to 1/φ within experimental error. The mechanism forcing this convergence remains unknown and requires further investigation."
-
-**After:**
-> "PAC recursion has a unique stable solution: Ψ(k) = φ^(-k). The stress field partitions at 1/φ because that's the only ratio consistent with PAC conservation. There is no other possibility."
+> "This means that erasure does not merely heat the environment. It creates new correlational structure between environmental modes that did not exist before the erasure occurred. This structure creation is not optional. It is a mathematical consequence of information dispersing into a multi-mode system."
 
 ---
 
 ## Timeline
 
-- **Week 1**: Write PACSeries #6 (anchor paper)
-- **Week 2**: Update Tier 1 papers (4 papers)
-- **Week 3**: Update Tier 2 papers (4 papers)  
-- **Week 4**: Update Tier 3 papers (4 papers)
-- **Week 5**: Review, cross-reference, prepare Zenodo packages
+- **Week 1**: Finish Paper 1 (journal.md → PACSeries #1, minimal remaining work)
+- **Week 2**: Write Paper 2 (Xi decomposition, rewrite from scratch in journal.md voice)
+- **Week 3**: Write Paper 3 (Feigenbaum, clean math paper)
+- **Week 4**: Write Paper 4 (Standard Model compilation) + Paper 5 (Maxwell/physics)
+- **Week 5**: Write Paper 6 (GAIA consolidation, trim 3 papers → 1)
+- **Week 6**: Update standalone preprints (Tier 1-3), cross-reference, prepare Zenodo packages
 
 ---
 
 ## Success Criteria
 
-After updates, each paper should:
+After the rewrite, each PACSeries paper should:
 
-1. ✅ State PAC/SEC as axiom within first 2 pages
-2. ✅ Derive main result in ≤10 lines of math
-3. ✅ Present measurements with error bounds
-4. ✅ Connect to at least 2 other domains
-5. ✅ Read as "necessary consequence" not "interesting observation"
+1. ✅ Be readable start-to-finish by a physicist unfamiliar with the framework
+2. ✅ Start from established science, not framework-specific concepts
+3. ✅ Derive its main result in ≤10 lines of math
+4. ✅ Present all measurements with error bounds
+5. ✅ Clearly separate what is established from what is speculative
+6. ✅ State falsification conditions
+7. ✅ Read as "here is what the evidence requires" not "we think this might be true"
 
 ---
 
-*"The theory is simple. The universe is just doing conservation properly."*
+*The work is done. Now it needs to be written properly.*
