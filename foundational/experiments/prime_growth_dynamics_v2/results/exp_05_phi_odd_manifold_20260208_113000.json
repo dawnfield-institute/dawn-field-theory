@@ -1,0 +1,235 @@
+{
+  "experiment": "exp_05_phi_odd_manifold",
+  "hypothesis": "Removing p=2 destroys \u03c6-clustering",
+  "full_vs_odd": {
+    "3": {
+      "full": {
+        "n_survivors": 53336,
+        "n_gaps": 53335,
+        "n_ratios": 53334,
+        "fraction_near_phi": 0.0,
+        "fraction_near_inv_phi": 0.0,
+        "total_phi_fraction": 0.0,
+        "mean_ratio": 1.3125023437207035,
+        "std_ratio": 0.9030501761820175,
+        "median_ratio": 1.25,
+        "peak_phi": 0,
+        "peak_inv_phi": 6666
+      },
+      "odd": {
+        "n_survivors": 91431,
+        "n_gaps": 91430,
+        "n_ratios": 91429,
+        "fraction_near_phi": 0.0,
+        "fraction_near_inv_phi": 0.0,
+        "total_phi_fraction": 0.0,
+        "mean_ratio": 1.3885692723315362,
+        "std_ratio": 1.1351336624186712,
+        "median_ratio": 1.0,
+        "peak_phi": 0,
+        "peak_inv_phi": 11428
+      }
+    },
+    "5": {
+      "full": {
+        "n_survivors": 41563,
+        "n_gaps": 41562,
+        "n_ratios": 41561,
+        "fraction_near_phi": 0.008373234522749693,
+        "fraction_near_inv_phi": 0.008301051466519093,
+        "total_phi_fraction": 0.016674285989268785,
+        "mean_ratio": 1.4318727149193209,
+        "std_ratio": 1.2479292397085795,
+        "median_ratio": 1.0,
+        "peak_phi": 348,
+        "peak_inv_phi": 4674
+      },
+      "odd": {
+        "n_survivors": 76728,
+        "n_gaps": 76727,
+        "n_ratios": 76726,
+        "fraction_near_phi": 0.01423246357167062,
+        "fraction_near_inv_phi": 0.014219430180121471,
+        "total_phi_fraction": 0.028451893751792093,
+        "mean_ratio": 1.4707480807531637,
+        "std_ratio": 1.3533956768915216,
+        "median_ratio": 1.0,
+        "peak_phi": 1092,
+        "peak_inv_phi": 7776
+      }
+    },
+    "7": {
+      "full": {
+        "n_survivors": 36111,
+        "n_gaps": 36110,
+        "n_ratios": 36109,
+        "fraction_near_phi": 0.017557949541665514,
+        "fraction_near_inv_phi": 0.017557949541665514,
+        "total_phi_fraction": 0.03511589908333103,
+        "mean_ratio": 1.5001720510174081,
+        "std_ratio": 1.432603646847402,
+        "median_ratio": 1.0,
+        "peak_phi": 634,
+        "peak_inv_phi": 3370
+      },
+      "odd": {
+        "n_survivors": 68417,
+        "n_gaps": 68416,
+        "n_ratios": 68415,
+        "fraction_near_phi": 0.019513264634948475,
+        "fraction_near_inv_phi": 0.01993714828619455,
+        "total_phi_fraction": 0.03945041292114303,
+        "mean_ratio": 1.5289283826359028,
+        "std_ratio": 1.5132453378089803,
+        "median_ratio": 1.0,
+        "peak_phi": 1335,
+        "peak_inv_phi": 5982
+      }
+    },
+    "9": {
+      "full": {
+        "n_survivors": 32725,
+        "n_gaps": 32724,
+        "n_ratios": 32723,
+        "fraction_near_phi": 0.0209638480579409,
+        "fraction_near_inv_phi": 0.02102496714848883,
+        "total_phi_fraction": 0.04198881520642973,
+        "mean_ratio": 1.5536754089242357,
+        "std_ratio": 1.5822544380078034,
+        "median_ratio": 1.0,
+        "peak_phi": 685,
+        "peak_inv_phi": 2711
+      },
+      "odd": {
+        "n_survivors": 63201,
+        "n_gaps": 63200,
+        "n_ratios": 63199,
+        "fraction_near_phi": 0.021550973907814998,
+        "fraction_near_inv_phi": 0.021819965505783318,
+        "total_phi_fraction": 0.04337093941359832,
+        "mean_ratio": 1.5703727440882393,
+        "std_ratio": 1.6262772753103014,
+        "median_ratio": 1.0,
+        "peak_phi": 1360,
+        "peak_inv_phi": 5013
+      }
+    },
+    "11": {
+      "full": {
+        "n_survivors": 30591,
+        "n_gaps": 30590,
+        "n_ratios": 30589,
+        "fraction_near_phi": 0.02190329857138187,
+        "fraction_near_inv_phi": 0.022360979437052536,
+        "total_phi_fraction": 0.04426427800843441,
+        "mean_ratio": 1.5918539204480133,
+        "std_ratio": 1.69103562590262,
+        "median_ratio": 1.0,
+        "peak_phi": 668,
+        "peak_inv_phi": 2330
+      },
+      "odd": {
+        "n_survivors": 59530,
+        "n_gaps": 59529,
+        "n_ratios": 59528,
+        "fraction_near_phi": 0.02293038570084666,
+        "fraction_near_inv_phi": 0.023249563230748557,
+        "total_phi_fraction": 0.046179948931595216,
+        "mean_ratio": 1.6032596034328361,
+        "std_ratio": 1.7195031793667466,
+        "median_ratio": 1.0,
+        "peak_phi": 1361,
+        "peak_inv_phi": 4408
+      }
+    }
+  },
+  "removal_analysis": {
+    "full": {
+      "n_survivors": 31603,
+      "n_gaps": 31602,
+      "n_ratios": 31601,
+      "fraction_near_phi": 0.02170817379196861,
+      "fraction_near_inv_phi": 0.022309420587956076,
+      "total_phi_fraction": 0.04401759437992468,
+      "mean_ratio": 1.5723601054841505,
+      "std_ratio": 1.6316211164462875,
+      "median_ratio": 1.0,
+      "peak_phi": 684,
+      "peak_inv_phi": 2502
+    },
+    "no_2": {
+      "n_survivors": 63201,
+      "n_gaps": 63200,
+      "n_ratios": 63199,
+      "fraction_near_phi": 0.021550973907814998,
+      "fraction_near_inv_phi": 0.021819965505783318,
+      "total_phi_fraction": 0.04337093941359832,
+      "mean_ratio": 1.5703727440882393,
+      "std_ratio": 1.6262772753103014,
+      "median_ratio": 1.0,
+      "peak_phi": 1360,
+      "peak_inv_phi": 5013
+    },
+    "no_3": {
+      "n_survivors": 47398,
+      "n_gaps": 47397,
+      "n_ratios": 47396,
+      "fraction_near_phi": 0.003945480631276901,
+      "fraction_near_inv_phi": 0.003945480631276901,
+      "total_phi_fraction": 0.007890961262553802,
+      "mean_ratio": 1.4338856955981818,
+      "std_ratio": 1.2635981675305925,
+      "median_ratio": 1.0,
+      "peak_phi": 187,
+      "peak_inv_phi": 2590
+    },
+    "no_5": {
+      "n_survivors": 39500,
+      "n_gaps": 39499,
+      "n_ratios": 39498,
+      "fraction_near_phi": 0.014380474960757507,
+      "fraction_near_inv_phi": 0.014431110435971442,
+      "total_phi_fraction": 0.02881158539672895,
+      "mean_ratio": 1.4658935157511033,
+      "std_ratio": 1.3473166564554437,
+      "median_ratio": 1.0,
+      "peak_phi": 568,
+      "peak_inv_phi": 3091
+    },
+    "no_7": {
+      "n_survivors": 36869,
+      "n_gaps": 36868,
+      "n_ratios": 36867,
+      "fraction_near_phi": 0.01497273984864513,
+      "fraction_near_inv_phi": 0.0157051021238506,
+      "total_phi_fraction": 0.030677841972495727,
+      "mean_ratio": 1.4928064003578692,
+      "std_ratio": 1.4234862083905837,
+      "median_ratio": 1.0,
+      "peak_phi": 552,
+      "peak_inv_phi": 3616
+    },
+    "no_11": {
+      "n_survivors": 34761,
+      "n_gaps": 34760,
+      "n_ratios": 34759,
+      "fraction_near_phi": 0.018326188900716363,
+      "fraction_near_inv_phi": 0.018412497482666358,
+      "total_phi_fraction": 0.03673868638338272,
+      "mean_ratio": 1.5200309119294129,
+      "std_ratio": 1.4890808032693887,
+      "median_ratio": 1.0,
+      "peak_phi": 637,
+      "peak_inv_phi": 3123
+    }
+  },
+  "gap_analysis": {
+    "full_gaps_mean": 9.72374474894979,
+    "odd_gaps_mean": 9.725145029005802,
+    "gap6_full_fraction": 0.21504300860172035,
+    "gap6_odd_fraction": 0.21504300860172035
+  },
+  "degradation_detected": false,
+  "success": false,
+  "success_criterion": "\u03c6-clustering degrades > 20% when p=2 removed"
+}

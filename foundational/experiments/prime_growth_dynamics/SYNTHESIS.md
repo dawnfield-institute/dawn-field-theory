@@ -1,7 +1,27 @@
 # Prime Growth Dynamics: Synthesis
 
-**Date**: 2026-02-05  
-**Status**: Active Discovery - PARADIGM SHIFT
+**Date**: 2026-02-08  
+**Status**: Active Discovery - MULTI-STAGE EMERGENCE FRAMEWORK
+
+---
+
+## MULTI-STAGE EMERGENCE FRAMEWORK (Feb 8, 2026)
+
+The smoothing model has been generalized into a **three-phase emergence pipeline**:
+
+| Phase | Name | Mechanism | Boundary Constant | Products |
+|-------|------|-----------|-------------------|----------|
+| I | Possibility Proliferation | Combinatorial freedom under MED bounds | γ = 0.577 | Raw material for collapse |
+| II | Symbolic Entropy Collapse | SEC: ∂S/∂t = α∇I - β∇H | ln(φ) = 0.481 | Discrete objects (primes, particles) |
+| III | Recursive Smoothing | PAC conservation + wave smoothing | 1/ln(x) rate | Geometry, continuous structure |
+
+**Total reconciliation cost**: Ξ = γ + ln(φ) = 1.058
+
+**Key insight**: Primes are Phase II artifacts that Phase III cannot erase — conserved memory of early collapse events. The residual roughness model (below) is the arithmetic instantiation of this general framework.
+
+The phase framework addresses 8+ open questions across experiments (Why F₁₀=55? Why D=3? Why 3 generations? Why φ only on odd manifold? Why 1/ln(N) convergence? Why gap 6 is hub? Why no discrete transition at Ξ? Why forbidden k valleys?).
+
+**Full development**: See [PRE_STRUCTURAL_EMERGENCE.md](PRE_STRUCTURAL_EMERGENCE.md)
 
 ---
 

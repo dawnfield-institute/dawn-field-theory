@@ -1,0 +1,47 @@
+{
+  "experiment": "exp_09_three_generations",
+  "hypothesis": "MED-PAC produces exactly 3 stable modes",
+  "n_topologies_enumerated": 17,
+  "cluster_analysis": {
+    "2": {
+      "inertia": 32.7105351630342,
+      "cluster_sizes": [
+        7,
+        20
+      ]
+    },
+    "3": {
+      "inertia": 15.871296415826627,
+      "cluster_sizes": [
+        7,
+        9,
+        11
+      ]
+    },
+    "4": {
+      "inertia": 12.79689661224382,
+      "cluster_sizes": [
+        7,
+        8,
+        8,
+        4
+      ]
+    },
+    "5": {
+      "inertia": 12.344555952069308,
+      "cluster_sizes": [
+        7,
+        8,
+        5,
+        4,
+        3
+      ]
+    }
+  },
+  "best_k": 4,
+  "n_configs": 27,
+  "med_stability_mean": 0.997457440197914,
+  "non_med_stability_mean": 0.995087474682423,
+  "success": false,
+  "success_criterion": "Exactly 3 stable attractor modes emerge"
+}
