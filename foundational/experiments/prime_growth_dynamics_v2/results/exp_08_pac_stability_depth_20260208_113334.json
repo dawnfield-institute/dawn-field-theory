@@ -1,0 +1,115 @@
+{
+  "experiment": "exp_08_pac_stability_depth",
+  "hypothesis": "MED predicts max stability at depth \u2264 2",
+  "config": {
+    "n_iterations": 100,
+    "depth_range": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "fixed_max_children": 3
+  },
+  "results_by_depth": {
+    "1": {
+      "depth_limit": 1,
+      "stability_score": 0.9970845481049563,
+      "mean_conservation_error": 0.00010105251512592783,
+      "mean_variance_ratio": 0.5554954417346769,
+      "mean_collapses": 0.01,
+      "mean_depth_reached": 1.0,
+      "mean_leaves": 2.43
+    },
+    "2": {
+      "depth_limit": 2,
+      "stability_score": 0.9949238578680203,
+      "mean_conservation_error": 0.00014400471863356911,
+      "mean_variance_ratio": 0.9608651881790939,
+      "mean_collapses": 0.05,
+      "mean_depth_reached": 2.0,
+      "mean_leaves": 6.3
+    },
+    "3": {
+      "depth_limit": 3,
+      "stability_score": 0.9988226059654631,
+      "mean_conservation_error": 5.571793534021596e-06,
+      "mean_variance_ratio": 1.3641862274517678,
+      "mean_collapses": 0.03,
+      "mean_depth_reached": 3.0,
+      "mean_leaves": 15.72
+    },
+    "4": {
+      "depth_limit": 4,
+      "stability_score": 0.9973092750870529,
+      "mean_conservation_error": 4.6210535084008074e-05,
+      "mean_variance_ratio": 1.7091493934359707,
+      "mean_collapses": 0.17,
+      "mean_depth_reached": 4.0,
+      "mean_leaves": 38.29
+    },
+    "5": {
+      "depth_limit": 5,
+      "stability_score": 0.9974302496328928,
+      "mean_conservation_error": 8.848117147628786e-05,
+      "mean_variance_ratio": 2.143861009406884,
+      "mean_collapses": 0.42,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 98.33
+    },
+    "6": {
+      "depth_limit": 6,
+      "stability_score": 0.9974207544895746,
+      "mean_conservation_error": 7.638722526549846e-05,
+      "mean_variance_ratio": 2.797990561972017,
+      "mean_collapses": 1.07,
+      "mean_depth_reached": 6.0,
+      "mean_leaves": 249.03
+    },
+    "8": {
+      "depth_limit": 8,
+      "stability_score": 0.9974856663182236,
+      "mean_conservation_error": 0.00014101808398244708,
+      "mean_variance_ratio": 3.9774751788727616,
+      "mean_collapses": 6.35,
+      "mean_depth_reached": 8.0,
+      "mean_leaves": 1512.57
+    },
+    "10": {
+      "depth_limit": 10,
+      "stability_score": 0.9976049539393923,
+      "mean_conservation_error": 0.00016496334170583714,
+      "mean_variance_ratio": 5.884949909654664,
+      "mean_collapses": 36.31,
+      "mean_depth_reached": 10.0,
+      "mean_leaves": 9082.66
+    }
+  },
+  "peak_depth": 3,
+  "med_transition_at_2_3": false,
+  "grid_results": {
+    "mc2_d1": 1.0,
+    "mc2_d2": 1.0,
+    "mc2_d3": 0.9946380697050938,
+    "mc2_d4": 0.9987080103359173,
+    "mc3_d1": 1.0,
+    "mc3_d2": 0.9978947368421053,
+    "mc3_d3": 0.9984790874524715,
+    "mc3_d4": 0.9972761321075928,
+    "mc4_d1": 1.0,
+    "mc4_d2": 0.9984709480122325,
+    "mc4_d3": 0.9979674796747967,
+    "mc4_d4": 0.9980524079320113,
+    "mc5_d1": 1.0,
+    "mc5_d2": 0.9942129629629629,
+    "mc5_d3": 0.9945317840054683,
+    "mc5_d4": 0.996766043456291
+  },
+  "med_region_advantage": 0.0020484404067896422,
+  "success": false,
+  "success_criterion": "Stability peaks at depth \u2264 2"
+}

@@ -1,0 +1,87 @@
+{
+  "experiment": "exp_07_pac_stability_nodes",
+  "hypothesis": "MED predicts max stability at nodes \u2264 3",
+  "config": {
+    "n_iterations": 100,
+    "max_children_range": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "depth_limit": 5
+  },
+  "results_by_mc": {
+    "2": {
+      "max_children": 2,
+      "stability_score": 0.9972856458566183,
+      "mean_conservation_error": 9.632313008558712e-05,
+      "mean_variance_ratio": 1.7668189218216295,
+      "mean_collapses": 0.17,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 31.73
+    },
+    "3": {
+      "max_children": 3,
+      "stability_score": 0.9977394916911045,
+      "mean_conservation_error": 5.1505083383320826e-05,
+      "mean_variance_ratio": 2.2612037206281452,
+      "mean_collapses": 0.37,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 98.73
+    },
+    "4": {
+      "max_children": 4,
+      "stability_score": 0.9972327618178187,
+      "mean_conservation_error": 5.378719221274864e-05,
+      "mean_variance_ratio": 2.7129600213607006,
+      "mean_collapses": 0.97,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 234.1
+    },
+    "5": {
+      "max_children": 5,
+      "stability_score": 0.9975486381322958,
+      "mean_conservation_error": 3.6243027627156366e-05,
+      "mean_variance_ratio": 3.0929999991269006,
+      "mean_collapses": 1.89,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 551.0
+    },
+    "6": {
+      "max_children": 6,
+      "stability_score": 0.996839821063646,
+      "mean_conservation_error": 0.000115913328649353,
+      "mean_variance_ratio": 3.495797189239658,
+      "mean_collapses": 4.5,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 1067.75
+    },
+    "7": {
+      "max_children": 7,
+      "stability_score": 0.9969659460788604,
+      "mean_conservation_error": 0.00010818388524132861,
+      "mean_variance_ratio": 3.914937065490875,
+      "mean_collapses": 7.28,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 1865.2
+    },
+    "8": {
+      "max_children": 8,
+      "stability_score": 0.9967422016129447,
+      "mean_conservation_error": 7.780419947392759e-05,
+      "mean_variance_ratio": 4.053366811861215,
+      "mean_collapses": 12.66,
+      "mean_depth_reached": 5.0,
+      "mean_leaves": 3105.69
+    }
+  },
+  "peak_mc": 3,
+  "med_transition_at_3_4": false,
+  "transition_magnitude": -0.0007088170686497808,
+  "success": true,
+  "success_criterion": "Stability peaks at max_children = 2 or 3"
+}

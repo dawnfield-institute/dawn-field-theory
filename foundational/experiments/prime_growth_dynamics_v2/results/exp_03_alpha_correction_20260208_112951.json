@@ -1,0 +1,84 @@
+{
+  "experiment": "exp_03_alpha_correction",
+  "correction_raw": 0.025897993698385337,
+  "correction": 0.9741020063016147,
+  "alpha_formula": 0.007297310889743783,
+  "alpha_measured": 0.0072973525693,
+  "alpha_error_ppm": 5.711599627555799,
+  "decompositions": [
+    {
+      "formula": "F10/(4\u03c0*F7\u00b2)",
+      "value": 0.025897993698385337,
+      "error_pct": 0.0
+    },
+    {
+      "formula": "1/(4\u03c0*F4)",
+      "value": 0.026525823848649224,
+      "error_pct": 2.4242424242424265
+    },
+    {
+      "formula": "ln(\u03c6)/(F7*\u03c6)",
+      "value": 0.022877327975015644,
+      "error_pct": 11.66370553081887
+    },
+    {
+      "formula": "\u03b3/(F7*\u03c0)",
+      "value": 0.014133342507562152,
+      "error_pct": 45.42688259112781
+    },
+    {
+      "formula": "\u03b3/(\u03c0*F7)",
+      "value": 0.014133342507562152,
+      "error_pct": 45.42688259112781
+    },
+    {
+      "formula": "\u03b3/(4\u03c0 \u00d7 \u039e)",
+      "value": 0.043397742013733594,
+      "error_pct": 67.57183015470157
+    },
+    {
+      "formula": "1/(\u039e*F7*\u03c6)",
+      "value": 0.044916705687065864,
+      "error_pct": 73.43700909876385
+    },
+    {
+      "formula": "\u039e/(4\u03c0*F7)",
+      "value": 0.006478998728140856,
+      "error_pct": 74.98262296455496
+    },
+    {
+      "formula": "\u03b3*ln(\u03c6)/(\u03c0*\u03c6)",
+      "value": 0.054643295915955264,
+      "error_pct": 110.99432084332506
+    },
+    {
+      "formula": "\u03b3*ln(\u03c6)/\u03c0",
+      "value": 0.08841471004933393,
+      "error_pct": 241.39598255770034
+    },
+    {
+      "formula": "ln(\u03c6)\u00b2/\u039e",
+      "value": 0.21878194092039038,
+      "error_pct": 744.7833583882245
+    },
+    {
+      "formula": "(Phase_I \u00d7 Phase_III) / Phase_II\u00b2",
+      "value": 0.6220281998961232,
+      "error_pct": 2301.8393360521395
+    }
+  ],
+  "best_decomposition": {
+    "formula": "F10/(4\u03c0*F7\u00b2)",
+    "value": 0.025897993698385337,
+    "error_pct": 0.0
+  },
+  "key_identity": "1/F\u2081\u2080 = (\u039e-1)/\u03c0",
+  "phase_interpretation": {
+    "F3/F4": "MED constraint (Phase I)",
+    "1/phi": "Phase II\u2192III ratio",
+    "(Xi-1)/pi": "Phase I\u2192III budget per \u03c0-cycle",
+    "correction": "Phase II self-interaction at F7 depth"
+  },
+  "success": true,
+  "success_criterion": "Natural phase decomposition exists"
+}

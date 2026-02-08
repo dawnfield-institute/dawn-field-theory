@@ -1,0 +1,80 @@
+{
+  "experiment": "exp_12_force_depth_mapping",
+  "hypothesis": "All four forces map to Fibonacci-structured PAC depths",
+  "force_depths_base_phi": {
+    "strong": 4.442780414163777,
+    "em": 10.224694009592051,
+    "weak": 7.011815864783264,
+    "gravity": 183.0
+  },
+  "gravity_depth": 183,
+  "gravity_formula": "F\u2087\u00b2 + F\u2087 + 1 = 183",
+  "em_depth_candidates": [
+    [
+      "F4*F2=5*2",
+      10,
+      0.021975621899419172
+    ],
+    [
+      "F4+F4=5+5",
+      10,
+      0.021975621899419172
+    ],
+    [
+      "F5+F2=8+2",
+      10,
+      0.021975621899419172
+    ],
+    [
+      "F6-F3=13-3",
+      10,
+      0.021975621899419172
+    ],
+    [
+      "F3\u00b2+F0+0",
+      10,
+      0.021975621899419172
+    ]
+  ],
+  "cyclotomic_depths": {
+    "2": {
+      "F_n": 2,
+      "depth": 7,
+      "coupling": 0.03444185374863302
+    },
+    "3": {
+      "F_n": 3,
+      "depth": 13,
+      "coupling": 0.0019193787254996309
+    },
+    "4": {
+      "F_n": 5,
+      "depth": 31,
+      "coupling": 3.321873975409126e-07
+    },
+    "5": {
+      "F_n": 8,
+      "depth": 73,
+      "coupling": 5.545009081338653e-16
+    },
+    "6": {
+      "F_n": 13,
+      "depth": 183,
+      "coupling": 5.691959932062575e-39
+    },
+    "7": {
+      "F_n": 21,
+      "depth": 463,
+      "coupling": 1.732696763824254e-97
+    },
+    "8": {
+      "F_n": 34,
+      "depth": 1191,
+      "coupling": 0.0
+    }
+  },
+  "mapped_forces": 2,
+  "success": false,
+  "success_criterion": "Map \u2265 3/4 forces to Fibonacci-structured depths",
+  "notes": "Gravity depth confirmed. Other forces need either different base mapping or are not on the cyclotomic pattern."
+}
