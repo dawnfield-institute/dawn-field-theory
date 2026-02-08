@@ -29,6 +29,12 @@ The fine structure constant α is not a "magic number" - it's the thermodynamic 
 9. **Nonlinear RBF creates emergent ξ** beyond linear coupling (p = 2.10 × 10⁻³²)
 10. **Time = computational density**: 69× difference between dense/sparse regimes (p = 3.25 × 10⁻⁵)
 
+### Theoretical Findings (journal paper, Feb 7)
+11. **PAC as binding, not redistribution**: ξ is the structural cost of binding under conservation. Conservation creates relational properties that transcend components (car metaphor: "car-ness" is relational, not intrinsic to parts).
+12. **ξ/Θ as learning rate**: High ξ/Θ = aggressive structure creation (cascade dies fast). Low ξ/Θ = conservative (cascade persists but produces little). kT ln(2) is the governor, not a tax.
+13. **Cascade explains topology preference**: Cascade topology mirrors thermodynamic sequential processing. Other topologies complete in one "generation." Cascade re-injects at each step, matching physical dissipation.
+14. **Thick/thin time**: Dense regime (early universe analog) = computationally heavy moments. Sparse regime (late universe) = computationally empty moments. Time doesn't speed up — moments become emptier. Consistent with thermodynamic arrow.
+
 ---
 
 ## The Central Equation
@@ -192,7 +198,11 @@ Each claimed connection makes testable predictions:
 |-------|--------|----------|
 | Erasure creates structure | Established | Direct computation, follows from DPI |
 | Structure is topological | Established | Temperature invariance demonstrated |
-| A/(A+ξ) ≈ ln(φ) at ratio 1.5 | Empirical finding | 0.4% match, robust across seeds |
+| A/(A+ξ) ≈ ln(φ) at decay ratio φ | Empirical finding | 0.03-0.16% match at φ ratio, robust across seeds |
+| Cascade amplification 53× | Established | p = 2.75 × 10⁻³⁵ across 30 seeds |
+| Time = computational density | Empirical finding | 69× ratio, p = 3.25 × 10⁻⁵ |
+| PAC as binding constraint | Interpretive | Consistent with exp_09 RBF results (p = 2.10 × 10⁻³²) |
+| Θ re-injection is generative | Established | Cascade self-sustains 8.5 generations |
 | γ + ln(φ) = Ξ | Internal pattern | Consistent across 4 domains |
 | Standard Model connection | Speculative | Numerical only, no derivation |
 | Feigenbaum connection | Suggestive | Numerical coincidence |
@@ -215,11 +225,21 @@ Each claimed connection makes testable predictions:
 | results/exp_06_gauge_topology_*.json | Topology simulation results |
 | results/exp_07_lie_algebra_entropy_*.json | Lie algebra entropy results |
 | results/exp_08_falsification_*.json | Falsification test results |
-| papers/journal.md | Full theoretical writeup |
+| papers/journal.md | Full theoretical writeup (PACSeries Paper 1 candidate) |
+| papers/addendum_ln_phi_emergence.md | ln(φ) derivation addendum |
+| scripts/exp_09_conservative_rbf.py | Conservative RBF binding test |
+| scripts/exp_10_thermodynamic_cascade.py | Multi-generation cascade |
+| scripts/exp_11_time_computation.py | Time-as-density analysis |
+| scripts/exp_12_causal_lag_test.py | Causal lag validation |
+| scripts/exp_13_causal_falsification.py | Causality falsification |
+| scripts/exp_14_pac_conservation.py | PAC ratio vs magnitude test |
+| scripts/exp_15_gauge_group_hierarchy.py | Gauge ξ hierarchy (untested prediction) |
+| scripts/exp_16_ln_phi_derivation.py | First-principles ln(φ) derivation |
 
 ---
 
 ## Update Log
 
+- **2026-02-07**: Added Sections 9-14 to journal paper: thermodynamic cascade, time-as-density, binding interpretation, cross-corpus convergence, open computations. Updated SYNTHESIS with findings 11-14. Journal paper now candidate for PACSeries Paper 1.
 - **2026-02-06 (PM)**: Added exp_06 gauge topology, exp_07 Lie algebra entropy, exp_08 falsification suite. Established α = Landauer payment rate connection. Documented evidence vs areas for investigation.
 - **2026-02-06 (AM)**: Added exp_05 decay sweep, found ratio 1.5 optimal. Updated paper sections 4.5, 5.5, 6, 7. Added section 8 on cross-connections. Rewrote SYNTHESIS.md for epistemic clarity.

@@ -39,6 +39,8 @@ Like ocean waves eroding jagged rocks into smooth stones:
 - The rate of roughness decay = **1/ln(x)** (erosion curve = PNT!)
 - What's left jagged = primes = irreducibly rough
 
+**See [PRE_STRUCTURAL_EMERGENCE.md](PRE_STRUCTURAL_EMERGENCE.md) for the full theoretical framework connecting smoothing dynamics to multi-stage emergence, conserved memory, and the relationship between algebra and geometry.**
+
 ---
 
 ## Key Discoveries

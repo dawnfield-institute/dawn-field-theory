@@ -1,5 +1,5 @@
 schema_version: "2.0"
-description: "Investigation of prime number ontology: primes as base cases, entropic seeds, and their role in number line growth dynamics"
+description: "Investigation of prime ontology: smoothing model (primes as residual roughness), multi-stage emergence framework, and conserved memory theory"
 semantic_scope: "implementation"
 proficiency_level: "research"
 estimated_context_weight: 0.7
@@ -8,6 +8,7 @@ validation_type: "automated"
 files:
   - "[README.md]": "Overview with hypothesis, design, success criteria"
   - "[SYNTHESIS.md]": "Cross-connections to other experiments"
+  - "[PRE_STRUCTURAL_EMERGENCE.md]": "Working theory document on multi-stage emergence, smoothing, and conserved memory"
 
 child_directories:
   - name: "core"
@@ -21,12 +22,16 @@ child_directories:
 
 tags:
   - primes
-  - base-case
-  - entropic-seeds
-  - number-line-growth
+  - smoothing-model
+  - residual-roughness
+  - multi-stage-emergence
+  - conserved-memory
   - factorization
   - PAC
-  - Ackermann
+  - SEC
+  - wave-interference
+  - Mertens
+  - gamma
 
 origin:
   source: "Discord conversation with Andy Farmer"
