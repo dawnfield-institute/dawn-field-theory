@@ -1,0 +1,116 @@
+{
+  "experiment": "exp_15_reconciliation_depth",
+  "hypothesis": "Forbidden k cannot reconcile at Fibonacci depths",
+  "N": 200000,
+  "n_primes": 17984,
+  "pair_counts": {
+    "2": {
+      "pairs": 2160,
+      "density": 0.1201067615658363
+    },
+    "4": {
+      "pairs": 2135,
+      "density": 0.11871663701067615
+    },
+    "6": {
+      "pairs": 4295,
+      "density": 0.23882339857651247
+    },
+    "8": {
+      "pairs": 2194,
+      "density": 0.12199733096085409
+    },
+    "10": {
+      "pairs": 2863,
+      "density": 0.1591970640569395
+    },
+    "12": {
+      "pairs": 4274,
+      "density": 0.23765569395017794
+    },
+    "14": {
+      "pairs": 2638,
+      "density": 0.14668594306049823
+    },
+    "16": {
+      "pairs": 2138,
+      "density": 0.11888345195729537
+    },
+    "18": {
+      "pairs": 4354,
+      "density": 0.24210409252669038
+    },
+    "20": {
+      "pairs": 2879,
+      "density": 0.160086743772242
+    },
+    "22": {
+      "pairs": 2363,
+      "density": 0.13139457295373666
+    },
+    "24": {
+      "pairs": 4317,
+      "density": 0.2400467081850534
+    },
+    "26": {
+      "pairs": 2364,
+      "density": 0.13145017793594305
+    },
+    "28": {
+      "pairs": 2555,
+      "density": 0.14207072953736655
+    },
+    "30": {
+      "pairs": 5787,
+      "density": 0.3217860320284697
+    }
+  },
+  "reconciliation_depths": {
+    "2": {
+      "depth": 20,
+      "is_fibonacci": false
+    },
+    "4": {
+      "depth": 20,
+      "is_fibonacci": false
+    },
+    "6": {
+      "depth": 20,
+      "is_fibonacci": false
+    },
+    "8": {
+      "depth": 20,
+      "is_fibonacci": false
+    },
+    "10": {
+      "depth": 3,
+      "is_fibonacci": true
+    },
+    "12": {
+      "depth": 20,
+      "is_fibonacci": false
+    },
+    "14": {
+      "depth": 4,
+      "is_fibonacci": false
+    },
+    "30": {
+      "depth": 3,
+      "is_fibonacci": true
+    }
+  },
+  "working_fib_fraction": 0.25,
+  "forbidden_fib_fraction": 0.0,
+  "hypothesis_supported": true,
+  "success": true,
+  "_metadata": {
+    "script": "exp_15_reconciliation_depth",
+    "timestamp": "2026-02-08T12:37:46.369165",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "experiment": "exp_04_forbidden_k_prediction",
+  "forbidden_k": [
+    5,
+    12,
+    13,
+    14,
+    15
+  ],
+  "working_k": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "interference_by_k": {
+    "3": 2.7809642993708072,
+    "4": 2.3839322963227847,
+    "5": 2.1674372357589218,
+    "6": 2.0009200063445842,
+    "7": 1.8834153051220164,
+    "8": 1.7844743574416875,
+    "9": 1.7070666321151355,
+    "10": 1.6483742757456927,
+    "11": 1.595367408297527,
+    "12": 1.5524114004410934,
+    "13": 1.5147058190020013,
+    "14": 1.4796345687773995,
+    "15": 1.4483041937543115
+  },
+  "working_interference": {
+    "mean": 1.9730643225950295,
+    "std": 0.3848258180090281
+  },
+  "forbidden_interference": {
+    "mean": 1.6324986435467455,
+    "std": 0.26971964487217587
+  },
+  "correct_predictions": 0,
+  "total_forbidden": 5,
+  "success": false,
+  "success_criterion": "Predict \u2265 4/5 forbidden k values",
+  "notes": "Wave interference alone may not fully separate forbidden from working k. Additional structural features (Fibonacci proximity, LCM resonance) explored."
+}

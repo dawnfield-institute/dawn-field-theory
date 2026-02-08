@@ -1,0 +1,33 @@
+{
+  "experiment": "exp_17_p3_reconciliation",
+  "hypothesis": "p=3 carries \u03c6 because 3 = F\u2084 = MED node bound",
+  "N": 500000,
+  "p3_phi_clustering_impact": "82.1% (from exp_05 of v2)",
+  "p2_phi_clustering_impact": "1.5% (from exp_05 of v2)",
+  "ratio_23_is_F3_over_F4": true,
+  "overshoot_2_3_minus_inv_phi": 0.04863267791677184,
+  "phi_fraction_in_gap_ratios": 0.24873597534550007,
+  "ln_ordering": {
+    "ln_phi": 0.48121182505960347,
+    "ln_3_2": 0.4054651081081644,
+    "gamma": 0.5772156649015329,
+    "ordering": "ln(\u03c6) < ln(3/2) < \u03b3"
+  },
+  "sec_loss_p3": 0.4054651081081643,
+  "block_analysis": {
+    "block_size": 30,
+    "near_phi_pct": 46.598363216092956,
+    "near_23_pct": 39.84506778284501
+  },
+  "success": true,
+  "_metadata": {
+    "script": "exp_17_p3_reconciliation",
+    "timestamp": "2026-02-08T12:40:10.200663",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}

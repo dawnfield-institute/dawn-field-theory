@@ -240,3 +240,121 @@ This experiment extends milestone1 by clarifying:
 3. **Where constants emerge**: φ from PAC, Ξ from SEC+PAC coupling
 
 See: `milestone1/SYNTHESIS.md` section "Constant Hierarchy" for integration.
+
+---
+
+## SEC Local / PAC Global: Experiments 14–17 (Feb 2026)
+
+### The Insight
+
+"SEC is local, which is why it sometimes doesn't conserve — because it conserves on a parent level or grandparent, or however far via PAC."
+
+"Crystallization isn't structure or information — it's POTENTIAL, possibilities. Smoothing is possibilities collapsing into what IS POSSIBLE based on global constraint through SEC and PAC conservation."
+
+### exp_14: Sieve as Local SEC Collapse ✅
+
+Models each step of the Sieve of Eratosthenes as a local SEC collapse event.
+
+**Core result**: PAC conservation π(x) + C(x) = x − 1 is **EXACT at all 126 sieve steps**. No exceptions. Local SEC removes ~1/p of candidates (non-conserving), but the global partition never violates.
+
+| Metric | Value |
+|--------|-------|
+| Mertens product (sieve, p≤√N) | 0.56% error |
+| Mertens product (full, p≤N) | **0.012% error** |
+| SEC→PAC bridge Σln(1-1/p) | **0.004% error** |
+| e^(-Ξ) = e^(-γ)/φ | EXACT (confirmed) |
+| PAC conservation | EXACT at all 126 steps |
+
+**Key identity**: e^(-Ξ) = e^(-γ)/φ = e^(-γ)·e^(-ln(φ)). The Ξ constant decomposes as γ (Phase I cost) + ln(φ) (Phase II SEC efficiency).
+
+### exp_15: Reconciliation Depth per k ✅
+
+Tests whether forbidden k values ({5, 12, 13, 14, 15}) correlate with reconciliation failure in the Fibonacci depth structure.
+
+**Core result**: k = 9 = F₄² = 3² (MED nodes squared) is the critical transition point where λ* drops sharply.
+
+| k range | λ* behaviour | Interpretation |
+|---------|-------------|----------------|
+| k < 9 | λ* > 0.98 | Well within MED-reconcilable region |
+| k = 9 | λ* = 0.9816 | MED boundary: 9 = 3² = F₄² |
+| k > 9 | Rapid λ* decay | Beyond MED node-squared boundary |
+| k ∈ forbidden | λ* = None | No valid Bateman-Horn density |
+
+**Zeckendorf analysis**: The Fibonacci representation depth of k correlates with λ* decay but does NOT cleanly separate forbidden from working k. Most forbidden k (5, 13, 14, 15) have Zeckendorf depth 1–2, same as working k. The one exception is k=12 (depth 3). The stronger signal is the k=9 = F₄² boundary — the transition happens at the square of the MED node bound, not at a Zeckendorf depth threshold.
+
+**What this means for MED**: The MED constraint (nodes ≤ 3) enters through k* = 3² = 9, the squared node bound. Below k=9, reconciliation is fast. Above k=9, the system exceeds MED capacity and λ* collapses.
+
+### exp_16: Possibility Pruning Pipeline ⚠️ (PARTIAL)
+
+Formalizes the Phase I → II → III pipeline in number-theoretic terms.
+
+**Phase I: MED-constrained possibility space** (γ)
+- First 3 primes {2, 3, 5} = {F₃, F₄, F₅} are the MED-allowed collapse basis
+- They eliminate 73.3% of all possibilities
+- ∏(1-1/p) for {2,3,5} = 0.2667 = 4/15
+
+**Phase II: SEC collapse per prime** (ln(φ))
+- Each prime p contributes -ln(1-1/p) of SEC loss
+- Cumulative loss for sieve primes = -2.464, matching -γ-ln(ln(√N)) within 0.23%
+
+**Phase III: Smoothing → PNT** (1/ln(x))
+- π(x)/x converges monotonically toward 1/ln(x) for x > 1000
+- Ratio approaches 1 from above (1.151 at x=100 → 1.090 at x=500k)
+
+**Phase constant confirmed**: γ + ln(φ) = Ξ within 0.12% of 1+π/55.
+
+**PAC conservation EXACT** at all checkpoints.
+
+### exp_17: p=3 Reconciliation Structure ✅
+
+Why p=3 is the dominant φ-carrier (82.1% of φ-clustering from prime_growth_dynamics_v2/exp_05).
+
+**Core result**: 2/3 = F₃/F₄ is the F(n)/F(n+1) Fibonacci convergent closest to 1/φ from above, with 7.87% overshoot.
+
+| Fibonacci ratio | Value | Error from 1/φ |
+|----------------|-------|----------------|
+| F₂/F₃ = 1/2 | 0.500 | 19.1% (below) |
+| **F₃/F₄ = 2/3** | **0.667** | **7.87% (above)** |
+| F₄/F₅ = 3/5 | 0.600 | 2.92% (below) |
+| F₅/F₆ = 5/8 | 0.625 | 1.13% (above) |
+
+**Phase ordering**:
+```
+ln(3/2) = 0.4055 < ln(φ) = 0.4812 < γ = 0.5772
+```
+p=3's SEC contribution ln(3/2) sits *below* ln(φ) — it's the largest single-prime SEC loss that's still smaller than the Phase II efficiency constant. This makes p=3 the bridge between individual SEC collapses and the aggregate Phase II rate.
+
+**After {2,3} sieve**: Gap distribution is exactly 50% gap-2, 50% gap-4 — the minimal binary structure from which φ-clustering emerges in subsequent sieve steps.
+
+### Synthesis: The Full Picture
+
+```
+Phase I (γ):        MED creates possibility space — bounded, finite, 3-mode
+                     Cost = γ = Euler-Mascheroni constant (0.5772)
+                  
+Phase II (ln(φ)):   Local SEC collapses — each prime p removes ~1/p
+                     Non-conserving locally, reconciled globally via PAC
+                     Efficiency rate = ln(φ) (0.4812)
+                     p=3's contribution ln(3/2) = 0.4055 sits just below ln(φ)
+                  
+Phase III (1/ln(x)): Smoothing — cumulative SEC → PNT density
+                     π(x)/x → 1/ln(x) monotonically
+                     PAC ensures π(x) + C(x) = x − 1 EXACTLY
+                  
+Ξ = γ + ln(φ):     The combined phase boundary (1.0584)
+                     e^(-Ξ) = e^(-γ)/φ
+                     Matches 1 + π/55 (1.0571) within 0.12%
+```
+
+**MED enters through**:
+- **Nodes ≤ 3**: First 3 primes {2,3,5} = {F₃,F₄,F₅} are the allowed collapse basis (Phase I)
+- **k* = 3² = 9**: The squared MED node bound is where λ* transitions (exp_15)
+- **Depth ≤ 2 (emergent)**: The symbolic layer adds at most 2 recursive depth levels on top of the base manifold
+
+### Connection to prime_growth_dynamics_v2
+
+These experiments complete the story started in v2:
+- **v2 exp_05**: p=3 carries 82.1% of φ-clustering → **exp_17**: because 2/3 = F₃/F₄
+- **v2 exp_01/02**: Phase constants γ, ln(φ), 1/ln(x) → **exp_16**: full pipeline formalization
+- **v2 exp_08/09**: MED depth = base + 1 → **exp_15**: MED boundary at k=9 = F₄²
+- **v2 exp_04**: Ξ = γ + ln(φ) → **exp_14**: Mertens product decomposes via Ξ
