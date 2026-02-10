@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-02-05T20:04:20.458845",
+  "experiment": "exp_31_universal_decomposition",
+  "hypothesis": "\u03b3 + ln(\u03c6) is the universal interface constant",
+  "constants": {
+    "gamma": 0.5772156649015329,
+    "ln_phi": 0.48121182505960347,
+    "phi": 1.618033988749895
+  },
+  "decomposition_test": {
+    "hypothesis": "All \u039e values decompose as \u03b3 + ln(\u03c6)",
+    "gamma": 0.5772156649015329,
+    "ln_phi": 0.48121182505960347,
+    "decompositions": {
+      "formula_1_plus_pi_55": {
+        "xi_value": 1.0571198664289054,
+        "domain": "Fibonacci arithmetic",
+        "xi_minus_gamma": 0.47990420152737256,
+        "error_from_ln_phi_percent": 0.2717355360228195
+      },
+      "rule_110_measured": {
+        "xi_value": 1.0579,
+        "domain": "Cellular automata",
+        "xi_minus_gamma": 0.4806843350984672,
+        "error_from_ln_phi_percent": 0.10961699893200635
+      },
+      "analytic_gamma_ln_phi": {
+        "xi_value": 1.0584274899611363,
+        "domain": "Number theory + PAC",
+        "xi_minus_gamma": 0.48121182505960347,
+        "error_from_ln_phi_percent": 0.0
+      }
+    }
+  },
+  "all_decompose_as_gamma_ln_phi": true,
+  "hierarchy_test": {
+    "true_xi": 1.0584274899611363,
+    "approximation_errors": {
+      "Cellular automata": 0.049837137275756345,
+      "Fibonacci arithmetic": 0.12354398809869534
+    },
+    "closest": "Cellular automata"
+  },
+  "significance_test": {
+    "p_random": 0.00376,
+    "n_trials": 100000,
+    "max_error_percent": 0.3
+  },
+  "verdict": "validated"
+}

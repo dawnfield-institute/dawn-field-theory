@@ -1,0 +1,48 @@
+{
+  "experiment": "exp_10_thermodynamic_cascade",
+  "title": "Multi-generation Thermodynamic Cascade",
+  "timestamp": "2026-02-09T17:55:42",
+  "main_results": {
+    "cascade_table": {
+      "description": "8 modes, 10 generations",
+      "generations": [
+        {"gen": 0, "P": 1.0000, "A": 0.0563, "xi": 0.0036, "theta": 0.9401, "xi_over_theta": 0.004, "cumulative_xi": 0.0036},
+        {"gen": 1, "P": 1.0000, "A": 0.0632, "xi": 0.0072, "theta": 0.9296, "xi_over_theta": 0.008, "cumulative_xi": 0.0108},
+        {"gen": 2, "P": 1.0000, "A": 0.1062, "xi": 0.0154, "theta": 0.8784, "xi_over_theta": 0.018, "cumulative_xi": 0.0262},
+        {"gen": 3, "P": 1.0000, "A": 0.0895, "xi": 0.0117, "theta": 0.8988, "xi_over_theta": 0.013, "cumulative_xi": 0.0378},
+        {"gen": 4, "P": 1.0000, "A": 0.1449, "xi": 0.0270, "theta": 0.8280, "xi_over_theta": 0.033, "cumulative_xi": 0.0649},
+        {"gen": 5, "P": 1.0000, "A": 0.1226, "xi": 0.0177, "theta": 0.8597, "xi_over_theta": 0.021, "cumulative_xi": 0.0826},
+        {"gen": 6, "P": 1.0000, "A": 0.1458, "xi": 0.0229, "theta": 0.8313, "xi_over_theta": 0.028, "cumulative_xi": 0.1055},
+        {"gen": 7, "P": 1.0000, "A": 0.1769, "xi": 0.0322, "theta": 0.7909, "xi_over_theta": 0.041, "cumulative_xi": 0.1378},
+        {"gen": 8, "P": 1.0000, "A": 0.1394, "xi": 0.0062, "theta": 0.8544, "xi_over_theta": 0.007, "cumulative_xi": 0.1440},
+        {"gen": 9, "P": 0.9805, "A": 0.2312, "xi": 0.0507, "theta": 0.6986, "xi_over_theta": 0.073, "cumulative_xi": 0.1946}
+      ]
+    },
+    "summary": {
+      "single_event_xi": 0.0037,
+      "cascade_total_xi": 0.1948,
+      "amplification_ratio": 52.6,
+      "p_value": 2.75e-35
+    },
+    "decay_rate_sweep": [
+      {"decay": 0.30, "total_xi": 0.1211, "alive_gens": 10, "avg_xi_over_theta": 0.017},
+      {"decay": 0.50, "total_xi": 0.1977, "alive_gens": 10, "avg_xi_over_theta": 0.026},
+      {"decay": 0.60, "total_xi": 0.1980, "alive_gens": 10, "avg_xi_over_theta": 0.025},
+      {"decay": 0.70, "total_xi": 0.2045, "alive_gens": 10, "avg_xi_over_theta": 0.026},
+      {"decay": 0.80, "total_xi": 0.1992, "alive_gens": 10, "avg_xi_over_theta": 0.025},
+      {"decay": 0.90, "total_xi": 0.2005, "alive_gens": 10, "avg_xi_over_theta": 0.025},
+      {"decay": 0.95, "total_xi": 0.1975, "alive_gens": 10, "avg_xi_over_theta": 0.025}
+    ],
+    "environment_size_sweep": [
+      {"N_env": 4, "total_xi": 0.4962, "alive_gens": 10},
+      {"N_env": 6, "total_xi": 0.3144, "alive_gens": 10}
+    ],
+    "parameters": {
+      "n_modes": 8,
+      "n_generations": 10,
+      "n_trials": 50
+    }
+  },
+  "conclusion": "Erasure cascades amplify structure by ~53× over 10 generations (p = 2.75e-35). Each generation inherits prior structure and adds its own ξ contribution.",
+  "paper_sections": ["§10.3"]
+}

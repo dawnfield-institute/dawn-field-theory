@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-02-06T14:28:28.607242",
+  "results": {
+    "test_a": {
+      "description": "F_10 uniqueness among Fibonacci indices",
+      "result": "PASS",
+      "detail": "F_10 gives best fit (5.7 ppm)"
+    },
+    "test_b": {
+      "description": "F_10 vs nearby non-Fibonacci integers",
+      "result": "PASS",
+      "detail": "Best integer: 55 (5.7 ppm), 55 = 5.7 ppm"
+    },
+    "test_c": {
+      "description": "Random baseline precision",
+      "result": "0.001% random trials beat 10 ppm",
+      "detail": "Best random found 5.2 ppm"
+    },
+    "test_d": {
+      "description": "Joint constraint (\u03b1 AND sin\u00b2\u03b8_W)",
+      "result": "2 tuples satisfy both",
+      "detail": "Strong constraint if few matches"
+    },
+    "test_e": {
+      "description": "\u03b1_s cross-validation",
+      "result": "PARTIAL",
+      "detail": "Claimed formula error: 1.80%"
+    }
+  },
+  "parameters": {
+    "alpha_measured": 0.0072973525643,
+    "sin2_theta_w_measured": 0.23122,
+    "alpha_s_measured": 0.118
+  },
+  "fibonacci_used": [
+    0,
+    1,
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34,
+    55,
+    89,
+    144,
+    233,
+    377,
+    610
+  ],
+  "random_trials": 100000,
+  "matches_both_constraints": 2
+}

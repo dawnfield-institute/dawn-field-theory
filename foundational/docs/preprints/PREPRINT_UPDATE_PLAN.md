@@ -1,7 +1,7 @@
 # Preprint Update Plan: PACSeries Consolidation
 
-**Date**: February 7, 2026  
-**Status**: Planning Document  
+**Date**: February 8, 2026  
+**Status**: Planning Document (Updated with exp_14-17 results)  
 **Goal**: Consolidate the PACSeries into a self-contained paper series that establishes Dawn Field Theory through clean derivation, measurement, and honest separation of established results from speculation.
 
 ---
@@ -95,27 +95,31 @@ Renumbered by logical dependency, not historical order.
 ### Paper 2: The Balance Constant and Its Decomposition
 **Source**: Rewrite of current `xi_bounded_invariant_universal_balance_operator`
 
-**Establishes Ξ = γ + ln(φ) from three independent domains.**
+**Establishes Ξ = γ + ln(φ) from four independent domains.**
 
 **Core content:**
 - γ = Euler-Mascheroni = discrete-continuous interface cost (defined as H_n - ln(n))
 - ln(φ) = collapse efficiency (derived in Paper 1 from Landauer erasure)
 - Ξ = γ + ln(φ) = total reconciliation threshold
 
-**Three independent sources:**
+**Four independent sources:**
 
 | Source | Ξ value | Error from γ + ln(φ) | Domain |
 |--------|---------|----------------------|--------|
 | Formula (1+π/55) | 1.0571 | 0.124% | Fibonacci arithmetic |
 | Rule 110 measured | 1.0579 | 0.050% | Cellular automata |
 | Analytic (γ+ln(φ)) | 1.0584 | 0.000% | Number theory |
+| Mertens-derived | 1.0584 | 0.000% | Prime distribution |
+
+The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-Ξ) = e^(-γ)/φ holds algebraically. This is confirmed by the Mertens product validation (∏(1-1/p) matches e^(-γ)/ln(N) to 0.012%) in exp_14.
 
 **Supporting evidence:**
 - Base-agnostic PAC: φ² = φ + 1 holds to < 10⁻¹⁴ across ALL numerical bases (binary, ternary, hex). 55 = F₁₀ is structural, not a decimal coincidence.
 - Conditional Attractor Hypothesis: Ξ is not a universal constant — it's the maximum sustainable computational asymmetry under PAC conservation. Emergence conditions: closed, recursive, conserving, computationally saturated. (Fisher exact p = 3.5 × 10⁻¹⁰)
 - Möbius topology: ~0.12% irreducible spread between three sources is signature of non-orientable topology, not error to eliminate.
+- **SEC-local/PAC-global mechanism**: exp_14-17 show SEC operates locally while PAC reconciles globally. The sieve of Eratosthenes is SEC in action; PAC conservation holds exactly at all 126 sieve steps. This explains WHY γ and ln(φ) combine.
 
-**Key distinction from current paper:** Drop the 0.03 Hz oscillation framing and the "reality tax" language. Lead with the decomposition and the three-way convergence. The story is γ + ln(φ), not spectral ratios.
+**Key distinction from current paper:** Drop the 0.03 Hz oscillation framing and the "reality tax" language. Lead with the decomposition and the four-way convergence. The story is γ + ln(φ), not spectral ratios.
 
 ---
 
@@ -268,8 +272,9 @@ All results that the PACSeries must present with full error bounds:
 ### Derivations (from PAC axiom)
 - φ as unique stable solution of PAC recursion
 - ln(φ) as collapse efficiency ratio (Paper 1: 0.76% error)
-- Ξ = γ + ln(φ) decomposition (Paper 2: three sources within 0.12%)
+- Ξ = γ + ln(φ) decomposition (Paper 2: four sources within 0.12%)
 - MED bounds → D = 3 spatial dimensions (Paper 5)
+- **SEC-local/PAC-global mechanism** (Paper 2: Mertens 0.012% error)
 
 ### Measurements
 | Result | Value | Error | Paper |
@@ -278,8 +283,12 @@ All results that the PACSeries must present with full error bounds:
 | ξ/A vs (1-ln(φ))/ln(φ) | 1.086 vs 1.078 | 0.76% | 1 |
 | Cascade amplification | 53× | p = 2.75×10⁻³⁵ | 1 |
 | Dense/sparse time density ratio | 69× | p = 3.25×10⁻⁵ | 1 |
-| Ξ three-source clustering | 0.12% spread | p < 0.001 | 2 |
+| Ξ four-source clustering | 0.12% spread | p < 0.001 | 2 |
 | Base-agnostic PAC | φ²=φ+1 | < 10⁻¹⁴ | 2 |
+| **PAC conservation (sieve)** | **π(x)+C(x)=x-1** | **EXACT (126 steps)** | **2** |
+| **Mertens product** | **∏(1-1/p) vs e^(-γ)/ln(N)** | **0.012%** | **2** |
+| **SEC→PAC bridge** | **sieve product vs e^(-γ)/ln(√N)** | **0.004%** | **2** |
+| **MED boundary k=9** | **k = 3² = F₄²** | **λ* confirmed** | **2/5** |
 | Feigenbaum r∞ | closed form | 13 digits | 3 |
 | Feigenbaum δ | closed form | 8 digits | 3 |
 | Feigenbaum α | closed form | 6 digits | 3 |

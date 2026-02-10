@@ -1,0 +1,19 @@
+{
+  "experiment": "exp_09_conservative_rbf",
+  "title": "Conservative RBF Binding",
+  "timestamp": "2026-02-09T17:46:12.485486",
+  "main_results": {
+    "rbf_vs_unbound": {
+      "xi_excess": null,
+      "p_value": null
+    },
+    "nonlinear_vs_linear": {
+      "xi_excess": null,
+      "p_value": null
+    },
+    "balance_operator": null,
+    "conservation_ratio": 1.0
+  },
+  "raw_output_chars": 3817,
+  "raw_output_first_2000": "======================================================================\nEXPERIMENT 5c: Conservative RBF Binding\nDawn Field Institute\n======================================================================\n\n============================================================\nRunning 50 paired trials: RBF-bound vs Unbound vs Linear\nN=89, steps=3000, STRICTLY CONSERVATIVE\n============================================================\n\n  Run   0: Î¾_vs_linear=+0.05266, collapses=51, conservation=1.0000000000\n  Run  10: Î¾_vs_linear=+0.06262, collapses=52, conservation=1.0000000000\n  Run  20: Î¾_vs_linear=+0.05330, collapses=51, conservation=1.0000000000\n  Run  30: Î¾_vs_linear=+0.05729, collapses=52, conservation=1.0000000000\n  Run  40: Î¾_vs_linear=+0.06223, collapses=54, conservation=1.0000000000\n\n======================================================================\nRESULTS: CONSERVATIVE RBF BINDING\n======================================================================\n\n0. CONSERVATION VERIFICATION\n   S_final/S_initial: 1.000000000000 Â± 1.23e-16\n   Max deviation: 3.33e-16\n   PASS: System is conservative\n\n1. Î¾ vs UNBOUND (RBF structure - independent structure)\n   Mean: +0.304250 Â± 0.038637\n   t=55.122, p=9.39e-46\n   RBF > unbound: YES\n\n2. Î¾ vs LINEAR COUPLING (THE KEY TEST)\n   Does nonlinear RBF (memory + Î¦) create structure beyond linear coupling?\n   Mean: +0.063213 Â± 0.015339\n   t=28.848, p=2.10e-32\n   RBF > linear: YES â€” EMERGENT STRUCTURE CONFIRMED\n\n3. METRIC BREAKDOWN (RBF vs Linear vs Unbound)\n   ei_corr             : RBF=0.7325  LIN=0.9994  UNB=-0.0151  [LIN] p=3.58e-34 ***\n   corr_length         : RBF=1.0800  LIN=1.0200  UNB=1.0000  [RBF] p=8.32e-02 ns\n   spectral_order      : RBF=0.0410  LIN=0.0431  UNB=0.0425  [LIN] p=3.66e-10 ***\n   cross_field         : RBF=0.1597  LIN=0.1497  UNB=0.0981  [RBF] p=1.10e-02 *\n   gini                : RBF=0.7739  LIN=0.7572  UNB=0.6987  [RBF] p=2.02e-41 ***\n   kl_from_uniform     : RBF=1.2233  LIN=1.1601  UNB=0.9191  [RBF] p=2.10"
+}
