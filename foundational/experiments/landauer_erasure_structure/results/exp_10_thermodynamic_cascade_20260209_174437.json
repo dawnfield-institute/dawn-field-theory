@@ -1,0 +1,14 @@
+{
+  "experiment": "exp_10_thermodynamic_cascade",
+  "title": "Multi-generation Thermodynamic Cascade",
+  "timestamp": "2026-02-09T17:48:11.143948",
+  "main_results": {
+    "single_xi": null,
+    "cascade_xi": null,
+    "amplification_ratio": 3.0,
+    "p_value": 2.75e-35,
+    "mean_lifespan_generations": 0.0
+  },
+  "raw_output_chars": 4904,
+  "raw_output_first_2000": "======================================================================\nEXPERIMENT 6: The Thermodynamic Cascade\nDawn Field Institute\n======================================================================\n\n============================================================\nTEST 1: Multi-Generation Cascade (8 modes, 10 generations)\n============================================================\n\n Gen        P        A        Î¾        Î˜      Î¾/Î˜    Cum Î¾\n-------------------------------------------------------\n   0    1.0000   0.0563   0.0036   0.9401    0.004   0.0036\n   1    1.0000   0.0632   0.0072   0.9296    0.008   0.0108\n   2    1.0000   0.1062   0.0154   0.8784    0.018   0.0262\n   3    1.0000   0.0895   0.0117   0.8988    0.013   0.0378\n   4    1.0000   0.1449   0.0270   0.8280    0.033   0.0649\n   5    1.0000   0.1226   0.0177   0.8597    0.021   0.0826\n   6    1.0000   0.1458   0.0229   0.8313    0.028   0.1055\n   7    1.0000   0.1769   0.0322   0.7909    0.041   0.1378\n   8    1.0000   0.1394   0.0062   0.8544    0.007   0.1440\n   9    0.9805   0.2312   0.0507   0.6986    0.073   0.1946\n\n============================================================\nTEST 2: Decay Rate Sweep (cascade coupling strength)\nHigher decay = tighter coupling = more aggressive 'learning rate'\n============================================================\n\n  decay=0.30: total_Î¾=0.1211, alive_gens=10, avg Î¾/Î˜=0.017\n  decay=0.50: total_Î¾=0.1977, alive_gens=10, avg Î¾/Î˜=0.026\n  decay=0.60: total_Î¾=0.1980, alive_gens=10, avg Î¾/Î˜=0.025\n  decay=0.70: total_Î¾=0.2045, alive_gens=10, avg Î¾/Î˜=0.026\n  decay=0.80: total_Î¾=0.1992, alive_gens=10, avg Î¾/Î˜=0.025\n  decay=0.90: total_Î¾=0.2005, alive_gens=10, avg Î¾/Î˜=0.025\n  decay=0.95: total_Î¾=0.1975, alive_gens=10, avg Î¾/Î˜=0.025\n\n============================================================\nTEST 3: Environment Size Sweep\n============================================================\n\n  N_env= 4: total_Î¾=0.4962, alive_gens=10\n  N_env= 6: total_Î"
+}

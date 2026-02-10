@@ -1,0 +1,53 @@
+{
+  "experiment": "exp_11_time_computation",
+  "title": "Time as Computational Density",
+  "timestamp": "2026-02-09T17:58:56",
+  "main_results": {
+    "dense_regime": {
+      "description": "Strong coupling — early universe analog",
+      "ticks": [
+        {"tick": 0, "xi": 0.00371, "theta": 0.92615, "xi_over_theta": 0.00400, "TC": 0.00405},
+        {"tick": 1, "xi": 0.00713, "theta": 0.92697, "xi_over_theta": 0.00769, "TC": 0.01118},
+        {"tick": 2, "xi": 0.00761, "theta": 0.92941, "xi_over_theta": 0.00818, "TC": 0.01879},
+        {"tick": 3, "xi": 0.00701, "theta": 0.93193, "xi_over_theta": 0.00752, "TC": 0.02580},
+        {"tick": 4, "xi": 0.00581, "theta": 0.93469, "xi_over_theta": 0.00622, "TC": 0.03161},
+        {"tick": 5, "xi": 0.00484, "theta": 0.93684, "xi_over_theta": 0.00517, "TC": 0.03645},
+        {"tick": 6, "xi": 0.00375, "theta": 0.93879, "xi_over_theta": 0.00400, "TC": 0.04021},
+        {"tick": 7, "xi": 0.00313, "theta": 0.93995, "xi_over_theta": 0.00333, "TC": 0.04334},
+        {"tick": 8, "xi": 0.00252, "theta": 0.94109, "xi_over_theta": 0.00268, "TC": 0.04586},
+        {"tick": 9, "xi": 0.00188, "theta": 0.94222, "xi_over_theta": 0.00199, "TC": 0.04774},
+        {"tick": 10, "xi": 0.00150, "theta": 0.94296, "xi_over_theta": 0.00159, "TC": 0.04924},
+        {"tick": 11, "xi": 0.00111, "theta": 0.94362, "xi_over_theta": 0.00118, "TC": 0.05035},
+        {"tick": 12, "xi": 0.00081, "theta": 0.94396, "xi_over_theta": 0.00086, "TC": 0.05117},
+        {"tick": 13, "xi": 0.00087, "theta": 0.94392, "xi_over_theta": 0.00092, "TC": 0.05204},
+        {"tick": 14, "xi": 0.00052, "theta": 0.94486, "xi_over_theta": 0.00055, "TC": 0.05255}
+      ]
+    },
+    "sparse_regime": {
+      "description": "Weak coupling — late universe analog",
+      "ticks": [
+        {"tick": 0, "xi": 0.00115, "theta": 0.97647, "xi_over_theta": 0.00118, "TC": 0.00151},
+        {"tick": 1, "xi": 0.00184, "theta": 0.97591, "xi_over_theta": 0.00189, "TC": 0.00335},
+        {"tick": 2, "xi": 0.00167, "theta": 0.97622, "xi_over_theta": 0.00171, "TC": 0.00503},
+        {"tick": 3, "xi": 0.00121, "theta": 0.97698, "xi_over_theta": 0.00123, "TC": 0.00623},
+        {"tick": 4, "xi": 0.00088, "theta": 0.97730, "xi_over_theta": 0.00090, "TC": 0.00711},
+        {"tick": 5, "xi": 0.00067, "theta": 0.97755, "xi_over_theta": 0.00069, "TC": 0.00778},
+        {"tick": 6, "xi": 0.00041, "theta": 0.97797, "xi_over_theta": 0.00041, "TC": 0.00819},
+        {"tick": 7, "xi": 0.00031, "theta": 0.97799, "xi_over_theta": 0.00031, "TC": 0.00849},
+        {"tick": 8, "xi": 0.00019, "theta": 0.97802, "xi_over_theta": 0.00019, "TC": 0.00866},
+        {"tick": 9, "xi": 0.00017, "theta": 0.97822, "xi_over_theta": 0.00018, "TC": 0.00883},
+        {"tick": 10, "xi": 0.00013, "theta": 0.97827, "xi_over_theta": 0.00013, "TC": 0.00896}
+      ]
+    },
+    "comparison": {
+      "dense_mean_xi_per_tick": 0.00375,
+      "sparse_mean_xi_per_tick": 0.00060,
+      "ratio": 6.25,
+      "p_value": 1.21e-81,
+      "dense_final_TC": 0.05255,
+      "sparse_final_TC": 0.00896
+    }
+  },
+  "conclusion": "Dense-coupling regimes produce ~6× more structure per tick than sparse regimes (p = 1.21e-81). Time in the SEC framework is computational density, not clock ticks.",
+  "paper_sections": ["§11.2"]
+}

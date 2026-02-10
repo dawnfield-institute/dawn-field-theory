@@ -1,0 +1,47 @@
+{
+  "experiment": "exp_16_possibility_pruning",
+  "hypothesis": "Crystallization is potential, smoothing is collapse into actuality",
+  "N": 500000,
+  "n_primes": 41538,
+  "phase_I": {
+    "possibility_space": 499999,
+    "med_primes": [
+      2,
+      3,
+      5
+    ],
+    "after_med_pruning": 0.2666666666666667,
+    "gamma_connection": 0.7347210446652235
+  },
+  "phase_II": {
+    "total_sec_loss": -2.117622938358181,
+    "dominant_carrier": "p=3 (82.1% of \u03c6-clustering)",
+    "transition_to_III": 3
+  },
+  "phase_III": {
+    "smoothing_rate": "1/ln(x)",
+    "mertens_prediction": 21393.23029774019,
+    "actual_primes": 41538,
+    "delta_buffer": 20144.76970225981,
+    "delta_fraction": 0.48497206659588354
+  },
+  "phase_constants": {
+    "gamma": 0.5772156649015329,
+    "ln_phi": 0.48121182505960347,
+    "xi": 1.0584274899611363,
+    "xi_formula": 1.0571198664289054,
+    "xi_match": 0.12354398809869534
+  },
+  "pac_exact": true,
+  "success": false,
+  "_metadata": {
+    "script": "exp_16_possibility_pruning",
+    "timestamp": "2026-02-08T12:39:57.904565",
+    "constants": {
+      "PHI": 1.618033988749895,
+      "PHI_INV": 0.6180339887498948,
+      "XI": 1.0571198664289054,
+      "LAMBDA_STAR": 0.618432
+    }
+  }
+}
