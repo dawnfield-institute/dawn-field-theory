@@ -1,0 +1,159 @@
+{
+  "timestamp": "2026-02-05T18:14:31.845178",
+  "hypothesis": "\u03b3 is the emergence surplus in \u039e \u2248 \u03b3 + ln(\u03c6)",
+  "constants": {
+    "gamma": 0.5772156649015329,
+    "ln_phi": 0.48121182505960347,
+    "gamma_plus_ln_phi": 1.0584274899611363,
+    "xi": 1.0571198664289054,
+    "phi": 1.618033988749895
+  },
+  "tests": {
+    "decomposition": {
+      "decomposition": {
+        "xi": 1.0571198664289054,
+        "gamma_plus_ln_phi": 1.0584274899611363,
+        "error_percent": 0.12369680806853399
+      },
+      "components": {
+        "structure_ln_phi": 0.48121182505960347,
+        "surplus_gamma": 0.5772156649015329,
+        "structure_percent": 45.46478900290777,
+        "surplus_percent": 54.53521099709223
+      },
+      "ratios": {
+        "surplus_to_structure": 1.1995043239638556,
+        "structure_to_total": 0.45464789002907774,
+        "surplus_to_total": 0.5453521099709223
+      }
+    },
+    "rule_110": {
+      "rule_110_midpoint": 0.574,
+      "candidates": {
+        "gamma_itself": {
+          "value": 0.5772156649015329,
+          "error_percent": 0.5602203661207162,
+          "match": true
+        },
+        "gamma_over_xi": {
+          "value": 0.5460266931236907,
+          "error_percent": 4.8733984105068435,
+          "match": false
+        },
+        "gamma_over_gamma_plus_ln_phi": {
+          "value": 0.5453521099709223,
+          "error_percent": 4.990921607853248,
+          "match": false
+        },
+        "ln_phi_over_gamma": {
+          "value": 0.8336776950460852,
+          "error_percent": 45.240016558551446,
+          "match": false
+        },
+        "one_minus_ln_phi": {
+          "value": 0.5187881749403965,
+          "error_percent": 9.618784853589448,
+          "match": false
+        },
+        "sqrt_gamma": {
+          "value": 0.7597471058855919,
+          "error_percent": 32.360122976583966,
+          "match": false
+        }
+      },
+      "best_match": {
+        "name": "gamma_itself",
+        "value": 0.5772156649015329,
+        "error_percent": 0.5602203661207162
+      }
+    },
+    "pac_amplification": {
+      "standard_formula": {
+        "epsilon": 0.3364917043656089,
+        "description": "\u039e/\u03c0 from reality-engine"
+      },
+      "decomposed": {
+        "gamma_over_pi": 0.18373345259830798,
+        "ln_phi_over_pi": 0.15317448126501657,
+        "sum": 0.3369079338633245,
+        "sum_vs_epsilon_error": 0.12369680806852527
+      },
+      "insight": "Amplification = 1 + (\u03b3/\u03c0 + ln(\u03c6)/\u03c0)\u00b7M = 1 + (surplus + structure)\u00b7M/\u03c0"
+    },
+    "mertens": {
+      "e_gamma": 1.781072417990198,
+      "relations": {
+        "xi_over_e_gamma": 0.5935299742734679,
+        "inv_phi": 0.6180339887498948,
+        "error_xi_e_gamma_vs_inv_phi": 3.964832828367822,
+        "e_gamma_over_phi": 1.100763290742902
+      },
+      "insight": "e^\u03b3/\u03c6 = 1.101... - not directly \u039e but close"
+    },
+    "emergence": {
+      "xi_minus_1": 0.05711986642890543,
+      "gamma_ln_phi_minus_1": 0.058427489961136336,
+      "gap_percent": 2.289262237436159,
+      "reconstruction_test": {
+        "formula": "\u03b3 \u2248 (\u03c0/55) + (1 - ln(\u03c6))",
+        "result": 0.575908041369302,
+        "actual_gamma": 0.5772156649015329,
+        "error_percent": 0.22653985533361665
+      },
+      "interpretation": {
+        "xi_is": "1 + emergence_factor",
+        "gamma_is": "emergence_factor + complement_of_ln_phi",
+        "1_minus_ln_phi": 0.5187881749403965,
+        "description": "The part of \"1\" not explained by \u03c6 geometry"
+      }
+    },
+    "ratio": {
+      "gamma_over_ln_phi": 1.1995043239638556,
+      "interpretation": "Surplus-to-structure ratio",
+      "candidates": {
+        "phi": {
+          "value": 1.618033988749895,
+          "error_percent": 34.891884624723595
+        },
+        "sqrt_phi": {
+          "value": 1.272019649514069,
+          "error_percent": 6.045440946021836
+        },
+        "phi_squared_over_2": {
+          "value": 1.3090169943749475,
+          "error_percent": 9.129827064666065
+        },
+        "e_over_phi": {
+          "value": 1.679990560988901,
+          "error_percent": 40.05706585844068
+        },
+        "pi_over_e": {
+          "value": 1.1557273497909217,
+          "error_percent": 3.649588692458355
+        },
+        "ln_2_times_2": {
+          "value": 1.3862943611198906,
+          "error_percent": 15.572268763381583
+        },
+        "1_plus_inv_phi": {
+          "value": 1.618033988749895,
+          "error_percent": 34.891884624723595
+        }
+      },
+      "best_match": "pi_over_e",
+      "best_error": 3.649588692458355,
+      "none_close": false
+    }
+  },
+  "summary": {
+    "decomposition_holds": true,
+    "xi": 1.0571198664289054,
+    "gamma_plus_ln_phi": 1.0584274899611363,
+    "gap_percent": 0.12369680806853399,
+    "interpretation": {
+      "gamma_is": "Emergence surplus, accumulative information excess",
+      "ln_phi_is": "Geometric structure contribution from \u03c6",
+      "xi_is": "Their sum, with 0.12% residual from M\u00f6bius topology"
+    }
+  }
+}

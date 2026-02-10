@@ -1,0 +1,43 @@
+{
+  "experiment": "exp_13_causal_falsification",
+  "title": "Causal Lag Falsification Suite",
+  "timestamp": "2026-02-09T18:01:29",
+  "main_results": {
+    "parameter_robustness": {
+      "description": "Does lag=1 ALWAYS beat other lags across parameter combos?",
+      "results": [
+        {"params": "r=0.1, b=0.8", "lag0_dev": 19.93, "lag1_dev": 30.45, "lag2_dev": 25.44, "winner": "LAG0"},
+        {"params": "r=0.2, b=0.8", "lag0_dev": 4.67, "lag1_dev": 11.83, "lag2_dev": 6.02, "winner": "LAG0"},
+        {"params": "r=0.4, b=0.8", "lag0_dev": 34.67, "lag1_dev": 6.27, "lag2_dev": 13.61, "winner": "LAG1"},
+        {"params": "r=0.5, b=0.8", "lag0_dev": 43.84, "lag1_dev": 9.92, "lag2_dev": 17.86, "winner": "LAG1"},
+        {"params": "r=0.3, b=0.5", "lag0_dev": 61.16, "lag1_dev": 42.79, "lag2_dev": 48.82, "winner": "LAG1"},
+        {"params": "r=0.3, b=0.9", "lag0_dev": 9.79, "lag1_dev": 14.33, "lag2_dev": 6.41, "winner": "LAG2"},
+        {"params": "r=0.3, b=0.6", "lag0_dev": 48.07, "lag1_dev": 28.26, "lag2_dev": 34.21, "winner": "LAG1"}
+      ],
+      "lag1_wins": 4,
+      "total_combos": 7,
+      "verdict": "FALSIFICATION SIGNAL: Lag=1 doesn't always win"
+    },
+    "shuffled_control": {
+      "description": "Does breaking the causal link destroy the signal?",
+      "normal_ratio": 0.4793,
+      "normal_deviation_pct": 0.39,
+      "shuffled_ratio": 0.5837,
+      "shuffled_deviation_pct": 21.31,
+      "verdict": "Shuffling breaks the signal — causality matters"
+    },
+    "continuous_lag_sweep": {
+      "description": "Is minimum at exactly lag=1.0 or somewhere else?",
+      "sweep_points": [
+        {"lag": 0.0, "ratio": 0.5877, "dev_pct": 22.13},
+        {"lag": 0.5, "ratio": 0.5672, "dev_pct": 17.87},
+        {"lag": 0.8, "ratio": 0.5546, "dev_pct": 15.26},
+        {"lag": 0.9, "ratio": 0.5200, "dev_pct": 8.07}
+      ]
+    },
+    "tests_passed": 4,
+    "tests_total": 6
+  },
+  "conclusion": "Lag=1 wins 4/7 parameter combos — not universal, indicating regime-dependence. Shuffling destroys the signal (0.39% → 21.31%), confirming causality is essential. 4/6 falsification tests passed.",
+  "paper_sections": ["§9.1", "§9.2"]
+}

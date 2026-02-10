@@ -1,0 +1,43 @@
+{
+  "experiment": "exp_09_conservative_rbf",
+  "title": "Conservative RBF Binding",
+  "timestamp": "2026-02-09T17:53:44",
+  "main_results": {
+    "conservation_verification": {
+      "S_final_over_S_initial": 1.0,
+      "std": 1.23e-16,
+      "max_deviation": 3.33e-16,
+      "verdict": "PASS — system is conservative"
+    },
+    "rbf_vs_unbound": {
+      "xi_excess_mean": 0.304250,
+      "xi_excess_std": 0.038637,
+      "t_statistic": 55.122,
+      "p_value": 9.39e-46,
+      "verdict": "RBF > unbound: YES"
+    },
+    "nonlinear_vs_linear": {
+      "xi_excess_mean": 0.063213,
+      "xi_excess_std": 0.015339,
+      "t_statistic": 28.848,
+      "p_value": 2.10e-32,
+      "verdict": "RBF > linear: YES — EMERGENT STRUCTURE CONFIRMED"
+    },
+    "metric_breakdown": {
+      "ei_corr": {"RBF": 0.7325, "LIN": 0.9994, "UNB": -0.0151, "winner": "LIN", "p": 3.58e-34},
+      "corr_length": {"RBF": 1.0800, "LIN": 1.0200, "UNB": 1.0000, "winner": "RBF", "p": 8.32e-02},
+      "spectral_order": {"RBF": 0.0410, "LIN": 0.0431, "UNB": 0.0425, "winner": "LIN", "p": 3.66e-10},
+      "cross_field": {"RBF": 0.1597, "LIN": 0.1497, "UNB": 0.0981, "winner": "RBF", "p": 1.10e-02},
+      "gini": {"RBF": 0.7739, "LIN": 0.7572, "UNB": 0.6987, "winner": "RBF", "p": 2.02e-41},
+      "kl_from_uniform": {"RBF": 1.2233, "LIN": 1.1601, "UNB": 0.9191, "winner": "RBF", "p": 2.10e-32}
+    },
+    "balance_operator": 1.0571,
+    "parameters": {
+      "N": 89,
+      "steps": 3000,
+      "n_trials": 50
+    }
+  },
+  "conclusion": "Nonlinear RBF binding creates emergent structure beyond linear coupling (p = 2.10e-32). Conservation is exact to machine precision. Balance operator Ξ ≈ 1.0571.",
+  "paper_sections": ["§12.3"]
+}

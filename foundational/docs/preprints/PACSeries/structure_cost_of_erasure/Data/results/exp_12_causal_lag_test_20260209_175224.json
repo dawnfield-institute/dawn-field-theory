@@ -1,0 +1,34 @@
+{
+  "experiment": "exp_12_causal_lag_test",
+  "title": "Causal Lag Hypothesis Test",
+  "timestamp": "2026-02-09T17:59:48",
+  "main_results": {
+    "single_run_lag_comparison": {
+      "phi": 1.618034,
+      "ln_phi": 0.481212,
+      "lags": [
+        {"lag": 0, "A": 0.3810, "xi": 0.2666, "A_over_A_plus_xi": 0.5883, "deviation_from_ln_phi_pct": 22.25},
+        {"lag": 1, "A": 0.4465, "xi": 0.4850, "A_over_A_plus_xi": 0.4793, "deviation_from_ln_phi_pct": 0.39},
+        {"lag": 2, "A": 0.4720, "xi": 0.4510, "A_over_A_plus_xi": 0.5114, "deviation_from_ln_phi_pct": 6.27},
+        {"lag": 3, "A": 0.4727, "xi": 0.4059, "A_over_A_plus_xi": 0.5380, "deviation_from_ln_phi_pct": 11.80}
+      ],
+      "verdict": "HYPOTHESIS SUPPORTED: Lag=1 produces closest match to ln(φ)"
+    },
+    "multi_seed_validation": {
+      "n_seeds": 20,
+      "lag_stats": [
+        {"lag": 0, "mean_dev_pct": 33.82, "std_pct": 8.08, "min_pct": 14.54, "max_pct": 45.24},
+        {"lag": 1, "mean_dev_pct": 8.59, "std_pct": 5.29, "min_pct": 0.34, "max_pct": 17.97},
+        {"lag": 2, "mean_dev_pct": 10.60, "std_pct": 7.32, "min_pct": 1.62, "max_pct": 27.02}
+      ],
+      "statistical_tests": {
+        "lag0_vs_lag1": {"t": 11.39, "p": 0.0000},
+        "lag1_vs_lag2": {"t": -0.97, "p": 0.3373}
+      }
+    },
+    "tests_passed": 2,
+    "tests_total": 3
+  },
+  "conclusion": "Lag=1 produces A/(A+ξ) within 0.39% of ln(φ). Multi-seed validation: lag=0 deviation is 33.82% vs lag=1 at 8.59% (p < 0.0001). Lag 1 vs Lag 2 difference is not statistically significant (p = 0.34).",
+  "paper_sections": ["§8.1", "§8.2"]
+}

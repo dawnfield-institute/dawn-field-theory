@@ -1,0 +1,125 @@
+schema_version: '1.0'
+created: '2026-02-10'
+description: Traces code and data files back to their original repository locations
+source_repository: dawn-field-theory
+paper: balance_constant_decomposition
+paper_type: foundational  # PACSeries Paper 2 — balance constant decomposition
+
+experiments:
+  - local: experiments/exp_01_xi_derivation_contest.py
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_23_xi_derivation_contest.py
+    repo: dawn-field-theory
+    description: "Three candidate derivations of Ξ compared"
+    key_result: "Within-level: −0.02826; cross-level: +0.08538; net = π/55"
+    paper_sections: [4.1]
+
+  - local: experiments/exp_02_xi_exact_derivation.py
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_25_xi_exact_derivation.py
+    repo: dawn-field-theory
+    description: "Exact continuous k = 10.0121 for Ξ = γ + ln(φ)"
+    key_result: "Δk = 0.0121 ≈ γ/48 at 0.67% error; 48 = F₁₀ − (F₅ + F₃)"
+    paper_sections: [4.2]
+
+  - local: experiments/exp_03_gamma_as_surplus.py
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_29_gamma_as_surplus.py
+    repo: dawn-field-theory
+    description: "γ = 54.5% of Ξ (surplus); ln(φ) = 45.5% (structure)"
+    key_result: "Surplus-to-structure ratio = 1.200; Rule 110 midpoint ≈ γ at 0.56%"
+    paper_sections: [9.1]
+
+  - local: experiments/exp_04_gamma_falsification.py
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_30_gamma_falsification.py
+    repo: dawn-field-theory
+    description: "Falsification attempt — can γ be replaced?"
+    key_result: "γ consistent within 0.67% tolerance; Δk = γ/48 at 1.44% error"
+    paper_sections: [9.2]
+
+  - local: experiments/exp_05_universal_decomposition.py
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_31_universal_decomposition.py
+    repo: dawn-field-theory
+    description: "All three Ξ values decompose within 0.27% of γ + ln(φ)"
+    key_result: "p = 0.00376 (n=100,000); max error 0.272%"
+    paper_sections: [3.2]
+
+  - local: experiments/exp_06_ca_xi_clustering.py
+    source: dawn-field-theory/foundational/experiments/cellular_automata_pac_attractors/scripts/exp_07_definitive_proof.py
+    repo: dawn-field-theory
+    description: "All 256 ECAs measured; Class IV cluster at Ξ"
+    key_result: "p < 10⁻⁷; Rules 110,124 at 0.00077 from Ξ; enrichment 42.67×"
+    paper_sections: [5]
+
+  - local: experiments/exp_07_sieve_pac_conservation.py
+    source: dawn-field-theory/foundational/experiments/asymmetric_conservation/scripts/exp_14_sieve_as_local_sec.py
+    repo: dawn-field-theory
+    description: "PAC exact at all 126 sieve steps for N=500,000"
+    key_result: "41,538 primes; PAC exact all steps; Mertens error 0.012%"
+    paper_sections: [6.1]
+
+  - local: experiments/exp_08_phase_decomposition.py
+    source: dawn-field-theory/foundational/experiments/asymmetric_conservation/scripts/exp_16_possibility_pruning.py
+    repo: dawn-field-theory
+    description: "Three-phase sieve decomposition: MED, SEC, residual"
+    key_result: "Phase I prunes 73.3%; Phase II SEC loss; Phase III buffer"
+    paper_sections: [6.3]
+
+  - local: experiments/exp_09_p3_reconciliation.py
+    source: dawn-field-theory/foundational/experiments/asymmetric_conservation/scripts/exp_17_p3_reconciliation.py
+    repo: dawn-field-theory
+    description: "p=3 carries 82.1% of φ-clustering impact"
+    key_result: "2/3 = F₃/F₄; p=3 is the dominant φ-carrier in prime sieve"
+    paper_sections: [6.3]
+
+  - local: experiments/exp_10_base_invariance.py
+    source: dawn-field-theory/foundational/experiments/base_agnostic_pac/scripts/exp_11_entropy_analysis.py
+    repo: dawn-field-theory
+    description: "PAC identity holds to <10⁻¹⁴ across 11 numerical bases"
+    key_result: "φ²−φ−1 = 0 exact in all bases; digit entropy varies 20–30%"
+    paper_sections: [8]
+
+  - local: experiments/exp_11_zeckendorf_validation.py
+    source: dawn-field-theory/foundational/experiments/base_agnostic_pac/scripts/exp_12_zeckendorf_validation.py
+    repo: dawn-field-theory
+    description: "Zeckendorf representation — F₁₀=55 structural significance"
+    key_result: "Every integer has unique non-consecutive Fibonacci decomposition"
+    paper_sections: [8]
+
+data:
+  - local: "../Data/results/exp_23_xi_derivation_contest_20260205_164329.json"
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/results/exp_23_xi_derivation_contest_20260205_164329.json
+    experiment: exp_01
+
+  - local: "../Data/results/exp_25_xi_exact_derivation_20260205_171241.json"
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/results/exp_25_xi_exact_derivation_20260205_171241.json
+    experiment: exp_02
+
+  - local: "../Data/results/exp_29_results.json"
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_29_results.json
+    experiment: exp_03
+
+  - local: "../Data/results/exp_30_results.json"
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_30_results.json
+    experiment: exp_04
+
+  - local: "../Data/results/exp_31_results.json"
+    source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/scripts/exp_31_results.json
+    experiment: exp_05
+
+  - local: "../Data/results/exp_07_definitive_20251220_094854.json"
+    source: dawn-field-theory/foundational/experiments/cellular_automata_pac_attractors/results/exp_07_definitive_20251220_094854.json
+    experiment: exp_06
+
+  - local: "../Data/results/exp_14_sieve_as_local_sec_20260208_124305.json"
+    source: dawn-field-theory/foundational/experiments/asymmetric_conservation/results/exp_14_sieve_as_local_sec_20260208_124305.json
+    experiment: exp_07
+
+  - local: "../Data/results/exp_16_possibility_pruning_20260208_123957.json"
+    source: dawn-field-theory/foundational/experiments/asymmetric_conservation/results/exp_16_possibility_pruning_20260208_123957.json
+    experiment: exp_08
+
+  - local: "../Data/results/exp_17_p3_reconciliation_20260208_124010.json"
+    source: dawn-field-theory/foundational/experiments/asymmetric_conservation/results/exp_17_p3_reconciliation_20260208_124010.json
+    experiment: exp_09
+
+  - local: "../Data/results/exp_11_entropy_analysis_20260106_170110.json"
+    source: dawn-field-theory/foundational/experiments/base_agnostic_pac/results/exp_11_entropy_analysis_20260106_170110.json
+    experiment: exp_10

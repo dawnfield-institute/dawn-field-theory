@@ -1,0 +1,108 @@
+schema_version: "2.0"
+type: "paper"
+name: "structure_cost_of_erasure"
+title: "The Structure Cost of Erasure"
+subtitle: "On the necessary emergence of correlational structure from information loss"
+series: "PACSeries"
+series_order: 1
+author: "Peter Groom"
+affiliation: "Dawn Field Institute"
+date: "2026-02"
+version: "1.0"
+status: "draft"
+
+description: >
+  Derives that information erasure into multi-mode environments necessarily creates
+  correlational structure (ξ), starting from Landauer's principle and the data
+  processing inequality. Demonstrates that ξ is topological (temperature-invariant),
+  that cascade topology produces the most structure, and that the partition ratio
+  A/(A+ξ) converges to ln(φ). Foundation paper for the PACSeries.
+
+semantic_scope: "publication"
+proficiency_level: "research"
+estimated_context_weight: 0.9
+
+files:
+  - "[paper.md]": "Main paper (Markdown source)"
+  - "[README.md]": "Paper overview and reproduction instructions"
+  - "[Code/reproduce.py]": "Reproduction script — runs all experiments"
+  - "[Code/requirements.txt]": "Python dependencies (numpy, scipy)"
+  - "[Code/trace.yaml]": "Provenance trace — maps local files to source repo"
+  - "[Code/experiments/exp_01_landauer_xi.py]": "Core single-bit erasure simulation"
+  - "[Code/experiments/exp_02_topology_analysis.py]": "Temperature independence validation"
+  - "[Code/experiments/exp_03_ratio_analysis.py]": "Ratio analysis → ln(φ)"
+  - "[Code/experiments/exp_04_cascade_robustness.py]": "Robustness across 30 seeds"
+  - "[Code/experiments/exp_05_sec_collapse.py]": "Full decay rate sweep"
+  - "[Code/experiments/exp_06_gauge_topology.py]": "Gauge group coupling topologies"
+  - "[Code/experiments/exp_07_lie_algebra_entropy.py]": "Lie algebra structure entropy"
+  - "[Code/experiments/exp_08_falsification_suite.py]": "Comprehensive falsification tests"
+  - "[Code/experiments/exp_09_conservative_rbf.py]": "Conservative RBF binding"
+  - "[Code/experiments/exp_10_thermodynamic_cascade.py]": "Multi-generation cascade (53× amplification)"
+  - "[Code/experiments/exp_11_time_computation.py]": "Time as computational density (69× ratio)"
+  - "[Code/experiments/exp_12_causal_lag_test.py]": "Causal lag hypothesis"
+  - "[Code/experiments/exp_13_causal_falsification.py]": "Causal lag falsification"
+  - "[Code/experiments/exp_14_pac_conservation.py]": "PAC ratio vs magnitude conservation"
+  - "[Code/experiments/exp_15_gauge_group_hierarchy.py]": "Gauge ξ hierarchy prediction"
+  - "[Code/experiments/exp_16_ln_phi_derivation.py]": "First-principles ln(φ) derivation"
+  - "[Data/results/exp_01_results.json]": "Core results — all topologies"
+  - "[Data/results/exp_04_robustness_test.json]": "30-seed robustness data"
+  - "[Data/results/exp_05_sec_collapse.json]": "Decay sweep data"
+  - "[Data/results/exp_06_gauge_topology_20260206_134941.json]": "Gauge topology run 1"
+  - "[Data/results/exp_06_gauge_topology_20260206_135128.json]": "Gauge topology run 2"
+  - "[Data/results/exp_07_lie_algebra_entropy_20260206_135535.json]": "Lie algebra entropy"
+  - "[Data/results/exp_08_falsification_20260206_142828.json]": "Falsification suite (3.9M combinations)"
+  - "[Data/results/exp_09_conservative_rbf_20260209_175224.json]": "Conservative RBF binding — Ξ = 1.0571"
+  - "[Data/results/exp_10_thermodynamic_cascade_20260209_175224.json]": "Multi-generation cascade — 53× amplification"
+  - "[Data/results/exp_11_time_computation_20260209_175224.json]": "Dense vs sparse ξ-production regimes"
+  - "[Data/results/exp_12_causal_lag_test_20260209_175224.json]": "Causal lag hypothesis — lag=1 at 0.39%"
+  - "[Data/results/exp_13_causal_falsification_20260209_175224.json]": "Causal lag falsification suite"
+  - "[Data/results/exp_14_pac_conservation_20260209_175224.json]": "PAC conservation — ratio vs magnitude"
+  - "[Data/results/exp_15_gauge_group_hierarchy_20260209_111320.json]": "Gauge ξ hierarchy — SU(3) > SU(2) > U(1)"
+  - "[Data/results/exp_16_ln_phi_derivation_20260209_111320.json]": "First-principles ln(φ) derivation"
+  - "[Code/generate_figures.py]": "Publication figure generator (6 figures)"
+  - "[Figures/fig1_coupling_topology.png]": "§4.4 — coupling topology determines ξ"
+  - "[Figures/fig2_information_budget.png]": "§4.5 — PAC budget P = A + ξ + Θ"
+  - "[Figures/fig3_decay_ratio_sweep.png]": "§6 — convergence to ln(φ) at golden ratio"
+  - "[Figures/fig4_cascade_amplification.png]": "§10.3 — 53× cascade amplification"
+  - "[Figures/fig5_dense_sparse_regimes.png]": "§11.2 — 69× dense vs sparse"
+  - "[Figures/fig6_pac_ratio_stability.png]": "§9.2 — ratio stability despite variation"
+
+source_experiment: "foundational/experiments/landauer_erasure_structure"
+source_scripts:
+  - "exp_01_landauer_xi.py"
+  - "exp_02_topology_analysis.py"
+  - "exp_03_ratio_analysis.py"
+  - "exp_04_cascade_robustness.py"
+  - "exp_05_sec_collapse.py"
+  - "exp_06_gauge_topology.py"
+  - "exp_07_lie_algebra_entropy.py"
+  - "exp_08_falsification_suite.py"
+  - "exp_09_conservative_rbf.py"
+  - "exp_10_thermodynamic_cascade.py"
+  - "exp_11_time_computation.py"
+  - "exp_12_causal_lag_test.py"
+  - "exp_13_causal_falsification.py"
+  - "exp_14_pac_conservation.py"
+  - "exp_15_gauge_group_hierarchy.py"
+  - "exp_16_ln_phi_derivation.py"
+
+key_results:
+  - "ξ emerges necessarily from multi-mode erasure (DPI consequence)"
+  - "ξ is topological, invariant under temperature (100K-5000K)"
+  - "A/(A+ξ) = ln(φ) at decay ratio φ (0.03-0.16% error)"
+  - "ξ/A = 1.086 vs predicted 1.078 (0.76% error)"
+  - "Cascade amplification: 53× over single event (p = 2.75e-35)"
+  - "Time density: 69× difference dense/sparse (p = 3.25e-5)"
+  - "ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) confirmed (p = 1.51e-11)"
+  - "ln(φ) derived from PAC recursion Ψ(k)=Ψ(k+1)+Ψ(k+2)"
+
+falsifiable_predictions:
+  - "ξ(SU(3)) > ξ(SU(2)) > ξ(U(1))"
+  - "Different decay ratio produces closer match than φ"
+  - "Fewer cascade generations produce more total ξ"
+
+depends_on: []
+depended_on_by:
+  - "PACSeries Paper 2 (Balance Constant)"
+  - "PACSeries Paper 4 (Standard Model)"
+  - "PACSeries Paper 5 (Classical Physics)"

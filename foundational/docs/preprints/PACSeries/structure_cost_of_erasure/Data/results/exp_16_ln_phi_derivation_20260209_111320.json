@@ -1,0 +1,46 @@
+{
+  "experiment": "exp_16_ln_phi_derivation",
+  "title": "First-Principles Derivation of ln(φ)",
+  "hypothesis": "A/(A+ξ) = ln(φ) follows from PAC axioms alone",
+  "timestamp": "2026-02-09T11:13:20",
+  "main_results": {
+    "pac_recursion": {
+      "equation": "Ψ(k) = Ψ(k+1) + Ψ(k+2)",
+      "characteristic_roots": {
+        "phi": 1.618034,
+        "psi": -0.618034
+      },
+      "stable_solution": "Ψ(k) = a·φ^(-k)"
+    },
+    "information_transition": {
+      "formula": "ΔI = I(k) - I(k+1) = log(Ψ(k)/Ψ(k+1)) = log(φ)",
+      "value": 0.481212,
+      "verified_levels": 5,
+      "all_equal": true
+    },
+    "pac_split_probabilities": {
+      "p1": 0.618034,
+      "p2": 0.381966,
+      "sum": 1.000000,
+      "description": "p1 = 1/φ (level k+1), p2 = 1/φ² (level k+2)"
+    },
+    "binary_entropy_of_split": 0.665018,
+    "derivation_chain": {
+      "step_1": "PAC recursion Ψ(k) = Ψ(k+1) + Ψ(k+2)",
+      "step_2": "Stable solution Ψ(k) = φ^(-k)",
+      "step_3": "Information unit ΔI = log(φ) per level transition",
+      "step_4": "A = log(φ) [first transition, parent → coupling]",
+      "step_5": "ξ = 1 - log(φ) [subsequent transitions, coupling → binding]",
+      "step_6": "A/(A+ξ) = log(φ)/1 = ln(φ)"
+    },
+    "numerical_verification": {
+      "predicted_A": 0.4812,
+      "predicted_xi": 0.5188,
+      "predicted_xi_over_A": 1.0781,
+      "measured_xi_over_A_exp14": 1.086,
+      "error_pct": 0.76
+    }
+  },
+  "conclusion": "PAC recursion → φ-scaling → log(φ) transition unit → A = log(φ), ξ = 1 - log(φ) → A/(A+ξ) = ln(φ). Validated against exp_14 measurements with 0.76% error.",
+  "paper_sections": ["§12"]
+}

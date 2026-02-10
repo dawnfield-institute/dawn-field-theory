@@ -1,0 +1,66 @@
+{
+  "experiment": "exp_14_pac_conservation",
+  "title": "PAC Ratio vs Magnitude Conservation",
+  "timestamp": "2026-02-09T17:54:00",
+  "main_results": {
+    "test1_varying_decay_rate": {
+      "description": "I_total = A + ξ across decay rates 0.1-0.5",
+      "I_total_variance": 0.180349,
+      "I_total_range": [0.6656, 1.8488],
+      "data": [
+        {"rate": 0.10, "A": 0.6152, "xi": 1.2336, "I_total": 1.8488, "ratio": 0.3328, "dev_pct": 30.85},
+        {"rate": 0.20, "A": 0.5182, "xi": 0.7045, "I_total": 1.2227, "ratio": 0.4238, "dev_pct": 11.93},
+        {"rate": 0.30, "A": 0.4465, "xi": 0.4850, "I_total": 0.9315, "ratio": 0.4793, "dev_pct": 0.39},
+        {"rate": 0.40, "A": 0.3939, "xi": 0.3747, "I_total": 0.7686, "ratio": 0.5125, "dev_pct": 6.50},
+        {"rate": 0.50, "A": 0.3539, "xi": 0.3117, "I_total": 0.6656, "ratio": 0.5317, "dev_pct": 10.49}
+      ],
+      "finding": "I_total varies significantly — PAC may not be conserved locally"
+    },
+    "test1_varying_causal_lag": {
+      "description": "I_total across causal lags 0-3",
+      "I_total_variance": 0.013409,
+      "data": [
+        {"lag": 0, "A": 0.3810, "xi": 0.2666, "I_total": 0.6477, "ratio": 0.5883, "dev_pct": 22.25},
+        {"lag": 1, "A": 0.4465, "xi": 0.4850, "I_total": 0.9315, "ratio": 0.4793, "dev_pct": 0.39},
+        {"lag": 2, "A": 0.4720, "xi": 0.4510, "I_total": 0.9230, "ratio": 0.5114, "dev_pct": 6.27},
+        {"lag": 3, "A": 0.4727, "xi": 0.4059, "I_total": 0.8786, "ratio": 0.5380, "dev_pct": 11.80}
+      ],
+      "finding": "Lag=1 achieves closest match to ln(φ)"
+    },
+    "test2_shuffling": {
+      "normal": {"A": 0.4465, "xi": 0.4850, "I_total": 0.9315, "ratio": 0.4793, "dev_pct": 0.39},
+      "shuffled": {"A": 0.4386, "xi": 0.3128, "I_total": 0.7514, "ratio": 0.5837, "dev_pct": 21.31},
+      "I_total_change_pct": 19.33,
+      "finding": "Shuffling breaks PAC connection — changes I_total by 19.33%"
+    },
+    "test3_golden_ratio": {
+      "optimal_A": 0.4465,
+      "optimal_xi": 0.4850,
+      "A_over_total": 0.4793,
+      "ln_phi": 0.4812,
+      "deviation_pct": 0.39,
+      "xi_over_A_observed": 1.0863,
+      "xi_over_A_predicted": 1.0781,
+      "xi_over_A_deviation_pct": 0.76
+    },
+    "test4_multi_seed": {
+      "n_seeds": 30,
+      "A_mean": 0.3866, "A_std": 0.1442,
+      "xi_mean": 0.4496, "xi_std": 0.2651,
+      "I_total_mean": 0.8362, "I_total_std": 0.4043,
+      "ratio_mean": 0.4843, "ratio_std": 0.0539,
+      "cv_A_pct": 37.30,
+      "cv_xi_pct": 58.96,
+      "cv_I_total_pct": 48.35
+    },
+    "test5_regression": {
+      "slope": 0.4811,
+      "intercept": 0.1678,
+      "R_squared": 0.8524,
+      "expected_slope_from_phi": 0.9276,
+      "slope_match_pct": 51.86
+    }
+  },
+  "conclusion": "Mixed evidence for PAC conservation. I_total varies with parameters (not conserved in magnitude), but A/(A+ξ) = 0.4793 at optimal lag=1 matches ln(φ) at 0.39%. Shuffling breaks the ratio (21.3% deviation). The golden ratio governs the SPLIT, not the total.",
+  "paper_sections": ["§9.2"]
+}

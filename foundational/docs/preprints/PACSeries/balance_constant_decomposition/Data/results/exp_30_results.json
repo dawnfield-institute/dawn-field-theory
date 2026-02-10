@@ -1,0 +1,433 @@
+{
+  "timestamp": "2026-02-05T18:42:13.420505",
+  "hypothesis": "\u03b3 is the discrete-to-continuous emergence cost",
+  "constants": {
+    "gamma": 0.5772156649015329,
+    "phi": 1.618033988749895,
+    "ln_phi": 0.48121182505960347,
+    "xi_formula": 1.0571198664289054,
+    "xi_gamma": 1.0584274899611363,
+    "k_exact": 10.012106674537824,
+    "delta_k": 0.012106674537823991
+  },
+  "tests": {
+    "delta_k_prediction": {
+      "target_delta_k": 0.012106674537823991,
+      "gamma": 0.5772156649015329,
+      "divisor_needed": 47.677474363268004,
+      "divisor_as_int": 48,
+      "best_fibonacci_match": {
+        "formula": "F_10 - F_6 = 47",
+        "diff": 47,
+        "error_percent": 1.4414348154638403
+      },
+      "top_5_matches": {
+        "F_10 - F_6 = 47": {
+          "diff": 47,
+          "predicted_delta_k": 0.012281184359607083,
+          "actual_delta_k": 0.012106674537823991,
+          "error_percent": 1.4414348154638403
+        },
+        "F_10 - F_5 = 50": {
+          "diff": 50,
+          "predicted_delta_k": 0.011544313298030658,
+          "actual_delta_k": 0.012106674537823991,
+          "error_percent": 4.645051273463987
+        },
+        "F_10 - F_4 = 52": {
+          "diff": 52,
+          "predicted_delta_k": 0.011100301248106402,
+          "actual_delta_k": 0.012106674537823991,
+          "error_percent": 8.312549301407682
+        },
+        "F_10 - F_3 = 53": {
+          "diff": 53,
+          "predicted_delta_k": 0.010890861601915715,
+          "actual_delta_k": 0.012106674537823991,
+          "error_percent": 10.042501201381118
+        },
+        "F_10 - F_1 = 54": {
+          "diff": 54,
+          "predicted_delta_k": 0.010689178979658017,
+          "actual_delta_k": 0.012106674537823991,
+          "error_percent": 11.70838080876295
+        }
+      },
+      "is_48_best": false,
+      "falsified": false
+    },
+    "gamma_uniqueness": {
+      "divisor_used": 48,
+      "target_delta_k": 0.012106674537823991,
+      "exact_constant_needed": 0.5811203778155516,
+      "theoretically_grounded": {
+        "gamma_actual": {
+          "value": 0.5772156649015329,
+          "meaning": "Discrete-continuous bridge: lim[H_n - ln(n)]",
+          "predicted_delta_k": 0.012025326352115269,
+          "error_percent": 0.6719284098583203,
+          "theoretically_justified": true
+        },
+        "1_minus_ln_phi": {
+          "value": 0.5187881749403965,
+          "meaning": "Complement of PAC structure in unity",
+          "predicted_delta_k": 0.010808086977924928,
+          "error_percent": 10.72621185811167,
+          "theoretically_justified": true
+        },
+        "ln_2": {
+          "value": 0.6931471805599453,
+          "meaning": "Information unit, but not interface-related",
+          "predicted_delta_k": 0.014440566261665526,
+          "error_percent": 19.27772747627706,
+          "theoretically_justified": true
+        }
+      },
+      "no_theoretical_meaning": {
+        "random_0.58": {
+          "value": 0.58,
+          "predicted_delta_k": 0.012083333333333333,
+          "error_percent": 0.19279616725249543,
+          "theoretically_justified": false
+        },
+        "1_over_sqrt_3": {
+          "value": 0.5773502691896258,
+          "predicted_delta_k": 0.012028130608117206,
+          "error_percent": 0.6487655174127037,
+          "theoretically_justified": false
+        },
+        "random_0.59": {
+          "value": 0.59,
+          "predicted_delta_k": 0.012291666666666666,
+          "error_percent": 1.5280176919328032,
+          "theoretically_justified": false
+        },
+        "random_0.57": {
+          "value": 0.57,
+          "predicted_delta_k": 0.011874999999999998,
+          "error_percent": 1.9136100264378084,
+          "theoretically_justified": false
+        },
+        "phi_minus_1": {
+          "value": 0.6180339887498949,
+          "predicted_delta_k": 0.012875708098956143,
+          "error_percent": 6.352145328839202,
+          "theoretically_justified": false
+        },
+        "pi_over_5": {
+          "value": 0.6283185307179586,
+          "predicted_delta_k": 0.01308996938995747,
+          "error_percent": 8.121923564240895,
+          "theoretically_justified": false
+        },
+        "e_minus_2": {
+          "value": 0.7182818284590451,
+          "predicted_delta_k": 0.01496420475956344,
+          "error_percent": 23.60293252132844,
+          "theoretically_justified": false
+        },
+        "sqrt_phi_minus_1": {
+          "value": 0.272019649514069,
+          "predicted_delta_k": 0.005667076031543104,
+          "error_percent": 53.190481714546166,
+          "theoretically_justified": false
+        }
+      },
+      "gamma_error_percent": 0.6719284098583203,
+      "gamma_within_5pct": true,
+      "best_ungrounded": "random_0.58",
+      "best_ungrounded_error": 0.19279616725249543,
+      "key_insight": "\u03b3 = 0.577216 vs exact needed = 0.581120 (gap = 0.003905)",
+      "theoretical_justification": "\u03b3 is the canonical discrete-to-continuous bridge constant",
+      "falsified": false
+    },
+    "fibonacci_specificity": {
+      "divisors_tested": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "results": {
+        "40": {
+          "predicted_delta_k": 0.014430391622538322,
+          "error_percent": 19.193685908170014,
+          "is_good": false
+        },
+        "41": {
+          "predicted_delta_k": 0.0140784308512569,
+          "error_percent": 16.286522837239037,
+          "is_good": false
+        },
+        "42": {
+          "predicted_delta_k": 0.013743230116703163,
+          "error_percent": 13.517796103019053,
+          "is_good": false
+        },
+        "43": {
+          "predicted_delta_k": 0.013423620113989137,
+          "error_percent": 10.87784735643722,
+          "is_good": false
+        },
+        "44": {
+          "predicted_delta_k": 0.013118537838671201,
+          "error_percent": 8.357896280154554,
+          "is_good": false
+        },
+        "45": {
+          "predicted_delta_k": 0.01282701477558962,
+          "error_percent": 5.949943029484457,
+          "is_good": false
+        },
+        "46": {
+          "predicted_delta_k": 0.012548166628294192,
+          "error_percent": 3.6466833984086997,
+          "is_good": false
+        },
+        "47": {
+          "predicted_delta_k": 0.012281184359607083,
+          "error_percent": 1.4414348154638403,
+          "is_good": true
+        },
+        "48": {
+          "predicted_delta_k": 0.012025326352115269,
+          "error_percent": 0.6719284098583203,
+          "is_good": true
+        },
+        "49": {
+          "predicted_delta_k": 0.01177991152860271,
+          "error_percent": 2.6990319116979573,
+          "is_good": false
+        },
+        "50": {
+          "predicted_delta_k": 0.011544313298030658,
+          "error_percent": 4.645051273463987,
+          "is_good": false
+        },
+        "51": {
+          "predicted_delta_k": 0.011317954213755546,
+          "error_percent": 6.514756150454897,
+          "is_good": false
+        },
+        "52": {
+          "predicted_delta_k": 0.011100301248106402,
+          "error_percent": 8.312549301407682,
+          "is_good": false
+        },
+        "53": {
+          "predicted_delta_k": 0.010890861601915715,
+          "error_percent": 10.042501201381118,
+          "is_good": false
+        },
+        "54": {
+          "predicted_delta_k": 0.010689178979658017,
+          "error_percent": 11.70838080876295,
+          "is_good": false
+        },
+        "55": {
+          "predicted_delta_k": 0.01049483027093696,
+          "error_percent": 13.313682975876361,
+          "is_good": false
+        },
+        "56": {
+          "predicted_delta_k": 0.010307422587527372,
+          "error_percent": 14.86165292273571,
+          "is_good": false
+        },
+        "57": {
+          "predicted_delta_k": 0.010126590612307595,
+          "error_percent": 16.35530813461753,
+          "is_good": false
+        },
+        "58": {
+          "predicted_delta_k": 0.009951994222440221,
+          "error_percent": 17.797457994365516,
+          "is_good": false
+        },
+        "59": {
+          "predicted_delta_k": 0.009783316354263268,
+          "error_percent": 19.19072141818983,
+          "is_good": false
+        }
+      },
+      "good_matches": [
+        47,
+        48
+      ],
+      "num_good_matches": 2,
+      "is_unique": false,
+      "falsified": false
+    },
+    "other_transitions": {
+      "fibonacci_values": [
+        {
+          "n": 5,
+          "H_n - ln(n)": 0.6738954208992329,
+          "vs_gamma": 16.749329908465434
+        },
+        {
+          "n": 8,
+          "H_n - ln(n)": 0.6384156011773068,
+          "vs_gamma": 10.602611813422286
+        },
+        {
+          "n": 13,
+          "H_n - ln(n)": 0.6151843976722184,
+          "vs_gamma": 6.57791100959858
+        },
+        {
+          "n": 21,
+          "H_n - ln(n)": 0.6008362670393064,
+          "vs_gamma": 4.092162353529151
+        },
+        {
+          "n": 34,
+          "H_n - ln(n)": 0.591849465829271,
+          "vs_gamma": 2.535239740978706
+        },
+        {
+          "n": 55,
+          "H_n - ln(n)": 0.5862790266936146,
+          "vs_gamma": 1.570186386682333
+        },
+        {
+          "n": 89,
+          "H_n - ln(n)": 0.5828231220052649,
+          "vs_gamma": 0.9714665496281326
+        },
+        {
+          "n": 144,
+          "H_n - ln(n)": 0.5806838683674167,
+          "vs_gamma": 0.6008505445664707
+        },
+        {
+          "n": 233,
+          "H_n - ln(n)": 0.5793600526563312,
+          "vs_gamma": 0.37150546757321906
+        },
+        {
+          "n": 377,
+          "H_n - ln(n)": 0.5785413385270761,
+          "vs_gamma": 0.22966695225941275
+        }
+      ],
+      "regular_integers": [
+        {
+          "n": 7,
+          "H_n - ln(n)": 0.6469469938018293,
+          "vs_gamma": 12.080636950868595
+        },
+        {
+          "n": 14,
+          "H_n - ln(n)": 0.6125049969470684,
+          "vs_gamma": 6.113716967739524
+        },
+        {
+          "n": 20,
+          "H_n - ln(n)": 0.6020073835896911,
+          "vs_gamma": 4.295052992435233
+        },
+        {
+          "n": 40,
+          "H_n - ln(n)": 0.5896635848224396,
+          "vs_gamma": 2.1565457553946077
+        },
+        {
+          "n": 60,
+          "H_n - ln(n)": 0.5855258507296357,
+          "vs_gamma": 1.4397020617104124
+        },
+        {
+          "n": 100,
+          "H_n - ln(n)": 0.5822073316515288,
+          "vs_gamma": 0.8647836594745723
+        }
+      ],
+      "interpretation": "\u03b3 appears in harmonic sums for ALL integers, not just Fibonacci",
+      "falsified_special": true
+    },
+    "pac_confluence": {
+      "xi_formula": 1.0571198664289054,
+      "xi_gamma_ln_phi": 1.0584274899611363,
+      "gap": 0.001307623532230906,
+      "gap_percent": 0.12369680806853399,
+      "gap_analysis": {
+        "pi_55_minus_gamma_ln_phi_minus_1": -0.00130762353223101,
+        "gap_over_gamma": -0.002265398553336347,
+        "gap_times_55": -0.07191929427270555,
+        "gap_times_55_over_pi": -0.02289262237436345
+      },
+      "both_formulas_for_xi": true,
+      "gap_is_small": true
+    },
+    "reconstruction": {
+      "k_exact": 10.012106674537824,
+      "delta_k": 0.012106674537823991,
+      "divisor_needed": 47.677474363268004,
+      "reconstructions": {
+        "k = 10 + \u03b3/47": {
+          "value": 10.012281184359606,
+          "error_percent": 0.0017429880389335786
+        },
+        "k = 10 + \u03b3/48": {
+          "value": 10.012025326352115,
+          "error_percent": 0.000812498191976451
+        },
+        "k = 10 + \u03b3/49": {
+          "value": 10.011779911528603,
+          "error_percent": 0.0032636788624357425
+        },
+        "k = 10 + \u03b3/50": {
+          "value": 10.01154431329803,
+          "error_percent": 0.005616812306087308
+        },
+        "k = 10 + \u03b3/(F\u2081\u2080-F\u2087)": {
+          "value": 10.013743230116702,
+          "error_percent": 0.016345766501274072
+        },
+        "k = 10 + \u03b3/(F\u2081\u2080-F\u2086)": {
+          "value": 10.012281184359606,
+          "error_percent": 0.0017429880389335786
+        },
+        "k = 10 + \u03b3/(F\u2081\u2080-F\u2085)": {
+          "value": 10.01154431329803,
+          "error_percent": 0.005616812306087308
+        }
+      },
+      "best_formula": "k = 10 + \u03b3/48",
+      "best_error": 0.000812498191976451,
+      "decompositions_of_48": {
+        "F_10 - (F_5 + F_3)": 48,
+        "F_10 - (F_4 + F_2)": 51,
+        "8 \u00d7 6": 48,
+        "F_6 \u00d7 6": 48,
+        "2 \u00d7 24": 48,
+        "4 \u00d7 12": 48,
+        "3 \u00d7 16": 48
+      },
+      "48_is_fibonacci_combo": true
+    }
+  },
+  "verdict": "consistent",
+  "key_insight": {
+    "48": "55 - 7 = F_10 - (F_5 + F_3)",
+    "7": "F_5 + F_3 = 5 + 2",
+    "interpretation": "The F_5 + F_3 subtraction might encode M\u00f6bius twist"
+  }
+}
