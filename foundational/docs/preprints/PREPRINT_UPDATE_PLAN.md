@@ -1,7 +1,7 @@
 # Preprint Update Plan: PACSeries Consolidation
 
-**Date**: February 8, 2026  
-**Status**: Planning Document (Updated with exp_14-17 results)  
+**Date**: February 12, 2026  
+**Status**: Planning Document (Updated with synthesis session results)  
 **Goal**: Consolidate the PACSeries into a self-contained paper series that establishes Dawn Field Theory through clean derivation, measurement, and honest separation of established results from speculation.
 
 ---
@@ -85,6 +85,7 @@ Renumbered by logical dependency, not historical order.
 **Speculative (labeled as such):**
 - Gauge coupling constants may encode accumulated ξ from topologically distinct interactions
 - ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) prediction (falsifiable, not yet computed)
+- ~~Θ (thermal re-injection): Dissipated kT ln 2 may re-enter as fresh potential, making PAC cyclic.~~ **STATUS: MODEL-DEPENDENT.** pac_foundations_validation/exp_07 showed different Θ formulas give 36% to 94% efficiency. Cannot claim recycling efficiency without deriving Θ from first principles. See [PRELIMINARY_RESULTS.md](PACSeries/PRELIMINARY_RESULTS.md) entry B5 (now marked "Guidance needed").
 
 **Work remaining:**
 - Trim Section 13 (cross-corpus convergence) to short pointers to other PACSeries papers
@@ -98,9 +99,16 @@ Renumbered by logical dependency, not historical order.
 **Establishes Ξ = γ + ln(φ) from four independent domains.**
 
 **Core content:**
-- γ = Euler-Mascheroni = discrete-continuous interface cost (defined as H_n - ln(n))
+- γ = Euler-Mascheroni (defined as lim H_n - ln(n))
 - ln(φ) = collapse efficiency (derived in Paper 1 from Landauer erasure)
-- Ξ = γ + ln(φ) = total reconciliation threshold
+- Ξ = γ + ln(φ) = balance between harmonic divergence (γ) and geometric convergence (ln φ)
+
+**IMPORTANT (from pac_foundations_validation/exp_06, exp_10):**
+- γ is the CLEANEST fit but 1/√3 ≈ 0.5774 performs comparably in Mertens test
+- 21 combinations of natural constants fall within 5% of Ξ
+- Ξ = γ + ln(φ) is rank #1 (exact) but NOT uniquely forced
+- **Ξ is a CONSTRUCTION (combination of emergent constants), not a primary emergence**
+- Do NOT claim "γ represents discrete-continuous cost" — this interpretation was not validated
 
 **Four independent sources:**
 
@@ -117,7 +125,7 @@ The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-
 - Base-agnostic PAC: φ² = φ + 1 holds to < 10⁻¹⁴ across ALL numerical bases (binary, ternary, hex). 55 = F₁₀ is structural, not a decimal coincidence.
 - Conditional Attractor Hypothesis: Ξ is not a universal constant — it's the maximum sustainable computational asymmetry under PAC conservation. Emergence conditions: closed, recursive, conserving, computationally saturated. (Fisher exact p = 3.5 × 10⁻¹⁰)
 - Möbius topology: ~0.12% irreducible spread between three sources is signature of non-orientable topology, not error to eliminate.
-- **SEC-local/PAC-global mechanism**: exp_14-17 show SEC operates locally while PAC reconciles globally. The sieve of Eratosthenes is SEC in action; PAC conservation holds exactly at all 126 sieve steps. This explains WHY γ and ln(φ) combine.
+- ~~**SEC-local/PAC-global mechanism**: exp_14-17 show SEC operates locally while PAC reconciles globally. The sieve of Eratosthenes is SEC in action; PAC conservation holds exactly at all 126 sieve steps. This explains WHY γ and ln(φ) combine.~~ **STATUS: FALSIFIED.** pac_foundations_validation/exp_05 found no φ/γ phase boundaries in prime elimination. The "three-phase structure" claim does not hold at this level of analysis. Mertens product validation still holds (0.012% error), but the phase-structure interpretation is wrong.
 
 **Key distinction from current paper:** Drop the 0.03 Hz oscillation framing and the "reality tax" language. Lead with the decomposition and the four-way convergence. The story is γ + ln(φ), not spectral ratios.
 
@@ -307,6 +315,10 @@ All results that the PACSeries must present with full error bounds:
 | ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) | Compute ξ for gauge group topologies | 1 |
 | She-Leveque k=20 in 4D | 4D turbulence simulation | 5 |
 | Additional mass ratios | Extend Fibonacci formula to quarks | 4 |
+
+### Hypotheses Under Investigation
+
+Speculative extensions that emerged from the derivation chain but don't yet meet the publication bar are tracked in [PRELIMINARY_RESULTS.md](PACSeries/PRELIMINARY_RESULTS.md). That document is the canonical source — each entry has defined validation criteria, falsification conditions, and contribution status.
 
 ---
 

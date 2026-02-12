@@ -1,7 +1,7 @@
 # Unified Evidence Map: Dawn Field Theory
 
-**Version**: 3.0  
-**Last Updated**: 2026-02-07  
+**Version**: 3.2  
+**Last Updated**: 2026-02-12  
 **Purpose**: Complete mechanistic chain from axioms to observations
 
 ---
@@ -33,6 +33,18 @@ Structure forms where information gradients (∇I) dominate entropy gradients (�
 | **Axiom** | Erasure requires entropy increase | f(Parent) = Σf(Children) |
 | **Consequence** | kT ln(2) minimum per bit | φ-scaling in hierarchical systems |
 | **Status** | Universally accepted | Validated across 12+ domains |
+
+### Architecture: Three Roles, One Process
+
+PAC, SEC, and MED are not three independent theories. They are three roles in a single process:
+
+| Role | Primitive | What It Does | Analogy |
+|------|-----------|-------------|---------||
+| **Topology** | Cascade structure | Selects which configurations are reachable | Road network |
+| **Accounting** | PAC conservation | Constrains what must be preserved | Conservation law |
+| **Dynamics** | SEC collapse | Drives each transition event | Equation of motion |
+
+The cascade provides the stage. PAC writes the budget. SEC runs the show. Papers 1–6 each examine a different consequence of this architecture.
 
 ---
 
@@ -104,7 +116,8 @@ Riemann zeros γₖ on Re(s) = 1/2
 
 LAYER 2: NUMBER THEORY → DYNAMICS
 Prime distribution π(x) ~ x/log(x)
-    ↓ Primes act as injection points (I(p) > 0 universally)
+    ↓ Primes are residual roughness: integers that survive SEC smoothing
+    ↓ (Equivalently: I(p) > 0 because no prior SEC step eliminated them)
     [oscillation_attractor_dynamics: 100% of primes tested]
 
 SEC (Symbolic Entropy Collapse) dynamics
@@ -465,6 +478,12 @@ The `arithmetic/euclidean_distance_validation/` experiments provide **geometric 
 
 ---
 
+## Hypotheses Under Investigation
+
+Speculative extensions grounded in established results but not yet at publication standard. Each is tracked with defined validation criteria and contribution status in [PRELIMINARY_RESULTS.md](PACSeries/PRELIMINARY_RESULTS.md) — the canonical source for all hypothesis tracking.
+
+---
+
 ## Falsification Conditions
 
 The theory would be **falsified** if:
@@ -769,6 +788,7 @@ When citing this work, please use appropriate papers for each claim:
 - v2.0 (2025-12-28): Added mechanistic chain, new validations
 - v3.0 (2026-02-07): Added primitives framing, Landauer derivation, gauge hierarchy, cross-domain table
 - v3.1 (2026-02-08): Added SEC-local/PAC-global mechanism (exp_14-17), Mertens validation (0.012%), k=9=3² MED boundary
+- v3.2 (2026-02-12): Added three-component architecture frame, reframed primes as residual roughness, added hypotheses pointer to PRELIMINARY_RESULTS.md
 
-**Last Updated**: 2026-02-08
+**Last Updated**: 2026-02-12
 **Status**: Living Document (updated as research progresses)

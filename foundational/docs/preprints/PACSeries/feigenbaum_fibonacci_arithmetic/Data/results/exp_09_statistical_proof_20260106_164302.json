@@ -1,0 +1,57 @@
+{
+  "experiment": "exp_09_statistical_proof",
+  "timestamp": "2026-01-06T16:42:56.965169",
+  "tests": {
+    "exhaustive_search": {
+      "total_combinations": 3920499,
+      "hits_7_digits": 1,
+      "hits_8_digits": 1,
+      "hits_9_digits": 1,
+      "best_params": [
+        55,
+        17,
+        52
+      ],
+      "best_error": 7.632416170575389e-10
+    },
+    "perturbation": {
+      "base_error": 7.632416170575389e-10,
+      "max_degradation_a": 9369664.370515497,
+      "max_degradation_b": 8455411.162222484
+    },
+    "continuous_optimization": {
+      "optimal_a": 55.000569539275446,
+      "optimal_b": 17.000627566115124,
+      "optimal_c_base": 51.95560212194246,
+      "minimum_error": 0.0,
+      "distance_from_55": 0.0005695392754461182,
+      "distance_from_17": 0.0006275661151242673,
+      "distance_from_52": 0.04439787805753781,
+      "integers_are_near_optimal": true
+    },
+    "probability": {
+      "p_fibonacci": 0.04,
+      "p_fermat": 0.07,
+      "p_a_minus_3": 0.005,
+      "p_precision": 2.550695715009747e-07,
+      "p_joint": 3.5709740010136464e-12,
+      "odds_against": 280035642857.1429,
+      "interpretation": "Probability of coincidence: 1 in 2.80e+11"
+    },
+    "degrees_of_freedom": {
+      "r_inf_digits": 9.11733795700722,
+      "delta_digits": 8.92271195685648,
+      "alpha_digits": 6.395419377248293,
+      "total_digits": 24.43546929111199,
+      "total_free_parameters": 8,
+      "expected_random_digits": 8.0,
+      "surplus_digits": 16.43546929111199,
+      "conclusion": "SURPLUS PRECISION"
+    }
+  },
+  "conclusion": {
+    "probability_of_coincidence": 3.5709740010136464e-12,
+    "verdict": "NOT_COINCIDENCE",
+    "confidence": "EXTREMELY_HIGH"
+  }
+}

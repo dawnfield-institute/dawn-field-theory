@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-01-07T14:19:18.162791",
+  "precision_dps": 200,
+  "r_inf": {
+    "formula_precision_digits": 13,
+    "relative_error": 1.1759457975804771e-14,
+    "improved_with_A2": 12,
+    "improved_with_A3": 12
+  },
+  "delta": {
+    "formula_precision_digits": 7,
+    "relative_error": 1.1947801820233695e-09
+  },
+  "alpha": {
+    "formula_precision_digits": 5,
+    "relative_error": 4.023283375362336e-07
+  },
+  "coefficients": {
+    "A1": 75.42344485377485,
+    "A2": -3.5152031388247047,
+    "A3": -21266.978989889463,
+    "ratio_A2_A1": -0.04660623955375824,
+    "ratio_A3_A2": 6050.0
+  }
+}
