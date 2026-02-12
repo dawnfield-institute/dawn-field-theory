@@ -30,7 +30,7 @@ papers:
   - slug: "feigenbaum_fibonacci_arithmetic"
     title: "Feigenbaum Constants from Fibonacci Arithmetic"
     order: 3
-    status: "planned"
+    status: "draft"
     source_experiment: "sec_threshold_detection"
 
   - slug: "standard_model_fibonacci_arithmetic"

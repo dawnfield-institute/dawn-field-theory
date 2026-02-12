@@ -64,6 +64,10 @@ The original 5-paper release is retained in this directory for reference:
 | 4 | [Relativistic MAS](relativistic_mas_universal_frequency/) | → Paper 6 (consolidate) |
 | 5 | [GAIA Computational Validation](gaia_computational_validation_dawn_field_theory/) | → Paper 6 (consolidate) |
 
+## Contributing
+
+Results not yet at PACSeries publication standard are catalogued in [PRELIMINARY_RESULTS.md](PRELIMINARY_RESULTS.md), with defined next steps and contribution statuses. See that document for how to pick up open validation tasks.
+
 ## Citation
 
 ```bibtex
