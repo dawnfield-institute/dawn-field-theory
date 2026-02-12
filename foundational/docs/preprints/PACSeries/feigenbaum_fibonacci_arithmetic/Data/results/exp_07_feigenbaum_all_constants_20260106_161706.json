@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-01-06T16:17:06.919005",
+  "script": "exp_07_feigenbaum_all_constants.py",
+  "description": "Validation of closed-form expressions for all three Feigenbaum constants",
+  "formulas": {
+    "r_inf": {
+      "formula": "\u03c0(55+\u221a(17-\u03c0/(55d)))(55+\u03c0)/55\u00b2 - \u221a(3/5-(\u03be-1)\u00b2/7)\u00d7\u03c0\u2074/55\u2076 where d=\u221a(52+2\u03c0/55), \u03be=1+\u03c0/55",
+      "computed": 3.5699456718709035,
+      "known": 3.569945671870945,
+      "relative_error": 1.1568886563590497e-14,
+      "significant_figures": 13
+    },
+    "delta": {
+      "formula": "(50050 + 32\u03c0) / (10725 + 5\u03c0)",
+      "computed": 4.66920161468166,
+      "known": 4.66920160910299,
+      "relative_error": 1.1947802724008502e-09,
+      "significant_figures": 8
+    },
+    "alpha": {
+      "formula": "(5 + \u03c0/540) / 2",
+      "computed": 2.502908882086657,
+      "known": 2.5029078750958926,
+      "relative_error": 4.023283375993189e-07,
+      "significant_figures": 6
+    }
+  },
+  "structural_constants": {
+    "55": "F\u2081\u2080, 10th Fibonacci number",
+    "17": "2\u2074+1, 5th Fermat number (prime)",
+    "52": "55-3 = F\u2081\u2080 - F\u2084",
+    "3575": "55\u00d765, used in \u03b4 formula",
+    "540": "2\u00b2\u00d73\u00b3\u00d75, used in \u03b1 formula",
+    "xi": 1.0571198664289054
+  },
+  "status": "EXPERIMENTAL - Requires theoretical derivation"
+}

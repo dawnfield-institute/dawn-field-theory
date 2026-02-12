@@ -1,0 +1,68 @@
+{
+  "mobius": {
+    "matrix": {
+      "a": 14,
+      "b": "32\u03c0",
+      "c": 3,
+      "d": "5\u03c0"
+    },
+    "determinant": -81.68140899333463,
+    "determinant_symbolic": "-26\u03c0 = -2 \u00d7 F\u2087 \u00d7 \u03c0",
+    "x": 3575,
+    "x_factored": "55 \u00d7 65 = F\u2081\u2080 \u00d7 (F\u2081\u2080 + 10)",
+    "delta_computed": 4.66920161468166,
+    "self_consistency_ratio": 1.00000220393197
+  },
+  "coefficients": {
+    "fibonacci_in_coefficients": [
+      3,
+      5,
+      13,
+      55
+    ],
+    "powers_of_2": [
+      17,
+      32,
+      65
+    ],
+    "pattern": "\u03c0 coefficients are (2^5, F_5), x coefficients are (2\u00d77, F_4)"
+  },
+  "universal_coefficient": {
+    "a_universal": 1.5276329556642,
+    "55_over_36": 1.5277777777777777,
+    "error_percent": 0.0094801642659387,
+    "optimal_correction": 21692.76898383929,
+    "insight": "55 = F\u2081\u2080 appears in fixed-point coefficient, not just r\u221e"
+  },
+  "perturbation": {
+    "r_inf": {
+      "base": "\u03c0(55+\u221a17)(55+\u03c0)/55\u00b2",
+      "base_value": 3.5700036196646705,
+      "base_error_percent": 0.0016232122013030387,
+      "correction": -5.7947793725698915e-05
+    },
+    "delta": {
+      "base": "14/3",
+      "base_value": 4.666666666666667,
+      "base_error_percent": 0.05429070424762521,
+      "correction": 0.002534942436323462,
+      "correction_over_xi_m1": 0.04437934811137202
+    },
+    "alpha": {
+      "base": "5/2",
+      "base_value": 2.5,
+      "base_error_percent": 0.11617986921636991,
+      "correction": 0.0029078750958926314,
+      "correction_over_xi_m1": 0.050908296494564464
+    }
+  },
+  "circle_map": {
+    "2^10_mod_55": 34,
+    "golden_angle_deg": 137.50776405003785,
+    "F10_over_F9": 1.6176470588235294,
+    "phi": 1.618033988749895,
+    "ratio_error_percent": 0.02391358457583512
+  },
+  "timestamp": "2026-01-06T16:26:46.421961",
+  "status": "Theoretical exploration - patterns found, derivation open"
+}

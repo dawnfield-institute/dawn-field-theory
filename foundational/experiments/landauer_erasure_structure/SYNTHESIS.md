@@ -29,6 +29,9 @@ The fine structure constant α is not a "magic number" - it's the thermodynamic 
 9. **Nonlinear RBF creates emergent ξ** beyond linear coupling (p = 2.10 × 10⁻³²)
 10. **Time = computational density**: 69× difference between dense/sparse regimes (p = 3.25 × 10⁻⁵)
 
+### Mathematical Foundation (exp_17)
+11. **Möbius-Fibonacci derivation**: The Fibonacci cascade structure is DERIVED, not postulated. The matrix [[1,1],[1,0]]^n = [[F_{n+1}, F_n], [F_n, F_{n-1}]] exactly (error < 10⁻¹⁵). Eigenvalues are φ and -1/φ, forcing the golden ratio decay between levels.
+
 ### Theoretical Findings (journal paper, Feb 7)
 11. **PAC as binding, not redistribution**: ξ is the structural cost of binding under conservation. Conservation creates relational properties that transcend components (car metaphor: "car-ness" is relational, not intrinsic to parts).
 12. **ξ/Θ as learning rate**: High ξ/Θ = aggressive structure creation (cascade dies fast). Low ξ/Θ = conservative (cascade persists but produces little). kT ln(2) is the governor, not a tax.
