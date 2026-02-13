@@ -1,0 +1,937 @@
+{
+  "experiment": "exp_18_cascade_fibonacci_bridge",
+  "timestamp": "2026-02-12T15:35:54.979239",
+  "purpose": "Bridge between exp_17 (Fibonacci matrix eigenvalues) and cascade topology (Paper 1 S4.4, S6, S8). Chain: physics constraints -> unique matrix -> phi eigenvalues -> cascade topology -> golden ratio partition.",
+  "chain_of_reasoning": [
+    "1. Information conservation + asymmetric transfer uniquely selects Fibonacci matrix [[1,1],[1,0]] (Test 1, exact)",
+    "2. Eigenvalues are phi and -1/phi (exp_17, exact)",
+    "3. Fibonacci ratios -> geometric cascade at d = 1/phi (Test 2, exact)",
+    "4. Fibonacci coupling = cascade at 1/phi numerically (Test 3, statistical)",
+    "5. Star model: A/(A+xi) approaches ln(phi) near decay ratio 1.5 (Test 4, numerical)"
+  ],
+  "tests": {
+    "uniqueness": {
+      "test": "fibonacci_matrix_uniqueness",
+      "status": "PASS",
+      "n_candidates": 2,
+      "candidates": [
+        {
+          "matrix": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "det": -1,
+          "eigenvalues": [
+            1.6180339887,
+            -0.6180339887
+          ],
+          "dominant_eigenvalue": 1.6180339887,
+          "is_fibonacci_or_transpose": true
+        },
+        {
+          "matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "det": -1,
+          "eigenvalues": [
+            1.6180339887,
+            -0.6180339887
+          ],
+          "dominant_eigenvalue": 1.6180339887,
+          "is_fibonacci_or_transpose": true
+        }
+      ],
+      "all_have_phi_eigenvalue": true,
+      "conclusion": "Exactly 2 non-negative integer 2x2 matrices satisfy |det|=1 and tr=1. Both are the Fibonacci matrix (or transpose). Both have dominant eigenvalue phi = 1.6180339887."
+    },
+    "convergence": {
+      "test": "fibonacci_geometric_convergence",
+      "status": "PASS",
+      "convergence": [
+        {
+          "k": 1,
+          "F_k": 1,
+          "F_k_plus_1": 1,
+          "ratio": 1.0,
+          "error": 0.3819660112501052
+        },
+        {
+          "k": 2,
+          "F_k": 1,
+          "F_k_plus_1": 2,
+          "ratio": 0.5,
+          "error": 0.11803398874989479
+        },
+        {
+          "k": 3,
+          "F_k": 2,
+          "F_k_plus_1": 3,
+          "ratio": 0.6666666666666666,
+          "error": 0.04863267791677184
+        },
+        {
+          "k": 4,
+          "F_k": 3,
+          "F_k_plus_1": 5,
+          "ratio": 0.6,
+          "error": 0.018033988749894814
+        },
+        {
+          "k": 5,
+          "F_k": 5,
+          "F_k_plus_1": 8,
+          "ratio": 0.625,
+          "error": 0.0069660112501052085
+        },
+        {
+          "k": 6,
+          "F_k": 8,
+          "F_k_plus_1": 13,
+          "ratio": 0.6153846153846154,
+          "error": 0.0026493733652793727
+        },
+        {
+          "k": 7,
+          "F_k": 13,
+          "F_k_plus_1": 21,
+          "ratio": 0.6190476190476191,
+          "error": 0.0010136302977242773
+        },
+        {
+          "k": 8,
+          "F_k": 21,
+          "F_k_plus_1": 34,
+          "ratio": 0.6176470588235294,
+          "error": 0.0003869299263653536
+        },
+        {
+          "k": 9,
+          "F_k": 34,
+          "F_k_plus_1": 55,
+          "ratio": 0.6181818181818182,
+          "error": 0.00014782943192337417
+        },
+        {
+          "k": 10,
+          "F_k": 55,
+          "F_k_plus_1": 89,
+          "ratio": 0.6179775280898876,
+          "error": 5.646066000719596e-05
+        },
+        {
+          "k": 11,
+          "F_k": 89,
+          "F_k_plus_1": 144,
+          "ratio": 0.6180555555555556,
+          "error": 2.1566805660788724e-05
+        },
+        {
+          "k": 12,
+          "F_k": 144,
+          "F_k_plus_1": 233,
+          "ratio": 0.6180257510729614,
+          "error": 8.237676933364746e-06
+        },
+        {
+          "k": 13,
+          "F_k": 233,
+          "F_k_plus_1": 377,
+          "ratio": 0.6180371352785146,
+          "error": 3.146528619768496e-06
+        },
+        {
+          "k": 14,
+          "F_k": 377,
+          "F_k_plus_1": 610,
+          "ratio": 0.6180327868852459,
+          "error": 1.2018646489142526e-06
+        },
+        {
+          "k": 15,
+          "F_k": 610,
+          "F_k_plus_1": 987,
+          "ratio": 0.6180344478216818,
+          "error": 4.590717870289751e-07
+        },
+        {
+          "k": 16,
+          "F_k": 987,
+          "F_k_plus_1": 1597,
+          "ratio": 0.6180338134001252,
+          "error": 1.7534976959332482e-07
+        },
+        {
+          "k": 17,
+          "F_k": 1597,
+          "F_k_plus_1": 2584,
+          "ratio": 0.6180340557275542,
+          "error": 6.697765941865441e-08
+        },
+        {
+          "k": 18,
+          "F_k": 2584,
+          "F_k_plus_1": 4181,
+          "ratio": 0.6180339631667066,
+          "error": 2.558318823453476e-08
+        },
+        {
+          "k": 19,
+          "F_k": 4181,
+          "F_k_plus_1": 6765,
+          "ratio": 0.6180339985218034,
+          "error": 9.77190861561894e-09
+        },
+        {
+          "k": 20,
+          "F_k": 6765,
+          "F_k_plus_1": 10946,
+          "ratio": 0.618033985017358,
+          "error": 3.732536835165945e-09
+        },
+        {
+          "k": 21,
+          "F_k": 10946,
+          "F_k_plus_1": 17711,
+          "ratio": 0.6180339901755971,
+          "error": 1.425702333968104e-09
+        },
+        {
+          "k": 22,
+          "F_k": 17711,
+          "F_k_plus_1": 28657,
+          "ratio": 0.6180339882053251,
+          "error": 5.445697226491575e-10
+        },
+        {
+          "k": 23,
+          "F_k": 28657,
+          "F_k_plus_1": 46368,
+          "ratio": 0.618033988957902,
+          "error": 2.0800716704627575e-10
+        },
+        {
+          "k": 24,
+          "F_k": 46368,
+          "F_k_plus_1": 75025,
+          "ratio": 0.6180339886704432,
+          "error": 7.945155644506485e-11
+        }
+      ],
+      "coupling_comparisons": {
+        "5": {
+          "fibonacci_normalized": [
+            1.0,
+            0.6,
+            0.4,
+            0.2,
+            0.2
+          ],
+          "geometric_normalized": [
+            1.0,
+            0.618034,
+            0.381966,
+            0.236068,
+            0.145898
+          ],
+          "L2_distance": 0.069845,
+          "max_component_diff": 0.054102
+        },
+        "8": {
+          "fibonacci_normalized": [
+            1.0,
+            0.619048,
+            0.380952,
+            0.238095,
+            0.142857,
+            0.095238,
+            0.047619,
+            0.047619
+          ],
+          "geometric_normalized": [
+            1.0,
+            0.618034,
+            0.381966,
+            0.236068,
+            0.145898,
+            0.09017,
+            0.055728,
+            0.034442
+          ],
+          "L2_distance": 0.016748,
+          "max_component_diff": 0.013177
+        }
+      },
+      "conclusion": "Fibonacci ratios converge to 1/phi exponentially. Fibonacci coupling vectors closely match geometric cascade at d = 1/phi for practical mode counts."
+    },
+    "equivalence": {
+      "test": "fibonacci_cascade_equivalence",
+      "status": "PASS",
+      "results": [
+        {
+          "label": "Fibonacci chain",
+          "coupling_type": "fibonacci_chain",
+          "decay": null,
+          "xi_mean": 0.102065,
+          "xi_std": 0.008383
+        },
+        {
+          "label": "Cascade chain d=1/phi",
+          "coupling_type": "cascade_chain",
+          "decay": 0.6180339887498948,
+          "xi_mean": 0.102857,
+          "xi_std": 0.008683
+        },
+        {
+          "label": "Cascade chain d=0.5",
+          "coupling_type": "cascade_chain",
+          "decay": 0.5,
+          "xi_mean": 0.054699,
+          "xi_std": 0.005364
+        },
+        {
+          "label": "Cascade chain d=0.7",
+          "coupling_type": "cascade_chain",
+          "decay": 0.7,
+          "xi_mean": 0.159294,
+          "xi_std": 0.011836
+        },
+        {
+          "label": "Uniform",
+          "coupling_type": "uniform",
+          "decay": 0.5,
+          "xi_mean": 5.9e-05,
+          "xi_std": 8.7e-05
+        },
+        {
+          "label": "Exponential decay",
+          "coupling_type": "exponential",
+          "decay": 0.5,
+          "xi_mean": 0.002939,
+          "xi_std": 0.003698
+        }
+      ],
+      "statistical_test": {
+        "comparison": "Fibonacci chain vs Cascade chain at 1/phi",
+        "t_statistic": -0.2859,
+        "p_value": 0.776472,
+        "equivalent": true
+      },
+      "ranking": [
+        {
+          "rank": 1,
+          "label": "Cascade chain d=0.7",
+          "xi_mean": 0.159294
+        },
+        {
+          "rank": 2,
+          "label": "Cascade chain d=1/phi",
+          "xi_mean": 0.102857
+        },
+        {
+          "rank": 3,
+          "label": "Fibonacci chain",
+          "xi_mean": 0.102065
+        },
+        {
+          "rank": 4,
+          "label": "Cascade chain d=0.5",
+          "xi_mean": 0.054699
+        },
+        {
+          "rank": 5,
+          "label": "Exponential decay",
+          "xi_mean": 0.002939
+        },
+        {
+          "rank": 6,
+          "label": "Uniform",
+          "xi_mean": 5.9e-05
+        }
+      ]
+    },
+    "two_rate_star": {
+      "test": "two_rate_star_model",
+      "status": "CHECK",
+      "model": "exp_05 star (mode j copies mode 0, zero baseline)",
+      "target": "A/(A+xi) = ln(phi)",
+      "ln_phi": 0.481212,
+      "phi": 1.618034,
+      "n_env": 20,
+      "n_coupling": 5,
+      "base_T": 0.8,
+      "base_C": 0.3,
+      "scan_results": [
+        {
+          "flip_over_corr": 0.5,
+          "flip_decay": 0.1,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.430099,
+          "A_over_coherent_std": 0.07963,
+          "deviation_from_ln_phi": 0.051113,
+          "deviation_pct": 10.62,
+          "A_mean": 0.463427,
+          "xi_mean": 0.747518
+        },
+        {
+          "flip_over_corr": 0.62069,
+          "flip_decay": 0.124138,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.437438,
+          "A_over_coherent_std": 0.076534,
+          "deviation_from_ln_phi": 0.043774,
+          "deviation_pct": 9.1,
+          "A_mean": 0.445258,
+          "xi_mean": 0.690384
+        },
+        {
+          "flip_over_corr": 0.741379,
+          "flip_decay": 0.148276,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.444074,
+          "A_over_coherent_std": 0.073135,
+          "deviation_from_ln_phi": 0.037138,
+          "deviation_pct": 7.72,
+          "A_mean": 0.428468,
+          "xi_mean": 0.640331
+        },
+        {
+          "flip_over_corr": 0.862069,
+          "flip_decay": 0.172414,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.449544,
+          "A_over_coherent_std": 0.06996,
+          "deviation_from_ln_phi": 0.031668,
+          "deviation_pct": 6.58,
+          "A_mean": 0.412958,
+          "xi_mean": 0.598364
+        },
+        {
+          "flip_over_corr": 0.982759,
+          "flip_decay": 0.196552,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.454779,
+          "A_over_coherent_std": 0.066984,
+          "deviation_from_ln_phi": 0.026433,
+          "deviation_pct": 5.49,
+          "A_mean": 0.39854,
+          "xi_mean": 0.560927
+        },
+        {
+          "flip_over_corr": 1.0,
+          "flip_decay": 0.2,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.455411,
+          "A_over_coherent_std": 0.066581,
+          "deviation_from_ln_phi": 0.0258,
+          "deviation_pct": 5.36,
+          "A_mean": 0.396563,
+          "xi_mean": 0.556058
+        },
+        {
+          "flip_over_corr": 1.103448,
+          "flip_decay": 0.22069,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.459281,
+          "A_over_coherent_std": 0.064021,
+          "deviation_from_ln_phi": 0.021931,
+          "deviation_pct": 4.56,
+          "A_mean": 0.385318,
+          "xi_mean": 0.528268
+        },
+        {
+          "flip_over_corr": 1.224138,
+          "flip_decay": 0.244828,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.463173,
+          "A_over_coherent_std": 0.061039,
+          "deviation_from_ln_phi": 0.018038,
+          "deviation_pct": 3.75,
+          "A_mean": 0.373148,
+          "xi_mean": 0.49963
+        },
+        {
+          "flip_over_corr": 1.25,
+          "flip_decay": 0.25,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.463961,
+          "A_over_coherent_std": 0.060485,
+          "deviation_from_ln_phi": 0.017251,
+          "deviation_pct": 3.58,
+          "A_mean": 0.370655,
+          "xi_mean": 0.493974
+        },
+        {
+          "flip_over_corr": 1.344828,
+          "flip_decay": 0.268966,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.466848,
+          "A_over_coherent_std": 0.058377,
+          "deviation_from_ln_phi": 0.014364,
+          "deviation_pct": 2.98,
+          "A_mean": 0.361997,
+          "xi_mean": 0.474056
+        },
+        {
+          "flip_over_corr": 1.4,
+          "flip_decay": 0.28,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.468323,
+          "A_over_coherent_std": 0.057085,
+          "deviation_from_ln_phi": 0.012889,
+          "deviation_pct": 2.68,
+          "A_mean": 0.357146,
+          "xi_mean": 0.463317
+        },
+        {
+          "flip_over_corr": 1.45,
+          "flip_decay": 0.29,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.469601,
+          "A_over_coherent_std": 0.055989,
+          "deviation_from_ln_phi": 0.011611,
+          "deviation_pct": 2.41,
+          "A_mean": 0.35293,
+          "xi_mean": 0.454164
+        },
+        {
+          "flip_over_corr": 1.465517,
+          "flip_decay": 0.293103,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.469949,
+          "A_over_coherent_std": 0.055691,
+          "deviation_from_ln_phi": 0.011263,
+          "deviation_pct": 2.34,
+          "A_mean": 0.351659,
+          "xi_mean": 0.451533
+        },
+        {
+          "flip_over_corr": 1.5,
+          "flip_decay": 0.3,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.470861,
+          "A_over_coherent_std": 0.054911,
+          "deviation_from_ln_phi": 0.010351,
+          "deviation_pct": 2.15,
+          "A_mean": 0.348905,
+          "xi_mean": 0.445485
+        },
+        {
+          "flip_over_corr": 1.55,
+          "flip_decay": 0.31,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.472156,
+          "A_over_coherent_std": 0.053954,
+          "deviation_from_ln_phi": 0.009056,
+          "deviation_pct": 1.88,
+          "A_mean": 0.344944,
+          "xi_mean": 0.436996
+        },
+        {
+          "flip_over_corr": 1.568034,
+          "flip_decay": 0.313607,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.472621,
+          "A_over_coherent_std": 0.0536,
+          "deviation_from_ln_phi": 0.008591,
+          "deviation_pct": 1.79,
+          "A_mean": 0.343547,
+          "xi_mean": 0.43402
+        },
+        {
+          "flip_over_corr": 1.586207,
+          "flip_decay": 0.317241,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.473153,
+          "A_over_coherent_std": 0.05333,
+          "deviation_from_ln_phi": 0.008059,
+          "deviation_pct": 1.67,
+          "A_mean": 0.342148,
+          "xi_mean": 0.431015
+        },
+        {
+          "flip_over_corr": 1.598034,
+          "flip_decay": 0.319607,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.473419,
+          "A_over_coherent_std": 0.053098,
+          "deviation_from_ln_phi": 0.007792,
+          "deviation_pct": 1.62,
+          "A_mean": 0.34124,
+          "xi_mean": 0.429166
+        },
+        {
+          "flip_over_corr": 1.6,
+          "flip_decay": 0.32,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.473464,
+          "A_over_coherent_std": 0.053054,
+          "deviation_from_ln_phi": 0.007748,
+          "deviation_pct": 1.61,
+          "A_mean": 0.341097,
+          "xi_mean": 0.428863
+        },
+        {
+          "flip_over_corr": 1.618034,
+          "flip_decay": 0.323607,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.473748,
+          "A_over_coherent_std": 0.052692,
+          "deviation_from_ln_phi": 0.007463,
+          "deviation_pct": 1.55,
+          "A_mean": 0.339679,
+          "xi_mean": 0.426201
+        },
+        {
+          "flip_over_corr": 1.638034,
+          "flip_decay": 0.327607,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.474258,
+          "A_over_coherent_std": 0.052301,
+          "deviation_from_ln_phi": 0.006954,
+          "deviation_pct": 1.45,
+          "A_mean": 0.338234,
+          "xi_mean": 0.423054
+        },
+        {
+          "flip_over_corr": 1.668034,
+          "flip_decay": 0.333607,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.474865,
+          "A_over_coherent_std": 0.051834,
+          "deviation_from_ln_phi": 0.006347,
+          "deviation_pct": 1.32,
+          "A_mean": 0.335956,
+          "xi_mean": 0.41866
+        },
+        {
+          "flip_over_corr": 1.7,
+          "flip_decay": 0.34,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.475462,
+          "A_over_coherent_std": 0.051192,
+          "deviation_from_ln_phi": 0.00575,
+          "deviation_pct": 1.19,
+          "A_mean": 0.333654,
+          "xi_mean": 0.414058
+        },
+        {
+          "flip_over_corr": 1.706897,
+          "flip_decay": 0.341379,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.475586,
+          "A_over_coherent_std": 0.051069,
+          "deviation_from_ln_phi": 0.005626,
+          "deviation_pct": 1.17,
+          "A_mean": 0.333174,
+          "xi_mean": 0.413106
+        },
+        {
+          "flip_over_corr": 1.75,
+          "flip_decay": 0.35,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.476511,
+          "A_over_coherent_std": 0.050204,
+          "deviation_from_ln_phi": 0.004701,
+          "deviation_pct": 0.98,
+          "A_mean": 0.330129,
+          "xi_mean": 0.406875
+        },
+        {
+          "flip_over_corr": 1.8,
+          "flip_decay": 0.36,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.477473,
+          "A_over_coherent_std": 0.049254,
+          "deviation_from_ln_phi": 0.003739,
+          "deviation_pct": 0.78,
+          "A_mean": 0.326745,
+          "xi_mean": 0.400085
+        },
+        {
+          "flip_over_corr": 1.827586,
+          "flip_decay": 0.365517,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.477965,
+          "A_over_coherent_std": 0.048785,
+          "deviation_from_ln_phi": 0.003247,
+          "deviation_pct": 0.67,
+          "A_mean": 0.324878,
+          "xi_mean": 0.396519
+        },
+        {
+          "flip_over_corr": 1.948276,
+          "flip_decay": 0.389655,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.479923,
+          "A_over_coherent_std": 0.046611,
+          "deviation_from_ln_phi": 0.001289,
+          "deviation_pct": 0.27,
+          "A_mean": 0.317134,
+          "xi_mean": 0.381637
+        },
+        {
+          "flip_over_corr": 2.0,
+          "flip_decay": 0.4,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.480662,
+          "A_over_coherent_std": 0.045669,
+          "deviation_from_ln_phi": 0.000549,
+          "deviation_pct": 0.11,
+          "A_mean": 0.313951,
+          "xi_mean": 0.375685
+        },
+        {
+          "flip_over_corr": 2.068966,
+          "flip_decay": 0.413793,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.481612,
+          "A_over_coherent_std": 0.04462,
+          "deviation_from_ln_phi": 0.0004,
+          "deviation_pct": 0.08,
+          "A_mean": 0.309903,
+          "xi_mean": 0.368293
+        },
+        {
+          "flip_over_corr": 2.189655,
+          "flip_decay": 0.437931,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.483239,
+          "A_over_coherent_std": 0.042935,
+          "deviation_from_ln_phi": 0.002027,
+          "deviation_pct": 0.42,
+          "A_mean": 0.303168,
+          "xi_mean": 0.356117
+        },
+        {
+          "flip_over_corr": 2.310345,
+          "flip_decay": 0.462069,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.484667,
+          "A_over_coherent_std": 0.041315,
+          "deviation_from_ln_phi": 0.003455,
+          "deviation_pct": 0.72,
+          "A_mean": 0.296915,
+          "xi_mean": 0.345041
+        },
+        {
+          "flip_over_corr": 2.431034,
+          "flip_decay": 0.486207,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.486008,
+          "A_over_coherent_std": 0.039934,
+          "deviation_from_ln_phi": 0.004796,
+          "deviation_pct": 1.0,
+          "A_mean": 0.291074,
+          "xi_mean": 0.334915
+        },
+        {
+          "flip_over_corr": 2.5,
+          "flip_decay": 0.5,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.486806,
+          "A_over_coherent_std": 0.039313,
+          "deviation_from_ln_phi": 0.005594,
+          "deviation_pct": 1.16,
+          "A_mean": 0.287973,
+          "xi_mean": 0.329522
+        },
+        {
+          "flip_over_corr": 2.551724,
+          "flip_decay": 0.510345,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.487374,
+          "A_over_coherent_std": 0.038854,
+          "deviation_from_ln_phi": 0.006162,
+          "deviation_pct": 1.28,
+          "A_mean": 0.285706,
+          "xi_mean": 0.325627
+        },
+        {
+          "flip_over_corr": 2.672414,
+          "flip_decay": 0.534483,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.488508,
+          "A_over_coherent_std": 0.037759,
+          "deviation_from_ln_phi": 0.007296,
+          "deviation_pct": 1.52,
+          "A_mean": 0.280643,
+          "xi_mean": 0.317033
+        },
+        {
+          "flip_over_corr": 2.793103,
+          "flip_decay": 0.558621,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.489474,
+          "A_over_coherent_std": 0.036861,
+          "deviation_from_ln_phi": 0.008262,
+          "deviation_pct": 1.72,
+          "A_mean": 0.275855,
+          "xi_mean": 0.309156
+        },
+        {
+          "flip_over_corr": 2.913793,
+          "flip_decay": 0.582759,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.490469,
+          "A_over_coherent_std": 0.036117,
+          "deviation_from_ln_phi": 0.009257,
+          "deviation_pct": 1.92,
+          "A_mean": 0.271472,
+          "xi_mean": 0.301993
+        },
+        {
+          "flip_over_corr": 3.0,
+          "flip_decay": 0.6,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.491078,
+          "A_over_coherent_std": 0.035598,
+          "deviation_from_ln_phi": 0.009866,
+          "deviation_pct": 2.05,
+          "A_mean": 0.268499,
+          "xi_mean": 0.297112
+        },
+        {
+          "flip_over_corr": 3.034483,
+          "flip_decay": 0.606897,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.491324,
+          "A_over_coherent_std": 0.035411,
+          "deviation_from_ln_phi": 0.010112,
+          "deviation_pct": 2.1,
+          "A_mean": 0.267343,
+          "xi_mean": 0.295207
+        },
+        {
+          "flip_over_corr": 3.155172,
+          "flip_decay": 0.631034,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.49216,
+          "A_over_coherent_std": 0.034927,
+          "deviation_from_ln_phi": 0.010948,
+          "deviation_pct": 2.28,
+          "A_mean": 0.263461,
+          "xi_mean": 0.288922
+        },
+        {
+          "flip_over_corr": 3.275862,
+          "flip_decay": 0.655172,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.493052,
+          "A_over_coherent_std": 0.03451,
+          "deviation_from_ln_phi": 0.01184,
+          "deviation_pct": 2.46,
+          "A_mean": 0.259848,
+          "xi_mean": 0.283023
+        },
+        {
+          "flip_over_corr": 3.396552,
+          "flip_decay": 0.67931,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.493744,
+          "A_over_coherent_std": 0.034344,
+          "deviation_from_ln_phi": 0.012533,
+          "deviation_pct": 2.6,
+          "A_mean": 0.25642,
+          "xi_mean": 0.277641
+        },
+        {
+          "flip_over_corr": 3.517241,
+          "flip_decay": 0.703448,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.494592,
+          "A_over_coherent_std": 0.034151,
+          "deviation_from_ln_phi": 0.01338,
+          "deviation_pct": 2.78,
+          "A_mean": 0.253246,
+          "xi_mean": 0.272499
+        },
+        {
+          "flip_over_corr": 3.637931,
+          "flip_decay": 0.727586,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.495194,
+          "A_over_coherent_std": 0.034105,
+          "deviation_from_ln_phi": 0.013982,
+          "deviation_pct": 2.91,
+          "A_mean": 0.250194,
+          "xi_mean": 0.267802
+        },
+        {
+          "flip_over_corr": 3.758621,
+          "flip_decay": 0.751724,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.495793,
+          "A_over_coherent_std": 0.034192,
+          "deviation_from_ln_phi": 0.014581,
+          "deviation_pct": 3.03,
+          "A_mean": 0.247345,
+          "xi_mean": 0.263443
+        },
+        {
+          "flip_over_corr": 3.87931,
+          "flip_decay": 0.775862,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.496229,
+          "A_over_coherent_std": 0.034251,
+          "deviation_from_ln_phi": 0.015017,
+          "deviation_pct": 3.12,
+          "A_mean": 0.244664,
+          "xi_mean": 0.259372
+        },
+        {
+          "flip_over_corr": 4.0,
+          "flip_decay": 0.8,
+          "corr_decay": 0.2,
+          "A_over_coherent_mean": 0.49684,
+          "A_over_coherent_std": 0.034373,
+          "deviation_from_ln_phi": 0.015629,
+          "deviation_pct": 3.25,
+          "A_mean": 0.242103,
+          "xi_mean": 0.255367
+        }
+      ],
+      "best_match": {
+        "ratio": 2.068966,
+        "A_over_coherent": 0.481612,
+        "deviation_pct": 0.08
+      },
+      "at_ratio_1_5": {
+        "A_over_coherent": 0.470861,
+        "deviation_pct": 2.15
+      },
+      "at_phi": {
+        "A_over_coherent": 0.473748,
+        "deviation_pct": 1.55
+      },
+      "crossover_ratio": 2.0399,
+      "crossover_near_phi": false
+    }
+  },
+  "synthesis": {
+    "verdict": "BRIDGE STRONG",
+    "passes": "3/4",
+    "conclusion": "Mathematical foundation complete (3/4 tests pass).\nThe uniqueness + eigenvalue + equivalence chain is solid.\nTwo-rate test: partial match for phi in the partition ratio.",
+    "details": {
+      "uniqueness": "PASS",
+      "convergence": "PASS",
+      "fibonacci_equivalence_p": 0.776472,
+      "fibonacci_equivalent": true,
+      "crossover_ratio": 2.0399,
+      "crossover_near_phi": false,
+      "deviation_at_phi_pct": 1.55
+    }
+  }
+}

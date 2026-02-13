@@ -50,17 +50,21 @@ The cascade provides the stage. PAC writes the budget. SEC runs the show. Papers
 
 ## February 2026: The Landauer Connection
 
-### First-Principles Derivation of ln(φ)
+### Structural Proximity to ln(φ)
 
 ```
 PAC: Ψ(k) = Ψ(k+1) + Ψ(k+2)
   → Unique solution: Ψ(k) = φ^(-k)
   → Per-level information: ΔI = ln(φ)
-  → For 1-bit erasure: A = ln(φ), ξ = 1 - ln(φ)
-  → A/(A+ξ) = ln(φ) ✓
+  → For 1-bit erasure (idealized): A = ln(φ), ξ = 1 - ln(φ)
+  → A/(A+ξ) = ln(φ) in the limit where A+ξ = 1
 ```
 
-**Validation**: Predicted ξ/A = 1.0781, measured = 1.086 (0.76% error)
+**Simulation reality**: At default cascade parameters, A/(A+ξ) ≈ 0.490 (100 seeds × 500k samples, 95% CI [0.482, 0.499]). This is ~2% above ln(φ) = 0.4812. The idealized derivation assumes zero thermal residual (A+ξ = 1 bit), but measured A+ξ ≈ 0.88 with residual Θ ≈ 0.12.
+
+**The real finding**: Default/untuned parameters across three independent domains (Landauer, SEC, CA) all produce values within ~2% of φ-family constants. This cross-domain proximity at structural boundaries is the pattern, not precision convergence to arbitrary decimal places.
+
+**ξ/A proximity**: Predicted 1.078, measured 1.086 (0.76% proximity)
 
 ### Gauge Group Hierarchy
 
@@ -70,7 +74,7 @@ PAC: Ψ(k) = Ψ(k+1) + Ψ(k+2)
 | SU(2) | 3 | 0.016 | 0.515 |
 | SU(3) | 8 | 0.095 | **0.480** |
 
-SU(3) → 0.31% from ln(φ). Statistical significance: p < 10⁻¹¹
+SU(3) A/(A+ξ) = 0.480, within ~0.3% of ln(φ). The hierarchy SU(3) > SU(2) > U(1) is the robust finding (p < 10⁻¹¹); the numerical proximity of SU(3) to ln(φ) is consistent with the broader cross-domain pattern.
 
 ### The Ξ Decomposition
 
@@ -749,7 +753,7 @@ When citing this work, please use appropriate papers for each claim:
 
 | Domain | Phenomenon | PAC/SEC Explanation | Validation |
 |--------|------------|---------------------|------------|
-| **Thermodynamics** | Landauer erasure | A/(A+ξ) = ln(φ) for single-bit | 0.76% error (exp_14-16) |
+| **Thermodynamics** | Landauer erasure | Default params → ~2% proximity to ln(φ) | 100-seed robustness (exp_04, exp_14-16) |
 | **Information** | φ ubiquity | Unique stable solution to Ψ(k) = Ψ(k+1) + Ψ(k+2) | Algebraic proof |
 | **Gauge Theory** | SU(3) > SU(2) > U(1) | Structure cost ∝ coupling complexity | p < 10⁻¹¹ (exp_15) |
 | **Standard Model** | sin²θ_W = 3/13 | F₄/F₇ from PAC gauge closure | 0.19% from PDG 2024 |
@@ -764,7 +768,7 @@ When citing this work, please use appropriate papers for each claim:
 | **ML** | Training → φ | Networks find PAC (it's optimal) | p = 0.0014 at step 512 |
 | **Biology** | Fibonacci spacing | Evolution found PAC (optimal packing) | Ubiquitous observation |
 
-**One principle. Fourteen domains. Same ratio.**
+**One principle. Fourteen domains. Same structural boundary.**
 
 ---
 
