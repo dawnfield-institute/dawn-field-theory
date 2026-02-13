@@ -7,7 +7,7 @@
 
 ## Overview
 
-This paper establishes the foundational result for the PACSeries: information erasure into multi-mode environments necessarily creates correlational structure. Starting from two undisputed facts—Landauer's principle and the data processing inequality—it derives that erasure creates new inter-mode correlations (ξ) that are topological in character and follow golden ratio partitioning.
+This paper establishes the foundational result for the PACSeries: information erasure into multi-mode environments necessarily creates correlational structure. Starting from two undisputed facts—Landauer's principle and the data processing inequality—it derives that erasure creates new inter-mode correlations (ξ) that are topological in character, with collapse efficiency at natural parameters falling near φ-family constants (~2% proximity), consistent with a cross-domain pattern at structural boundaries.
 
 ## Key Results
 
@@ -15,12 +15,12 @@ This paper establishes the foundational result for the PACSeries: information er
 |--------|-------|-------------|
 | ξ emergence | Mandatory for all multi-mode topologies | Follows from DPI |
 | Temperature invariance | ξ identical at 100K–5000K | Topological, not thermodynamic |
-| Partition ratio A/(A+ξ) | = ln(φ) at decay ratio φ | 0.03–0.16% error |
+| Partition ratio A/(A+ξ) | ~0.490 at default params (100 seeds) | ~2% proximity to ln(φ) |
 | Complement ratio ξ/A | 1.086 vs predicted 1.078 | 0.76% error |
 | Cascade amplification | 53× over single event | p = 2.75 × 10⁻³⁵ |
 | Dense/sparse time ratio | 69× | p = 3.25 × 10⁻⁵ |
 | Gauge ξ hierarchy | SU(3) > SU(2) > U(1) | p = 1.51 × 10⁻¹¹ |
-| ln(φ) derivation | From PAC recursion alone | 0.76% vs exp_14 |
+| ln(φ) derivation | From PAC recursion (idealized) | Assumes A+ξ=1; ~2% vs simulation |
 
 ## Source Experiment
 

@@ -10,7 +10,7 @@ February 2026
 
 ## §1. Introduction
 
-Paper 1 established that information erasure into multi-mode environments necessarily creates correlational structure ξ, and that the partition ratio A/(A+ξ) converges to ln(φ) — the natural logarithm of the golden ratio. This paper addresses the next question: what is the *balance constant* Ξ that governs the boundary between ordered and disordered computation, and why does it take the value it does?
+Paper 1 established that information erasure into multi-mode environments necessarily creates correlational structure ξ, and that the collapse efficiency ratio A/(A+ξ) at default cascade parameters falls within ~2% of ln(φ) — the natural logarithm of the golden ratio — consistent with a cross-domain proximity pattern at structural boundaries. This paper addresses the next question: what is the *balance constant* Ξ that governs the boundary between ordered and disordered computation, and why does it take the value it does?
 
 We show that Ξ decomposes as the sum of two established mathematical constants:
 
@@ -211,7 +211,7 @@ The ratio of the first non-trivial Fibonacci numbers matches the sieve fraction 
 
 Paper 1 established that the ratio ξ/A (structure created per unit of recoverable information) converges to approximately 1.086 in the RBF binding experiment. The predicted value from Paper 1's framework is Ξ/1 = 1.058. The 2.6% discrepancy places this as the lowest-precision confirmation, but it is included because it derives from completely independent physics (thermodynamic erasure vs number-theoretic sieving vs computational automata).
 
-The more precise Landauer result is the partition ratio A/(A+ξ) = ln(φ) at 0.39% (Paper 1, §15.1), which confirms the ln(φ) component of Ξ independently.
+The partition ratio A/(A+ξ) falls within ~2% of ln(φ) across 100 independent seeds (Paper 1, §6), with ln(φ) consistently within the 95% confidence interval. This structural proximity — robust across coupling strengths, environment sizes, and decay parameters — confirms the ln(φ) component of Ξ as a topological feature of the erasure partition rather than a tuned coincidence.
 
 ---
 

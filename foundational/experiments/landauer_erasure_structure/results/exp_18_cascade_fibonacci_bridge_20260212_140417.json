@@ -1,0 +1,715 @@
+{
+  "experiment": "exp_18_cascade_fibonacci_bridge",
+  "timestamp": "2026-02-12T14:02:21.618173",
+  "purpose": "Bridge between exp_17 (Fibonacci matrix eigenvalues) and cascade topology optimality (Paper 1 \u00a74.4, \u00a78). Resolves: 'We did not derive cascade from first principles.'",
+  "chain_of_reasoning": [
+    "1. Fibonacci matrix [[1,1],[1,0]] is uniquely determined by information conservation + asymmetric transfer (Test 1)",
+    "2. Its eigenvalues are \u03c6 and -1/\u03c6, giving dominant decay 1/\u03c6 (exp_17, exact)",
+    "3. Fibonacci ratios \u2192 geometric cascade at d = 1/\u03c6 (Test 2, exact)",
+    "4. Cascade at d \u2248 1/\u03c6 maximizes \u03be (Test 3, numerical)",
+    "5. Fibonacci coupling \u2248 cascade at 1/\u03c6 (Test 4, statistical)",
+    "6. Spectral analysis confirms \u03c6-governed structure (Test 5)"
+  ],
+  "tests": {
+    "uniqueness": {
+      "test": "fibonacci_matrix_uniqueness",
+      "n_candidates": 2,
+      "n_fibonacci": 2,
+      "candidates": [
+        {
+          "matrix": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "det": -1,
+          "eigenvalues": [
+            1.6180339887,
+            -0.6180339887
+          ],
+          "dominant_eigenvalue": 1.6180339887,
+          "is_fibonacci_or_transpose": true
+        },
+        {
+          "matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "det": -1,
+          "eigenvalues": [
+            1.6180339887,
+            -0.6180339887
+          ],
+          "dominant_eigenvalue": 1.6180339887,
+          "is_fibonacci_or_transpose": true
+        }
+      ],
+      "all_have_phi_eigenvalue": true,
+      "conclusion": "Exactly 2 non-negative integer 2\u00d72 matrices satisfy |det|=1 and tr=1. They are the Fibonacci matrix [[1,1],[1,0]] and its transpose [[0,1],[1,1]] (equivalent by direction of flow). Both have dominant eigenvalue \u03c6 = 1.6180339887."
+    },
+    "convergence": {
+      "test": "fibonacci_geometric_convergence",
+      "convergence": [
+        {
+          "k": 1,
+          "F_k": 1,
+          "F_k_plus_1": 1,
+          "ratio": 1.0,
+          "error": 0.3819660112501052
+        },
+        {
+          "k": 2,
+          "F_k": 1,
+          "F_k_plus_1": 2,
+          "ratio": 0.5,
+          "error": 0.11803398874989479
+        },
+        {
+          "k": 3,
+          "F_k": 2,
+          "F_k_plus_1": 3,
+          "ratio": 0.6666666666666666,
+          "error": 0.04863267791677184
+        },
+        {
+          "k": 4,
+          "F_k": 3,
+          "F_k_plus_1": 5,
+          "ratio": 0.6,
+          "error": 0.018033988749894814
+        },
+        {
+          "k": 5,
+          "F_k": 5,
+          "F_k_plus_1": 8,
+          "ratio": 0.625,
+          "error": 0.0069660112501052085
+        },
+        {
+          "k": 6,
+          "F_k": 8,
+          "F_k_plus_1": 13,
+          "ratio": 0.6153846153846154,
+          "error": 0.0026493733652793727
+        },
+        {
+          "k": 7,
+          "F_k": 13,
+          "F_k_plus_1": 21,
+          "ratio": 0.6190476190476191,
+          "error": 0.0010136302977242773
+        },
+        {
+          "k": 8,
+          "F_k": 21,
+          "F_k_plus_1": 34,
+          "ratio": 0.6176470588235294,
+          "error": 0.0003869299263653536
+        },
+        {
+          "k": 9,
+          "F_k": 34,
+          "F_k_plus_1": 55,
+          "ratio": 0.6181818181818182,
+          "error": 0.00014782943192337417
+        },
+        {
+          "k": 10,
+          "F_k": 55,
+          "F_k_plus_1": 89,
+          "ratio": 0.6179775280898876,
+          "error": 5.646066000719596e-05
+        },
+        {
+          "k": 11,
+          "F_k": 89,
+          "F_k_plus_1": 144,
+          "ratio": 0.6180555555555556,
+          "error": 2.1566805660788724e-05
+        },
+        {
+          "k": 12,
+          "F_k": 144,
+          "F_k_plus_1": 233,
+          "ratio": 0.6180257510729614,
+          "error": 8.237676933364746e-06
+        },
+        {
+          "k": 13,
+          "F_k": 233,
+          "F_k_plus_1": 377,
+          "ratio": 0.6180371352785146,
+          "error": 3.146528619768496e-06
+        },
+        {
+          "k": 14,
+          "F_k": 377,
+          "F_k_plus_1": 610,
+          "ratio": 0.6180327868852459,
+          "error": 1.2018646489142526e-06
+        },
+        {
+          "k": 15,
+          "F_k": 610,
+          "F_k_plus_1": 987,
+          "ratio": 0.6180344478216818,
+          "error": 4.590717870289751e-07
+        },
+        {
+          "k": 16,
+          "F_k": 987,
+          "F_k_plus_1": 1597,
+          "ratio": 0.6180338134001252,
+          "error": 1.7534976959332482e-07
+        },
+        {
+          "k": 17,
+          "F_k": 1597,
+          "F_k_plus_1": 2584,
+          "ratio": 0.6180340557275542,
+          "error": 6.697765941865441e-08
+        },
+        {
+          "k": 18,
+          "F_k": 2584,
+          "F_k_plus_1": 4181,
+          "ratio": 0.6180339631667066,
+          "error": 2.558318823453476e-08
+        },
+        {
+          "k": 19,
+          "F_k": 4181,
+          "F_k_plus_1": 6765,
+          "ratio": 0.6180339985218034,
+          "error": 9.77190861561894e-09
+        },
+        {
+          "k": 20,
+          "F_k": 6765,
+          "F_k_plus_1": 10946,
+          "ratio": 0.618033985017358,
+          "error": 3.732536835165945e-09
+        },
+        {
+          "k": 21,
+          "F_k": 10946,
+          "F_k_plus_1": 17711,
+          "ratio": 0.6180339901755971,
+          "error": 1.425702333968104e-09
+        },
+        {
+          "k": 22,
+          "F_k": 17711,
+          "F_k_plus_1": 28657,
+          "ratio": 0.6180339882053251,
+          "error": 5.445697226491575e-10
+        },
+        {
+          "k": 23,
+          "F_k": 28657,
+          "F_k_plus_1": 46368,
+          "ratio": 0.618033988957902,
+          "error": 2.0800716704627575e-10
+        },
+        {
+          "k": 24,
+          "F_k": 46368,
+          "F_k_plus_1": 75025,
+          "ratio": 0.6180339886704432,
+          "error": 7.945155644506485e-11
+        }
+      ],
+      "coupling_comparisons": {
+        "5": {
+          "fibonacci_normalized": [
+            1.0,
+            0.6,
+            0.4,
+            0.2,
+            0.2
+          ],
+          "geometric_normalized": [
+            1.0,
+            0.618034,
+            0.381966,
+            0.236068,
+            0.145898
+          ],
+          "L2_distance": 0.069845,
+          "max_component_diff": 0.054102
+        },
+        "8": {
+          "fibonacci_normalized": [
+            1.0,
+            0.619048,
+            0.380952,
+            0.238095,
+            0.142857,
+            0.095238,
+            0.047619,
+            0.047619
+          ],
+          "geometric_normalized": [
+            1.0,
+            0.618034,
+            0.381966,
+            0.236068,
+            0.145898,
+            0.09017,
+            0.055728,
+            0.034442
+          ],
+          "L2_distance": 0.016748,
+          "max_component_diff": 0.013177
+        }
+      },
+      "conclusion": "Fibonacci ratios converge to 1/\u03c6 exponentially. Fibonacci coupling vectors closely match geometric cascade at d = 1/\u03c6 for practical mode counts."
+    },
+    "xi_optimization": {
+      "test": "xi_optimization_scan",
+      "scan_results": {
+        "cascade_chain": [
+          {
+            "decay": 0.3,
+            "xi_mean": 0.01561,
+            "xi_std": 0.001654
+          },
+          {
+            "decay": 0.35,
+            "xi_mean": 0.022117,
+            "xi_std": 0.002173
+          },
+          {
+            "decay": 0.4,
+            "xi_mean": 0.030348,
+            "xi_std": 0.002761
+          },
+          {
+            "decay": 0.45,
+            "xi_mean": 0.040698,
+            "xi_std": 0.00341
+          },
+          {
+            "decay": 0.5,
+            "xi_mean": 0.053817,
+            "xi_std": 0.004449
+          },
+          {
+            "decay": 0.55,
+            "xi_mean": 0.070426,
+            "xi_std": 0.005388
+          },
+          {
+            "decay": 0.58,
+            "xi_mean": 0.082759,
+            "xi_std": 0.006123
+          },
+          {
+            "decay": 0.59,
+            "xi_mean": 0.08729,
+            "xi_std": 0.006387
+          },
+          {
+            "decay": 0.6,
+            "xi_mean": 0.092059,
+            "xi_std": 0.006701
+          },
+          {
+            "decay": 0.61,
+            "xi_mean": 0.097224,
+            "xi_std": 0.007031
+          },
+          {
+            "decay": 0.618034,
+            "xi_mean": 0.101412,
+            "xi_std": 0.007322
+          },
+          {
+            "decay": 0.62,
+            "xi_mean": 0.102471,
+            "xi_std": 0.007362
+          },
+          {
+            "decay": 0.63,
+            "xi_mean": 0.108163,
+            "xi_std": 0.007722
+          },
+          {
+            "decay": 0.64,
+            "xi_mean": 0.114102,
+            "xi_std": 0.007923
+          },
+          {
+            "decay": 0.65,
+            "xi_mean": 0.120348,
+            "xi_std": 0.008153
+          },
+          {
+            "decay": 0.7,
+            "xi_mean": 0.157337,
+            "xi_std": 0.01031
+          },
+          {
+            "decay": 0.75,
+            "xi_mean": 0.207349,
+            "xi_std": 0.012896
+          },
+          {
+            "decay": 0.8,
+            "xi_mean": 0.275445,
+            "xi_std": 0.015936
+          },
+          {
+            "decay": 0.85,
+            "xi_mean": 0.370635,
+            "xi_std": 0.02182
+          },
+          {
+            "decay": 0.9,
+            "xi_mean": 0.505755,
+            "xi_std": 0.030002
+          }
+        ],
+        "cascade_direct": [
+          {
+            "decay": 0.3,
+            "xi_mean": 0.001071,
+            "xi_std": 0.000657
+          },
+          {
+            "decay": 0.35,
+            "xi_mean": 0.001113,
+            "xi_std": 0.000681
+          },
+          {
+            "decay": 0.4,
+            "xi_mean": 0.001131,
+            "xi_std": 0.000699
+          },
+          {
+            "decay": 0.45,
+            "xi_mean": 0.001083,
+            "xi_std": 0.00067
+          },
+          {
+            "decay": 0.5,
+            "xi_mean": 0.001026,
+            "xi_std": 0.000639
+          },
+          {
+            "decay": 0.55,
+            "xi_mean": 0.000967,
+            "xi_std": 0.000611
+          },
+          {
+            "decay": 0.58,
+            "xi_mean": 0.000921,
+            "xi_std": 0.000575
+          },
+          {
+            "decay": 0.59,
+            "xi_mean": 0.000914,
+            "xi_std": 0.000576
+          },
+          {
+            "decay": 0.6,
+            "xi_mean": 0.0009,
+            "xi_std": 0.000571
+          },
+          {
+            "decay": 0.61,
+            "xi_mean": 0.000889,
+            "xi_std": 0.000561
+          },
+          {
+            "decay": 0.618034,
+            "xi_mean": 0.000876,
+            "xi_std": 0.000547
+          },
+          {
+            "decay": 0.62,
+            "xi_mean": 0.000871,
+            "xi_std": 0.000546
+          },
+          {
+            "decay": 0.63,
+            "xi_mean": 0.000855,
+            "xi_std": 0.000531
+          },
+          {
+            "decay": 0.64,
+            "xi_mean": 0.000844,
+            "xi_std": 0.000526
+          },
+          {
+            "decay": 0.65,
+            "xi_mean": 0.000838,
+            "xi_std": 0.000519
+          },
+          {
+            "decay": 0.7,
+            "xi_mean": 0.000773,
+            "xi_std": 0.000474
+          },
+          {
+            "decay": 0.75,
+            "xi_mean": 0.000702,
+            "xi_std": 0.000443
+          },
+          {
+            "decay": 0.8,
+            "xi_mean": 0.000654,
+            "xi_std": 0.000406
+          },
+          {
+            "decay": 0.85,
+            "xi_mean": 0.000618,
+            "xi_std": 0.000379
+          },
+          {
+            "decay": 0.9,
+            "xi_mean": 0.000583,
+            "xi_std": 0.000339
+          }
+        ]
+      },
+      "summary": {
+        "cascade_chain": {
+          "optimal_decay": 0.9,
+          "optimal_xi_mean": 0.505755,
+          "xi_at_phi_inv": 0.101412,
+          "distance_opt_to_phi_inv": 0.282,
+          "xi_deficit_at_phi_inv_pct": 79.95
+        },
+        "cascade_direct": {
+          "optimal_decay": 0.4,
+          "optimal_xi_mean": 0.001131,
+          "xi_at_phi_inv": 0.000876,
+          "distance_opt_to_phi_inv": 0.218,
+          "xi_deficit_at_phi_inv_pct": 22.55
+        }
+      },
+      "phi_inv": 0.618034
+    },
+    "equivalence": {
+      "test": "fibonacci_cascade_equivalence",
+      "results": [
+        {
+          "label": "Fibonacci chain",
+          "coupling_type": "fibonacci_chain",
+          "decay": null,
+          "xi_mean": 0.102065,
+          "xi_std": 0.008383
+        },
+        {
+          "label": "Cascade chain d=1/\u03c6",
+          "coupling_type": "cascade_chain",
+          "decay": 0.6180339887498948,
+          "xi_mean": 0.102857,
+          "xi_std": 0.008683
+        },
+        {
+          "label": "Cascade chain d=0.5",
+          "coupling_type": "cascade_chain",
+          "decay": 0.5,
+          "xi_mean": 0.054699,
+          "xi_std": 0.005364
+        },
+        {
+          "label": "Cascade chain d=0.7",
+          "coupling_type": "cascade_chain",
+          "decay": 0.7,
+          "xi_mean": 0.159294,
+          "xi_std": 0.011836
+        },
+        {
+          "label": "Uniform",
+          "coupling_type": "uniform",
+          "decay": 0.5,
+          "xi_mean": 5.9e-05,
+          "xi_std": 8.7e-05
+        },
+        {
+          "label": "Exponential decay",
+          "coupling_type": "exponential",
+          "decay": 0.5,
+          "xi_mean": 0.002939,
+          "xi_std": 0.003698
+        }
+      ],
+      "statistical_test": {
+        "comparison": "Fibonacci chain vs Cascade chain at 1/\u03c6",
+        "t_statistic": -0.2859,
+        "p_value": 0.776472,
+        "equivalent": true
+      },
+      "ranking": [
+        {
+          "rank": 1,
+          "label": "Cascade chain d=0.7",
+          "xi_mean": 0.159294
+        },
+        {
+          "rank": 2,
+          "label": "Cascade chain d=1/\u03c6",
+          "xi_mean": 0.102857
+        },
+        {
+          "rank": 3,
+          "label": "Fibonacci chain",
+          "xi_mean": 0.102065
+        },
+        {
+          "rank": 4,
+          "label": "Cascade chain d=0.5",
+          "xi_mean": 0.054699
+        },
+        {
+          "rank": 5,
+          "label": "Exponential decay",
+          "xi_mean": 0.002939
+        },
+        {
+          "rank": 6,
+          "label": "Uniform",
+          "xi_mean": 5.9e-05
+        }
+      ]
+    },
+    "spectral": {
+      "test": "spectral_analysis",
+      "n_env_modes": 8,
+      "results": [
+        {
+          "topology": "Cascade chain d=1/\u03c6",
+          "eigenvalues_top5": [
+            1.004336,
+            0.999993,
+            0.998894,
+            0.997724,
+            0.99388
+          ],
+          "spectral_ratios": {
+            "lambda1_over_lambda2": 1.0043,
+            "vs_phi": 37.93,
+            "vs_phi_sq": 61.64,
+            "lambda2_over_lambda3": 1.0011
+          },
+          "total_xi": 0.089029
+        },
+        {
+          "topology": "Cascade chain d=0.5",
+          "eigenvalues_top5": [
+            0.999993,
+            0.9998,
+            0.998222,
+            0.997724,
+            0.992174
+          ],
+          "spectral_ratios": {
+            "lambda1_over_lambda2": 1.0002,
+            "vs_phi": 38.18,
+            "vs_phi_sq": 61.8,
+            "lambda2_over_lambda3": 1.0016
+          },
+          "total_xi": 0.04671
+        },
+        {
+          "topology": "Cascade chain d=0.7",
+          "eigenvalues_top5": [
+            1.010538,
+            1.001617,
+            0.999993,
+            0.997724,
+            0.993262
+          ],
+          "spectral_ratios": {
+            "lambda1_over_lambda2": 1.0089,
+            "vs_phi": 37.65,
+            "vs_phi_sq": 61.46,
+            "lambda2_over_lambda3": 1.0016
+          },
+          "total_xi": 0.139311
+        },
+        {
+          "topology": "Fibonacci chain",
+          "eigenvalues_top5": [
+            1.003618,
+            0.999993,
+            0.999905,
+            0.997724,
+            0.992307
+          ],
+          "spectral_ratios": {
+            "lambda1_over_lambda2": 1.0036,
+            "vs_phi": 37.97,
+            "vs_phi_sq": 61.66,
+            "lambda2_over_lambda3": 1.0001
+          },
+          "total_xi": 0.088615
+        },
+        {
+          "topology": "Uniform",
+          "eigenvalues_top5": [
+            0.999993,
+            0.99854,
+            0.997724,
+            0.992688,
+            0.979873
+          ],
+          "spectral_ratios": {
+            "lambda1_over_lambda2": 1.0015,
+            "vs_phi": 38.11,
+            "vs_phi_sq": 61.75,
+            "lambda2_over_lambda3": 1.0008
+          },
+          "total_xi": 2.6e-05
+        },
+        {
+          "topology": "Exponential decay",
+          "eigenvalues_top5": [
+            0.999993,
+            0.998776,
+            0.997724,
+            0.997015,
+            0.995355
+          ],
+          "spectral_ratios": {
+            "lambda1_over_lambda2": 1.0012,
+            "vs_phi": 38.12,
+            "vs_phi_sq": 61.76,
+            "lambda2_over_lambda3": 1.0011
+          },
+          "total_xi": 0.006918
+        }
+      ],
+      "reference_values": {
+        "phi": 1.618034,
+        "phi_squared": 2.618034
+      }
+    }
+  },
+  "synthesis": {
+    "verdict": "BRIDGE PARTIAL",
+    "bridge_strength": "2/4",
+    "explanation": "The mathematical foundation is exact, but the numerical connection is approximate. The cascade topology is grounded in Fibonacci structure, but the optimal decay may not be exactly 1/\u03c6 for this coupling model.",
+    "components": {
+      "math_foundation": "exact",
+      "optimal_decay": 0.9,
+      "distance_from_phi_inv": 0.282,
+      "xi_deficit_pct": 79.95,
+      "fibonacci_equivalence_p": 0.776472
+    }
+  }
+}
