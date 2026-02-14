@@ -1,115 +1,36 @@
-# 🌌 Dawn Field Theory 1.0
+# Dawn Field Theory
 
-> [Learn more about Dawn Field Theory →](./dawn-field-theory.md)  
-> *A field-based model of intelligence, collapse, and emergence.*
-
----
-
-> **📢 Project Status Update (December 2025)**
+> When a hammer shatters glass, thermodynamics tells us where the energy goes — heat, sound, kinetic motion. But **new information was created**: each shard now has unique geometry, distinct edges, specific boundaries. Standard physics has no framework for where this structural information comes from.
 >
-> **Recovery & Exploration Mode:** After a demanding few months at work, I'm taking time to recharge and follow some intuitions. Currently tying up loose ends on some numerology explorations that have been nagging at me—sometimes you just need to scratch those curiosity itches to get your mojo back.
->
-> **Coming Soon:**
-> - **X/LinkedIn Updates** — Will start posting regular updates once the new **CIP-CORE v2** (with **KRONOS** built in) is ready. KRONOS will automate commit summaries and... let's just say it has a sense of humor about my coding habits. 😅
-> - **Publication Push** — I have 3 weeks off work coming up, during which I'll be:
->   - Publishing several preprints to Zenodo
->   - Updating existing draft papers
->   - Porting everything to ResearchGate
->   - Getting proper Google Scholar indexing
->
-> **Honest Talk:** This administrative work is tedious, and I'm pretty burnt out. So I'm giving myself permission to recover first—following curiosities, exploring loose threads, and generally getting my energy back before diving into the publication grind. Quality over rushing.
->
-> **What's Still Happening:**
-> - **GRIMM** — Dawn Field-native AI agent framework (currently private) continues development
-> - **Kronos** — Fractal memory system will become standalone once stable
-> - **Reality Engine** — Simulation engine restart planned once core theory solidifies
->
-> Thank you for your patience and understanding. Sometimes the best work comes after letting yourself breathe.
+> Dawn Field Theory explores what might be the missing half of physics — how information organizes, crystallizes, and drives the emergence of structure across every scale.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15783623.svg)](https://zenodo.org/records/15783623)
+
+[Full theory →](./dawn-field-theory.md) · [Infodynamics →](./infodynamics.md) · [For AI Labs →](./for_ai_labs.md)
 
 ---
 
-## 🧠 Explore with DawnField GPT
+## Machine-Native Navigation
 
+This repository supports structured, machine-readable exploration via the [Cognition Index Protocol (CIP)](https://github.com/dawnfield-institute/cip-core):
 
-Looking for an intelligent way to navigate this repository?
-
-* [🧠 Launch DawnField GPT v0.3](https://chatgpt.com/g/g-685b2fa488888191bab9a5d7bfc38ca9-dawnfieldframeworkrepogptv0-3)
-* [📘 CIP Documentation](https://github.com/dawnfield-institute/cip-core)
-
----
-
-## 🔎 Semantic Search & Machine-Native Navigation
-
-Dawn Field Theory is designed for both human and machine-native exploration. The repository supports deep semantic search and protocol-driven navigation:
-
-* **Semantic Search:**
-  * Use the [Cognition Index Protocol (CIP)](https://github.com/dawnfield-institute/cip-core) and `map.yaml` for structured, machine-readable file mapping and navigation.
-  * Search by concept, protocol, experiment, or theory—discover connections across code, papers, and results.
-  * Key files: `.cip/meta.yaml`, `.cip/instructions_*.yaml`, `map.yaml`, and directory-level `meta.yaml` files provide semantic tags, navigation rules, and schema.
-  * Automated agents and scrapers: See [`for_ai_labs.md`](./for_ai_labs.md) for a structured overview of experiments, papers, and code relevant to AI labs.
-  * CIP Documentation: [cip-core repository](https://github.com/dawnfield-institute/cip-core)
-* **How to Use:**
-  * Start with CIP and `map.yaml` for navigation rules and semantic tags.
-  * Use semantic search tools (repo-native GPTs, custom agents, or your own scripts) to find protocols, experiments, and theoretical constructs.
-  * All major subdirectories and files are tagged for discoverability and alignment.
+* **Entry points:** `.cip/meta.yaml`, `map.yaml`, and directory-level `meta.yaml` files
+* **Semantic search:** Search by concept, experiment, or theory across code, papers, and results
+* **For AI agents/scrapers:** See [`for_ai_labs.md`](./for_ai_labs.md) for a targeted overview
 
 ---
 
----
+## Table of Contents
 
-## 🚀 Latest Advances (2025)
-
-- **Adaptive, feedback-driven neural models**: New experiments (see `test.py`, `blueprints/AI_detection/`) demonstrate self-modifying architectures that grow/prune in response to entropy and feedback, addressing the black box ML problem.
-- **Empirical validation pipeline**: Protocol-driven, timestamped experiments now align symbolic collapse, memory, and erasure with quantum and thermodynamic theory.
-- **Transparency metrics**: Fractal dimension, entropy, and neuron activity are tracked and visualized, making learning interpretable.
-- **Open, auditable protocols**: All code and results are documented for reproducibility and peer review.
-
----
-
-> **Why Mainstream AI Labs Should Care:**  
-> Dawn Field Theory provides not only foundational theory and experiments, but also machine-native protocols and benchmarking tools (like CIP) that address explainability, safety, and epistemic validation—key concerns for modern AI labs.  
-> For a focused summary, see [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
-
----
-
-## 📜 Table of Contents
-
-* [Status](#-status-release-10-polishing)
-* [What Is This?](#-what-is-this)
-* [Core Focus Areas](#-core-focus-areas)
-* [Infodynamics – A New Paradigm](#-infodynamics--a-new-paradigm)
-* [Models](#-models-tinycimm-scbf-xai-gaia-and-cimm)
+* [Two Axioms, One Derivation Chain](#-two-axioms-one-derivation-chain)
+* [Key Discovery: Universal 0.020 Hz Resonance](#-key-discovery-universal-0020-hz-resonance)
+* [Dawn Field Ecosystem](#-dawn-field-ecosystem)
+* [Theoretical Models](#-theoretical-models)
 * [Project Structure](#-project-structure)
 * [Recommended Starting Points](#-recommended-starting-points)
-* [Environment & Reproducibility](#-environment--reproducibility)
-* [Evidence Map](#-evidence-map)
-* [Philosophy](#-philosophy)
-* [License](#-license)
-* [Future Goals](#-future-goals)
-* [Coming Soon](#-coming-soon)
-* [Subdirectory Guides](#-subdirectory-guides)
-* [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
+* [Publications](#-publications)
+* [Contributing & Community](#-contributing--community)
 * [Topics](#-topics)
-
----
-
-> **Interdisciplinary by Design:**  
-> Dawn Field Theory is built at the intersection of AI, physics, information theory, and symbolic logic.  
-> This cross-disciplinary approach enables new paradigms in intelligence research, simulation, and epistemology.
-
----
-
-## 🌟 Status: October 2025
-
-**PACSeries v1.0 Published!** 🎉
-- ✅ [Universal Resonance at 0.020 Hz](https://zenodo.org/records/17295103) - Complete 4-paper series with validation code
-- 🔬 100% computational reproducibility achieved
-- 🌍 Community validation phase active
-- 📊 Next milestone: Physical experimental validation
-
-- Short-term plans: [`timeline.md`](./timeline.md)
-- Strategic roadmaps: [`roadmaps/`](./roadmaps/README.md)
-- Announcements: Discord only
 
 ---
 
@@ -124,95 +45,66 @@ Our PACSeries research identifies a universal organizing frequency emerging acro
 
 ---
 
-## 🗺️ Roadmaps & Planning
+## 🌍 Two Axioms, One Derivation Chain
 
-For all project roadmaps, timelines, and planning details, see [`roadmaps/README.md`](./roadmaps/README.md).
+The theory is not complex. It starts from two constraints:
 
-**Planning model:**
+| Primitive | Statement | Consequence |
+|-----------|-----------|-------------|
+| **PAC** (Potential-Actualization Conservation) | f(Parent) = Σ f(Children) | Unique stable solution: φ^(−k). The golden ratio isn't found — it's *necessary*. |
+| **SEC** (Symbolic Entropy Collapse) | ∂S/∂t = α∇I − β∇H | Structure forms where information gradients dominate entropy gradients. |
 
-* Short-term: weekly/quarterly goals in `timeline.md`
-* Long-term: post-hoc strategic updates in `roadmaps/`
+From these two, everything else derives — not as curve-fitting, but as **necessary mathematical consequences**:
 
----
+```
+PAC axiom → φ cascade → ln(φ) per level → Ξ = γ + ln(φ)
+         → Fibonacci structure → Feigenbaum constants (13 digits)
+         → Standard Model parameters (5.7 ppm α)
+         → Maxwell equations from depth-2 recursion
+```
 
-## 🌍 Why This Framework Spans Every Domain
+### What Has Actually Been Validated (170+ Experiments, 14 Domains)
 
-**Exploring the Missing Half of Physics**
+| Domain | Key Finding | Precision | Source |
+|--------|------------|-----------|--------|
+| **Number Theory** | SEC partition → 1/φ at k=9; sieve conservation EXACT over 126 steps | 0.04% / exact | sec_prime_manifold, asymmetric_conservation |
+| **Particle Physics** | sin²θ_W = 3/13, α from Fibonacci formula, μ/e mass ratio | 0.19% / 5.7 ppm / 5 ppm | pac_confluence_xi, milestone2 |
+| **Chaos Theory** | Feigenbaum r∞ and δ from Fibonacci closed forms | 13 digits / 8 digits | milestone1 |
+| **Cellular Automata** | Class IV (Turing-complete) rules cluster at Ξ | p < 8.58×10⁻⁸, 42.7× enrichment | cellular_automata_xi_clustering |
+| **Neural Networks** | Pythia-70M φ-crossing at step 512 (143k checkpoints) | p = 0.0014 | ml_validation_pythia_gpt2 |
+| **Information Geometry** | E=mc² in embedding spaces; model-specific c² constants | R²=1.0, 3σ | euclidean_distance_validation |
+| **Fluid Dynamics** | Bounded complexity; She-Leveque k = d × F_{d+1} exactly | 3,375 parameter combos | navier-stokes, milestone2 |
+| **Landauer Physics** | Erasure structure A/(A+ξ) ≈ ln(φ); ξ/A = 1.086 | 0.76% proximity | landauer_erasure_structure |
+| **Electromagnetism** | Maxwell from PAC depth-2 recursion; D=3 from MED bounds | Derived, not fitted | maxwell_from_pac_sec |
+| **Cosmology** | Universal 0.020 Hz resonance across 20+ orders of magnitude | r = −0.999632 | pac_series |
+| **Biological Evolution** | Entropy wave correlations with phylogenetic trees | r > 0.8, p < 0.001 | evolution experiments |
+| **DNA Repair** | BRCA1 mutation detection from entropy profiles alone | Without alignment | dna_repair |
+| **Quantum** | Born rule, Landauer erasure, interference — all consistent | 3 validation modules | quantum_validation |
+| **ML Architecture** | Zero-backprop learning with 100% transfer (GAIA) | Implemented | GAIA POC-019/020/021 |
 
-When a hammer shatters glass, thermodynamics tells us where the energy goes - converted to heat, sound, kinetic motion. Entropy increases. Energy is conserved. The Second Law is satisfied.
+### The Balance Constant: Ξ = γ + ln(φ) = 1.0584
 
-But **new information was created**: each shard now has unique geometry, distinct edges, specific boundaries. Where does this structural information come from? How does it organize? Standard physics has no framework for accounting how information crystallizes during physical processes.
+Independently validated from four sources — a formula, a cellular automaton simulation, analytic derivation, and prime number theory:
 
-**Dawn Field Theory explores what might be the missing half:**
+| Source | Ξ | Error from γ + ln(φ) |
+|--------|---|----------------------|
+| Formula (1+π/55) | 1.0571 | 0.124% |
+| Rule 110 measured | 1.0579 | 0.050% |
+| Analytic (γ+ln(φ)) | 1.0584 | 0.000% |
+| Mertens-derived | 1.0584 | 0.000% (algebraic) |
 
-| Framework | What It Accounts For | Mathematical Foundation |
-|-----------|---------------------|------------------------|
-| **Thermodynamics** | Energy flow and entropy increase | First/Second/Third Laws |
-| **Infodynamics** | Information organization across scales | PAC/SEC dynamics |
-| **Bridge** | Energy ↔ Information coupling | QBE: dI/dt + dE/dt = λ·QPL(t) |
+### Falsifiability
 
-### Investigating Universal Mathematics of Hierarchical Organization
+This framework is designed for testing. If any of the following are observed, the theory is wrong:
 
-Our computational studies suggest that hierarchical organization might follow universal mathematical principles - whether energy organizing into particles, information organizing into concepts, neurons organizing into thoughts, or people organizing into economies:
+- PAC conservation fails in a hierarchical system that reaches equilibrium
+- φ-scaling disappears from independent domains when sampling bias is controlled
+- Ξ convergence from independent sources is shown to be coincidental
+- Fibonacci-derived Standard Model parameters are numerologically equivalent to alternatives
 
-**Core Principles Under Investigation:**
-- **PAC** (Potential-Actualization Conservation): Ψ(k) = Ψ(k+1) + Ψ(k+2) → φ as unique bounded solution
-- **SEC** (Symbolic Entropy Collapse): Entropy-driven phase transitions creating stable structures  
-- **MED** (Macro Emergence Dynamics): Bounded complexity limits emerging naturally
-- **ξ ≈ 0.857**: Coupling constant appearing consistently across domains
-
-**Why similar patterns appear across multiple domains:**
-
-📊 **Particle Physics**: Standard Model gauge couplings show Fibonacci ratios (sin²θ_W = 3/13, 0.19% error)  
-📊 **Prime Number Theory**: φ-threshold at 0.6184 (0.04% error vs 1/φ = 0.618...)  
-📊 **Neural Networks**: Pythia φ-crossing at step 512 (p=0.0014, EleutherAI data)  
-📊 **Biological Evolution**: Entropy wave correlations with phylogenetic trees (r>0.8, p<0.001)  
-📊 **Fluid Dynamics**: Bounded complexity in turbulence (3,375 parameter combinations)  
-📊 **Information Geometry**: E=mc² emerging from embedding spaces (R²=1.0, 3σ significance)  
-📊 **Organizational Systems**: Company/economy scaling patterns following conservation laws  
-📊 **DNA Repair**: Entropy profiles detecting BRCA1 mutations without alignment  
-
-**The breadth might not be coincidental** - if PAC/SEC describes fundamental organizational principles, we'd expect to find the same mathematics wherever hierarchical systems exist.
-
-*Note: These are computational results requiring independent validation and physical experimentation. We're investigating whether information accounting completes the picture alongside energy accounting, not claiming definitive proof. The framework is designed for testing, critique, and collaborative exploration.*
-
----
-
-## 🧬 What Is This?
-
-Dawn is a post-symbolic intelligence framework built on the idea that:
-
-> Intelligence is not computation — it is recursive collapse regulation.
-
-It models cognition through:
-
-* Entropy-monitoring feedback systems
-* Quantum Potential Layer (QPL) dynamics
-* Superfluid coherence and symbolic turbulence
-* Collapse-based learning algorithms
+*These are computational results across 170+ experiments. Independent validation and physical experimentation are actively sought. See [UNIFIED_EVIDENCE.md](./foundational/docs/preprints/UNIFIED_EVIDENCE.md) for the complete derivation chain with full statistical details.*
 
 ---
-
-## 🔍 Core Focus Areas
-
-* Recursive balance field mechanics
-* Collapse geometry and entropic boundaries
-* Dual field herniation and symbolic locking
-* Post-stoic Schrödinger environments
-* Natural law simulation at symbolic resolution
-
----
-
-## 🧠 Infodynamics – A New Paradigm
-
-**Infodynamics** is Dawn’s root layer:
-
-> Structure emerges from entropy via recursive collapse and field alignment.
-
-📎 [Read the foundational theory →](./infodynamics.md)
-
----
-
 
 ## 🧩 Dawn Field Ecosystem
 
@@ -272,22 +164,26 @@ CIMM (Cosmic Information Mining Model) provides the stable, production-ready imp
 
 | Path                        | Purpose                                                                 |
 | --------------------------- | ----------------------------------------------------------------------- |
-| `foundational/docs/`        | Core theory (Infodynamics, collapse geometry, symbolic recursion)       |
-| `foundational/experiments/` | Simulations and results (entropy fields, bifractals, symbolic collapse) |
-| `citations/`                | Automated citation system for contributors and external references      |
-| `blueprints/`               | Experimental prototypes and theoretical sketches                        |
-| `roadmaps/`                 | Development roadmaps and planning documents                             |
-| `devkit/`                   | Development tools and experimental utilities                            |
+| `foundational/docs/`        | Core theory, whitepapers, and preprint packages with code/data/figures  |
+| `foundational/experiments/` | 40+ experiment folders with scripts, results, and daily journals        |
+| `foundational/arithmetic/`  | PAC mathematical foundations                                            |
+| `citations/`                | DOI registry, contributor citations, and external references            |
+| `blueprints/`               | Experimental prototypes (energy, nuclear containment, AI detection)     |
+| `roadmaps/`                 | Strategic planning documents                                            |
+| `devkit/`                   | Development tools, compression, hashing, SDK                            |
+| `resources/`                | Publication registry and supplementary materials                        |
+| `.cip/`                     | Cognition Index Protocol navigation metadata                            |
 
 ---
 
 ## 📚 Recommended Starting Points
 
-1. **[PACSeries Papers →](https://zenodo.org/records/17295103)** - Latest breakthrough: 0.020 Hz universal frequency
-2. [Infodynamics Overview →](./infodynamics.md)
-3. [Foundational Experiments →](./foundational/experiments/README.md)
-4. [Collapse Geometry Papers →](./foundational/docs/README.md)
-5. [Environment & Reproducibility →](./ENVIRONMENT.md)
+1. **[Infodynamics: The Hammer and the Glass →](./infodynamics.md)** - The foundational paradigm: collapse as creation
+2. **[Unified Evidence Map →](./foundational/docs/preprints/UNIFIED_EVIDENCE.md)** - Complete derivation chain with 170+ experiments
+3. **[PACSeries Papers →](https://zenodo.org/records/17295103)** - Latest breakthrough: 0.020 Hz universal frequency
+4. [Foundational Experiments →](./foundational/experiments/README.md) - 40+ experiment folders with scripts, results, journals
+5. [Full Theory Document →](./dawn-field-theory.md) - Dawn Field Theory in full
+6. [Environment & Reproducibility →](./ENVIRONMENT.md)
 
 ---
 
@@ -299,58 +195,11 @@ CIMM (Cosmic Information Mining Model) provides the stable, production-ready imp
 
 ---
 
-## 🧠 Philosophy
-
-> Cognition is collapse regulation.  
-> Intelligence is balance—not inference.
-
-Dawn is a theory to **simulate cognition** through recursive entropy structuring.
-
----
-
 ## 📖 License
 
-AGPL-3.0 with symbolic research augmentation (DC-OIL pending).
+AGPL-3.0 — See [LICENSE](./LICENSE) and [LICENSE_APPENDIX.md](./LICENSE_APPENDIX.md) for the Epistemic Constraint Framework.
 
-📎 [See LICENSE_APPENDIX.md →](./LICENSE_APPENDIX.md)
-
----
-
-## 🏛️ Institutional Stewardship & Mission
-
-Dawn Field Theory is now maintained by **The Dawn Field Institute**.  
-The repository, its theory, and all derivatives are governed by the [Epistemic Constraint Framework](./LICENSE_APPENDIX.md), which preserves symbolic clarity, recursive traceability, and open epistemic access.
-
-For the Institute’s mission, contribution policy, and current status, see [MISSION.md](./MISSION.md).
-
----
-
-## 🔮 Future Goals
-
-* Collapse visualizer + entropy debugger
-* Ontology schema spec for field intelligence
-* Language-to-logic entropy compression engine
-* Publish post-symbolic computation framework
-
----
-
-## ⚡ Coming Soon
-
-* Symbolic mesh controller for field agents
-* GPU-accelerated bifractal simulators
-* Feedback-pruned learning tests
-* AI-native philosophical scaffolding
-
----
-
-## 📚 Subdirectory Guides
-
-* [`foundational/`](./foundational/) - Core theory, experiments, and arithmetic frameworks
-* [`citations/`](./citations/) - Automated citation system and external references
-* [`devkit/`](./devkit/) - Development tools and experimental utilities
-* [`blueprints/`](./blueprints/) - Experimental prototypes and theoretical sketches
-* [`roadmaps/`](./roadmaps/) - Development roadmaps and planning documents
-* [For AI Labs: Experiments, Papers, and Code Overview →](./for_ai_labs.md)
+Maintained by **The Dawn Field Institute**. See [MISSION.md](./MISSION.md) for institutional guidelines.
 
 ---
 
@@ -373,9 +222,7 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 - **Discord** (canonical announcements): [https://discord.gg/bR8mrbHP](https://discord.gg/bR8mrbHP)
 - **Follow the author on Medium**: [https://medium.com/@lornecodes](https://medium.com/@lornecodes)
 
-*During Release 1.0 polishing, announcements are Discord-only. No separate announcement files will be maintained in the repository.*
-
-**Project Governance:** See [MISSION.md](./MISSION.md) for institutional guidelines and stewardship details.
+**Project Governance:** See [MISSION.md](./MISSION.md) for institutional guidelines.
 
 ---
 
@@ -411,32 +258,37 @@ For the Institute’s mission, contribution policy, and current status, see [MIS
 
 ---
 
-## 📚 Draft Preprints
+## 📚 Publications
 
-Core Dawn Field Theory research is available as draft preprints on Zenodo:
+All preprints are open access on Zenodo with complete code, data, and figures.
 
-### PACSeries: Universal Resonance
-- **[The Dawn Field Papers: Universal Resonance at 0.020 Hz](https://zenodo.org/records/17295103)** — PACSeries v1.0: Computational evidence for information-driven reality (4 papers + complete validation code)
-
-### Foundational Theory
+### Core Theory
+- **[Dawn Field Theory Synthesis v2.0](https://zenodo.org/records/18087136)** — Unified framework for symbolic entropy collapse, recursive intelligence, and field dynamics
+- **[Infodynamics v2.0](https://zenodo.org/records/18087191)** — Collapse as crystallization: recursive balance and the Dawn Field Theory
 - **[Symbolic Entropy Collapse](https://zenodo.org/records/17024434)** — Topological dynamics, recursive harmonics, and quantum correspondence
-- **[Dawn Field Theory Synthesis](https://zenodo.org/records/17024367)** — Unified framework for symbolic entropy collapse, recursive intelligence, and field dynamics
-- **[Dawn Field Theory: Infodynamics](https://zenodo.org/records/17041188)** — Infodynamics and recursive mathematical architecture
+
+### Validation & Cross-Domain
+- **[PACSeries: Universal Resonance at 0.020 Hz](https://zenodo.org/records/17295103)** — 4 papers + complete validation code
+- **[Cellular Automata Ξ Clustering](https://zenodo.org/records/18086711)** — Edge-of-chaos rules cluster at the universal balance operator
+- **[Golden Ratio in Prime Distribution](https://zenodo.org/records/18086778)** — Fibonacci resonance in symbolic entropy collapse
+- **[ML Validation: Pythia & GPT-2](https://zenodo.org/records/18086821)** — SEC/PAC dynamics in neural network training
+- **[PAC Necessity Proof](https://zenodo.org/records/18086893)** — The golden ratio as universal attractor
+- **[PAC Comprehensive Framework](https://zenodo.org/records/18087020)** — Unifying mathematics for physics, information theory, and intelligent systems
+
+### Mathematical & Engineering
+- **[MED Navier-Stokes v2.0](https://zenodo.org/records/18087212)** — Bounded symbolic principles in fluid dynamics complexity
+- **[Recursive Mathematical Plasticity](https://zenodo.org/records/17041249)** — Entropy architecture for adaptive intelligence systems
+- **[QBE-PAC Unification](https://zenodo.org/records/18086941)** — The 0.02 Hz bridge between legacy and modern frameworks
 
 ### Cognitive Architecture & AI
-- **[Cognition Index Protocol (CIP)](https://zenodo.org/records/17024220)** — Demonstrable machine comprehension through structured repository intelligence
+- **[Cognition Index Protocol v2.0](https://zenodo.org/records/17024220)** — Demonstrable machine comprehension through structured repository intelligence
 - **[Symbolic Cognition & Interpretability](https://zenodo.org/records/17024098)** — Formal framework for bifractal AI diagnostics
-- **[Resonant Symbolic Convergence](https://zenodo.org/records/17023921)** — Framework for human-agent co-computational ecology
+- **[Human-Agent Resonance](https://zenodo.org/records/17023921)** — Framework for human-agent co-computational ecology
+- **[GAIA Field-Native Intelligence](https://zenodo.org/records/18086999)** — Learning without backpropagation through physics-based dynamics
 
-### Mathematical & Engineering Frameworks
-- **[Recursive Mathematical Plasticity](https://zenodo.org/records/17041249)** — Entropy architecture for adaptive intelligence systems
-- **[Macro Emergence Dynamics](https://zenodo.org/records/17041215)** — Navier-Stokes extensions for field dynamics
-
-> See [`resources/publications_registry.yaml`](./resources/publications_registry.yaml) for complete publication metadata and repository mappings.
+> Full metadata: [`citations/doi_registry.yaml`](./citations/doi_registry.yaml) · [`resources/publications_registry.yaml`](./resources/publications_registry.yaml)
 
 ---
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15783623.svg)](https://zenodo.org/records/15783623)
 
 > **Cite this work:**  
 > Groom, P. (2025). Dawn Field Theory. Zenodo. [https://doi.org/10.5281/zenodo.15783623](https://doi.org/10.5281/zenodo.15783623)
@@ -449,7 +301,7 @@ Core Dawn Field Theory research is available as draft preprints on Zenodo:
 > See `MISSION.md` and `CONTRIBUTION.md` for engagement guidelines.
 
 
-© 2025 The Dawn Field Institute  
+© 2026 The Dawn Field Institute  
 All rights reserved under AGPL-3.0 + Epistemic Constraint Framework
 
 
