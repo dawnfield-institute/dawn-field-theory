@@ -223,17 +223,50 @@ The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-
 ---
 
 ### Paper 6: Computational Validation
-**Source**: Rewrite of current GAIA validation + SEC-MED framework papers
+**Source**: Rewrite of GAIA validation + SEC-MED framework papers + `token_pac_tree` (12 experiments) + `TinyCIMM-Boltzmann` (1 experiment)
 
-**Demonstrates PAC/SEC/MED in working computational systems.** Consolidates what are currently papers #2, #3, and #4 into one focused paper.
+**Demonstrates PAC/SEC/MED in working computational systems — from custom architectures to production LLMs.** Three-part structure: observe it in custom systems, observe it in real systems, engineer with it.
 
-**Key results (trimmed to essentials):**
+#### Part A: GAIA (Custom PAC-Native System)
+Consolidates current papers #2, #3, #4 into one focused section.
+
 - PAC conservation residual < 7×10⁻¹¹ across 500-iteration evolutions
 - Cosmological parallel: r = -0.999632 (entropy ↓89%, structure ↑92%)
 - GAIA WikiText-2 perplexity 5.91 vs GPT-2 baseline 29.41
 - 100% memory retrieval at depth 1000
 - Resonance locking at 0.020 Hz (= 2/3 × 0.030 Hz continuous field limit)
 - Emergent capabilities not explicitly programmed
+
+#### Part B: Token PAC Tree (Real LLMs — Observation)
+PAC/SEC operates in standard transformer architectures without any modification.
+Validated across 7 models: Pythia-70m/160m/410m/1B, GPT-2/medium/large.
+
+**Established results:**
+- SEC phase universally predicts accuracy: Crystallized=100%, Ordered≈90%, Transitional≈53%, Chaotic≈20% (monotonic across ALL 4 Pythia models, zero-parameter thresholds)
+- PAC ratio magnitude scales with model size (monotonic, p < 0.001)
+- Attention heads ARE the PAC collapse mechanism (confident_head_ratio: factual 86% vs hallucinated 80%, p = 0.00006)
+- Xi clustering in trained weight SVD: 2.36× enrichment over random (χ² = 5511, p ≈ 0); attention layers 2-3× more than MLP
+- Cross-architecture universality: delayed phase transition 1.43× in both Pythia and GPT-2 families (Fisher combined p = 0.0)
+- Hallucination = PAC violation: +9.6% uncompensated entropy, compensation ratio ≈ 0
+- Dynamic tracking: confident_head_ratio declines monotonically during hallucination sequences
+
+**Honest falsifications (included in paper):**
+- φ enrichment in token ratios FALSIFIED — softmax produces 8.8% near-φ ratios by construction; real signal is ratio magnitude, not φ alignment
+- Single-token hallucination detection fails — PAC violation is a sequence-level phenomenon, not token-level
+- Xi is NOT optimal classifier threshold across all architectures (architecture-specific)
+
+#### Part C: TinyCIMM-Boltzmann (PAC as Engineering Constraint)
+First architecture that enforces PAC conservation as a hard constraint, not just observes it.
+
+- BoltzmannHead: softmax replacement with explicit entropy budget
+- ConservationProjector: enforces f(Parent) = Σf(Children) at each layer
+- Conservation reduces noise violation 3.8× (p = 0.008)
+- Conservation reduces transition shock 16× (p = 0.008)
+- Conservation does NOT hurt factual learning (p = 0.42, n.s.)
+- Hallucination reframed as conservation violation — engineer it away, don't detect it post-hoc
+
+**The arc of Paper 6:**
+> "We built a system that conserves information (GAIA). We found that real neural networks already approximate conservation (Token PAC Tree). We showed that enforcing conservation explicitly reduces failure modes (TinyCIMM-Boltzmann). PAC is not our invention — it is what working systems already do. The question is whether to enforce it deliberately."
 
 **What this paper is NOT:**
 - Not three separate papers about the same GAIA run
@@ -269,7 +302,7 @@ These stay as separate publications. Each gets a short update referencing the PA
 | Paper | Update |
 |-------|--------|
 | qbe_pac_unification | Reference Paper 6 for 0.020 Hz emergence |
-| ml_validation_pythia_gpt2 | Reference Paper 1 for why networks converge to φ |
+| ml_validation_pythia_gpt2 | **Subsumed by Paper 6 Part B/C.** Keep as standalone only if scope differs significantly; otherwise fold into PACSeries #6 and archive |
 
 ---
 
@@ -306,8 +339,16 @@ All results that the PACSeries must present with full error bounds:
 | p/e mass ratio | Fibonacci formula | 0.0083% | 4 |
 | Casimir 240 | F₃×F₄×F₅×F₆ | exact | 4 |
 | She-Leveque k (3D) | 3×F₄ = 9 | 0.47% | 5 |
-| PAC conservation residual | — | < 7×10⁻¹¹ | 6 |
-| Cosmological correlation | r = -0.9996 | ±0.0001 | 6 |
+| PAC conservation residual | — | < 7×10⁻¹¹ | 6A |
+| Cosmological correlation | r = -0.9996 | ±0.0001 | 6A |
+| SEC phase → accuracy (all Pythia) | monotonic | zero-parameter | 6B |
+| Attention PAC (confident_head_ratio) | F1 ≈ 0.93 | p = 0.00006 | 6B |
+| PAC violation (hallucination) | +9.6% uncompensated | compensation ≈ 0 | 6B |
+| Xi in trained weights (SVD) | 2.36× enrichment | χ²=5511, p ≈ 0 | 6B |
+| Cross-arch delayed transition | 1.43× | Fisher p = 0.0 | 6B |
+| TinyCIMM violation reduction | 3.8× | p = 0.008 | 6C |
+| TinyCIMM transition shock | 16× reduction | p = 0.008 | 6C |
+| TinyCIMM factual preservation | no degradation | p = 0.42 (n.s.) | 6C |
 
 ### Falsifiable Predictions (untested)
 | Prediction | Test | Paper |
@@ -315,6 +356,9 @@ All results that the PACSeries must present with full error bounds:
 | ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) | Compute ξ for gauge group topologies | 1 |
 | She-Leveque k=20 in 4D | 4D turbulence simulation | 5 |
 | Additional mass ratios | Extend Fibonacci formula to quarks | 4 |
+| PAC conservation scales with model size | Larger models → lower violation ratio | 6B |
+| SEC phase thresholds hold for non-autoregressive | Test on BERT, T5, encoder-only models | 6B |
+| Conservation constraint improves at scale | TinyCIMM on larger models → greater benefit | 6C |
 
 ### Hypotheses Under Investigation
 
@@ -358,7 +402,7 @@ Speculative extensions that emerged from the derivation chain but don't yet meet
 - **Week 2**: Write Paper 2 (Xi decomposition, rewrite from scratch in journal.md voice)
 - **Week 3**: Write Paper 3 (Feigenbaum, clean math paper)
 - **Week 4**: Write Paper 4 (Standard Model compilation) + Paper 5 (Maxwell/physics)
-- **Week 5**: Write Paper 6 (GAIA consolidation, trim 3 papers → 1)
+- **Week 5**: Write Paper 6 (GAIA + Token PAC Tree + TinyCIMM-Boltzmann — three-part computational validation)
 - **Week 6**: Update standalone preprints (Tier 1-3), cross-reference, prepare Zenodo packages
 
 ---
@@ -378,3 +422,102 @@ After the rewrite, each PACSeries paper should:
 ---
 
 *The work is done. Now it needs to be written properly.*
+
+---
+
+## Master Checklist
+
+### Paper 1: The Structure Cost of Erasure
+- [x] Core sections 1-13 written (journal.md voice)
+- [x] §15.1 Gauge group hierarchy computed and confirmed (p < 10⁻¹¹)
+- [x] §15.2 ln(φ) derivation from PAC axioms
+- [x] §15.3 Precision tightening: N=5M → 0.15% from ln(φ) (exp_23)
+- [x] §15.3 Full stack validation: all 6 layers pass (exp_25)
+- [x] §15.3 Thermal init discovery: Boltzmann required for ln(φ) emergence
+- [x] Abstract updated with precision improvement
+- [ ] Trim §9 (cross-corpus convergence) to short pointers to other PACSeries papers
+- [ ] Final edit pass for consistency between journal.md and PACSeries/paper.md
+- [ ] Ensure PREPRINT_UPDATE_PLAN falsified items are NOT in the paper (Θ recycling efficiency)
+- [ ] Verify all exp references have matching result JSON files
+
+### Paper 2: The Balance Constant and Its Decomposition
+- [x] §1-13 written from four-domain convergence structure
+- [x] γ interpretation softened to "consistent with" (not "must represent")
+- [x] §9.1 table updated: γ role = "consistent with" not assertion
+- [x] Falsification conditions stated (§11)
+- [x] Mertens product (0.012%), PAC sieve exact (126/126)
+- [ ] Address PREPRINT_UPDATE_PLAN note: γ is rank #1 but 1/√3 performs comparably — mention in §9.2 or §10
+- [ ] Add note that 21 combinations fall within 5% of Ξ (from pac_foundations_validation)
+- [ ] Verify three-phase model (§6.3) is labeled "proposed" not "established"
+- [ ] Final edit pass for voice consistency with Paper 1
+
+### Paper 3: Feigenbaum Constants from Fibonacci Arithmetic
+- [x] §1-14 complete (pure math, no physics claims)
+- [x] Exhaustive search (3.9M combos, 1 match, 1-in-280B)
+- [x] Möbius perturbation series documented
+- [x] Self-closing formula: δ = φ^(20/N)
+- [x] Universality proof (sine map = logistic map Δz to 10⁻¹⁰)
+- [x] Cross-domain validation (5 domains, joint p < 10⁻¹¹)
+- [x] Falsification conditions stated (§10)
+- [x] "We do not know why" voice throughout
+- [ ] Consider extending exhaustive search to a > 200 (open computation §14.1)
+- [ ] Final edit pass
+
+### Paper 4: Standard Model Parameters from Fibonacci Arithmetic
+- [ ] Locate milestone1/milestone2 experiment data and scripts
+- [ ] Locate pac_confluence_xi experiment data
+- [ ] Compile all gauge coupling formulas with full error bounds
+- [ ] Compile all mass ratio formulas with full error bounds
+- [ ] Write paper in journal.md voice (start from established SM parameters)
+- [ ] Include Casimir 240 = F₃×F₄×F₅×F₆ result
+- [ ] Include k = d × F_{d+1} She-Leveque connection
+- [ ] Include Bell inequality (2αβ)² = 4/5 algebraic proof
+- [ ] Address numerology objection: joint constraints vs individual matches
+- [ ] State falsification conditions (what would break the Fibonacci pattern)
+- [ ] Cross-reference Paper 1 (Landauer interpretation of α)
+- [ ] Cross-reference Paper 3 (same F₁₀ = 55 appearing)
+
+### Paper 5: Classical Physics from Information Geometry
+- [ ] Locate maxwell_from_pac_sec experiment data
+- [ ] Write Maxwell = depth-2 PAC recursion derivation
+- [ ] Write SEC wave equation → speed of light
+- [ ] Write MED bounds → D = 3 derivation
+- [ ] Include She-Leveque k = d × F_{d+1} (shared with Paper 4)
+- [ ] Include Mersenne dimension result
+- [ ] Label gravity speculation clearly
+- [ ] State falsification conditions (k=20 in 4D prediction)
+
+### Paper 6: Computational Validation
+- [ ] Part A: Consolidate 3 existing GAIA papers into one section
+- [ ] Part A: Trim to essential results (conservation residual, perplexity, memory, resonance)
+- [ ] Part B: Write token_pac_tree section from 12 experiments
+- [ ] Part B: Include honest falsifications (φ enrichment, single-token detection)
+- [ ] Part B: SEC phase → accuracy table (all 4 Pythia models)
+- [ ] Part B: Attention PAC mechanism (confident_head_ratio, p = 0.00006)
+- [ ] Part B: Cross-architecture universality (Fisher p = 0.0)
+- [ ] Part B: PAC violation = hallucination (+9.6% uncompensated)
+- [ ] Part C: Write TinyCIMM-Boltzmann section
+- [ ] Part C: Conservation reduces violation 3.8× (p = 0.008)
+- [ ] Part C: Conservation reduces transition shock 16× (p = 0.008)
+- [ ] Part C: No factual harm (p = 0.42 n.s.)
+- [ ] Write the narrative arc: built it → found it in the wild → engineered with it
+- [ ] State falsification conditions (scaling, non-autoregressive, conservation at scale)
+
+### Standalone Preprint Updates
+- [ ] Tier 1: golden_ratio_prime_distribution — add "Why φ" section → Paper 1
+- [ ] Tier 1: cellular_automata_xi_clustering — connect Rule 110 → Paper 2
+- [ ] Tier 1: pac_necessity_proof — add base-agnostic proof, reference Paper 1
+- [ ] Tier 1: symbolic_entropy_collapse — add ratio vs magnitude, SEC gradient flow
+- [ ] Tier 2: pac_cosmology_jwst_validation — reference Paper 4
+- [ ] Tier 2: potential_actualization_conservation — ratio vs magnitude clarification
+- [ ] Tier 2: macro_emergence_dynamics_navier_stokes — add k = d × F_{d+1}
+- [ ] Tier 2: she_leveque_fibonacci_turbulence — add k = d × F_{d+1}
+- [ ] Tier 3: qbe_pac_unification — reference Paper 6
+- [ ] Tier 3: ml_validation_pythia_gpt2 — decide: subsume into Paper 6 or keep standalone
+
+### Cross-Cutting
+- [ ] Update UNIFIED_EVIDENCE.md with token_pac_tree findings
+- [ ] Update UNIFIED_EVIDENCE.md with TinyCIMM-Boltzmann findings
+- [ ] Verify all papers cross-reference each other consistently (§14 / §13 sections)
+- [ ] Prepare Zenodo packages for Papers 1-6
+- [ ] Create changelog entry for PACSeries consolidation

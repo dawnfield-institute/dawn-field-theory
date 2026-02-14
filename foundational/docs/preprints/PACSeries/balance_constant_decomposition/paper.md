@@ -68,11 +68,11 @@ connecting it to hyperbolic geometry and the geometric mean between successive F
 
 At first glance, γ (from the harmonic series) and ln(φ) (from Fibonacci recursion) have no obvious relationship. Their sum Ξ = 1.0584... is not a listed constant in mathematical databases.
 
-The central claim of this paper is that these constants *must* add because they represent complementary costs of the same process: maintaining PAC conservation across scale transitions. Specifically:
-- **ln(φ)** is the cost of recursive structure (how much information each PAC level contributes)
-- **γ** is the cost of discrete-to-continuous regularisation (the overhead of mapping between countable and continuous domains)
+The central claim of this paper is that these constants add because they arise from complementary aspects of the same process: maintaining PAC conservation across scale transitions. Specifically:
+- **ln(φ)** is the cost of recursive structure (how much information each PAC level contributes — derived in Paper 1)
+- **γ** is *consistent with* the cost of discrete-to-continuous regularisation (it governs the Mertens product, which describes PAC-conserving prime sieving)
 
-Any system that exhibits both recursive conservation (PAC) and operates across discrete-to-continuous scale transitions should produce a balance point at their sum.
+The interpretation of γ as "discrete-to-continuous cost" is supported by its role in Mertens' theorem and its appearance at the Rule 110 order/disorder boundary, but it has not been proven from first principles. What *is* established is that both constants arise independently from PAC-conserving processes and converge to Ξ across four computational domains. The question of *why* they must add remains open (§10.1).
 
 ---
 
@@ -240,7 +240,7 @@ Experiment exp_03 (originally exp_29 of prime_growth_dynamics) analysed the deco
 | Component | Value | Share of Ξ | Role |
 |-----------|-------|-----------|------|
 | ln(φ) | 0.4812 | 45.5% | Structure (recursive PAC unit) |
-| γ | 0.5772 | 54.5% | Surplus (discrete↔continuous bridge) |
+| γ | 0.5772 | 54.5% | Surplus (consistent with discrete↔continuous bridge) |
 | **Ξ** | **1.0584** | **100%** | Combined balance constant |
 
 The surplus-to-structure ratio is approximately 1.200. The Rule 110 midpoint (the density at which the automaton transitions between ordered and disordered behaviour) is 0.574, which matches γ = 0.577 to within 0.56%.
