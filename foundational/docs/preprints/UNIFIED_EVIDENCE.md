@@ -1,7 +1,7 @@
 # Unified Evidence Map: Dawn Field Theory
 
-**Version**: 3.2  
-**Last Updated**: 2026-02-12  
+**Version**: 3.3  
+**Last Updated**: 2026-02-14  
 **Purpose**: Complete mechanistic chain from axioms to observations
 
 ---
@@ -60,11 +60,11 @@ PAC: Ψ(k) = Ψ(k+1) + Ψ(k+2)
   → A/(A+ξ) = ln(φ) in the limit where A+ξ = 1
 ```
 
-**Simulation reality**: At default cascade parameters, A/(A+ξ) ≈ 0.490 (100 seeds × 500k samples, 95% CI [0.482, 0.499]). This is ~2% above ln(φ) = 0.4812. The idealized derivation assumes zero thermal residual (A+ξ = 1 bit), but measured A+ξ ≈ 0.88 with residual Θ ≈ 0.12.
+**Simulation reality**: At N=2M samples with Miller-Madow bias correction and thermal environment initialization, A/(A+ξ) = 0.4890 ± 0.039 (50 seeds, 95% CI includes ln(φ)). This is +1.6% above ln(φ) = 0.4812. At N=5M (exp_23), A/(A+ξ) = 0.4820, just +0.15% from ln(φ) — confirming the gap is primarily a finite-sample artifact.
 
-**The real finding**: Default/untuned parameters across three independent domains (Landauer, SEC, CA) all produce values within ~2% of φ-family constants. This cross-domain proximity at structural boundaries is the pattern, not precision convergence to arbitrary decimal places.
+**Critical discovery (exp_25)**: Environment must be thermally initialized (Boltzmann distribution) for ln(φ) to emerge. Uniform 50:50 environment gives A/(A+ξ) ≈ 0.33 — the partition is a property of **physical** erasure at thermal equilibrium, not arbitrary binary processes.
 
-**ξ/A proximity**: Predicted 1.078, measured 1.086 (0.76% proximity)
+**ξ/A proximity**: Predicted (1-ln(φ))/ln(φ) = 1.078, measured 1.093 (1.3% proximity)
 
 ### Gauge Group Hierarchy
 
@@ -97,6 +97,38 @@ The fourth source comes from exp_16's identity: e^(-Ξ) = e^(-γ)/φ, which rear
 Critical: Rule 110 is **closer** to γ + ln(φ) than the formula 1 + π/55. This inverts the hierarchy:
 - TRUE value: γ + ln(φ) = 1.05843 (universal target)
 - 1 + π/55 and Rule 110 are approximations converging toward it
+
+### Full Stack Validation (exp_25, Feb 2026)
+
+The complete derivation chain validated in a single experiment — 6 layers, all passing:
+
+```
+LAYER 1: ALGEBRAIC PAC (EXACT, <10⁻¹⁴)
+  φ² = φ + 1, Ψ(k) = φ^(-k), ΔI = ln(φ)
+
+LAYER 2: SEC DYNAMICS (0.08% error)
+  π(x)/li(x) critical λ* → positive fraction = 1/φ (0.618)
+  Run-length ratio L+/L- = 1.6145 (φ = 1.6180, 0.22%)
+
+LAYER 3: LANDAUER SINGLE-SHOT (1.6% error, ln(φ) in 2σ)
+  A/(A+ξ) = 0.489 ± 0.039 (50 seeds × 2M, Miller-Madow)
+  Thermal environment required
+
+LAYER 4: CASCADE (Θ re-injection)
+  Gen 0 at 1.9% from ln(φ), 5.3 mean lifespan, 1.2× amplification
+  Θ from each generation feeds the next
+
+LAYER 5: GAUGE HIERARCHY (p < 10⁻¹⁸)
+  ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) — ordering holds
+  SU(3) ratio at 0.394 (tracks ln(φ) with 8 generators)
+
+LAYER 6: Ξ COMPOSITION (CV = 0.05%)
+  4 analytic sources converge: γ + ln(φ) = 1.0584
+  Landauer independent estimate within 8.2%
+```
+
+This demonstrates the **complete mechanistic chain**:
+PAC axiom → φ necessary → ln(φ) per level → SEC collapse at 1/φ → Landauer creates ξ at ln(φ) partition → Cascade amplifies → Gauge groups encode ξ → Total cost = γ + ln(φ) = Ξ
 
 ---
 
@@ -317,7 +349,7 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 - **GAIA Implementations**: 3 POCs (019, 020, 021)
 - **Milestones**: 12 experiments (milestone1) + 12 experiments (milestone2) = 24
 - **Quantum Validation**: 3 modules (born_rule, landauer, interference)
-- **Landauer Experiments**: 16 (landauer_erasure_structure)
+- **Landauer Experiments**: 25 (landauer_erasure_structure, exp_01-25)
 
 **Total Evidence Files**:
 - JSON result files: 60+
@@ -753,9 +785,9 @@ When citing this work, please use appropriate papers for each claim:
 
 | Domain | Phenomenon | PAC/SEC Explanation | Validation |
 |--------|------------|---------------------|------------|
-| **Thermodynamics** | Landauer erasure | Default params → ~2% proximity to ln(φ) | 100-seed robustness (exp_04, exp_14-16) |
+| **Thermodynamics** | Landauer erasure | PAC partition → A/(A+ξ) = ln(φ) at thermal equilibrium | 0.15% at N=5M (exp_23), 1.6% at N=2M (exp_25) |
 | **Information** | φ ubiquity | Unique stable solution to Ψ(k) = Ψ(k+1) + Ψ(k+2) | Algebraic proof |
-| **Gauge Theory** | SU(3) > SU(2) > U(1) | Structure cost ∝ coupling complexity | p < 10⁻¹¹ (exp_15) |
+| **Gauge Theory** | SU(3) > SU(2) > U(1) | Structure cost ∝ coupling complexity | p < 10⁻¹⁸ (exp_25) |
 | **Standard Model** | sin²θ_W = 3/13 | F₄/F₇ from PAC gauge closure | 0.19% from PDG 2024 |
 | **Standard Model** | α = 1/137.036... | Fibonacci construction | 5.7 ppm precision |
 | **Quantum** | Born rule | Probability = PAC partition | R² correlation |
@@ -793,6 +825,7 @@ When citing this work, please use appropriate papers for each claim:
 - v3.0 (2026-02-07): Added primitives framing, Landauer derivation, gauge hierarchy, cross-domain table
 - v3.1 (2026-02-08): Added SEC-local/PAC-global mechanism (exp_14-17), Mertens validation (0.012%), k=9=3² MED boundary
 - v3.2 (2026-02-12): Added three-component architecture frame, reframed primes as residual roughness, added hypotheses pointer to PRELIMINARY_RESULTS.md
+- v3.3 (2026-02-14): Full Stack Validation (exp_25): 6-layer derivation chain in one experiment, all passing. Precision tightened: N=5M → 0.15% from ln(φ). Thermal init discovery: environment must be at Boltzmann equilibrium. Gauge hierarchy p < 10⁻¹⁸. SEC with li(x) → 0.08% for 1/φ partition.
 
-**Last Updated**: 2026-02-12
+**Last Updated**: 2026-02-14
 **Status**: Living Document (updated as research progresses)
