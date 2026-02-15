@@ -1,0 +1,69 @@
+schema_version: '1.0'
+created: '2026-02-15'
+description: Traces code and data files back to their original repository locations
+source_repository: dawn-models + dawn-field-theory
+paper: computational_validation_pac_conservation
+paper_type: foundational  # PACSeries Paper 6 — Computational Validation
+
+experiments:
+  - local: experiments/exp_01_sec_phase_classification.py
+    source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_02_multi_model_scale.py
+    repo: dawn-models
+    description: "SEC phase classification with zero-parameter golden ratio boundaries"
+    key_result: "Monotonic accuracy: crystallised=100%, ordered=67-83%, transitional=31-48%, chaotic=17-22%"
+    paper_sections: [2.2, 3.1]
+
+  - local: experiments/exp_02_multi_model_scale.py
+    source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_02_multi_model_scale.py
+    repo: dawn-models
+    description: "Multi-model PAC ratio discrimination across 4 Pythia scales"
+    key_result: "Phi enrichment FALSIFIED (softmax artifact). PAC ratio magnitude → correctness at p < 0.0001"
+    paper_sections: [3.2, 3.3]
+
+  - local: experiments/exp_03_xi_weight_clustering.py
+    source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_06_xi_weight_clustering.py
+    repo: dawn-models
+    description: "Xi ≈ 1.057 clustering in trained weight SVD spectra"
+    key_result: "2.36× enrichment vs random (χ² = 5511, p ≈ 0); attention > MLP"
+    paper_sections: [4]
+
+  - local: experiments/exp_04_attention_pac.py
+    source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_07_attention_pac.py
+    repo: dawn-models
+    description: "Attention head entropy metrics, confident head ratio, cross-architecture universality"
+    key_result: "5 metrics significant at p < 0.001; phase transition delay 1.42 ± 0.02 across 7 models"
+    paper_sections: [5]
+    cross_validation: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_10_cross_architecture_universality.py
+
+  - local: experiments/exp_05_pac_conservation.py
+    source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_12_pac_conservation.py
+    repo: dawn-models
+    description: "PAC conservation violation during hallucination"
+    key_result: "+9.6% uncompensated entropy; GPT-2 compensation ratio = 0.000"
+    paper_sections: [6]
+
+  - local: experiments/exp_06_tinycimm_conservation.py
+    source: dawn-models/research/tinycimm/TinyCIMM-Boltzmann/scripts/exp_01_conservation_vs_free.py
+    repo: dawn-models
+    description: "TinyCIMM 2×2 design: conservation ON/OFF × factual/noise"
+    key_result: "Conservation reduces noise violation (p = 0.008); 16× transition shock reduction; no cost to factual (p = 0.42)"
+    paper_sections: [7]
+
+  - local: experiments/exp_07_landauer_bridge.py
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/scripts/exp_25_full_stack_validation.py
+    repo: dawn-field-theory
+    description: "Six-layer Landauer validation chain connecting thermodynamic to computational PAC"
+    key_result: "All 6 layers pass: algebraic (machine precision), SEC (0.08%), Landauer (1.6%), gauge hierarchy (p = 1.7×10⁻²⁰)"
+    paper_sections: [8.1]
+
+  - local: experiments/exp_08_training_convergence.py
+    source: dawn-models/research/scbf/experiments/huggingface_bifractal_validation/
+    repo: dawn-models
+    description: "Training dynamics converge weight spectra toward φ-structured ratios"
+    key_result: "Combined Fisher p = 0.0014; all 4 model scales show convergent trends"
+    paper_sections: [8.2]
+
+data:
+  - local: ../Data/results/
+    description: "JSON outputs from all experiments"
+    note: "Each experiment saves timestamped JSON; representative results included"

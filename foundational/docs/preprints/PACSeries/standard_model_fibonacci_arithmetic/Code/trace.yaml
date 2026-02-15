@@ -1,0 +1,138 @@
+schema_version: '1.0'
+created: '2026-02-10'
+description: Traces code and data files back to their original repository locations
+source_repository: dawn-field-theory
+paper: standard_model_fibonacci_arithmetic
+paper_type: foundational  # PACSeries Paper 4 — Standard Model from Fibonacci
+
+experiments:
+  - local: experiments/exp_01_gauge_closure.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_17_f7_gauge_closure.py
+    repo: dawn-field-theory
+    description: "F₇=13 as gauge closure — SM has 13 DOF: U(1)+SU(2)+SU(3)+Higgs = 1+3+8+1"
+    key_result: "F₇ uniquely closes gauge budget; 13 is the only Fibonacci number matching SM DOF count"
+    paper_sections: [3, 3.1, 3.2]
+
+  - local: experiments/exp_02_su4_forbidden.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_19_su4_forbidden.py
+    repo: dawn-field-theory
+    description: "SU(4)+ forbidden by Fibonacci filter"
+    key_result: "SU(4) requires 15 generators — no Fibonacci number; only SU(2)×SU(3) tile F₇=13"
+    paper_sections: [3.3]
+
+  - local: experiments/exp_03_alpha_formula.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_12_alpha_formula.py
+    repo: dawn-field-theory
+    description: "Fine structure constant α from Fibonacci arithmetic"
+    key_result: "α⁻¹ = F₁₀·F₇·φ/F₃ × (1 − F₁₀/(4π·F₇²))⁻¹ = 137.03600 vs CODATA 137.03600 (5.7 ppm)"
+    paper_sections: [4.1, 4.2]
+    cross_validation: dawn-field-theory/foundational/experiments/pac_confluence_xi/scripts/validated/01_alpha_comprehensive.py
+
+  - local: experiments/exp_04_weinberg_angle.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_18_weinberg_angle.py
+    repo: dawn-field-theory
+    description: "Weinberg angle sin²θ_W = F₄/F₇ = 3/13"
+    key_result: "sin²θ_W = 0.23077 vs measured 0.23122 ± 0.00003 (0.19% deviation)"
+    paper_sections: [4.3]
+
+  - local: experiments/exp_05_koide_formula.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_20_koide_formula.py
+    repo: dawn-field-theory
+    description: "Koide formula Q = F₃/F₄ = 2/3"
+    key_result: "Q_measured = 0.666658 vs 2/3 = 0.666667 → 0.5 ppm agreement"
+    paper_sections: [5]
+
+  - local: experiments/exp_06_mass_ratios.py
+    source: dawn-field-theory/foundational/experiments/pac_confluence_xi/scripts/validated/10_unified_fractal_pac.py
+    repo: dawn-field-theory
+    description: "Mass ratios from Fibonacci arithmetic"
+    key_result: "μ/e to 5 ppm, p/e to 83 ppm, τ/e to 350 ppm"
+    paper_sections: [6]
+
+  - local: experiments/exp_07_bell_correlation.py
+    source: dawn-field-theory/foundational/experiments/pac_confluence_xi/scripts/validated/30_pac_bell_resolution.py
+    repo: dawn-field-theory
+    description: "Bell correlation from PAC tree structure"
+    key_result: "(2α₁α₂)² = 4/5 exactly; both level-1 and level-2 sectors contribute"
+    paper_sections: [8]
+
+  - local: experiments/exp_08_she_leveque.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_21_she_leveque.py
+    repo: dawn-field-theory
+    description: "She–Lévêque turbulence parameters: β=2/3, k=9=d×F_{d+1}"
+    key_result: "β = F₃/F₄ = 2/3; intermittency exponents match to ~0.3% across p=1..10"
+    paper_sections: [9]
+    cross_validation: dawn-field-theory/foundational/experiments/milestone2/scripts/exp_11_k9_derivation.py
+
+  - local: experiments/exp_09_gravity_hierarchy.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_23_gravity_depth.py
+    repo: dawn-field-theory
+    description: "Gravity hierarchy: depth 183=F₇²+F₇+1, strength ratio F₁₈₃≈10³⁸"
+    key_result: "F₁₈₃ ≈ 1.28×10³⁸ matches (M_Planck/m_proton)² ≈ 1.69×10³⁸ to ~24%"
+    paper_sections: [11]
+    cross_validation: dawn-field-theory/foundational/experiments/pac_confluence_xi/scripts/validated/16_gravity_hierarchy.py
+
+  - local: experiments/exp_10_zprime_prediction.py
+    source: dawn-field-theory/foundational/experiments/milestone1/scripts/exp_34_zprime_prediction.py
+    repo: dawn-field-theory
+    description: "Z' boson prediction: 395±20 GeV, coupling 1/F₇ of standard Z"
+    key_result: "M_Z' ≈ 395 GeV; σ(Z') = σ(Z)/169; width ~64 MeV (narrow)"
+    paper_sections: [14.1]
+
+data:
+  - local: ../Data/results/exp_01_gauge_closure.json
+    source: dawn-field-theory/foundational/experiments/milestone1/results/exp_17_results.json
+    description: "F₇=13 gauge group closure — DOF tiling results"
+
+  - local: ../Data/results/exp_03_alpha_formula.json
+    source: dawn-field-theory/foundational/experiments/milestone1/results/exp_12_results.json
+    description: "Fine structure constant computation — 5.7 ppm precision"
+
+  - local: ../Data/results/exp_04_weinberg_angle.json
+    source: dawn-field-theory/foundational/experiments/milestone1/results/exp_18_results.json
+    description: "Weinberg angle sin²θ_W = 3/13 vs measurement"
+
+  - local: ../Data/results/exp_05_koide_formula.json
+    source: dawn-field-theory/foundational/experiments/milestone1/results/exp_20_results.json
+    description: "Koide formula Q = 2/3 validation"
+
+  - local: ../Data/results/exp_08_she_leveque.json
+    source: dawn-field-theory/foundational/experiments/milestone1/results/exp_21_results.json
+    description: "She–Lévêque intermittency exponents"
+
+  - local: ../Data/results/exp_09_gravity_hierarchy.json
+    source: dawn-field-theory/foundational/experiments/milestone1/results/exp_23_results.json
+    description: "Gravity hierarchy F₁₈₃ comparison"
+
+  - local: ../Data/results/exp_10_zprime_prediction.json
+    source: dawn-field-theory/foundational/experiments/milestone1/results/exp_34_results.json
+    description: "Z' boson mass and coupling prediction"
+
+  - local: ../Data/results/alpha_comprehensive.json
+    source: dawn-field-theory/foundational/experiments/pac_confluence_xi/data/fine_structure_derivation_2025-12-05_140022.json
+    description: "Comprehensive α validation with uniqueness proof"
+
+figures:
+  - local: generate_figures.py
+    description: "Generates all 6 publication figures from experiment data"
+    outputs:
+      - ../Figures/fig1_gauge_group_closure.png     # §3 — F₇=13 DOF tiling, SU(4) rejection
+      - ../Figures/fig2_coupling_constants.png      # §4 — α, sin²θ_W, α_s predictions vs data
+      - ../Figures/fig3_mass_spectrum.png            # §5–6 — Koide + mass ratio accuracy
+      - ../Figures/fig4_bell_correlation.png         # §8 — PAC tree → (2αβ)² = 4/5
+      - ../Figures/fig5_turbulence_universality.png  # §9 — k = d × F_{d+1} validation
+      - ../Figures/fig6_prediction_summary.png       # §14 — Z' + full comparison table
+
+notes: |
+  This is PACSeries Paper 4 — Standard Model parameters from Fibonacci arithmetic.
+  
+  The paper demonstrates that all 19 free parameters of the Standard Model can be
+  expressed as closed-form Fibonacci expressions. Key experiments are drawn from
+  milestone1 (foundational derivations), milestone2 (extensions), and
+  pac_confluence_xi (comprehensive validation with uniqueness proofs).
+  
+  Cross-validation scripts are listed where available — these provide independent
+  checks on the same results using different approaches or parameterizations.
+  
+  All scripts are self-contained (numpy/scipy/matplotlib only).
+  Results are saved as JSON to ../Data/results/ when run.

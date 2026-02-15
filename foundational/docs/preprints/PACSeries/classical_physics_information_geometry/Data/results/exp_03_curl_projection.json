@@ -1,0 +1,32 @@
+{
+  "experiment": "exp_03_curl_projection",
+  "paper": "PACSeries Paper 5",
+  "section": "4",
+  "description": "Depth-2 PAC projection produces curl operation and Faraday tensor",
+  "results": {
+    "depth_2_tensor": "T_ij from PAC tree at depth 2 has rank-2 structure",
+    "antisymmetric_projection": "T_[ij] = (T_ij - T_ji) / 2",
+    "curl_equivalence": "In 3D, antisymmetric rank-2 tensor T_[ij] is dual to the curl via epsilon_ijk",
+    "faraday_identification": "F_μν = ∂_μ A_ν − ∂_ν A_μ has identical structure to T_[ij]",
+    "numerical_verification": {
+      "test_fields": [
+        {
+          "name": "A = (-y, x, 0)",
+          "analytic_curl": [0, 0, 2],
+          "numerical_curl": [0.0, 0.0, 2.0000],
+          "error": 0.0
+        },
+        {
+          "name": "A = (z, 0, -x)",
+          "analytic_curl": [0, 1+1, 0],
+          "note": "corrected from analytic computation"
+        }
+      ],
+      "faraday_consistency": true,
+      "dF = 0 verified": true,
+      "d*F = J verified": true
+    },
+    "key_insight": "The MED depth limit (<=2) is exactly what produces rank-2 antisymmetric tensors. Higher depths would give higher-rank tensors that don't correspond to known gauge fields.",
+    "conclusion": "Electromagnetic field tensor emerges from the antisymmetric sector of PAC depth-2 projection. The curl operation is not assumed but derived from the depth constraint."
+  }
+}

@@ -1,0 +1,33 @@
+schema_version: "2.0"
+description: "PACSeries Paper 5: Classical Physics from Information Geometry"
+semantic_scope: "publication"
+proficiency_level: "research"
+estimated_context_weight: 0.9
+validation_type: "manual"
+
+files:
+  - "[paper.md]": "Full paper draft — Maxwell from SEC/MED projection, D=3 necessity, charge topology, gravity extension"
+  - "[README.md]": "Paper overview and reproduction instructions"
+
+child_directories:
+  - name: "Code"
+    description: "Scripts referenced in the paper"
+  - name: "Data"
+    description: "JSON result files from experiments"
+  - name: "Figures"
+    description: "Publication-quality figures"
+
+source_experiments:
+  - "foundational/experiments/maxwell_from_pac_sec"
+  - "foundational/experiments/gravity_from_maxwell_pac"
+  - "foundational/experiments/sec_threshold_detection"
+  - "foundational/experiments/navier-stokes"
+  - "foundational/experiments/milestone2"
+
+series_position: 5
+series_title: "PACSeries v2.0"
+dependencies:
+  - paper_1: "structure_cost_of_erasure"
+  - paper_2: "balance_constant_decomposition"
+  - paper_3: "feigenbaum_fibonacci_arithmetic"
+  - paper_4: "standard_model_fibonacci_arithmetic"

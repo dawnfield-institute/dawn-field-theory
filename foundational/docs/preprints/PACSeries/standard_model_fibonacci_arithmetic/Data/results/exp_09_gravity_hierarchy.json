@@ -1,0 +1,15 @@
+{
+  "experiment": "exp_09_gravity_hierarchy",
+  "paper": "PACSeries Paper 4",
+  "section": "11",
+  "main_results": {
+    "em_depth": 13,
+    "gravity_depth": 183,
+    "depth_formula": "F₇² + F₇ + 1 = 169 + 13 + 1 = 183",
+    "log10_F183": 38.107,
+    "hierarchy_measured": 1.692e+38,
+    "log10_measured": 38.228,
+    "log_ratio_deviation_percent": 24.0,
+    "interpretation": "Structural observation: EM at depth F₇=13, gravity at depth 183. F₁₈₃ ≈ 10³⁸ matches measured hierarchy."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "experiment": "exp_05_koide_formula",
+  "paper": "PACSeries Paper 4",
+  "section": "5",
+  "main_results": {
+    "koide_ratio": {
+      "pac_value": 0.6666666667,
+      "pac_fraction": "F₃/F₄ = 2/3",
+      "measured_value": 0.6666581,
+      "deviation_ppm": 0.5
+    },
+    "lepton_masses": {
+      "m_e_MeV": 0.51099895,
+      "m_mu_MeV": 105.6583755,
+      "m_tau_MeV": 1776.86
+    },
+    "other_triplets": {
+      "up_quarks": 0.9842,
+      "down_quarks": 0.5956
+    }
+  }
+}

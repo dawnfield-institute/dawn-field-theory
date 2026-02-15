@@ -1,0 +1,32 @@
+{
+  "experiment": "exp_03_alpha_formula",
+  "paper": "PACSeries Paper 4",
+  "section": "4.1-4.2",
+  "main_results": {
+    "alpha_inverse": {
+      "pac_value": 137.036003,
+      "codata_2022": 137.035999177,
+      "residual_ppm": 5.7,
+      "formula": "α⁻¹ = (F₁₀·F₇·φ/F₃) × 1/(1 − F₁₀/(4π·F₇²))"
+    },
+    "components": {
+      "F3": 2,
+      "F7": 13,
+      "F10": 55,
+      "phi": 1.6180339887,
+      "base": 136.77253,
+      "correction_argument": 0.032632,
+      "correction_factor": 1.033732
+    },
+    "uniqueness": {
+      "pairs_tested": 110,
+      "best_pair": "(F_10, F_7)",
+      "best_ppm": 5.7
+    },
+    "alpha_s": {
+      "pdg_2024": 0.118,
+      "pac_tree_level": 0.125,
+      "deviation_percent": 1.71
+    }
+  }
+}

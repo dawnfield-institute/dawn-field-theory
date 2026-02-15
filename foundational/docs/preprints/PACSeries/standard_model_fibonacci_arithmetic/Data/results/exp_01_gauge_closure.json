@@ -1,0 +1,26 @@
+{
+  "experiment": "exp_01_gauge_closure",
+  "paper": "PACSeries Paper 4",
+  "section": "3",
+  "main_results": {
+    "sm_dof_breakdown": {
+      "U(1)": 1,
+      "SU(2)": 3,
+      "SU(3)": 8,
+      "Higgs (post-EWSB)": 1
+    },
+    "sm_total_dof": 13,
+    "fibonacci_match": "F_7",
+    "su4_generators": 15,
+    "su4_is_fibonacci": false,
+    "fibonacci_gauge_groups": {
+      "U(1)": 1,
+      "SU(2)": 3,
+      "SU(3)": 8,
+      "SO(7)": 21
+    },
+    "total_tilings_of_13": 12,
+    "sm_is_unique_chiral_tiling": true
+  },
+  "conclusion": "F₇=13 uniquely matches the SM gauge DOF count. SU(4) with 15 generators is not Fibonacci, excluding all larger simple groups."
+}
