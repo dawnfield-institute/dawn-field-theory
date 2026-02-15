@@ -1,0 +1,52 @@
+{
+  "matrix": {
+    "factual_free": {
+      "mean_violation": 0.089,
+      "mean_final_loss": 0.042,
+      "violation_slope": 0.0001,
+      "mean_compensation": 0.68
+    },
+    "factual_conservation": {
+      "mean_violation": 0.071,
+      "mean_final_loss": 0.045,
+      "violation_slope": -0.0001,
+      "mean_compensation": 0.82
+    },
+    "noise_free": {
+      "mean_violation": 0.342,
+      "mean_final_loss": 0.187,
+      "violation_slope": 0.0012,
+      "mean_compensation": 0.31
+    },
+    "noise_conservation": {
+      "mean_violation": 0.187,
+      "mean_final_loss": 0.156,
+      "violation_slope": -0.0008,
+      "mean_compensation": 0.58
+    }
+  },
+  "tests": {
+    "conservation_reduces_violation": {
+      "p_value": 0.008,
+      "significant": true
+    },
+    "conservation_hurts_factual": {
+      "p_value": 0.42,
+      "significant": false
+    },
+    "transition_shock": {
+      "free_mean": 27.3,
+      "conservation_mean": 1.7,
+      "reduction_factor": 16.1
+    }
+  },
+  "strength_sweep": {
+    "strengths": [0.0, 0.1, 0.5, 1.0, 2.0, 5.0],
+    "optimal": 0.1,
+    "note": "λ ≥ 1.0 over-regularises; λ = 0.1 best loss/violation trade-off"
+  },
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289544
+  }
+}

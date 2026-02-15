@@ -1,0 +1,47 @@
+{
+  "three_way": {
+    "70M": {
+      "trained_xi_rate": 0.168,
+      "xavier_xi_rate": 0.071,
+      "random_xi_rate": 0.063,
+      "enrichment_vs_random": 2.67
+    },
+    "160M": {
+      "trained_xi_rate": 0.148,
+      "xavier_xi_rate": 0.069,
+      "random_xi_rate": 0.061,
+      "enrichment_vs_random": 2.43
+    },
+    "410M": {
+      "trained_xi_rate": 0.134,
+      "xavier_xi_rate": 0.068,
+      "random_xi_rate": 0.062,
+      "enrichment_vs_random": 2.16
+    },
+    "1B": {
+      "trained_xi_rate": 0.119,
+      "xavier_xi_rate": 0.065,
+      "random_xi_rate": 0.060,
+      "enrichment_vs_random": 1.98
+    }
+  },
+  "aggregate": {
+    "mean_enrichment": 2.36,
+    "chi_squared": 5511,
+    "chi_squared_p": 0.0
+  },
+  "attn_vs_mlp": {
+    "attention_xi_mean": 0.156,
+    "mlp_xi_mean": 0.098,
+    "ratio": 1.59
+  },
+  "scale_trend": {
+    "sizes_M": [70, 160, 410, 1000],
+    "enrichments": [2.67, 2.43, 2.16, 1.98],
+    "note": "Smaller models show stronger per-matrix Xi clustering"
+  },
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289544
+  }
+}

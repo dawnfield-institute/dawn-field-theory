@@ -1,0 +1,24 @@
+{
+  "experiment": "exp_04_charge_quantization",
+  "paper": "PACSeries Paper 5",
+  "section": "5",
+  "description": "Electric charge as topological winding number with fractional quarks from MED",
+  "results": {
+    "winding_argument": "SEC collapse singularities create point defects. Phase around defect has quantized winding number n ∈ Z.",
+    "charge_formula": "q = n × e (fundamental winding unit)",
+    "winding_tests": [
+      {"name": "electron", "n": -1, "measured": -1, "match": true},
+      {"name": "positron", "n": 1, "measured": 1, "match": true},
+      {"name": "neutral", "n": 0, "measured": 0, "match": true},
+      {"name": "double", "n": 2, "measured": 2, "match": true}
+    ],
+    "fractional_charges_from_med": {
+      "mechanism": "MED nodes <= 3: a single winding n=1 shared among N nodes gives charge e/N per node",
+      "1_of_3": "q = e/3 → down-type quarks (d, s, b)",
+      "2_of_3": "q = 2e/3 → up-type quarks (u, c, t)",
+      "3_of_3": "q = e → charged leptons (e, μ, τ)"
+    },
+    "confinement": "Fractional winding is not MED-closed → states with non-integer total winding cannot be isolated → quark confinement",
+    "conclusion": "Charge quantization follows from topology (winding). Fractional charges are not postulated but emerge from MED's node limit applied to winding distribution."
+  }
+}

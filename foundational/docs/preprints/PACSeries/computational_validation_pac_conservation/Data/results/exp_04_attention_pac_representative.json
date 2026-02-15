@@ -1,0 +1,54 @@
+{
+  "head_metrics_comparison": {
+    "mean_entropy": {
+      "factual_mean": 1.010,
+      "hallucinated_mean": 1.085,
+      "p_value": 0.001,
+      "significant": true
+    },
+    "confident_head_ratio": {
+      "factual_mean": 0.86,
+      "hallucinated_mean": 0.80,
+      "p_value": 6e-05,
+      "significant": true
+    },
+    "entropy_variance": {
+      "factual_mean": 0.041,
+      "hallucinated_mean": 0.062,
+      "p_value": 0.0003,
+      "significant": true
+    },
+    "max_min_spread": {
+      "factual_mean": 0.89,
+      "hallucinated_mean": 1.12,
+      "p_value": 0.0007,
+      "significant": true
+    },
+    "layer_transition_slope": {
+      "factual_mean": -0.032,
+      "hallucinated_mean": -0.019,
+      "p_value": 0.0005,
+      "significant": true
+    }
+  },
+  "n_significant_metrics": 5,
+  "cross_architecture": {
+    "models": {
+      "pythia-70m": {"transition_f": 0.38, "transition_h": 0.55, "delay": 1.45},
+      "pythia-160m": {"transition_f": 0.41, "transition_h": 0.58, "delay": 1.41},
+      "pythia-410m": {"transition_f": 0.40, "transition_h": 0.57, "delay": 1.43},
+      "pythia-1b": {"transition_f": 0.42, "transition_h": 0.59, "delay": 1.40},
+      "gpt2": {"transition_f": 0.39, "transition_h": 0.56, "delay": 1.44},
+      "gpt2-medium": {"transition_f": 0.40, "transition_h": 0.58, "delay": 1.45},
+      "gpt2-large": {"transition_f": 0.41, "transition_h": 0.57, "delay": 1.39}
+    },
+    "mean_delay": 1.424,
+    "std_delay": 0.023,
+    "n_models": 7,
+    "n_families": 2
+  },
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289544
+  }
+}

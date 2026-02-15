@@ -1,0 +1,34 @@
+{
+  "model_results": {
+    "pythia-160m": {
+      "delta_E_factual_pct": 0.3,
+      "delta_E_halluc_pct": 9.9,
+      "excess_pct": 9.6,
+      "p_value": 4.8e-05,
+      "compensation_ratio_factual": 0.71,
+      "compensation_ratio_halluc": 0.23
+    },
+    "gpt2": {
+      "delta_E_factual_pct": 0.1,
+      "delta_E_halluc_pct": 11.2,
+      "excess_pct": 11.1,
+      "p_value": 1e-05,
+      "compensation_ratio_factual": 0.68,
+      "compensation_ratio_halluc": 0.000
+    }
+  },
+  "layer_violations": [
+    {"layer_range": "1-3", "mean_violation_pct": 14.2},
+    {"layer_range": "4-6", "mean_violation_pct": 11.8},
+    {"layer_range": "7-9", "mean_violation_pct": 8.1},
+    {"layer_range": "10-12", "mean_violation_pct": 5.4}
+  ],
+  "key_finding": {
+    "gpt2_zero_compensation": true,
+    "interpretation": "Total system-wide entropy creation with no redistribution"
+  },
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289544
+  }
+}

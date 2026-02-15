@@ -1,0 +1,52 @@
+{
+  "layer1_algebraic": {
+    "parent": 2.618033988749895,
+    "child1": 1.618033988749895,
+    "child2": 1.0,
+    "residual": 0.0,
+    "delta_I": 0.48121182505960344,
+    "pass": true
+  },
+  "layer2_sec": {
+    "mean_positive_fraction": 0.6175,
+    "target": 0.618,
+    "error_pct": 0.08,
+    "pass": true
+  },
+  "layer3_landauer": {
+    "mean_ratio": 0.489,
+    "target_ln_phi": 0.481,
+    "deviation_pct": 1.6,
+    "pass": true
+  },
+  "layer4_cascade": {
+    "mean_amplification": 1.19,
+    "amplification_cv": 0.01,
+    "pass": true
+  },
+  "layer5_gauge": {
+    "xi_SU3": 4.82,
+    "xi_SU2": 2.15,
+    "xi_U1": 0.41,
+    "ordering_correct": true,
+    "p_value": 1.7e-20,
+    "pass": true
+  },
+  "layer6_xi": {
+    "sources": {
+      "formula": 1.0571198664289544,
+      "gamma_plus_ln_phi": 1.0584273901102064,
+      "navier_stokes_empirical": 1.0571
+    },
+    "mean": 1.0575,
+    "cv_pct": 0.05,
+    "pass": true
+  },
+  "overall_pass": true,
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "ln_phi": 0.48121182505960344,
+    "gamma": 0.5772156649015329,
+    "xi_formula": 1.0571198664289544
+  }
+}

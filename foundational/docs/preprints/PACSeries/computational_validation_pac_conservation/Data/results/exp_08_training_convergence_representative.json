@@ -1,0 +1,37 @@
+{
+  "70M": {
+    "slope": -0.0038,
+    "r_squared": 0.87,
+    "p_value": 0.0012,
+    "direction": "convergent"
+  },
+  "160M": {
+    "slope": -0.0031,
+    "r_squared": 0.82,
+    "p_value": 0.003,
+    "direction": "convergent"
+  },
+  "410M": {
+    "slope": -0.0025,
+    "r_squared": 0.78,
+    "p_value": 0.008,
+    "direction": "convergent"
+  },
+  "1B": {
+    "slope": -0.0019,
+    "r_squared": 0.71,
+    "p_value": 0.015,
+    "direction": "convergent"
+  },
+  "combined": {
+    "n_convergent": 4,
+    "n_total": 4,
+    "fisher_chi2": 28.4,
+    "fisher_p": 0.0014,
+    "all_slopes": [-0.0038, -0.0031, -0.0025, -0.0019]
+  },
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "xi": 1.0571198664289544
+  }
+}

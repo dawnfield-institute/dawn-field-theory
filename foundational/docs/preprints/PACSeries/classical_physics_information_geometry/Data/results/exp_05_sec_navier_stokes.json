@@ -1,0 +1,30 @@
+{
+  "experiment": "exp_05_sec_navier_stokes",
+  "paper": "PACSeries Paper 5",
+  "section": "6",
+  "description": "SEC-Navier Stokes structural equivalence and MED regularity analysis",
+  "results": {
+    "term_mapping": {
+      "sec_lhs": "∂S/∂t",
+      "ns_lhs": "∂v/∂t",
+      "v_maps_to": "∇I (information gradient → velocity)",
+      "p_maps_to": "H (entropy → pressure)",
+      "nu_maps_to": "β (entropy diffusion → viscosity)"
+    },
+    "numerical_comparison_1d": {
+      "grid_points": 128,
+      "time_steps": 200,
+      "alpha": 1.0,
+      "beta_nu": 0.01,
+      "correlation_grad_I_v": 0.987,
+      "sec_enstrophy_bounded": true,
+      "ns_enstrophy_bounded": true
+    },
+    "med_regularity_analysis": {
+      "hypothesis": "MED depth <= 2 constrains SEC field complexity, structurally analogous to bounded enstrophy",
+      "1d_evidence": "Both SEC and NS enstrophy remain bounded in 1D simulation",
+      "caveat": "1D does not capture critical 3D NS dynamics. This is structural analogy, NOT a proof of NS regularity."
+    },
+    "conclusion": "SEC and NS share identical structural form under the identification v↔∇I, p↔H, ν↔β. MED bounds constrain SEC evolution in ways that parallel enstrophy bounds, but this observation falls short of a regularity proof."
+  }
+}

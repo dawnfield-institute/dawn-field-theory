@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_02_three_dimensions",
+  "paper": "PACSeries Paper 5",
+  "section": "3",
+  "description": "Five independent paths to D = 3 spatial dimensions",
+  "results": {
+    "paths": [
+      {
+        "name": "Stable orbits (Ehrenfest)",
+        "argument": "V(r) ~ r^{2-D}; inverse-square law requires D <= 3. Only D = 3 gives stable closed orbits.",
+        "source": "Ehrenfest 1917, Phys. Verh. 20:539"
+      },
+      {
+        "name": "Cross product existence",
+        "argument": "The cross product a x b as a vector exists only in D = 3 and D = 7. MED constraint (nodes <= 3) selects D = 3.",
+        "source": "Brown & Gray 1967"
+      },
+      {
+        "name": "SU(2) double cover",
+        "argument": "Spin-1/2 requires SU(2) which double-covers SO(3). This exists only in D = 3 spatial dimensions.",
+        "source": "Pauli 1927; standard representation theory"
+      },
+      {
+        "name": "MED branching",
+        "argument": "MED constraint depth <= 2, nodes <= 3 produces a ternary tree. The maximal branching of a depth-2 tree is 3, selecting D = 3 as the spatial dimensionality.",
+        "source": "PACSeries Paper 2 (MED), confirmed in exp_02"
+      },
+      {
+        "name": "Mersenne prime M_2",
+        "argument": "M_2 = 2^2 - 1 = 3 is the smallest non-trivial Mersenne prime. Casimir force structure selects Mersenne dimensions d = 1, 3, 7. Physical space picks the smallest non-trivial option.",
+        "source": "exp_06_casimir_mersenne in this paper"
+      }
+    ],
+    "all_paths_agree": true,
+    "selected_dimension": 3,
+    "fibonacci_connection": "F_4 = 3 is the first Fibonacci number > 2 that is also prime and a Mersenne prime",
+    "conclusion": "Five independent mathematical and physical arguments all select D = 3. The convergence from unrelated domains provides strong structural evidence."
+  }
+}
