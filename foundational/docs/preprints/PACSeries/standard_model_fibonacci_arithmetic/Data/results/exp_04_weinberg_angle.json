@@ -1,0 +1,16 @@
+{
+  "experiment": "exp_04_weinberg_angle",
+  "paper": "PACSeries Paper 4",
+  "section": "4.3",
+  "main_results": {
+    "sin2_theta_w": {
+      "pac_value": 0.230769,
+      "pac_fraction": "3/13 = F₄/F₇",
+      "pdg_2024": 0.23122,
+      "pdg_uncertainty": 0.00003,
+      "deviation_percent": 0.194,
+      "sigma_from_central": 15.0
+    },
+    "interpretation": "sin²θ_W = F₄/F₇ = (SU(2) generators)/(total gauge DOF)"
+  }
+}

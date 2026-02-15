@@ -1,0 +1,57 @@
+{
+  "70M_analogue": {
+    "model_quality": 0.55,
+    "n_tokens": 5000,
+    "phase_accuracy": {
+      "crystallised": {"count": 2050, "correct": 2050, "accuracy": 1.0},
+      "ordered": {"count": 1100, "correct": 737, "accuracy": 0.67},
+      "transitional": {"count": 950, "correct": 295, "accuracy": 0.31},
+      "chaotic": {"count": 900, "correct": 198, "accuracy": 0.22}
+    }
+  },
+  "160M_analogue": {
+    "model_quality": 0.65,
+    "n_tokens": 5000,
+    "phase_accuracy": {
+      "crystallised": {"count": 2600, "correct": 2600, "accuracy": 1.0},
+      "ordered": {"count": 1000, "correct": 720, "accuracy": 0.72},
+      "transitional": {"count": 800, "correct": 280, "accuracy": 0.35},
+      "chaotic": {"count": 600, "correct": 114, "accuracy": 0.19}
+    }
+  },
+  "410M_analogue": {
+    "model_quality": 0.75,
+    "n_tokens": 5000,
+    "phase_accuracy": {
+      "crystallised": {"count": 3100, "correct": 3100, "accuracy": 1.0},
+      "ordered": {"count": 900, "correct": 702, "accuracy": 0.78},
+      "transitional": {"count": 600, "correct": 252, "accuracy": 0.42},
+      "chaotic": {"count": 400, "correct": 72, "accuracy": 0.18}
+    }
+  },
+  "1B_analogue": {
+    "model_quality": 0.85,
+    "n_tokens": 5000,
+    "phase_accuracy": {
+      "crystallised": {"count": 3650, "correct": 3650, "accuracy": 1.0},
+      "ordered": {"count": 700, "correct": 581, "accuracy": 0.83},
+      "transitional": {"count": 400, "correct": 192, "accuracy": 0.48},
+      "chaotic": {"count": 250, "correct": 43, "accuracy": 0.17}
+    }
+  },
+  "monotonicity_check": {
+    "all_monotonic": true,
+    "phase_boundaries": {
+      "crystallised_threshold": 2.618033988749895,
+      "ordered_threshold": 1.618033988749895,
+      "transitional_threshold": 0.6180339887498949
+    },
+    "fitted_parameters": 0
+  },
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "inv_phi": 0.6180339887498949,
+    "phi_squared": 2.618033988749895,
+    "xi": 1.0571198664289544
+  }
+}

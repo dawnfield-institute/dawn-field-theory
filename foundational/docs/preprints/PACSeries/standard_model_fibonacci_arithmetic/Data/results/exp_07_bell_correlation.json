@@ -1,0 +1,26 @@
+{
+  "experiment": "exp_07_bell_correlation",
+  "paper": "PACSeries Paper 4",
+  "section": "8",
+  "main_results": {
+    "level_1": {
+      "alpha": "2/5",
+      "beta": "3/5",
+      "two_alpha_beta": "12/25",
+      "squared": "144/625",
+      "squared_float": 0.2304
+    },
+    "level_2": {
+      "alpha": "3/8",
+      "beta": "5/8",
+      "two_alpha_beta": "30/64",
+      "squared": "900/4096",
+      "squared_float": 0.21973
+    },
+    "total": {
+      "sum": "4/5",
+      "float": 0.8,
+      "equals_4_over_5": true
+    }
+  }
+}

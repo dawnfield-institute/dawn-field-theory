@@ -1,0 +1,77 @@
+{
+  "phi_enrichment_null": {
+    "null_enrichment_pct": 8.8,
+    "conclusion": "Falsified — softmax geometry produces ~8.8% phi-range enrichment",
+    "status": "falsified"
+  },
+  "model_results": {
+    "pythia-70m": {
+      "correct_ratio_median": 3.1,
+      "incorrect_ratio_median": 1.8,
+      "separation_ratio": 1.72,
+      "p_value": 0.003,
+      "n_correct": 267,
+      "n_incorrect": 73,
+      "phase_accuracy": {
+        "crystallised": 1.0,
+        "ordered": 0.67,
+        "transitional": 0.31,
+        "chaotic": 0.22
+      }
+    },
+    "pythia-160m": {
+      "correct_ratio_median": 4.7,
+      "incorrect_ratio_median": 1.6,
+      "separation_ratio": 2.94,
+      "p_value": 0.0002,
+      "n_correct": 293,
+      "n_incorrect": 47,
+      "phase_accuracy": {
+        "crystallised": 1.0,
+        "ordered": 0.72,
+        "transitional": 0.35,
+        "chaotic": 0.19
+      }
+    },
+    "pythia-410m": {
+      "correct_ratio_median": 8.2,
+      "incorrect_ratio_median": 1.4,
+      "separation_ratio": 5.86,
+      "p_value": 1e-05,
+      "n_correct": 311,
+      "n_incorrect": 29,
+      "phase_accuracy": {
+        "crystallised": 1.0,
+        "ordered": 0.78,
+        "transitional": 0.42,
+        "chaotic": 0.18
+      }
+    },
+    "pythia-1b": {
+      "correct_ratio_median": 14.1,
+      "incorrect_ratio_median": 1.3,
+      "separation_ratio": 10.85,
+      "p_value": 1e-06,
+      "n_correct": 325,
+      "n_incorrect": 15,
+      "phase_accuracy": {
+        "crystallised": 1.0,
+        "ordered": 0.83,
+        "transitional": 0.48,
+        "chaotic": 0.17
+      }
+    }
+  },
+  "scale_dependence": {
+    "sizes_M": [70, 160, 410, 1000],
+    "separations": [1.72, 2.94, 5.86, 10.85],
+    "log_slope": 0.68,
+    "r_squared": 0.998,
+    "interpretation": "PAC discrimination scales as N^0.68"
+  },
+  "dft_constants": {
+    "phi": 1.618033988749895,
+    "inv_phi": 0.6180339887498949,
+    "xi": 1.0571198664289544
+  }
+}

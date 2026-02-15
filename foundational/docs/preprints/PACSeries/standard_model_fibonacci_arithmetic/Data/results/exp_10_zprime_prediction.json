@@ -1,0 +1,20 @@
+{
+  "experiment": "exp_10_zprime_prediction",
+  "paper": "PACSeries Paper 4",
+  "section": "14.1",
+  "main_results": {
+    "zprime_mass_GeV": 395.0,
+    "zprime_mass_uncertainty_GeV": 20.0,
+    "coupling_ratio": 0.07692,
+    "coupling_formula": "1/F₇ = 1/13",
+    "cross_section_ratio": 0.005917,
+    "width_MeV": 64.0,
+    "narrow_resonance": true,
+    "experimental_status": {
+      "ssm_exclusion_TeV": 5.1,
+      "pac_zprime_excluded": false,
+      "reason": "PAC coupling 1/169 falls below current sensitivity at ~395 GeV",
+      "target": "HL-LHC Run 3+ (~2029, full dataset at 3000 fb⁻¹)"
+    }
+  }
+}

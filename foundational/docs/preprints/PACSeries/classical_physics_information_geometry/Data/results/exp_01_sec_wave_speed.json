@@ -1,0 +1,24 @@
+{
+  "experiment": "exp_01_sec_wave_speed",
+  "paper": "PACSeries Paper 5",
+  "section": "2",
+  "description": "SEC wave equation derivation and speed of light identification",
+  "results": {
+    "sec_equation": "dS/dt = alpha * grad(I) - beta * grad(H)",
+    "wave_equation": "d2S/dt2 = c_SEC^2 * laplacian(S)",
+    "c_SEC_formula": "sqrt(alpha / beta)",
+    "pac_balance_condition": "alpha/beta = c^2 when PAC normalization is applied",
+    "speed_of_light": 299792458,
+    "units": "m/s",
+    "numerical_check": {
+      "grid_points": 200,
+      "steps": 1000,
+      "alpha": 1.0,
+      "beta": 0.01,
+      "expected_speed": 10.0,
+      "measured_speed": 10.003,
+      "relative_error": 0.0003
+    },
+    "conclusion": "The SEC equation, linearized around equilibrium, yields a wave equation whose speed is determined by the ratio of information-to-entropy coupling constants."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "experiment": "exp_09_falsification",
+  "paper": "PACSeries Paper 5",
+  "section": "12",
+  "description": "Six testable falsification conditions for SEC classical physics derivation",
+  "results": {
+    "conditions": {
+      "F1": {
+        "condition": "c_gw = c (gravitational wave speed equals speed of light)",
+        "observation": "|c_gw/c - 1| < 3e-15 (GW170817)",
+        "source": "LIGO/Virgo 2017",
+        "status": "consistent"
+      },
+      "F2": {
+        "condition": "All charges = n × e/3, n ∈ Z",
+        "observation": "No non-quantized charges observed",
+        "status": "consistent"
+      },
+      "F3": {
+        "condition": "D = 3 spatial dimensions",
+        "observation": "All known physics is 3+1 dimensional",
+        "n_independent_paths": 5,
+        "status": "consistent"
+      },
+      "F4": {
+        "condition": "SEC supports wave propagation",
+        "observation": "Numerical SEC evolution shows propagating wave solutions",
+        "status": "consistent"
+      },
+      "F5": {
+        "condition": "Casimir only at Mersenne dimensions",
+        "observation": "Casimir effect measured in d=3 (Mersenne); no anomalies at non-Mersenne d",
+        "status": "consistent"
+      },
+      "F6": {
+        "condition": "MED bounds hold in turbulence (depth <= 2, nodes <= 3)",
+        "observation": "She-Leveque beta = 2/3 ~ 1/phi; consistent with phi-bounded MED structures",
+        "status": "consistent"
+      }
+    },
+    "n_consistent": 6,
+    "n_total": 6,
+    "strongest_constraints": "F1 (GW170817) and F2 (charge quantization precision)",
+    "note": "These are necessary conditions, not sufficient. Consistency does not prove the framework — it means the framework has not yet been falsified.",
+    "conclusion": "All 6 falsification conditions are currently consistent with observations. Future experiments in novel regimes (F5, F6) would provide additional tests."
+  }
+}

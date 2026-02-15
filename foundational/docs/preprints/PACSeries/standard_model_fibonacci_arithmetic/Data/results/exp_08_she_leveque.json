@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_08_she_leveque",
+  "paper": "PACSeries Paper 4",
+  "section": "9",
+  "main_results": {
+    "she_leveque": {
+      "beta": 0.6666666667,
+      "beta_fibonacci": "F₃/F₄ = 2/3",
+      "k": 9,
+      "k_formula": "d × F_{d+1} = 3 × 3",
+      "exponents": [
+        {"p": 1, "zeta_pac": 0.3693, "zeta_measured": 0.37},
+        {"p": 2, "zeta_pac": 0.6959, "zeta_measured": 0.70},
+        {"p": 3, "zeta_pac": 1.0, "zeta_measured": 1.00},
+        {"p": 4, "zeta_pac": 1.2805, "zeta_measured": 1.28},
+        {"p": 5, "zeta_pac": 1.5384, "zeta_measured": 1.54},
+        {"p": 6, "zeta_pac": 1.7749, "zeta_measured": 1.78},
+        {"p": 7, "zeta_pac": 1.9915, "zeta_measured": 2.00},
+        {"p": 8, "zeta_pac": 2.1898, "zeta_measured": 2.21},
+        {"p": 9, "zeta_pac": 2.3714, "zeta_measured": 2.40},
+        {"p": 10, "zeta_pac": 2.5376, "zeta_measured": 2.59}
+      ],
+      "mean_deviation_percent": 0.32
+    },
+    "kolmogorov": {
+      "exponent": -1.6666666667,
+      "fibonacci": "-F₅/F₄ = -5/3"
+    },
+    "dimensional_generalization": {
+      "d_2": {"k": 2, "formula": "2×F₃ = 2×1 = 2"},
+      "d_3": {"k": 9, "formula": "3×F₄ = 3×3 = 9"},
+      "d_4": {"k": 20, "formula": "4×F₅ = 4×5 = 20", "status": "prediction"}
+    },
+    "casimir": {
+      "value": 240,
+      "formula": "F₃·F₄·F₅·F₆ = 2×3×5×8 = 240"
+    }
+  }
+}
