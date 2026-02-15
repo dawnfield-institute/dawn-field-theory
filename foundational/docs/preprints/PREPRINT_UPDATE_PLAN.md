@@ -20,6 +20,23 @@ The PACSeries is the primary publication vehicle. The existing standalone prepri
 
 The current PACSeries (5 papers, October 2025) was written before most experimental results existed. Three of five papers draw from the same GAIA run interpreted differently. Since then, the Landauer decomposition, Feigenbaum closed forms, mass ratios, cascade dynamics, and the γ + ln(φ) derivation have closed the loop. The series needs to reflect what actually exists now.
 
+### Integration with original PACSeries
+
+The original 5 papers (October 2025) have traction and readership. Rather than letting the old and new series exist as two disconnected narratives, we integrate them into one coherent story:
+
+- **3 papers merge** into the new PACSeries (their content strengthens new papers that cover the same ground more rigorously)
+- **2 papers get status-update appendices** (pointing readers to the new derivations while preserving the originals as intellectual provenance)
+
+This reduces 11 papers (5 old + 6 new) to 8 papers (2 updated originals + 6 consolidated new papers). Readers of the originals get a clear path to the mature work; readers of the new papers get the fuller evidence base.
+
+| Original Paper | Action | Target |
+|----------------|--------|--------|
+| xi_bounded_invariant | Status update appendix | → New Paper 2 |
+| sec_med_framework | Status update appendix | → New Papers 1-6 |
+| gaia_computational | **Merge** | → New Paper 6 Part A |
+| relativistic_mas | **Merge** | → New Paper 6 (0.020 Hz validation) |
+| mobius_confluence | **Merge** | → New Paper 5 (temporal emergence) |
+
 ### Voice and tone
 
 The target is the voice of `landauer_erasure_structure/papers/journal.md`:
@@ -200,7 +217,8 @@ The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-
 ---
 
 ### Paper 5: Classical Physics from Information Geometry
-**Source**: `maxwell_from_pac_sec` + `milestone2` experiments
+**Source**: `maxwell_from_pac_sec` + `milestone2` experiments  
+**Merge source**: Original `mobius_confluence_operator_temporal_emergence` (confluence operator, time from topology)
 
 **Derives electromagnetism from PAC/SEC/MED.**
 
@@ -211,6 +229,12 @@ The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-
 - Curl structure emerges from depth-2 projection
 - α determined by Fibonacci gauge crystallization at F₇ = 13
 - Charge = winding number, magnetism = projection artifact of hidden dimension
+
+**Merged from mobius_confluence (original PACSeries #5):**
+- Confluence operator and temporal emergence
+- Five paths to D=3 derivation
+- Pre-field recursion and curl-from-depth-2
+- Time emerges from topological recursion (supporting MED → D=3 argument)
 
 **Connections:**
 - She-Leveque k = d × F_{d+1} in turbulence
@@ -223,19 +247,27 @@ The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-
 ---
 
 ### Paper 6: Computational Validation
-**Source**: Rewrite of GAIA validation + SEC-MED framework papers + `token_pac_tree` (12 experiments) + `TinyCIMM-Boltzmann` (1 experiment)
+**Source**: Rewrite of GAIA validation + SEC-MED framework papers + `token_pac_tree` (12 experiments) + `TinyCIMM-Boltzmann` (1 experiment)  
+**Merge sources**: Original `gaia_computational_validation_dawn_field_theory` (GAIA engine depth) + Original `relativistic_mas_universal_frequency` (0.020 Hz full-stack validation, Landauer bridge)
 
 **Demonstrates PAC/SEC/MED in working computational systems — from custom architectures to production LLMs.** Three-part structure: observe it in custom systems, observe it in real systems, engineer with it.
 
 #### Part A: GAIA (Custom PAC-Native System)
-Consolidates current papers #2, #3, #4 into one focused section.
+Consolidates current papers #2, #3, #4 into one focused section.  
+**Strengthened by merge** with original gaia_computational — adds GAIA engine architecture detail, resonance locking derivation, and emergent capability documentation that the current §8.3 lacks.
 
 - PAC conservation residual < 7×10⁻¹¹ across 500-iteration evolutions
 - Cosmological parallel: r = -0.999632 (entropy ↓89%, structure ↑92%)
-- GAIA WikiText-2 perplexity 5.91 vs GPT-2 baseline 29.41
+- ~~GAIA WikiText-2 perplexity 5.91 vs GPT-2 baseline 29.41~~ **CORRECTED: 5.91 is a cosine similarity metric, not true LM perplexity. Actual top-1 accuracy = 0.16%. Not comparable to GPT-2's 29.41. See Paper 6 §8.3.**
 - 100% memory retrieval at depth 1000
 - Resonance locking at 0.020 Hz (= 2/3 × 0.030 Hz continuous field limit)
 - Emergent capabilities not explicitly programmed
+
+**Merged from relativistic_mas (original PACSeries #4):**
+- 0.020 Hz emergence across cosmic scales (QBE validation, Dec 2025)
+- Landauer bridge: connects thermodynamic erasure (Paper 1) to computational frequency
+- Token PAC Tree phase transitions at 0.020 Hz boundary
+- Full-stack validation chain: exp_29 → exp_30 → exp_31 → exp_32
 
 #### Part B: Token PAC Tree (Real LLMs — Observation)
 PAC/SEC operates in standard transformer architectures without any modification.
@@ -260,7 +292,7 @@ First architecture that enforces PAC conservation as a hard constraint, not just
 
 - BoltzmannHead: softmax replacement with explicit entropy budget
 - ConservationProjector: enforces f(Parent) = Σf(Children) at each layer
-- Conservation reduces noise violation 3.8× (p = 0.008)
+- Conservation reduces noise violation 1.83× (p = 0.008) — **corrected from 3.8× per actual experiment data**
 - Conservation reduces transition shock 16× (p = 0.008)
 - Conservation does NOT hurt factual learning (p = 0.42, n.s.)
 - Hallucination reframed as conservation violation — engineer it away, don't detect it post-hoc
@@ -306,6 +338,54 @@ These stay as separate publications. Each gets a short update referencing the PA
 
 ---
 
+## Original PACSeries Integration (October 2025 → February 2026)
+
+The original 5 PACSeries papers (October 2025) established the intellectual provenance and have active readership. They are updated — not replaced — to tell one connected story with the new PACSeries.
+
+### Merges (content absorbed into new papers)
+
+These originals covered ground that the new papers now address more rigorously. Their unique content is merged in; the originals get a header notice pointing to the consolidated version.
+
+#### gaia_computational_validation_dawn_field_theory → New Paper 6 Part A
+- **What moves**: GAIA engine architecture detail, 500-iteration conservation proof, resonance locking derivation, WikiText-2 perplexity comparison, emergent capability catalog
+- **Why**: Current Paper 6 §8.3 is only 8 lines for what should be the centerpiece Part A section. The original has 2,546 lines of depth.
+- **Original gets**: Header notice: *"This paper's findings have been consolidated into PACSeries Paper 6: Computational Validation of PAC Conservation (February 2026), which extends the analysis with Token PAC Tree and TinyCIMM-Boltzmann validation."*
+
+#### relativistic_mas_universal_frequency → New Paper 6
+- **What moves**: 0.020 Hz emergence across cosmic scales, QBE validation (Dec 2025 update), mass-frequency unification framework
+- **What was missing**: Landauer bridge (connecting thermodynamic erasure to computational frequency), Token PAC Tree phase transitions at 0.020 Hz boundary, full-stack validation chain (exp_29–32)
+- **Why**: The 0.020 Hz result needs its computational validation home. Paper 6 provides the three-system evidence base.
+- **Original gets**: Header notice: *"This paper's 0.020 Hz findings have been validated computationally in PACSeries Paper 6: Computational Validation of PAC Conservation (February 2026), including Landauer bridge derivation and Token PAC Tree phase transition evidence."*
+
+#### mobius_confluence_operator_temporal_emergence → New Paper 5
+- **What moves**: Confluence operator formalism, time-from-topology derivation, Möbius phase structure
+- **What was missing**: Five paths to D=3, pre-field recursion, curl-from-depth-2 derivation
+- **Why**: The temporal emergence argument is central to Paper 5's MED → D=3 story. Together they make a stronger case than either alone.
+- **Original gets**: Header notice: *"This paper's confluence operator and temporal emergence results have been integrated into PACSeries Paper 5: Classical Physics from Information Geometry (February 2026), which extends them with the MED → D=3 derivation."*
+
+### Status Update Appendices (originals preserved with forward pointers)
+
+These originals cover broad enough ground that merging would lose their distinct narrative. They get a "February 2026 Update" appendix instead.
+
+#### xi_bounded_invariant_universal_balance_operator → points to New Paper 2
+- **Appendix adds**: γ + ln(φ) decomposition (the analytic origin the original lacked), four-domain convergence table, conditional attractor hypothesis, base-agnostic proof
+- **Appendix notes**: Drop "reality tax" and 0.03 Hz spectral ratio framing in favor of Paper 2's cleaner γ + ln(φ) story
+- **Cross-references**: Paper 1 (ln φ from Landauer), Paper 2 (full derivation), Paper 3 (same F₁₀ = 55)
+
+#### sec_med_framework_information_amplification → points to New Papers 1-6
+- **Appendix adds**: Summary table of how each of the 6 new papers extends the SEC/MED/PAC framework this paper introduced
+- **Appendix notes**: The original's 0.020 Hz discovery is now validated computationally (Paper 6); the She-Lévêque connection is derived (Paper 4/5); the cosmological validation has quantitative error bounds
+- **Cross-references**: All 6 new papers, with specific section pointers
+
+### Integration Principles
+
+1. **No content is deleted** from originals — only notices added at top + appendix at bottom
+2. **Original DOIs remain valid** — these are version updates, not replacements
+3. **Provenance is preserved** — originals show the intellectual history; new papers show the mature work
+4. **Readers follow one path** — original → appendix → new paper (no dead ends)
+
+---
+
 ## Quantitative Evidence Summary
 
 All results that the PACSeries must present with full error bounds:
@@ -346,7 +426,7 @@ All results that the PACSeries must present with full error bounds:
 | PAC violation (hallucination) | +9.6% uncompensated | compensation ≈ 0 | 6B |
 | Xi in trained weights (SVD) | 2.36× enrichment | χ²=5511, p ≈ 0 | 6B |
 | Cross-arch delayed transition | 1.43× | Fisher p = 0.0 | 6B |
-| TinyCIMM violation reduction | 3.8× | p = 0.008 | 6C |
+| TinyCIMM violation reduction | 1.83× | p = 0.008 | 6C |
 | TinyCIMM transition shock | 16× reduction | p = 0.008 | 6C |
 | TinyCIMM factual preservation | no degradation | p = 0.42 (n.s.) | 6C |
 
@@ -403,7 +483,8 @@ Speculative extensions that emerged from the derivation chain but don't yet meet
 - **Week 3**: Write Paper 3 (Feigenbaum, clean math paper)
 - **Week 4**: Write Paper 4 (Standard Model compilation) + Paper 5 (Maxwell/physics)
 - **Week 5**: Write Paper 6 (GAIA + Token PAC Tree + TinyCIMM-Boltzmann — three-part computational validation)
-- **Week 6**: Update standalone preprints (Tier 1-3), cross-reference, prepare Zenodo packages
+- **Week 6**: Original PACSeries integration (3 merges + 2 status update appendices)
+- **Week 7**: Update standalone preprints (Tier 1-3), cross-reference, prepare Zenodo packages
 
 ---
 
@@ -464,44 +545,76 @@ After the rewrite, each PACSeries paper should:
 - [ ] Final edit pass
 
 ### Paper 4: Standard Model Parameters from Fibonacci Arithmetic
-- [ ] Locate milestone1/milestone2 experiment data and scripts
-- [ ] Locate pac_confluence_xi experiment data
-- [ ] Compile all gauge coupling formulas with full error bounds
-- [ ] Compile all mass ratio formulas with full error bounds
-- [ ] Write paper in journal.md voice (start from established SM parameters)
-- [ ] Include Casimir 240 = F₃×F₄×F₅×F₆ result
-- [ ] Include k = d × F_{d+1} She-Leveque connection
-- [ ] Include Bell inequality (2αβ)² = 4/5 algebraic proof
-- [ ] Address numerology objection: joint constraints vs individual matches
-- [ ] State falsification conditions (what would break the Fibonacci pattern)
-- [ ] Cross-reference Paper 1 (Landauer interpretation of α)
-- [ ] Cross-reference Paper 3 (same F₁₀ = 55 appearing)
+- [x] Locate milestone1/milestone2 experiment data and scripts
+- [x] Locate pac_confluence_xi experiment data
+- [x] Compile all gauge coupling formulas with full error bounds
+- [x] Compile all mass ratio formulas with full error bounds
+- [x] Write paper in journal.md voice (start from established SM parameters)
+- [x] Include Casimir 240 = F₃×F₄×F₅×F₆ result
+- [x] Include k = d × F_{d+1} She-Leveque connection
+- [x] Include Bell inequality (2αβ)² = 4/5 algebraic proof
+- [x] Address numerology objection: joint constraints vs individual matches
+- [x] State falsification conditions (what would break the Fibonacci pattern)
+- [x] Cross-reference Paper 1 (Landauer interpretation of α)
+- [x] Cross-reference Paper 3 (same F₁₀ = 55 appearing)
+- [x] Complete publication package (Code/Data/Figures)
+- [x] 10 experiment scripts, 8 data files, 6 figures generated
+- [x] 2 review rounds completed
+- [ ] Final edit pass for voice consistency
 
 ### Paper 5: Classical Physics from Information Geometry
-- [ ] Locate maxwell_from_pac_sec experiment data
-- [ ] Write Maxwell = depth-2 PAC recursion derivation
-- [ ] Write SEC wave equation → speed of light
-- [ ] Write MED bounds → D = 3 derivation
-- [ ] Include She-Leveque k = d × F_{d+1} (shared with Paper 4)
-- [ ] Include Mersenne dimension result
-- [ ] Label gravity speculation clearly
-- [ ] State falsification conditions (k=20 in 4D prediction)
+- [x] Locate maxwell_from_pac_sec experiment data
+- [x] Write Maxwell = depth-2 PAC recursion derivation
+- [x] Write SEC wave equation → speed of light
+- [x] Write MED bounds → D = 3 derivation
+- [x] Include She-Leveque k = d × F_{d+1} (shared with Paper 4)
+- [x] Include Mersenne dimension result
+- [x] Label gravity speculation clearly
+- [x] State falsification conditions (k=20 in 4D prediction)
+- [x] Complete publication package (Code/Data/Figures)
+- [x] 9 experiment scripts, 7 data files, 6 figures generated
+- [x] 1 review round completed (6 issues fixed)
+- [x] §7.3 ζ(−15) honest falsification recorded (factor 17 non-Fibonacci)
+- [x] §5.4 charge decomposition rewritten with explicit sub-node mechanism
+- [ ] Final edit pass for voice consistency
 
 ### Paper 6: Computational Validation
-- [ ] Part A: Consolidate 3 existing GAIA papers into one section
-- [ ] Part A: Trim to essential results (conservation residual, perplexity, memory, resonance)
-- [ ] Part B: Write token_pac_tree section from 12 experiments
-- [ ] Part B: Include honest falsifications (φ enrichment, single-token detection)
-- [ ] Part B: SEC phase → accuracy table (all 4 Pythia models)
-- [ ] Part B: Attention PAC mechanism (confident_head_ratio, p = 0.00006)
-- [ ] Part B: Cross-architecture universality (Fisher p = 0.0)
-- [ ] Part B: PAC violation = hallucination (+9.6% uncompensated)
-- [ ] Part C: Write TinyCIMM-Boltzmann section
-- [ ] Part C: Conservation reduces violation 3.8× (p = 0.008)
-- [ ] Part C: Conservation reduces transition shock 16× (p = 0.008)
-- [ ] Part C: No factual harm (p = 0.42 n.s.)
-- [ ] Write the narrative arc: built it → found it in the wild → engineered with it
-- [ ] State falsification conditions (scaling, non-autoregressive, conservation at scale)
+- [x] Part B: Write token_pac_tree section from 12 experiments
+- [x] Part B: Include honest falsifications (φ enrichment, single-token detection)
+- [x] Part B: SEC phase → accuracy table (all 4 Pythia models)
+- [x] Part B: Attention PAC mechanism (confident_head_ratio, p = 0.00006)
+- [x] Part B: Cross-architecture universality (Fisher p = 0.0)
+- [x] Part B: PAC violation = hallucination (+9.6% uncompensated)
+- [x] Part C: Write TinyCIMM-Boltzmann section
+- [x] Part C: Conservation reduces noise violation 1.83× (p = 0.008) — **corrected from 3.8× (see note below)**
+- [x] Part C: Conservation reduces transition shock 16× (p = 0.008)
+- [x] Part C: No factual harm (p = 0.42 n.s.)
+- [x] State falsification conditions (scaling, non-autoregressive, conservation at scale)
+- [x] Complete publication package (Code/Data/Figures)
+- [x] 8 experiment scripts, 8 data files, 6 figures generated
+- [x] 1 review round completed (5 issues fixed)
+- [x] §8.3 GAIA expanded with full architecture + honest 5.91 perplexity correction (similarity metric, not true LM perplexity)
+- [x] Uncited She-Lévêque [10] removed; refs renumbered Paper N = [N]
+- [ ] Part A: Consolidate 3 existing GAIA papers into one section — **NOTE: Paper 6 does NOT use Part A/B/C structure; GAIA is §8.3. Plan structure differs from implementation.**
+- [ ] Final edit pass for voice consistency
+
+**3.8× correction note**: The plan states "Conservation reduces noise violation 3.8×" but the actual experiment data (exp_06_tinycimm_conservation) shows noise+free=0.342, noise+conservation=0.187, which is 1.83× reduction ("nearly in half"). The paper correctly reports the data. The 3.8× figure in this plan document was incorrect — it may have been noise_free/factual_free (0.342/0.089), a different comparison.
+
+### Original PACSeries Integration
+- [x] gaia_computational → Paper 6: Extract GAIA architecture detail, conservation proof, resonance derivation
+- [x] gaia_computational → Paper 6: Expand §8.3 from 8 lines to full architecture section (grafted embeddings, PAC tree, transition matrix, concentration monitor, honest perplexity correction)
+- [ ] gaia_computational: Add header notice pointing to Paper 6
+- [ ] relativistic_mas → Paper 6: Merge 0.020 Hz validation, QBE results
+- [ ] relativistic_mas → Paper 6: Add Landauer bridge + Token PAC Tree phase transitions
+- [ ] relativistic_mas: Add header notice pointing to Paper 6
+- [ ] mobius_confluence → Paper 5: Merge confluence operator, time-from-topology
+- [ ] mobius_confluence → Paper 5: Integrate with MED → D=3 derivation
+- [ ] mobius_confluence: Add header notice pointing to Paper 5
+- [ ] xi_bounded_invariant: Write "February 2026 Update" appendix → Paper 2
+- [ ] xi_bounded_invariant: Add γ + ln(φ) decomposition, four-domain table, conditional attractor
+- [ ] sec_med_framework: Write "February 2026 Update" appendix → Papers 1-6
+- [ ] sec_med_framework: Add summary table of how each new paper extends this one
+- [ ] Update Zenodo records for all 5 originals (new versions with notices/appendices)
 
 ### Standalone Preprint Updates
 - [ ] Tier 1: golden_ratio_prime_distribution — add "Why φ" section → Paper 1
