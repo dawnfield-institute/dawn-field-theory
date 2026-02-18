@@ -1,0 +1,45 @@
+{
+  "experiment": "exp_08_weinberg_running",
+  "description": "sin\u00b2\u03b8_W = 3/13 running coupling \u2014 find the matching energy scale",
+  "paper": "Paper 4",
+  "section": "\u00a74 (Weinberg angle)",
+  "timestamp": "2026-02-17T13:00:49.488422+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "running_curve": {
+      "n_points": 200,
+      "sin2_at_mz": 0.23122,
+      "pdg_value": 0.23122,
+      "pac_target": 0.23076923076923078
+    },
+    "matching_scale": {
+      "Q_match_GeV": 82.78097826220859,
+      "Q_match_log10": 1.9179305543596032,
+      "sin2_at_match": 0.23076923076933498,
+      "closest_physical_scale": "M_W",
+      "closest_physical_Q_GeV": 80.4,
+      "ratio_to_closest": 1.0296141574901565
+    },
+    "sensitivity": {
+      "delta=-0.0001": 82.78097826220859,
+      "delta=-5e-05": 82.78097826220859,
+      "delta=0": 82.78097826220859,
+      "delta=5e-05": 82.78097826220859,
+      "delta=0.0001": 82.78097826220859
+    },
+    "two_loop_estimate": {
+      "one_loop_shift": -0.0004507692306650324,
+      "estimated_two_loop_correction": -6.761538459975486e-06,
+      "note": "Two-loop correction typically 1-2% of one-loop shift"
+    }
+  },
+  "falsification": {
+    "test_id": "F7",
+    "hypothesis": "sin\u00b2\u03b8_W = 3/13 is exact at some physical RG scale",
+    "scale_found": true,
+    "scale_GeV": 82.78097826220859,
+    "pdg_deviation_sigma": 15.025641025640894,
+    "falsified": false,
+    "assessment": "Scale found at Q = 82.8 GeV. PDG deviation: 15.0\u03c3. If the scale is not near a known physical threshold, the match may be accidental."
+  }
+}

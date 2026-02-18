@@ -1,0 +1,151 @@
+{
+  "experiment": "exp_10_independence_audit",
+  "description": "Cross-domain independence audit for joint p-value calculations",
+  "paper": "All Papers",
+  "section": "Cross-cutting methodology",
+  "timestamp": "2026-02-17T20:40:19.774428+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "catalog": {
+      "total_claims": 14,
+      "claims_with_p": 9,
+      "domains": [
+        "number_theory",
+        "fluid_dynamics",
+        "dynamical_systems",
+        "quantum",
+        "cellular_automata",
+        "machine_learning",
+        "particle_physics"
+      ]
+    },
+    "fibonacci_overlap": {
+      "n_pairs_sharing_indices": 10,
+      "total_pairs": 91,
+      "overlap_fraction": 0.10989010989010989,
+      "most_shared_indices": {
+        "3": 3,
+        "4": 4,
+        "5": 2,
+        "6": 1,
+        "7": 2,
+        "10": 3
+      }
+    },
+    "domain_groups": {
+      "particle_physics": {
+        "n_claims": 4,
+        "n_with_p": 1,
+        "claims": [
+          "alpha",
+          "koide_Q",
+          "sin2_theta_w",
+          "casimir_240"
+        ]
+      },
+      "dynamical_systems": {
+        "n_claims": 2,
+        "n_with_p": 2,
+        "claims": [
+          "feigenbaum_delta",
+          "feigenbaum_alpha"
+        ]
+      },
+      "number_theory": {
+        "n_claims": 2,
+        "n_with_p": 2,
+        "claims": [
+          "sieve_pac",
+          "mertens_product"
+        ]
+      },
+      "fluid_dynamics": {
+        "n_claims": 1,
+        "n_with_p": 0,
+        "claims": [
+          "xi_navier_stokes"
+        ]
+      },
+      "cellular_automata": {
+        "n_claims": 1,
+        "n_with_p": 1,
+        "claims": [
+          "rule_110_phi"
+        ]
+      },
+      "quantum": {
+        "n_claims": 1,
+        "n_with_p": 0,
+        "claims": [
+          "born_rule"
+        ]
+      },
+      "machine_learning": {
+        "n_claims": 3,
+        "n_with_p": 3,
+        "claims": [
+          "ml_phi_crossing",
+          "pac_tree_accuracy",
+          "fisher_universality"
+        ]
+      }
+    },
+    "effective_tests": {
+      "n_total": 14,
+      "n_effective": 11.622129298835276,
+      "independence_ratio": 0.8301520927739483,
+      "top_eigenvalues": [
+        2.868546114644128,
+        1.5093245865205958,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "joint_p_values": {
+      "naive_log10_p": -112.96311571240355,
+      "naive_p_description": "10^-113",
+      "n_individual": 9,
+      "inter_domain_log10_p": -90.44369749923271,
+      "inter_domain_p_description": "10^-90",
+      "n_domains_with_p": 5,
+      "domain_best_p": {
+        "particle_physics": 1e-06,
+        "dynamical_systems": 3.6e-12,
+        "number_theory": 1e-50,
+        "cellular_automata": 0.001,
+        "machine_learning": 1e-20
+      },
+      "correction_factor_log10": -22.519418213170837
+    },
+    "conservative": {
+      "fully_independent_domains": [
+        "number_theory",
+        "dynamical_systems",
+        "particle_physics"
+      ],
+      "potentially_dependent": [
+        [
+          "particle_physics",
+          "fluid_dynamics",
+          "share Fibonacci structure"
+        ],
+        [
+          "cellular_automata",
+          "machine_learning",
+          "both computational"
+        ]
+      ],
+      "recommendation": "Use inter-domain joint p-values (one best p per domain) as the primary claim. Report naive joint only as \"assuming independence.\" The strongest independent combination is: Feigenbaum (pure math) \u00d7 Sieve (pure math) \u00d7 \u03b1 (physics), which shares no structural assumptions."
+    }
+  },
+  "falsification": {
+    "test_id": "F9",
+    "hypothesis": "Cross-domain p-values are multiplicable (independent)",
+    "independence_ratio": 0.8301520927739483,
+    "fibonacci_overlap_fraction": 0.10989010989010989,
+    "correction_orders": 22.519418213170837,
+    "falsified": false,
+    "assessment": "Independence ratio: 0.83. Fibonacci overlap: 10/91 pairs share indices. Joint p-value correction: 23 orders of magnitude. RECOMMENDATION: Report inter-domain joint p-values as primary claim. Naive multiplication overstates significance by ~23 orders."
+  }
+}

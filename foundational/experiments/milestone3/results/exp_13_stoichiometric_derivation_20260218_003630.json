@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "experiment": "exp_13_stoichiometric_derivation",
+    "description": "Stoichiometric derivation of Fibonacci index selection",
+    "paper": "Paper 4",
+    "section": "\u00a7methodology",
+    "timestamp": "2026-02-18T00:36:29.810821+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_gauge_yield": {
+      "yield_ratio": 0.23076923076923078,
+      "error_pct": 0.19495252606574986,
+      "fibonacci_balance": true,
+      "unique_closest": true,
+      "n_candidates": 8,
+      "passed": true
+    },
+    "test_2_null_space": {
+      "rank": 5,
+      "null_dim": 6,
+      "singular_values": [
+        184.42850738008917,
+        14.108340194820626,
+        2.9241452879727152,
+        1.782681526117477,
+        1.5335655873938179
+      ],
+      "formula_projections": {
+        "sin2_theta_W": {
+          "null_fraction": 0.730208721902692,
+          "violation_norm": 19.570385790780925,
+          "fib_indices": [
+            4,
+            7
+          ]
+        },
+        "alpha_em": {
+          "null_fraction": 0.6988790703295377,
+          "violation_norm": 76.93503753167343,
+          "fib_indices": [
+            3,
+            4,
+            7,
+            10
+          ]
+        },
+        "koide": {
+          "null_fraction": 0.9092595219499192,
+          "violation_norm": 6.244997998398398,
+          "fib_indices": [
+            2,
+            3
+          ]
+        },
+        "mu_e": {
+          "null_fraction": 0.7545899155294705,
+          "violation_norm": 29.49576240750525,
+          "fib_indices": [
+            4,
+            6,
+            7
+          ]
+        },
+        "tau_e": {
+          "null_fraction": 0.6169098978883293,
+          "violation_norm": 113.46365056704283,
+          "fib_indices": [
+            4,
+            5,
+            7,
+            11
+          ]
+        },
+        "p_e": {
+          "null_fraction": 0.6075121523324297,
+          "violation_norm": 191.53328692423153,
+          "fib_indices": [
+            4,
+            6,
+            9,
+            12
+          ]
+        },
+        "wilson_fisher_nu": {
+          "null_fraction": 0.9307875198031357,
+          "violation_norm": 5.0990195135927845,
+          "fib_indices": [
+            4
+          ]
+        },
+        "cabibbo_angle": {
+          "null_fraction": 0.730208721902692,
+          "violation_norm": 19.570385790780925,
+          "fib_indices": [
+            4,
+            7
+          ]
+        },
+        "she_leveque_beta": {
+          "null_fraction": 0.9275657222124577,
+          "violation_norm": 8.717797887081348,
+          "fib_indices": [
+            3,
+            4
+          ]
+        },
+        "alpha_s": {
+          "null_fraction": 0.7300923457266476,
+          "violation_norm": 14.933184523068078,
+          "fib_indices": [
+            4,
+            6
+          ]
+        }
+      },
+      "passed": "True"
+    },
+    "test_3_generation": {
+      "f4_in_all_mass": true,
+      "uniquely_best": true,
+      "separation_factor": 6111.198601870283,
+      "substitutions": {
+        "F_2": {
+          "value": 1,
+          "mu_e_error": 66.66651387578776,
+          "tau_e_error": 66.58499833212556,
+          "p_e_error": 66.6694382849569,
+          "geom_mean_error": 66.640305337044
+        },
+        "F_3": {
+          "value": 2,
+          "mu_e_error": 33.33302775157549,
+          "tau_e_error": 33.31377894337278,
+          "p_e_error": 33.33887656991379,
+          "geom_mean_error": 33.32855936347571
+        },
+        "F_4": {
+          "value": 3,
+          "mu_e_error": 0.00045837263676309816,
+          "tau_e_error": 0.042559554620012714,
+          "p_e_error": 0.008314854870692768,
+          "geom_mean_error": 0.00545368618085424
+        },
+        "F_5": {
+          "value": 5,
+          "mu_e_error": 66.66743062106126,
+          "tau_e_error": 66.49987922288554,
+          "p_e_error": 66.65280857521552,
+          "geom_mean_error": 66.60666301623867
+        },
+        "F_6": {
+          "value": 8,
+          "mu_e_error": 166.66788899369803,
+          "tau_e_error": 166.31353738914387,
+          "p_e_error": 166.64449372034483,
+          "geom_mean_error": 166.54189472527796
+        }
+      },
+      "passed": true
+    },
+    "test_4_eis_decomp": {
+      "nu_error_pct": 0.016774950871827704,
+      "n_good_decompositions": 4,
+      "decompositions": {
+        "sin\u00b2\u03b8_W": {
+          "fib_ratio": "F_3/F_5 = 2/5",
+          "balance_fn": "\u03b3",
+          "value": 0.23088626596061315,
+          "error_pct": 0.1443361471269168,
+          "a": 3,
+          "b": 5
+        },
+        "\u03b1_em": {
+          "fib_ratio": "F_2/F_12 = 1/144",
+          "balance_fn": "\u039e",
+          "value": 0.007350190902507891,
+          "error_pct": 0.724075378106049,
+          "a": 2,
+          "b": 12
+        },
+        "\u03b1_s": {
+          "fib_ratio": "F_2/F_6 = 1/8",
+          "balance_fn": "1/\u039e",
+          "value": 0.11809972925456592,
+          "error_pct": 0.08451631742875478,
+          "a": 2,
+          "b": 6
+        },
+        "She-Leveque \u03b2": {
+          "fib_ratio": "F_3/F_4 = 2/3",
+          "balance_fn": "1",
+          "value": 0.6666666666666666,
+          "error_pct": 0.0,
+          "a": 3,
+          "b": 4
+        }
+      },
+      "passed": true
+    },
+    "test_5_uniqueness": {
+      "ratio_sin\u00b2\u03b8_W_n_1pct": 1,
+      "ratio_sin\u00b2\u03b8_W_n_01pct": 0,
+      "ratio_Koide_n_1pct": 1,
+      "ratio_Koide_n_01pct": 1,
+      "ratio_She-Lev \u03b2_n_1pct": 1,
+      "ratio_She-Lev \u03b2_n_01pct": 1,
+      "mu_e_n_matches_1pct": 2,
+      "mu_e_known_is_best": true,
+      "mu_e_total_searched": 512,
+      "wf_n_matches_1pct": 1,
+      "wf_known_is_best": true,
+      "avg_matches": 1.25,
+      "passed": true
+    },
+    "test_6_null_test": {
+      "n_trials": 5000,
+      "random_successes": 871,
+      "random_success_rate": 0.1742,
+      "our_best_error": 0.19495252606574986,
+      "random_median_error": 13.502292189256984,
+      "percentile": 17.419999999999998,
+      "passed": false
+    }
+  },
+  "summary": {
+    "total_tests": 6,
+    "passed": 5,
+    "score": "5/6"
+  }
+}

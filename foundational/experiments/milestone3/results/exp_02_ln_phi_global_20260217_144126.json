@@ -1,0 +1,237 @@
+{
+  "experiment": "exp_02_ln_phi_global_invariance",
+  "description": "A/(A+\u03be) \u2248 ln(\u03c6) PAC-global invariance test",
+  "paper": "Paper 1",
+  "section": "\u00a76 (Landauer partition ratio)",
+  "timestamp": "2026-02-17T14:41:21.360455+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "ensemble_convergence": {
+      "n_seeds": 200,
+      "n_samples": 50000,
+      "T": 1.0,
+      "n_modes": 8,
+      "mean": 0.9995914101195449,
+      "std": 9.708480696811282e-05,
+      "se": 6.864932535733956e-06,
+      "ci_95_low": 0.9995779548517748,
+      "ci_95_high": 0.999604865387315,
+      "ln_phi": 0.48121182505960347,
+      "ln_phi_in_ci": "False",
+      "deviation_pct": 107.72378359483045,
+      "status": "FAIL"
+    },
+    "running_convergence": {
+      "running_mean_at_10": 0.9996020154669644,
+      "running_mean_at_50": 0.999597770182186,
+      "running_mean_at_100": 0.9996023507547046,
+      "running_mean_at_200": 0.9995914101195456,
+      "first_stable_n": null,
+      "converges_within_2pct": false
+    },
+    "parameter_grid": {
+      "n_modes_values": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "coupling_decays": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "seeds_per_cell": 50,
+      "total_cells": 12,
+      "ci_contains_count": 0,
+      "ci_containment_fraction": 0.0,
+      "grand_mean": 0.9986906576645732,
+      "inter_config_cv": 0.0010289437731289255,
+      "grid_results": [
+        {
+          "n_modes": 4,
+          "coupling_decay": 0.3,
+          "mean": 0.999841397724345,
+          "std": 8.19286171497301e-05,
+          "se": 1.1586456151962125e-05,
+          "ci_95": [
+            0.9998186882702872,
+            0.9998641071784028
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.7757
+        },
+        {
+          "n_modes": 4,
+          "coupling_decay": 0.5,
+          "mean": 0.9998511184744986,
+          "std": 8.841811786583196e-05,
+          "se": 1.250421014453624e-05,
+          "ci_95": [
+            0.9998266102226153,
+            0.9998756267263819
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.7778
+        },
+        {
+          "n_modes": 4,
+          "coupling_decay": 0.7,
+          "mean": 0.9998603447447983,
+          "std": 6.811079279568027e-05,
+          "se": 9.632320691563472e-06,
+          "ci_95": [
+            0.9998414653962429,
+            0.9998792240933538
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.7797
+        },
+        {
+          "n_modes": 8,
+          "coupling_decay": 0.3,
+          "mean": 0.9993333636203812,
+          "std": 0.00015942451258422525,
+          "se": 2.254603078713315e-05,
+          "ci_95": [
+            0.9992891734000384,
+            0.9993775538407239
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.6702
+        },
+        {
+          "n_modes": 8,
+          "coupling_decay": 0.5,
+          "mean": 0.9993719105611758,
+          "std": 0.00017402879986405168,
+          "se": 2.461138890112549e-05,
+          "ci_95": [
+            0.9993236722389296,
+            0.999420148883422
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.6782
+        },
+        {
+          "n_modes": 8,
+          "coupling_decay": 0.7,
+          "mean": 0.9993069743280742,
+          "std": 0.00018723389693797108,
+          "se": 2.64788716385645e-05,
+          "ci_95": [
+            0.9992550757396627,
+            0.9993588729164858
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.6647
+        },
+        {
+          "n_modes": 12,
+          "coupling_decay": 0.3,
+          "mean": 0.9984679345555091,
+          "std": 0.00023426457688866754,
+          "se": 3.3130014181954835e-05,
+          "ci_95": [
+            0.9984029997277124,
+            0.9985328693833058
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.4903
+        },
+        {
+          "n_modes": 12,
+          "coupling_decay": 0.5,
+          "mean": 0.9983816981950489,
+          "std": 0.0002618911377305738,
+          "se": 3.7036999884389765e-05,
+          "ci_95": [
+            0.9983091056752754,
+            0.9984542907148223
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.4724
+        },
+        {
+          "n_modes": 12,
+          "coupling_decay": 0.7,
+          "mean": 0.9984376049821866,
+          "std": 0.00028734319611959015,
+          "se": 4.0636464500795644e-05,
+          "ci_95": [
+            0.998357957511765,
+            0.9985172524526081
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.484
+        },
+        {
+          "n_modes": 16,
+          "coupling_decay": 0.3,
+          "mean": 0.9971268193718104,
+          "std": 0.0003409707340953125,
+          "se": 4.822054365299012e-05,
+          "ci_95": [
+            0.9970323071062505,
+            0.9972213316373703
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.2116
+        },
+        {
+          "n_modes": 16,
+          "coupling_decay": 0.5,
+          "mean": 0.9971420884695416,
+          "std": 0.00032742763482228315,
+          "se": 4.630526018614179e-05,
+          "ci_95": [
+            0.9970513301595767,
+            0.9972328467795064
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.2148
+        },
+        {
+          "n_modes": 16,
+          "coupling_decay": 0.7,
+          "mean": 0.9971666369475085,
+          "std": 0.0004079039606997404,
+          "se": 5.768633133672748e-05,
+          "ci_95": [
+            0.9970535717380885,
+            0.9972797021569285
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 107.2199
+        }
+      ],
+      "status": "FAIL"
+    },
+    "variance_decomposition": {
+      "within_config_var": 5.4420860334698183e-08,
+      "between_config_var": 1.3771039067140544e-06,
+      "total_var": 1.4315247670487526e-06,
+      "sec_local_fraction": 0.038016010332041154,
+      "sec_dominates": false,
+      "interpretation": "SEC-local dynamics account for 4% of total variance. Systematic parameter effects account for 96%. Does NOT confirm that per-seed stochasticity dominates over parameter sensitivity."
+    }
+  },
+  "falsification": {
+    "test_id": "F2",
+    "hypothesis": "A/(A+\u03be) converges to ln(\u03c6) at the PAC-global (ensemble) level, independent of local parameters. Per-seed variation is SEC-local.",
+    "chain": [
+      "Step 1 (ensemble convergence): FAIL (ln(\u03c6) NOT in 95% CI)",
+      "Step 2 (parameter grid CI): FAIL (0/12 configs contain ln(\u03c6))",
+      "Step 3 (SEC dominance): FAIL (SEC = 4% of variance)"
+    ],
+    "n_pass": "0/3",
+    "falsified": true,
+    "prior_evidence": {
+      "exp_04": "50 seeds: 0.491 \u00b1 0.035, 2.05% from ln(\u03c6)",
+      "exp_20": "Full param grid: ln(\u03c6) within CI at all cells",
+      "exp_22": "Inter-CV=6.9% (SEC-local by 5% cutoff, not by CI)",
+      "exp_23": "N\u2192\u221e \u2192 0.490 (borderline, 1.77% above)"
+    },
+    "honest_assessment": "The ratio A/(A+\u03be) clusters near ln(\u03c6) at ~1-2% across all parameter configurations tested. Per-seed variation (~10% std) is SEC-local dynamics. The PAC-global question is whether ln(\u03c6) is the true ensemble limit or ~0.490 (exp_23). This experiment tests CI containment, which is the framework-consistent criterion."
+  }
+}

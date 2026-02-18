@@ -1,0 +1,49 @@
+{
+  "experiment": "exp_02_xi_accumulation",
+  "description": "Monotonic \u03be accumulation validation across initializations",
+  "paper": "Paper 1",
+  "section": "\u00a715 (ln(\u03c6) universality evidence)",
+  "timestamp": "2026-02-17T14:23:08.525143+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "standard_init": {
+      "n_trials": 100,
+      "monotonic_fraction": 1.0,
+      "xi_total_mean": 0.03918397476879684,
+      "xi_total_std": 0.0023881455890665563,
+      "xi_total_min": 0.03386150798219413,
+      "xi_total_max": 0.04601379737519037
+    },
+    "thermal_init": {
+      "n_trials": 100,
+      "monotonic_fraction": 1.0,
+      "xi_total_mean": 0.03708158300757266,
+      "xi_total_std": 0.006099156197716027
+    },
+    "random_init": {
+      "n_trials": 100,
+      "monotonic_fraction": 1.0,
+      "xi_total_mean": 0.038813583133697135,
+      "xi_total_std": 0.0025772071617232704
+    },
+    "adversarial_init": {
+      "n_trials": 100,
+      "monotonic_fraction": 1.0,
+      "xi_total_mean": 0.032478265880940514,
+      "avg_steps_survived": 50.0
+    }
+  },
+  "falsification": {
+    "test_id": "F2",
+    "hypothesis": "\u03be accumulation is monotonic regardless of initialization",
+    "monotonic_fractions": {
+      "standard": 1.0,
+      "thermal": 1.0,
+      "random": 1.0,
+      "adversarial": 1.0
+    },
+    "worst_case": 1.0,
+    "falsified": false,
+    "assessment": "Worst-case monotonic fraction: 1.00. NOT FALSIFIED: threshold is 80% across all initializations."
+  }
+}

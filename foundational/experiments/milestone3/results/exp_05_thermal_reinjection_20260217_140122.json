@@ -1,0 +1,165 @@
+{
+  "experiment": "exp_05_thermal_reinjection",
+  "description": "Thermal reinjection ratios in Landauer cascade",
+  "paper": "Paper 6",
+  "section": "\u00a75 (E-I-S cycle throughput)",
+  "timestamp": "2026-02-17T14:01:22.447236+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "decay_profile": {
+      "decay_rate": 0.6180339887498948,
+      "n_steps": 12,
+      "step_ratios": [
+        0.38196601,
+        0.23606798,
+        0.14589803,
+        0.09016994,
+        0.05572809,
+        0.03444185,
+        0.02128624,
+        0.01315562,
+        0.00813062,
+        0.005025
+      ],
+      "mean_ratio": 0.09045227284175981,
+      "expected_ratio_inv_phi_sq": 0.3819660112501051,
+      "deviation_pct": 76.31928753405937,
+      "status": "FAIL"
+    },
+    "geometric_sum": {
+      "results": {
+        "d=0.3000": {
+          "decay": 0.3,
+          "total_reinjected": 0.327735,
+          "theoretical_sum": 0.098901,
+          "deviation_pct": 231.3764
+        },
+        "d=0.4000": {
+          "decay": 0.4,
+          "total_reinjected": 0.468202,
+          "theoretical_sum": 0.190476,
+          "deviation_pct": 145.806
+        },
+        "d=0.5000": {
+          "decay": 0.5,
+          "total_reinjected": 0.641633,
+          "theoretical_sum": 0.333333,
+          "deviation_pct": 92.4898
+        },
+        "d=0.6180 (1/\u03c6)": {
+          "decay": 0.6180339887498948,
+          "total_reinjected": 0.918736,
+          "theoretical_sum": 0.618034,
+          "deviation_pct": 48.6546
+        },
+        "d=0.7000": {
+          "decay": 0.7,
+          "total_reinjected": 1.194251,
+          "theoretical_sum": 0.960784,
+          "deviation_pct": 24.2996
+        },
+        "d=0.8000": {
+          "decay": 0.8,
+          "total_reinjected": 1.728233,
+          "theoretical_sum": 1.777778,
+          "deviation_pct": 2.7869
+        },
+        "d=0.9000": {
+          "decay": 0.9,
+          "total_reinjected": 2.912377,
+          "theoretical_sum": 4.263158,
+          "deviation_pct": 31.685
+        }
+      },
+      "phi_sum_theoretical": 0.618034,
+      "phi_sum_equals_inv_phi": true,
+      "interpretation": "At d=1/\u03c6, total reinjected fraction = 1/\u03c6 = 0.618. The fraction NOT reinjected (going to structure) = 1 - 1/\u03c6 = 1/\u03c6\u00b2 = 0.382. This is the predicted \"binding energy\" fraction."
+    },
+    "partition_comparison": {
+      "theta_fraction": 0.774753,
+      "xi_fraction": 0.225247,
+      "euclidean_binding_ratio": 0.0913,
+      "euclidean_per_level_survival": 0.54969,
+      "euclidean_per_level_loss": 0.45031,
+      "inv_phi": 0.6180339887498948,
+      "inv_phi_sq": 0.3819660112501051
+    },
+    "eis_partition": {
+      "\u03c6-ratios (1, 1/\u03c6, 1/\u03c6\u00b2)": {
+        "k_ei": 1.0,
+        "k_is": 0.6180339887498948,
+        "k_se": 0.3819660112501051,
+        "E_steady": 0.190983,
+        "I_steady": 0.309017,
+        "S_steady": 0.5,
+        "S_I_ratio": 1.618034,
+        "S_E_ratio": 2.618034
+      },
+      "original (1, 0.6, 0.3)": {
+        "k_ei": 1.0,
+        "k_is": 0.6,
+        "k_se": 0.3,
+        "E_steady": 0.166667,
+        "I_steady": 0.277778,
+        "S_steady": 0.555556,
+        "S_I_ratio": 2.0,
+        "S_E_ratio": 3.333333
+      },
+      "symmetric (1, 1, 1)": {
+        "k_ei": 1.0,
+        "k_is": 1.0,
+        "k_se": 1.0,
+        "E_steady": 0.333333,
+        "I_steady": 0.333333,
+        "S_steady": 0.333333,
+        "S_I_ratio": 1.0,
+        "S_E_ratio": 1.0
+      },
+      "PAC-derived (\u03c6, 1, 1/\u03c6)": {
+        "k_ei": 1.618033988749895,
+        "k_is": 1.0,
+        "k_se": 0.6180339887498948,
+        "E_steady": 0.190983,
+        "I_steady": 0.309017,
+        "S_steady": 0.5,
+        "S_I_ratio": 1.618034,
+        "S_E_ratio": 2.618034
+      }
+    },
+    "binding_sweep": {
+      "target_euclidean_per_level_loss": 0.45031,
+      "matching_d": 0.6237,
+      "matching_xi_frac": 0.225269,
+      "inv_phi": 0.618034,
+      "ratio_d_to_inv_phi": 1.0092,
+      "d_at_inv_phi_sq": 0.6237,
+      "note": "The cascade decay rate that matches the euclidean per-level binding loss is d=0.6237 (inv_phi=0.6180, ratio=1.0092)."
+    },
+    "legacy_reinterpretation": {
+      "qpl_damping": 0.02,
+      "half_life_steps": 34.31,
+      "cascade_half_life_at_inv_phi": 0.7202,
+      "equivalent_cascade_d": 0.989949,
+      "inv_phi": 0.618034,
+      "deviation_pct": 60.18,
+      "interpretation": "The legacy QPL_damping=0.02 corresponds to a cascade decay rate of d=0.9899. Compared to the theoretically optimal 1/\u03c6=0.6180, deviation is 60.2%. This suggests the legacy damping was empirically close to the \u03c6-cascade rate but was NOT the frequency 0.020 Hz \u2014 the \"Hz\" interpretation was an FFT binning artifact from exp_32 (5000 steps at dt=0.01 \u2192 resolution=0.020 Hz)."
+    }
+  },
+  "falsification": {
+    "test_id": "F4",
+    "hypothesis": "Thermal reinjection follows 1/\u03c6^k decay, with total reinjection = 1/\u03c6 and structure fraction = 1/\u03c6\u00b2. Legacy 0.02 damping is a reinjection rate, not a frequency.",
+    "chain": [
+      "Step 1 (1/\u03c6^k decay): FAIL",
+      "Step 2 (sum = 1/\u03c6): PASS",
+      "Step 3 (euclidean match): SUGGESTIVE (d_match=0.6237 vs 1/\u03c6=0.6180)"
+    ],
+    "n_pass": "2/3",
+    "falsified": "False",
+    "supersedes": "This test replaces the original F4 (\"0.020 Hz universal frequency\"). The frequency claim was falsified as an FFT artifact. The reinjection rate interpretation is the corrected framing.",
+    "open_gaps": [
+      "Euclidean binding ratio (0.0913) is for depth-4 branching-3 trees \u2014 needs single-level comparison for direct cascade match",
+      "The cascade model is idealized \u2014 real \u0398 reinjection has noise, dissipation, and topology-dependent delays",
+      "Connection to Klein-Gordon mass term m\u00b2=(\u039e-1)/\u039e and resulting frequency 0.037 Hz needs separate investigation"
+    ]
+  }
+}

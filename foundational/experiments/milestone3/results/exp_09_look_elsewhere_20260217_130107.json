@@ -1,0 +1,65 @@
+{
+  "experiment": "exp_09_look_elsewhere",
+  "description": "Mass ratio look-elsewhere effect \u2014 corrected significance",
+  "paper": "Paper 4",
+  "section": "\u00a711 (methodology)",
+  "timestamp": "2026-02-17T13:01:07.835180+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "search_space": {
+      "simple_size": 1108,
+      "full_size": 35434
+    },
+    "best_match_simple": {
+      "formula": "(F_2*F_3)/(F_5*F_10)",
+      "value": 0.007272727272727273,
+      "distance": 2.4625296572727655e-05,
+      "deviation_pct": 0.3374552118576044,
+      "sigma": 22386633.247934233
+    },
+    "best_match_full": {
+      "formula": "(F_3/(phi*F_4*F_10))*(1-F_10/(4pi*F_7^2))",
+      "value": 0.007297310889743783,
+      "distance": 4.1679556216957236e-08,
+      "deviation_pct": 0.0005711599627555799,
+      "sigma": 37890.505651779305
+    },
+    "look_elsewhere_alpha": {
+      "claimed_precision_ppm": 5.7,
+      "n_effective_trials": 35434,
+      "raw_p_value": 8.318981929002e-06,
+      "corrected_p_bonferroni": 0.2947748056722569,
+      "corrected_p_sidak": 0.2553016424535688,
+      "still_significant_3sigma": false,
+      "still_significant_2sigma": false
+    },
+    "methodology": {
+      "alpha": {
+        "method": "search-then-validate",
+        "search_space": 35434,
+        "validation": "perturbation stability (exp_12), uniqueness (exp_13)",
+        "corrected_significant": false,
+        "honest_assessment": "\u03b1 formula was found by searching Fibonacci combinations, then validated for perturbation stability. The look-elsewhere correction must be applied. Additional validation: the SAME Fibonacci indices appear in other predictions (Feigenbaum, Koide, gauge groups), which constrains the effective trial count."
+      },
+      "koide": {
+        "method": "predict-from-principles",
+        "note": "F\u2083/F\u2084 = 2/3 is the simplest ratio; no search needed",
+        "search_space": 1,
+        "look_elsewhere": "minimal (only one candidate)"
+      },
+      "weinberg": {
+        "method": "search-from-small-space",
+        "search_space": "F_i/F_j for i<j<14 \u2248 78 ratios",
+        "note": "Small search space, but 4.4\u03c3 from PDG at M_Z"
+      }
+    }
+  },
+  "falsification": {
+    "test_id": "F8",
+    "hypothesis": "5.7 ppm \u03b1 match is significant after look-elsewhere",
+    "corrected_p": 0.2553016424535688,
+    "n_trials": 35434,
+    "falsified": true,
+    "assessment": "Search space: 35434 formulas. Corrected p (\u0160id\u00e1k): 0.2553. FALSIFIED: look-elsewhere destroys significance. NOTE: This is a conservative estimate. Cross-prediction constraints (same F indices in Feigenbaum, Koide, gauge groups) may reduce the effective trial count, but quantifying this requires a joint analysis (see exp_10)."
+  }
+}

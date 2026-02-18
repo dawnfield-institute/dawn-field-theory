@@ -1,0 +1,117 @@
+{
+  "experiment": "exp_06_theta_recycling",
+  "description": "\u0398 recycling energy budget \u2014 resolve model dependence",
+  "paper": "Paper 1",
+  "section": "\u00a712 (\u0398 recycling claims)",
+  "timestamp": "2026-02-17T20:39:19.961986+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "formula_comparison": {
+      "direct": {
+        "mean": 0.9995914101195449,
+        "std": 9.684179079981714e-05,
+        "median": 0.9996024171594537,
+        "min": 0.9992683576253365,
+        "max": 0.999831055870369,
+        "efficiency_pct": 0.040858988045511246
+      },
+      "thermal": {
+        "mean": 0.9995914101195449,
+        "std": 9.684179079981714e-05,
+        "median": 0.9996024171594537,
+        "min": 0.9992683576253365,
+        "max": 0.999831055870369,
+        "efficiency_pct": 0.040858988045511246
+      },
+      "mode_sum": {
+        "mean": 0.9996789164916028,
+        "std": 0.002239778062167283,
+        "median": 0.9994795598637498,
+        "min": 0.993021711392492,
+        "max": 1.005965735750042,
+        "efficiency_pct": 0.0321083508397213
+      },
+      "eigenvalue": {
+        "mean": 0.7298797809077392,
+        "std": 0.0019330482389373223,
+        "median": 0.7299318440513841,
+        "min": 0.7250723545596809,
+        "max": 0.7371214404786776,
+        "efficiency_pct": 27.012021909226082
+      }
+    },
+    "distinguishability": {
+      "anova_f": 1650615.398469884,
+      "anova_p": 0.0,
+      "formulas_distinguishable": "True",
+      "pairwise": {
+        "direct_vs_thermal": {
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "distinguishable": "False"
+        },
+        "direct_vs_mode_sum": {
+          "t_statistic": -0.5506246652742205,
+          "p_value": 0.5821999167912609,
+          "distinguishable": "False"
+        },
+        "direct_vs_eigenvalue": {
+          "t_statistic": 1965.7994260271341,
+          "p_value": 0.0,
+          "distinguishable": "True"
+        },
+        "thermal_vs_mode_sum": {
+          "t_statistic": -0.5506246652742205,
+          "p_value": 0.5821999167912609,
+          "distinguishable": "False"
+        },
+        "thermal_vs_eigenvalue": {
+          "t_statistic": 1965.7994260271341,
+          "p_value": 0.0,
+          "distinguishable": "True"
+        },
+        "mode_sum_vs_eigenvalue": {
+          "t_statistic": 1286.4166436522626,
+          "p_value": 0.0,
+          "distinguishable": "True"
+        }
+      }
+    },
+    "cascade_comparison": {
+      "direct": {
+        "mean_efficiency": 0.0021165812143765336,
+        "std_efficiency": 9.76306560975623e-05,
+        "efficiency_pct": 0.21165812143765336
+      },
+      "thermal": {
+        "mean_efficiency": 0.0021165812143765336,
+        "std_efficiency": 9.76306560975623e-05,
+        "efficiency_pct": 0.21165812143765336
+      },
+      "mode_sum": {
+        "mean_efficiency": 0.0021165812143765336,
+        "std_efficiency": 9.76306560975623e-05,
+        "efficiency_pct": 0.21165812143765336
+      },
+      "eigenvalue": {
+        "mean_efficiency": 0.000993868983790757,
+        "std_efficiency": 6.34870307728853e-05,
+        "efficiency_pct": 0.09938689837907569
+      }
+    },
+    "model_dependence": {
+      "min_efficiency_pct": 0.09938689837907569,
+      "max_efficiency_pct": 0.21165812143765336,
+      "range_pct": 0.11227122305857767,
+      "systematic_uncertainty": 0.05613561152928884
+    }
+  },
+  "falsification": {
+    "test_id": "F5",
+    "hypothesis": "One \u0398 formula is correct and distinguishable",
+    "anova_p": 0.0,
+    "model_range_pct": 0.11227122305857767,
+    "falsified": "False",
+    "assessment": "ANOVA p = 0.00e+00. Model dependence range: 0.1%. NOT FALSIFIED: Formulas ARE distinguishable (p < 0.01). Identify the physically motivated one."
+  }
+}
