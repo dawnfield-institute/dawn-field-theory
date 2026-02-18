@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "experiment": "exp_15_pac_sec_side_by_side",
+    "description": "PAC potential redistribution & SEC smoothening \u2014 side by side",
+    "paper": "Paper 4",
+    "section": "\u00a7pac_sec_mechanism",
+    "timestamp": "2026-02-18T11:50:37.456288+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_landscape": {
+      "sin\u00b2\u03b8_W": {
+        "null_frac": 0.730208721902692,
+        "col_frac": 0.6832241377887909,
+        "cost_ratio": 0.9356559532848714,
+        "error_pct": 0.19495252606574986,
+        "class": "fundamental",
+        "depth": 1,
+        "violation_breakdown": {
+          "PAC magnitude": 16.0,
+          "Hierarchy": 11.0,
+          "E-I-S cycle": 2.0,
+          "Parity": 1.0,
+          "Gauge": 1.0
+        }
+      },
+      "Koide Q": {
+        "null_frac": 0.9092595219499192,
+        "col_frac": 0.4162296502453955,
+        "cost_ratio": 0.4577677111951332,
+        "error_pct": 0.0008500072250636509,
+        "class": "fundamental",
+        "depth": 1,
+        "violation_breakdown": {
+          "PAC magnitude": 3.0,
+          "Hierarchy": 5.0,
+          "E-I-S cycle": 2.0,
+          "Parity": 1.0,
+          "Gauge": 0.0
+        }
+      },
+      "She-Lev \u03b2": {
+        "null_frac": 0.9275657222124577,
+        "col_frac": 0.37366004733779323,
+        "cost_ratio": 0.4028394305543418,
+        "error_pct": 0.0,
+        "class": "fundamental",
+        "depth": 1,
+        "violation_breakdown": {
+          "PAC magnitude": 5.0,
+          "Hierarchy": 7.0,
+          "E-I-S cycle": 1.0,
+          "Parity": 1.0,
+          "Gauge": 0.0
+        }
+      },
+      "\u03bd_WF": {
+        "null_frac": 0.9275657222124577,
+        "col_frac": 0.37366004733779323,
+        "cost_ratio": 0.4028394305543418,
+        "error_pct": 0.01677495087181008,
+        "class": "derived",
+        "depth": 2,
+        "violation_breakdown": {
+          "PAC magnitude": 5.0,
+          "Hierarchy": 7.0,
+          "E-I-S cycle": 1.0,
+          "Parity": 1.0,
+          "Gauge": 0.0
+        }
+      },
+      "\u03b1_s": {
+        "null_frac": 0.7300923457266476,
+        "col_frac": 0.6833484957994426,
+        "cost_ratio": 0.9359754280389261,
+        "error_pct": 0.08451631742875478,
+        "class": "derived",
+        "depth": 2,
+        "violation_breakdown": {
+          "PAC magnitude": 11.0,
+          "Hierarchy": 10.0,
+          "E-I-S cycle": 1.0,
+          "Parity": 0.0,
+          "Gauge": -1.0
+        }
+      },
+      "Cabibbo": {
+        "null_frac": 0.730208721902692,
+        "col_frac": 0.6832241377887909,
+        "cost_ratio": 0.9356559532848714,
+        "error_pct": 0.3480307368366015,
+        "class": "derived",
+        "depth": 2,
+        "violation_breakdown": {
+          "PAC magnitude": 16.0,
+          "Hierarchy": 11.0,
+          "E-I-S cycle": 2.0,
+          "Parity": 1.0,
+          "Gauge": 1.0
+        }
+      },
+      "\u03bc/e": {
+        "null_frac": 0.7545899155294705,
+        "col_frac": 0.6561966621228934,
+        "cost_ratio": 0.8696069860176466,
+        "error_pct": 0.00045837263676309816,
+        "class": "composite",
+        "depth": 3,
+        "violation_breakdown": {
+          "PAC magnitude": 24.0,
+          "Hierarchy": 17.0,
+          "E-I-S cycle": 2.0,
+          "Parity": 1.0,
+          "Gauge": 0.0
+        }
+      },
+      "\u03b1_em": {
+        "null_frac": 0.6988790703295377,
+        "col_frac": 0.715239851417216,
+        "cost_ratio": 1.0234100315523311,
+        "error_pct": 0.0005711599627555799,
+        "class": "composite",
+        "depth": 3,
+        "violation_breakdown": {
+          "PAC magnitude": 73.0,
+          "Hierarchy": 24.0,
+          "E-I-S cycle": 3.0,
+          "Parity": 2.0,
+          "Gauge": 1.0
+        }
+      },
+      "p/e": {
+        "null_frac": 0.6075121523324297,
+        "col_frac": 0.7943103831427727,
+        "cost_ratio": 1.3074806488942912,
+        "error_pct": 0.008314854870692768,
+        "class": "composite",
+        "depth": 3,
+        "violation_breakdown": {
+          "PAC magnitude": 189.0,
+          "Hierarchy": 31.0,
+          "E-I-S cycle": 1.0,
+          "Parity": 1.0,
+          "Gauge": -1.0
+        }
+      },
+      "\u03c4/e": {
+        "null_frac": 0.6169098978883293,
+        "col_frac": 0.7870337844637998,
+        "cost_ratio": 1.2757678020044763,
+        "error_pct": 0.042559554620012714,
+        "class": "composite",
+        "depth": 3,
+        "violation_breakdown": {
+          "PAC magnitude": 110.0,
+          "Hierarchy": 27.0,
+          "E-I-S cycle": 6.0,
+          "Parity": 3.0,
+          "Gauge": 0.0
+        }
+      },
+      "class_averages": {
+        "fundamental": 0.5987543650114487,
+        "derived": 0.7581569372927129,
+        "composite": 1.1190663671171863
+      },
+      "hierarchy_holds": "True",
+      "passed": "True"
+    },
+    "test_2_redistribution": {
+      "sin\u00b2\u03b8_W": {
+        "violation_raw": [
+          16.0,
+          11.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "violation_norm": 19.570385790780925,
+        "n_events": 5,
+        "relative_profile": [
+          0.8175618084921537,
+          0.5620737433383557,
+          0.1021952260615192,
+          0.0510976130307596,
+          0.0510976130307596
+        ],
+        "dominant_constraint": "PAC_mag"
+      },
+      "Koide Q": {
+        "violation_raw": [
+          3.0,
+          5.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "violation_norm": 6.244997998398398,
+        "n_events": 4,
+        "relative_profile": [
+          0.48038446141526137,
+          0.8006407690254357,
+          0.32025630761017426,
+          0.16012815380508713,
+          0.0
+        ],
+        "dominant_constraint": "Hierarchy"
+      },
+      "She-Lev \u03b2": {
+        "violation_raw": [
+          5.0,
+          7.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "violation_norm": 8.717797887081348,
+        "n_events": 4,
+        "relative_profile": [
+          0.5735393346764044,
+          0.8029550685469661,
+          0.11470786693528087,
+          0.11470786693528087,
+          0.0
+        ],
+        "dominant_constraint": "Hierarchy"
+      },
+      "\u03bd_WF": {
+        "violation_raw": [
+          5.0,
+          7.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "violation_norm": 8.717797887081348,
+        "n_events": 4,
+        "relative_profile": [
+          0.5735393346764044,
+          0.8029550685469661,
+          0.11470786693528087,
+          0.11470786693528087,
+          0.0
+        ],
+        "dominant_constraint": "Hierarchy"
+      },
+      "\u03b1_s": {
+        "violation_raw": [
+          11.0,
+          10.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        "violation_norm": 14.933184523068078,
+        "n_events": 4,
+        "relative_profile": [
+          0.7366144832006676,
+          0.669649530182425,
+          0.06696495301824251,
+          0.0,
+          -0.06696495301824251
+        ],
+        "dominant_constraint": "PAC_mag"
+      },
+      "Cabibbo": {
+        "violation_raw": [
+          16.0,
+          11.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "violation_norm": 19.570385790780925,
+        "n_events": 5,
+        "relative_profile": [
+          0.8175618084921537,
+          0.5620737433383557,
+          0.1021952260615192,
+          0.0510976130307596,
+          0.0510976130307596
+        ],
+        "dominant_constraint": "PAC_mag"
+      },
+      "\u03bc/e": {
+        "violation_raw": [
+          24.0,
+          17.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "violation_norm": 29.49576240750525,
+        "n_events": 4,
+        "relative_profile": [
+          0.8136762043449725,
+          0.5763539780776888,
+          0.06780635036208105,
+          0.033903175181040524,
+          0.0
+        ],
+        "dominant_constraint": "PAC_mag"
+      },
+      "\u03b1_em": {
+        "violation_raw": [
+          73.0,
+          24.0,
+          3.0,
+          2.0,
+          1.0
+        ],
+        "violation_norm": 76.93503753167343,
+        "n_events": 5,
+        "relative_profile": [
+          0.9488524649116676,
+          0.311951495313425,
+          0.03899393691417812,
+          0.025995957942785416,
+          0.012997978971392708
+        ],
+        "dominant_constraint": "PAC_mag"
+      },
+      "p/e": {
+        "violation_raw": [
+          189.0,
+          31.0,
+          1.0,
+          1.0,
+          -1.0
+        ],
+        "violation_norm": 191.53328692423153,
+        "n_events": 5,
+        "relative_profile": [
+          0.9867736466861049,
+          0.16185176215486377,
+          0.005221024585640766,
+          0.005221024585640766,
+          -0.005221024585640766
+        ],
+        "dominant_constraint": "PAC_mag"
+      },
+      "\u03c4/e": {
+        "violation_raw": [
+          110.0,
+          27.0,
+          6.0,
+          3.0,
+          0.0
+        ],
+        "violation_norm": 113.46365056704283,
+        "n_events": 4,
+        "relative_profile": [
+          0.9694734785128718,
+          0.237961671998614,
+          0.05288037155524756,
+          0.02644018577762378,
+          0.0
+        ],
+        "dominant_constraint": "PAC_mag"
+      },
+      "event_distribution": {
+        "PAC_mag": 10,
+        "Hierarchy": 10,
+        "EIS_cycle": 10,
+        "Parity": 9,
+        "Gauge": 5
+      },
+      "dominant_channel": "PAC_mag",
+      "total_events": 44,
+      "passed": true
+    },
+    "test_3_cascade": {
+      "avg_costs": {
+        "1": 11.511060558753556,
+        "2": 14.40712273364345,
+        "3": 102.85693435761326
+      },
+      "cascade_ratio_1_2": 1.251589517760602,
+      "cascade_ratio_2_3": 7.139311315605176,
+      "correlation": 0.8643935047397295,
+      "monotonic": true,
+      "passed": "True"
+    },
+    "test_4_pac_tree": {
+      "all_conserved": true,
+      "all_gauge_conserved": true,
+      "n_physics_mapped": 0,
+      "n_splits": 9,
+      "convergence_to_phi": [
+        0.23608954430545037,
+        0.23601151683978244,
+        0.23621580693171296,
+        0.23568104757342423,
+        0.23708160779751386,
+        0.23341860413451015,
+        0.2430339887498948,
+        0.21803398874989477,
+        0.2847006554165615
+      ],
+      "converging": true,
+      "passed": true
+    }
+  },
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "score": "4/4"
+  }
+}

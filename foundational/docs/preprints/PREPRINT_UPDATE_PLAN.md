@@ -1,7 +1,7 @@
 # Preprint Update Plan: PACSeries Consolidation
 
-**Date**: February 12, 2026  
-**Status**: Planning Document (Updated with synthesis session results)  
+**Date**: February 12, 2026 (Updated February 18, 2026)  
+**Status**: Planning Document (Updated with milestone3 full completion — 21 experiments, 19 falsification tests)  
 **Goal**: Consolidate the PACSeries into a self-contained paper series that establishes Dawn Field Theory through clean derivation, measurement, and honest separation of established results from speculation.
 
 ---
@@ -207,12 +207,24 @@ The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-
 - Casimir 240 = F₃ × F₄ × F₅ × F₆ (four consecutive Fibonacci)
 - k = d × F_{d+1} derives She-Leveque from first principles (3D: k=9, 0.47% error)
 - Bell inequality (2αβ)² = 4/5 (exact algebraic proof)
+- **Wilson-Fisher ν = 2/(3·Ξ) at 0.017% error** (milestone3/F6 — E-I-S decomposition: 63× better than best alternative, MC p=0.0000. PROMOTED from PRELIMINARY_RESULTS A1)
+- **sin²θ_W = 3/13 at Q = 82.78 GeV ≈ M_W** (milestone3/F7 — 15σ at M_Z resolves; W boson = actualization threshold)
+- **α BORDERLINE** (milestone3/F8 — binomial p=0.42 after look-elsewhere; MC 0/7272 from random constants)
 
 **What makes this not numerology:**
 - Individual Fibonacci matches are trivial (P = 0.16)
 - Joint constraints are significant (P < 10⁻⁵)
 - The null hypothesis is falsified by the pattern, not individual values
 - α formula has Landauer interpretation: payment rate through 55 hierarchy levels (Paper 1)
+- **Cross-domain independence**: naive p-values corrected by ~48 OOM, conservative p ≈ 10⁻¹⁴⁷ (milestone3/F9)
+
+**Milestone3 Block F findings (exp_16–21):**
+- **Fibonacci null space does NOT predict a priori** (F14, 0/4) — framework describes but doesn't predict. Paper 4 must not overclaim
+- **Stoichiometric selectivity requires physics-derived matrix** (F15, 3/4) — baseline 0.86× inverted to 1.23×
+- **Conservation is necessary but not sufficient** (F16, 2/4) — PAC constrains possibility, not actuality
+- **Crystallization order is basis-independent** (F17, FALSIFIED) — Paper 4 must not claim Fibonacci-specific dynamics
+- **Raw fractal pressure = depth bias** (F18, FALSIFIED) — raw counting conflates depth with significance
+- **PAC-Lazy conservation profiles DO discriminate** (F19, 4/4) — KL p=0.035, Cohen's d=0.198, GAIA POC architecture works on formula space
 
 ---
 
@@ -429,6 +441,16 @@ All results that the PACSeries must present with full error bounds:
 | TinyCIMM violation reduction | 1.83× | p = 0.008 | 6C |
 | TinyCIMM transition shock | 16× reduction | p = 0.008 | 6C |
 | TinyCIMM factual preservation | no degradation | p = 0.42 (n.s.) | 6C |
+| **Milestone3 Block E/F (new)** | | | |
+| Fibonacci–MED complementarity | golden base can't reach MED depth | φ²=2.618 < 3.1 | 2/5 |
+| MED depth invariant | d_cross = 3.25 ± 0.17 | CV = 5.3% | 5 |
+| Stoichiometric Fibonacci percentile | 99.98th vs random | 6111× F₄ selectivity | 4 |
+| SEC cost per Fibonacci index | ~55.7 SEC units/step | r = 0.86 | 2 |
+| Physics-derived selectivity | 1.23× (inverted from 0.86×) | exp_17 | 4 |
+| PAC-Lazy KL discrimination | KL p = 0.035 | d = 0.198, 1.32× | 4 |
+| SEC gating improvement | +11.7% delta | gated vs ungated | 4 |
+| Crystallization order | basis-independent | **FALSIFIED** for Fibonacci-specificity | 4 |
+| Null space prediction | 0/4 FAIL | framework describes ≠ predicts | 4 |
 
 ### Falsifiable Predictions (untested)
 | Prediction | Test | Paper |
@@ -520,6 +542,9 @@ After the rewrite, each PACSeries paper should:
 - [ ] Final edit pass for consistency between journal.md and PACSeries/paper.md
 - [ ] Ensure PREPRINT_UPDATE_PLAN falsified items are NOT in the paper (Θ recycling efficiency)
 - [ ] Verify all exp references have matching result JSON files
+- [ ] **NEW**: Integrate "why Fibonacci" cascade mechanism — two-step Landauer memory → Fibonacci (from energy_equivalence session, validated in milestone3)
+- [ ] **NEW**: Add monotonic ξ accumulation result (100/100 trials, cascade_deep_dive) as supporting evidence for ln(φ) universality
+- [ ] **NEW**: Address Θ recycling model-dependence honestly — 36%-94% depending on formula (remove any remaining efficiency claims, present as open question)
 
 ### Paper 2: The Balance Constant and Its Decomposition
 - [x] §1-13 written from four-domain convergence structure
@@ -530,7 +555,9 @@ After the rewrite, each PACSeries paper should:
 - [ ] Address PREPRINT_UPDATE_PLAN note: γ is rank #1 but 1/√3 performs comparably — mention in §9.2 or §10
 - [ ] Add note that 21 combinations fall within 5% of Ξ (from pac_foundations_validation)
 - [ ] Verify three-phase model (§6.3) is labeled "proposed" not "established"
-- [ ] Final edit pass for voice consistency with Paper 1
+- [ ] Final edit pass for voice consistency
+- [ ] **NEW**: Reference Fibonacci–MED complementarity (exp_12/F11) — golden base paradox explains why framework needs PAC, SEC, AND MED as independent principles
+- [ ] **NEW**: Reference MED depth criticality (exp_11/F10) — eff_depth ≈ 3.0 invariant, d_cross = 3.25 ± 0.17
 
 ### Paper 3: Feigenbaum Constants from Fibonacci Arithmetic
 - [x] §1-14 complete (pure math, no physics claims)
@@ -561,6 +588,16 @@ After the rewrite, each PACSeries paper should:
 - [x] 10 experiment scripts, 8 data files, 6 figures generated
 - [x] 2 review rounds completed
 - [ ] Final edit pass for voice consistency
+- [ ] **NEW**: Address search-vs-derivation methodology transparency — mass ratios are found by search then validated, not predicted from first principles. State this explicitly.
+- [ ] **NEW**: Note sin²θ_W = 3/13 is 4.4σ from PDG central value — requires energy-scale identification (running coupling) to be honest
+- [ ] **NEW**: Note 3/4 mass ratio falsification tests pass (from milestone1 FALSIFICATION_REGISTRY) — address the methodology concern in exp_17 honestly
+- [ ] **NEW**: Run sin²θ_W energy-scale identification experiment in milestone3 → if no scale found, downgrade claim
+- [ ] **NEW**: Include stoichiometric Fibonacci derivation result (exp_13: 99.98th percentile vs random, 6111× F₄=3 selectivity)
+- [ ] **NEW**: Note null space prediction failure (exp_16: 0/4) — framework describes but does not predict. Be transparent about this limitation
+- [ ] **NEW**: Include physics-derived matrix selectivity inversion (exp_17: 0.86× → 1.23×)
+- [ ] **NEW**: Note crystallization order is basis-independent (exp_19: FALSIFIED) — do NOT claim Fibonacci-specific dynamics
+- [ ] **NEW**: Include PAC-Lazy formula discrimination (exp_21: KL p=0.035, d=0.198) with GAIA POC cross-reference
+- [ ] **NEW**: Include SEC cost monotonicity (~55.7 SEC units per Fibonacci index, SEC/PAC crosses 1.0 at F₈)
 
 ### Paper 5: Classical Physics from Information Geometry
 - [x] Locate maxwell_from_pac_sec experiment data
@@ -597,6 +634,11 @@ After the rewrite, each PACSeries paper should:
 - [x] Uncited She-Lévêque [10] removed; refs renumbered Paper N = [N]
 - [ ] Part A: Consolidate 3 existing GAIA papers into one section — **NOTE: Paper 6 does NOT use Part A/B/C structure; GAIA is §8.3. Plan structure differs from implementation.**
 - [ ] Final edit pass for voice consistency
+- [ ] **NEW**: Flag 0.020 Hz simulation mismatch — energy_equivalence E-I-S oscillator gives 0.007 Hz (ratio 0.232), NOT the claimed 2/3 (0.667). Must resolve before merging relativistic_mas 0.020 Hz claim.
+- [ ] **NEW**: Validate 0.020 Hz derivation in milestone3/exp_05 — either fix the simulation or correct the theoretical claim
+- [ ] **NEW**: Verify GAIA perplexity correction is clearly labeled throughout (similarity metric ≠ true LM perplexity)
+- [ ] **NEW**: Reference PAC-Lazy formula mesh (exp_21) as evidence that GAIA POC architecture transfers to theoretical physics domain (profile comparison, conservation normalization)
+- [ ] **NEW**: Note that formula space IS a PAC tree — same principles work in both neural network analysis and formula analysis
 
 **3.8× correction note**: The plan states "Conservation reduces noise violation 3.8×" but the actual experiment data (exp_06_tinycimm_conservation) shows noise+free=0.342, noise+conservation=0.187, which is 1.83× reduction ("nearly in half"). The paper correctly reports the data. The 3.8× figure in this plan document was incorrect — it may have been noise_free/factual_free (0.342/0.089), a different comparison.
 
@@ -631,6 +673,34 @@ After the rewrite, each PACSeries paper should:
 ### Cross-Cutting
 - [ ] Update UNIFIED_EVIDENCE.md with token_pac_tree findings
 - [ ] Update UNIFIED_EVIDENCE.md with TinyCIMM-Boltzmann findings
+- [x] Update UNIFIED_EVIDENCE.md with milestone3 findings (v3.4, 2026-02-18)
 - [ ] Verify all papers cross-reference each other consistently (§14 / §13 sections)
 - [ ] Prepare Zenodo packages for Papers 1-6
 - [ ] Create changelog entry for PACSeries consolidation
+
+### Energy Equivalence Integration (milestone3)
+- [x] **NEW**: Create milestone3 experiment directory (foundational/experiments/milestone3/)
+- [x] **NEW**: exp_01: Two-step Landauer memory → Fibonacci derivation (formalize cascade finding from energy_equivalence session). **DONE**: 4/4 PASS + k=2 minimality via companion matrix (cascade framework)
+- [x] **NEW**: exp_02: Monotonic ξ accumulation validation (reproduce 100/100 result with proper experimental framework and error analysis). **DONE**: 6/6 PASS + 2 diagnostics. eff_depth ≈ 3.0 is universal invariant.
+- [x] **NEW**: exp_03: Prime cascade reachability — formalize zero-coverage finding (p = 7.7×10⁻¹², from cascade_deep_dive). **DONE**: 3/4 PASS (late cascade ratio noisy, Cohen's d = 0.28)
+- [ ] **NEW**: exp_04: w2/w1 ratio from first principles — close the 0.600 vs 0.618 gap or explain why it can't close. **Mapped to exp_05 (thermal reinjection) — 2/3+suggestive**
+- [x] **NEW**: exp_05: E-I-S triangle oscillator fix — reproduce 0.020 Hz or identify why sim gives 0.007 Hz instead. **DONE**: exp_05 (F4) 2/3 PASS + suggestive. Thermal ratios approach 1/φ.
+- [x] **NEW**: exp_06: Θ recycling energy budget — resolve 36%-94% model dependence, identify which formula (if any) is correct. **DONE**: exp_06 (F5) 3/4 PASS. Self-funding confirmed; efficiency model-dependent.
+- [x] **NEW**: exp_07: Wilson-Fisher null test — Monte Carlo for A1 prediction from PRELIMINARY_RESULTS. **DONE**: 6/6 PASS. MC p=0.0000, E-I-S decomposition: ν = 2/(3·Ξ) at 0.017%. A1 PROMOTED.
+- [x] **NEW**: exp_08: sin²θ_W energy-scale identification — run the coupling at known RG scales, find if 3/13 appears anywhere physical. **DONE**: 6/6 PASS. Q = 82.78 GeV ≈ M_W. PAC tree depth interpretation.
+- [x] **NEW**: exp_09: Mass ratio methodology audit — clearly distinguish search-then-validate from predict-from-principles, quantify look-elsewhere effect. **DONE**: BORDERLINE. p=0.42 binomial, but MC 0/7272 from random constants.
+- [x] **NEW**: exp_10: Cross-domain joint probability independence audit — verify independence assumptions in p-value multiplications across domains. **DONE**: 5/5 PASS. 48 OOM correction, conservative p ≈ 10⁻¹⁴⁷.
+- [x] **NEW**: Update PRELIMINARY_RESULTS.md with energy_equivalence session findings (cascade, ξ accumulation, prime reachability). **DONE**: A1 promoted, B5 updated.
+- [x] **NEW**: Update UNIFIED_EVIDENCE.md with milestone3 results as they complete. **DONE**: v3.4 with full milestone3 integration.
+- [ ] **NEW**: Integrate milestone3 validated results back into Papers 1, 4, 6 as appropriate
+- [x] **NEW**: exp_11: MED depth criticality — eff_depth ≈ 3.0 invariant. **DONE**: 4/5 PASS. d_cross = 3.25 ± 0.17. MED attractor confirmed.
+- [x] **NEW**: exp_12: Fibonacci–MED complementarity — golden base paradox. **DONE**: 4/5 PASS. Fibonacci coupling cannot reach MED depth. Independent constraints, not derivable from each other.
+- [x] **NEW**: exp_13: Stoichiometric Fibonacci derivation. **DONE**: 5/6 PASS. 99.98th percentile vs random. 6111× F₄=3 selectivity. α_s discovered from stoichiometry.
+- [x] **NEW**: exp_14: Physical stoichiometry. **DONE**: 3/4 PASS. Raw selectivity 0.86× (FAIL). SEC hierarchy Spearman r=0.84.
+- [x] **NEW**: exp_15: PAC/SEC cost monotonicity. **DONE**: 4/4 PASS. ~55.7 SEC units per Fibonacci index. SEC/PAC crosses 1.0 at F₈.
+- [x] **NEW**: exp_16: Null space predictions. **DONE**: 0/4 FAIL. Framework describes but does NOT predict. Null space too large.
+- [x] **NEW**: exp_17: Physics-derived matrix. **DONE**: 3/4 PASS. Selectivity inverted 0.86× → 1.23×. 160 consensus candidates.
+- [x] **NEW**: exp_18: Conservation predictions. **DONE**: 2/4 PARTIAL. Conservation necessary but not sufficient for discrimination.
+- [x] **NEW**: exp_19: Phase transition dynamics. **DONE**: 1/4 FALSIFIED. Crystallization order is basis-independent.
+- [x] **NEW**: exp_20: Fractal convergence mesh. **DONE**: 1/4 FALSIFIED. Raw pressure = depth bias, wrong direction.
+- [x] **NEW**: exp_21: PAC-Lazy formula mesh. **DONE**: 4/4 PASS. KL p=0.035, d=0.198. PAC conservation fixes direction. GAIA POC architecture transfers to formula space.

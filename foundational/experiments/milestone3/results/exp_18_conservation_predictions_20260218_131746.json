@@ -1,0 +1,283 @@
+{
+  "metadata": {
+    "experiment": "exp_18_conservation_predictions",
+    "description": "Conservation-required predictions \u2014 what MUST happen for PAC to balance",
+    "paper": "Paper 4",
+    "section": "\u00a7predictions",
+    "timestamp": "2026-02-18T13:17:37.933810+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_exhaustion": {
+      "null_dim": 6,
+      "known_rank": 6,
+      "exhaustion": 1.0,
+      "singular_values": [
+        2.846473488808966,
+        1.811816142979831,
+        1.2504682044060285,
+        0.9046997392369225,
+        0.5055136502765883,
+        0.2779780780298928
+      ],
+      "passed": true
+    },
+    "test_2_cascade": {
+      "cascade": [
+        {
+          "step": 1,
+          "formula": "sin2_thetaW",
+          "rank": 1,
+          "exhaustion": 0.16666666666666666,
+          "rank_increase": 1
+        },
+        {
+          "step": 2,
+          "formula": "Koide",
+          "rank": 2,
+          "exhaustion": 0.3333333333333333,
+          "rank_increase": 1
+        },
+        {
+          "step": 3,
+          "formula": "She_Lev",
+          "rank": 3,
+          "exhaustion": 0.5,
+          "rank_increase": 1
+        },
+        {
+          "step": 4,
+          "formula": "nu_WF",
+          "rank": 4,
+          "exhaustion": 0.6666666666666666,
+          "rank_increase": 1
+        },
+        {
+          "step": 5,
+          "formula": "alpha_s",
+          "rank": 5,
+          "exhaustion": 0.8333333333333334,
+          "rank_increase": 1
+        },
+        {
+          "step": 6,
+          "formula": "alpha_em",
+          "rank": 6,
+          "exhaustion": 1.0,
+          "rank_increase": 1
+        },
+        {
+          "step": 7,
+          "formula": "Cabibbo",
+          "rank": 6,
+          "exhaustion": 1.0,
+          "rank_increase": 0
+        },
+        {
+          "step": 8,
+          "formula": "mu_e",
+          "rank": 6,
+          "exhaustion": 1.0,
+          "rank_increase": 0
+        },
+        {
+          "step": 9,
+          "formula": "p_e",
+          "rank": 6,
+          "exhaustion": 1.0,
+          "rank_increase": 0
+        },
+        {
+          "step": 10,
+          "formula": "tau_e",
+          "rank": 6,
+          "exhaustion": 1.0,
+          "rank_increase": 0
+        }
+      ],
+      "monotonic": true,
+      "threshold_80pct": 5,
+      "final_exhaustion": 1.0,
+      "passed": true
+    },
+    "test_3_cf_vs_physics": {
+      "n_matched": 163,
+      "n_unmatched": 123037,
+      "mean_cf_matched": 0.9999999999999997,
+      "mean_cf_unmatched": 1.0,
+      "difference": -3.3306690738754696e-16,
+      "mann_whitney_p": 0.9782404362913649,
+      "n_determined": 163,
+      "det_fraction": 1.0,
+      "top_matches": [
+        {
+          "expression": "V11/(V5*Xi)",
+          "target": "m_tau/m_mu",
+          "error_pct": 0.002387143070625484,
+          "cf": 1.0
+        },
+        {
+          "expression": "V2*V11/(V5*Xi)",
+          "target": "m_tau/m_mu",
+          "error_pct": 0.002387143070625484,
+          "cf": 0.9999999999999998
+        },
+        {
+          "expression": "V11*V2/(V5*Xi)",
+          "target": "m_tau/m_mu",
+          "error_pct": 0.002387143070625484,
+          "cf": 0.9999999999999998
+        },
+        {
+          "expression": "V4^2/(V6*V12)",
+          "target": "alpha_em_MZ",
+          "error_pct": 0.03828125000001334,
+          "cf": 1.0
+        },
+        {
+          "expression": "V4^2/(V12*V6)",
+          "target": "alpha_em_MZ",
+          "error_pct": 0.03828125000001334,
+          "cf": 1.0
+        },
+        {
+          "expression": "V4/(V6*phi)",
+          "target": "sin2_theta_eff",
+          "error_pct": 0.09187898130449358,
+          "cf": 1.0
+        },
+        {
+          "expression": "V4^2/(V2*V9)",
+          "target": "Omega_c",
+          "error_pct": 0.11098779134295607,
+          "cf": 1.0
+        },
+        {
+          "expression": "V4^2/(V9*V2)",
+          "target": "Omega_c",
+          "error_pct": 0.11098779134295607,
+          "cf": 1.0
+        },
+        {
+          "expression": "V3*Xi/V6",
+          "target": "Omega_c",
+          "error_pct": 0.1483500036663884,
+          "cf": 0.9999999999999991
+        },
+        {
+          "expression": "V3*V4/V5",
+          "target": "zeta_3",
+          "error_pct": 0.17111502791591138,
+          "cf": 1.0
+        },
+        {
+          "expression": "V4*V3/V5",
+          "target": "zeta_3",
+          "error_pct": 0.17111502791591138,
+          "cf": 1.0
+        },
+        {
+          "expression": "V9/(V3*V8)",
+          "target": "sigma_8",
+          "error_pct": 0.18202102049204927,
+          "cf": 0.9999999999999994
+        },
+        {
+          "expression": "V9/(V8*V3)",
+          "target": "sigma_8",
+          "error_pct": 0.18202102049204927,
+          "cf": 0.9999999999999994
+        },
+        {
+          "expression": "V7/(V3*V6)",
+          "target": "sigma_8",
+          "error_pct": 0.18495684340319923,
+          "cf": 0.9999999999999994
+        },
+        {
+          "expression": "V7/(V6*V3)",
+          "target": "sigma_8",
+          "error_pct": 0.18495684340319923,
+          "cf": 0.9999999999999994
+        }
+      ],
+      "passed": false
+    },
+    "test_4_specificity": {
+      "results_by_sequence": {
+        "Lucas": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 171,
+          "mean_cf_matched": 0.9999999999999999,
+          "det_fraction": 1.0
+        },
+        "Primes": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 201,
+          "mean_cf_matched": 0.9999999999999997,
+          "det_fraction": 1.0
+        },
+        "Tribonacci": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 264,
+          "mean_cf_matched": 0.9999999999999998,
+          "det_fraction": 1.0
+        },
+        "Random_0": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 167,
+          "mean_cf_matched": 0.9999999999999997,
+          "det_fraction": 1.0
+        },
+        "Random_1": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 172,
+          "mean_cf_matched": 1.0,
+          "det_fraction": 1.0
+        },
+        "Random_2": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 155,
+          "mean_cf_matched": 0.9999999999999997,
+          "det_fraction": 1.0
+        },
+        "Random_3": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 159,
+          "mean_cf_matched": 1.0,
+          "det_fraction": 1.0
+        },
+        "Random_4": {
+          "null_dim": 6,
+          "exhaustion": 1.0,
+          "n_matched": 220,
+          "mean_cf_matched": 1.0,
+          "det_fraction": 1.0
+        }
+      },
+      "fib_cf": 0.9999999999999997,
+      "alt_mean_cf": 0.9999999999999998,
+      "fib_z_score": -0.7071067811865475,
+      "passed": false
+    }
+  },
+  "summary": {
+    "total": 4,
+    "passed": 2,
+    "score": "2/4"
+  },
+  "falsification": {
+    "test_id": "experimental (not in registry)",
+    "hypothesis": "PAC conservation structure selects physics-matching formulas: Fibonacci matches have higher conservation fractions than random, and this property is Fibonacci-specific.",
+    "falsified_if": "Conservation fractions of physics matches are indistinguishable from non-matches, OR alternative sequences show identical pattern.",
+    "falsified": false,
+    "assessment": "2/4 tests pass."
+  }
+}

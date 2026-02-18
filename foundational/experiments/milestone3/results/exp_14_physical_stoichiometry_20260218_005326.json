@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "experiment": "exp_14_physical_stoichiometry",
+    "description": "Physical stoichiometry with improved null test",
+    "paper": "Paper 4",
+    "section": "\u00a7methodology",
+    "timestamp": "2026-02-18T00:53:16.629679+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_atomic_decomp": {
+      "rank": 6,
+      "null_dim": 5,
+      "avg_null_fraction": 0.5519196912045047,
+      "null_fractions": {
+        "sin\u00b2\u03b8_W (F\u2084,F\u2087)": 0.5095320802092146,
+        "Koide (F\u2082,F\u2083)": 0.9428962315908588,
+        "\u03bc/e (F\u2084,F\u2086,F\u2087)": 0.6240468020457236,
+        "\u03bd (F\u2084)": 0.1200978630493412,
+        "\u03b1 (F\u2083,F\u2084,F\u2087,F\u2081\u2080)": 0.5630254791273849
+      },
+      "passed": "True"
+    },
+    "test_2_joint_null": {
+      "single_rate_pct": 98.00999999999999,
+      "joint_rate_pct": 97.64,
+      "triple_rate_pct": 12.86,
+      "n_trials": 10000,
+      "passed": false
+    },
+    "test_3_fib_vs_random": {
+      "fib_matches": 6,
+      "fib_matched_targets": [
+        "1/\u03c6",
+        "2/3",
+        "sin\u00b2\u03b8_W",
+        "\u03b1_s (n/m\u00f7\u039e)",
+        "\u03bc/e",
+        "\u03bd_WF (n/m\u00f7\u039e)"
+      ],
+      "random_mean": 1.9283,
+      "random_median": 2.0,
+      "random_max": 6,
+      "fib_percentile": 99.98,
+      "prime_matches": 5,
+      "pow2_matches": 1,
+      "passed": true
+    },
+    "test_4_sec_violation": {
+      "violations": {
+        "sin\u00b2\u03b8_W": {
+          "violation": 19.570385790780925,
+          "null_frac": 0.730208721902692
+        },
+        "2/3 (Koide)": {
+          "violation": 6.244997998398398,
+          "null_frac": 0.9092595219499192
+        },
+        "She-Lev \u03b2": {
+          "violation": 8.717797887081348,
+          "null_frac": 0.9275657222124577
+        },
+        "\u03bd_WF": {
+          "violation": 5.0990195135927845,
+          "null_frac": 0.9307875198031357
+        },
+        "Cabibbo": {
+          "violation": 19.570385790780925,
+          "null_frac": 0.730208721902692
+        },
+        "\u03b1_s": {
+          "violation": 14.933184523068078,
+          "null_frac": 0.7300923457266476
+        },
+        "\u03bc/e": {
+          "violation": 29.49576240750525,
+          "null_frac": 0.7545899155294705
+        },
+        "\u03b1_em": {
+          "violation": 76.93503753167343,
+          "null_frac": 0.6988790703295377
+        },
+        "\u03c4/e": {
+          "violation": 113.46365056704283,
+          "null_frac": 0.6169098978883293
+        },
+        "p/e": {
+          "violation": 191.53328692423153,
+          "null_frac": 0.6075121523324297
+        }
+      },
+      "mean_by_complexity": {
+        "fundamental": 11.511060558753556,
+        "derived": 13.20086327581393,
+        "composite": 102.85693435761326
+      },
+      "hierarchy_holds": "True",
+      "correlation": 0.836887429247747,
+      "passed": "True"
+    }
+  },
+  "summary": {
+    "total_tests": 4,
+    "passed": 3,
+    "score": "3/4"
+  }
+}

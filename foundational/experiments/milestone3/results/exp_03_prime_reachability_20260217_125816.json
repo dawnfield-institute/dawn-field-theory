@@ -1,0 +1,42 @@
+{
+  "experiment": "exp_03_prime_reachability",
+  "description": "Prime cascade reachability with formal null model comparison",
+  "paper": "Paper 1",
+  "section": "\u00a713 (prime structure)",
+  "timestamp": "2026-02-17T12:58:15.829377+00:00",
+  "milestone": "milestone3",
+  "limit": 10000,
+  "tests": {
+    "coverage_comparison": {
+      "prime_coverage_mean": 0.0,
+      "prime_coverage_std": 0.0,
+      "composite_coverage_mean": 0.08378722072911407,
+      "composite_coverage_std": 0.17414296534721874,
+      "mann_whitney_U": 0.0,
+      "mann_whitney_p": 0.0,
+      "prime_zero_fraction": 1.0,
+      "composite_zero_fraction": 0.00045610034207525655
+    },
+    "cramer_null": {
+      "cramer_zero_mean": 0.7323779243354366,
+      "cramer_zero_std": 0.018549429007962557,
+      "observed_zero": 1.0,
+      "z_score": 14.427510170242089,
+      "cramer_exceeds_observed": 0,
+      "n_simulations": 50
+    },
+    "effect_size": {
+      "cohens_d": 0.68043531745541,
+      "interpretation": "medium"
+    }
+  },
+  "falsification": {
+    "test_id": "F3",
+    "hypothesis": "Prime cascade reachability is non-trivially low",
+    "mann_whitney_p": 0.0,
+    "cramer_z_score": 14.427510170242089,
+    "effect_size": 0.68043531745541,
+    "falsified": "False",
+    "assessment": "Mann-Whitney p = 0.00e+00, Cram\u00e9r z = 14.43, Cohen's d = 0.6804. NOT FALSIFIED: cascade adds explanatory power beyond Cram\u00e9r. NOTE: This uses N=10000; energy_equivalence used N=100000. Scale up for publication."
+  }
+}

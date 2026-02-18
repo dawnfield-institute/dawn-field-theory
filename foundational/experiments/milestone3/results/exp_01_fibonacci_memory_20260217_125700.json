@@ -1,0 +1,167 @@
+{
+  "experiment": "exp_01_fibonacci_memory",
+  "description": "Two-step Landauer memory \u2192 Fibonacci derivation",
+  "paper": "Paper 1",
+  "section": "\u00a75 (new section: Why Fibonacci)",
+  "timestamp": "2026-02-17T12:57:00.285311+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "landauer_weights": {
+      "n_trials": 100,
+      "w1_mean": 0.9990455108278232,
+      "w1_std": 0.0002593012170301645,
+      "w2_mean": 0.0009544891721769947,
+      "w2_std": 0.00025930121703016443,
+      "limiting_ratio_mean": 1.0,
+      "limiting_ratio_std": 5.3244425794049196e-17,
+      "analytical_ratio": 1.0000000000000002,
+      "target_inv_phi": 0.6180339887498948,
+      "target_phi": 1.618033988749895,
+      "deviation_from_inv_phi_pct": 61.803398874989504,
+      "deviation_from_phi_pct": 38.1966011250105
+    },
+    "alternative_weights": {
+      "uniform": {
+        "w1": 0.5,
+        "w2": 0.5,
+        "limiting_ratio": 1.0,
+        "deviation_from_landauer_pct": 0.0
+      },
+      "heavy_w1": {
+        "w1": 0.8,
+        "w2": 0.2,
+        "limiting_ratio": 1.0,
+        "deviation_from_landauer_pct": 0.0
+      },
+      "heavy_w2": {
+        "w1": 0.2,
+        "w2": 0.8,
+        "limiting_ratio": 0.9999999999999996,
+        "deviation_from_landauer_pct": 4.440892098500626e-14
+      },
+      "equal_small": {
+        "w1": 0.3,
+        "w2": 0.3,
+        "limiting_ratio": 0.7178908345800274,
+        "deviation_from_landauer_pct": 28.210916541997257
+      },
+      "fibonacci_exact": {
+        "w1": 1.0,
+        "w2": 1.0,
+        "limiting_ratio": 1.618033988749895,
+        "deviation_from_landauer_pct": 61.80339887498949
+      },
+      "random_1": {
+        "w1": 0.7739560485559633,
+        "w2": 0.4388784397520523,
+        "limiting_ratio": 1.1542005676290896,
+        "deviation_from_landauer_pct": 15.420056762908963
+      },
+      "random_2": {
+        "w1": 0.8585979199113825,
+        "w2": 0.6973680290593639,
+        "limiting_ratio": 1.3682694739114822,
+        "deviation_from_landauer_pct": 36.826947391148224
+      },
+      "random_3": {
+        "w1": 0.09417734788764953,
+        "w2": 0.9756223516367559,
+        "limiting_ratio": 1.0359464353010617,
+        "deviation_from_landauer_pct": 3.5946435301061674
+      }
+    },
+    "memory_depth": {
+      "1_step": {
+        "weights": [
+          0.9990455108278232
+        ],
+        "limiting_ratio": 0.9990455108278231,
+        "converged": true
+      },
+      "2_step": {
+        "weights": [
+          0.9990455108278232,
+          0.4995227554139116
+        ],
+        "limiting_ratio": 1.3649970407570513,
+        "converged": true
+      },
+      "3_step": {
+        "weights": [
+          0.9990455108278232,
+          0.4995227554139116,
+          0.2497613777069558
+        ],
+        "limiting_ratio": 1.4588211519605396,
+        "converged": true
+      },
+      "4_step": {
+        "weights": [
+          0.9990455108278232,
+          0.4995227554139116,
+          0.2497613777069558,
+          0.1248806888534779
+        ],
+        "limiting_ratio": 1.4862487735739496,
+        "converged": true
+      },
+      "5_step": {
+        "weights": [
+          0.9990455108278232,
+          0.4995227554139116,
+          0.2497613777069558,
+          0.1248806888534779,
+          0.06244034442673895
+        ],
+        "limiting_ratio": 1.494863085390826,
+        "converged": true
+      }
+    },
+    "temperature_sweep": {
+      "T=0.1": {
+        "temperature": 0.1,
+        "w1": 0.9883277925591609,
+        "w2": 0.011672207440839046,
+        "limiting_ratio": 1.0
+      },
+      "T=0.5": {
+        "temperature": 0.5,
+        "w1": 0.9976655585118219,
+        "w2": 0.00233444148817806,
+        "limiting_ratio": 1.0
+      },
+      "T=1.0": {
+        "temperature": 1.0,
+        "w1": 0.9988327792559059,
+        "w2": 0.0011672207440941555,
+        "limiting_ratio": 1.0
+      },
+      "T=2.0": {
+        "temperature": 2.0,
+        "w1": 0.9994163896279529,
+        "w2": 0.0005836103720470777,
+        "limiting_ratio": 1.0
+      },
+      "T=5.0": {
+        "temperature": 5.0,
+        "w1": 0.9997665558511817,
+        "w2": 0.00023344414881831853,
+        "limiting_ratio": 1.0
+      },
+      "T=10.0": {
+        "temperature": 10.0,
+        "w1": 0.9998832779255908,
+        "w2": 0.00011672207440915927,
+        "limiting_ratio": 1.0
+      }
+    }
+  },
+  "falsification": {
+    "test_id": "F1",
+    "hypothesis": "Two-step Landauer memory uniquely selects Fibonacci",
+    "w2_over_w1": 0.0009554010921745611,
+    "fibonacci_w2_over_w1": 1.0,
+    "gap": 0.9990445989078255,
+    "assessment": "HONEST NOTE: The two-step recurrence always converges to (w1+sqrt(w1^2+4w2))/2, which equals phi only when w2/w1 = 1. Landauer physics gives a specific w2/w1 ratio that may or may not equal 1. The \"why Fibonacci\" question reduces to why w2/w1 \u2192 1 in Landauer cascades. This needs further investigation."
+  }
+}

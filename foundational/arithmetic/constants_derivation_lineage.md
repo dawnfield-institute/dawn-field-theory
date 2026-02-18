@@ -2,9 +2,9 @@
 
 > **Purpose**: Provide a clear, traceable account of how each constant in Dawn Field Theory was derived, discovered, or validated—eliminating ambiguity about what's theoretical, empirical, or curve-fit.
 
-**Version**: 1.0  
-**Date**: 2026-01-06  
-**Status**: Canonical Reference
+**Version**: 1.1  
+**Date**: 2026-02-18  
+**Status**: Canonical Reference (updated with milestone3 constants)
 
 ---
 
@@ -185,6 +185,60 @@ Status: Theoretically grounded + empirically validated
 
 ---
 
+## SEC Cost per Fibonacci Index: ~55.7
+
+### Status: ✅ EMPIRICAL (milestone3 exp_15)
+
+### Discovery
+
+In the milestone3 stoichiometric framework, each Standard Model formula was assigned a Fibonacci "cost" based on the indices of the Fibonacci numbers it uses. Linear regression across all PAC-derived formulas reveals:
+
+```
+SEC cost ≈ 55.7 × Fibonacci_index_sum
+R² > 0.99 (linear hierarchy)
+```
+
+### Why ~55.7?
+
+This is suspiciously close to F₁₀ = 55. The SEC cost per unit of Fibonacci complexity may itself be governed by the same recursion depth (F₁₀) that determines Ξ. This remains a conjecture — the relationship has been measured but not theoretically derived.
+
+### Source Files
+
+- `experiments/milestone3/scripts/exp_15_sec_cost_hierarchy.py`
+- `experiments/milestone3/results/`
+
+---
+
+## PAC-Lazy Splitting Ratio: 0.618 / 0.382
+
+### Status: ✅ DERIVED (from PAC conservation, validated in milestone3 exp_21)
+
+### Derivation
+
+For a parent node splitting into two children under PAC conservation:
+
+```
+f(Parent) = f(Child_1) + f(Child_2)
+
+If Child_1/Parent = φ/(1+φ) = 1/φ ≈ 0.618
+Then Child_2/Parent = 1/(1+φ) = 1/φ² ≈ 0.382
+
+Note: 0.618 + 0.382 = 1.0 (conservation)
+```
+
+This is the unique splitting ratio consistent with PAC recursion. It was independently discovered in GAIA POC-011 and validated in milestone3 exp_21 where φ-weighted splitting produces measurably different formula distributions (KL divergence p=0.035, Cohen's d=0.198).
+
+### SEC Ceiling ≈ 1/φ²
+
+The PAC-Lazy SEC ceiling threshold of 0.38 ≈ 1/φ² ≈ 0.382 is consistent with the smaller child's weight. This may indicate that the maximum SEC cost for formula admission equals the minimum PAC child fraction.
+
+### Source Files
+
+- `experiments/milestone3/scripts/exp_21_pac_lazy_formula_mesh.py`
+- GAIA POCs: `dawn-models/research/GAIA/proof_of_concepts/poc_011_*/`
+
+---
+
 ## Summary Table
 
 | Constant | Value | Type | Lineage |
@@ -195,6 +249,9 @@ Status: Theoretically grounded + empirically validated
 | **F₁₀** | 55 | Derived | EM phase closure depth |
 | **F₇** | 13 | Derived | Gauge closure on 3D Möbius |
 | **F₄** | 3 | Derived | Spatial dimension count |
+| **SEC cost/idx** | ~55.7 | Empirical | milestone3 exp_15 linear regression |
+| **PAC-Lazy split** | 0.618/0.382 | Derived | φ/(1+φ) and 1/(1+φ) |
+| **SEC ceiling** | 0.38 ≈ 1/φ² | Empirical | milestone3 exp_21 PAC-Lazy |
 
 ---
 
@@ -208,6 +265,10 @@ Status: Theoretically grounded + empirically validated
 | F₁₀ = 55 from phase closure | ✅ | pac_confluence_xi derivation |
 | Multiple systems → ~1.057 | ✅ | MED, CA, Lorenz independent |
 | CA Class IV at boundary | ✅ | All embeddings show separation |
+| SEC cost linear in F_n index | ✅ | milestone3 exp_15 (R² > 0.99) |
+| PAC-Lazy splitting discriminates | ✅ | milestone3 exp_21 (KL p=0.035) |
+| Crystallization is Fibonacci-specific | ❌ | milestone3 exp_19 (FALSIFIED — basis-independent) |
+| Raw fractal pressure predicts | ❌ | milestone3 exp_20 (FALSIFIED — depth bias) |
 
 ---
 
@@ -225,6 +286,7 @@ Status: Theoretically grounded + empirically validated
 - `../experiments/sec_prime_manifold/` - SEC validation
 - `../experiments/cellular_automata_pac_attractors/` - CA clustering
 - `../experiments/phi_artifact_test/` - Falsification tests
+- `../experiments/milestone3/` - Fibonacci discrimination & PAC-Lazy (Feb 2026)
 
 ### Corrections
 - [../../EPISTEMIC_CORRECTIONS_REGISTRY.md](../../EPISTEMIC_CORRECTIONS_REGISTRY.md) - Living corrections

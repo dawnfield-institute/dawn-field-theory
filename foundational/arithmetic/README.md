@@ -18,6 +18,10 @@ This Fibonacci recursion, governing how potential actualizes into observable str
 | **Neutrino Mixing** | θ₁₂ = arctan(2/3), θ₁₃ = arctan(2/13) | ✅ <0.3° error |
 | **Semantic Collapse** | Distance-energy equivalence | ✅ 7 experiments |
 | **Balance Operator** | Ξ ≈ 1.0571 | ✅ MED validation |
+| **Stoichiometric Fibonacci** | SM formulas from integer-constrained F_n | ✅ 99.98th percentile |
+| **SEC Cost Hierarchy** | ~55.7 SEC units per Fibonacci index | ✅ Linear (R² > 0.99) |
+| **PAC-Lazy Formula Mesh** | φ-weighted splitting discriminates formulas | ✅ KL p=0.035, d=0.198 |
+| **Fibonacci-MED Complementarity** | Golden base paradox: φ²=2.618 < d_cross≈3.1 | ⚠️ Partial |
 
 ---
 
@@ -235,6 +239,63 @@ The standalone `PACEngine.py` file represents an earlier implementation. Current
 
 ---
 
+### 7. Milestone 3: Fibonacci Discrimination & PAC-Lazy Architecture (Feb 2026)
+
+**Status**: ✅ Complete — 21 experiments, 19 falsification tests
+
+The [`../experiments/milestone3/`](../experiments/milestone3/) campaign tested whether Fibonacci arithmetic **discriminates** (predicts unique outcomes) rather than merely **describes** (fits post-hoc). This is the critical epistemological question for the entire arithmetic programme.
+
+#### Block E: Stoichiometric Framework (exp_11–15)
+
+Treats Standard Model formulas as integer-constrained Fibonacci "recipes":
+
+| Experiment | Finding | Status |
+|------------|---------|--------|
+| exp_11 (Depth Profile) | F_n usage frequency decays as expected | ✅ Baseline |
+| exp_12 (Golden Base) | φ²=2.618 < d_cross≈3.1, Fibonacci-MED complementarity | ⚠️ Partial |
+| exp_13 (Random Formulas) | PAC formulas at 99.98th percentile vs random | ✅ PASS |
+| exp_14 (Physics Selectivity) | 0.86× selectivity — physics-derived ≤ PAC | ❌ FAIL |
+| exp_15 (SEC Cost) | ~55.7 SEC units per Fibonacci index, linear hierarchy | ✅ PASS |
+
+**Key insight**: PAC formulas are overwhelmingly non-random (exp_13), but physics-derived formulas share the same selectivity (exp_14). The Fibonacci basis may be necessary but not sufficient.
+
+#### Block F: Prediction & Discrimination (exp_16–21)
+
+Pushed from "is it special?" to "does it predict?":
+
+| Experiment | Finding | Status |
+|------------|---------|--------|
+| exp_16 (Null Space) | Null-space prediction failed completely | ❌ FAIL |
+| exp_17 (Matrix Selectivity) | 1.23× selectivity after proper matrix formulation | ✅ PASS |
+| exp_18 (Conservation) | Conservation discrimination inconclusive | ⚠️ PARTIAL |
+| exp_19 (Phase Transitions) | Crystallization is basis-independent, not Fibonacci-specific | ❌ FALSIFIED |
+| exp_20 (Fractal Mesh) | Raw pressure = depth bias, wrong direction | ❌ FALSIFIED |
+| exp_21 (PAC-Lazy) | KL p=0.035, d=0.198, SEC gating +11.7% | ✅ PASS |
+
+**Honest falsifications**: exp_19 showed that crystallization order doesn't prefer Fibonacci over other integer bases. exp_20 showed raw fractal pressure is a depth artefact.
+
+**Breakthrough**: exp_21 (PAC-Lazy) successfully discriminated — φ-weighted splitting (0.618/0.382) with depth-dependent SEC thresholds produces measurably different formula distributions than uniform splitting. This architecture transfers directly from GAIA POCs 011/016–018.
+
+#### New Arithmetic Constants & Relationships
+
+| Constant | Value | Source | Interpretation |
+|----------|-------|--------|----------------|
+| SEC cost/index | ~55.7 | exp_15 | Linear cost hierarchy for Fibonacci formulas |
+| PAC-Lazy split | 0.618 / 0.382 | exp_21 | φ/(1+φ) and 1/(1+φ) child weighting |
+| SEC base threshold | 0.10 | exp_21 | Minimum SEC cost for formula admission |
+| SEC ceiling | 0.38 | exp_21 | Maximum SEC cost (≈ 1/φ² ≈ 0.382) |
+| SEC gamma | 0.5 | exp_21 | Depth-scaling exponent |
+| KL divergence | p=0.035 | exp_21 | Formula distribution discrimination |
+
+#### Cross-References
+
+- **Paper 4** (PAC Series): Stoichiometric framework + discrimination tests
+- **Paper 2**: Fibonacci-MED complementarity (exp_12)
+- **Paper 6** (GAIA): PAC-Lazy architecture transfer from POCs
+- **Constants Lineage**: See [constants_derivation_lineage.md](constants_derivation_lineage.md) for SEC cost and PAC-Lazy provenance
+
+---
+
 ## Integration Architecture
 
 ```
@@ -353,12 +414,21 @@ where:
 3. **Context Stability**: Why are real embeddings context-invariant (0.99×) unlike synthetic (7.42×)?
 4. **Irreversibility Origin**: What causes 40% reconstruction error in real collapse?
 
+### Milestone 3 Follow-Up Questions (Feb 2026)
+
+1. **Why does SEC ceiling ≈ 1/φ²?** The PAC-Lazy ceiling of 0.38 is suspiciously close to 1/φ² ≈ 0.382. Is this coincidence or does it emerge from PAC conservation?
+2. **Fibonacci vs other integer bases**: exp_19 showed crystallization is basis-independent. What *is* specific to Fibonacci?
+3. **PAC-Lazy scaling**: Does KL discrimination improve with formula count? Current d=0.198 is small but significant.
+4. **SEC cost linearity**: Why ~55.7 SEC units per index? Is this related to F₁₀ = 55?
+5. **Physics-derives-PAC paradox**: Why did physics-derived formulas score ≤ PAC formulas (exp_14)? Does this mean PAC describes physics, or physics already uses PAC structure?
+
 ### Long-Term Questions (Require Further Theory)
 
 1. **Model Architecture Impact**: How do transformer layers affect c²?
 2. **Training Data Influence**: Does corpus composition determine amplification?
 3. **Semantic Field Theory**: Can we derive amplification from first principles?
 4. **Quantum Analogies**: Do collapse operations exhibit quantum-like properties?
+5. **PAC-Lazy → GAIA pipeline**: Can the milestone3 formula mesh serve as the initialization for GAIA's recursive architecture?
 
 ---
 
@@ -395,4 +465,4 @@ If you use this framework in your research, please cite:
 
 ---
 
-**Last Updated**: 2024 (Version 2.0 - Post Experimental Validation)
+**Last Updated**: 2026-02-18 (Version 3.0 — Milestone 3 arithmetic integration)

@@ -1,0 +1,431 @@
+{
+  "experiment": "exp_02_ln_phi_global_invariance",
+  "description": "A/(A+\u03be) \u2248 ln(\u03c6) PAC-global invariance test",
+  "paper": "Paper 1",
+  "section": "\u00a76 (Landauer partition ratio)",
+  "timestamp": "2026-02-17T15:33:43.323996+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "ensemble_convergence": {
+      "n_seeds": 100,
+      "n_samples": 200000,
+      "n_env": 20,
+      "mean": 0.48645253580723735,
+      "std": 0.04125087208368485,
+      "se": 0.004125087208368485,
+      "ci_95_low": 0.47836736487883513,
+      "ci_95_high": 0.49453770673563957,
+      "ln_phi": 0.48121182505960347,
+      "ln_phi_in_ci": "True",
+      "deviation_pct": 1.089065246263381,
+      "status": "PASS"
+    },
+    "running_convergence": {
+      "running_means": {
+        "10": 0.47290715984760556,
+        "25": 0.4732304290959255,
+        "50": 0.47936110919563063,
+        "100": 0.48645253580723746
+      },
+      "first_stable_n": 7,
+      "converges_within_2pct": true
+    },
+    "parameter_grid": {
+      "n_configs": 9,
+      "seeds_per_cell": 30,
+      "ci_contains_count": 3,
+      "ci_containment_fraction": 0.3333333333333333,
+      "grand_mean": 0.5032333756054268,
+      "inter_config_cv": 0.019804640929119925,
+      "grid_results": [
+        {
+          "n_env": 10,
+          "coupling_strength": 0.6,
+          "flip_decay": 0.3,
+          "mean": 0.4947954676150629,
+          "std": 0.03382261648683197,
+          "se": 0.006175136667894668,
+          "ci_95": [
+            0.4826921997459893,
+            0.5068987354841364
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 2.822798993723174
+        },
+        {
+          "n_env": 10,
+          "coupling_strength": 0.8,
+          "flip_decay": 0.3,
+          "mean": 0.5001905258597471,
+          "std": 0.04398626464443946,
+          "se": 0.008030756455383816,
+          "ci_95": [
+            0.4844502432071948,
+            0.5159308085122993
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 3.943938991481123
+        },
+        {
+          "n_env": 10,
+          "coupling_strength": 0.8,
+          "flip_decay": 0.5,
+          "mean": 0.5130336933704378,
+          "std": 0.04319963472255784,
+          "se": 0.007887138137842786,
+          "ci_95": [
+            0.49757490262026594,
+            0.5284924841206097
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 6.61286083460082
+        },
+        {
+          "n_env": 20,
+          "coupling_strength": 0.6,
+          "flip_decay": 0.3,
+          "mean": 0.4950730399453145,
+          "std": 0.03883024617873961,
+          "se": 0.007089400581858155,
+          "ci_95": [
+            0.4811778148048725,
+            0.5089682650857564
+          ],
+          "ln_phi_in_ci": "True",
+          "deviation_pct": 2.8804809366424338
+        },
+        {
+          "n_env": 20,
+          "coupling_strength": 0.8,
+          "flip_decay": 0.3,
+          "mean": 0.4959080498013996,
+          "std": 0.05225926904408223,
+          "se": 0.009541193498058424,
+          "ci_95": [
+            0.47720731054520504,
+            0.5146087890575941
+          ],
+          "ln_phi_in_ci": "True",
+          "deviation_pct": 3.0540032427457104
+        },
+        {
+          "n_env": 20,
+          "coupling_strength": 0.8,
+          "flip_decay": 0.5,
+          "mean": 0.5209192461264736,
+          "std": 0.05294751934398046,
+          "se": 0.009666850236213078,
+          "ci_95": [
+            0.5019722196634959,
+            0.5398662725894512
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 8.251547239503493
+        },
+        {
+          "n_env": 30,
+          "coupling_strength": 0.6,
+          "flip_decay": 0.3,
+          "mean": 0.4960986941529772,
+          "std": 0.03500199478753651,
+          "se": 0.0063904607009373305,
+          "ci_95": [
+            0.48357339117914,
+            0.5086239971268144
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 3.0936207961077886
+        },
+        {
+          "n_env": 30,
+          "coupling_strength": 0.8,
+          "flip_decay": 0.3,
+          "mean": 0.4962542588961399,
+          "std": 0.0447686239153384,
+          "se": 0.008173595062298698,
+          "ci_95": [
+            0.4802340125740344,
+            0.5122745052182454
+          ],
+          "ln_phi_in_ci": "True",
+          "deviation_pct": 3.1259485019249564
+        },
+        {
+          "n_env": 30,
+          "coupling_strength": 0.8,
+          "flip_decay": 0.5,
+          "mean": 0.5168274046812886,
+          "std": 0.05584056850997152,
+          "se": 0.010195046332274681,
+          "ci_95": [
+            0.4968451138700303,
+            0.536809695492547
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 7.401227020402869
+        }
+      ],
+      "status": "FAIL"
+    },
+    "global_coupling_scaling": {
+      "global_results": [
+        {
+          "n_env": 5,
+          "n_coupling": 5,
+          "mean": 0.484176449898332,
+          "std": 0.044163180988543195,
+          "ci_95": [
+            0.47049013831541175,
+            0.4978627614812522
+          ],
+          "ln_phi_in_ci": "True",
+          "deviation_pct": 0.6160748103730203
+        },
+        {
+          "n_env": 8,
+          "n_coupling": 8,
+          "mean": 0.4527632361107047,
+          "std": 0.041780144516288656,
+          "ci_95": [
+            0.439815435181743,
+            0.4657110370396664
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 5.9118640622297915
+        },
+        {
+          "n_env": 10,
+          "n_coupling": 10,
+          "mean": 0.44923873928137803,
+          "std": 0.041962448129855716,
+          "ci_95": [
+            0.43623444187725036,
+            0.4622430366855057
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 6.644285138725595
+        },
+        {
+          "n_env": 12,
+          "n_coupling": 12,
+          "mean": 0.4506587827669842,
+          "std": 0.04746312434314457,
+          "ci_95": [
+            0.43594980814335643,
+            0.4653677573906119
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 6.34918775922328
+        },
+        {
+          "n_env": 15,
+          "n_coupling": 15,
+          "mean": 0.49603293780402014,
+          "std": 0.07243433293492418,
+          "ci_95": [
+            0.4735853054628278,
+            0.5184805701452124
+          ],
+          "ln_phi_in_ci": "True",
+          "deviation_pct": 3.0799560552322056
+        },
+        {
+          "n_env": 20,
+          "n_coupling": 20,
+          "mean": 0.5942571656640057,
+          "std": 0.09612528252620822,
+          "ci_95": [
+            0.5644676319800255,
+            0.6240466993479858
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 23.491804381656717
+        }
+      ],
+      "converging": false,
+      "last_3_ci_contain": false,
+      "interpretation": "With GLOBAL coupling (nc=n_env), does the ratio converge to ln(\u03c6) as environment grows? Small environments are finite-size biased (1 bit into few modes saturates). Large environments give conservation enough DOF to find equilibrium partition."
+    },
+    "local_vs_global": {
+      "scope_results": [
+        {
+          "n_coupling": 3,
+          "n_env": 20,
+          "mean": 0.5653566290853653,
+          "std": 0.06241699122483162,
+          "ci_95": [
+            0.5460134031027747,
+            0.584699855067956
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 17.48602167358202
+        },
+        {
+          "n_coupling": 5,
+          "n_env": 20,
+          "mean": 0.4894283909467367,
+          "std": 0.05138447574920863,
+          "ci_95": [
+            0.47350417693210045,
+            0.5053526049613729
+          ],
+          "ln_phi_in_ci": "True",
+          "deviation_pct": 1.7074738107517404
+        },
+        {
+          "n_coupling": 7,
+          "n_env": 20,
+          "mean": 0.4572208591455267,
+          "std": 0.04621435557394027,
+          "ci_95": [
+            0.44289888197289284,
+            0.4715428363181605
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 4.985531249383833
+        },
+        {
+          "n_coupling": 10,
+          "n_env": 20,
+          "mean": 0.4477090859105797,
+          "std": 0.04246774959502091,
+          "ci_95": [
+            0.43454819396002764,
+            0.4608699778611317
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 6.962160405113509
+        },
+        {
+          "n_coupling": 15,
+          "n_env": 20,
+          "mean": 0.5039763040414413,
+          "std": 0.06756849534883402,
+          "ci_95": [
+            0.48303661039090606,
+            0.5249159976919766
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 4.730656604088694
+        },
+        {
+          "n_coupling": 20,
+          "n_env": 20,
+          "mean": 0.6088326381548084,
+          "std": 0.085206801889738,
+          "ci_95": [
+            0.5824267766759978,
+            0.6352384996336189
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 26.520714257052525
+        }
+      ],
+      "global_closer": false,
+      "interpretation": "Compares local (nc<n_env) vs global (nc=n_env) coupling. If A/(A+\u03be) = ln(\u03c6) is global conservation, it should emerge most cleanly when all modes participate. Local coupling is how conservation operationalizes via proximity (gravity/EM). Entanglement-like correlations (corr_strength) maintain conservation balance across uncoupled modes too \u2014 analog, not digital."
+    },
+    "global_decay_invariance": {
+      "decay_results": [
+        {
+          "flip_decay": 0.1,
+          "mean": 0.43401570327085837,
+          "std": 0.10192107018419716,
+          "ci_95": [
+            0.4024300363831522,
+            0.4656013701585645
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 9.80776434222067
+        },
+        {
+          "flip_decay": 0.2,
+          "mean": 0.5440822232961171,
+          "std": 0.09928247714789572,
+          "ci_95": [
+            0.5133142648620822,
+            0.574850181730152
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 13.065015230813673
+        },
+        {
+          "flip_decay": 0.3,
+          "mean": 0.5837303367960134,
+          "std": 0.0880851320816888,
+          "ci_95": [
+            0.5564324715492727,
+            0.6110282020427541
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 21.30423784239131
+        },
+        {
+          "flip_decay": 0.5,
+          "mean": 0.6667748870469523,
+          "std": 0.07770955047220372,
+          "ci_95": [
+            0.6426924478538346,
+            0.69085732624007
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 38.56161721802343
+        },
+        {
+          "flip_decay": 0.8,
+          "mean": 0.7101602464904839,
+          "std": 0.06759640134196124,
+          "ci_95": [
+            0.6892119046830809,
+            0.7311085882978869
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 47.5774720212918
+        },
+        {
+          "flip_decay": 1.5,
+          "mean": 0.712679041414558,
+          "std": 0.06555116096203445,
+          "ci_95": [
+            0.6923645261675403,
+            0.7329935566615756
+          ],
+          "ln_phi_in_ci": "False",
+          "deviation_pct": 48.100899500190934
+        }
+      ],
+      "deviation_range_pct": 38.29313515797026,
+      "ci_containment": "0/6",
+      "conservation_robust": false,
+      "interpretation": "Under global coupling, if PAC conservation drives the ratio, the decay rate (proximity weighting) should have limited effect. Small range = conservation-dominated. Large range = coupling geometry matters more than conservation."
+    },
+    "variance_decomposition": {
+      "within_config_var": 0.0019692897615482745,
+      "between_config_var": 9.93282580463391e-05,
+      "total_var": 0.0020686180195946136,
+      "sec_local_fraction": 0.9519832771901482,
+      "sec_dominates": true,
+      "interpretation": "SEC-local dynamics account for 95% of total variance. Systematic parameter effects account for 5%. Per exp_19/exp_20: SEC dominance means per-seed stochasticity is the primary source of variation, not parameter sensitivity."
+    }
+  },
+  "falsification": {
+    "test_id": "F2",
+    "hypothesis": "A/(A+\u03be) converges to ln(\u03c6) as a PAC global conservation invariant. Coupling geometry (proximity, decay) is how conservation operationalizes \u2014 analog, not digital. Per-seed variation is SEC-local stochasticity.",
+    "chain": [
+      "Step 1 (ensemble convergence): PASS (ln(\u03c6) in 95% CI)",
+      "Step 2 (parameter grid CI): FAIL (3/9 configs contain ln(\u03c6))",
+      "Step 3 (global coupling convergence): FAIL (ratio approaches ln(\u03c6) with increasing N)",
+      "Step 4 (global coupling CI): FAIL (last 3 env sizes contain ln(\u03c6))",
+      "Step 5 (decay-rate robustness): FAIL (deviation range under global coupling)",
+      "Step 6 (SEC dominance): PASS (SEC = 95% of variance)"
+    ],
+    "n_pass": "2/6",
+    "falsified": true,
+    "prior_evidence": {
+      "exp_04": "50 seeds: 0.491 \u00b1 0.035, 2.05% from ln(\u03c6)",
+      "exp_20": "Full param grid: ln(\u03c6) within CI at all cells",
+      "exp_22": "Inter-CV=6.9% (SEC-local by 5% cutoff, not by CI)",
+      "exp_23": "N\u2192\u221e \u2192 0.490 (borderline, 1.77% above)"
+    },
+    "honest_assessment": "The ratio A/(A+\u03be) = ln(\u03c6) is tested as a PAC global conservation invariant \u2014 not a property of specific coupling geometry. Proximity (flip_decay) is how conservation operationalizes locally, but entanglement-like correlations (corr_strength) maintain balance across uncoupled modes. The test is: under global coupling (nc=n_env), does the ratio converge to ln(\u03c6) regardless of decay geometry? If yes, ln(\u03c6) is a conservation partition. If the ratio depends critically on decay rate, its analog not digital nature matters and more work is needed."
+  }
+}

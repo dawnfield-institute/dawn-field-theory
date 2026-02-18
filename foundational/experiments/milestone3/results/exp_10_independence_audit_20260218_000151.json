@@ -1,0 +1,217 @@
+{
+  "experiment": "exp_10_independence_audit",
+  "description": "Cross-domain independence audit \u2014 structural correlation test",
+  "paper": "All Papers",
+  "section": "Meta-analysis",
+  "timestamp": "2026-02-18T00:01:47.179658+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "structural_overlap": {
+      "n_claims": 14,
+      "n_effective": 7.894070593920877,
+      "independence_ratio": 0.5638621852800626,
+      "top_correlated_pairs": [
+        [
+          "alpha_em",
+          "sin2_theta_w",
+          1.0
+        ],
+        [
+          "alpha_em",
+          "F8_alpha_LEE",
+          1.0
+        ],
+        [
+          "sin2_theta_w",
+          "feigenbaum",
+          0.6666666666666666
+        ],
+        [
+          "sin2_theta_w",
+          "rule110_phi",
+          0.6666666666666666
+        ],
+        [
+          "sin2_theta_w",
+          "F8_alpha_LEE",
+          0.6666666666666666
+        ]
+      ],
+      "eigenvalues": [
+        3.9814880105309514,
+        3.3564651936836962,
+        1.5873126322675335,
+        1.1806635695969419,
+        0.8274607644115828
+      ]
+    },
+    "domain_independence": {
+      "n_domains": 9,
+      "n_independent_domains": 4.154770877029397,
+      "domains": {
+        "particle_physics": {
+          "n_claims": 3,
+          "constants": [
+            "\u03c0",
+            "\u03c6"
+          ],
+          "best_p": 1e-06
+        },
+        "number_theory": {
+          "n_claims": 3,
+          "constants": [
+            "ln(\u03c6)"
+          ],
+          "best_p": 1e-100
+        },
+        "dynamical_systems": {
+          "n_claims": 1,
+          "constants": [
+            "\u03c6"
+          ],
+          "best_p": 3.6e-12
+        },
+        "fluid_dynamics": {
+          "n_claims": 1,
+          "constants": [
+            "\u03b3",
+            "ln(\u03c6)"
+          ],
+          "best_p": 0.001
+        },
+        "cellular_automata": {
+          "n_claims": 1,
+          "constants": [
+            "\u03c6"
+          ],
+          "best_p": 0.001
+        },
+        "information_theory": {
+          "n_claims": 2,
+          "constants": [
+            "\u03b3",
+            "ln(\u03c6)",
+            "\u03c6"
+          ],
+          "best_p": null
+        },
+        "thermodynamics": {
+          "n_claims": 1,
+          "constants": [
+            "\u03b3",
+            "ln(\u03c6)"
+          ],
+          "best_p": 4.54e-35
+        },
+        "stat_mechanics": {
+          "n_claims": 1,
+          "constants": [
+            "\u03c0",
+            "\u03b3",
+            "ln(\u03c6)",
+            "\u03c6"
+          ],
+          "best_p": 0.0001
+        },
+        "emergence": {
+          "n_claims": 1,
+          "constants": [
+            "\u03b3",
+            "ln(\u03c6)"
+          ],
+          "best_p": null
+        }
+      }
+    },
+    "mc_structural_bias": {
+      "n_trials": 3000,
+      "mc_mean": 2.35,
+      "mc_std": 0.9041570660012561,
+      "mc_max": 5,
+      "actual_hits": 5,
+      "p_value": 0.004333333333333333,
+      "PASS": "True"
+    },
+    "fishers_method": {
+      "naive": {
+        "n": 10,
+        "chi2": 995.4654038795024,
+        "log10_p": -197.44145488705948
+      },
+      "domain_corrected": {
+        "n": 7,
+        "chi2": 745.0550186010281,
+        "log10_p": -149.20999156656615
+      },
+      "indep_significant": {
+        "n": 9,
+        "chi2": 993.7342086443851,
+        "log10_p": -198.81520525941025
+      },
+      "correction_OOM": -48.23146332049333
+    },
+    "independence_classification": {
+      "groups": [
+        {
+          "label": "Pure mathematics",
+          "claims": [
+            "sieve_pac",
+            "mertens_prod",
+            "F3_prime_casc"
+          ],
+          "rationale": "Number-theoretic results: no physics, no Fibonacci structure in targets. Cascade framework: primes as residual roughness from PAC actualization \u2014 independent measurement of the mechanism at arithmetic level."
+        },
+        {
+          "label": "Dynamical systems",
+          "claims": [
+            "feigenbaum"
+          ],
+          "rationale": "Period-doubling universality is independent mathematical phenomenon. Cascade framework: Feigenbaum cascade is a PAC actualization cascade \u2014 same mechanism observed in nonlinear dynamics, independent of number theory."
+        },
+        {
+          "label": "Particle physics",
+          "claims": [
+            "alpha_em",
+            "sin2_theta_w"
+          ],
+          "rationale": "Measured constants, but SHARE Fibonacci indices (F\u2084, F\u2087). Cascade framework: both are PAC tree branching ratios at specific depths \u2014 same tree structure, different depth measurements."
+        },
+        {
+          "label": "Information dynamics",
+          "claims": [
+            "F1_fib_memory",
+            "F2_xi_accum",
+            "F5_theta_recyc"
+          ],
+          "rationale": "All test the same Landauer-coupling model \u2014 NOT independent of each other. Cascade framework: these test mechanism internals, not independent observations."
+        },
+        {
+          "label": "Critical phenomena",
+          "claims": [
+            "F6_wilson_fish",
+            "xi_NS",
+            "rule110_phi"
+          ],
+          "rationale": "All involve universality & phase transitions \u2014 partially correlated. Cascade framework: phase transitions are SEC balance points \u2014 same balance operator \u039e, but measured in independent physical systems."
+        }
+      ],
+      "n_groups": 5,
+      "conservative_chi2": 717.4239974850997,
+      "conservative_log10_p": -146.94301297678206,
+      "conservative_significant": "True"
+    }
+  },
+  "falsification": {
+    "test_id": "F9",
+    "hypothesis": "Cross-domain p-values can be combined (independence)",
+    "tests_passed": "5",
+    "tests_total": 5,
+    "independence_ratio": 0.5638621852800626,
+    "n_independent_domains": 4.154770877029397,
+    "naive_log10_p": -197.44145488705948,
+    "corrected_log10_p": -146.94301297678206,
+    "correction_OOM": 50.49844191027742,
+    "falsified": "False",
+    "assessment": "5/5 tests pass. Independence ratio: 0.56. Naive joint: 10^-197, Conservative: 10^-147. Correction: ~48 OOM. RECOMMENDATION: Use conservative group-level combination (5 independent groups \u2192 1 p-value each)."
+  }
+}

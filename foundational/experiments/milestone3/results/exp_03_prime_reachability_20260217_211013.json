@@ -1,0 +1,59 @@
+{
+  "experiment": "exp_03_prime_reachability",
+  "description": "Prime cascade reachability \u2014 physics-based model from originals",
+  "paper": "Paper 1",
+  "section": "\u00a713 (prime structure)",
+  "timestamp": "2026-02-17T21:10:10.230302+00:00",
+  "milestone": "milestone3",
+  "limit": 10000,
+  "tests": {
+    "coverage_comparison": {
+      "prime_coverage_mean": 0.0,
+      "prime_coverage_std": 0.0,
+      "composite_coverage_mean": 0.018750578129946578,
+      "composite_coverage_std": 0.09593241489090316,
+      "coverage_ratio": Infinity,
+      "mann_whitney_U": 10778330.0,
+      "mann_whitney_p": 0.0,
+      "prime_zero_fraction": 1.0,
+      "composite_zero_fraction": 0.5332953249714937,
+      "cohens_d": 0.27641670361225645
+    },
+    "late_cascade_ratio": {
+      "mean_ratio": 10565426044.924631,
+      "std_ratio": 148515407584.85043,
+      "n_ratios": 1823
+    },
+    "prime_gap_fibonacci": {
+      "total_gaps": 1228,
+      "exact_fibonacci": 309,
+      "frac_exact_fibonacci": 0.251628664495114,
+      "near_fibonacci": 1000,
+      "frac_near_fibonacci": 0.8143322475570033,
+      "chi2_gaps_mod_phi": 959.7035830618894,
+      "chi2_p_value": 0.0,
+      "phi_structure_detected": "True"
+    },
+    "cramer_null": {
+      "n_simulations": 100,
+      "cramer_u_mean": 5275315.42,
+      "cramer_u_std": 154170.17747448306,
+      "real_u_stat": 10778330.0,
+      "z_score_vs_cramer": 35.69441684602596,
+      "cramer_coverage_ratio_mean": 0.525407079554751,
+      "real_coverage_ratio": Infinity
+    }
+  },
+  "falsification": {
+    "test_id": "F3",
+    "hypothesis": "Primes reside in cascade void regions",
+    "mann_whitney_p": 0.0,
+    "cohens_d": 0.27641670361225645,
+    "coverage_ratio": Infinity,
+    "cramer_z_score": 35.69441684602596,
+    "tests_passed": "2",
+    "tests_total": 3,
+    "falsified": "False",
+    "assessment": "Mann-Whitney p = 0.00e+00 (significant), Cohen's d = 0.2764, coverage ratio = inf\u00d7. Cram\u00e9r z-score = 35.69. NOT FALSIFIED: cascade coverage model shows significant prime vs composite separation. Gap Fibonacci fraction: 0.2516. NOTE: Uses N=10000; scale to N=100000 for publication."
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "metadata": {
+    "experiment": "exp_19_phase_transition_dynamics",
+    "description": "Phase transition dynamics \u2014 the approach to the conservation boundary",
+    "paper": "Paper 4",
+    "section": "\u00a7phase_dynamics",
+    "timestamp": "2026-02-18T14:28:02.690931+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_cascade_paths": {
+      "fibonacci_crystallization": "alpha_em",
+      "fibonacci_order": [
+        "sin2_thetaW",
+        "Koide",
+        "She_Lev",
+        "nu_WF",
+        "alpha_s",
+        "alpha_em",
+        "Cabibbo",
+        "mu_e",
+        "p_e",
+        "tau_e"
+      ],
+      "crystallization_formulas": {
+        "Fibonacci": "alpha_em",
+        "Lucas": "alpha_em",
+        "Primes": "alpha_em",
+        "Tribonacci": "alpha_em",
+        "Random_0": "alpha_em",
+        "Random_1": "alpha_em",
+        "Random_2": "alpha_em"
+      },
+      "frac_different": 0.0,
+      "n_unique_orderings": 0,
+      "all_paths": {
+        "Fibonacci": {
+          "order": [
+            "sin2_thetaW",
+            "Koide",
+            "She_Lev",
+            "nu_WF",
+            "alpha_s",
+            "alpha_em",
+            "Cabibbo",
+            "mu_e",
+            "p_e",
+            "tau_e"
+          ],
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "null_dim": 6
+        },
+        "Lucas": {
+          "order": [
+            "sin2_thetaW",
+            "Koide",
+            "She_Lev",
+            "nu_WF",
+            "alpha_s",
+            "alpha_em",
+            "Cabibbo",
+            "mu_e",
+            "p_e",
+            "tau_e"
+          ],
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "null_dim": 6
+        },
+        "Primes": {
+          "order": [
+            "sin2_thetaW",
+            "Koide",
+            "She_Lev",
+            "nu_WF",
+            "alpha_s",
+            "alpha_em",
+            "Cabibbo",
+            "mu_e",
+            "p_e",
+            "tau_e"
+          ],
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "null_dim": 6
+        },
+        "Tribonacci": {
+          "order": [
+            "sin2_thetaW",
+            "Koide",
+            "She_Lev",
+            "nu_WF",
+            "alpha_s",
+            "alpha_em",
+            "Cabibbo",
+            "mu_e",
+            "p_e",
+            "tau_e"
+          ],
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "null_dim": 6
+        },
+        "Random_0": {
+          "order": [
+            "sin2_thetaW",
+            "Koide",
+            "She_Lev",
+            "nu_WF",
+            "alpha_s",
+            "alpha_em",
+            "Cabibbo",
+            "mu_e",
+            "p_e",
+            "tau_e"
+          ],
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "null_dim": 6
+        },
+        "Random_1": {
+          "order": [
+            "sin2_thetaW",
+            "Koide",
+            "She_Lev",
+            "nu_WF",
+            "alpha_s",
+            "alpha_em",
+            "Cabibbo",
+            "mu_e",
+            "p_e",
+            "tau_e"
+          ],
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "null_dim": 6
+        },
+        "Random_2": {
+          "order": [
+            "sin2_thetaW",
+            "Koide",
+            "She_Lev",
+            "nu_WF",
+            "alpha_s",
+            "alpha_em",
+            "Cabibbo",
+            "mu_e",
+            "p_e",
+            "tau_e"
+          ],
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "null_dim": 6
+        }
+      },
+      "passed": false
+    },
+    "test_2_partial_discrimination": {
+      "n_index_sets": 220,
+      "n_matched": 74,
+      "saturation_k": 6,
+      "steps": [
+        {
+          "k": 1,
+          "rank": 1,
+          "exhaustion": 0.16666666666666666,
+          "remaining_potential": 5,
+          "mean_cf_matched": 0.3327844632934988,
+          "mean_cf_unmatched": 0.32239653175428773,
+          "delta_cf": 0.010387931539211082,
+          "p_value": 0.6488552853600245,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 2,
+          "rank": 2,
+          "exhaustion": 0.3333333333333333,
+          "remaining_potential": 4,
+          "mean_cf_matched": 0.5485542731677282,
+          "mean_cf_unmatched": 0.5240761178423492,
+          "delta_cf": 0.024478155325379003,
+          "p_value": 0.26143674439330344,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 3,
+          "rank": 3,
+          "exhaustion": 0.5,
+          "remaining_potential": 3,
+          "mean_cf_matched": 0.6795126315331365,
+          "mean_cf_unmatched": 0.6663012169228947,
+          "delta_cf": 0.013211414610241778,
+          "p_value": 0.2826355390979137,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 4,
+          "rank": 4,
+          "exhaustion": 0.6666666666666666,
+          "remaining_potential": 2,
+          "mean_cf_matched": 0.8034962951541089,
+          "mean_cf_unmatched": 0.7885683652276514,
+          "delta_cf": 0.014927929926457528,
+          "p_value": 0.2114234487459004,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 5,
+          "rank": 5,
+          "exhaustion": 0.8333333333333334,
+          "remaining_potential": 1,
+          "mean_cf_matched": 0.9015517013120437,
+          "mean_cf_unmatched": 0.9026492338991098,
+          "delta_cf": -0.00109753258706613,
+          "p_value": 0.6388418455040326,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 6,
+          "rank": 6,
+          "exhaustion": 1.0,
+          "remaining_potential": 0,
+          "mean_cf_matched": 0.9999999999999998,
+          "mean_cf_unmatched": 1.0,
+          "delta_cf": -2.220446049250313e-16,
+          "p_value": 0.5804607026201117,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 7,
+          "rank": 6,
+          "exhaustion": 1.0,
+          "remaining_potential": 0,
+          "mean_cf_matched": 1.0,
+          "mean_cf_unmatched": 1.0,
+          "delta_cf": 0.0,
+          "p_value": 0.12454892444510457,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 8,
+          "rank": 6,
+          "exhaustion": 1.0,
+          "remaining_potential": 0,
+          "mean_cf_matched": 1.0,
+          "mean_cf_unmatched": 1.0,
+          "delta_cf": 0.0,
+          "p_value": 0.526130486349931,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 9,
+          "rank": 6,
+          "exhaustion": 1.0,
+          "remaining_potential": 0,
+          "mean_cf_matched": 1.0,
+          "mean_cf_unmatched": 1.0,
+          "delta_cf": 0.0,
+          "p_value": 0.15158743398459018,
+          "n_matched": 74,
+          "n_unmatched": 146
+        },
+        {
+          "k": 10,
+          "rank": 6,
+          "exhaustion": 1.0,
+          "remaining_potential": 0,
+          "mean_cf_matched": 0.9999999999999997,
+          "mean_cf_unmatched": 0.9999999999999998,
+          "delta_cf": -1.1102230246251565e-16,
+          "p_value": 0.8188587999625798,
+          "n_matched": 74,
+          "n_unmatched": 146
+        }
+      ],
+      "n_significant": 0,
+      "best_step": null,
+      "passed": false
+    },
+    "test_3_progressive_selection": {
+      "peak_k": 2,
+      "peak_delta_cf": 0.024478155325379003,
+      "is_intermediate_peak": true,
+      "all_positive": false,
+      "potential_monotonic": true,
+      "sec_dynamics": [
+        {
+          "k": 1,
+          "delta_cf": 0.010387931539211082,
+          "remaining_potential": 5,
+          "exhaustion": 0.16666666666666666
+        },
+        {
+          "k": 2,
+          "delta_cf": 0.024478155325379003,
+          "remaining_potential": 4,
+          "exhaustion": 0.3333333333333333
+        },
+        {
+          "k": 3,
+          "delta_cf": 0.013211414610241778,
+          "remaining_potential": 3,
+          "exhaustion": 0.5
+        },
+        {
+          "k": 4,
+          "delta_cf": 0.014927929926457528,
+          "remaining_potential": 2,
+          "exhaustion": 0.6666666666666666
+        },
+        {
+          "k": 5,
+          "delta_cf": -0.00109753258706613,
+          "remaining_potential": 1,
+          "exhaustion": 0.8333333333333334
+        },
+        {
+          "k": 6,
+          "delta_cf": -2.220446049250313e-16,
+          "remaining_potential": 0,
+          "exhaustion": 1.0
+        },
+        {
+          "k": 7,
+          "delta_cf": 0.0,
+          "remaining_potential": 0,
+          "exhaustion": 1.0
+        },
+        {
+          "k": 8,
+          "delta_cf": 0.0,
+          "remaining_potential": 0,
+          "exhaustion": 1.0
+        },
+        {
+          "k": 9,
+          "delta_cf": 0.0,
+          "remaining_potential": 0,
+          "exhaustion": 1.0
+        },
+        {
+          "k": 10,
+          "delta_cf": -1.1102230246251565e-16,
+          "remaining_potential": 0,
+          "exhaustion": 1.0
+        }
+      ],
+      "passed": true
+    },
+    "test_4_sequence_specificity": {
+      "fib_peak_delta": 0.024478155325379003,
+      "fib_mean_delta": 0.012381579762844652,
+      "alt_results": {
+        "Lucas": {
+          "null_dim": 6,
+          "n_matched": 82,
+          "peak_delta": 0.027058707387540626,
+          "mean_delta": 0.01385865734471382,
+          "best_p": 0.17906683888541974
+        },
+        "Primes": {
+          "null_dim": 6,
+          "n_matched": 92,
+          "peak_delta": 0.04239481066450068,
+          "mean_delta": 0.009640493056774746,
+          "best_p": 0.11252027496688949
+        },
+        "Tribonacci": {
+          "null_dim": 6,
+          "n_matched": 98,
+          "peak_delta": -0.016941438151532373,
+          "mean_delta": -0.05124384361955353,
+          "best_p": 0.7084135339323367
+        },
+        "Random_0": {
+          "null_dim": 6,
+          "n_matched": 77,
+          "peak_delta": 0.0088215836505538,
+          "mean_delta": -0.016278662229561723,
+          "best_p": 0.4531547233138633
+        },
+        "Random_1": {
+          "null_dim": 6,
+          "n_matched": 78,
+          "peak_delta": 0.0017797419488099764,
+          "mean_delta": -0.017835651774198137,
+          "best_p": 0.5242760473376454
+        },
+        "Random_2": {
+          "null_dim": 6,
+          "n_matched": 79,
+          "peak_delta": 0.04940211716674281,
+          "mean_delta": 0.00811551497540256,
+          "best_p": 0.001068959952940853
+        }
+      },
+      "fib_z_score": 0.24684272840293295,
+      "passed": false
+    }
+  },
+  "summary": {
+    "total": 4,
+    "passed": 1,
+    "score": "1/4"
+  },
+  "falsification": {
+    "test_id": "experimental (not in registry)",
+    "hypothesis": "Conservation discriminates physics matches in the partial-exhaustion regime (before the phase boundary), and this discrimination is Fibonacci-specific. The approach to the boundary follows SEC dynamics.",
+    "falsified_if": "No significant discrimination at any partial-regime step, OR alternative sequences show identical or stronger discrimination.",
+    "falsified": true,
+    "assessment": "1/4 tests pass."
+  }
+}

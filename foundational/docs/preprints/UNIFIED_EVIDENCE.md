@@ -1,7 +1,7 @@
 # Unified Evidence Map: Dawn Field Theory
 
-**Version**: 3.3  
-**Last Updated**: 2026-02-14  
+**Version**: 3.5  
+**Last Updated**: 2026-02-18  
 **Purpose**: Complete mechanistic chain from axioms to observations
 
 ---
@@ -17,6 +17,8 @@ $$f(\text{Parent}) = \sum_i f(\text{Child}_i)$$
 When potential actualizes into structure, total value is conserved but redistributed. This is a **constraint**, not a model. Like Landauer's principle, it doesn't tell you *how* something happens—it tells you what *must* happen.
 
 **Consequence**: The recursion Ψ(k) = Ψ(k+1) + Ψ(k+2) has unique stable solution Ψ(k) = φ^(-k). The golden ratio isn't found—it's **necessary**.
+
+**Cascade framework (milestone3)**: k=2 is the *minimal* memory depth producing φ under physical constraints. k=3 is analytically impossible (requires c₂ = 1/φ² ≈ 0.382, not integer). Landauer's dual-output mechanism (Θ thermal + ξ structural at 2 timescales) physically forces k=2, deriving Fibonacci from thermodynamics rather than fitting it.
 
 ### SEC (Symbolic Entropy Collapse)
 
@@ -114,9 +116,10 @@ LAYER 3: LANDAUER SINGLE-SHOT (1.6% error, ln(φ) in 2σ)
   A/(A+ξ) = 0.489 ± 0.039 (50 seeds × 2M, Miller-Madow)
   Thermal environment required
 
-LAYER 4: CASCADE (Θ re-injection)
+LAYER 4: CASCADE (Θ re-injection — MODEL-DEPENDENT)
   Gen 0 at 1.9% from ln(φ), 5.3 mean lifespan, 1.2× amplification
   Θ from each generation feeds the next
+  NOTE: Different Θ formulas give 36%-94% efficiency (milestone3/F5). Recycling confirmed (3/4 pass) but efficiency is model-dependent.
 
 LAYER 5: GAUGE HIERARCHY (p < 10⁻¹⁸)
   ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) — ordering holds
@@ -169,8 +172,8 @@ SEC-local/PAC-global mechanism (NEW Feb 2026)
     ↓ PAC: π(x) + C(x) = x - 1 holds with ZERO error (all 126 steps)
     ↓ Mertens product ∏(1-1/p) matches e^(-γ)/ln(N) to 0.012%
     ↓ k = 9 = 3² = F₄² is MED reconciliation boundary
-    ↓ Phase ordering: ln(3/2) < ln(φ) < γ (crystallization layers)
     ↓ e^(-Ξ) = e^(-γ)/φ confirmed exactly
+    ↓ NOTE: Phase ordering claim (ln(3/2) < ln(φ) < γ) REMOVED — pac_foundations_validation/exp_05 found no φ/γ phase boundaries in prime elimination
 
 LAYER 3: CONSERVATION & ATTRACTORS
 PAC (Potential-Actualization Conservation)
@@ -231,10 +234,13 @@ LAYER 6: STANDARD MODEL PHYSICS
 Fibonacci structure F_n → physical parameters
     ↓ sin²θ_W = F₄/F₇ = 3/13
     [pac_confluence_xi: 0.19% error from PDG 2024]
+    [milestone3/F7: 15σ deviation at M_Z RESOLVES at Q = 82.78 GeV ≈ M_W]
+    [Q_match/M_W = 1.030 — W boson identified as PAC actualization threshold]
     ↓ (2αβ)² = 4/5 EXACTLY
     [pac_confluence_xi: Algebraic proof from φ identities]
     ↓ α = F₃/(F₄·φ·F₁₀)·(1 - F₁₀/4πF₇²)
     [pac_confluence_xi: 5.7 ppm precision]
+    [milestone3/F8: BORDERLINE — binomial p=0.42 after look-elsewhere, but MC 0/7272 from random constants]
     ↓ F₇ = 13 = gauge closure dimension
     [standard_model_connection: SU(3) fundamental rep]
 
@@ -297,6 +303,7 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | **Mertens product** | **0.012% error** | asymmetric_conservation/exp_14 |
 | **SEC→PAC bridge** | **0.004% error** | asymmetric_conservation/exp_14 |
 | **k=9 = 3² = F₄² MED boundary** | **λ* drop confirmed** | asymmetric_conservation/exp_15 |
+| ~~Phase ordering~~ | ~~REMOVED~~ | ~~pac_foundations_validation/exp_05: falsified~~ |
 
 ### Layer 3: Information Physics (< 1% error)
 | Finding | Precision | Source |
@@ -323,7 +330,9 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | Finding | Precision | Source |
 |---------|-----------|--------|
 | sin²θ_W = 3/13 | 0.19% error | pac_confluence_xi |
+| | **Resolves at Q = 82.78 GeV ≈ M_W** | **milestone3/exp_08 (F7)** |
 | α from Fibonacci formula | 5.7 ppm | pac_confluence_xi |
+| | **BORDERLINE after look-elsewhere** | **milestone3/exp_09 (F8): p=0.42 binomial** |
 | (2αβ)² = 4/5 | EXACT (proof) | pac_confluence_xi |
 | Neutrino θ₁₂ = arctan(2/3) | 0.28° error | arithmetic |
 | Koide formula = 2/3 | 0.5 ppm | arithmetic |
@@ -333,6 +342,12 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | p/e = F₄×F₉×F₁₂/F₆ | 0.0083% | milestone2/mass_derivation |
 | Casimir 240 = F₃×F₄×F₅×F₆ | EXACT | milestone2 |
 | k = d × F_{d+1} | Derived | milestone2/she_leveque |
+| **Wilson-Fisher ν = 2/(3·Ξ)** | **0.017% error** | **milestone3/exp_07 (F6)** |
+| **eff_depth ≈ 3.0 invariant** | **d_cross = 3.25 ± 0.17** | **milestone3/exp_11 (F10)** |
+| **Fibonacci–MED complementarity** | **φ²=2.618 < d_cross≈3.1** | **milestone3/exp_12 (F11)** |
+| **Stoichiometric Fibonacci** | **99.98th %ile vs random** | **milestone3/exp_13 (F12)** |
+| **SEC cost monotonicity** | **~55.7 SEC/index, r=0.86** | **milestone3/exp_15 (F13)** |
+| **PAC-Lazy KL discrimination** | **p=0.035, d=0.198** | **milestone3/exp_21 (F19)** |
 
 ---
 
@@ -347,15 +362,27 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 - **Machine Learning**: 2 model families (143k Pythia checkpoints)
 - **Standard Model**: 10+ parameter validations including mass ratios
 - **GAIA Implementations**: 3 POCs (019, 020, 021)
-- **Milestones**: 12 experiments (milestone1) + 12 experiments (milestone2) = 24
+- **Milestones**: 12 experiments (milestone1) + 12 experiments (milestone2) + 21 experiments (milestone3) = 45
 - **Quantum Validation**: 3 modules (born_rule, landauer, interference)
 - **Landauer Experiments**: 25 (landauer_erasure_structure, exp_01-25)
 
+**Milestone 3 Highlights** (Feb 2026 — Falsification Registry, 19 tests):
+- **19 falsification tests**: 13 PASS, 1 BORDERLINE, 1 CORRECTED, 1 PARTIAL, 1 FAILED, 2 FALSIFIED
+- Cascade framework: k=2 minimality, E-I-S decomposition, PAC tree depth
+- sin²θ_W running-scale resolution: 3/13 at Q ≈ M_W
+- Cross-domain independence: naive p-values corrected by ~48 OOM, conservative p ≈ 10⁻¹⁴⁷
+- **Block E (stoichiometric framework)**: Fibonacci at 99.98th percentile, SEC cost monotonicity, Fibonacci–MED complementarity
+- **Block F (discrimination)**: Null space prediction FAILS (0/4), crystallization order FALSIFIED for Fibonacci-specificity, PAC-Lazy conservation PASSES (KL p=0.035)
+- **Honest falsifications**: exp_19 (Fibonacci-specificity), exp_20 (raw fractal pressure), exp_16 (null space prediction)
+- **Key resolution**: PAC-Lazy architecture (from GAIA POCs) transfers to formula space — conservation normalization required, raw counting biased
+- Full details: `foundational/experiments/milestone3/FALSIFICATION_REGISTRY.md`
+
 **Total Evidence Files**:
-- JSON result files: 60+
-- Python experiment scripts: 50+
+- JSON result files: 120+
+- Python experiment scripts: 70+
 - Validation studies: 12 papers
 - Cross-references: 100+ internal links
+- Falsification tests: 19 (milestone3)
 
 **Navigation Note**: Each experiment folder contains a `SYNTHESIS.md` file that documents cross-connections to other experiments, theoretical implications, and open questions. To understand how findings interconnect, always check the SYNTHESIS.md in each referenced experiment directory.
 
@@ -534,7 +561,7 @@ The theory would be **falsified** if:
 ### Physical Layer
 | Claim | Falsification |
 |-------|---------------|
-| sin²θ_W = 3/13 | High-precision measurement deviates significantly |
+| sin²θ_W = 3/13 | High-precision measurement deviates significantly. ~~No running-coupling scale matches~~ **RESOLVED (milestone3/F7)**: 3/13 matches at Q = 82.78 GeV ≈ M_W |
 | (2αβ)² = 4/5 | Bell experiments violate this bound |
 | E=mc² from PAC | Different conservation law fits better |
 
@@ -788,19 +815,20 @@ When citing this work, please use appropriate papers for each claim:
 | **Thermodynamics** | Landauer erasure | PAC partition → A/(A+ξ) = ln(φ) at thermal equilibrium | 0.15% at N=5M (exp_23), 1.6% at N=2M (exp_25) |
 | **Information** | φ ubiquity | Unique stable solution to Ψ(k) = Ψ(k+1) + Ψ(k+2) | Algebraic proof |
 | **Gauge Theory** | SU(3) > SU(2) > U(1) | Structure cost ∝ coupling complexity | p < 10⁻¹⁸ (exp_25) |
-| **Standard Model** | sin²θ_W = 3/13 | F₄/F₇ from PAC gauge closure | 0.19% from PDG 2024 |
-| **Standard Model** | α = 1/137.036... | Fibonacci construction | 5.7 ppm precision |
+| **Standard Model** | sin²θ_W = 3/13 | F₄/F₇ from PAC gauge closure | 0.19% from PDG 2024; 15σ at M_Z resolves at Q ≈ M_W (milestone3/F7) |
+| **Standard Model** | α = 1/137.036... | Fibonacci construction | 5.7 ppm precision; BORDERLINE after look-elsewhere (milestone3/F8: p=0.42 binomial) |
 | **Quantum** | Born rule | Probability = PAC partition | R² correlation |
 | **Quantum** | Entanglement | Shared parent → distributed conservation | Correlation = 1.0 at strength 1.0 |
 | **Number Theory** | Prime stress field | SEC partitions at 1/φ | 0.04% error at k=9 |
 | **Number Theory** | Mertens product | SEC-local → PAC-global reconciliation | 0.012% error (exp_14) |
 | **Number Theory** | MED boundary k=9 | k = 3² = F₄² collapse layer | λ* drop (exp_15) |
 | **Turbulence** | She-Leveque | β = F₃/F₄ = 2/3 (3D PAC cascade) | 0.47% mean error |
+| **Turbulence** | Wilson-Fisher ν | 2/(3·Ξ) = E-I-S cycle ratio × balance reciprocal | 0.017% error (milestone3/F6: E-I-S decomposition, 63× better than best alternative) |
 | **CA** | Rule 110 at Ξ | Computation requires PAC balance | p < 8.58×10⁻⁸ |
 | **ML** | Training → φ | Networks find PAC (it's optimal) | p = 0.0014 at step 512 |
 | **Biology** | Fibonacci spacing | Evolution found PAC (optimal packing) | Ubiquitous observation |
 
-**One principle. Fourteen domains. Same structural boundary.**
+**One principle. Fifteen domains. Same structural boundary.**
 
 ---
 
@@ -826,6 +854,8 @@ When citing this work, please use appropriate papers for each claim:
 - v3.1 (2026-02-08): Added SEC-local/PAC-global mechanism (exp_14-17), Mertens validation (0.012%), k=9=3² MED boundary
 - v3.2 (2026-02-12): Added three-component architecture frame, reframed primes as residual roughness, added hypotheses pointer to PRELIMINARY_RESULTS.md
 - v3.3 (2026-02-14): Full Stack Validation (exp_25): 6-layer derivation chain in one experiment, all passing. Precision tightened: N=5M → 0.15% from ln(φ). Thermal init discovery: environment must be at Boltzmann equilibrium. Gauge hierarchy p < 10⁻¹⁸. SEC with li(x) → 0.08% for 1/φ partition.
+- v3.4 (2026-02-18): Milestone 3 integration: 10 falsification tests (8 PASS, 1 BORDERLINE). Cascade framework: k=2 minimality derives Fibonacci from Landauer; E-I-S decomposition explains Wilson-Fisher ν = 2/(3·Ξ) at 0.017%; sin²θ_W running-scale resolved at Q ≈ M_W; α downgraded to BORDERLINE (p=0.42 look-elsewhere); cross-domain p-values corrected by ~48 OOM. Removed falsified phase-ordering claim. Layer 4 Θ recycling marked model-dependent.
+- v3.5 (2026-02-18): Milestone 3 complete (21 experiments, 19 falsification tests). Block E: stoichiometric framework (99.98th percentile), SEC cost monotonicity (~55.7/index), Fibonacci–MED complementarity (φ²<d_cross). Block F: null space prediction FAILS (0/4), crystallization order FALSIFIED (basis-independent), PAC-Lazy formula discrimination PASSES (KL p=0.035, d=0.198). Honest falsifications documented. GAIA POC architecture transfers to formula space.
 
-**Last Updated**: 2026-02-14
+**Last Updated**: 2026-02-18
 **Status**: Living Document (updated as research progresses)

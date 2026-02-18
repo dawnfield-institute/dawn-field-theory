@@ -1,0 +1,125 @@
+{
+  "experiment": "exp_09_look_elsewhere",
+  "description": "Alpha look-elsewhere effect \u2014 template-constrained (from originals)",
+  "paper": "Paper 4",
+  "section": "\u00a711 (methodology)",
+  "timestamp": "2026-02-17T21:07:25.903871+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "constrained_search": {
+      "total_formulas": 1640599,
+      "total_matches_6ppm": 3,
+      "distinct_matches_6ppm": 2,
+      "p_per_trial": 8.75682308316e-07,
+      "expected_random": 1.4366435193409213,
+      "binomial_p_value": 0.4207505971654648,
+      "match_details": [
+        {
+          "formula": "1/(4\u00d7\u03c6\u00d7F_8) \u00d7 (1 - F_9/(3\u00d7\u03c0\u00d7F_8^2))",
+          "value": 0.0072973605437060725,
+          "error_ppm": 1.0927807031903232
+        },
+        {
+          "formula": "2/(3\u00d7\u03c6\u00d7F_10) \u00d7 (1 - F_10/(4\u00d7\u03c0\u00d7F_7^2))",
+          "value": 0.007297310889743783,
+          "error_ppm": 5.711599627555799
+        }
+      ]
+    },
+    "information_theoretic": {
+      "bits_matched": 17.420606650046796,
+      "bits_freedom": 17,
+      "total_combinations": 131072,
+      "expected_random_matches": 0.7471104000000001,
+      "over_constrained": "True"
+    },
+    "monte_carlo_same_structure": {
+      "n_trials": 10000,
+      "valid_formulas": 7272,
+      "matches_6ppm": 0,
+      "match_rate": 0.0,
+      "expected_random_rate": 1.2e-05
+    },
+    "cross_validation": {
+      "constants_tested": {
+        "\u03b1 (target)": {
+          "target": 0.0072973525693,
+          "total_formulas": 1640599,
+          "matches_6ppm": 3,
+          "best_ppm": 1.0927807031903232
+        },
+        "ln(2)\u00d70.01": {
+          "target": 0.006931471805599453,
+          "total_formulas": 1640599,
+          "matches_6ppm": 25,
+          "best_ppm": 3.562106830221766
+        },
+        "\u03b3\u00d70.01": {
+          "target": 0.005772156649,
+          "total_formulas": 1640599,
+          "matches_6ppm": 0,
+          "best_ppm": null
+        },
+        "1/137 (naive)": {
+          "target": 0.0072992700729927005,
+          "total_formulas": 1640599,
+          "matches_6ppm": 3,
+          "best_ppm": 2.7685836214343813
+        },
+        "\u221a2\u00d70.005": {
+          "target": 0.007071067811865476,
+          "total_formulas": 1640599,
+          "matches_6ppm": 1,
+          "best_ppm": 2.970314784736847
+        },
+        "sin\u00b2\u03b8_W\u00d70.03": {
+          "target": 0.0069366,
+          "total_formulas": 1640599,
+          "matches_6ppm": 1,
+          "best_ppm": 1.685607647827339
+        },
+        "\u03b1_s\u00d70.06": {
+          "target": 0.007074,
+          "total_formulas": 1640599,
+          "matches_6ppm": 7,
+          "best_ppm": 1.267970302055116
+        }
+      },
+      "alpha_is_special": false,
+      "alpha_matches": 3,
+      "best_non_alpha_matches": 25
+    },
+    "methodology": {
+      "alpha": {
+        "method": "search-then-validate",
+        "search_space": 1640599,
+        "template": "k/(m\u00b7T\u00b7F_i) \u00d7 (1 - F_j/(n\u00b7U\u00b7F_p^q))",
+        "validation": "perturbation stability, uniqueness, cross-prediction",
+        "corrected_significant": "False"
+      },
+      "koide": {
+        "method": "predict-from-principles",
+        "note": "F\u2083/F\u2084 = 2/3 is the simplest ratio; no search needed"
+      },
+      "weinberg": {
+        "method": "search-from-small-space",
+        "search_space": 78,
+        "note": "F_i/F_j for i<j<14 \u2248 78 ratios"
+      }
+    }
+  },
+  "falsification": {
+    "test_id": "F8",
+    "hypothesis": "5.7 ppm \u03b1 match is significant after look-elsewhere",
+    "constrained_search_space": 1640599,
+    "distinct_matches_6ppm": 2,
+    "expected_random_matches": 1.4366435193409213,
+    "binomial_p_value": 0.4207505971654648,
+    "bits_matched": 17.420606650046796,
+    "bits_freedom": 17,
+    "info_over_constrained": "True",
+    "monte_carlo_matches": 0,
+    "falsified": false,
+    "assessment": "TEMPLATE-CONSTRAINED space: 1,640,599 formulas. 2 distinct matches at 6 ppm (expected by chance: 1.44). Binomial p = 0.4208. Information: 17.4 bits matched vs 17 bits freedom (over-constrained). Monte Carlo (10k same-structure): 0 matches. ASSESSMENT: NOT FALSIFIED \u2014 the \u03b1 formula's significance rests partly on cross-prediction constraints (same F indices in other predictions), assessed in exp_10."
+  }
+}
