@@ -1,0 +1,148 @@
+{
+  "experiment": "exp_04_w2_w1_ratio",
+  "description": "w2/w1 ratio from first principles \u2014 closing the 0.600 vs 0.618 gap",
+  "paper": "Paper 6",
+  "section": "\u00a78 (E-I-S dynamics)",
+  "timestamp": "2026-02-17T12:58:27.819154+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "mode_sweep": {
+      "modes_2": {
+        "cascade_ratio_mean": 0.9999747394638092,
+        "cascade_ratio_std": 3.556305373494204e-05,
+        "w1_mean": 0.9999747394638092,
+        "w2_mean": 2.5260536190781237e-05,
+        "w2_over_w1": 2.5261174301588903e-05,
+        "limiting_ratio": 1.0,
+        "gap_to_inv_phi": 0.3819407507139144,
+        "gap_to_0_6": 0.39997473946380924
+      },
+      "modes_4": {
+        "cascade_ratio_mean": 0.9998556421918029,
+        "cascade_ratio_std": 7.421036515930717e-05,
+        "w1_mean": 0.9998556421918029,
+        "w2_mean": 0.00014435780819705248,
+        "w2_over_w1": 0.00014437865038257217,
+        "limiting_ratio": 1.0,
+        "gap_to_inv_phi": 0.3818216534419081,
+        "gap_to_0_6": 0.3998556421918029
+      },
+      "modes_8": {
+        "cascade_ratio_mean": 0.9993439648185034,
+        "cascade_ratio_std": 0.0001759185038355885,
+        "w1_mean": 0.9993439648185034,
+        "w2_mean": 0.0006560351814966249,
+        "w2_over_w1": 0.0006564658461871746,
+        "limiting_ratio": 1.0,
+        "gap_to_inv_phi": 0.3813099760686086,
+        "gap_to_0_6": 0.3993439648185034
+      },
+      "modes_16": {
+        "cascade_ratio_mean": 0.9970297416991197,
+        "cascade_ratio_std": 0.00030961656347466246,
+        "w1_mean": 0.9970297416991197,
+        "w2_mean": 0.0029702583008802412,
+        "w2_over_w1": 0.0029791070182303508,
+        "limiting_ratio": 1.0,
+        "gap_to_inv_phi": 0.37899575294922494,
+        "gap_to_0_6": 0.39702974169911975
+      },
+      "modes_32": {
+        "cascade_ratio_mean": 0.9880560745025843,
+        "cascade_ratio_std": 0.0005946396306452872,
+        "w1_mean": 0.9880560745025843,
+        "w2_mean": 0.011943925497415707,
+        "w2_over_w1": 0.012088307339670597,
+        "limiting_ratio": 1.0,
+        "gap_to_inv_phi": 0.37002208575268947,
+        "gap_to_0_6": 0.3880560745025843
+      },
+      "modes_64": {
+        "cascade_ratio_mean": 0.9512747924201881,
+        "cascade_ratio_std": 0.0014345618717276911,
+        "w1_mean": 0.9512747924201881,
+        "w2_mean": 0.048725207579811934,
+        "w2_over_w1": 0.05122095946203681,
+        "limiting_ratio": 1.0,
+        "gap_to_inv_phi": 0.3332408036702933,
+        "gap_to_0_6": 0.3512747924201881
+      }
+    },
+    "gap_convergence": {
+      "gaps_by_modes": {
+        "modes_2": 0.3819407507139144,
+        "modes_4": 0.3818216534419081,
+        "modes_8": 0.3813099760686086,
+        "modes_16": 0.37899575294922494,
+        "modes_32": 0.37002208575268947,
+        "modes_64": 0.3332408036702933
+      },
+      "monotonically_closing": true
+    },
+    "temperature_sweep": {
+      "T_0.01": {
+        "cascade_ratio_mean": 0.9358624148088199,
+        "cascade_ratio_std": 0.01636253652713308,
+        "w1_mean": 0.9358624148088199,
+        "w2_mean": 0.06413758519118033,
+        "w2_over_w1": 0.06853313497399348
+      },
+      "T_0.1": {
+        "cascade_ratio_mean": 0.9935862414808717,
+        "cascade_ratio_std": 0.0016362536527130876,
+        "w1_mean": 0.9935862414808717,
+        "w2_mean": 0.006413758519128285,
+        "w2_over_w1": 0.006455160358872341
+      },
+      "T_0.5": {
+        "cascade_ratio_mean": 0.998717248296175,
+        "cascade_ratio_std": 0.00032725073054249093,
+        "w1_mean": 0.998717248296175,
+        "w2_mean": 0.0012827517038249735,
+        "w2_over_w1": 0.0012843992691759004
+      },
+      "T_1.0": {
+        "cascade_ratio_mean": 0.9993586241480888,
+        "cascade_ratio_std": 0.00016362536527168178,
+        "w1_mean": 0.9993586241480888,
+        "w2_mean": 0.0006413758519111199,
+        "w2_over_w1": 0.0006417874789021467
+      },
+      "T_2.0": {
+        "cascade_ratio_mean": 0.999679312074044,
+        "cascade_ratio_std": 8.181268263584929e-05,
+        "w1_mean": 0.999679312074044,
+        "w2_mean": 0.0003206879259559871,
+        "w2_over_w1": 0.00032079079969220617
+      },
+      "T_5.0": {
+        "cascade_ratio_mean": 0.9998717248296174,
+        "cascade_ratio_std": 3.272507305451947e-05,
+        "w1_mean": 0.9998717248296174,
+        "w2_mean": 0.0001282751703826169,
+        "w2_over_w1": 0.00012829162701293067
+      },
+      "T_10.0": {
+        "cascade_ratio_mean": 0.9999358624148087,
+        "cascade_ratio_std": 1.6362536527308377e-05,
+        "w1_mean": 0.9999358624148087,
+        "w2_mean": 6.413758519124439e-05,
+        "w2_over_w1": 6.414169908493376e-05
+      },
+      "T_100.0": {
+        "cascade_ratio_mean": 0.9999935862414809,
+        "cascade_ratio_std": 1.6362536527154202e-06,
+        "w1_mean": 0.9999935862414809,
+        "w2_mean": 6.413758519113762e-06,
+        "w2_over_w1": 6.413799655675943e-06
+      }
+    },
+    "analytical": {
+      "fibonacci_requires_w2_over_w1": 1.0,
+      "best_observed_w2_over_w1": 0.05122095946203681,
+      "best_observed_at": "modes_64",
+      "gap_to_fibonacci": 0.9487790405379632,
+      "note": "For the limiting ratio to equal \u03c6, we need w2/w1 = 1 exactly. The Landauer model gives w2/w1 that depends on n_modes and T. The 0.600 vs 0.618 gap may be: (a) a finite-mode artifact that closes as n_modes \u2192 \u221e, (b) a physical prediction distinguishing the cascade ratio from 1/\u03c6, or (c) an artifact of the exponential coupling topology. This experiment characterizes which."
+    }
+  }
+}

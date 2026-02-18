@@ -1,0 +1,86 @@
+{
+  "experiment": "exp_08_weinberg_running",
+  "description": "sin\u00b2\u03b8_W = 3/13 running coupling \u2014 energy-scale matching",
+  "paper": "Paper 4",
+  "section": "\u00a74 (Weinberg angle)",
+  "timestamp": "2026-02-17T21:22:00.697342+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "matching_scale": {
+      "Q_match_GeV": 82.78097826035689,
+      "Q_match_ratio_MW": 1.0300087379289191,
+      "Q_match_ratio_MZ": 0.9078095953874966,
+      "sin2_at_match": 0.2307692307692308,
+      "PASS": true
+    },
+    "physical_significance": {
+      "in_ew_sector": "True",
+      "nearest_scale": "M_W",
+      "nearest_ratio": 1.0300087379289191,
+      "PASS": "True"
+    },
+    "mass_ratio": {
+      "cos2_theta_pac": 0.7692307692307692,
+      "mw_mz_predicted": 0.8770580193070292,
+      "mw_mz_measured": 0.8813610622496919,
+      "mw_mz_pdg": 0.8768010036490607,
+      "error_pct": 0.48822703055193983,
+      "rho_parameter": 1.009836518664877,
+      "PASS": "True"
+    },
+    "sensitivity": {
+      "q_matches": {
+        "-3sigma": 84.3951062591777,
+        "-2sigma": 83.85359650021017,
+        "-1sigma": 83.31556126520749,
+        "0sigma": 82.78097826035689,
+        "1sigma": 82.24982533488904,
+        "2sigma": 81.72208048016553,
+        "3sigma": 81.19772182876437
+      },
+      "q_range": [
+        81.19772182876437,
+        84.3951062591777
+      ],
+      "PASS": true
+    },
+    "fibonacci_uniqueness": {
+      "pac_rank": 1,
+      "n_total_ratios": 24,
+      "n_closer": 0,
+      "top5": [
+        [
+          "F_4/F_7 = 3/13",
+          0.23076923076923078
+        ],
+        [
+          "F_6/F_9 = 8/34",
+          0.23529411764705882
+        ],
+        [
+          "F_8/F_11 = 21/89",
+          0.23595505617977527
+        ],
+        [
+          "F_9/F_12 = 34/144",
+          0.2361111111111111
+        ],
+        [
+          "F_7/F_10 = 13/55",
+          0.23636363636363636
+        ]
+      ],
+      "PASS": true
+    }
+  },
+  "falsification": {
+    "test_id": "F7",
+    "hypothesis": "sin\u00b2\u03b8_W = F\u2084/F\u2087 = 3/13 is exact at some EW-scale energy",
+    "tests_passed": "5",
+    "tests_total": 5,
+    "pdg_deviation_sigma": 15.025641025640894,
+    "Q_match_GeV": 82.78097826035689,
+    "falsified": "False",
+    "assessment": "5/5 tests pass. sin\u00b2\u03b8_W = 3/13 at Q = 82.8 GeV. NOT FALSIFIED: Fibonacci ratio matches at physical EW scale."
+  }
+}

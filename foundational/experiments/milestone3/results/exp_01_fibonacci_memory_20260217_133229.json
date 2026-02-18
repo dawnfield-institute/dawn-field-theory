@@ -1,0 +1,265 @@
+{
+  "experiment": "exp_01_fibonacci_memory",
+  "description": "Fibonacci matrix uniqueness \u2014 consolidation of exp_18",
+  "paper": "Paper 1",
+  "section": "\u00a75 (Why Fibonacci)",
+  "timestamp": "2026-02-17T13:28:47.182767+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "matrix_uniqueness": {
+      "n_candidates": 2,
+      "candidates": [
+        {
+          "matrix": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "det": -1,
+          "eigenvalues": [
+            1.6180339887,
+            -0.6180339887
+          ],
+          "dominant_eigenvalue": 1.6180339887,
+          "is_fibonacci": true
+        },
+        {
+          "matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "det": -1,
+          "eigenvalues": [
+            1.6180339887,
+            -0.6180339887
+          ],
+          "dominant_eigenvalue": 1.6180339887,
+          "is_fibonacci": true
+        }
+      ],
+      "all_fibonacci": true,
+      "all_have_phi_eigenvalue": true,
+      "status": "PASS",
+      "source": "Re-verification of exp_18 Test 1 (2026-02-12: PASS, 2 candidates)"
+    },
+    "convergence": {
+      "first_10": [
+        {
+          "k": 1,
+          "ratio": 1.0,
+          "error": 0.3819660112501052
+        },
+        {
+          "k": 2,
+          "ratio": 0.5,
+          "error": 0.11803398874989479
+        },
+        {
+          "k": 3,
+          "ratio": 0.6666666666666666,
+          "error": 0.04863267791677184
+        },
+        {
+          "k": 4,
+          "ratio": 0.6,
+          "error": 0.018033988749894814
+        },
+        {
+          "k": 5,
+          "ratio": 0.625,
+          "error": 0.0069660112501052085
+        },
+        {
+          "k": 6,
+          "ratio": 0.6153846153846154,
+          "error": 0.0026493733652793727
+        },
+        {
+          "k": 7,
+          "ratio": 0.6190476190476191,
+          "error": 0.0010136302977242773
+        },
+        {
+          "k": 8,
+          "ratio": 0.6176470588235294,
+          "error": 0.0003869299263653536
+        },
+        {
+          "k": 9,
+          "ratio": 0.6181818181818182,
+          "error": 0.00014782943192337417
+        },
+        {
+          "k": 10,
+          "ratio": 0.6179775280898876,
+          "error": 5.646066000719596e-05
+        }
+      ],
+      "k20_error": 3.732536835165945e-09,
+      "status": "PASS",
+      "source": "Re-verification of exp_18 Test 2 (2026-02-12: PASS)"
+    },
+    "fibonacci_equivalence": {
+      "results": [
+        {
+          "label": "Fibonacci chain",
+          "xi_mean": 0.102065,
+          "xi_std": 0.008383
+        },
+        {
+          "label": "Cascade d=1/\u03c6",
+          "xi_mean": 0.102857,
+          "xi_std": 0.008683
+        },
+        {
+          "label": "Cascade d=0.5",
+          "xi_mean": 0.054699,
+          "xi_std": 0.005364
+        },
+        {
+          "label": "Uniform",
+          "xi_mean": 5.9e-05,
+          "xi_std": 8.7e-05
+        },
+        {
+          "label": "Exponential",
+          "xi_mean": 0.002939,
+          "xi_std": 0.003698
+        }
+      ],
+      "t_statistic": -0.2859,
+      "p_value": 0.776498,
+      "equivalent": true,
+      "ranking": [
+        {
+          "rank": 1,
+          "label": "Cascade d=1/\u03c6",
+          "xi_mean": 0.102857
+        },
+        {
+          "rank": 2,
+          "label": "Fibonacci chain",
+          "xi_mean": 0.102065
+        },
+        {
+          "rank": 3,
+          "label": "Cascade d=0.5",
+          "xi_mean": 0.054699
+        },
+        {
+          "rank": 4,
+          "label": "Exponential",
+          "xi_mean": 0.002939
+        },
+        {
+          "rank": 5,
+          "label": "Uniform",
+          "xi_mean": 5.9e-05
+        }
+      ],
+      "status": "PASS",
+      "source": "Re-verification of exp_18 Test 3 (2026-02-12: PASS, p=0.776)"
+    },
+    "memory_depth": {
+      "results": {
+        "depth_1": {
+          "n_coupling": 1,
+          "xi_mean": 5e-06,
+          "xi_std": 6.8e-05
+        },
+        "depth_2": {
+          "n_coupling": 2,
+          "xi_mean": 0.06162,
+          "xi_std": 0.00703
+        },
+        "depth_3": {
+          "n_coupling": 3,
+          "xi_mean": 0.089089,
+          "xi_std": 0.008299
+        },
+        "depth_4": {
+          "n_coupling": 4,
+          "xi_mean": 0.099094,
+          "xi_std": 0.008602
+        },
+        "depth_5": {
+          "n_coupling": 5,
+          "xi_mean": 0.102857,
+          "xi_std": 0.008683
+        },
+        "depth_8": {
+          "n_coupling": 8,
+          "xi_mean": 0.104896,
+          "xi_std": 0.008721
+        }
+      },
+      "note": "Two-step memory is physically forced: \u0398 is immediate, \u03be needs one step to equilibrate. See PACSeries Research Journal \u00a74.5 and energy_equivalence session Deep Dive 5.",
+      "source": "energy_equivalence/PACSeries_Research_Journal \u00a74.5"
+    },
+    "scale_equivalence": {
+      "results": {
+        "n_env_8": {
+          "n_env": 8,
+          "fib_xi_mean": 0.102065,
+          "cas_xi_mean": 0.102857,
+          "t_stat": -0.2859,
+          "p_value": 0.776498,
+          "equivalent": true
+        },
+        "n_env_12": {
+          "n_env": 12,
+          "fib_xi_mean": 0.10185,
+          "cas_xi_mean": 0.102594,
+          "t_stat": -0.2741,
+          "p_value": 0.785459,
+          "equivalent": true
+        },
+        "n_env_16": {
+          "n_env": 16,
+          "fib_xi_mean": 0.102107,
+          "cas_xi_mean": 0.102825,
+          "t_stat": -0.2846,
+          "p_value": 0.777533,
+          "equivalent": true
+        },
+        "n_env_20": {
+          "n_env": 20,
+          "fib_xi_mean": 0.101927,
+          "cas_xi_mean": 0.102675,
+          "t_stat": -0.2762,
+          "p_value": 0.783928,
+          "equivalent": true
+        }
+      },
+      "note": "New test: checks whether exp_18 equivalence holds at larger mode counts"
+    }
+  },
+  "falsification": {
+    "test_id": "F1",
+    "hypothesis": "Fibonacci matrix is uniquely selected by information conservation + asymmetric transfer, and Fibonacci coupling is equivalent to cascade at d=1/\u03c6.",
+    "chain": [
+      "Step 1 (uniqueness): PASS",
+      "Step 2 (convergence): PASS",
+      "Step 3 (equivalence): PASS"
+    ],
+    "n_pass": "3/3",
+    "falsified": false,
+    "open_gaps": [
+      "exp_18 Test 4: A/(A+\u03be) = ln(\u03c6) crossover at ratio 2.04, not \u03c6 (1.55% at \u03c6 itself)",
+      "Layer 3 precision: single-shot A/(A+\u03be) = 0.489 vs ln(\u03c6) = 0.481 (1.6% gap)",
+      "Physical derivation of w2/w1 from Landauer thermodynamics remains qualitative"
+    ],
+    "assessment": "Core chain VALIDATED (3/3). Matrix uniqueness + eigenvalue convergence + Fibonacci\u2194cascade equivalence form a solid derivation path. The remaining gap is quantitative: connecting the abstract matrix argument to the measured A/(A+\u03be) partition ratio."
+  }
+}

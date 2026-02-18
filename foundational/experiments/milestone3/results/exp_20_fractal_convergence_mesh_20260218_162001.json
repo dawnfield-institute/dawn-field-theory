@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "experiment": "exp_20_fractal_convergence_mesh",
+    "description": "Fractal convergence mesh \u2014 recursive decomposition replaces flat matrix",
+    "paper": "Paper 4",
+    "section": "$fractal_mesh",
+    "timestamp": "2026-02-18T16:20:01.759470+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_mesh_construction": {
+      "mesh": {
+        "4": 107,
+        "3": 171,
+        "2": 279,
+        "1": 171,
+        "7": 23,
+        "6": 37,
+        "5": 61,
+        "10": 4,
+        "9": 7,
+        "8": 11,
+        "12": 1,
+        "11": 2
+      },
+      "max_pressure": 279,
+      "hubs": [
+        1,
+        2,
+        3
+      ],
+      "total_weight_fractal": 874,
+      "total_weight_flat": 26,
+      "amplification": 33.61538461538461,
+      "passed": true
+    },
+    "test_2_fractal_selection": {
+      "n_matched": 74,
+      "n_total": 220,
+      "mean_pressure_matched": 30262.756756756757,
+      "mean_pressure_unmatched": 32966.03424657534,
+      "difference": -2703.2774898185853,
+      "mann_whitney_p": 0.7833387181502445,
+      "rank_biserial": 0.06460570159200296,
+      "enrichment_75pct": 0.9598246895544192,
+      "top_matches": [
+        {
+          "indices": [
+            10,
+            11,
+            12
+          ],
+          "target": "Dm2_ratio",
+          "error": 0.9502584579193427,
+          "pressure": 98623
+        },
+        {
+          "indices": [
+            8,
+            11,
+            12
+          ],
+          "target": "Dm2_ratio",
+          "error": 0.9049934975860979,
+          "pressure": 86978
+        },
+        {
+          "indices": [
+            3,
+            11,
+            12
+          ],
+          "target": "sigma_8",
+          "error": 0.24799456905749154,
+          "pressure": 80410
+        },
+        {
+          "indices": [
+            6,
+            10,
+            12
+          ],
+          "target": "V_td",
+          "error": 0.7271734544461778,
+          "pressure": 70879
+        },
+        {
+          "indices": [
+            6,
+            9,
+            12
+          ],
+          "target": "Dm2_ratio",
+          "error": 0.6266367377478538,
+          "pressure": 63686
+        },
+        {
+          "indices": [
+            5,
+            9,
+            12
+          ],
+          "target": "m_s/m_d",
+          "error": 0.9530517608765698,
+          "pressure": 62642
+        },
+        {
+          "indices": [
+            3,
+            9,
+            12
+          ],
+          "target": "m_u/m_d",
+          "error": 0.37505860290670195,
+          "pressure": 61574
+        },
+        {
+          "indices": [
+            2,
+            9,
+            12
+          ],
+          "target": "V_us",
+          "error": 0.5451331387714544,
+          "pressure": 61232
+        },
+        {
+          "indices": [
+            9,
+            12
+          ],
+          "target": "V_us",
+          "error": 0.5451331387714544,
+          "pressure": 60953
+        },
+        {
+          "indices": [
+            5,
+            8,
+            12
+          ],
+          "target": "Omega_Lambda",
+          "error": 0.5715455939125762,
+          "pressure": 58190
+        }
+      ],
+      "passed": "False"
+    },
+    "test_3_recursion_specificity": {
+      "by_sequence": {
+        "Fibonacci": {
+          "recurrence_type": "binary",
+          "n_matched": 74,
+          "mean_matched": 30262.756756756757,
+          "mean_unmatched": 32966.03424657534,
+          "delta": -2703.2774898185853,
+          "p_value": 0.7833387181502445,
+          "discriminates": "False"
+        },
+        "Lucas": {
+          "recurrence_type": "binary",
+          "n_matched": 77,
+          "mean_matched": 31184.493506493505,
+          "mean_unmatched": 32526.426573426572,
+          "delta": -1341.9330669330666,
+          "p_value": 0.6882035847909889,
+          "discriminates": "False"
+        },
+        "Tribonacci": {
+          "recurrence_type": "ternary",
+          "n_matched": 98,
+          "mean_matched": 67080.73469387754,
+          "mean_unmatched": 58108.54918032787,
+          "delta": 8972.185513549673,
+          "p_value": 0.2044596609808917,
+          "discriminates": "False"
+        },
+        "Primes": {
+          "recurrence_type": "flat",
+          "n_matched": 92,
+          "mean_matched": 6.510869565217392,
+          "mean_unmatched": 6.4921875,
+          "delta": 0.018682065217391575,
+          "p_value": 0.5706466567675024,
+          "discriminates": "False"
+        },
+        "Random_0": {
+          "recurrence_type": "flat",
+          "n_matched": 77,
+          "mean_matched": 6.714285714285714,
+          "mean_unmatched": 6.384615384615385,
+          "delta": 0.3296703296703294,
+          "p_value": 0.3530392092721937,
+          "discriminates": "False"
+        },
+        "Random_1": {
+          "recurrence_type": "flat",
+          "n_matched": 78,
+          "mean_matched": 6.102564102564102,
+          "mean_unmatched": 6.71830985915493,
+          "delta": -0.6157457565908278,
+          "p_value": 0.9178275324275427,
+          "discriminates": "False"
+        },
+        "Random_2": {
+          "recurrence_type": "flat",
+          "n_matched": 79,
+          "mean_matched": 6.075949367088608,
+          "mean_unmatched": 6.73758865248227,
+          "delta": -0.6616392853936617,
+          "p_value": 0.8943903679547227,
+          "discriminates": "False"
+        }
+      },
+      "binary_disc": 0,
+      "flat_disc": 0,
+      "passed": false
+    },
+    "test_4_fractal_vs_flat": {
+      "fractal_delta": -2703.2774898185853,
+      "flat_delta": 0.1425398000740472,
+      "fractal_p": 0.7833387181502445,
+      "flat_p": 0.4493580551617421,
+      "fractal_cohens_d": -0.11804635944394512,
+      "flat_cohens_d": 0.03672025761341322,
+      "fractal_better": "False",
+      "passed": "False"
+    }
+  },
+  "summary": {
+    "total": 4,
+    "passed": 1,
+    "score": "1/4"
+  },
+  "falsification": {
+    "test_id": "experimental (not in registry)",
+    "hypothesis": "Physics-matching formula index sets sit at high-pressure convergence hubs in the Fibonacci recursive decomposition mesh, and this property requires additive recursion (absent in primes/random).",
+    "falsified_if": "Mesh pressure does not discriminate physics matches, OR flat (non-recursive) sequences show equal discrimination.",
+    "falsified": true,
+    "assessment": "1/4 tests pass."
+  }
+}

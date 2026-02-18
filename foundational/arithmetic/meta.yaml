@@ -1,40 +1,31 @@
-schema_version: 2.0schema_version: 2.0
+schema_version: "2.0"
 
-directory_name: arithmeticdirectory_name: arithmetic
+directory_name: arithmetic
 
-description: |description: 'Arithmetic theory, mappings, and supporting documents for Dawn Field
-
-  Foundational arithmetic implementations and validations for Dawn Field Theory.  Theory.
-
+description: |
+  Foundational arithmetic implementations and validations for Dawn Field Theory.
   
+  This directory contains the complete experimental validation framework for
+  Probabilistic Arithmetic Collapse (PAC) theory, including 7 comprehensive
+  experiments demonstrating energy-distance equivalence, semantic amplification,
+  context relativity, and irreversibility in both synthetic and real LLM embeddings.
+  
+  Updated Feb 2026 with milestone3 arithmetic directions: stoichiometric Fibonacci
+  framework, PAC-Lazy formula mesh, SEC cost hierarchy, and honest falsifications.
 
-  This directory contains the complete experimental validation framework for   '
+version: "3.0"
+status: experimentally_validated
 
-  Probabilistic Arithmetic Collapse (PAC) theory, including 7 comprehensive semantic_scope:
-
-  experiments demonstrating energy-distance equivalence, semantic amplification, - arithmetic
-
-  context relativity, and irreversibility in both synthetic and real LLM embeddings.- theory
-
-files:
-
-version: "2.0"- README.md
-
-status: experimentally_validated- infodynamics_arithmetic_v1.md
-
-- symbolic_geometry_arithmetic.md
-
-semantic_scope:child_directories:
-
-  - arithmetic- hodge_mapping
-
-  - probabilistic_collapse- macro_emergence_dynamics
-
+semantic_scope:
+  - arithmetic
+  - probabilistic_collapse
   - euclidean_geometry
   - semantic_embeddings
   - distance_metrics
   - energy_equivalence
   - pac_theory
+  - stoichiometric_fibonacci
+  - pac_lazy_architecture
 
 components:
   euclidean_distance_validation:
@@ -149,16 +140,36 @@ components:
       Retained for reference only.
 
 files:
-  - README.md: Comprehensive overview of all arithmetic components
+  - README.md: Comprehensive overview of all arithmetic components (v3.0)
   - infodynamics_arithmetic_v1.md: Theoretical foundations
   - symbolic_geometry_arithmetic.md: Geometric interpretations
+  - constants_derivation_lineage.md: Provenance of all constants (v1.1)
+  - unified_pac_framework_comprehensive.md: Complete PAC framework (v2.0)
   - PAC_notes.md: Historical theoretical development
   - PACEngine.py: Legacy implementation (deprecated)
 
 child_directories:
-  - euclidean_distance_validation: Primary validated framework
+  - euclidean_distance_validation: Primary validated framework (7 experiments)
   - hodge_mapping: Geometric foundations
   - macro_emergence_dynamics: Emergence theory
+
+milestone3_integration:
+  description: Milestone 3 arithmetic directions (Feb 2026)
+  experiments_source: ../experiments/milestone3/
+  key_additions:
+    - Stoichiometric Fibonacci framework (exp_13, 99.98th percentile)
+    - SEC cost hierarchy (~55.7 per index, exp_15)
+    - PAC-Lazy formula mesh (KL p=0.035, exp_21)
+    - Fibonacci-MED complementarity (exp_12)
+  honest_falsifications:
+    - exp_19: Crystallization is basis-independent
+    - exp_20: Raw fractal pressure is depth bias
+  new_constants:
+    - SEC_cost_per_index: ~55.7
+    - PAC_Lazy_split: 0.618/0.382
+    - SEC_ceiling: 0.38 (≈ 1/φ²)
+    - SEC_base_threshold: 0.10
+    - SEC_gamma: 0.5
 
 dependencies:
   required:
@@ -295,4 +306,4 @@ citation: |
     note = {Experimental validation of PAC theory through 7 comprehensive experiments}
   }
 
-last_updated: "2024"
+last_updated: "2026-02-18"

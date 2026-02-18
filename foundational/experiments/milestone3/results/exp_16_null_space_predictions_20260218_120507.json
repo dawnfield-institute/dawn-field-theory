@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "experiment": "exp_16_null_space_predictions",
+    "description": "Null space predictions \u2014 making the framework predictive",
+    "paper": "Paper 4",
+    "section": "\u00a7predictions",
+    "timestamp": "2026-02-18T12:05:07.427099+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_mining": {
+      "n_total_candidates": 380,
+      "n_novel": 373,
+      "n_novel_high_align": 354,
+      "known_avg_rank": 184.0,
+      "top_10_novel": [
+        {
+          "indices": [
+            2,
+            3,
+            10
+          ],
+          "avg_align": 0.9002918808703028
+        },
+        {
+          "indices": [
+            3,
+            10
+          ],
+          "avg_align": 0.8703463690193476
+        },
+        {
+          "indices": [
+            2,
+            3,
+            9
+          ],
+          "avg_align": 0.8660305163730582
+        },
+        {
+          "indices": [
+            2,
+            3,
+            12
+          ],
+          "avg_align": 0.8653671075876179
+        },
+        {
+          "indices": [
+            3,
+            8
+          ],
+          "avg_align": 0.8617543241450041
+        },
+        {
+          "indices": [
+            2,
+            3,
+            8
+          ],
+          "avg_align": 0.8494269420760263
+        },
+        {
+          "indices": [
+            2,
+            3,
+            8,
+            12
+          ],
+          "avg_align": 0.8368927994488533
+        },
+        {
+          "indices": [
+            2,
+            3,
+            4
+          ],
+          "avg_align": 0.8281249889290949
+        },
+        {
+          "indices": [
+            2,
+            3,
+            11
+          ],
+          "avg_align": 0.8273707151743581
+        },
+        {
+          "indices": [
+            2,
+            3,
+            9,
+            12
+          ],
+          "avg_align": 0.8245471663570895
+        }
+      ],
+      "passed": "False"
+    },
+    "test_2_ratio_scan": {
+      "n_checked": 408,
+      "n_matches": 23,
+      "n_unique": 20,
+      "n_high_align": 17,
+      "predictions": [
+        {
+          "expression": "F_11/(F_5\u00b7\u039e)",
+          "value": 16.817401445850187,
+          "target": "m_tau/m_mu",
+          "target_val": 16.817,
+          "error_pct": 0.002387143070625484,
+          "null_align": 0.3720093439595058
+        },
+        {
+          "expression": "F_9/(F_8\u00b7\u03c6)",
+          "value": 1.0006264579760202,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.024636435756431235,
+          "null_align": 0.7903850359427399
+        },
+        {
+          "expression": "F_11/(F_10\u00b7\u03c6)",
+          "value": 1.0000913636134663,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.028852674637013756,
+          "null_align": 0.774279958370597
+        },
+        {
+          "expression": "F_12/(F_11\u00b7\u03c6)",
+          "value": 0.9999651053930882,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.041473700684919484,
+          "null_align": 0.28966926000458787
+        },
+        {
+          "expression": "F_10/(F_9\u00b7\u03c6)",
+          "value": 0.9997608641542417,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.061890066350621276,
+          "null_align": 0.7433888990797641
+        },
+        {
+          "expression": "F_3\u00b7\u039e/F_6",
+          "value": 0.2646068724902841,
+          "target": "\u03a9_c",
+          "target_val": 0.265,
+          "error_pct": 0.1483500036663884,
+          "null_align": 0.7314408013026172
+        },
+        {
+          "expression": "F_8/(F_7\u00b7\u03c6)",
+          "value": 0.9983625972113687,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.20166364667740097,
+          "null_align": 0.5991279828790386
+        },
+        {
+          "expression": "F_12\u00b7\u039e/F_7",
+          "value": 11.72411988880028,
+          "target": "m_c/m_s",
+          "target_val": 11.7,
+          "error_pct": 0.20615289572889117,
+          "null_align": 0.662216745239892
+        },
+        {
+          "expression": "F_4\u00b7\u039e/F_12",
+          "value": 0.022050572707523673,
+          "target": "sin\u00b2\u03b8_13",
+          "target_val": 0.022,
+          "error_pct": 0.22987594328942634,
+          "null_align": 0.7894946058814063
+        },
+        {
+          "expression": "F_5/(F_8\u00b7\u039e)",
+          "value": 0.22495186524679223,
+          "target": "V_us",
+          "target_val": 0.2243,
+          "error_pct": 0.2906220449363473,
+          "null_align": 0.671122398973552
+        },
+        {
+          "expression": "F_7/(F_6\u00b7\u03c6)",
+          "value": 1.004305231718579,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.39237406971140437,
+          "null_align": 0.779054189466542
+        },
+        {
+          "expression": "F_2/F_4",
+          "value": 0.3333333333333333,
+          "target": "\u03b1_s(M_\u03c4)",
+          "target_val": 0.332,
+          "error_pct": 0.4016064257028005,
+          "null_align": 0.8058905027286567
+        },
+        {
+          "expression": "F_7/(F_10\u00b7\u039e)",
+          "value": 0.22331585168136103,
+          "target": "V_us",
+          "target_val": 0.2243,
+          "error_pct": 0.43876429720863425,
+          "null_align": 0.6723800875044124
+        },
+        {
+          "expression": "F_10\u00b7\u039e/F_5",
+          "value": 11.6427023895725,
+          "target": "m_c/m_s",
+          "target_val": 11.7,
+          "error_pct": 0.4897231660469994,
+          "null_align": 0.7879610767178582
+        },
+        {
+          "expression": "F_9/(F_12\u00b7\u039e)",
+          "value": 0.22307726636973563,
+          "target": "V_us",
+          "target_val": 0.2243,
+          "error_pct": 0.5451331387714544,
+          "null_align": 0.6017879618436859
+        }
+      ],
+      "passed": true
+    },
+    "test_3_product_scan": {
+      "n_checked": 3912,
+      "n_matches": 170,
+      "n_unique": 170,
+      "n_high_align": 140,
+      "top_predictions": [
+        {
+          "expression": "F_2\u00b7F_4/F_3",
+          "indices": [
+            2,
+            3,
+            4
+          ],
+          "value": 1.5,
+          "target": "Kolmogorov_C_K",
+          "target_val": 1.5,
+          "error_pct": 0.0,
+          "null_align": 0.8986372538800457
+        },
+        {
+          "expression": "F_4\u00b7F_2/F_3",
+          "indices": [
+            2,
+            3,
+            4
+          ],
+          "value": 1.5,
+          "target": "Kolmogorov_C_K",
+          "target_val": 1.5,
+          "error_pct": 0.0,
+          "null_align": 0.8986372538800457
+        },
+        {
+          "expression": "F_4/(F_2\u00b7F_3)",
+          "indices": [
+            2,
+            3,
+            4
+          ],
+          "value": 1.5,
+          "target": "Kolmogorov_C_K",
+          "target_val": 1.5,
+          "error_pct": 0.0,
+          "null_align": 0.8986372538800457
+        },
+        {
+          "expression": "F_4/(F_3\u00b7F_2)",
+          "indices": [
+            2,
+            3,
+            4
+          ],
+          "value": 1.5,
+          "target": "Kolmogorov_C_K",
+          "target_val": 1.5,
+          "error_pct": 0.0,
+          "null_align": 0.8986372538800457
+        },
+        {
+          "expression": "F_2\u00b7F_11/(F_5\u00b7\u039e)",
+          "indices": [
+            2,
+            5,
+            11
+          ],
+          "value": 16.817401445850187,
+          "target": "m_tau/m_mu",
+          "target_val": 16.817,
+          "error_pct": 0.002387143070625484,
+          "null_align": 0.31285378353239085
+        },
+        {
+          "expression": "F_11\u00b7F_2/(F_5\u00b7\u039e)",
+          "indices": [
+            2,
+            5,
+            11
+          ],
+          "value": 16.817401445850187,
+          "target": "m_tau/m_mu",
+          "target_val": 16.817,
+          "error_pct": 0.002387143070625484,
+          "null_align": 0.31285378353239085
+        },
+        {
+          "expression": "F_10\u00b2/(F_8\u00b7F_12)",
+          "indices": [
+            8,
+            10,
+            12
+          ],
+          "value": 1.000330687830688,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.004929343780577724,
+          "null_align": 0.4950903411606736
+        },
+        {
+          "expression": "F_10\u00b2/(F_12\u00b7F_8)",
+          "indices": [
+            8,
+            10,
+            12
+          ],
+          "value": 1.000330687830688,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.004929343780577724,
+          "null_align": 0.4950903411606736
+        },
+        {
+          "expression": "F_11\u00b2/(F_10\u00b7F_12)",
+          "indices": [
+            10,
+            11,
+            12
+          ],
+          "value": 1.0001262626262626,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.02536409901612003,
+          "null_align": 0.4015370648409872
+        },
+        {
+          "expression": "F_11\u00b2/(F_12\u00b7F_10)",
+          "indices": [
+            10,
+            11,
+            12
+          ],
+          "value": 1.0001262626262626,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.02536409901612003,
+          "null_align": 0.4015370648409872
+        },
+        {
+          "expression": "F_4\u00b2/(F_6\u00b7F_12)",
+          "indices": [
+            4,
+            6,
+            12
+          ],
+          "value": 0.0078125,
+          "target": "\u03b1_em(M_Z)",
+          "target_val": 0.007815491867980712,
+          "error_pct": 0.03828125000001334,
+          "null_align": 0.6918143665437042
+        },
+        {
+          "expression": "F_4\u00b2/(F_12\u00b7F_6)",
+          "indices": [
+            4,
+            6,
+            12
+          ],
+          "value": 0.0078125,
+          "target": "\u03b1_em(M_Z)",
+          "target_val": 0.007815491867980712,
+          "error_pct": 0.03828125000001334,
+          "null_align": 0.6918143665437042
+        },
+        {
+          "expression": "F_9\u00b2/(F_8\u00b7F_10)",
+          "indices": [
+            8,
+            9,
+            10
+          ],
+          "value": 1.000865800865801,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.04856163315948501,
+          "null_align": 0.6396875308203046
+        },
+        {
+          "expression": "F_9\u00b2/(F_10\u00b7F_8)",
+          "indices": [
+            8,
+            9,
+            10
+          ],
+          "value": 1.000865800865801,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.04856163315948501,
+          "null_align": 0.6396875308203046
+        },
+        {
+          "expression": "F_10\u00b2/(F_9\u00b7F_11)",
+          "indices": [
+            9,
+            10,
+            11
+          ],
+          "value": 0.9996695307336417,
+          "target": "\u03c1_parameter",
+          "target_val": 1.00038,
+          "error_pct": 0.07101993905898915,
+          "null_align": 0.7155617569147905
+        }
+      ],
+      "passed": true
+    },
+    "test_4_sec_cost": {
+      "cost_law_slope": 47.78101803647259,
+      "cost_law_intercept": -75.67429600141314,
+      "cost_law_r": 0.8368874292477468,
+      "n_novel_tested": 473,
+      "novel_rmse": 72.1863094533318,
+      "novel_r": 0.29730877330129657,
+      "known_rmse": 31.870583237991067,
+      "passed": false
+    }
+  },
+  "summary": {
+    "total": 4,
+    "passed": 2,
+    "score": "2/4",
+    "n_total_predictions": 30,
+    "n_sub_half_pct": 29
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "experiment": "exp_06_theta_recycling",
+  "description": "\u0398 recycling \u2014 cascade dynamics from original (8 core tests)",
+  "paper": "Paper 1",
+  "section": "\u00a712 (\u0398 recycling claims)",
+  "timestamp": "2026-02-17T21:13:06.733197+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "monotonic_xi": {
+      "n_trials": 100,
+      "monotonic_count": 100,
+      "monotonic_fraction": 1.0,
+      "zero_xi_steps": 0,
+      "total_steps": 3000,
+      "zero_xi_fraction": 0.0,
+      "pass": true
+    },
+    "amplification": {
+      "single_xi": 0.0011658855166090988,
+      "cascade_xi": 0.034040441170649416,
+      "amplification": 29.19707011169827,
+      "target_amplification": 53.0,
+      "within_order_of_magnitude": "True"
+    },
+    "backpressure": {
+      "correlation_r": 0.3502511333503752,
+      "correlation_p": 0.05776313084618644,
+      "target_r": 0.94,
+      "pass": "False"
+    },
+    "conservation": {
+      "initial_P": 1.0,
+      "total_xi_energy": 0.007827454431433317,
+      "final_theta": 0.13171419768608097,
+      "total_dissipated": 0.8670440577667891,
+      "conservation_error": 0.006585709884303403,
+      "pass": "True"
+    },
+    "formula_distinguishability": {
+      "anova_f": 56.52902464857932,
+      "anova_p": 4.5430212567353847e-35,
+      "formulas_distinguishable": "True",
+      "efficiency_range_pct": "-95.5% - 0.2%",
+      "model_dependence_pct": 95.7306408910934
+    }
+  },
+  "falsification": {
+    "test_id": "F5",
+    "hypothesis": "Landauer cascade is self-funding with predictable \u0398 recycling",
+    "tests_passed": "3",
+    "tests_total": 4,
+    "monotonic_xi": 1.0,
+    "amplification": 29.19707011169827,
+    "backpressure_r": 0.3502511333503752,
+    "conservation_error": 0.006585709884303403,
+    "anova_p": 4.5430212567353847e-35,
+    "model_dependence_pct": 95.7306408910934,
+    "falsified": "False",
+    "assessment": "Core cascade tests: 3/4 PASS. Monotonic \u03be: 100/100. Amplification: 29.2\u00d7 (target ~53\u00d7). Back-pressure r=0.350. Conservation: 0.66%. \u0398 formulas ARE distinguishable (ANOVA p=4.54e-35). Model dependence: 95.7%. NOT FALSIFIED: cascade dynamics reproduce expected behavior. Paper should report efficiency range, not single value."
+  }
+}

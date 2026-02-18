@@ -1,0 +1,131 @@
+{
+  "experiment": "exp_07_wilson_fisher",
+  "description": "Wilson-Fisher null test \u2014 Monte Carlo false positive rate",
+  "paper": "Paper 4",
+  "section": "\u00a714 (predictions)",
+  "timestamp": "2026-02-17T13:00:22.832907+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "expression_space": {
+      "n_expressions": 484,
+      "value_range": [
+        0.004291845493562232,
+        233.0
+      ]
+    },
+    "pac_matches": {
+      "n_matches": 13,
+      "tolerance_pct": 1.0,
+      "matches": [
+        {
+          "expression": "F_3/F_10",
+          "value": 0.03636363636363636,
+          "target_name": "eta",
+          "target_value": 0.0362978,
+          "deviation_pct": 0.18137838556706948
+        },
+        {
+          "expression": "F_5/F_6",
+          "value": 0.625,
+          "target_name": "nu",
+          "target_value": 0.6299709,
+          "deviation_pct": 0.7890681934673491
+        },
+        {
+          "expression": "(F_3*F_4)/F_10",
+          "value": 0.10909090909090909,
+          "target_name": "alpha",
+          "target_value": 0.1096,
+          "deviation_pct": 0.46449900464499755
+        },
+        {
+          "expression": "(F_3*F_6)/F_7",
+          "value": 1.2307692307692308,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.5117427233666841
+        },
+        {
+          "expression": "(F_3*F_7)/F_8",
+          "value": 1.2380952380952381,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.08044928423232148
+        },
+        {
+          "expression": "(F_3*F_8)/F_9",
+          "value": 1.2352941176470589,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.14597707161435716
+        },
+        {
+          "expression": "(F_3*F_9)/F_10",
+          "value": 1.2363636363636363,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.05952337210926821
+        },
+        {
+          "expression": "(F_3*F_10)/F_11",
+          "value": 1.2359550561797752,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.09255062809998361
+        },
+        {
+          "expression": "(F_3*F_11)/F_12",
+          "value": 1.2361111111111112,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.0799360511590759
+        },
+        {
+          "expression": "(F_3*F_12)/F_13",
+          "value": 1.2360515021459229,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.08475449471160253
+        },
+        {
+          "expression": "(F_4*F_6)/F_5",
+          "value": 4.8,
+          "target_name": "delta",
+          "target_value": 4.789,
+          "deviation_pct": 0.22969304656504744
+        },
+        {
+          "expression": "F_3/(phi*F_2)",
+          "value": 1.2360679774997896,
+          "target_name": "gamma",
+          "target_value": 1.2371,
+          "deviation_pct": 0.08342272251317641
+        },
+        {
+          "expression": "F_3/(phi*F_9)",
+          "value": 0.036354940514699695,
+          "target_name": "eta",
+          "target_value": 0.0362978,
+          "deviation_pct": 0.1574214269176003
+        }
+      ]
+    },
+    "null_test": {
+      "n_simulations": 10000,
+      "null_match_mean": 7.7051,
+      "null_match_std": 2.7649112083392478,
+      "null_match_max": 20,
+      "observed_matches": 13,
+      "false_positive_rate": 0.048,
+      "significant": "True"
+    }
+  },
+  "falsification": {
+    "test_id": "F6",
+    "hypothesis": "PAC Wilson-Fisher matches are significant beyond chance",
+    "false_positive_rate": 0.048,
+    "threshold": 0.05,
+    "falsified": "False",
+    "assessment": "Monte Carlo FPR = 0.0480. NOT FALSIFIED: PAC matches are unlikely by chance (FPR < 5%)."
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "experiment": "exp_07_wilson_fisher",
+  "description": "Wilson-Fisher gap \u2014 \u03bd vs 1/\u03c6 formula search + null test",
+  "paper": "Paper 4",
+  "section": "\u00a714 (predictions)",
+  "timestamp": "2026-02-18T00:01:13.158163+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "gap_search": {
+      "target": 0.011936911250105209,
+      "n_candidates": 12,
+      "best": {
+        "expression": "((\u039e / \u03c6) / F10)",
+        "value": 0.011893530244058552,
+        "error": 0.0036341902136764405,
+        "error_pct": 0.36341902136764404
+      },
+      "top5": [
+        {
+          "expression": "((\u039e / \u03c6) / F10)",
+          "value": 0.011893530244058552,
+          "error": 0.0036341902136764405,
+          "error_pct": 0.36341902136764404
+        },
+        {
+          "expression": "((\u039e * 1/\u03c6) / F10)",
+          "value": 0.011893530244058552,
+          "error": 0.0036341902136764405,
+          "error_pct": 0.36341902136764404
+        },
+        {
+          "expression": "((1/\u03c6 * \u039e) / F10)",
+          "value": 0.011893530244058552,
+          "error": 0.0036341902136764405,
+          "error_pct": 0.36341902136764404
+        },
+        {
+          "expression": "((\u039e / F10) / \u03c6)",
+          "value": 0.01189353024405855,
+          "error": 0.003634190213676586,
+          "error_pct": 0.3634190213676586
+        },
+        {
+          "expression": "((\u039e / F10) * 1/\u03c6)",
+          "value": 0.01189353024405855,
+          "error": 0.003634190213676586,
+          "error_pct": 0.3634190213676586
+        }
+      ],
+      "PASS": true
+    },
+    "physics_candidates": {
+      "best_formula": "1/\u03c6 + (\u03b3\u00b7ln(\u03c6))/F\u2088",
+      "best_value": 0.6312607984432405,
+      "best_error_pct": 0.2047552423834904,
+      "n_candidates": 24,
+      "n_within_1pct": 4,
+      "PASS": true
+    },
+    "nu_systematic": {
+      "n_candidates": 50,
+      "best": {
+        "expression": "((F3 / \u039e) / F4)",
+        "value": 0.6298652226910183,
+        "error": 0.0001677495087181008,
+        "error_pct": 0.01677495087181008
+      },
+      "top5": [
+        {
+          "expression": "((F3 / \u039e) / F4)",
+          "value": 0.6298652226910183,
+          "error": 0.0001677495087181008,
+          "error_pct": 0.01677495087181008
+        },
+        {
+          "expression": "((F3 / F4) / \u039e)",
+          "value": 0.6298652226910183,
+          "error": 0.0001677495087181008,
+          "error_pct": 0.01677495087181008
+        },
+        {
+          "expression": "((1/\u03c6 / F10) + 1/\u03c6)",
+          "value": 0.6292709703635292,
+          "error": 0.0011110507429324251,
+          "error_pct": 0.11110507429324251
+        },
+        {
+          "expression": "((\u03b3 / F10) + 1/\u03c6)",
+          "value": 0.6285288190208318,
+          "error": 0.0022891231629400713,
+          "error_pct": 0.22891231629400713
+        },
+        {
+          "expression": "(\u03c0 / F5)",
+          "value": 0.6283185307179586,
+          "error": 0.002622929538557062,
+          "error_pct": 0.2622929538557062
+        }
+      ],
+      "PASS": true
+    },
+    "null_test": {
+      "search_space_total": 23376,
+      "n_mc": 2000,
+      "mc_mean": 1.893,
+      "mc_std": 1.6469823921341722,
+      "actual_hits_1pct": 20,
+      "p_value": 0.0,
+      "PASS": "True"
+    },
+    "all_exponents": {
+      "n_total": 7,
+      "n_matched": 6,
+      "match_ratio": 0.8571428571428571,
+      "details": {
+        "nu": {
+          "target": 0.6299709,
+          "n_hits": 2,
+          "best": {
+            "expression": "(\u03c0 / F5)",
+            "value": 0.6283185307179586,
+            "error": 0.002622929538557062,
+            "error_pct": 0.2622929538557062
+          },
+          "matched_1pct": true
+        },
+        "eta": {
+          "target": 0.0362978,
+          "n_hits": 2,
+          "best": {
+            "expression": "(2 / F10)",
+            "value": 0.03636363636363636,
+            "error": 0.001813783855670695,
+            "error_pct": 0.18137838556706948
+          },
+          "matched_1pct": true
+        },
+        "gamma": {
+          "target": 1.2371,
+          "n_hits": 7,
+          "best": {
+            "expression": "(1/\u03c6 + 1/\u03c6)",
+            "value": 1.2360679774997896,
+            "error": 0.0008342272251317641,
+            "error_pct": 0.08342272251317641
+          },
+          "matched_1pct": true
+        },
+        "beta": {
+          "target": 0.3265,
+          "n_hits": 1,
+          "best": {
+            "expression": "(\u03c6 / F5)",
+            "value": 0.32360679774997897,
+            "error": 0.008861262634061387,
+            "error_pct": 0.8861262634061386
+          },
+          "matched_1pct": true
+        },
+        "delta": {
+          "target": 4.7893,
+          "n_hits": 2,
+          "best": {
+            "expression": "(\u03c6 + \u03c0)",
+            "value": 4.759626642339688,
+            "error": 0.006195760896229485,
+            "error_pct": 0.6195760896229485
+          },
+          "matched_1pct": true
+        },
+        "alpha": {
+          "target": 0.1096,
+          "n_hits": 0,
+          "best": null,
+          "matched_1pct": false
+        },
+        "omega": {
+          "target": 0.8297,
+          "n_hits": 1,
+          "best": {
+            "expression": "(ln(\u03c6) / \u03b3)",
+            "value": 0.8336776950460852,
+            "error": 0.004794136490400446,
+            "error_pct": 0.4794136490400446
+          },
+          "matched_1pct": true
+        }
+      },
+      "PASS": true
+    },
+    "gap_interpretation": {
+      "gap": 0.011936911250105209,
+      "interpretations": [
+        {
+          "relation": "Gap\u00b74\u03c0\u00b2",
+          "value": 0.4712503672378058,
+          "nearest": "ln(\u03c6)",
+          "nearest_val": 0.48121182505960347,
+          "error_pct": 2.113835556285279
+        },
+        {
+          "relation": "Gap\u00b755",
+          "value": 0.6565301187557865,
+          "nearest": "\u03c6-1",
+          "nearest_val": 0.6180339887498949,
+          "error_pct": 5.863574100583072
+        },
+        {
+          "relation": "Gap/\u03b3\u00b3",
+          "value": 0.06206941305315564,
+          "nearest": "\u039e-1",
+          "nearest_val": 0.058427489961136336,
+          "error_pct": 5.867500452920989
+        }
+      ]
+    },
+    "eis_decomposition": {
+      "nu_decomposed": 0.6298652226910182,
+      "error_pct": 0.016774950871827704,
+      "eis_ratio": 0.6666666666666666,
+      "xi_reciprocal": 0.9447978340365274,
+      "perturbations": [
+        {
+          "modification": "1/3 \u00d7 1/\u039e",
+          "value": 0.31493261,
+          "error_pct": 50.0084
+        },
+        {
+          "modification": "2/3 \u00d7 1/\u039e",
+          "value": 0.62986522,
+          "error_pct": 0.0168
+        },
+        {
+          "modification": "3/3 \u00d7 1/\u039e",
+          "value": 0.94479783,
+          "error_pct": 49.9748
+        },
+        {
+          "modification": "4/3 \u00d7 1/\u039e",
+          "value": 1.25973045,
+          "error_pct": 99.9665
+        },
+        {
+          "modification": "2/2 \u00d7 1/\u039e",
+          "value": 0.94479783,
+          "error_pct": 49.9748
+        },
+        {
+          "modification": "2/3 \u00d7 1/\u039e",
+          "value": 0.62986522,
+          "error_pct": 0.0168
+        },
+        {
+          "modification": "2/4 \u00d7 1/\u039e",
+          "value": 0.47239892,
+          "error_pct": 25.0126
+        },
+        {
+          "modification": "2/5 \u00d7 1/\u039e",
+          "value": 0.37791913,
+          "error_pct": 40.0101
+        },
+        {
+          "modification": "2/(3\u00b7\u03b3)",
+          "value": 1.15496981,
+          "error_pct": 83.337
+        },
+        {
+          "modification": "2/(3\u00b7ln(\u03c6))",
+          "value": 1.38539128,
+          "error_pct": 119.9135
+        },
+        {
+          "modification": "2/(3\u00b71)",
+          "value": 0.66666667,
+          "error_pct": 5.825
+        },
+        {
+          "modification": "2/(3\u00b7\u03c0/3)",
+          "value": 0.63661977,
+          "error_pct": 1.0554
+        },
+        {
+          "modification": "2/(3\u00b7\u039e)",
+          "value": 0.62986522,
+          "error_pct": 0.0168
+        }
+      ],
+      "PASS": true,
+      "interpretation": "\u03bd = 2/(3\u00b7\u039e) decomposes into the E-I-S cycle ratio (2/3, from the 3-phase Energy\u2192Information\u2192Structure loop) and the SEC balance operator reciprocal (1/\u039e). Both components have independent cascade-framework motivations. The Wilson-Fisher exponent thus encodes the topology of the E-I-S cycle at the SEC balance point."
+    }
+  },
+  "falsification": {
+    "test_id": "F6",
+    "hypothesis": "\u03bd = 1/\u03c6 + f(\u03b3); Wilson-Fisher exponents emerge from phase constants",
+    "tests_passed": "6",
+    "tests_total": 6,
+    "falsified": false,
+    "assessment": "6/6 tests pass. NOT FALSIFIED: Closed-form expression found, survives null test, and decomposes into cascade components (E-I-S ratio \u00d7 balance reciprocal)."
+  }
+}

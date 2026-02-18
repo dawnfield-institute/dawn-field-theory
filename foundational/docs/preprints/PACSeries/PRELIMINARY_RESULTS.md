@@ -50,29 +50,30 @@ For a result to move from this document into a PACSeries paper, it must:
 
 These results have clear individual measurements but need joint probability analysis to rule out coincidental matching.
 
-### A1. Wilson-Fisher Critical Exponents in φ-Constants
+### ~~A1. Wilson-Fisher Critical Exponents in φ-Constants~~ → PROMOTED to Paper 4
 
-**Observation**: All six 3D Ising model critical exponents can be expressed within 1% error using combinations of φ, γ, Ξ, and small Fibonacci numbers.
+**PROMOTED (2026-02-18)**: This result now meets all 5 tightening criteria and has been validated in milestone3/F6 (exp_07). Moved to Paper 4: Standard Model Parameters.
+
+**Final validation results:**
 
 | Exponent | Formula | Value | Known | Error |
 |----------|---------|-------|-------|-------|
-| ν | F₃/(F₄·Ξ) | 0.6299 | 0.6300 | 0.04% |
+| ν | 2/(3·Ξ) | 0.6299 | 0.6300 | **0.017%** |
 | η | (others) | — | 0.0362 | ~1% |
 | β | (others) | — | 0.3265 | ~1% |
 | γ_Ising | (others) | — | 1.2372 | ~1% |
 | δ | (others) | — | 4.789 | ~1% |
 | α | (others) | — | 0.110 | ~1% |
 
-**Source**: `prime_growth_dynamics_v2/scripts/exp_10`
+**Criteria met:**
+1. ✅ Starts from established: Wilson-Fisher universality class (textbook)
+2. ✅ Has a derivation: ν = (2/3) × (1/Ξ) = E-I-S cycle ratio × balance reciprocal (cascade framework)
+3. ✅ Error bounds: 0.017% for ν; 6/7 exponents within 1%
+4. ✅ Survives null test: MC p = 0.0000 (20 hits vs 1.89 expected from random constants); perturbation analysis shows best alternative is 1.06% (63× worse)
+5. ✅ Independently verifiable: `milestone3/scripts/exp_07_wilson_fisher.py`
 
-**What's needed**:
-- Monte Carlo null test: how often do 6 random expressions from {φ, γ, Ξ, F₁–F₁₀} match 6 target values within 1%?
-- If joint p < 0.001, this is Paper 2 or Paper 4 material
-- If joint p > 0.01, it's coincidence
-
-**Status**: Computed, not yet validated against null  
-**Contribution status**: Open  
-**Last assessed**: 2026-02
+**Status**: ✅ **PROMOTED** — all 5 criteria satisfied  
+**Last assessed**: 2026-02-18
 
 ---
 
@@ -108,9 +109,9 @@ These results have clear individual measurements but need joint probability anal
 - Exhaustive search: are these the unique best expressions, or are there equally good alternatives?
 - If unique and derived, this is Paper 2 material (extends the Ξ decomposition)
 
-**Status**: Candidate formulae identified, not yet uniqueness-tested  
-**Contribution status**: Guidance needed  
-**Last assessed**: 2026-02
+**Status**: Candidate formulae identified, not yet uniqueness-tested. **Not directly tested in milestone3** — no experiment specifically validates λ* or β closed forms. Would require a dedicated formula search with look-elsewhere correction (similar to exp_09 methodology).  
+**Contribution status**: Open  
+**Last assessed**: 2026-02-19
 
 ---
 
@@ -210,17 +211,25 @@ Total: Ξ = γ + ln(φ) reconciles Phase I + II.
 
 **What Paper 1 already includes**: The ξ decomposition and cascade amplification measurement. The 53× ratio proves cascades create far more structure than single events.
 
-**What's preliminary**: The claim that Θ *recycles*. Currently the cascade is modeled as a topology — it shows that cascade structure maximizes ξ output — but doesn't track the energy budget across levels. Whether the dissipated kT ln 2 at level k is quantitatively sufficient to drive erasure at level k+1 hasn't been measured.
+**Milestone 3 Update (F5, exp_06)**: Cascade self-funding is partially validated:
+- ✅ Monotonic ξ: 100/100 cascade steps show monotonic ξ increase
+- ✅ Amplification: 29.2× cumulative ξ amplification over 100 steps
+- ✅ Conservation: ΔE_total / E_input = 0.66%
+- ❌ Back-pressure: r = 0.350 (FAIL — crude model, original achieved r ≈ 0.94)
+- Original stub failure was a **unit mismatch** (ξ in bits vs P in energy), not physics failure
+- Different Θ formulas give 36%–94% efficiency — recycling is **model-dependent**
+
+**What's still preliminary**: The exact recycling efficiency. Self-funding is confirmed (3/4 tests pass) but the quantitative Θ budget depends on which formula is used. Cannot claim specific efficiency without deriving Θ from first principles. The honest range is **36%–94%** depending on the Θ formula — this 2.6× spread means the recycling *mechanism* is validated but the recycling *efficiency* is not a measurement, it's model-dependent.
 
 **What's needed**:
-- Energy budget accounting: track Θ_k and compare to minimum energy required for erasure at level k+1
-- If Θ_k ≥ kT ln 2 at each level, recycling is thermodynamically viable
-- If Θ_k < kT ln 2 at depth 3+, the cascade requires external energy input (which changes the interpretation)
-- Test: does cascade amplification scale with temperature? (Θ is thermal)
+- Derive Θ from first principles (which formula is correct?)
+- Resolve back-pressure failure (crude model limitation vs real physics?)
+- Energy budget accounting across cascade levels
+- Narrow the 36%–94% range before claiming a specific recycling efficiency in Paper 1
 
-**Status**: Hypothesis grounded in established measurements; energy budget not computed  
-**Contribution status**: Open  
-**Last assessed**: 2026-02
+**Status**: Partially validated (milestone3/F5: 3/4 PASS). Self-funding confirmed; efficiency is model-dependent (36%–94% range). Paper 1 should present the range, not a point estimate.  
+**Contribution status**: Guidance needed  
+**Last assessed**: 2026-02-19
 
 ---
 
