@@ -21,6 +21,7 @@ source_experiments:
   - "foundational/experiments/milestone1"
   - "foundational/experiments/milestone2"
   - "foundational/experiments/pac_confluence_xi"
+  - "foundational/experiments/milestone3"
 
 series_position: 4
 series_title: "PACSeries v2.0"

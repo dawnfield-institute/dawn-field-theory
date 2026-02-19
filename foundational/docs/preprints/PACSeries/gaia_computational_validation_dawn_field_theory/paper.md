@@ -43,6 +43,18 @@ data_repository: "zenodo.org/record/[TBD]"
 
 ---
 
+> **Consolidated into PACSeries v2.0 (February 2026).** This paper's findings have been consolidated into PACSeries Paper 6: *Computational Validation of PAC Conservation* (February 2026), which extends the analysis with Token PAC Tree validation across 7 production LLMs and TinyCIMM-Boltzmann conservation enforcement.
+>
+> Key content integrated:
+> - GAIA engine architecture detail, 500-iteration conservation proof, resonance locking derivation → Paper 6 §8.3
+> - PAC conservation residual < 7×10⁻¹¹ → Paper 6 Part A evidence
+> - Cosmological parallel r = −0.9996 → Paper 6 cross-validation
+> - **Perplexity correction**: The 5.91 metric is cosine similarity, not true LM perplexity. Not comparable to GPT-2's 29.41. Paper 6 documents this honestly.
+>
+> The original DOI remains valid. This paper preserves the full GAIA architecture depth (2,546 lines); Paper 6 provides the consolidated three-system evidence base.
+
+---
+
 ## Abstract
 
 We **introduce** **GAIA** (Generally Adaptive Intelligence Architecture), a computational implementation that **investigates** Dawn Field Theory's core predictions about information-driven reality emergence. GAIA operates without hardcoding theoretical expectations, allowing Xi, resonance phenomena, and PAC dynamics to **potentially emerge** naturally from first-principles implementations.

@@ -23,6 +23,19 @@ While these computational results are promising, they require independent valida
 
 ---
 
+> **Consolidated into PACSeries v2.0 (February 2026).** This paper's 0.020 Hz findings have been validated computationally in PACSeries Paper 6: *Computational Validation of PAC Conservation* (February 2026), including Landauer bridge derivation and Token PAC Tree phase transition evidence.
+>
+> Key content integrated:
+> - 0.020 Hz emergence across cosmic scales → Paper 6 validation evidence
+> - QBE validation (Dec 2025 update) → Paper 6 three-system evidence base
+> - Mass-frequency unification framework → Paper 6 Landauer bridge
+>
+> **Honest note**: Milestone3 exp_05 found that the E-I-S triangle oscillator simulation gives 0.007 Hz (ratio 0.232), not the claimed 2/3 (0.667) relationship. The 0.020 Hz resonance lock is reproducible; the theoretical derivation of the 2/3 ratio requires further work.
+>
+> The original DOI remains valid. This paper preserves the full MAS framework; Paper 6 provides computational validation context.
+
+---
+
 ## 1. Introduction
 
 ### 1.1 The Mass Actualization Spectrum Framework

@@ -2,10 +2,14 @@
 
 **Authors:** Peter Lorne Groom, Dawn Field Theory Collaborative  
 **Affiliation:** Dawn Field Institute  
-**Date:** December 9, 2025  
-**Version:** Draft v1.0  
+**Date:** December 9, 2025 (Updated: February 19, 2026)  
+**Version:** Draft v1.1  
 **Status:** Preprint Draft  
-**Classification:** [sec][D][v1.0][C4][I5][E]
+**Classification:** [sec][D][v1.1][C4][I5][E]
+
+---
+
+> **February 2026 Update.** Since this paper was written, the PACSeries v2.0 (February 2026) has established *why* φ appears in prime distribution. PACSeries Paper 1 (*The Structure Cost of Erasure*) derives ln(φ) as the unique collapse efficiency from Landauer erasure through PAC recursion, with 0.76% experimental error. PACSeries Paper 3 (*Feigenbaum Constants from Fibonacci Arithmetic*) shows that F₁₀ = 55 — the same structural constant controlling SEC factor base behaviour — appears in closed-form expressions for the Feigenbaum constants (13-digit precision for r∞, sole match in 62 million combinations). The observation reported here — that SEC stress partitions converge to 1/φ at size = 9 — is now understood as a consequence of PAC conservation dynamics: φ is the unique stable attractor of any system satisfying f(Parent) = Σf(Children). The "why" section (§6) should be read alongside PACSeries Papers 1 and 3 for the full derivation chain. Milestone3 experiment exp_29 extended the Feigenbaum search space to 62M combinations with zero new hits beyond the original (55, 17, 52) triplet, strengthening the case that Fibonacci structure in these results is not coincidental.
 
 ---
 

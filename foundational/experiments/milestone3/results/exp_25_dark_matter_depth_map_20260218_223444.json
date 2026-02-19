@@ -1,0 +1,575 @@
+{
+  "experiment": "exp_25_dark_matter_depth_map",
+  "description": "Dark matter Fibonacci depth mapping and \u03a9_c prediction test",
+  "paper": "Paper 5",
+  "section": "\u00a7speculative (gravity/dark matter)",
+  "timestamp": "2026-02-18T22:34:44.373599+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "coupling_ladder": {
+      "positions": {
+        "Strong (\u03b1_s)": {
+          "value": 0.118,
+          "target_log10": 0.9281179926938746,
+          "best_n": 6,
+          "best_log10_Fn": 0.9044408393318633,
+          "delta_log10": 0.02367715336201137,
+          "match_type": "coupling"
+        },
+        "EM (\u03b1_EM)": {
+          "value": 0.0072973525693,
+          "target_log10": 2.136834670438785,
+          "best_n": 12,
+          "best_log10_Fn": 2.158366680831736,
+          "delta_log10": 0.02153201039295105,
+          "match_type": "coupling"
+        },
+        "Weak (G_F\u00b7M_W\u00b2)": {
+          "value": 0.07535720424170847,
+          "target_log10": 1.1228752222762406,
+          "best_n": 7,
+          "best_log10_Fn": 1.1134284795818419,
+          "delta_log10": 0.009446742694398713,
+          "match_type": "coupling"
+        },
+        "Gravity (\u03b1_G)": {
+          "value": 5.906149391364588e-39,
+          "target_log10": 38.228695572097536,
+          "best_n": 185,
+          "best_log10_Fn": 38.313228444078064,
+          "delta_log10": 0.08453287198052806,
+          "match_type": "coupling"
+        },
+        "DM/baryon ratio": {
+          "value": 5.375253549695741,
+          "target_log10": 0.7303989546595779,
+          "best_n": 5,
+          "best_log10_Fn": 0.6954531990818844,
+          "delta_log10": 0.03494575557769353,
+          "match_type": "ratio"
+        },
+        "\u03a9_c": {
+          "value": 0.265,
+          "target_log10": -0.5767541260631921,
+          "best_n": 1,
+          "best_log10_Fn": 0.0,
+          "delta_log10": 0.5767541260631921,
+          "match_type": "fraction"
+        },
+        "\u03a9_\u039b": {
+          "value": 0.685,
+          "target_log10": -0.1643094285075744,
+          "best_n": 1,
+          "best_log10_Fn": 0.0,
+          "delta_log10": 0.1643094285075744,
+          "match_type": "fraction"
+        },
+        "\u03a9_b": {
+          "value": 0.0493,
+          "target_log10": -1.30715308072277,
+          "best_n": 1,
+          "best_log10_Fn": 0.0,
+          "delta_log10": 1.30715308072277,
+          "match_type": "fraction"
+        }
+      },
+      "ladder_sample": [
+        {
+          "n": 1,
+          "log10": 0.0
+        },
+        {
+          "n": 2,
+          "log10": 0.0684902783319481
+        },
+        {
+          "n": 3,
+          "log10": 0.2774779185819269
+        },
+        {
+          "n": 5,
+          "log10": 0.6954531990818844
+        },
+        {
+          "n": 7,
+          "log10": 1.1134284795818419
+        },
+        {
+          "n": 10,
+          "log10": 1.7403914003317782
+        },
+        {
+          "n": 13,
+          "log10": 2.3673543210817147
+        },
+        {
+          "n": 15,
+          "log10": 2.785329601581672
+        },
+        {
+          "n": 20,
+          "log10": 3.8302678028315658
+        },
+        {
+          "n": 25,
+          "log10": 4.87520600408146
+        },
+        {
+          "n": 30,
+          "log10": 5.920144205331353
+        },
+        {
+          "n": 37,
+          "log10": 7.383057687081205
+        },
+        {
+          "n": 50,
+          "log10": 10.09989701033093
+        },
+        {
+          "n": 70,
+          "log10": 14.279649815330504
+        },
+        {
+          "n": 100,
+          "log10": 20.549279022829868
+        },
+        {
+          "n": 150,
+          "log10": 30.998661035328805
+        },
+        {
+          "n": 183,
+          "log10": 37.895253163578104
+        },
+        {
+          "n": 200,
+          "log10": 41.448043047827746
+        }
+      ],
+      "dm_baryon_ratio": 5.375253549695741,
+      "dm_nearest_fibonacci": 5,
+      "status": "INFO"
+    },
+    "omega_c_uniqueness": {
+      "predicted_omega_c": 0.2646068724902841,
+      "observed_omega_c": 0.265,
+      "error_pct": 0.1483500036663884,
+      "total_formulas": 590,
+      "n_within_015pct": 2,
+      "n_within_1pct": 6,
+      "frac_015pct": 0.003389830508474576,
+      "top_matches": [
+        {
+          "a": 7,
+          "b": 2,
+          "c": 10,
+          "F_a": 13,
+          "F_c": 55,
+          "formula": "F_7\u00b7\u039e^2/F_10",
+          "value": 0.2647907958103746,
+          "error_pct": 0.07894497721712805
+        },
+        {
+          "a": 3,
+          "b": 1,
+          "c": 6,
+          "F_a": 2,
+          "F_c": 8,
+          "formula": "F_3\u00b7\u039e^1/F_6",
+          "value": 0.2646068724902841,
+          "error_pct": 0.1483500036663884
+        }
+      ],
+      "cosmo_best_fits": {
+        "\u03a9_c": {
+          "observed": 0.265,
+          "formula": "F_7\u00b7\u039e^2/F_10",
+          "predicted": 0.2647907958103746,
+          "error_pct": 0.07894497721712805
+        },
+        "\u03a9_\u039b": {
+          "observed": 0.685,
+          "formula": "F_6\u00b7\u039e^2/F_7",
+          "predicted": 0.6893961547725731,
+          "error_pct": 0.6417744193537294
+        },
+        "\u03a9_b": {
+          "observed": 0.0493,
+          "formula": "F_6\u00b7\u039e^-2/F_12",
+          "predicted": 0.04959127484445076,
+          "error_pct": 0.5908211854984998
+        },
+        "\u03a9_m": {
+          "observed": 0.3143,
+          "formula": "F_1\u00b7\u039e^-1/F_4",
+          "predicted": 0.31493261134550915,
+          "error_pct": 0.20127627919475866
+        },
+        "\u03c3\u2088": {
+          "observed": 0.811,
+          "formula": "F_3\u00b7\u039e^2/F_4",
+          "predicted": 0.7468458343369542,
+          "error_pct": 7.910501314802204
+        },
+        "DM/baryon": {
+          "observed": 5.375253549695741,
+          "formula": "F_5\u00b7\u039e^1/F_1",
+          "predicted": 5.292137449805682,
+          "error_pct": 1.5462731036150652
+        }
+      },
+      "status": "PASS"
+    },
+    "phi_equilibrium": {
+      "phi_eq_de": 0.6180339887498948,
+      "phi_eq_matter": 0.38196601125010515,
+      "observed_de": 0.685,
+      "observed_matter": 0.3143,
+      "deviation_de_pp": 6.696601125010526,
+      "deviation_matter_pp": 6.766601125010513,
+      "z_phi_crossing": 0.10438250135411176,
+      "z_equality": 0.29652848721362934,
+      "h0_ratio": 1.083679525222552,
+      "xi_balance": 1.0584274899611363,
+      "h0_xi_diff_pct": 2.33021245429821,
+      "status": "PASS"
+    },
+    "dm_depth_candidates": {
+      "wimp_depths": [
+        {
+          "depth": 74,
+          "log10_Fd": 15.11560037633042,
+          "energy_gev": 9355.697263162858
+        },
+        {
+          "depth": 75,
+          "log10_Fd": 15.324588016580398,
+          "energy_gev": 5782.138897089026
+        },
+        {
+          "depth": 76,
+          "log10_Fd": 15.533575656830376,
+          "energy_gev": 3573.5583660738553
+        },
+        {
+          "depth": 77,
+          "log10_Fd": 15.742563297080356,
+          "energy_gev": 2208.5805310151763
+        },
+        {
+          "depth": 78,
+          "log10_Fd": 15.951550937330335,
+          "energy_gev": 1364.977835058667
+        },
+        {
+          "depth": 79,
+          "log10_Fd": 16.16053857758031,
+          "energy_gev": 843.602695956509
+        },
+        {
+          "depth": 80,
+          "log10_Fd": 16.36952621783029,
+          "energy_gev": 521.3751391021649
+        },
+        {
+          "depth": 81,
+          "log10_Fd": 16.57851385808027,
+          "energy_gev": 322.2275568543415
+        },
+        {
+          "depth": 82,
+          "log10_Fd": 16.78750149833025,
+          "energy_gev": 199.14758224782173
+        },
+        {
+          "depth": 83,
+          "log10_Fd": 16.996489138580227,
+          "energy_gev": 123.07997460651976
+        },
+        {
+          "depth": 84,
+          "log10_Fd": 17.205476778830207,
+          "energy_gev": 76.06760764130298
+        },
+        {
+          "depth": 85,
+          "log10_Fd": 17.414464419080186,
+          "energy_gev": 47.01236696521636
+        },
+        {
+          "depth": 86,
+          "log10_Fd": 17.623452059330162,
+          "energy_gev": 29.05524067608663
+        },
+        {
+          "depth": 87,
+          "log10_Fd": 17.832439699580142,
+          "energy_gev": 17.95712628912997
+        },
+        {
+          "depth": 88,
+          "log10_Fd": 18.041427339830122,
+          "energy_gev": 11.098114386956565
+        },
+        {
+          "depth": 89,
+          "log10_Fd": 18.2504149800801,
+          "energy_gev": 6.859011902173345
+        },
+        {
+          "depth": 90,
+          "log10_Fd": 18.459402620330078,
+          "energy_gev": 4.239102484783221
+        },
+        {
+          "depth": 91,
+          "log10_Fd": 18.668390260580058,
+          "energy_gev": 2.6199094173901587
+        },
+        {
+          "depth": 92,
+          "log10_Fd": 18.877377900830037,
+          "energy_gev": 1.619193067393049
+        },
+        {
+          "depth": 93,
+          "log10_Fd": 19.086365541080017,
+          "energy_gev": 1.000716349997101
+        }
+      ],
+      "proposed_ranges": {
+        "readme_F37_F50": {
+          "depths": [
+            37,
+            50
+          ]
+        },
+        "synthesis_F50_F70": {
+          "depths": [
+            50,
+            70
+          ]
+        }
+      },
+      "interesting_depths": {
+        "1": {
+          "log10_Fd": 0.0,
+          "coupling": 1.0,
+          "energy_gev": 1.22089e+19,
+          "note": ""
+        },
+        "2": {
+          "log10_Fd": 0.0684902783319481,
+          "coupling": 0.8541019662496845,
+          "energy_gev": 1.0427645495745774e+19,
+          "note": ""
+        },
+        "3": {
+          "log10_Fd": 0.2774779185819269,
+          "coupling": 0.5278640450004205,
+          "energy_gev": 6.444639339005634e+18,
+          "note": ""
+        },
+        "4": {
+          "log10_Fd": 0.4864655588319056,
+          "coupling": 0.3262379212492639,
+          "energy_gev": 3.9830061567401375e+18,
+          "note": ""
+        },
+        "5": {
+          "log10_Fd": 0.6954531990818844,
+          "coupling": 0.2016261237511566,
+          "energy_gev": 2.461633182265496e+18,
+          "note": ""
+        },
+        "6": {
+          "log10_Fd": 0.9044408393318633,
+          "coupling": 0.12461179749810719,
+          "energy_gev": 1.521372974474641e+18,
+          "note": ""
+        },
+        "7": {
+          "log10_Fd": 1.1134284795818419,
+          "coupling": 0.07701432625304938,
+          "energy_gev": 9.402602077908545e+17,
+          "note": "\u2190 EM (F\u2087=13)"
+        },
+        "8": {
+          "log10_Fd": 1.3224161198318207,
+          "coupling": 0.04759747124505784,
+          "energy_gev": 5.811127666837866e+17,
+          "note": ""
+        },
+        "9": {
+          "log10_Fd": 1.5314037600817996,
+          "coupling": 0.029416855007991512,
+          "energy_gev": 3.591474411070676e+17,
+          "note": ""
+        },
+        "10": {
+          "log10_Fd": 1.7403914003317782,
+          "coupling": 0.018180616237066318,
+          "energy_gev": 2.2196532557671898e+17,
+          "note": ""
+        },
+        "11": {
+          "log10_Fd": 1.949379040581757,
+          "coupling": 0.011236238770925198,
+          "energy_gev": 1.3718211553034864e+17,
+          "note": ""
+        },
+        "12": {
+          "log10_Fd": 2.158366680831736,
+          "coupling": 0.006944377466141114,
+          "energy_gev": 8.478321004637026e+16,
+          "note": "GUT range"
+        },
+        "13": {
+          "log10_Fd": 2.3673543210817147,
+          "coupling": 0.004291861304784079,
+          "energy_gev": 5.2398905483978344e+16,
+          "note": "\u2190 F\u2081\u2083=233"
+        },
+        "14": {
+          "log10_Fd": 2.576341961331693,
+          "coupling": 0.0026525161613570347,
+          "energy_gev": 3.23843045623919e+16,
+          "note": "GUT range"
+        },
+        "15": {
+          "log10_Fd": 2.785329601581672,
+          "coupling": 0.0016393451434270475,
+          "energy_gev": 2.001460092158648e+16,
+          "note": "GUT range"
+        },
+        "16": {
+          "log10_Fd": 2.994317241831651,
+          "coupling": 0.0010131710179299865,
+          "energy_gev": 1.2369703640805412e+16,
+          "note": "GUT range"
+        },
+        "17": {
+          "log10_Fd": 3.2033048820816297,
+          "coupling": 0.0006261741254970605,
+          "energy_gev": 7644897280781062.0,
+          "note": "GUT range"
+        },
+        "18": {
+          "log10_Fd": 3.4122925223316085,
+          "coupling": 0.0003869968924329255,
+          "energy_gev": 4724806360024344.0,
+          "note": "GUT range"
+        },
+        "19": {
+          "log10_Fd": 3.621280162581587,
+          "coupling": 0.0002391772330641351,
+          "energy_gev": 2920090920756719.0,
+          "note": "GUT range"
+        },
+        "20": {
+          "log10_Fd": 3.8302678028315658,
+          "coupling": 0.00014781965936879062,
+          "energy_gev": 1804715439267627.8,
+          "note": "GUT range"
+        },
+        "21": {
+          "log10_Fd": 4.039255443081545,
+          "coupling": 9.13575736953444e-05,
+          "energy_gev": 1115375481489090.2,
+          "note": "GUT range"
+        },
+        "22": {
+          "log10_Fd": 4.2482430833315235,
+          "coupling": 5.646208567344616e-05,
+          "energy_gev": 689339957778536.8,
+          "note": "GUT range"
+        },
+        "23": {
+          "log10_Fd": 4.457230723581502,
+          "coupling": 3.489548802189821e-05,
+          "energy_gev": 426035523710553.06,
+          "note": "GUT range"
+        },
+        "24": {
+          "log10_Fd": 4.666218363831481,
+          "coupling": 2.1566597651547927e-05,
+          "energy_gev": 263304434067983.5,
+          "note": "GUT range"
+        },
+        "25": {
+          "log10_Fd": 4.87520600408146,
+          "coupling": 1.3328890370350275e-05,
+          "energy_gev": 162731089642569.47,
+          "note": "GUT range"
+        },
+        "26": {
+          "log10_Fd": 5.084193644331439,
+          "coupling": 8.237707281197642e-06,
+          "energy_gev": 100573344425413.89,
+          "note": "GUT range"
+        },
+        "27": {
+          "log10_Fd": 5.293181284581417,
+          "coupling": 5.091183089152639e-06,
+          "energy_gev": 62157745217155.66,
+          "note": ""
+        },
+        "28": {
+          "log10_Fd": 5.502168924831396,
+          "coupling": 3.1465241920450164e-06,
+          "energy_gev": 38415599208258.4,
+          "note": ""
+        },
+        "29": {
+          "log10_Fd": 5.7111565650813745,
+          "coupling": 1.944658897107621e-06,
+          "energy_gev": 23742146008897.234,
+          "note": ""
+        },
+        "37": {
+          "log10_Fd": 7.383057687081205,
+          "coupling": 4.139446871379135e-08,
+          "energy_gev": 505380929079.80725,
+          "note": ""
+        },
+        "50": {
+          "log10_Fd": 10.09989701033093,
+          "coupling": 7.945166260261112e-11,
+          "energy_gev": 970017403.5490189,
+          "note": ""
+        },
+        "70": {
+          "log10_Fd": 14.279649815330504,
+          "coupling": 5.252307989014687e-15,
+          "energy_gev": 64124.903007081404,
+          "note": "WIMP range!"
+        },
+        "100": {
+          "log10_Fd": 20.549279022829868,
+          "coupling": 2.8230656464108988e-21,
+          "energy_gev": 0.03446652617046602,
+          "note": ""
+        },
+        "183": {
+          "log10_Fd": 37.895253163578104,
+          "coupling": 1.2727609333296924e-38,
+          "energy_gev": 1.553901095892888e-19,
+          "note": "\u2190 Gravity"
+        }
+      },
+      "status": "INFO"
+    }
+  },
+  "falsification": {
+    "test_id": "F23",
+    "hypothesis": "Dark matter and cosmological parameters relate to Fibonacci depth and the PAC/SEC \u03c6-equilibrium.",
+    "chain": [
+      "\u03a9_c uniqueness: PASS \u2014 0.34% of formulas match",
+      "\u03c6 equilibrium: PASS \u2014 deviation 6.7 pp",
+      "Coupling ladder: maps forces to Fibonacci depths",
+      "DM depth: 20 WIMP-range candidates"
+    ],
+    "honest_assessment": "The \u03a9_c prediction (F\u2083\u00b7\u039e/F\u2086) and \u03c6-equilibrium are suggestive structural observations. The Hubble tension ratio is close to \u039e but not precise enough to be compelling. The proposed dark matter depth ranges (F\u2083\u2087-F\u2085\u2080 or F\u2085\u2080-F\u2087\u2080) correspond to couplings far below any observable scale. These are speculative frameworks, not precision predictions."
+  }
+}

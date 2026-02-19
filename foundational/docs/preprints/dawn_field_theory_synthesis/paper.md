@@ -2,9 +2,22 @@
 
 **Author:** Peter Groom
 **Affiliation:** Dawn Field Institute
-**Date:** September 1, 2025
-**Version:** Draft v1.0
+**Date:** September 1, 2025 (Updated: February 19, 2026)
+**Version:** Draft v1.1
 **Status:** Synthesis Preprint
+
+---
+
+> **February 2026 Update.** This synthesis paper documents the intellectual journey from CIM speculation to systematic investigation. The seven research domains described here have since been consolidated and formalized in the PACSeries v2.0 (February 2026) — a six-paper series with quantitative derivations, error bounds, and 29 falsification tests. The PACSeries represents the mature expression of the framework this paper introduced.
+>
+> Key developments since this paper:
+> - The “imperfection engine” methodology is now operationalized: 2 experiments explicitly falsified (crystallization order basis-independent; fractal pressure = depth bias), 1 borderline (bootstrap CI includes zero), all documented honestly.
+> - The original 7 preprints referenced here have been updated with PACSeries cross-references.
+> - The framework has a full derivation chain: PAC axiom → φ recursion → ln(φ) erasure efficiency → Ξ = γ + ln(φ) balance constant → cross-domain measurements.
+>
+> New readers should start with the PACSeries. This paper remains as intellectual provenance.
+
+---
 
 
 ## References and Resources

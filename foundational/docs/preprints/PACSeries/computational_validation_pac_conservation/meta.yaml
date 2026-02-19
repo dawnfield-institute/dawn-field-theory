@@ -22,6 +22,14 @@ source_experiments:
   - "dawn-models/research/tinycimm/TinyCIMM-Boltzmann"
   - "dawn-field-theory/foundational/experiments/landauer_erasure_structure"
   - "dawn-models/research/scbf/experiments/huggingface_bifractal_validation"
+  - "dawn-field-theory/foundational/experiments/milestone3"
+
+key_results:
+  - "SEC phase → accuracy monotonic across 7 models, 0 free parameters, p < 0.0001"
+  - "Xi clustering 2.36× in trained weights (chi^2 = 5511); attention > MLP"
+  - "Hallucination = +9.6% PAC violation; GPT-2 zero compensation"
+  - "TinyCIMM conservation: noise violation p=0.008, 16× shock reduction, no factual cost"
+  - "PAC-Lazy formula mesh: KL p=0.035, d=0.198 (modest); bootstrap CI crosses zero (fragile)"
 
 series_position: 6
 series_title: "PACSeries v2.0"

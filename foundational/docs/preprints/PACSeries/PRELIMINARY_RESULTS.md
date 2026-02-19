@@ -1,7 +1,7 @@
 # PACSeries: Preliminary Results and Open Leads
 
 **Status**: Working document  
-**Updated**: February 2026  
+**Updated**: 2026-02-19  
 **Purpose**: Catalogue results that are suggestive but not yet at PACSeries publication standard
 
 ---
@@ -91,8 +91,9 @@ These results have clear individual measurements but need joint probability anal
 - Without derivation, this is a curious observation, not a result
 
 **Status**: Oscillation validated; φ connection unvalidated  
-**Contribution status**: Guidance needed  
-**Last assessed**: 2026-02
+**Contribution status**: Open (3-month rule applies — inactive since creation)  
+**Last assessed**: 2026-02-19  
+**Milestone 3 update**: No experiment in milestone3 directly tested this. The oscillation amplitude ratio is still a single-number match without derivation. Given that phi_artifact_test showed Ξ is metric-dependent, similar caution applies here: the 1/φ match needs a mechanism, not just measurement.
 
 ---
 
@@ -110,6 +111,51 @@ These results have clear individual measurements but need joint probability anal
 - If unique and derived, this is Paper 2 material (extends the Ξ decomposition)
 
 **Status**: Candidate formulae identified, not yet uniqueness-tested. **Not directly tested in milestone3** — no experiment specifically validates λ* or β closed forms. Would require a dedicated formula search with look-elsewhere correction (similar to exp_09 methodology).  
+**Contribution status**: Open  
+**Last assessed**: 2026-02-19  
+**Milestone 3 update**: exp_27 (F25) provides indirect support — the π→φ→Fibonacci mechanism chain means φ-based closed forms are expected. prime_growth_dynamics_v2 measured λ* at 0.017% and β at 0.026%. But uniqueness remains untested: need exhaustive search over (F_a ± F_b)/(F_c ± F_d) parameter space to confirm these are the best or only solutions. If uniqueness holds, promote to Paper 2.
+
+---
+
+### A4. Dark Matter Density from Fibonacci Depth Map
+
+**Observation**: Ω_c = F₇·Ξ²/F₁₀ = 0.2587 vs Planck 2018 observed 0.2589 (0.079% error). Also F₃·Ξ/F₆ at 0.148%. Cyclotomic depth F₆²+F₆+1 = 73 maps to ~15 keV (sterile neutrino range).
+
+**Source**: `milestone3/scripts/exp_25_dark_matter_depth.py`
+
+**Statistics**: 0.079% error; two independent Fibonacci formulas converge
+
+**What's needed**:
+- Parameter counting: how many Fibonacci expressions of form F_a·Ξ^n/F_b exist near Ω_c? If many, this is look-elsewhere. Need exhaustive search analogous to exp_09 methodology
+- Physical derivation: why should dark matter live at F₇ depth specifically? The cyclotomic argument (73 = Φ₃(F₆)) is structural but not yet derived from first principles
+- Comparison: does the same template predict Ω_b (baryonic)? If F_a·Ξ^n/F_b also fits Ω_b, the template is too flexible
+- Universe φ-equilibrium crossing at z ≈ 0.10 is interesting but the 6.7pp deviation from 1/φ needs error analysis
+
+**Promotion path**: If uniqueness holds (not many alternatives) AND physical derivation found → Paper 5 material
+
+**Status**: Strong numerical match; needs uniqueness test and derivation  
+**Contribution status**: Open  
+**Last assessed**: 2026-02-19
+
+---
+
+### A5. Unified Fibonacci Correction Template F_a/(mπF_b²)
+
+**Observation**: Both α_EM and gravity use corrections of the form F_a/(mπF_b²), with opposite signs (minus for EM screening, plus for gravity enhancement). Both anchored to F₇=13. Index gaps a−b are 3=F₄ (EM) and 7=F₇ (gravity) — both Fibonacci. 0/5000 Monte Carlo random integer sequences match both simultaneously.
+
+**Source**: `milestone3/scripts/exp_26_correction_template.py`, `milestone3/scripts/exp_27_phase_cascade.py`
+
+**Statistics**: 0/5000 MC; α_EM at 5.7 ppm, gravity at 0.0008 log₁₀
+
+**What's needed**:
+- Template only works for 2/5 tested constants below 100 ppm threshold (sin²θ_W at 24.1 ppm, Ω_c at 38.8 ppm). The remaining 3/5 don't fit the template well
+- Why does the template fail for some constants? Is there a systematic pattern to which constants obey it?
+- Physical derivation: why F_a/(mπF_b²) and not some other form? exp_27 (F25) connects this to ((φ²+1)/π, 0.62% match) via convergent error bounds — but that's a structural argument, not a derivation
+- Need: predict a correction for a constant not yet tested (genuine prediction, not postdiction)
+
+**Promotion path**: If 3+ constants fit AND physical derivation found → Paper 5 material. Currently 2/5 is below threshold.
+
+**Status**: Pattern real for α_EM and gravity (0/5000 MC); not yet universal (2/5)  
 **Contribution status**: Open  
 **Last assessed**: 2026-02-19
 
@@ -174,14 +220,16 @@ Total: Ξ = γ + ln(φ) reconciles Phase I + II.
 
 **Source**: `oscillation_attractor_dynamics/scripts/exp_15–17`
 
-**What's needed**:
-- This is measured but not derived. Why should π be optimal? The connection to the Riemann zeta function is suggestive but circular (ζ is defined using primes which involve π).
-- Need: independent derivation of π-optimality, or proof that the comparison is not an artefact of how coherence is measured
-- 30 experiments in oscillation_attractor_dynamics, but the core claim is one ratio (19×)
+**Milestone 3 update (exp_27, F25)**: π-optimality now has partial mechanistic support. exp_27 demonstrated that on a π-closed phase manifold (S¹), the golden angle α* = 1 − 1/φ minimises worst-case star discrepancy D*_N. The causal chain π (closure) → φ (non-resonance) → Fibonacci (integers) provides context for why π would be special. However, this is still one step removed: exp_27 shows π creates the stage on which φ is optimal, but doesn't explain the 19× ratio itself.
 
-**Status**: Measured; theoretical explanation missing  
+**What's still needed**:
+- Derivation of the 19× ratio from the π→φ mechanism. If the ratio is predictable from the cascade framework, this is Paper 3 material
+- Proof that the comparison is not an artefact of how coherence is measured
+- The core claim is still one ratio (19×). Additional metrics or scales testing this ratio would strengthen it
+
+**Status**: Measured; partial mechanistic support from exp_27, but the specific ratio is not derived  
 **Contribution status**: Guidance needed  
-**Last assessed**: 2026-02
+**Last assessed**: 2026-02-19
 
 ---
 
@@ -262,27 +310,37 @@ These apply PAC/SEC to new domains. The applications are interesting but each ne
 **Source**: `pac_cosmology_jwst_validation/`
 
 **What's needed**:
-- Independent astrophysics review of the comparison methodology
-- The 100% vs 41% comparison may be unfair (PAC has more free parameters?)
-- Need: parameter counting and information-theoretic model comparison (AIC/BIC)
+- **AIC/BIC model comparison** (CRITICAL before citing): The 100% vs 41% comparison is meaningless without parameter counting. PAC may fit better simply because it has more free parameters. Compute AIC = 2k − 2ln(L) and BIC = k·ln(n) − 2ln(L) for both frameworks. If AIC/BIC still favours PAC after penalising for parameters, the claim strengthens. If not, the comparison is misleading and should not be cited.
+- Independent astrophysics review of methodology
+- Cross-check with non-JWST high-z observations
+- **Do not cite the 100% vs 41% comparison in any paper until AIC/BIC is computed**
 
-**Status**: Published on Zenodo; methodology needs tightening  
-**Contribution status**: Guidance needed  
-**Last assessed**: 2026-02
+**Status**: Published on Zenodo; **BLOCKED on AIC/BIC analysis** before results can be used  
+**Contribution status**: Open (well-defined: compute AIC/BIC for both models on the same dataset)  
+**Last assessed**: 2026-02-19
 
 ---
 
 ### C3. DNA Prime Structure
 
-**Observation**: 40 experiments exploring PAC patterns in DNA/genomic data.
+**Observation**: 40 experiments exploring PAC patterns in DNA/genomic data. Key validated findings:
+- Fibonacci enrichment in SEQUENCE organization: 1.28× enrichment, z = +103.4 (p < 10⁻²⁴)
+- NOT in 3D geometry: −28% depleted in structural contacts
+- Flexibility correlation: flexible residues 6.92× enriched vs rigid 4.01×
+- Function-specific: Fibronectin 10.25×, Myosin 9.65× enrichment
 
-**Source**: `experiments/dna_prime_structure/` (40 scripts)
+**Source**: `experiments/dna_prime_structure/` (40 scripts), `experiments/dna_prime_structure/SYNTHESIS.md`
 
-**What's needed**: Full inventory not yet assessed for PACSeries relevance. Likely too domain-specific for the core series but could support a standalone publication.
+**What's needed**:
+- Cross-validation on non-PDB datasets (UniProt, AlphaFold DB)
+- Null model: compare Fibonacci spacing against other integer sequences (Lucas, Tribonacci) in same analysis
+- The z=+103.4 is strong, but is it Fibonacci-specific or just "spread-out residues are enriched"?
+- Domain-expert review of the conformational signaling hypothesis
+- Too domain-specific for core PACSeries; standalone biology publication path
 
-**Status**: Unreviewed for this consolidation  
-**Contribution status**: Guidance needed  
-**Last assessed**: 2026-02
+**Status**: Strong signal (z=+103.4) but Fibonacci-specificity untested; needs null comparison  
+**Contribution status**: Open  
+**Last assessed**: 2026-02-19
 
 ---
 
@@ -319,6 +377,47 @@ These apply PAC/SEC to new domains. The applications are interesting but each ne
 **Status**: Single-model demonstration (n=1). Needs multi-model sweep for utility claim.  
 **Contribution status**: Open  
 **Last assessed**: 2026-02
+
+---
+
+## Category E: Mechanism Leads from exp_22–28 (NEW)
+
+These results from milestone3 Blocks G/H/I passed falsification but raise new questions that need further work.
+
+### E1. PAC-Lazy Bootstrap Fragility
+
+**Observation**: exp_21 (F19) showed PAC-Lazy formula discrimination works (KL p=0.035, d=0.198). But exp_24 (F22) found the bootstrap CI includes zero — the signal is not robust under resampling.
+
+**Source**: `milestone3/scripts/exp_24_pac_lazy_anatomy.py`
+
+**What it means**: The PAC-Lazy architecture (from GAIA POCs) transfers to formula space, but raw counting is biased. Conservation normalization is required. The discrimination exists but isn't stable enough for claims.
+
+**What's needed**:
+- Identify which component of the PAC-Lazy profile carries the signal (depth? breadth? conservation ratio?)
+- Test whether conservation-normalized profiles survive bootstrap
+- If the signal is in conservation ratios (not raw counts), the discrimination may be rescuable
+
+**Status**: Mechanism validated but signal fragile under bootstrap  
+**Contribution status**: Open  
+**Last assessed**: 2026-02-19
+
+---
+
+### E2. φ-Equilibrium of the Universe at z ≈ 0.10
+
+**Observation**: The dark energy fraction 1/φ = 61.8% vs observed 68.5% differs by 6.7 percentage points. Universe crossed the φ-equilibrium at z ≈ 0.10 (recent cosmological past).
+
+**Source**: `milestone3/scripts/exp_25_dark_matter_depth.py`
+
+**What's needed**:
+- The 6.7pp deviation is large. Is this within expected scatter, or does it falsify the idea?
+- Error propagation: what's the uncertainty on the z ≈ 0.10 crossing?
+- If the crossing is real, is it a coincidence (we live near z=0) or physically meaningful?
+- This is the weakest finding from exp_25. The Ω_c formula at 0.079% is much stronger.
+
+**Status**: Interesting observation; needs error analysis and theoretical motivation  
+**Contribution status**: Guidance needed  
+**Last assessed**: 2026-02-19
 
 ---
 
@@ -372,8 +471,44 @@ Results that fail tightening (null test shows coincidence, alternative explanati
 
 ## Retired
 
-*(None yet)*
+Results moved here either failed tightening, were falsified, or were superseded by stronger results.
+
+### R1. Fibonacci-Specific Crystallization Order — FALSIFIED (2026-02-18)
+
+**Original claim**: Fibonacci input produces different crystallization dynamics than other sequences in the PAC cascade.
+
+**Falsification**: milestone3/exp_19 (F17). Crystallization order is **entirely determined by target physics**, NOT by input sequence. 0% difference across Fibonacci/Lucas/Primes/Tribonacci/Random. All produce identical order: sin²θ_W → Koide → She-Lev → ν_WF → α_s → α_em.
+
+**Impact**: The Fibonacci *structure* of PAC is validated extensively elsewhere (Layer 1–7 in UNIFIED_EVIDENCE). What's falsified is the claim that Fibonacci *input* changes *dynamics*. Physics has a natural complexity hierarchy that is sequence-independent.
+
+**Source**: `milestone3/FALSIFICATION_REGISTRY.md`, F17
+
+---
+
+### R2. Fractal Mesh Raw Pressure as Physics Discriminator — FALSIFIED (2026-02-18)
+
+**Original claim**: Fractal recursive decomposition of formula space preferentially selects physics matches via mesh pressure.
+
+**Falsification**: milestone3/exp_20 (F18). Raw pressure correlates with **index depth, not physics**. Physics matches have LOWER average pressure than non-matches (delta = −2703, p = 0.78, WRONG direction). 33.6× amplification over flat confirms fractal structure is real, but visit counting conflates structural depth with physical significance.
+
+**Impact**: Led directly to exp_21's conservation-based approach (F19), which succeeded. The failure clarified that **raw counting ≠ physics discrimination** — conservation normalization is needed.
+
+**Source**: `milestone3/FALSIFICATION_REGISTRY.md`, F18
+
+---
+
+### R3. Phase Ordering of Primes — FALSIFIED (2026-02-14)
+
+**Original claim**: Primes exhibit a specific phase ordering in the SEC manifold that reflects their structural role.
+
+**Falsification**: pac_foundations_validation/exp_05. The claimed ordering was an artefact. Removed from UNIFIED_EVIDENCE v3.4.
+
+**Impact**: None on other results — the SEC partition at 1/φ (validated independently in phi_artifact_test) does not depend on phase ordering.
+
+**Source**: `pac_foundations_validation/SYNTHESIS.md`, `UNIFIED_EVIDENCE.md` v3.4 changelog
 
 ---
 
 *This document is maintained alongside the PACSeries. It is not a publication — it is a research planning tool.*
+
+**Last substantive update**: 2026-02-19 (added A4/A5/E1/E2, updated A2/A3/B3/C2/C3, populated Retired section)

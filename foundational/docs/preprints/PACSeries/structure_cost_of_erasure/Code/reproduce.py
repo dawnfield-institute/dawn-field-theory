@@ -27,6 +27,9 @@ Experiments map to paper sections as follows:
     exp_14  → Section 9.2    (PAC ratio vs magnitude)
     exp_15  → Section 5, 15  (gauge hierarchy prediction)
     exp_16  → Section 6, 15  (ln(φ) derivation)
+    exp_19  → Section 6, 15  (coupling efficiency sweep → ln(φ) proximity)
+    exp_23  → Section 15.3   (precision tightening: N=5M → 0.15% from ln(φ))
+    exp_25  → Section 15.3   (full stack validation: 6 layers, thermal init)
 """
 
 import sys

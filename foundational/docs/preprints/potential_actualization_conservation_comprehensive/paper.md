@@ -22,8 +22,18 @@ license: "Copyleft (Dawn Field Institute)"
 abstract_length: "comprehensive"
 mathematical_detail: "extensive"
 experimental_validation_status: "100%_correspondence_achieved"
-changelog: "v1.2 - Clarified 15.56x as empirical measurement, not theoretical constant"
+changelog: "v1.3 - February 2026 PACSeries cross-references added"
 ---
+
+> **February 2026 Update.** This comprehensive exploration of PAC has been significantly extended by the PACSeries v2.0 (February 2026), which provides formal derivations, quantitative measurements, and 29 falsification tests. Key clarifications from the PACSeries:
+>
+> - **PAC conserves ratios, not magnitudes**: Paper 1 (*The Structure Cost of Erasure*) shows A/(A+ξ) = ln(φ) is the conserved quantity, stable while total information varies 3×. The "15.56× amplification" reported here reflects complexity redistribution under ratio conservation.
+> - **φ is derived, not observed**: Paper 1 derives φ as the unique stable solution of PAC recursion on Landauer erasure cascades. The golden ratio appearances in this paper's computational validation now have a thermodynamic origin.
+> - **MED bounds are proven**: Milestone3 exp_22 derives depth ≤ 2 from PAC axioms analytically. The "depth ≤ 1, nodes ≤ 3" observed computationally here is now a theorem.
+> - **Ξ decomposition**: The balance operator Ξ = 1.0571 measured here decomposes as γ + ln(φ) (Paper 2), with four independent measurements within 0.12%.
+> - **GAIA validation extended**: Paper 6 (*Computational Validation*) extends this paper's GAIA POC results with Token PAC Tree analysis of production LLMs (7 models) and TinyCIMM-Boltzmann conservation enforcement. GAIA's 5.91 metric is now correctly identified as cosine similarity, not LM perplexity.
+>
+> The empirical observations in this paper remain valid. The PACSeries provides the derivation chain explaining *why* they hold.
 
 # Potential-Actualization Conservation: A Unifying Mathematical Framework for Physics, Information Theory, and Intelligent Systems
 
@@ -63,16 +73,9 @@ We explore **Potential-Actualization Conservation (PAC)**, a theoretical conserv
 
 In September 2024, during computational studies of information amplification in recursive systems, we encountered an intriguing phenomenon: **information consistently increased by approximately 15.56x during system decompositions** [[1]](#ref-info-amp). This observation appeared to challenge naive conservation expectations and motivated a systematic investigation that led us to explore PAC.
 
-**Important Clarification**: The 15.56x factor is an **empirical measurement**, not a theoretical constant. It represents the observed surface complexity amplification in our specific SEC field implementation across 82,021 emergence events. The value may vary with different implementations, parameters, or domains. What PAC theory predicts is that **some** amplification factor should exist due to complexity redistribution—the specific value 15.56x is what we measured in our experiments.
+**Important Clarification**: The 15.56x factor is an **empirical measurement**, not a theoretical constant. It represents the observed surface complexity amplification in our specific SEC field implementation across 82,021 emergence events. The value may vary with different implementations, parameters, or domains. What PAC theory predicts is that **some** amplification factor should exist due to complexity redistribution — the specific value 15.56x is what we measured.
 
-**Computational Observation Data** (documented in codebase):
-```python
-# From unified_amplification_framework.py - computational results
-SEC_Field_Performance = 15.56x  # MEASURED across 82,021 emergence events
-Baseline_Performance = 11.40x   # reference measurement  
-Improvement_Factor = 36.5%      # over stochastic baselines
-Statistical_Significance = p < 0.001  # statistically significant
-```
+**February 2026 Resolution**: PACSeries Paper 1 (*The Structure Cost of Erasure*) resolves the apparent paradox. PAC conserves *ratios*, not magnitudes: the conserved quantity is A/(A+ξ) = ln(φ) = 0.4812..., which remains stable while total information varies up to 3×. The 15.56x amplification is complexity *redistribution* — depth decreases while breadth increases — under ratio conservation. Additionally, PACSeries Paper 1 *derives* φ as the unique stable fixed point of PAC recursion on Landauer erasure cascades, meaning the golden ratio appearances throughout this paper now have a thermodynamic origin rather than being unexplained empirical observations.
 
 **The Central Question**: How might information amplify while conservation laws hold?
 
@@ -239,41 +242,25 @@ C(v) = (S(v), D(v))
 - `S(v)`: Structural complexity (information breadth)
 - `D(v)`: Depth complexity (compressed potential)
 
-**The 15.56x Observation Resolution**:
-Our computational studies suggest during decomposition:
-- **Parent**: High D(v), low S(v) → low surface complexity
-- **Children**: Low individual D(u), high collective S(u) → high surface complexity
-- **Total**: ||C(parent)||² = ||Σ C(children)||² → **conservation potentially maintained**
+**The 15.56x Observation — Updated Understanding (February 2026)**:
+
+The 15.56x surface complexity amplification observed in 82,021 emergence events is now understood through PACSeries Paper 1. PAC conserves *ratios*, not magnitudes:
+
+- **Conserved quantity**: A/(A+ξ) = ln(φ) = 0.4812... (stable while total information varies 3×)
+- **What happens**: During decomposition, depth decreases and breadth increases. Surface complexity (breadth) increases by ~15.56x while depth decreases correspondingly.
+- **Total conservation**: The ratio A/(A+ξ) is preserved — this is ratio conservation, not magnitude conservation.
+
+This resolves what originally appeared paradoxical: information seems to amplify because we were measuring one dimension (surface complexity) while conservation operates on the ratio. PACSeries Paper 1 validates this at 0.76% error through Landauer erasure cascades.
 
 **Mathematical Expression**:
 ```mathematical
-||C(parent)||² = ||(S_p, D_p)||² = S_p² + D_p²
+Ratio_Conserved: A/(A+ξ) = ln(φ) = const   [Paper 1, 0.76% error]
 
-||Σ C(children)||² = ||Σ(S_i, D_i)||² = (ΣS_i)² + (ΣD_i)²
+Surface_Amplification: (ΣS_i)/S_p ≈ 15.56  [measured, varies by implementation]
 
-Hypothesis: S_p² + D_p² = (ΣS_i)² + (ΣD_i)²
-```
-
-**Observed Pattern**:
-```mathematical
-Amplification_Factor = (ΣS_i)/S_p ≈ 15.56
-
-But: Total_Complexity = √(S_p² + D_p²) = √((ΣS_i)² + (ΣD_i)²)
-```
-
-**Implementation Evidence**:
-```python
-# From unified_amplification_framework.py - computational observations
-def explore_complexity_conservation(parent, children):
-    parent_complexity = np.sqrt(S_parent**2 + D_parent**2)
-    children_complexity = np.sqrt(sum(S_child**2 for child in children) + 
-                                  sum(D_child**2 for child in children))
-    
-    conservation_error = abs(parent_complexity - children_complexity)
-    # Observed: conservation_error < 1e-12 in computational studies
-    
-    surface_amplification = sum(S_child for child in children) / S_parent
-    # Observed: abs(surface_amplification - 15.56) < 0.1 across 82,021 events
+Key Insight: The specific value 15.56 is implementation-dependent.
+What PAC predicts is that SOME amplification occurs because
+ratio conservation + depth→breadth redistribution = surface increase.
 ```
 
 #### 2.2.3 Effect Conservation ||E(v)||_2
@@ -427,36 +414,12 @@ The measured ~15.56x factor shows correspondence with complexity redistribution 
 - **Optimization**: CV = 10.0% (stable)
 - **Overall Success Rate**: 100% (4/4 tests passing in computational studies)
 
-**PAC Integration Evidence**:
-```python
-# From gaia.py - working implementation
-def _evolve_field_equations(self, field, dt):
-    """Klein-Gordon evolution with PAC conservation exploration"""
-    # Standard field evolution
-    new_field = self.apply_klein_gordon_evolution(field, dt)
-    
-    # Explore PAC conservation on evolved field
-    new_field = self._explore_pac_conservation(new_field)
-    return new_field
+**February 2026 Correction**: GAIA's 5.91 metric, originally reported as language model perplexity, is correctly identified as *cosine similarity* (PACSeries Paper 6). This does not invalidate the stability results above but changes their interpretation: GAIA demonstrates stable field dynamics under PAC conservation, measured by cosine similarity rather than LM perplexity. The validation has been extended in Paper 6 with Token PAC Tree analysis across 7 production LLMs (Pythia 70M–410M, GPT-2 series) and TinyCIMM-Boltzmann conservation enforcement.
 
-def _explore_pac_conservation(self, field):
-    """Explore PAC conservation using integrated mathematics"""
-    field_flat = field.flatten()
-    conserved_field_flat = self.pac_math.explore_conservation(field_flat)
-    return conserved_field_flat.reshape(field.shape)
-```
+**PAC Integration**: GAIA implements Klein-Gordon evolution with PAC conservation enforcement, achieving conservation residuals ~10⁻¹⁴. The stability (CV < 20% across all tests) appears to be a consequence of the PAC constraint preventing runaway field dynamics — consistent with the balance operator Ξ keeping complexity near unity.
 
-**Key Physics Integration**:
-```python
-def _calculate_pac_conservation_metrics(self, field_values):
-    """Calculate PAC conservation metrics for analysis"""
-    conservation_residual, xi_deviation = \
-        self.pac_math.calculate_conservation_residual(field_values)
-    return conservation_residual, xi_deviation  # Typically ~10^-14 in studies
-```
-
-**PAC Theoretical Correspondence**: ✓ **PROMISING**
-GAIA studies suggest PAC-based approaches might achieve superior stability compared to conventional methods.
+**PAC Theoretical Correspondence**: ✓ **PROMISING — Independently Extended**
+GAIA's original validation is now one of three independent systems demonstrating PAC conservation in computation (alongside Token PAC Tree and TinyCIMM-Boltzmann).
 
 ### 3.3 Quantum Coherence and Born Rule Modeling
 

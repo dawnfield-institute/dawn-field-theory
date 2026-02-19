@@ -401,7 +401,9 @@ Across 30 random seeds with 8 environment modes and 0.7 decay coupling:
 | p-value (cascade > single) | — | $2.75 \times 10^{-35}$ | — |
 | Mean cascade lifespan | 1 | 8.5 generations | — |
 
-The cascade produces 53 times more structure than a single erasure event. The thermal component $\Theta$ from each generation is not lost—it re-injects as fuel for subsequent structure creation.
+The cascade produces 53 times more structure than a single erasure event. The thermal component $\Theta$ from each generation re-injects as potential for subsequent structure creation.
+
+**Caveat on recycling efficiency**: The cascade self-funding mechanism is validated (monotonic $\xi$ accumulation in 100/100 trials; 3/4 falsification tests pass in milestone3/exp_06). However, the quantitative recycling efficiency depends on how $\Theta$ is modelled: different formulas yield 36%–94% efficiency. The mechanism is confirmed; the precise budget is model-dependent and remains an open question. This paper presents the 53× amplification as a measured outcome of the cascade, not as a claim about a specific $\Theta$ recycling rate.
 
 ### 10.4 The learning rate interpretation
 
@@ -521,6 +523,25 @@ Exp 09 tested this directly. Under strict conservation (no energy source or sink
 
 ## 13. Summary and outlook
 
+### 13.1 The derivation chain
+
+The results in this paper, combined with the validation experiments (exp_23, exp_25), establish a six-layer derivation chain from PAC axioms through the gauge hierarchy. Every layer has been validated in a single end-to-end experiment:
+
+| Layer | Test | Result | Status |
+|-------|------|--------|--------|
+| 1. Algebraic PAC | $\varphi^2 = \varphi + 1$ | $< 10^{-14}$ | PASS (exact) |
+| 2. SEC dynamics | Critical $\lambda^*$ → $1/\varphi$ fraction | 0.08% error | PASS |
+| 3. Landauer single-shot | $A/(A+\xi)$ vs $\ln\varphi$ (50 seeds × 2M) | 1.6%, ln(φ) in 2σ | PASS |
+| 4. Cascade | Θ re-injection, multi-generation | Amplification 1.2× | PASS |
+| 5. Gauge hierarchy | $\xi(SU(3)) > \xi(SU(2)) > \xi(U(1))$ | $p < 10^{-18}$ | PASS |
+| 6. Ξ composition | 4 analytic sources converge | CV = 0.05% | PASS |
+
+The chain reads as a causal sequence: the PAC recursion selects $\varphi$ algebraically (Layer 1); SEC dynamics produce a critical point at $1/\varphi$ (Layer 2); Landauer erasure in multi-mode environments partitions information at $\ln\varphi$ (Layer 3); the thermal cascade amplifies this partition (Layer 4); gauge group topology determines the characteristic $\xi$ for each interaction geometry (Layer 5); and the balance constant $\Xi = \gamma + \ln\varphi$ decomposes into the discrete-continuous interface cost ($\gamma$) and the collapse efficiency ($\ln\varphi$) (Layer 6). Each layer feeds forward into the next, with no layer depending on a result that has not been established by a prior layer.
+
+The validation details for each layer are presented in §15.
+
+### 13.2 Core claims
+
 This paper establishes three claims with computational evidence:
 
 1. **Information erasure creates correlational structure** ($\xi$) in multi-mode environments. This follows from Landauer's principle and the data processing inequality.
@@ -560,7 +581,7 @@ The findings in this paper connect to five companion papers in the PACSeries. Ea
 
 **Paper 5 (Classical Physics from Information Geometry)**: Maxwell's equations as depth-2 PAC recursion projected to 3+1D provides the theoretical setting in which the gauge topology predictions from Section 5 could be derived rather than conjectured. Paper 5 also establishes $k = d \times F_{d+1}$ for She-Leveque turbulence intermittency, connecting cascade dynamics to fluid mechanics.
 
-**Paper 6 (Computational Validation)**: GAIA implementations demonstrate PAC conservation in working ML systems (WikiText-2 perplexity 5.91 vs GPT-2 baseline 29.41), validating the operational principle that this paper establishes thermodynamically.
+**Paper 6 (Computational Validation)**: GAIA implementations demonstrate PAC conservation in working ML systems (conservation residual $< 7 \times 10^{-11}$ across 500-iteration evolutions, 100% memory retrieval at depth 1000). Token PAC Tree analysis of production transformers (Pythia, GPT-2) finds SEC phase universally predicts accuracy with zero fitted parameters, and the balance constant $\Xi$ emerges in trained weight spectra at $2.36\times$ above random baselines. TinyCIMM-Boltzmann, the first architecture enforcing PAC as a hard constraint, reduces noise violation $1.83\times$ ($p = 0.008$) without degrading factual learning.
 
 ---
 
@@ -608,6 +629,10 @@ The ratio does not converge monotonically to $\ln\varphi$ as $\Theta \to 0$; ins
 
 **Verification**: The derivation predicts $\xi/A = (1 - \ln\varphi)/\ln\varphi = 1.078$. Exp_14 measured $\xi/A = 1.086$, a 0.76% discrepancy. The proximity is consistent with the broader pattern but does not establish convergence to arbitrary precision.
 
+**Why k = 2?** The derivation assumes the PAC recursion has depth 2: $\Psi(k) = \Psi(k+1) + \Psi(k+2)$. Why not depth 3 or higher? Milestone3/exp_22 proved analytically that ALL $k$-step PAC recursions ($k \geq 2$) have maximum effective depth $\leq 2$ (specifically, $\lfloor D_k \rfloor = 2$ for all $k$). Furthermore, $k = 2$ (Fibonacci) is unique in producing decay rate $\ln(\varphi)$; all higher-$k$ recursions decay faster. The Landauer cascade physically forces $k = 2$ through a dual-output mechanism: each erasure event produces both a thermal residual $\Theta$ and a structural component $\xi$, operating at two timescales. This two-output structure maps directly to the two-step recursion.
+
+Milestone3/exp_27 provides a complementary argument: on a $\pi$-closed phase manifold ($S^1$), the golden angle $\alpha^* = 1 - 1/\varphi$ minimises worst-case star discrepancy $D^*_N$ among all tested irrationals. The causal chain $\pi$ (rotational closure) $\to$ $\varphi$ (optimal non-resonance) $\to$ Fibonacci (integer projection) provides the mechanism: $\pi$ creates the stage, $\varphi$ is the optimal actor, Fibonacci numbers are the script.
+
 **Status**: Derived and partially validated (exp_16). The mathematical structure is correct; the match to simulation is approximate (~2%). See Data/results/exp_16_ln_phi_derivation_20260209_111320.json.
 
 ### 15.3 Precision Tightening and Full Stack Validation (Feb 2026)
@@ -622,15 +647,6 @@ The gap narrows monotonically with sample size: ~2% at $N = 5 \times 10^5$, ~1.6
 
 **Thermal initialization discovery (exp_25)**: The Boltzmann distribution of environment mode occupation is *required* for ln(φ) to emerge. Uniform 50:50 initialization yields $A/(A+\xi) \approx 0.33$. The partition ratio is a property of *physical* erasure at thermal equilibrium, not an arbitrary binary process. This narrows the claim: ln(φ) characterizes the erasure partition specifically in thermally equilibrated multi-mode environments.
 
-**Full stack validation (exp_25)**: All six layers of the derivation chain validated in a single experiment:
+**Full stack validation (exp_25)**: All six layers of the derivation chain are validated in a single end-to-end experiment. The results are presented in §13.1.
 
-| Layer | Test | Result | Status |
-|-------|------|--------|--------|
-| 1. Algebraic PAC | $\varphi^2 = \varphi + 1$ | $< 10^{-14}$ | PASS (exact) |
-| 2. SEC dynamics | Critical $\lambda^*$ → $1/\varphi$ fraction | 0.08% error | PASS |
-| 3. Landauer single-shot | $A/(A+\xi)$ vs $\ln\varphi$ (50 seeds × 2M) | 1.6%, ln(φ) in 2σ | PASS |
-| 4. Cascade | Θ re-injection, multi-generation | Amplification 1.2× | PASS |
-| 5. Gauge hierarchy | $\xi(SU(3)) > \xi(SU(2)) > \xi(U(1))$ | $p < 10^{-18}$ | PASS |
-| 6. Ξ composition | 4 analytic sources converge | CV = 0.05% | PASS |
-
-**Status**: Complete (exp_23, exp_25). The derivation chain from PAC axiom through gauge hierarchy holds end-to-end with no layer failing.
+**Status**: Complete (exp_23, exp_25). The derivation chain holds end-to-end with no layer failing.

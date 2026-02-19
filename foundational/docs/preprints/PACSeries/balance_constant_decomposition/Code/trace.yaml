@@ -83,6 +83,29 @@ experiments:
     key_result: "Every integer has unique non-consecutive Fibonacci decomposition"
     paper_sections: [8]
 
+  # --- milestone3 additions (February 2026) ---
+
+  - local: experiments/exp_12_pac_depth_bound.py
+    source: dawn-field-theory/foundational/experiments/milestone3/scripts/exp_22_pac_depth_bound.py
+    repo: dawn-field-theory
+    description: "PAC→MED theorem: k-step PAC conservation forces depth ≤ 2"
+    key_result: "All k ≥ 2 floor to ≤ 2; limit k→∞ = exactly 2.0; deviation ~10⁻¹⁶"
+    paper_sections: [9.3]
+
+  - local: experiments/exp_13_med_depth_criticality.py
+    source: dawn-field-theory/foundational/experiments/milestone3/scripts/exp_11_med_depth_criticality.py
+    repo: dawn-field-theory
+    description: "MED depth d=3 as edge-of-chaos invariant for A/(A+ξ) = ln(φ)"
+    key_result: "d_cross = 3.25 ± 0.17 (CV = 5.3%); fine-grained d = 3.12"
+    paper_sections: [9.3]
+
+  - local: experiments/exp_14_coupling_base_residuals.py
+    source: dawn-field-theory/foundational/experiments/milestone3/scripts/exp_12_coupling_base_residuals.py
+    repo: dawn-field-theory
+    description: "Fibonacci–MED complementarity: golden base paradox"
+    key_result: "fd=ln(φ)=0.481 > fd₀=0.313; Fibonacci coupling cannot reach MED depth alone"
+    paper_sections: [9.3]
+
 data:
   - local: "../Data/results/exp_23_xi_derivation_contest_20260205_164329.json"
     source: dawn-field-theory/foundational/experiments/prime_growth_dynamics/results/exp_23_xi_derivation_contest_20260205_164329.json
@@ -123,3 +146,17 @@ data:
   - local: "../Data/results/exp_11_entropy_analysis_20260106_170110.json"
     source: dawn-field-theory/foundational/experiments/base_agnostic_pac/results/exp_11_entropy_analysis_20260106_170110.json
     experiment: exp_10
+
+  # --- milestone3 additions (February 2026) ---
+
+  - local: "../Data/results/exp_22_pac_depth_bound_20260218_220336.json"
+    source: dawn-field-theory/foundational/experiments/milestone3/results/exp_22_pac_depth_bound_20260218_220336.json
+    experiment: exp_12
+
+  - local: "../Data/results/exp_11_med_depth_criticality_20260217_191317.json"
+    source: dawn-field-theory/foundational/experiments/milestone3/results/exp_11_med_depth_criticality_20260217_191317.json
+    experiment: exp_13
+
+  - local: "../Data/results/exp_12_coupling_base_residuals_20260217_193149.json"
+    source: dawn-field-theory/foundational/experiments/milestone3/results/exp_12_coupling_base_residuals_20260217_193149.json
+    experiment: exp_14

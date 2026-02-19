@@ -477,6 +477,25 @@ The GAIA (Generalised Artificial Intelligence Architecture) system takes the fin
 
 **What GAIA demonstrates.** Not competitive language modelling performance, but something narrower and more relevant to this paper: that an architecture built entirely on PAC conservation — with no gradient-based learning whatsoever — can process language, store patterns efficiently, and improve output quality through concentration gating at $\varphi$-derived thresholds. The conservation constraint is not merely compatible with computation but sufficient to organise it.
 
+### §8.4 Transfer to Formula Space
+
+The GAIA architecture — PAC conservation with $\varphi$-weighted potential splitting, SEC gating for adaptive depth, and profile comparison — was tested on a domain entirely different from language: the Fibonacci formula mesh used to describe physical constants in Papers 3–4 [3, 4]. The hypothesis: if formula space is itself a PAC tree (Fibonacci-indexed constants decomposing hierarchically), then the same conservation machinery should discriminate Fibonacci-matched formulas from controls.
+
+The result is modestly positive [10]. PAC-distributed formula profiles discriminate between Fibonacci-matched and control constants at $p = 0.035$ (KL divergence, Cohen's $d = 0.198$, $1.32\times$ enrichment). Critically, PAC conservation *reverses the direction* of a prior failure: raw counting gave $d = -0.118$ (wrong sign), while PAC-distributed profiles give $d = +0.198$ (correct sign). The conservation constraint does not just improve magnitude — it fixes the direction of discrimination.
+
+However, anatomical analysis reveals the signal is fragile:
+
+| Test | Result | Status |
+|------|--------|--------|
+| Bootstrap CI (10,000 resamples) | 95% CI $[-0.044, +0.013]$ includes zero | Fragile |
+| Leave-one-out | Removing proton/electron mass ratio kills $p \rightarrow 0.105$ | Concentrated |
+| Effective dimensionality | 9 PCs for 95% variance | Not reduced |
+| Best subpopulation | Running couplings: $d = -0.395$, $p = 0.071$ | Suggestive |
+
+The honest assessment: PAC conservation as an architectural principle transfers from neural networks to formula space, but the signal is modest and concentrated in a single ratio. The architecture corrects direction and improves discrimination without being decisive. Whether this captures deep structure or a known correlation — the proton-electron mass ratio has been noted as Fibonacci-adjacent since Paper 4 [4] — remains open.
+
+**Scripts**: `exp_09_pac_lazy_formula_mesh.py`, `exp_10_pac_lazy_signal_anatomy.py` (milestone3)
+
 ---
 
 ## §9. Falsification Conditions
@@ -545,6 +564,8 @@ The progression: Papers 1–5 derive physics from information. Paper 6 asks whet
 | No cost to factual learning | Loss comparison | $p = 0.42$ (n.s.) | Validated |
 | Training converges toward $\varphi$ | Pythia checkpoints | $p = 0.0014$ | Directional |
 | Landauer full-stack chain | 6 layers, exp_25 | Machine precision–1.6% | Validated |
+| PAC-Lazy formula mesh | Profile comparison, KL | $p = 0.035$, $d = 0.198$ | Modest positive |
+| Formula mesh signal anatomy | Bootstrap CI, leave-one-out | CI includes zero | Honest fragile |
 
 ---
 
@@ -565,6 +586,7 @@ The progression: Papers 1–5 derive physics from information. Paper 6 asks whet
 7. Biderman, S. et al. (2023). "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling." *Proceedings of the 40th International Conference on Machine Learning*.
 8. Radford, A. et al. (2019). "Language Models are Unsupervised Multitask Learners." OpenAI.
 9. Landauer, R. (1961). "Irreversibility and Heat Generation in the Computing Process." *IBM J. Res. Dev.*, 5(3), 183–191.
+10. Groom, P. (2026). "Milestone3 Validation Programme: 28 Experiments in PAC/SEC/MED Falsification." Internal experimental series, Dawn Field Institute.
 
 ---
 

@@ -12,3 +12,6 @@ files:
   - "[exp_08_weinberg_running.py]": "sin²θ_W = 3/13 running coupling at RG scales (F7)"
   - "[exp_09_look_elsewhere.py]": "Mass ratio look-elsewhere effect correction (F8)"
   - "[exp_10_independence_audit.py]": "Cross-domain independence audit for joint p-values (F9)"
+  - "[exp_29_feigenbaum_extended_search.py]": "Feigenbaum formula uniqueness in 62M combinations (F27)"
+  - "[exp_30_xi_alt_factorial.py]": "Ξ alternative decomposition 2×2 factorial — conservation × self-similarity (F28)"
+  - "[exp_31_scaling_extrapolation.py]": "PAC conservation scaling predictions for 7B–175B models (F29)"

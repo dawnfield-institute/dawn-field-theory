@@ -1,0 +1,294 @@
+{
+  "experiment": "exp_23_f183_correction",
+  "description": "F\u2081\u2088\u2083 gravity hierarchy: correction term and uniqueness test",
+  "paper": "Paper 4/5",
+  "section": "\u00a711 (gravity speculative), \u00a78.2",
+  "timestamp": "2026-02-18T22:11:57.327408+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "precise_gap": {
+      "gravity_depth": 183,
+      "log10_f183": 37.895253163578104,
+      "log10_mass_ratio_sq": 38.22869547911638,
+      "log10_coupling_ratio": 36.09186090165875,
+      "log10_force_ratio": 36.091860901687106,
+      "canonical_target": 36.09186090165875,
+      "gap_log10": -1.803392261919356,
+      "correction_factor": 0.015725618590883908,
+      "status": "INFO"
+    },
+    "correction_search": {
+      "correction_needed": 0.015725618590883908,
+      "correction_log10": -1.803392261919356,
+      "n_candidates_searched": 10,
+      "top_10": [
+        {
+          "formula": "\u03c6/\u03c0",
+          "value": 0.5150362148004839,
+          "log10": -0.2881622324441551,
+          "error_log10": 1.515230029475201,
+          "category": "named"
+        },
+        {
+          "formula": "\u03c0\u00b2/F\u2087",
+          "value": 0.7592003385453352,
+          "log10": -0.11964360691856911,
+          "error_log10": 1.683748655000787,
+          "category": "named"
+        },
+        {
+          "formula": "\u03c6\u00b2/\u03c0",
+          "value": 0.8333461009842746,
+          "log10": -0.07917459219417633,
+          "error_log10": 1.7242176697251796,
+          "category": "named"
+        },
+        {
+          "formula": "e/\u03c6",
+          "value": 1.679990560988901,
+          "log10": 0.22530684165327305,
+          "error_log10": 2.028699103572629,
+          "category": "named"
+        },
+        {
+          "formula": "\u03c0/\u03c6",
+          "value": 1.9416110387254664,
+          "log10": 0.28816223244415506,
+          "error_log10": 2.0915544943635114,
+          "category": "named"
+        },
+        {
+          "formula": "\u221a5",
+          "value": 2.23606797749979,
+          "log10": 0.34948500216800943,
+          "error_log10": 2.1528772640873655,
+          "category": "named"
+        },
+        {
+          "formula": "\u03c6\u00b2 (PAC depth bound) = 2.6180",
+          "value": 2.618033988749895,
+          "log10": 0.41797528049995747,
+          "error_log10": 2.221367542419314,
+          "category": "pac_bound"
+        },
+        {
+          "formula": "\u03c6+1",
+          "value": 2.618033988749895,
+          "log10": 0.41797528049995747,
+          "error_log10": 2.221367542419314,
+          "category": "named"
+        },
+        {
+          "formula": "2\u03c6",
+          "value": 3.23606797749979,
+          "log10": 0.51001763591396,
+          "error_log10": 2.313409897833316,
+          "category": "named"
+        },
+        {
+          "formula": "\u03c6\u00b7\u221a5",
+          "value": 3.6180339887498953,
+          "log10": 0.5584726424179882,
+          "error_log10": 2.3618649043373443,
+          "category": "named"
+        }
+      ],
+      "best_match": {
+        "formula": "\u03c6/\u03c0",
+        "value": 0.5150362148004839,
+        "log10": -0.2881622324441551,
+        "error_log10": 1.515230029475201,
+        "category": "named"
+      },
+      "best_residual": 1.515230029475201,
+      "status": "FAIL"
+    },
+    "uniqueness_fibonacci": {
+      "candidates": [
+        {
+          "k": 1,
+          "F_k": 1,
+          "depth": 3,
+          "log10_Fdepth": 0.2774779185819269,
+          "delta": 35.81438298307682,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 2,
+          "F_k": 1,
+          "depth": 3,
+          "log10_Fdepth": 0.2774779185819269,
+          "delta": 35.81438298307682,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 3,
+          "F_k": 2,
+          "depth": 7,
+          "log10_Fdepth": 1.1134284795818419,
+          "delta": 34.97843242207691,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 4,
+          "F_k": 3,
+          "depth": 13,
+          "log10_Fdepth": 2.3673543210817147,
+          "delta": 33.724506580577035,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 5,
+          "F_k": 5,
+          "depth": 31,
+          "log10_Fdepth": 6.129131845581332,
+          "delta": 29.962729056077414,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 6,
+          "F_k": 8,
+          "depth": 73,
+          "log10_Fdepth": 14.90661273608044,
+          "delta": 21.185248165578308,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 7,
+          "F_k": 13,
+          "depth": 183,
+          "log10_Fdepth": 37.895253163578104,
+          "delta": 1.803392261919356,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 8,
+          "F_k": 21,
+          "depth": 463,
+          "log10_Fdepth": 96.41179243357216,
+          "delta": 60.31993153191341,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 9,
+          "F_k": 34,
+          "depth": 1191,
+          "log10_Fdepth": 248.55479453555668,
+          "delta": 212.46293363389793,
+          "within_05": "False",
+          "within_01": "False"
+        },
+        {
+          "k": 10,
+          "F_k": 55,
+          "depth": 3081,
+          "log10_Fdepth": 643.5414346080166,
+          "delta": 607.4495737063579,
+          "within_05": "False",
+          "within_01": "False"
+        }
+      ],
+      "n_within_05": 0,
+      "n_within_01": 0,
+      "f183_rank": 1,
+      "closest_depth": 183,
+      "status": "PASS"
+    },
+    "random_formula": {
+      "cyclotomic_hits_05": 0,
+      "cyclotomic_hits_01": 0,
+      "cyclotomic_best_a": 13,
+      "is_fibonacci_best": true,
+      "random_hits_05": 33,
+      "random_frac_05": 0.0033,
+      "random_hits_01": 3,
+      "random_frac_01": 0.0003,
+      "status": "PASS"
+    },
+    "pac_bound_connection": {
+      "pac_bound": 2.618033988749895,
+      "correction_factor": 0.015725618590883908,
+      "relationships": [
+        [
+          "C = \u03c6\u00b2",
+          2.618033988749895,
+          2.221367542419314
+        ],
+        [
+          "C = \u03c6\u00b2/\u03c0",
+          0.8333461009842746,
+          1.7242176697251796
+        ],
+        [
+          "C = \u221a(\u03c6\u00b2)",
+          1.618033988749895,
+          2.012379902169335
+        ],
+        [
+          "C = ln(\u03c6\u00b2)",
+          0.9624236501192069,
+          1.7867585485184638
+        ],
+        [
+          "C = \u03c6\u00b2\u00b7ln(\u03c6)",
+          1.2598289137944103,
+          1.9037038333544403
+        ],
+        [
+          "C = \u03c6\u00b2/e",
+          0.9631208807491535,
+          1.7870730605160619
+        ],
+        [
+          "C = (\u03c6\u00b2\u22122)",
+          0.6180339887498949,
+          1.5944046216693775
+        ],
+        [
+          "C = 1 + 1/\u03c6\u00b2",
+          1.381966011250105,
+          1.9438896238373866
+        ],
+        [
+          "C = \u03c6\u00b2\u00b7(1\u22121/\u03c0)",
+          1.7846878877656203,
+          2.0549545381249716
+        ],
+        [
+          "C = \u03c6\u00b3/\u03c0",
+          1.3483823157847585,
+          1.9332053099751585
+        ],
+        [
+          "C = F\u2081\u2080/(4\u03c0F\u2087)",
+          0.33667391807900937,
+          1.330601735084667
+        ]
+      ],
+      "best_pac_correction": "C = F\u2081\u2080/(4\u03c0F\u2087)",
+      "best_pac_residual": 1.330601735084667,
+      "status": "FAIL"
+    }
+  },
+  "falsification": {
+    "test_id": "F21",
+    "hypothesis": "F\u2081\u2088\u2083 predicts the EM/gravity hierarchy, with a Fibonacci correction closing the ~0.33 log\u2081\u2080 gap.",
+    "chain": [
+      "Test 2 (correction): FAIL \u2014 Fibonacci correction search",
+      "Test 3 (uniqueness): PASS \u2014 183 among Fibonacci depths",
+      "Test 4 (random): PASS \u2014 random formula competition",
+      "Test 5 (PAC bound): FAIL \u2014 \u03c6\u00b2 connection"
+    ],
+    "n_pass": "2/4",
+    "falsified": false,
+    "honest_assessment": "The raw F\u2081\u2088\u2083 comparison is within 0.33 in log\u2081\u2080 of the measured hierarchy \u2014 about a factor of 2. This is remarkably close for an order-of-magnitude structural observation. Whether 183 is uniquely good among small integers determines if this is structural or numerological. A clean correction term would strengthen the claim."
+  }
+}

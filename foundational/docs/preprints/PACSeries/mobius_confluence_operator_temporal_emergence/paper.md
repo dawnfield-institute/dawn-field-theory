@@ -38,6 +38,25 @@ keywords:
   - temporal flow
   - topological constraint
 related_preprints:
+  - paper1_xi_bounded_invariant
+  - paper2_sec_med_framework
+```
+
+---
+
+> **Consolidated into PACSeries v2.0 (February 2026).** This paper's confluence operator and temporal emergence results have been integrated into PACSeries Paper 5: *Classical Physics from Information Geometry* (February 2026), which extends them with the MED → D=3 derivation.
+>
+> Key content integrated:
+> - Confluence operator formalism → Paper 5 pre-field recursion
+> - Time-from-topology derivation → Paper 5 temporal emergence argument
+> - Möbius phase structure → Paper 5 curl-from-depth-2 derivation
+> - Five paths to D=3 → Paper 5 central argument
+>
+> Milestone3 exp_22 proves PAC → MED depth ≤ 2 analytically, upgrading this paper's empirical observation to a theorem.
+>
+> The original DOI remains valid. This paper preserves the full Möbius topology treatment; Paper 5 provides the integrated MED → D=3 derivation.
+
+---
   - "[pac][D][v1.0][C2][I5][E]_xi_bounded_invariant_universal_balance_operator_preprint.md"
   - "[pac][D][v1.0][C2][I5][E]_sec_med_framework_information_amplification_preprint.md"
   - "[pac][D][v1.0][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md"

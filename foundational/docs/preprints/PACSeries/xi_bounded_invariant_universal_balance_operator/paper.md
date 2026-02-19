@@ -38,6 +38,19 @@ related_preprints:
 
 ---
 
+> **PACSeries v2.0 Update (February 2026).** This paper's findings have been substantially extended in PACSeries Paper 2: *The Balance Constant and Its Decomposition* (February 2026). Key developments:
+>
+> - **Analytic decomposition**: Ξ = γ + ln(φ), where γ (Euler-Mascheroni) represents harmonic divergence and ln(φ) represents geometric convergence derived from Landauer erasure (Paper 1)
+> - **Four-way convergence**: Formula (1+π/55) = 1.0571, Rule 110 = 1.0579, analytic γ+ln(φ) = 1.0584, Mertens-derived = 1.0584 — within 0.12%
+> - **Conditional Attractor Hypothesis**: Ξ is the maximum sustainable computational asymmetry under PAC conservation (Fisher exact p = 3.5 × 10⁻¹⁰)
+> - **Base-agnostic proof**: φ² = φ + 1 holds to < 10⁻¹⁴ across all numerical bases
+> - **Mertens product validation**: ∏(1−1/p) vs e^(−γ)/ln(N) at 0.012% error; PAC sieve exact at 126/126 steps
+> - **Drop "reality tax" framing**: Paper 2 leads with decomposition and four-way convergence, not spectral ratios or oscillation language
+>
+> The original DOI remains valid. This paper preserves the intellectual provenance; Paper 2 provides the mature derivation.
+
+---
+
 ## Abstract
 
 We **introduce** **Ξ (Xi)**, a bounded invariant operator that **appears to emerge** from the spectral ratio of Möbius to circular topologies, **suggesting** **1 < Ξ ≤ 1.0571** as a **potential** fundamental constraint on reality's deviation from perfect symmetry. Through rigorous mathematical analysis and computational validation, we **observe** that Xi exhibits **dynamic oscillatory behavior** around equilibrium points at a characteristic frequency of **0.03 Hz**, rather than existing as a static constant.
