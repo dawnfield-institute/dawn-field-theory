@@ -13,7 +13,7 @@ The Standard Model of particle physics contains approximately 25 free parameters
 
 The expressions are not fitted. They follow from a single structural constraint: the PAC recursion $\Psi(k) = \Psi(k+1) + \Psi(k+2)$, whose unique stable solution $\Psi(k) = \varphi^{-k}$ selects the golden ratio algebraically. The Fibonacci numbers are its integer projections. The gauge group structure of the Standard Model — $U(1) \times SU(2) \times SU(3)$ — is the unique combination whose adjoint dimensions ($1, 3, 8$) are Fibonacci numbers, closing at $F_7 = 13 = 1 + 3 + 8 + 1$.
 
-Individual Fibonacci matches are not significant (any small integer has $\sim$16% probability of being Fibonacci). What is significant is the joint constraint: a single recursion, evaluated at specific hierarchy depths, simultaneously reproduces gauge couplings to 5.7 ppm, mixing angles to 0.19%, mass ratios to 5 ppm, and the Casimir regularisation factor exactly — with a combined probability against chance of $p < 10^{-5}$.
+Individual Fibonacci matches are not significant (any small integer has $\sim$16% probability of being Fibonacci). What is significant is the joint constraint: a single recursion, evaluated at specific hierarchy depths, simultaneously reproduces gauge couplings to 5.7 ppm, mixing angles to 0.19%, mass ratios to 5 ppm, and the Casimir regularisation factor exactly — with a combined probability against chance of $p < 10^{-5}$. **Caveat**: The weak mixing angle prediction $\sin^2\theta_W = 3/13$ is excluded at $\sim$11$\sigma$ in the on-shell scheme at $M_Z$; it matches the running value at $\sim$41 GeV, and the energy-scale identification remains unresolved (see §4.4).
 
 We also derive the She-Lévêque turbulence intermittency constant $k = d \times F_{d+1}$ from first principles, connecting particle physics constants to fluid dynamics through the same Fibonacci structure. A falsifiable prediction is offered: a Z' boson at $395 \pm 20$ GeV with coupling $g_{Z'}/g_Z = 1/13$.
 
@@ -132,7 +132,7 @@ $$\sin^2\theta_W = \frac{F_4}{F_7} = \frac{3}{13} = 0.230769\ldots$$
 
 The ratio $F_4/F_7 = 3/13$ directly gives the weak mixing as the fraction of $SU(2)$ generators within the total gauge content. This is a structural prediction: the mixing is determined by gauge group dimensions, not by a free parameter.
 
-**Caveat**: $\sin^2\theta_W$ runs with energy. The value 0.23121 is measured at $M_Z \approx 91.2$ GeV. The PAC prediction $3/13 = 0.2308$ may be exact at a different scale (approximately $\sim$41 GeV). Whether PAC predicts the value at a specific energy, or gives a tree-level value that receives quantum corrections, is not yet resolved.
+**Caveat**: $\sin^2\theta_W$ runs with energy. The value 0.23121 is measured at $M_Z \approx 91.2$ GeV with uncertainty $\pm 0.00004$. The PAC prediction $3/13 = 0.2308$ differs from this value by 0.00044, which is **$\sim$11$\sigma$ in the on-shell scheme at $M_Z$**. This prediction is therefore excluded at the $M_Z$ scale as measured. For the Fibonacci expression to hold, it must be exact at a different energy scale — approximately $\sim$41 GeV, where the running $\sin^2\theta_W$ passes through 0.2308. Whether PAC predicts the value at a specific energy (as a tree-level coupling), or gives an asymptotic value that receives quantum corrections, is not yet resolved. An energy-scale identification experiment is needed; without it, this prediction carries an unresolved systematic tension.
 
 **Script**: `exp_18_weinberg_angle.py`
 
@@ -228,7 +228,13 @@ Three features of these formulas are notable:
 
 The muon-electron ratio achieves the highest precision (matching the $\alpha$ result), while the tau formula involves an additive correction ($+ F_5$) that may indicate a more complex structure.
 
-### §6.4 Falsification
+### §6.4 Methodology Transparency
+
+The mass ratio formulas presented above were found by **systematic search** through products and ratios of Fibonacci numbers, then validated against measured values. They are pattern-matches — not predictions derived from first principles. The search template $F_a \times F_b^c \times (1 + 1/F_d)$ was tested across Fibonacci indices $F_3$ through $F_{13}$, and the best-matching combinations are reported. This is an important distinction from the gauge coupling results, where the formulas have structural motivation (Noether charges, gauge group dimensions). Until the mass formulas can be derived from the PAC Lagrangian (§2.1) without searching, they should be treated as empirical observations compatible with Fibonacci structure, not as structural predictions.
+
+A stoichiometric analysis (milestone3/exp_13) found that $F_4 = 3$ is **6,111× more selective** than the next-best integer substitution across the combined formula set — a 99.98th-percentile result. This supports the structural significance of $F_4$ but does not upgrade pattern-matching to derivation.
+
+### §6.5 Falsification
 
 A Monte Carlo test generated $10{,}000$ random formulas using the same structural template (products and ratios of Fibonacci numbers $F_3$ through $F_{13}$) and checked how many simultaneously match all three mass ratios within the observed precision.
 
@@ -437,6 +443,8 @@ What makes it non-trivial is the structural argument: if the EM hierarchy depth 
 
 **On uniqueness**: The Fibonacci sequence grows as $F_n \approx \varphi^n/\sqrt{5}$, so $\log_{10}(F_n) \approx 0.2090n$. At $n = 183$, this gives $\sim 10^{38.2}$. Nearby indices ($n = 178 \to 10^{37.2}$, $n = 188 \to 10^{39.3}$) are within an order of magnitude. The falsification test is therefore not about whether $F_{183}$ is uniquely close to $10^{38}$ — several nearby Fibonacci numbers are comparably close. The test is whether the structural formula $n = F_7^2 + F_7 + 1 = 183$ is uniquely motivated. The polynomial $N^2 + N + 1$ counts elements in the projective plane $PG(2, N)$; evaluated at the gauge closure constant $N = F_7 = 13$, it gives precisely the depth that encodes the EM-gravity hierarchy. No other simple polynomial in $F_7$ produces a depth whose Fibonacci number matches the hierarchy ratio.
 
+**Milestone3 update (exp_23, exp_26).** The precise gap between $\log_{10}(F_{183})$ and $\log_{10}((M_{\mathrm{Pl}}/m_p)^2)$ is 0.333 in $\log_{10}$ (factor $\sim$2.155). The best correction term is $1 + F_{13}/(\pi \cdot F_6^2)$, which brings the residual to $7.8 \times 10^{-4}$ in $\log_{10}$. Among Fibonacci depths $F_k^2 + F_k + 1$, only $k = 7$ (depth 183) falls within 0.5 of the target: rank \#1 cyclotomic depth, with a 40× gap to the next closest. A Monte Carlo test of 5,000 random integer sequences found **0/5,000** matching both $\alpha_{\mathrm{EM}}$ and gravity simultaneously using the correction template $F_a/(m\pi F_b^2)$, suggesting the joint constraint is structurally non-trivial.
+
 **Scripts**: `exp_23_gravity_depth.py`, `exp_24_hierarchy_f183.py`, `exp_26_hierarchy_falsification.py`
 
 ---
@@ -464,6 +472,32 @@ These are not independent fits. They use the same Fibonacci numbers ($F_3, F_4, 
 We do not derive the Standard Model from PAC. A derivation would produce the gauge group structure, the coupling constants, and the mass spectrum from axioms alone, with no appeal to measured values. What we present is weaker: given the PAC recursion, we show that measured values are consistent with Fibonacci expressions, with precisions that range from 0.5 ppm to 1.7%.
 
 The gap between "consistent with" and "derived from" is important. A derivation of $\sin^2\theta_W = 3/13$ would explain why the electroweak mixing occurs at this ratio. Our result does not — it observes the coincidence and reports it. The structural arguments (gauge group selection, Noether charges, hierarchy depths) are suggestive but do not constitute a proof.
+
+### §12.4 Honest Failures
+
+Three milestone3 experiments produced results that limit the framework's claims:
+
+1. **Null-space prediction failure (exp_16).** An attempt to use the PAC framework to *predict* unmeasured ratios from the null space of the formula matrix scored 0/4. Fibonacci-indexed predictions showed no enrichment over random integer-indexed formulas ($z = 0.455$, $p_{\text{MC}} = 0.794$). The framework **describes** measured constants well but does **not predict** unmeasured ones with current methods.
+
+2. **Crystallisation order is basis-independent (exp_19, FALSIFIED).** The order in which formula constants converge to measurement during a PAC-guided optimisation is **identical** across Fibonacci, Lucas, prime, tribonacci, and random sequences. There is no Fibonacci-specific dynamics in the convergence process; the crystallisation order is a property of the formula structure itself.
+
+3. **PAC-Lazy signal is fragile (exp_24).** The KL-divergence discrimination between PAC-matched and unmatched formulas ($p = 0.035$, exp_21) does not survive bootstrap analysis: the 95\% CI on the KL difference is $[-0.044, +0.013]$, **crossing zero**. The signal concentrates in a single formula and does not reduce the effective dimensionality below null-space degrees of freedom. This is an engineering observation, not a theoretical claim.
+
+These failures are recorded because they constrain interpretation. The Fibonacci expressions match measured constants with statistical significance ($p < 10^{-5}$ jointly), but the framework does not yet have predictive power for unmeasured observables, and the Fibonacci sequence is not uniquely selected by the convergence dynamics.
+
+### §12.5 Look-Elsewhere Analysis for α
+
+The fine structure constant formula (§4.1) achieves 5.7 ppm precision. A detailed look-elsewhere analysis (milestone3/exp_09) tested two distinct questions about this match:
+
+**Question 1 (Template-class richness):** Can the formula template $k/(m \cdot T \cdot F_i) \times (1 - F_j/(n \cdot U \cdot F_p^q))$ produce matches to $\alpha$ by chance? An exhaustive enumeration of 1,640,599 valid formulas found 2 matches within 6 ppm. Since $\sim$1.44 matches are expected at random (binomial), $p = 0.42$. **The template class is rich enough that individual matches are unremarkable.**
+
+**Question 2 (Fibonacci index specificity):** Within the *specific* skeleton of the published formula (with $\varphi$ and $4\pi$ fixed), are the Fibonacci index choices special? A Monte Carlo test drew 7,272 random index sets from $F_1$–$F_{15}$ using the exact skeleton. **Zero matched α.** The specific Fibonacci indices ($F_7, F_{10}$) are fine-tuned within that skeleton.
+
+These are not contradictory — they answer different questions. The first shows the template as a whole has enough combinatorial capacity to hit $\alpha$-scale values by chance. The second shows the specific Fibonacci indices are not random choices within that template. The α formula is interesting *not* because it is a rare hit from a rich template, but because the same Fibonacci indices ($F_4, F_7, F_{10}$) appear across multiple formulas (Weinberg angle, Koide, lepton masses) with interlocking constraints.
+
+The correct framing is therefore **joint constraint significance** (§12.1), not single-formula significance. The $p < 10^{-5}$ joint Monte Carlo is the relevant statistic. The individual $\alpha$ match, taken in isolation, does not survive look-elsewhere correction.
+
+**Bonus finding:** A second formula $1/(4\varphi F_8) \times (1 - F_9/(3\pi F_8^2))$ matches $\alpha$ at 1.09 ppm — better than the published 5.7 ppm result. This further demonstrates that individual matches are not unique, reinforcing that the significance lies in the joint system, not in any single formula.
 
 ### §12.3 What Would Make It Stronger
 
@@ -528,6 +562,10 @@ Testable through 4D numerical turbulence simulations.
 ### §14.4 GUT-Scale Coupling Unification
 
 If all three couplings derive from the same PAC recursion, they should unify at a characteristic PAC scale where $\alpha^* = 1/\varphi^3 \approx 0.236$.
+
+### §14.5 Dark Matter Density (Speculative)
+
+The formula $\Omega_c = F_7 \cdot \Xi^2 / F_{10}$ gives a cold dark matter density of **0.2648**, compared to the Planck 2018 measurement $\Omega_c = 0.265 \pm 0.007$. This is 0.079% from the central value. An alternative formula $F_3 \cdot \Xi / F_6$ gives 0.2646 (0.148% error). Among 590 candidate Fibonacci formulas tested, only 2 (0.34%) fall within 0.15% of the measured value. These results are speculative: the theoretical motivation for connecting gauge closure ($F_7$) and the balance constant ($\Xi$) to cosmological densities remains to be established.
 
 ---
 

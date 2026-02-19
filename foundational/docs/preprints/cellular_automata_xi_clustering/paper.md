@@ -1,10 +1,14 @@
 # Cellular Automata Edge-of-Chaos Rules Cluster at the Universal Balance Operator Ξ
 
 **Authors**: Dawn Field Institute Research Team  
-**Date**: December 20, 2025  
-**Version**: 1.0  
-**Category**: [pac][D][v1.0][C4][I5][E]  
+**Date**: December 20, 2025 (Updated: February 19, 2026)  
+**Version**: 1.1  
+**Category**: [pac][D][v1.1][C4][I5][E]  
 **Status**: Draft
+
+---
+
+> **February 2026 Update.** PACSeries Paper 2 (*The Balance Constant and Its Decomposition*, February 2026) now provides the analytic origin of Ξ: it decomposes as Ξ = γ + ln(φ), where γ (Euler-Mascheroni) represents harmonic divergence and ln(φ) (derived in Paper 1 from Landauer erasure) represents geometric convergence. The four-way convergence — formula (1+π/55) = 1.0571, Rule 110 measured = 1.0579, analytic γ+ln(φ) = 1.0584, Mertens-derived = 1.0584 — with ~0.12% irreducible spread is now interpreted as signature of the Conditional Attractor Hypothesis: Ξ is the maximum sustainable computational asymmetry under PAC conservation, emerging in systems that are closed, recursive, conserving, and computationally saturated (Fisher exact p = 3.5 × 10⁻¹⁰). Milestone3 experiment exp_30 confirmed via 2×2 factorial that the γ + ln(φ) decomposition outperforms the alternative 1/√3 + ln(φ) by 0.05% across 4 independent domains. The P/A = 1.0579 measured for Rule 110 in this paper now has a derivation, not just an observation.
 
 ---
 

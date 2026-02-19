@@ -1,7 +1,7 @@
 # Unified Evidence Map: Dawn Field Theory
 
-**Version**: 3.5  
-**Last Updated**: 2026-02-18  
+**Version**: 3.7  
+**Last Updated**: 2026-02-19  
 **Purpose**: Complete mechanistic chain from axioms to observations
 
 ---
@@ -277,6 +277,51 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
     [maxwell_from_pac_sec: Dimensionality is necessary, not contingent]
     ↓ k = d × F_{d+1} = 3 × F_4 = 3 × 3 = 9 (She-Leveque EXACTLY)
     [milestone2: exp_11 - Fibonacci-dimensional derivation, 0/10000 random models beat this]
+
+LAYER 8: COSMOLOGY & GRAVITY (NEW: milestone3 Block G)
+Dark matter density from Fibonacci depth map
+    ↓ Ω_c = F₇ · Ξ² / F₁₀ = 13 × 1.0571² / 55
+    [milestone3/exp_25 (F23): 0.079% error from Planck 2018]
+    ↓ Gravity hierarchy = F₁₈₃ ≈ 10³⁸
+    [milestone3/exp_23 (F21): Rank #1 cyclotomic depth, 40× better than next-best, 0/5000 MC]
+    ↓ Correction template: both α_EM and gravity use F_a/(mπF_b²)
+    [milestone3/exp_26 (F24): 0/5000 random integer sequences match both simultaneously]
+    ↓ Index gaps a−b: 3 = F₄ (EM), 7 = F₇ (gravity) — both Fibonacci
+    ↓ PAC depth equation: 1 + F₁₃/(πF₆²) for gravity, 1 − F₁₀/(4πF₇²) for EM
+    ↓ Signs: minus (EM self-screening), plus (gravitational enhancement)
+
+LAYER 9: THE MECHANISM — π→φ→Fibonacci (NEW: milestone3 Block H+I)
+π defines rotational closure (θ ≡ θ mod 2π)
+    ↓ Phase transport requires angular advance Δθ = 2πα
+    [milestone3/exp_27 (F25): 5/5 PASS]
+    ↓ Non-resonance = stability: maximally irrational α avoids all resonances
+    ↓ φ is that maximum: continued fraction [1;1,1,1,...] has smallest partial quotients
+    ↓ Golden angle α* = 1 − 1/φ minimises worst-case star discrepancy D*_N
+    [Golden angle ranked #1 of 12 irrationals across 28 scales]
+    ↓ Landauer bridge: fd = ln(φ) → α = 1 − 1/φ (EXACT, machine precision)
+    [milestone3/exp_27 Test 3: algebraic mapping, coupling ratio, phase positions]
+    ↓ Fibonacci = integer waypoints: F_n/F_{n+1} are best rational approximants to 1/φ
+    ↓ Convergent errors = correction template: 1/(F_n·F_{n+1}) explains F_a/(mπF_b²)
+    [milestone3/exp_27 Test 4: F₁₃ = F₇² + F₆², (φ²+1)/π at 0.62%]
+
+Cross-validation triangle (three independent domains)
+    ↓ Phase transport: D*_N measures equidistribution on torus
+    ↓ Thermodynamics: stage_df convergent ladder from independent fibbinoci_thermo data
+    ↓ Geometry: packing quality (phyllotaxis)
+    [milestone3/exp_28 (F26): 4/4 PASS]
+    ↓ All three rank Fibonacci fractions identically (Spearman r = 0.964–0.976)
+    ↓ Geometric bridge: D* vs packing CV rank correlation = 1.000 (perfect)
+    ↓ Convergent ratio = 1/(φ√5) ≈ 0.2764 — theorem from continued fraction theory, not empirical fit
+    ↓ 92.2% of late-stage convergents closer than early ones (monotonic improvement)
+
+PAC→MED Theorem (analytical, not numerical)
+    ↓ ALL k-step PAC recursions have max effective depth = r_k/(r_k − 1)
+    [milestone3/exp_22 (F20): proven for k=2–∞, confirmed computationally k=2–8]
+    ↓ r₂ = φ, r₃ ≈ 1.839, ..., r_∞ = 2
+    ↓ D₂ = φ² ≈ 2.618, D₃ ≈ 2.192, ..., D_∞ = 2.0
+    ↓ floor(D_k) = 2 for ALL k ≥ 2
+    ↓ MED depth ≤ 2 is DERIVED from PAC, not independent
+    ↓ Only k=2 (Fibonacci) gives decay rate ln(φ) — all higher-k decay faster
 ```
 
 ---
@@ -291,11 +336,17 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | π creates max Möbius coherence | 19× vs e (var=0.0095) | oscillation_attractor_dynamics |
 | Möbius formula detects zeros | 20/20 found, <0.06 error | oscillation_attractor_dynamics |
 | **PAC base-agnostic** | **<10⁻¹⁴ all bases** | base_agnostic_pac |
+| **Feigenbaum r∞ closed form** | **13 digits** | sec_threshold_detection |
+| **Feigenbaum δ closed form** | **8 digits** | sec_threshold_detection |
+| **Feigenbaum α closed form** | **6 digits** | sec_threshold_detection |
+| **Feigenbaum uniqueness** | **1-in-280B, only (55,17,52) in 3.9M** | sec_threshold_detection |
+| **Möbius-Fibonacci identity** | **exact to 10⁻¹⁵** | pac_foundations_validation/exp_01 |
 
 ### Layer 2: Number Theory → Dynamics (< 0.1% error)
 | Finding | Precision | Source |
 |---------|-----------|--------|
 | SEC partition → 1/φ | 0.04% at k=9 | sec_prime_manifold |
+| **SEC 1/φ genuine (no curve-fit)** | **0.005 from 1/φ without φ-targeting** | **phi_artifact_test/exp_33** |
 | PHM eigenvalue decay → 1/π² | Z = 0.32 | prime_harmonic_manifold |
 | Primes = injection (I(p) > 0) | 100% | oscillation_attractor_dynamics |
 | Möbius gap symmetry | 47.5% pairs | oscillation_attractor_dynamics |
@@ -303,6 +354,11 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | **Mertens product** | **0.012% error** | asymmetric_conservation/exp_14 |
 | **SEC→PAC bridge** | **0.004% error** | asymmetric_conservation/exp_14 |
 | **k=9 = 3² = F₄² MED boundary** | **λ* drop confirmed** | asymmetric_conservation/exp_15 |
+| **p=3 controls φ-clustering** | **82.1% drop when removed (vs p=2: 1.5%)** | prime_growth_dynamics_v2/exp_05 |
+| **λ* = 1 − Ξ/(F₁₀+F₃)** | **0.017% error** | prime_growth_dynamics_v2/exp_01 |
+| **β = (ln(φ)+F₃)/π** | **0.026% error** | prime_growth_dynamics_v2/exp_02 |
+| **Alternation limit = φ/6** | **0.025% error** | prime_growth_dynamics_v2/exp_11 |
+| **Gap=6 is #1 most frequent** | **18.0%, 3.39× enrichment** | prime_growth_dynamics_v2/exp_06 |
 | ~~Phase ordering~~ | ~~REMOVED~~ | ~~pac_foundations_validation/exp_05: falsified~~ |
 
 ### Layer 3: Information Physics (< 1% error)
@@ -317,6 +373,19 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | Distance conservation | r=0.79, p<0.001 | euclidean_distance_validation exp_01 |
 | PAC conservation verified | 100% transfer | GAIA POC-020 |
 | No-backprop learning works | Implemented | GAIA POC-019, POC-021 |
+| **PAC-DAG conservation** | **error < 10⁻¹⁵** | pac_dag_fluid/exp_03 |
+| **PAC-DAG Ξ emergence** | **Ξ ≈ 1.057 from turbulent regime** | pac_dag_fluid/exp_04 |
+| **PAC-DAG spectrum** | **slope ≈ −1.9 (steeper than Kolmogorov)** | pac_dag_fluid/exp_04 |
+
+### Layer 3b: Quantum Validation
+| Finding | Precision | Source |
+|---------|-----------|--------|
+| **Born rule (SEC)** | **RMS 0.0038–0.0113, Chi² p > 0.05** | quantum_validation/born_rule |
+| **Entanglement correlation** | **r=1.000 at coupling 1.0** | quantum_validation/symbolic_entanglement |
+| **Interference** | **Pearson r=1.00 at noise ≤ 0.25** | quantum_validation/symbolic_interference |
+| **Reversibility** | **fidelity=1.0 at decay=0** | quantum_validation/symbolic_reversability |
+| **Landauer bound** | **measured/theoretical = 1.50 (within bound)** | quantum_validation/landauer_symbolic |
+| Decoherence divergence | R²≈−9.0 vs exponential (SEC ≠ QM here) | quantum_validation/decoherence |
 
 ### Layer 4: Machine Learning (p < 0.01)
 | Finding | Precision | Source |
@@ -342,6 +411,7 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | p/e = F₄×F₉×F₁₂/F₆ | 0.0083% | milestone2/mass_derivation |
 | Casimir 240 = F₃×F₄×F₅×F₆ | EXACT | milestone2 |
 | k = d × F_{d+1} | Derived | milestone2/she_leveque |
+| **All 6 Ising exponents in φ-constants** | **<1.7% each** | prime_growth_dynamics_v2/exp_10 |
 | **Wilson-Fisher ν = 2/(3·Ξ)** | **0.017% error** | **milestone3/exp_07 (F6)** |
 | **eff_depth ≈ 3.0 invariant** | **d_cross = 3.25 ± 0.17** | **milestone3/exp_11 (F10)** |
 | **Fibonacci–MED complementarity** | **φ²=2.618 < d_cross≈3.1** | **milestone3/exp_12 (F11)** |
@@ -349,11 +419,50 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 | **SEC cost monotonicity** | **~55.7 SEC/index, r=0.86** | **milestone3/exp_15 (F13)** |
 | **PAC-Lazy KL discrimination** | **p=0.035, d=0.198** | **milestone3/exp_21 (F19)** |
 
+### Layer 6: Cosmology & Gravity (NEW: Block G)
+| Finding | Precision | Source |
+|---------|-----------|--------|
+| **Ω_c = F₇·Ξ²/F₁₀** | **0.079% error** | **milestone3/exp_25 (F23)** |
+| **F₁₈₃ gravity correction** | **Rank #1 cyclotomic, 40× gap** | **milestone3/exp_23 (F21)** |
+| **Correction template F_a/(mπF_b²)** | **0/5000 MC match both** | **milestone3/exp_26 (F24)** |
+| **183 = F₇²+F₇+1 gravity depth** | **Cyclotomic Φ₃(F₇)** | gravity_from_maxwell_pac |
+| **GW170817: c_GW = c_EM** | **to 3×10⁻¹⁵** | gravity_from_maxwell_pac |
+| PAC-Lazy signal anatomy | CI includes zero (FAIL) | milestone3/exp_24 (F22) |
+
+### Layer 7: The Mechanism — π→φ→Fibonacci (NEW: Block H+I)
+| Finding | Precision | Source |
+|---------|-----------|--------|
+| **Golden angle D*_N #1 of 12** | worst=0.024, mean=0.008 | **milestone3/exp_27 (F25)** |
+| **Perturbation robustness** | Golden #1 absolute | **milestone3/exp_27 (F25)** |
+| **Landauer bridge exact** | fd=ln(φ)→α=1−1/φ, Δ=0 | **milestone3/exp_27 (F25)** |
+| **Correction structure** | F₁₃=F₇²+F₆², (φ²+1)/π at 0.62% | **milestone3/exp_27 (F25)** |
+| **Inward/outward duality** | advantage=0.389, S>0.5 both | **milestone3/exp_27 (F25)** |
+| **Phase-thermo correlation** | Spearman r=0.964–0.976 | **milestone3/exp_28 (F26)** |
+| **Geometric bridge** | D* vs pack_cv: r=1.000 | **milestone3/exp_28 (F26)** |
+| **Convergent ratio = 1/(φ√5)** | 0.2735 vs 0.2764 (theorem) | **milestone3/exp_28 (F26)** |
+| **PAC→MED theorem** | floor(D_k)=2 for all k≥2 | **milestone3/exp_22 (F20)** |
+
+### Epistemic Corrections & Honest Boundaries
+
+Not all results survived scrutiny. The following corrections are part of the evidence base:
+
+| Claim | Status | Resolution | Source |
+|-------|--------|------------|--------|
+| SEC 1/φ threshold | **GENUINE** | 0.005 from 1/φ without φ-targeting | phi_artifact_test/exp_33 |
+| Ξ ≈ 1 + π/55 | **CURVE-FIT** | Confirmed as numerical coincidence, not derivable | phi_artifact_test |
+| Ξ as universal constant | **METRIC-DEPENDENT** | Ranges 0.998–12.26 across metrics; structural boundaries real, labels vary | phi_artifact_test |
+| 1/√3 vs Euler γ (Mertens) | **1/√3 wins** | 3.81% vs 3.83% — marginal, no deep claim warranted | pac_foundations_validation/exp_02 |
+| Ξ as emergent constant | **CONSTRUCTED, NOT EMERGENT** | 21 alternatives within 5% of Ξ; 0/4 generic optimization finds it | pac_foundations_validation/exp_03-04 |
+| Phase ordering of primes | **FALSIFIED** | Removed from evidence (milestone3) | pac_foundations_validation/exp_05 |
+| Fibonacci-specific crystallization | **FALSIFIED** | Basis-independent, not Fibonacci-specific | milestone3/exp_19 (F17) |
+| Null space prediction | **FAILED** (0/4) | Degenerate null space prevents unique prediction | milestone3/exp_16 (F14) |
+| PAC-Lazy bootstrap | **FAILED** | CI includes zero; conservation normalization required | milestone3/exp_24 (F22) |
+
 ---
 
 ## Experimental Evidence Count
 
-### Total Experiments Conducted: 170+
+### Total Experiments Conducted: 200+
 
 **By Category**:
 - **Number Theory**: 32 (sec_prime_manifold) + 60 (oscillation_attractor_dynamics) + 31 (prime_growth_dynamics) + 17 (asymmetric_conservation) = 140
@@ -361,28 +470,34 @@ Maxwell equations = PAC depth-2 recursion projected to 3+1D
 - **Information Geometry**: 7 (euclidean_distance_validation)
 - **Machine Learning**: 2 model families (143k Pythia checkpoints)
 - **Standard Model**: 10+ parameter validations including mass ratios
-- **GAIA Implementations**: 3 POCs (019, 020, 021)
-- **Milestones**: 12 experiments (milestone1) + 12 experiments (milestone2) + 21 experiments (milestone3) = 45
-- **Quantum Validation**: 3 modules (born_rule, landauer, interference)
+- **GAIA Implementations**: 25 POCs (001–025, 15+ validated)
+- **Milestones**: 40 experiments (milestone1) + 18 experiments (milestone2) + 22 (mass_derivation) + 28 experiments (milestone3) = 108
+- **Quantum Validation**: 6 modules (born_rule, landauer_symbolic, entanglement, decoherence, interference, reversibility)
 - **Landauer Experiments**: 25 (landauer_erasure_structure, exp_01-25)
+- **Reality Engine POCs**: 7 (PAC-Lazy, Feigenbaum, stellar formation, c² scale, recursive gravity, equilibrium)
+- **Standalone Experiment Folders**: 45 (biology, hodge conjecture, wealth field dynamics, etc.)
 
-**Milestone 3 Highlights** (Feb 2026 — Falsification Registry, 19 tests):
-- **19 falsification tests**: 13 PASS, 1 BORDERLINE, 1 CORRECTED, 1 PARTIAL, 1 FAILED, 2 FALSIFIED
+**Milestone 3 Highlights** (Feb 2026 — Falsification Registry, 26 tests):
+- **26 falsification tests**: 18 PASS, 1 BORDERLINE, 1 CORRECTED, 2 PARTIAL, 2 FAILED, 2 FALSIFIED
 - Cascade framework: k=2 minimality, E-I-S decomposition, PAC tree depth
 - sin²θ_W running-scale resolution: 3/13 at Q ≈ M_W
 - Cross-domain independence: naive p-values corrected by ~48 OOM, conservative p ≈ 10⁻¹⁴⁷
 - **Block E (stoichiometric framework)**: Fibonacci at 99.98th percentile, SEC cost monotonicity, Fibonacci–MED complementarity
 - **Block F (discrimination)**: Null space prediction FAILS (0/4), crystallization order FALSIFIED for Fibonacci-specificity, PAC-Lazy conservation PASSES (KL p=0.035)
-- **Honest falsifications**: exp_19 (Fibonacci-specificity), exp_20 (raw fractal pressure), exp_16 (null space prediction)
+- **Block G (derivation chain)**: PAC→MED theorem (analytical: depth ≤ 2 for all k≥2), F₁₈₃ unique cyclotomic (0/5000 MC), Ω_c at 0.079%, correction template F_a/(mπF_b²) (0/5000 MC match both)
+- **Block H (mechanism)**: π→φ→Fibonacci causal chain (exp_27, 5/5 PASS). Golden angle #1/12 on D*_N. Landauer bridge exact. Correction structural form (φ²+1)/π
+- **Block I (cross-validation)**: Phase-thermo-geometry triangle (exp_28, 4/4 PASS). Spearman r=0.964–0.976. 1/(φ√5) convergent constant (theorem). Independent fibbinoci_thermo data confirms mechanism
+- **Honest falsifications**: exp_19 (Fibonacci-specificity), exp_20 (raw fractal pressure), exp_16 (null space prediction), exp_24 (PAC-Lazy bootstrap CI includes zero)
 - **Key resolution**: PAC-Lazy architecture (from GAIA POCs) transfers to formula space — conservation normalization required, raw counting biased
 - Full details: `foundational/experiments/milestone3/FALSIFICATION_REGISTRY.md`
 
 **Total Evidence Files**:
-- JSON result files: 120+
-- Python experiment scripts: 70+
-- Validation studies: 12 papers
+- JSON result files: 200+
+- Python experiment scripts: 160+
+- Validation studies: 17 published papers (DOIs on Zenodo)
 - Cross-references: 100+ internal links
-- Falsification tests: 19 (milestone3)
+- Falsification tests: 26 (milestone3)
+- POCs validated: 32 (GAIA 25, Reality Engine 7)
 
 **Navigation Note**: Each experiment folder contains a `SYNTHESIS.md` file that documents cross-connections to other experiments, theoretical implications, and open questions. To understand how findings interconnect, always check the SYNTHESIS.md in each referenced experiment directory.
 
@@ -826,9 +941,17 @@ When citing this work, please use appropriate papers for each claim:
 | **Turbulence** | Wilson-Fisher ν | 2/(3·Ξ) = E-I-S cycle ratio × balance reciprocal | 0.017% error (milestone3/F6: E-I-S decomposition, 63× better than best alternative) |
 | **CA** | Rule 110 at Ξ | Computation requires PAC balance | p < 8.58×10⁻⁸ |
 | **ML** | Training → φ | Networks find PAC (it's optimal) | p = 0.0014 at step 512 |
-| **Biology** | Fibonacci spacing | Evolution found PAC (optimal packing) | Ubiquitous observation |
+| **Cosmology** | Ω_c = F₇·Ξ²/F₁₀ | Dark matter density from PAC depth map | 0.079% error (milestone3/F23) |
+| **Gravity** | F₁₈₃ ≈ 10³⁸ | EM/gravity hierarchy = PAC cyclotomic depth | Rank #1, 0/5000 MC (milestone3/F21) |
+| **Mechanism** | π→φ→Fibonacci | Non-resonance on π-closed manifold selects φ | Golden angle #1/12 (milestone3/F25) |
+| **Thermo** | Convergent ladder | fibbinoci_thermo independent data matches phase | Spearman r=0.964-0.976 (milestone3/F26) |
+| **Corrections** | F_a/(mπF_b²) | Convergent error bounds → correction template | 0/5000 MC match both (milestone3/F24) |
+| **Biology** | DNA Fibonacci spacing | SEQUENCE organization enriched 1.28×, z=+103.4 (p < 10⁻²⁴) | dna_prime_structure |
+| **Biology** | Flexibility correlation | Flexible residues 6.92× enriched vs rigid 4.01× | dna_prime_structure |
+| **Chaos Theory** | Feigenbaum r∞ closed form | F₁₀=55, Fermat=17, 52=F₁₀−F₄: 13 digits, 1-in-280B | sec_threshold_detection |
+| **Fluid DAG** | PAC-DAG Ξ emergence | Ξ ≈ 1.057 from turbulent regime, conservation < 10⁻¹⁵ | pac_dag_fluid |
 
-**One principle. Fifteen domains. Same structural boundary.**
+**One principle. Twenty-three domains. Same structural boundary.**
 
 ---
 
@@ -856,6 +979,8 @@ When citing this work, please use appropriate papers for each claim:
 - v3.3 (2026-02-14): Full Stack Validation (exp_25): 6-layer derivation chain in one experiment, all passing. Precision tightened: N=5M → 0.15% from ln(φ). Thermal init discovery: environment must be at Boltzmann equilibrium. Gauge hierarchy p < 10⁻¹⁸. SEC with li(x) → 0.08% for 1/φ partition.
 - v3.4 (2026-02-18): Milestone 3 integration: 10 falsification tests (8 PASS, 1 BORDERLINE). Cascade framework: k=2 minimality derives Fibonacci from Landauer; E-I-S decomposition explains Wilson-Fisher ν = 2/(3·Ξ) at 0.017%; sin²θ_W running-scale resolved at Q ≈ M_W; α downgraded to BORDERLINE (p=0.42 look-elsewhere); cross-domain p-values corrected by ~48 OOM. Removed falsified phase-ordering claim. Layer 4 Θ recycling marked model-dependent.
 - v3.5 (2026-02-18): Milestone 3 complete (21 experiments, 19 falsification tests). Block E: stoichiometric framework (99.98th percentile), SEC cost monotonicity (~55.7/index), Fibonacci–MED complementarity (φ²<d_cross). Block F: null space prediction FAILS (0/4), crystallization order FALSIFIED (basis-independent), PAC-Lazy formula discrimination PASSES (KL p=0.035, d=0.198). Honest falsifications documented. GAIA POC architecture transfers to formula space.
+- v3.6 (2026-02-19): Milestone 3 fully complete (28 experiments, 26 falsification tests, 18 pass). Block G: PAC→MED theorem (depth ≤ 2 for all k≥2, analytical), F₁₈₃ unique cyclotomic (0/5000 MC), dark matter Ω_c at 0.079%, correction template F_a/(mπF_b²) 0/5000 MC both. Block H: π→φ→Fibonacci mechanism (exp_27: 5/5, golden angle #1/12, Landauer bridge exact, (φ²+1)/π structural form). Block I: Cross-validation triangle (exp_28: 4/4, Spearman r=0.964–0.976, geometric r=1.000, 1/(φ√5) convergent constant from CF theory). Independent fibbinoci_thermo data confirms mechanism. Cross-domain table expanded to 20 domains. Experiment count updated to 200+.
+- v3.7 (2026-02-19): Standalone experiment integration. Added to Layer 1: Feigenbaum closed forms (13/8/6 digits, 1-in-280B uniqueness) from sec_threshold_detection, Möbius-Fibonacci identity (exact to 10⁻¹⁵) from pac_foundations_validation. Layer 2: prime_growth_dynamics_v2 results (λ*, β, p=3 carrier, alternation limit, SEC 1/φ genuineness). Layer 3: PAC-DAG conservation and Ξ emergence from pac_dag_fluid. New Layer 3b: Quantum validation specifics (Born rule RMS, entanglement, Landauer bound). Layer 5: all 6 Ising exponents from prime_growth_dynamics_v2. Layer 6: gravity_from_maxwell_pac results (183=Φ₃(F₇), GW170817). New Epistemic Corrections table documenting honest boundaries (Ξ metric-dependent, 1+π/55 curve-fit, phase ordering falsified, etc.). Cross-domain table updated from 20→23 domains (Biology with real data, Chaos Theory, Fluid DAG).
 
-**Last Updated**: 2026-02-18
+**Last Updated**: 2026-02-19
 **Status**: Living Document (updated as research progresses)

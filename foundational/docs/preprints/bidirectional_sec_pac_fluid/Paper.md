@@ -2,8 +2,12 @@
 
 **Author:** P.L. Hartwell  
 **Affiliation:** Independent Research, Dawn Field Theory Institute  
-**Date:** January 2026  
-**Version:** 1.0
+**Date:** January 2026 (Updated: February 2026)  
+**Version:** 1.1
+
+---
+
+> **February 2026 Update.** The bidirectional SEC interpretation introduced here — SEC acting downward (differentiation) and upward (integration) on PAC hierarchies — is consistent with the PACSeries v2.0 finding that SEC operates locally while PAC reconciles globally (Paper 2, Mertens product validated at 0.012%). The calculus-geometry duality (root as integral, leaves as differentials) maps onto the PAC ratio-vs-magnitude distinction established in Paper 1: roots conserve *ratios* (smooth, continuous) while leaves express *magnitudes* (discrete, actualized). The power-law spectrum (slope ≈ −1.9) from PAC-DAG fluid simulation connects to the She-Leveque derivation in PACSeries Paper 5, where k = d × F_{d+1} at 0.47%.
 
 ---
 

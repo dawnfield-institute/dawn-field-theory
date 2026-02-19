@@ -300,10 +300,15 @@ The fundamental interaction is LOCAL — matching Maxwell/SEC derivation in exp_
 ### Unresolved
 
 1. **What is dark matter in this framework?**
-   - Proposed: Intermediate Fibonacci depth (F₅₀-F₇₀?)
+   - The cyclotomic depth F₆²+F₆+1 = 73 maps to ~15 keV via E = M_Pl/F_d (sterile neutrino range)
+   - WIMP-range (1 GeV – 10 TeV) corresponds to depths d=74–93
+   - Earlier proposals (F₃₇–F₅₀, F₅₀–F₇₀) map to 10⁸–10¹¹ GeV (GUT-scale, not WIMP)
+   - Ω_c ≈ F₇·Ξ²/F₁₀ at 0.079% error (exp_25)
+   - See milestone3/exp_25 for full depth mapping
    
 2. **What is dark energy?**
-   - Possible: SEC vacuum energy (not yet addressed)
+   - PAC/SEC φ-equilibrium: 1/φ = 61.8% vs observed 68.5% (6.7 pp deviation)
+   - Universe crossed the φ-equilibrium at z ≈ 0.10 (exp_25)
    
 3. **How does GR emerge from SEC at large scales?**
    - Need: Full derivation of Einstein equations

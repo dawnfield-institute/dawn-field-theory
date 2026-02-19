@@ -175,13 +175,13 @@ def theoretical_challenges():
         'dark_matter': {
             'challenge': 'What is dark matter in this framework?',
             'implication': 'May need intermediate Fibonacci depth',
-            'response': 'Proposed: DM at F₅₀ - F₇₀ range',
+            'response': 'Cyclotomic depth F₆²+F₆+1=73 (~15 keV, sterile neutrino range); WIMP range at d=74-93; Ω_c ≈ F₇·Ξ²/F₁₀ at 0.079% (exp_25)',
             'resolved': False
         },
         'dark_energy': {
             'challenge': 'What is dark energy / cosmological constant?',
             'implication': 'May be SEC vacuum energy',
-            'response': 'Not yet addressed',
+            'response': 'PAC/SEC φ-equilibrium: 1/φ=61.8% vs observed 68.5% (6.7pp gap); universe crossed at z≈0.10 (exp_25)',
             'resolved': False
         },
         'singularity': {

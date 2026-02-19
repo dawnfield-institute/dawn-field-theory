@@ -1,0 +1,303 @@
+{
+  "experiment": "exp_31_scaling_extrapolation",
+  "target_paper": "Paper 6 (Computational Validation of PAC Conservation)",
+  "purpose": "Produce falsifiable scaling predictions for 7B-175B models",
+  "observed_data": {
+    "sizes_M": [
+      70,
+      160,
+      410,
+      1000
+    ],
+    "enrichment": [
+      2.8,
+      2.4,
+      2.1,
+      1.9
+    ],
+    "source": "Paper 6 \u00a74.4, Pythia model family"
+  },
+  "model_fits": {
+    "power_law": {
+      "params": [
+        5.204405,
+        -0.148816
+      ],
+      "param_errors": [
+        0.323511,
+        0.011596
+      ],
+      "r_squared": 0.988294,
+      "ss_residuals": 0.005385,
+      "aic": -11.09,
+      "bic": -12.32,
+      "predicted_training": [
+        2.7656,
+        2.4455,
+        2.1259,
+        1.8618
+      ],
+      "residuals": [
+        0.0344,
+        -0.0455,
+        -0.0259,
+        0.0382
+      ],
+      "max_abs_residual": 0.0455,
+      "fit_success": true
+    },
+    "logarithmic": {
+      "params": [
+        -0.335352,
+        4.16519
+      ],
+      "param_errors": [
+        0.039551,
+        0.223487
+      ],
+      "r_squared": 0.972934,
+      "ss_residuals": 0.01245,
+      "aic": -7.74,
+      "bic": -8.97,
+      "predicted_training": [
+        2.7405,
+        2.4632,
+        2.1477,
+        1.8487
+      ],
+      "residuals": [
+        0.0595,
+        -0.0632,
+        -0.0477,
+        0.0513
+      ],
+      "max_abs_residual": 0.0632,
+      "fit_success": true
+    },
+    "inv_sqrt": {
+      "params": [
+        10.184656,
+        1.58812
+      ],
+      "param_errors": [
+        0.170381,
+        0.013191
+      ],
+      "r_squared": 0.999441,
+      "ss_residuals": 0.000257,
+      "aic": -23.25,
+      "bic": -24.48,
+      "predicted_training": [
+        2.8054,
+        2.3933,
+        2.0911,
+        1.9102
+      ],
+      "residuals": [
+        -0.0054,
+        0.0067,
+        0.0089,
+        -0.0102
+      ],
+      "max_abs_residual": 0.0102,
+      "fit_success": true
+    },
+    "asymptotic": {
+      "params": [
+        155.418082,
+        80.668827,
+        1.765535
+      ],
+      "param_errors": [
+        26.322616,
+        21.718448,
+        0.039207
+      ],
+      "r_squared": 0.998831,
+      "ss_residuals": 0.000538,
+      "aic": -18.3,
+      "bic": -20.15,
+      "predicted_training": [
+        2.7971,
+        2.4113,
+        2.0823,
+        1.9094
+      ],
+      "residuals": [
+        0.0029,
+        -0.0113,
+        0.0177,
+        -0.0094
+      ],
+      "max_abs_residual": 0.0177,
+      "fit_success": true
+    }
+  },
+  "best_model": {
+    "name": "inv_sqrt",
+    "aic": -23.25,
+    "r_squared": 0.999441
+  },
+  "predictions": {
+    "power_law": [
+      {
+        "size_label": "7B",
+        "size_M": 7000,
+        "predicted_enrichment": 1.3937,
+        "ci_95_low": 1.2767,
+        "ci_95_high": 1.5152,
+        "n_bootstrap": 1000
+      },
+      {
+        "size_label": "70B",
+        "size_M": 70000,
+        "predicted_enrichment": 0.9893,
+        "ci_95_low": 0.859,
+        "ci_95_high": 1.1336,
+        "n_bootstrap": 1000
+      },
+      {
+        "size_label": "175B",
+        "size_M": 175000,
+        "predicted_enrichment": 0.8632,
+        "ci_95_low": 0.7337,
+        "ci_95_high": 1.0093,
+        "n_bootstrap": 1000
+      }
+    ],
+    "logarithmic": [
+      {
+        "size_label": "7B",
+        "size_M": 7000,
+        "predicted_enrichment": 1.1961,
+        "ci_95_low": 0.9721,
+        "ci_95_high": 1.4151,
+        "n_bootstrap": 1000
+      },
+      {
+        "size_label": "70B",
+        "size_M": 70000,
+        "predicted_enrichment": 0.4239,
+        "ci_95_low": 0.0871,
+        "ci_95_high": 0.7829,
+        "n_bootstrap": 990
+      },
+      {
+        "size_label": "175B",
+        "size_M": 175000,
+        "predicted_enrichment": 0.1166,
+        "ci_95_low": 0.0149,
+        "ci_95_high": 0.5471,
+        "n_bootstrap": 709
+      }
+    ],
+    "inv_sqrt": [
+      {
+        "size_label": "7B",
+        "size_M": 7000,
+        "predicted_enrichment": 1.7098,
+        "ci_95_low": 1.6072,
+        "ci_95_high": 1.8107,
+        "n_bootstrap": 1000
+      },
+      {
+        "size_label": "70B",
+        "size_M": 70000,
+        "predicted_enrichment": 1.6266,
+        "ci_95_low": 1.5123,
+        "ci_95_high": 1.7386,
+        "n_bootstrap": 1000
+      },
+      {
+        "size_label": "175B",
+        "size_M": 175000,
+        "predicted_enrichment": 1.6125,
+        "ci_95_low": 1.4958,
+        "ci_95_high": 1.726,
+        "n_bootstrap": 1000
+      }
+    ],
+    "asymptotic": [
+      {
+        "size_label": "7B",
+        "size_M": 7000,
+        "predicted_enrichment": 1.7875,
+        "ci_95_low": 1.5936,
+        "ci_95_high": 1.9298,
+        "n_bootstrap": 1000
+      },
+      {
+        "size_label": "70B",
+        "size_M": 70000,
+        "predicted_enrichment": 1.7678,
+        "ci_95_low": 1.5516,
+        "ci_95_high": 1.9185,
+        "n_bootstrap": 1000
+      },
+      {
+        "size_label": "175B",
+        "size_M": 175000,
+        "predicted_enrichment": 1.7664,
+        "ci_95_low": 1.5481,
+        "ci_95_high": 1.9177,
+        "n_bootstrap": 1000
+      }
+    ]
+  },
+  "null_crossings": {
+    "power_law": {
+      "crossing_size_M": 65133.0,
+      "crossing_size_B": "65.1B",
+      "note": "Enrichment reaches 1.0 at ~65.1B parameters"
+    },
+    "logarithmic": {
+      "crossing_size_M": 12562.0,
+      "crossing_size_B": "12.6B",
+      "note": "Enrichment reaches 1.0 at ~12.6B parameters"
+    },
+    "inv_sqrt": {
+      "crossing_size_M": "> 10T",
+      "note": "Enrichment stays above 1.0 even at 10T parameters"
+    },
+    "asymptotic": {
+      "crossing_size_M": "> 10T",
+      "note": "Enrichment stays above 1.0 even at 10T parameters"
+    }
+  },
+  "synthesis": {
+    "best_model": "inv_sqrt",
+    "prediction_7B": {
+      "size_label": "7B",
+      "size_M": 7000,
+      "predicted_enrichment": 1.7098,
+      "ci_95_low": 1.6072,
+      "ci_95_high": 1.8107,
+      "n_bootstrap": 1000
+    },
+    "prediction_70B": {
+      "size_label": "70B",
+      "size_M": 70000,
+      "predicted_enrichment": 1.6266,
+      "ci_95_low": 1.5123,
+      "ci_95_high": 1.7386,
+      "n_bootstrap": 1000
+    },
+    "null_crossing": {
+      "crossing_size_M": "> 10T",
+      "note": "Enrichment stays above 1.0 even at 10T parameters"
+    },
+    "falsifiable_claims": [
+      "At 7B parameters, Xi enrichment should be 1.7098 (95% CI: [1.6072, 1.8107])",
+      "At 70B parameters, Xi enrichment should be 1.6266 (95% CI: [1.5123, 1.7386])",
+      "Enrichment reaches 1.0 (undetectable) at ~? parameters"
+    ],
+    "caveats": [
+      "Only 4 data points \u2014 extrapolation is speculative",
+      "All models from same family (Pythia) \u2014 architecture effects unknown",
+      "Enrichment measured by specific Xi-proximity metric \u2014 different metrics may differ",
+      "Confidence intervals from bootstrap on 4 points are necessarily wide"
+    ]
+  },
+  "PASS": true,
+  "status": "PASS \u2014 predictions generated. Falsification requires measuring Xi enrichment in 7B+ parameter models."
+}

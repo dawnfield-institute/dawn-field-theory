@@ -22,6 +22,9 @@ Experiments map to paper sections as follows:
     exp_09  → §6.3    (p=3 reconciliation — 82.1% φ-carrier)
     exp_10  → §8      (base invariance across 11 bases)
     exp_11  → §8      (Zeckendorf validation — F₁₀ significance)
+    exp_12  → §9.3    (PAC→MED theorem — depth ≤ 2, milestone3)
+    exp_13  → §9.3    (MED depth criticality — d ≈ 3.25, milestone3)
+    exp_14  → §9.3    (Fibonacci–MED complementarity, milestone3)
 """
 
 import sys

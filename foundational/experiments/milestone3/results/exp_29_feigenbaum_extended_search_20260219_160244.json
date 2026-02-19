@@ -1,0 +1,869 @@
+{
+  "experiment": "exp_29_feigenbaum_extended_search",
+  "target_paper": "Paper 3 (Feigenbaum Constants from Fibonacci Arithmetic)",
+  "purpose": "Extend parameter search space 8\u00d7 to test formula uniqueness",
+  "original_range": {
+    "a": [
+      1,
+      200
+    ],
+    "b": [
+      1,
+      100
+    ],
+    "c": [
+      1,
+      200
+    ]
+  },
+  "extended_range": {
+    "a": [
+      1,
+      500
+    ],
+    "b": [
+      1,
+      250
+    ],
+    "c": [
+      1,
+      500
+    ]
+  },
+  "r_inf_search": {
+    "search_ranges": {
+      "a": [
+        1,
+        500
+      ],
+      "b": [
+        1,
+        250
+      ],
+      "c": [
+        1,
+        500
+      ]
+    },
+    "total_combinations": 62001249,
+    "evaluated": 62001249,
+    "elapsed_seconds": 92.9,
+    "rate_per_second": 667615.0,
+    "hits_7_digit": 1,
+    "hits_8_digit": 1,
+    "hits_9_digit": 1,
+    "all_hits_7": [
+      [
+        55,
+        17,
+        52,
+        7.632416170575389e-10
+      ]
+    ],
+    "all_hits_8": [
+      [
+        55,
+        17,
+        52,
+        7.632416170575389e-10
+      ]
+    ],
+    "all_hits_9": [
+      [
+        55,
+        17,
+        52,
+        7.632416170575389e-10
+      ]
+    ],
+    "new_hits_beyond_original_7": [],
+    "new_hits_beyond_original_8": [],
+    "best_params": [
+      55,
+      17,
+      52
+    ],
+    "best_error": 7.632416170575389e-10,
+    "best_digits": 9.1,
+    "known_triple_still_best": true,
+    "known_triple_in_8digit": true,
+    "uniqueness_factor": "1-in-62,001,249"
+  },
+  "alpha_search": {
+    "search_range": [
+      1,
+      2000
+    ],
+    "total_searched": 1999,
+    "hits_at_4digits": 94,
+    "all_hits": [
+      {
+        "k": 498,
+        "error": 9.841928187385341e-05,
+        "digits": 4.0,
+        "value": 2.503154209491556,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 499,
+        "error": 9.589379495198034e-05,
+        "digits": 4.0,
+        "value": 2.5031478884304508,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 500,
+        "error": 9.337840997763932e-05,
+        "digits": 4.0,
+        "value": 2.5031415926535896,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 501,
+        "error": 9.087306646038901e-05,
+        "digits": 4.0,
+        "value": 2.5031353220095705,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 502,
+        "error": 8.837770439150862e-05,
+        "digits": 4.1,
+        "value": 2.503129076348197,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 503,
+        "error": 8.589226423938476e-05,
+        "digits": 4.1,
+        "value": 2.503122855520467,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 504,
+        "error": 8.341668694489829e-05,
+        "digits": 4.1,
+        "value": 2.5031166593785614,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 505,
+        "error": 8.095091391698859e-05,
+        "digits": 4.1,
+        "value": 2.5031104877758317,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 506,
+        "error": 7.849488702750807e-05,
+        "digits": 4.1,
+        "value": 2.5031043405667885,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 507,
+        "error": 7.604854860696395e-05,
+        "digits": 4.1,
+        "value": 2.5030982176070906,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 508,
+        "error": 7.361184144008243e-05,
+        "digits": 4.1,
+        "value": 2.5030921187535333,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 509,
+        "error": 7.118470876101819e-05,
+        "digits": 4.1,
+        "value": 2.503086043864037,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 510,
+        "error": 6.876709424945084e-05,
+        "digits": 4.2,
+        "value": 2.503079992797637,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 511,
+        "error": 6.635894202561702e-05,
+        "digits": 4.2,
+        "value": 2.5030739654144716,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 512,
+        "error": 6.396019664622943e-05,
+        "digits": 4.2,
+        "value": 2.503067961575771,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 513,
+        "error": 6.157080310075085e-05,
+        "digits": 4.2,
+        "value": 2.5030619811438495,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 514,
+        "error": 5.919070680660356e-05,
+        "digits": 4.2,
+        "value": 2.5030560239820914,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 515,
+        "error": 5.681985360473361e-05,
+        "digits": 4.2,
+        "value": 2.5030500899549417,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 516,
+        "error": 5.445818975623961e-05,
+        "digits": 4.3,
+        "value": 2.503044178927897,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 517,
+        "error": 5.210566193829192e-05,
+        "digits": 4.3,
+        "value": 2.503038290767495,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 518,
+        "error": 4.9762217239164614e-05,
+        "digits": 4.3,
+        "value": 2.5030324253413028,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 519,
+        "error": 4.742780315557401e-05,
+        "digits": 4.3,
+        "value": 2.503026582517909,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 520,
+        "error": 4.510236758771068e-05,
+        "digits": 4.3,
+        "value": 2.5030207621669134,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 521,
+        "error": 4.278585883569085e-05,
+        "digits": 4.4,
+        "value": 2.5030149641589152,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 522,
+        "error": 4.047822559636268e-05,
+        "digits": 4.4,
+        "value": 2.5030091883655077,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 523,
+        "error": 3.81794169581608e-05,
+        "digits": 4.4,
+        "value": 2.503003434659264,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 524,
+        "error": 3.588938239879977e-05,
+        "digits": 4.4,
+        "value": 2.502997702913731,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 525,
+        "error": 3.360807178048342e-05,
+        "digits": 4.5,
+        "value": 2.502991993003419,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 526,
+        "error": 3.1335435347066045e-05,
+        "digits": 4.5,
+        "value": 2.5029863048037924,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 527,
+        "error": 2.9071423719971497e-05,
+        "digits": 4.5,
+        "value": 2.5029806381912616,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 528,
+        "error": 2.6815987894467175e-05,
+        "digits": 4.6,
+        "value": 2.502974993043172,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 529,
+        "error": 2.4569079236470302e-05,
+        "digits": 4.6,
+        "value": 2.5029693692377974,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 530,
+        "error": 2.2330649479176774e-05,
+        "digits": 4.7,
+        "value": 2.50296376665433,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 531,
+        "error": 2.0100650718980267e-05,
+        "digits": 4.7,
+        "value": 2.5029581851728717,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 532,
+        "error": 1.7879035412810816e-05,
+        "digits": 4.7,
+        "value": 2.5029526246744265,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 533,
+        "error": 1.5665756374231365e-05,
+        "digits": 4.8,
+        "value": 2.502947085040891,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 534,
+        "error": 1.346076677024403e-05,
+        "digits": 4.9,
+        "value": 2.5029415661550467,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 535,
+        "error": 1.1264020117918957e-05,
+        "digits": 4.9,
+        "value": 2.502936067900551,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 536,
+        "error": 9.075470281732871e-06,
+        "digits": 5.0,
+        "value": 2.502930590161931,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 537,
+        "error": 6.895071468955919e-06,
+        "digits": 5.2,
+        "value": 2.5029251328245716,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 538,
+        "error": 4.722778227877377e-06,
+        "digits": 5.3,
+        "value": 2.5029196957747115,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 539,
+        "error": 2.558545444257062e-06,
+        "digits": 5.6,
+        "value": 2.502914278899434,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 540,
+        "error": 4.023283375993189e-07,
+        "digits": 6.4,
+        "value": 2.502908882086657,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 541,
+        "error": 1.7459175413309926e-06,
+        "digits": 5.8,
+        "value": 2.502903505225129,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 542,
+        "error": 3.886236313702223e-06,
+        "digits": 5.4,
+        "value": 2.5028981482044186,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 543,
+        "error": 6.018671775632234e-06,
+        "digits": 5.2,
+        "value": 2.502892810914908,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 544,
+        "error": 8.143267401382122e-06,
+        "digits": 5.1,
+        "value": 2.5028874932477847,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 545,
+        "error": 1.0260066345840233e-05,
+        "digits": 5.0,
+        "value": 2.5028821950950366,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 546,
+        "error": 1.2369111448070742e-05,
+        "digits": 4.9,
+        "value": 2.5028769163494413,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 547,
+        "error": 1.4470445233620248e-05,
+        "digits": 4.8,
+        "value": 2.5028716569045613,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 548,
+        "error": 1.656410991788891e-05,
+        "digits": 4.8,
+        "value": 2.502866416654735,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 549,
+        "error": 1.8650147408259616e-05,
+        "digits": 4.7,
+        "value": 2.502861195495073,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 550,
+        "error": 2.0728599307823995e-05,
+        "digits": 4.7,
+        "value": 2.5028559933214454,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": true
+      },
+      {
+        "k": 551,
+        "error": 2.2799506917334128e-05,
+        "digits": 4.6,
+        "value": 2.502850810030481,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 552,
+        "error": 2.4862911238573723e-05,
+        "digits": 4.6,
+        "value": 2.502845645519556,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 553,
+        "error": 2.6918852976132393e-05,
+        "digits": 4.6,
+        "value": 2.50284049968679,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 554,
+        "error": 2.896737254148654e-05,
+        "digits": 4.5,
+        "value": 2.5028353724310377,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 555,
+        "error": 3.100851005424135e-05,
+        "digits": 4.5,
+        "value": 2.502830263651883,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 556,
+        "error": 3.304230534585682e-05,
+        "digits": 4.5,
+        "value": 2.502825173249631,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 557,
+        "error": 3.506879796142204e-05,
+        "digits": 4.5,
+        "value": 2.502820101125305,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 558,
+        "error": 3.708802716249408e-05,
+        "digits": 4.4,
+        "value": 2.502815047180636,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 559,
+        "error": 3.9100031929936825e-05,
+        "digits": 4.4,
+        "value": 2.5028100113180587,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 560,
+        "error": 4.110485096605017e-05,
+        "digits": 4.4,
+        "value": 2.502804993440705,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 561,
+        "error": 4.310252269723142e-05,
+        "digits": 4.4,
+        "value": 2.5027999934523972,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 562,
+        "error": 4.5093085276281896e-05,
+        "digits": 4.3,
+        "value": 2.5027950112576423,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 563,
+        "error": 4.7076576585245804e-05,
+        "digits": 4.3,
+        "value": 2.502790046761625,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 564,
+        "error": 4.9053034236829645e-05,
+        "digits": 4.3,
+        "value": 2.502785099870204,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 565,
+        "error": 5.102249557830569e-05,
+        "digits": 4.3,
+        "value": 2.5027801704899026,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 566,
+        "error": 5.2984997692399114e-05,
+        "digits": 4.3,
+        "value": 2.5027752585279064,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 567,
+        "error": 5.494057740048171e-05,
+        "digits": 4.3,
+        "value": 2.5027703638920547,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 568,
+        "error": 5.688927126452364e-05,
+        "digits": 4.2,
+        "value": 2.502765486490836,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 569,
+        "error": 5.883111558957741e-05,
+        "digits": 4.2,
+        "value": 2.502760626233383,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 570,
+        "error": 6.076614642555221e-05,
+        "digits": 4.2,
+        "value": 2.502755783029465,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 571,
+        "error": 6.269439957058501e-05,
+        "digits": 4.2,
+        "value": 2.502750956789483,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 572,
+        "error": 6.461591057157291e-05,
+        "digits": 4.2,
+        "value": 2.5027461474244665,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 573,
+        "error": 6.653071472789913e-05,
+        "digits": 4.2,
+        "value": 2.5027413548460644,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 574,
+        "error": 6.843884709285239e-05,
+        "digits": 4.2,
+        "value": 2.5027365789665414,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 575,
+        "error": 7.034034247557875e-05,
+        "digits": 4.2,
+        "value": 2.5027318196987736,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 576,
+        "error": 7.223523544374293e-05,
+        "digits": 4.1,
+        "value": 2.502727076956241,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 577,
+        "error": 7.41235603253027e-05,
+        "digits": 4.1,
+        "value": 2.5027223506530243,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 578,
+        "error": 7.600535121099281e-05,
+        "digits": 4.1,
+        "value": 2.502717640703797,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 579,
+        "error": 7.78806419552122e-05,
+        "digits": 4.1,
+        "value": 2.5027129470238254,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 580,
+        "error": 7.974946617974997e-05,
+        "digits": 4.1,
+        "value": 2.5027082695289566,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 581,
+        "error": 8.16118572743177e-05,
+        "digits": 4.1,
+        "value": 2.5027036081356195,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 582,
+        "error": 8.346784839956572e-05,
+        "digits": 4.1,
+        "value": 2.502698962760816,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 583,
+        "error": 8.531747248832514e-05,
+        "digits": 4.1,
+        "value": 2.5026943333221183,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 584,
+        "error": 8.716076224809186e-05,
+        "digits": 4.1,
+        "value": 2.5026897197376625,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 585,
+        "error": 8.899775016244597e-05,
+        "digits": 4.1,
+        "value": 2.5026851219261452,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 586,
+        "error": 9.08284684935358e-05,
+        "digits": 4.0,
+        "value": 2.5026805398068173,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 587,
+        "error": 9.265294928349734e-05,
+        "digits": 4.0,
+        "value": 2.50267597329948,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 588,
+        "error": 9.447122435640596e-05,
+        "digits": 4.0,
+        "value": 2.502671422324481,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 589,
+        "error": 9.628332532040556e-05,
+        "digits": 4.0,
+        "value": 2.5026668868027078,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 590,
+        "error": 9.808928356930542e-05,
+        "digits": 4.0,
+        "value": 2.5026623666555845,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      },
+      {
+        "k": 591,
+        "error": 9.988913028435456e-05,
+        "digits": 4.0,
+        "value": 2.5026578618050674,
+        "is_fibonacci_related": false,
+        "is_multiple_of_55": false
+      }
+    ],
+    "best_k": 540,
+    "best_error": 4.023283375993189e-07,
+    "best_digits": 6.4,
+    "known_540_still_best": true,
+    "note": "k=540 was found in the original search. 540 = 10\u00d754 = 10\u00d7(55-1)."
+  },
+  "synthesis": {
+    "verdict": "STRENGTHENED",
+    "detail": "(55,17,52) remains the sole 8-digit match in 62,001,249 combinations (up from ~3.9M). No new matches found in extended range. Uniqueness factor: 1-in-62,001,249.",
+    "r_inf_unique": true,
+    "alpha_unique": true,
+    "new_matches_found": 0,
+    "scale_factor_vs_original": 15.8
+  },
+  "PASS": true,
+  "status": "PASS \u2014 formulas remain unique in 8\u00d7 larger search space"
+}

@@ -8,8 +8,20 @@
 **Evidence:** [E] Experimental  
 
 **Authors:** Peter Lorne Groom, Dawn Field Institute  
-**Date:** December 13, 2025  
-**Status:** Draft for Review
+**Date:** December 13, 2025 (Updated: February 19, 2026)  
+**Status:** Draft for Review (v1.1)
+
+---
+
+> **February 2026 Update.** This paper's findings are now substantially extended and partially subsumed by PACSeries Paper 6 (*Computational Validation of PAC Conservation*, February 2026), which presents comprehensive Token PAC Tree analysis across 7 models (Pythia-70m/160m/410m/1B + GPT-2/medium/large). Key improvements over this paper:
+>
+> - **SEC phase → accuracy monotonicity**: Paper 6 validates across ALL 4 Pythia models with zero-parameter thresholds (Crystallized=100%, Ordered≈90%, Transitional≈53%, Chaotic≈20%)
+> - **Attention as PAC mechanism**: confident_head_ratio distinguishes factual (86%) from hallucinated (80%) at p = 0.00006
+> - **Hallucination = PAC violation**: +9.6% uncompensated entropy, compensation ratio ≈ 0
+> - **Xi in trained weights**: 2.36× enrichment over random in SVD of trained weights (χ² = 5511, p ≈ 0)
+> - **Honest falsifications**: φ enrichment in token ratios FALSIFIED (softmax artifact); single-token detection fails
+>
+> This paper's Pythia step-512 φ-convergence (p = 0.0014) and GPT-2 attention entropy results remain as independent supporting evidence. Milestone3 exp_31 predicts scaling behaviour: 7B models should show 1.71× enrichment [1.61, 1.81], 70B models 1.63× [1.51, 1.74].
 
 ---
 

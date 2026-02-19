@@ -1,0 +1,282 @@
+{
+  "experiment": "exp_11_med_depth_criticality",
+  "description": "MED depth d=3 as the edge-of-chaos invariant for A/(A+\u03be) = ln(\u03c6)",
+  "paper": "Paper 7 (classical_physics_information_geometry)",
+  "section": "\u00a73-4 (MED bounds, dimensional emergence)",
+  "timestamp": "2026-02-17T19:07:55.757103+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "iso_depth_collapse": {
+      "target_depth": 3.0,
+      "combos": [
+        {
+          "flip_decay": 0.1,
+          "n_coupling": 3,
+          "eff_depth": 2.7235681711139397,
+          "mean": 0.5503285452916558,
+          "std": 0.05429992151339156,
+          "dev_pct": 14.363055235288828,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "flip_decay": 0.15,
+          "n_coupling": 4,
+          "eff_depth": 3.2391543487285483,
+          "mean": 0.50546703852706,
+          "std": 0.055348075268585734,
+          "dev_pct": 5.040444187848508,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "flip_decay": 0.2,
+          "n_coupling": 4,
+          "eff_depth": 3.0378624352076473,
+          "mean": 0.5088161629384284,
+          "std": 0.053460150192884325,
+          "dev_pct": 5.736421351533864,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "flip_decay": 0.25,
+          "n_coupling": 4,
+          "eff_depth": 2.857697995525053,
+          "mean": 0.5025452596009442,
+          "std": 0.06249201180386085,
+          "dev_pct": 4.4332731305383755,
+          "ln_phi_in_ci": "True"
+        },
+        {
+          "flip_decay": 0.3,
+          "n_coupling": 5,
+          "eff_depth": 2.9973937284285457,
+          "mean": 0.48454958195237546,
+          "std": 0.04490585684448345,
+          "dev_pct": 0.6936148945131542,
+          "ln_phi_in_ci": "True"
+        },
+        {
+          "flip_decay": 0.35,
+          "n_coupling": 6,
+          "eff_depth": 2.9715820500133296,
+          "mean": 0.4681898342459385,
+          "std": 0.03169940121533195,
+          "dev_pct": 2.7060828798319814,
+          "ln_phi_in_ci": "False"
+        }
+      ],
+      "grand_mean": 0.5033160704260671,
+      "grand_dev_pct": 4.593454319981797,
+      "cross_combo_cv": 0.050208597543428816,
+      "ci_pass": "2/6",
+      "depth_is_invariant": false,
+      "status": "FAIL"
+    },
+    "depth_phase_diagram": {
+      "fd": 0.2,
+      "phase_data": [
+        {
+          "target_depth": 1.0,
+          "actual_depth": 1.0,
+          "n_coupling": 1,
+          "mean": 0.9891409864878291,
+          "deviation": 0.5079291614282256,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 1.5,
+          "actual_depth": 1.8187307530779813,
+          "n_coupling": 2,
+          "mean": 0.6778231760511131,
+          "deviation": 0.19661135099150961,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 2.0,
+          "actual_depth": 1.8187307530779813,
+          "n_coupling": 2,
+          "mean": 0.658262424243327,
+          "deviation": 0.17705059918372357,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 2.5,
+          "actual_depth": 2.489050799113621,
+          "n_coupling": 3,
+          "mean": 0.5481181890493957,
+          "deviation": 0.06690636398979222,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 3.0,
+          "actual_depth": 3.0378624352076473,
+          "n_coupling": 4,
+          "mean": 0.4952244784832148,
+          "deviation": 0.014012653423611354,
+          "ln_phi_in_ci": "True"
+        },
+        {
+          "target_depth": 3.5,
+          "actual_depth": 3.4871913993248684,
+          "n_coupling": 5,
+          "mean": 0.4788685987997793,
+          "deviation": -0.0023432262598241937,
+          "ln_phi_in_ci": "True"
+        },
+        {
+          "target_depth": 4.0,
+          "actual_depth": 3.855070840496311,
+          "n_coupling": 6,
+          "mean": 0.4393986328436796,
+          "deviation": -0.04181319221592389,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 4.5,
+          "actual_depth": 4.402862016350119,
+          "n_coupling": 8,
+          "mean": 0.40051210806814386,
+          "deviation": -0.08069971699145961,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 5.0,
+          "actual_depth": 5.016195864165308,
+          "n_coupling": 12,
+          "mean": 0.41345679093253607,
+          "deviation": -0.0677550341270674,
+          "ln_phi_in_ci": "False"
+        }
+      ],
+      "crossing_depth": 3.422818253496131,
+      "n_crossings": 1,
+      "distance_from_3": 0.4228182534961311,
+      "med_consistent": true,
+      "status": "PASS"
+    },
+    "fine_crossover": {
+      "fd": 0.25,
+      "fine_data": [
+        {
+          "target_depth": 2.0,
+          "actual_depth": 1.778800783071405,
+          "n_coupling": 2,
+          "mean": 0.676241787877436,
+          "deviation": 0.19502996281783258,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 2.25,
+          "actual_depth": 2.3853314427840386,
+          "n_coupling": 3,
+          "mean": 0.5713035339363587,
+          "deviation": 0.09009170887675522,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 2.5,
+          "actual_depth": 2.3853314427840386,
+          "n_coupling": 3,
+          "mean": 0.5701936975099184,
+          "deviation": 0.08898187245031497,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 2.75,
+          "actual_depth": 2.857697995525053,
+          "n_coupling": 4,
+          "mean": 0.511345659647345,
+          "deviation": 0.030133834587741548,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 3.0,
+          "actual_depth": 2.857697995525053,
+          "n_coupling": 4,
+          "mean": 0.5145040481729712,
+          "deviation": 0.03329222311336777,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 3.25,
+          "actual_depth": 3.2255774366964953,
+          "n_coupling": 5,
+          "mean": 0.4675764274827021,
+          "deviation": -0.013635397576901354,
+          "ln_phi_in_ci": "True"
+        },
+        {
+          "target_depth": 3.5,
+          "actual_depth": 3.512082233556686,
+          "n_coupling": 6,
+          "mean": 0.4645317346422973,
+          "deviation": -0.01668009041730617,
+          "ln_phi_in_ci": "True"
+        },
+        {
+          "target_depth": 3.75,
+          "actual_depth": 3.7352123937051154,
+          "n_coupling": 7,
+          "mean": 0.4353797509846132,
+          "deviation": -0.04583207407499029,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "target_depth": 4.0,
+          "actual_depth": 4.044321620392173,
+          "n_coupling": 9,
+          "mean": 0.4428452686501077,
+          "deviation": -0.03836655640949577,
+          "ln_phi_in_ci": "False"
+        }
+      ],
+      "crossing_depth": 3.1186855387703543,
+      "distance_from_3": 0.11868553877035426,
+      "status": "PASS"
+    },
+    "med_attractor": {
+      "min_depth": 4.402862016350119,
+      "min_ratio": 0.40051210806814386,
+      "min_past_med": "True",
+      "has_rise": true,
+      "recovery_toward_lnphi": "True",
+      "attractor_behavior": "True",
+      "interpretation": "MED predicts depth-3 systems collapse back to depth 2. In the ratio vs depth diagram, this manifests as a minimum past d=3, after which the ratio rises back. The system \"wants\" to be at depth 3 (the MED boundary) \u2014 departing in either direction costs complexity.",
+      "status": "PASS"
+    },
+    "universality": {
+      "configs": [
+        "c=0.6 env=20",
+        "c=0.8 env=20 (default)",
+        "c=1.0 env=20",
+        "c=0.8 env=12",
+        "c=0.8 env=30"
+      ],
+      "crossing_depths": [
+        3.5178226555109333,
+        3.175535023254466,
+        3.0217299975158918,
+        3.359998539479319,
+        3.158925956570518
+      ],
+      "mean": 3.2468024344662254,
+      "std": 0.1730457971452646,
+      "cv": 0.053297298076503796,
+      "robust": true,
+      "status": "PASS"
+    }
+  },
+  "falsification": {
+    "test_id": "F10",
+    "hypothesis": "The effective coupling depth d_eff \u2248 3.0 where A/(A+\u03be) = ln(\u03c6) is the MED saturation depth \u2014 depth \u2264 2 in 2D M\u00f6bius base = 3 levels from singular origin. This is the same \"3\" as: three spatial dimensions, three quark sub-nodes, three fermion generations, and the double-pendulum chaos depth. The MED attractor pulls systems back from depth > 3, explaining the U-shaped phase diagram.",
+    "chain": [
+      "Step 1 (iso-depth collapse): FAIL (same ratio at d=3 via different fd/nc combos)",
+      "Step 2 (depth phase diagram): PASS (crossing at d_eff=3.42)",
+      "Step 3 (fine crossover): PASS (precise crossing at d_eff=3.119)",
+      "Step 4 (MED attractor): PASS (ratio recovers past d=3)",
+      "Step 5 (universality): PASS (d_cross robust across params)"
+    ],
+    "n_pass": "4/5",
+    "falsified": false,
+    "honest_assessment": "This experiment tests whether the Landauer critical coupling depth connects to MED, the dimensionality of space, and the onset of chaos. If d_cross \u2248 3.0 with low variance across parameter regimes, the connection is compelling. If d_cross is parameter-dependent or significantly different from 3.0, the MED connection fails and the depth is just a model artifact."
+  }
+}

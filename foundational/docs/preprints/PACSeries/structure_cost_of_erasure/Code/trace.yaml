@@ -118,6 +118,27 @@ experiments:
     key_result: "A/(A+ξ) → ln(φ) derived from Fibonacci recursion partition"
     paper_sections: [6, 15.2]
 
+  - local: experiments/exp_19_coupling_efficiency_sweep.py
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/scripts/exp_19_sec_local.py
+    repo: dawn-field-theory
+    description: "Coupling efficiency sweep from 0.5 to 1.0 — ln(φ) proximity across full range"
+    key_result: "ln(φ) within 95% CI at every coupling; closest at 0.90 (0.14%)"
+    paper_sections: [6.3, 15.2]
+
+  - local: experiments/exp_23_precision_tightening.py
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/scripts/exp_23_precision_tightening.py
+    repo: dawn-field-theory
+    description: "Precision tightening at N=5×10⁶ with Miller-Madow correction"
+    key_result: "A/(A+ξ) = 0.4820, +0.15% from ln(φ); gap closes with N"
+    paper_sections: [15.3]
+
+  - local: experiments/exp_25_full_stack_validation.py
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/scripts/exp_25_full_stack_validation.py
+    repo: dawn-field-theory
+    description: "Full 6-layer derivation chain validation in single experiment"
+    key_result: "All 6 layers PASS; thermal init required for ln(φ) emergence"
+    paper_sections: [15.3]
+
 data:
   - local: ../Data/results/exp_01_results.json
     source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/results/exp_01_results.json
@@ -179,6 +200,18 @@ data:
     source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/results/exp_16_ln_phi_derivation_20260209_111320.json
     description: "First-principles derivation of ln(φ) from PAC recursion"
 
+  - local: ../Data/results/exp_19_coupling_efficiency_sweep_20260213_163844.json
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/results/exp_19_sec_local_20260213_163844.json
+    description: "Coupling efficiency sweep — ln(φ) within 95% CI across 0.5-1.0 range"
+
+  - local: ../Data/results/exp_23_precision_tightening_20260214_093614.json
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/results/exp_23_precision_tightening_20260214_093614.json
+    description: "Precision tightening at N=5M — 0.15% from ln(φ)"
+
+  - local: ../Data/results/exp_25_full_stack_validation_20260214_102208.json
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/results/exp_25_full_stack_20260214_102208.json
+    description: "Full stack validation — 6 layers PASS, thermal init discovery"
+
 figures:
   - local: generate_figures.py
     description: "Generates all 6 publication figures from paper data"
@@ -197,9 +230,10 @@ notes: |
   Scripts exp_01 through exp_08 save JSON output directly. Scripts exp_09
   through exp_14 print results to stdout; their JSON files were created by
   capturing and structuring the stdout output during the Feb 2026 packaging
-  session. exp_15 and exp_16 were similarly captured.
+  session. exp_15 and exp_16 were similarly captured. exp_19, exp_23, exp_25
+  were added in the Feb 19, 2026 package update to cover §15.3 results.
   
-  All 15 result JSON files are included in Data/results/.
+  All 18 result JSON files are included in Data/results/.
   generate_figures.py reads from these JSON files to produce 6 publication
   figures — no hardcoded data.
   
