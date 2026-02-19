@@ -1,0 +1,186 @@
+{
+  "experiment": "exp_26_unified_correction_template",
+  "description": "Testing F_a/(m\u03c0F_b\u00b2) as a universal correction template",
+  "paper": "Paper 4/5",
+  "section": "\u00a7corrections",
+  "timestamp": "2026-02-18T23:04:56.671911+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "side_by_side": {
+      "alpha": {
+        "base": 0.007491321075756301,
+        "correction_value": 0.025897993698385337,
+        "correction_factor": 0.9741020063016147,
+        "predicted": 0.007297310889743783,
+        "measured": 0.0072973525693,
+        "error_ppm": 5.711599627555799,
+        "F_a": 10,
+        "F_b": 7,
+        "m": 4,
+        "sign": "minus"
+      },
+      "gravity": {
+        "depth": 183,
+        "correction_value": 1.158846929387863,
+        "correction_factor": 2.158846929387863,
+        "log10_corrected": 38.22947501384244,
+        "log10_target": 38.22869547911638,
+        "residual_log10": 0.0007795347260568519,
+        "F_a": 13,
+        "F_b": 6,
+        "m": 1,
+        "sign": "plus"
+      },
+      "shared_anchor": "F\u2087 (EM gauge depth)",
+      "a_minus_b": {
+        "alpha": 3,
+        "gravity": 7,
+        "note": "F\u2084 and F\u2087"
+      },
+      "status": "INFO"
+    },
+    "template_search": {
+      "corrections_found": {
+        "sin\u00b2\u03b8_W": {
+          "base": "3/13",
+          "base_val": 0.23076923076923078,
+          "sign": "+",
+          "a": 10,
+          "b": 10,
+          "m": 3,
+          "F_a": 55,
+          "F_b": 55,
+          "correction_val": 0.0019291508253563073,
+          "correction_factor": 1.0019291508253563,
+          "predicted": 0.23121441942123608,
+          "residual": 2.4135363566865753e-05,
+          "residual_ppm": 24.135363566865752,
+          "a_minus_b": 0
+        },
+        "\u03b1_s(M_Z)": {
+          "base": "F\u2083/F\u2087",
+          "base_val": 0.15384615384615385,
+          "sign": "\u2212",
+          "a": 10,
+          "b": 5,
+          "m": 3,
+          "F_a": 55,
+          "F_b": 5,
+          "correction_val": 0.23342724986811317,
+          "correction_factor": 0.7665727501318869,
+          "predicted": 0.11793426925105953,
+          "residual": 0.0005570402452581793,
+          "residual_ppm": 557.0402452581793,
+          "a_minus_b": 5
+        },
+        "\u03bc/e": {
+          "base": "F\u2088\u00b7F\u2087/\u03c6",
+          "base_val": 168.7232789287213,
+          "sign": "+",
+          "a": 12,
+          "b": 5,
+          "m": 8,
+          "F_a": 144,
+          "F_b": 5,
+          "correction_val": 0.22918311805232927,
+          "correction_factor": 1.2291831180523292,
+          "predicted": 207.39180608161848,
+          "residual": 0.0030155644404054305,
+          "residual_ppm": 3015.5644404054306,
+          "a_minus_b": 7
+        },
+        "p/e": {
+          "base": "F\u2081\u2086/\u03c6",
+          "base_val": 609.9995468961462,
+          "sign": "+",
+          "a": 13,
+          "b": 5,
+          "m": 6,
+          "F_a": 233,
+          "F_b": 5,
+          "correction_val": 0.49444135653882154,
+          "correction_factor": 1.4944413565388215,
+          "predicted": 911.6085503515432,
+          "residual": 0.5035224665448842,
+          "residual_ppm": 503522.4665448842,
+          "a_minus_b": 8
+        },
+        "\u03a9_c": {
+          "base": "F\u2083\u00b7\u039e/F\u2086",
+          "base_val": 0.2646068724902841,
+          "sign": "+",
+          "a": 10,
+          "b": 10,
+          "m": 4,
+          "F_a": 55,
+          "F_b": 55,
+          "correction_val": 0.0014468631190172302,
+          "correction_factor": 1.0014468631190172,
+          "predicted": 0.26498972241512875,
+          "residual": 3.878333913685098e-05,
+          "residual_ppm": 38.78333913685098,
+          "a_minus_b": 0
+        }
+      },
+      "n_sub_100ppm": 2,
+      "n_sub_1000ppm": 3,
+      "status": "FAIL"
+    },
+    "monte_carlo": {
+      "n_trials": 5000,
+      "alpha_threshold_ppm": 10,
+      "gravity_threshold_log10": 0.001,
+      "frac_alpha": 0.0024,
+      "frac_gravity": 0.0,
+      "frac_both": 0.0,
+      "frac_independent": 0.0,
+      "status": "PASS"
+    },
+    "index_patterns": {
+      "entries": [
+        {
+          "name": "\u03b1_EM",
+          "a": 10,
+          "b": 7,
+          "m": 4,
+          "sign": "\u2212"
+        },
+        {
+          "name": "Gravity",
+          "a": 13,
+          "b": 6,
+          "m": 1,
+          "sign": "+"
+        },
+        {
+          "name": "sin\u00b2\u03b8_W",
+          "a": 10,
+          "b": 10,
+          "m": 3,
+          "sign": "+"
+        },
+        {
+          "name": "\u03a9_c",
+          "a": 10,
+          "b": 10,
+          "m": 4,
+          "sign": "+"
+        }
+      ],
+      "n_fib_diff": 3,
+      "fib_diff_fraction": 0.75,
+      "status": "PASS"
+    }
+  },
+  "falsification": {
+    "test_id": "F24",
+    "hypothesis": "F_a/(m\u03c0F_b\u00b2) is a universal Fibonacci correction template appearing across independent physical constants.",
+    "chain": [
+      "Test 2 (template search): FAIL \u2014 2/5 constants at <100 ppm",
+      "Test 3 (Monte Carlo): PASS \u2014 0.0000 random match rate",
+      "Test 4 (index patterns): PASS \u2014 75% have Fibonacci a\u2212b"
+    ],
+    "n_pass": "2/3",
+    "falsified": false
+  }
+}

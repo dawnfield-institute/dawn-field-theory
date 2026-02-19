@@ -21,6 +21,14 @@ schema_version: "dawn_v1.1"
 license: "Copyleft (Dawn Field Institute)"
 ---
 
+> **February 2026 Update.** This paper's GAIA POC results (POC-001 through POC-021) are now part of the broader PACSeries v2.0 validation evidence. PACSeries Paper 6 (*Computational Validation of PAC Conservation*) integrates GAIA architecture detail alongside Token PAC Tree analysis of production LLMs and TinyCIMM-Boltzmann conservation enforcement.
+>
+> Key clarifications:
+> - **Perplexity correction**: The 5.91 metric from GAIA is cosine similarity, not true LM perplexity. It is not comparable to GPT-2's 29.41 WikiText-2 perplexity. Paper 6 §8.3 documents this honestly.
+> - **PAC tree memory**: The 12.5× compression and 100% retrieval at depth 1000 (POC-007–014) is validated and integrated into Paper 6.
+> - **Multi-oracle distillation**: The 74.9% oracle agreement without gradient updates is now understood within PAC conservation: information redistribution preserves ratios (Paper 1).
+> - **Scaling predictions**: Milestone3 exp_31 predicts PAC ratio enrichment at 7B (1.71×) and 70B (1.63×) model scales, extending the validation envelope beyond POC scale.
+
 # Field-Native Intelligence: A Systematic Exploration of Learning Without Backpropagation Through Physics-Based Dynamics
 
 ## Abstract

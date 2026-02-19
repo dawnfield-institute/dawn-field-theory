@@ -1,0 +1,189 @@
+{
+  "experiment": "exp_24_pac_lazy_signal_anatomy",
+  "description": "Decomposing and strengthening PAC-Lazy discrimination (F19)",
+  "paper": "Paper 4",
+  "section": "\u00a7pac_lazy_mesh",
+  "timestamp": "2026-02-18T22:29:11.386283+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "bootstrap_ci": {
+      "n_bootstrap": 10000,
+      "baseline_kl_diff": -0.016595395529484802,
+      "baseline_p": 0.035300611964886756,
+      "boot_mean_diff": -0.016511239845451685,
+      "boot_ci_95": [
+        -0.04394696895779607,
+        0.012700589269550469
+      ],
+      "ci_includes_zero": true,
+      "median_p": 0.035469528655576024,
+      "frac_p_lt_005": 0.5648,
+      "frac_p_lt_001": 0.3033,
+      "status": "FAIL"
+    },
+    "leave_one_out": {
+      "formula_effects": {
+        "sin2_thetaW": {
+          "kl_diff": -0.014242492729738904,
+          "p_value": 0.02756289538146822,
+          "delta_effect": 0.0023529027997458984,
+          "impact": "weakens"
+        },
+        "Koide": {
+          "kl_diff": -0.014635897644578677,
+          "p_value": 0.03426659228994614,
+          "delta_effect": 0.001959497884906125,
+          "impact": "weakens"
+        },
+        "She_Lev": {
+          "kl_diff": -0.013416047100101552,
+          "p_value": 0.034780447091644844,
+          "delta_effect": 0.0031793484293832497,
+          "impact": "weakens"
+        },
+        "nu_WF": {
+          "kl_diff": -0.013656949063757112,
+          "p_value": 0.03147135725250539,
+          "delta_effect": 0.00293844646572769,
+          "impact": "weakens"
+        },
+        "alpha_s": {
+          "kl_diff": -0.013003765705469433,
+          "p_value": 0.03762888693736636,
+          "delta_effect": 0.003591629824015369,
+          "impact": "weakens"
+        },
+        "Cabibbo": {
+          "kl_diff": -0.014242492729738904,
+          "p_value": 0.02756289538146822,
+          "delta_effect": 0.0023529027997458984,
+          "impact": "weakens"
+        },
+        "mu_e": {
+          "kl_diff": -0.013566771290809104,
+          "p_value": 0.035827140580094716,
+          "delta_effect": 0.003028624238675698,
+          "impact": "weakens"
+        },
+        "alpha_em": {
+          "kl_diff": -0.022086538783324172,
+          "p_value": 0.036360086685102835,
+          "delta_effect": -0.00549114325383937,
+          "impact": "strengthens"
+        },
+        "p_e": {
+          "kl_diff": -0.06543710956017135,
+          "p_value": 0.10527387758200463,
+          "delta_effect": -0.048841714030686545,
+          "impact": "strengthens"
+        },
+        "tau_e": {
+          "kl_diff": -0.023249172314363076,
+          "p_value": 0.050746840148174176,
+          "delta_effect": -0.006653776784878274,
+          "impact": "strengthens"
+        }
+      },
+      "max_effect_formula": "p_e",
+      "concentration": 0.6075596744084084,
+      "signal_distributed": false,
+      "status": "FAIL"
+    },
+    "effective_dimensionality": {
+      "n_profiles": 110,
+      "n_indices": 12,
+      "n_components_80pct": 5,
+      "n_components_90pct": 7,
+      "n_components_95pct": 9,
+      "variance_explained": [
+        0.5104512227998882,
+        0.14137635681431787,
+        0.07385158281747217,
+        0.04871730517144576,
+        0.04779017115199893,
+        0.042388210803005075,
+        0.037914236343677035,
+        0.03494624699654369,
+        0.03191139593373191,
+        0.030653271167919337
+      ],
+      "exp16_null_dof": 6,
+      "reduces_below_null": false,
+      "status": "FAIL"
+    },
+    "subpopulation": {
+      "domains": {
+        "cosmology": {
+          "n_matched": 15,
+          "n_unmatched": 38,
+          "mean_kl_matched": 0.21058720179641588,
+          "mean_kl_unmatched": 0.24012813362071997,
+          "delta": -0.02954093182430409,
+          "p_value": 0.2147529564096612,
+          "cohens_d": -0.30125161002389284
+        },
+        "mass_ratios": {
+          "n_matched": 20,
+          "n_unmatched": 68,
+          "mean_kl_matched": 0.24547467521536817,
+          "mean_kl_unmatched": 0.2527757678257171,
+          "delta": -0.007301092610348919,
+          "p_value": 0.16089079233909798,
+          "cohens_d": -0.06944656019592416
+        },
+        "neutrino": {
+          "n_matched": 14,
+          "n_unmatched": 39,
+          "mean_kl_matched": 0.2659311381004754,
+          "mean_kl_unmatched": 0.2707340223237717,
+          "delta": -0.004802884223296278,
+          "p_value": 0.4478205501514934,
+          "cohens_d": -0.05052484109245962
+        },
+        "quark_mixing": {
+          "n_matched": 13,
+          "n_unmatched": 23,
+          "mean_kl_matched": 0.25967066772534914,
+          "mean_kl_unmatched": 0.2465713852370215,
+          "delta": 0.013099282488327646,
+          "p_value": 0.6353678593350914,
+          "cohens_d": 0.17017371640445733
+        },
+        "running_couplings": {
+          "n_matched": 7,
+          "n_unmatched": 27,
+          "mean_kl_matched": 0.20073906577478526,
+          "mean_kl_unmatched": 0.24257210894356926,
+          "delta": -0.041833043168784,
+          "p_value": 0.0707534569686289,
+          "cohens_d": -0.3951614914217699
+        },
+        "turbulence": {
+          "n_matched": 5,
+          "n_unmatched": 25,
+          "mean_kl_matched": 0.24685340092034233,
+          "mean_kl_unmatched": 0.2507329580088185,
+          "delta": -0.0038795570884761765,
+          "p_value": 0.44464640623167107,
+          "cohens_d": -0.041358695648431636
+        }
+      },
+      "best_domain": "running_couplings",
+      "best_domain_d": -0.3951614914217699,
+      "has_medium_effect": "True",
+      "status": "PASS"
+    }
+  },
+  "falsification": {
+    "test_id": "F22",
+    "hypothesis": "PAC-Lazy discrimination (exp_21, F19) is robust, distributed across formulas, and driven by reduced effective dimensionality.",
+    "chain": [
+      "Test 1 (bootstrap): FAIL \u2014 95% CI for KL difference",
+      "Test 2 (LOO): FAIL \u2014 signal concentration 60.8%",
+      "Test 3 (PCA): FAIL \u2014 effective DOF 9",
+      "Test 4 (subpop): PASS \u2014 best domain d=-0.395"
+    ],
+    "n_pass": "1/4",
+    "falsified": false
+  }
+}

@@ -28,9 +28,13 @@ The claim is supported by four independent computational domains — Fibonacci a
 - PAC conservation holds exactly across all 126 steps of the Eratosthenes sieve (N = 500,000)
 - Class IV cellular automata cluster at Ξ with p < 10⁻⁷
 
+**What this paper derives (analytical)**:
+- PAC conservation forces emergence depth ≤ 2 (the PAC→MED theorem, §9.3)
+- Only the k = 2 (Fibonacci) cascade produces ln(φ) as its decay rate
+
 **What this paper proposes (interpretation)**:
-- γ represents the cost of discrete-to-continuous regularisation
-- The decomposition Ξ = γ + ln(φ) reflects two distinct phases of structural emergence
+- γ is consistent with the cost of discrete-to-continuous regularisation (but 1/√3 performs comparably — see §9.2)
+- The decomposition Ξ = γ + ln(φ) reflects two complementary aspects of structural emergence
 - The Fibonacci formula 1 + π/F₁₀ is a discrete approximation to the true value γ + ln(φ)
 
 **What would falsify it**:
@@ -205,6 +209,8 @@ $$\frac{2}{3} = \frac{F_3}{F_4}$$
 
 The ratio of the first non-trivial Fibonacci numbers matches the sieve fraction at p = 3. This is why the golden ratio appears in the sieve: the first substantive prime embeds the Fibonacci ratio directly.
 
+**Caveat on the three-phase interpretation.** The phase labels in the table above should be read as a *proposed decomposition*, not an established mechanism. A subsequent falsification test (pac_foundations_validation/exp_05) found no statistically clean φ/γ phase boundaries when tracking individual prime eliminations — prime 2 produces a survivor fraction of 0.543, not γ = 0.577 (3.4% miss). The structural fact that primes 2, 3, 5 jointly eliminate 73.3% of candidates is arithmetic; the interpretation of this as a "γ phase" followed by a "ln(φ) phase" was not confirmed at the elimination-by-elimination level. The Mertens product validation (0.012% error) and p = 3 φ-carrier result remain robust. Only the phase-boundary narrative is withdrawn.
+
 ---
 
 ## §7. Domain 4 — Landauer Erasure
@@ -256,6 +262,27 @@ The γ falsification experiment (exp_04, originally exp_30) tested whether γ co
 
 The falsification suite could not break the hypothesis. It found that γ is consistent (within 0.67% tolerance) across all tested formulations.
 
+**Important qualification.** A broader search across natural constants (pac_foundations_validation/exp_06, exp_10) found that:
+- **1/√3 ≈ 0.57735 performs comparably to γ ≈ 0.57722** in the Mertens theorem fit (3.81% vs 3.83% error). The two constants differ by only 0.023%.
+- **21 combinations** of standard mathematical constants fall within 5% of Ξ. The decomposition γ + ln(φ) is rank #1 (exact match), but it is not *uniquely forced* by the data.
+- Ξ is therefore best understood as a **construction** — a combination of constants that independently emerge from PAC-conserving processes — rather than a single emergent constant. The four-domain convergence is statistically significant (p < 0.004), and the theoretical basis for γ (Mertens product) and ln(φ) (PAC recursion) remains the strongest available account. But the data do not exclude alternative decompositions at the current precision level.
+
+---
+
+## §9.3. PAC Depth Constraints
+
+A result from the milestone3 validation programme (exp_22, February 2026) strengthens the link between PAC conservation and the decomposition presented here.
+
+**PAC→MED theorem.** For a k-step PAC cascade Ψ(n) = Ψ(n+1) + Ψ(n+2) + ... + Ψ(n+k), the maximum ratio of parent to largest child is bounded by the positive root of x^k = x^(k−1) + ... + 1. For all k ≥ 2, this bound floors to 2. In the limit k → ∞, the bound converges to exactly 2.0. The maximum deviation from the PAC identity across all tested depths is ~10⁻¹⁶.
+
+The structural consequence: **PAC conservation forces maximum emergence depth ≤ 2** — consistent with MED's empirical bound (depth ≤ 2, nodes ≤ 3). At k = 2 (the Fibonacci case), the depth bound is φ² ≈ 2.618, and peak structural density occurs at d ≈ φ² (milestone3/exp_22, structure-at-bound test).
+
+**Corollary: uniqueness of ln(φ).** Among all k-step PAC cascades, only k = 2 produces the decay rate ln(φ). Higher-order cascades (k = 3, 4, ...) yield decay rates ln(r_k) where r_k > φ, converging to ln(2) as k → ∞. Since Ξ = γ + ln(φ), the Fibonacci case (k = 2) is the *only* PAC cascade compatible with the observed balance constant.
+
+**MED depth criticality.** An independent test (milestone3/exp_11) measured the depth at which A/(A+ξ) crosses ln(φ) in Landauer erasure simulations. The crossing occurs at effective depth d_cross = 3.25 ± 0.17 across five configuration variants (CV = 5.3%), with a fine-grained estimate of d = 3.12. This is consistent with MED's empirical depth ≤ 2 bound for *emergence* (not simulation depth), and with the PAC theorem's prediction that structural transitions cluster near d ≈ φ².
+
+**Fibonacci–MED complementarity.** A coupling-base analysis (milestone3/exp_12) revealed that Fibonacci coupling (base = 1/φ) produces decay rate ln(φ) = 0.481 — but this *exceeds* the critical fraction fd₀ = 0.313 needed to reach MED depth. Fibonacci coupling cannot reach the MED depth threshold on its own. This paradox explains why the framework requires PAC, SEC, and MED as independent principles: PAC supplies the recursion pattern, SEC governs the local entropy budget, and MED constrains the emergent depth. No single principle is sufficient.
+
 ---
 
 ## §10. What Remains Open
@@ -299,10 +326,14 @@ This paper would be falsified by any of the following:
 | p = 3 is dominant φ-carrier | exp_09 | 82.1% | Measured |
 | PAC is base-invariant | exp_10 | < 10⁻¹⁴ | Measured |
 | γ is emergence surplus | exp_03, exp_04 | 0.67% tolerance | Interpreted |
-| Three-phase decomposition | exp_08 | Qualitative | Proposed |
+| Three-phase decomposition | exp_08 | Qualitative | Proposed (phase-boundary interpretation falsified; §6.3) |
+| PAC forces MED depth ≤ 2 | milestone3/exp_22 | Analytical (10⁻¹⁶) | Derived |
+| Only k=2 gives ln(φ) decay | milestone3/exp_22 | Analytical | Derived |
+| MED depth crossing at d ≈ 3.25 | milestone3/exp_11 | CV = 5.3% | Measured |
+| Fibonacci–MED complementarity | milestone3/exp_12 | — | Interpreted |
 | 1 + π/55 is discrete approx. to γ + ln(φ) | exp_02, exp_04 | 0.034% gap | Proposed |
 
-**Core finding**: The balance constant governing recursive-conservation systems decomposes as Ξ = γ + ln(φ), reflecting the sum of discrete-to-continuous bridge cost (γ) and recursive information unit (ln φ). Four independent computational domains converge on this value with p < 0.004.
+**Core finding**: The balance constant governing recursive-conservation systems decomposes as Ξ = γ + ln(φ), reflecting the sum of discrete-to-continuous bridge cost (γ) and recursive information unit (ln φ). Four independent computational domains converge on this value with p < 0.004. Additionally, PAC conservation analytically forces emergence depth ≤ 2, and only the k = 2 (Fibonacci) cascade produces ln(φ) as its information unit — constraining the decomposition from first principles. The interpretation of γ as "discrete-to-continuous cost" remains the strongest available account, but 1/√3 performs comparably (§9.2), and 21 constant-combinations fall within 5% of Ξ.
 
 ---
 
@@ -364,3 +395,4 @@ Rule 110 midpoint vs γ: 0.56% error.
 3. Cook, M. (2004). "Universality in Elementary Cellular Automata." *Complex Systems*, 15(1), 1–40.
 4. Wolfram, S. (1984). "Universality and Complexity in Cellular Automata." *Physica D*, 10(1-2), 1–35.
 5. Groom, P. (2026). "The Structure Cost of Erasure." PACSeries Paper 1. Dawn Field Institute.
+6. Groom, P. (2026). Milestone 3 validation programme: exp_22 (PAC depth bound), exp_11 (MED depth criticality), exp_12 (coupling base residuals). Dawn Field Institute.

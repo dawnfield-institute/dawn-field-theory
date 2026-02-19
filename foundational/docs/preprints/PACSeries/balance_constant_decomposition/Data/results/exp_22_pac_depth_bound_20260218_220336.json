@@ -1,0 +1,515 @@
+{
+  "experiment": "exp_22_pac_depth_bound",
+  "description": "PAC depth bound: does PAC conservation force MED depth \u2264 2?",
+  "paper": "Paper 5 (classical_physics_information_geometry)",
+  "section": "\u00a711 (What this paper does not do \u2192 what it now does)",
+  "timestamp": "2026-02-18T22:01:30.604429+00:00",
+  "milestone": "milestone3",
+  "tests": {
+    "pac_depth_theorem": {
+      "k_data": [
+        {
+          "k": 2,
+          "root": 1.618033988749895,
+          "decay_rate": 0.48121182505960347,
+          "depth_bound": 2.618033988749895,
+          "floor_bound": 2,
+          "pac_identity_holds": true,
+          "max_deviation": 1.4533008067806857e-16
+        },
+        {
+          "k": 3,
+          "root": 1.839286755214161,
+          "decay_rate": 0.6093778634360061,
+          "depth_bound": 2.191487883953119,
+          "floor_bound": 2,
+          "pac_identity_holds": true,
+          "max_deviation": 2.042018504526856e-16
+        },
+        {
+          "k": 4,
+          "root": 1.927561975482925,
+          "decay_rate": 0.6562559792369757,
+          "depth_bound": 2.078095077667841,
+          "floor_bound": 2,
+          "pac_identity_holds": true,
+          "max_deviation": 4.440892098500626e-16
+        },
+        {
+          "k": 5,
+          "root": 1.965948236645486,
+          "decay_rate": 0.6759746921034225,
+          "depth_bound": 2.035252161619724,
+          "floor_bound": 2,
+          "pac_identity_holds": true,
+          "max_deviation": 6.661338147750939e-16
+        },
+        {
+          "k": 6,
+          "root": 1.9835828434243288,
+          "decay_rate": 0.6849047263840683,
+          "depth_bound": 2.0166911782626413,
+          "floor_bound": 2,
+          "pac_identity_holds": true,
+          "max_deviation": 2.3632752197106353e-15
+        },
+        {
+          "k": 7,
+          "root": 1.9919641966050352,
+          "decay_rate": 0.6891211854090298,
+          "depth_bound": 2.0081009006398287,
+          "floor_bound": 2,
+          "pac_identity_holds": true,
+          "max_deviation": 2.2115245152998624e-16
+        },
+        {
+          "k": 8,
+          "root": 1.9960311797354162,
+          "decay_rate": 0.691160798877192,
+          "depth_bound": 2.0039846345629844,
+          "floor_bound": 2,
+          "pac_identity_holds": true,
+          "max_deviation": 1.7728318188895784e-15
+        }
+      ],
+      "k2_bound": 2.618033988749895,
+      "k2_floor": 2,
+      "k2_matches_phi_squared": true,
+      "all_floor_leq_2": true,
+      "bounds_decrease": true,
+      "limit_k_inf": 2.0,
+      "status": "PASS"
+    },
+    "integer_depth_transition": {
+      "depth_data": [
+        {
+          "label": "d\u22481.0",
+          "fd": 0.5,
+          "nc": 1,
+          "eff_depth": 1.0,
+          "mean_ratio": 1.0,
+          "mean_ho_fraction": 0.0,
+          "mean_total_correlation": 0.0,
+          "mean_eff_dimensionality": 1.0,
+          "struct_density": 0.0
+        },
+        {
+          "label": "d\u22481.5",
+          "fd": 0.4,
+          "nc": 2,
+          "eff_depth": 1.6703200460356395,
+          "mean_ratio": 0.6755716188733947,
+          "mean_ho_fraction": 3.9574270178520367e-16,
+          "mean_total_correlation": 0.05898440996972257,
+          "mean_eff_dimensionality": 1.9512830474126548,
+          "struct_density": 0.03531323838788678
+        },
+        {
+          "label": "d\u22482.0",
+          "fd": 0.3,
+          "nc": 3,
+          "eff_depth": 2.289629856775744,
+          "mean_ratio": 0.5765965250855437,
+          "mean_ho_fraction": 0.0,
+          "mean_total_correlation": 0.10804425785023654,
+          "mean_eff_dimensionality": 2.910937440150187,
+          "struct_density": 0.04718852592286879
+        },
+        {
+          "label": "d\u22482.5",
+          "fd": 0.25,
+          "nc": 4,
+          "eff_depth": 2.857697995525053,
+          "mean_ratio": 0.5194137006205669,
+          "mean_ho_fraction": 0.0,
+          "mean_total_correlation": 0.15636632565283015,
+          "mean_eff_dimensionality": 3.832482249003017,
+          "struct_density": 0.05471758243792326
+        },
+        {
+          "label": "d\u2248\u03c6\u00b2",
+          "fd": 0.48121182505960347,
+          "nc": 11,
+          "eff_depth": 2.6048783712534695,
+          "mean_ratio": 0.47462594972931016,
+          "mean_ho_fraction": 0.043646769007365485,
+          "mean_total_correlation": 0.19148645727606592,
+          "mean_eff_dimensionality": 8.957481239119716,
+          "struct_density": 0.07351070951689867
+        },
+        {
+          "label": "d\u22483.0",
+          "fd": 0.2,
+          "nc": 4,
+          "eff_depth": 3.0378624352076473,
+          "mean_ratio": 0.5136233982721613,
+          "mean_ho_fraction": 0.0,
+          "mean_total_correlation": 0.17045247817006481,
+          "mean_eff_dimensionality": 3.8624044271882294,
+          "struct_density": 0.056109347215524547
+        },
+        {
+          "label": "d\u22483.5",
+          "fd": 0.15,
+          "nc": 5,
+          "eff_depth": 3.7879659848225757,
+          "mean_ratio": 0.46744856708657095,
+          "mean_ho_fraction": 0.0,
+          "mean_total_correlation": 0.23706762427679287,
+          "mean_eff_dimensionality": 4.816990635811917,
+          "struct_density": 0.06258441211633448
+        },
+        {
+          "label": "d\u22484.0",
+          "fd": 0.15,
+          "nc": 6,
+          "eff_depth": 4.260332537563589,
+          "mean_ratio": 0.44132761732229364,
+          "mean_ho_fraction": 0.0,
+          "mean_total_correlation": 0.2731465396927256,
+          "mean_eff_dimensionality": 5.735156212483667,
+          "struct_density": 0.06411390127047065
+        }
+      ],
+      "peak_struct_density_depth": 2.6048783712534695,
+      "peak_struct_density_label": "d\u2248\u03c6\u00b2",
+      "peak_ho_fraction_depth": 2.6048783712534695,
+      "near_d2": true,
+      "near_phi_squared": true,
+      "status": "PASS"
+    },
+    "generalised_pac_landauer": {
+      "data": [
+        {
+          "k": 2,
+          "root": 1.618033988749895,
+          "decay_rate": 0.48121182505960347,
+          "depth_bound": 2.618033988749895,
+          "nc_used": 5,
+          "actual_depth": 2.3819660112501047,
+          "mean_ratio": 0.513168717386979,
+          "dev_pct": 6.640919998883509,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "k": 3,
+          "root": 1.839286755214161,
+          "decay_rate": 0.6093778634360061,
+          "depth_bound": 2.191487883953119,
+          "nc_used": 4,
+          "actual_depth": 2.0000000000000004,
+          "mean_ratio": 0.5404848951015543,
+          "dev_pct": 12.317459163562571,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "k": 4,
+          "root": 1.927561975482925,
+          "decay_rate": 0.6562559792369757,
+          "depth_bound": 2.078095077667841,
+          "nc_used": 4,
+          "actual_depth": 1.9275619754829256,
+          "mean_ratio": 0.557678766575047,
+          "dev_pct": 15.890495107008695,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "k": 5,
+          "root": 1.965948236645486,
+          "decay_rate": 0.6759746921034225,
+          "depth_bound": 2.035252161619724,
+          "nc_used": 4,
+          "actual_depth": 1.8990042325240073,
+          "mean_ratio": 0.559612151114521,
+          "dev_pct": 16.29226921952859,
+          "ln_phi_in_ci": "False"
+        },
+        {
+          "k": 6,
+          "root": 1.9835828434243288,
+          "decay_rate": 0.6849047263840683,
+          "depth_bound": 2.0166911782626413,
+          "nc_used": 4,
+          "actual_depth": 1.8864230943186486,
+          "mean_ratio": 0.5403052209707166,
+          "dev_pct": 12.280121317424776,
+          "ln_phi_in_ci": "False"
+        }
+      ],
+      "all_within_10pct": false,
+      "mean_dev_pct": 12.684252961281626,
+      "ci_count": 0,
+      "status": "FAIL"
+    },
+    "structure_at_pac_bound": {
+      "fine_struct": [
+        {
+          "target_depth": 1.5,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.6814264036747586,
+          "mean_tc": 0.0570294924833953,
+          "mean_ho_fraction": 1.4868846111300187e-16,
+          "struct_density": 0.030649351325383663
+        },
+        {
+          "target_depth": 1.6,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.6819449473606838,
+          "mean_tc": 0.06545347494048721,
+          "mean_ho_fraction": 1.4868846111300187e-16,
+          "struct_density": 0.03517665091447703
+        },
+        {
+          "target_depth": 1.7000000000000002,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.686833152442133,
+          "mean_tc": 0.07300587595685389,
+          "mean_ho_fraction": 1.4868846111300187e-16,
+          "struct_density": 0.03923553662467695
+        },
+        {
+          "target_depth": 1.8000000000000003,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.6730361638425267,
+          "mean_tc": 0.07353163093429184,
+          "mean_ho_fraction": 7.388710762574985e-16,
+          "struct_density": 0.039518093040890136
+        },
+        {
+          "target_depth": 1.9000000000000004,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.6761516565466775,
+          "mean_tc": 0.06750178111356041,
+          "mean_ho_fraction": 1.0185065790005e-15,
+          "struct_density": 0.036277471784288404
+        },
+        {
+          "target_depth": 2.0000000000000004,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.6661955216884418,
+          "mean_tc": 0.07148175876679105,
+          "mean_ho_fraction": 1.4039543406155163e-15,
+          "struct_density": 0.03841643055893573
+        },
+        {
+          "target_depth": 2.1000000000000005,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.6753763748959465,
+          "mean_tc": 0.08285478425230983,
+          "mean_ho_fraction": 8.498739094650625e-16,
+          "struct_density": 0.04452863388670861
+        },
+        {
+          "target_depth": 2.2000000000000006,
+          "actual_depth": 1.8607079764250578,
+          "nc": 2,
+          "mean_ratio": 0.6695130137628286,
+          "mean_tc": 0.09855079794895925,
+          "mean_ho_fraction": 8.498739094650625e-16,
+          "struct_density": 0.05296414010021228
+        },
+        {
+          "target_depth": 2.3000000000000007,
+          "actual_depth": 2.6015261971067756,
+          "nc": 3,
+          "mean_ratio": 0.5523839191867778,
+          "mean_tc": 0.16789440954581175,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.06453688981972638
+        },
+        {
+          "target_depth": 2.400000000000001,
+          "actual_depth": 2.6015261971067756,
+          "nc": 3,
+          "mean_ratio": 0.5465422159759816,
+          "mean_tc": 0.16580989770416393,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.06373562483766852
+        },
+        {
+          "target_depth": 2.500000000000001,
+          "actual_depth": 2.6015261971067756,
+          "nc": 3,
+          "mean_ratio": 0.562228434252824,
+          "mean_tc": 0.14715693079213932,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.05656561558203655
+        },
+        {
+          "target_depth": 2.600000000000001,
+          "actual_depth": 2.6015261971067756,
+          "nc": 3,
+          "mean_ratio": 0.5463676285135635,
+          "mean_tc": 0.16049111450219655,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.06169113910161
+        },
+        {
+          "target_depth": 2.700000000000001,
+          "actual_depth": 2.6015261971067756,
+          "nc": 3,
+          "mean_ratio": 0.5452900748130773,
+          "mean_tc": 0.1569959472563696,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.06034763264385684
+        },
+        {
+          "target_depth": 2.800000000000001,
+          "actual_depth": 2.6015261971067756,
+          "nc": 3,
+          "mean_ratio": 0.5456900063978491,
+          "mean_tc": 0.15781220736103266,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.06066139466000369
+        },
+        {
+          "target_depth": 2.9000000000000012,
+          "actual_depth": 2.6015261971067756,
+          "nc": 3,
+          "mean_ratio": 0.5614007066547826,
+          "mean_tc": 0.1298337055983294,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.04990674541072115
+        },
+        {
+          "target_depth": 3.0000000000000013,
+          "actual_depth": 3.2391543487285483,
+          "nc": 4,
+          "mean_ratio": 0.5166496270959311,
+          "mean_tc": 0.16574946856030692,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.05117059908718702
+        },
+        {
+          "target_depth": 3.1000000000000014,
+          "actual_depth": 3.2391543487285483,
+          "nc": 4,
+          "mean_ratio": 0.49978522560520977,
+          "mean_tc": 0.18846677980165427,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.05818394541020632
+        },
+        {
+          "target_depth": 3.2000000000000015,
+          "actual_depth": 3.2391543487285483,
+          "nc": 4,
+          "mean_ratio": 0.5066573541964918,
+          "mean_tc": 0.18000317232357255,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.05557103890224572
+        },
+        {
+          "target_depth": 3.3000000000000016,
+          "actual_depth": 3.2391543487285483,
+          "nc": 4,
+          "mean_ratio": 0.5040110768366135,
+          "mean_tc": 0.19030702109122316,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.058752069399200926
+        },
+        {
+          "target_depth": 3.4000000000000017,
+          "actual_depth": 3.2391543487285483,
+          "nc": 4,
+          "mean_ratio": 0.5122562713188544,
+          "mean_tc": 0.17650409654023239,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.054490795293381064
+        },
+        {
+          "target_depth": 3.5000000000000018,
+          "actual_depth": 3.2391543487285483,
+          "nc": 4,
+          "mean_ratio": 0.5077921998940871,
+          "mean_tc": 0.18003853664037345,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.05558195666441249
+        },
+        {
+          "target_depth": 3.600000000000002,
+          "actual_depth": 3.7879659848225757,
+          "nc": 5,
+          "mean_ratio": 0.4627730629330122,
+          "mean_tc": 0.22140255492653083,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.0584489290066582
+        },
+        {
+          "target_depth": 3.700000000000002,
+          "actual_depth": 3.7879659848225757,
+          "nc": 5,
+          "mean_ratio": 0.4658192355203306,
+          "mean_tc": 0.22044130094550382,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.05819516379734045
+        },
+        {
+          "target_depth": 3.800000000000002,
+          "actual_depth": 3.7879659848225757,
+          "nc": 5,
+          "mean_ratio": 0.47991870190231817,
+          "mean_tc": 0.1863666992077928,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.04919967601465197
+        },
+        {
+          "target_depth": 3.900000000000002,
+          "actual_depth": 3.7879659848225757,
+          "nc": 5,
+          "mean_ratio": 0.46683568150036925,
+          "mean_tc": 0.22920759591974008,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.060509412396551894
+        },
+        {
+          "target_depth": 4.000000000000002,
+          "actual_depth": 3.7879659848225757,
+          "nc": 5,
+          "mean_ratio": 0.45179794828220593,
+          "mean_tc": 0.2646093498448806,
+          "mean_ho_fraction": 0.0,
+          "struct_density": 0.06985526029143438
+        }
+      ],
+      "marginal_gains": [
+        {
+          "depth_mid": 2.2311170867659165,
+          "marginal_gain": 0.09360408486314083
+        },
+        {
+          "depth_mid": 2.920340272917662,
+          "marginal_gain": 0.05632712870444586
+        },
+        {
+          "depth_mid": 3.5135601667755623,
+          "marginal_gain": 0.07537015537890403
+        }
+      ],
+      "peak_marginal_depth": 2.2311170867659165,
+      "peak_marginal_value": 0.09360408486314083,
+      "near_phi_squared": true,
+      "near_d2": true,
+      "status": "PASS"
+    }
+  },
+  "falsification": {
+    "test_id": "F20",
+    "hypothesis": "PAC conservation forces max effective recursion depth = \u03c6\u00b2 \u2248 2.618, which floors to integer 2 = MED depth bound. Generalised k-step PAC recursions all floor to \u2264 2, converging to exactly 2.0 as k \u2192 \u221e. This means MED depth \u2264 2 is a CONSEQUENCE of PAC, not independent.",
+    "chain": [
+      "Test 1 (PAC depth theorem): PASS \u2014 analytical derivation",
+      "Test 2 (integer depth transition): PASS \u2014 structural change at d=2",
+      "Test 3 (generalised PAC Landauer): FAIL \u2014 ratio at k-step bounds",
+      "Test 4 (structure at PAC bound): PASS \u2014 peak structure at \u03c6\u00b2"
+    ],
+    "n_pass": "3/4",
+    "falsified": false,
+    "honest_assessment": "The analytical argument (Test 1) is clean: ALL k-step PAC recursions have depth bounds that floor to \u2264 2. The k\u2192\u221e limit is exactly 2.0. The empirical tests check whether this mathematical fact manifests in the Landauer model as a structural transition. If Tests 2-4 fail, the math is still true but the physical interpretation is wrong \u2014 the PAC depth bound might not be what determines MED in real systems."
+  }
+}

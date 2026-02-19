@@ -37,7 +37,7 @@ If correct:
 1. **G is not a free parameter** — it's determined by F₁₈₃
 2. **Gravitational waves travel at c** — same SEC wave equation
 3. **Inverse-square emerges** — same topological reason as Coulomb
-4. **Dark matter may be intermediate depth** — F₃₇ to F₅₀ range
+4. **Dark matter may be intermediate depth** — cyclotomic candidate F₆²+F₆+1 = 73 maps to ~15 keV (sterile neutrino range); WIMP-range depths at d=74–93 (see exp_25)
 
 ---
 

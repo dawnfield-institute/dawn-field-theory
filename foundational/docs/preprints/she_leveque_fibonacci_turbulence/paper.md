@@ -1,9 +1,13 @@
 # Fibonacci Structure in Turbulence Intermittency: A Pre-Registered Derivation of the She-Leveque Exponents
 
 **Authors:** Dawn Field Institute  
-**Date:** February 3, 2026  
-**Version:** 1.0  
+**Date:** February 3, 2026 (Updated: February 19, 2026)  
+**Version:** 1.1  
 **Status:** Preprint (Pre-Registered Postdiction)
+
+---
+
+> **February 2026 Update.** The result k = d × F_{d+1} (giving k = 9 = 3 × F₄ in 3D) derived here now connects to the broader PACSeries v2.0 derivation chain. PACSeries Paper 5 (*Classical Physics from Information Geometry*) derives that MED bounds (depth ≤ 2, nodes ≤ 3) require D = 3 spatial dimensions, explaining *why* the 3D She-Leveque exponents take the values they do. The ratio β = 2/3 = F₃/F₄ appearing in the She-Leveque formula also appears in quark charges and the Koide formula — PACSeries Paper 4 establishes these as independent expressions of the same Fibonacci cascade dynamics. The pre-registered prediction methodology used here exemplifies the falsification-driven approach adopted across all PACSeries papers.
 
 ---
 

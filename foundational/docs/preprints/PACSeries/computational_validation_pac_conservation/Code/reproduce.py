@@ -19,6 +19,8 @@ Experiments map to paper sections as follows:
     exp_06  → Section 7       (TinyCIMM conservation enforcement, 2×2 design)
     exp_07  → Section 8.1     (Landauer bridge, full stack validation chain)
     exp_08  → Section 8.2     (training phi-convergence, Fisher's method)
+    exp_09  → Section 8.4     (PAC-Lazy formula mesh, GAIA architecture transfer)
+    exp_10  → Section 8.4     (signal anatomy, bootstrap CI, leave-one-out)
 """
 
 import sys

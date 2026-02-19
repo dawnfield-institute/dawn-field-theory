@@ -1,0 +1,194 @@
+{
+  "experiment": "exp_30_xi_alt_factorial",
+  "target_paper": "Paper 2 (The Balance Constant and Its Decomposition)",
+  "purpose": "Test whether \u039e = \u03b3 + ln(\u03c6) appears preferentially with conservation + self-similarity",
+  "alternatives_tested": {
+    "canonical": "\u03b3 + ln(\u03c6) = 1.05842749",
+    "alt_sqrt3": "1/\u221a3 + ln(\u03c6) = 1.05856209",
+    "pi_55": "1 + \u03c0/55 = 1.05711987",
+    "difference_canonical_vs_alt": "0.00013460 (0.0127%)"
+  },
+  "domain_comparison": {
+    "domain_results": [
+      {
+        "domain": "navier_stokes",
+        "measured": 1.0571,
+        "err_gamma_lnphi_pct": 0.1256,
+        "err_sqrt3_lnphi_pct": 0.1383,
+        "err_pi_55_pct": 0.0019,
+        "winner": "\u03b3 + ln(\u03c6)"
+      },
+      {
+        "domain": "rule_110",
+        "measured": 1.058,
+        "err_gamma_lnphi_pct": 0.0404,
+        "err_sqrt3_lnphi_pct": 0.0531,
+        "err_pi_55_pct": 0.0832,
+        "winner": "\u03b3 + ln(\u03c6)"
+      },
+      {
+        "domain": "primes",
+        "measured": 1.058,
+        "err_gamma_lnphi_pct": 0.0404,
+        "err_sqrt3_lnphi_pct": 0.0531,
+        "err_pi_55_pct": 0.0832,
+        "winner": "\u03b3 + ln(\u03c6)"
+      },
+      {
+        "domain": "landauer",
+        "measured": 1.0584,
+        "err_gamma_lnphi_pct": 0.0026,
+        "err_sqrt3_lnphi_pct": 0.0153,
+        "err_pi_55_pct": 0.1209,
+        "winner": "\u03b3 + ln(\u03c6)"
+      }
+    ],
+    "total_err_canonical": 0.209,
+    "total_err_alt_sqrt3": 0.2598,
+    "overall_winner": "\u03b3 + ln(\u03c6)",
+    "margin_pct": 0.0508,
+    "note": "Both decompositions are within 0.15% of all domains. The difference is extremely small \u2014 1/\u221a3 differs from \u03b3 by only 0.023%."
+  },
+  "factorial": {
+    "BOTH_ON": {
+      "conservation": true,
+      "self_similarity": true,
+      "n_trials": 50,
+      "n_valid": 50,
+      "mean_pa_ratio": 0.790868,
+      "std_pa_ratio": 0.168909,
+      "dist_to_xi_pct": 25.28,
+      "dist_to_phi_pct": 51.12,
+      "dist_to_1_pct": 20.91,
+      "dist_to_inv_phi_pct": 27.97,
+      "pa_ratios": [
+        0.750419,
+        0.55388,
+        0.619395,
+        0.570746,
+        0.775472,
+        0.766243,
+        0.756193,
+        0.652892,
+        1.026998,
+        0.777617
+      ]
+    },
+    "CONS_ONLY": {
+      "conservation": true,
+      "self_similarity": false,
+      "n_trials": 50,
+      "n_valid": 50,
+      "mean_pa_ratio": 0.755243,
+      "std_pa_ratio": 0.12452,
+      "dist_to_xi_pct": 28.64,
+      "dist_to_phi_pct": 53.32,
+      "dist_to_1_pct": 24.48,
+      "dist_to_inv_phi_pct": 22.2,
+      "pa_ratios": [
+        0.872586,
+        0.683453,
+        0.631204,
+        0.79425,
+        0.667335,
+        0.767558,
+        0.680465,
+        0.711996,
+        0.616445,
+        0.719976
+      ]
+    },
+    "SS_ONLY": {
+      "conservation": false,
+      "self_similarity": true,
+      "n_trials": 50,
+      "n_valid": 50,
+      "mean_pa_ratio": 0.726732,
+      "std_pa_ratio": 0.130222,
+      "dist_to_xi_pct": 31.34,
+      "dist_to_phi_pct": 55.09,
+      "dist_to_1_pct": 27.33,
+      "dist_to_inv_phi_pct": 17.59,
+      "pa_ratios": [
+        0.756996,
+        0.6514,
+        0.840499,
+        0.59505,
+        0.741018,
+        0.723169,
+        0.782407,
+        0.549762,
+        0.735205,
+        0.810305
+      ]
+    },
+    "NEITHER": {
+      "conservation": false,
+      "self_similarity": false,
+      "n_trials": 50,
+      "n_valid": 50,
+      "mean_pa_ratio": 0.717016,
+      "std_pa_ratio": 0.156239,
+      "dist_to_xi_pct": 32.26,
+      "dist_to_phi_pct": 55.69,
+      "dist_to_1_pct": 28.3,
+      "dist_to_inv_phi_pct": 16.02,
+      "pa_ratios": [
+        0.497873,
+        0.679929,
+        1.031013,
+        0.671857,
+        0.825596,
+        0.690199,
+        0.616506,
+        0.647179,
+        0.767955,
+        0.911085
+      ]
+    }
+  },
+  "information_argument": {
+    "gamma_meaning": "Cost of bridging discrete counting with continuous integration",
+    "sqrt3_meaning": "Geometric constant (equilateral triangle, 3D geometry)",
+    "pac_prediction": "Additive component should be discrete-continuous interface cost",
+    "gamma_convergence": [
+      {
+        "n": 10,
+        "harmonic_minus_ln": 0.62638316,
+        "error_pct": 8.518046
+      },
+      {
+        "n": 100,
+        "harmonic_minus_ln": 0.58220733,
+        "error_pct": 0.864784
+      },
+      {
+        "n": 1000,
+        "harmonic_minus_ln": 0.57771558,
+        "error_pct": 0.086608
+      },
+      {
+        "n": 10000,
+        "harmonic_minus_ln": 0.57726566,
+        "error_pct": 0.008662
+      },
+      {
+        "n": 100000,
+        "harmonic_minus_ln": 0.57722066,
+        "error_pct": 0.000866
+      }
+    ],
+    "discrimination": "Numerically, \u03b3 \u2248 0.57722 and 1/\u221a3 \u2248 0.57735 differ by 0.023%. No numerical measurement can distinguish them at current precision. The argument is THEORETICAL: \u03b3 has the right meaning within the PAC framework (discrete-continuous bridge), while 1/\u221a3 does not. This is a principled selection, not a numerical one."
+  },
+  "synthesis": {
+    "domain_winner": "\u03b3 + ln(\u03c6)",
+    "domain_margin_pct": 0.0508,
+    "domain_verdict": "Across 4 domains, \u03b3 + ln(\u03c6) fits better by 0.0508%. This margin is too small for numerical discrimination.",
+    "factorial_closest_quadrant": "BOTH_ON",
+    "factorial_closest_dist_pct": 25.28,
+    "factorial_verdict": "The BOTH_ON quadrant has P/A ratio closest to \u039e (25.3% distance).",
+    "overall_verdict": "\u03b3 and 1/\u221a3 are NUMERICALLY indistinguishable at current domain precisions (0.023% difference). The selection of \u03b3 over 1/\u221a3 depends on THEORETICAL meaning (discrete-continuous bridge), not on empirical fit. The 2\u00d72 factorial tests whether \u039e-like attractors emerge preferentially in conservation + self-similarity systems."
+  },
+  "PASS": true,
+  "status": "PASS \u2014 conservation + self-similarity quadrant closest to \u039e"
+}

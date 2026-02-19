@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "experiment": "exp_21_pac_lazy_formula_mesh",
+    "description": "PAC-Lazy conservation + SEC gating + profile comparison on formula mesh",
+    "paper": "Paper 4",
+    "section": "$pac_lazy_mesh",
+    "timestamp": "2026-02-18T17:07:11.826583+00:00",
+    "milestone": "milestone3"
+  },
+  "tests": {
+    "test_1_pac_distribution": {
+      "mesh": {
+        "4": 7.087017651470655,
+        "3": 6.793000136008667,
+        "2": 7.4053048336273495,
+        "1": 2.5946951663726523,
+        "7": 2.5640797517700715,
+        "6": 2.9372753513558933,
+        "5": 3.0447273167660054,
+        "10": 0.5954915028125263,
+        "9": 0.7725424859373686,
+        "8": 0.704915028125263,
+        "12": 0.25,
+        "11": 0.4045084971874737
+      },
+      "total_leaf_potential": 10.0,
+      "total_flow_potential": 35.153557721433934,
+      "conservation_ok": true,
+      "pac_cv": 0.8874663667652252,
+      "raw_cv": 1.1885597622314177,
+      "bias_reduction_pct": 25.33262567301755,
+      "passed": "True"
+    },
+    "test_2_profile_discrimination": {
+      "mean_cos_matched": 0.9016685846641076,
+      "mean_cos_unmatched": 0.8922865621140663,
+      "cos_difference": 0.00938202255004128,
+      "cos_p_value": 0.05816101960695742,
+      "mean_kl_matched": 0.2406283325691217,
+      "mean_kl_unmatched": 0.2572237280986065,
+      "kl_p_value": 0.035300611964886756,
+      "enrichment_75pct": 1.3153153153153154,
+      "cohens_d": 0.19836265885555232,
+      "top_matches": [
+        {
+          "indices": [
+            4,
+            7
+          ],
+          "target": "sin2_theta_eff",
+          "error": 0.3371924987126857,
+          "cosine": 0.9808342994512226,
+          "kl": 0.10240415804147739
+        },
+        {
+          "indices": [
+            4,
+            6,
+            7
+          ],
+          "target": "sin2_theta23",
+          "error": 0.7936507936508078,
+          "cosine": 0.9792976000567037,
+          "kl": 0.10257443268254221
+        },
+        {
+          "indices": [
+            2,
+            4,
+            7
+          ],
+          "target": "sin2_theta_eff",
+          "error": 0.3371924987126857,
+          "cosine": 0.9699238036651228,
+          "kl": 0.1094144927718
+        },
+        {
+          "indices": [
+            4,
+            5,
+            6
+          ],
+          "target": "V_us",
+          "error": 0.312082032991532,
+          "cosine": 0.9654999969154657,
+          "kl": 0.18052113443768739
+        },
+        {
+          "indices": [
+            4,
+            6
+          ],
+          "target": "sin2_theta_eff",
+          "error": 0.09187898130449358,
+          "cosine": 0.964921568837883,
+          "kl": 0.18039667522714994
+        },
+        {
+          "indices": [
+            4,
+            5,
+            9
+          ],
+          "target": "Omega_b",
+          "error": 0.5687467684842645,
+          "cosine": 0.964719068815321,
+          "kl": 0.12313137719318235
+        },
+        {
+          "indices": [
+            4,
+            6,
+            10
+          ],
+          "target": "von_Karman",
+          "error": 0.5549801191869574,
+          "cosine": 0.9583344315468415,
+          "kl": 0.1279561794062866
+        },
+        {
+          "indices": [
+            3,
+            6,
+            7
+          ],
+          "target": "sigma_8",
+          "error": 0.18495684340319923,
+          "cosine": 0.9566071457720078,
+          "kl": 0.1249262905045209
+        },
+        {
+          "indices": [
+            4,
+            6,
+            11
+          ],
+          "target": "Dm2_ratio",
+          "error": 0.8839960150821561,
+          "cosine": 0.9523106634001636,
+          "kl": 0.150067608514784
+        },
+        {
+          "indices": [
+            2,
+            4,
+            9
+          ],
+          "target": "Omega_c",
+          "error": 0.11098779134295607,
+          "cosine": 0.9488499025424054,
+          "kl": 0.16037639831371986
+        }
+      ],
+      "passed": true
+    },
+    "test_3_sec_gated_depth": {
+      "ungated_depths": {
+        "sin2_thetaW": 5,
+        "Koide": 1,
+        "She_Lev": 2,
+        "nu_WF": 2,
+        "alpha_s": 4,
+        "Cabibbo": 5,
+        "mu_e": 5,
+        "alpha_em": 8,
+        "p_e": 10,
+        "tau_e": 9
+      },
+      "gated_depths": {
+        "sin2_thetaW": 5,
+        "Koide": 1,
+        "She_Lev": 2,
+        "nu_WF": 2,
+        "alpha_s": 4,
+        "Cabibbo": 5,
+        "mu_e": 5,
+        "alpha_em": 8,
+        "p_e": 7,
+        "tau_e": 9
+      },
+      "gated_reduced_count": 1,
+      "mean_depth_reduction": 0.3,
+      "gated_cos_matched": 0.8948441551199015,
+      "gated_cos_unmatched": 0.8843686300942114,
+      "ungated_cos_matched": 0.9016685846641076,
+      "ungated_cos_unmatched": 0.8922865621140663,
+      "delta_gated": 0.010475525025690047,
+      "delta_ungated": 0.00938202255004128,
+      "delta_improvement_pct": 11.655295751169936,
+      "gated_p_value": 0.061354965197329595,
+      "depth_corr": 0.5303300858899106,
+      "depth_corr_p": 0.1148079481642494,
+      "passed": true
+    },
+    "test_4_pac_vs_raw": {
+      "pac_delta": 0.00938202255004128,
+      "pac_p": 0.05816101960695742,
+      "pac_cohens_d": 0.19836265885555232,
+      "raw_delta": -2703.2774898185853,
+      "raw_p": 0.7833387181502445,
+      "raw_cohens_d": -0.11804635944394512,
+      "pac_better": true,
+      "pac_significant": "False",
+      "direction_improved": true,
+      "passed": "True"
+    }
+  },
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "score": "4/4"
+  },
+  "falsification": {
+    "test_id": "experimental (not in registry)",
+    "hypothesis": "PAC-conserved potential distribution profiles, scored by cosine similarity to the known formula mesh, discriminate physics-matching novel formulas from non-matching. SEC gating creates adaptive depth.",
+    "falsified_if": "PAC profile cosine similarity does not discriminate physics matches, AND PAC does not improve over raw pressure (exp_20).",
+    "falsified": false,
+    "assessment": "4/4 tests pass."
+  }
+}

@@ -63,7 +63,31 @@ experiments:
     key_result: "Combined Fisher p = 0.0014; all 4 model scales show convergent trends"
     paper_sections: [8.2]
 
+  - local: experiments/exp_09_pac_lazy_formula_mesh.py
+    source: dawn-field-theory/foundational/experiments/milestone3/scripts/exp_21_pac_lazy_formula_mesh.py
+    repo: dawn-field-theory
+    description: "PAC conservation transfers GAIA architecture to Fibonacci formula space"
+    key_result: "4/4 PASS. KL p=0.035, Cohen's d=0.198, 1.32× enrichment. PAC reverses exp_20 wrong direction"
+    paper_sections: [8.4]
+
+  - local: experiments/exp_10_pac_lazy_signal_anatomy.py
+    source: dawn-field-theory/foundational/experiments/milestone3/scripts/exp_24_pac_lazy_signal_anatomy.py
+    repo: dawn-field-theory
+    description: "Bootstrap and leave-one-out anatomy of formula mesh signal"
+    key_result: "1/4 PASS. Bootstrap CI crosses zero; signal concentrated in proton/electron mass ratio. Honest fragile"
+    paper_sections: [8.4]
+
 data:
   - local: ../Data/results/
     description: "JSON outputs from all experiments"
     note: "Each experiment saves timestamped JSON; representative results included"
+
+  - local: ../Data/results/exp_09_pac_lazy_formula_mesh_representative.json
+    source: dawn-field-theory/foundational/experiments/milestone3/results/exp_21_pac_lazy_formula_mesh_20260218_170712.json
+    repo: dawn-field-theory
+    description: "4/4 PASS: PAC conservation formula mesh discrimination"
+
+  - local: ../Data/results/exp_10_pac_lazy_signal_anatomy_representative.json
+    source: dawn-field-theory/foundational/experiments/milestone3/results/exp_24_pac_lazy_signal_anatomy_20260218_222915.json
+    repo: dawn-field-theory
+    description: "1/4 PASS: Signal fragile, bootstrap CI crosses zero"
