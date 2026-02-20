@@ -388,4 +388,4 @@ The derivation chain established in Papers 1–2 (PAC axiom $\to$ $\varphi$ $\to
 
 ---
 
-*Data and code for this paper are in the accompanying package. See README.md for reproduction instructions.*
+*All code, data, and experiment scripts for this paper and the full PACSeries are publicly available at [https://github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory). See the accompanying publication package README.md for reproduction instructions.*

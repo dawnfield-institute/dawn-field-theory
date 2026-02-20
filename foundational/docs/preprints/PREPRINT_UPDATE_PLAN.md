@@ -1,7 +1,7 @@
 # Preprint Update Plan: PACSeries Consolidation
 
 **Date**: February 12, 2026 (Updated February 19, 2026)  
-**Status**: Planning Document (Updated with milestone3 full completion — 28 experiments, 26 falsification tests, 18 passed. Standalone experiment integration complete. PRELIMINARY_RESULTS updated.)  
+**Status**: Planning Document (Updated with milestone3 full completion — 29 experiments, 26 falsification tests, 18 passed. Standalone experiment integration complete. PRELIMINARY_RESULTS updated.)  
 **Goal**: Consolidate the PACSeries into a self-contained paper series that establishes Dawn Field Theory through clean derivation, measurement, and honest separation of established results from speculation.
 
 ---
@@ -275,11 +275,11 @@ Consolidates current papers #2, #3, #4 into one focused section.
 - Resonance locking at 0.020 Hz (= 2/3 × 0.030 Hz continuous field limit)
 - Emergent capabilities not explicitly programmed
 
-**Merged from relativistic_mas (original PACSeries #4):**
-- 0.020 Hz emergence across cosmic scales (QBE validation, Dec 2025)
-- Landauer bridge: connects thermodynamic erasure (Paper 1) to computational frequency
-- Token PAC Tree phase transitions at 0.020 Hz boundary
-- Full-stack validation chain: exp_29 → exp_30 → exp_31 → exp_32
+**~~Merged from relativistic_mas (original PACSeries #4):~~ DEFERRED**
+- ~~0.020 Hz emergence across cosmic scales (QBE validation, Dec 2025)~~ **FALSIFIED by milestone3/exp_05**: E-I-S oscillator natural frequency is ~0.107 Hz; 64-configuration coupling sweep found no path to 0.020 Hz. The 2/3 ratio claim does not reproduce.
+- Landauer bridge content retained in §8 (independent of frequency claim)
+- ~~Token PAC Tree phase transitions at 0.020 Hz boundary~~
+- ~~Full-stack validation chain: exp_29 → exp_30 → exp_31 → exp_32~~
 
 #### Part B: Token PAC Tree (Real LLMs — Observation)
 PAC/SEC operates in standard transformer architectures without any modification.
@@ -548,139 +548,70 @@ After the rewrite, each PACSeries paper should:
 ## Master Checklist
 
 ### Paper 1: The Structure Cost of Erasure
-- [x] Core sections 1-13 written (journal.md voice)
-- [x] §15.1 Gauge group hierarchy computed and confirmed (p < 10⁻¹¹)
-- [x] §15.2 ln(φ) derivation from PAC axioms
-- [x] §15.3 Precision tightening: N=5M → 0.15% from ln(φ) (exp_23)
-- [x] §15.3 Full stack validation: all 6 layers pass (exp_25)
-- [x] §15.3 Thermal init discovery: Boltzmann required for ln(φ) emergence
-- [x] Abstract updated with precision improvement
-- [ ] Trim §9 (cross-corpus convergence) to short pointers to other PACSeries papers
+
+**Completed**: Core §1-15 written in journal.md voice. Gauge group hierarchy (p < 10⁻¹¹), ln(φ) derivation, precision tightening to 0.15%, full stack validation (6/6), thermal init discovery. Abstract updated. §9.4–9.6 trimmed to short pointers (detail in §14). Θ recycling caveated in §10.3 (36–94% model-dependent). "Why Fibonacci" cascade in §15.2 (k=2 dual-output). Monotonic ξ accumulation (100/100) in §10.3. π→φ→Fibonacci from exp_27 in §15.2. exp_28 cross-validation (1/(φ√5) theorem, 4/4 tests) integrated in §15.2. (φ²+1)/π correction template bridge added to §14 Paper 3 connection.
+
+**Remaining**:
 - [ ] Final edit pass for consistency between journal.md and PACSeries/paper.md
-- [ ] Ensure PREPRINT_UPDATE_PLAN falsified items are NOT in the paper (Θ recycling efficiency)
 - [ ] Verify all exp references have matching result JSON files
-- [ ] **NEW**: Integrate "why Fibonacci" cascade mechanism — two-step Landauer memory → Fibonacci (from energy_equivalence session, validated in milestone3)
-- [ ] **NEW**: Add monotonic ξ accumulation result (100/100 trials, cascade_deep_dive) as supporting evidence for ln(φ) universality
-- [ ] **NEW**: Address Θ recycling model-dependence honestly — 36%-94% depending on formula (remove any remaining efficiency claims, present as open question)
-- [ ] **NEW**: Integrate π→φ→Fibonacci mechanism from exp_27: Paper 1 derives ln(φ) from PAC recursion, exp_27 shows WHY the recursion must be k=2 (non-resonance on π-closed manifold). The Landauer bridge (fd=ln(φ)→α=1−1/φ, exact) connects Paper 1's partition ratio to exp_27's angular fraction
-- [ ] **NEW**: Reference cross-validation triangle (exp_28): fibbinoci_thermo independent data confirms thermodynamic response tracks phase-transport mechanism. 1/(φ√5) convergent ratio is a theorem, not empirical
-- [ ] **NEW**: Correction structural form (φ²+1)/π bridges Paper 1 (φ from erasure) and Paper 3 (Feigenbaum from Fibonacci arithmetic)
 
 ### Paper 2: The Balance Constant and Its Decomposition
-- [x] §1-13 written from four-domain convergence structure
-- [x] γ interpretation softened to "consistent with" (not "must represent")
-- [x] §9.1 table updated: γ role = "consistent with" not assertion
-- [x] Falsification conditions stated (§11)
-- [x] Mertens product (0.012%), PAC sieve exact (126/126)
-- [ ] Address PREPRINT_UPDATE_PLAN note: γ is rank #1 but 1/√3 performs comparably — mention in §9.2 or §10
-- [ ] Add note that 21 combinations fall within 5% of Ξ (from pac_foundations_validation)
-- [ ] Verify three-phase model (§6.3) is labeled "proposed" not "established"
-- [ ] Final edit pass for voice consistency- [ ] **NEW**: Integrate PAC→MED theorem (milestone3/exp_22): conditional "if MED bounds hold" upgrades to derived "PAC requires MED ≤ 2". This is the paper's strongest new result
-- [ ] **NEW**: Add MED depth ≤ 2 corollaries: only k=2 (Fibonacci) gives decay rate ln(φ); Fibonacci is the loosest constraint; MED's depth≤2/nodes≤3 is a consequence of PAC
-- [ ] **NEW**: Include F₁₈₃ gravity hierarchy as PAC cyclotomic depth interpretation (milestone3/exp_23) — supports depth-2 projection argument- [ ] **NEW**: Reference Fibonacci–MED complementarity (exp_12/F11) — golden base paradox explains why framework needs PAC, SEC, AND MED as independent principles
-- [ ] **NEW**: Reference MED depth criticality (exp_11/F10) — eff_depth ≈ 3.0 invariant, d_cross = 3.25 ± 0.17
+
+**Completed**: §1-13 written. γ softened to "consistent with". Falsification conditions in §11. Mertens product (0.012%), PAC sieve exact (126/126). γ vs 1/√3 comparison in §9.2. 21-combinations qualification in §9.2. Three-phase caveat in §6.3. PAC→MED theorem (exp_22) in §9.3. MED depth corollaries (exp_11, exp_12) in §9.3. F₁₈₃ forward-referenced in §10.3 → Paper 4. Intro voice softened ("consistent with" not "because"). §13 retitled as Numerical Details. Summary table updated with all milestone3 results.
+
+**Remaining**:
+- [ ] Final copy-edit (minor — paper is structurally complete)
 
 ### Paper 3: Feigenbaum Constants from Fibonacci Arithmetic
-- [x] §1-14 complete (pure math, no physics claims)
-- [x] Exhaustive search (3.9M combos, 1 match, 1-in-280B)
-- [x] Möbius perturbation series documented
-- [x] Self-closing formula: δ = φ^(20/N)
-- [x] Universality proof (sine map = logistic map Δz to 10⁻¹⁰)
-- [x] Cross-domain validation (5 domains, joint p < 10⁻¹¹)
-- [x] Falsification conditions stated (§10)
-- [x] "We do not know why" voice throughout
+
+**Completed**: §1-14 complete. Pure math, no physics claims. Exhaustive search (3.9M combos, 1 match, 1-in-280B). Möbius perturbation. Self-closing δ = φ^(20/N). Universality proof. Cross-domain validation. Falsification conditions. "We do not know why" voice.
+
+**Remaining**:
 - [ ] Consider extending exhaustive search to a > 200 (open computation §14.1)
 - [ ] Final edit pass
 
 ### Paper 4: Standard Model Parameters from Fibonacci Arithmetic
-- [x] Locate milestone1/milestone2 experiment data and scripts
-- [x] Locate pac_confluence_xi experiment data
-- [x] Compile all gauge coupling formulas with full error bounds
-- [x] Compile all mass ratio formulas with full error bounds
-- [x] Write paper in journal.md voice (start from established SM parameters)
-- [x] Include Casimir 240 = F₃×F₄×F₅×F₆ result
-- [x] Include k = d × F_{d+1} She-Leveque connection
-- [x] Include Bell inequality (2αβ)² = 4/5 algebraic proof
-- [x] Address numerology objection: joint constraints vs individual matches
-- [x] State falsification conditions (what would break the Fibonacci pattern)
-- [x] Cross-reference Paper 1 (Landauer interpretation of α)
-- [x] Cross-reference Paper 3 (same F₁₀ = 55 appearing)
-- [x] Complete publication package (Code/Data/Figures)
-- [x] 10 experiment scripts, 8 data files, 6 figures generated
-- [x] 2 review rounds completed
-- [ ] Final edit pass for voice consistency
-- [ ] **NEW**: Address search-vs-derivation methodology transparency — mass ratios are found by search then validated, not predicted from first principles. State this explicitly.
-- [ ] **NEW**: Note sin²θ_W = 3/13 is 4.4σ from PDG central value — requires energy-scale identification (running coupling) to be honest
-- [ ] **NEW**: Note 3/4 mass ratio falsification tests pass (from milestone1 FALSIFICATION_REGISTRY) — address the methodology concern in exp_17 honestly
-- [ ] **NEW**: Run sin²θ_W energy-scale identification experiment in milestone3 → if no scale found, downgrade claim
-- [ ] **NEW**: Include stoichiometric Fibonacci derivation result (exp_13: 99.98th percentile vs random, 6111× F₄=3 selectivity)
-- [ ] **NEW**: Note null space prediction failure (exp_16: 0/4) — framework describes but does not predict. Be transparent about this limitation
-- [ ] **NEW**: Include physics-derived matrix selectivity inversion (exp_17: 0.86× → 1.23×)
-- [ ] **NEW**: Note crystallization order is basis-independent (exp_19: FALSIFIED) — do NOT claim Fibonacci-specific dynamics
-- [ ] **NEW**: Include PAC-Lazy formula discrimination (exp_21: KL p=0.035, d=0.198) with GAIA POC cross-reference
-- [ ] **NEW**: Include SEC cost monotonicity (~55.7 SEC units per Fibonacci index, SEC/PAC crosses 1.0 at F₈)
-- [ ] **NEW**: Include dark matter Ω_c = F₇·Ξ²/F₁₀ at 0.079% (milestone3/exp_25) — or create standalone cosmology preprint
-- [ ] **NEW**: Include F₁₈₃ gravity correction: rank #1 cyclotomic, 40× gap, 0/5000 MC (milestone3/exp_23)
-- [ ] **NEW**: Include correction template F_a/(mπF_b²) for both α_EM and gravity — 0/5000 random sequences match both (milestone3/exp_26)
-- [ ] **NEW**: Note PAC-Lazy signal is HONEST FAILURE (exp_24: bootstrap CI includes zero) — engineering, not theory claim
+
+**Completed**: Paper written in journal.md voice with full publication package (14 experiment scripts, 15 data files, 6 figures). 3 review rounds. All core content in place: gauge couplings (§4), mass ratios (§6), mixing angles (§7), Bell/Casimir/turbulence (§8–9), Wilson-Fisher (§9.4), gravity hierarchy (§11), honest failures (§12.4), look-elsewhere analysis (§12.5), falsification conditions (§13), tiered summary (§15). Search-vs-derivation transparency in §6.4. Dark matter in §14.5. sin²θ_W energy-scale resolution in §4.4.
+
+**Critical review pass (Feb 2026)**:
+- [x] Abstract: Weinberg caveat → positive result (Q = 82.78 GeV ≈ M_W, 0.03% error)
+- [x] §9.4: Wilson-Fisher ν = 2/(3·Ξ) at 0.017% (exp_07)
+- [x] §12.1: Cross-domain independence audit (exp_10) — 7.9 DOF, 48 OOM correction
+- [x] §12.1: p ≈ 10⁻¹⁴⁷ qualified as "conditional on this analysis structure"
+- [x] §12.1: Template richness audit (exp_32) — 91% matchable at 1%, 19% at 100 ppm
+- [x] §15: Summary tiered into Structural / High-Precision / Small-Integer / Predictions
+
+**Deferred** (would not improve clarity — see session notes Feb 20):
+- ~~3/4 mass ratio falsification tests~~ — joint test (§6.5, p < 10⁻⁴) is stronger; individual failures already in §12.4
+- ~~Physics-derived matrix selectivity (exp_17)~~ — §6.4 stoichiometric result (6,111×) is the cleaner version
+- ~~PAC-Lazy formula discrimination (exp_21)~~ — §12.4 already reports bootstrap failure; adding positive p=0.035 creates contradiction
+- ~~SEC cost monotonicity~~ — Paper 2 scope, not Paper 4
 
 ### Paper 5: Classical Physics from Information Geometry
-- [x] Locate maxwell_from_pac_sec experiment data
-- [x] Write Maxwell = depth-2 PAC recursion derivation
-- [x] Write SEC wave equation → speed of light
-- [x] Write MED bounds → D = 3 derivation
-- [x] Include She-Leveque k = d × F_{d+1} (shared with Paper 4)
-- [x] Include Mersenne dimension result
-- [x] Label gravity speculation clearly
-- [x] State falsification conditions (k=20 in 4D prediction)
-- [x] Complete publication package (Code/Data/Figures)
-- [x] 9 experiment scripts, 7 data files, 6 figures generated
-- [x] 1 review round completed (6 issues fixed)
-- [x] §7.3 ζ(−15) honest falsification recorded (factor 17 non-Fibonacci)
-- [x] §5.4 charge decomposition rewritten with explicit sub-node mechanism
+
+**Completed**: Paper written with full publication package (9 experiment scripts, 7 data files, 6 figures). Maxwell = depth-2 PAC, SEC wave equation, MED → D=3, She-Lévêque, Mersenne dimensions, gravity speculation labeled, falsification conditions stated. 1 review round. §7.3 ζ(−15) honest falsification. §5.4 charge decomposition rewritten.
+
+**Remaining**:
 - [ ] Final edit pass for voice consistency
 
 ### Paper 6: Computational Validation
-- [x] Part B: Write token_pac_tree section from 12 experiments
-- [x] Part B: Include honest falsifications (φ enrichment, single-token detection)
-- [x] Part B: SEC phase → accuracy table (all 4 Pythia models)
-- [x] Part B: Attention PAC mechanism (confident_head_ratio, p = 0.00006)
-- [x] Part B: Cross-architecture universality (Fisher p = 0.0)
-- [x] Part B: PAC violation = hallucination (+9.6% uncompensated)
-- [x] Part C: Write TinyCIMM-Boltzmann section
-- [x] Part C: Conservation reduces noise violation 1.83× (p = 0.008) — **corrected from 3.8× (see note below)**
-- [x] Part C: Conservation reduces transition shock 16× (p = 0.008)
-- [x] Part C: No factual harm (p = 0.42 n.s.)
-- [x] State falsification conditions (scaling, non-autoregressive, conservation at scale)
-- [x] Complete publication package (Code/Data/Figures)
-- [x] 8 experiment scripts, 8 data files, 6 figures generated
-- [x] 1 review round completed (5 issues fixed)
-- [x] §8.3 GAIA expanded with full architecture + honest 5.91 perplexity correction (similarity metric, not true LM perplexity)
-- [x] Uncited She-Lévêque [10] removed; refs renumbered Paper N = [N]
-- [ ] Part A: Consolidate 3 existing GAIA papers into one section — **NOTE: Paper 6 does NOT use Part A/B/C structure; GAIA is §8.3. Plan structure differs from implementation.**
-- [ ] Final edit pass for voice consistency
-- [ ] **NEW**: Flag 0.020 Hz simulation mismatch — energy_equivalence E-I-S oscillator gives 0.007 Hz (ratio 0.232), NOT the claimed 2/3 (0.667). Must resolve before merging relativistic_mas 0.020 Hz claim.
-- [ ] **NEW**: Validate 0.020 Hz derivation in milestone3/exp_05 — either fix the simulation or correct the theoretical claim
-- [ ] **NEW**: Verify GAIA perplexity correction is clearly labeled throughout (similarity metric ≠ true LM perplexity)
-- [ ] **NEW**: Reference PAC-Lazy formula mesh (exp_21) as evidence that GAIA POC architecture transfers to theoretical physics domain (profile comparison, conservation normalization)
-- [ ] **NEW**: Note that formula space IS a PAC tree — same principles work in both neural network analysis and formula analysis
 
-**3.8× correction note**: The plan states "Conservation reduces noise violation 3.8×" but the actual experiment data (exp_06_tinycimm_conservation) shows noise+free=0.342, noise+conservation=0.187, which is 1.83× reduction ("nearly in half"). The paper correctly reports the data. The 3.8× figure in this plan document was incorrect — it may have been noise_free/factual_free (0.342/0.089), a different comparison.
+**Completed**: Paper written with full publication package (8 experiment scripts, 8 data files, 6 figures). Token PAC Tree (7 models), TinyCIMM-Boltzmann (conservation 1.83×, shock 16×), GAIA §8.3 expanded with architecture + honest perplexity correction. Falsification conditions stated. 0.020 Hz MAS merge DEFERRED (exp_05 falsified). 1 review round.
+
+**Remaining**:
+- [ ] Reconcile plan Part A/B/C structure with actual §-numbering (paper uses §8.3 for GAIA, not Part A)
+- [ ] Verify GAIA perplexity correction labeled throughout (similarity metric ≠ true LM perplexity)
+- [ ] Final edit pass for voice consistency
 
 ### Original PACSeries Integration
-- [x] gaia_computational → Paper 6: Extract GAIA architecture detail, conservation proof, resonance derivation
-- [x] gaia_computational → Paper 6: Expand §8.3 from 8 lines to full architecture section (grafted embeddings, PAC tree, transition matrix, concentration monitor, honest perplexity correction)
-- [ ] gaia_computational: Add header notice pointing to Paper 6
-- [ ] relativistic_mas → Paper 6: Merge 0.020 Hz validation, QBE results
-- [ ] relativistic_mas → Paper 6: Add Landauer bridge + Token PAC Tree phase transitions
-- [ ] relativistic_mas: Add header notice pointing to Paper 6
-- [ ] mobius_confluence → Paper 5: Merge confluence operator, time-from-topology
-- [ ] mobius_confluence → Paper 5: Integrate with MED → D=3 derivation
-- [ ] mobius_confluence: Add header notice pointing to Paper 5
-- [ ] xi_bounded_invariant: Write "February 2026 Update" appendix → Paper 2
-- [ ] xi_bounded_invariant: Add γ + ln(φ) decomposition, four-domain table, conditional attractor
-- [ ] sec_med_framework: Write "February 2026 Update" appendix → Papers 1-6
-- [ ] sec_med_framework: Add summary table of how each new paper extends this one
+
+**Completed**: gaia_computational merged into Paper 6 §8.3. relativistic_mas header updated (MAS merge deferred — exp_05 falsified 0.020 Hz). mobius_confluence header already had v2.0 banner.
+
+**Remaining**:
+- [ ] mobius_confluence → Paper 5: Merge confluence operator + time-from-topology + MED → D=3
+- [ ] xi_bounded_invariant: Write "February 2026 Update" appendix → Paper 2 (γ + ln(φ), four-domain table, conditional attractor)
+- [ ] sec_med_framework: Write "February 2026 Update" appendix → Papers 1-6 (summary table of how each extends this one)
 - [ ] Update Zenodo records for all 5 originals (new versions with notices/appendices)
 
 ### Standalone Preprint Updates
@@ -696,45 +627,21 @@ After the rewrite, each PACSeries paper should:
 - [ ] Tier 3: ml_validation_pythia_gpt2 — decide: subsume into Paper 6 or keep standalone
 
 ### Cross-Cutting
-- [ ] Update UNIFIED_EVIDENCE.md with token_pac_tree findings
-- [ ] Update UNIFIED_EVIDENCE.md with TinyCIMM-Boltzmann findings
-- [x] Update UNIFIED_EVIDENCE.md with milestone3 findings (v3.4→v3.7, 2026-02-19)
-- [x] Update UNIFIED_EVIDENCE.md with standalone experiment results (sec_threshold_detection, dna_prime_structure, prime_growth_dynamics_v2, phi_artifact_test, pac_foundations_validation, pac_dag_fluid, quantum_validation, gravity_from_maxwell_pac) — v3.7
-- [x] Update PRELIMINARY_RESULTS.md with exp_22–28 findings (A4/A5/E1/E2 added, A2/A3/B3/C2/C3 updated, Retired section populated with R1–R3)
+
+**Completed**: UNIFIED_EVIDENCE.md v3.7 (milestone3 + standalone experiments). PRELIMINARY_RESULTS.md updated with exp_22–28.
+
+**Remaining**:
+- [ ] UNIFIED_EVIDENCE.md: Add token_pac_tree + TinyCIMM-Boltzmann findings
 - [ ] Verify all papers cross-reference each other consistently (§14 / §13 sections)
 - [ ] Prepare Zenodo packages for Papers 1-6
 - [ ] Create changelog entry for PACSeries consolidation
 
-### Energy Equivalence Integration (milestone3)
-- [x] **NEW**: Create milestone3 experiment directory (foundational/experiments/milestone3/)
-- [x] **NEW**: exp_01: Two-step Landauer memory → Fibonacci derivation (formalize cascade finding from energy_equivalence session). **DONE**: 4/4 PASS + k=2 minimality via companion matrix (cascade framework)
-- [x] **NEW**: exp_02: Monotonic ξ accumulation validation (reproduce 100/100 result with proper experimental framework and error analysis). **DONE**: 6/6 PASS + 2 diagnostics. eff_depth ≈ 3.0 is universal invariant.
-- [x] **NEW**: exp_03: Prime cascade reachability — formalize zero-coverage finding (p = 7.7×10⁻¹², from cascade_deep_dive). **DONE**: 3/4 PASS (late cascade ratio noisy, Cohen's d = 0.28)
-- [ ] **NEW**: exp_04: w2/w1 ratio from first principles — close the 0.600 vs 0.618 gap or explain why it can't close. **Mapped to exp_05 (thermal reinjection) — 2/3+suggestive**
-- [x] **NEW**: exp_05: E-I-S triangle oscillator fix — reproduce 0.020 Hz or identify why sim gives 0.007 Hz instead. **DONE**: exp_05 (F4) 2/3 PASS + suggestive. Thermal ratios approach 1/φ.
-- [x] **NEW**: exp_06: Θ recycling energy budget — resolve 36%-94% model dependence, identify which formula (if any) is correct. **DONE**: exp_06 (F5) 3/4 PASS. Self-funding confirmed; efficiency model-dependent.
-- [x] **NEW**: exp_07: Wilson-Fisher null test — Monte Carlo for A1 prediction from PRELIMINARY_RESULTS. **DONE**: 6/6 PASS. MC p=0.0000, E-I-S decomposition: ν = 2/(3·Ξ) at 0.017%. A1 PROMOTED.
-- [x] **NEW**: exp_08: sin²θ_W energy-scale identification — run the coupling at known RG scales, find if 3/13 appears anywhere physical. **DONE**: 6/6 PASS. Q = 82.78 GeV ≈ M_W. PAC tree depth interpretation.
-- [x] **NEW**: exp_09: Mass ratio methodology audit — clearly distinguish search-then-validate from predict-from-principles, quantify look-elsewhere effect. **DONE**: BORDERLINE. p=0.42 binomial, but MC 0/7272 from random constants.
-- [x] **NEW**: exp_10: Cross-domain joint probability independence audit — verify independence assumptions in p-value multiplications across domains. **DONE**: 5/5 PASS. 48 OOM correction, conservative p ≈ 10⁻¹⁴⁷.
-- [x] **NEW**: Update PRELIMINARY_RESULTS.md with energy_equivalence session findings (cascade, ξ accumulation, prime reachability). **DONE**: A1 promoted, B5 updated.
-- [x] **NEW**: Update UNIFIED_EVIDENCE.md with milestone3 results as they complete. **DONE**: v3.7 with full milestone3 + standalone experiment integration.
-- [ ] **NEW**: Integrate milestone3 validated results back into Papers 1, 4, 6 as appropriate
-- [x] **NEW**: exp_11: MED depth criticality — eff_depth ≈ 3.0 invariant. **DONE**: 4/5 PASS. d_cross = 3.25 ± 0.17. MED attractor confirmed.
-- [x] **NEW**: exp_12: Fibonacci–MED complementarity — golden base paradox. **DONE**: 4/5 PASS. Fibonacci coupling cannot reach MED depth. Independent constraints, not derivable from each other.
-- [x] **NEW**: exp_13: Stoichiometric Fibonacci derivation. **DONE**: 5/6 PASS. 99.98th percentile vs random. 6111× F₄=3 selectivity. α_s discovered from stoichiometry.
-- [x] **NEW**: exp_14: Physical stoichiometry. **DONE**: 3/4 PASS. Raw selectivity 0.86× (FAIL). SEC hierarchy Spearman r=0.84.
-- [x] **NEW**: exp_15: PAC/SEC cost monotonicity. **DONE**: 4/4 PASS. ~55.7 SEC units per Fibonacci index. SEC/PAC crosses 1.0 at F₈.
-- [x] **NEW**: exp_16: Null space predictions. **DONE**: 0/4 FAIL. Framework describes but does NOT predict. Null space too large.
-- [x] **NEW**: exp_17: Physics-derived matrix. **DONE**: 3/4 PASS. Selectivity inverted 0.86× → 1.23×. 160 consensus candidates.
-- [x] **NEW**: exp_18: Conservation predictions. **DONE**: 2/4 PARTIAL. Conservation necessary but not sufficient for discrimination.
-- [x] **NEW**: exp_19: Phase transition dynamics. **DONE**: 1/4 FALSIFIED. Crystallization order is basis-independent.
-- [x] **NEW**: exp_20: Fractal convergence mesh. **DONE**: 1/4 FALSIFIED. Raw pressure = depth bias, wrong direction.
-- [x] **NEW**: exp_21: PAC-Lazy formula mesh. **DONE**: 4/4 PASS. KL p=0.035, d=0.198. PAC conservation fixes direction. GAIA POC architecture transfers to formula space.
-- [x] **NEW**: exp_22: PAC→MED depth bound. **DONE**: 3/4 PASS. THEOREM: all k-step PAC recursions floor to depth ≤ 2. MED derived from PAC, not independent. Analytical proof for k=2–∞.
-- [x] **NEW**: exp_23: F₁₈₃ gravity correction. **DONE**: 3/4 PASS. Unique cyclotomic minimiser. Rank #1, 40× gap. 0/5000 MC. 1 + F₁₃/(πF₆²) at 0.0008 log₁₀.
-- [x] **NEW**: exp_24: PAC-Lazy signal anatomy. **DONE**: 1/4 FAIL. Bootstrap CI includes zero. Honest failure — engineering, not theory claim.
-- [x] **NEW**: exp_25: Dark matter depth map. **DONE**: 2/2 PASS. Ω_c = F₇·Ξ²/F₁₀ at 0.079%. Corrected GUT-scale proposals.
-- [x] **NEW**: exp_26: Unified correction template. **DONE**: 2/3 PASS. F_a/(mπF_b²) works for α_EM + gravity. 0/5000 MC match both simultaneously. Index gaps both Fibonacci.
-- [x] **NEW**: exp_27: Phase cascade stability (mechanism). **DONE**: 5/5 PASS. π→φ→Fibonacci causal chain. Golden angle #1/12 on D*_N. Landauer bridge exact. Correction structural form (φ²+1)/π at 0.62%. Inward/outward duality.
-- [x] **NEW**: exp_28: Thermo-phase cross-validation. **DONE**: 4/4 PASS. Independent fibbinoci_thermo data confirms. Phase-thermo Spearman r=0.964–0.976. Geometric bridge r=1.000. Convergent ratio = 1/(φ√5) ≈ 0.2764 (theorem from CF theory).
+### Milestone3 Experiments (ALL COMPLETE)
+
+29 experiments completed (exp_01–exp_28 + exp_32). Key results already integrated into papers. Full details in individual experiment result JSONs.
+
+**Summary**: 18 PASS, 3 BORDERLINE/PARTIAL, 4 FALSIFIED, 3 HONEST FAILURES. Falsified results (exp_05 0.020 Hz, exp_19 crystallization, exp_20 fractal pressure, exp_24 PAC-Lazy bootstrap) are documented in Paper 4 §12.4 and Paper 6.
+
+**One open integration item**:
+- [ ] Integrate remaining milestone3 results into Papers 1 and 2 (Paper 4 integration complete)
+- ~~exp_04: w2/w1 ratio~~ — mapped to exp_05, partially addressed (2/3+suggestive)

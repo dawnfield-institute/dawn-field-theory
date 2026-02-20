@@ -1,0 +1,42 @@
+{
+  "experiment": "exp_06_mass_ratios",
+  "paper": "PACSeries Paper 4",
+  "section": "6",
+  "timestamp": "2026-02-20T09:36:10.475423",
+  "main_results": {
+    "mu_over_e": {
+      "formula": "F\u2084 \u00d7 F\u2086\u00b2 \u00d7 (1 + 1/F\u2087)",
+      "decomposition": "3 \u00d7 8\u00b2 \u00d7 (1 + 1/13) = 3 \u00d7 64 \u00d7 14/13",
+      "pac_value": 206.769231,
+      "measured": 206.768283,
+      "deviation_ppm": 4.6
+    },
+    "tau_over_e": {
+      "formula": "F\u2084 \u00d7 F\u2087 \u00d7 F\u2081\u2081 + F\u2085",
+      "decomposition": "3 \u00d7 13 \u00d7 89 + 5 = 3476",
+      "pac_value": 3476,
+      "measured": 3477.23,
+      "deviation_ppm": 353.0
+    },
+    "proton_over_e": {
+      "formula": "F\u2084 \u00d7 F\u2089 \u00d7 F\u2081\u2082 / F\u2086",
+      "decomposition": "3 \u00d7 34 \u00d7 144 / 8 = 1836",
+      "pac_value": 1836.0,
+      "measured": 1836.1527,
+      "deviation_ppm": 83.0
+    },
+    "derived_ratios": {
+      "tau_over_mu": {
+        "pac_value": 16.811,
+        "measured": 16.817,
+        "deviation_ppm": 358.0
+      },
+      "proton_over_mu": {
+        "pac_value": 8.8795,
+        "measured": 8.8802,
+        "deviation_ppm": 88.0
+      }
+    },
+    "f4_universality": "F\u2084 = 3 appears as leading factor in all three mass formulas"
+  }
+}
