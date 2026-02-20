@@ -33,7 +33,7 @@ This reduces 11 papers (5 old + 6 new) to 8 papers (2 updated originals + 6 cons
 |----------------|--------|--------|
 | xi_bounded_invariant | Status update appendix | → New Paper 2 |
 | sec_med_framework | Status update appendix | → New Papers 1-6 |
-| gaia_computational | **Merge** | → New Paper 6 Part A |
+| gaia_computational | **Merge** | → New Paper 6 §8.3 |
 | relativistic_mas | **Merge** | → New Paper 6 (0.020 Hz validation) |
 | mobius_confluence | **Merge** | → New Paper 5 (temporal emergence) |
 
@@ -264,7 +264,7 @@ The fourth source emerges from asymmetric_conservation/exp_16: the identity e^(-
 
 **Demonstrates PAC/SEC/MED in working computational systems — from custom architectures to production LLMs.** Three-part structure: observe it in custom systems, observe it in real systems, engineer with it.
 
-#### Part A: GAIA (Custom PAC-Native System)
+#### §8.3: GAIA (Custom PAC-Native System)
 Consolidates current papers #2, #3, #4 into one focused section.  
 **Strengthened by merge** with original gaia_computational — adds GAIA engine architecture detail, resonance locking derivation, and emergent capability documentation that the current §8.3 lacks.
 
@@ -281,7 +281,7 @@ Consolidates current papers #2, #3, #4 into one focused section.
 - ~~Token PAC Tree phase transitions at 0.020 Hz boundary~~
 - ~~Full-stack validation chain: exp_29 → exp_30 → exp_31 → exp_32~~
 
-#### Part B: Token PAC Tree (Real LLMs — Observation)
+#### §§3–6: Token PAC Tree (Real LLMs — Observation)
 PAC/SEC operates in standard transformer architectures without any modification.
 Validated across 7 models: Pythia-70m/160m/410m/1B, GPT-2/medium/large.
 
@@ -299,7 +299,7 @@ Validated across 7 models: Pythia-70m/160m/410m/1B, GPT-2/medium/large.
 - Single-token hallucination detection fails — PAC violation is a sequence-level phenomenon, not token-level
 - Xi is NOT optimal classifier threshold across all architectures (architecture-specific)
 
-#### Part C: TinyCIMM-Boltzmann (PAC as Engineering Constraint)
+#### §7: TinyCIMM-Boltzmann (PAC as Engineering Constraint)
 First architecture that enforces PAC conservation as a hard constraint, not just observes it.
 
 - BoltzmannHead: softmax replacement with explicit entropy budget
@@ -346,7 +346,7 @@ These stay as separate publications. Each gets a short update referencing the PA
 | Paper | Update |
 |-------|--------|
 | qbe_pac_unification | Reference Paper 6 for 0.020 Hz emergence |
-| ml_validation_pythia_gpt2 | **Subsumed by Paper 6 Part B/C.** Keep as standalone only if scope differs significantly; otherwise fold into PACSeries #6 and archive |
+| ml_validation_pythia_gpt2 | **Subsumed by Paper 6 §§3–7.** Keep as standalone only if scope differs significantly; otherwise fold into PACSeries #6 and archive |
 
 ---
 
@@ -358,9 +358,9 @@ The original 5 PACSeries papers (October 2025) established the intellectual prov
 
 These originals covered ground that the new papers now address more rigorously. Their unique content is merged in; the originals get a header notice pointing to the consolidated version.
 
-#### gaia_computational_validation_dawn_field_theory → New Paper 6 Part A
+#### gaia_computational_validation_dawn_field_theory → New Paper 6 §8.3
 - **What moves**: GAIA engine architecture detail, 500-iteration conservation proof, resonance locking derivation, WikiText-2 perplexity comparison, emergent capability catalog
-- **Why**: Current Paper 6 §8.3 is only 8 lines for what should be the centerpiece Part A section. The original has 2,546 lines of depth.
+- **Why**: Current Paper 6 §8.3 is a focused summary; the original has 2,546 lines of depth.
 - **Original gets**: Header notice: *"This paper's findings have been consolidated into PACSeries Paper 6: Computational Validation of PAC Conservation (February 2026), which extends the analysis with Token PAC Tree and TinyCIMM-Boltzmann validation."*
 
 #### relativistic_mas_universal_frequency → New Paper 6
@@ -566,9 +566,9 @@ After the rewrite, each PACSeries paper should:
 
 **Completed**: §1-14 complete. Pure math, no physics claims. Exhaustive search (3.9M combos, 1 match, 1-in-280B). Möbius perturbation. Self-closing δ = φ^(20/N). Universality proof. Cross-domain validation. Falsification conditions. "We do not know why" voice.
 
-**Remaining**:
-- [ ] Consider extending exhaustive search to a > 200 (open computation §14.1)
-- [ ] Final edit pass
+**Completed**: §1-14 complete. Pure math, no physics claims. Exhaustive search (3.9M combos, 1 match, 1-in-280B). Möbius perturbation. Self-closing δ = φ^(20/N). Universality proof. Cross-domain validation. Falsification conditions. "We do not know why" voice. Exhaustive search extension listed in §14.1 as open computation. Final edit pass confirmed voice already exemplary — no changes needed.
+
+**All items complete.**
 
 ### Paper 4: Standard Model Parameters from Fibonacci Arithmetic
 
@@ -593,16 +593,16 @@ After the rewrite, each PACSeries paper should:
 **Completed**: Paper written with full publication package (9 experiment scripts, 7 data files, 6 figures). Maxwell = depth-2 PAC, SEC wave equation, MED → D=3, She-Lévêque, Mersenne dimensions, gravity speculation labeled, falsification conditions stated. 1 review round. §7.3 ζ(−15) honest falsification. §5.4 charge decomposition rewritten.
 
 **Remaining**:
-- [ ] Final edit pass for voice consistency
+- [x] Final edit pass for voice consistency (3 targeted fixes: §1 softened, §3.2 MED citation corrected, abstract reframed)
 
 ### Paper 6: Computational Validation
 
 **Completed**: Paper written with full publication package (8 experiment scripts, 8 data files, 6 figures). Token PAC Tree (7 models), TinyCIMM-Boltzmann (conservation 1.83×, shock 16×), GAIA §8.3 expanded with architecture + honest perplexity correction. Falsification conditions stated. 0.020 Hz MAS merge DEFERRED (exp_05 falsified). 1 review round.
 
 **Remaining**:
-- [ ] Reconcile plan Part A/B/C structure with actual §-numbering (paper uses §8.3 for GAIA, not Part A)
-- [ ] Verify GAIA perplexity correction labeled throughout (similarity metric ≠ true LM perplexity)
-- [ ] Final edit pass for voice consistency
+- [x] Reconcile plan Part A/B/C structure with actual §-numbering (updated: §8.3 GAIA, §§3–6 Token PAC Tree, §7 TinyCIMM)
+- [x] Verify GAIA perplexity correction labeled throughout (§8.3 honest correction + §10.5 repeat caveat)
+- [x] Final edit pass for voice consistency (voice already excellent — no changes needed)
 
 ### Original PACSeries Integration
 
@@ -632,7 +632,7 @@ After the rewrite, each PACSeries paper should:
 
 **Remaining**:
 - [ ] UNIFIED_EVIDENCE.md: Add token_pac_tree + TinyCIMM-Boltzmann findings
-- [ ] Verify all papers cross-reference each other consistently (§14 / §13 sections)
+- [x] Verify all papers cross-reference each other consistently (§14 / §13 sections) — Paper 2 connections table added (§12.1); Paper 3→Paper 1 attribution fixed; Paper 1→Paper 5 "establishes" → "applies"
 - [ ] Prepare Zenodo packages for Papers 1-6
 - [ ] Create changelog entry for PACSeries consolidation
 

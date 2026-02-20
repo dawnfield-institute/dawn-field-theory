@@ -366,8 +366,8 @@ These are the formulas. Fibonacci numbers appear in the universal constants of n
 
 | Paper | Connection |
 |-------|-----------|
-| Paper 1: Structure Cost of Erasure | $\xi = 1 + \pi/55$ first derived from Landauer erasure; same $F_{10} = 55$ |
-| Paper 2: Balance Constant | $\xi = \gamma + \ln\varphi$; four-domain convergence at $p < 0.004$ |
+| Paper 1: Structure Cost of Erasure | Landauer structure cost $\xi$ first derived; $F_{10} = 55$ enters through cascade hierarchy depth |
+| Paper 2: Balance Constant | $\Xi = \gamma + \ln\varphi = 1 + \pi/55$; four-domain convergence at $p < 0.004$ |
 | **Paper 3 (this paper)** | **Feigenbaum constants from Fibonacci arithmetic** |
 | Paper 4: Standard Model | $\sin^2\theta_W = 3/13 = F_4/F_7$ extends the Fibonacci prediction chain |
 | Paper 5: Classical Physics | Möbius transformation $M_{10}$ connects to emergence geometry |
