@@ -1,0 +1,399 @@
+{
+  "experiment": "exp_32_template_richness_audit",
+  "description": "Template richness audit \u2014 how many PDG constants match Fibonacci templates?",
+  "paper": "Paper 4",
+  "section": "\u00a712 (strengthens/weakens joint significance)",
+  "timestamp": "2026-02-20T10:45:49.714455",
+  "milestone": "milestone3",
+  "pool_sizes": {
+    "2_factor": 2085,
+    "3_factor": 17106,
+    "4_factor_additive": 10752,
+    "combined": 26690
+  },
+  "n_constants_tested": {
+    "total": 50,
+    "claimed": 7,
+    "unclaimed": 43
+  },
+  "hit_rates": {
+    "100 ppm": {
+      "claimed": "3/7",
+      "unclaimed": "8/43",
+      "all": "11/50",
+      "claimed_pct": 42.9,
+      "unclaimed_pct": 18.6
+    },
+    "1%": {
+      "claimed": "7/7",
+      "unclaimed": "39/43",
+      "all": "46/50",
+      "claimed_pct": 100.0,
+      "unclaimed_pct": 90.7
+    },
+    "5%": {
+      "claimed": "7/7",
+      "unclaimed": "40/43",
+      "all": "47/50",
+      "claimed_pct": 100.0,
+      "unclaimed_pct": 93.0
+    }
+  },
+  "discrimination": {
+    "claimed_median_error": 0.0002656845114778633,
+    "unclaimed_median_error": 0.0004960592708469005,
+    "ratio": 1.867098944110756
+  },
+  "per_constant": {
+    "GF_natural": {
+      "value": 1.1664e-05,
+      "claimed": false,
+      "best_match": 1.1384299333872947e-05,
+      "best_error": 0.023979823913499124,
+      "source": "Fermi constant in GeV\u207b\u00b2"
+    },
+    "J_psi_over_proton": {
+      "value": 3.296,
+      "claimed": false,
+      "best_match": 3.2944501869465164,
+      "best_error": 0.0004702102710811441,
+      "source": "PDG 2022"
+    },
+    "Vcb": {
+      "value": 0.0422,
+      "claimed": false,
+      "best_match": 0.04211349173291557,
+      "best_error": 0.00204995893565,
+      "source": "PDG 2022"
+    },
+    "Vub": {
+      "value": 0.00394,
+      "claimed": false,
+      "best_match": 0.003937397078637803,
+      "best_error": 0.0006606399396438054,
+      "source": "PDG 2022"
+    },
+    "Vus": {
+      "value": 0.2243,
+      "claimed": false,
+      "best_match": 0.22405375030108626,
+      "best_error": 0.0010978586665792974,
+      "source": "PDG 2022"
+    },
+    "W_over_Z": {
+      "value": 0.8768,
+      "claimed": false,
+      "best_match": 0.8751277636815614,
+      "best_error": 0.0019072038303359973,
+      "source": "PDG 2022"
+    },
+    "W_over_proton": {
+      "value": 85.67,
+      "claimed": false,
+      "best_match": 85.65570486060942,
+      "best_error": 0.00016686283869012775,
+      "source": "PDG 2022"
+    },
+    "Z_over_proton": {
+      "value": 97.16,
+      "claimed": false,
+      "best_match": 97.09090909090908,
+      "best_error": 0.0007111044575022367,
+      "source": "PDG 2022"
+    },
+    "alpha_em": {
+      "value": 0.0072973525693,
+      "claimed": true,
+      "best_match": 0.007294101184447459,
+      "best_error": 0.00044555677167361254,
+      "source": "CODATA 2022"
+    },
+    "alpha_gravity_proton": {
+      "value": 5.91e-39,
+      "claimed": false,
+      "best_match": 8.883071827069077e-10,
+      "best_error": 1.503057838759573e+29,
+      "source": "G\u00b7mp\u00b2/(\u210fc)"
+    },
+    "alpha_s_MZ": {
+      "value": 0.1179,
+      "claimed": true,
+      "best_match": 0.11797752808988764,
+      "best_error": 0.0006575749778425137,
+      "source": "PDG 2022"
+    },
+    "baryon_to_photon": {
+      "value": 6.12e-10,
+      "claimed": false,
+      "best_match": 8.883071827069077e-10,
+      "best_error": 0.4514823246844898,
+      "source": "Planck 2018"
+    },
+    "delta_m2_atm_over_sol": {
+      "value": 32.5,
+      "claimed": false,
+      "best_match": 32.5,
+      "best_error": 0.0,
+      "source": "PDG 2022"
+    },
+    "deuteron_BE_over_mp": {
+      "value": 0.001186,
+      "claimed": false,
+      "best_match": 0.001183431952662722,
+      "best_error": 0.0021653012961872506,
+      "source": "2.224 MeV / 938.3 MeV"
+    },
+    "electron_over_proton": {
+      "value": 0.0005446,
+      "claimed": false,
+      "best_match": 0.0005451894018694704,
+      "best_error": 0.001082265643537232,
+      "source": "CODATA 2022"
+    },
+    "eta_over_pion": {
+      "value": 3.929,
+      "claimed": false,
+      "best_match": 3.9270509831248424,
+      "best_error": 0.0004960592708469005,
+      "source": "PDG 2022"
+    },
+    "fpi_over_mpi": {
+      "value": 0.939,
+      "claimed": false,
+      "best_match": 0.9399623239132722,
+      "best_error": 0.001024839098266478,
+      "source": "130.2 / 139.6 MeV"
+    },
+    "g_minus_2_electron": {
+      "value": 0.00115965218128,
+      "claimed": false,
+      "best_match": 0.0011574904952137844,
+      "best_error": 0.0018640814039858251,
+      "source": "CODATA 2022"
+    },
+    "g_minus_2_muon": {
+      "value": 0.00116592061,
+      "claimed": false,
+      "best_match": 0.0011659702790615043,
+      "best_error": 4.2600723478372573e-05,
+      "source": "FNAL 2023"
+    },
+    "higgs_over_W": {
+      "value": 1.557,
+      "claimed": false,
+      "best_match": 1.5572341774696137,
+      "best_error": 0.00015040299910965888,
+      "source": "PDG 2022"
+    },
+    "higgs_over_Z": {
+      "value": 1.37,
+      "claimed": false,
+      "best_match": 1.3705882352941177,
+      "best_error": 0.00042936882782303366,
+      "source": "PDG 2022"
+    },
+    "hubble_h": {
+      "value": 0.674,
+      "claimed": false,
+      "best_match": 0.6738158677266491,
+      "best_error": 0.00027319328390341393,
+      "source": "Planck 2018"
+    },
+    "kaon_over_pion": {
+      "value": 3.54,
+      "claimed": false,
+      "best_match": 3.5411974837946714,
+      "best_error": 0.000338272258381731,
+      "source": "PDG 2022"
+    },
+    "koide_Q": {
+      "value": 0.666661,
+      "claimed": true,
+      "best_match": 0.6666666666666666,
+      "best_error": 8.500072250636509e-06,
+      "source": "PDG masses"
+    },
+    "lambda_QCD_over_mp": {
+      "value": 0.214,
+      "claimed": false,
+      "best_match": 0.21395229327033238,
+      "best_error": 0.00022292864330660084,
+      "source": "Approx. \u039b_QCD \u2248 200 MeV"
+    },
+    "mb_over_mc": {
+      "value": 3.4,
+      "claimed": false,
+      "best_match": 3.4000000000000004,
+      "best_error": 1.3061447348531254e-16,
+      "source": "PDG 2022"
+    },
+    "mc_over_ms": {
+      "value": 11.76,
+      "claimed": false,
+      "best_match": 11.758940966291712,
+      "best_error": 9.005388675913399e-05,
+      "source": "PDG 2022"
+    },
+    "ms_over_md": {
+      "value": 18.9,
+      "claimed": false,
+      "best_match": 18.89595668073055,
+      "best_error": 0.00021393223647880115,
+      "source": "PDG 2022 (17-22 range)"
+    },
+    "mt_over_mb": {
+      "value": 41.1,
+      "claimed": false,
+      "best_match": 41.12398172952526,
+      "best_error": 0.0005834970687411356,
+      "source": "PDG 2022"
+    },
+    "mu_over_e": {
+      "value": 206.768283,
+      "claimed": true,
+      "best_match": 206.76923076923077,
+      "best_error": 4.583726367630981e-06,
+      "source": "CODATA 2022"
+    },
+    "mu_over_md": {
+      "value": 0.474,
+      "claimed": false,
+      "best_match": 0.4727272727272727,
+      "best_error": 0.0026850786344456935,
+      "source": "PDG 2022 (0.38-0.58)"
+    },
+    "neutron_over_proton": {
+      "value": 1.00137842,
+      "claimed": false,
+      "best_match": 1.0016400882737444,
+      "best_error": 0.0002613080814587643,
+      "source": "CODATA 2022"
+    },
+    "omega_CDM": {
+      "value": 0.265,
+      "claimed": false,
+      "best_match": 0.2648717094642406,
+      "best_error": 0.00048411522928080064,
+      "source": "Planck 2018"
+    },
+    "omega_baryon": {
+      "value": 0.0493,
+      "claimed": false,
+      "best_match": 0.049478260029405405,
+      "best_error": 0.003615822097472783,
+      "source": "Planck 2018"
+    },
+    "omega_lambda": {
+      "value": 0.685,
+      "claimed": false,
+      "best_match": 0.6852825491509577,
+      "best_error": 0.00041248051234686216,
+      "source": "Planck 2018"
+    },
+    "pion_charged_over_e": {
+      "value": 273.132,
+      "claimed": false,
+      "best_match": 273.10569804382516,
+      "best_error": 9.629760033554426e-05,
+      "source": "PDG 2022"
+    },
+    "pion_neutral_over_e": {
+      "value": 264.143,
+      "claimed": false,
+      "best_match": 264.1671241737666,
+      "best_error": 9.13299756821445e-05,
+      "source": "PDG 2022"
+    },
+    "proton_over_e": {
+      "value": 1836.15267,
+      "claimed": true,
+      "best_match": 1836.0,
+      "best_error": 8.31466808258072e-05,
+      "source": "CODATA 2022"
+    },
+    "rho_over_pion": {
+      "value": 5.535,
+      "claimed": false,
+      "best_match": 5.538461538461538,
+      "best_error": 0.0006253908692932579,
+      "source": "PDG 2022"
+    },
+    "rydberg_times_a0_over_c": {
+      "value": 0.007297,
+      "claimed": false,
+      "best_match": 0.007294101184447459,
+      "best_error": 0.0003972612789558368,
+      "source": "Equals \u03b1 \u2014 cross-check"
+    },
+    "sigma8": {
+      "value": 0.811,
+      "claimed": false,
+      "best_match": 0.8111587982832618,
+      "best_error": 0.00019580552806622368,
+      "source": "Planck 2018"
+    },
+    "sin2_theta12_PMNS": {
+      "value": 0.307,
+      "claimed": false,
+      "best_match": 0.3072429592104233,
+      "best_error": 0.0007913980795548289,
+      "source": "PDG 2022"
+    },
+    "sin2_theta13_PMNS": {
+      "value": 0.022,
+      "claimed": false,
+      "best_match": 0.022050572707523673,
+      "best_error": 0.0022987594328942634,
+      "source": "PDG 2022"
+    },
+    "sin2_theta23_PMNS": {
+      "value": 0.546,
+      "claimed": false,
+      "best_match": 0.5456064873070162,
+      "best_error": 0.0007207192179190874,
+      "source": "PDG 2022"
+    },
+    "sin2_theta_W": {
+      "value": 0.23121,
+      "claimed": true,
+      "best_match": 0.2311477126785564,
+      "best_error": 0.00026939717764624444,
+      "source": "PDG 2022 on-shell"
+    },
+    "spectral_index_ns": {
+      "value": 0.965,
+      "claimed": false,
+      "best_match": 0.9656652360515021,
+      "best_error": 0.0006893637839400511,
+      "source": "Planck 2018"
+    },
+    "tau_over_e": {
+      "value": 3477.23,
+      "claimed": true,
+      "best_match": 3478.153846153846,
+      "best_error": 0.0002656845114778633,
+      "source": "PDG 2022"
+    },
+    "tau_over_mu": {
+      "value": 16.817,
+      "claimed": false,
+      "best_match": 16.817401445850187,
+      "best_error": 2.387143070625484e-05,
+      "source": "PDG 2022"
+    },
+    "theta_QCD_upper": {
+      "value": 1e-10,
+      "claimed": false,
+      "best_match": 8.883071827069077e-10,
+      "best_error": 7.8830718270690765,
+      "source": "Upper bound"
+    },
+    "upsilon_over_proton": {
+      "value": 10.078,
+      "claimed": false,
+      "best_match": 10.078631310355282,
+      "best_error": 6.264242461630054e-05,
+      "source": "PDG 2022"
+    }
+  }
+}
