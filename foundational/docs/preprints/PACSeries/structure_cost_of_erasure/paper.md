@@ -326,41 +326,16 @@ This paper confirms the same hierarchy in physical dynamics. The ratio $A/(A+\xi
 
 The implication: PAC conservation operates on proportional geometry, not absolute quantities. This is treated in full in Paper 2.
 
-### 9.4 Connection to phase transitions
+### 9.4 Further connections
 
-The SEC prime manifold experiment found that a stress field constructed from prime irregularities exhibits a phase transition. At the critical point $\lambda^* = 0.9816$, the fraction of positive excursions converges to $1/\phi = 0.618$ with error 0.000006.
+Three connections to companion papers are noted briefly here and treated in full in §14:
 
-The mechanism is run-length asymmetry: positive runs last longer than negative runs by a ratio of $\phi$ at criticality.
+- **Phase transitions** (Paper 2): The SEC prime manifold experiment finds $1/\phi$ fraction at a critical point ($\lambda^* = 0.9816$, error 0.000006). Whether this paper's 3:2 decay ratio corresponds to a critical point in a deeper sense remains open.
+- **Standard Model** (Paper 4): If gauge interactions involve partial erasure, coupling constants may encode accumulated $\xi$ at different energy scales. The gauge hierarchy $\xi(SU(3)) > \xi(SU(2)) > \xi(U(1))$ is confirmed in §15.1.
+- **Feigenbaum constants** (Paper 3): The cascade topology is self-similar, which is where Feigenbaum universality applies. Whether cascade information flow connects formally to period-doubling dynamics is unknown.
+- **Born rule** (consistency check): A separate experiment (quantum_validation) confirmed that SEC collapse statistics reproduce quantum Born rule probabilities across multiple bias settings (all χ² p-values > 0.05, N = 10,000 × 10 seeds). This does not validate the erasure model, but it establishes that the collapse mechanism used here is compatible with standard quantum measurement statistics.
 
-This paper's finding that $A/(A+\xi) = \ln\phi$ at a specific decay ratio (1.5) may reflect the same structure. The decay ratio 1.5 is where the system sits at a balance point between localization (all information stays recoverable) and diffusion (all information becomes structure). Balance points often produce power-law or golden-ratio signatures.
-
-Whether the 1.5 decay ratio corresponds to a critical point in some deeper sense remains an open question.
-
-### 9.5 Connection to Standard Model findings
-
-The PAC confluence experiment found that several Standard Model parameters can be expressed as Fibonacci ratios:
-
-| Parameter | Expression | Error |
-|-----------|------------|-------|
-| $\sin^2\theta_W$ (weak mixing) | $F_4/F_7 = 3/13$ | 0.19% |
-| Koide $Q$ (lepton masses) | $F_3/(F_3+F_2) = 2/3$ | EXACT |
-| Cabibbo angle | $\arctan(F_4/F_7)$ | <0.05° |
-
-These are algebraic observations. They do not explain why such ratios should appear.
-
-This paper offers a potential mechanism: if gauge interactions involve information exchange, and information exchange involves partial erasure, then every interaction creates correlational structure $\xi$. The structure follows golden ratio partitioning. Coupling constants would then encode accumulated $\xi$ at different energy scales.
-
-This connection is speculative. The Standard Model findings are themselves unvalidated beyond numerical coincidence. Combining two speculative claims does not produce certainty. But if both are correct, they reinforce each other. If either is wrong, the contradiction will eventually become apparent.
-
-### 9.6 The Feigenbaum connection
-
-The Feigenbaum constants describe universal behavior in period-doubling bifurcations. Within this research program, closed-form expressions for these constants were found that achieve 6-13 digit precision using the numbers 55, 17, and $\pi$.
-
-The number 55 is the tenth Fibonacci number. It also appears in the expression $\Xi = 1 + \pi/55 \approx 1.0571$.
-
-The cascade topology in this paper is self-similar: each mode couples to the next in the same pattern. Self-similar structures are precisely where Feigenbaum universality applies. Whether there is a deep connection between cascade information flow and Feigenbaum dynamics is unknown. The numerical coincidences are suggestive but not conclusive.
-
-### 9.7 Status of these connections
+### 9.5 Status of these connections
 
 All connections described in this section are internal to this research program. None have been validated by external replication. None have been derived from first principles with complete rigor. They are patterns that have emerged across independent computational experiments.
 
@@ -575,7 +550,7 @@ The findings in this paper connect to five companion papers in the PACSeries. Ea
 
 **Paper 2 (The Balance Constant and Its Decomposition)**: This paper finds proximity to $\ln\phi$ (~2%) without $\gamma$. Paper 2 establishes $\Xi = \gamma + \ln\phi$ from four independent domains (within 0.12%) and explains the decomposition: $\gamma$ is the discrete-continuous interface cost, $\ln\phi$ is the collapse efficiency. The proximity of pure information partitioning to $\ln\phi$ at natural parameters is consistent with this decomposition. Paper 2 also presents the conditional attractor hypothesis: $\Xi$ emerges only when systems are closed, recursive, conserving, and computationally saturated—conditions the Landauer cascade satisfies.
 
-**Paper 3 (Feigenbaum Constants from Fibonacci Arithmetic)**: The cascade topology is self-similar, which is where Feigenbaum universality applies. Paper 3 finds closed-form expressions for all three Feigenbaum constants (6–13 digit precision) using $55 = F_{10}$, the same number appearing in $\Xi = 1 + \pi/55$. Whether cascade information flow connects formally to period-doubling dynamics remains open.
+**Paper 3 (Feigenbaum Constants from Fibonacci Arithmetic)**: The cascade topology is self-similar, which is where Feigenbaum universality applies. Paper 3 finds closed-form expressions for all three Feigenbaum constants (6–13 digit precision) using $55 = F_{10}$, the same number appearing in $\Xi = 1 + \pi/55$. A structural bridge exists via the correction template form $(\varphi^2 + 1)/\pi = (\varphi + 2)/\pi \approx 1.1517$, which arises from convergent error bounds on the golden angle's rational approximants (milestone3/exp_27) rather than from curve-fitting. Whether cascade information flow connects formally to period-doubling dynamics remains open.
 
 **Paper 4 (Standard Model Parameters from Fibonacci Arithmetic)**: The gauge topology speculation in Section 5 predicts $\xi(SU(3)) > \xi(SU(2)) > \xi(U(1))$. Paper 4 establishes Fibonacci structure in measured coupling constants ($\sin^2\theta_W = F_4/F_7 = 3/13$ to 0.19%, $\alpha$ to 5.7 ppm) and lepton mass ratios ($\mu/e$ to 5 ppm). If gauge interactions create characteristic $\xi$, Paper 4's results may reflect accumulated structure costs.
 
@@ -633,6 +608,8 @@ The ratio does not converge monotonically to $\ln\varphi$ as $\Theta \to 0$; ins
 
 Milestone3/exp_27 provides a complementary argument: on a $\pi$-closed phase manifold ($S^1$), the golden angle $\alpha^* = 1 - 1/\varphi$ minimises worst-case star discrepancy $D^*_N$ among all tested irrationals. The causal chain $\pi$ (rotational closure) $\to$ $\varphi$ (optimal non-resonance) $\to$ Fibonacci (integer projection) provides the mechanism: $\pi$ creates the stage, $\varphi$ is the optimal actor, Fibonacci numbers are the script.
 
+Milestone3/exp_28 cross-validates this chain independently. Four tests confirm: (1) convergent Fibonacci stage ratios stabilise near $1/(\varphi\sqrt{5}) \approx 0.2764$ (measured 0.2735, a theorem of Fibonacci asymptotics, not an empirical fit); (2) phase-thermodynamic discrepancy decreases monotonically with Fibonacci depth (from 0.306 to 0.010); (3) the golden angle has the lowest mean discrepancy and lowest packing coefficient-of-variation among all tested irrationals (rank 1); (4) $\alpha$-convergence errors decrease monotonically from $0.118$ to $2.16 \times 10^{-5}$, with 92.2% of late-stage estimates closer than early-stage. All four tests pass (4/4).
+
 **Status**: Derived and partially validated (exp_16). The mathematical structure is correct; the match to simulation is approximate (~2%). See Data/results/exp_16_ln_phi_derivation_20260209_111320.json.
 
 ### 15.3 Precision Tightening and Full Stack Validation (Feb 2026)
@@ -650,3 +627,7 @@ The gap narrows monotonically with sample size: ~2% at $N = 5 \times 10^5$, ~1.6
 **Full stack validation (exp_25)**: All six layers of the derivation chain are validated in a single end-to-end experiment. The results are presented in §13.1.
 
 **Status**: Complete (exp_23, exp_25). The derivation chain holds end-to-end with no layer failing.
+
+---
+
+*All code, data, and experiment scripts for this paper and the full PACSeries are publicly available at [https://github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory). See the accompanying publication package README.md for reproduction instructions.*

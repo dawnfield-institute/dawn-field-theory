@@ -1,0 +1,218 @@
+{
+  "experiment": "exp_02_su4_forbidden",
+  "paper": "PACSeries Paper 4",
+  "section": "3.3",
+  "timestamp": "2026-02-20T09:34:31.176858",
+  "main_results": {
+    "su_n_analysis": [
+      {
+        "N": 2,
+        "generators": 3,
+        "is_fibonacci": true,
+        "nearest_fibonacci": 3,
+        "gap": 0
+      },
+      {
+        "N": 3,
+        "generators": 8,
+        "is_fibonacci": true,
+        "nearest_fibonacci": 8,
+        "gap": 0
+      },
+      {
+        "N": 4,
+        "generators": 15,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 13,
+        "gap": 2
+      },
+      {
+        "N": 5,
+        "generators": 24,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 21,
+        "gap": 3
+      },
+      {
+        "N": 6,
+        "generators": 35,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 34,
+        "gap": 1
+      },
+      {
+        "N": 7,
+        "generators": 48,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 55,
+        "gap": -7
+      },
+      {
+        "N": 8,
+        "generators": 63,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 55,
+        "gap": 8
+      },
+      {
+        "N": 9,
+        "generators": 80,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 89,
+        "gap": -9
+      },
+      {
+        "N": 10,
+        "generators": 99,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 89,
+        "gap": 10
+      },
+      {
+        "N": 11,
+        "generators": 120,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 144,
+        "gap": -24
+      },
+      {
+        "N": 12,
+        "generators": 143,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 144,
+        "gap": -1
+      },
+      {
+        "N": 13,
+        "generators": 168,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 144,
+        "gap": 24
+      },
+      {
+        "N": 14,
+        "generators": 195,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 233,
+        "gap": -38
+      },
+      {
+        "N": 15,
+        "generators": 224,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 233,
+        "gap": -9
+      },
+      {
+        "N": 16,
+        "generators": 255,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 233,
+        "gap": 22
+      },
+      {
+        "N": 17,
+        "generators": 288,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 233,
+        "gap": 55
+      },
+      {
+        "N": 18,
+        "generators": 323,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 377,
+        "gap": -54
+      },
+      {
+        "N": 19,
+        "generators": 360,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 377,
+        "gap": -17
+      },
+      {
+        "N": 20,
+        "generators": 399,
+        "is_fibonacci": false,
+        "nearest_fibonacci": 377,
+        "gap": 22
+      }
+    ],
+    "other_groups": [
+      {
+        "group": "SO(3)",
+        "generators": 3,
+        "is_fibonacci": true
+      },
+      {
+        "group": "SO(5)",
+        "generators": 10,
+        "is_fibonacci": false
+      },
+      {
+        "group": "SO(6)",
+        "generators": 15,
+        "is_fibonacci": false
+      },
+      {
+        "group": "SO(7)",
+        "generators": 21,
+        "is_fibonacci": true
+      },
+      {
+        "group": "SO(8)",
+        "generators": 28,
+        "is_fibonacci": false
+      },
+      {
+        "group": "SO(10)",
+        "generators": 45,
+        "is_fibonacci": false
+      },
+      {
+        "group": "Sp(4)",
+        "generators": 10,
+        "is_fibonacci": false
+      },
+      {
+        "group": "Sp(6)",
+        "generators": 21,
+        "is_fibonacci": true
+      },
+      {
+        "group": "G\u2082",
+        "generators": 14,
+        "is_fibonacci": false
+      },
+      {
+        "group": "F\u2084",
+        "generators": 52,
+        "is_fibonacci": false
+      },
+      {
+        "group": "E\u2086",
+        "generators": 78,
+        "is_fibonacci": false
+      },
+      {
+        "group": "E\u2087",
+        "generators": 133,
+        "is_fibonacci": false
+      },
+      {
+        "group": "E\u2088",
+        "generators": 248,
+        "is_fibonacci": false
+      }
+    ],
+    "fibonacci_su_groups": [
+      "SU(2)",
+      "SU(3)"
+    ],
+    "su4_generators": 15,
+    "su4_is_fibonacci": false,
+    "systematic_exclusion": "For N\u22654, N\u00b2\u22121 is never Fibonacci (checked to N=20)",
+    "conclusion": "Only SU(2) and SU(3) have Fibonacci generator counts among SU(N). Combined with U(1), they tile F\u2087=13 uniquely. SU(4)+ groups are systematically excluded by the Fibonacci filter."
+  }
+}

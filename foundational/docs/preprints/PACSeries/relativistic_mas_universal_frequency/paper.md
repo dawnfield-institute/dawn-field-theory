@@ -23,16 +23,11 @@ While these computational results are promising, they require independent valida
 
 ---
 
-> **Consolidated into PACSeries v2.0 (February 2026).** This paper's 0.020 Hz findings have been validated computationally in PACSeries Paper 6: *Computational Validation of PAC Conservation* (February 2026), including Landauer bridge derivation and Token PAC Tree phase transition evidence.
+> **Consolidated into PACSeries v2.0 (February 2026).** This paper's MAS framework was originally planned for integration into PACSeries Paper 6: *Computational Validation of PAC Conservation*. However, milestone3/exp_05 **falsified** the E-I-S triangle oscillator's ability to produce 0.020 Hz (natural frequency ~0.107 Hz; 64-configuration coupling sweep found no path to 0.020 Hz). The 0.020 Hz resonance lock is computationally reproducible in the original GAIA framework, but the claimed 2/3 ratio derivation from E-I-S dynamics does not hold.
 >
-> Key content integrated:
-> - 0.020 Hz emergence across cosmic scales → Paper 6 validation evidence
-> - QBE validation (Dec 2025 update) → Paper 6 three-system evidence base
-> - Mass-frequency unification framework → Paper 6 Landauer bridge
+> **Status**: MAS merge into Paper 6 **deferred**. The Landauer bridge content (connecting thermodynamic erasure to computational dynamics) has been retained independently in Paper 6 §8.
 >
-> **Honest note**: Milestone3 exp_05 found that the E-I-S triangle oscillator simulation gives 0.007 Hz (ratio 0.232), not the claimed 2/3 (0.667) relationship. The 0.020 Hz resonance lock is reproducible; the theoretical derivation of the 2/3 ratio requires further work.
->
-> The original DOI remains valid. This paper preserves the full MAS framework; Paper 6 provides computational validation context.
+> The original DOI remains valid. This paper preserves the full MAS framework as a historical record.
 
 ---
 

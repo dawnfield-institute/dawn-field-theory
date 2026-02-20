@@ -7,16 +7,11 @@ PACSeries Paper 4, Section 6
 
 Derives fermion mass ratios from Fibonacci-structured expressions:
 
-    m_μ/m_e  → φ^(F₅+1) / F₄ = φ⁶/3  ≈ 206.380  (measured: 206.768, 5 ppm)
-    m_p/m_e  → F₁₀ · F₇ · φ²         ≈ 1872.25  (measured: 1836.15, 83 ppm)
-    m_τ/m_e  → φ^(F₇−1) · F₃         ≈ 3478.3   (measured: 3477.2, 350 ppm)
+    m_μ/m_e  → F₄ × F₆² × (1 + 1/F₇) = 3 × 64 × 14/13 ≈ 206.769  (5 ppm)
+    m_τ/m_e  → F₄ × F₇ × F₁₁ + F₅    = 3 × 13 × 89 + 5  = 3476    (350 ppm)
+    m_p/m_e  → F₄ × F₉ × F₁₂ / F₆    = 3 × 34 × 144/8   = 1836    (83 ppm)
 
-These are partial mass formulae with acknowledged asymmetry:
-μ/e is highly precise (5 ppm), while heavier ratios show larger
-deviations (83–350 ppm), likely due to missing QCD/EW corrections
-at higher mass scales.
-
-Source: pac_confluence_xi/scripts/validated/10_unified_fractal_pac.py
+Source: mass_derivation/exp_05_tighten_mass.py, exp_06_validate_tight.py
 """
 
 import json
@@ -33,7 +28,8 @@ def fib(n):
 
 
 PHI = (1 + math.sqrt(5)) / 2
-F2, F3, F4, F5, F7, F10 = fib(2), fib(3), fib(4), fib(5), fib(7), fib(10)
+F2, F3, F4, F5 = fib(2), fib(3), fib(4), fib(5)
+F6, F7, F9, F10, F11, F12 = fib(6), fib(7), fib(9), fib(10), fib(11), fib(12)
 
 # PDG 2024 masses (MeV/c²)
 M_E = 0.51099895
@@ -60,38 +56,47 @@ def main():
     print("=" * 60)
     print()
 
-    # μ/e ratio
-    mu_e_pac = PHI ** (F5 + 1) / F4  # φ⁶/3
+    # μ/e ratio: F₄ × F₆² × (1 + 1/F₇) = 3 × 64 × (14/13)
+    mu_e_pac = F4 * F6**2 * (1 + 1/F7)
     mu_e_dev = abs(mu_e_pac - RATIO_MU_E) / RATIO_MU_E * 1e6
 
     print("1. Muon/Electron Mass Ratio")
-    print(f"   Formula: m_μ/m_e = φ^(F₅+1)/F₄ = φ⁶/3")
+    print(f"   Formula: m_μ/m_e = F₄ × F₆² × (1 + 1/F₇) = {F4} × {F6**2} × {14}/{13}")
     print(f"   PAC:      {mu_e_pac:.6f}")
     print(f"   Measured: {RATIO_MU_E:.6f}")
     print(f"   Deviation: {mu_e_dev:.1f} ppm")
     print()
 
-    # Proton/electron ratio
-    p_e_pac = F10 * F7 * PHI**2
+    # τ/e ratio: F₄ × F₇ × F₁₁ + F₅ = 3 × 13 × 89 + 5
+    tau_e_pac = F4 * F7 * F11 + F5
+    tau_e_dev = abs(tau_e_pac - RATIO_TAU_E) / RATIO_TAU_E * 1e6
+
+    print("2. Tau/Electron Mass Ratio")
+    print(f"   Formula: m_τ/m_e = F₄ × F₇ × F₁₁ + F₅ = {F4}×{F7}×{F11}+{F5} = {tau_e_pac}")
+    print(f"   PAC:      {tau_e_pac:.2f}")
+    print(f"   Measured: {RATIO_TAU_E:.2f}")
+    print(f"   Deviation: {tau_e_dev:.0f} ppm ({tau_e_dev/1e4:.4f}%)")
+    print()
+
+    # p/e ratio: F₄ × F₉ × F₁₂ / F₆ = 3 × 34 × 144 / 8
+    p_e_pac = F4 * F9 * F12 / F6
     p_e_dev = abs(p_e_pac - RATIO_P_E) / RATIO_P_E * 1e6
 
-    print("2. Proton/Electron Mass Ratio")
-    print(f"   Formula: m_p/m_e = F₁₀·F₇·φ²")
+    print("3. Proton/Electron Mass Ratio")
+    print(f"   Formula: m_p/m_e = F₄ × F₉ × F₁₂ / F₆ = {F4}×{F9}×{F12}/{F6} = {p_e_pac:.0f}")
     print(f"   PAC:      {p_e_pac:.4f}")
     print(f"   Measured: {RATIO_P_E:.4f}")
     print(f"   Deviation: {p_e_dev:.0f} ppm ({p_e_dev/1e4:.4f}%)")
     print()
 
-    # τ/e ratio
-    tau_e_pac = PHI ** (F7 - 1) * F3
-    tau_e_dev = abs(tau_e_pac - RATIO_TAU_E) / RATIO_TAU_E * 1e6
+    # Derived ratios
+    tau_mu_pac = tau_e_pac / mu_e_pac
+    tau_mu_meas = RATIO_TAU_E / RATIO_MU_E
+    tau_mu_dev = abs(tau_mu_pac - tau_mu_meas) / tau_mu_meas * 1e6
 
-    print("3. Tau/Electron Mass Ratio")
-    print(f"   Formula: m_τ/m_e = φ^(F₇-1)·F₃ = φ¹²×2")
-    print(f"   PAC:      {tau_e_pac:.2f}")
-    print(f"   Measured: {RATIO_TAU_E:.2f}")
-    print(f"   Deviation: {tau_e_dev:.0f} ppm ({tau_e_dev/1e4:.4f}%)")
-    print()
+    p_mu_pac = p_e_pac / mu_e_pac
+    p_mu_meas = RATIO_P_E / RATIO_MU_E
+    p_mu_dev = abs(p_mu_pac - p_mu_meas) / p_mu_meas * 1e6
 
     # Summary table
     print("=" * 60)
@@ -101,54 +106,57 @@ def main():
     print(f"  {'Ratio':>10s}  {'PAC':>12s}  {'Measured':>12s}  {'Dev (ppm)':>10s}")
     print(f"  {'-'*10}  {'-'*12}  {'-'*12}  {'-'*10}")
     print(f"  {'μ/e':>10s}  {mu_e_pac:12.4f}  {RATIO_MU_E:12.4f}  {mu_e_dev:10.1f}")
-    print(f"  {'p/e':>10s}  {p_e_pac:12.4f}  {RATIO_P_E:12.4f}  {p_e_dev:10.0f}")
     print(f"  {'τ/e':>10s}  {tau_e_pac:12.2f}  {RATIO_TAU_E:12.2f}  {tau_e_dev:10.0f}")
+    print(f"  {'p/e':>10s}  {p_e_pac:12.4f}  {RATIO_P_E:12.4f}  {p_e_dev:10.0f}")
+    print(f"  {'τ/μ':>10s}  {tau_mu_pac:12.4f}  {tau_mu_meas:12.4f}  {tau_mu_dev:10.0f}")
+    print(f"  {'p/μ':>10s}  {p_mu_pac:12.4f}  {p_mu_meas:12.4f}  {p_mu_dev:10.0f}")
     print()
 
-    # Asymmetry discussion
+    # F₄ = 3 universality
     print("=" * 60)
-    print("Precision Asymmetry Analysis")
+    print("F₄ = 3 Universality")
     print("=" * 60)
     print()
-    print("  μ/e (5 ppm) >> p/e (83 ppm) >> τ/e (350 ppm)")
+    print(f"  F₄ = {F4} appears as leading factor in ALL three mass formulas.")
+    print(f"  If F₄ encodes the number of fermion generations, its universal")
+    print(f"  presence follows from PAC branching structure.")
     print()
-    print("  The precision degrades with mass scale. This is expected:")
-    print("  - μ/e involves only QED corrections (small)")
-    print("  - p/e involves QCD confinement (large, nonperturbative)")
-    print("  - τ/e involves EW corrections that grow with mass")
-    print()
-    print("  These are TREE-LEVEL Fibonacci formulae. Full SM loop")
-    print("  corrections would improve precision but require additional")
-    print("  parameters — defeating the purpose of a zero-parameter theory.")
-    print()
-    print("  We present these as 'partial mass formulae' that capture the")
-    print("  dominant structure while honestly acknowledging sub-percent")
-    print("  residuals at higher mass scales.")
 
     results['main_results'] = {
         'mu_over_e': {
-            'formula': 'φ^(F₅+1)/F₄ = φ⁶/3',
+            'formula': 'F₄ × F₆² × (1 + 1/F₇)',
+            'decomposition': f'{F4} × {F6}² × (1 + 1/{F7}) = {F4} × {F6**2} × {14}/{13}',
             'pac_value': round(mu_e_pac, 6),
             'measured': round(RATIO_MU_E, 6),
             'deviation_ppm': round(mu_e_dev, 1),
         },
-        'proton_over_e': {
-            'formula': 'F₁₀·F₇·φ²',
-            'pac_value': round(p_e_pac, 4),
-            'measured': round(RATIO_P_E, 4),
-            'deviation_ppm': round(p_e_dev, 0),
-        },
         'tau_over_e': {
-            'formula': 'φ^(F₇-1)·F₃ = φ¹²×2',
+            'formula': 'F₄ × F₇ × F₁₁ + F₅',
+            'decomposition': f'{F4} × {F7} × {F11} + {F5} = {tau_e_pac}',
             'pac_value': round(tau_e_pac, 2),
             'measured': round(RATIO_TAU_E, 2),
             'deviation_ppm': round(tau_e_dev, 0),
         },
-        'asymmetry_analysis': (
-            'Precision degrades with mass scale: μ/e (5 ppm) > p/e (83 ppm) > τ/e (350 ppm). '
-            'Expected from missing QCD/EW loop corrections at higher scales. '
-            'Tree-level Fibonacci formulae capture dominant structure.'
-        ),
+        'proton_over_e': {
+            'formula': 'F₄ × F₉ × F₁₂ / F₆',
+            'decomposition': f'{F4} × {F9} × {F12} / {F6} = {p_e_pac:.0f}',
+            'pac_value': round(p_e_pac, 4),
+            'measured': round(RATIO_P_E, 4),
+            'deviation_ppm': round(p_e_dev, 0),
+        },
+        'derived_ratios': {
+            'tau_over_mu': {
+                'pac_value': round(tau_mu_pac, 4),
+                'measured': round(tau_mu_meas, 4),
+                'deviation_ppm': round(tau_mu_dev, 0),
+            },
+            'proton_over_mu': {
+                'pac_value': round(p_mu_pac, 4),
+                'measured': round(p_mu_meas, 4),
+                'deviation_ppm': round(p_mu_dev, 0),
+            },
+        },
+        'f4_universality': 'F₄ = 3 appears as leading factor in all three mass formulas',
     }
 
     # Save

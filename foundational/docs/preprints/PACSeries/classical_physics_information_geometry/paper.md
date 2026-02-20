@@ -547,4 +547,4 @@ The progression: Paper 1 establishes the cost. Papers 2–3 find the constants. 
 
 ---
 
-*Data and code for this paper are in the accompanying package. See README.md for reproduction instructions.*
+*All code, data, and experiment scripts for this paper and the full PACSeries are publicly available at [https://github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory). See the accompanying publication package README.md for reproduction instructions.*

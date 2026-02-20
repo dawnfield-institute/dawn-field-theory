@@ -18,7 +18,7 @@ $$\Xi = \gamma + \ln(\varphi) \approx 0.5772 + 0.4812 = 1.0584$$
 
 where γ is the Euler–Mascheroni constant and φ = (1+√5)/2.
 
-This is not a numerological observation. We derive the decomposition from the intersection of two well-understood mechanisms: (1) PAC recursion, which yields ln(φ) as its natural information unit (Paper 1), and (2) the Mertens product from prime number theory, which introduces γ as the cost of mapping between discrete and continuous counting. The two constants arise from *different mathematics* and converge to Ξ because both describe the same underlying constraint: the cost of maintaining structure under recursive conservation.
+This is not a numerological observation. We derive the decomposition from the intersection of two well-understood mechanisms: (1) PAC recursion, which yields ln(φ) as its natural information unit (Paper 1), and (2) the Mertens product from prime number theory, which introduces γ as the cost of mapping between discrete and continuous counting. The two constants arise from *different mathematics* and converge to Ξ, consistent with the hypothesis that both reflect the cost of maintaining structure under recursive conservation.
 
 The claim is supported by four independent computational domains — Fibonacci arithmetic, cellular automata, the prime number sieve, and Landauer erasure — which converge on Ξ ≈ 1.057–1.058 with p < 0.004 against random clustering.
 
@@ -72,11 +72,11 @@ connecting it to hyperbolic geometry and the geometric mean between successive F
 
 At first glance, γ (from the harmonic series) and ln(φ) (from Fibonacci recursion) have no obvious relationship. Their sum Ξ = 1.0584... is not a listed constant in mathematical databases.
 
-The central claim of this paper is that these constants add because they arise from complementary aspects of the same process: maintaining PAC conservation across scale transitions. Specifically:
+This paper's central observation is that these constants arise independently from PAC-conserving processes and converge to Ξ across four computational domains. Specifically:
 - **ln(φ)** is the cost of recursive structure (how much information each PAC level contributes — derived in Paper 1)
 - **γ** is *consistent with* the cost of discrete-to-continuous regularisation (it governs the Mertens product, which describes PAC-conserving prime sieving)
 
-The interpretation of γ as "discrete-to-continuous cost" is supported by its role in Mertens' theorem and its appearance at the Rule 110 order/disorder boundary, but it has not been proven from first principles. What *is* established is that both constants arise independently from PAC-conserving processes and converge to Ξ across four computational domains. The question of *why* they must add remains open (§10.1).
+The interpretation of γ as "discrete-to-continuous cost" is supported by its role in Mertens' theorem and its appearance at the Rule 110 order/disorder boundary, but it has not been proven from first principles. The question of *why* these two costs must add to give the balance constant remains open (§10.1).
 
 ---
 
@@ -215,7 +215,7 @@ The ratio of the first non-trivial Fibonacci numbers matches the sieve fraction 
 
 ## §7. Domain 4 — Landauer Erasure
 
-Paper 1 established that the ratio ξ/A (structure created per unit of recoverable information) converges to approximately 1.086 in the RBF binding experiment. The predicted value from Paper 1's framework is Ξ/1 = 1.058. The 2.6% discrepancy places this as the lowest-precision confirmation, but it is included because it derives from completely independent physics (thermodynamic erasure vs number-theoretic sieving vs computational automata).
+Paper 1 established that the ratio ξ/A (structure created per unit of recoverable information) converges to approximately 1.086 in the RBF binding experiment. The predicted value is Ξ = 1.058. The 2.6% discrepancy makes this the lowest-precision confirmation, but it derives from completely independent physics (thermodynamic erasure vs number-theoretic sieving vs computational automata).
 
 The partition ratio A/(A+ξ) falls within ~2% of ln(φ) across 100 independent seeds (Paper 1, §6), with ln(φ) consistently within the 95% confidence interval. This structural proximity — robust across coupling strengths, environment sizes, and decay parameters — confirms the ln(φ) component of Ξ as a topological feature of the erasure partition rather than a tuned coincidence.
 
@@ -297,9 +297,13 @@ The k = 10.0121 analysis (§4.2) suggests the gap is a discretisation artefact (
 
 We have not explained *why* Fibonacci arithmetic, cellular automata, prime number theory, and thermodynamic erasure all produce Ξ. We have only shown *that* they do. A deeper theory connecting these domains remains to be formulated.
 
-### §10.3. The Landauer Precision Gap
+### §10.3. PAC Depth and Physical Hierarchies
 
-The Landauer erasure measurement (ξ/A ≈ 1.086) has 2.6% error against the predicted Ξ = 1.058. This is the weakest link. Reducing this error — or explaining the offset — would significantly strengthen the case.
+The PAC depth bound (§9.3) constrains emergence to depth ≤ 2, but physical systems may require much deeper recursion. The gravity hierarchy — the ~10³⁸ ratio between Planck and proton scales — corresponds to Fibonacci depth 183, where 183 = F₇² + F₇ + 1 is the third cyclotomic polynomial evaluated at F₇. Preliminary tests (milestone3/exp_23) find that log₁₀(F₁₈₃) ≈ 37.9 accounts for the hierarchy to within a factor of ~2, but the correction term and its uniqueness remain unresolved. This is explored further in Paper 4 §11.
+
+### §10.4. The Landauer Precision Gap
+
+The Landauer erasure measurement (ξ/A ≈ 1.086) has 2.6% error against the predicted Ξ = 1.058. Reducing this error — or explaining the offset — would strengthen the case. Whether the gap reflects simulation limitations or a genuine correction term is not yet known.
 
 ---
 
@@ -331,15 +335,16 @@ This paper would be falsified by any of the following:
 | Only k=2 gives ln(φ) decay | milestone3/exp_22 | Analytical | Derived |
 | MED depth crossing at d ≈ 3.25 | milestone3/exp_11 | CV = 5.3% | Measured |
 | Fibonacci–MED complementarity | milestone3/exp_12 | — | Interpreted |
+| F₁₈₃ gravity hierarchy | milestone3/exp_23 | Factor ~2 gap | Open (see Paper 4) |
 | 1 + π/55 is discrete approx. to γ + ln(φ) | exp_02, exp_04 | 0.034% gap | Proposed |
 
 **Core finding**: The balance constant governing recursive-conservation systems decomposes as Ξ = γ + ln(φ), reflecting the sum of discrete-to-continuous bridge cost (γ) and recursive information unit (ln φ). Four independent computational domains converge on this value with p < 0.004. Additionally, PAC conservation analytically forces emergence depth ≤ 2, and only the k = 2 (Fibonacci) cascade produces ln(φ) as its information unit — constraining the decomposition from first principles. The interpretation of γ as "discrete-to-continuous cost" remains the strongest available account, but 1/√3 performs comparably (§9.2), and 21 constant-combinations fall within 5% of Ξ.
 
 ---
 
-## §13. Completed Computations
+## §13. Numerical Details
 
-All experiments were run during the February 2026 consolidation. Key outputs:
+Key numerical outputs from the February 2026 consolidation programme. These supplement the main text with precision data for independent verification.
 
 ### §13.1. Ξ Derivation Contest (exp_01)
 
@@ -395,4 +400,8 @@ Rule 110 midpoint vs γ: 0.56% error.
 3. Cook, M. (2004). "Universality in Elementary Cellular Automata." *Complex Systems*, 15(1), 1–40.
 4. Wolfram, S. (1984). "Universality and Complexity in Cellular Automata." *Physica D*, 10(1-2), 1–35.
 5. Groom, P. (2026). "The Structure Cost of Erasure." PACSeries Paper 1. Dawn Field Institute.
-6. Groom, P. (2026). Milestone 3 validation programme: exp_22 (PAC depth bound), exp_11 (MED depth criticality), exp_12 (coupling base residuals). Dawn Field Institute.
+6. Groom, P. (2026). Milestone 3 validation programme: exp_22 (PAC depth bound), exp_11 (MED depth criticality), exp_12 (coupling base residuals), exp_23 (F₁₈₃ gravity correction). Dawn Field Institute.
+
+---
+
+*All code, data, and experiment scripts for this paper and the full PACSeries are publicly available at [https://github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory). See the accompanying publication package README.md for reproduction instructions.*
