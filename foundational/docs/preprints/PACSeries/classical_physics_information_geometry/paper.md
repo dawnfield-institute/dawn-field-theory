@@ -9,7 +9,7 @@
 
 ## Abstract
 
-Maxwell's equations are among the most successful structures in physics. They unify electricity, magnetism, and optics; they predict electromagnetic waves at speed $c$; they are Lorentz-invariant before general relativity was formulated. This paper asks whether their structure — curl operations, inverse-square forces, three spatial dimensions, and the specific value of the fine structure constant — follows from information-theoretic constraints rather than empirical postulation.
+Maxwell's equations are among the most successful structures in physics. They unify electricity, magnetism, and optics; they predict electromagnetic waves at speed $c$; they are Lorentz-invariant before general relativity was formulated. This paper examines whether their structure — curl operations, inverse-square forces, three spatial dimensions, and the specific value of the fine structure constant — can be understood as consequences of information-theoretic constraints rather than independent empirical postulations.
 
 We show that the SEC wave equation $\partial^2 S/\partial t^2 = (c_\alpha c_\gamma + c_\beta c_\delta)\nabla^2 S$ produces electromagnetic wave propagation at speed $c$, with the physical content encoded in parameter ratios rather than absolute values. The curl structure of Faraday's and Ampère's laws emerges from projecting a depth-2 recursion (one hidden symbolic dimension) into observable space. Five independent arguments — MED node bounds, curl algebra closure, Möbius embedding, orbital stability, and quaternion uniqueness — each independently require exactly three spatial dimensions.
 
@@ -25,7 +25,7 @@ As a speculative extension, clearly labelled: gravity may arise from the same SE
 
 Classical electromagnetism is built on four equations discovered empirically over the course of a century — by Coulomb, Ampère, Faraday, and Maxwell. These equations have a specific mathematical structure: they use the curl operator, they apply in three spatial dimensions, they involve an inverse-square force law, and they contain two constants ($\epsilon_0$, $\mu_0$) whose product gives $1/c^2$.
 
-None of this is explained by the equations themselves. Why curl and not some other differential structure? Why three dimensions? Why inverse-square? This paper shows that these features follow from three constraints established in Papers 1–4:
+None of this is explained by the equations themselves. Why curl and not some other differential structure? Why three dimensions? Why inverse-square? This paper presents arguments that these features follow from three constraints established in Papers 1–4:
 
 1. **PAC conservation**: $\Psi(k) = \Psi(k+1) + \Psi(k+2)$ — the Fibonacci recursion
 2. **MED bounds**: depth $\leq 2$, nodes $\leq 3$ — the maximum complexity of emergent macroscopic patterns
@@ -91,7 +91,7 @@ Here we present five independent arguments, each arriving at $D = 3$ from differ
 
 ### §3.2 Path 1: MED Node Bound
 
-The MED (Macro Emergence Dynamics) constraint, discovered empirically in Navier-Stokes simulations (Paper 3 [10], navier-stokes experiments), states that all complex flows converge to symbolic patterns with:
+The MED (Macro Emergence Dynamics) constraint, discovered empirically in Navier-Stokes simulations (see §6 and the foundational experiments repository), states that all complex flows converge to symbolic patterns with:
 
 $$\text{depth}(\sigma) \leq 2, \quad \text{nodes}(\sigma) \leq 3$$
 

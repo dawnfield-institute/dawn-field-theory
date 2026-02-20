@@ -342,6 +342,21 @@ This paper would be falsified by any of the following:
 
 ---
 
+## §12.1. Connections to the PACSeries
+
+| Paper | Connection |
+|-------|-----------|
+| Paper 1: Structure Cost of Erasure | Landauer structure cost $\xi$ partitions at $A/(A+\xi) \approx \ln\varphi$ — the recursive information unit that decomposes $\Xi$ |
+| **Paper 2 (this paper)** | **The balance constant $\Xi = \gamma + \ln\varphi$ and its four-domain convergence** |
+| Paper 3: Feigenbaum Constants | $F_{10} = 55$ from $\Xi = 1 + \pi/55$ reappears in closed-form Feigenbaum expressions; same structural constant |
+| Paper 4: Standard Model | Fibonacci gauge couplings ($\sin^2\theta_W = F_4/F_7$) operate at the $F_7 = 13$ depth where $\Xi$ regulates balance; $F_{183}$ gravity hierarchy in §10.3 |
+| Paper 5: Classical Physics | $\Xi$ appears as the SEC wave equation balance parameter and as a Navier-Stokes blowup regulator |
+| Paper 6: Computational Validation | $\Xi$ emerges in trained weight spectra at $2.36\times$ above random baselines ($\chi^2 = 5511$); attention layers show preferential clustering |
+
+The derivation chain: Paper 1 discovers $\ln\varphi$ empirically through Landauer erasure. This paper decomposes $\Xi = \gamma + \ln\varphi$ and identifies four independent sources. Papers 3–5 show the same constant structuring physics. Paper 6 finds it in trained neural networks.
+
+---
+
 ## §13. Numerical Details
 
 Key numerical outputs from the February 2026 consolidation programme. These supplement the main text with precision data for independent verification.
