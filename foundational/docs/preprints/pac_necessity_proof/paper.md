@@ -2,7 +2,7 @@
 
 **Category:** [pac] Potential-Actualization-Conservation  
 **Document Type:** [D] Draft  
-**Version:** v1.0  
+**Version:** v1.1  
 **Complexity:** [C4] Advanced Applications  
 **Impact:** [I5] Foundational  
 **Evidence:** [E] Experimental  
@@ -245,6 +245,18 @@ ML experiments showed Pythia activation ratios cross exactly φ at layer 5.
 The 0.02 Hz frequency emerges from both legacy QBE (empirical damping) and modern PAC (Klein-Gordon + Ξ).
 
 **Connection**: exp_26 explains why QBE's empirical tuning worked—it was approximating the PAC attractor.
+
+### 6.5 February 2026: Base-Agnostic Confirmation and Thermodynamic Route
+
+Two results from the PACSeries (February 2026) strengthen the necessity claim:
+
+**Base-agnostic proof.** Paper 2 (*The Balance Constant and Its Decomposition*) verifies $\varphi^2 = \varphi + 1$ across binary, decimal, and arbitrary-precision bases to residual $< 10^{-14}$, confirming that the recurrence $f(n) = f(n-1) + f(n-2)$ is number-system-independent. This closes Open Question 1 (§8): the equal-weight recursion is special because it is the *unique* recursion whose fixed point is algebraically exact in every base.
+
+**Thermodynamic derivation.** Paper 1 (*Strange Cost of Erasure*) derives the balance constant $\Xi$ from Landauer's principle ($kT \ln 2$ per bit erased). This provides an independent route to PAC's attractor that bypasses recursive dynamics entirely:
+
+$$\Xi = \gamma + \ln\varphi \approx 1.0584$$
+
+where $\gamma$ is the Euler–Mascheroni constant (discrete-to-continuous interface cost) and $\ln\varphi$ is the minimum entropic cost of one PAC recursion step. The thermodynamic and recursive derivations converge to the same value — suggesting PAC necessity is not merely dynamical but thermodynamic.
 
 ---
 

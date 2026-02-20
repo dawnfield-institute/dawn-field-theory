@@ -105,6 +105,25 @@ $$\zeta_p = \frac{p}{(F_4)^2} + F_3\left[1 - \left(\frac{F_3}{F_4}\right)^{p/F_4
 
 Every numerical value derives from Fibonacci structure.
 
+### 2.5 February 2026: Dimensional Generalization
+
+PACSeries Paper 5 (*Classical Physics from Information Geometry*, February 2026) derives a general formula for the dimensional factor:
+
+$$k(d) = d \times F_{d+1}$$
+
+where $d$ is the spatial dimension and $F_n$ the $n$-th Fibonacci number. The familiar factor of 9 in the She–Lévêque formula is the $d = 3$ case:
+
+| Dimension | $k = d \times F_{d+1}$ | Formula |
+|-----------|----------------------|---------|
+| $d = 1$ | $1 \times F_2 = 1$ | Trivial (no cascade) |
+| $d = 2$ | $2 \times F_3 = 4$ | 2D turbulence |
+| $d = 3$ | $3 \times F_4 = 9$ | She–Lévêque (this paper) |
+| $d = 4$ | $4 \times F_5 = 20$ | Prediction: 4D cascade |
+
+The $d = 2$ prediction ($k = 4$) is testable against 2D turbulence data and represents an independent falsification target for the Fibonacci decomposition. If confirmed, it would show the Fibonacci structure in She–Lévêque is not accidental but a dimensional instance of a general pattern.
+
+**Why $D = 3$?** Paper 5 connects this to the MED theorem (depth $\leq 2$, nodes $\leq 3$): three spatial dimensions may be selected because $d = 3$ is the highest dimension for which MED-bounded complexity ($k = 9 = 3^2$) produces a perfect square — ensuring scale-invariant cascade geometry. The $d = 4$ case ($k = 20$) breaks this property, suggesting a topological reason for why turbulence (and physical space) is three-dimensional.
+
 ---
 
 ## 3. Pre-Registered Predictions

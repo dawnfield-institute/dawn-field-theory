@@ -615,16 +615,16 @@ After the rewrite, each PACSeries paper should:
 - [ ] Update Zenodo records for all 5 originals (new versions with notices/appendices)
 
 ### Standalone Preprint Updates
-- [ ] Tier 1: golden_ratio_prime_distribution — add "Why φ" section → Paper 1
-- [ ] Tier 1: cellular_automata_xi_clustering — connect Rule 110 → Paper 2
-- [ ] Tier 1: pac_necessity_proof — add base-agnostic proof, reference Paper 1
-- [ ] Tier 1: symbolic_entropy_collapse — add ratio vs magnitude, SEC gradient flow
-- [ ] Tier 2: pac_cosmology_jwst_validation — reference Paper 4
-- [ ] Tier 2: potential_actualization_conservation — ratio vs magnitude clarification
-- [ ] Tier 2: macro_emergence_dynamics_navier_stokes — add k = d × F_{d+1}
-- [ ] Tier 2: she_leveque_fibonacci_turbulence — add k = d × F_{d+1}
-- [ ] Tier 3: qbe_pac_unification — reference Paper 6
-- [ ] Tier 3: ml_validation_pythia_gpt2 — decide: subsume into Paper 6 or keep standalone
+- [x] Tier 1: golden_ratio_prime_distribution — §6 "Why φ" section already present
+- [x] Tier 1: cellular_automata_xi_clustering — §6.1 Conditional Attractor + Ξ = γ+ln(φ) added
+- [x] Tier 1: pac_necessity_proof — §6.5 base-agnostic proof + Paper 1 Landauer route added
+- [x] Tier 1: symbolic_entropy_collapse — §3.4 + §3.5 already present
+- [x] Tier 2: pac_cosmology_jwst_validation — §7.6 already present
+- [x] Tier 2: potential_actualization_conservation — multiple body sections already present
+- [x] Tier 2: macro_emergence_dynamics_navier_stokes — §2.2 already present
+- [x] Tier 2: she_leveque_fibonacci_turbulence — §2.5 k = d × F_{d+1} generalization added
+- [x] Tier 3: qbe_pac_unification — §5.3 derivation chain + §5.4 milestone3 already present
+- [x] Tier 3: ml_validation_pythia_gpt2 — §7.3 relationship to Paper 6 added (kept standalone for step-512 result)
 
 ### Cross-Cutting
 
@@ -634,7 +634,7 @@ After the rewrite, each PACSeries paper should:
 - [ ] UNIFIED_EVIDENCE.md: Add token_pac_tree + TinyCIMM-Boltzmann findings
 - [x] Verify all papers cross-reference each other consistently (§14 / §13 sections) — Paper 2 connections table added (§12.1); Paper 3→Paper 1 attribution fixed; Paper 1→Paper 5 "establishes" → "applies"
 - [ ] Prepare Zenodo packages for Papers 1-6
-- [ ] Create changelog entry for PACSeries consolidation
+- [x] Create changelog entry for PACSeries consolidation
 
 ### Milestone3 Experiments (ALL COMPLETE)
 

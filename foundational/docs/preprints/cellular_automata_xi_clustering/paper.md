@@ -312,6 +312,27 @@ We invite researchers to explore, critique, and extend this work. All code and d
 
 ---
 
+## 6.1 February 2026: Analytic Decomposition and Conditional Attractor
+
+Since this paper's publication, PACSeries Paper 2 (*The Balance Constant and Its Decomposition*, February 2026) has established the analytic form:
+
+$$\Xi = \gamma + \ln\varphi \approx 0.5772 + 0.4812 = 1.0584$$
+
+The Rule 110 measurement ($P/A = 1.0579$) falls between the Fibonacci approximation ($1 + \pi/55 = 1.0571$) and the analytic value ($1.0584$), at 0.053% error from the latter. This paper's empirical observation — that Class IV CAs cluster near Ξ — is now understood as one instance of a four-domain convergence:
+
+| Domain | Source | Ξ value | Error from γ + ln(φ) |
+|--------|--------|---------|----------------------|
+| Number theory | 1 + π/55 | 1.05712 | 0.124% |
+| **Cellular automata** | **Rule 110 P/A ratio** | **1.05787** | **0.053%** |
+| Analytic | γ + ln(φ) | 1.05843 | 0.000% |
+| Prime sieve | SEC-local / PAC-global | 1.05843 | 0.000% |
+
+The open question from §5.3 — what is the relationship between Ξ and φ? — is resolved: $\ln\varphi$ is one of the two components of Ξ, derived from Landauer erasure thermodynamics (Paper 1). The other component (γ) represents the discrete-to-continuous interface cost.
+
+**Conditional Attractor Hypothesis.** Paper 2 further proposes that Ξ emerges only when four conditions are simultaneously met: (1) closed system boundary, (2) recursive decomposition, (3) PAC conservation, and (4) computational saturation. Fisher exact $p = 3.5 \times 10^{-10}$. All four conditions are satisfied by Rule 110 — which is computationally universal (Cook, 2004), recursively structured, and operates under fixed-boundary CA dynamics. This may explain why Class IV rules specifically cluster near Ξ: they are the rules that satisfy all four conditions.
+
+---
+
 ## References
 
 [1] PAC Confluence Xi Unified Framework. Dawn Field Institute, 2025. See: `pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md`
