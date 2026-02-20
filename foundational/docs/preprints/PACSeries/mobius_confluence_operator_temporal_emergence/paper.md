@@ -6,7 +6,7 @@
 title: "The Möbius Confluence Operator: Temporal Emergence from Topological Dynamics"
 series: "PAC Mathematical Foundations"
 paper_number: 5
-version: 1.0
+version: 1.1
 date: "2025-12-10"
 status:
   draft: true

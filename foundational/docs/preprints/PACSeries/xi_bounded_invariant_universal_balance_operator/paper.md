@@ -6,7 +6,7 @@
 title: "The Xi Bounded Invariant: A Universal Balance Operator from Information Geometry"
 series: "PAC Mathematical Foundations"
 paper_number: 1
-version: 1.0
+version: 1.1
 status:
   draft: true
   completeness: 2  # Skeleton with key results
@@ -2388,3 +2388,82 @@ The geometric interpretation through π-Harmonic Möbius Topology (Paper #4) pro
 ---
 
 *"Reality's asymmetry is not arbitrary—it is bounded, oscillatory, and computable."*
+
+---
+
+## Appendix F: February 2026 Update
+
+*This appendix summarises advances since the original October 2025 publication. The original text above is preserved unchanged. For full derivations and evidence, see PACSeries v2.0 Paper 2: The Balance Constant and Its Decomposition.*
+
+### F.1 Analytic Decomposition of Ξ
+
+The original paper established Ξ ≈ 1.0571 empirically from spectral ratios and oscillation analysis. Paper 2 (February 2026) derives the analytic form:
+
+$$\Xi = \gamma + \ln\varphi \approx 0.5772 + 0.4812 = 1.0584$$
+
+where γ is the Euler-Mascheroni constant and φ is the golden ratio. The two terms have distinct physical interpretations:
+
+- **γ (Euler-Mascheroni)**: The discrete-to-continuous interface cost — the residual that accumulates when discrete counting meets continuous measurement. Arises naturally through the Mertens product ∏(1 − 1/p) ∼ e^(−γ)/ln(N).
+- **ln(φ) (golden logarithm)**: The collapse efficiency ratio — the fraction of information that survives PAC collapse. Derived independently from Landauer erasure thermodynamics (Paper 1): A/(A + ξ) ≈ ln(φ) at 0.76% error.
+
+This decomposition replaces the "reality tax" and "spectral ratio" framings of the original paper with a cleaner analytic derivation. The original observations were correct — Ξ does appear at the Möbius-to-circular spectral boundary — but the *why* is now understood: γ + ln(φ) is the sum of the two irreducible costs of recursive information processing.
+
+### F.2 Four-Domain Convergence
+
+The original paper found Ξ in computational systems. Paper 2 shows it converges across four independent domains:
+
+| Domain | Source | Ξ value | Error from γ + ln(φ) |
+|--------|--------|---------|----------------------|
+| Number theory | Fibonacci formula 1 + π/55 | 1.05712 | 0.124% |
+| Cellular automata | Rule 110 edge-of-chaos measurement | 1.05787 | 0.053% |
+| Analytic | γ + ln(φ) decomposition | 1.05843 | 0.000% |
+| Prime sieve | SEC-local / PAC-global mechanism | 1.05843 | 0.000% |
+
+Monte Carlo significance: p = 0.00376 (n = 100,000 trials). The convergence of four unrelated systems on the same value is the primary evidence that Ξ is not a fitting artifact.
+
+### F.3 The Conditional Attractor Hypothesis
+
+The original paper treated Ξ as a constant. Paper 2 refines this:
+
+**Ξ is the maximum sustainable computational asymmetry under PAC conservation.**
+
+It emerges only when four conditions are simultaneously satisfied:
+1. **Closed**: system boundary is well-defined
+2. **Recursive**: self-similar decomposition operates
+3. **Conserving**: PAC f(Parent) = Σf(Children) holds
+4. **Computationally saturated**: system operates at maximum sustainable complexity
+
+Fisher exact test: p = 3.5 × 10⁻¹⁰. Systems missing any condition do not converge to Ξ.
+
+This resolves the oscillatory behaviour observed in this paper's Section 7 and Appendix E: the oscillation around Ξ is not noise but the system dynamically maintaining the balance point. The 0.03 Hz frequency noted in this paper may reflect the characteristic time scale of this self-regulation, though milestone3/exp_05 falsified the specific 2/3 ratio derivation linking 0.020 Hz to 0.030 Hz.
+
+### F.4 From Empirical to Analytic: MED Depth ≤ 2
+
+This paper's MED observations (depth ≤ 2, nodes ≤ 3) were empirical — observed in GAIA runs and Navier-Stokes simulations. Milestone3 exp_22 (February 2026) proves the depth bound analytically:
+
+**Theorem**: Under PAC conservation with k = 2 (Fibonacci) branching, emergent structures stabilise at depth ≤ 2.
+
+This upgrades a key empirical claim of this paper to a theorem. The node bound (≤ 3) remains empirical.
+
+### F.5 Summary of Corrections
+
+| Original Claim | Status | Updated Understanding |
+|----------------|--------|----------------------|
+| Ξ ≈ 1.0571 | **Refined** | Analytic: Ξ = γ + ln(φ) = 1.0584. The 1.0571 (= 1 + π/55) is the Fibonacci approximation, accurate to 0.124% |
+| "Reality tax" (0.15%) | **Reframed** | The metaphor was useful but imprecise. Paper 2 leads with decomposition, not taxation language |
+| 0.03 Hz oscillation frequency | **Partially validated** | Oscillation is real and computationally reproducible. The claimed 2/3 ratio to 0.020 Hz is falsified (exp_05) |
+| MED depth ≤ 2 (empirical) | **Upgraded** | Proven analytically from PAC conservation (exp_22) |
+| 38× amplification ratio | **Superseded** | Paper 1 reports 53× cascade amplification (p = 2.75 × 10⁻³⁵) |
+
+### F.6 Cross-References
+
+| PACSeries Paper | Connection to This Paper |
+|-----------------|-------------------------|
+| Paper 1: Structure Cost of Erasure | Derives ln(φ) from Landauer erasure — the mechanism behind Ξ's geometric component |
+| Paper 2: Balance Constant and Its Decomposition | **Direct successor** — full analytic treatment of everything this paper explored empirically |
+| Paper 3: Feigenbaum Constants | Same F₁₀ = 55 appears in Feigenbaum closed forms; independent occurrence of Fibonacci structure |
+| Paper 4: Standard Model Parameters | sin²θ_W = F₄/F₇ = 3/13; the Fibonacci chain this paper's Ξ = 1 + π/F₁₀ initiates |
+| Paper 5: Classical Physics | Curl from depth-2 projection; MED → D = 3 — the spatial consequence of this paper's MED bounds |
+| Paper 6: Computational Validation | Ξ appears in trained transformer weight spectra at 2.36× enrichment over random (χ² = 5511) |
+
+*For the complete derivation, error bounds, and 29 falsification tests, see PACSeries v2.0 at [https://github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory).*

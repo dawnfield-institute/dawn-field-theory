@@ -2,7 +2,7 @@
 
 **Category:** [pac] Potential-Actualization-Conservation  
 **Document Type:** [D] Draft  
-**Version:** v1.0  
+**Version:** v1.1  
 **Complexity:** [C4] Advanced Applications  
 **Impact:** [I5] Foundational  
 **Evidence:** [E] Experimental  

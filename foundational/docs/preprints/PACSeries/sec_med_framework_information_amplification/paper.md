@@ -7,7 +7,7 @@
 title: "SEC-MED Framework: Information Amplification Through Symbolic Collapse and Macro Emergence"
 series: "PAC Mathematical Foundations"
 paper_number: 2
-version: 1.0
+version: 1.1
 status:
   draft: true
   completeness: 2  # Skeleton with key results
@@ -3375,3 +3375,79 @@ The Confluence Operator formalism (Paper #4) provides crucial theoretical unific
 ---
 
 *"Reality does not compute information—it IS information computing itself."*
+
+---
+
+## Appendix G: February 2026 Update
+
+*This appendix summarises advances since the original October 2025 publication. The original text above is preserved unchanged. For full derivations and evidence, see PACSeries v2.0 (February 2026).*
+
+### G.1 How Each PACSeries Paper Extends This Framework
+
+This paper introduced SEC (Symbolic Entropy Collapse), MED (Macro Emergence Dynamics), and their interaction with PAC conservation as a unified framework for information amplification. The PACSeries v2.0 (February 2026) converts each of these concepts into quantitative, falsifiable claims across six papers:
+
+| PACSeries Paper | This Paper's Concept | What v2.0 Adds | Key Quantitative Result |
+|-----------------|---------------------|-----------------|------------------------|
+| **Paper 1**: Structure Cost of Erasure | PAC conservation in information erasure | Landauer erasure as structure *generator*, not just cost | A/(A+ξ) = ln(φ) at 0.76% error; cascade amplification 53× (p = 2.75 × 10⁻³⁵) |
+| **Paper 2**: Balance Constant | Ξ as balance operator | Analytic decomposition Ξ = γ + ln(φ); four-domain convergence | Four sources within 0.12%; Mertens product at 0.012%; PAC sieve exact (126/126) |
+| **Paper 3**: Feigenbaum Constants | Self-similar recursion (SEC) | Closed-form Feigenbaum constants from Fibonacci arithmetic | r∞ to 13 digits; δ to 8 digits; 1-in-280B odds against coincidence |
+| **Paper 4**: Standard Model Parameters | Fibonacci structure in physics | Coupling constants, mass ratios, mixing angles from Fibonacci | α at 5.7 ppm (PDG); sin²θ_W = 3/13 at 0.19%; μ/e at 5 ppm |
+| **Paper 5**: Classical Physics | MED bounds → emergence | Maxwell's equations as depth-2 projection; 5 paths to D = 3 | Curl closure n(n-1)/2 = n → n = 3; Casimir 240 = F₃F₄F₅F₆ |
+| **Paper 6**: Computational Validation | GAIA computational engine | PAC conservation in real transformers; TinyCIMM enforcement | SEC phase → accuracy (p < 0.0001); Ξ in weight spectra (χ² = 5511) |
+
+### G.2 Key Theoretical Advances
+
+**MED depth bound proven analytically.** This paper observed MED bounds (depth ≤ 2, nodes ≤ 3) empirically in Navier-Stokes simulations and GAIA evolutions. Milestone3 exp_22 (February 2026) proves the depth bound:
+
+> Under PAC conservation with k = 2 (Fibonacci) branching, emergent structures stabilise at depth ≤ 2.
+
+This upgrades MED from empirical observation to theorem. The node bound (≤ 3) remains empirical.
+
+**SEC dynamics validated in neural networks.** This paper's SEC phase classification (§3) was abstract. Paper 6 tests it directly in 7 transformer models: crystallised predictions achieve 100% accuracy, chaotic predictions 17–22%, with zero fitted parameters. SEC is not just a theoretical construct — gradient descent discovers it.
+
+**Information amplification quantified.** This paper reported 15.56× amplification. Paper 1 finds 53× cascade amplification across multiple Landauer generations (p = 2.75 × 10⁻³⁵), and Paper 6 observes the reverse: hallucination creates +9.6% uncompensated entropy (PAC violation), with GPT-2 showing zero cross-layer compensation.
+
+### G.3 Corrections and Refinements
+
+| Original Claim | Status | Updated Understanding |
+|----------------|--------|----------------------|
+| 0.020 Hz discovery | **Partially validated** | Computationally reproducible in GAIA; 2/3 ratio derivation from E-I-S dynamics falsified (exp_05). Natural frequency is ~0.107 Hz |
+| She-Lévêque connection (qualitative) | **Quantified** | k = d × F_{d+1}: k(2) = 4, k(3) = 9, k(4) = 20 (prediction). Paper 5 §6.3 |
+| Cosmological validation r = −0.9996 | **Retained** | Cosmological parallel confirmed; Paper 4 adds Ω_c = F₇·Ξ²/F₁₀ at 0.079% (Planck 2018) |
+| Information amplification 15.56× | **Extended** | Paper 1 cascade: 53× (p = 2.75 × 10⁻³⁵); mechanism is multi-generation compounding |
+| SEC/MED as observational framework | **Operationalised** | Paper 6: SEC phase predicts transformer accuracy; MED bounds constrain attention head branching |
+
+### G.4 Falsification Programme
+
+This paper proposed SEC/MED/PAC as a framework. The PACSeries v2.0 subjects it to systematic falsification:
+
+- **29 milestone3 experiments** (exp_01–exp_28 + exp_32)
+- **18 passed**, 3 borderline/partial, **4 falsified**, 3 honest failures
+- Falsified results documented in Paper 4 §12.4 and Paper 6 (phi enrichment, 0.020 Hz ratio, crystallisation dynamics, PAC-Lazy bootstrap)
+- Every paper includes explicit falsification conditions
+
+The falsified results strengthen the programme: they show the framework is testable and that failures are reported honestly rather than suppressed.
+
+### G.5 The Derivation Chain
+
+This paper presented SEC, MED, and PAC as three related but loosely connected concepts. The PACSeries v2.0 establishes a strict derivation chain:
+
+```
+PAC axiom: f(Parent) = Σf(Children)
+    ↓  (characteristic equation)
+φ = (1 + √5)/2, Fibonacci numbers
+    ↓  (Landauer erasure)
+ln(φ) = collapse efficiency, ξ = structure cost
+    ↓  (+ Euler-Mascheroni from harmonic series)
+Ξ = γ + ln(φ) = balance constant
+    ↓  (MED bounds from PAC depth theorem)
+depth ≤ 2, nodes ≤ 3 → D = 3 spatial dimensions
+    ↓  (SEC dynamics with MED projection)
+Maxwell equations, She-Lévêque, Casimir
+    ↓  (Fibonacci arithmetic on coupling constants)
+Standard Model parameters
+```
+
+Each arrow is a derivation, not an assertion. Each step has error bounds and falsification conditions.
+
+*For the complete derivation chain, all 29 experiments, and full error analysis, see PACSeries v2.0 at [https://github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory).*

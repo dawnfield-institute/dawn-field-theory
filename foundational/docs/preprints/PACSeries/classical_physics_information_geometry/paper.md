@@ -3,7 +3,7 @@
 **Peter Groom, Dawn Field Institute**  
 **PACSeries Paper 5**  
 **Date**: February 2026  
-**Version**: 0.1 (Draft)
+**Version**: 2.1
 
 ---
 

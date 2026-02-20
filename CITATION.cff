@@ -11,19 +11,11 @@ authors:
   orcid: https://orcid.org/0009-0007-2217-8255
   affiliation: Dawn Field Institute
   email: info@dawnfield.ca
-- given-names: Test
-  family-names: User
-  email: test@example.com
-  orcid: 0000-0000-0000-TEST
-- given-names: Test
-  family-names: Contributor
-  email: test.contributor@example.com
-  orcid: 0000-0000-0000-TEST
 repository-code: https://github.com/dawnfield-institute/dawn-field-theory
 url: https://github.com/dawnfield-institute/dawn-field-theory
 license: GPL-3.0-or-later
-version: '1.0'
-date-released: '2025-09-01'
+version: '2.1'
+date-released: '2026-02-20'
 doi: 10.5281/zenodo.15783623
 keywords:
 - information theory
@@ -40,7 +32,7 @@ preferred-citation:
   - family-names: Groom
     given-names: Peter Lorne
     affiliation: Dawn Field Institute
-  year: 2025
+  year: 2026
   url: https://github.com/dawnfield-institute/dawn-field-theory
   notes: For component-specific citations, see pull request metadata in citations/
     folder

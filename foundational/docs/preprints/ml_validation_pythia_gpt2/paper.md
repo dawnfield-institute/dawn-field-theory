@@ -2,7 +2,7 @@
 
 **Category:** [pac] Potential-Actualization-Conservation  
 **Document Type:** [D] Draft  
-**Version:** v1.0  
+**Version:** v1.1  
 **Complexity:** [C4] Advanced Applications  
 **Impact:** [I5] Foundational  
 **Evidence:** [E] Experimental  
@@ -283,6 +283,21 @@ Four independent domains, one underlying principle.
 3. **Performance correlation**: Do better φ-convergers generalize better?
 4. **Mechanistic interpretation**: What computationally drives φ-convergence?
 5. **PAC-native architectures**: Design models that explicitly implement PAC
+
+### 7.3 February 2026: Relationship to PACSeries Paper 6
+
+PACSeries Paper 6 (*Computational Validation of PAC Conservation*, February 2026) provides the comprehensive, multi-model validation that this paper's Pythia/GPT-2 results pointed toward. Key differences:
+
+| Aspect | This paper (2025) | Paper 6 (2026) |
+|--------|-------------------|----------------|
+| Models | 2 (Pythia-410M, GPT-2-117M) | 7+ (Pythia family, GPT-2, TinyCIMM, GAIA POC-10) |
+| Metrics | φ-convergence, SEC H(t) | Full PAC + SEC + MED + amplification |
+| Notable finding | Step-512 φ-crossing (p = 0.0014) | TinyCIMM recapitulates PAC in 8M params |
+| Falsifications | None (early work) | 4 honest failures documented: exp_05, exp_08, exp_17, exp_22 |
+
+**This paper is retained separately** because the step-512 φ-convergence observation (§4.2) — where Pythia's activation ratio crosses exactly φ at training step 512 — remains the cleanest single demonstration and is not replicated by any later experiment. Paper 6 extends the programme but does not supersede this specific result.
+
+**Addressing Limitation 7.1.4 (Causal mechanism):** Paper 6's TinyCIMM experiment offers a partial answer: when φ-initialised weights are disrupted (40% noise), PAC-compliant layers recover to within 5% of original ratios within 100 training steps. This suggests the causal driver is an attractor dynamic, not an architectural accident.
 
 ---
 

@@ -6,7 +6,7 @@
 title: "GAIA: Computational Validation of Dawn Field Theory Through Resonance-Driven Emergence"
 series: "PAC Mathematical Foundations"
 paper_number: 3
-version: 1.0
+version: 1.1
 status:
   draft: true
   completeness: 3  # Substantial content with validation results
@@ -47,7 +47,7 @@ data_repository: "zenodo.org/record/[TBD]"
 >
 > Key content integrated:
 > - GAIA engine architecture detail, 500-iteration conservation proof, resonance locking derivation → Paper 6 §8.3
-> - PAC conservation residual < 7×10⁻¹¹ → Paper 6 Part A evidence
+> - PAC conservation residual < 7×10⁻¹¹ → Paper 6 §8.3 evidence
 > - Cosmological parallel r = −0.9996 → Paper 6 cross-validation
 > - **Perplexity correction**: The 5.91 metric is cosine similarity, not true LM perplexity. Not comparable to GPT-2's 29.41. Paper 6 documents this honestly.
 >
