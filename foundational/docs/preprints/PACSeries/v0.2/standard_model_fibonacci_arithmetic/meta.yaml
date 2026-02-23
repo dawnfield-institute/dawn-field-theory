@@ -1,0 +1,30 @@
+schema_version: "2.0"
+description: "PACSeries Paper 4: Standard Model Parameters from Fibonacci Arithmetic"
+semantic_scope: "publication"
+proficiency_level: "research"
+estimated_context_weight: 0.9
+validation_type: "manual"
+
+files:
+  - "[paper.md]": "Full paper draft — gauge couplings, mass ratios, mixing angles, turbulence from Fibonacci arithmetic"
+  - "[README.md]": "Paper overview and reproduction instructions"
+
+child_directories:
+  - name: "Code"
+    description: "Scripts referenced in the paper"
+  - name: "Data"
+    description: "JSON result files from experiments"
+  - name: "Figures"
+    description: "Publication-quality figures"
+
+source_experiments:
+  - "foundational/experiments/milestone1"
+  - "foundational/experiments/milestone2"
+  - "foundational/experiments/pac_confluence_xi"
+  - "foundational/experiments/milestone3"
+
+series_position: 4
+series_title: "PACSeries v0.2"
+dependencies:
+  - paper_1: "structure_cost_of_erasure"
+  - paper_3: "feigenbaum_fibonacci_arithmetic"
