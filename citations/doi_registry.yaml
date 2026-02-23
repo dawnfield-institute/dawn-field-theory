@@ -3,7 +3,7 @@
 # Updated: 2025-12-28
 
 schema_version: "1.0"
-last_updated: "2025-12-28"
+last_updated: "2026-02-23"
 maintainer: "Peter Lorne Groom <peter@dawnfield.ca>"
 
 # =============================================================================
@@ -97,13 +97,37 @@ published:
   # PAC Series Bundle
   # ---------------------------------------------------------------------------
   
+  - id: pac_series_bundle_v02
+    title: "PACSeries v0.2: Dawn Field Theory"
+    short_title: "PACSeries v0.2"
+    doi: "10.5281/zenodo.18743674"
+    zenodo_record: 18743674
+    url: "https://zenodo.org/records/18743674"
+    version: "0.2"
+    upload_date: "2026-02-23"
+    category: validation
+    status: published
+    has_code: true
+    has_data: true
+    has_figures: true
+    papers_included:
+      - structure_cost_of_erasure
+      - balance_constant_decomposition
+      - feigenbaum_fibonacci_arithmetic
+      - standard_model_fibonacci_arithmetic
+      - classical_physics_information_geometry
+      - computational_validation_pac_conservation
+    previous_version:
+      doi: "10.5281/zenodo.17295103"
+      version: "0.1"
+
   - id: pac_series_bundle
     title: "PAC Series: Validation Papers Bundle"
-    short_title: "PACSeries"
+    short_title: "PACSeries v0.1"
     doi: "10.5281/zenodo.17295103"
     zenodo_record: 17295103
     url: "https://zenodo.org/records/17295103"
-    version: "1.0"
+    version: "0.1"
     upload_date: "2025-12"
     category: validation
     status: published
