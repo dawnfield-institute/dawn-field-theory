@@ -1,0 +1,326 @@
+﻿{
+    "created":  "2026-02-23T14:47:46.813618",
+    "files":  [
+                  {
+                      "path":  ".zenodo.json",
+                      "sha256":  "0324f8ebc06d74e52a56d350a7255721a0b78460a986a5077b62f773f763ff4e",
+                      "size":  1834
+                  },
+                  {
+                      "path":  "CITATION.md",
+                      "sha256":  "20415f2cd79468f8f1d0e3921e8279ec454bedf0ccbe46ad69112b80f75ada47",
+                      "size":  485
+                  },
+                  {
+                      "path":  "LICENSE",
+                      "sha256":  "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+                      "size":  35184
+                  },
+                  {
+                      "path":  "meta.yaml",
+                      "sha256":  "2511d6cc7afab6ac962dae2b67c953ae2305fe6cb3de6fd052ecef98d433f569",
+                      "size":  516
+                  },
+                  {
+                      "path":  "paper.md",
+                      "sha256":  "36e7cef03d683b5290048adc083a940ed51f9f1c0d696144c833e4393554f52f",
+                      "size":  14103
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "2c31b21dd97f248603bc2f0dfffb18cb6af5862a4941c9e7c7aadf82fe59606d",
+                      "size":  1337
+                  },
+                  {
+                      "path":  "UNIFIED_EVIDENCE.md",
+                      "sha256":  "237449df647d36ba2017776d15a02b4ac7955bf5273c37eb35dd3f95b2bf4c1a",
+                      "size":  25754
+                  },
+                  {
+                      "path":  "Code\\reproduce.py",
+                      "sha256":  "6aa84b3a89a74207843480c4b7d43ded596dae10e000e2397fbd09cd939c87d0",
+                      "size":  1542
+                  },
+                  {
+                      "path":  "Code\\requirements.txt",
+                      "sha256":  "a5f970ab390ee008df119c8afd34294344f9b59a02068da8d86afbe839b97eb5",
+                      "size":  29
+                  },
+                  {
+                      "path":  "Code\\trace.yaml",
+                      "sha256":  "9934bc2bf87200af15893ef3bcbaf68323619ee580f0b29b75fcca752697a7f8",
+                      "size":  951
+                  },
+                  {
+                      "path":  "Code\\experiments\\exp_01_pac_necessity.py",
+                      "sha256":  "db72144b39d05a6d01098da769b89b5f64c42d5c7208d93c20f23c4dfb3c8694",
+                      "size":  12591
+                  },
+                  {
+                      "path":  "Code\\experiments\\meta.yaml",
+                      "sha256":  "7952fb36183b621da24c3bd8c8eec297405c315f1c49f96133ef8d2704318aff",
+                      "size":  855
+                  },
+                  {
+                      "path":  "Code\\experiments\\exploratory\\01_alpha_from_fibonacci.py",
+                      "sha256":  "9bd7f97de77e35148d4b795afaf924b477f2170e6460f2ca18fb277afa566e73",
+                      "size":  8240
+                  },
+                  {
+                      "path":  "Code\\experiments\\exploratory\\02_fine_structure_derivation.py",
+                      "sha256":  "c9ae2aa7a69f35b1b8380ffbe397d817e6747f37848eb701c34129ad43944d4f",
+                      "size":  25991
+                  },
+                  {
+                      "path":  "Code\\experiments\\exploratory\\03_alpha_rigorous_derivation.py",
+                      "sha256":  "830f651b21e5deaa92f7087d84036f95d30993cb76b01fd6b63d0757cc656514",
+                      "size":  20120
+                  },
+                  {
+                      "path":  "Code\\experiments\\exploratory\\04_pac_confluence_xi_experiment.py",
+                      "sha256":  "d970e90a51b65da98f62f65f9b44a5c80cecac5ba86aa63083a068e7f2a7ad20",
+                      "size":  27090
+                  },
+                  {
+                      "path":  "Code\\experiments\\exploratory\\05_standard_model_bridge.py",
+                      "sha256":  "53f4cde34f5b96812bf3a0000264554bdf6bdfb50ac6f8d594af6f8a25f413c7",
+                      "size":  47907
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\01_alpha_comprehensive.py",
+                      "sha256":  "cb3ef155844ce63e038d8688178af4dab2925666ee4e69409282710470d7d2b0",
+                      "size":  10620
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\02_sec_unified_couplings.py",
+                      "sha256":  "06dd6c2818f2b49ed3fb087313787fc92b03f1afbb5eeea4b0eda437429e4e2b",
+                      "size":  8387
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\03_fibonacci_gauge_hierarchy.py",
+                      "sha256":  "1483cbcc90c7ee03cc8ce3174981af888208257ca2aa1535661ccd7be093ad14",
+                      "size":  9735
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\04_anomaly_predictions.py",
+                      "sha256":  "e6b85c37dfc0675128b43e4ea481ecde26f15f49929beae7750ac13f1cc7f07b",
+                      "size":  15506
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\05_fibonacci_sm_complete.py",
+                      "sha256":  "d5e600eac0e748f791b1a9e67ad2196c4df89e581148493fd58de0b910af7293",
+                      "size":  14712
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\06_fibonacci_index_derivation.py",
+                      "sha256":  "4a833e475fca8ef37fdc7d9468c0bbb08f4976e9dca24888c437519b52baca40",
+                      "size":  10570
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\07_zprime_lhc_bounds.py",
+                      "sha256":  "088f59b2fa6acf324359fb0402842a49f6ab52b0f620777fb2f2e76653ac32fd",
+                      "size":  8931
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\08_fractal_pac_tree.py",
+                      "sha256":  "71b8d8c07f269f4fee653f267b02a1488c2c6e47279b95471cfed39b3ba2d779",
+                      "size":  12584
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\09_finding_f10.py",
+                      "sha256":  "c10509783106c725a862edbc1b6ecb61665f766d14df49c421f03bea3c67aa0a",
+                      "size":  8778
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\10_unified_fractal_pac.py",
+                      "sha256":  "8bd248c7e14353fee641d37f101034fafe3a639c47e9dcd70147c0bc7f2d7e87",
+                      "size":  9467
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\11_tree_predictions.py",
+                      "sha256":  "3d7dbd2607febeaebda909222c474a84180bac6d2948dc25070497eb7285b3fd",
+                      "size":  12693
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\12_verified_predictions.py",
+                      "sha256":  "a9b7b0f34dc25f01b12cbc2a085519a09d2b79e2f3ce5f81bac0e5899ee1ff9a",
+                      "size":  11820
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\13_precision_corrections.py",
+                      "sha256":  "6b4aafc8571e270d7147a3f9c7b2af5b46e78b706bbc82e95b5fe3f70532b454",
+                      "size":  10538
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\14_precision_gaps_meaning.py",
+                      "sha256":  "f44d53e3c865cccab61c3b604ba5d37fff926f4062b8ec600c9efac79fd33197",
+                      "size":  8730
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\15_dark_sector.py",
+                      "sha256":  "f758ec97d42bf09cfa85d6780fa2a5b2889c70b0a47bf30f6fbeca2f897f36a8",
+                      "size":  9967
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\16_gravity_hierarchy.py",
+                      "sha256":  "513653d5b9ea28b8e418fc30261aa53bef37f1bcd61e54ecbaf461a0d9d6ded7",
+                      "size":  9229
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\17_pac_sec_dark_matter.py",
+                      "sha256":  "3a91db4a59b4094250157c384b2d628f44c781dd489fbcac337280b99a138f9f",
+                      "size":  10241
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\18_pac_sec_validation.py",
+                      "sha256":  "4862ea71ae87b128110786d9b7d6c4dac14f1ddd1b66f8556b4e2f2e457a0b34",
+                      "size":  10237
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\19_pac_sec_quick_test.py",
+                      "sha256":  "e4a9861f5ccda7c2f5a0e4cde1bfb721ab3b30debc8d0558569dabf23779754e",
+                      "size":  14479
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\20_pac_sec_findings.py",
+                      "sha256":  "d11bbf48a3f6da7b5bb7d8d0c9f85f49fc7a438ae98811d475fe4b384661b704",
+                      "size":  11516
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\21_mobius_fibonacci_eigenmodes.py",
+                      "sha256":  "862cea00da6beec2c604d15042d243a6be187d7560e092dddfea50eca25a4a10",
+                      "size":  12327
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\22_PAC_COMPLETE_SUMMARY.py",
+                      "sha256":  "246400a02dcde58aa7b783d238ac037321e93b1b480a38f7e5c5fe7f0dd8ec87",
+                      "size":  25085
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\23_pac_bell_correlations.py",
+                      "sha256":  "5ee1eabbe0c84a40caa2b874d2993298388e4fbf4d7a346710e46b16cd14a8cf",
+                      "size":  23145
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\24_pac_bell_corrected.py",
+                      "sha256":  "b6fe07cfcea18103139304200104773dd8ead142213c1c7b193e428396a84f90",
+                      "size":  16915
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\25_pac_physical_reality_test.py",
+                      "sha256":  "52789acf9c2e31f59ba205b80b87f8a28f81fc01a61ab07feba37af5d813fe1f",
+                      "size":  22915
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\26_bell_experimental_comparison.py",
+                      "sha256":  "234a344e9c7ef8379dccee1797af9ccabb008ee9e4613138be2338f808261170",
+                      "size":  15414
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\27_pac_falsification_tests.py",
+                      "sha256":  "6e733303d52abcb880907c9f1720bf765fb8d7eaaaf61b1c48ffe7577346a064",
+                      "size":  20585
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\28_pac_full_tree_entanglement.py",
+                      "sha256":  "cde4820be2a82dd8e2bf38b2a80e2dec5ed54ffdb2106d2a556257bdfcb8de1b",
+                      "size":  16008
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\29_pac_depth3_bell_magic.py",
+                      "sha256":  "7319b3ef3e7b95a60992d63f86dd24918dcc655dedff11a7f631eae4c4223fab",
+                      "size":  11947
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\30_pac_bell_resolution.py",
+                      "sha256":  "3f032e5476ed629cb0eb809739c6f662841d7dfcfa1653fcce5cd9bde691b936",
+                      "size":  13319
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\31_pac_bell_final_status.py",
+                      "sha256":  "d2257b5fb790c6a28ea2044c309d99e6f618fb40477738fed4c5f9c83a7f94a6",
+                      "size":  11766
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\32_pac_bell_deep_dive.py",
+                      "sha256":  "2a9a00be638e3c764623f7a1a0035dff9e5f22affffe7889428e8c1889fabbf0",
+                      "size":  13064
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\33_the_missing_fifth.py",
+                      "sha256":  "1377dd0a355f9ea568841b43c5a64451d2f2f0313910ad5bab1269e1ccf9d9a8",
+                      "size":  14274
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\34_finding_the_fifth.py",
+                      "sha256":  "0436da4173c15f03f5b18a34976c28dceda3f578a2713650f4b588c3824d6517",
+                      "size":  13366
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\35_the_neutrino_key.py",
+                      "sha256":  "5df7654569f3fd5889bdf028c674be683aedecbbcfd0d9f8a7c2ed1176b75f22",
+                      "size":  12724
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\36_bell_neutrino_resolution.py",
+                      "sha256":  "28de9c766ae2fffd7db2bfd7ac14006257df26b3da04b48e34c98e6c9e0ba31f",
+                      "size":  11309
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\37_tree_geometry_validation.py",
+                      "sha256":  "0302035437ffdfbb49e40921fa0abd10681a1a5c73d47490eb57dc46b6170f1e",
+                      "size":  9827
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\38_phi_squared_discovery.py",
+                      "sha256":  "870012f3fc995f7723c76ed8ea0bb33bbab3066f774565972ec317eeca93b467",
+                      "size":  5736
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\39_selection_effect_monte_carlo.py",
+                      "sha256":  "4839f920e64280e43a3b9f9e0fb4fea7dd8e8a7c9a135f5ce78f1f265e2934d6",
+                      "size":  6085
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\40_weinberg_cabibbo_relationship.py",
+                      "sha256":  "c1feec34df9516f7585dd74c26bb9782420b26d6129ac795aebf4da3714de01a",
+                      "size":  4007
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\41_quark_mixing_exploration.py",
+                      "sha256":  "803e421407fe9c0390d47b310a362c1897511517016effc98bd0f6e951f28188",
+                      "size":  6587
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\42_phi_ladder_structure.py",
+                      "sha256":  "3db1cfbdb4727146a76e4558bb6b799c329c5016ead7564e7ad1b0b0b92d4ccb",
+                      "size":  5544
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\43_final_synthesis.py",
+                      "sha256":  "40bb8d9641216c82ef7ebd243b071a9c8252e4a88cbb63bb9665700b9bf06ab0",
+                      "size":  12568
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\44_repulsion_hypothesis.py",
+                      "sha256":  "44021823fbe8e9373f0f08ceb9b9ff5a54f56e510c2557bd423d011c6f3f0867",
+                      "size":  9576
+                  },
+                  {
+                      "path":  "Code\\experiments\\validated\\45_pac_sec_repulsion_unification.py",
+                      "sha256":  "3554e67b7c9308610b0fe81703c33699f372800dd9336a50334c46db6da89135",
+                      "size":  11598
+                  },
+                  {
+                      "path":  "Code\\results\\exp_26_pac_violation_20251222_094620.json",
+                      "sha256":  "c41afffbd93d9bdfd82735f2121c86d0f0f25a4201e277ffbf17629dbfde687b",
+                      "size":  582
+                  },
+                  {
+                      "path":  "Data\\results\\exp_26_pac_violation_20251222_094620.json",
+                      "sha256":  "c41afffbd93d9bdfd82735f2121c86d0f0f25a4201e277ffbf17629dbfde687b",
+                      "size":  582
+                  }
+              ],
+    "version":  "1.1"
+}
