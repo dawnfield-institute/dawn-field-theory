@@ -189,7 +189,8 @@ The series prioritises precision, honest negatives, and clear separation of meas
 **Total**: 76 numbered experiments, 72 data files, 37 figures.
 
 **Repository**: [github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory)  
-**Prior version**: PACSeries v0.1 (October 2025), Zenodo DOI: [10.5281/zenodo.17295103](https://zenodo.org/records/17295103)
+**Prior version**: PACSeries v0.1 (October 2025), Zenodo DOI: [10.5281/zenodo.17295103](https://zenodo.org/records/17295103)  
+**This version**: PACSeries v0.2 (February 2026), Zenodo DOI: [10.5281/zenodo.18743674](https://zenodo.org/records/18743674)
 
 ---
 

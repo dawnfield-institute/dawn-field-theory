@@ -1,7 +1,7 @@
 # PACSeries: Dawn Field Theory
 
-**Current Release**: v0.2 (February 2026, 6 papers)  
-**Previous Release**: v0.1 (October 2025, 5 papers — Zenodo [10.5281/zenodo.17295103](https://zenodo.org/records/17295103))
+**Current Release**: v0.2 (February 2026, 6 papers -- Zenodo [10.5281/zenodo.18743674](https://zenodo.org/records/18743674))  
+**Previous Release**: v0.1 (October 2025, 5 papers -- Zenodo [10.5281/zenodo.17295103](https://zenodo.org/records/17295103))
 
 ## Overview
 

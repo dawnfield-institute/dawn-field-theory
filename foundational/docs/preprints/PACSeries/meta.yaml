@@ -75,7 +75,9 @@ versions:
         order: 5
 
 zenodo:
-  v1_release: "2025-10-06"
-  v1_doi: "10.5281/zenodo.17295103"
-  v1_record_id: 17295103
-  v2_doi: null  # To be assigned on upload
+  v01_release: "2025-10-06"
+  v01_doi: "10.5281/zenodo.17295103"
+  v01_record_id: 17295103
+  v02_release: "2026-02-23"
+  v02_doi: "10.5281/zenodo.18743674"
+  v02_record_id: 18743674
