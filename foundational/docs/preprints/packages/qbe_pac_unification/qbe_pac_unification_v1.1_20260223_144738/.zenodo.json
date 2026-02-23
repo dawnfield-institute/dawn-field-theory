@@ -1,0 +1,28 @@
+﻿{
+    "title":  "Qbe Pac Unification",
+    "upload_type":  "publication",
+    "publication_type":  "preprint",
+    "access_right":  "open",
+    "license":  "AGPL-3.0",
+    "creators":  [
+                     {
+                         "name":  "Groom, Peter"
+                     }
+                 ],
+    "keywords":  [
+                     "Dawn Field Theory",
+                     "infodynamics",
+                     "PAC framework",
+                     "Dawn Field Theory",
+                     "PAC"
+                 ],
+    "related_identifiers":  [
+                                {
+                                    "identifier":  "https://github.com/dawn-field-institute/dawn-field-theory",
+                                    "relation":  "isSupplementTo",
+                                    "resource_type":  "software"
+                                }
+                            ],
+    "version":  "1.1",
+    "description":  "We report the discovery of a profound connection between two independently developed theoretical frameworks: the **Quantum Balance Equation (QBE)** from March 2025 and the **Potential-Actualization Conservation (PAC)** framework from December 2025. Remarkably, legacy QBE experiments required an empirical damping coefficient `QPL_damping = 0.02` to achieve stable dynamics, while modern PAC dynamics—without any 0.02 parameter input—produce oscillations at **exactly 0.020 Hz** via FFT analysis.\n\nThis unification suggests that PAC provides the mathematical foundation for QBE\u0027s empirical success. The 0.02 timescale is not arbitrary: it corresponds to the gravitational wave detection band (LISA: ~0.01 Hz, Chang\u0027e 3: 0.01-0.05 Hz), where primordial gravitational waves and supermassive black hole mergers are expected.\n\n**Keywords:** QBE, PAC, frequency emergence, gravitational waves, information-energy dynamics, unification\n\n---"
+}

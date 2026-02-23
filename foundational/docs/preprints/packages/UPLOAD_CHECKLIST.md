@@ -1,87 +1,51 @@
-# Zenodo Upload Checklist - 2025-12-28 (Updated)
+﻿# Zenodo Upload Checklist - 2026-02-23
 
-## Quick Reference
+## Version Updates (v1.1 / v2.1 packages)
 
-**Zenodo Upload URL:** https://zenodo.org/deposit/new
+These 6 papers have been updated since their last Zenodo upload.
+For each: go to the existing Zenodo record, click "New version", upload the new zip.
 
-**Note:** PDF versions of all papers will be added in v1.1. Current v1.0 packages contain markdown papers with full Code/Data/Figures.
+### Upload Process (Version Updates)
+1. Go to the existing Zenodo record URL
+2. Click "New version"
+3. Remove the old zip, upload the new one
+4. Update the version number in the form
+5. Publish
 
-**Upload Process:**
-1. Go to https://zenodo.org/deposit/new
-2. Click "Upload files" and select the .zip package
-3. Metadata auto-populates from .zenodo.json
-4. Review/edit metadata
-5. Choose license: AGPL-3.0
-6. Publish (or Save Draft first)
+### Packages Ready
 
----
+| Paper | Current Zenodo | New Version | Package |
+|-------|---------------|-------------|---------|
+| Symbolic Entropy Collapse | [v1.0](https://zenodo.org/records/17024434) | v1.1 | `symbolic_entropy_collapse/symbolic_entropy_collapse_v1.1_20260223_144738.zip` |
+| QBE-PAC Unification | [v1.0](https://zenodo.org/records/18086941) | v1.1 | `qbe_pac_unification/qbe_pac_unification_v1.1_20260223_144738.zip` |
+| Infodynamics | [v2.0](https://zenodo.org/records/18087191) | v2.1 | `dawn_field_theory_infodynamics/dawn_field_theory_infodynamics_v2.1_20260223_144738.zip` |
+| ML Validation Pythia/GPT2 | [v1.0](https://zenodo.org/records/18086821) | v1.1 | `ml_validation_pythia_gpt2/ml_validation_pythia_gpt2_v1.1_20260223_144738.zip` |
+| Cellular Automata Xi | [v1.0](https://zenodo.org/records/18086711) | v1.1 | `cellular_automata_xi_clustering/cellular_automata_xi_clustering_v1.1_20260223_144738.zip` |
+| PAC Necessity Proof | [v1.0](https://zenodo.org/records/18086893) | v1.1 | `pac_necessity_proof/pac_necessity_proof_v1.1_20260223_144738.zip` |
 
-## NEW Papers (First Upload) - READY NOW
+### What Changed
 
-### 🔥 Priority 1 - Tier 1 Validation Papers
-
-| Paper | Package | Status |
-|-------|---------|--------|
-| **Cellular Automata Xi Clustering** | `cellular_automata_xi_clustering_v1.0_20251228_095048.zip` | ✅ Ready |
-| **Golden Ratio Prime Distribution** | `golden_ratio_prime_distribution_v1.0_20251228_095054.zip` | ✅ Ready |
-| **ML Validation Pythia/GPT2** | `ml_validation_pythia_gpt2_v1.0_20251228_095102.zip` | ✅ Ready |
-
-**Notes:**
-- CA paper: 7 experiments, 8 figures, p < 10^-7 validation
-- Golden Ratio: 32 experiments, 1 figure, analytical proof
-- ML Validation: 3 experiments, 9 figures, multi-model
-
----
-
-## Papers Needing Data Relocation (Before Upload)
-
-| Paper | Issue | Fix |
-|-------|-------|-----|
-| pac_necessity_proof | JSON in Code/results/ | Copy to Data/results/ |
-| qbe_pac_unification | JSON in Code/results/ | Copy to Data/results/ |
-| gaia_field_native_intelligence_comprehensive | JSON in Code/results/ | Copy to Data/results/ |
-| potential_actualization_conservation_comprehensive | Data in Code/experiments/results/ | Copy to Data/results/ |
+- **Symbolic Entropy Collapse** (v1.0 -> v1.1): Major rewrite and tightening, -319 lines
+- **QBE-PAC Unification** (v1.0 -> v1.1): Substantive expansion, +42 lines
+- **Infodynamics** (v2.0 -> v2.1): Rewritten sections, +47 lines
+- **ML Validation** (v1.0 -> v1.1): New section 7.3 Paper 6 comparison, +27 lines
+- **Cellular Automata** (v1.0 -> v1.1): New section 6.1 four-domain convergence, +25 lines
+- **PAC Necessity** (v1.0 -> v1.1): New section 6.5 base-agnostic proof, +16 lines
 
 ---
 
-## UPDATED Papers (Version 2.0) - Already on Zenodo
+## Papers Not Yet On Zenodo
 
-| Paper | Previous DOI | Status |
-|-------|--------------|--------|
-| symbolic_entropy_collapse | 10.5281/zenodo.17024434 | ⚠️ Needs figures |
-| dawn_field_theory_synthesis | 10.5281/zenodo.17024367 | ⚠️ Needs data move |
-| dawn_field_theory_infodynamics | 10.5281/zenodo.17041188 | ⚠️ Needs data move |
-| symbolic_cognition_collapse_interpretability | 10.5281/zenodo.17024098 | ⚠️ Needs v2.0 |
-| macro_emergence_dynamics_navier_stokes | 10.5281/zenodo.17041215 | ⚠️ Needs data move |
-
-**For updates:** Use "New version" button on existing record.
-
----
-
-## Papers Current (No Update Needed)
-
-| Paper | DOI | Status |
-|-------|-----|--------|
-| cognition_index_protocol | 10.5281/zenodo.17024220 | ✅ Current |
-| resonant_symbolic_convergence_human_agent | 10.5281/zenodo.17023921 | ✅ Current |
-| recursive_mathematical_plasticity_entropy_architecture | 10.5281/zenodo.17041249 | ✅ Current |
-| PACSeries (5 papers) | 10.5281/zenodo.17295103 | ✅ Current |
-
----
-
-## Recommended Upload Order
-
-1. **cellular_automata_xi_clustering** - 🔥 Hot off the press, Tier 1!
-2. **golden_ratio_prime_distribution** - Major Tier 1 proof
-3. **ml_validation_pythia_gpt2** - Multi-model ML validation
-4. Then fix data locations for remaining papers
-5. Then v2.0 updates for published papers
+| Paper | Status |
+|-------|--------|
+| worldseed_evolutionary_architecture | Ready for first upload |
+| pac_cosmology_jwst_validation | Needs figures and version fix |
+| she_leveque_fibonacci_turbulence | Needs figures and version fix |
+| sec_threshold_detection | Incomplete draft |
+| bidirectional_sec_pac_fluid | Incomplete draft |
 
 ---
 
 ## After Upload
 
-Update `ZENODO_REGISTRY.yaml` with:
-- New DOI numbers
-- Upload dates
-- Change status from `pending_upload` → `published`
+For each paper uploaded, update `citations/doi_registry.yaml` with the new DOI and version.

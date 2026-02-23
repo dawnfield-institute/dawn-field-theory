@@ -1,0 +1,179 @@
+{
+  "experiment_id": "exp_02_factor_base_independence",
+  "timestamp": "20251209_201713",
+  "git_commit": "3a089726b832",
+  "parameters": {
+    "n_max": 50000
+  },
+  "results": {
+    "control_tests": {
+      "small_primes_2357": {
+        "name": "Small primes (2,3,5,7)",
+        "factor_base": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "baseline": 0.20528821152846113,
+        "enrichment": {
+          "0.01": 0.42570281124497994,
+          "0.05": 0.4475580464371497,
+          "0.1": 0.4337735094037615
+        },
+        "top_1pct_ratio": 2.07368366685761
+      },
+      "first_10_primes": {
+        "name": "First 10 primes",
+        "factor_base": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "baseline": 0.20528821152846113,
+        "enrichment": {
+          "0.01": 0.6746987951807228,
+          "0.05": 0.6541232986389112,
+          "0.1": 0.6430572228891557
+        },
+        "top_1pct_ratio": 3.286592981434702
+      },
+      "larger_primes_11_29": {
+        "name": "Larger primes (11-29)",
+        "factor_base": [
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "baseline": 0.20528821152846113,
+        "enrichment": {
+          "0.01": 0.3293172690763052,
+          "0.05": 0.29703763010408324,
+          "0.1": 0.29891956782713086
+        },
+        "top_1pct_ratio": 1.6041703837955095
+      },
+      "composites_control": {
+        "name": "Composites (control)",
+        "factor_base": [
+          4,
+          6,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          20
+        ],
+        "baseline": 0.20528821152846113,
+        "enrichment": {
+          "0.01": 0.07228915662650602,
+          "0.05": 0.16493194555644516,
+          "0.1": 0.2188875550220088
+        },
+        "top_1pct_ratio": 0.3521349622965752
+      },
+      "random_odds_control": {
+        "name": "Random odds (control)",
+        "factor_base": [
+          "29",
+          "37",
+          "41",
+          "53",
+          "55",
+          "57",
+          "65",
+          "91",
+          "93",
+          "97"
+        ],
+        "baseline": 0.20528821152846113,
+        "enrichment": {
+          "0.01": 0.1927710843373494,
+          "0.05": 0.21857485988791034,
+          "0.1": 0.23489395758303322
+        },
+        "top_1pct_ratio": 0.9390265661242007
+      }
+    },
+    "external_primes_tests": {
+      "FB={2,3,5,7}": {
+        "factor_base": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "max_factor": 7,
+        "baseline_all_primes": 0.20528821152846113,
+        "baseline_external_primes": 0.20516820672826913,
+        "enrichment_all_primes": {
+          "0.01": 0.42570281124497994,
+          "0.05": 0.4475580464371497,
+          "0.1": 0.4337735094037615
+        },
+        "enrichment_external_primes": {
+          "0.01": 0.42570281124497994,
+          "0.05": 0.4475580464371497,
+          "0.1": 0.4337735094037615
+        },
+        "external_to_all_ratio": {
+          "0.01": 1.0,
+          "0.05": 1.0,
+          "0.1": 1.0
+        }
+      },
+      "FB=first 6 primes": {
+        "factor_base": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13
+        ],
+        "max_factor": 13,
+        "baseline_all_primes": 0.20528821152846113,
+        "baseline_external_primes": 0.20508820352814114,
+        "enrichment_all_primes": {
+          "0.01": 0.5381526104417671,
+          "0.05": 0.522017614091273,
+          "0.1": 0.5242096838735494
+        },
+        "enrichment_external_primes": {
+          "0.01": 0.5381526104417671,
+          "0.05": 0.522017614091273,
+          "0.1": 0.5242096838735494
+        },
+        "external_to_all_ratio": {
+          "0.01": 1.0,
+          "0.05": 1.0,
+          "0.1": 1.0
+        }
+      }
+    }
+  },
+  "validation": {
+    "prime_bases_enrich": true,
+    "composite_control_fails": true,
+    "external_primes_detected": true,
+    "independence_confirmed": true
+  },
+  "dependencies": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.15.2"
+  }
+}
