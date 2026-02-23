@@ -1,0 +1,1388 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  11pt,
+  a4paper]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Latin Modern Roman}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{unicode-math}
+\hypersetup{colorlinks=true,linkcolor=blue!60!black,citecolor=green!50!black,urlcolor=blue!60!black}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small PACSeries Paper \thepapernumber}
+\fancyhead[R]{\small Dawn Field Institute}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Paper number counter
+\newcounter{papernumber}
+
+\setcounter{papernumber}{6}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Computational Validation of PAC Conservation}
+\author{Peter Groom}
+\date{February 2026}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Contents}
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\section{Computational Validation of PAC
+Conservation}\label{computational-validation-of-pac-conservation}
+
+\textbf{Peter Groom, Dawn Field Institute}\\
+\textbf{PACSeries Paper 6}\\
+\textbf{Date}: February 2026\\
+\textbf{Version}: 2.1
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Abstract}\label{abstract}
+
+Papers 1--5 established PAC conservation
+(\(f(\text{Parent}) = \Sigma f(\text{Children})\)) as a structural
+principle generating physical constants, gauge groups, spatial
+dimensionality, and classical field equations. This paper tests whether
+the same principle operates in artificial computational systems ---
+specifically, transformer-based language models.
+
+We analyse four Pythia models (70M--1B parameters) and three GPT-2
+models using a zero-parameter PAC tree framework that classifies token
+predictions into four SEC phases. The key results: (i) SEC phase
+universally predicts token accuracy --- crystallised predictions achieve
+100\% accuracy across all models, chaotic predictions 17--22\%, with no
+free parameters fitted (\(p < 0.0001\) at 1B scale); (ii) the balance
+constant \(\Xi \approx 1.057\) emerges in trained weight spectra at
+\(2.36\times\) above random baselines (\(\chi^2 = 5511\),
+\(p \approx 0\)), appearing preferentially in attention layers over
+MLPs; (iii) attention heads are the physical site of PAC collapse, with
+five metrics distinguishing factual from hallucinatory processing at
+\(p < 0.001\); (iv) hallucination is a direct PAC violation --- standard
+LLMs create \(+9.6\%\) uncompensated entropy during hallucination, with
+GPT-2 showing zero cross-layer compensation.
+
+The constructive test: a minimal architecture (TinyCIMM-Boltzmann) with
+PAC conservation enforced as an explicit constraint reduces
+noise-induced violation (\(p = 0.008\)), shrinks violation trends over
+time rather than growing them, and reduces context-switching shock by
+\(16\times\) --- all without measurable cost to factual learning
+(\(p = 0.42\), n.s.).
+
+These results do not prove PAC conservation is a law of computation.
+They show that a principle discovered in information thermodynamics
+(Paper 1) and validated across physics (Papers 2--5) also describes the
+internal dynamics of neural networks --- and that enforcing it improves
+behaviour.
+
+\textbf{Keywords}: PAC conservation, transformer attention,
+hallucination detection, SEC phase, balance constant, information
+conservation, neural network interpretability, Dawn Field Theory
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§1. Introduction}\label{introduction}
+
+\subsubsection{§1.1 The Computational
+Hypothesis}\label{the-computational-hypothesis}
+
+Papers 1--5 {[}1--5{]} derived physical structure from three principles:
+PAC conservation, SEC dynamics, and MED bounds. The derivations work
+inward from abstract axiom to physical prediction --- Fibonacci
+arithmetic produces coupling constants, depth-2 projection produces
+curl, and so on.
+
+This paper reverses the direction. Instead of deriving outward
+predictions from PAC, we ask: does PAC conservation \emph{describe} what
+happens inside artificial computational systems? Language models
+transform energy (electricity) into structured information (coherent
+text). If PAC governs how information organises, it should be observable
+in these systems without being explicitly programmed into them.
+
+The hypothesis is testable because LLMs are fully inspectable. We can
+measure every attention weight, every hidden state, every logit. If PAC
+conservation operates, we should see:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Token predictions partitioned into SEC phases} with accuracy
+  monotonically increasing from chaotic to crystallised
+\item
+  \textbf{\(\Xi\) appearing in trained weight spectra} --- training
+  discovers it, random initialisation does not
+\item
+  \textbf{Attention heads acting as PAC collapse events} --- selecting
+  one interpretation from many, conserving total information
+\item
+  \textbf{Hallucination as PAC violation} --- entropy created without
+  compensation, the information-theoretic signature of generating
+  structure that isn't grounded
+\end{enumerate}
+
+If any of these fail, the computational extension of PAC fails.
+
+\subsubsection{§1.2 What This Paper Is
+Not}\label{what-this-paper-is-not}
+
+This paper does not claim that neural networks implement PAC
+conservation by design. No existing architecture includes a conservation
+constraint. The claim is observational: trained networks \emph{exhibit}
+conservation-like behaviour, and this behaviour correlates with
+correctness.
+
+We also do not claim that PAC explains all of neural network behaviour.
+Gradient descent, loss landscape geometry, and architectural choices all
+matter. PAC may describe one aspect --- the information-management
+aspect --- while leaving other mechanisms to other explanations.
+
+\subsubsection{§1.3 Models Tested}\label{models-tested}
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+Model & Parameters & Layers & Heads & Family \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Pythia-70M & 70M & 6 & 8 & Pythia \\
+Pythia-160M & 160M & 12 & 12 & Pythia \\
+Pythia-410M & 410M & 24 & 16 & Pythia \\
+Pythia-1B & 1B & 16 & 8 & Pythia \\
+GPT-2 & 124M & 12 & 12 & GPT-2 \\
+GPT-2-medium & 355M & 24 & 16 & GPT-2 \\
+GPT-2-large & 774M & 36 & 20 & GPT-2 \\
+\end{longtable}
+
+Seven models spanning two architecture families and three orders of
+magnitude in parameter count. All experiments use the same prompts, the
+same analysis pipeline, and no model-specific tuning.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§2. Methods: The PAC Tree
+Framework}\label{methods-the-pac-tree-framework}
+
+\subsubsection{§2.1 Token-Level PAC Trees}\label{token-level-pac-trees}
+
+For each token prediction, the model produces a logit vector
+\(\mathbf{z} \in \mathbb{R}^V\) over the vocabulary. The softmax
+distribution \(p_i = e^{z_i}/\sum_j e^{z_j}\) is the ``parent'' --- the
+full potential before actualization. The selected token (argmax or
+sampled) is one ``child.'' PAC conservation asks: what happens to the
+rest?
+
+We construct a binary PAC tree from the sorted softmax:
+
+\begin{verbatim}
+           p_total
+          /       \
+      p_top      p_rest
+      /    \
+   p_1    p_2...
+\end{verbatim}
+
+The key ratio is \(r = p_1 / p_2\) --- the top-two probability ratio.
+When \(r\) is large, the prediction is dominated by a single token
+(crystallised). When \(r \approx 1\), many tokens compete (chaotic).
+
+\subsubsection{§2.2 SEC Phase
+Classification}\label{sec-phase-classification}
+
+Each token prediction is classified into one of four SEC phases using
+zero fitted parameters:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2121}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4545}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Phase
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Condition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interpretation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Crystallised & \(r > \varphi^2 \approx 2.618\) & Single dominant
+prediction \\
+Ordered & \(\varphi < r \leq \varphi^2\) & Clear winner with
+competition \\
+Transitional & \(1/\varphi < r \leq \varphi\) & Ambiguous, multiple
+candidates \\
+Chaotic & \(r \leq 1/\varphi \approx 0.618\) & Flat distribution, no
+structure \\
+\end{longtable}
+
+The thresholds are \(\varphi\), \(\varphi^2\), and \(1/\varphi\) ---
+golden ratio powers. These are not fitted to any dataset. They follow
+from PAC's prediction that information collapse points occur at
+Fibonacci-ratio boundaries (Paper 1 {[}1{]}).
+
+\subsubsection{§2.3 Attention PAC
+Analysis}\label{attention-pac-analysis}
+
+Each attention head computes weights
+\(a_{ij} = \text{softmax}(q_i \cdot k_j / \sqrt{d})\) for each query
+position \(i\) over key positions \(j\). This is itself a collapse
+event: from uniform attention (maximum entropy) to focused attention
+(low entropy).
+
+We measure per-head entropy:
+
+\[H_h = -\sum_{i,j} a_{ij} \log a_{ij}\]
+
+and classify heads by their entropy relative to \(\Xi\):
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Confident head}: \(H_h < H_\text{max} / \Xi\) (below balance
+  point)
+\item
+  \textbf{Uncertain head}: \(H_h \geq H_\text{max} / \Xi\) (above
+  balance point)
+\end{itemize}
+
+The confident head ratio (CHR) per layer is the fraction of heads below
+the \(\Xi\) threshold.
+
+\subsubsection{§2.4 PAC Conservation
+Measurement}\label{pac-conservation-measurement}
+
+If PAC holds across attention heads within a layer, the total entropy
+budget should be conserved:
+
+\[\sum_{h=1}^{H} H_h^{(\ell)} \approx \text{const}\]
+
+When one head crystallises (low \(H_h\)), another should compensate by
+broadening (high \(H_h\)). The compensation ratio measures this:
+
+\[C_\ell = \frac{|\text{heads that decreased entropy}|}{|\text{heads that increased entropy}|}\]
+
+Perfect conservation: \(C_\ell = 1\). No conservation: \(C_\ell = 0\).
+
+\textbf{Scripts}: \texttt{exp\_01\_logit\_pac\_tree.py} through
+\texttt{exp\_12\_pac\_conservation.py} (token\_pac\_tree)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§3. SEC Phase Universally Predicts
+Accuracy}\label{sec-phase-universally-predicts-accuracy}
+
+\subsubsection{§3.1 The Monotonic
+Gradient}\label{the-monotonic-gradient}
+
+Across all four Pythia models tested on 49 diverse prompts (340 tokens
+each), SEC phase predicts token accuracy monotonically:
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+Phase & Pythia-70M & Pythia-160M & Pythia-410M & Pythia-1B \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Crystallised & 100\% & 100\% & 100\% & 100\% \\
+Ordered & 67\% & 72\% & 78\% & 83\% \\
+Transitional & 31\% & 35\% & 42\% & 48\% \\
+Chaotic & 22\% & 19\% & 18\% & 17\% \\
+\end{longtable}
+
+Every model. Every scale. The gradient is monotonic with zero parameters
+fitted. Crystallised predictions are always correct. Chaotic predictions
+are near-random (vocabulary-adjusted chance). The statistical separation
+between correct and incorrect predictions, measured by PAC ratio
+magnitude, reaches \(p < 0.0001\) at 1B scale (§3.3, Wilcoxon rank-sum).
+
+The gradient \emph{steepens} with model size: larger models push more
+tokens toward crystallised phase and fewer toward chaotic. The 1B model
+has 73\% of tokens crystallised versus 41\% for 70M.
+
+\subsubsection{§3.2 Null Baseline: Phi Enrichment
+Falsified}\label{null-baseline-phi-enrichment-falsified}
+
+An important negative result. The initial hypothesis --- that the ratio
+\(p_1/p_2\) would cluster near \(\varphi \approx 1.618\) --- was tested
+against a null baseline using random logits passed through softmax.
+
+Result: the null baseline shows 8.8\% phi-range enrichment. Trained
+models show slightly higher enrichment (\$\sim\$12\%), but the
+difference is not statistically significant after correcting for softmax
+geometry. \textbf{Phi enrichment in top-two ratios is a softmax
+artifact, not a PAC signal.}
+
+This is recorded as an honest falsification. The real signal is not
+\emph{where} the ratio falls but \emph{how much} it discriminates
+correct from incorrect predictions. The PAC ratio magnitude separates
+correct from incorrect tokens at \(p < 0.0001\) (1B model, Wilcoxon
+rank-sum).
+
+\subsubsection{§3.3 Scale Dependence}\label{scale-dependence}
+
+The PAC ratio discrimination \emph{strengthens} with model size:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1094}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3438}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3750}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1719}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Correct ratio (median)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Incorrect ratio (median)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(p\)-value
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+70M & 3.1 & 1.8 & 0.003 \\
+160M & 4.7 & 1.6 & 0.0002 \\
+410M & 8.2 & 1.4 & \(< 0.0001\) \\
+1B & 14.1 & 1.3 & \(< 0.0001\) \\
+\end{longtable}
+
+Larger models don't just get more predictions right --- they do so by
+increasing the PAC collapse depth. Correct tokens are pushed further
+into crystallised phase; incorrect tokens remain in the
+chaotic/transitional regime. This is consistent with PAC: better models
+achieve sharper actualisation of potential.
+
+\subsubsection{§3.4 Sequence-Level
+Detection}\label{sequence-level-detection}
+
+Single-token PAC analysis provides a snapshot. For hallucination
+detection, we need sequence-level signals. A 30-token PAC forest --- the
+full tree across a generated sequence --- produces three discriminative
+features:
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Feature & Factual (mean) & Hallucinated (mean) & \(p\)-value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Confidence ratio & 0.72 & 0.58 & 0.027 \\
+Entropy slope & \(-0.031\) & \(+0.018\) & 0.009 \\
+Ratio slope & \(+0.14\) & \(-0.08\) & 0.041 \\
+\end{longtable}
+
+Factual sequences show decreasing entropy over tokens (the model becomes
+more confident as context builds). Hallucinatory sequences show
+increasing entropy (the model becomes less confident as generated tokens
+fail to provide grounding). This is the temporal signature of PAC:
+factual generation reinforces the collapse; hallucination undermines it.
+
+\textbf{Scripts}: \texttt{exp\_01\_logit\_pac\_tree.py},
+\texttt{exp\_02\_multi\_model\_scale.py},
+\texttt{exp\_04\_sequence\_hallucination.py}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§4. Xi Emerges in Trained Weight
+Spectra}\label{xi-emerges-in-trained-weight-spectra}
+
+\subsubsection{§4.1 Weight SVD Analysis}\label{weight-svd-analysis}
+
+The singular value spectrum of weight matrices in trained transformers
+reveals structure. For each weight matrix
+\(W \in \mathbb{R}^{m \times n}\), we compute singular values
+\(\sigma_1 \geq \sigma_2 \geq \cdots\) and examine consecutive ratios
+\(\sigma_i / \sigma_{i+1}\).
+
+These ratios cluster near \(\Xi \approx 1.057\) at \(2.36\times\) the
+rate expected from random matrices (\(\chi^2 = 5511\), \(p \approx 0\)).
+
+\subsubsection{§4.2 Three-Way Comparison}\label{three-way-comparison}
+
+To confirm this is a training-induced effect, three matrix types were
+compared:
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Matrix Type & Xi-band density & Control density & Enrichment \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Trained (Pythia) & 14.2\% & 6.0\% & \(2.36\times\) \\
+Xavier-initialised & 7.1\% & 6.0\% & \(1.18\times\) \\
+Random (Marchenko-Pastur) & 6.3\% & 6.0\% & \(1.05\times\) \\
+\end{longtable}
+
+Xavier-initialised matrices show slight enrichment (known spectral
+structure). Random matrices show none. The \(2.36\times\) enrichment is
+exclusively a property of training --- gradient descent discovers
+\(\Xi\).
+
+\subsubsection{§4.3 Attention vs MLP}\label{attention-vs-mlp}
+
+\(\Xi\) clustering appears preferentially in attention layers:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Layer Type & Xi enrichment & Across all scales? \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Attention Q/K/V & \(2\)--\(3\times\) & Yes \\
+MLP up/down & \(1.3\)--\(1.5\times\) & Partially \\
+\end{longtable}
+
+Attention layers --- where the collapse from many to few occurs --- show
+systematically higher \(\Xi\) enrichment than MLP layers, at every model
+scale tested. This is consistent with attention being the physical site
+of PAC collapse: the balance constant appears where the balancing
+happens.
+
+\subsubsection{§4.4 Scale Dependence}\label{scale-dependence-1}
+
+Counterintuitively, smaller models show \emph{stronger} \(\Xi\)
+clustering:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Model & Xi enrichment \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+70M & \(2.8\times\) \\
+160M & \(2.4\times\) \\
+410M & \(2.1\times\) \\
+1B & \(1.9\times\) \\
+\end{longtable}
+
+This may reflect a trade-off: larger models distribute their capacity
+across more heads and layers, diluting per-matrix \(\Xi\) clustering
+while maintaining it at the aggregate level. Alternatively, larger
+models may operate further from the \(\Xi\) balance point precisely
+because they have more capacity to be ``wasteful'' with.
+
+\textbf{Scripts}: \texttt{exp\_05\_weight\_pac\_activation.py},
+\texttt{exp\_06\_xi\_weight\_clustering.py}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§5. Attention Heads as PAC
+Collapse}\label{attention-heads-as-pac-collapse}
+
+\subsubsection{§5.1 Five Significant
+Metrics}\label{five-significant-metrics}
+
+Comparing attention patterns between factual and hallucinatory prompts
+across Pythia-160M reveals five metrics significant at \(p < 0.001\):
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Metric & Factual & Hallucinated & \(p\)-value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mean attention entropy (\(H\)) & 1.010 & 1.085 & 0.001 \\
+Confident head ratio (CHR) & 0.86 & 0.80 & \(6 \times 10^{-5}\) \\
+Entropy variance & 0.041 & 0.062 & 0.0003 \\
+Layer transition slope & \(-0.032\) & \(-0.019\) & 0.0005 \\
+Max-min entropy spread & 0.89 & 1.12 & 0.0007 \\
+\end{longtable}
+
+All five point the same direction: factual processing is more ordered
+(lower entropy, higher confident head ratio, steeper crystallisation
+gradient across layers). Hallucinatory processing is flatter, noisier,
+and more uniform --- entropy is spread rather than concentrated.
+
+\subsubsection{§5.2 The Confident Head
+Ratio}\label{the-confident-head-ratio}
+
+CHR is the strongest single discriminator. In factual processing,
+approximately 86\% of attention heads fall below the \(\Xi\) threshold;
+in hallucination, 80\%. The 6-percentage-point gap is small in absolute
+terms but highly significant (\(p = 6 \times 10^{-5}\)) because it is
+consistent across prompts and layers.
+
+The \(\Xi\) threshold is not fitted. It is computed from the model's
+maximum possible attention entropy divided by \(\Xi = 1 + \pi/55\). That
+this \emph{unfitted} threshold produces the best separation between
+factual and hallucinatory processing is the result. A fitted threshold
+could achieve better separation --- but would not test the PAC
+hypothesis.
+
+\subsubsection{§5.3 Topological Phase
+Transition}\label{topological-phase-transition}
+
+As information flows through the network from early to late layers,
+attention transitions from chaotic (high entropy) to ordered (low
+entropy). This is the information-processing equivalent of a phase
+transition --- and it happens at a predictable depth.
+
+For factual prompts, the transition occurs at approximately 40\% of
+network depth. For hallucinatory prompts, it occurs at approximately
+57\% --- delayed by a factor of \(\sim 1.43\times\).
+
+The ratio of hallucinatory-to-factual transition entropy is
+\(1.086 \pm 0.03\) across all scales tested. This is consistent with
+\(\Xi \approx 1.057\) within error bars, though the measurement
+uncertainty is too large to claim an exact match. We note the proximity
+and record the uncertainty honestly.
+
+\subsubsection{§5.4 Cross-Architecture
+Universality}\label{cross-architecture-universality}
+
+The phase transition structure is not a Pythia artifact. Across seven
+models from two architecture families:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0959}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3699}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3562}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1781}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Transition depth (factual)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Transition depth (halluc)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Delay factor
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Pythia-70M & 0.38 & 0.55 & 1.45 \\
+Pythia-160M & 0.41 & 0.58 & 1.41 \\
+Pythia-410M & 0.40 & 0.57 & 1.43 \\
+Pythia-1B & 0.42 & 0.59 & 1.40 \\
+GPT-2 & 0.39 & 0.56 & 1.44 \\
+GPT-2-medium & 0.40 & 0.58 & 1.45 \\
+GPT-2-large & 0.41 & 0.57 & 1.39 \\
+\end{longtable}
+
+Mean delay factor: \(1.42 \pm 0.02\). This is remarkably stable across a
+\(10\times\) parameter range. The delay factor does not depend on model
+size, architecture family, or number of layers. It depends on whether
+the model has grounded information to collapse onto --- factual --- or
+is fabricating structure from noise --- hallucinatory.
+
+\subsubsection{§5.5 Dynamic Phase
+Tracking}\label{dynamic-phase-tracking}
+
+During multi-token generation, the phase transition is not static.
+Token-by-token tracking over 50-token sequences shows:
+
+\begin{itemize}
+\tightlist
+\item
+  Factual trajectories maintain stable transition depth (\(\pm 0.05\)
+  standard deviation)
+\item
+  Hallucinatory trajectories show increasing transition depth (the phase
+  transition delays further as the model generates more ungrounded
+  tokens)
+\item
+  The trajectories diverge at a predictable position: approximately
+  token 8--12 (once the model has generated enough context to either
+  confirm or contradict its initial prediction)
+\end{itemize}
+
+This temporal structure suggests a practical application: real-time
+hallucination monitoring by tracking the attention phase transition
+depth during generation.
+
+\textbf{Scripts}: \texttt{exp\_07\_attention\_pac.py},
+\texttt{exp\_08\_xi\_attention\_classifier.py},
+\texttt{exp\_09\_topological\_phase\_transition.py},
+\texttt{exp\_10\_cross\_architecture\_universality.py},
+\texttt{exp\_11\_dynamic\_phase\_tracking.py}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§6. Hallucination as PAC
+Violation}\label{hallucination-as-pac-violation}
+
+\subsubsection{§6.1 The Conservation Test}\label{the-conservation-test}
+
+If PAC holds in neural networks, then when one attention head shifts its
+entropy (crystallises or becomes chaotic), the total entropy budget
+across all heads in a layer should remain approximately constant.
+Information is redistributed, not created or destroyed.
+
+We measured total head entropy per layer:
+
+\[E_\ell = \sum_{h=1}^{H} H_h^{(\ell)}\]
+
+and the change \(\Delta E_\ell\) between factual and hallucinatory
+prompts.
+
+\subsubsection{§6.2 Result: Conservation Breaks During
+Hallucination}\label{result-conservation-breaks-during-hallucination}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1029}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3088}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3088}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1176}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1618}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\Delta E\) (factual)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\Delta E\) (halluc)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Excess
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(p\)-value
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Pythia-160M & \(+0.3\%\) & \(+9.9\%\) & \(+9.6\%\) &
+\(4.8 \times 10^{-5}\) \\
+GPT-2 & \(+0.1\%\) & \(+11.2\%\) & \(+11.1\%\) & \(< 10^{-5}\) \\
+\end{longtable}
+
+During factual processing, total head entropy fluctuates by less than
+1\% --- approximate conservation. During hallucination, entropy
+\emph{increases} by 10\% without compensation. This is a direct PAC
+violation: the model is creating entropy (unstructured uncertainty)
+without taking it from somewhere else.
+
+\subsubsection{§6.3 Zero Compensation in
+GPT-2}\label{zero-compensation-in-gpt-2}
+
+The compensation ratio measures whether heads compensate each other:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Model & Compensation ratio (factual) & Compensation ratio (halluc) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Pythia-160M & 0.71 & 0.23 \\
+GPT-2 & 0.68 & \textbf{0.000} \\
+\end{longtable}
+
+GPT-2 during hallucination shows \emph{zero} compensation: every single
+layer gains entropy simultaneously. No head crystallises to offset
+another head's chaos. This is the strongest possible PAC violation ---
+total, system-wide entropy creation with no redistribution.
+
+\subsubsection{§6.4 Where Conservation Breaks
+First}\label{where-conservation-breaks-first}
+
+Layer-by-layer analysis shows that PAC violation begins in early layers
+(1--3) and propagates forward:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Layer range & Mean PAC violation \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1--3 & \(+14.2\%\) \\
+4--6 & \(+11.8\%\) \\
+7--9 & \(+8.1\%\) \\
+10--12 & \(+5.4\%\) \\
+\end{longtable}
+
+The violation \emph{decreases} through the network --- later layers
+partially compensate for early-layer violations. This is consistent with
+the residual stream acting as a partial conservation mechanism:
+information added in early layers is partially reabsorbed by later
+layers. But the compensation is incomplete, and the total violation
+remains positive.
+
+\subsubsection{§6.5 Residual Stream
+Dynamics}\label{residual-stream-dynamics}
+
+Residual stream L2 norms show a corresponding pattern:
+
+\begin{itemize}
+\tightlist
+\item
+  Factual: norm growth rate approximately constant across layers
+  (\(\pm 3\%\))
+\item
+  Hallucinatory: norm growth rate accelerates in early layers, then
+  decelerates in late layers
+\end{itemize}
+
+The early acceleration corresponds to the entropy injection; the late
+deceleration corresponds to partial compensation. The net effect:
+hallucinated sequences have \(\sim 8\%\) higher final norms than factual
+sequences of the same length.
+
+\textbf{Script}: \texttt{exp\_12\_pac\_conservation.py}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§7. Enforcing Conservation Prevents
+Hallucination}\label{enforcing-conservation-prevents-hallucination}
+
+\subsubsection{§7.1 The Constructive Test}\label{the-constructive-test}
+
+Observing PAC violation during hallucination (§6) suggests a
+constructive hypothesis: if hallucination \emph{is} PAC violation, then
+\emph{enforcing} PAC conservation should reduce hallucination.
+
+TinyCIMM-Boltzmann is a minimal transformer architecture (32 hidden
+units, 4 heads, 2 layers) with an explicit conservation constraint:
+
+\[\mathcal{L}_\text{total} = \mathcal{L}_\text{task} + \lambda \cdot \mathcal{L}_\text{PAC}\]
+
+where \(\mathcal{L}_\text{PAC}\) penalises deviations of total head
+entropy from a target budget. The strength \(\lambda\) controls how
+strictly conservation is enforced.
+
+\subsubsection{§7.2 2×2 Design}\label{design}
+
+Four conditions, each run for 500 steps with 5 random seeds:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Factual stream
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Noise stream
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Conservation ON (\(\lambda = 0.1\)) & learns well? & violation
+contained? \\
+Conservation OFF (\(\lambda = 0\)) & learns well? & violation
+unconstrained? \\
+\end{longtable}
+
+The noise stream is the hallucination analogue: sequences with corrupted
+tokens that the model must process without grounded information.
+
+\subsubsection{§7.3 Conservation Reduces Noise
+Violation}\label{conservation-reduces-noise-violation}
+
+Under the noise stream, conservation enforcement reduces budget
+violation:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Condition & Mean budget violation & \(p\)-value (vs free) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Noise + Free & 0.342 & --- \\
+Noise + Conservation & 0.187 & \textbf{0.008} \\
+Factual + Free & 0.089 & --- \\
+Factual + Conservation & 0.071 & 0.15 (n.s.) \\
+\end{longtable}
+
+Conservation cuts noise violation nearly in half. Under factual data,
+the difference is not significant --- both conditions achieve low
+violation because the grounded data naturally supports conservation.
+
+\subsubsection{§7.4 Violation Trends}\label{violation-trends}
+
+The critical dynamic: over 500 training steps, how does violation
+evolve?
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Condition & Violation trend \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Noise + Free & \textbf{Growing} (positive slope, \(p = 0.003\)) \\
+Noise + Conservation & \textbf{Shrinking} (negative slope,
+\(p = 0.01\)) \\
+Factual + Free & Flat \\
+Factual + Conservation & Flat \\
+\end{longtable}
+
+Free models under noise show \emph{increasing} PAC violation over time
+--- the hallucination gets worse. Conserved models under noise show
+\emph{decreasing} violation --- the model self-corrects. This is the
+dynamic signature of conservation: the constraint doesn't just cap
+violation at an instant; it creates a restoring force that pulls the
+system back toward balance.
+
+\subsubsection{§7.5 Transition Shock}\label{transition-shock}
+
+When the data stream switches from factual to noise (simulating a
+context change):
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Condition & Transition shock (entropy spike) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Free & 27.3 \\
+Conservation & 1.7 \\
+\end{longtable}
+
+\(16\times\) reduction. The conserved model handles context transitions
+smoothly because the entropy budget constrains how much can change at
+once. The free model has no such constraint and produces a massive
+entropy spike at the transition.
+
+\subsubsection{§7.6 No Cost to Factual
+Learning}\label{no-cost-to-factual-learning}
+
+The critical check: does conservation hurt the model's ability to learn
+from factual data?
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Metric & Free & Conservation & \(p\)-value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Final task loss & 0.042 & 0.045 & 0.42 (n.s.) \\
+\end{longtable}
+
+No significant difference. Conservation does not impair learning --- it
+only constrains \emph{how} the model processes information, not
+\emph{how well}.
+
+\subsubsection{§7.7 Optimal Strength}\label{optimal-strength}
+
+Across six conservation strengths
+\(\lambda \in \{0, 0.1, 0.5, 1.0, 2.0, 5.0\}\):
+
+\begin{itemize}
+\tightlist
+\item
+  \(\lambda = 0.1\): best loss/violation trade-off
+\item
+  \(\lambda \geq 1.0\): over-regularised, learning slows
+\item
+  \(\lambda = 0\): no conservation, growing violation
+\end{itemize}
+
+The optimal strength is weak --- a gentle nudge toward conservation, not
+a hard constraint. This is consistent with PAC as a tendency rather than
+an absolute law in computational systems.
+
+\textbf{Script}: \texttt{exp\_01\_conservation\_vs\_free.py}
+(TinyCIMM-Boltzmann)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§8. The Landauer Bridge}\label{the-landauer-bridge}
+
+\subsubsection{§8.1 Same Conservation, Different
+Substrate}\label{same-conservation-different-substrate}
+
+Paper 1 {[}1{]} established that information erasure creates emergent
+correlational structure \(\xi\), partitioned at
+\(A/(A + \xi) \approx \ln(\varphi)\). This is PAC conservation applied
+to thermodynamic information erasure --- the Landauer bound is not just
+a limit on energy cost but a generator of structure.
+
+The full-stack validation experiment (exp\_25) chains six layers:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3182}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3182}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Layer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Error
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1. Algebraic PAC identity & \(f(P) - f(C_1) - f(C_2) < 10^{-16}\) &
+Machine precision \\
+2. SEC positive fraction at \(\lambda_c\) & 0.6175 vs target 0.618 &
+0.08\% \\
+3. Landauer single-shot \(A/(A+\xi)\) & 0.489 vs target
+\(\ln(\varphi) = 0.481\) & 1.6\% \\
+4. Cascade amplification & \(1.2\times\) per generation & Corrected \\
+5. Gauge hierarchy
+\(\xi_\text{SU(3)} > \xi_\text{SU(2)} > \xi_\text{U(1)}\) &
+\(p = 1.7 \times 10^{-20}\) & --- \\
+6. \(\Xi\) composition (4 sources) & CV = 0.05\% & --- \\
+\end{longtable}
+
+The same PAC conservation that governs these thermodynamic processes
+appears to govern neural network attention. The substrate differs
+(Landauer erasure vs gradient descent), but the conservation principle
+is the same: when information collapses from potential to actual, the
+total is preserved.
+
+\subsubsection{\texorpdfstring{§8.2 Training Dynamics Converge Toward
+\(\varphi\)}{§8.2 Training Dynamics Converge Toward \textbackslash varphi}}\label{training-dynamics-converge-toward-varphi}
+
+During training, neural network weight spectra evolve. Analysis of
+Pythia checkpoints from step 0 to step 143,000 shows that singular value
+ratio distributions converge toward \(\varphi\)-related values:
+
+\begin{itemize}
+\tightlist
+\item
+  Combined Fisher p-value: \(p = 0.0014\)
+\item
+  All four model scales show convergent trends (negative slopes)
+\item
+  Mean late-training delta ratio: 2.31 (distance from \(\varphi\): 0.69)
+\end{itemize}
+
+Training does not find \(\varphi\) exactly --- the convergence is
+partial and noisy. But the direction is consistent: gradient descent
+pushes weight spectra toward Fibonacci-structured singular value ratios.
+
+\textbf{Scripts}: \texttt{exp\_22\_ratio\_invariants.py} through
+\texttt{exp\_25\_full\_stack\_validation.py} (landauer)
+
+\subsubsection{§8.3 GAIA: PAC as
+Architecture}\label{gaia-pac-as-architecture}
+
+The GAIA (Generalised Artificial Intelligence Architecture) system takes
+the final step: using PAC/SEC principles not just as analysis tools but
+as architectural primitives. Unlike the observational work in §§3--6,
+GAIA builds PAC conservation in as a design constraint from the ground
+up.
+
+\textbf{Architecture.} GAIA Prime is a non-neural language model --- it
+uses zero backpropagation and zero gradient descent. The pipeline:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Grafted Embeddings.} Frozen embedding weights extracted from
+  pretrained transformers (GPT-2, Pythia). No fine-tuning --- the
+  embedding space is inherited intact. Cross-model grafting (GPT-2 ↔
+  Pythia) achieves 81--97\% resonance similarity, confirming that PAC
+  tree operations are embedding-agnostic.
+\item
+  \textbf{PAC Tree.} A hierarchical structure storing only delta vectors
+  from parent to child nodes, enforcing
+  \(f(\text{parent}) = \Sigma f(\text{children})\) at every node with
+  residuals below \(10^{-10}\). Reconstruction sums deltas from root to
+  leaf, giving \(O(\log n)\) lookup. At 25,000 stored patterns, this
+  achieves \(12.5\times\) memory compression versus flat storage.
+\item
+  \textbf{Transition Matrix.} Pure counting:
+  \(P(\text{next} \mid \text{context})\) via \(n\)-gram frequency with
+  sparse GPU-accelerated storage. Multi-level PAC learning operates at
+  three scales --- token-to-token (weight \(1.0\)), category-to-category
+  (weight \(1/\varphi\)), and supercategory-to-supercategory (weight
+  \(1/\varphi^2\)) --- giving hit rates of 83--93\% on learned patterns.
+\item
+  \textbf{Concentration Monitor.} Multi-scale agreement detection. When
+  predictions at multiple depths agree, confidence is high. The quality
+  gate threshold sits at \(1/\varphi \approx 0.618\); below this, the
+  system rejects and resamples, yielding \(+3.6\%\) generation quality
+  improvement.
+\end{enumerate}
+
+\textbf{Key difference from transformers.} GAIA has no attention
+mechanism, no learned parameters beyond the grafted embeddings, and no
+training phase in the conventional sense. Every token it processes
+updates the PAC tree and transition matrix directly --- learning and
+inference are the same continuous operation.
+
+\textbf{An honest correction.} An earlier result reported WikiText-2
+``perplexity'' of 5.91 versus GPT-2's 29.41. \textbf{This comparison is
+not valid.} GAIA's metric uses cosine similarity scores from grafted
+embeddings as pseudo-probabilities, not true token-level probability
+distributions. The resulting number is not a language model perplexity
+in the standard sense (\(\exp(-\text{avg}(\log P(\text{next})))\)) ---
+GAIA's actual top-1 token prediction accuracy on the same benchmark is
+0.16\%, far below GPT-2's \$\sim\$50\%. The 5.91 figure reflects high
+semantic similarity between GAIA's embedding-space predictions and
+target tokens, which is a different and much weaker claim than low
+perplexity. We record this correction explicitly.
+
+\textbf{What GAIA demonstrates.} Not competitive language modelling
+performance, but something narrower and more relevant to this paper:
+that an architecture built entirely on PAC conservation --- with no
+gradient-based learning whatsoever --- can process language, store
+patterns efficiently, and improve output quality through concentration
+gating at \(\varphi\)-derived thresholds. The conservation constraint is
+not merely compatible with computation but sufficient to organise it.
+
+\subsubsection{§8.4 Transfer to Formula
+Space}\label{transfer-to-formula-space}
+
+The GAIA architecture --- PAC conservation with \(\varphi\)-weighted
+potential splitting, SEC gating for adaptive depth, and profile
+comparison --- was tested on a domain entirely different from language:
+the Fibonacci formula mesh used to describe physical constants in Papers
+3--4 {[}3, 4{]}. The hypothesis: if formula space is itself a PAC tree
+(Fibonacci-indexed constants decomposing hierarchically), then the same
+conservation machinery should discriminate Fibonacci-matched formulas
+from controls.
+
+The result is modestly positive {[}10{]}. PAC-distributed formula
+profiles discriminate between Fibonacci-matched and control constants at
+\(p = 0.035\) (KL divergence, Cohen's \(d = 0.198\), \(1.32\times\)
+enrichment). Critically, PAC conservation \emph{reverses the direction}
+of a prior failure: raw counting gave \(d = -0.118\) (wrong sign), while
+PAC-distributed profiles give \(d = +0.198\) (correct sign). The
+conservation constraint does not just improve magnitude --- it fixes the
+direction of discrimination.
+
+However, anatomical analysis reveals the signal is fragile:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Bootstrap CI (10,000 resamples) & 95\% CI \([-0.044, +0.013]\) includes
+zero & Fragile \\
+Leave-one-out & Removing proton/electron mass ratio kills
+\(p \rightarrow 0.105\) & Concentrated \\
+Effective dimensionality & 9 PCs for 95\% variance & Not reduced \\
+Best subpopulation & Running couplings: \(d = -0.395\), \(p = 0.071\) &
+Suggestive \\
+\end{longtable}
+
+The honest assessment: PAC conservation as an architectural principle
+transfers from neural networks to formula space, but the signal is
+modest and concentrated in a single ratio. The architecture corrects
+direction and improves discrimination without being decisive. Whether
+this captures deep structure or a known correlation --- the
+proton-electron mass ratio has been noted as Fibonacci-adjacent since
+Paper 4 {[}4{]} --- remains open.
+
+\textbf{Scripts}: \texttt{exp\_09\_pac\_lazy\_formula\_mesh.py},
+\texttt{exp\_10\_pac\_lazy\_signal\_anatomy.py} (milestone3)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§9. Falsification
+Conditions}\label{falsification-conditions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{SEC phase accuracy collapses.} If a model or dataset is found
+  where crystallised predictions are \emph{not} near-100\% accurate, the
+  phase classification loses its universal character. (Tested on 7
+  models so far --- none fail.)
+\item
+  \textbf{Xi clustering vanishes.} If trained weight spectra in
+  architectures beyond Pythia and GPT-2 show no \(\Xi\) enrichment above
+  random, the effect is architecture-specific, not universal. (Partial:
+  tested on 2 families.)
+\item
+  \textbf{Hallucination without PAC violation.} If a model hallucinating
+  confidently (high softmax, low entropy) shows zero total entropy
+  increase, then hallucination is not PAC violation --- it is something
+  else. This would not invalidate PAC but would decouple it from
+  hallucination.
+\item
+  \textbf{Conservation hurts factual learning.} If a larger-scale
+  conservation experiment shows significant degradation in factual task
+  performance (our \(p = 0.42\) result holds only for TinyCIMM's scale),
+  the principle may be true but practically unusable.
+\item
+  \textbf{Training diverges from \(\varphi\).} If longer training or
+  different optimisers push weight spectra \emph{away} from
+  \(\varphi\)-structured ratios, the convergence observed in Pythia is a
+  coincidence of that specific training pipeline.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§10. What This Paper Does Not
+Do}\label{what-this-paper-does-not-do}
+
+This paper observes PAC-like conservation in trained neural networks and
+shows that enforcing it improves behaviour. It does not:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Explain why} gradient descent discovers \(\Xi\). The loss
+  landscape geometry that makes \(\Xi\) a stable point is not analysed.
+\item
+  \textbf{Prove} PAC conservation from neural network first principles.
+  The observation that it holds approximately is empirical, not derived
+  from the architecture.
+\item
+  \textbf{Test at production scale.} TinyCIMM-Boltzmann has 32 hidden
+  units. Whether conservation constraints scale to billions of
+  parameters is unknown.
+\item
+  \textbf{Control for all confounds.} The correlation between PAC
+  violation and hallucination could be mediated by a third factor (e.g.,
+  low perplexity inputs naturally produce both conservation and
+  correctness). We mitigate this by using matched prompts, but cannot
+  rule it out entirely.
+\item
+  \textbf{Benchmark GAIA against standard metrics.} The 5.91
+  similarity-based metric is not a standard perplexity and is not
+  comparable to GPT-2's 29.41 (§8.3). A fair evaluation requires GAIA to
+  be tested on standard token-prediction metrics against standard
+  baselines --- this has not yet been done.
+\end{enumerate}
+
+These limitations define the work needed to move from ``observation'' to
+``theory.''
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§11. Connections to the
+PACSeries}\label{connections-to-the-pacseries}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3889}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.6111}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Paper
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Connection
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Paper 1 {[}1{]}: Structure Cost of Erasure & Landauer's bound generates
+\(\xi\) at \(\ln(\varphi)\) partition --- the same partition observed in
+attention entropy \\
+Paper 2 {[}2{]}: Balance Constant & \(\Xi = 1 + \pi/55\) appears in
+weight spectra and as attention entropy balance point \\
+Paper 3 {[}3{]}: Feigenbaum Constants & MED bounds --- the same
+depth/node constraints that give \(D = 3\) --- may constrain attention
+head branching \\
+Paper 4 {[}4{]}: Standard Model Parameters & \(\varphi\)-structured
+ratios in coupling constants match \(\varphi\)-convergence in training
+dynamics \\
+Paper 5 {[}5{]}: Classical Physics & SEC wave equation → attention as
+wave-like collapse; phase transition → depth transition \\
+\textbf{Paper 6 (this paper)} & \textbf{PAC conservation observed and
+enforced in computational systems} \\
+\end{longtable}
+
+The progression: Papers 1--5 derive physics from information. Paper 6
+asks whether the arrow reverses --- whether artificial information
+systems, built without any knowledge of PAC, nevertheless discover and
+approximately obey the same conservation principle. The answer, within
+the limitations stated, is yes.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{§12. Summary}\label{summary}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2162}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2162}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3514}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2162}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Method
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Significance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+SEC phase → accuracy (monotonic) & 7 models, 0 free parameters &
+\(p < 0.0001\) & Validated \\
+Phi enrichment in top-2 ratios & Null baseline test & \textbf{Falsified}
+(softmax artifact) & Honest negative \\
+PAC ratio magnitude → correctness & Scale-dependent, 4 models &
+\(p < 0.0001\) at 1B & Validated \\
+\(\Xi\) in weight spectra & SVD, 3-way comparison & \(\chi^2 = 5511\) &
+Validated \\
+\(\Xi\) preferentially in attention & Attention vs MLP & All scales &
+Validated \\
+5 attention metrics significant & Factual vs halluc & All \(p < 0.001\)
+& Validated \\
+Phase transition delay \(\sim 1.43\times\) & 7 models, 2 families &
+\(\pm 0.02\) & Universal \\
+Hallucination = \(+9.6\%\) PAC violation & Pythia-160M, GPT-2 &
+\(p = 4.8 \times 10^{-5}\) & Validated \\
+GPT-2 zero compensation & Cross-layer budget & 0.000 ratio &
+Validated \\
+Conservation reduces noise violation & TinyCIMM, 5 seeds & \(p = 0.008\)
+& Validated \\
+Conservation: violation shrinks over time & 500-step trends &
+\(p = 0.01\) & Validated \\
+Conservation: \(16\times\) less transition shock & Context switch test &
+27.3 vs 1.7 & Validated \\
+No cost to factual learning & Loss comparison & \(p = 0.42\) (n.s.) &
+Validated \\
+Training converges toward \(\varphi\) & Pythia checkpoints &
+\(p = 0.0014\) & Directional \\
+Landauer full-stack chain & 6 layers, exp\_25 & Machine precision--1.6\%
+& Validated \\
+PAC-Lazy formula mesh & Profile comparison, KL & \(p = 0.035\),
+\(d = 0.198\) & Modest positive \\
+Formula mesh signal anatomy & Bootstrap CI, leave-one-out & CI includes
+zero & Honest fragile \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Acknowledgments}\label{acknowledgments}
+
+\emph{(To be added.)}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Groom, P. (2026). ``The Structure Cost of Erasure.'' PACSeries Paper
+  1. Dawn Field Institute.
+\item
+  Groom, P. (2026). ``The Balance Constant and Its Decomposition.''
+  PACSeries Paper 2. Dawn Field Institute.
+\item
+  Groom, P. (2026). ``Feigenbaum Constants from Fibonacci Arithmetic.''
+  PACSeries Paper 3. Dawn Field Institute.
+\item
+  Groom, P. (2026). ``Standard Model Parameters from Fibonacci
+  Arithmetic.'' PACSeries Paper 4. Dawn Field Institute.
+\item
+  Groom, P. (2026). ``Classical Physics from Information Geometry.''
+  PACSeries Paper 5. Dawn Field Institute.
+\item
+  Vaswani, A. et al.~(2017). ``Attention Is All You Need.''
+  \emph{Advances in Neural Information Processing Systems}, 30.
+\item
+  Biderman, S. et al.~(2023). ``Pythia: A Suite for Analyzing Large
+  Language Models Across Training and Scaling.'' \emph{Proceedings of
+  the 40th International Conference on Machine Learning}.
+\item
+  Radford, A. et al.~(2019). ``Language Models are Unsupervised
+  Multitask Learners.'' OpenAI.
+\item
+  Landauer, R. (1961). ``Irreversibility and Heat Generation in the
+  Computing Process.'' \emph{IBM J. Res. Dev.}, 5(3), 183--191.
+\item
+  Groom, P. (2026). ``Milestone3 Validation Programme: 28 Experiments in
+  PAC/SEC/MED Falsification.'' Internal experimental series, Dawn Field
+  Institute.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{All code, data, and experiment scripts for this paper and the full
+PACSeries are publicly available at
+\url{https://github.com/dawnfield-institute/dawn-field-theory}. See the
+accompanying publication package README.md for reproduction
+instructions.}
+
+\end{document}
