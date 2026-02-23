@@ -1,0 +1,82 @@
+schema_version: "2.0"
+type: "paper"
+name: "feigenbaum_fibonacci_arithmetic"
+title: "Feigenbaum Constants from Fibonacci Arithmetic"
+subtitle: "Closed-form expressions for r∞, δ, and α using π, φ, and Fibonacci numbers"
+series: "PACSeries"
+series_order: 3
+author: "Peter Groom"
+affiliation: "Dawn Field Institute"
+date: "2026-02"
+version: "2.1"
+status: "preprint"
+
+description: >
+  Presents candidate closed-form expressions for the three Feigenbaum constants
+  of period-doubling universality — r∞ to 13 significant figures, δ to 8,
+  and |α| to 6 — using only π, Fibonacci numbers, and small integers.
+  Exhaustive search of 3.9 million parameter triples shows the formula parameters
+  uniquely optimal at 1 in 280 billion odds. The formulas embed in a Möbius
+  perturbation series, converge as a self-closing fixed-point equation, and
+  remain invariant across all quadratic-maximum maps.
+
+semantic_scope: "publication"
+proficiency_level: "research"
+estimated_context_weight: 0.9
+
+files:
+  - "[paper.md]": "Main paper (Markdown source)"
+  - "[README.md]": "Paper overview and reproduction instructions"
+  - "[Code/reproduce.py]": "Reproduction script — runs all experiments"
+  - "[Code/generate_figures.py]": "Publication figure generator (6 figures)"
+  - "[Code/requirements.txt]": "Python dependencies (numpy, scipy, mpmath, matplotlib)"
+  - "[Code/trace.yaml]": "Provenance trace — maps local files to source repo"
+  - "[Code/experiments/exp_01_feigenbaum_all_constants.py]": "All three closed-form formulas"
+  - "[Code/experiments/exp_02_statistical_proof.py]": "Exhaustive search — 1 in 280 billion"
+  - "[Code/experiments/exp_03_renormalization_analysis.py]": "Möbius structure of δ"
+  - "[Code/experiments/exp_04_crossratio_mobius.py]": "Bifurcation cross-ratios (50 digits)"
+  - "[Code/experiments/exp_05_high_precision_validation.py]": "200-digit Möbius series"
+  - "[Code/experiments/exp_06_theoretical_framework.py]": "M₁₀ framework, self-consistency"
+  - "[Code/experiments/exp_07_rbf_self_closing.py]": "RBF self-closing formula for δ"
+  - "[Code/experiments/exp_08_universality.py]": "Universality across quadratic maps"
+  - "[Code/experiments/exp_09_cross_domain_validation.py]": "5-domain validation (1 in 120B)"
+  - "[Data/results/exp_07_feigenbaum_all_constants_20260106_161706.json]": "r∞/δ/α validation"
+  - "[Data/results/exp_09_statistical_proof_20260106_164302.json]": "Exhaustive search results"
+  - "[Data/results/exp_08_renormalization_analysis_20260106_162646.json]": "Möbius matrix analysis"
+  - "[Data/results/exp_10_crossratio_mobius_20260106_185922.json]": "Cross-ratio convergence"
+  - "[Data/results/exp_24_high_precision_20260107_141918.json]": "200-digit coefficients"
+  - "[Data/results/exp_25_theoretical_framework_20260107_144129.json]": "M₁₀ framework"
+  - "[Data/results/exp_28_conservation_phi_fibonacci_chain_20260107_164108.json]": "5-domain test"
+  - "[Figures/fig1_precision_hierarchy.png]": "§6 — Möbius series convergence"
+  - "[Figures/fig2_cross_domain_validation.png]": "§9 — Five-domain test"
+  - "[Figures/fig3_phi_sensitivity.png]": "§9.4 — φ perturbation sensitivity"
+  - "[Figures/fig4_statistical_proof.png]": "§4 — Joint probability analysis"
+  - "[Figures/fig5_fibonacci_selectivity.png]": "§9.2 — Fibonacci ratio selectivity"
+  - "[Figures/fig6_formula_precision.png]": "§2 — Three constants precision"
+
+source_experiments:
+  - "foundational/experiments/sec_threshold_detection"
+source_scripts:
+  - "exp_01_feigenbaum_all_constants.py"
+  - "exp_02_statistical_proof.py"
+  - "exp_03_renormalization_analysis.py"
+  - "exp_04_crossratio_mobius.py"
+  - "exp_05_high_precision_validation.py"
+  - "exp_06_theoretical_framework.py"
+  - "exp_07_rbf_self_closing.py"
+  - "exp_08_universality.py"
+  - "exp_09_cross_domain_validation.py"
+
+key_results:
+  - "r∞ = π(55+√(17−π/(55d)))(55+π)/55² − correction: 13 significant figures"
+  - "δ = (50050+32π)/(10725+5π): 8 significant figures"
+  - "|α| = (2700+π)/1080: 6 significant figures"
+  - "Exhaustive search (3.9M triples): only (55,17,52) at 7+ digits"
+  - "Combined odds 1 in 280 billion against coincidence"
+  - "Surplus precision: 16.4 digits beyond parameter-fitting capacity"
+  - "Möbius perturbation series: each level adds ~3 digits"
+  - "A₃/A₂ = 6050 = 2F₁₀² exactly"
+  - "Self-consistency derives δ to 6 digits from structure alone"
+  - "RBF self-closing formula δ = φ^(20/N): 13 digits in 3 iterations"
+  - "Δz universal across quadratic-max maps (10⁻¹⁰ precision)"
+  - "5-domain cross-validation: joint p = 8.3×10⁻¹² (1 in 120 billion)"

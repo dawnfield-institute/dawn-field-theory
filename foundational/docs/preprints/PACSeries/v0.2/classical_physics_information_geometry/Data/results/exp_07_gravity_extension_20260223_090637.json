@@ -1,0 +1,24 @@
+{
+  "experiment": "exp_07_gravity_extension",
+  "paper": "PACSeries Paper 5",
+  "section": "8 (SPECULATIVE)",
+  "timestamp": "2026-02-23T09:06:37.380539",
+  "main_results": {
+    "projection_decomposition": {
+      "antisymmetric_dof": 6,
+      "symmetric_dof": 10,
+      "reconstruction_error": 1.1102230246251565e-16
+    },
+    "hierarchy_depth": {
+      "em_depth": 7,
+      "gravity_depth_conjecture": 183,
+      "depth_difference": 176,
+      "predicted_log10_ratio": -36.8,
+      "observed_log10_ratio": -38.2,
+      "discrepancy_orders": 1.4
+    },
+    "universal_coupling": "Symmetric projection of information field couples to ALL information carriers, analogous to how trace is basis-independent. This provides a structural reason for gravitational universality.",
+    "status": "SPECULATIVE",
+    "caveat": "Depth-183 assignment and the full gravity derivation are conjectures. Order-of-magnitude hierarchy argument is suggestive but not rigorous. The symmetric\u2013antisymmetric duality is well-defined mathematically but its physical identification with gravity\u2013EM remains unproven."
+  }
+}
