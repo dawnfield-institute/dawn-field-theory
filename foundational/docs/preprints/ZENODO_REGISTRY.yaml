@@ -1,24 +1,24 @@
 # Zenodo Publication Registry
 # Tracks all papers uploaded to Zenodo with DOIs and version history
+# Canonical DOI source of truth: citations/doi_registry.yaml
 
 schema_version: '2.0'
-updated: '2025-12-28'
-last_audit: '2025-12-28'
+updated: '2026-02-23'
+last_audit: '2026-02-23'
 
 # Papers already on Zenodo
 published:
   # PACSeries (bundled upload)
   - slug: PACSeries
-    zenodo_record: 17295103
-    doi: 10.5281/zenodo.17295103
-    version: "1.0"
-    upload_date: "2025-12"
-    papers_included:
-      - xi_bounded_invariant_universal_balance_operator
-      - mobius_confluence_operator_temporal_emergence
-      - gaia_computational_validation_dawn_field_theory
-      - relativistic_mas_universal_frequency
-      - sec_med_framework_information_amplification
+    zenodo_record: 18743674
+    doi: 10.5281/zenodo.18743674
+    version: "0.2"
+    upload_date: "2026-02-23"
+    status: current
+    previous_version:
+      zenodo_record: 17295103
+      doi: 10.5281/zenodo.17295103
+      version: "0.1"
 
   # Foundational Theory
   - slug: symbolic_entropy_collapse
@@ -26,21 +26,21 @@ published:
     doi: 10.5281/zenodo.17024434
     version: "1.0"
     upload_date: "2025-12"
-    status: needs_update  # Check for changes
+    status: update_packaged  # v1.1 package ready for upload
 
   - slug: dawn_field_theory_synthesis
-    zenodo_record: 17024367
-    doi: 10.5281/zenodo.17024367
-    version: "1.0"
-    upload_date: "2025-12"
-    status: needs_update
+    zenodo_record: 18087136
+    doi: 10.5281/zenodo.18087136
+    version: "2.0"
+    upload_date: "2025-12-29"
+    status: current
 
   - slug: dawn_field_theory_infodynamics
-    zenodo_record: 17041188
-    doi: 10.5281/zenodo.17041188
-    version: "1.0"
-    upload_date: "2025-12"
-    status: needs_update
+    zenodo_record: 18087191
+    doi: 10.5281/zenodo.18087191
+    version: "2.0"
+    upload_date: "2025-12-29"
+    status: update_packaged  # v2.1 package ready for upload
 
   # Cognitive Architecture & AI
   - slug: cognition_index_protocol
@@ -49,14 +49,13 @@ published:
     version: "2.0"
     upload_date: "2025-12"
     status: current
-    note: "No code needed - protocol/methodology paper"
 
   - slug: symbolic_cognition_collapse_interpretability
     zenodo_record: 17024098
     doi: 10.5281/zenodo.17024098
     version: "1.0"
     upload_date: "2025-12"
-    status: needs_update
+    status: current  # Moved to legacy, no further updates planned
 
   - slug: resonant_symbolic_convergence_human_agent
     zenodo_record: 17023921
@@ -64,7 +63,6 @@ published:
     version: "1.0"
     upload_date: "2025-12"
     status: current
-    note: "No code needed - framework paper"
 
   # Mathematical & Engineering
   - slug: recursive_mathematical_plasticity_entropy_architecture
@@ -73,77 +71,87 @@ published:
     version: "1.0"
     upload_date: "2025-12"
     status: current
-    note: "No code needed - theoretical architecture paper"
 
   - slug: macro_emergence_dynamics_navier_stokes
-    zenodo_record: 17041215
-    doi: 10.5281/zenodo.17041215
+    zenodo_record: 18087212
+    doi: 10.5281/zenodo.18087212
+    version: "2.0"
+    upload_date: "2025-12-29"
+    status: current
+
+  # Validation Papers (uploaded 2025-12-29)
+  - slug: cellular_automata_xi_clustering
+    zenodo_record: 18086711
+    doi: 10.5281/zenodo.18086711
     version: "1.0"
-    upload_date: "2025-12"
-    status: needs_update
+    upload_date: "2025-12-29"
+    status: update_packaged  # v1.1 package ready for upload
+
+  - slug: golden_ratio_prime_distribution
+    zenodo_record: 18086778
+    doi: 10.5281/zenodo.18086778
+    version: "1.0"
+    upload_date: "2025-12-29"
+    status: current  # Minor changes only, not repackaged
+
+  - slug: ml_validation_pythia_gpt2
+    zenodo_record: 18086821
+    doi: 10.5281/zenodo.18086821
+    version: "1.0"
+    upload_date: "2025-12-29"
+    status: update_packaged  # v1.1 package ready for upload
+
+  - slug: pac_necessity_proof
+    zenodo_record: 18086893
+    doi: 10.5281/zenodo.18086893
+    version: "1.0"
+    upload_date: "2025-12-29"
+    status: update_packaged  # v1.1 package ready for upload
+
+  - slug: qbe_pac_unification
+    zenodo_record: 18086941
+    doi: 10.5281/zenodo.18086941
+    version: "1.0"
+    upload_date: "2025-12-29"
+    status: update_packaged  # v1.1 package ready for upload
+
+  - slug: gaia_field_native_intelligence
+    zenodo_record: 18086999
+    doi: 10.5281/zenodo.18086999
+    version: "1.0"
+    upload_date: "2025-12-29"
+    status: current  # Minor changes only, not repackaged
+
+  - slug: potential_actualization_conservation_comprehensive
+    zenodo_record: 18087020
+    doi: 10.5281/zenodo.18087020
+    version: "1.0"
+    upload_date: "2025-12-29"
+    status: current  # Minor changes only, not repackaged
 
 # Papers NOT yet on Zenodo (need first upload)
 pending_upload:
-  # Tier 1 - High Priority (Validation Papers) - READY NOW
-  - slug: cellular_automata_xi_clustering
+  - slug: worldseed_evolutionary_architecture
     priority: 1
     status: ready
-    has_code: true
-    has_data: true
-    has_figures: true
-    experiment_count: 7
-    package: "cellular_automata_xi_clustering_v1.0_20251228_095048.zip"
-    note: "NEW - Tier 1 validation p < 10^-7 - UPLOAD FIRST"
+    note: "Complete paper with code - ready for first upload"
 
-  - slug: golden_ratio_prime_distribution
-    priority: 1
-    status: ready
-    has_code: true
-    has_data: true
-    has_figures: true
-    experiment_count: 32
-    package: "golden_ratio_prime_distribution_v1.0_20251228_095054.zip"
-    note: "NEW - Analytical + numerical proof"
-
-  - slug: ml_validation_pythia_gpt2
-    priority: 1
-    status: ready
-    has_code: true
-    has_data: true
-    has_figures: true
-    experiment_count: 3
-    package: "ml_validation_pythia_gpt2_v1.0_20251228_095102.zip"
-    note: "NEW - Multi-model ML validation - READY FOR UPLOAD"
-
-  # Tier 2 - Need Data Relocation
-  - slug: pac_necessity_proof
+  - slug: pac_cosmology_jwst_validation
     priority: 2
-    status: needs_data_move
-    has_code: true
-    has_data: true  # In Code/results/, needs move to Data/results/
-    has_figures: false
-    note: "Copy Code/results/exp_26_pac_violation_20251222_094620.json → Data/results/"
+    status: needs_work
+    note: "Missing figures, version mismatch"
 
-  - slug: qbe_pac_unification
+  - slug: she_leveque_fibonacci_turbulence
     priority: 2
-    status: needs_data_move
-    has_code: true
-    has_data: true  # In Code/results/, needs move to Data/results/
-    has_figures: true  # 1 figure
-    note: "Copy Code/results/exp_32_qbe_pac_unification_20251222_094825.json → Data/results/"
+    status: needs_work
+    note: "Missing figures, version mismatch"
 
-  - slug: gaia_field_native_intelligence_comprehensive
-    priority: 2
-    status: needs_data_move
-    has_code: true
-    has_data: true  # In Code/results/, needs move to Data/results/
-    has_figures: true  # 22 figures
-    note: "Copy Code/results/*.json → Data/results/"
+  - slug: sec_threshold_detection
+    priority: 3
+    status: incomplete
+    note: "Paper text only, early draft"
 
-  - slug: potential_actualization_conservation_comprehensive
-    priority: 2
-    status: needs_data_move
-    has_code: true
-    has_data: true  # In Code/experiments/results/, needs move
-    has_figures: true  # 28 figures
-    note: "Copy Code/experiments/results/20251222_095505/* → Data/results/"
+  - slug: bidirectional_sec_pac_fluid
+    priority: 3
+    status: incomplete
+    note: "Paper text only, early draft"
