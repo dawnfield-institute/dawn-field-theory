@@ -27,7 +27,7 @@ from dataclasses import dataclass
 
 # Add paths
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / "poc_017_pac_import"))
-sys.path.insert(0, r"c:\Users\peter\repos\Dawn Field Institute\fracton")
+sys.path.insert(0, r"c:\Users\peter\repos\core_workspace\fracton")
 
 # Constants
 PHI = (1 + np.sqrt(5)) / 2

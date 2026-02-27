@@ -15,7 +15,7 @@ import os
 import time
 
 # Add the darkmatter_SEC_WIP path
-sys.path.insert(0, r'c:\Users\peter\repos\Dawn Field Institute\dawn-field-theory\spikes\darkmatter_SEC_WIP')
+sys.path.insert(0, r'c:\Users\peter\repos\core_workspace\dawn-field-theory\spikes\darkmatter_SEC_WIP')
 
 # Check if torch is available
 try:
