@@ -21,7 +21,7 @@ import sys
 import os
 
 # Add the darkmatter_SEC_WIP path to import SEC modules
-sys.path.insert(0, r'c:\Users\peter\repos\Dawn Field Institute\dawn-field-theory\spikes\darkmatter_SEC_WIP')
+sys.path.insert(0, r'c:\Users\peter\repos\core_workspace\dawn-field-theory\spikes\darkmatter_SEC_WIP')
 
 # ============================================================================
 # PHYSICAL CONSTANTS (from darkmatter_SEC_WIP)
