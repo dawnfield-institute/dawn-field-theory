@@ -512,7 +512,7 @@ The computational framework is ready for broader investigation. We invite resear
 ### 11.1 File System Verification
 **Directory Listing (PowerShell):**
 ```
-Directory: C:\Users\peter\repos\Dawn Field Institute\dawn-field-theory\foundational\experiments\infodynamic_gravity
+Directory: C:\Users\peter\repos\core_workspace\dawn-field-theory\foundational\experiments\infodynamic_gravity
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
@@ -572,14 +572,14 @@ memory_decay_rate = 0.95  # NEW - information persistence
 **Successful Execution Sequence:**
 ```bash
 # Command 1: Navigation and execution
-cd "C:\Users\peter\repos\Dawn Field Institute\dawn-field-theory\foundational\experiments\infodynamic_gravity\src"
+cd "C:\Users\peter\repos\core_workspace\dawn-field-theory\foundational\experiments\infodynamic_gravity\src"
 python macro_emergence_gravity.py
 
 # Exit Code: 0 (SUCCESS)
 # Output: Structure formation achieved with reasonable parameters
 
 # Command 2: Directory verification  
-cd "C:\Users\peter\repos\Dawn Field Institute\dawn-field-theory\foundational\experiments\infodynamic_gravity"
+cd "C:\Users\peter\repos\core_workspace\dawn-field-theory\foundational\experiments\infodynamic_gravity"
 dir
 
 # Exit Code: 0 (SUCCESS)
