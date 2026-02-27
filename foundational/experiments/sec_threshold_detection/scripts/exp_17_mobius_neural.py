@@ -17,7 +17,7 @@ import numpy as np
 from typing import List, Tuple, Optional, Callable
 from dataclasses import dataclass
 import sys
-sys.path.insert(0, 'C:/Users/peter/repos/Dawn Field Institute/fracton')
+sys.path.insert(0, 'C:/Users/peter/repos/core_workspace/fracton')
 
 from fracton.core.mobius_tensor import (
     MobiusMatrix, cross_ratio, PHI, PHI_INV

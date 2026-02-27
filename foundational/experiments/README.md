@@ -1,114 +1,114 @@
+# Experiments Directory
 
+51 experiments validating Dawn Field Theory (PAC/SEC/RBF/MED) across pure mathematics, physics derivation, quantum phenomena, cosmology, and cross-domain applications.
 
-# 🧪 Experiments Directory
+## Milestones
 
-Welcome to the playground of ideas! 🛠️ This directory brings the theoretical heart of Dawn Field Theory to life through experiments, simulations, and results. Each subfolder explores symbolic collapse, entropy regulation, recursion, and emergent intelligence in unique contexts.
+Core validation chains. Each milestone builds on the previous.
 
-## 📁 Contents
+| Experiment | Description | Status | Key FDOs |
+|---|---|---|---|
+| [milestone1](milestone1/) | PAC/SEC → Standard Model + Gravity. α at 0.0006%, sin²θ_W at 0.19%, Koide at 0.04% | complete | milestone1-sm-derivation |
+| [milestone2](milestone2/) | Open Derivations — 22 mass ratio experiments (μ/e at 5 ppm, p/e at 0.0083%) | complete | milestone2-mass-derivations |
+| [milestone3](milestone3/) | Energy Equivalence Integration — 21 experiments, 57 result files, Wilson-Fisher ν = 2/(3·Ξ) | complete | milestone3-energy-falsification |
 
-* `DNA_repair/` – 🧬 Symbolic entropy-driven approaches to genomic mutation detection and correction. Includes `DNA_repairer.py`, protocols, and results.
-* `entropy_information_polarity_field/`
-  * `black_white_hole_polarity/` – ⚫⚪ Field simulations modeling symbolic collapse in entropy polarity environments. Includes theory drafts and meta files.
-* `hodge_conjecture/` – 🔢 Symbolic topological field collapse simulations inspired by the Hodge Conjecture, exploring modular symmetry and prime field alignment. Contains multiple collapse simulation scripts and unification plans.
-* `landauer_erasure_field_cost_map/` – ♻️ Simulations of symbolic field erasure and entropy cost, validating Landauer’s principle. Includes main simulation code and results.
-* `language_to_logic/` – 💬➡️🔣 Experiments translating natural language input into structured symbolic logic via recursive collapse trees and entropy regulation. Features code, protocols, and results.
-* `legacy/` – 📜 Archival simulations covering early implementations of symbolic field behavior (`brain`, `cosmo`, `vcpu`).
-* `pi_harmonics/` – 🎵 Symbolic harmonic resonance patterns derived from π-symmetry structures, with computational validation. Includes code, YAML configs, and results.
-* `predictive_collapse/` – 🔮 Experiments in forecasting symbolic collapse outcomes using entropy-informed predictors. Contains simulation scripts and results.
-* `pre_field_recursion/` – 🌀 Pre-Field Recursion experimental framework investigating Möbius topology as computational substrate. Studies natural information amplification emergence, PAC conservation laws, and universal constants in geometric computational systems.
-* `recursive_entropy/` – 🔁🔥 Recursive symbolic entropy collapse simulations and analysis. Includes main code and results.
-* `recursive_gravity/` – 🌌 Emergent superfluid and galactic structure simulations grounded in recursive gravitational field modeling. Features multiple simulation scripts and results.
-* `recursive_tree/` – 🌳 Tests of symbolic tree-like recursive pattern formation under entropy constraints. Includes code and results.
-* `symbolic_bifractal/` – 🌀 Bifractal pattern expansion and symbolic emergence via entropy modulation. Contains expansion scripts and reference materials.
-* `symbolic_emergence/` – ✨ Experiments in emergent symbolic structure from entropy-driven processes. Includes main emergence code and results.
-* `symbolic_entropy_collapse/` – 🧨 Simulations of entropy-driven symbolic collapse events. Features collapse engine code and supporting materials.
-* `symbolic_fractal_pruning/` – ✂️ Experimental pruning of recursive symbolic fractals through entropy activity regulation. Includes pruning scripts and results.
-* `symbolic_memory_agentic_decay_test/` – 🧠 Simulations of symbolic memory reinforcement and decay in agentic fields. Contains decay test code and results.
-* `symbolic_superfluid_collapse_pi/` – 🌊π Pi-field symbolic collapse experiments modeling entropy-symbol dynamics in superfluid states. Includes main simulation code and results.
+## Active Research
 
----
+Experiments with ongoing investigation or active development.
 
-## 🔬 Prime-Focused Experiments (December 2025)
+| Experiment | Description | Status | Key FDOs |
+|---|---|---|---|
+| [pac_confluence_xi](pac_confluence_xi/) | Fibonacci Arithmetic as the Language of Physics — sin²θ_W = 3/13, (2αβ)² = 4/5 | active | — |
+| [sec_prime_manifold](sec_prime_manifold/) | Golden ratio emergence in prime stress fields — frac(E>0) = 1/φ at criticality | active | — |
+| [standard_model_connection](standard_model_connection/) | PAC–Standard Model physical connection — RG flow mapping, gauge group structure | active | standard-model-fibonacci-arithmetic |
+| [pac_cosmology_validation](pac_cosmology_validation/) | PAC/SEC/QBE vs JWST observations — early-stage exploration | active | pac-cosmology-jwst |
+| [gravity_from_maxwell_pac](gravity_from_maxwell_pac/) | Gravity from Maxwell via PAC/SEC information geometry | active | — |
+| [maxwell_from_pac_sec](maxwell_from_pac_sec/) | Maxwell's equations from information dynamics — c² = αγ + βδ, α_EM = 1/137.036 | active | maxwell-from-pac-sec |
+| [pre_field_recursion](pre_field_recursion/) | Möbius topology as computational substrate — 5.11× speedup, Ξ = 1.0571 confirmed | active | pre-field-recursion |
+| [asymmetric_conservation](asymmetric_conservation/) | Asymmetric Conservation — frame-dependent PAC with Δ buffer | active | asymmetric-conservation |
+| [pac_knowledge_discovery](pac_knowledge_discovery/) | N² Convergence for unknown children detection | active | — |
+| [prime_growth_dynamics](prime_growth_dynamics/) | Primes as residual roughness — smoothing model with conserved memory | active | — |
+| [prime_growth_dynamics_v2](prime_growth_dynamics_v2/) | Multi-stage emergence — proliferation, collapse, smoothing pipeline | active | — |
+| [wealth_field_dynamics](wealth_field_dynamics/) | Non-equilibrium wealth field analysis | active | — |
+| [recursive_knot_actualization](recursive_knot_actualization/) | Partial recursive functions as topological knots | active | — |
+| [algebra_geometry_interface](algebra_geometry_interface/) | Testing whether φ and Ξ emerge at the algebra-geometry interface | active | — |
+| [pac_foundations_validation](pac_foundations_validation/) | Exploratory probes of vision document ideas (Feb 2026) | archived | — |
 
-Three experiments have converged on unified structure in prime number dynamics:
+## Completed / Validated
 
-### Cross-Experiment Validation
+Experiments that have reached conclusion with documented results.
 
-| Experiment | Focus | Key Finding | Precision |
-|------------|-------|-------------|-----------|
-| **sec_prime_manifold/** | SEC stress field | frac(E>0) = 1/φ at criticality | 0.000006 error |
-| **prime_harmonic_manifold/** | Markov eigenvalue | λ₁ → 1/2, Cramér z = 97 at 50M | Asymptotic |
-| **pac_confluence_xi/** | Standard Model | sin²θ_W = 3/13, (2αβ)² = 4/5 | Algebraic proof |
-| **standard_model_connection/** | Physics mechanism | Fibonacci → gauge groups | Ongoing |
+| Experiment | Description | Status | Key FDOs |
+|---|---|---|---|
+| [oscillation_attractor_dynamics](oscillation_attractor_dynamics/) | Primes as injection points — Möbius pairing 24×, Ξ = π/55 to 6.8×10⁻⁹ | validated | oscillation-attractor-dynamics |
+| [prime_harmonic_manifold](prime_harmonic_manifold/) | Golden ratio eigenvalue emergence — λ₁ ≈ 1/φ, +18.8% predictive improvement | validated | — |
+| [cellular_automata_pac_attractors](cellular_automata_pac_attractors/) | Wolfram Class IV at Ξ = 1.0571 — Rule 110 P/A = 1.0579, p = 3.5×10⁻¹⁰ | validated | cellular-automata-xi |
+| [landauer_erasure_structure](landauer_erasure_structure/) | A/(A+ξ) ≈ ln(φ) = 0.4812 — 25 experiments, 53× cascade amplification | validated | landauer-erasure-structure |
+| [sec_threshold_detection](sec_threshold_detection/) | Feigenbaum closed-form — r∞ to 13 digits, δ to 8 digits via Fibonacci/π | validated | sec-threshold-detection |
+| [base_agnostic_pac](base_agnostic_pac/) | PAC invariance confirmed across number bases | validated | — |
+| [unified_emergence_v2](unified_emergence_v2/) | Production-grade validation framework — 87.5% Phase 1 success rate | validated | — |
+| [navier-stokes](navier-stokes/) | She-Leveque k = d×F_{d+1} at 0.47% error vs K41 5.3% (14.3× more accurate) | validated | med-navier-stokes, she-leveque-fibonacci-turbulence |
+| [information_amplification](information_amplification/) | Information amplification proof framework | validated | — |
 
-**Note**: PHM originally claimed λ₁ decay = -1/π². This was refuted by large-scale testing (50M primes). The corrected finding (λ₁ → 1/2, z = 97) is actually stronger — primes diverge from random by 97 standard deviations.
+## Quantum Validation Suite
 
-### The Unified Picture
+Container experiment with 6 sub-experiments testing DFT predictions against quantum phenomena.
 
-```
-PAC Conservation: Ψ(k) = Ψ(k+1) + Ψ(k+2)
-                        |
-                        v
-            Solution: Ψ = φ^(-k)
-                        |
-        ________________|________________
-       |                |                |
-       v                v                v
-SEC STRESS         PHYSICS          MARKOV DECAY
-frac = 1/φ        sin²θ_W = 3/13    λ₁ decay = 1/π²
-       |                |                |
-       v                v                v
-Phase transition   Standard Model    GUE/Zeta link
-at λ* = 0.9816    from Fibonacci    (Montgomery-Odlyzko)
-```
+| Sub-experiment | Description | Key FDO |
+|---|---|---|
+| [born_rule](quantum_validation/born_rule/) | Born rule reproduction | quantum-validation-suite |
+| [symbolic_entanglement](quantum_validation/symbolic_entanglement/) | Entanglement via symbolic fields | quantum-validation-suite |
+| [symbolic_interference](quantum_validation/symbolic_interference/) | Two-slit interference patterns | quantum-validation-suite |
+| [symbolic_reversability](quantum_validation/symbolic_reversability/) | Reversibility in symbolic collapse | quantum-validation-suite |
+| [symbolic_entropy_collapse_vs_quantum_decoherence](quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/) | SEC vs decoherence comparison | quantum-validation-suite |
+| [landauer_symbolic_erasure_energy_validation](quantum_validation/landauer_symbolic_erasure_energy_validation/) | Landauer bound validation | quantum-validation-suite |
 
-**Full documentation**: See `prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md`
+## Exploratory / Hypothesis
 
----
+Early-stage experiments testing novel ideas.
 
-## 🤖 ML & Cognitive Validation (Cross-Domain)
+| Experiment | Description | Status |
+|---|---|---|
+| [dna_prime_structure](dna_prime_structure/) | Prime-interval patterns in DNA/protein sequences | exploratory |
+| [DNA_repair](DNA_repair/) | Symbolic entropy-driven genomic mutation detection | exploratory |
+| [biology_experiments](biology_experiments/) | Symbolic collapse in biological systems (evolution sub-experiment) | exploratory |
+| [entropy_information_polarity_field](entropy_information_polarity_field/) | Black/white hole polarity field simulations | exploratory |
+| [hodge_conjecture](hodge_conjecture/) | Prime-modulated symbolic collapse in arithmetic geometry | exploratory |
+| [pac_dag_fluid](pac_dag_fluid/) | Bidirectional SEC on hierarchical DAG structures | exploratory |
+| [phi_artifact_test](phi_artifact_test/) | Testing if φ is genuine domain property vs framework artifact | exploratory |
+| [pi_harmonics](pi_harmonics/) | π harmonic resonance in symbolic structure | exploratory |
+| [predictive_collapse](predictive_collapse/) | Forecasting symbolic collapse outcomes | exploratory |
+| [symbolic_entropy_collapse](symbolic_entropy_collapse/) | Core SEC experiment framework | exploratory |
+| [symbolic_emergence](symbolic_emergence/) | Language-like structure emergence between agents | exploratory |
+| [symbolic_bifractal](symbolic_bifractal/) | Bifractal expansion and collapse patterns | exploratory |
+| [recursive_entropy](recursive_entropy/) | Recursive entropy emergence simulations | exploratory |
+| [recursive_gravity](recursive_gravity/) | Recursive gravitational field modeling | exploratory |
+| [recursive_tree](recursive_tree/) | Recursive tree pattern formation under entropy constraints | exploratory |
+| [symbolic_fractal_pruning](symbolic_fractal_pruning/) | Recursive calculus-based symbolic pruning | exploratory |
+| [symbolic_memory_agentic_decay_test](symbolic_memory_agentic_decay_test/) | Memory reinforcement/decay in agentic fields | exploratory |
+| [symbolic_superfluid_collapse_pi](symbolic_superfluid_collapse_pi/) | π-field collapse in superfluid states | exploratory |
+| [language_to_logic](language_to_logic/) | Natural language → structured symbolic logic | exploratory |
 
-The same PAC/SEC framework has been validated in machine learning and cognitive systems:
+## Legacy
 
-### SCBF Pythia Analysis
+Archived pre-2025 simulations in [legacy/](legacy/):
 
-Location: `../../spikes/scbf/experiments/`
+- **brain.py** — Entropic intelligence under collapse tension
+- **cosmo.py** — Cosmogenesis via entropic crystallization
+- **vcpu.py** — Emergent logic formation via entropy balance
 
-| Finding | Evidence | Significance |
-|---------|----------|--------------|
-| **φ-crossing at step 512** | All Pythia models (70M-12B) | p = 0.0014 |
-| **External validation** | EleutherAI trained with no DFT knowledge | Independent confirmation |
-| **Precision** | φ-crossing within 0.08% | High accuracy |
+## Shared Directories
 
-### vCPU Cognitive Architecture
+- [journals/](journals/) — Cross-experiment synthesis journals
+- [results/](results/) — Shared/aggregate result files
 
-Location: `../../spikes/scbf/vcpu/`
+## Structure Convention
 
-| Prediction | Result | Status |
-|------------|--------|--------|
-| Xi ∈ [1.0015, 1.0571] | Xi = 1.028 | ✅ Confirmed |
-| P/A → 2/3 at equilibrium | Confirmed | ✅ Confirmed |
-| I/E bounds [0.05-0.1] to [0.45-0.5] | Confirmed | ✅ Confirmed |
-| 0.02-0.03 Hz oscillations | Confirmed | ✅ Confirmed |
-| **Performance** | 119x speedup | ✅ Engineering validation |
+Every experiment should contain at minimum:
+- `meta.yaml` — Schema v2.0 metadata (title, status, hypothesis, pillar, tags)
+- `README.md` — Hypothesis, status, key results, related FDOs
+- `scripts/` — Experiment scripts (naming: `exp_NN_description.py`)
+- `results/` — Output data, plots, logs (when applicable)
+- `journals/` — Research journal entries (when applicable)
 
-**Key insight**: These are **predicted results** from PAC/SEC, not pattern-matching. The theory came first; the validations confirm it across independent domains.
-
----
-
-## 🌟 Why It Matters
-
-These experiments are more than code—they're living thought experiments:
-
-* 🌐 Bridging abstract symbolic collapse theory into measurable phenomena
-* 🧭 Simulating rich recursive landscapes where entropy dances into form
-* 🚀 Proving how the theory can address real-world symbolic and physical systems
-* 📊 Providing interpretable metrics and visualizations for transparency and validation
-
-Each experiment includes:
-
-* 📄 Protocols and simulation code (CIP-aligned)
-* 📚 Reference materials
-* 📊 Visualized results and statistical insights
-
-Step into this vibrant lab of ideas 🧠 and see how Dawn Field Theory breathes life into recursion, entropy, and symbolic intelligence! ✨
+See [STANDARDS.md](../../../STANDARDS.md) for full specification.
