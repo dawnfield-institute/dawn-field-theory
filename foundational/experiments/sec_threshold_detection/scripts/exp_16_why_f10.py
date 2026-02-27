@@ -16,7 +16,7 @@ the "right scale" for the Feigenbaum formulas.
 import numpy as np
 from mpmath import mp, mpf, sqrt, pi, phi as mphi
 import sys
-sys.path.insert(0, 'C:/Users/peter/repos/Dawn Field Institute/fracton')
+sys.path.insert(0, 'C:/Users/peter/repos/core_workspace/fracton')
 
 from fracton.core.mobius_tensor import (
     MobiusMatrix, MobiusFibonacciTensor, MobiusRecursiveTensor,
