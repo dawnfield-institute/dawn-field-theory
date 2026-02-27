@@ -21,7 +21,7 @@ import time
 from typing import List, Tuple, Dict, Any, Callable
 from dataclasses import dataclass, field
 import sys
-sys.path.insert(0, 'C:/Users/peter/repos/Dawn Field Institute/fracton')
+sys.path.insert(0, 'C:/Users/peter/repos/core_workspace/fracton')
 
 from fracton.core.mobius_tensor import (
     MobiusMatrix, MobiusNeuron, MobiusLayer, MobiusNetwork,

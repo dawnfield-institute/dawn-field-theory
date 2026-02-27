@@ -15,18 +15,32 @@ semantic_scope:
   - theoretical_framework
 files:
   - README.md
-  - INTENTIONS.md
+  - CLAUDE.md
+  - CITATION.cff
+  - CONTRIBUTION.md
+  - ENVIRONMENT.md
+  - LICENSE
+  - LICENSE_APPENDIX.md
+  - MISSION.md
+  - REGISTRY_TERMS.md
+  - dawn-field-theory.md
+  - for_ai_labs.md
+  - infodynamics.md
+  - origin_of_infodynamics.md
+  - timeline.md
   - map.yaml
   - meta.yaml
+  - schema.yaml
 child_directories:
   - blueprints
+  - citations
   - devkit
   - foundational
   - internal
+  - mcp
+  - models
   - resources
   - roadmaps
   - spikes
   - todo
-  - tools
-  - models
   - tools

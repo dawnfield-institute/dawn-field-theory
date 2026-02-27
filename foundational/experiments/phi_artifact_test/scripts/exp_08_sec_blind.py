@@ -23,7 +23,7 @@ from datetime import datetime
 import json
 
 # Add SEC core
-SEC_CORE = r"c:\Users\peter\repos\Dawn Field Institute\dawn-field-theory\foundational\experiments\sec_prime_manifold\core"
+SEC_CORE = r"c:\Users\peter\repos\core_workspace\dawn-field-theory\foundational\experiments\sec_prime_manifold\core"
 sys.path.insert(0, SEC_CORE)
 
 from sec_core import compute_sec, FIRST_50_PRIMES
