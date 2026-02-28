@@ -12,10 +12,10 @@
 
 ## Machine-Native Navigation
 
-This repository supports structured, machine-readable exploration via the [Cognition Index Protocol (CIP)](https://github.com/dawnfield-institute/cip-core):
+This repository supports structured, machine-readable exploration via directory-level `meta.yaml` metadata:
 
-* **Entry points:** `.cip/meta.yaml`, `map.yaml`, and directory-level `meta.yaml` files
-* **Semantic search:** Search by concept, experiment, or theory across code, papers, and results
+* **Entry points:** `map.yaml` and directory-level `meta.yaml` files
+* **Semantic search:** Use `kronos_search` / `kronos_navigate` to explore by concept, experiment, or theory
 * **For AI agents/scrapers:** See [`for_ai_labs.md`](./for_ai_labs.md) for a targeted overview
 
 ---
@@ -172,7 +172,6 @@ CIMM (Cosmic Information Mining Model) provides the stable, production-ready imp
 | `roadmaps/`                 | Strategic planning documents                                            |
 | `devkit/`                   | Development tools, compression, hashing, SDK                            |
 | `resources/`                | Publication registry and supplementary materials                        |
-| `.cip/`                     | Cognition Index Protocol navigation metadata                            |
 
 ---
 
