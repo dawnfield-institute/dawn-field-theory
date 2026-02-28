@@ -1,0 +1,331 @@
+{
+  "experiment": "exp_04_cascade_amplification_scaling",
+  "milestone": 4,
+  "date": "2026-02-22",
+  "hypothesis": "Cascade amplification scales predictably with mode count",
+  "part1_eigenvalue_sweep": [
+    {
+      "n_modes": 2,
+      "mean_single_xi": 0.7168826012198346,
+      "mean_cascade_xi": 0.991335511768821,
+      "amplification": 1.3828421977071033,
+      "std_single": 0.002417845411386474,
+      "std_cascade": 7.546486890667494e-05,
+      "n_seeds": 30,
+      "ci_lower": 0.9911310103466631,
+      "ci_upper": 0.9911310103466631
+    },
+    {
+      "n_modes": 3,
+      "mean_single_xi": 0.547633116726861,
+      "mean_cascade_xi": 0.9802265448220137,
+      "amplification": 1.7899329220276394,
+      "std_single": 0.0036719886316438225,
+      "std_cascade": 0.00016854880263659692,
+      "n_seeds": 30,
+      "ci_lower": 0.980453048603905,
+      "ci_upper": 0.980453048603905
+    },
+    {
+      "n_modes": 4,
+      "mean_single_xi": 0.44091476242044614,
+      "mean_cascade_xi": 0.9643580812399792,
+      "amplification": 2.187175761469265,
+      "std_single": 0.0035292534412446467,
+      "std_cascade": 0.00024370734157563303,
+      "n_seeds": 30,
+      "ci_lower": 0.9644505505249582,
+      "ci_upper": 0.9644505505249582
+    },
+    {
+      "n_modes": 5,
+      "mean_single_xi": 0.36868642541376123,
+      "mean_cascade_xi": 0.942682875721443,
+      "amplification": 2.5568689562234623,
+      "std_single": 0.0030935138782483243,
+      "std_cascade": 0.0004354538208814382,
+      "n_seeds": 30,
+      "ci_lower": 0.942712275398907,
+      "ci_upper": 0.942712275398907
+    },
+    {
+      "n_modes": 6,
+      "mean_single_xi": 0.3160840835041415,
+      "mean_cascade_xi": 0.9167456507666601,
+      "amplification": 2.9003220934237532,
+      "std_single": 0.003023775719609309,
+      "std_cascade": 0.0005919569663117921,
+      "n_seeds": 30,
+      "ci_lower": 0.9171147933519611,
+      "ci_upper": 0.9171147933519611
+    },
+    {
+      "n_modes": 8,
+      "mean_single_xi": 0.24656576372209377,
+      "mean_cascade_xi": 0.8592623123736041,
+      "amplification": 3.4849214238116426,
+      "std_single": 0.0020837210864280606,
+      "std_cascade": 0.0008220209648763815,
+      "n_seeds": 30,
+      "ci_lower": 0.8601758991179085,
+      "ci_upper": 0.8601758991179085
+    },
+    {
+      "n_modes": 10,
+      "mean_single_xi": 0.20278484256796722,
+      "mean_cascade_xi": 0.8020010107008483,
+      "amplification": 3.9549356872274233,
+      "std_single": 0.00145489731214379,
+      "std_cascade": 0.0009078934141685188,
+      "n_seeds": 30,
+      "ci_lower": 0.801140517607937,
+      "ci_upper": 0.801140517607937
+    },
+    {
+      "n_modes": 12,
+      "mean_single_xi": 0.1719946054097055,
+      "mean_cascade_xi": 0.7492104853328626,
+      "amplification": 4.356011536223365,
+      "std_single": 0.0013222541749000189,
+      "std_cascade": 0.0008218295033669041,
+      "n_seeds": 30,
+      "ci_lower": 0.7491698742393756,
+      "ci_upper": 0.7491698742393756
+    },
+    {
+      "n_modes": 16,
+      "mean_single_xi": 0.13246206795669804,
+      "mean_cascade_xi": 0.6589465272900693,
+      "amplification": 4.974605465962372,
+      "std_single": 0.0013891389273126954,
+      "std_cascade": 0.0011761393201488298,
+      "n_seeds": 30,
+      "ci_lower": 0.6571540377043593,
+      "ci_upper": 0.6571540377043593
+    },
+    {
+      "n_modes": 20,
+      "mean_single_xi": 0.10760532139643793,
+      "mean_cascade_xi": 0.5862843302921596,
+      "amplification": 5.448469673095252,
+      "std_single": 0.0010894541485605529,
+      "std_cascade": 0.0009883021706722794,
+      "n_seeds": 30,
+      "ci_lower": 0.5863958430215661,
+      "ci_upper": 0.5863958430215661
+    },
+    {
+      "n_modes": 24,
+      "mean_single_xi": 0.09028969704127211,
+      "mean_cascade_xi": 0.5272373757652002,
+      "amplification": 5.839396886271487,
+      "std_single": 0.0011759132791866304,
+      "std_cascade": 0.0011658859890516281,
+      "n_seeds": 30,
+      "ci_lower": 0.5301797466496471,
+      "ci_upper": 0.5301797466496471
+    },
+    {
+      "n_modes": 32,
+      "mean_single_xi": 0.06902576076114703,
+      "mean_cascade_xi": 0.4384859983710559,
+      "amplification": 6.352497872328693,
+      "std_single": 0.0006945228501331167,
+      "std_cascade": 0.0012525301291535095,
+      "n_seeds": 30,
+      "ci_lower": 0.43685232520425227,
+      "ci_upper": 0.43685232520425227
+    },
+    {
+      "n_modes": 48,
+      "mean_single_xi": 0.04668333701560012,
+      "mean_cascade_xi": 0.3277812322527856,
+      "amplification": 7.0213753601901105,
+      "std_single": 0.0004674197069264152,
+      "std_cascade": 0.001049971795196731,
+      "n_seeds": 30,
+      "ci_lower": 0.3282774514494187,
+      "ci_upper": 0.3282774514494187
+    },
+    {
+      "n_modes": 64,
+      "mean_single_xi": 0.035202173660662715,
+      "mean_cascade_xi": 0.2612525237552704,
+      "amplification": 7.421488407893732,
+      "std_single": 0.0003707043489628465,
+      "std_cascade": 0.0006938658929727107,
+      "n_seeds": 30,
+      "ci_lower": 0.26053420639496133,
+      "ci_upper": 0.26053420639496133
+    }
+  ],
+  "part1b_tc_sweep": [
+    {
+      "n_modes": 2,
+      "amplification": 1.000000000000001,
+      "single_xi": 0.010959503952588445,
+      "cascade_xi": 0.010959503952588457
+    },
+    {
+      "n_modes": 3,
+      "amplification": 2.590195002746905,
+      "single_xi": 0.013934908502867983,
+      "cascade_xi": 0.036094130367864005
+    },
+    {
+      "n_modes": 4,
+      "amplification": 4.868062664886492,
+      "single_xi": 0.014699788525120928,
+      "cascade_xi": 0.07155949170086806
+    },
+    {
+      "n_modes": 5,
+      "amplification": 7.744515304502764,
+      "single_xi": 0.01495137226230514,
+      "cascade_xi": 0.11579113130874027
+    },
+    {
+      "n_modes": 6,
+      "amplification": 10.766840081727755,
+      "single_xi": 0.01514562888186699,
+      "cascade_xi": 0.16307056410825904
+    },
+    {
+      "n_modes": 8,
+      "amplification": 16.19614534906218,
+      "single_xi": 0.01606971787452145,
+      "cascade_xi": 0.26026748641417197
+    },
+    {
+      "n_modes": 10,
+      "amplification": 18.386790862430146,
+      "single_xi": 0.019762975109782845,
+      "cascade_xi": 0.36337769016298965
+    },
+    {
+      "n_modes": 12,
+      "amplification": 14.217457163634249,
+      "single_xi": 0.034666485076818174,
+      "cascade_xi": 0.49286926659342833
+    },
+    {
+      "n_modes": 14,
+      "amplification": 7.096605713075507,
+      "single_xi": 0.09527431294141904,
+      "cascade_xi": 0.6761242335294181
+    }
+  ],
+  "methodology_comparison": {
+    "eigenvalue_N8_amp": 3.4849214238116426,
+    "tc_N8_amp": 16.19614534906218,
+    "exp10_reference": 53.0,
+    "explanation": "Eigenvalue measures variance concentration (pairwise); TC measures total correlation (all-order). Same scaling, different absolute values."
+  },
+  "part2_fits": {
+    "Power law": {
+      "r2": 0.959712310376802,
+      "aic": -22.990754425257368,
+      "params": [
+        1.4480021601586501,
+        0.41325276945399997
+      ],
+      "pred_60": 7.863124253778731,
+      "pred_236": 13.847828191262595
+    },
+    "Logarithmic": {
+      "r2": 0.993872332251773,
+      "aic": -49.355998806867845,
+      "params": [
+        1.878488757771961,
+        -0.28486395335589426
+      ],
+      "pred_60": 7.406316277223082,
+      "pred_236": 9.978882666741596
+    },
+    "Square root": {
+      "r2": 0.9447549398597455,
+      "aic": -18.570492799144226,
+      "params": [
+        0.9627904864827873,
+        0.6006558184733337
+      ],
+      "pred_60": 8.058398858542878,
+      "pred_236": 15.391323921144554
+    },
+    "Linear": {
+      "r2": 0.8158291342929955,
+      "aic": -1.713302554025928,
+      "params": [
+        0.09630882992391948,
+        2.5148858173699797
+      ],
+      "pred_60": 8.293415612805148,
+      "pred_236": 25.243769679414978
+    }
+  },
+  "part3_known_points": [
+    {
+      "name": "Single bit flip",
+      "modes": 1,
+      "amp": 1.0,
+      "source": "definition"
+    },
+    {
+      "name": "Landauer exp_10",
+      "modes": 8,
+      "amp": 53.0,
+      "source": "exp_10 (p=2.75e-35)"
+    },
+    {
+      "name": "Nuclear fission",
+      "modes": 60,
+      "amp": 175.0,
+      "source": "exp_02 (micro estimate)"
+    }
+  ],
+  "part4_parameter_dependence": {
+    "cd_sweep": [
+      {
+        "cd": 0.1,
+        "amp": 1.5836734952725988
+      },
+      {
+        "cd": 0.2,
+        "amp": 2.166772701886154
+      },
+      {
+        "cd": 0.3,
+        "amp": 2.698632593390761
+      },
+      {
+        "cd": 0.5,
+        "amp": 3.348322945544184
+      },
+      {
+        "cd": 0.7,
+        "amp": 3.4825286522300516
+      },
+      {
+        "cd": 1.0,
+        "amp": 3.4239363252193744
+      },
+      {
+        "cd": 1.5,
+        "amp": 3.3267573810749935
+      },
+      {
+        "cd": 2.0,
+        "amp": 3.266851115705257
+      }
+    ],
+    "cd_variance": 0.4301553579455256,
+    "mode_variance": 3.610326800587152,
+    "mode_fraction": 0.8935386072582637
+  },
+  "falsification_conditions": [
+    "If amplification does not scale with modes \u2014 TESTED",
+    "If eigenvalue and TC methods disagree on scaling direction \u2014 TESTED",
+    "If nuclear 175x falls far off the curve \u2014 TESTED",
+    "If parameters dominate over mode count \u2014 TESTED"
+  ]
+}

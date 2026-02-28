@@ -1,0 +1,514 @@
+{
+  "experiment": "milestone4/exp_10_weakness_tests",
+  "date": "2026-02-25 11:36:26",
+  "milestone": 4,
+  "hypothesis": "The three identified weaknesses (up quarks, n_levels, grid sensitivity) can be addressed through phi^2 cascade, Landauer derivation, and WKB quantization.",
+  "results": {
+    "part_a_up_quarks": {
+      "phi^1 (standard)": {
+        "decay_base": 0.6180339887498948,
+        "up_quark": {
+          "j": 1,
+          "k": 25,
+          "ratios": [
+            1.0,
+            1197.7917109142384,
+            62935.61164819689
+          ],
+          "score": 0.563068521798571,
+          "n_bound": 52,
+          "errors_pct": [
+            0.0,
+            103.71993178349518,
+            21.193657928331955
+          ],
+          "n": 14,
+          "g": 20.0,
+          "w0": 0.3
+        },
+        "lepton": {
+          "j": 2,
+          "k": 44,
+          "ratios": [
+            1.0,
+            214.99930967929004,
+            3555.263582287988
+          ],
+          "score": 0.0020160868590175522,
+          "n_bound": 91,
+          "errors_pct": [
+            0.0,
+            3.979934071330476,
+            2.2450127196591536
+          ],
+          "n": 9,
+          "g": 15.0,
+          "w0": 1.5
+        },
+        "quark_dn": {
+          "j": 1,
+          "k": 20,
+          "ratios": [
+            1.0,
+            19.810535155310596,
+            903.9104881663819
+          ],
+          "score": 0.0001865398662156278,
+          "n_bound": 44,
+          "errors_pct": [
+            0.0,
+            0.9473242234470192,
+            0.9843021077401297
+          ],
+          "n": 11,
+          "g": 20.0,
+          "w0": 0.3
+        }
+      },
+      "phi^2 (2nd order)": {
+        "decay_base": 0.3819660112501051,
+        "up_quark": {
+          "j": 1,
+          "k": 40,
+          "ratios": [
+            1.0,
+            1189.0644017389081,
+            24314.95073868824
+          ],
+          "score": 1.9101771659713287,
+          "n_bound": 82,
+          "errors_pct": [
+            0.0,
+            102.23559455386557,
+            69.55344875203544
+          ],
+          "n": 7,
+          "g": 20.0,
+          "w0": 1.5
+        },
+        "lepton": {
+          "j": 2,
+          "k": 34,
+          "ratios": [
+            1.0,
+            195.3280230432955,
+            3561.547729295231
+          ],
+          "score": 0.003815111873315239,
+          "n_bound": 71,
+          "errors_pct": [
+            0.0,
+            5.533673626108482,
+            2.425737067043344
+          ],
+          "n": 9,
+          "g": 15.0,
+          "w0": 1.5
+        },
+        "quark_dn": {
+          "j": 1,
+          "k": 15,
+          "ratios": [
+            1.0,
+            19.916041396416038,
+            877.938679557301
+          ],
+          "score": 0.00039245590507321987,
+          "n_bound": 32,
+          "errors_pct": [
+            0.0,
+            0.4197930179198117,
+            1.9172517531783018
+          ],
+          "n": 9,
+          "g": 15.0,
+          "w0": 0.3
+        }
+      },
+      "phi^3 (3rd order)": {
+        "decay_base": 0.23606797749978964,
+        "up_quark": {
+          "j": 1,
+          "k": 38,
+          "ratios": [
+            1.0,
+            1222.437299014543,
+            24284.61694435431
+          ],
+          "score": 1.95290171276622,
+          "n_bound": 78,
+          "errors_pct": [
+            0.0,
+            107.9116434816217,
+            69.59143194326862
+          ],
+          "n": 8,
+          "g": 20.0,
+          "w0": 2.0
+        },
+        "lepton": {
+          "j": 0,
+          "k": 32,
+          "ratios": [
+            1.0,
+            224.64634654379552,
+            3132.9112745299763
+          ],
+          "score": 0.017746901053066477,
+          "n_bound": 65,
+          "errors_pct": [
+            0.0,
+            8.645522340666203,
+            9.901320760095008
+          ],
+          "n": 6,
+          "g": 10.0,
+          "w0": 3.0
+        },
+        "quark_dn": {
+          "j": 1,
+          "k": 16,
+          "ratios": [
+            1.0,
+            20.32259908470745,
+            889.9303118394511
+          ],
+          "score": 0.00028959053114996055,
+          "n_bound": 34,
+          "errors_pct": [
+            0.0,
+            1.6129954235372426,
+            0.5775542576861756
+          ],
+          "n": 7,
+          "g": 15.0,
+          "w0": 0.5
+        }
+      },
+      "null_test": {
+        "skipped": true,
+        "reason": "phi^2 did not improve up-type quarks",
+        "PASS": false
+      }
+    },
+    "part_b_landauer": {
+      "lepton": {
+        "best_overall": {
+          "j": 2,
+          "k": 44,
+          "ratios": [
+            1.0,
+            214.99930967929004,
+            3555.263582287988
+          ],
+          "score": 0.0020160868590175522,
+          "n_bound": 91,
+          "errors_pct": [
+            0.0,
+            3.979934071330476,
+            2.2450127196591536
+          ],
+          "n": 9,
+          "g": 15.0,
+          "w0": 1.5
+        },
+        "landauer_comparison": {
+          "5.0": {
+            "n_predicted": 4,
+            "n_optimal": 6,
+            "score_predicted": 0.5534967516954887,
+            "score_optimal": 0.0819332424597239,
+            "score_ratio": 6.755460117028473
+          },
+          "7.0": {
+            "n_predicted": 4,
+            "n_optimal": 8,
+            "score_predicted": 0.6095171898674164,
+            "score_optimal": 0.009343461637059151,
+            "score_ratio": 65.23462219290083
+          },
+          "10.0": {
+            "n_predicted": 5,
+            "n_optimal": 9,
+            "score_predicted": 0.2605285156306755,
+            "score_optimal": 0.03605559980879517,
+            "score_ratio": 7.225743490949326
+          },
+          "12.0": {
+            "n_predicted": 5,
+            "n_optimal": 7,
+            "score_predicted": 0.2805457659778005,
+            "score_optimal": 0.003493505372203607,
+            "score_ratio": 80.30494763511412
+          },
+          "15.0": {
+            "n_predicted": 6,
+            "n_optimal": 9,
+            "score_predicted": 0.05876427820790973,
+            "score_optimal": 0.0020160868590175522,
+            "score_ratio": 29.147691700419006
+          },
+          "20.0": {
+            "n_predicted": 6,
+            "n_optimal": 7,
+            "score_predicted": 0.1369687954905675,
+            "score_optimal": 0.009156630554359188,
+            "score_ratio": 14.958427630932528
+          }
+        }
+      },
+      "quark_dn": {
+        "best_overall": {
+          "j": 1,
+          "k": 20,
+          "ratios": [
+            1.0,
+            19.810535155310596,
+            903.9104881663819
+          ],
+          "score": 0.0001865398662156278,
+          "n_bound": 44,
+          "errors_pct": [
+            0.0,
+            0.9473242234470192,
+            0.9843021077401297
+          ],
+          "n": 11,
+          "g": 20.0,
+          "w0": 0.3
+        },
+        "landauer_comparison": {
+          "5.0": {
+            "n_predicted": 4,
+            "n_optimal": 9,
+            "score_predicted": 2.187444334150771,
+            "score_optimal": 0.1959306032766588,
+            "score_ratio": 11.164383192665653
+          },
+          "7.0": {
+            "n_predicted": 4,
+            "n_optimal": 8,
+            "score_predicted": 2.294519536250193,
+            "score_optimal": 0.32185532349481544,
+            "score_ratio": 7.129040189037463
+          },
+          "10.0": {
+            "n_predicted": 5,
+            "n_optimal": 10,
+            "score_predicted": 1.582097505020247,
+            "score_optimal": 0.06693969081720522,
+            "score_ratio": 23.634670039641225
+          },
+          "12.0": {
+            "n_predicted": 5,
+            "n_optimal": 10,
+            "score_predicted": 1.5637918122722905,
+            "score_optimal": 0.052582607428497685,
+            "score_ratio": 29.73971601539062
+          },
+          "15.0": {
+            "n_predicted": 6,
+            "n_optimal": 11,
+            "score_predicted": 1.0845356405697983,
+            "score_optimal": 0.02111776493246508,
+            "score_ratio": 51.3565542583772
+          },
+          "20.0": {
+            "n_predicted": 6,
+            "n_optimal": 11,
+            "score_predicted": 1.0676508068723007,
+            "score_optimal": 0.0001865398662156278,
+            "score_ratio": 5723.445762731312
+          }
+        }
+      },
+      "quark_up": {
+        "best_overall": {
+          "j": 1,
+          "k": 40,
+          "ratios": [
+            1.0,
+            1189.0644017389081,
+            24314.95073868824
+          ],
+          "score": 1.9101771659713287,
+          "n_bound": 82,
+          "errors_pct": [
+            0.0,
+            102.23559455386557,
+            69.55344875203544
+          ],
+          "n": 7,
+          "g": 20.0,
+          "w0": 1.5
+        },
+        "landauer_comparison": {
+          "5.0": {
+            "n_predicted": 3,
+            "n_optimal": 4,
+            "score_predicted": 4.65787244006411,
+            "score_optimal": 2.5188832465072153,
+            "score_ratio": 1.8491815555655082
+          },
+          "7.0": {
+            "n_predicted": 3,
+            "n_optimal": 4,
+            "score_predicted": 4.959013886530512,
+            "score_optimal": 2.9004441063877273,
+            "score_ratio": 1.7097429581935883
+          },
+          "10.0": {
+            "n_predicted": 3,
+            "n_optimal": 3,
+            "score_predicted": 3.8663288120704253,
+            "score_optimal": 3.8663288120704253,
+            "score_ratio": 1.0
+          },
+          "12.0": {
+            "n_predicted": 3,
+            "n_optimal": 3,
+            "score_predicted": 4.682015557764123,
+            "score_optimal": 4.682015557764123,
+            "score_ratio": 1.0
+          },
+          "15.0": {
+            "n_predicted": 3,
+            "n_optimal": 4,
+            "score_predicted": 6.063459975398438,
+            "score_optimal": 3.1338675299001766,
+            "score_ratio": 1.9348169370744202
+          },
+          "20.0": {
+            "n_predicted": 3,
+            "n_optimal": 7,
+            "score_predicted": 4.5858411284423255,
+            "score_optimal": 1.9101771659713287,
+            "score_ratio": 2.400741255908803
+          }
+        }
+      },
+      "landauer_competitive": false
+    },
+    "part_c_wkb": {
+      "lepton_best": {
+        "n_numerical": 23,
+        "n_wkb": 23,
+        "n_compared": 23,
+        "max_frac_error": 0.9984009216894666,
+        "rms_frac_error": 0.2841647984484929
+      },
+      "quark_dn_best": {
+        "n_numerical": 48,
+        "n_wkb": 55,
+        "n_compared": 48,
+        "max_frac_error": 63.27147937627904,
+        "rms_frac_error": 9.150841387837644
+      },
+      "reference_1": {
+        "n_numerical": 61,
+        "n_wkb": 60,
+        "n_compared": 60,
+        "max_frac_error": 2.3518125254492404,
+        "rms_frac_error": 0.3492994385329144
+      },
+      "grid_independence": {
+        "resolutions": [
+          2000,
+          5000,
+          10000,
+          20000,
+          50000
+        ],
+        "scores": [
+          1.4043948846400627,
+          1.4038944832528244,
+          1.4044347809361428,
+          1.4032818087233456,
+          1.4023167260634604
+        ],
+        "score_range": 0.002118054872682462,
+        "score_cv": 0.0005648050455278832,
+        "PASS": "True"
+      },
+      "mass_ratio_comparison": {
+        "lepton_best": {
+          "numerical": {
+            "j": 0,
+            "k": 11,
+            "ratios": [
+              1.0,
+              211.82907362567406,
+              3669.899488075726
+            ],
+            "score": 0.003493505372203607,
+            "n_bound": 23,
+            "errors_pct": [
+              0.0,
+              2.4467154933859097,
+              5.541800531339184
+            ]
+          },
+          "wkb": {
+            "j": 1,
+            "k": 10,
+            "ratios": [
+              1.0,
+              96.34366521173229,
+              1404.9698295911428
+            ],
+            "score": 1.4044347809361428,
+            "n_bound": 23,
+            "errors_pct": [
+              0.0,
+              53.40539478080365,
+              59.59479381136711
+            ]
+          },
+          "same_indices": false
+        },
+        "quark_dn_best": {
+          "numerical": {
+            "j": 0,
+            "k": 23,
+            "ratios": [
+              1.0,
+              19.413706607537485,
+              869.1563352957796
+            ],
+            "score": 0.0017503280626543778,
+            "n_bound": 48,
+            "errors_pct": [
+              0.0,
+              2.9314669623125766,
+              2.8984096418523513
+            ]
+          },
+          "wkb": {
+            "j": 1,
+            "k": 26,
+            "ratios": [
+              1.0,
+              15.705472381751749,
+              719.3791310743914
+            ],
+            "score": 0.10619279602650203,
+            "n_bound": 55,
+            "errors_pct": [
+              0.0,
+              21.472638091241254,
+              19.631423184628385
+            ]
+          },
+          "same_indices": false
+        }
+      }
+    }
+  },
+  "summary": {
+    "W1_up_quarks_resolved": false,
+    "W2_nlevels_derived": false,
+    "W3_grid_independent": "True",
+    "all_resolved": false
+  },
+  "elapsed_seconds": 403.1971337999985
+}

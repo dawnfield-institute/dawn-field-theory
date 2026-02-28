@@ -1,0 +1,198 @@
+======================================================================
+EXP_11: PAC-Grounded Weakness Fixes
+======================================================================
+  Grid: N=600, dx=0.2
+
+======================================================================
+PART A: PAC Complement Potential for Up-Type Quarks
+======================================================================
+
+  --- Config: lepton_ref (n=7, g=12.0, w0=0.5) ---
+    gauss_parent -> lepton: score=23.1656, errors=['0.0%', '88.5%', '98.6%']
+    gauss_parent -> quark_dn: score=8.7007, errors=['0.0%', '19.3%', '94.7%']
+    gauss_parent -> quark_up: score=65.5555, errors=['0.0%', '95.9%', '99.9%']
+    envelope_parent -> lepton: score=1.3832, errors=['0.0%', '134.5%', '55.5%']
+    envelope_parent -> quark_dn: score=3.1307, errors=['0.0%', '170.7%', '76.8%']
+    envelope_parent -> quark_up: score=7.1886, errors=['0.0%', '463.3%', '87.1%']
+    matched_parent -> lepton: score=1.4814, errors=['0.0%', '128.5%', '59.1%']
+    matched_parent -> quark_dn: score=3.5902, errors=['0.0%', '250.1%', '75.9%']
+    matched_parent -> quark_up: score=9.7035, errors=['0.0%', '118.3%', '95.1%']
+    [reference] cascade -> up_quark: score=10.5294, errors=['0.0%', '64.0%', '95.4%']
+
+  --- Config: quark_dn_ref (n=11, g=20.0, w0=0.3) ---
+    gauss_parent -> lepton: score=4.3002, errors=['0.0%', '22.0%', '87.2%']
+    gauss_parent -> quark_dn: score=4.1220, errors=['0.0%', '334.5%', '75.4%']
+    gauss_parent -> quark_up: score=28.6384, errors=['0.0%', '72.6%', '99.4%']
+    envelope_parent -> lepton: score=2.5141, errors=['0.0%', '53.8%', '78.3%']
+    envelope_parent -> quark_dn: score=4.3297, errors=['0.0%', '344.3%', '76.6%']
+    envelope_parent -> quark_up: score=22.0930, errors=['0.0%', '45.9%', '99.1%']
+    matched_parent -> lepton: score=2.4705, errors=['0.0%', '122.1%', '74.2%']
+    matched_parent -> quark_dn: score=4.3453, errors=['0.0%', '339.5%', '76.9%']
+    matched_parent -> quark_up: score=20.2040, errors=['0.0%', '21.9%', '98.9%']
+    [reference] cascade -> up_quark: score=3.4230, errors=['0.0%', '49.4%', '82.1%']
+
+  --- Config: wide_cascade (n=9, g=15.0, w0=1.5) ---
+    gauss_parent -> lepton: score=12.1360, errors=['0.0%', '73.8%', '96.0%']
+    gauss_parent -> quark_dn: score=4.4548, errors=['0.0%', '171.4%', '84.4%']
+    gauss_parent -> quark_up: score=46.0086, errors=['0.0%', '90.8%', '99.8%']
+    envelope_parent -> lepton: score=4.9966, errors=['0.0%', '9.9%', '89.3%']
+    envelope_parent -> quark_dn: score=4.8470, errors=['0.0%', '345.8%', '80.1%']
+    envelope_parent -> quark_up: score=29.7129, errors=['0.0%', '61.4%', '99.5%']
+    matched_parent -> lepton: score=4.5208, errors=['0.0%', '27.7%', '87.9%']
+    matched_parent -> quark_dn: score=4.7900, errors=['0.0%', '352.2%', '79.5%']
+    matched_parent -> quark_up: score=28.1628, errors=['0.0%', '55.1%', '99.5%']
+    [reference] cascade -> up_quark: score=9.6605, errors=['0.0%', '61.7%', '94.8%']
+
+  --- A2: Complement Potential Parameter Sweep ---
+
+    Best complement up-quark: score=6.6008
+      config: n=5, g=20.0, w0=0.8, model=envelope
+      ratios: ['1.0', '3767.2', '13534.9']
+      errors: ['0.0%', '540.7%', '83.1%']
+
+    Improvement over cascade-only: 0.1x
+
+  --- A3: Simultaneous Cascade + Complement ---
+
+    Best simultaneous (n=8, g=25.0, w0=0.5):
+      Combined score: 7.3843
+      lepton (cascade): score=0.0200, errors=['0.0%', '0.4%', '15.2%']
+      quark_dn (cascade): score=0.4470, errors=['0.0%', '38.7%', '44.2%']
+      quark_up (complement): score=6.9172, errors=['0.0%', '623.8%', '82.3%']
+      Cascade bound states: 45
+      Complement bound states: 220
+
+======================================================================
+PART B: PAC Completeness for n_levels
+======================================================================
+
+  --- B1: PAC Completeness Series ---
+    n= 1: C_n = 0.618034, S_n = 1.6180 / 2.6180
+    n= 2: C_n = 0.763932, S_n = 2.0000 / 2.6180
+    n= 3: C_n = 0.854102, S_n = 2.2361 / 2.6180
+    n= 4: C_n = 0.909830, S_n = 2.3820 / 2.6180
+    n= 5: C_n = 0.944272, S_n = 2.4721 / 2.6180
+    n= 6: C_n = 0.965558, S_n = 2.5279 / 2.6180
+    n= 7: C_n = 0.978714, S_n = 2.5623 / 2.6180
+    n= 8: C_n = 0.986844, S_n = 2.5836 / 2.6180
+    n= 9: C_n = 0.991869, S_n = 2.5967 / 2.6180
+    n=10: C_n = 0.994975, S_n = 2.6049 / 2.6180
+    n=11: C_n = 0.996894, S_n = 2.6099 / 2.6180
+    n=12: C_n = 0.998081, S_n = 2.6130 / 2.6180
+    n=13: C_n = 0.998814, S_n = 2.6149 / 2.6180
+    n=14: C_n = 0.999267, S_n = 2.6161 / 2.6180
+    n=15: C_n = 0.999547, S_n = 2.6168 / 2.6180
+
+  --- B2: Optimal n_levels and Completeness ---
+
+    --- lepton ---
+    Score by n_levels:
+      n= 3: score=0.8942, C=0.8541
+      n= 4: score=0.5391, C=0.9098
+      n= 5: score=0.2505, C=0.9443
+      n= 6: score=0.0565, C=0.9656
+      n= 7: score=0.0035, C=0.9787
+      n= 8: score=0.0093, C=0.9868
+      n= 9: score=0.0020, C=0.9919 <-- OPTIMAL
+      n=10: score=0.0052, C=0.9950
+      n=11: score=0.0090, C=0.9969
+      n=12: score=0.0031, C=0.9981
+      n=13: score=0.0125, C=0.9988
+      n=14: score=0.0056, C=0.9993
+      n=15: score=0.0448, C=0.9995
+      n=16: score=0.0126, C=0.9997
+      n=17: score=0.0306, C=0.9998
+    Good range (score < 0.006): n = 7 to 14
+    Completeness range: C = 0.9787 to 0.9993
+
+    --- quark_dn ---
+    Score by n_levels:
+      n= 3: score=2.6515, C=0.8541
+      n= 4: score=2.0580, C=0.9098
+      n= 5: score=1.5638, C=0.9443
+      n= 6: score=1.0274, C=0.9656
+      n= 7: score=0.5961, C=0.9787
+      n= 8: score=0.2718, C=0.9868
+      n= 9: score=0.0939, C=0.9919
+      n=10: score=0.0026, C=0.9950
+      n=11: score=0.0002, C=0.9969 <-- OPTIMAL
+      n=12: score=0.0077, C=0.9981
+      n=13: score=0.0134, C=0.9988
+      n=14: score=0.0162, C=0.9993
+      n=15: score=0.0064, C=0.9995
+      n=16: score=0.0018, C=0.9997
+      n=17: score=0.0284, C=0.9998
+    Good range (score < 0.001): n = 11 to 11
+    Completeness range: C = 0.9969 to 0.9969
+
+  --- B3: Universal Completeness Threshold ---
+    Lepton optimal C: 0.9919 (n=9)
+    Down-Q optimal C: 0.9969 (n=11)
+    Mean: 0.9944
+
+    Nearby phi-thresholds:
+      1 - 1/phi^8 = 0.978714 -> n = 7
+      1 - 1/phi^9 = 0.986844 -> n = 8
+      1 - 1/phi^10 = 0.991869 -> n = 9
+      1 - 1/phi^11 = 0.994975 -> n = 10
+      1 - 1/phi^12 = 0.996894 -> n = 11
+      1 - 1/phi^13 = 0.998081 -> n = 12
+
+======================================================================
+PART C: Richardson Extrapolation for Grid Convergence
+======================================================================
+
+  --- C1: Eigenvalue Convergence ---
+    coarse     (N=  300, dx=0.4000): 24 states, lepton score=1.914003, quark_dn score=1.066394
+    medium     (N=  500, dx=0.2400): 24 states, lepton score=0.618734, quark_dn score=0.958761
+    standard   (N=  600, dx=0.2000): 23 states, lepton score=0.002685, quark_dn score=0.848882
+    fine       (N=  800, dx=0.1500): 23 states, lepton score=0.308958, quark_dn score=0.669942
+    finer      (N= 1000, dx=0.1200): 23 states, lepton score=0.672329, quark_dn score=0.611549
+    finest     (N= 1500, dx=0.0800): 23 states, lepton score=1.263485, quark_dn score=0.585070
+    extreme    (N= 2000, dx=0.0600): 22 states, lepton score=1.688741, quark_dn score=0.582643
+
+  --- C2: Richardson Extrapolation ---
+
+    mu/e ratio:
+      Data points: 7
+      Extrapolated (dx->0): 331.24
+      Target: 206.77
+      Error: 60.20%
+
+    tau/e ratio:
+      Extrapolated (dx->0): 1839.12
+      Target: 3477.2
+      Error: 47.11%
+
+    Raw vs Extrapolated:
+      coarse     (dx=0.4000): mu/e=90.8, tau/e=1143.6
+      medium     (dx=0.2400): mu/e=377.3, tau/e=2094.7
+      standard   (dx=0.2000): mu/e=210.7, tau/e=3648.9
+      fine       (dx=0.1500): mu/e=359.7, tau/e=3311.5
+      finer      (dx=0.1200): mu/e=438.9, tau/e=2511.3
+      finest     (dx=0.0800): mu/e=542.6, tau/e=1953.3
+      extreme    (dx=0.0600): mu/e=88.8, tau/e=1295.8
+      EXTRAP     (dx=0):     mu/e=331.2, tau/e=1839.1
+
+======================================================================
+SUMMARY
+======================================================================
+
+  W1 (Up Quarks via PAC Complement):
+    Combined 3-family score: 7.3843
+    Up-quark score: 6.9172
+    Up-quark errors: ['0.0%', '623.8%', '82.3%']
+    Improved over cascade-only (0.563): False
+
+  W2 (n_levels from PAC Completeness):
+    Lepton optimal n=9, C=0.9919
+    Down-Q optimal n=11, C=0.9969
+    Mean completeness: 0.9944
+
+  W3 (Richardson Extrapolation):
+    mu/e ratio: 331.2 (target 206.8, error 60.2%)
+    tau/e ratio: 1839.1 (target 3477.2, error 47.1%)
+
+  Total time: 1285.2s
+
+Results saved: C:\Users\peter\repos\Dawn Field Institute\internal\milestone4\results\exp_11_pac_grounded_fixes_20260225_163226.json

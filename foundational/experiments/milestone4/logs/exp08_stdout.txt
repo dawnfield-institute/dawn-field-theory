@@ -1,0 +1,101 @@
+======================================================================
+EXP_08: Herniation Boundary -- Constrained Mass Ratio Test
+======================================================================
+  Grid: N=600, dx=0.2
+  Total configs: 2040
+
+======================================================================
+PART A: Fixed-Index (Evenly Spaced) Test
+======================================================================
+
+  --- LEPTON (evenly spaced) ---
+  Best: score=0.0009, j=0, k=29, n=7, g=9.64
+  Ratios: ['1.0', '210.4', '3395.3']
+  Errors: ['0.0%', '1.8%', '2.4%']
+
+  --- DOWN QUARK (evenly spaced) ---
+  Best: score=0.0002, j=1, k=20, n=11, g=20.00
+  Ratios: ['1.0', '19.8', '903.9']
+  Errors: ['0.0%', '0.9%', '1.0%']
+
+======================================================================
+PART B: Consecutive State Test
+======================================================================
+
+  --- LEPTON (consecutive states) ---
+  Best: score=1.4588, j=5, n=6, g=6.18
+  Ratios: ['1.0', '291.4', '1092.2']
+  Errors: ['0.0%', '40.9%', '68.6%']
+
+  --- DOWN QUARK (consecutive states) ---
+  Best: score=1.3652, j=102, n=20, g=20.00
+  Ratios: ['1.0', '54.4', '489.9']
+  Errors: ['0.0%', '172.1%', '45.3%']
+
+======================================================================
+PART C: Fibonacci-Index Test
+======================================================================
+
+  --- LEPTON (Fibonacci-spaced) ---
+  Best: score=0.0140, j=7, F=(21,34)
+  Ratios: ['1.0', '186.3', '3678.7']
+  Errors: ['0.0%', '9.9%', '5.8%']
+
+  --- DOWN QUARK (Fibonacci-spaced) ---
+  Best: score=0.0051, j=1, F=(13,21)
+  Ratios: ['1.0', '18.6', '896.7']
+  Errors: ['0.0%', '6.9%', '0.2%']
+
+======================================================================
+PART D: Simultaneous Family Test (leptons + down quarks)
+======================================================================
+
+  Best phi-decay combined score: 0.0022
+
+  Phi-decay combined: 0.0022
+  Random distribution: mean=4.8867, std=5.0128
+  Random min: 0.0029
+  P-value (fraction <= ours): 0.0000
+  Significant (p < 0.05)? True
+
+======================================================================
+PART E: Topology Comparison (same g, w0, different decay)
+======================================================================
+
+  Topology                   Decay N_bound   Lepton    Quark   Combined
+  ----------------------------------------------------------------------
+  phi (1/phi=0.618)          0.618      59   0.0009   0.6126     0.6134
+  sqrt(2) (0.707)            0.707      45   0.2301   1.5347     1.7647
+  half (0.500)               0.500      63   2.3862   0.4609     2.8471
+  linear (0.800)             0.800      35   0.9497   2.7795     3.7292
+  cube-root (0.794)          0.794      35   1.2560   2.5248     3.7808
+  e-inv (1/e=0.368)          0.368      55   6.8495   0.2795     7.1290
+  xi-inv (1/Xi=0.945)        0.945      27  16.2957   4.9381    21.2338
+
+  Winner: phi (1/phi=0.618)
+  Phi rank: 1/7
+
+======================================================================
+PART F: Grid Resolution Bootstrap
+======================================================================
+  Grid configs tested: 8
+  Lepton score range: [0.000876, 3.966481]
+  Lepton score std: 1.418031
+  Quark score range: [0.589593, 1.003022]
+  Quark score std: 0.125985
+  Grid-robust? False
+
+  Total time: 888.0s
+
+======================================================================
+ASSESSMENT
+======================================================================
+  [PASS] Evenly-spaced lepton match (score < 1.0)
+  [FAIL] Consecutive state match (score < 0.5)
+  [PASS] Simultaneous family beats random (p < 0.05)
+  [PASS] Phi in top-2 topologies
+  [FAIL] Grid-resolution robust
+
+  Score: 3/5
+
+Results saved: C:\Users\peter\repos\Dawn Field Institute\internal\milestone4\results\exp_08_constrained_mass_ratios_20260225_024830.json

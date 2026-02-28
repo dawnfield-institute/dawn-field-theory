@@ -1,0 +1,400 @@
+{
+  "experiment": "milestone4/exp_07_herniation_derived_potential",
+  "date": "2026-02-24 22:23:53",
+  "milestone": 4,
+  "hypothesis": "The \u03c6-scaled herniation potential can be derived from Paper 1 Landauer cascade uniqueness, and the resulting bound states match known particle mass ratios.",
+  "falsification_conditions": [
+    "Random potentials match equally well \u2192 \u03c6 not special",
+    "Mass ratios require > 2 free parameters \u2192 overfitting",
+    "Fibonacci uniqueness fails \u2192 alternative transfer matrices exist"
+  ],
+  "grid": {
+    "N": 600,
+    "dx": 0.2
+  },
+  "part_a_fibonacci": {
+    "n_solutions": 2,
+    "all_eigenvalues_phi": true,
+    "solutions": [
+      {
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "det": -1,
+        "trace": 1,
+        "dominant_eigenvalue": 1.618033988749895,
+        "phi_error": 0.0
+      },
+      {
+        "matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "det": -1,
+        "trace": 1,
+        "dominant_eigenvalue": 1.618033988749895,
+        "phi_error": 0.0
+      }
+    ],
+    "uniqueness_proven": true
+  },
+  "part_d_mass_ratios": {
+    "lepton_top5": [
+      {
+        "n_levels": 18,
+        "g": 11.857142857142858,
+        "w0": 0.3,
+        "n_bound": 41,
+        "score": 1.9209915147850792e-05,
+        "ratios": [
+          1.0,
+          207.58908245459583,
+          3483.785199700967
+        ],
+        "indices": [
+          2,
+          15,
+          40
+        ]
+      },
+      {
+        "n_levels": 17,
+        "g": 20.0,
+        "w0": 1.309090909090909,
+        "n_bound": 112,
+        "score": 2.1432679690077544e-05,
+        "ratios": [
+          1.0,
+          206.0551159596824,
+          3487.898670567681
+        ],
+        "indices": [
+          3,
+          58,
+          111
+        ]
+      },
+      {
+        "n_levels": 8,
+        "g": 11.857142857142858,
+        "w0": 2.9909090909090907,
+        "n_bound": 112,
+        "score": 4.359862761841777e-05,
+        "ratios": [
+          1.0,
+          208.01061260971173,
+          3486.933520160585
+        ],
+        "indices": [
+          12,
+          88,
+          111
+        ]
+      },
+      {
+        "n_levels": 6,
+        "g": 15.928571428571429,
+        "w0": 1.6454545454545455,
+        "n_bound": 67,
+        "score": 4.4560006168614346e-05,
+        "ratios": [
+          1.0,
+          206.78879513942456,
+          3454.0679864118965
+        ],
+        "indices": [
+          2,
+          39,
+          66
+        ]
+      },
+      {
+        "n_levels": 5,
+        "g": 13.214285714285715,
+        "w0": 1.309090909090909,
+        "n_bound": 37,
+        "score": 4.467377806054338e-05,
+        "ratios": [
+          1.0,
+          207.21239221628875,
+          3455.2487365600514
+        ],
+        "indices": [
+          7,
+          27,
+          36
+        ]
+      }
+    ],
+    "quark_dn_top5": [
+      {
+        "n_levels": 5,
+        "g": 3.7142857142857144,
+        "w0": 3.327272727272727,
+        "n_bound": 46,
+        "score": 6.901153171118142e-07,
+        "ratios": [
+          1.0,
+          19.98529426034189,
+          894.7544716568586
+        ],
+        "indices": [
+          4,
+          38,
+          45
+        ]
+      },
+      {
+        "n_levels": 5,
+        "g": 9.142857142857142,
+        "w0": 3.6636363636363636,
+        "n_bound": 80,
+        "score": 8.519507769995597e-06,
+        "ratios": [
+          1.0,
+          19.956108767148773,
+          896.8217407926298
+        ],
+        "indices": [
+          16,
+          71,
+          79
+        ]
+      },
+      {
+        "n_levels": 17,
+        "g": 14.571428571428573,
+        "w0": 1.981818181818182,
+        "n_bound": 113,
+        "score": 1.4129473008469567e-05,
+        "ratios": [
+          1.0,
+          19.936896732706714,
+          896.9237558259803
+        ],
+        "indices": [
+          0,
+          97,
+          112
+        ]
+      },
+      {
+        "n_levels": 16,
+        "g": 18.642857142857142,
+        "w0": 3.6636363636363636,
+        "n_bound": 175,
+        "score": 2.0074206233216307e-05,
+        "ratios": [
+          1.0,
+          19.997938005040822,
+          899.1183590607573
+        ],
+        "indices": [
+          0,
+          161,
+          174
+        ]
+      },
+      {
+        "n_levels": 8,
+        "g": 13.214285714285715,
+        "w0": 3.6636363636363636,
+        "n_bound": 132,
+        "score": 2.853140143140945e-05,
+        "ratios": [
+          1.0,
+          20.062937538244622,
+          891.2417930044859
+        ],
+        "indices": [
+          4,
+          121,
+          131
+        ]
+      }
+    ],
+    "quark_up_top5": [
+      {
+        "n_levels": 6,
+        "g": 9.142857142857142,
+        "w0": 1.981818181818182,
+        "n_bound": 59,
+        "score": 0.0015308949994573668,
+        "ratios": [
+          1.0,
+          566.3409880193518,
+          80767.79354094902
+        ],
+        "indices": [
+          1,
+          51,
+          58
+        ]
+      },
+      {
+        "n_levels": 18,
+        "g": 17.285714285714285,
+        "w0": 0.3,
+        "n_bound": 50,
+        "score": 0.0017242552193694077,
+        "ratios": [
+          1.0,
+          607.1515442706313,
+          81990.71695739857
+        ],
+        "indices": [
+          0,
+          34,
+          49
+        ]
+      },
+      {
+        "n_levels": 5,
+        "g": 11.857142857142858,
+        "w0": 1.6454545454545455,
+        "n_bound": 44,
+        "score": 0.0026949311693148592,
+        "ratios": [
+          1.0,
+          563.8898200555814,
+          77440.06927618764
+        ],
+        "indices": [
+          1,
+          38,
+          43
+        ]
+      },
+      {
+        "n_levels": 7,
+        "g": 18.642857142857142,
+        "w0": 0.6363636363636364,
+        "n_bound": 38,
+        "score": 0.00675248307195072,
+        "ratios": [
+          1.0,
+          624.9499208447967,
+          84380.28773194227
+        ],
+        "indices": [
+          0,
+          30,
+          37
+        ]
+      },
+      {
+        "n_levels": 7,
+        "g": 11.857142857142858,
+        "w0": 1.6454545454545455,
+        "n_bound": 70,
+        "score": 0.007938907696357467,
+        "ratios": [
+          1.0,
+          539.1120960114353,
+          81506.43466385457
+        ],
+        "indices": [
+          8,
+          65,
+          69
+        ]
+      }
+    ],
+    "total_tested": 3060
+  },
+  "part_e_null_test": {
+    "n_valid_trials": 983,
+    "lepton_null": {
+      "mean": 3.2084174893997757,
+      "std": 5.943776180913729,
+      "min": 1.218098563270321e-05,
+      "percentiles": {
+        "5": 0.0025648636120649206,
+        "25": 0.18105152297181135,
+        "50": 1.7292702076367914
+      }
+    },
+    "quark_dn_null": {
+      "mean": 1.119487339151602,
+      "std": 3.3073557555930533,
+      "min": 2.3489844423223407e-05
+    }
+  },
+  "part_f_sensitivity": {
+    "g_robustness": 0.1,
+    "w0_robustness": 0.06666666666666667,
+    "g_good_range": [
+      12.388669950738915,
+      23.42807881773399
+    ],
+    "w0_good_range": [
+      0.3,
+      0.506896551724138
+    ],
+    "verdict": "SENSITIVE"
+  },
+  "part_g_gap_analysis": {
+    "n_bound": 41,
+    "gap_ratio_mean": 1.1878970751038356,
+    "gap_ratio_std": 0.21577009574299508,
+    "pac_constant_hits": {
+      "ln(2)": 0,
+      "1/\u03c6": 0,
+      "ln(\u03c6)": 0,
+      "1": 5,
+      "\u039e": 4,
+      "1+\u03c0/55": 0,
+      "\u03c6": 1,
+      "4/\u03c0": 4
+    },
+    "n_generation_boundaries": 4,
+    "gaps_in_landauer_mean": 0.9180000974675758
+  },
+  "part_h_chain": {
+    "chain_steps": [
+      [
+        "Fibonacci uniqueness \u2192 \u03c6",
+        true,
+        "algebraic"
+      ],
+      [
+        "\u03c6-scaling \u2192 cascade potential",
+        true,
+        "derived"
+      ],
+      [
+        "Potential \u2192 lepton ratios (<1.0 score)",
+        true,
+        "numerical"
+      ],
+      [
+        "Beats random null (ours=0.000 vs null_min=0.000)",
+        false,
+        "statistical"
+      ],
+      [
+        "Parameter-robust (not fine-tuned)",
+        false,
+        "sensitivity"
+      ]
+    ],
+    "all_pass": false,
+    "n_pass": 3,
+    "n_total": 5,
+    "verdict": "CHAIN INCOMPLETE (3/5 steps)"
+  },
+  "elapsed_seconds": 754.3310760999993
+}

@@ -1,0 +1,10 @@
+{
+  "resonance_frequency": 0.006959798994974875,
+  "ratio_to_030": 0.23199329983249584,
+  "target_ratio": 0.6666666666666666,
+  "mas_depth_3_r": 0.16666666666666666,
+  "one_over_2pi": 0.15915494309189535,
+  "alpha_power_law": 0.162,
+  "cascade_ratio": 0.6,
+  "phi_inverse": 0.6180339887498948
+}

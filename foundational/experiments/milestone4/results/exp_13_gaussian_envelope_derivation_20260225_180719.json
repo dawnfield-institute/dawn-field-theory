@@ -1,0 +1,299 @@
+{
+  "experiment": "exp_13_gaussian_envelope_derivation",
+  "timestamp": "2026-02-25T13:58:38.958771",
+  "purpose": "Derive the Gaussian envelope shape and phi-width scaling of the cascade potential from PAC conservation + SEC dynamics. Closes the derivation gap identified in exp_12.",
+  "part_a": {
+    "gaussian_fits": {
+      "0.1": {
+        "sigma_expected": 0.48989794855663565,
+        "sigma_fit": 0.4898979485566357,
+        "sigma_error_pct": 1.1331166295920984e-14,
+        "correlation": 0.9999996758695179
+      },
+      "0.5": {
+        "sigma_expected": 1.019803902718557,
+        "sigma_fit": 1.0198039027185568,
+        "sigma_error_pct": 2.1773264873091062e-14,
+        "correlation": 0.9999999767374084
+      },
+      "1.0": {
+        "sigma_expected": 1.42828568570857,
+        "sigma_fit": 1.4282856857085702,
+        "sigma_error_pct": 1.5546231902119455e-14,
+        "correlation": 0.9999999937106863
+      },
+      "2.0": {
+        "sigma_expected": 2.009975124224178,
+        "sigma_fit": 2.009975124224179,
+        "sigma_error_pct": 4.418852795717806e-14,
+        "correlation": 0.9999999983649881
+      },
+      "5.0": {
+        "sigma_expected": 3.1685959035509716,
+        "sigma_fit": 3.169227035098043,
+        "sigma_error_pct": 0.019918335006492614,
+        "correlation": 0.9999999856326675
+      },
+      "10.0": {
+        "sigma_expected": 4.476605857119878,
+        "sigma_fit": 4.47660269330391,
+        "sigma_error_pct": 7.067443659997957e-05,
+        "correlation": 0.9999999999275208
+      }
+    },
+    "mean_correlation": 0.9999999383737982,
+    "min_correlation": 0.9999996758695179,
+    "conclusion": "SEC diffusion from point source produces Gaussian profile (correlation > 1.000000 at all times). Gaussian envelope is not assumed \u2014 it is the unique solution of the diffusion equation.",
+    "pass": true
+  },
+  "part_b": {
+    "n_levels_tests": {},
+    "base_tests": {
+      "phi": {
+        "base": 1.618033988749895,
+        "area_cv_pct": 1.4006199100636612e-14,
+        "equal_area": true,
+        "base_over_phi": 1.0
+      },
+      "sqrt(2)": {
+        "base": 1.4142135623730951,
+        "area_cv_pct": 30.53025007537099,
+        "equal_area": false,
+        "base_over_phi": 0.8740320488976422
+      },
+      "e": {
+        "base": 2.718281828459045,
+        "area_cv_pct": 104.63425641206558,
+        "equal_area": false,
+        "base_over_phi": 1.679990560988901
+      },
+      "2": {
+        "base": 2.0,
+        "area_cv_pct": 47.35312307939577,
+        "equal_area": false,
+        "base_over_phi": 1.2360679774997896
+      },
+      "phi^(1/2)": {
+        "base": 1.272019649514069,
+        "area_cv_pct": 53.38852419027253,
+        "equal_area": false,
+        "base_over_phi": 0.7861513777574233
+      },
+      "phi^2": {
+        "base": 2.618033988749895,
+        "area_cv_pct": 98.52372479094751,
+        "equal_area": false,
+        "base_over_phi": 1.618033988749895
+      }
+    },
+    "derivation": "PAC equal-area conservation: phi^(-n) * sigma_n = const => sigma_n = sigma_0 * phi^n. ONLY phi-scaling produces equal integrated potential per level.",
+    "pass": true
+  },
+  "part_c": {
+    "entropy_comparison": {
+      "Gaussian": {
+        "entropy": 2.112077726172317,
+        "variance": 3.9999406738015333
+      },
+      "Laplace": {
+        "entropy": 2.0328644267034415,
+        "variance": 3.8910093638635463
+      },
+      "Sech^2": {
+        "entropy": 1.4045757780394246,
+        "variance": 0.9999970692081919
+      },
+      "Triangular": {
+        "entropy": 2.0890270355789853,
+        "variance": 4.0000001663215174
+      }
+    },
+    "gaussian_is_maximum": true,
+    "theoretical_max": 2.112085713764618,
+    "pass": true
+  },
+  "part_d": {
+    "shape_results": {
+      "Gaussian": {
+        "best_lepton": {
+          "score": 0.00021313370916724487,
+          "n": 15,
+          "g": 6.090909090909091,
+          "w0": 1.7272727272727273,
+          "n_bound": 67
+        },
+        "best_down": {
+          "score": 2.0809074992406745e-05,
+          "n": 15,
+          "g": 8.636363636363637,
+          "w0": 0.9090909090909092,
+          "n_bound": 59
+        },
+        "combined": 0.0002339427841596516
+      },
+      "Lorentzian": {
+        "best_lepton": {
+          "score": 0.00012898935230146497,
+          "n": 10,
+          "g": 3.5454545454545454,
+          "w0": 4.181818181818182,
+          "n_bound": 82
+        },
+        "best_down": {
+          "score": 7.335837428258073e-05,
+          "n": 10,
+          "g": 12.454545454545455,
+          "w0": 0.5,
+          "n_bound": 56
+        },
+        "combined": 0.00020234772658404572
+      },
+      "Laplace": {
+        "best_lepton": {
+          "score": 0.0001510676372078272,
+          "n": 15,
+          "g": 13.727272727272727,
+          "w0": 2.1363636363636367,
+          "n_bound": 85
+        },
+        "best_down": {
+          "score": 2.4824787143015856e-07,
+          "n": 15,
+          "g": 12.454545454545455,
+          "w0": 1.3181818181818183,
+          "n_bound": 64
+        },
+        "combined": 0.00015131588507925737
+      },
+      "Sech^2": {
+        "best_lepton": {
+          "score": 0.0002009764290842896,
+          "n": 8,
+          "g": 6.090909090909091,
+          "w0": 2.5454545454545454,
+          "n_bound": 43
+        },
+        "best_down": {
+          "score": 1.7417479407771263e-05,
+          "n": 15,
+          "g": 11.181818181818182,
+          "w0": 0.9090909090909092,
+          "n_bound": 45
+        },
+        "combined": 0.00021839390849206084
+      },
+      "Triangular": {
+        "best_lepton": {
+          "score": 0.00015673904660288518,
+          "n": 8,
+          "g": 15.0,
+          "w0": 3.3636363636363638,
+          "n_bound": 134
+        },
+        "best_down": {
+          "score": 7.636285023334102e-05,
+          "n": 8,
+          "g": 7.363636363636363,
+          "w0": 2.9545454545454546,
+          "n_bound": 85
+        },
+        "combined": 0.0002331018968362262
+      },
+      "Uniform": {
+        "best_lepton": {
+          "score": 4.621144677364166e-06,
+          "n": 12,
+          "g": 8.636363636363637,
+          "w0": 1.7272727272727273,
+          "n_bound": 93
+        },
+        "best_down": {
+          "score": 0.00012297163275611528,
+          "n": 10,
+          "g": 15.0,
+          "w0": 1.7272727272727273,
+          "n_bound": 122
+        },
+        "combined": 0.00012759277743347946
+      }
+    },
+    "ranking": [
+      {
+        "rank": 1,
+        "shape": "Uniform",
+        "combined_score": 0.00012759277743347946
+      },
+      {
+        "rank": 2,
+        "shape": "Laplace",
+        "combined_score": 0.00015131588507925737
+      },
+      {
+        "rank": 3,
+        "shape": "Lorentzian",
+        "combined_score": 0.00020234772658404572
+      },
+      {
+        "rank": 4,
+        "shape": "Sech^2",
+        "combined_score": 0.00021839390849206084
+      },
+      {
+        "rank": 5,
+        "shape": "Triangular",
+        "combined_score": 0.0002331018968362262
+      },
+      {
+        "rank": 6,
+        "shape": "Gaussian",
+        "combined_score": 0.0002339427841596516
+      }
+    ],
+    "gaussian_rank": 6,
+    "gaussian_is_best": false,
+    "pass": false
+  },
+  "part_e": {
+    "default": {
+      "max_pointwise_diff": 0.0,
+      "relative_diff": 0.0,
+      "eigenvalue_max_diff": 0.0,
+      "n_bound_assumed": 76,
+      "n_bound_derived": 76,
+      "identical": true
+    },
+    "tight": {
+      "max_pointwise_diff": 0.0,
+      "relative_diff": 0.0,
+      "eigenvalue_max_diff": 0.0,
+      "n_bound_assumed": 40,
+      "n_bound_derived": 40,
+      "identical": true
+    },
+    "wide": {
+      "max_pointwise_diff": 0.0,
+      "relative_diff": 0.0,
+      "eigenvalue_max_diff": 0.0,
+      "n_bound_assumed": 79,
+      "n_bound_derived": 79,
+      "identical": true
+    },
+    "all_identical": true,
+    "pass": true
+  },
+  "part_f": {
+    "verdict": "DERIVATION STRONG",
+    "passes": "4/5",
+    "conclusion": "4/5 tests pass. The derivation is nearly complete. Gaussian rank for mass ratios: #6.",
+    "details": {
+      "part_a": true,
+      "part_b": true,
+      "part_c": true,
+      "part_d": false,
+      "part_e": true,
+      "gaussian_mass_ratio_rank": 6
+    },
+    "pass": true
+  },
+  "total_runtime_s": 521.0077068805695
+}

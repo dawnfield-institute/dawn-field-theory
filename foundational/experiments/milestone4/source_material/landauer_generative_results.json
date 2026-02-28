@@ -1,0 +1,10 @@
+{
+  "monotonic_fraction": 1.0,
+  "zero_xi_fraction": 0.0,
+  "amplification_factor": 35.85109356780161,
+  "backpressure_xi_correlation": 0.18477040789214083,
+  "xi_temperature_independence": -0.027603327374424388,
+  "initial_potential": 1.0,
+  "total_structure": 0.010732888159349585,
+  "final_remainder": 0.132059148694574
+}

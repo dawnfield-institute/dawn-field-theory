@@ -1,0 +1,202 @@
+======================================================================
+EXP_10: Weakness Tests — Up Quarks, n_levels, Grid Sensitivity
+======================================================================
+  Grid: N=600, dx=0.2
+
+======================================================================
+PART A: Up-Quark Cascade Order Diagnosis
+======================================================================
+
+  --- A1: Fibonacci Matrix Powers ---
+    M^1: eigenvalue = 1.618034, phi^1 = 1.618034, match = True
+    M^2: eigenvalue = 2.618034, phi^2 = 2.618034, match = True
+    M^3: eigenvalue = 4.236068, phi^3 = 4.236068, match = True
+    M^4: eigenvalue = 6.854102, phi^4 = 6.854102, match = True
+
+  --- A2: Hierarchy Span Analysis ---
+    lepton    : span =     3477.2x, log_phi =  16.9, log_phi2 =   8.5, log_phi3 =   5.6
+    quark_dn  : span =      895.1x, log_phi =  14.1, log_phi2 =   7.1, log_phi3 =   4.7
+    quark_up  : span =    79861.1x, log_phi =  23.5, log_phi2 =  11.7, log_phi3 =   7.8
+
+  --- A3: Cascade Order Sweep for Up-Type Quarks ---
+
+    phi^1 (standard) (decay=0.6180):
+      up_quark  : score=0.5631, n=14, g=20.0, w0=0.3
+        errors: ['0.0%', '103.7%', '21.2%']
+      lepton    : score=0.0020, n=9, g=15.0, w0=1.5
+        errors: ['0.0%', '4.0%', '2.2%']
+      quark_dn  : score=0.0002, n=11, g=20.0, w0=0.3
+        errors: ['0.0%', '0.9%', '1.0%']
+
+    phi^2 (2nd order) (decay=0.3820):
+      up_quark  : score=1.9102, n=7, g=20.0, w0=1.5
+        errors: ['0.0%', '102.2%', '69.6%']
+      lepton    : score=0.0038, n=9, g=15.0, w0=1.5
+        errors: ['0.0%', '5.5%', '2.4%']
+      quark_dn  : score=0.0004, n=9, g=15.0, w0=0.3
+        errors: ['0.0%', '0.4%', '1.9%']
+
+    phi^3 (3rd order) (decay=0.2361):
+      up_quark  : score=1.9529, n=8, g=20.0, w0=2.0
+        errors: ['0.0%', '107.9%', '69.6%']
+      lepton    : score=0.0177, n=6, g=10.0, w0=3.0
+        errors: ['0.0%', '8.6%', '9.9%']
+      quark_dn  : score=0.0003, n=7, g=15.0, w0=0.5
+        errors: ['0.0%', '1.6%', '0.6%']
+
+  --- A4: Unified Model Assessment ---
+    phi^1 up-quark score: 0.5631
+    phi^2 up-quark score: 1.9102
+    Improvement ratio: 0.3x
+    phi^2 passes (score < 0.1): False
+
+    Lepton: phi^1 score=0.0020, phi^2 score=0.0038
+    phi^1 better for leptons: True
+    Down Q: phi^1 score=0.0002, phi^2 score=0.0004
+    phi^1 better for down quarks: True
+
+  --- A5: Null Test ---
+    SKIPPED — phi^2 did not improve up quarks (score 1.910 > phi^1 0.563)
+    CONCLUSION: Up-type quarks resist ALL tested cascade orders.
+    The phi-cascade mechanism works for leptons and down quarks
+    but NOT for up-type quarks. This is an honest boundary of the model.
+
+======================================================================
+PART B: Landauer-Derived n_levels
+======================================================================
+
+  --- B1: Predicted n_levels ---
+    Landauer threshold: kT*ln(2) = 0.6931
+    g=  5.0, phi^1: n_predicted = 4
+    g=  5.0, phi^2: n_predicted = 2
+    g=  7.0, phi^1: n_predicted = 4
+    g=  7.0, phi^2: n_predicted = 2
+    g= 10.0, phi^1: n_predicted = 5
+    g= 10.0, phi^2: n_predicted = 2
+    g= 12.0, phi^1: n_predicted = 5
+    g= 12.0, phi^2: n_predicted = 2
+    g= 15.0, phi^1: n_predicted = 6
+    g= 15.0, phi^2: n_predicted = 3
+    g= 20.0, phi^1: n_predicted = 6
+    g= 20.0, phi^2: n_predicted = 3
+
+  --- B2: Predicted vs Optimal n_levels ---
+
+    --- lepton (decay=0.6180) ---
+    g=  5.0: predicted n=4, optimal n=6, diff=2, score_ratio=6.76
+    g=  7.0: predicted n=4, optimal n=8, diff=4, score_ratio=65.23
+    g= 10.0: predicted n=5, optimal n=9, diff=4, score_ratio=7.23
+    g= 12.0: predicted n=5, optimal n=7, diff=2, score_ratio=80.30
+    g= 15.0: predicted n=6, optimal n=9, diff=3, score_ratio=29.15
+    g= 20.0: predicted n=6, optimal n=7, diff=1, score_ratio=14.96
+    BEST: n=9, g=15.0, w0=1.5, score=0.0020
+      errors: ['0.0%', '4.0%', '2.2%']
+
+    --- quark_dn (decay=0.6180) ---
+    g=  5.0: predicted n=4, optimal n=9, diff=5, score_ratio=11.16
+    g=  7.0: predicted n=4, optimal n=8, diff=4, score_ratio=7.13
+    g= 10.0: predicted n=5, optimal n=10, diff=5, score_ratio=23.63
+    g= 12.0: predicted n=5, optimal n=10, diff=5, score_ratio=29.74
+    g= 15.0: predicted n=6, optimal n=11, diff=5, score_ratio=51.36
+    g= 20.0: predicted n=6, optimal n=11, diff=5, score_ratio=5723.45
+    BEST: n=11, g=20.0, w0=0.3, score=0.0002
+      errors: ['0.0%', '0.9%', '1.0%']
+
+    --- quark_up (decay=0.3820) ---
+    g=  5.0: predicted n=3, optimal n=4, diff=1, score_ratio=1.85
+    g=  7.0: predicted n=3, optimal n=4, diff=1, score_ratio=1.71
+    g= 10.0: predicted n=3, optimal n=3, diff=0, score_ratio=1.00
+    g= 12.0: predicted n=3, optimal n=3, diff=0, score_ratio=1.00
+    g= 15.0: predicted n=3, optimal n=4, diff=1, score_ratio=1.93
+    g= 20.0: predicted n=3, optimal n=7, diff=4, score_ratio=2.40
+    BEST: n=7, g=20.0, w0=1.5, score=1.9102
+      errors: ['0.0%', '102.2%', '69.6%']
+
+  --- B3: Landauer n_levels Assessment ---
+    lepton: avg score_ratio (predicted/optimal) = 33.94
+    quark_dn: avg score_ratio (predicted/optimal) = 24.60
+    quark_up: avg score_ratio (predicted/optimal) = 1.65
+    Landauer n_levels competitive (ratio < 5x): False
+
+======================================================================
+PART C: WKB Semi-Classical Eigenvalues
+======================================================================
+
+  --- C1: WKB vs Numerical Comparison ---
+
+    lepton_best:
+      Numerical: 23 bound states
+      WKB:       23 bound states
+      Compared:  23 states
+      Max frac error: 0.998401
+      RMS frac error: 0.284165
+
+    quark_dn_best:
+      Numerical: 48 bound states
+      WKB:       55 bound states
+      Compared:  48 states
+      Max frac error: 63.271479
+      RMS frac error: 9.150841
+
+    reference_1:
+      Numerical: 61 bound states
+      WKB:       60 bound states
+      Compared:  60 states
+      Max frac error: 2.351813
+      RMS frac error: 0.349299
+
+  --- C2: WKB Mass Ratios vs Numerical ---
+
+    lepton_best:
+      Numerical: score=0.003494, j=0, k=11
+        ratios: ['1.0', '211.8', '3669.9']
+      WKB:      score=1.404435, j=1, k=10
+        ratios: ['1.0', '96.3', '1405.0']
+
+    quark_dn_best:
+      Numerical: score=0.001750, j=0, k=23
+        ratios: ['1.0', '19.4', '869.2']
+      WKB:      score=0.106193, j=1, k=26
+        ratios: ['1.0', '15.7', '719.4']
+
+  --- C3: Grid Independence (WKB at Multiple Resolutions) ---
+    npts=  2000: score=1.40439488, ratios=['1.00', '96.47', '1403.48']
+    npts=  5000: score=1.40389448, ratios=['1.00', '96.34', '1405.48']
+    npts= 10000: score=1.40443478, ratios=['1.00', '96.34', '1404.97']
+    npts= 20000: score=1.40328181, ratios=['1.00', '96.35', '1405.82']
+    npts= 50000: score=1.40231673, ratios=['1.00', '96.35', '1406.52']
+
+    Score range: 0.00211805
+    Score CV: 0.000565
+    Grid-independent (CV < 0.01): True
+
+  --- C4: Numerical Grid Sensitivity (for reference) ---
+    N=  400, dx=0.30: score=0.02125959, ratios=['1.00', '223.19', '3071.16']
+    N=  500, dx=0.24: score=1.30148423, ratios=['1.00', '458.60', '1536.58']
+    N=  600, dx=0.20: score=0.00349351, ratios=['1.00', '211.83', '3669.90']
+    N=  800, dx=0.15: score=0.31339373, ratios=['1.00', '361.28', '3326.37']
+    N= 1000, dx=0.12: score=0.67590437, ratios=['1.00', '440.71', '2521.92']
+
+    Numerical score CV: 1.047684
+    WKB score CV:      0.000565
+    WKB improvement: 1854.9x
+
+======================================================================
+SUMMARY
+======================================================================
+
+  W1 (Up Quarks):
+    phi^1 best up-quark score: 0.5631
+    phi^2 best up-quark score: 1.9102
+    phi^2 improvement: 0.3x
+    W1 RESOLVED: False
+
+  W2 (n_levels): Landauer-derived n competitive: False
+
+  W3 (Grid): WKB grid-independent: True
+    WKB CV: 0.000565
+
+  ALL WEAKNESSES RESOLVED: False
+  Total time: 403.2s
+
+Results saved: C:\Users\peter\repos\Dawn Field Institute\internal\milestone4\results\exp_10_weakness_tests_20260225_153626.json

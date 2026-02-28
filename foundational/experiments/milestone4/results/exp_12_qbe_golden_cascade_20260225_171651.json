@@ -1,0 +1,201 @@
+{
+  "part_a_fibonacci": {
+    "qpl_range": [
+      1.1025,
+      2.5269501953756404
+    ],
+    "qpl_center": 2.0789281794113688,
+    "total_collapses": 5003,
+    "collapse_sites": 512,
+    "qpl_contrast": 0.8776806181498172,
+    "has_structure": "True",
+    "runtime": 4.556878999999753
+  },
+  "part_b_fit": {
+    "golden_cascade": {
+      "g": 7.89742196559906,
+      "w0": 0.15248439311981252,
+      "n_levels": 3,
+      "correlation": 0.10406927415936013
+    },
+    "base_comparison": {
+      "phi": {
+        "base": 1.618033988749895,
+        "g": 0.8112421965599053,
+        "w0": 0.15248439311981252,
+        "n_levels": 3,
+        "correlation": 0.10406927415936013
+      },
+      "sqrt2": {
+        "base": 1.4142135623730951,
+        "g": 8.785519356683716,
+        "w0": 0.1865232761281208,
+        "n_levels": 3,
+        "correlation": 0.1046336455655453
+      },
+      "e": {
+        "base": 2.718281828459045,
+        "g": 0.7623437500000013,
+        "w0": 0.10000000000000489,
+        "n_levels": 5,
+        "correlation": 0.10177087098765096
+      },
+      "2.0": {
+        "base": 2.0,
+        "g": 7.967210815917904,
+        "w0": 0.10524721408422846,
+        "n_levels": 3,
+        "correlation": 0.10320402769118943
+      },
+      "3.0": {
+        "base": 3.0,
+        "g": 0.7795312499999991,
+        "w0": 0.10000000000000063,
+        "n_levels": 5,
+        "correlation": 0.10182142139090737
+      },
+      "pi": {
+        "base": 3.141592653589793,
+        "g": 5.9353498029879805,
+        "w0": 0.11941004254178586,
+        "n_levels": 4,
+        "correlation": 0.10207753321627773
+      }
+    },
+    "phi_rank": 2,
+    "runtime": 14.942803999998432
+  },
+  "part_c_spectra": {
+    "emergent_n_bound": 160,
+    "emergent_energies_first5": [
+      -3.9641698895842596,
+      -3.4826732479623432,
+      -3.326872750423658,
+      -2.6693053305368553,
+      -2.6011557166446257
+    ],
+    "prescribed_n_bound": 1,
+    "spectral_correlation": null,
+    "runtime": 0.3019629000009445
+  },
+  "part_d_null_test": {
+    "results": {
+      "fibonacci": {
+        "qpl_contrast": 0.8776806181498172,
+        "total_collapses": 5003,
+        "golden_cascade_corr": 0.10406927415936013,
+        "gaussian_corr": 0.10095926411328307,
+        "cascade_params": {
+          "g": 7.89742196559906,
+          "w0": 0.15248439311981252,
+          "n_levels": 3,
+          "correlation": 0.10406927415936013
+        }
+      },
+      "sinusoidal": {
+        "qpl_contrast": 0.8784768297822705,
+        "total_collapses": 4993,
+        "golden_cascade_corr": 0.08521886478255303,
+        "gaussian_corr": 0.0696596990693125,
+        "cascade_params": {
+          "g": 0.8550544042997843,
+          "w0": 0.17486593282245955,
+          "n_levels": 3,
+          "correlation": 0.08521886478255303
+        }
+      },
+      "random": {
+        "qpl_contrast": 0.9585479285304537,
+        "total_collapses": 4971,
+        "golden_cascade_corr": 0.08747917319779183,
+        "gaussian_corr": 0.06698519062939794,
+        "cascade_params": {
+          "g": 6.903387038115715,
+          "w0": 0.17697584614488238,
+          "n_levels": 3,
+          "correlation": 0.08747917319779183
+        }
+      }
+    },
+    "fibonacci_best": true,
+    "runtime": 24.824087700002565
+  },
+  "part_e_sensitivity": {
+    "lambda_0.005": {
+      "lambda": 0.005,
+      "cascade_corr": -0.1521803017364849,
+      "contrast": 0.9513239652411382
+    },
+    "lambda_0.01": {
+      "lambda": 0.01,
+      "cascade_corr": -0.15261781855566317,
+      "contrast": 0.9502929955837326
+    },
+    "lambda_0.02": {
+      "lambda": 0.02,
+      "cascade_corr": -0.13047040673748028,
+      "contrast": 1.0955646261584226
+    },
+    "lambda_0.04": {
+      "lambda": 0.04,
+      "cascade_corr": 0.17864925068545057,
+      "contrast": 1.6431135002173411
+    },
+    "lambda_0.08": {
+      "lambda": 0.08,
+      "cascade_corr": 0.38567456612603124,
+      "contrast": 1.3457651868488392
+    },
+    "bw_5": {
+      "boundary_width": 5,
+      "cascade_corr": -0.22017293723993905,
+      "contrast": 1.1955851682367868
+    },
+    "bw_10": {
+      "boundary_width": 10,
+      "cascade_corr": -0.1708135144760525,
+      "contrast": 1.0596229356727838
+    },
+    "bw_20": {
+      "boundary_width": 20,
+      "cascade_corr": -0.13047040673748028,
+      "contrast": 1.0955646261584226
+    },
+    "bw_40": {
+      "boundary_width": 40,
+      "cascade_corr": -0.06146822879179826,
+      "contrast": 1.128460601999669
+    },
+    "bw_80": {
+      "boundary_width": 80,
+      "cascade_corr": -0.03114007054402448,
+      "contrast": 1.2318384002704237
+    },
+    "seed_1": {
+      "seed": 1,
+      "cascade_corr": -0.06934726741675655
+    },
+    "seed_42": {
+      "seed": 42,
+      "cascade_corr": -0.13047040673748028
+    },
+    "seed_137": {
+      "seed": 137,
+      "cascade_corr": -0.06335164725268125
+    },
+    "seed_256": {
+      "seed": 256,
+      "cascade_corr": -0.12116129420338254
+    },
+    "seed_999": {
+      "seed": 999,
+      "cascade_corr": 0.13424622961143076
+    }
+  },
+  "summary": {
+    "gap_closed": "False",
+    "golden_cascade_correlation": 0.10406927415936013,
+    "phi_rank": 2,
+    "fibonacci_best_in_null": true
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "experiment": "exp_02_nuclear_config_space",
+  "milestone": 4,
+  "date": "2026-02-22",
+  "hypothesis": "Energy released = Landauer cost of destroyed configuration space",
+  "part1_config_space": [
+    {
+      "Z": 1,
+      "A": 1,
+      "BE_per_A": 0.0,
+      "log_config_comb": 0.6020599913279624,
+      "level_density_per_A": 9.356469016601148,
+      "near_magic": true,
+      "name": "Z=1,A=1"
+    },
+    {
+      "Z": 1,
+      "A": 2,
+      "BE_per_A": 1.112,
+      "log_config_comb": 1.2041199826559248,
+      "level_density_per_A": 11.812171461008903,
+      "near_magic": true,
+      "name": "Z=1,A=2"
+    },
+    {
+      "Z": 1,
+      "A": 3,
+      "BE_per_A": 2.827,
+      "log_config_comb": 0.6020599913279624,
+      "level_density_per_A": 16.02854279365072,
+      "near_magic": true,
+      "name": "Z=1,A=3"
+    },
+    {
+      "Z": 2,
+      "A": 3,
+      "BE_per_A": 2.573,
+      "log_config_comb": 0.6020599913279624,
+      "level_density_per_A": 16.02854279365072,
+      "near_magic": true,
+      "name": "Z=2,A=3"
+    },
+    {
+      "Z": 2,
+      "A": 4,
+      "BE_per_A": 7.074,
+      "log_config_comb": 0.0,
+      "level_density_per_A": 21.885878114654314,
+      "near_magic": true,
+      "name": "Z=2,A=4"
+    },
+    {
+      "Z": 3,
+      "A": 6,
+      "BE_per_A": 5.332,
+      "log_config_comb": 2.1583624920952498,
+      "level_density_per_A": 39.86369882241898,
+      "near_magic": true,
+      "name": "Z=3,A=6"
+    },
+    {
+      "Z": 3,
+      "A": 7,
+      "BE_per_A": 5.606,
+      "log_config_comb": 2.8573324964312685,
+      "level_density_per_A": 52.99351958230481,
+      "near_magic": true,
+      "name": "Z=3,A=7"
+    },
+    {
+      "Z": 6,
+      "A": 12,
+      "BE_per_A": 7.68,
+      "log_config_comb": 4.760422483423212,
+      "level_density_per_A": 192.68563806591922,
+      "near_magic": true,
+      "name": "Z=6,A=12"
+    },
+    {
+      "Z": 7,
+      "A": 14,
+      "BE_per_A": 7.476,
+      "log_config_comb": 4.566602457407099,
+      "level_density_per_A": 307.21349696013687,
+      "near_magic": true,
+      "name": "Z=7,A=14"
+    },
+    {
+      "Z": 8,
+      "A": 16,
+      "BE_per_A": 7.976,
+      "log_config_comb": 0.0,
+      "level_density_per_A": 478.99166084950474,
+      "near_magic": true,
+      "name": "Z=8,A=16"
+    },
+    {
+      "Z": 12,
+      "A": 24,
+      "BE_per_A": 8.261,
+      "log_config_comb": 7.797450363178987,
+      "level_density_per_A": 2383.6717257067926,
+      "near_magic": false,
+      "name": "Z=12,A=24"
+    },
+    {
+      "Z": 14,
+      "A": 28,
+      "BE_per_A": 8.448,
+      "log_config_comb": 9.543703890407988,
+      "level_density_per_A": 4914.547956010216,
+      "near_magic": false,
+      "name": "Z=14,A=28"
+    },
+    {
+      "Z": 20,
+      "A": 40,
+      "BE_per_A": 8.551,
+      "log_config_comb": 0.0,
+      "level_density_per_A": 34657.040382369574,
+      "near_magic": true,
+      "name": "Z=20,A=40"
+    },
+    {
+      "Z": 26,
+      "A": 56,
+      "BE_per_A": 8.79,
+      "log_config_comb": 6.2190099765462135,
+      "level_density_per_A": 3.2142857142857144,
+      "near_magic": true,
+      "name": "Z=26,A=56"
+    },
+    {
+      "Z": 28,
+      "A": 58,
+      "BE_per_A": 8.732,
+      "log_config_comb": 2.9656719712201065,
+      "level_density_per_A": 428884.68205643515,
+      "near_magic": true,
+      "name": "Z=28,A=58"
+    },
+    {
+      "Z": 28,
+      "A": 62,
+      "BE_per_A": 8.795,
+      "log_config_comb": 6.6789944762071345,
+      "level_density_per_A": 2.4193548387096775,
+      "near_magic": true,
+      "name": "Z=28,A=62"
+    },
+    {
+      "Z": 36,
+      "A": 84,
+      "BE_per_A": 8.717,
+      "log_config_comb": 16.29728957541227,
+      "level_density_per_A": 9464748.143963201,
+      "near_magic": true,
+      "name": "Z=36,A=84"
+    },
+    {
+      "Z": 38,
+      "A": 88,
+      "BE_per_A": 8.733,
+      "log_config_comb": 8.820966552114214,
+      "level_density_per_A": 14633736.626936186,
+      "near_magic": true,
+      "name": "Z=38,A=88"
+    },
+    {
+      "Z": 50,
+      "A": 120,
+      "BE_per_A": 8.505,
+      "log_config_comb": 14.374310079399164,
+      "level_density_per_A": 6.666666666666667,
+      "near_magic": true,
+      "name": "Z=50,A=120"
+    },
+    {
+      "Z": 54,
+      "A": 131,
+      "BE_per_A": 8.424,
+      "log_config_comb": 19.191757258712,
+      "level_density_per_A": 994519695.9492965,
+      "near_magic": false,
+      "name": "Z=54,A=131"
+    },
+    {
+      "Z": 56,
+      "A": 138,
+      "BE_per_A": 8.394,
+      "log_config_comb": 7.7634001978266225,
+      "level_density_per_A": 1853974199.693257,
+      "near_magic": true,
+      "name": "Z=56,A=138"
+    },
+    {
+      "Z": 82,
+      "A": 208,
+      "BE_per_A": 7.867,
+      "log_config_comb": 0.0,
+      "level_density_per_A": 1.9230769230769231,
+      "near_magic": true,
+      "name": "Z=82,A=208"
+    },
+    {
+      "Z": 90,
+      "A": 232,
+      "BE_per_A": 7.615,
+      "log_config_comb": 31.301022850257784,
+      "level_density_per_A": 2667160022288.4175,
+      "near_magic": false,
+      "name": "Z=90,A=232"
+    },
+    {
+      "Z": 92,
+      "A": 235,
+      "BE_per_A": 7.591,
+      "log_config_comb": 33.88321994511263,
+      "level_density_per_A": 21.27659574468085,
+      "near_magic": false,
+      "name": "Z=92,A=235"
+    },
+    {
+      "Z": 92,
+      "A": 238,
+      "BE_per_A": 7.57,
+      "log_config_comb": 36.195679402557396,
+      "level_density_per_A": 16.80672268907563,
+      "near_magic": false,
+      "name": "Z=92,A=238"
+    },
+    {
+      "Z": 94,
+      "A": 239,
+      "BE_per_A": 7.56,
+      "log_config_comb": 36.986795630105405,
+      "level_density_per_A": 4311506448357.1274,
+      "near_magic": false,
+      "name": "Z=94,A=239"
+    },
+    {
+      "Z": 94,
+      "A": 244,
+      "BE_per_A": 7.523,
+      "log_config_comb": 40.40494039812674,
+      "level_density_per_A": 6051517408542.633,
+      "near_magic": false,
+      "name": "Z=94,A=244"
+    }
+  ],
+  "part2_be_vs_ld": {
+    "spearman_rho": -0.6,
+    "spearman_p": 0.20799999999999985,
+    "pearson_r": -0.7551962787094861,
+    "anti_correlated": "True"
+  },
+  "part3_curve": {
+    "spearman_rho": -0.4170394165287862,
+    "n_nuclides": 23
+  },
+  "part4_fission": {
+    "macro_bits": 5.906890595608519,
+    "micro_bits": 19.111461739857724,
+    "naive_cost_MeV": 1.1415429475491368,
+    "actual_energy_MeV": 200.0,
+    "amplification_from_micro": 175.2014678286041,
+    "known_8mode_amplification": 53
+  },
+  "part5_decay": {
+    "spearman_rho": 0.5131277548178216,
+    "spearman_p": 0.05044517714525755,
+    "n_nuclides": 15
+  },
+  "part6_fe56": {
+    "be_per_A": 8.79,
+    "near_peak": true,
+    "near_doubly_magic": true,
+    "no_accessible_decays": true
+  },
+  "falsification_conditions": [
+    "If binding energy does NOT anti-correlate with configuration space",
+    "If Fe-56 does NOT minimize accessible configuration space",
+    "If amplification factor is unphysical (> 10\u2076)"
+  ]
+}
