@@ -1,0 +1,12 @@
+{
+  "void_final_potential": 9.313225746154793e-10,
+  "dense_cumulative_xi": 0.009184364829440739,
+  "dense_generations": 30,
+  "coverage_ratio_composite_to_prime": Infinity,
+  "coverage_ttest_p": 7.741893158418908e-12,
+  "best_alpha": 0.1,
+  "fib_cascade_late_ratio": 0.6003191637334464,
+  "prime_gaps_exact_fib_fraction": 0.251628664495114,
+  "prime_gaps_near_fib_fraction": 0.8143322475570033,
+  "gaps_mod_phi_chi2_p": 0.0
+}

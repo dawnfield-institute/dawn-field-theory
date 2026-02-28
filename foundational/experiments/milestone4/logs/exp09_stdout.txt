@@ -1,0 +1,14 @@
+======================================================================
+EXP_09: Derivation Chain -- From PAC to Particle Masses
+======================================================================
+  Grid: N=600, dx=0.2
+  Link 1: Fibonacci matrix uniqueness
+    2 solutions, all eigenvalue = phi: True
+  Link 2: Cascade -> geometric decay
+    Growth ratio converges to phi: True
+    Final ratio: 1.6180338134 (phi = 1.6180339887)
+  Link 3: Potential shape from cascade
+    Derived vs golden max difference: 7.11e-15
+    Functionally identical: True
+  Link 4: Mass ratio optimization
+    Optimization start 1/8: g=10.0, w0=1.0
