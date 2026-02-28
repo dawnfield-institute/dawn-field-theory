@@ -67,7 +67,7 @@ The Cognition Index Protocol (CIP) is not merely a validation framework—it is 
 
 If you are a researcher, theorist, experimentalist, or curious mind and you feel compelled to engage:
 
-* Read the [README.md](./README.md) and [meta.yaml](./.cip/meta.yaml)
+* Read the [README.md](./README.md) and the root [meta.yaml](./meta.yaml)
 * Explore the visual and symbolic architecture of the repository
 * Review the theory, critique its assumptions, propose refinements
 
