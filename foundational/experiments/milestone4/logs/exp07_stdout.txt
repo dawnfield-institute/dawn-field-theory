@@ -1,0 +1,138 @@
+======================================================================
+EXP_07: Herniation Boundary — Derived Potential from Paper 1 Cascade
+======================================================================
+  phi = 1.6180339887
+  Xi = 1.0584274900
+  ln(phi) = 0.4812118251
+  Grid: N=600, dx=0.2, range=[-60.0, 59.8]
+======================================================================
+PART A: Fibonacci Matrix Uniqueness Proof
+======================================================================
+
+  Solutions found: 2
+  [0 1]  det=-1  lam_max=1.618034  |lam-phi|=0.00e+00
+  [1 1]
+  [1 1]  det=-1  lam_max=1.618034  |lam-phi|=0.00e+00
+  [1 0]
+
+  All dominant eigenvalues = phi? True
+  Fibonacci matrix is UNIQUE solution: True
+
+======================================================================
+PART D: Mass Ratio Matching from Derived Potential
+======================================================================
+  Progress: 300/3060
+  Progress: 600/3060
+  Progress: 900/3060
+  Progress: 1200/3060
+  Progress: 1500/3060
+  Progress: 1800/3060
+  Progress: 2100/3060
+  Progress: 2400/3060
+  Progress: 2700/3060
+  Progress: 3000/3060
+
+  Tested 3060 configurations
+
+  --- LEPTON (e:μ:τ) ---
+  Target: [1.0000e+00 2.0677e+02 3.4772e+03]
+  Best: score=0.0000, n_lev=18, g=11.86, w0=0.30
+  Ratios: ['1.0', '207.6', '3483.8']
+  Errors: ['0.0%', '0.4%', '0.2%']
+  Indices: (2, 15, 40), n_bound=41
+
+  --- DOWN QUARK (d:s:b) ---
+  Target: [  1.   20.  895.1]
+  Best: score=0.0000, n_lev=5, g=3.71, w0=3.33
+  Ratios: ['1.0', '20.0', '894.8']
+  Errors: ['0.0%', '0.1%', '0.0%']
+  Indices: (4, 38, 45), n_bound=46
+
+  --- UP QUARK (u:c:t) ---
+  Target: [1.00000e+00 5.87960e+02 7.98611e+04]
+  Best: score=0.0015, n_lev=6, g=9.14, w0=1.98
+  Ratios: ['1.0', '566.3', '80767.8']
+  Errors: ['0.0%', '3.7%', '1.1%']
+  Indices: (1, 51, 58), n_bound=59
+
+======================================================================
+PART E: Null Test — Random Potentials
+======================================================================
+  Valid random trials: 983
+
+  Lepton null distribution:
+    Mean: 3.2084
+    Std:  5.9438
+    Min:  0.0000
+    5th percentile: 0.0026
+
+  Down-quark null distribution:
+    Mean: 1.1195
+    Std:  3.3074
+    Min:  0.0000
+
+======================================================================
+PART F: Parameter Sensitivity Analysis
+======================================================================
+
+  Best config: g=11.86, w0=0.30, n_levels=18
+  g robustness: 10% of sweep within 2× best score
+  w0 robustness: 7% of sweep within 2× best score
+  Good g range: [12.39, 23.43]
+  Good w0 range: [0.30, 0.51]
+
+  Verdict: SENSITIVE
+
+======================================================================
+PART G: Gap Structure & PAC Constants
+======================================================================
+
+  Bound states: 41
+  Energy range: [-25.4553, -0.002937]
+
+  Gap ratio statistics (n=39):
+    Mean: 1.1879
+    Std:  0.2158
+    Range: [0.9015, 1.7458]
+
+  PAC constant proximity (within 5%):
+    1: 5/39 = 13%
+    Ξ: 4/39 = 10%
+    4/π: 4/39 = 10%
+    φ: 1/39 = 3%
+
+  Gaps in Landauer units (kT ln 2):
+    First 5: ['13.435', '8.529', '4.885', '2.833', '1.825']
+    Mean: 0.918
+
+  Generation boundaries (gaps > 2× mean):
+    Found: 4
+    Between levels 0 and 1: gap=9.3122 (14.6× mean)
+    Between levels 1 and 2: gap=5.9115 (9.3× mean)
+    Between levels 2 and 3: gap=3.3862 (5.3× mean)
+    Between levels 3 and 4: gap=1.9639 (3.1× mean)
+
+  Wavefunction properties:
+    Level 0: E=-25.4553, extent=0.22, KE/PE=0.090
+    Level 10: E=-1.2386, extent=5.87, KE/PE=0.493
+    Level 20: E=-0.3602, extent=20.01, KE/PE=0.504
+    Level 30: E=-0.1654, extent=41.48, KE/PE=0.531
+    Level 40: E=-0.0029, extent=39.34, KE/PE=0.994
+
+======================================================================
+PART H: Derivation Chain Assessment
+======================================================================
+
+  Step                                                      Pass         Type
+  ---------------------------------------------------------------------------
+  Fibonacci uniqueness → φ                                ✓ PASS    algebraic
+  φ-scaling → cascade potential                           ✓ PASS      derived
+  Potential → lepton ratios (<1.0 score)                  ✓ PASS    numerical
+  Beats random null (ours=0.000 vs null_min=0.000)        ✗ FAIL  statistical
+  Parameter-robust (not fine-tuned)                       ✗ FAIL  sensitivity
+
+  Verdict: CHAIN INCOMPLETE (3/5 steps)
+
+  Total time: 754.3s
+
+Results saved: C:\Users\peter\repos\Dawn Field Institute\internal\milestone4\results\exp_07_herniation_derived_potential_20260225_022353.json

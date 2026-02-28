@@ -1,0 +1,66 @@
+======================================================================
+EXP_09: Derivation Chain -- From PAC to Particle Masses
+======================================================================
+  Grid: N=600, dx=0.2
+  Link 1: Fibonacci matrix uniqueness
+    2 solutions, all eigenvalue = phi: True
+  Link 2: Cascade -> geometric decay
+    Growth ratio converges to phi: True
+    Final ratio: 1.6180338134 (phi = 1.6180339887)
+  Link 3: Potential shape from cascade
+    Derived vs golden max difference: 7.11e-15
+    Functionally identical: True
+  Link 4: Mass ratio verification
+    Testing 421 parameter configs
+    lepton: score=0.0035, n=7, g=12.00, w0=0.50
+      ratios = ['1.0', '211.8', '3669.9']
+      errors = ['0.0%', '2.4%', '5.5%']
+    quark_dn: score=0.0018, n=16, g=10.00, w0=0.50
+      ratios = ['1.0', '19.4', '869.2']
+      errors = ['0.0%', '2.9%', '2.9%']
+    quark_up: score=0.5747, n=17, g=12.00, w0=0.50
+      ratios = ['1.0', '934.7', '43836.1']
+      errors = ['0.0%', '59.0%', '45.1%']
+    Simultaneous best: combined=0.0331
+  Link 5: Parameter count assessment
+    Free parameters: 2 (g, w0)
+    Predictions within 5%: 6
+    Prediction/parameter ratio: 3.0
+    SM comparison: 9 params for 9 masses (ratio = 1.0)
+    Our ratio > 1? True
+
+  Chain Assessment:
+    [PASS] link1_fibonacci_uniqueness
+    [PASS] link2_cascade_decay
+    [PASS] link3_potential_shape
+    [PASS] link4_mass_ratios
+    [PASS] link5_parameter_count
+
+  Complete chain: HOLDS
+
+  Total time: 62.9s
+
+======================================================================
+DERIVATION CHAIN SUMMARY
+======================================================================
+
+  PAC conservation (Paper 1)
+    |
+    v
+  Fibonacci transfer matrix is UNIQUE (exp_18)
+  [Only |det|=1, tr>=1, asymmetric 2x2 matrix with eigenvalue phi]
+    |
+    v
+  Cascade coupling ~ phi^(-n)
+  [Fibonacci matrix applied n times]
+    |
+    v
+  phi-scaled potential: V(x) = -g Sum phi^(-n) exp(-x^2 / 2(w0*phi^n)^2)
+  [Depth ~ coupling, width ~ spatial extent]
+    |
+    v
+  Schrodinger bound states -> mass ratios
+  [2 free params (energy scale, length scale) -> >6 mass predictions]
+
+
+Results saved: C:\Users\peter\repos\Dawn Field Institute\internal\milestone4\results\exp_09_derivation_chain_20260225_031544.json

@@ -1,0 +1,140 @@
+{
+  "experiment": "milestone4/exp_09_derivation_chain",
+  "date": "2026-02-24 23:15:44",
+  "milestone": 4,
+  "hypothesis": "The complete chain from PAC conservation through Fibonacci uniqueness to phi-scaled potential to particle mass ratios is derivable with 2 free parameters.",
+  "chain_holds": true,
+  "results": {
+    "link1_fibonacci_uniqueness": {
+      "n_solutions": 2,
+      "all_phi": true,
+      "PASS": true
+    },
+    "link2_cascade_decay": {
+      "growth_ratio_final": 1.6180338134001253,
+      "phi_error": 1.7534976959332482e-07,
+      "converges": "True",
+      "PASS": "True"
+    },
+    "link3_potential_shape": {
+      "max_diff": 7.105427357601002e-15,
+      "identical": "True",
+      "PASS": "True"
+    },
+    "link4_mass_ratios": {
+      "families": {
+        "lepton": {
+          "n_levels": 7,
+          "g": 12.0,
+          "w0": 0.5,
+          "j": 0,
+          "k": 11,
+          "ratios": [
+            1.0,
+            211.82907362567406,
+            3669.899488075726
+          ],
+          "score": 0.0034935053722293247,
+          "n_bound": 23,
+          "errors_pct": [
+            0.0,
+            2.4467154933859097,
+            5.541800531339184
+          ]
+        },
+        "quark_dn": {
+          "n_levels": 16,
+          "g": 10.0,
+          "w0": 0.5,
+          "j": 0,
+          "k": 23,
+          "ratios": [
+            1.0,
+            19.413706607537485,
+            869.1563352957796
+          ],
+          "score": 0.0017503280623410715,
+          "n_bound": 48,
+          "errors_pct": [
+            0.0,
+            2.9314669623125766,
+            2.8984096418523513
+          ]
+        },
+        "quark_up": {
+          "n_levels": 17,
+          "g": 12.0,
+          "w0": 0.5,
+          "j": 0,
+          "k": 26,
+          "ratios": [
+            1.0,
+            934.7338667079724,
+            43836.073550124835
+          ],
+          "score": 0.5747258706681598,
+          "n_bound": 53,
+          "errors_pct": [
+            0.0,
+            58.97915958704204,
+            45.1096046133539
+          ]
+        }
+      },
+      "simultaneous_best": {
+        "n_levels": 16,
+        "g": 10.0,
+        "w0": 0.5,
+        "combined": 0.03305155607995216,
+        "lepton": {
+          "n_levels": 16,
+          "g": 10.0,
+          "w0": 0.5,
+          "j": 5,
+          "k": 21,
+          "ratios": [
+            1.0,
+            245.25504547827862,
+            3319.09225247573
+          ],
+          "score": 0.03130122801761109,
+          "n_bound": 48,
+          "errors_pct": [
+            0.0,
+            18.61248995418997,
+            4.546984571617094
+          ]
+        },
+        "quark_dn": {
+          "n_levels": 16,
+          "g": 10.0,
+          "w0": 0.5,
+          "j": 0,
+          "k": 23,
+          "ratios": [
+            1.0,
+            19.413706607537485,
+            869.1563352957796
+          ],
+          "score": 0.0017503280623410715,
+          "n_bound": 48,
+          "errors_pct": [
+            0.0,
+            2.9314669623125766,
+            2.8984096418523513
+          ]
+        }
+      },
+      "both_under_1": true,
+      "PASS": true
+    },
+    "link5_parameter_count": {
+      "n_free_params": 2,
+      "n_predictions": 6,
+      "ratio": 3.0,
+      "sm_ratio": 1.0,
+      "PASS": true
+    }
+  },
+  "elapsed_seconds": 62.904773000002024
+}

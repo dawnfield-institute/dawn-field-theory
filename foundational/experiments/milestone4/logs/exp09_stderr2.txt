@@ -1,0 +1,2 @@
+C:\Users\peter\repos\Dawn Field Institute\internal\milestone4\scripts\exp_09_derivation_chain.py:132: RuntimeWarning: divide by zero encountered in divide
+  decay_test = amplitudes[1:] / amplitudes[:-1]

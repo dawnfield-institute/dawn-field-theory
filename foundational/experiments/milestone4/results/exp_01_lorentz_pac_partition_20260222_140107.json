@@ -1,0 +1,129 @@
+{
+  "experiment": "exp_01_lorentz_pac_partition",
+  "milestone": 4,
+  "date": "2026-02-22",
+  "hypothesis": "Lorentz factor is PAC energy partition",
+  "part1_algebraic": {
+    "n_velocities_tested": 200,
+    "max_deviation": 0.0,
+    "identity_holds": true
+  },
+  "part2_cascade_linearity": {
+    "r_squared": 0.7293614881404524,
+    "slope": 0.5029081542127388,
+    "p_value": 4.770875119236062e-12,
+    "linear": "False"
+  },
+  "part3_time_dilation": [
+    {
+      "v": 0.0,
+      "gamma": 1.0,
+      "gr_time_rate": 1.0,
+      "pac_time_rate": 1.0,
+      "ratio": 1.0
+    },
+    {
+      "v": 0.1,
+      "gamma": 1.005037815259212,
+      "gr_time_rate": 0.99498743710662,
+      "pac_time_rate": 0.9949874371066199,
+      "ratio": 0.9999999999999999
+    },
+    {
+      "v": 0.3,
+      "gamma": 1.0482848367219182,
+      "gr_time_rate": 0.9539392014169458,
+      "pac_time_rate": 0.9539392014169457,
+      "ratio": 0.9999999999999999
+    },
+    {
+      "v": 0.5,
+      "gamma": 1.1547005383792517,
+      "gr_time_rate": 0.8660254037844385,
+      "pac_time_rate": 0.8660254037844385,
+      "ratio": 1.0
+    },
+    {
+      "v": 0.7,
+      "gamma": 1.4002800840280099,
+      "gr_time_rate": 0.714142842854285,
+      "pac_time_rate": 0.714142842854285,
+      "ratio": 1.0
+    },
+    {
+      "v": 0.8,
+      "gamma": 1.666666666666667,
+      "gr_time_rate": 0.5999999999999999,
+      "pac_time_rate": 0.5999999999999999,
+      "ratio": 1.0
+    },
+    {
+      "v": 0.9,
+      "gamma": 2.294157338705618,
+      "gr_time_rate": 0.4358898943540673,
+      "pac_time_rate": 0.43588989435406733,
+      "ratio": 1.0000000000000002
+    },
+    {
+      "v": 0.95,
+      "gamma": 3.202563076101742,
+      "gr_time_rate": 0.31224989991991997,
+      "pac_time_rate": 0.31224989991991997,
+      "ratio": 1.0
+    },
+    {
+      "v": 0.99,
+      "gamma": 7.088812050083354,
+      "gr_time_rate": 0.14106735979665894,
+      "pac_time_rate": 0.14106735979665894,
+      "ratio": 1.0
+    },
+    {
+      "v": 0.999,
+      "gamma": 22.36627204212937,
+      "gr_time_rate": 0.04471017781221601,
+      "pac_time_rate": 0.04471017781221602,
+      "ratio": 1.0000000000000002
+    }
+  ],
+  "part4_null_tests": {
+    "A) Linear (1-v)": {
+      "ss_residual": 5.050970059899999,
+      "rms": 0.6776275498786523
+    },
+    "B) Quadratic (1-v\u00b2)": {
+      "ss_residual": 3.4967477699132203,
+      "rms": 0.5638139417407145
+    },
+    "C) Cubic (1-v)^1.5": {
+      "ss_residual": 6.602045506893739,
+      "rms": 0.7747166934900513
+    },
+    "D) PAC/Lorentz \u221a(1-v\u00b2)": {
+      "ss_residual": 2.1237737632708834e-06,
+      "rms": 0.00043939770381231497
+    }
+  },
+  "part5_mode_collapse": {
+    "landauer_min": 0.6931471805599453,
+    "threshold_energy": 0.7232633896483537,
+    "threshold_match_pct": 4.344850550222192
+  },
+  "pass_criteria": {
+    "algebraic_identity": true,
+    "cascade_linearity": "False",
+    "uniqueness": true,
+    "mode_threshold": "True"
+  },
+  "falsification_conditions": [
+    "If cascade throughput is NOT proportional to E_internal",
+    "If alternative partition models match equally well",
+    "If mode collapse is not a clean step function at kT ln 2"
+  ],
+  "connections": {
+    "milestone1_exp14": "c from SEC wave equation",
+    "euclidean_exp06": "E=mc\u00b2 in embedding space",
+    "landauer_erasure": "kT ln 2 as generative floor",
+    "pac_relativity_v2": "Exploratory session (today)"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "cascade_ratio_gap": {
+    "observed": 0.6,
+    "target": 0.6180339887498948,
+    "gap": 0.018,
+    "w2_needed": 0.011145618000168223
+  },
+  "power_law": {
+    "alpha": 0.16230210990168983,
+    "R_squared": 0.9782310532797606,
+    "C": 0.559157886920963
+  },
+  "primality_prediction": {
+    "best_f1": 0.36242996166322616,
+    "best_threshold": 4.22837207785463e-90,
+    "best_precision": 0.22132180803169457,
+    "best_recall": 1.0
+  },
+  "interference": {
+    "pearson_r": 0.15074481763298742,
+    "pearson_p": 1.1113792878245504e-07,
+    "spearman_r": 0.10689964362866733,
+    "gradient_mean": 0.006229258260154924
+  }
+}
