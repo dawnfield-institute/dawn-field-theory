@@ -150,9 +150,9 @@ Please read:
 * The latest `timeline.md`
 * [`LICENSE_APPENDIX.md`](./LICENSE_APPENDIX.md)
 
-### 2. Respect CIP and Metadata Schema
+### 2. Respect Metadata Schema
 
-Every directory and experiment follows a schema (see `.cip/meta.yaml` and `.cip/instructions_v2.0.yaml`). Changes should preserve or extend the semantic integrity of these files.
+Every directory and experiment follows a metadata schema (see `meta.yaml` files). Changes should preserve or extend the semantic integrity of these files.
 
 ### 3. Submit Meaningful Contributions
 
