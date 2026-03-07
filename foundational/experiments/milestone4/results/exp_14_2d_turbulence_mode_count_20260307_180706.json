@@ -1,0 +1,209 @@
+{
+  "experiment": "exp_14_2d_turbulence_mode_count",
+  "milestone": 4,
+  "block": "D (Cross-Validation)",
+  "date": "2026-03-07",
+  "hypothesis": "Same cascade engine recovers 2D turbulence exponents with only mode count changed",
+  "parameters": {
+    "coupling_decay": 0.1,
+    "nonlinear_strength": 0.3,
+    "n_samples": 15000,
+    "n_scales": 25,
+    "n_seeds": 20
+  },
+  "part_a_baseline": [
+    {
+      "n_modes": 2,
+      "exponent": -3.5949369325318266,
+      "r2": 0.9999918482148793,
+      "org_frac": 0.9159404541063374,
+      "diff_from_53": 1.9282702658651598
+    },
+    {
+      "n_modes": 3,
+      "exponent": -2.839452597810985,
+      "r2": 0.9999976922714207,
+      "org_frac": 0.8575284123261806,
+      "diff_from_53": 1.172785931144318
+    },
+    {
+      "n_modes": 4,
+      "exponent": -2.42036064567496,
+      "r2": 0.9999986375112331,
+      "org_frac": 0.8095295542135355,
+      "diff_from_53": 0.753693979008293
+    },
+    {
+      "n_modes": 6,
+      "exponent": -1.9218419779083225,
+      "r2": 0.9999974420463111,
+      "org_frac": 0.7309091817693321,
+      "diff_from_53": 0.2551753112416557
+    },
+    {
+      "n_modes": 8,
+      "exponent": -1.6083405150681953,
+      "r2": 0.999996554893448,
+      "org_frac": 0.6660399464107428,
+      "diff_from_53": 0.05832615159847143
+    },
+    {
+      "n_modes": 12,
+      "exponent": -1.232396064026534,
+      "r2": 0.9999957989356258,
+      "org_frac": 0.5661362662724474,
+      "diff_from_53": 0.43427060264013284
+    },
+    {
+      "n_modes": 16,
+      "exponent": -1.0029778555264885,
+      "r2": 0.9999891256204163,
+      "org_frac": 0.49095491687800014,
+      "diff_from_53": 0.6636888111401782
+    },
+    {
+      "n_modes": 24,
+      "exponent": -0.7338270467982276,
+      "r2": 0.9999846277297745,
+      "org_frac": 0.3859661046327835,
+      "diff_from_53": 0.9328396198684391
+    },
+    {
+      "n_modes": 32,
+      "exponent": -0.5755875056106643,
+      "r2": 0.9999844049414522,
+      "org_frac": 0.31555866211603256,
+      "diff_from_53": 1.0910791610560024
+    }
+  ],
+  "part_b_enstrophy": [
+    {
+      "n_modes": 2,
+      "mean_exponent": -3.600689896902677,
+      "std_exponent": 0.0066213314441735645,
+      "mean_org_frac": 0.9160097163917944,
+      "diff_from_3": 0.600689896902677,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 3,
+      "mean_exponent": -2.839549991125808,
+      "std_exponent": 0.006164561748260671,
+      "mean_org_frac": 0.8575636538287975,
+      "diff_from_3": 0.16045000887419203,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 4,
+      "mean_exponent": -2.4282896300985226,
+      "std_exponent": 0.005164571263639248,
+      "mean_org_frac": 0.8105374872676843,
+      "diff_from_3": 0.5717103699014774,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 5,
+      "mean_exponent": -2.135194893239309,
+      "std_exponent": 0.0033213100926795603,
+      "mean_org_frac": 0.7679112606989884,
+      "diff_from_3": 0.864805106760691,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 6,
+      "mean_exponent": -1.923497257857878,
+      "std_exponent": 0.005372807198412876,
+      "mean_org_frac": 0.731368462080288,
+      "diff_from_3": 1.076502742142122,
+      "n_valid": 20
+    }
+  ],
+  "part_c_inverse": [
+    {
+      "n_modes": 6,
+      "mean_exponent": -1.923497257857878,
+      "std_exponent": 0.005372807198412876,
+      "mean_org_frac": 0.731368462080288,
+      "diff_from_53": 0.2568305911912112,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 7,
+      "mean_exponent": -1.7501427878745752,
+      "std_exponent": 0.004279902750086288,
+      "mean_org_frac": 0.6968434877358147,
+      "diff_from_53": 0.08347612120790848,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 8,
+      "mean_exponent": -1.612608473080217,
+      "std_exponent": 0.0031698905827200357,
+      "mean_org_frac": 0.6664155068479484,
+      "diff_from_53": 0.0540581935864497,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 9,
+      "mean_exponent": -1.4944916090872777,
+      "std_exponent": 0.004169466040507088,
+      "mean_org_frac": 0.6380297660908518,
+      "diff_from_53": 0.172175057579389,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 10,
+      "mean_exponent": -1.3939559311640655,
+      "std_exponent": 0.002863738335830116,
+      "mean_org_frac": 0.6119752169831595,
+      "diff_from_53": 0.2727107355026013,
+      "n_valid": 20
+    },
+    {
+      "n_modes": 12,
+      "mean_exponent": -1.2319059009221867,
+      "std_exponent": 0.0033514013346791108,
+      "mean_org_frac": 0.5656164215661288,
+      "diff_from_53": 0.4347607657444801,
+      "n_valid": 20
+    }
+  ],
+  "part_d_org_fracs": {
+    "3D": {
+      "mode_count": 8,
+      "target_exp": -1.6666666666666667,
+      "mean_org": 0.6664525204130202,
+      "std_org": 0.0006866883893106054
+    },
+    "2D_enstrophy": {
+      "mode_count": 3,
+      "target_exp": -3.0,
+      "mean_org": 0.8574395863249488,
+      "std_org": 0.0005132176230457015
+    },
+    "2D_inverse": {
+      "mode_count": 8,
+      "target_exp": -1.6666666666666667,
+      "mean_org": 0.6664525204130202,
+      "std_org": 0.0006866883893106054
+    }
+  },
+  "summary": {
+    "3d_mode_count": 8,
+    "3d_exponent": -1.6083405150681953,
+    "3d_deviation": 0.05832615159847143,
+    "2d_enstrophy_mode_count": 3,
+    "2d_enstrophy_exponent": -2.839549991125808,
+    "2d_enstrophy_deviation": 0.16045000887419203,
+    "2d_inverse_mode_count": 8,
+    "2d_inverse_exponent": -1.612608473080217,
+    "2d_inverse_deviation": 0.0540581935864497
+  },
+  "verdict": "PASS",
+  "explanation": "The PAC cascade engine recovers BOTH 2D turbulence exponents with the same physics, no re-tuning.",
+  "falsification_conditions": [
+    "PASS if both 2D exponents recovered with no re-tuning",
+    "PARTIAL if only one 2D exponent recovered",
+    "FAIL if cascade engine cannot reproduce 2D turbulence"
+  ]
+}
