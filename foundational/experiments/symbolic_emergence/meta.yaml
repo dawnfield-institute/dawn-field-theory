@@ -13,6 +13,7 @@ semantic_scope:
 - agent_interaction
 - symbolic_roles
 files:
-- '[id][S][v1.0][C3][I1][A]_symbolic_emergence.py'
-- results.md
-child_directories: []
+- README.md
+child_directories:
+- results
+- scripts

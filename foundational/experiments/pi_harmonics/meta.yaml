@@ -9,8 +9,9 @@ semantic_scope:
 - experiments
 - foundational
 files:
-- pi_harmonics.py
+- README.md
 - pi_harmonics.yaml
-- results.md
 child_directories:
 - reference_material
+- results
+- scripts

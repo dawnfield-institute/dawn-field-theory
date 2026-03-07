@@ -8,7 +8,8 @@ description: Experiments and reference outputs for entropy-based language-to-log
 schema_version: dawn_field_schema_v1.1
 status: ACTIVE
 files:
-- language_to_logic.py
-- results.md
+- README.md
 child_directories:
 - reference_material
+- results
+- scripts

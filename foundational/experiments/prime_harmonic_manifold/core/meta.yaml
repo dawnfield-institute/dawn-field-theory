@@ -1,9 +1,9 @@
-schema_version: "2.0"
-description: "Core implementation modules for Prime Harmonic Manifold"
-semantic_scope: "implementation"
-proficiency_level: "research"
-
+schema_version: '2.0'
+description: Core implementation modules for Prime Harmonic Manifold
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[prime_chords.py]": "Chord extraction and transition matrix construction"
-  - "[analysis.py]": "Autocorrelation, entropy, Fibonacci, PAC depth utilities"
-  - "[visualization.py]": "Plotting functions for heatmaps, spectra, convergence"
+- analysis.py
+- prime_chords.py
+- visualization.py
+child_directories: []

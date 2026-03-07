@@ -1,43 +1,45 @@
-﻿schema_version: "2.0"
-slug: "dawn_field_theory_infodynamics"
-title: "Collapse as Crystallization: Infodynamics, Recursive Balance, and Dawn Field Theory"
-category: "id"
-status: "Draft"
-version: "2.1"
+schema_version: '2.0'
+slug: dawn_field_theory_infodynamics
+title: 'Collapse as Crystallization: Infodynamics, Recursive Balance, and Dawn Field
+  Theory'
+category: id
+status: Draft
+version: '2.1'
 complexity: 5
 impact: 5
-evidence_type: "R"
-created: "2025-12-20T11:18:55.988928"
-updated: "2025-12-23"
-
-original_filename: "[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md"
-source_location: "drafts"
-
+evidence_type: R
+created: '2025-12-20T11:18:55.988928'
+updated: '2025-12-23'
+original_filename: '[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md'
+source_location: drafts
 files:
-  paper: "paper.md"
-  latex: "paper.tex"
-  pdf: "paper.pdf"
-
+- CITATION.md
+- LICENSE
+- README.md
+- UNIFIED_EVIDENCE.md
+- paper.md
 code:
   has_experiments: true
-  trace_file: "Code/trace.yaml"
+  trace_file: Code/trace.yaml
   experiments:
-    - exp_01_brain_recursive_collapse.py: "CIM-era brain simulation (CUDA required)"
-    - exp_02_cosmo_entropic_crystallization.py: "Cosmological entropy crystallization (CUDA required)"
-    - exp_03_vcpu_emergent_logic.py: "vCPU emergent logic (verified)"
-    - exp_03_symbolic_entropy_collapse.py: "SEC dynamics engine"
-    - exp_05_quantum_validator.py: "Born rule compliance validation module"
-  verification_date: "2025-12-23"
-  hardware_requirements: "CUDA-capable GPU for legacy experiments"
+  - exp_01_brain_recursive_collapse.py: CIM-era brain simulation (CUDA required)
+  - exp_02_cosmo_entropic_crystallization.py: Cosmological entropy crystallization
+      (CUDA required)
+  - exp_03_vcpu_emergent_logic.py: vCPU emergent logic (verified)
+  - exp_03_symbolic_entropy_collapse.py: SEC dynamics engine
+  - exp_05_quantum_validator.py: Born rule compliance validation module
+  verification_date: '2025-12-23'
+  hardware_requirements: CUDA-capable GPU for legacy experiments
   key_results:
-    - "vCPU I/O encoding: bit 0 collapse ~223, bit 1 collapse ~3.5"
-    - "Multi-cycle QPL field updates demonstrated"
-    - "Quantum validation module for Born rule compliance"
-  
+  - 'vCPU I/O encoding: bit 0 collapse ~223, bit 1 collapse ~3.5'
+  - Multi-cycle QPL field updates demonstrated
+  - Quantum validation module for Born rule compliance
 keywords:
-  - Dawn Field Theory
-  - Infodynamics
-  - Symbolic Entropy Collapse
-  - Recursive Balance Field
-  - Information Crystallization
-  - CIM Legacy
+- Dawn Field Theory
+- Infodynamics
+- Symbolic Entropy Collapse
+- Recursive Balance Field
+- Information Crystallization
+- CIM Legacy
+child_directories:
+- Code

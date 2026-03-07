@@ -1,17 +1,10 @@
-schema_version: "2.0"
-description: "Experiment scripts with built-in tracing"
-semantic_scope: "experimental_validation"
-proficiency_level: "research"
-
+schema_version: '2.0'
+description: Experiment scripts with built-in tracing
+semantic_scope: experimental_validation
+proficiency_level: research
 files:
-  - "[exp_01_baseline_validation.py]": "Reproduce original SEC enrichment claims"
-  - "[exp_02_factor_base_independence.py]": "Critical independence test"
-  - "exp_03_pac_sec_unification.py": "PAC-SEC duality tests"
-  - "exp_04_robustness_tests.py": "Scale, λ, window sensitivity"
-  - "[exp_05_fibonacci_resonance.py]": "Key discovery - Fibonacci cascade"
-  - "[exp_06_large_scale_verification.py]": "n=10⁷ confirmation"
-  - "exp_07_visualizations.py": "Publication figures"
-  - "run_all_experiments.py": "Master runner"
-
-trace_format: "JSON with timestamp, git commit, parameters, results, validation"
-output_directory: "../results/"
+- exp_01_unified_amplification.py
+- exp_32_phi_attractor_20251210_163903.json
+trace_format: JSON with timestamp, git commit, parameters, results, validation
+output_directory: ../results/
+child_directories: []
