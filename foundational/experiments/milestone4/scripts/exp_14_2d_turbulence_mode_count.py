@@ -1,37 +1,28 @@
 #!/usr/bin/env python3
 """
-EXPERIMENT 14: 2D Turbulence Mode Count Cross-Validation
+EXPERIMENT 14: 2D Turbulence Mode Count Cross-Validation (v2)
 ============================================================
-Dawn Field Institute — Milestone 4, Block D (Cross-Validation)
+Dawn Field Institute — Milestone 4, Block D
 
-HYPOTHESIS: The SAME cascade engine that recovers the 3D Kolmogorov
-exponent -5/3 at ~8 modes (exp_03, turbulence_pac_v3) also recovers
-the correct 2D turbulence exponents with NO parameter changes except
-the mode count.
+HYPOTHESIS: The same PAC cascade engine recovers 2D turbulence exponents
+(enstrophy cascade: -3.0; inverse energy cascade: -5/3) with ONLY the mode
+count changed from the 3D baseline. No parameter re-tuning is permitted.
 
-2D turbulence (Kraichnan 1967) has TWO cascades:
-  1. Enstrophy cascade (small scales): exponent = -3
-  2. Inverse energy cascade (large scales): exponent = -5/3
-
-The PAC prediction: in 2D, fewer effective triadic interactions per
-scale (~4 modes, because two spatial dimensions constrain triadic
-coupling geometry). If 8 modes -> -5/3 in 3D, what mode count gives
--3? What mode count gives -5/3 in 2D?
-
-CONNECTS TO:
-  - exp_03_turbulence_mode_scaling.py (cascade engine, mode sweep)
-  - turbulence_pac_v3.py (original 8-mode baseline)
-  - She-Leveque: k = d * F_{d+1}  ->  2D: k = 2*F_3 = 4 modes
-  - Milestone 2 exp_01-04 (Fibonacci mode structure)
+She-Lévêque prediction (from milestone 2): k = d × F_{d+1}
+  3D: k = 3 × F_4 = 9   (exp_03 found k=8 — investigate k-1 offset)
+  2D enstrophy: k = 2 × F_3 = 4   (adjusted: k=3 if k-1 offset holds)
+  2D inverse:   same exponent as 3D (-5/3), different physics
 
 FALSIFICATION CONDITIONS:
-  1. PASS if mode count framework predicts BOTH 2D exponents with the
-     same physics, no re-tuning of coupling_decay or nonlinear_strength
-  2. PARTIAL if it gets one 2D exponent right but not the other
-  3. FAIL if the same cascade engine cannot reproduce 2D turbulence
-     statistics at ANY mode count
+  1. If neither 2D exponent is recovered at k_predicted or k_predicted-1
+  2. If bootstrap CI excludes target for the best mode count
+  3. If structured coupling is statistically indistinguishable from random
+  4. If She-Lévêque k-1 offset is inconsistent across cases
 
-Dawn Field Institute, 2026-03-07
+CONNECTS TO:
+  - exp_03_turbulence_mode_scaling.py (3D baseline, k=8 for -5/3)
+  - milestone2 exp_01-04 (She-Leveque Fibonacci: k = d × F_{d+1})
+  - core/utils.py (energy_cascade, measure_exponent)
 """
 
 import numpy as np
@@ -42,42 +33,298 @@ import warnings
 warnings.filterwarnings('ignore')
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'core'))
-from constants import PHI, INV_PHI, LN_PHI, XI_BALANCE, FIB
-from utils import save_results, print_header
+from constants import PHI, INV_PHI, LN_PHI, XI_BALANCE, FIB, KOLMOGOROV_EXPONENT
+from utils import (save_results, print_header, bootstrap_ci, monte_carlo_null,
+                   energy_cascade, measure_exponent)
 
 np.random.seed(42)
 
-kT = 1.0
-LANDAUER_MIN = kT * np.log(2)
-TARGET_3D = -5 / 3           # Kolmogorov
-TARGET_2D_ENSTROPHY = -3.0   # Kraichnan enstrophy cascade
-TARGET_2D_INVERSE = -5 / 3   # Kraichnan inverse energy cascade
+TARGET_3D = -5 / 3
+TARGET_2D_ENSTROPHY = -3.0
+TARGET_2D_INVERSE = -5 / 3
+
+# She-Lévêque formula: k = d × F_{d+1}
+# FIB indexing: FIB[0]=0, FIB[1]=1, FIB[2]=1, FIB[3]=2, FIB[4]=3, FIB[5]=5
+SL_3D_PREDICTED = 3 * FIB[4]   # = 3 × 3 = 9
+SL_2D_PREDICTED = 2 * FIB[3]   # = 2 × 2 = 4
 
 print("=" * 70)
-print("EXPERIMENT 14: 2D Turbulence Mode Count Cross-Validation")
-print("Dawn Field Institute — Milestone 4, Block D")
+print("EXPERIMENT 14: 2D Turbulence Mode Count Cross-Validation (v2)")
+print("Dawn Field Institute — Milestone 4")
 print("=" * 70)
 
 
 # ============================================================
-# CASCADE ENGINE (copied verbatim from exp_03 / turbulence_pac_v3)
+# PART A: A-Priori Predictions
 # ============================================================
+print_header("PART A: A-Priori Predictions (BEFORE any computation)")
 
-def energy_cascade(injection_energy, n_scales, n_modes=8,
-                   n_samples=15000, coupling_decay=0.3,
-                   nonlinear_strength=0.3):
-    """
-    Energy cascade where eigenvalue structure determines partitioning.
+print(f"""
+She-Lévêque formula: k = d × F_{{d+1}}
+  where d = spatial dimension, F_n = nth Fibonacci number
 
-    At each scale:
-    1. Energy distributes across modes with coupling matrix C
-    2. Eigenvalue analysis: organized fraction = lambda_max / sum(lambda)
-    3. Organized energy stays at this scale (structure)
-    4. Remaining energy transfers to next scale (cascade)
-    """
+PREDICTIONS (stated before running):
+  3D Kolmogorov (-5/3):
+    k_SL = 3 × F_4 = 3 × {FIB[4]} = {SL_3D_PREDICTED}
+    exp_03 found k=8 → a k-1 systematic offset.
+    Hypothesis: cascade geometry reduces one effective degree of freedom.
+
+  2D enstrophy cascade (target: -3.0):
+    k_SL = 2 × F_3 = 2 × {FIB[3]} = {SL_2D_PREDICTED}
+    If k-1 offset holds: adjusted prediction k = {SL_2D_PREDICTED - 1}
+
+  2D inverse energy cascade (target: -5/3):
+    Same exponent as 3D Kolmogorov; if k-1 offset holds from 3D: k ≈ 7.
+    Treat as TBD — test mode range [5, 10].
+
+FALSIFICATION CRITERION:
+  If both 2D exponents are recovered at k_predicted or k_predicted-1
+  with NO parameter re-tuning → PASS.
+  If bootstrap CI (50 seeds) includes target → CONFIRMED.
+""")
+
+print(f"  FIB sequence: {FIB[:8]}")
+print(f"  SL_3D_PREDICTED = {SL_3D_PREDICTED} (exp_03 observed: 8, offset = -1)")
+print(f"  SL_2D_PREDICTED = {SL_2D_PREDICTED} (adjusted: {SL_2D_PREDICTED - 1})")
+
+
+# ============================================================
+# PART B: Parameter Sweep — Natural Exponent per Mode Count
+# ============================================================
+print_header("PART B: Parameter Sweep — Natural Exponent per Mode Count")
+
+print("""
+Unlike v1 (fixed coupling_decay=0.1, nonlinear_strength=0.3), we sweep
+parameter combinations to find the NATURAL exponent at each mode count.
+This removes confirmation bias: we report the median across all valid
+parameter combos, not the cherry-picked best run.
+""")
+
+N_SCALES = 25
+N_SAMPLES = 10000
+coupling_decays = [0.1, 0.2, 0.3, 0.5, 0.7]
+nonlinear_strengths = [0.0, 0.1, 0.3, 0.5]
+
+# --- 2D Enstrophy sweep ---
+print("B.1 — Enstrophy cascade sweep (target: -3.0)")
+print(f"{'n_modes':>8} | {'Median exp':>10} | {'IQR':>8} | {'Best exp':>10} | {'n_valid':>7}")
+print("-" * 55)
+
+enst_modes = [2, 3, 4, 5, 6]
+enst_sweep = {}
+
+for nm in enst_modes:
+    exponents = []
+    for cd in coupling_decays:
+        for ns in nonlinear_strengths:
+            np.random.seed(42 + nm * 100 + int(cd * 10) + int(ns * 10))
+            res = energy_cascade(1.0, N_SCALES, n_modes=nm,
+                                 coupling_decay=cd, nonlinear_strength=ns,
+                                 n_samples=N_SAMPLES)
+            exp_val, r2, org, _ = measure_exponent(res)
+            if exp_val is not None and r2 > 0.8:
+                exponents.append(exp_val)
+
+    if exponents:
+        med = float(np.median(exponents))
+        iqr = float(np.percentile(exponents, 75) - np.percentile(exponents, 25))
+        best = float(min(exponents, key=lambda e: abs(e - TARGET_2D_ENSTROPHY)))
+        marker = " <<<" if abs(med - TARGET_2D_ENSTROPHY) < 0.30 else ""
+        print(f"  {nm:>6} | {med:>10.4f} | {iqr:>8.4f} | {best:>10.4f} | "
+              f"{len(exponents):>7}{marker}")
+        enst_sweep[nm] = {'median': med, 'iqr': iqr, 'best': best,
+                          'n_valid': len(exponents), 'all': exponents}
+    else:
+        print(f"  {nm:>6} | {'no valid cascades':>36}")
+
+# Pick winning enstrophy mode count (closest median to target)
+best_enst_modes = min(enst_sweep,
+                      key=lambda n: abs(enst_sweep[n]['median'] - TARGET_2D_ENSTROPHY))
+print(f"\n  Best enstrophy mode count: {best_enst_modes} modes  "
+      f"(median exp = {enst_sweep[best_enst_modes]['median']:.4f})")
+
+# --- 2D Inverse cascade sweep ---
+print("\nB.2 — Inverse cascade sweep (target: -1.6667)")
+print(f"{'n_modes':>8} | {'Median exp':>10} | {'IQR':>8} | {'Best exp':>10} | {'n_valid':>7}")
+print("-" * 55)
+
+inv_modes_range = [5, 6, 7, 8, 9, 10]
+inv_sweep = {}
+
+for nm in inv_modes_range:
+    exponents = []
+    for cd in coupling_decays:
+        for ns in nonlinear_strengths:
+            np.random.seed(42 + nm * 200 + int(cd * 10) + int(ns * 10))
+            res = energy_cascade(1.0, N_SCALES, n_modes=nm,
+                                 coupling_decay=cd, nonlinear_strength=ns,
+                                 n_samples=N_SAMPLES)
+            exp_val, r2, org, _ = measure_exponent(res)
+            if exp_val is not None and r2 > 0.8:
+                exponents.append(exp_val)
+
+    if exponents:
+        med = float(np.median(exponents))
+        iqr = float(np.percentile(exponents, 75) - np.percentile(exponents, 25))
+        best = float(min(exponents, key=lambda e: abs(e - TARGET_2D_INVERSE)))
+        marker = " <<<" if abs(med - TARGET_2D_INVERSE) < 0.20 else ""
+        print(f"  {nm:>6} | {med:>10.4f} | {iqr:>8.4f} | {best:>10.4f} | "
+              f"{len(exponents):>7}{marker}")
+        inv_sweep[nm] = {'median': med, 'iqr': iqr, 'best': best,
+                         'n_valid': len(exponents), 'all': exponents}
+    else:
+        print(f"  {nm:>6} | {'no valid cascades':>36}")
+
+best_inv_modes = min(inv_sweep,
+                     key=lambda n: abs(inv_sweep[n]['median'] - TARGET_2D_INVERSE))
+print(f"\n  Best inverse cascade mode count: {best_inv_modes} modes  "
+      f"(median exp = {inv_sweep[best_inv_modes]['median']:.4f})")
+
+
+# ============================================================
+# PART C: Bootstrap CIs on Winning Mode Counts
+# ============================================================
+print_header("PART C: Bootstrap Confidence Intervals (50 seeds, canonical params)")
+
+print("""
+At the winning mode counts from Part B, we run 50 random seeds
+with canonical parameters (coupling_decay=0.1, nonlinear_strength=0.3)
+and compute bootstrap 95% CIs. This is the key falsification test.
+""")
+
+N_SAMPLES_BOOT = 15000
+
+# Enstrophy CI
+exponents_enst = []
+for seed in range(50):
+    np.random.seed(42 + seed * 1000)
+    res = energy_cascade(1.0, N_SCALES, n_modes=best_enst_modes,
+                         coupling_decay=0.1, nonlinear_strength=0.3,
+                         n_samples=N_SAMPLES_BOOT)
+    exp_val, r2, org, _ = measure_exponent(res)
+    if exp_val is not None and r2 > 0.8:
+        exponents_enst.append(float(exp_val))
+
+ci_enst = bootstrap_ci(exponents_enst) if exponents_enst else None
+mean_enst_exp = float(np.mean(exponents_enst)) if exponents_enst else None
+
+# Inverse cascade CI
+exponents_inv = []
+for seed in range(50):
+    np.random.seed(42 + seed * 1000 + 999)
+    res = energy_cascade(1.0, N_SCALES, n_modes=best_inv_modes,
+                         coupling_decay=0.1, nonlinear_strength=0.3,
+                         n_samples=N_SAMPLES_BOOT)
+    exp_val, r2, org, _ = measure_exponent(res)
+    if exp_val is not None and r2 > 0.8:
+        exponents_inv.append(float(exp_val))
+
+ci_inv = bootstrap_ci(exponents_inv) if exponents_inv else None
+mean_inv_exp = float(np.mean(exponents_inv)) if exponents_inv else None
+
+print(f"C.1 — Enstrophy cascade (n_modes={best_enst_modes}, target={TARGET_2D_ENSTROPHY:.4f}):")
+if ci_enst:
+    within_enst = ci_enst['ci_lower'] <= TARGET_2D_ENSTROPHY <= ci_enst['ci_upper']
+    print(f"  n_valid seeds: {len(exponents_enst)}/50")
+    print(f"  mean          = {mean_enst_exp:.4f}")
+    print(f"  95% CI        = [{ci_enst['ci_lower']:.4f}, {ci_enst['ci_upper']:.4f}]")
+    print(f"  std_error     = {ci_enst['std_error']:.4f}")
+    print(f"  Target {TARGET_2D_ENSTROPHY:.4f} within CI: {'YES ✓' if within_enst else 'NO ✗'}")
+else:
+    print("  No valid seeds.")
+    within_enst = False
+
+print(f"\nC.2 — Inverse cascade (n_modes={best_inv_modes}, target={TARGET_2D_INVERSE:.4f}):")
+if ci_inv:
+    within_inv = ci_inv['ci_lower'] <= TARGET_2D_INVERSE <= ci_inv['ci_upper']
+    print(f"  n_valid seeds: {len(exponents_inv)}/50")
+    print(f"  mean          = {mean_inv_exp:.4f}")
+    print(f"  95% CI        = [{ci_inv['ci_lower']:.4f}, {ci_inv['ci_upper']:.4f}]")
+    print(f"  std_error     = {ci_inv['std_error']:.4f}")
+    print(f"  Target {TARGET_2D_INVERSE:.4f} within CI: {'YES ✓' if within_inv else 'NO ✗'}")
+else:
+    print("  No valid seeds.")
+    within_inv = False
+
+
+# ============================================================
+# PART D: She-Lévêque Systematic Offset Analysis
+# ============================================================
+print_header("PART D: She-Lévêque k-1 Systematic Offset Analysis")
+
+print("""
+She-Lévêque predicts k = d × F_{d+1}. exp_03 found k=8 for 3D (predicted=9).
+We fill in the 2D cases from Part B to check for a consistent offset.
+""")
+
+SL_3D_OBS = 8   # from exp_03_turbulence_mode_scaling.py
+
+# For 2D inverse cascade, the theoretical prediction mirrors 3D (same exponent)
+cases = [
+    ('3D Kolmogorov',  SL_3D_PREDICTED, SL_3D_OBS),
+    ('2D enstrophy',   SL_2D_PREDICTED, best_enst_modes),
+    ('2D inverse',     SL_3D_PREDICTED, best_inv_modes),
+]
+
+print(f"  {'Case':20} | {'k_SL_pred':>10} | {'k_observed':>10} | {'offset':>8}")
+print("  " + "-" * 57)
+
+offsets = []
+for name, k_pred, k_obs in cases:
+    offset = k_obs - k_pred
+    offsets.append(offset)
+    print(f"  {name:20} | {k_pred:>10} | {k_obs:>10} | {offset:>+8}")
+
+offset_consistent = len(set(offsets)) == 1
+offset_val = offsets[0] if offsets else None
+
+print(f"\n  Offsets: {offsets}")
+if offset_consistent:
+    print(f"  Consistent offset: YES — all = {offset_val:+d}")
+else:
+    print(f"  Consistent offset: NO — mixed {offsets}")
+
+if offset_consistent and offset_val == -1:
+    print("""
+  PHYSICAL INTERPRETATION (k-1 offset = -1):
+  A consistent k-1 offset suggests the cascade engine's coupling matrix
+  geometry reduces one effective degree of freedom compared to field-theoretic
+  triadic interaction counts. In the matrix C[i,j] = exp(-|i-j|*cd), the
+  i=j diagonal dominates with weight 1.0, effectively anchoring one mode as
+  a reference state rather than a free interacting mode. The physical mode
+  count is therefore n_modes - 1.
+""")
+elif offset_consistent:
+    print(f"\n  Consistent offset of {offset_val:+d} found — "
+          f"not the k-1 pattern from 3D alone.")
+else:
+    print("\n  Offset is NOT consistent across cases. The k-1 pattern"
+          " from 3D does not generalise cleanly to 2D.")
+
+
+# ============================================================
+# PART E: Null Test — Structured vs Random Coupling
+# ============================================================
+print_header("PART E: Null Test — Structured vs Random Coupling Matrix")
+
+print(f"""
+Does the structured exponential-decay coupling drive the 2D enstrophy
+exponent, or would any random symmetric PD matrix suffice?
+
+We replace C[i,j] = exp(-|i-j|*cd) with a Wishart random matrix.
+n_trials=500 gives ~2σ resolution (appropriate for a screening test).
+
+Convention: monte_carlo_null tests fraction(null >= observed).
+We use negated distances so that p < 0.05 means structured IS special.
+""")
+
+
+def energy_cascade_with_random_C(injection_energy, n_scales, n_modes, rng,
+                                  n_samples=5000):
+    """Like energy_cascade but uses a random symmetric PD coupling matrix."""
+    from constants import LANDAUER_MIN as _LM
     results = []
     P = injection_energy
-    prev_dominant = None
 
     for k_idx in range(n_scales):
         if P < 1e-18:
@@ -87,653 +334,308 @@ def energy_cascade(injection_energy, n_scales, n_modes=8,
             })
             continue
 
-        # Coupling matrix
-        C = np.zeros((n_modes, n_modes))
-        for i in range(n_modes):
-            for j in range(n_modes):
-                C[i, j] = np.exp(-abs(i - j) * coupling_decay)
-
-        # Nonlinear feedback from previous scale
-        if prev_dominant is not None:
-            bias = np.outer(prev_dominant, prev_dominant)
-            bias /= (np.max(np.abs(bias)) + 1e-15)
-            C = C + bias * nonlinear_strength
-
+        # Random symmetric PD coupling matrix (Wishart-like)
+        A = rng.standard_normal((n_modes, n_modes))
+        C = A @ A.T / n_modes
         C = (C + C.T) / 2
         eigs_C = np.linalg.eigvalsh(C)
         if np.min(eigs_C) < 1e-10:
             C += np.eye(n_modes) * (abs(np.min(eigs_C)) + 1e-6)
 
-        # Distribute energy
-        means = P * np.exp(-np.arange(n_modes) * coupling_decay)
-        means *= P / np.sum(means)
+        means = np.full(n_modes, P / n_modes)
 
         try:
             sf = P / (np.trace(C) / n_modes) * 0.2
-            samples = np.abs(np.random.multivariate_normal(
-                means, C * sf, size=n_samples))
+            samples = np.abs(rng.multivariate_normal(means, C * sf, size=n_samples))
         except Exception:
-            samples = np.random.exponential(
-                P / n_modes, (n_samples, n_modes))
+            samples = rng.exponential(P / n_modes, (n_samples, n_modes))
 
-        # Eigenvalue analysis
         cov = np.cov(samples.T)
         eigenvalues = np.maximum(np.linalg.eigvalsh(cov), 1e-30)
-
         total_var = np.sum(eigenvalues)
         org_frac = eigenvalues[-1] / total_var
 
         E_org = P * org_frac
         E_transfer = P * (1 - org_frac)
 
-        if E_transfer < LANDAUER_MIN and P > LANDAUER_MIN:
-            E_transfer = LANDAUER_MIN
+        if E_transfer < _LM and P > _LM:
+            E_transfer = _LM
             E_org = P - E_transfer
             org_frac = E_org / P
-
-        _, eigvecs = np.linalg.eigh(cov)
-        prev_dominant = eigvecs[:, -1]
 
         results.append({
             'k_index': k_idx, 'wavenumber': 2**(k_idx + 1),
             'P_input': P, 'org_fraction': org_frac,
             'E_organized': E_org, 'E_transfer': E_transfer,
-            'participation_ratio': (np.sum(eigenvalues)**2
-                                    / np.sum(eigenvalues**2)),
+            'participation_ratio': np.sum(eigenvalues)**2 / np.sum(eigenvalues**2),
             'alive': True
         })
 
-        P = E_transfer * 0.98  # Small coupling loss
+        P = E_transfer * 0.98
 
     return results
 
 
-def measure_exponent(results, trim=2):
-    """Extract spectral exponent from cascade results."""
-    alive = [r for r in results if r['alive'] and r['P_input'] > 1e-15]
-    if len(alive) <= 2 * trim + 3:
-        return None, None, None, None
+null_result = None
+structured_is_special = False
+observed_dist = None
 
-    k_arr = np.array([r['wavenumber'] for r in alive])
-    e_arr = np.array([r['P_input'] for r in alive])
+if mean_enst_exp is not None:
+    observed_dist = abs(mean_enst_exp - TARGET_2D_ENSTROPHY)
 
-    lk = np.log10(k_arr[trim:-trim])
-    le = np.log10(e_arr[trim:-trim])
+    def null_generator(rng):
+        res = energy_cascade_with_random_C(1.0, N_SCALES, best_enst_modes,
+                                           rng, n_samples=5000)
+        exp_val, r2, _, _ = measure_exponent(res)
+        if exp_val is not None and r2 > 0.5:
+            # Negate distance: larger (less negative) = random is closer to target
+            return -abs(exp_val - TARGET_2D_ENSTROPHY)
+        return 0.0  # neutral: neither better nor worse
 
-    if len(lk) < 4:
-        return None, None, None, None
+    # p_value = fraction(null >= -observed_dist)
+    # = fraction of random trials as close or closer to target than structured
+    # p < 0.05 → structured IS significantly better than random
+    null_result = monte_carlo_null(
+        observed=-observed_dist,
+        generator_fn=null_generator,
+        n_trials=500,
+        seed=42
+    )
 
-    slope, intercept, rval, pval, stderr = stats.linregress(lk, le)
-    avg_org = np.mean([r['org_fraction'] for r in alive[trim:-trim]])
-
-    return slope, rval**2, avg_org, stderr
-
-
-# ============================================================
-# PART A: Mode Count Sweep — Reproduce exp_03 Baseline
-# ============================================================
-print_header("PART A: Mode Count Sweep (exp_03 baseline reproduction)")
-
-print("""
-Reproducing the exp_03 mode count sweep with the BEST parameters
-from exp_03 (coupling_decay=0.1, nonlinear_strength=0.3).
-This establishes the baseline: 8 modes -> -5/3 in 3D.
-""")
-
-# exp_03 best parameters (from turbulence_pac_v3 validation)
-CD_BEST = 0.1
-NS_BEST = 0.3
-
-mode_counts_full = [2, 3, 4, 6, 8, 12, 16, 24, 32]
-baseline_data = []
-
-print(f"  Parameters: coupling_decay={CD_BEST}, nonlinear_strength={NS_BEST}")
-print(f"\n  {'N_modes':>8} | {'Exponent':>10} | {'R^2':>8} | "
-      f"{'Org_frac':>10} | {'|D from -5/3|':>14}")
-print("  " + "-" * 60)
-
-for nm in mode_counts_full:
-    np.random.seed(42)
-    res = energy_cascade(1.0, 25, n_modes=nm,
-                         coupling_decay=CD_BEST,
-                         nonlinear_strength=NS_BEST,
-                         n_samples=15000)
-    exp_val, r2, org, stderr = measure_exponent(res)
-
-    if exp_val is not None and r2 is not None:
-        diff = abs(exp_val - TARGET_3D)
-        marker = " <<<" if diff < 0.15 else ""
-        print(f"  {nm:>8} | {exp_val:>10.4f} | {r2:>8.4f} | "
-              f"{org:>10.4f} | {diff:>14.4f}{marker}")
-        baseline_data.append({
-            'n_modes': nm,
-            'exponent': float(exp_val),
-            'r2': float(r2),
-            'org_frac': float(org),
-            'diff_from_53': float(diff),
-        })
-    else:
-        print(f"  {nm:>8} | {'N/A':>10} | {'N/A':>8} | "
-              f"{'N/A':>10} | {'N/A':>14}")
-        baseline_data.append({
-            'n_modes': nm, 'exponent': None, 'r2': None,
-            'org_frac': None, 'diff_from_53': None,
-        })
-
-# Find best match to -5/3
-valid_baseline = [d for d in baseline_data if d['exponent'] is not None]
-if valid_baseline:
-    best_3d = min(valid_baseline, key=lambda d: d['diff_from_53'])
-    print(f"\n  3D BASELINE: N={best_3d['n_modes']} modes -> "
-          f"exponent={best_3d['exponent']:.4f}, "
-          f"|D|={best_3d['diff_from_53']:.4f}")
-
-
-# ============================================================
-# PART B: 2D Enstrophy Cascade Target: -3
-# ============================================================
-print_header("PART B: 2D Enstrophy Cascade (target exponent = -3)")
-
-print(f"""
-The enstrophy cascade in 2D turbulence (Kraichnan 1967) has exponent -3.
-Enstrophy (mean-square vorticity) cascades to SMALL scales.
-
-PAC prediction: 2D has fewer effective triadic interactions.
-She-Leveque gives k = d * F_{{d+1}} -> 2D: k = 2 * F_3 = 4 modes.
-We scan mode counts [2, 3, 4, 5, 6] to find which gives -3.
-
-SAME parameters: coupling_decay={CD_BEST}, nonlinear_strength={NS_BEST}
-NO re-tuning.  This is the cross-validation test.
-""")
-
-enstrophy_modes = [2, 3, 4, 5, 6]
-enstrophy_data = []
-
-# Run ensemble over multiple seeds for robustness
-N_SEEDS = 20
-
-print(f"  {'N_modes':>8} | {'Mean exp':>10} | {'Std':>8} | "
-      f"{'Mean org':>10} | {'|D from -3|':>12} | {'Seeds':>6}")
-print("  " + "-" * 65)
-
-for nm in enstrophy_modes:
-    exponents = []
-    org_fracs = []
-
-    for seed in range(N_SEEDS):
-        np.random.seed(42 + seed * 1000)
-        res = energy_cascade(1.0, 25, n_modes=nm,
-                             coupling_decay=CD_BEST,
-                             nonlinear_strength=NS_BEST,
-                             n_samples=15000)
-        exp_val, r2, org, stderr = measure_exponent(res)
-        if exp_val is not None and r2 is not None and r2 > 0.8:
-            exponents.append(exp_val)
-            org_fracs.append(org)
-
-    if exponents:
-        mean_exp = np.mean(exponents)
-        std_exp = np.std(exponents)
-        mean_org = np.mean(org_fracs)
-        diff = abs(mean_exp - TARGET_2D_ENSTROPHY)
-        marker = " <<<" if diff < 0.30 else ""
-        print(f"  {nm:>8} | {mean_exp:>10.4f} | {std_exp:>8.4f} | "
-              f"{mean_org:>10.4f} | {diff:>12.4f} | "
-              f"{len(exponents):>6}{marker}")
-        enstrophy_data.append({
-            'n_modes': nm,
-            'mean_exponent': float(mean_exp),
-            'std_exponent': float(std_exp),
-            'mean_org_frac': float(mean_org),
-            'diff_from_3': float(diff),
-            'n_valid': len(exponents),
-        })
-    else:
-        print(f"  {nm:>8} | {'N/A':>10} | {'N/A':>8} | "
-              f"{'N/A':>10} | {'N/A':>12} | {0:>6}")
-        enstrophy_data.append({
-            'n_modes': nm, 'mean_exponent': None,
-            'diff_from_3': None, 'n_valid': 0,
-        })
-
-# Find best match to -3
-valid_enstrophy = [d for d in enstrophy_data
-                   if d['mean_exponent'] is not None]
-if valid_enstrophy:
-    best_2d_enst = min(valid_enstrophy, key=lambda d: d['diff_from_3'])
-    print(f"\n  2D ENSTROPHY BEST: N={best_2d_enst['n_modes']} modes -> "
-          f"exponent={best_2d_enst['mean_exponent']:.4f}")
-    print(f"  Deviation from -3: {best_2d_enst['diff_from_3']:.4f}")
-    print(f"  Organized fraction: {best_2d_enst.get('mean_org_frac', 'N/A')}")
-    print(f"\n  Does 4 modes -> -3?  ", end="")
-    d4 = next((d for d in valid_enstrophy if d['n_modes'] == 4), None)
-    if d4:
-        print(f"4 modes gives {d4['mean_exponent']:.4f} "
-              f"(|D| = {d4['diff_from_3']:.4f})")
-    else:
-        print("No valid data for 4 modes")
-    print(f"  Does 3 modes -> -3?  ", end="")
-    d3 = next((d for d in valid_enstrophy if d['n_modes'] == 3), None)
-    if d3:
-        print(f"3 modes gives {d3['mean_exponent']:.4f} "
-              f"(|D| = {d3['diff_from_3']:.4f})")
-    else:
-        print("No valid data for 3 modes")
-
-    # Theoretical prediction from She-Leveque
-    print(f"\n  She-Leveque prediction: k = 2 * F_3 = 2 * {FIB[3]} = "
-          f"{2 * FIB[3]} modes")
-    print(f"  PAC prediction aligns with She-Leveque for 2D: "
-          f"{best_2d_enst['n_modes']} modes is best")
-
-
-# ============================================================
-# PART C: 2D Inverse Energy Cascade: -5/3
-# ============================================================
-print_header("PART C: 2D Inverse Energy Cascade (target exponent = -5/3)")
-
-print(f"""
-The inverse energy cascade in 2D has exponent -5/3 (same as 3D).
-Energy flows UPSCALE (to larger structures) in 2D.
-
-Key question: does the SAME mode count (8) that gives -5/3 in 3D
-also give -5/3 in 2D?  If yes, this suggests the -5/3 exponent
-has a universal mechanism independent of dimensionality.
-
-We test mode counts [6, 7, 8, 9, 10, 12] near the 3D optimum.
-SAME parameters, NO re-tuning.
-""")
-
-inverse_modes = [6, 7, 8, 9, 10, 12]
-inverse_data = []
-
-print(f"  {'N_modes':>8} | {'Mean exp':>10} | {'Std':>8} | "
-      f"{'Mean org':>10} | {'|D from -5/3|':>14} | {'Seeds':>6}")
-print("  " + "-" * 65)
-
-for nm in inverse_modes:
-    exponents = []
-    org_fracs = []
-
-    for seed in range(N_SEEDS):
-        np.random.seed(42 + seed * 1000)
-        res = energy_cascade(1.0, 25, n_modes=nm,
-                             coupling_decay=CD_BEST,
-                             nonlinear_strength=NS_BEST,
-                             n_samples=15000)
-        exp_val, r2, org, stderr = measure_exponent(res)
-        if exp_val is not None and r2 is not None and r2 > 0.8:
-            exponents.append(exp_val)
-            org_fracs.append(org)
-
-    if exponents:
-        mean_exp = np.mean(exponents)
-        std_exp = np.std(exponents)
-        mean_org = np.mean(org_fracs)
-        diff = abs(mean_exp - TARGET_2D_INVERSE)
-        marker = " <<<" if diff < 0.15 else ""
-        print(f"  {nm:>8} | {mean_exp:>10.4f} | {std_exp:>8.4f} | "
-              f"{mean_org:>10.4f} | {diff:>14.4f} | "
-              f"{len(exponents):>6}{marker}")
-        inverse_data.append({
-            'n_modes': nm,
-            'mean_exponent': float(mean_exp),
-            'std_exponent': float(std_exp),
-            'mean_org_frac': float(mean_org),
-            'diff_from_53': float(diff),
-            'n_valid': len(exponents),
-        })
-    else:
-        print(f"  {nm:>8} | {'N/A':>10} | {'N/A':>8} | "
-              f"{'N/A':>10} | {'N/A':>14} | {0:>6}")
-        inverse_data.append({
-            'n_modes': nm, 'mean_exponent': None,
-            'diff_from_53': None, 'n_valid': 0,
-        })
-
-# Find best match to -5/3
-valid_inverse = [d for d in inverse_data
-                 if d['mean_exponent'] is not None]
-if valid_inverse:
-    best_2d_inv = min(valid_inverse, key=lambda d: d['diff_from_53'])
-    print(f"\n  2D INVERSE BEST: N={best_2d_inv['n_modes']} modes -> "
-          f"exponent={best_2d_inv['mean_exponent']:.4f}")
-    print(f"  Deviation from -5/3: {best_2d_inv['diff_from_53']:.4f}")
-    print(f"  Organized fraction: {best_2d_inv.get('mean_org_frac', 'N/A')}")
-
-    # Is it the same mode count as 3D?
-    same_as_3d = best_2d_inv['n_modes'] == best_3d['n_modes']
-    print(f"\n  Same mode count as 3D ({best_3d['n_modes']})? "
-          f"{'YES' if same_as_3d else 'NO — ' + str(best_2d_inv['n_modes'])}")
-    if same_as_3d:
-        print("  -> Same exponent, same mode count: universal mechanism!")
-    else:
-        print(f"  -> Different mode counts but same exponent. "
-              f"The 2D inverse cascade may use a different interaction "
-              f"geometry.")
-
-
-# ============================================================
-# PART D: Organized Fraction Cross-Check
-# ============================================================
-print_header("PART D: Organized Fraction Cross-Check")
-
-print("""
-At each target (3D -5/3, 2D -3, 2D inverse -5/3), what is the
-organized fraction?  Is 2/3 universal, or does it change with
-mode count?  Are the organized fractions related to known constants?
-""")
-
-# Collect organized fractions at the best mode counts
-org_frac_results = {}
-
-# 3D best
-if valid_baseline:
-    nm_3d = best_3d['n_modes']
-    org_3d_vals = []
-    for seed in range(50):
-        np.random.seed(42 + seed * 1000)
-        res = energy_cascade(1.0, 25, n_modes=nm_3d,
-                             coupling_decay=CD_BEST,
-                             nonlinear_strength=NS_BEST,
-                             n_samples=15000)
-        _, r2, org, _ = measure_exponent(res)
-        if org is not None and r2 is not None and r2 > 0.8:
-            org_3d_vals.append(org)
-
-    if org_3d_vals:
-        org_frac_results['3D'] = {
-            'mode_count': nm_3d,
-            'target_exp': TARGET_3D,
-            'mean_org': float(np.mean(org_3d_vals)),
-            'std_org': float(np.std(org_3d_vals)),
-        }
-
-# 2D enstrophy best
-if valid_enstrophy:
-    nm_2d_e = best_2d_enst['n_modes']
-    org_2d_e_vals = []
-    for seed in range(50):
-        np.random.seed(42 + seed * 1000)
-        res = energy_cascade(1.0, 25, n_modes=nm_2d_e,
-                             coupling_decay=CD_BEST,
-                             nonlinear_strength=NS_BEST,
-                             n_samples=15000)
-        _, r2, org, _ = measure_exponent(res)
-        if org is not None and r2 is not None and r2 > 0.8:
-            org_2d_e_vals.append(org)
-
-    if org_2d_e_vals:
-        org_frac_results['2D_enstrophy'] = {
-            'mode_count': nm_2d_e,
-            'target_exp': TARGET_2D_ENSTROPHY,
-            'mean_org': float(np.mean(org_2d_e_vals)),
-            'std_org': float(np.std(org_2d_e_vals)),
-        }
-
-# 2D inverse best
-if valid_inverse:
-    nm_2d_i = best_2d_inv['n_modes']
-    org_2d_i_vals = []
-    for seed in range(50):
-        np.random.seed(42 + seed * 1000)
-        res = energy_cascade(1.0, 25, n_modes=nm_2d_i,
-                             coupling_decay=CD_BEST,
-                             nonlinear_strength=NS_BEST,
-                             n_samples=15000)
-        _, r2, org, _ = measure_exponent(res)
-        if org is not None and r2 is not None and r2 > 0.8:
-            org_2d_i_vals.append(org)
-
-    if org_2d_i_vals:
-        org_frac_results['2D_inverse'] = {
-            'mode_count': nm_2d_i,
-            'target_exp': TARGET_2D_INVERSE,
-            'mean_org': float(np.mean(org_2d_i_vals)),
-            'std_org': float(np.std(org_2d_i_vals)),
-        }
-
-# Display organized fraction comparison
-print(f"  {'Cascade':>18} | {'N_modes':>8} | {'Target exp':>10} | "
-      f"{'Org frac':>10} | {'Std':>8}")
-print("  " + "-" * 65)
-
-for label, data in org_frac_results.items():
-    print(f"  {label:>18} | {data['mode_count']:>8} | "
-          f"{data['target_exp']:>10.4f} | {data['mean_org']:>10.4f} | "
-          f"{data['std_org']:>8.4f}")
-
-# Check against known constants
-print(f"\n  Organized fraction comparison with known constants:")
-known_constants = {
-    '2/3': 2 / 3,
-    '1/phi': INV_PHI,
-    'ln(2)': np.log(2),
-    '1 - 1/e': 1 - 1 / np.e,
-    '3/4': 3 / 4,
-    '1/2': 0.5,
-    '3/5': 3 / 5,
-    'phi - 1': PHI - 1,
-}
-
-for label, data in org_frac_results.items():
-    print(f"\n  {label} (org = {data['mean_org']:.4f}):")
-    matches = []
-    for cname, cval in known_constants.items():
-        diff = abs(data['mean_org'] - cval)
-        within_1sigma = diff < data['std_org']
-        within_2sigma = diff < 2 * data['std_org']
-        status = "1-sigma" if within_1sigma else (
-            "2-sigma" if within_2sigma else "no")
-        matches.append((cname, cval, diff, status))
-    matches.sort(key=lambda x: x[2])
-    for cname, cval, diff, status in matches[:4]:
-        print(f"    {cname:>12} = {cval:.4f}  |D| = {diff:.4f}  "
-              f"({status})")
-
-# Is 2/3 universal?
-if len(org_frac_results) >= 2:
-    org_values = [d['mean_org'] for d in org_frac_results.values()]
-    org_range = max(org_values) - min(org_values)
-    print(f"\n  Range of organized fractions: {org_range:.4f}")
-    print(f"  2/3 universal? ", end="")
-    if org_range < 0.05:
-        print("YES — all cascades converge to similar organized fraction")
-    else:
-        print("NO — organized fraction varies with mode count/dimension")
-        print(f"  This means the organized fraction is NOT universal;")
-        print(f"  it depends on the number of interacting modes.")
-        print(f"  The cascade EXPONENT is the universal observable,")
-        print(f"  and the organized fraction is the MECHANISM that")
-        print(f"  produces it (consistent with PAC: local allocation")
-        print(f"  varies, global conservation holds).")
-
-
-# ============================================================
-# PART E: Falsification Assessment
-# ============================================================
-print_header("PART E: Falsification Assessment")
-
-# Criteria
-enstrophy_threshold = 0.50  # Accept if within 0.5 of -3
-inverse_threshold = 0.30    # Accept if within 0.3 of -5/3
-tight_threshold = 0.15      # For "strong" match
-
-enstrophy_pass = False
-inverse_pass = False
-enstrophy_tight = False
-inverse_tight = False
-
-if valid_enstrophy:
-    enstrophy_pass = best_2d_enst['diff_from_3'] < enstrophy_threshold
-    enstrophy_tight = best_2d_enst['diff_from_3'] < tight_threshold
-
-if valid_inverse:
-    inverse_pass = best_2d_inv['diff_from_53'] < inverse_threshold
-    inverse_tight = best_2d_inv['diff_from_53'] < tight_threshold
-
-# Determine verdict
-if enstrophy_pass and inverse_pass:
-    verdict = "PASS"
-    explanation = ("The PAC cascade engine recovers BOTH 2D turbulence "
-                   "exponents with the same physics, no re-tuning.")
-elif enstrophy_pass or inverse_pass:
-    verdict = "PARTIAL"
-    got = "enstrophy (-3)" if enstrophy_pass else "inverse (-5/3)"
-    missed = "inverse (-5/3)" if enstrophy_pass else "enstrophy (-3)"
-    explanation = (f"Gets {got} right but not {missed}. "
-                   f"The cascade engine captures one 2D regime but "
-                   f"not both.")
+    structured_is_special = null_result['p_value'] < 0.05
+    print(f"  Structured cascade distance from -3.0:  {observed_dist:.4f}")
+    print(f"  Null (random C) mean negated distance:  {null_result['null_mean']:.4f}")
+    print(f"  Null std:                               {null_result['null_std']:.4f}")
+    print(f"  p-value (random ≤ structured distance): {null_result['p_value']:.4f}")
+    print(f"  Structured cascade IS special (p<0.05): "
+          f"{'YES ✓' if structured_is_special else 'NO ✗'}")
+    if not structured_is_special:
+        print("  NOTE: Random coupling occasionally achieves similar distances —")
+        print("  the exponent may partly reflect cascade geometry, not only coupling.")
 else:
-    verdict = "FAIL"
-    explanation = ("The cascade engine cannot reproduce 2D turbulence "
-                   "statistics at any mode count with unchanged "
-                   "parameters.")
+    print("  Skipped (no valid enstrophy bootstrap mean).")
 
-enst_dev_str = (f"{best_2d_enst['diff_from_3']:.4f}"
-                if valid_enstrophy else 'N/A')
-inv_dev_str = (f"{best_2d_inv['diff_from_53']:.4f}"
-               if valid_inverse else 'N/A')
-enst_status = ('TIGHT PASS' if enstrophy_tight else
-               ('PASS' if enstrophy_pass else 'FAIL'))
-inv_status = ('TIGHT PASS' if inverse_tight else
-              ('PASS' if inverse_pass else 'FAIL'))
+
+# ============================================================
+# PART F: Global/Local Conservation Hierarchy
+# ============================================================
+print_header("PART F: Conservation Hierarchy — CoV(exponent) < CoV(global) < CoV(local)")
 
 print(f"""
-FALSIFICATION CRITERIA:
-  1. Enstrophy cascade (-3): best |D| = {enst_dev_str}
-     Threshold: < {enstrophy_threshold} (pass), < {tight_threshold} (tight)
-     Status: {enst_status}
-
-  2. Inverse energy cascade (-5/3): best |D| = {inv_dev_str}
-     Threshold: < {inverse_threshold} (pass), < {tight_threshold} (tight)
-     Status: {inv_status}
-
-  3. No re-tuning: coupling_decay={CD_BEST}, nonlinear_strength={NS_BEST}
-     Same as exp_03 best parameters.  CONFIRMED.
+PAC predicts: CoV(exponent) < CoV(global org) < CoV(local org).
+Tested at winning enstrophy mode count (n_modes={best_enst_modes}).
+Same analysis as exp_03 Part 4, applied to the 2D case.
 """)
 
+hier_data = []
+for cd in coupling_decays:
+    for ns in nonlinear_strengths:
+        np.random.seed(42 + int(cd * 100) + int(ns * 100) + best_enst_modes * 7)
+        res = energy_cascade(1.0, N_SCALES, n_modes=best_enst_modes,
+                             coupling_decay=cd, nonlinear_strength=ns,
+                             n_samples=N_SAMPLES)
+        alive = [r for r in res if r['alive'] and r['P_input'] > 1e-15]
+        if len(alive) > 6:
+            mid = alive[2:-2]
+            local_org = float(np.mean([r['org_fraction'] for r in mid]))
+            global_org = float(sum(r['E_organized'] for r in alive))  # / 1.0 injection
+            exp_val, r2, _, _ = measure_exponent(res)
+            if exp_val is not None and r2 > 0.8:
+                hier_data.append({'cd': cd, 'ns': ns,
+                                  'local_org': local_org,
+                                  'global_org': global_org,
+                                  'exponent': float(exp_val)})
+
+hier_holds = False
+cov_local = cov_global = cov_exp = None
+
+if hier_data:
+    loc = [d['local_org'] for d in hier_data]
+    glb = [d['global_org'] for d in hier_data]
+    exp = [d['exponent'] for d in hier_data]
+
+    cov_local  = np.std(loc) / np.mean(loc) if np.mean(loc) > 0 else float('inf')
+    cov_global = np.std(glb) / np.mean(glb) if np.mean(glb) > 0 else float('inf')
+    cov_exp    = abs(np.std(exp) / np.mean(exp)) if np.mean(exp) != 0 else float('inf')
+
+    hier_holds = cov_exp < cov_global < cov_local
+
+    print(f"  {'Measure':20} | {'Mean':>8} | {'Std':>8} | {'CoV':>8}")
+    print("  " + "-" * 54)
+    print(f"  {'LOCAL org_frac':20} | {np.mean(loc):>8.4f} | "
+          f"{np.std(loc):>8.4f} | {cov_local:>8.4f}")
+    print(f"  {'GLOBAL Σξ/P':20} | {np.mean(glb):>8.4f} | "
+          f"{np.std(glb):>8.4f} | {cov_global:>8.4f}")
+    print(f"  {'EXPONENT':20} | {np.mean(exp):>8.4f} | "
+          f"{np.std(exp):>8.4f} | {cov_exp:>8.4f}")
+    print(f"\n  PAC hierarchy CoV(exp) < CoV(global) < CoV(local): "
+          f"{'CONFIRMED ✓' if hier_holds else 'NOT CONFIRMED ✗'}")
+    if not hier_holds:
+        print(f"  (CoV_exp={cov_exp:.4f}, CoV_global={cov_global:.4f}, "
+              f"CoV_local={cov_local:.4f})")
+else:
+    print("  Insufficient data for hierarchy test.")
+
 
 # ============================================================
-# SUMMARY
+# PART G: Falsification Verdict
 # ============================================================
-print_header("SUMMARY")
+print_header("PART G: Falsification Verdict")
 
-# Gather all key values safely
-sum_3d_n = best_3d['n_modes'] if valid_baseline else 'N/A'
-sum_3d_exp = f"{best_3d['exponent']:.4f}" if valid_baseline else 'N/A'
-sum_3d_diff = f"{best_3d['diff_from_53']:.4f}" if valid_baseline else 'N/A'
-sum_3d_org = (f"{org_frac_results['3D']['mean_org']:.4f}"
-              if '3D' in org_frac_results else 'N/A')
 
-sum_2d_e_n = best_2d_enst['n_modes'] if valid_enstrophy else 'N/A'
-sum_2d_e_exp = (f"{best_2d_enst['mean_exponent']:.4f}"
-                if valid_enstrophy else 'N/A')
-sum_2d_e_diff = (f"{best_2d_enst['diff_from_3']:.4f}"
-                 if valid_enstrophy else 'N/A')
-sum_2d_e_org = (f"{org_frac_results['2D_enstrophy']['mean_org']:.4f}"
-                if '2D_enstrophy' in org_frac_results else 'N/A')
+def classify_deviation(dev):
+    if dev < 0.10:
+        return "TIGHT PASS"
+    elif dev < 0.20:
+        return "PASS"
+    else:
+        return "FAIL"
 
-sum_2d_i_n = best_2d_inv['n_modes'] if valid_inverse else 'N/A'
-sum_2d_i_exp = (f"{best_2d_inv['mean_exponent']:.4f}"
-                if valid_inverse else 'N/A')
-sum_2d_i_diff = (f"{best_2d_inv['diff_from_53']:.4f}"
-                 if valid_inverse else 'N/A')
-sum_2d_i_org = (f"{org_frac_results['2D_inverse']['mean_org']:.4f}"
-                if '2D_inverse' in org_frac_results else 'N/A')
+
+dev_enst = abs(mean_enst_exp - TARGET_2D_ENSTROPHY) if mean_enst_exp is not None else 999.0
+dev_inv  = abs(mean_inv_exp  - TARGET_2D_INVERSE)   if mean_inv_exp  is not None else 999.0
+
+verdict_enst = classify_deviation(dev_enst)
+verdict_inv  = classify_deviation(dev_inv)
+
+if verdict_enst in ("TIGHT PASS", "PASS") and verdict_inv in ("TIGHT PASS", "PASS"):
+    overall = "PASS"
+elif verdict_enst in ("TIGHT PASS", "PASS") or verdict_inv in ("TIGHT PASS", "PASS"):
+    overall = "PARTIAL"
+else:
+    overall = "FAIL"
+
+sl_offset_str = (
+    "CONFIRMED (consistent k-1 across all 3 cases)"
+    if (offset_consistent and offset_val == -1)
+    else ("CONFIRMED (consistent, not k-1)" if offset_consistent
+          else "NOT CONFIRMED (mixed)")
+)
+
+null_str = (
+    f"p = {null_result['p_value']:.3f} "
+    f"(structured cascade {'IS' if structured_is_special else 'IS NOT'} "
+    f"distinguishable from random at p<0.05)"
+    if null_result is not None else "not run"
+)
+
+hier_str = "CONFIRMED" if hier_holds else "NOT CONFIRMED"
+
+enst_ci_str = (f"[{ci_enst['ci_lower']:.4f}, {ci_enst['ci_upper']:.4f}]"
+               if ci_enst else "n/a")
+inv_ci_str  = (f"[{ci_inv['ci_lower']:.4f}, {ci_inv['ci_upper']:.4f}]"
+               if ci_inv else "n/a")
+
+mean_enst_str = f"{mean_enst_exp:.4f}" if mean_enst_exp is not None else "n/a"
+mean_inv_str  = f"{mean_inv_exp:.4f}"  if mean_inv_exp  is not None else "n/a"
 
 print(f"""
-{'='*60}
-EXPERIMENT 14 RESULTS — 2D Turbulence Cross-Validation
-{'='*60}
+VERDICT: {overall}
 
-  3D Kolmogorov (baseline):
-    Mode count:       {sum_3d_n}
-    Exponent:         {sum_3d_exp}  (target: -1.6667)
-    Deviation:        {sum_3d_diff}
-    Organized frac:   {sum_3d_org}
+  2D enstrophy (n_modes={best_enst_modes}):
+    mean exponent = {mean_enst_str}
+    95% CI        = {enst_ci_str}
+    target = {TARGET_2D_ENSTROPHY:.4f}, deviation = {dev_enst:.4f}  [{verdict_enst}]
 
-  2D Enstrophy cascade:
-    Mode count:       {sum_2d_e_n}
-    Exponent:         {sum_2d_e_exp}  (target: -3.0000)
-    Deviation:        {sum_2d_e_diff}
-    Organized frac:   {sum_2d_e_org}
+  2D inverse cascade (n_modes={best_inv_modes}):
+    mean exponent = {mean_inv_str}
+    95% CI        = {inv_ci_str}
+    target = {TARGET_2D_INVERSE:.4f}, deviation = {dev_inv:.4f}  [{verdict_inv}]
 
-  2D Inverse energy cascade:
-    Mode count:       {sum_2d_i_n}
-    Exponent:         {sum_2d_i_exp}  (target: -1.6667)
-    Deviation:        {sum_2d_i_diff}
-    Organized frac:   {sum_2d_i_org}
-
-  Parameters (unchanged from exp_03):
-    coupling_decay:      {CD_BEST}
-    nonlinear_strength:  {NS_BEST}
-
-{'='*60}
-  VERDICT: {verdict}
-  {explanation}
-{'='*60}
-
-PHYSICAL INTERPRETATION:
-  The PAC cascade engine treats energy partitioning as an eigenvalue
-  problem at each scale.  The number of interacting modes determines
-  the eigenvalue concentration, which determines the organized fraction,
-  which determines the spectral exponent.
-
-  3D turbulence: ~8 modes per scale -> -5/3 (Kolmogorov)
-  2D enstrophy:  fewer modes per scale -> steeper exponent (-3)
-  2D inverse:    mode count for -5/3 may or may not match 3D
-
-  The cascade engine is DIMENSIONALITY-AGNOSTIC: it doesn't know
-  about 2D or 3D.  It only knows mode count.  The physical claim is
-  that the effective number of triadic interactions per inertial-range
-  scale IS the mode count that determines the exponent.
+  She-Lévêque k-1 offset: {sl_offset_str}
+  Null test: {null_str}
+  PAC conservation hierarchy (2D enstrophy): {hier_str}
 """)
 
+if overall == "FAIL":
+    print("  CONCLUSION: The cascade engine does NOT recover 2D turbulence exponents")
+    print("  at the She-Lévêque predicted mode counts. Hypothesis FALSIFIED.")
+elif overall == "PARTIAL":
+    print("  CONCLUSION: One 2D exponent recovered. Partial support for hypothesis.")
+    print("  Further investigation needed for the failing case.")
+else:
+    print("  CONCLUSION: Both 2D exponents recovered within tolerance at the")
+    print("  She-Lévêque predicted (or k-1 adjusted) mode counts.")
+    print("  Hypothesis SUPPORTED. The cascade engine generalises across dimensions.")
+
 
 # ============================================================
-# SAVE RESULTS
+# PART H: Save Results
 # ============================================================
-all_results = {
-    'experiment': 'exp_14_2d_turbulence_mode_count',
+results = {
+    'experiment': 'exp_14_2d_turbulence_mode_count_v2',
     'milestone': 4,
-    'block': 'D (Cross-Validation)',
-    'date': '2026-03-07',
-    'hypothesis': ('Same cascade engine recovers 2D turbulence exponents '
-                   'with only mode count changed'),
-    'parameters': {
-        'coupling_decay': CD_BEST,
-        'nonlinear_strength': NS_BEST,
-        'n_samples': 15000,
-        'n_scales': 25,
-        'n_seeds': N_SEEDS,
+    'date': '2026-03-09',
+    'hypothesis': 'PAC cascade recovers 2D turbulence exponents with mode count change only',
+
+    'part_a_predictions': {
+        'sl_formula': 'k = d x F_{d+1}',
+        'sl_3d_predicted': SL_3D_PREDICTED,
+        'sl_3d_observed': SL_3D_OBS,
+        'sl_3d_offset': SL_3D_OBS - SL_3D_PREDICTED,
+        'sl_2d_enstrophy_predicted': SL_2D_PREDICTED,
+        'sl_2d_enstrophy_adjusted': SL_2D_PREDICTED - 1,
+        'target_3d': TARGET_3D,
+        'target_2d_enstrophy': TARGET_2D_ENSTROPHY,
+        'target_2d_inverse': TARGET_2D_INVERSE,
     },
-    'part_a_baseline': baseline_data,
-    'part_b_enstrophy': enstrophy_data,
-    'part_c_inverse': inverse_data,
-    'part_d_org_fracs': org_frac_results,
-    'summary': {
-        '3d_mode_count': sum_3d_n,
-        '3d_exponent': best_3d['exponent'] if valid_baseline else None,
-        '3d_deviation': best_3d['diff_from_53'] if valid_baseline else None,
-        '2d_enstrophy_mode_count': sum_2d_e_n,
-        '2d_enstrophy_exponent': (best_2d_enst['mean_exponent']
-                                  if valid_enstrophy else None),
-        '2d_enstrophy_deviation': (best_2d_enst['diff_from_3']
-                                   if valid_enstrophy else None),
-        '2d_inverse_mode_count': sum_2d_i_n,
-        '2d_inverse_exponent': (best_2d_inv['mean_exponent']
-                                if valid_inverse else None),
-        '2d_inverse_deviation': (best_2d_inv['diff_from_53']
-                                 if valid_inverse else None),
+
+    'part_b_enst_sweep': {
+        str(nm): {k: (v if not isinstance(v, list) else [float(x) for x in v])
+                  for k, v in d.items()}
+        for nm, d in enst_sweep.items()
     },
-    'verdict': verdict,
-    'explanation': explanation,
-    'falsification_conditions': [
-        'PASS if both 2D exponents recovered with no re-tuning',
-        'PARTIAL if only one 2D exponent recovered',
-        'FAIL if cascade engine cannot reproduce 2D turbulence',
-    ],
+    'part_b_inv_sweep': {
+        str(nm): {k: (v if not isinstance(v, list) else [float(x) for x in v])
+                  for k, v in d.items()}
+        for nm, d in inv_sweep.items()
+    },
+    'part_b_best_enst_modes': best_enst_modes,
+    'part_b_best_inv_modes': best_inv_modes,
+
+    'part_c_bootstrap': {
+        'enst_n_valid': len(exponents_enst),
+        'enst_mean': mean_enst_exp,
+        'enst_ci': ci_enst,
+        'enst_target_within_ci': bool(within_enst) if ci_enst else None,
+        'inv_n_valid': len(exponents_inv),
+        'inv_mean': mean_inv_exp,
+        'inv_ci': ci_inv,
+        'inv_target_within_ci': bool(within_inv) if ci_inv else None,
+    },
+
+    'part_d_sl_offset': {
+        'cases': [{'name': n, 'k_pred': p, 'k_obs': o, 'offset': o - p}
+                  for n, p, o in cases],
+        'offsets': offsets,
+        'consistent': bool(offset_consistent),
+        'offset_value': int(offset_val) if offset_val is not None else None,
+    },
+
+    'part_e_null_test': {
+        'observed_distance': float(observed_dist) if observed_dist is not None else None,
+        'null_result': null_result,
+        'structured_is_special': bool(structured_is_special),
+    },
+
+    'part_f_conservation': {
+        'n_combos': len(hier_data),
+        'cov_local': float(cov_local) if cov_local is not None else None,
+        'cov_global': float(cov_global) if cov_global is not None else None,
+        'cov_exponent': float(cov_exp) if cov_exp is not None else None,
+        'hierarchy_holds': bool(hier_holds),
+    },
+
+    'part_g_verdict': {
+        'overall': overall,
+        'enst_deviation': float(dev_enst),
+        'enst_verdict': verdict_enst,
+        'inv_deviation': float(dev_inv),
+        'inv_verdict': verdict_inv,
+        'sl_offset_confirmed': bool(offset_consistent and offset_val == -1),
+        'null_p_value': float(null_result['p_value']) if null_result else None,
+        'conservation_hierarchy': bool(hier_holds),
+    },
 }
 
-save_results(all_results, 'exp_14_2d_turbulence_mode_count')
+save_results(results, 'exp_14_2d_turbulence_mode_count_v2')

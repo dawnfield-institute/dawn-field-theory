@@ -3,9 +3,9 @@ description: "Milestone 4: PAC Relativity, Turbulence, and Energy as Collapsed P
 semantic_scope: "implementation"
 proficiency_level: "research"
 version: "0.1.0"
-status: "in_progress"
+status: "completed"
 date_created: "2026-02-22"
-date_updated: "2026-02-27"
+date_updated: "2026-03-12"
 
 files:
   - "[README.md]": "Milestone overview, experiment plan, and success criteria"
@@ -13,7 +13,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Formal experiment scripts (exp_01 through exp_12+)"
+    description: "Formal experiment scripts (exp_01 through exp_15)"
   - name: "results"
     description: "JSON outputs from all experiments"
   - name: "journals"
