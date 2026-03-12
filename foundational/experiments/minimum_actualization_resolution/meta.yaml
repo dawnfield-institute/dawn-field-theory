@@ -14,13 +14,21 @@ tags:
   - xi-floor
   - eta-pac
   - phi-proximity
-related_experiments: []
-estimated_context_weight: 0.7
+  - sec-pump
+  - dimensional
+  - euler-gap
+  - binary-uniqueness
+  - ln2
+related_experiments:
+  - landauer_erasure_structure
+  - pac_confluence_xi
+  - sec_threshold_detection
+estimated_context_weight: 0.8
 files:
   - "[README.md]": "Overview and results"
 child_directories:
   - name: "scripts"
-    description: "5 experiment scripts testing Planck-from-PAC derivations"
+    description: "10 experiment scripts: MVAE derivations (01-05), hardening (06), deep probes (07-10)"
   - name: "results"
     description: "Numerical output data"
   - name: "journals"

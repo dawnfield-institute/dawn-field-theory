@@ -1,0 +1,42 @@
+{
+  "experiment": "minimum_actualization_resolution",
+  "script": "exp_07_sec_pump_mechanism.py",
+  "timestamp": "2026-03-12T15:08:14.734066",
+  "verdicts": {
+    "A": "PASS (recycling falsified, gap=26.2%)",
+    "B": "PASS (MED regulation cost consistent with eta-1 structure)",
+    "C": "PASS (Lyapunov (1-x)^2 matches and has physical mechanism)",
+    "D": "PASS (unique 3-factor decomposition with independent origins)"
+  },
+  "results": {
+    "part_a": {
+      "xi_nested_limit": 0.7798113582175029,
+      "xi_mvae": 1.057107579123413,
+      "gap_pct": 26.231598976506525,
+      "recycling_falsified": true
+    },
+    "part_b": {
+      "H_3pattern": 1.584962500721156,
+      "med_surplus_ratio": 1.5,
+      "mvae_surplus": 0.08238882119852196,
+      "med_xi_optimal": 1.0571,
+      "mvae_xi_pac": 1.057107579123413,
+      "xi_match": 0.0007169680326554566
+    },
+    "part_c": {
+      "V_landauer": 0.09415865279831082,
+      "cascade_rate": 0.6065037829899521,
+      "lyapunov_eigenvalue": 0.500044313206187,
+      "cost_form_is_quadratic": true,
+      "physical_mechanism": "MED balance operator V(Xi)=(Xi-1)^2"
+    },
+    "part_d": {
+      "f_modes": 0.875,
+      "E_landauer": 0.6931471805599453,
+      "C_regulation": 0.09415865279831082,
+      "xi_decomposed": 1.057107579123413,
+      "xi_mvae": 1.057107579123413,
+      "decomposition_exact": true
+    }
+  }
+}
