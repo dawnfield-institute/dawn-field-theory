@@ -1,0 +1,9 @@
+schema_version: "2.0"
+description: "Experiment results in JSON format"
+semantic_scope: "data"
+files:
+  - "[exp_01_planck_from_pac.json]": "Planck-scale MVAE cutoff derivation results"
+  - "[exp_02_xi_global_attractor.json]": "xi global attractor sub-experiments 2A-2G results"
+  - "[exp_03_planck_to_xi.json]": "Unified Planck-to-xi derivation and ln(2) web results"
+  - "[exp_04_eta_geometry_20260312_162933.json]": "eta_PAC geometry derivation results"
+  - "[exp_05_phi_proximity_20260312_163005.json]": "phi proximity and Euler gap analysis results"
