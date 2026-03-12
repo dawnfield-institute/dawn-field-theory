@@ -1,0 +1,148 @@
+{
+  "experiment": "minimum_actualization_resolution",
+  "script": "exp_06_hardening.py",
+  "timestamp": "2026-03-12T14:20:10.707324",
+  "verdicts": {
+    "A": "PASS (null rejected)",
+    "B": "PASS (formula is selective)",
+    "C": "PASS (bridge at 0.741%)",
+    "D": "PASS (xi_floor exact, eta bridge works) (note: stochastic convergence is CLT)",
+    "E": "PASS (conjugacy is structural)"
+  },
+  "n_pass": 5,
+  "n_fail": 0,
+  "results": {
+    "part_a": {
+      "xi_mobius": 1.0571198664289054,
+      "xi_euler": 1.0584274899611361,
+      "xi_mvae": 1.057107579123413,
+      "observed_spread": 0.0013199108377230928,
+      "p_value_uniform": 0.00063,
+      "p_value_narrow": 0.01312,
+      "p_value_pair": 0.00138,
+      "convergent": true
+    },
+    "part_b": {
+      "n_total_formulas": 2250,
+      "hits_by_threshold": {
+        "0.0001": 0,
+        "0.001": 0,
+        "0.005": 1,
+        "0.01": 1,
+        "0.05": 3,
+        "0.1": 16
+      },
+      "champion_error_pct": 0.0011623379602085286,
+      "champion_rank": 1,
+      "top_hits": [
+        {
+          "formula": "1 + (7/8) * ln2^1 * (1-ln2)^2",
+          "a": 7,
+          "b": 8,
+          "p": 1,
+          "q": 2,
+          "value": 1.057107579123413,
+          "error_pct": 0.0011623379602085286
+        }
+      ],
+      "selective": true,
+      "p_selectivity": 0.00044444444444444447
+    },
+    "part_c": {
+      "n_seeds": 50,
+      "mean_org_fraction": 0.6661816049135599,
+      "std_org_fraction": 0.0016023151362403699,
+      "mean_exponent": -1.6122582602496067,
+      "mean_energy_partition": 0.49040354418083915,
+      "best_connection": "1 + (7/8) * org_frac * (1-org_frac)^2",
+      "best_connection_err_pct": 0.7412995327744782,
+      "bridge_found": true,
+      "connections_tested": [
+        [
+          "1 + org_frac - 1/2",
+          1.16618160491356,
+          10.316875308859721
+        ],
+        [
+          "1 / (1 - org_frac)",
+          2.9956407876835445,
+          183.37758875000867
+        ],
+        [
+          "org_frac + ln(2)",
+          1.3593287854735052,
+          28.58795190989103
+        ],
+        [
+          "1 + org_frac * ln(2)",
+          1.4617619011867333,
+          38.27778169799833
+        ],
+        [
+          "1 + (1 - org_frac) * ln(2)",
+          1.2313852793732118,
+          16.484924603015802
+        ],
+        [
+          "org_frac / (1 - ln(2))",
+          2.1710134719609506,
+          105.37060563386527
+        ],
+        [
+          "1 + org_frac^2",
+          1.4437979307252065,
+          36.57845023786679
+        ],
+        [
+          "1 + (1 - org_frac)^2",
+          1.1114347208980866,
+          5.138003380133619
+        ],
+        [
+          "(1 + org_frac) / (2 - org_frac)",
+          1.249181755965797,
+          18.16841170393502
+        ],
+        [
+          "1 + (7/8) * ln(2) * (1-org_frac)^2",
+          1.067585579781119,
+          0.9900214426551334
+        ],
+        [
+          "1 + (7/8) * org_frac * (1-org_frac)^2",
+          1.064956291059609,
+          0.7412995327744782
+        ],
+        [
+          "2 * org_frac / (1 + org_frac - org_frac^2)",
+          1.0899713714777737,
+          3.107642386841626
+        ]
+      ]
+    },
+    "part_d": {
+      "xi_floor_exact": true,
+      "xi_floor_value": 0.5195469860817986,
+      "clt_only": true,
+      "mean_clt_ratio": 0.9921516026472273,
+      "eta_pac": 1.082388821198522,
+      "xi_from_bridge": 1.057107579123413,
+      "bridge_error_pct": 0.0007169731731239107,
+      "best_k": 8,
+      "best_k_error_pct": 0.0007169731731239107,
+      "bridge_works": true,
+      "d_pass": true
+    },
+    "part_e": {
+      "prod1_grav_unc": 1.0,
+      "prod2_E_dt": 0.5,
+      "prod1_exact": true,
+      "prod2_exact": true,
+      "p_value_independent": 0.0,
+      "p_value_single_param": 1.0,
+      "p_value_power_law": 0.00015,
+      "conjugacy_exact": true,
+      "independent_params_fail": true
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "experiment": "minimum_actualization_resolution",
+  "script": "exp_10_ln2_uniqueness.py",
+  "timestamp": "2026-03-12T14:57:02.054658",
+  "verdicts": {
+    "A": "xi_floor > 0 for 1 integer(s): [2]",
+    "B": "b_max = e, xi_floor(e) = 0.0e+00 (boundary), binary at 58% of range",
+    "C": "Conjugacy base-independent: True. Floor base-dependent.",
+    "D": "Binary eta-1=0.082389, optimal base e^(1/3)=1.3956",
+    "E": "Binary uniquely selected: True. Ternary xi_floor = -0.2069 (invalid)"
+  },
+  "results": {
+    "part_a": {
+      "base_table": [
+        {
+          "base": 1.5,
+          "name": "sesqui",
+          "ln_b": 0.4054651081081644,
+          "xi_floor": 0.8355980461068346,
+          "physical": true
+        },
+        {
+          "base": 2,
+          "name": "binary",
+          "ln_b": 0.6931471805599453,
+          "xi_floor": 0.5195469860817986,
+          "physical": true
+        },
+        {
+          "base": 1.6487212707001282,
+          "name": "sqrt(e)",
+          "ln_b": 0.5,
+          "xi_floor": 0.75,
+          "physical": true
+        },
+        {
+          "base": 1.618033988749895,
+          "name": "golden",
+          "ln_b": 0.48121182505960347,
+          "xi_floor": 0.7684351794228056,
+          "physical": true
+        },
+        {
+          "base": 2.718281828459045,
+          "name": "natural (e)",
+          "ln_b": 1.0,
+          "xi_floor": 0.0,
+          "physical": false
+        },
+        {
+          "base": 3,
+          "name": "ternary",
+          "ln_b": 1.0986122886681098,
+          "xi_floor": -0.20694896081258207,
+          "physical": false
+        },
+        {
+          "base": 4,
+          "name": "quaternary",
+          "ln_b": 1.3862943611198906,
+          "xi_floor": -0.9218120556728056,
+          "physical": false
+        },
+        {
+          "base": 10,
+          "name": "decimal",
+          "ln_b": 2.302585092994046,
+          "xi_floor": -4.301898110478399,
+          "physical": false
+        }
+      ],
+      "valid_integers": [
+        2
+      ],
+      "binary_unique": true
+    },
+    "part_b": {
+      "b_max": 2.718281828459045,
+      "xi_at_e": 0.0,
+      "binary_position_in_range": 0.5819767068693265,
+      "binary_xi_floor": 0.5195469860817986
+    },
+    "part_c": {
+      "E_dt_universal": true,
+      "dx_product_universal": true,
+      "conclusion": "Base selects floor, not structure"
+    },
+    "part_d": {
+      "eta_table": [
+        {
+          "base": 1.1,
+          "name": "near-unity",
+          "eta": 1.7161557119199724,
+          "xi_pac": 1.068256929670987,
+          "xi_floor": 0.9909159696256673,
+          "eta_minus_1": 0.7161557119199724,
+          "physical": true
+        },
+        {
+          "base": 1.5,
+          "name": "sesqui",
+          "eta": 1.309287770467232,
+          "xi_pac": 1.1254053992890294,
+          "xi_floor": 0.8355980461068346,
+          "eta_minus_1": 0.3092877704672321,
+          "physical": true
+        },
+        {
+          "base": 2,
+          "name": "BINARY",
+          "eta": 1.082388821198522,
+          "xi_pac": 1.057107579123413,
+          "xi_floor": 0.5195469860817986,
+          "eta_minus_1": 0.08238882119852198,
+          "physical": true
+        },
+        {
+          "base": 1.4142135623730951,
+          "name": "sqrt(2)",
+          "eta": 1.3735953138046544,
+          "xi_pac": 1.1294782692170522,
+          "xi_floor": 0.8798867465204496,
+          "eta_minus_1": 0.3735953138046544,
+          "physical": true
+        },
+        {
+          "base": 1.618033988749895,
+          "name": "phi",
+          "eta": 1.235498524150739,
+          "xi_pac": 1.1133246746054202,
+          "xi_floor": 0.7684351794228056,
+          "eta_minus_1": 0.23549852415073902,
+          "physical": true
+        },
+        {
+          "base": 2.718281828459045,
+          "name": "e (natural)",
+          "eta": 1.0,
+          "xi_pac": 1.0,
+          "xi_floor": 0.0,
+          "eta_minus_1": 0.0,
+          "physical": false
+        },
+        {
+          "base": 3,
+          "name": "ternary",
+          "eta": 1.0085088355418173,
+          "xi_pac": 1.0093479112884964,
+          "xi_floor": -0.20694896081258207,
+          "eta_minus_1": 0.00850883554181725,
+          "physical": false
+        }
+      ],
+      "optimal_base": 1.3956124250860895,
+      "xi_pac_at_optimal": 1.1296296296296298,
+      "xi_pac_at_binary": 1.057107579123413,
+      "binary_vs_optimal": -0.07252205050621674
+    },
+    "part_e": {
+      "binary_xi_floor": 0.5195469860817986,
+      "ternary_xi_floor": -0.20694896081258207,
+      "margin_to_zero": 0.5195469860817986,
+      "binary_unique_integer": true,
+      "random_valid_fraction": 0.01752
+    }
+  }
+}

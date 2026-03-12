@@ -24,10 +24,17 @@ Planck-scale quantities emerge from the PAC framework as the **minimum viable ac
 | 6 | l_MVAE proximity to phi | Continued fraction prefix [1;1,1,1] | confirmed |
 | 7 | Euler gap | Xi - xi_PAC ~= 1/(240*pi) at 0.09% | confirmed |
 | 8 | ξ global attractor | Stabilizes by depth 3, robust sigma/branch/scale | confirmed |
+| 9 | Hardening suite | 5/5 PASS: selectivity, reducibility, bridge, attractor, conjugacy | confirmed |
+| 10 | SEC pump = MED regulation cost | Nested recycling falsified; xi_PAC = 1 + (modes)(dissipation)(regulation), 4/4 PASS | confirmed |
+| 11 | Dimensional MVAE | xi_PAC(d->inf) = 1.0653 ≠ Xi = 1.0584; gamma is independent | confirmed |
+| 12 | Euler gap 240 selectivity | 240 = F3*F4*F5*F6 rank #1/75, p=0.005 | confirmed |
+| 13 | Binary uniqueness | b=2 is ONLY integer with xi_floor > 0; thermodynamic necessity | confirmed |
 
 ---
 
 ## Scripts
+
+### Core Derivations (01-05)
 
 | Script | Tests |
 |--------|-------|
@@ -37,6 +44,21 @@ Planck-scale quantities emerge from the PAC framework as the **minimum viable ac
 | exp_04_eta_geometry.py | eta_PAC = 1+(7/8)(1-ln2)^2 from She-Leveque 3D cascade geometry (k_eff=8) |
 | exp_05_phi_proximity.py | l_MVAE ~= phi via continued fraction analysis; Euler gap Xi - xi_PAC analysis |
 
+### Hardening (06)
+
+| Script | Tests |
+|--------|-------|
+| exp_06_hardening.py | 5-part hardening suite: (A) formula selectivity rank #1/2250, (B) single-parameter reducibility, (C) cascade engine bridge, (D) PAC tree attractor with eta bridge, (E) three-constraint conjugacy products. **5/5 PASS** |
+
+### Deep Probes (07-10)
+
+| Script | Tests |
+|--------|-------|
+| exp_07_sec_pump_mechanism.py | SEC pump mechanism via MED. (A) Falsify nested recycling (0.780 != 1.057). (B) MED regulation cost = eta-1. (C) Lyapunov (1-ln2)^2 structure. (D) 3-factor decomposition: xi_PAC = 1 + (She-Leveque)(Landauer)(MED). **4/4 PASS** |
+| exp_08_dimensional_mvae.py | MVAE predictions across dimensions d=1..10. **Finding**: xi_PAC(d) monotonically increasing; d->inf limit = 1.0653, NOT Xi = 1.0584. gamma is independent of cascade geometry. |
+| exp_09_euler_gap_240.py | Tests Euler gap = 1/(240*pi) where 240 = F3*F4*F5*F6 (E8 root vectors). **Finding**: 240 is rank #1/75 Fibonacci products (p=0.005). gamma NOT derivable from Fibonacci. |
+| exp_10_ln2_uniqueness.py | Tests whether binary (b=2) is uniquely selected by MVAE. **Finding**: b=2 is the ONLY integer with xi_floor > 0. Conjugacy is base-independent; the floor selects binary. |
+
 ---
 
 ## Analysis
@@ -45,13 +67,17 @@ Planck-scale quantities emerge from the PAC framework as the **minimum viable ac
 
 ```
 PAC constraints
-    |-- Landauer erasure      --> xi_floor = 1 - ln^2(2)
-    |-- Heisenberg uncertainty --> confirms Planck as MVAE
-    |-- Schwarzschild self-trapping --> confirms Planck as MVAE
-    |-- She-Leveque 3D cascade (k_eff=8) --> eta_PAC = 1 + (7/8)(1-ln2)^2
-    |-- Combined --> xi_PAC = 1 + (7/8) x ln(2) x (1-ln2)^2
-    |-- Continued fraction --> l_MVAE ~= phi = [1;1,1,1,...]
-    `-- Discrete-to-continuum --> Euler gap Xi - xi_PAC ~= 1/(240*pi)
+    |-- Landauer erasure         --> xi_floor = 1 - ln^2(2)
+    |-- Heisenberg uncertainty   --> confirms Planck as MVAE
+    |-- Schwarzschild trapping   --> confirms Planck as MVAE
+    |-- She-Leveque 3D (k_eff=8) --> f = 7/8 (active mode fraction)
+    |-- MED balance operator      --> C = (1-ln2)^2 (Lyapunov regulation cost)
+    |-- Combined                  --> xi_PAC = 1 + f * ln(2) * C
+    |                                       = 1 + (modes)(dissipation)(regulation)
+    |-- Continued fraction        --> l_MVAE ~= phi = [1;1,1,1,...]
+    |-- Euler gap                 --> Xi - xi_PAC ~= 1/(240*pi), 240 = F3*F4*F5*F6
+    |-- Dimensional limit         --> xi(d->inf) = 1 + ln2*(1-ln2)^2 (drop f)
+    `-- Binary uniqueness         --> b=2 is only integer with xi_floor > 0
 ```
 
 ### MVAE Properties (Planck units: hbar = G = c = k_B = 1)
@@ -66,8 +92,8 @@ PAC constraints
 ### Key Identities
 
 - **xi_floor** = 1 - ln^2(2) = 0.51955 — the pure Landauer cascade floor, achieved with zero variance
-- **eta_PAC** = 1 + (7/8)(1-ln2)^2 = 1.08239 — derived from 3D She-Leveque k_eff=8 geometry; 7 of 8 BCC nearest-neighbor modes recycle at second-order Landauer efficiency
-- **xi_PAC closed form** = 1 + (7/8) x ln(2) x (1-ln2)^2 = 1.05711, matching xi_PAC = 1.0571 to 0.0007%
+- **eta_PAC** = 1 + (7/8)(1-ln2)^2 = 1.08239 — NOT recycling (falsified in exp_07A), but MED complexity regulation cost: (7/8) active modes x (1-ln2)^2 Lyapunov balance cost
+- **xi_PAC closed form** = 1 + (7/8) x ln(2) x (1-ln2)^2 = 1.05711 — three-factor decomposition: (She-Leveque modes)(Landauer energy)(MED regulation), matching xi_PAC = 1.0571 to 0.0007%
 - **Euler gap** Xi - xi_PAC = gamma + ln(phi) - 1.0571 = 0.001327, best approximated by 1/(240*pi) at 0.09% error
 
 ### l_MVAE ~= phi Structure
@@ -82,6 +108,26 @@ The eta_PAC derivation connects to 3D turbulence cascade geometry:
 - N = 8 nearest-neighbor modes in 3D BCC cascade
 - 7 modes recycle, 1 transmits forward
 - eta_PAC = 1 + (7/8)(1-ln2)^2 at 0.001% error
+
+### Three-Factor Decomposition (exp_07)
+
+xi_PAC = 1 + f * E * C where:
+- **f = 7/8** — active mode fraction from She-Leveque 3D cascade geometry (k_eff=8)
+- **E = ln(2)** — Landauer erasure energy per bit
+- **C = (1-ln2)^2** — MED balance operator Lyapunov cost V(x) = (1-x)^2 at x=ln(2)
+
+Factor isolation cross-checks:
+- 1 + f*C = eta_PAC = 1.0824 (exp_04 derived independently)
+- 1 + E*C = 1.0653 = d->inf limit (exp_08 derived independently)
+- 1 + f*E*C = xi_PAC = 1.0571 (exp_06 hardened)
+
+---
+
+### Open Questions
+
+- **gamma**: Xi = gamma + ln(phi) but gamma is NOT derivable from Fibonacci, cascade geometry, or MED. It enters through harmonic series / number theory — the origin is unknown.
+- **2D bridge**: The generalized bridge formula doesn't extend to 2D (3% error). MED suggests 2D needs only 2 patterns (not 3), which may require a dimension-dependent bridge.
+- **4D cascade**: DNS measured k=10.78 vs predicted k=20. The offset grows with dimension — not a constant k-1.
 
 ---
 
