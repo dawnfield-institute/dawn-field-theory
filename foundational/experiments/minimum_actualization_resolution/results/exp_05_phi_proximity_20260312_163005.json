@@ -1,0 +1,325 @@
+{
+  "experiment": "phi_proximity_euler_gap",
+  "script": "script5_phi_proximity.py",
+  "hypothesis": "l_MVAE proximity to \u03c6 and Euler gap arise from known constant identities",
+  "timestamp": "2026-03-12T16:30:05.594409",
+  "parameters": {
+    "PHI": 1.618033988749895,
+    "LN2": 0.6931471805599453,
+    "LN_PHI": 0.48121182505960347,
+    "GAMMA": 0.5772156649015328,
+    "L_MVAE": 1.6294456766354646,
+    "XI_PAC": 1.0571,
+    "XI_EULER": 1.0584274899611361,
+    "EULER_GAP": 0.0013274899611361857
+  },
+  "results": {
+    "section_A_ln2_phi_gap": {
+      "delta": 0.0021641749348927375,
+      "phi_ln2_equiv": 0.6909830056250525,
+      "delta_formula": "ln2 - (3-phi)/2 = ln2 - 3/2 + phi/2",
+      "best_candidates": {
+        "1/462": {
+          "value": 0.0021645021645021645,
+          "error_pct": 0.01512029384275394,
+          "formula": "1/(2\u00d73\u00d77\u00d711) = 1/462"
+        },
+        "(ln2-phi_inv)^2": {
+          "value": 0.005641991583893437,
+          "error_pct": 160.69942373549713,
+          "formula": "(ln2\u2212\u03c6_inv)\u00b2"
+        },
+        "ln2_floor^3": {
+          "value": 0.028892848085838873,
+          "error_pct": 1235.0514147448475,
+          "formula": "(1-ln2)\u00b3"
+        },
+        "1/phi^4": {
+          "value": 0.1458980337503154,
+          "error_pct": 6641.508341031891,
+          "formula": "PHI_INV^4 = (\u03c6-1)^4"
+        },
+        "phi_inv/phi^3": {
+          "value": 0.14589803375031543,
+          "error_pct": 6641.508341031893,
+          "formula": "\u03c6\u207b\u00b9/\u03c6\u00b3 = 1/\u03c6\u2074"
+        }
+      }
+    },
+    "section_B_continued_fraction": {
+      "cf_phi": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cf_lmvae": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        3,
+        7,
+        6,
+        4,
+        1,
+        1,
+        21
+      ],
+      "common_prefix_length": 4,
+      "divergence_at_term": 4,
+      "phi_term_at_divergence": 1,
+      "lmvae_term_at_divergence": 2,
+      "convergents_lmvae": [
+        [
+          1,
+          1,
+          1.0
+        ],
+        [
+          2,
+          1,
+          2.0
+        ],
+        [
+          3,
+          2,
+          1.5
+        ],
+        [
+          5,
+          3,
+          1.6666666666666667
+        ],
+        [
+          13,
+          8,
+          1.625
+        ],
+        [
+          44,
+          27,
+          1.6296296296296295
+        ],
+        [
+          321,
+          197,
+          1.6294416243654823
+        ],
+        [
+          1970,
+          1209,
+          1.6294458229942101
+        ]
+      ]
+    },
+    "section_C_log_phi_decomp": {
+      "log_phi_2": 1.4404200904125564,
+      "x_self_consistent": 1.435922746785091,
+      "gap_in_log_phi_2": 0.0044973436274653444,
+      "fib_pac_r_plus": 1.6596402273912547,
+      "r_plus_vs_phi_pct": 2.571406962439961,
+      "r_plus_vs_lmvae_pct": 1.8530566062280078
+    },
+    "section_D_euler_gap": {
+      "euler_gap": 0.0013274899611361857,
+      "xi_euler": 1.0584274899611361,
+      "xi_pac": 1.0571,
+      "best_candidates": {
+        "1/(240*pi)": {
+          "value": 0.0013262911924324613,
+          "error_pct": 0.09030341010626969,
+          "formula": "1/(240\u03c0) \u2014 120-cell / 5! connection"
+        },
+        "1/(239*pi)": {
+          "value": 0.0013318405279656514,
+          "error_pct": 0.32772879319871506,
+          "formula": "Inverse integer-\u03c0 product"
+        },
+        "ln2^18": {
+          "value": 0.0013641379743378707,
+          "error_pct": 2.7606998376332967,
+          "formula": "Power of ln2"
+        },
+        "1/(2pi*F_12=144)": {
+          "value": 0.0011052426603603844,
+          "error_pct": 16.74191950842189,
+          "formula": "Inverse 2\u03c0\u00b7Fibonacci"
+        },
+        "ln2*ln_phi^2": {
+          "value": 0.1605085024999519,
+          "error_pct": 11991.127405782734,
+          "formula": "ln(2) \u00d7 ln\u00b2(\u03c6)"
+        },
+        "ln_phi^3/ln2": {
+          "value": 0.160762004167042,
+          "error_pct": 12010.223720972426,
+          "formula": "ln\u00b3(\u03c6) / ln(2)"
+        },
+        "gamma^3": {
+          "value": 0.19231551682118447,
+          "error_pct": 14387.154136863192,
+          "formula": "\u03b3\u00b3 = Euler-Mascheroni cubed"
+        },
+        "ln_phi^2": {
+          "value": 0.2315648205771944,
+          "error_pct": 17343.80954707939,
+          "formula": "ln\u00b2(\u03c6)"
+        },
+        "gamma*ln2^2": {
+          "value": 0.27732500588274,
+          "error_pct": 20790.93055328119,
+          "formula": "\u03b3 \u00d7 ln\u00b2(2)"
+        }
+      },
+      "1_over_240pi": 0.0013262911924324613,
+      "1_over_240pi_err_pct": 0.09030341010626969
+    },
+    "section_E_fib_refinement": {
+      "euler_gap": 0.0013274899611361857,
+      "refinement_levels": [
+        {
+          "n": 2,
+          "F_n": 1,
+          "F_n1": 2,
+          "phi_err": 0.3819660112501051,
+          "xi_correction_est": 0.1838065613844001
+        },
+        {
+          "n": 3,
+          "F_n": 2,
+          "F_n1": 3,
+          "phi_err": 0.1180339887498949,
+          "xi_correction_est": 0.05679935114540163
+        },
+        {
+          "n": 4,
+          "F_n": 3,
+          "F_n1": 5,
+          "phi_err": 0.04863267791677184,
+          "xi_correction_est": 0.02340261969786565
+        },
+        {
+          "n": 5,
+          "F_n": 5,
+          "F_n1": 8,
+          "phi_err": 0.018033988749894814,
+          "xi_correction_est": 0.00867816863944124
+        },
+        {
+          "n": 6,
+          "F_n": 8,
+          "F_n1": 13,
+          "phi_err": 0.0069660112501050975,
+          "xi_correction_est": 0.0033521269870488038
+        },
+        {
+          "n": 7,
+          "F_n": 13,
+          "F_n1": 21,
+          "phi_err": 0.0026493733652794837,
+          "xi_correction_est": 0.0012749097923704438
+        },
+        {
+          "n": 8,
+          "F_n": 21,
+          "F_n1": 34,
+          "phi_err": 0.0010136302977241662,
+          "xi_correction_est": 0.00048777088550355525
+        },
+        {
+          "n": 9,
+          "F_n": 34,
+          "F_n1": 55,
+          "phi_err": 0.00038692992636546464,
+          "xi_correction_est": 0.00018619525603650323
+        },
+        {
+          "n": 10,
+          "F_n": 55,
+          "F_n1": 89,
+          "phi_err": 0.00014782943192326314,
+          "xi_correction_est": 7.113727073331786e-05
+        },
+        {
+          "n": 11,
+          "F_n": 89,
+          "F_n1": 144,
+          "phi_err": 5.6460660007306984e-05,
+          "xi_correction_est": 2.7169537246185958e-05
+        },
+        {
+          "n": 12,
+          "F_n": 144,
+          "F_n1": 233,
+          "phi_err": 2.15668056606777e-05,
+          "xi_correction_est": 1.0378201912680504e-05
+        },
+        {
+          "n": 13,
+          "F_n": 233,
+          "F_n1": 377,
+          "phi_err": 8.237676933475768e-06,
+          "xi_correction_est": 3.964067551409272e-06
+        },
+        {
+          "n": 14,
+          "F_n": 377,
+          "F_n1": 610,
+          "phi_err": 3.1465286196574738e-06,
+          "xi_correction_est": 1.5141467796676479e-06
+        },
+        {
+          "n": 15,
+          "F_n": 610,
+          "F_n1": 987,
+          "phi_err": 1.2018646489142526e-06,
+          "xi_correction_est": 5.783514811786471e-07
+        },
+        {
+          "n": 16,
+          "F_n": 987,
+          "F_n1": 1597,
+          "phi_err": 4.590717870289751e-07,
+          "xi_correction_est": 2.209107724695867e-07
+        },
+        {
+          "n": 17,
+          "F_n": 1597,
+          "F_n1": 2584,
+          "phi_err": 1.7534976959332482e-07,
+          "xi_correction_est": 8.43803826497848e-08
+        }
+      ],
+      "interpretation": "Gap ~ ln(phi) / (F_n * F_{n+1}) at some level n"
+    },
+    "section_F_unified": {
+      "l_mvae": 1.6294456766354646,
+      "phi": 1.618033988749895,
+      "l_mvae_over_phi": 1.0070528109822874,
+      "cf_common_prefix": 4,
+      "delta_ln2_phi_equiv": 0.0021641749348927375,
+      "best_delta_formula": "1/462",
+      "fib_pac_r_plus": 1.6596402273912547,
+      "r_plus_vs_phi_pct": 2.571406962439961,
+      "summary": "l_MVAE \u2248 \u03c6 because they share 4 CF levels [1;1,1,1,...]. Not an exact identity: gap in ln2 from \u03c6-equivalence = 0.00216417. Fibonacci-PAC recursion limit r+ = 1.65964023 lies between them."
+    },
+    "section_G_gap_table": {
+      "l_mvae_over_phi_minus_1": 0.007052810982287383,
+      "delta_ln2_phi_equiv": 0.0021641749348927375,
+      "euler_gap": 0.0013274899611361857,
+      "euler_gap_1_over_240pi": 0.0013262911924324613,
+      "euler_gap_1_over_240pi_err_pct": 0.09030341010626969,
+      "xi_pac_minus_xi_floor": 0.5375530139182013
+    }
+  },
+  "summary": "Thread 2: l_MVAE\u2248\u03c6 is a CF proximity (4 shared CF levels [1;1,1,1]), not exact. Gap in ln2 from \u03c6-exact-cutoff: \u03b4=0.00216417. Fibonacci-PAC recursion limit r+=1.65964023 lies between \u03c6 and l_MVAE. Thread 3: Euler gap=0.00132749; 1/(240\u03c0)=0.00132629 (err=0.090%). Gap shrinks with Fibonacci lattice refinement.",
+  "verdict": "inconclusive"
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "planck_to_xi",
+  "script": "planck_to_xi.py",
+  "hypothesis": "All MVAE prefactors are functions of ln(2); \u03be_PAC connects to Planck via recycling bridge \u03b7",
+  "timestamp": "2026-03-12T16:05:51.819498",
+  "parameters": {
+    "PHI": 1.618033988749895,
+    "XI_PAC": 1.0571,
+    "LN2": 0.6931471805599453,
+    "LN_PHI": 0.48121182505960347,
+    "GAMMA": 0.5772156649015328,
+    "XI_EULER": 1.0584274899611361,
+    "XI_FLOOR": 0.5195469860817986,
+    "ETA_FLOOR": 0.3068528194400547,
+    "ETA_PAC": 1.0823778868347598
+  },
+  "results": {
+    "mvae_prefactors_all_ln2": true,
+    "E_mvae": 0.6931471805599453,
+    "t_mvae": 0.7213475204444817,
+    "l_mvae": 1.6294456766354646,
+    "xi_floor": 0.5195469860817986,
+    "xi_floor_formula": "1 - ln\u00b2(2)",
+    "eta_floor": 0.3068528194400547,
+    "eta_floor_formula": "1 - ln(2)",
+    "eta_pac": 1.0823778868347598,
+    "eta_pac_formula": "(\u03be_PAC - (1-ln2))/ln2",
+    "eta_pac_greater_than_1": true,
+    "xi_euler": 1.0584274899611361,
+    "xi_euler_formula": "\u03b3 + ln(\u03c6)",
+    "euler_gap": 0.0013274899611361857,
+    "all_verifications_pass": true,
+    "candidates_near_xi_pac": [],
+    "ln_phi_web_entry": 0.48121182505960347
+  },
+  "summary": "Unified derivation complete. All MVAE prefactors are ln(2) functions. \u03be_floor = 1-ln\u00b2(2) = 0.519547 from pure Landauer (\u03b7=1-ln2). \u03b7_PAC = 1.082378 > 1 (SEC pump required). \u039e = \u03b3+ln(\u03c6) = 1.058427; Euler gap = 0.0013. All 8 numerical verifications pass.",
+  "verdict": "confirmed"
+}
