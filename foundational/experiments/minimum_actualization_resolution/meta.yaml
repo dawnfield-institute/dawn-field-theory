@@ -1,0 +1,27 @@
+schema_version: "2.0"
+description: "Derives Planck scale as minimum viable actualization event (MVAE) from PAC constraints"
+semantic_scope: "research"
+proficiency_level: "research"
+validation_type: "computational"
+status: "active"
+tags:
+  - planck-scale
+  - pac
+  - mvae
+  - landauer
+  - heisenberg
+  - schwarzschild
+  - xi-floor
+  - eta-pac
+  - phi-proximity
+related_experiments: []
+estimated_context_weight: 0.7
+files:
+  - "[README.md]": "Overview and results"
+child_directories:
+  - name: "scripts"
+    description: "5 experiment scripts testing Planck-from-PAC derivations"
+  - name: "results"
+    description: "Numerical output data"
+  - name: "journals"
+    description: "Research logs"

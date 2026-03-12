@@ -1,0 +1,50 @@
+{
+  "experiment": "planck_from_pac",
+  "script": "planck_from_pac.py",
+  "hypothesis": "PAC Landauer constraints produce a hard Planck-scale cutoff at ~1.629 l_P",
+  "timestamp": "2026-03-12T16:01:57.614688",
+  "parameters": {
+    "PHI": 1.618033988749895,
+    "XI_PAC": 1.0571,
+    "LN2": 0.6931471805599453,
+    "LN_PHI": 0.48121182505960347,
+    "n_lattice_points": 500,
+    "lattice_range": [
+      0.01,
+      100.0
+    ]
+  },
+  "results": {
+    "section_A_lattice": {
+      "cutoff_theoretical": 1.6294456766354646,
+      "cutoff_numerical": 1.6308906755493335,
+      "error_percent": 0.08868039816170116,
+      "cutoff_over_phi": 1.0070528109822874,
+      "n_viable": 224,
+      "n_blocked": 276
+    },
+    "section_B_constraints": {
+      "t_landauer": 0.7213475204444817,
+      "t_uncertainty": 0.5,
+      "t_schwarzschild": 1.0,
+      "geometric_mean": 0.7118221793644285,
+      "spread_factor": 2.0,
+      "all_order_unity": true
+    },
+    "section_C_speed_of_light": {
+      "l_MVAE": 1.6294456766354646,
+      "t_MVAE": 0.7213475204444817,
+      "l_over_t_MVAE": 2.258891353270929,
+      "deviation_from_c": 1.2588913532709292
+    },
+    "section_D_mvae": {
+      "E_MVAE": 0.6931471805599453,
+      "t_MVAE": 0.7213475204444817,
+      "l_MVAE": 1.6294456766354646,
+      "m_MVAE": 0.6931471805599453,
+      "all_functions_of_ln2": true
+    }
+  },
+  "summary": "Hard MVAE cutoff at 1.6294 l_P (= 1/(2(1-ln2))). Three constraints spread 2.00x but all within O(1) Planck time. All MVAE prefactors are functions of ln(2).",
+  "verdict": "confirmed"
+}
