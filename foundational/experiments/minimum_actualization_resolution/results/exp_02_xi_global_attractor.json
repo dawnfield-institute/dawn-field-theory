@@ -1,0 +1,36 @@
+{
+  "experiment": "xi_global_attractor",
+  "script": "xi_global_attractor.py",
+  "hypothesis": "\u03be_PAC is global attractor; pure Landauer gives \u03be_floor = 1-ln\u00b2(2) exactly",
+  "timestamp": "2026-03-12T16:05:39.024712",
+  "parameters": {
+    "PHI": 1.618033988749895,
+    "XI_PAC": 1.0571,
+    "LN2": 0.6931471805599453,
+    "XI_FLOOR": 0.5195469860817986,
+    "ETA_FOR_XI_PAC": 1.0823778868347598,
+    "max_depth": 14,
+    "n_trials": 30
+  },
+  "results": {
+    "2A_stabilization_depth": 3,
+    "2B_n_converged": 8,
+    "2B_total": 8,
+    "2C_n_converged": 5,
+    "2C_total": 5,
+    "2D_n_converged": 8,
+    "2D_total": 8,
+    "2E_local_violation_pct": 64.49761933829812,
+    "2E_expected_violation_pct": 64.82746969861738,
+    "2E_final_global_xi": 1.0586936774291824,
+    "2G_xi_floor_computed": 0.5195469860817986,
+    "2G_xi_floor_predicted": 0.5195469860817986,
+    "2G_xi_floor_error": 0.0,
+    "2G_xi_floor_std": 0.0,
+    "2G_eta_for_xi_pac": 1.0823778868347598,
+    "2G_xi_pac_from_formula": 1.0571,
+    "2G_eta_pac_gt_1": true
+  },
+  "summary": "\u03be_PAC attractor: stabilizes at depth 3, robust \u03c3 (8/8), branch (5/5), scale (8/8). Local violations: 64.5% (predicted 64.8%). Pure Landauer: \u03be_floor=0.51954699 (pred=0.51954699), error=0.00e+00, std=0 exactly. \u03b7_PAC=1.082378 (> 1: SEC pump required).",
+  "verdict": "confirmed"
+}
