@@ -1,0 +1,152 @@
+{
+  "experiment": "eta_geometry",
+  "script": "script4_eta_geometry.py",
+  "hypothesis": "\u03b7_PAC = 1.0824 derives from 3D cascade geometry (N=8 modes, org_frac=2/3, \u03b7_floor=1-ln2) via \u03b7 = 1 + (N-1)/N \u00d7 \u03b7_floor\u00b2",
+  "timestamp": "2026-03-12T16:29:33.499243",
+  "parameters": {
+    "PHI": 1.618033988749895,
+    "LN2": 0.6931471805599453,
+    "XI_PAC": 1.0571,
+    "XI_FLOOR": 0.5195469860817986,
+    "ETA_FLOOR": 0.3068528194400547,
+    "ETA_PAC": 1.0823778868347598,
+    "N_MODES": 8,
+    "ORG_FRAC": 0.6666666666666666,
+    "KAPPA": 1.6666666666666667
+  },
+  "results": {
+    "section_A_formula_survey": {
+      "1 + (2/3)/8": {
+        "value": 1.0833333333333333,
+        "error_pct": 0.08827291375727718,
+        "formula": "She-L\u00e9v\u00eaque org_frac / N_modes"
+      },
+      "1 + (5/3-1)/8": {
+        "value": 1.0833333333333333,
+        "error_pct": 0.08827291375727718,
+        "formula": "Kolmogorov excess / N_modes"
+      },
+      "1 + (7/8)*(1-ln2)^2": {
+        "value": 1.082388821198522,
+        "error_pct": 0.0010102168471106533,
+        "formula": "(N-1)/N \u00d7 \u03b7_floor\u00b2, N=8, \u03b7_floor=1-ln2"
+      },
+      "xi_PAC_from_A3": {
+        "xi_value": 1.057107579123413,
+        "xi_error_pct": 0.0007169731731239107,
+        "formula": "1 + (7/8)*ln(2)*(1-ln(2))^2"
+      },
+      "1 + (1-2^(-5/3))/8": {
+        "value": 1.0856274671907853,
+        "error_pct": 0.3002260481806767,
+        "formula": "Cascade fraction / N_modes"
+      },
+      "1 + 2^(-5/3)*(2/3)": {
+        "value": 1.2099868416491455,
+        "error_pct": 11.789686057570671,
+        "formula": "Retained fraction \u00d7 org_frac"
+      },
+      "exp(1/(4\u03c0))": {
+        "value": 1.0828294447511206,
+        "error_pct": 0.04171906335608684,
+        "formula": "Sphere solid angle formula"
+      },
+      "2^(1/9)": {
+        "value": 1.080059738892306,
+        "error_pct": 0.21417177592501585,
+        "formula": "Scale doubling per 9 modes"
+      },
+      "(9/8)^(2/3)": {
+        "value": 1.0816871777305563,
+        "error_pct": 0.06381404430048945,
+        "formula": "(k_SL/k_eff)^(Kolmogorov excess)"
+      },
+      "1 + ln2*(1-ln2)^2": {
+        "value": 1.065265804712472,
+        "error_pct": 1.58097114976447,
+        "formula": "Full Landauer-floor coupling"
+      },
+      "(1 + 1/8)^(2/3)": {
+        "value": 1.0816871777305563,
+        "error_pct": 0.06381404430048945,
+        "formula": "(1+1/N)^org_frac"
+      },
+      "1 + \u03b6_3/8": {
+        "value": 1.125,
+        "error_pct": 3.937821871978718,
+        "formula": "Exact She-L\u00e9v\u00eaque: \u03b6_3=1 so 1+1/N"
+      }
+    },
+    "section_B_champion": {
+      "eta_formula": "1 + (N-1)/N * (1-ln2)^2",
+      "N_modes": 8,
+      "eta_computed": 1.082388821198522,
+      "eta_actual": 1.0823778868347598,
+      "eta_error_pct": 0.0010102168471106533,
+      "xi_pac_formula": "1 + (N-1)/N * ln(2) * (1-ln2)^2",
+      "xi_pac_geometric": 1.057107579123413,
+      "xi_pac_nominal": 1.0571,
+      "xi_pac_match_pct": 0.0007169731731239107,
+      "interpretation": "7 of 8 BCC nearest-neighbor modes recycle at second-order Landauer efficiency"
+    },
+    "section_C_dimensional": {
+      "d=2": {
+        "F_d1": 2,
+        "k_sl": 4,
+        "k_eff": 3,
+        "eta_d": 1.0627724351988739,
+        "xi_pac_d": 1.0435105364749813
+      },
+      "d=3": {
+        "F_d1": 3,
+        "k_sl": 9,
+        "k_eff": 8,
+        "eta_d": 1.082388821198522,
+        "xi_pac_d": 1.057107579123413
+      },
+      "d=4": {
+        "F_d1": 5,
+        "k_sl": 20,
+        "k_eff": 19,
+        "eta_d": 1.0892029342299787,
+        "xi_pac_d": 1.0618307623591838
+      },
+      "d=5": {
+        "F_d1": 8,
+        "k_sl": 40,
+        "k_eff": 39,
+        "eta_d": 1.091744328367585,
+        "xi_pac_d": 1.0635923225403572
+      }
+    },
+    "section_D_kolmogorov": {
+      "frac_forward": 0.6850197375262816,
+      "frac_retained": 0.3149802624737183,
+      "eta_kol1": 1.2099868416491455,
+      "eta_kol1_err_pct": 11.789686057570671,
+      "eta_kol2": 1.0393725328092147,
+      "eta_kol2_err_pct": 3.9732291788875425
+    },
+    "section_E_selfconsistency": {
+      "xi_formula": 1.057107579123413,
+      "eta_from_formula": 1.082388821198522,
+      "eta_expected": 1.082388821198522,
+      "self_consistent": true,
+      "xi_bridge": 1.0571,
+      "xi_nominal": 1.0571
+    },
+    "section_F_grid_search": {
+      "n_found": 1,
+      "threshold_pct": 0.5,
+      "top_10": [
+        {
+          "formula": "1 + (0.8750) \u00d7 (1-ln2)^2 \u00d7 ln2^0",
+          "value": 1.082388821198522,
+          "error_pct": 0.0010102168471106533
+        }
+      ]
+    }
+  },
+  "summary": "Champion formula: \u03b7 = 1 + (7/8)(1-ln2)\u00b2 = 1.08238882 (err=0.00101%). Implies \u03be_PAC = 1 + (7/8)\u00d7ln2\u00d7(1-ln2)\u00b2 = 1.05710758 (err=0.000717%). Derivation chain: 3D \u2192 k_SL=9 \u2192 k_eff=8 \u2192 (7/8)(1-ln2)\u00b2.",
+  "verdict": "confirmed"
+}
