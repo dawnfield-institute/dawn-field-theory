@@ -1,0 +1,119 @@
+{
+  "experiment": "minimum_actualization_resolution",
+  "script": "exp_15_delta_closed_form.py",
+  "timestamp": "2026-03-12T19:31:35.306108",
+  "verdicts": {
+    "A": "Best match: gamma/(3*89) (0.1071%)",
+    "B": "CF = [0, 462, 14, 3, 5, 1, 3, 1, ...]",
+    "C": "17 matches < 0.01%. Best: (3*ln(phi) + -3*gamma + 1/pi) / 14",
+    "D": "delta = ln(2) + (phi-3)/2 \u2014 transcendental, irreducible",
+    "E": "delta = ln2 surcharge above phi-optimal (0.31%)"
+  },
+  "results": {
+    "part_a": {
+      "best_single": [],
+      "best_double": [],
+      "best_rational": [
+        {
+          "formula": "gamma/(3*89)",
+          "value": 0.0021618564228521827,
+          "error_pct": 0.10713145241512952
+        }
+      ],
+      "overall_best": [
+        {
+          "formula": "gamma/(3*89)",
+          "value": 0.0021618564228521827,
+          "error_pct": 0.10713145241512952
+        }
+      ]
+    },
+    "part_b": {
+      "cf": [
+        0,
+        462,
+        14,
+        3,
+        5,
+        1,
+        3,
+        1,
+        22,
+        2,
+        2,
+        1,
+        53,
+        1,
+        1,
+        2,
+        1,
+        19,
+        1,
+        3
+      ]
+    },
+    "part_c": {
+      "best_linear": [
+        {
+          "formula": "(3*ln(phi) + -3*gamma + 1/pi) / 14",
+          "error_pct": 0.00027206176505898164,
+          "N": 14
+        },
+        {
+          "formula": "(-3*gamma + 2) / 124",
+          "error_pct": 0.001746412135255116,
+          "N": 124
+        },
+        {
+          "formula": "(-3*ln(phi) + -1/pi + 2) / 110",
+          "error_pct": 0.0019340567278561384,
+          "N": 110
+        },
+        {
+          "formula": "(1*ln(phi) + -2*gamma + 1) / 151",
+          "error_pct": 0.0030355579003954985,
+          "N": 151
+        },
+        {
+          "formula": "(-2*ln(phi) + 1*gamma + -1/pi + 1) / 137",
+          "error_pct": 0.003317958965300359,
+          "N": 137
+        },
+        {
+          "formula": "(2*ln(phi) + -1*gamma) / 178",
+          "error_pct": 0.003933614500829922,
+          "N": 178
+        },
+        {
+          "formula": "(-1*ln(phi) + 2*gamma + -1/pi) / 164",
+          "error_pct": 0.004246186075803722,
+          "N": 164
+        },
+        {
+          "formula": "(3*gamma + -1/pi + -1) / 191",
+          "error_pct": 0.004911982484939808,
+          "N": 191
+        },
+        {
+          "formula": "(1*ln2 + 3*ln(phi) + 1*gamma + 2/pi + -3) / 162",
+          "error_pct": 0.00620472971298963,
+          "N": 162
+        },
+        {
+          "formula": "(-3*ln2 + -2*ln(phi) + -1*gamma + 4) / 176",
+          "error_pct": 0.0063940907135548375,
+          "N": 176
+        }
+      ]
+    },
+    "part_d": {
+      "closed_form": "ln(2) + (phi-3)/2",
+      "alt_form": "ln(2) - (5-sqrt(5))/4",
+      "transcendental": true
+    },
+    "part_e": {
+      "surcharge_pct": 0.3132023388817006,
+      "l_mvae_over_phi": 1.0070528109822874
+    }
+  }
+}

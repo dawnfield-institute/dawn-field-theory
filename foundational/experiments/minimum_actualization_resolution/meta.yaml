@@ -19,16 +19,36 @@ tags:
   - euler-gap
   - binary-uniqueness
   - ln2
+  - gamma-origin
+  - temporal-euler-gap
+  - entropic-pressure
+  - confluence-period-4
+  - harmonic-bridge
+  - separation-counting-branching
+  - temporal-cascade
+  - pac-eddington-regulator
+  - Li2-identity
+  - digamma
+  - spectral-measure
+  - fibonacci-ratio-coupling
+  - xi-spread
+  - free-streaming
+  - bao-scale
+  - s8-tension
+  - cosmological-prediction
 related_experiments:
   - landauer_erasure_structure
   - pac_confluence_xi
   - sec_threshold_detection
+  - sec_prime_manifold
+  - prime_harmonic_manifold
+  - pi_harmonics
 estimated_context_weight: 0.8
 files:
   - "[README.md]": "Overview and results"
 child_directories:
   - name: "scripts"
-    description: "10 experiment scripts: MVAE derivations (01-05), hardening (06), deep probes (07-10)"
+    description: "27 experiment scripts: MVAE derivations (01-05), hardening (06), deep probes (07-10), origin probes (11-13), Euler gap analysis (14-16), temporal & cosmological (17-18), gamma & separation (19-20), cascade & cosmological (21-22), harmonic bridge (23), cascade refinement (24), physical separation (25), Xi spread (26), free-streaming cosmology (27)"
   - name: "results"
     description: "Numerical output data"
   - name: "journals"

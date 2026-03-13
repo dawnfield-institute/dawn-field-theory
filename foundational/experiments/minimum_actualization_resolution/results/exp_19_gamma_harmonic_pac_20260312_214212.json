@@ -1,0 +1,48 @@
+{
+  "experiment": "exp_19_gamma_harmonic_pac",
+  "timestamp": "2026-03-12T21:42:12.070099",
+  "results": {
+    "partA": {
+      "Z_inf_discrete": 1.6180339887498947,
+      "Z_inf_continuum": 1.2843283488998725,
+      "gap": 0.3337056398500222,
+      "euler_maclaurin_first": 0.3090169943749474,
+      "info_weighted_sum": 0.9624236501192067,
+      "li2_phi": 0.7553956195317415,
+      "li2_known": 0.7553956195317414
+    },
+    "partB": {
+      "pac_harmonic_sum": 2.51965782758882,
+      "phi_ln_phi": 0.7786170887348068,
+      "average_H_pac": 1.5572341774696135,
+      "ln_phi": 0.48121182505960347
+    },
+    "partC": {
+      "fib_reciprocal": 3.359885666243178,
+      "fib_gamma": 1.7418516774932835,
+      "gamma": 0.5772156649015328,
+      "fib_gamma_over_gamma": 3.0176791508082617
+    },
+    "partD": {
+      "Z_pac_1": 1.618033988749895,
+      "Z_pac_prime_1": -2.0384460025292173,
+      "gamma_over_ln_phi": 1.1995043239638554,
+      "hurwitz_residue": 2.0780869212350273
+    },
+    "partE": {
+      "gamma": 0.5772156649015328,
+      "digamma_1": -0.5772156649015328,
+      "ln_phi": 0.48121182505960347,
+      "xi": 1.0584274899611361,
+      "interpretation": "gamma = cost of discrete level enumeration, independent of branching structure"
+    }
+  },
+  "verdicts": {
+    "partA": "PAC geometric series has exact discrete-continuum gap (not harmonic). Info-weighted sum gives 2*ln(phi). Li_2(1/phi) = pi^2/10 - ln^2(phi). gamma does NOT emerge from simple PAC sums.",
+    "partB": "PAC-weighted harmonic sum = phi*ln(phi) exactly. Average enumeration cost per PAC level = ln(phi). gamma does NOT emerge as average harmonic cost in PAC tree.",
+    "partC": "Fibonacci gamma (psi_F - phi) = 1.741852. Ratio to gamma = 3.0177. No clean relationship found.",
+    "partD": "PAC zeta is regular at s=1 (no pole \u2192 no gamma). gamma emerges only through Hurwitz analog where levels are additive, recovering zeta(s) * (1/ln(phi))^s. gamma/ln(phi) = 1.199.",
+    "partE": "gamma = -psi(1) = cost of discrete enumeration at level 1. Xi = (arithmetic regularization) + (geometric content). This explains gamma's independence from dimension, geometry, and period."
+  },
+  "overall": "PARTIALLY SUPPORTED"
+}

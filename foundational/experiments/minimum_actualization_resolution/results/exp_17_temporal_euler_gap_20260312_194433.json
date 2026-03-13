@@ -1,0 +1,98 @@
+{
+  "experiment": "minimum_actualization_resolution",
+  "script": "exp_17_temporal_euler_gap.py",
+  "timestamp": "2026-03-12T19:44:33.316222",
+  "verdicts": {
+    "A": "240 = F3*F4*F5*F6 = product of 4-dimensional mode counts",
+    "B": "Xi_spectral = Mobius/circle eigenvalue ratio, crosses Xi at N~25",
+    "C": "df = 0.020224; period-4 phase averages to zero; energy coupling matters",
+    "D": "gamma = temporal enumeration cost, Z_temporal/Z_spatial = ln(2), period-independent",
+    "E": "Gap exact = gamma + ln(phi) - 1 - sec_pump. 1/(240*pi) approximate at 0.09%."
+  },
+  "results": {
+    "part_a": {
+      "prod_fib_4": 240,
+      "prod_k_eff_4": 456,
+      "prod_k_sl_4": 720,
+      "mode_counts_per_dim": [
+        2,
+        3,
+        5,
+        8
+      ]
+    },
+    "part_b": {
+      "xi_spectral_vals": [
+        {
+          "N": 5,
+          "xi": 1.2954545454545454,
+          "correction": 0.29545454545454547
+        },
+        {
+          "N": 10,
+          "xi": 1.1493506493506493,
+          "correction": 0.14935064935064934
+        },
+        {
+          "N": 20,
+          "xi": 1.0749128919860627,
+          "correction": 0.07491289198606271
+        },
+        {
+          "N": 50,
+          "xi": 1.029994175888177,
+          "correction": 0.029994175888177054
+        },
+        {
+          "N": 100,
+          "xi": 1.014999261120142,
+          "correction": 0.014999261120141865
+        },
+        {
+          "N": 200,
+          "xi": 1.0074999069490453,
+          "correction": 0.007499906949045297
+        },
+        {
+          "N": 500,
+          "xi": 1.0029999940179581,
+          "correction": 0.0029999940179580896
+        },
+        {
+          "N": 1000,
+          "xi": 1.0014999992511238,
+          "correction": 0.0014999992511236888
+        },
+        {
+          "N": 5000,
+          "xi": 1.0002999999940019,
+          "correction": 0.00029999999400179956
+        },
+        {
+          "N": 10000,
+          "xi": 1.00014999999925,
+          "correction": 0.00014999999925011248
+        }
+      ]
+    },
+    "part_c": {
+      "df": 0.020223620064717673,
+      "f_total": 0.8952236200647177,
+      "sec_pump": 0.06526580471247194
+    },
+    "part_d": {
+      "Z_spatial_exact": 1.0,
+      "Z_temporal_exact": 0.6931471805599453,
+      "ratio": 0.6931471805599453,
+      "non_gamma_residual": -0.5758957540638094,
+      "gamma_fraction_of_gap": 437.31413395866684
+    },
+    "part_e": {
+      "gap_additive": 0.0013199108377230928,
+      "delta_multiplicative": 0.0012486059733083366,
+      "N_physical_xi": 25.66323085794814,
+      "N_physical_mvae": 26.255291750732994,
+      "correction_factor": 0.9951893258842603
+    }
+  }
+}

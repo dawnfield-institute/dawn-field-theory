@@ -1,0 +1,83 @@
+{
+  "experiment": "minimum_actualization_resolution",
+  "script": "exp_14_euler_gap_derivation.py",
+  "timestamp": "2026-03-12T19:31:44.020631",
+  "verdicts": {
+    "A": "Euler-Maclaurin gap = 6.6613e-16 (different from Euler gap)",
+    "B": "240 = E8 roots = F3*F4*F5*F6. Gap = 1/(roots*pi) [angular correction]",
+    "C": "Z_fib(1) = 3.359886, no direct derivation of gap",
+    "D": "Gap = |B_4|/(F_6*pi) = 1/(240*pi) [Bernoulli + Fibonacci + geometry]",
+    "E": "1/(240*pi) at 0.09%, no exact derivation found"
+  },
+  "results": {
+    "part_a": {
+      "S_exact": 1.6180339887498947,
+      "I_exact": 1.2843283488998725,
+      "em_corrections": [
+        {
+          "j": 1,
+          "B_2j": 0.16666666666666666,
+          "coeff": 0.08333333333333333,
+          "correction": 0.024783771972933608,
+          "running": 0.33380076634788103
+        },
+        {
+          "j": 2,
+          "B_2j": -0.03333333333333333,
+          "coeff": -0.001388888888888889,
+          "correction": -9.565082850230785e-05,
+          "running": 0.3337051155193787
+        },
+        {
+          "j": 3,
+          "B_2j": 0.023809523809523808,
+          "coeff": 3.3068783068783064e-05,
+          "correction": 5.273658795284979e-07,
+          "running": 0.3337056428852582
+        },
+        {
+          "j": 4,
+          "B_2j": -0.03333333333333333,
+          "coeff": -8.267195767195768e-07,
+          "correction": -3.0529846317887736e-09,
+          "running": 0.3337056398322736
+        },
+        {
+          "j": 5,
+          "B_2j": 0.07575757575757576,
+          "coeff": 2.08767569878681e-08,
+          "correction": 1.7852622183967156e-11,
+          "running": 0.3337056398501262
+        },
+        {
+          "j": 6,
+          "B_2j": -0.2531135531135531,
+          "coeff": -5.284190138687493e-10,
+          "correction": -1.0463813640030004e-13,
+          "running": 0.33370563985002155
+        }
+      ],
+      "gap_after_em": 6.661338147750939e-16
+    },
+    "part_b": {
+      "e8_dim": 8,
+      "e8_roots": 240,
+      "fibonacci_product": "2*3*5*8",
+      "S_7": 64.93939402266828
+    },
+    "part_c": {
+      "z_fib_1": 3.3598856660351712,
+      "z_fib_2": 2.426320751167241
+    },
+    "part_d": {
+      "B_4": -0.03333333333333333,
+      "F_6": 8,
+      "formula": "|B_4|/(F_6*pi) = 1/(240*pi)",
+      "error_pct": 0.48339285707924623
+    },
+    "part_e": {
+      "residual": -6.380354709368489e-06,
+      "residual_rel": -0.004833928570792627
+    }
+  }
+}

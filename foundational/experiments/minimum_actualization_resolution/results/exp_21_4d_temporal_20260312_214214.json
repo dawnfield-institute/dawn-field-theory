@@ -1,0 +1,154 @@
+{
+  "experiment": "exp_21_4d_temporal_cascade",
+  "timestamp": "2026-03-12T21:42:14.469376",
+  "constants": {
+    "gamma": 0.5772156649015328,
+    "ln_phi": 0.48121182505960347,
+    "Xi": 1.0584274899611361,
+    "ln2": 0.6931471805599453,
+    "phi": 1.618033988749895
+  },
+  "parts": {
+    "A": {
+      "description": "She-Leveque formula verification",
+      "predictions": [
+        {
+          "d": 1,
+          "F_d+1": 1,
+          "k_predicted": 1,
+          "k_known": 1,
+          "match": "YES"
+        },
+        {
+          "d": 2,
+          "F_d+1": 2,
+          "k_predicted": 4,
+          "k_known": 4,
+          "match": "YES"
+        },
+        {
+          "d": 3,
+          "F_d+1": 3,
+          "k_predicted": 9,
+          "k_known": 9,
+          "match": "YES"
+        },
+        {
+          "d": 4,
+          "F_d+1": 5,
+          "k_predicted": 20,
+          "k_known": "\u2014",
+          "match": "\u2014"
+        },
+        {
+          "d": 5,
+          "F_d+1": 8,
+          "k_predicted": 40,
+          "k_known": "\u2014",
+          "match": "\u2014"
+        }
+      ],
+      "finding": "k = d * F_{d+1} matches known values for d=1,2,3 spatial dimensions. Physical 3D turbulence (k \u2248 10.78) differs from spatial prediction (k=9)."
+    },
+    "B": {
+      "description": "3+1 temporal correction models",
+      "k_spatial": 9,
+      "k_dns": 10.78,
+      "models": {
+        "model1_additive_fib": {
+          "formula": "k(3) + ln(2)*F_5",
+          "value": 12.465735902799727,
+          "error_pct": 15.637624330238662
+        },
+        "model2_multiplicative": {
+          "formula": "k(3)*(1+ln(2)/3)",
+          "value": 11.079441541679836,
+          "error_pct": 2.7777508504623087
+        },
+        "model3_eff_dimension": {
+          "formula": "d_eff * F_interp",
+          "value": 16.19923065287591,
+          "error_pct": 50.27115633465596
+        },
+        "model4_xi_weighted": {
+          "formula": "(3+Xi-1)*F_4",
+          "value": 9.175282469883408,
+          "error_pct": 14.88606243150827
+        },
+        "model5_she_leveque": {
+          "formula": "k+2(1-(2/3))",
+          "value": 9.666666666666666,
+          "error_pct": 10.327767470624613
+        },
+        "model6_landauer_per_dim": {
+          "formula": "k(3)+3*ln(2)",
+          "value": 11.079441541679836,
+          "error_pct": 2.7777508504623087
+        }
+      },
+      "best_model": "model2_multiplicative",
+      "finding": "Best model: model2_multiplicative with 2.78% error."
+    },
+    "C": {
+      "description": "Structure function exponents comparison",
+      "dft_zeta": {
+        "1": 0.42236841126233526,
+        "2": 0.8053878192921187,
+        "3": 1.154032706791099,
+        "4": 1.472648684669693,
+        "5": 1.7650319937265857,
+        "6": 2.0344989557629427,
+        "7": 2.283946644719043,
+        "8": 2.5159058877940077
+      },
+      "dns_zeta": {
+        "1": 0.37,
+        "2": 0.7,
+        "3": 1.0,
+        "4": 1.28,
+        "5": 1.54,
+        "6": 1.77,
+        "7": 1.98,
+        "8": 2.17
+      },
+      "renormalization_factor": 0.8665265673280595,
+      "finding": "Temporal correction modifies She-Leveque intermittency. Renormalized DFT exponents need comparison with high-resolution DNS data."
+    },
+    "D": {
+      "description": "Generalized (d+1) spacetime cascade",
+      "finding": "Model 6 (k + d*ln(2)) generalizes naturally. Temporal correction = d*ln(2), decreasing relative to k(d) for large d."
+    },
+    "E": {
+      "description": "Predictions for 2+1 and 4+1 spacetime",
+      "predictions": {
+        "2+1": {
+          "k_spatial": 4,
+          "k_spacetime": 5.386294361119891
+        },
+        "3+1": {
+          "k_spatial": 9,
+          "k_spacetime": 11.079441541679836,
+          "k_dns": 10.78
+        },
+        "4+1": {
+          "k_spatial": 20,
+          "k_spacetime": 22.77258872223978
+        }
+      },
+      "finding": "Temporal correction = d*ln(2). For 3+1: k = 11.08 (2.8% from DNS 10.78). 2+1 and 4+1 predictions are testable."
+    }
+  },
+  "synthesis": {
+    "status": "PARTIALLY_SUPPORTED",
+    "k_predicted_3p1": 11.079441541679836,
+    "k_dns": 10.78,
+    "error_pct": 2.7777508504623087,
+    "verdict": "Model k(d+1) = d*F_{d+1} + d*ln(2) predicts k = 11.0794 for 3+1 spacetime, 2.8% from DNS value 10.78. Temporal correction mechanism is physically motivated (Landauer bit cost) but needs refinement.",
+    "confidence": "MODERATE \u2014 correct direction, magnitude approximately right",
+    "testable_predictions": [
+      "2+1 spacetime turbulence: k = 5.3863",
+      "4+1 spacetime: k = 22.7726",
+      "Temporal intermittency should scale as ln(2) per spatial dimension"
+    ]
+  }
+}
