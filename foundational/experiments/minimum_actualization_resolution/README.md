@@ -133,6 +133,11 @@ Planck-scale quantities emerge from the PAC framework as the **minimum viable ac
 |--------|-------|
 | exp_27_free_streaming_signature.py | Derives testable predictions from PAC Eddington regulator + free-streaming exemption. Scale-dependent PAC dilation: k > k_fs (interacting) gets enhanced, k < k_fs (free-streaming) standard. P(k) boost ~5.8% at small scales. BAO shift: r_s ~ 142.9 Mpc (vs 147.1, 2.8% shift). H_0 shift +2.0 km/s/Mpc toward SH0ES. S8 tension direction correctly predicted. 5 falsifiable predictions for Euclid/Roman/Simons Observatory. **TESTABLE** |
 
+### Statistical Relativity (28)
+
+| Script | Tests |
+|--------|-------|
+| exp_28_statistical_relativity.py | Tests whether multiplicative-additive asymmetry (lose f then gain f ≠ identity) is the structural root of relativistic frame dependence. Round-trip deficit at Landauer fraction f=ln(2) equals ln²(2) = 1-xi_floor exactly. 5 parts: (A) Asymmetry convergence to ln²(2), (B) Cascade-embedded asymmetry, (C) Frame-dependent time from statistics, (D) Gamma as statistical frame dependence, (E) Lorentz factor recovery from pure multiplicative structure. Derives gamma(v) without invoking spacetime geometry. 7/7 tests passing. **SUPPORTED** |
 ### Cascade & Cosmological (21-22)
 
 | Script | Tests |
