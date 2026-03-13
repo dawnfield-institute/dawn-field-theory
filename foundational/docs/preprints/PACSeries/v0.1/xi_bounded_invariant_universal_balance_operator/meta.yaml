@@ -1,26 +1,26 @@
-schema_version: "2.0"
-slug: "xi_bounded_invariant_universal_balance_operator"
-title: "Xi Bounded Invariant Universal Balance Operator"
-category: "pac"
-status: "Draft"
-version: "1.0"
+schema_version: '2.0'
+slug: xi_bounded_invariant_universal_balance_operator
+title: Xi Bounded Invariant Universal Balance Operator
+category: pac
+status: Draft
+version: '1.0'
 complexity: 2
 impact: 5
-evidence_type: "E"
-created: "2025-12-20T11:18:57.508094"
-
-original_filename: "[pac][D][v1.0][C2][I5][E]_xi_bounded_invariant_universal_balance_operator_preprint.md"
-source_location: "PACSeries"
-
+evidence_type: E
+created: '2025-12-20T11:18:57.508094'
+original_filename: '[pac][D][v1.0][C2][I5][E]_xi_bounded_invariant_universal_balance_operator_preprint.md'
+source_location: PACSeries
 files:
-  paper: "paper.md"
-  latex: "paper.tex"
-  pdf: "paper.pdf"
-
+- CITATION.md
+- LICENSE
+- README.md
+- UNIFIED_EVIDENCE.md
+- paper.md
 code:
   has_experiments: true
-  trace_file: "Code/trace.yaml"
-  
+  trace_file: Code/trace.yaml
 keywords:
-  - Dawn Field Theory
-  - PAC
+- Dawn Field Theory
+- PAC
+child_directories:
+- Code

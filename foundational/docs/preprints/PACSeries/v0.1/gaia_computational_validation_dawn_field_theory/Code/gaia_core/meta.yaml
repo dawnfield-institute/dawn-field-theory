@@ -15,6 +15,13 @@ semantic_scope:
 - intelligence-architecture
 files:
 - __init__.py
-- gaia.py
-- test.py
+- collapse_core.py
+- conservation_engine.py
+- emergence_detector.py
+- field_engine.py
+- meta_cognition_layer.py
+- pattern_amplifier.py
+- resonance_mesh.py
+- superfluid_memory.py
+- symbolic_crystallizer.py
 child_directories: []

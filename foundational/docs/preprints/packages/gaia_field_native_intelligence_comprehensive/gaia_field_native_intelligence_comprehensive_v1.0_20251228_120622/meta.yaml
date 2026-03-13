@@ -1,43 +1,48 @@
-schema_version: "2.0"
-slug: "gaia_field_native_intelligence_comprehensive"
-title: "GAIA: Field-Native Intelligence Through PAC-Governed Semantic Evolution"
-category: "pac"
-status: "Draft"
-version: "1.0"
+schema_version: '2.0'
+slug: gaia_field_native_intelligence_comprehensive
+title: 'GAIA: Field-Native Intelligence Through PAC-Governed Semantic Evolution'
+category: pac
+status: Draft
+version: '1.0'
 complexity: 5
 impact: 5
-evidence_type: "E"
-created: "2025-12-20T11:18:56.992105"
-updated: "2025-12-22"
-
-original_filename: "[pac][D][v1.0][C5][I5][E]_gaia_field_native_intelligence_comprehensive_preprint.md"
-source_location: "drafts"
-
+evidence_type: E
+created: '2025-12-20T11:18:56.992105'
+updated: '2025-12-22'
+original_filename: '[pac][D][v1.0][C5][I5][E]_gaia_field_native_intelligence_comprehensive_preprint.md'
+source_location: drafts
 files:
-  paper: "paper.md"
-  latex: "paper.tex"
-  pdf: "paper.pdf"
-
+- CITATION.md
+- LICENSE
+- MANIFEST.json
+- README.md
+- UNIFIED_EVIDENCE.md
+- paper.md
 code:
   has_experiments: true
-  trace_file: "Code/trace.yaml"
+  trace_file: Code/trace.yaml
   experiments:
-    - exp_01_poc001_binary_encoding.py: "POC-001: Binary pattern encoding for GAIA field representations"
-    - exp_02_oracle_distillation.py: "POC-020: Oracle-bootstrapped hierarchical PAC training"
+  - exp_01_poc001_binary_encoding.py: 'POC-001: Binary pattern encoding for GAIA field
+      representations'
+  - exp_02_oracle_distillation.py: 'POC-020: Oracle-bootstrapped hierarchical PAC
+      training'
   support_modules:
-    - gaia_encoder.py: "Core GAIA encoder implementation"
-    - utils.py: "Utility functions for GAIA experiments"
-  verification_date: "2025-12-22"
+  - gaia_encoder.py: Core GAIA encoder implementation
+  - utils.py: Utility functions for GAIA experiments
+  verification_date: '2025-12-22'
   key_results:
-    - "Pattern distinctiveness: 1.2680 average distance"
-    - "PAC conservation: residual 0.00e+00"
-    - "Oracle distillation: 136,651 confluence contexts"
-    - "Backprop-free layer materialization: 5/6 layers"
-  
+  - 'Pattern distinctiveness: 1.2680 average distance'
+  - 'PAC conservation: residual 0.00e+00'
+  - 'Oracle distillation: 136,651 confluence contexts'
+  - 'Backprop-free layer materialization: 5/6 layers'
 keywords:
-  - Dawn Field Theory
-  - PAC
-  - GAIA
-  - Field-Native Intelligence
-  - Oracle Distillation
-  - Backprop-Free Learning
+- Dawn Field Theory
+- PAC
+- GAIA
+- Field-Native Intelligence
+- Oracle Distillation
+- Backprop-Free Learning
+child_directories:
+- Code
+- Data
+- Figures

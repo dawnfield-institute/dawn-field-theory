@@ -8,7 +8,8 @@ semantic_scope:
 - complex_systems
 - predictive_modeling
 files:
-- '[m][E][v1.0][C1][I1]_predictive_collapse_simulation.py'
-- results.md
+- README.md
 child_directories:
 - reference_material
+- results
+- scripts

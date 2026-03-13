@@ -9,7 +9,8 @@ semantic_scope:
 - experiments
 - biology
 files:
-- DNA_repairer.py
-- results.md
+- README.md
 child_directories:
 - reference_material
+- results
+- scripts

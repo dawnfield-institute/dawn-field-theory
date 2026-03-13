@@ -1,12 +1,9 @@
-schema_version: "2.0"
-description: "Core SEC implementation modules"
-semantic_scope: "implementation"
-proficiency_level: "technical"
-
+schema_version: '2.0'
+description: Core SEC implementation modules
+semantic_scope: implementation
+proficiency_level: technical
 files:
-  - "[sec_core.py]": "Main SEC implementation with tracing"
-  - "constants.py": "φ, Fibonacci, prime constants"
-  - "visualization.py": "Plotting utilities"
-
-validation_type: "unit_tested"
-test_coverage: "tests/test_sec_core.py"
+- sec_core.py
+validation_type: unit_tested
+test_coverage: tests/test_sec_core.py
+child_directories: []

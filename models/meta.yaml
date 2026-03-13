@@ -1,9 +1,10 @@
 schema_version: '2.0'
 directory_name: models
-description: >
-  Theoretical models and architectures for Dawn Field Theory. Contains GAIA
-  (Generalized Architectures for Intelligent Actualization) in early development.
+description: 'Theoretical models and architectures for Dawn Field Theory. Contains
+  GAIA (Generalized Architectures for Intelligent Actualization) in early development.
   For production implementations see the dawn-models repository.
+
+  '
 semantic_scope:
 - theoretical_models
 - architecture_design
@@ -11,8 +12,7 @@ semantic_scope:
 - dawn_field_theory
 - consciousness_research
 files: []
-child_directories:
-- GAIA
+child_directories: []
 generation_context:
   generator: ai_enhanced
   file_count: 1

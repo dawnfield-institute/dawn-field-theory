@@ -1,133 +1,139 @@
 schema_version: '2.0'
 description: Dawn Field Theory Preprints Index
 updated: '2025-12-20'
-
-# Paper Series
 series:
-  - name: PACSeries
-    title: PAC Confluence Xi Unified Framework
-    path: PACSeries/
-    paper_count: 5
-    description: Core PAC theory papers released October 2025
-
-# Individual Papers (not in a series)
+- name: PACSeries
+  title: PAC Confluence Xi Unified Framework
+  path: PACSeries/
+  paper_count: 5
+  description: Core PAC theory papers released October 2025
 papers:
-  # High Impact (I5) - Core Theory
-  - slug: symbolic_entropy_collapse
-    title: Symbolic Entropy Collapse
-    category: id
-    impact: 5
-    complexity: 5
-    path: symbolic_entropy_collapse/
-
-  - slug: dawn_field_theory_infodynamics
-    title: Dawn Field Theory Infodynamics
-    category: id
-    impact: 5
-    complexity: 5
-    path: dawn_field_theory_infodynamics/
-
-  - slug: gaia_field_native_intelligence_comprehensive
-    title: GAIA Field Native Intelligence Comprehensive
-    category: pac
-    impact: 5
-    complexity: 5
-    path: gaia_field_native_intelligence_comprehensive/
-
-  - slug: potential_actualization_conservation_comprehensive
-    title: Potential Actualization Conservation Comprehensive
-    category: pac
-    impact: 5
-    complexity: 5
-    path: potential_actualization_conservation_comprehensive/
-
-  # High Impact (I5) - Validation
-  - slug: cellular_automata_xi_clustering
-    title: Cellular Automata Xi Clustering
-    category: pac
-    impact: 5
-    complexity: 4
-    path: cellular_automata_xi_clustering/
-    note: "Tier 1 - p < 10^-7 statistical validation"
-
-  - slug: ml_validation_pythia_gpt2
-    title: ML Validation Pythia GPT2
-    category: pac
-    impact: 5
-    complexity: 4
-    path: ml_validation_pythia_gpt2/
-    note: "Tier 1 - Multi-model validation"
-
-  - slug: golden_ratio_prime_distribution
-    title: Golden Ratio Prime Distribution
-    category: sec
-    impact: 5
-    complexity: 4
-    path: golden_ratio_prime_distribution/
-    note: "Tier 1 - Analytical + numerical proof"
-
-  - slug: pac_necessity_proof
-    title: PAC Necessity Proof
-    category: pac
-    impact: 5
-    complexity: 4
-    path: pac_necessity_proof/
-
-  - slug: qbe_pac_unification
-    title: QBE PAC Unification
-    category: pac
-    impact: 5
-    complexity: 4
-    path: qbe_pac_unification/
-
-  - slug: dawn_field_theory_synthesis
-    title: Dawn Field Theory Synthesis
-    category: id
-    impact: 5
-    complexity: 3
-    path: dawn_field_theory_synthesis/
-
-  # Medium Impact (I4)
-  - slug: macro_emergence_dynamics_navier_stokes
-    title: Macro Emergence Dynamics Navier Stokes
-    category: m
-    impact: 4
-    complexity: 5
-    path: macro_emergence_dynamics_navier_stokes/
-
-  - slug: recursive_mathematical_plasticity_entropy_architecture
-    title: Recursive Mathematical Plasticity Entropy Architecture
-    category: m
-    impact: 4
-    complexity: 5
-    path: recursive_mathematical_plasticity_entropy_architecture/
-
-  - slug: cognition_index_protocol
-    title: Cognition Index Protocol
-    category: cip
-    impact: 4
-    complexity: 4
-    path: cognition_index_protocol/
-
-  - slug: symbolic_cognition_collapse_interpretability
-    title: Symbolic Cognition Collapse Interpretability
-    category: ai
-    impact: 4
-    complexity: 4
-    path: symbolic_cognition_collapse_interpretability/
-
-  - slug: resonant_symbolic_convergence_human_agent
-    title: Resonant Symbolic Convergence Human Agent
-    category: ai
-    impact: 3
-    complexity: 4
-    path: resonant_symbolic_convergence_human_agent/
-
-# Resources
+- slug: symbolic_entropy_collapse
+  title: Symbolic Entropy Collapse
+  category: id
+  impact: 5
+  complexity: 5
+  path: symbolic_entropy_collapse/
+- slug: dawn_field_theory_infodynamics
+  title: Dawn Field Theory Infodynamics
+  category: id
+  impact: 5
+  complexity: 5
+  path: dawn_field_theory_infodynamics/
+- slug: gaia_field_native_intelligence_comprehensive
+  title: GAIA Field Native Intelligence Comprehensive
+  category: pac
+  impact: 5
+  complexity: 5
+  path: gaia_field_native_intelligence_comprehensive/
+- slug: potential_actualization_conservation_comprehensive
+  title: Potential Actualization Conservation Comprehensive
+  category: pac
+  impact: 5
+  complexity: 5
+  path: potential_actualization_conservation_comprehensive/
+- slug: cellular_automata_xi_clustering
+  title: Cellular Automata Xi Clustering
+  category: pac
+  impact: 5
+  complexity: 4
+  path: cellular_automata_xi_clustering/
+  note: Tier 1 - p < 10^-7 statistical validation
+- slug: ml_validation_pythia_gpt2
+  title: ML Validation Pythia GPT2
+  category: pac
+  impact: 5
+  complexity: 4
+  path: ml_validation_pythia_gpt2/
+  note: Tier 1 - Multi-model validation
+- slug: golden_ratio_prime_distribution
+  title: Golden Ratio Prime Distribution
+  category: sec
+  impact: 5
+  complexity: 4
+  path: golden_ratio_prime_distribution/
+  note: Tier 1 - Analytical + numerical proof
+- slug: pac_necessity_proof
+  title: PAC Necessity Proof
+  category: pac
+  impact: 5
+  complexity: 4
+  path: pac_necessity_proof/
+- slug: qbe_pac_unification
+  title: QBE PAC Unification
+  category: pac
+  impact: 5
+  complexity: 4
+  path: qbe_pac_unification/
+- slug: dawn_field_theory_synthesis
+  title: Dawn Field Theory Synthesis
+  category: id
+  impact: 5
+  complexity: 3
+  path: dawn_field_theory_synthesis/
+- slug: macro_emergence_dynamics_navier_stokes
+  title: Macro Emergence Dynamics Navier Stokes
+  category: m
+  impact: 4
+  complexity: 5
+  path: macro_emergence_dynamics_navier_stokes/
+- slug: recursive_mathematical_plasticity_entropy_architecture
+  title: Recursive Mathematical Plasticity Entropy Architecture
+  category: m
+  impact: 4
+  complexity: 5
+  path: recursive_mathematical_plasticity_entropy_architecture/
+- slug: cognition_index_protocol
+  title: Cognition Index Protocol
+  category: cip
+  impact: 4
+  complexity: 4
+  path: cognition_index_protocol/
+- slug: symbolic_cognition_collapse_interpretability
+  title: Symbolic Cognition Collapse Interpretability
+  category: ai
+  impact: 4
+  complexity: 4
+  path: symbolic_cognition_collapse_interpretability/
+- slug: resonant_symbolic_convergence_human_agent
+  title: Resonant Symbolic Convergence Human Agent
+  category: ai
+  impact: 3
+  complexity: 4
+  path: resonant_symbolic_convergence_human_agent/
 resources:
-  - path: resources/
-    description: Shared resources and reference materials
-  - path: tex_sources/
-    description: LaTeX source files
-  - path: pdfs/
-    description: Generated PDF outputs
+- path: resources/
+  description: Shared resources and reference materials
+- path: tex_sources/
+  description: LaTeX source files
+- path: pdfs/
+  description: Generated PDF outputs
+files:
+- PACSeries.zip
+- PREPRINT_UPDATE_PLAN.md
+- SCHEMA.md
+- UNIFIED_EVIDENCE.md
+- ZENODO_REGISTRY.yaml
+child_directories:
+- PACSeries
+- bidirectional_sec_pac_fluid
+- cellular_automata_xi_clustering
+- dawn_field_theory_infodynamics
+- dawn_field_theory_synthesis
+- gaia_field_native_intelligence_comprehensive
+- golden_ratio_prime_distribution
+- legacy
+- macro_emergence_dynamics_navier_stokes
+- ml_validation_pythia_gpt2
+- pac_cosmology_jwst_validation
+- pac_necessity_proof
+- packages
+- pdfs
+- potential_actualization_conservation_comprehensive
+- qbe_pac_unification
+- resources
+- sec_threshold_detection
+- she_leveque_fibonacci_turbulence
+- symbolic_entropy_collapse
+- tex_sources
+- worldseed_evolutionary_architecture

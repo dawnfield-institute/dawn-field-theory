@@ -9,6 +9,7 @@ semantic_scope:
 - information polarity
 - experiments
 files:
+- README.md
 - theory_draft.md
 child_directories:
 - black_white_hole_polarity

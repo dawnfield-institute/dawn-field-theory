@@ -1,30 +1,22 @@
-schema_version: "2.0"
-description: "Milestone 2: Open derivations and extended validation from PAC/SEC framework"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.0'
+description: 'Milestone 2: Open derivations and extended validation from PAC/SEC framework'
+semantic_scope: implementation
+proficiency_level: research
 estimated_context_weight: 0.9
-
 files:
-  - "[README.md]": "Overview and experiment queue"
-  - "[SYNTHESIS.md]": "Cross-connections between experiments"
-
+- README.md
 child_directories:
-  - name: "scripts"
-    description: "Numbered experiment scripts (exp_NN_name.py)"
-  - name: "results"
-    description: "JSON output files with timestamps"
-  - name: "journals"
-    description: "Daily research logs"
-
+- mass_derivation
+- results
+- scripts
 dependencies:
-  - "../milestone1"
-  - "../oscillation_attractor_dynamics"
-  - "../standard_model_connection"
-
+- ../milestone1
+- ../oscillation_attractor_dynamics
+- ../standard_model_connection
 key_questions:
-  - "Why k=9 for SEC → 1/φ?"
-  - "Is π-coherence unique among transcendentals?"
-  - "Does Möbius formula extend to all Riemann zeros?"
-  - "What happens to turbulence intermittency in 2D?"
-  - "Can Casimir effect be derived from PAC mode counting?"
-  - "Do SM couplings map to Fibonacci at special scales?"
+- Why k=9 for SEC → 1/φ?
+- Is π-coherence unique among transcendentals?
+- Does Möbius formula extend to all Riemann zeros?
+- What happens to turbulence intermittency in 2D?
+- Can Casimir effect be derived from PAC mode counting?
+- Do SM couplings map to Fibonacci at special scales?
