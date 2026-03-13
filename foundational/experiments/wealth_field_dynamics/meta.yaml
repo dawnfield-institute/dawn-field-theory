@@ -1,43 +1,50 @@
-schema_version: "2.0"
-description: "Exploratory application of PAC/SEC framework to economic wealth dynamics"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.0'
+description: Exploratory application of PAC/SEC framework to economic wealth dynamics
+semantic_scope: implementation
+proficiency_level: research
 estimated_context_weight: 0.6
-validation_type: "manual"
-
+validation_type: manual
 files:
-  - "[README.md]": "Experiment overview with epistemic framing"
-  - "[SYNTHESIS.md]": "Cross-experiment connections and validation status"
-  - "[constants.py]": "Shared mathematical constants (φ, Ξ, Fibonacci)"
-  - "[wealth_gravity_sim.py]": "Simulation showing emergent concentration"
-  - "[exp_01_phi_wealth_splitting.py]": "Derive φ from PAC + self-similarity"
-  - "[exp_02_xi_inequality_threshold.py]": "Apply Ξ to inequality dynamics"
-  - "[exp_03_med_hierarchy_bounds.py]": "Derive organizational structure limits"
-  - "[exp_04_pareto_from_fibonacci.py]": "Derive 80/20 from Fibonacci structure"
-  - "[exp_05_historical_policy_comparison.py]": "Compare model to US history (1945-2025)"
-
+- EMPIRICAL_STATUS.md
+- PREDICTIONS.md
+- README.md
+- SYNTHESIS.md
+- constants.py
+- exp_01_phi_wealth_splitting.py
+- exp_02_med_hierarchy_bounds.py
+- exp_03_pareto_from_fibonacci.py
+- exp_04_historical_policy_comparison.py
+- exp_05_multi_country_comparison.py
+- exp_06_piketty_connection.py
+- exp_07_response_type.py
+- exp_08_pac_collapse_mechanism.py
+- exp_09_phi_ratio_redistribution.py
+- exp_10_emergence_per_level.py
+- exp_11_equal_division_puzzle.py
+- exp_12_fed_dfa_phi_analysis.py
+- exp_13_non_equilibrium_pressure.py
+- exp_14_cross_domain_stress.py
+- exp_15_emergence_rate_xi.py
+- wealth_gravity_results.png
+- wealth_gravity_sim.py
 child_directories:
-  - name: "results"
-    description: "JSON outputs with timestamps from experiment runs"
-
+- results
+- scripts
 key_findings:
-  - "φ emerges from PAC + self-similarity: r² = r + 1 → r = φ"
-  - "Pareto 80/20 = φ at depth 3.33: log(5)/log(φ) ≈ 3.34"
-  - "Historical enforcement-Gini correlation: r = -0.809"
-  - "Model tracks 80-year US trajectory with 2.5% average error"
-
-epistemic_status: "exploratory"
+- 'φ emerges from PAC + self-similarity: r² = r + 1 → r = φ'
+- 'Pareto 80/20 = φ at depth 3.33: log(5)/log(φ) ≈ 3.34'
+- 'Historical enforcement-Gini correlation: r = -0.809'
+- Model tracks 80-year US trajectory with 2.5% average error
+epistemic_status: exploratory
 requires_validation:
-  - "Market microstructure φ-clustering analysis"
-  - "Extension to non-US countries"
-  - "Independent replication of historical model"
-  - "Theoretical critique of enforcement parameter"
-
+- Market microstructure φ-clustering analysis
+- Extension to non-US countries
+- Independent replication of historical model
+- Theoretical critique of enforcement parameter
 linked_experiments:
-  - "../milestone1/"
-  - "../oscillation_attractor_dynamics/"
-  - "../navier-stokes/"
-  - "../cellular_automata_pac_attractors/"
-
-status: "active"
-created: "2026-01-23"
+- ../milestone1/
+- ../oscillation_attractor_dynamics/
+- ../navier-stokes/
+- ../cellular_automata_pac_attractors/
+status: active
+created: '2026-01-23'

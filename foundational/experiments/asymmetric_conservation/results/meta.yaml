@@ -1,8 +1,25 @@
-schema_version: "2.0"
-description: "Results from asymmetric conservation experiments"
-semantic_scope: "data"
-proficiency_level: "research"
-
-files: []
-  # Results are auto-generated as:
-  # exp_NN_YYYYMMDD_HHMMSS.json
+schema_version: '2.0'
+description: Results from asymmetric conservation experiments
+semantic_scope: data
+proficiency_level: research
+files:
+- exp_01_20260122_161159.json
+- exp_02_20260122_161220.json
+- exp_03_20260122_161258.json
+- exp_04_20260122_161226.json
+- exp_05_20260122_161304.json
+- exp_06_20260122_161253.json
+- exp_07_20260122_161233.json
+- exp_08_20260122_162006.json
+- exp_08_20260122_162027.json
+- exp_09_20260122_162031.json
+- exp_10_20260122_162222.json
+- exp_11_20260122_162341.json
+- exp_12_20260122_163024.json
+- exp_13_20260122_163031.json
+- exp_14_sieve_as_local_sec_20260208_123723.json
+- exp_14_sieve_as_local_sec_20260208_124305.json
+- exp_15_reconciliation_depth_20260208_123746.json
+- exp_16_possibility_pruning_20260208_123957.json
+- exp_17_p3_reconciliation_20260208_124010.json
+child_directories: []

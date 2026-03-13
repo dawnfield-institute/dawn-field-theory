@@ -1,7 +1,8 @@
-schema_version: "2.0"
-description: "Prediction and validation scripts"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.0'
+description: Prediction and validation scripts
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[she_leveque_prediction.py]": "Pre-registered Fibonacci derivation and predictions"
-  - "[she_leveque_validation.py]": "Validation against experimental data"
+- she_leveque_prediction.py
+- she_leveque_validation.py
+child_directories: []

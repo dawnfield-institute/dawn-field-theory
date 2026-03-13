@@ -1,42 +1,44 @@
 schema_version: 2.0
 directory_name: pre_field_recursion
-description: 'Pre-Field Recursion experimental framework investigating Möbius topology as computational substrate. Studies natural information amplification emergence, PAC conservation laws, and universal constants in geometric computational systems.'
+description: Pre-Field Recursion experimental framework investigating Möbius topology
+  as computational substrate. Studies natural information amplification emergence,
+  PAC conservation laws, and universal constants in geometric computational systems.
 semantic_scope:
-  - pre_field_recursion
-  - mobius_topology
-  - pac_conservation
-  - information_amplification
-  - computational_geometry
-  - sec_dynamics
+- pre_field_recursion
+- mobius_topology
+- pac_conservation
+- information_amplification
+- computational_geometry
+- sec_dynamics
 files:
-  - README.md
-  - meta.yaml
-  - pre_field_recursion_unified.py
-  - calibration_test.py
-  - requirements.txt
+- CHANGELOG.md
+- README.md
+- requirements.txt
 child_directories:
-  - core
-  - results
-  - validation
-  - reference_material
-  - notes
+- archive
+- core
+- notes
+- results
+- scripts
+- validation
 directory_structure:
-  core: "Computational modules and topology implementations"
-  results: "Experimental data files and visualization outputs"
-  validation: "PAC conservation and measurement validation systems"
-  reference_material: "Supporting documentation and research references"
-  notes: "Research notes and development documentation"
+  core: Computational modules and topology implementations
+  results: Experimental data files and visualization outputs
+  validation: PAC conservation and measurement validation systems
+  reference_material: Supporting documentation and research references
+  notes: Research notes and development documentation
 theoretical_foundation:
-  substrate: "Möbius topology with anti-periodic boundary conditions as computational foundation"
-  conservation: "PAC conservation law: f(parent) = Σf(children) maintained locally"
-  emergence: "Information amplification arises naturally from topological structure"
-  universality: "Ξ=1.0571 appears as universal constant across configurations"
+  substrate: Möbius topology with anti-periodic boundary conditions as computational
+    foundation
+  conservation: 'PAC conservation law: f(parent) = Σf(children) maintained locally'
+  emergence: Information amplification arises naturally from topological structure
+  universality: Ξ=1.0571 appears as universal constant across configurations
 experimental_scope:
-  primary_research: "Natural emergence of information amplification in geometric substrates"
-  secondary_studies: "PAC conservation validation and universal constant identification"
-  methodology: "Systematic topology variation with amplification measurement"
+  primary_research: Natural emergence of information amplification in geometric substrates
+  secondary_studies: PAC conservation validation and universal constant identification
+  methodology: Systematic topology variation with amplification measurement
 research_significance:
-  data_driven: "All results generated from actual experimental runs - no static examples"
-  measurement_focus: "Records natural emergence patterns from topological structure"
-  conservation_analysis: "Quantitative PAC balance validation with statistical metrics"
-  universal_detection: "Empirical identification of constants across experimental configurations"
+  data_driven: All results generated from actual experimental runs - no static examples
+  measurement_focus: Records natural emergence patterns from topological structure
+  conservation_analysis: Quantitative PAC balance validation with statistical metrics
+  universal_detection: Empirical identification of constants across experimental configurations
