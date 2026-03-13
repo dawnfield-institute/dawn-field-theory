@@ -1,0 +1,106 @@
+{
+  "experiment": "minimum_actualization_resolution",
+  "script": "exp_11_gamma_origin.py",
+  "timestamp": "2026-03-12T19:31:33.825581",
+  "verdicts": {
+    "A": "PAC gap = 0.333706, gamma = 0.577216 \u2014 NO MATCH",
+    "B": "No Fibonacci series produces gamma (best err = 49.91%)",
+    "C": "gamma = H(F_n) - n*ln(phi) + ln(sqrt(5)) [standard asymptotic]",
+    "D": "Z_fib(1) = 3.359886, Xi = 1.058427 \u2014 no direct connection",
+    "E": "gamma = enumeration cost of discrete cascade (gap = 0.001320)"
+  },
+  "results": {
+    "part_a": {
+      "pac_gap_exact": 0.3337056398500222,
+      "gamma": 0.5772156649015328,
+      "pac_gap_is_gamma": false,
+      "S_inf": 1.6180339887498947,
+      "I_inf": 1.2843283488998725
+    },
+    "part_b": {
+      "fib_harmonic_damped": 1.835242159125356,
+      "alt_fib": 0.28914418949897885,
+      "fib_ratio_sum": 0.15770469390226638,
+      "gamma_phi_partial": 0.37919859497784514,
+      "gamma_phi_fraction": 0.656944393639304
+    },
+    "part_c": {
+      "stieltjes": [
+        0.5772156649015329,
+        -0.07281584548367673,
+        -0.00969036319287232,
+        0.002053834420303346
+      ],
+      "correction_ln_sqrt5": -0.8047189562170501,
+      "depth_contributions": [
+        {
+          "n": 1,
+          "F_n": 1,
+          "H_Fn": 1.0,
+          "delta_H": 1.0,
+          "delta_H_ln_phi": 0.48121182505960347
+        },
+        {
+          "n": 2,
+          "F_n": 1,
+          "H_Fn": 1.0,
+          "delta_H": 0.0,
+          "delta_H_ln_phi": 0.0
+        },
+        {
+          "n": 3,
+          "F_n": 2,
+          "H_Fn": 1.5,
+          "delta_H": 0.5,
+          "delta_H_ln_phi": 0.24060591252980174
+        },
+        {
+          "n": 4,
+          "F_n": 3,
+          "H_Fn": 1.8333333333333333,
+          "delta_H": 0.33333333333333326,
+          "delta_H_ln_phi": 0.16040394168653446
+        },
+        {
+          "n": 5,
+          "F_n": 5,
+          "H_Fn": 2.283333333333333,
+          "delta_H": 0.44999999999999996,
+          "delta_H_ln_phi": 0.21654532127682155
+        },
+        {
+          "n": 6,
+          "F_n": 8,
+          "H_Fn": 2.7178571428571425,
+          "delta_H": 0.4345238095238093,
+          "delta_H_ln_phi": 0.2090979954128038
+        },
+        {
+          "n": 7,
+          "F_n": 13,
+          "H_Fn": 3.180133755133755,
+          "delta_H": 0.46227661227661265,
+          "delta_H_ln_phi": 0.22245297227599947
+        },
+        {
+          "n": 8,
+          "F_n": 21,
+          "H_Fn": 3.6453587047627294,
+          "delta_H": 0.4652249496289742,
+          "delta_H_ln_phi": 0.22387174707422078
+        }
+      ]
+    },
+    "part_d": {
+      "Z_fib_1": 3.3598856660351712,
+      "F_phys": 1.1102230246251565e-16,
+      "Z_phys": 0.9999999999999999
+    },
+    "part_e": {
+      "gamma_bits": 0.8327461772768671,
+      "gap_mvae_xi": 0.0013199108377230928,
+      "gap_formula": 0.0013199108377231622,
+      "residual_without_gamma": -0.5758957540638094
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "experiment": "exp_26_xi_spread_resolution",
+  "timestamp": "2026-03-12T22:21:09.515766",
+  "constants": {
+    "Xi_analytic": 1.0584274899611361,
+    "Xi_Fib": 1.0571198664289054,
+    "gamma": 0.5772156649015328,
+    "ln_phi": 0.48121182505960347,
+    "phi": 1.618033988749895,
+    "F_10": 55,
+    "pi": 3.141592653589793
+  },
+  "parts": {
+    "A": {
+      "description": "Exact spread quantification",
+      "Xi_analytic": 1.0584274899611361,
+      "Xi_Fib": 1.0571198664289054,
+      "spread": 0.001307623532230684,
+      "relative_pct": 0.12354398809867437,
+      "spread_bits": 0.0018865019852989174
+    },
+    "B": {
+      "description": "Spread decomposition",
+      "spread": 0.001307623532230684,
+      "best_match": "gamma*ln(phi)/phi",
+      "exact_form": "gamma + ln(phi) - 1 - pi/F_10",
+      "finding": "No clean closed form found. The spread involves all three fundamental constants, suggesting irreducible difference between derivation routes."
+    },
+    "C": {
+      "description": "Spectral ratio function analysis",
+      "N_star": 26.260565610162732,
+      "xi_interpolated": 1.057096332559667,
+      "finding": "Xi(N) is a monotonically decreasing function of N, passing through Xi_Fib near N* = 3F_10/(2pi). The 'spread' exists because the spectral derivation evaluates Xi(N) at a specific N, while the analytic form gamma + ln(phi) is an exact but different mathematical object."
+    },
+    "D": {
+      "description": "Physical interpretation of spread",
+      "spread": 0.001307623532230684,
+      "hypothesis": "Discretization correction: continuous cost (gamma+ln(phi)) vs Fibonacci lattice approximation (1+pi/55).",
+      "systems": {
+        "Fibonacci arithmetic (1+pi/55)": 1.05712,
+        "Cellular automata (Class IV)": 1.05787,
+        "Analytic (gamma + ln(phi))": 1.05843,
+        "Landauer erasure (xi/A ratio)": 1.0863,
+        "Mobius field dynamics (Xi_L2)": 1.0581
+      },
+      "finding": "High-precision measurements (CA, Mobius) fall BETWEEN the two Xi values. This is consistent with the spread being a correction term, not a contradiction."
+    },
+    "E": {
+      "description": "Resolution attempts",
+      "correction_needed": 0.001307623532230684,
+      "gamma_spectral_approx": 0.575908041369302,
+      "actual_gamma": 0.5772156649015328,
+      "approx_error": 0.22653985533359747,
+      "finding": "The spread = gamma - (1 + pi/55 - ln(phi)). The Fibonacci spectral formula approximates gamma as (1 + pi/F_10 - ln(phi)), capturing 99.77% of gamma. The 0.12% spread is the residual gamma not captured by the discrete Fibonacci spectral structure."
+    }
+  },
+  "synthesis": {
+    "status": "RESOLVED",
+    "spread": 0.001307623532230684,
+    "spread_pct": 0.12354398809867437,
+    "resolution": "Xi_analytic and Xi_Fib are related but distinct quantities. Xi_analytic = exact information cost (gamma + ln(phi)). Xi_Fib = discrete spectral approximation (1 + pi/F_10). The 0.12% spread is gamma's non-Fibonacci residual.",
+    "gamma_capture": 99.7734601446664,
+    "implication": "No single derivation route captures Xi exactly. Geometric/spectral routes approximate gamma. Information-theoretic routes derive it exactly.",
+    "verdict": "The spread is structural, not an error."
+  }
+}
