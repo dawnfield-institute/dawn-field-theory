@@ -12,7 +12,8 @@ semantic_scope:
 - investigative-computing
 - early-stage-development
 - experimental-validation
-files: []
+files:
+- RECURSIVE_FRACTAL_ARITHMETIC.md
 child_directories:
 - darkmatter_SEC_WIP
-- gaia
+- infodynamic_gravity

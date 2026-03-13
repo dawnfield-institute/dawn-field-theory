@@ -1,27 +1,20 @@
-schema_version: "2.0"
-description: "Testing whether φ and Ξ emerge at the algebra-geometry interface"
-semantic_scope: "research"
-proficiency_level: "research"
+schema_version: '2.0'
+description: Testing whether φ and Ξ emerge at the algebra-geometry interface
+semantic_scope: research
+proficiency_level: research
 estimated_context_weight: 0.8
-validation_type: "automated"
-
+validation_type: automated
 files:
-  - "[README.md]": "Experiment overview and hypothesis"
-  - "[SYNTHESIS.md]": "Connections to prior experiments"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "core"
-    description: "Reusable modules for complexity metrics"
-  - name: "scripts"
-    description: "Numbered experiment scripts"
-  - name: "results"
-    description: "JSON output from experiments"
-  - name: "journals"
-    description: "Daily research logs"
-
+- core
+- journals
+- results
+- scripts
 tags:
-  - algebra-geometry-duality
-  - sophie-germain
-  - phi-emergence
-  - xi-emergence
-  - meta-mathematics
+- algebra-geometry-duality
+- sophie-germain
+- phi-emergence
+- xi-emergence
+- meta-mathematics

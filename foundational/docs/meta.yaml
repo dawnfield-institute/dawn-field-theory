@@ -8,13 +8,22 @@ semantic_scope:
 - documentation
 - theory
 files:
+- FOUNDATIONAL_AMPLIFICATION_CORRECTION.md
+- NEXT_STEPS_UNIFICATION.md
 - README.md
 - '[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md'
 - '[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md'
+- '[id][F][v1.0][C5][I5][E]_base_agnostic_pac_invariants.md'
 - '[id][F][v1.0][C5][I5][E]_landauer_erasure_cost_superfluidity_viscosity.md'
+- '[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md'
 - '[id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md'
 - '[id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md'
 - '[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md'
+- '[id][F][v1.0][C5][I5][E]_vcpu_empirical_validation_computational_naturalness.md'
+- '[id][F][v1.0][C5][I5][R]_universe_internal_reorganization_unified_framework.md'
+- '[id][F][v1.0][C6][I6][E]_feigenbaum_closed_form_discovery.md'
+- '[id][F][v1.0][C6][I6][E]_observation_dependency_pac_measurement_unified.md'
+- '[id][F][v1.0][C6][I6][E]_pac_sec_as_information_dynamics.md'
 - '[id][F][v1.0][C6][I6][E]_tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md'
 - '[m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md'
 - '[m][F][v0.1][C5][I5]_symbolic_entropy_collapse_and_hodge_mapping.md'
@@ -30,6 +39,7 @@ files:
 - '[m][F][v1.0][C5][I5][R]_recursive_symbol_collapse.md'
 - '[m][F][v1.1][C4][I5]_recursive_entopy.md'
 - '[m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md'
+- '[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md'
 child_directories:
 - bridges
 - docx

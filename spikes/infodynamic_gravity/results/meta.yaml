@@ -1,15 +1,23 @@
 schema_version: '2.0'
 directory_name: results
-description: >
-  Computational results from infodynamic gravity experiments including
-  validation test outputs, galaxy simulation data, parameter studies,
-  and performance benchmarks.
+description: 'Computational results from infodynamic gravity experiments including
+  validation test outputs, galaxy simulation data, parameter studies, and performance
+  benchmarks.
+
+  '
 semantic_scope:
 - experimental_results
 - validation_data
 - simulation_outputs
 - performance_metrics
-files: []
+files:
+- beta_investigation.png
+- hierarchical_information.png
+- infodynamic_validation_results.png
+- kappa_scaling.png
+- macro_emergence_comparison.png
+- sec_enhanced_cosmic_web.png
+- validation_summary.json
 child_directories: []
 generation_context:
   generator: ai_enhanced

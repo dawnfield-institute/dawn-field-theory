@@ -1,83 +1,80 @@
-schema_version: "2.0"
-type: "series"
-name: "PACSeries"
-title: "PAC Series: Dawn Field Theory"
-description: >
-  Collection of papers establishing Dawn Field Theory through clean derivation,
-  measurement, and honest separation of established results from speculation.
-  Versioned like software: v0.1 (Oct 2025, 5 papers), v0.2 (Feb 2026, 6 papers).
-created: "2025-10-06"
-updated: "2026-02-23"
-version: "0.2"
+schema_version: '2.0'
+type: series
+name: PACSeries
+title: 'PAC Series: Dawn Field Theory'
+description: 'Collection of papers establishing Dawn Field Theory through clean derivation,
+  measurement, and honest separation of established results from speculation. Versioned
+  like software: v0.1 (Oct 2025, 5 papers), v0.2 (Feb 2026, 6 papers).
 
+  '
+created: '2025-10-06'
+updated: '2026-02-23'
+version: '0.2'
 versions:
-  - tag: "v0.2"
-    date: "2026-02-23"
-    path: "v0.2/"
-    paper_count: 6
-    status: "current"
-    papers:
-      - slug: "structure_cost_of_erasure"
-        title: "The Structure Cost of Erasure"
-        order: 1
-        version: "2.1"
-
-      - slug: "balance_constant_decomposition"
-        title: "The Balance Constant and Its Decomposition"
-        order: 2
-        version: "2.1"
-
-      - slug: "feigenbaum_fibonacci_arithmetic"
-        title: "Feigenbaum Constants from Fibonacci Arithmetic"
-        order: 3
-        version: "2.1"
-
-      - slug: "standard_model_fibonacci_arithmetic"
-        title: "Standard Model Parameters from Fibonacci Arithmetic"
-        order: 4
-        version: "2.1"
-
-      - slug: "classical_physics_information_geometry"
-        title: "Classical Physics from Information Geometry"
-        order: 5
-        version: "2.1"
-
-      - slug: "computational_validation_pac_conservation"
-        title: "Computational Validation of PAC Conservation"
-        order: 6
-        version: "2.1"
-
-  - tag: "v0.1"
-    date: "2025-10-06"
-    path: "v0.1/"
-    paper_count: 5
-    status: "archived"
-    zenodo_doi: "10.5281/zenodo.17295103"
-    papers:
-      - slug: "xi_bounded_invariant_universal_balance_operator"
-        title: "Xi Bounded Invariant: Universal Balance Operator"
-        order: 1
-
-      - slug: "sec_med_framework_information_amplification"
-        title: "SEC-MED Framework: Information Amplification"
-        order: 2
-
-      - slug: "mobius_confluence_operator_temporal_emergence"
-        title: "Möbius Confluence Operator: Temporal Emergence"
-        order: 3
-
-      - slug: "relativistic_mas_universal_frequency"
-        title: "Relativistic MAS: Universal Frequency"
-        order: 4
-
-      - slug: "gaia_computational_validation_dawn_field_theory"
-        title: "GAIA Computational Validation"
-        order: 5
-
+- tag: v0.2
+  date: '2026-02-23'
+  path: v0.2/
+  paper_count: 6
+  status: current
+  papers:
+  - slug: structure_cost_of_erasure
+    title: The Structure Cost of Erasure
+    order: 1
+    version: '2.1'
+  - slug: balance_constant_decomposition
+    title: The Balance Constant and Its Decomposition
+    order: 2
+    version: '2.1'
+  - slug: feigenbaum_fibonacci_arithmetic
+    title: Feigenbaum Constants from Fibonacci Arithmetic
+    order: 3
+    version: '2.1'
+  - slug: standard_model_fibonacci_arithmetic
+    title: Standard Model Parameters from Fibonacci Arithmetic
+    order: 4
+    version: '2.1'
+  - slug: classical_physics_information_geometry
+    title: Classical Physics from Information Geometry
+    order: 5
+    version: '2.1'
+  - slug: computational_validation_pac_conservation
+    title: Computational Validation of PAC Conservation
+    order: 6
+    version: '2.1'
+- tag: v0.1
+  date: '2025-10-06'
+  path: v0.1/
+  paper_count: 5
+  status: archived
+  zenodo_doi: 10.5281/zenodo.17295103
+  papers:
+  - slug: xi_bounded_invariant_universal_balance_operator
+    title: 'Xi Bounded Invariant: Universal Balance Operator'
+    order: 1
+  - slug: sec_med_framework_information_amplification
+    title: 'SEC-MED Framework: Information Amplification'
+    order: 2
+  - slug: mobius_confluence_operator_temporal_emergence
+    title: 'Möbius Confluence Operator: Temporal Emergence'
+    order: 3
+  - slug: relativistic_mas_universal_frequency
+    title: 'Relativistic MAS: Universal Frequency'
+    order: 4
+  - slug: gaia_computational_validation_dawn_field_theory
+    title: GAIA Computational Validation
+    order: 5
 zenodo:
-  v01_release: "2025-10-06"
-  v01_doi: "10.5281/zenodo.17295103"
+  v01_release: '2025-10-06'
+  v01_doi: 10.5281/zenodo.17295103
   v01_record_id: 17295103
-  v02_release: "2026-02-23"
-  v02_doi: "10.5281/zenodo.18743674"
+  v02_release: '2026-02-23'
+  v02_doi: 10.5281/zenodo.18743674
   v02_record_id: 18743674
+files:
+- LICENSE
+- PRELIMINARY_RESULTS.md
+- README.md
+- generate_tex_pdfs.py
+child_directories:
+- v0.1
+- v0.2

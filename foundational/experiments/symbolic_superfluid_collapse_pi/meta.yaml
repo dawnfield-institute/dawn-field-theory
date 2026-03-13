@@ -18,7 +18,8 @@ semantic_scope:
 - entropy
 - recursive calculus
 files:
-- results.md
-- symbolic_superfluid_collapse_pi.py
+- README.md
 child_directories:
 - reference_material
+- results
+- scripts

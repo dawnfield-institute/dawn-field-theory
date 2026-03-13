@@ -1,17 +1,31 @@
-schema_version: "2.0"
-description: "JSON output files from experiment runs"
-semantic_scope: "data"
-proficiency_level: "research"
-validation_type: "auto-generated"
-
-files: []  # Auto-generated, see experiments for source
-
-notes: |
-  Result files are named: exp_NN_name_YYYYMMDD_HHMMSS.json
-  Each contains:
-    - experiment: Experiment ID
-    - timestamp: ISO timestamp of run
-    - hypothesis: What was being tested
-    - test_N_*: Results from each test
-    - success: Boolean overall result
-    - conclusion: Human-readable summary
+schema_version: '2.0'
+description: JSON output files from experiment runs
+semantic_scope: data
+proficiency_level: research
+validation_type: auto-generated
+files:
+- exp_01_recursion_test_20251213_160229.json
+- exp_01_recursion_test_20251213_160348.json
+- exp_02_qbe_constraint_20251213_160353.json
+- exp_03_jwst_comparison_20251213_160500.json
+- exp_03_jwst_comparison_20251213_161011.json
+- exp_03b_jwst_redesigned_20251213_163518.json
+- exp_03b_jwst_redesigned_20251213_163555.json
+- exp_04_predictions_20251213_160531.json
+- exp_05_eddington_comparison_20251213_161144.json
+- exp_06_sec_dynamics_20251213_162010.json
+- exp_06_sec_dynamics_20251213_162741.json
+- exp_07_lcdm_comparison_20251213_163217.json
+- exp_08_falsification_20251213_163345.json
+- exp_09_expanded_20251213_175919.json
+- exp_09_expanded_20251213_180057.json
+- exp_10_uhz1_heavy_seeds_20251213_180336.json
+- exp_10_uhz1_heavy_seeds_20251213_180530.json
+- exp_10_uhz1_heavy_seeds_20251213_180546.json
+- exp_11_comprehensive_20260106_084650.json
+- exp_12_falsification_20260106_084915.json
+notes: "Result files are named: exp_NN_name_YYYYMMDD_HHMMSS.json\nEach contains:\n\
+  \  - experiment: Experiment ID\n  - timestamp: ISO timestamp of run\n  - hypothesis:\
+  \ What was being tested\n  - test_N_*: Results from each test\n  - success: Boolean\
+  \ overall result\n  - conclusion: Human-readable summary\n"
+child_directories: []

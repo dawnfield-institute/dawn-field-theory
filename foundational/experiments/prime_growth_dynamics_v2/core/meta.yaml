@@ -1,4 +1,6 @@
-schema_version: "2.0"
-description: "Reusable library code for phase emergence analysis"
-semantic_scope: "implementation"
-files: []
+schema_version: '2.0'
+description: Reusable library code for phase emergence analysis
+semantic_scope: implementation
+files:
+- phase_engine.py
+child_directories: []
