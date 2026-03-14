@@ -143,3 +143,6 @@ cimm.log
 
 # Claude local settings
 .claude/
+
+# Session research notes
+SESSION_NOTES.md

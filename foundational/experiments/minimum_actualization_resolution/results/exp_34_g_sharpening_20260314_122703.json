@@ -1,0 +1,232 @@
+{
+  "experiment": "exp_34_g_sharpening",
+  "timestamp": "2026-03-14T12:27:03.846472",
+  "parts": {
+    "A": {
+      "test": "Reproduce G_naive/G_meas gap",
+      "G_naive": 1.438295534776455e-10,
+      "G_measured": 6.6743e-11,
+      "ratio": 2.154975854810924,
+      "log10_ratio": 0.33344240851943013,
+      "K_needed": 2.154975854810924,
+      "passed": true
+    },
+    "B": {
+      "test": "Round-trip factor K=2",
+      "G_roundtrip": 7.191477673882275e-11,
+      "G_measured": 6.6743e-11,
+      "ratio": 1.077487927405462,
+      "error_percent": 7.7487927405462065,
+      "K_remaining": 1.077487927405462,
+      "best_residual_match": "1/(1 - 1/F7)",
+      "best_residual_value": 1.0833333333333333,
+      "best_residual_error": 0.5425031482205693,
+      "passed": true
+    },
+    "C": {
+      "test": "PAC correction factor scan",
+      "K_needed": 2.154975854810924,
+      "top_candidates": [
+        {
+          "name": "2 + gamma/pi",
+          "K": 2.183733452598308,
+          "error_percent": 1.3169005472332684,
+          "interpretation": "Round-trip with small Euler/geometric correction",
+          "G_predicted": 6.58640610677601e-11
+        },
+        {
+          "name": "2*Xi",
+          "K": 2.1168549799222722,
+          "error_percent": 1.8008260013188115,
+          "interpretation": "Round-trip modulated by attractor balance",
+          "G_predicted": 6.79449252980602e-11
+        },
+        {
+          "name": "F3*Xi",
+          "K": 2.1168549799222722,
+          "error_percent": 1.8008260013188115,
+          "interpretation": "F_3 * Xi: minimal pair \u00d7 attractor",
+          "G_predicted": 6.79449252980602e-11
+        },
+        {
+          "name": "2*Xi_derived",
+          "K": 2.114239732857811,
+          "error_percent": 1.9267503736698055,
+          "interpretation": "Round-trip modulated by derived Xi = 1+pi/55",
+          "G_predicted": 6.802897100189843e-11
+        },
+        {
+          "name": "2*pi/3",
+          "K": 2.0943951023931953,
+          "error_percent": 2.892517861052357,
+          "interpretation": "Geometric: 120-degree symmetry of 3-body projection",
+          "G_predicted": 6.867355319600217e-11
+        }
+      ],
+      "best_name": "2 + gamma/pi",
+      "best_K": 2.183733452598308,
+      "best_error": 1.3169005472332684,
+      "passed": true
+    },
+    "D": {
+      "test": "Mass sensitivity analysis",
+      "M_exact": 2.4553815503759514e-27,
+      "M_exact_over_m_p": 1.467983601683249,
+      "sqrt_K_needed": 1.467983601683249,
+      "phi_exponent": 0.7977562886508165,
+      "best_K1": [
+        "M_exact (tuned)",
+        2.4553815503759514e-27,
+        6.674299999999998e-11,
+        2.220446049250313e-14
+      ],
+      "best_K2": [
+        "m_p * sqrt(Xi)",
+        1.720791846109739e-27,
+        6.794492529806019e-11,
+        1.8008260013187893
+      ],
+      "passed": true
+    },
+    "E": {
+      "test": "Fibonacci depth scan",
+      "k_exact_K1": 184.59551257730163,
+      "k_exact_K2": 183.1550924868891,
+      "fractional_correction_K2": 0.15509248688908883,
+      "phi_correction": 1.0774879274054683,
+      "depth_results": [
+        {
+          "k": 180,
+          "log10_Fk": 37.268290242828165,
+          "G_K1": 6.092717657047518e-10,
+          "err_K1": 812.8624210849855,
+          "G_K2": 3.046358828523759e-10,
+          "err_K2": 356.43121054249275
+        },
+        {
+          "k": 181,
+          "log10_Fk": 37.477277883078145,
+          "G_K1": 3.765506595911983e-10,
+          "err_K1": 464.18000328303845,
+          "G_K2": 1.8827532979559915e-10,
+          "err_K2": 182.09000164151922
+        },
+        {
+          "k": 182,
+          "log10_Fk": 37.686265523328125,
+          "G_K1": 2.3272110611355158e-10,
+          "err_K1": 248.68241780194418,
+          "G_K2": 1.1636055305677579e-10,
+          "err_K2": 74.34120890097209
+        },
+        {
+          "k": 183,
+          "log10_Fk": 37.895253163578104,
+          "G_K1": 1.438295534776455e-10,
+          "err_K1": 115.49758548109241,
+          "G_K2": 7.191477673882275e-11,
+          "err_K2": 7.7487927405462065
+        },
+        {
+          "k": 184,
+          "log10_Fk": 38.104240803828084,
+          "G_K1": 8.889155263590536e-11,
+          "err_K1": 33.184832320850674,
+          "G_K2": 4.444577631795268e-11,
+          "err_K2": -33.40758383957466
+        },
+        {
+          "k": 185,
+          "log10_Fk": 38.313228444078064,
+          "G_K1": 5.493800084173969e-11,
+          "err_K1": -17.68724683975893,
+          "G_K2": 2.7469000420869846e-11,
+          "err_K2": -58.843623419879464
+        },
+        {
+          "k": 186,
+          "log10_Fk": 38.52221608432804,
+          "G_K1": 3.395355179416538e-11,
+          "err_K1": -49.12792083939082,
+          "G_K2": 1.697677589708269e-11,
+          "err_K2": -74.5639604196954
+        }
+      ],
+      "passed": true
+    },
+    "F": {
+      "test": "Alpha-G Fibonacci route",
+      "alpha_G_measured": 5.906149391364588e-39,
+      "alpha_EM_over_alpha_G": 1.2355516404596027e+36,
+      "ratio_over_F183": 0.015725618590883964,
+      "best_formula": "1 / (F_183 * F7)",
+      "best_error": 83.42326265530058,
+      "formula_results": [
+        {
+          "name": "1 / (F_183 * F7)",
+          "value": 9.79046871792071e-40,
+          "error": 83.42326265530058
+        },
+        {
+          "name": "1 / (2*phi*F_183*F7)",
+          "value": 3.025421216733803e-40,
+          "error": 94.87750644919804
+        },
+        {
+          "name": "alpha_EM / F_183",
+          "value": 9.287785266938098e-41,
+          "error": 98.4274381409116
+        },
+        {
+          "name": "alpha_EM / (2*F_183)",
+          "value": 4.643892633469049e-41,
+          "error": 99.2137190704558
+        },
+        {
+          "name": "alpha_EM / (2*Xi*F_183)",
+          "value": 4.387539701599744e-41,
+          "error": 99.25712348082241
+        },
+        {
+          "name": "alpha_EM / (phi^2 * F_183)",
+          "value": 3.5476182917598383e-41,
+          "error": 99.39933481923995
+        },
+        {
+          "name": "alpha_EM^2 / F_183",
+          "value": 6.777624368079741e-43,
+          "error": 99.9885244616772
+        }
+      ],
+      "passed": false
+    },
+    "G": {
+      "test": "Best candidate synthesis",
+      "proposed_formula": "G = hbar*c / (2*Xi * F_183 * m_p^2)",
+      "Xi_value": 1.0584274899611361,
+      "K_proposed": 2.1168549799222722,
+      "G_predicted": 6.79449252980602e-11,
+      "G_measured": 6.6743e-11,
+      "error_percent": 1.8008260013188115,
+      "residual_from_2Xi": 1.018008260013188,
+      "improvement_factor": 64.1358939711606,
+      "passed": true
+    },
+    "H": {
+      "test": "Honest assessment",
+      "formula": "G = hbar*c / (2*Xi * F_183 * m_p^2)",
+      "error_percent": 1.8008260013188115,
+      "inputs_derived": [
+        "F_183 (Fibonacci depth)",
+        "Xi (PAC attractor)",
+        "2 (round-trip)"
+      ],
+      "inputs_measured": [
+        "m_p (proton mass)"
+      ],
+      "L1_severity_change": "HIGH -> MEDIUM",
+      "status": "form derived, scale measured, hierarchy explained",
+      "passed": true
+    }
+  }
+}

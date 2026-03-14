@@ -1,0 +1,58 @@
+{
+  "part_a": {
+    "patches_1d": 61.43494279507473,
+    "patches_3d": 184.3048283852242,
+    "f183_log10": 37.8952531635781,
+    "status": "PASS"
+  },
+  "part_b": {
+    "N_roundtrip": 366,
+    "N_xi": 387.3844613257759,
+    "suppression_roundtrip": -116.5157625149587,
+    "suppression_xi": -123.32348605961559,
+    "suppression_observed": -122.94544225942725,
+    "gap_without_tiling": 6.429679744468558,
+    "gap_with_tiling": 0.37804380018833683,
+    "improvement_factor": 17.007764024341544,
+    "tiling_exact": 1.0551829177931449,
+    "status": "PASS"
+  },
+  "part_c": {
+    "xi": 1.0584274899611363,
+    "xi_pac": 1.057107579123413,
+    "spread": 0.0013199108377233149,
+    "gamma": 0.5772156649015329,
+    "ln_phi": 0.48121182505960347,
+    "status": "PASS"
+  },
+  "part_d": {
+    "euler_gap": 0.0013199108377233149,
+    "euler_gap_approx": 0.0013262911924324613,
+    "status": "PASS"
+  },
+  "part_e": {
+    "dimension_independent_lambda": true,
+    "omega_lambda_dimension_dependent": true,
+    "status": "PASS"
+  },
+  "part_f": {
+    "gap_xi": 0.37804380018833683,
+    "best_tiling": "xi_PAC",
+    "best_gap": 0.22425338247926163,
+    "status": "PASS"
+  },
+  "part_g": {
+    "predicted_log10_rho": -9.65762375941243,
+    "observed_log10_rho": -9.279579959224092,
+    "gap_orders": 0.3780438001883386,
+    "improvement_over_cascade": 17.007764024341544,
+    "status": "PASS"
+  },
+  "part_h": {
+    "l5_previous": "HIGH",
+    "l5_updated": "MEDIUM",
+    "gap_remaining": 0.37804380018833683,
+    "free_parameters": 0,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "experiment": "exp_33_falsification_sweep",
+  "timestamp": "2026-03-14T11:17:42.839526",
+  "parts": {
+    "A": {
+      "chains": [
+        {
+          "link": "PAC \u2192 T_muv symmetric",
+          "assumes": [
+            "PAC conservation axiom",
+            "spacetime is a manifold",
+            "information exchange is reciprocal"
+          ],
+          "derives": [
+            "T_muv = T_vmu (symmetry)"
+          ],
+          "circular": false,
+          "note": "PAC is an axiom, not derived. Spacetime manifold is assumed."
+        },
+        {
+          "link": "PAC \u2192 div(T) = 0",
+          "assumes": [
+            "PAC conservation",
+            "continuum limit exists",
+            "general covariance"
+          ],
+          "derives": [
+            "nabla_mu T^muv = 0"
+          ],
+          "circular": false,
+          "note": "General covariance (partial -> nabla) is motivated by exp_29 frame duality but NOT rigorously derived from PAC. This is a WEAK LINK."
+        },
+        {
+          "link": "MED depth <= 2 \u2192 second-order",
+          "assumes": [
+            "PAC recursion",
+            "metric encodes cascade density",
+            "derivatives = recursion depth"
+          ],
+          "derives": [
+            "Field equations involve at most d^2 g"
+          ],
+          "circular": false,
+          "note": "The mapping \"derivatives = recursion depth\" is an INTERPRETATION, not a proof. Could depth mean something else?"
+        },
+        {
+          "link": "Lovelock \u2192 G_muv",
+          "assumes": [
+            "d=4 (from exp_17)",
+            "symmetry",
+            "div-free",
+            "second-order"
+          ],
+          "derives": [
+            "G_muv + Lambda g_muv unique"
+          ],
+          "circular": false,
+          "note": "Lovelock theorem is a mathematical fact. The question is whether premises are justified."
+        },
+        {
+          "link": "Weak-field \u2192 kappa",
+          "assumes": [
+            "G is known (measured)",
+            "Poisson equation \u2207^2 Phi = 4piG rho"
+          ],
+          "derives": [
+            "kappa = 8piG/c^4"
+          ],
+          "circular": true,
+          "note": "CIRCULAR: We use the measured value of G to fix kappa. G is NOT derived from PAC first principles. The F_183 estimate is order-of-magnitude only."
+        },
+        {
+          "link": "Vacuum \u2192 Schwarzschild",
+          "assumes": [
+            "G_muv = 0",
+            "spherical symmetry",
+            "asymptotic flatness"
+          ],
+          "derives": [
+            "Schwarzschild metric (Birkhoff)"
+          ],
+          "circular": false,
+          "note": "Clean mathematical consequence. No hidden assumptions."
+        },
+        {
+          "link": "FLRW \u2192 Friedmann",
+          "assumes": [
+            "Homogeneity",
+            "isotropy",
+            "perfect fluid"
+          ],
+          "derives": [
+            "Friedmann equations"
+          ],
+          "circular": false,
+          "note": "Standard. Homogeneity/isotropy are observational, not PAC-derived."
+        }
+      ],
+      "n_circular": 1,
+      "n_weak": 2,
+      "n_clean": 4,
+      "status": "PASS (with documented circularity)"
+    },
+    "B": {
+      "symmetry": {
+        "source": "PAC symmetric projection",
+        "test": "Antisymmetric gives spin-1, excluded by GW observation",
+        "genuine": "PARTIALLY \u2014 classification not strict derivation",
+        "limitation": "Relies on projection duality interpretation"
+      },
+      "divergence_free": {
+        "source": "PAC conservation (axiom)",
+        "test": "Approximate PAC would allow non-Einstein gravity",
+        "genuine": "YES if PAC is exact; unknown if approximate",
+        "limitation": "PAC exactness is axiomatic, not proven from deeper principle"
+      },
+      "second_order": {
+        "source": "exp_22 PAC depth theorem + interpretation",
+        "test": "Depth could mean something other than derivative order",
+        "genuine": "INTERPRETIVE \u2014 consistent and predictive but not unique",
+        "limitation": "Alternative interpretations of MED depth not ruled out"
+      },
+      "overall": {
+        "genuinely_derived": 1,
+        "partially_derived": 1,
+        "interpretive": 1,
+        "smuggling": false,
+        "weakest_link": "MED depth \u2192 derivative order interpretation"
+      },
+      "status": "PASS (weaknesses documented)"
+    },
+    "C": {
+      "f183": {
+        "G_predicted": 1.438295534776455e-10,
+        "G_measured": 6.6743e-11,
+        "ratio": 2.154975854810924,
+        "log_ratio": 0.33344240851943013,
+        "quality": "order-of-magnitude"
+      },
+      "alpha_G": {
+        "alpha_G": 5.906149391364588e-39,
+        "hierarchy": 1.2355516404596027e+36,
+        "f183_match": 0.015725618590883964
+      },
+      "natural_units": {
+        "kappa_planck": 25.132741228718345,
+        "interpretation": "Form derived, scale requires measurement",
+        "analogy": "Same as QED: form from gauge invariance, alpha from measurement"
+      },
+      "status": "PASS (limitation: G not derived, form is)",
+      "limitation": "G not derivable from PAC alone; form is derived, scale is not"
+    },
+    "D": {
+      "alternatives": [
+        {
+          "name": "Hilbert action (1915)",
+          "axioms": "Least action + R (Ricci scalar) as Lagrangian",
+          "produces_einstein": true,
+          "unique_to_PAC": false,
+          "note": "Variational principle. Does not explain WHY R is the Lagrangian."
+        },
+        {
+          "name": "Jacobson thermodynamic (1995)",
+          "axioms": "Clausius relation dQ = TdS at Rindler horizons",
+          "produces_einstein": true,
+          "unique_to_PAC": false,
+          "note": "Gravity as thermodynamics. Very close to PAC philosophy!"
+        },
+        {
+          "name": "Padmanabhan emergent (2010)",
+          "axioms": "Horizon entropy S = A/4, equipartition",
+          "produces_einstein": true,
+          "unique_to_PAC": false,
+          "note": "Gravity from information on surfaces. Related to PAC flux."
+        },
+        {
+          "name": "Verlinde entropic (2011)",
+          "axioms": "F = T nabla S (entropic force)",
+          "produces_einstein": true,
+          "unique_to_PAC": false,
+          "note": "Gravity as entropic force. PAC infodynamic gravity (spike) is similar."
+        },
+        {
+          "name": "Weinberg-Witten constraints (1980)",
+          "axioms": "Lorentz invariance + massless spin-2",
+          "produces_einstein": true,
+          "unique_to_PAC": false,
+          "note": "Any consistent spin-2 theory IS Einstein gravity (at low energy)."
+        },
+        {
+          "name": "Deser self-coupling (1970)",
+          "axioms": "Linear spin-2 + self-consistency",
+          "produces_einstein": true,
+          "unique_to_PAC": false,
+          "note": "Einstein gravity is the unique self-consistent nonlinear spin-2 theory."
+        }
+      ],
+      "assessment": {
+        "pac_sufficient": true,
+        "pac_necessary": false,
+        "unique_contributions": [
+          "EM-gravity unification via projection duality",
+          "Fibonacci hierarchy for coupling constants",
+          "Dark sector predictions",
+          "Turbulence connection"
+        ],
+        "not_unique": [
+          "Form of Einstein equations (many derivations known)",
+          "Value of G",
+          "Cosmological constant"
+        ]
+      },
+      "confluence": {
+        "multiple_routes_is_feature": true,
+        "interpretation": "Confluence \u2014 independent convergence IS new information"
+      },
+      "status": "PASS (PAC sufficient not necessary; confluence is the point)"
+    },
+    "E": {
+      "depth_3": {
+        "dof_einstein": 2,
+        "dof_quadratic": 8,
+        "ghost_problem": true,
+        "ostrogradsky": "Higher-order time derivatives \u2192 unbounded Hamiltonian"
+      },
+      "ghost_prediction": {
+        "pac_predicts": "No ghosts (MED depth <= 2 forbids higher-derivative gravity)",
+        "falsifiable": "Detection of massive spin-2 graviton would falsify MED",
+        "current_status": "No ghosts observed \u2014 consistent with PAC"
+      },
+      "mercury_test": {
+        "gr_precession": 42.99104612003006,
+        "r2_correction": 2.487166506492334e+37,
+        "distinguishable": false,
+        "reason": "R^2 corrections are Planck-suppressed at solar system scales"
+      },
+      "status": "PASS (depth 3 gives ghosts; MED prevents them)"
+    },
+    "F": {
+      "dimensions": [
+        {
+          "d": 2,
+          "lovelock": "G_muv = 0 identically (no dynamics)",
+          "einstein_exists": false,
+          "extra_terms": 0,
+          "note": "2D gravity is topological. No gravitons."
+        },
+        {
+          "d": 3,
+          "lovelock": "G_muv exists but has 0 DoF locally",
+          "einstein_exists": true,
+          "extra_terms": 0,
+          "note": "3D gravity has no local degrees of freedom. No gravitational waves."
+        },
+        {
+          "d": 4,
+          "lovelock": "G_muv + Lambda g_muv (unique)",
+          "einstein_exists": true,
+          "extra_terms": 0,
+          "note": "Standard GR. 2 DoF. Gravitational waves exist."
+        },
+        {
+          "d": 5,
+          "lovelock": "G_muv + Lambda g_muv + alpha H_muv (Gauss-Bonnet)",
+          "einstein_exists": true,
+          "extra_terms": 1,
+          "note": "Gauss-Bonnet term contributes dynamics. Extra DoF."
+        },
+        {
+          "d": 6,
+          "lovelock": "G_muv + Lambda g_muv + alpha H_muv + beta L_muv",
+          "einstein_exists": true,
+          "extra_terms": 2,
+          "note": "Two additional Lovelock terms."
+        }
+      ],
+      "d_prediction": {
+        "d_spatial_from_exp17": 3,
+        "d_spatial_from_gauss": 3,
+        "breaks_cleanly_other_d": true
+      },
+      "d5_mercury": {
+        "potential": "1/r^2",
+        "precession": 0,
+        "observed": 42.98,
+        "excluded": true
+      },
+      "status": "PASS (derivation requires d=4; breaks cleanly otherwise)"
+    },
+    "G": {
+      "omega_c_sensitivity": {
+        "formula": "Omega_c = F3 * Xi / F6",
+        "xi_for_exact": 1.06,
+        "xi_deviation_pct": 0.14857040787193454,
+        "sensitivity": "linear (1% Xi \u2192 1% Omega_c)"
+      },
+      "formula_uniqueness": {
+        "n_matches_within_1pct": 5,
+        "matches": [
+          [
+            "F6*Xi^2",
+            "F9",
+            0.26479079581037457,
+            0.07894497721714899
+          ],
+          [
+            "F2",
+            "F5",
+            0.26460687249028403,
+            0.14835000366640935
+          ],
+          [
+            "F7*Xi^2",
+            "F10",
+            0.26433307619791063,
+            0.25166935927901163
+          ],
+          [
+            "F5*Xi^2",
+            "F8",
+            0.26359264741304256,
+            0.5310764479084737
+          ],
+          [
+            "F4*Xi^2",
+            "F7",
+            0.26673065512034067,
+            0.6530774039021326
+          ]
+        ],
+        "unique": false
+      },
+      "dark_energy": {
+        "omega_lambda_phi": 0.6180339887498948,
+        "omega_lambda_obs": 0.685,
+        "gap_pp": 6.696601125010526,
+        "closest_simple": "1 - 1/pi",
+        "phi_is_best": false
+      },
+      "status": "PASS (with 2 documented weaknesses)"
+    },
+    "H": {
+      "reissner_nordstrom": {
+        "derivable": true,
+        "requires_new_pac": false,
+        "route": "EM stress-energy in G_muv = kappa T_muv"
+      },
+      "kerr": {
+        "derivable": true,
+        "from_vacuum": "Unique axisymmetric vacuum solution (no-hair theorem)",
+        "physical_picture": "Missing \u2014 angular cascade density not yet formulated",
+        "open_question": "What does frame dragging look like in PAC terms?"
+      },
+      "flrw_desitter": {
+        "flrw_derived": true,
+        "desitter_derived": true
+      },
+      "nonlinear_gw": {
+        "derivable": true,
+        "route": "Nonlinearity of Einstein tensor",
+        "pac_interpretation": "GW self-interact by modifying cascade budget of medium"
+      },
+      "underivable": [
+        "Black hole interior / singularity resolution",
+        "Hawking radiation temperature",
+        "Graviton quantization",
+        "Spacetime topology change"
+      ],
+      "status": "PASS (Kerr/RN derivable; 4 items remain beyond current framework)"
+    }
+  },
+  "synthesis": {
+    "n_pass": 8,
+    "total": 8,
+    "limitations": [
+      {
+        "id": "L1",
+        "severity": "HIGH",
+        "description": "G not derived from PAC first principles",
+        "detail": "Coupling constant kappa = 8piG/c^4 requires measured G. F_183 gives order-of-magnitude only.",
+        "source": "Part A (circularity audit) + Part C",
+        "impact": "Field equation FORM is derived; SCALE is empirical",
+        "path_forward": "Derive G from cascade depth with better than OoM precision"
+      },
+      {
+        "id": "L2",
+        "severity": "MEDIUM",
+        "description": "General covariance assumed, not derived from PAC",
+        "detail": "The step from partial to covariant derivative (flat to curved) is motivated by exp_29 frame duality but not rigorously proven.",
+        "source": "Part A (circularity audit)",
+        "impact": "Field equations assume spacetime is a smooth manifold",
+        "path_forward": "Derive covariance from PAC phase-cycling on discrete lattice"
+      },
+      {
+        "id": "L3",
+        "severity": "MEDIUM",
+        "description": "MED depth \u2192 derivative order is interpretive",
+        "detail": "exp_22 proves recursion depth floors to 2. Mapping this to \"second derivatives of the metric\" is an interpretation, not a theorem.",
+        "source": "Part B (Lovelock smuggling test)",
+        "impact": "If depth means something else, could allow non-Einstein gravity",
+        "path_forward": "Find physical setup where depth interpretation can be tested"
+      },
+      {
+        "id": "L4",
+        "severity": "LOW",
+        "description": "PAC is sufficient but not necessary for Einstein equations",
+        "detail": "At least 6 other derivation routes exist (Hilbert, Jacobson, Verlinde, etc.).",
+        "source": "Part D (alternative axiom test)",
+        "impact": "PAC uniqueness claim is about CONNECTIONS, not about being the only route",
+        "path_forward": "Show PAC unifies the other routes (confluence argument)"
+      },
+      {
+        "id": "L5",
+        "severity": "HIGH",
+        "description": "Cosmological constant unsolved",
+        "detail": "10^123 ratio between Planck density and observed vacuum energy. No PAC resolution.",
+        "source": "exp_32 Part F + exp_31 Part E",
+        "impact": "Major unsolved problem in all approaches to gravity",
+        "path_forward": "Cascade cancellation, Fibonacci suppression, or phase cycling"
+      },
+      {
+        "id": "L6",
+        "severity": "MEDIUM",
+        "description": "Dark sector predictions may be numerical coincidence",
+        "detail": "Omega_c = F3*Xi/F6 is not unique (multiple Fibonacci formulas work). 1/phi is not the best simple fit for Omega_Lambda.",
+        "source": "Part G (dark sector robustness)",
+        "impact": "Predictions need theoretical grounding beyond numerics",
+        "path_forward": "Derive Omega_c formula from cascade dynamics, not Fibonacci fitting"
+      },
+      {
+        "id": "L7",
+        "severity": "LOW",
+        "description": "Frame dragging physical picture missing",
+        "detail": "Kerr metric follows from G_muv = 0 + axisymmetry (no-hair theorem), but the PAC physical picture (angular cascade density) is not formulated.",
+        "source": "Part H (beyond Schwarzschild)",
+        "impact": "Kerr is mathematically derived but lacks PAC intuition",
+        "path_forward": "Formulate angular cascade density for rotating masses"
+      },
+      {
+        "id": "L8",
+        "severity": "LOW",
+        "description": "Local exponential does not bridge to Gauss model",
+        "detail": "exp_31 Part B: exp(-r/r_0)/r superposition gives exponent -8.5, not -2.",
+        "source": "exp_31 Part B",
+        "impact": "Two gravity models (local exponential and Gauss/1/r) remain disconnected",
+        "path_forward": "Find the scale-dependent transition between models"
+      }
+    ],
+    "high": 2,
+    "medium": 3,
+    "low": 3
+  }
+}
