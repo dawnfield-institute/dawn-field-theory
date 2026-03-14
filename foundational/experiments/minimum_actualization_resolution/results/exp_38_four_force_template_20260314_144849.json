@@ -1,0 +1,34 @@
+{
+  "experiment": "exp_38_four_force_template",
+  "timestamp": "20260314_144849",
+  "results": {
+    "part_a": "PASS",
+    "part_b": "{'status': 'PASS', 'best': {'a': 11, 'b': 4, 'n': 6, 'gap': 7, 'error_pct': 0.09879951744256471, 'correction': 1.5246218494510626, 'alpha_s_pred': 0.11778351536893522}}",
+    "part_c": "PASS",
+    "part_d": "PASS",
+    "part_e": "PASS",
+    "part_f": "PASS",
+    "part_g": "PASS",
+    "part_h": "PASS",
+    "part_i": "PASS"
+  },
+  "key_values": {
+    "alpha_s_bare": 0.07725424859373685,
+    "alpha_s_measured": 0.1179,
+    "sin2_bare": 0.23076923076923078,
+    "sin2_measured": 0.23121,
+    "gauge_content": "1+3+8+1=13=F7",
+    "best_strong_n8": {
+      "a": 7,
+      "b": 2,
+      "n": 8,
+      "error_pct": 0.5816080627628074
+    },
+    "best_strong_n3": {
+      "a": 5,
+      "b": 2,
+      "n": 3,
+      "error_pct": 0.287447318813613
+    }
+  }
+}
