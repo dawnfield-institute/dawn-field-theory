@@ -1,0 +1,21 @@
+{
+  "experiment": "exp_40_open_question_sweep",
+  "timestamp": "20260314_160234",
+  "results": {
+    "part_a": "PASS",
+    "part_b": "PASS",
+    "part_c": "PASS",
+    "part_d": "PASS",
+    "part_e": "PASS",
+    "part_f": "PASS"
+  },
+  "key_values": {
+    "G_residual_pct": 0.1793121376158172,
+    "G_meas_uncertainty_pct": 0.0022474266964325846,
+    "CC_gap_orders": 0.22,
+    "tiling_exact": 1.0552220347372765,
+    "depth_continuous": 91.46161831955855,
+    "double_fib_count": 8,
+    "total_combos": 494
+  }
+}

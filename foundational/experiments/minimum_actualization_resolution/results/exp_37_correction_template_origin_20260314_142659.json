@@ -1,0 +1,50 @@
+{
+  "part_a": {
+    "status": "PASS"
+  },
+  "part_b": {
+    "pi_over_5": 0.6283185307179586,
+    "convergence": true,
+    "status": "PASS"
+  },
+  "part_c": {
+    "fibonacci_identity_verified": true,
+    "status": "PASS"
+  },
+  "part_d": {
+    "n_em": 4,
+    "n_gravity": 1,
+    "n_dark_energy": 4,
+    "status": "PASS"
+  },
+  "part_e": {
+    "em_gap": 3,
+    "gravity_gap": 7,
+    "de_gap": 4,
+    "em_gap_is_fibonacci": true,
+    "gravity_gap_is_fibonacci": true,
+    "de_gap_is_fibonacci": false,
+    "status": "PASS"
+  },
+  "part_f": {
+    "em_sign": -1,
+    "gravity_sign": 1,
+    "de_sign": 1,
+    "screening_connection": true,
+    "status": "PASS"
+  },
+  "part_g": {
+    "formula_a": 2.1168549799222727,
+    "formula_b": 2.158846929387863,
+    "ab_ratio": 1.0198369514510306,
+    "status": "PASS"
+  },
+  "part_h": {
+    "weinberg_angle_matches": 6,
+    "status": "PASS"
+  },
+  "part_i": {
+    "status": "PASS",
+    "interpretive_not_derivational": true
+  }
+}
