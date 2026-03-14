@@ -1,6 +1,6 @@
 # Minimum Actualization Resolution
 
-**Status**: active — open questions under investigation (exp_19-27 added 2026-03-12)
+**Status**: active — open questions under investigation (exp_28 added 2026-03-13)
 **Pillar**: PAC / cross-domain (Planck physics + information theory)
 **Related**: landauer_erasure_structure, pac_confluence_xi, sec_threshold_detection
 
@@ -43,6 +43,7 @@ Planck-scale quantities emerge from the PAC framework as the **minimum viable ac
 | 25 | Physical system separation | gamma/ln(phi) separation holds across 5 systems: primes (pure counting→gamma), SEC (pure branching→1/phi), CAs, cascade, Landauer (mixed→Xi) | confirmed |
 | 26 | Xi spread resolution | 0.12% spread between Xi_analytic and Xi_Fib = gamma's non-Fibonacci residual. Spectral formula approximates gamma as (1+pi/55-ln(phi))=0.5759, 99.77% of actual gamma. Not an error — structural. | resolved |
 | 27 | Free-streaming signature | PAC dilation is LOCAL → scale-dependent P(k) boost ~5.8%, BAO shift ~2.8%, H_0 shift +2.0 km/s/Mpc. S8 tension direction correct. Falsifiable by future surveys. | testable |
+| 28 | Statistical relativity | deficit(f=ln2) = ln²(2) = 1 - xi_floor; Lorentz from asymmetry | confirmed |
 
 ---
 
@@ -133,6 +134,12 @@ Planck-scale quantities emerge from the PAC framework as the **minimum viable ac
 |--------|-------|
 | exp_27_free_streaming_signature.py | Derives testable predictions from PAC Eddington regulator + free-streaming exemption. Scale-dependent PAC dilation: k > k_fs (interacting) gets enhanced, k < k_fs (free-streaming) standard. P(k) boost ~5.8% at small scales. BAO shift: r_s ~ 142.9 Mpc (vs 147.1, 2.8% shift). H_0 shift +2.0 km/s/Mpc toward SH0ES. S8 tension direction correctly predicted. 5 falsifiable predictions for Euclid/Roman/Simons Observatory. **TESTABLE** |
 
+### Statistical Relativity (28)
+
+| Script | Tests |
+|--------|-------|
+| exp_28_statistical_relativity.py | Tests whether multiplicative-additive asymmetry (lose f then gain f ≠ identity) is the structural root of relativistic frame dependence. Round-trip deficit at Landauer fraction f=ln(2) equals ln²(2) = 1-xi_floor exactly. 5 parts: (A) Asymmetry convergence to ln²(2), (B) Cascade-embedded asymmetry, (C) Frame-dependent time from statistics, (D) Gamma as statistical frame dependence, (E) Lorentz factor recovery from pure multiplicative structure. Derives gamma(v) without invoking spacetime geometry. 7/7 tests passing. **SUPPORTED** |
+
 ### Cascade & Cosmological (21-22)
 
 | Script | Tests |
@@ -155,6 +162,10 @@ PAC constraints
     |-- MED balance operator      --> C = (1-ln2)^2 (Lyapunov regulation cost)
     |-- Combined                  --> xi_PAC = 1 + f * ln(2) * C
     |                                       = 1 + (modes)(dissipation)(regulation)
+    |-- Statistics (exp_28)       --> ln(2) asymmetry: deficit(f=ln2) = ln²(2) = 1 - xi_floor
+    |                                   --> frame-dependent time from multiplicative cascade
+    |                                   --> gamma_EM = irreducible counting/frame mismatch
+    |                                   `-- Lorentz factor = 1/sqrt(1 - beta^2) from capacity deficit
     |-- Continued fraction        --> l_MVAE ~= phi = [1;1,1,1,...]
     |-- Euler gap                 --> Xi - xi_PAC ~= 1/(240*pi), 240 = F3*F4*F5*F6
     |-- Dimensional limit         --> xi(d->inf) = 1 + ln2*(1-ln2)^2 (drop f)
