@@ -1,0 +1,342 @@
+{
+  "experiment": "exp_32_einstein_field_equations",
+  "timestamp": "2026-03-14T10:52:18.436825",
+  "parts": {
+    "A": {
+      "equation_of_state": {
+        "w_matter": 0.0,
+        "w_radiation": 0.3333333333333333,
+        "w_vacuum": -1.0,
+        "w_stiff": 1.0,
+        "causality_bound": [
+          -1,
+          1
+        ],
+        "pac_origin": "P = A + \u03be + \u0398 budget partition"
+      },
+      "symmetry": {
+        "T_symmetric": true,
+        "independent_components": 10,
+        "pac_origin": "reciprocal cascade exchange between directions",
+        "connection": "gravity_from_maxwell_pac exp_02 symmetric projection"
+      },
+      "test_cases": {
+        "vacuum": {
+          "T": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "trace": 0
+        },
+        "fluid": {
+          "T": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.1,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.1,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.1
+            ]
+          ],
+          "trace": -0.7
+        },
+        "cosmological": {
+          "T": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.3333333333333333,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.3333333333333333,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.3333333333333333
+            ]
+          ],
+          "trace": 0.0
+        }
+      },
+      "status": "PASS"
+    },
+    "B": {
+      "flat_space": {
+        "continuity": "\u03bd=0 component \u2192 mass/energy conservation",
+        "euler": "\u03bd=i components \u2192 momentum conservation",
+        "pac_interpretation": "Information budget conserved across spacetime regions"
+      },
+      "curved_space": {
+        "tov_equation": "TOV = covariant conservation \u2207_\u03bc T^\u03bc\u03bd = 0 for static sphere",
+        "weak_field_limit": "Reduces to Newtonian hydrostatic equilibrium",
+        "gauss_law_connection": "exp_31 Part A (Gauss law for PAC flux)"
+      },
+      "bianchi": {
+        "identity": "\u2207_\u03bc G^\u03bc\u03bd = 0 (contracted Bianchi identity)",
+        "pac_meaning": "Geometry automatically conserves information budget",
+        "requirement": "PAC conservation \u2192 field equation source must be divergence-free"
+      },
+      "status": "PASS"
+    },
+    "C": {
+      "pac_depth": {
+        "k_bounds": [
+          [
+            2,
+            1.618033988749895,
+            2.618033988749895,
+            2
+          ],
+          [
+            3,
+            1.839286755214161,
+            2.191487883953119,
+            2
+          ],
+          [
+            4,
+            1.927561975482925,
+            2.078095077667841,
+            2
+          ],
+          [
+            5,
+            1.965948236645486,
+            2.035252161619724,
+            2
+          ],
+          [
+            6,
+            1.9835828434243288,
+            2.0166911782626413,
+            2
+          ],
+          [
+            7,
+            1.9919641966050352,
+            2.0081009006398287,
+            2
+          ],
+          [
+            8,
+            1.9960311797354162,
+            2.0039846345629844,
+            2
+          ]
+        ],
+        "all_floor_leq_2": true,
+        "k2_bound": 2.618033988749895,
+        "limit": 2.0
+      },
+      "derivative_order": {
+        "depth_0": "g_\u03bc\u03bd (algebraic)",
+        "depth_1": "\u2202g \u2192 Christoffel symbols \u0393^\u03c1_\u03bc\u03bd",
+        "depth_2": "\u2202\u00b2g \u2192 Riemann R^\u03c1_\u03c3\u03bc\u03bd, Ricci R_\u03bc\u03bd, scalar R",
+        "depth_3_forbidden": "\u2202\u00b3g \u2192 excluded by MED depth \u2264 2"
+      },
+      "lovelock": {
+        "conditions": {
+          "symmetric": "PAC symmetric projection (Part A)",
+          "divergence_free": "PAC conservation (Part B)",
+          "second_order": "MED depth \u2264 2 (exp_22)"
+        },
+        "result": "G_\u03bc\u03bd + \u039bg_\u03bc\u03bd = \u03ba T_\u03bc\u03bd (unique up to \u03ba, \u039b)",
+        "physical_dof": 2,
+        "matches_gw_polarizations": true
+      },
+      "dimensions": {
+        "d_spacetime": 4,
+        "d_spatial": 3,
+        "source": "exp_17 (d=3+1 established)",
+        "gauss_bonnet_4d": "topological invariant, no field equations",
+        "uniqueness": "G_\u03bc\u03bd + \u039bg_\u03bc\u03bd is the ONLY possibility in 4D"
+      },
+      "status": "PASS"
+    },
+    "D": {
+      "coupling_constant": {
+        "kappa": 2.0766474428449717e-43,
+        "formula": "8\u03c0G/c\u2074",
+        "derivation": "Weak-field G_00 = \u03baT_00 matched to PAC Gauss law",
+        "gauss_law_source": "exp_31 Part A"
+      },
+      "field_equations": {
+        "equation": "G_\u03bc\u03bd + \u039bg_\u03bc\u03bd = (8\u03c0G/c\u2074) T_\u03bc\u03bd",
+        "derivation_chain": [
+          "PAC conservation \u2192 symmetric T_\u03bc\u03bd with \u2207_\u03bc T^\u03bc\u03bd = 0",
+          "MED depth \u2264 2 \u2192 second-order field equations",
+          "Lovelock theorem (4D) \u2192 G_\u03bc\u03bd + \u039bg_\u03bc\u03bd unique",
+          "Weak-field match to PAC Gauss law \u2192 \u03ba = 8\u03c0G/c\u2074"
+        ],
+        "free_parameters": [
+          "G (cascade depth)",
+          "\u039b (cosmological constant)"
+        ]
+      },
+      "cross_checks": {
+        "kappa_planck": 25.132741228718345,
+        "poisson_recovered": true,
+        "schwarzschild_consistent": true
+      },
+      "status": "PASS"
+    },
+    "E": {
+      "birkhoff": {
+        "theorem": "Spherically symmetric vacuum \u2192 Schwarzschild (unique)",
+        "pac_interpretation": "Cascade density profile uniquely determined by PAC in vacuum"
+      },
+      "numerical_verification": {
+        "test_radii": [
+          2.0,
+          3.0,
+          5.0,
+          10.0,
+          50.0,
+          100.0
+        ],
+        "max_residual": 0,
+        "vacuum_satisfied": true
+      },
+      "classical_tests": {
+        "mercury_precession": {
+          "predicted": 42.99104612003006,
+          "gr_value": 42.98,
+          "error_pct": 0.02570060500248074
+        },
+        "light_deflection": {
+          "predicted": 1.7516395958595954,
+          "gr_value": 1.7505,
+          "error_pct": 0.06510116307314731
+        },
+        "shapiro_delay": "formula identical to GR"
+      },
+      "gravitational_waves": {
+        "speed": "c (wave equation \u25a1h\u0304_\u03bc\u03bd = 0)",
+        "spin": 2,
+        "polarizations": 2,
+        "gw170817": "|\u0394c/c| < 3\u00d710\u207b\u00b9\u2075"
+      },
+      "status": "PASS"
+    },
+    "F": {
+      "friedmann_equations": {
+        "first": "(\u0227/a)\u00b2 = (8\u03c0G/3)\u03c1 - kc\u00b2/a\u00b2 + \u039bc\u00b2/3",
+        "second": "\u00e4/a = -(4\u03c0G/3)(\u03c1 + 3p/c\u00b2) + \u039bc\u00b2/3",
+        "pac_interpretation": {
+          "first": "Cascade budget balance for cosmic expansion",
+          "second": "Cascade pressure controls acceleration",
+          "lambda": "Irreducible cascade background (vacuum PAC budget)"
+        }
+      },
+      "density_parameters": {
+        "H0": 67.4,
+        "rho_crit": 8.532731176836996e-27,
+        "Omega_m": 0.315,
+        "Omega_r": 9.1e-05,
+        "Omega_Lambda": 0.685,
+        "Omega_k": 0.001
+      },
+      "pac_predictions": {
+        "dark_matter": {
+          "formula": "\u03a9_c = F\u2083\u00b7\u039e\u00b2/F\u2081\u2080",
+          "predicted": 0.26460687249028403,
+          "observed": 0.265,
+          "error_pct": 0.14835000366640935
+        },
+        "dark_energy": {
+          "formula": "\u03a9_\u039b \u2192 1/\u03c6 (PAC equilibrium)",
+          "predicted": 0.6180339887498948,
+          "observed": 0.685,
+          "gap_pp": 6.696601125010526,
+          "interpretation": "Universe approaching but not at \u03c6-equilibrium"
+        }
+      },
+      "cosmological_constant": {
+        "rho_planck": 5.154848506403409e+96,
+        "rho_lambda_obs": 5.8449208561333425e-27,
+        "ratio": 8.819364082567844e+122,
+        "log_ratio": 122.94543727159574,
+        "status": "UNSOLVED \u2014 same 10^120 problem as standard QFT"
+      },
+      "friedmann_check": {
+        "omega_total": 1.001091,
+        "closure_error": 0.0010909999999999531,
+        "q0": -0.527409,
+        "accelerating": true,
+        "age_gyr": 13.796334878395665,
+        "age_obs_gyr": 13.787,
+        "age_error_pct": 0.06770782908293757
+      },
+      "status": "PASS"
+    }
+  },
+  "synthesis": {
+    "n_pass": 6,
+    "total": 6,
+    "derivation_chain": [
+      "PAC conservation \u2192 symmetric T_\u03bc\u03bd with \u2207_\u03bc T^\u03bc\u03bd = 0",
+      "MED depth \u2264 2 \u2192 second-order field equations",
+      "Lovelock theorem (4D) \u2192 G_\u03bc\u03bd + \u039bg_\u03bc\u03bd unique geometric tensor",
+      "Weak-field match to PAC Gauss law \u2192 \u03ba = 8\u03c0G/c\u2074",
+      "Vacuum solution \u2192 Schwarzschild metric (exp_30)",
+      "Cosmological application \u2192 Friedmann equations"
+    ],
+    "honest_limitations": [
+      "Lovelock theorem is used, not re-derived",
+      "G not derived from first principles (order-of-magnitude from F_183)",
+      "Cosmological constant unsolved (10^120 problem)",
+      "Kerr metric not yet derived"
+    ]
+  }
+}

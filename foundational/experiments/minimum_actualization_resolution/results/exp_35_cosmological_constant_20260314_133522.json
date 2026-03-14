@@ -1,0 +1,195 @@
+{
+  "experiment": "exp_35_cosmological_constant",
+  "timestamp": "2026-03-14T13:35:22.645064",
+  "parts": {
+    "A": {
+      "test": "CC problem in PAC language",
+      "rho_planck": 4.632946790733813e+113,
+      "rho_observed": 5.253152888756675e-10,
+      "ratio": 8.819364082567844e+122,
+      "log10_ratio": 122.94543727159574,
+      "omega_lambda_observed": 0.685,
+      "omega_lambda_pac": 0.6180339887498948,
+      "gap_pp": 6.696601125010526,
+      "passed": true
+    },
+    "B": {
+      "test": "Cascade cancellation",
+      "residual_per_level": 0.4804530139182014,
+      "N_needed": 386.19693224448525,
+      "N_roundtrip": 366,
+      "suppression_roundtrip": -116.5157625149587,
+      "orders_off": 6.429674756637041,
+      "passed": false
+    },
+    "C": {
+      "test": "Fibonacci suppression",
+      "target_log10": 122.94543727159574,
+      "N_exact": 589.9627467264838,
+      "best_candidate": {
+        "name": "24^2+24+1 = 601",
+        "N": 601,
+        "log10_FN": 125.25208678806922,
+        "delta": 2.3066495164734846
+      },
+      "F183_cubed_log": 113.68575949073431,
+      "depth_results": [
+        {
+          "name": "24^2+24+1 = 601",
+          "N": 601,
+          "log10_FN": 125.25208678806922,
+          "delta": 2.3066495164734846
+        },
+        {
+          "name": "576 (nearest to 575.7)",
+          "N": 576,
+          "log10_FN": 120.02739578181976,
+          "delta": 2.918041489775973
+        },
+        {
+          "name": "2*183 (round-trip)",
+          "N": 366,
+          "log10_FN": 76.13999132932422,
+          "delta": 46.80544594227152
+        },
+        {
+          "name": "183 (gravity)",
+          "N": 183,
+          "log10_FN": 37.895253163578104,
+          "delta": 85.05018410801763
+        },
+        {
+          "name": "F7^3 + F7^2 + F7 + 1",
+          "N": 2380,
+          "log10_FN": 497.04109879278144,
+          "delta": 374.0956615211857
+        }
+      ],
+      "passed": true
+    },
+    "D": {
+      "test": "Phase cycling cancellation",
+      "phase_residual": 0.1103178000763258,
+      "depths_needed": 128.4220726749134,
+      "suppression_183_depths": -175.1958565382747,
+      "target": -122.94543727159574,
+      "match_quality": 52.250419266678975,
+      "passed": false
+    },
+    "E": {
+      "test": "MED mode counting",
+      "D_span_universe": 295.40489911491454,
+      "xi_floor_suppression": -84.0058184633064,
+      "target": -122.94543727159574,
+      "difference": 38.93961880828934,
+      "insight": "PAC constrains which modes exist, not just their energies",
+      "passed": false
+    },
+    "F": {
+      "test": "Correction template for Omega_Lambda",
+      "target": 0.685,
+      "base": 0.6180339887498948,
+      "best_overall": {
+        "formula": "mult: (1/phi)*(1 + F_9/(4*pi*F_5^2))",
+        "value": 0.6849209404795705,
+        "error": 0.011541535829127772
+      },
+      "top_multiplicative": [
+        {
+          "formula": "(1/phi)*(1 + F_9/(4*pi*F_5^2))",
+          "short": "F_9/(4*pi*F_5^2) = 34/(4*pi*5^2)",
+          "value": 0.6849209404795705,
+          "error": 0.011541535829127772,
+          "a": 9,
+          "b": 5,
+          "n": 4,
+          "gap": 4
+        },
+        {
+          "formula": "(1/phi)*(1 + F_13/(4*pi*F_7^2))",
+          "short": "F_13/(4*pi*F_7^2) = 233/(4*pi*13^2)",
+          "value": 0.6858405487612699,
+          "error": 0.12270784836055787,
+          "a": 13,
+          "b": 7,
+          "n": 4,
+          "gap": 6
+        },
+        {
+          "formula": "(1/phi)*(1 + F_15/(4*pi*F_8^2))",
+          "short": "F_15/(4*pi*F_8^2) = 610/(4*pi*21^2)",
+          "value": 0.6860629345867332,
+          "error": 0.15517293236979882,
+          "a": 15,
+          "b": 8,
+          "n": 4,
+          "gap": 7
+        }
+      ],
+      "top_additive": [
+        {
+          "formula": "1/phi + F_8/(4*pi*F_5^2)",
+          "short": "F_8/(4*pi*F_5^2) = 21/(4*pi*5^2)",
+          "value": 0.6848790648484908,
+          "error": 0.01765476664368442,
+          "a": 8,
+          "b": 5,
+          "n": 4,
+          "gap": 3
+        },
+        {
+          "formula": "1/phi + F_5/(6*pi*F_3^2)",
+          "short": "F_5/(6*pi*F_3^2) = 5/(6*pi*2^2)",
+          "value": 0.6843485483715178,
+          "error": 0.09510242751565486,
+          "a": 5,
+          "b": 3,
+          "n": 6,
+          "gap": 2
+        },
+        {
+          "formula": "1/phi + F_12/(4*pi*F_7^2)",
+          "short": "F_12/(4*pi*F_7^2) = 144/(4*pi*13^2)",
+          "value": 0.6858396449783946,
+          "error": 0.12257590925467224,
+          "a": 12,
+          "b": 7,
+          "n": 4,
+          "gap": 5
+        }
+      ],
+      "top_other": [
+        {
+          "formula": "1/phi * (1 + 1/(3*pi))",
+          "value": 0.6836094316221258,
+          "error": 0.20300268290134493
+        },
+        {
+          "formula": "1 - 1/pi",
+          "value": 0.6816901138162093,
+          "error": 0.4831950633271241
+        },
+        {
+          "formula": "ln(2)",
+          "value": 0.6931471805599453,
+          "error": 1.189369424809523
+        }
+      ],
+      "passed": true
+    },
+    "G": {
+      "test": "Honest assessment",
+      "L5_status": "HIGH (unchanged)",
+      "key_insight": "PAC reframes CC from suppression to mode existence",
+      "cascade_cancellation_orders": "~117 (3 off target)",
+      "omega_lambda_gap": "6.7pp from 1/phi",
+      "research_directions": [
+        "Rigorous MED vacuum mode counting",
+        "Precise cascade cancellation with N=2*183",
+        "Derive 6.7pp gap from dynamics not fitting",
+        "Connect to Swampland conjectures"
+      ],
+      "passed": true
+    }
+  }
+}

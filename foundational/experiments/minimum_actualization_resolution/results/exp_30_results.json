@@ -1,0 +1,262 @@
+{
+  "experiment": "exp_30_cascade_general_relativity",
+  "timestamp": "2026-03-14T09:57:47.897209",
+  "parts": {
+    "A": {
+      "description": "Cascade density profile from PAC tree structure",
+      "density_profile": "rho_c/rho_crit = r_s/r",
+      "horizon_condition": "rho_c = rho_crit at r = r_s",
+      "round_trip_factor": "2GM/rc^2 from cascade out+back interaction",
+      "rows": [
+        {
+          "r_over_rs": 1.01,
+          "rho_ratio": 0.9900990099009901,
+          "remaining": 0.00990099009900991
+        },
+        {
+          "r_over_rs": 1.1,
+          "rho_ratio": 0.9090909090909091,
+          "remaining": 0.09090909090909094
+        },
+        {
+          "r_over_rs": 1.5,
+          "rho_ratio": 0.6666666666666666,
+          "remaining": 0.33333333333333337
+        },
+        {
+          "r_over_rs": 2.0,
+          "rho_ratio": 0.5,
+          "remaining": 0.5
+        },
+        {
+          "r_over_rs": 3.0,
+          "rho_ratio": 0.3333333333333333,
+          "remaining": 0.6666666666666667
+        },
+        {
+          "r_over_rs": 5.0,
+          "rho_ratio": 0.2,
+          "remaining": 0.8
+        },
+        {
+          "r_over_rs": 10.0,
+          "rho_ratio": 0.1,
+          "remaining": 0.9
+        },
+        {
+          "r_over_rs": 20.0,
+          "rho_ratio": 0.05,
+          "remaining": 0.95
+        },
+        {
+          "r_over_rs": 50.0,
+          "rho_ratio": 0.02,
+          "remaining": 0.98
+        },
+        {
+          "r_over_rs": 100.0,
+          "rho_ratio": 0.01,
+          "remaining": 0.99
+        },
+        {
+          "r_over_rs": 1000.0,
+          "rho_ratio": 0.001,
+          "remaining": 0.999
+        },
+        {
+          "r_over_rs": 1000000.0,
+          "rho_ratio": 1e-06,
+          "remaining": 0.999999
+        }
+      ],
+      "finding": "Cascade density falls as r_s/r from a central mass. This follows from the gravitational potential being the fraction of Landauer budget consumed by cascade interactions. The factor of 2 in r_s = 2GM/c^2 comes from the round-trip nature of cascade interactions (signal out + back), matching the multiplicative asymmetry structure from exp_28."
+    },
+    "B": {
+      "description": "Full Schwarzschild metric from cascade components",
+      "metric": "ds^2 = -(1-r_s/r)dt^2 + (1-r_s/r)^{-1}dr^2 + r^2 dOmega^2",
+      "g_tt_source": "exp_29: phase-cycling rate",
+      "g_rr_source": "local c invariance (Part C)",
+      "g_angular_source": "spherical symmetry of cascade density",
+      "product_is_minus1": true,
+      "rows": [
+        {
+          "r_over_rs": 1.01,
+          "g_tt": -0.00990099009900991,
+          "g_rr": 100.99999999999991,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 1.1,
+          "g_tt": -0.09090909090909094,
+          "g_rr": 10.999999999999996,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 1.5,
+          "g_tt": -0.33333333333333337,
+          "g_rr": 2.9999999999999996,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 2.0,
+          "g_tt": -0.5,
+          "g_rr": 2.0,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 3.0,
+          "g_tt": -0.6666666666666667,
+          "g_rr": 1.4999999999999998,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 5.0,
+          "g_tt": -0.8,
+          "g_rr": 1.25,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 10.0,
+          "g_tt": -0.9,
+          "g_rr": 1.1111111111111112,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 50.0,
+          "g_tt": -0.98,
+          "g_rr": 1.0204081632653061,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 100.0,
+          "g_tt": -0.99,
+          "g_rr": 1.0101010101010102,
+          "product": -1.0
+        },
+        {
+          "r_over_rs": 1000.0,
+          "g_tt": -0.999,
+          "g_rr": 1.001001001001001,
+          "product": -1.0
+        }
+      ],
+      "finding": "The complete Schwarzschild metric assembled from three PAC principles: (1) phase-cycling rate for g_tt, (2) local c invariance for g_rr, (3) spherical symmetry for angular components. g_tt * g_rr = -1 everywhere, confirming the reciprocal constraint."
+    },
+    "C": {
+      "description": "Local c invariance forces g_rr = 1/(1-r_s/r)",
+      "constraint": "g_tt * g_rr = -1 in Schwarzschild coordinates",
+      "coordinate_speed": "dr/dt = (1 - r_s/r)",
+      "local_speed": "dr_proper/dt_proper = 1 (c in Planck units)",
+      "all_local_c": true,
+      "rows": [
+        {
+          "r_over_rs": 1.01,
+          "coord_speed": 0.00990099009900991,
+          "proper_speed": 1.0,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 1.1,
+          "coord_speed": 0.09090909090909094,
+          "proper_speed": 1.0,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 1.5,
+          "coord_speed": 0.33333333333333337,
+          "proper_speed": 1.0,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 2.0,
+          "coord_speed": 0.5,
+          "proper_speed": 1.0,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 3.0,
+          "coord_speed": 0.6666666666666667,
+          "proper_speed": 1.0,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 5.0,
+          "coord_speed": 0.8,
+          "proper_speed": 1.0000000000000002,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 10.0,
+          "coord_speed": 0.9,
+          "proper_speed": 1.0000000000000002,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 100.0,
+          "coord_speed": 0.99,
+          "proper_speed": 1.0,
+          "local_c_ok": true
+        },
+        {
+          "r_over_rs": 1000.0,
+          "coord_speed": 0.999,
+          "proper_speed": 1.0,
+          "local_c_ok": true
+        }
+      ],
+      "finding": "Local c invariance (1 cascade step per Planck time in every cell) forces g_rr = 1/(1-r_s/r), the reciprocal of |g_tt|. Near mass, cascade density compresses the Planck lattice radially: more cells per coordinate distance, each taking dilated local time to traverse. Coordinate speed of light drops as (1-r_s/r), but local speed = c always. The reciprocal constraint g_tt * g_rr = -1 is exact at all radii."
+    },
+    "D": {
+      "description": "Classical GR tests: precession, deflection, Shapiro delay",
+      "precession": {
+        "cascade_arcsec_century": 42.991788509747025,
+        "gr_arcsec_century": 42.98,
+        "error_pct": 0.02742789610755661,
+        "pass": true
+      },
+      "deflection": {
+        "cascade_arcsec": 1.7516395958595954,
+        "gr_arcsec": 1.7505,
+        "error_pct": 0.06510116307314731,
+        "pass": true
+      },
+      "shapiro": {
+        "formula_match": "exact (same metric)",
+        "gamma_PPN": 1.0,
+        "pass": true
+      },
+      "finding": "All three classical GR tests pass. Perihelion precession: 42.99 arcsec/century (GR: 42.98, err 0.03%). Light deflection: 1.7516 arcsec (GR: 1.7505, err 0.07%). Shapiro delay: formula identical (same metric, gamma_PPN = 1 exactly). These match because the cascade derivation produces the exact Schwarzschild metric."
+    },
+    "E": {
+      "description": "Gravitational waves as cascade density perturbations",
+      "speed": "c_GW = c exactly (same cascade propagation mechanism)",
+      "spin": "2 (quadrupolar, from rank-2 metric perturbation)",
+      "polarizations": "2 (transverse-traceless from 3D cascade symmetry)",
+      "gw170817_constraint": "|c_GW - c|/c < 3e-15",
+      "cascade_prediction": "exact equality (c_GW = c by construction)",
+      "beyond_gr": [
+        "Discrete strain: h_min ~ l_Planck / r_source",
+        "Energy quantized in ln(2) per Planck cell",
+        "GW = EM at Planck frequency (same cascade perturbation)"
+      ],
+      "finding": "Gravitational waves are cascade density perturbations propagating at c. Speed = c exactly (same mechanism as light: 1 step/step on Planck lattice). Spin-2 because cascade density couples to rank-2 metric tensor. Two polarizations from transverse-traceless decomposition. All standard GW properties follow automatically. Beyond GR: cascade predicts discrete strain at Planck scale, energy quantization in units of ln(2), and GW-EM unification at Planck frequency."
+    }
+  },
+  "synthesis": {
+    "status": "CONFIRMED",
+    "pass_fail": {
+      "A_density_profile": true,
+      "B_metric_product_minus1": true,
+      "C_local_c_invariance": true,
+      "D_precession": true,
+      "D_deflection": true,
+      "D_shapiro": true,
+      "E_gw_speed_equals_c": true
+    },
+    "metric": "ds^2 = -(1-r_s/r)dt^2 + (1-r_s/r)^{-1}dr^2 + r^2 dOmega^2",
+    "derivation_route": "PAC conservation + cascade density + local c invariance",
+    "classical_tests": "3/3 pass (precession, deflection, Shapiro)",
+    "gw_properties": "speed=c, spin-2, 2 polarizations (all automatic)",
+    "verdict": "The full Schwarzschild metric is derived from three PAC principles: (1) cascade density rho_c/rho_crit = r_s/r from gravitational potential, (2) phase-cycling rate dtau/dt = sqrt(1-r_s/r) from exp_29, (3) local c = 1 step/step forces g_rr = 1/(1-r_s/r). All three classical GR tests pass. Gravitational waves are cascade density perturbations with automatic speed=c and spin-2. The metric is identical to Schwarzschild \u2014 same predictions, different ontology: curved spacetime = density-graded cascade lattice."
+  }
+}
