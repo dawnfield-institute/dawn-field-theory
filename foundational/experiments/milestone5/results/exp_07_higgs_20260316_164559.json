@@ -1,0 +1,241 @@
+{
+  "experiment": "exp_07_higgs_mass_derivation",
+  "timestamp": "2026-03-16T16:45:59.007989",
+  "measured": {
+    "M_H_GeV": 125.25,
+    "M_H_err_GeV": 0.17,
+    "M_Z_GeV": 91.1876,
+    "M_W_GeV": 80.377,
+    "v_GeV": 246.22,
+    "lambda_quartic": 0.12938347743146458
+  },
+  "constants": {
+    "phi": 1.618033988749895,
+    "Xi": 1.0584274899611363,
+    "gamma_EM": 0.5772156649015329
+  },
+  "top_20_results": [
+    {
+      "formula": "[v*sqrt(2*F5/(F6*phi^1*pi^1)) [lambda=0.122954]] * (1 + F10/(4*pi*F7^2))",
+      "predicted": 125.26038940690796,
+      "ppm": 82.94935655059105,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F1/(F4*phi^2*pi^0)) [lambda=0.127322]] * (1 + F7/(3*pi*F7^2))",
+      "predicted": 125.2622739490924,
+      "ppm": 97.9956015361542,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F1/(F4*phi^2*pi^0)) [lambda=0.127322]] * (1 + F11/(3*pi*F9^2))",
+      "predicted": 125.26315118771315,
+      "ppm": 104.99950269979016,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F3/(F5*phi^0*pi^1)) [lambda=0.127324]] * (1 + F7/(3*pi*F7^2))",
+      "predicted": 125.26323352841086,
+      "ppm": 105.65691345999913,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F3/(F5*phi^0*pi^1)) [lambda=0.127324]] * (1 + F11/(3*pi*F9^2))",
+      "predicted": 125.26411077375174,
+      "ppm": 112.66086827735528,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F1/(F4*phi^2*pi^0)) [lambda=0.127322]] * (1 + F9/(3*pi*F8^2))",
+      "predicted": 125.2645734680166,
+      "ppm": 116.35503406461463,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F3/(F5*phi^0*pi^1)) [lambda=0.127324]] * (1 + F9/(3*pi*F8^2))",
+      "predicted": 125.26553306495066,
+      "ppm": 124.01648663201226,
+      "category": "corrected"
+    },
+    {
+      "formula": "F8/(F1*phi^2*pi^3*2^1) = 21/(1*phi^2*pi^3*2^1)",
+      "predicted": 125.23350193954973,
+      "ppm": 131.7210415191574,
+      "category": "lambda_decomp"
+    },
+    {
+      "formula": "[v*sqrt(2*F5/(F6*phi^1*pi^1)) [lambda=0.122954]] * (1 + F12/(4*pi*F8^2))",
+      "predicted": 125.27094929796586,
+      "ppm": 167.25986399885284,
+      "category": "corrected"
+    },
+    {
+      "formula": "F9/(F1*phi^3*pi^3*2^1) = 34/(1*phi^3*pi^3*2^1)",
+      "predicted": 125.27272256107113,
+      "ppm": 181.4176532625497,
+      "category": "lambda_decomp"
+    },
+    {
+      "formula": "[v*sqrt(2*F1/(F4*phi^2*pi^0)) [lambda=0.127322]] * (1 + F5/(3*pi*F6^2))",
+      "predicted": 125.27811907167943,
+      "ppm": 224.5035663028109,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F3/(F5*phi^0*pi^1)) [lambda=0.127324]] * (1 + F5/(3*pi*F6^2))",
+      "predicted": 125.27907877238042,
+      "ppm": 232.16584734862903,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F3/(F1*phi^1*pi^2)) [lambda=0.125240]] * (1 + F7/(4*pi*F6^2))",
+      "predicted": 125.21994511323405,
+      "ppm": 239.95917577607116,
+      "category": "corrected"
+    },
+    {
+      "formula": "F7/(F6*phi^0*pi^1*2^2) = 13/(8*phi^0*pi^1*2^2)",
+      "predicted": 125.21607185868376,
+      "ppm": 270.8833638023012,
+      "category": "lambda_decomp"
+    },
+    {
+      "formula": "[v*sqrt(2*F5/(F6*phi^1*pi^1)) [lambda=0.122954]] * (1 + F8/(4*pi*F6^2))",
+      "predicted": 125.28644080481294,
+      "ppm": 290.94454940471485,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v * F1/(F3*phi^0) = 246.22*1/(2*phi^0)] * (1 + F1/(2*pi*F4^2))",
+      "predicted": 125.28706278267147,
+      "ppm": 295.910440490775,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F9/(F11*phi^0*pi^1)) [lambda=0.121602]] * (1 + F5/(2*pi*F5^2))",
+      "predicted": 125.29000033679812,
+      "ppm": 319.3639664520212,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F5/(F6*phi^1*pi^1)) [lambda=0.122954]] * (1 + F3/(1*pi*F5^2))",
+      "predicted": 125.2074960859202,
+      "ppm": 339.3526074235691,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F3/(F1*phi^1*pi^2)) [lambda=0.125240]] * (1 + F11/(4*pi*F8^2))",
+      "predicted": 125.20708979220812,
+      "ppm": 342.5964693962239,
+      "category": "corrected"
+    },
+    {
+      "formula": "[v*sqrt(2*F9/(F10*phi^1*pi^1)) [lambda=0.121613]] * (1 + F5/(2*pi*F5^2))",
+      "predicted": 125.29572367965575,
+      "ppm": 365.0593186087902,
+      "category": "corrected"
+    }
+  ],
+  "ratio_analysis": [
+    {
+      "name": "M_H / M_Z",
+      "value": 1.3735420166777061,
+      "nearest_fib": "~ F4/F3 = 1.500000  (9.21%)"
+    },
+    {
+      "name": "M_H / M_W",
+      "value": 1.5582815979695686,
+      "nearest_fib": "~ F6/F5 = 1.600000  (2.68%)"
+    },
+    {
+      "name": "M_H / v",
+      "value": 0.5086914141824385,
+      "nearest_fib": "~ F1/F3 = 0.500000  (1.71%)"
+    },
+    {
+      "name": "v / M_H",
+      "value": 1.9658283433133732,
+      "nearest_fib": "~ F3/F1 = 2.000000  (1.74%)"
+    },
+    {
+      "name": "M_H^2 / v^2",
+      "value": 0.25876695486292917,
+      "nearest_fib": "~ F3/F6 = 0.250000  (3.39%)"
+    },
+    {
+      "name": "lambda = M_H^2/(2v^2)",
+      "value": 0.12938347743146458,
+      "nearest_fib": "~ F1/F6 = 0.125000  (3.39%)"
+    },
+    {
+      "name": "M_H / (M_Z * phi)",
+      "value": 0.8488956512828972,
+      "nearest_fib": ""
+    },
+    {
+      "name": "M_H / (M_Z * sqrt(phi))",
+      "value": 1.0798119488188884,
+      "nearest_fib": "~ F1/F1 = 1.000000  (7.39%)"
+    },
+    {
+      "name": "v / (M_Z * phi)",
+      "value": 1.668783131807385,
+      "nearest_fib": "~ F5/F4 = 1.666667  (0.13%)"
+    },
+    {
+      "name": "M_H * phi / v",
+      "value": 0.8230799979324357,
+      "nearest_fib": ""
+    },
+    {
+      "name": "M_H / (v / sqrt(2*phi))",
+      "value": 0.9150887696103907,
+      "nearest_fib": "~ F1/F1 = 1.000000  (9.28%)"
+    },
+    {
+      "name": "2*lambda",
+      "value": 0.25876695486292917,
+      "nearest_fib": "~ F3/F6 = 0.250000  (3.39%)"
+    },
+    {
+      "name": "sqrt(2*lambda)",
+      "value": 0.5086914141824385,
+      "nearest_fib": "~ F1/F3 = 0.500000  (1.71%)"
+    },
+    {
+      "name": "1/lambda",
+      "value": 7.728962150748403,
+      "nearest_fib": "~ F6/F1 = 8.000000  (3.51%)"
+    },
+    {
+      "name": "lambda * pi",
+      "value": 0.4064701821945899,
+      "nearest_fib": "~ F3/F5 = 0.400000  (1.59%)"
+    },
+    {
+      "name": "lambda * phi",
+      "value": 0.20934686406676464,
+      "nearest_fib": "~ F1/F5 = 0.200000  (4.46%)"
+    },
+    {
+      "name": "lambda * F7",
+      "value": 1.6819852066090395,
+      "nearest_fib": "~ F5/F4 = 1.666667  (0.91%)"
+    },
+    {
+      "name": "lambda * F7 * phi",
+      "value": 2.72150923286794,
+      "nearest_fib": "~ F6/F4 = 2.666667  (2.02%)"
+    },
+    {
+      "name": "lambda * 4*pi",
+      "value": 1.6258807287783597,
+      "nearest_fib": "~ F7/F6 = 1.625000  (0.05%)"
+    },
+    {
+      "name": "Xi / lambda",
+      "value": 8.180546009221258,
+      "nearest_fib": "~ F6/F1 = 8.000000  (2.21%)"
+    }
+  ]
+}
