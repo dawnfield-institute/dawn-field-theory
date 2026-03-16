@@ -88,9 +88,11 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **51 experiments** in `foundational/experiments/`
-- **Milestones 1-3** complete (SM parameters, mass derivations, quantum validation)
-- **Milestone 4** in progress (13/15 experiments done)
+- **64 experiments** in `foundational/experiments/` (51 prior + 13 in M5)
+- **Milestones 1-4** complete (SM parameters, mass derivations, quantum validation, relativity/gravity)
+- **Milestone 5** complete — SM completion & simulator validation (13 experiments)
+  - Higgs mass 83 ppm (lambda = phi/4pi), PMNS < 0.3 deg, sin^2(theta_W) = tan(theta_C) = 3/13
+  - De-actualization completes PAC cycle, 24% scorecard improvement
 - **PACSeries** published on Zenodo (DOI: 10.5281/zenodo.15783623)
 - **Active organization effort**: bringing all experiments to full standard, adding FDO source links
 
