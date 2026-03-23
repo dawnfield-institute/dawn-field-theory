@@ -57,6 +57,9 @@ key_results:
     div_B: 0.0
     description: "∇·B = 0 guaranteed by B = ∇×A construction"
 
+scripts:
+  - scripts/run_all.py
+
 dependencies:
   - numpy
   - scipy (optional, for advanced analysis)
