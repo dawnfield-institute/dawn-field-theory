@@ -16,7 +16,17 @@ This experiment simulates symbolic collapse in biological trees, comparing entro
 Run from the command line:
 
 ```
-python main.py --depths 3,4,5 --breadths 3,4,5 --extinction_rates 1.0,0.7,0.4 --extinction_model probabilistic --n_replicates 10 --seed 42 --out_dir output
+python scripts/[id][E][v1.0][C4][I5]_symbolic_entropy_collapse_experiment.py --depths 3,4,5 --breadths 3,4,5 --extinction_rates 1.0,0.7,0.4 --extinction_model probabilistic --n_replicates 10 --seed 42 --out_dir results
+```
+
+For sweep analysis:
+```
+python scripts/sweep_analysis.py
+```
+
+To fetch test data:
+```
+python scripts/fetch_test_data.py
 ```
 
 ### Key Arguments
