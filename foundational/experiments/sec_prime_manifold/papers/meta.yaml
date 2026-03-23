@@ -1,4 +1,4 @@
-schema_version: "1.0"
+schema_version: "2.0"
 description: "Paper drafts and publication materials for SEC-PAC prime detection"
 semantic_scope: "academic_publications"
 estimated_context_weight: 0.3
