@@ -1,0 +1,64 @@
+schema_version: "2.0"
+title: 'Milestone 6: Beyond the Standard Model — Neutrino Masses, Loop Corrections & Cosmological Validation'
+pillar: PAC
+description: "Milestone 6: Beyond the Standard Model — extends DFT into BSM physics (neutrino masses, dark matter), resolves loop-level vs fixed-point ambiguity, closes the cosmological constant gap, and pushes simulator scorecard toward B-"
+semantic_scope: "research"
+proficiency_level: "research"
+version: "0.1.0"
+status: "planning"
+date_created: "2026-03-25"
+date_updated: "2026-03-25"
+
+files:
+  - "[README.md]": "Full milestone proposal — threads, experiment sketches, success criteria, risk analysis"
+
+child_directories:
+  - name: "scripts"
+    description: "Experiment scripts (exp_01 through ~exp_49) — to be written as work progresses"
+  - name: "results"
+    description: "JSON outputs from experiments"
+  - name: "journals"
+    description: "Research logs and session notes"
+  - name: "papers"
+    description: "Draft papers targeting PACSeries Papers 9, 10, 11"
+
+estimated_context_weight: 1.0
+validation_type: "automated"
+
+key_results:
+  - "TBD — neutrino absolute masses from Fibonacci arithmetic"
+  - "TBD — loop-level running or UV-fixed proof from cascade dynamics"
+  - "TBD — CC gap closed from 10^0.22 to < 10^0.1"
+  - "TBD — JWST validation on 50+ high-z objects"
+  - "TBD — simulator scorecard >= 11/13 (B-)"
+  - "TBD — PAC Discovery tool benchmarked against causal discovery baselines"
+  - "TBD — dark matter candidate mass from depth-73 cyclotomic hierarchy"
+
+dependencies:
+  - "milestone1 (SM parameter derivations: alpha, sin2thetaW, Koide, gauge closure)"
+  - "milestone2 (mass ratios: mu/e, p/e, tau/e, turbulence extension)"
+  - "milestone3 (Landauer erasure, cascade Fibonacci origin)"
+  - "milestone4 (relativity, EFE, gravity constant, cosmological constant, correction template)"
+  - "milestone5 (Higgs mass, PMNS/CKM, strong force, de-actualization, UV fixed points)"
+  - "minimum_actualization_resolution (exp_28-43: EFE derivation, G at 0.18%, CC 10^0.22, four-force template)"
+  - "gravity_from_maxwell_pac (force hierarchy, N-body, depth-73 DM candidate)"
+  - "pac_cosmology_validation (JWST upgrade plan, K-level mismatch diagnosis)"
+  - "pac_knowledge_discovery (applied DFT seed, 5 experiments run)"
+  - "reality-engine v3 (18 operators, physics scorecard, de-actualization)"
+
+target_papers:
+  - "Paper 9 (proposed): Standard Model from Information — The Complete Derivation"
+  - "Paper 10 (proposed): Predictions for BSM Physics from PAC Structure"
+  - "Paper 11 (proposed): Cosmological Validation of Dawn Field Theory"
+
+tags:
+  - milestone6
+  - neutrino-masses
+  - dark-matter
+  - BSM
+  - loop-level
+  - cosmological-constant
+  - JWST
+  - simulator-scorecard
+  - knowledge-discovery
+  - planning
