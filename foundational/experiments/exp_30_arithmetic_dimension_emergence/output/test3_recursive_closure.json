@@ -1,0 +1,197 @@
+{
+  "compression_verification": {
+    "addition_from_successor": true,
+    "multiplication_from_addition": true,
+    "exponentiation_from_multiplication": true,
+    "test_range": "a,b in 1..5"
+  },
+  "closure": {
+    "addition": {
+      "closed_on_naturals": true,
+      "closed_on_integers": true,
+      "closed_on_rationals": true,
+      "closed_on_reals": true,
+      "closed_on_complex": true
+    },
+    "multiplication": {
+      "closed_on_naturals": true,
+      "closed_on_integers": true,
+      "closed_on_rationals": true,
+      "closed_on_reals": true,
+      "closed_on_complex": true
+    },
+    "exponentiation": {
+      "closed_on_naturals": true,
+      "note": "0^0 conventionally 1; closed for positive bases and natural exponents",
+      "closed_on_positive_reals": true,
+      "closed_on_reals": "partial (negative base with non-integer exponent problematic)",
+      "closed_on_complex": true
+    },
+    "tetration": {
+      "closed_on_naturals": true,
+      "note": "Values grow so fast they quickly exceed computational limits",
+      "closed_on_reals": "problematic (non-integer heights ill-defined in general)",
+      "closed_on_complex": "open research problem"
+    }
+  },
+  "commutativity": {
+    "addition": {
+      "commutative": true
+    },
+    "multiplication": {
+      "commutative": true
+    },
+    "exponentiation": {
+      "commutative": false,
+      "counterexample": "2^3=8 vs 3^2=9"
+    },
+    "tetration": {
+      "commutative": false,
+      "counterexample": "tet(2,3)=16 vs tet(3,2)=27"
+    }
+  },
+  "invertibility": {
+    "addition": {
+      "inverse_operation": "subtraction",
+      "domain_for_closure": "integers (Z)",
+      "universal_on_naturals": false,
+      "universal_on_integers": true,
+      "note": "3 - 5 = -2, not a natural number"
+    },
+    "multiplication": {
+      "inverse_operation": "division",
+      "domain_for_closure": "rationals (Q \\ {0})",
+      "universal_on_naturals": false,
+      "universal_on_integers": false,
+      "universal_on_rationals_nonzero": true,
+      "note": "5 / 3 not an integer; division by 0 undefined"
+    },
+    "exponentiation": {
+      "inverse_operations": [
+        "logarithm (inverts exponent)",
+        "root (inverts base)"
+      ],
+      "domain_for_closure": "positive reals (R+)",
+      "universal_on_naturals": false,
+      "universal_on_positive_reals": true,
+      "note": "log not defined for negative/zero; even roots of negatives problematic in R"
+    },
+    "tetration": {
+      "inverse_operation": "super-logarithm (slog)",
+      "domain_for_closure": "ill-defined for non-integer heights",
+      "universal": false,
+      "note": "No standard unique extension of tetration to real/complex heights; multiple competing proposals exist"
+    }
+  },
+  "growth_rates": {
+    "n": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "addition_n_plus_n": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "multiplication_n_times_n": [
+      1,
+      4,
+      9,
+      16,
+      25,
+      36,
+      49,
+      64,
+      81,
+      100
+    ],
+    "exponentiation_n_to_n": [
+      1,
+      4,
+      27,
+      256,
+      3125,
+      46656,
+      823543,
+      16777216,
+      387420489,
+      10000000000
+    ],
+    "tetration_n_tet_n": [
+      "1",
+      "4",
+      "7625597484987",
+      "4^(4^256) ~ 10^(10^153)",
+      "OVERFLOW (hyper-exponential)",
+      "OVERFLOW (hyper-exponential)",
+      "OVERFLOW (hyper-exponential)",
+      "OVERFLOW (hyper-exponential)",
+      "OVERFLOW (hyper-exponential)",
+      "OVERFLOW (hyper-exponential)"
+    ]
+  },
+  "tetration_analysis": {
+    "commutativity_lost": true,
+    "commutativity_example": "2^^3 = 2^(2^2) = 16, but 3^^2 = 3^3 = 27",
+    "associativity_lost": true,
+    "associativity_example": "(2^^2)^^2 = 256, 2^^(2^^2) = 2^^4 = 65536",
+    "invertibility_problematic": true,
+    "reason": "No unique extension to non-integer heights; super-logarithm and super-root are not uniquely defined",
+    "small_values": {
+      "2^^0": "1",
+      "3^^0": "1",
+      "2^^1": "2",
+      "3^^1": "3",
+      "2^^2": "4",
+      "3^^2": "27",
+      "2^^3": "16",
+      "3^^3": "7625597484987",
+      "2^^4": "65536",
+      "3^^4": "OVERFLOW",
+      "2^^5": "OVERFLOW",
+      "3^^5": "OVERFLOW"
+    }
+  },
+  "summary": {
+    "Level 0 - Successor": {
+      "commutative": "N/A (unary)",
+      "invertible": "Yes (predecessor)",
+      "growth": "O(1)"
+    },
+    "Level 1 - Addition": {
+      "commutative": "Yes",
+      "invertible": "Yes (on Z)",
+      "growth": "O(n)"
+    },
+    "Level 2 - Multiplication": {
+      "commutative": "Yes",
+      "invertible": "Yes (on Q\\{0})",
+      "growth": "O(n^2)"
+    },
+    "Level 3 - Exponentiation": {
+      "commutative": "No",
+      "invertible": "Yes (on R+)",
+      "growth": "O(n^n)"
+    },
+    "Level 4 - Tetration": {
+      "commutative": "No",
+      "invertible": "Problematic",
+      "growth": "hyper-exponential"
+    }
+  }
+}

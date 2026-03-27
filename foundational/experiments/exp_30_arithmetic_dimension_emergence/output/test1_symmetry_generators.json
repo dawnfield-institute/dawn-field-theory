@@ -1,0 +1,82 @@
+{
+  "decomposition_success_rate": 1.0,
+  "subset_tests": {
+    "translations_only": {
+      "stays_in_subgroup": true,
+      "description": "Translations form abelian subgroup; cannot produce c\u22600 or scaling"
+    },
+    "dilations_only": {
+      "stays_in_subgroup": true,
+      "description": "Dilations form abelian subgroup; cannot produce b\u22600 or c\u22600"
+    },
+    "rotations_only": {
+      "stays_in_subgroup": true,
+      "description": "Rotations form abelian subgroup SO(2); cannot produce |a|\u22601, b\u22600, c\u22600"
+    },
+    "T_and_D": {
+      "stays_in_subgroup": true,
+      "description": "T+D generate affine group az+b; cannot produce c\u22600 (no inversion)"
+    },
+    "T_and_R": {
+      "stays_in_subgroup": true,
+      "description": "T+R generate rigid motions (Euclidean group); cannot produce scaling or c\u22600"
+    },
+    "D_and_R": {
+      "stays_in_subgroup": true,
+      "description": "D+R generate diagonal matrices; cannot produce b\u22600 or c\u22600"
+    }
+  },
+  "commutators": {
+    "T,D": {
+      "commutes": false,
+      "distance_from_identity": 1.118033988749895
+    },
+    "T,R": {
+      "commutes": false,
+      "distance_from_identity": 0.8557061686312837
+    },
+    "D,R": {
+      "commutes": true,
+      "distance_from_identity": 0.0
+    },
+    "T,I": {
+      "commutes": false,
+      "distance_from_identity": 1.955384722187607
+    },
+    "D,I": {
+      "commutes": false,
+      "distance_from_identity": 0.75
+    },
+    "R,I": {
+      "commutes": false,
+      "distance_from_identity": 1.414213562373095
+    }
+  },
+  "inversion_independence": {
+    "TDR_products_always_affine": true,
+    "inversion_needed": true,
+    "explanation": "T, D, R generate only affine maps (c=0). Inversion introduces c!=0, required for full Mobius group."
+  },
+  "summary": {
+    "generators": {
+      "translation": "T_b: z -> z+b, matrix [[1,b],[0,1]], arithmetic: addition",
+      "dilation": "D_lambda: z -> lambda*z, matrix [[lambda,0],[0,1]], arithmetic: multiplication",
+      "rotation": "R_theta: z -> e^{i*theta}*z, matrix [[e^{itheta},0],[0,1]], arithmetic: exponentiation (Euler)",
+      "inversion": "I: z -> 1/z, matrix [[0,1],[1,0]], arithmetic: reciprocal/division"
+    },
+    "group_structure": {
+      "TDR_generate": "Affine group (az+b), proper subgroup of Mobius",
+      "TDRI_generate": "Full Mobius group PSL(2,C)",
+      "minimal_generators": "T, D (or R), and I suffice; T+D+R is redundant for affine but all 4 types needed for full group"
+    },
+    "algebraic_independence": {
+      "T_commutes_with_T": true,
+      "D_commutes_with_D": true,
+      "R_commutes_with_R": true,
+      "D_commutes_with_R": true,
+      "T_commutes_with_D": false,
+      "T_commutes_with_R": false,
+      "conclusion": "D and R commute (both diagonal/multiplicative), but T is algebraically independent from D,R. I is independent from all three."
+    }
+  }
+}
