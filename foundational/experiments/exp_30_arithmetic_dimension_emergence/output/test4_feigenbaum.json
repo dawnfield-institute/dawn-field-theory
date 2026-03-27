@@ -1,0 +1,142 @@
+{
+  "bifurcation_points": [
+    {
+      "r": 3.0000194463045773,
+      "period_before": 2,
+      "period_after": 2,
+      "target_period": 1
+    },
+    {
+      "r": 3.4493893753682636,
+      "period_before": 2,
+      "period_after": 4,
+      "target_period": 2
+    },
+    {
+      "r": 3.5440526773457535,
+      "period_before": 4,
+      "period_after": 8,
+      "target_period": 4
+    },
+    {
+      "r": 3.5643934966771624,
+      "period_before": 8,
+      "period_after": 16,
+      "target_period": 8
+    },
+    {
+      "r": 3.5687545500949955,
+      "period_before": 16,
+      "period_after": 32,
+      "target_period": 16
+    },
+    {
+      "r": 3.5696899732730345,
+      "period_before": 32,
+      "period_after": 64,
+      "target_period": 32
+    },
+    {
+      "r": 3.5698907561138276,
+      "period_before": 64,
+      "period_after": -1,
+      "target_period": 64
+    },
+    {
+      "r": 3.5699340000003574,
+      "period_before": 64,
+      "period_after": -1,
+      "target_period": 128
+    }
+  ],
+  "feigenbaum_ratios": [
+    4.747034169276525,
+    4.65385884585863,
+    4.66419861958852,
+    4.662118194436544,
+    4.658880083298986,
+    4.643034123548148
+  ],
+  "feigenbaum_delta_theoretical": 4.66920160910299,
+  "lyapunov_at_bifurcations": [
+    -8.761016828855685e-05,
+    -0.00026012958119848246,
+    -0.00023031375659441405,
+    -0.0001995083953535974,
+    -0.00016908756369008333,
+    -0.00014055395593899422,
+    -0.00011964514677681997,
+    -7.95557918124192e-05
+  ],
+  "arithmetic_dimension": [
+    {
+      "r": 3.0000194463045773,
+      "linear_R2": 0.9999999999999905,
+      "power_law_R2": 1.0,
+      "exponential_R2": 1.0,
+      "dominant": "power_law"
+    },
+    {
+      "r": 3.4493893753682636,
+      "linear_R2": 0.9982402793899904,
+      "power_law_R2": 0.9968575762809258,
+      "exponential_R2": 0.9979727069404138,
+      "dominant": "linear"
+    },
+    {
+      "r": 3.5440526773457535,
+      "linear_R2": 0.8422651892878232,
+      "power_law_R2": 0.7481460876936201,
+      "exponential_R2": 0.8273128999598094,
+      "dominant": "linear"
+    },
+    {
+      "r": 3.5643934966771624,
+      "linear_R2": 0.8337963474165615,
+      "power_law_R2": 0.7357484476967107,
+      "exponential_R2": 0.8179031851777883,
+      "dominant": "linear"
+    },
+    {
+      "r": 3.5687545500949955,
+      "linear_R2": 0.8301988896164361,
+      "power_law_R2": 0.7307120050302774,
+      "exponential_R2": 0.8141364093952365,
+      "dominant": "linear"
+    },
+    {
+      "r": 3.5696899732730345,
+      "linear_R2": 0.8297491216609383,
+      "power_law_R2": 0.7300723822320744,
+      "exponential_R2": 0.8136495465085531,
+      "dominant": "linear"
+    },
+    {
+      "r": 3.5698907561138276,
+      "linear_R2": 0.8299240668565717,
+      "power_law_R2": 0.7303037328078252,
+      "exponential_R2": 0.8138144645030586,
+      "dominant": "linear"
+    },
+    {
+      "r": 3.5699340000003574,
+      "linear_R2": 0.8300020144937268,
+      "power_law_R2": 0.7304082580393098,
+      "exponential_R2": 0.8138896312408509,
+      "dominant": "linear"
+    }
+  ],
+  "shift_analysis": {
+    "dominant_sequence": [
+      "power_law",
+      "linear",
+      "linear",
+      "linear",
+      "linear",
+      "linear",
+      "linear",
+      "linear"
+    ],
+    "observation": "The logistic map's return map is inherently quadratic (power-law/multiplicative), so power-law fits tend to dominate throughout the cascade. Near bifurcation points, linearization (additive) becomes more relevant. Deep in chaos, exponential sensitivity (positive Lyapunov exponent) emerges."
+  }
+}

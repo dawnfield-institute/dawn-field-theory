@@ -1,0 +1,304 @@
+{
+  "modes_3d": [
+    {
+      "additive": "active",
+      "multiplicative": "active",
+      "exponential": "active",
+      "index": 0,
+      "binary": "111",
+      "description": "Full mode: all three arithmetic dimensions active. Complete conformal dynamics. Full Mobius group action. Turbulent cascades.",
+      "active_dimensions": [
+        "additive",
+        "multiplicative",
+        "exponential"
+      ],
+      "passive_dimensions": [],
+      "n_active": 3,
+      "turbulence_analog": "Full 3D turbulence (all transfer mechanisms active)",
+      "physical_example": "Navier-Stokes turbulence, complete cascade with intermittency"
+    },
+    {
+      "additive": "active",
+      "multiplicative": "active",
+      "exponential": "passive",
+      "index": 1,
+      "binary": "110",
+      "description": "Additive-multiplicative mode: translation with scaling but no phase. Growing/decaying transport. Related to Burgers-type dynamics.",
+      "active_dimensions": [
+        "additive",
+        "multiplicative"
+      ],
+      "passive_dimensions": [
+        "exponential"
+      ],
+      "n_active": 2,
+      "turbulence_analog": "Strain-dominated regions (stretching + advection)",
+      "physical_example": "Burgers turbulence, shock-dominated dynamics"
+    },
+    {
+      "additive": "active",
+      "multiplicative": "passive",
+      "exponential": "active",
+      "index": 2,
+      "binary": "101",
+      "description": "Additive-exponential mode: translation with phase dynamics but no scaling. Traveling waves with oscillation. Plane wave solutions.",
+      "active_dimensions": [
+        "additive",
+        "exponential"
+      ],
+      "passive_dimensions": [
+        "multiplicative"
+      ],
+      "n_active": 2,
+      "turbulence_analog": "Acoustic/compressible modes (advection + oscillation)",
+      "physical_example": "Sound waves in turbulence, compressible turbulence modes"
+    },
+    {
+      "additive": "active",
+      "multiplicative": "passive",
+      "exponential": "passive",
+      "index": 3,
+      "binary": "100",
+      "description": "Pure additive mode: only translation active. Uniform advection/drift without scaling or phase. Galilean invariant flows.",
+      "active_dimensions": [
+        "additive"
+      ],
+      "passive_dimensions": [
+        "multiplicative",
+        "exponential"
+      ],
+      "n_active": 1,
+      "turbulence_analog": "Mean flow / sweeping (pure advection)",
+      "physical_example": "Taylor's frozen turbulence hypothesis regime"
+    },
+    {
+      "additive": "passive",
+      "multiplicative": "active",
+      "exponential": "active",
+      "index": 4,
+      "binary": "011",
+      "description": "Multiplicative-exponential mode: scaling with phase rotation but no translation. Spiral scaling dynamics. Related to complex power-law behavior.",
+      "active_dimensions": [
+        "multiplicative",
+        "exponential"
+      ],
+      "passive_dimensions": [
+        "additive"
+      ],
+      "n_active": 2,
+      "turbulence_analog": "Helical cascade (scaling + chirality/phase)",
+      "physical_example": "Helical turbulence, MHD dynamo action"
+    },
+    {
+      "additive": "passive",
+      "multiplicative": "active",
+      "exponential": "passive",
+      "index": 5,
+      "binary": "010",
+      "description": "Pure multiplicative mode: only scaling/dilation active. Self-similar cascading without translation or phase rotation. Scale-free dynamics.",
+      "active_dimensions": [
+        "multiplicative"
+      ],
+      "passive_dimensions": [
+        "additive",
+        "exponential"
+      ],
+      "n_active": 1,
+      "turbulence_analog": "Richardson cascade (pure scale-to-scale transfer)",
+      "physical_example": "Kolmogorov K41 inertial range (idealized)"
+    },
+    {
+      "additive": "passive",
+      "multiplicative": "passive",
+      "exponential": "active",
+      "index": 6,
+      "binary": "001",
+      "description": "Pure exponential mode: only exponential (phase/rotation) dynamics active. Oscillatory behavior without energy transfer or scaling. Phase waves.",
+      "active_dimensions": [
+        "exponential"
+      ],
+      "passive_dimensions": [
+        "additive",
+        "multiplicative"
+      ],
+      "n_active": 1,
+      "turbulence_analog": "Rossby/inertial waves (phase dynamics only)",
+      "physical_example": "Wave turbulence with no direct cascade"
+    },
+    {
+      "additive": "passive",
+      "multiplicative": "passive",
+      "exponential": "passive",
+      "index": 7,
+      "binary": "000",
+      "description": "Null mode: no arithmetic dynamics active. Static/frozen state. Equivalent to fixed point with no transfer mechanism.",
+      "active_dimensions": [],
+      "passive_dimensions": [
+        "additive",
+        "multiplicative",
+        "exponential"
+      ],
+      "n_active": 0,
+      "turbulence_analog": "Thermal equilibrium / viscous dissipation endpoint",
+      "physical_example": "Heat death; fully damped state"
+    }
+  ],
+  "turbulence_mapping": {
+    "000": {
+      "turbulence_analog": "Thermal equilibrium / viscous dissipation endpoint",
+      "physical_example": "Heat death; fully damped state"
+    },
+    "001": {
+      "turbulence_analog": "Rossby/inertial waves (phase dynamics only)",
+      "physical_example": "Wave turbulence with no direct cascade"
+    },
+    "010": {
+      "turbulence_analog": "Richardson cascade (pure scale-to-scale transfer)",
+      "physical_example": "Kolmogorov K41 inertial range (idealized)"
+    },
+    "011": {
+      "turbulence_analog": "Helical cascade (scaling + chirality/phase)",
+      "physical_example": "Helical turbulence, MHD dynamo action"
+    },
+    "100": {
+      "turbulence_analog": "Mean flow / sweeping (pure advection)",
+      "physical_example": "Taylor's frozen turbulence hypothesis regime"
+    },
+    "101": {
+      "turbulence_analog": "Acoustic/compressible modes (advection + oscillation)",
+      "physical_example": "Sound waves in turbulence, compressible turbulence modes"
+    },
+    "110": {
+      "turbulence_analog": "Strain-dominated regions (stretching + advection)",
+      "physical_example": "Burgers turbulence, shock-dominated dynamics"
+    },
+    "111": {
+      "turbulence_analog": "Full 3D turbulence (all transfer mechanisms active)",
+      "physical_example": "Navier-Stokes turbulence, complete cascade with intermittency"
+    }
+  },
+  "2d_analysis": {
+    "modes_2d": [
+      {
+        "additive": "active",
+        "multiplicative": "active",
+        "index": 0,
+        "binary": "11"
+      },
+      {
+        "additive": "active",
+        "multiplicative": "passive",
+        "index": 1,
+        "binary": "10"
+      },
+      {
+        "additive": "passive",
+        "multiplicative": "active",
+        "index": 2,
+        "binary": "01"
+      },
+      {
+        "additive": "passive",
+        "multiplicative": "passive",
+        "index": 3,
+        "binary": "00"
+      }
+    ],
+    "degeneracy_analysis": {
+      "expected_modes_2d": 4,
+      "observed_modes_2d_exp14": 3,
+      "hypothesis": "In 2D enstrophy cascade, the '00' (null/frozen) mode is degenerate with the dissipation endpoint and does not appear as a distinct dynamical mode. The three observed modes correspond to: (1) pure additive (10) - direct enstrophy cascade, (2) pure multiplicative (01) - inverse energy cascade, (3) mixed additive-multiplicative (11) - coupled cascade. The null mode (00) is forbidden because 2D incompressible flow always has at least one active transfer mechanism due to conservation of both energy AND enstrophy.",
+      "alternative_hypothesis": "The 2D constraint (incompressibility + enstrophy conservation) imposes a selection rule that forbids the null state: at least one arithmetic dimension must be active. This reduces 2^2=4 to 2^2-1=3 modes. In 3D, the analogous constraint (energy conservation alone) does not forbid the null state (thermal equilibrium exists), so all 2^3=8 modes are accessible.",
+      "selection_rule": "In nD incompressible flow with n conserved quantities, the number of forbidden null-like modes equals C(n,0)=1 when conservation laws force at least one dimension active."
+    }
+  },
+  "general_dimension_count": {
+    "0": {
+      "n_dimensions": 0,
+      "total_modes_2_to_n": 1,
+      "accessible_modes": 1,
+      "note": "0 arithmetic dimensions: trivial, 1 mode (the point)"
+    },
+    "1": {
+      "n_dimensions": 1,
+      "total_modes_2_to_n": 2,
+      "accessible_modes": 2,
+      "note": "1D: 2 modes (active/passive). E.g., moving vs. stationary."
+    },
+    "2": {
+      "n_dimensions": 2,
+      "total_modes_2_to_n": 4,
+      "accessible_modes": 3,
+      "note": "2D: 4 total, 3 accessible (null mode degenerate). Matches exp_14."
+    },
+    "3": {
+      "n_dimensions": 3,
+      "total_modes_2_to_n": 8,
+      "accessible_modes": 7,
+      "note": "3D: 8 total modes. If null forbidden: 7. Physical 3D turbulence."
+    },
+    "4": {
+      "n_dimensions": 4,
+      "total_modes_2_to_n": 16,
+      "accessible_modes": 15,
+      "note": "4D (if tetration counted): 16 modes. Speculative."
+    },
+    "5": {
+      "n_dimensions": 5,
+      "total_modes_2_to_n": 32,
+      "accessible_modes": 31,
+      "note": ""
+    },
+    "6": {
+      "n_dimensions": 6,
+      "total_modes_2_to_n": 64,
+      "accessible_modes": 63,
+      "note": ""
+    }
+  },
+  "activation_structure": {
+    "3d_by_active_count": {
+      "0_active": {
+        "count": 1,
+        "modes": [
+          "000"
+        ],
+        "description": "Null mode"
+      },
+      "1_active": {
+        "count": 3,
+        "modes": [
+          "001",
+          "010",
+          "100"
+        ],
+        "description": "Single-mechanism modes"
+      },
+      "2_active": {
+        "count": 3,
+        "modes": [
+          "011",
+          "101",
+          "110"
+        ],
+        "description": "Paired-mechanism modes"
+      },
+      "3_active": {
+        "count": 1,
+        "modes": [
+          "111"
+        ],
+        "description": "Full turbulence"
+      }
+    },
+    "binomial_structure": "The number of k-active modes follows C(n,k), giving Pascal's triangle",
+    "total_check": "Sum C(3,k) for k=0..3 = 8 = 2^3 = 8"
+  },
+  "summary": {
+    "main_result": "3 arithmetic dimensions (additive, multiplicative, exponential) with binary (active/passive) states yield 2^3 = 8 distinct dynamical modes.",
+    "2d_result": "In 2D, conservation constraints reduce 2^2 = 4 to 3 observable modes, consistent with exp_14 findings.",
+    "3d_prediction": "3D turbulence should exhibit up to 8 distinct mode structures, corresponding to all combinations of arithmetic dimension activation.",
+    "structure": "Modes follow binomial distribution C(n,k) by number of active dimensions, giving Pascal's triangle structure.",
+    "connection_to_conformal_group": "Each mode corresponds to a subgroup of the Mobius group: T (additive), D (multiplicative), R (exponential), and their combinations."
+  }
+}
