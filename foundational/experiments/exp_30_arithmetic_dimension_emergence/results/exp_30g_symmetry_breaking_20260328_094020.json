@@ -1,0 +1,34 @@
+{
+  "experiment": "exp_30g_symmetry_breaking",
+  "date": "20260328_094020",
+  "checks": [
+    {
+      "name": "self_application_confluence",
+      "passed": true,
+      "details": "L0\u2192L1 at 1 (err=0.0e+00), L1\u2192L2 at 2 (err=0.0e+00), L2\u2192L3 at 2 (err=8.7e-15)"
+    },
+    {
+      "name": "golden_ratio_equilibrium",
+      "passed": "True",
+      "details": "\u03c6\u00b2=\u03c6+1 err=0.0e+00, 1/\u03c6=\u03c6-1 err=1.1e-16, Fib rep max err=5.5e-12"
+    },
+    {
+      "name": "divergence_rate",
+      "passed": "True",
+      "details": "L1\u2192L2 rate=2.0000, L2\u2192L3 rate=2.7726, ratio=1.3863 = 2\u00b7ln2"
+    },
+    {
+      "name": "breaking_direction",
+      "passed": "True",
+      "details": "x>2: mult>add=True, exp>mult=True; x<2: add>mult=True, mult>exp=True"
+    },
+    {
+      "name": "phi_cascade",
+      "passed": "True",
+      "details": "E(x) min at 1.6180 (\u03c6=1.6180), CF match=True, rate match=True"
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "total": 5
+}
