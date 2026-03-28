@@ -3,7 +3,7 @@
 ## A New Foundation for Dawn Field Theory
 
 **exp_30 | 2026-03-27 | Peter Groom**
-**Status:** Active — Phase 5 in progress (82/83 checks)
+**Status:** Active — Phase 5 in progress (88/89 checks)
 
 ---
 
@@ -74,6 +74,7 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 |--------|-------------|--------|
 | `exp_30m_fermion_generations.py` | Why 3 fermion generations from ADE level count | ✅ 6/6 — F₄=3 in all 5 mass formulas, Koide Q=2/3=F₃/F₄, Cabibbo arctan(3/13), anomalies per-gen (honest), Higgs excludes 4th gen |
 | `exp_30n_spinor_chirality.py` | Weyl spinors, chirality, and CPT from ADE | ✅ 6/6 — two inequivalent Weyl reps, chirality=L0 distinction, Clifford verified, SU(2)_L acts on left only, CPT from ADE prerequisites |
+| `exp_30o_ade_pac_bridge.py` | Bridge ADE to PAC/SEC/RBF/MED framework | ✅ 6/6 — PAC=closure conservation, SEC threshold=1/φ, ξ=γ+ln(φ), MED bounds from tetration, Ξ≈ξ at 0.12%, 18 predictions/0 free params |
 
 ## Key Findings
 
@@ -119,6 +120,12 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 29. **Weak chirality from Level 3** — SU(2)_L generators act only on left-handed block, annihilate right-handed. Level 3 (exp) is not self-inverse → selects one chirality. P violation = arithmetic asymmetry.
 30. **Helicity = chirality for massless** — Boost-invariant helicity for massless Weyl spinors. Mass (Level 1) couples chiralities → helicity becomes frame-dependent.
 31. **CPT from ADE level operations** — C=Level 2 (conjugation), P=Level 0 (inversion), T=Level 0×Level 2. All CPT prerequisites (Lorentz, unitarity, locality) provided by ADE. CPT exact.
+32. **PAC = closure conservation** — Each ADE level conserves under its operation: L1 additive (err 8.9e-16), L2 multiplicative (err 8.9e-16), L3 exponential (err 6.7e-16). PAC is not an axiom — it's forced by arithmetic closure.
+33. **SEC threshold = 1/φ from ADE equilibrium** — φ²=φ+1 is L2=L1+L0. The stable/unstable partition is φ and 1/φ. Below 1/φ: entropy dominates; above: information dominates. PAC ratio A/(A+ξ)=ln(φ) is the log-projection.
+34. **ξ = γ + ln(φ) from level transition costs** — γ = Level 1 divergence cost (harmonic series), ln(φ) = Level 2 convergence bound (Fibonacci ratio). ξ is the total L1→L2 transition cost. PAC ratio verified: A/(A+ξ) = ln(φ).
+35. **MED bounds from tetration termination** — MED depth ≤ 2 = ADE transitions, MED nodes ≤ 3 = ADE levels = F₄. Not empirical — arithmetic necessity.
+36. **Ξ ≈ ξ: two routes to the same constant** — Ξ = 1+π/55 = 1.0571 (topological), ξ = γ+ln(φ) = 1.0584 (thermodynamic). Differ by 0.12%. F₁₀ = 55 = T₁₀ (dual Fibonacci-triangular identity).
+37. **ADE → DFT derivation chain** — 9 links, 18 predictions, 0 free parameters. ADE is the unique zero-parameter foundation. Chain is acyclic with no circular dependencies.
 
 ### Failed Check (informative)
 - **exp_30k Test 4**: ξ-cascade recursion depths for non-gravitational couplings are NOT clean Fibonacci numbers (n_EM ≈ 10.22, closest Fibonacci F_6 = 8, error 2.22). The φ-tower gives continuous depth mapping, but only gravity (d=183) has clean Fibonacci depth structure. This constrains ADE's scope: the arithmetic hierarchy controls the Planck-to-EM ratio but not individual non-gravitational coupling depths.

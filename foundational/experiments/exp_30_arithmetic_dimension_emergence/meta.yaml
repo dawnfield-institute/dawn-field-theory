@@ -19,7 +19,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Phase 1-5 experiment scripts (exp_30a through exp_30n)"
+    description: "Phase 1-5 experiment scripts (exp_30a through exp_30o)"
   - name: "results"
     description: "JSON outputs and plots from experiments"
   - name: "journals"
@@ -63,6 +63,12 @@ key_results:
   - "Clifford algebra verified; Dirac = L+R sum (Level 1); mass couples chiralities"
   - "SU(2)_L acts only on left-handed block; Level 3 asymmetry (exp!=log) selects chirality"
   - "CPT: P=Level 0, C=Level 2, T=Level 0xLevel 2; all prerequisites from ADE"
+  - "PAC = closure conservation: each ADE level conserves in its own algebra (L1 additive, L2 multiplicative, L3 exponential)"
+  - "SEC threshold 1/phi from phi^2=phi+1 (L2=L1+L0); partitions structure from noise"
+  - "xi = gamma + ln(phi): L1 divergence cost + L2 convergence bound = level transition cost"
+  - "MED bounds (depth<=2, nodes<=3) from tetration termination — not empirical but arithmetic necessity"
+  - "Xi_top = 1+pi/55 = 1.0571 vs xi_pac = 1.0584: two independent routes within 0.12%"
+  - "Full ADE->DFT derivation chain: 9 links, 18 predictions, 0 free parameters"
 
 dependencies:
   internal:
@@ -110,3 +116,8 @@ tags:
   - clifford-algebra
   - dirac-equation
   - cpt-symmetry
+  - pac-sec-bridge
+  - sec-threshold
+  - euler-mascheroni
+  - med-bounds
+  - derivation-chain
