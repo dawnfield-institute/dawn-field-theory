@@ -19,7 +19,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Phase 1-5 experiment scripts (exp_30a through exp_30m)"
+    description: "Phase 1-5 experiment scripts (exp_30a through exp_30n)"
   - name: "results"
     description: "JSON outputs and plots from experiments"
   - name: "journals"
@@ -58,6 +58,11 @@ key_results:
   - "3 copies of SL(2,C) fundamental = 6-dim generation space; block-diagonal SU(2) = weak universality"
   - "Anomaly cancellation per-generation (honest: works for ANY N, not just 3)"
   - "No 4th generation: tetration 0/3 Lie properties, Higgs mu excludes at >100sigma"
+  - "Two inequivalent Weyl reps (1/2,0) and (0,1/2) from SL(2,C); epsilon tensor maps between them"
+  - "Chirality = Level 0 (inversion) distinction; parity maps L<->R via gamma^0"
+  - "Clifford algebra verified; Dirac = L+R sum (Level 1); mass couples chiralities"
+  - "SU(2)_L acts only on left-handed block; Level 3 asymmetry (exp!=log) selects chirality"
+  - "CPT: P=Level 0, C=Level 2, T=Level 0xLevel 2; all prerequisites from ADE"
 
 dependencies:
   internal:
@@ -100,3 +105,8 @@ tags:
   - ckm-matrix
   - cabibbo-angle
   - anomaly-cancellation
+  - weyl-spinors
+  - chirality
+  - clifford-algebra
+  - dirac-equation
+  - cpt-symmetry

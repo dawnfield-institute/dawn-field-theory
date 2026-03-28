@@ -3,7 +3,7 @@
 ## A New Foundation for Dawn Field Theory
 
 **exp_30 | 2026-03-27 | Peter Groom**
-**Status:** Active — Phase 5 in progress (76/77 checks)
+**Status:** Active — Phase 5 in progress (82/83 checks)
 
 ---
 
@@ -73,6 +73,7 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 | Script | Description | Result |
 |--------|-------------|--------|
 | `exp_30m_fermion_generations.py` | Why 3 fermion generations from ADE level count | ✅ 6/6 — F₄=3 in all 5 mass formulas, Koide Q=2/3=F₃/F₄, Cabibbo arctan(3/13), anomalies per-gen (honest), Higgs excludes 4th gen |
+| `exp_30n_spinor_chirality.py` | Weyl spinors, chirality, and CPT from ADE | ✅ 6/6 — two inequivalent Weyl reps, chirality=L0 distinction, Clifford verified, SU(2)_L acts on left only, CPT from ADE prerequisites |
 
 ## Key Findings
 
@@ -112,6 +113,12 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 23. **SM multiplets from SL(2,C) × 3** — 3 copies of fundamental rep give 6-dim generation space. Block-diagonal SU(2) = weak universality. SU(3)_flavor emerges from generation index.
 24. **Anomaly cancellation: honest negative** — Per-generation anomalies cancel (all traces = 0), but this works for ANY N. Anomalies fix generation content, not count. N=3 confirmed by Z-width (2.984 ± 0.008) and BBN (2.99 ± 0.17).
 25. **No 4th generation** — Tetration 0/3 Lie group properties. Higgs μ = 1.00 ± 0.07 excludes 4th gen at >100σ (would predict μ ≈ 9). 2^d+1 = d·F_{d+1} unique at d=3.
+26. **Two inequivalent Weyl representations** — SL(2,C) has (1/2,0) and (0,1/2) reps. Both valid homomorphisms, inequivalent (no intertwiner). Epsilon tensor maps between them = Level 0 structure.
+27. **Chirality = Level 0 distinction** — Parity (gamma^0) maps P_L↔P_R. The Levi-Civita tensor epsilon maps left rep to right rep. Chirality IS which side of the Level 0 boundary.
+28. **Clifford algebra and Dirac structure** — {gamma^mu, gamma^nu} = 2*eta^{mu,nu} verified exactly. gamma^5 eigenvalues {-1,-1,+1,+1}. Dirac = Level 1 sum of L+R. Mass = Level 1 coupling between chiralities.
+29. **Weak chirality from Level 3** — SU(2)_L generators act only on left-handed block, annihilate right-handed. Level 3 (exp) is not self-inverse → selects one chirality. P violation = arithmetic asymmetry.
+30. **Helicity = chirality for massless** — Boost-invariant helicity for massless Weyl spinors. Mass (Level 1) couples chiralities → helicity becomes frame-dependent.
+31. **CPT from ADE level operations** — C=Level 2 (conjugation), P=Level 0 (inversion), T=Level 0×Level 2. All CPT prerequisites (Lorentz, unitarity, locality) provided by ADE. CPT exact.
 
 ### Failed Check (informative)
 - **exp_30k Test 4**: ξ-cascade recursion depths for non-gravitational couplings are NOT clean Fibonacci numbers (n_EM ≈ 10.22, closest Fibonacci F_6 = 8, error 2.22). The φ-tower gives continuous depth mapping, but only gravity (d=183) has clean Fibonacci depth structure. This constrains ADE's scope: the arithmetic hierarchy controls the Planck-to-EM ratio but not individual non-gravitational coupling depths.
