@@ -1,0 +1,271 @@
+{
+  "property_degradation": {
+    "addition": {
+      "level": 1,
+      "commutative": true,
+      "associative": true,
+      "right_invertible": true,
+      "growth_H(n,n)": [
+        4.0,
+        6.0,
+        8.0,
+        10.0
+      ],
+      "property_count": 3
+    },
+    "multiplication": {
+      "level": 2,
+      "commutative": true,
+      "associative": true,
+      "right_invertible": true,
+      "growth_H(n,n)": [
+        4.0,
+        9.0,
+        16.0,
+        25.0
+      ],
+      "property_count": 3
+    },
+    "exponentiation": {
+      "level": 3,
+      "commutative": false,
+      "associative": false,
+      "right_invertible": true,
+      "growth_H(n,n)": [
+        4.0,
+        27.0,
+        256.0,
+        3125.0
+      ],
+      "property_count": 1
+    },
+    "tetration": {
+      "level": 4,
+      "commutative": false,
+      "associative": false,
+      "right_invertible": true,
+      "growth_H(n,n)": [
+        4.0,
+        "overflow",
+        "overflow",
+        "overflow"
+      ],
+      "property_count": 1
+    }
+  },
+  "lie_group": {
+    "addition": {
+      "level": 1,
+      "has_identity": true,
+      "has_inverses": true,
+      "derivative_exists": true,
+      "second_derivative_finite": true,
+      "exp_map_converges": true,
+      "can_form_lie_group": true
+    },
+    "multiplication": {
+      "level": 2,
+      "has_identity": true,
+      "has_inverses": true,
+      "derivative_exists": true,
+      "second_derivative_finite": true,
+      "exp_map_converges": true,
+      "can_form_lie_group": true
+    },
+    "exponentiation": {
+      "level": 3,
+      "has_identity": true,
+      "has_inverses": true,
+      "derivative_exists": true,
+      "second_derivative_finite": true,
+      "exp_map_converges": false,
+      "can_form_lie_group": false
+    },
+    "tetration": {
+      "level": 4,
+      "has_identity": true,
+      "has_inverses": true,
+      "derivative_exists": false,
+      "second_derivative_finite": false,
+      "exp_map_converges": false,
+      "can_form_lie_group": false
+    }
+  },
+  "growth_rates": {
+    "addition": {
+      "level": 1,
+      "values_H(n,n)": [
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0
+      ],
+      "growth_type": "linear: H(n,n) = 2n",
+      "log_log_slope": 0.9999999999999996,
+      "bounded_growth": true,
+      "lie_embeddable": true
+    },
+    "multiplication": {
+      "level": 2,
+      "values_H(n,n)": [
+        1.0,
+        4.0,
+        9.0,
+        16.0,
+        25.0,
+        36.0,
+        49.0
+      ],
+      "growth_type": "quadratic: H(n,n) = n^2",
+      "log_log_slope": 1.9999999999999991,
+      "bounded_growth": true,
+      "lie_embeddable": true
+    },
+    "exponentiation": {
+      "level": 3,
+      "values_H(n,n)": [
+        1.0,
+        4.0,
+        27.0,
+        256.0,
+        3125.0,
+        46656.0,
+        823543.0
+      ],
+      "growth_type": "exponential: H(n,n) = n^n",
+      "log_log_slope": 6.77029980449671,
+      "bounded_growth": true,
+      "lie_embeddable": true
+    },
+    "tetration": {
+      "level": 4,
+      "values_H(n,n)": [
+        1.0,
+        4.0,
+        "overflow",
+        "overflow",
+        "overflow",
+        "overflow",
+        "overflow"
+      ],
+      "growth_type": "hyper-exponential: H(n,n) = n^^n (tower of height n)",
+      "log_log_slope": null,
+      "bounded_growth": false,
+      "lie_embeddable": false
+    }
+  },
+  "uniqueness": {
+    "equation": "2^d + 1 = d * F_{d+1}",
+    "solutions": [
+      3
+    ],
+    "unique_at_d3": true,
+    "checked_up_to": 200,
+    "comparison_table": [
+      {
+        "d": 1,
+        "2^d + 1": 3,
+        "d * F_{d+1}": 1,
+        "difference": 2
+      },
+      {
+        "d": 2,
+        "2^d + 1": 5,
+        "d * F_{d+1}": 4,
+        "difference": 1
+      },
+      {
+        "d": 3,
+        "2^d + 1": 9,
+        "d * F_{d+1}": 9,
+        "difference": 0
+      },
+      {
+        "d": 4,
+        "2^d + 1": 17,
+        "d * F_{d+1}": 20,
+        "difference": -3
+      },
+      {
+        "d": 5,
+        "2^d + 1": 33,
+        "d * F_{d+1}": 40,
+        "difference": -7
+      },
+      {
+        "d": 6,
+        "2^d + 1": 65,
+        "d * F_{d+1}": 78,
+        "difference": -13
+      },
+      {
+        "d": 7,
+        "2^d + 1": 129,
+        "d * F_{d+1}": 147,
+        "difference": -18
+      },
+      {
+        "d": 8,
+        "2^d + 1": 257,
+        "d * F_{d+1}": 272,
+        "difference": -15
+      },
+      {
+        "d": 9,
+        "2^d + 1": 513,
+        "d * F_{d+1}": 495,
+        "difference": 18
+      },
+      {
+        "d": 10,
+        "2^d + 1": 1025,
+        "d * F_{d+1}": 890,
+        "difference": 135
+      },
+      {
+        "d": 11,
+        "2^d + 1": 2049,
+        "d * F_{d+1}": 1584,
+        "difference": 465
+      },
+      {
+        "d": 12,
+        "2^d + 1": 4097,
+        "d * F_{d+1}": 2796,
+        "difference": 1301
+      },
+      {
+        "d": 13,
+        "2^d + 1": 8193,
+        "d * F_{d+1}": 4901,
+        "difference": 3292
+      },
+      {
+        "d": 14,
+        "2^d + 1": 16385,
+        "d * F_{d+1}": 8540,
+        "difference": 7845
+      },
+      {
+        "d": 15,
+        "2^d + 1": 32769,
+        "d * F_{d+1}": 14805,
+        "difference": 17964
+      }
+    ],
+    "crossings": [
+      4,
+      9
+    ],
+    "interpretation": "Solutions found: [3]. Verified for d=1..200. The equation has exactly one solution at d=3, where 2^3 + 1 = 9 = 3 * F_4 = 3 * 3. For d >= 4, d*F_{d+1} > 2^d + 1 (Fibonacci overtakes exponential). For d >= 12, 2^d + 1 overtakes again (exponential wins eventually). d=3 is the unique crossing point where both counts agree."
+  },
+  "summary": {
+    "checks_passed": 5,
+    "checks_total": 5,
+    "all_passed": true,
+    "conclusion": "Tetration (Level 4) fails the Lie group requirements due to: (1) loss of general invertibility (super-logarithm undefined for continuous heights), (2) hyper-exponential growth preventing exponential map convergence, (3) loss of commutativity inherited from exponentiation. The arithmetic hierarchy terminates as a source of spatial dimensions at Level 3 (exponentiation/rotation). The equation 2^d+1 = d*F_{d+1} has unique solution d=3, confirming three dimensions as the only point where ADE and PAC counting agree."
+  }
+}

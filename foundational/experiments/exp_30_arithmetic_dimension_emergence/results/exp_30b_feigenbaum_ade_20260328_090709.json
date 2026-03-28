@@ -1,0 +1,977 @@
+{
+  "feigenbaum_convergence": {
+    "delta_exact": 4.66920160910299,
+    "alpha_exact": 2.502907875095892,
+    "convergence": [
+      {
+        "n": 2,
+        "delta_n": 4.751446218196226,
+        "error": 0.08224460909323561,
+        "rel_error": 0.017614276696232823
+      },
+      {
+        "n": 3,
+        "delta_n": 4.6562510175822815,
+        "error": 0.012950591520708876,
+        "rel_error": 0.0027736201185788677
+      },
+      {
+        "n": 4,
+        "delta_n": 4.6682422352605855,
+        "error": 0.0009593738424049647,
+        "rel_error": 0.0002054684981977619
+      },
+      {
+        "n": 5,
+        "delta_n": 4.668739469988683,
+        "error": 0.0004621391143073694,
+        "rel_error": 9.897604622734461e-05
+      },
+      {
+        "n": 6,
+        "delta_n": 4.669132158941215,
+        "error": 6.945016177528629e-05,
+        "rel_error": 1.4874097884290864e-05
+      },
+      {
+        "n": 7,
+        "delta_n": 4.6532491784465435,
+        "error": 0.015952430656446914,
+        "rel_error": 0.003416522136321196
+      },
+      {
+        "n": 8,
+        "delta_n": 4.669208580651185,
+        "error": 6.971548194734112e-06,
+        "rel_error": 1.4930921340261915e-06
+      },
+      {
+        "n": 9,
+        "delta_n": 4.672031674165173,
+        "error": 0.0028300650621826406,
+        "rel_error": 0.0006061132714135105
+      },
+      {
+        "n": 10,
+        "delta_n": 4.675798811451886,
+        "error": 0.006597202348895159,
+        "rel_error": 0.0014129187174169934
+      },
+      {
+        "n": 11,
+        "delta_n": 4.653483862325093,
+        "error": 0.015717746777897723,
+        "rel_error": 0.003366260036245745
+      }
+    ],
+    "delta_as_phi_power": 3.2023072068649747,
+    "alpha_as_phi_power": 1.9065475081871917,
+    "xi_pac": 1.0571198664289054,
+    "det_F7_pi": -81.68140899333463,
+    "phi_powers": {
+      "phi^1": 1.618033988749895,
+      "phi^2": 2.618033988749895,
+      "phi^3": 4.23606797749979,
+      "phi^4": 6.854101966249686,
+      "phi^5": 11.090169943749476,
+      "phi^10": 122.99186938124426,
+      "phi^20": 15126.999933893048
+    },
+    "note": "\u03b4 = \u03c6^3.202307 \u2014 the exponent 3.202307 should relate to ADE level transitions. \u03b1 = \u03c6^1.906548."
+  },
+  "cascade_levels": {
+    "pre_bifurcation": [
+      {
+        "r": 2.5,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.6931471805600546,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.7554167342883506e-16
+      },
+      {
+        "r": 2.5257894736842106,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.6428543865059144,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.5700924586837752e-16
+      },
+      {
+        "r": 2.551578947368421,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.5949703002734759,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 7.850462293418876e-17
+      },
+      {
+        "r": 2.5773684210526318,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.5492747048792819,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.1102230246251565e-16
+      },
+      {
+        "r": 2.6031578947368423,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.5055762678797734,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 0.0
+      },
+      {
+        "r": 2.628947368421053,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.46370770078889284,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 0.0
+      },
+      {
+        "r": 2.654736842105263,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.4235218918553358,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 2.220446049250313e-16
+      },
+      {
+        "r": 2.6805263157894736,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.3848887863827222,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.7554167342883506e-16
+      },
+      {
+        "r": 2.7063157894736842,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.3476928476229407,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.1102230246251565e-16
+      },
+      {
+        "r": 2.732105263157895,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.31183097323113895,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.5700924586837752e-16
+      },
+      {
+        "r": 2.7578947368421054,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.2772107725845331,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.1102230246251565e-16
+      },
+      {
+        "r": 2.783684210526316,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.24374913247053037,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.5700924586837752e-16
+      },
+      {
+        "r": 2.8094736842105266,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.21137101508889705,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.7554167342883506e-16
+      },
+      {
+        "r": 2.835263157894737,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.18000844462812843,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 2.830524433501838e-16
+      },
+      {
+        "r": 2.8610526315789477,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.14959964799185838,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 1.1102230246251565e-16
+      },
+      {
+        "r": 2.886842105263158,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.12008832236804294,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 5.551115123125783e-16
+      },
+      {
+        "r": 2.9126315789473685,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.09142300781402872,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 2.830524433501838e-16
+      },
+      {
+        "r": 2.938421052631579,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.06355654729138585,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 5.661048867003676e-16
+      },
+      {
+        "r": 2.9642105263157896,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.036445619920460914,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 2.054662609310059e-15
+      },
+      {
+        "r": 2.99,
+        "period": 1,
+        "doublings": 0,
+        "is_power_of_2": true,
+        "lyapunov": -0.010050336258740952,
+        "ade_level": "Level 1 (additive/fixed point)",
+        "orbit_std": 4.442279660508709e-15
+      }
+    ],
+    "early_cascade": [
+      {
+        "r": 3.01,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.0204630833065034,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.03326409367857558
+      },
+      {
+        "r": 3.037894736842105,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.08303612249613113,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.06438196493639109
+      },
+      {
+        "r": 3.06578947368421,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.15563651492629882,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.08434868672546564
+      },
+      {
+        "r": 3.0936842105263156,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.2418594867505773,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.10008854897739144
+      },
+      {
+        "r": 3.121578947368421,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.34767202587454554,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.11338528140010191
+      },
+      {
+        "r": 3.149473684210526,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.4841041093482535,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.12502904020812303
+      },
+      {
+        "r": 3.1773684210526314,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.6753347468645169,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.1354540419988732
+      },
+      {
+        "r": 3.205263157894737,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.9945649918902298,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.14493003759859044
+      },
+      {
+        "r": 3.2331578947368422,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -2.1711792733223483,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.1536386160563163
+      },
+      {
+        "r": 3.261052631578947,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -1.0930280760482032,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.16170918311133117
+      },
+      {
+        "r": 3.2889473684210526,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.7150603165628114,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.16923797134177626
+      },
+      {
+        "r": 3.3168421052631576,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.5001659792648907,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.17629895319216185
+      },
+      {
+        "r": 3.344736842105263,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.34878762628225907,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.18295051579681423
+      },
+      {
+        "r": 3.3726315789473684,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.231509551434253,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.18923975365810883
+      },
+      {
+        "r": 3.400526315789474,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.1355589476541707,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.19520534423746144
+      },
+      {
+        "r": 3.428421052631579,
+        "period": 2,
+        "doublings": 1,
+        "is_power_of_2": true,
+        "lyapunov": -0.05422218355270862,
+        "ade_level": "Level 2 (multiplicative/period-2, 1 doublings)",
+        "orbit_std": 0.20087954055043844
+      },
+      {
+        "r": 3.4563157894736842,
+        "period": 4,
+        "doublings": 2,
+        "is_power_of_2": true,
+        "lyapunov": -0.03610866252691882,
+        "ade_level": "Level 2 (multiplicative/period-4, 2 doublings)",
+        "orbit_std": 0.2056089257112614
+      },
+      {
+        "r": 3.4842105263157896,
+        "period": 4,
+        "doublings": 2,
+        "is_power_of_2": true,
+        "lyapunov": -0.3005395653510004,
+        "ade_level": "Level 2 (multiplicative/period-4, 2 doublings)",
+        "orbit_std": 0.2080927933967044
+      },
+      {
+        "r": 3.5121052631578946,
+        "period": 4,
+        "doublings": 2,
+        "is_power_of_2": true,
+        "lyapunov": -0.3094912720373795,
+        "ade_level": "Level 2 (multiplicative/period-4, 2 doublings)",
+        "orbit_std": 0.21049946442377404
+      },
+      {
+        "r": 3.54,
+        "period": 4,
+        "doublings": 2,
+        "is_power_of_2": true,
+        "lyapunov": -0.024352941974872318,
+        "ade_level": "Level 2 (multiplicative/period-4, 2 doublings)",
+        "orbit_std": 0.2128333872024342
+      }
+    ],
+    "deep_cascade": [
+      {
+        "r": 3.55,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.09989221118749028,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.213931420516993
+      },
+      {
+        "r": 3.5510421052631576,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.1311895790382323,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.2140653170482502
+      },
+      {
+        "r": 3.5520842105263157,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.17343317199818367,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.2141990886781362
+      },
+      {
+        "r": 3.5531263157894735,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.23838725665182178,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.2143327352250968
+      },
+      {
+        "r": 3.554168421052631,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.38351217062925114,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21446625651084036
+      },
+      {
+        "r": 3.5552105263157894,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.3596249591538688,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.2145996523603417
+      },
+      {
+        "r": 3.556252631578947,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.22912297843060955,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21473292260184582
+      },
+      {
+        "r": 3.5572947368421053,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.16628916015855938,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21486606706687078
+      },
+      {
+        "r": 3.558336842105263,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.12438725322619003,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21499908559020967
+      },
+      {
+        "r": 3.5593789473684208,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.09283908063818393,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.2151319780099317
+      },
+      {
+        "r": 3.560421052631579,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.06748792384949173,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21526474416738242
+      },
+      {
+        "r": 3.5614631578947367,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.04626633622457718,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21539738390718297
+      },
+      {
+        "r": 3.5625052631578944,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.02799494349750334,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21552989707722933
+      },
+      {
+        "r": 3.5635473684210526,
+        "period": 8,
+        "doublings": 3,
+        "is_power_of_2": true,
+        "lyapunov": -0.011936958398685376,
+        "ade_level": "Level 2 (multiplicative/period-8, 3 doublings)",
+        "orbit_std": 0.21566228352868955
+      },
+      {
+        "r": 3.5645894736842103,
+        "period": 16,
+        "doublings": 4,
+        "is_power_of_2": true,
+        "lyapunov": -0.005055926689232073,
+        "ade_level": "Level 2 (multiplicative/period-16, 4 doublings)",
+        "orbit_std": 0.21579026688236003
+      },
+      {
+        "r": 3.5656315789473685,
+        "period": 16,
+        "doublings": 4,
+        "is_power_of_2": true,
+        "lyapunov": -0.04742604829803603,
+        "ade_level": "Level 2 (multiplicative/period-16, 4 doublings)",
+        "orbit_std": 0.21589788925243245
+      },
+      {
+        "r": 3.566673684210526,
+        "period": 16,
+        "doublings": 4,
+        "is_power_of_2": true,
+        "lyapunov": -0.36512934562741683,
+        "ade_level": "Level 2 (multiplicative/period-16, 4 doublings)",
+        "orbit_std": 0.21600529799746926
+      },
+      {
+        "r": 3.567715789473684,
+        "period": 16,
+        "doublings": 4,
+        "is_power_of_2": true,
+        "lyapunov": -0.044354303268572995,
+        "ade_level": "Level 2 (multiplicative/period-16, 4 doublings)",
+        "orbit_std": 0.21611249809427419
+      },
+      {
+        "r": 3.568757894736842,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": -0.00031688210157489286,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.21621950958878994
+      },
+      {
+        "r": 3.5698,
+        "period": 64,
+        "doublings": 6,
+        "is_power_of_2": true,
+        "lyapunov": -0.04750627424267782,
+        "ade_level": "Level 2 (multiplicative/period-64, 6 doublings)",
+        "orbit_std": 0.21633815231620085
+      }
+    ],
+    "edge_of_chaos": [
+      {
+        "r": 3.5699,
+        "period": 128,
+        "doublings": 7,
+        "is_power_of_2": true,
+        "lyapunov": -0.0036942579886804173,
+        "ade_level": "Level 2 (multiplicative/period-128, 7 doublings)",
+        "orbit_std": 0.21634901917399849
+      },
+      {
+        "r": 3.569925,
+        "period": 128,
+        "doublings": 7,
+        "is_power_of_2": true,
+        "lyapunov": -0.0045445174809411615,
+        "ade_level": "Level 2 (multiplicative/period-128, 7 doublings)",
+        "orbit_std": 0.21635180609638666
+      },
+      {
+        "r": 3.56995,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.003346841516412565,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.21635457866808386
+      },
+      {
+        "r": 3.569975,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.00697345549569651,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.21635738097761703
+      },
+      {
+        "r": 3.57,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.011108011721108958,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2163604749680591
+      }
+    ],
+    "chaotic": [
+      {
+        "r": 3.57,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.011108011721108958,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2163604749680591
+      },
+      {
+        "r": 3.5873684210526315,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.13480779973489687,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.21923761134508016
+      },
+      {
+        "r": 3.604736842105263,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.1815816016497418,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2215744470947552
+      },
+      {
+        "r": 3.6221052631578945,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.21564351834147114,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2197106197778996
+      },
+      {
+        "r": 3.639473684210526,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.2266106234007148,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.21681364840257558
+      },
+      {
+        "r": 3.656842105263158,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.27731220822491975,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.21511080526130627
+      },
+      {
+        "r": 3.674210526315789,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.31122924302666277,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2016473687949893
+      },
+      {
+        "r": 3.691578947368421,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.3485716624618394,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.202471133884272
+      },
+      {
+        "r": 3.7089473684210525,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.35604867052658684,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.20962385899795177
+      },
+      {
+        "r": 3.7263157894736842,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.3763186838334577,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2153486920899388
+      },
+      {
+        "r": 3.7436842105263155,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.06794931279326426,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2535260339601347
+      },
+      {
+        "r": 3.761052631578947,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.38771000068690825,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.23406944931829227
+      },
+      {
+        "r": 3.778421052631579,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.39646765043157517,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.24484487684657857
+      },
+      {
+        "r": 3.7957894736842106,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.4324340601083687,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.24176157993486808
+      },
+      {
+        "r": 3.813157894736842,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.43787548744184096,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2545786947895931
+      },
+      {
+        "r": 3.8305263157894736,
+        "period": 3,
+        "doublings": 0,
+        "is_power_of_2": false,
+        "lyapunov": -0.4987018220014471,
+        "ade_level": "Level 2-3 (period-3, mixed)",
+        "orbit_std": 0.3283594025037482
+      },
+      {
+        "r": 3.8478947368421053,
+        "period": 12,
+        "doublings": 2,
+        "is_power_of_2": false,
+        "lyapunov": -0.03970460270704758,
+        "ade_level": "Level 2-3 (period-12, mixed)",
+        "orbit_std": 0.33293409939935004
+      },
+      {
+        "r": 3.865263157894737,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.4049198319610837,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.2987065799611995
+      },
+      {
+        "r": 3.882631578947368,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.48359532626743146,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.28445572161866634
+      },
+      {
+        "r": 3.9,
+        "period": -1,
+        "doublings": -1,
+        "is_power_of_2": false,
+        "lyapunov": 0.49539239798906676,
+        "ade_level": "Level 3 (exponential/chaotic)",
+        "orbit_std": 0.29903695349654874
+      }
+    ],
+    "summary": {
+      "pre_bifurcation": {
+        "dominant_level": "Level 1",
+        "mean_lyapunov": -0.31504839431980686,
+        "max_period": 1,
+        "max_doublings": 0,
+        "level_distribution": {
+          "Level 1": 20
+        },
+        "arithmetic_level": "Level 1 (additive)"
+      },
+      "early_cascade": {
+        "dominant_level": "Level 2",
+        "mean_lyapunov": -0.44613377387344355,
+        "max_period": 4,
+        "max_doublings": 2,
+        "level_distribution": {
+          "Level 2": 20
+        },
+        "arithmetic_level": "Level 2 (multiplicative)"
+      },
+      "deep_cascade": {
+        "dominant_level": "Level 2",
+        "mean_lyapunov": -0.13310763816550797,
+        "max_period": 64,
+        "max_doublings": 6,
+        "level_distribution": {
+          "Level 2": 19,
+          "Level 3": 1
+        },
+        "arithmetic_level": "Level 2 (multiplicative)"
+      },
+      "edge_of_chaos": {
+        "dominant_level": "Level 3",
+        "mean_lyapunov": 0.002637906652719291,
+        "max_period": 128,
+        "max_doublings": 7,
+        "level_distribution": {
+          "Level 2": 2,
+          "Level 3": 3
+        },
+        "arithmetic_level": "Level 3 (exponential/chaotic)"
+      },
+      "chaotic": {
+        "dominant_level": "Level 3",
+        "mean_lyapunov": 0.2503584832946222,
+        "max_period": 12,
+        "max_doublings": 2,
+        "level_distribution": {
+          "Level 3": 18,
+          "Level 2-3": 2
+        },
+        "arithmetic_level": "Level 3 (exponential/chaotic)"
+      }
+    }
+  },
+  "xi_bootstrap": {
+    "xi_exact": 1.0571198664289054,
+    "xi_decomposed": 1.0584274899611363,
+    "decomposition_error": 0.001307623532230906,
+    "gamma_level_0_to_1": 0.5772156649015329,
+    "ln_phi_level_1_to_2": 0.48121182505960347,
+    "pi_over_55": 0.057119866428905326,
+    "twist_per_level_rad": 0.057119866428905326,
+    "twist_per_level_deg": 3.2727272727272725,
+    "cascade_width": 0.5699456719999998,
+    "feigenbaum_delta_converged": 4.667104782647384,
+    "bifurcation_intervals": [
+      0.4494897427831779,
+      0.09460061676838594,
+      0.02031690654373408,
+      0.004352153448738072,
+      0.0009321902575019081,
+      0.00019964957636009473,
+      4.290541269202919e-05,
+      9.189011788812707e-06,
+      1.9668128192762424e-06,
+      4.206367507642028e-07,
+      9.039179316161494e-08
+    ],
+    "overhead_ratios": [
+      0.9822493128037846,
+      0.9845389452218551,
+      0.9842990548435063,
+      0.9839544176635251,
+      0.9835271764134007,
+      0.9864557458397438,
+      0.9860112800179479,
+      0.9849714817137483,
+      0.9831400576557546,
+      0.9860177451662666
+    ],
+    "note": "\u03be = \u03b3 + ln(\u03c6) = 0.5772 + 0.4812 = 1.058427 (vs exact 1 + \u03c0/55 = 1.057120, error = 1.31e-03). Each cascade depth contributes 3.273\u00b0 of M\u00f6bius twist. 55 depths = \u03c0 = half-twist."
+  },
+  "rg_mobius": {
+    "rg_eigenvalue": 4.66920160910299,
+    "rg_classification": "hyperbolic",
+    "explanation": "The RG operator acts as a hyperbolic M\u00f6bius transform in parameter space. It has two fixed points: the trivial one (r=0, repulsive) and the accumulation point (r_\u221e, attractive). The flow from trivial to critical IS the cascade.",
+    "delta_as_phi_power": 3.2023072068649747,
+    "alpha_as_phi_power": 1.9065475081871917,
+    "alpha_times_delta": 11.686581477834286,
+    "product_as_phi_power": 5.108854715052166,
+    "mobius_fixed_point_connection": "\u03b4 = \u03c6^3.202307. \u03b1 = \u03c6^1.906548. \u03b1\u00b7\u03b4 = 11.686581 = \u03c6^5.108855. If the ADE per-level bootstrap involves \u03c6-scaling, then the Feigenbaum constants parameterize the rate of climbing."
+  },
+  "summary": {
+    "checks": [
+      {
+        "Cascade shows Level 1 \u2192 2 \u2192 3 progression": true
+      },
+      {
+        "\u03be decomposition \u03b3 + ln(\u03c6) matches 1 + \u03c0/55": true
+      },
+      {
+        "RG operator is hyperbolic M\u00f6bius": true
+      }
+    ],
+    "cascade_levels_correct": true,
+    "conclusion": "The period-doubling cascade exhibits a progression from Level 1 (additive/linear) through Level 2 (multiplicative/self-similar) to Level 3 (exponential/chaotic) behavior, consistent with ADE's arithmetic dimension hypothesis. The renormalization group operator acts as a hyperbolic M\u00f6bius transform, with Feigenbaum \u03b4 as its multiplier. \u03be = \u03b3 + ln(\u03c6) \u2248 1 + \u03c0/55 encodes the per-level bootstrap cost decomposed into counting (\u03b3) and branching (ln \u03c6) contributions."
+  }
+}

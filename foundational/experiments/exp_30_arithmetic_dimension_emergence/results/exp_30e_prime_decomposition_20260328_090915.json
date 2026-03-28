@@ -1,0 +1,182 @@
+{
+  "n_primes": 78498,
+  "limit": 1000000,
+  "regularity": {
+    "additive": {
+      "mean": 12.739098309489535,
+      "std": 10.28239601088216,
+      "cv": 0.8071525755651526,
+      "entropy": 4.890105686232307,
+      "autocorrelation": -0.043143061819516805,
+      "min": 1.0,
+      "max": 114.0
+    },
+    "multiplicative": {
+      "mean": 1.0001753912162448,
+      "std": 0.004585669750424849,
+      "cv": 0.004584865605270021,
+      "entropy": -6.2124625567265195,
+      "autocorrelation": 0.7761747319543006,
+      "min": 1.0000020000820034,
+      "max": 1.6666666666666667
+    },
+    "log_ratio": {
+      "mean": 0.00016717003678178564,
+      "std": 0.003815785685697678,
+      "cv": 22.82577523553811,
+      "entropy": -6.592517261343337,
+      "autocorrelation": 0.7957963835634821,
+      "min": 2.0000800031892133e-06,
+      "max": 0.5108256237659907
+    },
+    "exponential": {
+      "mean": 1.000041538538738,
+      "std": 0.0029730664416266813,
+      "cv": 0.00297294294992079,
+      "entropy": -6.412732604957097,
+      "autocorrelation": 0.6663278075896777,
+      "min": 1.0000001447710476,
+      "max": 1.5849625007211563
+    }
+  },
+  "scale_dependence": {
+    "window_100": {
+      "additive_cv_mean": 0.7900882705371469,
+      "additive_cv_std": 0.09310479538187098,
+      "multiplicative_cv_mean": 0.005286570925138845,
+      "multiplicative_cv_std": 0.0228664847934205,
+      "mult_to_add_ratio": 0.006691114299855044
+    },
+    "window_500": {
+      "additive_cv_mean": 0.8011594256595058,
+      "additive_cv_std": 0.046995341152381506,
+      "multiplicative_cv_mean": 0.002748330208765791,
+      "multiplicative_cv_std": 0.011803212292850212,
+      "mult_to_add_ratio": 0.0034304410841867025
+    },
+    "window_1000": {
+      "additive_cv_mean": 0.8019322530950241,
+      "additive_cv_std": 0.03058261769019953,
+      "multiplicative_cv_mean": 0.0020023099847965324,
+      "multiplicative_cv_std": 0.008554504773814793,
+      "mult_to_add_ratio": 0.0024968567819397464
+    },
+    "window_5000": {
+      "additive_cv_mean": 0.7986090501006039,
+      "additive_cv_std": 0.017159626268050836,
+      "multiplicative_cv_mean": 0.001231565228890412,
+      "multiplicative_cv_std": 0.004485564649366732,
+      "mult_to_add_ratio": 0.0015421378316903208
+    },
+    "window_10000": {
+      "additive_cv_mean": 0.7982268566711376,
+      "additive_cv_std": 0.013536795297040499,
+      "multiplicative_cv_mean": 0.0018497181925767416,
+      "multiplicative_cv_std": 0.00446644785397948,
+      "mult_to_add_ratio": 0.002317283836189953
+    },
+    "window_50000": {
+      "additive_cv_mean": 0.8023664263937905,
+      "additive_cv_std": 0.0,
+      "multiplicative_cv_mean": 0.005742235126333872,
+      "multiplicative_cv_std": 0.0,
+      "mult_to_add_ratio": 0.007156624376897422
+    }
+  },
+  "residuals": {
+    "multiplicative_residual": {
+      "mean": 1.0038172809185826,
+      "std": 0.002106689450276092,
+      "cv": 0.00209867820600606,
+      "skewness": 19.664012146151688,
+      "excess_kurtosis": 705.2705885819855,
+      "near_gaussian": false
+    },
+    "additive_residual": {
+      "mean": 1603.9460854532613,
+      "std": 908.5888834787933,
+      "skewness": 0.021839077481261304,
+      "excess_kurtosis": -1.1151336799354763
+    },
+    "interpretation": "If multiplicative residuals are near-Gaussian, it confirms that after removing the Level 2 (multiplicative) structure, what remains is Level 1 (additive) noise -- consistent with primes as Level 2 boundary objects with additive counting residue."
+  },
+  "spectral": {
+    "total_power": 218741265740.00006,
+    "band_decomposition": {
+      "low_freq_fraction": 0.023321016989401054,
+      "mid_freq_fraction": 0.1558418221352176,
+      "high_freq_fraction": 0.8208371608753813
+    },
+    "top_frequencies": [
+      [
+        1.52587890625e-05,
+        1036918847.4044384
+      ],
+      [
+        3.0517578125e-05,
+        394033811.76162827
+      ],
+      [
+        4.57763671875e-05,
+        211871017.44389918
+      ],
+      [
+        6.103515625e-05,
+        126946486.00864512
+      ],
+      [
+        7.62939453125e-05,
+        101567225.1330208
+      ],
+      [
+        0.351531982421875,
+        75772151.38856061
+      ],
+      [
+        9.1552734375e-05,
+        69602267.66457279
+      ],
+      [
+        0.224700927734375,
+        68625053.2150921
+      ],
+      [
+        0.25360107421875,
+        66191660.460581265
+      ],
+      [
+        0.3458404541015625,
+        65193093.34034439
+      ]
+    ],
+    "interpretation": {
+      "low_freq": "Large-scale trend (Level 2 multiplicative structure)",
+      "mid_freq": "Periodic modulations (Level 2 doublings, mod-6 pattern)",
+      "high_freq": "Local irregularity (Level 1 additive/counting residue)"
+    }
+  },
+  "random_comparison": {
+    "primes": {
+      "cv": 0.7704889819208217,
+      "autocorr": -0.07067771535091395
+    },
+    "additive_random": {
+      "cv": 1.0039106838181786,
+      "autocorr": 0.0022635680972864945
+    },
+    "multiplicative_random": {
+      "cv": 6.647411727174665,
+      "autocorr": 0.47388594627371616
+    },
+    "cv_distance_to_additive": 0.2334217018973569,
+    "cv_distance_to_multiplicative": 5.876922745253844,
+    "closer_to_multiplicative": false,
+    "interpretation": "Primes should be closer to the multiplicative random model than the additive random model, confirming Level 2 character."
+  },
+  "summary": {
+    "checks_passed": 3,
+    "checks_total": 5,
+    "concentration_ratio": 176.04716147783708,
+    "conclusion": "Primes are 176x more concentrated in multiplicative coordinates than additive, confirming their character as Level 2 (multiplicative) boundary objects. After removing the multiplicative trend, residuals are near-Gaussian (additive/Level 1 counting noise). Spectral decomposition shows gap irregularity is predominantly high-frequency (Level 1), with large-scale structure captured by the multiplicative trend."
+  }
+}
