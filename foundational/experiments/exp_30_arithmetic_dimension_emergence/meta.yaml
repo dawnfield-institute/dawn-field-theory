@@ -19,7 +19,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Phase 1-4 experiment scripts (exp_30a through exp_30l)"
+    description: "Phase 1-5 experiment scripts (exp_30a through exp_30m)"
   - name: "results"
     description: "JSON outputs and plots from experiments"
   - name: "journals"
@@ -52,6 +52,12 @@ key_results:
   - "Born rule forced by ADE: spin map L2, Gleason d≥3, L1/L3 fail normalization/additivity"
   - "Entanglement = Level 0 (inversion) boundary topology on composite systems"
   - "FAIL: non-gravitational coupling depths NOT clean Fibonacci — ADE scope boundary"
+  - "F_4=3 appears in ALL 5 DFT mass predictions (mu/e, tau/e, p/e, Koide Q, sin2tW) — coincidence <0.013%"
+  - "Koide Q = 2/3 = F_3/F_4 at 0.001%; Koide-Foot parametrization recovers all 3 lepton masses to <0.004%"
+  - "Cabibbo angle arctan(3/13) = arctan(F_4/F_7) confirmed at 0.045 deg; CKM hierarchy monotonic"
+  - "3 copies of SL(2,C) fundamental = 6-dim generation space; block-diagonal SU(2) = weak universality"
+  - "Anomaly cancellation per-generation (honest: works for ANY N, not just 3)"
+  - "No 4th generation: tetration 0/3 Lie properties, Higgs mu excludes at >100sigma"
 
 dependencies:
   internal:
@@ -89,3 +95,8 @@ tags:
   - gleason-theorem
   - coupling-hierarchy
   - weinberg-angle
+  - fermion-generations
+  - koide-formula
+  - ckm-matrix
+  - cabibbo-angle
+  - anomaly-cancellation

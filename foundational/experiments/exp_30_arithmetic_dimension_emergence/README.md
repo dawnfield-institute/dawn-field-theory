@@ -3,7 +3,7 @@
 ## A New Foundation for Dawn Field Theory
 
 **exp_30 | 2026-03-27 | Peter Groom**
-**Status:** Active — Phase 4 complete (70/71 checks)
+**Status:** Active — Phase 5 in progress (76/77 checks)
 
 ---
 
@@ -69,6 +69,11 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 | `exp_30k_coupling_hierarchy.py` | Coupling constants from Fibonacci recursion depth | ✅ 4/5 — φ^183 confirmed, log(α_G⁻¹)/log(α_EM⁻¹)≈φ⁶ at 0.30%, **ξ-cascade depths not Fibonacci** |
 | `exp_30l_born_rule.py` | Derive Born rule from ADE confluence measure | ✅ 6/6 — spin map degree-2, Gleason+d=3→Born, L1/L3 no-go, entanglement from L0 |
 
+### Phase 5 — Matter Content (in progress)
+| Script | Description | Result |
+|--------|-------------|--------|
+| `exp_30m_fermion_generations.py` | Why 3 fermion generations from ADE level count | ✅ 6/6 — F₄=3 in all 5 mass formulas, Koide Q=2/3=F₃/F₄, Cabibbo arctan(3/13), anomalies per-gen (honest), Higgs excludes 4th gen |
+
 ## Key Findings
 
 ### Phase 1
@@ -99,6 +104,14 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 17. **log(α_G⁻¹)/log(α_EM⁻¹) ≈ φ⁶ at 0.30%** — The ratio of coupling log-scales is a Fibonacci power. Implies n_G/n_EM ≈ φ⁶, so n_EM ≈ 183/φ⁶ ≈ 10.2 (Tier 2).
 18. **Born rule from ADE** — (a) Spin map is degree 2 (Level 2 operation), (b) Gleason's theorem requires d≥3 which ADE provides, (c) L1 and L3 probability measures fail (normalization and additivity), (d) Only L2 (Born rule) survives. ADE → Born rule via Gleason + tetration termination.
 19. **Entanglement from Level 0 topology** — Non-separability of entangled states maps to Level 0 (inversion) boundary topology. Bell state is SWAP eigenstate, CHSH = 2√2 (Tier 2).
+
+### Phase 5
+20. **F₄ = 3 universality** — F₄ appears in ALL 5 DFT predictions (μ/e, τ/e, p/e, Koide Q, sin²θ_W). Coincidence probability < 0.013%. The number of fermion generations = F₄ = number of ADE levels.
+21. **Koide formula = ADE L1/L2 ratio** — Q = (Σm)/(Σ√m)² = 2/3 = F₃/F₄ at 0.001%. Koide-Foot parametrization recovers all 3 masses to < 0.004%. The 2π/3 phase spacing reflects 3 equally-spaced generations.
+22. **Cabibbo angle from ADE** — θ₁₂ = arctan(F₄/F₇) = arctan(3/13) = 12.995° vs 13.04° (0.045° error). CKM hierarchy |V_us| > |V_cb| > |V_ub| confirmed. θ₂₃ has no clean Fibonacci expression (honest).
+23. **SM multiplets from SL(2,C) × 3** — 3 copies of fundamental rep give 6-dim generation space. Block-diagonal SU(2) = weak universality. SU(3)_flavor emerges from generation index.
+24. **Anomaly cancellation: honest negative** — Per-generation anomalies cancel (all traces = 0), but this works for ANY N. Anomalies fix generation content, not count. N=3 confirmed by Z-width (2.984 ± 0.008) and BBN (2.99 ± 0.17).
+25. **No 4th generation** — Tetration 0/3 Lie group properties. Higgs μ = 1.00 ± 0.07 excludes 4th gen at >100σ (would predict μ ≈ 9). 2^d+1 = d·F_{d+1} unique at d=3.
 
 ### Failed Check (informative)
 - **exp_30k Test 4**: ξ-cascade recursion depths for non-gravitational couplings are NOT clean Fibonacci numbers (n_EM ≈ 10.22, closest Fibonacci F_6 = 8, error 2.22). The φ-tower gives continuous depth mapping, but only gravity (d=183) has clean Fibonacci depth structure. This constrains ADE's scope: the arithmetic hierarchy controls the Planck-to-EM ratio but not individual non-gravitational coupling depths.
