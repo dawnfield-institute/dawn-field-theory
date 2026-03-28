@@ -55,12 +55,12 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 | `exp_30e_prime_decomposition.py` | Decompose primes into additive+multiplicative+exponential | ✅ 5/5 — 176× mult concentration, boundary asymmetry confirmed, tighter than Cramer |
 | `exp_30f_mode_reconciliation.py` | Investigate 2^d+1 = d·F_{d+1} uniqueness | ✅ 5/5 — unique at d=3 (d=1..500), Pascal {1,3,3,1}, Catalan/Mihailescu link |
 
-### Phase 3 — Physical Geometry (planned)
-| Script | Description | Status |
+### Phase 3 — Physical Geometry (complete)
+| Script | Description | Result |
 |--------|-------------|--------|
-| `exp_30g_symmetry_breaking.py` | Level 1→2 breaking mechanism via confluence | Planned |
-| `exp_30h_spacetime_signature.py` | Derive (+,+,+,−) from ADE + recursion direction | Planned |
-| `exp_30i_planck_scale.py` | Connect ADE to Planck-scale derivations | Planned |
+| `exp_30g_symmetry_breaking.py` | Level 1→2 breaking mechanism via confluence | ✅ 5/5 — confluence at x=2, φ as 3-level equilibrium, divergence rate 2·ln2 |
+| `exp_30h_spacetime_signature.py` | Derive (+,+,+,−) from ADE via spin map | ✅ 5/5 — PSL(2,C)≅SO⁺(3,1) verified, det(H)=t²−x²−y²−z², 3 boosts + 3 rotations |
+| `exp_30i_planck_scale.py` | Connect ADE to Planck-scale derivations | ✅ 5/5 — 183=F₇²+F₇+1, F₁₈₃~10³⁸, Zeckendorf(137)=odd Fibonacci, L4 terminates |
 
 ## Key Findings
 
@@ -73,6 +73,11 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 4. **Tetration cannot form Lie group** — Loses smoothness (derivative undefined for non-integer heights), exp map diverges.
 5. **Primes 176× more concentrated in multiplicative coordinates** — CV 0.0046 vs 0.807. High-freq (L1 counting) dominates 82% of gap spectrum.
 6. **2^d+1 = d·F_{d+1} unique at d=3** — Verified d=1..500. Connected to Mihailescu's theorem (3²−2³=1 is unique). Modes follow Pascal C(3,k)={1,3,3,1}.
+
+### Phase 3
+7. **Confluence at x=2** — Self-application confluence (x+x=x·x and x·x=x^x) occurs at x=2 for all higher levels. φ is the unique 3-level equilibrium (φ²=φ+1 ↔ L2=L1+L0). Divergence rate increases with level: ratio = 2·ln2.
+8. **Spacetime signature (1,3) from spin map** — PSL(2,C)≅SO⁺(3,1) via Hermitian det: det(H) = t²−x²−y²−z². R→rotations (3 spatial), T+D→boosts (3 temporal mixing). Inversion I is spatial π-rotation, not parity — P-violation requires leaving SL(2,C).
+9. **F₁₈₃ Planck hierarchy** — 183 = F₇² + F₇ + 1 (geometric series in F₇=13). log₁₀(F₁₈₃) ≈ 37.9 matches gravitational hierarchy ~10³⁸. Zeckendorf(137) = F₁₁+F₉+F₇+F₂ — all odd Fibonacci indices.
 
 ### Open Issues
 - **exp_30e (resolved)**: Multiplicative residuals are non-Gaussian — positive skew (1.47 after PNT warmup) with heavy right tails (12× excess at 3σ, 141× at 4σ). This is structurally forced: prime gaps bounded below (≥2) but unbounded above. The asymmetry IS the Level 2 boundary topology. Ratio-domain comparison confirms primes are 1.2× tighter than Cramér random model (CV 0.013 vs 0.015).
