@@ -3,7 +3,7 @@
 ## A New Foundation for Dawn Field Theory
 
 **exp_30 | 2026-03-27 | Peter Groom**
-**Status:** Active — Phase 1 structural validation
+**Status:** Active — Phase 3 complete (54/54 checks)
 
 ---
 
@@ -58,9 +58,9 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 ### Phase 3 — Physical Geometry (complete)
 | Script | Description | Result |
 |--------|-------------|--------|
-| `exp_30g_symmetry_breaking.py` | Level 1→2 breaking mechanism via confluence | ✅ 5/5 — confluence at x=2, φ as 3-level equilibrium, divergence rate 2·ln2 |
-| `exp_30h_spacetime_signature.py` | Derive (+,+,+,−) from ADE via spin map | ✅ 5/5 — PSL(2,C)≅SO⁺(3,1) verified, det(H)=t²−x²−y²−z², 3 boosts + 3 rotations |
-| `exp_30i_planck_scale.py` | Connect ADE to Planck-scale derivations | ✅ 5/5 — 183=F₇²+F₇+1, F₁₈₃~10³⁸, Zeckendorf(137)=odd Fibonacci, L4 terminates |
+| `exp_30g_symmetry_breaking.py` | Level 1→2 breaking mechanism via confluence | ✅ 6/6 — confluence at x=2, φ equilibrium, divergence rate 2·ln2, Feigenbaum cascade |
+| `exp_30h_spacetime_signature.py` | Derive (+,+,+,−) from ADE via spin map | ✅ 6/6 — PSL(2,C)≅SO⁺(3,1), det(H)=t²−x²−y²−z², Pauli degeneracy breaking |
+| `exp_30i_planck_scale.py` | Connect ADE to Planck-scale derivations | ✅ 6/6 — φ^183 matches α_G⁻¹ to 3.8%, honest epistemic tiers, L4 terminates |
 
 ## Key Findings
 
@@ -77,7 +77,12 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 ### Phase 3
 7. **Confluence at x=2** — Self-application confluence (x+x=x·x and x·x=x^x) occurs at x=2 for all higher levels. φ is the unique 3-level equilibrium (φ²=φ+1 ↔ L2=L1+L0). Divergence rate increases with level: ratio = 2·ln2.
 8. **Spacetime signature (1,3) from spin map** — PSL(2,C)≅SO⁺(3,1) via Hermitian det: det(H) = t²−x²−y²−z². R→rotations (3 spatial), T+D→boosts (3 temporal mixing). Inversion I is spatial π-rotation, not parity — P-violation requires leaving SL(2,C).
-9. **F₁₈₃ Planck hierarchy** — 183 = F₇² + F₇ + 1 (geometric series in F₇=13). log₁₀(F₁₈₃) ≈ 37.9 matches gravitational hierarchy ~10³⁸. Zeckendorf(137) = F₁₁+F₉+F₇+F₂ — all odd Fibonacci indices.
+9. **φ^183 Planck hierarchy** — 183 = F₇² + F₇ + 1 (geometric series in F₇=13). φ^183 matches α_G⁻¹ to 3.8% (0.016 orders of magnitude) — 21× tighter than F₁₈₃. Zeckendorf(137) = F₁₁+F₉+F₇+F₂ — all odd Fibonacci indices.
+
+### Phase 3 — Push Deeper
+10. **Feigenbaum cascade through confluence** — Period-doubling bifurcation points converge with ratio δ=4.669 (0.10% of Feigenbaum constant). Cascade width 0.57 is bounded — consistent with ADE's finite-level termination.
+11. **Pauli degeneracy partially broken** — R and D share σ₃ axis (both diagonal matrices, [R,D]=0). T spans the {σ₁,σ₂} plane with T_im = i·T_re, confirming residual σ₁↔σ₂ degeneracy. The σ₃ sharing is forced: R IS recursive D.
+12. **Honest error accounting** — Results classified into epistemic tiers: Tier 1 (derived, machine-precision: spin map, tetration collapse), Tier 2 (predicted, testable: φ^183 at 3.8%), Tier 3 (suggestive, may be coincidence: ξ−1≈π/55, Zeckendorf pattern).
 
 ### Open Issues
 - **exp_30e (resolved)**: Multiplicative residuals are non-Gaussian — positive skew (1.47 after PNT warmup) with heavy right tails (12× excess at 3σ, 141× at 4σ). This is structurally forced: prime gaps bounded below (≥2) but unbounded above. The asymmetry IS the Level 2 boundary topology. Ratio-domain comparison confirms primes are 1.2× tighter than Cramér random model (CV 0.013 vs 0.015).
