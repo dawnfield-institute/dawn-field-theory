@@ -1,0 +1,34 @@
+{
+  "experiment": "exp_30k_coupling_hierarchy",
+  "date": "20260328_102105",
+  "checks": [
+    {
+      "name": "fibonacci_depth_ladder",
+      "passed": "True",
+      "details": "k=7 confirmed (\u0394=0.016), other close matches: 3. Ladder specific to gravity \u2014 not a universal coupling formula."
+    },
+    {
+      "name": "zeckendorf_couplings",
+      "passed": true,
+      "details": "137 = F_11+F_9+F_7+F_2: contains F\u2087=True, top 3 in AP(spacing 2)=True. Tier 3: structural but not unique \u2014 56/200 integers contain F\u2087."
+    },
+    {
+      "name": "gut_scale_f7",
+      "passed": "True",
+      "details": "log(M_GUT/M_Z) \u2248 12.5\u201314.3 vs F\u2087=13, best match 3.5%. Tier 3: GUT scale too uncertain for clean test."
+    },
+    {
+      "name": "xi_cascade_cost",
+      "passed": "False",
+      "details": "n_EM=10.22 (closest F_6=8, err=2.22), n_G-n_EM=172.8. Tier 2: \u03c6-tower maps couplings but depths not obviously Fibonacci."
+    },
+    {
+      "name": "hierarchy_ratio",
+      "passed": "True",
+      "details": "log(\u03b1_G\u207b\u00b9)/log(\u03b1_EM\u207b\u00b9) = 17.8903 \u2248 \u03c6\u2076 = 17.9443, error 0.30%. Tier 2: depth ratio is Fibonacci power."
+    }
+  ],
+  "passed": 4,
+  "failed": 1,
+  "total": 5
+}

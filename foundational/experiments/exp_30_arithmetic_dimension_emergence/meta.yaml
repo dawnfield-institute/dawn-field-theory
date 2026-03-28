@@ -19,7 +19,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Phase 1-3 experiment scripts (exp_30a through exp_30i)"
+    description: "Phase 1-4 experiment scripts (exp_30a through exp_30l)"
   - name: "results"
     description: "JSON outputs and plots from experiments"
   - name: "journals"
@@ -43,7 +43,15 @@ key_results:
   - "Confluence at x=2: all higher self-applications converge; φ is unique 3-level equilibrium"
   - "Spacetime signature (1,3) derived via spin map: PSL(2,C)≅SO+(3,1), det(H)=t²-x²-y²-z²"
   - "F_183 = 10^37.9 reproduces gravitational hierarchy; 183 = F_7^2 + F_7 + 1"
-  - "Zeckendorf(137) = F_11+F_9+F_7+F_2 — all odd Fibonacci indices"
+  - "Zeckendorf(137) = F_11+F_9+F_7+F_2 — top three odd, contains F_7 (ADE depth)"
+  - "Iwasawa decomposition SL(2,C)=KAN maps to ADE levels: K=SU(2)/L3, A=diag/L2, N=tri/L1"
+  - "U(1)⊂SU(2)⊂SL(2,C) nesting from ADE level hierarchy, couplings correctly ordered"
+  - "SU(3) from d=3 level structure — 3 ADE levels force 8-dim su(3) algebra"
+  - "sin²(θ_W) = 3/13 at 0.19% — d=3 and F_7=13 both ADE-derived"
+  - "log(α_G⁻¹)/log(α_EM⁻¹) ≈ φ⁶ at 0.30% — hierarchy ratio is Fibonacci power"
+  - "Born rule forced by ADE: spin map L2, Gleason d≥3, L1/L3 fail normalization/additivity"
+  - "Entanglement = Level 0 (inversion) boundary topology on composite systems"
+  - "FAIL: non-gravitational coupling depths NOT clean Fibonacci — ADE scope boundary"
 
 dependencies:
   internal:
@@ -75,3 +83,9 @@ tags:
   - pac-conservation
   - xi-constant
   - level-0-distinction
+  - gauge-structure
+  - iwasawa-decomposition
+  - born-rule
+  - gleason-theorem
+  - coupling-hierarchy
+  - weinberg-angle
