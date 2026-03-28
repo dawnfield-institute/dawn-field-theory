@@ -3,7 +3,7 @@
 ## A New Foundation for Dawn Field Theory
 
 **exp_30 | 2026-03-27 | Peter Groom**
-**Status:** Active — Phase 3 complete (54/54 checks)
+**Status:** Active — Phase 4 complete (70/71 checks)
 
 ---
 
@@ -62,6 +62,13 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 | `exp_30h_spacetime_signature.py` | Derive (+,+,+,−) from ADE via spin map | ✅ 6/6 — PSL(2,C)≅SO⁺(3,1), det(H)=t²−x²−y²−z², Pauli degeneracy breaking |
 | `exp_30i_planck_scale.py` | Connect ADE to Planck-scale derivations | ✅ 6/6 — φ^183 matches α_G⁻¹ to 3.8%, honest epistemic tiers, L4 terminates |
 
+### Phase 4 — Internal Structure (complete)
+| Script | Description | Result |
+|--------|-------------|--------|
+| `exp_30j_gauge_structure.py` | Derive SM gauge groups from ADE subgroup lattice | ✅ 6/6 — Iwasawa KAN=ADE levels, U(1)⊂SU(2)⊂SL(2,C), SU(3) from d=3, sin²θ_W=3/13 |
+| `exp_30k_coupling_hierarchy.py` | Coupling constants from Fibonacci recursion depth | ✅ 4/5 — φ^183 confirmed, log(α_G⁻¹)/log(α_EM⁻¹)≈φ⁶ at 0.30%, **ξ-cascade depths not Fibonacci** |
+| `exp_30l_born_rule.py` | Derive Born rule from ADE confluence measure | ✅ 6/6 — spin map degree-2, Gleason+d=3→Born, L1/L3 no-go, entanglement from L0 |
+
 ## Key Findings
 
 ### Phase 1
@@ -77,12 +84,24 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 ### Phase 3
 7. **Confluence at x=2** — Self-application confluence (x+x=x·x and x·x=x^x) occurs at x=2 for all higher levels. φ is the unique 3-level equilibrium (φ²=φ+1 ↔ L2=L1+L0). Divergence rate increases with level: ratio = 2·ln2.
 8. **Spacetime signature (1,3) from spin map** — PSL(2,C)≅SO⁺(3,1) via Hermitian det: det(H) = t²−x²−y²−z². R→rotations (3 spatial), T+D→boosts (3 temporal mixing). Inversion I is spatial π-rotation, not parity — P-violation requires leaving SL(2,C).
-9. **φ^183 Planck hierarchy** — 183 = F₇² + F₇ + 1 (geometric series in F₇=13). φ^183 matches α_G⁻¹ to 3.8% (0.016 orders of magnitude) — 21× tighter than F₁₈₃. Zeckendorf(137) = F₁₁+F₉+F₇+F₂ — all odd Fibonacci indices.
+9. **φ^183 Planck hierarchy** — 183 = F₇² + F₇ + 1 (geometric series in F₇=13). φ^183 matches α_G⁻¹ to 3.8% (0.016 orders of magnitude) — 21× tighter than F₁₈₃. Zeckendorf(137) = F₁₁+F₉+F₇+F₂ — top three indices odd, spacing 2 (arithmetic progression).
 
 ### Phase 3 — Push Deeper
 10. **Feigenbaum cascade through confluence** — Period-doubling bifurcation points converge with ratio δ=4.669 (0.10% of Feigenbaum constant). Cascade width 0.57 is bounded — consistent with ADE's finite-level termination.
 11. **Pauli degeneracy partially broken** — R and D share σ₃ axis (both diagonal matrices, [R,D]=0). T spans the {σ₁,σ₂} plane with T_im = i·T_re, confirming residual σ₁↔σ₂ degeneracy. The σ₃ sharing is forced: R IS recursive D.
 12. **Honest error accounting** — Results classified into epistemic tiers: Tier 1 (derived, machine-precision: spin map, tetration collapse), Tier 2 (predicted, testable: φ^183 at 3.8%), Tier 3 (suggestive, may be coincidence: ξ−1≈π/55, Zeckendorf pattern).
+
+### Phase 4
+13. **Iwasawa decomposition = ADE levels** — SL(2,C) = KAN where K=SU(2) (Level 3), A=dilations (Level 2), N=translations (Level 1). Unique factorization verified for 200 random matrices.
+14. **U(1) ⊂ SU(2) ⊂ SL(2,C) from ADE nesting** — Level 3 alone → U(1) (EM), Level 3 closure → SU(2) (weak), all levels → SL(2,C) (Lorentz). Coupling strengths ordered: α_EM < α_W < α_S.
+15. **SU(3) from d=3 level structure** — 3 ADE levels force a 3-state system whose symmetry group is SU(3). The gauge principle is NOT derived — ADE provides the representation space only (Tier 2).
+16. **sin²(θ_W) = 3/13 at 0.19%** — 3 = spatial dimensions (tetration termination), 13 = F₇ (ADE depth). Reproduces DFT M5 prediction; ADE provides the origin of both numbers (Tier 2/3).
+17. **log(α_G⁻¹)/log(α_EM⁻¹) ≈ φ⁶ at 0.30%** — The ratio of coupling log-scales is a Fibonacci power. Implies n_G/n_EM ≈ φ⁶, so n_EM ≈ 183/φ⁶ ≈ 10.2 (Tier 2).
+18. **Born rule from ADE** — (a) Spin map is degree 2 (Level 2 operation), (b) Gleason's theorem requires d≥3 which ADE provides, (c) L1 and L3 probability measures fail (normalization and additivity), (d) Only L2 (Born rule) survives. ADE → Born rule via Gleason + tetration termination.
+19. **Entanglement from Level 0 topology** — Non-separability of entangled states maps to Level 0 (inversion) boundary topology. Bell state is SWAP eigenstate, CHSH = 2√2 (Tier 2).
+
+### Failed Check (informative)
+- **exp_30k Test 4**: ξ-cascade recursion depths for non-gravitational couplings are NOT clean Fibonacci numbers (n_EM ≈ 10.22, closest Fibonacci F_6 = 8, error 2.22). The φ-tower gives continuous depth mapping, but only gravity (d=183) has clean Fibonacci depth structure. This constrains ADE's scope: the arithmetic hierarchy controls the Planck-to-EM ratio but not individual non-gravitational coupling depths.
 
 ### Open Issues
 - **exp_30e (resolved)**: Multiplicative residuals are non-Gaussian — positive skew (1.47 after PNT warmup) with heavy right tails (12× excess at 3σ, 141× at 4σ). This is structurally forced: prime gaps bounded below (≥2) but unbounded above. The asymmetry IS the Level 2 boundary topology. Ratio-domain comparison confirms primes are 1.2× tighter than Cramér random model (CV 0.013 vs 0.015).

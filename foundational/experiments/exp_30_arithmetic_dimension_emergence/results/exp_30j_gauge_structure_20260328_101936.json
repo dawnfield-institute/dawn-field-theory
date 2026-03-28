@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_30j_gauge_structure",
+  "date": "20260328_101936",
+  "checks": [
+    {
+      "name": "iwasawa_ade_match",
+      "passed": "True",
+      "details": "200 matrices decomposed, max err=1.49e-15, K=SU(2)/L3, A=diag/L2, N=tri/L1"
+    },
+    {
+      "name": "u1_from_level3",
+      "passed": "True",
+      "details": "U(1) from R(\u03b8): unitary=True, closure err=4.7e-16, gen err=1.3e-07"
+    },
+    {
+      "name": "su2_maximal_compact",
+      "passed": "True",
+      "details": "SU(2)\u2282SL(2,C) verified: rank=3, comm err=0.0e+00, Cartan uniqueness"
+    },
+    {
+      "name": "su3_from_ade_levels",
+      "passed": "True",
+      "details": "3 ADE levels \u2192 8-dim algebra (rank=8), spans su(3): True. Tier 2: d=3 forces 3-state rep, SU(3) is its symmetry. Gauge principle not derived."
+    },
+    {
+      "name": "subgroup_nesting",
+      "passed": true,
+      "details": "U(1)\u2282SU(2)\u2282SL(2,C) verified, dims 1<3<6, couplings ordered \u03b1_EM<\u03b1_W<\u03b1_S"
+    },
+    {
+      "name": "weinberg_angle",
+      "passed": true,
+      "details": "sin\u00b2(\u03b8_W) = 3/13 = 0.23077 vs exp 0.23122, error 0.19%. Tier 2/3: ingredients derived (d=3, F\u2087=13), ratio needs proof"
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "total": 6
+}

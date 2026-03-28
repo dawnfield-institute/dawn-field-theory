@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_30l_born_rule",
+  "date": "20260328_102139",
+  "checks": [
+    {
+      "name": "spin_map_bilinear",
+      "passed": "True",
+      "details": "Hermitian err=7.1e-15, det err=2.5e-14, homo err=1.8e-14, deg-2 err=7.3e-15. Tier 1: algebraic."
+    },
+    {
+      "name": "l3_to_l2_projection",
+      "passed": "True",
+      "details": "Phase invariant (err=3.3e-16), normalized, Haar\u2192uniform (KS=0.0126). Tier 1: measurement = L3\u2192L2 projection."
+    },
+    {
+      "name": "confluence_l2_norm",
+      "passed": "True",
+      "details": "Confluence at x=2 (L1=L2=L3=4), unitary preserves L2 (err=8.9e-16). Tier 2: L2 norm = Born rule at confluence."
+    },
+    {
+      "name": "gleason_from_ade",
+      "passed": "True",
+      "details": "d=3\u22653 \u2192 Gleason applies, Born rule unique. Sum=1.0000000000, additivity err=0.0e+00. Tier 1/2: theorem + ADE input."
+    },
+    {
+      "name": "nogo_l1_l3",
+      "passed": "True",
+      "details": "L1 fails normalization (sum=1.370\u22601), L3 fails additivity (29%), L2 works (sum=1.000000). Tier 1: proof by elimination."
+    },
+    {
+      "name": "entanglement_from_inversion",
+      "passed": "True",
+      "details": "Schmidt rank=2, CHSH=2.828>2, entropy=1.000=1, SWAP eigenstate. Tier 2: L0 boundary topology."
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "total": 6
+}
