@@ -1,0 +1,155 @@
+{
+  "full_generation": {
+    "total": 200,
+    "decomposed": 200,
+    "max_error": 8.760262179652954e-15,
+    "cases": {
+      "affine": 0,
+      "full_mobius": 200
+    },
+    "success_rate": 1.0
+  },
+  "generator_independence": {
+    "I": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": null
+    },
+    "T": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": true
+    },
+    "D": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": null
+    },
+    "R": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": null
+    },
+    "I+T": {
+      "max_abs_c": 12.054067178336027,
+      "mean_abs_c": 1.6790814159302154,
+      "has_nonzero_c": true,
+      "is_proper_subgroup": null
+    },
+    "I+D": {
+      "max_abs_c": 3.7922630904444787,
+      "mean_abs_c": 0.5135264922749895,
+      "has_nonzero_c": true,
+      "is_proper_subgroup": null
+    },
+    "I+R": {
+      "max_abs_c": 1.0000000000000002,
+      "mean_abs_c": 0.5,
+      "has_nonzero_c": true,
+      "is_proper_subgroup": null
+    },
+    "T+D": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": true
+    },
+    "T+R": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": true
+    },
+    "D+R": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": null
+    },
+    "I+T+D": {
+      "max_abs_c": 9.746021491514554,
+      "mean_abs_c": 1.1968907972827136,
+      "has_nonzero_c": true,
+      "is_proper_subgroup": null
+    },
+    "I+T+R": {
+      "max_abs_c": 8.292977198835091,
+      "mean_abs_c": 1.0594651753654123,
+      "has_nonzero_c": true,
+      "is_proper_subgroup": null
+    },
+    "I+D+R": {
+      "max_abs_c": 2.421376226396912,
+      "mean_abs_c": 0.5392435381763461,
+      "has_nonzero_c": true,
+      "is_proper_subgroup": null
+    },
+    "T+D+R": {
+      "max_abs_c": 0.0,
+      "mean_abs_c": 0.0,
+      "has_nonzero_c": false,
+      "is_proper_subgroup": true
+    },
+    "critical_test": {
+      "TDR_is_affine_only": true,
+      "inversion_necessary": true
+    }
+  },
+  "special_conformal": {
+    "total": 100,
+    "verified": 100,
+    "max_error": 0.0,
+    "success_rate": 1.0
+  },
+  "commutation_relations": {
+    "[I,T]": {
+      "commutator_distance_from_identity": 1.7320508075688772,
+      "commutes": false
+    },
+    "[I,R]": {
+      "commutator_distance_from_identity": 1.414213562373095,
+      "commutes": false
+    },
+    "[D,I]": {
+      "commutator_distance_from_identity": 1.118033988749895,
+      "commutes": false
+    },
+    "[D,T]": {
+      "commutator_distance_from_identity": 1.0,
+      "commutes": false
+    },
+    "[D,R]": {
+      "commutator_distance_from_identity": 2.254873622441467e-16,
+      "commutes": true
+    },
+    "[R,T]": {
+      "commutator_distance_from_identity": 1.0,
+      "commutes": false
+    }
+  },
+  "word_length": {
+    "mean_word_length": 4.0,
+    "max_word_length": 4,
+    "affine_fraction": 0.0,
+    "full_mobius_fraction": 1.0,
+    "note": "Analytic decomposition: affine=2 generators, full M\u00f6bius=4 generators"
+  },
+  "inversion_geometry": {
+    "interior_maps_to_exterior": true,
+    "unit_circle_is_fixed_set": true,
+    "is_involution": true,
+    "preserves_cross_ratio": true,
+    "det_is_minus_one": true,
+    "reverses_orientation": true
+  },
+  "summary": {
+    "checks_passed": 7,
+    "checks_total": 7,
+    "all_passed": true,
+    "conclusion": "Four ADE generators {I, T, D, R} generate the full M\u00f6bius group PSL(2,C). Inversion (Level 0 / distinction) is NECESSARY \u2014 without it, only the affine subgroup is reachable. Special conformal transformations decompose as inversion-bracketed translations (I\u2218T\u2218I), supporting the interpretation of Level 0 as 'boundary operations' that bracket lower-level arithmetic."
+  }
+}
