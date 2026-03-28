@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_30m_fermion_generations",
+  "date": "20260328_110956",
+  "checks": [
+    {
+      "name": "f4_universality",
+      "passed": true,
+      "details": "F_4=3 in all 5: mu/e 0.0005%, tau/e 0.035%, p/e 0.0083%, Q 0.0009%, sin2tW 0.19%. Coincidence 0.00013. Tier 1."
+    },
+    {
+      "name": "koide_from_ade",
+      "passed": "True",
+      "details": "Q = 0.666661 vs 2/3 (0.00092%), Koide-Foot recovers masses (max err 0.003%). Tier 1/2."
+    },
+    {
+      "name": "generation_mixing",
+      "passed": "True",
+      "details": "Cabibbo arctan(3/13) = 12.995 deg (err 0.045), hierarchy confirmed, unitarity err 2.2e-16. theta_23 clean: False, theta_13 clean: True. Tier 1 (Cabibbo), Tier 2/3 (other angles)."
+    },
+    {
+      "name": "multiplet_structure",
+      "passed": true,
+      "details": "SU(2) algebra verified in 6-dim space (err 0.0e+00), block-diagonal, 3 doublets. Tier 1 (algebra), Tier 2 (ADE motivation)."
+    },
+    {
+      "name": "anomaly_cancellation",
+      "passed": true,
+      "details": "Per-gen anomalies cancel (all <1e-12). HONEST: works for any N. Z-width N_nu = 2.984+/-0.008 (2.0sigma from 3). Tier 1 (algebra + experiment), Tier 2 (ADE interpretation)."
+    },
+    {
+      "name": "no_4th_generation",
+      "passed": true,
+      "details": "Tetration: 0/3 Lie props, exp diverges for base>1.445. Higgs mu=1.00 excludes 4th gen at 114sigma. 2^d+1=d*F_{d+1} unique at d=3. Tier 1 (experimental), Tier 2 (ADE link)."
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "total": 6
+}
