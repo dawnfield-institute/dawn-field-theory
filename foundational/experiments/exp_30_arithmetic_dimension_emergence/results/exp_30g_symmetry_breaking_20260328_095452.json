@@ -1,6 +1,6 @@
 {
   "experiment": "exp_30g_symmetry_breaking",
-  "date": "20260328_094020",
+  "date": "20260328_095452",
   "checks": [
     {
       "name": "self_application_confluence",
@@ -26,9 +26,14 @@
       "name": "phi_cascade",
       "passed": "True",
       "details": "E(x) min at 1.6180 (\u03c6=1.6180), CF match=True, rate match=True"
+    },
+    {
+      "name": "feigenbaum_confluence",
+      "passed": true,
+      "details": "Width=0.5699, \u03b4 convergence: last ratio=4.665 (\u03b4=4.669), cascade bounded"
     }
   ],
-  "passed": 5,
+  "passed": 6,
   "failed": 0,
-  "total": 5
+  "total": 6
 }

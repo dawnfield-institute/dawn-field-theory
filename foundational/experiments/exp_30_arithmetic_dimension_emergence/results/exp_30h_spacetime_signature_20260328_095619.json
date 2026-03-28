@@ -1,6 +1,6 @@
 {
   "experiment": "exp_30h_spacetime_signature",
-  "date": "20260328_094217",
+  "date": "20260328_095619",
   "checks": [
     {
       "name": "spin_map_metric_preservation",
@@ -26,9 +26,14 @@
       "name": "time_from_level_mixing",
       "passed": "True",
       "details": "boosts from T,D: rank=3, I=discrete_spatial:True, D=z-boost:True"
+    },
+    {
+      "name": "pauli_degeneracy_breaking",
+      "passed": "True",
+      "details": "R,D share \u03c3\u2083: True; T spans {\u03c3\u2081,\u03c3\u2082}: True; T 2D: True; [R,D]=0.0e+00"
     }
   ],
-  "passed": 5,
+  "passed": 6,
   "failed": 0,
-  "total": 5
+  "total": 6
 }

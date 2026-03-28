@@ -1,6 +1,6 @@
 {
   "experiment": "exp_30i_planck_scale",
-  "date": "20260328_094022",
+  "date": "20260328_095454",
   "checks": [
     {
       "name": "f183_decomposition",
@@ -10,7 +10,7 @@
     {
       "name": "hierarchy_ratio",
       "passed": "True",
-      "details": "log10(F_183)=37.90, observed ~38.2, within 0.3 orders"
+      "details": "\u03c6^183: log10=38.2447, \u03b1_G\u207b\u00b9: log10=38.2287, err=0.0160 orders (3.8%), 21\u00d7 tighter than F_183"
     },
     {
       "name": "xi_planck_connection",
@@ -26,9 +26,14 @@
       "name": "level4_termination",
       "passed": true,
       "details": "L4 always zero=True, L3 decreases=True, usable at phi=3"
+    },
+    {
+      "name": "error_accounting",
+      "passed": "True",
+      "details": "Tier 1: exact, Tier 2: hierarchy 3.8%, Tier 3: flagged as suggestive"
     }
   ],
-  "passed": 5,
+  "passed": 6,
   "failed": 0,
-  "total": 5
+  "total": 6
 }

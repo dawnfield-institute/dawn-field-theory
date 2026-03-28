@@ -457,6 +457,145 @@ def test_time_from_level_mixing():
 
 
 # ─────────────────────────────────────────────────────────
+# Test 6: Pauli degeneracy breaking by ADE generators
+# ─────────────────────────────────────────────────────────
+def test_pauli_degeneracy():
+    """
+    The Pauli matrices σ₁, σ₂, σ₃ are equivalent under SU(2) rotation.
+    But ADE generators break this degeneracy:
+
+    - R(θ) = diag(e^{iθ/2}, e^{-iθ/2}) → imaginary σ₃ generator (rotation)
+    - D(s) = diag(√s, 1/√s)            → real σ₃ generator (boost)
+    - T(a) = [[1,a],[0,1]]             → σ₁ + iσ₂ generators (off-diagonal)
+
+    So σ₃ is DISTINGUISHED (shared by R and D), while σ₁ and σ₂ remain
+    equivalent (T(real) vs T(imag)). This partial degeneracy breaking means:
+    - One spatial axis is special (the D-R axis: scaling-rotation plane)
+    - Two spatial axes are equivalent (the T plane: translation isotropy)
+    - This is NOT full isotropy breaking — it's consistent with axial symmetry
+
+    Physically: multiplication (D) and exponentiation (R) share an axis because
+    R IS recursive D. Addition (T) is the independent operation that creates
+    the transverse plane.
+    """
+    print("\n=== Test 6: Pauli Degeneracy Breaking by ADE ===")
+
+    # Extract Lie algebra generators from infinitesimal transformations
+    eps = 1e-5
+
+    # R generator: d/dθ R(θ)|_{θ=0}
+    gen_R = (R_mat(eps) - np.eye(2)) / eps
+    # D generator: d/dt D(e^t)|_{t=0}
+    gen_D = (D_mat(np.exp(eps)) - np.eye(2)) / eps
+    # T(real) generator
+    gen_T_re = (T_mat(eps) - np.eye(2)) / eps
+    # T(imag) generator
+    gen_T_im = (T_mat(1j * eps) - np.eye(2)) / eps
+
+    # Decompose each into Pauli basis: M = a₀σ₀ + a₁σ₁ + a₂σ₂ + a₃σ₃
+    def pauli_decompose(M):
+        coeffs = np.array([
+            0.5 * np.trace(M @ s) for s in SIGMA
+        ])
+        return coeffs
+
+    print(f"  Lie algebra generators in Pauli basis (σ₀, σ₁, σ₂, σ₃):")
+    gens = {
+        "R (Level 3)": gen_R,
+        "D (Level 2)": gen_D,
+        "T_re (Level 1)": gen_T_re,
+        "T_im (Level 1)": gen_T_im,
+    }
+
+    pauli_coeffs = {}
+    for name, g in gens.items():
+        c = pauli_decompose(g)
+        pauli_coeffs[name] = c
+        c_str = ", ".join(f"{v:+.4f}" for v in c)
+        print(f"    {name:20s}: [{c_str}]")
+
+    # Key check 1: R and D both have dominant σ₃ component
+    r_coeffs = pauli_coeffs["R (Level 3)"]
+    d_coeffs = pauli_coeffs["D (Level 2)"]
+    r_dominant = np.argmax(np.abs(r_coeffs[1:]))  # ignore σ₀, index in {0,1,2} = {σ₁,σ₂,σ₃}
+    d_dominant = np.argmax(np.abs(d_coeffs[1:]))
+    r_axis = ["σ₁", "σ₂", "σ₃"][r_dominant]
+    d_axis = ["σ₁", "σ₂", "σ₃"][d_dominant]
+    shared_axis = r_dominant == d_dominant
+    print(f"\n  R dominant Pauli: {r_axis} (index {r_dominant})")
+    print(f"  D dominant Pauli: {d_axis} (index {d_dominant})")
+    print(f"  R and D share axis: {shared_axis}")
+
+    # Key check 2: T_re and T_im span the {σ₁, σ₂} plane (transverse to σ₃)
+    # Both T generators have equal magnitude in σ₁ and σ₂, and zero in σ₃.
+    # This means addition lives in the σ₁-σ₂ plane — the two axes are degenerate.
+    t_re_coeffs = pauli_coeffs["T_re (Level 1)"]
+    t_im_coeffs = pauli_coeffs["T_im (Level 1)"]
+
+    # Check T has zero σ₃ component and non-zero σ₁, σ₂
+    t_re_sigma3 = abs(t_re_coeffs[3])  # σ₃ component
+    t_re_sigma12 = max(abs(t_re_coeffs[1]), abs(t_re_coeffs[2]))  # σ₁,σ₂
+    t_im_sigma3 = abs(t_im_coeffs[3])
+    t_im_sigma12 = max(abs(t_im_coeffs[1]), abs(t_im_coeffs[2]))
+
+    t_transverse = (t_re_sigma3 < 1e-10 and t_im_sigma3 < 1e-10 and
+                    t_re_sigma12 > 0.1 and t_im_sigma12 > 0.1)
+    # T_re and T_im are related by i-rotation (T_im = i·T_re over C, rank 1 over C).
+    # But as REAL generators of the real Lie algebra sl(2,C)_R, they're independent.
+    # Split into real/imaginary to check rank over R:
+    t_re_12 = np.array([t_re_coeffs[1], t_re_coeffs[2]])
+    t_im_12 = np.array([t_im_coeffs[1], t_im_coeffs[2]])
+    t_plane_real = np.array([
+        [np.real(t_re_12[0]), np.imag(t_re_12[0]), np.real(t_re_12[1]), np.imag(t_re_12[1])],
+        [np.real(t_im_12[0]), np.imag(t_im_12[0]), np.real(t_im_12[1]), np.imag(t_im_12[1])],
+    ])
+    t_rank = np.linalg.matrix_rank(t_plane_real, tol=0.01)
+    t_spans_plane = t_rank == 2
+    # Over C they're proportional (T_im = i·T_re), confirming σ₁-σ₂ degeneracy
+    proportional = np.allclose(t_im_12, 1j * t_re_12, atol=1e-8)
+    print(f"  T_im = i·T_re (complex proportional): {proportional}")
+    print(f"  → σ₁ and σ₂ are NOT independently fixed by ADE — they rotate into each other")
+    print(f"  → This IS the residual degeneracy: addition doesn't pick a preferred direction")
+
+    print(f"  T_re σ₃ component: {t_re_sigma3:.4f} (should be ~0)")
+    print(f"  T_im σ₃ component: {t_im_sigma3:.4f} (should be ~0)")
+    print(f"  T lives in {{σ₁,σ₂}} plane: {t_transverse}")
+    print(f"  T_re,T_im span 2D: rank={t_rank} ({t_spans_plane})")
+
+    # Key check 3: Commutation structure
+    # [R, D] should be small (both diagonal → commute)
+    comm_RD = gen_R @ gen_D - gen_D @ gen_R
+    comm_RD_norm = np.max(np.abs(comm_RD))
+    # [T, R] and [T, D] should be non-zero (don't commute)
+    comm_TR = gen_T_re @ gen_R - gen_R @ gen_T_re
+    comm_TR_norm = np.max(np.abs(comm_TR))
+    comm_TD = gen_T_re @ gen_D - gen_D @ gen_T_re
+    comm_TD_norm = np.max(np.abs(comm_TD))
+
+    print(f"\n  Commutation norms:")
+    print(f"    [R, D] = {comm_RD_norm:.2e} (should be ~0: both diagonal)")
+    print(f"    [T, R] = {comm_TR_norm:.4f} (non-zero: different axes)")
+    print(f"    [T, D] = {comm_TD_norm:.4f} (non-zero: different axes)")
+
+    rd_commute = comm_RD_norm < 1e-8
+    t_doesnt_commute = comm_TR_norm > 0.1 and comm_TD_norm > 0.1
+
+    # Physical interpretation
+    print(f"\n  Degeneracy structure:")
+    print(f"    σ₃ distinguished: R (exponentiation) and D (multiplication) share it")
+    print(f"    σ₁, σ₂ equivalent: T(real) and T(imag) are related by i-rotation")
+    print(f"    This is axial symmetry: one axis special, transverse plane isotropic")
+    print(f"    Physically: R is recursive D, so they MUST share an axis")
+
+    all_pass = shared_axis and t_transverse and t_spans_plane and rd_commute and t_doesnt_commute
+    record(
+        "pauli_degeneracy_breaking",
+        all_pass,
+        f"R,D share {r_axis}: {shared_axis}; T spans {{σ₁,σ₂}}: {t_transverse}; T 2D: {t_spans_plane}; [R,D]={comm_RD_norm:.1e}"
+    )
+
+
+# ─────────────────────────────────────────────────────────
 # Main
 # ─────────────────────────────────────────────────────────
 if __name__ == "__main__":
@@ -469,6 +608,7 @@ if __name__ == "__main__":
     test_hermitian_signature()
     test_spatial_subgroup()
     test_time_from_level_mixing()
+    test_pauli_degeneracy()
 
     print("\n" + "=" * 65)
     print(f"TOTAL: {results['passed']}/{results['total']} checks passed")
