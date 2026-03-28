@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_30o_ade_pac_bridge",
+  "date": "20260328_124613",
+  "checks": [
+    {
+      "name": "pac_from_closure",
+      "passed": "True",
+      "details": "L1 add (err 8.9e-16), L2 mult (err 8.9e-16), L3 exp (err 6.7e-16). PAC = closure conservation. Tier 1/2."
+    },
+    {
+      "name": "sec_threshold_from_ade",
+      "passed": "True",
+      "details": "phi^2=phi+1 (err 0.0e+00), A/P=phi, ln(phi)=0.4812. SEC threshold = 1/phi from ADE equilibrium. Tier 2."
+    },
+    {
+      "name": "xi_from_levels",
+      "passed": "True",
+      "details": "gamma=0.577216 (L1 divergence), ln(phi)=0.481212 (L2 convergence), xi=1.058427. PAC ratio A/(A+xi)=ln(phi) verified. Tier 2."
+    },
+    {
+      "name": "med_bounds_from_ade",
+      "passed": true,
+      "details": "MED depth=2=ADE transitions=2, MED nodes=3=ADE levels=3=F_4=3. Tier 2."
+    },
+    {
+      "name": "xi_topological",
+      "passed": true,
+      "details": "Xi_top = 1+pi/55 = 1.057120, xi_pac = 1.058427, differ by 0.124%. F_10=55=T_10. Tier 2/3."
+    },
+    {
+      "name": "derivation_chain",
+      "passed": true,
+      "details": "9 links, 18 predictions, 0 free params. ADE is the zero-parameter foundation of DFT. Tier 1/2."
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "total": 6
+}
