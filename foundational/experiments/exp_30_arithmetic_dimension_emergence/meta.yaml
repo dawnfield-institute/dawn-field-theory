@@ -19,7 +19,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Phase 1-5 experiment scripts (exp_30a through exp_30o)"
+    description: "Phase 1-5 experiment scripts (exp_30a through exp_30p)"
   - name: "results"
     description: "JSON outputs and plots from experiments"
   - name: "journals"
@@ -69,6 +69,12 @@ key_results:
   - "MED bounds (depth<=2, nodes<=3) from tetration termination — not empirical but arithmetic necessity"
   - "Xi_top = 1+pi/55 = 1.0571 vs xi_pac = 1.0584: two independent routes within 0.12%"
   - "Full ADE->DFT derivation chain: 9 links, 18 predictions, 0 free parameters"
+  - "RBF components = ADE levels: E=L1 (additive), I=L2 (multiplicative), M=L3 (exponential memory)"
+  - "Mobius band from PSL(2,C) inversion: (u,v)~(u+pi,1-v), non-orientable, pi_1=Z"
+  - "Antiperiodic /2 = Z_2 Reynolds operator (geometric, not normalization)"
+  - "Self-regulation from x=2 confluence: E=I -> B=0, negative feedback, monotonic"
+  - "Conservative dynamics forced by ADE closure: transfer-only is unique PAC-consistent coupling"
+  - "RBF formula structure derived from ADE (Tier 2); parameters lambda, alpha not derivable (Tier 3)"
 
 dependencies:
   internal:
@@ -121,3 +127,7 @@ tags:
   - euler-mascheroni
   - med-bounds
   - derivation-chain
+  - recursive-balance-field
+  - mobius-band
+  - antiperiodic-modes
+  - conservative-dynamics

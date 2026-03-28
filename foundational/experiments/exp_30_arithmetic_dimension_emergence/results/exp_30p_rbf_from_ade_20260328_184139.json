@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_30p_rbf_from_ade",
+  "date": "20260328_184139",
+  "checks": [
+    {
+      "name": "rbf_components_from_ade",
+      "passed": true,
+      "details": "E additive (L1), I log-additive (L2), M geometric (L3, err 7.8e-10). Undamped diverges (L4). Tier 2."
+    },
+    {
+      "name": "mobius_from_psl2c",
+      "passed": true,
+      "details": "T^2=id (err 8.9e-16), det(J)=-1, pi_1=Z. Mobius band from Level 0 inversion. Tier 1."
+    },
+    {
+      "name": "antiperiodic_eigenmodes",
+      "passed": true,
+      "details": "Exact half split (40/40), completeness 4.4e-16, Parseval 1.1e-16. /2 = Z_2 Reynolds operator. Tier 1."
+    },
+    {
+      "name": "self_regulation_from_confluence",
+      "passed": true,
+      "details": "Imbalance ratio 6.93e-05, monotonic=True, M bounded=True. Tier 2."
+    },
+    {
+      "name": "conservative_dynamics",
+      "passed": true,
+      "details": "E+I conserved to 0.0e+00. Source term breaks it (9.9e-04). Transfer-only forced by ADE closure. Tier 1/2."
+    },
+    {
+      "name": "full_rbf_reconstruction",
+      "passed": true,
+      "details": "Phi antiperiodic (err 6.7e-16), regularizer bounded, system converges (2.4e-04). Structure Tier 2, parameters Tier 3."
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "total": 6
+}

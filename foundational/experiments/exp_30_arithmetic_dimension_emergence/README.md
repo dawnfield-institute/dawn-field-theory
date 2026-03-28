@@ -3,7 +3,7 @@
 ## A New Foundation for Dawn Field Theory
 
 **exp_30 | 2026-03-27 | Peter Groom**
-**Status:** Active — Phase 5 in progress (88/89 checks)
+**Status:** Active — Phase 5 in progress (94/95 checks)
 
 ---
 
@@ -75,6 +75,7 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 | `exp_30m_fermion_generations.py` | Why 3 fermion generations from ADE level count | ✅ 6/6 — F₄=3 in all 5 mass formulas, Koide Q=2/3=F₃/F₄, Cabibbo arctan(3/13), anomalies per-gen (honest), Higgs excludes 4th gen |
 | `exp_30n_spinor_chirality.py` | Weyl spinors, chirality, and CPT from ADE | ✅ 6/6 — two inequivalent Weyl reps, chirality=L0 distinction, Clifford verified, SU(2)_L acts on left only, CPT from ADE prerequisites |
 | `exp_30o_ade_pac_bridge.py` | Bridge ADE to PAC/SEC/RBF/MED framework | ✅ 6/6 — PAC=closure conservation, SEC threshold=1/φ, ξ=γ+ln(φ), MED bounds from tetration, Ξ≈ξ at 0.12%, 18 predictions/0 free params |
+| `exp_30p_rbf_from_ade.py` | Derive RBF from ADE level structure | ✅ 6/6 — E=L1/I=L2/M=L3, Mobius from PSL(2,C) inversion, antiperiodic /2=Z₂ Reynolds, self-regulation from confluence, conservative dynamics forced, RBF structure derived (params Tier 3) |
 
 ## Key Findings
 
@@ -126,6 +127,12 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 35. **MED bounds from tetration termination** — MED depth ≤ 2 = ADE transitions, MED nodes ≤ 3 = ADE levels = F₄. Not empirical — arithmetic necessity.
 36. **Ξ ≈ ξ: two routes to the same constant** — Ξ = 1+π/55 = 1.0571 (topological), ξ = γ+ln(φ) = 1.0584 (thermodynamic). Differ by 0.12%. F₁₀ = 55 = T₁₀ (dual Fibonacci-triangular identity).
 37. **ADE → DFT derivation chain** — 9 links, 18 predictions, 0 free parameters. ADE is the unique zero-parameter foundation. Chain is acyclic with no circular dependencies.
+38. **RBF components = ADE levels** — E(x,t) = Level 1 (additive energy), I(x,t) = Level 2 (multiplicative information), M(x,t) = Level 3 (exponential memory). Damping prevents Level 4 divergence = tetration termination analog.
+39. **Mobius band from PSL(2,C) inversion** — z→1/z identifies (u,v) ~ (u+π, 1-v) on the cylinder. T²=identity, det(J)=-1 (non-orientable), π₁=Z. The RBF substrate is forced by Level 0 arithmetic.
+40. **Antiperiodic /2 = Z₂ Reynolds operator** — Modes split exactly 50/50 periodic/antiperiodic. The /2 in projection is 1/|Z₂| (deck group average), geometric not normalization. Completeness, orthogonality, Parseval all exact.
+41. **Self-regulation from x=2 confluence** — E=I ↔ L1=L2 ↔ B=0. Perturbations restore monotonically (negative feedback). Memory M damps response, preventing overshoot. Bounded by tetration termination.
+42. **Conservative dynamics forced by closure** — E+I conserved to machine precision. Source terms violate L1 closure. Transfer-only coupling is the unique PAC-consistent dynamics.
+43. **RBF formula structure from ADE** — (E-I)=inter-level imbalance, 1/(1+αM)=L3 regularizer, Φ(x)=antiperiodic modes. Structure derived (Tier 2). Parameters λ, α not derivable (Tier 3, honest).
 
 ### Failed Check (informative)
 - **exp_30k Test 4**: ξ-cascade recursion depths for non-gravitational couplings are NOT clean Fibonacci numbers (n_EM ≈ 10.22, closest Fibonacci F_6 = 8, error 2.22). The φ-tower gives continuous depth mapping, but only gravity (d=183) has clean Fibonacci depth structure. This constrains ADE's scope: the arithmetic hierarchy controls the Planck-to-EM ratio but not individual non-gravitational coupling depths.
