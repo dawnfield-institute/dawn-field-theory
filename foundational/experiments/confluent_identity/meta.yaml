@@ -1,0 +1,100 @@
+schema_version: "2.0"
+description: >
+  Confluent Identity -- Phases 1-21: tests identity emergence in PAC-conservative
+  fluid via discrete Hodge theory. 128x128 periodic lattice (+ 256x256 scale test),
+  30 experiments across 21 phases. Core results: coupling-contribution rho=0.42
+  (survives size deconfound), CI(f) = Pi_harm @ f is proper projection (5/5 properties),
+  H^1 propagates upward. Boundary geometry: gradient signal real (partial rho=-0.30),
+  boundary schemes beat interior by +0.09, but ceiling persists and mediation fails.
+  Falsified: Fiedler coherence, H^1-revision, PAC buffer, Hodge orthogonality,
+  Fiedler-entropy, boundary mediation of sensitivity. 256x256 inconclusive (needs
+  full steady-state diffusion). Size mediates most spectral correlations.
+semantic_scope: "research"
+proficiency_level: "research"
+version: "7.0.0"
+status: "active"
+date_created: "2026-03-27"
+date_updated: "2026-03-28"
+
+files:
+  - "[README.md]": "Hypothesis, experiment index, key results, formal operator summary, falsification table"
+
+child_directories:
+  - name: "scripts"
+    description: "30 experiment scripts (exp_01 through exp_30) + _shared.py utilities"
+  - name: "results"
+    description: "JSON and .npy outputs from experiments"
+  - name: "journals"
+    description: "Research session logs"
+
+estimated_context_weight: 0.9
+validation_type: "computational"
+
+key_results:
+  - "Claim 1 (identity = confluence): coupling-contribution Spearman rho=0.42 (uniform), rho=0.50 (eigenvector-weighted)"
+  - "Claim 3 (weight = coupling): 9-cell obstacle causes 1.7x more identity shift than 69-cell obstacle"
+  - "Claim 4 (global cascade): 88-97% of field change propagates beyond 10 cells"
+  - "Claim 5 (retroactive recontextualization): 71.5% mean revision, Kalman RTS 4/4 verified"
+  - "Formal operator CI(f) = Pi_harm @ f: 7/7 theorems + 5/5 operator properties verified"
+  - "D=3 uniqueness: 2^d+1 = d*F_{d+1} has exactly one solution (d=3), confirmed d=1..200"
+  - "Sheaf cohomology: H^1 propagates upward (10.34->9.12), perturbation creates identity crisis, smoothing resolves"
+  - "Size deconfound: partial rho(coupling, natural | size)=0.42 (p=4.1e-4), permutation p=0.0007"
+  - "FALSIFIED: Fiedler coherence is size proxy (partial rho=+0.07 after deconfound, was -0.32 raw)"
+  - "FALSIFIED: H^1-revision link (rho=0.016 at n=96 sub-partitioned groups, zero signal)"
+  - "FALSIFIED: node removal > Gaussian (ratio 1.02x, sensitivity rankings independent across types)"
+  - "Coupling ceiling: gradient weighting best (partial rho=0.41), below 0.45 target"
+  - "Lambda_2 attenuation: monotonic in all 15 regions, projection stays pristine, 53% show susceptibility peaks"
+  - "Entropy-Fiedler partial-spectrum positive (partial rho=+0.29), but FULL-SPECTRUM collapses (partial rho=-0.02)"
+  - "FALSIFIED: PAC buffer (1/sqrt(N)) — bigger regions MORE sensitive, not less (positive slopes)"
+  - "PARTIALLY FALSIFIED: Hodge orthogonality — perturbation modes not orthogonal (cos~0.47), but topological share structure"
+  - "Revision driven by perturbation_l2 (rho=0.34) and boundary_coupling (rho=0.33), NOT H^1"
+  - "Size mediates most spectral correlations — Gini, entropy, eff_dim all collapse after size deconfound"
+  - "Boundary gradient is real signal: partial rho=-0.30 (p=0.023) after size deconfound, only metric that survives"
+  - "Boundary schemes beat interior by +0.09: boundary_fiedler partial rho=0.39 vs gradient 0.30, cross-level consistent"
+  - "FALSIFIED: boundary_area_ratio mediates sensitivity — size retains direct effect (partial rho=0.28)"
+  - "256x256 INCONCLUSIVE: 174 regions but abbreviated diffusion yields low-structure field, correlations don't replicate"
+
+dependencies:
+  internal:
+    - "../pac_dag_fluid/": "PAC conservation pattern (exp_03)"
+    - "../minimum_actualization_resolution/": "Spectral Laplacian pattern (exp_23)"
+    - "../hodge_conjecture/": "2D lattice Hodge patterns"
+  external:
+    - "numpy>=1.24"
+    - "scipy>=1.10"
+    - "matplotlib>=3.4"
+
+tags:
+  - confluent-identity
+  - identity-project
+  - hodge-decomposition
+  - graph-laplacian
+  - spectral-analysis
+  - pac-conservation
+  - sec-dynamics
+  - watershed
+  - coupling-weight
+  - formal-operator
+  - d3-uniqueness
+  - projection-operator
+  - sheaf-cohomology
+  - kalman-smoother
+  - eigenvalue-decay
+  - partial-correlation
+  - size-deconfound
+  - multilevel-sheaf
+  - fiedler-coherence
+  - spectral-revision
+  - structured-perturbation
+  - node-removal
+  - phase-transition
+  - coupling-ceiling
+  - falsification
+  - pac-buffer
+  - mode-decomposition
+  - revision-driver
+  - confluence-complexity
+  - boundary-geometry
+  - boundary-coupling
+  - sensitivity-mediation
+  - scale-validation
