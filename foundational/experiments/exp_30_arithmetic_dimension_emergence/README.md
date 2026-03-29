@@ -3,7 +3,7 @@
 ## A New Foundation for Dawn Field Theory
 
 **exp_30 | 2026-03-27 | Peter Groom**
-**Status:** Active — Phase 5 in progress (94/95 checks)
+**Status:** Active — Phase 5 in progress (100/101 checks)
 
 ---
 
@@ -76,6 +76,7 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 | `exp_30n_spinor_chirality.py` | Weyl spinors, chirality, and CPT from ADE | ✅ 6/6 — two inequivalent Weyl reps, chirality=L0 distinction, Clifford verified, SU(2)_L acts on left only, CPT from ADE prerequisites |
 | `exp_30o_ade_pac_bridge.py` | Bridge ADE to PAC/SEC/RBF/MED framework | ✅ 6/6 — PAC=closure conservation, SEC threshold=1/φ, ξ=γ+ln(φ), MED bounds from tetration, Ξ≈ξ at 0.12%, 18 predictions/0 free params |
 | `exp_30p_rbf_from_ade.py` | Derive RBF from ADE level structure | ✅ 6/6 — E=L1/I=L2/M=L3, Mobius from PSL(2,C) inversion, antiperiodic /2=Z₂ Reynolds, self-regulation from confluence, conservative dynamics forced, RBF structure derived (params Tier 3) |
+| `exp_30q_primes_l2_closure.py` | Primes as L2 closure witnesses | ✅ 6/6 — PNT from L2 density (8.4% vs L1 99.7%), concentration 7x→176x monotonic, golden self-consistency (frac below 1/φ = 1/φ at 0.11%), Markov decay -1/π² best fit, L1/L3 fail (only L2 picks primes), Bertrand as L2 completeness |
 
 ## Key Findings
 
@@ -133,6 +134,12 @@ invertibility, so the hierarchy terminates at 3 spatial dimensions.
 41. **Self-regulation from x=2 confluence** — E=I ↔ L1=L2 ↔ B=0. Perturbations restore monotonically (negative feedback). Memory M damps response, preventing overshoot. Bounded by tetration termination.
 42. **Conservative dynamics forced by closure** — E+I conserved to machine precision. Source terms violate L1 closure. Transfer-only coupling is the unique PAC-consistent dynamics.
 43. **RBF formula structure from ADE** — (E-I)=inter-level imbalance, 1/(1+αM)=L3 regularizer, Φ(x)=antiperiodic modes. Structure derived (Tier 2). Parameters λ, α not derivable (Tier 3, honest).
+44. **PNT from L2 density** — L2 (x/ln x) has 8.4% error at large x; L1 (linear) has 99.7%, L3 (log-log) has 364%. Only L2 gets the shape right.
+45. **Concentration scaling monotonic** — CV_add/CV_mult ratio: 7x→20x→59x→176x from N=10³ to 10⁶. Forced by PNT in L2 natural coordinates.
+46. **Golden self-consistency** — Fraction of primes with SEC stress below 1/φ = 0.6187, which IS 1/φ (0.6180) to 0.11%. The golden partition partitions at itself.
+47. **Markov decay best fit -1/π²** — Prime gap eigenvalue decay monotonic across 4 scales. -1/π² best among 5 fundamental constant candidates (γ/π, 1/π, 1/e, 1/φ²).
+48. **Only L2 picks primes** — L1: 190M partitions of 100 (non-unique). L3: 82% composite "atoms." L2: exact prime match (FTA).
+49. **Bertrand as L2 completeness** — Holds to 10⁵, growth matches PNT within 24%, multiplicative coverage >10% at all scales.
 
 ### Failed Check (informative)
 - **exp_30k Test 4**: ξ-cascade recursion depths for non-gravitational couplings are NOT clean Fibonacci numbers (n_EM ≈ 10.22, closest Fibonacci F_6 = 8, error 2.22). The φ-tower gives continuous depth mapping, but only gravity (d=183) has clean Fibonacci depth structure. This constrains ADE's scope: the arithmetic hierarchy controls the Planck-to-EM ratio but not individual non-gravitational coupling depths.

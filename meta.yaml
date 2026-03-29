@@ -36,7 +36,6 @@ child_directories:
   - citations
   - devkit
   - foundational
-  - internal
   - mcp
   - models
   - resources

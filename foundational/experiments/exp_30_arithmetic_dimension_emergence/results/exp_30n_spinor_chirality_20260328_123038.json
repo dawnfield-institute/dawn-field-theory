@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_30n_spinor_chirality",
+  "date": "20260328_123038",
+  "checks": [
+    {
+      "name": "weyl_representations",
+      "passed": "True",
+      "details": "Both reps valid (L err 0.0e+00, R err 4.5e-14), inequivalent (min SV 0.448). Tier 1."
+    },
+    {
+      "name": "chirality_from_inversion",
+      "passed": "False",
+      "details": "gamma^0 maps P_L<->P_R, J-conjugation maps reps (err 7.6e+00). Chirality = Level 0 distinction. Tier 1/2."
+    },
+    {
+      "name": "dirac_clifford",
+      "passed": "True",
+      "details": "Clifford verified (err 0.0e+00), gamma^5 correct, projections idempotent/orthogonal. Tier 1."
+    },
+    {
+      "name": "weak_chirality",
+      "passed": "True",
+      "details": "SU(2)_L in upper-left block only (comm err 0.0e+00), P_R singlet. Level 3 asymmetry = chirality. Tier 2."
+    },
+    {
+      "name": "helicity_chirality",
+      "passed": "True",
+      "details": "Helicity L=-1/2, R=+1/2. Boost-invariant for massless. Chirality Lorentz-invariant. Mass = Level 1 L-R coupling. Tier 1/2."
+    },
+    {
+      "name": "cpt_from_ade",
+      "passed": true,
+      "details": "C verified (err 0.0e+00), Theta^2 ~ I, Lorentz preserved (err 0.0e+00). ADE provides all CPT prerequisites. Tier 1 (algebra), Tier 2 (ADE mapping)."
+    }
+  ],
+  "passed": 5,
+  "failed": 1,
+  "total": 6
+}
