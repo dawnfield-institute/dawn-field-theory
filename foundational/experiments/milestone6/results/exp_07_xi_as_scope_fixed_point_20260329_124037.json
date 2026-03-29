@@ -1,0 +1,38 @@
+{
+  "experiment": "exp_07_xi_as_scope_fixed_point",
+  "milestone": 6,
+  "block": "C",
+  "xi_ca": 1.0571,
+  "xi_pac": 1.0584274899611363,
+  "transfer_matrix": {
+    "mean_xi_over_P": 0.40652779828781166,
+    "best_mapping": "(xi/P)/(1-xi/P) + gamma",
+    "best_value": 1.2622145529959776,
+    "best_error_pct": 19.40351461507688,
+    "n_boundaries": 10
+  },
+  "rule_110": {
+    "P": 146.435,
+    "A": 91.902,
+    "ratio": 1.593382080912276,
+    "error_pct": 50.731442712352305
+  },
+  "cascade": {
+    "xi_computed": 5.269258182177276,
+    "xi_analytical": 1.0584274899611363,
+    "error_pct": 397.83837175003396
+  },
+  "euler_gap": {
+    "gap": 0.0013274899611364077,
+    "target": 0.0013262911924324613,
+    "error_pct": 0.09038503088811391
+  },
+  "verification": {
+    "test1_transfer": "False",
+    "test2_rule110": "False",
+    "test3_cascade": "False",
+    "test4_euler_gap": "True",
+    "verified_count": "1"
+  },
+  "timestamp": "2026-03-29T12:40:37.588590"
+}
