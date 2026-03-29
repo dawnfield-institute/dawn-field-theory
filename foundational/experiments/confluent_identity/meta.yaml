@@ -1,8 +1,8 @@
 schema_version: "2.0"
 description: >
-  Confluent Identity -- Phases 1-27: tests identity emergence in PAC-conservative
+  Confluent Identity -- Phases 1-29: tests identity emergence in PAC-conservative
   fluid via discrete Hodge theory. 128x128 periodic lattice (+ 256x256 scale test),
-  36 experiments across 27 phases. Core results: coupling-contribution rho=0.42
+  38 experiments across 29 phases. Core results: coupling-contribution rho=0.42
   (survives size deconfound), CI(f) = Pi_harm @ f is proper projection (5/5 properties),
   H^1 propagates upward. Spectral bandwidth is strongest sensitivity predictor
   (partial rho=0.44). MI reveals nonlinear coupling (NMI exceeds rho^2 by 0.22)
@@ -12,17 +12,17 @@ description: >
   PAC buffer, Hodge orthogonality, Fiedler-entropy, boundary mediation, mid-mode ratio.
 semantic_scope: "research"
 proficiency_level: "research"
-version: "10.0.0"
+version: "12.0.0"
 status: "active"
 date_created: "2026-03-27"
-date_updated: "2026-03-28"
+date_updated: "2026-03-29"
 
 files:
   - "[README.md]": "Hypothesis, experiment index, key results, formal operator summary, falsification table"
 
 child_directories:
   - name: "scripts"
-    description: "36 experiment scripts (exp_01 through exp_36) + _shared.py utilities"
+    description: "38 experiment scripts (exp_01 through exp_38) + _shared.py utilities"
   - name: "results"
     description: "JSON and .npy outputs from experiments"
   - name: "journals"
@@ -64,6 +64,11 @@ key_results:
   - "FALSIFIED: Delta_self generalizes to all children (rho=0.09, p=0.50 at n=59 vs rho=-0.79 at n=8 dual-role)"
   - "Conservation IS within-scope: within-parent Delta reduces variance 16% mean; pooled only 3.7%"
   - "Ceiling update: pooling all 67 children gives partial_rho=0.5753, above parent-(2,1)-only 0.42"
+  - "Size confounding = 1/phi^4 universal: mean=0.1501 across 20 seeds, matches tetration penalty 1/phi^4=0.1459 (2.87%)"
+  - "FALSIFIED: partial_rho ~ gamma (Euler-Mascheroni) — seed-42 specific, CV=0.57 across 20 seeds"
+  - "Scoped mediation: coupling attenuates monotonically with level distance, mean per-hop ratio=0.730 ~ 1/phi"
+  - "CONFIRMED: 2-hop coupling NOT predictable from 1-hop products (72% error) — levels are recursive closures, not filters"
+  - "Size-normalized coupling INCREASES with distance — harmonic component concentrates through scope boundaries"
 
 dependencies:
   internal:
@@ -118,3 +123,8 @@ tags:
   - asymmetric-conservation
   - eigenstructure-ceiling
   - rank-compression
+  - phi-constants
+  - multiseed-validation
+  - scoped-mediation
+  - level-attenuation
+  - recursive-closure
