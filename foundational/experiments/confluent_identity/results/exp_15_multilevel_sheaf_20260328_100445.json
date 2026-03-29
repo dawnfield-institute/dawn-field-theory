@@ -1,0 +1,63 @@
+{
+  "experiment": "exp_15_multilevel_sheaf",
+  "timestamp": "2026-03-28T10:04:45.430185",
+  "purpose": "Multi-level sheaf cohomology \u2014 H1 propagation through hierarchy",
+  "n_levels": 5,
+  "n_perturbed_cells": 16384,
+  "n_level0_regions": 60,
+  "mean_h1_per_level": {
+    "L1->L0": 10.341298116798633,
+    "L2->L1": 9.117284482924681,
+    "L3->L2": null,
+    "L4->L3": null
+  },
+  "decay_checks": [
+    {
+      "from": "L1->L0",
+      "to": "L2->L1",
+      "from_val": 10.341298116798633,
+      "to_val": 9.117284482924681,
+      "decays": true
+    }
+  ],
+  "results_by_level": {
+    "L1->L0": {
+      "parent_level": 1,
+      "child_level": 0,
+      "n_groups": 5,
+      "mean_defect": 10.341298116798633,
+      "std_defect": 1.2882171493984813,
+      "min_defect": 8.707790595554519,
+      "max_defect": 12.565739470681788,
+      "n_global_sections": 5
+    },
+    "L2->L1": {
+      "parent_level": 2,
+      "child_level": 1,
+      "n_groups": 1,
+      "mean_defect": 9.117284482924681,
+      "std_defect": 0.0,
+      "min_defect": 9.117284482924681,
+      "max_defect": 9.117284482924681,
+      "n_global_sections": 1
+    },
+    "L3->L2": {
+      "parent_level": 3,
+      "child_level": 2,
+      "n_groups": 0,
+      "note": "insufficient data"
+    },
+    "L4->L3": {
+      "parent_level": 4,
+      "child_level": 3,
+      "n_groups": 0,
+      "note": "insufficient data"
+    }
+  },
+  "verification": {
+    "test1_first_level_largest": true,
+    "test2_monotonic_decay": true,
+    "test3_propagation_exists": true,
+    "n_verified": 3
+  }
+}

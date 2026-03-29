@@ -1,0 +1,28 @@
+{
+  "experiment": "exp_05_obstacle_insertion",
+  "timestamp": "2026-03-28T08:26:18.506586",
+  "baseline_identity": {
+    "fiedler": 0.002168922707140143,
+    "spectral_entropy": 2.1672426549522603,
+    "harmonic": 0.00610351562500042
+  },
+  "positions": {
+    "high_flow": [
+      45,
+      110
+    ],
+    "low_flow": [
+      66,
+      118
+    ],
+    "high_flow_gradient": 0.0006599620081582342,
+    "low_flow_gradient": 0.00011713897887489961
+  },
+  "test_cases": {
+    "small_high_flow": {
+      "position": [
+        45,
+        110
+      ],
+      "radius": 2,
+      "n_obstacle_cells": 

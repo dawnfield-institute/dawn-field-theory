@@ -1,0 +1,63 @@
+{
+  "experiment": "exp_01_lattice_fluid_baseline",
+  "timestamp": "2026-03-27T21:27:03.646601",
+  "parameters": {
+    "N": 128,
+    "total_value": 100.0,
+    "dt": 0.005,
+    "viscosity": 0.05,
+    "sec_threshold": 0.1,
+    "gravity": 0.005,
+    "n_large_stones": 12,
+    "n_small_stones": 40,
+    "stone_cells": 1056,
+    "steady_tol": 1e-06,
+    "stable_count": 10,
+    "seed": 42
+  },
+  "conservation": {
+    "initial_total": 100.0,
+    "final_total": 100.00000000000688,
+    "max_error": 6.906475391588174e-12,
+    "final_error": 6.87805368215777e-12,
+    "machine_precision": true
+  },
+  "steady_state": {
+    "steps": 5000,
+    "reached": false,
+    "final_max_change": 0.00023904439012075818
+  },
+  "field_stats": {
+    "P": {
+      "mean": 0.0037073677683845414,
+      "std": 0.0013677074629407666,
+      "min": 0.00018937926383038312,
+      "max": 0.008143527816523855
+    },
+    "A": {
+      "mean": 0.002396147856615879,
+      "std": 0.004485878761151771,
+      "min": 0.0,
+      "max": 0.047569595406583697
+    },
+    "C": {
+      "mean": 0.00610351562500042,
+      "std": 0.004340129516668787,
+      "min": 0.0016614469323697058,
+      "max": 0.054870112953352757
+    },
+    "entropy": {
+      "mean": 0.41561492017618784,
+      "std": 0.19262154106355991
+    },
+    "gradient_mag": {
+      "mean": 0.000766524874980299,
+      "std": 0.001308179780321696,
+      "max": 0.019164542070948764
+    }
+  },
+  "constants": {
+    "phi": 1.618033988749895,
+    "xi": 1.0584274899611363
+  }
+}

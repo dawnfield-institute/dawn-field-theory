@@ -1,0 +1,31 @@
+{
+  "experiment": "exp_32_mutual_information_coupling",
+  "timestamp": "2026-03-28T18:36:00.228444",
+  "purpose": "Nonlinear coupling: MI and distance correlation vs Spearman ceiling",
+  "n_measurements": 67,
+  "n_parents": 10,
+  "spearman": {
+    "rho_raw": 0.49525101763907736,
+    "partial_rho": 0.42046452230824494
+  },
+  "mutual_information": {
+    "mi_binned": 0.5816294354557874,
+    "mi_knn": 0.4117929944315559,
+    "nmi": 0.467562111579101,
+    "mi_resid_binned": 0.6471531581537715,
+    "mi_resid_knn": 0.2661978060085213,
+    "mi_p_value": 0.0,
+    "mi_resid_p_value": 0.1248
+  },
+  "distance_correlation": {
+    "dcor_raw": 0.754734153684977,
+    "dcor_resid": 0.4168024220904237
+  },
+  "verification": {
+    "test1_mi_significant": true,
+    "test2_resid_mi_above_005": true,
+    "test3_nmi_exceeds_spearman": true,
+    "test4_dcor_exceeds_partial": false,
+    "n_verified": 3
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "experiment": "exp_35_frame_relative_identity",
+  "timestamp": "2026-03-28T19:24:16.991021",
+  "purpose": "Frame-relative identity: Delta buffer between parent and child views",
+  "n_dual_nodes": 8,
+  "delta_statistics": {
+    "spectral": {
+      "mean": 0.9378304988552051,
+      "std": 0.4179742101950965,
+      "min": 0.3129044848422151,
+      "max": 1.576608020785899
+    },
+    "fiedler": {
+      "mean": 0.004057146418121835,
+      "std": 0.004979122702141844,
+      "min": 1.0536421427455658e-05,
+      "max": 0.01625286761244619
+    },
+    "entropy": {
+      "mean": 0.07124495258797797,
+      "std": 0.04070628850425188,
+      "min": 0.0010471738590296376,
+      "max": 0.11391723587232994
+    },
+    "weight": {
+      "mean": 0.07283861725596537,
+      "std": 0.0933722503710991,
+      "min": 0.0018740671138957159,
+      "max": 0.2663718959062868
+    }
+  },
+  "coupling_analysis": {
+    "baseline_rho": 0.6190476190476191,
+    "baseline_partial_rho": 0.4285714285714286,
+    "r2_base": 0.3832199546485262,
+    "r2_augmented": 0.42080046742623434,
+    "r2_gain": 0.03758051277770813,
+    "frame_augmented_rho": 0.3113828280974473,
+    "delta_correlations": {
+      "spectral": {
+        "rho": 0.04761904761904763,
+        "p": 0.9108491685195836
+      },
+      "fiedler": {
+        "rho": -0.30952380952380953,
+        "p": 0.4556448907375822
+      },
+      "entropy": {
+        "rho": -0.7857142857142858,
+        "p": 0.020815127253525276
+      },
+      "weight": {
+        "rho": -0.09523809523809526,
+        "p": 0.8225054302036114
+      }
+    }
+  },
+  "depth_scaling": {
+    "rho_delta_depth": 0.09352195295828246
+  },
+  "verification": {
+    "test1_bounded": false,
+    "test2_r2_gain": false,
+    "test3_depth_scaling": false,
+    "test4_frame_augmented": false,
+    "n_verified": 0
+  },
+  "dual_data": [
+    {
+      "level": 3,
+      "rid": 1,
+      "n_cells": 15939,
+      "n_children": 5,
+      "parent_level": 4,
+      "parent_id": 1,
+      "fiedler_down": 0.0020115801055410284,
+      "entropy_down": 2.1722961798854046,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.37979638918996034,
+      "natural_up": 0.9665424165628456,
+      "size_frac": 0.9912929908576404,
+      "delta_spectral": 0.8792562570220109,
+      "delta_fiedler": 1.0536421427455658e-05,
+      "delta_entropy": 0.0010471738590296376,
+      "delta_weight": 0.02475057429479488,
+      "parent_fiedler": 0.002022116526968484,
+      "parent_entropy": 2.171249006026375
+    },
+    {
+      "level": 1,
+      "rid": 6,
+      "n_cells": 697,
+      "n_children": 2,
+      "parent_level": 2,
+      "parent_id": 1,
+      "fiedler_down": 0.0025308899894016367,
+      "entropy_down": 2.0791093136242544,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.054127506203229384,
+      "natural_up": 0.012834129115779637,
+      "size_frac": 0.04564505566470203,
+      "delta_spectral": 1.077030950819724,
+      "delta_fiedler": 0.0010680014660778689,
+      "delta_entropy": 0.10794461653211496,
+      "delta_weight": 0.0328109265489224,
+      "parent_fiedler": 0.0014628885233237679,
+      "parent_entropy": 2.1870539301563694
+    },
+    {
+      "level": 1,
+      "rid": 18,
+      "n_cells": 314,
+      "n_children": 2,
+      "parent_level": 2,
+      "parent_id": 1,
+      "fiedler_down": 0.005118059664095605,
+      "entropy_down": 2.0731366942840395,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.05984072188161112,
+      "natural_up": 0.02900481217832506,
+      "size_frac": 0.020563195808775376,
+      "delta_spectral": 0.6311703387430287,
+      "delta_fiedler": 0.0036551711407718374,
+      "delta_entropy": 0.11391723587232994,
+      "delta_weight": 0.008441616369549685,
+      "parent_fiedler": 0.0014628885233237679,
+      "parent_entropy": 2.1870539301563694
+    },
+    {
+      "level": 1,
+      "rid": 15,
+      "n_cells": 739,
+      "n_children": 3,
+      "parent_level": 2,
+      "parent_id": 1,
+      "fiedler_down": 0.0068252511541927055,
+      "entropy_down": 2.1243761975545663,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.06870774705490015,
+      "natural_up": 0.03908617951414227,
+      "size_frac": 0.04839554682383759,
+      "delta_spectral": 1.576608020785899,
+      "delta_fiedler": 0.005362362630868938,
+      "delta_entropy": 0.0626777326018031,
+      "delta_weight": 0.009309367309695324,
+      "parent_fiedler": 0.0014628885233237679,
+      "parent_entropy": 2.1870539301563694
+    },
+    {
+      "level": 1,
+      "rid": 21,
+      "n_cells": 354,
+      "n_children": 2,
+      "parent_level": 2,
+      "parent_id": 1,
+      "fiedler_down": 0.01771575613576996,
+      "entropy_down": 2.1200077462946196,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.05849574458436172,
+      "natural_up": 0.021308644084532573,
+      "size_frac": 0.02318271119842829,
+      "delta_spectral": 0.3129044848422151,
+      "delta_fiedler": 0.01625286761244619,
+      "delta_entropy": 0.06704618386174976,
+      "delta_weight": 0.0018740671138957159,
+      "parent_fiedler": 0.0014628885233237679,
+      "parent_entropy": 2.1870539301563694
+    },
+    {
+      "level": 2,
+      "rid": 1,
+      "n_cells": 15270,
+      "n_children": 20,
+      "parent_level": 3,
+      "parent_id": 1,
+      "fiedler_down": 0.0014628885233238641,
+      "entropy_down": 2.187053930156373,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.15630142657012414,
+      "natural_up": 0.7650026607276469,
+      "size_frac": 0.9580274797666102,
+      "delta_spectral": 1.235532995009854,
+      "delta_fiedler": 0.0005486915822167948,
+      "delta_entropy": 0.014757750271005676,
+      "delta_weight": 0.1930248190389633,
+      "parent_fiedler": 0.002011580105540659,
+      "parent_entropy": 2.1722961798853673
+    },
+    {
+      "level": 1,
+      "rid": 1,
+      "n_cells": 9812,
+      "n_children": 25,
+      "parent_level": 2,
+      "parent_id": 1,
+      "fiedler_down": 0.0005337720826110607,
+      "entropy_down": 2.0796898799374652,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.04130394925774532,
+      "natural_up": 0.3761952291755731,
+      "size_frac": 0.6425671250818599,
+      "delta_spectral": 1.3366123724913344,
+      "delta_fiedler": 0.0009291164407127071,
+      "delta_entropy": 0.10736405021890416,
+      "delta_weight": 0.2663718959062868,
+      "parent_fiedler": 0.0014628885233237679,
+      "parent_entropy": 2.1870539301563694
+    },
+    {
+      "level": 1,
+      "rid": 10,
+      "n_cells": 799,
+      "n_children": 3,
+      "parent_level": 2,
+      "parent_id": 1,
+      "fiedler_down": 0.0060933125737766495,
+      "entropy_down": 2.091849052669483,
+      "n_coeffs_down": 11,
+      "coupling_up": 0.06444730736580125,
+      "natural_up": 0.0984504913739319,
+      "size_frac": 0.05232481990831696,
+      "delta_spectral": 0.45352857112757383,
+      "delta_fiedler": 0.004630424050452882,
+      "delta_entropy": 0.09520487748688655,
+      "delta_weight": 0.04612567146561494,
+      "parent_fiedler": 0.0014628885233237679,
+      "parent_entropy": 2.1870539301563694
+    }
+  ]
+}

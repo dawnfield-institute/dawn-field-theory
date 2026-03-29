@@ -1,0 +1,684 @@
+{
+  "experiment": "exp_31_spectral_shape_sensitivity",
+  "timestamp": "2026-03-28T18:35:04.249766",
+  "purpose": "Spectral shape descriptors as sensitivity predictors",
+  "n_regions": 55,
+  "raw_correlations": {
+    "spectral_flatness": {
+      "rho": 0.333982683982684,
+      "p": 0.012702540368720672
+    },
+    "spectral_centroid": {
+      "rho": 0.18290043290043295,
+      "p": 0.18136090924387452
+    },
+    "spectral_bandwidth": {
+      "rho": 0.47842712842712853,
+      "p": 0.00022028528939638023
+    },
+    "mode_concentration": {
+      "rho": -0.30649350649350654,
+      "p": 0.0228529036043232
+    },
+    "mid_mode_ratio": {
+      "rho": 0.1431457431457432,
+      "p": 0.2971360777404329
+    }
+  },
+  "size_correlations": {
+    "spectral_flatness": 0.309926225270932,
+    "spectral_centroid": 0.1709987554166241,
+    "spectral_bandwidth": 0.38961741740496636,
+    "mode_concentration": -0.07251213046147985,
+    "mid_mode_ratio": 0.11739028483664447
+  },
+  "partial_correlations": {
+    "spectral_flatness": {
+      "rho": 0.26471861471861474,
+      "p": 0.05080647405139702
+    },
+    "spectral_centroid": {
+      "rho": 0.17582972582972586,
+      "p": 0.19911825097531977
+    },
+    "spectral_bandwidth": {
+      "rho": 0.44401154401154413,
+      "p": 0.0006845908550383531
+    },
+    "mode_concentration": {
+      "rho": -0.34848484848484856,
+      "p": 0.009124272892705655
+    },
+    "mid_mode_ratio": {
+      "rho": 0.14834054834054836,
+      "p": 0.27976479834260987
+    }
+  },
+  "multiple_regression": {
+    "predictors": [
+      "spectral_flatness",
+      "spectral_centroid",
+      "mid_mode_ratio"
+    ],
+    "r_squared": 0.07919840968274494,
+    "betas": {
+      "spectral_flatness": 0.296028499697904,
+      "spectral_centroid": -0.055485250419647664,
+      "mid_mode_ratio": 0.05393324582395978
+    }
+  },
+  "verification": {
+    "test1_descriptor_signal": true,
+    "test2_flatness_not_size": true,
+    "test3_mid_mode_ratio": false,
+    "test4_regression_r_squared": false,
+    "n_verified": 2
+  },
+  "per_region": [
+    {
+      "region_id": 1,
+      "n_cells": 250,
+      "sensitivity": 1.748477035739589,
+      "fiedler": 0.012401961333810486,
+      "spectral_flatness": 0.18631763225232661,
+      "spectral_centroid": 4.138994849848139,
+      "spectral_bandwidth": 3.0024695583852514,
+      "mode_concentration": 0.41133461162885376,
+      "mid_mode_ratio": 0.4908370742285551
+    },
+    {
+      "region_id": 2,
+      "n_cells": 182,
+      "sensitivity": 0.9431935979499858,
+      "fiedler": 0.04803952582886202,
+      "spectral_flatness": 0.12729810545769535,
+      "spectral_centroid": 3.8907888836599573,
+      "spectral_bandwidth": 1.5698034375055951,
+      "mode_concentration": 0.323948126422495,
+      "mid_mode_ratio": 0.7117697503403606
+    },
+    {
+      "region_id": 3,
+      "n_cells": 157,
+      "sensitivity": 0.3331835170168012,
+      "fiedler": 0.03077423486803316,
+      "spectral_flatness": 0.20253972780629337,
+      "spectral_centroid": 3.843967293214644,
+      "spectral_bandwidth": 2.0638825682483843,
+      "mode_concentration": 0.5155780877252316,
+      "mid_mode_ratio": 0.5501126643380576
+    },
+    {
+      "region_id": 4,
+      "n_cells": 166,
+      "sensitivity": 1.7631074620919036,
+      "fiedler": 0.024916010022049344,
+      "spectral_flatness": 0.19319233356845839,
+      "spectral_centroid": 3.762938688949758,
+      "spectral_bandwidth": 2.7121180356348553,
+      "mode_concentration": 0.3592380689037668,
+      "mid_mode_ratio": 0.019039161749566103
+    },
+    {
+      "region_id": 5,
+      "n_cells": 144,
+      "sensitivity": 1.6303461296360942,
+      "fiedler": 0.027696002215090835,
+      "spectral_flatness": 0.2880696833567163,
+      "spectral_centroid": 3.661693764568485,
+      "spectral_bandwidth": 2.4712041847103547,
+      "mode_concentration": 0.40730416446407025,
+      "mid_mode_ratio": 0.49475991745445036
+    },
+    {
+      "region_id": 6,
+      "n_cells": 1018,
+      "sensitivity": 0.7789865879847194,
+      "fiedler": 0.003549794022080421,
+      "spectral_flatness": 0.11448096854945339,
+      "spectral_centroid": 4.372526941099901,
+      "spectral_bandwidth": 1.8968141037562514,
+      "mode_concentration": 0.5909659165818031,
+      "mid_mode_ratio": 0.3355654574385408
+    },
+    {
+      "region_id": 7,
+      "n_cells": 370,
+      "sensitivity": 1.8179978203679683,
+      "fiedler": 0.01034361176800685,
+      "spectral_flatness": 0.4235131075922282,
+      "spectral_centroid": 4.518550062681204,
+      "spectral_bandwidth": 2.61475308251107,
+      "mode_concentration": 0.302390544676017,
+      "mid_mode_ratio": 0.338678822353117
+    },
+    {
+      "region_id": 8,
+      "n_cells": 1159,
+      "sensitivity": 1.534391025942506,
+      "fiedler": 0.007679346853649683,
+      "spectral_flatness": 0.06626014117181657,
+      "spectral_centroid": 3.4276302753465564,
+      "spectral_bandwidth": 2.0558238280793755,
+      "mode_concentration": 0.5646145294141632,
+      "mid_mode_ratio": 0.5758065188135101
+    },
+    {
+      "region_id": 9,
+      "n_cells": 302,
+      "sensitivity": 0.9616781157251514,
+      "fiedler": 0.014936838856104674,
+      "spectral_flatness": 0.444684107976249,
+      "spectral_centroid": 6.918143515096364,
+      "spectral_bandwidth": 2.0931185219383734,
+      "mode_concentration": 0.5044186650762512,
+      "mid_mode_ratio": 0.3342636161658264
+    },
+    {
+      "region_id": 10,
+      "n_cells": 247,
+      "sensitivity": 1.4261233981370618,
+      "fiedler": 0.013659321650699592,
+      "spectral_flatness": 0.2922921577264559,
+      "spectral_centroid": 6.1104574655374835,
+      "spectral_bandwidth": 1.9865411295522872,
+      "mode_concentration": 0.4316427158820474,
+      "mid_mode_ratio": 0.45728885708889916
+    },
+    {
+      "region_id": 11,
+      "n_cells": 331,
+      "sensitivity": 1.2296545589074475,
+      "fiedler": 0.014717758930362044,
+      "spectral_flatness": 0.31663693595999687,
+      "spectral_centroid": 5.47132972148443,
+      "spectral_bandwidth": 3.602714065966331,
+      "mode_concentration": 0.25441509555812736,
+      "mid_mode_ratio": 0.20337074077045736
+    },
+    {
+      "region_id": 12,
+      "n_cells": 40,
+      "sensitivity": 0.10918045285843658,
+      "fiedler": 0.08968520483941084,
+      "spectral_flatness": 0.13121472284227545,
+      "spectral_centroid": 2.2754769458498982,
+      "spectral_bandwidth": 1.346442571518173,
+      "mode_concentration": 0.7157003894600747,
+      "mid_mode_ratio": 0.11076577267246239
+    },
+    {
+      "region_id": 13,
+      "n_cells": 355,
+      "sensitivity": 1.5899584701317584,
+      "fiedler": 0.010031668820074141,
+      "spectral_flatness": 0.2568337192487498,
+      "spectral_centroid": 4.2999226008033915,
+      "spectral_bandwidth": 2.3035264011033485,
+      "mode_concentration": 0.625656568933683,
+      "mid_mode_ratio": 0.16122862128422674
+    },
+    {
+      "region_id": 14,
+      "n_cells": 573,
+      "sensitivity": 1.7805111838451264,
+      "fiedler": 0.01111461957608369,
+      "spectral_flatness": 0.35281787991335467,
+      "spectral_centroid": 2.958047914643902,
+      "spectral_bandwidth": 2.6823762788976455,
+      "mode_concentration": 0.5278344824274975,
+      "mid_mode_ratio": 0.22089159116538662
+    },
+    {
+      "region_id": 15,
+      "n_cells": 31,
+      "sensitivity": 2.079285257969195,
+      "fiedler": 0.27198378687117875,
+      "spectral_flatness": 0.11417455020567731,
+      "spectral_centroid": 2.426543301338227,
+      "spectral_bandwidth": 1.502267447558595,
+      "mode_concentration": 0.5846502985165548,
+      "mid_mode_ratio": 0.1821579552714844
+    },
+    {
+      "region_id": 16,
+      "n_cells": 32,
+      "sensitivity": 0.2811542465816505,
+      "fiedler": 0.08082598722471904,
+      "spectral_flatness": 0.026744338382609267,
+      "spectral_centroid": 1.1748714780202738,
+      "spectral_bandwidth": 0.6166395256089315,
+      "mode_concentration": 0.8874885582619375,
+      "mid_mode_ratio": 0.016050341636495272
+    },
+    {
+      "region_id": 17,
+      "n_cells": 691,
+      "sensitivity": 1.2094253480713277,
+      "fiedler": 0.008799613959472,
+      "spectral_flatness": 0.39265094633377895,
+      "spectral_centroid": 2.5866028791093703,
+      "spectral_bandwidth": 2.2484989063090928,
+      "mode_concentration": 0.508781327699484,
+      "mid_mode_ratio": 0.17216536453079176
+    },
+    {
+      "region_id": 18,
+      "n_cells": 109,
+      "sensitivity": 1.648112831734506,
+      "fiedler": 0.05888903447874409,
+      "spectral_flatness": 0.3276023435324438,
+      "spectral_centroid": 4.088741146295568,
+      "spectral_bandwidth": 2.09881932700345,
+      "mode_concentration": 0.5040041584286936,
+      "mid_mode_ratio": 0.547393532104678
+    },
+    {
+      "region_id": 19,
+      "n_cells": 396,
+      "sensitivity": 0.7654239597525433,
+      "fiedler": 0.01802937714037174,
+      "spectral_flatness": 0.3402196844814039,
+      "spectral_centroid": 3.0275488424288453,
+      "spectral_bandwidth": 2.0607593010858913,
+      "mode_concentration": 0.6954566738297518,
+      "mid_mode_ratio": 0.11786498849533447
+    },
+    {
+      "region_id": 20,
+      "n_cells": 197,
+      "sensitivity": 1.9018800516740897,
+      "fiedler": 0.01917503126995385,
+      "spectral_flatness": 0.20946396907758988,
+      "spectral_centroid": 2.5126308270423134,
+      "spectral_bandwidth": 2.111928323142258,
+      "mode_concentration": 0.4748771638294441,
+      "mid_mode_ratio": 0.1158435401797115
+    },
+    {
+      "region_id": 21,
+      "n_cells": 114,
+      "sensitivity": 1.8660773890136184,
+      "fiedler": 0.04671044011131804,
+      "spectral_flatness": 0.17945740904767912,
+      "spectral_centroid": 2.990008224015398,
+      "spectral_bandwidth": 1.9356559450319069,
+      "mode_concentration": 0.6987662801644565,
+      "mid_mode_ratio": 0.19600328066262288
+    },
+    {
+      "region_id": 22,
+      "n_cells": 135,
+      "sensitivity": 1.6519067049794212,
+      "fiedler": 0.03526844779735153,
+      "spectral_flatness": 0.41876282386459734,
+      "spectral_centroid": 4.932781610448978,
+      "spectral_bandwidth": 2.6818135901785083,
+      "mode_concentration": 0.4055482261130986,
+      "mid_mode_ratio": 0.49736491400739014
+    },
+    {
+      "region_id": 23,
+      "n_cells": 92,
+      "sensitivity": 1.6952011334669832,
+      "fiedler": 0.047050661332341336,
+      "spectral_flatness": 0.24650561658474104,
+      "spectral_centroid": 4.075398878988183,
+      "spectral_bandwidth": 2.2293131912658763,
+      "mode_concentration": 0.37125152572798664,
+      "mid_mode_ratio": 0.43673792156857577
+    },
+    {
+      "region_id": 24,
+      "n_cells": 64,
+      "sensitivity": 1.3078648320308113,
+      "fiedler": 0.14162617520879955,
+      "spectral_flatness": 0.23470607078352948,
+      "spectral_centroid": 3.5594861283469963,
+      "spectral_bandwidth": 1.4540910096207478,
+      "mode_concentration": 0.31933763868405235,
+      "mid_mode_ratio": 0.5574398552833597
+    },
+    {
+      "region_id": 26,
+      "n_cells": 61,
+      "sensitivity": 1.1001386104650663,
+      "fiedler": 0.11993370668227944,
+      "spectral_flatness": 0.18681322381817403,
+      "spectral_centroid": 2.6207813347574,
+      "spectral_bandwidth": 1.3074495857968744,
+      "mode_concentration": 0.6397889953863889,
+      "mid_mode_ratio": 0.06847839567991862
+    },
+    {
+      "region_id": 27,
+      "n_cells": 122,
+      "sensitivity": 0.37488748870783806,
+      "fiedler": 0.055209273190879475,
+      "spectral_flatness": 0.05165920577006039,
+      "spectral_centroid": 1.4253728866397426,
+      "spectral_bandwidth": 0.9180537888948573,
+      "mode_concentration": 0.7436377886964096,
+      "mid_mode_ratio": 0.04241706046758393
+    },
+    {
+      "region_id": 28,
+      "n_cells": 313,
+      "sensitivity": 1.915779681557831,
+      "fiedler": 0.013073655453428914,
+      "spectral_flatness": 0.30818793362386915,
+      "spectral_centroid": 3.5032028075591457,
+      "spectral_bandwidth": 2.092572467262679,
+      "mode_concentration": 0.23275831991487558,
+      "mid_mode_ratio": 0.37506148147904167
+    },
+    {
+      "region_id": 29,
+      "n_cells": 332,
+      "sensitivity": 1.9208278883976444,
+      "fiedler": 0.006939112497738417,
+      "spectral_flatness": 0.36117682560685693,
+      "spectral_centroid": 2.7931632633217895,
+      "spectral_bandwidth": 2.575072762948836,
+      "mode_concentration": 0.4493812545544428,
+      "mid_mode_ratio": 0.1416083439986632
+    },
+    {
+      "region_id": 30,
+      "n_cells": 51,
+      "sensitivity": 0.5765583413075162,
+      "fiedler": 0.10354675884561061,
+      "spectral_flatness": 0.18091895293485782,
+      "spectral_centroid": 3.211106509837195,
+      "spectral_bandwidth": 1.5076362819939302,
+      "mode_concentration": 0.33336097342121607,
+      "mid_mode_ratio": 0.4275041461419299
+    },
+    {
+      "region_id": 33,
+      "n_cells": 81,
+      "sensitivity": 1.5761772591639982,
+      "fiedler": 0.06761785593218188,
+      "spectral_flatness": 0.20022132927880154,
+      "spectral_centroid": 2.4837179460645182,
+      "spectral_bandwidth": 1.70870388917456,
+      "mode_concentration": 0.5322218239786118,
+      "mid_mode_ratio": 0.16227924558299364
+    },
+    {
+      "region_id": 34,
+      "n_cells": 301,
+      "sensitivity": 1.5028583501661035,
+      "fiedler": 0.010232433646885607,
+      "spectral_flatness": 0.29916567033797886,
+      "spectral_centroid": 3.8554296636777234,
+      "spectral_bandwidth": 2.534255271710407,
+      "mode_concentration": 0.4787040283630533,
+      "mid_mode_ratio": 0.334896628107996
+    },
+    {
+      "region_id": 35,
+      "n_cells": 225,
+      "sensitivity": 1.1209692376772848,
+      "fiedler": 0.01312822268887891,
+      "spectral_flatness": 0.05922168636243349,
+      "spectral_centroid": 1.9476509743873176,
+      "spectral_bandwidth": 1.484281804602054,
+      "mode_concentration": 0.5502768612876555,
+      "mid_mode_ratio": 0.0070946047686154924
+    },
+    {
+      "region_id": 36,
+      "n_cells": 674,
+      "sensitivity": 1.7734980586557287,
+      "fiedler": 0.005614539279382741,
+      "spectral_flatness": 0.220593342810495,
+      "spectral_centroid": 2.1126244639185443,
+      "spectral_bandwidth": 1.805648406251585,
+      "mode_concentration": 0.5157449329280336,
+      "mid_mode_ratio": 0.10658873821177484
+    },
+    {
+      "region_id": 37,
+      "n_cells": 27,
+      "sensitivity": 0.1877599020323293,
+      "fiedler": 0.037984776402306665,
+      "spectral_flatness": 0.043300562556117826,
+      "spectral_centroid": 1.4306058843134497,
+      "spectral_bandwidth": 1.4260283891208934,
+      "mode_concentration": 0.8998258565722288,
+      "mid_mode_ratio": 0.08780952873008087
+    },
+    {
+      "region_id": 38,
+      "n_cells": 88,
+      "sensitivity": 1.6231126360371924,
+      "fiedler": 0.051376628039725473,
+      "spectral_flatness": 0.21056733228522662,
+      "spectral_centroid": 3.41366542876896,
+      "spectral_bandwidth": 1.8867672427666453,
+      "mode_concentration": 0.3698237880135545,
+      "mid_mode_ratio": 0.29972952878866377
+    },
+    {
+      "region_id": 39,
+      "n_cells": 266,
+      "sensitivity": 1.5494054718215404,
+      "fiedler": 0.028384969939803186,
+      "spectral_flatness": 0.1395666765117848,
+      "spectral_centroid": 2.578730840286921,
+      "spectral_bandwidth": 1.7105004313016123,
+      "mode_concentration": 0.4202970983691596,
+      "mid_mode_ratio": 0.17386038797081124
+    },
+    {
+      "region_id": 40,
+      "n_cells": 529,
+      "sensitivity": 1.869775967025677,
+      "fiedler": 0.011586815850625121,
+      "spectral_flatness": 0.28205983819905256,
+      "spectral_centroid": 2.504511426673885,
+      "spectral_bandwidth": 2.441682618082695,
+      "mode_concentration": 0.5830542149144312,
+      "mid_mode_ratio": 0.2196444403914723
+    },
+    {
+      "region_id": 41,
+      "n_cells": 233,
+      "sensitivity": 1.1624492913599647,
+      "fiedler": 0.00874850126161154,
+      "spectral_flatness": 0.21778638093789338,
+      "spectral_centroid": 3.9908048554499462,
+      "spectral_bandwidth": 2.38497485511184,
+      "mode_concentration": 0.48464251852840734,
+      "mid_mode_ratio": 0.332956504921194
+    },
+    {
+      "region_id": 43,
+      "n_cells": 518,
+      "sensitivity": 1.4590695601440835,
+      "fiedler": 0.010788922438832338,
+      "spectral_flatness": 0.24088008620504364,
+      "spectral_centroid": 2.8512747596418175,
+      "spectral_bandwidth": 2.063864850204819,
+      "mode_concentration": 0.3588752509949204,
+      "mid_mode_ratio": 0.20521367559481699
+    },
+    {
+      "region_id": 44,
+      "n_cells": 637,
+      "sensitivity": 1.7056419125476612,
+      "fiedler": 0.0057853109225902205,
+      "spectral_flatness": 0.3057217366259135,
+      "spectral_centroid": 4.550147211993063,
+      "spectral_bandwidth": 1.9741414604242666,
+      "mode_concentration": 0.4803420304043922,
+      "mid_mode_ratio": 0.41428213270703507
+    },
+    {
+      "region_id": 45,
+      "n_cells": 389,
+      "sensitivity": 1.3994040569713497,
+      "fiedler": 0.01567294074586989,
+      "spectral_flatness": 0.7304595375970719,
+      "spectral_centroid": 3.885770673394521,
+      "spectral_bandwidth": 2.2205477571945385,
+      "mode_concentration": 0.21612523191727545,
+      "mid_mode_ratio": 0.47240651646029586
+    },
+    {
+      "region_id": 46,
+      "n_cells": 200,
+      "sensitivity": 0.9169806965631965,
+      "fiedler": 0.025527701007158565,
+      "spectral_flatness": 0.04283967855552746,
+      "spectral_centroid": 1.4021023344677728,
+      "spectral_bandwidth": 1.2285483428670987,
+      "mode_concentration": 0.7875799656495724,
+      "mid_mode_ratio": 0.0076631461833518615
+    },
+    {
+      "region_id": 47,
+      "n_cells": 833,
+      "sensitivity": 1.6852078969610909,
+      "fiedler": 0.008607296785133573,
+      "spectral_flatness": 0.37116336166256214,
+      "spectral_centroid": 3.1664626581738657,
+      "spectral_bandwidth": 1.9837819734850053,
+      "mode_concentration": 0.35356329895947963,
+      "mid_mode_ratio": 0.4022995364075797
+    },
+    {
+      "region_id": 48,
+      "n_cells": 319,
+      "sensitivity": 1.653026116720538,
+      "fiedler": 0.014354351018467663,
+      "spectral_flatness": 0.28389794824141645,
+      "spectral_centroid": 3.462401035884448,
+      "spectral_bandwidth": 3.3169123480982092,
+      "mode_concentration": 0.5728355739271759,
+      "mid_mode_ratio": 0.2203089085447225
+    },
+    {
+      "region_id": 49,
+      "n_cells": 418,
+      "sensitivity": 1.6843669628978168,
+      "fiedler": 0.011760103870344419,
+      "spectral_flatness": 0.34640745026759256,
+      "spectral_centroid": 4.0506264975531465,
+      "spectral_bandwidth": 2.500101400171644,
+      "mode_concentration": 0.3033929200284294,
+      "mid_mode_ratio": 0.4075799899189963
+    },
+    {
+      "region_id": 50,
+      "n_cells": 221,
+      "sensitivity": 1.7522755445134717,
+      "fiedler": 0.016431400196752866,
+      "spectral_flatness": 0.42341049839532047,
+      "spectral_centroid": 3.3477354619399247,
+      "spectral_bandwidth": 1.8622706422522481,
+      "mode_concentration": 0.6129461538085954,
+      "mid_mode_ratio": 0.12343393262920666
+    },
+    {
+      "region_id": 51,
+      "n_cells": 184,
+      "sensitivity": 1.7732633708267596,
+      "fiedler": 0.015175515112109891,
+      "spectral_flatness": 0.2618386212611917,
+      "spectral_centroid": 4.038832747754744,
+      "spectral_bandwidth": 2.7418064987004844,
+      "mode_concentration": 0.2818331668276537,
+      "mid_mode_ratio": 0.39474861729460553
+    },
+    {
+      "region_id": 52,
+      "n_cells": 530,
+      "sensitivity": 0.6424756071120346,
+      "fiedler": 0.008828641146460788,
+      "spectral_flatness": 0.07294845538428298,
+      "spectral_centroid": 1.529301527954599,
+      "spectral_bandwidth": 1.324274103989098,
+      "mode_concentration": 0.8067231985818167,
+      "mid_mode_ratio": 0.05411295964622205
+    },
+    {
+      "region_id": 53,
+      "n_cells": 319,
+      "sensitivity": 1.3375398644017078,
+      "fiedler": 0.009495321330938777,
+      "spectral_flatness": 0.782048835749466,
+      "spectral_centroid": 4.725953255039872,
+      "spectral_bandwidth": 2.8470938504744576,
+      "mode_concentration": 0.30626578153764544,
+      "mid_mode_ratio": 0.4033592740119799
+    },
+    {
+      "region_id": 54,
+      "n_cells": 288,
+      "sensitivity": 1.1528232813663706,
+      "fiedler": 0.020533130816167193,
+      "spectral_flatness": 0.14397734548179547,
+      "spectral_centroid": 2.938661262150157,
+      "spectral_bandwidth": 2.131429247711632,
+      "mode_concentration": 0.4759774112419062,
+      "mid_mode_ratio": 0.4350970463861457
+    },
+    {
+      "region_id": 55,
+      "n_cells": 345,
+      "sensitivity": 1.7832458549699888,
+      "fiedler": 0.009517420440012922,
+      "spectral_flatness": 0.07288136906225477,
+      "spectral_centroid": 2.2906142968913272,
+      "spectral_bandwidth": 1.4058665370993702,
+      "mode_concentration": 0.6329485319701383,
+      "mid_mode_ratio": 0.048232928248696766
+    },
+    {
+      "region_id": 56,
+      "n_cells": 193,
+      "sensitivity": 0.8341018835219371,
+      "fiedler": 0.011948387134104371,
+      "spectral_flatness": 0.3653655878214622,
+      "spectral_centroid": 3.6059928954714526,
+      "spectral_bandwidth": 1.8956001535243396,
+      "mode_concentration": 0.43400020508286263,
+      "mid_mode_ratio": 0.39086017951334
+    },
+    {
+      "region_id": 57,
+      "n_cells": 55,
+      "sensitivity": 1.1981368494598634,
+      "fiedler": 0.0906687532675879,
+      "spectral_flatness": 0.3456222757110378,
+      "spectral_centroid": 2.907769494099359,
+      "spectral_bandwidth": 1.7134609807292462,
+      "mode_concentration": 0.47834119122305224,
+      "mid_mode_ratio": 0.11706820351138286
+    },
+    {
+      "region_id": 58,
+      "n_cells": 56,
+      "sensitivity": 0.5379975235487432,
+      "fiedler": 0.08760081357379537,
+      "spectral_flatness": 0.23604747056212366,
+      "spectral_centroid": 2.9496530867696933,
+      "spectral_bandwidth": 1.734371210305543,
+      "mode_concentration": 0.43854481190606825,
+      "mid_mode_ratio": 0.06975120107229466
+    },
+    {
+      "region_id": 60,
+      "n_cells": 372,
+      "sensitivity": 0.853900758443949,
+      "fiedler": 0.01908564686374044,
+      "spectral_flatness": 0.12635523178462585,
+      "spectral_centroid": 2.182556547954826,
+      "spectral_bandwidth": 1.9309902645223254,
+      "mode_concentration": 0.6469920950656093,
+      "mid_mode_ratio": 0.179375149791958
+    }
+  ]
+}

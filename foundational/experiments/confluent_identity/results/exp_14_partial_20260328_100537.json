@@ -1,0 +1,68 @@
+{
+  "experiment": "exp_14_partial_correlation",
+  "timestamp": "2026-03-28T10:05:37.057993",
+  "purpose": "Size deconfound via partial Spearman correlation",
+  "n_parents": 10,
+  "n_measurements": 67,
+  "raw_correlations": {
+    "rho_coupling_natural": 0.49337536914358693,
+    "p_coupling_natural": 2.2139319424061257e-05,
+    "rho_natural_size": 0.7704602368912156,
+    "rho_coupling_size": 0.34350650000213084
+  },
+  "partial_correlation": {
+    "rho_partial_size": 0.41946683693830317,
+    "p_partial_size": 0.0004103585203340794,
+    "rho_partial_logsize": 0.41946683693830317,
+    "p_partial_logsize": 0.0004103585203340794
+  },
+  "stratified": [
+    {
+      "bin": 0,
+      "n": 23,
+      "size_range": [
+        0.0003274394237066143,
+        0.018752547900529968
+      ],
+      "rho": 0.5009881422924901,
+      "p": 0.014887207250564156
+    },
+    {
+      "bin": 1,
+      "n": 22,
+      "size_range": [
+        0.018752547900529968,
+        0.05401549123522218
+      ],
+      "rho": 0.1959345002823264,
+      "p": 0.3821811432408392
+    },
+    {
+      "bin": 2,
+      "n": 22,
+      "size_range": [
+        0.05401549123522218,
+        0.9912929908576404
+      ],
+      "rho": 0.5911914172783739,
+      "p": 0.0037606445488212225
+    }
+  ],
+  "permutation": {
+    "observed_rho": 0.41946683693830317,
+    "p_value": 0.0007,
+    "null_mean": 0.0010582204561155638,
+    "null_std": 0.1230332121011306,
+    "null_95_ci": [
+      -0.23522028892968316,
+      0.23855156037991823
+    ]
+  },
+  "verification": {
+    "test1_partial_rho_significant": true,
+    "test2_terciles_positive": true,
+    "test3_permutation_significant": true,
+    "test4_logsize_deconfound": true,
+    "n_verified": 4
+  }
+}

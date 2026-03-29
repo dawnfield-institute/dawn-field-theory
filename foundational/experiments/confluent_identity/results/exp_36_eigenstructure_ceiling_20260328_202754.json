@@ -1,0 +1,57 @@
+{
+  "test1_eigenbasis_alignment": {
+    "mean_cos_eigenbasis": 0.6013200711700419,
+    "distance_from_ceiling": 0.18132007117004195,
+    "threshold": 0.13,
+    "verified": false
+  },
+  "test2_delta_predicts_residuals": {
+    "rho_delta_residual": 0.09012273524254823,
+    "p_value": 0.49725329539219065,
+    "n": 59,
+    "verified": "False"
+  },
+  "test3_raw_alignment": {
+    "mean_cos_raw": 0.7794531518639367,
+    "distance_from_ceiling": 0.3594531518639367,
+    "threshold": 0.1,
+    "verified": false
+  },
+  "test4_conservation": {
+    "best_alpha": 0.10000000000000009,
+    "variance_reduction": 0.03698606432742635,
+    "threshold": 0.1,
+    "verified": "False"
+  },
+  "experiment": "exp_36_eigenstructure_ceiling",
+  "phase": 27,
+  "n_total_children": 67,
+  "n_delta_children": 67,
+  "n_aligned": 59,
+  "raw_alignment": {
+    "mean": 0.7794531518639367,
+    "std": 0.08200572698638894,
+    "median": 0.7823594381686361
+  },
+  "eigenbasis_alignment": {
+    "mean": 0.6013200711700419,
+    "std": 0.5776243067001495,
+    "median": 0.9016094412714363
+  },
+  "delta_self": {
+    "mean": 2.1327982574553976,
+    "std": 0.303809856657766,
+    "rho_with_coupling_residual": 0.09012273524254823,
+    "p_value": 0.49725329539219065
+  },
+  "conservation": {
+    "best_alpha": 0.10000000000000009,
+    "variance_reduction": 0.03698606432742635
+  },
+  "reference_coupling": {
+    "rho": 0.430601005666853,
+    "partial_rho": 0.5753052917232022
+  },
+  "verified_count": "0",
+  "timestamp": "2026-03-28T20:27:54.214905"
+}

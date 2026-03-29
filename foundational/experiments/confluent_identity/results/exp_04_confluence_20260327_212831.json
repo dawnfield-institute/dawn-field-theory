@@ -1,0 +1,463 @@
+{
+  "experiment": "exp_04_confluence_test",
+  "timestamp": "2026-03-27T21:28:31.173427",
+  "n_tests": 10,
+  "summary": {
+    "weighted": {
+      "mean_l2": 0.10418206339200205,
+      "std_l2": 0.05259430656123495,
+      "mean_cosine": -0.010307923566839872,
+      "std_cosine": 0.4803953881813801,
+      "mean_relative": 1.0765439540283572,
+      "std_relative": 0.18699964002239525,
+      "n_tests": 10
+    },
+    "mean": {
+      "mean_l2": 0.10410419720989945,
+      "std_l2": 0.05313951656433674,
+      "mean_cosine": -0.006175620334104704,
+      "std_cosine": 0.4826212005580502,
+      "mean_relative": 1.0735135287636868,
+      "std_relative": 0.18996265648358995,
+      "n_tests": 10
+    },
+    "size_weighted": {
+      "mean_l2": 0.1157989000684964,
+      "std_l2": 0.06409757531893738,
+      "mean_cosine": -0.006740783152021102,
+      "std_cosine": 0.49737382853630874,
+      "mean_relative": 1.179155286422979,
+      "std_relative": 0.2803020155748848,
+      "n_tests": 10
+    },
+    "random": {
+      "mean_l2": 0.10558597449266108,
+      "std_l2": 0.05176055966999804,
+      "mean_cosine": -0.0010176320288551644,
+      "std_cosine": 0.48737824014436126,
+      "mean_relative": 1.107661668432523,
+      "std_relative": 0.27361011273580016,
+      "n_tests": 10
+    },
+    "weighted_vs_mean": {
+      "mean_improvement": -0.0030304252646702447,
+      "p_value": 0.4921875,
+      "significant": false,
+      "direction": "WORSE"
+    },
+    "weighted_vs_size_weighted": {
+      "mean_improvement": 0.1026113323946221,
+      "p_value": 0.083984375,
+      "significant": false,
+      "direction": "BETTER"
+    },
+    "weighted_vs_random": {
+      "mean_improvement": 0.03111771440416594,
+      "p_value": 0.921875,
+      "significant": false,
+      "direction": "BETTER"
+    }
+  },
+  "detailed_results": [
+    {
+      "level": 1,
+      "parent_id": 1,
+      "method": "weighted",
+      "n_children": 25,
+      "parent_n_cells": 9812,
+      "l2_error": 0.12489735324157689,
+      "cosine_similarity": -0.6233271436522884,
+      "relative_error": 1.152056392653007
+    },
+    {
+      "level": 1,
+      "parent_id": 1,
+      "method": "mean",
+      "n_children": 25,
+      "parent_n_cells": 9812,
+      "l2_error": 0.12197636215780999,
+      "cosine_similarity": -0.6140596852285568,
+      "relative_error": 1.1251130959089422
+    },
+    {
+      "level": 1,
+      "parent_id": 1,
+      "method": "size_weighted",
+      "n_children": 25,
+      "parent_n_cells": 9812,
+      "l2_error": 0.12687518316280622,
+      "cosine_similarity": -0.6036071902963502,
+      "relative_error": 1.1702999466210837
+    },
+    {
+      "level": 1,
+      "parent_id": 1,
+      "method": "random",
+      "n_children": 25,
+      "parent_n_cells": 9812,
+      "l2_error": 0.11821425085617267,
+      "cosine_similarity": -0.6004558724563331,
+      "relative_error": 1.0904112846820841
+    },
+    {
+      "level": 1,
+      "parent_id": 6,
+      "method": "weighted",
+      "n_children": 2,
+      "parent_n_cells": 697,
+      "l2_error": 0.06386678669672104,
+      "cosine_similarity": -0.3115656313234865,
+      "relative_error": 1.4033188772823035
+    },
+    {
+      "level": 1,
+      "parent_id": 6,
+      "method": "mean",
+      "n_children": 2,
+      "parent_n_cells": 697,
+      "l2_error": 0.06385150370930052,
+      "cosine_similarity": -0.311415548386743,
+      "relative_error": 1.4029830704277908
+    },
+    {
+      "level": 1,
+      "parent_id": 6,
+      "method": "size_weighted",
+      "n_children": 2,
+      "parent_n_cells": 697,
+      "l2_error": 0.0629373129381685,
+      "cosine_similarity": -0.3013916061944231,
+      "relative_error": 1.3828959291620362
+    },
+    {
+      "level": 1,
+      "parent_id": 6,
+      "method": "random",
+      "n_children": 2,
+      "parent_n_cells": 697,
+      "l2_error": 0.06691823954069613,
+      "cosine_similarity": -0.33319459258943707,
+      "relative_error": 1.4703672071038958
+    },
+    {
+      "level": 1,
+      "parent_id": 10,
+      "method": "weighted",
+      "n_children": 3,
+      "parent_n_cells": 799,
+      "l2_error": 0.09276529633564633,
+      "cosine_similarity": -0.8804826435968971,
+      "relative_error": 1.329271742660388
+    },
+    {
+      "level": 1,
+      "parent_id": 10,
+      "method": "mean",
+      "n_children": 3,
+      "parent_n_cells": 799,
+      "l2_error": 0.0936764106132598,
+      "cosine_similarity": -0.8809638759575978,
+      "relative_error": 1.342327470517753
+    },
+    {
+      "level": 1,
+      "parent_id": 10,
+      "method": "size_weighted",
+      "n_children": 3,
+      "parent_n_cells": 799,
+      "l2_error": 0.1255133384437854,
+      "cosine_similarity": -0.8755694331837575,
+      "relative_error": 1.798531786247123
+    },
+    {
+      "level": 1,
+      "parent_id": 10,
+      "method": "random",
+      "n_children": 3,
+      "parent_n_cells": 799,
+      "l2_error": 0.12150057804488773,
+      "cosine_similarity": -0.8779804300362877,
+      "relative_error": 1.741031306875813
+    },
+    {
+      "level": 1,
+      "parent_id": 15,
+      "method": "weighted",
+      "n_children": 3,
+      "parent_n_cells": 739,
+      "l2_error": 0.17978946695551548,
+      "cosine_similarity": -0.3677993658919871,
+      "relative_error": 1.2189615354229575
+    },
+    {
+      "level": 1,
+      "parent_id": 15,
+      "method": "mean",
+      "n_children": 3,
+      "parent_n_cells": 739,
+      "l2_error": 0.18293296112762308,
+      "cosine_similarity": -0.37736761951126807,
+      "relative_error": 1.240274232698897
+    },
+    {
+      "level": 1,
+      "parent_id": 15,
+      "method": "size_weighted",
+      "n_children": 3,
+      "parent_n_cells": 739,
+      "l2_error": 0.20607886185981672,
+      "cosine_similarity": -0.42518696507044634,
+      "relative_error": 1.397202017029238
+    },
+    {
+      "level": 1,
+      "parent_id": 15,
+      "method": "random",
+      "n_children": 3,
+      "parent_n_cells": 739,
+      "l2_error": 0.17453955200608698,
+      "cosine_similarity": -0.41297733845539775,
+      "relative_error": 1.1833674347453096
+    },
+    {
+      "level": 1,
+      "parent_id": 18,
+      "method": "weighted",
+      "n_children": 2,
+      "parent_n_cells": 314,
+      "l2_error": 0.04627390246464698,
+      "cosine_similarity": 0.4802904211173904,
+      "relative_error": 0.8809597442750213
+    },
+    {
+      "level": 1,
+      "parent_id": 18,
+      "method": "mean",
+      "n_children": 2,
+      "parent_n_cells": 314,
+      "l2_error": 0.046244141380699044,
+      "cosine_similarity": 0.4810336712169675,
+      "relative_error": 0.8803931545666182
+    },
+    {
+      "level": 1,
+      "parent_id": 18,
+      "method": "size_weighted",
+      "n_children": 2,
+      "parent_n_cells": 314,
+      "l2_error": 0.048279546991516285,
+      "cosine_similarity": 0.4363961935901351,
+      "relative_error": 0.9191430829473383
+    },
+    {
+      "level": 1,
+      "parent_id": 18,
+      "method": "random",
+      "n_children": 2,
+      "parent_n_cells": 314,
+      "l2_error": 0.04656195853661597,
+      "cosine_similarity": 0.4732477780786024,
+      "relative_error": 0.8864437382755822
+    },
+    {
+      "level": 1,
+      "parent_id": 21,
+      "method": "weighted",
+      "n_children": 2,
+      "parent_n_cells": 354,
+      "l2_error": 0.0757145785505256,
+      "cosine_similarity": 0.023365343235437264,
+      "relative_error": 1.1190427921450519
+    },
+    {
+      "level": 1,
+      "parent_id": 21,
+      "method": "mean",
+      "n_children": 2,
+      "parent_n_cells": 354,
+      "l2_error": 0.0736058572337862,
+      "cosine_similarity": 0.039292434371089174,
+      "relative_error": 1.0878764113064507
+    },
+    {
+      "level": 1,
+      "parent_id": 21,
+      "method": "size_weighted",
+      "n_children": 2,
+      "parent_n_cells": 354,
+      "l2_error": 0.08324996306427793,
+      "cosine_similarity": -0.008356346889599098,
+      "relative_error": 1.2304139162744543
+    },
+    {
+      "level": 1,
+      "parent_id": 21,
+      "method": "random",
+      "n_children": 2,
+      "parent_n_cells": 354,
+      "l2_error": 0.07097454439864193,
+      "cosine_similarity": 0.0697246624502072,
+      "relative_error": 1.0489862567494652
+    },
+    {
+      "level": 2,
+      "parent_id": 1,
+      "method": "weighted",
+      "n_children": 20,
+      "parent_n_cells": 15270,
+      "l2_error": 0.11852346984053953,
+      "cosine_similarity": 0.19239433818262017,
+      "relative_error": 0.9840575645436965
+    },
+    {
+      "level": 2,
+      "parent_id": 1,
+      "method": "mean",
+      "n_children": 20,
+      "parent_n_cells": 15270,
+      "l2_error": 0.11850539358210381,
+      "cosine_similarity": 0.19568270704113125,
+      "relative_error": 0.9839074838982661
+    },
+    {
+      "level": 2,
+      "parent_id": 1,
+      "method": "size_weighted",
+      "n_children": 20,
+      "parent_n_cells": 15270,
+      "l2_error": 0.09589972443564757,
+      "cosine_similarity": 0.6052664337583391,
+      "relative_error": 0.79622077716355
+    },
+    {
+      "level": 2,
+      "parent_id": 1,
+      "method": "random",
+      "n_children": 20,
+      "parent_n_cells": 15270,
+      "l2_error": 0.11728118752474646,
+      "cosine_similarity": 0.28653971854653026,
+      "relative_error": 0.9737433431342175
+    },
+    {
+      "level": 2,
+      "parent_id": 5,
+      "method": "weighted",
+      "n_children": 2,
+      "parent_n_cells": 100,
+      "l2_error": 0.013960027316364506,
+      "cosine_similarity": 0.5197566817018289,
+      "relative_error": 0.8543293891892842
+    },
+    {
+      "level": 2,
+      "parent_id": 5,
+      "method": "mean",
+      "n_children": 2,
+      "parent_n_cells": 100,
+      "l2_error": 0.013841122006330864,
+      "cosine_similarity": 0.5315719598551968,
+      "relative_error": 0.8470525910433865
+    },
+    {
+      "level": 2,
+      "parent_id": 5,
+      "method": "size_weighted",
+      "n_children": 2,
+      "parent_n_cells": 100,
+      "l2_error": 0.014515234670894507,
+      "cosine_similarity": 0.5330330766812028,
+      "relative_error": 0.888307113538934
+    },
+    {
+      "level": 2,
+      "parent_id": 5,
+      "method": "random",
+      "n_children": 2,
+      "parent_n_cells": 100,
+      "l2_error": 0.014060741591065204,
+      "cosine_similarity": 0.540200669651761,
+      "relative_error": 0.8604929276149452
+    },
+    {
+      "level": 3,
+      "parent_id": 1,
+      "method": "weighted",
+      "n_children": 5,
+      "parent_n_cells": 15939,
+      "l2_error": 0.17582697497257305,
+      "cosine_similarity": 0.41166340099400156,
+      "relative_error": 0.9307577716270921
+    },
+    {
+      "level": 3,
+      "parent_id": 1,
+      "method": "mean",
+      "n_children": 5,
+      "parent_n_cells": 15939,
+      "l2_error": 0.17657056848527058,
+      "cosine_similarity": 0.41585065249701286,
+      "relative_error": 0.9346940586557615
+    },
+    {
+      "level": 3,
+      "parent_id": 1,
+      "method": "size_weighted",
+      "n_children": 5,
+      "parent_n_cells": 15939,
+      "l2_error": 0.2107197565486419,
+      "cosine_similarity": 0.10284076416282326,
+      "relative_error": 1.115466219410367
+    },
+    {
+      "level": 3,
+      "parent_id": 1,
+      "method": "random",
+      "n_children": 5,
+      "parent_n_cells": 15939,
+      "l2_error": 0.17637272646788632,
+      "cosine_similarity": 0.3842930949331018,
+      "relative_error": 0.9336467620434896
+    },
+    {
+      "level": 4,
+      "parent_id": 1,
+      "method": "weighted",
+      "n_children": 3,
+      "parent_n_cells": 16079,
+      "l2_error": 0.150202777545911,
+      "cosine_similarity": 0.4526253635649823,
+      "relative_error": 0.8926837304847688
+    },
+    {
+      "level": 4,
+      "parent_id": 1,
+      "method": "mean",
+      "n_children": 3,
+      "parent_n_cells": 16079,
+      "l2_error": 0.14983765180281056,
+      "cosine_similarity": 0.4586191007617215,
+      "relative_error": 0.8905137186130024
+    },
+    {
+      "level": 4,
+      "parent_id": 1,
+      "method": "size_weighted",
+      "n_children": 3,
+      "parent_n_cells": 16079,
+      "l2_error": 0.18392007856940906,
+      "cosine_similarity": 0.4691672419218652,
+      "relative_error": 1.0930720758356671
+    },
+    {
+      "level": 4,
+      "parent_id": 1,
+      "method": "random",
+      "n_children": 3,
+      "parent_n_cells": 16079,
+      "l2_error": 0.1494359659598112,
+      "cosine_similarity": 0.4604259895887015,
+      "relative_error": 0.8881264231004279
+    }
+  ]
+}

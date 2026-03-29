@@ -1,0 +1,759 @@
+{
+  "experiment": "exp_27_boundary_geometry",
+  "timestamp": "2026-03-28T18:01:27.445052",
+  "purpose": "Boundary geometry census: 6 metrics vs sensitivity, coupling, revision",
+  "n_regions": 57,
+  "raw_correlations": {
+    "perimeter": {
+      "rho": 0.26124170894487697,
+      "p": 0.04966143027096819
+    },
+    "boundary_cells": {
+      "rho": 0.26869399037758557,
+      "p": 0.043281377275278386
+    },
+    "compactness": {
+      "rho": -0.06040964480165932,
+      "p": 0.6553180463848145
+    },
+    "boundary_area_ratio": {
+      "rho": -0.227378791807104,
+      "p": 0.08894296351549287
+    },
+    "mean_boundary_gradient": {
+      "rho": -0.2904459424423127,
+      "p": 0.02839949003671383
+    },
+    "boundary_fiedler_amplitude": {
+      "rho": -0.2391755250194452,
+      "p": 0.0731592918026653
+    }
+  },
+  "partial_correlations": {
+    "perimeter": {
+      "rho": 0.1407829919626653,
+      "p": 0.2962292572009233
+    },
+    "boundary_cells": {
+      "rho": 0.12477313974591653,
+      "p": 0.3550869524807302
+    },
+    "compactness": {
+      "rho": -0.06890070002592691,
+      "p": 0.6105628409691273
+    },
+    "boundary_area_ratio": {
+      "rho": 0.11589318122893441,
+      "p": 0.39062328082524467
+    },
+    "mean_boundary_gradient": {
+      "rho": -0.3000388903292715,
+      "p": 0.023354850320669113
+    },
+    "boundary_fiedler_amplitude": {
+      "rho": 0.023528649209229976,
+      "p": 0.8620808742021226
+    }
+  },
+  "size_correlations": {
+    "perimeter": 0.9593769299093668,
+    "boundary_cells": 0.9707408517937749,
+    "compactness": -0.08060151351708864,
+    "boundary_area_ratio": -0.9734083065885633,
+    "mean_boundary_gradient": 0.050104519460160445,
+    "boundary_fiedler_amplitude": -0.9830662281921388
+  },
+  "verification": {
+    "test1_bar_predicts_sensitivity": false,
+    "test2_boundary_gradient_signal": true,
+    "test3_compactness_not_size_proxy": true,
+    "test4_multiple_boundary_signals": false,
+    "n_verified": 2
+  },
+  "per_region": [
+    {
+      "region_id": 1,
+      "n_cells": 250,
+      "fiedler": 0.012401961333810338,
+      "sensitivity": 1.8774633566555334,
+      "perimeter": 96,
+      "boundary_cells": 68,
+      "compactness": 0.3408846195301425,
+      "boundary_area_ratio": 0.272,
+      "mean_boundary_gradient": 0.0002598032268997157,
+      "boundary_fiedler_amplitude": 0.06517995368721631
+    },
+    {
+      "region_id": 2,
+      "n_cells": 182,
+      "fiedler": 0.04803952582886184,
+      "sensitivity": 1.8822347312937147,
+      "perimeter": 56,
+      "boundary_cells": 48,
+      "compactness": 0.7292982945833448,
+      "boundary_area_ratio": 0.26373626373626374,
+      "mean_boundary_gradient": 0.00026878116076437046,
+      "boundary_fiedler_amplitude": 0.07676030496978854
+    },
+    {
+      "region_id": 3,
+      "n_cells": 157,
+      "fiedler": 0.030774234868032848,
+      "sensitivity": 1.7426949140890236,
+      "perimeter": 58,
+      "boundary_cells": 49,
+      "compactness": 0.5864804359257997,
+      "boundary_area_ratio": 0.31210191082802546,
+      "mean_boundary_gradient": 0.0004887967711825154,
+      "boundary_fiedler_amplitude": 0.08482800251936591
+    },
+    {
+      "region_id": 4,
+      "n_cells": 166,
+      "fiedler": 0.024916010022049816,
+      "sensitivity": 0.9935013321109893,
+      "perimeter": 60,
+      "boundary_cells": 50,
+      "compactness": 0.5794493116621174,
+      "boundary_area_ratio": 0.30120481927710846,
+      "mean_boundary_gradient": 0.00018455856577496302,
+      "boundary_fiedler_amplitude": 0.07869628789416257
+    },
+    {
+      "region_id": 5,
+      "n_cells": 144,
+      "fiedler": 0.027696002215090873,
+      "sensitivity": 1.715220864875087,
+      "perimeter": 64,
+      "boundary_cells": 49,
+      "compactness": 0.44178646691106466,
+      "boundary_area_ratio": 0.3402777777777778,
+      "mean_boundary_gradient": 0.0008253625573352189,
+      "boundary_fiedler_amplitude": 0.08702615277855319
+    },
+    {
+      "region_id": 6,
+      "n_cells": 1018,
+      "fiedler": 0.003549794022079915,
+      "sensitivity": 1.7609171319877879,
+      "perimeter": 170,
+      "boundary_cells": 150,
+      "compactness": 0.44264931783452033,
+      "boundary_area_ratio": 0.14734774066797643,
+      "mean_boundary_gradient": 0.00036517888147885114,
+      "boundary_fiedler_amplitude": 0.03371242293741172
+    },
+    {
+      "region_id": 7,
+      "n_cells": 370,
+      "fiedler": 0.010343611768007745,
+      "sensitivity": 1.4010298653209958,
+      "perimeter": 92,
+      "boundary_cells": 81,
+      "compactness": 0.5493333089925442,
+      "boundary_area_ratio": 0.21891891891891893,
+      "mean_boundary_gradient": 0.0006017469918145138,
+      "boundary_fiedler_amplitude": 0.05398058664885707
+    },
+    {
+      "region_id": 8,
+      "n_cells": 1159,
+      "fiedler": 0.007679346853649274,
+      "sensitivity": 1.9852722925384916,
+      "perimeter": 154,
+      "boundary_cells": 133,
+      "compactness": 0.6141180444443533,
+      "boundary_area_ratio": 0.11475409836065574,
+      "mean_boundary_gradient": 0.00040478408165455073,
+      "boundary_fiedler_amplitude": 0.03223276543181452
+    },
+    {
+      "region_id": 9,
+      "n_cells": 302,
+      "fiedler": 0.0149368388561037,
+      "sensitivity": 1.708189084547732,
+      "perimeter": 82,
+      "boundary_cells": 71,
+      "compactness": 0.5644027253920985,
+      "boundary_area_ratio": 0.23509933774834438,
+      "mean_boundary_gradient": 0.0006927384079162168,
+      "boundary_fiedler_amplitude": 0.060438087057961824
+    },
+    {
+      "region_id": 10,
+      "n_cells": 247,
+      "fiedler": 0.013659321650700659,
+      "sensitivity": 1.3390763785762827,
+      "perimeter": 80,
+      "boundary_cells": 64,
+      "compactness": 0.4849833658979243,
+      "boundary_area_ratio": 0.2591093117408907,
+      "mean_boundary_gradient": 0.0008874860505648544,
+      "boundary_fiedler_amplitude": 0.06475303615616802
+    },
+    {
+      "region_id": 11,
+      "n_cells": 331,
+      "fiedler": 0.014717758930363463,
+      "sensitivity": 1.3690016908522968,
+      "perimeter": 90,
+      "boundary_cells": 71,
+      "compactness": 0.5135146510312205,
+      "boundary_area_ratio": 0.21450151057401812,
+      "mean_boundary_gradient": 0.0007693514997632093,
+      "boundary_fiedler_amplitude": 0.057424902292831516
+    },
+    {
+      "region_id": 12,
+      "n_cells": 40,
+      "fiedler": 0.08968520483941084,
+      "sensitivity": 0.10918045285843658,
+      "perimeter": 32,
+      "boundary_cells": 22,
+      "compactness": 0.4908738521234052,
+      "boundary_area_ratio": 0.55,
+      "mean_boundary_gradient": 0.0010840787212539824,
+      "boundary_fiedler_amplitude": 0.15446614825637847
+    },
+    {
+      "region_id": 13,
+      "n_cells": 355,
+      "fiedler": 0.010031668820073697,
+      "sensitivity": 1.9526111616442194,
+      "perimeter": 96,
+      "boundary_cells": 76,
+      "compactness": 0.4840561597328023,
+      "boundary_area_ratio": 0.2140845070422535,
+      "mean_boundary_gradient": 0.0008435401088930856,
+      "boundary_fiedler_amplitude": 0.05441896276438579
+    },
+    {
+      "region_id": 14,
+      "n_cells": 573,
+      "fiedler": 0.011114619576083656,
+      "sensitivity": 0.7973898935195106,
+      "perimeter": 108,
+      "boundary_cells": 97,
+      "compactness": 0.6173294206128092,
+      "boundary_area_ratio": 0.16928446771378708,
+      "mean_boundary_gradient": 0.0006743419477508304,
+      "boundary_fiedler_amplitude": 0.04642367345209262
+    },
+    {
+      "region_id": 15,
+      "n_cells": 31,
+      "fiedler": 0.27198378687117875,
+      "sensitivity": 2.079285257969195,
+      "perimeter": 24,
+      "boundary_cells": 16,
+      "compactness": 0.6763150851478027,
+      "boundary_area_ratio": 0.5161290322580645,
+      "mean_boundary_gradient": 0.0004778849234326623,
+      "boundary_fiedler_amplitude": 0.18122209863637084
+    },
+    {
+      "region_id": 16,
+      "n_cells": 32,
+      "fiedler": 0.08082598722471904,
+      "sensitivity": 0.2811542465816505,
+      "perimeter": 30,
+      "boundary_cells": 23,
+      "compactness": 0.4468042885105484,
+      "boundary_area_ratio": 0.71875,
+      "mean_boundary_gradient": 0.0003015962907082391,
+      "boundary_fiedler_amplitude": 0.16656262669895466
+    },
+    {
+      "region_id": 17,
+      "n_cells": 691,
+      "fiedler": 0.008799613959472262,
+      "sensitivity": 1.6587786980173527,
+      "perimeter": 136,
+      "boundary_cells": 109,
+      "compactness": 0.46947243158100066,
+      "boundary_area_ratio": 0.1577424023154848,
+      "mean_boundary_gradient": 0.0009116792790010389,
+      "boundary_fiedler_amplitude": 0.04051053886359107
+    },
+    {
+      "region_id": 18,
+      "n_cells": 109,
+      "fiedler": 0.058889034478744766,
+      "sensitivity": 0.8306069376444144,
+      "perimeter": 52,
+      "boundary_cells": 37,
+      "compactness": 0.5065585787593009,
+      "boundary_area_ratio": 0.3394495412844037,
+      "mean_boundary_gradient": 0.0010812839264850362,
+      "boundary_fiedler_amplitude": 0.09931203340885679
+    },
+    {
+      "region_id": 19,
+      "n_cells": 396,
+      "fiedler": 0.018029377140372324,
+      "sensitivity": 1.8350856894939358,
+      "perimeter": 84,
+      "boundary_cells": 73,
+      "compactness": 0.7052554936630149,
+      "boundary_area_ratio": 0.18434343434343434,
+      "mean_boundary_gradient": 0.00046964295807877987,
+      "boundary_fiedler_amplitude": 0.05547652087366397
+    },
+    {
+      "region_id": 20,
+      "n_cells": 197,
+      "fiedler": 0.01917503126995371,
+      "sensitivity": 1.8464033680789438,
+      "perimeter": 74,
+      "boundary_cells": 55,
+      "compactness": 0.45207724817910094,
+      "boundary_area_ratio": 0.27918781725888325,
+      "mean_boundary_gradient": 0.0009765310108751306,
+      "boundary_fiedler_amplitude": 0.07464779049961162
+    },
+    {
+      "region_id": 21,
+      "n_cells": 114,
+      "fiedler": 0.046710440111317884,
+      "sensitivity": 1.864096197471422,
+      "perimeter": 50,
+      "boundary_cells": 39,
+      "compactness": 0.5730265000147783,
+      "boundary_area_ratio": 0.34210526315789475,
+      "mean_boundary_gradient": 0.0014449386293405562,
+      "boundary_fiedler_amplitude": 0.10000374262300046
+    },
+    {
+      "region_id": 22,
+      "n_cells": 135,
+      "fiedler": 0.035268447797351596,
+      "sensitivity": 1.3575772027312436,
+      "perimeter": 58,
+      "boundary_cells": 42,
+      "compactness": 0.5042984640126302,
+      "boundary_area_ratio": 0.3111111111111111,
+      "mean_boundary_gradient": 0.000978785923422655,
+      "boundary_fiedler_amplitude": 0.08860465143967522
+    },
+    {
+      "region_id": 23,
+      "n_cells": 92,
+      "fiedler": 0.04705066133234326,
+      "sensitivity": 0.4333471734538007,
+      "perimeter": 50,
+      "boundary_cells": 35,
+      "compactness": 0.46244243860841755,
+      "boundary_area_ratio": 0.3804347826086957,
+      "mean_boundary_gradient": 0.0007959092609787811,
+      "boundary_fiedler_amplitude": 0.10563126315179022
+    },
+    {
+      "region_id": 24,
+      "n_cells": 64,
+      "fiedler": 0.14162617520879822,
+      "sensitivity": 0.907177293404773,
+      "perimeter": 34,
+      "boundary_cells": 27,
+      "compactness": 0.6957160201721341,
+      "boundary_area_ratio": 0.421875,
+      "mean_boundary_gradient": 0.0003509469134394271,
+      "boundary_fiedler_amplitude": 0.13041369365762143
+    },
+    {
+      "region_id": 25,
+      "n_cells": 17,
+      "fiedler": 0.1935829379445412,
+      "sensitivity": 0.304544237852984,
+      "perimeter": 20,
+      "boundary_cells": 13,
+      "compactness": 0.5340707511102649,
+      "boundary_area_ratio": 0.7647058823529411,
+      "mean_boundary_gradient": 0.0020613514619812565,
+      "boundary_fiedler_amplitude": 0.22531881643555615
+    },
+    {
+      "region_id": 26,
+      "n_cells": 61,
+      "fiedler": 0.11993370668227987,
+      "sensitivity": 1.9790012740513552,
+      "perimeter": 36,
+      "boundary_cells": 27,
+      "compactness": 0.5914726909536339,
+      "boundary_area_ratio": 0.4426229508196721,
+      "mean_boundary_gradient": 0.0004169006775907734,
+      "boundary_fiedler_amplitude": 0.1341424273826068
+    },
+    {
+      "region_id": 27,
+      "n_cells": 122,
+      "fiedler": 0.0552092731908788,
+      "sensitivity": 1.8976410777689223,
+      "perimeter": 56,
+      "boundary_cells": 45,
+      "compactness": 0.48887028538004434,
+      "boundary_area_ratio": 0.36885245901639346,
+      "mean_boundary_gradient": 0.00037742040716734623,
+      "boundary_fiedler_amplitude": 0.09969562270790336
+    },
+    {
+      "region_id": 28,
+      "n_cells": 313,
+      "fiedler": 0.013073655453428845,
+      "sensitivity": 1.6784876085687481,
+      "perimeter": 102,
+      "boundary_cells": 85,
+      "compactness": 0.37805401790603815,
+      "boundary_area_ratio": 0.2715654952076677,
+      "mean_boundary_gradient": 0.0017145154582341399,
+      "boundary_fiedler_amplitude": 0.06746537943864007
+    },
+    {
+      "region_id": 29,
+      "n_cells": 332,
+      "fiedler": 0.0069391124977385785,
+      "sensitivity": 1.4539452967632767,
+      "perimeter": 110,
+      "boundary_cells": 90,
+      "compactness": 0.3447962846253922,
+      "boundary_area_ratio": 0.2710843373493976,
+      "mean_boundary_gradient": 0.0015226410487811416,
+      "boundary_fiedler_amplitude": 0.05516598765220277
+    },
+    {
+      "region_id": 30,
+      "n_cells": 51,
+      "fiedler": 0.1035467588456096,
+      "sensitivity": 1.518953349371453,
+      "perimeter": 34,
+      "boundary_cells": 22,
+      "compactness": 0.5543987035746694,
+      "boundary_area_ratio": 0.43137254901960786,
+      "mean_boundary_gradient": 0.001717378320354654,
+      "boundary_fiedler_amplitude": 0.15461484865006062
+    },
+    {
+      "region_id": 33,
+      "n_cells": 81,
+      "fiedler": 0.06761785593218111,
+      "sensitivity": 0.5155467288884185,
+      "perimeter": 40,
+      "boundary_cells": 31,
+      "compactness": 0.6361725123519331,
+      "boundary_area_ratio": 0.38271604938271603,
+      "mean_boundary_gradient": 0.0011565495880612893,
+      "boundary_fiedler_amplitude": 0.11698388347792829
+    },
+    {
+      "region_id": 34,
+      "n_cells": 301,
+      "fiedler": 0.010232433646886793,
+      "sensitivity": 0.8659416243739538,
+      "perimeter": 106,
+      "boundary_cells": 80,
+      "compactness": 0.33663915583144455,
+      "boundary_area_ratio": 0.26578073089701,
+      "mean_boundary_gradient": 0.0006802056934187455,
+      "boundary_fiedler_amplitude": 0.061161341996280115
+    },
+    {
+      "region_id": 35,
+      "n_cells": 225,
+      "fiedler": 0.013128222688879058,
+      "sensitivity": 1.5011496104318,
+      "perimeter": 78,
+      "boundary_cells": 64,
+      "compactness": 0.46473264106357887,
+      "boundary_area_ratio": 0.28444444444444444,
+      "mean_boundary_gradient": 0.0017101115225775093,
+      "boundary_fiedler_amplitude": 0.06784029410307083
+    },
+    {
+      "region_id": 36,
+      "n_cells": 674,
+      "fiedler": 0.005614539279383754,
+      "sensitivity": 1.815843834331788,
+      "perimeter": 154,
+      "boundary_cells": 127,
+      "compactness": 0.3571316324033598,
+      "boundary_area_ratio": 0.1884272997032641,
+      "mean_boundary_gradient": 0.0005663087274788722,
+      "boundary_fiedler_amplitude": 0.04030133076367662
+    },
+    {
+      "region_id": 37,
+      "n_cells": 27,
+      "fiedler": 0.037984776402306665,
+      "sensitivity": 0.1877599020323293,
+      "perimeter": 36,
+      "boundary_cells": 20,
+      "compactness": 0.2617993877991494,
+      "boundary_area_ratio": 0.7407407407407407,
+      "mean_boundary_gradient": 0.001168230859678164,
+      "boundary_fiedler_amplitude": 0.17469135789816548
+    },
+    {
+      "region_id": 38,
+      "n_cells": 88,
+      "fiedler": 0.05137662803972642,
+      "sensitivity": 1.6392417605323302,
+      "perimeter": 48,
+      "boundary_cells": 33,
+      "compactness": 0.47996554429844057,
+      "boundary_area_ratio": 0.375,
+      "mean_boundary_gradient": 0.0008460288461875692,
+      "boundary_fiedler_amplitude": 0.1120078979291168
+    },
+    {
+      "region_id": 39,
+      "n_cells": 266,
+      "fiedler": 0.028384969939803356,
+      "sensitivity": 0.422037589519632,
+      "perimeter": 70,
+      "boundary_cells": 59,
+      "compactness": 0.682174404779498,
+      "boundary_area_ratio": 0.22180451127819548,
+      "mean_boundary_gradient": 0.0006850491965085365,
+      "boundary_fiedler_amplitude": 0.06585092073662147
+    },
+    {
+      "region_id": 40,
+      "n_cells": 529,
+      "fiedler": 0.011586815850624979,
+      "sensitivity": 1.7122016034734846,
+      "perimeter": 134,
+      "boundary_cells": 108,
+      "compactness": 0.37021664374003127,
+      "boundary_area_ratio": 0.20415879017013233,
+      "mean_boundary_gradient": 0.0012928056782899808,
+      "boundary_fiedler_amplitude": 0.050950700471837196
+    },
+    {
+      "region_id": 41,
+      "n_cells": 233,
+      "fiedler": 0.008748501261611575,
+      "sensitivity": 0.4113410167967708,
+      "perimeter": 94,
+      "boundary_cells": 76,
+      "compactness": 0.33136762711019546,
+      "boundary_area_ratio": 0.3261802575107296,
+      "mean_boundary_gradient": 0.0011190071121986007,
+      "boundary_fiedler_amplitude": 0.06491906656975842
+    },
+    {
+      "region_id": 42,
+      "n_cells": 10,
+      "fiedler": 0.5706099257563169,
+      "sensitivity": 0.8103238059811435,
+      "perimeter": 14,
+      "boundary_cells": 8,
+      "compactness": 0.641141357875468,
+      "boundary_area_ratio": 0.8,
+      "mean_boundary_gradient": 0.00039643165143310227,
+      "boundary_fiedler_amplitude": 0.2534633090131928
+    },
+    {
+      "region_id": 43,
+      "n_cells": 518,
+      "fiedler": 0.010788922438831545,
+      "sensitivity": 1.256709008172777,
+      "perimeter": 104,
+      "boundary_cells": 84,
+      "compactness": 0.6018287701773346,
+      "boundary_area_ratio": 0.16216216216216217,
+      "mean_boundary_gradient": 0.001044511565536925,
+      "boundary_fiedler_amplitude": 0.047173523726104005
+    },
+    {
+      "region_id": 44,
+      "n_cells": 637,
+      "fiedler": 0.005785310922590117,
+      "sensitivity": 1.9259192551417412,
+      "perimeter": 146,
+      "boundary_cells": 114,
+      "compactness": 0.37552908994871426,
+      "boundary_area_ratio": 0.17896389324960754,
+      "mean_boundary_gradient": 0.0007068271287909623,
+      "boundary_fiedler_amplitude": 0.04127180390965305
+    },
+    {
+      "region_id": 45,
+      "n_cells": 389,
+      "fiedler": 0.01567294074586859,
+      "sensitivity": 1.1869749916023602,
+      "perimeter": 92,
+      "boundary_cells": 74,
+      "compactness": 0.5775423167516208,
+      "boundary_area_ratio": 0.19023136246786632,
+      "mean_boundary_gradient": 0.0013143700712175688,
+      "boundary_fiedler_amplitude": 0.05422323905564931
+    },
+    {
+      "region_id": 46,
+      "n_cells": 200,
+      "fiedler": 0.025527701007157528,
+      "sensitivity": 0.8620854550569926,
+      "perimeter": 64,
+      "boundary_cells": 54,
+      "compactness": 0.6135923151542565,
+      "boundary_area_ratio": 0.27,
+      "mean_boundary_gradient": 0.0013960162715471176,
+      "boundary_fiedler_amplitude": 0.07284017586110676
+    },
+    {
+      "region_id": 47,
+      "n_cells": 833,
+      "fiedler": 0.008607296785132864,
+      "sensitivity": 1.5584057236019886,
+      "perimeter": 134,
+      "boundary_cells": 112,
+      "compactness": 0.5829687414658716,
+      "boundary_area_ratio": 0.13445378151260504,
+      "mean_boundary_gradient": 0.0010503096398709556,
+      "boundary_fiedler_amplitude": 0.037968880508209436
+    },
+    {
+      "region_id": 48,
+      "n_cells": 319,
+      "fiedler": 0.014354351018468162,
+      "sensitivity": 0.881647754519721,
+      "perimeter": 84,
+      "boundary_cells": 69,
+      "compactness": 0.5681224810063175,
+      "boundary_area_ratio": 0.21630094043887146,
+      "mean_boundary_gradient": 0.001990928548939289,
+      "boundary_fiedler_amplitude": 0.06029705635367572
+    },
+    {
+      "region_id": 49,
+      "n_cells": 418,
+      "fiedler": 0.011760103870344324,
+      "sensitivity": 1.681775834030326,
+      "perimeter": 94,
+      "boundary_cells": 81,
+      "compactness": 0.5944706786783764,
+      "boundary_area_ratio": 0.1937799043062201,
+      "mean_boundary_gradient": 0.0011589040169480132,
+      "boundary_fiedler_amplitude": 0.05267171917344815
+    },
+    {
+      "region_id": 50,
+      "n_cells": 221,
+      "fiedler": 0.016431400196753328,
+      "sensitivity": 0.6699504995617231,
+      "perimeter": 78,
+      "boundary_cells": 62,
+      "compactness": 0.4564707274446708,
+      "boundary_area_ratio": 0.28054298642533937,
+      "mean_boundary_gradient": 0.0013485146162367711,
+      "boundary_fiedler_amplitude": 0.07209303638650706
+    },
+    {
+      "region_id": 51,
+      "n_cells": 184,
+      "fiedler": 0.015175515112108937,
+      "sensitivity": 1.8362681627848532,
+      "perimeter": 74,
+      "boundary_cells": 61,
+      "compactness": 0.4222447394160131,
+      "boundary_area_ratio": 0.33152173913043476,
+      "mean_boundary_gradient": 0.00027886019052302983,
+      "boundary_fiedler_amplitude": 0.07717581407228188
+    },
+    {
+      "region_id": 52,
+      "n_cells": 530,
+      "fiedler": 0.008828641146460215,
+      "sensitivity": 0.8461638808122195,
+      "perimeter": 112,
+      "boundary_cells": 95,
+      "compactness": 0.530945186990622,
+      "boundary_area_ratio": 0.1792452830188679,
+      "mean_boundary_gradient": 0.0008162109590504424,
+      "boundary_fiedler_amplitude": 0.04627571700520837
+    },
+    {
+      "region_id": 53,
+      "n_cells": 319,
+      "fiedler": 0.009495321330938859,
+      "sensitivity": 1.6380379831828515,
+      "perimeter": 96,
+      "boundary_cells": 81,
+      "compactness": 0.4349687745204618,
+      "boundary_area_ratio": 0.25391849529780564,
+      "mean_boundary_gradient": 0.0005029895001618833,
+      "boundary_fiedler_amplitude": 0.05753416305150962
+    },
+    {
+      "region_id": 54,
+      "n_cells": 288,
+      "fiedler": 0.02053313081616708,
+      "sensitivity": 1.5960809549347825,
+      "perimeter": 80,
+      "boundary_cells": 61,
+      "compactness": 0.5654866776461628,
+      "boundary_area_ratio": 0.21180555555555555,
+      "mean_boundary_gradient": 0.001403582960608676,
+      "boundary_fiedler_amplitude": 0.04103660884550617
+    },
+    {
+      "region_id": 55,
+      "n_cells": 345,
+      "fiedler": 0.009517420440013157,
+      "sensitivity": 1.6289456443803965,
+      "perimeter": 104,
+      "boundary_cells": 81,
+      "compactness": 0.4008319029173368,
+      "boundary_area_ratio": 0.23478260869565218,
+      "mean_boundary_gradient": 0.001041276787577704,
+      "boundary_fiedler_amplitude": 0.056226269961743236
+    },
+    {
+      "region_id": 56,
+      "n_cells": 193,
+      "fiedler": 0.011948387134103929,
+      "sensitivity": 1.7357092049143308,
+      "perimeter": 76,
+      "boundary_cells": 64,
+      "compactness": 0.4198943089631787,
+      "boundary_area_ratio": 0.3316062176165803,
+      "mean_boundary_gradient": 0.0006114557938786208,
+      "boundary_fiedler_amplitude": 0.06976624127450076
+    },
+    {
+      "region_id": 57,
+      "n_cells": 55,
+      "fiedler": 0.09066875326758773,
+      "sensitivity": 1.0499702922722902,
+      "perimeter": 36,
+      "boundary_cells": 26,
+      "compactness": 0.5332950492204896,
+      "boundary_area_ratio": 0.4727272727272727,
+      "mean_boundary_gradient": 0.00034882917744802637,
+      "boundary_fiedler_amplitude": 0.13706139891737637
+    },
+    {
+      "region_id": 58,
+      "n_cells": 56,
+      "fiedler": 0.08760081357379619,
+      "sensitivity": 1.5079159352973035,
+      "perimeter": 38,
+      "boundary_cells": 25,
+      "compactness": 0.48733847257902607,
+      "boundary_area_ratio": 0.44642857142857145,
+      "mean_boundary_gradient": 0.0006109251973869737,
+      "boundary_fiedler_amplitude": 0.1365925112071775
+    },
+    {
+      "region_id": 60,
+      "n_cells": 372,
+      "fiedler": 0.019085646863740865,
+      "sensitivity": 0.03732531707654387,
+      "perimeter": 88,
+      "boundary_cells": 68,
+      "compactness": 0.6036531338509312,
+      "boundary_area_ratio": 0.1827956989247312,
+      "mean_boundary_gradient": 0.0006024155438411392,
+      "boundary_fiedler_amplitude": 0.05497744837724016
+    }
+  ]
+}

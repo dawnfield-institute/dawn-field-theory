@@ -1,0 +1,935 @@
+{
+  "experiment": "exp_04_confluence_test_v2",
+  "timestamp": "2026-03-28T08:23:43.232870",
+  "version": 2,
+  "test1_correlation": {
+    "global_spearman_rho": 0.41814989224998006,
+    "global_spearman_p": 0.0004297664941109957,
+    "global_pearson_r": 0.6777045680754388,
+    "natural_vs_size_rho": 0.7704602368912156,
+    "n_pairs": 67,
+    "per_parent": [
+      {
+        "level": 1,
+        "parent_id": 1,
+        "n_children": 25,
+        "parent_n_cells": 9812,
+        "rho_coupling_natural": 0.07692307692307691,
+        "p_coupling_natural": 0.7147630179938111,
+        "rho_coupling_size": 0.04308520949098009,
+        "rho_natural_size": 0.7032121691920679,
+        "gini_natural": 0.5446554169011062,
+        "children": [
+          {
+            "id": 1,
+            "coupling_w": 0.04210460780849601,
+            "natural_w": 0.02122289602957225,
+            "size_frac": 0.025479005299633102
+          },
+          {
+            "id": 2,
+            "coupling_w": 0.0431484134184945,
+            "natural_w": 0.007323612099341425,
+            "size_frac": 0.0185487158581329
+          },
+          {
+            "id": 3,
+            "coupling_w": 0.04130743191369628,
+            "natural_w": 0.006598083577920821,
+            "size_frac": 0.016000815328169587
+          },
+          {
+            "id": 4,
+            "coupling_w": 0.04440894565139435,
+            "natural_w": 0.02434372216000906,
+            "size_frac": 0.01691805951895638
+          },
+          {
+            "id": 5,
+            "coupling_w": 0.045530575297407415,
+            "natural_w": 0.003627249580107907,
+            "size_frac": 0.014675907052588666
+          },
+          {
+            "id": 6,
+            "coupling_w": 0.046386266215966074,
+            "natural_w": 0.039348555837901276,
+            "size_frac": 0.103750509580106
+          },
+          {
+            "id": 7,
+            "coupling_w": 0.03386083717783098,
+            "natural_w": 0.04791044735501214,
+            "size_frac": 0.03770892784345699
+          },
+          {
+            "id": 8,
+            "coupling_w": 0.04975733194666253,
+            "natural_w": 0.09921697509678976,
+            "size_frac": 0.11812066856909906
+          },
+          {
+            "id": 9,
+            "coupling_w": 0.04580758311669698,
+            "natural_w": 0.024813643454172814,
+            "size_frac": 0.030778638401956788
+          },
+          {
+            "id": 10,
+            "coupling_w": 0.0467172666155196,
+            "natural_w": 0.011396162265269766,
+            "size_frac": 0.025173257236037506
+          },
+          {
+            "id": 11,
+            "coupling_w": 0.04096751394513488,
+            "natural_w": 0.0062931801239609975,
+            "size_frac": 0.033734203016714225
+          },
+          {
+            "id": 13,
+            "coupling_w": 0.018950332413536226,
+            "natural_w": 0.01809373247782806,
+            "size_frac": 0.036180187525479
+          },
+          {
+            "id": 14,
+            "coupling_w": 0.01815790036961499,
+            "natural_w": 0.06484147110566003,
+            "size_frac": 0.05839788014675907
+          },
+          {
+            "id": 16,
+            "coupling_w": 0.033530909671623456,
+            "natural_w": 0.006903748416364752,
+            "size_frac": 0.003261312678353037
+          },
+          {
+            "id": 17,
+            "coupling_w": 0.048293594592701515,
+            "natural_w": 0.01821596609171978,
+            "size_frac": 0.0704239706481859
+          },
+          {
+            "id": 43,
+            "coupling_w": 0.05148202389243804,
+            "natural_w": 0.08353724971921647,
+            "size_frac": 0.052792498980839785
+          },
+          {
+            "id": 44,
+            "coupling_w": 0.031992146252913564,
+            "natural_w": 0.0941213385899486,
+            "size_frac": 0.06492050550346515
+          },
+          {
+            "id": 48,
+            "coupling_w": 0.043562383092087056,
+            "natural_w": 0.20105713679221404,
+            "size_frac": 0.032511210762331835
+          },
+          {
+            "id": 49,
+            "coupling_w": 0.038925028867384096,
+            "natural_w": 0.03301265749099505,
+            "size_frac": 0.042600896860986545
+          },
+          {
+            "id": 51,
+            "coupling_w": 0.03140157810555558,
+            "natural_w": 0.004554017627432966,
+            "size_frac": 0.018752547900529964
+          },
+          {
+            "id": 52,
+            "coupling_w": 0.0345971402400345,
+            "natural_w": 0.1072596453668967,
+            "size_frac": 0.054015491235222174
+          },
+          {
+            "id": 53,
+            "coupling_w": 0.028301536010842242,
+            "natural_w": 0.005819649840174816,
+            "size_frac": 0.032511210762331835
+          },
+          {
+            "id": 55,
+            "coupling_w": 0.055202503154662436,
+            "natural_w": 0.016379759021935118,
+            "size_frac": 0.03516102731349368
+          },
+          {
+            "id": 56,
+            "coupling_w": 0.0483628790209327,
+            "natural_w": 0.013353122612915186,
+            "size_frac": 0.019669792091316755
+          },
+          {
+            "id": 60,
+            "coupling_w": 0.03724327120837406,
+            "natural_w": 0.04075597726664005,
+            "size_frac": 0.037912759885854054
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "parent_id": 6,
+        "n_children": 2,
+        "parent_n_cells": 697,
+        "rho_coupling_natural": 1.0,
+        "p_coupling_natural": NaN,
+        "rho_coupling_size": -1.0,
+        "rho_natural_size": -1.0,
+        "gini_natural": 0.07963528685393628,
+        "children": [
+          {
+            "id": 19,
+            "coupling_w": 0.4988933069239975,
+            "natural_w": 0.4203647131460637,
+            "size_frac": 0.5681492109038737
+          },
+          {
+            "id": 34,
+            "coupling_w": 0.5011066930760024,
+            "natural_w": 0.5796352868539362,
+            "size_frac": 0.43185078909612623
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "parent_id": 10,
+        "n_children": 3,
+        "parent_n_cells": 799,
+        "rho_coupling_natural": -1.0,
+        "p_coupling_natural": 0.0,
+        "rho_coupling_size": -0.5,
+        "rho_natural_size": 0.5,
+        "gini_natural": 0.6212770900464804,
+        "children": [
+          {
+            "id": 24,
+            "coupling_w": 0.3456976356429126,
+            "natural_w": 0.012842794402041415,
+            "size_frac": 0.08010012515644556
+          },
+          {
+            "id": 26,
+            "coupling_w": 0.3355130621736772,
+            "natural_w": 0.042398776126197,
+            "size_frac": 0.07634543178973717
+          },
+          {
+            "id": 36,
+            "coupling_w": 0.31878930218341023,
+            "natural_w": 0.9447584294717616,
+            "size_frac": 0.8435544430538173
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "parent_id": 15,
+        "n_children": 3,
+        "parent_n_cells": 739,
+        "rho_coupling_natural": -0.5,
+        "p_coupling_natural": 0.6666666666666667,
+        "rho_coupling_size": -1.0,
+        "rho_natural_size": 0.5,
+        "gini_natural": 0.3636313935452875,
+        "children": [
+          {
+            "id": 40,
+            "coupling_w": 0.2839134934348668,
+            "natural_w": 0.44917117660564393,
+            "size_frac": 0.7158322056833559
+          },
+          {
+            "id": 42,
+            "coupling_w": 0.37955446015397354,
+            "natural_w": 0.0026908665382122513,
+            "size_frac": 0.013531799729364006
+          },
+          {
+            "id": 46,
+            "coupling_w": 0.3365320464111598,
+            "natural_w": 0.5481379568561437,
+            "size_frac": 0.2706359945872801
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "parent_id": 18,
+        "n_children": 2,
+        "parent_n_cells": 314,
+        "rho_coupling_natural": 1.0,
+        "p_coupling_natural": NaN,
+        "rho_coupling_size": 1.0,
+        "rho_natural_size": 1.0,
+        "gini_natural": 0.02654538605431367,
+        "children": [
+          {
+            "id": 33,
+            "coupling_w": 0.49337661080764245,
+            "natural_w": 0.47345461394568616,
+            "size_frac": 0.25796178343949044
+          },
+          {
+            "id": 41,
+            "coupling_w": 0.5066233891923576,
+            "natural_w": 0.5265453860543138,
+            "size_frac": 0.7420382165605095
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "parent_id": 21,
+        "n_children": 2,
+        "parent_n_cells": 354,
+        "rho_coupling_natural": 1.0,
+        "p_coupling_natural": NaN,
+        "rho_coupling_size": 1.0,
+        "rho_natural_size": 0.9999999999999999,
+        "gini_natural": 0.2840238470302865,
+        "children": [
+          {
+            "id": 38,
+            "coupling_w": 0.43653170503220845,
+            "natural_w": 0.21597615296971365,
+            "size_frac": 0.24858757062146894
+          },
+          {
+            "id": 39,
+            "coupling_w": 0.5634682949677916,
+            "natural_w": 0.7840238470302864,
+            "size_frac": 0.751412429378531
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "parent_id": 1,
+        "n_children": 20,
+        "parent_n_cells": 15270,
+        "rho_coupling_natural": 0.0015037593984962405,
+        "p_coupling_natural": 0.9949797739432688,
+        "rho_coupling_size": -0.0706766917293233,
+        "rho_natural_size": 0.7187969924812029,
+        "gini_natural": 0.6545321231261425,
+        "children": [
+          {
+            "id": 1,
+            "coupling_w": 0.05628908082596802,
+            "natural_w": 0.37619522933707417,
+            "size_frac": 0.6425671250818599
+          },
+          {
+            "id": 3,
+            "coupling_w": 0.06413767245942548,
+            "natural_w": 0.043659676540179895,
+            "size_frac": 0.0020301244269810086
+          },
+          {
+            "id": 5,
+            "coupling_w": 0.045070638290919465,
+            "natural_w": 0.02038913699726902,
+            "size_frac": 0.012901113294040603
+          },
+          {
+            "id": 6,
+            "coupling_w": 0.05048285427948374,
+            "natural_w": 0.012834129101037803,
+            "size_frac": 0.04564505566470203
+          },
+          {
+            "id": 8,
+            "coupling_w": 0.04869916316306418,
+            "natural_w": 0.011078643404519396,
+            "size_frac": 0.008840864440078585
+          },
+          {
+            "id": 10,
+            "coupling_w": 0.058424104702238036,
+            "natural_w": 0.09845049134955362,
+            "size_frac": 0.05232481990831696
+          },
+          {
+            "id": 11,
+            "coupling_w": 0.03425367810213532,
+            "natural_w": 0.04176885841802258,
+            "size_frac": 0.020497707924034055
+          },
+          {
+            "id": 13,
+            "coupling_w": 0.05663074484440461,
+            "natural_w": 0.08567636300283255,
+            "size_frac": 0.021741977734119188
+          },
+          {
+            "id": 14,
+            "coupling_w": 0.054886742462370956,
+            "natural_w": 0.021484025219779324,
+            "size_frac": 0.0033398821218074658
+          },
+          {
+            "id": 15,
+            "coupling_w": 0.05760287498011588,
+            "natural_w": 0.03908617959213277,
+            "size_frac": 0.04839554682383759
+          },
+          {
+            "id": 17,
+            "coupling_w": 0.06221658100947341,
+            "natural_w": 0.0020259375428760018,
+            "size_frac": 0.007989521938441388
+          },
+          {
+            "id": 18,
+            "coupling_w": 0.0463902580563009,
+            "natural_w": 0.02900481216199649,
+            "size_frac": 0.020563195808775376
+          },
+          {
+            "id": 19,
+            "coupling_w": 0.06609225577833841,
+            "natural_w": 0.002302253472666052,
+            "size_frac": 0.0005893909626719057
+          },
+          {
+            "id": 21,
+            "coupling_w": 0.049137327077116946,
+            "natural_w": 0.021308644066596247,
+            "size_frac": 0.02318271119842829
+          },
+          {
+            "id": 22,
+            "coupling_w": 0.04555805747926878,
+            "natural_w": 0.009533886883200098,
+            "size_frac": 0.001768172888015717
+          },
+          {
+            "id": 23,
+            "coupling_w": 0.039518387562978076,
+            "natural_w": 0.1440819682768749,
+            "size_frac": 0.05455140798952194
+          },
+          {
+            "id": 24,
+            "coupling_w": 0.01954852144858645,
+            "natural_w": 0.03094189747774337,
+            "size_frac": 0.02547478716437459
+          },
+          {
+            "id": 27,
+            "coupling_w": 0.04836103390619106,
+            "natural_w": 0.009036466674841854,
+            "size_frac": 0.003601833660772757
+          },
+          {
+            "id": 28,
+            "coupling_w": 0.05753902075209002,
+            "natural_w": 0.0007052341891005338,
+            "size_frac": 0.00366732154551408
+          },
+          {
+            "id": 29,
+            "coupling_w": 0.03916100281953015,
+            "natural_w": 0.0004361662917034881,
+            "size_frac": 0.0003274394237066143
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "parent_id": 5,
+        "n_children": 2,
+        "parent_n_cells": 100,
+        "rho_coupling_natural": -1.0,
+        "p_coupling_natural": NaN,
+        "rho_coupling_size": -1.0,
+        "rho_natural_size": 1.0,
+        "gini_natural": 0.12155798994362321,
+        "children": [
+          {
+            "id": 9,
+            "coupling_w": 0.44238199673146045,
+            "natural_w": 0.6215579899436231,
+            "size_frac": 0.92
+          },
+          {
+            "id": 20,
+            "coupling_w": 0.5576180032685396,
+            "natural_w": 0.3784420100563768,
+            "size_frac": 0.08
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "parent_id": 1,
+        "n_children": 5,
+        "parent_n_cells": 15939,
+        "rho_coupling_natural": 0.3,
+        "p_coupling_natural": 0.6238376647810728,
+        "rho_coupling_size": 0.39999999999999997,
+        "rho_natural_size": 0.8999999999999998,
+        "gini_natural": 0.6376909438761686,
+        "children": [
+          {
+            "id": 1,
+            "coupling_w": 0.25231885998537845,
+            "natural_w": 0.7650026609194153,
+            "size_frac": 0.9580274797666102
+          },
+          {
+            "id": 3,
+            "coupling_w": 0.004803046504188827,
+            "natural_w": 0.013488241175113068,
+            "size_frac": 0.00683857205596336
+          },
+          {
+            "id": 4,
+            "coupling_w": 0.29086758567940374,
+            "natural_w": 0.018930703652130648,
+            "size_frac": 0.007152268021833239
+          },
+          {
+            "id": 7,
+            "coupling_w": 0.2426293812533649,
+            "natural_w": 0.09244917039939336,
+            "size_frac": 0.014116318464144552
+          },
+          {
+            "id": 8,
+            "coupling_w": 0.20938112657766403,
+            "natural_w": 0.11012922385394754,
+            "size_frac": 0.013865361691448648
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "parent_id": 1,
+        "n_children": 3,
+        "parent_n_cells": 16079,
+        "rho_coupling_natural": -0.5,
+        "p_coupling_natural": 0.6666666666666667,
+        "rho_coupling_size": -0.5,
+        "rho_natural_size": 1.0,
+        "gini_natural": 0.6438739146431436,
+        "children": [
+          {
+            "id": 1,
+            "coupling_w": 0.34413488371617157,
+            "natural_w": 0.9665424164746494,
+            "size_frac": 0.9912929908576404
+          },
+          {
+            "id": 2,
+            "coupling_w": 0.372623458265174,
+            "natural_w": 0.0007315445099339973,
+            "size_frac": 0.0024877168978170282
+          },
+          {
+            "id": 3,
+            "coupling_w": 0.2832416580186545,
+            "natural_w": 0.032726039015416625,
+            "size_frac": 0.0062192922445425715
+          }
+        ]
+      }
+    ]
+  },
+  "test2_scalar_reconstruction": {
+    "mean_err_coupling": 6.1238106556095175,
+    "mean_err_mean": 6.046252565875202,
+    "mean_err_size": 1.3301160760063166,
+    "detailed": [
+      {
+        "level": 1,
+        "parent_id": 1,
+        "scalar": "fiedler",
+        "actual": 0.0005337720826104984,
+        "pred_coupling": 0.01727144427700829,
+        "pred_mean": 0.017449036648267968,
+        "pred_size": 0.01166454429325157,
+        "err_coupling": 31.35733909594551,
+        "err_mean": 31.69005108491054,
+        "err_size": 20.853043036989465
+      },
+      {
+        "level": 1,
+        "parent_id": 1,
+        "scalar": "entropy",
+        "actual": 2.07968987993742,
+        "pred_coupling": 2.147611551600037,
+        "pred_mean": 2.154871030177186,
+        "pred_size": 2.1141896355733247,
+        "err_coupling": 0.03265951924748559,
+        "err_mean": 0.03615017362205387,
+        "err_size": 0.016588894319639096
+      },
+      {
+        "level": 1,
+        "parent_id": 1,
+        "scalar": "harmonic",
+        "actual": 0.005714808601458625,
+        "pred_coupling": 0.005705764767006217,
+        "pred_mean": 0.00570462712362317,
+        "pred_size": 0.005714808601458625,
+        "err_coupling": 0.0015825262197055145,
+        "err_mean": 0.0017815955958445401,
+        "err_size": 0.0
+      },
+      {
+        "level": 1,
+        "parent_id": 6,
+        "scalar": "fiedler",
+        "actual": 0.002530889989401568,
+        "pred_coupling": 0.014122276570251368,
+        "pred_mean": 0.014130905393629607,
+        "pred_size": 0.014662260940172762,
+        "err_coupling": 4.579964609044906,
+        "err_mean": 4.583374011829843,
+        "err_size": 4.793322112603905
+      },
+      {
+        "level": 1,
+        "parent_id": 6,
+        "scalar": "entropy",
+        "actual": 2.0791093136242553,
+        "pred_coupling": 2.112352814436936,
+        "pred_mean": 2.1123773304442555,
+        "pred_size": 2.1138870051584018,
+        "err_coupling": 0.015989299165194676,
+        "err_mean": 0.016001090756506728,
+        "err_size": 0.01672720684105001
+      },
+      {
+        "level": 1,
+        "parent_id": 6,
+        "scalar": "harmonic",
+        "actual": 0.0061742666250706214,
+        "pred_coupling": 0.006192283371653872,
+        "pred_mean": 0.006191995468275972,
+        "pred_size": 0.0061742666250706214,
+        "err_coupling": 0.002918038315690974,
+        "err_mean": 0.0028714087489127853,
+        "err_size": 0.0
+      },
+      {
+        "level": 1,
+        "parent_id": 10,
+        "scalar": "fiedler",
+        "actual": 0.006093312573777077,
+        "pred_coupling": 0.09098901416059826,
+        "pred_mean": 0.08905814039015443,
+        "pred_size": 0.0252368345372795,
+        "err_coupling": 13.932602432404472,
+        "err_mean": 13.615718348900675,
+        "err_size": 3.141726561982809
+      },
+      {
+        "level": 1,
+        "parent_id": 10,
+        "scalar": "entropy",
+        "actual": 2.0918490526694864,
+        "pred_coupling": 2.115046545418801,
+        "pred_mean": 2.114730800900628,
+        "pred_size": 2.1038512584312756,
+        "err_coupling": 0.011089467817819658,
+        "err_mean": 0.01093852742478773,
+        "err_size": 0.005737606041159023
+      },
+      {
+        "level": 1,
+        "parent_id": 10,
+        "scalar": "harmonic",
+        "actual": 0.005063397668207085,
+        "pred_coupling": 0.005100649103285478,
+        "pred_mean": 0.005100417670242152,
+        "pred_size": 0.005063397668207085,
+        "err_coupling": 0.00735700364051714,
+        "err_mean": 0.007311296576112742,
+        "err_size": 0.0
+      },
+      {
+        "level": 1,
+        "parent_id": 15,
+        "scalar": "fiedler",
+        "actual": 0.00682525115419266,
+        "pred_coupling": 0.22845808515498608,
+        "pred_mean": 0.20257481420470003,
+        "pred_size": 0.022924309937720364,
+        "err_coupling": 32.472480351820444,
+        "err_mean": 28.680199252482065,
+        "err_size": 2.3587496518184405
+      },
+      {
+        "level": 1,
+        "parent_id": 15,
+        "scalar": "entropy",
+        "actual": 2.124376197554563,
+        "pred_coupling": 2.067515614968065,
+        "pred_mean": 2.072107192581735,
+        "pred_size": 2.103982457317315,
+        "err_coupling": 0.026765778420955788,
+        "err_mean": 0.02460440153349334,
+        "err_size": 0.009599872311092612
+      },
+      {
+        "level": 1,
+        "parent_id": 15,
+        "scalar": "harmonic",
+        "actual": 0.005839001788861721,
+        "pred_coupling": 0.006282282766220188,
+        "pred_mean": 0.006243662899401201,
+        "pred_size": 0.005839001788861721,
+        "err_coupling": 0.07591725322023006,
+        "err_mean": 0.06930313179751518,
+        "err_size": 0.0
+      },
+      {
+        "level": 1,
+        "parent_id": 18,
+        "scalar": "fiedler",
+        "actual": 0.005118059664095317,
+        "pred_coupling": 0.037793263949410176,
+        "pred_mean": 0.03818317859689634,
+        "pred_size": 0.02393454498236313,
+        "err_coupling": 6.3842953052178295,
+        "err_mean": 6.460479381425745,
+        "err_size": 3.6764880742339274
+      },
+      {
+        "level": 1,
+        "parent_id": 18,
+        "scalar": "entropy",
+        "actual": 2.0731366942840395,
+        "pred_coupling": 2.1026905675143013,
+        "pred_mean": 2.1029483506947138,
+        "pred_size": 2.093528191402576,
+        "err_coupling": 0.014255631725465298,
+        "err_mean": 0.014379976242217726,
+        "err_size": 0.009836060099056241
+      },
+      {
+        "level": 1,
+        "parent_id": 18,
+        "scalar": "harmonic",
+        "actual": 0.006921925436887872,
+        "pred_coupling": 0.007677068500170606,
+        "pred_mean": 0.00769831442788021,
+        "pred_size": 0.006921925436887871,
+        "err_coupling": 0.10909436545767537,
+        "err_mean": 0.11216373219722137,
+        "err_size": 1.2530642606549772e-16
+      },
+      {
+        "level": 1,
+        "parent_id": 21,
+        "scalar": "fiedler",
+        "actual": 0.01771575613576993,
+        "pred_coupling": 0.03842155765167922,
+        "pred_mean": 0.039880798989763794,
+        "pred_size": 0.03410041037142154,
+        "err_coupling": 1.1687788744224687,
+        "err_mean": 1.2511485642568267,
+        "err_size": 0.9248633877144191
+      },
+      {
+        "level": 1,
+        "parent_id": 21,
+        "scalar": "entropy",
+        "actual": 2.120007746294618,
+        "pred_coupling": 2.1181150280086536,
+        "pred_mean": 2.118599933847246,
+        "pred_size": 2.1166791109393426,
+        "err_coupling": 0.0008927883821520883,
+        "err_mean": 0.0006640600487581126,
+        "err_size": 0.0015701052796118866
+      },
+      {
+        "level": 1,
+        "parent_id": 21,
+        "scalar": "harmonic",
+        "actual": 0.005576976650576157,
+        "pred_coupling": 0.005521578839282976,
+        "pred_mean": 0.005502871127873158,
+        "pred_size": 0.005576976650576157,
+        "err_coupling": 0.009933305223260783,
+        "err_mean": 0.013287759183164294,
+        "err_size": 0.0
+      },
+      {
+        "level": 2,
+        "parent_id": 1,
+        "scalar": "fiedler",
+        "actual": 0.001462888523323941,
+        "pred_coupling": 0.0888673821517374,
+        "pred_mean": 0.08772161073381558,
+        "pred_size": 0.005910994227621363,
+        "err_coupling": 59.74788388506547,
+        "err_mean": 58.96465850619816,
+        "err_size": 3.0406320327043783
+      },
+      {
+        "level": 2,
+        "parent_id": 1,
+        "scalar": "entropy",
+        "actual": 2.1870539301563703,
+        "pred_coupling": 2.169938605406765,
+        "pred_mean": 2.153720484059818,
+        "pred_size": 2.0929144295609388,
+        "err_coupling": 0.007825744264286021,
+        "err_mean": 0.015241254747736892,
+        "err_size": 0.04304397769866639
+      },
+      {
+        "level": 2,
+        "parent_id": 1,
+        "scalar": "harmonic",
+        "actual": 0.0059753744866693536,
+        "pred_coupling": 0.007576125339314229,
+        "pred_mean": 0.00737215027145276,
+        "pred_size": 0.005975374486669353,
+        "err_coupling": 0.2678913022465407,
+        "err_mean": 0.23375535506590964,
+        "err_size": 1.4515604669184873e-16
+      },
+      {
+        "level": 2,
+        "parent_id": 5,
+        "scalar": "fiedler",
+        "actual": 0.0377792409319438,
+        "pred_coupling": 0.1167946534221859,
+        "pred_mean": 0.10958808989547301,
+        "pred_size": 0.05705664990244354,
+        "err_coupling": 2.0915034431893376,
+        "err_mean": 1.9007488555126095,
+        "err_size": 0.5102645922724043
+      },
+      {
+        "level": 2,
+        "parent_id": 5,
+        "scalar": "entropy",
+        "actual": 2.120358652211621,
+        "pred_coupling": 1.8816583903076438,
+        "pred_mean": 1.907047213311407,
+        "pred_size": 2.0921162031526768,
+        "err_coupling": 0.11257541815154858,
+        "err_mean": 0.10060158392436182,
+        "err_size": 0.01331965657295114
+      },
+      {
+        "level": 2,
+        "parent_id": 5,
+        "scalar": "harmonic",
+        "actual": 0.008247339580367915,
+        "pred_coupling": 0.008878562461441673,
+        "pred_mean": 0.008802414155104837,
+        "pred_size": 0.008247339580367916,
+        "err_coupling": 0.07653654550326187,
+        "err_mean": 0.06730347032856054,
+        "err_size": 2.1033734079604986e-16
+      },
+      {
+        "level": 3,
+        "parent_id": 1,
+        "scalar": "fiedler",
+        "actual": 0.002011580105540734,
+        "pred_coupling": 0.020864231709284253,
+        "pred_mean": 0.027324397199803886,
+        "pred_size": 0.002551439377031829,
+        "err_coupling": 9.372061073683344,
+        "err_mean": 12.583549133603215,
+        "err_size": 0.26837572612884175
+      },
+      {
+        "level": 3,
+        "parent_id": 1,
+        "scalar": "entropy",
+        "actual": 2.1722961798853726,
+        "pred_coupling": 2.124840889019994,
+        "pred_mean": 2.121659486887502,
+        "pred_size": 2.1834413512410857,
+        "err_coupling": 0.021845681682266176,
+        "err_mean": 0.023310215921174486,
+        "err_size": 0.00513059474067723
+      },
+      {
+        "level": 3,
+        "parent_id": 1,
+        "scalar": "harmonic",
+        "actual": 0.006089701354974901,
+        "pred_coupling": 0.008169585977239444,
+        "pred_mean": 0.007680508494303287,
+        "pred_size": 0.006089701354974902,
+        "err_coupling": 0.34154131722158537,
+        "err_mean": 0.2612290893425398,
+        "err_size": 1.4243091531568807e-16
+      },
+      {
+        "level": 4,
+        "parent_id": 1,
+        "scalar": "fiedler",
+        "actual": 0.002022116526968312,
+        "pred_coupling": 0.04481172090843788,
+        "pred_mean": 0.04315867529229861,
+        "pred_size": 0.0024521367988671323,
+        "err_coupling": 21.16080048344264,
+        "err_mean": 20.34331761631193,
+        "err_size": 0.21265850219983218
+      },
+      {
+        "level": 4,
+        "parent_id": 1,
+        "scalar": "entropy",
+        "actual": 2.1712490060263905,
+        "pred_coupling": 2.6360200891517875,
+        "pred_mean": 2.5829713797058873,
+        "pred_size": 2.175167301989859,
+        "err_coupling": 0.2140570159550589,
+        "err_mean": 0.18962466881354664,
+        "err_size": 0.001804627637177079
+      },
+      {
+        "level": 4,
+        "parent_id": 1,
+        "scalar": "harmonic",
+        "actual": 0.006103036041304446,
+        "pred_coupling": 0.006688208027706824,
+        "pred_mean": 0.006797619088051078,
+        "pred_size": 0.006103036041304444,
+        "err_coupling": 0.09588211218841321,
+        "err_mean": 0.11380942895399648,
+        "err_size": 2.8423942841500047e-16
+      }
+    ]
+  },
+  "test3_nonuniformity": {
+    "mean_gini": 0.3977423392020488,
+    "gini_values": [
+      0.5446554169011062,
+      0.07963528685393628,
+      0.6212770900464804,
+      0.3636313935452875,
+      0.02654538605431367,
+      0.2840238470302865,
+      0.6545321231261425,
+      0.12155798994362321,
+      0.6376909438761686,
+      0.6438739146431436
+    ]
+  },
+  "verdicts": {
+    "Coupling predicts contribution": true,
+    "Weighted reconstruction": false,
+    "Non-uniform, not-size": true
+  },
+  "n_supported": 2,
+  "n_total": 3
+}

@@ -1,0 +1,11 @@
+{
+  "experiment": "exp_05_obstacle_insertion",
+  "verdicts": {
+    "claim3": "SUPPORTED",
+    "claim4_cascade": true,
+    "key_ratio_l2": 1.7,
+    "key_ratio_composite": 1.7,
+    "size_ratio": 7.7
+  },
+  "note": "Full run completed, JSON serialization fixed. See console output for detailed results."
+}
