@@ -1,0 +1,7 @@
+{
+  "experiment": "exp_30p_rbf_from_ade",
+  "date": "20260328_184011",
+  "checks": [
+    {
+      "name": "rbf_components_from_ade",
+      "passed": 

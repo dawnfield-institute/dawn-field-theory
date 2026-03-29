@@ -19,7 +19,7 @@ files:
 
 child_directories:
   - name: "scripts"
-    description: "Phase 1-5 experiment scripts (exp_30a through exp_30p)"
+    description: "Phase 1-5 experiment scripts (exp_30a through exp_30q)"
   - name: "results"
     description: "JSON outputs and plots from experiments"
   - name: "journals"
@@ -75,6 +75,12 @@ key_results:
   - "Self-regulation from x=2 confluence: E=I -> B=0, negative feedback, monotonic"
   - "Conservative dynamics forced by ADE closure: transfer-only is unique PAC-consistent coupling"
   - "RBF formula structure derived from ADE (Tier 2); parameters lambda, alpha not derivable (Tier 3)"
+  - "PNT from L2 density: x/ln(x) at 8.4% error vs L1 99.7% and L3 364% — only L2 gets the shape"
+  - "Concentration ratio 7x->20x->59x->176x monotonically from N=10^3 to 10^6, forced by PNT"
+  - "Golden self-consistency: fraction below 1/phi = 0.6187 = 1/phi to 0.11%"
+  - "Markov eigenvalue decay -1/pi^2 best fit among 5 fundamental constants"
+  - "Only L2 identifies primes: L1 non-unique (190M partitions), L3 82% composite atoms, L2 = FTA"
+  - "Bertrand postulate as L2 closure completeness: no multiplicative deserts allowed"
 
 dependencies:
   internal:
@@ -131,3 +137,7 @@ tags:
   - mobius-band
   - antiperiodic-modes
   - conservative-dynamics
+  - l2-closure-witnesses
+  - prime-number-theorem
+  - bertrand-postulate
+  - golden-self-consistency

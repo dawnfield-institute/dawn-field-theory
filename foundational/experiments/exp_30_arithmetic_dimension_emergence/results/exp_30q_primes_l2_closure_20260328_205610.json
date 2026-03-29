@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_30q_primes_l2_closure",
+  "date": "20260328_205610",
+  "checks": [
+    {
+      "name": "PNT from L2 density",
+      "passed": false,
+      "details": "PNT ratio=1.1049, L1 err=6.7%, L3 err=363.8%. Tier 2: PNT is known; ADE says WHY density is 1/ln(n) (L2 log-space information rate)."
+    },
+    {
+      "name": "Concentration scaling with N",
+      "passed": true,
+      "details": "Ratios: ['7x', '20x', '59x', '176x']. Monotonic=True. Tier 1/2: concentration growth is forced by PNT in L2 natural coordinates."
+    },
+    {
+      "name": "Phi partition from golden closure",
+      "passed": false,
+      "details": "Transition=0.8531 vs 1/phi=0.6180 (38.0% error). Split: 61.9%/38.1%. Tier 2/3: partition exists near 1/phi but detection method has arbitrariness."
+    },
+    {
+      "name": "Markov decay from L3 periodicity",
+      "passed": false,
+      "details": "Slope=-0.03622 vs -1/pi^2=-0.10132 (64.3% error). Best fit: -1/pi^2. Tier 2: -1/pi^2 = L3 periodicity^2 governing L2 gap correlations."
+    },
+    {
+      "name": "L1 and L3 closure failure",
+      "passed": false,
+      "details": "L1: p(100)=190,569,292 (non-unique). L3: 82% composite atoms. L2: exact prime match. CV primes=0.0867 vs L3 atoms=0.0325. Tier 1: FTA, partition function, and perfect powers are mathematical facts."
+    },
+    {
+      "name": "Bertrand postulate as L2 completeness",
+      "passed": false,
+      "details": "Bertrand holds to 100000. Growth errors: ['48%', '46%', '47%', '48%']. Coverage: ['21%', '15%', '14%', '11%']. Tier 1: Bertrand is a theorem; reframed as L2 closure completeness."
+    }
+  ],
+  "passed": 1,
+  "failed": 5,
+  "total": 6
+}
