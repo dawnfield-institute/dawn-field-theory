@@ -1,0 +1,42 @@
+{
+  "experiment": "exp_06_neutrino_masses_from_scope",
+  "milestone": 6,
+  "block": "B",
+  "model": {
+    "N_base": 61,
+    "gen_spacing": 2,
+    "N_depths": {
+      "nu_1": 61,
+      "nu_2": 59,
+      "nu_3": 57
+    },
+    "formula": "m_nu_i = v_H * phi^{-N_i}, N_i = N_base - i*gen_spacing"
+  },
+  "masses_ev": {
+    "m1": 0.04396198277157355,
+    "m2": 0.11509396510881685,
+    "m3": 0.30131991255487706,
+    "sum": 0.46037586043526746
+  },
+  "splittings": {
+    "dm2_21": 0.011313964875261422,
+    "dm2_31": 0.08886103377287062,
+    "ratio": 7.8541019662496865,
+    "ratio_measured": 33.921832884097036,
+    "ratio_error_pct": 76.84646937243835
+  },
+  "hierarchy": "NORMAL",
+  "charged_lepton_phi_powers": {
+    "mu_e": 11.079513997886576,
+    "tau_e": 16.94469733438337,
+    "tau_mu": 5.865183336496795
+  },
+  "verification": {
+    "test1_sum_bound": "False",
+    "test2_splitting_ratio": "False",
+    "test3_normal_hierarchy": "True",
+    "test4_m1_light": "False",
+    "verified_count": "1"
+  },
+  "timestamp": "2026-03-29T13:00:57.494055"
+}

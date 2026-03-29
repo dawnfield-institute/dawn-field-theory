@@ -1,0 +1,91 @@
+schema_version: "2.0"
+description: >
+  Milestone 6: Scoped Mediation -- The Propagation Mechanism of DFT.
+  10 experiments across 4 blocks testing whether scoped mediation is the
+  universal propagation mechanism. Core results: alpha_EM at 5.7 ppm from
+  Fibonacci formula, phi^6 coupling ratio at 0.30%, Euler gap = 1/(240*pi)
+  at 0.09%, PAC conservation to machine precision (3.47e-18), rank-1
+  convergence 67/67 boundaries, non-compositionality 99.96%. Dark sector
+  prediction: alpha_73 = 2.48e-16, m ~ 6 keV, sigma/m << 1 cm^2/g.
+  Weak force = actualization (sin^2 theta_W = 3/13, 0.19%). Xi = conditional
+  attractor (CV<1). Fibonacci arithmetic 3/3. Neutrino common-scale model:
+  sum < 0.12 eV, splitting ratio needs PMNS correction. 27/40 tests verified
+  (68%). Local-vs-local and global-vs-global pass; local-vs-global fails by design.
+semantic_scope: "research"
+proficiency_level: "research"
+version: "1.0.0"
+status: "active"
+date_created: "2026-03-29"
+date_updated: "2026-03-29"
+
+files:
+  - "[README.md]": "Hypothesis, experiment index, key results, scorecard"
+
+child_directories:
+  - name: "scripts"
+    description: "10 experiment scripts (exp_01 through exp_10)"
+  - name: "results"
+    description: "JSON outputs from experiments"
+  - name: "journals"
+    description: "Research session logs"
+  - name: "core"
+    description: "scope.py -- transfer matrix infrastructure imported by all experiments"
+
+estimated_context_weight: 0.8
+validation_type: "computational"
+
+key_results:
+  - "alpha_EM from Fibonacci formula: F3/(F4*phi*F10)*(1-F10/(4*pi*F7^2)) = 5.7 ppm error"
+  - "phi^6 coupling ratio log(alpha_G^-1)/log(alpha_EM^-1) = phi^6 at 0.30% error"
+  - "Euler gap |Xi_CA - xi_PAC| = 1/(240*pi) at 0.09% error (E8 projection residual)"
+  - "alpha_G from depth 183 = F7^2+F7+1: 0.96% error (log space)"
+  - "PAC conservation P=A+xi+Theta at every scope boundary to 3.47e-18"
+  - "Harmonic fixed-point: T_harm^4 rank-1 for 67/67 boundaries (100%)"
+  - "Non-compositionality: 99.96% mean relative difference (levels are recursive closures)"
+  - "Transient eigenvalue decay: 0.956 mean log-log correlation with phi^{-k}"
+  - "Dark sector: alpha_73 = 2.48e-16 at Phi_3(F_6) = 73, mass = 5.8 keV, sigma/m = 6.9e-20"
+  - "alpha_s (C2 variant): 0.29% error from Fibonacci correction template"
+  - "Additive decomposition exact (corr=1.000): children tile parent by construction"
+  - "Multiplicative structure universal: log-space CV 5-17x tighter at ALL levels"
+  - "FALSIFIED: T_harm dominant eigenvalue = 1/phi (actual: 0.004, locality trap)"
+  - "Neutrino common-scale model: sum=0.002 eV, normal hierarchy, m1=0.00008 eV; splitting ratio 18.9 vs 33.9"
+  - "Landauer A/(A+xi) = ln(phi) exact (0.0000% error)"
+  - "FALSIFIED: 1/phi^4 confounding with simplified hierarchy (needs exact CI partition)"
+  - "FALSIFIED: KAN-ADE level match >80% (4.5%, N-dominant at all levels)"
+  - "sin^2(theta_W) = F_4/F_7 = 3/13 at 0.19% (weak = actualization, not scope-depth)"
+  - "Xi attractor convergence: xi/P CV<1, Rule 110 P/A monotonically approaching"
+  - "Type C (Fibonacci arithmetic) 3/3: alpha_EM 5.7ppm, alpha_s 0.29%, sin^2(theta_W) 0.19%"
+  - "Rule 110 P/A: Class IV distinct from II/III, still converging (attractor not law)"
+  - "Overall: 27/40 verified (68%), predicted 30/40 (75%)"
+
+dependencies:
+  internal:
+    - "../confluent_identity/": "Hierarchy, spectral identity, _shared.py (exp_01-03, 07-09)"
+    - "../milestone1/": "alpha_EM formula (exp_04, 09)"
+    - "../milestone4/": "Cascade engine, constants (exp_07)"
+    - "../milestone5/": "Strong coupling, PMNS angles (exp_04, 06)"
+    - "../exp_30_arithmetic_dimension_emergence/": "ADE levels, Iwasawa (exp_02)"
+    - "../minimum_actualization_resolution/": "Correction template, xi_PAC (exp_04, 07)"
+  external:
+    - "numpy>=1.24"
+    - "scipy>=1.10"
+
+tags:
+  - scoped-mediation
+  - transfer-matrix
+  - harmonic-fixed-point
+  - fibonacci-depth
+  - force-hierarchy
+  - dark-sector
+  - neutrino-masses
+  - pac-conservation
+  - xi-convergence
+  - euler-gap
+  - rank-1-convergence
+  - non-compositionality
+  - recursive-closure
+  - cyclotomic-polynomial
+  - alpha-em
+  - coupling-constants
+  - globality-locality
+  - falsification

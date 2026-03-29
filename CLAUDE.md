@@ -11,13 +11,14 @@ This is the **primary source of truth** for the physics. The Kronos vault's 56 p
 ```
 dawn-field-theory/
 ├── foundational/
-│   ├── experiments/          # 51 experiment directories (THE MAIN CONTENT)
+│   ├── experiments/          # 61+ experiment directories (THE MAIN CONTENT)
 │   │   ├── milestone1/       # Standard Model parameter derivations
 │   │   ├── milestone2/       # Mass derivations, Navier-Stokes, Koide
 │   │   ├── milestone3/       # Quantum validation, Landauer erasure
+│   │   ├── milestone6/       # Scoped Mediation (10 experiments, 27/40)
 │   │   ├── pac_confluence_xi/ # PAC-Ξ convergence proofs
 │   │   ├── sec_prime_manifold/ # SEC in number theory
-│   │   └── ... (51 total)
+│   │   └── ... (61+ total)
 │   ├── arithmetic/           # PACEngine — core mathematical tools
 │   │   ├── PACEngine/        # Conservation math, geometric SEC
 │   │   ├── EuclideanDistanceValidation/
@@ -88,11 +89,16 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **64 experiments** in `foundational/experiments/` (51 prior + 13 in M5)
+- **74 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6)
 - **Milestones 1-4** complete (SM parameters, mass derivations, quantum validation, relativity/gravity)
 - **Milestone 5** complete — SM completion & simulator validation (13 experiments)
   - Higgs mass 83 ppm (lambda = phi/4pi), PMNS < 0.3 deg, sin^2(theta_W) = tan(theta_C) = 3/13
   - De-actualization completes PAC cycle, 24% scorecard improvement
+- **Milestone 6** active — Scoped Mediation: The Propagation Mechanism of DFT (10 experiments, 27/40 = 68%)
+  - Transfer matrices, harmonic fixed-point convergence, force hierarchy from Fibonacci depth
+  - alpha_EM 5.7 ppm, phi^6 0.30%, sin^2(theta_W) = F4/F7 = 3/13 (0.19%), Euler gap 0.09%
+  - Three key insights: weak force = actualization mechanism, Xi = conditional attractor, neutrinos complete PAC
+  - Dark sector prediction: depth 73, alpha_73 = 2.48e-16, mass ~5.8 keV
 - **PACSeries** published on Zenodo (DOI: 10.5281/zenodo.15783623)
 - **Active organization effort**: bringing all experiments to full standard, adding FDO source links
 

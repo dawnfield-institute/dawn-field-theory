@@ -1,0 +1,81 @@
+{
+  "experiment": "exp_10_scoped_mediation_master_test",
+  "milestone": 6,
+  "block": "D",
+  "constants_classification": {
+    "total": 25,
+    "reproduced": 16,
+    "fraction": 0.64
+  },
+  "force_couplings": {
+    "all_within_10_log": false
+  },
+  "predictions": [
+    {
+      "name": "Dark sector coupling alpha_73",
+      "value": "2.48e-16",
+      "basis": "Phi_3(F_6) = 73 cyclotomic depth",
+      "testable": "Feebly interacting particle searches (FASER, SHiP)",
+      "contradicts_bounds": false
+    },
+    {
+      "name": "Dark mediator mass ~6 keV",
+      "value": "5.8 keV",
+      "basis": "v_H * phi^{-73/2} warm dark matter",
+      "testable": "X-ray line searches (Athena), Lyman-alpha forest",
+      "contradicts_bounds": false
+    },
+    {
+      "name": "sigma/m < 1 cm^2/g (dark self-interaction)",
+      "value": "6.9e-20 cm^2/g",
+      "basis": "Born approximation with alpha_73",
+      "testable": "Bullet Cluster, galaxy cluster mergers",
+      "contradicts_bounds": false
+    },
+    {
+      "name": "Non-thermal dark matter production",
+      "value": "Freeze-in required",
+      "basis": "Omega_thermal >> 0.12 at this coupling",
+      "testable": "Relic abundance + mass consistency",
+      "contradicts_bounds": false
+    },
+    {
+      "name": "Normal neutrino hierarchy",
+      "value": "YES",
+      "basis": "Scope depth ordering: nu_tau < nu_mu < nu_e",
+      "testable": "JUNO, DUNE",
+      "contradicts_bounds": false
+    },
+    {
+      "name": "Euler gap = 1/(240*pi)",
+      "value": "0.001327 (0.09% error)",
+      "basis": "E8->Fibonacci projection residual",
+      "testable": "Mathematical proof (not experimental)",
+      "contradicts_bounds": false
+    },
+    {
+      "name": "Transfer matrices are rank-1 at T^4",
+      "value": "67/67 boundaries",
+      "basis": "Harmonic fixed-point convergence",
+      "testable": "Any graph with hierarchical partition",
+      "contradicts_bounds": false
+    }
+  ],
+  "n_predictions": 7,
+  "any_contradicts_bounds": false,
+  "scorecard": {
+    "exp_01_09": "24/40",
+    "exp_10": "3/4",
+    "total": "27/44",
+    "percentage": 61.36363636363637,
+    "predicted": "30/40 (75%)"
+  },
+  "verification": {
+    "test1_reproducible": true,
+    "test2_forces": false,
+    "test3_predictions": true,
+    "test4_no_contradictions": true,
+    "verified_count": 3
+  },
+  "timestamp": "2026-03-29T13:05:40.420811"
+}

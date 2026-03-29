@@ -1,0 +1,50 @@
+{
+  "experiment": "exp_03_tetration_penalty_derivation",
+  "milestone": 6,
+  "block": "A",
+  "target_inv_phi4": 0.1458980337503154,
+  "test1_100seed": {
+    "mean": -0.0006670586415912427,
+    "std": 0.004121050484800015,
+    "delta_pct": 100.45720879469344,
+    "n_seeds": 100
+  },
+  "test2_per_level": {
+    "0": {
+      "confounding": -3.1664426836152185e-06,
+      "rho_raw": -0.007371794871794872,
+      "partial_rho": -0.007374961314478487,
+      "n_regions": 64
+    },
+    "1": {
+      "confounding": -0.055739958383649535,
+      "rho_raw": -0.06493506493506493,
+      "partial_rho": -0.12067502331871446,
+      "n_regions": 21
+    },
+    "2": {
+      "confounding": -0.07679403374282803,
+      "rho_raw": -0.21428571428571433,
+      "partial_rho": -0.29107974802854236,
+      "n_regions": 7
+    }
+  },
+  "test3_size_independence": {
+    "mean_64": 0.011651438769762542,
+    "mean_128": -0.0006670586415912427,
+    "delta_pct": 1846.688828131884
+  },
+  "test4_3level": {
+    "mean_3level": -0.0019604566496061217,
+    "mean_4level": -0.0006670586415912427,
+    "inv_phi3": 0.23606797749978964
+  },
+  "verification": {
+    "test1": "False",
+    "test2": "False",
+    "test3": "False",
+    "test4": "True",
+    "verified_count": "1"
+  },
+  "timestamp": "2026-03-29T12:31:31.611441"
+}
