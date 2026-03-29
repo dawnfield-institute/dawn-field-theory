@@ -1,9 +1,9 @@
-﻿# Zenodo Upload Checklist - 2026-02-23
+# Zenodo Upload Checklist - 2026-03-22
 
-## Version Updates (v1.1 / v2.1 packages)
+## Status
 
-These 6 papers have been updated since their last Zenodo upload.
-For each: go to the existing Zenodo record, click "New version", upload the new zip.
+All 12 standalone preprints have been updated with M4/M5 milestone results (March 2026).
+The v1.1/v2.1 packages from Feb 23 are now SUPERSEDED — new packages needed with M4/M5 content.
 
 ### Upload Process (Version Updates)
 1. Go to the existing Zenodo record URL
@@ -12,40 +12,65 @@ For each: go to the existing Zenodo record, click "New version", upload the new 
 4. Update the version number in the form
 5. Publish
 
-### Packages Ready
+---
 
-| Paper | Current Zenodo | New Version | Package |
-|-------|---------------|-------------|---------|
-| Symbolic Entropy Collapse | [v1.0](https://zenodo.org/records/17024434) | v1.1 | `symbolic_entropy_collapse/symbolic_entropy_collapse_v1.1_20260223_144738.zip` |
-| QBE-PAC Unification | [v1.0](https://zenodo.org/records/18086941) | v1.1 | `qbe_pac_unification/qbe_pac_unification_v1.1_20260223_144738.zip` |
-| Infodynamics | [v2.0](https://zenodo.org/records/18087191) | v2.1 | `dawn_field_theory_infodynamics/dawn_field_theory_infodynamics_v2.1_20260223_144738.zip` |
-| ML Validation Pythia/GPT2 | [v1.0](https://zenodo.org/records/18086821) | v1.1 | `ml_validation_pythia_gpt2/ml_validation_pythia_gpt2_v1.1_20260223_144738.zip` |
-| Cellular Automata Xi | [v1.0](https://zenodo.org/records/18086711) | v1.1 | `cellular_automata_xi_clustering/cellular_automata_xi_clustering_v1.1_20260223_144738.zip` |
-| PAC Necessity Proof | [v1.0](https://zenodo.org/records/18086893) | v1.1 | `pac_necessity_proof/pac_necessity_proof_v1.1_20260223_144738.zip` |
+## Superseded Packages (Feb 23 — do NOT upload these)
 
-### What Changed
+These 6 packages were built Feb 23 but are now outdated. Build fresh packages instead.
 
-- **Symbolic Entropy Collapse** (v1.0 -> v1.1): Major rewrite and tightening, -319 lines
-- **QBE-PAC Unification** (v1.0 -> v1.1): Substantive expansion, +42 lines
-- **Infodynamics** (v2.0 -> v2.1): Rewritten sections, +47 lines
-- **ML Validation** (v1.0 -> v1.1): New section 7.3 Paper 6 comparison, +27 lines
-- **Cellular Automata** (v1.0 -> v1.1): New section 6.1 four-domain convergence, +25 lines
-- **PAC Necessity** (v1.0 -> v1.1): New section 6.5 base-agnostic proof, +16 lines
+| Paper | Old Package | Superseded By |
+|-------|------------|---------------|
+| Symbolic Entropy Collapse | v1.1 | v1.3 source (M4/M5 headers added) |
+| QBE-PAC Unification | v1.1 | v1.2 source (M5 headers added) |
+| Infodynamics | v2.1 | v1.2 source (M4/M5 headers added) |
+| ML Validation Pythia/GPT2 | v1.1 | v1.2 source (M5 headers added) |
+| Cellular Automata Xi | v1.1 | v1.2 source (M4 headers added) |
+| PAC Necessity Proof | v1.1 | v1.2 source (M4 headers added) |
 
 ---
 
-## Papers Not Yet On Zenodo
+## Papers Needing New Packages (12 total)
+
+Use `preprint_package(slug, version)` MCP tool or build manually.
+
+### Published on Zenodo (need version update upload)
+
+| Paper | Current Zenodo | New Source Version |
+|-------|---------------|-------------------|
+| symbolic_entropy_collapse | [v1.0](https://zenodo.org/records/17024434) | v1.3 |
+| dawn_field_theory_synthesis | [v2.0](https://zenodo.org/records/18087136) | v1.2 |
+| dawn_field_theory_infodynamics | [v2.0](https://zenodo.org/records/18087191) | v1.2 |
+| macro_emergence_dynamics_navier_stokes | [v2.0](https://zenodo.org/records/18087212) | v1.2 |
+| cellular_automata_xi_clustering | [v1.0](https://zenodo.org/records/18086711) | v1.2 |
+| golden_ratio_prime_distribution | [v1.0](https://zenodo.org/records/18086778) | v1.2 |
+| ml_validation_pythia_gpt2 | [v1.0](https://zenodo.org/records/18086821) | v1.2 |
+| pac_necessity_proof | [v1.0](https://zenodo.org/records/18086893) | v1.2 |
+| qbe_pac_unification | [v1.0](https://zenodo.org/records/18086941) | v1.2 |
+| potential_actualization_conservation_comprehensive | [v1.0](https://zenodo.org/records/18087020) | v1.4 |
+
+### Not Yet on Zenodo
 
 | Paper | Status |
 |-------|--------|
 | worldseed_evolutionary_architecture | Ready for first upload |
-| pac_cosmology_jwst_validation | Needs figures and version fix |
-| she_leveque_fibonacci_turbulence | Needs figures and version fix |
+| pac_cosmology_jwst_validation | M4/M5 update added, still needs figures |
+| she_leveque_fibonacci_turbulence | M4/M5 update added, still needs figures |
 | sec_threshold_detection | Incomplete draft |
 | bidirectional_sec_pac_fluid | Incomplete draft |
 
 ---
 
+## What Changed (March 2026)
+
+All updated papers received a `> **March 2026 Update.**` blockquote with references to:
+- **Milestone 4** (15 experiments): Xi 800x stability, turbulence mode count universality, Lorentz uniqueness, Gaussian envelope, cascade amplification
+- **Milestone 5** (13 experiments): Higgs mass 83ppm, PMNS < 0.3deg, sin²θ_W = tan(θ_C) = 3/13, strong force implicit, de-actualization
+
+---
+
 ## After Upload
 
-For each paper uploaded, update `citations/doi_registry.yaml` with the new DOI and version.
+For each paper uploaded:
+1. Update `citations/doi_registry.yaml` with the new DOI and version
+2. Update `ZENODO_REGISTRY.yaml` status to `current`
+3. Git tag the release

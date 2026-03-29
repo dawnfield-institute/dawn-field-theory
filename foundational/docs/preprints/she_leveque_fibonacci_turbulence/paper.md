@@ -1,13 +1,20 @@
 # Fibonacci Structure in Turbulence Intermittency: A Pre-Registered Derivation of the She-Leveque Exponents
 
 **Authors:** Dawn Field Institute  
-**Date:** February 3, 2026 (Updated: February 19, 2026)  
-**Version:** 1.1  
+**Date:** February 3, 2026 (Updated: March 22, 2026)
+**Version:** 1.2  
 **Status:** Preprint (Pre-Registered Postdiction)
 
 ---
 
 > **February 2026 Update.** The result k = d × F_{d+1} (giving k = 9 = 3 × F₄ in 3D) derived here now connects to the broader PACSeries v2.0 derivation chain. PACSeries Paper 5 (*Classical Physics from Information Geometry*) derives that MED bounds (depth ≤ 2, nodes ≤ 3) require D = 3 spatial dimensions, explaining *why* the 3D She-Leveque exponents take the values they do. The ratio β = 2/3 = F₃/F₄ appearing in the She-Leveque formula also appears in quark charges and the Koide formula — PACSeries Paper 4 establishes these as independent expressions of the same Fibonacci cascade dynamics. The pre-registered prediction methodology used here exemplifies the falsification-driven approach adopted across all PACSeries papers.
+
+> **March 2026 Update.** Milestone 4 (completed March 12, 2026) provides direct computational confirmation of k = d × F_{d+1}:
+>
+> - **Same cascade engine recovers both regimes**: 3D Kolmogorov (−1.608 at N=8, target −5/3, dev 3.5%) and 2D enstrophy (−2.840 at N=3, target −3.0, dev 5.3%) with no re-tuning. Power law fit R² = 0.9998, Spearman r = 1.0 (milestone4 exp_03, 14).
+> - **Organized fraction converges to F₃/F₄ = 2/3**: At cd=0.1, N=8, mean = 0.666 with CV = 0.2% across 100 seeds (milestone4 exp_03, 14).
+> - **4D prediction needs work**: 2D and 3D calibration pass, but 4D prediction (k=20) fails (measured k=10.78). Higher-resolution DNS needed (milestone4 exp_06).
+> - **Structured coupling is necessary**: Exponential decay coupling C[i,j] = exp(−|i−j|·cd) distance from −5/3 = 0.055 vs random mean = 1.153 (p = 0.000, milestone4 exp_14, 15).
 
 ---
 

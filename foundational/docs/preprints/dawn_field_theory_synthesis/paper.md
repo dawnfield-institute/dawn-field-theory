@@ -2,8 +2,8 @@
 
 **Author:** Peter Groom
 **Affiliation:** Dawn Field Institute
-**Date:** September 1, 2025 (Updated: February 19, 2026)
-**Version:** Draft v1.1
+**Date:** September 1, 2025 (Updated: March 22, 2026)
+**Version:** Draft v1.2
 **Status:** Synthesis Preprint
 
 ---
@@ -16,6 +16,25 @@
 > - The framework has a full derivation chain: PAC axiom → φ recursion → ln(φ) erasure efficiency → Ξ = γ + ln(φ) balance constant → cross-domain measurements.
 >
 > New readers should start with the PACSeries. This paper remains as intellectual provenance.
+
+> **March 2026 Update.** The framework described here has grown substantially through Milestones 4 and 5 (28 experiments, completed March 2026). The research program now spans ~170 experiments across 14 domains.
+>
+> **Milestone 4 highlights** (15 experiments — PAC Relativity, Turbulence from Cascade, Energy as Collapsed Potential, Cross-Validation):
+> - Mode count universally determines turbulence exponents — same engine recovers both −5/3 (3D) and −3 (2D) with no re-tuning (R² = 0.9998)
+> - Lorentz identity is algebraically unique under PAC — only sqrt(1−v²) matches GR, all 5 alternatives fail
+> - Xi is a global attractor with 800× stability ratio (CoV(global PAC) = 0.0002)
+> - Gaussian envelope uniqueness: phi is the only scaling base preserving equal-area conservation
+> - Cascade amplification scales logarithmically (R² = 0.994), confirming 53× at N=8
+> - Honest failure: up-quark mass ratios remain at 40-60% error — the biggest open problem
+>
+> **Milestone 5 highlights** (13 experiments — Strong Force, Attractor Dynamics, Electroweak & Higgs, CKM/PMNS/CP, De-actualization):
+> - Higgs mass to 83 ppm: λ = φ/(4π), M_H = 125.260 GeV
+> - Three new identities: sin²(θ_W) = tan(θ_C) = 3/13; λ_Higgs·4π = φ; mixing hierarchy = Fibonacci index proximity
+> - All fermion mixing angles are arctan(F_a/F_b) with PMNS errors < 0.3°
+> - Strong force implicit in cascade geometry — no new operator needed; UV fixed points confirmed
+> - De-actualization completes PAC cycle — mass returns to potential, 24% coupling drift improvement
+>
+> The "imperfection engine" methodology continues to operate: 2 additional experiments falsified in M4 (up-quark cascades, Landauer level count prediction), maintaining honest boundaries on what the framework can and cannot do.
 
 ---
 

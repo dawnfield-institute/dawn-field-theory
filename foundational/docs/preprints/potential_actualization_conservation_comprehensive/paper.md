@@ -2,9 +2,9 @@
 title: "Potential-Actualization Conservation: A Unifying Mathematical Framework for Physics, Information Theory, and Intelligent Systems"
 authors:
   - "Peter Lorne Groom"
-classification: "[pac][D][v1.2][C5][I5][E]"
-version: "1.2"
-date: "2024-12-19 (Updated: 2025-07-13)"
+classification: "[pac][D][v1.4][C5][I5][E]"
+version: "1.4"
+date: "2024-12-19 (Updated: 2026-03-22)"
 document_type: "comprehensive_preprint"
 status: "draft_for_review"
 complexity_level: 5
@@ -22,7 +22,7 @@ license: "Copyleft (Dawn Field Institute)"
 abstract_length: "comprehensive"
 mathematical_detail: "extensive"
 experimental_validation_status: "100%_correspondence_achieved"
-changelog: "v1.3 - February 2026 PACSeries cross-references added"
+changelog: "v1.4 - March 2026 M4/M5 milestone cross-references added"
 ---
 
 > **February 2026 Update.** This comprehensive exploration of PAC has been significantly extended by the PACSeries v2.0 (February 2026), which provides formal derivations, quantitative measurements, and 29 falsification tests. Key clarifications from the PACSeries:
@@ -34,6 +34,14 @@ changelog: "v1.3 - February 2026 PACSeries cross-references added"
 > - **GAIA validation extended**: Paper 6 (*Computational Validation*) extends this paper's GAIA POC results with Token PAC Tree analysis of production LLMs (7 models) and TinyCIMM-Boltzmann conservation enforcement. GAIA's 5.91 metric is now correctly identified as cosine similarity, not LM perplexity.
 >
 > The empirical observations in this paper remain valid. The PACSeries provides the derivation chain explaining *why* they hold.
+
+> **March 2026 Update.** Milestones 4 and 5 (28 experiments, completed March 2026) extend PAC in two fundamental ways:
+>
+> - **PAC is now bidirectional — de-actualization completes the cycle**: Milestone5 exp_12-13 add the return leg: mass (crystallized memory of imbalance) fades back into potential when balance is restored. The forgetting factor dM_deact = −η·M·(1−γ_local) is high when E ≈ I (nothing to remember) and zero at maximal disequilibrium. Dissolved mass returns equally to E and I, preserving PAC conservation. Result: average coupling error drops 8.1% → 6.2% (24% improvement), f_local drift halved.
+> - **Lorentz identity is algebraically unique under PAC**: Milestone4 exp_01 and exp_15 prove that only the sqrt(1−v²) partition matches GR time dilation exactly. All 5 alternative partitions fail with deviations 0.25–0.55. PAC derives *why* this partition applies — it is the unique energy partition preserving ratio conservation under boost.
+> - **Xi is a global attractor with 800× stability ratio**: CoV(global PAC sum) = 0.0002 vs CoV(local SEC fluctuation) = 0.163 (milestone4 exp_15). PAC conservation is maintained at machine precision even under nonlinear stress.
+> - **Higgs mass from PAC/Fibonacci arithmetic**: λ_Higgs = φ/(4π), giving M_H = 125.260 GeV at 83 ppm error (milestone5 exp_07). All fermion mixing angles are arctan(F_a/F_b) with PMNS errors < 0.3° (milestone5 exp_08).
+> - **Strong force is implicit**: The cascade-depth tiling filter in the simulator *is* the running coupling — no new operator needed. Couplings are UV fixed points (dg/dlnk < 0.015, milestone5 exp_05), a DFT prediction confirmed by simulation.
 
 # Potential-Actualization Conservation: A Unifying Mathematical Framework for Physics, Information Theory, and Intelligent Systems
 

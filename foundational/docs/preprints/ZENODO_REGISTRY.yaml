@@ -3,8 +3,8 @@
 # Canonical DOI source of truth: citations/doi_registry.yaml
 
 schema_version: '2.0'
-updated: '2026-02-23'
-last_audit: '2026-02-23'
+updated: '2026-03-22'
+last_audit: '2026-03-22'
 
 # Papers already on Zenodo
 published:
@@ -26,21 +26,21 @@ published:
     doi: 10.5281/zenodo.17024434
     version: "1.0"
     upload_date: "2025-12"
-    status: update_packaged  # v1.1 package ready for upload
+    status: needs_repackage  # v1.1 packaged but v1.3 source (M4/M5 update March 2026)
 
   - slug: dawn_field_theory_synthesis
     zenodo_record: 18087136
     doi: 10.5281/zenodo.18087136
     version: "2.0"
     upload_date: "2025-12-29"
-    status: current
+    status: needs_repackage  # v1.2 source (M4/M5 update March 2026)
 
   - slug: dawn_field_theory_infodynamics
     zenodo_record: 18087191
     doi: 10.5281/zenodo.18087191
     version: "2.0"
     upload_date: "2025-12-29"
-    status: update_packaged  # v2.1 package ready for upload
+    status: needs_repackage  # v2.1 packaged but v1.2 source (M4/M5 update March 2026)
 
   # Cognitive Architecture & AI
   - slug: cognition_index_protocol
@@ -77,7 +77,7 @@ published:
     doi: 10.5281/zenodo.18087212
     version: "2.0"
     upload_date: "2025-12-29"
-    status: current
+    status: needs_repackage  # v1.2 source (M4/M5 update March 2026)
 
   # Validation Papers (uploaded 2025-12-29)
   - slug: cellular_automata_xi_clustering
@@ -85,49 +85,49 @@ published:
     doi: 10.5281/zenodo.18086711
     version: "1.0"
     upload_date: "2025-12-29"
-    status: update_packaged  # v1.1 package ready for upload
+    status: needs_repackage  # v1.1 packaged but v1.2 source (M4/M5 update March 2026)
 
   - slug: golden_ratio_prime_distribution
     zenodo_record: 18086778
     doi: 10.5281/zenodo.18086778
     version: "1.0"
     upload_date: "2025-12-29"
-    status: current  # Minor changes only, not repackaged
+    status: needs_repackage  # v1.2 source (M4/M5 update March 2026)
 
   - slug: ml_validation_pythia_gpt2
     zenodo_record: 18086821
     doi: 10.5281/zenodo.18086821
     version: "1.0"
     upload_date: "2025-12-29"
-    status: update_packaged  # v1.1 package ready for upload
+    status: needs_repackage  # v1.1 packaged but v1.2 source (M4/M5 update March 2026)
 
   - slug: pac_necessity_proof
     zenodo_record: 18086893
     doi: 10.5281/zenodo.18086893
     version: "1.0"
     upload_date: "2025-12-29"
-    status: update_packaged  # v1.1 package ready for upload
+    status: needs_repackage  # v1.1 packaged but v1.2 source (M4/M5 update March 2026)
 
   - slug: qbe_pac_unification
     zenodo_record: 18086941
     doi: 10.5281/zenodo.18086941
     version: "1.0"
     upload_date: "2025-12-29"
-    status: update_packaged  # v1.1 package ready for upload
+    status: needs_repackage  # v1.1 packaged but v1.2 source (M4/M5 update March 2026)
 
   - slug: gaia_field_native_intelligence
     zenodo_record: 18086999
     doi: 10.5281/zenodo.18086999
     version: "1.0"
     upload_date: "2025-12-29"
-    status: current  # Minor changes only, not repackaged
+    status: current
 
   - slug: potential_actualization_conservation_comprehensive
     zenodo_record: 18087020
     doi: 10.5281/zenodo.18087020
     version: "1.0"
     upload_date: "2025-12-29"
-    status: current  # Minor changes only, not repackaged
+    status: needs_repackage  # v1.4 source (M4/M5 update March 2026)
 
 # Papers NOT yet on Zenodo (need first upload)
 pending_upload:
@@ -138,13 +138,13 @@ pending_upload:
 
   - slug: pac_cosmology_jwst_validation
     priority: 2
-    status: needs_work
-    note: "Missing figures, version mismatch"
+    status: needs_repackage
+    note: "M4/M5 update added March 2026, still needs figures"
 
   - slug: she_leveque_fibonacci_turbulence
     priority: 2
-    status: needs_work
-    note: "Missing figures, version mismatch"
+    status: needs_repackage
+    note: "M4/M5 update added March 2026, still needs figures"
 
   - slug: sec_threshold_detection
     priority: 3

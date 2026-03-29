@@ -1,8 +1,8 @@
 # Macro Emergence Dynamics: Using Navier-Stokes Complexity as a Testbed for Bounded Symbolic Principles (Draft)
 
 **Authors:** Dawn Field Theory Research Institute
-**Date:** September 1, 2025 (Updated: February 19, 2026)
-**Version:** Draft v1.1
+**Date:** September 1, 2025 (Updated: March 22, 2026)
+**Version:** Draft v1.2
 **Status:** Preprint Draft
 
 ---
@@ -15,6 +15,15 @@
 > - **MED depth criticality**: Milestone3 exp_11 found d_cross = 3.25 ± 0.17 (CV = 5.3%) as a universal invariant — consistent with the depth bounds documented here.
 >
 > The research status section below reflects August 2025 progress. Current experimental state is tracked in the PACSeries and milestone3 directories.
+
+> **March 2026 Update.** Milestone 4 (15 experiments, completed March 12) provides direct quantitative validation of MED principles across dimensions:
+>
+> - **Mode count determines turbulence exponent universally**: The same cascade engine with no re-tuning recovers both 3D Kolmogorov (−1.608 at N=8, target −5/3, dev 3.5%) and 2D enstrophy (−2.840 at N=3, target −3.0, dev 5.3%). Power law fit R² = 0.9998, Spearman r = 1.0 (milestone4 exp_03, 14, 15).
+> - **She-Lévêque k = d × F_{d+1} confirmed across dimensions**: The formula with k−1 offset is consistent across 2D and 3D. 4D prediction (k=20) fails calibration (measured k=10.78) — higher-resolution DNS needed (milestone4 exp_06).
+> - **Organized fraction converges to 2/3**: At coupling cd=0.1, N=8, mean organized fraction = 0.666 with CV = 0.2% across 100 seeds (milestone4 exp_03, 14). This is a stability claim at fixed physics.
+> - **Gaussian envelope uniqueness**: Three independent derivations (SEC diffusion, max entropy, PAC equal-area) produce Gaussian shape. Phi is the unique scaling base for equal-area conservation (CV = 1.4×10⁻¹⁴%, milestone4 exp_13).
+> - **Structured coupling is necessary**: At cd=0.1, N=8, structured coupling distance from −5/3 = 0.055 vs random mean = 1.153 (p = 0.000). The exponential decay coupling C[i,j] = exp(−|i−j|·cd) is structurally necessary (milestone4 exp_14, 15).
+> - **De-actualization from Milestone 5**: The MED-bounded cascade now has a return leg — mass fades back to potential when balance is restored (dM_deact = −η·M·(1−γ_local)), cutting coupling drift by 24% in the Reality Engine simulator (milestone5 exp_12-13).
 
 ---
 

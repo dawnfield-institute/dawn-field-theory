@@ -8,12 +8,19 @@
 **Evidence:** [E] Experimental  
 
 **Authors:** Peter Lorne Groom, Dawn Field Institute  
-**Date:** December 13, 2025 (Updated: February 19, 2026)  
-**Status:** Draft for Review (v1.1)
+**Date:** December 13, 2025 (Updated: March 22, 2026)
+**Status:** Draft for Review (v1.2)
 
 ---
 
-> **February 2026 Update.** The 0.020 Hz QBE-PAC bridge documented here is now part of the PACSeries v2.0 validation evidence. PACSeries Paper 6 (*Computational Validation*) includes the 0.020 Hz emergence in its three-system evidence base (GAIA + Token PAC Tree + TinyCIMM-Boltzmann). However, milestone3 exp_05 found an honest discrepancy: the E-I-S triangle oscillator simulation gives 0.007 Hz (ratio 0.232), not the claimed 2/3 (0.667) relationship to the 0.030 Hz continuous field limit. The 0.020 Hz resonance lock is reproducible; its theoretical derivation requires further work. The Landauer bridge connecting thermodynamic erasure to computational frequency is validated at machine precision in milestone3 exp_27 (fd = ln(Ï†) â†’ Î± = 1 âˆ’ 1/Ï†, exact).
+> **February 2026 Update.** The 0.020 Hz QBE-PAC bridge documented here is now part of the PACSeries v2.0 validation evidence. PACSeries Paper 6 (*Computational Validation*) includes the 0.020 Hz emergence in its three-system evidence base (GAIA + Token PAC Tree + TinyCIMM-Boltzmann). However, milestone3 exp_05 found an honest discrepancy: the E-I-S triangle oscillator simulation gives 0.007 Hz (ratio 0.232), not the claimed 2/3 (0.667) relationship to the 0.030 Hz continuous field limit. The 0.020 Hz resonance lock is reproducible; its theoretical derivation requires further work. The Landauer bridge connecting thermodynamic erasure to computational frequency is validated at machine precision in milestone3 exp_27 (fd = ln(φ) → α = 1 − 1/φ, exact).
+
+> **March 2026 Update.** Milestone 5 extends the QBE-PAC framework with Standard Model completions:
+>
+> - **Higgs mass to 83 ppm**: λ_Higgs = φ/(4π), M_H = 125.260 GeV — the scalar sector connects directly to PAC recursion (milestone5 exp_07).
+> - **New identity: sin²(θ_W) = tan(θ_Cabibbo) = 3/13**: Electroweak and quark mixing share the same Fibonacci ratio. All fermion mixing angles are arctan(F_a/F_b) with PMNS errors < 0.3° (milestone5 exp_08).
+> - **De-actualization completes the cycle**: The QBE energy-information coupling now has a return leg — mass fades back to potential when balance is restored, cutting coupling drift by 24% (milestone5 exp_12-13).
+> - **QBE golden cascade**: QPL contrast = 0.878 confirms Fibonacci potential creates structure, though golden cascade correlation is weaker than expected (0.104, milestone4 exp_12).
 
 ---
 

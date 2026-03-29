@@ -2,8 +2,8 @@
 
 **Authors:** Dawn Field Theory Collaborative
 **Affiliation:** Dawn Field Institute
-**Date:** September 1, 2025 (Updated: February 19, 2026)
-**Version:** Draft v1.2
+**Date:** September 1, 2025 (Updated: March 22, 2026)
+**Version:** Draft v1.3
 **Status:** Preprint Draft
 
 ---
@@ -17,6 +17,14 @@
 > - **Cross-domain validation**: 29 falsification tests across milestone3 (20 pass, 1 borderline), including Feigenbaum constants at 13-digit precision, Standard Model couplings at 5.7 ppm, and Wilson-Fisher critical exponent at 0.017%.
 >
 > The CIM-era language in sections below reflects the paper's origins. The mature derivation chain is in the PACSeries.
+
+> **March 2026 Update.** Milestones 4 (15 experiments, completed March 12) and 5 (13 experiments, completed March 16) provide further quantitative grounding for SEC:
+>
+> - **SEC-local vs PAC-global quantified**: Milestone4 exp_15 measures the separation directly — CoV(global PAC sum) = 0.0002 vs CoV(local SEC fluctuation) = 0.163, an **800× stability ratio**. Local SEC scales overshoot and undershoot, but the global PAC sum is rock-solid. This holds across nonlinear_strength sweeps (ns = 0.0–0.9, global sum CoV = 0.0014).
+> - **Xi is a global attractor**: Xi stabilizes by cascade depth 3 and is robust to sigma, branching ratio, and scale perturbations (milestone4 exp_15 C.2, H.1). Structured coupling beats random at p = 0.000 (distance from -5/3: structured = 0.055, random mean = 1.153).
+> - **Gaussian envelope from SEC diffusion**: Three independent derivations (SEC diffusion, max entropy, PAC equal-area) all produce Gaussian shape. Phi is the unique scaling base preserving equal-area conservation (CV = 1.4×10⁻¹⁴% vs next-best 30.5%), robust to ±20% parameter perturbation (milestone4 exp_13).
+> - **De-actualization completes the PAC cycle**: Milestone5 exp_12-13 show mass can return to potential when imbalance resolves (dM_deact = −η·M·(1−γ_local)), cutting coupling drift by 24%. SEC's local structure formation is now matched by a local structure dissolution mechanism.
+> - **Strong force implicit in cascade geometry**: The cascade-depth tiling filter *is* the running coupling — no new operator needed (milestone5 exp_04). Couplings are UV fixed points, not asymptotically free (dg/dlnk < 0.015 across 6× scale, milestone5 exp_05).
 
 ---
 
