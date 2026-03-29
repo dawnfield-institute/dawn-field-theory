@@ -8,8 +8,8 @@
 **Evidence:** [E] Experimental  
 
 **Authors:** Peter Lorne Groom, Dawn Field Institute  
-**Date:** December 13, 2025 (Updated: February 19, 2026)  
-**Status:** Draft for Review (v1.1)
+**Date:** December 13, 2025 (Updated: March 22, 2026)
+**Status:** Draft for Review (v1.2)
 
 ---
 
@@ -22,6 +22,11 @@
 > - **Honest falsifications**: φ enrichment in token ratios FALSIFIED (softmax artifact); single-token detection fails
 >
 > This paper's Pythia step-512 φ-convergence (p = 0.0014) and GPT-2 attention entropy results remain as independent supporting evidence. Milestone3 exp_31 predicts scaling behaviour: 7B models should show 1.71× enrichment [1.61, 1.81], 70B models 1.63× [1.51, 1.74].
+
+> **March 2026 Update.** Milestone 5's de-actualization mechanism provides a physical interpretation for the PAC dynamics observed in ML training:
+>
+> - **De-actualization = forgetting**: dM_deact = −η·M·(1−γ_local) mirrors weight decay in neural networks — parameters "forget" when local balance is restored. The PAC cycle is now complete: crystallization (training) + dissolution (regularization) (milestone5 exp_12-13).
+> - **UV fixed points**: Coupling constants in the Reality Engine simulator don't run — they are UV fixed points (dg/dlnk < 0.015, milestone5 exp_05). This may explain why trained model weights converge to specific attractor values rather than drifting.
 
 ---
 

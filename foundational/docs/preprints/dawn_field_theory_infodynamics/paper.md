@@ -2,8 +2,8 @@
 
 **Authors:** Dawn Field Theory Collaborative
 **Affiliation:** Dawn Field Institute
-**Date:** September 1, 2025 (Updated: February 19, 2026)
-**Version:** Draft v1.1
+**Date:** September 1, 2025 (Updated: March 22, 2026)
+**Version:** Draft v1.2
 **Status:** Preprint Draft
 
 ---
@@ -17,6 +17,16 @@
 > - **Honest falsifications**: PAC-Lazy bootstrap CI includes zero (exp_24), crystallization order is basis-independent (exp_19), fractal pressure = depth bias (exp_20). The framework describes but does not always predict.
 >
 > The CIM-era language and speculative framing in this paper reflect its origins. The mature, measurement-driven work is in the PACSeries.
+
+> **March 2026 Update.** Milestones 4 and 5 (28 experiments, completed March 2026) transform several of this paper's conjectures into quantitative results:
+>
+> - **Higgs mass to 83 ppm**: λ_Higgs = φ/(4π) = 0.12886 (measured 0.1293, 0.05% error). Full mass formula M_H = v·√(2F₅/(F₆·φ·π))·(1+F₁₀/(4π·F₇²)) = 125.260 GeV (milestone5 exp_07).
+> - **New identity: sin²(θ_W) = tan(θ_Cabibbo) = F₄/F₇ = 3/13**: Electroweak mixing and quark mixing share the same Fibonacci ratio. Not numerical coincidence — falls out of the arctan(F_a/F_b) pattern governing all mixing angles (milestone5 exp_08).
+> - **All fermion mixing angles from Fibonacci ratios**: PMNS angles all < 0.3° error: θ₁₂ = arctan(2/3), θ₁₃ = arctan(2/13), θ₂₃ = π/4·(1+F₈/(3π·F₅²)). Cabibbo angle = arctan(3/13) at 0.045° error. Hierarchy = Fibonacci index proximity (milestone5 exp_08).
+> - **Strong force is implicit in cascade geometry**: The cascade-depth tiling filter *is* the running coupling — no new operator needed. SU(3) color structure emerges from spectral geometry. Couplings are UV fixed points (dg/dlnk < 0.015), a DFT prediction confirmed by simulation (milestone5 exp_01-05).
+> - **De-actualization completes the PAC cycle**: Mass (crystallized memory of imbalance) returns to potential when balance is restored. dM_deact = −η·M·(1−γ_local). Average coupling error: 8.1% → 6.2%, drift halved (milestone5 exp_12-13).
+> - **Xi is a global attractor**: 800× stability ratio — CoV(global PAC sum) = 0.0002 vs CoV(local SEC) = 0.163. Holds across nonlinear stress tests (milestone4 exp_15).
+> - **Honest failures**: Up-quark mass ratios remain at 40-60% error despite multiple rescue attempts (milestone4 exp_07-11). This is the biggest open problem in the cascade mass-ratio story.
 
 ---
 

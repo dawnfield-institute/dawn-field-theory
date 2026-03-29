@@ -8,12 +8,18 @@
 **Evidence:** [E] Experimental  
 
 **Authors:** Peter Lorne Groom, Dawn Field Institute  
-**Date:** December 13, 2025 (Updated: February 19, 2026)  
-**Status:** Draft for Review (v1.1)
+**Date:** December 13, 2025 (Updated: March 22, 2026)
+**Status:** Draft for Review (v1.2)
 
 ---
 
 > **February 2026 Update.** The necessity argument in this paper is now supported by the full PACSeries v2.0 derivation chain. PACSeries Paper 1 (*The Structure Cost of Erasure*) independently derives that Landauer erasure *requires* structural creation with efficiency ratio A/(A+ξ) = ln(φ), measured at 0.76% error — the same φ attractor documented here emerges from thermodynamic first principles. The base-agnostic proof (Paper 2) confirms φ² = φ + 1 holds to < 10⁻¹⁴ across all numerical bases, confirming that PAC's golden ratio attractor is structural, not a decimal artifact. Milestone3 exp_22 proved that PAC recursion *requires* MED depth ≤ 2 (analytical proof for all k ≥ 2), upgrading the MED bound from empirical observation to theorem. The violation correlations reported here (r = −0.588 for structure; r = −0.684 for convergence) are consistent with Paper 1's cascade amplification finding (53× over single event, p = 2.75 × 10⁻³⁵).
+
+> **March 2026 Update.** Milestone 4 adds a new necessity argument from relativistic physics:
+>
+> - **Lorentz identity is algebraically unique under PAC**: Only the sqrt(1−v²) partition matches GR time dilation exactly. All 5 alternative partitions fail with deviations 0.25–0.55 (milestone4 exp_01, 15). PAC derives *why* this partition is necessary, not merely that it works.
+> - **Xi global attractor**: 800× stability ratio — CoV(global PAC sum) = 0.0002 vs CoV(local SEC) = 0.163 — strengthens the necessity argument: PAC conservation holds at machine precision even under nonlinear stress (milestone4 exp_15).
+> - **Derivation chain is non-circular**: 2/3 independent links in PAC → Fibonacci → φ-cascade → Landauer → Lorentz chain. Only 16/616 integer matrices produce φ eigenvalues (milestone4 exp_09, 15).
 
 ---
 
