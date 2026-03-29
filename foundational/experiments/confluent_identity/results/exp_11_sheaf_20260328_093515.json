@@ -1,0 +1,386 @@
+{
+  "experiment": "exp_11_sheaf_cohomology",
+  "timestamp": "2026-03-28T09:35:15.464377",
+  "purpose": "Sheaf cohomology on hierarchy - identity crisis detection",
+  "n_groups_analyzed": 6,
+  "verification": {
+    "test1_global_section": {
+      "n_global": 6,
+      "n_total": 6,
+      "verified": true
+    },
+    "test2_perturbation_breaks": {
+      "n_increased": 6,
+      "fraction": 1.0,
+      "verified": true
+    },
+    "test3_smoothing_resolves": {
+      "n_recovered": 0,
+      "mean_recovery": 3.700743415417188e-17,
+      "verified": false
+    },
+    "n_verified": 2
+  },
+  "per_group": [
+    {
+      "level": 1,
+      "parent_id": 6,
+      "n_parent_cells": 697,
+      "n_children": 2,
+      "is_global_section": true,
+      "residual_norm": 0.0,
+      "cohomology_baseline": {
+        "dim_c0": 1394,
+        "dim_c1": 697,
+        "rank_delta": 697,
+        "dim_h0": 697,
+        "dim_h1": 0,
+        "smallest_nonzero_sv": 1.414213562373095,
+        "largest_zero_sv": 0.0
+      },
+      "perturbation_results": [
+        {
+          "epsilon": 0.01,
+          "residual_norm": 0.26011933231661194,
+          "relative_defect": 0.7373383053517789
+        },
+        {
+          "epsilon": 0.05,
+          "residual_norm": 1.3005966615830598,
+          "relative_defect": 0.9861548324380854
+        },
+        {
+          "epsilon": 0.1,
+          "residual_norm": 2.6011933231661195,
+          "relative_defect": 0.9973042488545751
+        }
+      ],
+      "smoothing_results": [
+        {
+          "alpha": 0.1,
+          "broken_residual": 2.6011933231661195,
+          "smoothed_residual": 2.6011933231661195,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.3,
+          "broken_residual": 2.6011933231661195,
+          "smoothed_residual": 2.6011933231661195,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "broken_residual": 2.6011933231661195,
+          "smoothed_residual": 2.6011933231661195,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.7,
+          "broken_residual": 2.6011933231661195,
+          "smoothed_residual": 2.6011933231661195,
+          "recovery_ratio": 0.0
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "parent_id": 10,
+      "n_parent_cells": 799,
+      "n_children": 3,
+      "is_global_section": true,
+      "residual_norm": 0.0,
+      "cohomology_baseline": {
+        "dim_c0": 1598,
+        "dim_c1": 799,
+        "rank_delta": 799,
+        "dim_h0": 799,
+        "dim_h1": 0,
+        "smallest_nonzero_sv": 1.414213562373095,
+        "largest_zero_sv": 0.0
+      },
+      "perturbation_results": [
+        {
+          "epsilon": 0.01,
+          "residual_norm": 0.2780540054840401,
+          "relative_defect": 0.7776558632262953
+        },
+        {
+          "epsilon": 0.05,
+          "residual_norm": 1.3902700274202,
+          "relative_defect": 0.9883140041268966
+        },
+        {
+          "epsilon": 0.1,
+          "residual_norm": 2.7805400548404,
+          "relative_defect": 0.9974045923778724
+        }
+      ],
+      "smoothing_results": [
+        {
+          "alpha": 0.1,
+          "broken_residual": 2.7805400548404,
+          "smoothed_residual": 2.7805400548404005,
+          "recovery_ratio": -2.220446049250313e-16
+        },
+        {
+          "alpha": 0.3,
+          "broken_residual": 2.7805400548404,
+          "smoothed_residual": 2.7805400548404,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "broken_residual": 2.7805400548404,
+          "smoothed_residual": 2.7805400548404,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.7,
+          "broken_residual": 2.7805400548404,
+          "smoothed_residual": 2.7805400548404,
+          "recovery_ratio": 0.0
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "parent_id": 15,
+      "n_parent_cells": 739,
+      "n_children": 3,
+      "is_global_section": true,
+      "residual_norm": 0.0,
+      "cohomology_baseline": {
+        "dim_c0": 1478,
+        "dim_c1": 739,
+        "rank_delta": 739,
+        "dim_h0": 739,
+        "dim_h1": 0,
+        "smallest_nonzero_sv": 1.4142135623730858,
+        "largest_zero_sv": 0.0
+      },
+      "perturbation_results": [
+        {
+          "epsilon": 0.01,
+          "residual_norm": 0.26742630464849615,
+          "relative_defect": 0.6536564017329799
+        },
+        {
+          "epsilon": 0.05,
+          "residual_norm": 1.3371315232424807,
+          "relative_defect": 0.9791138895292838
+        },
+        {
+          "epsilon": 0.1,
+          "residual_norm": 2.6742630464849615,
+          "relative_defect": 0.9962717892850065
+        }
+      ],
+      "smoothing_results": [
+        {
+          "alpha": 0.1,
+          "broken_residual": 2.6742630464849615,
+          "smoothed_residual": 2.6742630464849615,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.3,
+          "broken_residual": 2.6742630464849615,
+          "smoothed_residual": 2.6742630464849615,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "broken_residual": 2.6742630464849615,
+          "smoothed_residual": 2.6742630464849615,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.7,
+          "broken_residual": 2.6742630464849615,
+          "smoothed_residual": 2.6742630464849615,
+          "recovery_ratio": 0.0
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "parent_id": 18,
+      "n_parent_cells": 314,
+      "n_children": 2,
+      "is_global_section": true,
+      "residual_norm": 0.0,
+      "cohomology_baseline": {
+        "dim_c0": 628,
+        "dim_c1": 314,
+        "rank_delta": 314,
+        "dim_h0": 314,
+        "dim_h1": 0,
+        "smallest_nonzero_sv": 1.4142135623730951,
+        "largest_zero_sv": 0.0
+      },
+      "perturbation_results": [
+        {
+          "epsilon": 0.01,
+          "residual_norm": 0.17219128582169319,
+          "relative_defect": 0.6678476597553351
+        },
+        {
+          "epsilon": 0.05,
+          "residual_norm": 0.8609564291084659,
+          "relative_defect": 0.9774269120623282
+        },
+        {
+          "epsilon": 0.1,
+          "residual_norm": 1.721912858216932,
+          "relative_defect": 0.9946651997957355
+        }
+      ],
+      "smoothing_results": [
+        {
+          "alpha": 0.1,
+          "broken_residual": 1.721912858216932,
+          "smoothed_residual": 1.721912858216932,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.3,
+          "broken_residual": 1.721912858216932,
+          "smoothed_residual": 1.7219128582169316,
+          "recovery_ratio": 2.220446049250313e-16
+        },
+        {
+          "alpha": 0.5,
+          "broken_residual": 1.721912858216932,
+          "smoothed_residual": 1.721912858216932,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.7,
+          "broken_residual": 1.721912858216932,
+          "smoothed_residual": 1.721912858216932,
+          "recovery_ratio": 0.0
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "parent_id": 21,
+      "n_parent_cells": 354,
+      "n_children": 2,
+      "is_global_section": true,
+      "residual_norm": 0.0,
+      "cohomology_baseline": {
+        "dim_c0": 708,
+        "dim_c1": 354,
+        "rank_delta": 354,
+        "dim_h0": 354,
+        "dim_h1": 0,
+        "smallest_nonzero_sv": 1.4142135623730951,
+        "largest_zero_sv": 0.0
+      },
+      "perturbation_results": [
+        {
+          "epsilon": 0.01,
+          "residual_norm": 0.17945850914276837,
+          "relative_defect": 0.7022748311629128
+        },
+        {
+          "epsilon": 0.05,
+          "residual_norm": 0.8972925457138419,
+          "relative_defect": 0.9770406967883195
+        },
+        {
+          "epsilon": 0.1,
+          "residual_norm": 1.7945850914276835,
+          "relative_defect": 0.9931208523228731
+        }
+      ],
+      "smoothing_results": [
+        {
+          "alpha": 0.1,
+          "broken_residual": 1.7945850914276835,
+          "smoothed_residual": 1.7945850914276837,
+          "recovery_ratio": -2.220446049250313e-16
+        },
+        {
+          "alpha": 0.3,
+          "broken_residual": 1.7945850914276835,
+          "smoothed_residual": 1.7945850914276835,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "broken_residual": 1.7945850914276835,
+          "smoothed_residual": 1.7945850914276835,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.7,
+          "broken_residual": 1.7945850914276835,
+          "smoothed_residual": 1.7945850914276835,
+          "recovery_ratio": 0.0
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "parent_id": 5,
+      "n_parent_cells": 100,
+      "n_children": 2,
+      "is_global_section": true,
+      "residual_norm": 0.0,
+      "cohomology_baseline": {
+        "dim_c0": 200,
+        "dim_c1": 100,
+        "rank_delta": 100,
+        "dim_h0": 100,
+        "dim_h1": 0,
+        "smallest_nonzero_sv": 1.4142135623730951,
+        "largest_zero_sv": 0.0
+      },
+      "perturbation_results": [
+        {
+          "epsilon": 0.01,
+          "residual_norm": 0.09095637931826113,
+          "relative_defect": 0.625250255183109
+        },
+        {
+          "epsilon": 0.05,
+          "residual_norm": 0.4547818965913057,
+          "relative_defect": 0.9819609595427463
+        },
+        {
+          "epsilon": 0.1,
+          "residual_norm": 0.9095637931826113,
+          "relative_defect": 0.9993096318166486
+        }
+      ],
+      "smoothing_results": [
+        {
+          "alpha": 0.1,
+          "broken_residual": 0.9095637931826113,
+          "smoothed_residual": 0.9095637931826113,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.3,
+          "broken_residual": 0.9095637931826113,
+          "smoothed_residual": 0.9095637931826113,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.5,
+          "broken_residual": 0.9095637931826113,
+          "smoothed_residual": 0.9095637931826113,
+          "recovery_ratio": 0.0
+        },
+        {
+          "alpha": 0.7,
+          "broken_residual": 0.9095637931826113,
+          "smoothed_residual": 0.9095637931826113,
+          "recovery_ratio": 0.0
+        }
+      ]
+    }
+  ]
+}

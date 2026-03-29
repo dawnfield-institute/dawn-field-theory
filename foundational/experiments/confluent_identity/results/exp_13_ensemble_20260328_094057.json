@@ -1,0 +1,87 @@
+{
+  "experiment": "exp_13_multiseed_ensemble",
+  "timestamp": "2026-03-28T09:40:57.178387",
+  "purpose": "Multi-seed robustness verification",
+  "seeds": [
+    42,
+    137,
+    256,
+    314,
+    999
+  ],
+  "n_successful": 5,
+  "aggregate": {
+    "rho_coupling_natural": {
+      "mean": 0.6614097549776161,
+      "std": 0.049985661077700166,
+      "min": 0.6121831797235023,
+      "max": 0.7550482879719054
+    },
+    "rho_natural_size": {
+      "mean": 0.6438135661079121,
+      "std": 0.051931047317319914
+    },
+    "gini": {
+      "mean": 0.6065238611216465,
+      "std": 0.07487778118467876
+    }
+  },
+  "verification": {
+    "test1_std_below_015": true,
+    "test2_all_rho_above_02": true,
+    "test3_all_gini_above_01": true,
+    "n_verified": 3
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "conservation_error": 2.8705926524708048e-12,
+      "n_regions": 70,
+      "n_measurements": 70,
+      "rho_coupling_natural": 0.6266293412649812,
+      "p_coupling_natural": 6.524200960535504e-09,
+      "rho_natural_size": 0.6058177688311984,
+      "gini": 0.5228059138403607
+    },
+    {
+      "seed": 137,
+      "conservation_error": 6.0680349633912556e-12,
+      "n_regions": 63,
+      "n_measurements": 63,
+      "rho_coupling_natural": 0.6121831797235023,
+      "p_coupling_natural": 9.750370741316341e-08,
+      "rho_natural_size": 0.5857885199696977,
+      "gini": 0.737802672093387
+    },
+    {
+      "seed": 256,
+      "conservation_error": 3.183231456205249e-12,
+      "n_regions": 64,
+      "n_measurements": 64,
+      "rho_coupling_natural": 0.6613553113553112,
+      "p_coupling_natural": 2.7016441832661543e-09,
+      "rho_natural_size": 0.6379705127954739,
+      "gini": 0.5468430491459138
+    },
+    {
+      "seed": 314,
+      "conservation_error": 1.9610979506978765e-12,
+      "n_regions": 67,
+      "n_measurements": 67,
+      "rho_coupling_natural": 0.7550482879719054,
+      "p_coupling_natural": 1.5688702623098607e-13,
+      "rho_natural_size": 0.736286541102384,
+      "gini": 0.6037706696226057
+    },
+    {
+      "seed": 999,
+      "conservation_error": 1.7621459846850485e-12,
+      "n_regions": 74,
+      "n_measurements": 74,
+      "rho_coupling_natural": 0.6518326545723805,
+      "p_coupling_natural": 3.170719801508695e-10,
+      "rho_natural_size": 0.6532044878408065,
+      "gini": 0.6213970009059651
+    }
+  ]
+}

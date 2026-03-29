@@ -1,0 +1,117 @@
+{
+  "experiment": "exp_07_formal_operator",
+  "timestamp": "2026-03-28T08:45:30.585324",
+  "n_verified": 6,
+  "n_total": 7,
+  "results": {
+    "theorem_1": {
+      "regions_tested": 60,
+      "all_passed": true,
+      "errors": [],
+      "max_symmetry_error": 0.0,
+      "max_kernel_error": 7.508588603726681e-15,
+      "max_parseval_error": 6.245004513516506e-17,
+      "min_eigenvalue": -1.084622089069107e-15,
+      "symmetry_pass": true,
+      "kernel_pass": true,
+      "psd_pass": true,
+      "parseval_pass": true
+    },
+    "theorem_2": {
+      "regions_tested": 60,
+      "max_conservation_error": 1.3322676295501878e-15,
+      "pass": true
+    },
+    "theorem_3": {
+      "n_pairs": 67,
+      "spearman_rho": 0.41814989224998006,
+      "spearman_p": 0.0004297664941109957,
+      "pearson_r": 0.677668164581928,
+      "pearson_p": 3.007906413450729e-10,
+      "natural_vs_size_rho": 0.7704602368912156,
+      "pass": true
+    },
+    "theorem_4": {
+      "n_outliers": 14,
+      "max_ratio": 21.505911631707022,
+      "top_examples": [
+        {
+          "level": 2,
+          "parent": 1,
+          "child": 3,
+          "natural_weight": 0.043659676528023425,
+          "size_fraction": 0.0020301244269810086,
+          "ratio": 21.505911631707022
+        },
+        {
+          "level": 3,
+          "parent": 1,
+          "child": 8,
+          "natural_weight": 0.11012922411703617,
+          "size_fraction": 0.013865361691448648,
+          "ratio": 7.942758838015563
+        },
+        {
+          "level": 3,
+          "parent": 1,
+          "child": 7,
+          "natural_weight": 0.09244917045534212,
+          "size_fraction": 0.014116318464144552,
+          "ratio": 6.549099235056436
+        },
+        {
+          "level": 2,
+          "parent": 1,
+          "child": 14,
+          "natural_weight": 0.021484025230551727,
+          "size_fraction": 0.0033398821218074658,
+          "ratio": 6.432569907265194
+        },
+        {
+          "level": 1,
+          "parent": 1,
+          "child": 48,
+          "natural_weight": 0.20105713679191967,
+          "size_fraction": 0.032511210762331835,
+          "ratio": 6.184240207530771
+        }
+      ],
+      "pass": true
+    },
+    "theorem_5": {
+      "mean_fiedler_by_level": {
+        "0": 0.06448777116491772,
+        "1": 0.08319202639803697,
+        "2": 0.0531336111701202,
+        "3": 0.06871841892752076,
+        "4": 0.07204606176255897
+      },
+      "monotonically_decreasing": false,
+      "pass": false
+    },
+    "theorem_6": {
+      "mean_cosine": 0.6948988862159752,
+      "early_cosine": 0.886986563740624,
+      "late_cosine": 0.5183739784974447,
+      "temporal_gradient": 1.6865497339861901,
+      "rotation_confirmed": true,
+      "temporal_gradient_confirmed": true,
+      "pass": true
+    },
+    "theorem_7": {
+      "solutions": [
+        3
+      ],
+      "unique_solution": true,
+      "d3_lhs": 9,
+      "d3_rhs": 9,
+      "diverges_after_d10": true,
+      "hodge_duality_solutions": [
+        3
+      ],
+      "hodge_agrees": true,
+      "two_independent_proofs": true,
+      "pass": true
+    }
+  }
+}

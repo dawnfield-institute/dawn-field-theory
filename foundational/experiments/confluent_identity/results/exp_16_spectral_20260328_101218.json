@@ -1,0 +1,903 @@
+{
+  "experiment": "exp_16_spectral_gap_dynamics",
+  "timestamp": "2026-03-28T10:12:18.155408",
+  "purpose": "Fiedler as identity coherence predictor",
+  "n_regions": 57,
+  "epsilon_scales": [
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "correlations": {
+    "fiedler_vs_uniform_sensitivity": {
+      "rho": -0.15653357531760437,
+      "p": 0.2449085846042799
+    },
+    "fiedler_vs_noise_sensitivity": {
+      "rho": -0.3217526575058336,
+      "p": 0.014660961087192368
+    },
+    "fiedler_vs_entropy": {
+      "rho": 0.4324604614985741,
+      "p": 0.0007807040572771838
+    },
+    "fiedler_vs_fiedler_change": {
+      "rho": -0.6203285853776933,
+      "p": 2.651638010125589e-07
+    },
+    "fiedler_vs_size": -0.8962421611586526,
+    "sensitivity_vs_size": 0.17705109302125258
+  },
+  "quartile_analysis": {
+    "bottom_quartile_fiedler": 0.008155186623859478,
+    "bottom_quartile_sensitivity": 2112.94653804519,
+    "top_quartile_fiedler": 0.1416540601325551,
+    "top_quartile_sensitivity": 1565.8738843840144
+  },
+  "rank_overlap_top5": 2,
+  "verification": {
+    "test1_fiedler_sensitivity_correlation": true,
+    "test2_fiedler_entropy_correlation": false,
+    "test3_rank_overlap": false,
+    "test4_quartile_separation": true,
+    "n_verified": 2
+  },
+  "per_region": [
+    {
+      "region_id": 1,
+      "n_cells": 250,
+      "fiedler": 0.012401961333810486,
+      "spectral_entropy": 2.0730633596191304,
+      "primary_sensitivity": 1845.2553816139034,
+      "noise_sensitivity": 0.6283082155195108,
+      "fiedler_change": 8.392495812323304e-16,
+      "sensitivities_by_scale": {
+        "0.01": 35747.91045511554,
+        "0.05": 2624.0841178045166,
+        "0.1": 1845.2553816139034,
+        "0.2": 1540.1449632386207
+      }
+    },
+    {
+      "region_id": 2,
+      "n_cells": 182,
+      "fiedler": 0.048039525828862235,
+      "spectral_entropy": 2.1234686840918844,
+      "primary_sensitivity": 3070.208232385557,
+      "noise_sensitivity": 1.8040284567629594,
+      "fiedler_change": 5.344329903654311e-15,
+      "sensitivities_by_scale": {
+        "0.01": 20420.841429157725,
+        "0.05": 4392.790049299414,
+        "0.1": 3070.208232385557,
+        "0.2": 1578.2186645270788
+      }
+    },
+    {
+      "region_id": 3,
+      "n_cells": 157,
+      "fiedler": 0.03077423486803272,
+      "spectral_entropy": 2.113175321199535,
+      "primary_sensitivity": 3720.7357981355335,
+      "noise_sensitivity": 1.0429852183684991,
+      "fiedler_change": 1.9278316141023674e-14,
+      "sensitivities_by_scale": {
+        "0.01": 34812.7626511,
+        "0.05": 7069.969265585984,
+        "0.1": 3720.7357981355335,
+        "0.2": 1306.7784538382487
+      }
+    },
+    {
+      "region_id": 4,
+      "n_cells": 166,
+      "fiedler": 0.02491601002204899,
+      "spectral_entropy": 2.1122051618327973,
+      "primary_sensitivity": 3711.460934836918,
+      "noise_sensitivity": 1.4389150772335728,
+      "fiedler_change": 3.0912542684486044e-14,
+      "sensitivities_by_scale": {
+        "0.01": 27323.464067518544,
+        "0.05": 1739.3321708684734,
+        "0.1": 3711.460934836918,
+        "0.2": 2286.5920962947544
+      }
+    },
+    {
+      "region_id": 5,
+      "n_cells": 144,
+      "fiedler": 0.027696002215089714,
+      "spectral_entropy": 2.0919438258808656,
+      "primary_sensitivity": 1826.204017143037,
+      "noise_sensitivity": 0.9904626456151858,
+      "fiedler_change": 3.444893975591123e-14,
+      "sensitivities_by_scale": {
+        "0.01": 22860.813429329526,
+        "0.05": 4747.940933156253,
+        "0.1": 1826.204017143037,
+        "0.2": 1527.3650229456337
+      }
+    },
+    {
+      "region_id": 6,
+      "n_cells": 1018,
+      "fiedler": 0.0035497940220799423,
+      "spectral_entropy": 2.1047694502972627,
+      "primary_sensitivity": 3436.364137141053,
+      "noise_sensitivity": 1.7497437315988118,
+      "fiedler_change": 1.0873193515002166e-13,
+      "sensitivities_by_scale": {
+        "0.01": 33317.27289855765,
+        "0.05": 5822.376454391777,
+        "0.1": 3436.364137141053,
+        "0.2": 532.7717549973872
+      }
+    },
+    {
+      "region_id": 7,
+      "n_cells": 370,
+      "fiedler": 0.010343611768006602,
+      "spectral_entropy": 2.113592882254834,
+      "primary_sensitivity": 1559.2819246461722,
+      "noise_sensitivity": 1.9345193348077152,
+      "fiedler_change": 2.4988737369280806e-14,
+      "sensitivities_by_scale": {
+        "0.01": 8790.359335073641,
+        "0.05": 2205.3286154820426,
+        "0.1": 1559.2819246461722,
+        "0.2": 311.90568289476124
+      }
+    },
+    {
+      "region_id": 8,
+      "n_cells": 1159,
+      "fiedler": 0.007679346853649028,
+      "spectral_entropy": 2.110572880938583,
+      "primary_sensitivity": 300.85130333802437,
+      "noise_sensitivity": 1.5357753191475538,
+      "fiedler_change": 7.104387177607347e-14,
+      "sensitivities_by_scale": {
+        "0.01": 34511.35981144438,
+        "0.05": 1244.902797629003,
+        "0.1": 300.85130333802437,
+        "0.2": 1722.9887595759667
+      }
+    },
+    {
+      "region_id": 9,
+      "n_cells": 302,
+      "fiedler": 0.014936838856104601,
+      "spectral_entropy": 2.1136827678790127,
+      "primary_sensitivity": 4123.18324940451,
+      "noise_sensitivity": 1.593196096398839,
+      "fiedler_change": 4.413215722694453e-15,
+      "sensitivities_by_scale": {
+        "0.01": 24867.003804794833,
+        "0.05": 7313.180794704168,
+        "0.1": 4123.18324940451,
+        "0.2": 2014.74259117751
+      }
+    },
+    {
+      "region_id": 10,
+      "n_cells": 247,
+      "fiedler": 0.013659321650699562,
+      "spectral_entropy": 2.11912052846665,
+      "primary_sensitivity": 3887.223163842784,
+      "noise_sensitivity": 1.1991339064932065,
+      "fiedler_change": 1.612890354901008e-14,
+      "sensitivities_by_scale": {
+        "0.01": 29410.693727332095,
+        "0.05": 2401.6745492314426,
+        "0.1": 3887.223163842784,
+        "0.2": 1668.3307235273462
+      }
+    },
+    {
+      "region_id": 11,
+      "n_cells": 331,
+      "fiedler": 0.014717758930363088,
+      "spectral_entropy": 2.122076517888657,
+      "primary_sensitivity": 3119.8864468802844,
+      "noise_sensitivity": 1.7753818465625277,
+      "fiedler_change": 4.2431762492267e-15,
+      "sensitivities_by_scale": {
+        "0.01": 27263.731215542593,
+        "0.05": 3510.2882828533957,
+        "0.1": 3119.8864468802844,
+        "0.2": 1536.070503014182
+      }
+    },
+    {
+      "region_id": 12,
+      "n_cells": 40,
+      "fiedler": 0.08968520483941084,
+      "spectral_entropy": 3.4562593070206686,
+      "primary_sensitivity": 6.153052089570199e-13,
+      "noise_sensitivity": 0.10918045285843658,
+      "fiedler_change": 0.0,
+      "sensitivities_by_scale": {
+        "0.01": 6.1530520836894284e-12,
+        "0.05": 7.45456193015527e-13,
+        "0.1": 6.153052089570199e-13,
+        "0.2": 3.0765260449484547e-13
+      }
+    },
+    {
+      "region_id": 13,
+      "n_cells": 355,
+      "fiedler": 0.010031668820073437,
+      "spectral_entropy": 2.1165322304680405,
+      "primary_sensitivity": 3444.2385100833194,
+      "noise_sensitivity": 1.7916817520301964,
+      "fiedler_change": 2.9397201622717545e-15,
+      "sensitivities_by_scale": {
+        "0.01": 17986.885819172054,
+        "0.05": 6970.934176835183,
+        "0.1": 3444.2385100833194,
+        "0.2": 837.3917364576905
+      }
+    },
+    {
+      "region_id": 14,
+      "n_cells": 573,
+      "fiedler": 0.011114619576083944,
+      "spectral_entropy": 2.11114724528169,
+      "primary_sensitivity": 3340.9553913646923,
+      "noise_sensitivity": 1.6542983576194865,
+      "fiedler_change": 3.183946932927074e-14,
+      "sensitivities_by_scale": {
+        "0.01": 31754.93649287344,
+        "0.05": 3984.1124045059196,
+        "0.1": 3340.9553913646923,
+        "0.2": 1507.1289532887747
+      }
+    },
+    {
+      "region_id": 15,
+      "n_cells": 31,
+      "fiedler": 0.27198378687117875,
+      "spectral_entropy": 3.2185323133229957,
+      "primary_sensitivity": 2.5932709557563265e-12,
+      "noise_sensitivity": 2.079285257969195,
+      "fiedler_change": 0.0,
+      "sensitivities_by_scale": {
+        "0.01": 2.593270952649029e-11,
+        "0.05": 5.186541910822143e-12,
+        "0.1": 2.5932709557563265e-12,
+        "0.2": 6.606781063519029e-13
+      }
+    },
+    {
+      "region_id": 16,
+      "n_cells": 32,
+      "fiedler": 0.08082598722471904,
+      "spectral_entropy": 3.239940832640166,
+      "primary_sensitivity": 3.2872795981642105e-13,
+      "noise_sensitivity": 0.2811542465816505,
+      "fiedler_change": 0.0,
+      "sensitivities_by_scale": {
+        "0.01": 1.7698079510402663e-11,
+        "0.05": 0.0,
+        "0.1": 3.2872795981642105e-13,
+        "0.2": 1.9933225890265716e-13
+      }
+    },
+    {
+      "region_id": 17,
+      "n_cells": 691,
+      "fiedler": 0.008799613959471856,
+      "spectral_entropy": 2.1187201487912812,
+      "primary_sensitivity": 2659.5078869815834,
+      "noise_sensitivity": 1.238987163836681,
+      "fiedler_change": 2.7599084204746375e-14,
+      "sensitivities_by_scale": {
+        "0.01": 23370.04938880643,
+        "0.05": 6894.701695249949,
+        "0.1": 2659.5078869815834,
+        "0.2": 900.3234484153915
+      }
+    },
+    {
+      "region_id": 18,
+      "n_cells": 109,
+      "fiedler": 0.05888903447874494,
+      "spectral_entropy": 2.114701247302407,
+      "primary_sensitivity": 3228.4361014496167,
+      "noise_sensitivity": 1.0737694392441879,
+      "fiedler_change": 4.124049388590431e-15,
+      "sensitivities_by_scale": {
+        "0.01": 17433.505659829792,
+        "0.05": 7551.794461841268,
+        "0.1": 3228.4361014496167,
+        "0.2": 1007.913441781347
+      }
+    },
+    {
+      "region_id": 19,
+      "n_cells": 396,
+      "fiedler": 0.018029377140372137,
+      "spectral_entropy": 2.1234535754522557,
+      "primary_sensitivity": 1509.969902283648,
+      "noise_sensitivity": 0.4355948474964196,
+      "fiedler_change": 2.3091958806615617e-15,
+      "sensitivities_by_scale": {
+        "0.01": 14954.837178825217,
+        "0.05": 2165.047739659591,
+        "0.1": 1509.969902283648,
+        "0.2": 1448.0355118198122
+      }
+    },
+    {
+      "region_id": 20,
+      "n_cells": 197,
+      "fiedler": 0.019175031269953614,
+      "spectral_entropy": 2.1256934292335745,
+      "primary_sensitivity": 2783.816127915778,
+      "noise_sensitivity": 1.5004319649765239,
+      "fiedler_change": 4.885262839155167e-15,
+      "sensitivities_by_scale": {
+        "0.01": 27277.37582343541,
+        "0.05": 1989.7455714739554,
+        "0.1": 2783.816127915778,
+        "0.2": 1347.3528943043802
+      }
+    },
+    {
+      "region_id": 21,
+      "n_cells": 114,
+      "fiedler": 0.04671044011131886,
+      "spectral_entropy": 2.1219406636209563,
+      "primary_sensitivity": 2466.965992568049,
+      "noise_sensitivity": 1.0207717282668858,
+      "fiedler_change": 2.5996467391226496e-14,
+      "sensitivities_by_scale": {
+        "0.01": 24519.514088248678,
+        "0.05": 5033.604388441192,
+        "0.1": 2466.965992568049,
+        "0.2": 1204.6452165690803
+      }
+    },
+    {
+      "region_id": 22,
+      "n_cells": 135,
+      "fiedler": 0.03526844779735256,
+      "spectral_entropy": 2.1141300032093033,
+      "primary_sensitivity": 2090.6595062074066,
+      "noise_sensitivity": 1.3836864444296764,
+      "fiedler_change": 1.9281018730683534e-14,
+      "sensitivities_by_scale": {
+        "0.01": 9302.106443837378,
+        "0.05": 5231.529307381818,
+        "0.1": 2090.6595062074066,
+        "0.2": 495.81373312531
+      }
+    },
+    {
+      "region_id": 23,
+      "n_cells": 92,
+      "fiedler": 0.04705066133234214,
+      "spectral_entropy": 2.1273674393129194,
+      "primary_sensitivity": 1831.236883111264,
+      "noise_sensitivity": 1.4388740018048554,
+      "fiedler_change": 9.291055716695176e-15,
+      "sensitivities_by_scale": {
+        "0.01": 2449.7899963891327,
+        "0.05": 1337.0194173225952,
+        "0.1": 1831.236883111264,
+        "0.2": 1093.8964349250814
+      }
+    },
+    {
+      "region_id": 24,
+      "n_cells": 64,
+      "fiedler": 0.14162617520879922,
+      "spectral_entropy": 2.1223858844700234,
+      "primary_sensitivity": 2745.3701936979314,
+      "noise_sensitivity": 0.9483036515504808,
+      "fiedler_change": 2.155754974825776e-15,
+      "sensitivities_by_scale": {
+        "0.01": 21554.718321386463,
+        "0.05": 6450.156585739546,
+        "0.1": 2745.3701936979314,
+        "0.2": 1711.3489792962685
+      }
+    },
+    {
+      "region_id": 25,
+      "n_cells": 17,
+      "fiedler": 0.1935829379445412,
+      "spectral_entropy": 2.552159344028853,
+      "primary_sensitivity": 7.543431698636766e-13,
+      "noise_sensitivity": 0.304544237852984,
+      "fiedler_change": 0.0,
+      "sensitivities_by_scale": {
+        "0.01": 1.0901344145218516e-12,
+        "0.05": 1.0988298118805507e-12,
+        "0.1": 7.543431698636766e-13,
+        "0.2": 2.495109808095233e-13
+      }
+    },
+    {
+      "region_id": 26,
+      "n_cells": 61,
+      "fiedler": 0.11993370668228086,
+      "spectral_entropy": 2.1212938571089186,
+      "primary_sensitivity": 2157.2489666389415,
+      "noise_sensitivity": 1.2025392039491962,
+      "fiedler_change": 7.7527144690587e-15,
+      "sensitivities_by_scale": {
+        "0.01": 10157.116660056925,
+        "0.05": 6305.436604992331,
+        "0.1": 2157.2489666389415,
+        "0.2": 1609.136409783012
+      }
+    },
+    {
+      "region_id": 27,
+      "n_cells": 122,
+      "fiedler": 0.05520927319087955,
+      "spectral_entropy": 2.094695939251733,
+      "primary_sensitivity": 1553.2501614485332,
+      "noise_sensitivity": 1.774123396105447,
+      "fiedler_change": 1.4076550411208455e-14,
+      "sensitivities_by_scale": {
+        "0.01": 1954.9007510207418,
+        "0.05": 6034.881805262756,
+        "0.1": 1553.2501614485332,
+        "0.2": 851.0794327208151
+      }
+    },
+    {
+      "region_id": 28,
+      "n_cells": 313,
+      "fiedler": 0.013073655453429691,
+      "spectral_entropy": 2.1024694687779095,
+      "primary_sensitivity": 2092.090161014717,
+      "noise_sensitivity": 1.5682983947527118,
+      "fiedler_change": 3.463169339613704e-14,
+      "sensitivities_by_scale": {
+        "0.01": 9109.342021254337,
+        "0.05": 4712.16617219373,
+        "0.1": 2092.090161014717,
+        "0.2": 902.6487652383702
+      }
+    },
+    {
+      "region_id": 29,
+      "n_cells": 332,
+      "fiedler": 0.006939112497737448,
+      "spectral_entropy": 2.109944411368943,
+      "primary_sensitivity": 2209.3304162704458,
+      "noise_sensitivity": 1.3802828378491925,
+      "fiedler_change": 1.1987122373386711e-13,
+      "sensitivities_by_scale": {
+        "0.01": 22752.748346384793,
+        "0.05": 4544.891705470901,
+        "0.1": 2209.3304162704458,
+        "0.2": 804.469372164188
+      }
+    },
+    {
+      "region_id": 30,
+      "n_cells": 51,
+      "fiedler": 0.10354675884561032,
+      "spectral_entropy": 2.1362275902429197,
+      "primary_sensitivity": 1561.0854576884894,
+      "noise_sensitivity": 1.6920407228507177,
+      "fiedler_change": 5.3609742931717644e-15,
+      "sensitivities_by_scale": {
+        "0.01": 3682.137490881381,
+        "0.05": 2502.4431211993806,
+        "0.1": 1561.0854576884894,
+        "0.2": 646.2561380794453
+      }
+    },
+    {
+      "region_id": 33,
+      "n_cells": 81,
+      "fiedler": 0.06761785593218209,
+      "spectral_entropy": 2.122408416600841,
+      "primary_sensitivity": 1808.761721537633,
+      "noise_sensitivity": 1.2833004251822555,
+      "fiedler_change": 5.541439692894044e-15,
+      "sensitivities_by_scale": {
+        "0.01": 12519.276315270545,
+        "0.05": 1517.079274045575,
+        "0.1": 1808.761721537633,
+        "0.2": 575.6563038260894
+      }
+    },
+    {
+      "region_id": 34,
+      "n_cells": 301,
+      "fiedler": 0.010232433646886271,
+      "spectral_entropy": 2.1013010854362535,
+      "primary_sensitivity": 3011.5268371038055,
+      "noise_sensitivity": 1.3990136121752905,
+      "fiedler_change": 3.76360722147465e-14,
+      "sensitivities_by_scale": {
+        "0.01": 28960.50742305631,
+        "0.05": 4716.2936008823735,
+        "0.1": 3011.5268371038055,
+        "0.2": 1122.3461354053547
+      }
+    },
+    {
+      "region_id": 35,
+      "n_cells": 225,
+      "fiedler": 0.013128222688878219,
+      "spectral_entropy": 2.0893900507683414,
+      "primary_sensitivity": 778.5517023214496,
+      "noise_sensitivity": 1.87268011822151,
+      "fiedler_change": 7.66394385523974e-15,
+      "sensitivities_by_scale": {
+        "0.01": 17821.929177620936,
+        "0.05": 4241.629342413704,
+        "0.1": 778.5517023214496,
+        "0.2": 695.2537114897607
+      }
+    },
+    {
+      "region_id": 36,
+      "n_cells": 674,
+      "fiedler": 0.005614539279382631,
+      "spectral_entropy": 2.1005126611229445,
+      "primary_sensitivity": 1098.7601608958532,
+      "noise_sensitivity": 1.8666492819258547,
+      "fiedler_change": 1.0983878908359087e-13,
+      "sensitivities_by_scale": {
+        "0.01": 27546.472100481347,
+        "0.05": 6473.70134685884,
+        "0.1": 1098.7601608958532,
+        "0.2": 1254.4670682494916
+      }
+    },
+    {
+      "region_id": 37,
+      "n_cells": 27,
+      "fiedler": 0.037984776402306665,
+      "spectral_entropy": 3.0145870247138564,
+      "primary_sensitivity": 1.0438278370229686e-12,
+      "noise_sensitivity": 0.1877599020323293,
+      "fiedler_change": 0.0,
+      "sensitivities_by_scale": {
+        "0.01": 3.3642873099237885e-12,
+        "0.05": 5.52106512623294e-13,
+        "0.1": 1.0438278370229686e-12,
+        "0.2": 5.846503824588648e-14
+      }
+    },
+    {
+      "region_id": 38,
+      "n_cells": 88,
+      "fiedler": 0.05137662803972511,
+      "spectral_entropy": 2.1224199973831905,
+      "primary_sensitivity": 3103.0481211661768,
+      "noise_sensitivity": 0.9164929586616908,
+      "fiedler_change": 1.8773249421844433e-14,
+      "sensitivities_by_scale": {
+        "0.01": 15729.166938240183,
+        "0.05": 5904.359664298532,
+        "0.1": 3103.0481211661768,
+        "0.2": 1753.2404470402562
+      }
+    },
+    {
+      "region_id": 39,
+      "n_cells": 266,
+      "fiedler": 0.028384969939802867,
+      "spectral_entropy": 2.114779870311304,
+      "primary_sensitivity": 2261.7941285193415,
+      "noise_sensitivity": 0.9038730266993276,
+      "fiedler_change": 2.1267726226949113e-14,
+      "sensitivities_by_scale": {
+        "0.01": 13667.705400714454,
+        "0.05": 6785.866377036717,
+        "0.1": 2261.7941285193415,
+        "0.2": 1360.3094332293663
+      }
+    },
+    {
+      "region_id": 40,
+      "n_cells": 529,
+      "fiedler": 0.011586815850625204,
+      "spectral_entropy": 2.106033975372037,
+      "primary_sensitivity": 4043.0154576061245,
+      "noise_sensitivity": 1.693112163162666,
+      "fiedler_change": 1.4522382968626908e-14,
+      "sensitivities_by_scale": {
+        "0.01": 14309.941217261096,
+        "0.05": 6243.771374717979,
+        "0.1": 4043.0154576061245,
+        "0.2": 1254.1219288284706
+      }
+    },
+    {
+      "region_id": 41,
+      "n_cells": 233,
+      "fiedler": 0.008748501261611046,
+      "spectral_entropy": 2.083488284788588,
+      "primary_sensitivity": 2339.8939773332468,
+      "noise_sensitivity": 1.1503760401154768,
+      "fiedler_change": 6.702136941477898e-14,
+      "sensitivities_by_scale": {
+        "0.01": 17457.699021753026,
+        "0.05": 1011.6640693057469,
+        "0.1": 2339.8939773332468,
+        "0.2": 1045.0590417833428
+      }
+    },
+    {
+      "region_id": 42,
+      "n_cells": 10,
+      "fiedler": 0.5706099257563169,
+      "spectral_entropy": 2.006876092047076,
+      "primary_sensitivity": 3.4015711619686555e-12,
+      "noise_sensitivity": 0.8103238059811435,
+      "fiedler_change": 0.0,
+      "sensitivities_by_scale": {
+        "0.01": 0.0,
+        "0.05": 0.0,
+        "0.1": 3.4015711619686555e-12,
+        "0.2": 0.0
+      }
+    },
+    {
+      "region_id": 43,
+      "n_cells": 518,
+      "fiedler": 0.010788922438831665,
+      "spectral_entropy": 2.115024474177576,
+      "primary_sensitivity": 369.89762383693255,
+      "noise_sensitivity": 1.1794339240988745,
+      "fiedler_change": 1.447087174118243e-14,
+      "sensitivities_by_scale": {
+        "0.01": 21765.613290920555,
+        "0.05": 3564.6051095977923,
+        "0.1": 369.89762383693255,
+        "0.2": 839.1977810501278
+      }
+    },
+    {
+      "region_id": 44,
+      "n_cells": 637,
+      "fiedler": 0.005785310922589618,
+      "spectral_entropy": 2.0930522851998044,
+      "primary_sensitivity": 1733.7382940579007,
+      "noise_sensitivity": 1.80868729506994,
+      "fiedler_change": 1.754120473428257e-14,
+      "sensitivities_by_scale": {
+        "0.01": 40062.625978064774,
+        "0.05": 7107.141294730656,
+        "0.1": 1733.7382940579007,
+        "0.2": 1013.155339983139
+      }
+    },
+    {
+      "region_id": 45,
+      "n_cells": 389,
+      "fiedler": 0.015672940745869668,
+      "spectral_entropy": 2.1277981231861216,
+      "primary_sensitivity": 2165.2375168337076,
+      "noise_sensitivity": 1.359630438814512,
+      "fiedler_change": 5.268496754717292e-14,
+      "sensitivities_by_scale": {
+        "0.01": 15994.837503049252,
+        "0.05": 3959.5375903016497,
+        "0.1": 2165.2375168337076,
+        "0.2": 1089.9274791444243
+      }
+    },
+    {
+      "region_id": 46,
+      "n_cells": 200,
+      "fiedler": 0.025527701007158947,
+      "spectral_entropy": 2.103411510326099,
+      "primary_sensitivity": 1026.3501937312183,
+      "noise_sensitivity": 0.10713524227456524,
+      "fiedler_change": 3.7375003394141955e-14,
+      "sensitivities_by_scale": {
+        "0.01": 24026.415702614482,
+        "0.05": 2068.348737790423,
+        "0.1": 1026.3501937312183,
+        "0.2": 1089.575316006338
+      }
+    },
+    {
+      "region_id": 47,
+      "n_cells": 833,
+      "fiedler": 0.008607296785132926,
+      "spectral_entropy": 2.1196033920402826,
+      "primary_sensitivity": 1712.381303396086,
+      "noise_sensitivity": 1.6992705086463622,
+      "fiedler_change": 3.2448106136486653e-14,
+      "sensitivities_by_scale": {
+        "0.01": 11850.014216752399,
+        "0.05": 4600.022124536048,
+        "0.1": 1712.381303396086,
+        "0.2": 1403.638053164204
+      }
+    },
+    {
+      "region_id": 48,
+      "n_cells": 319,
+      "fiedler": 0.014354351018468802,
+      "spectral_entropy": 2.14113853514615,
+      "primary_sensitivity": 1702.1124020062498,
+      "noise_sensitivity": 1.0110969499080389,
+      "fiedler_change": 4.6889804200340075e-14,
+      "sensitivities_by_scale": {
+        "0.01": 5171.431183995395,
+        "0.05": 835.3689885785183,
+        "0.1": 1702.1124020062498,
+        "0.2": 607.4483550410242
+      }
+    },
+    {
+      "region_id": 49,
+      "n_cells": 418,
+      "fiedler": 0.011760103870344844,
+      "spectral_entropy": 2.116409600053362,
+      "primary_sensitivity": 1967.7662492385236,
+      "noise_sensitivity": 1.088939875732809,
+      "fiedler_change": 3.363209686608666e-14,
+      "sensitivities_by_scale": {
+        "0.01": 29217.141477459147,
+        "0.05": 2599.323283067832,
+        "0.1": 1967.7662492385236,
+        "0.2": 926.1669870717488
+      }
+    },
+    {
+      "region_id": 50,
+      "n_cells": 221,
+      "fiedler": 0.016431400196753654,
+      "spectral_entropy": 2.0952115425894333,
+      "primary_sensitivity": 1710.2481623248782,
+      "noise_sensitivity": 0.8090722804382325,
+      "fiedler_change": 3.293898986232849e-14,
+      "sensitivities_by_scale": {
+        "0.01": 11121.992878518447,
+        "0.05": 2239.0284514409013,
+        "0.1": 1710.2481623248782,
+        "0.2": 922.8047176736028
+      }
+    },
+    {
+      "region_id": 51,
+      "n_cells": 184,
+      "fiedler": 0.015175515112108334,
+      "spectral_entropy": 2.082047562488974,
+      "primary_sensitivity": 1939.7676927417153,
+      "noise_sensitivity": 1.240925929554318,
+      "fiedler_change": 1.8632641099516333e-14,
+      "sensitivities_by_scale": {
+        "0.01": 32731.40711581698,
+        "0.05": 5701.813284495784,
+        "0.1": 1939.7676927417153,
+        "0.2": 1269.8661773213457
+      }
+    },
+    {
+      "region_id": 52,
+      "n_cells": 530,
+      "fiedler": 0.008828641146460682,
+      "spectral_entropy": 2.1226015007079804,
+      "primary_sensitivity": 1128.9363832578388,
+      "noise_sensitivity": 1.9124100382720326,
+      "fiedler_change": 1.3557683210441858e-14,
+      "sensitivities_by_scale": {
+        "0.01": 5956.662247183676,
+        "0.05": 2183.7925767747547,
+        "0.1": 1128.9363832578388,
+        "0.2": 476.55614914975683
+      }
+    },
+    {
+      "region_id": 53,
+      "n_cells": 319,
+      "fiedler": 0.009495321330937544,
+      "spectral_entropy": 2.1169739558414076,
+      "primary_sensitivity": 2783.0270426621914,
+      "noise_sensitivity": 1.3706252631341873,
+      "fiedler_change": 7.472121026202123e-14,
+      "sensitivities_by_scale": {
+        "0.01": 26494.819521541827,
+        "0.05": 6081.332915887741,
+        "0.1": 2783.0270426621914,
+        "0.2": 1201.9833806010454
+      }
+    },
+    {
+      "region_id": 54,
+      "n_cells": 288,
+      "fiedler": 0.020533130816167658,
+      "spectral_entropy": 2.0809914080882055,
+      "primary_sensitivity": 1704.4791306144152,
+      "noise_sensitivity": 1.7951911211534362,
+      "fiedler_change": 4.393174209934037e-14,
+      "sensitivities_by_scale": {
+        "0.01": 29951.52996329912,
+        "0.05": 5689.429722253565,
+        "0.1": 1704.4791306144152,
+        "0.2": 717.7304337838367
+      }
+    },
+    {
+      "region_id": 55,
+      "n_cells": 345,
+      "fiedler": 0.00951742044001368,
+      "spectral_entropy": 2.106819223135948,
+      "primary_sensitivity": 2163.413355465146,
+      "noise_sensitivity": 1.8136665609286136,
+      "fiedler_change": 6.57988347551305e-14,
+      "sensitivities_by_scale": {
+        "0.01": 16144.41148085569,
+        "0.05": 7417.085575112256,
+        "0.1": 2163.413355465146,
+        "0.2": 441.1854935120458
+      }
+    },
+    {
+      "region_id": 56,
+      "n_cells": 193,
+      "fiedler": 0.011948387134104047,
+      "spectral_entropy": 2.0924657190818623,
+      "primary_sensitivity": 2351.5455283337405,
+      "noise_sensitivity": 1.2012110872698976,
+      "fiedler_change": 1.509921292946967e-14,
+      "sensitivities_by_scale": {
+        "0.01": 21608.85906939728,
+        "0.05": 2589.54093886816,
+        "0.1": 2351.5455283337405,
+        "0.2": 1045.5303014538697
+      }
+    },
+    {
+      "region_id": 57,
+      "n_cells": 55,
+      "fiedler": 0.09066875326758736,
+      "spectral_entropy": 2.1202186098580036,
+      "primary_sensitivity": 3505.171147742047,
+      "noise_sensitivity": 1.8458070780848488,
+      "fiedler_change": 2.1887624843154e-14,
+      "sensitivities_by_scale": {
+        "0.01": 25564.90298211744,
+        "0.05": 5751.445899466807,
+        "0.1": 3505.171147742047,
+        "0.2": 1778.848580032339
+      }
+    },
+    {
+      "region_id": 58,
+      "n_cells": 56,
+      "fiedler": 0.08760081357379533,
+      "spectral_entropy": 2.1401224451877883,
+      "primary_sensitivity": 2259.8625100068257,
+      "noise_sensitivity": 1.9259687889198052,
+      "fiedler_change": 1.901049167237277e-15,
+      "sensitivities_by_scale": {
+        "0.01": 11166.708898161065,
+        "0.05": 2248.9222542304797,
+        "0.1": 2259.8625100068257,
+        "0.2": 1637.8983682355674
+      }
+    },
+    {
+      "region_id": 60,
+      "n_cells": 372,
+      "fiedler": 0.019085646863740095,
+      "spectral_entropy": 2.1012310610661897,
+      "primary_sensitivity": 2752.821245163198,
+      "noise_sensitivity": 1.0614879165705056,
+      "fiedler_change": 1.490620947203415e-14,
+      "sensitivities_by_scale": {
+        "0.01": 3.908570247426237e-10,
+        "0.05": 5957.152649156279,
+        "0.1": 2752.821245163198,
+        "0.2": 1364.064399352292
+      }
+    }
+  ]
+}

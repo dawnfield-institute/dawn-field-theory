@@ -1,0 +1,687 @@
+{
+  "experiment": "exp_26_confluence_complexity",
+  "timestamp": "2026-03-28T12:35:36.230661",
+  "purpose": "Why does coupling create entropy? Confluence distributes energy.",
+  "n_regions": 57,
+  "raw_correlations": {
+    "fiedler_entropy": {
+      "rho": -0.8953201970443351,
+      "p": 5.7337759716691855e-21
+    },
+    "fiedler_gini": {
+      "rho": 0.6538760694840551,
+      "p": 3.485861187246766e-08
+    },
+    "fiedler_eff_dim": {
+      "rho": -0.8945713827417398,
+      "p": 6.905552179035981e-21
+    },
+    "fiedler_mode1_dom": {
+      "rho": -0.03266787658802178,
+      "p": 0.8093712323187131
+    }
+  },
+  "partial_correlations": {
+    "fiedler_entropy_given_size": {
+      "rho": -0.022037853253824218,
+      "p": 0.8707422738473571
+    },
+    "fiedler_gini_given_size": {
+      "rho": -0.22407311381903033,
+      "p": 0.09381332747360296
+    },
+    "fiedler_eff_dim_given_size": {
+      "rho": 0.11031890070002594,
+      "p": 0.41396561597690085
+    },
+    "fiedler_mode1_dom_given_size": {
+      "rho": 0.16366346901737105,
+      "p": 0.2238022463672501
+    }
+  },
+  "quartile_analysis": {
+    "mean_mode1_dom_low_fiedler": 0.24225803268774096,
+    "mean_mode1_dom_high_fiedler": 0.23706487104110768
+  },
+  "random_graph_control": {
+    "n_graphs": 26,
+    "rho_fiedler_entropy": -0.3695726495726495,
+    "p": 0.06314261748877567
+  },
+  "verification": {
+    "test1_gini_negative": false,
+    "test2_eff_dim_positive": false,
+    "test3_random_graph_control": true,
+    "test4_mode1_low_in_high_fiedler": true,
+    "n_verified": 2
+  },
+  "per_region": [
+    {
+      "region_id": 1,
+      "n_cells": 250,
+      "fiedler": 0.012401961333810014,
+      "spectral_entropy": 5.340618870449822,
+      "gini": 0.31810855021340734,
+      "effective_dim": 224,
+      "mode1_dominance": 0.3767764192725937,
+      "mean_degree": 3.616,
+      "n_nonzero_eigs": 249
+    },
+    {
+      "region_id": 2,
+      "n_cells": 182,
+      "fiedler": 0.04803952582886116,
+      "spectral_entropy": 5.03519045417711,
+      "gini": 0.30628217101196353,
+      "effective_dim": 165,
+      "mode1_dominance": 0.11274623368111181,
+      "mean_degree": 3.6923076923076925,
+      "n_nonzero_eigs": 181
+    },
+    {
+      "region_id": 3,
+      "n_cells": 157,
+      "fiedler": 0.030774234868032897,
+      "spectral_entropy": 4.880483491600132,
+      "gini": 0.3123047278799199,
+      "effective_dim": 142,
+      "mode1_dominance": 0.17059488613270943,
+      "mean_degree": 3.6305732484076434,
+      "n_nonzero_eigs": 156
+    },
+    {
+      "region_id": 4,
+      "n_cells": 166,
+      "fiedler": 0.024916010022048313,
+      "spectral_entropy": 4.938606927974594,
+      "gini": 0.3102195237908345,
+      "effective_dim": 150,
+      "mode1_dominance": 0.23794150304128317,
+      "mean_degree": 3.63855421686747,
+      "n_nonzero_eigs": 165
+    },
+    {
+      "region_id": 5,
+      "n_cells": 144,
+      "fiedler": 0.02769600221509072,
+      "spectral_entropy": 4.779360234495995,
+      "gini": 0.32513810805166704,
+      "effective_dim": 129,
+      "mode1_dominance": 0.4080541433653404,
+      "mean_degree": 3.5555555555555554,
+      "n_nonzero_eigs": 143
+    },
+    {
+      "region_id": 6,
+      "n_cells": 1018,
+      "fiedler": 0.003549794022079691,
+      "spectral_entropy": 6.76711570028452,
+      "gini": 0.30016493478931916,
+      "effective_dim": 934,
+      "mode1_dominance": 5.121035276456202e-05,
+      "mean_degree": 3.8330058939096268,
+      "n_nonzero_eigs": 1017
+    },
+    {
+      "region_id": 7,
+      "n_cells": 370,
+      "fiedler": 0.010343611768006765,
+      "spectral_entropy": 5.7434731686729386,
+      "gini": 0.31056640380147477,
+      "effective_dim": 336,
+      "mode1_dominance": 0.09207769269854287,
+      "mean_degree": 3.7513513513513512,
+      "n_nonzero_eigs": 369
+    },
+    {
+      "region_id": 8,
+      "n_cells": 1159,
+      "fiedler": 0.007679346853649467,
+      "spectral_entropy": 6.90008459043765,
+      "gini": 0.29717657357032057,
+      "effective_dim": 1067,
+      "mode1_dominance": 0.4009778809307067,
+      "mean_degree": 3.8671268334771356,
+      "n_nonzero_eigs": 1158
+    },
+    {
+      "region_id": 9,
+      "n_cells": 302,
+      "fiedler": 0.014936838856105524,
+      "spectral_entropy": 5.5400992553111745,
+      "gini": 0.3094962444331582,
+      "effective_dim": 274,
+      "mode1_dominance": 0.05237897266906965,
+      "mean_degree": 3.728476821192053,
+      "n_nonzero_eigs": 301
+    },
+    {
+      "region_id": 10,
+      "n_cells": 247,
+      "fiedler": 0.013659321650700018,
+      "spectral_entropy": 5.331170567534805,
+      "gini": 0.31704455728698927,
+      "effective_dim": 222,
+      "mode1_dominance": 0.003735497871910368,
+      "mean_degree": 3.6761133603238867,
+      "n_nonzero_eigs": 246
+    },
+    {
+      "region_id": 11,
+      "n_cells": 331,
+      "fiedler": 0.014717758930362155,
+      "spectral_entropy": 5.630443406789556,
+      "gini": 0.3113930470479402,
+      "effective_dim": 300,
+      "mode1_dominance": 0.2139474908813637,
+      "mean_degree": 3.72809667673716,
+      "n_nonzero_eigs": 330
+    },
+    {
+      "region_id": 12,
+      "n_cells": 40,
+      "fiedler": 0.08968520483941084,
+      "spectral_entropy": 3.4562593070206686,
+      "gini": 0.34903787565014566,
+      "effective_dim": 34,
+      "mode1_dominance": 0.1608982973571216,
+      "mean_degree": 3.2,
+      "n_nonzero_eigs": 39
+    },
+    {
+      "region_id": 13,
+      "n_cells": 355,
+      "fiedler": 0.010031668820073085,
+      "spectral_entropy": 5.696550616320021,
+      "gini": 0.3161036451894351,
+      "effective_dim": 320,
+      "mode1_dominance": 0.057883732312263604,
+      "mean_degree": 3.7295774647887323,
+      "n_nonzero_eigs": 354
+    },
+    {
+      "region_id": 14,
+      "n_cells": 573,
+      "fiedler": 0.011114619576084431,
+      "spectral_entropy": 6.186537924712125,
+      "gini": 0.3060067161796108,
+      "effective_dim": 523,
+      "mode1_dominance": 0.5502437558417757,
+      "mean_degree": 3.81151832460733,
+      "n_nonzero_eigs": 572
+    },
+    {
+      "region_id": 15,
+      "n_cells": 31,
+      "fiedler": 0.27198378687117875,
+      "spectral_entropy": 3.2185323133229957,
+      "gini": 0.3293387205416129,
+      "effective_dim": 28,
+      "mode1_dominance": 0.21016665407287033,
+      "mean_degree": 3.225806451612903,
+      "n_nonzero_eigs": 30
+    },
+    {
+      "region_id": 16,
+      "n_cells": 32,
+      "fiedler": 0.08082598722471904,
+      "spectral_entropy": 3.239940832640166,
+      "gini": 0.33573762058755163,
+      "effective_dim": 28,
+      "mode1_dominance": 0.8875737390407573,
+      "mean_degree": 3.0625,
+      "n_nonzero_eigs": 31
+    },
+    {
+      "region_id": 17,
+      "n_cells": 691,
+      "fiedler": 0.00879961395947124,
+      "spectral_entropy": 6.3719609722035475,
+      "gini": 0.3077766092463718,
+      "effective_dim": 629,
+      "mode1_dominance": 0.5241920768142673,
+      "mean_degree": 3.8031837916063678,
+      "n_nonzero_eigs": 690
+    },
+    {
+      "region_id": 18,
+      "n_cells": 109,
+      "fiedler": 0.05888903447874449,
+      "spectral_entropy": 4.495980373190796,
+      "gini": 0.32882989194926826,
+      "effective_dim": 97,
+      "mode1_dominance": 0.06242773006237684,
+      "mean_degree": 3.522935779816514,
+      "n_nonzero_eigs": 108
+    },
+    {
+      "region_id": 19,
+      "n_cells": 396,
+      "fiedler": 0.018029377140373077,
+      "spectral_entropy": 5.818827944580356,
+      "gini": 0.3030744547340158,
+      "effective_dim": 362,
+      "mode1_dominance": 0.023842852130403824,
+      "mean_degree": 3.787878787878788,
+      "n_nonzero_eigs": 395
+    },
+    {
+      "region_id": 20,
+      "n_cells": 197,
+      "fiedler": 0.019175031269954297,
+      "spectral_entropy": 5.0931463959561265,
+      "gini": 0.3275626054875487,
+      "effective_dim": 175,
+      "mode1_dominance": 0.3211901703968847,
+      "mean_degree": 3.6243654822335025,
+      "n_nonzero_eigs": 196
+    },
+    {
+      "region_id": 21,
+      "n_cells": 114,
+      "fiedler": 0.04671044011131857,
+      "spectral_entropy": 4.540619193091728,
+      "gini": 0.3302162451446394,
+      "effective_dim": 101,
+      "mode1_dominance": 0.01801559574666384,
+      "mean_degree": 3.56140350877193,
+      "n_nonzero_eigs": 113
+    },
+    {
+      "region_id": 22,
+      "n_cells": 135,
+      "fiedler": 0.035268447797351145,
+      "spectral_entropy": 4.715441697083306,
+      "gini": 0.32552801677052734,
+      "effective_dim": 120,
+      "mode1_dominance": 0.03243585625607016,
+      "mean_degree": 3.5703703703703704,
+      "n_nonzero_eigs": 134
+    },
+    {
+      "region_id": 23,
+      "n_cells": 92,
+      "fiedler": 0.04705066133234239,
+      "spectral_entropy": 4.319133420733345,
+      "gini": 0.33325103566565967,
+      "effective_dim": 81,
+      "mode1_dominance": 0.00886880638585784,
+      "mean_degree": 3.4565217391304346,
+      "n_nonzero_eigs": 91
+    },
+    {
+      "region_id": 24,
+      "n_cells": 64,
+      "fiedler": 0.14162617520879905,
+      "spectral_entropy": 3.963991315412561,
+      "gini": 0.3217089304691585,
+      "effective_dim": 56,
+      "mode1_dominance": 0.13882177764394782,
+      "mean_degree": 3.46875,
+      "n_nonzero_eigs": 63
+    },
+    {
+      "region_id": 25,
+      "n_cells": 17,
+      "fiedler": 0.1935829379445412,
+      "spectral_entropy": 2.552159344028853,
+      "gini": 0.36192783994911326,
+      "effective_dim": 13,
+      "mode1_dominance": 0.10160158909308004,
+      "mean_degree": 2.823529411764706,
+      "n_nonzero_eigs": 16
+    },
+    {
+      "region_id": 26,
+      "n_cells": 61,
+      "fiedler": 0.11993370668228057,
+      "spectral_entropy": 3.913970577307377,
+      "gini": 0.3239628273504416,
+      "effective_dim": 54,
+      "mode1_dominance": 0.012868102709100429,
+      "mean_degree": 3.4098360655737703,
+      "n_nonzero_eigs": 60
+    },
+    {
+      "region_id": 27,
+      "n_cells": 122,
+      "fiedler": 0.05520927319087875,
+      "spectral_entropy": 4.619797277021029,
+      "gini": 0.3184699415642575,
+      "effective_dim": 109,
+      "mode1_dominance": 0.7452002919128107,
+      "mean_degree": 3.540983606557377,
+      "n_nonzero_eigs": 121
+    },
+    {
+      "region_id": 28,
+      "n_cells": 313,
+      "fiedler": 0.013073655453429875,
+      "spectral_entropy": 5.5580117915641125,
+      "gini": 0.3265967579184347,
+      "effective_dim": 277,
+      "mode1_dominance": 0.18420616150463548,
+      "mean_degree": 3.6741214057507987,
+      "n_nonzero_eigs": 312
+    },
+    {
+      "region_id": 29,
+      "n_cells": 332,
+      "fiedler": 0.006939112497738069,
+      "spectral_entropy": 5.619771751461711,
+      "gini": 0.32397940155196203,
+      "effective_dim": 296,
+      "mode1_dominance": 0.46125200986043197,
+      "mean_degree": 3.6686746987951806,
+      "n_nonzero_eigs": 331
+    },
+    {
+      "region_id": 30,
+      "n_cells": 51,
+      "fiedler": 0.10354675884561121,
+      "spectral_entropy": 3.7157905872270636,
+      "gini": 0.3408312518336014,
+      "effective_dim": 45,
+      "mode1_dominance": 0.21366506402387606,
+      "mean_degree": 3.3333333333333335,
+      "n_nonzero_eigs": 50
+    },
+    {
+      "region_id": 33,
+      "n_cells": 81,
+      "fiedler": 0.0676178559321815,
+      "spectral_entropy": 4.199686886662443,
+      "gini": 0.3266502447639522,
+      "effective_dim": 72,
+      "mode1_dominance": 0.24357276379240775,
+      "mean_degree": 3.506172839506173,
+      "n_nonzero_eigs": 80
+    },
+    {
+      "region_id": 34,
+      "n_cells": 301,
+      "fiedler": 0.010232433646885709,
+      "spectral_entropy": 5.5272213913451775,
+      "gini": 0.3190743597072267,
+      "effective_dim": 271,
+      "mode1_dominance": 0.011079708324046783,
+      "mean_degree": 3.647840531561462,
+      "n_nonzero_eigs": 300
+    },
+    {
+      "region_id": 35,
+      "n_cells": 225,
+      "fiedler": 0.013128222688879074,
+      "spectral_entropy": 5.221814150178846,
+      "gini": 0.3313990768096456,
+      "effective_dim": 199,
+      "mode1_dominance": 0.5541054336756348,
+      "mean_degree": 3.6533333333333333,
+      "n_nonzero_eigs": 224
+    },
+    {
+      "region_id": 36,
+      "n_cells": 674,
+      "fiedler": 0.005614539279382409,
+      "spectral_entropy": 6.347102833232266,
+      "gini": 0.307057581977324,
+      "effective_dim": 613,
+      "mode1_dominance": 0.5203029777807413,
+      "mean_degree": 3.771513353115727,
+      "n_nonzero_eigs": 673
+    },
+    {
+      "region_id": 37,
+      "n_cells": 27,
+      "fiedler": 0.037984776402306665,
+      "spectral_entropy": 3.0145870247138564,
+      "gini": 0.37615794899088334,
+      "effective_dim": 21,
+      "mode1_dominance": 0.9044748475133025,
+      "mean_degree": 2.6666666666666665,
+      "n_nonzero_eigs": 26
+    },
+    {
+      "region_id": 38,
+      "n_cells": 88,
+      "fiedler": 0.051376628039724107,
+      "spectral_entropy": 4.2743810593486655,
+      "gini": 0.3343542377453957,
+      "effective_dim": 78,
+      "mode1_dominance": 0.054299849642923614,
+      "mean_degree": 3.4545454545454546,
+      "n_nonzero_eigs": 87
+    },
+    {
+      "region_id": 39,
+      "n_cells": 266,
+      "fiedler": 0.028384969939803925,
+      "spectral_entropy": 5.412155642830214,
+      "gini": 0.3112682675141734,
+      "effective_dim": 241,
+      "mode1_dominance": 0.4203123697714747,
+      "mean_degree": 3.736842105263158,
+      "n_nonzero_eigs": 265
+    },
+    {
+      "region_id": 40,
+      "n_cells": 529,
+      "fiedler": 0.011586815850625225,
+      "spectral_entropy": 6.095184087205847,
+      "gini": 0.3159354916667004,
+      "effective_dim": 477,
+      "mode1_dominance": 0.6170142891421819,
+      "mean_degree": 3.7466918714555764,
+      "n_nonzero_eigs": 528
+    },
+    {
+      "region_id": 41,
+      "n_cells": 233,
+      "fiedler": 0.008748501261611582,
+      "spectral_entropy": 5.263724889786486,
+      "gini": 0.3250010792521608,
+      "effective_dim": 208,
+      "mode1_dominance": 0.026343168799601316,
+      "mean_degree": 3.59656652360515,
+      "n_nonzero_eigs": 232
+    },
+    {
+      "region_id": 42,
+      "n_cells": 10,
+      "fiedler": 0.5706099257563169,
+      "spectral_entropy": 2.006876092047076,
+      "gini": 0.3398214204450064,
+      "effective_dim": 8,
+      "mode1_dominance": 0.23939246273865653,
+      "mean_degree": 2.6,
+      "n_nonzero_eigs": 9
+    },
+    {
+      "region_id": 43,
+      "n_cells": 518,
+      "fiedler": 0.010788922438831675,
+      "spectral_entropy": 6.076535935617905,
+      "gini": 0.31563043639179156,
+      "effective_dim": 468,
+      "mode1_dominance": 0.3754353576672594,
+      "mean_degree": 3.799227799227799,
+      "n_nonzero_eigs": 517
+    },
+    {
+      "region_id": 44,
+      "n_cells": 637,
+      "fiedler": 0.0057853109225899655,
+      "spectral_entropy": 6.289603359975682,
+      "gini": 0.3084542458623532,
+      "effective_dim": 581,
+      "mode1_dominance": 0.030322065856973134,
+      "mean_degree": 3.770800627943485,
+      "n_nonzero_eigs": 636
+    },
+    {
+      "region_id": 45,
+      "n_cells": 389,
+      "fiedler": 0.015672940745869925,
+      "spectral_entropy": 5.7862975647297565,
+      "gini": 0.3188548999841828,
+      "effective_dim": 350,
+      "mode1_dominance": 0.170011429326674,
+      "mean_degree": 3.763496143958869,
+      "n_nonzero_eigs": 388
+    },
+    {
+      "region_id": 46,
+      "n_cells": 200,
+      "fiedler": 0.025527701007157722,
+      "spectral_entropy": 5.112549020703023,
+      "gini": 0.3249682106162832,
+      "effective_dim": 178,
+      "mode1_dominance": 0.7876119497087495,
+      "mean_degree": 3.68,
+      "n_nonzero_eigs": 199
+    },
+    {
+      "region_id": 47,
+      "n_cells": 833,
+      "fiedler": 0.008607296785133747,
+      "spectral_entropy": 6.559479847072588,
+      "gini": 0.3081344211907922,
+      "effective_dim": 760,
+      "mode1_dominance": 0.21832040506777353,
+      "mean_degree": 3.8391356542617046,
+      "n_nonzero_eigs": 832
+    },
+    {
+      "region_id": 48,
+      "n_cells": 319,
+      "fiedler": 0.014354351018469089,
+      "spectral_entropy": 5.577107985529865,
+      "gini": 0.3284335254123185,
+      "effective_dim": 283,
+      "mode1_dominance": 0.6640520273255623,
+      "mean_degree": 3.7366771159874608,
+      "n_nonzero_eigs": 318
+    },
+    {
+      "region_id": 49,
+      "n_cells": 418,
+      "fiedler": 0.011760103870344159,
+      "spectral_entropy": 5.86198680190405,
+      "gini": 0.31447366957170686,
+      "effective_dim": 378,
+      "mode1_dominance": 0.14278579458227975,
+      "mean_degree": 3.77511961722488,
+      "n_nonzero_eigs": 417
+    },
+    {
+      "region_id": 50,
+      "n_cells": 221,
+      "fiedler": 0.01643140019675381,
+      "spectral_entropy": 5.206742734056766,
+      "gini": 0.3305455133867018,
+      "effective_dim": 198,
+      "mode1_dominance": 0.1330634303524682,
+      "mean_degree": 3.6470588235294117,
+      "n_nonzero_eigs": 220
+    },
+    {
+      "region_id": 51,
+      "n_cells": 184,
+      "fiedler": 0.015175515112108006,
+      "spectral_entropy": 5.0358739410238655,
+      "gini": 0.3159875569717067,
+      "effective_dim": 165,
+      "mode1_dominance": 0.3102620635667157,
+      "mean_degree": 3.597826086956522,
+      "n_nonzero_eigs": 183
+    },
+    {
+      "region_id": 52,
+      "n_cells": 530,
+      "fiedler": 0.008828641146460876,
+      "spectral_entropy": 6.1018775011029724,
+      "gini": 0.31209043420779753,
+      "effective_dim": 480,
+      "mode1_dominance": 0.8067287572909513,
+      "mean_degree": 3.788679245283019,
+      "n_nonzero_eigs": 529
+    },
+    {
+      "region_id": 53,
+      "n_cells": 319,
+      "fiedler": 0.009495321330939145,
+      "spectral_entropy": 5.594383487629346,
+      "gini": 0.3101952575300904,
+      "effective_dim": 291,
+      "mode1_dominance": 0.08094947521456786,
+      "mean_degree": 3.699059561128527,
+      "n_nonzero_eigs": 318
+    },
+    {
+      "region_id": 54,
+      "n_cells": 288,
+      "fiedler": 0.020533130816165895,
+      "spectral_entropy": 5.479466143721549,
+      "gini": 0.3225865543904033,
+      "effective_dim": 257,
+      "mode1_dominance": 0.4771256746515867,
+      "mean_degree": 3.7222222222222223,
+      "n_nonzero_eigs": 287
+    },
+    {
+      "region_id": 55,
+      "n_cells": 345,
+      "fiedler": 0.009517420440013458,
+      "spectral_entropy": 5.665549172543458,
+      "gini": 0.3176995534186685,
+      "effective_dim": 311,
+      "mode1_dominance": 0.16113129632474094,
+      "mean_degree": 3.698550724637681,
+      "n_nonzero_eigs": 344
+    },
+    {
+      "region_id": 56,
+      "n_cells": 193,
+      "fiedler": 0.011948387134103844,
+      "spectral_entropy": 5.081741749073352,
+      "gini": 0.3180805859629525,
+      "effective_dim": 173,
+      "mode1_dominance": 0.0032058775940228485,
+      "mean_degree": 3.606217616580311,
+      "n_nonzero_eigs": 192
+    },
+    {
+      "region_id": 57,
+      "n_cells": 55,
+      "fiedler": 0.09066875326758814,
+      "spectral_entropy": 3.800608467769992,
+      "gini": 0.33203839931687695,
+      "effective_dim": 48,
+      "mode1_dominance": 0.20723438376928013,
+      "mean_degree": 3.3454545454545452,
+      "n_nonzero_eigs": 54
+    },
+    {
+      "region_id": 58,
+      "n_cells": 56,
+      "fiedler": 0.08760081357379394,
+      "spectral_entropy": 3.811961535352467,
+      "gini": 0.33884612691474575,
+      "effective_dim": 49,
+      "mode1_dominance": 0.04118548871629825,
+      "mean_degree": 3.3214285714285716,
+      "n_nonzero_eigs": 55
+    },
+    {
+      "region_id": 60,
+      "n_cells": 372,
+      "fiedler": 0.01908564686373987,
+      "spectral_entropy": 5.7516565196125615,
+      "gini": 0.3079850092170649,
+      "effective_dim": 338,
+      "mode1_dominance": 0.6565050534228856,
+      "mean_degree": 3.763440860215054,
+      "n_nonzero_eigs": 371
+    }
+  ]
+}

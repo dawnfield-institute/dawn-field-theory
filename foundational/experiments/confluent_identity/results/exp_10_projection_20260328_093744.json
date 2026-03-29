@@ -1,0 +1,38 @@
+{
+  "experiment": "exp_10_projection_operator",
+  "timestamp": "2026-03-28T09:37:44.018420",
+  "purpose": "CI as proper Hilbert space projection operator",
+  "n_operators": 102,
+  "verification": {
+    "idempotency": {
+      "max_error": 2.475736667744043e-15,
+      "verified": true
+    },
+    "self_adjointness": {
+      "max_error": 0.0,
+      "verified": true
+    },
+    "orthogonality": {
+      "max_error": 1.099120794378905e-14,
+      "n_tested": 20,
+      "verified": true
+    },
+    "composition": {
+      "n_tests": 14,
+      "n_differs": 14,
+      "fraction": 1.0,
+      "verified": true
+    },
+    "trace": {
+      "max_error": 4.440892098500626e-16,
+      "n_connected": 102,
+      "verified": true
+    },
+    "n_verified": 5
+  },
+  "sample_region": {
+    "key": "(0, 1)",
+    "n_cells": 250,
+    "parseval_error": 8.131516293641283e-19
+  }
+}

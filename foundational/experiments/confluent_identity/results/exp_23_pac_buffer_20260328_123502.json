@@ -1,0 +1,532 @@
+{
+  "experiment": "exp_23_size_as_pac_buffer",
+  "timestamp": "2026-03-28T12:35:02.197202",
+  "purpose": "Size as PAC conservation buffer: sensitivity ~ 1/sqrt(N)",
+  "n_regions": 57,
+  "deconfound": {
+    "partial_rho_size_sens_given_fiedler": -0.15270935960591134,
+    "partial_p": 0.25677175458424834,
+    "raw_rho_size_sens": 0.21740046347914377,
+    "raw_rho_fiedler_sens": -0.17630282603059375
+  },
+  "power_law": {
+    "alpha_gauss": -0.26559386190073986,
+    "alpha_uniform": -7.039437491691797,
+    "alpha_structured": -0.03245402938041805,
+    "alpha_mean": -2.445828460990985,
+    "alpha_std": 3.249566277785282,
+    "r2_gauss": 0.19918796262532534,
+    "r2_uniform": 0.48079564201097325
+  },
+  "subpartition": {
+    "n_tested": 5,
+    "n_in_range": 1,
+    "results": [
+      {
+        "region_id": 8,
+        "n_cells_full": 1159,
+        "n_halves": 2,
+        "sens_full": 1.5341491773785785,
+        "mean_sens_half": 1.7363384294007143,
+        "ratio": 1.1317924325766142
+      },
+      {
+        "region_id": 6,
+        "n_cells_full": 1018,
+        "n_halves": 2,
+        "sens_full": 0.9543052493916496,
+        "mean_sens_half": 1.7588203838736605,
+        "ratio": 1.8430375238896266
+      },
+      {
+        "region_id": 47,
+        "n_cells_full": 833,
+        "n_halves": 2,
+        "sens_full": 1.4578715741640254,
+        "mean_sens_half": 1.019740266661702,
+        "ratio": 0.6994719457689145
+      },
+      {
+        "region_id": 17,
+        "n_cells_full": 691,
+        "n_halves": 2,
+        "sens_full": 0.7160813510879482,
+        "mean_sens_half": 1.2069073734265192,
+        "ratio": 1.6854333262454795
+      },
+      {
+        "region_id": 36,
+        "n_cells_full": 674,
+        "n_halves": 2,
+        "sens_full": 0.5575589564511736,
+        "mean_sens_half": 1.8262004413875061,
+        "ratio": 3.275349485929075
+      }
+    ]
+  },
+  "verification": {
+    "test1_size_true_predictor": false,
+    "test2_power_law_exponent": false,
+    "test3_subpartition_ratio": false,
+    "test4_cross_type_consistency": false,
+    "n_verified": 0
+  },
+  "per_region": [
+    {
+      "region_id": 1,
+      "n_cells": 250,
+      "fiedler": 0.012401961333810486,
+      "sens_gauss": 1.748477035739589,
+      "sens_uniform": 0.6287622921083958,
+      "sens_structured": 0.48130292855005935
+    },
+    {
+      "region_id": 2,
+      "n_cells": 182,
+      "fiedler": 0.04803952582886143,
+      "sens_gauss": 0.7049295931011044,
+      "sens_uniform": 1.7237790962549888,
+      "sens_structured": 1.21434471007868
+    },
+    {
+      "region_id": 3,
+      "n_cells": 157,
+      "fiedler": 0.030774234868032622,
+      "sens_gauss": 2.0159898988401013,
+      "sens_uniform": 0.46292009844183934,
+      "sens_structured": 1.8952364121206895
+    },
+    {
+      "region_id": 4,
+      "n_cells": 166,
+      "fiedler": 0.024916010022050256,
+      "sens_gauss": 1.4199073099939041,
+      "sens_uniform": 1.5569288752270267,
+      "sens_structured": 1.2377273900744794
+    },
+    {
+      "region_id": 5,
+      "n_cells": 144,
+      "fiedler": 0.027696002215090824,
+      "sens_gauss": 1.6758078017462434,
+      "sens_uniform": 1.7680639323633422,
+      "sens_structured": 1.5878704111364728
+    },
+    {
+      "region_id": 6,
+      "n_cells": 1018,
+      "fiedler": 0.0035497940220796235,
+      "sens_gauss": 0.9543052493916496,
+      "sens_uniform": 0.5593231586325633,
+      "sens_structured": 1.1277862942024763
+    },
+    {
+      "region_id": 7,
+      "n_cells": 370,
+      "fiedler": 0.01034361176800739,
+      "sens_gauss": 1.4250932813442363,
+      "sens_uniform": 0.9352069901868345,
+      "sens_structured": 1.162251387367287
+    },
+    {
+      "region_id": 8,
+      "n_cells": 1159,
+      "fiedler": 0.007679346853649724,
+      "sens_gauss": 1.5341491773785785,
+      "sens_uniform": 1.3143037989106536,
+      "sens_structured": 1.341315974341222
+    },
+    {
+      "region_id": 9,
+      "n_cells": 302,
+      "fiedler": 0.014936838856105477,
+      "sens_gauss": 0.8097971324579584,
+      "sens_uniform": 1.8861548816908948,
+      "sens_structured": 1.2301338568502471
+    },
+    {
+      "region_id": 10,
+      "n_cells": 247,
+      "fiedler": 0.013659321650699408,
+      "sens_gauss": 1.1485361468668862,
+      "sens_uniform": 1.7548386750769749,
+      "sens_structured": 0.8333228772060671
+    },
+    {
+      "region_id": 11,
+      "n_cells": 331,
+      "fiedler": 0.014717758930362534,
+      "sens_gauss": 1.3334335861858662,
+      "sens_uniform": 1.2018971900466437,
+      "sens_structured": 1.777233651073098
+    },
+    {
+      "region_id": 12,
+      "n_cells": 40,
+      "fiedler": 0.08968520483941084,
+      "sens_gauss": 0.10918045285843658,
+      "sens_uniform": 3.726175331999488e-16,
+      "sens_structured": 0.7290624200522017
+    },
+    {
+      "region_id": 13,
+      "n_cells": 355,
+      "fiedler": 0.010031668820074013,
+      "sens_gauss": 0.9358338087277693,
+      "sens_uniform": 0.6002160851762556,
+      "sens_structured": 1.654919373835514
+    },
+    {
+      "region_id": 14,
+      "n_cells": 573,
+      "fiedler": 0.011114619576083508,
+      "sens_gauss": 1.8789363870577451,
+      "sens_uniform": 1.709327912348212,
+      "sens_structured": 1.5755606129750992
+    },
+    {
+      "region_id": 15,
+      "n_cells": 31,
+      "fiedler": 0.27198378687117875,
+      "sens_gauss": 2.079285257969195,
+      "sens_uniform": 5.385350095156511e-15,
+      "sens_structured": 0.8538475640406299
+    },
+    {
+      "region_id": 16,
+      "n_cells": 32,
+      "fiedler": 0.08082598722471904,
+      "sens_gauss": 0.2811542465816505,
+      "sens_uniform": 1.0309412949398277e-16,
+      "sens_structured": 1.838142351125083
+    },
+    {
+      "region_id": 17,
+      "n_cells": 691,
+      "fiedler": 0.008799613959472131,
+      "sens_gauss": 0.7160813510879482,
+      "sens_uniform": 1.206277096946563,
+      "sens_structured": 1.745328993166133
+    },
+    {
+      "region_id": 18,
+      "n_cells": 109,
+      "fiedler": 0.05888903447874473,
+      "sens_gauss": 0.6810222009227305,
+      "sens_uniform": 1.49748057771963,
+      "sens_structured": 1.752139995118555
+    },
+    {
+      "region_id": 19,
+      "n_cells": 396,
+      "fiedler": 0.018029377140371637,
+      "sens_gauss": 1.7762441221036447,
+      "sens_uniform": 1.8115332391906103,
+      "sens_structured": 0.9907066011275801
+    },
+    {
+      "region_id": 20,
+      "n_cells": 197,
+      "fiedler": 0.019175031269954495,
+      "sens_gauss": 0.747076525960703,
+      "sens_uniform": 1.4455468892954424,
+      "sens_structured": 1.146597319006837
+    },
+    {
+      "region_id": 21,
+      "n_cells": 114,
+      "fiedler": 0.04671044011131899,
+      "sens_gauss": 1.851741956499451,
+      "sens_uniform": 1.8323320829420073,
+      "sens_structured": 0.5773958550201246
+    },
+    {
+      "region_id": 22,
+      "n_cells": 135,
+      "fiedler": 0.035268447797351436,
+      "sens_gauss": 1.136350113882771,
+      "sens_uniform": 1.078562902527395,
+      "sens_structured": 1.1525814777351489
+    },
+    {
+      "region_id": 23,
+      "n_cells": 92,
+      "fiedler": 0.04705066133234231,
+      "sens_gauss": 1.2972965335989004,
+      "sens_uniform": 1.441344475887719,
+      "sens_structured": 1.8661740390329602
+    },
+    {
+      "region_id": 24,
+      "n_cells": 64,
+      "fiedler": 0.1416261752088002,
+      "sens_gauss": 1.1488394989658126,
+      "sens_uniform": 1.5651525806385365,
+      "sens_structured": 0.9756409700828876
+    },
+    {
+      "region_id": 25,
+      "n_cells": 17,
+      "fiedler": 0.1935829379445412,
+      "sens_gauss": 0.304544237852984,
+      "sens_uniform": 6.239010615594311e-16,
+      "sens_structured": 0.6535424084014482
+    },
+    {
+      "region_id": 26,
+      "n_cells": 61,
+      "fiedler": 0.1199337066822805,
+      "sens_gauss": 1.9785042611044175,
+      "sens_uniform": 0.347546959827019,
+      "sens_structured": 1.8826033898576582
+    },
+    {
+      "region_id": 27,
+      "n_cells": 122,
+      "fiedler": 0.05520927319087869,
+      "sens_gauss": 1.7107440458611878,
+      "sens_uniform": 0.6308457565607538,
+      "sens_structured": 1.0513447786585206
+    },
+    {
+      "region_id": 28,
+      "n_cells": 313,
+      "fiedler": 0.01307365545342919,
+      "sens_gauss": 1.5286663388834474,
+      "sens_uniform": 1.5926911812667408,
+      "sens_structured": 1.6857850873253872
+    },
+    {
+      "region_id": 29,
+      "n_cells": 332,
+      "fiedler": 0.0069391124977383626,
+      "sens_gauss": 1.98294735180524,
+      "sens_uniform": 1.8031914910037112,
+      "sens_structured": 1.102798748665745
+    },
+    {
+      "region_id": 30,
+      "n_cells": 51,
+      "fiedler": 0.10354675884561035,
+      "sens_gauss": 0.9990387489447136,
+      "sens_uniform": 1.9485675670777134,
+      "sens_structured": 1.7847662788914622
+    },
+    {
+      "region_id": 33,
+      "n_cells": 81,
+      "fiedler": 0.06761785593218207,
+      "sens_gauss": 0.4215811876791236,
+      "sens_uniform": 1.0775176837142388,
+      "sens_structured": 1.530132577905175
+    },
+    {
+      "region_id": 34,
+      "n_cells": 301,
+      "fiedler": 0.010232433646886478,
+      "sens_gauss": 1.1648897094070385,
+      "sens_uniform": 1.409689274329892,
+      "sens_structured": 1.6084861835330515
+    },
+    {
+      "region_id": 35,
+      "n_cells": 225,
+      "fiedler": 0.013128222688878461,
+      "sens_gauss": 1.4917970623063492,
+      "sens_uniform": 0.7691213856366409,
+      "sens_structured": 1.4118207299215761
+    },
+    {
+      "region_id": 36,
+      "n_cells": 674,
+      "fiedler": 0.005614539279382614,
+      "sens_gauss": 0.5575589564511736,
+      "sens_uniform": 0.8389476496740866,
+      "sens_structured": 1.2454767841268126
+    },
+    {
+      "region_id": 37,
+      "n_cells": 27,
+      "fiedler": 0.037984776402306665,
+      "sens_gauss": 0.1877599020323293,
+      "sens_uniform": 9.548298973890339e-16,
+      "sens_structured": 1.8082905454590197
+    },
+    {
+      "region_id": 38,
+      "n_cells": 88,
+      "fiedler": 0.05137662803972504,
+      "sens_gauss": 1.6238315102626046,
+      "sens_uniform": 1.6623826986485657,
+      "sens_structured": 1.1988146777055824
+    },
+    {
+      "region_id": 39,
+      "n_cells": 266,
+      "fiedler": 0.028384969939802464,
+      "sens_gauss": 1.8359865341635917,
+      "sens_uniform": 1.3027970815265921,
+      "sens_structured": 0.926267564888106
+    },
+    {
+      "region_id": 40,
+      "n_cells": 529,
+      "fiedler": 0.01158681585062489,
+      "sens_gauss": 1.8950324352159322,
+      "sens_uniform": 1.9451786819601329,
+      "sens_structured": 0.587091774620218
+    },
+    {
+      "region_id": 41,
+      "n_cells": 233,
+      "fiedler": 0.008748501261611571,
+      "sens_gauss": 1.3169800790953508,
+      "sens_uniform": 0.7748285350078562,
+      "sens_structured": 1.7310257509370939
+    },
+    {
+      "region_id": 42,
+      "n_cells": 10,
+      "fiedler": 0.5706099257563169,
+      "sens_gauss": 0.8103238059811435,
+      "sens_uniform": 1.875932604775766e-15,
+      "sens_structured": null
+    },
+    {
+      "region_id": 43,
+      "n_cells": 518,
+      "fiedler": 0.010788922438831212,
+      "sens_gauss": 1.7931037266911813,
+      "sens_uniform": 1.9547376052790977,
+      "sens_structured": 1.4580573882699839
+    },
+    {
+      "region_id": 44,
+      "n_cells": 637,
+      "fiedler": 0.0057853109225898085,
+      "sens_gauss": 1.660571169410336,
+      "sens_uniform": 1.6139244179819525,
+      "sens_structured": 1.6373135860337695
+    },
+    {
+      "region_id": 45,
+      "n_cells": 389,
+      "fiedler": 0.01567294074586957,
+      "sens_gauss": 1.4884578768732242,
+      "sens_uniform": 1.586261263794726,
+      "sens_structured": 1.2009945889188223
+    },
+    {
+      "region_id": 46,
+      "n_cells": 200,
+      "fiedler": 0.025527701007157986,
+      "sens_gauss": 1.9767058113652283,
+      "sens_uniform": 1.9637996940313596,
+      "sens_structured": 1.75545375266394
+    },
+    {
+      "region_id": 47,
+      "n_cells": 833,
+      "fiedler": 0.008607296785133785,
+      "sens_gauss": 1.4578715741640254,
+      "sens_uniform": 1.0002147192195607,
+      "sens_structured": 1.0658871806016157
+    },
+    {
+      "region_id": 48,
+      "n_cells": 319,
+      "fiedler": 0.014354351018468414,
+      "sens_gauss": 0.9992879831008029,
+      "sens_uniform": 0.8052955017630433,
+      "sens_structured": 1.800004331956568
+    },
+    {
+      "region_id": 49,
+      "n_cells": 418,
+      "fiedler": 0.011760103870343883,
+      "sens_gauss": 1.2831120817282309,
+      "sens_uniform": 1.2713479247683444,
+      "sens_structured": 1.3158168265729353
+    },
+    {
+      "region_id": 50,
+      "n_cells": 221,
+      "fiedler": 0.01643140019675308,
+      "sens_gauss": 1.6849803136153518,
+      "sens_uniform": 1.8259057535309693,
+      "sens_structured": 1.8682413076573923
+    },
+    {
+      "region_id": 51,
+      "n_cells": 184,
+      "fiedler": 0.01517551511210918,
+      "sens_gauss": 1.4053159019016837,
+      "sens_uniform": 1.3260195049761134,
+      "sens_structured": 0.46926881787747116
+    },
+    {
+      "region_id": 52,
+      "n_cells": 530,
+      "fiedler": 0.008828641146460493,
+      "sens_gauss": 0.7654031143298703,
+      "sens_uniform": 1.997268303565683,
+      "sens_structured": 1.803286139075079
+    },
+    {
+      "region_id": 53,
+      "n_cells": 319,
+      "fiedler": 0.009495321330938585,
+      "sens_gauss": 1.792945026708553,
+      "sens_uniform": 1.2149124753746805,
+      "sens_structured": 1.3164618212105186
+    },
+    {
+      "region_id": 54,
+      "n_cells": 288,
+      "fiedler": 0.020533130816166967,
+      "sens_gauss": 1.9130849797592084,
+      "sens_uniform": 1.199117703414067,
+      "sens_structured": 1.7125603428773644
+    },
+    {
+      "region_id": 55,
+      "n_cells": 345,
+      "fiedler": 0.009517420440012945,
+      "sens_gauss": 0.8826165334437366,
+      "sens_uniform": 1.652312251723969,
+      "sens_structured": 0.8861258088372256
+    },
+    {
+      "region_id": 56,
+      "n_cells": 193,
+      "fiedler": 0.011948387134103993,
+      "sens_gauss": 1.8805622234191512,
+      "sens_uniform": 1.3836213121946441,
+      "sens_structured": 0.9224349210856092
+    },
+    {
+      "region_id": 57,
+      "n_cells": 55,
+      "fiedler": 0.09066875326758682,
+      "sens_gauss": 0.602539732042015,
+      "sens_uniform": 1.0097775747396045,
+      "sens_structured": 1.1915104524640578
+    },
+    {
+      "region_id": 58,
+      "n_cells": 56,
+      "fiedler": 0.08760081357379444,
+      "sens_gauss": 0.666550657585504,
+      "sens_uniform": 0.5968273369445014,
+      "sens_structured": 1.3484676155321729
+    },
+    {
+      "region_id": 60,
+      "n_cells": 372,
+      "fiedler": 0.019085646863740133,
+      "sens_gauss": 0.8373159085344134,
+      "sens_uniform": 0.8779482036143256,
+      "sens_structured": 1.8421509142496009
+    }
+  ]
+}

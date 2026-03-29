@@ -1,4 +1,4 @@
-# Confluent Identity -- Phases 1-21: Formation through Falsification
+# Confluent Identity -- Phases 1-27: Formation through Falsification
 
 ## Hypothesis
 
@@ -8,7 +8,7 @@ Hodge theory). A parent's identity cannot be reconstructed from the simple
 mean or sum of its children, but *can* be reconstructed from their spectral
 fingerprints weighted by coupling strength to the parent's global identity.
 
-## Status: Active -- Phases 1-21 complete
+## Status: Active -- Phases 1-27 complete
 
 ## Key Results
 
@@ -32,6 +32,12 @@ fingerprints weighted by coupling strength to the parent's global identity.
 | Hodge mode decomposition | Cosine similarity of shift vectors | **PARTIALLY FALSIFIED**: cos~0.47 (not orthogonal), but topological perturbations share structure (cos=0.49) |
 | Revision driver | 8 candidate predictors | perturbation_l2 (rho=0.34) and boundary_coupling (rho=0.33) predict revision; H^1 reconfirmed dead (rho=0.016) |
 | Confluence complexity | Eigenvalue distribution vs Fiedler | ALL Fiedler correlations collapse after size deconfound; mode 1 dominance low everywhere (~24%) |
+| Spectral shape | 5 modal descriptors vs sensitivity | Spectral bandwidth (partial rho=0.44, p=7e-4) and mode concentration (-0.35, p=9e-3) survive size deconfound |
+| Mutual information coupling | MI, dCor vs Spearman ceiling | NMI=0.47 exceeds rho²=0.25 by +0.22; nonlinear signal exists but dCor doesn't beat partial_rho |
+| Scale-dependent coupling | Per-level decomposition | Coupling IS scale-dependent (range=1.19) but pooled (0.42) beats all individual levels |
+| 256x256 full diffusion | Fix exp_30 with steady-state | C std still 0.0007 — problem is initialization, not step count; size-sens sign replicates |
+| Frame-relative identity (Δ buffer) | Δ between parent/child views | Δ_entropy rho=-0.79 (p=0.02), depth-dependent, but n=8 underpowered; 0/4 formal tests |
+| Eigenstructure ceiling derivation | Geometric alignment vs coupling ceiling | Eigenbasis alignment=0.60 > ceiling=0.42; ceiling is rank-compression artifact, not geometry; 0/4 formal tests |
 
 ## Experiments
 
@@ -67,6 +73,12 @@ fingerprints weighted by coupling strength to the parent's global identity.
 | `exp_28_boundary_coupling_ceiling.py` | Boundary-aware coupling schemes vs 0.41 ceiling | 19 | Complete (2/4) |
 | `exp_29_sensitivity_mediation.py` | Does boundary surface mediate size→sensitivity? | 20 | Complete (1/4) |
 | `exp_30_scale_validation.py` | 256x256 lattice replication | 21 | Complete (1/4) |
+| `exp_31_spectral_shape_sensitivity.py` | Spectral shape descriptors vs sensitivity | 22 | Complete (2/4) |
+| `exp_32_mutual_information_coupling.py` | MI and distance correlation vs Spearman ceiling | 23 | Complete (3/4) |
+| `exp_33_scale_dependent_coupling.py` | Per-hierarchy-level coupling decomposition | 24 | Complete (1/4) |
+| `exp_34_scale_validation_full.py` | 256x256 with full steady-state diffusion | 25 | Complete (2/4) |
+| `exp_35_frame_relative_identity.py` | Frame-relative identity: Δ buffer between parent/child views | 26 | Complete (0/4) |
+| `exp_36_eigenstructure_ceiling.py` | Eigenstructure derivation of coupling ceiling | 27 | Complete (0/4) |
 
 ## Formal Operator: CI(f) = Pi_harm @ f
 
@@ -122,6 +134,13 @@ and correct trace. Fiedler value, spectral entropy, and coefficients are derived
 29. **Sensitivity mediation FALSIFIED**: boundary_area_ratio does NOT mediate the size→sensitivity relationship. Size retains its direct effect (partial rho=0.28 after controlling for bar). Bootstrap indirect effect CI includes zero. Sub-partition validation passes (3/5) but the core mediation hypothesis fails. (exp_29)
 30. **256x256 replication FAILS**: 174 regions (sufficient) but correlations don't replicate. The abbreviated diffusion produces low-structure fields (C std=0.0009 vs ~0.01 at 128). Gradient coupling partial rho=-0.19 (sign-flipped from 128x128 ref of +0.41). Boundary metrics show near-zero correlations. Scale-up requires full steady-state diffusion. (exp_30)
 
+### Phase 22-25 Results: Spectral Shape, Nonlinear Coupling, and Scale
+
+31. **Spectral bandwidth predicts sensitivity**: partial rho(spectral_bandwidth, sensitivity | size) = 0.44 (p=7e-4) — the strongest size-independent sensitivity predictor found. Mode concentration also survives (partial rho=-0.35, p=9e-3). Spectral flatness is NOT a size proxy (|rho|=0.31, verified). But mid-mode ratio (the 24% clue) shows no signal (partial rho=0.15), and multiple regression R²=0.08 (below 0.15 target). (exp_31)
+32. **Nonlinear signal exists but doesn't break ceiling**: MI(coupling, natural) is highly significant (permutation p=0.0000). NMI=0.47 exceeds Spearman rho²=0.25 by +0.22 — substantial nonlinear dependence. Residualized MI=0.65 nats (survives size deconfound). But distance correlation of residuals (0.42) doesn't beat |partial_rho| (0.42) — the ceiling is real physics, not a Spearman artifact. (exp_32)
+33. **Coupling IS scale-dependent but pooling helps**: Per-level partial_rho range = 1.19 (from -0.90 to +0.29). But no single level exceeds 0.50 — Level 1 collapses to -0.08 after size control, Level 2 reaches only 0.29. Pooled partial_rho (0.42) beats every individual level. This is reverse Simpson's paradox: aggregation improves the signal. Within-parent correlations are weak (mean rho=-0.14). (exp_33)
+34. **256x256 STILL fails with full diffusion**: 10,000 steps with PeriodicLatticeFluid.run_to_steady_state() produces C std=0.0007 — no better than exp_30's abbreviated 1500 steps. The problem is initialization/parameters, not convergence. Size-sensitivity sign replicates (positive, matching paradox) but correlation magnitudes don't match (gradient partial rho=-0.09 vs 128x128's +0.41). 256x256 requires fundamentally different initialization (stronger stones, lower viscosity, or different frequency content). (exp_34)
+
 ## Falsification Criteria
 
 | Prediction | Result | Verdict |
@@ -151,6 +170,33 @@ and correct trace. Fiedler value, spectral entropy, and coefficients are derived
 | Boundary gradient predicts sensitivity | Partial rho=-0.30 (p=0.023) after size control | SUPPORTED |
 | Boundary schemes outperform interior | +0.09 improvement, cross-level consistent | SUPPORTED |
 | 256x256 replicates 128x128 findings | Correlations don't replicate (abbreviated diffusion) | **INCONCLUSIVE** |
+| Spectral shape predicts sensitivity | Bandwidth partial rho=0.44 (p=7e-4) after size control | SUPPORTED |
+| Mid-mode ratio explains sensitivity paradox | partial rho=0.15, not significant | **FALSIFIED** |
+| MI breaks Spearman coupling ceiling | NMI exceeds rho² by +0.22 but dCor matches partial_rho | **FALSIFIED** (nonlinear signal exists, ceiling is real) |
+| Per-level coupling exceeds 0.50 | Best level partial rho=0.29, pooled=0.42 beats all | **FALSIFIED** |
+| 256x256 works with full steady-state diffusion | C std=0.0007, same as abbreviated | **FALSIFIED** (initialization problem) |
+| Δ buffer is bounded (max < 1.0) | Δ_spectral max=1.58 (cosine distance in [0,2]) | **FALSIFIED** (wrong measure) |
+| Δ adds predictive power (R² +0.05) | Δ_entropy rho=-0.79 (p=0.02) but n=8 underpowered | **INCONCLUSIVE** (signal present, insufficient power) |
+| Δ scales with hierarchy depth | Δ_fiedler and Δ_entropy rho=-0.76 (p=0.027) | SUPPORTED (but n=8) |
+| Frame-augmented coupling > 0.42 | Frame augmentation with Δ_spectral hurt rather than helped | **FALSIFIED** |
+| Eigenbasis alignment = coupling ceiling | Mean cos_eigenbasis=0.60, distance=0.18 from 0.42 | **FALSIFIED** (alignment HIGHER than ceiling) |
+| Delta_self predicts coupling residuals (n=59) | rho=0.09, p=0.50 — zero signal | **FALSIFIED** (exp_35's n=8 signal was artifact or dual-role specific) |
+| Raw field alignment = ceiling | Mean cos_raw=0.78, distance=0.36 from 0.42 | **FALSIFIED** (much higher) |
+| Conservation: Delta reduces prediction variance >=10% | Pooled: 3.7%. Within-parent: 16% mean | **FALSIFIED** pooled, SUPPORTED within-parent |
+
+### Phase 27 Results: Eigenstructure Ceiling Derivation
+
+36. **The ceiling is NOT geometric alignment — it's rank compression**: Eigenbasis-projected cosine similarity between gradient and state fields averages 0.60 (median 0.90), and raw field alignment averages 0.78. Both are well above the 0.42 coupling ceiling. The ceiling arises during the conversion from continuous alignment to Spearman rank correlation of aggregated norms — the lossy compression of region-level summaries discards ~0.18 of the geometric signal. This means the coupling ceiling is an information-theoretic limit on how much of a continuous geometric relationship survives rank-order aggregation across regions. (exp_36)
+
+37. **exp_35's Delta signal was a small-sample artifact or dual-role specific**: Delta_self (internal entropy vs external projection norm) shows rho=0.09 (p=0.50) with coupling residuals at n=59 — zero signal. The rho=-0.79 from exp_35 at n=8 dual-role nodes does not generalize to all children. Dual-role nodes may be genuinely special (they have their own children, giving them richer internal structure), or n=8 was simply insufficient for reliable inference. (exp_36)
+
+38. **Conservation IS within-scope**: Within-parent, Delta reduces coupling-prediction variance by 16% on average (range: 0-35% across parents). But pooled across parents, only 3.7%. This is consistent with P+A+Delta=C being a within-scope conservation law — the Δ buffer operates within each parent's frame, not across frames. Cross-parent pooling dilutes the signal because each parent has its own eigenstructure. (exp_36)
+
+39. **Coupling ceiling update**: Pooling all 67 children across all 10 parents gives partial_rho(coupling, natural | size) = 0.5753 — significantly above the 0.42 previously reported for parent (2,1) alone. The "ceiling" depends on scope: more parents = more signal. This is reverse Simpson's paradox again (exp_33), now confirmed directly. (exp_36)
+
+### Phase 26 Results: Frame-Relative Identity
+
+35. **Frame Δ buffer reveals depth-dependent signal (underpowered)**: Only 8 dual-role nodes exist (nodes that are both parent AND child with ≥2 children). Despite n=8, Δ_entropy (complexity mismatch between internal and external views) correlates with coupling at rho=-0.79 (p=0.02) — the strongest single-measure coupling correlation in the entire experiment series. Δ_fiedler and Δ_entropy both scale with hierarchy depth (rho=-0.76, p=0.027) — deeper nodes have larger frame shifts, consistent with asymmetric conservation. However, Δ_spectral (cosine distance of eigenbasis projections) was the wrong measure for the boundedness test (scipy cosine_distance returns [0,2] for anti-aligned vectors, max=1.58). Frame augmentation with Δ_spectral actually hurt partial_rho rather than helped — the spectral projection conflates frame shift with basis incompatibility. The Δ concept is promising but needs either a larger lattice (more hierarchy levels) or a different formalization. Key insight: the frame shift is real and depth-dependent, but the coupling ceiling may be a fixed-point property of the spectral projection operator itself, not a frame-averaging artifact. (exp_35)
 
 ## Related FDOs
 

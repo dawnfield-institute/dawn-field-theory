@@ -1,0 +1,135 @@
+{
+  "experiment": "exp_17_synthesis_h1_revision",
+  "timestamp": "2026-03-28T10:08:16.961675",
+  "purpose": "Synthesis: H1 (spatial inconsistency) <-> spectral revision (identity change)",
+  "n_groups": 6,
+  "perturbation_scale": 0.1,
+  "smoothing_alpha": 0.3,
+  "best_metric": "perturbation_shift",
+  "correlation_spectral_revision": {
+    "spearman_rho": -0.3714285714285715,
+    "spearman_p": 0.46847813411078715,
+    "r_squared": 0.0004744564358239848,
+    "regression_slope": -0.0010712047674442,
+    "regression_intercept": 0.2734094340156494
+  },
+  "correlation_perturbation_shift": {
+    "spearman_rho": -0.3142857142857143,
+    "spearman_p": 0.5440932944606414,
+    "r_squared": 0.10691221151850601,
+    "regression_slope": -0.004511041463462119,
+    "regression_intercept": 0.2941506603734551
+  },
+  "rank_overlap": {
+    "top5_h1_in_top10_rev": 5,
+    "overlapping_groups": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "cosine_analysis": {
+    "mean_cos_orig_perturbed": 0.07363820177406037,
+    "mean_cos_orig_smoothed": -0.0305831911880436
+  },
+  "verification": {
+    "test1_spearman_significant": false,
+    "test2_r_squared": true,
+    "test3_rank_overlap": true,
+    "n_verified": 2
+  },
+  "per_group": [
+    {
+      "level": 1,
+      "parent_id": 6,
+      "n_parent_cells": 697,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 10.705926488314422,
+      "perturbation_shift": 0.21895036826610098,
+      "spectral_revision": 0.26125419102189634,
+      "relative_revision": 5.740431873785919,
+      "cos_orig_perturbed": 0.09832654381273452,
+      "cos_orig_smoothed": -0.3254034849880145,
+      "perturbed_residual": 2.6011933231661195,
+      "smoothed_residual": 0.7803579969498359
+    },
+    {
+      "level": 1,
+      "parent_id": 10,
+      "n_parent_cells": 799,
+      "n_children": 3,
+      "baseline_residual": 0.0,
+      "h1_proxy": 12.232486993951447,
+      "perturbation_shift": 0.2406721224133578,
+      "spectral_revision": 0.2622945932157278,
+      "relative_revision": 3.758526138403449,
+      "cos_orig_perturbed": -0.039791102247646426,
+      "cos_orig_smoothed": 0.30843506448806934,
+      "perturbed_residual": 2.7805400548404,
+      "smoothed_residual": 0.83416201645212
+    },
+    {
+      "level": 1,
+      "parent_id": 15,
+      "n_parent_cells": 739,
+      "n_children": 3,
+      "baseline_residual": 0.0,
+      "h1_proxy": 8.433239155693402,
+      "perturbation_shift": 0.23565679804345793,
+      "spectral_revision": 0.1088955506945764,
+      "relative_revision": 0.7383051405799689,
+      "cos_orig_perturbed": 0.033936581359549696,
+      "cos_orig_smoothed": 0.1345037931901593,
+      "perturbed_residual": 2.6742630464849615,
+      "smoothed_residual": 0.8022789139454886
+    },
+    {
+      "level": 1,
+      "parent_id": 18,
+      "n_parent_cells": 314,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 8.906770193508747,
+      "perturbation_shift": 0.26004845628142176,
+      "spectral_revision": 0.30838596645928457,
+      "relative_revision": 5.871033296954691,
+      "cos_orig_perturbed": -0.23443864397033337,
+      "cos_orig_smoothed": 0.19409902722806413,
+      "perturbed_residual": 1.721912858216932,
+      "smoothed_residual": 0.5165738574650794
+    },
+    {
+      "level": 1,
+      "parent_id": 21,
+      "n_parent_cells": 354,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 10.063937931566894,
+      "perturbation_shift": 0.28308614036984925,
+      "spectral_revision": 0.28753911796029025,
+      "relative_revision": 4.249757227381077,
+      "cos_orig_perturbed": 0.11752094052342983,
+      "cos_orig_smoothed": 0.16643950594487938,
+      "perturbed_residual": 1.7945850914276835,
+      "smoothed_residual": 0.5383755274283051
+    },
+    {
+      "level": 2,
+      "parent_id": 5,
+      "n_parent_cells": 100,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 7.634478907824732,
+      "perturbation_shift": 0.26495414919079957,
+      "spectral_revision": 0.34998211768534815,
+      "relative_revision": 21.41829683089491,
+      "cos_orig_perturbed": 0.466274891166628,
+      "cos_orig_smoothed": -0.6615730529914192,
+      "perturbed_residual": 0.9095637931826113,
+      "smoothed_residual": 0.2728691379547834
+    }
+  ]
+}

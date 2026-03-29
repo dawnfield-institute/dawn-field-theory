@@ -1,0 +1,47 @@
+{
+  "experiment": "exp_08_gradient_coupling",
+  "timestamp": "2026-03-28T09:32:15.010235",
+  "purpose": "Deconfound coupling weight from region size via weighted perturbation",
+  "n_parents": 10,
+  "n_measurements": 67,
+  "schemes": {
+    "uniform": {
+      "n": 67,
+      "rho_coupling_natural": 0.3910926650171603,
+      "p_coupling_natural": 0.0010664751215702622,
+      "rho_natural_size": 0.7704602368912156,
+      "p_natural_size": 2.4740770817287622e-14,
+      "rho_coupling_size": 0.2564675599493109,
+      "p_coupling_size": 0.0361754301861905
+    },
+    "gradient": {
+      "n": 67,
+      "rho_coupling_natural": 0.4371059142788731,
+      "p_coupling_natural": 0.00021693789875190742,
+      "rho_natural_size": 0.7704602368912156,
+      "p_natural_size": 2.4740770817287622e-14,
+      "rho_coupling_size": 0.32923945687105194,
+      "p_coupling_size": 0.006517853322734705
+    },
+    "eigenvector": {
+      "n": 67,
+      "rho_coupling_natural": 0.4960092585202331,
+      "p_coupling_natural": 1.96963773878987e-05,
+      "rho_natural_size": 0.7704602368912156,
+      "p_natural_size": 2.4740770817287622e-14,
+      "rho_coupling_size": 0.39351098963357667,
+      "p_coupling_size": 0.0009862902794720095
+    }
+  },
+  "verification": {
+    "test1_improved_coupling_natural": true,
+    "test2_reduced_coupling_size": false,
+    "test3_significant_correlation": true,
+    "qualifying_schemes": [
+      "uniform",
+      "gradient",
+      "eigenvector"
+    ],
+    "n_verified": 2
+  }
+}

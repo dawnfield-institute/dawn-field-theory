@@ -1,0 +1,110 @@
+{
+  "experiment": "exp_17_synthesis_h1_revision",
+  "timestamp": "2026-03-28T10:04:45.974961",
+  "purpose": "Synthesis: H1 (spatial inconsistency) <-> backward revision (temporal correction)",
+  "n_groups": 6,
+  "perturbation_scale": 0.1,
+  "smoothing_alpha": 0.3,
+  "correlation": {
+    "spearman_rho": -0.6,
+    "spearman_p": 0.20799999999999985,
+    "r_squared": 0.4819801348617151,
+    "regression_slope": -0.003716339105424717,
+    "regression_intercept": 0.7403835244384473,
+    "regression_p": 0.125935008927684
+  },
+  "rank_overlap": {
+    "top5_h1_in_top10_rev": 5,
+    "overlapping_groups": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "bonus": {
+    "rho_h1_recovery": -0.13093073414159545,
+    "p_h1_recovery": 0.8047261622231061
+  },
+  "verification": {
+    "test1_spearman_significant": false,
+    "test2_r_squared": true,
+    "test3_rank_overlap": true,
+    "n_verified": 2
+  },
+  "per_group": [
+    {
+      "level": 1,
+      "parent_id": 6,
+      "n_parent_cells": 697,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 10.705926488314422,
+      "revision_magnitude": 0.6997244856526458,
+      "recovery_ratio": 0.7,
+      "perturbed_residual": 2.6011933231661195,
+      "smoothed_residual": 0.7803579969498359
+    },
+    {
+      "level": 1,
+      "parent_id": 10,
+      "n_parent_cells": 799,
+      "n_children": 3,
+      "baseline_residual": 0.0,
+      "h1_proxy": 12.232486993951447,
+      "revision_magnitude": 0.7004406129913862,
+      "recovery_ratio": 0.7,
+      "perturbed_residual": 2.7805400548404,
+      "smoothed_residual": 0.83416201645212
+    },
+    {
+      "level": 1,
+      "parent_id": 15,
+      "n_parent_cells": 739,
+      "n_children": 3,
+      "baseline_residual": 0.0,
+      "h1_proxy": 8.433239155693402,
+      "revision_magnitude": 0.7062157146578785,
+      "recovery_ratio": 0.7,
+      "perturbed_residual": 2.6742630464849615,
+      "smoothed_residual": 0.8022789139454886
+    },
+    {
+      "level": 1,
+      "parent_id": 18,
+      "n_parent_cells": 314,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 8.906770193508747,
+      "revision_magnitude": 0.7003190137253615,
+      "recovery_ratio": 0.7000000000000002,
+      "perturbed_residual": 1.721912858216932,
+      "smoothed_residual": 0.5165738574650794
+    },
+    {
+      "level": 1,
+      "parent_id": 21,
+      "n_parent_cells": 354,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 10.063937931566894,
+      "revision_magnitude": 0.6982198143415363,
+      "recovery_ratio": 0.7,
+      "perturbed_residual": 1.7945850914276835,
+      "smoothed_residual": 0.5383755274283051
+    },
+    {
+      "level": 2,
+      "parent_id": 5,
+      "n_parent_cells": 100,
+      "n_children": 2,
+      "baseline_residual": 0.0,
+      "h1_proxy": 7.634478907824732,
+      "revision_magnitude": 0.7219199087841215,
+      "recovery_ratio": 0.7,
+      "perturbed_residual": 0.9095637931826113,
+      "smoothed_residual": 0.2728691379547834
+    }
+  ]
+}

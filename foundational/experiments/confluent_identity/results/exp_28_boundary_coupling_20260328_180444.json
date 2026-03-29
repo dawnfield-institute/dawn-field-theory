@@ -1,0 +1,71 @@
+{
+  "experiment": "exp_28_boundary_coupling_ceiling",
+  "timestamp": "2026-03-28T18:04:44.863822",
+  "purpose": "Break coupling ceiling with boundary-aware weighting schemes",
+  "n_parents": 10,
+  "scheme_results": {
+    "gradient": {
+      "n": 67,
+      "rho_raw": 0.41104637241599495,
+      "p_raw": 0.0005496490315489138,
+      "partial_rho": 0.3021390374331551,
+      "partial_p": 0.01295706305349267,
+      "rho_coupling_size": 0.31493250592701894
+    },
+    "boundary_gradient": {
+      "n": 67,
+      "rho_raw": 0.5104158352621918,
+      "p_raw": 1.0211877657793654e-05,
+      "partial_rho": 0.3627584005108149,
+      "partial_p": 0.0025536299955357736,
+      "rho_coupling_size": 0.4124871546932355
+    },
+    "boundary_proximity": {
+      "n": 67,
+      "rho_raw": 0.44995610184372264,
+      "p_raw": 0.00013333761842773822,
+      "partial_rho": 0.38546571953068887,
+      "partial_p": 0.0012763033479148368,
+      "rho_coupling_size": 0.3320729115907907
+    },
+    "boundary_fiedler": {
+      "n": 67,
+      "rho_raw": 0.48683055311676915,
+      "p_raw": 2.948123263112053e-05,
+      "partial_rho": 0.39480405459334356,
+      "partial_p": 0.000945690451805155,
+      "rho_coupling_size": 0.3559577376437998
+    }
+  },
+  "cross_level": {
+    "tau": 0.3333333333333334,
+    "level_ranks": {
+      "1": {
+        "gradient": -0.05950687529634897,
+        "boundary_gradient": -0.03508771929824561,
+        "boundary_proximity": 0.0739687055476529,
+        "boundary_fiedler": -0.02513039355144618
+      },
+      "2": {
+        "gradient": 0.08865047995482779,
+        "boundary_gradient": 0.05251270468661773,
+        "boundary_proximity": 0.1507622811970638,
+        "boundary_fiedler": 0.3540372670807454
+      },
+      "3": {
+        "gradient": -0.8999999999999998,
+        "boundary_gradient": -0.09999999999999999,
+        "boundary_proximity": -0.49999999999999994,
+        "boundary_fiedler": 0.6
+      },
+      "4": {}
+    }
+  },
+  "verification": {
+    "test1_boundary_above_045": false,
+    "test2_boundary_beats_gradient": true,
+    "test3_low_size_correlation": false,
+    "test4_cross_level_consistency": true,
+    "n_verified": 2
+  }
+}

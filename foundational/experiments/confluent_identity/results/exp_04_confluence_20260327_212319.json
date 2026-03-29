@@ -1,0 +1,45 @@
+{
+  "experiment": "exp_04_confluence_test",
+  "timestamp": "2026-03-27T21:23:19.956159",
+  "n_tests": 3,
+  "summary": {
+    "weighted": {
+      "mean_l2": 0.11842988713684192,
+      "std_l2": 0.02529239127655018,
+      "mean_cosine": 0.08909499396302019,
+      "std_cosine": 0.3413306615772935,
+      "mean_relative": 1.014779757781841,
+      "std_relative": 0.13669544603163533,
+      "n_tests": 3
+    },
+    "mean": {
+      "mean_l2": 0.11914255570138275,
+      "std_l2": 0.02523838845236039,
+      "mean_cosine": 0.026676869029244515,
+      "std_cosine": 0.389367922015313,
+      "mean_relative": 1.0221074991842702,
+      "std_relative": 0.14390822950279303,
+      "n_tests": 3
+    },
+    "size_weighted": {
+      "mean_l2": 0.14417594162586764,
+      "std_l2": 0.013069152200926982,
+      "mean_cosine": 0.013119314574985497,
+      "std_cosine": 0.38609174759119896,
+      "mean_relative": 1.2780211377643285,
+      "std_relative": 0.3071773492112403,
+      "n_tests": 3
+    },
+    "random": {
+      "mean_l2": 0.12220962505745937,
+      "std_l2": 0.024143974438567015,
+      "mean_cosine": 0.06777183952217516,
+      "std_cosine": 0.34740855013639305,
+      "mean_relative": 1.0508882627546143,
+      "std_relative": 0.147006651354589,
+      "n_tests": 3
+    },
+    "weighted_vs_mean": {
+      "mean_improvement": 0.007327741402429348,
+      "p_value": 0.5,
+      "significant": 

@@ -1,0 +1,92 @@
+{
+  "experiment": "exp_22_coupling_ceiling",
+  "timestamp": "2026-03-28T11:15:04.715136",
+  "purpose": "Coupling ceiling via 5 weighting schemes",
+  "n_parents": 10,
+  "scheme_results": {
+    "uniform": {
+      "n": 67,
+      "rho_raw": 0.4007103519833986,
+      "p_raw": 0.000778796126835188,
+      "partial_rho": 0.35314071354457666,
+      "partial_p": 0.003375914943925205,
+      "partial_rho_logsize": 0.35314071354457666,
+      "partial_p_logsize": 0.003375914943925205,
+      "rho_coupling_size": 0.2556095419707985
+    },
+    "eigenvector": {
+      "n": 67,
+      "rho_raw": 0.49413361002474276,
+      "p_raw": 2.1408647063722867e-05,
+      "partial_rho": 0.38778034958895363,
+      "partial_p": 0.0011858587085372858,
+      "partial_rho_logsize": 0.38778034958895363,
+      "partial_p_logsize": 0.0011858587085372858,
+      "rho_coupling_size": 0.36230307990349636
+    },
+    "gradient": {
+      "n": 67,
+      "rho_raw": 0.43072072791124594,
+      "p_raw": 0.0002743411256723076,
+      "partial_rho": 0.41292202091148544,
+      "partial_p": 0.0005153464680174757,
+      "partial_rho_logsize": 0.41292202091148544,
+      "partial_p_logsize": 0.0005153464680174757,
+      "rho_coupling_size": 0.275583402354309
+    },
+    "entropy": {
+      "n": 67,
+      "rho_raw": 0.36088275201532455,
+      "p_raw": 0.00269830396475841,
+      "partial_rho": 0.3208955223880598,
+      "partial_p": 0.008105836262682416,
+      "partial_rho_logsize": 0.3208955223880598,
+      "partial_p_logsize": 0.008105836262682416,
+      "rho_coupling_size": 0.23320130499708996
+    },
+    "laplacian": {
+      "n": 67,
+      "rho_raw": 0.45410647298268025,
+      "p_raw": 0.00011346638026160674,
+      "partial_rho": 0.3910926650171603,
+      "partial_p": 0.0010664751215702622,
+      "partial_rho_logsize": 0.3910926650171603,
+      "partial_p_logsize": 0.0010664751215702622,
+      "rho_coupling_size": 0.29801159323449455
+    }
+  },
+  "cross_level": {
+    "tau": 0.0,
+    "level_ranks": {
+      "1": {
+        "uniform": -0.08036984352773825,
+        "eigenvector": -0.09909909909909909,
+        "gradient": -0.08653390232337599,
+        "entropy": -0.01944049312470365,
+        "laplacian": 0.20459933617828355
+      },
+      "2": {
+        "uniform": 0.07961603613777528,
+        "eigenvector": 0.34161490683229817,
+        "gradient": 0.5098814229249012,
+        "entropy": 0.259175607001694,
+        "laplacian": 0.37662337662337664
+      },
+      "3": {
+        "uniform": 0.8999999999999998,
+        "eigenvector": -0.49999999999999994,
+        "gradient": 0.3,
+        "entropy": 0.3,
+        "laplacian": -0.09999999999999999
+      },
+      "4": {}
+    }
+  },
+  "verification": {
+    "test1_partial_rho_above_045": false,
+    "test2_best_scheme_low_size_corr": true,
+    "test3_cross_level_consistency": false,
+    "test4_entropy_or_laplacian_beats_uniform": true,
+    "n_verified": 2
+  }
+}

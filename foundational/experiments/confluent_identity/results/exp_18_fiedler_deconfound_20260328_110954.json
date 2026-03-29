@@ -1,0 +1,82 @@
+{
+  "experiment": "exp_18_fiedler_deconfound",
+  "timestamp": "2026-03-28T11:09:54.638338",
+  "purpose": "Fiedler-size deconfound + entropy reversal investigation",
+  "n_regions": 57,
+  "raw_correlations": {
+    "rho_fiedler_size": -0.8962421611586526,
+    "rho_fiedler_noise_sensitivity": -0.10344827586206898,
+    "rho_fiedler_entropy": 0.4324604614985741
+  },
+  "partial_correlations": {
+    "fiedler_noise_sens_given_size": {
+      "rho": 0.06578947368421054,
+      "p": 0.6268092205769711
+    },
+    "fiedler_noise_sens_given_logsize": {
+      "rho": 0.06578947368421054,
+      "p": 0.6268092205769711
+    },
+    "fiedler_uniform_sens_given_size": {
+      "rho": 0.14447757324345345,
+      "p": 0.28360601215114417
+    },
+    "fiedler_entropy_given_size": {
+      "rho": 0.2878532538242158,
+      "p": 0.02990986255816076
+    },
+    "fiedler_norm_entropy_given_size": {
+      "rho": 0.3245397977702878,
+      "p": 0.013777741108533387
+    }
+  },
+  "stratified": [
+    {
+      "bin": 0,
+      "n": 19,
+      "size_range": [
+        10.0,
+        152.66666666666669
+      ],
+      "rho": -0.01754385964912281,
+      "p": 0.9431706684765946
+    },
+    {
+      "bin": 1,
+      "n": 19,
+      "size_range": [
+        152.66666666666669,
+        323.0
+      ],
+      "rho": -0.5035087719298245,
+      "p": 0.027966014959808088
+    },
+    {
+      "bin": 2,
+      "n": 19,
+      "size_range": [
+        323.0,
+        1159.0
+      ],
+      "rho": 0.28596491228070176,
+      "p": 0.23528462978219672
+    }
+  ],
+  "permutation": {
+    "observed_rho": 0.06578947368421054,
+    "p_value": 0.6904,
+    "null_mean": 8.268437927579618e-05,
+    "null_std": 0.1333049255751315
+  },
+  "entropy_investigation": {
+    "rho_fiedler_norm_entropy": 0.44555353901996375,
+    "p_fiedler_norm_entropy": 0.0005143248571371638
+  },
+  "verification": {
+    "test1_partial_rho_significant": false,
+    "test2_terciles_negative": true,
+    "test3_permutation_significant": false,
+    "test4_entropy_artifact": false,
+    "n_verified": 1
+  }
+}

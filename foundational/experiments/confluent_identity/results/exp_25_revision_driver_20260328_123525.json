@@ -1,0 +1,1603 @@
+{
+  "experiment": "exp_25_revision_driver",
+  "timestamp": "2026-03-28T12:35:25.882107",
+  "purpose": "What drives backward revision? 8 candidate predictors",
+  "n_groups": 96,
+  "predictor_correlations": {
+    "h1_proxy": {
+      "rho": 0.015928687639245452,
+      "p": 0.8775829588052505
+    },
+    "perturbation_l2": {
+      "rho": 0.33746146818093226,
+      "p": 0.0007728961352012108
+    },
+    "boundary_coupling": {
+      "rho": 0.3258217777479999,
+      "p": 0.0011976146017929493
+    },
+    "n_children": {
+      "rho": 0.0978285087773178,
+      "p": 0.3430069935159926
+    },
+    "size_ratio": {
+      "rho": 0.03073124908878594,
+      "p": 0.7662913630840841
+    },
+    "spectral_gap_parent": {
+      "rho": -0.13126695604991861,
+      "p": 0.20237135547309787
+    },
+    "perturbation_spread": {
+      "rho": 0.050895279435702656,
+      "p": 0.6223963972553634
+    },
+    "spectral_energy_shift": {
+      "rho": -0.05892566467715681,
+      "p": 0.5684850117059912
+    }
+  },
+  "best_non_h1": {
+    "name": "perturbation_l2",
+    "rho": 0.33746146818093226,
+    "p": 0.0007728961352012108
+  },
+  "multiple_regression": {
+    "predictors": [
+      "perturbation_l2",
+      "boundary_coupling",
+      "spectral_gap_parent"
+    ],
+    "r_squared": 0.14797414905320738,
+    "betas": {
+      "perturbation_l2": 0.28001481526144,
+      "boundary_coupling": 0.19371327518546788,
+      "spectral_gap_parent": 0.07322829625811839
+    }
+  },
+  "verification": {
+    "test1_non_h1_predictor": true,
+    "test2_h1_falsification_replication": true,
+    "test3_regression_r_squared": false,
+    "test4_meaningful_top_predictor": false,
+    "n_verified": 2
+  },
+  "group_data": [
+    {
+      "source_region": 1,
+      "k": 2,
+      "n_parent": 250,
+      "spectral_revision": 0.2522404540590154,
+      "predictors": {
+        "h1_proxy": 13.77533138139256,
+        "perturbation_l2": 1.5244118330725125,
+        "boundary_coupling": 20.764022321953583,
+        "n_children": 2.0,
+        "size_ratio": 1.0661157024793388,
+        "spectral_gap_parent": 0.012401961333810486,
+        "perturbation_spread": 0.6888711630504695,
+        "spectral_energy_shift": 249.50351184407947
+      }
+    },
+    {
+      "source_region": 1,
+      "k": 3,
+      "n_parent": 250,
+      "spectral_revision": 0.3430404332094353,
+      "predictors": {
+        "h1_proxy": 13.775331381392558,
+        "perturbation_l2": 1.5244118330725127,
+        "boundary_coupling": 25.68248932343889,
+        "n_children": 3.0,
+        "size_ratio": 2.326923076923077,
+        "spectral_gap_parent": 0.012401961333809995,
+        "perturbation_spread": 1.0047471133076453,
+        "spectral_energy_shift": 194.2113480120053
+      }
+    },
+    {
+      "source_region": 1,
+      "k": 4,
+      "n_parent": 250,
+      "spectral_revision": 0.31841274484244747,
+      "predictors": {
+        "h1_proxy": 13.775331381392562,
+        "perturbation_l2": 1.5244118330725125,
+        "boundary_coupling": 31.463251993974218,
+        "n_children": 4.0,
+        "size_ratio": 3.27027027027027,
+        "spectral_gap_parent": 0.012401961333810056,
+        "perturbation_spread": 1.230847922559835,
+        "spectral_energy_shift": 463.321454243718
+      }
+    },
+    {
+      "source_region": 6,
+      "k": 2,
+      "n_parent": 1018,
+      "spectral_revision": 0.35703912274942384,
+      "predictors": {
+        "h1_proxy": 12.58245788402426,
+        "perturbation_l2": 3.1225256326531494,
+        "boundary_coupling": 29.848735710962064,
+        "n_children": 2.0,
+        "size_ratio": 1.583756345177665,
+        "spectral_gap_parent": 0.003549794022079808,
+        "perturbation_spread": 0.6626752257719652,
+        "spectral_energy_shift": 3469.6409816810183
+      }
+    },
+    {
+      "source_region": 6,
+      "k": 3,
+      "n_parent": 1018,
+      "spectral_revision": 0.3898794928042729,
+      "predictors": {
+        "h1_proxy": 12.58245788402426,
+        "perturbation_l2": 3.1225256326531494,
+        "boundary_coupling": 51.20530429610552,
+        "n_children": 3.0,
+        "size_ratio": 1.4022140221402215,
+        "spectral_gap_parent": 0.0035497940220798638,
+        "perturbation_spread": 1.0949966297321456,
+        "spectral_energy_shift": 4433.102713094487
+      }
+    },
+    {
+      "source_region": 6,
+      "k": 4,
+      "n_parent": 1018,
+      "spectral_revision": 0.3474413614636051,
+      "predictors": {
+        "h1_proxy": 12.582457884024262,
+        "perturbation_l2": 3.1225256326531494,
+        "boundary_coupling": 72.0772342540532,
+        "n_children": 4.0,
+        "size_ratio": 1.3466666666666667,
+        "spectral_gap_parent": 0.0035497940220795316,
+        "perturbation_spread": 1.3405496948072417,
+        "spectral_energy_shift": 854.6143286220025
+      }
+    },
+    {
+      "source_region": 7,
+      "k": 2,
+      "n_parent": 370,
+      "spectral_revision": 0.23623027487729542,
+      "predictors": {
+        "h1_proxy": 8.096700002023185,
+        "perturbation_l2": 1.8111268990219624,
+        "boundary_coupling": 13.968292018905704,
+        "n_children": 2.0,
+        "size_ratio": 1.032967032967033,
+        "spectral_gap_parent": 0.010343611768007103,
+        "perturbation_spread": 0.6812978590672003,
+        "spectral_energy_shift": 23.810214153026077
+      }
+    },
+    {
+      "source_region": 7,
+      "k": 3,
+      "n_parent": 370,
+      "spectral_revision": 0.23147578949303532,
+      "predictors": {
+        "h1_proxy": 8.096700002023185,
+        "perturbation_l2": 1.8111268990219622,
+        "boundary_coupling": 28.034525241873297,
+        "n_children": 3.0,
+        "size_ratio": 2.111111111111111,
+        "spectral_gap_parent": 0.010343611768007695,
+        "perturbation_spread": 1.068288061900228,
+        "spectral_energy_shift": 8.07051968076427
+      }
+    },
+    {
+      "source_region": 7,
+      "k": 4,
+      "n_parent": 370,
+      "spectral_revision": 0.3734956544000854,
+      "predictors": {
+        "h1_proxy": 8.098483941624368,
+        "perturbation_l2": 1.809450136615892,
+        "boundary_coupling": 25.48654479028971,
+        "n_children": 3.0,
+        "size_ratio": 1.3365384615384615,
+        "spectral_gap_parent": 0.010343611768007454,
+        "perturbation_spread": 1.0581988868241154,
+        "spectral_energy_shift": 18.55525922219916
+      }
+    },
+    {
+      "source_region": 8,
+      "k": 2,
+      "n_parent": 1159,
+      "spectral_revision": 0.35043604743568907,
+      "predictors": {
+        "h1_proxy": 14.580556215681435,
+        "perturbation_l2": 3.3519496711177394,
+        "boundary_coupling": 34.76424787075683,
+        "n_children": 2.0,
+        "size_ratio": 2.633228840125392,
+        "spectral_gap_parent": 0.0076793468536490135,
+        "perturbation_spread": 0.5459701630622505,
+        "spectral_energy_shift": 10.678786914440249
+      }
+    },
+    {
+      "source_region": 8,
+      "k": 3,
+      "n_parent": 1159,
+      "spectral_revision": 0.4535022915878013,
+      "predictors": {
+        "h1_proxy": 14.580556215681437,
+        "perturbation_l2": 3.3519496711177394,
+        "boundary_coupling": 59.478869154439295,
+        "n_children": 3.0,
+        "size_ratio": 15.8,
+        "spectral_gap_parent": 0.007679346853649827,
+        "perturbation_spread": 0.7665487621758967,
+        "spectral_energy_shift": 32.998356447554855
+      }
+    },
+    {
+      "source_region": 8,
+      "k": 4,
+      "n_parent": 1159,
+      "spectral_revision": 0.5343648149981445,
+      "predictors": {
+        "h1_proxy": 14.580556215681437,
+        "perturbation_l2": 3.3519496711177394,
+        "boundary_coupling": 85.27520374875103,
+        "n_children": 4.0,
+        "size_ratio": 8.22,
+        "spectral_gap_parent": 0.007679346853649162,
+        "perturbation_spread": 1.2477801186686166,
+        "spectral_energy_shift": 2.4995044501529233
+      }
+    },
+    {
+      "source_region": 9,
+      "k": 2,
+      "n_parent": 302,
+      "spectral_revision": 0.20660054521216242,
+      "predictors": {
+        "h1_proxy": 14.572140856985861,
+        "perturbation_l2": 1.7047955874052705,
+        "boundary_coupling": 14.068259024544185,
+        "n_children": 2.0,
+        "size_ratio": 1.2205882352941178,
+        "spectral_gap_parent": 0.014936838856104782,
+        "perturbation_spread": 0.6688425242599418,
+        "spectral_energy_shift": 874.761100293511
+      }
+    },
+    {
+      "source_region": 9,
+      "k": 3,
+      "n_parent": 302,
+      "spectral_revision": 0.28906137700219325,
+      "predictors": {
+        "h1_proxy": 14.572140856985857,
+        "perturbation_l2": 1.7047955874052705,
+        "boundary_coupling": 28.08847440518337,
+        "n_children": 3.0,
+        "size_ratio": 1.1030927835051547,
+        "spectral_gap_parent": 0.01493683885610504,
+        "perturbation_spread": 1.0769453122337578,
+        "spectral_energy_shift": 318.8388507963681
+      }
+    },
+    {
+      "source_region": 9,
+      "k": 4,
+      "n_parent": 302,
+      "spectral_revision": 0.25192927649047553,
+      "predictors": {
+        "h1_proxy": 14.57214085698586,
+        "perturbation_l2": 1.70479558740527,
+        "boundary_coupling": 42.25143772015451,
+        "n_children": 4.0,
+        "size_ratio": 2.3333333333333335,
+        "spectral_gap_parent": 0.01493683885610476,
+        "perturbation_spread": 1.3649027160154343,
+        "spectral_energy_shift": 280.31633356576555
+      }
+    },
+    {
+      "source_region": 10,
+      "k": 2,
+      "n_parent": 247,
+      "spectral_revision": 0.17631836000462028,
+      "predictors": {
+        "h1_proxy": 12.611386574457269,
+        "perturbation_l2": 1.512201923468804,
+        "boundary_coupling": 6.927923323681285,
+        "n_children": 2.0,
+        "size_ratio": 17.999999999999996,
+        "spectral_gap_parent": 0.013659321650699672,
+        "perturbation_spread": 0.16189362966265983,
+        "spectral_energy_shift": 3725.0501459345714
+      }
+    },
+    {
+      "source_region": 10,
+      "k": 3,
+      "n_parent": 247,
+      "spectral_revision": 0.3522550311994084,
+      "predictors": {
+        "h1_proxy": 12.61138657445727,
+        "perturbation_l2": 1.512201923468804,
+        "boundary_coupling": 17.578565299453018,
+        "n_children": 3.0,
+        "size_ratio": 9.692307692307692,
+        "spectral_gap_parent": 0.013659321650698985,
+        "perturbation_spread": 0.8183641501587413,
+        "spectral_energy_shift": 3120.294747551045
+      }
+    },
+    {
+      "source_region": 10,
+      "k": 4,
+      "n_parent": 247,
+      "spectral_revision": 0.16050694238778807,
+      "predictors": {
+        "h1_proxy": 12.61138657445727,
+        "perturbation_l2": 1.5122019234688042,
+        "boundary_coupling": 27.773751691334745,
+        "n_children": 4.0,
+        "size_ratio": 7.538461538461537,
+        "spectral_gap_parent": 0.013659321650700253,
+        "perturbation_spread": 1.244252966483745,
+        "spectral_energy_shift": 1722.7574941472562
+      }
+    },
+    {
+      "source_region": 11,
+      "k": 2,
+      "n_parent": 331,
+      "spectral_revision": 0.3733212859659334,
+      "predictors": {
+        "h1_proxy": 11.413677378994931,
+        "perturbation_l2": 1.7593646877346565,
+        "boundary_coupling": 13.738625359810207,
+        "n_children": 2.0,
+        "size_ratio": 1.0432098765432098,
+        "spectral_gap_parent": 0.014717758930362776,
+        "perturbation_spread": 0.6588909830655256,
+        "spectral_energy_shift": 119.28295665495898
+      }
+    },
+    {
+      "source_region": 11,
+      "k": 3,
+      "n_parent": 331,
+      "spectral_revision": 0.3339121000657387,
+      "predictors": {
+        "h1_proxy": 11.413677378994931,
+        "perturbation_l2": 1.7593646877346567,
+        "boundary_coupling": 30.762559665067055,
+        "n_children": 3.0,
+        "size_ratio": 1.8571428571428572,
+        "spectral_gap_parent": 0.014717758930363844,
+        "perturbation_spread": 0.9612053883008649,
+        "spectral_energy_shift": 125.41950330567265
+      }
+    },
+    {
+      "source_region": 11,
+      "k": 4,
+      "n_parent": 331,
+      "spectral_revision": 0.42302312008383547,
+      "predictors": {
+        "h1_proxy": 11.413677378994931,
+        "perturbation_l2": 1.7593646877346565,
+        "boundary_coupling": 44.1964279005347,
+        "n_children": 4.0,
+        "size_ratio": 1.6376811594202898,
+        "spectral_gap_parent": 0.014717758930363782,
+        "perturbation_spread": 1.2956386772964086,
+        "spectral_energy_shift": 299.4522465754648
+      }
+    },
+    {
+      "source_region": 13,
+      "k": 2,
+      "n_parent": 355,
+      "spectral_revision": 0.20865920429834736,
+      "predictors": {
+        "h1_proxy": 9.838885405760422,
+        "perturbation_l2": 1.7945860989476479,
+        "boundary_coupling": 12.569032438358098,
+        "n_children": 2.0,
+        "size_ratio": 1.0402298850574712,
+        "spectral_gap_parent": 0.010031668820073654,
+        "perturbation_spread": 0.6144434122607875,
+        "spectral_energy_shift": 48.228998342257036
+      }
+    },
+    {
+      "source_region": 13,
+      "k": 3,
+      "n_parent": 355,
+      "spectral_revision": 0.1531249460838614,
+      "predictors": {
+        "h1_proxy": 9.83888540576042,
+        "perturbation_l2": 1.794586098947648,
+        "boundary_coupling": 26.222437728120592,
+        "n_children": 3.0,
+        "size_ratio": 1.1481481481481481,
+        "spectral_gap_parent": 0.010031668820073463,
+        "perturbation_spread": 1.0562787430103513,
+        "spectral_energy_shift": 30.411639602510416
+      }
+    },
+    {
+      "source_region": 13,
+      "k": 4,
+      "n_parent": 355,
+      "spectral_revision": 0.24004453754139068,
+      "predictors": {
+        "h1_proxy": 9.83888540576042,
+        "perturbation_l2": 1.7945860989476479,
+        "boundary_coupling": 41.657455581421345,
+        "n_children": 4.0,
+        "size_ratio": 2.9375,
+        "spectral_gap_parent": 0.010031668820073671,
+        "perturbation_spread": 1.1352521706686969,
+        "spectral_energy_shift": 7.4220996053584605
+      }
+    },
+    {
+      "source_region": 14,
+      "k": 2,
+      "n_parent": 573,
+      "spectral_revision": 0.3897073983674578,
+      "predictors": {
+        "h1_proxy": 10.034240155080655,
+        "perturbation_l2": 2.3343395559593345,
+        "boundary_coupling": 21.809240096067757,
+        "n_children": 2.0,
+        "size_ratio": 1.0611510791366907,
+        "spectral_gap_parent": 0.011114619576083312,
+        "perturbation_spread": 0.49796701114929354,
+        "spectral_energy_shift": 5.4328806448827685
+      }
+    },
+    {
+      "source_region": 14,
+      "k": 3,
+      "n_parent": 573,
+      "spectral_revision": 0.27342487874759064,
+      "predictors": {
+        "h1_proxy": 10.034240155080655,
+        "perturbation_l2": 2.3343395559593345,
+        "boundary_coupling": 42.88775933646042,
+        "n_children": 3.0,
+        "size_ratio": 1.578616352201258,
+        "spectral_gap_parent": 0.01111461957608423,
+        "perturbation_spread": 0.6847518199179512,
+        "spectral_energy_shift": 9.712174796850224
+      }
+    },
+    {
+      "source_region": 14,
+      "k": 4,
+      "n_parent": 573,
+      "spectral_revision": 0.3614829523553124,
+      "predictors": {
+        "h1_proxy": 10.034240155080655,
+        "perturbation_l2": 2.3343395559593345,
+        "boundary_coupling": 49.21649303867189,
+        "n_children": 4.0,
+        "size_ratio": 1.0283687943262412,
+        "spectral_gap_parent": 0.011114619576083624,
+        "perturbation_spread": 0.9762400736619881,
+        "spectral_energy_shift": 7.965494901492804
+      }
+    },
+    {
+      "source_region": 17,
+      "k": 2,
+      "n_parent": 691,
+      "spectral_revision": 0.27126588727586715,
+      "predictors": {
+        "h1_proxy": 10.750484387493303,
+        "perturbation_l2": 2.5945608480372084,
+        "boundary_coupling": 14.31502430599838,
+        "n_children": 2.0,
+        "size_ratio": 7.6375,
+        "spectral_gap_parent": 0.008799613959471677,
+        "perturbation_spread": 0.2644143507994121,
+        "spectral_energy_shift": 3.015001218827545
+      }
+    },
+    {
+      "source_region": 17,
+      "k": 3,
+      "n_parent": 691,
+      "spectral_revision": 0.28768795482616333,
+      "predictors": {
+        "h1_proxy": 10.750484387493303,
+        "perturbation_l2": 2.5945608480372084,
+        "boundary_coupling": 47.022836185739514,
+        "n_children": 3.0,
+        "size_ratio": 4.1625,
+        "spectral_gap_parent": 0.008799613959471625,
+        "perturbation_spread": 0.8753874220370097,
+        "spectral_energy_shift": 0.2825613687615972
+      }
+    },
+    {
+      "source_region": 17,
+      "k": 4,
+      "n_parent": 691,
+      "spectral_revision": 0.3621097977265885,
+      "predictors": {
+        "h1_proxy": 10.750484387493303,
+        "perturbation_l2": 2.5945608480372084,
+        "boundary_coupling": 57.11791593196348,
+        "n_children": 4.0,
+        "size_ratio": 3.0375,
+        "spectral_gap_parent": 0.00879961395947195,
+        "perturbation_spread": 1.1293724689328295,
+        "spectral_energy_shift": 14.70590332747814
+      }
+    },
+    {
+      "source_region": 19,
+      "k": 2,
+      "n_parent": 396,
+      "spectral_revision": 0.24404543149442912,
+      "predictors": {
+        "h1_proxy": 10.775299141281543,
+        "perturbation_l2": 1.9022145838819038,
+        "boundary_coupling": 18.607881977515124,
+        "n_children": 2.0,
+        "size_ratio": 1.0732984293193717,
+        "spectral_gap_parent": 0.018029377140371897,
+        "perturbation_spread": 0.693079829890298,
+        "spectral_energy_shift": 26.891471448358466
+      }
+    },
+    {
+      "source_region": 19,
+      "k": 3,
+      "n_parent": 396,
+      "spectral_revision": 0.20190442955789434,
+      "predictors": {
+        "h1_proxy": 10.775299141281545,
+        "perturbation_l2": 1.9022145838819038,
+        "boundary_coupling": 38.77801413072775,
+        "n_children": 3.0,
+        "size_ratio": 1.6074766355140186,
+        "spectral_gap_parent": 0.018029377140371873,
+        "perturbation_spread": 0.98574047256061,
+        "spectral_energy_shift": 1.829834496667968
+      }
+    },
+    {
+      "source_region": 19,
+      "k": 4,
+      "n_parent": 396,
+      "spectral_revision": 0.28646226755008813,
+      "predictors": {
+        "h1_proxy": 10.775299141281543,
+        "perturbation_l2": 1.9022145838819042,
+        "boundary_coupling": 45.42888637901009,
+        "n_children": 4.0,
+        "size_ratio": 1.1777777777777778,
+        "spectral_gap_parent": 0.018029377140371665,
+        "perturbation_spread": 1.3475602583343331,
+        "spectral_energy_shift": 5.652394717374869
+      }
+    },
+    {
+      "source_region": 28,
+      "k": 2,
+      "n_parent": 313,
+      "spectral_revision": 0.36747921055417265,
+      "predictors": {
+        "h1_proxy": 7.74211936565893,
+        "perturbation_l2": 1.7199900906732413,
+        "boundary_coupling": 13.456705856289732,
+        "n_children": 2.0,
+        "size_ratio": 1.1736111111111112,
+        "spectral_gap_parent": 0.01307365545342947,
+        "perturbation_spread": 0.5472527468986408,
+        "spectral_energy_shift": 8.161005633679553
+      }
+    },
+    {
+      "source_region": 28,
+      "k": 3,
+      "n_parent": 313,
+      "spectral_revision": 0.20897143314506825,
+      "predictors": {
+        "h1_proxy": 7.74211936565893,
+        "perturbation_l2": 1.7199900906732415,
+        "boundary_coupling": 27.692380234382806,
+        "n_children": 3.0,
+        "size_ratio": 2.0,
+        "spectral_gap_parent": 0.013073655453429216,
+        "perturbation_spread": 0.7814906327960897,
+        "spectral_energy_shift": 3.5716605008283993
+      }
+    },
+    {
+      "source_region": 28,
+      "k": 4,
+      "n_parent": 313,
+      "spectral_revision": 0.19817814577604503,
+      "predictors": {
+        "h1_proxy": 7.74211936565893,
+        "perturbation_l2": 1.7199900906732413,
+        "boundary_coupling": 34.626766028211364,
+        "n_children": 4.0,
+        "size_ratio": 2.511111111111111,
+        "spectral_gap_parent": 0.01307365545342935,
+        "perturbation_spread": 1.1993950628317938,
+        "spectral_energy_shift": 3.7158852616694378
+      }
+    },
+    {
+      "source_region": 29,
+      "k": 2,
+      "n_parent": 332,
+      "spectral_revision": 0.27482214283434564,
+      "predictors": {
+        "h1_proxy": 7.159131002466861,
+        "perturbation_l2": 1.7616511455220554,
+        "boundary_coupling": 7.829924489345643,
+        "n_children": 2.0,
+        "size_ratio": 1.3055555555555556,
+        "spectral_gap_parent": 0.006939112497738569,
+        "perturbation_spread": 0.6003158754313891,
+        "spectral_energy_shift": 1.5844586662115958
+      }
+    },
+    {
+      "source_region": 29,
+      "k": 3,
+      "n_parent": 332,
+      "spectral_revision": 0.4281102765504361,
+      "predictors": {
+        "h1_proxy": 7.159131002466861,
+        "perturbation_l2": 1.7616511455220554,
+        "boundary_coupling": 23.53209848770926,
+        "n_children": 3.0,
+        "size_ratio": 1.945945945945946,
+        "spectral_gap_parent": 0.006939112497738118,
+        "perturbation_spread": 0.7587681430104221,
+        "spectral_energy_shift": 5.901590008096964
+      }
+    },
+    {
+      "source_region": 29,
+      "k": 4,
+      "n_parent": 332,
+      "spectral_revision": 0.24846243333130769,
+      "predictors": {
+        "h1_proxy": 7.159131002466861,
+        "perturbation_l2": 1.7616511455220554,
+        "boundary_coupling": 29.639768743839987,
+        "n_children": 4.0,
+        "size_ratio": 1.8870967741935485,
+        "spectral_gap_parent": 0.006939112497738451,
+        "perturbation_spread": 0.8800239273806305,
+        "spectral_energy_shift": 6.449049060704289
+      }
+    },
+    {
+      "source_region": 34,
+      "k": 2,
+      "n_parent": 301,
+      "spectral_revision": 0.23365887065286864,
+      "predictors": {
+        "h1_proxy": 10.206551362783701,
+        "perturbation_l2": 1.7038749856895365,
+        "boundary_coupling": 12.827775138163856,
+        "n_children": 2.0,
+        "size_ratio": 1.1654676258992807,
+        "spectral_gap_parent": 0.010232433646886802,
+        "perturbation_spread": 0.683050814963017,
+        "spectral_energy_shift": 12.597621735929467
+      }
+    },
+    {
+      "source_region": 34,
+      "k": 3,
+      "n_parent": 301,
+      "spectral_revision": 0.3492037841028782,
+      "predictors": {
+        "h1_proxy": 10.206551362783703,
+        "perturbation_l2": 1.7038749856895368,
+        "boundary_coupling": 30.765717974961362,
+        "n_children": 3.0,
+        "size_ratio": 1.9473684210526316,
+        "spectral_gap_parent": 0.010232433646886523,
+        "perturbation_spread": 1.0661400294009566,
+        "spectral_energy_shift": 22.307340990061927
+      }
+    },
+    {
+      "source_region": 34,
+      "k": 4,
+      "n_parent": 301,
+      "spectral_revision": 0.3467669199165912,
+      "predictors": {
+        "h1_proxy": 10.206551362783703,
+        "perturbation_l2": 1.7038749856895368,
+        "boundary_coupling": 34.64089045984032,
+        "n_children": 4.0,
+        "size_ratio": 2.183673469387755,
+        "spectral_gap_parent": 0.010232433646886373,
+        "perturbation_spread": 1.3447026960078936,
+        "spectral_energy_shift": 46.372766247099776
+      }
+    },
+    {
+      "source_region": 35,
+      "k": 2,
+      "n_parent": 225,
+      "spectral_revision": 0.2231600969588733,
+      "predictors": {
+        "h1_proxy": 5.664036878200678,
+        "perturbation_l2": 1.4512774716988932,
+        "boundary_coupling": 10.782926248676342,
+        "n_children": 2.0,
+        "size_ratio": 1.0833333333333333,
+        "spectral_gap_parent": 0.013128222688878415,
+        "perturbation_spread": 0.5350306259219045,
+        "spectral_energy_shift": 0.48275075411131646
+      }
+    },
+    {
+      "source_region": 35,
+      "k": 3,
+      "n_parent": 225,
+      "spectral_revision": 0.26613297218029014,
+      "predictors": {
+        "h1_proxy": 5.664036878200679,
+        "perturbation_l2": 1.4512774716988932,
+        "boundary_coupling": 20.555446115242784,
+        "n_children": 3.0,
+        "size_ratio": 1.5964912280701755,
+        "spectral_gap_parent": 0.01312822268887855,
+        "perturbation_spread": 0.6964694543895983,
+        "spectral_energy_shift": 0.4598787525011648
+      }
+    },
+    {
+      "source_region": 35,
+      "k": 4,
+      "n_parent": 225,
+      "spectral_revision": 0.2546582571804596,
+      "predictors": {
+        "h1_proxy": 5.664036878200679,
+        "perturbation_l2": 1.4512774716988932,
+        "boundary_coupling": 23.939031222206925,
+        "n_children": 4.0,
+        "size_ratio": 3.1666666666666665,
+        "spectral_gap_parent": 0.013128222688878555,
+        "perturbation_spread": 0.8806954107945193,
+        "spectral_energy_shift": 5.578666708888411
+      }
+    },
+    {
+      "source_region": 36,
+      "k": 2,
+      "n_parent": 674,
+      "spectral_revision": 0.4406764605862819,
+      "predictors": {
+        "h1_proxy": 12.131344991223784,
+        "perturbation_l2": 2.566025753102214,
+        "boundary_coupling": 22.15617956048437,
+        "n_children": 2.0,
+        "size_ratio": 1.582375478927203,
+        "spectral_gap_parent": 0.005614539279383126,
+        "perturbation_spread": 0.682194671099011,
+        "spectral_energy_shift": 7.067007988726716
+      }
+    },
+    {
+      "source_region": 36,
+      "k": 3,
+      "n_parent": 674,
+      "spectral_revision": 0.2747402883353517,
+      "predictors": {
+        "h1_proxy": 12.131344991223786,
+        "perturbation_l2": 2.566025753102214,
+        "boundary_coupling": 43.99321091331275,
+        "n_children": 3.0,
+        "size_ratio": 1.273170731707317,
+        "spectral_gap_parent": 0.005614539279383324,
+        "perturbation_spread": 0.9577768783725257,
+        "spectral_energy_shift": 3.933633388783791
+      }
+    },
+    {
+      "source_region": 36,
+      "k": 4,
+      "n_parent": 674,
+      "spectral_revision": 0.39367363867448885,
+      "predictors": {
+        "h1_proxy": 12.131344991223784,
+        "perturbation_l2": 2.566025753102214,
+        "boundary_coupling": 61.65874019725245,
+        "n_children": 4.0,
+        "size_ratio": 2.2695652173913046,
+        "spectral_gap_parent": 0.005614539279382837,
+        "perturbation_spread": 1.1401891223672052,
+        "spectral_energy_shift": 8.81474200130624
+      }
+    },
+    {
+      "source_region": 39,
+      "k": 2,
+      "n_parent": 266,
+      "spectral_revision": 0.22848697156496947,
+      "predictors": {
+        "h1_proxy": 10.079982011117073,
+        "perturbation_l2": 1.6120468858002577,
+        "boundary_coupling": 17.425637515061833,
+        "n_children": 2.0,
+        "size_ratio": 1.180327868852459,
+        "spectral_gap_parent": 0.028384969939802576,
+        "perturbation_spread": 0.5547332791740305,
+        "spectral_energy_shift": 26.52142365438793
+      }
+    },
+    {
+      "source_region": 39,
+      "k": 3,
+      "n_parent": 266,
+      "spectral_revision": 0.4767704505663176,
+      "predictors": {
+        "h1_proxy": 10.079982011117071,
+        "perturbation_l2": 1.6120468858002575,
+        "boundary_coupling": 27.89293636416317,
+        "n_children": 3.0,
+        "size_ratio": 1.175,
+        "spectral_gap_parent": 0.02838496993980332,
+        "perturbation_spread": 0.9658535307812541,
+        "spectral_energy_shift": 6.4364972266271705
+      }
+    },
+    {
+      "source_region": 39,
+      "k": 4,
+      "n_parent": 266,
+      "spectral_revision": 0.4238159146956989,
+      "predictors": {
+        "h1_proxy": 10.079982011117073,
+        "perturbation_l2": 1.6120468858002577,
+        "boundary_coupling": 34.86448124276401,
+        "n_children": 4.0,
+        "size_ratio": 1.0615384615384615,
+        "spectral_gap_parent": 0.02838496993980246,
+        "perturbation_spread": 1.0737362904544479,
+        "spectral_energy_shift": 13.87192917278607
+      }
+    },
+    {
+      "source_region": 40,
+      "k": 2,
+      "n_parent": 529,
+      "spectral_revision": 0.29107147367238706,
+      "predictors": {
+        "h1_proxy": 10.385962789477524,
+        "perturbation_l2": 2.2444671894481294,
+        "boundary_coupling": 31.06868673367409,
+        "n_children": 2.0,
+        "size_ratio": 1.4952830188679245,
+        "spectral_gap_parent": 0.011586815850624958,
+        "perturbation_spread": 0.6029932218355438,
+        "spectral_energy_shift": 0.9201121523545492
+      }
+    },
+    {
+      "source_region": 40,
+      "k": 3,
+      "n_parent": 529,
+      "spectral_revision": 0.45458747471518013,
+      "predictors": {
+        "h1_proxy": 10.385962789477524,
+        "perturbation_l2": 2.2444671894481294,
+        "boundary_coupling": 45.83732537357242,
+        "n_children": 3.0,
+        "size_ratio": 1.0526315789473684,
+        "spectral_gap_parent": 0.011586815850625255,
+        "perturbation_spread": 0.8406427915102523,
+        "spectral_energy_shift": 1.6002704910070498
+      }
+    },
+    {
+      "source_region": 40,
+      "k": 4,
+      "n_parent": 529,
+      "spectral_revision": 0.30025824581406224,
+      "predictors": {
+        "h1_proxy": 10.385962789477524,
+        "perturbation_l2": 2.2444671894481294,
+        "boundary_coupling": 57.24912633736803,
+        "n_children": 4.0,
+        "size_ratio": 1.4476190476190476,
+        "spectral_gap_parent": 0.011586815850625336,
+        "perturbation_spread": 1.0981324786409736,
+        "spectral_energy_shift": 0.6719753126258705
+      }
+    },
+    {
+      "source_region": 41,
+      "k": 2,
+      "n_parent": 233,
+      "spectral_revision": 0.333517480466571,
+      "predictors": {
+        "h1_proxy": 10.052288609244158,
+        "perturbation_l2": 1.4646773984160388,
+        "boundary_coupling": 5.958853441012359,
+        "n_children": 2.0,
+        "size_ratio": 1.1775700934579438,
+        "spectral_gap_parent": 0.008748501261611542,
+        "perturbation_spread": 0.6788757643122952,
+        "spectral_energy_shift": 30.451021423243823
+      }
+    },
+    {
+      "source_region": 41,
+      "k": 3,
+      "n_parent": 233,
+      "spectral_revision": 0.21603124677568636,
+      "predictors": {
+        "h1_proxy": 10.052288609244158,
+        "perturbation_l2": 1.4646773984160386,
+        "boundary_coupling": 17.454143769902743,
+        "n_children": 3.0,
+        "size_ratio": 1.55,
+        "spectral_gap_parent": 0.008748501261611327,
+        "perturbation_spread": 1.0909879842069783,
+        "spectral_energy_shift": 24.28338124361066
+      }
+    },
+    {
+      "source_region": 41,
+      "k": 4,
+      "n_parent": 233,
+      "spectral_revision": 0.29533137779376617,
+      "predictors": {
+        "h1_proxy": 10.052288609244158,
+        "perturbation_l2": 1.4646773984160388,
+        "boundary_coupling": 25.61475004591775,
+        "n_children": 4.0,
+        "size_ratio": 1.3076923076923077,
+        "spectral_gap_parent": 0.008748501261611103,
+        "perturbation_spread": 1.3329403033345935,
+        "spectral_energy_shift": 25.392727713359164
+      }
+    },
+    {
+      "source_region": 43,
+      "k": 2,
+      "n_parent": 518,
+      "spectral_revision": 0.23079852371295853,
+      "predictors": {
+        "h1_proxy": 6.876867011321667,
+        "perturbation_l2": 2.2198720983258857,
+        "boundary_coupling": 20.727133211288567,
+        "n_children": 2.0,
+        "size_ratio": 1.0234375,
+        "spectral_gap_parent": 0.010788922438831837,
+        "perturbation_spread": 0.4967946840868773,
+        "spectral_energy_shift": 0.24421824048103025
+      }
+    },
+    {
+      "source_region": 43,
+      "k": 3,
+      "n_parent": 518,
+      "spectral_revision": 0.5005140213706505,
+      "predictors": {
+        "h1_proxy": 6.876867011321667,
+        "perturbation_l2": 2.2198720983258857,
+        "boundary_coupling": 43.959716464737575,
+        "n_children": 3.0,
+        "size_ratio": 2.1092436974789917,
+        "spectral_gap_parent": 0.010788922438831814,
+        "perturbation_spread": 0.8623723713800994,
+        "spectral_energy_shift": 0.9745788340318676
+      }
+    },
+    {
+      "source_region": 43,
+      "k": 4,
+      "n_parent": 518,
+      "spectral_revision": 0.2886692409556276,
+      "predictors": {
+        "h1_proxy": 6.876867011321665,
+        "perturbation_l2": 2.219872098325886,
+        "boundary_coupling": 54.258739534221604,
+        "n_children": 4.0,
+        "size_ratio": 1.236842105263158,
+        "spectral_gap_parent": 0.010788922438831578,
+        "perturbation_spread": 0.9932094071860956,
+        "spectral_energy_shift": 0.05416885946263235
+      }
+    },
+    {
+      "source_region": 44,
+      "k": 2,
+      "n_parent": 637,
+      "spectral_revision": 0.4043928816190529,
+      "predictors": {
+        "h1_proxy": 13.860509487333879,
+        "perturbation_l2": 2.472164857541174,
+        "boundary_coupling": 16.723735307977737,
+        "n_children": 2.0,
+        "size_ratio": 1.2588652482269505,
+        "spectral_gap_parent": 0.0057853109225898675,
+        "perturbation_spread": 0.691615288419572,
+        "spectral_energy_shift": 50.324365783325725
+      }
+    },
+    {
+      "source_region": 44,
+      "k": 3,
+      "n_parent": 637,
+      "spectral_revision": 0.2864463982499285,
+      "predictors": {
+        "h1_proxy": 13.860509487333875,
+        "perturbation_l2": 2.4721648575411734,
+        "boundary_coupling": 30.54797473632563,
+        "n_children": 3.0,
+        "size_ratio": 1.2967032967032968,
+        "spectral_gap_parent": 0.00578531092259021,
+        "perturbation_spread": 1.0944592523470273,
+        "spectral_energy_shift": 230.38152445215172
+      }
+    },
+    {
+      "source_region": 44,
+      "k": 4,
+      "n_parent": 637,
+      "spectral_revision": 0.3389694315068674,
+      "predictors": {
+        "h1_proxy": 13.860509487333879,
+        "perturbation_l2": 2.4721648575411734,
+        "boundary_coupling": 53.8551807936895,
+        "n_children": 4.0,
+        "size_ratio": 1.5625,
+        "spectral_gap_parent": 0.0057853109225896905,
+        "perturbation_spread": 1.3484726057229883,
+        "spectral_energy_shift": 546.8720137750048
+      }
+    },
+    {
+      "source_region": 45,
+      "k": 2,
+      "n_parent": 389,
+      "spectral_revision": 0.3849817350129243,
+      "predictors": {
+        "h1_proxy": 7.8900829361679445,
+        "perturbation_l2": 1.8808285923218908,
+        "boundary_coupling": 18.490220553718334,
+        "n_children": 2.0,
+        "size_ratio": 1.0473684210526315,
+        "spectral_gap_parent": 0.015672940745869654,
+        "perturbation_spread": 0.5601017354292349,
+        "spectral_energy_shift": 8.272154240414372
+      }
+    },
+    {
+      "source_region": 45,
+      "k": 3,
+      "n_parent": 389,
+      "spectral_revision": 0.2941157885695242,
+      "predictors": {
+        "h1_proxy": 7.890082936167946,
+        "perturbation_l2": 1.8808285923218908,
+        "boundary_coupling": 35.83124772455711,
+        "n_children": 3.0,
+        "size_ratio": 1.49,
+        "spectral_gap_parent": 0.015672940745869352,
+        "perturbation_spread": 0.8645216952283681,
+        "spectral_energy_shift": 0.687641063057261
+      }
+    },
+    {
+      "source_region": 45,
+      "k": 4,
+      "n_parent": 389,
+      "spectral_revision": 0.4100732701999653,
+      "predictors": {
+        "h1_proxy": 7.890082936167946,
+        "perturbation_l2": 1.8808285923218908,
+        "boundary_coupling": 48.136651194296135,
+        "n_children": 4.0,
+        "size_ratio": 1.4545454545454546,
+        "spectral_gap_parent": 0.015672940745869144,
+        "perturbation_spread": 1.1729625228948963,
+        "spectral_energy_shift": 11.965314153836182
+      }
+    },
+    {
+      "source_region": 46,
+      "k": 2,
+      "n_parent": 200,
+      "spectral_revision": 0.3336419431832484,
+      "predictors": {
+        "h1_proxy": 5.697175621138215,
+        "perturbation_l2": 1.3146077135641454,
+        "boundary_coupling": 15.376227824552616,
+        "n_children": 2.0,
+        "size_ratio": 1.0,
+        "spectral_gap_parent": 0.02552770100715749,
+        "perturbation_spread": 0.2901952723290785,
+        "spectral_energy_shift": 0.3555595718982146
+      }
+    },
+    {
+      "source_region": 46,
+      "k": 3,
+      "n_parent": 200,
+      "spectral_revision": 0.37907064718629385,
+      "predictors": {
+        "h1_proxy": 5.697175621138215,
+        "perturbation_l2": 1.3146077135641454,
+        "boundary_coupling": 19.99991746111733,
+        "n_children": 3.0,
+        "size_ratio": 1.2857142857142858,
+        "spectral_gap_parent": 0.025527701007158416,
+        "perturbation_spread": 0.3597063507894167,
+        "spectral_energy_shift": 2.335256046616031
+      }
+    },
+    {
+      "source_region": 46,
+      "k": 4,
+      "n_parent": 200,
+      "spectral_revision": 0.26987867513090047,
+      "predictors": {
+        "h1_proxy": 5.697175621138216,
+        "perturbation_l2": 1.3146077135641454,
+        "boundary_coupling": 26.277162118829242,
+        "n_children": 4.0,
+        "size_ratio": 1.173913043478261,
+        "spectral_gap_parent": 0.02552770100715893,
+        "perturbation_spread": 0.5428063509950475,
+        "spectral_energy_shift": 0.4240881095492531
+      }
+    },
+    {
+      "source_region": 47,
+      "k": 2,
+      "n_parent": 833,
+      "spectral_revision": 0.43634294845405663,
+      "predictors": {
+        "h1_proxy": 7.1429600112557,
+        "perturbation_l2": 2.8315250085145007,
+        "boundary_coupling": 28.07729227404494,
+        "n_children": 2.0,
+        "size_ratio": 1.9644128113879002,
+        "spectral_gap_parent": 0.008607296785133445,
+        "perturbation_spread": 0.4903183859568957,
+        "spectral_energy_shift": 0.6372423691599204
+      }
+    },
+    {
+      "source_region": 47,
+      "k": 3,
+      "n_parent": 833,
+      "spectral_revision": 0.42048622067032615,
+      "predictors": {
+        "h1_proxy": 7.1429600112557,
+        "perturbation_l2": 2.8315250085145007,
+        "boundary_coupling": 47.94067070035648,
+        "n_children": 3.0,
+        "size_ratio": 1.15625,
+        "spectral_gap_parent": 0.008607296785133304,
+        "perturbation_spread": 1.0474764882602026,
+        "spectral_energy_shift": 0.3239627265758291
+      }
+    },
+    {
+      "source_region": 47,
+      "k": 4,
+      "n_parent": 833,
+      "spectral_revision": 0.4482927998516506,
+      "predictors": {
+        "h1_proxy": 7.1429600112557,
+        "perturbation_l2": 2.8315250085145007,
+        "boundary_coupling": 66.65522991533908,
+        "n_children": 4.0,
+        "size_ratio": 1.6627218934911243,
+        "spectral_gap_parent": 0.00860729678513315,
+        "perturbation_spread": 0.753291910449571,
+        "spectral_energy_shift": 0.5618950166489602
+      }
+    },
+    {
+      "source_region": 48,
+      "k": 2,
+      "n_parent": 319,
+      "spectral_revision": 0.3598854424811073,
+      "predictors": {
+        "h1_proxy": 5.5603247682926105,
+        "perturbation_l2": 1.728784296394329,
+        "boundary_coupling": 15.692633054813337,
+        "n_children": 2.0,
+        "size_ratio": 1.0062893081761006,
+        "spectral_gap_parent": 0.014354351018468218,
+        "perturbation_spread": 0.404999152441993,
+        "spectral_energy_shift": 3.5010610360673464
+      }
+    },
+    {
+      "source_region": 48,
+      "k": 3,
+      "n_parent": 319,
+      "spectral_revision": 0.24114057136493636,
+      "predictors": {
+        "h1_proxy": 5.56032476829261,
+        "perturbation_l2": 1.7287842963943292,
+        "boundary_coupling": 27.736910551891718,
+        "n_children": 3.0,
+        "size_ratio": 1.4269662921348314,
+        "spectral_gap_parent": 0.014354351018467734,
+        "perturbation_spread": 0.8568158729826195,
+        "spectral_energy_shift": 2.058580327502544
+      }
+    },
+    {
+      "source_region": 48,
+      "k": 4,
+      "n_parent": 319,
+      "spectral_revision": 0.39663461181079,
+      "predictors": {
+        "h1_proxy": 5.56032476829261,
+        "perturbation_l2": 1.7287842963943292,
+        "boundary_coupling": 34.99697374503252,
+        "n_children": 4.0,
+        "size_ratio": 1.2428571428571429,
+        "spectral_gap_parent": 0.014354351018468173,
+        "perturbation_spread": 1.0877498532888101,
+        "spectral_energy_shift": 0.025029966068967877
+      }
+    },
+    {
+      "source_region": 49,
+      "k": 2,
+      "n_parent": 418,
+      "spectral_revision": 0.32197900376870736,
+      "predictors": {
+        "h1_proxy": 9.133903576585153,
+        "perturbation_l2": 1.9543178559033756,
+        "boundary_coupling": 16.47866679225925,
+        "n_children": 2.0,
+        "size_ratio": 1.0796019900497513,
+        "spectral_gap_parent": 0.011760103870344308,
+        "perturbation_spread": 0.6719975918053611,
+        "spectral_energy_shift": 3.892066830458023
+      }
+    },
+    {
+      "source_region": 49,
+      "k": 3,
+      "n_parent": 418,
+      "spectral_revision": 0.32993467639000107,
+      "predictors": {
+        "h1_proxy": 9.133903576585153,
+        "perturbation_l2": 1.9543178559033756,
+        "boundary_coupling": 33.40302385579953,
+        "n_children": 3.0,
+        "size_ratio": 1.0291970802919708,
+        "spectral_gap_parent": 0.011760103870344632,
+        "perturbation_spread": 0.9885197691279872,
+        "spectral_energy_shift": 10.217601644395288
+      }
+    },
+    {
+      "source_region": 49,
+      "k": 4,
+      "n_parent": 418,
+      "spectral_revision": 0.30102106381433497,
+      "predictors": {
+        "h1_proxy": 9.133903576585153,
+        "perturbation_l2": 1.9543178559033756,
+        "boundary_coupling": 48.67364294374979,
+        "n_children": 4.0,
+        "size_ratio": 1.705128205128205,
+        "spectral_gap_parent": 0.0117601038703449,
+        "perturbation_spread": 1.0896295962361844,
+        "spectral_energy_shift": 3.677257167889894
+      }
+    },
+    {
+      "source_region": 50,
+      "k": 2,
+      "n_parent": 221,
+      "spectral_revision": 0.28612606494706555,
+      "predictors": {
+        "h1_proxy": 5.677225110574199,
+        "perturbation_l2": 1.427723451760113,
+        "boundary_coupling": 9.858148081145996,
+        "n_children": 2.0,
+        "size_ratio": 1.2783505154639174,
+        "spectral_gap_parent": 0.016431400196753213,
+        "perturbation_spread": 0.5883539631673934,
+        "spectral_energy_shift": 6.0551444481698065
+      }
+    },
+    {
+      "source_region": 50,
+      "k": 3,
+      "n_parent": 221,
+      "spectral_revision": 0.4523272455333254,
+      "predictors": {
+        "h1_proxy": 5.6772251105741995,
+        "perturbation_l2": 1.427723451760113,
+        "boundary_coupling": 26.36837380772971,
+        "n_children": 3.0,
+        "size_ratio": 1.0845070422535212,
+        "spectral_gap_parent": 0.016431400196753043,
+        "perturbation_spread": 1.0359983689533636,
+        "spectral_energy_shift": 22.363068709676764
+      }
+    },
+    {
+      "source_region": 50,
+      "k": 4,
+      "n_parent": 221,
+      "spectral_revision": 0.2004710450856343,
+      "predictors": {
+        "h1_proxy": 5.6772251105741995,
+        "perturbation_l2": 1.427723451760113,
+        "boundary_coupling": 29.69961173109697,
+        "n_children": 4.0,
+        "size_ratio": 1.5,
+        "spectral_gap_parent": 0.016431400196753005,
+        "perturbation_spread": 1.2033293546909904,
+        "spectral_energy_shift": 10.430181243352363
+      }
+    },
+    {
+      "source_region": 52,
+      "k": 2,
+      "n_parent": 530,
+      "spectral_revision": 0.3998687457204442,
+      "predictors": {
+        "h1_proxy": 7.0195365351399674,
+        "perturbation_l2": 2.24628823842658,
+        "boundary_coupling": 21.18997602118779,
+        "n_children": 2.0,
+        "size_ratio": 1.3981900452488687,
+        "spectral_gap_parent": 0.008828641146460887,
+        "perturbation_spread": 0.2790826532351516,
+        "spectral_energy_shift": 0.6732286693082347
+      }
+    },
+    {
+      "source_region": 52,
+      "k": 3,
+      "n_parent": 530,
+      "spectral_revision": 0.4137320609823502,
+      "predictors": {
+        "h1_proxy": 7.0195365351399674,
+        "perturbation_l2": 2.2462882384265797,
+        "boundary_coupling": 21.18997602118779,
+        "n_children": 2.0,
+        "size_ratio": 1.3981900452488687,
+        "spectral_gap_parent": 0.008828641146460741,
+        "perturbation_spread": 0.28934224127487895,
+        "spectral_energy_shift": 0.22078415718417935
+      }
+    },
+    {
+      "source_region": 52,
+      "k": 4,
+      "n_parent": 530,
+      "spectral_revision": 0.26349177772177185,
+      "predictors": {
+        "h1_proxy": 7.0195365351399674,
+        "perturbation_l2": 2.24628823842658,
+        "boundary_coupling": 52.49404286829788,
+        "n_children": 4.0,
+        "size_ratio": 1.5727272727272728,
+        "spectral_gap_parent": 0.008828641146461076,
+        "perturbation_spread": 0.622875373613049,
+        "spectral_energy_shift": 0.010678037198674018
+      }
+    },
+    {
+      "source_region": 53,
+      "k": 2,
+      "n_parent": 319,
+      "spectral_revision": 0.21723177014692188,
+      "predictors": {
+        "h1_proxy": 11.149259525805697,
+        "perturbation_l2": 1.7287842963943285,
+        "boundary_coupling": 11.936156396618978,
+        "n_children": 2.0,
+        "size_ratio": 12.291666666666666,
+        "spectral_gap_parent": 0.009495321330939268,
+        "perturbation_spread": 0.23378101835175003,
+        "spectral_energy_shift": 83.07632672321053
+      }
+    },
+    {
+      "source_region": 53,
+      "k": 3,
+      "n_parent": 319,
+      "spectral_revision": 0.38908261959816504,
+      "predictors": {
+        "h1_proxy": 11.149259525805695,
+        "perturbation_l2": 1.7287842963943292,
+        "boundary_coupling": 21.836712091410412,
+        "n_children": 3.0,
+        "size_ratio": 6.541666666666667,
+        "spectral_gap_parent": 0.009495321330939362,
+        "perturbation_spread": 0.9795299066273007,
+        "spectral_energy_shift": 113.75838150366701
+      }
+    },
+    {
+      "source_region": 53,
+      "k": 4,
+      "n_parent": 319,
+      "spectral_revision": 0.34495411102895546,
+      "predictors": {
+        "h1_proxy": 11.149259525805697,
+        "perturbation_l2": 1.728784296394329,
+        "boundary_coupling": 32.40725524186709,
+        "n_children": 4.0,
+        "size_ratio": 4.75,
+        "spectral_gap_parent": 0.009495321330938285,
+        "perturbation_spread": 1.2646045637398986,
+        "spectral_energy_shift": 14.831910089898244
+      }
+    },
+    {
+      "source_region": 54,
+      "k": 2,
+      "n_parent": 288,
+      "spectral_revision": 0.236991811062154,
+      "predictors": {
+        "h1_proxy": 8.789482998275117,
+        "perturbation_l2": 1.6889080481325276,
+        "boundary_coupling": 17.44463226034949,
+        "n_children": 2.0,
+        "size_ratio": 1.1984732824427482,
+        "spectral_gap_parent": 0.020533130816167443,
+        "perturbation_spread": 0.541377628628227,
+        "spectral_energy_shift": 5.304574818206548
+      }
+    },
+    {
+      "source_region": 54,
+      "k": 3,
+      "n_parent": 288,
+      "spectral_revision": 0.3331040538457738,
+      "predictors": {
+        "h1_proxy": 8.789482998275117,
+        "perturbation_l2": 1.6889080481325278,
+        "boundary_coupling": 27.047013736200846,
+        "n_children": 3.0,
+        "size_ratio": 1.2790697674418605,
+        "spectral_gap_parent": 0.02053313081616707,
+        "perturbation_spread": 0.7714659964902997,
+        "spectral_energy_shift": 0.43722302515900197
+      }
+    },
+    {
+      "source_region": 54,
+      "k": 4,
+      "n_parent": 288,
+      "spectral_revision": 0.4341652056015877,
+      "predictors": {
+        "h1_proxy": 8.789482998275117,
+        "perturbation_l2": 1.6889080481325276,
+        "boundary_coupling": 36.13062611583592,
+        "n_children": 4.0,
+        "size_ratio": 1.4166666666666667,
+        "spectral_gap_parent": 0.02053313081616699,
+        "perturbation_spread": 1.0723997638921359,
+        "spectral_energy_shift": 4.851472095344215
+      }
+    },
+    {
+      "source_region": 55,
+      "k": 2,
+      "n_parent": 345,
+      "spectral_revision": 0.2455314386076723,
+      "predictors": {
+        "h1_proxy": 10.099054019696435,
+        "perturbation_l2": 1.7729229924005456,
+        "boundary_coupling": 11.876437202180087,
+        "n_children": 2.0,
+        "size_ratio": 1.1296296296296295,
+        "spectral_gap_parent": 0.009517420440013018,
+        "perturbation_spread": 0.6789681743158806,
+        "spectral_energy_shift": 1.405365092490554
+      }
+    },
+    {
+      "source_region": 55,
+      "k": 3,
+      "n_parent": 345,
+      "spectral_revision": 0.2637335015504931,
+      "predictors": {
+        "h1_proxy": 10.099054019696435,
+        "perturbation_l2": 1.7729229924005456,
+        "boundary_coupling": 24.507509220663188,
+        "n_children": 3.0,
+        "size_ratio": 1.0353982300884956,
+        "spectral_gap_parent": 0.0095174204400125,
+        "perturbation_spread": 0.9775553589600493,
+        "spectral_energy_shift": 0.2763366527763849
+      }
+    },
+    {
+      "source_region": 55,
+      "k": 4,
+      "n_parent": 345,
+      "spectral_revision": 0.24701784206160107,
+      "predictors": {
+        "h1_proxy": 10.099054019696435,
+        "perturbation_l2": 1.7729229924005458,
+        "boundary_coupling": 39.090169088145636,
+        "n_children": 4.0,
+        "size_ratio": 1.3205128205128205,
+        "spectral_gap_parent": 0.009517420440014074,
+        "perturbation_spread": 1.2604282393861581,
+        "spectral_energy_shift": 4.460775384885184
+      }
+    },
+    {
+      "source_region": 60,
+      "k": 2,
+      "n_parent": 372,
+      "spectral_revision": 0.39349512704549683,
+      "predictors": {
+        "h1_proxy": 8.554492537402053,
+        "perturbation_l2": 1.8118130904781997,
+        "boundary_coupling": 19.818007982197994,
+        "n_children": 2.0,
+        "size_ratio": 1.8615384615384616,
+        "spectral_gap_parent": 0.019085646863740473,
+        "perturbation_spread": 0.46262850672845923,
+        "spectral_energy_shift": 8.16248664462846
+      }
+    },
+    {
+      "source_region": 60,
+      "k": 3,
+      "n_parent": 372,
+      "spectral_revision": 0.30733882925974115,
+      "predictors": {
+        "h1_proxy": 8.554492537402055,
+        "perturbation_l2": 1.8118130904782,
+        "boundary_coupling": 38.457943798931844,
+        "n_children": 3.0,
+        "size_ratio": 1.1304347826086956,
+        "spectral_gap_parent": 0.019085646863740417,
+        "perturbation_spread": 1.0098959899700894,
+        "spectral_energy_shift": 2.7657159919399694
+      }
+    },
+    {
+      "source_region": 60,
+      "k": 4,
+      "n_parent": 372,
+      "spectral_revision": 0.39345288298305153,
+      "predictors": {
+        "h1_proxy": 8.554492537402055,
+        "perturbation_l2": 1.8118130904782,
+        "boundary_coupling": 40.959539460369236,
+        "n_children": 4.0,
+        "size_ratio": 2.540983606557377,
+        "spectral_gap_parent": 0.019085646863740115,
+        "perturbation_spread": 0.9294363487932444,
+        "spectral_energy_shift": 9.572900403084242
+      }
+    }
+  ]
+}

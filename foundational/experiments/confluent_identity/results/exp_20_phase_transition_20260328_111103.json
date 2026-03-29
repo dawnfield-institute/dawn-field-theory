@@ -1,0 +1,1278 @@
+{
+  "experiment": "exp_20_spectral_phase_transition",
+  "timestamp": "2026-03-28T11:11:03.021954",
+  "purpose": "Does lambda_2 -> 0 fragment identity? Phase transition test.",
+  "n_regions": 15,
+  "alpha_values": [
+    0.01,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.9,
+    1.0
+  ],
+  "summary": {
+    "n_monotonic": 15,
+    "n_peaks": 8,
+    "frac_peaks": 0.5333333333333332,
+    "rho_alpha_crit_fiedler": -0.09926846128175762,
+    "p_alpha_crit_fiedler": 0.7248515525147345
+  },
+  "verification": {
+    "test1_monotonic": true,
+    "test2_susceptibility_peaks": false,
+    "test3_crit_fiedler_correlation": false,
+    "test4_projection_condition": true,
+    "n_verified": 2
+  },
+  "per_region": [
+    {
+      "region_id": 6,
+      "n_cells": 1018,
+      "fiedler_original": 0.0035497940220795723,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.2,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 17.613013044209602,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 3.549794022079709e-05,
+          "identity_shift": 1.6295117637971563,
+          "idempotency_error": 8.808742521715611e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.00017748970110399593,
+          "identity_shift": 1.9258135823293598,
+          "idempotency_error": 1.7244923178113895e-16,
+          "projection_trace": 0.9999999999999999,
+          "susceptibility": 7.407545463304902
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0003549794022079823,
+          "identity_shift": 1.8105920935450894,
+          "idempotency_error": 1.7244923178113895e-16,
+          "projection_trace": 0.9999999999999999,
+          "susceptibility": 2.304429775685362
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.0007099588044160024,
+          "identity_shift": 0.049290789124111695,
+          "idempotency_error": 1.7244923178113895e-16,
+          "projection_trace": 0.9999999999999999,
+          "susceptibility": 17.613013044209602
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.0010649382066239923,
+          "identity_shift": 0.5030546697146406,
+          "idempotency_error": 6.005954350646091e-16,
+          "projection_trace": 0.9999999999999994,
+          "susceptibility": 4.537638805905245
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.0017748970110399648,
+          "identity_shift": 1.1571904568727214,
+          "idempotency_error": 3.733934356736037e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 3.270678935790387
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.002484855815456124,
+          "identity_shift": 1.9388053145870514,
+          "idempotency_error": 2.0774026605664753e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 3.9080742885716315
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.00319481461987161,
+          "identity_shift": 1.6186722161468021,
+          "idempotency_error": 4.069296021687775e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 1.600665492201238
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.003549794022079879,
+          "identity_shift": 0.820700302584653,
+          "idempotency_error": 3.733934356736037e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 7.979719135621413
+        }
+      ]
+    },
+    {
+      "region_id": 29,
+      "n_cells": 332,
+      "fiedler_original": 0.006939112497738142,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.1,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 14.115933374292979,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 6.939112497738253e-05,
+          "identity_shift": 1.7808763012133333,
+          "idempotency_error": 5.68560415854049e-16,
+          "projection_trace": 0.9999999999999994,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.00034695562488691085,
+          "identity_shift": 1.9292484971224917,
+          "idempotency_error": 4.1743490168188563e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 3.709304897728867
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0006939112497737985,
+          "identity_shift": 1.2234518284078286,
+          "idempotency_error": 4.1743490168188563e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 14.115933374292979
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.001387822499547692,
+          "identity_shift": 1.8530143090033,
+          "idempotency_error": 4.1743490168188563e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 6.295624805954651
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.0020817337493211968,
+          "identity_shift": 1.306615205191855,
+          "idempotency_error": 2.668001040346757e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 5.463991038114397
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.0034695562488692433,
+          "identity_shift": 1.8013022902734057,
+          "idempotency_error": 1.7630180822922622e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 2.4734354254077413
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.004857378748416525,
+          "identity_shift": 1.5634299101694389,
+          "idempotency_error": 1.7302181865666932e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 1.1893619005198284
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.006245201247964865,
+          "identity_shift": 1.8549555518003957,
+          "idempotency_error": 9.018166087075003e-16,
+          "projection_trace": 0.9999999999999992,
+          "susceptibility": 1.4576282081547765
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.006939112497738619,
+          "identity_shift": 1.4634450004257566,
+          "idempotency_error": 1.7630180822922622e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 3.9151055137463526
+        }
+      ]
+    },
+    {
+      "region_id": 41,
+      "n_cells": 233,
+      "fiedler_original": 0.00874850126161063,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.05,
+      "has_susceptibility_peak": 0,
+      "peak_susceptibility": 29.433196196577246,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 8.748501261611421e-05,
+          "identity_shift": 1.808428847857983,
+          "idempotency_error": 3.496511495531297e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0004374250630805825,
+          "identity_shift": 0.6311009999948638,
+          "idempotency_error": 4.938122787716518e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 29.433196196577246
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0008748501261611189,
+          "identity_shift": 1.9248722981780475,
+          "idempotency_error": 4.938122787716518e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 25.875425963663155
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.0017497002523222012,
+          "identity_shift": 1.8553246216719095,
+          "idempotency_error": 4.938122787716518e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 0.6954767650613732
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.0026245503784833434,
+          "identity_shift": 1.3937316363985262,
+          "idempotency_error": 1.0980015112675029e-15,
+          "projection_trace": 0.9999999999999989,
+          "susceptibility": 4.615929852733788
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.004374250630805725,
+          "identity_shift": 1.905346668969795,
+          "idempotency_error": 9.62676583538506e-16,
+          "projection_trace": 0.999999999999999,
+          "susceptibility": 2.5580751628563316
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.006123950883127607,
+          "identity_shift": 1.5697705263414967,
+          "idempotency_error": 3.329121467474936e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 1.677880713141484
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.007873651135450624,
+          "identity_shift": 1.5475743199664436,
+          "idempotency_error": 7.889202155481256e-16,
+          "projection_trace": 0.9999999999999992,
+          "susceptibility": 0.11098103187526516
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.008748501261611363,
+          "identity_shift": 1.6910407385789745,
+          "idempotency_error": 9.62676583538506e-16,
+          "projection_trace": 0.999999999999999,
+          "susceptibility": 1.4346641861252956
+        }
+      ]
+    },
+    {
+      "region_id": 53,
+      "n_cells": 319,
+      "fiedler_original": 0.009495321330938111,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.2,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 5.8719285225860975,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 9.495321330938559e-05,
+          "identity_shift": 1.4264555068020734,
+          "idempotency_error": 9.123575647294047e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.00047476606654692254,
+          "identity_shift": 1.5951640413754742,
+          "idempotency_error": 4.3017819520868487e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 4.217713364334913
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.000949532133093919,
+          "identity_shift": 1.6308211457352515,
+          "idempotency_error": 4.3017819520868487e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.713142087195532
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.0018990642661875525,
+          "identity_shift": 1.0436282934766359,
+          "idempotency_error": 4.3017819520868487e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 5.8719285225860975
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.002848596399281498,
+          "identity_shift": 1.3114994835904301,
+          "idempotency_error": 3.03200932122505e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 2.678711901137916
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.004747660665469357,
+          "identity_shift": 1.7869468381271072,
+          "idempotency_error": 1.0981672239676136e-15,
+          "projection_trace": 1.000000000000001,
+          "susceptibility": 2.377236772683373
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.006646724931656671,
+          "identity_shift": 1.13141832913623,
+          "idempotency_error": 5.141072234855456e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 3.27764254495437
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.008545789197844747,
+          "identity_shift": 1.2888666980432784,
+          "idempotency_error": 4.480120690862837e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 0.7872418445352372
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.009495321330939336,
+          "identity_shift": 1.372556846576441,
+          "idempotency_error": 1.0981672239676136e-15,
+          "projection_trace": 1.000000000000001,
+          "susceptibility": 0.8369014853316188
+        }
+      ]
+    },
+    {
+      "region_id": 34,
+      "n_cells": 301,
+      "fiedler_original": 0.010232433646886658,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.05,
+      "has_susceptibility_peak": 0,
+      "peak_susceptibility": 15.493910647237263,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.00010232433646886966,
+          "identity_shift": 1.229994727482257,
+          "idempotency_error": 4.761561176853654e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0005116216823443273,
+          "identity_shift": 0.6102383015927509,
+          "idempotency_error": 5.504093685285321e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 15.493910647237263
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0010232433646886595,
+          "identity_shift": 1.2726858790502285,
+          "idempotency_error": 5.504093685285321e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 13.248951549149284
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.002046486729377438,
+          "identity_shift": 1.1703815193937825,
+          "idempotency_error": 5.504093685285321e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 1.0230435965644489
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.0030697300940659214,
+          "identity_shift": 1.862250559962622,
+          "idempotency_error": 9.263765467882279e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 6.918690405688327
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.005116216823443354,
+          "identity_shift": 1.7481769820451933,
+          "idempotency_error": 9.470109710163842e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 0.5703678895871405
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.0071627035528207105,
+          "identity_shift": 1.5636213167399755,
+          "idempotency_error": 6.823824807571915e-16,
+          "projection_trace": 0.9999999999999992,
+          "susceptibility": 0.9227783265260847
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.009209190282198007,
+          "identity_shift": 1.6494286929633584,
+          "idempotency_error": 4.769103550087944e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 0.429036881116912
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.010232433646886524,
+          "identity_shift": 1.796881454242334,
+          "idempotency_error": 9.470109710163842e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 1.474527612789741
+        }
+      ]
+    },
+    {
+      "region_id": 14,
+      "n_cells": 573,
+      "fiedler_original": 0.011114619576084008,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.05,
+      "has_susceptibility_peak": 0,
+      "peak_susceptibility": 23.58267360115187,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.00011114619576084346,
+          "identity_shift": 0.8433666431716997,
+          "idempotency_error": 4.998229870297178e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0005557309788041827,
+          "identity_shift": 1.7866735872177981,
+          "idempotency_error": 7.338564946395908e-16,
+          "projection_trace": 0.9999999999999994,
+          "susceptibility": 23.58267360115187
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0011114619576083986,
+          "identity_shift": 1.6312223536734944,
+          "idempotency_error": 7.338564946395908e-16,
+          "projection_trace": 0.9999999999999994,
+          "susceptibility": 3.1090246708860114
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.002222923915216785,
+          "identity_shift": 1.073505004490299,
+          "idempotency_error": 7.338564946395908e-16,
+          "projection_trace": 0.9999999999999994,
+          "susceptibility": 5.577173491831899
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.0033343858728252947,
+          "identity_shift": 1.0984696594304248,
+          "idempotency_error": 1.3532893211419e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 0.24964654940125652
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.005557309788041677,
+          "identity_shift": 1.0376146311335328,
+          "idempotency_error": 7.061779545795013e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 0.30427514148445867
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.0077802337032587794,
+          "identity_shift": 1.591946835660213,
+          "idempotency_error": 5.145306418541887e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 2.7716610226333884
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.010003157618475868,
+          "identity_shift": 1.3742860220092201,
+          "idempotency_error": 1.6171863075913243e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 1.0883040682549592
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.011114619576084436,
+          "identity_shift": 1.7552362461642368,
+          "idempotency_error": 7.061779545795013e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 3.8095022415501294
+        }
+      ]
+    },
+    {
+      "region_id": 56,
+      "n_cells": 193,
+      "fiedler_original": 0.011948387134104522,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.2,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 9.810445619150023,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.00011948387134104009,
+          "identity_shift": 1.5583417405742395,
+          "idempotency_error": 6.030965193834657e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0005974193567052195,
+          "identity_shift": 1.8195036707378767,
+          "idempotency_error": 4.763877256909143e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 6.529048254090767
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0011948387134104225,
+          "identity_shift": 1.9068688004668872,
+          "idempotency_error": 4.763877256909143e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 1.7473025945801761
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.002389677426820773,
+          "identity_shift": 0.9258242385518751,
+          "idempotency_error": 4.763877256909143e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 9.810445619150023
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.0035845161402314235,
+          "identity_shift": 1.1111255861907054,
+          "idempotency_error": 5.561006431750917e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 1.853013476388285
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.005974193567052322,
+          "identity_shift": 0.837945213962307,
+          "idempotency_error": 1.7362190302949357e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 1.365901861141985
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.008363870993873432,
+          "identity_shift": 1.818931226051789,
+          "idempotency_error": 5.835713938172527e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 4.904930060447386
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.010753548420693851,
+          "identity_shift": 1.7619987799938612,
+          "idempotency_error": 3.4830811097174487e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 0.28466223028963694
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.01194838713410398,
+          "identity_shift": 1.9626499116778104,
+          "idempotency_error": 1.7362190302949357e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 2.0065113168394726
+        }
+      ]
+    },
+    {
+      "region_id": 35,
+      "n_cells": 225,
+      "fiedler_original": 0.013128222688878213,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.2,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 17.03085637129912,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.0001312822268887764,
+          "identity_shift": 1.3226658668975202,
+          "idempotency_error": 7.983243801149295e-16,
+          "projection_trace": 1.0000000000000007,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0006564111344438986,
+          "identity_shift": 0.7104650476428579,
+          "idempotency_error": 1.1548549413357945e-15,
+          "projection_trace": 1.000000000000001,
+          "susceptibility": 15.305020481366174
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.001312822268887859,
+          "identity_shift": 0.172605571613119,
+          "idempotency_error": 1.1548549413357945e-15,
+          "projection_trace": 1.000000000000001,
+          "susceptibility": 10.757189520594562
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.0026256445377756442,
+          "identity_shift": 1.875691208743048,
+          "idempotency_error": 1.1548549413357945e-15,
+          "projection_trace": 1.000000000000001,
+          "susceptibility": 17.03085637129912
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.003938466806663538,
+          "identity_shift": 1.8642082467348966,
+          "idempotency_error": 5.245746139016777e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.11482962008151242
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.006564111344439428,
+          "identity_shift": 1.511037656537197,
+          "idempotency_error": 9.04549346192769e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 1.765852950988489
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.009189755882215116,
+          "identity_shift": 1.5116691945106735,
+          "idempotency_error": 1.484723413872616e-15,
+          "projection_trace": 1.0000000000000013,
+          "susceptibility": 0.003157689867382392
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.011815400419990357,
+          "identity_shift": 1.6359465800682058,
+          "idempotency_error": 8.462077310983604e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 0.6213869277876582
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.013128222688878652,
+          "identity_shift": 1.5135956918518931,
+          "idempotency_error": 9.04549346192769e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 1.2235088821631148
+        }
+      ]
+    },
+    {
+      "region_id": 11,
+      "n_cells": 331,
+      "fiedler_original": 0.014717758930362803,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.1,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 9.330697181478337,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.00014717758930362932,
+          "identity_shift": 1.6763551958722613,
+          "idempotency_error": 6.084111368716216e-16,
+          "projection_trace": 0.9999999999999994,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0007358879465181715,
+          "identity_shift": 1.698365321217962,
+          "idempotency_error": 9.658843109417035e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 0.5502531336425005
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0014717758930362947,
+          "identity_shift": 1.2318304621440357,
+          "idempotency_error": 9.658843109417035e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 9.330697181478337
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.0029435517860725577,
+          "identity_shift": 1.3783247292823206,
+          "idempotency_error": 9.658843109417035e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 1.4649426713828348
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.004415327679108993,
+          "identity_shift": 0.8469036849516444,
+          "idempotency_error": 9.09802618182881e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 5.3142104433067106
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.007358879465181659,
+          "identity_shift": 1.3163426367359394,
+          "idempotency_error": 4.1413003439679557e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 2.3471947589214635
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.010302431251254449,
+          "identity_shift": 1.4484725210097245,
+          "idempotency_error": 3.303558148427217e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.660649421368922
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.013245983037326832,
+          "identity_shift": 1.6058738505968766,
+          "idempotency_error": 4.623800806963154e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 0.7870066479357565
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.014717758930363098,
+          "identity_shift": 0.9072251984928755,
+          "idempotency_error": 4.1413003439679557e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 6.986486521039942
+        }
+      ]
+    },
+    {
+      "region_id": 45,
+      "n_cells": 389,
+      "fiedler_original": 0.015672940745870112,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.05,
+      "has_susceptibility_peak": 0,
+      "peak_susceptibility": 14.992150290755477,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.0001567294074586974,
+          "identity_shift": 1.0124846360177806,
+          "idempotency_error": 2.1325327947612967e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0007836470372934541,
+          "identity_shift": 1.6121706476480147,
+          "idempotency_error": 3.3419831580751105e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 14.992150290755477
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.001567294074586973,
+          "identity_shift": 1.4469538967153845,
+          "idempotency_error": 3.3419831580751105e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 3.304335018652536
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.0031345881491739087,
+          "identity_shift": 1.2386761519093341,
+          "idempotency_error": 3.3419831580751105e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 2.0827774480604835
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.0047018822237609266,
+          "identity_shift": 1.4835814039941502,
+          "idempotency_error": 5.232400572111772e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 2.4490525208481366
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.007836470372934643,
+          "identity_shift": 1.1071532856846802,
+          "idempotency_error": 3.824246493625124e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 1.8821405915473404
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.010971058522109172,
+          "identity_shift": 1.385768826645258,
+          "idempotency_error": 3.0673656475255835e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 1.393077704802882
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.014105646671283,
+          "identity_shift": 1.511817214435053,
+          "idempotency_error": 4.3049702325830003e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 0.6302419389489722
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.015672940745869723,
+          "identity_shift": 1.558576309446589,
+          "idempotency_error": 3.824246493625124e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 0.4675909501153551
+        }
+      ]
+    },
+    {
+      "region_id": 60,
+      "n_cells": 372,
+      "fiedler_original": 0.019085646863740747,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.05,
+      "has_susceptibility_peak": 0,
+      "peak_susceptibility": 18.21799762106375,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.000190856468637403,
+          "identity_shift": 1.6711494345789935,
+          "idempotency_error": 5.347849608661603e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.000954282343187033,
+          "identity_shift": 0.9424295297364254,
+          "idempotency_error": 7.214015006989761e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 18.21799762106375
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0019085646863740294,
+          "identity_shift": 0.2876871119278663,
+          "idempotency_error": 7.214015006989761e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 13.094848356170917
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.003817129372748119,
+          "identity_shift": 1.804683712709793,
+          "idempotency_error": 7.214015006989761e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 15.169966007819115
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.005725694059121938,
+          "identity_shift": 1.6255061112182534,
+          "idempotency_error": 2.24719516627135e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 1.7917760149153785
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.009542823431869749,
+          "identity_shift": 0.5588973419498535,
+          "idempotency_error": 3.5160153237847786e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 5.3330438463419725
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.013359952804618472,
+          "identity_shift": 1.8188839988173076,
+          "idempotency_error": 2.7250692072314556e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 6.29993328433724
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.017177082177366545,
+          "identity_shift": 1.6371034779472728,
+          "idempotency_error": 9.022362296553083e-16,
+          "projection_trace": 1.0000000000000009,
+          "susceptibility": 0.9089026043501687
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.019085646863740185,
+          "identity_shift": 1.8268946620690425,
+          "idempotency_error": 3.5160153237847786e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 1.8979118412176779
+        }
+      ]
+    },
+    {
+      "region_id": 4,
+      "n_cells": 166,
+      "fiedler_original": 0.02491601002204951,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.05,
+      "has_susceptibility_peak": 0,
+      "peak_susceptibility": 17.556923847032845,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.00024916010022049895,
+          "identity_shift": 1.0408221225715504,
+          "idempotency_error": 8.721963823525543e-16,
+          "projection_trace": 0.9999999999999992,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.00124580050110243,
+          "identity_shift": 1.7430990764528818,
+          "idempotency_error": 7.915154675866657e-16,
+          "projection_trace": 0.9999999999999992,
+          "susceptibility": 17.556923847032845
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.002491601002204872,
+          "identity_shift": 1.8689797554023242,
+          "idempotency_error": 7.915154675866657e-16,
+          "projection_trace": 0.9999999999999992,
+          "susceptibility": 2.517613578988798
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.00498320200440991,
+          "identity_shift": 1.5494286978088272,
+          "idempotency_error": 7.915154675866657e-16,
+          "projection_trace": 0.9999999999999992,
+          "susceptibility": 3.195510575934938
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.007474803006614589,
+          "identity_shift": 1.7413444294609786,
+          "idempotency_error": 3.2887081461424002e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 1.919157316521495
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.012458005011024715,
+          "identity_shift": 1.0453783905515985,
+          "idempotency_error": 5.203107801313842e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 3.4798301945468824
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.017441207015434262,
+          "identity_shift": 1.551377484727549,
+          "idempotency_error": 2.94911919504668e-16,
+          "projection_trace": 1.0000000000000002,
+          "susceptibility": 2.52999547087974
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.022424409019845073,
+          "identity_shift": 1.716261390663183,
+          "idempotency_error": 9.94011688822559e-16,
+          "projection_trace": 0.9999999999999991,
+          "susceptibility": 0.8244195296781653
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.024916010022049403,
+          "identity_shift": 1.5932304044909875,
+          "idempotency_error": 5.203107801313842e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 1.2303098617219423
+        }
+      ]
+    },
+    {
+      "region_id": 39,
+      "n_cells": 266,
+      "fiedler_original": 0.02838496993980223,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.05,
+      "has_susceptibility_peak": 0,
+      "peak_susceptibility": 13.350230330887701,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.00028384969939802444,
+          "identity_shift": 1.4187334456620282,
+          "idempotency_error": 3.7533544636275794e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.0014192484969901484,
+          "identity_shift": 1.9527426588975496,
+          "idempotency_error": 4.460712906095428e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 13.350230330887701
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.0028384969939802577,
+          "identity_shift": 1.4223477604678514,
+          "idempotency_error": 4.460712906095428e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 10.607897968593752
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.005676993987960264,
+          "identity_shift": 1.2878274962674479,
+          "idempotency_error": 4.460712906095428e-16,
+          "projection_trace": 0.9999999999999997,
+          "susceptibility": 1.3452026420040217
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.00851549098194049,
+          "identity_shift": 1.9192583481217877,
+          "idempotency_error": 2.382562334849379e-16,
+          "projection_trace": 0.9999999999999999,
+          "susceptibility": 6.314308518543338
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.014192484969901737,
+          "identity_shift": 1.9731977081334127,
+          "idempotency_error": 4.3916821195716393e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.2696968000581232
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.019869478957861696,
+          "identity_shift": 1.485186973266022,
+          "idempotency_error": 3.8006505733419636e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 2.440053674336942
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.0255464729458227,
+          "identity_shift": 1.5999729562223965,
+          "idempotency_error": 4.667854887128975e-16,
+          "projection_trace": 0.9999999999999994,
+          "susceptibility": 0.5739299147818702
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.028384969939802794,
+          "identity_shift": 0.3886430188987445,
+          "idempotency_error": 4.3916821195716393e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 12.113299373236403
+        }
+      ]
+    },
+    {
+      "region_id": 37,
+      "n_cells": 27,
+      "fiedler_original": 0.037984776402306665,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.3,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 1.3429885758743972e-13,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.0003798477640230712,
+          "identity_shift": 1.1344489199656314e-14,
+          "idempotency_error": 1.852827602846592e-16,
+          "projection_trace": 1.0000000000000002,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.00189923882011534,
+          "identity_shift": 1.603837294045017e-14,
+          "idempotency_error": 5.250225931237847e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 1.173470935198435e-13
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.00379847764023068,
+          "identity_shift": 1.603837294045017e-14,
+          "idempotency_error": 5.250225931237847e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.00759695528046136,
+          "identity_shift": 1.603837294045017e-14,
+          "idempotency_error": 5.250225931237847e-16,
+          "projection_trace": 1.0000000000000004,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.011395432920692101,
+          "identity_shift": 2.6084871817060675e-15,
+          "idempotency_error": 1.5359896425023066e-16,
+          "projection_trace": 1.0,
+          "susceptibility": 1.3429885758743972e-13
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.018992388201153333,
+          "identity_shift": 0.0,
+          "idempotency_error": 4.713853703008583e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 1.3042435908530272e-14
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.026589343481615176,
+          "identity_shift": 1.0862784581877026e-14,
+          "idempotency_error": 8.046723850754347e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 5.431392290938487e-14
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.03418629876207591,
+          "identity_shift": 3.786255447460443e-15,
+          "idempotency_error": 3.034923386023436e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 3.538264567208273e-14
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.037984776402306665,
+          "identity_shift": 0.0,
+          "idempotency_error": 4.713853703008583e-16,
+          "projection_trace": 0.9999999999999996,
+          "susceptibility": 3.786255447460406e-14
+        }
+      ]
+    },
+    {
+      "region_id": 2,
+      "n_cells": 182,
+      "fiedler_original": 0.04803952582886134,
+      "monotonic_lambda2": true,
+      "alpha_crit": 0.1,
+      "has_susceptibility_peak": 1,
+      "peak_susceptibility": 9.758211414688367,
+      "alpha_data": [
+        {
+          "alpha": 0.01,
+          "lambda2": 0.0004803952582886171,
+          "identity_shift": 1.3608690760067756,
+          "idempotency_error": 3.860987489105135e-16,
+          "projection_trace": 0.9999999999999998,
+          "susceptibility": 0.0
+        },
+        {
+          "alpha": 0.05,
+          "lambda2": 0.002401976291443098,
+          "identity_shift": 1.424068989130553,
+          "idempotency_error": 6.531556404038672e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 1.579997828094392
+        },
+        {
+          "alpha": 0.1,
+          "lambda2": 0.004803952582886169,
+          "identity_shift": 0.9361584183961248,
+          "idempotency_error": 6.531556404038672e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 9.758211414688367
+        },
+        {
+          "alpha": 0.2,
+          "lambda2": 0.009607905165772382,
+          "identity_shift": 1.5865818708450776,
+          "idempotency_error": 6.531556404038672e-16,
+          "projection_trace": 0.9999999999999993,
+          "susceptibility": 6.504234524489463
+        },
+        {
+          "alpha": 0.3,
+          "lambda2": 0.014411857748658672,
+          "identity_shift": 1.7671069608676224,
+          "idempotency_error": 5.815555346906433e-16,
+          "projection_trace": 1.0000000000000007,
+          "susceptibility": 1.8052509002254304
+        },
+        {
+          "alpha": 0.5,
+          "lambda2": 0.02401976291443053,
+          "identity_shift": 1.5842391174108152,
+          "idempotency_error": 1.6523323063915648e-15,
+          "projection_trace": 1.0000000000000016,
+          "susceptibility": 0.9143392172840312
+        },
+        {
+          "alpha": 0.7,
+          "lambda2": 0.033627668080202316,
+          "identity_shift": 1.3799958706032711,
+          "idempotency_error": 1.7243546196976904e-15,
+          "projection_trace": 1.0000000000000016,
+          "susceptibility": 1.0212162340377158
+        },
+        {
+          "alpha": 0.9,
+          "lambda2": 0.04323557324597513,
+          "identity_shift": 1.3738002672849667,
+          "idempotency_error": 2.2950481732301468e-15,
+          "projection_trace": 1.0000000000000024,
+          "susceptibility": 0.030978016591521718
+        },
+        {
+          "alpha": 1.0,
+          "lambda2": 0.04803952582886158,
+          "identity_shift": 1.013731404446287,
+          "idempotency_error": 1.6523323063915648e-15,
+          "projection_trace": 1.0000000000000016,
+          "susceptibility": 3.6006886283867616
+        }
+      ]
+    }
+  ]
+}
