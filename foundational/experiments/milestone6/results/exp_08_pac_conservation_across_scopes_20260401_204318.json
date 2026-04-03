@@ -1,0 +1,58 @@
+{
+  "experiment": "exp_08_pac_conservation_across_scopes",
+  "milestone": 6,
+  "block": "C",
+  "conservation": {
+    "max_error": 3.469446951953614e-18,
+    "mean_error": 7.806255641895632e-19,
+    "n_boundaries": 10
+  },
+  "xi_by_level": {
+    "1": {
+      "mean_xi": 0.003605318103294557,
+      "std_xi": 0.002956472298772797,
+      "mean_xi_frac": 0.4644215269709349,
+      "std_xi_frac": 0.25850992525423705,
+      "n": 6
+    },
+    "2": {
+      "mean_xi": 0.002848282486747323,
+      "std_xi": 0.00273349962583673,
+      "mean_xi_frac": 0.40733069910267083,
+      "std_xi_frac": 0.022557181744797178,
+      "n": 2
+    },
+    "3": {
+      "mean_xi": 0.006847050366954413,
+      "std_xi": 0.0,
+      "mean_xi_frac": 0.19186946181506395,
+      "std_xi_frac": 0.0,
+      "n": 1
+    },
+    "4": {
+      "mean_xi": 0.007706859911490392,
+      "std_xi": 0.0,
+      "mean_xi_frac": 0.27221796103210116,
+      "std_xi_frac": 0.0,
+      "n": 1
+    }
+  },
+  "trend": {
+    "spearman_rho": -0.7999999999999999,
+    "spearman_p": 0.20000000000000007,
+    "negative_trend": true
+  },
+  "multiplicative_survival": {
+    "geom_mean_survival": 0.5346295668103634,
+    "inv_phi": 0.6180339887498948,
+    "delta_phi_pct": 13.495118951019917
+  },
+  "verification": {
+    "test1_conservation": true,
+    "test2_varies": "True",
+    "test3_monotone": "True",
+    "test4_total": "False",
+    "verified_count": "3"
+  },
+  "timestamp": "2026-04-01T20:43:18.864802"
+}
