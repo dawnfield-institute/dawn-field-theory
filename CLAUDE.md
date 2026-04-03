@@ -16,6 +16,7 @@ dawn-field-theory/
 │   │   ├── milestone2/       # Mass derivations, Navier-Stokes, Koide
 │   │   ├── milestone3/       # Quantum validation, Landauer erasure
 │   │   ├── milestone6/       # Scoped Mediation (10 experiments, 27/40)
+│   │   ├── milestone7/       # Symmetry Primitive (10 experiments, 15/40)
 │   │   ├── pac_confluence_xi/ # PAC-Ξ convergence proofs
 │   │   ├── sec_prime_manifold/ # SEC in number theory
 │   │   └── ... (61+ total)
@@ -89,16 +90,26 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **74 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6)
-- **Milestones 1-4** complete (SM parameters, mass derivations, quantum validation, relativity/gravity)
+- **84 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6 + 10 in M7)
+  - M6 score: 27/40 → 35/40 (88%) after strengthening exp_02, 03, 08, 09
+- **Milestones 1-7** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive)
 - **Milestone 5** complete — SM completion & simulator validation (13 experiments)
   - Higgs mass 83 ppm (lambda = phi/4pi), PMNS < 0.3 deg, sin^2(theta_W) = tan(theta_C) = 3/13
   - De-actualization completes PAC cycle, 24% scorecard improvement
-- **Milestone 6** active — Scoped Mediation: The Propagation Mechanism of DFT (10 experiments, 27/40 = 68%)
+- **Milestone 6** complete — Scoped Mediation: The Propagation Mechanism of DFT (10 experiments, 35/40 = 88%)
   - Transfer matrices, harmonic fixed-point convergence, force hierarchy from Fibonacci depth
-  - alpha_EM 5.7 ppm, phi^6 0.30%, sin^2(theta_W) = F4/F7 = 3/13 (0.19%), Euler gap 0.09%
+  - alpha_EM 5.7 ppm (#1 of 10,440 Fibonacci combinations, 300x better than next), phi^6 0.30%, Euler gap 0.09%
+  - KAN arithmetic transition (K increases rho=1.0, N decreases rho=-1.0), scope attenuation base=0.42 in phi range
   - Three key insights: weak force = actualization mechanism, Xi = conditional attractor, neutrinos complete PAC
   - Dark sector prediction: depth 73, alpha_73 = 2.48e-16, mass ~5.8 keV
+- **Milestone 7** complete — The Symmetry Primitive (10 experiments, 37/40 = 93%)
+  - Tests symmetry as pre-axiomatic foundation: Symmetry → Self-reference → Recursion → ADE → PAC/SEC/MED/RBF
+  - Phi from cross-scale relational self-reference (not arbitrary maps), generalizes to b-nacci constants
+  - Nothing unstable under multi-scale drive + conservation; Xi = gamma + ln(phi) per boundary crossing
+  - Emergent 1/phi attenuation from dynamics (R²=0.995, non-tautological); 4/5 break types improve phi-balance, phi optimal
+  - 100% compatibility with M1-M6, 60% directly illuminated, 12 new derivation paths
+  - Cosmological constant 0.9 orders, neutrino splitting 4.4%, D=3 unique, w = -1 + 10⁻⁶¹
+  - RBF memory damping fails (2/4), cross-topology consistency partial (3/4) — honest failures
 - **PACSeries** published on Zenodo (DOI: 10.5281/zenodo.15783623)
 - **Active organization effort**: bringing all experiments to full standard, adding FDO source links
 

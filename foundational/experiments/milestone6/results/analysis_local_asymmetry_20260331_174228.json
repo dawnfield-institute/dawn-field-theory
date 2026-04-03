@@ -1,0 +1,91 @@
+{
+  "analysis": "local_asymmetry_as_mechanism",
+  "milestone": 6,
+  "n_boundaries": 67,
+  "level_stats": {
+    "1": {
+      "n": 37,
+      "mean_eigenvalue": 0.0031495992932897105,
+      "cv_eigenvalue": 1.5155709367072177,
+      "mean_transient_fraction": 0.2789117779590045,
+      "total_spectral_weight": 0.11653517385171928
+    },
+    "2": {
+      "n": 22,
+      "mean_eigenvalue": 0.006812579913560918,
+      "cv_eigenvalue": 3.793161762737392,
+      "mean_transient_fraction": 0.17935969804078644,
+      "total_spectral_weight": 0.1498767580983402
+    },
+    "3": {
+      "n": 5,
+      "mean_eigenvalue": 0.0005227974601673565,
+      "cv_eigenvalue": 0.44527363038067747,
+      "mean_transient_fraction": 0.22367982812332374,
+      "total_spectral_weight": 0.0026139873008367825
+    },
+    "4": {
+      "n": 3,
+      "mean_eigenvalue": 0.0003973425286649139,
+      "cv_eigenvalue": 0.5970492547036684,
+      "mean_transient_fraction": 0.3292725662730764,
+      "total_spectral_weight": 0.0011920275859947417
+    }
+  },
+  "ensemble_statistics": {
+    "geometric_mean_eigenvalue": 0.0010771635558031387,
+    "arithmetic_mean_eigenvalue": 0.004033103684132701,
+    "skewness": 7.268284746474061,
+    "kurtosis": 53.931003987715144,
+    "log_skewness": 1.1154091223616713
+  },
+  "xi_aggregation": {
+    "arithmetic_sum": 0.3279334371008666,
+    "arithmetic_mean": 0.36376235321295447,
+    "geometric_mean": 0.32884132328344945,
+    "info_content": 0.4983398776513381,
+    "odds_ratio": 0.8160413924749825,
+    "Xi_balance": 1.0584274899611363,
+    "best_error_pct": 22.900585990548468
+  },
+  "correlations": {
+    "eig vs parent_size": {
+      "rho": -0.656926550124996,
+      "p": 1.5687989493899215e-09
+    },
+    "eig vs child_size": {
+      "rho": -0.3374604663395897,
+      "p": 0.0052273755484787176
+    },
+    "eig vs size_ratio": {
+      "rho": 0.23082679012632296,
+      "p": 0.06020250118348874
+    },
+    "trans vs size_ratio": {
+      "rho": 0.8563418503683676,
+      "p": 2.5319555900131305e-20
+    },
+    "trans vs eig": {
+      "rho": -0.022827041264266903,
+      "p": 0.8545195126667535
+    }
+  },
+  "transient_vs_level": {
+    "rho": 0.39999999999999997,
+    "p": 0.6
+  },
+  "total_weight_trend": {
+    "rho": -0.7999999999999999,
+    "p": 0.20000000000000007
+  },
+  "criteria": {
+    "scatter_feeds_convergence": "True",
+    "log_cv_tighter": true,
+    "scatter_structured": true,
+    "transient_increases": "True",
+    "distribution_structured": true,
+    "xi_aggregation_approaches": "False",
+    "total_yes": "5"
+  },
+  "timestamp": "2026-03-31T17:42:28.271137"
+}

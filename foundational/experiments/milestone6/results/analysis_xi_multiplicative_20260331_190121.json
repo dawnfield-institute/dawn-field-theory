@@ -1,0 +1,78 @@
+{
+  "analysis": "xi_multiplicative_aggregation",
+  "milestone": 6,
+  "n_boundaries": 10,
+  "per_level_info_content": {
+    "1": {
+      "n": 6,
+      "mean_xi_frac": 0.4644215269709349,
+      "mean_info_content": 0.7805565505291642
+    },
+    "2": {
+      "n": 2,
+      "mean_xi_frac": 0.40733069910267083,
+      "mean_info_content": 0.523843525869246
+    },
+    "3": {
+      "n": 1,
+      "mean_xi_frac": 0.19186946181506395,
+      "mean_info_content": 0.2130316763504198
+    },
+    "4": {
+      "n": 1,
+      "mean_xi_frac": 0.27221796103210116,
+      "mean_info_content": 0.31775367263580434
+    }
+  },
+  "overall": {
+    "mean_info_content": 0.6261811703899701,
+    "ln_phi": 0.48121182505960347,
+    "delta_pct": 30.125890051103916,
+    "info_plus_gamma": 1.203396835291503,
+    "Xi_balance": 1.0584274899611363,
+    "total_delta_pct": 13.696672346982378
+  },
+  "survival_cascade": [
+    {
+      "level": 1,
+      "mean_survival": 0.535578473029065,
+      "cumulative": 0.535578473029065,
+      "predicted_Xi": 0.3470010441502981,
+      "predicted_lnphi": 0.6180339887498948
+    },
+    {
+      "level": 2,
+      "mean_survival": 0.5926693008973292,
+      "cumulative": 0.317420919185795,
+      "predicted_Xi": 0.12040972464139711,
+      "predicted_lnphi": 0.38196601125010515
+    },
+    {
+      "level": 3,
+      "mean_survival": 0.8081305381849361,
+      "cumulative": 0.2565175382527736,
+      "predicted_Xi": 0.04178230017641468,
+      "predicted_lnphi": 0.23606797749978967
+    },
+    {
+      "level": 4,
+      "mean_survival": 0.7277820389678988,
+      "cumulative": 0.18668885702062957,
+      "predicted_Xi": 0.014498501788217075,
+      "predicted_lnphi": 0.14589803375031543
+    }
+  ],
+  "counting_cost": {
+    "mean_gamma_n": -0.47716087185435285,
+    "gamma_EM": 0.5772156649015329,
+    "delta_pct": 182.66596020670224
+  },
+  "tests": {
+    "info_content_eq_lnphi": "False",
+    "info_plus_gamma_eq_Xi": "False",
+    "multiplicative_beats_additive": false,
+    "hierarchy_gives_gamma": "False",
+    "total_yes": "0"
+  },
+  "timestamp": "2026-03-31T19:01:21.057981"
+}
