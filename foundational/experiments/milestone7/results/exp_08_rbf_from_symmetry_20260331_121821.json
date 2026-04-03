@@ -1,0 +1,32 @@
+{
+  "experiment": "exp_08_rbf_from_symmetry",
+  "milestone": 7,
+  "block": "D",
+  "ei_convergence": [
+    0.3238720357506218,
+    0.48742464418085024,
+    0.4777223859792432
+  ],
+  "force_scaling": [
+    0.9544425701617679,
+    0.9745827346684823,
+    0.9582339223933093
+  ],
+  "memory_damping": [
+    0.6967029822173332,
+    0.8124304465601625,
+    0.9246575472609251
+  ],
+  "phi_structured": [
+    false,
+    false,
+    true
+  ],
+  "verification": {
+    "test1_ei_convergence": "True",
+    "test2_force_scaling": "True",
+    "test3_memory_damping": "False",
+    "test4_phi_balance": false,
+    "verified_count": "2"
+  }
+}
