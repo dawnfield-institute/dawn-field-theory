@@ -1,0 +1,27 @@
+{
+  "experiment": "exp_06_symmetry_breaking_as_seeking",
+  "milestone": 7,
+  "block": "C",
+  "break_improvement_fractions": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "monotonicity_fractions": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "convergence": [
+    true,
+    true,
+    true
+  ],
+  "verification": {
+    "test1_breaks_improve": "True",
+    "test2_monotonic": true,
+    "test3_convergence": true,
+    "test4_cross_topology": "True",
+    "verified_count": "4"
+  }
+}

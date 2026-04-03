@@ -1,0 +1,31 @@
+{
+  "experiment": "exp_04_inv_phi_attenuation",
+  "milestone": 7,
+  "block": "B",
+  "per_hop_attenuation": {
+    "mean": 0.6180339887498948,
+    "delta": 0.0
+  },
+  "multi_hop_decay": {
+    "slope": -0.4812118250596035,
+    "expected_slope": -0.48121182505960347,
+    "r_squared": 1.0
+  },
+  "controls": {
+    "equal_b2": 0.5,
+    "random_b2": 0.7703937031491419,
+    "equal_b3": 0.33333333333333337,
+    "min_delta_from_phi": 0.1909830056250525
+  },
+  "perturbation_invariance": {
+    "cv": 5.562264540780742e-13,
+    "mean_attenuation": 0.6180339887500275
+  },
+  "verification": {
+    "test1_per_hop": "True",
+    "test2_multi_hop": "True",
+    "test3_controls": "True",
+    "test4_invariance": "True",
+    "verified_count": "4"
+  }
+}

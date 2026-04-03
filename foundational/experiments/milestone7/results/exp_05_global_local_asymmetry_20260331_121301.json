@@ -1,0 +1,23 @@
+{
+  "experiment": "exp_05_global_local_asymmetry",
+  "milestone": 7,
+  "block": "C",
+  "test1_co_increase": [
+    false,
+    false,
+    false
+  ],
+  "test3_both_high": [
+    true,
+    true,
+    true
+  ],
+  "uniform_la": 0.0,
+  "verification": {
+    "test1_co_increase": false,
+    "test2_uniform": true,
+    "test3_both_high": true,
+    "test4_cross_topology": false,
+    "verified_count": 2
+  }
+}

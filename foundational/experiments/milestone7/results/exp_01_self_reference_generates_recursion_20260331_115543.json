@@ -1,0 +1,44 @@
+{
+  "experiment": "exp_01_self_reference_generates_recursion",
+  "milestone": 7,
+  "block": "A",
+  "analytical": {
+    "R_positive": 1.618033988749895,
+    "match": "True"
+  },
+  "fibonacci_convergence": {
+    "2": {
+      "gen_phi": 1.6180339887482036,
+      "R_predicted": 1.618033988749895,
+      "delta": 1.0452893866725586e-12
+    },
+    "3": {
+      "gen_phi": 1.8392867552212089,
+      "R_predicted": 1.839286755214161,
+      "delta": 3.831875472880124e-12
+    },
+    "4": {
+      "gen_phi": 1.9275619754959359,
+      "R_predicted": 1.927561975482925,
+      "delta": 6.74993895687302e-12
+    },
+    "5": {
+      "gen_phi": 1.9659482365811063,
+      "R_predicted": 1.965948236645486,
+      "delta": 3.274735903724674e-11
+    }
+  },
+  "control": {
+    "equal_split_gives_phi": false,
+    "random_consistent_frac": 0.0,
+    "absolute_near_phi": 0,
+    "absolute_total": 5
+  },
+  "verification": {
+    "test1_analytical": "True",
+    "test2_tree_convergence": true,
+    "test3_control": true,
+    "test4_branching_robustness": true,
+    "verified_count": "4"
+  }
+}

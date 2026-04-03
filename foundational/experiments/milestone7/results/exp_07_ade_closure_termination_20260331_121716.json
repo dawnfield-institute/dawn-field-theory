@@ -1,0 +1,59 @@
+{
+  "experiment": "exp_07_ade_closure_termination",
+  "milestone": 7,
+  "block": "D",
+  "operation_properties": [
+    {
+      "name": "L1-Addition",
+      "comm_violation": 0.0,
+      "max_eigenvalue": 20.606601717798213,
+      "eig_spread": 2.018669136867282e+16,
+      "condition_number": 1000000000000000.0
+    },
+    {
+      "name": "L2-Multiplication",
+      "comm_violation": 0.0,
+      "max_eigenvalue": 22.5,
+      "eig_spread": 2.25e+16,
+      "condition_number": 1000000000000000.0
+    },
+    {
+      "name": "L3-Exponentiation",
+      "comm_violation": 0.12996092310822602,
+      "max_eigenvalue": 40.337720500893354,
+      "eig_spread": 114091.92231406154,
+      "condition_number": 115437.71406807963
+    },
+    {
+      "name": "L4-Tetration",
+      "comm_violation": 1.5825580206651176e-09,
+      "max_eigenvalue": 7625597484986.999,
+      "eig_spread": 8.793517406769208e+16,
+      "condition_number": 1000000000000000.0
+    }
+  ],
+  "ade_equation": {
+    "unique_at_3": true,
+    "n_matches": 1
+  },
+  "symmetry_degradation": {
+    "comm_violations": [
+      0.0,
+      0.0,
+      0.12996092310822602,
+      1.5825580206651176e-09
+    ],
+    "degrades": true
+  },
+  "tetration_penalty": {
+    "inv_phi_4": 0.1458980337503154,
+    "survival_4_hops": 0.1458980337503154
+  },
+  "verification": {
+    "test1_eigenvalue_divergence": true,
+    "test2_ade_uniqueness": true,
+    "test3_symmetry_degradation": true,
+    "test4_tetration_penalty": "True",
+    "verified_count": "4"
+  }
+}

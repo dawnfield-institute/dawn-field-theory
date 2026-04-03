@@ -1,0 +1,104 @@
+{
+  "experiment": "exp_02_nothing_instability",
+  "milestone": 7,
+  "block": "A",
+  "test1_structure_formation": [
+    {
+      "name": "Ring N=50",
+      "cv_start": 0.0,
+      "cv_end": 0.0,
+      "cv_max": 0.0,
+      "structured": "False"
+    },
+    {
+      "name": "Torus 7x7",
+      "cv_start": 0.0,
+      "cv_end": 0.0,
+      "cv_max": 0.0,
+      "structured": "False"
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "cv_start": 0.0,
+      "cv_end": 0.0,
+      "cv_max": 0.0,
+      "structured": "False"
+    }
+  ],
+  "test2_drive_vs_structure": {
+    "data": [
+      {
+        "drive": 0.001,
+        "cv": 0.0
+      },
+      {
+        "drive": 0.005,
+        "cv": 0.0
+      },
+      {
+        "drive": 0.01,
+        "cv": 0.0
+      },
+      {
+        "drive": 0.05,
+        "cv": 0.0
+      },
+      {
+        "drive": 0.1,
+        "cv": 0.0
+      },
+      {
+        "drive": 0.2,
+        "cv": 0.0
+      }
+    ],
+    "monotonic_frac": 1.0
+  },
+  "test3_no_conservation": [
+    {
+      "name": "Ring N=50",
+      "cv_start": 1.0459189936640438,
+      "cv_end": 0.10569951537510358,
+      "structure_destroyed": "True"
+    },
+    {
+      "name": "Torus 7x7",
+      "cv_start": 1.0348376650737696,
+      "cv_end": 7.257433710742107e-05,
+      "structure_destroyed": "True"
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "cv_start": 1.0459189936640438,
+      "cv_end": 0.00018794811846274852,
+      "structure_destroyed": "True"
+    }
+  ],
+  "test4_phi_ratios": [
+    {
+      "name": "Ring N=50",
+      "median_ratio": 1.0,
+      "dom_sub_ratio": 1.0,
+      "delta_phi": 0.38196601125010515
+    },
+    {
+      "name": "Torus 7x7",
+      "median_ratio": 1.0,
+      "dom_sub_ratio": 1.0,
+      "delta_phi": 0.38196601125010515
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "median_ratio": 1.0,
+      "dom_sub_ratio": 1.0,
+      "delta_phi": 0.38196601125010515
+    }
+  ],
+  "verification": {
+    "test1_structure_forms": false,
+    "test2_drive_monotonic": true,
+    "test3_conservation_essential": true,
+    "test4_phi_structure": false,
+    "verified_count": 2
+  }
+}

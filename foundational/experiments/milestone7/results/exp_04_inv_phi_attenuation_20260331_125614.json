@@ -1,0 +1,70 @@
+{
+  "experiment": "exp_04_inv_phi_attenuation",
+  "milestone": 7,
+  "block": "B",
+  "test1_emergent": {
+    "overall_ratio": 1.0,
+    "overall_r2": 0.0,
+    "overall_delta": 0.618033988749895,
+    "all_ratios": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "all_r2s": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "test2_perturbation": {
+    "mean_r2": 0.0,
+    "mean_ratio": 1.0,
+    "all_r2s": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "test3_controls": {
+    "single_scale_delta": 0.618033988749895,
+    "raw_random_delta": 0.618033988749895,
+    "min_control_delta": 0.618033988749895
+  },
+  "test4_universality": {
+    "cv": 0.0,
+    "mean_ratio": 1.0,
+    "n_conditions": 30
+  },
+  "verification": {
+    "test1_emergent": "False",
+    "test2_perturbation": "False",
+    "test3_controls": "True",
+    "test4_universality": "True",
+    "verified_count": "2"
+  }
+}

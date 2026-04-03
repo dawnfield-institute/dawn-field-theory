@@ -1,0 +1,118 @@
+{
+  "experiment": "exp_01_self_reference_generates_recursion",
+  "milestone": 7,
+  "block": "A",
+  "analytical": {
+    "R_positive": 1.618033988749895,
+    "match": "True"
+  },
+  "hierarchical_convergence": {
+    "n_converged": 0,
+    "n_total": 10,
+    "details": [
+      {
+        "r0": 1.2,
+        "final": 1.2,
+        "delta_phi": 0.25835921350012625,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 1.5,
+        "final": 1.5,
+        "delta_phi": 0.07294901687515776,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 2.0,
+        "final": 2.0,
+        "delta_phi": 0.23606797749978967,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 2.5,
+        "final": 2.5,
+        "delta_phi": 0.545084971874737,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 3.0,
+        "final": 3.0,
+        "delta_phi": 0.8541019662496845,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 5.0,
+        "final": 5.0,
+        "delta_phi": 2.090169943749474,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 10.0,
+        "final": 9.999999999999996,
+        "delta_phi": 5.180339887498946,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 1.01,
+        "final": 1.01,
+        "delta_phi": 0.3757856713626062,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 1.8,
+        "final": 1.8,
+        "delta_phi": 0.11246117974981072,
+        "converged": "False",
+        "steps": 21
+      },
+      {
+        "r0": 4.0,
+        "final": 4.000000000000001,
+        "delta_phi": 1.4721359549995798,
+        "converged": "False",
+        "steps": 21
+      }
+    ]
+  },
+  "graph_dynamics": [
+    {
+      "name": "Ring N=30",
+      "mean_ratio": 1.0081217296846305,
+      "delta_phi": 0.37694650625756454,
+      "n_seeds": 10
+    },
+    {
+      "name": "Torus 6x6",
+      "mean_ratio": 1.0090042391127358,
+      "delta_phi": 0.37640108543560324,
+      "n_seeds": 10
+    },
+    {
+      "name": "Random Regular k=4 N=30",
+      "mean_ratio": 1.0079003188625149,
+      "delta_phi": 0.37708334567110907,
+      "n_seeds": 10
+    }
+  ],
+  "control_absolute": {
+    "total": 500,
+    "phi_count": 100,
+    "phi_fraction": 0.2,
+    "n_unique_fps": 45
+  },
+  "verification": {
+    "test1_analytical": "True",
+    "test2_hierarchical": false,
+    "test3_control": false,
+    "test4_graphs": false,
+    "verified_count": "1"
+  }
+}

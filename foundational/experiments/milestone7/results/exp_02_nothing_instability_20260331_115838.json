@@ -1,0 +1,104 @@
+{
+  "experiment": "exp_02_nothing_instability",
+  "milestone": 7,
+  "block": "A",
+  "test1_structure_formation": [
+    {
+      "name": "Ring N=50",
+      "cv_start": 8.533963297262767e-07,
+      "cv_end": 1.4135350881457681e-07,
+      "cv_max": 8.533963297262767e-07,
+      "structured": "False"
+    },
+    {
+      "name": "Torus 7x7",
+      "cv_start": 8.30385938612095e-07,
+      "cv_end": 1.3880177694563985e-10,
+      "cv_max": 8.30385938612095e-07,
+      "structured": "False"
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "cv_start": 8.604304828136344e-07,
+      "cv_end": 1.416118441568411e-10,
+      "cv_max": 8.604304828136344e-07,
+      "structured": "False"
+    }
+  ],
+  "test2_drive_vs_structure": {
+    "data": [
+      {
+        "drive": 0.001,
+        "cv": 7.589901809522987e-07
+      },
+      {
+        "drive": 0.005,
+        "cv": 3.745492763733904e-07
+      },
+      {
+        "drive": 0.01,
+        "cv": 2.15596284868722e-07
+      },
+      {
+        "drive": 0.05,
+        "cv": 1.5697367815332991e-07
+      },
+      {
+        "drive": 0.1,
+        "cv": 9.176521758175818e-08
+      },
+      {
+        "drive": 0.2,
+        "cv": 1.3976248333409196e-07
+      }
+    ],
+    "monotonic_frac": 0.2
+  },
+  "test3_no_conservation": [
+    {
+      "name": "Ring N=50",
+      "cv_start": 1.0459189936640438,
+      "cv_end": 0.10569951537510358,
+      "structure_destroyed": "True"
+    },
+    {
+      "name": "Torus 7x7",
+      "cv_start": 1.0348376650737696,
+      "cv_end": 7.257433710742107e-05,
+      "structure_destroyed": "True"
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "cv_start": 1.0459189936640438,
+      "cv_end": 0.00018794811846274852,
+      "structure_destroyed": "True"
+    }
+  ],
+  "test4_phi_ratios": [
+    {
+      "name": "Ring N=50",
+      "median_ratio": 1.000000000072976,
+      "dom_sub_ratio": 1.0000001025081338,
+      "delta_phi": 0.3819659478965944
+    },
+    {
+      "name": "Torus 7x7",
+      "median_ratio": 0.9999999999999998,
+      "dom_sub_ratio": 1.0000000000001814,
+      "delta_phi": 0.3819660112499931
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "median_ratio": 0.9999999999999997,
+      "dom_sub_ratio": 1.0000000000001361,
+      "delta_phi": 0.38196601125002105
+    }
+  ],
+  "verification": {
+    "test1_structure_forms": false,
+    "test2_drive_monotonic": false,
+    "test3_conservation_essential": true,
+    "test4_phi_structure": false,
+    "verified_count": 1
+  }
+}

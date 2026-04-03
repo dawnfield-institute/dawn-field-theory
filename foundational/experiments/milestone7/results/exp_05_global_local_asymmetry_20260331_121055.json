@@ -1,0 +1,23 @@
+{
+  "experiment": "exp_05_global_local_asymmetry",
+  "milestone": 7,
+  "block": "C",
+  "correlations": {
+    "Ring N=50": 0.0,
+    "Torus 7x7": 0.0,
+    "Random Regular k=4": 0.0
+  },
+  "mean_correlation": 0.0,
+  "la_increased": [
+    false,
+    false,
+    false
+  ],
+  "verification": {
+    "test1_correlation": "False",
+    "test2_evolution": false,
+    "test3_uniform": true,
+    "test4_cross_topology": false,
+    "verified_count": "1"
+  }
+}
