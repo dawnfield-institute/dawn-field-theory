@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: 'Axiom-Seeded Digital Life'
+directory_name: axiom_digital_life
+description: >
+  Minimal prototype of DFT-axiom-seeded digital life. Instead of simulating physics
+  (gravity, friction, Newtonian mechanics), the world is seeded with two DFT axioms —
+  PAC (f(Parent)=Σf(Children)) and SEC (∂S/∂t=α∇I−β∇H) — and life emerges from
+  those axioms. Creatures ("Infobionts") live in a 1D PAC/SEC information field.
+  Their metabolism, movement, reproduction (⊗ branch), and death (⊕ collapse) are
+  all derived from DFT operators, not physics. The balance operator Ξ≈1.057 from
+  the cellular automata experiment sets the reproduction threshold.
+semantic_scope:
+  - axiom-seeded-life
+  - digital-life
+  - artificial-life
+  - PAC-conservation
+  - SEC-dynamics
+  - infobiont
+  - information-field
+  - emergence
+  - MED-bounds
+  - Xi-balance
+files:
+  - scripts/exp_01_axiom_digital_life.py
+  - results/exp_01_axiom_digital_life.json
+child_directories: []
+status: exploratory
+hypothesis: >
+  Digital life — reproduction, metabolism, death, evolution — can emerge from
+  DFT axioms (PAC + SEC) alone, without simulating any physics. Specifically:
+  (1) PAC conservation is maintained throughout (max drift < 0.5%);
+  (2) creatures reproduce via the ⊗ branch operator when Ξ_local > Ξ_threshold;
+  (3) creatures collapse via ⊕ merge when entropy dominates;
+  (4) surviving populations cluster near the Ξ≈1.057 balance point;
+  (5) genome evolution occurs through mutation across generations.
+related_experiments:
+  - cellular_automata_pac_attractors
+  - symbolic_emergence
+  - biology_experiments
+dft_axioms_used:
+  - PAC: "f(Parent) = Σ f(Children)"
+  - SEC: "∂S/∂t = α∇I − β∇H"
+  - MED: "depth ≤ 2, nodes ≤ 3"
+  - Xi: "1.057 (balance operator from CA experiment)"
+dft_constants:
+  phi: 1.6180339887
+  Xi: 1.0571
+  ln_phi: 0.4812
+tags:
+  - axiom-seeded-life
+  - digital-life
+  - PAC
+  - SEC
+  - MED
+  - infobiont
+  - emergence
+  - information-field
+  - prototype
