@@ -1,0 +1,69 @@
+{
+  "experiment": "exp_32e_gravity_time_duality",
+  "version": 1,
+  "milestone": 8,
+  "series": "exp_32",
+  "block": "geometric_primacy",
+  "hypothesis": "Gravity (inward/compressive) and time (outward/expansive) are symmetric duals. This duality is NECESSARY for PAC + scale invariance + finite closure. g_out = g_in^2 means time = gravity^2 (one recursion of gravity).",
+  "unique_balance": {
+    "best_g_in": 0.6182082082082082,
+    "predicted_g_in": 0.6180339887498948,
+    "si_quality": 3.230248077378332e-16,
+    "unique": false,
+    "passed": false
+  },
+  "structural_collapse": {
+    "no_gravity": {
+      "depth": 12,
+      "info": 36.84136148790474
+    },
+    "balanced": {
+      "depth": 50,
+      "info": 23.579379427920557,
+      "ratio": 1.6180339887498958
+    },
+    "no_time": {
+      "depth": 50,
+      "info": 0.4924664568215714
+    },
+    "symmetric_failure": false,
+    "balanced_unique": false,
+    "passed": false
+  },
+  "symmetry": {
+    "g_in": 0.6180339887498948,
+    "g_out": 0.3819660112501052,
+    "g_in_squared": 0.3819660112501051,
+    "g_out_equals_g_in_squared": true,
+    "forward_ratio": 1.6180339887498947,
+    "reverse_ratio": 1.6180339887498947,
+    "ratios_match": true,
+    "passed": true
+  },
+  "asymmetry_breaks": {
+    "a_at_phi": 1.0,
+    "phi_at_conservation": true,
+    "si_at_1": 3.230248077378332e-16,
+    "si_at_08": 0.20000000000000037,
+    "si_at_12": 0.1999999999999997,
+    "si_only_at_conservation": true,
+    "passed": true
+  },
+  "pac_equivalence": {
+    "max_energy_diff": 0.0,
+    "max_ratio_diff": 0.0,
+    "identical": true,
+    "passed": true
+  },
+  "verification": {
+    "checks": {
+      "Unique balance: phi at exactly one g_in/g_out ratio": false,
+      "Structural collapse: remove either, cascade fails": false,
+      "Symmetry: forward/reverse give same phi, g_out = g_in^2": true,
+      "Asymmetry breaks SI: conservation required for scale invariance": true,
+      "PAC equivalence: duality = conservation, not new axiom": true
+    },
+    "passed_count": 3,
+    "total": 5
+  }
+}

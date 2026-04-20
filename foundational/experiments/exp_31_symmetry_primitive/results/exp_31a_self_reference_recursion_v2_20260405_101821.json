@@ -1,0 +1,167 @@
+{
+  "experiment": "exp_31a_self_reference_recursion",
+  "version": 2,
+  "milestone": 7,
+  "series": "exp_31",
+  "block": "prediction",
+  "note": "v1 scored 0/4 testing generic SR \u2192 phi (falsified). v2 tests cross-scale SR specifically.",
+  "cross_scale_robustness": {
+    "formulations": [
+      [
+        "binary_original",
+        1.618033988749895,
+        true
+      ],
+      [
+        "nary_b2",
+        1.618033988749895,
+        true
+      ],
+      [
+        "nary_b3",
+        1.8392867552141612,
+        true
+      ],
+      [
+        "nary_b4",
+        1.9275619754829252,
+        true
+      ],
+      [
+        "nary_b5",
+        1.9659482366454852,
+        true
+      ],
+      [
+        "nary_b6",
+        1.9835828434244644,
+        true
+      ],
+      [
+        "nary_b7",
+        1.9919641966049961,
+        true
+      ],
+      [
+        "nary_b8",
+        1.9960311797353492,
+        true
+      ],
+      [
+        "weighted_w0.5",
+        1.618033988749895,
+        true
+      ],
+      [
+        "weighted_w1.0",
+        1.618033988749895,
+        true
+      ],
+      [
+        "weighted_w1.5",
+        1.618033988749895,
+        true
+      ],
+      [
+        "weighted_w2.0",
+        1.618033988749895,
+        true
+      ],
+      [
+        "asymmetric_crossscale",
+        0.6180339887498949,
+        true
+      ],
+      [
+        "continued_fraction",
+        1.4142135623730951,
+        false
+      ],
+      [
+        "ratio_chain",
+        1.618033988749895,
+        true
+      ]
+    ],
+    "phi_family_count": 14,
+    "total": 15,
+    "phi_family_fraction": 0.9333333333333333,
+    "exact_phi_count": 8
+  },
+  "ablation": {
+    "full_system": {
+      "phi_count": 50,
+      "total": 50,
+      "fraction": 1.0
+    },
+    "no_cross_scale": {
+      "phi_count": 0,
+      "total": 50,
+      "fraction": 0.0
+    },
+    "no_conservation": {
+      "phi_count": 4,
+      "total": 50,
+      "fraction": 0.08
+    },
+    "no_self_similarity": {
+      "phi_count": 13,
+      "total": 50,
+      "fraction": 0.26
+    },
+    "no_hierarchy": {
+      "phi_count": 1,
+      "total": 50,
+      "fraction": 0.02
+    }
+  },
+  "non_arithmetic_domains": {
+    "matrix": {
+      "phi_count": 5,
+      "total": 10,
+      "phi_fraction": 0.5,
+      "phi_present": true
+    },
+    "graph": {
+      "phi_count": 6,
+      "total": 10,
+      "phi_fraction": 0.6,
+      "phi_present": true
+    },
+    "oscillator": {
+      "phi_count": 6,
+      "total": 10,
+      "phi_fraction": 0.6,
+      "phi_present": true
+    },
+    "classes_with_phi": 3,
+    "total_classes": 3
+  },
+  "contrast": {
+    "cross_scale": {
+      "phi_count": 200,
+      "total": 200,
+      "fraction": 1.0
+    },
+    "generic_sr": {
+      "phi_count": 20,
+      "total": 121,
+      "fraction": 0.1652892561983471
+    },
+    "non_sr": {
+      "phi_count": 15,
+      "total": 120,
+      "fraction": 0.125
+    },
+    "enrichment_cs_vs_sr": 6.05,
+    "enrichment_cs_vs_nsr": 8.0,
+    "p_value": 1.118619114843394e-63
+  },
+  "verification": {
+    "test1_robustness": true,
+    "test2_ablation": false,
+    "test3_universality": true,
+    "test4_contrast": true,
+    "verified_count": 3
+  }
+}

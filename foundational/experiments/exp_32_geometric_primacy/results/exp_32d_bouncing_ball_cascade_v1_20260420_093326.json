@@ -1,0 +1,220 @@
+{
+  "experiment": "exp_32d_bouncing_ball_cascade",
+  "version": 1,
+  "milestone": 8,
+  "series": "exp_32",
+  "block": "geometric_primacy",
+  "hypothesis": "A bouncing ball under gravity physically instantiates the geometry-precedes-arithmetic thesis and the ADE hyperoperation ladder. Scale invariance selects e = 1/sqrt(phi), giving height ratios = phi.",
+  "constant_ratios": {
+    "e=0.7": {
+      "e": 0.7,
+      "predicted_ratio": 2.0408163265306127,
+      "measured_mean": 2.0408163265306127,
+      "measured_std": 3.7456025492134773e-16,
+      "delta": 0.0,
+      "n_measurements": 246
+    },
+    "e=0.8": {
+      "e": 0.8,
+      "predicted_ratio": 1.5624999999999998,
+      "measured_mean": 1.5625,
+      "measured_std": 2.7059163356315295e-16,
+      "delta": 1.4210854715202006e-16,
+      "n_measurements": 402
+    },
+    "e=0.85": {
+      "e": 0.85,
+      "predicted_ratio": 1.384083044982699,
+      "measured_mean": 1.384083044982699,
+      "measured_std": 2.009468608111307e-16,
+      "delta": 0.0,
+      "n_measurements": 558
+    },
+    "e=0.9": {
+      "e": 0.9,
+      "predicted_ratio": 1.2345679012345678,
+      "measured_mean": 1.2345679012345678,
+      "measured_std": 1.7897827974233004e-16,
+      "delta": 0.0,
+      "n_measurements": 865
+    },
+    "e=0.95": {
+      "e": 0.95,
+      "predicted_ratio": 1.10803324099723,
+      "measured_mean": 1.10803324099723,
+      "measured_std": 1.6846653353888639e-16,
+      "delta": 0.0,
+      "n_measurements": 985
+    },
+    "phi_special": {
+      "e": 0.7861513777574233,
+      "measured_ratio": 1.6180339887498951,
+      "delta_from_phi": 1.3723111286221163e-16
+    },
+    "all_exact": true,
+    "passed": true
+  },
+  "perturbation_asymmetry": {
+    "gravity_perturbation": {
+      "recovery_bounces": 1,
+      "final_delta": 0.0
+    },
+    "energy_injection": {
+      "recovery_bounces": 1,
+      "final_delta": 1.604272270583351e-16,
+      "instant_recovery": true
+    },
+    "passed": true
+  },
+  "finite_termination": {
+    "e=0.300": {
+      "e": 0.3,
+      "T_predicted": 2.6517086568645483,
+      "T_simulated": 5.397247004664303,
+      "n_bounces": 3,
+      "delta": 1.0353846153846151
+    },
+    "e=0.349": {
+      "e": 0.34928571428571425,
+      "T_predicted": 2.9606977598344946,
+      "T_simulated": 5.816383979411673,
+      "n_bounces": 18,
+      "delta": 0.9645314892719118
+    },
+    "e=0.399": {
+      "e": 0.3985714285714286,
+      "T_predicted": 3.3203287822935774,
+      "T_simulated": 6.176015008776536,
+      "n_bounces": 21,
+      "delta": 0.8600612811934671
+    },
+    "e=0.448": {
+      "e": 0.44785714285714284,
+      "T_predicted": 3.744163014454281,
+      "T_simulated": 6.599849211345451,
+      "n_bounces": 23,
+      "delta": 0.7627034896362258
+    },
+    "e=0.497": {
+      "e": 0.4971428571428571,
+      "T_predicted": 4.251078388714668,
+      "T_simulated": 7.106764598322939,
+      "n_bounces": 27,
+      "delta": 0.6717557166645661
+    },
+    "e=0.546": {
+      "e": 0.5464285714285714,
+      "T_predicted": 4.868158049034793,
+      "T_simulated": 7.723844248905618,
+      "n_bounces": 31,
+      "delta": 0.5866050713856793
+    },
+    "e=0.596": {
+      "e": 0.5957142857142856,
+      "T_predicted": 5.635691760811062,
+      "T_simulated": 8.491377950380455,
+      "n_bounces": 36,
+      "delta": 0.5067144036206864
+    },
+    "e=0.645": {
+      "e": 0.645,
+      "T_predicted": 6.6163434851127345,
+      "T_simulated": 9.472029678901386,
+      "n_bounces": 43,
+      "delta": 0.4316109343800179
+    },
+    "e=0.694": {
+      "e": 0.6942857142857142,
+      "T_predicted": 7.913186653231297,
+      "T_simulated": 10.768872821666978,
+      "n_bounces": 51,
+      "delta": 0.3608768873497481
+    },
+    "e=0.744": {
+      "e": 0.7435714285714285,
+      "T_predicted": 9.708537780125248,
+      "T_simulated": 12.564223938868222,
+      "n_bounces": 63,
+      "delta": 0.29414173621376527
+    },
+    "e=0.793": {
+      "e": 0.7928571428571427,
+      "T_predicted": 12.358228408782512,
+      "T_simulated": 15.213914535776576,
+      "n_bounces": 80,
+      "delta": 0.23107568759326688
+    },
+    "e=0.842": {
+      "e": 0.8421428571428571,
+      "T_predicted": 16.662476986556094,
+      "T_simulated": 19.518163074245617,
+      "n_bounces": 108,
+      "delta": 0.17138424797187102
+    },
+    "e=0.891": {
+      "e": 0.8914285714285715,
+      "T_predicted": 24.874530194150445,
+      "T_simulated": 27.730216197941008,
+      "n_bounces": 161,
+      "delta": 0.11480361564626104
+    },
+    "e=0.941": {
+      "e": 0.9407142857142856,
+      "T_predicted": 46.74035861437141,
+      "T_simulated": 49.596044395712696,
+      "n_bounces": 302,
+      "delta": 0.06109678800075015
+    },
+    "e=0.990": {
+      "e": 0.99,
+      "T_predicted": 284.1407814624855,
+      "T_simulated": 286.99646485717625,
+      "n_bounces": 1833,
+      "delta": 0.010050241221947835
+    },
+    "all_finite": true,
+    "all_close": false,
+    "passed": false
+  },
+  "linear_exponential_bridge": {
+    "level2": {
+      "v_ratio_mean": 1.1764705882352942,
+      "v_ratio_predicted": 1.1764705882352942,
+      "v_ratio_std": 7.141704126996961e-17,
+      "exact": true
+    },
+    "level3": {
+      "log_h_slope": -0.32503785899555,
+      "predicted_slope": -0.3250378589955499,
+      "delta": 3.4156729559320554e-16,
+      "exact": true
+    },
+    "level4": {
+      "T_total": 17.610065182767123,
+      "n_bounces": 100,
+      "bounce_rate_growth": 0.16251892949777494,
+      "finite": true
+    },
+    "passed": true
+  },
+  "pac_tree_connection": {
+    "e_scale_invariant": 0.7861513777574233,
+    "e_squared": 0.6180339887498948,
+    "predicted_ratio": 1.618033988749895,
+    "measured_ratio": 1.6180339887498951,
+    "delta_phi": 1.3723111286221163e-16,
+    "scale_invariance_quality": 2.260562370106261e-16,
+    "passed": true
+  },
+  "verification": {
+    "checks": {
+      "Constant ratios: gravity determines arithmetic exactly": true,
+      "Perturbation asymmetry: geometry controls arithmetic": true,
+      "Finite termination: cascade closes (ADE Level 4)": false,
+      "Linear-exponential bridge: ADE ladder in physics": true,
+      "PAC tree connection: scale invariance selects phi": true
+    },
+    "passed_count": 4,
+    "total": 5
+  }
+}
