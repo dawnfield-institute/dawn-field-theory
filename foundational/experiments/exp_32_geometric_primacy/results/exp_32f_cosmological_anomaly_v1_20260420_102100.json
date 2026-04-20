@@ -1,0 +1,110 @@
+{
+  "experiment": "exp_32f_cosmological_anomaly_alignment",
+  "version": 1,
+  "milestone": 8,
+  "series": "exp_32",
+  "block": "geometric_primacy",
+  "status": "EXPLORATORY",
+  "hypothesis": "The gravity-time cascade structure (PAC + scale invariance, g_out = g_in^2) is directionally consistent with four Lambda-CDM tensions: Hubble, JWST early galaxies, DESI BAO, and S8. This is exploratory alignment, not prediction.",
+  "observations": {
+    "hubble": {
+      "H0_CMB": 67.36,
+      "H0_CMB_err": 0.54,
+      "H0_local": 73.04,
+      "H0_local_err": 1.04,
+      "tension_sigma": 5.0,
+      "src_CMB": "Planck 2018 (Aghanim+2020, A&A 641, A6)",
+      "src_local": "SH0ES 2022 (Riess+2022, ApJL 934, L7)"
+    },
+    "jwst": {
+      "z_range": [
+        7,
+        9
+      ],
+      "observed_mass_log": [
+        10,
+        11
+      ],
+      "expected_mass_log": [
+        8,
+        9
+      ],
+      "enhancement_low": 10,
+      "enhancement_high": 100,
+      "src": "Labbe+2023 (Nature 616, 266)"
+    },
+    "desi": {
+      "w0": -0.827,
+      "w0_err": 0.063,
+      "wa": -0.75,
+      "wa_err": 0.29,
+      "w_LCDM": -1.0,
+      "wa_LCDM": 0.0,
+      "src": "DESI 2024 DR1 (DESI Collab, arXiv:2404.03002)"
+    },
+    "s8": {
+      "S8_Planck": 0.832,
+      "S8_Planck_err": 0.013,
+      "S8_KiDS": 0.759,
+      "S8_KiDS_err": 0.023,
+      "S8_DES": 0.776,
+      "S8_DES_err": 0.017,
+      "src_Planck": "Planck 2018 (Aghanim+2020)",
+      "src_KiDS": "KiDS-1000 (Asgari+2021, A&A 645, A104)",
+      "src_DES": "DES Y3 (DES Collab 2022, PRD 105, 023520)"
+    }
+  },
+  "hubble_tension": {
+    "H0_ratio": 1.0843230403800477,
+    "direction_correct": true,
+    "best_k": 6,
+    "best_match": 1.083505882173848,
+    "best_delta": 0.0007536114015555325,
+    "magnitude_consistent": true,
+    "passed": true
+  },
+  "jwst_early_galaxies": {
+    "z_jwst": 8.0,
+    "D_ratio": 0.1111111111111111,
+    "lcdm_enhancement": 5.884611751279208e+18,
+    "cascade_fraction": 0.6180339887498948,
+    "direction_correct": true,
+    "passed": true
+  },
+  "desi_bao": {
+    "w0_observed": -0.827,
+    "wa_observed": -0.75,
+    "w_effective_uniform": 0.1450923329764835,
+    "w0_aligned": true,
+    "wa_aligned": true,
+    "direction_correct": true,
+    "passed": true
+  },
+  "s8_tension": {
+    "S8_Planck": 0.832,
+    "S8_lensing": 0.7675000000000001,
+    "S8_fractional_discrepancy": 0.07752403846153834,
+    "f_dissipation_needed": 0.14903810038369059,
+    "alpha_cascade_fraction": 0.3901868124232206,
+    "direction_correct": true,
+    "magnitude_consistent": true,
+    "passed": true
+  },
+  "synthesis": {
+    "aligned": 4,
+    "total": 4,
+    "p_chance": 0.0625,
+    "confidence": "MODERATE",
+    "interpretation": "All four anomalies align directionally with the cascade structure. This is unlikely by chance (6.25%) and comes from a single mechanism. This builds confidence but does NOT constitute proof. Next step: identify a NOVEL prediction (not post-hoc alignment) that can be tested with future data."
+  },
+  "verification": {
+    "checks": {
+      "Hubble tension: direction aligned": true,
+      "JWST early galaxies: direction aligned": true,
+      "DESI BAO: both w0 and wa directions aligned": true,
+      "S8 tension: direction aligned": true
+    },
+    "passed_count": 4,
+    "total": 4
+  }
+}

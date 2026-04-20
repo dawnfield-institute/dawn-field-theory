@@ -1,0 +1,94 @@
+{
+  "experiment": "exp_31a_self_reference_recursion",
+  "milestone": 7,
+  "series": "exp_31",
+  "block": "prediction",
+  "recursive_dynamics": {
+    "sr_map_count": 25,
+    "nsr_map_count": 25,
+    "sr_converged_runs": 121,
+    "nsr_converged_runs": 121,
+    "sr_mean_steps": 20.776859504132233,
+    "nsr_mean_steps": 41.421487603305785,
+    "step_ratio": 0.5015961691939346,
+    "sr_complexity_mean": 0.07881064364741998,
+    "nsr_complexity_mean": 0.20653619646065913,
+    "complexity_ratio": 0.38158272011381683
+  },
+  "phi_prevalence": {
+    "sr_phi_count": 119,
+    "sr_total": 1522,
+    "sr_phi_fraction": 0.07818659658344283,
+    "ctrl_phi_count": 224,
+    "ctrl_total": 2933,
+    "ctrl_phi_fraction": 0.07637231503579953,
+    "enrichment": 1.0237557490144547,
+    "p_value": 0.4359214367081454
+  },
+  "universality": {
+    "arithmetic": {
+      "phi_count": 4,
+      "total": 24,
+      "phi_fraction": 0.16666666666666666,
+      "phi_present": true
+    },
+    "matrix": {
+      "phi_count": 0,
+      "total": 20,
+      "phi_fraction": 0.0,
+      "phi_present": false
+    },
+    "graph": {
+      "phi_count": 0,
+      "total": 4,
+      "phi_fraction": 0.0,
+      "phi_present": false
+    },
+    "symbolic": {
+      "phi_count": 3,
+      "total": 5,
+      "phi_fraction": 0.6,
+      "phi_present": true
+    },
+    "classes_with_phi": 2,
+    "total_classes": 4
+  },
+  "dereference_control": {
+    "phi_map_count": 4,
+    "total_sr_maps": 25,
+    "lost_phi": 3,
+    "kept_phi": 1,
+    "lost_fraction": 0.75,
+    "linear_constant_contraction": 4,
+    "linear_total": 4,
+    "details": [
+      {
+        "name": "1+1/x",
+        "original_fp": 1.618033988738303,
+        "lost_phi": true
+      },
+      {
+        "name": "sqrt(1+x)",
+        "original_fp": 1.6180339887254112,
+        "lost_phi": true
+      },
+      {
+        "name": "1/(1+1/(1+x))",
+        "original_fp": 0.6180339887584789,
+        "lost_phi": true
+      },
+      {
+        "name": "2-1/(x+1)",
+        "original_fp": 1.6180339887383028,
+        "lost_phi": false
+      }
+    ]
+  },
+  "verification": {
+    "test1_recursive_dynamics": false,
+    "test2_phi_prevalence": false,
+    "test3_universality": false,
+    "test4_dereference_control": false,
+    "verified_count": 0
+  }
+}

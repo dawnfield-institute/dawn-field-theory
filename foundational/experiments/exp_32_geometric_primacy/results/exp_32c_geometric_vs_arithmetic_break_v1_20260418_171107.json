@@ -1,0 +1,247 @@
+{
+  "experiment": "exp_32c_geometric_vs_arithmetic_break",
+  "version": 1,
+  "milestone": 8,
+  "series": "exp_32",
+  "block": "geometric_primacy",
+  "hypothesis": "Geometric properties (manifold smoothness, exp map convergence, curvature) degrade BEFORE arithmetic properties (invertibility, closure) at the ADE L3\u2192L4 transition.",
+  "exp_map_vs_invertibility": {
+    "addition": {
+      "level": 1,
+      "exp_map_max_t": 100.0,
+      "exp_map_normalized": 1.0,
+      "invertibility_fraction": 1.0,
+      "n_invertible": 100,
+      "n_tested": 100
+    },
+    "multiplication": {
+      "level": 2,
+      "exp_map_max_t": 100.0,
+      "exp_map_normalized": 1.0,
+      "invertibility_fraction": 1.0,
+      "n_invertible": 100,
+      "n_tested": 100
+    },
+    "exponentiation": {
+      "level": 3,
+      "exp_map_max_t": 0.48802515836544336,
+      "exp_map_normalized": 0.08611906066618945,
+      "invertibility_fraction": 1.0,
+      "n_invertible": 100,
+      "n_tested": 100
+    },
+    "tetration": {
+      "level": 4,
+      "exp_map_max_t": 2.933166278390045,
+      "exp_map_normalized": 0.2967300128584957,
+      "invertibility_fraction": 0.7407407407407407,
+      "n_invertible": 20,
+      "n_tested": 27
+    },
+    "geometry_breaks_first": true
+  },
+  "continuous_interpolation": {
+    "t_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6000000000000001,
+      0.65,
+      0.7000000000000001,
+      0.75,
+      0.8,
+      0.8500000000000001,
+      0.9,
+      0.9500000000000001,
+      1.0
+    ],
+    "geometric_quality": [
+      0.998861680752359,
+      0.9999912324407734,
+      0.9999610786197008,
+      0.9999028205283916,
+      0.9998085393963122,
+      0.9996694621653488,
+      0.9994769044550394,
+      0.99922416107212,
+      0.9989096924158125,
+      0.9985415790055211,
+      0.9998894365057692,
+      0.9990856871670862,
+      0.998778693676588,
+      0.9983960983496943,
+      0.9979303568864919,
+      0.9973812302733359,
+      0.9967623270075537,
+      0.9961090784841505,
+      0.9954850241403765,
+      0.9949801775800806,
+      0.0
+    ],
+    "arithmetic_quality": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "geometry_50pct_crossing": 0.9748738712958049,
+    "arithmetic_50pct_crossing": 0.9750000000000001,
+    "geometry_at_L3": 0.998861680752359,
+    "arithmetic_at_L3": 1.0,
+    "geometry_breaks_first": true,
+    "l3_split": false,
+    "passed": true
+  },
+  "curvature_diagnostic": {
+    "addition": {
+      "level": 1,
+      "mean_curvature": 1.036180915973189e-13,
+      "curvature_class": "flat",
+      "mean_invertibility": 1.0,
+      "curvatures_by_a": [
+        2.3911867291689026e-14,
+        1.2912408337512135e-13,
+        1.307182078612322e-13,
+        1.3071820786123307e-13
+      ],
+      "invertibility_by_a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "multiplication": {
+      "level": 2,
+      "mean_curvature": 3.0564373687759854e-14,
+      "curvature_class": "flat",
+      "mean_invertibility": 1.0,
+      "curvatures_by_a": [
+        6.156475729635369e-14,
+        0.0,
+        3.787948487519984e-14,
+        2.2813252579485897e-14
+      ],
+      "invertibility_by_a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "exponentiation": {
+      "level": 3,
+      "mean_curvature": 0.046739828320239436,
+      "curvature_class": "flat",
+      "mean_invertibility": 1.0,
+      "curvatures_by_a": [
+        0.13365544969553728,
+        0.03945126812002486,
+        0.010372737133873574,
+        0.003479858331522036
+      ],
+      "invertibility_by_a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "tetration": {
+      "level": 4,
+      "mean_curvature": 0.0,
+      "curvature_class": "flat",
+      "mean_invertibility": 1.0,
+      "curvatures_by_a": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "invertibility_by_a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "curvature_monotonic": false,
+    "inv_stays_high": true,
+    "passed": false
+  },
+  "symmetry_dimension": {
+    "addition": {
+      "level": 1,
+      "n_valid_orbit_points": 100,
+      "effective_dimension": 1.0,
+      "arc_length_cv": 1.1844275735948029e-14,
+      "participation_ratio": 0.9999999999999998
+    },
+    "multiplication": {
+      "level": 2,
+      "n_valid_orbit_points": 100,
+      "effective_dimension": 1.0,
+      "arc_length_cv": 1.1615935097898823e-14,
+      "participation_ratio": 1.0000000000000002
+    },
+    "exponentiation": {
+      "level": 3,
+      "n_valid_orbit_points": 100,
+      "effective_dimension": 1.0,
+      "arc_length_cv": 0.10890417735338898,
+      "participation_ratio": 1.0055316999553858
+    },
+    "tetration": {
+      "level": 4,
+      "n_valid_orbit_points": 100,
+      "effective_dimension": 0.0,
+      "arc_length_cv": 1.549800637985138,
+      "participation_ratio": 1.0878115137563664
+    },
+    "dimension_trajectory": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "l3_degraded": false,
+    "l4_collapsed": true,
+    "passed": true
+  },
+  "verification": {
+    "checks": {
+      "Exp map radius finite at L3, invertibility intact": true,
+      "Continuous interpolation: geometry degrades first": true,
+      "Curvature monotonically increases while invertibility persists": false,
+      "Symmetry group dimension collapses at L4": true
+    },
+    "passed_count": 3,
+    "total": 4
+  }
+}

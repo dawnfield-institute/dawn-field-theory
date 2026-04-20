@@ -1,0 +1,107 @@
+{
+  "experiment": "exp_31b_geometric_primacy",
+  "version": 1,
+  "milestone": 7,
+  "series": "exp_31",
+  "block": "geometric_primacy",
+  "hypothesis": "Geometric constraints (scale invariance) are ontologically prior to arithmetic readouts (phi). The direction is geometry \u2192 arithmetic, not the reverse.",
+  "many_to_one": {
+    "n_seeds": 30,
+    "arithmetic": {
+      "mean": 1.6368997007549457,
+      "std": 0.17881737529645828,
+      "delta_phi": 0.011659651241088339,
+      "cv": 0.10924149794516236
+    },
+    "geometry_at_equilibrium": {
+      "si_quality_mean": 0.7097729610410294,
+      "si_quality_std": 0.39576236158206646,
+      "topology_correlation_mean": -0.11009811425486221,
+      "topology_correlation_std": 0.1655657090721329,
+      "split_diversity_mean": 0.2544553104504362,
+      "split_diversity_std": 0.08441388036646483,
+      "geom_cv": 0.3317434413808679
+    },
+    "many_to_one": "False"
+  },
+  "perturbation_asymmetry": {
+    "n_seeds": 20,
+    "arithmetic_perturbation": {
+      "mean_recovery_steps": 1206.3,
+      "mean_final_delta_phi": 0.22671854109017436,
+      "recovery_times": [
+        3000,
+        3000,
+        3000,
+        35,
+        41,
+        0,
+        26,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        3000,
+        6,
+        3000,
+        3000,
+        6,
+        3000,
+        3000
+      ]
+    },
+    "geometric_perturbation": {
+      "mean_recovery_steps": 1518.45,
+      "mean_final_delta_phi": 0.0844732840953198,
+      "recovery_times": [
+        27,
+        3000,
+        15,
+        3000,
+        105,
+        3000,
+        3000,
+        0,
+        3000,
+        3000,
+        26,
+        60,
+        3000,
+        38,
+        3000,
+        11,
+        74,
+        3000,
+        13,
+        3000
+      ]
+    },
+    "asymmetry": {
+      "arith_recovers_faster": "True",
+      "recovery_ratio": 1.258766476000995,
+      "passed": "True"
+    }
+  },
+  "emergent_structure": {
+    "n_seeds": 20,
+    "initial_coupling_mean": 0.8586534671780834,
+    "final_coupling_mean": 0.8191878713695298,
+    "coupling_increase": -0.03946559580855369,
+    "final_ratio_mean": 1.5729361931335506,
+    "final_delta_phi": 0.027871970508596793,
+    "structure_emerged": "False",
+    "ratio_near_phi": "True",
+    "passed": "False"
+  },
+  "verification": {
+    "checks": {
+      "Many-to-one: many geometries \u2192 same arithmetic (phi)": "False",
+      "Perturbation asymmetry: geometry controls arithmetic": "True",
+      "Emergent structure: geometric drive creates topology": "False"
+    },
+    "passed_count": 1,
+    "total": 3
+  }
+}
