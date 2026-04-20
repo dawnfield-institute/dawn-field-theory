@@ -1,0 +1,115 @@
+{
+  "experiment": "exp_33c",
+  "title": "Bekenstein-Hawking Entropy from Cascade Counting",
+  "version": "v1",
+  "series": "exp_33_black_hole_cascade",
+  "hypothesis": "BH entropy = independent cascade choices on the horizon",
+  "timestamp": "2026-04-20T15:26:31.627238",
+  "tests": {
+    "area_scaling": {
+      "test": "area_scaling",
+      "alpha_S_vs_M": 2.0000000000000004,
+      "beta_S_vs_A": 0.9999999999999999,
+      "expected_alpha": 2.0,
+      "expected_beta": 1.0,
+      "S_over_A_planck": 0.2500000000000043,
+      "area_scaling_confirmed": true,
+      "passed": true
+    },
+    "quarter_coefficient": {
+      "test": "quarter_coefficient",
+      "schemes": {
+        "A: Shannon": {
+          "coeff": 0.6650183864440036,
+          "error_pct": 166.00735457760143
+        },
+        "B: ln(phi)": {
+          "coeff": 0.48121182505960347,
+          "error_pct": 92.4847300238414
+        },
+        "C: ln(2)": {
+          "coeff": 0.6931471805599453,
+          "error_pct": 177.2588722239781
+        },
+        "E: microstates": {
+          "coeff": 0.48121182505960347,
+          "error_pct": 92.4847300238414
+        },
+        "F: 4-cell DOF": {
+          "coeff": 0.25,
+          "error_pct": 0.0
+        },
+        "G: 2^dim": {
+          "coeff": 0.25,
+          "error_pct": 0.0
+        }
+      },
+      "shannon_entropy": 0.6650183864440036,
+      "ln_phi": 0.48121182505960347,
+      "four_ln_phi": 1.9248473002384139,
+      "consistent": true,
+      "unique_derivation": false,
+      "interpretation": "2D branching (4 cells per DOF) or 4*ln(phi) cell area",
+      "passed": true
+    },
+    "page_curve": {
+      "test": "page_curve",
+      "N_leaves": 1024,
+      "tree_depth": 10,
+      "turnover_fraction": 0.7451171875,
+      "max_entropy": 238.78920370290166,
+      "page_max_entropy": 226.891356446692,
+      "final_entropy": 177.44567822334633,
+      "turnover_near_half": false,
+      "decreasing_after_peak": true,
+      "returns_to_zero": false,
+      "entropy_at_10pct": [
+        0.0,
+        69.66129164627456,
+        117.48844710491092,
+        172.24707436914673,
+        200.3195351818246,
+        213.4893316124636,
+        225.96598086254264,
+        237.40290934178176,
+        233.93717343898203,
+        211.06331648050377,
+        177.44567822334633
+      ],
+      "passed": false
+    },
+    "holographic_principle": {
+      "test": "holographic_principle",
+      "results_by_dimension": {
+        "1": {
+          "dimension": 1,
+          "gamma": 9.412330854885962e-17,
+          "expected_gamma": 0.0,
+          "gamma_error": 9.412330854885962e-17,
+          "area_scaling": true
+        },
+        "2": {
+          "dimension": 2,
+          "gamma": 1.0931476233886797,
+          "expected_gamma": 1.0,
+          "gamma_error": 0.09314762338867966,
+          "area_scaling": true
+        },
+        "3": {
+          "dimension": 3,
+          "gamma": 2.2250927652202876,
+          "expected_gamma": 2.0,
+          "gamma_error": 0.22509276522028765,
+          "area_scaling": false
+        }
+      },
+      "all_area_scaling": false,
+      "passed": false
+    }
+  },
+  "summary": {
+    "passed": 2,
+    "total": 4,
+    "score": "2/4"
+  }
+}

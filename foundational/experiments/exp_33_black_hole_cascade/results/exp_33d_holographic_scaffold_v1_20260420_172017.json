@@ -1,0 +1,395 @@
+{
+  "experiment": "exp_33d_holographic_scaffold",
+  "timestamp": "20260420_172017",
+  "tests": {
+    "decellularization": {
+      "test": "decellularization",
+      "results_by_depth": {
+        "4": {
+          "n_leaves": 16,
+          "n_interior": 15,
+          "max_error": 0.0,
+          "fidelity": 1.0
+        },
+        "6": {
+          "n_leaves": 64,
+          "n_interior": 63,
+          "max_error": 0.0,
+          "fidelity": 1.0
+        },
+        "8": {
+          "n_leaves": 256,
+          "n_interior": 255,
+          "max_error": 0.0,
+          "fidelity": 1.0
+        },
+        "10": {
+          "n_leaves": 1024,
+          "n_interior": 1023,
+          "max_error": 0.0,
+          "fidelity": 1.0
+        },
+        "12": {
+          "n_leaves": 4096,
+          "n_interior": 4095,
+          "max_error": 0.0,
+          "fidelity": 1.0
+        },
+        "14": {
+          "n_leaves": 16384,
+          "n_interior": 16383,
+          "max_error": 0.0,
+          "fidelity": 1.0
+        }
+      },
+      "all_perfect": true,
+      "max_error_overall": 0.0,
+      "passed": true
+    },
+    "recellularization": {
+      "test": "recellularization",
+      "depth": 10,
+      "n_leaves": 1024,
+      "boundary_types": {
+        "(a) Uniform": {
+          "valid": true,
+          "conservation_ok": true,
+          "non_negative": true,
+          "root_value": 1.0,
+          "interior_mean": 0.009775171065493646,
+          "interior_std": 0.043099547916890454
+        },
+        "(b) PAC canonical": {
+          "valid": true,
+          "conservation_ok": true,
+          "non_negative": true,
+          "root_value": 0.9999999999999997,
+          "interior_mean": 0.009775171065493643,
+          "interior_std": 0.044400257871781694
+        },
+        "(c) Random Dirichlet": {
+          "valid": true,
+          "conservation_ok": true,
+          "non_negative": true,
+          "root_value": 1.000000000000001,
+          "interior_mean": 0.009775171065493655,
+          "interior_std": 0.043196701038269954
+        },
+        "(d) Localized delta": {
+          "valid": true,
+          "conservation_ok": true,
+          "non_negative": true,
+          "root_value": 1.0,
+          "interior_mean": 0.009775171065493646,
+          "interior_std": 0.09838504508376253
+        },
+        "(e) Power-law": {
+          "valid": true,
+          "conservation_ok": true,
+          "non_negative": true,
+          "root_value": 0.9999999999999999,
+          "interior_mean": 0.009775171065493646,
+          "interior_std": 0.08515953343160784
+        },
+        "(f) Thermal": {
+          "valid": true,
+          "conservation_ok": true,
+          "non_negative": true,
+          "root_value": 1.0,
+          "interior_mean": 0.009775171065493646,
+          "interior_std": 0.06171245874272908
+        }
+      },
+      "all_valid": true,
+      "config_dim_boundary": 1023,
+      "config_dim_volume": 2046,
+      "dim_ratio": 0.5,
+      "passed": true
+    },
+    "subregion_reconstruction": {
+      "test": "subregion_reconstruction",
+      "depth": 10,
+      "n_leaves": 1024,
+      "contiguous_data": [
+        [
+          0.0,
+          0,
+          0.0
+        ],
+        [
+          0.05,
+          4,
+          0.04787493893502687
+        ],
+        [
+          0.1,
+          4,
+          0.09770395701025891
+        ],
+        [
+          0.15000000000000002,
+          4,
+          0.14851001465559355
+        ],
+        [
+          0.2,
+          5,
+          0.1978505129457743
+        ],
+        [
+          0.25,
+          1,
+          0.24963361016121152
+        ],
+        [
+          0.30000000000000004,
+          5,
+          0.2975085490962384
+        ],
+        [
+          0.35000000000000003,
+          5,
+          0.34733756717147046
+        ],
+        [
+          0.4,
+          5,
+          0.3981436248168051
+        ],
+        [
+          0.45,
+          6,
+          0.4474841231069858
+        ],
+        [
+          0.5,
+          1,
+          0.49975574010747437
+        ],
+        [
+          0.55,
+          5,
+          0.5476306790425012
+        ],
+        [
+          0.6000000000000001,
+          5,
+          0.5974596971177333
+        ],
+        [
+          0.65,
+          5,
+          0.6482657547630679
+        ],
+        [
+          0.7000000000000001,
+          6,
+          0.6976062530532486
+        ],
+        [
+          0.75,
+          2,
+          0.7493893502686859
+        ],
+        [
+          0.8,
+          6,
+          0.7972642892037127
+        ],
+        [
+          0.8500000000000001,
+          6,
+          0.8470933072789448
+        ],
+        [
+          0.9,
+          6,
+          0.8978993649242795
+        ],
+        [
+          0.9500000000000001,
+          7,
+          0.9472398632144602
+        ],
+        [
+          1.0,
+          0,
+          1.0
+        ]
+      ],
+      "random_data": [
+        [
+          0.0,
+          0,
+          0.0
+        ],
+        [
+          0.05,
+          49.32,
+          0.0257352222765022
+        ],
+        [
+          0.1,
+          96.28,
+          0.05262335124572545
+        ],
+        [
+          0.15000000000000002,
+          142.0,
+          0.0810942843185149
+        ],
+        [
+          0.2,
+          183.92,
+          0.11044455300439669
+        ],
+        [
+          0.25,
+          222.96,
+          0.1412017586712262
+        ],
+        [
+          0.30000000000000004,
+          258.36,
+          0.1737371763556424
+        ],
+        [
+          0.35000000000000003,
+          290.86,
+          0.20768930141670744
+        ],
+        [
+          0.4,
+          321.96,
+          0.2433023937469468
+        ],
+        [
+          0.45,
+          346.44,
+          0.2811724474841231
+        ],
+        [
+          0.5,
+          367.58,
+          0.32067415730337073
+        ],
+        [
+          0.55,
+          384.66,
+          0.3621592574499267
+        ],
+        [
+          0.6000000000000001,
+          394.46,
+          0.4072007816316562
+        ],
+        [
+          0.65,
+          398.5,
+          0.45603321934538343
+        ],
+        [
+          0.7000000000000001,
+          398.62,
+          0.5058036150464094
+        ],
+        [
+          0.75,
+          386.82,
+          0.5613971665852467
+        ],
+        [
+          0.8,
+          368.08,
+          0.62038104543234
+        ],
+        [
+          0.8500000000000001,
+          327.38,
+          0.6900928187591596
+        ],
+        [
+          0.9,
+          272.36,
+          0.7677772349780164
+        ],
+        [
+          0.9500000000000001,
+          182.84,
+          0.8613385442110405
+        ],
+        [
+          1.0,
+          0,
+          1.0
+        ]
+      ],
+      "contig_max_rt": 7,
+      "contig_rt_half": 1,
+      "random_rt_half": 367.58,
+      "locality_ratio": 367.58,
+      "purification_holds": false,
+      "contig_is_area_law": true,
+      "rt_theoretical_max": 20,
+      "H_bond": 0.6650183864440036,
+      "passed": false
+    },
+    "information_decomposition": {
+      "test": "information_decomposition",
+      "depth": 8,
+      "n_leaves": 256,
+      "n_total": 511,
+      "n_ensemble": 5000,
+      "rank_full": 255,
+      "rank_leaves": 255,
+      "rank_interior": 127,
+      "rank_increase": 0,
+      "expected_rank": 255,
+      "rank_ratio": 1.0,
+      "scaling_results": [
+        {
+          "depth": 4,
+          "n_leaves": 16,
+          "rank": 15,
+          "expected": 15,
+          "match": true
+        },
+        {
+          "depth": 5,
+          "n_leaves": 32,
+          "rank": 31,
+          "expected": 31,
+          "match": true
+        },
+        {
+          "depth": 6,
+          "n_leaves": 64,
+          "rank": 63,
+          "expected": 63,
+          "match": true
+        },
+        {
+          "depth": 7,
+          "n_leaves": 128,
+          "rank": 127,
+          "expected": 127,
+          "match": true
+        },
+        {
+          "depth": 8,
+          "n_leaves": 256,
+          "rank": 255,
+          "expected": 255,
+          "match": true
+        }
+      ],
+      "all_scaling_match": true,
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 3,
+    "total": 4,
+    "score": "3/4"
+  }
+}
