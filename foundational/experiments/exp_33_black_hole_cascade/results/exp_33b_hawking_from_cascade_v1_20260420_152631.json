@@ -1,0 +1,272 @@
+{
+  "experiment": "exp_33b",
+  "title": "Hawking Temperature from Cascade Structure",
+  "version": "v1",
+  "series": "exp_33_black_hole_cascade",
+  "hypothesis": "Hawking temperature follows from cascade density gradient at horizon",
+  "timestamp": "2026-04-20T15:26:31.051934",
+  "tests": {
+    "temperature_scaling": {
+      "test": "temperature_scaling",
+      "mass_range": [
+        {
+          "M_solar": 3.0,
+          "M_kg": 5.967e+30,
+          "r_s_m": 8862.379665166214,
+          "n_cascade_levels": 183.92480254730643,
+          "T_hawking_K": 2.0561432375436094e-08,
+          "T_cascade_K": 2.0561432375436088e-08,
+          "TM_hawking": 1.2269006698422717e+23,
+          "TM_cascade": 1.2269006698422712e+23
+        },
+        {
+          "M_solar": 10.0,
+          "M_kg": 1.989e+31,
+          "r_s_m": 29541.26555055405,
+          "n_cascade_levels": 186.4267626854988,
+          "T_hawking_K": 6.168429712630828e-09,
+          "T_cascade_K": 6.168429712630826e-09,
+          "TM_hawking": 1.2269006698422716e+23,
+          "TM_cascade": 1.2269006698422712e+23
+        },
+        {
+          "M_solar": 30.0,
+          "M_kg": 5.967e+31,
+          "r_s_m": 88623.79665166215,
+          "n_cascade_levels": 188.70977451408808,
+          "T_hawking_K": 2.0561432375436093e-09,
+          "T_cascade_K": 2.056143237543609e-09,
+          "TM_hawking": 1.2269006698422716e+23,
+          "TM_cascade": 1.2269006698422714e+23
+        },
+        {
+          "M_solar": 100.0,
+          "M_kg": 1.989e+32,
+          "r_s_m": 295412.65550554055,
+          "n_cascade_levels": 191.21173465228048,
+          "T_hawking_K": 6.168429712630828e-10,
+          "T_cascade_K": 6.168429712630827e-10,
+          "TM_hawking": 1.2269006698422717e+23,
+          "TM_cascade": 1.2269006698422714e+23
+        },
+        {
+          "M_solar": 1000.0,
+          "M_kg": 1.9889999999999998e+33,
+          "r_s_m": 2954126.555055405,
+          "n_cascade_levels": 195.99670661906217,
+          "T_hawking_K": 6.168429712630828e-11,
+          "T_cascade_K": 6.168429712630828e-11,
+          "TM_hawking": 1.2269006698422716e+23,
+          "TM_cascade": 1.2269006698422716e+23
+        },
+        {
+          "M_solar": 10000.0,
+          "M_kg": 1.989e+34,
+          "r_s_m": 29541265.55055405,
+          "n_cascade_levels": 200.7816785858438,
+          "T_hawking_K": 6.168429712630827e-12,
+          "T_cascade_K": 6.168429712630827e-12,
+          "TM_hawking": 1.2269006698422714e+23,
+          "TM_cascade": 1.2269006698422714e+23
+        },
+        {
+          "M_solar": 100000.0,
+          "M_kg": 1.989e+35,
+          "r_s_m": 295412655.5055405,
+          "n_cascade_levels": 205.56665055262548,
+          "T_hawking_K": 6.168429712630826e-13,
+          "T_cascade_K": 6.168429712630828e-13,
+          "TM_hawking": 1.2269006698422712e+23,
+          "TM_cascade": 1.2269006698422717e+23
+        },
+        {
+          "M_solar": 1000000.0,
+          "M_kg": 1.989e+36,
+          "r_s_m": 2954126555.0554047,
+          "n_cascade_levels": 210.35162251940716,
+          "T_hawking_K": 6.168429712630828e-14,
+          "T_cascade_K": 6.168429712630827e-14,
+          "TM_hawking": 1.2269006698422716e+23,
+          "TM_cascade": 1.2269006698422714e+23
+        },
+        {
+          "M_solar": 10000000.0,
+          "M_kg": 1.9889999999999998e+37,
+          "r_s_m": 29541265550.55405,
+          "n_cascade_levels": 215.1365944861888,
+          "T_hawking_K": 6.1684297126308274e-15,
+          "T_cascade_K": 6.168429712630827e-15,
+          "TM_hawking": 1.2269006698422714e+23,
+          "TM_cascade": 1.2269006698422712e+23
+        },
+        {
+          "M_solar": 100000000.0,
+          "M_kg": 1.9889999999999998e+38,
+          "r_s_m": 295412655505.54047,
+          "n_cascade_levels": 219.92156645297047,
+          "T_hawking_K": 6.168429712630827e-16,
+          "T_cascade_K": 6.168429712630827e-16,
+          "TM_hawking": 1.2269006698422714e+23,
+          "TM_cascade": 1.2269006698422714e+23
+        },
+        {
+          "M_solar": 1000000000.0,
+          "M_kg": 1.989e+39,
+          "r_s_m": 2954126555055.405,
+          "n_cascade_levels": 224.70653841975215,
+          "T_hawking_K": 6.168429712630827e-17,
+          "T_cascade_K": 6.168429712630827e-17,
+          "TM_hawking": 1.2269006698422714e+23,
+          "TM_cascade": 1.2269006698422714e+23
+        },
+        {
+          "M_solar": 10000000000.0,
+          "M_kg": 1.989e+40,
+          "r_s_m": 29541265550554.047,
+          "n_cascade_levels": 229.4915103865338,
+          "T_hawking_K": 6.168429712630828e-18,
+          "T_cascade_K": 6.168429712630828e-18,
+          "TM_hawking": 1.2269006698422716e+23,
+          "TM_cascade": 1.2269006698422716e+23
+        }
+      ],
+      "TM_mean": 1.2269006698422714e+23,
+      "TM_cv": 1.1842438119009776e-16,
+      "hawking_constant": 1.2269006698422716e+23,
+      "ratio_to_hawking": 0.9999999999999999,
+      "passed": true
+    },
+    "coefficient_analysis": {
+      "test": "coefficient_analysis",
+      "T_hawking": 6.168429712630828e-09,
+      "T_cascade": 6.168429712630826e-09,
+      "ratio_f": 0.9999999999999998,
+      "exact_match": true,
+      "best_phi_match": "1 (exact match)",
+      "best_phi_error": 2.220446049250313e-16,
+      "interpretation": "cascade matches Hawking exactly because cascade density produces Schwarzschild metric",
+      "passed": true
+    },
+    "pac_necessity": {
+      "test": "pac_necessity",
+      "case_A_pac": {
+        "g_in": 0.6180339887498948,
+        "g_out": 0.38196601125010515,
+        "sum": 1.0,
+        "conserved": true,
+        "terminated": true,
+        "mean_ratio": 1.618033988749895,
+        "ratio_cv": 8.083119620742242e-17,
+        "phi_error": 0.0
+      },
+      "case_B_no_conservation": {
+        "g_in": 0.7,
+        "g_out": 0.5,
+        "sum": 1.2,
+        "conserved": false,
+        "terminated": false,
+        "mean_ratio": 1.4285714285714288,
+        "ratio_cv": 1.313633598143319e-16,
+        "phi_error": 0.11709430178586437
+      },
+      "case_C_no_duality": {
+        "g_in": 0.5,
+        "g_out": 0.5,
+        "sum": 1.0,
+        "conserved": true,
+        "terminated": true,
+        "mean_ratio": 2.0,
+        "ratio_cv": 0.0,
+        "phi_error": 0.23606797749978967
+      },
+      "case_D_duality_no_conservation": {
+        "g_in": 0.5,
+        "g_out": 0.25,
+        "sum": 0.75,
+        "conserved": false,
+        "terminated": true,
+        "mean_ratio": 2.0,
+        "ratio_cv": 0.0,
+        "phi_error": 0.23606797749978967
+      },
+      "uniqueness_verification": 1.0,
+      "pac_correct": true,
+      "nocon_fails": true,
+      "nodual_wrong": true,
+      "wrong_nocon": true,
+      "passed": true
+    },
+    "evaporation_lifetime": {
+      "test": "evaporation_lifetime",
+      "mass_results": [
+        {
+          "M_solar": 1e-20,
+          "M_kg": 19889999999.999996,
+          "n_levels": 85.94235138308383,
+          "t_page_s": 661876036926886.5,
+          "t_formation_s": 9.853905514378899e-25,
+          "evap_over_form": 6.7168904345700455e+38
+        },
+        {
+          "M_solar": 1e-15,
+          "M_kg": 1989000000000000.0,
+          "n_levels": 109.86721121699216,
+          "t_page_s": 6.618760369268867e+29,
+          "t_formation_s": 9.8539055143789e-20,
+          "evap_over_form": 6.716890434570047e+48
+        },
+        {
+          "M_solar": 1e-10,
+          "M_kg": 1.989e+20,
+          "n_levels": 133.7920710509005,
+          "t_page_s": 6.618760369268869e+44,
+          "t_formation_s": 9.8539055143789e-15,
+          "evap_over_form": 6.716890434570049e+58
+        },
+        {
+          "M_solar": 1e-05,
+          "M_kg": 1.989e+25,
+          "n_levels": 157.71693088480882,
+          "t_page_s": 6.61876036926887e+59,
+          "t_formation_s": 9.853905514378901e-10,
+          "evap_over_form": 6.716890434570048e+68
+        },
+        {
+          "M_solar": 1.0,
+          "M_kg": 1.989e+30,
+          "n_levels": 181.64179071871715,
+          "t_page_s": 6.618760369268868e+74,
+          "t_formation_s": 9.8539055143789e-05,
+          "evap_over_form": 6.716890434570048e+78
+        },
+        {
+          "M_solar": 10.0,
+          "M_kg": 1.989e+31,
+          "n_levels": 186.4267626854988,
+          "t_page_s": 6.618760369268868e+77,
+          "t_formation_s": 0.00098539055143789,
+          "evap_over_form": 6.716890434570047e+80
+        },
+        {
+          "M_solar": 1000000.0,
+          "M_kg": 1.989e+36,
+          "n_levels": 210.35162251940716,
+          "t_page_s": 6.618760369268868e+92,
+          "t_formation_s": 98.539055143789,
+          "evap_over_form": 6.716890434570047e+90
+        }
+      ],
+      "power_law_exponent": 3.000000000000001,
+      "expected_exponent": 3.0,
+      "power_law_error": 8.881784197001252e-16,
+      "asymmetry_confirmed": true,
+      "interpretation": "M^3 from Stefan-Boltzmann + area; cascade is consistent, not derivatory",
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 4,
+    "total": 4,
+    "score": "4/4"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "experiment": "exp_33a",
+  "title": "Black Hole as Cascade Zeno Completion",
+  "version": "v1",
+  "series": "exp_33_black_hole_cascade",
+  "hypothesis": "A black hole IS a PAC cascade at Zeno completion",
+  "timestamp": "2026-04-20T15:26:30.402967",
+  "tests": {
+    "cascade_infall_isomorphism": {
+      "test": "cascade_infall_isomorphism",
+      "r0_over_rs": 10.0,
+      "n_levels_above_horizon": 5,
+      "late_stage_ratio_mean": 1.6219420653961005,
+      "phi": 1.618033988749895,
+      "late_stage_error_pct": 0.24153241979947754,
+      "convergence_sequence": [
+        0.6180339887498948,
+        0.23606797749978967,
+        0.11803398874989496,
+        0.06524758424985273,
+        0.037855260454430786,
+        0.022542485937368534,
+        0.013624883749880407,
+        0.008307453166540515,
+        0.0050919869735624465,
+        0.003131077613512019,
+        0.0019290723114353454,
+        0.0011899367811263673,
+        0.0007345473103378356
+      ],
+      "bb_energy_ratio": 1.618033988749895,
+      "analytical_ratios": [
+        2.618033988749895,
+        2.0,
+        1.8090169943749477,
+        1.723606797749979,
+        1.6792850868181437,
+        1.6545084971874737,
+        1.6400795137499675,
+        1.6314757303333054,
+        1.6262729967433907,
+        1.6231001787499713,
+        1.6211552933165536,
+        1.619959346906221,
+        1.6192225112643663
+      ],
+      "passed": true,
+      "direction": "ALIGNED"
+    },
+    "zeno_completion": {
+      "test": "zeno_completion",
+      "bb_total_time": 11.925931224119296,
+      "bb_interval_ratio": 0.7861513777574243,
+      "bb_interval_ratio_cv": 5.168522397105009e-15,
+      "bh_total_proper_time": 49.67294132898051,
+      "bh_interval_ratio": 0.4857989329717799,
+      "bh_interval_ratio_cv": 0.1397313174302787,
+      "bh_phi_match": "1/phi^{3/2}",
+      "bh_phi_match_error_pct": 0.01427110780769138,
+      "both_finite": true,
+      "both_geometric": true,
+      "phi_structure": true,
+      "passed": true
+    },
+    "horizon_cascade_boundary": {
+      "test": "horizon_cascade_boundary",
+      "r0_over_rs": 10.0,
+      "tau_total": 49.67294132898051,
+      "tau_at_horizon": 48.98512840633273,
+      "outside_fraction": 0.9861531670111411,
+      "coord_time_at_r_1p001": 58.93593399431273,
+      "log_divergence_ratio": 0.900557095148266,
+      "log_divergence_confirmed": true,
+      "proper_time_finite": true,
+      "coord_time_divergent": true,
+      "passed": true
+    },
+    "scale_invariance": {
+      "test": "scale_invariance",
+      "stepping_results": {
+        "phi^{1/3}": {
+          "alpha": 1.1739849967053284,
+          "n_levels": 29,
+          "n_ratios": 27,
+          "mean_ratio": 1.2718057768786564,
+          "cv": 0.16028357857723266,
+          "late_mean": 1.1772859656830759,
+          "late_cv": 0.0006438870504158742,
+          "ratio_vs_alpha": 0.0028117641937599656
+        },
+        "phi^{1/4}": {
+          "alpha": 1.1278384855616823,
+          "n_levels": 30,
+          "n_ratios": 28,
+          "mean_ratio": 1.230002968028822,
+          "cv": 0.16316055105501026,
+          "late_mean": 1.1337932021557835,
+          "late_cv": 0.0009317604467751031,
+          "ratio_vs_alpha": 0.005279760063459473
+        },
+        "phi^{1/2}": {
+          "alpha": 1.272019649514069,
+          "n_levels": 20,
+          "n_ratios": 18,
+          "mean_ratio": 1.4007689181274843,
+          "cv": 0.1698924097218837,
+          "late_mean": 1.2783087249524687,
+          "late_cv": 0.0016880096078700658,
+          "ratio_vs_alpha": 0.004944165320718325
+        },
+        "phi^{2/3}": {
+          "alpha": 1.3782407724892103,
+          "n_levels": 15,
+          "n_ratios": 13,
+          "mean_ratio": 1.5397156533759697,
+          "cv": 0.1737802978217598,
+          "late_mean": 1.391011335668494,
+          "late_cv": 0.004197603938775498,
+          "ratio_vs_alpha": 0.009265843410088057
+        },
+        "phi": {
+          "alpha": 1.618033988749895,
+          "n_levels": 10,
+          "n_ratios": 8,
+          "mean_ratio": 1.8445008261204636,
+          "cv": 0.1702574603864361,
+          "late_mean": 1.665791125167774,
+          "late_cv": 0.019893313381669088,
+          "ratio_vs_alpha": 0.02951553351161465
+        },
+        "pi": {
+          "alpha": 3.141592653589793,
+          "n_levels": 5,
+          "n_ratios": 3,
+          "mean_ratio": 3.579200819008971,
+          "cv": 0.11278704164607838,
+          "late_mean": 3.579200819008971,
+          "late_cv": 0.11278704164607838,
+          "ratio_vs_alpha": 0.13929500532767597
+        },
+        "3": {
+          "alpha": 3.0,
+          "n_levels": 5,
+          "n_ratios": 3,
+          "mean_ratio": 3.442307692307692,
+          "cv": 0.11638361260334992,
+          "late_mean": 3.442307692307692,
+          "late_cv": 0.11638361260334992,
+          "ratio_vs_alpha": 0.14743589743589736
+        },
+        "e": {
+          "alpha": 2.718281828459045,
+          "n_levels": 5,
+          "n_ratios": 3,
+          "mean_ratio": 3.1712724933058367,
+          "cv": 0.12412362733120164,
+          "late_mean": 3.1712724933058367,
+          "late_cv": 0.12412362733120164,
+          "ratio_vs_alpha": 0.16664595263971782
+        },
+        "phi^2": {
+          "alpha": 2.618033988749895,
+          "n_levels": 5,
+          "n_ratios": 3,
+          "mean_ratio": 3.075328890437411,
+          "cv": 0.12707334702760512,
+          "late_mean": 3.075328890437411,
+          "late_cv": 0.12707334702760512,
+          "ratio_vs_alpha": 0.17467110956258958
+        },
+        "phi^{3/2}": {
+          "alpha": 2.0581710272714924,
+          "n_levels": 7,
+          "n_ratios": 5,
+          "mean_ratio": 2.3693682975402965,
+          "cv": 0.15173601344467819,
+          "late_mean": 2.3693682975402965,
+          "late_cv": 0.15173601344467819,
+          "ratio_vs_alpha": 0.15120087988088965
+        },
+        "2": {
+          "alpha": 2.0,
+          "n_levels": 7,
+          "n_ratios": 5,
+          "mean_ratio": 2.3150230414746544,
+          "cv": 0.15464048675990605,
+          "late_mean": 2.3150230414746544,
+          "late_cv": 0.15464048675990605,
+          "ratio_vs_alpha": 0.15751152073732722
+        }
+      },
+      "best_stepping": "phi^{1/3}",
+      "best_is_phi_power": true,
+      "natural_stepping_ratio": 3.066325465068034,
+      "natural_stepping_cv": 1.1627399019069173,
+      "natural_best_match": "e",
+      "natural_match_error_pct": 12.803809853899134,
+      "phi_in_top3": true,
+      "natural_phi": false,
+      "passed": true
+    }
+  },
+  "summary": {
+    "passed": 4,
+    "total": 4,
+    "score": "4/4"
+  }
+}
