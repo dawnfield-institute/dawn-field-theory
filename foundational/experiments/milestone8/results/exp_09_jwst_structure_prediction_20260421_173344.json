@@ -1,0 +1,44 @@
+{
+  "experiment": "exp_09_jwst_structure_prediction",
+  "milestone": 8,
+  "block": "C",
+  "tests": {
+    "test1_abundance_z8": {
+      "test": "abundance_z8",
+      "z": 8.0,
+      "n_lcdm": 1.741822564306486e-16,
+      "n_dft": 1.1556907645454239e-05,
+      "n_jwst": 1e-05,
+      "log_ratio_dft_jwst": 0.06284164271982416,
+      "passed": "True"
+    },
+    "test2_mass_function_slope": {
+      "test": "mass_function_slope",
+      "slope_lcdm": 80.16750172788238,
+      "slope_dft": -0.0,
+      "delta_slope": 80.16750172788238,
+      "passed": "True"
+    },
+    "test3_redshift_ratio": {
+      "test": "redshift_ratio",
+      "ratio_lcdm": 1.1414054925866207e-13,
+      "ratio_dft": 0.25022587204908237,
+      "ratio_jwst": 0.3,
+      "dft_closer": "True",
+      "passed": "True"
+    },
+    "test4_pac_regulator": {
+      "test": "pac_regulator",
+      "z": 12.0,
+      "f_regulated": 0.002891837293774494,
+      "n_regulated": 2.891837293774494e-06,
+      "n_lcdm": 1.9881258420107352e-29,
+      "n_jwst": 3e-06,
+      "log_ratio": 0.015947400538298243,
+      "within_factor3": "True",
+      "passed": "True"
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-21T17:33:44.594682"
+}

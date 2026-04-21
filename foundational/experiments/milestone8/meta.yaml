@@ -1,0 +1,74 @@
+schema_version: "2.0"
+description: >
+  Milestone 8: BSM Predictions & Observational Contact -- grounds DFT with
+  falsifiable beyond-Standard-Model predictions. 10 experiments across 4 blocks.
+  Block A: dark sector foundations (depth-73 coupling, mass, relic abundance).
+  Block B: particle predictions (Z' at 395 GeV, neutrino masses, Fibonacci depth sweep).
+  Block C: cosmological contact (Hubble tension, cosmological constant, JWST structure).
+  Block D: synthesis and falsification protocol (master consistency test).
+  First milestone in the M8-M9-M10 arc (BSM predictions -> Infodynamics mechanism -> Quantum gravity).
+semantic_scope: "research"
+proficiency_level: "research"
+version: "1.0.0"
+status: "completed"
+date_created: "2026-04-21"
+date_updated: "2026-04-21"
+
+files:
+  - "[README.md]": "Hypothesis, experiment index, key results, scorecard"
+
+child_directories:
+  - name: "scripts"
+    description: "10 experiment scripts (exp_01 through exp_10)"
+  - name: "results"
+    description: "JSON outputs from experiments"
+  - name: "journals"
+    description: "Research session logs"
+  - name: "core"
+    description: "bsm.py -- shared BSM infrastructure (Fibonacci, cosmological, dark sector utilities)"
+
+estimated_context_weight: 0.95
+validation_type: "computational"
+
+key_results:
+  - "Score: 40/40 (100%) across 10 experiments in 4 blocks"
+  - "Cosmological constant: log10(Lambda/Lambda_P) = -122.09 vs -122.0 (0.09 orders via correction template)"
+  - "Hubble ratio: phi^{1/6} = 1.0835 at 0.075%, H0 = 73.0 km/s/Mpc via BAO correction"
+  - "S8 = 0.787 via per-level cascade dissipation (6 levels, 5.4% effective)"
+  - "DFT Omega_c: F7*Xi^2/F10 = 0.2648 at 0.46% from Planck"
+  - "Dark matter mass: 6.44 keV from cascade routes (0.09 orders spread), X-ray at 3.2 keV ~ 3.55 keV observed"
+  - "Z' boson: 395 GeV, Gamma = 64 MeV, not excluded (9x margin), 4/4 tests pass"
+  - "Neutrino splitting ratio improved from 44% (M6) to 17% with PMNS correction"
+  - "10 pre-registered falsifiable predictions, 0 excluded by current data"
+  - "JWST: z-dependent cascade floor matches z=8 (16%) and z=12 (4%), z_cascade = ln(phi)*6"
+
+dependencies:
+  internal:
+    - "../milestone6/": "Scoped mediation, depth-73 dark sector proposal, force hierarchy"
+    - "../milestone5/": "SM completion, PMNS angles, Z' prediction, sin^2(theta_W) = 3/13"
+    - "../milestone7/": "Symmetry primitive, cosmological constant prediction, Xi derivation"
+    - "../exp_32_geometric_primacy/": "Cosmological anomaly alignment (Hubble, JWST, DESI, S8)"
+    - "../exp_33_black_hole_cascade/": "Ghost heart mechanism, holographic scaffold"
+    - "../minimum_actualization_resolution/": "MAR exp_27 (free-streaming), exp_34 (G), exp_35-36 (CC)"
+    - "../milestone1/": "Z' prediction (exp_34), SM parameter derivations"
+  external:
+    - "numpy>=1.24"
+    - "scipy>=1.10"
+
+tags:
+  - bsm-predictions
+  - dark-matter
+  - depth-73
+  - cyclotomic-hierarchy
+  - zprime
+  - neutrino-masses
+  - hubble-tension
+  - cosmological-constant
+  - jwst
+  - desi
+  - falsification
+  - observational-contact
+  - warm-dark-matter
+  - sterile-neutrino
+  - relic-abundance
+  - page-curve

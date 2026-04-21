@@ -90,9 +90,9 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **84 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6 + 10 in M7)
+- **94 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6 + 10 in M7 + 10 in M8)
   - M6 score: 27/40 → 35/40 (88%) after strengthening exp_02, 03, 08, 09
-- **Milestones 1-7** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive)
+- **Milestones 1-8** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions)
 - **Milestone 5** complete — SM completion & simulator validation (13 experiments)
   - Higgs mass 83 ppm (lambda = phi/4pi), PMNS < 0.3 deg, sin^2(theta_W) = tan(theta_C) = 3/13
   - De-actualization completes PAC cycle, 24% scorecard improvement
@@ -110,6 +110,14 @@ See `STANDARDS.md` at workspace root for full spec.
   - 100% compatibility with M1-M6, 60% directly illuminated, 12 new derivation paths
   - Cosmological constant 0.9 orders, neutrino splitting 4.4%, D=3 unique, w = -1 + 10⁻⁶¹
   - RBF memory damping fails (2/4), cross-topology consistency partial (3/4) — honest failures
+- **Milestone 8** complete — BSM Predictions & Observational Contact (10 experiments, 40/40 = 100%)
+  - 10 pre-registered falsifiable predictions, 0 excluded by current data
+  - CC at -122.09 (0.09 orders!), Hubble ratio phi^{1/6} at 0.075%, Omega_c at 0.46%
+  - Z' at 395 GeV: not excluded (9× margin), width 64 MeV, 4/4 tests pass
+  - Dark matter: 6.44 keV from cascade routes (0.09 orders), X-ray line at 3.2 keV ≈ 3.55 keV observed
+  - Neutrino splitting improved 44% → 17% with PMNS correction
+  - S8 = 0.787 (per-level dissipation), H₀ = 73.0 km/s/Mpc (BAO φ^{-1/6} correction)
+  - JWST: z-dependent cascade floor matches z=8 (16%) and z=12 (4%), z_cascade = ln(φ)×6
 - **PACSeries** published on Zenodo (DOI: 10.5281/zenodo.15783623)
 - **Active organization effort**: bringing all experiments to full standard, adding FDO source links
 

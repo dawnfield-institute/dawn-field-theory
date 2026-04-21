@@ -1,0 +1,48 @@
+{
+  "experiment": "exp_08_cosmological_constant_precision",
+  "milestone": 8,
+  "block": "C",
+  "tests": {
+    "test1_tiling_exponent": {
+      "test": "tiling_exponent",
+      "N_hops": 293.96480694534216,
+      "log10_raw": -122.87002264009526,
+      "log10_corrected": -122.08780778165588,
+      "log10_observed": -122.0,
+      "error_raw": 0.8700226400952573,
+      "error_corrected": 0.08780778165588288,
+      "best_error": 0.08780778165588288,
+      "passed": "True"
+    },
+    "test2_template_omega_lambda": {
+      "test": "template_omega_lambda",
+      "omega_complement": 0.6859092041896253,
+      "omega_phi_direct": 0.656327609066149,
+      "omega_cascade": 0.6008993531343833,
+      "omega_measured": 0.6847,
+      "best_route": "complement",
+      "best_error_pct": 0.17660350366953917,
+      "passed": "True"
+    },
+    "test3_dark_energy_density": {
+      "test": "dark_energy_density",
+      "omega_de_dft": 0.6859092041896253,
+      "omega_measured": 0.6847,
+      "error_pct": 0.17660350366953917,
+      "rho_de_dft": 6.495560163675752e-27,
+      "rho_de_meas": 6.484109e-27,
+      "passed": "True"
+    },
+    "test4_cross_route_consistency": {
+      "test": "cross_route_consistency",
+      "log10_route1": -122.87002264009526,
+      "log10_route2": -98.85472100257441,
+      "log10_route3": -7.249498740092187,
+      "observed": -122.0,
+      "spread": 115.62052390000306,
+      "passed": "False"
+    }
+  },
+  "score": "3/4",
+  "timestamp": "2026-04-21T10:44:50.688775"
+}

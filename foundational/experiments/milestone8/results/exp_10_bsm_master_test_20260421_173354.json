@@ -1,0 +1,143 @@
+{
+  "experiment": "exp_10_bsm_master_test",
+  "milestone": 8,
+  "block": "D",
+  "tests": {
+    "test1_internal_consistency": {
+      "test": "internal_consistency",
+      "n_contradictions": 0,
+      "contradictions": [],
+      "checks_performed": 6,
+      "passed": true
+    },
+    "test2_prediction_count": {
+      "test": "prediction_count",
+      "n_predictions": 10,
+      "predictions": [
+        "DM mass (depth-73)",
+        "DM coupling alpha_73",
+        "Z prime mass",
+        "Z prime coupling ratio",
+        "Neutrino mass hierarchy",
+        "Neutrino CP phase",
+        "Dark energy w0",
+        "Hubble tension ratio",
+        "X-ray decay line",
+        "No grand unification"
+      ],
+      "passed": true
+    },
+    "test3_falsification_conditions": {
+      "test": "falsification_conditions",
+      "n_falsifiable": 10,
+      "n_with_timeline": 6,
+      "passed": true
+    },
+    "test4_no_current_exclusion": {
+      "test": "no_current_exclusion",
+      "n_excluded": 0,
+      "excluded": [],
+      "checks_performed": 6,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "milestone_total": "40/40",
+  "milestone_pct": 100.0,
+  "prediction_registry": {
+    "predictions": [
+      {
+        "name": "DM mass (depth-73)",
+        "value": "6.4 keV",
+        "uncertainty": "factor 2 (5-15 keV range)",
+        "basis": "v_H*phi^{-73/2} and M_Z*phi^{-34} convergence",
+        "falsifiable_by": "X-ray spectroscopy (XRISM, Athena), Lyman-alpha forest",
+        "experiment": "exp_02",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "DM coupling alpha_73",
+        "value": "2.48e-16",
+        "uncertainty": "within [1e-16, 1e-14]",
+        "basis": "phi^{-73}/sqrt(5) with correction template",
+        "falsifiable_by": "No consistent projection at depth 73",
+        "experiment": "exp_01",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "Z prime mass",
+        "value": "395.1 GeV",
+        "uncertainty": "+/- 20 GeV",
+        "basis": "M_Z * F_7/F_4 = 91.2 * 13/3",
+        "falsifiable_by": "LHC narrow dilepton resonance search at HL-LHC/FCC",
+        "experiment": "exp_04",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "Z prime coupling ratio",
+        "value": "g'/g = 0.076923 (1/13)",
+        "uncertainty": "exact (Fibonacci ratio)",
+        "basis": "1/F_7 suppression from depth hierarchy",
+        "falsifiable_by": "LHC rate measurement if Z' found",
+        "experiment": "exp_04",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "Neutrino mass hierarchy",
+        "value": "Normal (m3 > m2 > m1)",
+        "uncertainty": "N/A (binary prediction)",
+        "basis": "Scope depth ordering: N_3 < N_2 < N_1",
+        "falsifiable_by": "JUNO (~2028-2030)",
+        "experiment": "exp_05",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "Neutrino CP phase",
+        "value": "63.51 deg (or 180+delta = 243.51 deg)",
+        "uncertainty": "+/- 15 deg (convention-dependent)",
+        "basis": "Xi * 60 degrees",
+        "falsifiable_by": "DUNE, T2HK (~2030+)",
+        "experiment": "exp_05",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "Dark energy w0",
+        "value": "-0.9213",
+        "uncertainty": "+/- 0.05",
+        "basis": "-1 + 1/(3*phi^3) from cascade",
+        "falsifiable_by": "DESI DR2+, Euclid, Roman",
+        "experiment": "exp_07",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "Hubble tension ratio",
+        "value": "H0_local/H0_CMB = 1.0835",
+        "uncertainty": "+/- 0.005",
+        "basis": "phi^{1/6} from cascade levels",
+        "falsifiable_by": "Independent H0 measurements (TRGB, JAGB)",
+        "experiment": "exp_07",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "X-ray decay line",
+        "value": "3.2 keV (from 6.4 keV mass)",
+        "uncertainty": "factor 2 in line energy",
+        "basis": "m_DM/2 radiative decay",
+        "falsifiable_by": "XRISM, Athena X-ray spectroscopy",
+        "experiment": "exp_02",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      },
+      {
+        "name": "No grand unification",
+        "value": "No Phi_3(F_n) in [74, 182] for k=3 (depths 121, 127 from k=5,7 exist but no k=3)",
+        "uncertainty": "N/A (structural prediction)",
+        "basis": "Cyclotomic-Fibonacci hierarchy has desert in Phi_3",
+        "falsifiable_by": "Proton decay experiments (Super-K, Hyper-K)",
+        "experiment": "exp_06",
+        "registered_at": "2026-04-21T17:33:54.438103"
+      }
+    ],
+    "count": 10
+  },
+  "timestamp": "2026-04-21T17:33:54.438103"
+}
