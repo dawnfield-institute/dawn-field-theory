@@ -1,0 +1,76 @@
+{
+  "experiment": "exp_01_depth73_coupling_derivation",
+  "milestone": 8,
+  "block": "A",
+  "tests": {
+    "test1_cyclotomic_uniqueness": {
+      "test": "cyclotomic_uniqueness",
+      "phi3_gap_values": [
+        [
+          6,
+          8,
+          73
+        ]
+      ],
+      "unique_73": true,
+      "total_cyclo_in_300": 14,
+      "all_cyclo_depths": [
+        3,
+        3,
+        5,
+        5,
+        7,
+        7,
+        7,
+        13,
+        31,
+        31,
+        73,
+        121,
+        127,
+        183
+      ],
+      "passed": true
+    },
+    "test2_correction_template": {
+      "test": "correction_template",
+      "alpha_raw": 2.4798034483453773e-16,
+      "alpha_from_em": 2.1081762410368154e-15,
+      "alpha_template": 0.014330863859656113,
+      "alpha_fib_direct": 1.2399017241726918e-15,
+      "F_73": 806515533049393.0,
+      "in_range": {
+        "raw": "True",
+        "em_relative": "True",
+        "fib_direct": true
+      },
+      "spread_ratio": 8.501384424009386,
+      "passed": "True"
+    },
+    "test3_projection_type": {
+      "test": "projection_type",
+      "depth": 73,
+      "n_modes": 72,
+      "n_antisym": 36,
+      "n_sym": 36,
+      "dominant_type": "symmetric (Phi_3 tiebreak: 2 sym vs 1 asym term)",
+      "scalar_consistent": true,
+      "phi3_sym_ratio": "2:1",
+      "classification": "scalar (spin-0)",
+      "passed": true
+    },
+    "test4_hierarchy_consistency": {
+      "test": "hierarchy_consistency",
+      "ratio_dark_em": 7.303130633504724,
+      "ratio_grav_em": 17.89055022235658,
+      "best_dark_phi_power": 4,
+      "best_dark_error_pct": 6.551239965003471,
+      "best_grav_phi_power": 6,
+      "best_grav_error_pct": 0.2993807043942907,
+      "ratio_of_ratios": 2.4497097368462413,
+      "passed": "True"
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-21T16:58:23.652483"
+}

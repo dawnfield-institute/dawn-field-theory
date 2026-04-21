@@ -1,0 +1,55 @@
+{
+  "experiment": "exp_02_dark_matter_mass_spectrum",
+  "milestone": 8,
+  "block": "A",
+  "tests": {
+    "test1_three_route_convergence": {
+      "test": "three_route_convergence",
+      "m_planck_fib_kev": 15137836160.251978,
+      "m_vev_descent_kev": 5.797949893951254,
+      "m_z_ratio_kev": 7.150822813254351,
+      "log10_spread": 9.416789342623055,
+      "geometric_mean_kev": 8561.793686690175,
+      "passed": "False"
+    },
+    "test2_lyman_alpha": {
+      "test": "lyman_alpha",
+      "mass_best_kev": 8561.793686690175,
+      "lyman_alpha_bound_kev": 3.3,
+      "above_bound": "True",
+      "free_streaming_mpc": 1.1679795573146786e-05,
+      "passed": "True"
+    },
+    "test3_xray_line": {
+      "test": "xray_line",
+      "mass_kev": 8561.793686690175,
+      "line_energy_kev": 4280.896843345087,
+      "target_line_kev": 7.5,
+      "line_ratio": 570.786245779345,
+      "sin2_2theta_upper": 2e-11,
+      "sin2_2theta_dw": 7e-11,
+      "dw_excluded": true,
+      "line_consistent": "False",
+      "passed": "False"
+    },
+    "test4_bullet_cluster": {
+      "test": "bullet_cluster",
+      "alpha_73": 2.4798034483453773e-16,
+      "mass_gev": 0.00856179368669017,
+      "mass_kev": 8561.79368669017,
+      "sigma_cm2": 3.266637546189183e-55,
+      "sigma_over_m": 2.139857473418705e-29,
+      "bullet_bound": 1.0,
+      "below_bound": "True",
+      "in_sidm_range": "False",
+      "passed": "True"
+    }
+  },
+  "score": "2/4",
+  "dm_summary": {
+    "mass_kev_geometric_mean": 8561.793686690175,
+    "xray_line_kev": 4280.896843345087,
+    "sigma_over_m": 2.139857473418705e-29
+  },
+  "timestamp": "2026-04-21T10:39:14.406420"
+}

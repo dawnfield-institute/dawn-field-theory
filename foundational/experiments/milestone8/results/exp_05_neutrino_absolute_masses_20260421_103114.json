@@ -1,0 +1,72 @@
+{
+  "experiment": "exp_05_neutrino_absolute_masses",
+  "milestone": 8,
+  "block": "B",
+  "tests": {
+    "test1_sum_bound": {
+      "test": "sum_bound",
+      "m1_eV": 5854950.396034154,
+      "m2_eV": 34697187.00387752,
+      "m3_eV": 109969014.26438065,
+      "sum_eV": 150521151.66429234,
+      "bound_eV": 0.12,
+      "ratio_to_bound": 1254342930.5357695,
+      "passed": "False"
+    },
+    "test2_splitting_ratio": {
+      "test": "splitting_ratio",
+      "dm2_21_pred": 1169614341842026.5,
+      "dm2_31_pred": 1.2058903654139534e+16,
+      "ratio_predicted": 10.310153717120087,
+      "ratio_measured": 32.57636122177955,
+      "error_pct": 68.35081227480055,
+      "ratio_uncorrected": 7.199593469062214,
+      "error_uncorrected_pct": 77.89933191111355,
+      "pmns_improvement_pp": 9.548519636313003,
+      "depth_ratio": 1.6666666666666667,
+      "passed": "False"
+    },
+    "test3_cp_phase": {
+      "test": "cp_phase",
+      "delta_dft_deg": 63.50564939766818,
+      "delta_pdg_deg": 195.0,
+      "delta_pdg_err_deg": 50.0,
+      "jarlskog_dft": 0.03037861127328687,
+      "jarlskog_pdg_full": -0.008554114842445285,
+      "jarlskog_ratio": 3.551344801048149,
+      "best_mapping": "180 + delta",
+      "best_mapped_value_deg": 243.50564939766818,
+      "sigma_from_pdg": 0.9701129879533635,
+      "within_3sigma": "True",
+      "passed": "True"
+    },
+    "test4_juno_dune_discriminating": {
+      "test": "juno_dune_discriminating",
+      "is_normal_hierarchy": "True",
+      "m1_meV": 5854950396.034154,
+      "m_ee_meV": 16931554783.78699,
+      "m_ee_range_meV": [
+        3926869773.457293,
+        16931554783.78699
+      ],
+      "m_ee_bound_meV": 36.0,
+      "m_ee_below_bound": false,
+      "delta_cp_deg": 63.50564939766818,
+      "n_falsifiable_predictions": 1,
+      "hierarchy_testable_by": "JUNO ~2028-2030",
+      "m_ee_testable_by": "LEGEND-1000 ~2030+",
+      "passed": "False"
+    }
+  },
+  "score": "1/4",
+  "neutrino_summary": {
+    "m1_meV": 5854950396.034154,
+    "m2_meV": 34697187003.87752,
+    "m3_meV": 109969014264.38065,
+    "sum_eV": 150521151.66429234,
+    "splitting_ratio_error_pct": 68.35081227480055,
+    "hierarchy": "normal",
+    "m_ee_meV": 16931554783.78699
+  },
+  "timestamp": "2026-04-21T10:31:14.587401"
+}
