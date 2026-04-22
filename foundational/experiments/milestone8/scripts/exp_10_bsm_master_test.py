@@ -50,8 +50,7 @@ _, RESULTS_DIR = setup_experiment(__file__)
 def load_experiment_results():
     """Load results from all prior M8 experiments."""
     results = {}
-    for exp_num in range(1, 10):
-        pattern = f"exp_{exp_num:02d}_*"
+    for exp_num in range(1, 13):
         # Find most recent results file
         result_files = sorted(RESULTS_DIR.glob(f"exp_{exp_num:02d}_*.json"))
         if result_files:
@@ -64,12 +63,18 @@ def build_prediction_registry():
     """Build the pre-registered prediction registry."""
     reg = PredictionRegistry()
 
-    # 1. DM mass
+    # Prediction classification:
+    #   P = genuine pre-registered prediction (derived before comparing to data)
+    #   D = postdiction (model refined after seeing failure, e.g. N_cascade=6 fit to Hubble)
+    #   C = consistency check (not independently falsifiable, DFT checking DFT)
+    # Honest count: 4P, 4D, 2C
+
+    # 1. DM mass [P] — derived from cascade depth 73 before comparing to observations
     m_b_kev = HIGGS_VEV * PHI**(-(DEPTH_DARK) / 2) * GEV_TO_KEV
     m_c_kev = M_Z_GEV * PHI**(-(F8 + F7)) * GEV_TO_KEV
     m_dm_kev = np.sqrt(m_b_kev * m_c_kev)  # geometric mean of converging routes
     reg.register(
-        name='DM mass (depth-73)',
+        name='[P] DM mass (depth-73)',
         value=f'{m_dm_kev:.1f} keV',
         uncertainty='factor 2 (5-15 keV range)',
         basis='v_H*phi^{-73/2} and M_Z*phi^{-34} convergence',
@@ -77,10 +82,10 @@ def build_prediction_registry():
         experiment='exp_02'
     )
 
-    # 2. DM coupling
+    # 2. DM coupling [P] — follows structurally from depth 73
     alpha_73 = fibonacci_depth_coupling(DEPTH_DARK)
     reg.register(
-        name='DM coupling alpha_73',
+        name='[P] DM coupling alpha_73',
         value=f'{alpha_73:.2e}',
         uncertainty='within [1e-16, 1e-14]',
         basis='phi^{-73}/sqrt(5) with correction template',
@@ -88,10 +93,10 @@ def build_prediction_registry():
         experiment='exp_01'
     )
 
-    # 3. Z' mass
+    # 3. Z' mass [P] — M_Z * F_7/F_4 is structural, no fitting
     m_zp = zprime_mass()
     reg.register(
-        name='Z prime mass',
+        name='[P] Z prime mass',
         value=f'{m_zp:.1f} GeV',
         uncertainty='+/- 20 GeV',
         basis='M_Z * F_7/F_4 = 91.2 * 13/3',
@@ -99,10 +104,10 @@ def build_prediction_registry():
         experiment='exp_04'
     )
 
-    # 4. Z' coupling
+    # 4. Z' coupling [C] — 1/F_7 follows from same structure that gives mass
     g_ratio = zprime_coupling_ratio()
     reg.register(
-        name='Z prime coupling ratio',
+        name='[C] Z prime coupling ratio',
         value=f'g\'/g = {g_ratio:.6f} (1/13)',
         uncertainty='exact (Fibonacci ratio)',
         basis='1/F_7 suppression from depth hierarchy',
@@ -110,9 +115,9 @@ def build_prediction_registry():
         experiment='exp_04'
     )
 
-    # 5. Neutrino hierarchy
+    # 5. Neutrino hierarchy [P] — scope depth ordering is structural
     reg.register(
-        name='Neutrino mass hierarchy',
+        name='[P] Neutrino mass hierarchy',
         value='Normal (m3 > m2 > m1)',
         uncertainty='N/A (binary prediction)',
         basis='Scope depth ordering: N_3 < N_2 < N_1',
@@ -120,10 +125,10 @@ def build_prediction_registry():
         experiment='exp_05'
     )
 
-    # 6. CP phase
+    # 6. CP phase [D] — Xi*60 chosen after seeing approximate agreement
     angles = pmns_angles_dft()
     reg.register(
-        name='Neutrino CP phase',
+        name='[D] Neutrino CP phase',
         value=f'{angles["delta_CP"]:.2f} deg (or 180+delta = {180+angles["delta_CP"]:.2f} deg)',
         uncertainty='+/- 15 deg (convention-dependent)',
         basis='Xi * 60 degrees',
@@ -131,10 +136,10 @@ def build_prediction_registry():
         experiment='exp_05'
     )
 
-    # 7. Dark energy w0
+    # 7. Dark energy w0 [D] — cascade formula designed to match DESI range
     w0, wa = cascade_dark_energy_eos()
     reg.register(
-        name='Dark energy w0',
+        name='[D] Dark energy w0',
         value=f'{w0:.4f}',
         uncertainty='+/- 0.05',
         basis='-1 + 1/(3*phi^3) from cascade',
@@ -142,10 +147,10 @@ def build_prediction_registry():
         experiment='exp_07'
     )
 
-    # 8. Hubble ratio
+    # 8. Hubble ratio [D] — N_cascade=6 was fit to observed H0 ratio
     h0_ratio = PHI**(1.0/6)
     reg.register(
-        name='Hubble tension ratio',
+        name='[D] Hubble tension ratio',
         value=f'H0_local/H0_CMB = {h0_ratio:.4f}',
         uncertainty='+/- 0.005',
         basis='phi^{1/6} from cascade levels',
@@ -153,9 +158,9 @@ def build_prediction_registry():
         experiment='exp_07'
     )
 
-    # 9. X-ray line
+    # 9. X-ray line [C] — follows directly from DM mass (prediction #1), not independent
     reg.register(
-        name='X-ray decay line',
+        name='[C] X-ray decay line',
         value=f'{m_dm_kev/2:.1f} keV (from {m_dm_kev:.1f} keV mass)',
         uncertainty='factor 2 in line energy',
         basis='m_DM/2 radiative decay',
@@ -163,9 +168,9 @@ def build_prediction_registry():
         experiment='exp_02'
     )
 
-    # 10. No GUT
+    # 10. No GUT [D] — desert claim refined after seeing higher cyclotomics
     reg.register(
-        name='No grand unification',
+        name='[D] No grand unification',
         value='No Phi_3(F_n) in [74, 182] for k=3 (depths 121, 127 from k=5,7 exist but no k=3)',
         uncertainty='N/A (structural prediction)',
         basis='Cyclotomic-Fibonacci hierarchy has desert in Phi_3',
@@ -432,13 +437,15 @@ def main():
     # Compute total M8 score
     total_score = 0
     for exp_num, data in prior.items():
+        if exp_num == 10:
+            continue  # exp_10 adds its own score via n_passed below
         score_str = data.get('score', '0/4')
         try:
             total_score += int(score_str.split('/')[0])
         except (ValueError, IndexError):
             pass
     total_score += n_passed  # add exp_10 score
-    max_score = 40
+    max_score = 48  # 12 experiments x 4 tests
 
     print("\n" + "=" * 70)
     print("MILESTONE 8 SYNTHESIS")
@@ -453,14 +460,15 @@ def main():
     print(f"\n  === MILESTONE 8 TOTAL: {total_score}/{max_score} ({total_score/max_score*100:.0f}%) ===")
 
     print(f"\n  Experiment scorecard:")
-    for exp_num in range(1, 10):
-        if exp_num in prior:
+    for exp_num in range(1, 13):
+        if exp_num == 10:
+            print(f"    exp_10_bsm_master_test: {n_passed}/4")
+        elif exp_num in prior:
             score = prior[exp_num].get('score', '?/?')
             name = prior[exp_num].get('experiment', f'exp_{exp_num:02d}')
             print(f"    {name}: {score}")
         else:
             print(f"    exp_{exp_num:02d}: NOT RUN")
-    print(f"    exp_10_bsm_master_test: {n_passed}/4")
 
     # Key highlights
     print(f"\n  KEY HIGHLIGHTS:")
@@ -472,7 +480,10 @@ def main():
     print(f"    - Neutrino splitting ratio improved from 44% to 17%")
     print(f"    - S8 = 0.787 (per-level dissipation), DESI w0/wa at 0.5 sigma")
     print(f"    - JWST: z-dep floor matches z=8 (16%) and z=12 (4%)")
-    print(f"    - 10 pre-registered falsifiable predictions, 0 excluded")
+    print(f"    - 10 predictions (4P genuine, 4D postdiction, 2C consistency), 0 excluded")
+    print(f"    - 7 truly independent predictions from 2 free parameters (depth 73, N_cascade)")
+    print(f"    - N=6 not uniquely constrained: S8 prefers N~4, JWST prefers N~7")
+    print(f"    - phi^{{1/6}} rank 2 of 300 (base,n) combos, p-value 0.007")
 
     print(f"\n  RESOLVED ISSUES (from initial 27/40 run):")
     print(f"    - M_Pl/F_73 route excluded (wrong physics: divides by index, not cascade)")

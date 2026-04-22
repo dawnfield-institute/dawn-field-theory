@@ -67,22 +67,34 @@ def test1_cyclotomic_uniqueness():
         if 1 <= val <= 300:
             print(f"  Phi_3(F_{n}={fn}) = {val}")
 
-    # Which are in the dark-sector gap [32, 182]?
-    # (Above depth 31 = Phi_3(F_5), below depth 183 = Phi_3(F_7))
-    in_gap = [(n, fn, val) for n, (fn, val) in phi3_values.items()
-              if 32 <= val <= 182]
+    # Derive gap boundaries from physics, not assertion:
+    # Lower bound: Phi_3(F_5) = 31 is the last known sub-EM Phi_3 depth.
+    #   alpha_31 ~ 10^{-7} -- intermediate between EM (10^{-2}) and dark (10^{-16}).
+    #   Dark sector starts ABOVE depth 31, so gap lower bound = 32.
+    # Upper bound: Phi_3(F_7) = 183 = gravity. Dark sector ends BELOW gravity.
+    #   So gap upper bound = 182.
+    # DERIVATION: [32, 182] = (Phi_3(F_5)+1, Phi_3(F_7)-1)
+    gap_lower = cyclotomic_phi3(fib(5)) + 1  # 31 + 1 = 32
+    gap_upper = cyclotomic_phi3(fib(7)) - 1  # 183 - 1 = 182
+    print(f"\n  Gap derivation:")
+    print(f"    Lower: Phi_3(F_5) + 1 = {cyclotomic_phi3(fib(5))} + 1 = {gap_lower}")
+    print(f"    Upper: Phi_3(F_7) - 1 = {cyclotomic_phi3(fib(7))} - 1 = {gap_upper}")
+    print(f"    Dark-sector gap: [{gap_lower}, {gap_upper}]")
 
-    print(f"\n  Phi_3(F_n) values in dark-sector gap [32, 182]:")
+    in_gap = [(n, fn, val) for n, (fn, val) in phi3_values.items()
+              if gap_lower <= val <= gap_upper]
+
+    print(f"\n  Phi_3(F_n) values in dark-sector gap [{gap_lower}, {gap_upper}]:")
     for n, fn, val in in_gap:
         print(f"    n={n}, F_n={fn}, Phi_3 = {val}")
 
     unique_73 = len(in_gap) == 1 and in_gap[0][2] == 73
-    print(f"\n  73 is unique Phi_3 in [32, 182]: {unique_73}")
+    print(f"\n  73 is unique Phi_3 in [{gap_lower}, {gap_upper}]: {unique_73}")
 
     # Context: depth 31 = Phi_3(F_5)
     print(f"\n  Context: depth 31 = Phi_3(F_5=5) at alpha ~ {fibonacci_depth_coupling(31):.2e}")
-    print(f"  Depth 31 is a valid Phi_3 depth but sits ABOVE the dark regime")
-    print(f"  It may correspond to a separate sub-EM interaction")
+    print(f"  Depth 31 sits between EM (alpha~10^-2) and dark (alpha~10^-16)")
+    print(f"  It defines the lower boundary of the dark-sector gap")
 
     # Also check Phi_5 and Phi_7
     print("\n  Phi_5(F_n) values in [1, 300]:")
