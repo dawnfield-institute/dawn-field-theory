@@ -211,11 +211,12 @@ def test3_xray_line():
     print(f"    Energy resolution: ~5 eV at 6 keV -> can resolve {E_line_kev:.1f} keV line")
     print(f"    Sensitivity: sin^2(2theta) ~ 10^{{-12}} at 7 keV")
 
-    # PASS: line energy within factor 2 of the 3.55 keV observed feature
-    line_consistent = 0.5 < line_ratio < 2.0
+    # PASS: line energy within factor 1.5 of the 3.55 keV observed feature
+    # Tightened from factor 2: 3.2/3.55 = 0.91, comfortably within 1.5x
+    line_consistent = 0.67 < line_ratio < 1.5
     passed = line_consistent
     print(f"\n  -> {'PASS' if passed else 'FAIL'}: line at {E_line_kev:.2f} keV "
-          f"(ratio {line_ratio:.2f} to 3.55 keV, threshold [0.5, 2.0])")
+          f"(ratio {line_ratio:.2f} to 3.55 keV, threshold [0.67, 1.5])")
 
     return {
         'test': 'xray_line',

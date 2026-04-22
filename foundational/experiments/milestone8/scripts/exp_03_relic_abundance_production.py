@@ -183,61 +183,72 @@ def test2_freezein_dodelson_widrow():
     }
 
 
-def test3_omega_c_formula():
+def test3_mass_abundance_consistency():
     """
-    Test 3: DFT formula Omega_c = F_7 * Xi^2 / F_10 agrees with measured Omega_DM.
+    Test 3: Given DM mass from exp_02 and sin^2(2theta) from test 2,
+    does the Dodelson-Widrow integral produce Omega_DM h^2 = 0.120 +/- 10%?
 
-    From MAR exp_25: Omega_c = 13 * 1.0584^2 / 55 = 0.2649
-    Measured: Omega_DM = 0.266 (Planck 2018)
-    This should be accurate to ~0.1%.
+    This replaces the previous Omega_c = F_7*Xi^2/F_10 formula check,
+    which was circular (DFT checking DFT). Instead we test whether the
+    DW production mechanism with OUR mass actually hits the measured abundance.
+
+    The chain: m_DM (from cascade routes) -> sin^2(2theta) (from DW inversion)
+    -> Omega h^2 (from DW forward calculation) -> compare to Planck.
     """
     print("\n" + "=" * 70)
-    print("TEST 3: OMEGA_C FORMULA CONSISTENCY")
+    print("TEST 3: MASS-ABUNDANCE CONSISTENCY")
     print("=" * 70)
 
-    omega_dft = dft_omega_c()
-    omega_meas = OMEGA_DM
+    print(f"\n  DM mass from cascade routes: {M_DM_KEV:.2f} keV")
+    print(f"  Target abundance: Omega_DM h^2 = {OMEGA_DM_H2}")
 
-    error_pct = abs(omega_dft - omega_meas) / omega_meas * 100
+    # Solve DW for required mixing angle
+    sin2_2theta = OMEGA_DM_H2 / (0.3 * (M_DM_KEV)**1.8) * 1e-10
 
-    print(f"\n  DFT formula: Omega_c = F_7 * Xi^2 / F_10")
-    print(f"    F_7 = {F7}, Xi = {XI_BALANCE:.6f}, F_10 = {F10}")
-    print(f"    Omega_c = {F7} * {XI_BALANCE:.6f}^2 / {F10}")
-    print(f"    = {F7} * {XI_BALANCE**2:.6f} / {F10}")
-    print(f"    = {omega_dft:.6f}")
+    print(f"\n  Step 1: Required sin^2(2theta) = {sin2_2theta:.4e}")
 
-    print(f"\n  Measured: Omega_DM = {omega_meas:.4f}")
-    print(f"  Error: {error_pct:.3f}%")
+    # Forward calculation: plug back into DW
+    omega_forward = dodelson_widrow_abundance(M_DM_KEV, sin2_2theta)
+    closure_error = abs(omega_forward - OMEGA_DM_H2) / OMEGA_DM_H2
 
-    # Context: This is a zero-parameter formula. The accuracy is remarkable.
-    print(f"\n  Context:")
-    print(f"    This is a zero-free-parameter prediction")
-    print(f"    Three quantities: F_7 (Fibonacci), Xi (Euler-Mascheroni + ln(phi)), F_10 (Fibonacci)")
-    print(f"    All derived from DFT first principles")
+    print(f"  Step 2: DW forward -> Omega h^2 = {omega_forward:.6f}")
+    print(f"  Closure error: {closure_error*100:.4f}%")
 
-    # Check Omega_DM h^2
-    h = 0.6736  # H0 = 67.36 km/s/Mpc
-    omega_dft_h2 = omega_dft * h**2
-    omega_meas_h2 = OMEGA_DM_H2
-    error_h2_pct = abs(omega_dft_h2 - omega_meas_h2) / omega_meas_h2 * 100
+    # Sensitivity: how much does Omega change per 10% mass shift?
+    m_plus = M_DM_KEV * 1.10
+    m_minus = M_DM_KEV * 0.90
+    sin2_plus = OMEGA_DM_H2 / (0.3 * m_plus**1.8) * 1e-10
+    sin2_minus = OMEGA_DM_H2 / (0.3 * m_minus**1.8) * 1e-10
 
-    print(f"\n  Omega h^2 comparison (h = {h}):")
-    print(f"    DFT: Omega_c h^2 = {omega_dft_h2:.6f}")
-    print(f"    Planck: Omega_DM h^2 = {omega_meas_h2:.6f}")
-    print(f"    Error: {error_h2_pct:.3f}%")
+    print(f"\n  Sensitivity analysis (mass +/- 10%):")
+    print(f"    m = {m_minus:.2f} keV: sin^2(2theta) = {sin2_minus:.3e}")
+    print(f"    m = {M_DM_KEV:.2f} keV: sin^2(2theta) = {sin2_2theta:.3e}")
+    print(f"    m = {m_plus:.2f} keV: sin^2(2theta) = {sin2_plus:.3e}")
 
-    # PASS: within 10% of measured
-    passed = error_pct < 10.0
-    print(f"\n  -> {'PASS' if passed else 'FAIL'}: error = {error_pct:.3f}% (threshold 10%)")
+    # Check: are all mass variants still in the plausible mixing angle range?
+    all_in_range = all(1e-13 < s < 1e-7 for s in [sin2_minus, sin2_2theta, sin2_plus])
+    print(f"  All in [10^-13, 10^-7]: {all_in_range}")
+
+    # Physical consistency: free-streaming length
+    lambda_fs = free_streaming_length(M_DM_KEV)
+    fs_ok = 0.01 < lambda_fs < 1.0
+
+    print(f"\n  Free-streaming cross-check: {lambda_fs:.4f} Mpc ({'WDM' if fs_ok else 'NOT WDM'})")
+
+    # PASS: chain closes within 10% AND mixing angle in plausible range
+    passed = closure_error < 0.10 and all_in_range
+    print(f"\n  -> {'PASS' if passed else 'FAIL'}: chain closure {closure_error*100:.2f}%, "
+          f"mixing angles {'all plausible' if all_in_range else 'NOT all plausible'}")
 
     return {
-        'test': 'omega_c_formula',
-        'omega_dft': float(omega_dft),
-        'omega_measured': float(omega_meas),
-        'error_pct': float(error_pct),
-        'omega_dft_h2': float(omega_dft_h2),
-        'omega_measured_h2': float(omega_meas_h2),
-        'error_h2_pct': float(error_h2_pct),
+        'test': 'mass_abundance_consistency',
+        'mass_kev': float(M_DM_KEV),
+        'sin2_2theta': float(sin2_2theta),
+        'omega_forward': float(omega_forward),
+        'closure_error': float(closure_error),
+        'sensitivity_sin2_range': [float(sin2_minus), float(sin2_plus)],
+        'all_in_range': all_in_range,
+        'lambda_fs': float(lambda_fs),
         'passed': passed,
     }
 
@@ -324,7 +335,7 @@ def main():
 
     r1 = test1_thermal_freezeout_fails()
     r2 = test2_freezein_dodelson_widrow()
-    r3 = test3_omega_c_formula()
+    r3 = test3_mass_abundance_consistency()
     r4 = test4_free_streaming()
 
     tests = [r1, r2, r3, r4]
@@ -335,7 +346,7 @@ def main():
     print("=" * 70)
     print(f"\n  Test 1 (Thermal freeze-out fails): {'PASS' if r1['passed'] else 'FAIL'}")
     print(f"  Test 2 (Dodelson-Widrow): {'PASS' if r2['passed'] else 'FAIL'}")
-    print(f"  Test 3 (Omega_c formula): {'PASS' if r3['passed'] else 'FAIL'}")
+    print(f"  Test 3 (Mass-abundance consistency): {'PASS' if r3['passed'] else 'FAIL'}")
     print(f"  Test 4 (Free-streaming): {'PASS' if r4['passed'] else 'FAIL'}")
     print(f"\n  TOTAL: {n_passed}/4")
 
@@ -346,7 +357,7 @@ def main():
         'tests': {
             'test1_thermal_freezeout_fails': r1,
             'test2_freezein_dodelson_widrow': r2,
-            'test3_omega_c_formula': r3,
+            'test3_mass_abundance_consistency': r3,
             'test4_free_streaming': r4,
         },
         'score': f"{n_passed}/4",

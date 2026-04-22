@@ -1,25 +1,26 @@
 schema_version: "2.0"
 description: >
   Milestone 8: BSM Predictions & Observational Contact -- grounds DFT with
-  falsifiable beyond-Standard-Model predictions. 10 experiments across 4 blocks.
+  falsifiable beyond-Standard-Model predictions. 12 experiments across 5 blocks.
   Block A: dark sector foundations (depth-73 coupling, mass, relic abundance).
   Block B: particle predictions (Z' at 395 GeV, neutrino masses, Fibonacci depth sweep).
   Block C: cosmological contact (Hubble tension, cosmological constant, JWST structure).
   Block D: synthesis and falsification protocol (master consistency test).
+  Block E: hardening (cross-consistency, look-elsewhere, P/D/C classification).
   First milestone in the M8-M9-M10 arc (BSM predictions -> Infodynamics mechanism -> Quantum gravity).
 semantic_scope: "research"
 proficiency_level: "research"
 version: "1.0.0"
 status: "completed"
 date_created: "2026-04-21"
-date_updated: "2026-04-21"
+date_updated: "2026-04-22"
 
 files:
   - "[README.md]": "Hypothesis, experiment index, key results, scorecard"
 
 child_directories:
   - name: "scripts"
-    description: "10 experiment scripts (exp_01 through exp_10)"
+    description: "12 experiment scripts (exp_01 through exp_12)"
   - name: "results"
     description: "JSON outputs from experiments"
   - name: "journals"
@@ -31,7 +32,7 @@ estimated_context_weight: 0.95
 validation_type: "computational"
 
 key_results:
-  - "Score: 40/40 (100%) across 10 experiments in 4 blocks"
+  - "Score: 48/48 (100%) across 12 experiments in 5 blocks (hardened)"
   - "Cosmological constant: log10(Lambda/Lambda_P) = -122.09 vs -122.0 (0.09 orders via correction template)"
   - "Hubble ratio: phi^{1/6} = 1.0835 at 0.075%, H0 = 73.0 km/s/Mpc via BAO correction"
   - "S8 = 0.787 via per-level cascade dissipation (6 levels, 5.4% effective)"
@@ -39,7 +40,10 @@ key_results:
   - "Dark matter mass: 6.44 keV from cascade routes (0.09 orders spread), X-ray at 3.2 keV ~ 3.55 keV observed"
   - "Z' boson: 395 GeV, Gamma = 64 MeV, not excluded (9x margin), 4/4 tests pass"
   - "Neutrino splitting ratio improved from 44% (M6) to 17% with PMNS correction"
-  - "10 pre-registered falsifiable predictions, 0 excluded by current data"
+  - "10 predictions (4P genuine, 4D postdiction, 2C consistency), 0 excluded by current data"
+  - "7 truly independent predictions from 2 free parameters (depth 73, N_cascade=6)"
+  - "Look-elsewhere: phi^{1/6} rank 2 of 300 combos, p-value = 0.007"
+  - "Cross-consistency: BAO = Hubble (same constraint on N), 3 independent N constraints not 4"
   - "JWST: z-dependent cascade floor matches z=8 (16%) and z=12 (4%), z_cascade = ln(phi)*6"
 
 dependencies:

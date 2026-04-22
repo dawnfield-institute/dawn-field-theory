@@ -1,0 +1,54 @@
+{
+  "experiment": "exp_07_hubble_tension_quantification",
+  "milestone": 8,
+  "block": "C",
+  "tests": {
+    "test1_cascade_h0_ratio": {
+      "test": "cascade_h0_ratio",
+      "h0_local": 73.04,
+      "h0_cmb": 67.36,
+      "ratio_measured": 1.0843230403800477,
+      "ratio_dft": 1.083505882173848,
+      "error_pct": 0.07536114015555324,
+      "in_target_range": "True",
+      "passed": "True"
+    },
+    "test2_bao_shift": {
+      "test": "bao_shift",
+      "r_s_planck_mpc": 147.09,
+      "correction_factor": 0.922929922626438,
+      "r_s_dft_mpc": 135.75376231912279,
+      "h0_corrected": 72.9849562232304,
+      "h0_shoes": 73.04,
+      "sigma_from_shoes": 0.05292670843231552,
+      "in_range": "True",
+      "passed": "True"
+    },
+    "test3_s8_reduction": {
+      "test": "s8_reduction",
+      "s8_planck": 0.832,
+      "s8_kids": 0.759,
+      "s8_des": 0.776,
+      "dissipation_fraction": 0.053707029808926915,
+      "s8_dft": 0.7873157511989728,
+      "sigma8_dft": 0.7679758832577127,
+      "in_range": "True",
+      "passed": "True"
+    },
+    "test4_desi_compatibility": {
+      "test": "desi_compatibility",
+      "w0_dft": -0.9213106741667367,
+      "wa_dft": -0.2360679774997897,
+      "w0_desi": -0.827,
+      "wa_desi": -0.75,
+      "w0_sigma": 1.4969948280434409,
+      "wa_sigma": 1.7721793879317598,
+      "combined_sigma": 2.31983044600225,
+      "w0_ok": "True",
+      "wa_ok": "True",
+      "passed": "True"
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-22T11:59:29.446098"
+}

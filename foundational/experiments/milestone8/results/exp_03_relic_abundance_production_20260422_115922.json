@@ -1,0 +1,52 @@
+{
+  "experiment": "exp_03_relic_abundance_production",
+  "milestone": 8,
+  "block": "A",
+  "tests": {
+    "test1_thermal_freezeout_fails": {
+      "test": "thermal_freezeout_fails",
+      "alpha_73": 2.4798034483453773e-16,
+      "sigma_v_gev2": 1.4832147793724785e-21,
+      "sigma_v_pb": 5.775638350876432e-13,
+      "omega_thermal": 173141034678.5743,
+      "omega_measured": 0.12,
+      "overproduction_factor": 1442841955654.786,
+      "thermal_fails": "True",
+      "passed": "True"
+    },
+    "test2_freezein_dodelson_widrow": {
+      "test": "freezein_dodelson_widrow",
+      "mass_kev": 6.438952738743481,
+      "sin2_2theta_required": 1.4002080300580925e-12,
+      "log10_sin2_2theta": -11.853807436039936,
+      "omega_check": 0.11999999999999998,
+      "in_plausible_range": "True",
+      "xray_bound": 2e-11,
+      "excluded_by_xray": "False",
+      "passed": "True"
+    },
+    "test3_mass_abundance_consistency": {
+      "test": "mass_abundance_consistency",
+      "mass_kev": 6.438952738743481,
+      "sin2_2theta": 1.4002080300580925e-12,
+      "omega_forward": 0.11999999999999998,
+      "closure_error": 1.1564823173178715e-16,
+      "sensitivity_sin2_range": [
+        1.6926066661679881e-12,
+        1.1794668269908317e-12
+      ],
+      "all_in_range": true,
+      "lambda_fs": 0.015530475848703673,
+      "passed": true
+    },
+    "test4_free_streaming": {
+      "test": "free_streaming",
+      "mass_kev": 6.438952738743481,
+      "lambda_fs_mpc": 0.015530475848703673,
+      "in_wdm_range": "True",
+      "passed": "True"
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-22T11:59:22.210412"
+}

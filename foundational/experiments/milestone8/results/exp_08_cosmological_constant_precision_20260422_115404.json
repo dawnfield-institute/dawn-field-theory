@@ -1,0 +1,97 @@
+{
+  "experiment": "exp_08_cosmological_constant_precision",
+  "milestone": 8,
+  "block": "C",
+  "tests": {
+    "test1_tiling_exponent": {
+      "test": "tiling_exponent",
+      "N_hops": 293.96480694534216,
+      "log10_raw": -122.87002264009526,
+      "log10_corrected": -122.08780778165588,
+      "log10_observed": -122.0,
+      "error_raw": 0.8700226400952573,
+      "error_corrected": 0.08780778165588288,
+      "best_error": 0.08780778165588288,
+      "passed": "True"
+    },
+    "test2_template_omega_lambda": {
+      "test": "template_omega_lambda",
+      "omega_complement": 0.6859092041896253,
+      "omega_phi_direct": 0.656327609066149,
+      "omega_cascade": 0.6008993531343833,
+      "omega_measured": 0.6847,
+      "best_route": "complement",
+      "best_error_pct": 0.17660350366953917,
+      "passed": "True"
+    },
+    "test3_dark_energy_density": {
+      "test": "dark_energy_density",
+      "omega_de_dft": 0.6859092041896253,
+      "omega_measured": 0.6847,
+      "error_pct": 0.17660350366953917,
+      "rho_de_dft": 6.495560163675752e-27,
+      "rho_de_meas": 6.484109e-27,
+      "passed": "True"
+    },
+    "test4_cross_route_consistency": {
+      "test": "sensitivity_analysis",
+      "perturbations": [
+        {
+          "label": "baseline",
+          "log10_cc": -122.08780778165588,
+          "error": 0.08780778165588288
+        },
+        {
+          "label": "L_H -5%",
+          "log10_cc": -122.04353862410018,
+          "error": 0.04353862410017939
+        },
+        {
+          "label": "L_H +5%",
+          "log10_cc": -122.12991658926072,
+          "error": 0.12991658926071636
+        },
+        {
+          "label": "F_2/F_4 template",
+          "log10_cc": -121.78361311448501,
+          "error": 0.21638688551499285
+        },
+        {
+          "label": "F_3/F_5 template",
+          "log10_cc": -122.08780778165588,
+          "error": 0.08780778165588288
+        },
+        {
+          "label": "F_4/F_6 template",
+          "log10_cc": -122.41169362147843,
+          "error": 0.4116936214784346
+        },
+        {
+          "label": "F_3/F_6 template",
+          "log10_cc": -122.56446996101735,
+          "error": 0.5644699610173518
+        },
+        {
+          "label": "F_2/F_5 template",
+          "log10_cc": -122.47891521087557,
+          "error": 0.4789152108755701
+        },
+        {
+          "label": "N-1",
+          "log10_cc": -121.67249341443518,
+          "error": 0.3275065855648194
+        },
+        {
+          "label": "N+1",
+          "log10_cc": -122.50312214887657,
+          "error": 0.5031221488765709
+        }
+      ],
+      "max_error": 0.5644699610173518,
+      "all_within_1_order": true,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-22T11:54:04.508179"
+}

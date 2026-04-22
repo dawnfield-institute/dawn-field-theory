@@ -1,0 +1,201 @@
+{
+  "experiment": "exp_06_fibonacci_depth_sweep",
+  "milestone": 8,
+  "block": "B",
+  "tests": {
+    "test1_known_force_recovery": {
+      "test": "known_force_recovery",
+      "forces": {
+        "Weak": {
+          "depth": 7,
+          "alpha_d": 0.015402865250609877,
+          "measured": 0.03378378378378378,
+          "log_ratio": 0.3411067728589219,
+          "match": "True"
+        },
+        "Electromagnetic": {
+          "depth": 13,
+          "alpha_d": 0.0008583722609568166,
+          "measured": 0.0072973525693,
+          "log_ratio": 0.9294896549789482,
+          "match": "False"
+        },
+        "Dark (depth-73)": {
+          "depth": 73,
+          "alpha_d": 2.4798034483453773e-16,
+          "measured": null,
+          "match": null
+        },
+        "Gravity": {
+          "depth": 183,
+          "alpha_d": 2.5455218666594005e-39,
+          "measured": 5.9e-39,
+          "log_ratio": 0.3650751795562641,
+          "match": "True"
+        }
+      },
+      "n_recovered": 2,
+      "n_checked": 3,
+      "strong_depth_approx": 2.7705044759792217,
+      "passed": true
+    },
+    "test2_cyclotomic_census": {
+      "test": "cyclotomic_census",
+      "all_depths": [
+        {
+          "poly": "Phi_3",
+          "n": 1,
+          "F_n": 1,
+          "depth": 3,
+          "alpha": 0.1055728090000841,
+          "log10_alpha": -0.9764479229179457
+        },
+        {
+          "poly": "Phi_3",
+          "n": 2,
+          "F_n": 1,
+          "depth": 3,
+          "alpha": 0.1055728090000841,
+          "log10_alpha": -0.9764479229179457
+        },
+        {
+          "poly": "Phi_5",
+          "n": 1,
+          "F_n": 1,
+          "depth": 5,
+          "alpha": 0.04032522475023132,
+          "log10_alpha": -1.3944232034179032
+        },
+        {
+          "poly": "Phi_5",
+          "n": 2,
+          "F_n": 1,
+          "depth": 5,
+          "alpha": 0.04032522475023132,
+          "log10_alpha": -1.3944232034179032
+        },
+        {
+          "poly": "Phi_3",
+          "n": 3,
+          "F_n": 2,
+          "depth": 7,
+          "alpha": 0.015402865250609877,
+          "log10_alpha": -1.8123984839178606
+        },
+        {
+          "poly": "Phi_7",
+          "n": 1,
+          "F_n": 1,
+          "depth": 7,
+          "alpha": 0.015402865250609877,
+          "log10_alpha": -1.8123984839178606
+        },
+        {
+          "poly": "Phi_7",
+          "n": 2,
+          "F_n": 1,
+          "depth": 7,
+          "alpha": 0.015402865250609877,
+          "log10_alpha": -1.8123984839178606
+        },
+        {
+          "poly": "Phi_3",
+          "n": 4,
+          "F_n": 3,
+          "depth": 13,
+          "alpha": 0.0008583722609568166,
+          "log10_alpha": -3.066324325417733
+        },
+        {
+          "poly": "Phi_3",
+          "n": 5,
+          "F_n": 5,
+          "depth": 31,
+          "alpha": 1.485587204340454e-07,
+          "log10_alpha": -6.828101849917351
+        },
+        {
+          "poly": "Phi_5",
+          "n": 3,
+          "F_n": 2,
+          "depth": 31,
+          "alpha": 1.485587204340454e-07,
+          "log10_alpha": -6.828101849917351
+        },
+        {
+          "poly": "Phi_3",
+          "n": 6,
+          "F_n": 8,
+          "depth": 73,
+          "alpha": 2.4798034483453773e-16,
+          "log10_alpha": -15.605582740416459
+        },
+        {
+          "poly": "Phi_5",
+          "n": 4,
+          "F_n": 3,
+          "depth": 121,
+          "alpha": 2.3068031064704498e-26,
+          "log10_alpha": -25.636989472415436
+        },
+        {
+          "poly": "Phi_7",
+          "n": 3,
+          "F_n": 2,
+          "depth": 127,
+          "alpha": 1.2855373113160528e-27,
+          "log10_alpha": -26.89091531391531
+        },
+        {
+          "poly": "Phi_3",
+          "n": 7,
+          "F_n": 13,
+          "depth": 183,
+          "alpha": 2.5455218666594005e-39,
+          "log10_alpha": -38.59422316791412
+        }
+      ],
+      "total_count": 14,
+      "is_small": true,
+      "passed": true
+    },
+    "test3_desert_prediction": {
+      "test": "desert_prediction",
+      "phi3_in_desert": [],
+      "higher_in_desert": [
+        {
+          "poly": "Phi_5",
+          "n": 4,
+          "F_n": 3,
+          "depth": 121
+        },
+        {
+          "poly": "Phi_7",
+          "n": 3,
+          "F_n": 2,
+          "depth": 127
+        }
+      ],
+      "phi3_desert_empty": true,
+      "passed": true
+    },
+    "test4_gut_scale": {
+      "test": "gut_scale",
+      "depth_463": {
+        "depth": 463,
+        "alpha": 7.748855496609861e-98,
+        "mass_gev": 4.73025009362808e-78
+      },
+      "depth_1191": {
+        "depth": 1191,
+        "alpha": 5.574879185263561e-250
+      },
+      "predicts_no_gut": "True",
+      "prediction": "no_gut",
+      "gap_ratio": 2.5454545454545454,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-22T11:54:03.974693"
+}

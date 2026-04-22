@@ -1,0 +1,85 @@
+{
+  "experiment": "exp_04_zprime_395_quantification",
+  "milestone": 8,
+  "block": "B",
+  "tests": {
+    "test1_lhc_exclusion": {
+      "test": "lhc_exclusion",
+      "zprime_mass_gev": 395.1462666666667,
+      "coupling_ratio": 0.07692307692307693,
+      "cross_section_ratio": 3.501277966457758e-05,
+      "pdf_suppression": 0.012289485662266725,
+      "sigma_zprime_fb": 0.8605781073678602,
+      "lhc_limit_fb": 8.0,
+      "margin_factor": 9.296076592592593,
+      "events_run2": 120.48093503150044,
+      "below_limit": true,
+      "passed": true
+    },
+    "test2_branching_ratios": {
+      "test": "branching_ratios",
+      "zprime_mass_gev": 395.1462666666667,
+      "top_channel_open": true,
+      "branching_ratios": {
+        "d": 0.14863261236424,
+        "s": 0.14863261236424,
+        "b": 0.1485651179570722,
+        "u": 0.11531098827454495,
+        "c": 0.11530475746917258,
+        "nu_e": 0.06702145119358442,
+        "nu_mu": 0.06702145119358442,
+        "nu_tau": 0.06702145119358442,
+        "e": 0.03369982710388935,
+        "mu": 0.03369982710388935,
+        "tau": 0.03369576093477036,
+        "t": 0.021394142847428018
+      },
+      "br_leptons": 0.10109541514254905,
+      "br_invisible": 0.20106435358075325,
+      "br_quarks": 0.6978402312766977,
+      "sum_br": 0.9999999999999999,
+      "dominant_channel": "d",
+      "dominant_br": 0.14863261236424,
+      "sum_ok": "True",
+      "has_detectable": "True",
+      "passed": "True"
+    },
+    "test3_run4_discovery": {
+      "test": "run4_discovery",
+      "sigma_zp_total_fb": 0.8605781073678602,
+      "br_dilepton": 0.06886766148461025,
+      "sigma_dilepton_fb": 0.05926600177927637,
+      "events_run2": 8.297240249098692,
+      "events_run3": 17.77980053378291,
+      "events_hllhc": 177.79800533782912,
+      "events_fcc": 11853.200355855273,
+      "luminosity_for_5_events": 84.36540090255181,
+      "luminosity_for_10_events": 168.73080180510362,
+      "discoverable_hllhc": true,
+      "luminosity_target_stated": true,
+      "passed": true
+    },
+    "test4_width_consistency": {
+      "test": "width_consistency",
+      "zprime_mass_gev": 395.1462666666667,
+      "zprime_width_gev": 0.06397948717948719,
+      "zprime_width_mev": 63.979487179487194,
+      "gamma_over_m_pct": 0.016191342947308757,
+      "is_narrow": true,
+      "m1_width_mev": 64.0,
+      "width_ratio_to_m1": 0.9996794871794874,
+      "within_factor2": true,
+      "detector_resolution_gev": 5.927194000000001,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "zprime_summary": {
+    "mass_gev": 395.1462666666667,
+    "coupling_g_ratio": 0.07692307692307693,
+    "width_mev": 63.979487179487194,
+    "sigma_dilepton_fb": 0.05926600177927637,
+    "discoverable_hllhc": true
+  },
+  "timestamp": "2026-04-22T11:59:23.397106"
+}
