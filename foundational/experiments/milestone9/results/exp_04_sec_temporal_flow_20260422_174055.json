@@ -1,0 +1,84 @@
+{
+  "experiment": "exp_04_sec_temporal_flow",
+  "milestone": 9,
+  "block": "B",
+  "block_name": "Information-Time Nexus",
+  "tests": {
+    "test1_sec_breaks_time_symmetry": {
+      "test": "sec_breaks_time_symmetry",
+      "n_nodes": 50,
+      "n_steps": 2000,
+      "gini_initial": 0.4554618293917636,
+      "gini_fwd_final": 0.19960723386184642,
+      "gini_anti_final": 0.8991351306271949,
+      "delta_gini_fwd": -0.2558545955299172,
+      "delta_gini_anti": 0.44367330123543125,
+      "delta_S_fwd": 0.2735994259425638,
+      "delta_S_anti": -2.1040713918251495,
+      "fwd_decreased": true,
+      "anti_increased": true,
+      "passed": true
+    },
+    "test2_emergent_time_arrow": {
+      "test": "emergent_time_arrow",
+      "n_nodes": 50,
+      "n_steps": 1000,
+      "S_initial": 3.567952010305534,
+      "S_fwd_final": 3.75333386534959,
+      "S_anti_final": 2.9292975256551848,
+      "delta_S_fwd": 0.18538185504405558,
+      "delta_S_anti": -0.6386544846503495,
+      "asymmetry": 1.2902694015302318,
+      "signs_opposite": true,
+      "passed": true
+    },
+    "test3_flow_rate_matches_clock": {
+      "test": "flow_rate_matches_clock",
+      "n_nodes": 100,
+      "n_steps": 5000,
+      "sample_steps": [
+        10,
+        20,
+        50,
+        100,
+        200,
+        500,
+        1000,
+        2000,
+        5000
+      ],
+      "entropies": [
+        4.19591295302427,
+        4.198415922393511,
+        4.205757369159035,
+        4.217468114755161,
+        4.239161538567008,
+        4.293544921661317,
+        4.3613641937341825,
+        4.451959983106013,
+        4.5698918493308005
+      ],
+      "fit_slope": 0.057180445413281177,
+      "fit_intercept": 3.9965063533471437,
+      "r_squared": 0.8332794077595813,
+      "S_max": 4.605170185988092,
+      "passed": true
+    },
+    "test4_sec_equilibrium_maxent": {
+      "test": "sec_equilibrium_maxent",
+      "n_nodes": 100,
+      "n_steps": 5000,
+      "S_max": 4.605170185988092,
+      "S_initial": 4.193381101316375,
+      "S_final": 4.5698918493308005,
+      "final_fraction": 0.9923394065295066,
+      "monotonic": true,
+      "gini_initial": 0.4930048202512376,
+      "gini_final": 0.1321692834330146,
+      "above_95_pct": true,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-22T17:40:55.094459"
+}

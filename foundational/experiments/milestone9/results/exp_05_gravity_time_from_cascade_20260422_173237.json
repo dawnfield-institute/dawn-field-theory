@@ -1,0 +1,72 @@
+{
+  "experiment": "exp_05_gravity_time_from_cascade",
+  "milestone": 9,
+  "block": "B",
+  "block_name": "Information-Time Nexus",
+  "tests": {
+    "test1_duality_from_phi_split": {
+      "test": "duality_from_phi_split",
+      "errors": {
+        "phi": 1.1102230246251565e-16,
+        "e": 0.49678527559194496,
+        "2": 0.25,
+        "pi": 0.5803689301738715,
+        "sqrt(2)": 0.20710678118654735,
+        "sqrt(3)": 0.08931639747704073
+      },
+      "phi_error": 1.1102230246251565e-16,
+      "all_non_phi_above_001": true,
+      "passed": true
+    },
+    "test2_bh_proper_time": {
+      "test": "bh_proper_time",
+      "n_levels": 20,
+      "phi_32": 2.0581710272714924,
+      "mean_ratio_gt3": 2.0581710272714924,
+      "deviation_pct": 0.0,
+      "time_ratios": [
+        2.058171027271493,
+        2.058171027271492,
+        2.058171027271492,
+        2.058171027271493,
+        2.058171027271493,
+        2.058171027271492,
+        2.0581710272714924,
+        2.0581710272714924,
+        2.058171027271493,
+        2.0581710272714915,
+        2.058171027271493,
+        2.058171027271492,
+        2.0581710272714915,
+        2.0581710272714937,
+        2.0581710272714915,
+        2.058171027271493,
+        2.058171027271492,
+        2.0581710272714933
+      ],
+      "passed": true
+    },
+    "test3_time_dilation_cascade_density": {
+      "test": "time_dilation_cascade_density",
+      "n_points": 20,
+      "r_min": 1.01,
+      "r_max": 10.0,
+      "correlation": 0.6786310796072489,
+      "abs_correlation": 0.6786310796072489,
+      "passed": false
+    },
+    "test4_zeno_completion": {
+      "test": "zeno_completion",
+      "n_terms": 20,
+      "common_ratio": 0.48586827175664565,
+      "theoretical_sum": 1.9450268191319815,
+      "partial_sum": 1.9450257736985443,
+      "ratio": 0.9999994625095002,
+      "is_finite": true,
+      "energy_sum": 2.6180339887498945,
+      "passed": true
+    }
+  },
+  "score": "3/4",
+  "timestamp": "2026-04-22T17:32:37.493521"
+}

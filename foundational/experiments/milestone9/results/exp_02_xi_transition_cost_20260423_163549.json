@@ -1,0 +1,64 @@
+{
+  "experiment": "exp_02_xi_transition_cost",
+  "milestone": 9,
+  "block": "A",
+  "block_name": "Cascade Dynamics",
+  "tests": {
+    "splitting_entropy": {
+      "test": "splitting_entropy",
+      "p_D": 0.6180339887498948,
+      "p_S": 0.3819660112501051,
+      "H_split": 0.6650183864440036,
+      "H_theory": 0.6650183864440036,
+      "ln_phi": 0.48121182505960347,
+      "ratio_to_ln_phi": 1.381966011250105,
+      "cascade_H_mean": 0.6650183864440036,
+      "cascade_H_std": 0.0,
+      "deviation_pct": 0.0,
+      "passed": true
+    },
+    "xi_decomposition": {
+      "test": "xi_decomposition",
+      "gamma": 0.5772156649015329,
+      "ln_phi": 0.48121182505960347,
+      "sum": 1.0584274899611363,
+      "xi_module": 1.0584274899611363,
+      "xi_constant": 1.0584274899611363,
+      "survival_fraction": 0.3470010441502981,
+      "harmonic_estimates": {
+        "10": 0.6263831609742079,
+        "100": 0.5822073316515288,
+        "1000": 0.5777155815682065,
+        "10000": 0.5772656640681646
+      },
+      "deviation_pct": 0.0,
+      "passed": true
+    },
+    "slope_xi_product": {
+      "test": "slope_xi_product",
+      "B_DFT": 2.0780869212350273,
+      "B_FREE": 2.264,
+      "Xi": 1.0584274899611363,
+      "product": 2.1995043239638554,
+      "algebraic": 2.199504323963856,
+      "ratio_to_B_FREE": 0.9715125105847419,
+      "xi_needed_for_exact": 1.0894635719349424,
+      "deviation_pct": 2.8487489415258116,
+      "passed": true
+    },
+    "xi_uniqueness": {
+      "test": "xi_uniqueness",
+      "best_c": 1.059118236472946,
+      "xi_balance": 1.0584274899611363,
+      "best_error": 0.0009540764664818235,
+      "n_near_zero": 1,
+      "deviation_pct": 0.0652615808225958,
+      "analytical_u": 0.6180339887498949,
+      "analytical_x": 0.48121182505960336,
+      "analytical_c": 1.0584274899611361,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-23T16:35:49.874195"
+}

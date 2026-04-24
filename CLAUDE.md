@@ -90,9 +90,9 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **94 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6 + 10 in M7 + 10 in M8)
+- **104 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6 + 10 in M7 + 10 in M8 + 10 in M9)
   - M6 score: 27/40 → 35/40 (88%) after strengthening exp_02, 03, 08, 09
-- **Milestones 1-8** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions)
+- **Milestones 1-9** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions, infodynamic mechanism)
 - **Milestone 5** complete — SM completion & simulator validation (13 experiments)
   - Higgs mass 83 ppm (lambda = phi/4pi), PMNS < 0.3 deg, sin^2(theta_W) = tan(theta_C) = 3/13
   - De-actualization completes PAC cycle, 24% scorecard improvement
@@ -118,6 +118,16 @@ See `STANDARDS.md` at workspace root for full spec.
   - Neutrino splitting improved 44% → 17% with PMNS correction
   - S8 = 0.787 (per-level dissipation), H₀ = 73.0 km/s/Mpc (BAO φ^{-1/6} correction)
   - JWST: z-dependent cascade floor matches z=8 (16%) and z=12 (4%), z_cascade = ln(φ)×6
+- **Milestone 9** complete — The Infodynamic Mechanism (10 experiments, 37/40 = 92%)
+  - Cascade clock N(t) = a + (1/ln(φ))·ln(t_lookback) unifies S8/Hubble/JWST data points
+  - S8 tension resolved: 3.22σ → 0.07σ (98% reduction), S8(z=0.35)=0.769 vs 0.768 observed
+  - Xi = γ + ln(φ) algebraically unique transition cost (g_out = g_in²)
+  - Parameter reduction: 2→1 free parameter (t1=520 Myr anchors to first stars)
+  - N_physical boundary handling: z=0→N_max, t<t1→N_max, t≥t1→clock formula floored at 1
+  - Phi self-similarity in splitting algebra (interval ratios, not cumulative sums)
+  - Discrete H0 tension: phi^{1/N_floor} matches SH0ES at 0.05σ
+  - 4 new falsifiable predictions for Euclid, DESI, TDSL
+  - Honest failures: 8.9% slope gap (noise w/ 3 points), DESI w(z) tension (wa=-0.15 vs -0.75)
 - **PACSeries** published on Zenodo (DOI: 10.5281/zenodo.15783623)
 - **Active organization effort**: bringing all experiments to full standard, adding FDO source links
 
