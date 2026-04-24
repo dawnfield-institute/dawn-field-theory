@@ -1,0 +1,116 @@
+{
+  "experiment": "exp_01_phi_timing_from_pac",
+  "milestone": 9,
+  "block": "A",
+  "block_name": "Cascade Dynamics",
+  "tests": {
+    "temporal_self_similarity": {
+      "test": "temporal_self_similarity",
+      "n_levels": 50,
+      "tolerance": 1e-12,
+      "max_interval_ratio_dev": 1.3723111286221163e-16,
+      "max_handoff_dev": 3.3754376768136057e-16,
+      "max_cross_scale_dev": 1.3723111286221163e-16,
+      "check1_interval_ratios": true,
+      "check2_handoff": true,
+      "check3_cross_scale": true,
+      "passed": true
+    },
+    "uniqueness_scan": {
+      "test": "uniqueness_scan",
+      "algebraic_residual": 1.1102230246251565e-16,
+      "n_scanned": 10000,
+      "best_alpha": 1.6181368136813683,
+      "best_grid_error": 8.781585303763162e-05,
+      "exact_error_at_phi": 1.1102230246251565e-16,
+      "dist_from_phi": 0.00010282493147339977,
+      "positive_root": 0.6180339887498949,
+      "negative_root": -1.618033988749895,
+      "all_near_phi": true,
+      "phi": 1.618033988749895,
+      "check1_algebraic": true,
+      "check2_numerical": true,
+      "check3_uniqueness": true,
+      "passed": true
+    },
+    "non_phi_failure_modes": {
+      "test": "non_phi_failure_modes",
+      "constants_tested": {
+        "e": {
+          "alpha": 2.718281828459045,
+          "g_in": 0.36787944117144233,
+          "g_out": 0.6321205588285577,
+          "scale_inv_error": 0.49678527559194496,
+          "time_ratio_std": 0.0
+        },
+        "2": {
+          "alpha": 2.0,
+          "g_in": 0.5,
+          "g_out": 0.5,
+          "scale_inv_error": 0.25,
+          "time_ratio_std": 1.389857338052119e-13
+        },
+        "pi": {
+          "alpha": 3.141592653589793,
+          "g_in": 0.3183098861837907,
+          "g_out": 0.6816901138162093,
+          "scale_inv_error": 0.5803689301738715,
+          "time_ratio_std": 0.0
+        },
+        "sqrt(2)": {
+          "alpha": 1.4142135623730951,
+          "g_in": 0.7071067811865475,
+          "g_out": 0.29289321881345254,
+          "scale_inv_error": 0.20710678118654735,
+          "time_ratio_std": 8.398715345265393e-08
+        },
+        "sqrt(3)": {
+          "alpha": 1.7320508075688772,
+          "g_in": 0.5773502691896258,
+          "g_out": 0.42264973081037416,
+          "scale_inv_error": 0.08931639747704073,
+          "time_ratio_std": 3.725782658494647e-11
+        }
+      },
+      "all_above_1pct": true,
+      "passed": true
+    },
+    "empirical_clock_match": {
+      "test": "empirical_clock_match",
+      "clock_summary": {
+        "a": 1.3596216430269106,
+        "slope": 2.0780869212350273,
+        "slope_label": "1/ln(phi)",
+        "rms": 0.12639575372754672,
+        "t1_gyr": 0.5198234666632633,
+        "N_now": 6.813911116977524,
+        "level_floor": 6.0,
+        "fraction_through": 0.8139111169775237
+      },
+      "data_points": {
+        "s8": {
+          "t_lookback_gyr": 4.0,
+          "N_obs": 4.16,
+          "N_pred": 4.240461823852023,
+          "residual": 0.08046182385202272
+        },
+        "hubble": {
+          "t_lookback_gyr": 9.5,
+          "N_obs": 5.94,
+          "N_pred": 6.038001685594749,
+          "residual": 0.09800168559474898
+        },
+        "jwst": {
+          "t_lookback_gyr": 13.2,
+          "N_obs": 6.9,
+          "N_pred": 6.721536490553229,
+          "residual": -0.1784635094467717
+        }
+      },
+      "rms": 0.12639575372754672,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-23T16:35:40.355084"
+}

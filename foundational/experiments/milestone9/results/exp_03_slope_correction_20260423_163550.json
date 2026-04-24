@@ -1,0 +1,118 @@
+{
+  "experiment": "exp_03_slope_correction",
+  "milestone": 9,
+  "block": "A",
+  "block_name": "Cascade Dynamics",
+  "tests": {
+    "ghost_heart_correction": {
+      "test": "ghost_heart_correction",
+      "max_depth": 6,
+      "n_total": 127,
+      "n_effective": 104,
+      "n_leaves": 64,
+      "n_leaves_above_threshold": 42,
+      "threshold_frac": 0.01,
+      "correction_factor": 1.2211538461538463,
+      "B_DFT": 2.0780869212350273,
+      "B_corrected": 2.5376638365081585,
+      "B_FREE": 2.264,
+      "deviation_pct": 12.087625287462842,
+      "passed": false
+    },
+    "ade_dimensional_correction": {
+      "test": "ade_dimensional_correction",
+      "B_DFT": 2.0780869212350273,
+      "B_FREE": 2.264,
+      "needed_factor": 1.0894635719349424,
+      "factors": {
+        "3/2 (spatial/spatial-1)": {
+          "factor": 1.5,
+          "B_result": 3.117130381852541,
+          "deviation_pct": 37.68243736097798,
+          "within_3pct": "False"
+        },
+        "ln(4)/ln(3) (log dim)": {
+          "factor": 1.2618595071429148,
+          "B_result": 2.6222537382297686,
+          "deviation_pct": 15.823928367039258,
+          "within_3pct": "False"
+        },
+        "sqrt(3) (spatial norm)": {
+          "factor": 1.7320508075688772,
+          "B_result": 3.599352130123451,
+          "deviation_pct": 58.981984546088825,
+          "within_3pct": "False"
+        },
+        "4/3 (spacetime/spatial)": {
+          "factor": 1.3333333333333333,
+          "B_result": 2.770782561646703,
+          "deviation_pct": 22.384388765313748,
+          "within_3pct": "False"
+        },
+        "D/(D-1) = 3/2": {
+          "factor": 1.5,
+          "B_result": 3.117130381852541,
+          "deviation_pct": 37.68243736097798,
+          "within_3pct": "False"
+        }
+      },
+      "best_factor": "ln(4)/ln(3) (log dim)",
+      "best_deviation_pct": 15.823928367039258,
+      "any_within_3pct": false,
+      "passed": false
+    },
+    "leave_one_out_stability": {
+      "test": "leave_one_out_stability",
+      "full_fit_a": 1.0100184843826945,
+      "full_fit_slope": 2.246765385745252,
+      "full_fit_rms": 0.09360581831039204,
+      "dft_fit_rms": 0.12639575372754672,
+      "loo_results": {
+        "s8": {
+          "a": -0.630616168020798,
+          "slope": 2.9185981897539355,
+          "slope_deviation_pct": 29.902223359464674,
+          "N_pred": 3.415420044809803,
+          "N_obs": 4.16,
+          "prediction_error": 0.744579955190197
+        },
+        "hubble": {
+          "a": 0.9785148954199454,
+          "slope": 2.294956391519875,
+          "slope_deviation_pct": 2.144906009340096,
+          "N_pred": 6.145131397808198,
+          "N_obs": 5.94,
+          "prediction_error": 0.20513139780819767
+        },
+        "jwst": {
+          "a": 1.3072702046800937,
+          "slope": 2.0578095643521084,
+          "slope_deviation_pct": 8.410126958158875,
+          "N_pred": 6.616865074717454,
+          "N_obs": 6.9,
+          "prediction_error": 0.28313492528254613
+        }
+      },
+      "max_prediction_error": 0.744579955190197,
+      "passed": true
+    },
+    "monte_carlo_sensitivity": {
+      "test": "monte_carlo_sensitivity",
+      "n_trials": 10000,
+      "sigma": 0.5,
+      "slope_mean": 2.237873938205372,
+      "slope_std": 0.574372203450936,
+      "slope_median": 2.2423487626301215,
+      "ci_95_lo": 1.093024976604674,
+      "ci_95_hi": 3.359625797833732,
+      "B_DFT": 2.0780869212350273,
+      "B_FREE": 2.264,
+      "b_dft_percentile": 38.58,
+      "b_free_percentile": 51.38,
+      "b_dft_in_95ci": true,
+      "passed": true
+    }
+  },
+  "score": "2/4",
+  "timestamp": "2026-04-23T16:35:50.378198"
+}
