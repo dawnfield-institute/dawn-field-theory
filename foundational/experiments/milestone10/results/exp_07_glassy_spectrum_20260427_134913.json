@@ -1,0 +1,213 @@
+{
+  "experiment": "exp_07_glassy_spectrum",
+  "milestone": 10,
+  "block": "C",
+  "tests": {
+    "residual_compilation": {
+      "test": "residual_compilation",
+      "n_compiled": 10,
+      "residuals": {
+        "alpha_s_uv": {
+          "name": "Strong coupling UV deviation",
+          "residual": 0.1179,
+          "energy_scale_gev": 91.2,
+          "reference": "PDG 2024, alpha_s(M_Z)"
+        },
+        "theta_qcd": {
+          "name": "Strong CP violation",
+          "residual": 1e-10,
+          "energy_scale_gev": 1.0,
+          "reference": "Neutron EDM bound"
+        },
+        "eta_baryon": {
+          "name": "Baryon asymmetry",
+          "residual": 6.1e-10,
+          "energy_scale_gev": 100.0,
+          "reference": "BBN + CMB, PDG 2024"
+        },
+        "cc_planck": {
+          "name": "Cosmological constant",
+          "residual": 2.89e-122,
+          "energy_scale_gev": 0.0024,
+          "reference": "Planck 2018, Lambda in Planck units"
+        },
+        "higgs_hierarchy": {
+          "name": "Higgs mass hierarchy",
+          "residual": 1.0266393442622951e-17,
+          "energy_scale_gev": 125.25,
+          "reference": "PDG 2024, m_H / M_Planck"
+        },
+        "jarlskog": {
+          "name": "Jarlskog invariant",
+          "residual": 3.18e-05,
+          "energy_scale_gev": 80.4,
+          "reference": "PDG 2024, CKM CP violation"
+        },
+        "nu_mass_ratio": {
+          "name": "Neutrino-charged lepton mass ratio",
+          "residual": 3.3766672294445376e-05,
+          "energy_scale_gev": 6e-05,
+          "reference": "Sum(m_nu) < 0.12 eV / m_tau"
+        },
+        "higgs_stability": {
+          "name": "Higgs self-coupling deviation from stability",
+          "residual": 0.748,
+          "energy_scale_gev": 125.25,
+          "reference": "lambda_H near metastability boundary"
+        },
+        "electron_mass": {
+          "name": "Electron Yukawa coupling",
+          "residual": 2.0772357723577236e-06,
+          "energy_scale_gev": 0.000511,
+          "reference": "y_e = m_e / v, PDG 2024"
+        },
+        "muon_g2_anomaly": {
+          "name": "Muon g-2 anomaly",
+          "residual": 1.071973107116704e-06,
+          "energy_scale_gev": 0.1057,
+          "reference": "Fermilab 2023, Delta(a_mu)"
+        }
+      },
+      "passed": true
+    },
+    "distribution_shape": {
+      "test": "distribution_shape",
+      "n_residuals": 10,
+      "log_residuals": [
+        -0.9284861949049108,
+        -10.0,
+        -9.214670164989233,
+        -121.53910215724345,
+        -16.988582096135463,
+        -4.497572880015567,
+        -4.471511736976963,
+        -0.12609840213553863,
+        -5.6825142069686665,
+        -5.969816109771345
+      ],
+      "fit_results": {
+        "uniform": {
+          "aic": 99.9839597568258,
+          "loglik": -47.9919798784129
+        },
+        "gaussian": {
+          "aic": 103.39158486252617,
+          "loglik": -49.69579243126309
+        },
+        "levy_stable": {
+          "aic": -1267.183887977377,
+          "loglik": 637.5919439886885,
+          "params": [
+            0.005860827587269684,
+            -0.5222632904836249,
+            -4.471511736976963,
+            1.4794802489333163
+          ]
+        },
+        "best": "levy_stable"
+      },
+      "levy_beats_gaussian": true,
+      "passed": true
+    },
+    "near_misses": {
+      "test": "near_misses",
+      "n_near_misses": 0,
+      "near_miss_names": [],
+      "classification": [
+        {
+          "name": "Strong coupling UV deviation",
+          "residual": 0.1179,
+          "log10": -0.9284861949049108,
+          "category": "natural"
+        },
+        {
+          "name": "Strong CP violation",
+          "residual": 1e-10,
+          "log10": -10.0,
+          "category": "fine-tuned"
+        },
+        {
+          "name": "Baryon asymmetry",
+          "residual": 6.1e-10,
+          "log10": -9.214670164989233,
+          "category": "fine-tuned"
+        },
+        {
+          "name": "Cosmological constant",
+          "residual": 2.89e-122,
+          "log10": -121.53910215724345,
+          "category": "fine-tuned"
+        },
+        {
+          "name": "Higgs mass hierarchy",
+          "residual": 1.0266393442622951e-17,
+          "log10": -16.988582096135463,
+          "category": "fine-tuned"
+        },
+        {
+          "name": "Jarlskog invariant",
+          "residual": 3.18e-05,
+          "log10": -4.497572880015567,
+          "category": "fine-tuned"
+        },
+        {
+          "name": "Neutrino-charged lepton mass ratio",
+          "residual": 3.3766672294445376e-05,
+          "log10": -4.471511736976963,
+          "category": "fine-tuned"
+        },
+        {
+          "name": "Higgs self-coupling deviation from stability",
+          "residual": 0.748,
+          "log10": -0.12609840213553863,
+          "category": "natural"
+        },
+        {
+          "name": "Electron Yukawa coupling",
+          "residual": 2.0772357723577236e-06,
+          "log10": -5.6825142069686665,
+          "category": "fine-tuned"
+        },
+        {
+          "name": "Muon g-2 anomaly",
+          "residual": 1.071973107116704e-06,
+          "log10": -5.969816109771345,
+          "category": "fine-tuned"
+        }
+      ],
+      "passed": false
+    },
+    "cross_scale_correlations": {
+      "test": "cross_scale_correlations",
+      "log_residuals": [
+        -0.9284861949049108,
+        -10.0,
+        -9.214670164989233,
+        -121.53910215724345,
+        -16.988582096135463,
+        -4.497572880015567,
+        -4.471511736976963,
+        -0.12609840213553863,
+        -5.6825142069686665,
+        -5.969816109771345
+      ],
+      "log_energies": [
+        1.9599948383284163,
+        0.0,
+        2.0,
+        -2.619788758288394,
+        2.0977777345392834,
+        1.9052560487484513,
+        -4.221848749616356,
+        2.0977777345392834,
+        -3.291579099865287,
+        -0.9759250126925737
+      ],
+      "spearman_rho": 0.0790277206784084,
+      "p_value": 0.8282024798594116,
+      "passed": false
+    }
+  },
+  "score": "2/4",
+  "timestamp": "2026-04-27T13:49:13.717817"
+}

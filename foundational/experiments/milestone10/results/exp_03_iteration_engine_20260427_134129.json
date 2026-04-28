@@ -1,0 +1,70 @@
+{
+  "experiment": "exp_03_iteration_engine",
+  "milestone": 10,
+  "block": "A",
+  "tests": {
+    "single_circle_termination": {
+      "test": "single_circle_termination",
+      "n_maps": 20,
+      "hierarchical_count": 0,
+      "classifications": {
+        "0.5x (contractive)": "fixed_point",
+        "tanh(x) (bounded contractive)": "chaotic",
+        "cos(x) (oscillating contractive)": "fixed_point",
+        "x/(1+|x|) (saturation)": "chaotic",
+        "1/(1+x^2) (fixed point)": "fixed_point",
+        "sqrt(|x|+0.1) (sublinear)": "fixed_point",
+        "0.9*sin(x)+0.1 (damped oscillation)": "fixed_point",
+        "logistic r=4 (chaotic)": "periodic",
+        "2x mod 1 (Bernoulli, chaotic)": "fixed_point",
+        "1-1.99x^2 (chaotic)": "chaotic",
+        "2x (divergent)": "divergent",
+        "x^2 (super-divergent)": "fixed_point",
+        "x+sign(x) (linear divergent)": "chaotic",
+        "x-x^3/3 (truncated sin)": "chaotic",
+        "(x+1/x)/2 (Babylonian sqrt)": "fixed_point",
+        "x*exp(-|x|) (self-limiting)": "chaotic",
+        "sin(phi*x) (phi-modulated)": "fixed_point",
+        "x(1-|x|)+0.5*sign (bounded)": "fixed_point",
+        "phi*x*(1-x/phi) (logistic-phi)": "fixed_point",
+        "(x+phi)/(1+x/phi) (Mobius-phi)": "fixed_point"
+      },
+      "passed": true
+    },
+    "two_circle_bounded": {
+      "test": "two_circle_bounded",
+      "n_functions": 20,
+      "bounded_nonterminating": 13,
+      "with_scale_separation": 0,
+      "fraction_bnt": 0.65,
+      "fraction_scale": 0.0,
+      "passed": true
+    },
+    "discrete_residue": {
+      "test": "discrete_residue",
+      "n_residues": 5400,
+      "histogram_peaks": 1,
+      "ks_stat": 0.3483548230030504,
+      "ks_p": 0.0,
+      "residue_mean": 1.0330445236725565,
+      "residue_std": 0.7163759065902293,
+      "passed": true
+    },
+    "phi_ratio_recovery": {
+      "test": "phi_ratio_recovery",
+      "n_ratios": 3,
+      "ratios": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "mean_ratio": 2.0,
+      "phi_target": 1.618033988749895,
+      "relative_error": 0.23606797749978967,
+      "phi_matches": 0,
+      "passed": false
+    }
+  },
+  "score": "3/4",
+  "timestamp": "2026-04-27T13:41:29.344393"
+}

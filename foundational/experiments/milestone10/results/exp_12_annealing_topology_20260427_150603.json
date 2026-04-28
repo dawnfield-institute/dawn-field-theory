@@ -1,0 +1,91 @@
+{
+  "experiment": "exp_12_annealing_topology",
+  "milestone": 10,
+  "block": "investigative",
+  "tests": {
+    "gap_structure": {
+      "test": "gap_structure",
+      "log_residuals": [
+        -121.53910215724345,
+        -16.988582096135463,
+        -10.0,
+        -9.214670164989233,
+        -5.969816109771345,
+        -5.6825142069686665,
+        -4.497572880015567,
+        -4.471511736976963,
+        -0.9284861949049108,
+        -0.12609840213553863
+      ],
+      "max_gap": 104.55052006110799,
+      "gap_boundary": [
+        -121.53910215724345,
+        -16.988582096135463
+      ],
+      "below_gap": 1,
+      "above_gap": 9,
+      "expected_max_gap": 40.09767762972495,
+      "gap_ratio": 2.6073958952576164,
+      "passed": false
+    },
+    "scale_independence": {
+      "test": "scale_independence",
+      "scales": [
+        0.001,
+        0.1,
+        10.0,
+        1000.0,
+        100000.0
+      ],
+      "mean_residuals": {
+        "0.001": 0.05655063808425527,
+        "0.1": 0.05692217210357952,
+        "10.0": 0.6111226217917951,
+        "1000.0": 0.925967882715127,
+        "100000.0": 0.9285946775181955
+      },
+      "ks_mean_pvalue": 0.19578462812647365,
+      "spearman_rho": 0.9999999999999999,
+      "spearman_p": 1.4042654220543672e-24,
+      "passed": false
+    },
+    "topology_dependence": {
+      "test": "topology_dependence",
+      "ruggedness_levels": [
+        0,
+        1,
+        3,
+        5,
+        10,
+        20,
+        50
+      ],
+      "mean_residuals": {
+        "0": 0.001481115151960707,
+        "1": 0.00124624833784611,
+        "3": 0.0014532474206468311,
+        "5": 0.001509042183229953,
+        "10": 0.001616037592592099,
+        "20": 0.0013578700888560156,
+        "50": 0.0016585850094372324
+      },
+      "spearman_rho": 0.5,
+      "p_value": 0.25316999510032273,
+      "passed": false
+    },
+    "simultaneous_vs_sequential": {
+      "test": "simultaneous_vs_sequential",
+      "sm_spread": 34.83562987264134,
+      "simultaneous_spread": 1.3633537690254913,
+      "sequential_spread": 1.4000304390838259,
+      "sim_spread_error": 0.9608632376101739,
+      "seq_spread_error": 0.9598103882661998,
+      "ks_simultaneous": 0.8825,
+      "ks_sequential": 0.9325,
+      "simultaneous_better": false,
+      "passed": false
+    }
+  },
+  "score": "0/4",
+  "timestamp": "2026-04-27T15:06:03.583982"
+}

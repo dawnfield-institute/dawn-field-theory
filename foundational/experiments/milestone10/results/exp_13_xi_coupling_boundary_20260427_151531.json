@@ -1,0 +1,112 @@
+{
+  "experiment": "exp_13_xi_coupling_boundary",
+  "milestone": 10,
+  "block": "investigative",
+  "tests": {
+    "decoupled_baseline": {
+      "test": "decoupled_baseline",
+      "n_trials": 30,
+      "mean_residue": 0.2188239912231079,
+      "std_residue": 0.05373894602892229,
+      "xi_target": 1.0584274899611363,
+      "lnphi_squared": 0.2315648205771944,
+      "passed": true
+    },
+    "progressive_coupling": {
+      "test": "progressive_coupling",
+      "couplings": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "results": {
+        "0.0": {
+          "mean_residue": 0.22485170445612215,
+          "std": 0.05420423600193233,
+          "n_valid": 20
+        },
+        "0.1": {
+          "mean_residue": 0.21432090203633974,
+          "std": 0.05235364401824195,
+          "n_valid": 20
+        },
+        "0.2": {
+          "mean_residue": 0.1986021827015051,
+          "std": 0.0539433431379961,
+          "n_valid": 20
+        },
+        "0.3": {
+          "mean_residue": 0.20490654272964512,
+          "std": 0.046661757024929584,
+          "n_valid": 20
+        },
+        "0.5": {
+          "mean_residue": 0.2081391711376766,
+          "std": 0.05536432137908168,
+          "n_valid": 20
+        },
+        "0.7": {
+          "mean_residue": 0.1936657166090189,
+          "std": 0.06007166405807722,
+          "n_valid": 20
+        },
+        "0.9": {
+          "mean_residue": 0.1702866213112076,
+          "std": 0.0580989841994478,
+          "n_valid": 20
+        },
+        "1.0": {
+          "mean_residue": 0.17537381617831319,
+          "std": 0.0618208298813015,
+          "n_valid": 20
+        }
+      },
+      "monotonicity": 0.8571428571428571,
+      "max_coupling_residue": 0.17537381617831319,
+      "xi_distance": 0.8343071983280096,
+      "passed": true
+    },
+    "full_self_referential": {
+      "test": "full_self_referential",
+      "n_trials": 25,
+      "mean_residue": 0.19461964581447805,
+      "std_residue": 0.03753152306338862,
+      "xi_target": 1.0584274899611363,
+      "xi_error": 0.816123780173525,
+      "baseline_improvement": -0.04538035418552194,
+      "passed": false
+    },
+    "lnphi_squared_hypothesis": {
+      "test": "lnphi_squared_hypothesis",
+      "grand_mean": 0.22921680796627722,
+      "grand_std": 0.07011274554771928,
+      "lnphi_squared": 0.2315648205771944,
+      "lnphi2_error": 0.0023480126109171884,
+      "lnphi2_sigma": 0.03348909806019667,
+      "best_match": "ln(phi)^2",
+      "candidates": {
+        "ln(phi)^2": 0.2315648205771944,
+        "ln(phi)": 0.48121182505960347,
+        "gamma/e": 0.21234577623937845,
+        "1/4": 0.25,
+        "phi - sqrt(2)": 0.20382042637679976,
+        "Xi/4": 0.2646068724902841
+      },
+      "config_means": [
+        0.22816824429156962,
+        0.2541706600370905,
+        0.21346266170559525,
+        0.23180283601510676,
+        0.2184796377820239
+      ],
+      "passed": true
+    }
+  },
+  "score": "3/4",
+  "timestamp": "2026-04-27T15:15:31.651980"
+}

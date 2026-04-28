@@ -1,0 +1,89 @@
+{
+  "experiment": "exp_09_number_theory_fossil",
+  "milestone": 10,
+  "block": "D",
+  "tests": {
+    "alternative_closures": {
+      "test": "alternative_closures",
+      "closures": {
+        "sqrt2": {
+          "base_constant": 1.4142135623730951,
+          "n_primes": 158,
+          "gap_mean": 57.870675250573036,
+          "gap_std": 83.02380957388755,
+          "phi_enrichment": 0.0,
+          "ks_distance": 0.45,
+          "ks_p_value": 1.7047967801006258e-09,
+          "different_from_standard": true
+        },
+        "e": {
+          "base_constant": 2.718281828459045,
+          "n_primes": 157,
+          "gap_mean": 63.131126053750215,
+          "gap_std": 103.86149373317404,
+          "phi_enrichment": 0.00641025641025641,
+          "ks_distance": 0.52,
+          "ks_p_value": 1.070075869779788e-12,
+          "different_from_standard": true
+        },
+        "tribonacci": {
+          "base_constant": 1.8393,
+          "n_primes": 160,
+          "gap_mean": 56.3334279687015,
+          "gap_std": 81.91972438372505,
+          "phi_enrichment": 0.006289308176100629,
+          "ks_distance": 0.41,
+          "ks_p_value": 6.617357604827955e-08,
+          "different_from_standard": true
+        },
+        "plastic": {
+          "base_constant": 1.3247,
+          "n_primes": 148,
+          "gap_mean": 67.21299823424346,
+          "gap_std": 135.81669059754086,
+          "phi_enrichment": 0.013605442176870748,
+          "ks_distance": 0.39,
+          "ks_p_value": 3.5690338557186834e-07,
+          "different_from_standard": true
+        }
+      },
+      "different_count": 4,
+      "n_tested": 4,
+      "passed": true
+    },
+    "universal_invariants": {
+      "test": "universal_invariants",
+      "invariants": [
+        "prime_density_decreases",
+        "structured_gap_distribution",
+        "multiplicative_structure",
+        "polynomial_gap_growth"
+      ],
+      "n_invariants": 4,
+      "passed": true
+    },
+    "phi_enrichment_fingerprint": {
+      "test": "phi_enrichment_fingerprint",
+      "standard_phi_enrichment": 0.010050251256281407,
+      "alternative_enrichments": {
+        "sqrt2": 0.0,
+        "e": 0.00641025641025641,
+        "tribonacci": 0.006289308176100629,
+        "plastic": 0.013605442176870748
+      },
+      "absent_count": 4,
+      "passed": true
+    },
+    "riemann_zero_decomposition": {
+      "test": "riemann_zero_decomposition",
+      "n_zeros": 200,
+      "mean_spacing": 1.1527328807066624,
+      "spacing_std": 0.5382132109852433,
+      "residual_entropy": 3.017838415946933,
+      "normalized_entropy": 0.6150205220894438,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-27T13:51:42.491997"
+}

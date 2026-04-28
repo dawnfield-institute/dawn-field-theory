@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_14_spectral_confinement",
+  "type": "extension",
+  "extension_section": "Spectral confinement under self-applied symmetry",
+  "score": "3/4",
+  "n_passed": 3,
+  "n_tests": 4,
+  "tests": [
+    {
+      "test": "eigenvector_preservation",
+      "passed": true,
+      "max_drift": 2.4424906541753444e-15,
+      "n_systems": 60
+    },
+    {
+      "test": "state_collapse",
+      "passed": true,
+      "mean_collapse_time": 94.34,
+      "std_collapse_time": 10.83256202382428,
+      "k_cross_predicted": 3.554491068879482
+    },
+    {
+      "test": "asymmetric_contrast",
+      "passed": false,
+      "sym_final_norm": 2.57663915393981e-06,
+      "asym_final_norm": 5.947508961210007e-38,
+      "asym_saturation": 0.0
+    },
+    {
+      "test": "spectral_persistence",
+      "passed": true,
+      "sa_hierarchy_frac": 0.91,
+      "fixed_hierarchy_frac": 0.0,
+      "sa_mean_complexity": 2.522327128467424,
+      "fixed_mean_complexity": 1.1211482912892172
+    }
+  ],
+  "timestamp": "2026-04-28T11:49:54.249461"
+}

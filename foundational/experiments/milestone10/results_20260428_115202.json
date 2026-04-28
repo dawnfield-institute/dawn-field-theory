@@ -1,0 +1,107 @@
+{
+  "experiment": "exp_15_med_complexity_bound",
+  "type": "extension",
+  "extension_section": "MED complexity bound under self-applied symmetry",
+  "score": "0/4",
+  "n_passed": 0,
+  "n_tests": 4,
+  "tests": [
+    {
+      "test": "first_order_transition",
+      "passed": false,
+      "jump_weak": 0.9791379310344828,
+      "jump_size": 0.044547171556751,
+      "H_dead": 0.13720047488008852,
+      "H_alive": 0.2634858646818925,
+      "gap": 0.12628538980180398,
+      "N": 16
+    },
+    {
+      "test": "critical_rate_phi",
+      "passed": false,
+      "results": [
+        {
+          "N": 8,
+          "predicted": 0.9416218876556355,
+          "measured": 0.9898242187499999,
+          "error_pct": 5.119075047668468
+        },
+        {
+          "N": 12,
+          "predicted": 0.9606924183246364,
+          "measured": 0.9898242187499999,
+          "error_pct": 3.032375385679308
+        },
+        {
+          "N": 16,
+          "predicted": 0.9703720356933394,
+          "measured": 0.9898242187499999,
+          "error_pct": 2.004610844206961
+        },
+        {
+          "N": 24,
+          "predicted": 0.9801491816680951,
+          "measured": 0.9898242187499999,
+          "error_pct": 0.9870984195935489
+        },
+        {
+          "N": 32,
+          "predicted": 0.9850746345802126,
+          "measured": 0.9898242187499999,
+          "error_pct": 0.4821547528539651
+        }
+      ],
+      "mean_traversal_error_pct": 34.56167161980912,
+      "one_over_phi": 0.6180339887498948
+    },
+    {
+      "test": "complexity_scaling",
+      "passed": false,
+      "N_values": [
+        8,
+        12,
+        16,
+        24,
+        32,
+        48
+      ],
+      "complexities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "r2_log": 0.0,
+      "r2_lin": 0.0,
+      "slope": 0.0,
+      "intercept": 0.0
+    },
+    {
+      "test": "edge_of_viability",
+      "passed": false,
+      "sr_natural": 1.1995043239638556,
+      "results": {
+        "8": {
+          "frac_alive": 0.02,
+          "mean_H_act": 0.15363049725572986,
+          "weak": 0.9416218876556355
+        },
+        "16": {
+          "frac_alive": 0.0,
+          "mean_H_act": 0.17516693401797048,
+          "weak": 0.9703720356933394
+        },
+        "32": {
+          "frac_alive": 0.0,
+          "mean_H_act": 0.23482354859706248,
+          "weak": 0.9850746345802126
+        }
+      },
+      "at_edge": false,
+      "gamma_error_pct": 999.0
+    }
+  ],
+  "timestamp": "2026-04-28T11:52:02.025602"
+}

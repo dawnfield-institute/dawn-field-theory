@@ -1,0 +1,38 @@
+{
+  "experiment": "exp_06_gauge_from_substrate",
+  "milestone": 10,
+  "block": "B",
+  "tests": {
+    "absolute_values_meaningless": {
+      "test": "absolute_values_meaningless",
+      "n_tests": 100,
+      "n_checks": 400,
+      "max_relative_change": 2.013100902013802e-13,
+      "mean_relative_change": 1.230821274773433e-15,
+      "passed": true
+    },
+    "phase_redundancy": {
+      "test": "phase_redundancy",
+      "n_shifts": 100,
+      "gauge_invariant_observables": 4,
+      "has_gauge_orbit": true,
+      "passed": true
+    },
+    "local_gauge_from_gradient": {
+      "test": "local_gauge_from_gradient",
+      "passed": false,
+      "note": "diverged"
+    },
+    "noether_conservation": {
+      "test": "noether_conservation",
+      "n_steps": 1000,
+      "mean_current": 47893.69470217677,
+      "std_current": 13156.339448774655,
+      "max_current": 64790.479159847135,
+      "relative_fluctuation": 0.2030597646348028,
+      "passed": false
+    }
+  },
+  "score": "2/4",
+  "timestamp": "2026-04-27T13:47:06.300417"
+}

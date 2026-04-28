@@ -1,0 +1,102 @@
+{
+  "experiment": "exp_16_scope_asymmetry_condensation",
+  "type": "extension",
+  "extension_section": "Scope asymmetry and hierarchy condensation",
+  "score": "4/4",
+  "n_passed": 4,
+  "n_tests": 4,
+  "tests": [
+    {
+      "test": "hierarchy_condensation",
+      "passed": true,
+      "drop_sr": 1.1447916666666667,
+      "scope_ratio": 1.1995043239638556,
+      "condensation_ratio": 2.046222041279564,
+      "max_complexity": 4.068960371821065,
+      "min_complexity": 1.9885233810093368,
+      "N": 16
+    },
+    {
+      "test": "window_center",
+      "passed": true,
+      "centers": [
+        {
+          "N": 16,
+          "valley_sr": 1.05,
+          "valley_complexity": 1.6177042325275492,
+          "error_pct": 12.463842020161035
+        },
+        {
+          "N": 32,
+          "valley_sr": 1.2395833333333333,
+          "valley_complexity": 2.1760311439910973,
+          "error_pct": 3.341297615087656
+        },
+        {
+          "N": 64,
+          "valley_sr": 1.225,
+          "valley_complexity": 2.196699225527973,
+          "error_pct": 2.125517643145461
+        }
+      ],
+      "scope_ratio": 1.1995043239638556,
+      "mean_error_pct": 5.976885759464718
+    },
+    {
+      "test": "scale_fractions",
+      "passed": true,
+      "peak_before": 0.41796875,
+      "frac_at_ratio": 0.31875000000000003,
+      "frac_far_above": 0.8624999999999999,
+      "dip": 0.09921874999999997,
+      "recovery": 0.54375,
+      "N": 32
+    },
+    {
+      "test": "scope_ratio_identity",
+      "passed": true,
+      "scope_ratio": 1.1995043239638556,
+      "match_pct": 0.041306336345359185,
+      "sensitivity": 2.3959338293954047,
+      "sensitivities": [
+        {
+          "offset": -0.1,
+          "sr": 1.0995043239638556,
+          "mean_complexity": 2.9944303180101133
+        },
+        {
+          "offset": -0.05,
+          "sr": 1.1495043239638556,
+          "mean_complexity": 3.360388291836575
+        },
+        {
+          "offset": -0.02,
+          "sr": 1.1795043239638556,
+          "mean_complexity": 2.1469065544667627
+        },
+        {
+          "offset": 0.0,
+          "sr": 1.1995043239638556,
+          "mean_complexity": 2.087607410362235
+        },
+        {
+          "offset": 0.02,
+          "sr": 1.2195043239638557,
+          "mean_complexity": 2.150820588521511
+        },
+        {
+          "offset": 0.05,
+          "sr": 1.2495043239638557,
+          "mean_complexity": 2.6751017501242926
+        },
+        {
+          "offset": 0.1,
+          "sr": 1.2995043239638557,
+          "mean_complexity": 5.390364147405518
+        }
+      ]
+    }
+  ],
+  "scope_ratio": 1.1995043239638556,
+  "timestamp": "2026-04-28T12:06:48.341760"
+}

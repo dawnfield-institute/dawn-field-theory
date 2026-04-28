@@ -1,0 +1,61 @@
+{
+  "experiment": "exp_01_structural_exhaustion",
+  "milestone": 10,
+  "block": "A",
+  "tests": {
+    "case_a_elimination": {
+      "test": "case_a_elimination",
+      "n_systems": 500,
+      "hierarchy_count_asym": 113,
+      "hierarchy_count_sym": 129,
+      "fraction_combined": 0.242,
+      "threshold": 0.01,
+      "passed": false
+    },
+    "case_b_elimination": {
+      "test": "case_b_elimination",
+      "n_systems": 500,
+      "diverged": 355,
+      "collapsed": 4,
+      "transient": 122,
+      "stable_nontrivial": 19,
+      "fraction_stable": 0.038,
+      "passed": false
+    },
+    "case_c_survival": {
+      "test": "case_c_survival",
+      "n_systems": 500,
+      "hierarchy_count": 54,
+      "fraction": 0.108,
+      "mean_complexity": 0.18915189670727006,
+      "threshold": 0.3,
+      "passed": false
+    },
+    "exhaustion_grid": {
+      "test": "exhaustion_grid",
+      "grid": {
+        "sa=False,sym=False": {
+          "count": 53,
+          "fraction": 0.265
+        },
+        "sa=False,sym=True": {
+          "count": 56,
+          "fraction": 0.28
+        },
+        "sa=True,sym=False": {
+          "count": 25,
+          "fraction": 0.125
+        },
+        "sa=True,sym=True": {
+          "count": 22,
+          "fraction": 0.11
+        }
+      },
+      "only_cc_survives": false,
+      "cc_fraction": 0.11,
+      "passed": false
+    }
+  },
+  "score": "0/4",
+  "timestamp": "2026-04-27T12:34:44.661834"
+}
