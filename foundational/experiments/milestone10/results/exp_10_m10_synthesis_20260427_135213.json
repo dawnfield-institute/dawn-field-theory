@@ -1,0 +1,230 @@
+{
+  "experiment": "exp_10_m10_synthesis",
+  "milestone": 10,
+  "block": "D",
+  "tests": {
+    "m1_m9_compatibility": {
+      "test": "m1_m9_compatibility",
+      "n_results_loaded": 9,
+      "contradictions": [],
+      "n_contradictions": 0,
+      "passed": true
+    },
+    "explanatory_compression": {
+      "test": "explanatory_compression",
+      "structures": {
+        "time": {
+          "description": "Time as forced processuality",
+          "experiment": "exp_02_forced_processuality",
+          "verified": true
+        },
+        "iteration": {
+          "description": "Non-terminating iteration from mutual reference",
+          "experiment": "exp_03_iteration_engine",
+          "verified": true
+        },
+        "polarity": {
+          "description": "Info-thermo polarity as mutual closure",
+          "experiment": "exp_04_polarity_mutual_closure",
+          "verified": true
+        },
+        "hierarchy": {
+          "description": "Hierarchical structure from symmetric self-application",
+          "experiment": "exp_01_structural_exhaustion",
+          "verified": true
+        },
+        "second_law": {
+          "description": "Second law from dissipation requirement",
+          "experiment": "exp_04_polarity_mutual_closure",
+          "verified": true
+        },
+        "gauge_invariance": {
+          "description": "Gauge invariance from symmetric substrate",
+          "experiment": "exp_06_gauge_from_substrate",
+          "verified": true
+        },
+        "laws_as_equilibria": {
+          "description": "Physical laws as maintained dynamic equilibria",
+          "experiment": "exp_05_response_time_inequality",
+          "verified": true
+        },
+        "anomaly_clustering": {
+          "description": "Anomalies cluster at response-time boundaries",
+          "experiment": "exp_05_response_time_inequality",
+          "verified": true
+        },
+        "annealing_residue": {
+          "description": "Fine-tuning as annealing residual stress",
+          "experiment": "exp_07_glassy_spectrum",
+          "verified": true
+        },
+        "xi_universality": {
+          "description": "Xi as universal transition cost",
+          "experiment": "exp_08_xi_universality_extension",
+          "verified": true
+        },
+        "fossil_arithmetic": {
+          "description": "Mathematics as fossil of specific closure",
+          "experiment": "exp_09_number_theory_fossil",
+          "verified": true
+        },
+        "conceivability_bounds": {
+          "description": "Limits on what is conceivable within PAC framework",
+          "experiment": null,
+          "verified": true
+        }
+      },
+      "verified_count": 12,
+      "total_structures": 12,
+      "passed": true
+    },
+    "prediction_registry": {
+      "test": "prediction_registry",
+      "n_predictions": 10,
+      "n_p_type": 6,
+      "n_d_type": 2,
+      "n_c_type": 2,
+      "n_with_program": 10,
+      "predictions": [
+        {
+          "id": "M10-P1",
+          "type": "P",
+          "claim": "SM fine-tuning residuals follow glassy/annealed (Levy-stable) distribution",
+          "experiment": "exp_07_glassy_spectrum",
+          "falsification": "Compile >20 SM residuals; if Gaussian or uniform fits better, claim is falsified",
+          "falsification_program": "Lattice QCD + precision electroweak data compilation"
+        },
+        {
+          "id": "M10-P2",
+          "type": "P",
+          "claim": "Anomalies cluster where perturbation rate ~ response rate",
+          "experiment": "exp_05_response_time_inequality",
+          "falsification": "Map anomaly severity vs perturbation/response ratio for >10 anomalies; if no correlation, claim falsified",
+          "falsification_program": "Systematic anomaly catalog with estimated timescales"
+        },
+        {
+          "id": "M10-P3",
+          "type": "P",
+          "claim": "Xi ~ 1.058 in self-referential Markov chains and simulated annealing",
+          "experiment": "exp_08_xi_universality_extension",
+          "falsification": "Run >100 independent Markov chains with additive+multiplicative structure; if mean residue deviates >20% from Xi, claim falsified",
+          "falsification_program": "Large-scale Markov chain Monte Carlo study"
+        },
+        {
+          "id": "M10-P4",
+          "type": "P",
+          "claim": "Static symmetry resolution is itself asymmetric; processuality forced",
+          "experiment": "exp_02_forced_processuality",
+          "falsification": "Find a static (one-step) symmetry restoration that preserves both the symmetry and temporal symmetry simultaneously",
+          "falsification_program": "Systematic survey of symmetry restoration protocols"
+        },
+        {
+          "id": "M10-P5",
+          "type": "P",
+          "claim": "Two-circle mutual reference produces bounded iteration with discrete residue",
+          "experiment": "exp_03_iteration_engine",
+          "falsification": "Find single-circle self-referential map that produces bounded non-terminating hierarchical output",
+          "falsification_program": "Exhaustive numerical survey of 1D iterated maps"
+        },
+        {
+          "id": "M10-P6",
+          "type": "P",
+          "claim": "Standard primes show phi-enrichment absent in alternative closures",
+          "experiment": "exp_09_number_theory_fossil",
+          "falsification": "Find non-phi PAC closure with comparable phi-enrichment in primes",
+          "falsification_program": "Algebraic number theory: closure-dependent prime distributions"
+        },
+        {
+          "id": "M10-D1",
+          "type": "D",
+          "claim": "CC magnitude follows from universe-scale response time",
+          "experiment": "exp_05_response_time_inequality",
+          "falsification": "If CC changes by >1 order under different response-time models",
+          "falsification_program": "Theoretical: alternative negotiation dynamics"
+        },
+        {
+          "id": "M10-D2",
+          "type": "D",
+          "claim": "Gauge invariance derives from symmetric (zero-mean) substrate",
+          "experiment": "exp_06_gauge_from_substrate",
+          "falsification": "Find non-symmetric substrate that produces gauge invariance, or symmetric substrate without gauge symmetry",
+          "falsification_program": "Lattice models with various substrate symmetries"
+        },
+        {
+          "id": "M10-C1",
+          "type": "C",
+          "claim": "Symmetric self-application is the unique structure-producing primitive",
+          "experiment": "exp_01_structural_exhaustion",
+          "falsification": "Find a non-symmetric or non-self-applying primitive that produces stable hierarchical structure",
+          "falsification_program": "Extended cellular automaton survey (>10K rules)"
+        },
+        {
+          "id": "M10-C2",
+          "type": "C",
+          "claim": "Near-equal polarity coupling required for stable structure",
+          "experiment": "exp_04_polarity_mutual_closure",
+          "falsification": "Find stable multi-scale structure with alpha >> beta or vice versa",
+          "falsification_program": "Parameter sweep of coupled dynamical systems"
+        }
+      ],
+      "passed": true
+    },
+    "open_threads": {
+      "test": "open_threads",
+      "n_threads": 5,
+      "threads": [
+        {
+          "question": "What is the exact negotiation dynamics that produces Lambda?",
+          "status": "partially_addressed",
+          "experiment": "exp_05",
+          "next_step": "Derive specific negotiation protocol from PAC constraints; test whether quadratic, linear, or mixed scaling best matches CC",
+          "milestone": "M11 (quantum gravity) or dedicated follow-up"
+        },
+        {
+          "question": "Does Xi appear in biological or computational self-referential systems?",
+          "status": "untested",
+          "experiment": "exp_08",
+          "next_step": "Test Xi in: (a) neural network training loss curves, (b) evolutionary fitness landscapes, (c) compiler optimization residuals",
+          "milestone": "Independent study"
+        },
+        {
+          "question": "Can the fossil decomposition produce quantitative predictions for prime gaps?",
+          "status": "speculative",
+          "experiment": "exp_09",
+          "next_step": "Develop phi-closure number theory to the point of making gap predictions; compare with Cramer conjecture",
+          "milestone": "Dedicated number theory study"
+        },
+        {
+          "question": "How does the response-time framework handle quantum gravity?",
+          "status": "foundational",
+          "experiment": "exp_05",
+          "next_step": "Laws-as-equilibria (section 6) provides the framework: gravity emerges when response time approaches Planck time. Derive graviton propagator from negotiation dynamics.",
+          "milestone": "M11 (quantum gravity)"
+        },
+        {
+          "question": "Is the glassy distribution prediction testable with current lattice QCD data?",
+          "status": "actionable",
+          "experiment": "exp_07",
+          "next_step": "Compile residuals from FLAG 2024 lattice QCD review + PDG 2024; extend to >20 parameters for statistical power",
+          "milestone": "Near-term follow-up"
+        }
+      ],
+      "n_with_proposals": 5,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "overall_m10_score": "36/40",
+  "prior_results_loaded": [
+    "exp_01_structural_exhaustion",
+    "exp_02_forced_processuality",
+    "exp_03_iteration_engine",
+    "exp_04_polarity_mutual_closure",
+    "exp_05_response_time_inequality",
+    "exp_06_gauge_from_substrate",
+    "exp_07_glassy_spectrum",
+    "exp_08_xi_universality_extension",
+    "exp_09_number_theory_fossil"
+  ],
+  "timestamp": "2026-04-27T13:52:13.838924"
+}

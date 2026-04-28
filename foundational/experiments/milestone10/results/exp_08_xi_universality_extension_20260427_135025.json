@@ -1,0 +1,113 @@
+{
+  "experiment": "exp_08_xi_universality_extension",
+  "milestone": 10,
+  "block": "C",
+  "tests": {
+    "markov_mixing_residue": {
+      "test": "markov_mixing_residue",
+      "n_trials": 15,
+      "mean_residue": 1.0584524910028377,
+      "std_residue": 2.220446049250313e-16,
+      "mean_relative_error": 2.362093004828662e-05,
+      "xi_target": 1.0584274899611363,
+      "passed": true
+    },
+    "annealing_residue": {
+      "test": "annealing_residue",
+      "n_trials": 15,
+      "mean_residue": 0.24328043603134125,
+      "mean_relative_error": 0.7701491709741269,
+      "xi_target": 1.0584274899611363,
+      "passed": false
+    },
+    "rg_flow_residue": {
+      "test": "rg_flow_residue",
+      "residues": [
+        {
+          "epsilon": 0.1,
+          "gamma_like": 0.5772656640681646,
+          "geo_cost": 0.48121182505960347,
+          "total": 1.058477489127768,
+          "error": 4.723910433718617e-05
+        },
+        {
+          "epsilon": 0.5,
+          "gamma_like": 0.5773515652409813,
+          "geo_cost": 0.48121182505960347,
+          "total": 1.0585633903005847,
+          "error": 0.00012839834635560622
+        },
+        {
+          "epsilon": 1.0,
+          "gamma_like": 0.5774882682613942,
+          "geo_cost": 0.48121182505960347,
+          "total": 1.0587000933209976,
+          "error": 0.0002575550639479742
+        },
+        {
+          "epsilon": 2.0,
+          "gamma_like": 0.5777632100557772,
+          "geo_cost": 0.48121182505960347,
+          "total": 1.0589750351153806,
+          "error": 0.0005173194757671795
+        },
+        {
+          "epsilon": 3.0,
+          "gamma_like": 0.5780418835114363,
+          "geo_cost": 0.48121182505960347,
+          "total": 1.0592537085710396,
+          "error": 0.0007806095530772935
+        }
+      ],
+      "mean_error": 0.0003462243086970479,
+      "best_error": 4.723910433718617e-05,
+      "xi_target": 1.0584274899611363,
+      "passed": true
+    },
+    "m7_reconciliation": {
+      "test": "m7_reconciliation",
+      "checkpoints": [
+        {
+          "name": "gamma from harmonic series",
+          "computed": 0.5772206648931064,
+          "target": 0.5772156649015329,
+          "relative_error": 8.662258974561908e-06,
+          "shared": true
+        },
+        {
+          "name": "ln(phi) from Fibonacci convergence",
+          "computed": 0.48121182505960347,
+          "target": 0.48121182505960347,
+          "relative_error": 0.0,
+          "shared": true
+        },
+        {
+          "name": "Xi = gamma + ln(phi) identity",
+          "computed": 1.0584324899527098,
+          "target": 1.0584274899611363,
+          "relative_error": 4.723981208787e-06,
+          "shared": true
+        },
+        {
+          "name": "g_out = g_in^2 transition ratio",
+          "computed": 2.0,
+          "target": 2.0,
+          "relative_error": 0.0,
+          "shared": true
+        },
+        {
+          "name": "PAC identity phi + 1/phi = phi^2",
+          "computed": -0.3819660112501051,
+          "target": 0.0,
+          "relative_error": 0.3819660112501051,
+          "shared": true
+        }
+      ],
+      "n_shared": 5,
+      "n_verified": 4,
+      "passed": true
+    }
+  },
+  "score": "3/4",
+  "timestamp": "2026-04-27T13:50:25.891175"
+}

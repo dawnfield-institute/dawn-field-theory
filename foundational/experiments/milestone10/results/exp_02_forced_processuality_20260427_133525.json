@@ -1,0 +1,80 @@
+{
+  "experiment": "exp_02_forced_processuality",
+  "milestone": 10,
+  "block": "A",
+  "tests": {
+    "static_resolution_asymmetry": {
+      "test": "static_resolution_asymmetry",
+      "n_trials": 200,
+      "mean_asymmetry": 0.0,
+      "fraction_above_05": 0.0,
+      "passed": false
+    },
+    "processual_preserves_symmetry": {
+      "test": "processual_preserves_symmetry",
+      "n_trials": 200,
+      "mean_asymmetry": 0.9304844056836166,
+      "fraction_below_01": 0.0,
+      "passed": false
+    },
+    "one_step_violates_conservation": {
+      "test": "one_step_violates_conservation",
+      "n_trials": 200,
+      "mean_violation": 0.33993249443134343,
+      "fraction_above_10pct": 1.0,
+      "passed": true
+    },
+    "duration_scales_with_asymmetry": {
+      "test": "duration_scales_with_asymmetry",
+      "asymmetry_magnitudes": [
+        0.1,
+        0.35789473684210527,
+        0.6157894736842106,
+        0.8736842105263158,
+        1.1315789473684212,
+        1.3894736842105266,
+        1.6473684210526318,
+        1.905263157894737,
+        2.1631578947368424,
+        2.421052631578948,
+        2.678947368421053,
+        2.936842105263158,
+        3.1947368421052635,
+        3.452631578947369,
+        3.710526315789474,
+        3.9684210526315793,
+        4.226315789473684,
+        4.484210526315789,
+        4.742105263157895,
+        5.0
+      ],
+      "resolution_steps": [
+        45.2,
+        45.55,
+        45.3,
+        45.6,
+        45.3,
+        44.7,
+        45.5,
+        45.25,
+        45.25,
+        45.3,
+        45.6,
+        45.2,
+        44.95,
+        45.05,
+        45.3,
+        45.2,
+        44.95,
+        45.6,
+        45.45,
+        44.65
+      ],
+      "pearson_r": -0.2616042145846764,
+      "pearson_p": 0.2652186197108399,
+      "passed": false
+    }
+  },
+  "score": "1/4",
+  "timestamp": "2026-04-27T13:35:25.493974"
+}

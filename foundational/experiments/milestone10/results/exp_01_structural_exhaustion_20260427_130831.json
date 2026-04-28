@@ -1,0 +1,78 @@
+{
+  "experiment": "exp_01_structural_exhaustion",
+  "milestone": 10,
+  "block": "A",
+  "tests": {
+    "case_a_elimination": {
+      "test": "case_a_elimination",
+      "n_systems": 500,
+      "asym": {
+        "hierarchy_count": 18,
+        "fraction": 0.036,
+        "mean_complexity": 1.6630386401514023,
+        "mean_active_scales": 2.124
+      },
+      "sym": {
+        "hierarchy_count": 0,
+        "fraction": 0.0,
+        "mean_complexity": 1.0588108706421928,
+        "mean_active_scales": 1.264
+      },
+      "fraction_combined": 0.018,
+      "passed": true
+    },
+    "case_b_elimination": {
+      "test": "case_b_elimination",
+      "n_systems": 500,
+      "collapsed": 332,
+      "chaotic": 160,
+      "hierarchy_count": 8,
+      "fraction_hierarchy": 0.016,
+      "passed": true
+    },
+    "case_c_survival": {
+      "test": "case_c_survival",
+      "n_systems": 500,
+      "hierarchy_count": 0,
+      "fraction": 0.0,
+      "mean_complexity": 1.0739597179921598,
+      "mean_active_scales": 1.122,
+      "passed": false
+    },
+    "exhaustion_grid": {
+      "test": "exhaustion_grid",
+      "grid": {
+        "sa=False,sym=False": {
+          "hierarchy_count": 12,
+          "fraction": 0.04,
+          "mean_complexity": 1.6773203404370485,
+          "mean_active_scales": 2.1633333333333336
+        },
+        "sa=False,sym=True": {
+          "hierarchy_count": 0,
+          "fraction": 0.0,
+          "mean_complexity": 1.050558707246418,
+          "mean_active_scales": 1.2366666666666666
+        },
+        "sa=True,sym=False": {
+          "hierarchy_count": 9,
+          "fraction": 0.03,
+          "mean_complexity": 1.64592972398762,
+          "mean_active_scales": 3.6433333333333335
+        },
+        "sa=True,sym=True": {
+          "hierarchy_count": 0,
+          "fraction": 0.0,
+          "mean_complexity": 1.068299307944346,
+          "mean_active_scales": 1.1166666666666667
+        }
+      },
+      "cc_fraction": 0.0,
+      "max_other_fraction": 0.04,
+      "dominance_ratio": 0.0,
+      "passed": false
+    }
+  },
+  "score": "2/4",
+  "timestamp": "2026-04-27T13:08:31.453418"
+}

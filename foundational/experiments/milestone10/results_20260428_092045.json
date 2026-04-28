@@ -1,0 +1,43 @@
+{
+  "experiment": "exp_14_topology_determines_structure",
+  "version": 2,
+  "type": "extension",
+  "extension_section": "\u00a72 (uniqueness)",
+  "approach": "Analyze existing SelfApplicator attractor for M\u00f6bius signatures",
+  "v1_result": "0/4 \u2014 lattice topology too constrained for phi emergence",
+  "score": "2/4",
+  "n_passed": 2,
+  "n_tests": 4,
+  "tests": [
+    {
+      "test": "orientation_reversal",
+      "passed": "True",
+      "mean_rate": 0.4987682611668781,
+      "std_rate": 0.02388123151214924,
+      "n_trials": 40
+    },
+    {
+      "test": "four_pi_period",
+      "passed": false,
+      "mean_ratio": 0.029108805010018456,
+      "frac_in_range": 0.0,
+      "n_valid": 40
+    },
+    {
+      "test": "anti_periodic_returns",
+      "passed": "False",
+      "mean_corr": 0.08081546669851543,
+      "frac_negative": 0.27,
+      "n_returns": 2000
+    },
+    {
+      "test": "two_circle_contrast",
+      "passed": "True",
+      "sa_reversal_rate": 0.49325553595811533,
+      "tc_reversal_rate": 0.0,
+      "sa_return_corr": 0.08191642390391624,
+      "tc_return_corr": 1.0
+    }
+  ],
+  "timestamp": "2026-04-28T09:20:45.676691"
+}

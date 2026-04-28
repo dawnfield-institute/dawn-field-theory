@@ -1,0 +1,78 @@
+{
+  "experiment": "exp_01_structural_exhaustion",
+  "milestone": 10,
+  "block": "A",
+  "tests": {
+    "case_a_elimination": {
+      "test": "case_a_elimination",
+      "n_systems": 500,
+      "asym": {
+        "hierarchy_count": 155,
+        "fraction": 0.31,
+        "mean_complexity": 1.6762424465245123,
+        "mean_active_scales": 2.464
+      },
+      "sym": {
+        "hierarchy_count": 0,
+        "fraction": 0.0,
+        "mean_complexity": 1.1776314089957602,
+        "mean_active_scales": 1.454
+      },
+      "fraction_combined": 0.155,
+      "passed": false
+    },
+    "case_b_elimination": {
+      "test": "case_b_elimination",
+      "n_systems": 500,
+      "collapsed": 500,
+      "chaotic": 0,
+      "hierarchy_count": 0,
+      "fraction_hierarchy": 0.0,
+      "passed": true
+    },
+    "case_c_survival": {
+      "test": "case_c_survival",
+      "n_systems": 500,
+      "hierarchy_count": 0,
+      "fraction": 0.0,
+      "mean_complexity": 0.0,
+      "mean_active_scales": 0.0,
+      "passed": false
+    },
+    "exhaustion_grid": {
+      "test": "exhaustion_grid",
+      "grid": {
+        "sa=False,sym=False": {
+          "hierarchy_count": 97,
+          "fraction": 0.3233333333333333,
+          "mean_complexity": 1.7019856250473662,
+          "mean_active_scales": 2.466666666666667
+        },
+        "sa=False,sym=True": {
+          "hierarchy_count": 0,
+          "fraction": 0.0,
+          "mean_complexity": 1.1601247121047582,
+          "mean_active_scales": 1.4033333333333333
+        },
+        "sa=True,sym=False": {
+          "hierarchy_count": 0,
+          "fraction": 0.0,
+          "mean_complexity": 0.0,
+          "mean_active_scales": 0.0
+        },
+        "sa=True,sym=True": {
+          "hierarchy_count": 0,
+          "fraction": 0.0,
+          "mean_complexity": 0.0,
+          "mean_active_scales": 0.0
+        }
+      },
+      "cc_fraction": 0.0,
+      "max_other_fraction": 0.3233333333333333,
+      "dominance_ratio": 0.0,
+      "passed": false
+    }
+  },
+  "score": "1/4",
+  "timestamp": "2026-04-27T12:43:20.076972"
+}

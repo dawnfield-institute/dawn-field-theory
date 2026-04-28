@@ -1,0 +1,74 @@
+{
+  "experiment": "exp_14_topology_determines_structure",
+  "type": "extension",
+  "extension_section": "\u00a72 (uniqueness)",
+  "score": "0/4",
+  "n_passed": 0,
+  "n_tests": 4,
+  "tests": [
+    {
+      "test": "phi_emergence_topology",
+      "passed": false,
+      "results": {
+        "line": {
+          "mean_phi_rate": 0.0,
+          "std_phi_rate": 0.0,
+          "n_trials": 40
+        },
+        "circle": {
+          "mean_phi_rate": 0.0,
+          "std_phi_rate": 0.0,
+          "n_trials": 40
+        },
+        "mobius": {
+          "mean_phi_rate": 0.0,
+          "std_phi_rate": 0.0,
+          "n_trials": 40
+        }
+      },
+      "mobius_circle_ratio": 0.0
+    },
+    {
+      "test": "hierarchy_persistence",
+      "passed": false,
+      "results": {
+        "line": {
+          "hierarchy_rate": 0.0,
+          "mean_active_scales": 23.35
+        },
+        "circle": {
+          "hierarchy_rate": 0.0,
+          "mean_active_scales": 22.0
+        },
+        "mobius": {
+          "hierarchy_rate": 0.0,
+          "mean_active_scales": 23.975
+        }
+      }
+    },
+    {
+      "test": "boundary_flip",
+      "passed": false,
+      "mean_periodic": 0.0,
+      "mean_antiperiodic": 0.0,
+      "increase": 0.0
+    },
+    {
+      "test": "non_orientability_signature",
+      "passed": "False",
+      "initial_mobius": [
+        0.375,
+        0.25,
+        0.25
+      ],
+      "initial_circle": [
+        0.5,
+        0.25,
+        0.25
+      ],
+      "evolved_mobius_mean": 0.4125,
+      "evolved_circle_mean": 0.4140625
+    }
+  ],
+  "timestamp": "2026-04-28T09:15:06.927295"
+}

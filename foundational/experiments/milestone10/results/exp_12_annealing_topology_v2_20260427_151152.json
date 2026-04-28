@@ -1,0 +1,67 @@
+{
+  "experiment": "exp_12_annealing_topology",
+  "milestone": 10,
+  "block": "investigative",
+  "version": 2,
+  "tests": {
+    "unconstrained_baseline": {
+      "test": "unconstrained_baseline",
+      "n_trials": 30,
+      "spearman_rho": 0.6530705338273352,
+      "p_value": 1.4494760576422572e-30,
+      "passed": true
+    },
+    "conservation_removes_correlation": {
+      "test": "conservation_removes_correlation",
+      "n_trials": 30,
+      "spearman_rho": 0.1762274652994947,
+      "p_value": 0.00619445559820338,
+      "sm_reference_rho": 0.08,
+      "passed": true
+    },
+    "conservation_heavy_tails": {
+      "test": "conservation_heavy_tails",
+      "unconstrained_spread": 0.626016751974316,
+      "constrained_spread": 0.3845646256828657,
+      "unconstrained_kurtosis": 0.9247976979616843,
+      "constrained_kurtosis": 4.2530526100832935,
+      "unconstrained_range": 3.879313087582256,
+      "constrained_range": 2.772696718692008,
+      "wider": false,
+      "heavier": true,
+      "passed": true
+    },
+    "conservation_strength_sweep": {
+      "test": "conservation_strength_sweep",
+      "strengths": [
+        0,
+        0.1,
+        0.5,
+        1,
+        5,
+        10,
+        25,
+        50,
+        100,
+        200
+      ],
+      "rho_values": [
+        0.638299970712384,
+        0.5211286955557065,
+        0.4004729923575755,
+        0.34064713462888885,
+        0.19731312011011057,
+        0.14292060780199567,
+        0.1354792868999083,
+        0.11097017440493796,
+        0.11392307952481391,
+        0.09661905552234089
+      ],
+      "monotonicity": 1.0,
+      "threshold_strength": 5,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-27T15:11:52.326535"
+}

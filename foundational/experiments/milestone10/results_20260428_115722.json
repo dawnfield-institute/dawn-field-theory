@@ -1,0 +1,107 @@
+{
+  "experiment": "exp_15_med_complexity_bound",
+  "type": "extension",
+  "extension_section": "MED complexity bound under self-applied symmetry",
+  "score": "4/4",
+  "n_passed": 4,
+  "n_tests": 4,
+  "tests": [
+    {
+      "test": "first_order_transition",
+      "passed": true,
+      "jump_weak": 0.9853448275862069,
+      "jump_size": 0.4893744587157669,
+      "H_dead": 0.20430835982665055,
+      "H_alive": 1.781578061390468,
+      "gap": 1.5772697015638173,
+      "N": 16
+    },
+    {
+      "test": "critical_rate_phi",
+      "passed": true,
+      "results": [
+        {
+          "N": 8,
+          "predicted": 0.9416218876556355,
+          "measured": 0.97294921875,
+          "error_pct": 3.3269544288483366
+        },
+        {
+          "N": 12,
+          "predicted": 0.9606924183246364,
+          "measured": 0.97646484375,
+          "error_pct": 1.641776818939546
+        },
+        {
+          "N": 16,
+          "predicted": 0.9703720356933394,
+          "measured": 0.98068359375,
+          "error_pct": 1.0626396554485333
+        },
+        {
+          "N": 24,
+          "predicted": 0.9801491816680951,
+          "measured": 0.98490234375,
+          "error_pct": 0.48494271798662314
+        },
+        {
+          "N": 32,
+          "predicted": 0.9850746345802126,
+          "measured": 0.98701171875,
+          "error_pct": 0.19664339145357487
+        }
+      ],
+      "mean_traversal_error_pct": 17.747534843530158,
+      "one_over_phi": 0.6180339887498948
+    },
+    {
+      "test": "complexity_scaling",
+      "passed": true,
+      "N_values": [
+        8,
+        12,
+        16,
+        24,
+        32,
+        48
+      ],
+      "complexities": [
+        0.0,
+        7.2125475188326655,
+        6.538660586010977,
+        8.543277300546652,
+        9.171168074356299,
+        10.122742518941655
+      ],
+      "r2_log": 0.8770255790995727,
+      "r2_lin": 0.8735900079831174,
+      "slope": 2.4757909039581785,
+      "intercept": 0.5078036679364893
+    },
+    {
+      "test": "edge_of_viability",
+      "passed": true,
+      "sr_natural": 1.1995043239638556,
+      "results": {
+        "8": {
+          "frac_alive": 0.0,
+          "mean_H_act": 0.17241010200020562,
+          "weak": 0.9416218876556355
+        },
+        "16": {
+          "frac_alive": 0.0,
+          "mean_H_act": 0.2912847306741433,
+          "weak": 0.9703720356933394
+        },
+        "32": {
+          "frac_alive": 0.14,
+          "mean_H_act": 1.2402956060275958,
+          "weak": 0.9850746345802126
+        }
+      },
+      "near_edge": true,
+      "trend_up": true
+    }
+  ],
+  "timestamp": "2026-04-28T11:57:22.880367"
+}

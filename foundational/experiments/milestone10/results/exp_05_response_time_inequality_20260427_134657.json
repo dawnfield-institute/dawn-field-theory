@@ -1,0 +1,127 @@
+{
+  "experiment": "exp_05_response_time_inequality",
+  "milestone": 10,
+  "block": "B",
+  "tests": {
+    "law_fluctuation": {
+      "test": "law_fluctuation",
+      "rates": [
+        0.01,
+        0.01438449888287663,
+        0.0206913808111479,
+        0.029763514416313176,
+        0.04281332398719394,
+        0.06158482110660264,
+        0.08858667904100823,
+        0.12742749857031335,
+        0.18329807108324356,
+        0.26366508987303583,
+        0.37926901907322497,
+        0.5455594781168517,
+        0.7847599703514611,
+        1.1288378916846884,
+        1.623776739188721,
+        2.3357214690901213,
+        3.359818286283781,
+        4.832930238571752,
+        6.951927961775605,
+        10.0
+      ],
+      "mean_violations": [
+        3.353761712787673e-17,
+        4.6327386371558537e-17,
+        3.8397729440475817e-16,
+        6.3896311530697856e-12,
+        6.5429954580054065e-09,
+        8.37502151325964e-07,
+        2.6798800233675873e-05,
+        0.0004285155188538139,
+        0.001711486834222442,
+        0.0068409569628851835,
+        0.01393078024012532,
+        0.03088677254270553,
+        0.03088677254270553,
+        0.03088677254270553,
+        0.03088677254270553,
+        0.03088677254270553,
+        0.03088677254270553,
+        0.03088677254270553,
+        0.03088677254270553,
+        0.03088677254270553
+      ],
+      "monotonicity": 1.0,
+      "threshold_rate": 0.37926901907322497,
+      "passed": true
+    },
+    "anomaly_clustering": {
+      "test": "anomaly_clustering",
+      "anomalies": {
+        "bh_information": {
+          "name": "Black hole information paradox",
+          "ratio": 1000.0,
+          "log10_ratio": 3.0,
+          "above_threshold": true
+        },
+        "planck_breakdown": {
+          "name": "Planck-scale breakdown of QFT",
+          "ratio": 10.0,
+          "log10_ratio": 1.0,
+          "above_threshold": true
+        },
+        "cc_fine_tuning": {
+          "name": "Cosmological constant fine-tuning",
+          "ratio": 8.498152326544064e+60,
+          "log10_ratio": 60.9293245114069,
+          "above_threshold": true
+        },
+        "muon_g2": {
+          "name": "Muon g-2 anomaly",
+          "ratio": 1.5,
+          "log10_ratio": 0.17609125905568124,
+          "above_threshold": true
+        },
+        "proton_radius": {
+          "name": "Proton radius puzzle",
+          "ratio": 1.0,
+          "log10_ratio": 0.0,
+          "above_threshold": true
+        }
+      },
+      "above_threshold": 5,
+      "total": 5,
+      "fraction_above": 1.0,
+      "passed": true
+    },
+    "cc_slow_negotiation": {
+      "test": "cc_slow_negotiation",
+      "time_ratio": 1.1767263771872974e-61,
+      "log10_lambda_quadratic": -121.8586490228138,
+      "log10_lambda_linear": -60.9293245114069,
+      "log10_lambda_sqrt": -30.46466225570345,
+      "log10_lambda_observed": -121.53910215724345,
+      "error_orders_quadratic": 0.31954686557034506,
+      "error_orders_linear": 60.60977764583655,
+      "passed": true
+    },
+    "response_time_hierarchy": {
+      "test": "response_time_hierarchy",
+      "force_strengths": {
+        "strong": 1.0,
+        "em": 0.0072973525693,
+        "weak": 1e-06,
+        "gravity": 5.9e-39
+      },
+      "response_times": {
+        "strong": 5.391e-43,
+        "em": 7.38761071060204e-42,
+        "weak": 5.391e-38,
+        "gravity": 4.5813539192399046e+17
+      },
+      "spearman_rho": -1.0,
+      "p_value": 0.0,
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-04-27T13:46:57.927332"
+}

@@ -1,0 +1,55 @@
+schema_version: "2.0"
+description: >
+  Milestone 10: Symmetry Self-Application as the Unique Generative Primitive.
+  10 experiments across 4 blocks answering WHY DFT works at the foundational level.
+  Self-applied symmetry is the unique generative primitive (uniqueness via structural
+  exhaustion). Derives 12 previously stipulated structures as theorems: time, iteration,
+  polarity, hierarchy, second law, gauge invariance, laws-as-equilibria, anomaly clustering,
+  annealing residue, Xi universality, fossil arithmetic, conceivability bounds.
+  Key predictions: SM fine-tuning residuals follow glassy distribution, anomalies cluster
+  at response-time boundaries, Xi appears in non-physics domains.
+semantic_scope: "research"
+proficiency_level: "research"
+version: "1.0.0"
+status: "active"
+date_created: "2026-04-27"
+date_updated: "2026-04-27"
+
+files:
+  - "[README.md]": "Hypothesis, experiment index, key results, scorecard, predictions registry"
+
+child_directories:
+  - name: "core"
+    description: "Shared library (foundations.py) extending M9's infodynamics.py with uniqueness, polarity, annealing infrastructure"
+  - name: "scripts"
+    description: "10 experiment scripts (exp_01 through exp_10)"
+  - name: "results"
+    description: "JSON output from experiment runs"
+  - name: "journals"
+    description: "Session research logs"
+
+estimated_context_weight: 0.95
+validation_type: "computational"
+
+key_results:
+  - "Score: TBD/40 across 10 experiments in 4 blocks"
+  - "6 genuine predictions (P), 2 postdictions (D), 2 consistency checks (C)"
+
+dependencies:
+  internal:
+    - "../milestone9/": "Cascade clock, Xi decomposition, PAC cascade"
+    - "../milestone8/": "SM constants, Fibonacci, PredictionRegistry"
+  external:
+    - "numpy>=1.24"
+    - "scipy>=1.10"
+
+tags:
+  - milestone-10
+  - symmetry-primitive
+  - self-reference
+  - generative-primitive
+  - uniqueness
+  - laws-as-equilibria
+  - annealing
+  - Xi
+  - foundations

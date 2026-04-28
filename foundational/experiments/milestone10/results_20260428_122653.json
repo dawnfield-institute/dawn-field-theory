@@ -1,0 +1,99 @@
+{
+  "experiment": "exp_17_derivation_chain",
+  "type": "conclusion",
+  "description": "Complete derivation chain from self-applied symmetry to physics",
+  "score": "5/7",
+  "n_passed": 5,
+  "n_tests": 7,
+  "tests": [
+    {
+      "test": "link_1_2_uniqueness",
+      "passed": true,
+      "grid": {
+        "sa=False,sym=False": 0.01,
+        "sa=False,sym=True": 0.0,
+        "sa=True,sym=False": 0.0,
+        "sa=True,sym=True": 0.85
+      }
+    },
+    {
+      "test": "link_3_spectral_confinement",
+      "passed": true,
+      "max_drift": 1.5543122344752192e-15
+    },
+    {
+      "test": "link_4_viability_threshold",
+      "passed": true,
+      "errors_pct": [
+        1.136910460716031,
+        0.5620594864476987,
+        0.2162722975498617
+      ],
+      "mean_error_pct": 0.6384140815711971
+    },
+    {
+      "test": "link_5_condensation",
+      "passed": true,
+      "valley_sr": 1.2342105263157894,
+      "scope_ratio": 1.1995043239638556,
+      "error_pct": 2.893378678056318
+    },
+    {
+      "test": "link_6_phi_emergence",
+      "passed": false,
+      "phi_from_threshold": 1.5099543522118248,
+      "phi_from_scope": 1.618033988749895,
+      "phi_exact": 1.618033988749895,
+      "err_threshold_pct": 6.679688887226232,
+      "err_scope_pct": 0.0
+    },
+    {
+      "test": "link_7_xi_uniqueness",
+      "passed": true,
+      "xi": 1.0584274899611363,
+      "crossing_error": 0.0,
+      "decomp_error": 0.0
+    },
+    {
+      "test": "link_8_physics",
+      "passed": false,
+      "results": {
+        "sin2_theta_W": {
+          "dft": 0.23076923076923078,
+          "observed": 0.23122,
+          "error_pct": 0.19495252606574986
+        },
+        "koide": {
+          "measured": 0.6666608187172461,
+          "predicted": 0.6666666666666666,
+          "error_ppm": 8.77192413073491
+        },
+        "higgs_mass": {
+          "dft": 124.94739697670555,
+          "observed": 125.25,
+          "error_ppm": 2415.992201951713
+        },
+        "cc": {
+          "dft_log10": -122.09,
+          "obs_log10": -122.0,
+          "error_orders": 0.09000000000000341
+        },
+        "scope_ratio": {
+          "value": 1.1995043239638556,
+          "error_pct": 0.041306336345359185
+        }
+      }
+    }
+  ],
+  "chain": [
+    "self-reference (only alternative to stasis)",
+    "symmetry (only coherent self-reference)",
+    "spectral confinement (PAC)",
+    "viability threshold (MED: 1/phi)",
+    "hierarchy condensation (SEC: gamma/ln(phi))",
+    "phi emergence (eigenvalue cycling)",
+    "Xi = gamma + ln(phi) (unique transition cost)",
+    "physical constants (alpha_EM, sin^2_theta_W, Koide, CC)"
+  ],
+  "timestamp": "2026-04-28T12:26:53.869805"
+}
