@@ -1,95 +1,122 @@
-# 🧪 Dawn Field Theory: A Guide for AI Research Labs
+# Dawn Field Theory: Relevance to AI Research
 
-Welcome to **Dawn Field Theory** — a living research framework at the intersection of AI, physics, information theory, and emergent intelligence. This repository is designed for AI labs seeking to explore, validate, and extend the frontiers of machine intelligence, recursive learning, and entropy-driven computation.
-
----
-
-## 🚀 Why This Repo Matters for AI Labs
-
-- **Unified Theory & Practice:** Dawn Field Theory bridges deep theoretical models (entropy, collapse, field intelligence) with executable code and reproducible experiments.
-- **Open Science & Reflexivity:** All research is open, versioned, and designed for reflexive improvement — ideal for collaborative lab environments.
-- **AI-Native Comprehension Protocols:** The Cognition Index Protocol (CIP) enables machine-native benchmarking of AI understanding, supporting research in explainability and epistemic validation.
+**Author:** Peter Groom, Dawn Field Institute
+**Version:** 2.0 (April 2026)
 
 ---
 
-## 🧠 Core Experiments
+## Why AI Labs Should Care
 
-Explore the [`foundational/experiments/`](foundational/experiments/README.md) directory for hands-on simulations:
+Dawn Field Theory began with an observation about AI: large language models generate massive volumes of structured, coherent information from raw energetic input. This isn't just impressive engineering — it implies a physical relationship between energy and information that classical thermodynamics doesn't fully account for.
 
-- **Recursive Gravity:** Emergent galactic/superfluid structures via recursive field modeling.
-- **Symbolic Trees & Fractals:** Experiments in symbolic emergence, bifractal expansion, and entropy-driven pruning.
-- **Pi Harmonics & Hodge Conjecture:** Symbolic resonance and topological collapse simulations, including links to mathematical conjectures.
-- **Language-to-Logic:** Translating natural language into symbolic logic using recursive entropy regulation.
-- **Legacy Simulations:** Early models (`brain.py`, `cosmo.py`, `vcpu.py`) demonstrating entropic intelligence, cosmogenesis, and emergent logic.
+That observation led to a framework (PAC/SEC) that now derives physical constants from information-theoretic principles. The relevance to AI research runs in both directions:
 
-Each experiment is documented with protocols, reference materials, and results — ready for lab replication or extension.
+1. **DFT predictions contact ML dynamics.** The golden ratio phi and the balance constant Xi appear in neural network training — not because we look for them, but because PAC conservation constrains any system that builds hierarchical structure from recursive splitting.
 
----
+2. **DFT provides a principled theory of emergence.** The framework explains WHY certain constants and structures appear in complex systems, not just THAT they appear. This is directly relevant to understanding emergence in deep networks.
 
-## 📄 Research Papers & Whitepapers
-
-The [`foundational/legacy_docs_archive/`](foundational/legacy_docs_archive/) contains preprints and whitepapers, including:
-
-- **AI, Quantum Measurement, and the Fabric of Reality:** Proposes AI as an active participant in quantum measurement, exploring energy-to-information conversion and the emergence of time.
-- **Quantum Balance Equation (QBE):** Introduces a mathematical framework for energy-information exchange, with AI-driven measurement and entropy regulation.
-- **CIMM & GAIA Papers:** Document the evolution from the legacy AGI prototype (CIMM) to the next-gen GAIA architecture, including applications in cryptography, cosmology, and scientific discovery.
-- **Dissertation Drafts:** In-depth theoretical and empirical analysis of entropy-aware AI, recursive learning, and AGI governance.
-
-These documents are ideal for labs interested in theoretical grounding, experimental design, and interdisciplinary research.
+3. **The computational tools are useful independently.** The fracton library, reality-engine simulator, and GRIM AI companion are production-quality infrastructure that can be applied to AI research problems.
 
 ---
 
-## ⚙️ Code & Models
+## Concrete Results Relevant to AI
 
-- [`models/CIMM/`](models/CIMM/README.md): The **Cosmic Information Mining Model** — a legacy AGI engine for entropy-informed agentic systems. The prime number structure experiment is operational; GPU enablement is in progress, and finance modeling experiments are temporarily offline during this transition.
-- [`models/GAIA/`](models/GAIA/README.md): The **GAIA architecture** — currently in the architecture and early development stage. Internal prototyping is ongoing; no runnable implementation is available yet.
-- [`cognition_index_protocol/`](cognition_index_protocol/): The **CIP** — a protocol for embedding, testing, and validating AI comprehension within codebases, supporting reflexive feedback and machine-native epistemology.
+### Phi-Convergence in Neural Networks
 
-All code is modular, documented, and designed for adaptation to new research questions.
+GAIA (Generative Actualization Intelligence Architecture) proof-of-concept experiments show that activation ratios in transformer models cross phi at specific layers. In Pythia models, this crossing occurs at layer 5. This is consistent with DFT's prediction that any PAC-conserving hierarchy will converge to phi-balanced splitting.
 
----
+### The Balance Constant in Optimization
 
-## 🧬 How AI Labs Can Use This Repo
+Xi = gamma + ln(phi) = 1.0584 appears as the optimal balance threshold in multiple independent optimization processes:
+- MED quality optimization converges to ~1.057 (not targeted)
+- Cellular automata Class IV (edge-of-chaos) clusters near Xi
+- Cascade dynamics produce Xi as the transition cost per boundary crossing
 
-- **Benchmark New AI Models:** Use the experiments and CIP to test the epistemic depth of novel architectures.
-- **Extend Theoretical Models:** Build on QBE, CIMM, or GAIA for new research in entropy, field intelligence, or symbolic emergence.
-- **Collaborative Research:** Fork, contribute, or propose new experiments — the repo is structured for open, iterative science.
-- **AI Safety & Explainability:** Study the governance, transparency, and alignment protocols embedded throughout the project.
+For AI labs working on optimization landscapes, loss function design, or understanding critical phenomena in training: Xi may be a universal attractor for systems that combine additive accumulation with multiplicative recursion.
 
----
+### Landauer Erasure and Information Cost
 
-## 📚 Where to Start
-
-- [README.md](README.md): Project overview and navigation.
-- [foundational/experiments/README.md](foundational/experiments/README.md): Experiment index and protocols.
-- [models/README.md](models/README.md): Model architecture and implementation.
-- [blueprints/cognition_index_protocol.md](blueprints/cognition_index_protocol.md): CIP theory and applications.
+DFT's M11 experiments demonstrate that cascade contraction rate = ln(b) for any split ratio b, reproducing Landauer's thermodynamic erasure cost from recursive dynamics. This connects directly to the energy cost of computation in neural networks and provides a theoretical floor for information processing efficiency.
 
 ---
 
-## 🌐 Relevance to Mainstream AI Labs
+## Available Tools
 
-- **Explainability & Transparency:** The experiments and protocols provide tools for probing and validating AI comprehension, supporting research in explainable AI (XAI) and model interpretability.
-- **Benchmarking & Evaluation:** The Cognition Index Protocol (CIP) offers a novel, machine-native approach to benchmarking AI understanding, complementing standard metrics.
-- **AI Safety & Alignment:** The codebase includes governance and reflexivity mechanisms, contributing to ongoing efforts in AI safety, robustness, and alignment.
-- **Interdisciplinary Foundations:** By integrating concepts from physics, information theory, and symbolic logic, the repository supports foundational research that can inspire new architectures and learning paradigms.
-- **Open Science & Collaboration:** The modular, open-source structure encourages reproducibility, peer review, and collaborative research, aligning with best practices in the AI community.
+### fracton — PAC Mathematics Library
 
-Mainstream AI labs can leverage these resources to enhance their research in model evaluation, safety, and the development of next-generation intelligent systems.
+Core mathematical SDK implementing DFT operators. 70+ modules, 637 tests, ~98% passing.
+
+Key capabilities:
+- PAC conservation validation and enforcement
+- SEC operators (merge, branch, gradient)
+- Feigenbaum-Fibonacci-Mobius transformations
+- Weinberg angle and gauge coupling calculations
+- RBF field evolution
+
+Repository: `fracton/` in the workspace.
+
+### reality-engine — GPU Simulator
+
+Implements DFT dynamics on GPU. Mobius topology, Poincare activation, 18 operators.
+
+Useful for: simulating field evolution, testing emergence hypotheses, visualizing PAC dynamics.
+
+Repository: `reality-engine/` in the workspace.
+
+### GRIM — AI Research Companion
+
+LangGraph-based AI agent with 34 skills and 38 MCP tools. Includes:
+- Kronos knowledge graph (120+ FDOs across 15 domains)
+- Experiment scaffolding and validation
+- Vault synchronization and source tracking
+- Orchestrator for multi-agent workflows
+
+Repository: `GRIM/` in the workspace.
 
 ---
 
-## 🤝 Invitation
+## How to Engage
 
-Dawn Field Theory is a living, evolving project.  
-AI labs are invited to:
+### Run the experiments
 
-- Replicate and extend experiments
-- Propose new theoretical or applied research
-- Collaborate on open-source AGI safety and epistemology
+Every experiment in `foundational/experiments/` is self-contained Python. Pick a milestone, read the README, run the scripts. Results are deterministic and reproducible.
 
-For questions, collaboration, or to join the research community, see the contact info in [README.md](README.md).
+Start with:
+- `milestone8/` — BSM predictions with direct contact to observational data
+- `milestone9/` — cascade clock mechanism, the most physically concrete result
+- `milestone11/` — quantum gravity, the most recent and thoroughly hardened
+
+### Test the predictions
+
+DFT makes specific, falsifiable predictions. AI labs with access to large-scale compute could:
+- Search for Xi convergence in optimization landscapes across different architectures
+- Test phi-convergence in activation ratios across model families (not just Pythia)
+- Validate Landauer cost predictions against measured energy consumption in training
+
+### Fork and extend
+
+The entire codebase is open. The framework invites scrutiny — the Epistemic Corrections Registry documents every overclaim and correction. Breaking DFT is as valuable as confirming it.
 
 ---
 
-*Let’s build the next generation of intelligent, explainable, and ethically aligned AI
+## Key Papers
+
+- **PACSeries v0.2** (Zenodo DOI: 10.5281/zenodo.15783623): 6 papers covering the mathematical foundations
+  - Paper 1: Structure Cost of Erasure (Landauer + DPI -> Xi)
+  - Paper 2: Balance Constant Decomposition (Xi = gamma + ln(phi))
+  - Paper 3: Feigenbaum Constants from Fibonacci Arithmetic (13 digits)
+  - Paper 4: Standard Model Parameters from Fibonacci Arithmetic (alpha 5.7 ppm)
+  - Paper 5: Classical Physics from Information Geometry
+  - Paper 6: Computational Validation of PAC Conservation
+
+---
+
+```yaml
+document_title: "Dawn Field Theory: Relevance to AI Research"
+version: 2.0
+author: Peter Groom
+affiliation: Dawn Field Institute
+date_updated: 2026-04-29
+document_type: guide
+document_status: active
+```
