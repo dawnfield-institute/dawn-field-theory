@@ -1,28 +1,29 @@
 schema_version: '2.0'
 directory_name: dawn-field-theory
 description: >
-  Dawn Field Theory foundational repository containing core theoretical framework,
-  experimental validations, and research documentation. References implementation
-  repositories: dawn-models (production models), cip-core (navigation protocol), 
-  and fracton (computational language).
+  Dawn Field Theory foundational repository. Core theoretical framework (PAC/SEC/RBF/MED),
+  117+ experiments across 11 milestones, and published papers (PACSeries on Zenodo).
+  Derives physical constants from information-theoretic first principles.
 repository_role: foundational_theory
 semantic_scope:
   - physics
   - open_science
   - field_theory
   - infodynamics
-  - consciousness_research
   - theoretical_framework
+  - information_theory
 files:
   - README.md
   - CLAUDE.md
   - CITATION.cff
   - CONTRIBUTION.md
   - ENVIRONMENT.md
+  - EPISTEMIC_CORRECTIONS_REGISTRY.md
   - LICENSE
   - LICENSE_APPENDIX.md
   - MISSION.md
   - REGISTRY_TERMS.md
+  - REPOSITORY_RESTRUCTURE_PLAN.md
   - dawn-field-theory.md
   - for_ai_labs.md
   - infodynamics.md
@@ -34,12 +35,9 @@ files:
 child_directories:
   - blueprints
   - citations
-  - devkit
   - foundational
-  - mcp
   - models
   - resources
   - roadmaps
   - spikes
-  - todo
   - tools

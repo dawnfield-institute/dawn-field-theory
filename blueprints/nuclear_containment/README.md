@@ -1,10 +1,10 @@
-# ☢️ Nuclear Containment Blueprints
+# Nuclear Containment Blueprints
 
 This directory contains the evolving design, theory, and simulation work for **nuclear-scale entropy containment** using the DAWN Field Theory framework. Here you’ll find both foundational experiments and advanced enhancements aimed at stabilizing high-entropy events—such as nuclear detonations—through informatic field control rather than traditional material barriers.
 
 ---
 
-## 📚 Contents
+## Contents
 
 - **v1/**: First-generation blueprint, theory, math, and simulation results
 - **v2/**: Roadmap and planned enhancements for next-generation containment
@@ -14,7 +14,7 @@ This directory contains the evolving design, theory, and simulation work for **n
 
 ---
 
-## 🧬 Core Concept
+## Core Concept
 
 Traditional nuclear containment relies on physical resistance. Here, we explore a paradigm shift:  
 **Containment via recursive, feedback-driven informational fields** that convert entropy into structure, dynamically stabilizing even extreme energy releases.
@@ -26,7 +26,7 @@ Key ideas:
 
 ---
 
-## 🧪 What’s Inside
+## What’s Inside
 
 ### v1: Baseline Theory & Results
 
@@ -54,7 +54,7 @@ Key ideas:
 
 ---
 
-## 🚀 Why This Matters
+## Why This Matters
 
 - **Passive, Adaptive Containment:**  
   Opens the door to fundamentally new forms of nuclear safety and energy management.
@@ -65,7 +65,7 @@ Key ideas:
 
 ---
 
-## 🤝 Get Involved
+## Get Involved
 
 Ideas here are evolving and open for dialogue, collaboration, or independent implementation.  
 See the [LICENSE.md](../LICENSE.md) for terms.  

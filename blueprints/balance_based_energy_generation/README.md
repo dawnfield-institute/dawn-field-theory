@@ -1,10 +1,10 @@
-# ⚡ Balance-Based Energy Generation
+# Balance-Based Energy Generation
 
 This directory contains the theory, simulation, and practical blueprints for **carbon-based energy harvesting** using balance field and entropy control principles from the DAWN Field Theory framework. Here, energy is extracted from advanced carbon substrates (graphite, graphene, CNTs) by leveraging recursive feedback and informatic field modulation—enabling programmable, efficient, and safe energy systems.
 
 ---
 
-## 📚 Contents
+## Contents
 
 - **balance_based_energy_generationv1.py / v2.py**: Core simulation scripts for baseline and advanced control strategies
 - **carbon_energy_theory.md**: Foundational theory and control models (QBE, RBF, sigmoid, oscillatory)
@@ -17,7 +17,7 @@ This directory contains the theory, simulation, and practical blueprints for **c
 
 ---
 
-## 🧬 Core Concept
+## Core Concept
 
 Traditional batteries and fuel cells rely on chemical reactions.  
 **Balance-based energy generation** uses electromagnetic pulses to disrupt the internal informational balance of a carbon lattice, releasing energy as both electromagnetic and thermal output.  
@@ -28,7 +28,7 @@ Key features:
 
 ---
 
-## 🧪 What’s Inside
+## What’s Inside
 
 ### Theory & Models
 
@@ -53,7 +53,7 @@ See [carbon_energy_report.md](carbon_energy_report.md) and [reference_material.m
 
 ---
 
-## 🏗️ Blueprints
+## Blueprints
 
 - **Consumer Prototype:**  
   Modular, safe, and low-cost—ideal for portable or emergency power ([consumer_energy_blueprint.md](consumer_energy_blueprint.md))
@@ -62,7 +62,7 @@ See [carbon_energy_report.md](carbon_energy_report.md) and [reference_material.m
 
 ---
 
-## 🌱 Why This Matters
+## Why This Matters
 
 - **Programmable Energy:**  
   Move beyond static batteries—enable adaptive, intelligent energy systems
@@ -73,7 +73,7 @@ See [carbon_energy_report.md](carbon_energy_report.md) and [reference_material.m
 
 ---
 
-## 🤝 Get Involved
+## Get Involved
 
 This folder is a living incubator for ongoing work and a resource for others to explore, adapt, or build upon.  
 See the [LICENSE.md](../LICENSE.md) for terms.  
