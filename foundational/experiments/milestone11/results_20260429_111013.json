@@ -1,0 +1,161 @@
+{
+  "T1": {
+    "test": "T1_page_time_scaling",
+    "data": [
+      {
+        "M_solar": 0.1,
+        "S_BH": 1.0497397691485344e+75,
+        "t_page": 5.659147095479749e+31,
+        "t_evap": 6.6180943678406235e+71,
+        "log_S": 75.0210816506603,
+        "log_t_evap": 71.82073295550141
+      },
+      {
+        "M_solar": 1.0,
+        "S_BH": 1.0497397691485345e+77,
+        "t_page": 5.659147095479749e+33,
+        "t_evap": 6.618094367840623e+74,
+        "log_S": 77.0210816506603,
+        "log_t_evap": 74.82073295550141
+      },
+      {
+        "M_solar": 10.0,
+        "S_BH": 1.0497397691485343e+79,
+        "t_page": 5.659147095479748e+35,
+        "t_evap": 6.618094367840623e+77,
+        "log_S": 79.0210816506603,
+        "log_t_evap": 77.82073295550141
+      },
+      {
+        "M_solar": 100.0,
+        "S_BH": 1.0497397691485344e+81,
+        "t_page": 5.659147095479749e+37,
+        "t_evap": 6.618094367840624e+80,
+        "log_S": 81.0210816506603,
+        "log_t_evap": 80.82073295550141
+      }
+    ],
+    "t_evap_slope": 3.000000000000008,
+    "t_evap_slope_near_3": "True",
+    "S_slope": 2.0000000000000053,
+    "S_slope_near_2": "True",
+    "PASS": "True"
+  },
+  "T2": {
+    "test": "T2_scrambling",
+    "data": [
+      {
+        "M_solar": 0.1,
+        "S_BH": 1.0497397691485344e+75,
+        "t_scramble": 9.775747885686052e+33,
+        "t_expected": 9.775747885686052e+33,
+        "ratio": 1.0,
+        "t_evap": 6.6180943678406235e+71,
+        "scramble_over_evap": 1.4771242811509983e-38
+      },
+      {
+        "M_solar": 1.0,
+        "S_BH": 1.0497397691485345e+77,
+        "t_scramble": 1.0036361240508297e+36,
+        "t_expected": 1.0036361240508297e+36,
+        "ratio": 1.0,
+        "t_evap": 6.618094367840623e+74,
+        "scramble_over_evap": 1.5165031930155146e-39
+      },
+      {
+        "M_solar": 10.0,
+        "S_BH": 1.0497397691485343e+79,
+        "t_scramble": 1.0296974595330541e+38,
+        "t_expected": 1.0296974595330541e+38,
+        "ratio": 1.0,
+        "t_evap": 6.618094367840623e+77,
+        "scramble_over_evap": 1.5558821048800303e-40
+      },
+      {
+        "M_solar": 100.0,
+        "S_BH": 1.0497397691485344e+81,
+        "t_scramble": 1.0557587950152786e+40,
+        "t_expected": 1.0557587950152786e+40,
+        "ratio": 1.0,
+        "t_evap": 6.618094367840624e+80,
+        "scramble_over_evap": 1.595261016744546e-41
+      }
+    ],
+    "formula_match": true,
+    "scramble_much_faster_than_evap": true,
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3_page_curve_peak",
+    "results": [
+      {
+        "N": 32,
+        "peak_fraction": 0.5,
+        "final_entropy": 0.0,
+        "error_from_half": 0.0
+      },
+      {
+        "N": 64,
+        "peak_fraction": 0.5,
+        "final_entropy": 0.0,
+        "error_from_half": 0.0
+      },
+      {
+        "N": 128,
+        "peak_fraction": 0.5,
+        "final_entropy": 0.0,
+        "error_from_half": 0.0
+      },
+      {
+        "N": 256,
+        "peak_fraction": 0.5,
+        "final_entropy": 0.0,
+        "error_from_half": 0.0
+      }
+    ],
+    "all_peak_near_half": true,
+    "all_return_to_zero": true,
+    "PASS": true
+  },
+  "T4": {
+    "test": "T4_epsilon_pac",
+    "N": 128,
+    "epsilon_results": [
+      {
+        "epsilon": 0.0,
+        "final_entropy": 0.0,
+        "peak_entropy": 3.6588830833596715,
+        "returns_to_zero": true
+      },
+      {
+        "epsilon": 0.01,
+        "final_entropy": 0.0,
+        "peak_entropy": 3.6768916485355825,
+        "returns_to_zero": true
+      },
+      {
+        "epsilon": 0.05,
+        "final_entropy": 0.0,
+        "peak_entropy": 3.7503020372221956,
+        "returns_to_zero": true
+      },
+      {
+        "epsilon": 0.1,
+        "final_entropy": 0.0,
+        "peak_entropy": 3.844388608930325,
+        "returns_to_zero": true
+      },
+      {
+        "epsilon": 0.2,
+        "final_entropy": 0.0,
+        "peak_entropy": 4.039947500253954,
+        "returns_to_zero": true
+      }
+    ],
+    "perfect_returns_to_zero": true,
+    "nonzero_has_residual": false,
+    "PASS": false
+  },
+  "score": 3,
+  "total": 4
+}

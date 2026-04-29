@@ -1,0 +1,201 @@
+{
+  "T1": {
+    "test": "T1_ordering",
+    "expected_order": [
+      "strong",
+      "weak",
+      "em",
+      "gravity"
+    ],
+    "actual_order": [
+      "strong",
+      "weak",
+      "em",
+      "gravity"
+    ],
+    "ordering_correct": true,
+    "planck_bounded": true,
+    "hubble_bounded": true,
+    "spearman_rho": 1.0,
+    "spearman_p": 0.0,
+    "alpha_grav_proton": 5.90600081171579e-39,
+    "alpha_grav_dft": 5.691959932062575e-39,
+    "log10_known": -38.22870649768187,
+    "log10_dft": -38.244738165746114,
+    "log_agreement_pct": 0.041936203269697256,
+    "coupling_match": "True",
+    "hierarchy": {
+      "strong": {
+        "depth": 3,
+        "tau_s": 2.2836642466701368e-43,
+        "log10_tau": -42.64136774742143
+      },
+      "weak": {
+        "depth": 7,
+        "tau_s": 1.565246760335589e-42,
+        "log10_tau": -41.805417186421515
+      },
+      "em": {
+        "depth": 13,
+        "tau_s": 2.80872134737071e-41,
+        "log10_tau": -40.55149134492164
+      },
+      "gravity": {
+        "depth": 183,
+        "tau_s": 9.471254303166681e-06,
+        "log10_tau": -5.023592502425253
+      }
+    },
+    "note_ordering": "Ordering is structural (deeper depth = longer tau by construction). Coupling match is the genuine test.",
+    "PASS": "True"
+  },
+  "T2": {
+    "test": "T2_coupling_ratios",
+    "ratio_tests": [
+      {
+        "pair": "gravity / EM",
+        "depth_diff": 170,
+        "log10_dft": -35.527898842496384,
+        "log10_known": -36.09187182724308,
+        "log_relative_error": 0.015626038667271247,
+        "match": "True"
+      },
+      {
+        "pair": "gravity / weak",
+        "depth_diff": 176,
+        "log10_dft": -36.78182468399626,
+        "log10_known": -36.72869392483026,
+        "log_relative_error": 0.0014465736046792453,
+        "match": "True"
+      }
+    ],
+    "primary_match": "True",
+    "note": "Replaced tautological ratio test (same formula both sides) with comparison to independently measured coupling constants.",
+    "PASS": "True"
+  },
+  "T3": {
+    "test": "T3_violation_monotonic",
+    "n_rates": 20,
+    "monotonic_fraction_above_crossover": 1.0,
+    "is_monotonic": "True",
+    "mean_violation_below_crossover": 0.0025223226816707468,
+    "below_are_small": "True",
+    "logistic_fit_r2": 0.9939612254408179,
+    "violation_at_rates": {
+      "0.010": 3.353761712787673e-17,
+      "0.016": 7.844391802791507e-17,
+      "0.026": 3.9933979678608013e-13,
+      "0.043": 6.5429954580054065e-09,
+      "0.070": 3.3499932636550507e-06,
+      "0.113": 0.00021432356114521183,
+      "0.183": 0.001711486834222442,
+      "0.298": 0.0068409569628851835,
+      "0.483": 0.01393078024012532,
+      "0.785": 0.03088677254270553,
+      "1.274": 0.03088677254270553,
+      "2.069": 0.03088677254270553,
+      "3.360": 0.03088677254270553,
+      "5.456": 0.03088677254270553,
+      "8.859": 0.03088677254270553,
+      "14.384": 0.03088677254270553,
+      "23.357": 0.03088677254270553,
+      "37.927": 0.03088677254270553,
+      "61.585": 0.03088677254270553,
+      "100.000": 0.03088677254270553
+    },
+    "PASS": "True"
+  },
+  "T4": {
+    "test": "T4_qg_clustering",
+    "spearman_rho": 0.8980265101338745,
+    "spearman_p": 0.00041760679267971744,
+    "qg_all_at_crossover": true,
+    "non_qg_away_fraction": 1.0,
+    "phenomena": [
+      {
+        "name": "BH information paradox",
+        "E_gev": 1e+19,
+        "is_qg": true,
+        "log_E": 19.0,
+        "log_distance_to_planck": 0.08667653655335883,
+        "at_crossover": "True"
+      },
+      {
+        "name": "Spacetime foam",
+        "E_gev": 1e+19,
+        "is_qg": true,
+        "log_E": 19.0,
+        "log_distance_to_planck": 0.08667653655335883,
+        "at_crossover": "True"
+      },
+      {
+        "name": "Non-renormalizability of gravity",
+        "E_gev": 1e+19,
+        "is_qg": true,
+        "log_E": 19.0,
+        "log_distance_to_planck": 0.08667653655335883,
+        "at_crossover": "True"
+      },
+      {
+        "name": "Trans-Planckian problem (inflation)",
+        "E_gev": 1e+16,
+        "is_qg": true,
+        "log_E": 16.0,
+        "log_distance_to_planck": 3.086676536553359,
+        "at_crossover": "True"
+      },
+      {
+        "name": "Singularity (BH/Big Bang)",
+        "E_gev": 1e+19,
+        "is_qg": true,
+        "log_E": 19.0,
+        "log_distance_to_planck": 0.08667653655335883,
+        "at_crossover": "True"
+      },
+      {
+        "name": "Muon g-2 anomaly",
+        "E_gev": 0.106,
+        "is_qg": false,
+        "log_E": -0.9746941347352298,
+        "log_distance_to_planck": 20.06137067128859,
+        "at_crossover": "False"
+      },
+      {
+        "name": "Proton radius puzzle",
+        "E_gev": 0.938,
+        "is_qg": false,
+        "log_E": -0.027797161620935564,
+        "log_distance_to_planck": 19.114473698174294,
+        "at_crossover": "False"
+      },
+      {
+        "name": "Neutrino mass origin",
+        "E_gev": 1e-10,
+        "is_qg": false,
+        "log_E": -10.0,
+        "log_distance_to_planck": 29.08667653655336,
+        "at_crossover": "False"
+      },
+      {
+        "name": "Strong CP problem",
+        "E_gev": 1.0,
+        "is_qg": false,
+        "log_E": 0.0,
+        "log_distance_to_planck": 19.08667653655336,
+        "at_crossover": "False"
+      },
+      {
+        "name": "Electroweak hierarchy",
+        "E_gev": 125.0,
+        "is_qg": false,
+        "log_E": 2.0969100130080562,
+        "log_distance_to_planck": 16.989766523545303,
+        "at_crossover": "False"
+      }
+    ],
+    "PASS": true
+  },
+  "score": 4,
+  "total": 4,
+  "pass_rate": 1.0
+}

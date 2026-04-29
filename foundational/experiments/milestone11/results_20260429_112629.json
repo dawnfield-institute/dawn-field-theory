@@ -1,0 +1,258 @@
+{
+  "T1": {
+    "test": "T1_bounce_time",
+    "data": [
+      {
+        "M_solar": 0.0001,
+        "M_planck_ratio": 9.138802279324804e+33,
+        "t_bounce_planck": 0.9999999999999999,
+        "log_M": -4.0,
+        "log_t": -4.821637332766436e-17
+      },
+      {
+        "M_solar": 0.01,
+        "M_planck_ratio": 9.138802279324804e+35,
+        "t_bounce_planck": 1.0,
+        "log_M": -2.0,
+        "log_t": 0.0
+      },
+      {
+        "M_solar": 1.0,
+        "M_planck_ratio": 9.138802279324802e+37,
+        "t_bounce_planck": 1.0,
+        "log_M": 0.0,
+        "log_t": 0.0
+      },
+      {
+        "M_solar": 100.0,
+        "M_planck_ratio": 9.138802279324803e+39,
+        "t_bounce_planck": 0.9999999999999999,
+        "log_M": 2.0,
+        "log_t": -4.821637332766436e-17
+      },
+      {
+        "M_solar": 1000000.0,
+        "M_planck_ratio": 9.138802279324802e+43,
+        "t_bounce_planck": 1.0,
+        "log_M": 6.0,
+        "log_t": 0.0
+      }
+    ],
+    "t_bounce_values": [
+      0.9999999999999999,
+      1.0,
+      1.0,
+      0.9999999999999999,
+      1.0
+    ],
+    "all_near_planck_time": true,
+    "constant_across_mass": "True",
+    "std_over_mean": 7.021666937153402e-17,
+    "PASS": "True"
+  },
+  "T2": {
+    "test": "T2_pac_forces_bounce",
+    "results": [
+      {
+        "M_solar": 0.01,
+        "results": [
+          {
+            "epsilon": 0.0,
+            "bounces": true
+          },
+          {
+            "epsilon": 0.1,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.3,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.5,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.7,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.9,
+            "bounces": false
+          },
+          {
+            "epsilon": 1.0,
+            "bounces": false
+          }
+        ]
+      },
+      {
+        "M_solar": 1.0,
+        "results": [
+          {
+            "epsilon": 0.0,
+            "bounces": true
+          },
+          {
+            "epsilon": 0.1,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.3,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.5,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.7,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.9,
+            "bounces": false
+          },
+          {
+            "epsilon": 1.0,
+            "bounces": false
+          }
+        ]
+      },
+      {
+        "M_solar": 100.0,
+        "results": [
+          {
+            "epsilon": 0.0,
+            "bounces": true
+          },
+          {
+            "epsilon": 0.1,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.3,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.5,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.7,
+            "bounces": false
+          },
+          {
+            "epsilon": 0.9,
+            "bounces": false
+          },
+          {
+            "epsilon": 1.0,
+            "bounces": false
+          }
+        ]
+      }
+    ],
+    "perfect_pac_bounces": true,
+    "full_violation_no_bounce": true,
+    "has_transition": true,
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3_burst_energy",
+    "data": [
+      {
+        "M_solar": 1e-08,
+        "E_burst_planck": 1.0304736860784235e-10,
+        "log_M": -8.0,
+        "log_E": -9.986963093779817
+      },
+      {
+        "M_solar": 0.0001,
+        "E_burst_planck": 4.783035154633411e-12,
+        "log_M": -4.0,
+        "log_E": -11.320296427113151
+      },
+      {
+        "M_solar": 1.0,
+        "E_burst_planck": 2.220088256452382e-13,
+        "log_M": 0.0,
+        "log_E": -12.653629760446483
+      },
+      {
+        "M_solar": 100.0,
+        "E_burst_planck": 4.783035154633413e-14,
+        "log_M": 2.0,
+        "log_E": -13.320296427113151
+      },
+      {
+        "M_solar": 1000000.0,
+        "E_burst_planck": 2.2200882564523825e-15,
+        "log_M": 6.0,
+        "log_E": -14.653629760446483
+      }
+    ],
+    "slope": -0.33333333333333287,
+    "slope_near_minus_third": "True",
+    "decreasing_with_mass": true,
+    "PASS": true
+  },
+  "T4": {
+    "test": "T4_zeno_limit",
+    "data": [
+      {
+        "M_over_M_planck": 100,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 16084063523.049927,
+        "ratio_bounce_evap": 6.21733431086559e-11
+      },
+      {
+        "M_over_M_planck": 10,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 16084063.523049926,
+        "ratio_bounce_evap": 6.21733431086559e-08
+      },
+      {
+        "M_over_M_planck": 5,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 2010507.9403812408,
+        "ratio_bounce_evap": 4.973867448692472e-07
+      },
+      {
+        "M_over_M_planck": 2,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 128672.50818439943,
+        "ratio_bounce_evap": 7.771667888581987e-06
+      },
+      {
+        "M_over_M_planck": 1.5,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 54283.714390293484,
+        "ratio_bounce_evap": 1.8421731291453607e-05
+      },
+      {
+        "M_over_M_planck": 1.1,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 21407.888549179454,
+        "ratio_bounce_evap": 4.671175289906529e-05
+      },
+      {
+        "M_over_M_planck": 1.01,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 16571.426731861866,
+        "ratio_bounce_evap": 6.034483428498652e-05
+      },
+      {
+        "M_over_M_planck": 1.0,
+        "t_bounce_planck": 1.0,
+        "t_evap_planck": 16084.063523049928,
+        "ratio_bounce_evap": 6.21733431086559e-05
+      }
+    ],
+    "converge_at_planck": true,
+    "zeno_convergence": true,
+    "PASS": true
+  },
+  "score": 4,
+  "total": 4
+}
