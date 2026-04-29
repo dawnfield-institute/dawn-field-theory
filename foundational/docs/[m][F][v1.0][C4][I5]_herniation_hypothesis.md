@@ -20,8 +20,10 @@ related_documents:
 ```
 # The Herniation Hypothesis: Collapse Geometry of Dual Fields
 
-**Author:** Lorne  
-**Date:** 2025-04-17  
+> **Historical document from April 2025.** The "herniation" terminology has been superseded by the cascade mechanism (M9) and PAC/SEC framework. The core intuition — that collapse geometry produces structure — survived into the current theory as cascade dynamics. For current state, see `dawn-field-theory.md` in the repo root.
+
+**Author:** Lorne
+**Date:** 2025-04-17
 **Framework:** Dawn Field Theory
 
 ---
