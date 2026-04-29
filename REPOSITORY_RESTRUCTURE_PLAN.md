@@ -1,8 +1,10 @@
-# 🌌 Dawn Field Theory Repository Restructure Plan
+# Dawn Field Theory Repository Restructure Plan
 
-**Status:** Community Review Phase  
-**Target Date:** Q4 2025 - Q1 2026  
-**Author:** Peter Groom, Dawn Field Institute  
+> **Historical document from September 2025.** The repo restructure happened differently than planned here — repos were split into dawn-field-theory, fracton, reality-engine, dawn-models, GRIM, kronos-vault, and dawn-infrastructure as separate git repositories in the core_workspace. CIP protocol references are superseded. This document is preserved for historical reference only.
+
+**Status:** Superseded
+**Original Target Date:** Q4 2025 - Q1 2026
+**Author:** Peter Groom, Dawn Field Institute
 **Last Updated:** September 8, 2025
 
 ---

@@ -1,36 +1,24 @@
 schema_version: '2.0'
 directory_name: roadmaps
-description: 'Roadmaps for the Dawn Field Theory project, including development, publication,
-  and research plans for SEC, SCBF, and related frameworks.
-
-  '
+description: >
+  Current and historical roadmaps for Dawn Field Theory. Active roadmap covers
+  M12 planning, PACSeries v0.3, and open problems. Historical roadmaps from
+  mid-2025 are preserved but superseded.
 semantic_scope:
-- roadmaps
+  - roadmaps
+  - planning
 files:
-- README.md
-- cip_protocol_roadmap.md
-- core_project_roadmap.md
-- gaia_roadmap.md
-- general_experiments_roadmap.md
-- infrastructure_tools_roadmap.md
-- kronos_roadmap.md
-- math_arithmetic_roadmap.md
-- publication_framework_roadmap.md
-- sdk_analysis_tools_roadmap.md
-- symbolic_entropy_roadmap.md
-- xai_scbf_roadmap.md
+  - README.md
+  - current_roadmap.md
+  - post_m5_roadmap.md
+  - core_project_roadmap.md
+  - general_experiments_roadmap.md
+  - kronos_roadmap.md
+  - math_arithmetic_roadmap.md
+  - publication_framework_roadmap.md
 semantic_tags:
-- roadmap
-- planning
-- sec
-- scbf
-- dawn_field_theory
-- cip_protocol_roadmap.md
-- core_project_roadmap.md
-- gaia_roadmap.md
-- math_arithmetic_roadmap.md
-- publication_framework_roadmap.md
-- xai_scbf_roadmap.md
-- symbolic-entropy
-- experiments
+  - roadmap
+  - planning
+  - pac
+  - dawn_field_theory
 child_directories: []
