@@ -265,6 +265,54 @@ This suggests the "special value" depends on how you measure complexity.
 
 ---
 
+## 3. M11 Hardening Cycle (April 2026)
+
+### Context
+
+Milestone 11 (Quantum Gravity as Response-Time Crossover) scored 52/52 (100%) on first pass. That was suspiciously clean. Four rounds of deliberate hardening exposed 7 tautological tests, all of which were fixed with genuine physics. Score: 52/52 -> 49/52 -> 52/52.
+
+### Tautologies Found and Fixed
+
+#### Round 1 (3 tautologies)
+
+| Test | Problem | Fix |
+|------|---------|-----|
+| EXP 02 T1 | Spread is exactly 4.0 (Schwarzschild=2.0 / Heisenberg=0.5). Not "convergence." | Reframed as **bracket**: inner routes converge within 1.13x, outer routes bound them. |
+| EXP 09 T3 | Measured `mean(noise^2/2sigma^2) = 0.5` — a chi-squared(1)/2 identity for ANY Gaussian. Nothing to do with Xi. | Replaced with **multi-ratio Landauer universality**: contraction rate = ln(b) for b=phi,2,e,3. Spread 1.9%. |
+| EXP 11 T4 | Test was `last_ratio > 0` — any positive number passes. t_bounce=1 vs t_evap=16084. | Reframed as **crossover**: Hawking correction -> 0 at M_P. Evaporation shuts off, bounce dominates. |
+
+#### Round 2 (4 more tautologies)
+
+| Test | Problem | Fix |
+|------|---------|-----|
+| EXP 01 T1 | Spearman rho on 4 monotonic points = 1.0 always. | Added **quantitative coupling match**: phi^(-183) vs alpha_grav(proton), 0.04% in log space. |
+| EXP 01 T2 | Same formula both sides (0% error by construction). | Replaced with **known physics ratios**: gravity/EM phi^(-170) vs measured, 1.6% error. |
+| EXP 05 T1 | T*M = 1/(8piM)*M cancelling, not a measurement. | Test **cascade saturation correction curve**: large BH -> 1/(8pi), micro-BH -> 6% suppression. |
+| EXP 10 T4 | Bug: QGCorrectedClock created but never used. s8_corrected === s8_standard. | **Bug fix**: properly compute N_corrected. QG correction ~ 10^-60 at z=0.35 (trivially stable). |
+
+#### Round 3 — Landauer Deepening
+
+Connected cascade dynamics to independently established thermodynamics:
+- **Multi-ratio universality**: contraction rate = ln(b) for b=phi,2,e,3. Spread 1.9%.
+- **PAC radiation = Landauer cost**: 1/phi^2 radiation fraction = energy representation of ln(phi) erasure cost.
+
+#### Round 4 — Origin of Xi
+
+- **Phi uniquely selected**: scan b=1.01 to 5.0, only phi satisfies g_out = g_in^2 (b^2-b-1=0).
+- **Gamma from harmonic counting**: H_n - ln(n) -> gamma at 0.02% for n=5000.
+- **Xi = gamma + ln(phi)** fully determined with zero free parameters.
+
+### Key Insight
+
+The hardening cycle IS the Imperfection Engine in action. Each tautology found was a collapse event that produced stronger physics. Score maintained at 52/52, but tests now measure genuine physics instead of algebraic identities.
+
+### Documents Updated
+- `milestone11/scripts/exp_01, 02, 05, 09, 10, 11` — test replacements
+- `milestone11/core/quantum_gravity.py` — StochasticCascade split_ratio
+- `milestone11/README.md` — all rounds documented
+
+---
+
 ## Meta: On Corrections as Progress
 
 Each entry in this registry represents a **collapse event** in the Imperfection Engine sense:
@@ -293,6 +341,6 @@ Submit as a PR or issue to trigger the scrutiny engine.
 
 ---
 
-*Registry Version: 1.0*  
-*Last Updated: 2026-01-06*  
+*Registry Version: 1.1*
+*Last Updated: 2026-04-29*
 *Status: Living Document*

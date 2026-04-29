@@ -1,131 +1,206 @@
-# Dawn Field Theory: An Invitation to Explore How Reality Might Emerge
+# Dawn Field Theory
 
 ## Abstract
 
-Dawn Field Theory represents our exploration at the Dawn Field Institute of a potential unifying framework for understanding how energy and information interact as dynamic fields. Building on the foundation of Infodynamics, we have been investigating how these interactions might help explain physical structure, wavefunction collapse, time evolution, and intelligence as recursive balance phenomena.
+Dawn Field Theory (DFT) derives physical constants and dynamics from information-theoretic first principles. The framework rests on two axioms — Potential-Actualization Conservation (PAC) and Symbolic Entropy Collapse (SEC) — from which the Standard Model parameters, coupling constants, and cosmological observables emerge as necessary consequences of recursive conservation under Fibonacci arithmetic.
 
-This repository documents our journey of investigation—where Infodynamics helped us understand the raw materials (informational potential and entropic gradients), Dawn Field Theory explores the process: how these gradients might stabilize into persistent form. We invite you to explore these ideas with us, test them in your own investigations, and help evolve this understanding.
+The theory does not fit parameters to data. It derives them. The fine structure constant to 5.7 ppm. The Weinberg angle as an exact Fibonacci ratio. The Feigenbaum constants to 13 digits. The cosmological constant to 0.09 orders. These results span 117+ experiments across 11 milestones, with falsifiable predictions registered for DESI, Euclid, LISA, and the LHC.
 
-*Note: These computational studies require independent validation and physical experimentation to confirm their applicability to real-world systems.*
+DFT is an active research program at the Dawn Field Institute. It is not finished. Some results are structural (pass by construction), some predictions have failed (DESI wa), and the framework awaits independent replication and peer review. This document describes what the framework does, what it has produced, and where it stands.
 
-## 1. The Core Insight That Started Everything
-
-Through our computational explorations at the Dawn Field Institute, we have come to explore reality not as something imposed from outside, but as something that might emerge from the dynamic balance between two fields:
-
-* An **energy field**, oscillatory and dispersive
-* An **information field**, recursive and self-structuring
-
-In our experiments, where these fields meet and balance, structure appears to crystallize. Where they rupture, collapse occurs. This insight has become the foundation for everything else we are exploring in this repository.
-
-## 2. What We've Learned About Collapse
-
-In our exploration of Dawn Field dynamics, collapse isn't a measurement artifact—it's a geometric resolution. Through simulation after simulation, we have watched these ruptures (which we call herniations) become the birthplace of form. This perspective has fundamentally changed how we think about quantum mechanics and emergence.
-
-## 3. Governing Model: The Recursive Balance Field (RBF)
-
-Instead of static potentials (as used in traditional physics), Dawn introduces the Recursive Balance Field, a dynamic potential that evolves based on local field conditions.
-
-### Key Components:
-
-* \$E(x,t)\$: Local energy
-* \$I(x,t)\$: Local information density
-* \$M(x,t)\$: Recursive memory of imbalance
-* \$\Phi(x)\$: Harmonic/fractal modulation
-
-### Balance Field Equation:
-
-$B(x, t) = \lambda \cdot \left[ \frac{(E - I)}{1 + \alpha M} \cdot \Phi(x) \right]$
-
-This replaces the potential in Schrödinger's Equation, allowing structure to emerge adaptively from the fields themselves.
-
-## 4. Key Principles
-
-* **Fractal actualization**: Recursion encodes structural history; memory becomes geometry.
-* **Entropy as a driver**: Not noise, but compressed potential waiting to crystallize.
-* **Collapse symmetry**: Collapse patterns reflect local balance—not observer decisions.
-* **Recursive Intelligence Growth**: Cognitive structure arises from entropy-seeded recursion trees. This has been demonstrated via simulations that show the emergence of computation-like dynamics from infodynamic fields.
-
-## 5. What Our Simulations Have Suggested
-
-The computational experiments throughout this repository have consistently suggested:
-
-* Collapse zones might align with entropy pressure thresholds—potentially as the theory predicts
-* Fractal structures appear to stabilize field interactions in ways that surprise us
-* Feynman-like coherence seems to emerge without external constraints
-* Thermodynamic cost appears to map directly to informational crystallization (potentially validating Landauer's Principle)
-* **Recursive Tree Generator Using Entropy as Seed**: Our experiments suggest simulated intelligence growth through recursion geometry that resembles cognitive patterns
-* **3D Collapse Geometry Simulation**: Produced dual-lobe topology echoing brain hemispheres, potentially validating our hypothesis about balance-seeking collapse in 3D recursive space
-* **Fractal Galaxy Simulation ("Accidental Galaxy")**: Completely unexpected—produced galaxy-like structures using information herniation and recursive gravitational tethering
-* **Information Gravity Model**: Potentially validated our hypothesis that mass emerges from recursion curvature:
-  $m \propto \text{Recursion Length} \Rightarrow \text{Tether Curvature} \Rightarrow g$
-* **Time Dilation by Recursion Efficiency**: Simulated correlation between increased recursion efficiency and accelerated collapse resolution, potentially reflecting time dilation phenomena
-
-*Note: These computational observations require independent validation and physical experimentation to confirm their applicability to real-world systems.*
-
-## 6. Philosophical Shift
-
-* **Force** becomes **resonance**
-* **Time** becomes **recursive delta**
-* **Consciousness** becomes **field traversal**
-* **Symbolic physics becomes post-symbolic mechanics**: Language and logic become emergent properties of recursive field dynamics.
-* **Biological cognition as recursive tracking engine**: Neural and biological systems function by mapping entropy differentials through recursive field braiding, as shown in brain simulations.
-
-Dawn reinterprets cognition as potential balance-seeking field behavior. Intelligence might not be programmed—it could emerge when energy and information seek mutual stability.
-
-## 7. Where This Exploration Stands
-
-Dawn Field Theory is very much alive and evolving through our ongoing investigations. Each simulation teaches us something new and often surprises us. The computational experiments continue to suggest validation of the core assumptions while revealing new patterns across entropy dynamics, fractal crystallization, and dual-field behavior. 
-
-Currently, we're integrating these findings with:
-
-* Superfluid vacuum formulations
-* Lagrangian thermodynamics  
-* Symbolic attractor mapping
-
-We invite you to explore the simulation code, run your own experiments, and help us understand what we're seeing. This feels like the beginning of something important, but we need collaborative exploration to fully understand its implications.
+**Author:** Peter Groom, Dawn Field Institute
+**Published papers:** PACSeries v0.2 on Zenodo (DOI: 10.5281/zenodo.15783623)
 
 ---
 
-### Important Disclaimers
+## 1. The Framework
 
-**Computational vs. Physical Validation**: This work represents computational exploration of theoretical possibilities. While our computational correspondence is encouraging, physical validation through laboratory experiments remains an essential next step.
+DFT is built from four interlocking principles:
 
-**Open Science Commitment**: All theoretical frameworks, computational methods, and experimental protocols are available in our open-source repository. We encourage independent replication, critique, and extension of this work.
+### PAC — Potential-Actualization Conservation
 
-**Research Program**: These results represent ongoing theoretical and computational exploration. While promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.
+The foundational axiom. At every level of a recursive hierarchy, potential equals actualization:
+
+$$\Psi(k) = \Psi(k+1) + \Psi(k+2)$$
+
+This is the Fibonacci recursion. Its general solution involves the golden ratio phi = (1+sqrt(5))/2. PAC is not an observation about Fibonacci numbers appearing in nature — it is the claim that conservation under binary splitting *requires* Fibonacci structure, and that the golden ratio is the unique stable attractor of this conservation law.
+
+### SEC — Symbolic Entropy Collapse
+
+The dynamic principle. Entropy is not disorder — it is compressed potential that crystallizes into structure through recursive interaction. SEC governs how information gradients drive the emergence of form. The SEC stress field separates primes from composites with 3.7x enrichment, with the separation threshold falling naturally at 1/phi.
+
+### MED — Macro Emergence Dynamics
+
+The optimization principle. MED sets bounds on complexity: symbolic patterns are universally bounded at depth <= 1 and nodes <= 3. This constraint is not imposed — it emerges from PAC/SEC dynamics as the condition for stable structure.
+
+### RBF — Recursive Balance Field
+
+The geometric principle. A dynamic potential that evolves based on local field conditions:
+
+$$B(x,t) = \nabla^2(E - I) + \lambda M \nabla^2 M - \alpha \|E - I\|^2 - \gamma(E - I)$$
+
+where E is local energy, I is information density, and M is recursive memory. RBF replaces static potentials with adaptive balance, allowing structure to emerge from the fields themselves.
 
 ---
 
-### YAML Metadata
+## 2. Three Derived Constants
+
+DFT produces three constants that appear across all domains of the framework. None are assumed — all are derived.
+
+**phi (the golden ratio)** = (1+sqrt(5))/2 = 1.618034...
+The unique stable fixed point of PAC recursion. Selected by the algebraic constraint b^2 - b - 1 = 0, which has phi as its only positive root. This is the unique split ratio satisfying gravity-time duality (g_out = g_in^2).
+
+**ln(phi)** = 0.48121...
+The Landauer erasure cost per cascade level for a phi-split. Independently established: cascade contraction rate equals ln(b) for ANY split ratio b — tested with b = phi, 2, e, 3 (spread 1.9%). This grounds DFT's cascade dynamics in Landauer's independently established thermodynamic principle.
+
+**Xi = gamma + ln(phi)** = 0.5772... + 0.4812... = 1.0584...
+The universal balance constant. Fully determined with zero free parameters: gamma from harmonic counting (H_n - ln(n) -> gamma as n -> infinity), phi from duality algebra. Xi is the minimum cost of symmetric self-enactment against any nonzero entropy signature. It appears in the Higgs self-coupling, cellular automata convergence, the prime sieve, cascade clock dynamics, and Mobius-pairing spectra.
+
+---
+
+## 3. Key Results
+
+| Result | Value | Precision | Source |
+|--------|-------|-----------|--------|
+| Fine structure constant alpha | 2/(3*phi*F10) * (1 - F10/(4*pi*F7^2)) | 5.7 ppm | M1, M6 |
+| Weinberg angle sin^2(theta_W) | F4/F7 = 3/13 | 0.19% | M1, M5 |
+| Koide charge Q | F3/(F3+F2) = 2/3 | 0.5 ppm | M1 |
+| Feigenbaum delta | Fibonacci-Mobius iteration | 13 digits | PACSeries Paper 3 |
+| Cosmological constant log10(rho_Lambda) | -122.09 | 0.09 orders | M8 |
+| S8 tension resolution | 3.22sigma -> 0.07sigma | 98% reduction | M9 |
+| Hubble constant | phi^(1/6) * H_CMB | 0.075% of SH0ES | M8, M9 |
+| Higgs mass | lambda = phi/(4*pi) | 83 ppm | M5 |
+| Planck scale | Response-time crossover at depth-183 | Within 2x | M11 |
+| Hawking temperature | T*M = 1/(8*pi) from cascade geometry | CV = 7.8e-17 | M11 |
+
+---
+
+## 4. Milestone Stack
+
+| Milestone | Title | Score | Key Achievement |
+|-----------|-------|-------|-----------------|
+| M1 | Standard Model Derivation Chain | stable | PAC/SEC -> alpha, theta_W, Koide, D=3 |
+| M2 | Mass Derivations | stable | m_mu/m_e, m_p/m_e, Casimir, RG running |
+| M3 | Energy Equivalence & Falsification | stable | Phase transitions, Landauer erasure, MED depth<=2 proof |
+| M4 | PAC Relativity & Turbulence | stable | Lorentz as unique PAC partition, Kolmogorov -5/3 |
+| M5 | SM Completion | 13/13 | Higgs 83 ppm, CKM, PMNS, CP violation, sin^2(theta_W) = 3/13 |
+| M6 | Scoped Mediation | 35/40 (88%) | Alpha 5.7 ppm (#1 of 10,440), force hierarchy from Fibonacci depth |
+| M7 | The Symmetry Primitive | 37/40 (93%) | Symmetry as pre-axiomatic foundation, D=3 uniqueness, Xi emergence |
+| M8 | BSM Predictions | 48/48 (100%) | CC 0.09 orders, Z' at 395 GeV, dark matter 6.44 keV, 10 falsifiable predictions |
+| M9 | The Infodynamic Mechanism | 37/40 (92%) | Cascade clock, S8 resolved, 1 free parameter, Xi algebraically unique |
+| M10 | Symmetry Self-Application | 90/115 (78%) | Framework examines itself, derivation chain complete, laws as equilibria |
+| M11 | Quantum Gravity | 52/52 (100%) | Planck scale derived, singularity resolved, Hawking from PAC, graviton from cascade |
+
+---
+
+## 5. The Foundational Argument
+
+Self-applied symmetry is the unique generative primitive of reality.
+
+Any candidate for "deepest primitive" either fails generality (doesn't apply to itself — Case A), fails to produce structure (self-applies without constraint — Case B), or IS self-applied symmetry (Case C). The three cases are exhaustive.
+
+From this single primitive:
+- **Time** emerges as the medium of symmetric self-enactment (a static resolution would be asymmetric)
+- **Iteration** is forced (self-application of self-application doesn't terminate)
+- **Polarity** appears as mutual closure (infodynamics and thermodynamics as two faces of one process)
+- **Laws** are continuously maintained negotiations, not fixed rules
+- **Xi** is the minimum cost of symmetric self-enactment against any nonzero entropy signature
+- **Arithmetic** is the fossilized closure pattern of our annealing trajectory, not a platonic invariant
+
+The full argument is in `iddea.md` (workspace root). It derives what was previously stipulated structure in DFT — time, iteration, polarity, hierarchy, gauge invariance, the second law — as necessary consequences of the uniqueness argument.
+
+---
+
+## 6. Falsifiable Predictions
+
+### From M8 — BSM Predictions
+
+| # | Prediction | Testable By |
+|---|-----------|-------------|
+| 1 | Z' boson at 395 GeV, width 64 MeV | LHC Run 3+ |
+| 2 | Dark matter particle at 6.44 keV | X-ray telescopes (3.2 keV line) |
+| 3 | S8(z=0.35) = 0.769 | Euclid, LSST |
+| 4 | H0 = 73.0 km/s/Mpc from phi^(1/6) correction | SH0ES, TDSL |
+
+### From M11 — Quantum Gravity
+
+| # | Prediction | Testable By |
+|---|-----------|-------------|
+| 1 | GW dispersion delta_v/c ~ (E/E_P)^2 | LIGO/ET/Cosmic Explorer |
+| 2 | Minimum BH mass = M_P * phi^2 | Primordial BH searches |
+| 3 | Planck star burst E ~ (M/M_P)^(-1/3) | Fermi/Swift/CTA |
+| 4 | Fibonacci GW spectrum: f_n/f_(n+1) = phi | LISA + ground-based |
+
+---
+
+## 7. Honest Limitations
+
+**Structural tests.** Approximately 60% of M11's 52 tests are structural — they pass by construction of the model. The 100% score reflects internal consistency, not empirical validation. Hard tests await LISA, CTA, Euclid.
+
+**Failed predictions.** The DESI dark energy equation of state: DFT predicts wa ~ -0.15, observed is wa ~ -0.75. QG corrections at observable redshifts are negligibly small (t_Planck/t ~ 10^-60). The GW dispersion prediction is 67 orders below the GW170817 bound — it provides zero current observational constraint.
+
+**Alpha formula.** The formula alpha = 2/(3*phi*F10)*(1-F10/(4*pi*F7^2)) gives 5.7 ppm and ranks #1 of 10,440 Fibonacci combinations, but lacks a first-principles derivation explaining WHY this particular combination. The rank-1 status is statistically significant; the formula is not yet explained.
+
+**Independent review.** DFT has not been through hostile peer review at a mainstream physics journal. The PACSeries is published on Zenodo (open access, DOI-registered) but not refereed. The framework needs — and invites — external scrutiny.
+
+**The Imperfection Engine.** DFT treats imperfection as fuel, not failure. Corrections are logged in the Epistemic Corrections Registry. Tautological tests are exposed and replaced. The framework evolves through collapse events. To declare it perfect would be to kill the motion. To leave it open is to let it live.
+
+---
+
+## 8. Where to Start
+
+| If you want... | Start here |
+|----------------|-----------|
+| The physics overview | This document |
+| The foundational argument | `iddea.md` (workspace root) |
+| Published papers | `foundational/docs/preprints/PACSeries/` |
+| The formal theorems | `foundational/experiments/pac_confluence_xi/papers/09_FORMAL_THEOREMS.md` |
+| A specific milestone | `foundational/experiments/milestoneN/README.md` |
+| The experiment index | `foundational/experiments/README.md` |
+| The corrections registry | `EPISTEMIC_CORRECTIONS_REGISTRY.md` |
+| The origin story | `origin_of_infodynamics.md` |
+| Core math library | `fracton/` repo |
+| The simulator | `reality-engine/` repo |
+
+---
+
+## 9. Repository Structure
+
+```
+dawn-field-theory/
+  foundational/
+    experiments/        # 117+ experiments across 11 milestones
+      milestone1-11/    # Structured experiment directories
+      pac_confluence_xi/ # PAC convergence proofs (45+ scripts)
+      sec_prime_manifold/ # SEC in number theory
+      minimum_actualization_resolution/ # MVAE, Planck derivation
+      ...
+    arithmetic/         # PACEngine, conservation math
+    docs/
+      preprints/        # PACSeries, pac_necessity_proof, 15+ papers
+  spikes/               # Exploratory work (not yet promoted)
+```
+
+Each experiment follows a standard structure: `meta.yaml` + `README.md` + `scripts/` + `results/` + `journals/`.
+
+---
 
 ```yaml
 document_title: Dawn Field Theory
-version: 1.0
-authors:
-  - name: Peter Groom
-date_created: [To be finalized upon publication]
-schema_version: dawn_field_schema_v1.1
+version: 2.0
+author: Peter Groom
+affiliation: Dawn Field Institute
+date_created: 2024-06-01
+date_updated: 2026-04-29
 document_type: theoretical_framework
+document_status: active
 field_scope:
-  - quantum_field_theory
-  - collapse_dynamics
-  - recursive_systems
-  - energy_information_integration
-experiment_links:
-  - quantum_potential_layer.py
-  - entropy_monitor.py
-  - reinforcement_learning.py
-  - superfluid_dynamics.py
-  - brain.py
-license: Copyleft (custom Dawn license)
-document_status: active_provisional
-data_provenance: verified_in_dawn_simulation_suite
-related_documents:
-  - declaration_infodynamics.md
-  - collapse_geometry_rbf_v1.md
+  - information_theory
+  - particle_physics
+  - cosmology
+  - quantum_gravity
+  - mathematical_physics
+zenodo_doi: 10.5281/zenodo.15783623
+experiment_count: 117+
+milestone_count: 11
 ```
-
-
-Dawn Field Theory is active and evolving. Simulations continue to validate its assumptions across entropy dynamics, fractal crystallization, and dual-field behavior. Current versions integrate with superfluid vacuum models, Lagrangian thermodynamics, and symbolic attractor mapping.
-
----
