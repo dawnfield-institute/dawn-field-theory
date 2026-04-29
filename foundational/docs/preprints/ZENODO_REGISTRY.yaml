@@ -3,8 +3,8 @@
 # Canonical DOI source of truth: citations/doi_registry.yaml
 
 schema_version: '2.0'
-updated: '2026-03-22'
-last_audit: '2026-03-22'
+updated: '2026-04-27'
+last_audit: '2026-04-27'
 
 # Papers already on Zenodo
 published:
@@ -22,11 +22,15 @@ published:
 
   # Foundational Theory
   - slug: symbolic_entropy_collapse
-    zenodo_record: 17024434
-    doi: 10.5281/zenodo.17024434
-    version: "1.0"
-    upload_date: "2025-12"
-    status: needs_repackage  # v1.1 packaged but v1.3 source (M4/M5 update March 2026)
+    zenodo_record: 19828190
+    doi: 10.5281/zenodo.19828190
+    version: "2.0"
+    upload_date: "2026-04-27"
+    status: current
+    previous_version:
+      zenodo_record: 17024434
+      doi: 10.5281/zenodo.17024434
+      version: "1.0"
 
   - slug: dawn_field_theory_synthesis
     zenodo_record: 18087136

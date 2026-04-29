@@ -52,13 +52,19 @@ published:
   - id: symbolic_entropy_collapse
     title: "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence"
     short_title: "Symbolic Entropy Collapse (SEC)"
-    doi: "10.5281/zenodo.17024434"
-    zenodo_record: 17024434
-    url: "https://zenodo.org/records/17024434"
-    version: "1.0"
-    upload_date: "2025-12"
+    doi: "10.5281/zenodo.19828190"
+    zenodo_record: 19828190
+    url: "https://zenodo.org/records/19828190"
+    version: "2.0"
+    upload_date: "2026-04-27"
     category: core_theory
     status: published
+    has_code: true
+    has_data: true
+    has_figures: true
+    previous_version:
+      doi: "10.5281/zenodo.17024434"
+      version: "1.0"
 
   # ---------------------------------------------------------------------------
   # Mathematical & Physics Papers

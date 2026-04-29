@@ -1,9 +1,9 @@
 ﻿schema_version: "2.0"
 slug: "symbolic_entropy_collapse"
-title: "Symbolic Entropy Collapse"
+title: "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence"
 category: "id"
-status: "Draft"
-version: "1.1"
+status: "Preprint"
+version: "2.0"
 complexity: 5
 impact: 5
 evidence_type: "E"
@@ -20,7 +20,15 @@ files:
 code:
   has_experiments: true
   trace_file: "Code/trace.yaml"
-  
+
 keywords:
   - Dawn Field Theory
-  - ID
+  - Symbolic Entropy Collapse
+  - PAC conservation
+  - information theory
+  - infodynamics
+  - golden ratio
+  - phase transitions
+  - Landauer principle
+  - entropy dynamics
+  - cross-domain validation

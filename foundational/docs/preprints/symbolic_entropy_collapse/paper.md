@@ -1,10 +1,10 @@
-﻿# Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence (Draft)
+﻿# Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence
 
-**Authors:** Dawn Field Theory Collaborative
+**Authors:** Groom, Peter
 **Affiliation:** Dawn Field Institute
-**Date:** September 1, 2025 (Updated: March 22, 2026)
-**Version:** Draft v1.3
-**Status:** Preprint Draft
+**Date:** September 1, 2025 (Updated: April 2026)
+**Version:** v2.0
+**Status:** Preprint
 
 ---
 
@@ -25,6 +25,15 @@
 > - **Gaussian envelope from SEC diffusion**: Three independent derivations (SEC diffusion, max entropy, PAC equal-area) all produce Gaussian shape. Phi is the unique scaling base preserving equal-area conservation (CV = 1.4×10⁻¹⁴% vs next-best 30.5%), robust to ±20% parameter perturbation (milestone4 exp_13).
 > - **De-actualization completes the PAC cycle**: Milestone5 exp_12-13 show mass can return to potential when imbalance resolves (dM_deact = −η·M·(1−γ_local)), cutting coupling drift by 24%. SEC's local structure formation is now matched by a local structure dissolution mechanism.
 > - **Strong force implicit in cascade geometry**: The cascade-depth tiling filter *is* the running coupling — no new operator needed (milestone5 exp_04). Couplings are UV fixed points, not asymptotically free (dg/dlnk < 0.015 across 6× scale, milestone5 exp_05).
+
+> **April 2026 Update.** Milestones 6–9 (40 experiments, completed March–April 2026) extend SEC from a validated local dynamics equation to a framework with observational predictions and cosmological reach. Combined milestone scores: M6 35/40 (88%), M7 37/40 (93%), M8 40/40 (100%), M9 37/40 (92%).
+>
+> - **SEC propagation mechanism (M6 — Scoped Mediation)**: SEC structure formation now has a propagation mechanism. Transfer matrices with harmonic fixed-point convergence produce the force hierarchy from Fibonacci cascade depth. α_EM emerges at 5.7 ppm — ranked #1 of 10,440 Fibonacci combinations, 300× better than the next candidate. Three key insights: the weak force is the actualization mechanism, Ξ is a conditional attractor, and neutrinos complete the PAC cycle. Dark sector prediction: cascade depth 73 yields α₇₃ = 2.48×10⁻¹⁶, mass ~5.8 keV.
+> - **SEC derived from symmetry (M7 — The Symmetry Primitive)**: SEC is now traced to a pre-axiomatic origin: Symmetry → Self-reference → Recursion → ADE classification → PAC/SEC/MED/RBF. The 1/φ attenuation that characterizes SEC phase transitions emerges from dynamics (R² = 0.995), not assumed — this is non-tautological. φ arises from cross-scale relational self-reference, not arbitrary maps. 100% compatibility with M1–M6 results, 60% directly illuminated, 12 new derivation paths. Cosmological constant within 0.9 orders, D = 3 uniquely selected.
+> - **SEC makes falsifiable BSM predictions (M8 — BSM Predictions, 100%)**: The cascade structure that SEC describes produces 10 pre-registered falsifiable predictions, 0 excluded by current data. Cosmological constant at −122.09 (0.09 orders from observed). Hubble ratio φ^{1/6} at 0.075%. Dark matter at 6.44 keV from cascade routes (0.09 orders), X-ray line at 3.2 keV ≈ 3.55 keV observed. Z′ boson at 395 GeV: not excluded (9× margin from LHC bounds). S8 = 0.787, H₀ = 73.0 km/s/Mpc.
+> - **SEC cascade clock resolves cosmological tensions (M9 — The Infodynamic Mechanism)**: A single cascade clock N(t) = a + (1/ln φ)·ln(t_lookback) unifies S8, Hubble, and JWST data points. S8 tension resolved: 3.22σ → 0.07σ (98% reduction). Ξ = γ + ln(φ) proven algebraically unique as the transition cost. Parameter count reduced from 2 → 1 free parameter (t₁ = 520 Myr anchors to first star formation). Discrete H₀ tension: φ^{1/N_floor} matches SH0ES at 0.05σ. Four new falsifiable predictions for Euclid, DESI, and time-delay strong lensing.
+>
+> The body text below reflects the state of the framework through M5. The update blocks above document the full experimental program through M9. A comprehensive revision incorporating M6–M9 into the main text is planned for PACSeries v1.0.
 
 ---
 
