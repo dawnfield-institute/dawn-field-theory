@@ -1,0 +1,76 @@
+{
+  "T1": {
+    "test": "T1_gw_dispersion",
+    "E_gw170817_gev": 4e-22,
+    "delta_v_predicted": 1.073413145500322e-81,
+    "delta_v_bound": 3e-15,
+    "consistent": true,
+    "orders_below_bound": 66.44635434517046,
+    "is_constraining": "False",
+    "honest_note": "66 orders below bound \u2014 not constraining",
+    "E_detectable_eV": 6.687089932324822e+20,
+    "PASS": true
+  },
+  "T2": {
+    "test": "T2_minimum_bh_mass",
+    "M_min_planck": 2.618033988749895,
+    "expected_phi_squared": 2.618033988749895,
+    "match": "True",
+    "M_min_kg": 5.697978186270889e-08,
+    "above_planck_mass": true,
+    "reasonable_kg": true,
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3_no_contradictions",
+    "checks": [
+      {
+        "name": "Hawking T*M",
+        "pass": true,
+        "value": 0.039788735772973836
+      },
+      {
+        "name": "Gravity depth = 183",
+        "pass": true,
+        "value": 183
+      },
+      {
+        "name": "EM depth = 13",
+        "pass": true,
+        "value": 13
+      },
+      {
+        "name": "Gravity weaker than EM",
+        "pass": "True",
+        "value": "alpha_grav/alpha_em = 2.97e-36"
+      },
+      {
+        "name": "Singularity resolved",
+        "pass": "True",
+        "value": 187.15694271695372
+      },
+      {
+        "name": "Page curve peak at 0.5",
+        "pass": true,
+        "value": 0.5
+      }
+    ],
+    "n_pass": 6,
+    "n_total": 6,
+    "all_pass": true,
+    "PASS": true
+  },
+  "T4": {
+    "test": "T4_fibonacci_gw_spectrum",
+    "f_planck_hz": 2.952351221647138e+42,
+    "n_total_modes": 200,
+    "n_lisa_modes": 0,
+    "n_ligo_modes": 13,
+    "all_phi_ratio": true,
+    "is_discrete": true,
+    "has_observable_modes": "True",
+    "PASS": true
+  },
+  "score": 4,
+  "total": 4
+}

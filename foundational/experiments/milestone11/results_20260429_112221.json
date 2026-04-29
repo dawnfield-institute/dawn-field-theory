@@ -1,0 +1,56 @@
+{
+  "T1": {
+    "test": "T1_spin_2",
+    "legendre_coefficients": [
+      -0.04863267791677182,
+      0.0,
+      0.6666666666666663,
+      3.292236230444824e-17,
+      6.663936670464127e-17
+    ],
+    "monopole_fraction": 0.005293389975652848,
+    "dipole_fraction": 0.0,
+    "quadrupole_fraction": 0.9947066100243471,
+    "spin_2_dominant": "True",
+    "monopole_suppressed": "True",
+    "dipole_suppressed": "True",
+    "PASS": "True"
+  },
+  "T2": {
+    "test": "T2_massless",
+    "m_cascade_planck": 0.0,
+    "m_ligo_planck": 1.0409836065573771e-51,
+    "consistent_with_ligo": true,
+    "deviation_from_massless": 0.0,
+    "is_exactly_massless": "True",
+    "pac_forbids_mass": true,
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3_coupling",
+    "depth": 183,
+    "alpha_grav": 5.691959932062575e-39,
+    "log10_alpha": -38.244738165746114,
+    "near_10_minus_38": "True",
+    "depth_match": "False",
+    "depth_is_183": true,
+    "PASS": "False"
+  },
+  "T4": {
+    "test": "T4_polarizations",
+    "n_symmetric_tensor": 10,
+    "n_gauge": 4,
+    "n_removed": 8,
+    "n_physical_standard": 2,
+    "exactly_2_standard": true,
+    "n_physical_cascade": 2,
+    "exactly_2_cascade": true,
+    "models_agree": true,
+    "plus_traceless": "True",
+    "cross_traceless": "True",
+    "orthogonal": "True",
+    "PASS": true
+  },
+  "score": 3,
+  "total": 4
+}

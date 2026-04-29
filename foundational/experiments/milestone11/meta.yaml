@@ -1,0 +1,65 @@
+schema_version: "2.0"
+description: >
+  Milestone 11: Quantum Gravity as Response-Time Crossover.
+  13 experiments across 5 blocks. Quantum gravity is NOT "quantize GR" — it is
+  the regime where gravitational response-time is exceeded by perturbation timescale.
+  The crossover reproduces the Planck scale from DFT principles (cascade depth-183,
+  gravity-time duality, MVAE), not dimensional analysis. Extends exp_33 black hole
+  cascade into quantum regime, derives graviton from cascade density quantization,
+  resolves singularity via cascade saturation, and produces genuine irreversibility
+  from stochastic Landauer erasure.
+semantic_scope: "research"
+proficiency_level: "research"
+version: "1.0.0"
+status: "active"
+date_created: "2026-04-29"
+date_updated: "2026-04-29"
+
+files:
+  - "[README.md]": "Thesis, experiment index, scorecard, predictions registry"
+  - "[SYNTHESIS.md]": "Detailed findings, honest failures, derivation chain"
+
+child_directories:
+  - name: "core"
+    description: "Shared library (quantum_gravity.py) extending M10's foundations.py with response-time, cascade saturation, stochastic cascade, graviton infrastructure"
+  - name: "scripts"
+    description: "13 experiment scripts (exp_01 through exp_13)"
+  - name: "results"
+    description: "JSON output from experiment runs"
+  - name: "journals"
+    description: "Session research logs"
+
+estimated_context_weight: 0.95
+validation_type: "computational"
+
+key_results:
+  - "Score: TBD/52 across 13 experiments in 5 blocks"
+  - "7 genuine predictions (P), 2 postdictions (D), 3 consistency checks (C)"
+  - "Planck scale derived from response-time crossover at cascade depth-183"
+
+dependencies:
+  internal:
+    - "../milestone10/": "LawNegotiator, SelfApplicator, response times, foundations"
+    - "../milestone9/": "Cascade clock, Xi decomposition, PAC cascade"
+    - "../milestone8/": "SM constants, Fibonacci, PredictionRegistry"
+    - "../exp_33_black_hole_cascade/": "BH cascade foundation (4/4)"
+    - "../minimum_actualization_resolution/": "MVAE, Planck derivation (40/40)"
+    - "../exp_32_geometric_primacy/": "Gravity-time duality (5/5)"
+  external:
+    - "numpy>=1.24"
+    - "scipy>=1.10"
+
+tags:
+  - milestone-11
+  - quantum-gravity
+  - response-time
+  - planck-scale
+  - black-hole
+  - hawking-radiation
+  - graviton
+  - cascade-saturation
+  - stochastic-cascade
+  - irreversibility
+  - page-curve
+  - planck-star
+  - DESI

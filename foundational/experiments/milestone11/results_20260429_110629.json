@@ -1,0 +1,146 @@
+{
+  "T1": {
+    "test": "T1_saturation_radius",
+    "masses": [
+      {
+        "M_solar": 1e-08,
+        "r_s_meters": 2.9539779243533933e-05,
+        "r_min_meters": 3.5369480639542685e-65,
+        "r_min_over_r_s": 1.1973508788927337e-60,
+        "r_min_planck_units": 2.1887054851202157e-30
+      },
+      {
+        "M_solar": 0.0001,
+        "r_s_meters": 0.29539779243533937,
+        "r_min_meters": 3.536948063954268e-69,
+        "r_min_over_r_s": 1.1973508788927335e-68,
+        "r_min_planck_units": 2.1887054851202155e-34
+      },
+      {
+        "M_solar": 1.0,
+        "r_s_meters": 2953.9779243533935,
+        "r_min_meters": 3.53694806395427e-73,
+        "r_min_over_r_s": 1.197350878892734e-76,
+        "r_min_planck_units": 2.1887054851202166e-38
+      },
+      {
+        "M_solar": 10.0,
+        "r_s_meters": 29539.779243533936,
+        "r_min_meters": 3.536948063954269e-74,
+        "r_min_over_r_s": 1.1973508788927337e-78,
+        "r_min_planck_units": 2.188705485120216e-39
+      },
+      {
+        "M_solar": 1000000.0,
+        "r_s_meters": 2953977924.353393,
+        "r_min_meters": 3.536948063954269e-79,
+        "r_min_over_r_s": 1.197350878892734e-88,
+        "r_min_planck_units": 2.1887054851202162e-44
+      },
+      {
+        "M_solar": 1000000000.0,
+        "r_s_meters": 2953977924353.3936,
+        "r_min_meters": 3.53694806395427e-82,
+        "r_min_over_r_s": 1.197350878892734e-94,
+        "r_min_planck_units": 2.1887054851202166e-47
+      }
+    ],
+    "all_derivable": true,
+    "ratio_decreases_with_mass": true,
+    "PASS": true
+  },
+  "T2": {
+    "test": "T2_non_singular",
+    "all_finite": "True",
+    "K_at_center": 187.15694271695372,
+    "K_finite_at_center": "True",
+    "interior_K_constant": "True",
+    "r_min_planck": 2.1887054851202166e-38,
+    "r_s_planck": 1.827956636357298e+38,
+    "PASS": "True"
+  },
+  "T3": {
+    "test": "T3_matches_schwarzschild",
+    "deviations": [
+      {
+        "r_planck": 2.1887054851202165e-37,
+        "r_over_r_min": 10.0,
+        "g_tt_modified": -8.351770710059221e+74,
+        "g_tt_schwarzschild": -8.351770710059221e+74,
+        "relative_deviation": 0.0
+      },
+      {
+        "r_planck": 2.1887054851202166e-36,
+        "r_over_r_min": 100.0,
+        "g_tt_modified": -8.35177071005922e+73,
+        "g_tt_schwarzschild": -8.35177071005922e+73,
+        "relative_deviation": 0.0
+      },
+      {
+        "r_planck": 9.13978318178649e+37,
+        "r_over_r_min": 4.17588535502961e+75,
+        "g_tt_modified": -1.0,
+        "g_tt_schwarzschild": -1.0,
+        "relative_deviation": 0.0
+      },
+      {
+        "r_planck": 3.655913272714596e+38,
+        "r_over_r_min": 1.670354142011844e+76,
+        "g_tt_modified": 0.5,
+        "g_tt_schwarzschild": 0.5,
+        "relative_deviation": 0.0
+      },
+      {
+        "r_planck": 1.8279566363572982e+39,
+        "r_over_r_min": 8.351770710059221e+76,
+        "g_tt_modified": 0.9,
+        "g_tt_schwarzschild": 0.9,
+        "relative_deviation": 0.0
+      }
+    ],
+    "far_field_match": true,
+    "PASS": true
+  },
+  "T4": {
+    "test": "T4_area_scaling",
+    "info_values": [
+      {
+        "M_solar": 0.1,
+        "info": 3.8377575549264828e+112,
+        "log_M": -1.0,
+        "log_info": 112.58407753530737
+      },
+      {
+        "M_solar": 1.0,
+        "info": 3.837757554926483e+115,
+        "log_M": 0.0,
+        "log_info": 115.58407753530737
+      },
+      {
+        "M_solar": 10.0,
+        "info": 3.837757554926483e+118,
+        "log_M": 1.0,
+        "log_info": 118.58407753530737
+      },
+      {
+        "M_solar": 100.0,
+        "info": 3.837757554926483e+121,
+        "log_M": 2.0,
+        "log_info": 121.58407753530737
+      },
+      {
+        "M_solar": 1000.0,
+        "info": 3.8377575549264813e+124,
+        "log_M": 3.0,
+        "log_info": 124.58407753530737
+      }
+    ],
+    "slope": 2.9999999999999805,
+    "r2": 1.0,
+    "is_area_scaling": "False",
+    "not_volume_scaling": "False",
+    "PASS": "False"
+  },
+  "score": 3,
+  "total": 4
+}

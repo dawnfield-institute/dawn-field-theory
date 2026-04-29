@@ -91,6 +91,7 @@ See `STANDARDS.md` at workspace root for full spec.
 ## Current State
 
 - **104 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6 + 10 in M7 + 10 in M8 + 10 in M9)
+  - M11 score: 52/52 (100%) after hardening cycle (52→49→52)
   - M6 score: 27/40 → 35/40 (88%) after strengthening exp_02, 03, 08, 09
 - **Milestones 1-9** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions, infodynamic mechanism)
 - **Milestone 5** complete — SM completion & simulator validation (13 experiments)

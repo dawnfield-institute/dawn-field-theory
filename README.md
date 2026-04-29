@@ -219,6 +219,7 @@ Maintained by **The Dawn Field Institute**. See [MISSION.md](./MISSION.md) for i
 **Community Channels:**
 - [Visit Dawn Field website for more info](https://dawnfield.ca/)
 - **Discord** (canonical announcements): [https://discord.gg/bR8mrbHP](https://discord.gg/bR8mrbHP)
+- **Twitter/X**: [https://x.com/lornecodes](https://x.com/lornecodes)
 - **Follow the author on Medium**: [https://medium.com/@lornecodes](https://medium.com/@lornecodes)
 
 **Project Governance:** See [MISSION.md](./MISSION.md) for institutional guidelines.

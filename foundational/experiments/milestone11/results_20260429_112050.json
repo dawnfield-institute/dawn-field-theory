@@ -1,0 +1,44 @@
+{
+  "T1": {
+    "test": "T1_fibonacci_spectrum",
+    "n_levels": 30,
+    "mean_spacing_ratio": 1.6180339887498947,
+    "std_spacing_ratio": 4.538936852166976e-16,
+    "all_ratios_phi": true,
+    "all_levels_geometric": true,
+    "series_converges": "True",
+    "PASS": true
+  },
+  "T2": {
+    "test": "T2_propagator",
+    "low_k_matches_1_over_k2": false,
+    "high_k_suppressed": "False",
+    "low_k_slope": -2.0000005689061298,
+    "slope_is_minus_2": "True",
+    "L_MVAE": 1.6294456766354646,
+    "PASS": false
+  },
+  "T3": {
+    "test": "T3_loop_finiteness",
+    "unreg_diverges": "True",
+    "unreg_ratio": 1000100010001.0001,
+    "reg_converges": "False",
+    "reg_ratio": 0.3402875590683033,
+    "reg_value": 0.5000405832818005,
+    "expected_reg": 1.3275466065530035,
+    "reg_match": "False",
+    "PASS": "False"
+  },
+  "T4": {
+    "test": "T4_dispersion",
+    "beta": -0.18831730559662166,
+    "low_k_standard": "True",
+    "low_k_max_deviation": 8.189439776766496e-08,
+    "mid_k_small_correction": "True",
+    "correction_slope": 2.0000149058916175,
+    "quadratic_correction": "True",
+    "PASS": "True"
+  },
+  "score": 2,
+  "total": 4
+}

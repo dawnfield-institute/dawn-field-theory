@@ -1,0 +1,76 @@
+{
+  "T1": {
+    "test": "T1_TM_constant",
+    "mean_TM": 0.039788735772973836,
+    "expected_TM": 0.039788735772973836,
+    "relative_error": 0.0,
+    "cv": 7.79911105812739e-17,
+    "n_masses": 25,
+    "mass_range_orders": 12.0,
+    "PASS": "True"
+  },
+  "T2": {
+    "test": "T2_coefficient_geometry",
+    "solid_angle": 12.566370614359172,
+    "round_trip": 2,
+    "geometric_denominator": 25.132741228718345,
+    "coefficient": 0.039788735772973836,
+    "expected": 0.039788735772973836,
+    "match": true,
+    "T_at_planck_mass": 0.039788735772973836,
+    "expected_T_at_planck_mass": 0.039788735772973836,
+    "computed_error": 0.0,
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3_no_pac_no_radiation",
+    "pac_final_potential": 3.553186370096328e-11,
+    "no_pac_final_potential": 8.881784197001252e-16,
+    "pac_radiated": 0.9999999999644681,
+    "pac_has_radiation": "True",
+    "pac_much_larger_residual": "True",
+    "T_pac": 0.3819660112501052,
+    "T_no_pac": 0.5,
+    "pac_ratio_is_phi_squared": "True",
+    "PASS": "True"
+  },
+  "T4": {
+    "test": "T4_micro_bh_correction",
+    "corrections": {
+      "solar": {
+        "M_solar": 1.0,
+        "T_H": 4.353823899110938e-40,
+        "T_corrected": 4.353823899110938e-40,
+        "correction_factor": 1.0,
+        "r_min_over_r_s": 1.197350878892734e-76
+      },
+      "1000_solar": {
+        "M_solar": 1000.0,
+        "T_H": 4.353823899110937e-43,
+        "T_corrected": 4.353823899110937e-43,
+        "correction_factor": 1.0,
+        "r_min_over_r_s": 1.1973508788927337e-82
+      },
+      "micro_100": {
+        "M_solar": 1.0942352941176471e-36,
+        "T_H": 0.00039788735772973834,
+        "T_corrected": 0.00039788735375086474,
+        "correction_factor": 0.99999999,
+        "r_min_over_r_s": 9.999999999999999e-05
+      },
+      "micro_10": {
+        "M_solar": 1.0942352941176471e-37,
+        "T_H": 0.0039788735772973835,
+        "T_corrected": 0.0039784756899396536,
+        "correction_factor": 0.9999,
+        "r_min_over_r_s": 0.01
+      }
+    },
+    "solar_negligible": false,
+    "micro_significant": false,
+    "correction_ordered": true,
+    "PASS": false
+  },
+  "score": 3,
+  "total": 4
+}

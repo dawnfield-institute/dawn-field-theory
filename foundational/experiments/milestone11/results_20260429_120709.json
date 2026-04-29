@@ -1,0 +1,138 @@
+{
+  "T1": {
+    "test": "T1_late_time_convergence",
+    "comparisons": [
+      {
+        "z": 0.1,
+        "t_lookback_gyr": 1.3517231364108369,
+        "N_standard": 1.9859158448615903,
+        "N_corrected": 1.9859158448615903,
+        "relative_diff": 0.0
+      },
+      {
+        "z": 0.5,
+        "t_lookback_gyr": 5.216193717294944,
+        "N_standard": 4.792139043824509,
+        "N_corrected": 4.792139043824509,
+        "relative_diff": 0.0
+      },
+      {
+        "z": 1.0,
+        "t_lookback_gyr": 7.959649525829516,
+        "N_standard": 5.670373917686058,
+        "N_corrected": 5.670373917686058,
+        "relative_diff": 0.0
+      },
+      {
+        "z": 2.0,
+        "t_lookback_gyr": 10.534259954069391,
+        "N_standard": 6.252753265648592,
+        "N_corrected": 6.252753265648592,
+        "relative_diff": 0.0
+      },
+      {
+        "z": 5.0,
+        "t_lookback_gyr": 12.63884266501079,
+        "N_standard": 6.631260225266806,
+        "N_corrected": 6.631260225266806,
+        "relative_diff": 0.0
+      },
+      {
+        "z": 10.0,
+        "t_lookback_gyr": 13.337749123144725,
+        "N_standard": 6.743110077733212,
+        "N_corrected": 6.743110077733212,
+        "relative_diff": 0.0
+      }
+    ],
+    "late_time_match": true,
+    "all_corrections_tiny": true,
+    "PASS": true
+  },
+  "T2": {
+    "test": "T2_wa_direction",
+    "alpha_results": [
+      {
+        "alpha": 0.5,
+        "w0_standard": -0.9405783200827025,
+        "wa_standard": -0.0697996315840553,
+        "w0_corrected": -0.9405783200827025,
+        "wa_corrected": -0.0697996315840553,
+        "wa_more_negative": "True"
+      },
+      {
+        "alpha": 1.0,
+        "w0_standard": -0.9405783200827025,
+        "wa_standard": -0.0697996315840553,
+        "w0_corrected": -0.9405783200827025,
+        "wa_corrected": -0.0697996315840553,
+        "wa_more_negative": "True"
+      },
+      {
+        "alpha": 2.0,
+        "w0_standard": -0.9405783200827025,
+        "wa_standard": -0.0697996315840553,
+        "w0_corrected": -0.9405783200827025,
+        "wa_corrected": -0.0697996315840553,
+        "wa_more_negative": "True"
+      },
+      {
+        "alpha": 3.0,
+        "w0_standard": -0.9405783200827025,
+        "wa_standard": -0.0697996315840553,
+        "w0_corrected": -0.9405783200827025,
+        "wa_corrected": -0.0697996315840553,
+        "wa_more_negative": "True"
+      }
+    ],
+    "wa_standard": -0.0697996315840553,
+    "wa_desi_target": -0.75,
+    "wa_negative": true,
+    "direction_correct": true,
+    "honest_note": "QG corrections at observable z are negligibly small (t_Planck/t ~ 10^-60). DESI tension requires other physics.",
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3_preregistered_w",
+    "predictions": [
+      {
+        "z": 0.5,
+        "w_standard": -0.9667814313887076,
+        "w_corrected": -0.9667814313887076,
+        "difference": 0.0,
+        "uncertainty_estimate": 0.05
+      },
+      {
+        "z": 1.0,
+        "w_standard": -0.9782308896484112,
+        "w_corrected": -0.9782308896484112,
+        "difference": 0.0,
+        "uncertainty_estimate": 0.05
+      },
+      {
+        "z": 2.0,
+        "w_standard": -0.9835513372896386,
+        "w_corrected": -0.9835513372896386,
+        "difference": 0.0,
+        "uncertainty_estimate": 0.05
+      }
+    ],
+    "physically_reasonable": true,
+    "registry_count": 3,
+    "PASS": true
+  },
+  "T4": {
+    "test": "T4_s8_stability",
+    "s8_standard": 0.7688047045356915,
+    "s8_corrected": 0.7688047045356915,
+    "s8_observed": 0.759,
+    "s8_planck": 0.832,
+    "tension_standard_sigma": 0.49023522678457443,
+    "tension_corrected_sigma": 0.49023522678457443,
+    "stable": "True",
+    "below_half_sigma": "True",
+    "PASS": "True"
+  },
+  "score": 4,
+  "total": 4
+}

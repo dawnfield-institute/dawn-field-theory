@@ -1,0 +1,93 @@
+{
+  "T1": {
+    "test": "T1_four_route_convergence",
+    "routes": {
+      "landauer": {
+        "l_planck_units": 1.4426950408889634,
+        "prefactor": "1/ln(2) = 1.4427",
+        "fn_of_ln2": true
+      },
+      "heisenberg": {
+        "l_planck_units": 0.5,
+        "prefactor": "1/2",
+        "fn_of_ln2": true
+      },
+      "schwarzschild": {
+        "l_planck_units": 2.0,
+        "prefactor": "2",
+        "fn_of_ln2": true
+      },
+      "negotiation": {
+        "l_planck_units": 1.6294,
+        "prefactor": "1/(2*(1-ln(2))) = 1.6294",
+        "fn_of_ln2": true
+      }
+    },
+    "geometric_mean": 1.2382278353782612,
+    "spread_max_over_min": 4.0,
+    "pairwise_ratios": {
+      "landauer/heisenberg": 2.8853900817779268,
+      "landauer/schwarzschild": 0.7213475204444817,
+      "landauer/negotiation": 0.8854149017361995,
+      "heisenberg/schwarzschild": 0.25,
+      "heisenberg/negotiation": 0.30686142138210387,
+      "schwarzschild/negotiation": 1.2274456855284155
+    },
+    "converge_within_factor_4": "False",
+    "PASS": "False"
+  },
+  "T2": {
+    "test": "T2_pac_error_scaling",
+    "l_neg": 1.6294,
+    "alpha_fit": 2.0656149393602565e-16,
+    "alpha_target": 2.0,
+    "alpha_near_2": "False",
+    "r2": 0.37037037037037035,
+    "mean_error_above_lneg": 0.00010281786273875593,
+    "above_small": "True",
+    "PASS": "False"
+  },
+  "T3": {
+    "test": "T3_lneg_matches_mvae",
+    "l_neg": 1.6294,
+    "L_MVAE": 1.6294,
+    "l_mvae_formula": 1.6294456766354646,
+    "formula_consistent": "False",
+    "relative_error": 0.0,
+    "within_5pct": true,
+    "t_neg": 0.7213475204444817,
+    "T_MVAE": 0.7213475204444817,
+    "t_relative_error": 0.0,
+    "PASS": "False"
+  },
+  "T4": {
+    "test": "T4_prefactors_ln2_phi",
+    "route_1_landauer": {
+      "l": 1.4426950408889634,
+      "formula": "1/ln(2)",
+      "fn_ln2": "True"
+    },
+    "route_2_heisenberg": {
+      "l": 0.5,
+      "formula": "1/2",
+      "fn_ln2": true
+    },
+    "route_3_schwarzschild": {
+      "l": 2.0,
+      "formula": "2",
+      "fn_ln2": true
+    },
+    "route_4_negotiation": {
+      "l": 1.6294,
+      "formula": "1/(2*(1-ln(2)))",
+      "fn_ln2": "True"
+    },
+    "all_fn_of_ln2": "True",
+    "L_MVAE_vs_phi": 0.007024581269078607,
+    "near_phi_but_not_exact": "True",
+    "PASS": "True"
+  },
+  "score": 1,
+  "total": 4,
+  "pass_rate": 0.25
+}
