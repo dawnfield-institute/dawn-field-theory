@@ -26,6 +26,8 @@ experiment_suggestions:
 
 # CIMM Architecture and Modular AI Systems: Field-Based Compositional Intelligence
 
+> **Historical document from August 2025.** CIMM architecture has been superseded. The bridge between DFT and AI systems is now through GAIA (conservation bus architecture) and the fracton SDK. See `for_ai_labs.md` in the repo root for current AI relevance.
+
 **Authors:** Peter Groom  
 **Date:** August 19, 2025  
 **Version:** 1.0  

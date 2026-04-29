@@ -45,6 +45,8 @@ mathematical_framework:
 
 # TinyCIMM-Navier: Investigating Potential Macro-to-Micro Emergence Patterns as a Research Direction Toward Unified Complexity Theory
 
+> **Historical document from August 2025.** TinyCIMM/CIMM and SCBF architectures have been superseded by the PAC/SEC/MED framework. The core idea — macro-micro emergence duality — is now expressed through PAC conservation and cascade dynamics. For current state, see `dawn-field-theory.md` in the repo root.
+
 ## Abstract
 
 We explore the possibility that TinyCIMM-Navier neural architecture might demonstrate macro-to-micro emergence patterns that could represent a mathematical inverse to Symbolic Entropy Collapse (SEC) operations. Our computational experiments with turbulent breakthrough detection (4/4 success rate across test cases) suggest intriguing correspondence between macro fluid field structures and micro neural dynamics that warrants further investigation. While SEC operates through micro-actualization (∇_micro → Ψ_macro), our preliminary results indicate that TinyCIMM-Navier may exhibit macro-emergence behavior (∇_macro → Ψ_micro), potentially offering a pathway toward unified complexity theory. Through SCBF (Symbolic Collapse and Bifractal) neural dynamics integration and dashboard visualizations, we present computational evidence that macro field structures might constrain micro-level neural evolution. However, significant theoretical and mathematical development remains necessary to establish this as a complete framework for complexity unification. We invite the research community to investigate these promising initial findings and contribute to the substantial work required to validate and extend this approach.

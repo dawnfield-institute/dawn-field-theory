@@ -20,8 +20,10 @@ related_documents:
 ```
 # Reality as Herniation Precipitate: Quark Locking and the Crystallization of Dual Fields
 
-**Author:** Lorne  
-**Date:** 2025-04-17  
+> **Historical document from April 2025.** The "herniation" and "quark locking" terminology has been superseded by the PAC/SEC framework and cascade mechanism. For current state, see `dawn-field-theory.md` in the repo root.
+
+**Author:** Lorne
+**Date:** 2025-04-17
 **Framework:** Dawn Field Theory
 
 ---
