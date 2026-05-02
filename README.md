@@ -25,7 +25,7 @@ This repository supports structured, machine-readable exploration via directory-
 * [Two Axioms, One Derivation Chain](#-two-axioms-one-derivation-chain)
 * [Key Discovery: Universal 0.020 Hz Resonance](#-key-discovery-universal-0020-hz-resonance)
 * [Dawn Field Ecosystem](#-dawn-field-ecosystem)
-* [Theoretical Models](#-theoretical-models)
+* [Models](#-models)
 * [Project Structure](#-project-structure)
 * [Recommended Starting Points](#-recommended-starting-points)
 * [Publications](#-publications)
@@ -110,53 +110,28 @@ This framework is designed for testing. If any of the following are observed, th
 
 Dawn Field Theory is implemented across specialized repositories:
 
-### 🧠 [Dawn Models](https://github.com/dawnfield-institute/dawn-models)
-**Official model repository** with production-ready and experimental implementations:
-- **GAIA**: Next-generation field intelligence with unified complexity theory
-- **TinyCIMM Variants**: Mathematical reasoning (Euler), fluid dynamics (Navier), quantum analysis (Planck)
-- **SCBF Framework**: Symbolic Collapse Bifractal Framework for interpretability
-- **CIMM-Legacy**: Stable production implementation
-- **Dual Licensing**: AGPL-3.0 for research, Apache-2.0 for stable models
-
-### 🔧 [CIP Core](https://github.com/dawnfield-institute/cip-core)
-**Cognition Index Protocol** - Machine-readable navigation and semantic search:
-- Repository metadata automation
-- Semantic search and navigation
-- AI-enhanced documentation generation
-- Cross-repository linking and validation
-
 ### 💎 [Fracton](https://github.com/dawnfield-institute/fracton)
-**Infodynamics computational modeling language**:
-- Entropy-aware computation primitives
-- Recursive memory field modeling
-- Bifractal trace analysis
-- GPU-accelerated processing
+**Core math library** — PAC operators, recursive-core exports, Fibonacci arithmetic, conservation math. The computational backbone consumed by all experiments.
+
+### 🔧 [Reality Engine](https://github.com/dawnfield-institute/reality-engine)
+**GPU simulator** — Möbius topology, Poincaré activation, 18 operators. Implements DFT dynamics as a running simulation with emergent coupling constants.
+
+### 🧠 [Dawn Models](https://github.com/dawnfield-institute/dawn-models)
+**GAIA ML validation** — modular intelligence architecture built on PAC conservation. Validates DFT predictions in neural network training dynamics (phi-convergence in Pythia-70M, zero-backprop learning).
+
+### 🤖 [GRIM](https://github.com/dawnfield-institute/GRIM)
+**AI research companion** — Agent SDK, 34 skills, 38 MCP tools, WebSocket streaming. Manages experiments, vault operations, and research workflows.
 
 ---
 
-## 🧠 Theoretical Models
+## 🧠 Models
 
 *For implementation details, see the [Dawn Models repository](https://github.com/dawnfield-institute/dawn-models)*
 
-### GAIA: Next-Generation Field Intelligence
-GAIA (Generalized Architectures for Intelligent Actualization) represents the cutting edge of Dawn Field Theory implementation—a post-symbolic, post-QBE framework treating intelligence as emergent field balance between energy, information, entropy, and structure.
+### GAIA: Field-Native Intelligence
+GAIA (Generalized Architectures for Intelligent Actualization) treats intelligence as emergent field balance between energy, information, entropy, and structure. Learning without backpropagation — through PAC conservation dynamics. Phi-convergence appears naturally in activation ratios (validated in Pythia-70M at 143k checkpoints, p = 0.0014). 100% knowledge transfer, zero catastrophic forgetting.
 
 🌍 **Implementation**: [dawn-models/research/GAIA/](https://github.com/dawnfield-institute/dawn-models/tree/main/research/GAIA)
-
-### TinyCIMM: Minimalist Symbolic Cognition
-TinyCIMM is the newest, ultra-lightweight agentic model for symbolic cognition and recursive collapse. It demonstrates how minimal entropy-informed architectures can achieve adaptive learning, symbolic memory, and field-based intelligence.
-
-🧩 **Implementation**: [dawn-models/research/tinycimm/](https://github.com/dawnfield-institute/dawn-models/tree/main/research/tinycimm)
-
-### SCBF: Symbolic Collapse Bifractal Framework (XAI)
-SCBF is the explainable AI (XAI) suite for benchmarking symbolic collapse, transparency, and interpretability. It provides tools and protocols for visualizing collapse events, tracing entropy, and validating agentic decisions.
-
-📄 **Implementation**: [dawn-models/research/scbf/](https://github.com/dawnfield-institute/dawn-models/tree/main/research/scbf)
-
-### CIMM-Legacy: Production Implementation
-CIMM (Cosmic Information Mining Model) provides the stable, production-ready implementation of Dawn Field principles for commercial and enterprise use.
-
-🗃️ **Implementation**: [dawn-models/stable/cimm-legacy/](https://github.com/dawnfield-institute/dawn-models/tree/main/stable/cimm-legacy)
 
 ---
 
@@ -164,24 +139,25 @@ CIMM (Cosmic Information Mining Model) provides the stable, production-ready imp
 
 | Path                        | Purpose                                                                 |
 | --------------------------- | ----------------------------------------------------------------------- |
-| `foundational/docs/`        | Core theory, whitepapers, and preprint packages with code/data/figures  |
-| `foundational/experiments/` | 40+ experiment folders with scripts, results, and daily journals        |
-| `foundational/arithmetic/`  | PAC mathematical foundations                                            |
+| `foundational/experiments/` | 117+ experiments across 11 milestones — the main content                |
+| `foundational/docs/`        | Theory documents, preprint packages with code/data/figures              |
+| `foundational/arithmetic/`  | PACEngine — core mathematical tools and conservation math               |
+| `roadmaps/`                 | Current roadmap (M12 planning) and historical planning docs             |
+| `spikes/`                   | Exploratory work not yet promoted to experiments                        |
+| `blueprints/`               | Speculative applications (energy, nuclear containment)                  |
 | `citations/`                | DOI registry, contributor citations, and external references            |
-| `blueprints/`               | Experimental prototypes (energy, nuclear containment, AI detection)     |
-| `roadmaps/`                 | Strategic planning documents                                            |
-| `devkit/`                   | Development tools, compression, hashing, SDK                            |
 | `resources/`                | Publication registry and supplementary materials                        |
+| `tools/`                    | Utility scripts for repo maintenance                                    |
 
 ---
 
 ## 📚 Recommended Starting Points
 
-1. **[Infodynamics: The Hammer and the Glass →](./infodynamics.md)** - The foundational paradigm: collapse as creation
-2. **[Unified Evidence Map →](./foundational/docs/preprints/UNIFIED_EVIDENCE.md)** - Complete derivation chain with 170+ experiments
-3. **[PACSeries Papers →](https://zenodo.org/records/17295103)** - Latest breakthrough: 0.020 Hz universal frequency
-4. [Foundational Experiments →](./foundational/experiments/README.md) - 40+ experiment folders with scripts, results, journals
-5. [Full Theory Document →](./dawn-field-theory.md) - Dawn Field Theory in full
+1. **[Full Theory Document →](./dawn-field-theory.md)** - The framework, results, milestones, predictions, and honest limitations
+2. **[Infodynamics →](./infodynamics.md)** - The foundational paradigm: information as generator of structure
+3. **[Theory Map →](./THEORY_MAP.md)** - Navigate the derivation chain, find experiments by concept
+4. **[PACSeries Papers →](https://zenodo.org/records/17295103)** - Published papers with complete validation code
+5. [Foundational Experiments →](./foundational/experiments/README.md) - 117+ experiment folders with scripts, results, journals
 6. [Environment & Reproducibility →](./ENVIRONMENT.md)
 
 ---
@@ -228,33 +204,25 @@ Maintained by **The Dawn Field Institute**. See [MISSION.md](./MISSION.md) for i
 
 ## 🏷️ Topics
 
-### Themes
+### Core
 
-* `post-symbolic-ai` `infodynamics` `collapse-theory` `recursive-systems`
+* `infodynamics` `information-theory` `pac-conservation` `symbolic-entropy-collapse`
+* `golden-ratio` `fibonacci-arithmetic` `recursive-systems` `field-theory`
 
-### Foundations
+### Physics
 
-* `entropy` `quantum-potential` `superfluid-dynamics` `nonlinear-dynamics`
+* `theoretical-physics` `particle-physics` `cosmology` `quantum-gravity`
+* `standard-model` `fine-structure-constant` `dark-matter` `dark-energy`
 
-### Technical
+### Cross-Domain
 
-* `entropy-monitoring` `agent-based-modeling` `bayesian-optimization`
+* `nonlinear-dynamics` `chaos-theory` `cellular-automata` `number-theory`
+* `fluid-dynamics` `landauer-principle` `complex-systems`
 
-### Identity
+### AI & ML
 
-* `open-research` `dawn-collective` `early-stage`
-
-### Experimental
-
-* `dna-repair` `information-polarity` `hodge-collapse` `language-to-logic`
-* `pi-harmonics` `recursive-entropy` `recursive-gravity` `recursive-tree`
-* `symbolic-bifractal` `symbolic-pruning` `superfluid-collapse`
-
-### Discoverable Keywords
-
-* `symbolic-ai` `theoretical-physics` `entropy-theory` `complex-systems`
-* `symbolic-computation` `gpt-alignment` `collapse-logic` `ai-philosophy`
-* `information-theory` `nonlinear-field-models` `epistemology`
+* `machine-learning` `neural-network-validation` `field-native-intelligence`
+* `open-research` `reproducible-science`
 
 ---
 
@@ -278,13 +246,10 @@ All preprints are open access on Zenodo with complete code, data, and figures.
 ### Mathematical & Engineering
 - **[MED Navier-Stokes v2.0](https://zenodo.org/records/18087212)** — Bounded symbolic principles in fluid dynamics complexity
 - **[Recursive Mathematical Plasticity](https://zenodo.org/records/17041249)** — Entropy architecture for adaptive intelligence systems
-- **[QBE-PAC Unification](https://zenodo.org/records/18086941)** — The 0.02 Hz bridge between legacy and modern frameworks
 
-### Cognitive Architecture & AI
-- **[Cognition Index Protocol v2.0](https://zenodo.org/records/17024220)** — Demonstrable machine comprehension through structured repository intelligence
-- **[Symbolic Cognition & Interpretability](https://zenodo.org/records/17024098)** — Formal framework for bifractal AI diagnostics
-- **[Human-Agent Resonance](https://zenodo.org/records/17023921)** — Framework for human-agent co-computational ecology
+### AI & Applications
 - **[GAIA Field-Native Intelligence](https://zenodo.org/records/18086999)** — Learning without backpropagation through physics-based dynamics
+- **[Human-Agent Resonance](https://zenodo.org/records/17023921)** — Framework for human-agent co-computational ecology
 
 > Full metadata: [`citations/doi_registry.yaml`](./citations/doi_registry.yaml) · [`resources/publications_registry.yaml`](./resources/publications_registry.yaml)
 
@@ -306,12 +271,10 @@ All rights reserved under AGPL-3.0 + Epistemic Constraint Framework
 
 
 
-information conservation, potential-actualization conservation, PAC theory, 
-Dawn Field Theory, information geometry, E=mc2, embedding spaces, 
-semantic amplification, information physics, Noether theorem, 
-symbolic entropy collapse, macro emergence dynamics, LLM physics, 
-model-specific constants, information relativity, collapse irreversibility, 
-Landauer principle, fractal dimension, hierarchical decomposition, 
-geometric validation, conservation laws, emergence, consciousness, 
-artificial intelligence, machine learning interpretability, 
-transfer learning, information theory, computational physics
+information conservation, potential-actualization conservation, PAC theory,
+Dawn Field Theory, information geometry, infodynamics, information physics,
+symbolic entropy collapse, macro emergence dynamics, Fibonacci arithmetic,
+golden ratio, fine structure constant, Landauer principle, cascade dynamics,
+conservation laws, emergence, recursive balance field, quantum gravity,
+artificial intelligence, machine learning, field-native intelligence,
+information theory, computational physics, cosmological constant
