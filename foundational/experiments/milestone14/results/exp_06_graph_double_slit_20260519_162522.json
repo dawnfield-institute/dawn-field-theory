@@ -1,0 +1,163 @@
+{
+  "experiment": "exp_06_graph_double_slit",
+  "milestone": 14,
+  "block": "C",
+  "results": {
+    "T1": {
+      "test": "T1_two_path_interference",
+      "results_per_phase": [
+        {
+          "phase": 0.0,
+          "phase_pi": 0.0,
+          "p_quantum": 1.9999999999999996,
+          "p_classical": 0.9999999999999998,
+          "interference_term": 0.9999999999999998,
+          "has_interference": true
+        },
+        {
+          "phase": 0.7853981633974483,
+          "phase_pi": 0.25,
+          "p_quantum": 1.7071067811865477,
+          "p_classical": 1.0,
+          "interference_term": 0.7071067811865477,
+          "has_interference": true
+        },
+        {
+          "phase": 1.5707963267948966,
+          "phase_pi": 0.5,
+          "p_quantum": 0.9999999999999998,
+          "p_classical": 0.9999999999999998,
+          "interference_term": 0.0,
+          "has_interference": false
+        },
+        {
+          "phase": 2.356194490192345,
+          "phase_pi": 0.75,
+          "p_quantum": 0.2928932188134525,
+          "p_classical": 0.9999999999999998,
+          "interference_term": -0.7071067811865472,
+          "has_interference": true
+        },
+        {
+          "phase": 3.141592653589793,
+          "phase_pi": 1.0,
+          "p_quantum": 7.498798913309285e-33,
+          "p_classical": 0.9999999999999998,
+          "interference_term": -0.9999999999999998,
+          "has_interference": true
+        }
+      ],
+      "has_interference": true,
+      "max_constructive": true,
+      "max_destructive": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_which_path_destroys_interference",
+      "theta": 1.0471975511965976,
+      "vertex_probs_superposition": [
+        0.16666666666666666,
+        0.5000000000000001,
+        0.16666666666666666,
+        0.16666666666666666
+      ],
+      "vertex_probs_classical": [
+        0.16666666666666669,
+        0.5000000000000001,
+        0.16666666666666669,
+        0.16666666666666669
+      ],
+      "interference_term": [
+        -2.7755575615628914e-17,
+        0.0,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "max_interference": 2.7755575615628914e-17,
+      "has_interference": false,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_topology_determines_interference",
+      "results_by_type": {
+        "A_4_chain": {
+          "n_orbits": 2,
+          "orbit_sizes": [
+            2,
+            2
+          ],
+          "asymmetry": 1.0,
+          "max_interference": 5.551115123125783e-17,
+          "has_interference": false,
+          "interference_pattern": [
+            5.551115123125783e-17,
+            0.0,
+            0.0,
+            5.551115123125783e-17
+          ]
+        },
+        "D_4_star": {
+          "n_orbits": 2,
+          "orbit_sizes": [
+            3,
+            1
+          ],
+          "asymmetry": 3.0,
+          "max_interference": 2.7755575615628914e-17,
+          "has_interference": false,
+          "interference_pattern": [
+            -2.7755575615628914e-17,
+            0.0,
+            -2.7755575615628914e-17,
+            -2.7755575615628914e-17
+          ]
+        }
+      },
+      "both_interfere": false,
+      "d4_stronger": false,
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_visibility_vs_deformation_rate",
+      "results_by_type": {
+        "A_5": {
+          "n_orbits": 3,
+          "max_interference": 5.551115123125783e-17,
+          "max_deformation_rate": 1.5307337294603593
+        },
+        "A_7": {
+          "n_orbits": 4,
+          "max_interference": 5.551115123125783e-17,
+          "max_deformation_rate": 1.0909460598144491
+        },
+        "D_4": {
+          "n_orbits": 2,
+          "max_interference": 2.7755575615628914e-17,
+          "max_deformation_rate": 2.0000000000000004
+        },
+        "D_6": {
+          "n_orbits": 5,
+          "max_interference": 0.0,
+          "max_deformation_rate": 1.4839275686054516
+        },
+        "E_6": {
+          "n_orbits": 4,
+          "max_interference": 5.551115123125783e-17,
+          "max_deformation_rate": 1.0352761804100836
+        }
+      },
+      "correlation": -0.4896091180744738,
+      "strong_correlation": false,
+      "PASS": false
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": false,
+    "T3": false,
+    "T4": false
+  },
+  "score": "1/4",
+  "n_pass": 1,
+  "n_total": 4
+}

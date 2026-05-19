@@ -1,0 +1,27 @@
+schema: "2.0"
+id: milestone14
+title: "Milestone 14: Quantum Mechanics as Complement-Indeterminacy"
+domain: physics
+status: active
+confidence: 0.7
+created: "2026-05-19"
+tags:
+  - quantum mechanics
+  - complement indeterminacy
+  - orbit hilbert space
+  - born rule
+  - interference
+  - uncertainty
+  - gauge structure
+  - representation theory
+dependencies:
+  - milestone13
+  - milestone12
+  - milestone11
+child_directories:
+  core:
+    description: "Shared quantum_complement.py module"
+  scripts:
+    description: "11 experiments (exp_01 through exp_11)"
+  results:
+    description: "Timestamped JSON outputs"

@@ -94,8 +94,9 @@ See `STANDARDS.md` at workspace root for full spec.
   - M11 score: 52/52 (100%) after hardening cycle (52→49→52)
   - M12 score: 49/52 (94%) — connection as primitive, ADE geometry, Lorentz derivation
   - M13 score: 48/52 core (92%) + 5/16 investigation = 53/68 (78%) after M13.5 stress testing + refinement. PSD degeneracy proven fundamental (exp_16: 0/4, no invariant metric can fix it). Random graph paradox partially explained (exp_17: 2/4, density + spectral radius). 7 honest failures total.
+  - M14 score: 40/44 (91%) — quantum mechanics as complement-indeterminacy. Orbit Hilbert space resolves PSD. D_4 (S_3) uniquely non-abelian: only ADE type with genuine quantum uncertainty. Born rule from orbit measure, interference from SEC complexification, entanglement from product graphs. 12 predictions, 4 honest failures (algebraic not positional).
   - M6 score: 27/40 → 35/40 → 34/40 (85%) after v0.3 hardening cycle
-- **Milestones 1-13** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions, infodynamic mechanism, symmetry self-application, quantum gravity, connection primitive, identity as complement)
+- **Milestones 1-14** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions, infodynamic mechanism, symmetry self-application, quantum gravity, connection primitive, identity as complement, quantum mechanics)
 - **Milestone 5** complete — SM completion & simulator validation (13 experiments)
   - Higgs mass 83 ppm (lambda = phi/4pi), PMNS < 0.3 deg, sin^2(theta_W) = tan(theta_C) = 3/13
   - De-actualization completes PAC cycle, 24% scorecard improvement

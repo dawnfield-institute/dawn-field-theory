@@ -1,0 +1,161 @@
+{
+  "experiment": "exp_07_noncommuting_observables_d4",
+  "milestone": 14,
+  "block": "D",
+  "results": {
+    "T1": {
+      "test": "T1_d4_aut_is_s3",
+      "n_automorphisms": 6,
+      "n_conjugacy_classes": 3,
+      "class_sizes": [
+        1,
+        2,
+        3
+      ],
+      "is_order_6": true,
+      "has_3_classes": true,
+      "correct_sizes": true,
+      "closure_check": true,
+      "has_identity": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_noncommuting_operators",
+      "found_noncommuting": true,
+      "max_commutator_norm": 2.449489742783178,
+      "n_pairs": 15,
+      "n_noncommuting": 9,
+      "nc_measure": 1.2247448713915892,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_abelian_commuting",
+      "results_by_type": {
+        "A_3": {
+          "n_automorphisms": 2,
+          "all_commute": true,
+          "nc_measure": 0.0,
+          "PASS": true
+        },
+        "A_5": {
+          "n_automorphisms": 2,
+          "all_commute": true,
+          "nc_measure": 0.0,
+          "PASS": true
+        },
+        "A_7": {
+          "n_automorphisms": 2,
+          "all_commute": true,
+          "nc_measure": 0.0,
+          "PASS": true
+        },
+        "E_6": {
+          "n_automorphisms": 2,
+          "all_commute": true,
+          "nc_measure": 0.0,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_d4_only_nonabelian",
+      "nonabelian_types": [
+        "D_4"
+      ],
+      "only_d4": true,
+      "results_by_type": {
+        "A_1": {
+          "n_automorphisms": 1,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "A_2": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "A_3": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "A_4": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "A_5": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "A_6": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "A_7": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "A_8": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "D_4": {
+          "n_automorphisms": 6,
+          "nc_measure": 1.2247448713915892,
+          "is_nonabelian": true
+        },
+        "D_5": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "D_6": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "D_7": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "D_8": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "E_6": {
+          "n_automorphisms": 2,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "E_7": {
+          "n_automorphisms": 1,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        },
+        "E_8": {
+          "n_automorphisms": 1,
+          "nc_measure": 0.0,
+          "is_nonabelian": false
+        }
+      },
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}
