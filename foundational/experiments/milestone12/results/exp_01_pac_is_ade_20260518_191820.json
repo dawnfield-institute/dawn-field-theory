@@ -1,0 +1,147 @@
+{
+  "experiment": "exp_01_pac_is_ade",
+  "milestone": "milestone12",
+  "block": "A",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_spectral_radius_is_phi",
+      "pac_transfer_eigenvalues": [
+        1.618033988749895,
+        -0.6180339887498948
+      ],
+      "pac_spectral_radius": 1.618033988749895,
+      "phi": 1.618033988749895,
+      "pac_matches_phi": true,
+      "pac_matches_phi_error": 0.0,
+      "a_n_spectral_radii": {
+        "2": 1.0,
+        "5": 1.732050807568878,
+        "10": 1.9189859472289947,
+        "20": 1.977661652450257,
+        "50": 1.9962066574740882,
+        "100": 1.9990325645839762
+      },
+      "phi_split_conservation_error": 1.1102230246251565e-16,
+      "note": "PAC transfer matrix [[1,1],[1,0]] has spectral radius = phi exactly. A_n adjacency spectral radius -> 2, but PAC recursion IS the Fibonacci eigenvalue problem living in A-type algebra.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_pac_conservation_is_connection_count",
+      "by_depth": {
+        "3": {
+          "level_sums": [
+            1.0,
+            0.9999999999999999,
+            0.9999999999999997,
+            0.9999999999999996
+          ],
+          "max_level_error": 4.440892098500626e-16,
+          "n_edges": 14,
+          "expected_edges": 14,
+          "edges_match": true,
+          "pac_conserved": true
+        },
+        "5": {
+          "level_sums": [
+            1.0,
+            0.9999999999999999,
+            0.9999999999999997,
+            0.9999999999999996,
+            0.9999999999999998,
+            0.9999999999999993
+          ],
+          "max_level_error": 6.661338147750939e-16,
+          "n_edges": 62,
+          "expected_edges": 62,
+          "edges_match": true,
+          "pac_conserved": true
+        },
+        "7": {
+          "level_sums": [
+            1.0,
+            0.9999999999999999,
+            0.9999999999999997,
+            0.9999999999999996,
+            0.9999999999999998,
+            0.9999999999999993,
+            0.9999999999999989,
+            0.9999999999999973
+          ],
+          "max_level_error": 2.6645352591003757e-15,
+          "n_edges": 254,
+          "expected_edges": 254,
+          "edges_match": true,
+          "pac_conserved": true
+        },
+        "10": {
+          "level_sums": [
+            1.0,
+            0.9999999999999999,
+            0.9999999999999997,
+            0.9999999999999996,
+            0.9999999999999998,
+            0.9999999999999993,
+            0.9999999999999989,
+            0.9999999999999973,
+            0.9999999999999953,
+            0.9999999999999974,
+            1.0000000000000075
+          ],
+          "max_level_error": 7.549516567451064e-15,
+          "n_edges": 2046,
+          "expected_edges": 2046,
+          "edges_match": true,
+          "pac_conserved": true
+        }
+      },
+      "all_pac_conserved": true,
+      "all_edges_match": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_cartan_eigenvalues",
+      "A1_cartan_eigenvalues": [
+        2.0
+      ],
+      "A2_cartan_eigenvalues": [
+        1.0,
+        3.0
+      ],
+      "A2_eigenvalue_ratio": 3.0,
+      "A2_ratio_is_F4": true,
+      "An_eigenvalue_ratios": {
+        "1": 1.0,
+        "2": 3.0,
+        "3": 5.82842712474619,
+        "4": 9.472135954999587,
+        "5": 13.928203230275537,
+        "6": 19.195669358089205,
+        "7": 25.274142369088153,
+        "8": 32.163437477526415,
+        "9": 39.8634581890614,
+        "10": 48.374150078708446
+      },
+      "A1_adjoint_dim": 3,
+      "A2_adjoint_dim": 8,
+      "A1_adj_is_fibonacci": true,
+      "A2_adj_is_fibonacci": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_non_ade_fails_pac",
+      "tribonacci_spectral_radius": 1.839286755214161,
+      "tribonacci_is_phi": false,
+      "tribonacci_note": "Tribonacci constant = 1.839287, phi = 1.618034",
+      "non_unit_spectral_radius": 2.414213562373095,
+      "non_unit_is_phi": false,
+      "random_graph_ratio": 1.0408542287142735,
+      "random_gives_phi": false,
+      "pac_spectral_radius": 1.618033988749895,
+      "pac_is_phi": true,
+      "specificity": "Only PAC recursion (Fibonacci) gives phi. Tribonacci gives 1.839287, non-unit gives 2.414214.",
+      "PASS": true
+    }
+  }
+}

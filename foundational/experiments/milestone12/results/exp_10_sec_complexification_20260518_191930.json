@@ -1,0 +1,118 @@
+{
+  "experiment": "exp_10_sec_complexification",
+  "milestone": "milestone12",
+  "block": "D",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_complexification_doubles_dimension",
+      "su2_dimension": 3,
+      "sl2c_dimension": 6,
+      "dimension_doubled": true,
+      "correct_real_dim": true,
+      "correct_complex_dim": true,
+      "originals_preserved": true,
+      "imaginary_correct": true,
+      "rank_of_generator_set": 6,
+      "all_independent": true,
+      "note": "su(2) has 3 generators (PAC = compact). SEC complexification adds 3 imaginary generators for total 6 = dim(sl(2,C)).",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_sec_generators_hermitian",
+      "rotation_checks": [
+        {
+          "generator": "J_1",
+          "is_hermitian": true
+        },
+        {
+          "generator": "J_2",
+          "is_hermitian": true
+        },
+        {
+          "generator": "J_3",
+          "is_hermitian": true
+        }
+      ],
+      "boost_checks": [
+        {
+          "generator": "K_1",
+          "is_anti_hermitian": true
+        },
+        {
+          "generator": "K_2",
+          "is_anti_hermitian": true
+        },
+        {
+          "generator": "K_3",
+          "is_anti_hermitian": true
+        }
+      ],
+      "all_rotations_hermitian": true,
+      "all_boosts_anti_hermitian": true,
+      "opposite_hermiticity": true,
+      "su2_killing_eigenvalues": [
+        1.9999999999999991,
+        2.0,
+        2.0
+      ],
+      "su2_killing_definite": true,
+      "sl2c_killing_eigenvalues": [
+        -2.0000000000000004,
+        -1.9999999999999991,
+        -1.999999999999999,
+        1.9999999999999984,
+        1.9999999999999996,
+        2.0000000000000004
+      ],
+      "sl2c_killing_indefinite": true,
+      "note": "PAC generators (J_i=sigma_i/2) are Hermitian. SEC generators (K_i=i*J_i) are anti-Hermitian (opposite). su(2) has definite Killing form; sl(2,C) has indefinite. SEC breaks the definiteness of the Killing form.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_sl2c_commutation_relations",
+      "algebra_closes": true,
+      "max_closure_error": 1.1188630228279524e-16,
+      "JJ_relation_error": 0.0,
+      "KK_relation_error": 0.0,
+      "JK_relation_error": 0.0,
+      "all_primary_exact": true,
+      "additional_cyclic_checks": {
+        "J2J3_error": 0.0,
+        "K2K3_error": 0.0,
+        "J2K3_error": 0.0
+      },
+      "all_additional_exact": true,
+      "note": "[J,J]=iJ (compact rotation), [K,K]=-iJ (Minkowski signature!), [J,K]=iK (rotations rotate boosts). The minus sign in [K,K] is SEC.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_pac_compact_sec_breaks",
+      "su2_killing_eigenvalues": [
+        1.9999999999999991,
+        2.0,
+        2.0
+      ],
+      "su2_killing_signature": "(3+, 0-, 0zero)",
+      "su2_definite": true,
+      "sl2c_killing_eigenvalues": [
+        -2.0000000000000004,
+        -1.9999999999999991,
+        -1.999999999999999,
+        1.9999999999999984,
+        1.9999999999999996,
+        2.0000000000000004
+      ],
+      "sl2c_killing_signature": "(3+, 3-, 0zero)",
+      "sl2c_indefinite": true,
+      "exp_iJ_is_unitary": true,
+      "exp_J_is_not_unitary": true,
+      "correct_hermiticity_split": true,
+      "n_hermitian_rotations": 3,
+      "n_antihermitian_boosts": 3,
+      "note": "su(2) has definite Killing form (compact, all eigenvalues same sign). sl(2,C) has indefinite Killing form (non-compact, both signs). exp(i*theta*J) is unitary (PAC-preserving rotation). exp(eta*J) with Hermitian J is non-unitary (SEC boost). SEC breaks Killing form definiteness.",
+      "PASS": true
+    }
+  }
+}

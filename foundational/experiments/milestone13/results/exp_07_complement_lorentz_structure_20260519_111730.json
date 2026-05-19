@@ -1,0 +1,223 @@
+{
+  "experiment": "exp_07_complement_lorentz_structure",
+  "milestone": "milestone13",
+  "block": "C",
+  "version": "v0.3_hardened",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_killing_form_signature",
+      "cartan_weyl_generators": [
+        "H",
+        "E+",
+        "E-"
+      ],
+      "cw_killing_eigenvalues": [
+        8.0,
+        3.999999999999999,
+        -3.999999999999999
+      ],
+      "cw_killing_signature": "(2, 1)",
+      "cw_definite": false,
+      "complexified_killing_eigenvalues": [
+        7.999999999999996,
+        3.999999999999998,
+        3.999999999999998,
+        -3.999999999999998,
+        -3.999999999999998,
+        -7.999999999999996
+      ],
+      "complexified_killing_signature": "(3, 3)",
+      "complexified_indefinite": true,
+      "pauli_proportionality_errors": {
+        "J1": 0.0,
+        "J2": 0.0,
+        "J3": 0.0
+      },
+      "proportional_to_pauli": true,
+      "interpretation": "Cartan-Weyl generators [H, E+, E-] derived from A_1 root system. Their Killing form is definite (compact su(2)). Complexification {H, E+, E-, iH, iE+, iE-} gives indefinite Killing form (non-compact sl(2,C)). CW basis is proportional to Pauli/2 under J3=H/2, etc.",
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_commutation_relations",
+      "n_relations_checked": 6,
+      "max_commutator_error": 0.0,
+      "relation_errors": [
+        {
+          "relation": "[H, E+] = 2*E+",
+          "error": 0.0
+        },
+        {
+          "relation": "[H, E-] = -2*E-",
+          "error": 0.0
+        },
+        {
+          "relation": "[E+, E-] = H",
+          "error": 0.0
+        },
+        {
+          "relation": "[J1, J2] = i*J3",
+          "error": 0.0
+        },
+        {
+          "relation": "[J2, J3] = i*J1",
+          "error": 0.0
+        },
+        {
+          "relation": "[J3, J1] = i*J2",
+          "error": 0.0
+        }
+      ],
+      "interpretation": "Cartan-Weyl structure constants [H,E+]=2E+, [H,E-]=-2E-, [E+,E-]=H verified from complement-derived generators. Angular momentum basis J3=H/2, J1=(E++E-)/2, J2=(E+-E-)/(2i) satisfies [Ji,Jj]=i*eps_ijk*Jk. All 6 relations (3 CW + 3 AM) below 1e-10.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_selectivity",
+      "signatures": {
+        "A_1": {
+          "real_dim": 3,
+          "complexified_dim": 6,
+          "signature": "(3, 3)",
+          "n_positive": 3,
+          "n_negative": 3,
+          "eigenvalues_summary": {
+            "min": -7.999999999999996,
+            "max": 7.999999999999996
+          }
+        },
+        "A_2": {
+          "real_dim": 8,
+          "complexified_dim": 16,
+          "signature": "(8, 8)",
+          "n_positive": 8,
+          "n_negative": 8,
+          "eigenvalues_summary": {
+            "min": -12.000000000000007,
+            "max": 12.000000000000007
+          }
+        },
+        "D_4": {
+          "real_dim": 28,
+          "complexified_dim": 56,
+          "signature": "(28, 28)",
+          "n_positive": 28,
+          "n_negative": 28,
+          "eigenvalues_summary": {
+            "min": -12.000000000000023,
+            "max": 12.00000000000002
+          }
+        }
+      },
+      "A1_is_3_3": true,
+      "A2_not_3_3": true,
+      "D4_not_3_3": true,
+      "interpretation": "Complexified A_1 has Killing signature (3,3) = sl(2,C). A_2 gives (8, 8) (not (3,3)). D_4 gives (28, 28) (not (3,3)). Only the simplest ADE type produces the Lorentz algebra.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_boost_properties_and_thomas",
+      "eigenvalue_results": [
+        {
+          "eta": 0.01,
+          "eigenvalues": [
+            1.005012520859401,
+            0.9950124791926823
+          ],
+          "expected": [
+            1.005012520859401,
+            0.9950124791926823
+          ],
+          "max_relative_error": 0.0
+        },
+        {
+          "eta": 0.5,
+          "eigenvalues": [
+            1.2840254166877414,
+            0.7788007830714049
+          ],
+          "expected": [
+            1.2840254166877414,
+            0.7788007830714049
+          ],
+          "max_relative_error": 0.0
+        },
+        {
+          "eta": 1.0,
+          "eigenvalues": [
+            1.6487212707001282,
+            0.6065306597126334
+          ],
+          "expected": [
+            1.6487212707001282,
+            0.6065306597126334
+          ],
+          "max_relative_error": 0.0
+        },
+        {
+          "eta": 2.0,
+          "eigenvalues": [
+            2.718281828459045,
+            0.36787944117144233
+          ],
+          "expected": [
+            2.718281828459045,
+            0.36787944117144233
+          ],
+          "max_relative_error": 0.0
+        },
+        {
+          "eta": 5.0,
+          "eigenvalues": [
+            12.182493960703473,
+            0.0820849986238988
+          ],
+          "expected": [
+            12.182493960703473,
+            0.0820849986238988
+          ],
+          "max_relative_error": 0.0
+        },
+        {
+          "eta": 10.0,
+          "eigenvalues": [
+            148.4131591025766,
+            0.006737946999085467
+          ],
+          "expected": [
+            148.4131591025766,
+            0.006737946999085467
+          ],
+          "max_relative_error": 0.0
+        }
+      ],
+      "max_eigenvalue_rel_error": 0.0,
+      "eigenvalues_pass": true,
+      "collinear_composition": {
+        "eta1": 0.5,
+        "eta2": 0.7,
+        "composed_eigenvalues": [
+          1.8221188003905087,
+          0.5488116360940264
+        ],
+        "direct_eigenvalues": [
+          1.8221188003905089,
+          0.5488116360940265
+        ],
+        "error": 2.220446049250313e-16
+      },
+      "composition_pass": true,
+      "thomas_rotation": {
+        "eta1": 1.0,
+        "eta2": 1.0,
+        "phi": 1.5707963267948966,
+        "theta_from_matrix": 0.42078396163807574,
+        "theta_from_formula": 0.420783961638073,
+        "relative_error": 6.46423499541842e-15
+      },
+      "thomas_pass": true,
+      "interpretation": "Boost eigenvalues exp(+/-eta/2) verified for 6 rapidities (max rel error 0.00e+00). Collinear composition B(eta1)@B(eta2)=B(eta1+eta2) to 2.22e-16. Thomas rotation from non-collinear boosts: matrix gives 24.11 deg, formula gives 24.11 deg (rel error 6.46e-15).",
+      "PASS": true
+    }
+  }
+}

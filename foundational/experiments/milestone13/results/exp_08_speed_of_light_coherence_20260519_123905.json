@@ -1,0 +1,190 @@
+{
+  "experiment": "exp_08_speed_of_light_coherence",
+  "milestone": "milestone13",
+  "block": "C",
+  "version": "v0.3_hardened",
+  "score": 1,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_ade_vs_random_coherence",
+      "n_ade_diagrams": 14,
+      "n_random_graphs": 20,
+      "ade_mean": 1.1392162595637907,
+      "ade_std": 0.3775339424840366,
+      "ade_cv": 0.33139795830213614,
+      "random_mean": 1.0978625474172747,
+      "random_std": 0.3406914225402632,
+      "random_cv": 0.3103224746501653,
+      "all_finite_positive": true,
+      "ade_more_constrained": false,
+      "ade_rates": {
+        "A_3": 1.4142135623730951,
+        "A_4": 0.5857864376269052,
+        "A_5": 1.5307337294603593,
+        "A_6": 0.6122757548012756,
+        "A_7": 1.0909460598144491,
+        "A_8": 0.8647099349037225,
+        "D_4": 2.0000000000000004,
+        "D_5": 1.2360679774997898,
+        "D_6": 1.4839275686054516,
+        "D_7": 1.1622776601683793,
+        "D_8": 1.2415697432876545,
+        "E_6": 1.0352761804100836,
+        "E_7": 0.9897396931366744,
+        "E_8": 0.7015033318052312
+      },
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_within_family_convergence",
+      "families": {
+        "A": {
+          "rates": [
+            {
+              "rank": 3,
+              "rate": 1.4142135623730951
+            },
+            {
+              "rank": 4,
+              "rate": 0.5857864376269052
+            },
+            {
+              "rank": 5,
+              "rate": 1.5307337294603593
+            },
+            {
+              "rank": 6,
+              "rate": 0.6122757548012756
+            },
+            {
+              "rank": 7,
+              "rate": 1.0909460598144491
+            },
+            {
+              "rank": 8,
+              "rate": 0.8647099349037225
+            },
+            {
+              "rank": 9,
+              "rate": 1.0792651631387364
+            },
+            {
+              "rank": 10,
+              "rate": 0.6159184326617724
+            }
+          ],
+          "mean": 0.9742311343475395,
+          "std": 0.3446407660302344,
+          "cv": 0.35375667424244933
+        },
+        "D": {
+          "rates": [
+            {
+              "rank": 4,
+              "rate": 2.0000000000000004
+            },
+            {
+              "rank": 5,
+              "rate": 1.2360679774997898
+            },
+            {
+              "rank": 6,
+              "rate": 1.4839275686054516
+            },
+            {
+              "rank": 7,
+              "rate": 1.1622776601683793
+            },
+            {
+              "rank": 8,
+              "rate": 1.2415697432876545
+            },
+            {
+              "rank": 9,
+              "rate": 1.0157546021820054
+            },
+            {
+              "rank": 10,
+              "rate": 1.0906238191044415
+            }
+          ],
+          "mean": 1.318603052978246,
+          "std": 0.3099561047329554,
+          "cv": 0.23506399748800594
+        }
+      },
+      "a_cv_ok": false,
+      "d_cv_ok": true,
+      "cross_family_diff": 0.2611642054467379,
+      "cross_family_differs": true,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_complement_rapidity_composition",
+      "c_max": 0.6122757548012756,
+      "step_rapidities": [
+        0.9207187162437819,
+        1.0,
+        0.0,
+        1.0,
+        0.9207187162437819
+      ],
+      "eta_02_direct": 0.7341295801089948,
+      "eta_02_additive": 1.920718716243782,
+      "eta_02_relativistic": 1.9207187162437822,
+      "error_additive": 1.616321107724084,
+      "error_relativistic": 1.6163211077240847,
+      "best_composition": "additive",
+      "best_error": 1.616321107724084,
+      "note": "Discrete complement distances may not compose like continuous rapidities. This tests the gap between discrete graph operations and continuum Lorentz.",
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_complement_deformation_work",
+      "ade_work": [
+        {
+          "path_length": 2,
+          "total_deformation": 0.5151211405583669,
+          "mean_rate": 0.5151211405583669
+        },
+        {
+          "path_length": 3,
+          "total_deformation": 1.3798310754620893,
+          "mean_rate": 0.6899155377310446
+        },
+        {
+          "path_length": 4,
+          "total_deformation": 2.1928141552094185,
+          "mean_rate": 0.7309380517364729
+        },
+        {
+          "path_length": 5,
+          "total_deformation": 2.1928141552094185,
+          "mean_rate": 0.5482035388023546
+        },
+        {
+          "path_length": 6,
+          "total_deformation": 3.0057972349567477,
+          "mean_rate": 0.6011594469913495
+        },
+        {
+          "path_length": 7,
+          "total_deformation": 3.87050716986047,
+          "mean_rate": 0.6450845283100783
+        }
+      ],
+      "ade_superlinear_factor": 2.146794422356665,
+      "random_mean_factor": 0.0,
+      "random_factors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ade_is_superlinear": true,
+      "differs_from_random": true,
+      "note": "Tests whether complement deformation work grows superlinearly on ADE (structured) vs random (unstructured) graphs. Superlinearity suggests the coherence limit creates genuine energy barriers.",
+      "PASS": true
+    }
+  }
+}

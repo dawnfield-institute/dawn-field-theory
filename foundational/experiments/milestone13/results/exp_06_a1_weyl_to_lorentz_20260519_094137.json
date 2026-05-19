@@ -1,0 +1,115 @@
+{
+  "experiment": "exp_06_a1_weyl_to_lorentz",
+  "milestone": "milestone13",
+  "block": "B",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_a1_complement_structure",
+      "A1_dynkin_vertices": 1,
+      "A1_orbits": [
+        [
+          0
+        ]
+      ],
+      "A1_n_orbits": 1,
+      "A1_weyl_order": 2,
+      "A1_expected_order": 2,
+      "A1_n_roots": 2,
+      "A1_lie_group": "SU(2)",
+      "cross_check_A2_orbits": 1,
+      "cross_check_A2_weyl_order": 6,
+      "note": "A_1 Dynkin diagram has 1 vertex; W(A_1) = Z_2 acts on the 2-element root system, not on Dynkin nodes.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_weyl_flips_j3",
+      "J3_conjugation_error": 0.0,
+      "J1_flip_error": 0.0,
+      "J1_invariant_error": 1.0,
+      "J2_flip_error": 1.0,
+      "J2_invariant_error": 0.0,
+      "weyl_element_shape": [
+        2,
+        2
+      ],
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_weyl_action_on_sl2c",
+      "n_generators": 6,
+      "classification": {
+        "J_1": "flip",
+        "J_2": "invariant",
+        "J_3": "flip",
+        "K_1": "flip",
+        "K_2": "invariant",
+        "K_3": "flip"
+      },
+      "n_flip": 4,
+      "n_invariant": 2,
+      "n_mixed": 0,
+      "details": [
+        {
+          "label": "J_1",
+          "action": "flip",
+          "error_flip": 0.0,
+          "error_invariant": 1.0
+        },
+        {
+          "label": "J_2",
+          "action": "invariant",
+          "error_flip": 1.0,
+          "error_invariant": 0.0
+        },
+        {
+          "label": "J_3",
+          "action": "flip",
+          "error_flip": 0.0,
+          "error_invariant": 1.0
+        },
+        {
+          "label": "K_1",
+          "action": "flip",
+          "error_flip": 0.0,
+          "error_invariant": 1.0
+        },
+        {
+          "label": "K_2",
+          "action": "invariant",
+          "error_flip": 1.0,
+          "error_invariant": 0.0
+        },
+        {
+          "label": "K_3",
+          "action": "flip",
+          "error_flip": 0.0,
+          "error_invariant": 1.0
+        }
+      ],
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_minkowski_invariant_under_weyl",
+      "bracket_preservation_error": 0.0,
+      "structure_constant_errors": [
+        {
+          "commutator": "[J1, J2]",
+          "error": 0.0
+        },
+        {
+          "commutator": "[J2, J3]",
+          "error": 0.0
+        },
+        {
+          "commutator": "[J1, K2]",
+          "error": 0.0
+        }
+      ],
+      "max_structure_error": 0.0,
+      "note": "Weyl conjugation is an automorphism: [wXw^-1, wYw^-1] = w[X,Y]w^-1. This preserves all structure constants and hence the Minkowski signature.",
+      "PASS": true
+    }
+  }
+}

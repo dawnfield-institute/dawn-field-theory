@@ -1,0 +1,131 @@
+{
+  "experiment": "exp_08_speed_of_light_coherence",
+  "milestone": "milestone13",
+  "block": "C",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_max_deformation_finite",
+      "pac_tree_depth": 4,
+      "n_vertices": 31,
+      "max_deformation_rate": 1.4333990473303615,
+      "is_finite": true,
+      "is_positive": true,
+      "interpretation": "The PAC tree has a finite maximum complement-deformation rate. No single adjacent step can change the complement spectrum by more than this amount. This is the discrete analogue of c.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_coherence_scales_with_spectral_radius",
+      "graph_results": [
+        {
+          "name": "A_5",
+          "max_deformation_rate": 1.5307337294603593,
+          "spectral_radius": 1.732050807568878,
+          "rate_over_spectral_radius": 0.8837695307615778
+        },
+        {
+          "name": "A_8",
+          "max_deformation_rate": 0.8647099349037225,
+          "spectral_radius": 1.8793852415718166,
+          "rate_over_spectral_radius": 0.46010254618181723
+        },
+        {
+          "name": "D_5",
+          "max_deformation_rate": 1.2360679774997898,
+          "spectral_radius": 1.8477590650225744,
+          "rate_over_spectral_radius": 0.6689551689384831
+        }
+      ],
+      "mean_ratio": 0.6709424152939594,
+      "std_ratio": 0.17296703022403778,
+      "cv": 0.2577971317378346,
+      "interpretation": "The ratio max_deformation_rate / spectral_radius is approximately constant across different ADE graphs, suggesting the coherence limit scales with the graph spectral radius. CV measures this consistency.",
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_velocity_bounded",
+      "velocities": [
+        {
+          "eta": 0.1,
+          "v": 0.09966799462495582,
+          "v_less_than_1": true
+        },
+        {
+          "eta": 0.5,
+          "v": 0.46211715726000974,
+          "v_less_than_1": true
+        },
+        {
+          "eta": 1.0,
+          "v": 0.7615941559557649,
+          "v_less_than_1": true
+        },
+        {
+          "eta": 2.0,
+          "v": 0.9640275800758169,
+          "v_less_than_1": true
+        },
+        {
+          "eta": 5.0,
+          "v": 0.9999092042625951,
+          "v_less_than_1": true
+        },
+        {
+          "eta": 10.0,
+          "v": 0.9999999958776927,
+          "v_less_than_1": true
+        }
+      ],
+      "all_bounded": true,
+      "tanh_10": 0.9999999958776927,
+      "tanh_10_close_to_1": true,
+      "interpretation": "v = tanh(eta) < 1 for all finite rapidity eta. As eta -> infinity, v -> 1 asymptotically but never reaches it. This is the complement-deformation coherence bound: finite deformation steps cannot reach infinite spectral change rate.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_energy_diverges",
+      "energies": [
+        {
+          "v": 0.1,
+          "gamma": 1.005037815259212,
+          "E_kinetic": 0.005037815259212097
+        },
+        {
+          "v": 0.3,
+          "gamma": 1.0482848367219182,
+          "E_kinetic": 0.04828483672191819
+        },
+        {
+          "v": 0.5,
+          "gamma": 1.1547005383792517,
+          "E_kinetic": 0.15470053837925168
+        },
+        {
+          "v": 0.7,
+          "gamma": 1.4002800840280099,
+          "E_kinetic": 0.40028008402800985
+        },
+        {
+          "v": 0.9,
+          "gamma": 2.294157338705618,
+          "E_kinetic": 1.294157338705618
+        },
+        {
+          "v": 0.95,
+          "gamma": 3.202563076101742,
+          "E_kinetic": 2.202563076101742
+        },
+        {
+          "v": 0.99,
+          "gamma": 7.088812050083354,
+          "E_kinetic": 6.088812050083354
+        }
+      ],
+      "E_099_over_E_01": 1208.6215426318809,
+      "monotonically_increasing": true,
+      "interpretation": "The energy E = gamma - 1 = 1/sqrt(1-v^2) - 1 diverges as v -> 1. E(0.99)/E(0.1) >> 50 confirms the divergence. This is the complement-deformation energy cost: reaching the coherence limit requires infinite energy, making c an absolute bound.",
+      "PASS": true
+    }
+  }
+}

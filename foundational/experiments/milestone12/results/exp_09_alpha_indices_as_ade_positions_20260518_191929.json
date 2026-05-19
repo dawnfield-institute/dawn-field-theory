@@ -1,0 +1,164 @@
+{
+  "experiment": "exp_09_alpha_indices_as_ade_positions",
+  "milestone": "milestone12",
+  "block": "C",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_fibonacci_to_ade_positions",
+      "mappings": {
+        "F3": {
+          "fibonacci_value": 2,
+          "ade_object": "A_1",
+          "lie_group": "SU(2)",
+          "adjoint_dim": 3,
+          "role": "Minimal non-trivial connection (electroweak)",
+          "rank_match": true,
+          "dim_is_fibonacci": true,
+          "adjoint_dim_equals_F4": true
+        },
+        "F4": {
+          "fibonacci_value": 3,
+          "ade_object": "A_2",
+          "lie_group": "SU(3)",
+          "adjoint_dim": 8,
+          "role": "Color gauge group; also dim(A_1)",
+          "rank_match": true,
+          "dim_is_fibonacci": true,
+          "adjoint_dim_equals_F6": true
+        },
+        "F7": {
+          "fibonacci_value": 13,
+          "cascade_depth": 13,
+          "gauge_closure": "1 + 3 + 8 + 1 = 13",
+          "closure_matches": true,
+          "role": "Electromagnetic cascade depth; SM gauge closure sum",
+          "depth_match": true
+        },
+        "F10": {
+          "fibonacci_value": 55,
+          "triangular_number": 55,
+          "is_triangular_T10": true,
+          "role": "Higher-order ADE correction; T_10 = sum(1..10)",
+          "a10_adjoint_dim": 120,
+          "note": "F_10 = 55 is both Fibonacci and triangular (T_10), a rare coincidence linking recursion to geometry."
+        }
+      },
+      "F3_valid": true,
+      "F4_valid": true,
+      "F7_valid": true,
+      "F10_valid": true,
+      "all_valid": true,
+      "note": "Each Fibonacci index in the alpha formula maps to a structurally meaningful ADE position: F3=2 (A_1 numerator), F4=3 (A_2/dim(A_1)), F7=13 (gauge closure), F10=55 (T_10 correction).",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_alpha_from_ade_structure",
+      "F3": 2,
+      "F4": 3,
+      "F7": 13,
+      "F10": 55,
+      "PHI": 1.618033988749895,
+      "main_fraction": 0.007491321075756301,
+      "correction_term": 0.9741020063016147,
+      "alpha_computed": 0.007297310889743783,
+      "alpha_nist": 0.0072973525693,
+      "relative_error": 5.711599627555799e-06,
+      "ppm_error": 5.711599627555799,
+      "correct_order_of_magnitude": true,
+      "is_product_structure": true,
+      "note": "alpha_DFT = 0.0072973109 vs NIST 0.0072973526. Precision: 5.7 ppm. Structure: (F3 / (F4 * phi * F10)) * (1 - F10/(4*pi*F7^2)).",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_non_redundancy",
+      "alpha_original": 0.007297310889743783,
+      "ppm_original": 5.711599627555799,
+      "substitutions": {
+        "F3->F2=1": {
+          "substituted_value": 1,
+          "alpha": 0.0036486554448718917,
+          "ppm": 500002.85579981375,
+          "degradation_factor": 87541.65004625563
+        },
+        "F3->F4=3": {
+          "substituted_value": 3,
+          "alpha": 0.010945966334615675,
+          "ppm": 499991.4326005587,
+          "degradation_factor": 87539.65004625564
+        },
+        "F4->F3=2": {
+          "substituted_value": 2,
+          "alpha": 0.010945966334615675,
+          "ppm": 499991.4326005587,
+          "degradation_factor": 87539.65004625564
+        },
+        "F4->F5=5": {
+          "substituted_value": 5,
+          "alpha": 0.00437838653384627,
+          "ppm": 400003.42695977655,
+          "degradation_factor": 70033.5200370045
+        },
+        "F7->F6=8": {
+          "substituted_value": 8,
+          "alpha": 0.006979012928316996,
+          "ppm": 43623.99075005105,
+          "degradation_factor": 7637.788639733374
+        },
+        "F7->F8=21": {
+          "substituted_value": 21,
+          "alpha": 0.007416972501071232,
+          "ppm": 16392.23686059428,
+          "degradation_factor": 2869.9905332140925
+        },
+        "F10->F9=34": {
+          "substituted_value": 34,
+          "alpha": 0.011924303318887379,
+          "ppm": 634058.8186807616,
+          "degradation_factor": 111012.4763685683
+        },
+        "F10->F11=89": {
+          "substituted_value": 89,
+          "alpha": 0.0044354578945110384,
+          "ppm": 392182.59603201406,
+          "degradation_factor": 68664.23096953721
+        }
+      },
+      "all_degraded_10x": true,
+      "worst_substitution": "F10->F9=34",
+      "worst_degradation_factor": 111012.4763685683,
+      "best_substitution": "F7->F8=21",
+      "best_degradation_factor": 2869.9905332140925,
+      "note": "Original alpha at 5.7 ppm. Best substitution (F7->F8=21) at 16392 ppm (2870x worse). Worst substitution (F10->F9=34) at 634059 ppm (111012x worse). No neighboring Fibonacci substitution comes close.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_correction_term_geometric_meaning",
+      "F7_squared": 169,
+      "sphere_area_F7": 2123.7166338267,
+      "correction_ratio": 0.025897993698385337,
+      "correction_term": 0.9741020063016147,
+      "alpha_uncorrected": 0.007491321075756301,
+      "ppm_uncorrected": 26580.66807301145,
+      "alpha_corrected": 0.007297310889743783,
+      "ppm_corrected": 5.711599627555799,
+      "improvement_factor": 4653.804504218424,
+      "correction_improves_100x": true,
+      "factor_precisions_ppm": {
+        "2*pi": 26592.09127226668,
+        "4*pi": 5.711599627555799,
+        "8*pi": 13287.47823669183,
+        "pi^2": 7270.16187753569,
+        "4": 56942.906992100434
+      },
+      "best_geometric_factor": "4*pi",
+      "four_pi_is_optimal": true,
+      "correction_is_perturbative": true,
+      "e8_roots": 248,
+      "e8_positive_roots": 120,
+      "note": "Correction term = 1 - 55/(4*pi*13^2) = 0.974102. Without correction: 26581 ppm. With correction: 5.7 ppm. Improvement: 4654x. 4*pi is optimal among geometric factors tested. The correction is perturbative (ratio = 0.0259).",
+      "PASS": true
+    }
+  }
+}

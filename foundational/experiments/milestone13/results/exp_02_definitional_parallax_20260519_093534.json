@@ -1,0 +1,130 @@
+{
+  "experiment": "exp_02_definitional_parallax",
+  "milestone": "milestone13",
+  "block": "A",
+  "score": 1,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_distinct_observer_views",
+      "graph": "A_7",
+      "target": 3,
+      "observer_0_spectrum": [
+        1.4142135623730954,
+        1.0,
+        -8.066464163292153e-17,
+        -1.0,
+        -1.4142135623730951
+      ],
+      "observer_6_spectrum": [
+        1.4142135623730954,
+        1.0,
+        -8.066464163292153e-17,
+        -1.0,
+        -1.4142135623730951
+      ],
+      "spectral_difference": 0.0,
+      "parallax": 0.0,
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_parallax_scales_with_distance",
+      "graph": "A_10",
+      "target": 5,
+      "reference_observer": 4,
+      "n_observers": 8,
+      "observer_distances": [
+        4,
+        3,
+        2,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "parallax_values": [
+        0.0,
+        0.9203355664740178,
+        1.0274862967460157,
+        0.9203355664740178,
+        1.0792651631387364,
+        1.358550618287097,
+        1.358550618287097,
+        1.0792651631387364
+      ],
+      "spearman_rho": 0.2098765432098765,
+      "spearman_pvalue": 0.6178846226861965,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_symmetric_observers_agree",
+      "graph": "D_4",
+      "center": 1,
+      "leaves": [
+        0,
+        2,
+        3
+      ],
+      "parallax_pairs": [
+        {
+          "obs1": 0,
+          "obs2": 2,
+          "parallax": 0.0
+        },
+        {
+          "obs1": 0,
+          "obs2": 3,
+          "parallax": 0.0
+        },
+        {
+          "obs1": 2,
+          "obs2": 3,
+          "parallax": 0.0
+        }
+      ],
+      "all_zero": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_normalized_total_parallax",
+      "ranks": [
+        5,
+        7,
+        9
+      ],
+      "details": {
+        "A_5": {
+          "n_vertices": 5,
+          "n_edges": 4,
+          "n_triples": 30,
+          "total_parallax": 16.686291501015248,
+          "normalized": 0.13905242917512706
+        },
+        "A_7": {
+          "n_vertices": 7,
+          "n_edges": 6,
+          "n_triples": 105,
+          "total_parallax": 69.97885262828737,
+          "normalized": 0.1110775438544244
+        },
+        "A_9": {
+          "n_vertices": 9,
+          "n_edges": 8,
+          "n_triples": 252,
+          "total_parallax": 164.84522217943294,
+          "normalized": 0.08176846338265523
+        }
+      },
+      "normalized_values": [
+        0.13905242917512706,
+        0.1110775438544244,
+        0.08176846338265523
+      ],
+      "mean": 0.11063281213740221,
+      "std": 0.02338819536936479,
+      "cv": 0.21140378625029835,
+      "PASS": false
+    }
+  }
+}

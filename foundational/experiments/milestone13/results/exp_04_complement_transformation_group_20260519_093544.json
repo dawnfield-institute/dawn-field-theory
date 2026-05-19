@@ -1,0 +1,271 @@
+{
+  "experiment": "exp_04_complement_transformation_group",
+  "milestone": "milestone13",
+  "block": "B",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_composition_exact",
+      "graph": "A_4",
+      "n_vertices": 4,
+      "n_triples_tested": 24,
+      "max_composition_error": 0.0,
+      "sample_triples": [
+        {
+          "triple": [
+            0,
+            1,
+            2
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            1,
+            3
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            2,
+            1
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            2,
+            3
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            3,
+            1
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            3,
+            2
+          ],
+          "error": 0.0
+        }
+      ],
+      "note": "Composition is exact by telescoping: spec(k)-spec(i) = (spec(j)-spec(i)) + (spec(k)-spec(j))",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_complement_classes_equal_orbits",
+      "ranks_tested": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "by_rank": {
+        "2": {
+          "n_vertices": 2,
+          "n_distinct_spectra": 1,
+          "n_orbits": 1,
+          "expected": 1,
+          "match": true
+        },
+        "3": {
+          "n_vertices": 3,
+          "n_distinct_spectra": 2,
+          "n_orbits": 2,
+          "expected": 2,
+          "match": true
+        },
+        "4": {
+          "n_vertices": 4,
+          "n_distinct_spectra": 2,
+          "n_orbits": 2,
+          "expected": 2,
+          "match": true
+        },
+        "5": {
+          "n_vertices": 5,
+          "n_distinct_spectra": 3,
+          "n_orbits": 3,
+          "expected": 3,
+          "match": true
+        }
+      },
+      "all_match": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_adjacent_transformation_magnitudes",
+      "graph": "A_4",
+      "adjacent_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "magnitudes": [
+        0.5857864376269052,
+        0.0,
+        0.5857864376269052
+      ],
+      "mean": 0.3905242917512701,
+      "std": 0.27614237491539684,
+      "cv": 0.7071067811865476,
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_weyl_group_order",
+      "ranks_tested": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "by_rank": {
+        "2": {
+          "n_vertices": 2,
+          "weyl_order": 6,
+          "expected_order": 6,
+          "n_orbits": 1,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                1
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 3,
+              "product": 6,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 2,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        },
+        "3": {
+          "n_vertices": 3,
+          "weyl_order": 24,
+          "expected_order": 24,
+          "n_orbits": 2,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                2
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 12,
+              "product": 24,
+              "ok": true
+            },
+            {
+              "vertices": [
+                1
+              ],
+              "orbit_size": 1,
+              "stabilizer_order": 24,
+              "product": 24,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 3,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        },
+        "4": {
+          "n_vertices": 4,
+          "weyl_order": 120,
+          "expected_order": 120,
+          "n_orbits": 2,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                3
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 60,
+              "product": 120,
+              "ok": true
+            },
+            {
+              "vertices": [
+                1,
+                2
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 60,
+              "product": 120,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 4,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        },
+        "5": {
+          "n_vertices": 5,
+          "weyl_order": 720,
+          "expected_order": 720,
+          "n_orbits": 3,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                4
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 360,
+              "product": 720,
+              "ok": true
+            },
+            {
+              "vertices": [
+                1,
+                3
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 360,
+              "product": 720,
+              "ok": true
+            },
+            {
+              "vertices": [
+                2
+              ],
+              "orbit_size": 1,
+              "stabilizer_order": 720,
+              "product": 720,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 5,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        }
+      },
+      "all_match": true,
+      "PASS": true
+    }
+  }
+}

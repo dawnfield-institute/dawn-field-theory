@@ -1,0 +1,243 @@
+{
+  "experiment": "exp_11_curvature_from_density",
+  "milestone": "milestone13",
+  "block": "D",
+  "score": 2,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_flat_regular_graph",
+      "n_vertices": 8,
+      "graph_type": "cycle",
+      "n_adjacent_pairs": 8,
+      "magnitudes": [
+        {
+          "from": 0,
+          "to": 1,
+          "magnitude": 0.0
+        },
+        {
+          "from": 0,
+          "to": 7,
+          "magnitude": 0.0
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "magnitude": 7.791845924537873e-16
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "magnitude": 1.284381827316535e-15
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "magnitude": 1.4425827483661892e-15
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "magnitude": 8.86138479815812e-16
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "magnitude": 9.6599835669592e-16
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "magnitude": 8.327126098636601e-16
+        }
+      ],
+      "mean_magnitude": 7.73874826813988e-16,
+      "std_magnitude": 4.947924860366326e-16,
+      "cv": 0.6393701783448282,
+      "interpretation": "Cycle graph of 8 vertices: all vertices have degree 2. Complement-transformation magnitudes have CV = 0.6394. Uniform density = uniform transformations = flat space.",
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_curved_density_lump",
+      "n_vertices": 12,
+      "lump_center": 6,
+      "lump_radius": 2,
+      "lump_extra_edges": 4,
+      "n_adjacent_pairs": 15,
+      "max_magnitude": 1.3724563860756642,
+      "min_magnitude": 0.0,
+      "max_over_min_ratio": Infinity,
+      "density_field": [
+        0.09090909090909091,
+        0.18181818181818182,
+        0.18181818181818182,
+        0.18181818181818182,
+        0.45454545454545453,
+        0.2727272727272727,
+        0.2727272727272727,
+        0.36363636363636365,
+        0.2727272727272727,
+        0.18181818181818182,
+        0.18181818181818182,
+        0.09090909090909091
+      ],
+      "interpretation": "Density lump graph: max/min transformation magnitude ratio = inf. Non-uniform density creates non-uniform complement-transformations. This variation IS curvature in the complement framework.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_geodesic_vs_shortest",
+      "start": 0,
+      "end": 11,
+      "shortest_path": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11
+      ],
+      "shortest_path_length": 8,
+      "shortest_path_deformation": 6.21802847354571,
+      "min_deformation_path": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11
+      ],
+      "min_deformation_path_length": 8,
+      "min_deformation_cost": 6.21802847354571,
+      "paths_differ": false,
+      "at_least_1_vertex_different": false,
+      "min_def_path_lower_cost": true,
+      "note": "HIGH RISK test. On small discrete graphs, min-deformation and shortest paths may coincide. If they differ, it demonstrates that complement-curvature bends geodesics away from hop-minimal paths.",
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_curvature_scales_with_gradient",
+      "n_graphs": 5,
+      "graph_results": [
+        {
+          "extra_edges": 1,
+          "density_gradient": 0.1818181818181818,
+          "mean_curvature": 0.13019387796452397,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 2,
+          "density_gradient": 0.2727272727272727,
+          "mean_curvature": 0.20933401659124612,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.36363636363636365,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 3,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.2516429194186433,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.45454545454545453,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 4,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.23279044369267535,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.45454545454545453,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.36363636363636365,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 5,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.2323192348545083,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.45454545454545453,
+            0.36363636363636365,
+            0.2727272727272727,
+            0.36363636363636365,
+            0.36363636363636365,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        }
+      ],
+      "gradients": [
+        0.1818181818181818,
+        0.2727272727272727,
+        0.36363636363636365,
+        0.36363636363636365,
+        0.36363636363636365
+      ],
+      "curvatures": [
+        0.13019387796452397,
+        0.20933401659124612,
+        0.2516429194186433,
+        0.23279044369267535,
+        0.2323192348545083
+      ],
+      "pearson_correlation": 0.9606279773256657,
+      "interpretation": "Pearson correlation between density gradient and mean curvature: r = 0.9606. Larger density gradients produce larger curvature, confirming that curvature IS the non-uniformity of complement-transformations caused by connection-density gradients.",
+      "PASS": true
+    }
+  }
+}

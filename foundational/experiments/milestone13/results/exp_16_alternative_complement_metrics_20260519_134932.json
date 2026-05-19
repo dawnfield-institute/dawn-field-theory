@@ -1,0 +1,347 @@
+{
+  "experiment": "exp_16_alternative_complement_metrics",
+  "milestone": "milestone13.5",
+  "block": "investigation",
+  "version": "v0.1",
+  "score": 0,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_heat_kernel",
+      "metric": "heat_kernel_trace",
+      "diagrams": {
+        "A_3": {
+          "diagram": "A_3",
+          "n_vertices": 3,
+          "n_orbits": 2,
+          "feat_gram_min_eig": -4.533165661976515e-15,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 0.0,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 1,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "A_5": {
+          "diagram": "A_5",
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "feat_gram_min_eig": -1.0657927141125084e-15,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 6.423004831594084e-17,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 2,
+          "n_distinct_features": 3,
+          "distinguishes_orbits": true
+        },
+        "A_7": {
+          "diagram": "A_7",
+          "n_vertices": 7,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -3.513910993187675e-14,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 5.678136212469051e-17,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        },
+        "D_4": {
+          "diagram": "D_4",
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "feat_gram_min_eig": 2.2012548141143714e-16,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 4.936733311491962e-17,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 1,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "D_6": {
+          "diagram": "D_6",
+          "n_vertices": 6,
+          "n_orbits": 5,
+          "feat_gram_min_eig": -4.171287403584805e-34,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 2.2209898991562697e-16,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 4,
+          "n_distinct_features": 5,
+          "distinguishes_orbits": true
+        },
+        "E_6": {
+          "diagram": "E_6",
+          "n_vertices": 6,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -2.6251361242882803e-14,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 1.3108118987453358e-16,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        }
+      },
+      "n_pd": 0,
+      "n_full_rank": 0,
+      "n_distinguishes": 6,
+      "any_pd": false,
+      "note": "Heat kernel Tr(exp(-tL)) at t=[0.1,0.5,1,2,5,10] encodes multi-scale geometry. PD would mean the PSD issue is metric-specific, not fundamental.",
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_char_poly",
+      "metric": "characteristic_polynomial_coefficients",
+      "diagrams": {
+        "A_3": {
+          "diagram": "A_3",
+          "n_vertices": 3,
+          "n_orbits": 2,
+          "feat_gram_min_eig": -2.9380241718488805e-16,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -3.4628765952773207e-18,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 1,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "A_5": {
+          "diagram": "A_5",
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "feat_gram_min_eig": -2.6219026724351692e-15,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -5.602408650851964e-17,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 2,
+          "n_distinct_features": 3,
+          "distinguishes_orbits": true
+        },
+        "A_7": {
+          "diagram": "A_7",
+          "n_vertices": 7,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -1.8637217897358412e-16,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -5.891146372336661e-17,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        },
+        "D_4": {
+          "diagram": "D_4",
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "feat_gram_min_eig": -8.216281668004236e-16,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 3.1441354018612696e-18,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 1,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "D_6": {
+          "diagram": "D_6",
+          "n_vertices": 6,
+          "n_orbits": 5,
+          "feat_gram_min_eig": -1.6057246953239593e-17,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -2.4900702521995377e-16,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 2,
+          "n_distinct_features": 5,
+          "distinguishes_orbits": true
+        },
+        "E_6": {
+          "diagram": "E_6",
+          "n_vertices": 6,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -1.353370652694453e-15,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 6.917061782504509e-17,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 2,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        }
+      },
+      "n_pd": 0,
+      "n_full_rank": 0,
+      "n_distinguishes": 6,
+      "any_pd": false,
+      "note": "Characteristic polynomial coefficients are symmetric functions of eigenvalues. They encode the same spectral data as eigenvalues but in a different basis.",
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_spectral_zeta",
+      "metric": "spectral_zeta_function",
+      "diagrams": {
+        "A_3": {
+          "diagram": "A_3",
+          "n_vertices": 3,
+          "n_orbits": 2,
+          "feat_gram_min_eig": 4.135580766728708e-15,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 2.681308526975237e+44,
+          "dist_gram_is_full_rank": true,
+          "dist_gram_n_positive": 2,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "A_5": {
+          "diagram": "A_5",
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "feat_gram_min_eig": -4503599627370445.0,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -7.793471907973038e+43,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 3,
+          "distinguishes_orbits": true
+        },
+        "A_7": {
+          "diagram": "A_7",
+          "n_vertices": 7,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -3.123846148367529e+44,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -1.958082254696758e+44,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 5,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        },
+        "D_4": {
+          "diagram": "D_4",
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "feat_gram_min_eig": -1.0380008262488335e+45,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 2.0240032018121991e+43,
+          "dist_gram_is_full_rank": true,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "D_6": {
+          "diagram": "D_6",
+          "n_vertices": 6,
+          "n_orbits": 5,
+          "feat_gram_min_eig": -9.848738359007395e+44,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -1.2778578439022372e+44,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 4,
+          "n_distinct_features": 5,
+          "distinguishes_orbits": true
+        },
+        "E_6": {
+          "diagram": "E_6",
+          "n_vertices": 6,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -1.9244906503037153e+44,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -2.156476917226084e+32,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        }
+      },
+      "n_pd": 0,
+      "n_full_rank": 2,
+      "n_distinguishes": 6,
+      "any_pd": false,
+      "note": "Spectral zeta sum(|lambda|^{-s}) at s=[0.5,1,1.5,2,3]. Non-linear transform of eigenvalues might break degeneracy.",
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_combined_metric",
+      "metric": "heat_kernel + char_poly + spectral_zeta",
+      "diagrams": {
+        "A_3": {
+          "diagram": "A_3",
+          "n_vertices": 3,
+          "n_orbits": 2,
+          "feat_gram_min_eig": -3.5110803153770576e-15,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 2.681308526975237e+44,
+          "dist_gram_is_full_rank": true,
+          "dist_gram_n_positive": 2,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "A_5": {
+          "diagram": "A_5",
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "feat_gram_min_eig": -1.8278857370140324e-14,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -7.793471907973038e+43,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 3,
+          "distinguishes_orbits": true
+        },
+        "A_7": {
+          "diagram": "A_7",
+          "n_vertices": 7,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -3249432166400.0,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -1.958082254696758e+44,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 5,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        },
+        "D_4": {
+          "diagram": "D_4",
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "feat_gram_min_eig": -1.0380008262488335e+45,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": 2.0240032018121991e+43,
+          "dist_gram_is_full_rank": true,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 2,
+          "distinguishes_orbits": true
+        },
+        "D_6": {
+          "diagram": "D_6",
+          "n_vertices": 6,
+          "n_orbits": 5,
+          "feat_gram_min_eig": -9.848738359007395e+44,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -1.2778578439022372e+44,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 4,
+          "n_distinct_features": 5,
+          "distinguishes_orbits": true
+        },
+        "E_6": {
+          "diagram": "E_6",
+          "n_vertices": 6,
+          "n_orbits": 4,
+          "feat_gram_min_eig": -1.9244906503037153e+44,
+          "feat_gram_is_PD": false,
+          "dist_gram_second_min_eig": -2.156476917226084e+32,
+          "dist_gram_is_full_rank": false,
+          "dist_gram_n_positive": 3,
+          "n_distinct_features": 4,
+          "distinguishes_orbits": true
+        }
+      },
+      "n_pd": 0,
+      "n_full_rank": 2,
+      "n_distinguishes": 6,
+      "any_pd": false,
+      "all_psd": true,
+      "note": "Concatenation of all three metrics. If still PSD, the degeneracy is fundamental: same-orbit vertices have isomorphic complements, so ANY isomorphism-invariant metric assigns them the same feature vector.",
+      "PASS": false
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "experiment": "exp_10_proper_time_deformation",
+  "milestone": "milestone13",
+  "block": "D",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_time_dilation_from_boost",
+      "rapidity_results": [
+        {
+          "eta": 0.0,
+          "Lambda_00": 1.0,
+          "cosh_eta": 1.0,
+          "lambda_00_error": 0.0,
+          "deformation_rate": 1.0,
+          "interpretation": "At rapidity 0.0: time dilation = 1/cosh(0.0) = 1.000000. Moving complement deforms at 1.000000x the rate of rest frame."
+        },
+        {
+          "eta": 0.5,
+          "Lambda_00": 1.1276259652063807,
+          "cosh_eta": 1.1276259652063807,
+          "lambda_00_error": 0.0,
+          "deformation_rate": 0.886818883970074,
+          "interpretation": "At rapidity 0.5: time dilation = 1/cosh(0.5) = 0.886819. Moving complement deforms at 0.886819x the rate of rest frame."
+        },
+        {
+          "eta": 1.0,
+          "Lambda_00": 1.543080634815244,
+          "cosh_eta": 1.5430806348152437,
+          "lambda_00_error": 2.220446049250313e-16,
+          "deformation_rate": 0.6480542736638855,
+          "interpretation": "At rapidity 1.0: time dilation = 1/cosh(1.0) = 0.648054. Moving complement deforms at 0.648054x the rate of rest frame."
+        },
+        {
+          "eta": 2.0,
+          "Lambda_00": 3.7621956910836323,
+          "cosh_eta": 3.7621956910836314,
+          "lambda_00_error": 8.881784197001252e-16,
+          "deformation_rate": 0.2658022288340797,
+          "interpretation": "At rapidity 2.0: time dilation = 1/cosh(2.0) = 0.265802. Moving complement deforms at 0.265802x the rate of rest frame."
+        }
+      ],
+      "max_relative_error": 2.36079803558624e-16,
+      "interpretation": "The boost matrix Lambda has Lambda[0,0] = cosh(eta). The complement-deformation rate per coordinate time is 1/cosh(eta), which IS time dilation: a moving observer's complement changes slower per coordinate time step.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_lorentz_factor_identity",
+      "velocity_results": [
+        {
+          "v": 0.1,
+          "eta": 0.1003353477310756,
+          "gamma_from_cosh_atanh": 1.005037815259212,
+          "gamma_from_1_over_sqrt": 1.005037815259212,
+          "relative_error": 0.0
+        },
+        {
+          "v": 0.3,
+          "eta": 0.30951960420311175,
+          "gamma_from_cosh_atanh": 1.0482848367219184,
+          "gamma_from_1_over_sqrt": 1.0482848367219182,
+          "relative_error": 2.118170531011256e-16
+        },
+        {
+          "v": 0.5,
+          "eta": 0.5493061443340549,
+          "gamma_from_cosh_atanh": 1.1547005383792515,
+          "gamma_from_1_over_sqrt": 1.1547005383792517,
+          "relative_error": 1.9229626863835636e-16
+        },
+        {
+          "v": 0.8,
+          "eta": 1.0986122886681098,
+          "gamma_from_cosh_atanh": 1.6666666666666667,
+          "gamma_from_1_over_sqrt": 1.666666666666667,
+          "relative_error": 1.3322676295501876e-16
+        },
+        {
+          "v": 0.95,
+          "eta": 1.8317808230648227,
+          "gamma_from_cosh_atanh": 3.2025630761017414,
+          "gamma_from_1_over_sqrt": 3.202563076101742,
+          "relative_error": 1.386668113311984e-16
+        }
+      ],
+      "max_relative_error": 2.118170531011256e-16,
+      "interpretation": "The identity cosh(atanh(v)) = 1/sqrt(1-v^2) connects rapidity (the natural complement-deformation parameter) to velocity. gamma encodes the deformation-rate ratio between frames.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_twin_paradox",
+      "velocity": 0.8,
+      "coordinate_time": 10.0,
+      "gamma": 1.666666666666667,
+      "proper_time_rest": 10.0,
+      "proper_time_moving": 5.999999999999998,
+      "ratio": 1.6666666666666672,
+      "expected_ratio_gamma": 1.666666666666667,
+      "ratio_error": 1.3322676295501876e-16,
+      "rest_accumulates_more": true,
+      "interpretation": "Resting twin: tau = 10.00. Moving twin (v=0.8): tau = 6.00. Ratio = 1.6667 = gamma = 1.6667. The inertial worldline maximizes proper time because it minimizes the total complement-deformation: the complement changes at maximal rate (1x) along the undeformed path.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_basin_relaxation_modulates_time",
+      "basin_shallow_depth": 5,
+      "basin_shallow_coupling": 0.09016994374947422,
+      "basin_deep_depth": 50,
+      "basin_deep_coupling": 3.5531863700963374e-11,
+      "coupling_ratio": 2537720636.000004,
+      "log_ratio": 21.654532127682156,
+      "expected_log_ratio": 21.654532127682156,
+      "log_ratio_error": 0.0,
+      "interpretation": "Shallow basin (depth=5): coupling = phi^{-5} = 9.016994e-02. Deep basin (depth=50): coupling = phi^{-50} = 3.553186e-11. Ratio = phi^45 = 2.537721e+09. This models gravitational time dilation: stronger coupling (more connections, shallower basin) = faster local complement dynamics = faster proper time rate. The phi^depth hierarchy IS the gravitational redshift ladder.",
+      "PASS": true
+    }
+  }
+}

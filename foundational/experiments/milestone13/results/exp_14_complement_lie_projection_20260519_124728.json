@@ -1,0 +1,204 @@
+{
+  "experiment": "exp_14_complement_lie_projection",
+  "milestone": "milestone13.5",
+  "block": "investigation",
+  "version": "v0.1",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_projection_well_defined",
+      "n_diagrams": 5,
+      "diagram_results": [
+        {
+          "name": "A_3",
+          "n_orbits": 2,
+          "orbit_sizes": [
+            2,
+            1
+          ],
+          "max_within_orbit_std": 0.0,
+          "well_defined": true
+        },
+        {
+          "name": "A_5",
+          "n_orbits": 3,
+          "orbit_sizes": [
+            2,
+            2,
+            1
+          ],
+          "max_within_orbit_std": 0.0,
+          "well_defined": true
+        },
+        {
+          "name": "D_4",
+          "n_orbits": 2,
+          "orbit_sizes": [
+            3,
+            1
+          ],
+          "max_within_orbit_std": 7.310811248949449e-17,
+          "well_defined": true
+        },
+        {
+          "name": "D_6",
+          "n_orbits": 5,
+          "orbit_sizes": [
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "max_within_orbit_std": 0.0,
+          "well_defined": true
+        },
+        {
+          "name": "E_6",
+          "n_orbits": 4,
+          "orbit_sizes": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "max_within_orbit_std": 1.9551690309683962e-16,
+          "well_defined": true
+        }
+      ],
+      "all_well_defined": true,
+      "note": "Vertices in the same orbit have identical complement spectra by definition (same spectral invariant). Projection to orbit quotient is well-defined.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_projection_equivariance",
+      "a3_equivariant": true,
+      "d4_equivariant": true,
+      "e6_equivariant": true,
+      "all_equivariant": true,
+      "note": "Orbit projection commutes with Dynkin diagram symmetries. This is necessary for the projection to be a valid bridge from complement-space to weight-space.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_gram_matrix_definiteness",
+      "gram_results": [
+        {
+          "name": "A_3",
+          "n_orbits": 2,
+          "gram_eigenvalues": [
+            0.0,
+            2.0
+          ],
+          "min_eigenvalue": 0.0,
+          "is_pd": false,
+          "is_psd": true
+        },
+        {
+          "name": "A_5",
+          "n_orbits": 3,
+          "gram_eigenvalues": [
+            5.868057911329397e-16,
+            1.1738287091779425,
+            12.82617129082206
+          ],
+          "min_eigenvalue": 5.868057911329397e-16,
+          "is_pd": false,
+          "is_psd": true
+        },
+        {
+          "name": "D_4",
+          "n_orbits": 2,
+          "gram_eigenvalues": [
+            0.0,
+            4.000000000000001
+          ],
+          "min_eigenvalue": 0.0,
+          "is_pd": false,
+          "is_psd": true
+        },
+        {
+          "name": "D_6",
+          "n_orbits": 5,
+          "gram_eigenvalues": [
+            -1.5308470231155134e-15,
+            -9.607068718273607e-16,
+            3.900689165833604e-15,
+            1.8420810187206578,
+            30.157918981279348
+          ],
+          "min_eigenvalue": -1.5308470231155134e-15,
+          "is_pd": false,
+          "is_psd": true
+        },
+        {
+          "name": "E_6",
+          "n_orbits": 4,
+          "gram_eigenvalues": [
+            -5.1093290076795395e-15,
+            5.851701823318161e-16,
+            0.5162810464591762,
+            25.483718953540823
+          ],
+          "min_eigenvalue": -5.1093290076795395e-15,
+          "is_pd": false,
+          "is_psd": true
+        }
+      ],
+      "n_pd": 0,
+      "n_psd": 5,
+      "n_tested": 5,
+      "all_pd": false,
+      "all_psd": true,
+      "note": "Tests whether orbit-quotient Gram matrix is positive-definite. If PD: complement -> weight-space projection is a metric embedding. If only PSD: complement degeneracy is fundamental (different orbits can have linearly dependent spectra).",
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_non_ade_fail_root_system",
+      "ade_properties": [
+        {
+          "name": "A_4",
+          "n_orbits": 2,
+          "spectral_radius": 1.6180339887498951,
+          "is_ade_spectral": true,
+          "simplicity": 1.0
+        },
+        {
+          "name": "D_5",
+          "n_orbits": 4,
+          "spectral_radius": 1.8477590650225744,
+          "is_ade_spectral": true,
+          "simplicity": 1.0
+        }
+      ],
+      "random_properties": [
+        {
+          "name": "random_42",
+          "n_orbits": 4,
+          "spectral_radius": 2.135779205069857,
+          "is_ade_spectral": false,
+          "simplicity": 1.0
+        },
+        {
+          "name": "random_137",
+          "n_orbits": 2,
+          "spectral_radius": 2.449489742783178,
+          "is_ade_spectral": false,
+          "simplicity": 1.0
+        },
+        {
+          "name": "random_256",
+          "n_orbits": 4,
+          "spectral_radius": 2.1357792050698574,
+          "is_ade_spectral": false,
+          "simplicity": 1.0
+        }
+      ],
+      "ade_pass_spectral": true,
+      "random_fail_count": 3,
+      "random_mostly_fail": true,
+      "note": "ADE graphs have spectral radius < 2 (ADE classification theorem). Non-ADE graphs typically violate this, showing the orbit quotient projection only produces root-system-like structure for ADE inputs.",
+      "PASS": true
+    }
+  }
+}

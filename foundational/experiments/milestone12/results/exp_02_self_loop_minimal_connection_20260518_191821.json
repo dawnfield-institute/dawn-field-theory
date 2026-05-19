@@ -1,0 +1,69 @@
+{
+  "experiment": "exp_02_self_loop_minimal_connection",
+  "milestone": "milestone12",
+  "block": "A",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_self_loop_identity",
+      "self_loop_adjacency": [
+        [
+          1.0
+        ]
+      ],
+      "powers_match_identity": true,
+      "spectral_radius": 1.0,
+      "spectral_is_one": true,
+      "pac_from_self_loop_converges_to_phi": true,
+      "phi_convergence_error": 0.0,
+      "note": "Self-loop = identity under composition. PAC recursion FROM self-loop gives phi. Self-application is what connection looks like when both endpoints are the same locus.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_self_applicator_matches",
+      "sa_fixed_point": 1.618033988749895,
+      "phi": 1.618033988749895,
+      "sa_matches_phi": true,
+      "sa_convergence_error": 0.0,
+      "self_application_identity": 0.0,
+      "characteristic_equation": 0.0,
+      "trajectory_length": 51,
+      "convergence_by_step_10": false,
+      "note": "Self-application (x -> 1+1/x) converges to phi. This IS PAC recursion: x = x/phi + x/phi^2, i.e., a thing IS its two self-similar parts.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_a1_generates_su2",
+      "A1_adjoint_dim": 3,
+      "adjoint_dim_is_3": true,
+      "adjoint_dim_is_F4": true,
+      "algebra_closes": true,
+      "max_closure_error": 1.1102230246251565e-16,
+      "is_compact": true,
+      "killing_eigenvalues": [
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "J12_commutation_error": 0.0,
+      "group_name": "SU(2)",
+      "note": "A_1 = two nodes, one edge = simplest non-trivial connection. Generates SU(2) with 3 = F_4 generators. Killing form negative-definite => compact.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_m10_derivation_chain",
+      "step1_self_loop_identity": true,
+      "step2_self_application_phi": true,
+      "step3_phi_defines_pac": true,
+      "step4_A1_gives_SU2": true,
+      "step5_A2_gives_SU3": true,
+      "step6_gauge_closure_F7": true,
+      "chain_complete": true,
+      "xi_from_phi_gamma": 0.0,
+      "xi_exact": true,
+      "note": "Connection language reproduces M10 chain: self-loop (identity) -> self-application (phi) -> PAC recursion -> A_1 (SU(2)) -> A_2 (SU(3)) -> F_7=13 (closure). Xi = gamma + ln(phi) from boundary-crossing cost.",
+      "PASS": true
+    }
+  }
+}

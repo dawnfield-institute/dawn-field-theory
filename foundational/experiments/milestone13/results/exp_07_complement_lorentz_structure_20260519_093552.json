@@ -1,0 +1,209 @@
+{
+  "experiment": "exp_07_complement_lorentz_structure",
+  "milestone": "milestone13",
+  "block": "C",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_killing_form_signature",
+      "su2_killing_eigenvalues": [
+        2.0,
+        2.0,
+        1.9999999999999991
+      ],
+      "su2_signature": "(3, 0)",
+      "su2_definite": false,
+      "sl2c_killing_eigenvalues": [
+        2.0000000000000004,
+        1.9999999999999996,
+        1.9999999999999984,
+        -1.999999999999999,
+        -1.9999999999999991,
+        -2.0000000000000004
+      ],
+      "sl2c_signature": "(3, 3)",
+      "sl2c_indefinite": true,
+      "interpretation": "PAC-only (SU(2)): negative-definite Killing form = compact group. PAC+SEC (SL(2,C)): indefinite Killing form = non-compact group. The complement metric transitions from definite to indefinite under SEC complexification, mirroring the SU(2) -> SL(2,C) step.",
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_so31_commutation_relations",
+      "weyl_j3_flips": true,
+      "weyl_j2_invariant": true,
+      "weyl_generates_z2": true,
+      "n_relations_checked": 18,
+      "max_commutator_error": 0.0,
+      "relation_errors": [
+        {
+          "type": "[J1,J2]",
+          "error": 0.0
+        },
+        {
+          "type": "[J1,J3]",
+          "error": 0.0
+        },
+        {
+          "type": "[J2,J3]",
+          "error": 0.0
+        },
+        {
+          "type": "[K1,K2]",
+          "error": 0.0
+        },
+        {
+          "type": "[K1,K3]",
+          "error": 0.0
+        },
+        {
+          "type": "[K2,K3]",
+          "error": 0.0
+        },
+        {
+          "type": "[J1,K2]",
+          "error": 0.0
+        },
+        {
+          "type": "[J1,K3]",
+          "error": 0.0
+        },
+        {
+          "type": "[J2,K1]",
+          "error": 0.0
+        },
+        {
+          "type": "[J2,K3]",
+          "error": 0.0
+        },
+        {
+          "type": "[J3,K1]",
+          "error": 0.0
+        },
+        {
+          "type": "[J3,K2]",
+          "error": 0.0
+        },
+        {
+          "type": "[G1,G1]",
+          "error": 0.0
+        },
+        {
+          "type": "[G2,G2]",
+          "error": 0.0
+        },
+        {
+          "type": "[G3,G3]",
+          "error": 0.0
+        },
+        {
+          "type": "[G4,G4]",
+          "error": 0.0
+        },
+        {
+          "type": "[G5,G5]",
+          "error": 0.0
+        },
+        {
+          "type": "[G6,G6]",
+          "error": 0.0
+        }
+      ],
+      "interpretation": "The complement operation on A_1 generates the Z_2 Weyl reflection (w*J_3*w^{-1} = -J_3). The Lie algebra of the group containing this reflection is su(2). SEC complexification extends su(2) -> sl(2,C) ~ so(3,1). R_k = J_k are complement-preserving (compact, PAC); B_k = iJ_k are complement-breaking (non-compact, SEC). All 15 commutation relations verified.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_invariant_preserved",
+      "invariant_form": "Levi-Civita epsilon = [[0,1],[-1,0]]",
+      "transforms_checked": 5,
+      "max_error": 1.1102230246251565e-16,
+      "transform_results": [
+        {
+          "name": "rotation_z_0.5",
+          "invariant_error": 1.1102230246251565e-16,
+          "det_Lambda": 0.9999999999999999,
+          "preserved": true
+        },
+        {
+          "name": "rotation_x_0.3",
+          "invariant_error": 1.1102230246251565e-16,
+          "det_Lambda": 0.9999999999999999,
+          "preserved": true
+        },
+        {
+          "name": "boost_x_0.7",
+          "invariant_error": 0.0,
+          "det_Lambda": 1.0,
+          "preserved": true
+        },
+        {
+          "name": "boost_z_1.0",
+          "invariant_error": 0.0,
+          "det_Lambda": 1.0,
+          "preserved": true
+        },
+        {
+          "name": "combined",
+          "invariant_error": 0.0,
+          "det_Lambda": 1.0,
+          "preserved": true
+        }
+      ],
+      "interpretation": "The Levi-Civita tensor epsilon is the SL(2,C) invariant form on spinors. Lambda^T epsilon Lambda = epsilon for all Lorentz transformations. This is the spinorial version of the Minkowski metric invariance.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_boost_eigenvalues",
+      "rapidity_results": [
+        {
+          "eta": 0.5,
+          "eigenvalues": [
+            1.2840254166877414,
+            0.7788007830714049
+          ],
+          "expected": [
+            1.2840254166877414,
+            0.7788007830714049
+          ],
+          "max_eigenvalue_error": 0.0,
+          "relative_error": 0.0,
+          "velocity": 0.46211715726000974,
+          "v_less_than_1": true
+        },
+        {
+          "eta": 1.0,
+          "eigenvalues": [
+            1.6487212707001282,
+            0.6065306597126334
+          ],
+          "expected": [
+            1.6487212707001282,
+            0.6065306597126334
+          ],
+          "max_eigenvalue_error": 0.0,
+          "relative_error": 0.0,
+          "velocity": 0.7615941559557649,
+          "v_less_than_1": true
+        },
+        {
+          "eta": 2.0,
+          "eigenvalues": [
+            2.718281828459045,
+            0.36787944117144233
+          ],
+          "expected": [
+            2.718281828459045,
+            0.36787944117144233
+          ],
+          "max_eigenvalue_error": 0.0,
+          "relative_error": 0.0,
+          "velocity": 0.9640275800758169,
+          "v_less_than_1": true
+        }
+      ],
+      "max_relative_error": 0.0,
+      "all_velocities_subluminal": true,
+      "interpretation": "Boost eigenvalues exp(+/-eta/2) encode the Doppler factor. The velocity v = tanh(eta) is bounded by 1 for all finite rapidity, which is the complement-deformation coherence limit (= speed of light).",
+      "PASS": true
+    }
+  }
+}

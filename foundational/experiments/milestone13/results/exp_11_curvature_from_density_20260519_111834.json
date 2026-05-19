@@ -1,0 +1,490 @@
+{
+  "experiment": "exp_11_curvature_from_density",
+  "milestone": "milestone13",
+  "block": "D",
+  "version": "hardened_v0.3",
+  "score": 2,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_flat_regular_graph",
+      "regular_graphs": [
+        {
+          "name": "cycle_C8",
+          "n_vertices": 8,
+          "regularity": 2,
+          "n_edges": 8,
+          "max_magnitude": 1.4425827483661892e-15,
+          "flat": true
+        },
+        {
+          "name": "complete_K6",
+          "n_vertices": 6,
+          "regularity": 5,
+          "n_edges": 15,
+          "max_magnitude": 0.0,
+          "flat": true
+        },
+        {
+          "name": "petersen",
+          "n_vertices": 10,
+          "regularity": 3,
+          "n_edges": 15,
+          "max_magnitude": 3.400256261246416e-15,
+          "flat": true
+        }
+      ],
+      "all_regular_flat": true,
+      "perturbed_graph": {
+        "base": "cycle_C8",
+        "perturbation": "edge (0,1) weight 1.0 -> 1.5",
+        "max_magnitude": 0.35623609183625776,
+        "nonzero": true
+      },
+      "interpretation": "Three vertex-transitive regular graphs tested: C_8 max=1.44e-15, K_6 max=0.00e+00, Petersen max=3.40e-15. All below 1e-8: True. Perturbed C_8 (edge weight 1.5) max=3.56e-01, measurably non-zero (>1e-10): True. Vertex-transitivity guarantees identical complement spectra for all vertices, so all transformations are trivial. Breaking symmetry with a weight perturbation immediately produces non-zero transformation magnitude.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_curved_density_lump",
+      "lump_graph": {
+        "n_vertices": 12,
+        "lump_center": 6,
+        "lump_radius": 2,
+        "lump_extra_edges": 4,
+        "n_edges": 15,
+        "max_magnitude": 1.3724563860756642,
+        "median_magnitude": 0.6150477248982508,
+        "dispersion": 1.2314632353167616,
+        "density_field": [
+          0.09090909090909091,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.45454545454545453,
+          0.2727272727272727,
+          0.2727272727272727,
+          0.36363636363636365,
+          0.2727272727272727,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.09090909090909091
+        ]
+      },
+      "control_graph": {
+        "type": "chain (no lump)",
+        "n_vertices": 12,
+        "n_edges": 11,
+        "max_magnitude": 0.5695873407098292,
+        "median_magnitude": 0.52294999761578,
+        "dispersion": 0.08918126648183759,
+        "density_field": [
+          0.09090909090909091,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.18181818181818182,
+          0.09090909090909091
+        ]
+      },
+      "criteria": {
+        "lump_dispersion_gt_0.5": true,
+        "control_dispersion_lt_0.3": true,
+        "lump_max_gt_2x_control_max": true
+      },
+      "interpretation": "Lump graph dispersion (max-median)/median = 1.231 (criterion: >0.5, PASS). Control chain dispersion = 0.089 (criterion: <0.3, PASS). Lump max magnitude 1.3725 vs control max 0.5696, ratio = 2.41x (criterion: >2x, PASS). Non-uniform density creates non-uniform complement-transformations. This variation IS curvature in the complement framework.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_geodesic_vs_shortest",
+      "configurations": [
+        {
+          "name": "moderate (cluster {0,1,2,6,7})",
+          "start": 0,
+          "end": 11,
+          "shortest_path": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            11
+          ],
+          "geodesic_path": [
+            0,
+            1,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "shortest_cost": 4.109630658631242,
+          "geodesic_cost": 3.716460683070969,
+          "cost_reduction_pct": 9.567039187196022,
+          "paths_differ": true,
+          "vertex_difference": true
+        },
+        {
+          "name": "high-contrast (cluster {0,1,2,3,6,7,8}), pair 0->11",
+          "start": 0,
+          "end": 11,
+          "shortest_path": [
+            0,
+            3,
+            4,
+            5,
+            11
+          ],
+          "geodesic_path": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            10,
+            11
+          ],
+          "shortest_cost": 3.4490803491971502,
+          "geodesic_cost": 3.1533500041563527,
+          "cost_reduction_pct": 8.574179639208328,
+          "paths_differ": true,
+          "vertex_difference": true
+        },
+        {
+          "name": "high-contrast (cluster {0,1,2,3,6,7,8}), pair 0->8",
+          "start": 0,
+          "end": 8,
+          "shortest_path": [
+            0,
+            8
+          ],
+          "geodesic_path": [
+            0,
+            1,
+            2,
+            8
+          ],
+          "shortest_cost": 0.36434607965507426,
+          "geodesic_cost": 0.36434607965507426,
+          "cost_reduction_pct": 0.0,
+          "paths_differ": true,
+          "vertex_difference": true
+        }
+      ],
+      "control": {
+        "graph_type": "uniform chain (12 vertices)",
+        "shortest_path": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "geodesic_path": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "paths_equal": true
+      },
+      "criteria": {
+        "any_cost_reduction_gt_10pct": false,
+        "any_vertex_difference": true,
+        "control_paths_equal": true
+      },
+      "interpretation": "Tested 3 curved-space configurations. Cost reductions: ['9.6%', '8.6%', '0.0%']. Path vertex differences: [True, True, True]. At least one >10% reduction: False. At least one vertex difference: True. Uniform chain control \u2014 geodesic equals shortest: True. Density gradients bend geodesics away from hop-minimal paths \u2014 the discrete analogue of gravitational lensing.",
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_curvature_scales_with_gradient",
+      "n_data_points": 18,
+      "parameter_grid": [
+        {
+          "n": 10,
+          "extra_edges": 1
+        },
+        {
+          "n": 10,
+          "extra_edges": 2
+        },
+        {
+          "n": 10,
+          "extra_edges": 3
+        },
+        {
+          "n": 10,
+          "extra_edges": 4
+        },
+        {
+          "n": 10,
+          "extra_edges": 5
+        },
+        {
+          "n": 10,
+          "extra_edges": 6
+        },
+        {
+          "n": 12,
+          "extra_edges": 1
+        },
+        {
+          "n": 12,
+          "extra_edges": 2
+        },
+        {
+          "n": 12,
+          "extra_edges": 3
+        },
+        {
+          "n": 12,
+          "extra_edges": 4
+        },
+        {
+          "n": 12,
+          "extra_edges": 5
+        },
+        {
+          "n": 12,
+          "extra_edges": 6
+        },
+        {
+          "n": 14,
+          "extra_edges": 1
+        },
+        {
+          "n": 14,
+          "extra_edges": 2
+        },
+        {
+          "n": 14,
+          "extra_edges": 3
+        },
+        {
+          "n": 14,
+          "extra_edges": 4
+        },
+        {
+          "n": 14,
+          "extra_edges": 5
+        },
+        {
+          "n": 14,
+          "extra_edges": 6
+        }
+      ],
+      "graph_results": [
+        {
+          "n": 10,
+          "extra_edges": 1,
+          "lump_center": 5,
+          "density_gradient": 0.2222222222222222,
+          "mean_curvature": 0.2181921863102909
+        },
+        {
+          "n": 10,
+          "extra_edges": 2,
+          "lump_center": 5,
+          "density_gradient": 0.3333333333333333,
+          "mean_curvature": 0.20480058126553793
+        },
+        {
+          "n": 10,
+          "extra_edges": 3,
+          "lump_center": 5,
+          "density_gradient": 0.4444444444444445,
+          "mean_curvature": 0.3126132766441264
+        },
+        {
+          "n": 10,
+          "extra_edges": 4,
+          "lump_center": 5,
+          "density_gradient": 0.4444444444444445,
+          "mean_curvature": 0.3103810749940523
+        },
+        {
+          "n": 10,
+          "extra_edges": 5,
+          "lump_center": 5,
+          "density_gradient": 0.4444444444444445,
+          "mean_curvature": 0.39271482752650805
+        },
+        {
+          "n": 10,
+          "extra_edges": 6,
+          "lump_center": 5,
+          "density_gradient": 0.4444444444444445,
+          "mean_curvature": 0.44573378230698724
+        },
+        {
+          "n": 12,
+          "extra_edges": 1,
+          "lump_center": 6,
+          "density_gradient": 0.1818181818181818,
+          "mean_curvature": 0.13019387796452397
+        },
+        {
+          "n": 12,
+          "extra_edges": 2,
+          "lump_center": 6,
+          "density_gradient": 0.2727272727272727,
+          "mean_curvature": 0.20933401659124612
+        },
+        {
+          "n": 12,
+          "extra_edges": 3,
+          "lump_center": 6,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.2516429194186433
+        },
+        {
+          "n": 12,
+          "extra_edges": 4,
+          "lump_center": 6,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.23279044369267535
+        },
+        {
+          "n": 12,
+          "extra_edges": 5,
+          "lump_center": 6,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.2323192348545083
+        },
+        {
+          "n": 12,
+          "extra_edges": 6,
+          "lump_center": 6,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.40152431471153477
+        },
+        {
+          "n": 14,
+          "extra_edges": 1,
+          "lump_center": 7,
+          "density_gradient": 0.15384615384615385,
+          "mean_curvature": 0.13639581611319992
+        },
+        {
+          "n": 14,
+          "extra_edges": 2,
+          "lump_center": 7,
+          "density_gradient": 0.23076923076923078,
+          "mean_curvature": 0.24330850927807807
+        },
+        {
+          "n": 14,
+          "extra_edges": 3,
+          "lump_center": 7,
+          "density_gradient": 0.3076923076923077,
+          "mean_curvature": 0.3220576203229878
+        },
+        {
+          "n": 14,
+          "extra_edges": 4,
+          "lump_center": 7,
+          "density_gradient": 0.3076923076923077,
+          "mean_curvature": 0.22608152304735243
+        },
+        {
+          "n": 14,
+          "extra_edges": 5,
+          "lump_center": 7,
+          "density_gradient": 0.3076923076923077,
+          "mean_curvature": 0.2045581266858666
+        },
+        {
+          "n": 14,
+          "extra_edges": 6,
+          "lump_center": 7,
+          "density_gradient": 0.3076923076923077,
+          "mean_curvature": 0.29773715808707446
+        }
+      ],
+      "gradients": [
+        0.2222222222222222,
+        0.3333333333333333,
+        0.4444444444444445,
+        0.4444444444444445,
+        0.4444444444444445,
+        0.4444444444444445,
+        0.1818181818181818,
+        0.2727272727272727,
+        0.36363636363636365,
+        0.36363636363636365,
+        0.36363636363636365,
+        0.36363636363636365,
+        0.15384615384615385,
+        0.23076923076923078,
+        0.3076923076923077,
+        0.3076923076923077,
+        0.3076923076923077,
+        0.3076923076923077
+      ],
+      "curvatures": [
+        0.2181921863102909,
+        0.20480058126553793,
+        0.3126132766441264,
+        0.3103810749940523,
+        0.39271482752650805,
+        0.44573378230698724,
+        0.13019387796452397,
+        0.20933401659124612,
+        0.2516429194186433,
+        0.23279044369267535,
+        0.2323192348545083,
+        0.40152431471153477,
+        0.13639581611319992,
+        0.24330850927807807,
+        0.3220576203229878,
+        0.22608152304735243,
+        0.2045581266858666,
+        0.29773715808707446
+      ],
+      "pearson_r": 0.7648480007102151,
+      "pearson_p": 0.00021784455481831677,
+      "control": {
+        "graph_sizes": [
+          10,
+          12,
+          14
+        ],
+        "curvatures": [
+          0.1896233693960419,
+          0.13999412231543684,
+          0.1804650546707648
+        ],
+        "mean_curvature": 0.17002751546074787,
+        "near_zero": false
+      },
+      "criteria": {
+        "r_gt_0.7": true,
+        "p_lt_0.05": true,
+        "control_curvature_lt_0.01": false
+      },
+      "interpretation": "Pearson correlation between density gradient and mean curvature: r = 0.7648, p = 2.18e-04 (18 data points). Criterion r > 0.7: PASS. Criterion p < 0.05: PASS. Uniform chain controls: mean curvature = 0.170028 (criterion < 0.01: FAIL). Larger density gradients produce larger curvature, confirming that curvature IS the non-uniformity of complement-transformations caused by connection-density gradients.",
+      "PASS": false
+    }
+  }
+}

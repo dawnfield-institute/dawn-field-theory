@@ -1,0 +1,325 @@
+{
+  "experiment": "exp_11_lorentz_from_ade",
+  "milestone": "milestone12",
+  "block": "D",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_sl2c_isomorphic_to_so31",
+      "JJ_error": 0.0,
+      "KK_error": 0.0,
+      "JK_error": 0.0,
+      "primary_relations_exact": true,
+      "max_closure_error": 1.1188630228279524e-16,
+      "algebra_closes": true,
+      "all_cyclic_errors": {
+        "J1J2": 0.0,
+        "K1K2": 0.0,
+        "J1K2": 0.0,
+        "J1J3": 0.0,
+        "K1K3": 0.0,
+        "J1K3": 0.0,
+        "J2J1": 0.0,
+        "K2K1": 0.0,
+        "J2K1": 0.0,
+        "J2J3": 0.0,
+        "K2K3": 0.0,
+        "J2K3": 0.0,
+        "J3J1": 0.0,
+        "K3K1": 0.0,
+        "J3K1": 0.0,
+        "J3J2": 0.0,
+        "K3K2": 0.0,
+        "J3K2": 0.0
+      },
+      "max_cyclic_error": 0.0,
+      "all_cyclic_exact": true,
+      "note": "All 15 independent commutators verified to machine precision. sl(2,C) and so(3,1) are the same Lie algebra. The Lorentz group is complexified A_1.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_rotations_pac_boosts_sec",
+      "rotation_properties": [
+        {
+          "generator": "J_1",
+          "is_hermitian": true,
+          "eigenvalues": [
+            {
+              "real": 0.5,
+              "imag": 0.0
+            },
+            {
+              "real": -0.5,
+              "imag": 0.0
+            }
+          ],
+          "eigenvalues_purely_real": true,
+          "interpretation": "PAC: Hermitian, real eigenvalues, exp(i*theta*J) is unitary"
+        },
+        {
+          "generator": "J_2",
+          "is_hermitian": true,
+          "eigenvalues": [
+            {
+              "real": 0.5,
+              "imag": 0.0
+            },
+            {
+              "real": -0.5,
+              "imag": 0.0
+            }
+          ],
+          "eigenvalues_purely_real": true,
+          "interpretation": "PAC: Hermitian, real eigenvalues, exp(i*theta*J) is unitary"
+        },
+        {
+          "generator": "J_3",
+          "is_hermitian": true,
+          "eigenvalues": [
+            {
+              "real": 0.5,
+              "imag": 0.0
+            },
+            {
+              "real": -0.5,
+              "imag": 0.0
+            }
+          ],
+          "eigenvalues_purely_real": true,
+          "interpretation": "PAC: Hermitian, real eigenvalues, exp(i*theta*J) is unitary"
+        }
+      ],
+      "boost_properties": [
+        {
+          "generator": "K_1",
+          "is_anti_hermitian": true,
+          "eigenvalues": [
+            {
+              "real": 0.0,
+              "imag": 0.5000000000000001
+            },
+            {
+              "real": 1.3877787807814457e-17,
+              "imag": -0.5
+            }
+          ],
+          "eigenvalues_purely_imaginary": true,
+          "interpretation": "SEC: anti-Hermitian, imaginary eigenvalues, exp(eta*J) is non-unitary"
+        },
+        {
+          "generator": "K_2",
+          "is_anti_hermitian": true,
+          "eigenvalues": [
+            {
+              "real": 0.0,
+              "imag": 0.5000000000000001
+            },
+            {
+              "real": 1.3877787807814457e-17,
+              "imag": -0.5
+            }
+          ],
+          "eigenvalues_purely_imaginary": true,
+          "interpretation": "SEC: anti-Hermitian, imaginary eigenvalues, exp(eta*J) is non-unitary"
+        },
+        {
+          "generator": "K_3",
+          "is_anti_hermitian": true,
+          "eigenvalues": [
+            {
+              "real": 0.0,
+              "imag": 0.5
+            },
+            {
+              "real": -0.0,
+              "imag": -0.5
+            }
+          ],
+          "eigenvalues_purely_imaginary": true,
+          "interpretation": "SEC: anti-Hermitian, imaginary eigenvalues, exp(eta*J) is non-unitary"
+        }
+      ],
+      "all_rotations_correct": true,
+      "all_boosts_correct": true,
+      "opposite_hermiticity": true,
+      "exp_rotation_is_unitary": true,
+      "exp_boost_is_not_unitary": true,
+      "note": "Rotations (J_i=sigma_i/2): Hermitian, real eigenvalues, exp(i*theta*J) unitary (PAC). Boosts (K_i=i*J_i): anti-Hermitian, imaginary eigenvalues, exp(eta*J) non-unitary (SEC). Opposite Hermiticity = PAC/SEC split in the algebra.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_speed_of_light_coherence_limit",
+      "rotation_eigenvalues": {
+        "J_1": [
+          {
+            "real": 0.5,
+            "imag": 0.0
+          },
+          {
+            "real": -0.5,
+            "imag": 0.0
+          }
+        ],
+        "J_2": [
+          {
+            "real": 0.5,
+            "imag": 0.0
+          },
+          {
+            "real": -0.5,
+            "imag": 0.0
+          }
+        ],
+        "J_3": [
+          {
+            "real": 0.5,
+            "imag": 0.0
+          },
+          {
+            "real": -0.5,
+            "imag": 0.0
+          }
+        ]
+      },
+      "boost_eigenvalues": {
+        "K_1": [
+          {
+            "real": 0.0,
+            "imag": 0.5000000000000001
+          },
+          {
+            "real": 1.3877787807814457e-17,
+            "imag": -0.5
+          }
+        ],
+        "K_2": [
+          {
+            "real": 0.0,
+            "imag": 0.5000000000000001
+          },
+          {
+            "real": 1.3877787807814457e-17,
+            "imag": -0.5
+          }
+        ],
+        "K_3": [
+          {
+            "real": 0.0,
+            "imag": 0.5
+          },
+          {
+            "real": -0.0,
+            "imag": -0.5
+          }
+        ]
+      },
+      "all_rotation_eigenvalues_real": true,
+      "all_boost_eigenvalues_imaginary": true,
+      "rotation_max_magnitudes": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "boost_max_magnitudes": [
+        0.5000000000000001,
+        0.5000000000000001,
+        0.5
+      ],
+      "isotropic": true,
+      "eigenvalue_magnitude": 0.5,
+      "expected_magnitude": 0.5,
+      "magnitude_correct": true,
+      "all_subluminal": true,
+      "tanh_10_approaches_1": true,
+      "boost_matrix_eigenvalues_real": true,
+      "note": "J_i (Hermitian): real eigenvalues +/-1/2. K_i (anti-Hermitian): imaginary eigenvalues +/-i/2. All have magnitude 1/2 (isotropy of light speed). v = c*tanh(eta) < c for all finite rapidity: the speed of light is the coherence limit of SEC boosts.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_killing_form_signature",
+      "killing_form_real_part": [
+        [
+          1.9999999999999996,
+          4.163336342344336e-17,
+          1.1102230246251565e-16,
+          -3.608224830031758e-16,
+          6.700788708272327e-17,
+          -1.3866695599588098e-32
+        ],
+        [
+          4.163336342344336e-17,
+          1.9999999999999993,
+          6.503350947925912e-33,
+          6.700788708272327e-17,
+          1.225190383139811e-16,
+          -6.243238306874692e-33
+        ],
+        [
+          1.1102230246251565e-16,
+          6.503350947925912e-33,
+          2.0,
+          -1.3866695599588098e-32,
+          -9.244463733058732e-33,
+          -2.3830344468919474e-16
+        ],
+        [
+          -3.608224830031758e-16,
+          6.700788708272327e-17,
+          -1.3866695599588098e-32,
+          -1.9999999999999996,
+          -4.163336342344336e-17,
+          -1.1102230246251565e-16
+        ],
+        [
+          6.700788708272327e-17,
+          1.225190383139811e-16,
+          -6.243238306874692e-33,
+          -4.163336342344336e-17,
+          -1.9999999999999993,
+          -6.503350947925912e-33
+        ],
+        [
+          -1.3866695599588098e-32,
+          -9.244463733058732e-33,
+          -2.3830344468919474e-16,
+          -1.1102230246251565e-16,
+          -6.503350947925912e-33,
+          -2.0
+        ]
+      ],
+      "killing_form_imaginary_norm": 2.0,
+      "B_real_symmetric": true,
+      "eigenvalues": [
+        2.0000000000000004,
+        1.9999999999999996,
+        1.9999999999999984,
+        -1.999999999999999,
+        -1.9999999999999991,
+        -2.0000000000000004
+      ],
+      "n_positive": 3,
+      "n_negative": 3,
+      "n_zero": 0,
+      "signature": "(3, 3)",
+      "signature_correct": true,
+      "rotation_block_eigenvalues": [
+        1.9999999999999996,
+        1.9999999999999996,
+        2.0
+      ],
+      "rotation_block_definite": true,
+      "boost_block_eigenvalues": [
+        -2.0,
+        -1.9999999999999996,
+        -1.9999999999999996
+      ],
+      "boost_block_definite": true,
+      "opposite_signs": true,
+      "cross_block_norm": 3.608224830031758e-16,
+      "cross_zero": true,
+      "note": "Killing form of sl(2,C) has signature (3,3): indefinite, encoding Lorentzian geometry. Rotation block and boost block have opposite-sign eigenvalues (the PAC/SEC split). Cross block of B_real vanishes. The invariant interval ds^2 = -dt^2 + dx^2 + dy^2 + dz^2 is encoded in this indefinite signature.",
+      "PASS": true
+    }
+  }
+}

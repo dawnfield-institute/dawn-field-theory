@@ -1,0 +1,137 @@
+{
+  "experiment": "exp_12_cross_milestone_compatibility",
+  "milestone": "milestone13",
+  "block": "E",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_core_constants_unchanged",
+      "checks": {
+        "PHI": {
+          "value": 1.618033988749895,
+          "expected": 1.618033988749895,
+          "exact_match": true
+        },
+        "LN_PHI": {
+          "value": 0.48121182505960347,
+          "expected": 0.48121182505960347,
+          "exact_match": true
+        },
+        "XI_BALANCE": {
+          "value": 1.0584274899611363,
+          "expected_approx": 1.0584,
+          "computed_from_parts": 1.0584274899611363,
+          "matches_4dp": true,
+          "self_consistent": true
+        },
+        "ALPHA_EM": {
+          "value": 0.0072973525693,
+          "inverse": 137.0359990836958,
+          "expected_inverse": 137.036,
+          "relative_error": 6.6865947801449245e-09,
+          "matches_6sf": true
+        }
+      },
+      "all_pass": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_m12_ade_compatible",
+      "checks": {
+        "A1_adjoint": {
+          "adjoint_dim": 3,
+          "is_F4": true,
+          "is_3": true,
+          "group": "SU(2)",
+          "verified": true
+        },
+        "A2_adjoint": {
+          "adjoint_dim": 8,
+          "is_F6": true,
+          "is_8": true,
+          "group": "SU(3)",
+          "verified": true
+        },
+        "A5_complement": {
+          "parent": "A_5",
+          "removed_vertex": 2,
+          "sub_vertices": 4,
+          "sub_edges": 2,
+          "recognized": true
+        },
+        "F7_closure": {
+          "F7": 13,
+          "decomposition": "1 + 3 + 8 + 1",
+          "sum": 13,
+          "is_13": true,
+          "note": "SM gauge content: U(1)[1] + SU(2)[3] + SU(3)[8] + U(1)[1] = 13 = F_7"
+        }
+      },
+      "all_pass": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_m12_lorentz_compatible",
+      "checks": {
+        "generator_count": {
+          "n_generators": 6,
+          "n_rotations": 3,
+          "n_boosts": 3,
+          "is_6": true
+        },
+        "algebra_closure": {
+          "closes": true,
+          "max_closure_error": 1.1188630228279524e-16,
+          "error_below_threshold": true
+        },
+        "killing_form_signature": {
+          "signature": "(3, 3)",
+          "n_positive": 3,
+          "n_negative": 3,
+          "n_zero": 0,
+          "is_3_3": true
+        }
+      },
+      "all_pass": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_basin_dynamics_complement",
+      "checks": {
+        "em_coupling": {
+          "depth": 13,
+          "coupling": 0.0019193787254996309,
+          "expected": 0.0019193787254996309,
+          "relative_error": 0.0,
+          "match": true
+        },
+        "gravity_coupling": {
+          "depth": 183,
+          "coupling": 5.691959932062575e-39,
+          "expected": 5.691959932062575e-39,
+          "relative_error": 0.0,
+          "match": true
+        },
+        "hierarchy_ratio": {
+          "em_over_gravity": 3.372087555795764e+35,
+          "expected_phi_170": 3.372087555795763e+35,
+          "relative_error": 2.1881690517797236e-16,
+          "match": true
+        },
+        "pac_structure": {
+          "tree_depth": 4,
+          "n_vertices": 31,
+          "full_trace": 0.0,
+          "complement_trace": 3.552713678800501e-15,
+          "traceless_preserved": true,
+          "note": "Adjacency matrix trace (= 0) preserved under complement operation"
+        }
+      },
+      "coupling_ratio_match": true,
+      "ratio_relative_error": 2.1881690517797236e-16,
+      "all_pass": true,
+      "PASS": true
+    }
+  }
+}

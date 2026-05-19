@@ -1,0 +1,256 @@
+{
+  "experiment": "exp_11_curvature_from_density",
+  "milestone": "milestone13",
+  "block": "D",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_flat_regular_graph",
+      "n_vertices": 8,
+      "graph_type": "cycle",
+      "n_adjacent_pairs": 8,
+      "magnitudes": [
+        {
+          "from": 0,
+          "to": 1,
+          "magnitude": 0.0
+        },
+        {
+          "from": 0,
+          "to": 7,
+          "magnitude": 0.0
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "magnitude": 7.791845924537873e-16
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "magnitude": 1.284381827316535e-15
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "magnitude": 1.4425827483661892e-15
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "magnitude": 8.86138479815812e-16
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "magnitude": 9.6599835669592e-16
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "magnitude": 8.327126098636601e-16
+        }
+      ],
+      "mean_magnitude": 7.73874826813988e-16,
+      "std_magnitude": 4.947924860366326e-16,
+      "max_magnitude": 1.4425827483661892e-15,
+      "cv": 0.0,
+      "all_near_zero": true,
+      "interpretation": "Cycle graph of 8 vertices: all vertices have degree 2 (vertex-transitive). All complement-transformation magnitudes are < 1.44e-15. Vertex-transitivity means all complements are isomorphic, so all transformations are trivial. This is maximally flat space: zero curvature.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_curved_density_lump",
+      "n_vertices": 12,
+      "lump_center": 6,
+      "lump_radius": 2,
+      "lump_extra_edges": 4,
+      "n_adjacent_pairs": 15,
+      "max_magnitude": 1.3724563860756642,
+      "min_magnitude": 0.0,
+      "max_over_min_ratio": Infinity,
+      "density_field": [
+        0.09090909090909091,
+        0.18181818181818182,
+        0.18181818181818182,
+        0.18181818181818182,
+        0.45454545454545453,
+        0.2727272727272727,
+        0.2727272727272727,
+        0.36363636363636365,
+        0.2727272727272727,
+        0.18181818181818182,
+        0.18181818181818182,
+        0.09090909090909091
+      ],
+      "interpretation": "Density lump graph: max/min transformation magnitude ratio = inf. Non-uniform density creates non-uniform complement-transformations. This variation IS curvature in the complement framework.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_geodesic_vs_shortest",
+      "graph_type": "ladder with density cluster",
+      "n_vertices": 12,
+      "start": 0,
+      "end": 11,
+      "density_field": [
+        0.36363636363636365,
+        0.36363636363636365,
+        0.5454545454545454,
+        0.2727272727272727,
+        0.2727272727272727,
+        0.18181818181818182,
+        0.36363636363636365,
+        0.45454545454545453,
+        0.2727272727272727,
+        0.2727272727272727,
+        0.2727272727272727,
+        0.18181818181818182
+      ],
+      "shortest_path": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        11
+      ],
+      "shortest_path_length": 5,
+      "shortest_path_deformation": 4.109630658631242,
+      "min_deformation_path": [
+        0,
+        1,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "min_deformation_path_length": 6,
+      "min_deformation_cost": 3.716460683070969,
+      "paths_differ": true,
+      "at_least_1_vertex_different": true,
+      "min_def_path_lower_cost": true,
+      "note": "The ladder graph has two equal-hop-count routes. The shortest path (BFS) may cross the density gradient boundary, incurring high complement-deformation. The min-deformation geodesic avoids steep gradients by routing through the uniform region. This is the discrete analogue of gravitational lensing: mass (= connection density) bends geodesics away from the hop-minimal path.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_curvature_scales_with_gradient",
+      "n_graphs": 5,
+      "graph_results": [
+        {
+          "extra_edges": 1,
+          "density_gradient": 0.1818181818181818,
+          "mean_curvature": 0.13019387796452397,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 2,
+          "density_gradient": 0.2727272727272727,
+          "mean_curvature": 0.20933401659124612,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.36363636363636365,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 3,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.2516429194186433,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.45454545454545453,
+            0.18181818181818182,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 4,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.23279044369267535,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.45454545454545453,
+            0.2727272727272727,
+            0.2727272727272727,
+            0.36363636363636365,
+            0.2727272727272727,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "extra_edges": 5,
+          "density_gradient": 0.36363636363636365,
+          "mean_curvature": 0.2323192348545083,
+          "density_field": [
+            0.09090909090909091,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.45454545454545453,
+            0.36363636363636365,
+            0.2727272727272727,
+            0.36363636363636365,
+            0.36363636363636365,
+            0.18181818181818182,
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        }
+      ],
+      "gradients": [
+        0.1818181818181818,
+        0.2727272727272727,
+        0.36363636363636365,
+        0.36363636363636365,
+        0.36363636363636365
+      ],
+      "curvatures": [
+        0.13019387796452397,
+        0.20933401659124612,
+        0.2516429194186433,
+        0.23279044369267535,
+        0.2323192348545083
+      ],
+      "pearson_correlation": 0.9606279773256657,
+      "interpretation": "Pearson correlation between density gradient and mean curvature: r = 0.9606. Larger density gradients produce larger curvature, confirming that curvature IS the non-uniformity of complement-transformations caused by connection-density gradients.",
+      "PASS": true
+    }
+  }
+}

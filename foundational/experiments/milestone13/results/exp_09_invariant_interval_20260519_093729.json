@@ -1,0 +1,154 @@
+{
+  "experiment": "exp_09_invariant_interval",
+  "milestone": "milestone13",
+  "block": "C",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_killing_form_33",
+      "killing_eigenvalues": [
+        2.0000000000000004,
+        1.9999999999999996,
+        1.9999999999999984,
+        -1.999999999999999,
+        -1.9999999999999991,
+        -2.0000000000000004
+      ],
+      "signature": "(3, 3)",
+      "n_positive": 3,
+      "n_negative": 3,
+      "n_zero": 0,
+      "interpretation": "The sl(2,C) Killing form has signature (3,3): 3 positive eigenvalues (from the boost generators) and 3 negative (from the rotation generators). This indefinite signature is the algebraic fingerprint of Minkowski spacetime.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_4d_metric_signature",
+      "invariant_form_eigenvalues": [
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "n_positive": 1,
+      "n_negative": 3,
+      "signature": "(1, 3)",
+      "is_minkowski": true,
+      "form_matrix": [
+        [
+          1.0,
+          0.0,
+          -2.4651903288156613e-32,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -2.4651903288156613e-32,
+          0.0,
+          -1.0,
+          4.115599581439915e-17
+        ],
+        [
+          0.0,
+          0.0,
+          4.115599581439915e-17,
+          -1.0
+        ]
+      ],
+      "interpretation": "The unique invariant bilinear form of the 4D vector representation has signature (1,3). This is the Minkowski metric eta = diag(-1,+1,+1,+1) or equivalent.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_ds2_preserved",
+      "test_vector": [
+        2.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "s2_original": -3.0,
+      "max_relative_error": 2.9605947323337506e-16,
+      "transform_results": [
+        {
+          "name": "rotation_z_0.5",
+          "x_prime": [
+            2.0,
+            0.8775825618903728,
+            0.47942553860420306,
+            0.0
+          ],
+          "s2_original": -3.0,
+          "s2_prime": -2.9999999999999996,
+          "relative_error": 1.4802973661668753e-16,
+          "preserved": true
+        },
+        {
+          "name": "rotation_x_0.3",
+          "x_prime": [
+            2.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "s2_original": -3.0,
+          "s2_prime": -3.0,
+          "relative_error": 0.0,
+          "preserved": true
+        },
+        {
+          "name": "boost_x_0.7",
+          "x_prime": [
+            3.268921713101419,
+            2.7723364093100096,
+            0.0,
+            0.0
+          ],
+          "s2_original": -3.0,
+          "s2_prime": -2.999999999999999,
+          "relative_error": 2.9605947323337506e-16,
+          "preserved": true
+        },
+        {
+          "name": "boost_z_1.0",
+          "x_prime": [
+            3.086161269630488,
+            1.0,
+            0.0,
+            2.350402387287603
+          ],
+          "s2_original": -3.0,
+          "s2_prime": -3.0,
+          "relative_error": 0.0,
+          "preserved": true
+        },
+        {
+          "name": "combined_rot_z_boost_x",
+          "x_prime": [
+            2.776347235906509,
+            2.0729049499476,
+            0.6412246430140144,
+            0.0
+          ],
+          "s2_original": -3.0,
+          "s2_prime": -3.0,
+          "relative_error": 0.0,
+          "preserved": true
+        }
+      ],
+      "interpretation": "The spacetime interval s^2 = x^T eta x is invariant under all Lorentz transformations. This confirms ds^2 is the complement-transformation invariant in the 4D vector representation.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_metric_unique",
+      "null_space_dimension": 1,
+      "is_unique": true,
+      "interpretation": "The space of symmetric bilinear forms preserved by all so(3,1) generators has dimension 1. By Schur's lemma, the invariant form is unique up to overall scale. This means the Minkowski metric is the ONLY complement-transformation invariant \u2014 it is not a choice but a consequence of the algebra.",
+      "PASS": true
+    }
+  }
+}

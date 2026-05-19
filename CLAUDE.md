@@ -90,14 +90,16 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **104 experiments** in `foundational/experiments/` (51 prior + 13 in M5 + 10 in M6 + 10 in M7 + 10 in M8 + 10 in M9)
+- **130+ experiments** in `foundational/experiments/`
   - M11 score: 52/52 (100%) after hardening cycle (52→49→52)
-  - M6 score: 27/40 → 35/40 (88%) after strengthening exp_02, 03, 08, 09
-- **Milestones 1-9** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions, infodynamic mechanism)
+  - M12 score: 49/52 (94%) — connection as primitive, ADE geometry, Lorentz derivation
+  - M13 score: 48/52 core (92%) + 5/16 investigation = 53/68 (78%) after M13.5 stress testing + refinement. PSD degeneracy proven fundamental (exp_16: 0/4, no invariant metric can fix it). Random graph paradox partially explained (exp_17: 2/4, density + spectral radius). 7 honest failures total.
+  - M6 score: 27/40 → 35/40 → 34/40 (85%) after v0.3 hardening cycle
+- **Milestones 1-13** complete (SM parameters, mass derivations, quantum validation, relativity/gravity, SM completion, scoped mediation, symmetry primitive, BSM predictions, infodynamic mechanism, symmetry self-application, quantum gravity, connection primitive, identity as complement)
 - **Milestone 5** complete — SM completion & simulator validation (13 experiments)
   - Higgs mass 83 ppm (lambda = phi/4pi), PMNS < 0.3 deg, sin^2(theta_W) = tan(theta_C) = 3/13
   - De-actualization completes PAC cycle, 24% scorecard improvement
-- **Milestone 6** complete — Scoped Mediation: The Propagation Mechanism of DFT (10 experiments, 35/40 = 88%)
+- **Milestone 6** complete — Scoped Mediation: The Propagation Mechanism of DFT (10 experiments, 34/40 = 85%)
   - Transfer matrices, harmonic fixed-point convergence, force hierarchy from Fibonacci depth
   - alpha_EM 5.7 ppm (#1 of 10,440 Fibonacci combinations, 300x better than next), phi^6 0.30%, Euler gap 0.09%
   - KAN arithmetic transition (K increases rho=1.0, N decreases rho=-1.0), scope attenuation base=0.42 in phi range
@@ -111,7 +113,7 @@ See `STANDARDS.md` at workspace root for full spec.
   - 100% compatibility with M1-M6, 60% directly illuminated, 12 new derivation paths
   - Cosmological constant 0.9 orders, neutrino splitting 4.4%, D=3 unique, w = -1 + 10⁻⁶¹
   - RBF memory damping fails (2/4), cross-topology consistency partial (3/4) — honest failures
-- **Milestone 8** complete — BSM Predictions & Observational Contact (10 experiments, 40/40 = 100%)
+- **Milestone 8** complete — BSM Predictions & Observational Contact (12 experiments, 47/48 = 98% after v0.3 hardening)
   - 10 pre-registered falsifiable predictions, 0 excluded by current data
   - CC at -122.09 (0.09 orders!), Hubble ratio phi^{1/6} at 0.075%, Omega_c at 0.46%
   - Z' at 395 GeV: not excluded (9× margin), width 64 MeV, 4/4 tests pass
@@ -129,6 +131,20 @@ See `STANDARDS.md` at workspace root for full spec.
   - Discrete H0 tension: phi^{1/N_floor} matches SH0ES at 0.05σ
   - 4 new falsifiable predictions for Euclid, DESI, TDSL
   - Honest failures: 8.9% slope gap (noise w/ 3 points), DESI w(z) tension (wa=-0.15 vs -0.75)
+- **Milestone 12** complete — Connection as Primitive (13 experiments, 49/52 = 94%)
+  - Connection = addition = ADE (algebraic identity), SU(2)+SU(3) ONLY Fibonacci-compatible ADE types
+  - F_7=13=1+3+8+1 gauge closure, laws as basin attractors with phi^(d2-d1) relaxation ratios
+  - SEC complexification A_1→SL(2,C)≅SO(3,1) (Lorentz from connection+entropy)
+  - 3 honest failures: rate-density proportionality too simplistic, info-Fiedler not proportional, basin depth needs physical coupling
+  - 8 predictions (4P+2D+2C), zero M1-M11 contradictions
+- **Milestone 13 + 13.5** complete — Identity as Complement (15 experiments, 51/60 = 85% after M13.5 stress testing)
+  - Identity IS complement: vertex identity = complement spectrum (outside-in definition)
+  - Definitional parallax: different observers compute different complements of same target
+  - Complement-transformations form Weyl group; SEC extends Z_2 → SL(2,C) → SO(3,1)
+  - Speed of light = coherence limit on complement-deformation, proper time = dt/cosh(eta)
+  - Curvature from connection-density gradients, invariant interval from Killing form uniqueness
+  - Complete derivation chain: self-loop → phi → PAC → ADE → complement → parallax → Weyl → SEC → Lorentz → ds² → c → proper time
+  - 8 predictions (4P+2D+2C), zero M1-M12 contradictions
 - **PACSeries** published on Zenodo (DOI: 10.5281/zenodo.15783623)
 - **Active organization effort**: bringing all experiments to full standard, adding FDO source links
 

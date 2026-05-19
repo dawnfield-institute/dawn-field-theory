@@ -1,0 +1,165 @@
+{
+  "experiment": "exp_05_complement_algebra_embeds_lie",
+  "milestone": "milestone13",
+  "block": "B",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_complement_diff_root_alignment",
+      "graph": "A_3",
+      "n_adjacent_pairs": 2,
+      "alignments": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "best_cosine": 0.9486832980505138,
+          "best_root_index": 0
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "best_cosine": 0.9486832980505138,
+          "best_root_index": 0
+        }
+      ],
+      "n_aligned": 2,
+      "fraction_aligned": 1.0,
+      "threshold": 0.6666666666666666,
+      "risk": "HIGH \u2014 complement eigenvalue diffs live in different space than roots",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_path_independence",
+      "graph": "A_4",
+      "forward_path": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "step_diffs": [
+        [
+          -0.41421356237309537,
+          8.066464163292153e-17,
+          0.41421356237309515
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.41421356237309537,
+          -8.066464163292153e-17,
+          -0.41421356237309515
+        ]
+      ],
+      "forward_error": 0.0,
+      "reverse_error": 0.0,
+      "antisymmetry_error": 0.0,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_complement_diff_matrix_rank",
+      "ranks_tested": [
+        3,
+        4,
+        5
+      ],
+      "by_rank": {
+        "3": {
+          "n_vertices": 3,
+          "spectral_dim": 2,
+          "n_diff_vectors": 3,
+          "matrix_shape": [
+            3,
+            2
+          ],
+          "numerical_rank": 1,
+          "spectra_rank": 1,
+          "singular_values": [
+            2.0,
+            0.0
+          ],
+          "rank_ok": true
+        },
+        "4": {
+          "n_vertices": 4,
+          "spectral_dim": 3,
+          "n_diff_vectors": 6,
+          "matrix_shape": [
+            6,
+            3
+          ],
+          "numerical_rank": 1,
+          "spectra_rank": 1,
+          "singular_values": [
+            1.1715728752538104,
+            1.359739955510519e-16,
+            4.168685625383418e-33
+          ],
+          "rank_ok": true
+        },
+        "5": {
+          "n_vertices": 5,
+          "spectral_dim": 4,
+          "n_diff_vectors": 10,
+          "matrix_shape": [
+            10,
+            4
+          ],
+          "numerical_rank": 2,
+          "spectra_rank": 2,
+          "singular_values": [
+            2.8454793755121095,
+            1.4453598251716906,
+            2.2235363006121954e-16,
+            1.2499878340145952e-16
+          ],
+          "rank_ok": true
+        }
+      },
+      "all_match": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_gram_matrix_positive_definite",
+      "graph": "A_4",
+      "n_adjacent_pairs": 3,
+      "gram_matrix": [
+        [
+          0.34314575050762014,
+          0.0,
+          -0.34314575050762014
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.34314575050762014,
+          0.0,
+          0.34314575050762014
+        ]
+      ],
+      "gram_eigenvalues": [
+        0.0,
+        0.0,
+        0.6862915010152403
+      ],
+      "min_eigenvalue": 0.0,
+      "positive_semidefinite": true,
+      "strictly_positive_definite": false,
+      "A5_min_eigenvalue": -3.3573744307794117e-16,
+      "A5_positive_semidefinite": true,
+      "risk": "MEDIUM-HIGH \u2014 Gram matrix may have zero eigenvalues from symmetric pairs",
+      "PASS": true
+    }
+  }
+}
