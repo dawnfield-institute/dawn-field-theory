@@ -1,0 +1,257 @@
+{
+  "T1": {
+    "test": "Fixed-basis CHSH baseline",
+    "graph": "D_4",
+    "orbit_dim": 2,
+    "S_no_rotation": 1.9999999999999996,
+    "S_max_fixed_grid": 2.5140526433405928,
+    "pass": true
+  },
+  "T2": {
+    "test": "SEC-rotated CHSH on D_4 x D_4",
+    "graph": "D_4",
+    "orbit_dim": 2,
+    "S_max": 2.514022744957056,
+    "S_analytical": 0.43663406270339206,
+    "tsirelson_bound": 2.8284271247461903,
+    "tsirelson_ratio": 0.8888412655081761,
+    "optimal_angles": [
+      -0.060000000000000005,
+      0.7253981633974482,
+      -0.45269908169872414,
+      -1.2380972450961725
+    ],
+    "correlations": [
+      0.8113417426565805,
+      0.053574995753895564,
+      0.9449142553977897,
+      0.811341742656581
+    ],
+    "entanglement_entropy": 0.6931471805599454,
+    "purity_A": 0.4999999999999998,
+    "pass": true
+  },
+  "T3": {
+    "test": "ADE topology sweep",
+    "sweep": [
+      {
+        "type": "A_2",
+        "n": 2,
+        "orbits": 1,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 0.0,
+        "note": "single orbit, no entanglement possible"
+      },
+      {
+        "type": "A_3",
+        "n": 3,
+        "orbits": 2,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 2.609212142171325,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.41269908169872416,
+          -1.1980972450961724
+        ]
+      },
+      {
+        "type": "A_4",
+        "n": 4,
+        "orbits": 2,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 2.6853636599427406,
+        "angles": [
+          -0.020000000000000004,
+          0.7653981633974483,
+          -0.4926990816987241,
+          -1.2780972450961725
+        ]
+      },
+      {
+        "type": "A_5",
+        "n": 5,
+        "orbits": 3,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 1.6721538412000174,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      },
+      {
+        "type": "A_6",
+        "n": 6,
+        "orbits": 3,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 1.5493528041020772,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      },
+      {
+        "type": "A_7",
+        "n": 7,
+        "orbits": 4,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 1.8023981706240852,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      },
+      {
+        "type": "D_4",
+        "n": 4,
+        "orbits": 2,
+        "aut_order": 6,
+        "aut_type": "S_3",
+        "NC": 1.2247448713915892,
+        "S_max": 2.514022744957056,
+        "angles": [
+          -0.060000000000000005,
+          0.7253981633974482,
+          -0.45269908169872414,
+          -1.2380972450961725
+        ]
+      },
+      {
+        "type": "D_5",
+        "n": 5,
+        "orbits": 4,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 1.8359659170794134,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      },
+      {
+        "type": "D_6",
+        "n": 6,
+        "orbits": 5,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 1.8883392052040957,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      },
+      {
+        "type": "E_6",
+        "n": 6,
+        "orbits": 4,
+        "aut_order": 2,
+        "aut_type": "Z_2",
+        "NC": 0.0,
+        "S_max": 1.8380831778570297,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      },
+      {
+        "type": "E_7",
+        "n": 7,
+        "orbits": 7,
+        "aut_order": 1,
+        "aut_type": "trivial",
+        "NC": 0.0,
+        "S_max": 1.9330066866030697,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      },
+      {
+        "type": "E_8",
+        "n": 8,
+        "orbits": 8,
+        "aut_order": 1,
+        "aut_type": "trivial",
+        "NC": 0.0,
+        "S_max": 1.9479588130731662,
+        "angles": [
+          -0.1,
+          0.6853981633974483,
+          -0.1,
+          0.6853981633974483
+        ]
+      }
+    ],
+    "n_violating": 3,
+    "n_non_violating": 8,
+    "aut_violation_correlation": true,
+    "pass": true
+  },
+  "T4": {
+    "test": "PAC-weighted Bell state",
+    "graph": "D_4",
+    "alpha_sq": 0.6180339887498949,
+    "beta_sq": 0.38196601125010515,
+    "two_alpha_beta": 0.9717365435132914,
+    "S_max_numerical": 2.4828148220398063,
+    "S_max_analytical": 2.788743021505681,
+    "fibonacci_prediction": 2.683,
+    "fibonacci_match_5pct": false,
+    "entanglement_entropy": 0.6650183864440036,
+    "bell_violation": true,
+    "pass": true
+  },
+  "T5": {
+    "test": "Full SU(2) generator on orbit space",
+    "graph": "D_4",
+    "generator": "sigma_y / 2",
+    "S_max_numerical": 2.4494666915438477,
+    "S_analytical": 2.3889551651687704,
+    "tsirelson_bound": 2.8284271247461903,
+    "tsirelson_delta": 0.37896043320234263,
+    "pass": false
+  },
+  "T6": {
+    "test": "A_4 vs Fibonacci prediction",
+    "A_4_S_max": 2.6853636599427406,
+    "fibonacci_prediction": 2.683,
+    "delta_pct": 0.08809764974807277,
+    "match_1pct": true,
+    "pass": true
+  },
+  "synthesis": {
+    "score": "5/6",
+    "prediction": "P13: CHSH > 2 from orbit structure + SEC rotation",
+    "classical_bound": 2.0,
+    "tsirelson_bound": 2.8284271247461903,
+    "key_result": "SEC complexification on orbit Laplacian enables Bell violation"
+  }
+}
