@@ -1,0 +1,268 @@
+{
+  "part_a": {
+    "condition_1": [
+      10
+    ],
+    "condition_2": [
+      10
+    ],
+    "condition_3": [
+      11,
+      20
+    ]
+  },
+  "part_b": [
+    {
+      "n": 4,
+      "F_n": 3,
+      "factors": {
+        "3": 1
+      },
+      "lcm": 2,
+      "is_2n": false,
+      "primitive_roots": {
+        "3": true
+      }
+    },
+    {
+      "n": 5,
+      "F_n": 5,
+      "factors": {
+        "5": 1
+      },
+      "lcm": 4,
+      "is_2n": false,
+      "primitive_roots": {
+        "5": true
+      }
+    },
+    {
+      "n": 7,
+      "F_n": 13,
+      "factors": {
+        "13": 1
+      },
+      "lcm": 12,
+      "is_2n": false,
+      "primitive_roots": {
+        "13": true
+      }
+    },
+    {
+      "n": 8,
+      "F_n": 21,
+      "factors": {
+        "3": 1,
+        "7": 1
+      },
+      "lcm": 6,
+      "is_2n": false,
+      "primitive_roots": {
+        "3": true,
+        "7": false
+      }
+    },
+    {
+      "n": 10,
+      "F_n": 55,
+      "factors": {
+        "5": 1,
+        "11": 1
+      },
+      "lcm": 20,
+      "is_2n": true,
+      "primitive_roots": {
+        "5": true,
+        "11": true
+      }
+    },
+    {
+      "n": 11,
+      "F_n": 89,
+      "factors": {
+        "89": 1
+      },
+      "lcm": 11,
+      "is_2n": false,
+      "primitive_roots": {
+        "89": false
+      }
+    },
+    {
+      "n": 13,
+      "F_n": 233,
+      "factors": {
+        "233": 1
+      },
+      "lcm": 29,
+      "is_2n": false,
+      "primitive_roots": {
+        "233": false
+      }
+    },
+    {
+      "n": 14,
+      "F_n": 377,
+      "factors": {
+        "13": 1,
+        "29": 1
+      },
+      "lcm": 84,
+      "is_2n": false,
+      "primitive_roots": {
+        "13": true,
+        "29": true
+      }
+    },
+    {
+      "n": 16,
+      "F_n": 987,
+      "factors": {
+        "3": 1,
+        "7": 1,
+        "47": 1
+      },
+      "lcm": 138,
+      "is_2n": false,
+      "primitive_roots": {
+        "3": true,
+        "7": false,
+        "47": false
+      }
+    },
+    {
+      "n": 17,
+      "F_n": 1597,
+      "factors": {
+        "1597": 1
+      },
+      "lcm": 532,
+      "is_2n": false,
+      "primitive_roots": {
+        "1597": false
+      }
+    },
+    {
+      "n": 19,
+      "F_n": 4181,
+      "factors": {
+        "37": 1,
+        "113": 1
+      },
+      "lcm": 252,
+      "is_2n": false,
+      "primitive_roots": {
+        "37": true,
+        "113": false
+      }
+    },
+    {
+      "n": 20,
+      "F_n": 6765,
+      "factors": {
+        "3": 1,
+        "5": 1,
+        "11": 1,
+        "41": 1
+      },
+      "lcm": 20,
+      "is_2n": false,
+      "primitive_roots": {
+        "3": true,
+        "5": true,
+        "11": true,
+        "41": false
+      }
+    },
+    {
+      "n": 22,
+      "F_n": 17711,
+      "factors": {
+        "89": 1,
+        "199": 1
+      },
+      "lcm": 99,
+      "is_2n": false,
+      "primitive_roots": {
+        "89": false,
+        "199": false
+      }
+    },
+    {
+      "n": 23,
+      "F_n": 28657,
+      "factors": {
+        "28657": 1
+      },
+      "lcm": 1791,
+      "is_2n": false,
+      "primitive_roots": {
+        "28657": false
+      }
+    },
+    {
+      "n": 25,
+      "F_n": 75025,
+      "factors": {
+        "5": 2,
+        "3001": 1
+      },
+      "lcm": 1500,
+      "is_2n": false,
+      "primitive_roots": {
+        "5": true,
+        "3001": false
+      }
+    },
+    {
+      "n": 26,
+      "F_n": 121393,
+      "factors": {
+        "233": 1,
+        "521": 1
+      },
+      "lcm": 7540,
+      "is_2n": false,
+      "primitive_roots": {
+        "233": false,
+        "521": false
+      }
+    },
+    {
+      "n": 28,
+      "F_n": 317811,
+      "factors": {
+        "3": 1,
+        "13": 1,
+        "29": 1,
+        "281": 1
+      },
+      "lcm": 420,
+      "is_2n": false,
+      "primitive_roots": {
+        "3": true,
+        "13": true,
+        "29": true,
+        "281": false
+      }
+    },
+    {
+      "n": 29,
+      "F_n": 514229,
+      "factors": {
+        "514229": 1
+      },
+      "lcm": 514228,
+      "is_2n": false,
+      "primitive_roots": {
+        "514229": true
+      }
+    }
+  ],
+  "metadata": {
+    "experiment": "exp_04_f10_uniqueness_proof",
+    "timestamp": "2026-05-21T17:31:09.510211",
+    "elapsed_seconds": 0.25383424758911133,
+    "search_range": "3..200"
+  }
+}
