@@ -1,0 +1,713 @@
+{
+  "experiment": "exp_10_cross_milestone_compatibility",
+  "milestone": 14,
+  "block": "E",
+  "results": {
+    "T1": {
+      "test": "T1_dft_constants_unchanged",
+      "phi": 1.618033988749895,
+      "phi_match": true,
+      "ln_phi": 0.48121182505960347,
+      "ln_phi_match": true,
+      "gamma": 0.5772156649015329,
+      "gamma_match": true,
+      "xi": 1.0584274899611363,
+      "xi_match": true,
+      "pi_match": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_m13_orbit_structure_matches",
+      "n_diagrams": 16,
+      "results_by_type": {
+        "A_1": {
+          "orbits_m13": [
+            [
+              0
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "A_2": {
+          "orbits_m13": [
+            [
+              0,
+              1
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              1
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "A_3": {
+          "orbits_m13": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "A_4": {
+          "orbits_m13": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "A_5": {
+          "orbits_m13": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "A_6": {
+          "orbits_m13": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "A_7": {
+          "orbits_m13": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "A_8": {
+          "orbits_m13": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "D_4": {
+          "orbits_m13": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "D_5": {
+          "orbits_m13": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "D_6": {
+          "orbits_m13": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "D_7": {
+          "orbits_m13": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "D_8": {
+          "orbits_m13": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "E_6": {
+          "orbits_m13": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              5
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              5
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "E_7": {
+          "orbits_m13": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        },
+        "E_8": {
+          "orbits_m13": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ]
+          ],
+          "orbits_m14": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ]
+          ],
+          "match": true,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_sec_complexification_compatible",
+      "su2_valid": false,
+      "n_sl2c_generators": 2,
+      "sl2c_correct_count": false,
+      "basis_is_real": true,
+      "sec_compatible": true,
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_response_time_vs_orbit_dim",
+      "monotonic_by_family": {
+        "A": true,
+        "D": true,
+        "E": true
+      },
+      "all_monotonic": true,
+      "families": {
+        "A": [
+          {
+            "rank": 1,
+            "n": 1,
+            "orbit_dim": 1,
+            "gauge_reduction": 0
+          },
+          {
+            "rank": 2,
+            "n": 2,
+            "orbit_dim": 1,
+            "gauge_reduction": 1
+          },
+          {
+            "rank": 3,
+            "n": 3,
+            "orbit_dim": 2,
+            "gauge_reduction": 1
+          },
+          {
+            "rank": 4,
+            "n": 4,
+            "orbit_dim": 2,
+            "gauge_reduction": 2
+          },
+          {
+            "rank": 5,
+            "n": 5,
+            "orbit_dim": 3,
+            "gauge_reduction": 2
+          },
+          {
+            "rank": 6,
+            "n": 6,
+            "orbit_dim": 3,
+            "gauge_reduction": 3
+          },
+          {
+            "rank": 7,
+            "n": 7,
+            "orbit_dim": 4,
+            "gauge_reduction": 3
+          },
+          {
+            "rank": 8,
+            "n": 8,
+            "orbit_dim": 4,
+            "gauge_reduction": 4
+          }
+        ],
+        "D": [
+          {
+            "rank": 4,
+            "n": 4,
+            "orbit_dim": 2,
+            "gauge_reduction": 2
+          },
+          {
+            "rank": 5,
+            "n": 5,
+            "orbit_dim": 4,
+            "gauge_reduction": 1
+          },
+          {
+            "rank": 6,
+            "n": 6,
+            "orbit_dim": 5,
+            "gauge_reduction": 1
+          },
+          {
+            "rank": 7,
+            "n": 7,
+            "orbit_dim": 6,
+            "gauge_reduction": 1
+          },
+          {
+            "rank": 8,
+            "n": 8,
+            "orbit_dim": 7,
+            "gauge_reduction": 1
+          }
+        ],
+        "E": [
+          {
+            "rank": 6,
+            "n": 6,
+            "orbit_dim": 4,
+            "gauge_reduction": 2
+          },
+          {
+            "rank": 7,
+            "n": 7,
+            "orbit_dim": 7,
+            "gauge_reduction": 0
+          },
+          {
+            "rank": 8,
+            "n": 8,
+            "orbit_dim": 8,
+            "gauge_reduction": 0
+          }
+        ]
+      },
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": false,
+    "T4": true
+  },
+  "score": "3/4",
+  "n_pass": 3,
+  "n_total": 4
+}

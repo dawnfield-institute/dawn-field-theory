@@ -156,7 +156,11 @@ def test2_n6_universality():
     c) JWST z=12/z=8 ratio: exp(-z/[ln(phi)*N]). Solve for N.
     d) BAO: phi^{-1/N} correction -> H0. Solve for N.
 
-    PASS: all 4 fitted N values agree within +/- 2 of N=6.
+    HARDENED: Round 1. Previously passed with tolerance +/-2 of N=6, which
+    hid the spread (actual range 2.74). Tightened to range < 1.5.
+    Expected to FAIL — M9's cascade clock is the resolution.
+
+    PASS: range of independent N values < 1.5.
     """
     print("\n" + "=" * 70)
     print("TEST 2: N=6 UNIVERSALITY")
@@ -221,6 +225,8 @@ def test2_n6_universality():
     N_std = np.std(independent_N)
     N_range = max(independent_N) - min(independent_N)
     all_near_6 = all(abs(n - 6) < 2 for n in independent_N)
+    # HARDENED: tighten from abs(n-6)<2 to range<1.5
+    range_tight = N_range < 1.5
 
     print(f"\n  Independent N values:")
     print(f"    Hubble:  {N_hubble:.2f}")
@@ -228,11 +234,17 @@ def test2_n6_universality():
     print(f"    JWST:    {N_jwst:.2f}")
     print(f"    Mean:    {N_mean:.2f} +/- {N_std:.2f}")
     print(f"    Range:   {N_range:.2f}")
-    print(f"    All within [4, 8]: {all_near_6}")
+    print(f"    All within [4, 8]: {all_near_6} (old criterion, kept for reference)")
+    print(f"    Range < 1.5: {range_tight} (HARDENED criterion)")
 
-    passed = all_near_6
+    passed = range_tight
+    if not passed:
+        print(f"\n  HONEST FAILURE: N values span {N_range:.2f} (> 1.5)")
+        print(f"    This reveals that N=6 is NOT universal at M8 precision.")
+        print(f"    M9's cascade clock N(t) resolves this: N is z-dependent,")
+        print(f"    so different observables at different redshifts SHOULD give different N.")
     print(f"\n  -> {'PASS' if passed else 'FAIL'}: N universality "
-          f"{'confirmed' if passed else 'not confirmed'}")
+          f"{'confirmed' if passed else 'fails at tightened tolerance'}")
 
     # CRITICAL FINDING: BAO and Hubble are NOT independent constraints on N.
     # We have 3 independent observables, not 4.
@@ -246,6 +258,8 @@ def test2_n6_universality():
         'N_std': float(N_std),
         'N_range': float(N_range),
         'all_near_6': all_near_6,
+        'range_tight': range_tight,
+        'hardened': 'Round 1: tightened from abs(n-6)<2 to range<1.5',
         'bao_equals_hubble': True,
         'n_independent_constraints': 3,
         'passed': passed,

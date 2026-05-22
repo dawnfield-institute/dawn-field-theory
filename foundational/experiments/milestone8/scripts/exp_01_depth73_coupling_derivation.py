@@ -10,7 +10,11 @@ the force hierarchy: EM (depth 13 = F_7), dark (depth 73 = Phi_3(F_6)), gravity
 in the EM-gravity gap and derives the coupling constant.
 
 Tests:
-  1. Cyclotomic uniqueness: 73 is the ONLY Phi_3(F_n) in [32, 182]
+  1. Depth-73 mass in WDM window: derived mass falls in [3.3, 30] keV
+     HARDENED: Round 1. Was "cyclotomic uniqueness" — tautological because
+     Phi_3 is monotonic, so exactly one Phi_3(F_n) exists between any two
+     consecutive Phi_3 values by pigeonhole. Cyclotomic census retained as
+     structural context, not a pass criterion.
   2. Correction template convergence: alpha_73 in [10^{-16}, 10^{-14}]
   3. Projection type: antisymmetric vs symmetric at depth 73
   4. Hierarchy consistency: log(alpha_73^{-1})/log(alpha_EM^{-1}) near phi^n
@@ -30,7 +34,8 @@ sys.path.insert(0, str(M8_ROOT))
 
 from core.bsm import (
     PHI, INV_PHI, LN_PHI, PI, GAMMA_EM, XI_BALANCE,
-    ALPHA_EM, M_PLANCK_GEV, HIGGS_VEV,
+    ALPHA_EM, M_PLANCK_GEV, HIGGS_VEV, M_Z_GEV, GEV_TO_KEV,
+    LYMAN_ALPHA_MASS_BOUND,
     fib, cyclotomic_phi3, cyclotomic_phi5, cyclotomic_phi7,
     fibonacci_depth_coupling, correction_template,
     F3, F4, F5, F6, F7, F8, F9, F10,
@@ -41,81 +46,41 @@ from core.bsm import (
 _, RESULTS_DIR = setup_experiment(__file__)
 
 
-def test1_cyclotomic_uniqueness():
+def test1_depth73_mass_in_wdm_window():
     """
-    Test 1: 73 = Phi_3(F_6) is the ONLY Phi_3(F_n) in [32, 182].
+    Test 1: Depth-73 predicted mass falls in the observationally allowed
+    warm dark matter window [3.3, 30] keV.
 
-    The Phi_3 hierarchy generates the PRIMARY force spectrum:
-      Phi_3(F_4=3)=13 (EM), Phi_3(F_5=5)=31 (?), Phi_3(F_6=8)=73 (dark),
-      Phi_3(F_7=13)=183 (gravity).
+    HARDENED: Round 1. Previously tested "cyclotomic uniqueness" — that 73
+    is the only Phi_3(F_n) in [32, 182]. This was tautological: Phi_3 is
+    monotonic in its argument, so exactly one Phi_3(F_n) exists between
+    any two consecutive Phi_3 values by the pigeonhole principle. The test
+    could not fail.
 
-    Depth 31 sits at alpha~10^{-7} (between EM and dark). The question is
-    whether 73 is unique in the dark-coupling regime [32, 182]. Higher
-    cyclotomics (Phi_5, Phi_7) may populate the desert but generate auxiliary
-    structures, not primary forces.
+    Replaced with a genuinely falsifiable test: does the DFT-derived mass
+    at depth 73 fall in the observationally allowed WDM window?
+    - Lower bound: Lyman-alpha forest constraint m > 3.3 keV (Irsic+ 2017)
+    - Upper bound: Structure formation m < ~30 keV (above this, WDM is
+      indistinguishable from CDM and loses explanatory power for small-scale
+      anomalies)
+
+    The cyclotomic census is retained below as structural context.
     """
     print("\n" + "=" * 70)
-    print("TEST 1: CYCLOTOMIC UNIQUENESS")
+    print("TEST 1: DEPTH-73 MASS IN WDM WINDOW")
+    print("  (HARDENED: was cyclotomic uniqueness — pigeonhole tautology)")
     print("=" * 70)
 
-    # Phi_3(F_n) for all Fibonacci numbers F_1 through F_20
+    # --- Structural context (retained, not a pass criterion) ---
+    print("\n  Cyclotomic census (structural context, not test criterion):")
     phi3_values = {}
     for n in range(1, 21):
         fn = fib(n)
         val = cyclotomic_phi3(fn)
         phi3_values[n] = (fn, val)
         if 1 <= val <= 300:
-            print(f"  Phi_3(F_{n}={fn}) = {val}")
+            print(f"    Phi_3(F_{n}={fn}) = {val}")
 
-    # Derive gap boundaries from physics, not assertion:
-    # Lower bound: Phi_3(F_5) = 31 is the last known sub-EM Phi_3 depth.
-    #   alpha_31 ~ 10^{-7} -- intermediate between EM (10^{-2}) and dark (10^{-16}).
-    #   Dark sector starts ABOVE depth 31, so gap lower bound = 32.
-    # Upper bound: Phi_3(F_7) = 183 = gravity. Dark sector ends BELOW gravity.
-    #   So gap upper bound = 182.
-    # DERIVATION: [32, 182] = (Phi_3(F_5)+1, Phi_3(F_7)-1)
-    gap_lower = cyclotomic_phi3(fib(5)) + 1  # 31 + 1 = 32
-    gap_upper = cyclotomic_phi3(fib(7)) - 1  # 183 - 1 = 182
-    print(f"\n  Gap derivation:")
-    print(f"    Lower: Phi_3(F_5) + 1 = {cyclotomic_phi3(fib(5))} + 1 = {gap_lower}")
-    print(f"    Upper: Phi_3(F_7) - 1 = {cyclotomic_phi3(fib(7))} - 1 = {gap_upper}")
-    print(f"    Dark-sector gap: [{gap_lower}, {gap_upper}]")
-
-    in_gap = [(n, fn, val) for n, (fn, val) in phi3_values.items()
-              if gap_lower <= val <= gap_upper]
-
-    print(f"\n  Phi_3(F_n) values in dark-sector gap [{gap_lower}, {gap_upper}]:")
-    for n, fn, val in in_gap:
-        print(f"    n={n}, F_n={fn}, Phi_3 = {val}")
-
-    unique_73 = len(in_gap) == 1 and in_gap[0][2] == 73
-    print(f"\n  73 is unique Phi_3 in [{gap_lower}, {gap_upper}]: {unique_73}")
-
-    # Context: depth 31 = Phi_3(F_5)
-    print(f"\n  Context: depth 31 = Phi_3(F_5=5) at alpha ~ {fibonacci_depth_coupling(31):.2e}")
-    print(f"  Depth 31 sits between EM (alpha~10^-2) and dark (alpha~10^-16)")
-    print(f"  It defines the lower boundary of the dark-sector gap")
-
-    # Also check Phi_5 and Phi_7
-    print("\n  Phi_5(F_n) values in [1, 300]:")
-    phi5_in_range = []
-    for n in range(1, 15):
-        fn = fib(n)
-        val = cyclotomic_phi5(fn)
-        if 1 <= val <= 300:
-            print(f"    Phi_5(F_{n}={fn}) = {val}")
-            phi5_in_range.append((n, fn, val))
-
-    print("\n  Phi_7(F_n) values in [1, 300]:")
-    phi7_in_range = []
-    for n in range(1, 12):
-        fn = fib(n)
-        val = cyclotomic_phi7(fn)
-        if 1 <= val <= 300:
-            print(f"    Phi_7(F_{n}={fn}) = {val}")
-            phi7_in_range.append((n, fn, val))
-
-    # Census: all cyclotomic-Fibonacci depths in [1, 300]
     all_cyclo = set()
     for n in range(1, 21):
         fn = fib(n)
@@ -125,20 +90,61 @@ def test1_cyclotomic_uniqueness():
             val = poly_fn(fn)
             if 1 <= val <= 300:
                 all_cyclo.add((poly_name, n, fn, val))
+    print(f"  Total cyclotomic-Fibonacci depths in [1, 300]: {len(all_cyclo)}")
 
-    print(f"\n  Total cyclotomic-Fibonacci depths in [1, 300]: {len(all_cyclo)}")
-    for poly_name, n, fn, val in sorted(all_cyclo, key=lambda x: x[3]):
-        print(f"    {poly_name}(F_{n}={fn}) = {val}")
+    # Note: 73 is trivially unique in [32,182] by pigeonhole (Phi_3 monotonic).
+    # This is structural, not a test.
+    print(f"\n  Note: 73 = Phi_3(F_6) is unique in [32,182] by pigeonhole")
+    print(f"  (Phi_3 is monotonic, no F_n between F_5=5 and F_7=13)")
+    print(f"  This is structural context, NOT a pass criterion.")
 
-    # PASS: 73 is unique Phi_3(F_n) in [32,182] AND census is finite/small
-    passed = unique_73 and len(all_cyclo) < 20
-    print(f"\n  -> {'PASS' if passed else 'FAIL'}: unique_73_in_[32,182]={unique_73}, "
-          f"census_size={len(all_cyclo)} (< 20)")
+    # --- Falsifiable test: mass prediction vs observational window ---
+    print(f"\n  Falsifiable test: does depth-73 mass fall in WDM window?")
+
+    # Route 1: Higgs VEV descent
+    mass_vev_gev = HIGGS_VEV * PHI**(-DEPTH_DARK / 2)
+    mass_vev_kev = mass_vev_gev * GEV_TO_KEV
+    print(f"\n  Route (a) VEV: v_H * phi^(-73/2) = {mass_vev_gev:.4e} GeV = {mass_vev_kev:.2f} keV")
+
+    # Route 2: Z-mass relative
+    mass_z_gev = M_Z_GEV * PHI**(-(DEPTH_DARK - DEPTH_EM) / 2)
+    mass_z_kev = mass_z_gev * GEV_TO_KEV
+    print(f"  Route (b) Z-relative: M_Z * phi^(-30) = {mass_z_gev:.4e} GeV = {mass_z_kev:.2f} keV")
+
+    # Geometric mean (as used in Paper 8)
+    mass_geomean_kev = np.sqrt(mass_vev_kev * mass_z_kev)
+    print(f"  Geometric mean: {mass_geomean_kev:.2f} keV")
+
+    # Observational bounds
+    wdm_lower = LYMAN_ALPHA_MASS_BOUND  # 3.3 keV
+    wdm_upper = 30.0  # keV, above which WDM ≈ CDM
+    print(f"\n  Observational WDM window: [{wdm_lower}, {wdm_upper}] keV")
+    print(f"    Lower: Lyman-alpha forest (Irsic+ 2017)")
+    print(f"    Upper: Structure formation (WDM ≈ CDM above ~30 keV)")
+
+    # Check each route
+    vev_in_window = wdm_lower <= mass_vev_kev <= wdm_upper
+    z_in_window = wdm_lower <= mass_z_kev <= wdm_upper
+    mean_in_window = wdm_lower <= mass_geomean_kev <= wdm_upper
+
+    print(f"\n  VEV route ({mass_vev_kev:.2f} keV) in window: {vev_in_window}")
+    print(f"  Z route ({mass_z_kev:.2f} keV) in window: {z_in_window}")
+    print(f"  Geometric mean ({mass_geomean_kev:.2f} keV) in window: {mean_in_window}")
+
+    # PASS: at least 2 of 3 mass estimates fall in WDM window
+    n_in_window = sum([vev_in_window, z_in_window, mean_in_window])
+    passed = n_in_window >= 2
+    print(f"\n  -> {'PASS' if passed else 'FAIL'}: {n_in_window}/3 mass estimates in "
+          f"WDM window [{wdm_lower}, {wdm_upper}] keV")
 
     return {
-        'test': 'cyclotomic_uniqueness',
-        'phi3_gap_values': [(n, fn, val) for n, fn, val in in_gap],
-        'unique_73': unique_73,
+        'test': 'depth73_mass_in_wdm_window',
+        'hardened': 'Round 1: was cyclotomic_uniqueness (pigeonhole tautology)',
+        'mass_vev_kev': float(mass_vev_kev),
+        'mass_z_kev': float(mass_z_kev),
+        'mass_geomean_kev': float(mass_geomean_kev),
+        'wdm_window': [wdm_lower, wdm_upper],
+        'n_in_window': n_in_window,
         'total_cyclo_in_300': len(all_cyclo),
         'all_cyclo_depths': sorted([v[3] for v in all_cyclo]),
         'passed': passed,
@@ -434,7 +440,7 @@ def main():
     print(f"    Phi_3(F_7={F7}) = {DEPTH_GRAVITY} -> gravity")
     print(f"    EM at depth {DEPTH_EM} = F_7")
 
-    r1 = test1_cyclotomic_uniqueness()
+    r1 = test1_depth73_mass_in_wdm_window()
     r2 = test2_correction_template()
     r3 = test3_projection_type()
     r4 = test4_hierarchy_consistency()
@@ -446,7 +452,7 @@ def main():
     print("\n" + "=" * 70)
     print("SUMMARY")
     print("=" * 70)
-    print(f"\n  Test 1 (Cyclotomic uniqueness): {'PASS' if r1['passed'] else 'FAIL'}")
+    print(f"\n  Test 1 (Depth-73 mass in WDM window): {'PASS' if r1['passed'] else 'FAIL'}")
     print(f"  Test 2 (Correction template): {'PASS' if r2['passed'] else 'FAIL'}")
     print(f"  Test 3 (Projection type): {'PASS' if r3['passed'] else 'FAIL'}")
     print(f"  Test 4 (Hierarchy consistency): {'PASS' if r4['passed'] else 'FAIL'}")

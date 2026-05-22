@@ -1,0 +1,73 @@
+{
+  "experiment": "exp_03_tetration_penalty_derivation",
+  "milestone": 6,
+  "block": "A",
+  "n_boundaries": 67,
+  "n_levels": 5,
+  "level_stats": {
+    "1": {
+      "n": 37,
+      "mean_eigenvalue": 0.0031495992932897105,
+      "std_eigenvalue": 0.004773441151184993,
+      "cv_eigenvalue": 1.5155709367072177,
+      "mean_size_ratio": 0.16216216216216217,
+      "mean_efficiency": 0.08157170840407135,
+      "mean_norm": 0.004281421581383957
+    },
+    "2": {
+      "n": 22,
+      "mean_eigenvalue": 0.006812579913560918,
+      "std_eigenvalue": 0.025841217633715875,
+      "cv_eigenvalue": 3.793161762737392,
+      "mean_size_ratio": 0.09090909090909091,
+      "mean_efficiency": 0.37512168478856833,
+      "mean_norm": 0.008651137151050425
+    },
+    "3": {
+      "n": 5,
+      "mean_eigenvalue": 0.0005227974601673565,
+      "std_eigenvalue": 0.00023278792304296168,
+      "cv_eigenvalue": 0.44527363038067747,
+      "mean_size_ratio": 0.2,
+      "mean_efficiency": 0.05500257815973819,
+      "mean_norm": 0.0005499533855630269
+    },
+    "4": {
+      "n": 3,
+      "mean_eigenvalue": 0.0003973425286649139,
+      "std_eigenvalue": 0.00023723306060205492,
+      "cv_eigenvalue": 0.5970492547036684,
+      "mean_size_ratio": 0.3333333333333333,
+      "mean_efficiency": 0.10764670919789181,
+      "mean_norm": 0.00044213418584679683
+    }
+  },
+  "geometric_fit": {
+    "decay_rate": -0.8778027487568048,
+    "geometric_base": 0.41569529595158966,
+    "r_squared": 0.6744903912757023,
+    "inv_phi": 0.6180339887498948
+  },
+  "trend": {
+    "spearman_rho": -0.7999999999999999,
+    "spearman_p": 0.20000000000000007
+  },
+  "termination": {
+    "max_level": 4,
+    "mean_deepest_child_size": 5359.666666666667,
+    "n_usable_levels": 4
+  },
+  "within_level_cv": {
+    "1": 1.5155709367072177,
+    "2": 3.793161762737392,
+    "3": 0.44527363038067747
+  },
+  "verification": {
+    "test1": "True",
+    "test2": "False",
+    "test3": "True",
+    "test4": false,
+    "verified_count": "2"
+  },
+  "timestamp": "2026-05-08T10:07:38.803901"
+}

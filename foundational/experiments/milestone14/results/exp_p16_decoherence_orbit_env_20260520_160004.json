@@ -1,0 +1,196 @@
+{
+  "T1": {
+    "test": "Purity decay from system-environment coupling",
+    "system": "D_4",
+    "environment": "A_5",
+    "lambda": 0.3,
+    "initial_purity": 0.9999999999999996,
+    "min_purity": 0.8794761194147046,
+    "max_entropy": 0.238935002948395,
+    "total_purity_final": 0.9999999999999939,
+    "pass": false
+  },
+  "T2": {
+    "test": "Analytical decoherence function match",
+    "lambda": 0.3,
+    "max_error_pure_dephasing": 1.6653345369377348e-15,
+    "rms_error": 4.924346792904135e-16,
+    "deviation_with_Hsys": 0.3626186346442441,
+    "pass": true
+  },
+  "T3": {
+    "test": "Fermi golden rule -- decoherence rate ~ lam^2",
+    "environment": "A_5",
+    "var_H_env": 0.9999999999999996,
+    "predicted_ratio": 0.9999999999999996,
+    "measured_ratio_mean": 0.999691558839291,
+    "rates": [
+      {
+        "lambda": 0.02,
+        "purity": 0.9999920000746657,
+        "gamma_sq": 0.00039999626671449734,
+        "gamma_sq_over_lam_sq": 0.9999906667862433
+      },
+      {
+        "lambda": 0.05,
+        "purity": 0.999950002916562,
+        "gamma_sq": 0.0024998541719001284,
+        "gamma_sq_over_lam_sq": 0.9999416687600512
+      },
+      {
+        "lambda": 0.1,
+        "purity": 0.9998000466600003,
+        "gamma_sq": 0.0099976669999835,
+        "gamma_sq_over_lam_sq": 0.9997666999983498
+      },
+      {
+        "lambda": 0.2,
+        "purity": 0.99920074624015,
+        "gamma_sq": 0.039962687992500794,
+        "gamma_sq_over_lam_sq": 0.9990671998125197
+      },
+      {
+        "lambda": 0.3,
+        "purity": 0.9982037751438511,
+        "gamma_sq": 0.08981124280744711,
+        "gamma_sq_over_lam_sq": 0.9979026978605234
+      },
+      {
+        "lambda": 0.5,
+        "purity": 0.9950290627290874,
+        "gamma_sq": 0.24854686354562888,
+        "gamma_sq_over_lam_sq": 0.9941874541825155
+      }
+    ],
+    "small_lambda_spread": 0.0009237518968308513,
+    "pass": true
+  },
+  "T4": {
+    "test": "Pointer basis = orbit basis (einselection)",
+    "lambda": 0.5,
+    "min_purity_orbit": 0.9999999999999967,
+    "min_purity_super": 0.5136042553072099,
+    "orbit_stays_pure": true,
+    "super_decoheres": true,
+    "orbit_dominates": true,
+    "pass": true
+  },
+  "T5": {
+    "test": "Topology-dependent decoherence rates",
+    "lambda": 0.1,
+    "environments": [
+      {
+        "env": "A_3",
+        "d_orb": 2,
+        "eigenvalues": [
+          0.0,
+          3.0
+        ],
+        "var_H_env": 2.0000000000000004,
+        "purity": 0.9984019190786366,
+        "gamma_sq": 0.0199760115170422,
+        "gamma_sq_over_lam_sq": 1.9976011517042196
+      },
+      {
+        "env": "A_5",
+        "d_orb": 3,
+        "eigenvalues": [
+          -0.0,
+          1.382,
+          3.618
+        ],
+        "var_H_env": 0.9999999999999996,
+        "purity": 0.99920074624015,
+        "gamma_sq": 0.009990671998125198,
+        "gamma_sq_over_lam_sq": 0.9990671998125197
+      },
+      {
+        "env": "A_7",
+        "d_orb": 4,
+        "eigenvalues": [
+          -0.0,
+          0.753,
+          2.445,
+          3.8019
+        ],
+        "var_H_env": 0.9999999999999996,
+        "purity": 0.999200639709954,
+        "gamma_sq": 0.009992003625575173,
+        "gamma_sq_over_lam_sq": 0.9992003625575171
+      },
+      {
+        "env": "D_5",
+        "d_orb": 4,
+        "eigenvalues": [
+          -0.0,
+          0.5188,
+          2.3111,
+          4.1701
+        ],
+        "var_H_env": 0.9999999999999996,
+        "purity": 0.9992006396815368,
+        "gamma_sq": 0.009992003980789642,
+        "gamma_sq_over_lam_sq": 0.999200398078964
+      },
+      {
+        "env": "D_6",
+        "d_orb": 5,
+        "eigenvalues": [
+          -0.0,
+          0.3249,
+          1.4608,
+          3.0,
+          4.2143
+        ],
+        "var_H_env": 1.0,
+        "purity": 0.9992006397156359,
+        "gamma_sq": 0.00999200355455143,
+        "gamma_sq_over_lam_sq": 0.9992003554551429
+      },
+      {
+        "env": "E_6",
+        "d_orb": 4,
+        "eigenvalues": [
+          -0.0,
+          0.6972,
+          2.0,
+          4.3028
+        ],
+        "var_H_env": 0.9999999999999996,
+        "purity": 0.9992007461719568,
+        "gamma_sq": 0.009990672850540559,
+        "gamma_sq_over_lam_sq": 0.9990672850540557
+      }
+    ],
+    "var_ranking": [
+      "A_5",
+      "A_7",
+      "D_5",
+      "E_6",
+      "D_6",
+      "A_3"
+    ],
+    "gamma_ranking": [
+      "A_5",
+      "E_6",
+      "D_6",
+      "A_7",
+      "D_5",
+      "A_3"
+    ],
+    "ranking_matches": false,
+    "ratio_spread": 0.0004001866517061617,
+    "pass": false
+  },
+  "synthesis": {
+    "score": "3/5",
+    "prediction": "P16: decoherence from orbit-environment entanglement",
+    "key_claims": [
+      "System-environment coupling creates decoherence (purity decay)",
+      "Exact formula: |rho_12(t)| = (1/2)|<0|exp(-2i*lam*H_env*t)|0>|",
+      "Fermi golden rule: gamma^2 ~ lam^2 * Var(H_env)",
+      "Orbit basis = pointer basis (einselection from graph coupling)",
+      "Decoherence rate predicted by environment spectral variance"
+    ]
+  }
+}

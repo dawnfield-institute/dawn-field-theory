@@ -101,62 +101,85 @@ def test1_h0_vs_probe_lookback():
 
 def test2_early_vs_late():
     """
-    Test 2: M8 Compatibility Check — Discrete vs Continuous Mechanisms.
+    Test 2: M8 Compatibility — LEAVE-ONE-OUT for H0.
 
-    The Hubble tension in DFT comes from the DISCRETE cascade correction:
-      H0_local = H0_PLANCK * phi^{1/N_floor}
-    where N_floor = floor(N_max) = 6.
-
-    With N_physical, both SH0ES (z~0.01) and Planck (z~1100) give the same
-    N_max, so the continuous clock predicts NO tension between them. The
-    tension is purely from the discrete step.
+    HARDENED: Round 1. Previously the clock was fitted to all 3 data points
+    (including Hubble), then used to predict H0 — circular. Now:
+      (a) Leave-one-out: fit clock to S8+JWST only, predict H0 blind
+      (b) Continuous clock z-ordering (uses full clock, structural test)
 
     PASS if:
-      (a) |H0_local - H0_SH0ES| < 2 * sigma_SH0ES
-      (b) Continuous H0(z=0.15) > H0(z=1.48) (correct ordering for DESI bins)
+      (a) Blind H0 prediction within 2 sigma of SH0ES
+      (b) Continuous H0(z=0.15) > H0(z=1.48)
     """
     print("\n" + "-" * 70)
-    print("TEST 2: M8 COMPATIBILITY — DISCRETE CASCADE CORRECTION")
+    print("TEST 2: M8 COMPATIBILITY — LEAVE-ONE-OUT H0")
+    print("  HARDENED: fit to S8+JWST only, predict H0 blind")
     print("-" * 70)
 
-    clock = CascadeClock(constrained=True)
+    clock_full = CascadeClock(constrained=True)
 
-    # --- Part (a): Discrete cascade correction ---
-    n_floor = clock.n_floor
-    h0_local = H0_PLANCK * PHI ** (1.0 / n_floor)
-    h0_shoes_obs = H0_SHOES  # 73.04
-    sigma_shoes = H0_PROBES['shoes']['err']  # 1.04
+    # --- Part (a): Leave-one-out H0 prediction ---
+    # Fit clock to S8 + JWST only (drop Hubble)
+    t_look_train = np.array([
+        N_DATA['s8']['t_lookback_gyr'],
+        N_DATA['jwst']['t_lookback_gyr'],
+    ])
+    n_obs_train = np.array([
+        N_DATA['s8']['N'],
+        N_DATA['jwst']['N'],
+    ])
+    a_loo = np.mean(n_obs_train - B_DFT * np.log(t_look_train))
 
-    diff_a = abs(h0_local - h0_shoes_obs)
-    n_sigma_a = diff_a / sigma_shoes
+    # Predict N at Hubble lookback time
+    t_look_hubble = N_DATA['hubble']['t_lookback_gyr']
+    n_pred_hubble = cascade_clock(t_look_hubble, a_loo, B_DFT)
+    n_obs_hubble = N_DATA['hubble']['N']
 
-    print(f"\n  Part (a): Discrete cascade correction")
-    print(f"    N_max = {clock.n_max:.4f}")
-    print(f"    N_floor = {n_floor}")
-    print(f"    H0_local = H0_Planck * phi^(1/{n_floor})")
-    print(f"            = {H0_PLANCK:.2f} * {PHI**(1.0/n_floor):.6f}")
-    print(f"            = {h0_local:.2f} km/s/Mpc")
-    print(f"    H0_SH0ES = {h0_shoes_obs:.2f} +/- {sigma_shoes:.2f}")
-    print(f"    |pred - obs| = {diff_a:.2f} ({n_sigma_a:.2f} sigma)")
+    # Predict H0 using blind clock
+    n_max_loo = cascade_clock(T_UNIVERSE, a_loo, B_DFT)
+    n_floor_loo = int(np.floor(n_max_loo))
+    h0_blind = H0_PLANCK * PHI ** (1.0 / n_floor_loo)
+    h0_shoes_obs = H0_SHOES
+    sigma_shoes = H0_PROBES['shoes']['err']
+
+    # Full clock prediction (for comparison)
+    h0_full = H0_PLANCK * PHI ** (1.0 / clock_full.n_floor)
+
+    diff_blind = abs(h0_blind - h0_shoes_obs)
+    n_sigma_blind = diff_blind / sigma_shoes
+    diff_full = abs(h0_full - h0_shoes_obs)
+    n_sigma_full = diff_full / sigma_shoes
+
+    print(f"\n  Part (a): Leave-one-out H0 prediction")
+    print(f"    Full clock: a = {clock_full.a:.4f}, N_max = {clock_full.n_max:.4f}")
+    print(f"    LOO clock:  a = {a_loo:.4f}, N_max = {n_max_loo:.4f}")
+    print(f"    LOO predicted N at Hubble lookback: {n_pred_hubble:.2f} (obs: {n_obs_hubble:.2f})")
+    print(f"    N_floor: LOO = {n_floor_loo}, full = {clock_full.n_floor}")
+    print(f"\n    H0 predictions:")
+    print(f"      Full fit:  {h0_full:.2f} km/s/Mpc ({n_sigma_full:.2f} sigma from SH0ES)")
+    print(f"      Blind LOO: {h0_blind:.2f} km/s/Mpc ({n_sigma_blind:.2f} sigma from SH0ES)")
+    print(f"      SH0ES obs: {h0_shoes_obs:.2f} +/- {sigma_shoes:.2f}")
     print(f"    Threshold: < 2 sigma ({2*sigma_shoes:.2f} km/s/Mpc)")
 
-    passed_a = diff_a < 2 * sigma_shoes
-
+    passed_a = diff_blind < 2 * sigma_shoes
+    if not passed_a:
+        print(f"\n    HONEST FAILURE: blind LOO prediction {n_sigma_blind:.2f} sigma from SH0ES.")
+        print(f"    The Hubble data point was needed to constrain the clock intercept.")
     print(f"    -> {'PASS' if passed_a else 'FAIL'}")
 
-    # --- Part (b): Continuous clock z-ordering ---
+    # --- Part (b): Continuous clock z-ordering (structural, uses full clock) ---
     z_low = DESI_Z_EFF[0]   # 0.15
     z_high = DESI_Z_EFF[-1]  # 1.48
-    h0_low_z = clock.h0(z_low)
-    h0_high_z = clock.h0(z_high)
+    h0_low_z = clock_full.h0(z_low)
+    h0_high_z = clock_full.h0(z_high)
 
-    print(f"\n  Part (b): Continuous clock z-ordering")
+    print(f"\n  Part (b): Continuous clock z-ordering (structural)")
     print(f"    H0(z={z_low}) = {h0_low_z:.4f} km/s/Mpc")
     print(f"    H0(z={z_high}) = {h0_high_z:.4f} km/s/Mpc")
     print(f"    H0(z={z_low}) > H0(z={z_high}): {h0_low_z > h0_high_z}")
 
     passed_b = h0_low_z > h0_high_z
-
     print(f"    -> {'PASS' if passed_b else 'FAIL'}")
 
     # --- Overall ---
@@ -166,22 +189,23 @@ def test2_early_vs_late():
           f"(a={'PASS' if passed_a else 'FAIL'}, "
           f"b={'PASS' if passed_b else 'FAIL'})")
 
-    if passed:
-        print(f"\n  Interpretation: The Hubble tension is explained by TWO mechanisms:")
-        print(f"    1. Discrete phi^{{1/N_floor}} step gives H0_local ~ {h0_local:.1f}")
-        print(f"       (matches SH0ES to {n_sigma_a:.2f} sigma)")
-        print(f"    2. Continuous clock gives scale-dependent H0(z) between BAO bins")
-        print(f"       (higher z sees more cascade levels -> smaller correction)")
-
     return {
         'test': 'early_vs_late',
-        'N_max': float(clock.n_max),
-        'N_floor': n_floor,
-        'h0_local_discrete': float(h0_local),
+        'hardened': 'Round 1: leave-one-out (S8+JWST only, H0 blind)',
+        'a_full': float(clock_full.a),
+        'a_loo': float(a_loo),
+        'N_max_full': float(clock_full.n_max),
+        'N_max_loo': float(n_max_loo),
+        'N_floor_full': clock_full.n_floor,
+        'N_floor_loo': n_floor_loo,
+        'n_pred_hubble': float(n_pred_hubble),
+        'n_obs_hubble': float(n_obs_hubble),
+        'h0_full': float(h0_full),
+        'h0_blind': float(h0_blind),
         'h0_shoes_obs': float(h0_shoes_obs),
         'sigma_shoes': float(sigma_shoes),
-        'diff_a': float(diff_a),
-        'n_sigma_a': float(n_sigma_a),
+        'diff_blind': float(diff_blind),
+        'n_sigma_blind': float(n_sigma_blind),
         'passed_a': bool(passed_a),
         'z_low': z_low,
         'z_high': z_high,

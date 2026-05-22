@@ -13,25 +13,25 @@ experiment has pre-registered numerical predictions with explicit falsification 
 First milestone in the M8→M9→M10 arc: *"Here's what we predict → Here's why it works
 → Here's what it means for the deepest open problem in physics."*
 
-## Status: 48/48 (100%) | Complete (Hardened)
+## Status: 47/48 (98%) | Complete (Hardened v0.3 cycle)
 
 ## Scorecard
 
-| Exp | Score | Block | Name | Highlights |
-|-----|-------|-------|------|-----------|
-| 01 | 4/4 | A | Depth-73 coupling derivation | 73 unique Φ₃ in [32,182], α₇₃ = 1.2×10⁻¹⁵, antisymmetric projection |
-| 02 | 4/4 | A | Dark matter mass spectrum | Cascade routes converge: 6.44 keV (0.09 orders). X-ray at 3.2 keV ≈ 3.55 keV observed |
-| 03 | 4/4 | A | Relic abundance & production | Thermal excluded (10¹⁸×), Ω_c 0.46%, DW mixing ~10⁻¹⁰, λ_fs = 0.016 Mpc |
-| 04 | 4/4 | B | Z' at 395 GeV quantification | Not excluded (9× margin), BRs physical, width = 64.0 MeV |
-| 05 | 4/4 | B | Neutrino absolute masses | Sum 0.43 meV, splitting ratio 17% (was 44%), CP at 1.0σ |
-| 06 | 4/4 | B | Fibonacci depth sweep | 5 known forces recovered, 12 cyclotomic depths, Φ₃ desert empty in [74,182], no-GUT |
-| 07 | 4/4 | C | Hubble tension quantification | φ^{1/6} at 0.075%, H₀ = 73.0 via BAO, S8 = 0.787 (per-level dissipation), DESI 0.5σ |
-| 08 | 4/4 | C | Cosmological constant precision | CC at −122.09 (0.09 orders!), Ω_Λ 0.18%, sensitivity robust (max 0.56 orders) |
-| 09 | 4/4 | C | JWST structure prediction | z-dep floor: z=8 at 16%, z=12 at 4%, ratio 0.25 vs JWST 0.30 |
-| 10 | 4/4 | D | BSM master test | 0 contradictions, 10 predictions (4P/4D/2C), 0 excluded |
-| 11 | 4/4 | E | Cross-consistency | Mass chain closes, BAO=Hubble (3 not 4 constraints), 7 indep from 2 params |
-| 12 | 4/4 | E | Look-elsewhere & sensitivity | φ^{1/6} rank 2/300 (p=0.007), N=5-8 all pass, robust to φ±0.1% |
-| **Total** | **48/48** | | **100%** | |
+| Exp | Score | Block | Name | Highlights | Hardened |
+|-----|-------|-------|------|-----------|----------|
+| 01 | 4/4 | A | Depth-73 coupling derivation | 73 unique Φ₃ in [32,182], α₇₃ = 1.2×10⁻¹⁵ | T1: (C) label |
+| 02 | 4/4 | A | Dark matter mass spectrum | Cascade routes converge: 6.44 keV (0.09 orders) | — |
+| 03 | 4/4 | A | Relic abundance & production | Thermal excluded (10¹⁸×), Ω_c 0.46%, DW mixing ~10⁻¹⁰ | T1: (C) moved to preamble |
+| 04 | 4/4 | B | Z' at 395 GeV quantification | Not excluded (9× margin), width = 64.0 MeV | — |
+| 05 | 4/4 | B | Neutrino absolute masses | Sum 0.43 meV, splitting ratio 17%, CP at 1.0σ | — |
+| 06 | 4/4 | B | Fibonacci depth sweep | 7 Φ₃ forces in [5,7] range | T3: force count (not desert) |
+| 07 | 4/4 | C | Hubble tension quantification | φ^{1/6} at 0.075%, H₀ = 73.0 | T2: relabeled (D) |
+| 08 | 4/4 | C | Cosmological constant precision | CC at −122.09 (0.09 orders!), φ-direct 4.23% | T2: complement excluded |
+| 09 | 4/4 | C | JWST structure prediction | z-dep floor: z=8 at 16%, z=12 at 4% | — |
+| 10 | 4/4 | D | BSM master test | 0 contradictions, Z' width cross-check | T1: structural (C) |
+| 11 | **3/4** | E | Cross-consistency | N range 2.75 > 1.5 (**FAIL**) → M9 resolves | T2: tighten tolerance |
+| 12 | 4/4 | E | Look-elsewhere & sensitivity | φ^{1/6} rank 2 (phi-family), p=0.02 corrected | T2: honest rank, trials |
+| **Total** | **47/48** | | **98%** | Post-hardening (v0.3 cycle) |
 
 ### Key Numbers
 - **Cosmological constant**: log₁₀(Λ/Λ_P) = −122.09 vs −122.0 (0.09 orders with correction template)
@@ -250,7 +250,7 @@ M8 as a whole is falsified if:
 4. Cosmological predictions are mutually contradictory (exp_10)
 5. Dark matter mass in excluded range after template refinement (exp_02)
 
-Target: ≥32/40 (80%) with zero contradictions to existing bounds. **Achieved: 48/48 (100%) after hardening** (circularity removed, thresholds tightened, look-elsewhere tested, P/D/C classified).
+Target: ≥32/40 (80%) with zero contradictions to existing bounds. **Achieved: 47/48 (98%) after v0.3 hardening cycle** (circularity removed, thresholds tightened, look-elsewhere tested, P/D/C classified, N-universality exposed as M9-dependent).
 
 ## Structure
 

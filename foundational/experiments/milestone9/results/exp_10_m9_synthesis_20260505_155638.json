@@ -1,0 +1,117 @@
+{
+  "experiment": "exp_10_m9_synthesis",
+  "milestone": 9,
+  "block": "D",
+  "tests": {
+    "m8_compatibility": {
+      "test": "m8_compatibility",
+      "n_dependent_checks": 3,
+      "n_passed_checks": 3,
+      "hubble_ratio_clock": 1.0829590974918657,
+      "hubble_ratio_m8": 1.083505882173848,
+      "hubble_error_clock": 0.0012578750403605984,
+      "s8_clock": 0.7688047045356915,
+      "s8_m8": 0.787,
+      "z_cascade_clock": 3.234482841823841,
+      "z_cascade_m8": 2.887270950357621,
+      "m8_total_loaded": 43,
+      "passed": true
+    },
+    "parameter_reduction": {
+      "test": "parameter_reduction",
+      "t1_gyr": 0.5198234666632633,
+      "t1_myr": 519.8234666632633,
+      "ratio_recombination": 1367.9564912191138,
+      "ratio_reionization": 2.887908148129241,
+      "ratio_first_stars": 2.5991173333163164,
+      "ratio_phi_reion": 1.7848253919316368,
+      "in_anchor_range": true,
+      "best_anchor": "first_stars",
+      "best_ratio": 2.5991173333163164,
+      "params_m8": 2,
+      "params_m9": 1,
+      "passed": true
+    },
+    "internal_consistency": {
+      "test": "internal_consistency",
+      "n_experiments_loaded": 9,
+      "total_passed": 33,
+      "total_tests": 36,
+      "block_scores": {
+        "A": 10,
+        "B": 12,
+        "C": 11
+      },
+      "block_totals": {
+        "A": 12,
+        "B": 12,
+        "C": 12
+      },
+      "a_consistent": true,
+      "block_a_fraction": 0.8333333333333334,
+      "block_c_fraction": 0.9166666666666666,
+      "passed": true
+    },
+    "prediction_registry": {
+      "test": "prediction_registry",
+      "n_total": 5,
+      "n_p_type": 4,
+      "n_d_type": 1,
+      "n_c_type": 0,
+      "n_falsifiable": 3,
+      "predictions": {
+        "predictions": [
+          {
+            "name": "S8 varies with redshift",
+            "value": "S8(z=0.2)=0.750, S8(z=1.0)=0.785",
+            "uncertainty": "depends on cascade clock calibration",
+            "basis": "cascade clock N(t) makes S8 scale-dependent",
+            "falsifiable_by": "Euclid S8 measurements in multiple z-bins (~2027)",
+            "experiment": "exp_07",
+            "registered_at": "2026-05-05T15:56:38.075835"
+          },
+          {
+            "name": "H0 varies with probe lookback",
+            "value": "H0(z=0.01)=72.3, H0(z=0.5)=74.5",
+            "uncertainty": "+/- 2 km/s/Mpc",
+            "basis": "cascade clock makes H0 ratio scale-dependent",
+            "falsifiable_by": "TDSL vs distance ladder comparison",
+            "experiment": "exp_08",
+            "registered_at": "2026-05-05T15:56:38.075835"
+          },
+          {
+            "name": "Dark energy w(z) has curvature",
+            "value": "w(z=0.5)=-0.9668, w(z=1.5)=-0.9818",
+            "uncertainty": "curvature magnitude uncertain",
+            "basis": "w = -1 + 1/(3*phi^N(t)) is exponential, not linear",
+            "falsifiable_by": "DESI DR2/DR3 w(z) measurements",
+            "experiment": "exp_09",
+            "registered_at": "2026-05-05T15:56:38.075835"
+          },
+          {
+            "name": "Cascade level 7 completes at t_lookback = 15.1 Gyr",
+            "value": "t_7 = 15.1 Gyr lookback (1.3 Gyr in future)",
+            "uncertainty": "+/- 1 Gyr",
+            "basis": "cascade clock extrapolation",
+            "falsifiable_by": "discrete cosmic parameter shift detectable in ~1 Gyr surveys",
+            "experiment": "exp_01",
+            "registered_at": "2026-05-05T15:56:38.075835"
+          },
+          {
+            "name": "Only phi-ratio cascade satisfies conservation + scale invariance",
+            "value": "phi is the unique timing ratio",
+            "uncertainty": "proven (algebraic)",
+            "basis": "g_out = g_in^2 requires g_in = 1/phi",
+            "falsifiable_by": "mathematical: find counterexample",
+            "experiment": "exp_01",
+            "registered_at": "2026-05-05T15:56:38.075835"
+          }
+        ],
+        "count": 5
+      },
+      "passed": true
+    }
+  },
+  "score": "4/4",
+  "timestamp": "2026-05-05T15:56:38.075835"
+}

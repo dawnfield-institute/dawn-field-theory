@@ -137,59 +137,100 @@ def test2_s8_matches_lensing():
 
 def test3_tension_resolution():
     """
-    Test 3: The S8 tension is |S8_Planck - S8_lensing| / sigma_lensing.
-    LCDM predicts constant S8 = 0.832 at all z, giving ~3.2 sigma tension.
-    DFT predicts scale-dependent S8(z), which should reduce the tension.
+    Test 3: S8 tension resolution — LEAVE-ONE-OUT.
 
-    PASS if DFT tension < LCDM tension (DFT reduces the discrepancy).
+    HARDENED: Round 1. Previously fitted clock to ALL 3 data points (including
+    S8), then "predicted" S8 — circular. Now uses leave-one-out: fit clock to
+    Hubble+JWST only, predict S8 blind at z_eff=0.35.
+
+    If the blind prediction still resolves the tension, that's genuinely impressive.
+    If it doesn't, that's an honest failure exposing the circularity.
+
+    PASS if blind S8 prediction reduces tension vs LCDM.
     """
     print("\n" + "-" * 70)
-    print("TEST 3: TENSION RESOLUTION")
+    print("TEST 3: TENSION RESOLUTION (LEAVE-ONE-OUT)")
+    print("  HARDENED: fit to Hubble+JWST only, predict S8 blind")
     print("-" * 70)
 
-    clock = CascadeClock(constrained=True)
     z_eff = 0.35
     sigma_lensing = 0.02
     s8_lensing_obs = S8_LENSING  # 0.7675
 
+    # --- Full clock (for reference) ---
+    clock_full = CascadeClock(constrained=True)
+    s8_full = clock_full.s8(z_eff)
+
+    # --- Leave-one-out: fit to Hubble + JWST only ---
+    t_look_train = np.array([
+        N_DATA['hubble']['t_lookback_gyr'],
+        N_DATA['jwst']['t_lookback_gyr'],
+    ])
+    n_obs_train = np.array([
+        N_DATA['hubble']['N'],
+        N_DATA['jwst']['N'],
+    ])
+    # Constrained fit: slope = 1/ln(phi), fit intercept a only
+    a_loo = np.mean(n_obs_train - B_DFT * np.log(t_look_train))
+
+    # Predict S8 blind at z_eff=0.35
+    s8_blind = s8_at_z(z_eff, a_loo)
+
+    # Check: what N does the LOO clock give at the S8 lookback?
+    t_look_s8 = N_DATA['s8']['t_lookback_gyr']
+    n_pred_s8 = cascade_clock(t_look_s8, a_loo, B_DFT)
+    n_obs_s8 = N_DATA['s8']['N']
+
+    print(f"\n  Full clock (3 data points):")
+    print(f"    a = {clock_full.a:.4f}")
+    print(f"    S8(z={z_eff}) = {s8_full:.4f}")
+
+    print(f"\n  Leave-one-out clock (Hubble+JWST only):")
+    print(f"    a_LOO = {a_loo:.4f} (vs full: {clock_full.a:.4f})")
+    print(f"    Predicted N at S8 lookback: {n_pred_s8:.2f} (observed: {n_obs_s8:.2f})")
+    print(f"    S8_blind(z={z_eff}) = {s8_blind:.4f}")
+
     # LCDM prediction: constant S8 = S8_PLANCK at all z
     lcdm_tension = abs(S8_PLANCK - s8_lensing_obs) / sigma_lensing
+    dft_tension_full = abs(s8_full - s8_lensing_obs) / sigma_lensing
+    dft_tension_blind = abs(s8_blind - s8_lensing_obs) / sigma_lensing
 
-    # DFT prediction: scale-dependent S8(z)
-    s8_dft = clock.s8(z_eff)
-    dft_tension = abs(s8_dft - s8_lensing_obs) / sigma_lensing
-
-    print(f"\n  S8 tension (at z_eff = {z_eff}):")
+    print(f"\n  Tension comparison:")
     print(f"    Lensing measurement: {s8_lensing_obs:.4f} +/- {sigma_lensing}")
+    print(f"    LCDM (constant):     {S8_PLANCK:.4f}  -> {lcdm_tension:.2f} sigma")
+    print(f"    DFT (full fit):      {s8_full:.4f}  -> {dft_tension_full:.2f} sigma")
+    print(f"    DFT (blind LOO):     {s8_blind:.4f}  -> {dft_tension_blind:.2f} sigma")
 
-    print(f"\n  LCDM (constant S8):")
-    print(f"    S8_pred = {S8_PLANCK:.4f}")
-    print(f"    |S8_pred - S8_obs| / sigma = {lcdm_tension:.2f} sigma")
-
-    print(f"\n  DFT (scale-dependent S8):")
-    print(f"    S8_DFT(z={z_eff}) = {s8_dft:.4f}")
-    print(f"    |S8_DFT - S8_obs| / sigma = {dft_tension:.2f} sigma")
-
-    reduction = lcdm_tension - dft_tension
+    reduction = lcdm_tension - dft_tension_blind
     reduction_pct = (reduction / lcdm_tension) * 100 if lcdm_tension > 0 else 0
 
-    print(f"\n  Tension reduction:")
-    print(f"    LCDM tension:  {lcdm_tension:.2f} sigma")
-    print(f"    DFT tension:   {dft_tension:.2f} sigma")
-    print(f"    Reduction:     {reduction:.2f} sigma ({reduction_pct:.1f}%)")
+    print(f"\n  Blind tension reduction:")
+    print(f"    LCDM -> blind DFT: {lcdm_tension:.2f} -> {dft_tension_blind:.2f} sigma")
+    print(f"    Reduction: {reduction:.2f} sigma ({reduction_pct:.1f}%)")
 
-    passed = dft_tension < lcdm_tension
-    print(f"\n  -> {'PASS' if passed else 'FAIL'}: DFT "
+    passed = dft_tension_blind < lcdm_tension
+    if not passed:
+        print(f"\n  HONEST FAILURE: blind LOO prediction does NOT resolve S8 tension.")
+        print(f"    The S8 data point was needed in the fit to get the right answer.")
+        print(f"    The clock has only 2 truly independent constraints (Hubble, JWST).")
+    print(f"\n  -> {'PASS' if passed else 'FAIL'}: blind S8 prediction "
           f"{'reduces' if passed else 'does not reduce'} S8 tension")
 
     return {
         'test': 'tension_resolution',
+        'hardened': 'Round 1: leave-one-out (Hubble+JWST only, S8 blind)',
         'z_eff': z_eff,
         's8_lensing': float(s8_lensing_obs),
         's8_planck': float(S8_PLANCK),
-        's8_dft': float(s8_dft),
+        's8_full_fit': float(s8_full),
+        's8_blind_loo': float(s8_blind),
+        'a_full': float(clock_full.a),
+        'a_loo': float(a_loo),
+        'n_pred_s8': float(n_pred_s8),
+        'n_obs_s8': float(n_obs_s8),
         'lcdm_tension_sigma': float(lcdm_tension),
-        'dft_tension_sigma': float(dft_tension),
+        'dft_tension_full_sigma': float(dft_tension_full),
+        'dft_tension_blind_sigma': float(dft_tension_blind),
         'reduction_sigma': float(reduction),
         'reduction_pct': float(reduction_pct),
         'passed': bool(passed),

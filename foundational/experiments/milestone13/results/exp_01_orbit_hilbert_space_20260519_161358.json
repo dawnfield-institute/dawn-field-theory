@@ -1,0 +1,964 @@
+{
+  "experiment": "exp_01_orbit_hilbert_space",
+  "milestone": 14,
+  "block": "A",
+  "results": {
+    "T1": {
+      "test": "T1_orbit_basis_orthonormal",
+      "results_by_type": {
+        "A_5": {
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "gram_max_error": 2.220446049250313e-16,
+          "is_orthonormal": true,
+          "all_unit_norm": true,
+          "is_orthogonal": true,
+          "max_off_diagonal_dot": 0.0,
+          "norms": [
+            0.9999999999999999,
+            0.9999999999999999,
+            1.0
+          ],
+          "PASS": true
+        },
+        "D_4": {
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "gram_max_error": 2.220446049250313e-16,
+          "is_orthonormal": true,
+          "all_unit_norm": true,
+          "is_orthogonal": true,
+          "max_off_diagonal_dot": 0.0,
+          "norms": [
+            1.0,
+            1.0
+          ],
+          "PASS": true
+        },
+        "E_6": {
+          "n_vertices": 6,
+          "n_orbits": 4,
+          "gram_max_error": 2.220446049250313e-16,
+          "is_orthonormal": true,
+          "all_unit_norm": true,
+          "is_orthogonal": true,
+          "max_off_diagonal_dot": 0.0,
+          "norms": [
+            0.9999999999999999,
+            0.9999999999999999,
+            1.0,
+            1.0
+          ],
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_orbit_gram_positive_definite",
+      "n_diagrams": 16,
+      "results_by_type": {
+        "A_1": {
+          "n_orbits": 1,
+          "eigenvalues": [
+            1.0
+          ],
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 0.0,
+          "PASS": true
+        },
+        "A_2": {
+          "n_orbits": 1,
+          "eigenvalues": [
+            0.9999999999999998
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 0.9999999999999998,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "A_3": {
+          "n_orbits": 2,
+          "eigenvalues": [
+            0.9999999999999998,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "A_4": {
+          "n_orbits": 2,
+          "eigenvalues": [
+            0.9999999999999998,
+            0.9999999999999998
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 0.9999999999999998,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "A_5": {
+          "n_orbits": 3,
+          "eigenvalues": [
+            0.9999999999999998,
+            0.9999999999999998,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "A_6": {
+          "n_orbits": 3,
+          "eigenvalues": [
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 0.9999999999999998,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "A_7": {
+          "n_orbits": 4,
+          "eigenvalues": [
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "A_8": {
+          "n_orbits": 4,
+          "eigenvalues": [
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998,
+            0.9999999999999998
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 0.9999999999999998,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "D_4": {
+          "n_orbits": 2,
+          "eigenvalues": [
+            1.0,
+            1.0000000000000002
+          ],
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0000000000000002,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "D_5": {
+          "n_orbits": 4,
+          "eigenvalues": [
+            0.9999999999999998,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "D_6": {
+          "n_orbits": 5,
+          "eigenvalues": [
+            0.9999999999999998,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "D_7": {
+          "n_orbits": 6,
+          "eigenvalues": [
+            0.9999999999999998,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "D_8": {
+          "n_orbits": 7,
+          "eigenvalues": [
+            0.9999999999999998,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "E_6": {
+          "n_orbits": 4,
+          "eigenvalues": [
+            0.9999999999999998,
+            0.9999999999999998,
+            1.0,
+            1.0
+          ],
+          "min_eigenvalue": 0.9999999999999998,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 2.220446049250313e-16,
+          "PASS": true
+        },
+        "E_7": {
+          "n_orbits": 7,
+          "eigenvalues": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 0.0,
+          "PASS": true
+        },
+        "E_8": {
+          "n_orbits": 8,
+          "eigenvalues": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "is_positive_definite": true,
+          "is_identity": true,
+          "identity_error": 0.0,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_orbit_dimension_matches",
+      "n_diagrams": 16,
+      "results_by_type": {
+        "A_1": {
+          "n_vertices": 1,
+          "n_orbits_automorphism": 1,
+          "n_orbits_complement_spectrum": 1,
+          "n_orbits_hilbert_dim": 1,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0
+            ]
+          ],
+          "PASS": true
+        },
+        "A_2": {
+          "n_vertices": 2,
+          "n_orbits_automorphism": 1,
+          "n_orbits_complement_spectrum": 1,
+          "n_orbits_hilbert_dim": 1,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              1
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              1
+            ]
+          ],
+          "PASS": true
+        },
+        "A_3": {
+          "n_vertices": 3,
+          "n_orbits_automorphism": 2,
+          "n_orbits_complement_spectrum": 2,
+          "n_orbits_hilbert_dim": 2,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "PASS": true
+        },
+        "A_4": {
+          "n_vertices": 4,
+          "n_orbits_automorphism": 2,
+          "n_orbits_complement_spectrum": 2,
+          "n_orbits_hilbert_dim": 2,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "PASS": true
+        },
+        "A_5": {
+          "n_vertices": 5,
+          "n_orbits_automorphism": 3,
+          "n_orbits_complement_spectrum": 3,
+          "n_orbits_hilbert_dim": 3,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "PASS": true
+        },
+        "A_6": {
+          "n_vertices": 6,
+          "n_orbits_automorphism": 3,
+          "n_orbits_complement_spectrum": 3,
+          "n_orbits_hilbert_dim": 3,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "PASS": true
+        },
+        "A_7": {
+          "n_vertices": 7,
+          "n_orbits_automorphism": 4,
+          "n_orbits_complement_spectrum": 4,
+          "n_orbits_hilbert_dim": 4,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          "PASS": true
+        },
+        "A_8": {
+          "n_vertices": 8,
+          "n_orbits_automorphism": 4,
+          "n_orbits_complement_spectrum": 4,
+          "n_orbits_hilbert_dim": 4,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "PASS": true
+        },
+        "D_4": {
+          "n_vertices": 4,
+          "n_orbits_automorphism": 2,
+          "n_orbits_complement_spectrum": 2,
+          "n_orbits_hilbert_dim": 2,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "PASS": true
+        },
+        "D_5": {
+          "n_vertices": 5,
+          "n_orbits_automorphism": 4,
+          "n_orbits_complement_spectrum": 4,
+          "n_orbits_hilbert_dim": 4,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "PASS": true
+        },
+        "D_6": {
+          "n_vertices": 6,
+          "n_orbits_automorphism": 5,
+          "n_orbits_complement_spectrum": 5,
+          "n_orbits_hilbert_dim": 5,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "PASS": true
+        },
+        "D_7": {
+          "n_vertices": 7,
+          "n_orbits_automorphism": 6,
+          "n_orbits_complement_spectrum": 6,
+          "n_orbits_hilbert_dim": 6,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "PASS": true
+        },
+        "D_8": {
+          "n_vertices": 8,
+          "n_orbits_automorphism": 7,
+          "n_orbits_complement_spectrum": 7,
+          "n_orbits_hilbert_dim": 7,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "PASS": true
+        },
+        "E_6": {
+          "n_vertices": 6,
+          "n_orbits_automorphism": 4,
+          "n_orbits_complement_spectrum": 4,
+          "n_orbits_hilbert_dim": 4,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              5
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              5
+            ]
+          ],
+          "PASS": true
+        },
+        "E_7": {
+          "n_vertices": 7,
+          "n_orbits_automorphism": 7,
+          "n_orbits_complement_spectrum": 7,
+          "n_orbits_hilbert_dim": 7,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "PASS": true
+        },
+        "E_8": {
+          "n_vertices": 8,
+          "n_orbits_automorphism": 8,
+          "n_orbits_complement_spectrum": 8,
+          "n_orbits_hilbert_dim": 8,
+          "all_match": true,
+          "aut_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ]
+          ],
+          "spec_orbit_members": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ]
+          ],
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_trivial_aut_classical_limit",
+      "results_by_type": {
+        "E_7": {
+          "n_vertices": 7,
+          "n_automorphisms": 1,
+          "n_orbits": 7,
+          "is_trivial_aut": true,
+          "dim_equals_n": true,
+          "all_singleton_orbits": true,
+          "basis_completeness_error": 0.0,
+          "PASS": true
+        },
+        "E_8": {
+          "n_vertices": 8,
+          "n_automorphisms": 1,
+          "n_orbits": 8,
+          "is_trivial_aut": true,
+          "dim_equals_n": true,
+          "all_singleton_orbits": true,
+          "basis_completeness_error": 0.0,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}

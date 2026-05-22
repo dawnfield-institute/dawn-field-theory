@@ -1,0 +1,136 @@
+{
+  "experiment": "exp_02_ade_scope_identification",
+  "milestone": 6,
+  "block": "A",
+  "additive_by_level": {
+    "1": {
+      "mean": 1.0,
+      "std": 0.0,
+      "n": 6
+    },
+    "2": {
+      "mean": 1.0,
+      "std": 0.0,
+      "n": 2
+    },
+    "3": {
+      "mean": 0.9999999999999999,
+      "std": 0.0,
+      "n": 1
+    },
+    "4": {
+      "mean": 1.0,
+      "std": 0.0,
+      "n": 1
+    }
+  },
+  "multiplicative": {
+    "1": {
+      "cv_linear": 1.3751847977899778,
+      "cv_log": 0.20102107128082494,
+      "ratio": 0.14617749672907995,
+      "n_matrices": 37
+    },
+    "2": {
+      "cv_linear": 3.5140490100879855,
+      "cv_log": 0.20287107562587348,
+      "ratio": 0.05773143033676526,
+      "n_matrices": 22
+    },
+    "3": {
+      "cv_linear": 0.32942908254322173,
+      "cv_log": 0.06206569849147973,
+      "ratio": 0.18840382279647877,
+      "n_matrices": 5
+    },
+    "4": {
+      "cv_linear": 0.3942279075372589,
+      "cv_log": 0.06352871261702218,
+      "ratio": 0.16114717249188662,
+      "n_matrices": 3
+    }
+  },
+  "kan_by_level": {
+    "1": {
+      "mean_K": 0.13497770661937974,
+      "mean_A": 0.09267390136208457,
+      "mean_N": 0.7723483920185357,
+      "n": 37
+    },
+    "2": {
+      "mean_K": 0.20483881826364464,
+      "mean_A": 0.18023271089350892,
+      "mean_N": 0.6149284708428465,
+      "n": 22
+    },
+    "3": {
+      "mean_K": 0.32436365671128414,
+      "mean_A": 0.1412862864102279,
+      "mean_N": 0.534350056878488,
+      "n": 5
+    },
+    "4": {
+      "mean_K": 0.46934046067848634,
+      "mean_A": 0.1718319825203556,
+      "mean_N": 0.358827556801158,
+      "n": 3
+    }
+  },
+  "ade_assignments": {
+    "1": {
+      "1": 35,
+      "3": 2
+    },
+    "2": {
+      "1": 21,
+      "3": 1
+    },
+    "3": {
+      "1": 4,
+      "3": 1
+    },
+    "4": {
+      "1": 2,
+      "3": 1
+    }
+  },
+  "stability": {
+    "1": {
+      "mean_spectral_radius": 0.0031495992932897105,
+      "max_spectral_radius": 0.022116636798746852,
+      "stable_fraction": 1.0,
+      "n": 37
+    },
+    "2": {
+      "mean_spectral_radius": 0.006812579913560917,
+      "max_spectral_radius": 0.12482865485727833,
+      "stable_fraction": 1.0,
+      "n": 22
+    },
+    "3": {
+      "mean_spectral_radius": 0.0005227974601673565,
+      "max_spectral_radius": 0.0007063543865001745,
+      "stable_fraction": 1.0,
+      "n": 5
+    },
+    "4": {
+      "mean_spectral_radius": 0.0003973425286649143,
+      "max_spectral_radius": 0.000585851344557082,
+      "stable_fraction": 1.0,
+      "n": 3
+    }
+  },
+  "n_levels": 5,
+  "verification": {
+    "test1_additive": "True",
+    "test1_correlation": 1.0,
+    "test2_multiplicative": true,
+    "test3_kan_match": "True",
+    "test3_match_rate": 0.04477611940298507,
+    "k_trend_rho": 1.0,
+    "n_trend_rho": -1.0,
+    "test4_tetration": true,
+    "verified_count": "4"
+  },
+  "timestamp": "2026-05-05T15:58:10.849595"
+}

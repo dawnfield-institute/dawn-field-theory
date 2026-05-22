@@ -9,13 +9,19 @@ relic abundance Omega_DM h^2 = 0.120. Standard thermal freeze-out should FAIL
 This experiment is the highest-risk in Block A.
 
 Tests:
-  1. Thermal freeze-out falsification: Omega_thermal >> 1 (must fail)
-  2. Freeze-in (Dodelson-Widrow): sin^2(2theta) in [10^{-13}, 10^{-7}] -> Omega h^2 = 0.120
-  3. Omega_c formula consistency: DFT Omega_c = F_7*Xi^2/F_10 agrees within 10%
+  1. Thermal freeze-out excluded (C): Omega_thermal >> 1
+     HARDENED: Round 1. Relabeled as consistency check (C) — cannot fail
+     for ANY coupling below ~10^-5. Zero discriminating power. Retained
+     as structural preamble, honestly labeled.
+  2. Freeze-in viability: DW abundance AND X-ray constraint
+     HARDENED: Round 1. Added X-ray exclusion as FAIL criterion. Previously
+     passed despite code acknowledging X-ray exclusion at lines 162-166.
+     Now: FAIL if required mixing angle exceeds X-ray bound.
+  3. Mass-abundance consistency: DW chain closes within 10%
   4. Free-streaming length: 0.01 < lambda_fs < 1 Mpc (warm, not hot)
 
 Builds on: exp_01, exp_02, MAR exp_32
-Predicted: 3/4
+Predicted: 3/4 (T2 expected FAIL: X-ray tension)
 """
 
 import sys
@@ -53,16 +59,16 @@ M_DM_KEV = M_DM_GEV * GEV_TO_KEV
 
 def test1_thermal_freezeout_fails():
     """
-    Test 1: Thermal freeze-out gives Omega >> 1 (must FAIL to produce correct abundance).
+    Test 1 (C): Thermal freeze-out gives Omega >> 1 (must FAIL to produce correct abundance).
 
-    For thermal freeze-out: Omega h^2 ~ 0.1 pb / <sigma*v>
-    where <sigma*v> ~ alpha^2 / m^2 for s-wave annihilation.
-
-    With alpha_73 ~ 10^{-15}, the cross section is absurdly small,
-    so Omega_thermal is absurdly large. This is expected and desired.
+    HARDENED: Round 1. Relabeled as consistency check (C). ANY coupling
+    below ~10^{-5} fails thermal freeze-out trivially. With alpha_73 ~ 10^{-16},
+    this test has zero discriminating power — it cannot fail. Retained as
+    structural context establishing that non-thermal production is necessary.
     """
     print("\n" + "=" * 70)
-    print("TEST 1: THERMAL FREEZE-OUT FALSIFICATION")
+    print("TEST 1: THERMAL FREEZE-OUT EXCLUDED (C — consistency check)")
+    print("  (HARDENED: unfalsifiable for any coupling < 10^-5)")
     print("=" * 70)
 
     alpha_73 = fibonacci_depth_coupling(DEPTH_DARK)
@@ -114,11 +120,17 @@ def test1_thermal_freezeout_fails():
 
 def test2_freezein_dodelson_widrow():
     """
-    Test 2: Dodelson-Widrow freeze-in gives correct abundance for some mixing angle.
+    Test 2: Dodelson-Widrow freeze-in gives correct abundance AND satisfies X-ray bounds.
 
-    Omega_s h^2 ≈ 0.3 * (sin^2(2theta) / 10^{-10}) * (m_s / 1 keV)^{1.8}
+    HARDENED: Round 1. Added X-ray constraint as FAIL criterion. Previously
+    the test passed despite the code acknowledging (lines 162-166) that the
+    required mixing angle is excluded by NuSTAR. Now the test requires BOTH:
+    (a) sin^2(2theta) in [10^{-13}, 10^{-7}] for correct abundance, AND
+    (b) sin^2(2theta) below X-ray exclusion limit.
 
-    Find sin^2(2theta) that gives Omega h^2 = 0.120. Check if it's in [10^{-13}, 10^{-7}].
+    Expected: FAIL. DW production is excluded at this mass. This is an
+    honest open problem: the depth-73 particle needs an alternative
+    production mechanism (resonant Shi-Fuller, Higgs portal, etc.).
     """
     print("\n" + "=" * 70)
     print("TEST 2: FREEZE-IN (DODELSON-WIDROW)")
@@ -160,15 +172,26 @@ def test2_freezein_dodelson_widrow():
     print(f"  Excluded by X-ray: {excluded_by_xray}")
 
     if excluded_by_xray:
-        print(f"\n  NOTE: DW production IS excluded for standard sterile neutrinos at this mass.")
-        print(f"  This is a KNOWN tension. DFT interpretation: depth-73 particle is not a")
-        print(f"  standard sterile neutrino but a new sector with different production.")
-        print(f"  The DW formula is only an approximation for the DFT dark sector.")
+        print(f"\n  HONEST FAILURE: DW production IS excluded by X-ray observations at this mass.")
+        print(f"  The required mixing angle ({sin2_2theta_required:.2e}) exceeds the NuSTAR")
+        print(f"  bound ({sin2_2theta_xray:.1e}). This means:")
+        print(f"    - Standard DW production cannot produce depth-73 DM without violating X-ray bounds")
+        print(f"    - Alternative production mechanism needed (resonant Shi-Fuller, Higgs portal, etc.)")
+        print(f"    - The DFT dark sector is NOT a standard sterile neutrino")
+        print(f"  This is an OPEN PROBLEM, not a refutation of depth 73.")
 
-    # PASS: required mixing angle in plausible range (even if X-ray tension exists)
-    passed = in_range
-    print(f"\n  -> {'PASS' if passed else 'FAIL'}: sin^2(2theta) = {sin2_2theta_required:.2e} "
-          f"{'in' if in_range else 'outside'} [10^{{-13}}, 10^{{-7}}]")
+    # HARDENED: PASS requires BOTH abundance range AND X-ray compatibility
+    # (Previously only checked abundance range, ignoring X-ray exclusion)
+    passed = in_range and not excluded_by_xray
+    if in_range and excluded_by_xray:
+        print(f"\n  -> FAIL: sin^2(2theta) = {sin2_2theta_required:.2e} is in abundance range "
+              f"but EXCLUDED by X-ray bound. DW production mechanism not viable.")
+    elif not in_range:
+        print(f"\n  -> FAIL: sin^2(2theta) = {sin2_2theta_required:.2e} outside "
+              f"[10^{{-13}}, 10^{{-7}}]")
+    else:
+        print(f"\n  -> PASS: sin^2(2theta) = {sin2_2theta_required:.2e} in range "
+              f"and below X-ray bound")
 
     return {
         'test': 'freezein_dodelson_widrow',
@@ -344,8 +367,8 @@ def main():
     print("\n" + "=" * 70)
     print("SUMMARY")
     print("=" * 70)
-    print(f"\n  Test 1 (Thermal freeze-out fails): {'PASS' if r1['passed'] else 'FAIL'}")
-    print(f"  Test 2 (Dodelson-Widrow): {'PASS' if r2['passed'] else 'FAIL'}")
+    print(f"\n  Test 1 (Thermal freeze-out excluded, C): {'PASS' if r1['passed'] else 'FAIL'}")
+    print(f"  Test 2 (DW + X-ray constraint): {'PASS' if r2['passed'] else 'FAIL'}")
     print(f"  Test 3 (Mass-abundance consistency): {'PASS' if r3['passed'] else 'FAIL'}")
     print(f"  Test 4 (Free-streaming): {'PASS' if r4['passed'] else 'FAIL'}")
     print(f"\n  TOTAL: {n_passed}/4")

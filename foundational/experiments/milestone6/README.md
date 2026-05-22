@@ -4,9 +4,9 @@
 
 Scoped mediation is the universal propagation mechanism in Dawn Field Theory. What you observe at any scale is the harmonic fixed point of recursive scoping from the pre-field. Forces differ by Fibonacci depth. Constants are ratios of what survives scope boundaries.
 
-## Status: Active | Score: 35/40 (88%)
+## Status: Active | Score: 34/40 (85%)
 
-Predicted: 30/40 (75%). After strengthening test framing (trend analysis, combinatorial uniqueness, KAN transition detection, CI hierarchy rewrite, three-factor aggregation), score improved from 27/40 to 35/40. All Type C (Fibonacci arithmetic) tests now pass (3/3). Key improvements: exp_02 KAN transition (rho=1.0), exp_03 rewrite using real CI hierarchy, exp_08 multiplicative survival = 1/phi (2.3%), exp_09 combinatorial uniqueness (#1 of 10,440).
+Predicted: 30/40 (75%). After strengthening test framing, score improved from 27/40 to 35/40. After v0.3 hardening cycle (tightened R² threshold, convergence criteria, consistency labels), score is 34/40. Key improvements: exp_02 KAN transition (rho=1.0), exp_03 rewrite using real CI hierarchy, exp_08 multiplicative survival = 1/phi (2.3%), exp_09 combinatorial uniqueness (#1 of 10,440). Hardening exposed: exp_03 T2 R²=0.67 fails at 0.75 threshold (genuine scatter in geometric decay).
 
 ## Scorecard
 
@@ -14,7 +14,7 @@ Predicted: 30/40 (75%). After strengthening test framing (trend analysis, combin
 |-----|------|-------|-------|-------|
 | 01 | Scope Boundary Transfer Matrix | A | 3/4 | Rank-1 convergence, non-compositionality, transient decay |
 | 02 | ADE Scope Identification | A | 4/4 | Additive exact, multiplicative universal, KAN transition (K increases rho=1.0), hierarchy terminates |
-| 03 | Tetration Penalty Derivation | A | 3/4 | Eigenvalue trend (rho=-0.8), geometric fit (R²=0.67), base in phi range (0.42); within-level CV high |
+| 03 | Tetration Penalty Derivation | A | 2/4 | Eigenvalue trend (rho=-0.8), R²=0.67 FAILS at 0.75 (HARDENED), base in phi range (0.42); within-level CV high |
 | 04 | Coupling from Scope Depth | B | 4/4 | EM 5.7 ppm, gravity 0.96%, phi^6 0.30%, sin^2(theta_W)=3/13 0.19% |
 | 05 | Dark Sector Depth 73 | B | 3/4 | alpha_73 in range, mass 5.8 keV, Bullet Cluster OK |
 | 06 | Neutrino Masses from Scope | B | 3/4 | Common-scale model: sum < 0.12 eV, normal hierarchy, m1 < 0.01 eV; splitting ratio off |
@@ -22,7 +22,7 @@ Predicted: 30/40 (75%). After strengthening test framing (trend analysis, combin
 | 08 | PAC Conservation Across Scopes | C | 4/4 | Conservation 3.47e-18; varies by level; xi/P downward trend (rho=-0.8); per-level survival = 1/phi (2.3%) |
 | 09 | Alpha_EM as Survival Ratio | C | 4/4 | Fibonacci formula #1 of 10,440 combos (5.7 ppm), leakage correlates with size (rho=-0.39), all forces match |
 | 10 | Scoped Mediation Master Test | D | 4/4 | 68% reproducible, all forces OK, 7 predictions, no contradictions |
-| **Total** | | | **35/40** | |
+| **Total** | | | **34/40** | Post-hardening (v0.3 cycle) |
 
 ## Top Results
 

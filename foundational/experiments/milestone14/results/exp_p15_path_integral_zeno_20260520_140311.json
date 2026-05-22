@@ -1,0 +1,225 @@
+{
+  "T1": {
+    "test": "Propagator decomposition into graph paths",
+    "results": [
+      {
+        "type": "A_4",
+        "orbit_dim": 2,
+        "first_order_error": 9.999998888888935e-07,
+        "second_order_error": 6.66666616759245e-10,
+        "pass": true
+      },
+      {
+        "type": "D_4",
+        "orbit_dim": 2,
+        "first_order_error": 5.999997333345982e-06,
+        "second_order_error": 7.999997600233627e-09,
+        "pass": true
+      },
+      {
+        "type": "A_5",
+        "orbit_dim": 3,
+        "first_order_error": 3.4999987302021074e-06,
+        "second_order_error": 4.166665645372248e-09,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "T2": {
+    "test": "Multi-path interference on 3-orbit system",
+    "graph": "A_5",
+    "orbit_dim": 3,
+    "has_interference": true,
+    "visibility": 0.8742615945738212,
+    "n_peaks": 7,
+    "conservation": 4.6629367034256575e-15,
+    "pass": true
+  },
+  "T3": {
+    "test": "Quantum Zeno effect on D_4",
+    "T_total": 1.0,
+    "P_free": 0.3798836421761456,
+    "zeno_data": [
+      {
+        "N": 1,
+        "P_survive": 0.3798836421761456,
+        "zeno_ratio": 1.0
+      },
+      {
+        "N": 2,
+        "P_survive": 0.21990935327655423,
+        "zeno_ratio": 0.5788860821087579
+      },
+      {
+        "N": 5,
+        "P_survive": 0.5467868136762183,
+        "zeno_ratio": 1.439353404489795
+      },
+      {
+        "N": 10,
+        "P_survive": 0.7404544683257587,
+        "zeno_ratio": 1.9491612328556713
+      },
+      {
+        "N": 20,
+        "P_survive": 0.8606544182731252,
+        "zeno_ratio": 2.2655737776517744
+      },
+      {
+        "N": 50,
+        "P_survive": 0.9417607691478368,
+        "zeno_ratio": 2.479076918798094
+      },
+      {
+        "N": 100,
+        "P_survive": 0.9704450484099861,
+        "zeno_ratio": 2.5545849851571316
+      },
+      {
+        "N": 200,
+        "P_survive": 0.9851118780362511,
+        "zeno_ratio": 2.5931937274084347
+      },
+      {
+        "N": 500,
+        "P_survive": 0.9940179600778557,
+        "zeno_ratio": 2.616637964150471
+      },
+      {
+        "N": 1000,
+        "P_survive": 0.9970044950048093,
+        "zeno_ratio": 2.6244996738830757
+      }
+    ],
+    "monotonic": false,
+    "approaches_one": true,
+    "P_N1000": 0.9970044950048093,
+    "theory_match": 0.20670545260795156,
+    "pass": false
+  },
+  "T4": {
+    "test": "Anti-Zeno crossover on D_4",
+    "T_total": 1.5707963267948966,
+    "P_decay_free": 0.0,
+    "max_decay_N": 2,
+    "max_decay_P": 0.9375,
+    "has_anti_zeno": true,
+    "zeno_at_large_N": false,
+    "pass": false
+  },
+  "T5": {
+    "test": "Classical limit -- time-averaged dynamics",
+    "results": [
+      {
+        "type": "A_4",
+        "orbit_dim": 2,
+        "P_avg": [
+          [
+            0.49800556742122687,
+            0.5019944325787724
+          ],
+          [
+            0.5019944325787725,
+            0.49800556742122676
+          ]
+        ],
+        "P_theory": [
+          [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          [
+            0.4999999999999998,
+            0.4999999999999998
+          ]
+        ],
+        "max_deviation": 0.00199443257877302,
+        "diag_avg": 0.4980055674212268,
+        "offdiag_avg": 0.5019944325787724,
+        "pass": true
+      },
+      {
+        "type": "D_4",
+        "orbit_dim": 2,
+        "P_avg": [
+          [
+            0.6242498276673702,
+            0.37575017233262964
+          ],
+          [
+            0.37575017233262953,
+            0.6242498276673706
+          ]
+        ],
+        "P_theory": [
+          [
+            0.6249999999999996,
+            0.37499999999999983
+          ],
+          [
+            0.37499999999999983,
+            0.6249999999999996
+          ]
+        ],
+        "max_deviation": 0.000750172332629806,
+        "diag_avg": 0.6242498276673705,
+        "offdiag_avg": 0.3757501723326296,
+        "pass": true
+      },
+      {
+        "type": "A_5",
+        "orbit_dim": 3,
+        "P_avg": [
+          [
+            0.43984149558830543,
+            0.2399877070434623,
+            0.32017079736823306
+          ],
+          [
+            0.23998770704346237,
+            0.4392710997109295,
+            0.32074119324560885
+          ],
+          [
+            0.320170797368233,
+            0.3207411932456089,
+            0.3590880093861584
+          ]
+        ],
+        "P_theory": [
+          [
+            0.4400000000000006,
+            0.24000000000000016,
+            0.3200000000000002
+          ],
+          [
+            0.24000000000000016,
+            0.4400000000000002,
+            0.32000000000000023
+          ],
+          [
+            0.3200000000000002,
+            0.32000000000000023,
+            0.36000000000000004
+          ]
+        ],
+        "max_deviation": 0.0009119906138416178,
+        "diag_avg": 0.4127335348951311,
+        "offdiag_avg": 0.29363323255243473,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "synthesis": {
+    "score": "3/5",
+    "prediction": "P15: orbit dynamics exhibit path integral structure and Zeno effect",
+    "key_claims": [
+      "Propagator = sum over graph hop paths (Feynman on orbit space)",
+      "Multi-path interference on 3+ orbit systems (A_5)",
+      "Quantum Zeno: frequent measurement freezes orbit transitions",
+      "Classical limit: time-averaged QM matches infinite-time theory"
+    ]
+  }
+}

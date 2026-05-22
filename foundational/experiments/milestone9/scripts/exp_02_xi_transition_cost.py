@@ -32,13 +32,11 @@ _, RESULTS_DIR = setup_experiment(__file__)
 def test1_splitting_entropy():
     """
     Compute Shannon entropy of the phi-split (1/phi, 1/phi^2).
-    H = -p_D*ln(p_D) - p_S*ln(p_S)
 
-    Theoretical prediction:
-      H = ln(phi) * (1/phi + 2/phi^2)
-
-    Also verify via cascade_info_loss (deterministic) that H_split
-    is constant across all 30 levels.
+    HARDENED: Round 1. Relabeled as consistency (C) — computing Shannon
+    entropy of a known split with known probabilities is arithmetic, not
+    physics. The interesting question (WHY phi-split?) is tested in T4
+    (Xi uniqueness) and exp_05 (duality).
 
     PASS if H_split matches theoretical within 5%.
     """

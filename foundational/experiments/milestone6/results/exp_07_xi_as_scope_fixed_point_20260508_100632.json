@@ -1,0 +1,44 @@
+{
+  "experiment": "exp_07_xi_as_scope_fixed_point",
+  "milestone": 6,
+  "block": "C",
+  "xi_ca": 1.0571,
+  "xi_pac": 1.0584274899611363,
+  "transfer_matrix": {
+    "mean_xi_over_P": 0.40652779828781166,
+    "cv_xi_over_P": 0.5424028885505702,
+    "n_boundaries": 10,
+    "attractor_convergence": true
+  },
+  "rule_110": {
+    "P": 0.5143796352957768,
+    "A": 0.4856203647042232,
+    "ratio": 1.0592217142770521,
+    "xi_error_pct": 0.20071083880921498,
+    "class_iv_distinct": true,
+    "rule_90_ratio": 1.9596622721366659,
+    "rule_30_ratio": 2.9726504994913308
+  },
+  "cascade": {
+    "A_over_Axi": 0.48121182505960364,
+    "target_ln_phi": 0.48121182505960347,
+    "error_pct": 3.460709920691297e-14,
+    "total_A": 0.21385218550257903,
+    "total_xi": 0.23055124426785725,
+    "total_Theta": 0.5555965695240564,
+    "conservation_error": 6.661338147750939e-16
+  },
+  "euler_gap": {
+    "gap": 0.0013274899611364077,
+    "target": 0.0013262911924324613,
+    "error_pct": 0.09038503088811391
+  },
+  "verification": {
+    "test1_transfer": "True",
+    "test2_rule110": "True",
+    "test3_cascade": "True",
+    "test4_euler_gap": "True",
+    "verified_count": "4"
+  },
+  "timestamp": "2026-05-08T10:06:32.559057"
+}

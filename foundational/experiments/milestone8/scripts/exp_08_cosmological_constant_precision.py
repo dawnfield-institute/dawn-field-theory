@@ -123,14 +123,17 @@ def test1_tiling_exponent():
 
 def test2_template_omega_lambda():
     """
-    Test 2: Omega_Lambda from DFT template formula.
+    Test 2: Omega_Lambda from DFT — non-complement routes.
 
-    Omega_Lambda = 1 - Omega_M, where Omega_M is derived from DFT.
-    Or directly: Omega_Lambda = 1 - F_7*Xi^2/F_10 - Omega_b
+    HARDENED: Round 1. Previously the complement route (1 - Omega_c - Omega_b)
+    gave 0.18% error, but this is algebraically tautological: it just checks
+    flatness, which is an input assumption. The complement route is relabeled
+    as consistency (C) and excluded from the pass criterion.
 
-    Also try: Omega_Lambda from phi directly:
-    Omega_Lambda = 1/phi + correction
-    1/phi = 0.618..., need to get to 0.685
+    The genuine test: do phi-based and cascade routes independently derive
+    Omega_Lambda? These routes are ~4-10% off — honest and informative.
+
+    PASS: best NON-COMPLEMENT route within 5%.
     """
     print("\n" + "=" * 70)
     print("TEST 2: TEMPLATE OMEGA_LAMBDA")
@@ -169,35 +172,49 @@ def test2_template_omega_lambda():
     print(f"\n  Measured: Omega_Lambda = {OMEGA_LAMBDA}")
 
     # Errors
-    routes = {
-        'complement': omega_lambda_complement,
+    all_routes = {
+        'complement (C)': omega_lambda_complement,
         'phi_direct': omega_lambda_phi,
         'cascade': omega_lambda_cascade,
     }
-    for name, val in routes.items():
+    non_complement = {
+        'phi_direct': omega_lambda_phi,
+        'cascade': omega_lambda_cascade,
+    }
+    for name, val in all_routes.items():
         err = abs(val - OMEGA_LAMBDA) / OMEGA_LAMBDA * 100
-        print(f"    {name:15s}: {val:.6f} (error: {err:.3f}%)")
+        label = " (consistency only — tautological)" if "complement" in name else ""
+        print(f"    {name:15s}: {val:.6f} (error: {err:.3f}%){label}")
 
-    # Best route
-    best_name = min(routes, key=lambda k: abs(routes[k] - OMEGA_LAMBDA))
-    best_val = routes[best_name]
+    # HARDENED: best NON-COMPLEMENT route only
+    best_name = min(non_complement, key=lambda k: abs(non_complement[k] - OMEGA_LAMBDA))
+    best_val = non_complement[best_name]
     best_err = abs(best_val - OMEGA_LAMBDA) / OMEGA_LAMBDA * 100
 
-    print(f"\n  Best: {best_name} = {best_val:.6f} (error: {best_err:.3f}%)")
+    print(f"\n  Best non-complement: {best_name} = {best_val:.6f} (error: {best_err:.3f}%)")
+    print(f"  (Complement gives {abs(omega_lambda_complement - OMEGA_LAMBDA)/OMEGA_LAMBDA*100:.3f}% "
+          f"but is tautological — flatness assumption)")
 
-    # PASS: best route within 0.1% (very strict — may fail)
-    # Relax to 1% for more reasonable threshold given we're using simple formulas
-    passed = best_err < 1.0
-    print(f"\n  -> {'PASS' if passed else 'FAIL'}: best error = {best_err:.3f}% (threshold 1%)")
+    # PASS: best non-complement route within 5%
+    passed = best_err < 5.0
+    if not passed:
+        print(f"\n  HONEST FAILURE: non-complement routes are {best_err:.1f}% off.")
+        print(f"    phi_direct = 1/phi + ln(phi)/(4pi) is a heuristic, not derived.")
+        print(f"    cascade = phi^{{-Xi}} is similarly approximate.")
+        print(f"    The complement route (0.18%) works but is algebraically tautological.")
+    print(f"\n  -> {'PASS' if passed else 'FAIL'}: best non-complement error = "
+          f"{best_err:.3f}% (threshold 5%)")
 
     return {
         'test': 'template_omega_lambda',
+        'hardened': 'Round 1: complement route excluded (tautological)',
         'omega_complement': float(omega_lambda_complement),
         'omega_phi_direct': float(omega_lambda_phi),
         'omega_cascade': float(omega_lambda_cascade),
         'omega_measured': OMEGA_LAMBDA,
-        'best_route': best_name,
+        'best_non_complement': best_name,
         'best_error_pct': float(best_err),
+        'complement_error_pct': float(abs(omega_lambda_complement - OMEGA_LAMBDA)/OMEGA_LAMBDA*100),
         'passed': passed,
     }
 

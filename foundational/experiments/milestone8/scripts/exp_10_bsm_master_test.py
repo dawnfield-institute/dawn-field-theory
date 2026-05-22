@@ -184,6 +184,11 @@ def build_prediction_registry():
 def test1_internal_consistency():
     """
     Test 1: Zero contradictions across all M8 predictions.
+
+    HARDENED: Round 1. Most checks are structural (C) — DFT checking DFT.
+    Checks 1-6 are relabeled as structural consistency.
+    Added Check 7: non-trivial cross-prediction (Z' width independently
+    derivable from coupling AND mass — tests two derivation chains).
     """
     print("\n" + "=" * 70)
     print("TEST 1: INTERNAL CONSISTENCY")
@@ -191,53 +196,72 @@ def test1_internal_consistency():
 
     contradictions = []
 
-    # Check 1: DM mass from exp_02 routes (b) and (c) agree
+    # Checks 1-6: structural consistency (C) — DFT checking DFT
+    print(f"\n  --- Structural checks (C) — DFT internal consistency ---")
+
+    # Check 1 (C): DM mass from exp_02 routes (b) and (c) agree
     m_b_kev = HIGGS_VEV * PHI**(-(DEPTH_DARK) / 2) * GEV_TO_KEV
     m_c_kev = M_Z_GEV * PHI**(-(F8 + F7)) * GEV_TO_KEV
     mass_ratio = m_b_kev / m_c_kev
     mass_agree = 0.5 < mass_ratio < 2.0
-    print(f"\n  Check 1: DM mass routes (b) vs (c)")
+    print(f"\n  Check 1 (C): DM mass routes (b) vs (c)")
     print(f"    Route b: {m_b_kev:.2f} keV, Route c: {m_c_kev:.2f} keV")
     print(f"    Ratio: {mass_ratio:.3f} ({'OK' if mass_agree else 'CONTRADICTION'})")
     if not mass_agree:
         contradictions.append('DM mass routes disagree by > factor 2')
 
-    # Check 2: Omega_c from DFT vs cosmological constant consistency
+    # Check 2 (C): Flatness — trivially true by construction
     omega_c = dft_omega_c()
     omega_de = 1 - omega_c - 0.0493
     flat = abs(omega_c + 0.0493 + omega_de - 1.0) < 1e-10
-    print(f"\n  Check 2: Flatness")
+    print(f"\n  Check 2 (C): Flatness (trivially true by construction)")
     print(f"    Omega_c + Omega_b + Omega_DE = {omega_c + 0.0493 + omega_de:.6f}")
-    print(f"    Flat: {flat}")
     if not flat:
         contradictions.append('Omega values do not sum to 1')
 
-    # Check 3: Z' mass consistent with not being excluded
+    # Check 3 (C): Z' above Z — trivially true since F_7/F_4 > 1
     m_zp = zprime_mass()
     zp_above_z = m_zp > M_Z_GEV
-    print(f"\n  Check 3: Z' above Z mass")
+    print(f"\n  Check 3 (C): Z' above Z mass (trivial: F_7/F_4 = 13/3 > 1)")
     print(f"    M_Z' = {m_zp:.1f} > M_Z = {M_Z_GEV:.1f}: {zp_above_z}")
     if not zp_above_z:
         contradictions.append('Z\' mass below Z mass')
 
-    # Check 4: Neutrino sum bound consistent with hierarchy
-    # (from exp_05: sum ~ 0.43 meV << 0.12 eV, trivially consistent)
-    print(f"\n  Check 4: Neutrino sum vs hierarchy")
+    # Check 4 (C): Neutrino sum — trivially consistent
+    print(f"\n  Check 4 (C): Neutrino sum vs hierarchy (trivially consistent)")
     print(f"    Sum << 0.12 eV and normal hierarchy: consistent")
 
-    # Check 5: w0 > -1 consistent with cascade
+    # Check 5 (C): w0 > -1 — follows from formula
     w0, wa = cascade_dark_energy_eos()
     w0_positive = w0 > -1
-    print(f"\n  Check 5: w0 > -1 (quintessence)")
+    print(f"\n  Check 5 (C): w0 > -1 (follows from formula)")
     print(f"    w0 = {w0:.4f} > -1: {w0_positive}")
     if not w0_positive:
         contradictions.append('w0 < -1 contradicts cascade decay')
 
-    # Check 6: DM coupling in correct range for self-interaction bound
+    # Check 6 (C): DM coupling — trivially small
     alpha_73 = fibonacci_depth_coupling(DEPTH_DARK)
-    sigma_over_m_ok = alpha_73**2 < 1  # extremely conservative
-    print(f"\n  Check 6: DM coupling consistency")
+    print(f"\n  Check 6 (C): DM coupling (trivially small)")
     print(f"    alpha_73 = {alpha_73:.2e} -> sigma/m << Bullet Cluster bound")
+
+    # Check 7: NON-TRIVIAL cross-prediction (HARDENED)
+    # Z' width is independently derivable from coupling AND mass.
+    # If coupling and mass come from different derivation chains, the width
+    # is a genuine cross-check.
+    print(f"\n  --- Non-trivial cross-check (HARDENED) ---")
+    width_zp = zprime_width()
+    # Independent estimate: Gamma ~ (g'/g)^2 * M_Z' / (48*pi) * N_channels
+    g_ratio = zprime_coupling_ratio()
+    n_channels = 6  # 3 lepton + 3 quark generations
+    width_independent = g_ratio**2 * m_zp / (48 * PI) * n_channels
+    width_ratio = width_zp / width_independent if width_independent > 0 else float('inf')
+    width_agree = 0.1 < width_ratio < 10  # within order of magnitude
+    print(f"\n  Check 7: Z' width cross-check")
+    print(f"    zprime_width() = {width_zp:.2f} GeV")
+    print(f"    Independent: (g'/g)^2 * M_Z' / (48*pi) * N_ch = {width_independent:.4f} GeV")
+    print(f"    Ratio: {width_ratio:.2f} ({'OK' if width_agree else 'CONTRADICTION'})")
+    if not width_agree:
+        contradictions.append(f'Z\' width estimates disagree by factor {width_ratio:.1f}')
 
     n_contradictions = len(contradictions)
     print(f"\n  Total contradictions: {n_contradictions}")

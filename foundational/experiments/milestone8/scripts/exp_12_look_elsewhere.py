@@ -174,12 +174,30 @@ def test2_base_scan():
     print(f"  phi^{{1/6}} error: {phi6_error:.4f}%")
     print(f"  Matches within 2x phi's error: {n_as_good}")
 
+    # HARDENED: honest reporting
+    if phi6_rank > 1:
+        best = all_matches[0]
+        print(f"\n  HONEST: phi^{{1/6}} is rank {phi6_rank}, not #1.")
+        print(f"  #1 is {best['base']}^{{1/{best['n']}}} = {best['value']:.6f} "
+              f"(error {best['error_pct']:.4f}%)")
+        # Check if #1 is phi-family (sqrt(5) = phi^2 - phi, related to phi)
+        if 'sqrt(5)' in best['base'] or 'phi' in best['base']:
+            print(f"  NOTE: {best['base']} is phi-family (sqrt(5) = phi^2 - phi)")
+            print(f"  Both #1 and #2 derive from the golden ratio structure.")
+
     # Look-elsewhere p-value (approximate)
-    # If there are N_total combinations, and phi^{1/6} is rank R,
-    # the p-value is approximately R / N_total
-    p_value = phi6_rank / len(all_matches)
-    print(f"\n  Approximate look-elsewhere p-value: {p_value:.4f}")
-    print(f"  (fraction of random combinations that match as well or better)")
+    # HARDENED: correct for trials — we tested N_total combinations
+    p_value_raw = phi6_rank / len(all_matches)
+    # Bonferroni-like correction: multiply by number of "interesting" bases
+    # (phi-family bases: phi, phi^2, sqrt(5) are related, count as ~1 trial)
+    n_phi_family = sum(1 for name in bases if 'phi' in name or 'sqrt(5)' in name)
+    n_non_phi = len(bases) - n_phi_family
+    n_effective_trials = 1 + n_non_phi  # phi-family counts as 1 trial
+    p_value_corrected = min(1.0, p_value_raw * n_effective_trials)
+    print(f"\n  Raw p-value: {p_value_raw:.4f} (rank/total)")
+    print(f"  Phi-family bases: {n_phi_family} (counted as 1 trial)")
+    print(f"  Effective trials: {n_effective_trials}")
+    print(f"  Corrected p-value: {p_value_corrected:.4f}")
 
     passed = phi6_rank <= 3
     print(f"\n  -> {'PASS' if passed else 'FAIL'}: phi^{{1/6}} rank = {phi6_rank} "
@@ -187,12 +205,15 @@ def test2_base_scan():
 
     return {
         'test': 'base_scan',
+        'hardened': 'Round 1: honest rank, corrected p-value',
         'n_combinations': len(all_matches),
         'top_10': all_matches[:10],
         'phi6_rank': phi6_rank,
         'phi6_error_pct': float(phi6_error),
         'n_as_good_or_better': n_as_good,
-        'p_value': float(p_value),
+        'p_value_raw': float(p_value_raw),
+        'p_value_corrected': float(p_value_corrected),
+        'n_effective_trials': n_effective_trials,
         'passed': passed,
     }
 

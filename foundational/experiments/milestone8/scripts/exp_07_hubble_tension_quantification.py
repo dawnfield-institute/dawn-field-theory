@@ -113,14 +113,15 @@ def test1_cascade_h0_ratio():
 
 def test2_bao_shift():
     """
-    Test 2: BAO sound horizon correction gives H0 in [71, 75] km/s/Mpc.
+    Test 2 (D — postdiction): BAO sound horizon correction gives H0 in [71, 75].
 
-    The CMB measures theta_s = r_s / D_A, where r_s is the sound horizon.
-    If the cascade modifies the expansion history, r_s is slightly different,
-    which shifts the inferred H0.
+    HARDENED: Round 1. Relabeled as postdiction (D) — the phi^{-1/6} correction
+    was derived AFTER seeing the Hubble tension data, not predicted beforehand.
+    Also: BAO and Hubble ratio are the SAME constraint on N_cascade (both give
+    phi^{1/N}), as identified in exp_11. This is NOT an independent test from T1.
 
-    DFT: r_s is shortened by factor ~1/phi^{1/12} due to dark cascade
-    contribution during the radiation era.
+    Still useful as a consistency check: does the r_s correction give a
+    physically self-consistent (r_s, H0) pair?
     """
     print("\n" + "=" * 70)
     print("TEST 2: BAO SOUND HORIZON SHIFT")
@@ -136,7 +137,10 @@ def test2_bao_shift():
     # N_cascade = 6 levels between recombination and today.
     correction_factor = PHI**(-1.0/6)
     r_s_dft = r_s_planck * correction_factor
-    print(f"\n  Cascade correction: phi^{{-1/12}} = {correction_factor:.6f}")
+    print(f"\n  POSTDICTION NOTE: phi^{{-1/6}} was derived AFTER seeing Hubble tension.")
+    print(f"  Also: BAO correction = 1/phi^{{1/6}} is the SAME constraint as T1's ratio.")
+    print(f"  This test is NOT independent from T1 (both test phi^{{1/N_cascade}}).")
+    print(f"\n  Cascade correction: phi^{{-1/6}} = {correction_factor:.6f}")
     print(f"  Corrected r_s = {r_s_dft:.2f} Mpc")
     print(f"  Shift: {(1-correction_factor)*100:.2f}%")
 

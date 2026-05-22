@@ -385,17 +385,19 @@ The result is a framework where forces, constants, and dimensionality are not fr
 | §8 | exp_09 (Compatibility) | 4/4 | 20/20, 60% illuminated |
 | §15 | exp_10 (Predictions) | 4/4 | CC 0.9 orders, $D = 3$ |
 
-### Milestone 6 (Scoped Mediation, 35/40)
+### Milestone 6 (Scoped Mediation, 34/40)
 
-| Section | Experiment | Score | Key metric |
-|---------|-----------|-------|------------|
-| §9 | exp_01 (Transfer matrices) | 3/4 | Rank-1, 67/67, non-compositional |
-| §9 | exp_02 (ADE scope) | 4/4 | KAN transition $\rho = 1.0$ |
-| §9 | exp_03 (Tetration penalty) | 3/4 | Base in $\varphi$ range (0.42) |
-| §10 | exp_04 (Coupling from depth) | 4/4 | EM 5.7 ppm, $\varphi^6$ 0.30% |
-| §13 | exp_05 (Dark sector depth 73) | 3/4 | $\alpha_{73} = 2.48 \times 10^{-16}$ |
-| §12.3 | exp_06 (Neutrinos) | 3/4 | Common-scale, splitting 44% |
-| §12.2 | exp_07 ($\Xi$ fixed point) | 3/4 | Attractor CV $< 1$, Euler gap 0.09% |
-| §11 | exp_08 (PAC conservation) | 4/4 | $3.47 \times 10^{-18}$ |
-| §10.2 | exp_09 ($\alpha_\text{EM}$ survival) | 4/4 | #1 of 10,440 |
-| — | exp_10 (Master test) | 4/4 | 68% reproducible, 0 contradictions |
+*Post-hardening (v0.3 cycle): 35/40 → 34/40. See §16 Methodological Integrity.*
+
+| Section | Experiment | Score | Key metric | Hardened |
+|---------|-----------|-------|------------|----------|
+| §9 | exp_01 (Transfer matrices) | 3/4 | Rank-1, 67/67, non-comp. degree 1.00 | T3: degree test |
+| §9 | exp_02 (ADE scope) | 4/4 | KAN transition $\rho = 1.0$ | T1,T3: (C) labels |
+| §9 | exp_03 (Tetration penalty) | **2/4** | $R^2 = 0.67 < 0.75$ (FAIL) | T2: threshold 0.75 |
+| §10 | exp_04 (Coupling from depth) | 4/4 | EM 5.7 ppm, $\varphi^6$ 0.30% | — |
+| §13 | exp_05 (Dark sector depth 73) | 3/4 | $\alpha_{73} = 2.48 \times 10^{-16}$ | — |
+| §12.3 | exp_06 (Neutrinos) | 3/4 | Common-scale, splitting 44% | — |
+| §12.2 | exp_07 ($\Xi$ fixed point) | 3/4 | Attractor CV $< 1$, Euler gap 0.09% | T2: convergence |
+| §11 | exp_08 (PAC conservation) | 4/4 | $3.47 \times 10^{-18}$ | — |
+| §10.2 | exp_09 ($\alpha_\text{EM}$ survival) | 4/4 | #1 of 10,440 | — |
+| — | exp_10 (Master test) | 4/4 | 68% reproducible, 0 contradictions | — |

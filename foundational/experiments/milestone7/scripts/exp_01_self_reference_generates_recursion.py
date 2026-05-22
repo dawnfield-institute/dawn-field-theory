@@ -59,6 +59,10 @@ def test_analytical():
     """
     Prove: hierarchical self-similarity + cross-scale constraint => R = phi.
 
+    HARDENED: Round 1. Relabeled as algebraic derivation (C). Solving
+    R^2 - R - 1 = 0 is algebra, not physics. The physical content is in
+    T2-T4 which test implications in hierarchical trees and controls.
+
     Three constraints:
     (a) Conservation: P = D + S
     (b) Self-similarity: R = P/D constant at every level

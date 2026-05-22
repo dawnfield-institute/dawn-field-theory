@@ -8,20 +8,20 @@ The cascade is a temporal clock. Information actualizes through recursive phi-ti
 
 ## Status: Complete | Score: 37/40 (92%)
 
-Predicted: 30-36/40. Achieved: 37/40 after hardening. Three remaining failures are genuine: slope gap (noise with 3 data points) and DESI w(z) tension (DFT evolves more gently than preliminary DESI DR1).
+Predicted: 30-36/40. Achieved: 37/40 after hardening. Three remaining failures are genuine: slope gap (noise with 3 data points) and DESI w(z) tension (DFT evolves more gently than preliminary DESI DR1). v0.3 hardening cycle: leave-one-out validation added (exp_07 T3, exp_08 T2) — both PASS blind; consistency labels added (exp_01, exp_02). Score unchanged at 37/40.
 
 ## Scorecard
 
 | Exp | Name | Block | Score | Notes |
 |-----|------|-------|-------|-------|
-| 01 | Phi Timing from PAC | A | **4/4** | Interval ratios, handoff, cross-scale all exact to machine precision (< 1e-12); algebraic uniqueness of 1/phi proven |
-| 02 | Xi Transition Cost | A | **4/4** | Xi = gamma + ln(phi) unique, slope-Xi product within 2.85% of free-fit, scale-invariance uniqueness confirmed |
+| 01 | Phi Timing from PAC | A | **4/4** | Interval ratios, handoff, cross-scale exact (< 1e-12); uniqueness proven. T1: (C) label [HARDENED] |
+| 02 | Xi Transition Cost | A | **4/4** | Xi = gamma + ln(phi) unique, slope-Xi 2.85%, scale-invariance. T1: (C) label [HARDENED] |
 | 03 | Slope Correction | A | 2/4 | Monte Carlo: B_DFT in 95% CI (38.6th percentile), LOO max error 0.74; ghost heart/ADE corrections fail — honest |
 | 04 | SEC Temporal Flow | B | **4/4** | Time symmetry broken, entropy arrow asymmetry=1.29, logarithmic flow R^2=0.83, max-entropy equilibrium |
 | 05 | Gravity-Time from Cascade | B | **4/4** | g_out=g_in^2 exact (phi only), BH time ratio phi^(3/2) exact, cascade-redshift Spearman=1.0, Zeno completion |
 | 06 | Arrow of Time | B | **4/4** | Entropy production 0.665 nats/level, log arrow R^2=1.0, Loschmidt echo 4.3% spread, info loss monotonic |
-| 07 | S8 Redshift Evolution | C | **4/4** | S8 tension 3.22sigma->0.07sigma (98% reduction), Euclid chi^2/dof=43, S8(z=0.35)=0.769 vs 0.768 obs |
-| 08 | H0 Scale Dependence | C | **4/4** | Discrete phi^{1/6} matches SH0ES (0.05sigma), BAO monotonic, TDSL 0.69sigma; N_physical boundary fix |
+| 07 | S8 Redshift Evolution | C | **4/4** | S8 tension 3.22σ→0.09σ BLIND (97% reduction), leave-one-out PASS [HARDENED] |
+| 08 | H0 Scale Dependence | C | **4/4** | H₀=72.98 BLIND (0.05σ SH0ES), leave-one-out PASS [HARDENED] |
 | 09 | Dark Energy Evolution | C | 3/4 | w(z=0)=-0.987 (N_physical fix), curvature |d^2w/dz^2|=0.19, CMB-compatible; DESI chi^2=7.3 — honest tension |
 | 10 | M9 Synthesis | D | **4/4** | M8 compatible (3/3 checks), t1=520 Myr anchors to first stars, 4 P-type predictions, 3 falsifiable |
 | **Total** | | | **37/40** | Block A: 10/12, Block B: 12/12, Block C: 11/12, Block D: 4/4 |

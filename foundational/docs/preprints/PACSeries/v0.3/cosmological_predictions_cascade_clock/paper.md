@@ -427,19 +427,23 @@ The honest assessment: three failures remain (slope gap, DESI $w_a$, $N$-univers
 
 ## Appendix A: Experiment cross-reference
 
-| Section | Experiment | Score | Key metric |
-|---------|-----------|-------|------------|
-| §3 | M8 exp_08 (CC Precision) | 4/4 | $-122.09$ (0.09 orders) |
-| §4 | M8 exp_07 (Hubble Tension) | 4/4 | $\varphi^{1/6}$ at 0.075% |
-| §4.3 | M8 exp_12 (Look-Elsewhere) | 4/4 | $p = 0.007$ |
-| §5 | M9 exp_07 (S8 Evolution) | 4/4 | $3.22\sigma \to 0.07\sigma$ |
-| §6 | M8 exp_01–03 (Dark Sector) | 12/12 | 6.44 keV, 0.09 orders |
-| §7 | M8 exp_04 (Z' at 395 GeV) | 4/4 | Not excluded, $9\times$ margin |
-| §8 | M9 exp_01–03 (Cascade Clock) | 10/12 | RMS = 0.126, slope constrained |
-| §8.3 | M9 exp_01 (Phi Timing) | 4/4 | Machine precision self-similarity |
-| §8.5 | M9 exp_02 (Xi Transition) | 4/4 | Unique solution proven |
-| §9 | M9 exp_10 (Synthesis) | 4/4 | 1 free parameter |
-| §10 | M9 exp_03 (Slope) | 2/4 | 8.9% gap, Monte Carlo OK |
-| §10 | M9 exp_09 (Dark Energy) | 3/4 | DESI $w_a$ tension |
-| §11 | M8 exp_05 (Neutrinos) | 4/4 | 17% splitting, normal hierarchy |
-| §12 | M8 exp_09 (JWST) | 4/4 | $z = 8$: 16%, $z = 12$: 4% |
+*Post-hardening (v0.3 cycle): M8 48/48 → 47/48, M9 37/40 → 37/40. See §15 Methodological Integrity.*
+
+| Section | Experiment | Score | Key metric | Hardened |
+|---------|-----------|-------|------------|----------|
+| §3 | M8 exp_08 (CC Precision) | 4/4 | $-122.09$ (0.09 orders) | T2: complement excluded |
+| §4 | M8 exp_07 (Hubble Tension) | 4/4 | $\varphi^{1/6}$ at 0.075% | T2: relabeled (D) |
+| §4.3 | M8 exp_12 (Look-Elsewhere) | 4/4 | rank 2, $p = 0.02$ corrected | T2: honest rank, trials |
+| §5 | M9 exp_07 (S8 Evolution) | 4/4 | $3.22\sigma \to 0.09\sigma$ blind | T3: leave-one-out |
+| §6 | M8 exp_01–03 (Dark Sector) | 12/12 | 6.44 keV, 0.09 orders | T1s: (C) labels |
+| §7 | M8 exp_04 (Z' at 395 GeV) | 4/4 | Not excluded, $9\times$ margin | — |
+| §8 | M9 exp_01–02 (Cascade Clock) | 8/8 | Machine precision, unique $\Xi$ | T1s: (C) labels |
+| §8.3 | M9 exp_08 (H0 Scale) | 4/4 | $H_0 = 72.98$, $0.05\sigma$ blind | T2: leave-one-out |
+| §9 | M9 exp_10 (Synthesis) | 4/4 | 1 free parameter | — |
+| §10 | M9 exp_03 (Slope) | 2/4 | 8.9% gap, Monte Carlo OK | — |
+| §10 | M9 exp_09 (Dark Energy) | 3/4 | DESI $w_a$ tension | — |
+| §11 | M8 exp_05 (Neutrinos) | 4/4 | 17% splitting, normal hierarchy | — |
+| §11.2 | M8 exp_06 (Fibonacci Depth) | 4/4 | 7 forces in [5,7] | T3: force count |
+| §12 | M8 exp_09 (JWST) | 4/4 | $z = 8$: 16%, $z = 12$: 4% | — |
+| §12.2 | M8 exp_10 (BSM Master) | 4/4 | Z' width cross-check added | T1: structural (C) |
+| §12.3 | M8 exp_11 (Cross-Consistency) | **3/4** | $N$ range 2.75 > 1.5 (FAIL) | T2: tighten tolerance |

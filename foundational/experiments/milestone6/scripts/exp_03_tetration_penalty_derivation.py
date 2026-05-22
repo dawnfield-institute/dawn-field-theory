@@ -22,7 +22,7 @@ Method:
 
 Tests:
   1. Spectral retention decreases with level (Spearman rho < -0.5)
-  2. Per-level attenuation fits approximate geometric decay (R^2 > 0.5)
+  2. Per-level attenuation fits approximate geometric decay (R^2 > 0.75, HARDENED)
   3. Geometric base in phi range: 1/phi^2 < base < 1/phi
   4. Within-level consistency: CV < 1.0 at all levels with n >= 5
 
@@ -289,10 +289,14 @@ def main():
     print(f"    Spearman rho: {trend_rho:.4f}")
     print(f"    -> {'VERIFIED' if test1 else 'NOT VERIFIED'}")
 
-    # Test 2: Approximate geometric decay (R^2 > 0.5)
-    test2 = r_squared > 0.5
-    print(f"\n  Test 2: Approximate geometric decay (R^2 > 0.5)")
+    # Test 2: Approximate geometric decay
+    # HARDENED: round 1 — tighten from R^2 > 0.5 to R^2 > 0.75
+    # R^2 > 0.5 is permissive (explains only half the variance). A genuine
+    # geometric decay should clear 0.75 comfortably.
+    test2 = r_squared > 0.75
+    print(f"\n  Test 2: Approximate geometric decay (R^2 > 0.75) [HARDENED]")
     print(f"    R^2: {r_squared:.4f}")
+    print(f"    Threshold: 0.75 (hardened from 0.5)")
     if geometric_base > 0:
         print(f"    Geometric base: {geometric_base:.4f} (1/phi = {INV_PHI:.4f})")
     print(f"    -> {'VERIFIED' if test2 else 'NOT VERIFIED'}")

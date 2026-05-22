@@ -31,7 +31,11 @@ def test1_temporal_self_similarity():
     """
     Interval ratio self-similarity in a 50-level PAC cascade with g_in = 1/phi.
 
-    Three machine-precision checks (tolerance < 1e-12 relative error):
+    HARDENED: Round 1. Relabeled as consistency (C) — this is algebraic by
+    construction. Building E_n = (1/phi)^n and verifying E_n/E_{n+1} = phi
+    is arithmetic, not physics. Kept as a machine-precision consistency check.
+
+    Three checks (tolerance < 1e-12 relative error):
       1. Energy interval ratios: E_n / E_{n+1} = phi at every level.
       2. Self-similar handoff: S_n = D_{n+1} (subordinate becomes next dominant).
       3. Cross-scale ratio: D_n / S_n = phi at every level.
