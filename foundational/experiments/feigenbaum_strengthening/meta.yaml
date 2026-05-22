@@ -1,0 +1,33 @@
+schema_version: "2.0"
+description: "Feigenbaum strengthening: universality validation and RG truncation structure"
+semantic_scope: "validation"
+proficiency_level: "research"
+version: "0.1.0"
+status: "active"
+date_created: "2026-05-21"
+date_updated: "2026-05-21"
+
+files:
+  - "[README.md]": "Experiment overview, hypotheses, success criteria"
+
+child_directories:
+  - name: "scripts"
+    description: "Experiment scripts (exp_01: universality, exp_02: Lanford truncation)"
+  - name: "results"
+    description: "JSON outputs from experiments"
+  - name: "journals"
+    description: "Research logs"
+
+estimated_context_weight: 0.8
+validation_type: "automated"
+
+source_material:
+  - "sec_threshold_detection/scripts/exp_07_feigenbaum_all_constants.py"
+  - "milestone3/scripts/exp_29_feigenbaum_extended_search.py"
+
+target_papers:
+  - "Paper 3: Feigenbaum Constants from Fibonacci Arithmetic"
+
+dependencies:
+  - "sec_threshold_detection (original formulas)"
+  - "milestone3 (extended search)"

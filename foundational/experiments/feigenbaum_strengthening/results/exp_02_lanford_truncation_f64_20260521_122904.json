@@ -1,0 +1,180 @@
+{
+  "timestamp": "2026-05-21T12:29:04.688937",
+  "script": "exp_02_lanford_truncation.py",
+  "parameters": {
+    "n_min": 3,
+    "n_max": 20,
+    "precision": "float64",
+    "alpha_exact": 2.5029078750958926
+  },
+  "results": [
+    {
+      "N": 3,
+      "alpha_N": 2.4789090003352925,
+      "error": 0.00958839715971595,
+      "log10_error": -2.0182539854121844,
+      "is_fibonacci": true,
+      "converged": true,
+      "time": 0.0009982585906982422
+    },
+    {
+      "N": 4,
+      "alpha_N": 2.5031585613141063,
+      "error": 0.00010015798851728209,
+      "log10_error": -3.999314406024788,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0009992122650146484
+    },
+    {
+      "N": 5,
+      "alpha_N": 2.503076934462578,
+      "error": 6.754518149372722e-05,
+      "log10_error": -4.170405627031673,
+      "is_fibonacci": true,
+      "converged": true,
+      "time": 0.0009968280792236328
+    },
+    {
+      "N": 6,
+      "alpha_N": 2.502897390458013,
+      "error": 4.188982736437755e-06,
+      "log10_error": -5.377891429441901,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0
+    },
+    {
+      "N": 7,
+      "alpha_N": 2.50290736622442,
+      "error": 2.0331210652167587e-07,
+      "log10_error": -6.691836759881321,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0009999275207519531
+    },
+    {
+      "N": 8,
+      "alpha_N": 2.502908029093526,
+      "error": 6.152748762522101e-08,
+      "log10_error": -7.210930818257974,
+      "is_fibonacci": true,
+      "converged": true,
+      "time": 0.0009989738464355469
+    },
+    {
+      "N": 9,
+      "alpha_N": 2.5029078658987123,
+      "error": 3.6745980314146755e-09,
+      "log10_error": -8.434790161963871,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0019996166229248047
+    },
+    {
+      "N": 10,
+      "alpha_N": 2.502907873068224,
+      "error": 8.101251827071563e-10,
+      "log10_error": -9.09144786759255,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0009999275207519531
+    },
+    {
+      "N": 11,
+      "alpha_N": 2.502907875508336,
+      "error": 1.6478569461544622e-10,
+      "log10_error": -9.783080492998346,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.003000020980834961
+    },
+    {
+      "N": 12,
+      "alpha_N": 2.502907875508336,
+      "error": 1.6478569461544622e-10,
+      "log10_error": -9.783080492998346,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0019974708557128906
+    },
+    {
+      "N": 13,
+      "alpha_N": 2.502907875508336,
+      "error": 1.6478569461544622e-10,
+      "log10_error": -9.783080492998346,
+      "is_fibonacci": true,
+      "converged": true,
+      "time": 0.002003908157348633
+    },
+    {
+      "N": 14,
+      "alpha_N": 2.502907875508336,
+      "error": 1.6478569461544622e-10,
+      "log10_error": -9.783080492998346,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.003002166748046875
+    },
+    {
+      "N": 15,
+      "alpha_N": 2.5029078755083365,
+      "error": 1.6478587204475324e-10,
+      "log10_error": -9.783080025381738,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0029973983764648438
+    },
+    {
+      "N": 16,
+      "alpha_N": 2.5029078755083365,
+      "error": 1.6478587204475324e-10,
+      "log10_error": -9.783080025381738,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0030014514923095703
+    },
+    {
+      "N": 17,
+      "alpha_N": 2.5029078755083365,
+      "error": 1.6478587204475324e-10,
+      "log10_error": -9.783080025381738,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.004507541656494141
+    },
+    {
+      "N": 18,
+      "alpha_N": 2.5029078755083365,
+      "error": 1.6478587204475324e-10,
+      "log10_error": -9.783080025381738,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.004007816314697266
+    },
+    {
+      "N": 19,
+      "alpha_N": 2.5029078755083365,
+      "error": 1.6478587204475324e-10,
+      "log10_error": -9.783080025381738,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.003999471664428711
+    },
+    {
+      "N": 20,
+      "alpha_N": 2.5029078755083365,
+      "error": 1.6478587204475324e-10,
+      "log10_error": -9.783080025381738,
+      "is_fibonacci": false,
+      "converged": true,
+      "time": 0.0050013065338134766
+    }
+  ],
+  "analysis": {
+    "saturation_N": 12,
+    "best_error": 1.6478569461544622e-10,
+    "n_converged": 18
+  },
+  "elapsed_seconds": 0.04151129722595215
+}

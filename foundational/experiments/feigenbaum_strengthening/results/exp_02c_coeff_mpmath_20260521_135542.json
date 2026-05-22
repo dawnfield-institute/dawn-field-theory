@@ -1,0 +1,524 @@
+{
+  "timestamp": "2026-05-21T13:55:42.003749",
+  "script": "exp_02c_coeff_mpmath.py",
+  "parameters": {
+    "N": 40,
+    "dps": 80
+  },
+  "alpha_digits": 38.128048719207435,
+  "coefficients": [
+    {
+      "k": 1,
+      "log10_abs": 0.18401903060990443,
+      "is_fibonacci": true,
+      "deviation_from_envelope": -0.19525253312802981
+    },
+    {
+      "k": 2,
+      "log10_abs": -0.9795757542422184,
+      "is_fibonacci": true,
+      "deviation_from_envelope": -0.34125880781188045
+    },
+    {
+      "k": 3,
+      "log10_abs": -1.5733965133048184,
+      "is_fibonacci": true,
+      "deviation_from_envelope": 0.08250894329379199
+    },
+    {
+      "k": 4,
+      "log10_abs": -2.452544099975101,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.22094986679178108
+    },
+    {
+      "k": 5,
+      "log10_abs": -4.088304697082248,
+      "is_fibonacci": true,
+      "deviation_from_envelope": -0.39722222014709363
+    },
+    {
+      "k": 6,
+      "log10_abs": -4.5971355952335475,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.1115353918698796
+    },
+    {
+      "k": 7,
+      "log10_abs": -5.592385263573414,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.13387423369828522
+    },
+    {
+      "k": 8,
+      "log10_abs": -7.015415464774753,
+      "is_fibonacci": true,
+      "deviation_from_envelope": -0.2715674573347817
+    },
+    {
+      "k": 9,
+      "log10_abs": -7.549851561496575,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.21158495611166828
+    },
+    {
+      "k": 10,
+      "log10_abs": -9.557042117927462,
+      "is_fibonacci": false,
+      "deviation_from_envelope": -0.7780170901509464
+    },
+    {
+      "k": 11,
+      "log10_abs": -9.51878288733595,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.2778306506088377
+    },
+    {
+      "k": 12,
+      "log10_abs": -10.573392898508141,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.24080914960492095
+    },
+    {
+      "k": 13,
+      "log10_abs": -12.001640748667134,
+      "is_fibonacci": true,
+      "deviation_from_envelope": -0.16985019038579985
+    },
+    {
+      "k": 14,
+      "log10_abs": -12.440787486523234,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.40859158192637146
+    },
+    {
+      "k": 15,
+      "log10_abs": -13.661611695020287,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.2053558835975906
+    },
+    {
+      "k": 16,
+      "log10_abs": -14.815526367264738,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.06902972152141196
+    },
+    {
+      "k": 17,
+      "log10_abs": -15.49692754607339,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.40521705288103327
+    },
+    {
+      "k": 18,
+      "log10_abs": -16.945129621322202,
+      "is_fibonacci": false,
+      "deviation_from_envelope": -0.025396512199510113
+    },
+    {
+      "k": 19,
+      "log10_abs": -17.72545514118692,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.2118664781040458
+    },
+    {
+      "k": 20,
+      "log10_abs": -18.642901676976496,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.3120084524827398
+    },
+    {
+      "k": 21,
+      "log10_abs": -21.007780276886454,
+      "is_fibonacci": true,
+      "deviation_from_envelope": -1.0352816372589437
+    },
+    {
+      "k": 22,
+      "log10_abs": -20.68526300489931,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.3048241448964717
+    },
+    {
+      "k": 23,
+      "log10_abs": -21.90332627942571,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.10434938053834486
+    },
+    {
+      "k": 24,
+      "log10_abs": -22.967759684277546,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.05750448585478196
+    },
+    {
+      "k": 25,
+      "log10_abs": -23.727521207147777,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.3153314731528205
+    },
+    {
+      "k": 26,
+      "log10_abs": -25.588778835345433,
+      "is_fibonacci": false,
+      "deviation_from_envelope": -0.5283376448765615
+    },
+    {
+      "k": 27,
+      "log10_abs": -25.808483820491926,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.2695458801452162
+    },
+    {
+      "k": 28,
+      "log10_abs": -26.892565250405376,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.20305296040003995
+    },
+    {
+      "k": 29,
+      "log10_abs": -28.253753570769913,
+      "is_fibonacci": false,
+      "deviation_from_envelope": -0.14054684979622678
+    },
+    {
+      "k": 30,
+      "log10_abs": -28.817085355947643,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.31370987519431637
+    },
+    {
+      "k": 31,
+      "log10_abs": -30.310201289595152,
+      "is_fibonacci": false,
+      "deviation_from_envelope": -0.16181754828492245
+    },
+    {
+      "k": 32,
+      "log10_abs": -30.973773257439753,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.19219899403875118
+    },
+    {
+      "k": 33,
+      "log10_abs": -31.94694102852867,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.23661973311811124
+    },
+    {
+      "k": 34,
+      "log10_abs": -33.6116677749138,
+      "is_fibonacci": true,
+      "deviation_from_envelope": -0.4105185030987428
+    },
+    {
+      "k": 35,
+      "log10_abs": -33.919595898278054,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.29914188370526773
+    },
+    {
+      "k": 36,
+      "log10_abs": -35.25014089882065,
+      "is_fibonacci": false,
+      "deviation_from_envelope": -0.013814606669058094
+    },
+    {
+      "k": 37,
+      "log10_abs": -36.121961568843915,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.13195323347595433
+    },
+    {
+      "k": 38,
+      "log10_abs": -36.98154701772291,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.28995629476523277
+    },
+    {
+      "k": 39,
+      "log10_abs": -39.69382715703387,
+      "is_fibonacci": false,
+      "deviation_from_envelope": -1.4047353343774631
+    },
+    {
+      "k": 40,
+      "log10_abs": -39.04241409908228,
+      "is_fibonacci": false,
+      "deviation_from_envelope": 0.2642662337424042
+    }
+  ],
+  "neighbor_analysis": [
+    {
+      "F_k": 3,
+      "k_idx": 4,
+      "delta": 0.2607048668675973,
+      "ratio": 1.8226566601205945
+    },
+    {
+      "F_k": 5,
+      "k_idx": 5,
+      "delta": -0.5344393290605276,
+      "ratio": 0.2921195822762113
+    },
+    {
+      "F_k": 8,
+      "k_idx": 6,
+      "delta": -0.19131183021700338,
+      "ratio": 0.6437069079374023
+    },
+    {
+      "F_k": 13,
+      "k_idx": 7,
+      "delta": -0.45299700682023136,
+      "ratio": 0.352373299608911
+    },
+    {
+      "F_k": 21,
+      "k_idx": 8,
+      "delta": -1.2685437512643425,
+      "ratio": 0.053883555980092146
+    },
+    {
+      "F_k": 34,
+      "k_idx": 9,
+      "delta": -0.5890550041470135,
+      "ratio": 0.2575994882135743
+    }
+  ],
+  "digits_per_N": [
+    {
+      "N": 3,
+      "digits": 2.063392366040846,
+      "marginal": 2.063392366040846,
+      "is_fib": true
+    },
+    {
+      "N": 4,
+      "digits": 3.5835471424380847,
+      "marginal": 1.5201547763972387,
+      "is_fib": false
+    },
+    {
+      "N": 5,
+      "digits": 4.24632187210535,
+      "marginal": 0.662774729667265,
+      "is_fib": true
+    },
+    {
+      "N": 6,
+      "digits": 5.1823916722648296,
+      "marginal": 0.9360698001594798,
+      "is_fib": false
+    },
+    {
+      "N": 7,
+      "digits": 6.763512134579343,
+      "marginal": 1.5811204623145132,
+      "is_fib": false
+    },
+    {
+      "N": 8,
+      "digits": 7.1600064598155,
+      "marginal": 0.3964943252361577,
+      "is_fib": true
+    },
+    {
+      "N": 9,
+      "digits": 8.858998809191476,
+      "marginal": 1.6989923493759758,
+      "is_fib": false
+    },
+    {
+      "N": 10,
+      "digits": 9.161465091840668,
+      "marginal": 0.30246628264919195,
+      "is_fib": false
+    },
+    {
+      "N": 11,
+      "digits": 10.164395836949705,
+      "marginal": 1.0029307451090368,
+      "is_fib": false
+    },
+    {
+      "N": 12,
+      "digits": 11.784102680354424,
+      "marginal": 1.6197068434047193,
+      "is_fib": false
+    },
+    {
+      "N": 13,
+      "digits": 12.0708433496725,
+      "marginal": 0.2867406693180765,
+      "is_fib": true
+    },
+    {
+      "N": 14,
+      "digits": 13.239443415665054,
+      "marginal": 1.1686000659925533,
+      "is_fib": false
+    },
+    {
+      "N": 15,
+      "digits": 14.513858241218799,
+      "marginal": 1.2744148255537446,
+      "is_fib": false
+    },
+    {
+      "N": 16,
+      "digits": 15.116585013377092,
+      "marginal": 0.6027267721582934,
+      "is_fib": false
+    },
+    {
+      "N": 17,
+      "digits": 16.487552192544108,
+      "marginal": 1.3709671791670157,
+      "is_fib": false
+    },
+    {
+      "N": 18,
+      "digits": 17.382740653803786,
+      "marginal": 0.8951884612596785,
+      "is_fib": false
+    },
+    {
+      "N": 19,
+      "digits": 18.246269852519717,
+      "marginal": 0.8635291987159306,
+      "is_fib": false
+    },
+    {
+      "N": 20,
+      "digits": 20.62473986976508,
+      "marginal": 2.3784700172453626,
+      "is_fib": false
+    },
+    {
+      "N": 21,
+      "digits": 20.315939349204065,
+      "marginal": -0.3088005205610145,
+      "is_fib": true
+    },
+    {
+      "N": 22,
+      "digits": 21.47487229449741,
+      "marginal": 1.1589329452933441,
+      "is_fib": false
+    },
+    {
+      "N": 23,
+      "digits": 22.650321507263925,
+      "marginal": 1.175449212766516,
+      "is_fib": false
+    },
+    {
+      "N": 24,
+      "digits": 23.33845220914855,
+      "marginal": 0.6881307018846243,
+      "is_fib": false
+    },
+    {
+      "N": 25,
+      "digits": 24.99952872618423,
+      "marginal": 1.6610765170356814,
+      "is_fib": false
+    },
+    {
+      "N": 26,
+      "digits": 25.44863806235787,
+      "marginal": 0.44910933617363824,
+      "is_fib": false
+    },
+    {
+      "N": 27,
+      "digits": 26.480402634976432,
+      "marginal": 1.0317645726185631,
+      "is_fib": false
+    },
+    {
+      "N": 28,
+      "digits": 27.98774486296427,
+      "marginal": 1.507342227987838,
+      "is_fib": false
+    },
+    {
+      "N": 29,
+      "digits": 28.435623085809663,
+      "marginal": 0.447878222845393,
+      "is_fib": false
+    },
+    {
+      "N": 30,
+      "digits": 29.834884386892735,
+      "marginal": 1.3992613010830723,
+      "is_fib": false
+    },
+    {
+      "N": 31,
+      "digits": 30.62476952498147,
+      "marginal": 0.7898851380887351,
+      "is_fib": false
+    },
+    {
+      "N": 32,
+      "digits": 31.54351036629042,
+      "marginal": 0.9187408413089493,
+      "is_fib": false
+    },
+    {
+      "N": 33,
+      "digits": 33.48605055785685,
+      "marginal": 1.9425401915664295,
+      "is_fib": false
+    },
+    {
+      "N": 34,
+      "digits": 33.54441464206689,
+      "marginal": 0.0583640842100408,
+      "is_fib": true
+    },
+    {
+      "N": 35,
+      "digits": 34.803838145992835,
+      "marginal": 1.2594235039259445,
+      "is_fib": false
+    },
+    {
+      "N": 36,
+      "digits": 35.785378152741515,
+      "marginal": 0.9815400067486806,
+      "is_fib": false
+    },
+    {
+      "N": 37,
+      "digits": 36.60044456485098,
+      "marginal": 0.8150664121094664,
+      "is_fib": false
+    },
+    {
+      "N": 38,
+      "digits": 37.99041931877192,
+      "marginal": 1.3899747539209386,
+      "is_fib": false
+    },
+    {
+      "N": 39,
+      "digits": 38.012489697990254,
+      "marginal": 0.022070379218334324,
+      "is_fib": false
+    },
+    {
+      "N": 40,
+      "digits": 38.128048719207435,
+      "marginal": 0.1155590212171802,
+      "is_fib": false
+    }
+  ],
+  "synthesis": {
+    "last_informative_N": 40,
+    "total_digits": 38.128048719207435,
+    "fib_contribution_pct": 8.285149017657456
+  }
+}

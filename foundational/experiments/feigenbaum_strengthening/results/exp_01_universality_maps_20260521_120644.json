@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-05-21T12:06:44.595364",
+  "script": "exp_01_universality_maps.py",
+  "description": "Feigenbaum universality verification across map families",
+  "parameters": {
+    "n_max": 10,
+    "precision": "mpmath",
+    "n_maps_attempted": 5,
+    "n_maps_successful": 1
+  },
+  "formula_values": {
+    "r_inf": 3.569945671870903,
+    "delta": 4.66920161468166,
+    "r_inf_error_vs_known": 1.1693283193306524e-14,
+    "delta_error_vs_known": 1.1947802724008502e-09
+  },
+  "map_results": [
+    {
+      "map": "logistic",
+      "superstable_points": [
+        [
+          0,
+          2.0
+        ],
+        [
+          1,
+          3.236067977499789
+        ],
+        [
+          2,
+          3.4985616993277016
+        ],
+        [
+          3,
+          3.5546408627688253
+        ]
+      ],
+      "deltas": [
+        [
+          2,
+          4.708943013540486
+        ],
+        [
+          3,
+          4.6807709980106775
+        ]
+      ],
+      "r_inf_extrapolated": 3.5698765738389877,
+      "delta_best": 4.6807709980106775,
+      "n_points": 4
+    }
+  ],
+  "universality": {
+    "delta_mean": null,
+    "delta_std": null,
+    "delta_spread": null,
+    "all_within_1pct": null
+  },
+  "elapsed_seconds": 0.12206625938415527
+}

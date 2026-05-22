@@ -1,0 +1,283 @@
+{
+  "part_a": {
+    "2": {
+      "hits_2n": [
+        10
+      ],
+      "hits_mod": [
+        10
+      ],
+      "unique": true
+    },
+    "3": {
+      "hits_2n": [
+        10,
+        30
+      ],
+      "hits_mod": [
+        3,
+        5,
+        10
+      ],
+      "unique": false
+    },
+    "4": {
+      "hits_2n": [],
+      "hits_mod": [],
+      "unique": false
+    },
+    "5": {
+      "hits_2n": [
+        14
+      ],
+      "hits_mod": [
+        3,
+        7,
+        11,
+        14
+      ],
+      "unique": true
+    },
+    "6": {
+      "hits_2n": [],
+      "hits_mod": [],
+      "unique": false
+    },
+    "7": {
+      "hits_2n": [
+        10,
+        20,
+        30
+      ],
+      "hits_mod": [
+        3,
+        10
+      ],
+      "unique": false
+    },
+    "8": {
+      "hits_2n": [
+        10,
+        14
+      ],
+      "hits_mod": [
+        5,
+        10
+      ],
+      "unique": false
+    },
+    "9": {
+      "hits_2n": [],
+      "hits_mod": [
+        3
+      ],
+      "unique": false
+    },
+    "10": {
+      "hits_2n": [],
+      "hits_mod": [
+        11
+      ],
+      "unique": false
+    },
+    "11": {
+      "hits_2n": [
+        11
+      ],
+      "hits_mod": [
+        3
+      ],
+      "unique": true
+    },
+    "12": {
+      "hits_2n": [],
+      "hits_mod": [
+        10
+      ],
+      "unique": false
+    },
+    "13": {
+      "hits_2n": [
+        10,
+        18,
+        20,
+        30
+      ],
+      "hits_mod": [
+        3,
+        5,
+        10
+      ],
+      "unique": false
+    },
+    "14": {
+      "hits_2n": [
+        14,
+        20
+      ],
+      "hits_mod": [],
+      "unique": false
+    },
+    "15": {
+      "hits_2n": [],
+      "hits_mod": [
+        3
+      ],
+      "unique": false
+    },
+    "16": {
+      "hits_2n": [],
+      "hits_mod": [],
+      "unique": false
+    },
+    "17": {
+      "hits_2n": [
+        10,
+        20,
+        30
+      ],
+      "hits_mod": [
+        3,
+        10,
+        11
+      ],
+      "unique": false
+    },
+    "18": {
+      "hits_2n": [
+        10,
+        14,
+        22
+      ],
+      "hits_mod": [
+        5,
+        7,
+        10,
+        22
+      ],
+      "unique": false
+    },
+    "19": {
+      "hits_2n": [
+        15,
+        20
+      ],
+      "hits_mod": [
+        3
+      ],
+      "unique": false
+    },
+    "20": {
+      "hits_2n": [],
+      "hits_mod": [
+        11
+      ],
+      "unique": false
+    },
+    "21": {
+      "hits_2n": [
+        14,
+        18,
+        30
+      ],
+      "hits_mod": [
+        3,
+        9
+      ],
+      "unique": false
+    },
+    "22": {
+      "hits_2n": [
+        11
+      ],
+      "hits_mod": [],
+      "unique": true
+    },
+    "23": {
+      "hits_2n": [],
+      "hits_mod": [
+        3,
+        5,
+        10,
+        15
+      ],
+      "unique": false
+    },
+    "24": {
+      "hits_2n": [],
+      "hits_mod": [],
+      "unique": false
+    },
+    "25": {
+      "hits_2n": [
+        11
+      ],
+      "hits_mod": [
+        3
+      ],
+      "unique": true
+    },
+    "26": {
+      "hits_2n": [
+        20
+      ],
+      "hits_mod": [],
+      "unique": true
+    },
+    "27": {
+      "hits_2n": [
+        10,
+        14
+      ],
+      "hits_mod": [
+        3,
+        10
+      ],
+      "unique": false
+    },
+    "28": {
+      "hits_2n": [
+        10,
+        20
+      ],
+      "hits_mod": [
+        5,
+        10
+      ],
+      "unique": false
+    },
+    "29": {
+      "hits_2n": [
+        20,
+        30
+      ],
+      "hits_mod": [
+        3
+      ],
+      "unique": false
+    },
+    "30": {
+      "hits_2n": [],
+      "hits_mod": [],
+      "unique": false
+    }
+  },
+  "part_b": {
+    "delta_3_approx": 55.247,
+    "F_10": 55,
+    "deviation_pct": 0.44909090909090904,
+    "ord_3_mod_55": 20,
+    "ord_2_mod_55": 20
+  },
+  "part_c": {
+    "delta_4": 7.2846862171,
+    "N_4": 4.8465911660144245,
+    "delta_6": 9.2964027826,
+    "N_6": 4.316522101269755
+  },
+  "metadata": {
+    "experiment": "exp_05_multi_base_resonance",
+    "timestamp": "2026-05-21T20:58:49.757484",
+    "elapsed_seconds": 6650.8914840221405
+  }
+}

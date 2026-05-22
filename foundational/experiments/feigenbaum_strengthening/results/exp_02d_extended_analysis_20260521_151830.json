@@ -1,0 +1,538 @@
+{
+  "timestamp": "2026-05-21T15:18:30.100090",
+  "script": "exp_02d_extended_analysis.py",
+  "parameters": {
+    "N_newton": 40,
+    "N_march": 80,
+    "dps": 120
+  },
+  "alpha_digits": 38.117732879217584,
+  "n_coefficients": 80,
+  "marginals": {
+    "fib_mean": 0.18259554797839725,
+    "nonfib_mean": 0.492377003173329
+  },
+  "permutation_test": {
+    "fib_mean": 0.18259554797839725,
+    "p_value": 0.12563,
+    "n_perms": 100000,
+    "random_mean": 0.46785563560428955,
+    "random_std": 0.24936196367650854,
+    "z_score": -1.1439599023849265
+  },
+  "suppression_pattern": {
+    "slope": -0.1406801588941279,
+    "intercept": 1.2376967396843563,
+    "r_squared": 0.5998120909456336,
+    "k_zero_crossing": 8.797948121567117,
+    "slope_vs_neg_inv_phi": 0.2276252786334348,
+    "slope_vs_neg_ln_phi": 0.2923455982751527
+  },
+  "neighbor_analysis": [
+    {
+      "F_k": 3,
+      "k_idx": 4,
+      "delta": 0.2607048668675973
+    },
+    {
+      "F_k": 5,
+      "k_idx": 5,
+      "delta": -0.5344393290605276
+    },
+    {
+      "F_k": 8,
+      "k_idx": 6,
+      "delta": -0.19131183021700338
+    },
+    {
+      "F_k": 13,
+      "k_idx": 7,
+      "delta": -0.45299700682023136
+    },
+    {
+      "F_k": 21,
+      "k_idx": 8,
+      "delta": -1.2685437512643425
+    },
+    {
+      "F_k": 34,
+      "k_idx": 9,
+      "delta": -0.5890550041470135
+    },
+    {
+      "F_k": 55,
+      "k_idx": 10,
+      "delta": 0.05618001792697669
+    }
+  ],
+  "digits_per_N": [
+    {
+      "N": 3,
+      "digits": 2.063392366040846,
+      "marginal": 2.063392366040846,
+      "is_fib": true
+    },
+    {
+      "N": 4,
+      "digits": 3.5835471424380847,
+      "marginal": 1.5201547763972387,
+      "is_fib": false
+    },
+    {
+      "N": 5,
+      "digits": 4.24632187210535,
+      "marginal": 0.662774729667265,
+      "is_fib": true
+    },
+    {
+      "N": 6,
+      "digits": 5.1823916722648296,
+      "marginal": 0.9360698001594798,
+      "is_fib": false
+    },
+    {
+      "N": 7,
+      "digits": 6.763512134579343,
+      "marginal": 1.5811204623145132,
+      "is_fib": false
+    },
+    {
+      "N": 8,
+      "digits": 7.1600064598155,
+      "marginal": 0.3964943252361577,
+      "is_fib": true
+    },
+    {
+      "N": 9,
+      "digits": 8.858998809191476,
+      "marginal": 1.6989923493759758,
+      "is_fib": false
+    },
+    {
+      "N": 10,
+      "digits": 9.161465091840668,
+      "marginal": 0.30246628264919195,
+      "is_fib": false
+    },
+    {
+      "N": 11,
+      "digits": 10.164395836949705,
+      "marginal": 1.0029307451090368,
+      "is_fib": false
+    },
+    {
+      "N": 12,
+      "digits": 11.784102680354424,
+      "marginal": 1.6197068434047193,
+      "is_fib": false
+    },
+    {
+      "N": 13,
+      "digits": 12.0708433496725,
+      "marginal": 0.2867406693180765,
+      "is_fib": true
+    },
+    {
+      "N": 14,
+      "digits": 13.239443415665054,
+      "marginal": 1.1686000659925533,
+      "is_fib": false
+    },
+    {
+      "N": 15,
+      "digits": 14.513858241218799,
+      "marginal": 1.2744148255537446,
+      "is_fib": false
+    },
+    {
+      "N": 16,
+      "digits": 15.116585013377092,
+      "marginal": 0.6027267721582934,
+      "is_fib": false
+    },
+    {
+      "N": 17,
+      "digits": 16.487552192544108,
+      "marginal": 1.3709671791670157,
+      "is_fib": false
+    },
+    {
+      "N": 18,
+      "digits": 17.382740653803786,
+      "marginal": 0.8951884612596785,
+      "is_fib": false
+    },
+    {
+      "N": 19,
+      "digits": 18.246269852519717,
+      "marginal": 0.8635291987159306,
+      "is_fib": false
+    },
+    {
+      "N": 20,
+      "digits": 20.62473986976508,
+      "marginal": 2.3784700172453626,
+      "is_fib": false
+    },
+    {
+      "N": 21,
+      "digits": 20.315939349204065,
+      "marginal": -0.3088005205610145,
+      "is_fib": true
+    },
+    {
+      "N": 22,
+      "digits": 21.47487229449741,
+      "marginal": 1.1589329452933441,
+      "is_fib": false
+    },
+    {
+      "N": 23,
+      "digits": 22.650321507263925,
+      "marginal": 1.175449212766516,
+      "is_fib": false
+    },
+    {
+      "N": 24,
+      "digits": 23.33845220914855,
+      "marginal": 0.6881307018846243,
+      "is_fib": false
+    },
+    {
+      "N": 25,
+      "digits": 24.99952872618423,
+      "marginal": 1.6610765170356814,
+      "is_fib": false
+    },
+    {
+      "N": 26,
+      "digits": 25.44863806235787,
+      "marginal": 0.44910933617363824,
+      "is_fib": false
+    },
+    {
+      "N": 27,
+      "digits": 26.480402634976432,
+      "marginal": 1.0317645726185631,
+      "is_fib": false
+    },
+    {
+      "N": 28,
+      "digits": 27.98774486296427,
+      "marginal": 1.507342227987838,
+      "is_fib": false
+    },
+    {
+      "N": 29,
+      "digits": 28.435623085809663,
+      "marginal": 0.447878222845393,
+      "is_fib": false
+    },
+    {
+      "N": 30,
+      "digits": 29.834884386892735,
+      "marginal": 1.3992613010830723,
+      "is_fib": false
+    },
+    {
+      "N": 31,
+      "digits": 30.62476952498147,
+      "marginal": 0.7898851380887351,
+      "is_fib": false
+    },
+    {
+      "N": 32,
+      "digits": 31.54351036629042,
+      "marginal": 0.9187408413089493,
+      "is_fib": false
+    },
+    {
+      "N": 33,
+      "digits": 33.48605055785685,
+      "marginal": 1.9425401915664295,
+      "is_fib": false
+    },
+    {
+      "N": 34,
+      "digits": 33.54441464206689,
+      "marginal": 0.0583640842100408,
+      "is_fib": true
+    },
+    {
+      "N": 35,
+      "digits": 34.803838145992835,
+      "marginal": 1.2594235039259445,
+      "is_fib": false
+    },
+    {
+      "N": 36,
+      "digits": 35.785378152741515,
+      "marginal": 0.9815400067486806,
+      "is_fib": false
+    },
+    {
+      "N": 37,
+      "digits": 36.60044456485098,
+      "marginal": 0.8150664121094664,
+      "is_fib": false
+    },
+    {
+      "N": 38,
+      "digits": 37.99041931877192,
+      "marginal": 1.3899747539209386,
+      "is_fib": false
+    },
+    {
+      "N": 39,
+      "digits": 38.012489697990254,
+      "marginal": 0.022070379218334324,
+      "is_fib": false
+    },
+    {
+      "N": 40,
+      "digits": 38.128048719207435,
+      "marginal": 0.1155590212171802,
+      "is_fib": false
+    },
+    {
+      "N": 41,
+      "digits": 38.11805666502887,
+      "marginal": -0.009992054178567855,
+      "is_fib": false
+    },
+    {
+      "N": 42,
+      "digits": 38.11761237537364,
+      "marginal": -0.00044428965522769204,
+      "is_fib": false
+    },
+    {
+      "N": 43,
+      "digits": 38.117735618172205,
+      "marginal": 0.0001232427985655704,
+      "is_fib": false
+    },
+    {
+      "N": 44,
+      "digits": 38.11773490415539,
+      "marginal": -7.140168136743341e-07,
+      "is_fib": false
+    },
+    {
+      "N": 45,
+      "digits": 38.11773263192191,
+      "marginal": -2.272233480482555e-06,
+      "is_fib": false
+    },
+    {
+      "N": 46,
+      "digits": 38.117732921047086,
+      "marginal": 2.891251753567303e-07,
+      "is_fib": false
+    },
+    {
+      "N": 47,
+      "digits": 38.1177328743205,
+      "marginal": -4.672658349136327e-08,
+      "is_fib": false
+    },
+    {
+      "N": 48,
+      "digits": 38.117732880902324,
+      "marginal": 6.5818213101920264e-09,
+      "is_fib": false
+    },
+    {
+      "N": 49,
+      "digits": 38.11773287898238,
+      "marginal": -1.9199433154426515e-09,
+      "is_fib": false
+    },
+    {
+      "N": 50,
+      "digits": 38.11773287928711,
+      "marginal": 3.0473046308543417e-10,
+      "is_fib": false
+    },
+    {
+      "N": 51,
+      "digits": 38.11773287920846,
+      "marginal": -7.864997542128549e-11,
+      "is_fib": false
+    },
+    {
+      "N": 52,
+      "digits": 38.117732879220384,
+      "marginal": 1.1922907106054481e-11,
+      "is_fib": false
+    },
+    {
+      "N": 53,
+      "digits": 38.1177328792172,
+      "marginal": -3.183231456205249e-12,
+      "is_fib": false
+    },
+    {
+      "N": 54,
+      "digits": 38.117732879217705,
+      "marginal": 5.044853423896711e-13,
+      "is_fib": false
+    },
+    {
+      "N": 55,
+      "digits": 38.11773287921756,
+      "marginal": -1.4210854715202004e-13,
+      "is_fib": true
+    },
+    {
+      "N": 56,
+      "digits": 38.117732879217584,
+      "marginal": 2.1316282072803006e-14,
+      "is_fib": false
+    },
+    {
+      "N": 57,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 58,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 59,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 60,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 61,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 62,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 63,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 64,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 65,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 66,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 67,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 68,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 69,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 70,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 71,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 72,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 73,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 74,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 75,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 76,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 77,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 78,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 79,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    },
+    {
+      "N": 80,
+      "digits": 38.117732879217584,
+      "marginal": 0.0,
+      "is_fib": false
+    }
+  ]
+}
