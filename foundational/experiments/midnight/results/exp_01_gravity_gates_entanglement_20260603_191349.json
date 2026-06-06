@@ -1,0 +1,123 @@
+{
+  "experiment": "exp_01_gravity_gates_entanglement",
+  "initiative": "midnight",
+  "thread": "phase_rate_primitive",
+  "test_results": {
+    "T1": {
+      "test": "T1_phase_rate_definition",
+      "is_monotone": false,
+      "ratio_convergence_spread": 3.06512398545733e-05,
+      "weak_field_max_error": 1.5545425211782286e-07,
+      "n_depths": 20,
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_commensurate_ratios",
+      "duality_error": 1.1102230246251565e-16,
+      "max_potential_ratio_error": 2.220446049250313e-16,
+      "max_geometric_series_error": 2.220446049250313e-16,
+      "commensurate_values": [
+        [
+          1,
+          1.618033988749895
+        ],
+        [
+          2,
+          2.618033988749895
+        ],
+        [
+          3,
+          4.23606797749979
+        ],
+        [
+          4,
+          6.854101966249686
+        ],
+        [
+          5,
+          11.090169943749476
+        ]
+      ],
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_entanglement_structure",
+      "graph": "D_4",
+      "n_ratio_points": 300,
+      "n_peaks": 5,
+      "peaks": [
+        {
+          "ratio": 0.48561872909698994,
+          "entropy": 0.01557863614707267,
+          "near_phi_n": false,
+          "nearest_n": -2,
+          "deviation": 0.2494662086592304
+        },
+        {
+          "ratio": 0.7826086956521738,
+          "entropy": 0.015484281799843576,
+          "near_phi_n": false,
+          "nearest_n": -1,
+          "deviation": 0.49061422586067177
+        },
+        {
+          "ratio": 1.2775919732441472,
+          "entropy": 0.015490323208658422,
+          "near_phi_n": false,
+          "nearest_n": 1,
+          "deviation": 0.4909164271149288
+        },
+        {
+          "ratio": 2.057190635451505,
+          "entropy": 0.01557880958534842,
+          "near_phi_n": false,
+          "nearest_n": 1,
+          "deviation": 0.4990098855826953
+        },
+        {
+          "ratio": 3.331772575250836,
+          "entropy": 0.015578519469799205,
+          "near_phi_n": false,
+          "nearest_n": 3,
+          "deviation": 0.16633770232099007
+        }
+      ],
+      "n_spectral_modes": 3,
+      "eigenvalues": [
+        0.24999999999999997,
+        0.25000000000000006,
+        1.0
+      ],
+      "has_peaks": true,
+      "all_at_phi": false,
+      "phi1_tallest": true,
+      "entropy_min": 3.6748506157669465e-07,
+      "entropy_max": 0.01557880958534842,
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_model_discrimination",
+      "flat_model": {
+        "C": 0.005254890883499869,
+        "chi2": 0.005858933306696913,
+        "bic": 5.709641407962898
+      },
+      "phi_model": {
+        "A": -1.0378727820305649,
+        "B": 1.5663223939942281,
+        "sigma_log": 0.28877551020408165,
+        "chi2": 0.004923639975355937,
+        "bic": 17.11627106394396
+      },
+      "chi2_ratio": 1.1899597322351665,
+      "delta_bic": -11.40662965598106,
+      "n_data_points": 300,
+      "ratio_ok": false,
+      "bic_ok": false,
+      "PASS": false
+    }
+  },
+  "score": "1/4",
+  "n_pass": 1,
+  "n_total": 4
+}

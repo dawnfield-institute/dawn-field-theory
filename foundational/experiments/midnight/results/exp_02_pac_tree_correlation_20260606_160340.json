@@ -1,0 +1,79 @@
+{
+  "experiment": "exp_02_pac_tree_correlation",
+  "initiative": "midnight",
+  "thread": "phase_rate_primitive",
+  "test_results": {
+    "T1": {
+      "test": "T1_pac_conservation",
+      "n_trials": 100,
+      "n_checks": 6300,
+      "max_conservation_error": 2.7755575615628914e-17,
+      "max_deterministic_error": 1.3877787807814457e-17,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_phi_decay",
+      "decay_base_fit": 1.132599505875592,
+      "phi_deviation": 0.3000150097275479,
+      "two_deviation": 0.433700247062204,
+      "n_deltas_used": 6,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_fibonacci_enhancement",
+      "mean_fib_residual": 0.0027315074562305093,
+      "mean_non_fib_residual": -0.0014004472799513182,
+      "enhanced": true,
+      "residuals": {
+        "1": -0.017576374540570122,
+        "2": -0.015706662710294,
+        "3": 0.02385070483173074,
+        "4": 0.019599486287350226,
+        "5": 0.02035836224405542,
+        "6": -0.022400380847252863
+      },
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_phi_uniqueness",
+      "results": {
+        "1/phi": {
+          "split": 0.6180339887498948,
+          "decay_base": 1.1395007378252193,
+          "phi_error": 0.2957498138184316
+        },
+        "1/2": {
+          "split": 0.5,
+          "decay_base": 1.0814652315030306,
+          "phi_error": 0.33161772927985356
+        },
+        "0.4": {
+          "split": 0.4,
+          "decay_base": 1.0670057951327248,
+          "phi_error": 0.340554152414869
+        },
+        "0.3": {
+          "split": 0.3,
+          "decay_base": 1.0357749213925347,
+          "phi_error": 0.359855893884663
+        },
+        "1/e": {
+          "split": 0.36787944117144233,
+          "decay_base": 1.0814382401471725,
+          "phi_error": 0.3316344108551763
+        },
+        "1/3": {
+          "split": 0.3333333333333333,
+          "decay_base": 1.043764892053735,
+          "phi_error": 0.35491782044692677
+        }
+      },
+      "phi_best": true,
+      "others_far": true,
+      "PASS": true
+    }
+  },
+  "score": "3/4",
+  "n_pass": 3,
+  "n_total": 4
+}
