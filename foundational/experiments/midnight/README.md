@@ -2,7 +2,7 @@
 
 *Night removes the noise. Midnight sees the structure.*
 
-**Status**: Active | **Score**: 5/8
+**Status**: Active | **Score**: 9/12
 **Created**: 2026-06-03
 **Confidence**: 0.3 (exploratory)
 **Journals**:
@@ -182,6 +182,7 @@ Timeline and priorities TBD.
 |-----|------|--------|-------|-------|
 | 01 | Gravity Gates Entanglement | Phase-Rate | 2/4 | T1 PASS (phase-rate field well-defined), T2 PASS (g_out=g_in^2 gives phi-based ratios to machine precision). T3 FAIL: entanglement structure exists (5 peaks, S range 0.06-0.35) but only 2/5 peaks near phi^n — the ADE spectrum produces its own peak structure with phi^n emerging only where eigenvalue ratios are phi-related. E_6 eigenvalue ratios e[3]/e[4]=phi^{-1.03}, e[0]/e[3]=phi^{-4.00} are phi-related; others are not. T4 FAIL: phi model fits 1.7x better than flat (need 5x). The structure is real but richer than the simple prediction. |
 | 02 | PAC Tree Correlation Profile | Phase-Rate | 3/4 | T1 PASS (conservation exact to 10^{-17}). T2 FAIL: correlation decay base = 1.13, not phi (30% off). The level-mean correlation doesn't decay as phi^(-delta) — the averaging across all nodes at each level washes out the phi structure. **Key finding:** the PAC tree is deterministic, so correlations come from the noise, not from the conservation structure directly. T3 PASS: Fibonacci-index separations DO show enhanced correlation above trend (mean residual +0.003 vs -0.001). T4 PASS: phi-split is closest to phi-decay of all tested splits (29.6% vs 33-36% for others), and all others are >10% from phi. Phi is privileged but the effect is subtle. |
+| 03 | Photon Archaeology | Photon Arch. | 4/4 | T1 PASS: alpha = 5.7 ppm from CODATA, 0.1% perturbation of any component breaks it by 8-181x. F7 is least sensitive (8x) because it only appears in the near-unity correction term. phi is a unique fixed point (phi^2-phi-1=0 to machine precision). T2 PASS: A_8 line ratios match hydrogen to 2.5%, identical at all z by construction (discrete graph topology). T3 PASS: **line widths vary 220% across z=[0.1,3]**, perfectly correlated with cascade disequilibrium (Spearman rho=1.000). Widths peak near cascade transitions (z=0.1: N≈2, z=0.3: N≈4) and collapse between (z=3: N=6.46, diseq=0.07). T4 PASS: clean PAC/SEC separation — ratio spread = 0, width spread = 220%. |
 
 ---
 
