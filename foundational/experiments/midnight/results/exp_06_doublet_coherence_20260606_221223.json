@@ -1,0 +1,75 @@
+{
+  "experiment": "exp_06_doublet_coherence",
+  "initiative": "midnight",
+  "thread": "photon_archaeology",
+  "data_source": "SDSS DR16 MgII Absorber Catalog",
+  "n_absorbers": 89291,
+  "n_bins": 50,
+  "cascade_clock": {
+    "a": 1.36,
+    "slope": 2.0780869212350273
+  },
+  "test_results": {
+    "T1": {
+      "test": "T1_fwhm_discrepancy",
+      "rho_median": -0.27615846338535416,
+      "p_median": 0.05222424186167125,
+      "rho_mean": -0.33406962785114036,
+      "p_mean": 0.017737860517992494,
+      "direction": "lock_at_transitions",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_cascade_specificity",
+      "rho_diseq": -0.27615846338535416,
+      "p_diseq": 0.05222424186167125,
+      "rho_z": -0.2051860744297719,
+      "p_z": 0.1528755947518299,
+      "shuffle_percentile": 97.2,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_interline_correlation",
+      "rho": 0.2550300120048019,
+      "p": 0.07387151060810096,
+      "mean_r_transition": 0.5400113127387892,
+      "mean_r_trough": 0.4524745821045439,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_coherence_population",
+      "n_transition": 28537,
+      "n_trough": 11393,
+      "metrics": {
+        "FWHM discrepancy": {
+          "ks": 0.038936852638668085,
+          "p": 3.669814106287647e-11,
+          "median_trans": 0.12283518450151663,
+          "median_trough": 0.13418571022247613
+        },
+        "Doublet ratio": {
+          "ks": 0.03175665657192406,
+          "p": 1.4400210408880566e-07,
+          "median_trans": 1.2117527748800334,
+          "median_trough": 1.2225678728116485
+        },
+        "Velocity offset": {
+          "ks": 0.013552261748996569,
+          "p": 0.09957610079898571,
+          "median_trans": 13.26236343383789,
+          "median_trough": 12.930977612733841
+        },
+        "FWHM ratio": {
+          "ks": 0.023848146302698714,
+          "p": 0.00018689977626400425,
+          "median_trans": 1.1034577561151098,
+          "median_trough": 1.114914912063514
+        }
+      },
+      "PASS": true
+    }
+  },
+  "score": "3/4",
+  "n_pass": 3,
+  "n_total": 4
+}
