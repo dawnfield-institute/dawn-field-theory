@@ -1,0 +1,78 @@
+{
+  "experiment": "exp_05_bifractal_mesh_signal",
+  "initiative": "midnight",
+  "thread": "photon_archaeology",
+  "data_source": "SDSS DR16 MgII Absorber Catalog",
+  "data_url": "https://wwwmpa.mpa-garching.mpg.de/SDSS/MgII/",
+  "n_absorbers": 89851,
+  "n_bins": 60,
+  "cascade_clock": {
+    "a": 1.36,
+    "slope": 2.0780869212350273
+  },
+  "test_results": {
+    "T1": {
+      "test": "T1_ew_spread_correlation",
+      "ew_std_rho": 0.29002500694637406,
+      "ew_std_p": 0.024587760619587153,
+      "ew_iqr_rho": 0.34320644623506535,
+      "ew_iqr_p": 0.007261304612390889,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_fwhm_shape_change",
+      "metrics": {
+        "FWHM kurtosis": {
+          "rho": -0.23412058905251465,
+          "p": 0.07178876679082558
+        },
+        "FWHM skewness": {
+          "rho": -0.12714642956376776,
+          "p": 0.33299909729699273
+        },
+        "FWHM std": {
+          "rho": 0.1636565712697972,
+          "p": 0.21149849981880026
+        },
+        "FWHM IQR": {
+          "rho": 0.20388996943595447,
+          "p": 0.11815469699905799
+        }
+      },
+      "any_significant": false,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_cascade_specificity",
+      "rho_diseq": 0.29002500694637406,
+      "p_diseq": 0.024587760619587153,
+      "rho_z": 0.8133370380661297,
+      "p_z": 2.8907927890223845e-15,
+      "shuffle_percentile": 99.5,
+      "cascade_stronger": false,
+      "above_shuffle": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_population_separation",
+      "n_transition": 28719,
+      "n_trough": 11441,
+      "ks_ew": 0.0770241739002181,
+      "p_ew": 1.1519269648128348e-42,
+      "ks_fwhm": 0.06454233719392088,
+      "p_fwhm": 4.4749448535947666e-30,
+      "ew_median_trans": 1.4777451609444971,
+      "ew_median_trough": 1.3567909323967235,
+      "ew_std_trans": 0.727866327642148,
+      "ew_std_trough": 0.6641478314762354,
+      "fwhm_median_trans": 178.7036524747986,
+      "fwhm_median_trough": 168.8058537264351,
+      "fwhm_std_trans": 77.87822437199472,
+      "fwhm_std_trough": 73.41413730776468,
+      "PASS": true
+    }
+  },
+  "score": "3/4",
+  "n_pass": 3,
+  "n_total": 4
+}
