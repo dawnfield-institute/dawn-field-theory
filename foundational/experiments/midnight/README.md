@@ -9,6 +9,7 @@
 - [2026-06-03 — The Phase-Rate Primitive](journals/2026-06-03_phase-rate-primitive.md)
 - [2026-06-06 — Exp_01/02 Findings](journals/2026-06-06_exp01-exp02-findings.md)
 - [2026-06-06 — Bifractal Mesh Photon Signal](journals/2026-06-06_bifractal-mesh-photon-signal.md)
+- [2026-06-06 — SDSS Observational Contact](journals/2026-06-06_sdss-observational-contact.md)
 
 ---
 
