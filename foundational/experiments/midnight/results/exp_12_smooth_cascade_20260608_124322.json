@@ -1,0 +1,99 @@
+{
+  "experiment": "exp_12_smooth_cascade",
+  "initiative": "midnight",
+  "thread": "photon_archaeology",
+  "reframing": "smooth z-evolution IS the cascade, not a confound",
+  "test_results": {
+    "T1": {
+      "test": "T1_civ_parameterization",
+      "models": {
+        "z (linear)": {
+          "label": "z (linear)",
+          "slope": 0.033276307003067954,
+          "intercept": 1.6854223092220764,
+          "R2": 0.4462664300087821,
+          "resid_std": 0.03091139774603711,
+          "n": 76
+        },
+        "z^2": {
+          "label": "z^2",
+          "slope": 0.005298146466818642,
+          "intercept": 1.7337824885832265,
+          "R2": 0.3988046131108709,
+          "resid_std": 0.03220891063581279,
+          "n": 76
+        },
+        "ln(z)": {
+          "label": "ln(z)",
+          "slope": 0.09617224451356471,
+          "intercept": 1.6837167695790003,
+          "R2": 0.48635222977275183,
+          "resid_std": 0.029771513962994278,
+          "n": 76
+        },
+        "ln(t_lookback)": {
+          "label": "ln(t_lookback)",
+          "slope": 0.416187962187733,
+          "intercept": 0.7706951892288344,
+          "R2": 0.5117962693008342,
+          "resid_std": 0.02902476843954238,
+          "n": 76
+        },
+        "N(z) = cascade clock": {
+          "label": "N(z) = cascade clock",
+          "slope": 0.20027456885219652,
+          "intercept": 0.49832177558984514,
+          "R2": 0.511796269300835,
+          "resid_std": 0.029024768439542353,
+          "n": 76
+        }
+      },
+      "free_slope": 0.416187962187733,
+      "cascade_effective_slope": 0.4161879621877336,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_phi_slope",
+      "free_slope": 0.41786988573860856,
+      "constrained_slope": 0.41786988573860695,
+      "slope_ratio": 0.9999999999999961,
+      "r2_free": 0.5388917513223703,
+      "r2_constrained": 0.5388917513223712,
+      "r2_cost": -8.881784197001252e-16,
+      "slope_in_phi_units": 0.20108393035372382,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_mgii_cascade",
+      "results": {
+        "EW": {
+          "R2_z": 0.8183831060757377,
+          "R2_N": 0.5993256588397113,
+          "N_wins": false
+        },
+        "Doublet ratio": {
+          "R2_z": 0.6927333218504652,
+          "R2_N": 0.6841449015472811,
+          "N_wins": false
+        },
+        "FWHM discrepancy": {
+          "R2_z": 0.0014966961868695394,
+          "R2_N": 0.01849173522114711,
+          "N_wins": true
+        }
+      },
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_geographic_coherence",
+      "ew_std_z": 0.7056359217815998,
+      "ew_std_N": 0.6663313334930001,
+      "disc_std_z": 0.17964748300144234,
+      "disc_std_N": 0.18140950859725685,
+      "PASS": true
+    }
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}
