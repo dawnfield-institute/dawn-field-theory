@@ -1,0 +1,56 @@
+{
+  "experiment": "exp_14_pac_triangle",
+  "initiative": "midnight",
+  "panels": {
+    "A": {
+      "test": "panel_A",
+      "depth_results": {
+        "1": {
+          "mean_concentration": 1.235179426673697,
+          "max_concentration": 1.558360821748345,
+          "blowup": false
+        },
+        "2": {
+          "mean_concentration": 1.2925806617483955,
+          "max_concentration": 1.58253938017825,
+          "blowup": false
+        },
+        "3": {
+          "mean_concentration": 1.3368960898985114,
+          "max_concentration": 1.5986812632719642,
+          "blowup": false
+        },
+        "5": {
+          "mean_concentration": 1.413249915885619,
+          "max_concentration": 1.6195636151638875,
+          "blowup": false
+        },
+        "10": {
+          "mean_concentration": 1.5408377610028332,
+          "max_concentration": 1.688060624117564,
+          "blowup": false
+        }
+      },
+      "sl_mean_error": 0.0005750143241246397,
+      "PASS": true
+    },
+    "B": {
+      "test": "panel_B",
+      "pac_flatness": 0.10029129032608433,
+      "dm_fraction": -0.02993051506421085,
+      "pac_nfw_corr": -0.3591389369095951,
+      "PASS": false
+    },
+    "C": {
+      "test": "panel_C",
+      "ratio_correlation": -0.9276354604564966,
+      "PASS": false
+    },
+    "D": {
+      "test": "panel_D",
+      "n_panels_pass": 1,
+      "PASS": false
+    }
+  },
+  "score": "1/4"
+}
