@@ -10,6 +10,7 @@
 - [2026-06-06 — Exp_01/02 Findings](journals/2026-06-06_exp01-exp02-findings.md)
 - [2026-06-06 — Bifractal Mesh Photon Signal](journals/2026-06-06_bifractal-mesh-photon-signal.md)
 - [2026-06-06 — SDSS Observational Contact](journals/2026-06-06_sdss-observational-contact.md)
+- [2026-06-08 — PAC/SEC Separation in SDSS](journals/2026-06-08_pac-sec-separation-in-sdss.md)
 
 ---
 
