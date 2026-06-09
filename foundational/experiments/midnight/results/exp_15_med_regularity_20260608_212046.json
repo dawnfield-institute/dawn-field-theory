@@ -1,0 +1,114 @@
+{
+  "experiment": "exp_15_med_regularity",
+  "initiative": "midnight",
+  "test_results": {
+    "T1": {
+      "test": "T1",
+      "results": {
+        "2": {
+          "mean_max_concentration": 1.9416729535864963,
+          "std_max_concentration": 0.018804928596667606,
+          "mean_enstrophy": 0.20584191878294383,
+          "n_nodes": 4
+        },
+        "3": {
+          "mean_max_concentration": 3.2917521526228484,
+          "std_max_concentration": 0.028736257995428234,
+          "mean_enstrophy": 0.22861904454805487,
+          "n_nodes": 8
+        },
+        "4": {
+          "mean_max_concentration": 5.80702577037768,
+          "std_max_concentration": 0.046496871669696536,
+          "mean_enstrophy": 0.21348445491245166,
+          "n_nodes": 16
+        },
+        "5": {
+          "mean_max_concentration": 10.499251417308104,
+          "std_max_concentration": 0.12597421991465818,
+          "mean_enstrophy": 0.18993713806963236,
+          "n_nodes": 32
+        }
+      },
+      "bounded_at_3": false,
+      "grows_at_4": true,
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2",
+      "initial": 3.633170517637885,
+      "final": 3.306739856074236,
+      "half_life": 47,
+      "final_depth4": 5.676598749782237,
+      "recovers": false,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3",
+      "crossing": 2.0,
+      "dcross_target": 3.25,
+      "match": 1.25,
+      "depth_data": [
+        {
+          "depth": 1,
+          "layers": 2,
+          "concentration": 1.236715282232779,
+          "ratio": 0.5388439177522338,
+          "target_ln_phi": 0.48121182505960347
+        },
+        {
+          "depth": 2,
+          "layers": 3,
+          "concentration": 1.9478227012504923,
+          "ratio": 0.6479277262646848,
+          "target_ln_phi": 0.48121182505960347
+        },
+        {
+          "depth": 3,
+          "layers": 4,
+          "concentration": 3.2854693494851754,
+          "ratio": 0.7563442040583624,
+          "target_ln_phi": 0.48121182505960347
+        },
+        {
+          "depth": 4,
+          "layers": 5,
+          "concentration": 5.811193827995326,
+          "ratio": 0.8459282994521053,
+          "target_ln_phi": 0.48121182505960347
+        },
+        {
+          "depth": 5,
+          "layers": 6,
+          "concentration": 10.481558428015095,
+          "ratio": 0.9082829676465065,
+          "target_ln_phi": 0.48121182505960347
+        },
+        {
+          "depth": 6,
+          "layers": 7,
+          "concentration": 19.233171239686854,
+          "ratio": 0.9478398594292806,
+          "target_ln_phi": 0.48121182505960347
+        },
+        {
+          "depth": 7,
+          "layers": 8,
+          "concentration": 35.548557558259425,
+          "ratio": 0.971087149717947,
+          "target_ln_phi": 0.48121182505960347
+        }
+      ],
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4",
+      "local_concentration": 3.287269459907786,
+      "nonlocal_concentration": 3.0041381071859643,
+      "smoothing": true,
+      "dark_fraction": 0.20319389063407314,
+      "PASS": true
+    }
+  },
+  "score": "1/4"
+}
