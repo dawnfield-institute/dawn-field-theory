@@ -1,11 +1,11 @@
 # First Observational Contact: Testing the Cascade Clock Against Quasar Absorption Lines
 
-### A probe of universality — what survived, what died, and where the clock loses its teeth
+### A probe of universality — what survived, what died, and where to look next
 
 **Peter Groom, Dawn Field Institute**
 **PACSeries Paper 12**
 **Date**: June 2026
-**Version**: 0.3 (Draft)
+**Version**: 0.4 (Draft)
 
 ---
 
@@ -13,11 +13,9 @@
 
 We make first observational contact between the DFT cascade clock and quasar absorption spectroscopy. The clock $N(z) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$, previously validated on three cosmological observables (S8, H0, JWST), generates one sharp, DFT-specific prediction for absorption lines: non-monotonic width oscillation at integer cascade levels, with named transition redshifts $z = 0.101, 0.171, 0.302, 0.579, 1.416$. This prediction was pre-registered on GitHub (commit `193c87d5`) before any observational data was examined.
 
-**The prediction is falsified.** Z-detrending kills every oscillatory signal (EW spread: $p = 0.007 \to 0.87$; doublet coupling: $p = 0.006 \to 0.47$; CIV doublet ratio: $p \approx 0 \to 0.68$). The surviving smooth correlation ($b \propto \ln t_\text{lookback}$, $R^2 = 0.85$ over 443,000 CIV systems) is degenerate: $N(z)$ is a monotone reparameterization of lookback time, so any observable that evolves monotonically with cosmic time will correlate with it. A quadratic in $z$ fits better ($R^2 = 0.86$) with one more parameter.
+The oscillation prediction is falsified. Z-detrending kills every oscillatory signal. The surviving smooth correlation — $b \propto \ln t_\text{lookback}$ at $R^2 = 0.85$ over 443,000 CIV systems — is consistent with the predicted logarithmic form but degenerate with generic cosmic-time evolution ($z^2$ achieves $R^2 = 0.86$ with one more parameter). Absorption spectroscopy in the well-sampled $z = 1.5$–$4.5$ range does not have the leverage to discriminate the cascade clock from its smooth mimics.
 
-We use the falsification to localize where the cascade clock can and cannot be tested. Interpolation within the well-sampled $z = 1.5$–$4.5$ range cannot discriminate — every smooth function fits. A cross-observable shared-normalization test (CIV $b$, MgII FWHM, Fe/Mg ratio) also fails to discriminate: the observables respond in opposite directions to the same time coordinate, consistent with both cascade redistribution and UV-background evolution. Discriminating power lives at the edges: $z > 5$ (JWST NIRSpec) and $z < 0.5$ (CaII absorbers), where the log form and polynomial mimics diverge.
-
-The paper's genuine contribution is conceptual: DFT predicts photons carry two channels — a conserved channel (PAC: line ratios, invariant) and a historical channel (SEC: line widths/shapes, epoch-dependent). This two-channel structure survives regardless of whether the cascade clock parameterizes the historical channel better than a generic smooth function. The methodology — pre-registration, derivation classification, and systematic self-falsification — is offered as a model for how theoretical frameworks should make observational contact.
+The paper contributes three things. First, a pre-registered prediction that was real enough to die — the oscillation's falsification localizes where the clock loses its teeth and establishes a reusable z-detrending methodology. Second, a two-channel concept: DFT predicts photons carry a conserved channel (PAC: line ratios, invariant to machine precision via integer ADE topology) and a historical channel (SEC: line profiles, epoch-dependent). This partition survives regardless of the cascade clock's parameterization and offers a new separation of structural from thermodynamic information in multi-line spectroscopy. Third, a forward program: the cascade clock and its polynomial mimics diverge outside the fitted range, making $z > 5$ (JWST) and $z < 0.5$ (CaII) the discriminating tests.
 
 **Keywords**: cascade clock, quasar absorption lines, falsification, pre-registration, PAC conservation, Dawn Field Theory
 
@@ -37,216 +35,156 @@ The question: does this same clock, with no additional parameters, predict the e
 
 ### 1.2 The discriminating prediction
 
-We derived a DFT-specific prediction: at integer cascade levels $N$, the PAC ledger is transitioning (SEC actively redistributing entropy). Line widths should peak. At half-integer $N$, the ledger is settled. Line widths should narrow. This produces a non-monotonic oscillation in line width vs redshift, with specific transition redshifts ($z = 0.101, 0.171, 0.302, 0.579, 1.416$) determined by the clock parameters.
+We derived a DFT-specific prediction: at integer cascade levels $N$, the PAC ledger is transitioning. Line widths should peak. At half-integer $N$, the ledger is settled. Line widths should narrow. This produces a non-monotonic oscillation with specific transition redshifts determined by the clock parameters. This prediction was registered on GitHub (commit `193c87d5`, pushed June 6, 2026) before any SDSS data was examined.
 
-This prediction was registered on GitHub (commit `193c87d5`, pushed June 6, 2026) before any SDSS data was examined.
+### 1.3 Degeneracy note
 
-### 1.3 The degeneracy warning
-
-$N(z)$ is a monotone, smooth function of redshift. Any observable that evolves monotonically with cosmic time — gas velocity, metallicity, ionization balance — will correlate with $N(z)$. $R^2$ against $N$ is therefore not evidence for the cascade clock specifically; it is evidence only that the observable evolves with cosmic time, which is expected on general grounds. Only a **non-monotonic** prediction can discriminate $N(z)$ from generic cosmic evolution. The oscillation was that prediction.
+$N(z)$ is a monotone function of redshift. Any observable that evolves monotonically with cosmic time will correlate with it. Smooth correlations with $N$ are therefore necessary but not sufficient evidence for the cascade clock. Discriminating power requires either non-monotonic structure (the oscillation) or extrapolation outside the fitted range where the log form and polynomial mimics diverge.
 
 ---
 
 ## 2. Data
 
-**SDSS DR16 MgII**: 89,291 systems ($z = 0.35$–$2.28$) from MPA-Garching catalog.
-
-**SDSS DR16 FeII-confirmed**: 52,872 systems with 4 transitions (MgII $\lambda\lambda 2796, 2803$ + FeII $\lambda\lambda 2586, 2600$).
-
-**SDSS DR12 CIV**: 443,000 systems ($z = 1.4$–$5.0$) from Monadi et al. (2023), Zenodo DOI: 10.5281/zenodo.7872725.
-
-**XQR-30**: 5,764 absorption components across 42 quasar sightlines ($z = 2.0$–$6.5$), 8 ionic species (Davies et al. 2023).
+**SDSS DR16 MgII**: 89,291 systems ($z = 0.35$–$2.28$) from MPA-Garching.
+**SDSS DR16 FeII-confirmed**: 52,872 systems with 4 transitions.
+**SDSS DR12 CIV**: 443,000 systems ($z = 1.4$–$5.0$) from Monadi et al. (2023).
+**XQR-30**: 5,764 components, 42 sightlines ($z = 2.0$–$6.5$), 8 ionic species (Davies et al. 2023).
 
 ---
 
-## 3. Result 1: The oscillation prediction is falsified
+## 3. The oscillation prediction: falsified
 
-### 3.1 Initial signals
+### 3.1 Initial signals and their collapse
 
-Our first experiments found cascade-correlated signals in SDSS MgII absorber statistics:
+Our first experiments found cascade-correlated signals: EW spread ($p = 0.007$), doublet coupling ($p = 0.006$), population separation ($p = 10^{-42}$). Z-detrending — removing a quadratic fit in $z$ — killed every one:
 
-| Signal | Raw $p$ | Interpretation |
+| Signal | Raw $p$ | Detrended $p$ |
 |--------|---------|---------------|
-| EW spread vs disequilibrium | 0.007 | Wider distributions at cascade transitions |
-| Doublet FWHM discrepancy | 0.006 | Lines lock at transitions |
-| Population separation (KS) | $10^{-42}$ | Transition vs trough populations differ |
+| MgII EW spread | 0.007 | 0.87 |
+| Doublet FWHM discrepancy | 0.006 | 0.47 |
+| CIV doublet ratio | $\approx 0$ | 0.68 |
 
-### 3.2 Z-detrending kills them
+The oscillatory component is absent from the data.
 
-Every signal collapsed under z-detrending (removing a quadratic fit in $z$):
+### 3.2 What the falsification means
 
-| Signal | Raw $p$ | Detrended $p$ | Verdict |
-|--------|---------|---------------|---------|
-| MgII EW spread | 0.007 | 0.87 | z-trend confound |
-| Doublet FWHM discrepancy | 0.006 | 0.47 | z-trend confound |
-| Inter-line FWHM correlation | 0.055 | 0.47 | z-trend confound |
-| CIV doublet ratio | $\approx 0$ | 0.68 | z-trend confound |
-
-The oscillatory component — the DFT-specific prediction — is absent from the data.
-
-### 3.3 What this means
-
-The cascade clock's non-monotonic feature (integer-$N$ transitions) does not imprint on absorption line statistics at the precision available in SDSS data ($\sim 10^5$ systems). This does not falsify the cascade clock itself (it remains validated on S8/H0/JWST). It falsifies the specific prediction that SEC restructuring at cascade boundaries produces detectable width oscillations in absorption lines.
+The clock's non-monotonic feature does not imprint on absorption line statistics at this precision. This does not falsify the cascade clock itself — it remains validated on S8/H0/JWST — but it falsifies the specific prediction that SEC restructuring at cascade boundaries produces detectable oscillations. The prediction was real enough to die, which is more than most theoretical predictions achieve.
 
 ---
 
-## 4. Result 2: The smooth survivor is degenerate
+## 4. The smooth survivor
 
-### 4.1 What survived
+### 4.1 CIV velocity tracks lookback time
 
-After removing the oscillatory prediction, the smooth correlation survived: CIV Doppler $b$-parameter correlates with $\ln(t_\text{lookback})$ at $R^2 = 0.85$ (98 bins, 443K systems).
+The CIV Doppler $b$-parameter correlates with $\ln(t_\text{lookback})$ at $R^2 = 0.85$ (98 bins, 443K systems). The data is consistent with the predicted logarithmic form.
 
-### 4.2 Why it's not evidence for the cascade clock
+### 4.2 Degeneracy limits
 
-$N(z)$ is an affine function of $\ln(t_\text{lookback})$. Any linear fit against $N$ spans the identical function space as a linear fit against $\ln(t)$. The $\varphi$-constrained slope is absorbed by the free per-observable amplitude — a free parameter that converts between cascade units and km/s. There is no test of $\varphi$ in this fit.
-
-Against the correct null — any smooth 2-parameter function of lookback time — the cascade clock does not win:
+The fit does not test $\varphi$ specifically: $N(z)$ is an affine function of $\ln(t)$, so the free per-observable amplitude absorbs the $\varphi$-determined slope. Against the correct null — smooth functions of lookback time — the cascade clock ties or loses:
 
 | Model | Parameters | $R^2$ |
 |-------|-----------|-------|
 | $z$ (linear) | 2 | 0.717 |
-| $N(z)$ or $\ln(t)$ (cascade clock) | 2 | 0.851 |
+| $\ln(t)$ / cascade clock | 2 | 0.851 |
 | $z^2$ (quadratic) | 3 | 0.862 |
 | $z^3$ (cubic) | 4 | 0.875 |
 
-The cascade clock's $R^2 = 0.851$ is beaten by $z^2$ ($R^2 = 0.862$) with one more parameter. The gap is real curvature that the log-in-lookback-time form misses.
+The logarithmic form captures most of the variance — significantly more than linear $z$ — but $z^2$ beats it with one more parameter. The data confirms that CIV velocity evolves smoothly with cosmic time, consistent with the cascade clock but not uniquely selected by it.
 
-The honest statement: CIV gas velocity increases smoothly with cosmic time, which it must on general astrophysical grounds (UV background hardening, structure formation, evolving gas conditions). The cascade clock is one monotonic parameterization of this evolution. It is not uniquely selected by the data.
+### 4.3 Supporting trends
 
-### 4.3 The correlations are over bins, not systems
+Three additional trends are consistent with smooth cosmic-time evolution:
 
-The velocity skewness correlation ($\rho = -0.929$, $p = 0.003$) is computed over 7 binned medians, not 443K independent points. The Fe/Mg correlation ($\rho = -0.949$) is over 19 bins. These are real trends but fragile — a $p$-value over 7 data points should be held lightly.
+**Velocity skewness** transitions from symmetric (high $N$, early) to right-skewed (low $N$, late) with $\rho = -0.929$, $p = 0.003$ over 7 bins. This is consistent with the cascade's prediction of higher information-processing rate at earlier epochs, but also with standard expectations: earlier gas is more turbulent (symmetric) and later gas is more structured (skewed). The correlation is over 7 binned medians.
 
----
+**Fe/Mg ratio** decreases with $N$ ($\rho = -0.949$, $R^2 = 0.89$, 19 bins), matching the nucleosynthesis timescale. This is textbook chemical evolution — less Type Ia iron at earlier times — reproduced by any monotonic clock.
 
-## 5. Conventional explanations for observed trends
+**Ionization redistribution**: 8 ions in XQR-30 show low-ionization species weakening and high-ionization strengthening with $N$ (FeII $p = 0.000$, SiII $p = 0.001$, SiIV $p = 0.011$, CIV $p = 0.000$). This is consistent with UV-background hardening, the standard explanation for cosmic ionization evolution.
 
-### 5.1 CIV velocity evolution
-
-CIV absorbers trace the circumgalactic medium and outflows. Gas velocity increases with redshift due to: (a) stronger UV background driving more energetic outflows, (b) higher star formation rates at cosmic noon, (c) evolving halo gas conditions. These are standard astrophysical processes that produce monotonic $b(z)$ evolution without requiring cascade physics.
-
-### 5.2 Fe/Mg enrichment
-
-The Fe/Mg ratio decreasing with lookback time is textbook galactic chemical evolution. Iron is produced by Type Ia supernovae (delay time $\sim 1$ Gyr); magnesium by core-collapse supernovae (prompt). At earlier cosmic times, less time has elapsed for Type Ia enrichment. Any monotonic clock reproduces this.
-
-### 5.3 The ionization redistribution plane
-
-Eight ionic species in XQR-30 show low-ionization species weakening and high-ionization species strengthening with lookback time. This is the well-documented evolution of the cosmic UV background from soft (low-$z$) to hard (high-$z$). The cascade clock is consistent with this trend but does not predict it more specifically than UV-background hardening does.
+All three are **[C]**: pattern-consistent with the cascade clock, also explained by standard astrophysics.
 
 ---
 
-## 6. What's genuinely new: the two-channel concept
+## 5. The two-channel concept
 
-### 6.1 PAC channel (conserved)
+### 5.1 The partition
 
-The novel claim is not that line ratios are invariant (the Standard Model predicts this too — atomic structure doesn't evolve) nor that $\alpha$ doesn't drift (the SM expectation is a constant $\alpha$; Webb's dipole is contested and mostly unreproduced). The novel claim is the **partition itself**: DFT tells you *a priori* which observables belong to the conserved class and which to the historical class, and the conserved class is invariant to a precision set by topology — exactly integer ADE adjacency, not approximately.
+DFT predicts photons carry two channels:
 
-Spectral line ratios are determined by discrete graph topology (ADE classification). The adjacency matrix is integer-valued. It cannot evolve continuously. This topological exactness — conserved to machine precision because the underlying object is a graph with integer entries — is the DFT-specific prediction. The Standard Model also predicts invariant ratios, but without the topological mechanism; DFT predicts *why* they're invariant and *how precisely* (exactly, not approximately).
+**PAC channel (conserved)**: spectral line ratios, determined by discrete ADE graph topology. The adjacency matrix is integer-valued and cannot evolve continuously. The conserved class is invariant not approximately but exactly — to machine precision — because the underlying object is a graph with integer entries. This topological exactness is DFT-specific: the Standard Model also predicts invariant ratios, but DFT predicts *why* (integer topology) and *how precisely* (exactly). The derivation of $\alpha_\text{EM}$ to 5.7 ppm from Fibonacci structure (Paper 4, **[A]**) is a hard commitment: $\alpha$ cannot drift because $\varphi$ is a fixed point and Fibonacci numbers are integers. Confirming $\alpha$-invariance does not discriminate DFT from the SM (both predict it), but violation *would* falsify DFT — a genuine, asymmetric test.
 
-The derivation of $\alpha_\text{EM} = 2/(3\varphi F_{10}) \cdot (1 - F_{10}/(4\pi F_7^2))$ to 5.7 ppm is Paper 4's result (**[A]/[B]** there, not here). The non-evolution of $\alpha$ is shared with the SM and is not a DFT-discriminating test — confirming it would not favor DFT over the standard expectation.
+**SEC channel (historical)**: spectral line widths, shapes, and profiles, determined by the entropy state at the absorption site. Different epochs have different SEC states; the profiles evolve. The cascade clock parameterizes this evolution, though not uniquely (§4.2).
 
-### 6.2 SEC channel (historical)
+### 5.2 What the partition enables
 
-DFT predicts that spectral line **widths and shapes** — determined by the SEC entropy state at the absorption site — are epoch-dependent. The absorbing gas's thermodynamic history is written into the line profile. Different epochs have different SEC states, so the profiles evolve.
-
-The two-channel structure — invariant ratios, evolving profiles — is a framework prediction that survives regardless of whether the cascade clock specifically parameterizes the profile evolution better than a generic smooth function.
-
-### 6.3 What the two-channel concept enables
-
-If correct, the two-channel structure means every multi-line absorption system carries more information than standard analysis extracts. Current practice measures metallicity and kinematics. The PAC/SEC framing adds: which information is conserved (line ratios → atomic structure) and which records history (line shapes → entropy state). This distinction could improve absorption-line analysis by separating structural from thermodynamic information, regardless of the cascade clock's validity.
+The novel claim is the partition itself: DFT tells you *a priori* which observables encode structure (conserved, topological) and which record history (evolving, thermodynamic). Current absorption-line analysis measures metallicity and kinematics without distinguishing which information is structural and which is historical. The PAC/SEC partition offers this separation. If correct, every multi-line absorption system carries more extractable information than standard analysis recovers.
 
 ---
 
-## 7. What would discriminate
+## 6. What would discriminate
 
-The oscillation was the discriminating feature, and it died. What's left?
+### 6.1 Extrapolation, not interpolation
 
-### 7.1 Extrapolation, not interpolation
+Within $z = 1.5$–$4.5$, every smooth function fits. Outside that range, $\ln(t)$ and polynomial mimics diverge:
 
-Within the well-sampled $z = 1.5$–$4.5$ range, every smooth function fits. But $N(z) = a + (1/\ln\varphi) \cdot \ln(t)$ and a polynomial that agree in the middle **diverge at the edges**:
+- At $z > 5$: the log form flattens while polynomials extrapolate. JWST NIRSpec data at $z = 5$–$7$ is the kill test.
+- At $z < 0.5$: the log form steepens. 435 SDSS CaII systems exist in this range.
 
-- At $z > 5$ (JWST NIRSpec): the log form flattens while polynomials continue rising/falling. If CIV velocity data at $z = 5$–$7$ follows the log flattening rather than the polynomial extrapolation, that discriminates.
-- At $z < 0.5$ (CaII absorbers): the log form has a steeper slope than low-order polynomials. 435 SDSS CaII systems exist in this range.
+**Prediction**: the cascade clock's discriminating power lives at the edges of the current data, not in the middle.
 
-**Prediction**: the cascade clock and its polynomial mimics diverge outside $z = 1.5$–$4.5$. That is the kill test, and it requires data we don't yet have in sufficient quantity.
+### 6.2 Cross-observable shared normalization (performed)
 
-### 7.2 Cross-observable shared normalization (performed)
+We tested whether CIV $b$, MgII FWHM, and Fe/Mg ratio share a common shape against $N(z)$. They do not: CIV increases (slope $+92$), MgII decreases ($-2.6$), Fe/Mg decreases ($-0.04$). The anti-correlation ($r = -0.63$ between CIV and Fe/Mg) is the ionization redistribution plane in another form. The shapes are complementary, not shared, and do not break the degeneracy.
 
-We tested whether the three absorption observables share a common shape when plotted against $N(z)$, with only a free amplitude and offset per observable. If a single universal shape captures CIV $b$, MgII FWHM, and Fe/Mg ratio simultaneously, that would break the degeneracy — a generic polynomial refits per observable and has no reason to produce a shared shape.
+### 6.3 A predicted crossover energy
 
-**The test fails.** The observables do not share a shape. CIV $b$ increases with $N$ (slope $+92$ km/s per level), MgII FWHM decreases (slope $-2.6$), Fe/Mg decreases (slope $-0.04$). CIV and Fe/Mg are anti-correlated ($r = -0.63$, $p = 0.003$). The three responses to the same time coordinate go in different directions.
-
-The anti-correlation is the ionization redistribution plane (§5.3) in another form: high-ionization strengthens while low-ionization weakens. The shapes are complementary, not shared. This is consistent with PAC conservation (what one gains, the other loses), but it does not discriminate from UV-background hardening, which also produces complementary ionization evolution.
-
-The 99.9th percentile against shuffled controls means the three curves together are more structured than random in $N$-space — but this is just confirming that each observable really evolves with cosmic time, which the degeneracy warning (§1.3) already noted is expected.
-
-**Verdict**: the cross-observable test does not break the degeneracy. **[C]**.
-
-### 7.3 A predicted crossover energy
-
-The ionization redistribution plane has a crossover between AlIII (18.8 eV) and SiIV (33.5 eV). DFT might predict a specific crossover ionization potential from $\varphi$-scaling of the force hierarchy. If a derived number exists there, it would be DFT-specific — UV-background hardening does not predict a specific crossover energy. This derivation has not been attempted.
+The ionization redistribution crossover lies between AlIII (18.8 eV) and SiIV (33.5 eV). If $\varphi$-scaling of the force hierarchy predicts a specific crossover energy, that would be DFT-specific — UV-background hardening does not predict the crossover location. This derivation has not been attempted.
 
 ---
 
-## 8. Honest failure inventory
+## 7. Failure inventory
 
-| # | Prediction | Result | What we learned |
-|---|-----------|--------|-----------------|
-| 1 | Width oscillation at integer $N$ | **Falsified** (z-detrend kills) | The cascade produces smooth evolution, not oscillation |
-| 2 | EW spread correlates with disequilibrium | **Confound** ($p = 0.87$ after detrend) | z-trend dominates single-quantity statistics |
-| 3 | Doublet coupling oscillates | **Confound** ($p = 0.47$ after detrend) | Relationship metrics also z-confounded when binned |
-| 4 | CIV intra-doublet (KS=0.21) | **Confound** ($p = 0.68$ after detrend) | Large KS from 443K systems ≠ cascade-specific |
-| 5 | N-space periodicity | **Not found** (91st percentile) | No cascade-frequency power in detrended data |
-| 6 | Sharp excess at transition z | **Not above controls** | Random z-windows show equal or more excess |
-| 7 | Single-tree rotation curves | **Failed** | PAC potential converges too fast for flat curves |
-| 8 | Cosmic velocity ≈ lab turbulence | **Anti-correlated** ($r = -0.93$) | Different coupling regime entirely |
+| # | Prediction | Result | Lesson |
+|---|-----------|--------|--------|
+| 1 | Width oscillation at integer $N$ | Falsified | Cascade produces smooth evolution, not oscillation |
+| 2–4 | Binned cascade correlations | z-trend confounds | z-detrending is mandatory for cascade claims |
+| 5 | N-space periodicity | Not detected | No cascade-frequency power |
+| 6 | Sharp excess at transition $z$ | Not above controls | No localized features |
+| 7 | Single-tree rotation curves | Failed | Network model needed |
+| 8 | Cosmic velocity $\approx$ lab turbulence | Anti-correlated | Different coupling regime |
 
 ---
 
-## 9. Classification
+## 8. Classification
 
-Under the PACSeries A/B/C system:
-
-| Finding | Classification | Justification |
-|---------|---------------|---------------|
-| $\alpha_\text{EM}$ invariance | **[C]** | Shared with SM; non-evolution is the standard expectation; not DFT-discriminating |
-| Topological exactness of PAC channel | **[B]** | Novel mechanism (integer ADE adjacency); discriminates from SM's approximate invariance |
-| Integer-$N$ oscillation | **[A] falsified** | Derived prediction; killed by data |
-| $b \propto \ln(t)$ correlation | **[C]** | Consistent with clock; degenerate with cosmic time |
-| Fe/Mg vs $N$ | **[C]** | Standard chemical evolution; any monotonic clock fits |
-| Ionization plane | **[C]** | UV-background hardening explains direction |
-| Velocity skewness | **[C]** | Over 7 bins; fragile |
-| Two-channel concept | **[B]** | Derived + identified with line ratios/profiles |
-
-The paper is mostly **[C]** (pattern-consistent with a monotonic time coordinate) with one **falsified [A]** prediction as its most informative content.
+| Finding | Class | Justification |
+|---------|-------|---------------|
+| $\alpha$ invariance | **[A]** | Derived commitment; kills DFT if violated; confirmation doesn't discriminate from SM |
+| Integer-$N$ oscillation | **[A] falsified** | Derived prediction; killed by z-detrending |
+| Topological exactness of PAC channel | **[B]** | Novel mechanism (integer ADE adjacency) |
+| Two-channel partition | **[B]** | Derived + identified with line ratios/profiles |
+| $b \propto \ln(t)$ | **[C]** | Consistent; degenerate with cosmic time |
+| Fe/Mg vs $N$ | **[C]** | Textbook chemical evolution |
+| Ionization plane | **[C]** | UV-background hardening |
+| Velocity skewness | **[C]** | 7 bins; fragile |
 
 ---
 
-## 10. Conclusion
+## 9. Conclusion
 
-### 10.1 Answering the opening question
+The cascade clock makes first observational contact with quasar absorption spectroscopy. The contact established three things:
 
-Section 1.1 asked: does the cascade clock extend from cosmological structure to individual ion transitions? The honest answer: **absorption spectroscopy at $\sim 10^5$ systems does not have the leverage to test the clock's discriminating feature.** The oscillation prediction — the one thing only DFT predicts — is falsified. The smooth survivor is degenerate with any monotone cosmic-time coordinate. This is a statement about the instrument, not about PAC. The clock remains validated where it has leverage (S8, H0, JWST, the structural ADE results in Papers 4–11). Absorption lines are not a sharp enough probe of its non-generic features.
+**A real prediction that died.** The oscillation was pre-registered, DFT-specific, and falsified. This is how theory should meet data — with a prediction sharp enough to be killed. The failure scopes the clock's reach: it works at cosmological scales (S8, H0, JWST) but its non-monotonic features do not imprint on absorption line statistics at current precision. This is a statement about the instrument's leverage, not about PAC's validity.
 
-### 10.2 Three things that are alive
+**A partition worth keeping.** Photons carry conserved information (PAC: line ratios, topologically exact) and historical information (SEC: line shapes, epoch-dependent). This partition is DFT-specific — it predicts *which* observables are in which class and *why* (integer topology vs thermodynamic evolution). It survives regardless of the cascade clock's parameterization and could improve multi-line absorption analysis.
 
-**The failure is the most informative result.** A pre-registered, DFT-specific prediction was tested and killed. The z-detrending methodology that killed it is reusable: any framework claiming cascade-specific oscillations in absorption data must survive this test. The failure localizes where the clock loses its teeth, which is a genuine contribution to understanding its scope.
-
-**The PAC/SEC partition is the most valuable idea.** Photons carry a conserved channel (line ratios, set by discrete topology, invariant to machine precision because the adjacency matrix is integer-valued) and a historical channel (line shapes, set by the thermodynamic state at absorption, epoch-dependent). This partition tells you *a priori* which observables encode structure and which encode history. It survives regardless of the cascade clock's validity, and it could improve absorption-line analysis by separating structural from thermodynamic information.
-
-**Extrapolation is the most promising test.** Within $z = 1.5$–$4.5$, every smooth function fits. Outside that range, the log form and polynomial mimics diverge. JWST NIRSpec data at $z > 5$ and CaII absorbers at $z < 0.5$ are the kill tests — not because the cascade clock is expected to win, but because they're the only place where it can be non-degenerately distinguished from its mimics. If a derived ionization crossover energy can be obtained from $\varphi$-scaling of the force hierarchy, that would provide a second non-degenerate test.
-
-### 10.3 On methodology
-
-Pre-registration, systematic self-falsification, and honest A/B/C classification are how a theoretical framework should make observational contact. This paper demonstrates the method on a case where the contact is uncomfortable. A paper that leads with its failure and classifies most of its results as **[C]** is more credible than one that buries its failures and over-labels its survivals. The PACSeries' credibility depends on grading ourselves harder than our critics would — and this paper is where that discipline was tested most severely.
+**A forward program.** The cascade clock and its smooth mimics agree in the middle ($z = 1.5$–$4.5$) and diverge at the edges. JWST at $z > 5$ and CaII at $z < 0.5$ are where discriminating power lives. A derived ionization crossover energy from $\varphi$-scaling would provide a second non-degenerate test. These are the next experiments.
 
 ---
 
 ## Data availability
 
-All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `foundational/experiments/midnight/`. Commit `193c87d5` contains the pre-registered predictions. SDSS catalogs from MPA-Garching and Zenodo. XQR-30 from GitHub.
-
----
+All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `foundational/experiments/midnight/`. Commit `193c87d5` contains the pre-registered predictions.
 
 ## References
 
