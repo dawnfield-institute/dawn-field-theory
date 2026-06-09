@@ -5,7 +5,7 @@
 **Peter Groom, Dawn Field Institute**
 **PACSeries Paper 12**
 **Date**: June 2026
-**Version**: 0.2 (Draft)
+**Version**: 0.3 (Draft)
 
 ---
 
@@ -15,7 +15,7 @@ We make first observational contact between the DFT cascade clock and quasar abs
 
 **The prediction is falsified.** Z-detrending kills every oscillatory signal (EW spread: $p = 0.007 \to 0.87$; doublet coupling: $p = 0.006 \to 0.47$; CIV doublet ratio: $p \approx 0 \to 0.68$). The surviving smooth correlation ($b \propto \ln t_\text{lookback}$, $R^2 = 0.85$ over 443,000 CIV systems) is degenerate: $N(z)$ is a monotone reparameterization of lookback time, so any observable that evolves monotonically with cosmic time will correlate with it. A quadratic in $z$ fits better ($R^2 = 0.86$) with one more parameter.
 
-We use the falsification to localize where the cascade clock can and cannot be tested. Interpolation within the well-sampled $z = 1.5$–$4.5$ range cannot discriminate — every smooth function fits. Discriminating power lives at the edges: $z > 5$ (JWST NIRSpec), $z < 0.5$ (CaII absorbers), and cross-observable shared normalization, where the same intercept $a = 1.360$ must predict multiple independent absorption observables simultaneously without per-observable refitting.
+We use the falsification to localize where the cascade clock can and cannot be tested. Interpolation within the well-sampled $z = 1.5$–$4.5$ range cannot discriminate — every smooth function fits. A cross-observable shared-normalization test (CIV $b$, MgII FWHM, Fe/Mg ratio) also fails to discriminate: the observables respond in opposite directions to the same time coordinate, consistent with both cascade redistribution and UV-background evolution. Discriminating power lives at the edges: $z > 5$ (JWST NIRSpec) and $z < 0.5$ (CaII absorbers), where the log form and polynomial mimics diverge.
 
 The paper's genuine contribution is conceptual: DFT predicts photons carry two channels — a conserved channel (PAC: line ratios, invariant) and a historical channel (SEC: line widths/shapes, epoch-dependent). This two-channel structure survives regardless of whether the cascade clock parameterizes the historical channel better than a generic smooth function. The methodology — pre-registration, derivation classification, and systematic self-falsification — is offered as a model for how theoretical frameworks should make observational contact.
 
@@ -139,9 +139,11 @@ Eight ionic species in XQR-30 show low-ionization species weakening and high-ion
 
 ### 6.1 PAC channel (conserved)
 
-DFT predicts that spectral line **ratios** — energy-level spacings determined by discrete graph topology (ADE classification) — are epoch-invariant. The ADE graph adjacency matrix is integer-valued and cannot evolve continuously. A-8 line ratios match hydrogen to 2.5% and are identical at all redshifts by construction. This is the PAC channel: structural information that the photon preserves exactly.
+The novel claim is not that line ratios are invariant (the Standard Model predicts this too — atomic structure doesn't evolve) nor that $\alpha$ doesn't drift (the SM expectation is a constant $\alpha$; Webb's dipole is contested and mostly unreproduced). The novel claim is the **partition itself**: DFT tells you *a priori* which observables belong to the conserved class and which to the historical class, and the conserved class is invariant to a precision set by topology — exactly integer ADE adjacency, not approximately.
 
-The fine structure constant $\alpha_\text{EM} = 2/(3\varphi F_{10}) \cdot (1 - F_{10}/(4\pi F_7^2))$ is derived, not free. Every component is either a Fibonacci number (integer) or $\varphi$ (unique fixed point of $x^2 = x + 1$). No parameter can drift. This is a strong, falsifiable prediction (**[A]**) against the Webb et al. spatial dipole claim ($\Delta\alpha/\alpha \sim 10^{-5}$).
+Spectral line ratios are determined by discrete graph topology (ADE classification). The adjacency matrix is integer-valued. It cannot evolve continuously. This topological exactness — conserved to machine precision because the underlying object is a graph with integer entries — is the DFT-specific prediction. The Standard Model also predicts invariant ratios, but without the topological mechanism; DFT predicts *why* they're invariant and *how precisely* (exactly, not approximately).
+
+The derivation of $\alpha_\text{EM} = 2/(3\varphi F_{10}) \cdot (1 - F_{10}/(4\pi F_7^2))$ to 5.7 ppm is Paper 4's result (**[A]/[B]** there, not here). The non-evolution of $\alpha$ is shared with the SM and is not a DFT-discriminating test — confirming it would not favor DFT over the standard expectation.
 
 ### 6.2 SEC channel (historical)
 
@@ -168,16 +170,17 @@ Within the well-sampled $z = 1.5$–$4.5$ range, every smooth function fits. But
 
 **Prediction**: the cascade clock and its polynomial mimics diverge outside $z = 1.5$–$4.5$. That is the kill test, and it requires data we don't yet have in sufficient quantity.
 
-### 7.2 Cross-observable shared normalization
+### 7.2 Cross-observable shared normalization (performed)
 
-The intercept $a = 1.360$ was fixed from S8/H0/JWST data. A generic smooth function refits per observable. If the same intercept $a$ — with only a free per-observable amplitude — simultaneously predicts:
+We tested whether the three absorption observables share a common shape when plotted against $N(z)$, with only a free amplitude and offset per observable. If a single universal shape captures CIV $b$, MgII FWHM, and Fe/Mg ratio simultaneously, that would break the degeneracy — a generic polynomial refits per observable and has no reason to produce a shared shape.
 
-- CIV $b$-parameter evolution
-- Fe/Mg ratio evolution
-- Ionization crossover energy
-- MgII FWHM evolution
+**The test fails.** The observables do not share a shape. CIV $b$ increases with $N$ (slope $+92$ km/s per level), MgII FWHM decreases (slope $-2.6$), Fe/Mg decreases (slope $-0.04$). CIV and Fe/Mg are anti-correlated ($r = -0.63$, $p = 0.003$). The three responses to the same time coordinate go in different directions.
 
-...then the shared zero-point breaks the degeneracy. A generic polynomial has no reason to share an intercept across observables. The cascade clock does (same $a$, same slope, different amplitude). This test has not been performed and is the strongest available move.
+The anti-correlation is the ionization redistribution plane (§5.3) in another form: high-ionization strengthens while low-ionization weakens. The shapes are complementary, not shared. This is consistent with PAC conservation (what one gains, the other loses), but it does not discriminate from UV-background hardening, which also produces complementary ionization evolution.
+
+The 99.9th percentile against shuffled controls means the three curves together are more structured than random in $N$-space — but this is just confirming that each observable really evolves with cosmic time, which the degeneracy warning (§1.3) already noted is expected.
+
+**Verdict**: the cross-observable test does not break the degeneracy. **[C]**.
 
 ### 7.3 A predicted crossover energy
 
@@ -206,7 +209,8 @@ Under the PACSeries A/B/C system:
 
 | Finding | Classification | Justification |
 |---------|---------------|---------------|
-| $\alpha_\text{EM}$ invariance | **[A]** | Derived from PAC; no identification step; genuinely falsifiable |
+| $\alpha_\text{EM}$ invariance | **[C]** | Shared with SM; non-evolution is the standard expectation; not DFT-discriminating |
+| Topological exactness of PAC channel | **[B]** | Novel mechanism (integer ADE adjacency); discriminates from SM's approximate invariance |
 | Integer-$N$ oscillation | **[A] falsified** | Derived prediction; killed by data |
 | $b \propto \ln(t)$ correlation | **[C]** | Consistent with clock; degenerate with cosmic time |
 | Fe/Mg vs $N$ | **[C]** | Standard chemical evolution; any monotonic clock fits |
@@ -220,11 +224,21 @@ The paper is mostly **[C]** (pattern-consistent with a monotonic time coordinate
 
 ## 10. Conclusion
 
-The cascade clock makes first observational contact with quasar absorption spectroscopy, and the contact is mixed. The pre-registered, DFT-specific prediction (integer-$N$ oscillation) is falsified. The smooth survivor is degenerate with generic cosmic-time evolution. The two-channel concept (PAC-conserved ratios + SEC-historical profiles) is the genuine theoretical contribution, and it does not depend on the cascade clock being the correct parameterization.
+### 10.1 Answering the opening question
 
-Three forward tests could break the degeneracy: (1) extrapolation to $z > 5$ and $z < 0.5$, where the log form and polynomial mimics diverge; (2) cross-observable shared normalization, where a single intercept must predict multiple independent observables; (3) a derived ionization crossover energy from $\varphi$-scaling.
+Section 1.1 asked: does the cascade clock extend from cosmological structure to individual ion transitions? The honest answer: **absorption spectroscopy at $\sim 10^5$ systems does not have the leverage to test the clock's discriminating feature.** The oscillation prediction — the one thing only DFT predicts — is falsified. The smooth survivor is degenerate with any monotone cosmic-time coordinate. This is a statement about the instrument, not about PAC. The clock remains validated where it has leverage (S8, H0, JWST, the structural ADE results in Papers 4–11). Absorption lines are not a sharp enough probe of its non-generic features.
 
-The most informative content of this paper is the failure. Pre-registration, systematic self-falsification, and honest classification are how a theoretical framework should make observational contact — especially when the contact is uncomfortable.
+### 10.2 Three things that are alive
+
+**The failure is the most informative result.** A pre-registered, DFT-specific prediction was tested and killed. The z-detrending methodology that killed it is reusable: any framework claiming cascade-specific oscillations in absorption data must survive this test. The failure localizes where the clock loses its teeth, which is a genuine contribution to understanding its scope.
+
+**The PAC/SEC partition is the most valuable idea.** Photons carry a conserved channel (line ratios, set by discrete topology, invariant to machine precision because the adjacency matrix is integer-valued) and a historical channel (line shapes, set by the thermodynamic state at absorption, epoch-dependent). This partition tells you *a priori* which observables encode structure and which encode history. It survives regardless of the cascade clock's validity, and it could improve absorption-line analysis by separating structural from thermodynamic information.
+
+**Extrapolation is the most promising test.** Within $z = 1.5$–$4.5$, every smooth function fits. Outside that range, the log form and polynomial mimics diverge. JWST NIRSpec data at $z > 5$ and CaII absorbers at $z < 0.5$ are the kill tests — not because the cascade clock is expected to win, but because they're the only place where it can be non-degenerately distinguished from its mimics. If a derived ionization crossover energy can be obtained from $\varphi$-scaling of the force hierarchy, that would provide a second non-degenerate test.
+
+### 10.3 On methodology
+
+Pre-registration, systematic self-falsification, and honest A/B/C classification are how a theoretical framework should make observational contact. This paper demonstrates the method on a case where the contact is uncomfortable. A paper that leads with its failure and classifies most of its results as **[C]** is more credible than one that buries its failures and over-labels its survivals. The PACSeries' credibility depends on grading ourselves harder than our critics would — and this paper is where that discipline was tested most severely.
 
 ---
 
