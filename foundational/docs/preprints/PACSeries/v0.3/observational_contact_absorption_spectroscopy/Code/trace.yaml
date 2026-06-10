@@ -117,7 +117,7 @@ data:
     experiment: exp_16
 
 pre_registration:
-  commit: "193c87d5"
+  commit: "193d1c8e"
   repository: "https://github.com/dawnfield-institute/dawn-field-theory"
   date: "2026-06-06"
   description: "Cascade width oscillation predictions registered before SDSS data examined"

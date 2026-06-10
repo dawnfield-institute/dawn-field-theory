@@ -35,4 +35,4 @@ Data/
 
 ## Pre-registration
 
-Predictions registered at commit `193c87d5` on GitHub before any observational data was examined (June 6, 2026).
+Predictions registered at commit `193d1c8e` on GitHub before any observational data was examined (June 6, 2026).

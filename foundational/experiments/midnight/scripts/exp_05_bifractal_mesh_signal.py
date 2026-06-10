@@ -22,7 +22,7 @@ Tests:
   T3: The correlation is specific to the cascade clock, not generic z-dependence
   T4: Transition vs trough populations are statistically distinguishable
 
-Predictions registered: commit 193c87d5 (2026-06-06), pushed to GitHub
+Predictions registered: commit 193d1c8e (2026-06-06), pushed to GitHub
 BEFORE any observational data was examined.
 
 Sources: exp_03/04, journals/2026-06-06_bifractal-mesh-photon-signal.md

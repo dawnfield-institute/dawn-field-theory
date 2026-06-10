@@ -45,7 +45,7 @@ All from the same cascade clock (a=1.360, slope=1/ln(phi)=2.0781), calibrated on
 
 3. **The coherence channel is real.** The doublet result (exp_06) is not about individual line properties — it's about the RELATIONSHIP between two measurements. The coupling strength between the 2796 and 2803 lines oscillates with the cascade clock. This is the "computing, not light bulb" idea made concrete: the relationship between photons carries information that individual photon measurements don't.
 
-4. **Predictions were pre-registered.** Commit `193c87d5` on GitHub, pushed BEFORE the FITS file was opened. The specific transition redshifts (z=0.302, 0.579, 1.416) were named before the data was examined. This is not post-hoc.
+4. **Predictions were pre-registered.** Commit `193d1c8e` on GitHub, pushed BEFORE the FITS file was opened. The specific transition redshifts (z=0.302, 0.579, 1.416) were named before the data was examined. This is not post-hoc.
 
 ## What the Failures Tell Us
 

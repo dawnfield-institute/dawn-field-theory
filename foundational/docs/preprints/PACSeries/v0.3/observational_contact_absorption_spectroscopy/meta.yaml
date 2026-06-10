@@ -28,7 +28,7 @@ data_sources:
   - SDSS DR12 CIV Catalog (445,765 systems)
   - XQR-30 Multi-Ion Catalog (5,764 components)
 pre_registration:
-  commit: "193c87d5"
+  commit: "193d1c8e"
   date: "2026-06-06"
   repository: "https://github.com/dawnfield-institute/dawn-field-theory"
 key_results:

@@ -11,7 +11,7 @@
 
 ## Abstract
 
-We make first observational contact between the DFT cascade clock and quasar absorption spectroscopy. The clock $N(z) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$, previously validated on three cosmological observables (S8, H0, JWST), generates one sharp, DFT-specific prediction for absorption lines: non-monotonic width oscillation at integer cascade levels, with named transition redshifts $z = 0.101, 0.171, 0.302, 0.579, 1.416$. This prediction was pre-registered on GitHub (commit `193c87d5`) before any observational data was examined.
+We make first observational contact between the DFT cascade clock and quasar absorption spectroscopy. The clock $N(z) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$, previously validated on three cosmological observables (S8, H0, JWST), generates one sharp, DFT-specific prediction for absorption lines: non-monotonic width oscillation at integer cascade levels, with named transition redshifts $z = 0.101, 0.171, 0.302, 0.579, 1.416$. This prediction was pre-registered on GitHub (commit `193d1c8e`) before any observational data was examined.
 
 The oscillation prediction is falsified. Z-detrending kills every oscillatory signal. The surviving smooth correlation — $b \propto \ln t_\text{lookback}$ at $R^2 = 0.85$ over 443,000 CIV systems — is consistent with the predicted logarithmic form but degenerate with generic cosmic-time evolution ($z^2$ achieves $R^2 = 0.86$ with one more parameter). Absorption spectroscopy in the well-sampled $z = 1.5$–$4.5$ range does not have the leverage to discriminate the cascade clock from its smooth mimics.
 
@@ -35,7 +35,7 @@ The question: does this same clock, with no additional parameters, predict the e
 
 ### 1.2 The discriminating prediction
 
-We derived a DFT-specific prediction: at integer cascade levels $N$, the PAC ledger is transitioning. Line widths should peak. At half-integer $N$, the ledger is settled. Line widths should narrow. This produces a non-monotonic oscillation with specific transition redshifts determined by the clock parameters. This prediction was registered on GitHub (commit `193c87d5`, pushed June 6, 2026) before any SDSS data was examined.
+We derived a DFT-specific prediction: at integer cascade levels $N$, the PAC ledger is transitioning. Line widths should peak. At half-integer $N$, the ledger is settled. Line widths should narrow. This produces a non-monotonic oscillation with specific transition redshifts determined by the clock parameters. This prediction was registered on GitHub (commit `193d1c8e`, pushed June 6, 2026) before any SDSS data was examined.
 
 ### 1.3 Degeneracy note
 
@@ -184,7 +184,7 @@ The cascade clock makes first observational contact with quasar absorption spect
 
 ## Data availability
 
-All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `foundational/experiments/midnight/`. Commit `193c87d5` contains the pre-registered predictions.
+All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `foundational/experiments/midnight/`. Commit `193d1c8e` contains the pre-registered predictions.
 
 ## References
 

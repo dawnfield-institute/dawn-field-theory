@@ -100,6 +100,6 @@
 - Real data analyzed: 585,800 absorbers from 4 catalogs
 - Statistically significant signals surviving controls: 8
 - Honest failures documented: 8
-- Predictions pre-registered on GitHub: Yes (commit 193c87d5)
+- Predictions pre-registered on GitHub: Yes (commit 193d1c8e)
 - Parameters tuned to absorption data: Zero
 - Cascade clock source: M9, calibrated on S8/Hubble/JWST (independent data)
