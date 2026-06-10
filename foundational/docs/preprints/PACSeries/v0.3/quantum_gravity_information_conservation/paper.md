@@ -3,7 +3,7 @@
 ### On deriving the Planck scale, Hawking radiation, and graviton properties from PAC/SEC without quantizing general relativity
 
 **Peter Groom, Dawn Field Institute**
-**PACSeries Paper 9**
+**PACSeries Paper 8**
 **Date**: May 2026
 **Version**: 1.0 (Draft)
 
@@ -46,7 +46,7 @@ This paper builds on the full DFT derivation chain. We use results from:
 - **Paper 4** (Standard Model): Fibonacci depth structure of fundamental couplings
 - **Paper 5** (Classical Physics): SEC wave equation and $D = 3$ from MED
 - **Paper 7** (Symmetry/Mediation): Self-applied symmetry as generative primitive, spectral confinement
-- **Paper 8** (Cosmology): Cascade clock, S8 resolution, BSM predictions
+- **Paper 9** (Cosmology): Cascade clock, S8 resolution, BSM predictions
 
 Key constants (all derived, not fitted):
 
@@ -324,7 +324,7 @@ This is honest: the prediction is real (cascade density creates dispersion) but 
 
 ### 11.2 DESI sub-leading corrections
 
-Quantum gravity corrections to the cascade clock (Paper 8) are negligible at observable redshifts. At $z = 0.35$, the QG correction to S8 is $\sim 10^{-60}$ — trivially stable. The DESI $w_a$ tension ($-0.15$ predicted vs $-0.75$ measured) requires physics beyond sub-leading QG corrections.
+Quantum gravity corrections to the cascade clock (Paper 9) are negligible at observable redshifts. At $z = 0.35$, the QG correction to S8 is $\sim 10^{-60}$ — trivially stable. The DESI $w_a$ tension ($-0.15$ predicted vs $-0.75$ measured) requires physics beyond sub-leading QG corrections.
 
 ### 11.3 Minimum black hole mass
 
@@ -422,7 +422,7 @@ Prediction types: P = genuine prediction, D = postdiction (matches known result 
 
 **M12** (Topology Change): M11's cascade saturation prevents singularities but does not address what happens when two saturated regions merge or split. Topology change requires a non-perturbative extension.
 
-**Cosmology**: The cascade clock (Paper 8) operates at redshifts where QG corrections are negligible ($\sim 10^{-60}$). This confirms that M9's S8 resolution and Hubble prediction are robust against QG modifications.
+**Cosmology**: The cascade clock (Paper 9) operates at redshifts where QG corrections are negligible ($\sim 10^{-60}$). This confirms that M9's S8 resolution and Hubble prediction are robust against QG modifications.
 
 ---
 
@@ -453,7 +453,7 @@ What is established: the Planck scale, Hawking radiation, and graviton propertie
 9. Groom, P. (2026c). Standard Model Parameters from Fibonacci Arithmetic. PACSeries Paper 4. Dawn Field Institute.
 10. Groom, P. (2026d). Classical Physics from Information Geometry. PACSeries Paper 5. Dawn Field Institute.
 11. Groom, P. (2026e). The Symmetry Primitive and Scoped Mediation. PACSeries Paper 7. Dawn Field Institute.
-12. Groom, P. (2026f). Cosmological Predictions and the Cascade Clock. PACSeries Paper 8. Dawn Field Institute.
+12. Groom, P. (2026f). Cosmological Predictions and the Cascade Clock. PACSeries Paper 9. Dawn Field Institute.
 13. Abbott, B. P. et al. (2017). GW170817: Observation of gravitational waves from a binary neutron star inspiral. *Physical Review Letters*, 119(16), 161101.
 14. DESI Collaboration (2024). DESI 2024 VI: Cosmological constraints from the measurements of baryon acoustic oscillations. arXiv:2404.03002.
 

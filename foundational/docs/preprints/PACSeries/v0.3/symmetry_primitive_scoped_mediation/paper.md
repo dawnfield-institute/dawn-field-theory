@@ -257,7 +257,7 @@ The transfer matrix $\xi/P$ converges to a stable basin (CV $< 1$). But converge
 
 ### 12.3 Neutrinos complete PAC
 
-The neutrino sector provides the missing $1/5$ of the charged-lepton entanglement structure (M6 exp_06). The combined Bell parameter (charged leptons + neutrinos) recovers the Tsirelson bound $S = 2\sqrt{2}$ exactly. The uniform Fibonacci spacing model captures the hierarchy ordering and bounds but requires PMNS mixing correction for precision — improved from 44% to 17% error in M8 (Paper 8).
+The neutrino sector provides the missing $1/5$ of the charged-lepton entanglement structure (M6 exp_06). The combined Bell parameter (charged leptons + neutrinos) recovers the Tsirelson bound $S = 2\sqrt{2}$ exactly. The uniform Fibonacci spacing model captures the hierarchy ordering and bounds but requires PMNS mixing correction for precision — improved from 44% to 17% error in M8 (Paper 9).
 
 ---
 
@@ -272,7 +272,7 @@ The cyclotomic polynomial $\Phi_3(F_6) = F_6^2 + F_6 + 1 = 73$ is the unique $\P
 - **Self-interaction**: $\sigma/m < 10^{-20}$ cm$^2$/g (well below Bullet Cluster bound)
 - **Production**: Non-thermal (freeze-in), thermal excluded by $10^{18}\times$
 
-This prediction is refined and extended in Paper 8, where the mass converges to 6.44 keV from two independent routes.
+This prediction is refined and extended in Paper 9, where the mass converges to 6.44 keV from two independent routes.
 
 ---
 
@@ -310,9 +310,9 @@ The uniform Fibonacci spacing model gives the correct hierarchy ordering but 44%
 
 ## 16. What this paper does not do
 
-1. **Derive $\gamma$ from first principles.** The counting cost is $\gamma$ because harmonic sums converge to it. But *why* the counting operation is harmonic (rather than some other sum) is not derived. M11 (Paper 9) addresses this: harmonic counting is the unique cost structure for levels with $1/k$ individual cost.
+1. **Derive $\gamma$ from first principles.** The counting cost is $\gamma$ because harmonic sums converge to it. But *why* the counting operation is harmonic (rather than some other sum) is not derived. M11 (Paper 8) addresses this: harmonic counting is the unique cost structure for levels with $1/k$ individual cost.
 
-2. **Explain why $b = 2$.** Nature selects binary splitting. Paper 1's MAR update shows $b = 2$ is the only integer with $\xi_\text{floor} > 0$, and Paper 9 shows $\varphi$ (the $b = 2$ constant) is uniquely selected by gravity-time duality. But a deeper derivation of "why binary" remains open.
+2. **Explain why $b = 2$.** Nature selects binary splitting. Paper 1's MAR update shows $b = 2$ is the only integer with $\xi_\text{floor} > 0$, and Paper 8 shows $\varphi$ (the $b = 2$ constant) is uniquely selected by gravity-time duality. But a deeper derivation of "why binary" remains open.
 
 3. **Fix the RBF memory term.** The failure of all four activity-based memory models suggests a fundamental reformulation is needed. The correct definition of memory in DFT remains an open research question.
 
@@ -336,9 +336,9 @@ The uniform Fibonacci spacing model gives the correct hierarchy ordering but 44%
 
 ### 17.2 Forward connections
 
-**Paper 8** (Cosmology): The dark sector prediction (depth 73), cascade hierarchy, and dissipation rates from scoped mediation generate the cosmological predictions of Paper 8.
+**Paper 9** (Cosmology): The dark sector prediction (depth 73), cascade hierarchy, and dissipation rates from scoped mediation generate the cosmological predictions of Paper 9.
 
-**Paper 9** (Quantum Gravity): The response-time framework (gravity at depth 183) extends scoped mediation to the Planck scale. The derivation chain from self-applied symmetry (M10) through spectral confinement provides the formal foundation.
+**Paper 8** (Quantum Gravity): The response-time framework (gravity at depth 183) extends scoped mediation to the Planck scale. The derivation chain from self-applied symmetry (M10) through spectral confinement provides the formal foundation.
 
 ---
 
@@ -363,8 +363,8 @@ The result is a framework where forces, constants, and dimensionality are not fr
 3. Groom, P. (2026c). Feigenbaum Constants from Fibonacci Arithmetic. PACSeries Paper 3. Dawn Field Institute.
 4. Groom, P. (2026d). Standard Model Parameters from Fibonacci Arithmetic. PACSeries Paper 4. Dawn Field Institute.
 5. Groom, P. (2026e). Classical Physics from Information Geometry. PACSeries Paper 5. Dawn Field Institute.
-6. Groom, P. (2026f). Cosmological Predictions and the Cascade Clock. PACSeries Paper 8. Dawn Field Institute.
-7. Groom, P. (2026g). Quantum Gravity from Information Conservation. PACSeries Paper 9. Dawn Field Institute.
+6. Groom, P. (2026f). Cosmological Predictions and the Cascade Clock. PACSeries Paper 9. Dawn Field Institute.
+7. Groom, P. (2026g). Quantum Gravity from Information Conservation. PACSeries Paper 8. Dawn Field Institute.
 
 ---
 

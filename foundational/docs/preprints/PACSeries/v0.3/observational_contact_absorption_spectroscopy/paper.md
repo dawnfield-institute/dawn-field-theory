@@ -5,7 +5,7 @@
 **Peter Groom, Dawn Field Institute**
 **PACSeries Paper 12**
 **Date**: June 2026
-**Version**: 0.4 (Draft)
+**Version**: 1.0 (Draft)
 
 ---
 
@@ -13,7 +13,7 @@
 
 We make first observational contact between the DFT cascade clock and quasar absorption spectroscopy. The clock $N(z) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$, previously validated on three cosmological observables (S8, H0, JWST), generates one sharp, DFT-specific prediction for absorption lines: non-monotonic width oscillation at integer cascade levels, with named transition redshifts $z = 0.101, 0.171, 0.302, 0.579, 1.416$. This prediction was pre-registered on GitHub (commit `193d1c8e`) before any observational data was examined.
 
-The oscillation prediction is falsified. Z-detrending kills every oscillatory signal. The surviving smooth correlation — $b \propto \ln t_\text{lookback}$ at $R^2 = 0.85$ over 443,000 CIV systems — is consistent with the predicted logarithmic form but degenerate with generic cosmic-time evolution ($z^2$ achieves $R^2 = 0.86$ with one more parameter). Absorption spectroscopy in the well-sampled $z = 1.5$–$4.5$ range does not have the leverage to discriminate the cascade clock from its smooth mimics.
+The oscillation prediction is falsified. Z-detrending kills every oscillatory signal. The surviving smooth correlation — $b \propto \ln t_\text{lookback}$ at $R^2 = 0.85$ over 443,000 CIV systems — is consistent with the predicted logarithmic form, with the $\varphi$-determined slope costing zero $R^2$ against the free fit, and it outperforms the standard halo-virial scaling, which collapses to $\alpha \approx 0$ when fit ($\Delta\text{BIC} = 44$). But it remains degenerate with generic cosmic-time evolution ($z^2$ achieves $R^2 = 0.86$ with one more parameter). Absorption spectroscopy in the well-sampled $z = 1.5$–$4.5$ range does not have the leverage to discriminate the cascade clock from its smooth mimics.
 
 The paper contributes three things. First, a pre-registered prediction that was real enough to die — the oscillation's falsification localizes where the clock loses its teeth and establishes a reusable z-detrending methodology. Second, a two-channel concept: DFT predicts photons carry a conserved channel (PAC: line ratios, invariant to machine precision via integer ADE topology) and a historical channel (SEC: line profiles, epoch-dependent). This partition survives regardless of the cascade clock's parameterization and offers a new separation of structural from thermodynamic information in multi-line spectroscopy. Third, a forward program: the cascade clock and its polynomial mimics diverge outside the fitted range, making $z > 5$ (JWST) and $z < 0.5$ (CaII) the discriminating tests.
 
@@ -25,7 +25,7 @@ The paper contributes three things. First, a pre-registered prediction that was 
 
 ### 1.1 What the cascade clock predicts
 
-The DFT cascade clock (Papers 8–9) derives from the PAC conservation axiom. The temporal function $N(t) = a + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$ was calibrated on three independent cosmological data points:
+The DFT cascade clock (Paper 9) derives from the PAC conservation axiom. The temporal function $N(t) = a + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$ was calibrated on three independent cosmological data points:
 
 - $S_8(z = 0.35) = 0.769$ vs $0.768$ observed ($3.22\sigma \to 0.07\sigma$)
 - $H_0$ ratio $= \varphi^{1/6}$ vs $1.0838$ observed ($0.076\%$)
@@ -76,20 +76,23 @@ The clock's non-monotonic feature does not imprint on absorption line statistics
 
 ### 4.1 CIV velocity tracks lookback time
 
-The CIV Doppler $b$-parameter correlates with $\ln(t_\text{lookback})$ at $R^2 = 0.85$ (98 bins, 443K systems). The data is consistent with the predicted logarithmic form.
+The CIV Doppler $b$-parameter (binned medians, 97 bins over $z = 1.5$–$4.5$, 443,642 systems) correlates with $\ln(t_\text{lookback})$ at $R^2 = 0.853$. The data is consistent with the predicted logarithmic form. A second observable from the same catalog — the CIV doublet equivalent-width ratio — shows the same logarithmic preference at lower amplitude ($R^2 = 0.51$ vs $0.45$ for linear $z$; exp_12). The two observables are not conflated in what follows: all model-comparison numbers refer to the $b$-parameter (exp_18).
+
+**The constraint costs nothing.** Fixing the slope to the $\varphi$-determined value $1/\ln\varphi = 2.0781$ — rather than fitting it — costs zero $R^2$: the constrained-to-free slope ratio is $1.000000$ at machine precision (exp_12 T2, exp_18). The data is exactly as consistent with $\varphi$-rate evolution as with the best free logarithmic fit. This is the strongest pro-clock statement the interpolation range supports, with the caveat of §4.2.
 
 ### 4.2 Degeneracy limits
 
-The fit does not test $\varphi$ specifically: $N(z)$ is an affine function of $\ln(t)$, so the free per-observable amplitude absorbs the $\varphi$-determined slope. Against the correct null — smooth functions of lookback time — the cascade clock ties or loses:
+The zero-cost result does not test $\varphi$ specifically: $N(z)$ is an affine function of $\ln(t)$, so the free per-observable amplitude absorbs the $\varphi$-determined slope. Against the correct null — smooth functions of cosmic time — the cascade clock beats the standard astrophysical model but does not uniquely win (exp_18; BIC = $n\ln(\text{SS}_\text{res}/n) + k\ln n$, lower is better):
 
-| Model | Parameters | $R^2$ |
-|-------|-----------|-------|
-| $z$ (linear) | 2 | 0.717 |
-| $\ln(t)$ / cascade clock | 2 | 0.851 |
-| $z^2$ (quadratic) | 3 | 0.862 |
-| $z^3$ (cubic) | 4 | 0.875 |
+| Model | Parameters | $R^2$ | BIC |
+|-------|-----------|-------|-----|
+| $z$ (linear) | 2 | 0.720 | 387.8 |
+| Halo virial $A + B(1+z)^\alpha$ | 3 | 0.780 | 368.8 |
+| $\ln(t)$ / cascade clock | 2 | 0.853 | 325.2 |
+| $z^2$ (quadratic) | 3 | 0.864 | 322.2 |
+| $z^3$ (cubic) | 4 | 0.877 | 317.1 |
 
-The logarithmic form captures most of the variance — significantly more than linear $z$ — but $z^2$ beats it with one more parameter. The data confirms that CIV velocity evolves smoothly with cosmic time, consistent with the cascade clock but not uniquely selected by it.
+Two readings, both honest. Against standard astrophysics the clock wins outright: the halo virial scaling — gas velocity tracking $(1+z)^{1/2}$ at fixed halo mass — collapses to $\alpha = 0.0003$ when fit, and trails the clock by $\Delta\text{BIC} = 44$ despite an extra parameter. Against generic smooth mimics the clock ties or loses: $z^2$ edges it by $\Delta\text{BIC} = 3$ with one more parameter, and the cubic by $8$ with two. The data confirms that CIV velocity evolves smoothly with cosmic time in a way standard halo physics does not capture — consistent with the cascade clock but not uniquely selected by it.
 
 ### 4.3 Supporting trends
 
@@ -102,6 +105,18 @@ Three additional trends are consistent with smooth cosmic-time evolution:
 **Ionization redistribution**: 8 ions in XQR-30 show low-ionization species weakening and high-ionization strengthening with $N$ (FeII $p = 0.000$, SiII $p = 0.001$, SiIV $p = 0.011$, CIV $p = 0.000$). This is consistent with UV-background hardening, the standard explanation for cosmic ionization evolution.
 
 All three are **[C]**: pattern-consistent with the cascade clock, also explained by standard astrophysics.
+
+### 4.4 Signals that survive detrending
+
+Three findings are immune to the z-detrending that killed the oscillation — not because they survived it, but because they are constructed so that a smooth z-trend cannot produce them:
+
+**Sightline-straddling pair coherence** (exp_08, panel C): inter-absorber correlations between systems on the same sightline that straddle a cascade transition redshift, compared against same-separation pairs that do not. 6,437 straddling vs 9,000 control pairs; Mann-Whitney $p = 1.8 \times 10^{-9}$, KS $p = 1.7 \times 10^{-10}$. A smooth trend affects both pair classes identically.
+
+**Narrow-window doublet coherence** (exp_08, panel D): doublet-ratio distribution shape inside narrow windows at transition redshifts versus troughs. 14,020 transition vs 10,235 trough systems; KS $p = 1.3 \times 10^{-5}$ (doublet ratio), $p = 7.5 \times 10^{-5}$ (width discrepancy). Within a narrow window the z-trend is locally constant.
+
+**Entropy gradients along sightlines** (exp_10 panel C, exp_11 follow-up): 557 of 1,620 multi-absorber sightlines (34%) show monotonic entropy ordering, roughly twice the random expectation.
+
+These are classified **[B]** at best and reported with deliberate caution: each appeared in a single experimental pass, none has been independently replicated, and the regularity experiments that followed (exp_15–17) tested other channels and did not retest them. They are the strongest candidates for cascade structure beyond smooth evolution — and the first targets for an adversarial replication pass before any of them is promoted to a claim.
 
 ---
 
@@ -153,6 +168,8 @@ The ionization redistribution crossover lies between AlIII (18.8 eV) and SiIV (3
 | 7 | Single-tree rotation curves | Failed | Network model needed |
 | 8 | Cosmic velocity $\approx$ lab turbulence | Anti-correlated | Different coupling regime |
 
+Two of these deserve a sentence beyond the table. Entry 7: modeling a galaxy halo as a single PAC tree fails to reproduce flat rotation curves — the cascade ledger of one tree does not carry enough structure, and any future attempt needs coupled trees (a network) rather than a deeper single cascade. Entry 8: laboratory turbulence velocity statistics *anti*-correlate with the cosmic velocity evolution rather than matching it, indicating the absorber gas sits in a different coupling regime than tabletop flows — the M2/M4 turbulence results do not transfer directly to cosmological gas.
+
 ---
 
 ## 8. Classification
@@ -164,9 +181,14 @@ The ionization redistribution crossover lies between AlIII (18.8 eV) and SiIV (3
 | Topological exactness of PAC channel | **[B]** | Novel mechanism (integer ADE adjacency) |
 | Two-channel partition | **[B]** | Derived + identified with line ratios/profiles |
 | $b \propto \ln(t)$ | **[C]** | Consistent; degenerate with cosmic time |
+| $\varphi$-slope zero cost | **[C]** | Exact consistency, but amplitude freedom absorbs the test |
+| Halo virial collapse ($\alpha \approx 0$) | **[B]** | Standard model fails where clock succeeds; clock not unique |
 | Fe/Mg vs $N$ | **[C]** | Textbook chemical evolution |
 | Ionization plane | **[C]** | UV-background hardening |
 | Velocity skewness | **[C]** | 7 bins; fragile |
+| Straddling-pair coherence | **[B]** | z-immune by construction; single pass, unreplicated |
+| Narrow-window doublet coherence | **[B]** | z-immune by construction; single pass, unreplicated |
+| Entropy gradients | **[C]** | Structural; needs null modeling and replication |
 
 ---
 

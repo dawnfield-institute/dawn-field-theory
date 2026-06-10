@@ -277,7 +277,7 @@ Approximately 40% of the M13 results are structural — they pass because comple
 Paper 10 depends on:
 - **Paper 1** (Erasure): PAC conservation as the axiom
 - **Paper 7** (Symmetry): Self-reference generates $\varphi$ and ADE
-- **Paper 9** (Quantum Gravity): Response-time framework for forces
+- **Paper 8** (Quantum Gravity): Response-time framework for forces
 
 Paper 10 enables:
 - **Paper 11** (Quantum Mechanics): Orbit Hilbert space on the same ADE graphs

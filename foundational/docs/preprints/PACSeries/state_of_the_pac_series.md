@@ -8,13 +8,13 @@ May 2026
 
 ## Abstract
 
-The PACSeries is an eleven-paper sequence that derives structural features of known physics from two information-theoretic axioms: PAC (Potential-Actualization Conservation) and SEC (Symbolic Entropy Collapse). The series spans thermodynamics, nonlinear dynamics, particle physics, cosmology, spacetime geometry, and quantum mechanics.
+The PACSeries is a twelve-paper sequence that derives structural features of known physics from two information-theoretic axioms: PAC (Potential-Actualization Conservation) and SEC (Symbolic Entropy Collapse). The series spans thermodynamics, nonlinear dynamics, particle physics, cosmology, spacetime geometry, quantum mechanics, and observational tests against astronomical survey data.
 
 The strongest results are structural, not numerical. From the ADE classification of simply-laced root systems — a theorem of mathematics — the framework derives the Lorentz group SO(3,1) via a single physical postulate (SEC complexification), the Minkowski metric signature (1,3) from the Killing form, and a uniqueness theorem: D_4 is the only ADE Dynkin diagram whose automorphism group is non-abelian, making it the unique source of non-commuting observables in the framework. Bell inequality violation is shown to require nontrivial graph automorphisms — a topology-dependent result with zero empirical input.
 
 Around these structural results, a pattern of Fibonacci expressions matches physical constants: the fine structure constant to 5.7 ppm, the Feigenbaum bifurcation ratio to 13 significant figures, the Koide lepton mass ratio to 0.5 ppm, and the weak mixing angle as 3/13 (exact). These numerical matches involve identification steps — choices guided by known physics — and this paper classifies each one explicitly as Type A (structural), Type B (identified), or Type C (pattern-matched).
 
-The framework has documented failures: positional quantum mechanics scores 1/4, rapidity composition has a discrete gap, the coherence limit is not universal across graph families. These failures cluster at the algebraic-to-continuum boundary — the framework produces algebraic structure cleanly (91-100%) and struggles with metric properties (25-85%).
+The framework has documented failures: positional quantum mechanics scores 1/4, rapidity composition has a discrete gap, the coherence limit is not universal across graph families. These failures cluster at the algebraic-to-continuum boundary — the framework produces algebraic structure cleanly (91-100%) and struggles with metric properties (25-85%). One prediction has already been killed by data: a pre-registered, DFT-specific line-width oscillation at integer cascade levels was falsified against 443,000 quasar absorption systems [Paper 12].
 
 Twenty-two falsifiable predictions are registered across particle physics, cosmology, and quantum foundations. The derivation classification, all experiment code, and all data are publicly available.
 
@@ -271,6 +271,7 @@ The bridge between these domains is the ADE classification itself — a theorem 
 | $A$-family oscillation | partial | $A_n$ complement spectra oscillate rather than converge; no monotonic limit | 10 |
 | Random graphs more constrained | 2/4 | At large rank, random graphs are MORE constrained than ADE — unexpected | 10 |
 | Cascade slope gap | partial | 8.9% residual gap between predicted and fitted slope (only 3 data points) | 9 |
+| Width oscillation at integer $N$ | falsified | Pre-registered, DFT-specific, killed by z-detrending across 443K systems — the clock's discrete features do not imprint on absorption lines | 12 |
 
 ### 4.3 Methodological Concerns
 
@@ -348,6 +349,7 @@ The bridge between these domains is the ADE classification itself — a theorem 
 | 9 | Cosmological Predictions | Cosmology | S8 resolved, cascade clock | A+B+C |
 | 10 | Connection, Identity, Spacetime | Relativity | Lorentz from ADE, $ds^2$ from Killing form | A |
 | 11 | QM from Graph Structure | Quantum foundations | $D_4$ theorem, Born rule, Bell from Aut | A+B |
+| 12 | First Observational Contact | Observational cosmology | Pre-registered oscillation falsified; PAC/SEC two-channel partition | A+B+C |
 
 ### Reproducibility
 
@@ -377,8 +379,8 @@ The theorems are checkable. The predictions are specific. The failures are docum
 
 Each paper in the PACSeries contains its own reference list. Cross-references use "Paper N, Section M" notation. The derivation classification for all results is available as `derivation_classification.md` in the same directory as this paper.
 
-**PACSeries v0.2** (Papers 1-6): Zenodo DOI [10.5281/zenodo.15783623](https://zenodo.org/records/15783623)
-**PACSeries v0.3** (Papers 7-11): In preparation.
+**PACSeries v0.2** (Papers 1-6): Zenodo DOI [10.5281/zenodo.18743674](https://zenodo.org/records/18743674)
+**PACSeries v0.3** (Papers 7-12): In preparation. (Series concept DOI: [10.5281/zenodo.15783623](https://zenodo.org/records/15783623))
 **Repository**: [github.com/dawnfield-institute/dawn-field-theory](https://github.com/dawnfield-institute/dawn-field-theory)
 
 ---

@@ -3,7 +3,7 @@
 ### On deriving the cosmological constant, resolving the S8 tension, and unifying three independent observables with a single temporal mechanism
 
 **Peter Groom, Dawn Field Institute**
-**PACSeries Paper 8**
+**PACSeries Paper 9**
 **Date**: May 2026
 **Version**: 1.0 (Draft)
 
@@ -397,7 +397,7 @@ At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs
 
 ### 15.2 Forward connections
 
-**Paper 9** (Quantum Gravity): The cascade clock is confirmed to be robust against QG corrections (which are $\sim 10^{-60}$ at observable redshifts). The response-time crossover extends the cascade framework to the Planck scale.
+**Paper 8** (Quantum Gravity): The cascade clock is confirmed to be robust against QG corrections (which are $\sim 10^{-60}$ at observable redshifts). The response-time crossover extends the cascade framework to the Planck scale.
 
 ---
 
