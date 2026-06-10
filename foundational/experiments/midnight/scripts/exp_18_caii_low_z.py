@@ -237,8 +237,9 @@ def load_caii():
                     return i
         return None
 
+    # W0a is the lambda-3934 rest EW column name in the VizieR table1 export
     iz = find_col(['zabs', 'z_abs', 'zAbs', 'z'])
-    iw = find_col(['W3934', 'EW3934', 'Wr3934', 'W(3934)', 'WK'])
+    iw = find_col(['W0a', 'W3934', 'EW3934', 'Wr3934', 'W(3934)', 'WK'])
     if iz is None or iw is None:
         print(f"  CaII columns not identified in header: {header}")
         return None

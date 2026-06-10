@@ -143,9 +143,11 @@ The novel claim is the partition itself: DFT tells you *a priori* which observab
 Within $z = 1.5$–$4.5$, every smooth function fits. Outside that range, $\ln(t)$ and polynomial mimics diverge:
 
 - At $z > 5$: the log form flattens while polynomials extrapolate. JWST NIRSpec data at $z = 5$–$7$ is the kill test.
-- At $z < 0.5$: the log form steepens. 435 SDSS CaII systems exist in this range.
+- At $z < 0.5$: the log form steepens sharply — $dN/dz = 12.4$ at $z = 0.15$ vs $2.9$ at $z = 0.5$, a $4.3\times$ gradient change that no CIV-trained polynomial reproduces.
 
-**Prediction**: the cascade clock's discriminating power lives at the edges of the current data, not in the middle.
+**The low-z test was performed (exp_18).** A discrimination test against the 435 SDSS CaII absorbers of Sardane et al. (2014) ($z = 0.03$–$1.34$, $\lambda 3934$ rest EW) was pre-registered — locked clock, binning rule, and $\Delta\text{BIC} = \pm 6$ decision thresholds — at commit `fbad01d1`, before the catalog was downloaded. The registered verdict is **inconclusive**: $\Delta\text{BIC}(\text{clock} - \text{best mimic}) = +0.3$ in both registered tests, far inside the thresholds. The informative part is *why*: every model fails — the best fit anywhere is a 4-parameter cubic at $R^2 = 0.16$, with all 2-parameter forms at $R^2 \approx 0.03$–$0.05$. CaII median EW carries essentially no redshift trend in this sample, consistent with the registered threat that CaII selects dusty sightlines whose statistics are local, not cosmological. The low-z edge cannot discriminate the clock with an EW observable at this sample size; a kinematic observable (Doppler $b$ at $z < 0.5$) is what the test needs.
+
+**Prediction**: the cascade clock's discriminating power lives at the edges of the current data, not in the middle. With the CaII EW channel exhausted, the burden rests on $z > 5$ (JWST) and low-z kinematics.
 
 ### 6.2 Cross-observable shared normalization (performed)
 
@@ -189,6 +191,7 @@ Two of these deserve a sentence beyond the table. Entry 7: modeling a galaxy hal
 | Straddling-pair coherence | **[B]** | z-immune by construction; single pass, unreplicated |
 | Narrow-window doublet coherence | **[B]** | z-immune by construction; single pass, unreplicated |
 | Entropy gradients | **[C]** | Structural; needs null modeling and replication |
+| CaII low-z discrimination | **[A] inconclusive** | Pre-registered (exp_18); no z-trend in CaII EW to discriminate on |
 
 ---
 
@@ -200,18 +203,19 @@ The cascade clock makes first observational contact with quasar absorption spect
 
 **A partition worth keeping.** Photons carry conserved information (PAC: line ratios, topologically exact) and historical information (SEC: line shapes, epoch-dependent). This partition is DFT-specific — it predicts *which* observables are in which class and *why* (integer topology vs thermodynamic evolution). It survives regardless of the cascade clock's parameterization and could improve multi-line absorption analysis.
 
-**A forward program.** The cascade clock and its smooth mimics agree in the middle ($z = 1.5$–$4.5$) and diverge at the edges. JWST at $z > 5$ and CaII at $z < 0.5$ are where discriminating power lives. A derived ionization crossover energy from $\varphi$-scaling would provide a second non-degenerate test. These are the next experiments.
+**A forward program, partly executed.** The cascade clock and its smooth mimics agree in the middle ($z = 1.5$–$4.5$) and diverge at the edges. The low-z edge has now been tested: the pre-registered CaII discrimination (exp_18, commit `fbad01d1`) returned inconclusive — not because the models tie on a real trend, but because CaII equivalent widths carry no usable redshift trend at this sample size. The discriminating burden now rests on JWST at $z > 5$ and on low-z *kinematic* observables. A derived ionization crossover energy from $\varphi$-scaling would provide a second non-degenerate test. These are the next experiments.
 
 ---
 
 ## Data availability
 
-All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `foundational/experiments/midnight/`. Commit `193d1c8e` contains the pre-registered predictions.
+All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `foundational/experiments/midnight/`. Commit `193d1c8e` contains the pre-registered oscillation predictions; commit `fbad01d1` contains the pre-registered CaII low-z discrimination test (exp_18).
 
 ## References
 
 - Anand, A. et al. (2021). SDSS DR16 MgII Absorber Catalog. MNRAS.
 - Monadi, R. et al. (2023). CIV Absorption Lines in SDSS DR12. Zenodo.
 - Davies, R. et al. (2023). XQR-30 Metal Absorber Catalog. MNRAS 521, 289.
+- Sardane, G.M., Rao, S.M., Turnshek, D.A. (2014). CaII absorbers in SDSS QSOs. MNRAS 444, 1747.
 - Groom, P. (2026). PACSeries Papers 1–11. Zenodo, DOI: 10.5281/zenodo.15783623.
 - Webb, J.K. et al. (2011). Spatial variation of the fine structure constant. PRL 107, 191101.
