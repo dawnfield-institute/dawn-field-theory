@@ -1,0 +1,32 @@
+schema_version: "2.0"
+name: milestone15
+title: "Milestone 15: The Representative Problem (DFT-Hodge Boundary)"
+description: >
+  Formalizes the framework's algebraic/continuum failure boundary as a class-vs-
+  representative (Hodge) split. Conjecture: every measurable invariant class has an
+  algebraic (PAC/ADE) representative; metric representatives are observer-contributed
+  frame data (M13 parallax). Re-poses the M13/M13.5/M14 continuum failures as
+  relational, class-level claims under the invariant-registration rule.
+status: active
+confidence: 0.35
+created: "2026-06-11"
+tags:
+  - milestone15
+  - hodge
+  - representative-problem
+  - class-vs-representative
+  - definitional-parallax
+  - invariant-registration
+  - affine-ADE
+  - holonomy
+  - curvature
+  - rapidity
+  - coherence-limit
+related_experiments:
+  - milestone13
+  - milestone14
+  - confluent_identity
+  - hodge_conjecture
+  - midnight
+core_dependencies:
+  - milestone13/core/identity_complement.py
