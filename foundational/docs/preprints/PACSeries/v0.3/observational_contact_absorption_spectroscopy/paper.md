@@ -153,9 +153,13 @@ Within $z = 1.5$–$4.5$, every smooth function fits. Outside that range, $\ln(t
 
 We tested whether CIV $b$, MgII FWHM, and Fe/Mg ratio share a common shape against $N(z)$. They do not: CIV increases (slope $+92$), MgII decreases ($-2.6$), Fe/Mg decreases ($-0.04$). The anti-correlation ($r = -0.63$ between CIV and Fe/Mg) is the ionization redistribution plane in another form. The shapes are complementary, not shared, and do not break the degeneracy.
 
-### 6.3 A predicted crossover energy
+### 6.3 A predicted crossover energy: derived, registered, first measurement attempted
 
-The ionization redistribution crossover lies between AlIII (18.8 eV) and SiIV (33.5 eV). If $\varphi$-scaling of the force hierarchy predicts a specific crossover energy, that would be DFT-specific — UV-background hardening does not predict the crossover location. This derivation has not been attempted.
+The ionization redistribution crossover lies between AlIII (18.8 eV) and SiIV (33.5 eV). UV-background hardening does not predict the crossover location; a derived value would be DFT-specific.
+
+The derivation now exists. The Milestone R energy-scale machinery (exp_24: EM-scale energies are $\alpha(d)^2 m_\text{mediator}$, validated by the Rydberg at 11.4 ppm) gives the ledger-severance cost as the full Coulomb energy $\alpha^2 m_e c^2$ = **one Hartree = 27.2 eV** — dead center of the observed bracket. The prediction, including the factor-of-2 argument (severance costs the full interaction energy, not the virial-halved binding energy), was registered at commit `d9c77a81` before measurement.
+
+The first measurement (exp_19, pre-registered metric: per-ion fractional EW slope vs $N(z)$ across seven ions in four catalogs) returned **inconclusive**: the coupling metric is not portable across surveys with different selection and EW regimes, and the cross-survey curve is non-monotone by construction. Within homogeneous data the law's structure appears: CaII coupling is consistent with zero ($\beta = +0.03$, CI95 $[-0.06, +0.10]$ — the settled-phase anchor, now with an error bar), the SDSS-only ordering rises monotonically (CaII $\to$ FeII $\to$ MgII $\to$ CIV), and XQR-30 alone reproduces the sign flip between 8.2 and 33.5 eV. Localizing the zero crossing — the actual test of 27.2 eV — requires intermediate-IP statistics (CII at 11.3 eV, AlIII at 18.8 eV) that current public catalogs do not provide at the registered quality floor. The Hartree prediction stands, untested, for that dataset.
 
 ---
 
@@ -192,6 +196,8 @@ Two of these deserve a sentence beyond the table. Entry 7: modeling a galaxy hal
 | Narrow-window doublet coherence | **[B]** | z-immune by construction; single pass, unreplicated |
 | Entropy gradients | **[C]** | Structural; needs null modeling and replication |
 | CaII low-z discrimination | **[A] inconclusive** | Pre-registered (exp_18); no z-trend in CaII EW to discriminate on |
+| Crossover at one Hartree (27.2 eV) | **[A] registered, untested** | Derived from M-R energy-scale machinery; registered `d9c77a81`; first measurement (exp_19) blocked by cross-survey incomparability |
+| CaII coupling = 0 | **[B]** | Measured with error bar (exp_19): CI95 contains zero, unique among seven ions |
 
 ---
 
