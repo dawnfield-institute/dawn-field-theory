@@ -1,0 +1,222 @@
+{
+  "experiment": "exp_01_rapidity_one_form",
+  "milestone": "M15",
+  "T1": {
+    "test": "T1",
+    "max_err": 0.0,
+    "PASS": true
+  },
+  "T2": {
+    "test": "T2",
+    "graphs": {
+      "A_8": {
+        "relabel_ok": true,
+        "class_ok": true,
+        "lemma_ok": true,
+        "n_pair_classes": 16
+      },
+      "D_6": {
+        "relabel_ok": true,
+        "class_ok": true,
+        "lemma_ok": true,
+        "n_pair_classes": 11
+      }
+    },
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3",
+    "rows": [
+      {
+        "n": 3,
+        "V": 4,
+        "deficit": 2.6666666666666674,
+        "angles": [
+          2.46191883468155,
+          2.46191883468155
+        ],
+        "det": 1.0000000000000007,
+        "min_eigengap": 1.414213562373095,
+        "relabel_ok": true
+      },
+      {
+        "n": 4,
+        "V": 5,
+        "deficit": 2.8094004499609317,
+        "angles": [
+          2.909480596061823,
+          2.909480596061823
+        ],
+        "det": 0.9999999999999996,
+        "min_eigengap": 1.2360679774997894,
+        "relabel_ok": true
+      },
+      {
+        "n": 5,
+        "V": 6,
+        "deficit": 2.82842712474619,
+        "angles": [
+          3.1415926535897927,
+          3.1415926535897927
+        ],
+        "det": 0.9999999999999993,
+        "min_eigengap": 0.9999999999999996,
+        "relabel_ok": true
+      },
+      {
+        "n": 6,
+        "V": 7,
+        "deficit": 2.8221058767112446,
+        "angles": [
+          3.00785465198867,
+          3.00785465198867
+        ],
+        "det": 1.0000000000000004,
+        "min_eigengap": 0.8019377358048374,
+        "relabel_ok": true
+      },
+      {
+        "n": 7,
+        "V": 8,
+        "deficit": 2.811691505270335,
+        "angles": [
+          2.923918047745542,
+          2.923918047745542
+        ],
+        "det": 1.000000000000001,
+        "min_eigengap": 0.6488466976429151,
+        "relabel_ok": true
+      },
+      {
+        "n": 8,
+        "V": 9,
+        "deficit": 2.801954457266447,
+        "angles": [
+          2.8677439663260116,
+          2.8677439663260116
+        ],
+        "det": 1.0000000000000009,
+        "min_eigengap": 0.5320888862379551,
+        "relabel_ok": true
+      },
+      {
+        "n": 9,
+        "V": 10,
+        "deficit": 2.7937881734218415,
+        "angles": [
+          2.8282647401840157,
+          2.8282647401840157
+        ],
+        "det": 0.9999999999999983,
+        "min_eigengap": 0.44246348416494774,
+        "relabel_ok": true
+      },
+      {
+        "n": 10,
+        "V": 11,
+        "deficit": 2.7871370904244444,
+        "angles": [
+          2.799436097465274,
+          2.799436097465274
+        ],
+        "det": 1.0000000000000007,
+        "min_eigengap": 0.3727855977717913,
+        "relabel_ok": true
+      },
+      {
+        "n": 11,
+        "V": 12,
+        "deficit": 2.7817466102930464,
+        "angles": [
+          2.7777283676421405,
+          2.7777283676421405
+        ],
+        "det": 1.000000000000001,
+        "min_eigengap": 0.3178372451957814,
+        "relabel_ok": true
+      },
+      {
+        "n": 12,
+        "V": 13,
+        "deficit": 2.777359917889807,
+        "angles": [
+          2.7609660370603937,
+          2.7609660370603937
+        ],
+        "det": 1.000000000000003,
+        "min_eigengap": 0.2738905549642163,
+        "relabel_ok": true
+      }
+    ],
+    "lead_angle_cv": 0.013496193685456548,
+    "k3_robustness": [
+      {
+        "n": 8,
+        "deficit": 0.2675810441384104,
+        "angles": [
+          0.0,
+          0.18949174791540965,
+          0.18949174791540965
+        ]
+      },
+      {
+        "n": 10,
+        "deficit": 0.5593515662244415,
+        "angles": [
+          0.0,
+          0.39814583458498753,
+          0.39814583458498753
+        ]
+      },
+      {
+        "n": 12,
+        "deficit": 0.7191228447255299,
+        "angles": [
+          0.0,
+          0.5141408069218558,
+          0.5141408069218558
+        ]
+      }
+    ],
+    "nonzero": true,
+    "invariant": true,
+    "stable": true,
+    "PASS": true
+  },
+  "T4": {
+    "test": "T4",
+    "per_size": [
+      {
+        "V": 7,
+        "ade_deficit": 2.8221058767112446,
+        "n_controls": 20,
+        "control_min": 3.0729073547303337e-16,
+        "control_max": 2.680688350547039,
+        "extremal": true,
+        "direction": "max"
+      },
+      {
+        "V": 9,
+        "ade_deficit": 2.801954457266447,
+        "n_controls": 20,
+        "control_min": 4.38089025755931e-16,
+        "control_max": 2.826153836335595,
+        "extremal": false,
+        "direction": "interior"
+      },
+      {
+        "V": 11,
+        "ade_deficit": 2.7871370904244444,
+        "n_controls": 20,
+        "control_min": 5.711798704516119e-16,
+        "control_max": 2.8282095574688655,
+        "extremal": false,
+        "direction": "interior"
+      }
+    ],
+    "extremal_fraction": 0.3333333333333333,
+    "PASS": false
+  },
+  "score": "3/4",
+  "verdict": "PARTIAL"
+}

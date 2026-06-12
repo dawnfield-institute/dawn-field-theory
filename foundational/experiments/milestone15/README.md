@@ -66,12 +66,40 @@ on the orbit quotient* — a class-level (cohomological) metric. This is not a d
 
 | # | Script | Re-poses | Status |
 |---|--------|----------|--------|
-| 01 | `exp_01_rapidity_one_form.py` | M13 exp_08 — arc vs chord; affine holonomy as first curvature invariant | registered |
-| 02 | `exp_02_coherence_per_scope.py` | M13.5 exp_15 — per-class limits and their ratios | registered |
-| 03 | `exp_03_representative_gauge.py` | M14 exp_06 — visibility under Aut-breaking gauge ε | registered (stretch) |
+| 01 | `exp_01_rapidity_one_form.py` | M13 exp_08 — arc vs chord; affine holonomy as first curvature invariant | **3/4** — curvature confirmed |
+| 02 | `exp_02_coherence_per_scope.py` | M13.5 exp_15 — per-class limits and their ratios | **0/3 KILLED** — boundary-dominated observable |
+| 03 | `exp_03_representative_gauge.py` | M14 exp_06 — visibility under Aut-breaking gauge ε | deferred (M14 null is static) |
+| 04 | `exp_04_holonomy_closed_form.py` | derivation-verification of θ(m) | **GATE PASS** — formula + theorems proven |
 
-Pre-registration: `journals/2026-06-11_m15-exp01-03-preregistration.md`. All claims
-relational per the invariant-registration rule.
+Pre-registration: `journals/2026-06-11_m15-exp01-03-preregistration.md`. Round-1 outcomes:
+`journals/2026-06-11_m15-round1-outcomes.md`. All claims relational per the
+invariant-registration rule.
+
+## Phase-1 gate (CLOSED — Phase 2 opens)
+
+The affine holonomy is **proven in closed form** (`journals/2026-06-12_holonomy_closed_form.md`,
+verified by exp_04):
+
+- θ(m) = m·θ_T(m) reproduces all ten round-1 measured angles exactly.
+- **C₆ = −I is a theorem** (θ(6) = π exactly): the ℤ₂ frame-inversion twist is structural,
+  not numerical.
+- cos θ(C₄) = −7/9 derived from first principles (matches the measured exact rational).
+- **Large-rank limit = 8/3 exactly** — the e candidate from the five-point extrapolation is
+  ruled out (derivation-first policy earning its keep).
+- Documented open threads (NOT gate blockers): the clean group-theoretic mechanism behind
+  θ(m) = m·θ_T (the edge transports carry mixed orientation — reflections, det −1 — so the
+  naive H = T^m is false; this reflection structure may be the edge-level face of the same
+  ℤ₂); general-k behavior; the 8/3 = F₆/F₄ coincidence (reported [D], not claimed — the
+  derivation is odd-harmonic, not Fibonacci).
+
+**Phase 2 opens** on the strength of the proven formula and the C₆ = −I twist:
+(a) ℤ₂ twist classification across cycle structures; (b) the field-equation hunt — does
+cascade ledger density source holonomy, and is the coupling φ-structured? Registered
+relationally when it begins.
+
+**The foundational kill-sentence (standing):** *if holonomy is dynamically inert, it is
+mathematics, not physics, and M15 caps at a reclassification.* Phase 2 exists to answer
+exactly this.
 
 ## Core machinery (reused, not reimplemented)
 
