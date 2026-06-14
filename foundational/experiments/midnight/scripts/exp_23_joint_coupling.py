@@ -325,7 +325,7 @@ def run():
         'registered': {
             'observable': 'c_i = slope(within-scope-centered logN vs N), per ion',
             'scope': 'XQR-30 SystemID (one absorber = one frame)',
-            'MIN_IONS': MIN_IONS, 'MIN_SYS': MIN_SYS, 'MIN_NSPAN': MIN_NSPAN,
+            'MIN_IONS': MIN_IONS, 'MIN_SYS': MIN_SYS, 'MIN_DSPAN': MIN_DSPAN,
         },
         'n_scopes': len(scopes),
         'couplings': coup,

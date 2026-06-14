@@ -1,0 +1,167 @@
+{
+  "experiment": "exp_23_joint_coupling",
+  "initiative": "midnight",
+  "form": "within-scope (local/relational) coupling",
+  "registered": {
+    "observable": "c_i = slope(within-scope-centered logN vs N), per ion",
+    "scope": "XQR-30 SystemID (one absorber = one frame)",
+    "MIN_IONS": 3,
+    "MIN_SYS": 15,
+    "MIN_DSPAN": 4
+  },
+  "n_scopes": 32,
+  "couplings": {
+    "MgII": {
+      "IP": 7.65,
+      "stage": 2,
+      "n": 32,
+      "n_span": 32,
+      "c": 1.1906384341198921,
+      "c_CI95": [
+        -0.8142980870045944,
+        3.010061155484154
+      ],
+      "excluded": false
+    },
+    "FeII": {
+      "IP": 7.87,
+      "stage": 2,
+      "n": 28,
+      "n_span": 28,
+      "c": -1.0128422873876946,
+      "c_CI95": [
+        -2.698235017979068,
+        0.1197574373955818
+      ],
+      "excluded": false
+    },
+    "CIV": {
+      "IP": 47.89,
+      "stage": 4,
+      "n": 30,
+      "n_span": 30,
+      "c": 1.4254429969038267,
+      "c_CI95": [
+        0.16190791396515586,
+        2.894207025010281
+      ],
+      "excluded": false
+    },
+    "AlIII": {
+      "IP": 18.83,
+      "stage": 3,
+      "n": 11,
+      "n_span": 11,
+      "excluded": true
+    },
+    "CaII": {
+      "IP": 6.11,
+      "stage": 2,
+      "n": 2,
+      "n_span": 2,
+      "excluded": true
+    },
+    "SiII": {
+      "IP": 8.15,
+      "stage": 2,
+      "n": 28,
+      "n_span": 28,
+      "c": -1.117717483304895,
+      "c_CI95": [
+        -3.5571895351957328,
+        1.6492965906754409
+      ],
+      "excluded": false
+    },
+    "AlII": {
+      "IP": 5.99,
+      "stage": 2,
+      "n": 24,
+      "n_span": 24,
+      "c": -2.7829832379609405,
+      "c_CI95": [
+        -4.687113434538872,
+        -0.7577171934817104
+      ],
+      "excluded": false
+    },
+    "SiIV": {
+      "IP": 33.49,
+      "stage": 4,
+      "n": 21,
+      "n_span": 21,
+      "c": -1.0354545752017976,
+      "c_CI95": [
+        -3.6584429128018905,
+        2.3402987828296107
+      ],
+      "excluded": false
+    },
+    "CII": {
+      "IP": 11.26,
+      "stage": 2,
+      "n": 23,
+      "n_span": 23,
+      "c": -1.060246102680599,
+      "c_CI95": [
+        -2.860470438646238,
+        0.419877727144821
+      ],
+      "excluded": false
+    },
+    "NV": {
+      "IP": 77.47,
+      "stage": 5,
+      "n": 8,
+      "n_span": 8,
+      "excluded": true
+    }
+  },
+  "R1_coupling_ordering": {
+    "PASS": false,
+    "killed": false,
+    "rho": 0.42857142857142866,
+    "p_one_sided": 0.168684155542912,
+    "n_ions": 7,
+    "ions": [
+      "AlII",
+      "MgII",
+      "FeII",
+      "SiII",
+      "CII",
+      "SiIV",
+      "CIV"
+    ]
+  },
+  "R2_R3_aggregate": {
+    "n_scopes": 32,
+    "R2_gradient": {
+      "rho": 0.3508064516129032,
+      "p": 0.04900182675884836
+    },
+    "R3_amplitude": {
+      "rho": -0.08504398826979472,
+      "p": 0.6435212500975562
+    }
+  },
+  "route_B": {
+    "a_attenuation": 0.3470010441502981,
+    "s_max": 4,
+    "ions": [
+      "MgII",
+      "FeII",
+      "CIV",
+      "SiII",
+      "AlII",
+      "SiIV",
+      "CII"
+    ],
+    "rho_A_obs": -0.25,
+    "p_A_obs_one": 1.0,
+    "rho_B_obs": 0.0,
+    "p_B_obs_one": 1.0,
+    "rho_AB": 0.7905694150420949,
+    "PASS": false
+  },
+  "verdict": "INCONCLUSIVE"
+}

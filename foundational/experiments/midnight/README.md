@@ -11,6 +11,9 @@
 - [2026-06-06 — Bifractal Mesh Photon Signal](journals/2026-06-06_bifractal-mesh-photon-signal.md)
 - [2026-06-06 — SDSS Observational Contact](journals/2026-06-06_sdss-observational-contact.md)
 - [2026-06-08 — PAC/SEC Separation in SDSS](journals/2026-06-08_pac-sec-separation-in-sdss.md)
+- [2026-06-13 — Maximal Coherence as the Connection Primitive (theory note)](journals/2026-06-13_maximal-coherence-connection-primitive.md)
+- [2026-06-13 — exp_23 Within-Scope Local Coupling Law: pre-registration](journals/2026-06-13_exp23-preregistration.md)
+- [2026-06-13 — exp_23 outcomes (INCONCLUSIVE, suggestive; global→local correction works)](journals/2026-06-13_exp23-outcomes.md)
 
 ---
 
