@@ -1,0 +1,132 @@
+{
+  "experiment": "exp_15_stress_barrier_gn",
+  "timestamp": "2026-05-28T09:30:12.175349",
+  "block": "C",
+  "thesis": "The Coulomb barrier analog is a STRESS barrier, not a relaxation barrier. Connections sever when ALL d edges are simultaneously OVERSTRESSED (edge flow > fixed threshold). Higher noise (SEC flux) -> larger fluctuations -> easier to overstress all d edges -> shorter FPT. This flips the GN sign: more kinetic energy -> faster severance.",
+  "test_results": {
+    "T1": {
+      "description": "Negative rho(noise, FPT) \u2014 more SEC flux = faster severance",
+      "stress_threshold": 0.008,
+      "noise_levels": [
+        0.005,
+        0.008,
+        0.012,
+        0.018,
+        0.025,
+        0.035,
+        0.05
+      ],
+      "median_fpts": [
+        12.0,
+        6.0,
+        3.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "spearman_rho": -0.982,
+      "gn_slope": 0.1141,
+      "gn_r2": 0.9775,
+      "PASS": true
+    },
+    "T2": {
+      "description": "Correct sign for both variables",
+      "n_points": 136,
+      "coeff_degree": 0.1476,
+      "coeff_noise": -13.9048,
+      "r2": 0.7044,
+      "rho_degree_fpt": 0.4245,
+      "rho_noise_fpt": -0.7829,
+      "PASS": true
+    },
+    "T3": {
+      "description": "R^2 > 0.5 for combined variable, positive slope",
+      "n_points": 32,
+      "gn_slope": 0.0312,
+      "gn_r2": 0.7866,
+      "degree_only_r2": 0.185,
+      "noise_only_r2": 0.5388,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Negative rho(noise, FPT) for majority",
+      "per_graph": [
+        {
+          "graph": "D_5",
+          "target": 2,
+          "degree": 3,
+          "rho_noise_fpt": -1.0,
+          "sign_correct": true,
+          "n_noise_levels": 4,
+          "fpts": [
+            5.0,
+            3.0,
+            2.0,
+            1.0
+          ]
+        },
+        {
+          "graph": "D_6",
+          "target": 3,
+          "degree": 3,
+          "rho_noise_fpt": -1.0,
+          "sign_correct": true,
+          "n_noise_levels": 4,
+          "fpts": [
+            6.0,
+            3.0,
+            2.0,
+            1.0
+          ]
+        },
+        {
+          "graph": "D_7",
+          "target": 4,
+          "degree": 3,
+          "rho_noise_fpt": -1.0,
+          "sign_correct": true,
+          "n_noise_levels": 4,
+          "fpts": [
+            5.0,
+            3.0,
+            2.0,
+            1.0
+          ]
+        },
+        {
+          "graph": "E_6",
+          "target": 2,
+          "degree": 3,
+          "rho_noise_fpt": -1.0,
+          "sign_correct": true,
+          "n_noise_levels": 4,
+          "fpts": [
+            5.0,
+            3.0,
+            2.0,
+            1.0
+          ]
+        },
+        {
+          "graph": "E_7",
+          "target": 2,
+          "degree": 3,
+          "rho_noise_fpt": -1.0,
+          "sign_correct": true,
+          "n_noise_levels": 4,
+          "fpts": [
+            4.5,
+            3.0,
+            2.0,
+            1.0
+          ]
+        }
+      ],
+      "correct_count": 5,
+      "total_graphs": 5,
+      "PASS": true
+    }
+  },
+  "overall_score": "4/4"
+}

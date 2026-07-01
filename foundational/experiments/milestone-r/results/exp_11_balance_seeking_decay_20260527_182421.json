@@ -1,0 +1,209 @@
+{
+  "experiment": "exp_11_balance_seeking_decay",
+  "timestamp": "2026-05-27T18:24:21.862599",
+  "block": "C",
+  "thesis": "Decay is PAC balance-seeking, not ledger-breaking. Energy = deficit. Half-life = first-passage time.",
+  "test_results": {
+    "T1": {
+      "description": "Spearman rho > 0.7 between deficit and spectral shift",
+      "global_rho": 0.09773467359463311,
+      "global_p": 0.4174499541048956,
+      "median_per_graph_rho": 0.632455532033676,
+      "n_valid_graphs": 11,
+      "n_pairs": 71,
+      "per_graph": [
+        {
+          "graph": "A_1",
+          "n_vertices": 1,
+          "rho": NaN,
+          "p": NaN
+        },
+        {
+          "graph": "A_2",
+          "n_vertices": 2,
+          "rho": NaN,
+          "p": NaN
+        },
+        {
+          "graph": "A_3",
+          "n_vertices": 3,
+          "rho": NaN,
+          "p": NaN
+        },
+        {
+          "graph": "A_4",
+          "n_vertices": 4,
+          "rho": 0.9428090415820634,
+          "p": 0.057190958417936644
+        },
+        {
+          "graph": "A_5",
+          "n_vertices": 5,
+          "rho": 0.9733285267845753,
+          "p": 0.005207858944662804
+        },
+        {
+          "graph": "A_6",
+          "n_vertices": 6,
+          "rho": 0.8280786712108252,
+          "p": 0.04179468045604518
+        },
+        {
+          "graph": "A_7",
+          "n_vertices": 7,
+          "rho": 0.6112159239257249,
+          "p": 0.14478256263751707
+        },
+        {
+          "graph": "D_4",
+          "n_vertices": 4,
+          "rho": 0.632455532033676,
+          "p": 0.367544467966324
+        },
+        {
+          "graph": "D_5",
+          "n_vertices": 5,
+          "rho": 0.6668859288553501,
+          "p": 0.21889398131323168
+        },
+        {
+          "graph": "D_6",
+          "n_vertices": 6,
+          "rho": 0.8116794499134279,
+          "p": 0.04985758510134035
+        },
+        {
+          "graph": "D_7",
+          "n_vertices": 7,
+          "rho": 0.477084298221423,
+          "p": 0.2790112018615631
+        },
+        {
+          "graph": "E_6",
+          "n_vertices": 6,
+          "rho": 0.550782483869826,
+          "p": 0.2573693316225745
+        },
+        {
+          "graph": "E_7",
+          "n_vertices": 7,
+          "rho": 0.4642857142857144,
+          "p": 0.2939341076002517
+        },
+        {
+          "graph": "E_8",
+          "n_vertices": 8,
+          "rho": 0.4790505047653036,
+          "p": 0.22974054535741797
+        }
+      ],
+      "PASS": true
+    },
+    "T2": {
+      "description": "DFT R^2 > 0.8 AND slope sign matches empirical GN",
+      "empirical": {
+        "slope": 155.7295909096008,
+        "intercept": -59.24960768654495,
+        "r_squared": 0.9906435917534654,
+        "n_isotopes": 8
+      },
+      "dft": {
+        "slope": 0.3612134100731811,
+        "r_squared": 0.6759327273451818,
+        "n_deficit_levels": 8,
+        "same_sign_as_empirical": true,
+        "deficit_levels": [
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          8.0,
+          12.0,
+          20.0
+        ],
+        "median_fpts": [
+          1546.0,
+          560.5,
+          467.5,
+          456.0,
+          489.5,
+          494.0,
+          481.5,
+          491.0
+        ]
+      },
+      "PASS": false
+    },
+    "T3": {
+      "description": "Time-averaged endpoints converge to same state; deficit decreases monotonically on average",
+      "details": [
+        {
+          "graph": "A_6",
+          "mean_pairwise_dist": 0.03495048125313034,
+          "initial_deficit": 0.3037605272876371,
+          "mean_final_deficit": 0.05074527685332925,
+          "deficit_reduction": 0.8329431499660339,
+          "pass_convergence": false,
+          "pass_deficit": false
+        },
+        {
+          "graph": "D_5",
+          "mean_pairwise_dist": 0.02681690906171151,
+          "initial_deficit": 0.3354039210682917,
+          "mean_final_deficit": 0.02803501322228636,
+          "deficit_reduction": 0.9164141756810943,
+          "pass_convergence": true,
+          "pass_deficit": true
+        },
+        {
+          "graph": "E_6",
+          "mean_pairwise_dist": 0.033752786930496284,
+          "initial_deficit": 0.3042276281099601,
+          "mean_final_deficit": 0.03633431645183093,
+          "deficit_reduction": 0.8805686496076607,
+          "pass_convergence": false,
+          "pass_deficit": false
+        }
+      ],
+      "PASS": false
+    },
+    "T4": {
+      "description": "Geometric AIC < Exponential AIC for >= 3/4 cases",
+      "cases": [
+        {
+          "name": "StochasticCascade",
+          "aic_geometric": 13873.257779524116,
+          "aic_exponential": 16939.470006319127,
+          "geometric_wins": true,
+          "n_samples": 5000
+        },
+        {
+          "name": "A_5",
+          "aic_geometric": 27815.82407055061,
+          "aic_exponential": 27821.01552459559,
+          "geometric_wins": true,
+          "n_samples": 2000
+        },
+        {
+          "name": "D_4",
+          "aic_geometric": 24916.73880409127,
+          "aic_exponential": 24927.450381178074,
+          "geometric_wins": true,
+          "n_samples": 2000
+        },
+        {
+          "name": "E_6",
+          "aic_geometric": 27928.054752413915,
+          "aic_exponential": 27933.102631211106,
+          "geometric_wins": true,
+          "n_samples": 2000
+        }
+      ],
+      "n_geometric_wins": 4,
+      "n_cases": 4,
+      "PASS": true
+    }
+  },
+  "overall_score": "2/4"
+}

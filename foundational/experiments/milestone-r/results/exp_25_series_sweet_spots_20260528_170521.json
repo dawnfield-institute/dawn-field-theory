@@ -1,0 +1,112 @@
+{
+  "experiment": "exp_25_series_sweet_spots",
+  "timestamp": "2026-05-28T17:05:21.945901",
+  "block": "D",
+  "thesis": "Each hydrogen series has a sweet spot rank where Laplacian inverse eigenvalues converge. Sweet spots are ordered by series index and predicted by convergence exponents.",
+  "test_results": {
+    "T1": {
+      "description": "n_sweet(m=1) < n_sweet(m=2) < n_sweet(m=3)",
+      "sweet_spots": {
+        "m=1": 5,
+        "m=2": 6,
+        "m=3": 8
+      },
+      "all_found": true,
+      "strictly_ordered": true,
+      "PASS": true
+    },
+    "T2": {
+      "description": "Alpha transition error < 3% at sweet spot for all 3 series",
+      "details": [
+        {
+          "series": "Lyman",
+          "m": 1,
+          "sweet_n": 5,
+          "alpha_error": 0.0041050020740240395,
+          "precise": true
+        },
+        {
+          "series": "Balmer",
+          "m": 2,
+          "sweet_n": 6,
+          "alpha_error": 0.012500000000000204,
+          "precise": true
+        },
+        {
+          "series": "Paschen",
+          "m": 3,
+          "sweet_n": 8,
+          "alpha_error": 0.011334167672751423,
+          "precise": true
+        }
+      ],
+      "PASS": true
+    },
+    "T3": {
+      "description": "R^2 > 0.8 for log(n_sweet) vs 1/p_m",
+      "exponents": {
+        "m=1": 2.9083840029679933,
+        "m=2": 3.0184953716405674,
+        "m=3": 3.1015794127100356
+      },
+      "sweet_spots": {
+        "m=1": 5,
+        "m=2": 6,
+        "m=3": 8
+      },
+      "r_squared": 0.9492304955866879,
+      "PASS": true
+    },
+    "T4": {
+      "description": "D_n departure ordered: Paschen > Balmer > Lyman for >= 3/4 sizes",
+      "test_sizes": [
+        8,
+        10,
+        12,
+        15
+      ],
+      "n_ordered": 3,
+      "n_tested": 4,
+      "details": [
+        {
+          "n": 8,
+          "departures": {
+            "m=1": 0.03417022944449666,
+            "m=2": 0.16689009867957055,
+            "m=3": 0.042011606146816885
+          },
+          "ordered": false
+        },
+        {
+          "n": 10,
+          "departures": {
+            "m=1": 0.015561716599620683,
+            "m=2": 0.1101283735062401,
+            "m=3": 0.30437392255760853
+          },
+          "ordered": true
+        },
+        {
+          "n": 12,
+          "departures": {
+            "m=1": 0.005535474257781316,
+            "m=2": 0.027594024227705943,
+            "m=3": 0.06130252884882508
+          },
+          "ordered": true
+        },
+        {
+          "n": 15,
+          "departures": {
+            "m=1": 0.00226484040372219,
+            "m=2": 0.009926227989606861,
+            "m=3": 0.03040510920556004
+          },
+          "ordered": true
+        }
+      ],
+      "PASS": true
+    }
+  },
+  "overall_score": "4/4"
+}

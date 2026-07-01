@@ -1,0 +1,206 @@
+{
+  "experiment": "exp_08_xray_equilibrium_shift",
+  "timestamp": "2026-05-27T17:01:22.390385",
+  "block": "C",
+  "test_results": {
+    "T1": {
+      "description": "Both Cu and Mo K-alpha within 0.3 of integer at depth 13",
+      "best_depth": 5,
+      "details": [
+        {
+          "line": "Cu K-alpha",
+          "energy_kev": 8.048,
+          "depth": 5,
+          "n_boundaries": 6.906985135894773e-24,
+          "nearest_int": 0,
+          "residual": 6.906985135894773e-24,
+          "pass": true
+        },
+        {
+          "line": "Mo K-alpha",
+          "energy_kev": 17.479,
+          "depth": 5,
+          "n_boundaries": 1.500089378607166e-23,
+          "nearest_int": 0,
+          "residual": 1.500089378607166e-23,
+          "pass": true
+        }
+      ],
+      "PASS": true
+    },
+    "T2": {
+      "description": "< 1% of samples in top 5% of energy range",
+      "n_samples": 50000,
+      "e_max": 0.08068334562287617,
+      "e_95_threshold": 0.07664917834173236,
+      "n_above_95": 4,
+      "frac_above": 8e-05,
+      "PASS": true
+    },
+    "T3": {
+      "description": "Shift cost at least 10% less than brute-force for X-ray generation",
+      "details": [
+        {
+          "delta": 0.05,
+          "shift_cost_mev": 1.1716751460876224e+18,
+          "thermal_cost_mev": 2.4802663678467396e+19,
+          "ratio": 21.168549799222724,
+          "savings_pct": 95.27601082981735,
+          "pass": true
+        },
+        {
+          "delta": 0.1,
+          "shift_cost_mev": 2.343350292175245e+18,
+          "thermal_cost_mev": 2.4802663678467396e+19,
+          "ratio": 10.584274899611362,
+          "savings_pct": 90.55202165963472,
+          "pass": true
+        },
+        {
+          "delta": 0.2,
+          "shift_cost_mev": 4.68670058435049e+18,
+          "thermal_cost_mev": 2.4802663678467396e+19,
+          "ratio": 5.292137449805681,
+          "savings_pct": 81.10404331926945,
+          "pass": true
+        },
+        {
+          "delta": 0.3,
+          "shift_cost_mev": 7.030050876525733e+18,
+          "thermal_cost_mev": 2.4802663678467396e+19,
+          "ratio": 3.5280916332037884,
+          "savings_pct": 71.65606497890418,
+          "pass": true
+        },
+        {
+          "delta": 0.5,
+          "shift_cost_mev": 1.1716751460876222e+19,
+          "thermal_cost_mev": 2.4802663678467396e+19,
+          "ratio": 2.1168549799222727,
+          "savings_pct": 52.760108298173634,
+          "pass": true
+        }
+      ],
+      "PASS": true
+    },
+    "T4": {
+      "description": "n_transitions = n_orbits*(n_orbits-1)/2 for all ADE",
+      "details": [
+        {
+          "graph": "A_1",
+          "n_orbits": 1,
+          "predicted_transitions": 0,
+          "actual_transitions": 0,
+          "match": true
+        },
+        {
+          "graph": "A_2",
+          "n_orbits": 1,
+          "predicted_transitions": 0,
+          "actual_transitions": 0,
+          "match": true
+        },
+        {
+          "graph": "A_3",
+          "n_orbits": 2,
+          "predicted_transitions": 1,
+          "actual_transitions": 1,
+          "match": true
+        },
+        {
+          "graph": "A_4",
+          "n_orbits": 2,
+          "predicted_transitions": 1,
+          "actual_transitions": 1,
+          "match": true
+        },
+        {
+          "graph": "A_5",
+          "n_orbits": 3,
+          "predicted_transitions": 3,
+          "actual_transitions": 1,
+          "match": false
+        },
+        {
+          "graph": "A_6",
+          "n_orbits": 3,
+          "predicted_transitions": 3,
+          "actual_transitions": 1,
+          "match": false
+        },
+        {
+          "graph": "A_7",
+          "n_orbits": 4,
+          "predicted_transitions": 6,
+          "actual_transitions": 1,
+          "match": false
+        },
+        {
+          "graph": "A_8",
+          "n_orbits": 4,
+          "predicted_transitions": 6,
+          "actual_transitions": 1,
+          "match": false
+        },
+        {
+          "graph": "D_4",
+          "n_orbits": 2,
+          "predicted_transitions": 1,
+          "actual_transitions": 1,
+          "match": true
+        },
+        {
+          "graph": "D_5",
+          "n_orbits": 4,
+          "predicted_transitions": 6,
+          "actual_transitions": 2,
+          "match": false
+        },
+        {
+          "graph": "D_6",
+          "n_orbits": 5,
+          "predicted_transitions": 10,
+          "actual_transitions": 2,
+          "match": false
+        },
+        {
+          "graph": "D_7",
+          "n_orbits": 6,
+          "predicted_transitions": 15,
+          "actual_transitions": 2,
+          "match": false
+        },
+        {
+          "graph": "D_8",
+          "n_orbits": 7,
+          "predicted_transitions": 21,
+          "actual_transitions": 2,
+          "match": false
+        },
+        {
+          "graph": "E_6",
+          "n_orbits": 4,
+          "predicted_transitions": 6,
+          "actual_transitions": 2,
+          "match": false
+        },
+        {
+          "graph": "E_7",
+          "n_orbits": 7,
+          "predicted_transitions": 21,
+          "actual_transitions": 2,
+          "match": false
+        },
+        {
+          "graph": "E_8",
+          "n_orbits": 8,
+          "predicted_transitions": 28,
+          "actual_transitions": 2,
+          "match": false
+        }
+      ],
+      "PASS": false
+    }
+  },
+  "overall_score": "3/4"
+}

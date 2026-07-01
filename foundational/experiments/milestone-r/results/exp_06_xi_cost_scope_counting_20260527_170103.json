@@ -1,0 +1,184 @@
+{
+  "experiment": "exp_06_xi_cost_scope_counting",
+  "timestamp": "2026-05-27T17:01:03.771662",
+  "block": "B",
+  "test_results": {
+    "T1": {
+      "description": ">= 6 of 8 alphas give n within 0.2 of integer at one depth",
+      "best_depth": 3,
+      "best_score": 8,
+      "details": [
+        {
+          "label": "U238->Th234",
+          "energy_mev": 4.27,
+          "n_boundaries": 1.3997586121096878e-21,
+          "nearest_int": 0,
+          "residual": 1.3997586121096878e-21,
+          "near_integer": true
+        },
+        {
+          "label": "U234->Th230",
+          "energy_mev": 4.784,
+          "n_boundaries": 1.56825414527699e-21,
+          "nearest_int": 0,
+          "residual": 1.56825414527699e-21,
+          "near_integer": true
+        },
+        {
+          "label": "Th230->Ra226",
+          "energy_mev": 4.871,
+          "n_boundaries": 1.5967738172333234e-21,
+          "nearest_int": 0,
+          "residual": 1.5967738172333234e-21,
+          "near_integer": true
+        },
+        {
+          "label": "Ra226->Rn222",
+          "energy_mev": 5.59,
+          "n_boundaries": 1.8324708762747436e-21,
+          "nearest_int": 0,
+          "residual": 1.8324708762747436e-21,
+          "near_integer": true
+        },
+        {
+          "label": "Rn222->Po218",
+          "energy_mev": 6.115,
+          "n_boundaries": 2.0045723449767546e-21,
+          "nearest_int": 0,
+          "residual": 2.0045723449767546e-21,
+          "near_integer": true
+        },
+        {
+          "label": "Po210->Pb206",
+          "energy_mev": 5.407,
+          "n_boundaries": 1.7724812214700427e-21,
+          "nearest_int": 0,
+          "residual": 1.7724812214700427e-21,
+          "near_integer": true
+        },
+        {
+          "label": "Bi212->Tl208",
+          "energy_mev": 7.883,
+          "n_boundaries": 2.5841445291008597e-21,
+          "nearest_int": 0,
+          "residual": 2.5841445291008597e-21,
+          "near_integer": true
+        },
+        {
+          "label": "Po212->Pb208",
+          "energy_mev": 8.954,
+          "n_boundaries": 2.9352315252529617e-21,
+          "nearest_int": 0,
+          "residual": 2.9352315252529617e-21,
+          "near_integer": true
+        }
+      ],
+      "PASS": true
+    },
+    "T2": {
+      "description": ">= 4 of 6 gamma energies integer at alpha depth",
+      "alpha_depth": 3,
+      "n_near_integer": 6,
+      "details": [
+        {
+          "energy_kev": 46.5,
+          "energy_mev": 0.0465,
+          "n_boundaries": 1.5243272942178102e-23,
+          "residual": 1.5243272942178102e-23,
+          "near_integer": true
+        },
+        {
+          "energy_kev": 63.3,
+          "energy_mev": 0.0633,
+          "n_boundaries": 2.0750519940642446e-23,
+          "residual": 2.0750519940642446e-23,
+          "near_integer": true
+        },
+        {
+          "energy_kev": 92.4,
+          "energy_mev": 0.09240000000000001,
+          "n_boundaries": 3.0289858491553906e-23,
+          "residual": 3.0289858491553906e-23,
+          "near_integer": true
+        },
+        {
+          "energy_kev": 186.2,
+          "energy_mev": 0.1862,
+          "n_boundaries": 6.103865423297984e-23,
+          "residual": 6.103865423297984e-23,
+          "near_integer": true
+        },
+        {
+          "energy_kev": 295.2,
+          "energy_mev": 0.2952,
+          "n_boundaries": 9.677019725873066e-23,
+          "residual": 9.677019725873066e-23,
+          "near_integer": true
+        },
+        {
+          "energy_kev": 351.9,
+          "energy_mev": 0.3519,
+          "n_boundaries": 1.1535715587854782e-22,
+          "residual": 1.1535715587854782e-22,
+          "near_integer": true
+        }
+      ],
+      "PASS": true
+    },
+    "T3": {
+      "description": "All 3 beta endpoints have fractional part > 0.2",
+      "depth": 3,
+      "details": [
+        {
+          "name": "C-14",
+          "energy_mev": 0.156,
+          "n_boundaries": 5.11387221285975e-23,
+          "fractional_part": 5.11387221285975e-23,
+          "non_integer": false
+        },
+        {
+          "name": "Tritium",
+          "energy_mev": 0.0186,
+          "n_boundaries": 6.09730917687124e-24,
+          "fractional_part": 6.09730917687124e-24,
+          "non_integer": false
+        },
+        {
+          "name": "Co-60",
+          "energy_mev": 0.3173,
+          "n_boundaries": 1.0401484956028198e-22,
+          "fractional_part": 1.0401484956028198e-22,
+          "non_integer": false
+        }
+      ],
+      "PASS": false
+    },
+    "T4": {
+      "description": "Spearman rank correlation = 1.0",
+      "depth": 3,
+      "energies": [
+        4.27,
+        4.784,
+        4.871,
+        5.59,
+        6.115,
+        5.407,
+        7.883,
+        8.954
+      ],
+      "n_boundaries": [
+        1.3997586121096878e-21,
+        1.56825414527699e-21,
+        1.5967738172333234e-21,
+        1.8324708762747436e-21,
+        2.0045723449767546e-21,
+        1.7724812214700427e-21,
+        2.5841445291008597e-21,
+        2.9352315252529617e-21
+      ],
+      "spearman_rho": 1.0,
+      "PASS": true
+    }
+  },
+  "overall_score": "3/4"
+}

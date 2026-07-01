@@ -1,0 +1,52 @@
+{
+  "experiment": "exp_22_branching_sweet_spot",
+  "timestamp": "2026-05-28T13:36:49.745270",
+  "block": "C",
+  "thesis": "The A_n->D_n/E_n deformation has an optimal branch weight w* where the graph best approximates hydrogen energy levels. w* compensates O(n^-4) discretization error via eigenvalue perturbation. Branch position (D at n-3, E at n-4) shifts the sweet spot.",
+  "test_results": {
+    "T1": {
+      "description": "w* exists for D_4..D_12, power law fit",
+      "sweet_spots": {
+        "4": {
+          "w_star": 0.052803388495777384,
+          "min_error": 1.1535674730769987e-05,
+          "base_error": 0.01161883329573196,
+          "improvement_pct": 99.90071572216284
+        }
+      },
+      "n_found": 1,
+      "power_law_p": 0.0,
+      "power_law_c": 0.0,
+      "r_squared": 0.0,
+      "PASS": false
+    },
+    "T2": {
+      "description": "Per-series improvement at w*",
+      "series_data": {},
+      "good_sizes": 0,
+      "total_testable": 0,
+      "PASS": false
+    },
+    "T3": {
+      "description": "E-family sweet spots",
+      "sweet_spots": {
+        "6": {
+          "w_star": 0.02729998719189103,
+          "min_error": 0.0011549132967458688,
+          "base_error": 0.0018363989579239298,
+          "improvement_pct": 37.10989152098455
+        }
+      },
+      "n_found": 1,
+      "PASS": false
+    },
+    "T4": {
+      "description": "D vs E branch position comparison",
+      "comparisons": [],
+      "direction": "insufficient data",
+      "consistent": false,
+      "PASS": false
+    }
+  },
+  "overall_score": "0/4"
+}

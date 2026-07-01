@@ -1,0 +1,163 @@
+{
+  "experiment": "exp_09_cross_milestone_compatibility",
+  "timestamp": "2026-05-27T17:01:27.515541",
+  "block": "D",
+  "test_results": {
+    "T1": {
+      "description": "PHI, LN_PHI, XI, GAMMA_EM match to 14 decimal places",
+      "details": [
+        {
+          "constant": "PHI",
+          "imported": 1.618033988749895,
+          "canonical": 1.618033988749895,
+          "error": 0.0,
+          "match": true
+        },
+        {
+          "constant": "LN_PHI",
+          "imported": 0.48121182505960347,
+          "canonical": 0.48121182505960347,
+          "error": 0.0,
+          "match": true
+        },
+        {
+          "constant": "GAMMA_EM",
+          "imported": 0.5772156649015329,
+          "canonical": 0.5772156649015329,
+          "error": 0.0,
+          "match": true
+        },
+        {
+          "constant": "XI_BALANCE",
+          "imported": 1.0584274899611363,
+          "canonical": 1.0584274899611363,
+          "error": 0.0,
+          "match": true
+        }
+      ],
+      "PASS": true
+    },
+    "T2": {
+      "description": "Xi-survival fraction consistent with attenuation base",
+      "xi_survival": 0.3470010441502981,
+      "inv_phi": 0.6180339887498948,
+      "inv_phi_sq": 0.3819660112501051,
+      "m6_base": 0.42,
+      "sqrt_survival": 0.5890679452748198,
+      "error_vs_m6": 0.402542726844809,
+      "PASS": true
+    },
+    "T3": {
+      "description": "vertex_orbits agrees with orbit_hilbert_basis for all ADE <= rank 8",
+      "details": [
+        {
+          "graph": "A_1",
+          "n_orbits_m13": 1,
+          "n_orbits_m14": 1,
+          "partition_match": true
+        },
+        {
+          "graph": "A_2",
+          "n_orbits_m13": 1,
+          "n_orbits_m14": 1,
+          "partition_match": true
+        },
+        {
+          "graph": "A_3",
+          "n_orbits_m13": 2,
+          "n_orbits_m14": 2,
+          "partition_match": true
+        },
+        {
+          "graph": "A_4",
+          "n_orbits_m13": 2,
+          "n_orbits_m14": 2,
+          "partition_match": true
+        },
+        {
+          "graph": "A_5",
+          "n_orbits_m13": 3,
+          "n_orbits_m14": 3,
+          "partition_match": true
+        },
+        {
+          "graph": "A_6",
+          "n_orbits_m13": 3,
+          "n_orbits_m14": 3,
+          "partition_match": true
+        },
+        {
+          "graph": "A_7",
+          "n_orbits_m13": 4,
+          "n_orbits_m14": 4,
+          "partition_match": true
+        },
+        {
+          "graph": "A_8",
+          "n_orbits_m13": 4,
+          "n_orbits_m14": 4,
+          "partition_match": true
+        },
+        {
+          "graph": "D_4",
+          "n_orbits_m13": 2,
+          "n_orbits_m14": 2,
+          "partition_match": true
+        },
+        {
+          "graph": "D_5",
+          "n_orbits_m13": 4,
+          "n_orbits_m14": 4,
+          "partition_match": true
+        },
+        {
+          "graph": "D_6",
+          "n_orbits_m13": 5,
+          "n_orbits_m14": 5,
+          "partition_match": true
+        },
+        {
+          "graph": "D_7",
+          "n_orbits_m13": 6,
+          "n_orbits_m14": 6,
+          "partition_match": true
+        },
+        {
+          "graph": "D_8",
+          "n_orbits_m13": 7,
+          "n_orbits_m14": 7,
+          "partition_match": true
+        },
+        {
+          "graph": "E_6",
+          "n_orbits_m13": 4,
+          "n_orbits_m14": 4,
+          "partition_match": true
+        },
+        {
+          "graph": "E_7",
+          "n_orbits_m13": 7,
+          "n_orbits_m14": 7,
+          "partition_match": true
+        },
+        {
+          "graph": "E_8",
+          "n_orbits_m13": 8,
+          "n_orbits_m14": 8,
+          "partition_match": true
+        }
+      ],
+      "PASS": true
+    },
+    "T4": {
+      "description": "Dark matter 6 keV and 3.2 keV give finite positive boundary counts",
+      "dark_depth": 73,
+      "n_boundaries_6kev": 8.373583223660993e-10,
+      "n_boundaries_3p2kev": 4.465911052619197e-10,
+      "both_positive": true,
+      "different_processes": false,
+      "PASS": false
+    }
+  },
+  "overall_score": "3/4"
+}

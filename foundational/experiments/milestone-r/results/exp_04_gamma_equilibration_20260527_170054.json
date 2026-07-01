@@ -1,0 +1,618 @@
+{
+  "experiment": "exp_04_gamma_equilibration",
+  "timestamp": "2026-05-27T17:00:54.410938",
+  "block": "B",
+  "test_results": {
+    "T1": {
+      "description": "Equilibration energy non-negative for all ADE graphs",
+      "n_tested": 87,
+      "negative_cases": [
+        {
+          "graph": "A_4",
+          "vertex": 0,
+          "energy": -0.058891517828191686,
+          "negative": true
+        },
+        {
+          "graph": "A_4",
+          "vertex": 3,
+          "energy": -0.058891517828191686,
+          "negative": true
+        },
+        {
+          "graph": "A_5",
+          "vertex": 0,
+          "energy": -0.0566330122651324,
+          "negative": true
+        },
+        {
+          "graph": "A_5",
+          "vertex": 1,
+          "energy": -0.04416863837114371,
+          "negative": true
+        },
+        {
+          "graph": "A_5",
+          "vertex": 3,
+          "energy": -0.04416863837114371,
+          "negative": true
+        },
+        {
+          "graph": "A_5",
+          "vertex": 4,
+          "energy": -0.0566330122651324,
+          "negative": true
+        },
+        {
+          "graph": "A_6",
+          "vertex": 0,
+          "energy": -0.04985675617422358,
+          "negative": true
+        },
+        {
+          "graph": "A_6",
+          "vertex": 1,
+          "energy": -0.045306409812105874,
+          "negative": true
+        },
+        {
+          "graph": "A_6",
+          "vertex": 2,
+          "energy": -0.03533491069691519,
+          "negative": true
+        },
+        {
+          "graph": "A_6",
+          "vertex": 3,
+          "energy": -0.03533491069691519,
+          "negative": true
+        },
+        {
+          "graph": "A_6",
+          "vertex": 4,
+          "energy": -0.045306409812105874,
+          "negative": true
+        },
+        {
+          "graph": "A_6",
+          "vertex": 5,
+          "energy": -0.04985675617422358,
+          "negative": true
+        },
+        {
+          "graph": "A_7",
+          "vertex": 0,
+          "energy": -0.043692120681965374,
+          "negative": true
+        },
+        {
+          "graph": "A_7",
+          "vertex": 1,
+          "energy": -0.04154729681185265,
+          "negative": true
+        },
+        {
+          "graph": "A_7",
+          "vertex": 2,
+          "energy": -0.03775534151008819,
+          "negative": true
+        },
+        {
+          "graph": "A_7",
+          "vertex": 3,
+          "energy": -0.058891517828191464,
+          "negative": true
+        },
+        {
+          "graph": "A_7",
+          "vertex": 4,
+          "energy": -0.03775534151008819,
+          "negative": true
+        },
+        {
+          "graph": "A_7",
+          "vertex": 5,
+          "energy": -0.04154729681185265,
+          "negative": true
+        },
+        {
+          "graph": "A_7",
+          "vertex": 6,
+          "energy": -0.043692120681965374,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 0,
+          "energy": -0.03862614973393419,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 1,
+          "energy": -0.0374503891559701,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 2,
+          "energy": -0.035611968695873575,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 3,
+          "energy": -0.05760094322072895,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 4,
+          "energy": -0.05760094322072873,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 5,
+          "energy": -0.035611968695873575,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 6,
+          "energy": -0.03745038915597032,
+          "negative": true
+        },
+        {
+          "graph": "A_8",
+          "vertex": 7,
+          "energy": -0.03862614973393419,
+          "negative": true
+        },
+        {
+          "graph": "D_4",
+          "vertex": 0,
+          "energy": -0.058891517828191686,
+          "negative": true
+        },
+        {
+          "graph": "D_4",
+          "vertex": 2,
+          "energy": -0.058891517828191686,
+          "negative": true
+        },
+        {
+          "graph": "D_4",
+          "vertex": 3,
+          "energy": -0.058891517828191686,
+          "negative": true
+        },
+        {
+          "graph": "D_5",
+          "vertex": 0,
+          "energy": -0.1438410362258904,
+          "negative": true
+        },
+        {
+          "graph": "D_5",
+          "vertex": 1,
+          "energy": -0.04416863837114371,
+          "negative": true
+        },
+        {
+          "graph": "D_5",
+          "vertex": 3,
+          "energy": -0.0566330122651324,
+          "negative": true
+        },
+        {
+          "graph": "D_5",
+          "vertex": 4,
+          "energy": -0.0566330122651324,
+          "negative": true
+        },
+        {
+          "graph": "D_6",
+          "vertex": 0,
+          "energy": -0.11526277414479158,
+          "negative": true
+        },
+        {
+          "graph": "D_6",
+          "vertex": 1,
+          "energy": -0.11507282898071236,
+          "negative": true
+        },
+        {
+          "graph": "D_6",
+          "vertex": 2,
+          "energy": -0.03533491069691541,
+          "negative": true
+        },
+        {
+          "graph": "D_6",
+          "vertex": 3,
+          "energy": -0.03533491069691519,
+          "negative": true
+        },
+        {
+          "graph": "D_6",
+          "vertex": 4,
+          "energy": -0.04985675617422358,
+          "negative": true
+        },
+        {
+          "graph": "D_6",
+          "vertex": 5,
+          "energy": -0.04985675617422358,
+          "negative": true
+        },
+        {
+          "graph": "D_7",
+          "vertex": 0,
+          "energy": -0.09601693485380314,
+          "negative": true
+        },
+        {
+          "graph": "D_7",
+          "vertex": 1,
+          "energy": -0.09605231178732643,
+          "negative": true
+        },
+        {
+          "graph": "D_7",
+          "vertex": 2,
+          "energy": -0.09589402415059323,
+          "negative": true
+        },
+        {
+          "graph": "D_7",
+          "vertex": 3,
+          "energy": -0.058891517828191464,
+          "negative": true
+        },
+        {
+          "graph": "D_7",
+          "vertex": 4,
+          "energy": -0.03775534151008819,
+          "negative": true
+        },
+        {
+          "graph": "D_7",
+          "vertex": 5,
+          "energy": -0.043692120681965374,
+          "negative": true
+        },
+        {
+          "graph": "D_7",
+          "vertex": 6,
+          "energy": -0.043692120681965374,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 0,
+          "energy": -0.08223011755434273,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 1,
+          "energy": -0.08230022987468844,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 2,
+          "energy": -0.08233055296056513,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 3,
+          "energy": -0.10743409976973362,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 4,
+          "energy": -0.05760094322072873,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 5,
+          "energy": -0.035611968695873575,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 6,
+          "energy": -0.03862614973393419,
+          "negative": true
+        },
+        {
+          "graph": "D_8",
+          "vertex": 7,
+          "energy": -0.03862614973393419,
+          "negative": true
+        },
+        {
+          "graph": "E_6",
+          "vertex": 0,
+          "energy": -0.1152627741447918,
+          "negative": true
+        },
+        {
+          "graph": "E_6",
+          "vertex": 1,
+          "energy": -0.045306409812105874,
+          "negative": true
+        },
+        {
+          "graph": "E_6",
+          "vertex": 3,
+          "energy": -0.045306409812105874,
+          "negative": true
+        },
+        {
+          "graph": "E_6",
+          "vertex": 4,
+          "energy": -0.11526277414479158,
+          "negative": true
+        },
+        {
+          "graph": "E_6",
+          "vertex": 5,
+          "energy": -0.04985675617422358,
+          "negative": true
+        },
+        {
+          "graph": "E_7",
+          "vertex": 0,
+          "energy": -0.09601693485380314,
+          "negative": true
+        },
+        {
+          "graph": "E_7",
+          "vertex": 1,
+          "energy": -0.04154729681185265,
+          "negative": true
+        },
+        {
+          "graph": "E_7",
+          "vertex": 2,
+          "energy": -0.029445758914095732,
+          "negative": true
+        },
+        {
+          "graph": "E_7",
+          "vertex": 3,
+          "energy": -0.03775534151008819,
+          "negative": true
+        },
+        {
+          "graph": "E_7",
+          "vertex": 4,
+          "energy": -0.09605231178732665,
+          "negative": true
+        },
+        {
+          "graph": "E_7",
+          "vertex": 5,
+          "energy": -0.0960169350584199,
+          "negative": true
+        },
+        {
+          "graph": "E_7",
+          "vertex": 6,
+          "energy": -0.043692120681965374,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 0,
+          "energy": -0.08223011755434317,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 1,
+          "energy": -0.03745038915597032,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 2,
+          "energy": -0.03236172129436121,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 3,
+          "energy": -0.05760094322072873,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 4,
+          "energy": -0.08233055296056513,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 5,
+          "energy": -0.0823002300500737,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 6,
+          "energy": -0.08223015907041531,
+          "negative": true
+        },
+        {
+          "graph": "E_8",
+          "vertex": 7,
+          "energy": -0.03862614973393419,
+          "negative": true
+        }
+      ],
+      "PASS": false
+    },
+    "T2": {
+      "description": "ADE graph produces equilibration ratio within 5% of Co-60",
+      "target_ratio": 1.1355498721227621,
+      "best_error": 0.01910403109041511,
+      "best_graph": "A_7",
+      "n_ratios_checked": 113,
+      "PASS": true
+    },
+    "T3": {
+      "description": "Graphs with >= 3 orbits produce >= 2 distinct releases",
+      "details": [
+        {
+          "graph": "A_5",
+          "n_orbits": 3,
+          "energy_releases": [
+            -0.0566330122651324
+          ],
+          "n_distinct": 1,
+          "pass": false
+        },
+        {
+          "graph": "A_6",
+          "n_orbits": 3,
+          "energy_releases": [
+            -0.04985675587129901,
+            -3.029245743135789e-10
+          ],
+          "n_distinct": 2,
+          "pass": true
+        },
+        {
+          "graph": "A_7",
+          "n_orbits": 4,
+          "energy_releases": [
+            -0.04369144917583889,
+            -6.714963682874497e-07
+          ],
+          "n_distinct": 2,
+          "pass": true
+        },
+        {
+          "graph": "A_8",
+          "n_orbits": 4,
+          "energy_releases": [
+            -0.03860583607583612,
+            -2.0301146847367946e-05,
+            -1.2503547752729105e-08
+          ],
+          "n_distinct": 3,
+          "pass": true
+        },
+        {
+          "graph": "D_5",
+          "n_orbits": 4,
+          "energy_releases": [
+            -0.1438410362258109
+          ],
+          "n_distinct": 1,
+          "pass": false
+        },
+        {
+          "graph": "D_6",
+          "n_orbits": 5,
+          "energy_releases": [
+            -0.11525808919965597,
+            -4.673946318867195e-06,
+            -1.0973009834103209e-08
+          ],
+          "n_distinct": 3,
+          "pass": true
+        },
+        {
+          "graph": "D_7",
+          "n_orbits": 6,
+          "energy_releases": [
+            -0.09595514448468001,
+            -5.913961181236438e-05,
+            -2.5380667663110756e-06
+          ],
+          "n_distinct": 3,
+          "pass": true
+        },
+        {
+          "graph": "D_8",
+          "n_orbits": 7,
+          "energy_releases": [
+            -0.08210582092027363,
+            -0.00010715628135327115,
+            -1.4827185812471555e-05
+          ],
+          "n_distinct": 3,
+          "pass": true
+        },
+        {
+          "graph": "E_6",
+          "n_orbits": 4,
+          "energy_releases": [
+            -0.11525808919965597,
+            -4.673946319089239e-06,
+            -1.0973009612058604e-08
+          ],
+          "n_distinct": 3,
+          "pass": true
+        },
+        {
+          "graph": "E_7",
+          "n_orbits": 7,
+          "energy_releases": [
+            -0.09595514448468001,
+            -5.9139611812142334e-05,
+            -2.5380667665331202e-06
+          ],
+          "n_distinct": 3,
+          "pass": true
+        },
+        {
+          "graph": "E_8",
+          "n_orbits": 8,
+          "energy_releases": [
+            -0.0821058209202743,
+            -0.00010715628135282707,
+            -1.482718581224951e-05
+          ],
+          "n_distinct": 3,
+          "pass": true
+        }
+      ],
+      "PASS": false
+    },
+    "T4": {
+      "description": "Monotonic correlation between perturbation and line variance",
+      "fracs": [
+        0.001,
+        0.005,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "variances": [
+        8.227738053032555e-06,
+        0.00020571778302271043,
+        0.000823003034856995,
+        0.02061170070635154,
+        0.08273236981699097,
+        0.33457991942667514,
+        2.228828614008005
+      ],
+      "spearman_rho": 1.0,
+      "p_value": 0.0,
+      "PASS": true
+    }
+  },
+  "overall_score": "2/4"
+}

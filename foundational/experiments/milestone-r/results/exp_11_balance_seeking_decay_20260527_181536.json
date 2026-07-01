@@ -1,0 +1,192 @@
+{
+  "experiment": "exp_11_balance_seeking_decay",
+  "timestamp": "2026-05-27T18:15:36.427680",
+  "block": "C",
+  "thesis": "Decay is PAC balance-seeking, not ledger-breaking. Energy = deficit. Half-life = first-passage time.",
+  "test_results": {
+    "T1": {
+      "description": "Spearman rho > 0.7 between deficit and spectral shift",
+      "global_rho": 0.09773467359463311,
+      "global_p": 0.4174499541048956,
+      "n_pairs": 71,
+      "per_graph": [
+        {
+          "graph": "A_1",
+          "n_vertices": 1,
+          "rho": NaN,
+          "p": NaN
+        },
+        {
+          "graph": "A_2",
+          "n_vertices": 2,
+          "rho": NaN,
+          "p": NaN
+        },
+        {
+          "graph": "A_3",
+          "n_vertices": 3,
+          "rho": NaN,
+          "p": NaN
+        },
+        {
+          "graph": "A_4",
+          "n_vertices": 4,
+          "rho": 0.9428090415820634,
+          "p": 0.057190958417936644
+        },
+        {
+          "graph": "A_5",
+          "n_vertices": 5,
+          "rho": 0.9733285267845753,
+          "p": 0.005207858944662804
+        },
+        {
+          "graph": "A_6",
+          "n_vertices": 6,
+          "rho": 0.8280786712108252,
+          "p": 0.04179468045604518
+        },
+        {
+          "graph": "A_7",
+          "n_vertices": 7,
+          "rho": 0.6112159239257249,
+          "p": 0.14478256263751707
+        },
+        {
+          "graph": "D_4",
+          "n_vertices": 4,
+          "rho": 0.632455532033676,
+          "p": 0.367544467966324
+        },
+        {
+          "graph": "D_5",
+          "n_vertices": 5,
+          "rho": 0.6668859288553501,
+          "p": 0.21889398131323168
+        },
+        {
+          "graph": "D_6",
+          "n_vertices": 6,
+          "rho": 0.8116794499134279,
+          "p": 0.04985758510134035
+        },
+        {
+          "graph": "D_7",
+          "n_vertices": 7,
+          "rho": 0.477084298221423,
+          "p": 0.2790112018615631
+        },
+        {
+          "graph": "E_6",
+          "n_vertices": 6,
+          "rho": 0.550782483869826,
+          "p": 0.2573693316225745
+        },
+        {
+          "graph": "E_7",
+          "n_vertices": 7,
+          "rho": 0.4642857142857144,
+          "p": 0.2939341076002517
+        },
+        {
+          "graph": "E_8",
+          "n_vertices": 8,
+          "rho": 0.4790505047653036,
+          "p": 0.22974054535741797
+        }
+      ],
+      "PASS": false
+    },
+    "T2": {
+      "description": "DFT R^2 > 0.8 AND slope sign matches empirical GN",
+      "empirical": {
+        "slope": 155.7295909096008,
+        "intercept": -59.24960768654495,
+        "r_squared": 0.9906435917534654,
+        "n_isotopes": 8
+      },
+      "dft": {
+        "slope": NaN,
+        "r_squared": 0.0,
+        "n_deficit_levels": 0,
+        "same_sign_as_empirical": false,
+        "deficit_levels": [],
+        "median_fpts": []
+      },
+      "PASS": false
+    },
+    "T3": {
+      "description": "endpoint_var/midpoint_var < 0.05, CV(fpt) > 0.3",
+      "details": [
+        {
+          "graph": "A_6",
+          "midpoint_var": 0.0005980871214846331,
+          "endpoint_var": 0.0006979105226381722,
+          "ratio": 1.1669044484785882,
+          "cv_fpt": 0.1699059632351906,
+          "mean_fpt": 2870.318,
+          "pass_ratio": false,
+          "pass_cv": false
+        },
+        {
+          "graph": "D_5",
+          "midpoint_var": 0.00046723578806146573,
+          "endpoint_var": 0.0005997031730292366,
+          "ratio": 1.2835129250637465,
+          "cv_fpt": 0.4309451042879665,
+          "mean_fpt": 2162.09,
+          "pass_ratio": false,
+          "pass_cv": true
+        },
+        {
+          "graph": "E_6",
+          "midpoint_var": 0.0003639859923797759,
+          "endpoint_var": 0.0005915319269327881,
+          "ratio": 1.6251502511547071,
+          "cv_fpt": 0.1593076214898607,
+          "mean_fpt": 2880.728,
+          "pass_ratio": false,
+          "pass_cv": false
+        }
+      ],
+      "PASS": false
+    },
+    "T4": {
+      "description": "Geometric AIC < Exponential AIC for >= 3/4 cases",
+      "cases": [
+        {
+          "name": "StochasticCascade",
+          "aic_geometric": 13873.257779524116,
+          "aic_exponential": 16939.470006319127,
+          "geometric_wins": true,
+          "n_samples": 5000
+        },
+        {
+          "name": "A_5",
+          "aic_geometric": 18374.985547593664,
+          "aic_exponential": 18375.72187635947,
+          "geometric_wins": true,
+          "n_samples": 1105
+        },
+        {
+          "name": "D_4",
+          "aic_geometric": 30260.711088745746,
+          "aic_exponential": 30263.469161199864,
+          "geometric_wins": true,
+          "n_samples": 1995
+        },
+        {
+          "name": "E_6",
+          "aic_geometric": 2942.74276398102,
+          "aic_exponential": 2942.8494955969127,
+          "geometric_wins": true,
+          "n_samples": 175
+        }
+      ],
+      "n_geometric_wins": 4,
+      "n_cases": 4,
+      "PASS": true
+    }
+  },
+  "overall_score": "1/4"
+}
