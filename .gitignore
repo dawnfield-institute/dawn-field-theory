@@ -146,3 +146,9 @@ cimm.log
 
 # Session research notes
 SESSION_NOTES.md
+
+# Press build products (ADR-0029, bert): packages are rebuildable from source at the
+# commit recorded in preprints/RELEASES.yaml; canonical copies live on Zenodo.
+foundational/docs/preprints/packages/
+foundational/docs/preprints/.build/
+foundational/docs/preprints/PACSeries.zip
