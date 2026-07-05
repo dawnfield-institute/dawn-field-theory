@@ -1,9 +1,0 @@
-{
-  "layers": 6,
-  "materialized": 5,
-  "confluence_contexts": 136651,
-  "oracles_used": [
-    "gpt2",
-    "pythia"
-  ]
-}
