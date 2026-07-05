@@ -1,55 +1,49 @@
-schema_version: "2.0"
-description: "Milestone 5: Standard Model Completion & Simulator Validation — closed SM parameter gaps (Higgs, CKM, PMNS) and resolved simulator coupling drift via de-actualization (PAC cycle completion)"
-semantic_scope: "research"
-proficiency_level: "research"
-version: "1.0.0"
-status: "completed"
-date_created: "2026-03-16"
-date_updated: "2026-03-16"
-
+schema_version: '2.0'
+description: 'Milestone 5: Standard Model Completion & Simulator Validation — closed
+  SM parameter gaps (Higgs, CKM, PMNS) and resolved simulator coupling drift via de-actualization
+  (PAC cycle completion)'
+semantic_scope: research
+proficiency_level: research
+version: 1.0.0
+status: completed
+date_created: '2026-03-16'
+date_updated: '2026-03-16'
 files:
-  - "[README.md]": "Milestone overview, experiment results, key findings"
-
+- README.md
 child_directories:
-  - name: "scripts"
-    description: "13 experiment scripts (exp_01 through exp_13)"
-  - name: "results"
-    description: "JSON outputs from all experiments"
-  - name: "journals"
-    description: "Research logs — 2026-03-16 session covering all 13 experiments"
-
+- journals
+- results
+- scripts
 estimated_context_weight: 1.0
-validation_type: "automated"
-
+validation_type: automated
 key_results:
-  - "lambda_Higgs = phi/(4*pi), M_H = 125.260 GeV (83 ppm)"
-  - "sin^2(theta_W) = tan(theta_Cabibbo) = F4/F7 = 3/13 (new DFT identity)"
-  - "PMNS angles all < 0.3 deg error from arctan(F_a/F_b)"
-  - "Couplings are UV fixed points — no RG running (DFT prediction)"
-  - "De-actualization (PAC cycle completion) reduces scorecard error 8.1% -> 6.2%"
-  - "Strong force implicit in cascade-depth tiling filter (not a separate operator)"
-
+- lambda_Higgs = phi/(4*pi), M_H = 125.260 GeV (83 ppm)
+- sin^2(theta_W) = tan(theta_Cabibbo) = F4/F7 = 3/13 (new DFT identity)
+- PMNS angles all < 0.3 deg error from arctan(F_a/F_b)
+- Couplings are UV fixed points — no RG running (DFT prediction)
+- De-actualization (PAC cycle completion) reduces scorecard error 8.1% -> 6.2%
+- Strong force implicit in cascade-depth tiling filter (not a separate operator)
 dependencies:
-  - "milestone1 (SM parameter derivations: alpha, sin2thetaW, Koide, gauge closure)"
-  - "milestone2 (mass ratios: mu/e, p/e, tau/e, turbulence extension)"
-  - "milestone3 (Landauer erasure, cascade Fibonacci origin)"
-  - "milestone4 (relativity, EFE, gravity constant, cosmological constant, correction template)"
-  - "minimum_actualization_resolution (exp_37-43: four-force table, strong candidates, emergent couplings)"
-  - "reality-engine (v3 simulator with 18 operators, physics scorecard)"
-
+- 'milestone1 (SM parameter derivations: alpha, sin2thetaW, Koide, gauge closure)'
+- 'milestone2 (mass ratios: mu/e, p/e, tau/e, turbulence extension)'
+- milestone3 (Landauer erasure, cascade Fibonacci origin)
+- milestone4 (relativity, EFE, gravity constant, cosmological constant, correction
+  template)
+- 'minimum_actualization_resolution (exp_37-43: four-force table, strong candidates,
+  emergent couplings)'
+- reality-engine (v3 simulator with 18 operators, physics scorecard)
 target_papers:
-  - "Paper 9 (proposed): Standard Model from Information — The Complete Derivation"
-  - "Paper 10 (proposed): Predictions for BSM Physics from PAC Structure"
-
+- 'Paper 9 (proposed): Standard Model from Information — The Complete Derivation'
+- 'Paper 10 (proposed): Predictions for BSM Physics from PAC Structure'
 tags:
-  - standard-model
-  - strong-coupling
-  - higgs-mass
-  - neutrino-mixing
-  - ckm-matrix
-  - cp-violation
-  - simulator-validation
-  - deactualization
-  - pac-cycle
-  - uv-fixed-points
-  - coupling-drift
+- standard-model
+- strong-coupling
+- higgs-mass
+- neutrino-mixing
+- ckm-matrix
+- cp-violation
+- simulator-validation
+- deactualization
+- pac-cycle
+- uv-fixed-points
+- coupling-drift

@@ -8,7 +8,7 @@ description: 'Empirical validation of the Born rule using Symbolic Entropy Colla
 semantic_scope:
 - born_rule
 files:
-- '[m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py'
+- README.md
 - results.md
 semantic_tags:
 - born_rule
@@ -18,4 +18,7 @@ semantic_tags:
 - protocol
 - results.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts

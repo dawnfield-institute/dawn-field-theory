@@ -1,4 +1,35 @@
-schema_version: "2.0"
-description: "JSON experiment outputs with timestamps"
-semantic_scope: "data"
-proficiency_level: "research"
+schema_version: '2.0'
+description: JSON experiment outputs with timestamps
+semantic_scope: data
+proficiency_level: research
+files:
+- exp_01_pac_conservation_20260205_110249.json
+- exp_02_growth_direction_20260205_110254.json
+- exp_03_growth_models_20260205_110258.json
+- exp_04_frontier_crystallization_20260205_110625.json
+- exp_05_even_odd_oscillation_20260205_115855.json
+- exp_06_oscillation_persistence_20260205_120439.json
+- exp_07_omega_mobius_20260205_120608.json
+- exp_07_omega_mobius_20260205_120611.json
+- exp_08_phi_at_k3_20260205_120802.json
+- exp_08_phi_at_k3_20260205_120805.json
+- exp_09_crystallization_20260205_121607.json
+- exp_10_field_decay_20260205_122236.json
+- exp_11_bridge_E_omega_20260205_122815.json
+- exp_12_omega_deep_dive_20260205_123003.json
+- exp_13_phi_convergence_20260205_123115.json
+- exp_14_falsification_20260205_123547.json
+- exp_15_deep_convergence_20260205_124356.json
+- exp_16_phi_crossing_20260205_124701.json
+- exp_17_inverse_fibonacci_20260205_124922.json
+- exp_18_contradiction_20260205_125941.json
+- exp_19_falsification_v2_20260205_131526.json
+- exp_20_unified_synthesis_20260205_132626.json
+- exp_21_riemann_interference_20260205_163144.json
+- exp_22_riemann_algebra_geometry_20260205_163847.json
+- exp_23_xi_derivation_contest_20260205_164329.json
+- exp_24_falsification_suite_20260205_164601.json
+- exp_25_xi_exact_derivation_20260205_171241.json
+- exp_26_landauer_delta_k_20260205_171544.json
+- exp_27_landauer_cross_validation_20260205_172232.json
+child_directories: []

@@ -9,7 +9,10 @@ semantic_scope:
 - decoherence
 - symbolic collapse
 files:
-- '[cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py'
+- README.md
 - results.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts

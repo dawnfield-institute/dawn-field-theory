@@ -1,9 +1,11 @@
-schema_version: "2.0"
-description: "Core modules for PAC cosmology implementation"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.0'
+description: Core modules for PAC cosmology implementation
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[pac_cosmology.py]": "PAC cosmology framework with state calculations"
-  - "[qbe_dynamics.py]": "QBE energy-information coupling"
-  - "[pac_constraints.py]": "Constraint enforcement and verification"
-  - "[constants.py]": "PAC constants with derivation documentation"
+- constants.py
+- pac_constraints.py
+- pac_cosmology.py
+- qbe_dynamics.py
+- sec_dynamics.py
+child_directories: []

@@ -100,7 +100,6 @@ child_directories:
 - aletheia
 - brainstem
 - field_decomposition
-- fracton
 - kronos
 - mcp_server
 - prometheus

@@ -1,62 +1,53 @@
-schema_version: "2.0"
-description: >
-  Milestone 12: Connection as Primitive — ADE Geometry, Thermodynamic Mechanism,
-  and the Path to Relativity. Establishes that connection = addition = ADE geometry,
-  derives gauge groups from Fibonacci compatibility, provides thermodynamic mechanism
-  for M11's dynamic-equilibria framework, and demonstrates SEC complexification of
-  A_1 yields the Lorentz group. 13 experiments in 5 blocks.
-semantic_scope: "research"
-proficiency_level: "research"
-version: "1.0.0"
-status: "active"
-date_created: "2026-05-18"
-date_updated: "2026-05-18"
+schema_version: '2.0'
+description: 'Milestone 12: Connection as Primitive — ADE Geometry, Thermodynamic
+  Mechanism, and the Path to Relativity. Establishes that connection = addition =
+  ADE geometry, derives gauge groups from Fibonacci compatibility, provides thermodynamic
+  mechanism for M11''s dynamic-equilibria framework, and demonstrates SEC complexification
+  of A_1 yields the Lorentz group. 13 experiments in 5 blocks.
 
+  '
+semantic_scope: research
+proficiency_level: research
+version: 1.0.0
+status: active
+date_created: '2026-05-18'
+date_updated: '2026-05-18'
 files:
-  - "[README.md]": "Thesis, experiment index, scorecard, predictions registry"
-  - "[SYNTHESIS.md]": "Detailed findings, cross-milestone connections, honest failures"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "core"
-    description: "Shared library: connection_geometry.py extending M11's quantum_gravity.py with ADE, basin dynamics, SEC complexification"
-  - name: "scripts"
-    description: "13 experiment scripts (exp_01 through exp_13)"
-  - name: "results"
-    description: "JSON output from experiment runs"
-  - name: "journals"
-    description: "Session research logs"
-
+- core
+- results
+- scripts
 estimated_context_weight: 0.95
-validation_type: "computational"
-
+validation_type: computational
 key_results:
-  - "Score: 49/52 (94%) across 13 experiments in 5 blocks"
-  - "Connection = addition = ADE geometry (three-way equivalence)"
-  - "SU(2) and SU(3) are the ONLY Fibonacci-compatible ADE gauge groups"
-  - "F_7 = 13 = 1 + 3 + 8 + 1 (gauge closure from ADE arithmetic)"
-  - "Laws as basin attractors with measurable relaxation times"
-  - "Crystallizing-law signatures: variance narrowing from basin deepening"
-  - "SEC complexification of A_1 yields SL(2,C) ~ SO(3,1) (Lorentz group)"
-
+- 'Score: 49/52 (94%) across 13 experiments in 5 blocks'
+- Connection = addition = ADE geometry (three-way equivalence)
+- SU(2) and SU(3) are the ONLY Fibonacci-compatible ADE gauge groups
+- F_7 = 13 = 1 + 3 + 8 + 1 (gauge closure from ADE arithmetic)
+- Laws as basin attractors with measurable relaxation times
+- 'Crystallizing-law signatures: variance narrowing from basin deepening'
+- SEC complexification of A_1 yields SL(2,C) ~ SO(3,1) (Lorentz group)
 dependencies:
   internal:
-    - "../milestone11/": "quantum_gravity.py — StochasticCascade, DFT constants, response times"
-    - "../milestone10/": "foundations.py — LawNegotiator, SelfApplicator (via M11 chain)"
-    - "../milestone9/": "infodynamics.py — cascade clock, N_physical (via M11 chain)"
-    - "../milestone8/": "bsm.py — Fibonacci utilities, PredictionRegistry (via M11 chain)"
+  - ../milestone11/: quantum_gravity.py — StochasticCascade, DFT constants, response
+      times
+  - ../milestone10/: foundations.py — LawNegotiator, SelfApplicator (via M11 chain)
+  - ../milestone9/: infodynamics.py — cascade clock, N_physical (via M11 chain)
+  - ../milestone8/: bsm.py — Fibonacci utilities, PredictionRegistry (via M11 chain)
   external:
-    - "numpy>=1.24"
-    - "scipy>=1.10"
-
+  - numpy>=1.24
+  - scipy>=1.10
 tags:
-  - milestone-12
-  - connection-primitive
-  - ade-geometry
-  - addition-is-connection
-  - gauge-groups
-  - fibonacci-compatibility
-  - basin-attractors
-  - crystallizing-laws
-  - sec-complexification
-  - lorentz-derivation
-  - thermodynamic-mechanism
+- milestone-12
+- connection-primitive
+- ade-geometry
+- addition-is-connection
+- gauge-groups
+- fibonacci-compatibility
+- basin-attractors
+- crystallizing-laws
+- sec-complexification
+- lorentz-derivation
+- thermodynamic-mechanism

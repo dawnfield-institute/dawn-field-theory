@@ -17,7 +17,9 @@ semantic_scope:
 - entropy
 - recursive calculus
 files:
-- results.md
-- symbolic_fractal_pruning.py
+- README.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts

@@ -1,6 +1,7 @@
-schema_version: "2.0"
-description: "Shared constants and utility functions for gravity derivation"
+schema_version: '2.0'
+description: Shared constants and utility functions for gravity derivation
 semantic_scope: implementation
 files:
-  - "[constants.py]": "Physical and Fibonacci constants"
-  - "[projections.py]": "Symmetric/antisymmetric projection operators"
+- constants.py
+- projections.py
+child_directories: []
