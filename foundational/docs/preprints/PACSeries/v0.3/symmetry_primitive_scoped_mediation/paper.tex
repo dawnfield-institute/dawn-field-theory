@@ -1,14 +1,18 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{iftex}
+\usepackage{amsmath,amsthm}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp}
+  \usepackage{amssymb}
 \else
+  % XeTeX/LuaTeX: amssymb BEFORE unicode-math (unicode-math then overrides it cleanly;
+  % the reverse order clashes on \eth). Keeps \square, \mathbb, \mathfrak available.
+  \usepackage{amssymb}
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
 \fi
-\usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -37,7 +41,10 @@
 
 \subsection*{On the pre-axiomatic foundation and propagation mechanism of Dawn Field Theory}
 
-\textbf{Peter Groom, Dawn Field Institute} \textbf{PACSeries Paper 7} \textbf{Date}: May 2026 \textbf{Version}: 1.0 (Draft)
+\textbf{Peter Groom, Dawn Field Institute} \\
+\textbf{PACSeries Paper 7} \\
+\textbf{Date}: May 2026 \\
+\textbf{Version}: 1.0 (Draft)
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -45,7 +52,7 @@
 
 We present the theoretical foundation that explains \emph{why} Dawn Field Theory works. Milestone 7 establishes the pre-axiomatic hierarchy: Symmetry $\to$ Self-reference $\to$ Recursion $\to$ Arithmetic Closure $\to$ ADE $\to$ PAC/SEC/MED/RBF $\to$ Standard Model. Milestone 6 establishes the propagation mechanism: scoped mediation via transfer matrices, where forces differ by Fibonacci depth and constants are ratios of what survives scope boundaries.
 
-Key results: (1) $\varphi$ emerges uniquely from cross-scale relational self-reference — the constraint that subordinate at level $n$ equals dominant at level $n+1$ — not from iterating $x = 1 + 1/x$. (2) "Nothing" (a uniform symmetric state) is unstable under multi-scale drive combined with conservation, so structure formation is forced. (3) $\Xi = \gamma + \ln\varphi$ per scope boundary, experimentally decomposed: counting-only $\to$ $\gamma$ (2.7\% error), splitting-only $\to$ $\ln\varphi$ (0.0\% error). (4) $1/\varphi$ attenuation emerges from dynamics ($R^2 = 0.995$) rather than being assumed: multi-scale drive on flat graphs produces hierarchical decay with ratio 0.574 (7.2\% from $1/\varphi$). (5) Transfer matrices converge to rank-1 harmonic fixed points for 67/67 scope boundaries. The matrices are non-compositional (99.96\%): levels are recursive closures, not products. (6) $\alpha_\text{EM} = F_3/(F_4 \cdot \varphi \cdot F_{10}) \cdot (1 - F_{10}/(4\pi F_7^2))$ at 5.7 ppm — ranked \#1 of 10,440 Fibonacci combinations, 300$\times$ better than the next. (7) ADE arithmetic closure terminates uniquely at $D = 3$: $L_4$ tetration diverges at $7.6 \times 10^{12}$.
+Key results: (1) $\varphi$ emerges uniquely from cross-scale relational self-reference — the constraint that subordinate at level $n$ equals dominant at level $n+1$ — not from iterating $x = 1 + 1/x$. (2) "Nothing" (a uniform symmetric state) is unstable under multi-scale drive combined with conservation, so structure formation is forced. (3) $\Xi = \gamma + \ln\varphi$ per scope boundary, experimentally decomposed: counting-only $\to$ $\gamma$ (2.7\% error), splitting-only $\to$ $\ln\varphi$ (0.0\% error). (4) $1/\varphi$ attenuation emerges from dynamics ($R^2 = 0.995$) rather than being assumed: multi-scale drive on flat graphs produces hierarchical decay with ratio 0.574 (7.2\% from $1/\varphi$). (5) Transfer matrices converge to rank-1 harmonic fixed points for 67/67 scope boundaries. The matrices are non-compositional (99.96\%): levels are recursive closures, not products. (6) $\alpha_{\text{EM}} = F_3/(F_4 \cdot \varphi \cdot F_{10}) \cdot (1 - F_{10}/(4\pi F_7^2))$ at 5.7 ppm — ranked \#1 of 10,440 Fibonacci combinations, 300$\times$ better than the next. (7) ADE arithmetic closure terminates uniquely at $D = 3$: $L_4$ tetration diverges at $7.6 \times 10^{12}$.
 
 The framework achieves 100\% compatibility with Milestones 1–6 (20/20 prior results, 60\% directly illuminated with new derivation paths, zero contradictions). We document three failures: RBF memory damping (2/4, activity-based memory definitions fail), cross-topology symmetry breaking (3/4, weak perturbations ineffective on well-balanced graphs), and neutrino splitting ratio (44\% error, subsequently improved to 17\% in M8 via PMNS correction).
 
@@ -59,7 +66,7 @@ Seven falsifiable predictions include: the weak force as the actualization mecha
 
 \section*{1. Why does DFT work?}
 
-Papers 1–6 of this series established that two information-theoretic axioms — PAC (conservation) and SEC (dynamics) — reproduce Standard Model parameters with precision ranging from 5.7 ppm ($\alpha_\text{EM}$) to 0.5 ppm (Koide formula). Paper 4 showed that Fibonacci arithmetic generates gauge couplings, mass ratios, and mixing angles. Paper 5 showed that SEC produces Maxwell's equations and MED selects $D = 3$.
+Papers 1–6 of this series established that two information-theoretic axioms — PAC (conservation) and SEC (dynamics) — reproduce Standard Model parameters with precision ranging from 5.7 ppm ($\alpha_{\text{EM}}$) to 0.5 ppm (Koide formula). Paper 4 showed that Fibonacci arithmetic generates gauge couplings, mass ratios, and mixing angles. Paper 5 showed that SEC produces Maxwell's equations and MED selects $D = 3$.
 
 But none of these papers explained \emph{why}. Why PAC and SEC? Why Fibonacci? Why $\varphi$? Are these axioms fundamental, or do they derive from something deeper?
 
@@ -92,7 +99,7 @@ The unique ratio satisfying all three constraints is $R = D/S = \varphi$. This i
 
 \subsection*{2.2 Generalization}
 
-For branching factor $b$, the relational constraint gives the $b$-nacci constant: $b = 2$ gives $\varphi$, $b = 3$ gives the tribonacci constant (1.839...), $b = 4$ gives the tetranacci constant (1.928...). Nature selects $b = 2$ — binary splitting — which has independent support from Landauer's principle (binary erasure is the minimum information operation) and from the MVAE (binary is the only integer base with $\xi_\text{floor} > 0$, Paper 1 update).
+For branching factor $b$, the relational constraint gives the $b$-nacci constant: $b = 2$ gives $\varphi$, $b = 3$ gives the tribonacci constant (1.839...), $b = 4$ gives the tetranacci constant (1.928...). Nature selects $b = 2$ — binary splitting — which has independent support from Landauer's principle (binary erasure is the minimum information operation) and from the MVAE (binary is the only integer base with $\xi_{\text{floor}} > 0$, Paper 1 update).
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -222,11 +229,11 @@ The 12 illuminated results include: $\varphi$ in SM parameters, $\Xi$ in cascade
 
 Scoped mediation models the propagation of information across hierarchical boundaries using transfer matrices. Each scope boundary has a matrix $T$ that maps the PAC budget ($P, A, \xi, \Theta$) from one level to the next (M6 exp\_01).
 
-The finding is that $T_\text{harm}^4$ (the fourth power of the harmonic transfer matrix) is rank-1 for 67/67 tested boundaries. This means that regardless of the input distribution, all information converges to a single dominant mode after four boundary crossings.
+The finding is that $T_{\text{harm}}^4$ (the fourth power of the harmonic transfer matrix) is rank-1 for 67/67 tested boundaries. This means that regardless of the input distribution, all information converges to a single dominant mode after four boundary crossings.
 
 \subsection*{9.2 Non-compositionality}
 
-The transfer matrices are non-compositional: $T_\text{total} \neq T_1 \cdot T_2 \cdot T_3 \cdots$ to 99.96\%. Levels are not products of simpler operations but recursive closures. Each level re-negotiates the full PAC budget independently, producing a hierarchy that cannot be factored into elementary steps.
+The transfer matrices are non-compositional: $T_{\text{total}} \neq T_1 \cdot T_2 \cdot T_3 \cdots$ to 99.96\%. Levels are not products of simpler operations but recursive closures. Each level re-negotiates the full PAC budget independently, producing a hierarchy that cannot be factored into elementary steps.
 
 The cascade is therefore not a pipeline (input $\to$ stage 1 $\to$ stage 2 $\to$ output) but a recursive hierarchy where each level is a complete, self-contained negotiation.
 
@@ -253,11 +260,11 @@ Gravity & 183 & $\varphi^{-183}$ & $5.91 \times 10^{-39}$ & 0.96\% \\
 \bottomrule
 \end{longtable}
 
-\subsection*{10.2 $\alpha_\text{EM}$: \#1 of 10,440}
+\subsection*{10.2 $\alpha_{\text{EM}}$: \#1 of 10,440}
 
 The electromagnetic coupling formula:
 
-\[\alpha_\text{EM} = \frac{F_3}{F_4 \cdot \varphi \cdot F_{10}} \cdot \left(1 - \frac{F_{10}}{4\pi F_7^2}\right)\]
+\[\alpha_{\text{EM}} = \frac{F_3}{F_4 \cdot \varphi \cdot F_{10}} \cdot \left(1 - \frac{F_{10}}{4\pi F_7^2}\right)\]
 
 achieves 5.7 ppm accuracy. Among 10,440 Fibonacci combinations of comparable complexity, this formula ranks \#1 — 300$\times$ better than the next. The formula is not fitted; it emerges from the transfer matrix structure at depth 13.
 
@@ -265,7 +272,7 @@ achieves 5.7 ppm accuracy. Among 10,440 Fibonacci combinations of comparable com
 
 The ratio of gravitational to electromagnetic coupling:
 
-\[\frac{\log(\alpha_G^{-1})}{\log(\alpha_\text{EM}^{-1})} = \varphi^6 \quad \text{at 0.30\%}\]
+\[\frac{\log(\alpha_G^{-1})}{\log(\alpha_{\text{EM}}^{-1})} = \varphi^6 \quad \text{at 0.30\%}\]
 
 The hierarchy problem — why gravity is $10^{38}$ times weaker than electromagnetism — is a $\varphi$-power ratio of cascade depths: a structural consequence of the Fibonacci depth hierarchy rather than a fine-tuning problem.
 
@@ -273,7 +280,7 @@ The hierarchy problem — why gravity is $10^{38}$ times weaker than electromagn
 
 The gap between $\Xi$ and the Fibonacci-derived balance constant is:
 
-\[\Xi - \Xi_\text{PAC} \approx \frac{1}{240\pi} \quad \text{at 0.09\% error}\]
+\[\Xi - \Xi_{\text{PAC}} \approx \frac{1}{240\pi} \quad \text{at 0.09\% error}\]
 
 The factor 240 = $F_3 \cdot F_4 \cdot F_5 \cdot F_6 = 2 \times 3 \times 5 \times 8$ is also the number of roots of $E_8$. This links the non-Fibonacci residual of $\gamma$ to the exceptional Lie algebra; the Euler-Mascheroni constant's departure from Fibonacci structure has an algebraic explanation.
 
@@ -358,7 +365,7 @@ The uniform Fibonacci spacing model gives the correct hierarchy ordering but 44\
 2 & P & Dark mediator mass & $\sim 5.8$ keV & Athena X-ray, Lyman-$\alpha$ \\
 3 & P & Neutrino hierarchy & Normal & JUNO, DUNE \\
 4 & C & $\sin^2\theta_W = 3/13$ & 0.19\% error & Precision EW measurements \\
-5 & C & Rank-1 $T_\text{harm}^4$ & 67/67 (universal) & Any hierarchical partition \\
+5 & C & Rank-1 $T_{\text{harm}}^4$ & 67/67 (universal) & Any hierarchical partition \\
 6 & D & Cosmological constant & 0.9 orders & CC measurements \\
 7 & D & $1/\varphi$ attenuation universal & $R^2 = 0.995$ & Multi-scale drive experiments \\
 \bottomrule
@@ -373,7 +380,7 @@ The uniform Fibonacci spacing model gives the correct hierarchy ordering but 44\
 \end{enumerate}
 
 \begin{enumerate}\tightlist
-\item \textbf{Explain why $b = 2$.} Nature selects binary splitting. Paper 1's MAR update shows $b = 2$ is the only integer with $\xi_\text{floor} > 0$, and Paper 8 shows $\varphi$ (the $b = 2$ constant) is uniquely selected by gravity-time duality. But a deeper derivation of "why binary" remains open.
+\item \textbf{Explain why $b = 2$.} Nature selects binary splitting. Paper 1's MAR update shows $b = 2$ is the only integer with $\xi_{\text{floor}} > 0$, and Paper 8 shows $\varphi$ (the $b = 2$ constant) is uniquely selected by gravity-time duality. But a deeper derivation of "why binary" remains open.
 \end{enumerate}
 
 \begin{enumerate}\tightlist
@@ -390,7 +397,7 @@ The uniform Fibonacci spacing model gives the correct hierarchy ordering but 44\
 
 \subsection*{17.1 Backward connections}
 
-\textbf{Paper 1} (Erasure): The cascade topology and $P = A + \xi + \Theta$ budget from Paper 1 are the microphysics of scoped mediation. The MAR extension (binary uniqueness, $\xi_\text{floor}$) explains why $b = 2$.
+\textbf{Paper 1} (Erasure): The cascade topology and $P = A + \xi + \Theta$ budget from Paper 1 are the microphysics of scoped mediation. The MAR extension (binary uniqueness, $\xi_{\text{floor}}$) explains why $b = 2$.
 
 \textbf{Paper 2} (Balance Constant): $\Xi = \gamma + \ln\varphi$ is the transition cost per boundary. This paper experimentally decomposes the two components and provides the physical origins of each.
 
@@ -473,7 +480,7 @@ Section & Experiment & Score & Key metric & Hardened \\
 §12.3 & exp\_06 (Neutrinos) & 3/4 & Common-scale, splitting 44\% & — \\
 §12.2 & exp\_07 ($\Xi$ fixed point) & 3/4 & Attractor CV $< 1$, Euler gap 0.09\% & T2: convergence \\
 §11 & exp\_08 (PAC conservation) & 4/4 & $3.47 \times 10^{-18}$ & — \\
-§10.2 & exp\_09 ($\alpha_\text{EM}$ survival) & 4/4 & \#1 of 10,440 & — \\
+§10.2 & exp\_09 ($\alpha_{\text{EM}}$ survival) & 4/4 & \#1 of 10,440 & — \\
 — & exp\_10 (Master test) & 4/4 & 68\% reproducible, 0 contradictions & — \\
 \bottomrule
 \end{longtable}
