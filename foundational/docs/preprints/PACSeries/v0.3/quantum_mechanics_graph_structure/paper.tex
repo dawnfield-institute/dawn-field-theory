@@ -1,14 +1,18 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{iftex}
+\usepackage{amsmath,amsthm}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp}
+  \usepackage{amssymb}
 \else
+  % XeTeX/LuaTeX: amssymb BEFORE unicode-math (unicode-math then overrides it cleanly;
+  % the reverse order clashes on \eth). Keeps \square, \mathbb, \mathfrak available.
+  \usepackage{amssymb}
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
 \fi
-\usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -37,7 +41,10 @@
 
 \subsection*{On deriving the Hilbert space, Born rule, Schrödinger equation, Bell violation, and decoherence from ADE automorphisms without quantum postulates}
 
-\textbf{Peter Groom, Dawn Field Institute} \textbf{PACSeries Paper 11} \textbf{Date}: May 2026 \textbf{Version}: 1.0 (Draft)
+\textbf{Peter Groom, Dawn Field Institute} \\
+\textbf{PACSeries Paper 11} \\
+\textbf{Date}: May 2026 \\
+\textbf{Version}: 1.0 (Draft)
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -47,7 +54,7 @@ We derive the mathematical structure of quantum mechanics — Hilbert spaces, th
 
 The central construction is the orbit Hilbert space $\mathcal{H} = L^2(V / \text{Aut}(G))$: the space of square-integrable functions on vertex orbits under graph automorphisms. For a graph $G$ with vertices $V$ and automorphism group $\text{Aut}(G)$, the orbit basis vectors $|O_i\rangle$ span a Hilbert space whose dimension equals the number of distinct orbits. This construction resolves the positive semi-definite (PSD) degeneracy that limited Milestone 13's complement framework: the orbit Gram matrix is the identity for all ADE types, by construction.
 
-The results: (1) The Born rule $P(O_i) = |O_i|/n$ follows from orbit measure: the probability of finding the system in orbit $O_i$ is the fraction of vertices in that orbit. (2) $D_4$ (the graph with Dynkin type $D_4$, automorphism group $S_3$) is the only ADE type with non-abelian automorphisms among types with rank $\leq 8$. Non-abelian $\Rightarrow$ non-commuting orbit observables $\Rightarrow$ Robertson uncertainty bound $> 0$. Quantum uncertainty has a unique graph-theoretic origin. The non-commutativity measure is $\mathcal{NC} = 1.2247$ for $D_4$ and exactly 0 for all other ADE types tested. (3) Measurement is gauge fixing: projecting onto an orbit eigenstate selects a representative from a gauge equivalence class, and the real projectors necessarily lose phase information, the SEC arrow applied to measurement. (4) Under the orbit-Laplacian (graph-derived) SEC rotation, the CHSH Bell parameter rises from $S = 2.000$ (fixed basis) to $S = 2.514$ on $D_4 \times D_4$ product graphs — a clear violation at 88.8\% of the Tsirelson bound. The orbit space saturates the Tsirelson bound ($S = 2\sqrt{2} = 2.828$ to $4 \times 10^{-16}$) only under the ideal SU(2) generator $\sigma_y/2$, confirming that it supports the full quantum correlation range even though the graph-derived generator alone does not reach saturation. Graphs with nontrivial (abelian) automorphisms such as $A_n$ can exceed the classical bound; graphs with trivial automorphisms ($E_7$, $E_8$) do not violate Bell inequalities at all. (5) The Schrödinger equation emerges: the orbit Laplacian $H = B^T L B$ (where $L$ is the graph Laplacian and $B$ is the orbit basis) serves simultaneously as the Hamiltonian, the Bell measurement generator, and the path-counting matrix. Time evolution $U(t) = e^{-iHt}$ is unitary, automorphism-equivariant ($[P_g, H] = 0$), and energy-conserving — verified to machine precision ($2 \times 10^{-15}$). (6) The Feynman path integral is a sum over graph hops: the propagator $K(t) = e^{-iHt} = \sum_n (-iH)^n t^n / n!$ where $H^n$ counts $n$-hop paths on the orbit graph. Multi-path interference on 3-orbit systems ($A_5$) shows visibility 0.87. (7) The quantum Zeno effect freezes orbit transitions: $P_\text{survive}(N=1000) = 0.997$ on $D_4$, with anti-Zeno enhancement at $N = 2$ (26\% above free decay) — the crossover rate encodes the spectral gap, hence the topology. (8) Decoherence from orbit-environment coupling follows an exact formula $|rho_{12}(t)| = \frac{1}{2}|\langle 0_\text{env}| e^{-2i\lambda H_\text{env} t} |0_\text{env}\rangle|$, verified to $1.7 \times 10^{-15}$. The Fermi golden rule $\Gamma^2 = \lambda^2 \cdot \text{Var}(H_\text{env})$ holds across 6 ADE topologies with 0.04\% spread. The orbit basis is the pointer basis: orbit eigenstates maintain purity 1.000000 under dephasing while superpositions drop to 0.51.
+The results: (1) The Born rule $P(O_i) = |O_i|/n$ follows from orbit measure: the probability of finding the system in orbit $O_i$ is the fraction of vertices in that orbit. (2) $D_4$ (the graph with Dynkin type $D_4$, automorphism group $S_3$) is the only ADE type with non-abelian automorphisms among types with rank $\leq 8$. Non-abelian $\Rightarrow$ non-commuting orbit observables $\Rightarrow$ Robertson uncertainty bound $> 0$. Quantum uncertainty has a unique graph-theoretic origin. The non-commutativity measure is $\mathcal{NC} = 1.2247$ for $D_4$ and exactly 0 for all other ADE types tested. (3) Measurement is gauge fixing: projecting onto an orbit eigenstate selects a representative from a gauge equivalence class, and the real projectors necessarily lose phase information, the SEC arrow applied to measurement. (4) Under the orbit-Laplacian (graph-derived) SEC rotation, the CHSH Bell parameter rises from $S = 2.000$ (fixed basis) to $S = 2.514$ on $D_4 \times D_4$ product graphs — a clear violation at 88.8\% of the Tsirelson bound. The orbit space saturates the Tsirelson bound ($S = 2\sqrt{2} = 2.828$ to $4 \times 10^{-16}$) only under the ideal SU(2) generator $\sigma_y/2$, confirming that it supports the full quantum correlation range even though the graph-derived generator alone does not reach saturation. Graphs with nontrivial (abelian) automorphisms such as $A_n$ can exceed the classical bound; graphs with trivial automorphisms ($E_7$, $E_8$) do not violate Bell inequalities at all. (5) The Schrödinger equation emerges: the orbit Laplacian $H = B^T L B$ (where $L$ is the graph Laplacian and $B$ is the orbit basis) serves simultaneously as the Hamiltonian, the Bell measurement generator, and the path-counting matrix. Time evolution $U(t) = e^{-iHt}$ is unitary, automorphism-equivariant ($[P_g, H] = 0$), and energy-conserving — verified to machine precision ($2 \times 10^{-15}$). (6) The Feynman path integral is a sum over graph hops: the propagator $K(t) = e^{-iHt} = \sum_n (-iH)^n t^n / n!$ where $H^n$ counts $n$-hop paths on the orbit graph. Multi-path interference on 3-orbit systems ($A_5$) shows visibility 0.87. (7) The quantum Zeno effect freezes orbit transitions: $P_{\text{survive}}(N=1000) = 0.997$ on $D_4$, with anti-Zeno enhancement at $N = 2$ (26\% above free decay) — the crossover rate encodes the spectral gap, hence the topology. (8) Decoherence from orbit-environment coupling follows an exact formula $|rho_{12}(t)| = \frac{1}{2}|\langle 0_{\text{env}}| e^{-2i\lambda H_{\text{env}} t} |0_{\text{env}}\rangle|$, verified to $1.7 \times 10^{-15}$. The Fermi golden rule $\Gamma^2 = \lambda^2 \cdot \text{Var}(H_{\text{env}})$ holds across 6 ADE topologies with 0.04\% spread. The orbit basis is the pointer basis: orbit eigenstates maintain purity 1.000000 under dephasing while superpositions drop to 0.51.
 
 We report 62/66 pass (94\%) across M14 (40/44) and P13–P16 (22/22). The 4 failures: orbit-level interference is algebraic not positional (superpositions of disjoint orbits cannot produce vertex-level cross-terms), and the graph double-slit experiment achieves only 1/4 tests because interference requires same-orbit overlap, not cross-orbit superposition.
 
@@ -91,7 +98,7 @@ Define the orbit basis:
 
 These are orthonormal: $\langle O_i | O_j \rangle = \delta_{ij}$.
 
-The orbit Hilbert space is $\mathcal{H}_\text{orb} = \text{span}\{|O_1\rangle, \ldots, |O_d\rangle\}$, with dimension $d$ = number of orbits.
+The orbit Hilbert space is $\mathcal{H}_{\text{orb}} = \text{span}\{|O_1\rangle, \ldots, |O_d\rangle\}$, with dimension $d$ = number of orbits.
 
 \subsection*{2.2 Examples}
 
@@ -128,7 +135,7 @@ For a system in state $|\psi\rangle = \sum_k c_k |O_k\rangle$ (normalized: $\sum
 
 \[P(O_k) = |c_k|^2\]
 
-For the uniform state $|\psi_\text{uniform}\rangle = \frac{1}{\sqrt{n}} \sum_v |v\rangle$, this gives:
+For the uniform state $|\psi_{\text{uniform}}\rangle = \frac{1}{\sqrt{n}} \sum_v |v\rangle$, this gives:
 
 \[P(O_k) = \frac{|O_k|}{n}\]
 
@@ -204,7 +211,7 @@ For two systems with graphs $G_A$ and $G_B$, the composite system lives on the C
 
 The orbit Hilbert space of the product is the tensor product of orbit spaces:
 
-\[\mathcal{H}_\text{orb}(G_A \square G_B) = \mathcal{H}_\text{orb}(G_A) \otimes \mathcal{H}_\text{orb}(G_B)\]
+\[\mathcal{H}_{\text{orb}}(G_A \square G_B) = \mathcal{H}_{\text{orb}}(G_A) \otimes \mathcal{H}_{\text{orb}}(G_B)\]
 
 The tensor product structure is a theorem about Cartesian products of graphs, not a postulate (M14 exp\_09).
 
@@ -241,7 +248,7 @@ An ADE sweep across 12 graph types reveals (P13 T3):
 
 \begin{longtable}[]{@{}lllll@{}}
 \toprule
-ADE type & Aut type & $\mathcal{NC}$ & $S_\text{max}$ & Bell violation? \\
+ADE type & Aut type & $\mathcal{NC}$ & $S_{\text{max}}$ & Bell violation? \\
 \midrule\endhead
 $A_2$ & $\mathbb{Z}_2$ & 0 & — & No (1 orbit) \\
 $A_3$ & $\mathbb{Z}_2$ & 0 & 2.61 & Yes \\
@@ -256,7 +263,7 @@ Bell violation requires nontrivial automorphisms ($|\text{Aut}| > 1$): graphs wi
 
 \subsection*{7.3 The Fibonacci connection}
 
-$A_4$'s orbit Laplacian gives $S_\text{max} = 2.685$. This matches the independently-derived Fibonacci Bell parameter $S_\text{Fibonacci} = 2.683$ (from PAC Bell analysis, scripts 23–32 in pac\textbackslash{}\_confluence\textbackslash{}\_xi) to 0.09\%. The Fibonacci-weighted entanglement discovered through PAC tree analysis is the same as the entanglement produced by $A_4$'s orbit structure.
+$A_4$'s orbit Laplacian gives $S_{\text{max}} = 2.685$. This matches the independently-derived Fibonacci Bell parameter $S_{\text{Fibonacci}} = 2.683$ (from PAC Bell analysis, scripts 23–32 in pac\textbackslash{}\_confluence\textbackslash{}\_xi) to 0.09\%. The Fibonacci-weighted entanglement discovered through PAC tree analysis is the same as the entanglement produced by $A_4$'s orbit structure.
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -279,7 +286,7 @@ This single matrix serves three roles:
 
 \subsection*{8.2 Properties verified (P14)}
 
-\textbf{Unitarity} (T1): $U(t)^\dagger U(t) = I$ to $10^{-15}$ for all $t$, all ADE types tested.
+\textbf{Unitarity} (T1): $U(t)^{\dagger} U(t) = I$ to $10^{-15}$ for all $t$, all ADE types tested.
 
 \textbf{Equivariance} (T2): $[P_g, H] = 0$ for all $g \in \text{Aut}(G)$ — gauge invariance is structural, not imposed. Verified for all ADE types.
 
@@ -287,7 +294,7 @@ This single matrix serves three roles:
 
 \textbf{Energy spectrum} (T4): $A_5$'s orbit eigenvalue ratio $(2 + \varphi)/(3 - \varphi) = \varphi^2$ exactly — from the algebraic identity $\varphi^2 = \varphi + 1$. The golden ratio appears in the energy spectrum.
 
-\textbf{Time-energy uncertainty} (T5): Mandelstam-Tamm bound $\Delta E \cdot \tau_\perp \geq \pi/2$ verified to 0.1\% on orbit space.
+\textbf{Time-energy uncertainty} (T5): Mandelstam-Tamm bound $\Delta E \cdot \tau_{\perp} \geq \pi/2$ verified to 0.1\% on orbit space.
 
 \textbf{Rabi oscillations} (T6): $D_4$ shows orbit transitions with period $\pi$, maximum transfer 75\% = 3/4 (from 3 leaves out of 4 vertices), detuning 2, coupling $\sqrt{3}$.
 
@@ -321,7 +328,7 @@ Frequent measurement of orbit occupation freezes transitions. On $D_4$ with tota
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
-Measurements $N$ & $P_\text{survive}$ & Zeno ratio \\
+Measurements $N$ & $P_{\text{survive}}$ & Zeno ratio \\
 \midrule\endhead
 1 (free) & 0.380 & 1.00 \\
 2 & 0.220 & 0.58 \\
@@ -335,7 +342,7 @@ At $N = 1000$, the system is frozen with 99.7\% probability. Classical systems d
 
 \subsection*{10.2 Anti-Zeno dip (P15 T4)}
 
-At $N = 2$, $P_\text{survive}$ drops below free evolution (0.220 vs 0.380). This anti-Zeno effect means measurement at the "wrong" rate accelerates decay by 26\%. The crossover rate $N^* \sim T \cdot \Delta$ (time $\times$ spectral gap) is topology-dependent — different graphs have different anti-Zeno crossovers.
+At $N = 2$, $P_{\text{survive}}$ drops below free evolution (0.220 vs 0.380). This anti-Zeno effect means measurement at the "wrong" rate accelerates decay by 26\%. The crossover rate $N^* \sim T \cdot \Delta$ (time $\times$ spectral gap) is topology-dependent — different graphs have different anti-Zeno crossovers.
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -343,19 +350,19 @@ At $N = 2$, $P_\text{survive}$ drops below free evolution (0.220 vs 0.380). This
 
 \subsection*{11.1 The model (P16)}
 
-System: $D_4$ orbit space (2D qubit). Environment: ADE graph orbit space ($d_e$ dimensions). Coupling: spin-boson dephasing $H_\text{int} = \lambda \sigma_z \otimes H_\text{env}$.
+System: $D_4$ orbit space (2D qubit). Environment: ADE graph orbit space ($d_e$ dimensions). Coupling: spin-boson dephasing $H_{\text{int}} = \lambda \sigma_z \otimes H_{\text{env}}$.
 
-When the system is in $|O_1\rangle$, the environment evolves under $(1+\lambda)H_\text{env}$. When in $|O_2\rangle$, under $(1-\lambda)H_\text{env}$. The environment learns which orbit — decoherence follows.
+When the system is in $|O_1\rangle$, the environment evolves under $(1+\lambda)H_{\text{env}}$. When in $|O_2\rangle$, under $(1-\lambda)H_{\text{env}}$. The environment learns which orbit — decoherence follows.
 
 \subsection*{11.2 Exact decoherence function (P16 T2)}
 
-\[|\rho_{12}(t)| = \frac{1}{2}\left|\langle 0_\text{env}| e^{-2i\lambda H_\text{env} t} |0_\text{env}\rangle\right|\]
+\[|\rho_{12}(t)| = \frac{1}{2}\left|\langle 0_{\text{env}}| e^{-2i\lambda H_{\text{env}} t} |0_{\text{env}}\rangle\right|\]
 
 Numerical match: $1.7 \times 10^{-15}$ (machine precision). This is not approximate — it is an exact consequence of pure dephasing dynamics on orbit space.
 
 \subsection*{11.3 Fermi golden rule (P16 T3)}
 
-At short times: purity$(t) \approx 1 - 2\lambda^2 \cdot \text{Var}(H_\text{env}) \cdot t^2$
+At short times: purity$(t) \approx 1 - 2\lambda^2 \cdot \text{Var}(H_{\text{env}}) \cdot t^2$
 
 The decoherence rate scales as $\lambda^2$ (tested across 4 decades, spread 0.09\%). The rate is determined by the spectral variance of the environment Hamiltonian in the initial state — a graph-theoretic quantity.
 
@@ -439,7 +446,7 @@ P12 & Directional & Real orbit projectors structurally lose phase (SEC arrow) \\
 \midrule\endhead
 P13 & Precise & CHSH $> 2$ requires nontrivial Aut(G) on product graphs \\
 P14 & Precise & Orbit Laplacian Hamiltonian: $[P_g, H] = 0$ (gauge invariance structural) \\
-P15 & Precise & Decoherence rate $\Gamma^2 = \lambda^2 \cdot \text{Var}(H_\text{env})$ universal across ADE \\
+P15 & Precise & Decoherence rate $\Gamma^2 = \lambda^2 \cdot \text{Var}(H_{\text{env}})$ universal across ADE \\
 P16 & Precise & Orbit basis = pointer basis under dephasing coupling \\
 \bottomrule
 \end{longtable}

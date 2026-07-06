@@ -1,14 +1,18 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{iftex}
+\usepackage{amsmath,amsthm}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp}
+  \usepackage{amssymb}
 \else
+  % XeTeX/LuaTeX: amssymb BEFORE unicode-math (unicode-math then overrides it cleanly;
+  % the reverse order clashes on \eth). Keeps \square, \mathbb, \mathfrak available.
+  \usepackage{amssymb}
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
 \fi
-\usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -37,15 +41,18 @@
 
 \subsection*{On deriving the cosmological constant, resolving the S8 tension, and unifying three independent observables with a single temporal mechanism}
 
-\textbf{Peter Groom, Dawn Field Institute} \textbf{PACSeries Paper 9} \textbf{Date}: May 2026 \textbf{Version}: 1.0 (Draft)
+\textbf{Peter Groom, Dawn Field Institute} \\
+\textbf{PACSeries Paper 9} \\
+\textbf{Date}: May 2026 \\
+\textbf{Version}: 1.0 (Draft)
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
 \section*{Abstract}
 
-We present the first complete set of beyond-Standard-Model predictions from Dawn Field Theory (DFT), together with the temporal mechanism that generates them. Milestone 8 of DFT produced 10 pre-registered falsifiable predictions from 2 free parameters (Fibonacci cascade depth 73 and cascade level count $N$), with 7 truly independent predictions, overconstrained by 5. Milestone 9 reduces the free parameter count to 1 by deriving a cascade clock $N(t) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$ whose slope is fixed by DFT, not fitted to data.
+We present the first complete set of beyond-Standard-Model predictions from Dawn Field Theory (DFT), together with the temporal mechanism that generates them. Milestone 8 of DFT produced 10 pre-registered falsifiable predictions from 2 free parameters (Fibonacci cascade depth 73 and cascade level count $N$), with 7 truly independent predictions, overconstrained by 5. Milestone 9 reduces the free parameter count to 1 by deriving a cascade clock $N(t) = 1.360 + (1/\ln\varphi) \cdot \ln(t_{\text{lookback}})$ whose slope is fixed by DFT, not fitted to data.
 
-Main results: (1) The cosmological constant $\log_{10}(\Lambda/\Lambda_P) = -122.09$ at 0.09 orders from the observed value, from a parameter-free derivation. (2) The Hubble ratio $H_0^\text{local}/H_0^\text{CMB} = \varphi^{1/6} = 1.0835$ at 0.075\% from measured. (3) The S8 tension is resolved: cascade dissipation at the effective lensing redshift gives $S_8(z=0.35) = 0.769$ vs $0.768$ observed, reducing the tension from $3.22\sigma$ to $0.07\sigma$, a 98\% reduction without new particles or modified gravity. (4) Dark matter mass $= 6.44$ keV from two independent cascade routes (0.09 orders spread), with an X-ray decay line at 3.2 keV close to the observed 3.55 keV feature. (5) A Z' boson at $395 \pm 20$ GeV is not excluded (9$\times$ safety margin), with width 64 MeV and coupling $g'/g = 1/13$. (6) $\Xi = \gamma + \ln\varphi$ is proven to be the unique transition cost satisfying scale invariance ($g_\text{out} = g_\text{in}^2$).
+Main results: (1) The cosmological constant $\log_{10}(\Lambda/\Lambda_P) = -122.09$ at 0.09 orders from the observed value, from a parameter-free derivation. (2) The Hubble ratio $H_0^{\text{local}}/H_0^{\text{CMB}} = \varphi^{1/6} = 1.0835$ at 0.075\% from measured. (3) The S8 tension is resolved: cascade dissipation at the effective lensing redshift gives $S_8(z=0.35) = 0.769$ vs $0.768$ observed, reducing the tension from $3.22\sigma$ to $0.07\sigma$, a 98\% reduction without new particles or modified gravity. (4) Dark matter mass $= 6.44$ keV from two independent cascade routes (0.09 orders spread), with an X-ray decay line at 3.2 keV close to the observed 3.55 keV feature. (5) A Z' boson at $395 \pm 20$ GeV is not excluded (9$\times$ safety margin), with width 64 MeV and coupling $g'/g = 1/13$. (6) $\Xi = \gamma + \ln\varphi$ is proven to be the unique transition cost satisfying scale invariance ($g_{\text{out}} = g_{\text{in}}^2$).
 
 No predictions are excluded by current data, and none contradict Milestones 1–7 of DFT. The cascade clock unifies S8, Hubble, and JWST observations into a single temporal function with RMS residual 0.126. Four new falsifiable predictions target Euclid ($\sim 2027$), DESI DR2/DR3, and TDSL.
 
@@ -85,7 +92,7 @@ Calling a postdiction a prediction would be dishonest. We had 4 genuine predicti
 M8 has exactly 2 free parameters:
 \begin{enumerate}\tightlist
 \item \textbf{Depth 73}: The cascade depth of the dark matter candidate, identified as the unique third cyclotomic polynomial $\Phi_3(F_6) = 73$ in the dark-gravity gap $[32, 182]$
-\item \textbf{$N_\text{cascade} = 6$}: The number of completed cascade levels at the current cosmic epoch
+\item \textbf{$N_{\text{cascade}} = 6$}: The number of completed cascade levels at the current cosmic epoch
 \end{enumerate}
 
 From these 2 inputs, 7 truly independent predictions follow. The system is overconstrained by 5.
@@ -94,7 +101,7 @@ From these 2 inputs, 7 truly independent predictions follow. The system is overc
 
 M9 reduces the free parameter count to 1. The cascade clock:
 
-\[N(t_\text{lookback}) = 1.360 + \frac{1}{\ln\varphi} \cdot \ln(t_\text{lookback,Gyr})\]
+\[N(t_{\text{lookback}}) = 1.360 + \frac{1}{\ln\varphi} \cdot \ln(t_{\text{lookback,Gyr}})\]
 
 has its slope fixed at $1/\ln\varphi = 2.0781$ (DFT-constrained, not fitted). The intercept $a = 1.360$ is fit from 3 data points with RMS = 0.126. The value $N = 6$ at the current epoch is no longer a free parameter — it is a consequence of the clock at the current cosmic age.
 
@@ -116,7 +123,7 @@ M8 & Correction template $F_a/(m\pi F_b^2)$ & $-122.09$ & 0.09 \\
 \bottomrule
 \end{longtable}
 
-The M8 result uses the correction template (Paper 4) applied to the vacuum energy density. The template — a ratio of Fibonacci numbers times a correction factor — was developed for gauge couplings and mass ratios. Applied to $\Lambda$, it gives $\Omega_\Lambda$ within 0.18\% of the Planck 2018 value.
+The M8 result uses the correction template (Paper 4) applied to the vacuum energy density. The template — a ratio of Fibonacci numbers times a correction factor — was developed for gauge couplings and mass ratios. Applied to $\Lambda$, it gives $\Omega_{\Lambda}$ within 0.18\% of the Planck 2018 value.
 
 \subsection*{3.2 Sensitivity}
 
@@ -124,7 +131,7 @@ The CC prediction is robust: perturbing the cascade depth by $\pm 5\%$ shifts th
 
 \subsection*{3.3 Dark energy density}
 
-The derived dark energy fraction $\Omega_\Lambda = 0.686$ vs Planck $0.685$ (0.18\% error). The dark energy equation of state at $z = 0$ is $w = -0.987$ (from M9's $N_\text{physical}$ boundary handling), consistent with $w = -1$ to within 1.3\%.
+The derived dark energy fraction $\Omega_{\Lambda} = 0.686$ vs Planck $0.685$ (0.18\% error). The dark energy equation of state at $z = 0$ is $w = -0.987$ (from M9's $N_{\text{physical}}$ boundary handling), consistent with $w = -1$ to within 1.3\%.
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -136,11 +143,11 @@ The Hubble constant measured locally (SH0ES: $73.04 \pm 1.04$ km/s/Mpc) disagree
 
 \subsection*{4.2 DFT mechanism: discrete cascade levels}
 
-The cascade operates in discrete levels. At the current epoch, we are at cascade level $N_\text{floor} = 6$ (81\% through, but the completed level count is 6). The local Hubble constant receives a discrete correction:
+The cascade operates in discrete levels. At the current epoch, we are at cascade level $N_{\text{floor}} = 6$ (81\% through, but the completed level count is 6). The local Hubble constant receives a discrete correction:
 
-\[\frac{H_0^\text{local}}{H_0^\text{CMB}} = \varphi^{1/N_\text{floor}} = \varphi^{1/6} = 1.0835\]
+\[\frac{H_0^{\text{local}}}{H_0^{\text{CMB}}} = \varphi^{1/N_{\text{floor}}} = \varphi^{1/6} = 1.0835\]
 
-This gives $H_0^\text{local} = 67.36 \times 1.0835 = 73.0$ km/s/Mpc, matching SH0ES at $0.05\sigma$.
+This gives $H_0^{\text{local}} = 67.36 \times 1.0835 = 73.0$ km/s/Mpc, matching SH0ES at $0.05\sigma$.
 
 \subsection*{4.3 Look-elsewhere analysis}
 
@@ -162,11 +169,11 @@ The $S_8 = \sigma_8 \sqrt{\Omega_m/0.3}$ parameter measures the amplitude of mat
 
 The cascade clock assigns a level $N(z)$ to each redshift. The S8 parameter at redshift $z$ is:
 
-\[S_8(z) = S_8^\text{CMB} \times \left(1 - d_\text{eff}\right)^{N(z)}\]
+\[S_8(z) = S_8^{\text{CMB}} \times \left(1 - d_{\text{eff}}\right)^{N(z)}\]
 
-where $d_\text{eff} = 0.054$ (5.4\% effective dissipation per level, from 6 cascade levels).
+where $d_{\text{eff}} = 0.054$ (5.4\% effective dissipation per level, from 6 cascade levels).
 
-At the effective lensing redshift $z_\text{eff} = 0.35$:
+At the effective lensing redshift $z_{\text{eff}} = 0.35$:
 \begin{itemize}\tightlist
 \item Cascade level: $N(z = 0.35) \approx 4.16$
 \item Predicted: $S_8(0.35) = 0.769$
@@ -178,7 +185,7 @@ The $3.22\sigma$ tension is reduced to $0.07\sigma$, a 98\% reduction.
 
 \subsection*{5.3 Robustness}
 
-The dissipation rate $d_\text{eff} = 0.054$ is not fitted to the S8 data; it follows from the cascade structure: 6 levels of $\varphi$-splitting, each dissipating $\ln\varphi$ nats, gives a cumulative dissipation that matches the S8 ratio. The cascade level at $z = 0.35$ comes from the clock, not from fitting.
+The dissipation rate $d_{\text{eff}} = 0.054$ is not fitted to the S8 data; it follows from the cascade structure: 6 levels of $\varphi$-splitting, each dissipating $\ln\varphi$ nats, gives a cumulative dissipation that matches the S8 ratio. The cascade level at $z = 0.35$ comes from the clock, not from fitting.
 
 \subsection*{5.4 Euclid prediction}
 
@@ -231,7 +238,7 @@ Geometric mean: 6.44 keV. Spread: 0.09 orders (factor $\sim 1.4$). Both routes u
 \item \textbf{Lyman-$\alpha$ bound}: $m > 3.3$ keV for warm dark matter. Our 6.44 keV satisfies this with margin.
 \item \textbf{X-ray decay line}: If the depth-73 particle decays radiatively, the line energy is $\sim 3.2$ keV. The Bulbul et al. (2014) detection of a $3.55$ keV line from galaxy clusters is close but not identical. The status of the 3.55 keV line is debated — some analyses find it, others don't. XRISM ($\sim 2025$–2026) and Athena ($\sim 2037$) will resolve this.
 \item \textbf{Self-interaction}: $\sigma/m < 1$ cm$^2$/g (Bullet Cluster bound) is satisfied, with DFT predicting $\sigma/m < 10^{-20}$ cm$^2$/g at depth 73.
-\item \textbf{Production}: Thermal freeze-out is excluded ($\Omega_\text{thermal} \gg 1$). Dodelson-Widrow (freeze-in) with mixing $\sim 10^{-10}$ reproduces $\Omega_c h^2 = 0.120$. Free-streaming length $\lambda_\text{fs} = 0.016$ Mpc — warm, not hot.
+\item \textbf{Production}: Thermal freeze-out is excluded ($\Omega_{\text{thermal}} \gg 1$). Dodelson-Widrow (freeze-in) with mixing $\sim 10^{-10}$ reproduces $\Omega_c h^2 = 0.120$. Free-streaming length $\lambda_{\text{fs}} = 0.016$ Mpc — warm, not hot.
 \end{itemize}
 
 \subsection*{6.4 Dark energy fraction}
@@ -252,7 +259,7 @@ with coupling $g'/g = 1/F_7 = 1/13$ and width $\Gamma = 64$ MeV.
 
 \subsection*{7.2 LHC status}
 
-At 395 GeV with coupling $1/13$, the cross-section ratio $\sigma_\text{DFT}/\sigma_\text{excluded} = 0.11$ — a $9\times$ safety margin. The Z' is not excluded, and not detected. Run 4 of the LHC (HL-LHC, $\sim 2030$) at 3000 fb$^{-1}$ may reach the sensitivity required.
+At 395 GeV with coupling $1/13$, the cross-section ratio $\sigma_{\text{DFT}}/\sigma_{\text{excluded}} = 0.11$ — a $9\times$ safety margin. The Z' is not excluded, and not detected. Run 4 of the LHC (HL-LHC, $\sim 2030$) at 3000 fb$^{-1}$ may reach the sensitivity required.
 
 \subsection*{7.3 Branching ratios}
 
@@ -266,13 +273,13 @@ The dominant visible channels have branching ratios consistent with a $Z'$ coupl
 
 M9 established that the cascade is a temporal process. Each boundary crossing costs $\Xi$ nats and takes time proportional to $\varphi^n$ (where $n$ is the level). The cascade level as a function of lookback time:
 
-\[N(t_\text{lookback}) = a + \frac{1}{\ln\varphi} \cdot \ln(t_\text{lookback, Gyr})\]
+\[N(t_{\text{lookback}}) = a + \frac{1}{\ln\varphi} \cdot \ln(t_{\text{lookback, Gyr}})\]
 
 The slope $1/\ln\varphi = 2.0781$ is DFT-constrained. The intercept $a = 1.360$ is fit from three M8 data points:
 
 \begin{longtable}[]{@{}llll@{}}
 \toprule
-Observable & $N$ & $t_\text{lookback}$ (Gyr) & $z_\text{eff}$ \\
+Observable & $N$ & $t_{\text{lookback}}$ (Gyr) & $z_{\text{eff}}$ \\
 \midrule\endhead
 S8 & 4.16 & 4.0 & 0.4 \\
 Hubble & 5.94 & 9.5 & 1.5 \\
@@ -286,18 +293,18 @@ RMS residual: 0.126.
 
 The cascade clock has physical boundaries:
 \begin{itemize}\tightlist
-\item $z = 0$ (present): $N = N_\text{max} = 6.814$
-\item $t < t_1 = 0.520$ Gyr: $N = N_\text{max}$ (pre-cascade regime, no boundary crossings yet)
+\item $z = 0$ (present): $N = N_{\text{max}} = 6.814$
+\item $t < t_1 = 0.520$ Gyr: $N = N_{\text{max}}$ (pre-cascade regime, no boundary crossings yet)
 \item $t \geq t_1$: $N = \max(\text{clock formula}, 1.0)$ (minimum 1 completed level)
 \end{itemize}
 
-The anchor time $t_1 = 520$ Myr corresponds to first-star formation — the epoch when the first significant information-processing structures emerged. The ratio $t_1 / t_\text{lookback,min} = 2.60$ is within the $\varphi^2 = 2.618$ range, suggesting the anchor timescale is itself Fibonacci-structured.
+The anchor time $t_1 = 520$ Myr corresponds to first-star formation — the epoch when the first significant information-processing structures emerged. The ratio $t_1 / t_{\text{lookback,min}} = 2.60$ is within the $\varphi^2 = 2.618$ range, suggesting the anchor timescale is itself Fibonacci-structured.
 
 \subsection*{8.3 $\Xi$ as transition cost}
 
-Each boundary crossing costs $\Xi = \gamma + \ln\varphi = 1.0584$ nats. M9 proved this is the unique value satisfying scale invariance: the requirement $g_\text{out} = g_\text{in}^2$ (output at one level equals the square of the input at the next) has a unique positive solution $g_\text{in} = 1/\varphi$, giving transition cost $\Xi$.
+Each boundary crossing costs $\Xi = \gamma + \ln\varphi = 1.0584$ nats. M9 proved this is the unique value satisfying scale invariance: the requirement $g_{\text{out}} = g_{\text{in}}^2$ (output at one level equals the square of the input at the next) has a unique positive solution $g_{\text{in}} = 1/\varphi$, giving transition cost $\Xi$.
 
-The slope-$\Xi$ product $B_\text{DFT} \times \Xi = 2.0781 \times 1.0584 = 2.200$ matches the free-fit slope $B_\text{free} = 2.264$ within 2.85\%.
+The slope-$\Xi$ product $B_{\text{DFT}} \times \Xi = 2.0781 \times 1.0584 = 2.200$ matches the free-fit slope $B_{\text{free}} = 2.264$ within 2.85\%.
 
 \subsection*{8.4 Phi self-similarity}
 
@@ -312,7 +319,7 @@ This is not in cumulative sums (which converge to 1 for any convergent geometric
 
 \subsection*{8.5 Algebraic uniqueness of $\varphi$}
 
-The scale invariance condition $g_\text{out} = g_\text{in}^2$ requires $g_\text{in}^2 + g_\text{in} - 1 = 0$, whose unique positive root is $1/\varphi$. All non-$\varphi$ constants show $> 1\%$ violation (error $= |g^2 + g - 1|$). For $1/\varphi$: error $= 1 \times 10^{-16}$.
+The scale invariance condition $g_{\text{out}} = g_{\text{in}}^2$ requires $g_{\text{in}}^2 + g_{\text{in}} - 1 = 0$, whose unique positive root is $1/\varphi$. All non-$\varphi$ constants show $> 1\%$ violation (error $= |g^2 + g - 1|$). For $1/\varphi$: error $= 1 \times 10^{-16}$.
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -339,7 +346,7 @@ With 1 free parameter and 7 independent predictions, the system is overconstrain
 
 \subsection*{10.1 Slope gap (8.9\%)}
 
-The DFT-constrained slope $B_\text{DFT} = 2.0781$ differs from the free-fit slope $B_\text{free} = 2.264$ by 8.9\%. Monte Carlo analysis shows $B_\text{DFT}$ falls at the 38.6th percentile of the free-fit distribution — well within the 95\% confidence interval.
+The DFT-constrained slope $B_{\text{DFT}} = 2.0781$ differs from the free-fit slope $B_{\text{free}} = 2.264$ by 8.9\%. Monte Carlo analysis shows $B_{\text{DFT}}$ falls at the 38.6th percentile of the free-fit distribution — well within the 95\% confidence interval.
 
 The gap is noise. With 3 data points, the free-fit has essentially zero degrees of freedom. Intermediate-redshift data from Euclid and DESI will resolve this: if the DFT slope is correct, additional data points will tighten around 2.078, not 2.264.
 
@@ -360,9 +367,9 @@ We do not know which.
 
 Different observables prefer different cascade levels:
 \begin{itemize}\tightlist
-\item S8: $N \approx 4.16$ (at $z_\text{eff} = 0.4$)
-\item Hubble: $N \approx 5.94$ (at $z_\text{eff} = 1.5$)
-\item JWST: $N \approx 6.90$ (at $z_\text{eff} = 10$)
+\item S8: $N \approx 4.16$ (at $z_{\text{eff}} = 0.4$)
+\item Hubble: $N \approx 5.94$ (at $z_{\text{eff}} = 1.5$)
+\item JWST: $N \approx 6.90$ (at $z_{\text{eff}} = 10$)
 \end{itemize}
 
 These are not inconsistent; they are the cascade clock evaluated at different epochs. The "tension" disappears when $N$ is time-dependent rather than constant.
@@ -381,11 +388,11 @@ The atmospheric-to-solar mass splitting ratio $\Delta m^2_{31} / \Delta m^2_{21}
 
 \subsection*{11.3 CP phase}
 
-$\delta_\text{CP} = \Xi \times 60° = 63.5°$. Compatible with PDG ranges. DUNE/T2HK will measure this to $\pm 10°$.
+$\delta_{\text{CP}} = \Xi \times 60° = 63.5°$. Compatible with PDG ranges. DUNE/T2HK will measure this to $\pm 10°$.
 
 \subsection*{11.4 Mass sum}
 
-$\Sigma m_\nu = 0.43$ meV (well below cosmological bounds of $< 0.12$ eV).
+$\Sigma m_{\nu} = 0.43$ meV (well below cosmological bounds of $< 0.12$ eV).
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -399,7 +406,7 @@ JWST discovered unexpectedly massive galaxies at $z > 7$, more structure than $\
 
 The cascade floor (minimum structure fraction) decays with redshift:
 
-\[f(z) = f_0 \cdot \exp(-z/z_\text{cascade}), \quad z_\text{cascade} = \ln\varphi \times N\]
+\[f(z) = f_0 \cdot \exp(-z/z_{\text{cascade}}), \quad z_{\text{cascade}} = \ln\varphi \times N\]
 
 At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs JWST-observed $\sim 0.30$. This formula has zero free parameters.
 
@@ -418,7 +425,7 @@ At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs
 3 & P & Z' mass & $395 \pm 20$ GeV & LHC narrow resonance \\
 4 & C & Z' coupling & $g'/g = 1/13$ & LHC rate measurement \\
 5 & P & Neutrino hierarchy & Normal & JUNO ($\sim 2028$) \\
-6 & D & $\delta_\text{CP}$ & $63.5° \pm 10°$ & DUNE/T2HK \\
+6 & D & $\delta_{\text{CP}}$ & $63.5° \pm 10°$ & DUNE/T2HK \\
 7 & D & $w_0$ & $-0.83 \pm 0.05$ & DESI DR2+ \\
 8 & D & Hubble ratio & $\varphi^{1/6} = 1.0835$ & Independent $H_0$ \\
 9 & C & X-ray line & $\sim 3.2$ keV & XRISM, Athena \\
@@ -435,7 +442,7 @@ At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs
 11 & P & $S_8(z)$ variation & $S_8(0.2) = 0.750$, $S_8(1.0) = 0.785$ & Euclid ($\sim 2027$) \\
 12 & P & $H_0$ probe dependence & Discrete $\varphi^{1/6}$ step & TDSL vs distance ladder \\
 13 & P & $w(z)$ curvature & Non-CPL-linear & DESI DR2/DR3 \\
-14 & P & Level 7 completion & $t_\text{lookback} = 15.1$ Gyr & Future cosmic surveys \\
+14 & P & Level 7 completion & $t_{\text{lookback}} = 15.1$ Gyr & Future cosmic surveys \\
 \bottomrule
 \end{longtable}
 
@@ -491,7 +498,7 @@ At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs
 
 DFT's Milestones 8 and 9 transition the framework from retrodiction to prediction. From 2 free parameters (reduced to 1 by the cascade clock), we derive 14 falsifiable predictions spanning particle physics, neutrino physics, and cosmology. Zero are excluded by current data. The S8 tension — one of the most significant discrepancies in modern cosmology — is resolved to $0.07\sigma$ through a physical mechanism (cascade dissipation) rather than parameter fitting.
 
-The cascade clock $N(t) = 1.360 + 2.0781 \cdot \ln(t_\text{lookback})$ unifies three independent observables (S8, Hubble, JWST) into a single temporal function. Its slope is DFT-constrained, its intercept anchors to first-star formation, and its predictions are falsifiable by Euclid, DESI, JUNO, and the LHC within the next 2–5 years.
+The cascade clock $N(t) = 1.360 + 2.0781 \cdot \ln(t_{\text{lookback}})$ unifies three independent observables (S8, Hubble, JWST) into a single temporal function. Its slope is DFT-constrained, its intercept anchors to first-star formation, and its predictions are falsifiable by Euclid, DESI, JUNO, and the LHC within the next 2–5 years.
 
 Three failures remain (slope gap, DESI $w_a$, $N$-universality). Two are likely noise (slope, $N$). One is a genuine tension (DESI $w_a$) that requires either updated data or sub-leading corrections. The framework is young, overconstrained, and falsifiable. It will either survive the next generation of precision cosmology or break cleanly.
 

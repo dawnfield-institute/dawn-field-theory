@@ -22,15 +22,19 @@ from pathlib import Path
 
 PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 \usepackage{iftex}
+\usepackage{amsmath,amsthm}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp}
+  \usepackage{amssymb}
 \else
+  %% XeTeX/LuaTeX: amssymb BEFORE unicode-math (unicode-math then overrides it cleanly;
+  %% the reverse order clashes on \eth). Keeps \square, \mathbb, \mathfrak available.
+  \usepackage{amssymb}
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
 \fi
-\usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -60,6 +64,15 @@ PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 
 FOOTER = "\n\\end{document}\n"
 
+# Brace a macro (and its single-brace arg) when it's a bare sub/superscript target:
+# `_\mathbb{C}` -> `_{\mathbb{C}}`, `^\top` -> `^{\top}`. Valid in amsmath but unicode-math
+# (XeTeX) requires the braces. Applied to math spans only, so it never touches prose.
+_SUBSUP = re.compile(r'([_^])(\\[a-zA-Z]+(?:\{[^{}]*\})?)')
+
+
+def _norm_math(s):
+    return _SUBSUP.sub(r'\1{\2}', s)
+
 
 def escape_tex(s):
     # s has NO math/code spans (already protected). Escape LaTeX specials.
@@ -82,7 +95,10 @@ def inline(text, store):
     """Protect math/code, escape, then apply md inline formatting, then restore."""
     # 1. protect $$...$$, $...$, `code`
     def protect(pat, m):
-        store.append(m.group(0) if pat != 'code' else '\\texttt{' + escape_tex(m.group(1)) + '}')
+        if pat == 'code':
+            store.append('\\texttt{' + escape_tex(m.group(1)) + '}')
+        else:
+            store.append(_norm_math(m.group(0)))
         return f'\x00{len(store)-1}\x00'
     text = re.sub(r'\$\$.*?\$\$', lambda m: protect('math', m), text, flags=re.S)
     text = re.sub(r'(?<!\\)\$.+?(?<!\\)\$', lambda m: protect('math', m), text)
@@ -163,14 +179,14 @@ def convert(md, title):
 
         # display math block
         if stripped.startswith('$$') and stripped.endswith('$$') and len(stripped) > 3:
-            out.append(r'\[' + stripped[2:-2].strip() + r'\]')
+            out.append(r'\[' + _norm_math(stripped[2:-2].strip()) + r'\]')
             i += 1; continue
         if stripped == '$$':
             i += 1; buf = []
             while i < n and lines[i].strip() != '$$':
                 buf.append(lines[i]); i += 1
             i += 1
-            out.append(r'\[' + '\n'.join(buf) + r'\]')
+            out.append(r'\[' + _norm_math('\n'.join(buf)) + r'\]')
             continue
 
         # headings
@@ -229,7 +245,12 @@ def convert(md, title):
         i += 1
         while i < n and lines[i].strip() != '' and not re.match(r'^(#{1,6}\s|\s*[-*]\s|\s*\d+\.\s|\$\$|```|-{3,}$)', lines[i]) and not ('|' in lines[i] and i+1 < n):
             para.append(lines[i]); i += 1
-        out.append(inline(' '.join(p.strip() for p in para), store))
+        # consecutive bold-only lines are a metadata block (author / paper no. / date /
+        # version) — stack them with LaTeX line breaks instead of flowing into one line
+        if len(para) > 1 and all(re.match(r'^\*\*.+\*\*', p.strip()) for p in para):
+            out.append(' \\\\\n'.join(inline(p.strip(), store) for p in para))
+        else:
+            out.append(inline(' '.join(p.strip() for p in para), store))
 
     return '\n'.join(out)
 

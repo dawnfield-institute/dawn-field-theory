@@ -1,14 +1,18 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{iftex}
+\usepackage{amsmath,amsthm}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp}
+  \usepackage{amssymb}
 \else
+  % XeTeX/LuaTeX: amssymb BEFORE unicode-math (unicode-math then overrides it cleanly;
+  % the reverse order clashes on \eth). Keeps \square, \mathbb, \mathfrak available.
+  \usepackage{amssymb}
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
 \fi
-\usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -37,15 +41,18 @@
 
 \subsection*{A test of the cascade clock's universality against quasar absorption lines}
 
-\textbf{Peter Groom, Dawn Field Institute} \textbf{PACSeries Paper 12} \textbf{Date}: June 2026 \textbf{Version}: 1.0 (Draft)
+\textbf{Peter Groom, Dawn Field Institute} \\
+\textbf{PACSeries Paper 12} \\
+\textbf{Date}: June 2026 \\
+\textbf{Version}: 1.0 (Draft)
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
 \section*{Abstract}
 
-We make first observational contact between the DFT cascade clock and quasar absorption spectroscopy. The clock $N(z) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$, previously validated on three cosmological observables (S8, H0, JWST), generates one sharp, DFT-specific prediction for absorption lines: non-monotonic width oscillation at integer cascade levels, with named transition redshifts $z = 0.101, 0.171, 0.302, 0.579, 1.416$. This prediction was pre-registered on GitHub (commit \texttt{193d1c8e}) before any observational data was examined.
+We make first observational contact between the DFT cascade clock and quasar absorption spectroscopy. The clock $N(z) = 1.360 + (1/\ln\varphi) \cdot \ln(t_{\text{lookback}})$, previously validated on three cosmological observables (S8, H0, JWST), generates one sharp, DFT-specific prediction for absorption lines: non-monotonic width oscillation at integer cascade levels, with named transition redshifts $z = 0.101, 0.171, 0.302, 0.579, 1.416$. This prediction was pre-registered on GitHub (commit \texttt{193d1c8e}) before any observational data was examined.
 
-The oscillation prediction is falsified. Z-detrending kills every oscillatory signal. The surviving smooth correlation — $b \propto \ln t_\text{lookback}$ at $R^2 = 0.85$ over 443,000 CIV systems — is consistent with the predicted logarithmic form, with the $\varphi$-determined slope costing zero $R^2$ against the free fit, and it outperforms the standard halo-virial scaling, which collapses to $\alpha \approx 0$ when fit ($\Delta\text{BIC} = 44$). But it remains degenerate with generic cosmic-time evolution ($z^2$ achieves $R^2 = 0.86$ with one more parameter). Absorption spectroscopy in the well-sampled $z = 1.5$–$4.5$ range does not have the leverage to discriminate the cascade clock from its smooth mimics.
+The oscillation prediction is falsified. Z-detrending kills every oscillatory signal. The surviving smooth correlation — $b \propto \ln t_{\text{lookback}}$ at $R^2 = 0.85$ over 443,000 CIV systems — is consistent with the predicted logarithmic form, with the $\varphi$-determined slope costing zero $R^2$ against the free fit, and it outperforms the standard halo-virial scaling, which collapses to $\alpha \approx 0$ when fit ($\Delta\text{BIC} = 44$). But it remains degenerate with generic cosmic-time evolution ($z^2$ achieves $R^2 = 0.86$ with one more parameter). Absorption spectroscopy in the well-sampled $z = 1.5$–$4.5$ range does not have the leverage to discriminate the cascade clock from its smooth mimics.
 
 The paper contributes three things. First, a pre-registered, falsifiable prediction. Its falsification localizes where the clock loses discriminating power and establishes a reusable z-detrending methodology. Second, a two-channel concept: DFT predicts photons carry a conserved channel (PAC: line ratios, invariant to machine precision via integer ADE topology) and a historical channel (SEC: line profiles, epoch-dependent). This partition survives regardless of the cascade clock's parameterization and offers a new separation of structural from thermodynamic information in multi-line spectroscopy. Third, a forward program: the cascade clock and its polynomial mimics diverge outside the fitted range, making $z > 5$ (JWST) and $z < 0.5$ (CaII) the discriminating tests.
 
@@ -59,7 +66,7 @@ The paper contributes three things. First, a pre-registered, falsifiable predict
 
 \subsection*{1.1 What the cascade clock predicts}
 
-The DFT cascade clock (Paper 9) derives from the PAC conservation axiom. The temporal function $N(t) = a + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$ was calibrated on three independent cosmological data points:
+The DFT cascade clock (Paper 9) derives from the PAC conservation axiom. The temporal function $N(t) = a + (1/\ln\varphi) \cdot \ln(t_{\text{lookback}})$ was calibrated on three independent cosmological data points:
 
 \begin{itemize}\tightlist
 \item $S_8(z = 0.35) = 0.769$ vs $0.768$ observed ($3.22\sigma \to 0.07\sigma$)
@@ -81,7 +88,10 @@ $N(z)$ is a monotone function of redshift. Any observable that evolves monotonic
 
 \section*{2. Data}
 
-\textbf{SDSS DR16 MgII}: 89,291 systems ($z = 0.35$–$2.28$) from MPA-Garching. \textbf{SDSS DR16 FeII-confirmed}: 52,872 systems with 4 transitions. \textbf{SDSS DR12 CIV}: 443,000 systems ($z = 1.4$–$5.0$) from Monadi et al. (2023). \textbf{XQR-30}: 5,764 components, 42 sightlines ($z = 2.0$–$6.5$), 8 ionic species (Davies et al. 2023).
+\textbf{SDSS DR16 MgII}: 89,291 systems ($z = 0.35$–$2.28$) from MPA-Garching. \\
+\textbf{SDSS DR16 FeII-confirmed}: 52,872 systems with 4 transitions. \\
+\textbf{SDSS DR12 CIV}: 443,000 systems ($z = 1.4$–$5.0$) from Monadi et al. (2023). \\
+\textbf{XQR-30}: 5,764 components, 42 sightlines ($z = 2.0$–$6.5$), 8 ionic species (Davies et al. 2023).
 
 \begin{center}\rule{0.5\linewidth}{0.4pt}\end{center}
 
@@ -113,20 +123,20 @@ The clock's non-monotonic feature does not imprint on absorption line statistics
 
 \subsection*{4.1 CIV velocity tracks lookback time}
 
-The CIV Doppler $b$-parameter (binned medians, 97 bins over $z = 1.5$–$4.5$, 443,642 systems) correlates with $\ln(t_\text{lookback})$ at $R^2 = 0.853$. The data is consistent with the predicted logarithmic form. A second observable from the same catalog — the CIV doublet equivalent-width ratio — shows the same logarithmic preference at lower amplitude ($R^2 = 0.51$ vs $0.45$ for linear $z$; exp\_12). The two observables are not conflated in what follows: all model-comparison numbers refer to the $b$-parameter (exp\_18).
+The CIV Doppler $b$-parameter (binned medians, 97 bins over $z = 1.5$–$4.5$, 443,642 systems) correlates with $\ln(t_{\text{lookback}})$ at $R^2 = 0.853$. The data is consistent with the predicted logarithmic form. A second observable from the same catalog — the CIV doublet equivalent-width ratio — shows the same logarithmic preference at lower amplitude ($R^2 = 0.51$ vs $0.45$ for linear $z$; exp\_12). The two observables are not conflated in what follows: all model-comparison numbers refer to the $b$-parameter (exp\_18).
 
 Fixing the slope to the $\varphi$-determined value $1/\ln\varphi = 2.0781$ — rather than fitting it — costs zero $R^2$: the constrained-to-free slope ratio is $1.000000$ at machine precision (exp\_12 T2, exp\_18). The data is exactly as consistent with $\varphi$-rate evolution as with the best free logarithmic fit. This is the strongest pro-clock statement the interpolation range supports, with the caveat of §4.2.
 
 \subsection*{4.2 Degeneracy limits}
 
-The zero-cost result does not test $\varphi$ specifically: $N(z)$ is an affine function of $\ln(t)$, so the free per-observable amplitude absorbs the $\varphi$-determined slope. Against the correct null — smooth functions of cosmic time — the cascade clock beats the standard astrophysical model but does not uniquely win (exp\_18; BIC = $n\ln(\text{SS}_\text{res}/n) + k\ln n$, lower is better):
+The zero-cost result does not test $\varphi$ specifically: $N(z)$ is an affine function of $\ln(t)$, so the free per-observable amplitude absorbs the $\varphi$-determined slope. Against the correct null — smooth functions of cosmic time — the cascade clock beats the standard astrophysical model but does not uniquely win (exp\_18; BIC = $n\ln(\text{SS}_{\text{res}}/n) + k\ln n$, lower is better):
 
 \begin{longtable}[]{@{}llll@{}}
 \toprule
 Model & Parameters & $R^2$ & BIC \\
 \midrule\endhead
 $z$ (linear) & 2 & 0.720 & 387.8 \\
-Halo virial $A + B(1+z)^\alpha$ & 3 & 0.780 & 368.8 \\
+Halo virial $A + B(1+z)^{\alpha}$ & 3 & 0.780 & 368.8 \\
 $\ln(t)$ / cascade clock & 2 & 0.853 & 325.2 \\
 $z^2$ (quadratic) & 3 & 0.864 & 322.2 \\
 $z^3$ (cubic) & 4 & 0.877 & 317.1 \\
@@ -167,7 +177,7 @@ These are classified \textbf{[B]} at best and reported with deliberate caution: 
 
 DFT predicts photons carry two channels:
 
-\textbf{PAC channel (conserved)}: spectral line ratios, determined by discrete ADE graph topology. The adjacency matrix is integer-valued and cannot evolve continuously. The conserved class is invariant exactly, to machine precision, because the underlying object is a graph with integer entries. This topological exactness is DFT-specific: the Standard Model also predicts invariant ratios, but DFT predicts \emph{why} (integer topology) and \emph{how precisely} (exactly). The derivation of $\alpha_\text{EM}$ to 5.7 ppm from Fibonacci structure (Paper 4, \textbf{[A]}) is a hard commitment: $\alpha$ cannot drift because $\varphi$ is a fixed point and Fibonacci numbers are integers. Confirming $\alpha$-invariance does not discriminate DFT from the SM (both predict it), but violation would falsify DFT, an asymmetric test.
+\textbf{PAC channel (conserved)}: spectral line ratios, determined by discrete ADE graph topology. The adjacency matrix is integer-valued and cannot evolve continuously. The conserved class is invariant exactly, to machine precision, because the underlying object is a graph with integer entries. This topological exactness is DFT-specific: the Standard Model also predicts invariant ratios, but DFT predicts \emph{why} (integer topology) and \emph{how precisely} (exactly). The derivation of $\alpha_{\text{EM}}$ to 5.7 ppm from Fibonacci structure (Paper 4, \textbf{[A]}) is a hard commitment: $\alpha$ cannot drift because $\varphi$ is a fixed point and Fibonacci numbers are integers. Confirming $\alpha$-invariance does not discriminate DFT from the SM (both predict it), but violation would falsify DFT, an asymmetric test.
 
 \textbf{SEC channel (historical)}: spectral line widths, shapes, and profiles, determined by the entropy state at the absorption site. Different epochs have different SEC states; the profiles evolve. The cascade clock parameterizes this evolution, though not uniquely (§4.2).
 
@@ -200,7 +210,7 @@ We tested whether CIV $b$, MgII FWHM, and Fe/Mg ratio share a common shape again
 
 The ionization redistribution crossover lies between AlIII (18.8 eV) and SiIV (33.5 eV). UV-background hardening does not predict the crossover location; a derived value would be DFT-specific.
 
-The derivation now exists. The Milestone R energy-scale machinery (exp\_24: EM-scale energies are $\alpha(d)^2 m_\text{mediator}$, validated by the Rydberg at 11.4 ppm) gives the ledger-severance cost as the full Coulomb energy $\alpha^2 m_e c^2$ = one Hartree = 27.2 eV, at the center of the observed bracket. The prediction, including the factor-of-2 argument (severance costs the full interaction energy, not the virial-halved binding energy), was registered at commit \texttt{d9c77a81} before measurement.
+The derivation now exists. The Milestone R energy-scale machinery (exp\_24: EM-scale energies are $\alpha(d)^2 m_{\text{mediator}}$, validated by the Rydberg at 11.4 ppm) gives the ledger-severance cost as the full Coulomb energy $\alpha^2 m_e c^2$ = one Hartree = 27.2 eV, at the center of the observed bracket. The prediction, including the factor-of-2 argument (severance costs the full interaction energy, not the virial-halved binding energy), was registered at commit \texttt{d9c77a81} before measurement.
 
 The first measurement (exp\_19, pre-registered metric: per-ion fractional EW slope vs $N(z)$ across seven ions in four catalogs) returned \textbf{inconclusive}: the coupling metric is not portable across surveys with different selection and EW regimes, and the cross-survey curve is non-monotone by construction. Within homogeneous data the law's structure appears: CaII coupling is consistent with zero ($\beta = +0.03$, CI95 $[-0.06, +0.10]$ — the settled-phase anchor, now with an error bar), the SDSS-only ordering rises monotonically (CaII $\to$ FeII $\to$ MgII $\to$ CIV), and XQR-30 alone reproduces the sign flip between 8.2 and 33.5 eV. Localizing the zero crossing — the actual test of 27.2 eV — requires intermediate-IP statistics (CII at 11.3 eV, AlIII at 18.8 eV) that current public catalogs do not provide at the registered quality floor. The Hartree prediction stands, untested, for that dataset.
 
