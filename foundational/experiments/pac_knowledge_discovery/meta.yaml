@@ -1,32 +1,39 @@
-schema_version: "2.0"
-description: "PAC-driven discovery of unknown children in informational hierarchies using N² convergence analysis"
-semantic_scope: "implementation"
-proficiency_level: "research"
-created: "2026-01-20"
-status: "hypothesis"
+schema_version: '2.0'
+description: PAC-driven discovery of unknown children in informational hierarchies
+  using N² convergence analysis
+semantic_scope: implementation
+proficiency_level: research
+created: '2026-01-20'
+status: hypothesis
+hypothesis: 'N² convergence between feature spaces detects PAC conservation structure.
 
-hypothesis: |
-  N² convergence between feature spaces detects PAC conservation structure.
   PAC residuals (f(parent) - Σf(children)) expose missing children.
+
   SEC entropy field analysis reveals unexplored territory.
+
   This enables AI-guided discovery of unknown unknowns.
 
+  '
 dependencies:
-  - "../arithmetic/PACEngine/"
-  - "../arithmetic/macro_emergence_dynamics/"
-  - "../arithmetic/infodynamics_arithmetic_v1.md"
-
+- ../arithmetic/PACEngine/
+- ../arithmetic/macro_emergence_dynamics/
+- ../arithmetic/infodynamics_arithmetic_v1.md
 validation_domains:
-  - synthetic hierarchies with known missing children
-  - public datasets (MovieLens, health, finance)
-  - cross-domain generalization tests
-
+- synthetic hierarchies with known missing children
+- public datasets (MovieLens, health, finance)
+- cross-domain generalization tests
 key_constants:
   convergence_threshold: 0.05
   xi_balance: 1.0571
   med_depth_bound: 2
   med_node_bound: 3
-
 files:
-  - "[README.md]": "Hypothesis, success criteria, falsification conditions"
-  - "[SYNTHESIS.md]": "Connections to PAC/SEC/MED theory and prior work"
+- PROPOSAL_APPLIED_DFT.md
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- data
+- journals
+- results
+- scripts

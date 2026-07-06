@@ -1,48 +1,59 @@
 schema_version: '2.0'
 id: pacseries-paper-10
-title: "Connection, Identity, and Spacetime"
-subtitle: "Deriving the Lorentz group, invariant interval, and speed of light from ADE graph structure and SEC complexification"
+title: Connection, Identity, and Spacetime
+subtitle: Deriving the Lorentz group, invariant interval, and speed of light from
+  ADE graph structure and SEC complexification
 author: Peter Groom
 institution: Dawn Field Institute
 series: PACSeries
 paper_number: 10
-version: "1.0"
+version: '1.0'
 status: draft
-date_created: "2026-05"
+date_created: 2026-05
 domain: physics
 tags:
-  - ADE-classification
-  - connection-primitive
-  - lorentz-group
-  - sec-complexification
-  - complement-identity
-  - weyl-group
-  - invariant-interval
-  - speed-of-light
-  - proper-time
-  - spacetime-derivation
-  - fibonacci-closure
-  - gauge-closure-F7
-  - killing-form
-  - PAC-conservation
+- ADE-classification
+- connection-primitive
+- lorentz-group
+- sec-complexification
+- complement-identity
+- weyl-group
+- invariant-interval
+- speed-of-light
+- proper-time
+- spacetime-derivation
+- fibonacci-closure
+- gauge-closure-F7
+- killing-form
+- PAC-conservation
 dependencies:
-  - pacseries-paper-7   # symmetry primitive (phi, ADE from self-reference)
+- pacseries-paper-7
 source_experiments:
-  - foundational/experiments/milestone12   # M12 — Connection as Primitive (13 exp)
-  - foundational/experiments/milestone13   # M13 + M13.5 — Identity as Complement (17 exp)
+- foundational/experiments/milestone12
+- foundational/experiments/milestone13
 key_results:
-  m12_score: "49/52"
-  m13_core_score: "48/52"
-  m13_5_investigation_score: "5/16"
-  m13_total_score: "53/68"      # milestone-README figure (paper headlines 51/60 = M13 core + exp_14,15 only)
-  f7_gauge_closure: "13 = 1 + 3 + 8 + 1"   # U(1)+SU(2)+SU(3)+Higgs, exp_03 (m12)
-  lorentz_commutator_closure_error: 1.12e-16   # exp_11 (m12), all 15 independent commutators
-  killing_form_signature_6d: "(3,3)"          # exp_11 (m12), exp_09 (m13)
-  killing_form_signature_vector_rep: "(1,3)"  # exp_09 (m13), Minkowski
-  metric_uniqueness: "1-dimensional null space, proportionality -1.0"  # exp_09 (m13)
-  ds2_preservation_max_rel_error: 2.86e-6     # exp_09 (m13) T3 at eta=10 (NOT machine precision)
-  ade_deformation_rate_bounds: "[0.59, 2.00]" # exp_08 (m13)
-  proper_time: "d(tau) = dt / cosh(eta)"       # exp_10 (m13)
+  m12_score: 49/52
+  m13_core_score: 48/52
+  m13_5_investigation_score: 5/16
+  m13_total_score: 53/68
+  f7_gauge_closure: 13 = 1 + 3 + 8 + 1
+  lorentz_commutator_closure_error: 1.12e-16
+  killing_form_signature_6d: (3,3)
+  killing_form_signature_vector_rep: (1,3)
+  metric_uniqueness: 1-dimensional null space, proportionality -1.0
+  ds2_preservation_max_rel_error: 2.86e-06
+  ade_deformation_rate_bounds: '[0.59, 2.00]'
+  proper_time: d(tau) = dt / cosh(eta)
   fundamental_failures:
-    - "complement inner product PSD not PD (exp_05, exp_14, exp_16) — proven fundamental"
-    - "coherence limit NOT universal, geometric not Fibonacci-arithmetic (exp_08 T3, exp_15)"
+  - complement inner product PSD not PD (exp_05, exp_14, exp_16) — proven fundamental
+  - coherence limit NOT universal, geometric not Fibonacci-arithmetic (exp_08 T3,
+    exp_15)
+files:
+- README.md
+- paper.md
+- paper.pdf
+- paper.tex
+child_directories:
+- Code
+- Data
+- Figures

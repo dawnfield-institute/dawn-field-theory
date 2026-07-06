@@ -9,7 +9,9 @@ semantic_scope:
 - experiments
 - foundational
 files:
-- recursive_tree.py
-- results.md
+- README.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts

@@ -1,12 +1,11 @@
-schema_version: "2.0"
-description: "Documentation for pre-field EM emergence experiment"
-semantic_scope: "documentation"
-proficiency_level: "research"
-
+schema_version: '2.0'
+description: Documentation for pre-field EM emergence experiment
+semantic_scope: documentation
+proficiency_level: research
 files:
-  - "[THEORY.md]": "Theoretical foundation - why Möbius → EM works"
-  - "[POWER_LAW.md]": "The E/B = φ^f(w/R) power law derivation"
-
+- POWER_LAW.md
+- THEORY.md
 reading_order:
-  1: "THEORY.md - understand the physics"
-  2: "POWER_LAW.md - understand the key quantitative result"
+  1: THEORY.md - understand the physics
+  2: POWER_LAW.md - understand the key quantitative result
+child_directories: []

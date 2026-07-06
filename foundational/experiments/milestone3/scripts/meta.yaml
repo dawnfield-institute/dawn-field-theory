@@ -1,17 +1,38 @@
-schema_version: "2.0"
-description: "Milestone 3 experiment scripts — energy equivalence integration and methodology validation"
-semantic_scope: "implementation"
+schema_version: '2.0'
+description: Milestone 3 experiment scripts — energy equivalence integration and methodology
+  validation
+semantic_scope: implementation
 files:
-  - "[exp_01_fibonacci_memory.py]": "Two-step Landauer memory → Fibonacci derivation (F1)"
-  - "[exp_02_xi_accumulation.py]": "Monotonic ξ accumulation validation across initializations (F2)"
-  - "[exp_03_prime_reachability.py]": "Prime cascade reachability with formal null model comparison (F3)"
-  - "[exp_04_w2_w1_ratio.py]": "w2/w1 ratio from first principles — 0.600 vs 0.618 gap"
-  - "[exp_05_eis_oscillator.py]": "E-I-S triangle oscillator — resolve 0.020 Hz vs 0.007 Hz (F4)"
-  - "[exp_06_theta_recycling.py]": "Θ recycling energy budget — resolve model dependence (F5)"
-  - "[exp_07_wilson_fisher.py]": "Wilson-Fisher null test — Monte Carlo false positive rate (F6)"
-  - "[exp_08_weinberg_running.py]": "sin²θ_W = 3/13 running coupling at RG scales (F7)"
-  - "[exp_09_look_elsewhere.py]": "Mass ratio look-elsewhere effect correction (F8)"
-  - "[exp_10_independence_audit.py]": "Cross-domain independence audit for joint p-values (F9)"
-  - "[exp_29_feigenbaum_extended_search.py]": "Feigenbaum formula uniqueness in 62M combinations (F27)"
-  - "[exp_30_xi_alt_factorial.py]": "Ξ alternative decomposition 2×2 factorial — conservation × self-similarity (F28)"
-  - "[exp_31_scaling_extrapolation.py]": "PAC conservation scaling predictions for 7B–175B models (F29)"
+- exp_01_fibonacci_memory.py
+- exp_02_xi_accumulation.py
+- exp_03_prime_reachability.py
+- exp_04_w2_w1_ratio.py
+- exp_05_eis_oscillator.py
+- exp_06_theta_recycling.py
+- exp_07_wilson_fisher.py
+- exp_08_weinberg_running.py
+- exp_09_look_elsewhere.py
+- exp_10_independence_audit.py
+- exp_11_med_depth_criticality.py
+- exp_12_coupling_base_residuals.py
+- exp_13_stoichiometric_derivation.py
+- exp_14_physical_stoichiometry.py
+- exp_15_pac_sec_side_by_side.py
+- exp_16_null_space_predictions.py
+- exp_17_physics_derived_matrix.py
+- exp_18_conservation_predictions.py
+- exp_19_phase_transition_dynamics.py
+- exp_20_fractal_convergence_mesh.py
+- exp_21_pac_lazy_formula_mesh.py
+- exp_22_pac_depth_bound.py
+- exp_23_f183_correction.py
+- exp_24_pac_lazy_signal_anatomy.py
+- exp_25_dark_matter_depth_map.py
+- exp_26_unified_correction_template.py
+- exp_27_phase_cascade_stability.py
+- exp_28_thermo_phase_crossvalidation.py
+- exp_29_feigenbaum_extended_search.py
+- exp_30_xi_alt_factorial.py
+- exp_31_scaling_extrapolation.py
+- exp_32_template_richness_audit.py
+child_directories: []
