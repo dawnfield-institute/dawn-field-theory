@@ -146,7 +146,7 @@ See `STANDARDS.md` at workspace root for full spec.
   - Curvature from connection-density gradients, invariant interval from Killing form uniqueness
   - Complete derivation chain: self-loop → phi → PAC → ADE → complement → parallax → Weyl → SEC → Lorentz → ds² → c → proper time
   - 8 predictions (4P+2D+2C), zero M1-M12 contradictions
-- **PACSeries** published on Zenodo (DOI: 10.5281/zenodo.15783623)
+- **PACSeries** published on Zenodo (concept DOI: 10.5281/zenodo.17295102; latest v0.3 = 10.5281/zenodo.21228036)
 - **Active organization effort**: bringing all experiments to full standard, adding FDO source links
 
 ## Do Not
