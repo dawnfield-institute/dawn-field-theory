@@ -1,0 +1,84 @@
+{
+  "experiment": "exp_11_cross_consistency",
+  "milestone": 8,
+  "block": "E",
+  "tests": {
+    "test1_mass_propagation": {
+      "test": "mass_propagation",
+      "m_dm_kev": 6.438952738743487,
+      "mass_spread_orders": 0.09108155915348848,
+      "sin2_2theta": 1.4002080300580903e-12,
+      "omega_check": 0.12000000000000002,
+      "omega_consistent": "True",
+      "lambda_fs": 0.015530475848703658,
+      "fs_ok": "True",
+      "issues": [],
+      "passed": true
+    },
+    "test2_n6_universality": {
+      "test": "n6_universality",
+      "fitted_N": {
+        "hubble": 5.944125444392822,
+        "s8": 4.156674307072305,
+        "jwst": 6.904099208116178,
+        "bao": 5.944125444392822
+      },
+      "independent_N": [
+        5.944125444392822,
+        4.156674307072305,
+        6.904099208116178
+      ],
+      "N_mean": 5.668299653193768,
+      "N_std": 1.1384626467410401,
+      "N_range": 2.747424901043873,
+      "all_near_6": true,
+      "range_tight": "False",
+      "hardened": "Round 1: tightened from abs(n-6)<2 to range<1.5",
+      "bao_equals_hubble": true,
+      "n_independent_constraints": 3,
+      "passed": "False"
+    },
+    "test3_coupling_mass_abundance_chain": {
+      "test": "coupling_mass_abundance_chain",
+      "depth": 73,
+      "alpha": 2.4798034483453773e-16,
+      "m_dm_kev": 6.438952738743487,
+      "sin2_2theta": 1.4002080300580903e-12,
+      "omega_final": 0.12000000000000002,
+      "chain_error": 2.312964634635743e-16,
+      "e_xray_kev": 3.2194763693717436,
+      "xray_ratio": 0.9068947519357025,
+      "lyman_ok": "True",
+      "nustar_ok": "True",
+      "passed": "True"
+    },
+    "test4_prediction_independence": {
+      "test": "prediction_independence",
+      "n_claimed": 10,
+      "n_independent": 7,
+      "n_free_params": 2,
+      "overconstrained_by": 5,
+      "clusters": {
+        "A_dark_sector": {
+          "independent": 1,
+          "note": "All derived from one depth value"
+        },
+        "B_zprime": {
+          "independent": 1,
+          "note": "Mass and coupling from same Fibonacci ratio"
+        },
+        "C_neutrino": {
+          "independent": 2,
+          "note": "Hierarchy from ordering; delta_CP from Xi (independent)"
+        },
+        "D_cosmology": {
+          "independent": 3,
+          "note": "BAO = H0 (same constraint); H0, S8, JWST are independent"
+        }
+      },
+      "passed": true
+    }
+  },
+  "score": "3/4",
+  "timestamp": "2026-05-05T15:44:49.412052"
+}

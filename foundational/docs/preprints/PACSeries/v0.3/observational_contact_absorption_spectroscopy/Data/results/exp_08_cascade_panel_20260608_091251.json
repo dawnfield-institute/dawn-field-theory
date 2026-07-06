@@ -1,0 +1,51 @@
+{
+  "experiment": "exp_08_cascade_panel",
+  "initiative": "midnight",
+  "thread": "photon_archaeology",
+  "test_results": {
+    "A": {
+      "test": "panel_A_periodicity",
+      "peak_period": 0.4426505810343298,
+      "peak_power": 0.14227826346147662,
+      "near_cascade": false,
+      "shuffle_percentile": 91.4,
+      "PASS": false
+    },
+    "B": {
+      "test": "panel_B_sharp_excess",
+      "mean_trans": 0.6782623413644698,
+      "mean_trough": 0.6413584018985674,
+      "mean_control": 0.7012589275269846,
+      "trans_above_trough": true,
+      "trans_above_control": false,
+      "PASS": false
+    },
+    "C": {
+      "test": "panel_C_sightlines",
+      "n_straddling": 6437,
+      "n_non_straddling": 9000,
+      "median_straddle": 0.4848470382430742,
+      "median_non_straddle": 0.4252800164676564,
+      "mannwhitney_p": 1.8446982308274112e-09,
+      "ks_p": 1.6537785114010026e-10,
+      "PASS": true
+    },
+    "D": {
+      "test": "panel_D_doublet_shape",
+      "n_transition": 14020,
+      "n_trough": 10235,
+      "ks_doublet_ratio": 0.031723192563906544,
+      "p_doublet_ratio": 1.3171073421006342e-05,
+      "ks_fwhm_disc": 0.02932460223269573,
+      "p_fwhm_disc": 7.465079747313287e-05,
+      "dr_median_trans": 1.2199944422919509,
+      "dr_median_trough": 1.2265253682488946,
+      "disc_median_trans": 0.1277383854173625,
+      "disc_median_trough": 0.1360633146107863,
+      "PASS": true
+    }
+  },
+  "score": "2/4",
+  "n_pass": 2,
+  "n_total": 4
+}

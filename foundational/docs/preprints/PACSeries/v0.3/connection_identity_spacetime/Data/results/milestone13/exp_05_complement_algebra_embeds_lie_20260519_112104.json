@@ -1,0 +1,322 @@
+{
+  "experiment": "exp_05_complement_algebra_embeds_lie",
+  "milestone": "milestone13",
+  "block": "B",
+  "hardening": "v0.3",
+  "score": 1,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_complement_diff_root_alignment",
+      "cos_threshold": 0.8,
+      "frac_threshold": 0.75,
+      "ade_graphs": {
+        "A_4": {
+          "n_pairs": 3,
+          "fraction_aligned": 0.0,
+          "passed": false,
+          "alignments": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "best_cosine": 0.7071067811865474,
+              "best_root_index": 3
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "best_cosine": 0.0,
+              "best_root_index": -1
+            },
+            {
+              "pair": [
+                2,
+                3
+              ],
+              "best_cosine": 0.7071067811865474,
+              "best_root_index": 3
+            }
+          ]
+        },
+        "A_5": {
+          "n_pairs": 4,
+          "fraction_aligned": 0.5,
+          "passed": false,
+          "alignments": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "best_cosine": 0.7320423571353925,
+              "best_root_index": 1
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "best_cosine": 0.9105743365364628,
+              "best_root_index": 1
+            },
+            {
+              "pair": [
+                2,
+                3
+              ],
+              "best_cosine": 0.9105743365364628,
+              "best_root_index": 1
+            },
+            {
+              "pair": [
+                3,
+                4
+              ],
+              "best_cosine": 0.7320423571353925,
+              "best_root_index": 1
+            }
+          ]
+        },
+        "D_4": {
+          "n_pairs": 3,
+          "fraction_aligned": 0.0,
+          "passed": false,
+          "alignments": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "best_cosine": 0.6324555320336759,
+              "best_root_index": 0
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "best_cosine": 0.6324555320336759,
+              "best_root_index": 0
+            },
+            {
+              "pair": [
+                1,
+                3
+              ],
+              "best_cosine": 0.6324555320336759,
+              "best_root_index": 0
+            }
+          ]
+        }
+      },
+      "ade_pass_count": 0,
+      "adversarial": {
+        "n_pairs": 9,
+        "cosines": [
+          0.7060397395686719,
+          0.7060397395686719,
+          0.9025861708051702,
+          0.7450004465206227,
+          0.7021642824072807,
+          0.0,
+          0.7021642824072806,
+          0.7450004465206227,
+          0.9025861708051702
+        ],
+        "n_below_0.5": 1,
+        "majority_fail": false
+      },
+      "risk": "HIGH \u2014 complement eigenvalue diffs live in different space than roots",
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_path_independence_weighted_and_cyclic",
+      "weighted_graph": {
+        "base": "A_5",
+        "epsilon": 0.01,
+        "path": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "step_diffs": [
+          [
+            -0.20624423616725385,
+            -0.6119279584424627,
+            0.6119279584424634,
+            0.2062442361672534
+          ],
+          [
+            -0.40878948656560676,
+            0.9906289277525256,
+            -0.990628927752526,
+            0.40878948656560743
+          ],
+          [
+            0.4130381763957722,
+            -0.9906289277525258,
+            0.990628927752526,
+            -0.41303817639577267
+          ],
+          [
+            0.20583470591182884,
+            0.6225521893204664,
+            -0.6225521893204669,
+            -0.20583470591182862
+          ]
+        ],
+        "cumulative_vs_direct_error": 0.0,
+        "pass": true
+      },
+      "cycle_closure": {
+        "graph": "C_5",
+        "cycle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "steps": [
+          {
+            "from": 0,
+            "to": 1,
+            "diff": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "diff": [
+              6.661338147750939e-16,
+              -7.771561172376096e-16,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "diff": [
+              -8.881784197001252e-16,
+              7.771561172376096e-16,
+              0.0,
+              2.220446049250313e-16
+            ]
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "diff": [
+              2.220446049250313e-16,
+              0.0,
+              0.0,
+              -2.220446049250313e-16
+            ]
+          },
+          {
+            "from": 4,
+            "to": 0,
+            "diff": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "closure_error": 0.0,
+        "pass": true
+      },
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_rank_monotonicity",
+      "a_series": {
+        "3": {
+          "rank": 1
+        },
+        "4": {
+          "rank": 1
+        },
+        "5": {
+          "rank": 2
+        },
+        "6": {
+          "rank": 2
+        },
+        "7": {
+          "rank": 3
+        },
+        "8": {
+          "rank": 3
+        }
+      },
+      "rank_sequence": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "monotonic": true,
+      "d4_rank": 1,
+      "a4_rank": 1,
+      "rank_differs": false,
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_gram_matrix_strictly_positive_definite",
+      "strict_threshold": 1e-08,
+      "graphs": {
+        "A_4": {
+          "n_adjacent_pairs": 3,
+          "gram_eigenvalues": [
+            0.0,
+            0.0,
+            0.6862915010152403
+          ],
+          "min_eigenvalue": 0.0,
+          "strictly_positive_definite": false
+        },
+        "A_5": {
+          "n_adjacent_pairs": 4,
+          "gram_eigenvalues": [
+            -3.3573744307794117e-16,
+            4.745153211560841e-16,
+            0.5835921350012622,
+            5.796734475848077
+          ],
+          "min_eigenvalue": -3.3573744307794117e-16,
+          "strictly_positive_definite": false
+        },
+        "D_4": {
+          "n_adjacent_pairs": 3,
+          "gram_eigenvalues": [
+            -3.076846926320725e-18,
+            1.3353444764765081e-15,
+            12.000000000000004
+          ],
+          "min_eigenvalue": -3.076846926320725e-18,
+          "strictly_positive_definite": false
+        }
+      },
+      "all_strictly_positive_definite": false,
+      "expected_fail_reason": "ADE graph symmetries produce vertex pairs with identical complement spectra. Their spectral-diff vectors are zero or linearly dependent, making the Gram matrix singular. A_4 specifically has mirror symmetry (node 0<->3, 1<->2), so complement-diffs for symmetric edges are identical, yielding at least one zero Gram eigenvalue.",
+      "risk": "EXPECTED FAIL \u2014 symmetric pairs guarantee zero eigenvalues",
+      "PASS": false
+    }
+  }
+}

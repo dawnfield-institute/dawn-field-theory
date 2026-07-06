@@ -1,0 +1,37 @@
+{
+  "experiment": "exp_03_xi_from_symmetric_restoration",
+  "milestone": 7,
+  "block": "B",
+  "full_cascade": {
+    "mean_xi": 1.0991083434689553,
+    "delta": 0.03843518228094458,
+    "cv": 0.026870943416105814,
+    "n_measurements": 140
+  },
+  "counting_only": {
+    "mean_gamma_est": 0.5926181870430739,
+    "delta": 0.026684172100853405
+  },
+  "splitting_only": {
+    "mean_lnphi_est": 0.48121182505960347,
+    "delta": 0.0
+  },
+  "ic_invariance": {
+    "cv": 2.0498584511061872e-16,
+    "mean_xi": 1.0832192086492947
+  },
+  "decomposition": {
+    "gamma": 0.5926181870430739,
+    "lnphi": 0.48121182505960347,
+    "sum": 1.0738300121026774,
+    "measured_xi": 1.0991083434689553,
+    "delta": 0.02299894411363995
+  },
+  "verification": {
+    "test1_xi_match": "True",
+    "test2_gamma_match": "True",
+    "test3_lnphi_match": "True",
+    "test4_ic_invariance": "True",
+    "verified_count": "4"
+  }
+}

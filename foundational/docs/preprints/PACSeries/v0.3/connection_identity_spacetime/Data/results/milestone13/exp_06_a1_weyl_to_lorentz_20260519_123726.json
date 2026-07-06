@@ -1,0 +1,101 @@
+{
+  "experiment": "exp_06_a1_weyl_to_lorentz",
+  "milestone": "milestone13",
+  "block": "B",
+  "version": "v0.3_hardened",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_a1_complement_structure",
+      "A1_weyl_order": 2,
+      "A1_weyl_expected": 2,
+      "A1_n_orbits": 1,
+      "A3_n_orbits": 2,
+      "A3_weyl_order": 24,
+      "D4_n_orbits": 2,
+      "D4_weyl_order": 192,
+      "random_graph_orbit_counts": [
+        1,
+        2,
+        1
+      ],
+      "adversarial_note": "Random graphs have no Weyl group classification \u2014 orbit structure is accidental, not algebraically determined.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_weyl_flips_j3",
+      "axis_results": {
+        "J1-axis": {
+          "flip_error": 0.0,
+          "inv_error": 1.0,
+          "flips_j3": true,
+          "preserves_j3": false,
+          "in_torus": false
+        },
+        "J2-axis": {
+          "flip_error": 0.0,
+          "inv_error": 1.0,
+          "flips_j3": true,
+          "preserves_j3": false,
+          "in_torus": false
+        },
+        "J3-axis": {
+          "flip_error": 1.0,
+          "inv_error": 0.0,
+          "flips_j3": false,
+          "preserves_j3": true,
+          "in_torus": true
+        }
+      },
+      "j1_axis_flips_j3": true,
+      "j2_axis_flips_j3": true,
+      "j3_axis_preserves_j3": true,
+      "selectivity": "Only non-Cartan axes produce valid Weyl reflections. J_3-axis (toral) preserves J_3, cannot be Weyl element.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_weyl_action_on_sl2c",
+      "n_generators": 6,
+      "classification": {
+        "J_1": "flip",
+        "J_2": "invariant",
+        "J_3": "flip",
+        "K_1": "flip",
+        "K_2": "invariant",
+        "K_3": "flip"
+      },
+      "n_flip": 4,
+      "n_invariant": 2,
+      "n_mixed": 0,
+      "j2_invariant": true,
+      "k2_invariant": true,
+      "j3_flips": true,
+      "k3_flips": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_weyl_normalizes_cartan",
+      "weyl_cartan_component": 1.0000000000000002,
+      "weyl_off_cartan": 3.925231146709437e-17,
+      "weyl_normalizes": true,
+      "n_random_tested": 10,
+      "n_random_normalizing": 0,
+      "mean_off_cartan_random": 0.762728899626286,
+      "random_off_cartan_values": [
+        0.9362831249173194,
+        0.9763550169867425,
+        0.2826849595863841,
+        0.847926080053124,
+        0.8416748696334955,
+        0.9998550521478176,
+        0.9818169712943614,
+        0.63215410475363,
+        0.1292378621124512,
+        0.9993009547775343
+      ],
+      "selectivity": "Weyl is in the normalizer N(T) of the maximal torus. Generic SU(2) elements are NOT \u2014 they rotate J_3 out of the Cartan.",
+      "PASS": true
+    }
+  }
+}

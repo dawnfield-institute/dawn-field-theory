@@ -1,0 +1,172 @@
+{
+  "experiment": "exp_04_measurement_as_gauge_fixing",
+  "milestone": 14,
+  "block": "B",
+  "results": {
+    "T1": {
+      "test": "T1_measurement_idempotent",
+      "n_diagrams": 16,
+      "results_by_type": {
+        "A_1": {
+          "n_projectors": 1,
+          "max_idempotency_error": 0.0,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "A_2": {
+          "n_projectors": 1,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "A_3": {
+          "n_projectors": 2,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "A_4": {
+          "n_projectors": 2,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "A_5": {
+          "n_projectors": 3,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "A_6": {
+          "n_projectors": 3,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "A_7": {
+          "n_projectors": 4,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "A_8": {
+          "n_projectors": 4,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "D_4": {
+          "n_projectors": 2,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "D_5": {
+          "n_projectors": 4,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "D_6": {
+          "n_projectors": 5,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "D_7": {
+          "n_projectors": 6,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "D_8": {
+          "n_projectors": 7,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "E_6": {
+          "n_projectors": 4,
+          "max_idempotency_error": 1.1102230246251565e-16,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "E_7": {
+          "n_projectors": 7,
+          "max_idempotency_error": 0.0,
+          "is_idempotent": true,
+          "PASS": true
+        },
+        "E_8": {
+          "n_projectors": 8,
+          "max_idempotency_error": 0.0,
+          "is_idempotent": true,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_ensemble_entropy",
+      "results_by_type": {
+        "A_5": {
+          "n_orbits": 3,
+          "ensemble_entropy": 1.0986122886681098,
+          "expected_entropy": 1.0986122886681098,
+          "pure_state_entropy": -0.0,
+          "entropy_positive": true,
+          "entropy_matches_log_m": true,
+          "pure_zero": true,
+          "PASS": true
+        },
+        "D_4": {
+          "n_orbits": 2,
+          "ensemble_entropy": 0.6931471805599453,
+          "expected_entropy": 0.6931471805599453,
+          "pure_state_entropy": 1.1102230246251564e-16,
+          "entropy_positive": true,
+          "entropy_matches_log_m": true,
+          "pure_zero": true,
+          "PASS": true
+        },
+        "E_6": {
+          "n_orbits": 4,
+          "ensemble_entropy": 1.3862943611198906,
+          "expected_entropy": 1.3862943611198906,
+          "pure_state_entropy": 4.440892098500625e-16,
+          "entropy_positive": true,
+          "entropy_matches_log_m": true,
+          "pure_zero": true,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_two_stage_measurement",
+      "d4_orbit_0_prob_after_first": 1.0,
+      "d4_in_orbit_0": true,
+      "d4_state_identical_after_second": true,
+      "a5_orbit_1_prob_after_measure": 0.9999999999999996,
+      "a5_only_orbit_1": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_sec_arrow_phase_loss",
+      "is_real_after_collapse": true,
+      "phase_lost": true,
+      "all_projectors_real": true,
+      "note": "Orbit projectors are real -> phase loss is structural, SEC arrow enters through Weyl irreps",
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}

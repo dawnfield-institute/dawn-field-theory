@@ -1,0 +1,116 @@
+{
+  "experiment": "exp_10_proper_time_deformation",
+  "milestone": "milestone13",
+  "block": "D",
+  "version": "v0.3_hardened",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_time_dilation_from_boost",
+      "n_rapidities": 20,
+      "max_error": 1.5651934196623514e-12,
+      "selectivity": true,
+      "n_random_match": 0,
+      "random_mean_error": 0.2039533359096169,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_complement_deformation_rate_ratio",
+      "rates_from_position": [
+        0.5151211405583669,
+        0.8647099349037225,
+        0.8129830797473293,
+        0.0,
+        0.8129830797473293,
+        0.8647099349037225,
+        0.5151211405583669
+      ],
+      "normalized_rates": [
+        0.5957155339214657,
+        1.0,
+        0.9401801077234616,
+        0.0,
+        0.9401801077234616,
+        1.0,
+        0.5957155339214657
+      ],
+      "etas": [
+        0.8571428571428571,
+        0.5714285714285714,
+        0.2857142857142857,
+        0.0,
+        0.2857142857142857,
+        0.5714285714285714,
+        0.8571428571428571
+      ],
+      "predicted_1_over_cosh": [
+        0.7192197446054454,
+        0.8563428832343645,
+        0.960527372318066,
+        1.0,
+        0.960527372318066,
+        0.8563428832343645,
+        0.7192197446054454
+      ],
+      "errors": [
+        0.17171971655440643,
+        0.16775653722145706,
+        0.02118343024988424,
+        1.0,
+        0.02118343024988424,
+        0.16775653722145706,
+        0.17171971655440643
+      ],
+      "mean_error": 0.24590276686449936,
+      "best_error": 0.02118343024988424,
+      "note": "Tests whether discrete complement-deformation rates approximate 1/cosh(eta). Large deviations reveal the gap between discrete complement operations and continuous Lorentz time dilation.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_graph_twin_paradox",
+      "straight_D6": 3.9928327208520376,
+      "detour_D6_via4": 6.960687858062942,
+      "detour_D6_via5": 6.960687858062942,
+      "straight_A8": 2.1928141552094185,
+      "detour_A8": 3.9222340250168632,
+      "detour_more_D6_via4": true,
+      "detour_more_D6_via5": true,
+      "detour_more_A8": true,
+      "n_detour_more": 3,
+      "note": "Detour paths accumulate more complement deformation than straight paths. This is the graph-based twin paradox: the \"traveling twin\" (detour) experiences more complement change than the \"resting twin\" (straight).",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_coupling_model_comparison",
+      "depth_em": 13,
+      "depth_gravity": 183,
+      "target_log10_ratio": -36.0,
+      "models": {
+        "phi^{-depth}": {
+          "em_coupling": 0.0019193787254996309,
+          "grav_coupling": 5.691959932062575e-39,
+          "log10_ratio": -35.527898842496384,
+          "error_from_target": 0.4721011575036158
+        },
+        "e^{-depth}": {
+          "em_coupling": 2.2603294069810542e-06,
+          "grav_coupling": 3.3427955219162848e-80,
+          "log10_ratio": -73.8300619235528,
+          "error_from_target": 37.830061923552805
+        },
+        "1/depth^2": {
+          "em_coupling": 0.005917159763313609,
+          "grav_coupling": 2.986055122577563e-05,
+          "log10_ratio": -2.2970154748471856,
+          "error_from_target": 33.702984525152814
+        }
+      },
+      "best_model": "phi^{-depth}",
+      "phi_is_best": true,
+      "phi_within_5_orders": true,
+      "note": "Compares three attenuation models against the known EM/gravity coupling ratio (~10^{-36}). phi^{-depth} must outperform alternatives to justify its privileged role in DFT.",
+      "PASS": true
+    }
+  }
+}

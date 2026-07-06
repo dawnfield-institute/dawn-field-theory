@@ -1,0 +1,39 @@
+{
+  "experiment": "exp_05_dark_sector_depth_73",
+  "milestone": 6,
+  "block": "B",
+  "depth": 73,
+  "depth_formula": "F_6^2 + F_6 + 1 = 8^2 + 8 + 1 = 73",
+  "cyclotomic": "Phi_3(F_6)",
+  "alpha_73": {
+    "raw": 2.4798034483453773e-16,
+    "corrected": 0.014330863859656113,
+    "from_em_ratio": 2.1081762410368154e-15,
+    "log10": -15.605582740416459
+  },
+  "mass": {
+    "method1_kev": 5.797949893951254,
+    "method2_kev": 3.877322780318975,
+    "method3_kev": 0.5043112112994854
+  },
+  "cross_section": {
+    "sigma_cm2": 7.123305174410165e-49,
+    "sigma_over_m": 6.890579529732375e-20,
+    "bullet_cluster_bound": 1.0
+  },
+  "relic_abundance": {
+    "sigma_v": 2.1369915523230495e-38,
+    "omega_pred": 140384270435.64136,
+    "omega_measured": 0.12,
+    "thermal": false,
+    "production_mechanism": "non-thermal (freeze-in)"
+  },
+  "verification": {
+    "test1_coupling_range": "True",
+    "test2_mass_kev": "True",
+    "test3_bullet_cluster": "True",
+    "test4_thermal": false,
+    "verified_count": "3"
+  },
+  "timestamp": "2026-05-08T10:06:18.777851"
+}

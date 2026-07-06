@@ -1,0 +1,498 @@
+{
+  "experiment": "exp_02_permutation_rep_decomposition",
+  "milestone": 14,
+  "block": "A",
+  "results": {
+    "T1": {
+      "test": "T1_z2_decomposition_a5",
+      "n": 5,
+      "group_type": "Z_2",
+      "group_order": 2,
+      "irreps": [
+        {
+          "name": "trivial",
+          "dim": 1,
+          "multiplicity": 3
+        },
+        {
+          "name": "sign",
+          "dim": 1,
+          "multiplicity": 2
+        }
+      ],
+      "is_z2": true,
+      "dim_check": true,
+      "m_trivial": 3,
+      "m_sign": 2,
+      "expected_m_trivial": 3,
+      "expected_m_sign": 2,
+      "mults_correct": true,
+      "eigenspace_matches": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_s3_decomposition_d4",
+      "n": 4,
+      "group_type": "S_3",
+      "group_order": 6,
+      "n_conjugacy_classes": 3,
+      "irreps": [
+        {
+          "name": "trivial",
+          "dim": 1,
+          "multiplicity": 2
+        },
+        {
+          "name": "sign",
+          "dim": 1,
+          "multiplicity": 0
+        },
+        {
+          "name": "standard",
+          "dim": 2,
+          "multiplicity": 1
+        }
+      ],
+      "is_s3": true,
+      "dim_check": true,
+      "m_trivial": 2,
+      "m_sign": 0,
+      "m_standard": 1,
+      "expected_decomp": true,
+      "has_2d_irrep": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_burnside_trivial_multiplicity",
+      "n_diagrams": 16,
+      "results_by_type": {
+        "A_1": {
+          "n_orbits": 1,
+          "m_trivial": 1,
+          "burnside_match": true,
+          "group_type": "trivial",
+          "group_order": 1,
+          "PASS": true
+        },
+        "A_2": {
+          "n_orbits": 1,
+          "m_trivial": 1,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "A_3": {
+          "n_orbits": 2,
+          "m_trivial": 2,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "A_4": {
+          "n_orbits": 2,
+          "m_trivial": 2,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "A_5": {
+          "n_orbits": 3,
+          "m_trivial": 3,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "A_6": {
+          "n_orbits": 3,
+          "m_trivial": 3,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "A_7": {
+          "n_orbits": 4,
+          "m_trivial": 4,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "A_8": {
+          "n_orbits": 4,
+          "m_trivial": 4,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "D_4": {
+          "n_orbits": 2,
+          "m_trivial": 2,
+          "burnside_match": true,
+          "group_type": "S_3",
+          "group_order": 6,
+          "PASS": true
+        },
+        "D_5": {
+          "n_orbits": 4,
+          "m_trivial": 4,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "D_6": {
+          "n_orbits": 5,
+          "m_trivial": 5,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "D_7": {
+          "n_orbits": 6,
+          "m_trivial": 6,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "D_8": {
+          "n_orbits": 7,
+          "m_trivial": 7,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "E_6": {
+          "n_orbits": 4,
+          "m_trivial": 4,
+          "burnside_match": true,
+          "group_type": "Z_2",
+          "group_order": 2,
+          "PASS": true
+        },
+        "E_7": {
+          "n_orbits": 7,
+          "m_trivial": 7,
+          "burnside_match": true,
+          "group_type": "trivial",
+          "group_order": 1,
+          "PASS": true
+        },
+        "E_8": {
+          "n_orbits": 8,
+          "m_trivial": 8,
+          "burnside_match": true,
+          "group_type": "trivial",
+          "group_order": 1,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_d4_only_higher_dim_irreps",
+      "types_with_higher_dim": [
+        "D_4"
+      ],
+      "only_d4": true,
+      "results_by_type": {
+        "A_1": {
+          "group_type": "trivial",
+          "group_order": 1,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "A_2": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 1
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "A_3": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 2
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "A_4": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 2
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 2
+            }
+          ]
+        },
+        "A_5": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 3
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 2
+            }
+          ]
+        },
+        "A_6": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 3
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 3
+            }
+          ]
+        },
+        "A_7": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 4
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 3
+            }
+          ]
+        },
+        "A_8": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 4
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 4
+            }
+          ]
+        },
+        "D_4": {
+          "group_type": "S_3",
+          "group_order": 6,
+          "max_irrep_dim": 2,
+          "has_higher_dim_irreps": true,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 2
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 0
+            },
+            {
+              "name": "standard",
+              "dim": 2,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "D_5": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 4
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "D_6": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 5
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "D_7": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 6
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "D_8": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 7
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 1
+            }
+          ]
+        },
+        "E_6": {
+          "group_type": "Z_2",
+          "group_order": 2,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 4
+            },
+            {
+              "name": "sign",
+              "dim": 1,
+              "multiplicity": 2
+            }
+          ]
+        },
+        "E_7": {
+          "group_type": "trivial",
+          "group_order": 1,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 7
+            }
+          ]
+        },
+        "E_8": {
+          "group_type": "trivial",
+          "group_order": 1,
+          "max_irrep_dim": 1,
+          "has_higher_dim_irreps": false,
+          "irreps": [
+            {
+              "name": "trivial",
+              "dim": 1,
+              "multiplicity": 8
+            }
+          ]
+        }
+      },
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}

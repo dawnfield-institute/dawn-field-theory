@@ -1,0 +1,255 @@
+{
+  "experiment": "exp_01_complement_determines_identity",
+  "milestone": "milestone13",
+  "block": "A",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_a5_complement_spectra",
+      "n_vertices": 5,
+      "n_distinct_spectra": 3,
+      "n_orbits": 3,
+      "expected_orbits": 3,
+      "orbit_members": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "spectra_by_vertex": {
+        "0": [
+          1.6180339887498951,
+          0.6180339887498949,
+          -0.6180339887498949,
+          -1.618033988749895
+        ],
+        "1": [
+          1.4142135623730954,
+          0.0,
+          -8.066464163292153e-17,
+          -1.4142135623730951
+        ],
+        "2": [
+          1.0,
+          1.0,
+          -1.0,
+          -1.0
+        ],
+        "3": [
+          1.4142135623730954,
+          0.0,
+          -8.066464163292153e-17,
+          -1.4142135623730951
+        ],
+        "4": [
+          1.6180339887498951,
+          0.6180339887498949,
+          -0.6180339887498949,
+          -1.618033988749895
+        ]
+      },
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_d4_e6_orbit_counts",
+      "by_type": {
+        "D_4": {
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "expected_orbits": 2,
+          "orbit_members": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "match": true
+        },
+        "E_6": {
+          "n_vertices": 6,
+          "n_orbits": 4,
+          "expected_orbits": 4,
+          "orbit_members": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              5
+            ]
+          ],
+          "match": true
+        }
+      },
+      "all_match": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_complement_distance_separates_orbits",
+      "types_tested": [
+        "A_7",
+        "D_4",
+        "D_5"
+      ],
+      "details": {
+        "A_7": {
+          "n_vertices": 7,
+          "n_orbits": 4,
+          "n_within_pairs": 3,
+          "n_between_pairs": 18,
+          "within_orbit_max_dist": 0.0,
+          "between_orbit_min_dist": 0.49949131464933644,
+          "within_ok": true,
+          "between_ok": true
+        },
+        "D_4": {
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "n_within_pairs": 3,
+          "n_between_pairs": 3,
+          "within_orbit_max_dist": 2.362426527663472e-16,
+          "between_orbit_min_dist": 2.0,
+          "within_ok": true,
+          "between_ok": true
+        },
+        "D_5": {
+          "n_vertices": 5,
+          "n_orbits": 4,
+          "n_within_pairs": 1,
+          "n_between_pairs": 9,
+          "within_orbit_max_dist": 0.0,
+          "between_orbit_min_dist": 0.4494897427831778,
+          "within_ok": true,
+          "between_ok": true
+        }
+      },
+      "note": "Complement distance = 0 within orbits (same structural role) and > 0 between orbits (different identities). This is the central claim: identity IS complement.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_double_complement_phi_ratios",
+      "graph": "A_5",
+      "parent_edges": 4,
+      "total_pairs": 20,
+      "hits": 12,
+      "hit_fraction": 0.6,
+      "threshold": 0.1,
+      "phi_powers": {
+        "1": 0.6180339887498948,
+        "2": 0.3819660112501051,
+        "3": 0.23606797749978964,
+        "4": 0.1458980337503154
+      },
+      "sample_pairs": [
+        {
+          "v": 0,
+          "u": 0,
+          "double_edges": 2,
+          "parent_edges": 4,
+          "ratio": 0.5,
+          "nearest_phi_k": 1,
+          "nearest_phi_val": 0.6180339887498948,
+          "distance": 0.11803398874989479,
+          "is_near": false
+        },
+        {
+          "v": 0,
+          "u": 1,
+          "double_edges": 1,
+          "parent_edges": 4,
+          "ratio": 0.25,
+          "nearest_phi_k": 3,
+          "nearest_phi_val": 0.23606797749978964,
+          "distance": 0.013932022500210361,
+          "is_near": true
+        },
+        {
+          "v": 0,
+          "u": 2,
+          "double_edges": 1,
+          "parent_edges": 4,
+          "ratio": 0.25,
+          "nearest_phi_k": 3,
+          "nearest_phi_val": 0.23606797749978964,
+          "distance": 0.013932022500210361,
+          "is_near": true
+        },
+        {
+          "v": 0,
+          "u": 3,
+          "double_edges": 2,
+          "parent_edges": 4,
+          "ratio": 0.5,
+          "nearest_phi_k": 1,
+          "nearest_phi_val": 0.6180339887498948,
+          "distance": 0.11803398874989479,
+          "is_near": false
+        },
+        {
+          "v": 1,
+          "u": 0,
+          "double_edges": 2,
+          "parent_edges": 4,
+          "ratio": 0.5,
+          "nearest_phi_k": 1,
+          "nearest_phi_val": 0.6180339887498948,
+          "distance": 0.11803398874989479,
+          "is_near": false
+        },
+        {
+          "v": 1,
+          "u": 1,
+          "double_edges": 1,
+          "parent_edges": 4,
+          "ratio": 0.25,
+          "nearest_phi_k": 3,
+          "nearest_phi_val": 0.23606797749978964,
+          "distance": 0.013932022500210361,
+          "is_near": true
+        },
+        {
+          "v": 1,
+          "u": 2,
+          "double_edges": 0,
+          "parent_edges": 4,
+          "ratio": 0.0,
+          "nearest_phi_k": 4,
+          "nearest_phi_val": 0.1458980337503154,
+          "distance": 0.1458980337503154,
+          "is_near": false
+        },
+        {
+          "v": 1,
+          "u": 3,
+          "double_edges": 1,
+          "parent_edges": 4,
+          "ratio": 0.25,
+          "nearest_phi_k": 3,
+          "nearest_phi_val": 0.23606797749978964,
+          "distance": 0.013932022500210361,
+          "is_near": true
+        }
+      ],
+      "PASS": true
+    }
+  }
+}

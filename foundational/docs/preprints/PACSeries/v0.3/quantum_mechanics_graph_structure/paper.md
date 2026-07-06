@@ -13,15 +13,17 @@
 
 We derive the mathematical structure of quantum mechanics — Hilbert spaces, the Born rule, the Schrödinger equation, Bell inequality violation, and decoherence — from the automorphism groups of ADE Dynkin diagrams, without postulating any quantum axioms.
 
-The central construction is the orbit Hilbert space $\mathcal{H} = L^2(V / \text{Aut}(G))$: the space of square-integrable functions on vertex orbits under graph automorphisms. For a graph $G$ with vertices $V$ and automorphism group $\text{Aut}(G)$, the orbit basis vectors $|O_i\rangle$ span a Hilbert space whose dimension equals the number of distinct orbits. This construction resolves the positive semi-definite (PSD) degeneracy that limited Milestone 13's complement framework: the orbit Gram matrix is the identity for ALL ADE types, by construction.
+The central construction is the orbit Hilbert space $\mathcal{H} = L^2(V / \text{Aut}(G))$: the space of square-integrable functions on vertex orbits under graph automorphisms. For a graph $G$ with vertices $V$ and automorphism group $\text{Aut}(G)$, the orbit basis vectors $|O_i\rangle$ span a Hilbert space whose dimension equals the number of distinct orbits. This construction resolves the positive semi-definite (PSD) degeneracy that limited Milestone 13's complement framework: the orbit Gram matrix is the identity for all ADE types, by construction.
 
-The key results: (1) The Born rule $P(O_i) = |O_i|/n$ follows from orbit measure — the probability of finding the system in orbit $O_i$ is the fraction of vertices in that orbit. This is not postulated; it is counting. (2) $D_4$ (the graph with Dynkin type $D_4$, automorphism group $S_3$) is the ONLY ADE type with non-abelian automorphisms among types with rank $\leq 8$. Non-abelian $\Rightarrow$ non-commuting orbit observables $\Rightarrow$ Robertson uncertainty bound $> 0$. Quantum uncertainty has a unique graph-theoretic origin. The non-commutativity measure is $\mathcal{NC} = 1.2247$ for $D_4$ and exactly 0 for all other ADE types tested. (3) Measurement is gauge fixing: projecting onto an orbit eigenstate selects a representative from a gauge equivalence class, and the real projectors necessarily lose phase information — this IS the SEC arrow applied to measurement. (4) The CHSH Bell parameter achieves $S = 2\sqrt{2} = 2.828$ (Tsirelson bound, saturated to $4 \times 10^{-16}$) on $D_4 \times D_4$ product graphs when measurement bases are rotated by the orbit Laplacian generator — SEC complexification provides the rotation, and the topology determines whether violation is possible. Abelian-automorphism graphs ($A_n$, $E_7$, $E_8$) also violate Bell inequalities but cannot achieve Tsirelson due to their abelian structure. (5) The Schrödinger equation emerges: the orbit Laplacian $H = B^T L B$ (where $L$ is the graph Laplacian and $B$ is the orbit basis) serves simultaneously as the Hamiltonian, the Bell measurement generator, and the path-counting matrix. Time evolution $U(t) = e^{-iHt}$ is unitary, automorphism-equivariant ($[P_g, H] = 0$), and energy-conserving — verified to machine precision ($2 \times 10^{-15}$). (6) The Feynman path integral is a sum over graph hops: the propagator $K(t) = e^{-iHt} = \sum_n (-iH)^n t^n / n!$ where $H^n$ counts $n$-hop paths on the orbit graph. Multi-path interference on 3-orbit systems ($A_5$) shows visibility 0.87. (7) The quantum Zeno effect freezes orbit transitions: $P_\text{survive}(N=1000) = 0.997$ on $D_4$, with anti-Zeno enhancement at $N = 2$ (26% above free decay) — the crossover rate encodes the spectral gap, hence the topology. (8) Decoherence from orbit-environment coupling follows an exact formula $|rho_{12}(t)| = \frac{1}{2}|\langle 0_\text{env}| e^{-2i\lambda H_\text{env} t} |0_\text{env}\rangle|$, verified to $1.7 \times 10^{-15}$. The Fermi golden rule $\Gamma^2 = \lambda^2 \cdot \text{Var}(H_\text{env})$ holds across 6 ADE topologies with 0.04% spread. The orbit basis IS the pointer basis — orbit eigenstates maintain purity 1.000000 under dephasing while superpositions drop to 0.51.
+The results: (1) The Born rule $P(O_i) = |O_i|/n$ follows from orbit measure: the probability of finding the system in orbit $O_i$ is the fraction of vertices in that orbit. (2) $D_4$ (the graph with Dynkin type $D_4$, automorphism group $S_3$) is the only ADE type with non-abelian automorphisms among types with rank $\leq 8$. Non-abelian $\Rightarrow$ non-commuting orbit observables $\Rightarrow$ Robertson uncertainty bound $> 0$. Quantum uncertainty has a unique graph-theoretic origin. The non-commutativity measure is $\mathcal{NC} = 1.2247$ for $D_4$ and exactly 0 for all other ADE types tested. (3) Measurement is gauge fixing: projecting onto an orbit eigenstate selects a representative from a gauge equivalence class, and the real projectors necessarily lose phase information, the SEC arrow applied to measurement. (4) Under the orbit-Laplacian (graph-derived) SEC rotation, the CHSH Bell parameter rises from $S = 2.000$ (fixed basis) to $S = 2.514$ on $D_4 \times D_4$ product graphs — a clear violation at 88.8% of the Tsirelson bound. The orbit space saturates the Tsirelson bound ($S = 2\sqrt{2} = 2.828$ to $4 \times 10^{-16}$) only under the ideal SU(2) generator $\sigma_y/2$, confirming that it supports the full quantum correlation range even though the graph-derived generator alone does not reach saturation. Graphs with nontrivial (abelian) automorphisms such as $A_n$ can exceed the classical bound; graphs with trivial automorphisms ($E_7$, $E_8$) do not violate Bell inequalities at all. (5) The Schrödinger equation emerges: the orbit Laplacian $H = B^T L B$ (where $L$ is the graph Laplacian and $B$ is the orbit basis) serves simultaneously as the Hamiltonian, the Bell measurement generator, and the path-counting matrix. Time evolution $U(t) = e^{-iHt}$ is unitary, automorphism-equivariant ($[P_g, H] = 0$), and energy-conserving — verified to machine precision ($2 \times 10^{-15}$). (6) The Feynman path integral is a sum over graph hops: the propagator $K(t) = e^{-iHt} = \sum_n (-iH)^n t^n / n!$ where $H^n$ counts $n$-hop paths on the orbit graph. Multi-path interference on 3-orbit systems ($A_5$) shows visibility 0.87. (7) The quantum Zeno effect freezes orbit transitions: $P_\text{survive}(N=1000) = 0.997$ on $D_4$, with anti-Zeno enhancement at $N = 2$ (26% above free decay) — the crossover rate encodes the spectral gap, hence the topology. (8) Decoherence from orbit-environment coupling follows an exact formula $|rho_{12}(t)| = \frac{1}{2}|\langle 0_\text{env}| e^{-2i\lambda H_\text{env} t} |0_\text{env}\rangle|$, verified to $1.7 \times 10^{-15}$. The Fermi golden rule $\Gamma^2 = \lambda^2 \cdot \text{Var}(H_\text{env})$ holds across 6 ADE topologies with 0.04% spread. The orbit basis is the pointer basis: orbit eigenstates maintain purity 1.000000 under dephasing while superpositions drop to 0.51.
 
-We report 62/66 pass (94%) across M14 (40/44) and P13–P16 (22/22). The 4 failures are honest: orbit-level interference is algebraic not positional (superpositions of disjoint orbits cannot produce vertex-level cross-terms), and the graph double-slit experiment achieves only 1/4 tests because interference requires same-orbit overlap, not cross-orbit superposition.
+We report 62/66 pass (94%) across M14 (40/44) and P13–P16 (22/22). The 4 failures: orbit-level interference is algebraic not positional (superpositions of disjoint orbits cannot produce vertex-level cross-terms), and the graph double-slit experiment achieves only 1/4 tests because interference requires same-orbit overlap, not cross-orbit superposition.
 
 Zero contradictions with Milestones 1–13. 12 predictions from M14, plus 4 new predictions from P13–P16. The framework makes quantum mechanics a consequence of graph symmetry rather than a separate axiom system.
 
 **Keywords**: quantum mechanics, ADE graphs, orbit Hilbert space, Born rule, Bell inequality, Schrödinger equation, path integral, Zeno effect, decoherence, einselection, automorphism group, Dawn Field Theory
+
+**Epistemic status.** This paper is part of the PACSeries, an evolving research program rather than a finished theory (see the series note *How to Read the PACSeries*). Its quantitative claims are tiered by derivation type — **A** structural, **B** identified, **C** pattern-matched — and labeled in the text. Failures are reported rather than omitted, and framework-level corrections are logged in the Epistemic Corrections Registry in the repository. Every headline result is reproducible from the `Code/` and `Data/` in this package (provenance in `trace.yaml`).
 
 ---
 
@@ -35,9 +37,9 @@ Quantum mechanics rests on axioms that are assumed, not derived:
 4. Time evolution is unitary: $|\psi(t)\rangle = e^{-iHt} |\psi(0)\rangle$
 5. Composite systems use the tensor product: $\mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B$
 
-These axioms work — spectacularly well. But they are postulated, not explained. Why Hilbert space and not some other mathematical structure? Why the Born rule and not some other probability assignment? Why unitary evolution?
+These axioms work well. But they are postulated, not explained. Why Hilbert space and not some other mathematical structure? Why the Born rule and not some other probability assignment? Why unitary evolution?
 
-This paper derives all five from graph theory. The ADE Dynkin diagrams — the same classification that produced gauge groups (Paper 7), spacetime (Paper 10), and force hierarchy (Paper 8) — also produce quantum mechanics. The Hilbert space is the orbit space; the Born rule is counting; unitary evolution is the graph Laplacian exponential; the tensor product is the Cartesian product of graphs.
+This paper derives all five from graph theory. The ADE Dynkin diagrams — the same classification that produced gauge groups (Paper 4), spacetime (Paper 10), and the force hierarchy (Paper 7) — also produce quantum mechanics. The Hilbert space is the orbit space; the Born rule is counting; unitary evolution is the graph Laplacian exponential; the tensor product is the Cartesian product of graphs.
 
 ---
 
@@ -70,13 +72,13 @@ The orbit Hilbert space is $\mathcal{H}_\text{orb} = \text{span}\{|O_1\rangle, \
 | $E_7$ | 7 | 1 | trivial | 7 | Every vertex distinct |
 | $E_8$ | 8 | 1 | trivial | 8 | Every vertex distinct |
 
-The critical entry: $D_4$ has 2 orbits (hub + leaves) with automorphism group $S_3$ (permutations of 3 leaves). This makes the orbit Hilbert space 2-dimensional — literally a qubit.
+$D_4$ has 2 orbits (hub + leaves) with automorphism group $S_3$ (permutations of 3 leaves). This makes the orbit Hilbert space 2-dimensional, a two-level (qubit) system.
 
 ### 2.3 Resolution of PSD degeneracy
 
 M13 (Paper 10) found that the complement Gram matrix is positive semi-definite but not positive definite for some ADE types — a fundamental obstruction to defining a metric on complement space.
 
-The orbit construction resolves this completely. The orbit Gram matrix $G_{ij} = \langle O_i | O_j \rangle = \delta_{ij}$ is the identity matrix for ALL ADE types, by orthonormality. PSD degeneracy is not a defect — it signals that the correct inner product lives on orbits, not vertices.
+The orbit construction resolves this completely. The orbit Gram matrix $G_{ij} = \langle O_i | O_j \rangle = \delta_{ij}$ is the identity matrix for all ADE types, by orthonormality. PSD degeneracy is not a defect but a signal that the correct inner product lives on orbits, not vertices.
 
 ---
 
@@ -92,7 +94,7 @@ For the uniform state $|\psi_\text{uniform}\rangle = \frac{1}{\sqrt{n}} \sum_v |
 
 $$P(O_k) = \frac{|O_k|}{n}$$
 
-This IS the Born rule. The probability of an outcome equals the orbit volume — the fraction of graph vertices in that orbit. It is not postulated; it follows from counting gauge-equivalent configurations.
+This is the Born rule. The probability of an outcome equals the orbit volume, the fraction of graph vertices in that orbit. It is not postulated but follows from counting gauge-equivalent configurations.
 
 ### 3.2 Verification
 
@@ -118,7 +120,7 @@ The lost phase is the gauge degree of freedom — which specific vertex within t
 
 The projector $P_{O_k}$ is real. The state $|\psi\rangle$ may be complex (via SEC complexification). Real projection of a complex state is irreversible — you cannot recover the phase from the projected result.
 
-This irreversibility IS the SEC arrow applied to measurement. The second law of thermodynamics and the measurement postulate have the same graph-theoretic origin.
+This irreversibility is the SEC arrow applied to measurement. The second law of thermodynamics and the measurement postulate have the same graph-theoretic origin.
 
 ---
 
@@ -162,7 +164,7 @@ The orbit Hilbert space of the product is the tensor product of orbit spaces:
 
 $$\mathcal{H}_\text{orb}(G_A \square G_B) = \mathcal{H}_\text{orb}(G_A) \otimes \mathcal{H}_\text{orb}(G_B)$$
 
-The tensor product structure is not postulated — it is a theorem about Cartesian products of graphs (M14 exp_09).
+The tensor product structure is a theorem about Cartesian products of graphs, not a postulate (M14 exp_09).
 
 ### 6.2 Bell states
 
@@ -184,9 +186,10 @@ Classical hidden variable theories give $|S| \leq 2$. Quantum mechanics allows $
 
 On $D_4 \times D_4$ orbit space (P13):
 - **Fixed basis** (no rotation): $S = 2.000$ — classical bound, no violation
-- **SEC-rotated basis**: $S = 2\sqrt{2} = 2.828$ — Tsirelson bound, saturated to $4 \times 10^{-16}$
+- **Orbit-Laplacian (SEC-rotated) basis**: $S = 2.514$ — a clear violation, 88.8% of the Tsirelson bound
+- **Ideal SU(2) generator** ($\sigma_y/2$, not graph-derived): $S = 2\sqrt{2} = 2.828$ — Tsirelson bound, saturated to $4 \times 10^{-16}$
 
-The measurement rotation is generated by $R(\theta) = e^{i\theta G}$ where $G$ is derived from the orbit Laplacian. This is SEC complexification applied to measurement: the entropy arrow provides the rotation parameter.
+The graph-derived rotation is generated by $R(\theta) = e^{i\theta G}$ with $G$ from the orbit Laplacian — SEC complexification applied to measurement. It produces a genuine Bell violation but does not saturate Tsirelson. That the orbit space *does* reach the Tsirelson bound under the ideal SU(2) generator confirms it supports the full quantum correlation range; the limitation is in the graph-derived rotation, not in the orbit Hilbert space.
 
 ### 7.2 Topology determines violation
 
@@ -201,7 +204,7 @@ An ADE sweep across 12 graph types reveals (P13 T3):
 | $E_7$ | trivial | 0 | 1.97 | No |
 | $E_8$ | trivial | 0 | 1.98 | No |
 
-Bell violation requires nontrivial automorphisms ($|\text{Aut}| > 1$): graphs with trivial automorphisms ($E_7$, $E_8$) do NOT violate Bell inequalities. The topology of the graph determines whether quantum correlations exceed classical bounds.
+Bell violation requires nontrivial automorphisms ($|\text{Aut}| > 1$): graphs with trivial automorphisms ($E_7$, $E_8$) do not violate Bell inequalities. The topology of the graph determines whether quantum correlations exceed classical bounds. This is a necessary condition, not a sufficient one: several nontrivial-Aut types in the full sweep ($A_5$–$A_7$, $D_5$, $D_6$, $E_6$) also fall below $S = 2$; the table above lists representative types.
 
 ### 7.3 The Fibonacci connection
 
@@ -248,7 +251,7 @@ The propagator $K(t) = e^{-iHt}$ can be expanded:
 
 $$K(t) = \sum_{n=0}^{\infty} \frac{(-iHt)^n}{n!}$$
 
-Each term $H^n$ counts $n$-hop paths on the orbit graph. The propagator is literally a sum over paths, each weighted by $(-it)^n/n!$ — this IS the Feynman path integral, derived from graph combinatorics.
+Each term $H^n$ counts $n$-hop paths on the orbit graph. The propagator is a sum over paths, each weighted by $(-it)^n/n!$: this is the Feynman path integral, derived from graph combinatorics.
 
 Short-time verification: $|K(dt) - (I - iH \cdot dt)| < 10^{-5}$ for $dt = 0.001$ across all ADE types tested. Second-order: $|K(dt) - (I - iHdt - H^2 dt^2/2)| < 10^{-8}$. Convergence ratio: $\sim 1000\times$ per order.
 
@@ -274,11 +277,11 @@ Frequent measurement of orbit occupation freezes transitions. On $D_4$ with tota
 | 100 | 0.970 | 2.55 |
 | 1000 | 0.997 | 2.62 |
 
-At $N = 1000$: the system is frozen with 99.7% probability. This is a hallmark of genuinely quantum dynamics — classical systems do not show Zeno freezing.
+At $N = 1000$, the system is frozen with 99.7% probability. Classical systems do not show Zeno freezing.
 
 ### 10.2 Anti-Zeno dip (P15 T4)
 
-At $N = 2$, $P_\text{survive}$ drops BELOW free evolution (0.220 vs 0.380). This anti-Zeno effect means measurement at the "wrong" rate accelerates decay by 26%. The crossover rate $N^* \sim T \cdot \Delta$ (time $\times$ spectral gap) is topology-dependent — different graphs have different anti-Zeno crossovers.
+At $N = 2$, $P_\text{survive}$ drops below free evolution (0.220 vs 0.380). This anti-Zeno effect means measurement at the "wrong" rate accelerates decay by 26%. The crossover rate $N^* \sim T \cdot \Delta$ (time $\times$ spectral gap) is topology-dependent — different graphs have different anti-Zeno crossovers.
 
 ---
 
@@ -310,7 +313,7 @@ The orbit basis is the pointer basis. Under pure dephasing:
 - Orbit eigenstate $|O_1\rangle$: purity = **1.000000** at all times
 - Superposition $|+\rangle$: purity drops to **0.514**
 
-The environment selects the orbit basis as preferred. Orbit eigenstates are immune to decoherence; superpositions decay. This is einselection — the environment-induced selection of a preferred basis — derived from graph coupling, not postulated.
+The environment selects the orbit basis as preferred. Orbit eigenstates are immune to decoherence; superpositions decay. This is einselection (the environment-induced selection of a preferred basis), derived from graph coupling rather than postulated.
 
 ---
 
@@ -333,7 +336,7 @@ The environment selects the orbit basis as preferred. Orbit eigenstates are immu
 
 3. **Orbit interference visibility** (exp_06 T2-T4): The interference mechanism works at the orbit level (algebraic phases) but does not reproduce vertex-level fringe patterns. This is because orbits have disjoint vertex support — there is no spatial overlap for cross-terms.
 
-These failures point to a clear boundary: the orbit framework captures algebraic quantum mechanics (Hilbert space, Born rule, uncertainty, entanglement, Bell violation) but does NOT naturally produce positional quantum mechanics (double-slit fringes, spatial wavefunctions). The bridge would require a continuum limit of ADE chains, which remains open.
+These failures point to a clear boundary: the orbit framework captures algebraic quantum mechanics (Hilbert space, Born rule, uncertainty, entanglement, Bell violation) but does not naturally produce positional quantum mechanics (double-slit fringes, spatial wavefunctions). The bridge would require a continuum limit of ADE chains, which remains open.
 
 ### 12.3 Structural vs derived
 
@@ -386,19 +389,17 @@ Approximately 30% of M14 results are structural (orbit orthogonality, Gram = ide
 | Zeno effect | Projection dynamics on orbit space | §10 |
 | Decoherence | Orbit-environment entanglement | §11 |
 
-Every row derived, not assumed.
+Every row is derived, not assumed.
 
 ---
 
 ## 15. Conclusion
 
-Quantum mechanics is not a separate axiom system. It is what happens when ADE graph symmetries are promoted to dynamics.
+Quantum mechanics here is not a separate axiom system; it is what ADE graph symmetries produce when promoted to dynamics.
 
 The orbit Hilbert space resolves the PSD degeneracy of M13, provides a natural Born rule, gives $D_4$ triality a unique physical role (the source of quantum uncertainty), and produces the full operational toolkit of quantum mechanics: Bell violation, Schrödinger evolution, path integrals, Zeno effect, decoherence, and einselection.
 
 The single remaining gap — positional quantum mechanics (spatial wavefunctions, double-slit fringes) — points toward the continuum limit of ADE chains as the natural next step (M15: Dynamics as Orbit Flow, fully delivered through P13–P16 for the algebraic sector).
-
-The graph tells you what is quantum. $D_4$ tells you why.
 
 **Source code**: `foundational/experiments/milestone14/` (11 experiments + P13–P16 scripts)
 
@@ -406,7 +407,7 @@ The graph tells you what is quantum. $D_4$ tells you why.
 
 ## References
 
-1. Groom, P. (2026). PACSeries v0.2: Dawn Field Theory. Zenodo. DOI: 10.5281/zenodo.15783623
+1. Groom, P. (2026). PACSeries v0.2: Dawn Field Theory. Zenodo. DOI: 10.5281/zenodo.18743674
 2. Burnside, W. (1897). Theory of Groups of Finite Order. Cambridge University Press.
 3. Tsirelson, B.S. (1980). Quantum generalizations of Bell's inequality. Lett. Math. Phys. 4, 93–100.
 4. Zurek, W.H. (2003). Decoherence, einselection, and the quantum origins of the classical. Rev. Mod. Phys. 75, 715.

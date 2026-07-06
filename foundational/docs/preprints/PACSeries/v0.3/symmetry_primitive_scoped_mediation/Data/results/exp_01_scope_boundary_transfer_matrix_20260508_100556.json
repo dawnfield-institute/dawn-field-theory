@@ -1,0 +1,62 @@
+{
+  "experiment": "exp_01_scope_boundary_transfer_matrix",
+  "milestone": 6,
+  "block": "A",
+  "n_transfer_matrices": 67,
+  "eigenvalue_analysis": {
+    "dominant_mean": 0.004033103684132701,
+    "dominant_median": 0.0007594730958467007,
+    "dominant_std": 0.01537323199105206,
+    "eig_size_correlation": 0.23082679012632296,
+    "eig_size_p": 0.06020250118348874,
+    "mean_spectral_efficiency": 0.17714601932375384,
+    "cv_efficiency": 2.7795972197154866
+  },
+  "convergence": {
+    "n_converged": 66,
+    "n_rank1_at_4": 67,
+    "mean_rank1_error": 1.0256887439913039e-10
+  },
+  "non_compositionality": {
+    "n_tests": 31,
+    "mean_relative_diff": 0.9995999124353473
+  },
+  "transient_decay": {
+    "mean_correlation": 0.9556199301960283,
+    "n_good_fits": 67
+  },
+  "attenuation_profile": {
+    "norms": [
+      6.273919246632669e-05,
+      3.936206271326782e-09,
+      2.4695440284393307e-13,
+      1.5493719810432286e-17,
+      9.720634692060495e-22,
+      6.098647708400356e-26,
+      3.82624232361652e-30,
+      2.4005535356418184e-34
+    ],
+    "ratios": [
+      6.273919246632666e-05,
+      6.273919246632669e-05,
+      6.273919246632667e-05,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "pac_budget": {
+    "mean_A_fraction": 4.382657985056585e-27,
+    "mean_xi_fraction": 0.31161616158776256,
+    "mean_Theta_fraction": 0.6883838384122376
+  },
+  "verification": {
+    "test1_eigenvalue_phi": "False",
+    "test2_rank1_convergence": true,
+    "test3_non_compositional": "True",
+    "test4_transient_decay": "True",
+    "verified_count": "3"
+  },
+  "timestamp": "2026-05-08T10:05:56.512872"
+}

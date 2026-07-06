@@ -1,0 +1,47 @@
+{
+  "experiment": "exp_16_structural_regularity",
+  "initiative": "midnight",
+  "test_results": {
+    "T1": {
+      "test": "T1",
+      "early": 3.254763126498408,
+      "mid": 3.257344230063259,
+      "late": 3.306626240406358,
+      "plateaus": true,
+      "bounded": true,
+      "plateau_values": {
+        "2": 1.9562815870229264,
+        "3": 3.2532191702668714,
+        "4": 5.679700635353738,
+        "5": 10.391664548884886,
+        "6": 19.289324800176537
+      },
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2",
+      "sim_3_layers": 3.298729975553393,
+      "phi_cubed": 4.23606797749979,
+      "match": 0.22127548635317984,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3",
+      "bits_per_node": 100,
+      "landauer_mass_cmb": 2.901429305787107e+42,
+      "landauer_mass_cascade": 1.1592215126184563e+55,
+      "dark_matter_mass": 5e+53,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4",
+      "energy_invariant": true,
+      "structure_regulates": true,
+      "binary_bound": 3.2532191702668714,
+      "star_bound": 1.4945206301379534,
+      "chain_bound": 1.7463308193889944,
+      "PASS": true
+    }
+  },
+  "score": "3/4"
+}

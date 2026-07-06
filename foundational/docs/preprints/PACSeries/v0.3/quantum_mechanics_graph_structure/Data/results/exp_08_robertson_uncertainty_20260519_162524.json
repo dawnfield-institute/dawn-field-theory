@@ -1,0 +1,133 @@
+{
+  "experiment": "exp_08_robertson_uncertainty",
+  "milestone": 14,
+  "block": "D",
+  "results": {
+    "T1": {
+      "test": "T1_robertson_nontrivial_d4",
+      "best_bound": 0.47959299580939163,
+      "best_result": {
+        "delta_A": 0.8536603911018238,
+        "delta_B": 0.8848275022432706,
+        "product": 0.7553421916226402,
+        "robertson_bound": 0.47959299580939163,
+        "satisfied": true,
+        "bound_nontrivial": true
+      },
+      "nontrivial": true,
+      "satisfied": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_robertson_zero_abelian",
+      "results_by_type": {
+        "A_3": {
+          "n_automorphisms": 2,
+          "max_bound": 0.0,
+          "is_zero": true,
+          "PASS": true
+        },
+        "A_5": {
+          "n_automorphisms": 2,
+          "max_bound": 0.0,
+          "is_zero": true,
+          "PASS": true
+        },
+        "E_7": {
+          "n_automorphisms": 1,
+          "max_bound": 0.0,
+          "is_zero": true,
+          "PASS": true
+        }
+      },
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_uncertainty_scales_with_nc",
+      "results_by_type": {
+        "A_1": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "A_2": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "A_3": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "A_4": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "A_5": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "A_6": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "A_7": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "A_8": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "D_4": {
+          "nc_measure": 1.2247448713915892,
+          "max_robertson_bound": 0.2758979779835107
+        },
+        "D_5": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "D_6": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "D_7": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "D_8": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "E_6": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "E_7": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        },
+        "E_8": {
+          "nc_measure": 0.0,
+          "max_robertson_bound": 0.0
+        }
+      },
+      "dichotomy_holds": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_minimum_uncertainty_product",
+      "d4_min_product": 0.06714509176618051,
+      "d4_finite": true,
+      "a5_can_reach_zero": true,
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}

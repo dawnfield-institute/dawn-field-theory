@@ -1,0 +1,234 @@
+{
+  "experiment": "exp_15_coherence_limit_universality",
+  "milestone": "milestone13.5",
+  "block": "investigation",
+  "version": "v0.1",
+  "score": 0,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_a_family_convergence",
+      "rates": [
+        {
+          "rank": 3,
+          "rate": 1.4142135623730951
+        },
+        {
+          "rank": 4,
+          "rate": 0.5857864376269052
+        },
+        {
+          "rank": 5,
+          "rate": 1.5307337294603593
+        },
+        {
+          "rank": 6,
+          "rate": 0.6122757548012756
+        },
+        {
+          "rank": 7,
+          "rate": 1.0909460598144491
+        },
+        {
+          "rank": 8,
+          "rate": 0.8647099349037225
+        },
+        {
+          "rank": 9,
+          "rate": 1.0792651631387364
+        },
+        {
+          "rank": 10,
+          "rate": 0.6159184326617724
+        },
+        {
+          "rank": 11,
+          "rate": 0.9196121359679558
+        },
+        {
+          "rank": 12,
+          "rate": 0.5695873407098292
+        },
+        {
+          "rank": 13,
+          "rate": 0.8906405181788366
+        },
+        {
+          "rank": 14,
+          "rate": 0.7361044084669116
+        },
+        {
+          "rank": 15,
+          "rate": 0.8040362782103496
+        },
+        {
+          "rank": 16,
+          "rate": 0.5099380290094487
+        },
+        {
+          "rank": 17,
+          "rate": 0.7779322013805497
+        },
+        {
+          "rank": 18,
+          "rate": 0.49875112317848036
+        },
+        {
+          "rank": 19,
+          "rate": 0.7221649970069817
+        },
+        {
+          "rank": 20,
+          "rate": 0.6015752688057018
+        }
+      ],
+      "last5_mean": 0.6220723238762325,
+      "last5_cv": 0.17974629912382262,
+      "last5_variation": 0.44879199328857344,
+      "even_last3_cv": 0.0858156407250982,
+      "odd_last3_cv": 0.04445998614782659,
+      "full_converges": false,
+      "sub_converges": false,
+      "note": "A-family rates alternate (bipartite even/odd effect). Convergence tested both overall and within even/odd sub-families.",
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_d_family_convergence",
+      "d_rates": [
+        {
+          "rank": 4,
+          "rate": 2.0000000000000004
+        },
+        {
+          "rank": 5,
+          "rate": 1.2360679774997898
+        },
+        {
+          "rank": 6,
+          "rate": 1.4839275686054516
+        },
+        {
+          "rank": 7,
+          "rate": 1.1622776601683793
+        },
+        {
+          "rank": 8,
+          "rate": 1.2415697432876545
+        },
+        {
+          "rank": 9,
+          "rate": 1.0157546021820054
+        },
+        {
+          "rank": 10,
+          "rate": 1.0906238191044415
+        },
+        {
+          "rank": 11,
+          "rate": 0.9326736789517684
+        },
+        {
+          "rank": 12,
+          "rate": 0.9845628021658115
+        },
+        {
+          "rank": 13,
+          "rate": 0.8660409175637832
+        },
+        {
+          "rank": 14,
+          "rate": 0.9046493619920158
+        },
+        {
+          "rank": 15,
+          "rate": 0.8114531194353748
+        },
+        {
+          "rank": 16,
+          "rate": 0.8415928370405601
+        },
+        {
+          "rank": 17,
+          "rate": 0.7658118602873472
+        },
+        {
+          "rank": 18,
+          "rate": 0.7901700809171179
+        },
+        {
+          "rank": 19,
+          "rate": 0.7269741410011281
+        },
+        {
+          "rank": 20,
+          "rate": 0.7471822154808238
+        }
+      ],
+      "d_last5_mean": 0.7743462269453956,
+      "d_last5_cv": 0.051095982558475174,
+      "d_converges": false,
+      "a_limit": 0.6220723238762325,
+      "cross_diff": 0.1966483438162358,
+      "agrees_within_20pct": true,
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_random_higher_variance",
+      "n_ade": 22,
+      "ade_cv": 0.19114815671395097,
+      "n_random": 30,
+      "random_cv": 0.12377208726922591,
+      "ade_more_constrained": false,
+      "note": "ADE classification constrains deformation rates more tightly than random graph topology. This is the structural signature of the complement coherence limit.",
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_limiting_value_relates_to_dft",
+      "limit_estimate": 0.7164651793128219,
+      "limit_std": 0.11118043413019517,
+      "match_results": {
+        "phi": {
+          "value": 1.618033988749895,
+          "error": 0.557200167428888
+        },
+        "inv_phi": {
+          "value": 0.6180339887498948,
+          "error": 0.15926501188393405
+        },
+        "ln_phi": {
+          "value": 0.48121182505960347,
+          "error": 0.48887691865028404
+        },
+        "Xi": {
+          "value": 1.0584274899611363,
+          "error": 0.32308525042265357
+        },
+        "gamma_EM": {
+          "value": 0.5772156649015329,
+          "error": 0.24124347774768662
+        },
+        "1": {
+          "value": 1.0,
+          "error": 0.28353482068717806
+        },
+        "sqrt(2)": {
+          "value": 1.4142135623730951,
+          "error": 0.4933826132238679
+        },
+        "2*ln_phi": {
+          "value": 0.9624236501192069,
+          "error": 0.255561540674858
+        },
+        "phi-1": {
+          "value": 0.6180339887498949,
+          "error": 0.15926501188393383
+        }
+      },
+      "best_match": "phi-1",
+      "best_error": 0.15926501188393383,
+      "matches_dft": false,
+      "note": "Tests whether the complement coherence limit converges to a DFT constant (phi, ln(phi), Xi, etc.). If it does, the speed of light has a direct Fibonacci-arithmetic origin.",
+      "PASS": false
+    }
+  }
+}

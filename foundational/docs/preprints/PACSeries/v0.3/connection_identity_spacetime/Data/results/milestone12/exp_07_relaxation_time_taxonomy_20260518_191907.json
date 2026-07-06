@@ -1,0 +1,164 @@
+{
+  "experiment": "exp_07_relaxation_time_taxonomy",
+  "milestone": "milestone12",
+  "block": "C",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_em_relaxation_time",
+      "cascade_depth": 13,
+      "coupling": 0.0019193787254996309,
+      "n_measure_steps": 1000,
+      "initial_deviation": 0.5,
+      "final_deviation": 0.4904945299542358,
+      "measured_rate": 1.9193971458089628e-05,
+      "expected_rate": 1.9193787254996308e-05,
+      "rate_ratio": 1.0000095970165175,
+      "basin_converges": true,
+      "basin_steps_to_converge": 203816,
+      "tau_analytical_seconds": 2.80872134737071e-41,
+      "tau_m11_seconds": 7.38761071060204e-42,
+      "note": "EM (depth 13): measured rate = 1.919397e-05, expected rate = 1.919379e-05, ratio = 1.0000. Basin dynamics correctly reproduce coupling-based relaxation.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_gravity_relaxation_time",
+      "cascade_depth_gravity": 183,
+      "cascade_depth_em": 13,
+      "coupling_gravity": 5.691959932062575e-39,
+      "coupling_em": 0.0019193787254996309,
+      "tau_gravity_seconds": 9.471254303166681e-06,
+      "tau_em_seconds": 2.80872134737071e-41,
+      "tau_ratio": 3.372087555795764e+35,
+      "expected_ratio_phi_170": 3.372087555795763e+35,
+      "ratio_error": 2.1881690517797236e-16,
+      "ratio_matches": true,
+      "init_deviation": 0.5,
+      "final_deviation": 0.5,
+      "expected_change": 0.0,
+      "no_measurable_relaxation": true,
+      "oom_separation": 35.527898842496384,
+      "huge_separation": true,
+      "note": "Gravity (depth 183): coupling = 5.69e-39. tau_grav/tau_em = phi^170 = 3.37e+35. No measurable relaxation in 1000 steps (change = 0.00e+00). Gravity basin is 36 orders slower than EM.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_force_hierarchy_ordering",
+      "forces": {
+        "strong": {
+          "depth": 3,
+          "coupling": 0.23606797749978967,
+          "measured_steps": 1656,
+          "tau_seconds": 2.2836642466701368e-43,
+          "log10_tau": -42.64136774742143
+        },
+        "weak": {
+          "depth": 7,
+          "coupling": 0.03444185374863302,
+          "measured_steps": 11357,
+          "tau_seconds": 1.565246760335589e-42,
+          "log10_tau": -41.805417186421515
+        },
+        "em": {
+          "depth": 13,
+          "coupling": 0.0019193787254996309,
+          "measured_steps": 203816,
+          "tau_seconds": 2.80872134737071e-41,
+          "log10_tau": -40.55149134492164
+        },
+        "gravity": {
+          "depth": 183,
+          "coupling": 5.691959932062575e-39,
+          "measured_steps": -1,
+          "tau_seconds": 9.471254303166681e-06,
+          "log10_tau": -5.023592502425253
+        }
+      },
+      "ordering": [
+        "strong",
+        "weak",
+        "em",
+        "gravity"
+      ],
+      "tau_sequence": [
+        2.2836642466701368e-43,
+        1.565246760335589e-42,
+        2.80872134737071e-41,
+        9.471254303166681e-06
+      ],
+      "measurable_step_sequence": [
+        1656,
+        11357,
+        203816
+      ],
+      "tau_strictly_ordered": true,
+      "steps_strictly_ordered": true,
+      "gravity_unmeasurable": true,
+      "note": "Force hierarchy from basin relaxation: strong(d=3, log10_tau=-42.6) < weak(d=7, log10_tau=-41.8) < em(d=13, log10_tau=-40.6) < gravity(d=183, log10_tau=-5.0). Gravity coupling too weak to measure directly.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_phi_depth_ratio_scaling",
+      "basin_data": {
+        "strong": {
+          "depth": 3,
+          "steps": 1656,
+          "converged": true,
+          "final_dev": 0.009981175115055363
+        },
+        "weak": {
+          "depth": 7,
+          "steps": 11357,
+          "converged": true,
+          "final_dev": 0.009997879358600636
+        },
+        "em": {
+          "depth": 13,
+          "steps": 203816,
+          "converged": true,
+          "final_dev": 0.009999845188452872
+        }
+      },
+      "ratios": {
+        "weak/strong": {
+          "numerator": "weak",
+          "denominator": "strong",
+          "delta_depth": 4,
+          "measured_steps_num": 11357,
+          "measured_steps_den": 1656,
+          "measured_ratio": 6.858091787439614,
+          "expected_ratio_phi_power": 6.854101966249686,
+          "relative_error": 0.0005821070666258828,
+          "match": true
+        },
+        "em/strong": {
+          "numerator": "em",
+          "denominator": "strong",
+          "delta_depth": 10,
+          "measured_steps_num": 203816,
+          "measured_steps_den": 1656,
+          "measured_ratio": 123.07729468599034,
+          "expected_ratio_phi_power": 122.99186938124426,
+          "relative_error": 0.0006945605849869988,
+          "match": true
+        },
+        "em/weak": {
+          "numerator": "em",
+          "denominator": "weak",
+          "delta_depth": 6,
+          "measured_steps_num": 203816,
+          "measured_steps_den": 11357,
+          "measured_ratio": 17.946288632561416,
+          "expected_ratio_phi_power": 17.944271909999163,
+          "relative_error": 0.00011238809645595876,
+          "match": true
+        }
+      },
+      "all_converged": true,
+      "all_ratios_match": true,
+      "note": "Relaxation-time ratios from independent basin simulations match phi^(delta_depth) predictions. This is non-tautological: the basin dynamics are iterative redistribution, not the analytical formula.",
+      "PASS": true
+    }
+  }
+}

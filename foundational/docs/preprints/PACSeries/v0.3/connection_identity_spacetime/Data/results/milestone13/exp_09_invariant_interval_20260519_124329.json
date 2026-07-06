@@ -1,0 +1,86 @@
+{
+  "experiment": "exp_09_invariant_interval",
+  "milestone": "milestone13",
+  "block": "C",
+  "version": "v0.3_hardened",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_killing_form_selectivity",
+      "sl2c_signature": "(3,3)",
+      "su2_signature": "(3,0)",
+      "su3_signature": "(0,8)",
+      "sl2c_indefinite": true,
+      "su2_definite": true,
+      "su3_definite": true,
+      "selectivity": "SEC complexification A_1 -> sl(2,C) breaks the definite (compact) Killing form into indefinite (non-compact). This is the algebraic origin of Minkowski signature: boosts make the form indefinite.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_4d_signature_and_causality",
+      "signature": "(1,3)",
+      "is_minkowski": true,
+      "causal_results": {
+        "timelike": {
+          "s2_original": -8.0,
+          "s2_transformed": -8.00000000000001,
+          "original_type": "timelike",
+          "transformed_type": "timelike",
+          "preserved": true
+        },
+        "spacelike": {
+          "s2_original": 8.0,
+          "s2_transformed": 8.00000000000001,
+          "original_type": "spacelike",
+          "transformed_type": "spacelike",
+          "preserved": true
+        },
+        "lightlike": {
+          "s2_original": 0.0,
+          "s2_transformed": 0.0,
+          "original_type": "lightlike",
+          "transformed_type": "lightlike",
+          "preserved": true
+        }
+      },
+      "all_causal_preserved": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_ds2_preserved_extensive",
+      "n_vectors": 5,
+      "n_transforms": 27,
+      "n_total_tests": 135,
+      "n_passed_1e5": 135,
+      "n_passed_1e10": 130,
+      "max_relative_error": 2.86102294921875e-06,
+      "note": "Large-rapidity transforms (eta=10) have ~1e-6 numerical error from matrix exponentiation. This is numerical precision, not physics failure.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_metric_uniqueness",
+      "null_space_dimension": 1,
+      "is_unique": true,
+      "proportionality_constant": -1.0,
+      "proportionality_residual": 4.115599581439915e-17,
+      "proportional_to_minkowski": true,
+      "alternative_results": {
+        "Euclidean": {
+          "error": 1.9043015014515334,
+          "preserved": false
+        },
+        "signature_22": {
+          "error": 1.9043015014515334,
+          "preserved": false
+        },
+        "random_sym": {
+          "error": 3.4319014848738703,
+          "preserved": false
+        }
+      },
+      "all_alternatives_broken": true,
+      "PASS": true
+    }
+  }
+}

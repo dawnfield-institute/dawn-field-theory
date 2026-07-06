@@ -1,0 +1,124 @@
+{
+  "experiment": "exp_06_symmetry_breaking_as_seeking",
+  "milestone": 7,
+  "block": "C",
+  "methods": [
+    "phi",
+    "equal",
+    "two_to_one",
+    "random",
+    "noise"
+  ],
+  "per_graph": {
+    "Ring N=64": {
+      "phi": {
+        "pb_initial": 0.7997171744470697,
+        "pb_final": 1.0,
+        "gain": 0.2002828255529303,
+        "frac_improved": 1.0
+      },
+      "equal": {
+        "pb_initial": 0.7997171744470697,
+        "pb_final": 0.7639320225002104,
+        "gain": -0.03578515194685927,
+        "frac_improved": 0.5333333333333333
+      },
+      "two_to_one": {
+        "pb_initial": 0.7997171744470697,
+        "pb_final": 0.9270509831248422,
+        "gain": 0.12733380867777255,
+        "frac_improved": 1.0
+      },
+      "random": {
+        "pb_initial": 0.7997171744470697,
+        "pb_final": 0.8573007052071614,
+        "gain": 0.057583530760091706,
+        "frac_improved": 0.6666666666666666
+      },
+      "noise": {
+        "pb_initial": 0.7997171744470697,
+        "pb_final": 0.8326455919593795,
+        "gain": 0.03292841751230979,
+        "frac_improved": 0.8666666666666667
+      }
+    },
+    "Torus 8x8": {
+      "phi": {
+        "pb_initial": 0.8872676577059236,
+        "pb_final": 0.9999999999999999,
+        "gain": 0.11273234229407625,
+        "frac_improved": 1.0
+      },
+      "equal": {
+        "pb_initial": 0.8872676577059236,
+        "pb_final": 0.7639320225002104,
+        "gain": -0.12333563520571322,
+        "frac_improved": 0.06666666666666667
+      },
+      "two_to_one": {
+        "pb_initial": 0.8872676577059236,
+        "pb_final": 0.9270509831248422,
+        "gain": 0.0397833254189186,
+        "frac_improved": 0.8
+      },
+      "random": {
+        "pb_initial": 0.8872676577059236,
+        "pb_final": 0.8573007052071614,
+        "gain": -0.029966952498762245,
+        "frac_improved": 0.4666666666666667
+      },
+      "noise": {
+        "pb_initial": 0.8872676577059236,
+        "pb_final": 0.8721213781331577,
+        "gain": -0.01514627957276593,
+        "frac_improved": 0.5333333333333333
+      }
+    },
+    "Random Regular k=4": {
+      "phi": {
+        "pb_initial": 0.8806441986752263,
+        "pb_final": 1.0,
+        "gain": 0.11935580132477375,
+        "frac_improved": 1.0
+      },
+      "equal": {
+        "pb_initial": 0.8806441986752263,
+        "pb_final": 0.7639320225002103,
+        "gain": -0.11671217617501595,
+        "frac_improved": 0.26666666666666666
+      },
+      "two_to_one": {
+        "pb_initial": 0.8806441986752263,
+        "pb_final": 0.9270509831248422,
+        "gain": 0.04640678444961599,
+        "frac_improved": 0.7333333333333333
+      },
+      "random": {
+        "pb_initial": 0.8806441986752263,
+        "pb_final": 0.8573007052071614,
+        "gain": -0.023343493468064858,
+        "frac_improved": 0.5333333333333333
+      },
+      "noise": {
+        "pb_initial": 0.8806441986752263,
+        "pb_final": 0.8874478277643625,
+        "gain": 0.006803629089136232,
+        "frac_improved": 0.7333333333333333
+      }
+    }
+  },
+  "method_means": {
+    "phi": 0.14412365639059344,
+    "equal": -0.09194432110919615,
+    "two_to_one": 0.07117463951543572,
+    "random": 0.0014243615977548678,
+    "noise": 0.008195255676226698
+  },
+  "verification": {
+    "test1_all_improve": true,
+    "test2_phi_optimal": "True",
+    "test3_cascade_improve": "True",
+    "test4_cross_topology": false,
+    "verified_count": "3"
+  }
+}

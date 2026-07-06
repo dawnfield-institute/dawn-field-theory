@@ -1,0 +1,72 @@
+{
+  "experiment": "exp_07_deep_cascade_probe",
+  "initiative": "midnight",
+  "thread": "photon_archaeology",
+  "data_sources": [
+    "SDSS DR16 FeII-confirmed MgII (69,675 systems)",
+    "SDSS DR12 CIV catalog (445,765 systems, Monadi+2023)",
+    "SDSS DR16 MgII full (159,524 systems)"
+  ],
+  "cascade_clock": {
+    "a": 1.36,
+    "slope": 2.0780869212350273
+  },
+  "test_results": {
+    "T1": {
+      "test": "T1_feii_subset",
+      "n_absorbers": 53025,
+      "n_bins": 45,
+      "ew_std_rho": 0.23675889328063238,
+      "ew_std_p": 0.11737436606165755,
+      "ew_iqr_rho": 0.15573122529644268,
+      "ew_iqr_p": 0.3070040266908792,
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_civ_high_z",
+      "n_absorbers": 443109,
+      "full_rho": -0.11346938775510206,
+      "full_p": 0.4326911145065587,
+      "high_z_rho": 0.08209121245828699,
+      "high_z_p": 0.666282464059791,
+      "b_param_rho": -0.3996638655462184,
+      "b_param_p": 0.004034309408885499,
+      "ks_ew": 0.13347341291477996,
+      "ks_ew_p": 1.6341262264265826e-157,
+      "ks_b": 0.6021948135027613,
+      "ks_b_p": 0.0,
+      "n_transition": 11647,
+      "n_trough": 76542,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_detrended",
+      "n_bins": 60,
+      "rho_raw": 0.28824673520422345,
+      "p_raw": 0.02552140663547236,
+      "rho_detrended": -0.021116976938038347,
+      "p_detrended": 0.8727642431290874,
+      "detrend_strengthens": false,
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_multi_ion",
+      "p_values": {
+        "FeII MgII EW std": 0.11737436606165755,
+        "FeII MgII EW IQR": 0.3070040266908792,
+        "CIV full range": 0.4326911145065587,
+        "CIV high z": 0.666282464059791,
+        "CIV KS EW": 1.6341262264265826e-157,
+        "MgII detrended": 0.8727642431290874
+      },
+      "n_significant": 1,
+      "mgii_signal": false,
+      "civ_signal": true,
+      "both_ions": false,
+      "PASS": false
+    }
+  },
+  "score": "1/4",
+  "n_pass": 1,
+  "n_total": 4
+}

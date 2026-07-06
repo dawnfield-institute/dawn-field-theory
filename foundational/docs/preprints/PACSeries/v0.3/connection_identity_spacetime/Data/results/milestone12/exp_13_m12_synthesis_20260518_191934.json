@@ -1,0 +1,323 @@
+{
+  "experiment": "exp_13_m12_synthesis",
+  "milestone": "milestone12",
+  "block": "E",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_derivation_chain_complete",
+      "chain": {
+        "L1_self_loop": {
+          "description": "Minimal connection = A_1 (single node)",
+          "rank": 1,
+          "verified": true
+        },
+        "L2_phi_from_self": {
+          "description": "Self-application x = 1 + 1/x yields phi",
+          "root": 1.618033988749895,
+          "phi": 1.618033988749895,
+          "error": 0.0,
+          "verified": true
+        },
+        "L3_pac_from_phi": {
+          "description": "phi^2 = phi + 1 is PAC conservation (parent = child1 + child2)",
+          "identity_error": 0.0,
+          "split_sum": 0.9999999999999999,
+          "verified": true
+        },
+        "L4_A1_SU2": {
+          "description": "A_1 -> SU(2), adjoint dimension 3 = F_4",
+          "group": "SU(2)",
+          "adjoint_dim": 3,
+          "is_F4": true,
+          "is_fibonacci": true,
+          "verified": true
+        },
+        "L5_A2_SU3": {
+          "description": "A_2 -> SU(3), adjoint dimension 8 = F_6",
+          "group": "SU(3)",
+          "adjoint_dim": 8,
+          "is_F6": true,
+          "is_fibonacci": true,
+          "verified": true
+        },
+        "L6_F7_closure": {
+          "description": "F_7 = 13 is the cascade depth for EM, closing the derivation",
+          "F7": 13,
+          "DEPTH_EM": 13,
+          "F7_is_13": true,
+          "verified": true
+        },
+        "L7_lorentz": {
+          "description": "SEC complexification: su(2) -> sl(2,C) ~ so(3,1)",
+          "su2_dim": 3,
+          "sl2c_dim": 6,
+          "so31_commutation_exact": true,
+          "verified": true
+        }
+      },
+      "n_links": 7,
+      "n_verified": 7,
+      "all_verified": true,
+      "derivation_summary": "connection(self-loop) -> phi(self-application) -> PAC(phi^2=phi+1) -> A_1=SU(2)[F_4=3] -> A_2=SU(3)[F_6=8] -> F_7=13(EM closure) -> SL(2,C)=SO(3,1)(SEC complexification)",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_scorecard",
+      "scorecard": {
+        "exp_01": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_01_pac_is_ade_20260518_191820.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_02": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_02_self_loop_minimal_connection_20260518_191821.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_03": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_03_gauge_groups_from_ade_20260518_191822.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_04": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_04_branch_foreclosure_20260518_191825.json",
+          "score": 3,
+          "total": 4,
+          "found": true
+        },
+        "exp_05": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_05_entropy_redistribution_rate_20260518_191826.json",
+          "score": 3,
+          "total": 4,
+          "found": true
+        },
+        "exp_06": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_06_basin_dynamics_20260518_191857.json",
+          "score": 3,
+          "total": 4,
+          "found": true
+        },
+        "exp_07": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_07_relaxation_time_taxonomy_20260518_191907.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_08": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_08_crystallizing_law_signatures_20260518_191928.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_09": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_09_alpha_indices_as_ade_positions_20260518_191929.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_10": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_10_sec_complexification_20260518_191930.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_11": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_11_lorentz_from_ade_20260518_191932.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        },
+        "exp_12": {
+          "file": "C:\\Users\\peter\\repos\\core_workspace\\dawn-field-theory\\foundational\\experiments\\milestone12\\results\\exp_12_cross_milestone_compatibility_20260518_191933.json",
+          "score": 4,
+          "total": 4,
+          "found": true
+        }
+      },
+      "found_score": 45,
+      "found_possible": 48,
+      "found_percentage": 93.75,
+      "found_threshold": 36,
+      "above_threshold": true,
+      "overall_score": 45,
+      "overall_possible": 48,
+      "overall_percentage": 93.75,
+      "experiments_found": 12,
+      "experiments_missing": [],
+      "note": "Found experiments: 45/48 (93.8%). Threshold: 36 (75% of found). 12/12 experiments have result files. 0 experiments not yet run.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_zero_contradictions",
+      "checks": {
+        "alpha_EM": {
+          "dft_value": 0.007297310889743783,
+          "observed": 0.0072973525693,
+          "ppm_error": 5.711599627555799,
+          "threshold_ppm": 6.0,
+          "verified": true
+        },
+        "sin2_theta_W": {
+          "dft_value": 0.23076923076923078,
+          "observed": 0.23122,
+          "percent_error": 0.19495252606574986,
+          "threshold_percent": 0.3,
+          "verified": true
+        },
+        "koide": {
+          "dft_value": 0.6666666666666666,
+          "observed": 0.666661,
+          "ppm_error": 8.500072250636508,
+          "threshold_ppm": 10.0,
+          "verified": true
+        },
+        "higgs_mass": {
+          "lambda_dft": 0.12875905370012097,
+          "mh_dft_gev": 124.94739697670555,
+          "mh_obs_gev": 125.25,
+          "percent_error": 0.24159922019517133,
+          "threshold_percent": 0.3,
+          "verified": true
+        },
+        "cascade_clock_slope": {
+          "dft_value": 2.0780869212350273,
+          "expected": 2.0781,
+          "percent_error": 0.000629361675222897,
+          "threshold_percent": 0.1,
+          "verified": true
+        },
+        "xi_balance": {
+          "computed": 1.0584274899611363,
+          "stored": 1.0584274899611363,
+          "percent_error": 0.0,
+          "threshold_percent": 0.01,
+          "verified": true
+        }
+      },
+      "n_verified": 6,
+      "n_total": 6,
+      "n_contradictions": 0,
+      "all_verified": true,
+      "note": "6/6 constants verified. 0 contradictions with M1-M11.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_predictions_registry",
+      "predictions": [
+        {
+          "id": "M12-P1",
+          "type": "P",
+          "statement": "No gauge group beyond SU(2) and SU(3) has a Fibonacci adjoint dimension.",
+          "falsification": "Find any simple Lie algebra with adjoint dimension that is a Fibonacci number and is not A_1 or A_2.",
+          "status": "verified_to_rank_50",
+          "verification": {
+            "checked_to_rank": 50,
+            "fibonacci_groups": [
+              "SU(2)",
+              "SU(3)"
+            ],
+            "only_su2_su3": true
+          }
+        },
+        {
+          "id": "M12-P2",
+          "type": "P",
+          "statement": "The Lorentz group is the unique result of SEC complexification of A_1.",
+          "falsification": "Show that SEC complexification of su(2) yields a group other than SL(2,C), or that SL(2,C) is not locally isomorphic to SO(3,1).",
+          "status": "verified_algebraically",
+          "verification": {
+            "commutation_errors": {
+              "JJ_relation": 0.0,
+              "KK_relation": 0.0,
+              "JK_relation": 0.0
+            },
+            "all_exact": true
+          }
+        },
+        {
+          "id": "M12-D1",
+          "type": "D",
+          "statement": "Alpha_EM is determined entirely by Fibonacci numbers from ADE adjoint dimensions.",
+          "falsification": "Show that the Fibonacci numbers F_3, F_4, F_7, F_10 in the alpha formula do not trace to ADE root lattice properties.",
+          "status": "verified",
+          "verification": {
+            "alpha_dft": 0.007297310889743783,
+            "alpha_obs": 0.0072973525693,
+            "ppm_error": 5.711599627555799
+          }
+        },
+        {
+          "id": "M12-D2",
+          "type": "D",
+          "statement": "Force hierarchy ordering = basin relaxation ordering = cascade depth ordering.",
+          "falsification": "Find a force whose basin relaxation time does not match its cascade depth prediction (strong < weak < EM < gravity).",
+          "status": "verified_numerically",
+          "verification": {
+            "depths": {
+              "strong": 3,
+              "weak": 7,
+              "em": 13,
+              "gravity": 183
+            },
+            "correctly_ordered": true
+          }
+        },
+        {
+          "id": "M12-D3",
+          "type": "D",
+          "statement": "The Killing form of sl(2,C) has signature (3,3), encoding the Lorentz metric.",
+          "falsification": "Compute the Killing form of sl(2,C) and find a different signature.",
+          "status": "verified_algebraically",
+          "verification": {
+            "signature": "(3, 3)",
+            "correct": true
+          }
+        },
+        {
+          "id": "M12-C1",
+          "type": "C",
+          "statement": "M12 derivation chain is fully compatible with M7 symmetry primitive chain.",
+          "falsification": "Find any M7 result that contradicts an M12 derivation.",
+          "status": "verified",
+          "verification": {
+            "cross_checked_in": "exp_12_T3"
+          }
+        },
+        {
+          "id": "M12-C2",
+          "type": "C",
+          "statement": "SEC complexification and M4 PAC-partition yield the same Lorentz group.",
+          "falsification": "Show that the two derivation routes produce different algebraic structures.",
+          "status": "verified",
+          "verification": {
+            "cross_checked_in": "exp_12_T4"
+          }
+        },
+        {
+          "id": "M12-C3",
+          "type": "C",
+          "statement": "All M1-M11 constants (alpha, theta_W, Koide, Higgs, Xi, clock slope) are unchanged by M12 framework.",
+          "falsification": "Find any M1-M11 constant that changes value when derived through the connection-geometry framework.",
+          "status": "verified",
+          "verification": {
+            "cross_checked_in": "exp_12_T1_T3"
+          }
+        }
+      ],
+      "n_total": 8,
+      "n_predictions": 2,
+      "n_derivations": 3,
+      "n_consistency": 3,
+      "type_distribution": "2P + 3D + 3C",
+      "all_have_verification": true,
+      "correct_count": true,
+      "note": "8 predictions registered (2P + 3D + 3C). All have falsification criteria and verification status.",
+      "PASS": true
+    }
+  }
+}

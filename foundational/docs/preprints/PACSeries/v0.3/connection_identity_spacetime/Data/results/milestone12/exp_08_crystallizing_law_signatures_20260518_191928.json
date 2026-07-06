@@ -1,0 +1,153 @@
+{
+  "experiment": "exp_08_crystallizing_law_signatures",
+  "milestone": "milestone12",
+  "block": "C",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_variance_narrows_crystallizing",
+      "by_depth": {
+        "strong": {
+          "depth": 3,
+          "initial_variance": 0.06522745067974389,
+          "final_variance": 5.137056927187524e-06,
+          "variance_ratio": 7.875605858658547e-05,
+          "crystallizing": true
+        },
+        "weak": {
+          "depth": 7,
+          "initial_variance": 0.07936968599075897,
+          "final_variance": 0.020023248227614445,
+          "variance_ratio": 0.25227828455747897,
+          "crystallizing": false
+        },
+        "em": {
+          "depth": 13,
+          "initial_variance": 0.08888258995873692,
+          "final_variance": 0.0823170937800354,
+          "variance_ratio": 0.9261329335503219,
+          "crystallizing": false
+        }
+      },
+      "strong_crystallized": true,
+      "all_variance_decreasing": true,
+      "ratios_increase_with_depth": true,
+      "note": "Variance narrows for all basin depths: strong(d=3, ratio=0.0001), weak(d=7, ratio=0.2523), em(d=13, ratio=0.9261). Strong force fully crystallized. Deeper cascade = slower crystallization rate.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_three_distinct_signatures",
+      "signatures": {
+        "crystallizing": {
+          "variance_narrows": true,
+          "mean_stable": true,
+          "variance_ratio": 7.875605858657778e-05,
+          "mean_drift": 0.005450478679302373,
+          "depth": 3
+        },
+        "drifting": {
+          "variance_narrows": false,
+          "mean_stable": false,
+          "mean_shifts": true,
+          "variance_ratio": 0.25227828455748047,
+          "mean_drift": 0.1406224576090188
+        },
+        "fixed": {
+          "variance_narrows": true,
+          "mean_stable": true,
+          "rapid_settlement": false,
+          "variance_ratio": 0.0945389243564185,
+          "mean_drift": 0.0005932575808711427
+        }
+      },
+      "crystallizing_correct": true,
+      "drifting_correct": true,
+      "fixed_correct": true,
+      "all_distinct": true,
+      "note": "Three basin behaviors: Crystallizing (var_ratio=0.0001, mean_drift=0.0055), Drifting (mean_shift=0.1406), Fixed (var_ratio=0.094539, mean_drift=0.000593).",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_depth_predicts_crystallization_age",
+      "residual_variances": {
+        "strong": {
+          "depth": 3,
+          "initial_variance": 0.08806881491797522,
+          "final_variance": 0.0007834126524193346,
+          "variance_ratio": 0.008895460364136645,
+          "crystallized": true
+        },
+        "weak": {
+          "depth": 7,
+          "initial_variance": 0.0930259636931244,
+          "final_variance": 0.046740539100178766,
+          "variance_ratio": 0.5024461692691219,
+          "crystallized": false
+        },
+        "em": {
+          "depth": 13,
+          "initial_variance": 0.08182838957665359,
+          "final_variance": 0.07874971741064471,
+          "variance_ratio": 0.9623764786043492,
+          "crystallized": false
+        },
+        "dark": {
+          "depth": 73,
+          "initial_variance": 0.09506298909165359,
+          "final_variance": 0.09506298909165359,
+          "variance_ratio": 1.0,
+          "crystallized": false
+        }
+      },
+      "ordering": [
+        "strong",
+        "weak",
+        "em",
+        "dark"
+      ],
+      "residuals_ordered": true,
+      "strong_crystallized": true,
+      "dark_less_crystallized": true,
+      "note": "Residual variance after identical evolution: strong=0.000783, weak=0.046741, em=0.078750, dark=0.095063. Deeper cascade = weaker coupling = slower crystallization = larger residual variance.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_gradient_steepness_predicts_rate",
+      "gradient_data": {
+        "strong": {
+          "depth": 3,
+          "n_nodes": 15,
+          "mean_density": 0.1333333333333333,
+          "std_density": 0.06834619092574915,
+          "gradient_steepness": 0.5125964319431187,
+          "variance_ratio": 0.09453892435642315,
+          "crystallization_rate": 0.004717487262675094
+        },
+        "weak": {
+          "depth": 7,
+          "n_nodes": 255,
+          "mean_density": 0.007843137254901962,
+          "std_density": 0.003929159335459646,
+          "gradient_steepness": 0.5009678152711048,
+          "variance_ratio": 0.7090785934630643,
+          "crystallization_rate": 0.0006875778148935354
+        },
+        "em": {
+          "depth": 13,
+          "n_nodes": 16383,
+          "mean_density": 0.00012207776353537203,
+          "std_density": 6.104074427064255e-05,
+          "gradient_steepness": 0.5000152566929684,
+          "variance_ratio": 0.9810267187833247,
+          "crystallization_rate": 3.831116703034452e-05
+        }
+      },
+      "rates_decrease_with_depth": true,
+      "coupling_rate_correlation": 0.9999999918128193,
+      "strong_correlation": true,
+      "note": "Connection-density gradient (via coupling strength) predicts crystallization rate. Correlation between log(coupling) and log(rate) = 1.0000. Stronger coupling => steeper gradient => faster crystallization.",
+      "PASS": true
+    }
+  }
+}
