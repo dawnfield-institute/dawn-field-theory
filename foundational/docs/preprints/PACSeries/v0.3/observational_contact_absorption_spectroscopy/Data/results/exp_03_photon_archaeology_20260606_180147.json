@@ -1,0 +1,182 @@
+{
+  "experiment": "exp_03_photon_archaeology",
+  "initiative": "midnight",
+  "thread": "photon_archaeology",
+  "test_results": {
+    "T1": {
+      "test": "T1_alpha_invariance",
+      "alpha_dft": 0.007297310889743783,
+      "alpha_codata": 0.0072973525693,
+      "ppm": 5.711599627555799,
+      "sensitivity": {
+        "F3 (=2, binary charge)": {
+          "ppm": 994.2826887726583,
+          "ratio": 174.08130009248353
+        },
+        "F4 (=3, spatial dims)": {
+          "ppm": 1004.7068927348716,
+          "ratio": 175.90639369882132
+        },
+        "phi (golden ratio)": {
+          "ppm": 1004.706892734634,
+          "ratio": 175.90639369877974
+        },
+        "F10 (=55, EM depth)": {
+          "ppm": 1031.2667125875273,
+          "ratio": 180.55654804866703
+        },
+        "F7 (=13, gauge closure)": {
+          "ppm": 47.38150679138833,
+          "ratio": 8.295663190885213
+        }
+      },
+      "all_sensitive": false,
+      "fixed_point_error": 0.0,
+      "PASS": false
+    },
+    "T2": {
+      "test": "T2_epoch_invariant_ratios",
+      "graph": "A_8",
+      "n_transitions": 6,
+      "max_error": 0.024577027106670576,
+      "matches_hydrogen": true,
+      "all_identical_across_z": true,
+      "transition_details": [
+        {
+          "transition": "2->1",
+          "graph": 0.740108467525855,
+          "hydrogen": 0.75,
+          "error": 0.013188709965526643
+        },
+        {
+          "transition": "3->1",
+          "graph": 0.876691358243714,
+          "hydrogen": 0.8888888888888888,
+          "error": 0.013722221975821666
+        },
+        {
+          "transition": "4->1",
+          "graph": 0.9238795325112867,
+          "hydrogen": 0.9375,
+          "error": 0.01452849865462748
+        },
+        {
+          "transition": "3->2",
+          "graph": 0.13658289071785903,
+          "hydrogen": 0.1388888888888889,
+          "error": 0.016603186831414995
+        },
+        {
+          "transition": "4->2",
+          "graph": 0.1837710649854318,
+          "hydrogen": 0.1875,
+          "error": 0.01988765341103038
+        },
+        {
+          "transition": "5->2",
+          "graph": 0.20483882430759917,
+          "hydrogen": 0.21,
+          "error": 0.024577027106670576
+        }
+      ],
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_epoch_dependent_widths",
+      "cascade_clock": {
+        "a": 1.3596216430269106,
+        "slope": 2.0780869212350273
+      },
+      "cascade_data": [
+        {
+          "z": 0.1,
+          "t_lookback_gyr": 1.3517231364108369,
+          "N": 1.9859158448615903,
+          "disequilibrium": 0.9718316897231807,
+          "diseq_frac": 0.19464802104740433,
+          "width_variance": 0.3203433369219416
+        },
+        {
+          "z": 0.3,
+          "t_lookback_gyr": 3.5435057049137213,
+          "N": 3.988643797825274,
+          "disequilibrium": 0.977287595650548,
+          "diseq_frac": 0.19568464317360412,
+          "width_variance": 0.3237694626139953
+        },
+        {
+          "z": 0.5,
+          "t_lookback_gyr": 5.216193717294944,
+          "N": 4.792139043824509,
+          "disequilibrium": 0.5842780876490181,
+          "diseq_frac": 0.12101283665331344,
+          "width_variance": 0.1238266887179509
+        },
+        {
+          "z": 0.7,
+          "t_lookback_gyr": 6.511956699920197,
+          "N": 5.253208379327306,
+          "disequilibrium": 0.49358324134538734,
+          "diseq_frac": 0.10378081585562358,
+          "width_variance": 0.09110437578792549
+        },
+        {
+          "z": 1.0,
+          "t_lookback_gyr": 7.959649525829516,
+          "N": 5.670373917686058,
+          "disequilibrium": 0.3407478353721167,
+          "diseq_frac": 0.07474208872070218,
+          "width_variance": 0.04729541449111204
+        },
+        {
+          "z": 1.5,
+          "t_lookback_gyr": 9.542575662135917,
+          "N": 6.0472941338059805,
+          "disequilibrium": 0.9054117323880391,
+          "diseq_frac": 0.18202822915372743,
+          "width_variance": 0.28010948114449513
+        },
+        {
+          "z": 2.0,
+          "t_lookback_gyr": 10.534259954069391,
+          "N": 6.252753265648592,
+          "disequilibrium": 0.4944934687028155,
+          "diseq_frac": 0.10395375905353495,
+          "width_variance": 0.09140788420101802
+        },
+        {
+          "z": 2.5,
+          "t_lookback_gyr": 11.19822917801657,
+          "N": 6.379771878103957,
+          "disequilibrium": 0.2404562437920852,
+          "diseq_frac": 0.05568668632049619,
+          "width_variance": 0.02627409241786175
+        },
+        {
+          "z": 3.0,
+          "t_lookback_gyr": 11.666573512967789,
+          "N": 6.464915528692278,
+          "disequilibrium": 0.07016894261544415,
+          "diseq_frac": 0.02333209909693439,
+          "width_variance": 0.004620160579042121
+        }
+      ],
+      "width_variation": 2.194721489912505,
+      "spearman_rho": 1.0,
+      "spearman_p": 0.0,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_clean_separation",
+      "ratio_spread_across_z": 0.0,
+      "width_spread_across_z": 2.194721489912505,
+      "ratio_cv": 0.6673496719131944,
+      "width_cv": 0.8281714787636356,
+      "separation": true,
+      "PASS": true
+    }
+  },
+  "score": "3/4",
+  "n_pass": 3,
+  "n_total": 4
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "exp_10_predictions_from_primitive",
+  "milestone": 7,
+  "block": "D",
+  "cosmological_constant": {
+    "l_ratio": 2.722772277227723e+61,
+    "N_hops": 293.96480694534216,
+    "log10_lambda_predicted": -122.87002264009526,
+    "log10_lambda_observed": -122.0,
+    "delta_orders": 0.8700226400952573
+  },
+  "neutrino_splitting": {
+    "measured": 32.6,
+    "ratio_direct": 1.0585371496935725,
+    "delta_direct": 0.9675295352854733,
+    "ratio_fib": 34.03444185374863,
+    "delta_fib": 0.04400128385731995,
+    "F7": 13
+  },
+  "dimensions": {
+    "d": 3,
+    "unique": true
+  },
+  "dark_energy": {
+    "w_predicted": -1.0,
+    "epsilon": 3.611052200314687e-62,
+    "w_observed": -1.03,
+    "w_observed_err": 0.03,
+    "consistent": "True"
+  },
+  "verification": {
+    "test1_cosmo_constant": true,
+    "test2_neutrino_split": true,
+    "test3_dimensions": true,
+    "test4_dark_energy": "True",
+    "verified_count": "4"
+  }
+}

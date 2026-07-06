@@ -7,6 +7,8 @@
 
 The PACSeries establishes Dawn Field Theory through clean derivation from established science, measurement with error bounds, and honest separation of established results from speculation. Papers are numbered by logical dependency, not historical order.
 
+**New readers start here:** [How to Read the PACSeries](HOW_TO_READ.md) — how the work is built, how its claims are tiered (Type A/B/C), and how to weigh them. This is an evolving research program, not a finished theory.
+
 ## Versions
 
 ### [v0.2/](v0.2/) — Current (February 2026)

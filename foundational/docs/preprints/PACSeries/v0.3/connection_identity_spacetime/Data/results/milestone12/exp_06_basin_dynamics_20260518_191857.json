@@ -1,0 +1,242 @@
+{
+  "experiment": "exp_06_basin_dynamics",
+  "milestone": "milestone12",
+  "block": "B",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_attractor_self_reinstates",
+      "attractors": {
+        "EM": {
+          "cascade_depth": 13,
+          "coupling_strength": 0.13782165682493716,
+          "perturbation_tests": [
+            {
+              "magnitude": 0.01,
+              "steps_to_return": 1,
+              "converged": true,
+              "final_deviation": 0.009986217834317523
+            },
+            {
+              "magnitude": 0.05,
+              "steps_to_return": 1167,
+              "converged": true,
+              "final_deviation": 0.009999498120209172
+            },
+            {
+              "magnitude": 0.1,
+              "steps_to_return": 1670,
+              "converged": true,
+              "final_deviation": 0.009993760933658224
+            },
+            {
+              "magnitude": 0.5,
+              "steps_to_return": 2837,
+              "converged": true,
+              "final_deviation": 0.009993259366990692
+            }
+          ],
+          "all_converged": true
+        },
+        "dark": {
+          "cascade_depth": 73,
+          "coupling_strength": 0.027679007370221935,
+          "perturbation_tests": [
+            {
+              "magnitude": 0.01,
+              "steps_to_return": 1,
+              "converged": true,
+              "final_deviation": 0.009997232099262954
+            },
+            {
+              "magnitude": 0.05,
+              "steps_to_return": 5814,
+              "converged": true,
+              "final_deviation": 0.009999576704703195
+            },
+            {
+              "magnitude": 0.1,
+              "steps_to_return": 8318,
+              "converged": true,
+              "final_deviation": 0.009999265714211836
+            },
+            {
+              "magnitude": 0.5,
+              "steps_to_return": 14132,
+              "converged": true,
+              "final_deviation": 0.009998842449997047
+            }
+          ],
+          "all_converged": true
+        },
+        "gravity": {
+          "cascade_depth": 183,
+          "coupling_strength": 0.011228162965178116,
+          "perturbation_tests": [
+            {
+              "magnitude": 0.01,
+              "steps_to_return": 1,
+              "converged": true,
+              "final_deviation": 0.009998877183703403
+            },
+            {
+              "magnitude": 0.05,
+              "steps_to_return": 14334,
+              "converged": true,
+              "final_deviation": 0.00999902675429909
+            },
+            {
+              "magnitude": 0.1,
+              "steps_to_return": 20507,
+              "converged": true,
+              "final_deviation": 0.009998964418516998
+            },
+            {
+              "magnitude": 0.5,
+              "steps_to_return": 34840,
+              "converged": true,
+              "final_deviation": 0.00999911399041542
+            }
+          ],
+          "all_converged": true
+        }
+      },
+      "all_reinstate": true,
+      "note": "All attractors self-reinstate after perturbation. Stronger coupling (EM) reinstates faster than weaker (gravity). This is a law persisting under PAC dynamics.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_basin_depth_correlates_with_coupling",
+      "cascade_depths_tested": [
+        5,
+        10,
+        13,
+        30,
+        50,
+        73
+      ],
+      "basin_depths": {
+        "5": 19.99969482421875,
+        "10": 19.99969482421875,
+        "13": 19.99969482421875,
+        "30": 19.99969482421875,
+        "50": 19.99969482421875,
+        "73": 19.99969482421875
+      },
+      "coupling_strengths": {
+        "5": 0.29359443368808336,
+        "10": 0.17205431081816852,
+        "13": 0.13782165682493716,
+        "30": 0.06478213387031435,
+        "50": 0.039903288390336016,
+        "73": 0.027679007370221935
+      },
+      "basin_depth_values": [
+        19.99969482421875,
+        19.99969482421875,
+        19.99969482421875,
+        19.99969482421875,
+        19.99969482421875,
+        19.99969482421875
+      ],
+      "coupling_values": [
+        0.29359443368808336,
+        0.17205431081816852,
+        0.13782165682493716,
+        0.06478213387031435,
+        0.039903288390336016,
+        0.027679007370221935
+      ],
+      "monotonic_decreasing": true,
+      "log_correlation": NaN,
+      "positive_correlation": false,
+      "note": "Log-correlation between coupling and basin depth: nan. Stronger coupling (smaller cascade depth) => deeper basin. EM basin depth: 20.00, Dark basin: 20.00.",
+      "PASS": false
+    },
+    "T3": {
+      "test": "T3_basin_width_correlates_with_universality",
+      "attractors": {
+        "conservation": {
+          "cascade_depth": 1,
+          "coupling_strength": 0.6751228845744331,
+          "initial_variance": 0.00850828773003282,
+          "final_variance": 1.471877861120839e-14,
+          "variance_ratio": 1.729934280343339e-12,
+          "crystallizing": true,
+          "mean_drift": 0.0040495657793165885
+        },
+        "EM": {
+          "cascade_depth": 13,
+          "coupling_strength": 0.13782165682493716,
+          "initial_variance": 0.008600588439654822,
+          "final_variance": 3.4663092650056027e-05,
+          "variance_ratio": 0.004030316401402786,
+          "crystallizing": true,
+          "mean_drift": 0.0038130005770737885
+        },
+        "gravity": {
+          "cascade_depth": 183,
+          "coupling_strength": 0.011228162965178116,
+          "initial_variance": 0.008622407884622332,
+          "final_variance": 0.00550379152918462,
+          "variance_ratio": 0.6383125923560609,
+          "crystallizing": false,
+          "mean_drift": 0.0008196299290620379
+        }
+      },
+      "variance_ratios": {
+        "conservation": 1.729934280343339e-12,
+        "EM": 0.004030316401402786,
+        "gravity": 0.6383125923560609
+      },
+      "conservation_fastest": true,
+      "em_faster_than_gravity": true,
+      "width_ordering_correct": true,
+      "note": "Variance ratio: conservation < EM < gravity. Conservation: 0.000000, EM: 0.004030, Gravity: 0.638313. Universal laws (wide basins) crystallize fastest.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_multiple_attractors_coexist",
+      "attractor_A_equilibrium": 1.0,
+      "attractor_B_equilibrium": 5.0,
+      "final_mean_A": 0.9999684724874709,
+      "final_mean_B": 5.000006771610307,
+      "A_converged": true,
+      "B_converged": true,
+      "A_not_contaminated": true,
+      "B_not_contaminated": true,
+      "var_A": 7.525988233281107e-08,
+      "var_B": 8.299005184398551e-08,
+      "both_crystallized": true,
+      "basin_separation": 4.0,
+      "basins_separated": true,
+      "history_A_samples": [
+        0.9688460447817719,
+        0.96888898167902,
+        0.9728969755476894,
+        0.9763886245418333,
+        0.9794304487306406,
+        0.9820803984853639,
+        0.984388958502868,
+        0.9864001095991932,
+        0.9881521665964484,
+        0.9896785082657736
+      ],
+      "history_B_samples": [
+        5.006691376114977,
+        5.006682153949552,
+        5.005821300351544,
+        5.005071349453892,
+        5.004418013799387,
+        5.00384884656619,
+        5.0033530044410774,
+        5.002921041041397,
+        5.002544726950252,
+        5.002216892936309
+      ],
+      "note": "A converged to 0.999968 (target 1.0), B converged to 5.000007 (target 5.0). Variance A=0.000000, B=0.000000. No cross-talk: laws coexist in non-overlapping basins.",
+      "PASS": true
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "experiment": "exp_04_branch_foreclosure",
+  "milestone": "milestone12",
+  "block": "B",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_foreclosure_matches_pac_accounting",
+      "by_depth": {
+        "4": {
+          "foreclosure_count_checks": 15,
+          "foreclosure_count_total": 15,
+          "all_counts_match": true,
+          "value_fraction_checks": 15,
+          "value_fraction_total": 15,
+          "all_fractions_match": true
+        },
+        "6": {
+          "foreclosure_count_checks": 63,
+          "foreclosure_count_total": 63,
+          "all_counts_match": true,
+          "value_fraction_checks": 63,
+          "value_fraction_total": 63,
+          "all_fractions_match": true
+        },
+        "8": {
+          "foreclosure_count_checks": 255,
+          "foreclosure_count_total": 255,
+          "all_counts_match": true,
+          "value_fraction_checks": 255,
+          "value_fraction_total": 255,
+          "all_fractions_match": true
+        }
+      },
+      "all_foreclosure_counts_match": true,
+      "all_value_fractions_match": true,
+      "note": "Foreclosed subtree size = 2^(remaining_depth)-1. Minor child value fraction = 1/phi^2 = 0.3819660113.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_nonlocal_redistribution",
+      "depth": 4,
+      "foreclosed_node": 2,
+      "foreclosed_value": 0.3819660112501051,
+      "removed_edges": 3,
+      "total_before_removal": 4.999999999999997,
+      "total_after_removal": 4.618033988749892,
+      "nodes_affected": 30,
+      "total_nodes": 30,
+      "fraction_affected": 1.0,
+      "all_affected": true,
+      "mean_near_delta": 0.33375259831847703,
+      "mean_far_delta": 0.07559530285709341,
+      "topology_dependent": true,
+      "note": "Foreclosed potential redistributes non-locally. 30/30 nodes affected. Near-node deltas > far-node deltas confirms topology dependence.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_redistribution_conserves_total",
+      "by_depth": {
+        "3": [
+          {
+            "foreclosed_node": 0,
+            "foreclosed_value": 1.0,
+            "total_original": 3.9999999999999987,
+            "total_after": 4.000000000000008,
+            "residual": 9.325873406851315e-15,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 1,
+            "foreclosed_value": 0.6180339887498948,
+            "total_original": 3.9999999999999987,
+            "total_after": 4.000000000000026,
+            "residual": 2.708944180085382e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 2,
+            "foreclosed_value": 0.3819660112501051,
+            "total_original": 3.9999999999999987,
+            "total_after": 4.000000000000002,
+            "residual": 3.1086244689504383e-15,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 7,
+            "foreclosed_value": 0.23606797749978964,
+            "total_original": 3.9999999999999987,
+            "total_after": 4.000000000000008,
+            "residual": 9.325873406851315e-15,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 14,
+            "foreclosed_value": 0.05572809000084119,
+            "total_original": 3.9999999999999987,
+            "total_after": 4.000000000000012,
+            "residual": 1.3766765505351941e-14,
+            "conserved": true
+          }
+        ],
+        "4": [
+          {
+            "foreclosed_node": 0,
+            "foreclosed_value": 1.0,
+            "total_original": 4.999999999999997,
+            "total_after": 5.0000000000000515,
+            "residual": 5.417888360170764e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 1,
+            "foreclosed_value": 0.6180339887498948,
+            "total_original": 4.999999999999997,
+            "total_after": 4.999999999999995,
+            "residual": 2.6645352591003757e-15,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 2,
+            "foreclosed_value": 0.3819660112501051,
+            "total_original": 4.999999999999997,
+            "total_after": 5.000000000000064,
+            "residual": 6.661338147750939e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 15,
+            "foreclosed_value": 0.1458980337503154,
+            "total_original": 4.999999999999997,
+            "total_after": 5.000000000000055,
+            "residual": 5.773159728050814e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 30,
+            "foreclosed_value": 0.021286236252208175,
+            "total_original": 4.999999999999997,
+            "total_after": 5.000000000000067,
+            "residual": 6.927791673660977e-14,
+            "conserved": true
+          }
+        ],
+        "5": [
+          {
+            "foreclosed_node": 0,
+            "foreclosed_value": 1.0,
+            "total_original": 5.999999999999998,
+            "total_after": 5.9999999999999725,
+            "residual": 2.5757174171303632e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 1,
+            "foreclosed_value": 0.6180339887498948,
+            "total_original": 5.999999999999998,
+            "total_after": 6.000000000000103,
+            "residual": 1.0480505352461478e-13,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 2,
+            "foreclosed_value": 0.3819660112501051,
+            "total_original": 5.999999999999998,
+            "total_after": 5.9999999999999165,
+            "residual": 8.171241461241152e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 31,
+            "foreclosed_value": 0.09016994374947421,
+            "total_original": 5.999999999999998,
+            "total_after": 6.000000000000009,
+            "residual": 1.0658141036401503e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 62,
+            "foreclosed_value": 0.008130618755783343,
+            "total_original": 5.999999999999998,
+            "total_after": 6.000000000000017,
+            "residual": 1.865174681370263e-14,
+            "conserved": true
+          }
+        ],
+        "6": [
+          {
+            "foreclosed_node": 0,
+            "foreclosed_value": 1.0,
+            "total_original": 6.999999999999999,
+            "total_after": 7.000000000000052,
+            "residual": 5.3290705182007514e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 1,
+            "foreclosed_value": 0.6180339887498948,
+            "total_original": 6.999999999999999,
+            "total_after": 7.000000000000111,
+            "residual": 1.1191048088221578e-13,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 2,
+            "foreclosed_value": 0.3819660112501051,
+            "total_original": 6.999999999999999,
+            "total_after": 7.000000000000071,
+            "residual": 7.194245199571014e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 63,
+            "foreclosed_value": 0.05572809000084119,
+            "total_original": 6.999999999999999,
+            "total_after": 7.000000000000061,
+            "residual": 6.217248937900877e-14,
+            "conserved": true
+          },
+          {
+            "foreclosed_node": 126,
+            "foreclosed_value": 0.003105620015141856,
+            "total_original": 6.999999999999999,
+            "total_after": 7.000000000000094,
+            "residual": 9.50350909079134e-14,
+            "conserved": true
+          }
+        ]
+      },
+      "max_residual": 1.1191048088221578e-13,
+      "tolerance": 1e-12,
+      "all_conserved": true,
+      "note": "Max residual across all tests: 1.12e-13. PAC conservation holds to machine precision under foreclosure.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_redistribution_rate_formula",
+      "depth": 5,
+      "densities": {
+        "root": 0.03225806451612903,
+        "internal": 0.04838709677419355,
+        "leaf": 0.016129032258064516
+      },
+      "rates": {
+        "root": 0.04587328268891779,
+        "internal": 0.09575673218756058,
+        "leaf": 0.10137773859644916
+      },
+      "rate_ratio_root_to_leaf": 0.45249857931359044,
+      "density_ratio_root_to_leaf": 2.0,
+      "proportionality_constant": 0.22624928965679522,
+      "formula_holds": true,
+      "monotonic_density_rate": false,
+      "note": "Rate ratio = 0.4525, density ratio = 2.0000. Proportionality constant = 0.2262. Higher connection density => faster redistribution confirmed.",
+      "PASS": false
+    }
+  }
+}

@@ -11,17 +11,19 @@
 
 ## Abstract
 
-We derive the Planck scale, black hole thermodynamics, and graviton properties from the information-theoretic axioms of Dawn Field Theory (DFT) — PAC conservation and SEC dynamics — without quantizing general relativity. The central result is that quantum gravity is not a new theory but a response-time crossover: it is what happens when perturbation timescales exceed gravitational negotiation times.
+We derive the Planck scale, black hole thermodynamics, and graviton properties from the information-theoretic axioms of Dawn Field Theory (DFT) — PAC conservation and SEC dynamics — without quantizing general relativity. The central result is that quantum gravity is a response-time crossover rather than a new theory: the regime where perturbation timescales exceed gravitational negotiation times.
 
 Milestone 10 of DFT established that physical laws are continuously maintained equilibria with characteristic response times, and that PAC conservation is equivalent to spectral confinement — eigenvector fixity under symmetric self-application, with drift measured at $2.4 \times 10^{-15}$ (machine epsilon). Milestone 11 applies this framework directly to gravity.
 
-We report ten results with zero free parameters. (1) The Planck scale emerges as the response-time crossover at Fibonacci cascade depth 183, with gravitational coupling $\varphi^{-183} \approx 5.69 \times 10^{-39}$ matching the measured $\alpha_\text{grav}(\text{proton}) \approx 5.91 \times 10^{-39}$ to 0.04% in log space across 38 orders of magnitude. (2) Singularities are resolved by cascade saturation at MVAE density; the Kretschner scalar is finite everywhere and information scales as $M^2$ (area law), not $M^3$. (3) Hawking radiation follows from PAC conservation: $T \cdot M = 1/(8\pi)$ from cascade geometry ($4\pi$ solid angle $\times$ 2 round-trip), with coefficient of variation $7.8 \times 10^{-17}$ across 12 orders of mass. (4) The Page curve peaks at $k/N = 0.5$ exactly; $\varepsilon$-PAC violation prevents return to zero, preserving unitarity. (5) The graviton emerges as the minimum cascade density perturbation: spin-2 (99.5% quadrupole), massless (PAC forbids gap), 2 polarizations (8 of 10 tensor components removed by PAC + self-similarity), with coupling from depth-183 Fibonacci structure. (6) The arrow of time follows from Landauer erasure: forward/reverse probability ratios grow as $\varphi^{2n}$, reaching $10^{40}$ by cascade depth 100. (7) Bounce time equals exactly 1 Planck time, constant across all black hole masses. (8) $\varphi$ is uniquely selected by gravity-time duality ($b^2 - b - 1 = 0$ has unique positive root $\varphi$), and $\gamma$ emerges from harmonic counting ($H_n - \ln n \to \gamma$), making $\Xi = \gamma + \ln\varphi$ fully determined with zero free parameters.
+We report ten results with zero free parameters. (1) The Planck scale emerges as the response-time crossover at Fibonacci cascade depth 183, with gravitational coupling $\varphi^{-183} \approx 5.69 \times 10^{-39}$ matching the measured $\alpha_\text{grav}(\text{proton}) \approx 5.91 \times 10^{-39}$ to 0.04% in log space across 38 orders of magnitude. (2) Singularities are resolved by cascade saturation at MVAE density; the Kretschmann scalar is finite everywhere and information scales as $M^2$ (area law), not $M^3$. (3) Hawking radiation follows from PAC conservation: $T \cdot M = 1/(8\pi)$ from cascade geometry ($4\pi$ solid angle $\times$ 2 round-trip), with coefficient of variation $1.7 \times 10^{-16}$ across 12 orders of mass. (4) The Page curve peaks at $k/N = 0.5$ exactly; $\varepsilon$-PAC violation prevents return to zero, preserving unitarity. (5) The graviton emerges as the minimum cascade density perturbation: spin-2 (99.5% quadrupole), massless (PAC forbids gap), 2 polarizations (8 of 10 tensor components removed by PAC + self-similarity), with coupling from depth-183 Fibonacci structure. (6) The arrow of time follows from Landauer erasure: forward/reverse probability ratios grow as $\varphi^{2n}$, reaching $10^{40}$ by cascade depth 100. (7) Bounce time equals 1 Planck time (exp_11: $1.0\,t_P$ to $10^{-16}$), constant across all black hole masses. (8) $\varphi$ is uniquely selected by gravity-time duality ($b^2 - b - 1 = 0$ has unique positive root $\varphi$), and $\gamma$ emerges from harmonic counting ($H_n - \ln n \to \gamma$), making $\Xi = \gamma + \ln\varphi$ fully determined with zero free parameters.
 
 The framework produces 12 falsifiable predictions (7 genuine, 2 postdiction, 3 consistency), including gravitational wave dispersion $\delta v/c \sim (E/E_P)^2$, Planck star burst energy $E \sim (M/M_P)^{-1/3}$, and a Fibonacci gravitational wave spectrum $f_n/f_{n+1} = \varphi$. All are consistent with current observations; hard tests await LISA, CTA, and next-generation gravitational wave detectors. We report zero contradictions with Milestones 1–10 of DFT.
 
-We emphasize honest limitations: approximately 60% of tests are structural (pass by construction), the framework is semi-classical (perturbations around cascade background), and gravitational wave dispersion is predicted 67 orders of magnitude below the GW170817 bound. The hardening cycle (52/52 $\to$ 49/52 $\to$ 52/52) is documented in full, including the three tautological tests that were exposed and resolved with existing derivations.
+We note the limitations: approximately 60% of tests are structural (pass by construction), the framework is semi-classical (perturbations around cascade background), and gravitational wave dispersion is predicted 67 orders of magnitude below the GW170817 bound. The hardening cycle (52/52 $\to$ 49/52 $\to$ 52/52) is documented in full, including the three tautological tests that were exposed and resolved with existing derivations.
 
 **Keywords**: quantum gravity, information conservation, PAC, Planck scale, Hawking radiation, graviton, response-time crossover, black hole thermodynamics, cascade dynamics, Dawn Field Theory
+
+**Epistemic status.** This paper is part of the PACSeries, an evolving research program rather than a finished theory (see the series note *How to Read the PACSeries*). Its quantitative claims are tiered by derivation type — **A** structural, **B** identified, **C** pattern-matched — and labeled in the text. Failures are reported rather than omitted, and framework-level corrections are logged in the Epistemic Corrections Registry in the repository. Every headline result is reproducible from the `Code/` and `Data/` in this package (provenance in `trace.yaml`).
 
 ---
 
@@ -33,7 +35,7 @@ This paper takes a different approach. We do not quantize gravity. We ask instea
 
 The answer follows from a result established in Milestone 10 of DFT (Paper 7 of this series): every physical law is a continuously maintained negotiation between interacting systems, with a characteristic response time determined by the coupling strength. Stronger couplings negotiate faster. The strong force (cascade depth 3) responds in $\sim 10^{-24}$ seconds. Electromagnetism (depth 13) responds in $\sim 10^{-21}$ seconds. Gravity (depth 183) responds in $\sim 10^{-5}$ seconds at solar densities.
 
-Quantum gravity, in this framework, is not a theory. It is a regime — the regime where perturbations arrive faster than gravity can negotiate. The Planck scale is not a fundamental constant. It is the response-time crossover of the gravitational cascade.
+Quantum gravity, in this framework, is a regime rather than a theory: the regime where perturbations arrive faster than gravity can negotiate. The Planck scale is then the response-time crossover of the gravitational cascade, not a fundamental constant.
 
 ---
 
@@ -65,7 +67,7 @@ Key constants (all derived, not fitted):
 
 ### 3.1 The framework
 
-Milestone 10 established that physical laws are not rules imposed from outside a system. They are what happens when a symmetric system references itself.
+Milestone 10 established that physical laws are not rules imposed from outside a system; they are what happens when a symmetric system references itself.
 
 The derivation chain has eight links, each computationally verified with zero free parameters:
 
@@ -80,11 +82,11 @@ The derivation chain has eight links, each computationally verified with zero fr
 
 ### 3.2 Spectral confinement is PAC conservation
 
-The key geometric result (M10, exp_14): for any symmetric matrix $W = V D V^T$, the operation $D \to f(D)$ preserves eigenvectors $V$ exactly. Measured eigenvector drift: $2.4 \times 10^{-15}$ across 60 systems — machine epsilon. This is not approximate. It is exact.
+The key geometric result (M10, exp_14): for any symmetric matrix $W = V D V^T$, the operation $D \to f(D)$ preserves eigenvectors $V$ exactly. Measured eigenvector drift: $2.4 \times 10^{-15}$ across 60 systems — machine epsilon, exact rather than approximate.
 
-Self-applied symmetry confines all dynamics to the eigenvalue manifold. The system can change *how much* of each mode exists, never *which modes* exist. This is conservation made geometric.
+Self-applied symmetry confines all dynamics to the eigenvalue manifold. The system can change *how much* of each mode exists, never *which modes* exist, which is conservation made geometric.
 
-Structured collapse (symmetric self-application) produces hierarchy 91% of the time (3+ distinct scales). Asymmetric collapse produces hierarchy 0% of the time. Symmetry is not a convenience. It is a selection rule.
+Structured collapse (symmetric self-application) produces hierarchy 91% of the time (3+ distinct scales). Asymmetric collapse produces hierarchy 0% of the time. Symmetry acts as a selection rule, not a convenience.
 
 ### 3.3 Response times from cascade depth
 
@@ -109,7 +111,7 @@ When a perturbation timescale $\tau_\text{pert} = \hbar / E$ exceeds the gravita
 
 $$E_\text{cross} = \frac{\hbar}{\tau_\text{grav}} = E_P \cdot \varphi^{-d_\text{grav}}$$
 
-This is not the Planck energy. It is where classical gravity *begins to fail* for a force at depth $d_\text{grav}$.
+This is not the Planck energy but where classical gravity *begins to fail* for a force at depth $d_\text{grav}$.
 
 The Planck scale itself emerges differently: it is the negotiation resolution limit — the smallest scale where PAC conservation can be maintained within one cascade clock tick.
 
@@ -119,16 +121,16 @@ The Minimum Actualization Volume Element (MVAE) established three routes to the 
 
 | Route | Derivation | $l$ (Planck units) | Prefactor |
 |-------|-----------|--------------------|----|
-| Landauer | Minimum erasure volume | $1/(2(1-\ln 2)) = 1.629$ | $f(\ln 2)$ |
+| Landauer | Minimum erasure volume | $1/\ln 2 = 1.44$ | $f(\ln 2)$ |
 | Heisenberg | Minimum localization | $\sim 0.5$ | $f(\ln 2)$ |
 | Schwarzschild | Minimum non-trapped scale | $\sim 2.0$ | $f(\ln 2)$ |
 | Negotiation | Response-time resolution | $L_\text{MVAE} = 1.629$ | $f(\ln 2, \varphi)$ |
 
 The inner routes (Landauer and Negotiation) converge to within a factor of 1.13. The outer routes (Heisenberg and Schwarzschild) bound them with a span of $\sim 4\times$. This is a bracket, not a convergence — the four routes constrain the Planck scale from independent directions, all with prefactors that are functions of $\ln 2$ and $\varphi$ only.
 
-### 4.3 What this means
+### 4.3 Interpretation
 
-The Planck scale is not assumed. It is not derived from dimensional analysis ($\sqrt{\hbar G / c^3}$ combines three measured constants). It is computed from the response-time structure of the gravitational cascade. The depth 183, the coupling $\varphi^{-183}$, and the MVAE resolution limit together determine where quantum gravity begins.
+The Planck scale is not assumed, nor derived from dimensional analysis ($\sqrt{\hbar G / c^3}$ combines three measured constants); it is computed from the response-time structure of the gravitational cascade. The depth 183, the coupling $\varphi^{-183}$, and the MVAE resolution limit together determine where quantum gravity begins.
 
 ---
 
@@ -136,21 +138,21 @@ The Planck scale is not assumed. It is not derived from dimensional analysis ($\
 
 ### 5.1 Cascade saturation
 
-In classical general relativity, the Schwarzschild metric is singular at $r = 0$: the Kretschner scalar $K = 48 G^2 M^2 / (c^4 r^6)$ diverges. This is widely regarded as unphysical — a sign that GR breaks down, not a physical prediction.
+In classical general relativity, the Schwarzschild metric is singular at $r = 0$: the Kretschmann scalar $K = 48 G^2 M^2 / (c^4 r^6)$ diverges. This is widely regarded as unphysical — a sign that GR breaks down, not a physical prediction.
 
 In DFT, the cascade density $\rho_c(r)$ is bounded by the MVAE: one actualization per Planck volume. Below a saturation radius $r_\text{min}$, the cascade cannot compress further. Information density is clamped:
 
 $$\rho_c(r) = \min\left(\rho_\text{classical}(r),\ \rho_\text{Planck}\right)$$
 
-This is not an ad hoc cutoff. It follows from the minimum actualization resolution: PAC conservation requires a minimum volume per information event. The saturation radius is determined entirely by the black hole mass and the MVAE.
+This is not an ad hoc cutoff; it follows from the minimum actualization resolution: PAC conservation requires a minimum volume per information event. The saturation radius is determined entirely by the black hole mass and the MVAE.
 
 ### 5.2 Consequences
 
-**Kretschner scalar is finite everywhere.** With cascade saturation, $K$ reaches a maximum at $r_\text{min}$ and remains constant inward. No singularity forms.
+**Kretschmann scalar is finite everywhere.** With cascade saturation, $K$ reaches a maximum at $r_\text{min}$ and remains constant inward. No singularity forms.
 
 **Area law from cascade gradient.** Information in a PAC-conserving cascade is carried by the density *change* (gradient), not the density itself. The surface-weighted gradient integral gives $4\pi r_s^2 \sim M^2$. We measure the scaling exponent as $2.000 \pm 0.05$ across three orders of mass. Information scales as area, not volume.
 
-**Profile independence.** The area law result does not depend on the specific form of $\rho_c(r)$. We tested $1/r$, $1/r^2$, exponential, and power-law profiles. All give area scaling once cascade saturation is imposed. The gradient method discriminates area from volume — it is not a tautology of choosing a $1/r$ profile.
+**Profile independence.** The area law result does not depend on the specific form of $\rho_c(r)$. We tested $1/r$, $1/r^2$, exponential, and power-law profiles. All give area scaling once cascade saturation is imposed. The gradient method discriminates area from volume; it is not a tautology of choosing a $1/r$ profile.
 
 ---
 
@@ -170,7 +172,7 @@ Together: $T \cdot M = 1/(8\pi)$ — exactly the Hawking result.
 
 ### 6.2 Numerical verification
 
-We computed $T \cdot M$ for black holes spanning 12 orders of mass, from $2 M_P$ to $10^{12} M_P$. The coefficient of variation is $7.8 \times 10^{-17}$ — the product is constant to 17 significant figures.
+We computed $T \cdot M$ for black holes spanning 12 orders of mass, from $2 M_P$ to $10^{12} M_P$. The coefficient of variation is $1.7 \times 10^{-16}$ — the product is constant to ~16 significant figures.
 
 ### 6.3 Cascade correction at the Planck scale
 
@@ -184,11 +186,11 @@ The standard Hawking formula breaks down near the Planck mass. The cascade satur
 | $2$ | $0.9375$ | $1/(8\pi) - 6.3\%$ |
 | $1$ | $0$ | Evaporation shuts off |
 
-At $M = M_P$, the correction factor reaches zero. Evaporation ceases entirely. The black hole does not evaporate below the Planck mass — it bounces (§10).
+At $M = M_P$, the correction factor reaches zero. Evaporation ceases entirely. The black hole does not evaporate below the Planck mass; it bounces (§10).
 
 ### 6.4 Connection to Landauer erasure
 
-The cascade radiation fraction $1/\varphi^2 = 0.382$ is the energy representation of the Landauer erasure cost $\ln\varphi = 0.481$ nats. Each cascade level dissipates exactly the Landauer minimum. For comparison, a binary split ($\ln 2 = 0.693$ nats) dissipates faster — confirming the relationship between split ratio and thermodynamic cost.
+The cascade radiation fraction $1/\varphi^2 = 0.382$ is the energy representation of the Landauer erasure cost $\ln\varphi = 0.481$ nats. Each cascade level dissipates exactly the Landauer minimum. For comparison, a binary split ($\ln 2 = 0.693$ nats) dissipates faster, confirming the relationship between split ratio and thermodynamic cost.
 
 ---
 
@@ -213,8 +215,8 @@ The result: the entropy peaks at $k/N = 0.5$ exactly ($\pm 0.05$). This is the P
 With exact PAC conservation ($\varepsilon = 0$), the entropy returns to zero at $k = N$ — information is fully recovered. But DFT predicts that PAC conservation is not exact at the Planck scale. A small $\varepsilon$-violation prevents the complete recovery:
 
 - At $\varepsilon = 0$: entropy returns to zero (full unitarity)
-- At $\varepsilon = 0.01$: entropy returns to $\sim 0.3$ nats (near-unitarity)
-- At $\varepsilon = 0.1$: entropy returns to $\sim 1.2$ nats (significant remnant)
+- At $\varepsilon = 0.01$: a remnant of $\sim 3.8$ nats persists (small, near-unitary)
+- At $\varepsilon = 0.1$: a remnant of $\sim 38$ nats persists (remnant $\approx 381\,\varepsilon$, linear in $\varepsilon$)
 
 The physical prediction: unitarity is preserved to the extent that PAC conservation holds. Any remnant information is proportional to $\varepsilon$. This is falsifiable — if Page curve measurements (from holographic experiments or analog black holes) show entropy returning to exactly zero, then $\varepsilon = 0$ and DFT's PAC violation prediction is wrong.
 
@@ -252,7 +254,7 @@ The forward/reverse probability ratio at cascade depth $n$ is:
 
 $$\frac{P_\text{forward}}{P_\text{reverse}} = \varphi^{2n}$$
 
-At $n = 100$: ratio $\approx 10^{40}$. At $n = 1000$: ratio $\approx 10^{400}$. Time reversal becomes astronomically unlikely after even modest cascade depths. This is not an approximation — it is fundamental irreversibility from information processing.
+At $n = 100$: ratio $\approx 10^{40}$. At $n = 1000$: ratio $\approx 10^{400}$. Time reversal becomes astronomically unlikely after even modest cascade depths. This is fundamental irreversibility from information processing, not an approximation.
 
 ### 9.2 Multi-ratio universality
 
@@ -282,7 +284,7 @@ In a harmonic cascade where level $k$ costs $1/k$ nats, the total cost through $
 | 1000 | 0.09% |
 | 5000 | 0.02% |
 
-$\gamma$ is uniquely determined by harmonic counting. $\varphi$ is uniquely determined by duality. $\Xi = \gamma + \ln\varphi$ has zero free parameters.
+$\gamma$ is uniquely determined by harmonic counting and $\varphi$ by duality, so $\Xi = \gamma + \ln\varphi$ has zero free parameters.
 
 ---
 
@@ -296,15 +298,15 @@ But PAC conservation forbids a static remnant: the information inside must eithe
 
 ### 10.2 Bounce time
 
-The bounce timescale is determined by the MVAE:
+The bounce timescale follows from the Planck-star geometry. Milestone 11 (exp_11) computes
 
-$$t_\text{bounce} = T_\text{MVAE} \cdot t_P = \frac{1}{2 \ln 2} \cdot t_P \approx 0.72 \cdot t_P$$
+$$t_\text{bounce} = 1.0 \cdot t_P$$
 
-This is effectively 1 Planck time, and it is constant across all black hole masses. The bounce occurs when the cascade saturates, regardless of how much mass the hole started with. This is a prediction: all Planck-mass remnants bounce on the same timescale.
+constant across all black hole masses (standard deviation / mean $\sim 10^{-16}$). The bounce occurs when the cascade saturates at the minimum actualization density, regardless of how much mass the hole started with. (The MVAE cascade *tick* $T_\text{MVAE} = 1/(2\ln 2) \approx 0.72\,t_P$ from exp_03 — the minimum time to actualize one cascade level — is a distinct quantity, not the bounce time.) This is a prediction: all Planck-mass remnants bounce on the same timescale.
 
 ### 10.3 Connection to Planck star hypothesis
 
-This result aligns with the Planck star hypothesis of Rovelli and Vidotto (2014): a collapsing star bounces at the Planck density and re-expands. DFT provides a specific mechanism (cascade saturation + PAC information pressure) and a specific timescale (1 $t_P$).
+This result aligns with the Planck star hypothesis of Rovelli and Vidotto (2014): a collapsing star bounces at the Planck density and re-expands. DFT provides a specific mechanism (cascade saturation + PAC information pressure) and a specific timescale ($t_\text{bounce} = 1\,t_P$).
 
 The predicted Planck star burst energy scales as $(M/M_P)^{-1/3}$, potentially observable by Fermi, Swift, or CTA as sub-millisecond gamma-ray bursts from primordial black holes reaching their bounce epoch.
 
@@ -320,7 +322,7 @@ $$\frac{\delta v}{c} \sim \left(\frac{E}{E_P}\right)^2$$
 
 For GW170817 ($E \sim 10^{-19}$ eV), this gives $\delta v / c \sim 10^{-67}$. The measured bound is $|c_\text{GW} - c_\text{EM}|/c < 3 \times 10^{-15}$. Our prediction is 67 orders of magnitude below this bound.
 
-This is honest: the prediction is real (cascade density creates dispersion) but provides zero observational constraint with current instruments. Future detectors may reach closer, but $10^{67}$ orders is a formidable gap.
+The prediction is real (cascade density creates dispersion) but provides zero observational constraint with current instruments. Future detectors may reach closer, but 67 orders of magnitude is a large gap.
 
 ### 11.2 DESI sub-leading corrections
 
@@ -363,11 +365,11 @@ Score: 52/52 $\to$ 49/52 $\to$ 52/52.
 
 **Round 4**: Origin of $\Xi$ (§9.3–9.4).
 
-### 12.2 Why this matters
+### 12.2 Significance
 
-The hardening cycle is the methodological core of this paper. It distinguishes structural coincidences from genuine physics. The three exposed tautologies were resolved using existing derivations (M9 cascade contraction, M11 Hawking correction, MVAE bracket structure) — not by inventing new physics to force a pass.
+The hardening cycle is the methodological core of this paper. It distinguishes structural coincidences from genuine physics. The three exposed tautologies were resolved using existing derivations (M9 cascade contraction, M11 Hawking correction, MVAE bracket structure), not by inventing new physics to force a pass.
 
-Any framework that scores 100% without adversarial testing should be treated with skepticism. The 52 $\to$ 49 $\to$ 52 cycle demonstrates that DFT survives genuine scrutiny, not that it avoids it.
+Any framework that scores 100% without adversarial testing should be treated with skepticism. The 52 $\to$ 49 $\to$ 52 cycle demonstrates that DFT survives adversarial scrutiny rather than avoiding it.
 
 ---
 
@@ -384,7 +386,7 @@ Any framework that scores 100% without adversarial testing should be treated wit
 | 7 | P | DESI $w_a \sim -0.07$ | DESI DR2/DR3 ($\sim 2027$) | Tension with DR1 |
 | 8 | P | Scrambling time $S \cdot t_P \cdot \ln S$ | Quantum information bounds | Consistent |
 | 9 | C | PAC unitarity: $\varepsilon$-violation kills turnover | Theoretical | Consistent |
-| 10 | C | Non-singular interior (Kretschner finite) | Mathematical analysis | Consistent |
+| 10 | C | Non-singular interior (Kretschmann finite) | Mathematical analysis | Consistent |
 | 11 | C | M1–M10 compatibility: 0 contradictions | Cross-milestone validation | 0 contradictions |
 | 12 | P | Fibonacci GW spectrum $f_n/f_{n+1} = \varphi$ | LISA + ground-based GW | Open |
 
@@ -428,15 +430,15 @@ Prediction types: P = genuine prediction, D = postdiction (matches known result 
 
 ## 16. Conclusion
 
-Quantum gravity, in the DFT framework, is not a separate theory. It is the response-time crossover of the gravitational cascade — the regime where perturbations arrive faster than gravity can maintain its equilibrium.
+Quantum gravity, in the DFT framework, is the response-time crossover of the gravitational cascade rather than a separate theory: the regime where perturbations arrive faster than gravity can maintain its equilibrium.
 
-From this single insight, combined with the PAC/SEC axioms and the Fibonacci depth structure established in earlier papers, we derived: the Planck scale (zero free parameters), singularity resolution (cascade saturation), Hawking radiation ($T \cdot M = 1/(8\pi)$ exact), the Page curve (peak at $k/N = 0.5$), graviton properties (spin-2, massless, 2 polarizations), the arrow of time (Landauer irreversibility), and Planck star bounce dynamics ($t_\text{bounce} = 1\ t_P$).
+From this single insight, combined with the PAC/SEC axioms and the Fibonacci depth structure established in earlier papers, we derived: the Planck scale (zero free parameters), singularity resolution (cascade saturation), Hawking radiation ($T \cdot M = 1/(8\pi)$ exact), the Page curve (peak at $k/N = 0.5$), graviton properties (spin-2, massless, 2 polarizations), the arrow of time (Landauer irreversibility), and Planck star bounce dynamics ($t_\text{bounce} = 1\,t_P$).
 
-The framework produces 12 falsifiable predictions. Zero contradict current observations. Zero contradict Milestones 1–10 of DFT. The hardening cycle ($52 \to 49 \to 52$) demonstrates that these results survive adversarial scrutiny.
+The framework produces 12 falsifiable predictions, none contradicting current observations or Milestones 1–10 of DFT. The hardening cycle ($52 \to 49 \to 52$) demonstrates that these results survive adversarial scrutiny.
 
-The honest assessment: the framework is internally consistent, computationally verified, and produces the right numbers. It is also semi-classical, structurally dominated (60% of tests), and observationally unconstrained at the Planck scale by a factor of $10^{67}$. Whether the information-theoretic route to quantum gravity captures the full non-perturbative physics remains an open question for M12 and beyond.
+The framework is internally consistent, computationally verified, and produces the right numbers. It is also semi-classical, structurally dominated (60% of tests), and observationally unconstrained at the Planck scale by a factor of $10^{67}$. Whether the information-theoretic route to quantum gravity captures the full non-perturbative physics remains an open question for M12 and beyond.
 
-What is established: the Planck scale, Hawking radiation, and graviton properties do not require quantizing general relativity. They follow from information conservation applied consistently to the gravitational cascade.
+In summary, the Planck scale, Hawking radiation, and graviton properties do not require quantizing general relativity; they follow from information conservation applied consistently to the gravitational cascade.
 
 ---
 
@@ -468,7 +470,7 @@ What is established: the Planck scale, Hawking radiation, and graviton propertie
 | §4 | M11 exp_02 (Planck from Negotiation) | 4/4 | Inner route convergence 1.13$\times$ |
 | §4 | M11 exp_03 (Discrete Cascade Time) | 4/4 | Echo error $10^{19}$ at $n = 100$ |
 | §5 | M11 exp_04 (Singularity Saturation) | 4/4 | Area law slope $= 2.000 \pm 0.05$ |
-| §6 | M11 exp_05 (Hawking from PAC) | 4/4 | $T \cdot M$ CV $= 7.8 \times 10^{-17}$ |
+| §6 | M11 exp_05 (Hawking from PAC) | 4/4 | $T \cdot M$ CV $= 1.7 \times 10^{-16}$ |
 | §7 | M11 exp_06 (Page Curve Unitarity) | 4/4 | Peak at $k/N = 0.5$ exact |
 | §8 | M11 exp_07 (Cascade Density) | 4/4 | $1/k^2$ propagator, Fibonacci spectrum |
 | §8 | M11 exp_08 (Graviton from Cascade) | 4/4 | Spin-2 (99.5%), dipole < 1% |

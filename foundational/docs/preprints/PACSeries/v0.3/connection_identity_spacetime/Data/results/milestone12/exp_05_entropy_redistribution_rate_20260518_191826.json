@@ -1,0 +1,315 @@
+{
+  "experiment": "exp_05_entropy_redistribution_rate",
+  "milestone": "milestone12",
+  "block": "B",
+  "score": 3,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_shannon_equals_sec_entropy",
+      "by_depth": {
+        "3": {
+          "shannon_entropy": 1.9950551593320107,
+          "sec_entropy": 1.9950551593320107,
+          "per_level_entropy": 0.6650183864440036,
+          "relative_error": 0.0,
+          "match": true
+        },
+        "5": {
+          "shannon_entropy": 3.3250919322200176,
+          "sec_entropy": 3.325091932220018,
+          "per_level_entropy": 0.6650183864440036,
+          "relative_error": 1.3355697192816072e-16,
+          "match": true
+        },
+        "7": {
+          "shannon_entropy": 4.655128705108025,
+          "sec_entropy": 4.655128705108025,
+          "per_level_entropy": 0.6650183864440036,
+          "relative_error": 0.0,
+          "match": true
+        },
+        "10": {
+          "shannon_entropy": 6.650183864440036,
+          "sec_entropy": 6.650183864440036,
+          "per_level_entropy": 0.6650183864440036,
+          "relative_error": 0.0,
+          "match": true
+        },
+        "13": {
+          "shannon_entropy": 8.645239023772048,
+          "sec_entropy": 8.645239023772046,
+          "per_level_entropy": 0.6650183864440036,
+          "relative_error": 2.0547226450486265e-16,
+          "match": true
+        }
+      },
+      "per_level_binary_entropy": 0.6650183864440036,
+      "ln_phi": 0.48121182505960347,
+      "all_match": true,
+      "note": "Shannon entropy of PAC leaf distribution matches SEC analytic entropy. Per-level entropy = 0.665018.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_landauer_cost_is_ln_phi",
+      "by_depth": {
+        "2": {
+          "entropy_at_depth": 1.3300367728880071,
+          "entropy_at_depth_minus_1": 0.6650183864440036,
+          "delta_entropy": 0.6650183864440036,
+          "expected_per_level": 0.6650183864440036,
+          "error": 0.0,
+          "match": true
+        },
+        "3": {
+          "entropy_at_depth": 1.9950551593320107,
+          "entropy_at_depth_minus_1": 1.3300367728880071,
+          "delta_entropy": 0.6650183864440036,
+          "expected_per_level": 0.6650183864440036,
+          "error": 0.0,
+          "match": true
+        },
+        "4": {
+          "entropy_at_depth": 2.6600735457760143,
+          "entropy_at_depth_minus_1": 1.9950551593320107,
+          "delta_entropy": 0.6650183864440036,
+          "expected_per_level": 0.6650183864440036,
+          "error": 0.0,
+          "match": true
+        },
+        "5": {
+          "entropy_at_depth": 3.3250919322200176,
+          "entropy_at_depth_minus_1": 2.6600735457760143,
+          "delta_entropy": 0.6650183864440034,
+          "expected_per_level": 0.6650183864440036,
+          "error": 2.220446049250313e-16,
+          "match": true
+        },
+        "6": {
+          "entropy_at_depth": 3.990110318664022,
+          "entropy_at_depth_minus_1": 3.3250919322200176,
+          "delta_entropy": 0.6650183864440042,
+          "expected_per_level": 0.6650183864440036,
+          "error": 6.661338147750939e-16,
+          "match": true
+        },
+        "7": {
+          "entropy_at_depth": 4.655128705108025,
+          "entropy_at_depth_minus_1": 3.990110318664022,
+          "delta_entropy": 0.6650183864440029,
+          "expected_per_level": 0.6650183864440036,
+          "error": 6.661338147750939e-16,
+          "match": true
+        },
+        "8": {
+          "entropy_at_depth": 5.320147091552028,
+          "entropy_at_depth_minus_1": 4.655128705108025,
+          "delta_entropy": 0.6650183864440029,
+          "expected_per_level": 0.6650183864440036,
+          "error": 6.661338147750939e-16,
+          "match": true
+        },
+        "9": {
+          "entropy_at_depth": 5.985165477996032,
+          "entropy_at_depth_minus_1": 5.320147091552028,
+          "delta_entropy": 0.6650183864440047,
+          "expected_per_level": 0.6650183864440036,
+          "error": 1.1102230246251565e-15,
+          "match": true
+        },
+        "10": {
+          "entropy_at_depth": 6.650183864440036,
+          "entropy_at_depth_minus_1": 5.985165477996032,
+          "delta_entropy": 0.6650183864440038,
+          "expected_per_level": 0.6650183864440036,
+          "error": 2.220446049250313e-16,
+          "match": true
+        },
+        "11": {
+          "entropy_at_depth": 7.315202250884039,
+          "entropy_at_depth_minus_1": 6.650183864440036,
+          "delta_entropy": 0.6650183864440029,
+          "expected_per_level": 0.6650183864440036,
+          "error": 6.661338147750939e-16,
+          "match": true
+        },
+        "12": {
+          "entropy_at_depth": 7.980220637328042,
+          "entropy_at_depth_minus_1": 7.315202250884039,
+          "delta_entropy": 0.6650183864440029,
+          "expected_per_level": 0.6650183864440036,
+          "error": 6.661338147750939e-16,
+          "match": true
+        },
+        "13": {
+          "entropy_at_depth": 8.645239023772048,
+          "entropy_at_depth_minus_1": 7.980220637328042,
+          "delta_entropy": 0.6650183864440056,
+          "expected_per_level": 0.6650183864440036,
+          "error": 1.9984014443252818e-15,
+          "match": true
+        },
+        "14": {
+          "entropy_at_depth": 9.310257410216048,
+          "entropy_at_depth_minus_1": 8.645239023772048,
+          "delta_entropy": 0.6650183864440002,
+          "expected_per_level": 0.6650183864440036,
+          "error": 3.3306690738754696e-15,
+          "match": true
+        }
+      },
+      "mean_entropy_per_level": 0.6650183864440034,
+      "std_entropy_per_level": 1.1861934023075083e-15,
+      "constant_rate": true,
+      "per_level_entropy": 0.6650183864440036,
+      "ln_phi": 0.48121182505960347,
+      "ln_phi_structural_component": 0.6650183864440036,
+      "structural_match": true,
+      "note": "Per-level Landauer cost = 0.6650183864. Structural decomposition: ln(phi) * (1/phi + 2/phi^2) = 0.6650183864. ln(phi) = 0.4812118251 is the fundamental cost unit.",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_dual_face_redistribution_rate",
+      "by_depth": {
+        "3": {
+          "info_entropy_rate": 0.07326216984529717,
+          "fiedler_eigenvalue": 0.09678807408844771,
+          "rate_to_fiedler_ratio": 0.7569338530111479,
+          "initial_entropy": -0.0,
+          "final_entropy": 2.708050196494851,
+          "laplacian_spectrum_first_5": [
+            -2.1475987478930857e-15,
+            0.09678807408844771,
+            0.26794919243112253,
+            0.26794919243112353,
+            0.9999999999999988
+          ]
+        },
+        "4": {
+          "info_entropy_rate": 0.1283744311067646,
+          "fiedler_eigenvalue": 0.04031146118912917,
+          "rate_to_fiedler_ratio": 3.1845640748290083,
+          "initial_entropy": -0.0,
+          "final_entropy": 3.4339841572787266,
+          "laplacian_spectrum_first_5": [
+            2.0796725487098965e-15,
+            0.04031146118912917,
+            0.09678807408844677,
+            0.09678807408844739,
+            0.26794919243112175
+          ]
+        },
+        "5": {
+          "info_entropy_rate": 0.19734700940950461,
+          "fiedler_eigenvalue": 0.01812574293986969,
+          "rate_to_fiedler_ratio": 10.887664580932393,
+          "initial_entropy": -0.0,
+          "final_entropy": 4.1430014619634825,
+          "laplacian_spectrum_first_5": [
+            -1.1786033132173839e-15,
+            0.01812574293986969,
+            0.040311461189127554,
+            0.040311461189128546,
+            0.09678807408844446
+          ]
+        }
+      },
+      "rate_fiedler_ratios": [
+        0.7569338530111479,
+        3.1845640748290083,
+        10.887664580932393
+      ],
+      "mean_ratio": 4.94305416959085,
+      "coefficient_of_variation": 0.8736966548673795,
+      "proportional": false,
+      "note": "Info rate / Fiedler eigenvalue ratio CV = 0.8737. Both measure equilibration rate on the same graph \u2014 dual faces of the same redistribution dynamics.",
+      "PASS": false
+    },
+    "T4": {
+      "test": "T4_second_law_structural",
+      "by_depth": {
+        "3": {
+          "concentrated": {
+            "initial_entropy": -0.0,
+            "final_entropy": 2.7080502011022105,
+            "entropy_gain": 2.7080502011022105,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          },
+          "bimodal": {
+            "initial_entropy": 0.6931471805599453,
+            "final_entropy": 2.706831179691566,
+            "entropy_gain": 2.0136839991316204,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          },
+          "random": {
+            "initial_entropy": 2.4941754299117855,
+            "final_entropy": 2.707992540422279,
+            "entropy_gain": 0.21381711051049335,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          }
+        },
+        "4": {
+          "concentrated": {
+            "initial_entropy": -0.0,
+            "final_entropy": 3.4339872044851445,
+            "entropy_gain": 3.4339872044851445,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          },
+          "bimodal": {
+            "initial_entropy": 0.6931471805599453,
+            "final_entropy": 3.4125627417234745,
+            "entropy_gain": 2.719415561163529,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          },
+          "random": {
+            "initial_entropy": 3.209071549695349,
+            "final_entropy": 3.43389341136328,
+            "entropy_gain": 0.22482186166793117,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          }
+        },
+        "5": {
+          "concentrated": {
+            "initial_entropy": -0.0,
+            "final_entropy": 4.143134726384329,
+            "entropy_gain": 4.143134726384329,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          },
+          "bimodal": {
+            "initial_entropy": 0.6931471805599453,
+            "final_entropy": 4.054223574549818,
+            "entropy_gain": 3.3610763939898725,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          },
+          "random": {
+            "initial_entropy": 3.9408516948230132,
+            "final_entropy": 4.1424143563725195,
+            "entropy_gain": 0.2015626615495063,
+            "monotonic": true,
+            "entropy_increased": true,
+            "n_steps": 500
+          }
+        }
+      },
+      "all_monotonic": true,
+      "note": "Entropy monotonically non-decreasing under PAC redistribution for all initial conditions and graph topologies tested. This is the structural Second Law in connection space.",
+      "PASS": true
+    }
+  }
+}

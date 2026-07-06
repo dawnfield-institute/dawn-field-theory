@@ -1,0 +1,71 @@
+{
+  "experiment": "exp_09_entanglement_product_graphs",
+  "milestone": 14,
+  "block": "E",
+  "results": {
+    "T1": {
+      "test": "T1_product_state_factorizes",
+      "n": 3,
+      "n_prod": 9,
+      "trace_error_A": 0.0,
+      "trace_error_B": 0.0,
+      "S_A": -0.0,
+      "S_B": -0.0,
+      "factorization_error": 0.0,
+      "traces_match": true,
+      "pure_A": true,
+      "pure_B": true,
+      "factorizes": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_bell_state_nonfactorizable",
+      "factorization_error": 0.4999999999999999,
+      "is_entangled": true,
+      "coherence": 0.4999999999999999,
+      "has_coherence": true,
+      "purity_full": 0.9999999999999996,
+      "purity_A": 0.4999999999999998,
+      "purity_B": 0.4999999999999998,
+      "full_pure": true,
+      "subsystem_mixed": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_reduced_density_mixed",
+      "entropy": 0.6931471805599454,
+      "expected_entropy": 0.6931471805599453,
+      "entropy_error": 1.1102230246251565e-16,
+      "entropy_matches": true,
+      "eigenvalues": [
+        0.4999999999999999,
+        0.4999999999999999,
+        0.0
+      ],
+      "eigs_match": true,
+      "rho_error": 1.1102230246251565e-16,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_gauge_invariant_entanglement",
+      "d4_entropy": 0.6931471805599454,
+      "d4_entangled": true,
+      "d4_has_gauge": true,
+      "d4_n_orbits": 2,
+      "e7_entropy": 0.6931471805599454,
+      "e7_entangled": true,
+      "e7_has_gauge": false,
+      "e7_all_singleton": true,
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}

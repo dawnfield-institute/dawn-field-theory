@@ -1,0 +1,163 @@
+{
+  "T1": {
+    "test": "T1_phi_selection_and_gamma",
+    "part_a_duality": {
+      "best_b": 1.6187793896948475,
+      "best_error": 0.0006362742650027897,
+      "phi": 1.618033988749895,
+      "phi_match": "True",
+      "unique_solution": "True",
+      "near_zero_count": 12,
+      "algebraic_match": "True"
+    },
+    "part_b_gamma": {
+      "estimates": [
+        {
+          "n": 10,
+          "mean_excess": 0.6263831609742392,
+          "det_excess": 0.6263831609742079,
+          "error_pct": 8.518046037621394
+        },
+        {
+          "n": 50,
+          "mean_excess": 0.5871823329016146,
+          "det_excess": 0.5871823329012771,
+          "error_pct": 1.7266800965016131
+        },
+        {
+          "n": 100,
+          "mean_excess": 0.5822073316505433,
+          "det_excess": 0.5822073316515288,
+          "error_pct": 0.8647836594745723
+        },
+        {
+          "n": 500,
+          "mean_excess": 0.5782153315655212,
+          "det_excess": 0.5782153315683285,
+          "error_pct": 0.17318772299191879
+        },
+        {
+          "n": 1000,
+          "mean_excess": 0.5777155815389287,
+          "det_excess": 0.5777155815682065,
+          "error_pct": 0.08660829860861019
+        },
+        {
+          "n": 5000,
+          "mean_excess": 0.5773156614300841,
+          "det_excess": 0.577315661568166,
+          "error_pct": 0.01732396965530078
+        }
+      ],
+      "best_gamma": 0.577315661568166,
+      "gamma_target": 0.5772156649015329,
+      "gamma_converges": true,
+      "error_decreasing": true,
+      "note": "Harmonic cascade (level k costs 1/k nats) produces H_n as total cost. Excess H_n - ln(n) -> gamma. This is the mechanism DFT claims, not a postulate."
+    },
+    "PASS": true
+  },
+  "T2": {
+    "test": "T2_echo_scaling",
+    "echo_data": [
+      {
+        "n": 5,
+        "echo_error": 0.7643731572054446
+      },
+      {
+        "n": 10,
+        "echo_error": 8.302174514642617
+      },
+      {
+        "n": 20,
+        "echo_error": 2554.741779464079
+      },
+      {
+        "n": 50,
+        "echo_error": 2952036892.926796
+      },
+      {
+        "n": 100,
+        "echo_error": 1.8010506270853126e+19
+      },
+      {
+        "n": 200,
+        "echo_error": 5.435553570233335e+40
+      }
+    ],
+    "echo_at_100": 1.8010506270853126e+19,
+    "large_at_100": true,
+    "exponential_growth": true,
+    "grows_with_n": true,
+    "det_reversible": true,
+    "det_echo_error": 1.3322676295501878e-15,
+    "PASS": true
+  },
+  "T3": {
+    "test": "T3_multi_ratio_landauer",
+    "per_ratio": {
+      "phi": {
+        "b": 1.618033988749895,
+        "split_ratio": 0.6180339887498948,
+        "target_ln_b": 0.48121182505960347,
+        "measured_contraction": 0.48108883767259025,
+        "ratio_to_target": 0.999744421519571,
+        "std": 0.008007072303389358
+      },
+      "binary": {
+        "b": 2.0,
+        "split_ratio": 0.5,
+        "target_ln_b": 0.6931471805599453,
+        "measured_contraction": 0.7004990983477888,
+        "ratio_to_target": 1.0106065753335451,
+        "std": 0.03448269231842348
+      },
+      "euler": {
+        "b": 2.718281828459045,
+        "split_ratio": 0.36787944117144233,
+        "target_ln_b": 1.0,
+        "measured_contraction": 1.0151610804618565,
+        "ratio_to_target": 1.0151610804618565,
+        "std": 0.06069338635968916
+      },
+      "ternary": {
+        "b": 3.0,
+        "split_ratio": 0.3333333333333333,
+        "target_ln_b": 1.0986122886681098,
+        "measured_contraction": 1.1191234006579915,
+        "ratio_to_target": 1.0186700187149265,
+        "std": 0.07841826704472384
+      }
+    },
+    "all_within_15pct": true,
+    "ratio_spread": 0.018930435407270796,
+    "spread_tight": "True",
+    "xi_decomposition": {
+      "gamma_counting": 0.5772156649015329,
+      "ln_phi_contraction": 0.48121182505960347,
+      "xi_total": 1.0584274899611363,
+      "sum_check": 1.0584274899611363,
+      "sum_matches": "True",
+      "note": "Xi(b) = gamma + ln(b). For b=phi: Xi = 1.058. gamma is added analytically (harmonic counting overhead), ln(b) is measured from cascade dynamics."
+    },
+    "PASS": "True"
+  },
+  "T4": {
+    "test": "T4_boltzmann_h_theorem",
+    "log_ratios": {
+      "5": 34.160463921320854,
+      "10": 4512.311815651927,
+      "20": 72449578.06668067,
+      "50": 2.4586486148393717e+20,
+      "100": 1.9490421368638438e+41
+    },
+    "slope": 1.9868876152495498e+39,
+    "all_positive": true,
+    "grows_with_n": "True",
+    "monotonic": true,
+    "n_trials": 500,
+    "PASS": "True"
+  },
+  "score": 4,
+  "total": 4
+}

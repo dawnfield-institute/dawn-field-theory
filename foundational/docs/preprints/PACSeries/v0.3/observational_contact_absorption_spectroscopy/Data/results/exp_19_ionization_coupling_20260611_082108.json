@@ -1,0 +1,201 @@
+{
+  "experiment": "exp_19_ionization_coupling",
+  "initiative": "midnight",
+  "registered_prediction_eV": 27.2,
+  "ion_results": [
+    {
+      "ion": "MgII",
+      "source": "XQR30",
+      "excluded": false,
+      "n": 717,
+      "n_bins": 7,
+      "IP_eV": 7.65,
+      "beta": -0.4297684935539127,
+      "beta_CI95": [
+        -1.4365836845509892,
+        0.638624201460501
+      ],
+      "beta_boot_std": 0.5147347420477103
+    },
+    {
+      "ion": "FeII",
+      "source": "XQR30",
+      "excluded": false,
+      "n": 732,
+      "n_bins": 7,
+      "IP_eV": 7.87,
+      "beta": -1.2547798212731711,
+      "beta_CI95": [
+        -2.519303474356025,
+        0.36354339870681807
+      ],
+      "beta_boot_std": 0.7498908002255401
+    },
+    {
+      "ion": "CIV",
+      "source": "XQR30",
+      "excluded": false,
+      "n": 955,
+      "n_bins": 9,
+      "IP_eV": 47.89,
+      "beta": 10.365994451436988,
+      "beta_CI95": [
+        7.125729554183049,
+        17.939648642223833
+      ],
+      "beta_boot_std": 2.7083969898349882
+    },
+    {
+      "ion": "SiII",
+      "source": "XQR30",
+      "excluded": false,
+      "n": 126,
+      "n_bins": 6,
+      "IP_eV": 8.15,
+      "beta": -21.59358978224551,
+      "beta_CI95": [
+        -69.38775625466285,
+        1.8361436203429584
+      ],
+      "beta_boot_std": 17.226785808829742
+    },
+    {
+      "ion": "AlII",
+      "source": "XQR30",
+      "excluded": true,
+      "n": 80
+    },
+    {
+      "ion": "SiIV",
+      "source": "XQR30",
+      "excluded": false,
+      "n": 254,
+      "n_bins": 6,
+      "IP_eV": 33.49,
+      "beta": 15.136201374367104,
+      "beta_CI95": [
+        -3.065049890386214,
+        33.927502916997206
+      ],
+      "beta_boot_std": 9.432588426517478
+    },
+    {
+      "ion": "CaII",
+      "source": "Sardane14",
+      "excluded": false,
+      "n": 435,
+      "n_bins": 6,
+      "IP_eV": 6.11,
+      "beta": 0.030207972913745055,
+      "beta_CI95": [
+        -0.05825065383727134,
+        0.10093124982540162
+      ],
+      "beta_boot_std": 0.04118429877414116
+    },
+    {
+      "ion": "MgII",
+      "source": "DR16",
+      "excluded": false,
+      "n": 90302,
+      "n_bins": 20,
+      "IP_eV": 7.65,
+      "beta": 0.21518385520992425,
+      "beta_CI95": [
+        0.20544711433929594,
+        0.2248178938612588
+      ],
+      "beta_boot_std": 0.004984135484410484
+    },
+    {
+      "ion": "FeII",
+      "source": "DR16",
+      "excluded": false,
+      "n": 53163,
+      "n_bins": 20,
+      "IP_eV": 7.87,
+      "beta": 0.12650408653497533,
+      "beta_CI95": [
+        0.10835017775585021,
+        0.14454713742081135
+      ],
+      "beta_boot_std": 0.00934909068373112
+    },
+    {
+      "ion": "CIV",
+      "source": "DR12",
+      "excluded": false,
+      "n": 443325,
+      "n_bins": 20,
+      "IP_eV": 47.89,
+      "beta": 0.5930394463916941,
+      "beta_CI95": [
+        0.5686807642376778,
+        0.6243538447593805
+      ],
+      "beta_boot_std": 0.014254279753313616
+    }
+  ],
+  "primary_curve": [
+    {
+      "ion": "CaII",
+      "IP_eV": 6.11,
+      "beta": 0.030207972913745055,
+      "source": "Sardane14"
+    },
+    {
+      "ion": "MgII",
+      "IP_eV": 7.65,
+      "beta": 0.21518385520992425,
+      "source": "DR16"
+    },
+    {
+      "ion": "FeII",
+      "IP_eV": 7.87,
+      "beta": 0.12650408653497533,
+      "source": "DR16"
+    },
+    {
+      "ion": "SiII",
+      "IP_eV": 8.15,
+      "beta": -21.59358978224551,
+      "source": "XQR30"
+    },
+    {
+      "ion": "SiIV",
+      "IP_eV": 33.49,
+      "beta": 15.136201374367104,
+      "source": "XQR30"
+    },
+    {
+      "ion": "CIV",
+      "IP_eV": 47.89,
+      "beta": 0.5930394463916941,
+      "source": "DR12"
+    }
+  ],
+  "T1": {
+    "rho": 0.5428571428571429,
+    "p_one_sided": 0.13285131195335279,
+    "PASS": false
+  },
+  "T2": {
+    "E0_point": 6.11,
+    "E0_CI95": [
+      6.11,
+      6.428900779313378
+    ],
+    "PASS": false
+  },
+  "T3": {
+    "CI_width": 0.31890077931337757,
+    "bracket_width": 14.660000000000004,
+    "PASS": true,
+    "n_nocross": 0
+  },
+  "T4": {
+    "PASS": true
+  },
+  "verdict": "INCONCLUSIVE",
+  "score": "2/4"
+}

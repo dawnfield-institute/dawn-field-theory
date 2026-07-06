@@ -1,0 +1,22 @@
+{
+  "experiment": "exp_09_compatibility_scorecard",
+  "milestone": 7,
+  "block": "D",
+  "catalog_size": 20,
+  "categories": {
+    "A": 12,
+    "B": 8,
+    "C": 0,
+    "F": 0
+  },
+  "pct_AB": 100.0,
+  "pct_A": 60.0,
+  "new_derivations": 12,
+  "verification": {
+    "test1_compatible": true,
+    "test2_illuminated": true,
+    "test3_no_contradictions": true,
+    "test4_new_derivations": true,
+    "verified_count": 4
+  }
+}

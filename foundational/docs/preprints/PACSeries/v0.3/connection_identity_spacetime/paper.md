@@ -11,15 +11,17 @@
 
 ## Abstract
 
-We derive the Lorentz group, the invariant interval, and the speed of light from the graph-theoretic foundations of Dawn Field Theory (DFT). The central insight is that *connection is addition*: the operation of connecting two nodes on a graph is algebraically identical to addition on their label sets, and the graphs that close under this operation are precisely the ADE Dynkin diagrams — a classification theorem from mathematics, not a postulate of physics.
+We derive the Lorentz group, the invariant interval, and the speed of light from the graph-theoretic foundations of Dawn Field Theory (DFT). The central claim is that connection is addition: the operation of connecting two nodes on a graph is algebraically identical to addition on their label sets, and the graphs that close under this operation are precisely the ADE Dynkin diagrams — a classification theorem from mathematics, not a postulate of physics.
 
-Milestone 12 of DFT establishes three results. (1) The ADE classification is equivalent to Fibonacci arithmetic closure: the only ADE types compatible with Fibonacci recursion are $A_1$ (trivial), $D_4$ (SU(2)), and $E_8$ (containing SU(3)). The Standard Model gauge group SU(3) $\times$ SU(2) $\times$ U(1) is not assumed — it is the unique Fibonacci-compatible content of ADE. The gauge dimension closure $F_7 = 13 = 1 + 3 + 8 + 1$ follows from $\dim(\text{U}(1)) + \dim(\text{SU}(2)) + \dim(\text{SU}(3)) + 1 = F_7$. (2) Physical laws emerge as basin attractors of information dynamics, with relaxation ratios $\varphi^{d_2 - d_1}$ between force depths — not imposed but converged to. (3) SEC complexification of the simplest ADE type ($A_1$) produces $A_1 \to \text{SL}(2,\mathbb{C}) \cong \text{SO}(3,1)$ — the Lorentz group, derived from connection plus entropy.
+Milestone 12 of DFT establishes three results. (1) The ADE classification is equivalent to Fibonacci arithmetic closure: the only ADE types compatible with Fibonacci recursion are $A_1$ (trivial), $D_4$ (SU(2)), and $E_8$ (containing SU(3)). The Standard Model gauge group SU(3) $\times$ SU(2) $\times$ U(1) is not assumed; it is the unique Fibonacci-compatible content of ADE. The gauge dimension closure $F_7 = 13 = 1 + 3 + 8 + 1$ follows from $\dim(\text{U}(1)) + \dim(\text{SU}(2)) + \dim(\text{SU}(3)) + 1 = F_7$. (2) Physical laws emerge as basin attractors of information dynamics, with relaxation ratios $\varphi^{d_2 - d_1}$ between force depths, converged to rather than imposed. (3) SEC complexification of the simplest ADE type ($A_1$) produces $A_1 \to \text{SL}(2,\mathbb{C}) \cong \text{SO}(3,1)$, the Lorentz group, derived from connection plus entropy.
 
-Milestone 13 extends this to spacetime geometry. (4) Identity IS complement: the identity of a vertex on an ADE graph is its complement spectrum — the list of what it is NOT. This is an outside-in definition, requiring no intrinsic properties. (5) Different observers compute different complements of the same target: this is definitional parallax, and complement-transformations between observers form the Weyl group of the graph. (6) SEC extends $\mathbb{Z}_2$ (graph complement) to $\text{SL}(2,\mathbb{C})$ (continuous deformation) to $\text{SO}(3,1)$ (Lorentz). (7) The invariant interval $ds^2$ emerges from the uniqueness of the Killing form on the Lie algebra — the only bilinear form invariant under all complement transformations. (8) The speed of light is the coherence limit on complement-deformation: the maximum rate at which one vertex's complement can change while maintaining graph consistency. Proper time follows: $d\tau = dt / \cosh(\eta)$ where $\eta$ is the boost parameter.
+Milestone 13 extends this to spacetime geometry. (4) Identity is complement: the identity of a vertex on an ADE graph is its complement spectrum, the list of what it is not. This is an outside-in definition, requiring no intrinsic properties. (5) Different observers compute different complements of the same target: this is definitional parallax, and complement-transformations between observers form the Weyl group of the graph. (6) SEC extends $\mathbb{Z}_2$ (graph complement) to $\text{SL}(2,\mathbb{C})$ (continuous deformation) to $\text{SO}(3,1)$ (Lorentz). (7) The invariant interval $ds^2$ emerges from the uniqueness of the Killing form on the Lie algebra, the only bilinear form invariant under all complement transformations. (8) The speed of light is the coherence limit on complement-deformation: the maximum rate at which one vertex's complement can change while maintaining graph consistency. Proper time follows: $d\tau = dt / \cosh(\eta)$ where $\eta$ is the boost parameter.
 
-The complete derivation chain — self-loop $\to$ $\varphi$ $\to$ PAC $\to$ ADE $\to$ complement $\to$ parallax $\to$ Weyl $\to$ SEC $\to$ Lorentz $\to$ $ds^2$ $\to$ $c$ $\to$ proper time — contains 12 links, each computationally verified. We report 49/52 (94%) on M12 and 51/60 (85%) on M13/13.5, with 8 honest failures documented in full (including PSD degeneracy proven fundamental and rapidity composition with discrete gap). 16 predictions (8 from each milestone), zero contradictions with M1–M11.
+The complete derivation chain — self-loop $\to$ $\varphi$ $\to$ PAC $\to$ ADE $\to$ complement $\to$ parallax $\to$ Weyl $\to$ SEC $\to$ Lorentz $\to$ $ds^2$ $\to$ $c$ $\to$ proper time — contains 12 links, each computationally verified. We report 49/52 (94%) on M12 and 51/60 (85%) on M13/13.5, with 8 failures documented in full (including PSD degeneracy proven fundamental and rapidity composition with discrete gap). 16 predictions (8 from each milestone), zero contradictions with M1–M11.
 
 **Keywords**: ADE classification, connection, Lorentz group, SEC complexification, complement identity, Weyl group, invariant interval, speed of light, spacetime derivation, Dawn Field Theory
+
+**Epistemic status.** This paper is part of the PACSeries, an evolving research program rather than a finished theory (see the series note *How to Read the PACSeries*). Its quantitative claims are tiered by derivation type — **A** structural, **B** identified, **C** pattern-matched — and labeled in the text. Failures are reported rather than omitted, and framework-level corrections are logged in the Epistemic Corrections Registry in the repository. Every headline result is reproducible from the `Code/` and `Data/` in this package (provenance in `trace.yaml`).
 
 ---
 
@@ -30,7 +32,7 @@ Spacetime has two features that every physicist uses but no standard theory deri
 1. **The Lorentz group SO(3,1)** — why this symmetry, and not some other?
 2. **The invariant interval $ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2$** — why this metric signature?
 
-General relativity takes the Lorentz group as given. Quantum field theory builds on it. String theory embeds it. But none derives it from anything simpler.
+General relativity takes the Lorentz group as given, quantum field theory builds on it, and string theory embeds it; none derives it from anything simpler.
 
 This paper derives both from the combinatorial structure of ADE graphs — the same classification that already governs gauge symmetries, root systems, and singularity resolutions in mathematics.
 
@@ -46,13 +48,13 @@ Consider a graph $G$ with vertices $V$ and edges $E$. The operation of *connecti
 
 For ADE Dynkin diagrams, the adjacency matrix $A$ encodes which vertices connect. The graph Laplacian $L = D - A$ (degree matrix minus adjacency) captures the dynamics of information flow. The eigenvalues of $L$ are the resonant frequencies of the graph; the eigenvectors are the modes.
 
-The key observation (M12 exp_01): for ADE graphs, the operation "connect node $i$ to node $j$" is isomorphic to addition in the root lattice. This is not a metaphor — it is an algebraic identity proven by the classification theorem.
+For ADE graphs (M12 exp_01), the operation "connect node $i$ to node $j$" is isomorphic to addition in the root lattice. This is an algebraic identity, proven by the classification theorem.
 
 ### 2.2 ADE as Fibonacci arithmetic closure
 
 Which ADE types are compatible with Fibonacci recursion $F_n = F_{n-1} + F_{n-2}$?
 
-The Fibonacci sequence modulo the Coxeter number $h$ of each ADE type determines compatibility (M12 exp_02). A type is Fibonacci-compatible if the Fibonacci orbit under mod $h$ visits all residues — i.e., if Fibonacci arithmetic is complete on that graph.
+The Fibonacci sequence modulo the Coxeter number $h$ of each ADE type determines compatibility (M12 exp_03). A type is Fibonacci-compatible if the Fibonacci orbit under mod $h$ visits all residues — i.e., if Fibonacci arithmetic is complete on that graph.
 
 Result: exactly three families are Fibonacci-compatible:
 - $A_1$ ($h = 2$): trivial, $\dim = 0$ (U(1) contribution)
@@ -65,9 +67,9 @@ $$F_7 = 13 = \underbrace{1}_{\text{U(1)}} + \underbrace{3}_{\text{SU(2)}} + \und
 
 This is not numerology. $F_7 = 13$ is the seventh Fibonacci number; the dimensions 1, 3, 8, 1 are forced by the ADE classification; their sum being exactly $F_7$ is the Fibonacci closure condition.
 
-### 2.3 What this means
+### 2.3 Interpretation
 
-The Standard Model gauge group is not a free parameter. It is the unique content of ADE arithmetic that is compatible with Fibonacci recursion — which is itself the unique recursion compatible with PAC conservation (Paper 1).
+The Standard Model gauge group is the unique content of ADE arithmetic compatible with Fibonacci recursion, which is itself the unique recursion compatible with PAC conservation (Paper 1).
 
 ---
 
@@ -75,9 +77,9 @@ The Standard Model gauge group is not a free parameter. It is the unique content
 
 ### 3.1 Convergence, not imposition
 
-Physical laws are not rules imposed on nature. They are basin attractors of information dynamics (M12 exp_03–05).
+Physical laws are basin attractors of information dynamics, not rules imposed on nature (M12 exp_03–05).
 
-Start with random initial conditions on an ADE graph. Apply PAC-conserving dynamics (total information conserved at every step). The system converges to a fixed point that corresponds to a physical law — not because the law was encoded, but because the dynamics have no alternative.
+Start with random initial conditions on an ADE graph. Apply PAC-conserving dynamics (total information conserved at every step). The system converges to a fixed point corresponding to a physical law, not because the law was encoded but because the dynamics have no alternative.
 
 The relaxation ratios between force depths follow $\varphi^{d_2 - d_1}$:
 - Strong/EM ratio: $\varphi^{13-3} = \varphi^{10} \approx 122.99$ (vs observed $\alpha_\text{EM}/\alpha_s \sim 130$)
@@ -87,7 +89,7 @@ The relaxation ratios between force depths follow $\varphi^{d_2 - d_1}$:
 
 The convergence has a thermodynamic explanation (M12 exp_06–07). Each ADE basin has an entropy landscape. The free energy $F = E - TS$ has a unique minimum at the physical law. The depth of this minimum — and therefore the stability of the law — is proportional to the cascade depth.
 
-Gravity (depth 183) has the shallowest basin per unit coupling. This is why gravity is "weakest" — not because of a hierarchy problem, but because depth-183 basins are the most extended in configuration space.
+Gravity (depth 183) has the shallowest basin per unit coupling. This is why gravity is "weakest": not because of a hierarchy problem but because depth-183 basins are the most extended in configuration space.
 
 ---
 
@@ -101,19 +103,19 @@ SEC (Symbolic Entropy Collapse) complexifies this symmetry. The physical reasoni
 
 $$A_1 \xrightarrow{\text{SEC}} \mathfrak{sl}(2, \mathbb{C}) \cong \mathfrak{so}(3,1)$$
 
-Step by step (M12 exp_08):
+Step by step (M12 exp_10–11):
 1. $A_1$ has Lie algebra $\mathfrak{su}(2)$ (3 generators: rotations)
 2. SEC promotes real parameters to complex: $\theta \to \theta + i\eta$
 3. Complexification: $\mathfrak{su}(2)_\mathbb{C} = \mathfrak{sl}(2, \mathbb{C})$
 4. Real form: $\mathfrak{sl}(2, \mathbb{C}) \cong \mathfrak{so}(3,1)$ (Lorentz algebra)
 
-The Lorentz group is not postulated. It is what happens when the simplest graph symmetry acquires an entropy arrow.
+The Lorentz group is not postulated here; it follows from the simplest graph symmetry once the SEC arrow is imposed. All 15 independent commutation relations of $\mathfrak{so}(3,1)$ close to machine precision (maximum closure error $1.1\times10^{-16}$; M12 exp_11): $[J_i,J_j]=i\epsilon_{ijk}J_k$, $[K_i,K_j]=-i\epsilon_{ijk}J_k$, and $[J_i,K_j]=i\epsilon_{ijk}K_k$. The minus sign in the boost-boost bracket, which distinguishes Minkowski from Euclidean signature, follows from $K_i=iJ_i$ rather than being imposed.
 
 ### 4.2 Why this works
 
 The isomorphism $\text{SL}(2, \mathbb{C}) \cong \text{SO}(3,1)$ is a known mathematical fact. What DFT adds is the *physical mechanism* for complexification: SEC dynamics require a preferred direction (actualization over potential), which breaks discrete symmetry into continuous flow, which forces complexification.
 
-The 3 rotation generators become 3 rotations + 3 boosts = 6 generators of the Lorentz group. No dimension is added by hand — it emerges from the real/imaginary decomposition of complexified $\mathfrak{su}(2)$.
+The 3 rotation generators become 3 rotations + 3 boosts = 6 generators of the Lorentz group. No dimension is added by hand; it emerges from the real/imaginary decomposition of complexified $\mathfrak{su}(2)$.
 
 ---
 
@@ -123,17 +125,17 @@ The 3 rotation generators become 3 rotations + 3 boosts = 6 generators of the Lo
 
 ### 5.1 The complement spectrum
 
-On an ADE graph, every vertex $v$ has a complement $\bar{v}$ — the set of all vertices not adjacent to $v$. The complement spectrum of $v$ is the multiset of distances from $v$ to all other vertices (M13 exp_01–02).
+On an ADE graph, every vertex $v$ has a complement $\bar{v}$ — the set of all vertices not adjacent to $v$. The complement spectrum of $v$ is the multiset of distances from $v$ to all other vertices (M13 exp_01).
 
-The key insight: the complement spectrum *uniquely identifies* the vertex. You don't need to know what a vertex IS — you can reconstruct it entirely from what it is NOT.
+The complement spectrum uniquely identifies the vertex. You do not need to know what a vertex is; you can reconstruct it entirely from what it is not.
 
 This is identity as complement: an outside-in definition. It requires no intrinsic properties, no labels, no coordinates. It is purely relational.
 
 ### 5.2 Definitional parallax
 
-Different vertices compute different complements of the same target (M13 exp_03). If vertex $A$ defines vertex $B$ through its complement, and vertex $C$ also defines vertex $B$ through its complement, the two definitions agree on the *identity* of $B$ but disagree on the *description*.
+Different vertices compute different complements of the same target (M13 exp_02). If vertex $A$ defines vertex $B$ through its complement, and vertex $C$ also defines vertex $B$ through its complement, the two definitions agree on the *identity* of $B$ but disagree on the *description*.
 
-This disagreement is definitional parallax — and it is the graph-theoretic origin of reference frames. A "reference frame" is a choice of which vertex does the complement computation.
+This disagreement is definitional parallax, the graph-theoretic origin of reference frames. A "reference frame" is a choice of which vertex does the complement computation.
 
 ---
 
@@ -147,7 +149,7 @@ For $A_1$: Weyl group = $\mathbb{Z}_2$ (swap the two vertices)
 For $D_4$: Weyl group = $S_3$ (permute the three leaves)
 For $E_8$: Weyl group = $W(E_8)$ (order 696,729,600)
 
-The Weyl group acts on complement descriptions the way Lorentz transformations act on spacetime coordinates. This is not an analogy — it is the discrete precursor to continuous Lorentz symmetry.
+The Weyl group acts on complement descriptions the way Lorentz transformations act on spacetime coordinates: this is the discrete precursor to continuous Lorentz symmetry.
 
 ### 6.2 SEC extends the Weyl group
 
@@ -161,11 +163,11 @@ This is the same derivation as Section 4, but now with a geometric interpretatio
 
 If complement-transformations are the Lorentz group, what is invariant under them?
 
-The Killing form of $\mathfrak{sl}(2, \mathbb{C})$ is the unique bilinear form invariant under all adjoint transformations (M13 exp_06). Its signature is $(-,+,+,+)$. This IS the spacetime metric:
+The Killing form of $\mathfrak{sl}(2, \mathbb{C})$ is the unique bilinear form invariant under all adjoint transformations (M13 exp_09). Its signature is $(-,+,+,+)$. This is the spacetime metric:
 
 $$ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2$$
 
-The metric signature is not chosen — it is forced by the Killing form of the complexified $A_1$ algebra.
+The metric signature is not chosen; it is forced by the Killing form of the complexified $A_1$ algebra. On the 6-dimensional real algebra the Killing form has signature $(3,3)$ (rotations positive, boosts negative); restricted to the 4-dimensional vector representation it has signature $(1,3)$, the Minkowski metric (M13 exp_09). The interval $s^2 = x^\top\eta\,x$ is preserved across 135 Lorentz transforms (maximum relative error $2.9\times10^{-6}$, growing with rapidity up to $\eta=10$), and the invariant form is unique: the space of symmetric bilinear forms preserved by all $\mathfrak{so}(3,1)$ generators is one-dimensional (Schur's lemma), so the metric is a consequence of the algebra rather than a choice.
 
 ---
 
@@ -177,17 +179,17 @@ The speed of light is the maximum rate at which complement-deformation can propa
 
 On an ADE graph, changing the complement of vertex $v$ requires updating the complement spectra of all vertices connected to $v$. The propagation speed is limited by the graph diameter — the longest shortest path. For the infinite (continuum) limit of ADE chains, this gives a finite maximum propagation speed.
 
-This speed is $c$. It is not a parameter — it is a structural consequence of graph consistency under complement-deformation.
+This speed is $c$, a structural consequence of graph consistency under complement-deformation rather than a free parameter.
 
 ### 7.2 Proper time
 
-For a vertex moving through complement-space with boost parameter $\eta$, the proper time between complement-updates is (M13 exp_09–10):
+For a vertex moving through complement-space with boost parameter $\eta$, the proper time between complement-updates is (M13 exp_10):
 
 $$d\tau = \frac{dt}{\cosh(\eta)}$$
 
 This is the standard time dilation formula. At $\eta = 0$ (stationary): $d\tau = dt$. As $\eta \to \infty$ (approaching $c$): $d\tau \to 0$.
 
-The graph-theoretic origin: boosted vertices must update more complement relations per unit time, leaving less "budget" for internal dynamics. Time dilation is complement-budget exhaustion.
+The graph-theoretic origin: boosted vertices must update more complement relations per unit time, leaving less "budget" for internal dynamics. Time dilation here is complement-budget exhaustion.
 
 ---
 
@@ -201,12 +203,12 @@ The full chain from nothing to proper time, each link verified computationally:
 4. **ADE** from Fibonacci arithmetic closure (M12 exp_01–02)
 5. **Connection** = addition on ADE root lattice (M12 exp_01)
 6. **Complement** spectrum uniquely identifies vertices (M13 exp_01–02)
-7. **Parallax**: different observers, different complements (M13 exp_03)
+7. **Parallax**: different observers, different complements (M13 exp_02)
 8. **Weyl group** from complement-transformations (M13 exp_04)
-9. **SEC complexification**: $\mathbb{Z}_2 \to \text{SL}(2,\mathbb{C}) \to \text{SO}(3,1)$ (M12 exp_08, M13 exp_05)
-10. **$ds^2$** from Killing form uniqueness (M13 exp_06)
+9. **SEC complexification**: $\mathbb{Z}_2 \to \text{SL}(2,\mathbb{C}) \to \text{SO}(3,1)$ (M12 exp_10, M13 exp_05)
+10. **$ds^2$** from Killing form uniqueness (M13 exp_09)
 11. **$c$** as coherence limit on complement-deformation (M13 exp_07–08)
-12. **Proper time** $d\tau = dt/\cosh(\eta)$ (M13 exp_09–10)
+12. **Proper time** $d\tau = dt/\cosh(\eta)$ (M13 exp_10)
 
 No link in this chain invokes coordinates, manifolds, or metrics. They all emerge from graph combinatorics + SEC dynamics.
 
@@ -220,19 +222,20 @@ No link in this chain invokes coordinates, manifolds, or metrics. They all emerg
 - M13 core: 48/52 (92%) — complement identity, Weyl group, ds², c, proper time
 - M13.5 investigation: 3/8 (38%) — stress tests revealing structural limits
 
-### 9.2 What fails
+### 9.2 Failure modes
 
 **M12 failures** (3/52):
 1. Rate-density proportionality too simplistic — information flow rate is NOT proportional to connection density (exp_04 T3)
 2. Info-Fiedler not proportional — algebraic connectivity doesn't scale linearly with information capacity (exp_06 T2)
 3. Basin depth needs physical coupling — the thermodynamic mechanism works qualitatively but the absolute depth requires a coupling constant not derived from pure graph theory (exp_07 T4)
 
-**M13/13.5 failures** (9/60):
+**M13/13.5 failures** (5 documented modes; 9/60 tests failed):
 1. Complement-to-Lie PSD: orbit Gram matrix is positive semi-definite but NOT positive definite for all ADE types (exp_14) — proven fundamental, no invariant metric can fix it. **Resolved by M14** (orbit Hilbert space makes PSD into a feature)
 2. Rapidity composition: discrete graph version has systematic gap from continuous formula (exp_08 T3)
 3. Coherence limit NOT universal: works for A-family, fails for E-family (exp_15)
 4. A-family spectral oscillation at high rank (exp_17 T3)
 5. Random graphs more constrained than ADE at large rank (exp_17 T4)
+6. Alternative complement metrics: no alternative inner product distinguishes same-orbit vertices (exp_16, 0/4) — the PSD degeneracy is metric-independent, confirming it is fundamental (resolved by the orbit construction of M14)
 
 The framework has two layers: algebraic (solid, ~92%) and metric/continuum (weak, ~38% under stress). The bridge between them is the ADE classification theorem.
 
@@ -248,7 +251,7 @@ Approximately 40% of the M13 results are structural — they pass because comple
 
 | # | Type | Statement |
 |---|------|-----------|
-| P1 | Precise | SU(2) and SU(3) are the ONLY Fibonacci-compatible ADE gauge groups |
+| P1 | Precise | SU(2) and SU(3) are the only Fibonacci-compatible ADE gauge groups |
 | P2 | Precise | $F_7 = 13 = 1 + 3 + 8 + 1$ gauge dimension closure |
 | P3 | Precise | Force relaxation ratios follow $\varphi^{d_2 - d_1}$ |
 | P4 | Precise | SEC complexification of $A_1$ gives exactly SO(3,1) |
@@ -287,9 +290,9 @@ Paper 10 enables:
 
 ## 12. Conclusion
 
-The Lorentz group is not a postulate. It is what happens when the simplest possible graph symmetry ($A_1$, two nodes connected by an edge) acquires an entropy arrow (SEC). The metric signature is not chosen — it is forced by the Killing form. The speed of light is not a parameter — it is the coherence limit of complement-deformation.
+The Lorentz group is not a postulate; it follows once the simplest possible graph symmetry ($A_1$, two nodes connected by an edge) acquires an entropy arrow (SEC). The metric signature is forced by the Killing form, and the speed of light is the coherence limit of complement-deformation.
 
-The ADE classification — a theorem of pure mathematics, proven in the 1890s — turns out to encode not just the gauge symmetries of particle physics (Paper 7) but also the structure of spacetime itself. Connection is addition. Identity is complement. Spacetime is what you get when graph symmetry meets the arrow of time.
+The ADE classification — a theorem of pure mathematics, proven in the 1890s — turns out to encode not just the gauge symmetries of particle physics (Paper 7) but also the structure of spacetime itself. Connection corresponds to addition on the root lattice, identity to the complement spectrum, and spacetime geometry to graph symmetry under the SEC arrow.
 
 **Source code**: `foundational/experiments/milestone12/` (13 experiments), `foundational/experiments/milestone13/` (15 experiments)
 
@@ -297,7 +300,7 @@ The ADE classification — a theorem of pure mathematics, proven in the 1890s �
 
 ## References
 
-1. Groom, P. (2026). PACSeries v0.2: Dawn Field Theory. Zenodo. DOI: 10.5281/zenodo.15783623
+1. Groom, P. (2026). PACSeries v0.2: Dawn Field Theory. Zenodo. DOI: 10.5281/zenodo.18743674
 2. Humphreys, J.E. (1972). Introduction to Lie Algebras and Representation Theory. Springer.
 3. Hazewinkel, M. et al. (2010). Algebras, Rings and Modules: Lie Algebras and Hopf Algebras. AMS.
 4. McKay, J. (1980). Graphs, singularities, and finite groups. Proc. Symp. Pure Math. 37, 183–186.

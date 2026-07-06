@@ -1,0 +1,125 @@
+{
+  "experiment": "exp_02_definitional_parallax",
+  "milestone": "milestone13",
+  "block": "A",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_distinct_observer_views",
+      "graph": "A_8",
+      "target": 3,
+      "observer_0_distance": 3,
+      "observer_7_distance": 4,
+      "observer_0_spectrum": [
+        1.6180339887498951,
+        1.0,
+        0.6180339887498949,
+        -0.6180339887498949,
+        -1.0,
+        -1.618033988749895
+      ],
+      "observer_7_spectrum": [
+        1.4142135623730954,
+        1.4142135623730954,
+        -8.066464163292153e-17,
+        -8.066464163292153e-17,
+        -1.4142135623730951,
+        -1.4142135623730951
+      ],
+      "spectral_difference": 1.0909460598144491,
+      "parallax": 1.0909460598144491,
+      "symmetric_control_parallax": 0.0,
+      "note": "A_7 symmetric observers see identical views (parallax=0). A_8 breaks this symmetry: obs 0 (dist 3) vs obs 7 (dist 4) see genuinely different complement-views.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_parallax_nonzero_between_orbits",
+      "graph": "A_8",
+      "target": 3,
+      "n_observers": 7,
+      "n_view_classes": 4,
+      "view_orbit_members": {
+        "0": [
+          0,
+          2
+        ],
+        "1": [
+          1
+        ],
+        "2": [
+          4,
+          7
+        ],
+        "3": [
+          5,
+          6
+        ]
+      },
+      "n_same_class_pairs": 3,
+      "n_cross_class_pairs": 18,
+      "same_class_all_zero": true,
+      "cross_class_all_nonzero": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_symmetric_observers_agree",
+      "graph": "D_4",
+      "center": 1,
+      "leaves": [
+        0,
+        2,
+        3
+      ],
+      "parallax_pairs": [
+        {
+          "obs1": 0,
+          "obs2": 2,
+          "parallax": 0.0
+        },
+        {
+          "obs1": 0,
+          "obs2": 3,
+          "parallax": 0.0
+        },
+        {
+          "obs1": 2,
+          "obs2": 3,
+          "parallax": 0.0
+        }
+      ],
+      "all_zero": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_parallax_vanishes_for_trivial_aut",
+      "by_graph": {
+        "A_8": {
+          "n_vertices": 8,
+          "n_orbits": 4,
+          "n_total_triples": 168,
+          "n_zero_parallax": 24,
+          "zero_fraction": 0.14285714285714285
+        },
+        "A_5": {
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "n_total_triples": 30,
+          "n_zero_parallax": 12,
+          "zero_fraction": 0.4
+        },
+        "D_4": {
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "n_total_triples": 12,
+          "n_zero_parallax": 6,
+          "zero_fraction": 0.5
+        }
+      },
+      "d4_higher_than_a8": true,
+      "all_have_nonzero_parallax": true,
+      "note": "Larger automorphism group => more symmetric observer pairs => higher fraction of zero-parallax triples. D_4 (Aut=S_3) has more vanishing parallaxes than A_n (Aut=Z_2).",
+      "PASS": true
+    }
+  }
+}

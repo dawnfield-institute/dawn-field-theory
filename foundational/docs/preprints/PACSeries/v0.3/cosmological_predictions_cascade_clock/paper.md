@@ -11,15 +11,17 @@
 
 ## Abstract
 
-We present the first complete set of beyond-Standard-Model predictions from Dawn Field Theory (DFT), together with the temporal mechanism that generates them. Milestone 8 of DFT produced 10 pre-registered falsifiable predictions from 2 free parameters (Fibonacci cascade depth 73 and cascade level count $N$), with 7 truly independent predictions — overconstrained by 5. Milestone 9 reduces the free parameter count to 1 by deriving a cascade clock $N(t) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$ whose slope is fixed by DFT, not fitted to data.
+We present the first complete set of beyond-Standard-Model predictions from Dawn Field Theory (DFT), together with the temporal mechanism that generates them. Milestone 8 of DFT produced 10 pre-registered falsifiable predictions from 2 free parameters (Fibonacci cascade depth 73 and cascade level count $N$), with 7 truly independent predictions, overconstrained by 5. Milestone 9 reduces the free parameter count to 1 by deriving a cascade clock $N(t) = 1.360 + (1/\ln\varphi) \cdot \ln(t_\text{lookback})$ whose slope is fixed by DFT, not fitted to data.
 
-The headline results: (1) The cosmological constant $\log_{10}(\Lambda/\Lambda_P) = -122.09$ at 0.09 orders from the observed value — unprecedented precision from a parameter-free derivation. (2) The Hubble ratio $H_0^\text{local}/H_0^\text{CMB} = \varphi^{1/6} = 1.0835$ at 0.075% from measured. (3) The S8 tension is resolved: cascade dissipation at the effective lensing redshift gives $S_8(z=0.35) = 0.769$ vs $0.768$ observed, reducing the tension from $3.22\sigma$ to $0.07\sigma$ — a 98% reduction without new particles or modified gravity. (4) Dark matter mass $= 6.44$ keV from two independent cascade routes (0.09 orders spread), with an X-ray decay line at 3.2 keV close to the observed 3.55 keV feature. (5) A Z' boson at $395 \pm 20$ GeV is not excluded (9$\times$ safety margin), with width 64 MeV and coupling $g'/g = 1/13$. (6) $\Xi = \gamma + \ln\varphi$ is proven to be the unique transition cost satisfying scale invariance ($g_\text{out} = g_\text{in}^2$).
+Main results: (1) The cosmological constant $\log_{10}(\Lambda/\Lambda_P) = -122.09$ at 0.09 orders from the observed value, from a parameter-free derivation. (2) The Hubble ratio $H_0^\text{local}/H_0^\text{CMB} = \varphi^{1/6} = 1.0835$ at 0.075% from measured. (3) The S8 tension is resolved: cascade dissipation at the effective lensing redshift gives $S_8(z=0.35) = 0.769$ vs $0.768$ observed, reducing the tension from $3.22\sigma$ to $0.07\sigma$, a 98% reduction without new particles or modified gravity. (4) Dark matter mass $= 6.44$ keV from two independent cascade routes (0.09 orders spread), with an X-ray decay line at 3.2 keV close to the observed 3.55 keV feature. (5) A Z' boson at $395 \pm 20$ GeV is not excluded (9$\times$ safety margin), with width 64 MeV and coupling $g'/g = 1/13$. (6) $\Xi = \gamma + \ln\varphi$ is proven to be the unique transition cost satisfying scale invariance ($g_\text{out} = g_\text{in}^2$).
 
-Zero predictions are excluded by current data. Zero contradict Milestones 1–7 of DFT. The cascade clock unifies S8, Hubble, and JWST observations into a single temporal function with RMS residual 0.126. Four new falsifiable predictions target Euclid ($\sim 2027$), DESI DR2/DR3, and TDSL.
+No predictions are excluded by current data, and none contradict Milestones 1–7 of DFT. The cascade clock unifies S8, Hubble, and JWST observations into a single temporal function with RMS residual 0.126. Four new falsifiable predictions target Euclid ($\sim 2027$), DESI DR2/DR3, and TDSL.
 
-We document three honest failures: the 8.9% slope gap (noise with 3 data points, per Monte Carlo), the DESI $w_a$ tension ($-0.15$ predicted vs $-0.75$ measured in DR1), and the $N$-universality tension (S8 prefers $N \approx 4$, Hubble/JWST prefer $N \approx 6$–7, resolved by the continuous cascade clock).
+We document three failures: the 8.9% slope gap (noise with 3 data points, per Monte Carlo), the DESI $w_a$ tension ($-0.15$ predicted vs $-0.75$ measured in DR1), and the $N$-universality tension (S8 prefers $N \approx 4$, Hubble/JWST prefer $N \approx 6$–7, resolved by the continuous cascade clock).
 
 **Keywords**: cosmological constant, Hubble tension, S8 tension, dark matter, cascade clock, BSM predictions, falsifiability, infodynamics, PAC conservation, Dawn Field Theory
+
+**Epistemic status.** This paper is part of the PACSeries, an evolving research program rather than a finished theory (see the series note *How to Read the PACSeries*). Its quantitative claims are tiered by derivation type — **A** structural, **B** identified, **C** pattern-matched — and labeled in the text. Failures are reported rather than omitted, and framework-level corrections are logged in the Epistemic Corrections Registry in the repository. Every headline result is reproducible from the `Code/` and `Data/` in this package (provenance in `trace.yaml`).
 
 ---
 
@@ -29,7 +31,7 @@ Theoretical physics has a falsifiability problem. Most approaches to fundamental
 
 DFT's Milestones 1–7 established that Standard Model parameters can be derived from two information-theoretic axioms (PAC conservation, SEC dynamics) with no free parameters. But deriving known parameters is retrodiction, not prediction. The real test is: what does the framework predict that we haven't measured yet?
 
-This paper presents Milestone 8 (the predictions) and Milestone 9 (the mechanism). Together, they answer: *here is what DFT predicts, here is why, and here is how to falsify it.*
+This paper presents Milestone 8 (the predictions) and Milestone 9 (the mechanism). Together, they answer what DFT predicts, why, and how to falsify it.
 
 ---
 
@@ -38,11 +40,11 @@ This paper presents Milestone 8 (the predictions) and Milestone 9 (the mechanism
 ### 2.1 Classification
 
 Every prediction is classified as:
-- **P (Prediction)**: Derived before comparison with data, genuinely falsifiable
+- **P (Prediction)**: Derived before comparison with data, falsifiable
 - **D (Postdiction)**: Refined after initial failure, now matches data
 - **C (Consistency)**: Internal check, not independently falsifiable
 
-This classification is non-negotiable. Calling a postdiction a prediction is scientific dishonesty. We had 4 genuine predictions, 4 postdictions, and 2 consistency checks. The honest count matters more than the score.
+Calling a postdiction a prediction would be dishonest. We had 4 genuine predictions, 4 postdictions, and 2 consistency checks.
 
 ### 2.2 Free parameters
 
@@ -78,7 +80,7 @@ The M8 result uses the correction template (Paper 4) applied to the vacuum energ
 
 ### 3.2 Sensitivity
 
-The CC prediction is robust: perturbing the cascade depth by $\pm 5\%$ shifts the CC by at most 0.56 orders. This is important because the cosmological constant problem is conventionally stated as a 122-order mismatch between quantum field theory's prediction and observation. DFT's 0.09-order precision is not fine-tuned — it is a structural consequence of the Fibonacci depth hierarchy.
+The CC prediction is robust: perturbing the cascade depth by $\pm 5\%$ shifts the CC by at most 0.56 orders. This is important because the cosmological constant problem is conventionally stated as a 122-order mismatch between quantum field theory's prediction and observation. DFT's 0.09-order precision is not fine-tuned; it follows from the Fibonacci depth hierarchy.
 
 ### 3.3 Dark energy density
 
@@ -130,11 +132,11 @@ At the effective lensing redshift $z_\text{eff} = 0.35$:
 - Observed (lensing mean): $0.768$
 - Tension: $0.07\sigma$
 
-The $3.22\sigma$ tension is reduced to $0.07\sigma$ — a 98% reduction.
+The $3.22\sigma$ tension is reduced to $0.07\sigma$, a 98% reduction.
 
-### 5.3 This is not a tuning
+### 5.3 Robustness
 
-The dissipation rate $d_\text{eff} = 0.054$ is not fitted to the S8 data. It follows from the cascade structure: 6 levels of $\varphi$-splitting, each dissipating $\ln\varphi$ nats, gives a cumulative dissipation that matches the S8 ratio. The cascade level at $z = 0.35$ comes from the clock, not from fitting.
+The dissipation rate $d_\text{eff} = 0.054$ is not fitted to the S8 data; it follows from the cascade structure: 6 levels of $\varphi$-splitting, each dissipating $\ln\varphi$ nats, gives a cumulative dissipation that matches the S8 ratio. The cascade level at $z = 0.35$ comes from the clock, not from fitting.
 
 ### 5.4 Euclid prediction
 
@@ -148,7 +150,7 @@ DFT predicts $S_8$ varies with redshift:
 | 1.0 | 5.42 | 0.785 |
 | 2.0 | 6.32 | 0.815 |
 
-The $S_8(z)$ curve is monotonically increasing with redshift (less dissipation at earlier times, when fewer cascade levels had completed). Euclid ($\sim 2027$) will measure $S_8$ across multiple redshift bins with sufficient precision to test this prediction. The Euclid $\chi^2/\text{dof} = 43$ — massively distinguishable from the $\Lambda$CDM constant-$S_8$ prediction.
+The $S_8(z)$ curve is monotonically increasing with redshift (less dissipation at earlier times, when fewer cascade levels had completed). Euclid ($\sim 2027$) will measure $S_8$ across multiple redshift bins with sufficient precision to test this prediction. The Euclid $\chi^2/\text{dof} = 43$, clearly distinguishable from the $\Lambda$CDM constant-$S_8$ prediction.
 
 ---
 
@@ -160,7 +162,7 @@ The cyclotomic polynomial $\Phi_3(n) = n^2 + n + 1$ evaluated at Fibonacci numbe
 
 $$73 = \Phi_3(F_6) = F_6^2 + F_6 + 1 = 64 + 8 + 1$$
 
-This is not arbitrary. The Fibonacci depths of the four known forces ($\sim 3$, $\sim 7$, 13, 183) are all related to cyclotomic polynomials evaluated at Fibonacci numbers. Depth 73 is the unique $\Phi_3$ in the gap between the weak force ($\sim 7$) and gravity (183).
+The Fibonacci depths of the four known forces ($\sim 3$, $\sim 7$, 13, 183) are all related to cyclotomic polynomials evaluated at Fibonacci numbers. Depth 73 is the unique $\Phi_3$ in the gap between the weak force ($\sim 7$) and gravity (183).
 
 ### 6.2 Mass derivation
 
@@ -198,7 +200,7 @@ with coupling $g'/g = 1/F_7 = 1/13$ and width $\Gamma = 64$ MeV.
 
 ### 7.2 LHC status
 
-At 395 GeV with coupling $1/13$, the cross-section ratio $\sigma_\text{DFT}/\sigma_\text{excluded} = 0.11$ — a $9\times$ safety margin. The Z' is not excluded. It is also not detected. Run 4 of the LHC (HL-LHC, $\sim 2030$) at 3000 fb$^{-1}$ may reach the sensitivity required.
+At 395 GeV with coupling $1/13$, the cross-section ratio $\sigma_\text{DFT}/\sigma_\text{excluded} = 0.11$ — a $9\times$ safety margin. The Z' is not excluded, and not detected. Run 4 of the LHC (HL-LHC, $\sim 2030$) at 3000 fb$^{-1}$ may reach the sensitivity required.
 
 ### 7.3 Branching ratios
 
@@ -235,7 +237,7 @@ The anchor time $t_1 = 520$ Myr corresponds to first-star formation — the epoc
 
 ### 8.3 $\Xi$ as transition cost
 
-Each boundary crossing costs $\Xi = \gamma + \ln\varphi = 1.0584$ nats. M9 proved this is the *unique* value satisfying scale invariance: the requirement $g_\text{out} = g_\text{in}^2$ (output at one level equals the square of the input at the next) has a unique positive solution $g_\text{in} = 1/\varphi$, giving transition cost $\Xi$.
+Each boundary crossing costs $\Xi = \gamma + \ln\varphi = 1.0584$ nats. M9 proved this is the unique value satisfying scale invariance: the requirement $g_\text{out} = g_\text{in}^2$ (output at one level equals the square of the input at the next) has a unique positive solution $g_\text{in} = 1/\varphi$, giving transition cost $\Xi$.
 
 The slope-$\Xi$ product $B_\text{DFT} \times \Xi = 2.0781 \times 1.0584 = 2.200$ matches the free-fit slope $B_\text{free} = 2.264$ within 2.85%.
 
@@ -246,7 +248,7 @@ The cascade exhibits exact $\varphi$ self-similarity in its splitting structure:
 - Subordinate handoff: $S_n = D_{n+1}$ exact
 - Cross-scale ratio: $D_n / S_n = \varphi$ exact
 
-This is not in cumulative sums (which converge to 1 for any convergent geometric series). The self-similarity is in the splitting algebra at each level — a structural property of $\varphi$-partitioned cascades.
+This is not in cumulative sums (which converge to 1 for any convergent geometric series). The self-similarity is in the splitting algebra at each level, a structural property of $\varphi$-partitioned cascades.
 
 ### 8.5 Algebraic uniqueness of $\varphi$
 
@@ -288,7 +290,7 @@ Three interpretations:
 2. **CPL is the wrong basis** — DFT's $w(z)$ has genuine curvature ($|d^2w/dz^2| = 0.19$). Fitting a curved function with a linear approximation ($w = w_0 + w_a \cdot z/(1+z)$) can produce spurious $w_a$.
 3. **Sub-leading corrections** — the $w$ formula may need terms beyond the leading cascade contribution.
 
-We do not know which. This is an honest failure.
+We do not know which.
 
 ### 10.3 $N$-universality tension
 
@@ -297,7 +299,7 @@ Different observables prefer different cascade levels:
 - Hubble: $N \approx 5.94$ (at $z_\text{eff} = 1.5$)
 - JWST: $N \approx 6.90$ (at $z_\text{eff} = 10$)
 
-These are not inconsistent — they are the cascade clock evaluated at different epochs. The "tension" disappears when $N$ is recognized as time-dependent rather than constant. This was the key insight of M9.
+These are not inconsistent; they are the cascade clock evaluated at different epochs. The "tension" disappears when $N$ is time-dependent rather than constant.
 
 ---
 
@@ -325,7 +327,7 @@ $\Sigma m_\nu = 0.43$ meV (well below cosmological bounds of $< 0.12$ eV).
 
 ### 12.1 The surprise
 
-JWST discovered unexpectedly massive galaxies at $z > 7$ — more structure than $\Lambda$CDM predicts at early times. DFT's cascade framework naturally produces more early structure because the cascade was fewer levels deep at high redshift, meaning less dissipation.
+JWST discovered unexpectedly massive galaxies at $z > 7$, more structure than $\Lambda$CDM predicts at early times. DFT's cascade framework naturally produces more early structure because the cascade was fewer levels deep at high redshift, meaning less dissipation.
 
 ### 12.2 Redshift-dependent floor
 
@@ -333,7 +335,7 @@ The cascade floor (minimum structure fraction) decays with redshift:
 
 $$f(z) = f_0 \cdot \exp(-z/z_\text{cascade}), \quad z_\text{cascade} = \ln\varphi \times N$$
 
-At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs JWST-observed $\sim 0.30$. Zero free parameters in this formula.
+At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs JWST-observed $\sim 0.30$. This formula has zero free parameters.
 
 ---
 
@@ -405,9 +407,9 @@ At $z = 8$: $f = 16\%$. At $z = 12$: $f = 4\%$. The ratio $f(12)/f(8) = 0.25$ vs
 
 DFT's Milestones 8 and 9 transition the framework from retrodiction to prediction. From 2 free parameters (reduced to 1 by the cascade clock), we derive 14 falsifiable predictions spanning particle physics, neutrino physics, and cosmology. Zero are excluded by current data. The S8 tension — one of the most significant discrepancies in modern cosmology — is resolved to $0.07\sigma$ through a physical mechanism (cascade dissipation) rather than parameter fitting.
 
-The cascade clock $N(t) = 1.360 + 2.0781 \cdot \ln(t_\text{lookback})$ unifies three independent observables (S8, Hubble, JWST) into a single temporal function. Its slope is DFT-constrained. Its intercept anchors to first-star formation. Its predictions are falsifiable by Euclid, DESI, JUNO, and the LHC within the next 2–5 years.
+The cascade clock $N(t) = 1.360 + 2.0781 \cdot \ln(t_\text{lookback})$ unifies three independent observables (S8, Hubble, JWST) into a single temporal function. Its slope is DFT-constrained, its intercept anchors to first-star formation, and its predictions are falsifiable by Euclid, DESI, JUNO, and the LHC within the next 2–5 years.
 
-The honest assessment: three failures remain (slope gap, DESI $w_a$, $N$-universality). Two are likely noise (slope, $N$). One is a genuine tension (DESI $w_a$) that requires either updated data or sub-leading corrections. The framework is young, overconstrained, and falsifiable. It will either survive the next generation of precision cosmology or break cleanly — and either outcome advances physics.
+Three failures remain (slope gap, DESI $w_a$, $N$-universality). Two are likely noise (slope, $N$). One is a genuine tension (DESI $w_a$) that requires either updated data or sub-leading corrections. The framework is young, overconstrained, and falsifiable. It will either survive the next generation of precision cosmology or break cleanly.
 
 ---
 
@@ -421,7 +423,7 @@ The honest assessment: three failures remain (slope gap, DESI $w_a$, $N$-univers
 6. Bulbul, E. et al. (2014). Detection of an unidentified emission line in the stacked X-ray spectrum of galaxy clusters. *The Astrophysical Journal*, 789(1), 13.
 7. Labbé, I. et al. (2023). A population of red candidate massive galaxies ~600 Myr after the Big Bang. *Nature*, 616, 266–269.
 8. Dodelson, S. & Widrow, L. M. (1994). Sterile neutrinos as dark matter. *Physical Review Letters*, 72(1), 17.
-9. Groom, P. (2026a–f). PACSeries Papers 1–7, 9. Dawn Field Institute.
+9. Groom, P. (2026). PACSeries Papers 1–8. Dawn Field Institute.
 
 ---
 

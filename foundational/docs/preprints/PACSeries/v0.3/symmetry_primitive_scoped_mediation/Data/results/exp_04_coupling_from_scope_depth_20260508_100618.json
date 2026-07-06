@@ -1,0 +1,45 @@
+{
+  "experiment": "exp_04_coupling_from_scope_depth",
+  "milestone": 6,
+  "block": "B",
+  "alpha_em": {
+    "dft_formula": 0.007297310889743783,
+    "codata": 0.0072973525693,
+    "error_ppm": 5.711599627555799,
+    "error_pct": 0.0005711599627555799,
+    "formula": "F3/(F4*phi*F10) * (1 - F10/(4*pi*F7^2))"
+  },
+  "alpha_g": {
+    "log10_predicted": -38.59422316791412,
+    "log10_measured": -38.228697412047985,
+    "log_error_pct": 0.9561554031682495,
+    "depth": 183,
+    "depth_formula": "F7^2 + F7 + 1"
+  },
+  "phi6_ratio": {
+    "ratio": 17.890339360788253,
+    "phi6": 17.944271909999163,
+    "error_pct": 0.300555795640035
+  },
+  "strong_coupling": {
+    "c2": 0.11823890038888125,
+    "c3": 0.11721428409400265,
+    "measured": 0.1179,
+    "best_error_pct": 0.287447318813613
+  },
+  "weak_actualization": {
+    "sin2_tw_predicted": 0.23076923076923078,
+    "sin2_tw_measured": 0.23121,
+    "error_pct": 0.1906358854587677,
+    "formula": "F_4/F_7 = 3/13",
+    "interpretation": "Weak force IS actualization mechanism, not scope-depth coupling"
+  },
+  "verification": {
+    "test1_em": "True",
+    "test2_gravity": "True",
+    "test3_phi6": "True",
+    "test4_all_forces": true,
+    "verified_count": "4"
+  },
+  "timestamp": "2026-05-08T10:06:18.356786"
+}

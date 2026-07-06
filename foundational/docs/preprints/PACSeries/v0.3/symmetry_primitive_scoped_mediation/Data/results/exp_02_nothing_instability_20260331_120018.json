@@ -1,0 +1,100 @@
+{
+  "experiment": "exp_02_nothing_instability",
+  "milestone": 7,
+  "block": "A",
+  "test1_multiscale_conservation": [
+    {
+      "name": "Ring N=50",
+      "cv_start": 0.03415423892188489,
+      "cv_end": 0.22541075858321308,
+      "cv_max": 0.2297383850927151,
+      "growth": 6.5997886557728975,
+      "structured": "True"
+    },
+    {
+      "name": "Torus 7x7",
+      "cv_start": 0.03978571317892072,
+      "cv_end": 0.24793579607696434,
+      "cv_max": 0.24877067902398722,
+      "growth": 6.231779607970576,
+      "structured": "True"
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "cv_start": 0.0368118735218554,
+      "cv_end": 0.22088856342769936,
+      "cv_max": 0.22273570108475496,
+      "growth": 6.000470562753527,
+      "structured": "True"
+    }
+  ],
+  "test2_singlescale_control": [
+    {
+      "name": "Ring N=50",
+      "cv_end": 1.2220916102366518e-07,
+      "decayed": "True"
+    },
+    {
+      "name": "Torus 7x7",
+      "cv_end": 1.6711140494063793e-10,
+      "decayed": "True"
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "cv_end": 1.1526366351807533e-10,
+      "decayed": "True"
+    }
+  ],
+  "test3_no_conservation_control": [
+    {
+      "name": "Ring N=50",
+      "cv_start": 0.863121656822572,
+      "cv_end": 0.3032791443711048,
+      "destroyed": "True"
+    },
+    {
+      "name": "Torus 7x7",
+      "cv_start": 1.0560047186391028,
+      "cv_end": 0.3156236148779182,
+      "destroyed": "True"
+    },
+    {
+      "name": "Random Regular k=4 N=50",
+      "cv_start": 1.0450062099789394,
+      "cv_end": 0.4396855722176531,
+      "destroyed": "True"
+    }
+  ],
+  "test4_scales_vs_structure": {
+    "data": [
+      {
+        "levels": 1,
+        "cv": 0.20492042991789
+      },
+      {
+        "levels": 2,
+        "cv": 0.21484096809196865
+      },
+      {
+        "levels": 3,
+        "cv": 0.22506042565452536
+      },
+      {
+        "levels": 4,
+        "cv": 0.2548799925947972
+      },
+      {
+        "levels": 5,
+        "cv": 0.2521225161463782
+      }
+    ],
+    "monotonic_frac": 0.75
+  },
+  "verification": {
+    "test1_instability": true,
+    "test2_flat_stable": true,
+    "test3_conservation_needed": true,
+    "test4_scale_dependence": true,
+    "verified_count": 4
+  }
+}

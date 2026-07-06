@@ -1,0 +1,57 @@
+schema_version: '2.0'
+id: pacseries-paper-8
+title: "Quantum Gravity from Information Conservation"
+subtitle: "Deriving the Planck scale, Hawking radiation, and graviton properties from PAC/SEC without quantizing general relativity"
+author: Peter Groom
+institution: Dawn Field Institute
+series: PACSeries
+paper_number: 8
+version: "1.0"
+status: draft
+date_created: "2026-05"
+domain: physics
+tags:
+  - quantum-gravity
+  - information-conservation
+  - PAC-conservation
+  - planck-scale
+  - response-time-crossover
+  - hawking-radiation
+  - black-hole-thermodynamics
+  - page-curve
+  - graviton
+  - cascade-dynamics
+  - singularity-resolution
+  - planck-star-bounce
+  - arrow-of-time
+  - landauer-erasure
+dependencies:
+  - pacseries-paper-7   # Milestone 10: symmetry primitive, spectral confinement = PAC
+source_experiments:
+  - foundational/experiments/milestone11              # M11 (13 exp) — quantum gravity as response-time crossover
+  - foundational/experiments/minimum_actualization_resolution  # MAR — MVAE/Planck routes (conceptual, Sections 4-5; enters via shared constants)
+key_results:
+  m11_score: "52/52"
+  planck_depth_grav: 183               # 183 = F_7^2 + F_7 + 1 = Phi_3(F_7)
+  alpha_grav_dft: 5.69e-39             # phi^-183
+  alpha_grav_measured: 5.91e-39        # G m_p^2 / (hbar c)
+  coupling_log_match_pct: 0.04
+  planck_routes:                       # l in Planck units
+    landauer: 1.4427                   # 1/ln2 (Section 4.2, corrected)
+    heisenberg: 0.5
+    schwarzschild: 2.0
+    negotiation: 1.6294                # L_MVAE = 1/(2(1-ln2))
+    inner_convergence: 1.13
+    full_span: 4.0
+  hawking_TM: 0.039789                 # 1/(8pi), from 4pi solid angle x 2 round-trip
+  hawking_cv: 1.7e-16                  # floating-point noise (paper prose cites 7.8e-17)
+  page_curve_peak_kN: 0.5              # exact
+  area_law_slope: 2.000                # info ~ M^2
+  graviton_quadrupole_fraction: 0.995  # spin-2
+  graviton_polarizations: 2            # 8 of 10 tensor components removed
+  bounce_time_tP: 1.0                  # exp_11 computes ~1 t_P (paper prose states 0.72 t_P = T_MVAE)
+  t_mvae_tP: 0.7213                    # 1/(2 ln2), minimum cascade tick (exp_03)
+  min_bh_mass: 2.618                   # phi^2 M_P
+  arrow_of_time_ratio: 1e40            # phi^(2n) at n~100
+  n_predictions: 12                    # 7P + 2D + 3C
+  contradictions_m1_m10: 0

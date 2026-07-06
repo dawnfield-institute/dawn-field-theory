@@ -1,11 +1,11 @@
 schema_version: '2.0'
 id: pacseries-paper-12
-title: "Observational Contact: Cascade Clock Signatures in Quasar Absorption Spectroscopy"
+title: "First Observational Contact: Testing the Cascade Clock Against Quasar Absorption Lines"
 author: Peter Groom
 institution: Dawn Field Institute
 series: PACSeries
 paper_number: 12
-version: "0.1"
+version: "1.0"
 status: draft
 date_created: "2026-06-09"
 domain: physics
@@ -20,8 +20,7 @@ tags:
   - PAC-conservation
   - falsifiable-predictions
 dependencies:
-  - pacseries-paper-8  # cascade clock derivation
-  - pacseries-paper-9  # cascade clock mechanism (same paper)
+  - pacseries-paper-9  # cascade clock (derivation + mechanism)
 data_sources:
   - SDSS DR16 MgII Absorber Catalog (159,524 systems)
   - SDSS DR16 FeII-confirmed MgII Catalog (69,675 systems)

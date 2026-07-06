@@ -1,0 +1,136 @@
+{
+  "experiment": "exp_03_complement_ade_structure",
+  "milestone": "milestone13",
+  "block": "A",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_complement_fingerprint_identifies_type",
+      "types_tested": [
+        "A_4",
+        "A_5",
+        "A_6",
+        "D_4",
+        "D_5",
+        "E_6"
+      ],
+      "n_types": 6,
+      "n_distinct_fingerprints": 6,
+      "all_distinct": true,
+      "collisions": [],
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_endpoint_complement_is_subtype",
+      "tested_ranks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "by_n": {
+        "2": {
+          "complement_edges": 0,
+          "expected_edges": 0,
+          "removed_edges": 1,
+          "max_degree_in_complement": 0,
+          "is_path_graph": true,
+          "match": true
+        },
+        "3": {
+          "complement_edges": 1,
+          "expected_edges": 1,
+          "removed_edges": 1,
+          "max_degree_in_complement": 1,
+          "is_path_graph": true,
+          "match": true
+        },
+        "4": {
+          "complement_edges": 2,
+          "expected_edges": 2,
+          "removed_edges": 1,
+          "max_degree_in_complement": 2,
+          "is_path_graph": true,
+          "match": true
+        },
+        "5": {
+          "complement_edges": 3,
+          "expected_edges": 3,
+          "removed_edges": 1,
+          "max_degree_in_complement": 2,
+          "is_path_graph": true,
+          "match": true
+        },
+        "6": {
+          "complement_edges": 4,
+          "expected_edges": 4,
+          "removed_edges": 1,
+          "max_degree_in_complement": 2,
+          "is_path_graph": true,
+          "match": true
+        },
+        "7": {
+          "complement_edges": 5,
+          "expected_edges": 5,
+          "removed_edges": 1,
+          "max_degree_in_complement": 2,
+          "is_path_graph": true,
+          "match": true
+        },
+        "8": {
+          "complement_edges": 6,
+          "expected_edges": 6,
+          "removed_edges": 1,
+          "max_degree_in_complement": 2,
+          "is_path_graph": true,
+          "match": true
+        }
+      },
+      "all_match": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_edge_conservation",
+      "types_tested": [
+        "A_3",
+        "A_4",
+        "A_5",
+        "A_6",
+        "A_7",
+        "A_8",
+        "D_4",
+        "D_5",
+        "E_6"
+      ],
+      "total_checks": 48,
+      "n_violations": 0,
+      "violations": [],
+      "all_conserved": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_cauchy_interlacing",
+      "types_tested": [
+        "A_3",
+        "A_4",
+        "A_5",
+        "A_6",
+        "A_7",
+        "A_8",
+        "D_4",
+        "D_5",
+        "E_6"
+      ],
+      "total_checks": 48,
+      "n_violations": 0,
+      "max_excess": 0.0,
+      "violations": [],
+      "all_hold": true,
+      "PASS": true
+    }
+  }
+}

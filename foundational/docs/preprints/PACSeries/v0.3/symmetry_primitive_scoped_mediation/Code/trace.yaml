@@ -1,0 +1,175 @@
+schema_version: '1.0'
+created: '2026-07-06'
+description: Traces code and data files back to their original repository locations
+source_repository: dawn-field-theory
+paper: symmetry_primitive_scoped_mediation
+paper_type: foundational  # PACSeries Paper 7 — The Symmetry Primitive and Scoped Mediation
+
+# Reproducibility model: repo-relative. Scripts are verbatim copies of the source
+# milestone6 + milestone7 experiments and import their shared DFT core in place.
+# M7 scripts import `core.symmetry` (milestone7/core); M6 scripts import
+# `scope`/`core.scope` (milestone6/core) plus `_shared` (confluent_identity/scripts).
+# Because both milestones expose a package named `core`, reproduce.py sets a
+# per-experiment PYTHONPATH from each experiment's home milestone. See reproduce.py.
+source_core:
+  - foundational/experiments/milestone7/core/symmetry.py
+  - foundational/experiments/milestone6/core/scope.py
+  - foundational/experiments/confluent_identity/scripts/_shared.py
+
+experiments:
+  # ---- Milestone 7: The Symmetry Primitive (Part I) ----
+  - local: experiments/exp_01_self_reference_generates_recursion.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_01_self_reference_generates_recursion.py
+    repo: dawn-field-theory
+    description: "Relational self-reference generates recursion and phi"
+    key_result: "phi uniquely selected by cross-scale constraint (subordinate at level n = dominant at level n+1); generalizes to b-nacci (4/4)"
+    paper_sections: [2, 2.1, 2.2]
+
+  - local: experiments/exp_02_nothing_instability.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_02_nothing_instability.py
+    repo: dawn-field-theory
+    description: "'Nothing' (uniform symmetric state) is unstable"
+    key_result: "Uniform state stable under single-scale drive but unstable under multi-scale drive + conservation; structure formation forced (4/4)"
+    paper_sections: [3, 3.1, 3.2]
+
+  - local: experiments/exp_03_xi_from_symmetric_restoration.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_03_xi_from_symmetric_restoration.py
+    repo: dawn-field-theory
+    description: "Xi = gamma + ln(phi) from symmetric restoration"
+    key_result: "Counting-only -> gamma (2.7%), splitting-only -> ln(phi) (0.0%), full cascade -> Xi (3.8%); IC-invariant CV=0.000 (4/4)"
+    paper_sections: [4, 4.1, 4.2, 4.3]
+
+  - local: experiments/exp_04_inv_phi_attenuation.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_04_inv_phi_attenuation.py
+    repo: dawn-field-theory
+    description: "1/phi attenuation emerges from dynamics"
+    key_result: "Multi-scale drive on flat graphs gives emergent decay ratio 0.574 (7.2% from 1/phi), R^2=0.995; non-tautological (4/4)"
+    paper_sections: [5, 5.1, 5.2]
+
+  - local: experiments/exp_05_global_local_asymmetry.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_05_global_local_asymmetry.py
+    repo: dawn-field-theory
+    description: "Global symmetry requires local asymmetry"
+    key_result: "Uniform state (LA=0) has worst phi-balance; D/S=phi requires local asymmetry; confirmed on all 3 topologies (4/4)"
+    paper_sections: [6]
+
+  - local: experiments/exp_06_symmetry_breaking_as_seeking.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_06_symmetry_breaking_as_seeking.py
+    repo: dawn-field-theory
+    description: "Symmetry breaking as symmetry-seeking"
+    key_result: "4/5 break mechanisms improve phi-balance, phi-ratio optimal; cross-topology consistency fails on 2/3 well-balanced graphs (3/4)"
+    paper_sections: [6]
+
+  - local: experiments/exp_07_ade_closure_termination.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_07_ade_closure_termination.py
+    repo: dawn-field-theory
+    description: "ADE arithmetic closure terminates at D=3"
+    key_result: "L1-L3 bounded, L4 tetration diverges (7.6e12); 2^d+1 = d*F_{d+1} unique at d=3; tetration penalty 1/phi^4 (4/4)"
+    paper_sections: [7, 7.1, 7.2, 7.3]
+
+  - local: experiments/exp_08_rbf_from_symmetry.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_08_rbf_from_symmetry.py
+    repo: dawn-field-theory
+    description: "RBF from symmetry (honest failure)"
+    key_result: "Drive proportional to E-I imbalance (r>0.95); but memory damping does not emerge (positive not negative correlation) — 4 memory models fail (2/4)"
+    paper_sections: [14.1]
+
+  - local: experiments/exp_09_compatibility_scorecard.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_09_compatibility_scorecard.py
+    repo: dawn-field-theory
+    description: "Compatibility scorecard against M1-M6"
+    key_result: "20/20 prior results compatible, 12/20 (60%) directly illuminated with new derivation paths, zero contradictions (4/4)"
+    paper_sections: [8]
+
+  - local: experiments/exp_10_predictions_from_primitive.py
+    source: dawn-field-theory/foundational/experiments/milestone7/scripts/exp_10_predictions_from_primitive.py
+    repo: dawn-field-theory
+    description: "Physical predictions from the symmetry primitive"
+    key_result: "Cosmological constant within 0.9 orders (log10=-122.9); neutrino splitting F7*phi^2=34.03 (4.4%); D=3 unique; w=-1+1e-61 (4/4)"
+    paper_sections: [15]
+
+  # ---- Milestone 6: Scoped Mediation (Part II) ----
+  - local: experiments/exp_01_scope_boundary_transfer_matrix.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_01_scope_boundary_transfer_matrix.py
+    repo: dawn-field-theory
+    description: "Scope boundary transfer matrix"
+    key_result: "T_harm^4 rank-1 for 67/67 boundaries; non-compositional 99.96%; transient decay ~4 iterations (3/4; T4 transient decay fails)"
+    paper_sections: [9, 9.1, 9.2, 9.3]
+
+  - local: experiments/exp_02_ade_scope_identification.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_02_ade_scope_identification.py
+    repo: dawn-field-theory
+    description: "ADE scope identification"
+    key_result: "Additive exact, multiplicative universal, KAN arithmetic transition K-fraction rho=1.0, hierarchy terminates (4/4)"
+    paper_sections: [9]
+
+  - local: experiments/exp_03_tetration_penalty_derivation.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_03_tetration_penalty_derivation.py
+    repo: dawn-field-theory
+    description: "Tetration penalty derivation"
+    key_result: "Eigenvalue trend rho=-0.8; geometric decay base 0.42 in phi range; R^2=0.67 FAILS at 0.75 threshold (HARDENED) (2/4)"
+    paper_sections: [9.3]
+
+  - local: experiments/exp_04_coupling_from_scope_depth.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_04_coupling_from_scope_depth.py
+    repo: dawn-field-theory
+    description: "Coupling from scope depth"
+    key_result: "EM 5.7 ppm, gravity 0.96%, phi^6 hierarchy ratio 0.30%, sin^2(theta_W)=3/13 at 0.19% (4/4)"
+    paper_sections: [10, 10.1, 10.3]
+
+  - local: experiments/exp_05_dark_sector_depth_73.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_05_dark_sector_depth_73.py
+    repo: dawn-field-theory
+    description: "Dark sector at depth 73"
+    key_result: "Phi_3(F_6)=73 unique in gap; alpha_73=2.48e-16, mediator mass ~5.8 keV, self-interaction below Bullet Cluster bound (3/4)"
+    paper_sections: [13, 13.1]
+
+  - local: experiments/exp_06_neutrino_masses_from_scope.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_06_neutrino_masses_from_scope.py
+    repo: dawn-field-theory
+    description: "Neutrino masses from scope"
+    key_result: "Common-scale model: sum < 0.12 eV, normal hierarchy, m1 < 0.01 eV; splitting ratio 44% off (needs PMNS) (3/4)"
+    paper_sections: [12.3]
+
+  - local: experiments/exp_07_xi_as_scope_fixed_point.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_07_xi_as_scope_fixed_point.py
+    repo: dawn-field-theory
+    description: "Xi as scope fixed point"
+    key_result: "Xi attractor CV<1, Landauer A/(A+xi)=ln(phi) exact, Euler gap Xi-Xi_PAC ~ 1/(240*pi) at 0.09%; Rule 110 still converging (3/4)"
+    paper_sections: [12.2]
+
+  - local: experiments/exp_08_pac_conservation_across_scopes.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_08_pac_conservation_across_scopes.py
+    repo: dawn-field-theory
+    description: "PAC conservation across scopes"
+    key_result: "P = A + xi + Theta at every boundary to 3.47e-18; xi/P trend negative (rho=-0.8); per-level survival = 1/phi (2.3%) (4/4)"
+    paper_sections: [11, 11.1, 11.2]
+
+  - local: experiments/exp_09_alpha_em_as_survival_ratio.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_09_alpha_em_as_survival_ratio.py
+    repo: dawn-field-theory
+    description: "alpha_EM as survival ratio"
+    key_result: "alpha_EM = F3/(F4*phi*F10)*(1-F10/(4*pi*F7^2)) at 5.7 ppm; #1 of 10,440 Fibonacci combinations, 300x better than next (4/4)"
+    paper_sections: [10.2]
+
+  - local: experiments/exp_10_scoped_mediation_master_test.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/exp_10_scoped_mediation_master_test.py
+    repo: dawn-field-theory
+    description: "Scoped mediation master test"
+    key_result: "68% reproducible, all forces match, 7 predictions, zero contradictions with M1-M5 (4/4)"
+    paper_sections: [12]
+
+  # ---- Milestone 6: post-hoc analyses (M6 failures explained via M7) ----
+  - local: experiments/analysis_local_asymmetry_as_mechanism.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/analysis_local_asymmetry_as_mechanism.py
+    repo: dawn-field-theory
+    description: "Local asymmetry as mechanism (M6 failures predicted by M7)"
+    key_result: "M6 within-level scatter feeds convergence; ensemble means reach phi-range; failures are one principle (local asymmetry) showing up repeatedly"
+    paper_sections: [6]
+
+  - local: experiments/analysis_xi_multiplicative_aggregation.py
+    source: dawn-field-theory/foundational/experiments/milestone6/scripts/analysis_xi_multiplicative_aggregation.py
+    repo: dawn-field-theory
+    description: "Xi multiplicative aggregation across boundaries"
+    key_result: "Per-boundary xi aggregates multiplicatively (survival = product of e^{-xi}); resolves M6 additive-Xi normalization failure"
+    paper_sections: [11]

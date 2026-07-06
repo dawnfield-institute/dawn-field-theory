@@ -1,0 +1,154 @@
+{
+  "experiment": "exp_12_cross_milestone_compatibility",
+  "milestone": "milestone12",
+  "block": "E",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_m1_sm_parameters",
+      "alpha_dft": 0.007297310889743783,
+      "alpha_obs": 0.0072973525693,
+      "alpha_ppm_error": 5.711599627555799,
+      "alpha_within_6ppm": true,
+      "sin2_dft": 0.23076923076923078,
+      "sin2_obs": 0.23122,
+      "sin2_percent_error": 0.19495252606574986,
+      "sin2_within_0_2_percent": true,
+      "koide_dft": 0.6666666666666666,
+      "koide_ppm_error": 8.500072250636508,
+      "koide_within_10ppm": true,
+      "A1_adjoint_dim": 3,
+      "A1_is_F4": true,
+      "A2_adjoint_dim": 8,
+      "A2_is_F6": true,
+      "F7_is_EM_depth": true,
+      "fibonacci_gauge_groups": [
+        {
+          "diagram": "A_1",
+          "group": "SU(2)",
+          "adjoint_dim": 3,
+          "fibonacci_index": 4
+        },
+        {
+          "diagram": "A_2",
+          "group": "SU(3)",
+          "adjoint_dim": 8,
+          "fibonacci_index": 6
+        }
+      ],
+      "only_SU2_SU3": true,
+      "note": "M1 parameters verified: alpha to 5.7 ppm, sin^2(theta_W) = 3/13, Koide = 2/3. Fibonacci numbers trace to ADE: F4=dim(A_1), F6=dim(A_2). Only SU(2) and SU(3) have Fibonacci adjoint dimensions among all ADE types.",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_basin_dynamics_response_time",
+      "basin_results": {
+        "strong": {
+          "name": "Strong nuclear",
+          "depth": 3,
+          "coupling": 0.23606797749978967,
+          "relaxation_steps": 1949,
+          "converged": true,
+          "final_deviation": 0.000998766801235229,
+          "theoretical_tau_ratio": 4.23606797749979
+        },
+        "weak": {
+          "name": "Weak nuclear",
+          "depth": 7,
+          "coupling": 0.03444185374863302,
+          "relaxation_steps": 13369,
+          "converged": true,
+          "final_deviation": 0.0009998456451463245,
+          "theoretical_tau_ratio": 29.03444185374864
+        },
+        "em": {
+          "name": "Electromagnetic",
+          "depth": 13,
+          "coupling": 0.0019193787254996309,
+          "relaxation_steps": 100000,
+          "converged": false,
+          "final_deviation": 0.01466953713982777,
+          "theoretical_tau_ratio": 521.0019193787257
+        },
+        "gravity": {
+          "name": "Gravitational",
+          "depth": 183,
+          "coupling": 5.691959932062575e-39,
+          "relaxation_steps": null,
+          "converged": null,
+          "final_deviation": null,
+          "theoretical_tau_ratio": 1.7568640888827084e+38
+        }
+      },
+      "depth_ordering": true,
+      "coupling_ordering": true,
+      "m11_ordering_correct": true,
+      "numerical_strong_lt_weak": true,
+      "ratio_strong_weak": 6.859415084658799,
+      "expected_ratio_sw": 6.854101966249686,
+      "sw_ratio_reasonable": true,
+      "note": "Force ordering verified three ways: cascade depth, coupling strength, and M11 response time. Numerical basin relaxation confirms strong < weak. EM and gravity too weakly coupled for direct simulation (consistent: their couplings are orders of magnitude smaller).",
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_connection_primitive_m7_chain",
+      "chain_links": {
+        "self_loop_identity": true,
+        "phi_from_self_application": true,
+        "phi_from_iteration": true,
+        "pac_conservation": true,
+        "split_conservation": true,
+        "ade_selection": true,
+        "f7_closure": true,
+        "sm_gauge_groups": true
+      },
+      "all_links_hold": true,
+      "a1_adjacency": [
+        [
+          0.0
+        ]
+      ],
+      "phi_from_roots": 1.618033988749895,
+      "phi_from_iteration": 1.618033988749895,
+      "phi_exact": 1.618033988749895,
+      "pac_identity_error": 0.0,
+      "split_conservation_error": 1.1102230246251565e-16,
+      "fibonacci_groups": [
+        {
+          "diagram": "A_1",
+          "group": "SU(2)",
+          "adjoint_dim": 3,
+          "fibonacci_index": 4
+        },
+        {
+          "diagram": "A_2",
+          "group": "SU(3)",
+          "adjoint_dim": 8,
+          "fibonacci_index": 6
+        }
+      ],
+      "note": "M12 chain (self-loop -> phi -> PAC -> ADE -> SM) is compatible with M7 chain (Symmetry -> Self-reference -> Recursion -> ADE). self-loop = self-reference, phi = recursion attractor, PAC = conservation. All chain links verified.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_sec_complexification_m4_lorentz",
+      "m12_gives_lorentz": true,
+      "correct_dimension": true,
+      "n_generators": 6,
+      "full_algebra_closes": true,
+      "max_closure_error": 1.1188630228279524e-16,
+      "killing_signature": "(3, 3)",
+      "signature_33": true,
+      "minkowski_sign_error": 0.0,
+      "minkowski_sign_correct": true,
+      "so31_errors": {
+        "JJ_relation": 0.0,
+        "KK_relation": 0.0,
+        "JK_relation": 0.0
+      },
+      "note": "M4 (PAC partition -> Lorentz) and M12 (SEC complexification -> Lorentz) both yield SO(3,1) with 6 generators, Killing signature (3,3), full closure, and the Minkowski sign [K,K]=-iJ. Complementary derivations of the same group.",
+      "PASS": true
+    }
+  }
+}

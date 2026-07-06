@@ -1,0 +1,254 @@
+{
+  "experiment": "exp_11_m14_synthesis",
+  "milestone": 14,
+  "block": "E",
+  "results": {
+    "T1": {
+      "test": "T1_derivation_chain",
+      "chain": [
+        {
+          "link": "self-loop -> phi",
+          "valid": true
+        },
+        {
+          "link": "phi -> PAC",
+          "valid": true
+        },
+        {
+          "link": "PAC -> ADE",
+          "valid": true
+        },
+        {
+          "link": "ADE -> Aut(G)",
+          "valid": true
+        },
+        {
+          "link": "Aut(G) -> orbits",
+          "valid": true
+        },
+        {
+          "link": "orbits -> Hilbert space",
+          "valid": true
+        },
+        {
+          "link": "Hilbert space -> Born rule",
+          "valid": true
+        },
+        {
+          "link": "Born rule -> measurement",
+          "valid": true
+        },
+        {
+          "link": "SEC -> interference",
+          "valid": true
+        },
+        {
+          "link": "non-abelian Aut -> non-commuting ops",
+          "valid": true
+        },
+        {
+          "link": "non-commuting ops -> uncertainty",
+          "valid": true
+        },
+        {
+          "link": "product graphs -> entanglement",
+          "valid": true
+        }
+      ],
+      "n_valid": 12,
+      "n_total": 12,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_scorecard",
+      "scores": {
+        "exp_01_orbit_hilbert_space": {
+          "pass": 4,
+          "total": 4
+        },
+        "exp_02_permutation_rep_decomposition": {
+          "pass": 4,
+          "total": 4
+        },
+        "exp_03_born_rule_from_orbit_measure": {
+          "pass": 3,
+          "total": 4
+        },
+        "exp_04_measurement_as_gauge_fixing": {
+          "pass": 4,
+          "total": 4
+        },
+        "exp_05_sec_complexification_interference": {
+          "pass": 4,
+          "total": 4
+        },
+        "exp_06_graph_double_slit": {
+          "pass": 1,
+          "total": 4
+        },
+        "exp_07_noncommuting_observables_d4": {
+          "pass": 4,
+          "total": 4
+        },
+        "exp_08_robertson_uncertainty": {
+          "pass": 4,
+          "total": 4
+        },
+        "exp_09_entanglement_product_graphs": {
+          "pass": 4,
+          "total": 4
+        },
+        "exp_10_cross_milestone_compatibility": {
+          "pass": 4,
+          "total": 4
+        }
+      },
+      "total_pass": 36,
+      "total_tests": 40,
+      "percentage": 90.0,
+      "above_75": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_predictions_registry",
+      "predictions": [
+        {
+          "id": "P1",
+          "type": "Precise",
+          "statement": "Quantum uncertainty requires non-abelian Aut(G): only D_4 among ADE <= rank 8 has genuine uncertainty",
+          "test": "Compute Robertson bound for all ADE types; nonzero only for D_4",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P2",
+          "type": "Precise",
+          "statement": "Orbit Gram matrix is positive definite for ALL ADE types (resolves M13 PSD)",
+          "test": "Eigenvalues of orbit Gram matrix all = 1.0",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P3",
+          "type": "Precise",
+          "statement": "Born probabilities for uniform state equal |O_i|/n (orbit volume = gauge volume)",
+          "test": "Compute Born probs for uniform state on all ADE",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P4",
+          "type": "Precise",
+          "statement": "Trivial irrep multiplicity = number of orbits (Burnside) for all ADE",
+          "test": "Character-theoretic decomposition matches orbit count",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P5",
+          "type": "Directional",
+          "statement": "SEC complexification enables full constructive-destructive interference range",
+          "test": "Real amplitudes: constructive only. Complex: full range.",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P6",
+          "type": "Directional",
+          "statement": "Orbit-level interference is algebraic not positional: disjoint orbit support prevents vertex-level cross-terms",
+          "test": "Vertex probabilities of orbit superposition equal classical mixture",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P7",
+          "type": "Precise",
+          "statement": "D_4 triality (S_3) is the unique source of quantum non-commutativity among ADE types",
+          "test": "Non-commutativity measure > 0 only for D_4",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P8",
+          "type": "Directional",
+          "statement": "Minimum uncertainty product is finite (nonzero) for D_4, zero for all other ADE types",
+          "test": "Minimize Delta_A * Delta_B over random states",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P9",
+          "type": "Precise",
+          "statement": "M13 complement-spectrum orbits identical to M14 automorphism orbits for all ADE <= rank 8",
+          "test": "Compare vertex_orbits() output with automorphism-derived orbits",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P10",
+          "type": "Constraint",
+          "statement": "Gauge-invariant entanglement requires nontrivial Aut(G): orbit_dim < n_vertices",
+          "test": "D_4 has gauge structure; E_7/E_8 do not",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P11",
+          "type": "Constraint",
+          "statement": "Orbit dimension grows monotonically with rank within each ADE family",
+          "test": "Check monotonicity for A_1..A_8, D_4..D_8, E_6..E_8",
+          "status": "confirmed_internally"
+        },
+        {
+          "id": "P12",
+          "type": "Directional",
+          "statement": "Real orbit projectors structurally lose phase information: SEC arrow is built into the orbit framework",
+          "test": "Complex state collapse yields real state (up to global phase)",
+          "status": "confirmed_internally"
+        }
+      ],
+      "n_predictions": 12,
+      "by_type": {
+        "Precise": 6,
+        "Directional": 4,
+        "Constraint": 2
+      },
+      "has_enough": true,
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_m15_forward_path",
+      "forward_path": {
+        "milestone": "M15",
+        "title": "Dynamics as Orbit Flow",
+        "thesis": "M14 established the kinematics of quantum mechanics on orbit Hilbert space. M15 derives DYNAMICS: the Schrodinger equation as orbit flow, Hamiltonian from graph Laplacian, and time evolution as automorphism-equivariant unitary propagation. The key insight: time = SEC complexification parameter.",
+        "key_questions": [
+          "Does the graph Laplacian restricted to orbit space give the correct Hamiltonian?",
+          "Is time evolution naturally unitary on the orbit Hilbert space?",
+          "Does the Schrodinger equation emerge from SEC-driven orbit flow?",
+          "What is the graph-theoretic analog of the path integral?",
+          "How does decoherence arise from orbit-environment coupling?"
+        ],
+        "prerequisites": [
+          "M14 orbit Hilbert space (complete)",
+          "M12 SEC complexification (complete)",
+          "M11 response-time framework (complete)",
+          "Graph Laplacian spectral theory (new)"
+        ],
+        "predicted_results": [
+          "Schrodinger equation from variational principle on orbit space",
+          "Energy eigenvalues from orbit-restricted Laplacian spectrum",
+          "Time-energy uncertainty from SEC rate bounds",
+          "Path integral as sum over orbit paths weighted by SEC phases",
+          "Decoherence time from orbit-environment entanglement rate"
+        ],
+        "connection_to_experiment": "D_4 triality gives unique dynamical structure: three equivalent paths through hub create interference patterns that could map to particle physics branching ratios."
+      },
+      "has_title": true,
+      "has_thesis": true,
+      "has_questions": true,
+      "has_prereqs": true,
+      "has_predictions": true,
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}

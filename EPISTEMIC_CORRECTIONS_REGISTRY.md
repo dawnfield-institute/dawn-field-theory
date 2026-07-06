@@ -13,6 +13,8 @@ This document is a living registry of discovered misconceptions, curve-fitting a
 
 1. [Information Amplification Correction](#1-information-amplification-correction-september-2025)
 2. [φ and Ξ Curve-Fitting Correction](#2-φ-and-ξ-curve-fitting-correction-january-2026)
+3. [M11 Hardening Cycle](#3-m11-hardening-cycle-april-2026)
+4. [PACSeries v0.3 Verification Pass](#4-pacseries-v03-verification-pass-july-2026)
 
 ---
 
@@ -310,6 +312,33 @@ The hardening cycle IS the Imperfection Engine in action. Each tautology found w
 - `milestone11/scripts/exp_01, 02, 05, 09, 10, 11` — test replacements
 - `milestone11/core/quantum_gravity.py` — StochasticCascade split_ratio
 - `milestone11/README.md` — all rounds documented
+
+---
+
+## 4. PACSeries v0.3 Verification Pass (July 2026)
+
+### Context
+
+While packaging PACSeries v0.3 (Papers 7–12), every headline number in each paper was checked against the result JSON that produced it (`Code/` + `Data/` + `trace.yaml`). This adversarial pass — the Imperfection Engine applied to the write-up layer — surfaced six over-attributions. Two of them had been introduced during the same v0.3 content-editing pass and were caught by verifying against source data rather than paper-internal formulas.
+
+### Over-attributions Found and Fixed
+
+| Paper | Claim (overreach) | What the data shows | Fix |
+|-------|-------------------|---------------------|-----|
+| 11 | CHSH saturates the Tsirelson bound (S = 2√2 = 2.828 to 4e-16) "from the orbit-Laplacian generator" | The graph-derived (orbit-Laplacian) rotation reaches **S = 2.514** (88.8% of Tsirelson, exp_p13 T2); 2.828 comes from the **ideal SU(2) generator σ_y/2** (T5, explicitly *not* graph-derived) | Abstract/§7 rewritten to separate the two mechanisms |
+| 8 | Bounce time ≈ 0.72 t_P | **t_bounce = 1.0 t_P** (exp_11, constant to 1e-16). 0.72 = 1/(2 ln2) is the **MVAE cascade tick** (exp_03), a distinct quantity | Reverted to 1.0; §10.2 derivation corrected; 0.72 relabeled as the tick |
+| 8 | Hawking T·M coefficient of variation 7.8e-17 | exp_05 `cv_standard = 1.74e-16` | Corrected across abstract/§6/appendix |
+| 8 | Page ε-remnant: 0.3 nats (ε=0.01), 1.2 nats (ε=0.1) | exp_06: **3.8 / 38 nats** (remnant ≈ 381·ε, linear in ε; the ε=0→0 unitarity claim holds) | §7.3 corrected |
+| 10 | ds² preserved to 3e-16 | The 3e-16 came from a 5-transform run; the authoritative 135-transform run (up to η=10) gives **2.9e-6** | §6.3 corrected to 2.9e-6 across 135 transforms; exp_16 (0/4) added to disclosed failures |
+| 7 | Dark self-interaction σ/m < 1e-20 cm²/g | M6 data: **6.9e-20** (still well below the Bullet Cluster bound) | §13.1 corrected |
+
+### Key Insight
+
+The characteristic failure mode was consistent: a strong result from an idealized or adjacent mechanism attributed to a weaker one, because the clean story is more compelling than the computation. Verification against the shipped JSONs — not against the paper's own prose — is what caught it, including the two errors introduced during editing itself. The packaging discipline ("every headline number traces to a result file") is what makes this class of collapse event visible.
+
+### Documents Updated
+- `foundational/docs/preprints/PACSeries/v0.3/*/paper.md` (+ regenerated `paper.tex`, `meta.yaml`, `README.md`)
+- `foundational/docs/preprints/PACSeries/HOW_TO_READ.md` — method framing added
 
 ---
 

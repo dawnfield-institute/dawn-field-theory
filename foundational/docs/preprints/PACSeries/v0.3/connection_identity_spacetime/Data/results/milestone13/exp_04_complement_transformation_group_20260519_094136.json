@@ -1,0 +1,410 @@
+{
+  "experiment": "exp_04_complement_transformation_group",
+  "milestone": "milestone13",
+  "block": "B",
+  "score": 4,
+  "total": 4,
+  "tests": {
+    "T1": {
+      "test": "T1_composition_exact",
+      "graph": "A_4",
+      "n_vertices": 4,
+      "n_triples_tested": 24,
+      "max_composition_error": 0.0,
+      "sample_triples": [
+        {
+          "triple": [
+            0,
+            1,
+            2
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            1,
+            3
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            2,
+            1
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            2,
+            3
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            3,
+            1
+          ],
+          "error": 0.0
+        },
+        {
+          "triple": [
+            0,
+            3,
+            2
+          ],
+          "error": 0.0
+        }
+      ],
+      "note": "Composition is exact by telescoping: spec(k)-spec(i) = (spec(j)-spec(i)) + (spec(k)-spec(j))",
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_complement_classes_equal_orbits",
+      "ranks_tested": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "by_rank": {
+        "2": {
+          "n_vertices": 2,
+          "n_distinct_spectra": 1,
+          "n_orbits": 1,
+          "expected": 1,
+          "match": true
+        },
+        "3": {
+          "n_vertices": 3,
+          "n_distinct_spectra": 2,
+          "n_orbits": 2,
+          "expected": 2,
+          "match": true
+        },
+        "4": {
+          "n_vertices": 4,
+          "n_distinct_spectra": 2,
+          "n_orbits": 2,
+          "expected": 2,
+          "match": true
+        },
+        "5": {
+          "n_vertices": 5,
+          "n_distinct_spectra": 3,
+          "n_orbits": 3,
+          "expected": 3,
+          "match": true
+        }
+      },
+      "all_match": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_adjacent_transformations_orbit_boundary",
+      "types_tested": [
+        "A_5",
+        "A_7",
+        "D_5"
+      ],
+      "details": {
+        "A_5": {
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "n_adjacent_pairs": 4,
+          "n_same_orbit_pairs": 0,
+          "n_cross_orbit_pairs": 4,
+          "pairs": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "same_orbit": false,
+              "magnitude": 0.9203355664740178,
+              "ok": true
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "same_orbit": false,
+              "magnitude": 1.5307337294603593,
+              "ok": true
+            },
+            {
+              "pair": [
+                2,
+                3
+              ],
+              "same_orbit": false,
+              "magnitude": 1.5307337294603593,
+              "ok": true
+            },
+            {
+              "pair": [
+                3,
+                4
+              ],
+              "same_orbit": false,
+              "magnitude": 0.9203355664740178,
+              "ok": true
+            }
+          ]
+        },
+        "A_7": {
+          "n_vertices": 7,
+          "n_orbits": 4,
+          "n_adjacent_pairs": 6,
+          "n_same_orbit_pairs": 0,
+          "n_cross_orbit_pairs": 6,
+          "pairs": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "same_orbit": false,
+              "magnitude": 0.7265609012131837,
+              "ok": true
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "same_orbit": false,
+              "magnitude": 0.8887810149004151,
+              "ok": true
+            },
+            {
+              "pair": [
+                2,
+                3
+              ],
+              "same_orbit": false,
+              "magnitude": 1.0909460598144491,
+              "ok": true
+            },
+            {
+              "pair": [
+                3,
+                4
+              ],
+              "same_orbit": false,
+              "magnitude": 1.0909460598144491,
+              "ok": true
+            },
+            {
+              "pair": [
+                4,
+                5
+              ],
+              "same_orbit": false,
+              "magnitude": 0.8887810149004151,
+              "ok": true
+            },
+            {
+              "pair": [
+                5,
+                6
+              ],
+              "same_orbit": false,
+              "magnitude": 0.7265609012131837,
+              "ok": true
+            }
+          ]
+        },
+        "D_5": {
+          "n_vertices": 5,
+          "n_orbits": 4,
+          "n_adjacent_pairs": 4,
+          "n_same_orbit_pairs": 0,
+          "n_cross_orbit_pairs": 4,
+          "pairs": [
+            {
+              "pair": [
+                0,
+                1
+              ],
+              "same_orbit": false,
+              "magnitude": 0.4494897427831778,
+              "ok": true
+            },
+            {
+              "pair": [
+                1,
+                2
+              ],
+              "same_orbit": false,
+              "magnitude": 0.5857864376269051,
+              "ok": true
+            },
+            {
+              "pair": [
+                2,
+                3
+              ],
+              "same_orbit": false,
+              "magnitude": 1.2360679774997898,
+              "ok": true
+            },
+            {
+              "pair": [
+                2,
+                4
+              ],
+              "same_orbit": false,
+              "magnitude": 1.2360679774997898,
+              "ok": true
+            }
+          ]
+        }
+      },
+      "all_correct": true,
+      "note": "Adjacent vertices in same orbit => zero transformation magnitude. Adjacent vertices in different orbits => nonzero magnitude. This mirrors Weyl group: transformations are trivial within orbits and nontrivial across orbit boundaries.",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_weyl_group_order",
+      "ranks_tested": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "by_rank": {
+        "2": {
+          "n_vertices": 2,
+          "weyl_order": 6,
+          "expected_order": 6,
+          "n_orbits": 1,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                1
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 3,
+              "product": 6,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 2,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        },
+        "3": {
+          "n_vertices": 3,
+          "weyl_order": 24,
+          "expected_order": 24,
+          "n_orbits": 2,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                2
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 12,
+              "product": 24,
+              "ok": true
+            },
+            {
+              "vertices": [
+                1
+              ],
+              "orbit_size": 1,
+              "stabilizer_order": 24,
+              "product": 24,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 3,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        },
+        "4": {
+          "n_vertices": 4,
+          "weyl_order": 120,
+          "expected_order": 120,
+          "n_orbits": 2,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                3
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 60,
+              "product": 120,
+              "ok": true
+            },
+            {
+              "vertices": [
+                1,
+                2
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 60,
+              "product": 120,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 4,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        },
+        "5": {
+          "n_vertices": 5,
+          "weyl_order": 720,
+          "expected_order": 720,
+          "n_orbits": 3,
+          "orbit_details": [
+            {
+              "vertices": [
+                0,
+                4
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 360,
+              "product": 720,
+              "ok": true
+            },
+            {
+              "vertices": [
+                1,
+                3
+              ],
+              "orbit_size": 2,
+              "stabilizer_order": 360,
+              "product": 720,
+              "ok": true
+            },
+            {
+              "vertices": [
+                2
+              ],
+              "orbit_size": 1,
+              "stabilizer_order": 720,
+              "product": 720,
+              "ok": true
+            }
+          ],
+          "total_orbit_vertices": 5,
+          "orbit_stabilizer_consistent": true,
+          "match": true
+        }
+      },
+      "all_match": true,
+      "PASS": true
+    }
+  }
+}

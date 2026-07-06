@@ -13,13 +13,15 @@
 
 We present the theoretical foundation that explains *why* Dawn Field Theory works. Milestone 7 establishes the pre-axiomatic hierarchy: Symmetry $\to$ Self-reference $\to$ Recursion $\to$ Arithmetic Closure $\to$ ADE $\to$ PAC/SEC/MED/RBF $\to$ Standard Model. Milestone 6 establishes the propagation mechanism: scoped mediation via transfer matrices, where forces differ by Fibonacci depth and constants are ratios of what survives scope boundaries.
 
-The key results: (1) $\varphi$ emerges uniquely from cross-scale relational self-reference — the constraint that subordinate at level $n$ equals dominant at level $n+1$, not from iterating $x = 1 + 1/x$. (2) "Nothing" (a uniform symmetric state) is unstable under multi-scale drive combined with conservation — structure formation is forced. (3) $\Xi = \gamma + \ln\varphi$ per scope boundary, experimentally decomposed: counting-only $\to$ $\gamma$ (2.7% error), splitting-only $\to$ $\ln\varphi$ (0.0% error). (4) $1/\varphi$ attenuation emerges from dynamics ($R^2 = 0.995$), not assumed — multi-scale drive on flat graphs produces hierarchical decay with ratio 0.574 (7.2% from $1/\varphi$). (5) Transfer matrices converge to rank-1 harmonic fixed points for 67/67 scope boundaries — universally. The matrices are non-compositional (99.96%): levels are recursive closures, not products. (6) $\alpha_\text{EM} = F_3/(F_4 \cdot \varphi \cdot F_{10}) \cdot (1 - F_{10}/(4\pi F_7^2))$ at 5.7 ppm — ranked #1 of 10,440 Fibonacci combinations, 300$\times$ better than the next. (7) ADE arithmetic closure terminates uniquely at $D = 3$: $L_4$ tetration diverges at $7.6 \times 10^{12}$.
+Key results: (1) $\varphi$ emerges uniquely from cross-scale relational self-reference — the constraint that subordinate at level $n$ equals dominant at level $n+1$ — not from iterating $x = 1 + 1/x$. (2) "Nothing" (a uniform symmetric state) is unstable under multi-scale drive combined with conservation, so structure formation is forced. (3) $\Xi = \gamma + \ln\varphi$ per scope boundary, experimentally decomposed: counting-only $\to$ $\gamma$ (2.7% error), splitting-only $\to$ $\ln\varphi$ (0.0% error). (4) $1/\varphi$ attenuation emerges from dynamics ($R^2 = 0.995$) rather than being assumed: multi-scale drive on flat graphs produces hierarchical decay with ratio 0.574 (7.2% from $1/\varphi$). (5) Transfer matrices converge to rank-1 harmonic fixed points for 67/67 scope boundaries. The matrices are non-compositional (99.96%): levels are recursive closures, not products. (6) $\alpha_\text{EM} = F_3/(F_4 \cdot \varphi \cdot F_{10}) \cdot (1 - F_{10}/(4\pi F_7^2))$ at 5.7 ppm — ranked #1 of 10,440 Fibonacci combinations, 300$\times$ better than the next. (7) ADE arithmetic closure terminates uniquely at $D = 3$: $L_4$ tetration diverges at $7.6 \times 10^{12}$.
 
-The framework achieves 100% compatibility with Milestones 1–6 (20/20 prior results, 60% directly illuminated with new derivation paths, zero contradictions). We document three honest failures: RBF memory damping (2/4, activity-based memory definitions fail), cross-topology symmetry breaking (3/4, weak perturbations ineffective on well-balanced graphs), and neutrino splitting ratio (44% error, subsequently improved to 17% in M8 via PMNS correction).
+The framework achieves 100% compatibility with Milestones 1–6 (20/20 prior results, 60% directly illuminated with new derivation paths, zero contradictions). We document three failures: RBF memory damping (2/4, activity-based memory definitions fail), cross-topology symmetry breaking (3/4, weak perturbations ineffective on well-balanced graphs), and neutrino splitting ratio (44% error, subsequently improved to 17% in M8 via PMNS correction).
 
 Seven falsifiable predictions include: the weak force as the actualization mechanism ($\sin^2\theta_W = 3/13$ exact), a dark sector at depth 73 ($\alpha_{73} = 2.48 \times 10^{-16}$, mass $\sim 5.8$ keV), and rank-1 transfer matrix convergence as universal across any hierarchical partition.
 
 **Keywords**: symmetry, self-reference, golden ratio, scoped mediation, transfer matrices, PAC conservation, Fibonacci depth, force hierarchy, Dawn Field Theory
+
+**Epistemic status.** This paper is part of the PACSeries, an evolving research program rather than a finished theory (see the series note *How to Read the PACSeries*). Its quantitative claims are tiered by derivation type — **A** structural, **B** identified, **C** pattern-matched — and labeled in the text. Failures are reported rather than omitted, and framework-level corrections are logged in the Epistemic Corrections Registry in the repository. Every headline result is reproducible from the `Code/` and `Data/` in this package (provenance in `trace.yaml`).
 
 ---
 
@@ -48,7 +50,7 @@ M7 exp_01 provides the motivation. Consider a hierarchical system with levels, w
 2. **Self-similarity**: the ratio $D/S$ is constant across scales
 3. **Cross-scale consistency**: the subordinate at level $n$ equals the dominant at level $n+1$
 
-The third constraint is the key. It says: what is secondary at one scale becomes primary at the next. This is not an abstract mathematical condition — it is the physical requirement that a hierarchical system is consistent across scales.
+The third constraint is central: what is secondary at one scale becomes primary at the next. This is not an abstract mathematical condition but the physical requirement that a hierarchical system be consistent across scales.
 
 The unique ratio satisfying all three constraints is $R = D/S = \varphi$. This is the same equation ($\varphi^2 - \varphi - 1 = 0$), but now with a physical reason: $\varphi$ is the only ratio where cross-scale consistency is possible.
 
@@ -66,11 +68,11 @@ A uniform symmetric state ($D = S$ everywhere, all nodes equal) is an equilibriu
 
 The mechanism: conservation at one scale constrains the degrees of freedom available at other scales. A uniform state that satisfies $\varphi$-balance at one scale necessarily violates it at another. The incompatibility between multi-scale $\varphi$-balance and conservation forces the system away from uniformity.
 
-This is why "nothing" — a featureless, symmetric void — cannot persist. Structure formation is not an event that requires explanation. Stasis is the condition that requires explanation, and it fails.
+This is why "nothing" — a featureless, symmetric void — cannot persist. Structure formation is not the event requiring explanation; stasis is the condition requiring explanation, and it fails.
 
 ### 3.2 Implications
 
-This result inverts the traditional cosmological question. Instead of "why is there something rather than nothing?", the question becomes "could there ever have been nothing?" — and the answer, within DFT, is no. A symmetric void with conservation constraints is unstable under self-reference.
+This result inverts the traditional cosmological question. Instead of "why is there something rather than nothing?", the question becomes "could there ever have been nothing?" Within DFT, the answer is no. A symmetric void with conservation constraints is unstable under self-reference.
 
 ---
 
@@ -124,7 +126,7 @@ M7 exp_05 demonstrates a counterintuitive result: maintaining global $\varphi$-b
 
 A uniform state ($D = S$ everywhere) has the worst global $\varphi$-balance. To achieve $D/S = \varphi$ globally, some nodes must be large (dominant) and others small (subordinate). Local asymmetry serves global symmetry.
 
-This provides a DFT perspective on symmetry breaking: it is not a defect or a phase transition. It is symmetry *seeking*. The system breaks local symmetry precisely to restore the deeper, cross-scale symmetry that $\varphi$-balance represents.
+This provides a DFT perspective on symmetry breaking: it is not a defect or phase transition but symmetry seeking. The system breaks local symmetry precisely to restore the deeper, cross-scale symmetry that $\varphi$-balance represents.
 
 M7 exp_06 tested five break mechanisms: $\varphi$-ratio, 2:1, random, noise, and equal (50/50). Four of five improve global $\varphi$-balance — only the equal split (which creates no hierarchy) worsens it. $\varphi$-ratio is optimal across all tested topologies. Cross-topology consistency fails for 1/3 graphs: weak perturbations on well-balanced graphs cannot reliably improve further.
 
@@ -136,7 +138,7 @@ M7 exp_06 tested five break mechanisms: $\varphi$-ratio, 2:1, random, noise, and
 
 The ADE levels correspond to arithmetic operations of increasing complexity: addition ($L_1$), multiplication ($L_2$), exponentiation ($L_3$), tetration ($L_4$). Each level's eigenvalues grow faster than the last (M7 exp_07).
 
-At $L_4$ (tetration), the eigenvalues diverge: $7.6 \times 10^{12}$. The hierarchy terminates. No physical system can sustain tetration-level complexity — MED imposes a viability bound.
+At $L_4$ (tetration), the eigenvalues diverge: $7.6 \times 10^{12}$. The hierarchy terminates. No physical system can sustain tetration-level complexity; MED imposes a viability bound.
 
 ### 7.2 Uniqueness of $D = 3$
 
@@ -174,13 +176,13 @@ The 12 illuminated results include: $\varphi$ in SM parameters, $\Xi$ in cascade
 
 Scoped mediation models the propagation of information across hierarchical boundaries using transfer matrices. Each scope boundary has a matrix $T$ that maps the PAC budget ($P, A, \xi, \Theta$) from one level to the next (M6 exp_01).
 
-The key finding: $T_\text{harm}^4$ (the fourth power of the harmonic transfer matrix) is rank-1 for 67/67 tested boundaries. This means that regardless of the input distribution, all information converges to a single dominant mode after four boundary crossings.
+The finding is that $T_\text{harm}^4$ (the fourth power of the harmonic transfer matrix) is rank-1 for 67/67 tested boundaries. This means that regardless of the input distribution, all information converges to a single dominant mode after four boundary crossings.
 
 ### 9.2 Non-compositionality
 
-The transfer matrices are non-compositional: $T_\text{total} \neq T_1 \cdot T_2 \cdot T_3 \cdots$ to 99.96%. Levels are not products of simpler operations — they are recursive closures. Each level re-negotiates the full PAC budget independently, producing a hierarchy that cannot be factored into elementary steps.
+The transfer matrices are non-compositional: $T_\text{total} \neq T_1 \cdot T_2 \cdot T_3 \cdots$ to 99.96%. Levels are not products of simpler operations but recursive closures. Each level re-negotiates the full PAC budget independently, producing a hierarchy that cannot be factored into elementary steps.
 
-This is a profound structural result. It means the cascade is not a pipeline (input $\to$ stage 1 $\to$ stage 2 $\to$ output). It is a recursive hierarchy where each level is a complete, self-contained negotiation.
+The cascade is therefore not a pipeline (input $\to$ stage 1 $\to$ stage 2 $\to$ output) but a recursive hierarchy where each level is a complete, self-contained negotiation.
 
 ### 9.3 Transient decay
 
@@ -215,7 +217,7 @@ The ratio of gravitational to electromagnetic coupling:
 
 $$\frac{\log(\alpha_G^{-1})}{\log(\alpha_\text{EM}^{-1})} = \varphi^6 \quad \text{at 0.30\%}$$
 
-The hierarchy problem — why gravity is $10^{38}$ times weaker than electromagnetism — is a $\varphi$-power ratio of cascade depths. It is not a fine-tuning problem. It is a structural consequence of the Fibonacci depth hierarchy.
+The hierarchy problem — why gravity is $10^{38}$ times weaker than electromagnetism — is a $\varphi$-power ratio of cascade depths: a structural consequence of the Fibonacci depth hierarchy rather than a fine-tuning problem.
 
 ### 10.4 Euler gap
 
@@ -223,7 +225,7 @@ The gap between $\Xi$ and the Fibonacci-derived balance constant is:
 
 $$\Xi - \Xi_\text{PAC} \approx \frac{1}{240\pi} \quad \text{at 0.09\% error}$$
 
-The factor 240 = $F_3 \cdot F_4 \cdot F_5 \cdot F_6 = 2 \times 3 \times 5 \times 8$ is also the number of roots of $E_8$. This links the non-Fibonacci residual of $\gamma$ to the exceptional Lie algebra — the Euler-Mascheroni constant's departure from Fibonacci structure has an algebraic explanation.
+The factor 240 = $F_3 \cdot F_4 \cdot F_5 \cdot F_6 = 2 \times 3 \times 5 \times 8$ is also the number of roots of $E_8$. This links the non-Fibonacci residual of $\gamma$ to the exceptional Lie algebra; the Euler-Mascheroni constant's departure from Fibonacci structure has an algebraic explanation.
 
 ---
 
@@ -241,17 +243,17 @@ The survival fraction per cascade level is $1/\varphi$ at 2.3% error (multiplica
 
 ## 12. Three key insights
 
-### 12.1 The weak force IS actualization
+### 12.1 The weak force as actualization
 
-The weak force is not simply a coupling at some Fibonacci depth. It is the actualization mechanism itself (M6 exp_04 §9.3). Beta decay = PAC tree branching. The decay cascade terminates at lead ($Z = 82$, a nuclear magic number). The correct DFT identity:
+The weak force is not simply a coupling at some Fibonacci depth; it is the actualization mechanism itself (M6 exp_04 §9.3). Beta decay = PAC tree branching. The decay cascade terminates at lead ($Z = 82$, a nuclear magic number). The correct DFT identity:
 
 $$\sin^2\theta_W = \frac{F_4}{F_7} = \frac{3}{13} \quad \text{(0.19\% error)}$$
 
-This is not a numerical coincidence. $F_4 = 3$ (the SU(2) dimension) and $F_7 = 13$ (the gauge closure depth) have structural meaning in the Fibonacci hierarchy.
+This is not a numerical coincidence: $F_4 = 3$ (the SU(2) dimension) and $F_7 = 13$ (the gauge closure depth) have structural meaning in the Fibonacci hierarchy.
 
 ### 12.2 $\Xi$ is a conditional attractor
 
-$\Xi \approx 1.057$ is not a universal constant to be matched against arbitrary measurements. It is the maximum sustainable computational asymmetry for closed recursive conserving computationally-saturated systems (confirmed independently by cellular automata, Paper 2; Rule 110 $P/A$ is monotonically decreasing toward the attractor basin).
+$\Xi \approx 1.057$ is not a universal constant to be matched against arbitrary measurements; it is the maximum sustainable computational asymmetry for closed recursive conserving computationally-saturated systems (confirmed independently by cellular automata, Paper 2; Rule 110 $P/A$ is monotonically decreasing toward the attractor basin).
 
 The transfer matrix $\xi/P$ converges to a stable basin (CV $< 1$). But convergence is conditional: the system must be recursive, conserving, and computationally saturated. Random or non-conserving systems do not approach $\Xi$.
 
@@ -269,7 +271,7 @@ The cyclotomic polynomial $\Phi_3(F_6) = F_6^2 + F_6 + 1 = 73$ is the unique $\P
 
 - **Coupling**: $\alpha_{73} = 2.48 \times 10^{-16}$
 - **Mediator mass**: $\sim 5.8$ keV (from Higgs VEV at half-depth)
-- **Self-interaction**: $\sigma/m < 10^{-20}$ cm$^2$/g (well below Bullet Cluster bound)
+- **Self-interaction**: $\sigma/m \approx 6.9 \times 10^{-20}$ cm$^2$/g (well below Bullet Cluster bound)
 - **Production**: Non-thermal (freeze-in), thermal excluded by $10^{18}\times$
 
 This prediction is refined and extended in Paper 9, where the mass converges to 6.44 keV from two independent routes.
@@ -282,7 +284,7 @@ This prediction is refined and extended in Paper 9, where the mass converges to 
 
 Four memory models were tested for the RBF (Recursive Balance Field) memory term: accumulated change, convergence, time-since-change, and boundary distance. All produce positive or near-zero correlation with drive magnitude — the opposite of the expected negative correlation from $1/(1 + \alpha M)$.
 
-The insight: high-change nodes are at partition boundaries where the drive works hardest. Activity-based memory definitions don't capture the information-theoretic content of memory. The RBF memory term may need to be redefined as an information metric, not an activity metric.
+High-change nodes are at partition boundaries where the drive works hardest, so activity-based memory definitions don't capture the information-theoretic content of memory. The RBF memory term may need to be redefined as an information metric, not an activity metric.
 
 ### 14.2 Cross-topology symmetry breaking (3/4)
 
@@ -290,7 +292,7 @@ On well-connected graphs with already-high initial $\varphi$-balance ($\sim 0.88
 
 ### 14.3 Neutrino splitting (44%)
 
-The uniform Fibonacci spacing model gives the correct hierarchy ordering but 44% error on the splitting ratio. Resolved in M8 by including the PMNS mixing matrix, reducing error to 17%. The lesson: ordering comes from depth structure, precision comes from mixing corrections.
+The uniform Fibonacci spacing model gives the correct hierarchy ordering but 44% error on the splitting ratio. Resolved in M8 by including the PMNS mixing matrix, reducing error to 17%. Ordering comes from depth structure; precision comes from mixing corrections.
 
 ---
 
@@ -348,11 +350,11 @@ DFT works because symmetry, when applied to itself, has no alternative but to ge
 
 $$\text{Symmetry} \to \text{Self-reference} \to \text{Recursion} \to \text{ADE closure} \to \text{PAC/SEC/MED} \to \text{Standard Model}$$
 
-Each arrow is a logical necessity. Each is computationally verified. Zero free parameters.
+Each arrow is a logical necessity and computationally verified, with zero free parameters.
 
-The propagation mechanism is scoped mediation: information actualizes through recursive scope boundaries, each costing $\Xi$ nats, producing force hierarchies determined by Fibonacci depth. Transfer matrices converge to rank-1 harmonic fixed points. The matrices are non-compositional — each level is a complete recursive closure.
+The propagation mechanism is scoped mediation: information actualizes through recursive scope boundaries, each costing $\Xi$ nats, producing force hierarchies determined by Fibonacci depth. Transfer matrices converge to rank-1 harmonic fixed points. The matrices are non-compositional: each level is a complete recursive closure.
 
-The result is a framework where forces, constants, and dimensionality are not free parameters. They are structural consequences of the only consistent way to build a self-referential, conserving hierarchy. The remaining questions — why binary, how to define memory, what generates PMNS mixing — are honest open problems, not existential threats. The foundation holds at 93% (M7) and 88% (M6), with every failure informative rather than destructive.
+In this framework, forces, constants, and dimensionality are not free parameters but structural consequences of the only consistent way to build a self-referential, conserving hierarchy. The remaining questions — why binary, how to define memory, what generates PMNS mixing — are open problems. The foundation holds at 93% (M7) and 85% (M6).
 
 ---
 

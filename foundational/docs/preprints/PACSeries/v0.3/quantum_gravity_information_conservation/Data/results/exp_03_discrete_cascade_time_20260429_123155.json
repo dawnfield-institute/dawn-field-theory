@@ -1,0 +1,52 @@
+{
+  "T1": {
+    "test": "T1_minimum_tick",
+    "t_MVAE_planck_units": 0.7213475204444817,
+    "t_planck": 1.0,
+    "ratio": 0.7213475204444817,
+    "within_factor_2": "True",
+    "formula": "1/(2*ln(2))",
+    "formula_match": "True",
+    "PASS": "True"
+  },
+  "T2": {
+    "test": "T2_gravity_time_duality_quantum",
+    "g_in": 0.6180339887498948,
+    "g_out": 0.3819660112501051,
+    "conservation_error": 1.1102230246251565e-16,
+    "duality_error": 0.0,
+    "unique_positive_root": "True",
+    "root_positive": 0.6180339887498949,
+    "root_negative": -1.618033988749895,
+    "cascade_matches_duality": "True",
+    "PASS": "True"
+  },
+  "T3": {
+    "test": "T3_geometric_spectrum",
+    "n_levels": 30,
+    "mean_ratio": 1.6180339887498947,
+    "ratio_std": 2.541751127226717e-16,
+    "all_ratios_phi": true,
+    "n_spectral_peaks": 88,
+    "has_phi_peaks": true,
+    "PASS": true
+  },
+  "T4": {
+    "test": "T4_irreversibility",
+    "echo_errors": {
+      "10": 8.302174514642614,
+      "20": 2554.7417794640764,
+      "50": 2952036892.926788,
+      "100": 1.801050627085302e+19,
+      "200": 5.435553570233276e+40
+    },
+    "echo_at_100": 1.801050627085302e+19,
+    "echo_large_at_100": true,
+    "grows_with_n": true,
+    "deterministic_reversible": true,
+    "det_echo_error": 4.773959005888173e-15,
+    "PASS": true
+  },
+  "score": 4,
+  "total": 4
+}

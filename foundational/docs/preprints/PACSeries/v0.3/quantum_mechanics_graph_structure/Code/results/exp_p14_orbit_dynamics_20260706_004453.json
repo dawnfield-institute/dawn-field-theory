@@ -1,0 +1,428 @@
+{
+  "T1": {
+    "test": "Unitarity of orbit evolution",
+    "ade_results": [
+      {
+        "type": "A_3",
+        "orbit_dim": 2,
+        "max_deviation": 1.7763568394002505e-15,
+        "pass": true
+      },
+      {
+        "type": "A_4",
+        "orbit_dim": 2,
+        "max_deviation": 1.6662594659381951e-15,
+        "pass": true
+      },
+      {
+        "type": "A_5",
+        "orbit_dim": 3,
+        "max_deviation": 2.7755575615628914e-15,
+        "pass": true
+      },
+      {
+        "type": "D_4",
+        "orbit_dim": 2,
+        "max_deviation": 3.1086244689504383e-15,
+        "pass": true
+      },
+      {
+        "type": "D_5",
+        "orbit_dim": 4,
+        "max_deviation": 2.6645352591003757e-15,
+        "pass": true
+      },
+      {
+        "type": "D_6",
+        "orbit_dim": 5,
+        "max_deviation": 1.3322676295501878e-15,
+        "pass": true
+      },
+      {
+        "type": "E_6",
+        "orbit_dim": 4,
+        "max_deviation": 1.2212453270876722e-15,
+        "pass": true
+      },
+      {
+        "type": "E_7",
+        "orbit_dim": 7,
+        "max_deviation": 1.998411093477929e-15,
+        "pass": true
+      },
+      {
+        "type": "E_8",
+        "orbit_dim": 8,
+        "max_deviation": 1.7960520073628085e-15,
+        "pass": true
+      }
+    ],
+    "max_deviation": 3.1086244689504383e-15,
+    "pass": true
+  },
+  "T2": {
+    "test": "Aut(G)-equivariance of Hamiltonian",
+    "results": [
+      {
+        "type": "A_3",
+        "n_auts": 2,
+        "orbit_dim": 2,
+        "max_commutator_norm": 2.220446049250313e-16,
+        "pass": true
+      },
+      {
+        "type": "A_4",
+        "n_auts": 2,
+        "orbit_dim": 2,
+        "max_commutator_norm": 0.0,
+        "pass": true
+      },
+      {
+        "type": "D_4",
+        "n_auts": 6,
+        "orbit_dim": 2,
+        "max_commutator_norm": 4.440892098500626e-16,
+        "pass": true
+      },
+      {
+        "type": "D_5",
+        "n_auts": 2,
+        "orbit_dim": 4,
+        "max_commutator_norm": 2.220446049250313e-16,
+        "pass": true
+      },
+      {
+        "type": "E_6",
+        "n_auts": 2,
+        "orbit_dim": 4,
+        "max_commutator_norm": 2.220446049250313e-16,
+        "pass": true
+      }
+    ],
+    "max_commutator": 4.440892098500626e-16,
+    "pass": true
+  },
+  "T3": {
+    "test": "PAC conservation (energy + probability) during orbit dynamics",
+    "results": [
+      {
+        "type": "A_3",
+        "orbit_dim": 2,
+        "initial_energy": 0.0686291501015239,
+        "max_energy_drift": 1.1657341758564144e-15,
+        "max_prob_drift": 5.88418203051333e-15,
+        "orbit_weighted_range": [
+          1.518086281487213,
+          1.7999999999999998
+        ],
+        "orbit_weighted_variation": 0.2819137185127869,
+        "equal_orbit_sizes": false,
+        "pass": true
+      },
+      {
+        "type": "A_4",
+        "orbit_dim": 2,
+        "initial_energy": 0.19999999999999993,
+        "max_energy_drift": 2.3592239273284576e-15,
+        "max_prob_drift": 3.4416913763379853e-15,
+        "orbit_weighted_range": [
+          1.999999999999993,
+          2.0000000000000053
+        ],
+        "orbit_weighted_variation": 1.2434497875801753e-14,
+        "equal_orbit_sizes": true,
+        "pass": true
+      },
+      {
+        "type": "D_4",
+        "orbit_dim": 2,
+        "initial_energy": 0.01435935394489811,
+        "max_energy_drift": 3.608224830031759e-16,
+        "max_prob_drift": 5.662137425588298e-15,
+        "orbit_weighted_range": [
+          2.3928206703376094,
+          2.6
+        ],
+        "orbit_weighted_variation": 0.20717932966239072,
+        "equal_orbit_sizes": false,
+        "pass": true
+      },
+      {
+        "type": "D_6",
+        "orbit_dim": 5,
+        "initial_energy": 0.03431457505076199,
+        "max_energy_drift": 4.996003610813204e-16,
+        "max_prob_drift": 5.88418203051333e-15,
+        "orbit_weighted_range": [
+          1.2,
+          1.4578913475466764
+        ],
+        "orbit_weighted_variation": 0.2578913475466764,
+        "equal_orbit_sizes": false,
+        "pass": true
+      },
+      {
+        "type": "E_6",
+        "orbit_dim": 4,
+        "initial_energy": 0.04289321881345248,
+        "max_energy_drift": 6.245004513516506e-16,
+        "max_prob_drift": 6.439293542825908e-15,
+        "orbit_weighted_range": [
+          1.5,
+          1.8105503699702785
+        ],
+        "orbit_weighted_variation": 0.3105503699702785,
+        "equal_orbit_sizes": false,
+        "pass": true
+      }
+    ],
+    "max_energy_deviation": 2.3592239273284576e-15,
+    "pass": true
+  },
+  "T4": {
+    "test": "Energy eigenvalue structure across ADE",
+    "spectra": [
+      {
+        "type": "A_2",
+        "orbit_dim": 1,
+        "eigenvalues": [
+          0.0
+        ],
+        "spectral_gap": null
+      },
+      {
+        "type": "A_3",
+        "orbit_dim": 2,
+        "eigenvalues": [
+          0.0,
+          3.0
+        ],
+        "spectral_gap": 3.0,
+        "max_min_ratio": 1.0
+      },
+      {
+        "type": "A_4",
+        "orbit_dim": 2,
+        "eigenvalues": [
+          0.0,
+          1.9999999999999996
+        ],
+        "spectral_gap": 1.9999999999999996,
+        "max_min_ratio": 1.0
+      },
+      {
+        "type": "A_5",
+        "orbit_dim": 3,
+        "eigenvalues": [
+          -4.058055395940484e-17,
+          1.3819660112501049,
+          3.6180339887498945
+        ],
+        "spectral_gap": 1.3819660112501049,
+        "max_min_ratio": 2.618033988749895
+      },
+      {
+        "type": "A_6",
+        "orbit_dim": 3,
+        "eigenvalues": [
+          4.8790781824026675e-17,
+          1.0000000000000002,
+          2.999999999999999
+        ],
+        "spectral_gap": 1.0000000000000002,
+        "max_min_ratio": 2.9999999999999987
+      },
+      {
+        "type": "A_7",
+        "orbit_dim": 4,
+        "eigenvalues": [
+          -1.3243625749626849e-16,
+          0.7530203962825327,
+          2.4450418679126282,
+          3.801937735804838
+        ],
+        "spectral_gap": 0.7530203962825328,
+        "max_min_ratio": 5.048917339522307
+      },
+      {
+        "type": "D_4",
+        "orbit_dim": 2,
+        "eigenvalues": [
+          -1.1102230246251565e-16,
+          4.0
+        ],
+        "spectral_gap": 4.0,
+        "max_min_ratio": 1.0
+      },
+      {
+        "type": "D_5",
+        "orbit_dim": 4,
+        "eigenvalues": [
+          -3.0639828880240224e-17,
+          0.5188056959079843,
+          2.3111078174659814,
+          4.170086486626033
+        ],
+        "spectral_gap": 0.5188056959079843,
+        "max_min_ratio": 8.037857948586675
+      },
+      {
+        "type": "D_6",
+        "orbit_dim": 5,
+        "eigenvalues": [
+          -4.535794262764966e-17,
+          0.32486912943335366,
+          1.4608111271891104,
+          3.0,
+          4.214319743377536
+        ],
+        "spectral_gap": 0.3248691294333537,
+        "max_min_ratio": 12.972361365108089
+      },
+      {
+        "type": "E_6",
+        "orbit_dim": 4,
+        "eigenvalues": [
+          -5.167716888318305e-17,
+          0.6972243622680058,
+          2.0,
+          4.302775637731993
+        ],
+        "spectral_gap": 0.6972243622680058,
+        "max_min_ratio": 6.171292729553318
+      },
+      {
+        "type": "E_7",
+        "orbit_dim": 7,
+        "eigenvalues": [
+          2.3773921522878696e-16,
+          0.2603226902583538,
+          0.6262103266277576,
+          1.40547677819872,
+          2.274205016568462,
+          3.099584656803779,
+          4.334200531542926
+        ],
+        "spectral_gap": 0.2603226902583536,
+        "max_min_ratio": 16.64933827797149
+      },
+      {
+        "type": "E_8",
+        "orbit_dim": 8,
+        "eigenvalues": [
+          2.498793279330142e-16,
+          0.18639349735166916,
+          0.585786437626905,
+          1.0,
+          1.9999999999999991,
+          2.4706834198711607,
+          3.414213562373094,
+          4.342923082777169
+        ],
+        "spectral_gap": 0.1863934973516689,
+        "max_min_ratio": 23.29975639967398
+      }
+    ],
+    "phi_matches": 1,
+    "total_with_ratios": 8,
+    "has_phi_structure": false,
+    "pass": true
+  },
+  "T5": {
+    "test": "Time-energy uncertainty from spectral gap",
+    "results": [
+      {
+        "type": "A_3",
+        "spectral_gap": 3.0,
+        "Delta_E": 1.5,
+        "t_transition": 1.0482457969935912,
+        "overlap_at_min": 2.4723412770647884e-06,
+        "product_DeltaE_t": 1.5723686954903868,
+        "theoretical_pi_over_2": 1.5707963267948966,
+        "deviation": 0.0010010010010009247,
+        "pass": true
+      },
+      {
+        "type": "A_4",
+        "spectral_gap": 1.9999999999999996,
+        "Delta_E": 0.9999999999999998,
+        "t_transition": 1.5692239580994067,
+        "overlap_at_min": 2.4723412770644767e-06,
+        "product_DeltaE_t": 1.5692239580994063,
+        "theoretical_pi_over_2": 1.5707963267948966,
+        "deviation": 0.0010010010010009247,
+        "pass": true
+      },
+      {
+        "type": "D_4",
+        "spectral_gap": 4.0,
+        "Delta_E": 2.0,
+        "t_transition": 0.784611979049703,
+        "overlap_at_min": 2.4723412770648515e-06,
+        "product_DeltaE_t": 1.569223958099406,
+        "theoretical_pi_over_2": 1.5707963267948966,
+        "deviation": 0.001001001001001066,
+        "pass": true
+      },
+      {
+        "type": "D_6",
+        "spectral_gap": 0.3248691294333537,
+        "Delta_E": 0.1624345647166766,
+        "t_transition": 9.66065295792489,
+        "overlap_at_min": 2.47234127706155e-06,
+        "product_DeltaE_t": 1.5692239580994038,
+        "theoretical_pi_over_2": 1.5707963267948966,
+        "deviation": 0.0010010010010024796,
+        "pass": true
+      },
+      {
+        "type": "E_6",
+        "spectral_gap": 0.6972243622680058,
+        "Delta_E": 0.3486121811340033,
+        "t_transition": 4.510366477658979,
+        "overlap_at_min": 2.4723412770607214e-06,
+        "product_DeltaE_t": 1.5723686954903884,
+        "theoretical_pi_over_2": 1.5707963267948966,
+        "deviation": 0.0010010010010019143,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "T6": {
+    "test": "Rabi oscillations on D_4",
+    "hamiltonian": [
+      [
+        1.0000000000000002,
+        -1.7320508075688776
+      ],
+      [
+        -1.7320508075688776,
+        3.0
+      ]
+    ],
+    "eigenvalues": [
+      -1.1102230246251565e-16,
+      4.0
+    ],
+    "spectral_gap": 4.0,
+    "rabi_frequency": 2.0,
+    "rabi_period": 3.141592653589793,
+    "max_transfer_theory": 0.7500000000000001,
+    "max_transfer_numerical": 0.7499925681233703,
+    "analytical_match": 3.9968028886505635e-15,
+    "conservation_deviation": 3.1086244689504383e-15,
+    "pass": true
+  },
+  "synthesis": {
+    "score": "6/6",
+    "prediction": "P14: orbit Laplacian as Hamiltonian produces physical dynamics",
+    "key_claims": [
+      "Unitarity of exp(-iL_orb*t) on orbit Hilbert space",
+      "Dynamics commute with Aut(G) (gauge-invariant)",
+      "PAC conservation: orbit-weighted probability is constant",
+      "Mandelstam-Tamm bound holds on orbit space",
+      "D_4 shows Rabi oscillations between hub and leaf orbits"
+    ]
+  }
+}

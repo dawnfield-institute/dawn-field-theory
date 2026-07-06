@@ -1,0 +1,162 @@
+{
+  "experiment": "exp_05_sec_complexification_interference",
+  "milestone": 14,
+  "block": "C",
+  "results": {
+    "T1": {
+      "test": "T1_real_states_no_destructive",
+      "results_per_pair": [
+        {
+          "a1": 0.6,
+          "a2": 0.8,
+          "p_quantum": 1.9599999999999997,
+          "p_classical": 1.0,
+          "interference_term": 0.9599999999999997,
+          "cross_positive": true
+        },
+        {
+          "a1": 0.3,
+          "a2": 0.7,
+          "p_quantum": 1.0,
+          "p_classical": 0.58,
+          "interference_term": 0.42000000000000004,
+          "cross_positive": true
+        },
+        {
+          "a1": 0.5,
+          "a2": 0.5,
+          "p_quantum": 1.0,
+          "p_classical": 0.5,
+          "interference_term": 0.5,
+          "cross_positive": true
+        },
+        {
+          "a1": 0.9,
+          "a2": 0.1,
+          "p_quantum": 1.0,
+          "p_classical": 0.8200000000000001,
+          "interference_term": 0.17999999999999994,
+          "cross_positive": true
+        }
+      ],
+      "all_positive_cross_terms": true,
+      "opposite_sign_has_destructive": true,
+      "PASS": true
+    },
+    "T2": {
+      "test": "T2_complex_interference",
+      "r1": 0.6,
+      "r2": 0.8,
+      "results_per_theta": [
+        {
+          "theta": 0.0,
+          "theta_pi": 0.0,
+          "p_quantum": 1.9599999999999997,
+          "p_classical": 1.0,
+          "interference_term": 0.9599999999999997,
+          "type": "constructive"
+        },
+        {
+          "theta": 0.7853981633974483,
+          "theta_pi": 0.25,
+          "p_quantum": 1.678822509939086,
+          "p_classical": 1.0000000000000002,
+          "interference_term": 0.6788225099390859,
+          "type": "constructive"
+        },
+        {
+          "theta": 1.5707963267948966,
+          "theta_pi": 0.5,
+          "p_quantum": 1.0,
+          "p_classical": 1.0,
+          "interference_term": 0.0,
+          "type": "zero"
+        },
+        {
+          "theta": 2.356194490192345,
+          "theta_pi": 0.75,
+          "p_quantum": 0.3211774900609145,
+          "p_classical": 1.0,
+          "interference_term": -0.6788225099390854,
+          "type": "destructive"
+        },
+        {
+          "theta": 3.141592653589793,
+          "theta_pi": 1.0,
+          "p_quantum": 0.04000000000000003,
+          "p_classical": 1.0,
+          "interference_term": -0.96,
+          "type": "destructive"
+        }
+      ],
+      "has_constructive": true,
+      "has_destructive": true,
+      "has_zero_crossing": true,
+      "PASS": true
+    },
+    "T3": {
+      "test": "T3_visibility_scales_with_phase",
+      "prob_constructive": 4.0,
+      "prob_destructive": 1.4997597826618576e-32,
+      "prob_range": 4.0,
+      "has_full_range": true,
+      "note": "SEC complexification enables full constructive-destructive range",
+      "PASS": true
+    },
+    "T4": {
+      "test": "T4_interference_term_count",
+      "results_per_m": [
+        {
+          "m": 2,
+          "n_cross_terms": 1,
+          "expected_cross_terms": 1,
+          "count_matches": true,
+          "interference": -0.4929951884968409,
+          "cross_sum": -0.49299518849684104,
+          "sum_matches": true,
+          "PASS": true
+        },
+        {
+          "m": 3,
+          "n_cross_terms": 3,
+          "expected_cross_terms": 3,
+          "count_matches": true,
+          "interference": -1.0240136511440852,
+          "cross_sum": -1.0240136511440856,
+          "sum_matches": true,
+          "PASS": true
+        },
+        {
+          "m": 4,
+          "n_cross_terms": 6,
+          "expected_cross_terms": 6,
+          "count_matches": true,
+          "interference": -1.3324621737322597,
+          "cross_sum": -1.3324621737322595,
+          "sum_matches": true,
+          "PASS": true
+        },
+        {
+          "m": 5,
+          "n_cross_terms": 10,
+          "expected_cross_terms": 10,
+          "count_matches": true,
+          "interference": -0.7686443688019959,
+          "cross_sum": -0.7686443688019968,
+          "sum_matches": true,
+          "PASS": true
+        }
+      ],
+      "PASS": true
+    }
+  },
+  "scorecard": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true
+  },
+  "score": "4/4",
+  "n_pass": 4,
+  "n_total": 4
+}
