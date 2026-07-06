@@ -3,10 +3,13 @@ directory_name: symbolic_entropy_collapse
 description: Top-level experiment for symbolic entropy collapse studies.
 semantic_scope: foundational/experiments/symbolic_entropy_collapse
 files:
+- README.md
 - '[m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md'
-- '[x][F][v1.0][C1][I1]_symbolic_entropy_engine.py'
 child_directories:
+- journals
 - reference_material
+- results
+- scripts
 title: Symbolic Entropy Collapse Experiment
 author: Lorne
 date: 2024-06-24

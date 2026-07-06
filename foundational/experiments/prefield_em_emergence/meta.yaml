@@ -1,67 +1,70 @@
-schema_version: "2.0"
-title: "Pre-Field Recursion to 3D Electromagnetic Field Emergence"
-description: |
-  Computational validation that pre-field dynamics on Möbius manifolds,
+schema_version: '2.0'
+title: Pre-Field Recursion to 3D Electromagnetic Field Emergence
+description: 'Computational validation that pre-field dynamics on Möbius manifolds,
+
   evolved via SEC recursion with π-harmonic modulation and projected into
+
   3D space, produce Maxwell-like electromagnetic field structure with
+
   E/B ratios determined by golden ratio powers.
 
+  '
 authors:
-  - "Peter Lorne Groom"
-  - "Claude (Anthropic)"
-
-date_created: "2026-02-02"
-date_modified: "2026-02-02"
-version: "1.0.0"
-
+- Peter Lorne Groom
+- Claude (Anthropic)
+date_created: '2026-02-02'
+date_modified: '2026-02-02'
+version: 1.0.0
 status: experimental_validation_complete
 document_type: foundational_experiment
 field_scope:
-  - pre_field_dynamics
-  - electromagnetic_emergence
-  - mobius_topology
-  - sec_recursion
-  - maxwell_derivation
-
+- pre_field_dynamics
+- electromagnetic_emergence
+- mobius_topology
+- sec_recursion
+- maxwell_derivation
 CIP:
-  identifier: "[id][F][v1.0][C5][I5][E]"
-  type: "Foundational"
-  version: "1.0.0"
+  identifier: '[id][F][v1.0][C5][I5][E]'
+  type: Foundational
+  version: 1.0.0
   complexity: 5
   intelligence: 5
-  epoch: "Emergent"
-
+  epoch: Emergent
 related_documents:
-  - "[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md"
-  - "[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md"
-  - "[m][F][v1.0][C4][I5]_pi_harmonics.md"
-  - "maxwell_from_pac_sec_derivation.md"
-
+- '[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md'
+- '[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md'
+- '[m][F][v1.0][C4][I5]_pi_harmonics.md'
+- maxwell_from_pac_sec_derivation.md
 key_results:
   power_law:
-    formula: "E/B = φ^(-4.42 × w/R + 2.34)"
+    formula: E/B = φ^(-4.42 × w/R + 2.34)
     r_squared: 0.9764
-    description: "Möbius geometry determines electromagnetic coupling"
-  
+    description: Möbius geometry determines electromagnetic coupling
   optimal_geometry:
     w_R_ratio: 0.304
     e_b_ratio: 1.5999
     phi_deviation_percent: 1.12
-    description: "E/B = φ when w/R ≈ 0.304"
-  
+    description: E/B = φ when w/R ≈ 0.304
   pac_convergence:
     improvement_percent: 74
-    description: "PAC consistently improves during evolution"
-  
+    description: PAC consistently improves during evolution
   no_monopoles:
     div_B: 0.0
-    description: "∇·B = 0 guaranteed by B = ∇×A construction"
-
+    description: ∇·B = 0 guaranteed by B = ∇×A construction
 scripts:
-  - scripts/run_all.py
-
+- scripts/run_all.py
 dependencies:
-  - numpy
-  - scipy (optional, for advanced analysis)
-
-license: "Apache-2.0"
+- numpy
+- scipy (optional, for advanced analysis)
+license: Apache-2.0
+files:
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- docs
+- experiments
+- journals
+- results
+- scripts
+- tests

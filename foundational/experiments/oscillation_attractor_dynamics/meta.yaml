@@ -1,40 +1,36 @@
-schema_version: "2.0"
-description: "Primes as injection points with Möbius pairing structure in gap dynamics"
-semantic_scope: "implementation"
-proficiency_level: "research"
-created: "2025-12-24"
-status: "completed"
+schema_version: '2.0'
+description: Primes as injection points with Möbius pairing structure in gap dynamics
+semantic_scope: implementation
+proficiency_level: research
+created: '2025-12-24'
+status: completed
+original_hypothesis: "Primes represent zero-crossing points in an oscillatory system\
+  \ collapsing \ntoward attractors. The SEC stress field E(n) should show damped oscillation\n\
+  dynamics with primes correlating to sign-change events.\n"
+revised_finding: 'Primes are INJECTION POINTS (100% have I(p) > 0) that seed structure
+  into
 
-original_hypothesis: |
-  Primes represent zero-crossing points in an oscillatory system collapsing 
-  toward attractors. The SEC stress field E(n) should show damped oscillation
-  dynamics with primes correlating to sign-change events.
-
-revised_finding: |
-  Primes are INJECTION POINTS (100% have I(p) > 0) that seed structure into
   the number field. The oscillation occurs in the GAPS, not at primes.
+
   Gap pairs show Möbius (a,b)↔(b,a) symmetry at 24x random chance.
+
   Alternation rate converges toward 1/φ as N → ∞.
 
+  '
 key_discoveries:
-  - "I(n) field detects primes at 5x lift (99% recall)"
-  - "Möbius (a,b)↔(b,a) pairing at 24x random rate"
-  - "Gap 6 is the hub of the Möbius network (31 connections)"
-  - "Alternation rate → 1/φ = 0.618 as N → ∞"
-  - "70.4% gap alternation (vs 50% random)"
-
+- I(n) field detects primes at 5x lift (99% recall)
+- Möbius (a,b)↔(b,a) pairing at 24x random rate
+- Gap 6 is the hub of the Möbius network (31 connections)
+- Alternation rate → 1/φ = 0.618 as N → ∞
+- 70.4% gap alternation (vs 50% random)
 experiments_completed: 10
-
 files:
-  - "[meta.yaml]": "Directory metadata"
-  - "[README.md]": "Experiment overview and findings"
-  - "[SYNTHESIS.md]": "Unified findings document"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - core/
-  - scripts/
-  - results/
-  - journals/
-
+- core
+- journals
+- results
+- scripts
 dependencies:
-  - "../sec_prime_manifold/core/sec_core.py"
+- ../sec_prime_manifold/core/sec_core.py

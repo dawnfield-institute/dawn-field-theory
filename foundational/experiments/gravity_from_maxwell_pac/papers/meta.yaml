@@ -1,4 +1,5 @@
-schema_version: "2.0"
-description: "Papers and preprints for gravity from Maxwell derivation"
+schema_version: '2.0'
+description: Papers and preprints for gravity from Maxwell derivation
 semantic_scope: publication
-files: []  # Will be populated when results are mature
+files: []
+child_directories: []

@@ -23,7 +23,8 @@ files:
 - README.md
 - RESULTS.md
 - requirements.txt
-- unified_amplification_framework.py
 child_directories:
 - core
+- journals
 - results
+- scripts

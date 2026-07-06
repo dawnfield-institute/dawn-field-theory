@@ -1,59 +1,35 @@
-schema_version: "2.0"
+schema_version: '2.0'
 directory_name: papers
-description: |
-  PAC Standard Model Connection paper series: Four comprehensive preprints
+description: 'PAC Standard Model Connection paper series: Four comprehensive preprints
+
   establishing the derivation chain from Möbius topology through Fibonacci
+
   emergence to Standard Model gauge structure predictions.
 
+  '
 semantic_scope:
-  - theory
-  - analysis
-  - documentation
-  - fibonacci-gauge
-  - standard-model
-
-proficiency_level: "expert"
+- theory
+- analysis
+- documentation
+- fibonacci-gauge
+- standard-model
+proficiency_level: expert
 estimated_context_weight: 5
-
 files:
-  - path: "[pac][D][v1.0][C4][I5][E]_fibonacci_gauge_derivation_standard_model_preprint.md"
-    description: "Paper 1: Conservation + self-similarity → φ → Fibonacci → gauge dimensions"
-    tags: ["fibonacci", "gauge-theory", "weak-mixing-angle", "derivation"]
-    paper_number: 1
-    
-  - path: "[pac][D][v1.0][C4][I5][E]_depth_seven_gauge_closure_preprint.md"
-    description: "Paper 2: Why F₇ = 13 (multi-constraint uniqueness, magic numbers)"
-    tags: ["depth-seven", "holonomy", "magic-numbers", "constraint-satisfaction"]
-    paper_number: 2
-    
-  - path: "[pac][D][v1.0][C4][I5][E]_complete_fibonacci_assignment_preprint.md"
-    description: "Paper 3: F₃ = chirality, F₅ = electroweak particles, complete mapping"
-    tags: ["fibonacci-assignment", "chirality", "electroweak", "symmetry-breaking"]
-    paper_number: 3
-    
-  - path: "[pac][D][v1.0][C4][I5][E]_testable_predictions_protocols_preprint.md"
-    description: "Paper 4: Falsifiable predictions and experimental protocols"
-    tags: ["predictions", "falsifiability", "experiments", "entanglement", "consciousness"]
-    paper_number: 4
-
+- '[pac][D][v1.0][C4][I5][E]_complete_fibonacci_assignment_preprint.md'
+- '[pac][D][v1.0][C4][I5][E]_depth_seven_gauge_closure_preprint.md'
+- '[pac][D][v1.0][C4][I5][E]_fibonacci_gauge_derivation_standard_model_preprint.md'
+- '[pac][D][v1.0][C4][I5][E]_testable_predictions_protocols_preprint.md'
 child_directories: []
-
-series_summary: |
-  Four-paper series establishing PAC-Fibonacci connection to Standard Model:
-  
-  Paper 1: Derives Fibonacci constraint from conservation + self-similarity
-           Key result: sin²θ_W = 3/13 (0.19% from experiment)
-  
-  Paper 2: Explains why depth 7 (F₇ = 13) for gauge closure
-           Key result: 5 independent constraints uniquely select depth 7
-  
-  Paper 3: Completes Fibonacci assignment (F₃ = chirality, F₅ = EW particles)
-           Key result: No gaps in F₁-F₇ mapping to physics
-  
-  Paper 4: Lists testable predictions with falsification criteria
-           Key result: 16 specific predictions across 5 domains
-
+series_summary: "Four-paper series establishing PAC-Fibonacci connection to Standard\
+  \ Model:\n\nPaper 1: Derives Fibonacci constraint from conservation + self-similarity\n\
+  \         Key result: sin²θ_W = 3/13 (0.19% from experiment)\n\nPaper 2: Explains\
+  \ why depth 7 (F₇ = 13) for gauge closure\n         Key result: 5 independent constraints\
+  \ uniquely select depth 7\n\nPaper 3: Completes Fibonacci assignment (F₃ = chirality,\
+  \ F₅ = EW particles)\n         Key result: No gaps in F₁-F₇ mapping to physics\n\
+  \nPaper 4: Lists testable predictions with falsification criteria\n         Key\
+  \ result: 16 specific predictions across 5 domains\n"
 related_work:
-  - "../../../docs/[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md"
-  - "../../../docs/preprints/drafts/PACSeries/"
-  - "../../../docs/preprints/drafts/[pac][D][v1.0][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md"
+- ../../../docs/[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md
+- ../../../docs/preprints/drafts/PACSeries/
+- ../../../docs/preprints/drafts/[pac][D][v1.0][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md

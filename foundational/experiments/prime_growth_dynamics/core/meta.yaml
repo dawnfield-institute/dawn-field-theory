@@ -1,7 +1,7 @@
-schema_version: "2.0"
-description: "Reusable library code for prime growth dynamics analysis"
-semantic_scope: "implementation"
-proficiency_level: "research"
-
+schema_version: '2.0'
+description: Reusable library code for prime growth dynamics analysis
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[growth_engine.py]": "Core functions for prime injection, crystallization, and PAC analysis"
+- growth_engine.py
+child_directories: []

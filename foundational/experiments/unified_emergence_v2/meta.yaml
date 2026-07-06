@@ -16,8 +16,9 @@ semantic_scope:
 files:
 - README.md
 - requirements.txt
-- run_validation.py
 child_directories:
 - docs
+- journals
 - results
+- scripts
 - src

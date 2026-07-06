@@ -1,5 +1,23 @@
-schema_version: "2.0"
-description: "Research logs for minimum actualization resolution experiment"
-semantic_scope: "documentation"
+schema_version: '2.0'
+description: Research logs for minimum actualization resolution experiment
+semantic_scope: documentation
 files:
-  - "[2026-03-12_promotion.md]": "Promotion journal: sandbox to formal experiment"
+- 2026-03-12_promotion.md
+- 2026-03-13_exp28_statistical_relativity.md
+- 2026-03-14_exp29_global_local_duality.md
+- 2026-03-14_exp30_cascade_general_relativity.md
+- 2026-03-14_exp31_cascade_gravity_stress_test.md
+- 2026-03-14_exp32_einstein_field_equations.md
+- 2026-03-14_exp33_falsification_sweep.md
+- 2026-03-14_exp34_g_sharpening.md
+- 2026-03-14_exp35_cosmological_constant.md
+- 2026-03-14_exp36_local_global_tiling.md
+- 2026-03-14_exp37_correction_template_origin.md
+- 2026-03-14_exp38_four_force_template.md
+- 2026-03-14_exp39_strong_template_selection.md
+- 2026-03-14_exp40_open_question_sweep.md
+- 2026-03-15_exp41_actualization_ratio_field_dynamics.md
+- 2026-03-15_exp42_emergent_actualization_attractor.md
+- 2026-03-15_exp43_emergent_coupling_constants.md
+- 2026-04-18_part_b_bridge_analysis.md
+child_directories: []
