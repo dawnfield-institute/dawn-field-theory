@@ -11,8 +11,9 @@ semantic_scope:
 files:
 - InfoDyn_Validation_BifractalCollapse_v0.1.yaml
 - InfoDyn_Validation_LineageTrace.tsv
-- results.md
-- symbolic_bifractal_expansion_v1.py
-- symbolic_bifractal_expansion_v2.py
+- README.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts

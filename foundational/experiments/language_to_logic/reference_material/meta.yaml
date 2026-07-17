@@ -5,7 +5,7 @@ contains:
 - 2025-06-21_125818/
 description: All reference outputs and artifacts for language-to-logic entropy experiments,
   organized by run timestamp.
-schema_version: "2.0"
+schema_version: '2.0'
 status: VALIDATED
 files: []
 child_directories:

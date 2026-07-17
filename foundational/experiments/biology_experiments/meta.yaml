@@ -10,6 +10,7 @@ semantic_scope:
 - symbolic collapse
 - quantum validation
 - evolutionary analysis
-files: []
+files:
+- README.md
 child_directories:
 - evolution-symbolic-collapse

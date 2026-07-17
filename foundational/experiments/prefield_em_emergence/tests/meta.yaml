@@ -1,9 +1,8 @@
-schema_version: "2.0"
-description: "Unit tests for core modules"
-semantic_scope: "implementation"
-proficiency_level: "research"
-
+schema_version: '2.0'
+description: Unit tests for core modules
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[test_core.py]": "Unit tests for MobiusField, SECOperator, EMProjector"
-
-run_command: "python tests/test_core.py"
+- test_core.py
+run_command: python tests/test_core.py
+child_directories: []

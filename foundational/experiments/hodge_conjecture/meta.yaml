@@ -14,18 +14,10 @@ semantic_scope:
 - robustness
 - results
 files:
-- hodge_field_simulation.py
-- prime_modulated_collapse.py
-- prime_modulated_collapsev10.py
-- prime_modulated_collapsev11.py
-- prime_modulated_collapsev2.py
-- prime_modulated_collapsev3.py
-- prime_modulated_collapsev4.py
-- prime_modulated_collapsev5.py
-- prime_modulated_collapsev6.py
-- prime_modulated_collapsev7.py
-- prime_modulated_collapsev8.py
-- prime_modulated_collapsev9.py
+- README.md
 - unification_plan.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts
