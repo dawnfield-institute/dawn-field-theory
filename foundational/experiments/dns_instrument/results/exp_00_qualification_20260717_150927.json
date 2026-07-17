@@ -1,0 +1,19 @@
+{
+  "experiment": "exp_00_qualification",
+  "Q1_taylor_green": {
+    "max_abs_error": 1.9984014443252818e-15,
+    "pass": true
+  },
+  "Q2_energy_budget": {
+    "E0": 0.01110375976605649,
+    "E1": 0.007513786577259241,
+    "integrated_dissipation": -0.003589973234536228,
+    "relative_residual": 4.119233443492653e-09,
+    "pass": true
+  },
+  "Q3_resolution": {
+    "relative_l2_diff_common_band": 2.5114726440811744e-05,
+    "pass": false
+  },
+  "qualified": false
+}

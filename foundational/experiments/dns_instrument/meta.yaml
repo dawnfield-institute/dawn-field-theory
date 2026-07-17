@@ -1,0 +1,26 @@
+schema_version: '2.0'
+directory_name: dns_instrument
+description: >
+  Real-fluid instrument for the re-founded turbulence program: 2D
+  incompressible Navier-Stokes, vorticity-streamfunction pseudo-spectral
+  (2/3-dealiased, RK4), qualified against exact solutions before any
+  physics use. v0 is the CPU prototype (numpy FFT); the 3090 port swaps
+  the array backend, not the logic. No physics claims are made at this
+  stage -- instrument qualification only. Registered measurement runs
+  (2D She-Leveque analog k=4 on real flow, MAR k(2+1)=5.18) follow on
+  GPU under their own pre-registration.
+semantic_scope:
+- navier-stokes
+- pseudo-spectral
+- DNS
+- instrument-qualification
+- taylor-green
+- energy-budget
+- turbulence
+files:
+- README.md
+child_directories:
+- core
+- scripts
+- results
+- journals
