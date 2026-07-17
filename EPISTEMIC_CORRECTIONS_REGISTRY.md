@@ -365,9 +365,9 @@ A full code-and-artifacts audit of the turbulence/Navier-Stokes/cascade stack (2
 
 The affine-vertex reading of the cascade k−1 offset (registered R2) was KILLED (median ρ = 0.91, direction reversed). The exp_05 anchor gate caught and voided an instrument sign-convention bug before any k > 2 result was read.
 
-### Documents still to update (open)
+### Where the prior formulation lives (lineage, not a TODO)
 
-The preprints `macro_emergence_dynamics_navier_stokes`, `bidirectional_sec_pac_fluid`, and `she_leveque_fibonacci_turbulence` still carry the uncorrected claims; `UNIFIED_EVIDENCE.md` repeats the mode-count framing. Pending owner review.
+The preprints `macro_emergence_dynamics_navier_stokes`, `bidirectional_sec_pac_fluid`, and `she_leveque_fibonacci_turbulence` (and `UNIFIED_EVIDENCE.md`) still carry the earlier formulation. This is deliberate: they are the **prior layer of the lineage** — snapshots of where the thinking was — and the correction is recorded *forward* here, in the changelog, and in the graph rather than by rewriting them. Per the Imperfection Engine, the visible progression (old claim → forward correction) *is* the record of motion. Whether and when to issue revised preprint versions is the author's call; it is not required for the registry's correctness.
 
 ---
 
