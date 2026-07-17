@@ -70,6 +70,7 @@ on the orbit quotient* — a class-level (cohomological) metric. This is not a d
 | 02 | `exp_02_coherence_per_scope.py` | M13.5 exp_15 — per-class limits and their ratios | **0/3 KILLED** — boundary-dominated observable |
 | 03 | `exp_03_representative_gauge.py` | M14 exp_06 — visibility under Aut-breaking gauge ε | deferred (M14 null is static) |
 | 04 | `exp_04_holonomy_closed_form.py` | derivation-verification of θ(m) | **GATE PASS** — formula + theorems proven |
+| 05 | `exp_05_general_k_limit.py` | general-k limit: K1 (odd-harmonic) vs K2 (Fibonacci) | **OPEN — both dead** (L₃=5.491, L₄=11.186 [D]); F₆/F₄ coincidence retired; ℤ₂ even-telescoping universal |
 
 Pre-registration: `journals/2026-06-11_m15-exp01-03-preregistration.md`. Round-1 outcomes:
 `journals/2026-06-11_m15-round1-outcomes.md`. All claims relational per the
