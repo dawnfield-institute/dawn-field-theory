@@ -98,3 +98,49 @@ established.
   or rule touched).
 - Running Midnight meta-pattern intact: the **local/relational** form of a prediction carries
   signal; the **global/coordinate** form (exp_19/21) carried artifacts.
+
+---
+
+## Post-hoc diagnostic (2026-06-14): why inconclusive, and the corrected observable
+
+Exploratory follow-up (`explore_inconclusiveness.py`, `explore_contrast.py`) — **post-hoc on the
+same data, hypothesis-generating, NOT a result**; the registered verdict above stands. Captured
+because it sharply reframes the next prediction.
+
+**The inconclusiveness was structural + methodological, not low power.**
+- *Wrong test.* R1 tested a monotone IP-ordering, but leave-one-ion-out shows the "trend" is
+  carried entirely by the two IP extremes (drop AlII or CIV → rho 0.43→0.09; drop any middle ion
+  → rho rises to 0.49–0.66). The middle (SiII, CII, SiIV: 8–34 eV) is a dead-flat plateau at
+  c = −1.07 ± 0.03.
+- *Centering shadow.* That flat plateau is a mean-centering artifact: subtracting the scope mean
+  imprints a common recoil slope on passive ions. Removing the centering (direct pairwise
+  contrasts) dissolves the plateau and exposes the signal.
+
+**The corrected picture — the carriers are CIV and MgII, not an IP class.**
+Centering-free, slope of (logN_hi − logN_lo) vs local cascade phase diseq:
+
+| pair | n | slope | CI95 |
+|------|--:|------:|------|
+| CIV − AlII | 24 | +4.22 | [+2.47, +6.30] ✓ |
+| CIV − AlIII | 11 | +3.05 | [+0.55, +8.10] ✓ |
+| CIV − FeII | 28 | +2.35 | [+0.57, +4.70] ✓ |
+| **SiIV** − FeII | 19 | −0.88 | [−3.62, +1.52] |
+| CIV − **MgII** | 30 | −0.17 | flat |
+
+- **CIV** swings hard against passive ions toward cascade transitions. **SiIV** (also IP > E_H)
+  does **not** — so the E_H / IP-threshold split is the wrong axis.
+- **CIV − MgII is flat** → MgII swings *with* CIV. The active set is **CIV + MgII** — exactly the
+  two clean resonance doublets the 2026-06-08 tapestry flagged (MgII p=10⁻¹¹, CIV p≈0; FeII the
+  anomaly). Two independent analyses → the same ion set: corroboration, not coincidence.
+- AlII's strong negative coupling in the registered run was **centering recoil** (it is the most
+  passive ion, so it recoils hardest against CIV's rise) — which is why CIV−AlII is the largest
+  swing. The "sign-flip near E_H" reading is superseded by this.
+
+**Caveats (post-hoc):** single dataset, active set found by inspection; slopes are extrapolated
+(diseq never exceeds 0.44 — never a real transition); small n per pair. The bootstrap CIs
+excluding zero are real but this is the *hypothesis*, not its confirmation.
+
+**Next registered prediction (writes itself):** *the clean-doublet ions (CIV, MgII) swing in
+abundance/coherence relative to passive ions as a function of local cascade phase* — pre-register
+on **new data (DESI multi-ion absorbers), ideally reaching diseq > 0.7** (a real transition). The
+active-ion set is now independently motivated by the tapestry, so the grouping is non-circular.

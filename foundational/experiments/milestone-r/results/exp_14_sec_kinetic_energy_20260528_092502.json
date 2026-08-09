@@ -1,0 +1,247 @@
+{
+  "experiment": "exp_14_sec_kinetic_energy",
+  "timestamp": "2026-05-28T09:25:02.255672",
+  "block": "C",
+  "thesis": "The GN sign problem arises because perturbation controls both barrier height AND energy. In nuclear physics these are independent: Coulomb barrier (structural, Z) vs alpha kinetic energy (dynamical, Q-value). In PAC/SEC: barrier = perspectival JSD (PAC, structural), kinetic energy = noise amplitude (SEC, dynamical entropy flux). Higher SEC flux -> more fluctuations -> barrier crossed sooner -> shorter FPT. This is the GN sign fix.",
+  "test_results": {
+    "T1": {
+      "description": "Negative correlation between noise and FPT (more kinetic energy = faster crossing)",
+      "perturbation": 2.0,
+      "noise_levels": [
+        0.003,
+        0.005,
+        0.008,
+        0.012,
+        0.018,
+        0.025,
+        0.035
+      ],
+      "median_fpts": [
+        32.0,
+        35.0,
+        38.0,
+        43.0,
+        67.0,
+        104.5,
+        135.5
+      ],
+      "spearman_rho": 1.0,
+      "gn_slope": -0.0461,
+      "gn_r2": 0.7412,
+      "target_jsd_0": 0.408,
+      "PASS": false
+    },
+    "T2": {
+      "description": "Partial correlations: FPT~barrier (+), FPT~noise (-)",
+      "n_points": 56,
+      "coeff_barrier_jsd": -1.6875,
+      "coeff_noise_sec": 6.4645,
+      "r2_combined": 0.3971,
+      "rho_jsd_fpt": -0.5296,
+      "rho_noise_fpt": 0.291,
+      "PASS": false
+    },
+    "T3": {
+      "description": "R^2 > 0.5 for combined variable, positive slope",
+      "n_points": 16,
+      "gn_combined_slope": 1.4288,
+      "gn_combined_r2": 0.245,
+      "old_pert_only_slope": -1.9444,
+      "old_pert_only_r2": 0.7624,
+      "data_points": [
+        {
+          "perturbation": 0.5,
+          "noise": 0.005,
+          "initial_jsd": 0.0036744713133933897,
+          "median_fpt": 1.0,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 0.5,
+          "noise": 0.01,
+          "initial_jsd": 0.0036744713133933897,
+          "median_fpt": 1.0,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 0.5,
+          "noise": 0.02,
+          "initial_jsd": 0.0036744713133933897,
+          "median_fpt": 1.0,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 0.5,
+          "noise": 0.035,
+          "initial_jsd": 0.0036744713133933897,
+          "median_fpt": 7.0,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 1.0,
+          "noise": 0.005,
+          "initial_jsd": 0.011456875501600516,
+          "median_fpt": 15.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 1.0,
+          "noise": 0.01,
+          "initial_jsd": 0.011456875501600516,
+          "median_fpt": 20.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 1.0,
+          "noise": 0.02,
+          "initial_jsd": 0.011456875501600516,
+          "median_fpt": 49.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 1.0,
+          "noise": 0.035,
+          "initial_jsd": 0.011456875501600516,
+          "median_fpt": 135.0,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 2.0,
+          "noise": 0.005,
+          "initial_jsd": 0.030831656537719125,
+          "median_fpt": 36.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 2.0,
+          "noise": 0.01,
+          "initial_jsd": 0.030831656537719125,
+          "median_fpt": 52.0,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 2.0,
+          "noise": 0.02,
+          "initial_jsd": 0.030831656537719125,
+          "median_fpt": 90.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 2.0,
+          "noise": 0.035,
+          "initial_jsd": 0.030831656537719125,
+          "median_fpt": 142.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 4.0,
+          "noise": 0.005,
+          "initial_jsd": 0.06928375339453337,
+          "median_fpt": 63.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 4.0,
+          "noise": 0.01,
+          "initial_jsd": 0.06928375339453337,
+          "median_fpt": 83.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 4.0,
+          "noise": 0.02,
+          "initial_jsd": 0.06928375339453337,
+          "median_fpt": 116.5,
+          "n_converged": 100
+        },
+        {
+          "perturbation": 4.0,
+          "noise": 0.035,
+          "initial_jsd": 0.06928375339453337,
+          "median_fpt": 152.0,
+          "n_converged": 100
+        }
+      ],
+      "PASS": false
+    },
+    "T4": {
+      "description": "Negative rho(noise, FPT) for majority of graph types",
+      "per_graph": [
+        {
+          "graph": "D_5",
+          "target": 2,
+          "degree": 3,
+          "rho_noise_fpt": 1.0,
+          "sign_correct": false,
+          "n_noise_levels": 4,
+          "fpts": [
+            32.0,
+            37.0,
+            48.5,
+            110.5
+          ]
+        },
+        {
+          "graph": "D_6",
+          "target": 3,
+          "degree": 3,
+          "rho_noise_fpt": 1.0,
+          "sign_correct": false,
+          "n_noise_levels": 4,
+          "fpts": [
+            32.0,
+            37.0,
+            51.5,
+            173.0
+          ]
+        },
+        {
+          "graph": "D_7",
+          "target": 4,
+          "degree": 3,
+          "rho_noise_fpt": 1.0,
+          "sign_correct": false,
+          "n_noise_levels": 4,
+          "fpts": [
+            32.0,
+            39.5,
+            70.0,
+            123.5
+          ]
+        },
+        {
+          "graph": "E_6",
+          "target": 2,
+          "degree": 3,
+          "rho_noise_fpt": 1.0,
+          "sign_correct": false,
+          "n_noise_levels": 4,
+          "fpts": [
+            34.5,
+            44.5,
+            119.5,
+            309.5
+          ]
+        },
+        {
+          "graph": "E_7",
+          "target": 2,
+          "degree": 3,
+          "rho_noise_fpt": 1.0,
+          "sign_correct": false,
+          "n_noise_levels": 4,
+          "fpts": [
+            38.5,
+            46.0,
+            119.0,
+            233.5
+          ]
+        }
+      ],
+      "correct_count": 0,
+      "total_graphs": 5,
+      "PASS": false
+    }
+  },
+  "overall_score": "0/4"
+}

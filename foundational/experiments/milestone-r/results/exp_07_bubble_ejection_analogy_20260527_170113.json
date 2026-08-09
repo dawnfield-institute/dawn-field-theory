@@ -1,0 +1,208 @@
+{
+  "experiment": "exp_07_bubble_ejection_analogy",
+  "timestamp": "2026-05-27T17:01:13.633621",
+  "block": "C",
+  "test_results": {
+    "T1": {
+      "description": "Same-orbit vertices give identical severance energy (machine precision)",
+      "details": [
+        {
+          "graph": "A_2",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_3",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_4",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_4",
+          "orbit": 1,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_5",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_5",
+          "orbit": 1,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_6",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_6",
+          "orbit": 1,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_6",
+          "orbit": 2,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_7",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_7",
+          "orbit": 1,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_7",
+          "orbit": 2,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_8",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_8",
+          "orbit": 1,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_8",
+          "orbit": 2,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "A_8",
+          "orbit": 3,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "D_4",
+          "orbit": 0,
+          "orbit_size": 3,
+          "energy_spread": 8.881784197001252e-16,
+          "isotropic": true
+        },
+        {
+          "graph": "D_5",
+          "orbit": 3,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "D_6",
+          "orbit": 4,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "D_7",
+          "orbit": 5,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "D_8",
+          "orbit": 6,
+          "orbit_size": 2,
+          "energy_spread": 0.0,
+          "isotropic": true
+        },
+        {
+          "graph": "E_6",
+          "orbit": 0,
+          "orbit_size": 2,
+          "energy_spread": 4.440892098500626e-15,
+          "isotropic": true
+        },
+        {
+          "graph": "E_6",
+          "orbit": 1,
+          "orbit_size": 2,
+          "energy_spread": 8.881784197001252e-16,
+          "isotropic": true
+        }
+      ],
+      "PASS": true
+    },
+    "T2": {
+      "description": "Anderson-Darling test for exponential, p > 0.05",
+      "n_ejected": 5000,
+      "n_total": 5000,
+      "mean_time": 2.0012,
+      "ad_statistic": 2288.2429833305678,
+      "critical_5pct": 1.341,
+      "PASS": false
+    },
+    "T3": {
+      "description": "Efficiency ratio >= 2.0 for nuclear depths",
+      "ratios": [
+        10.584274899611362,
+        10.584274899611362,
+        10.584274899611364,
+        10.584274899611362,
+        10.584274899611362,
+        10.584274899611362
+      ],
+      "mean_ratio": 10.58427489961136,
+      "all_above_2": true,
+      "PASS": true
+    },
+    "T4": {
+      "description": "phi^(-(DEPTH_GRAVITY - nuclear_depth)) < 1e-37",
+      "nuclear_depth": 5,
+      "gravity_depth": 183,
+      "depth_difference": 178,
+      "ratio": 6.312480295958668e-38,
+      "log10_ratio": -37.199799964496215,
+      "coupling_ratio": 6.312480295958669e-38,
+      "PASS": true
+    }
+  },
+  "overall_score": "3/4"
+}

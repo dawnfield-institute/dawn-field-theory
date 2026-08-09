@@ -1,0 +1,402 @@
+{
+  "experiment": "exp_18_multichannel_fingerprint",
+  "timestamp": "2026-05-28T10:26:22.542206",
+  "block": "C",
+  "thesis": "Real spectra encode multiple properties per line (position, width, intensity). The PAC analog uses three channels per vertex: (1) stress FPT = barrier height (degree), (2) perspectival JSD = identity shape (information), (3) heat kernel signature = global position (spectral). Combined, these form a unique topology fingerprint that distinguishes graphs even with identical degree sequences.",
+  "test_results": {
+    "T1": {
+      "description": "All same-size pairs distinguishable by combined fingerprint",
+      "pair_results": [
+        {
+          "pair": "A_5 vs D_5",
+          "size": 5,
+          "l2_dist": 1.15,
+          "norm_fpt": 2.485,
+          "norm_jsd": 2.365,
+          "norm_cent": 1.675,
+          "norm_combined": 3.817,
+          "distinguishable": true
+        },
+        {
+          "pair": "A_6 vs D_6",
+          "size": 6,
+          "l2_dist": 1.78,
+          "norm_fpt": 4.0,
+          "norm_jsd": 2.002,
+          "norm_cent": 1.692,
+          "norm_combined": 4.782,
+          "distinguishable": true
+        },
+        {
+          "pair": "A_6 vs E_6",
+          "size": 6,
+          "l2_dist": 1.44,
+          "norm_fpt": 3.795,
+          "norm_jsd": 2.209,
+          "norm_cent": 1.678,
+          "norm_combined": 4.701,
+          "distinguishable": true
+        },
+        {
+          "pair": "D_6 vs E_6",
+          "size": 6,
+          "l2_dist": 1.06,
+          "norm_fpt": 2.028,
+          "norm_jsd": 1.927,
+          "norm_cent": 0.397,
+          "norm_combined": 2.826,
+          "distinguishable": true
+        },
+        {
+          "pair": "A_7 vs D_7",
+          "size": 7,
+          "l2_dist": 0.58,
+          "norm_fpt": 1.117,
+          "norm_jsd": 1.967,
+          "norm_cent": 1.74,
+          "norm_combined": 2.854,
+          "distinguishable": true
+        },
+        {
+          "pair": "A_7 vs E_7",
+          "size": 7,
+          "l2_dist": 0.57,
+          "norm_fpt": 1.117,
+          "norm_jsd": 1.867,
+          "norm_cent": 1.722,
+          "norm_combined": 2.775,
+          "distinguishable": true
+        },
+        {
+          "pair": "D_7 vs E_7",
+          "size": 7,
+          "l2_dist": 0.18,
+          "norm_fpt": 0.0,
+          "norm_jsd": 0.763,
+          "norm_cent": 0.312,
+          "norm_combined": 0.824,
+          "distinguishable": false
+        },
+        {
+          "pair": "A_8 vs D_8",
+          "size": 8,
+          "l2_dist": 1.09,
+          "norm_fpt": 2.016,
+          "norm_jsd": 2.048,
+          "norm_cent": 1.799,
+          "norm_combined": 3.39,
+          "distinguishable": true
+        },
+        {
+          "pair": "A_8 vs E_8",
+          "size": 8,
+          "l2_dist": 0.24,
+          "norm_fpt": 0.0,
+          "norm_jsd": 1.928,
+          "norm_cent": 1.784,
+          "norm_combined": 2.627,
+          "distinguishable": true
+        },
+        {
+          "pair": "D_8 vs E_8",
+          "size": 8,
+          "l2_dist": 1.08,
+          "norm_fpt": 2.016,
+          "norm_jsd": 0.696,
+          "norm_cent": 0.322,
+          "norm_combined": 2.157,
+          "distinguishable": true
+        }
+      ],
+      "n_distinguishable": 9,
+      "n_total": 10,
+      "PASS": false
+    },
+    "T2": {
+      "description": "Pairwise channel correlation < 0.8 for majority",
+      "per_graph": [
+        {
+          "graph": "A_5",
+          "rho_fpt_jsd": 0.667,
+          "rho_fpt_cent": -0.632,
+          "rho_jsd_cent": 0.105,
+          "max_abs_rho": 0.667,
+          "independent": true
+        },
+        {
+          "graph": "A_6",
+          "rho_fpt_jsd": NaN,
+          "rho_fpt_cent": NaN,
+          "rho_jsd_cent": 0.478,
+          "max_abs_rho": NaN,
+          "independent": false
+        },
+        {
+          "graph": "A_7",
+          "rho_fpt_jsd": -0.126,
+          "rho_fpt_cent": -0.259,
+          "rho_jsd_cent": 0.643,
+          "max_abs_rho": 0.643,
+          "independent": true
+        },
+        {
+          "graph": "A_8",
+          "rho_fpt_jsd": -0.609,
+          "rho_fpt_cent": -0.845,
+          "rho_jsd_cent": 0.72,
+          "max_abs_rho": 0.845,
+          "independent": false
+        },
+        {
+          "graph": "D_5",
+          "rho_fpt_jsd": 0.725,
+          "rho_fpt_cent": -0.725,
+          "rho_jsd_cent": -0.368,
+          "max_abs_rho": 0.725,
+          "independent": true
+        },
+        {
+          "graph": "D_6",
+          "rho_fpt_jsd": 0.297,
+          "rho_fpt_cent": -0.878,
+          "rho_jsd_cent": -0.232,
+          "max_abs_rho": 0.878,
+          "independent": false
+        },
+        {
+          "graph": "D_7",
+          "rho_fpt_jsd": 0.479,
+          "rho_fpt_cent": -0.632,
+          "rho_jsd_cent": -0.162,
+          "max_abs_rho": 0.632,
+          "independent": true
+        },
+        {
+          "graph": "D_8",
+          "rho_fpt_jsd": 0.663,
+          "rho_fpt_cent": -0.549,
+          "rho_jsd_cent": -0.121,
+          "max_abs_rho": 0.663,
+          "independent": true
+        },
+        {
+          "graph": "E_6",
+          "rho_fpt_jsd": -0.107,
+          "rho_fpt_cent": -0.621,
+          "rho_jsd_cent": 0.441,
+          "max_abs_rho": 0.621,
+          "independent": true
+        },
+        {
+          "graph": "E_7",
+          "rho_fpt_jsd": -0.16,
+          "rho_fpt_cent": -0.632,
+          "rho_jsd_cent": 0.468,
+          "max_abs_rho": 0.632,
+          "independent": true
+        },
+        {
+          "graph": "E_8",
+          "rho_fpt_jsd": -0.171,
+          "rho_fpt_cent": -0.845,
+          "rho_jsd_cent": 0.506,
+          "max_abs_rho": 0.845,
+          "independent": false
+        }
+      ],
+      "n_independent": 7,
+      "n_total": 11,
+      "PASS": true
+    },
+    "T3": {
+      "description": "Eigenvalue distance > 0 for D_n vs E_n pairs",
+      "pair_results": [
+        {
+          "pair": "D_6 vs E_6",
+          "same_degree_seq": true,
+          "eigenvalue_dist": 0.7344,
+          "hks_dist": 0.045239,
+          "eigs1": [
+            -0.0,
+            0.3249,
+            1.0,
+            1.4608,
+            3.0,
+            4.2143
+          ],
+          "eigs2": [
+            -0.0,
+            0.382,
+            0.6972,
+            2.0,
+            2.618,
+            4.3028
+          ],
+          "distinguishable": true
+        },
+        {
+          "pair": "D_7 vs E_7",
+          "same_degree_seq": true,
+          "eigenvalue_dist": 0.6264,
+          "hks_dist": 0.034605,
+          "eigs1": [
+            -0.0,
+            0.2254,
+            1.0,
+            1.0,
+            2.1859,
+            3.3604,
+            4.2283
+          ],
+          "eigs2": [
+            -0.0,
+            0.2603,
+            0.6262,
+            1.4055,
+            2.2742,
+            3.0996,
+            4.3342
+          ],
+          "distinguishable": true
+        },
+        {
+          "pair": "D_8 vs E_8",
+          "same_degree_seq": true,
+          "eigenvalue_dist": 0.4785,
+          "hks_dist": 0.034385,
+          "eigs1": [
+            -0.0,
+            0.1667,
+            0.7276,
+            1.0,
+            1.6353,
+            2.6729,
+            3.5643,
+            4.2332
+          ],
+          "eigs2": [
+            -0.0,
+            0.1864,
+            0.5858,
+            1.0,
+            2.0,
+            2.4707,
+            3.4142,
+            4.3429
+          ],
+          "distinguishable": true
+        }
+      ],
+      "n_distinguishable": 3,
+      "n_total": 3,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Accuracy > 80% within same-size groups",
+      "classification_results": [
+        {
+          "test": "A_5",
+          "nearest": "D_5",
+          "nearest_dist": 1.15,
+          "all_dists": {
+            "D_5": 1.15
+          }
+        },
+        {
+          "test": "D_5",
+          "nearest": "A_5",
+          "nearest_dist": 1.15,
+          "all_dists": {
+            "A_5": 1.15
+          }
+        },
+        {
+          "test": "A_6",
+          "nearest": "E_6",
+          "nearest_dist": 1.44,
+          "all_dists": {
+            "D_6": 1.78,
+            "E_6": 1.44
+          }
+        },
+        {
+          "test": "D_6",
+          "nearest": "E_6",
+          "nearest_dist": 1.06,
+          "all_dists": {
+            "A_6": 1.78,
+            "E_6": 1.06
+          }
+        },
+        {
+          "test": "E_6",
+          "nearest": "D_6",
+          "nearest_dist": 1.06,
+          "all_dists": {
+            "A_6": 1.44,
+            "D_6": 1.06
+          }
+        },
+        {
+          "test": "A_7",
+          "nearest": "E_7",
+          "nearest_dist": 0.57,
+          "all_dists": {
+            "D_7": 0.58,
+            "E_7": 0.57
+          }
+        },
+        {
+          "test": "D_7",
+          "nearest": "E_7",
+          "nearest_dist": 0.18,
+          "all_dists": {
+            "A_7": 0.58,
+            "E_7": 0.18
+          }
+        },
+        {
+          "test": "E_7",
+          "nearest": "D_7",
+          "nearest_dist": 0.18,
+          "all_dists": {
+            "A_7": 0.57,
+            "D_7": 0.18
+          }
+        },
+        {
+          "test": "A_8",
+          "nearest": "E_8",
+          "nearest_dist": 0.24,
+          "all_dists": {
+            "D_8": 1.09,
+            "E_8": 0.24
+          }
+        },
+        {
+          "test": "D_8",
+          "nearest": "E_8",
+          "nearest_dist": 1.08,
+          "all_dists": {
+            "A_8": 1.09,
+            "E_8": 1.08
+          }
+        },
+        {
+          "test": "E_8",
+          "nearest": "A_8",
+          "nearest_dist": 0.24,
+          "all_dists": {
+            "A_8": 0.24,
+            "D_8": 1.08
+          }
+        }
+      ],
+      "correct": 11,
+      "total": 11,
+      "accuracy": 1.0,
+      "PASS": true
+    }
+  },
+  "overall_score": "3/4"
+}

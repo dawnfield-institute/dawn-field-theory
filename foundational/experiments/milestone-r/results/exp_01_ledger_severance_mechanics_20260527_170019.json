@@ -1,0 +1,184 @@
+{
+  "experiment": "exp_01_ledger_severance_mechanics",
+  "timestamp": "2026-05-27T17:00:19.989723",
+  "block": "A",
+  "test_results": {
+    "T1": {
+      "description": "PAC conservation: total spectral energy before = after + shift",
+      "errors": [
+        1.5713086520817915e-16,
+        0.0,
+        0.0
+      ],
+      "max_error": 1.5713086520817915e-16,
+      "PASS": true
+    },
+    "T2": {
+      "description": "Distinct severance energies == number of orbits for all ADE",
+      "details": [
+        {
+          "graph": "A_1",
+          "n_vertices": 1,
+          "n_orbits": 1,
+          "distinct_energies": 1,
+          "match": true
+        },
+        {
+          "graph": "A_2",
+          "n_vertices": 2,
+          "n_orbits": 1,
+          "distinct_energies": 1,
+          "match": true
+        },
+        {
+          "graph": "A_3",
+          "n_vertices": 3,
+          "n_orbits": 2,
+          "distinct_energies": 2,
+          "match": true
+        },
+        {
+          "graph": "A_4",
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "distinct_energies": 2,
+          "match": true
+        },
+        {
+          "graph": "A_5",
+          "n_vertices": 5,
+          "n_orbits": 3,
+          "distinct_energies": 2,
+          "match": false
+        },
+        {
+          "graph": "A_6",
+          "n_vertices": 6,
+          "n_orbits": 3,
+          "distinct_energies": 2,
+          "match": false
+        },
+        {
+          "graph": "A_7",
+          "n_vertices": 7,
+          "n_orbits": 4,
+          "distinct_energies": 2,
+          "match": false
+        },
+        {
+          "graph": "A_8",
+          "n_vertices": 8,
+          "n_orbits": 4,
+          "distinct_energies": 2,
+          "match": false
+        },
+        {
+          "graph": "D_4",
+          "n_vertices": 4,
+          "n_orbits": 2,
+          "distinct_energies": 2,
+          "match": true
+        },
+        {
+          "graph": "D_5",
+          "n_vertices": 5,
+          "n_orbits": 4,
+          "distinct_energies": 3,
+          "match": false
+        },
+        {
+          "graph": "D_6",
+          "n_vertices": 6,
+          "n_orbits": 5,
+          "distinct_energies": 3,
+          "match": false
+        },
+        {
+          "graph": "D_7",
+          "n_vertices": 7,
+          "n_orbits": 6,
+          "distinct_energies": 3,
+          "match": false
+        },
+        {
+          "graph": "D_8",
+          "n_vertices": 8,
+          "n_orbits": 7,
+          "distinct_energies": 3,
+          "match": false
+        },
+        {
+          "graph": "E_6",
+          "n_vertices": 6,
+          "n_orbits": 4,
+          "distinct_energies": 3,
+          "match": false
+        },
+        {
+          "graph": "E_7",
+          "n_vertices": 7,
+          "n_orbits": 7,
+          "distinct_energies": 3,
+          "match": false
+        },
+        {
+          "graph": "E_8",
+          "n_vertices": 8,
+          "n_orbits": 8,
+          "distinct_energies": 3,
+          "match": false
+        }
+      ],
+      "PASS": false
+    },
+    "T3": {
+      "description": "Cross-component entropy leakage < 1e-10 after redistribution",
+      "tests": [
+        {
+          "depth": 3,
+          "disconnected": true,
+          "n_components": 2,
+          "comp_sizes": [
+            7,
+            7
+          ],
+          "leakage": 0.0
+        },
+        {
+          "depth": 4,
+          "disconnected": true,
+          "n_components": 2,
+          "comp_sizes": [
+            15,
+            15
+          ],
+          "leakage": 0.0
+        }
+      ],
+      "max_leakage": 0.0,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Correlation |r| > 0.95 between log(spectral_gap) and PAC tree depth",
+      "depths": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "log_gaps": [
+        1.3862943611198888,
+        1.3862943611198888,
+        1.386294361119887,
+        1.3862943611199119,
+        1.3862943611198622,
+        1.3862943611199474
+      ],
+      "pearson_r": 0.43850834598780875,
+      "PASS": false
+    }
+  },
+  "overall_score": "2/4"
+}

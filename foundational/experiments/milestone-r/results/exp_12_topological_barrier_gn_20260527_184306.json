@@ -1,0 +1,115 @@
+{
+  "experiment": "exp_12_topological_barrier_gn",
+  "timestamp": "2026-05-27T18:43:06.593040",
+  "block": "C",
+  "thesis": "Topological barrier (simultaneous edge decoupling) creates exponential suppression in degree, producing GN-like scaling. The PAC Coulomb barrier analog.",
+  "test_results": {
+    "T1": {
+      "description": "log(FPT) increases with degree, R^2 > 0.7",
+      "degrees": [
+        1,
+        2,
+        3
+      ],
+      "median_fpts": [
+        84.5,
+        140.5,
+        678.75
+      ],
+      "slope": 0.4501915507656825,
+      "r_squared": 0.9190606782710183,
+      "PASS": true
+    },
+    "T2": {
+      "description": "log(FPT) vs 1/sqrt(deficit) R^2 > 0.8 with barrier",
+      "barrier_slope": -0.6021227633697249,
+      "barrier_r2": 0.9931179946840404,
+      "empirical_slope": 155.7295909096008,
+      "same_sign": false,
+      "deficit_levels": [
+        0.3,
+        0.5,
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        8.0
+      ],
+      "median_fpts": [
+        25.0,
+        51.5,
+        91.5,
+        122.0,
+        146.0,
+        189.5,
+        200.5
+      ],
+      "PASS": false
+    },
+    "T3": {
+      "description": "Barrier R^2 > no-barrier R^2 from exp_11 T2",
+      "r2_barrier": 0.9980643616230875,
+      "r2_plain": 0.7461476521819532,
+      "improvement": 0.2519167094411343,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Empirical GN R^2 > 0.95 AND barrier model interpretation",
+      "gn_r2": 0.9906435917534654,
+      "gn_slope": 155.7295909096008,
+      "degree_range_ratio": 1.4480868425315108,
+      "isotope_details": [
+        {
+          "label": "U238",
+          "energy_mev": 4.27,
+          "halflife_s": 1.4099e+17,
+          "inferred_degree": 75.36283115463527
+        },
+        {
+          "label": "U234",
+          "energy_mev": 4.784,
+          "halflife_s": 7747600000000.0,
+          "inferred_degree": 71.1992726843765
+        },
+        {
+          "label": "Th230",
+          "energy_mev": 4.687,
+          "halflife_s": 2379400000000.0,
+          "inferred_degree": 71.93225347511977
+        },
+        {
+          "label": "Ra226",
+          "energy_mev": 4.871,
+          "halflife_s": 50491000000.0,
+          "inferred_degree": 70.56056959593113
+        },
+        {
+          "label": "Rn222",
+          "energy_mev": 5.59,
+          "halflife_s": 330040.0,
+          "inferred_degree": 65.86659891319773
+        },
+        {
+          "label": "Po210",
+          "energy_mev": 5.407,
+          "halflife_s": 11955000.0,
+          "inferred_degree": 66.97195210088049
+        },
+        {
+          "label": "Po214",
+          "energy_mev": 7.883,
+          "halflife_s": 0.0001643,
+          "inferred_degree": 55.46581253233456
+        },
+        {
+          "label": "Po212",
+          "energy_mev": 8.954,
+          "halflife_s": 2.99e-07,
+          "inferred_degree": 52.043032877011555
+        }
+      ],
+      "PASS": true
+    }
+  },
+  "overall_score": "3/4"
+}

@@ -1,0 +1,460 @@
+{
+  "experiment": "exp_26_channel_completeness",
+  "timestamp": "2026-05-28T17:06:42.136149",
+  "block": "D",
+  "thesis": "FPT/JSD/HKS channel over-determination is a completeness theorem: all three are Laplacian-derived, so any 2 suffice. This is a feature of the PAC/SEC/RBF framework.",
+  "test_results": {
+    "T1": {
+      "description": ">= 60% of (graph, pair) have |r| > 0.6",
+      "high_corr": 16,
+      "total": 39,
+      "fraction": 0.41025641025641024,
+      "details": [
+        {
+          "graph": "A_4",
+          "pair": "fpt-jsd",
+          "r": 0.9045340337332909
+        },
+        {
+          "graph": "A_4",
+          "pair": "fpt-hks",
+          "r": -0.9045340337332906
+        },
+        {
+          "graph": "A_4",
+          "pair": "jsd-hks",
+          "r": -1.0
+        },
+        {
+          "graph": "A_5",
+          "pair": "fpt-jsd",
+          "r": 0.0
+        },
+        {
+          "graph": "A_5",
+          "pair": "fpt-hks",
+          "r": 0.0
+        },
+        {
+          "graph": "A_5",
+          "pair": "jsd-hks",
+          "r": 0.3157284439195636
+        },
+        {
+          "graph": "A_6",
+          "pair": "fpt-jsd",
+          "r": 0.392978212567253
+        },
+        {
+          "graph": "A_6",
+          "pair": "fpt-hks",
+          "r": -0.249480732242014
+        },
+        {
+          "graph": "A_6",
+          "pair": "jsd-hks",
+          "r": 0.47489414090764265
+        },
+        {
+          "graph": "A_7",
+          "pair": "fpt-jsd",
+          "r": -0.4677910376752973
+        },
+        {
+          "graph": "A_7",
+          "pair": "fpt-hks",
+          "r": -0.30352540899331254
+        },
+        {
+          "graph": "A_7",
+          "pair": "jsd-hks",
+          "r": 0.5487299648582613
+        },
+        {
+          "graph": "A_8",
+          "pair": "fpt-jsd",
+          "r": -0.7297243781615629
+        },
+        {
+          "graph": "A_8",
+          "pair": "fpt-hks",
+          "r": -0.7932108255746018
+        },
+        {
+          "graph": "A_8",
+          "pair": "jsd-hks",
+          "r": 0.5921065675407471
+        },
+        {
+          "graph": "D_4",
+          "pair": "fpt-jsd",
+          "r": 1.0
+        },
+        {
+          "graph": "D_4",
+          "pair": "fpt-hks",
+          "r": -1.0
+        },
+        {
+          "graph": "D_4",
+          "pair": "jsd-hks",
+          "r": -1.0
+        },
+        {
+          "graph": "D_5",
+          "pair": "fpt-jsd",
+          "r": 0.481771489783299
+        },
+        {
+          "graph": "D_5",
+          "pair": "fpt-hks",
+          "r": -0.9729386212245154
+        },
+        {
+          "graph": "D_5",
+          "pair": "jsd-hks",
+          "r": -0.5293202313640086
+        },
+        {
+          "graph": "D_6",
+          "pair": "fpt-jsd",
+          "r": 0.7481049057762001
+        },
+        {
+          "graph": "D_6",
+          "pair": "fpt-hks",
+          "r": -0.6896217895475218
+        },
+        {
+          "graph": "D_6",
+          "pair": "jsd-hks",
+          "r": -0.16731439886101204
+        },
+        {
+          "graph": "D_7",
+          "pair": "fpt-jsd",
+          "r": 0.09958538152692394
+        },
+        {
+          "graph": "D_7",
+          "pair": "fpt-hks",
+          "r": -0.9672011187614694
+        },
+        {
+          "graph": "D_7",
+          "pair": "jsd-hks",
+          "r": -0.09045257759216332
+        },
+        {
+          "graph": "D_8",
+          "pair": "fpt-jsd",
+          "r": 0.10103143251999154
+        },
+        {
+          "graph": "D_8",
+          "pair": "fpt-hks",
+          "r": -0.922855797477925
+        },
+        {
+          "graph": "D_8",
+          "pair": "jsd-hks",
+          "r": -0.04099952162883528
+        },
+        {
+          "graph": "E_6",
+          "pair": "fpt-jsd",
+          "r": -0.18225803398506205
+        },
+        {
+          "graph": "E_6",
+          "pair": "fpt-hks",
+          "r": -0.6676200943318488
+        },
+        {
+          "graph": "E_6",
+          "pair": "jsd-hks",
+          "r": 0.4651378822108402
+        },
+        {
+          "graph": "E_7",
+          "pair": "fpt-jsd",
+          "r": -0.2936619546340755
+        },
+        {
+          "graph": "E_7",
+          "pair": "fpt-hks",
+          "r": -0.9296404956041254
+        },
+        {
+          "graph": "E_7",
+          "pair": "jsd-hks",
+          "r": 0.3992065081376255
+        },
+        {
+          "graph": "E_8",
+          "pair": "fpt-jsd",
+          "r": -0.41732920232289394
+        },
+        {
+          "graph": "E_8",
+          "pair": "fpt-hks",
+          "r": -0.7939299336693046
+        },
+        {
+          "graph": "E_8",
+          "pair": "jsd-hks",
+          "r": 0.4384222699083178
+        }
+      ],
+      "PASS": false
+    },
+    "T2": {
+      "description": "All 3 two-channel subsets achieve mean ARI > 0.7",
+      "pair_mean_aris": {
+        "fpt-jsd": 0.29050145426981766,
+        "fpt-hks": 0.5237812276910412,
+        "jsd-hks": 0.12088818141097671
+      },
+      "PASS": false
+    },
+    "T3": {
+      "description": "min(R^2) > 0.85 for majority of graphs",
+      "n_pass": 7,
+      "n_tested": 11,
+      "fraction": 0.6363636363636364,
+      "details": [
+        {
+          "graph": "A_5",
+          "r2s": {
+            "fpt": 1.0,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 1.0,
+          "pass": true
+        },
+        {
+          "graph": "A_6",
+          "r2s": {
+            "fpt": 0.40000000000000047,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 0.40000000000000047,
+          "pass": false
+        },
+        {
+          "graph": "A_7",
+          "r2s": {
+            "fpt": 0.41666666666666596,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 0.41666666666666596,
+          "pass": false
+        },
+        {
+          "graph": "A_8",
+          "r2s": {
+            "fpt": 0.733333333333334,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 0.733333333333334,
+          "pass": false
+        },
+        {
+          "graph": "D_5",
+          "r2s": {
+            "fpt": 1.0,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 1.0,
+          "pass": true
+        },
+        {
+          "graph": "D_6",
+          "r2s": {
+            "fpt": 1.0,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 1.0,
+          "pass": true
+        },
+        {
+          "graph": "D_7",
+          "r2s": {
+            "fpt": 1.0,
+            "jsd": 0.9999931851049508,
+            "hks": 1.0
+          },
+          "min_r2": 0.9999931851049508,
+          "pass": true
+        },
+        {
+          "graph": "D_8",
+          "r2s": {
+            "fpt": 1.0,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 1.0,
+          "pass": true
+        },
+        {
+          "graph": "E_6",
+          "r2s": {
+            "fpt": 1.0,
+            "jsd": 1.0,
+            "hks": 1.0
+          },
+          "min_r2": 1.0,
+          "pass": true
+        },
+        {
+          "graph": "E_7",
+          "r2s": {
+            "fpt": 0.9791666666666667,
+            "jsd": 0.9999442899260892,
+            "hks": 1.0
+          },
+          "min_r2": 0.9791666666666667,
+          "pass": true
+        },
+        {
+          "graph": "E_8",
+          "r2s": {
+            "fpt": 0.8181818181818179,
+            "jsd": 0.9995663712441376,
+            "hks": 1.0
+          },
+          "min_r2": 0.8181818181818179,
+          "pass": false
+        }
+      ],
+      "PASS": true
+    },
+    "T4": {
+      "description": "Effective rank <= 2 for majority of ADE (n>=5)",
+      "n_low_rank": 0,
+      "n_tested": 11,
+      "fraction": 0.0,
+      "details": [
+        {
+          "graph": "A_5",
+          "singular_values": [
+            2.564886395066615,
+            2.23606797749979,
+            1.8496912662393636
+          ],
+          "top2_fraction": 0.7218779398729916,
+          "low_rank": false
+        },
+        {
+          "graph": "A_6",
+          "singular_values": [
+            3.0092490058289827,
+            2.730986786385722,
+            1.2190699707169685
+          ],
+          "top2_fraction": 0.8248287958246824,
+          "low_rank": false
+        },
+        {
+          "graph": "A_7",
+          "singular_values": [
+            3.634891149723944,
+            2.2172383290655695,
+            1.6945266364920533
+          ],
+          "top2_fraction": 0.7754599374071478,
+          "low_rank": false
+        },
+        {
+          "graph": "A_8",
+          "singular_values": [
+            4.393863452043845,
+            1.8176390454818427,
+            1.179047185287003
+          ],
+          "top2_fraction": 0.8404655626591658,
+          "low_rank": false
+        },
+        {
+          "graph": "D_5",
+          "singular_values": [
+            3.4287995467138352,
+            1.7652095211031027,
+            0.3568879586956635
+          ],
+          "top2_fraction": 0.9357062548645617,
+          "low_rank": false
+        },
+        {
+          "graph": "D_6",
+          "singular_values": [
+            3.553311587116083,
+            2.235982754546364,
+            0.6118479273788843
+          ],
+          "top2_fraction": 0.9044158211670997,
+          "low_rank": false
+        },
+        {
+          "graph": "D_7",
+          "singular_values": [
+            3.728091704393612,
+            2.621458531137042,
+            0.47883965286967617
+          ],
+          "top2_fraction": 0.929875173987487,
+          "low_rank": false
+        },
+        {
+          "graph": "D_8",
+          "singular_values": [
+            3.9331107234179803,
+            2.815877519880826,
+            0.775547439144954
+          ],
+          "top2_fraction": 0.8969308576801011,
+          "low_rank": false
+        },
+        {
+          "graph": "E_6",
+          "singular_values": [
+            3.3814385503751208,
+            2.2317918744916048,
+            1.258959236429143
+          ],
+          "top2_fraction": 0.8168037701986611,
+          "low_rank": false
+        },
+        {
+          "graph": "E_7",
+          "singular_values": [
+            3.8709299777593147,
+            2.3604328655417195,
+            0.6665266645489788
+          ],
+          "top2_fraction": 0.9033723773350602,
+          "low_rank": false
+        },
+        {
+          "graph": "E_8",
+          "singular_values": [
+            4.118919853116608,
+            2.321442516870687,
+            1.2827329747328409
+          ],
+          "top2_fraction": 0.8339094731479941,
+          "low_rank": false
+        }
+      ],
+      "PASS": false
+    }
+  },
+  "overall_score": "1/4"
+}

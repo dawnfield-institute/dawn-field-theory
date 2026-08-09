@@ -1,0 +1,110 @@
+{
+  "experiment": "exp_24_coupling_energy_scale",
+  "timestamp": "2026-05-28T17:06:36.390559",
+  "block": "D",
+  "thesis": "DFT coupling constants + mediator masses give correct energy scales, fixing 8 Planck-scale failures",
+  "test_results": {
+    "T1": {
+      "description": "ALPHA_EM_DFT^2 * M_ELECTRON / 2 matches Rydberg to 12 ppm",
+      "rydberg_dft_mev": 1.3605537702970187e-05,
+      "rydberg_codata_mev": 1.3605693009e-05,
+      "alpha_em_dft": 0.007297310889743783,
+      "relative_error_ppm": 11.41478274647006,
+      "planck_scale_mev": 2.3433502921752445e+19,
+      "planck_log_ratio": 24.23611654573843,
+      "PASS": true
+    },
+    "T2": {
+      "description": "fdc(3)^2 * m_proton within [0.1, 100] of mean alpha energy",
+      "depth": 3,
+      "alpha_s_dft": 0.1055728090000841,
+      "nuclear_scale_mev": 10.457622274851536,
+      "mean_alpha_mev": 5.98425,
+      "ratio": 1.7475242970884464,
+      "PASS": true
+    },
+    "T3": {
+      "description": "EM/nuclear scale ratio matches Rydberg/alpha within factor 5",
+      "em_scale_mev": 2.7211075405940373e-05,
+      "nuclear_scale_mev": 10.457622274851536,
+      "dft_ratio": 2.602032727016494e-06,
+      "observed_ratio": 2.273583658603835e-06,
+      "ratio_of_ratios": 1.1444631549711055,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Coupling counts in [0.01,1000]; Planck counts outside [0.01,1000]",
+      "depth_nuclear": 3,
+      "details": [
+        {
+          "label": "U238->Th234",
+          "energy_mev": 4.27,
+          "planck_count": 1.7215892838586645e-19,
+          "coupling_count": 0.3857747626855499,
+          "new_in_range": true,
+          "old_unphysical": true
+        },
+        {
+          "label": "U234->Th230",
+          "energy_mev": 4.784,
+          "planck_count": 1.9288250899250238e-19,
+          "coupling_count": 0.4322122868121009,
+          "new_in_range": true,
+          "old_unphysical": true
+        },
+        {
+          "label": "Th230->Ra226",
+          "energy_mev": 4.871,
+          "planck_count": 1.963901967605517e-19,
+          "coupling_count": 0.44007233467009693,
+          "new_in_range": true,
+          "old_unphysical": true
+        },
+        {
+          "label": "Ra226->Rn222",
+          "energy_mev": 5.59,
+          "planck_count": 2.2537901865971746e-19,
+          "coupling_count": 0.5050306612206614,
+          "new_in_range": true,
+          "old_unphysical": true
+        },
+        {
+          "label": "Rn222->Po218",
+          "energy_mev": 6.115,
+          "planck_count": 2.465461000186355e-19,
+          "coupling_count": 0.5524619845016716,
+          "new_in_range": true,
+          "old_unphysical": true
+        },
+        {
+          "label": "Po210->Pb206",
+          "energy_mev": 5.407,
+          "planck_count": 2.1800077887175175e-19,
+          "coupling_count": 0.4884974571055664,
+          "new_in_range": true,
+          "old_unphysical": true
+        },
+        {
+          "label": "Bi212->Tl208",
+          "energy_mev": 7.883,
+          "planck_count": 3.1782876638542984e-19,
+          "coupling_count": 0.7121926122365785,
+          "new_in_range": true,
+          "old_unphysical": true
+        },
+        {
+          "label": "Po212->Pb208",
+          "energy_mev": 8.954,
+          "planck_count": 3.610096123576226e-19,
+          "coupling_count": 0.8089525117298394,
+          "new_in_range": true,
+          "old_unphysical": true
+        }
+      ],
+      "all_new_in_range": true,
+      "all_old_unphysical": true,
+      "PASS": true
+    }
+  },
+  "overall_score": "4/4"
+}

@@ -1,0 +1,146 @@
+{
+  "experiment": "exp_03_beta_spectrum_unsettled_ledger",
+  "timestamp": "2026-05-27T17:00:48.996177",
+  "block": "A",
+  "test_results": {
+    "T1": {
+      "description": "KS test confirms continuous, not discrete, distribution",
+      "n_samples": 10000,
+      "n_unique": 10000,
+      "unique_fraction": 1.0,
+      "ks_stat": 0.4806016823640273,
+      "ks_p": 0.0,
+      "PASS": true
+    },
+    "T2": {
+      "description": "Chi-squared < 5 between DFT and Fermi beta shapes",
+      "reduced_chi2": 0.3748079733738714,
+      "n_bins": 50,
+      "dft_shape_summary": {
+        "mean": 0.3755885425118245,
+        "std": 0.22919450726243784
+      },
+      "PASS": true
+    },
+    "T3": {
+      "description": "DFT endpoint within factor 10 of measured for C-14 and tritium",
+      "best_depth": 19,
+      "comparisons": [
+        {
+          "name": "C-14",
+          "measured_mev": 0.156,
+          "predicted_mev": 1.3822050737342262e+18,
+          "log10_ratio": 18.94744788446944,
+          "within_factor_10": false
+        },
+        {
+          "name": "Tritium",
+          "measured_mev": 0.0186,
+          "predicted_mev": 1.3822050737342262e+18,
+          "log10_ratio": 19.871059538605984,
+          "within_factor_10": false
+        },
+        {
+          "name": "Co-60",
+          "measured_mev": 0.3173,
+          "predicted_mev": 1.3822050737342262e+18,
+          "log10_ratio": 18.63910241072349,
+          "within_factor_10": false
+        }
+      ],
+      "n_within_factor10": 0,
+      "PASS": false
+    },
+    "T4": {
+      "description": "Settled spectrum entropy < 1% of unsettled for all ADE",
+      "details": [
+        {
+          "graph": "A_1",
+          "settled_entropy": 0.0,
+          "unsettled_entropy": -0.0,
+          "ratio": 0.0,
+          "pass": true
+        },
+        {
+          "graph": "A_2",
+          "settled_entropy": 0.0,
+          "unsettled_entropy": -0.12629878091206861,
+          "ratio": -0.0,
+          "pass": true
+        },
+        {
+          "graph": "A_3",
+          "settled_entropy": 0.6365141682948129,
+          "unsettled_entropy": 0.7226063194259085,
+          "ratio": 0.8808588455197935,
+          "pass": false
+        },
+        {
+          "graph": "A_4",
+          "settled_entropy": 0.6365141682948127,
+          "unsettled_entropy": 0.9043746469255312,
+          "ratio": 0.7038169086878716,
+          "pass": false
+        },
+        {
+          "graph": "A_5",
+          "settled_entropy": 1.0549201679861442,
+          "unsettled_entropy": 0.9569883597108558,
+          "ratio": 1.1023333327741598,
+          "pass": false
+        },
+        {
+          "graph": "A_6",
+          "settled_entropy": 1.0549201679861442,
+          "unsettled_entropy": 0.9701169996409873,
+          "ratio": 1.0874154028602119,
+          "pass": false
+        },
+        {
+          "graph": "D_4",
+          "settled_entropy": 0.5623351446188083,
+          "unsettled_entropy": 0.6989066689686996,
+          "ratio": 0.8045926152752055,
+          "pass": false
+        },
+        {
+          "graph": "D_5",
+          "settled_entropy": 1.2770342594661392,
+          "unsettled_entropy": 1.1851228508571654,
+          "ratio": 1.0775543299519514,
+          "pass": false
+        },
+        {
+          "graph": "D_6",
+          "settled_entropy": 1.5229550675313182,
+          "unsettled_entropy": 1.2933868621832145,
+          "ratio": 1.1774938435361841,
+          "pass": false
+        },
+        {
+          "graph": "E_6",
+          "settled_entropy": 1.2770342594661388,
+          "unsettled_entropy": 1.2640394728438515,
+          "ratio": 1.0102803645783716,
+          "pass": false
+        },
+        {
+          "graph": "E_7",
+          "settled_entropy": 1.863679987341,
+          "unsettled_entropy": 1.3153876946953111,
+          "ratio": 1.4168294221215838,
+          "pass": false
+        },
+        {
+          "graph": "E_8",
+          "settled_entropy": 2.007556307437838,
+          "unsettled_entropy": 1.3019230948228773,
+          "ratio": 1.5419930066690768,
+          "pass": false
+        }
+      ],
+      "PASS": false
+    }
+  },
+  "overall_score": "2/4"
+}

@@ -1,0 +1,158 @@
+{
+  "experiment": "exp_10_synthesis_and_predictions",
+  "timestamp": "2026-05-27T17:01:32.135604",
+  "block": "D",
+  "test_results": {
+    "T1": {
+      "description": "Full chain executes and produces physical output",
+      "chain_steps": 10,
+      "all_executed": true,
+      "PASS": true
+    },
+    "T2": {
+      "description": "Total score from exp_01-09 >= 50%",
+      "experiment_scores": [
+        {
+          "experiment": "exp_01",
+          "score": "2/4"
+        },
+        {
+          "experiment": "exp_02",
+          "score": "2/4"
+        },
+        {
+          "experiment": "exp_03",
+          "score": "2/4"
+        },
+        {
+          "experiment": "exp_04",
+          "score": "2/4"
+        },
+        {
+          "experiment": "exp_05",
+          "score": "1/4"
+        },
+        {
+          "experiment": "exp_06",
+          "score": "3/4"
+        },
+        {
+          "experiment": "exp_07",
+          "score": "3/4"
+        },
+        {
+          "experiment": "exp_08",
+          "score": "3/4"
+        },
+        {
+          "experiment": "exp_09",
+          "score": "3/4"
+        }
+      ],
+      "total_pass": 21,
+      "total_tests": 36,
+      "percentage": 58.333333333333336,
+      "PASS": true
+    },
+    "T3": {
+      "description": ">= 8 falsifiable predictions",
+      "n_predictions": 10,
+      "predictions": [
+        {
+          "id": "P1",
+          "type": "Precise",
+          "statement": "Alpha energies are integer multiples of Xi * E_scale(d) at a Fibonacci depth",
+          "testable_by": "NNDC nuclear data tables"
+        },
+        {
+          "id": "P2",
+          "type": "Precise",
+          "statement": "X-ray K-alpha lines are integer boundary counts at EM depth",
+          "testable_by": "X-ray spectroscopy databases"
+        },
+        {
+          "id": "P3",
+          "type": "Directional",
+          "statement": "Beta decay endpoint energy is set by Xi * E_scale(weak depth)",
+          "testable_by": "KATRIN tritium endpoint measurement"
+        },
+        {
+          "id": "P4",
+          "type": "Directional",
+          "statement": "Equilibrium-shift X-ray generation >= 10% more efficient than brute-force",
+          "testable_by": "Laboratory X-ray source experiment"
+        },
+        {
+          "id": "P5",
+          "type": "Precise",
+          "statement": "Gamma energies in a decay chain sum to daughter equilibration energy",
+          "testable_by": "Nuclear level scheme data (NNDC)"
+        },
+        {
+          "id": "P6",
+          "type": "Constraint",
+          "statement": "Gravity is irrelevant at nuclear depths: phi^(-178) < 1e-37",
+          "testable_by": "Mathematical identity (verified)"
+        },
+        {
+          "id": "P7",
+          "type": "Directional",
+          "statement": "Radiation line width correlates monotonically with pre-severance disequilibrium",
+          "testable_by": "Mossbauer spectroscopy, nuclear resonance fluorescence"
+        },
+        {
+          "id": "P8",
+          "type": "Precise",
+          "statement": "Dark sector 3.2 keV X-ray line is depth-73 severance with specific boundary count",
+          "testable_by": "Athena X-ray observatory"
+        },
+        {
+          "id": "P9",
+          "type": "Directional",
+          "statement": "Stochastic ejection timing follows Poisson statistics",
+          "testable_by": "Radioactive decay counting statistics"
+        },
+        {
+          "id": "P10",
+          "type": "Constraint",
+          "statement": "Distinct radiation energies <= n_orbits*(n_orbits-1)/2 for any system",
+          "testable_by": "Atomic and nuclear spectroscopy"
+        }
+      ],
+      "PASS": true
+    },
+    "T4": {
+      "description": "Proposal with >= 3 measurable quantities",
+      "proposal": {
+        "title": "Equilibrium-Shift X-ray Source",
+        "principle": "Instead of accelerating electrons into a metal target (brute-force thermal mechanism), shift the PAC equilibrium of the target material at EM depth to trigger spontaneous K-shell de-excitation.",
+        "measurables": [
+          {
+            "quantity": "Energy unit at EM depth",
+            "dft_value": "2.480e+19 MeV",
+            "measurement": "X-ray spectroscopy of characteristic lines"
+          },
+          {
+            "quantity": "Cu K-alpha boundary count",
+            "dft_value": "0.0000 boundaries",
+            "measurement": "Ratio of Cu K-alpha energy to DFT energy unit"
+          },
+          {
+            "quantity": "Equilibrium-shift efficiency ratio",
+            "dft_value": "10.58x",
+            "measurement": "Compare input power for shift vs acceleration at same output"
+          },
+          {
+            "quantity": "Characteristic wavelength at EM depth",
+            "dft_value": "4.999e-32 m",
+            "measurement": "Spectroscopy of the fundamental EM-depth transition"
+          }
+        ],
+        "apparatus": "Piezoelectric or magnetostrictive driver coupled to Cu/Mo target. Drive frequency tuned to PAC resonance at EM depth. Monitor X-ray output with Si(Li) detector. Compare efficiency to standard X-ray tube at same target."
+      },
+      "n_measurables": 4,
+      "PASS": true
+    }
+  },
+  "overall_score": "4/4"
+}

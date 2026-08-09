@@ -1,0 +1,196 @@
+{
+  "experiment": "exp_20_spectral_ratios",
+  "timestamp": "2026-05-28T11:30:34.527975",
+  "block": "C",
+  "thesis": "ADE graph Laplacian eigenvalue inverses (Green function) give energy levels E_k = 1/lambda_k that follow the hydrogen 1/k^2 pattern. For A_n path graphs this is a continuum-limit theorem that holds within ~1% at n=8. Branching in D_n/E_n creates systematic departures analogous to fine-structure corrections.",
+  "test_results": {
+    "T1": {
+      "description": "A_8 series ratios match hydrogen within 5%",
+      "max_error_pct": 2.313,
+      "mean_error_pct": 0.68,
+      "details": [
+        {
+          "series": "Lyman",
+          "k": 2,
+          "kp": 3,
+          "m": 1,
+          "hydrogen": 0.84375,
+          "graph": 0.8442064137697477,
+          "error_pct": 0.0540934838219495
+        },
+        {
+          "series": "Lyman",
+          "k": 3,
+          "kp": 4,
+          "m": 1,
+          "hydrogen": 0.9481481481481481,
+          "graph": 0.9489238882267411,
+          "error_pct": 0.0818163364141103
+        },
+        {
+          "series": "Lyman",
+          "k": 4,
+          "kp": 5,
+          "m": 1,
+          "hydrogen": 0.9765625,
+          "graph": 0.977704831259646,
+          "error_pct": 0.1169747209877528
+        },
+        {
+          "series": "Lyman",
+          "k": 5,
+          "kp": 6,
+          "m": 1,
+          "hydrogen": 0.9874285714285714,
+          "graph": 0.9890493354879308,
+          "error_pct": 0.1641398786966988
+        },
+        {
+          "series": "Lyman",
+          "k": 6,
+          "kp": 7,
+          "m": 1,
+          "hydrogen": 0.9924768518518519,
+          "graph": 0.9947688146570811,
+          "error_pct": 0.2309336284219329
+        },
+        {
+          "series": "Balmer",
+          "k": 3,
+          "kp": 4,
+          "m": 2,
+          "hydrogen": 0.7407407407407408,
+          "graph": 0.743223046178061,
+          "error_pct": 0.3351112340382267
+        },
+        {
+          "series": "Balmer",
+          "k": 4,
+          "kp": 5,
+          "m": 2,
+          "hydrogen": 0.8928571428571429,
+          "graph": 0.8971495789756601,
+          "error_pct": 0.4807528452739209
+        },
+        {
+          "series": "Balmer",
+          "k": 5,
+          "kp": 6,
+          "m": 2,
+          "hydrogen": 0.9450000000000001,
+          "graph": 0.9514058865945596,
+          "error_pct": 0.6778715973078878
+        },
+        {
+          "series": "Balmer",
+          "k": 6,
+          "kp": 7,
+          "m": 2,
+          "hydrogen": 0.9679012345679011,
+          "graph": 0.9771964216320488,
+          "error_pct": 0.9603445818826037
+        },
+        {
+          "series": "Paschen",
+          "k": 4,
+          "kp": 5,
+          "m": 3,
+          "hydrogen": 0.68359375,
+          "graph": 0.6913417161825449,
+          "error_pct": 1.1334167672751423
+        },
+        {
+          "series": "Paschen",
+          "k": 5,
+          "kp": 6,
+          "m": 3,
+          "hydrogen": 0.8533333333333332,
+          "graph": 0.8670910052989569,
+          "error_pct": 1.6122271834715298
+        },
+        {
+          "series": "Paschen",
+          "k": 6,
+          "kp": 7,
+          "m": 3,
+          "hydrogen": 0.91875,
+          "graph": 0.940004097410584,
+          "error_pct": 2.3133711467302356
+        }
+      ],
+      "PASS": true
+    },
+    "T2": {
+      "description": "Error decreases with A_n rank",
+      "rank_errors_pct": {
+        "4": 1.162,
+        "5": 1.418,
+        "6": 1.544,
+        "7": 1.019,
+        "8": 0.68
+      },
+      "spearman_rho": -0.6,
+      "PASS": true
+    },
+    "T3": {
+      "description": "Branching increases departure from hydrogen",
+      "branched_wins": 8,
+      "branched_total": 8,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Eigenvalue spectra distinguish all pairs",
+      "all_distinct": true,
+      "closest_pair": "D_8 vs E_8",
+      "closest_distance": 0.478522,
+      "PASS": true
+    }
+  },
+  "overall_score": "4/4",
+  "pair_distances": [
+    {
+      "pair": "A_4 vs D_4",
+      "distance": 1.230739
+    },
+    {
+      "pair": "A_5 vs D_5",
+      "distance": 0.750725
+    },
+    {
+      "pair": "A_6 vs D_6",
+      "distance": 0.725636
+    },
+    {
+      "pair": "A_6 vs E_6",
+      "distance": 0.759143
+    },
+    {
+      "pair": "D_6 vs E_6",
+      "distance": 0.734425
+    },
+    {
+      "pair": "A_7 vs D_7",
+      "distance": 0.794708
+    },
+    {
+      "pair": "A_7 vs E_7",
+      "distance": 0.613609
+    },
+    {
+      "pair": "D_7 vs E_7",
+      "distance": 0.626411
+    },
+    {
+      "pair": "A_8 vs D_8",
+      "distance": 0.622934
+    },
+    {
+      "pair": "A_8 vs E_8",
+      "distance": 0.623093
+    },
+    {
+      "pair": "D_8 vs E_8",
+      "distance": 0.478522
+    }
+  ]
+}

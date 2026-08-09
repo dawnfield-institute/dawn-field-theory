@@ -1,0 +1,325 @@
+{
+  "experiment": "exp_13_perspectival_barrier",
+  "timestamp": "2026-05-28T09:01:31.567271",
+  "block": "C",
+  "thesis": "The decay barrier is PERSPECTIVAL: the information-theoretic gap between local identity (SEC) and global accounting (PAC). JSD between local random-walk distribution and global equilibrium predicts FPT better than degree, and gives GN-like scaling when targeting high-degree hub vertices. Connected to M13 definitional parallax: the barrier is identity reconciliation.",
+  "test_results": {
+    "T1": {
+      "description": "R^2(JSD vs log(FPT)) > R^2(degree vs log(FPT)) for majority of graphs",
+      "per_graph": [
+        {
+          "graph": "A_4",
+          "r2_jsd": 0.5955,
+          "r2_degree": 0.5955,
+          "jsd_wins": false,
+          "n_vertices": 4
+        },
+        {
+          "graph": "A_5",
+          "r2_jsd": 0.2395,
+          "r2_degree": 0.7472,
+          "jsd_wins": false,
+          "n_vertices": 5
+        },
+        {
+          "graph": "A_6",
+          "r2_jsd": 0.0401,
+          "r2_degree": 0.8289,
+          "jsd_wins": false,
+          "n_vertices": 6
+        },
+        {
+          "graph": "A_7",
+          "r2_jsd": 0.0575,
+          "r2_degree": 0.8592,
+          "jsd_wins": false,
+          "n_vertices": 7
+        },
+        {
+          "graph": "A_8",
+          "r2_jsd": 0.0473,
+          "r2_degree": 0.7209,
+          "jsd_wins": false,
+          "n_vertices": 8
+        },
+        {
+          "graph": "D_4",
+          "r2_jsd": 0.9985,
+          "r2_degree": 0.9985,
+          "jsd_wins": true,
+          "n_vertices": 4
+        },
+        {
+          "graph": "D_5",
+          "r2_jsd": 0.509,
+          "r2_degree": 0.9579,
+          "jsd_wins": false,
+          "n_vertices": 5
+        },
+        {
+          "graph": "D_6",
+          "r2_jsd": 0.1204,
+          "r2_degree": 0.9122,
+          "jsd_wins": false,
+          "n_vertices": 6
+        },
+        {
+          "graph": "D_7",
+          "r2_jsd": 0.1377,
+          "r2_degree": 0.9378,
+          "jsd_wins": false,
+          "n_vertices": 7
+        },
+        {
+          "graph": "D_8",
+          "r2_jsd": 0.2532,
+          "r2_degree": 0.7835,
+          "jsd_wins": false,
+          "n_vertices": 8
+        },
+        {
+          "graph": "E_6",
+          "r2_jsd": 0.0954,
+          "r2_degree": 0.9003,
+          "jsd_wins": false,
+          "n_vertices": 6
+        },
+        {
+          "graph": "E_7",
+          "r2_jsd": 0.0144,
+          "r2_degree": 0.9746,
+          "jsd_wins": false,
+          "n_vertices": 7
+        },
+        {
+          "graph": "E_8",
+          "r2_jsd": 0.0385,
+          "r2_degree": 0.8462,
+          "jsd_wins": false,
+          "n_vertices": 8
+        }
+      ],
+      "jsd_wins": 1,
+      "total_graphs": 13,
+      "PASS": false
+    },
+    "T2": {
+      "description": "log(FPT) vs 1/sqrt(deficit): positive slope AND R^2 > 0.7",
+      "target_vertex": 5,
+      "target_degree": 3,
+      "target_jsd": 0.408017,
+      "slope": -1.5503,
+      "r2": 0.9343,
+      "deficit_levels": [
+        0.3,
+        0.5,
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        8.0
+      ],
+      "median_fpts": [
+        1.0,
+        1.0,
+        19.5,
+        47.0,
+        54.5,
+        83.0,
+        103.0
+      ],
+      "n_trials": 100,
+      "PASS": false
+    },
+    "T3": {
+      "description": "Hub JSD < mean endpoint JSD for D_4, D_5, D_6",
+      "details": [
+        {
+          "graph": "D_4",
+          "hub_vertex": 1,
+          "hub_degree": 3,
+          "hub_jsd": 0.380396,
+          "mean_endpoint_jsd": 0.095603,
+          "all_vertex_jsds": [
+            {
+              "vertex": 0,
+              "degree": 1,
+              "jsd": 0.095603,
+              "is_hub": false,
+              "is_endpoint": true
+            },
+            {
+              "vertex": 1,
+              "degree": 3,
+              "jsd": 0.380396,
+              "is_hub": true,
+              "is_endpoint": false
+            },
+            {
+              "vertex": 2,
+              "degree": 1,
+              "jsd": 0.095603,
+              "is_hub": false,
+              "is_endpoint": true
+            },
+            {
+              "vertex": 3,
+              "degree": 1,
+              "jsd": 0.095603,
+              "is_hub": false,
+              "is_endpoint": true
+            }
+          ],
+          "hub_lower": false
+        },
+        {
+          "graph": "D_5",
+          "hub_vertex": 2,
+          "hub_degree": 3,
+          "hub_jsd": 0.312976,
+          "mean_endpoint_jsd": 0.200717,
+          "all_vertex_jsds": [
+            {
+              "vertex": 0,
+              "degree": 1,
+              "jsd": 0.274358,
+              "is_hub": false,
+              "is_endpoint": true
+            },
+            {
+              "vertex": 1,
+              "degree": 2,
+              "jsd": 0.206422,
+              "is_hub": false,
+              "is_endpoint": false
+            },
+            {
+              "vertex": 2,
+              "degree": 3,
+              "jsd": 0.312976,
+              "is_hub": true,
+              "is_endpoint": false
+            },
+            {
+              "vertex": 3,
+              "degree": 1,
+              "jsd": 0.163897,
+              "is_hub": false,
+              "is_endpoint": true
+            },
+            {
+              "vertex": 4,
+              "degree": 1,
+              "jsd": 0.163897,
+              "is_hub": false,
+              "is_endpoint": true
+            }
+          ],
+          "hub_lower": false
+        },
+        {
+          "graph": "D_6",
+          "hub_vertex": 3,
+          "hub_degree": 3,
+          "hub_jsd": 0.352342,
+          "mean_endpoint_jsd": 0.249927,
+          "all_vertex_jsds": [
+            {
+              "vertex": 0,
+              "degree": 1,
+              "jsd": 0.318257,
+              "is_hub": false,
+              "is_endpoint": true
+            },
+            {
+              "vertex": 1,
+              "degree": 2,
+              "jsd": 0.335623,
+              "is_hub": false,
+              "is_endpoint": false
+            },
+            {
+              "vertex": 2,
+              "degree": 2,
+              "jsd": 0.147392,
+              "is_hub": false,
+              "is_endpoint": false
+            },
+            {
+              "vertex": 3,
+              "degree": 3,
+              "jsd": 0.352342,
+              "is_hub": true,
+              "is_endpoint": false
+            },
+            {
+              "vertex": 4,
+              "degree": 1,
+              "jsd": 0.215762,
+              "is_hub": false,
+              "is_endpoint": true
+            },
+            {
+              "vertex": 5,
+              "degree": 1,
+              "jsd": 0.215762,
+              "is_hub": false,
+              "is_endpoint": true
+            }
+          ],
+          "hub_lower": false
+        }
+      ],
+      "PASS": false
+    },
+    "T4": {
+      "description": "Perspectival R^2 > topological R^2 for majority of graphs",
+      "per_graph": [
+        {
+          "graph": "D_5",
+          "r2_perspectival": 0.9508,
+          "r2_topological": 0.0,
+          "perspectival_wins": true,
+          "persp_convergence": "5/5",
+          "topo_convergence": "5/5"
+        },
+        {
+          "graph": "D_6",
+          "r2_perspectival": 0.9536,
+          "r2_topological": 0.1542,
+          "perspectival_wins": true,
+          "persp_convergence": "5/5",
+          "topo_convergence": "5/5"
+        },
+        {
+          "graph": "D_7",
+          "r2_perspectival": 0.9567,
+          "r2_topological": 0.4831,
+          "perspectival_wins": true,
+          "persp_convergence": "5/5",
+          "topo_convergence": "5/5"
+        },
+        {
+          "graph": "E_6",
+          "r2_perspectival": 0.9791,
+          "r2_topological": 0.3305,
+          "perspectival_wins": true,
+          "persp_convergence": "5/5",
+          "topo_convergence": "5/5"
+        },
+        {
+          "graph": "E_7",
+          "r2_perspectival": 0.9592,
+          "r2_topological": 0.5017,
+          "perspectival_wins": true,
+          "persp_convergence": "5/5",
+          "topo_convergence": "5/5"
+        }
+      ],
+      "perspectival_wins": 5,
+      "total_graphs": 5,
+      "PASS": true
+    }
+  },
+  "overall_score": "1/4"
+}

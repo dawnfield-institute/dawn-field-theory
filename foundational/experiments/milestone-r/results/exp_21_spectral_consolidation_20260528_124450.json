@@ -1,0 +1,54 @@
+{
+  "experiment": "exp_21_spectral_consolidation",
+  "timestamp": "2026-05-28T12:44:50.441693",
+  "block": "D",
+  "thesis": "Consolidation pulling three threads: (1) clean Lyman-alpha convergence to n=50, (2) eigenvalue distance predicts fingerprint distance, (3) weighted branching departure scaling determines if fine structure is O(alpha) or O(alpha^2).",
+  "test_results": {
+    "T1": {
+      "description": "Lyman-alpha converges monotonically",
+      "power": 4.081,
+      "r_squared": 0.99976,
+      "monotonic": true,
+      "error_at_n50_pct": 3.3e-05,
+      "PASS": true
+    },
+    "T2": {
+      "description": "Eigenvalue dist correlates with fingerprint dist",
+      "spearman_rho": 0.591,
+      "p_value": 0.0556,
+      "n_pairs": 11,
+      "PASS": false
+    },
+    "T3": {
+      "description": "Branching departure scales consistently",
+      "exponents": {
+        "4": 0.592,
+        "5": 0.378,
+        "6": 0.317,
+        "7": 0.353,
+        "8": 0.377
+      },
+      "mean_exponent": 0.403,
+      "cv": 0.24,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Departure at alpha_EM consistent and quantified",
+      "alpha_em": 0.00729731,
+      "alpha_sq": 5.32507e-05,
+      "additional_departures_pct": {
+        "4": -0.153753,
+        "5": -0.143353,
+        "6": -0.100599,
+        "7": -0.058023,
+        "8": -0.025304
+      },
+      "mean_additional_pct": 0.096206,
+      "scaling_closer_to": "alpha",
+      "ratio_to_alpha": 0.1318,
+      "ratio_to_alpha_sq": 18.1,
+      "PASS": false
+    }
+  },
+  "overall_score": "2/4"
+}
