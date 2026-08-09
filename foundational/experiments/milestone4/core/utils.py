@@ -140,7 +140,7 @@ def print_table(headers, rows, col_widths=None):
 
 def energy_cascade(injection_energy, n_scales, n_modes=8,
                    n_samples=15000, coupling_decay=0.3,
-                   nonlinear_strength=0.3):
+                   nonlinear_strength=0.3, coupling_matrix=None):
     """
     PAC energy cascade via eigenvalue-based partitioning.
 
@@ -167,6 +167,11 @@ def energy_cascade(injection_energy, n_scales, n_modes=8,
         Exponential decay rate of the mode-coupling matrix C[i,j].
     nonlinear_strength : float
         Strength of the nonlinear feedback term from the previous scale.
+    coupling_matrix : ndarray (n_modes, n_modes), optional
+        Injected base coupling matrix (e.g. a Dynkin graph-distance kernel,
+        see ade_cascade/core/coupling.py). Default None reproduces the
+        legacy kernel exp(-|i-j| * coupling_decay) exactly; the A-family
+        path diagram under a graph-distance kernel equals that legacy kernel.
 
     Returns
     -------
@@ -186,11 +191,19 @@ def energy_cascade(injection_energy, n_scales, n_modes=8,
             })
             continue
 
-        # Structured coupling matrix: C[i,j] = exp(-|i-j| * coupling_decay)
-        C = np.zeros((n_modes, n_modes))
-        for i in range(n_modes):
-            for j in range(n_modes):
-                C[i, j] = np.exp(-abs(i - j) * coupling_decay)
+        # Structured coupling matrix: C[i,j] = exp(-|i-j| * coupling_decay),
+        # or an injected base matrix (must match n_modes)
+        if coupling_matrix is not None:
+            if coupling_matrix.shape != (n_modes, n_modes):
+                raise ValueError(
+                    f"coupling_matrix shape {coupling_matrix.shape} != "
+                    f"({n_modes}, {n_modes})")
+            C = coupling_matrix.copy()
+        else:
+            C = np.zeros((n_modes, n_modes))
+            for i in range(n_modes):
+                for j in range(n_modes):
+                    C[i, j] = np.exp(-abs(i - j) * coupling_decay)
 
         # Nonlinear feedback from dominant eigenvector of previous scale
         if prev_dominant is not None:
@@ -201,8 +214,10 @@ def energy_cascade(injection_energy, n_scales, n_modes=8,
         # Ensure C is symmetric and positive definite
         C = (C + C.T) / 2
         eigs_C = np.linalg.eigvalsh(C)
+        psd_shift = 0.0
         if np.min(eigs_C) < 1e-10:
-            C += np.eye(n_modes) * (abs(np.min(eigs_C)) + 1e-6)
+            psd_shift = abs(np.min(eigs_C)) + 1e-6
+            C += np.eye(n_modes) * psd_shift
 
         # Energy distribution across modes
         means = P * np.exp(-np.arange(n_modes) * coupling_decay)
@@ -243,6 +258,7 @@ def energy_cascade(injection_energy, n_scales, n_modes=8,
             'E_transfer': E_transfer,
             'participation_ratio': (np.sum(eigenvalues)**2
                                     / np.sum(eigenvalues**2)),
+            'psd_shift': psd_shift,
             'alive': True
         })
 

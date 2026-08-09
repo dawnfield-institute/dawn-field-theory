@@ -1,0 +1,456 @@
+{
+  "experiment": "exp_05_general_k_limit",
+  "registration_commit": "c5e05712",
+  "anchor": {
+    "k": 2,
+    "m_grid": [
+      100,
+      150,
+      200,
+      250,
+      300,
+      350,
+      400
+    ],
+    "m_theta": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "richardson_limit": 0.0,
+    "skips": [],
+    "target": 2.6666666666666665,
+    "reldev": 1.0,
+    "pass": false
+  },
+  "verdict": "VOID (anchor gate failed -- instrument bug)",
+  "k3_z2_scan": {
+    "k=2": [
+      {
+        "m": 6,
+        "n_reflections": 2,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          3.1415926535897927,
+          3.1415926535897927
+        ]
+      },
+      {
+        "m": 8,
+        "n_reflections": 4,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.923918047745542,
+          2.923918047745542
+        ]
+      },
+      {
+        "m": 10,
+        "n_reflections": 6,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.8282647401840157,
+          2.8282647401840157
+        ]
+      },
+      {
+        "m": 12,
+        "n_reflections": 4,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.7777283676421405,
+          2.7777283676421405
+        ]
+      },
+      {
+        "m": 14,
+        "n_reflections": 8,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.7477476939445014,
+          2.7477476939445014
+        ]
+      },
+      {
+        "m": 16,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.7284878656218368,
+          2.7284878656218368
+        ]
+      },
+      {
+        "m": 18,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.715374016518309,
+          2.715374016518309
+        ]
+      },
+      {
+        "m": 20,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.706039036402122,
+          2.706039036402122
+        ]
+      },
+      {
+        "m": 22,
+        "n_reflections": 16,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.6991565291910917,
+          2.6991565291910917
+        ]
+      },
+      {
+        "m": 24,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.6939356732286655,
+          2.6939356732286655
+        ]
+      },
+      {
+        "m": 26,
+        "n_reflections": 18,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.689880904813132,
+          2.689880904813132
+        ]
+      },
+      {
+        "m": 28,
+        "n_reflections": 4,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.6866687309181323,
+          2.6866687309181323
+        ]
+      },
+      {
+        "m": 30,
+        "n_reflections": 4,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.6840806412447105,
+          2.6840806412447105
+        ]
+      }
+    ],
+    "k=3": [
+      {
+        "m": 6,
+        "n_reflections": 0,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.6462215748851273,
+          0.6462215748851273
+        ]
+      },
+      {
+        "m": 8,
+        "n_reflections": 2,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.016300063596337674,
+          0.016300063596337674
+        ]
+      },
+      {
+        "m": 10,
+        "n_reflections": 4,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.31044520203051457,
+          0.31044520203051457
+        ]
+      },
+      {
+        "m": 12,
+        "n_reflections": 6,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.46375785200842956,
+          0.46375785200842956
+        ]
+      },
+      {
+        "m": 14,
+        "n_reflections": 4,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.5536850795190682,
+          0.5536850795190682
+        ]
+      },
+      {
+        "m": 16,
+        "n_reflections": 8,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.6109904273410871,
+          0.6109904273410871
+        ]
+      },
+      {
+        "m": 18,
+        "n_reflections": 12,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.6497861867298472,
+          0.6497861867298472
+        ]
+      },
+      {
+        "m": 20,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.677288106256877,
+          0.677288106256877
+        ]
+      },
+      {
+        "m": 22,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.6975022230990704,
+          0.6975022230990704
+        ]
+      },
+      {
+        "m": 24,
+        "n_reflections": 12,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.7128000142057708,
+          0.7128000142057708
+        ]
+      },
+      {
+        "m": 26,
+        "n_reflections": 14,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.7246593235117871,
+          0.7246593235117871
+        ]
+      },
+      {
+        "m": 28,
+        "n_reflections": 16,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.7340406444761909,
+          0.7340406444761909
+        ]
+      },
+      {
+        "m": 30,
+        "n_reflections": 14,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          0.0,
+          0.7415904996606151,
+          0.7415904996606151
+        ]
+      }
+    ],
+    "k=4": [
+      {
+        "m": 7,
+        "n_reflections": 2,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.070494859407085,
+          2.070494859407085,
+          2.7783088749401443,
+          2.7783088749401443
+        ]
+      },
+      {
+        "m": 9,
+        "n_reflections": 4,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.93109677584578,
+          2.93109677584578,
+          3.045029126830463,
+          3.045029126830463
+        ]
+      },
+      {
+        "m": 11,
+        "n_reflections": 6,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.914805397118392,
+          2.914805397118392,
+          3.089526817419348,
+          3.089526817419348
+        ]
+      },
+      {
+        "m": 13,
+        "n_reflections": 6,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.6739343741227604,
+          2.6739343741227604,
+          3.0026543316851475,
+          3.0026543316851475
+        ]
+      },
+      {
+        "m": 15,
+        "n_reflections": 6,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.52810989260322,
+          2.52810989260322,
+          2.9482145372415993,
+          2.9482145372415993
+        ]
+      },
+      {
+        "m": 17,
+        "n_reflections": 8,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.4331390260965597,
+          2.4331390260965597,
+          2.9120000745197165,
+          2.9120000745197165
+        ]
+      },
+      {
+        "m": 19,
+        "n_reflections": 6,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.3677762365742665,
+          2.3677762365742665,
+          2.8867284262923127,
+          2.8867284262923127
+        ]
+      },
+      {
+        "m": 21,
+        "n_reflections": 8,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.320829556106496,
+          2.320829556106496,
+          2.868403509853078,
+          2.868403509853078
+        ]
+      },
+      {
+        "m": 23,
+        "n_reflections": 8,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.2859491407429604,
+          2.2859491407429604,
+          2.8546952087539768,
+          2.8546952087539768
+        ]
+      },
+      {
+        "m": 25,
+        "n_reflections": 12,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.2593114842946744,
+          2.2593114842946744,
+          2.8441732205033046,
+          2.8441732205033046
+        ]
+      },
+      {
+        "m": 27,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.2385003283072695,
+          2.2385003283072695,
+          2.8359208963955234,
+          2.8359208963955234
+        ]
+      },
+      {
+        "m": 29,
+        "n_reflections": 10,
+        "reflections_even": true,
+        "det_H": 1.0,
+        "holonomy_angles": [
+          2.221926610493029,
+          2.221926610493029,
+          2.8293289997846194,
+          2.8293289997846194
+        ]
+      }
+    ]
+  }
+}

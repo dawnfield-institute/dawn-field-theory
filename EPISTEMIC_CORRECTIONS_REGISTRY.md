@@ -15,6 +15,7 @@ This document is a living registry of discovered misconceptions, curve-fitting a
 2. [φ and Ξ Curve-Fitting Correction](#2-φ-and-ξ-curve-fitting-correction-january-2026)
 3. [M11 Hardening Cycle](#3-m11-hardening-cycle-april-2026)
 4. [PACSeries v0.3 Verification Pass](#4-pacseries-v03-verification-pass-july-2026)
+5. [Turbulence/Cascade Stack Audit](#5-turbulencecascade-stack-audit-july-2026)
 
 ---
 
@@ -342,6 +343,34 @@ The characteristic failure mode was consistent: a strong result from an idealize
 
 ---
 
+## 5. Turbulence/Cascade Stack Audit (July 2026)
+
+### Context
+
+A full code-and-artifacts audit of the turbulence/Navier-Stokes/cascade stack (2026-07-17) checked every headline claim against the result files and scripts that produced it, then re-founded the program on milestone-era machinery (`ade_cascade/`, `dns_instrument/`) under the midnight invariant-registration discipline.
+
+### Corrections
+
+| Claim (as previously carried) | What the artifacts show | Where corrected |
+|---|---|---|
+| "Ξ ≈ 1.057 discovered empirically in the NS domain before the derivation" | ξ was a tunable grid-searched over [0.8, 2.0]; 1.0571 is the quality-score optimum; 1+π/55 fitted post hoc (already adjudicated by `phi_artifact_test`, Jan 2026 — this entry propagates it) | lore `med-navier-stokes` |
+| MED–NS "regularity proofs" | Assume a 3-pattern convex surrogate; artifacts record `sec_success_rate: 0.0`, ~53% reconstruction error, 32×32/64×64 2D only | lore `med-navier-stokes` |
+| pac_dag_fluid: "Ξ ≈ 1.057 emerges; slope ≈ −1.9; conservation < 10⁻¹⁵" | Ξ hardcoded (measured ratio 2.41); slope −0.079 in stable runs, −1.9 in no run; conservation ~10⁻¹³ (one archived run diverged); exp_04 script does not exist. Journals were honest; READMEs aspirational | lore `pac-dag-fluid`, `bidirectional-sec-pac-fluid` |
+| She-Leveque "β = 2/3 derives from PAC" | β = 2/3 is the 1994 empirical value re-notated as F₃/F₄ (`exp_40:111` says so); k=9 imposed over MSE-optimal 8.97; k = d·F_{d+1} selected post hoc on d=2,3 | lore `she-leveque-fibonacci-turbulence` |
+| exp_15 "800× stability ratio" | JSON ratio is ~1063×; SYNTHESIS mis-rounded. The local/global CoV asymmetry itself (0.163 vs 0.000153) is the SEC-local/PAC-global signature — the construction is expected, the number was wrong | lore `cascade-turbulence-mode-count` |
+| "Mode count determines the exponent" / the 3.3% gap to −5/3 | **A-family artifact**: the legacy kernel exp(−\|i−j\|·cd) is the A-path Dynkin distance kernel; at equal rank, diagram topology alone moves the exponent (E < D < A, pre-registered R1 CONFIRM); D₈ = −1.6624, 0.26% from −5/3 | `ade_cascade/` round 1 |
+| 8/3 = F₆/F₄ (M15 large-rank limit, [D]) | Retired as coincidence: both Fibonacci and odd-harmonic general-k candidates killed by pre-registered exp_05; the limit is the box-momentum-operator spectrum (exp_06 CONFIRM, registered k=5,6 predictions hit at ~10⁻⁶) | `milestone15/` exp_05/06 |
+
+### Registered kills the same day (discipline cutting both ways)
+
+The affine-vertex reading of the cascade k−1 offset (registered R2) was KILLED (median ρ = 0.91, direction reversed). The exp_05 anchor gate caught and voided an instrument sign-convention bug before any k > 2 result was read.
+
+### Where the prior formulation lives (lineage, not a TODO)
+
+The preprints `macro_emergence_dynamics_navier_stokes`, `bidirectional_sec_pac_fluid`, and `she_leveque_fibonacci_turbulence` (and `UNIFIED_EVIDENCE.md`) still carry the earlier formulation. This is deliberate: they are the **prior layer of the lineage** — snapshots of where the thinking was — and the correction is recorded *forward* here, in the changelog, and in the graph rather than by rewriting them. Per the Imperfection Engine, the visible progression (old claim → forward correction) *is* the record of motion. Whether and when to issue revised preprint versions is the author's call; it is not required for the registry's correctness.
+
+---
+
 ## Meta: On Corrections as Progress
 
 Each entry in this registry represents a **collapse event** in the Imperfection Engine sense:
@@ -370,6 +399,6 @@ Submit as a PR or issue to trigger the scrutiny engine.
 
 ---
 
-*Registry Version: 1.1*
-*Last Updated: 2026-04-29*
+*Registry Version: 1.2*
+*Last Updated: 2026-07-17*
 *Status: Living Document*
