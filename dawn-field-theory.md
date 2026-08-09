@@ -9,7 +9,7 @@ The theory does not fit parameters to data. It derives them. The fine structure 
 DFT is an active research program at the Dawn Field Institute. It is not finished. Some results are structural (pass by construction), some predictions have failed (DESI wa), and the framework awaits independent replication and peer review. This document describes what the framework does, what it has produced, and where it stands.
 
 **Author:** Peter Groom, Dawn Field Institute
-**Published papers:** PACSeries v0.2 on Zenodo (DOI: 10.5281/zenodo.15783623)
+**Published papers:** PACSeries v0.3 on Zenodo (concept DOI: 10.5281/zenodo.17295102)
 
 ---
 

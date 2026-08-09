@@ -92,8 +92,7 @@ Infodynamics does not replace quantum field theory or general relativity. It gro
 - Full non-perturbative calculations (M11 is semi-classical)
 
 ### What's published
-- PACSeries v0.2 on Zenodo (DOI: 10.5281/zenodo.15783623): 6 papers covering erasure cost, Xi decomposition, Feigenbaum constants, Standard Model parameters, classical physics, computational validation
-- v0.3 in planning (incorporates M4-M11 results)
+- PACSeries v0.3 on Zenodo (concept DOI: 10.5281/zenodo.17295102): 12 papers covering erasure cost, Xi decomposition, Feigenbaum constants, Standard Model parameters, classical physics, and computational validation (Papers 1-6), extended to the symmetry primitive, quantum gravity, cosmology, spacetime, quantum mechanics, and observational contact (Papers 7-12)
 
 ---
 

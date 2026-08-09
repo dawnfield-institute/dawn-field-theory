@@ -101,7 +101,7 @@ The entire codebase is open. The framework invites scrutiny — the Epistemic Co
 
 ## Key Papers
 
-- **PACSeries v0.2** (Zenodo DOI: 10.5281/zenodo.15783623): 6 papers covering the mathematical foundations
+- **PACSeries v0.3** (Zenodo concept DOI: 10.5281/zenodo.17295102): 12 papers. The six foundational papers:
   - Paper 1: Structure Cost of Erasure (Landauer + DPI -> Xi)
   - Paper 2: Balance Constant Decomposition (Xi = gamma + ln(phi))
   - Paper 3: Feigenbaum Constants from Fibonacci Arithmetic (13 digits)
