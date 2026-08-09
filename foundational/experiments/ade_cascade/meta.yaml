@@ -1,13 +1,14 @@
 schema_version: '2.0'
 directory_name: ade_cascade
-description: >
-  Re-founding of the cascade turbulence program on milestone-era machinery.
-  Replaces the legacy exp(-|i-j|*decay) coupling kernel with graph-distance
-  kernels on ADE Dynkin diagrams (A/D/E via milestone12 DynkinDiagram, affine-A
-  via milestone15 build_cycle), under the midnight invariant-registration
-  discipline. Round 1 registers three relations: R1 diagram selectivity at
-  equal rank, R2 the affine-vertex reading of the k-1 offset, R3 mode-count
-  map survival. The legacy engine is nested exactly as the A-family arm.
+description: 'Re-founding of the cascade turbulence program on milestone-era machinery.
+  Replaces the legacy exp(-|i-j|*decay) coupling kernel with graph-distance kernels
+  on ADE Dynkin diagrams (A/D/E via milestone12 DynkinDiagram, affine-A via milestone15
+  build_cycle), under the midnight invariant-registration discipline. Round 1 registers
+  three relations: R1 diagram selectivity at equal rank, R2 the affine-vertex reading
+  of the k-1 offset, R3 mode-count map survival. The legacy engine is nested exactly
+  as the A-family arm.
+
+  '
 semantic_scope:
 - ADE
 - Dynkin
@@ -23,6 +24,6 @@ files:
 - README.md
 child_directories:
 - core
-- scripts
-- results
 - journals
+- results
+- scripts

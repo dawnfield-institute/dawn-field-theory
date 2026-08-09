@@ -8,7 +8,9 @@ semantic_scope:
 - information_erasure
 - thermodynamics
 files:
-- '[id][T][v1.0][C2][I3][E]_landauer_erasure_field_cost_map.py'
-- results.md
+- README.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts

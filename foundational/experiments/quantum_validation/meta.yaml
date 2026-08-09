@@ -10,7 +10,8 @@ semantic_scope:
 - symbolic field theory
 - experiment
 - analytic comparison
-files: []
+files:
+- README.md
 child_directories:
 - born_rule
 - landauer_symbolic_erasure_energy_validation

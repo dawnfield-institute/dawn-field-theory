@@ -12,5 +12,7 @@ semantic_scope:
 - integrated_analysis
 - experimental_synthesis
 files:
+- beta_investigation.png
 - comparative_analysis_20250825_105223.json
+- kappa_scaling.png
 child_directories: []

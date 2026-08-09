@@ -1,9 +1,10 @@
 schema_version: '2.0'
 directory_name: reference_material
-description: >
-  Reference materials for infodynamic gravity experiment including
-  observational data, theoretical papers, computational benchmarks,
-  and comparison datasets for validation.
+description: 'Reference materials for infodynamic gravity experiment including observational
+  data, theoretical papers, computational benchmarks, and comparison datasets for
+  validation.
+
+  '
 semantic_scope:
 - reference_data
 - observational_datasets

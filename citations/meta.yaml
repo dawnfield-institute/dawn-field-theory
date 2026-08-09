@@ -14,6 +14,7 @@ files:
 - README.md
 - contributors-index.json
 - contributors_bibtex.bib
+- doi_registry.yaml
 - pr-citation-template.yaml
 parent_directory: dawn-field-theory
 notes:

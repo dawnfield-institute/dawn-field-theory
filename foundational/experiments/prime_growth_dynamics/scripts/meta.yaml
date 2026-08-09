@@ -1,12 +1,41 @@
-schema_version: "2.0"
-description: "Numbered experiment scripts following exp_NN_name.py convention"
-semantic_scope: "implementation"
-proficiency_level: "research"
-
+schema_version: '2.0'
+description: Numbered experiment scripts following exp_NN_name.py convention
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[exp_01_pac_conservation.py]": "Test PAC conservation in factorization"
-  - "[exp_02_minimal_seed.py]": "Verify primes as minimal generating set"
-  - "[exp_03_irreducibility.py]": "Information-theoretic primality analysis"
-  - "[exp_04_local_vs_global.py]": "Test local vs global prime density influence"
-  - "[exp_05_frontier_dynamics.py]": "Analyze behavior at number line frontier"
-  - "[exp_06_slot_analysis.py]": "Test for predictable prime slots"
+- exp_01_pac_conservation.py
+- exp_02_growth_direction.py
+- exp_03_growth_models.py
+- exp_04_frontier_crystallization.py
+- exp_05_even_odd_oscillation.py
+- exp_06_oscillation_persistence.py
+- exp_07_omega_mobius.py
+- exp_08_phi_at_k3.py
+- exp_09_crystallization_dynamics.py
+- exp_10_field_decay.py
+- exp_11_bridge_E_omega.py
+- exp_12_omega_deep_dive.py
+- exp_13_phi_convergence.py
+- exp_14_falsification.py
+- exp_15_deep_convergence.py
+- exp_16_phi_crossing.py
+- exp_17_inverse_fibonacci.py
+- exp_18_contradiction_resolution.py
+- exp_19_falsification_v2.py
+- exp_20_unified_synthesis.py
+- exp_21_riemann_interference.py
+- exp_22_riemann_algebra_geometry.py
+- exp_23_xi_derivation_contest.py
+- exp_24_falsification_suite.py
+- exp_25_xi_exact_derivation.py
+- exp_26_landauer_delta_k.py
+- exp_27_landauer_cross_validation.py
+- exp_28_distributed_collapse.py
+- exp_28_results.json
+- exp_29_gamma_as_surplus.py
+- exp_29_results.json
+- exp_30_gamma_falsification.py
+- exp_30_results.json
+- exp_31_results.json
+- exp_31_universal_decomposition.py
+child_directories: []

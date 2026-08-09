@@ -1,26 +1,25 @@
-schema_version: "2.0"
-slug: "resonant_symbolic_convergence_human_agent"
-title: "Resonant Symbolic Convergence Human Agent"
-category: "ai"
-status: "Draft"
-version: "1.0"
+schema_version: '2.0'
+slug: resonant_symbolic_convergence_human_agent
+title: Resonant Symbolic Convergence Human Agent
+category: ai
+status: Draft
+version: '1.0'
 complexity: 4
 impact: 3
-evidence_type: "R"
-created: "2025-12-20T11:18:55.840860"
-
-original_filename: "[ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.md"
-source_location: "drafts"
-
+evidence_type: R
+created: '2025-12-20T11:18:55.840860'
+original_filename: '[ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.md'
+source_location: drafts
 files:
-  paper: "paper.md"
-  latex: "paper.tex"
-  pdf: "paper.pdf"
-
+- CITATION.md
+- LICENSE
+- README.md
+- paper.md
 code:
   has_experiments: true
-  trace_file: "Code/trace.yaml"
-  
+  trace_file: Code/trace.yaml
 keywords:
-  - Dawn Field Theory
-  - AI
+- Dawn Field Theory
+- AI
+child_directories:
+- Code

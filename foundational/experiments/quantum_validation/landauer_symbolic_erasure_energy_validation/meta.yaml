@@ -9,7 +9,10 @@ semantic_scope:
 - landauer erasure
 - symbolic collapse
 files:
-- '[id][T][v1.0][C3][I4][E]_landauer_symbolic_erasure_energy_validation.py'
+- README.md
 - results.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts
