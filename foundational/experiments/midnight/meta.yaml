@@ -1,37 +1,35 @@
-schema: "2.0"
+schema: '2.0'
 id: midnight
-title: "Midnight: Observational Frontiers of Dawn Field Theory"
+title: 'Midnight: Observational Frontiers of Dawn Field Theory'
 domain: physics
 status: active
 confidence: 0.3
-created: "2026-06-03"
+created: '2026-06-03'
 tags:
-  - observational-cosmology
-  - photon-archaeology
-  - substrate-independent-life
-  - non-SEC-channels
-  - cosmos-simulation
-  - phase-rate-primitive
-  - entropy-reduction
-  - PAC-conservation
-  - SEC-dynamics
-  - fine-structure-invariance
-  - gravity-entanglement
-  - individuation-conservation
-  - reality-engine
-  - applied-DFT
+- observational-cosmology
+- photon-archaeology
+- substrate-independent-life
+- non-SEC-channels
+- cosmos-simulation
+- phase-rate-primitive
+- entropy-reduction
+- PAC-conservation
+- SEC-dynamics
+- fine-structure-invariance
+- gravity-entanglement
+- individuation-conservation
+- reality-engine
+- applied-DFT
 dependencies:
-  - milestone14
-  - milestone13
-  - milestone12
-  - milestone11
-  - milestone-r
+- milestone14
+- milestone13
+- milestone12
+- milestone11
+- milestone-r
 child_directories:
-  core:
-    description: "Shared modules (empty - experiments not yet started)"
-  scripts:
-    description: "Experiments organized by thread"
-  results:
-    description: "Timestamped JSON outputs"
-  journals:
-    description: "Research logs"
+- core
+- journals
+- results
+- scripts
+files:
+- README.md

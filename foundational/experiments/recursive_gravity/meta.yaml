@@ -9,9 +9,9 @@ semantic_scope:
 - experiments
 - foundational
 files:
-- macro_emergence_knn.py
-- proto_galactic_superfluid.py
-- recursive_gravity.py
-- results.md
+- README.md
 child_directories:
+- journals
 - reference_material
+- results
+- scripts

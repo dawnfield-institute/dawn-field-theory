@@ -1,52 +1,38 @@
-schema_version: "2.0"
-description: "Milestone 4: PAC Relativity, Turbulence, and Energy as Collapsed Potential"
-semantic_scope: "implementation"
-proficiency_level: "research"
-version: "0.1.0"
-status: "completed"
-date_created: "2026-02-22"
-date_updated: "2026-03-12"
-
+schema_version: '2.0'
+description: 'Milestone 4: PAC Relativity, Turbulence, and Energy as Collapsed Potential'
+semantic_scope: implementation
+proficiency_level: research
+version: 0.1.0
+status: completed
+date_created: '2026-02-22'
+date_updated: '2026-03-12'
 files:
-  - "[README.md]": "Milestone overview, experiment plan, and success criteria"
-  - "[SYNTHESIS.md]": "Cross-connections to other experiments and papers"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "scripts"
-    description: "Formal experiment scripts (exp_01 through exp_15)"
-  - name: "results"
-    description: "JSON outputs from all experiments"
-  - name: "journals"
-    description: "Research logs"
-  - name: "core"
-    description: "Shared constants, utilities, physics data"
-  - name: "package"
-    description: "Original exploratory session (Feb 22, 2026)"
-  - name: "source_material"
-    description: "Working paper and precursor scripts (from energy_equivilance)"
-  - name: "logs"
-    description: "Console stdout/stderr capture files from experiment runs"
-  - name: "herniation_research"
-    description: "Mass ratio derivation via topological herniation"
-
+- core
+- herniation_research
+- journals
+- logs
+- package
+- results
+- scripts
+- source_material
 estimated_context_weight: 1.0
-validation_type: "automated"
-
+validation_type: automated
 source_material:
-  - "package/ (exploratory session)"
-  - "source_material/Energy_as_Collapsed_Potential_Working_Paper.md"
-  - "source_material/cascade_deep_dive.py"
-  - "source_material/landauer_generative.py"
-
+- package/ (exploratory session)
+- source_material/Energy_as_Collapsed_Potential_Working_Paper.md
+- source_material/cascade_deep_dive.py
+- source_material/landauer_generative.py
 target_papers:
-  - "Paper 5: Classical Physics from Information Geometry (turbulence, Maxwell)"
-  - "Paper 7 (proposed): PAC Relativity — Lorentz, Locality, Speed of Light"
-  - "Paper 8 (proposed): Energy as Collapsed Potential — Nuclear Fission, Binding Energy"
-
+- 'Paper 5: Classical Physics from Information Geometry (turbulence, Maxwell)'
+- 'Paper 7 (proposed): PAC Relativity — Lorentz, Locality, Speed of Light'
+- 'Paper 8 (proposed): Energy as Collapsed Potential — Nuclear Fission, Binding Energy'
 dependencies:
-  - "milestone1 (SM derivation chain, gravity hierarchy)"
-  - "milestone2 (turbulence extension, mass ratios)"
-  - "milestone3 (cascade Fibonacci origin, Landauer validation)"
-  - "landauer_erasure_structure (cascade amplification)"
-  - "navier-stokes (symbolic engine, Ξ discovery)"
-  - "gravity_from_maxwell_pac (F₁₈₃ gravity depth)"
+- milestone1 (SM derivation chain, gravity hierarchy)
+- milestone2 (turbulence extension, mass ratios)
+- milestone3 (cascade Fibonacci origin, Landauer validation)
+- landauer_erasure_structure (cascade amplification)
+- navier-stokes (symbolic engine, Ξ discovery)
+- gravity_from_maxwell_pac (F₁₈₃ gravity depth)

@@ -1,7 +1,35 @@
-schema_version: "2.0"
-description: "Experiment scripts for oscillation attractor dynamics"
-semantic_scope: "implementation"
+schema_version: '2.0'
+description: Experiment scripts for oscillation attractor dynamics
+semantic_scope: implementation
 files:
-  - "[exp_01_zero_crossing_detection.py]": "Detect zero-crossings and correlate with primes"
-  - "[exp_02_damping_characterization.py]": "Measure damping rate and compare to constants"
-  - "[exp_03_interval_analysis.py]": "Compare crossing intervals to prime gaps"
+- exp_01_zero_crossing_detection.py
+- exp_02_prime_causality.py
+- exp_03_injection_halos.py
+- exp_04_mobius_structure.py
+- exp_05_consecutive_gaps_mobius.py
+- exp_06_phi_mobius_pairs.py
+- exp_07_deep_mobius_structure.py
+- exp_08_gap_detection.py
+- exp_09_enhanced_detection.py
+- exp_10_phi_convergence_mobius_map.py
+- exp_11_scale_improvement_analysis.py
+- exp_12_riemann_zero_search.py
+- exp_12_riemann_zero_search_gpu.py
+- exp_13_zeros_as_hidden_cause.py
+- exp_14_making_zeros_visible.py
+- exp_15_pi_mobius_constraint.py
+- exp_16_pi_zero_connection.py
+- exp_17_pi_to_phi_chain.py
+- exp_17b_pi_to_phi_correct.py
+- exp_17c_actual_sec.py
+- exp_18_cah_closed_system.py
+- exp_19_cah_recursion_depth.py
+- exp_20_cah_conservation.py
+- exp_21_cah_saturation.py
+- exp_21b_refined_eoc.py
+- exp_21c_k9_special.py
+- exp_22_cah_unified.py
+- exp_22b_refined_cah.py
+- exp_23e_amplification_twist.py
+- exp_24_comprehensive_validation.py
+child_directories: []

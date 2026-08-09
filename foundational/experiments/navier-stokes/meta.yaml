@@ -15,10 +15,12 @@ semantic_scope:
 - computational-exploration
 - alternative-methods
 files:
+- README.md
 - pytest.ini
 - test_config.yaml
-- unified_experimental_framework.py
 child_directories:
+- journals
 - navier_symbolic_engine
 - results
+- scripts
 - tests

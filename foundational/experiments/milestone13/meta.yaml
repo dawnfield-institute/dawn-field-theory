@@ -1,53 +1,43 @@
-schema_version: "2.0"
-description: >
-  Milestone 13: Identity as Complement — Relativity as Complement-Transformation.
-  A vertex's identity IS its complement: the structure of the graph without it.
-  Different observers compute different complements of the same entity (definitional
-  parallax), and the transformations between complement-views form the Weyl group —
-  the discrete skeleton of the continuous Lie group. SEC complexification extends
-  this skeleton to the full Lorentz group, deriving special relativity from
-  graph-theoretic complement operations. 13 experiments in 5 blocks.
-semantic_scope: "research"
-proficiency_level: "research"
-version: "1.0.0"
-status: "active"
-date_created: "2026-05-19"
-date_updated: "2026-05-19"
+schema_version: '2.0'
+description: 'Milestone 13: Identity as Complement — Relativity as Complement-Transformation.
+  A vertex''s identity IS its complement: the structure of the graph without it. Different
+  observers compute different complements of the same entity (definitional parallax),
+  and the transformations between complement-views form the Weyl group — the discrete
+  skeleton of the continuous Lie group. SEC complexification extends this skeleton
+  to the full Lorentz group, deriving special relativity from graph-theoretic complement
+  operations. 13 experiments in 5 blocks.
 
+  '
+semantic_scope: research
+proficiency_level: research
+version: 1.0.0
+status: active
+date_created: '2026-05-19'
+date_updated: '2026-05-19'
 files:
-  - "[README.md]": "Thesis, experiment index, scorecard"
-  - "[SYNTHESIS.md]": "Detailed findings, honest failures"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "core"
-    description: "identity_complement.py extending M12's connection_geometry.py"
-  - name: "scripts"
-    description: "13 experiment scripts (exp_01 through exp_13)"
-  - name: "results"
-    description: "JSON output from experiment runs"
-  - name: "journals"
-    description: "Session research logs"
-
+- core
+- results
+- scripts
 estimated_context_weight: 0.95
-validation_type: "computational"
-
+validation_type: computational
 key_results:
-  - "Score: TBD/52"
-
+- 'Score: TBD/52'
 dependencies:
   internal:
-    - "../milestone12/": "ADE infrastructure, SEC complexification, Lorentz derivation"
-    - "../milestone11/": "Response times, quantum gravity, all DFT constants"
+  - ../milestone12/: ADE infrastructure, SEC complexification, Lorentz derivation
+  - ../milestone11/: Response times, quantum gravity, all DFT constants
   external:
-    - "numpy>=1.24"
-    - "scipy>=1.10"
-
+  - numpy>=1.24
+  - scipy>=1.10
 tags:
-  - milestone-13
-  - identity-as-complement
-  - definitional-parallax
-  - complement-transformation
-  - lorentz-derivation
-  - relativity
-  - weyl-group
-  - coherence-limit
+- milestone-13
+- identity-as-complement
+- definitional-parallax
+- complement-transformation
+- lorentz-derivation
+- relativity
+- weyl-group
+- coherence-limit
