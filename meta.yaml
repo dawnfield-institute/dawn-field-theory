@@ -33,6 +33,7 @@ files:
 - timeline.md
 child_directories:
 - .changelog
+- .claude
 - .github
 - archive
 - experiments

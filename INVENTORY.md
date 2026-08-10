@@ -15,7 +15,7 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 | [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 11 |
 
-Tracked files: **9368**
+Tracked files: **9372**
 
 **75 experiments** — 50 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 
