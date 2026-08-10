@@ -15,7 +15,7 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 | [`archive/`](archive/) | lineage, by era — terminal | 5117 |
 | [`tools/`](tools/) | generators and validators | 10 |
 
-Tracked files: **9313**
+Tracked files: **9314**
 
 ## On deck
 
