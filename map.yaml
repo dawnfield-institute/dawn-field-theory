@@ -6710,6 +6710,7 @@ dawn-field-theory/
       symmetry_primitive.md
       tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md
   tools/
+    check_links.py
     converter.py
     generate_experiment_index.py
     generate_inventory.py
