@@ -1,8 +1,8 @@
 schema_version: '2.0'
 directory_name: dawn-field-theory
 description: 'Dawn Field Theory theory repository. Core theoretical framework (PAC/SEC/RBF/MED),
-  73 experiment directories across 15 milestones, and published papers (PACSeries
-  on Zenodo). Derives physical constants from information-theoretic first principles.
+  75 experiments across 15 milestones, and published papers (PACSeries on Zenodo).
+  Derives physical constants from information-theoretic first principles.
 
   '
 repository_role: foundational_theory

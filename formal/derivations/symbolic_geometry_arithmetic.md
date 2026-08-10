@@ -78,8 +78,8 @@ These operators are state- and entropy-dependent.
 
 Refer to:
 
-* [Symbolic Superfluid Collapse Pi Results](../../archive/blueprints/nuclear_containment/v1/results.md)
-* [Symbolic Fractal Pruning Results](../../archive/blueprints/nuclear_containment/v1/results.md)
+* [Symbolic Superfluid Collapse Pi Results](../../archive/era1-symbolic/symbolic_superfluid_collapse_pi/results/results.md)
+* [Symbolic Fractal Pruning Results](../../archive/era1-symbolic/symbolic_fractal_pruning/results/results.md)
 
 ## 6. Future Extensions
 

@@ -329,7 +329,7 @@ These apply PAC/SEC to new domains. The applications are interesting but each ne
 - Flexibility correlation: flexible residues 6.92× enriched vs rigid 4.01×
 - Function-specific: Fibronectin 10.25×, Myosin 9.65× enrichment
 
-**Source**: `experiments/dna_prime_structure/` (40 scripts), `experiments/studies/dna_prime_structure/SYNTHESIS.md`
+**Source**: `experiments/dna_prime_structure/` (40 scripts), `experiments/dna_prime_structure/SYNTHESIS.md`
 
 **What's needed**:
 - Cross-validation on non-PDB datasets (UniProt, AlphaFold DB)

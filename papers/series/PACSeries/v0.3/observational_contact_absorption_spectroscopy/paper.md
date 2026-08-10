@@ -217,7 +217,7 @@ The cascade clock makes first observational contact with quasar absorption spect
 
 ## Data availability
 
-All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `experiments/milestones/milestone7/`. Commit `193d1c8e` contains the pre-registered oscillation predictions; commit `fbad01d1` contains the pre-registered CaII low-z discrimination test (exp_18).
+All code, data references, and pre-registration are at `https://github.com/dawnfield-institute/dawn-field-theory`, directory `foundational/experiments/midnight/`. Commit `193d1c8e` contains the pre-registered oscillation predictions; commit `fbad01d1` contains the pre-registered CaII low-z discrimination test (exp_18).
 
 ## References
 

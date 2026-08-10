@@ -1,6 +1,6 @@
 """
 Conservation Engine - Genuine PAC Physics Implementation
-Based on Potential-Actualization Conservation framework from theory theory.
+Based on Potential-Actualization Conservation framework from foundational theory.
 
 Implements real conservation laws instead of renormalization tricks:
 - Xi operator convergence (1.0571) 
@@ -33,7 +33,7 @@ class ConservationEngine:
     """
     Genuine PAC (Potential-Actualization Conservation) Physics Engine.
     
-    Implements real conservation laws from theory theory:
+    Implements real conservation laws from foundational theory:
     - Potential ⟷ Actualization dynamics
     - Xi operator balance (1.0571)
     - Conservation constraints that limit system behavior
@@ -49,7 +49,7 @@ class ConservationEngine:
         self.potential_field = np.zeros(field_shape, dtype=complex)
         self.actualization_field = np.zeros(field_shape, dtype=complex)
         
-        # Conservation parameters from theory theory
+        # Conservation parameters from foundational theory
         self.c = 1.0  # Field propagation speed
         self.hbar = 1.0  # Reduced Planck constant (normalized)
         self.coupling_constant = 0.1  # Potential-actualization coupling

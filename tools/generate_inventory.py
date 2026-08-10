@@ -31,7 +31,8 @@ ERA_TITLES = {
 
 
 def tracked():
-    out = subprocess.run(["git", "ls-files"], cwd=REPO, capture_output=True, text=True).stdout
+    out = subprocess.run(["git", "-c", "core.quotePath=false", "ls-files"],
+                         cwd=REPO, capture_output=True, text=True, check=True).stdout
     return [p for p in out.split("\n") if p]
 
 
@@ -53,7 +54,7 @@ def read_meta(d):
 def experiments():
     rows = []
     base = os.path.join(REPO, "experiments")
-    for kind in ("milestones", "sidecars", "studies", "spikes"):
+    for kind in ("milestones", "sidecars", "studies"):   # spikes are exempt (STANDARDS 3)
         d = os.path.join(base, kind)
         if not os.path.isdir(d):
             continue
@@ -128,7 +129,9 @@ def build():
         ("tools/", "generators and validators"),
     ):
         L.append(f"| [`{path}`]({path}) | {holds} | {count_under(files, path)} |")
-    L += ["", f"Tracked files: **{len(files)}**", ""]
+    L += ["", f"Tracked files: **{len(files)}**", "",
+          f"**{len(exp) + len(arc)} experiments** — {len(exp)} live, {len(arc)} archived. "
+          f"Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).", ""]
 
     L += ["## On deck", "", f"{len(active)} experiments being worked now.", "",
           "| Experiment | Kind | Title |", "|---|---|---|"]

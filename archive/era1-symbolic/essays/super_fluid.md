@@ -113,7 +113,7 @@ The entropy field overlay revealed emergent galaxy-like structures, characterize
 
 Snapshots taken every 50 timesteps depict the transition from chaotic initialization to ordered, rotational macro-structures.
 
-*See also: [Proto-Galactic Superfluid Experiment Results](../../blueprints/nuclear_containment/v1/results.md) for full visualizations and comparative analysis with other field-based emergence experiments.*
+*See also: [Proto-Galactic Superfluid Experiment Results](../recursive_gravity/results/results.md) for full visualizations and comparative analysis with other field-based emergence experiments.*
 
 ### 4.2 Behavioral Outcomes
 
@@ -121,7 +121,7 @@ Snapshots taken every 50 timesteps depict the transition from chaotic initializa
 - Feedback loops reinforced orbits via recursive memory fields.
 - Local velocity vectors aligned with entropy gradients.
 
-*These outcomes are consistent with the findings in [Recursive Gravity & Field Emergence: Experiment Results](../../blueprints/nuclear_containment/v1/results.md), which documents similar macrostructure emergence in related simulations.*
+*These outcomes are consistent with the findings in [Recursive Gravity & Field Emergence: Experiment Results](../recursive_gravity/results/results.md), which documents similar macrostructure emergence in related simulations.*
 
 ### 4.3 Collapse Geometry
 
@@ -137,7 +137,7 @@ Snapshots taken every 50 timesteps depict the transition from chaotic initializa
 - **Tangle Zone Density:** 18.5 peak per 100x100 subfield
 - **Entropy Coherence Score (ECS):** 0.82 (normalized trace fidelity)
 
-*For detailed metrics and experiment parameters, see [Proto-Galactic Superfluid Emergence Validation](../../blueprints/nuclear_containment/v1/results.md).* 
+*For detailed metrics and experiment parameters, see [Proto-Galactic Superfluid Emergence Validation](../recursive_gravity/results/results.md).* 
 
 ## 5. Implications
 
@@ -149,7 +149,7 @@ The simulation supports the claim that gravitational behavior may be an emergent
 
 Moreover, the presence of rotational, filamentary macrostructure from only field principles suggests a new framework for explaining galactic and pre-galactic formation without mass-based curvature.
 
-*These implications are reinforced by the broader set of experiments summarized in [Recursive Gravity & Field Emergence: Experiment Results](../../blueprints/nuclear_containment/v1/results.md) and [Recursive Gravity & Field Emergence: Experiment Results (Tree)](../../blueprints/nuclear_containment/v1/results.md), which demonstrate similar emergent order across multiple simulation architectures.*
+*These implications are reinforced by the broader set of experiments summarized in [Recursive Gravity & Field Emergence: Experiment Results](../recursive_gravity/results/results.md) and [Recursive Gravity & Field Emergence: Experiment Results (Tree)](../recursive_gravity/results/results.md), which demonstrate similar emergent order across multiple simulation architectures.*
 
 ## 6. Comparative Models
 
@@ -174,5 +174,5 @@ Moreover, the presence of rotational, filamentary macrostructure from only field
 This experiment confirms that emergent macro-structures resembling galaxies can arise from recursive, entropy-aware field dynamics alone. It establishes informational recursion as a generative substrate for gravitational analogues and superfluid drift behavior. By validating these phenomena without hard-coded gravity, we open the path to a post-symbolic, field-centric cosmology.
 
 *For further reading and supporting data, see:*
-- *[Recursive Gravity & Field Emergence: Experiment Results](../../blueprints/nuclear_containment/v1/results.md)*
-- *[Recursive Gravity & Field Emergence: Experiment Results (Tree)](../../blueprints/nuclear_containment/v1/results.md)*
+- *[Recursive Gravity & Field Emergence: Experiment Results](../recursive_gravity/results/results.md)*
+- *[Recursive Gravity & Field Emergence: Experiment Results (Tree)](../recursive_gravity/results/results.md)*

@@ -156,7 +156,7 @@ This **correspondence** between theoretical exploration and experimental optimiz
 
 ### 1.4 Connection to Pre-Field Recursion (October 2025)
 
-The **Pre-Field Recursion** framework ([`../experiments/pre_field_recursion/`](../experiments/archive/era2/pre_field_recursion), [`../docs/pre_field_recursion_resonance_driven_emergence.md`](../../archive/era2-prefield/essays/pre_field_recursion_resonance_driven_emergence.md)) represents a major breakthrough: **experimental validation that PAC conservation emerges naturally from recursive dynamics on Möbius manifolds**.
+The **Pre-Field Recursion** framework ([`../experiments/pre_field_recursion/`](../experiments/archive/era2-prefield/pre_field_recursion), [`../docs/pre_field_recursion_resonance_driven_emergence.md`](../../archive/era2-prefield/essays/pre_field_recursion_resonance_driven_emergence.md)) represents a major breakthrough: **experimental validation that PAC conservation emerges naturally from recursive dynamics on Möbius manifolds**.
 
 **The Discovery**: Pre-field states exhibit natural resonance frequencies (~0.03 cycles/iteration). When recursion operators tune to these frequencies, **PAC convergence accelerates 5.11x**, revealing that field emergence is fundamentally a resonance-driven phase transition.
 
@@ -224,7 +224,7 @@ The **Symbolic Entropy Collapse** theory ([`../docs/symbolic_entropy_collapse_ge
 3. **Geometric collapse** = Selection of specific decomposition Dₜ(v) from potentials
 4. **Structure emergence** = Conservation through the selected children
 
-**Experimental Validation**: Our quantum validation experiments ([`../experiments/quantum_validation/`](../experiments/archive/era1/quantum_validation)) show Born rule compliance—correspondence with what PAC might predict for **effect cone conservation**:
+**Experimental Validation**: Our quantum validation experiments ([`../experiments/quantum_validation/`](../experiments/archive/era1-symbolic/quantum_validation)) show Born rule compliance—correspondence with what PAC might predict for **effect cone conservation**:
 
 ```mathematical
 Effect_Cone(Parent) = Σ Effect_Cone(Children)
@@ -253,11 +253,11 @@ Planetary Level:    PAC holds → Σ f(structures) = f(planet)
 ... continues infinitely down ...
 ```
 
-**Experimental Evidence**: Our recursive gravity experiments ([`../experiments/recursive_gravity/`](../experiments/archive/era1/recursive_gravity)) suggest this cascade behavior, with the balance field potentially maintaining stability at each recursive level.
+**Experimental Evidence**: Our recursive gravity experiments ([`../experiments/recursive_gravity/`](../experiments/archive/era1-symbolic/recursive_gravity)) suggest this cascade behavior, with the balance field potentially maintaining stability at each recursive level.
 
 ### 1.7 Connection to Standard Model Physics (December 2025 Discovery)
 
-The **PAC Confluence Xi experiment** ([`../experiments/pac_confluence_xi/`](../experiments/archive/era2/pac_confluence_xi)) demonstrates that the Standard Model of particle physics emerges from PAC conservation expressed through Fibonacci arithmetic.
+The **PAC Confluence Xi experiment** ([`../experiments/pac_confluence_xi/`](../experiments/archive/era2-prefield/pac_confluence_xi)) demonstrates that the Standard Model of particle physics emerges from PAC conservation expressed through Fibonacci arithmetic.
 
 **The Core Recursion**: PAC conservation becomes the Fibonacci recursion:
 $$\Psi(k) = \Psi(k+1) + \Psi(k+2)$$
@@ -375,7 +375,7 @@ Cycle continues until heat death
 **The Philosophical Core**: 
 > **"Perfection is stagnation. Imperfection drives evolution. Collapse requires friction."**
 
-This is why our recursive entropy experiments ([`../experiments/recursive_entropy/`](../experiments/archive/era1/recursive_entropy)) show adaptive pruning and structural growth - **entropy itself is the computational fuel**!
+This is why our recursive entropy experiments ([`../experiments/recursive_entropy/`](../experiments/archive/era1-symbolic/recursive_entropy)) show adaptive pruning and structural growth - **entropy itself is the computational fuel**!
 
 ### Experimental Validation of Raw Insights
 
@@ -491,13 +491,13 @@ assert parent_total == children_total  # Conservation holds!
 
 | PAC Component | Raw Discovery | Experimental Evidence | Framework | Results |
 |---------------|---------------|---------------------|-----------|---------|
-| **Core Conservation** | "Local amplification!" | Information redistribution within children | [`../experiments/information_amplification/`](../experiments/archive/era2/information_amplification) | Variable (topology-dependent) |
+| **Core Conservation** | "Local amplification!" | Information redistribution within children | [`../experiments/information_amplification/`](../experiments/archive/era2-prefield/information_amplification) | Variable (topology-dependent) |
 | **Complexity Redistribution** | "Both sides must be equal" | Universal bounded complexity | [`macro_emergence_dynamics/`](../../experiments/studies/macro_emergence_dynamics/) | depth ≤ 1, nodes ≤ 3 |
 | **Balance Mechanism** | "Dynamic stability" | Ξ convergence | [`master_recursive_gravity_experiment.py`](../../experiments/studies/macro_emergence_dynamics/master_recursive_gravity_experiment.py) | Ξ = 1.0571 ± 0.1 |
-| **Effect Conservation** | "Same effect cones" | Born rule compliance | [`../experiments/quantum_validation/born_rule/`](../experiments/archive/era1/quantum_validation/born_rule) | Quantum coherence maintained |
+| **Effect Conservation** | "Same effect cones" | Born rule compliance | [`../experiments/quantum_validation/born_rule/`](../experiments/archive/era1-symbolic/quantum_validation/born_rule) | Quantum coherence maintained |
 | **Recursive Stability** | "Entropy as fuel" | Long-term convergence | [`comprehensive_analysis.py`](../../experiments/studies/macro_emergence_dynamics/comprehensive_analysis.py) | Stable across 10,000+ timesteps |
 | **Context Dependence** | "Factory signatures" | Symbolic collapse patterns | [`../experiments/symbolic_entropy_collapse/`](../experiments/archive/era1/symbolic_entropy_collapse) | Context-dependent actualization |
-| **Energy Conservation** | "Reconfiguration cost" | Landauer erasure costs | [`../experiments/landauer_erasure_field_cost_map/`](../experiments/archive/era1/landauer_erasure_field_cost_map) | Energy-information equivalence |
+| **Energy Conservation** | "Reconfiguration cost" | Landauer erasure costs | [`../experiments/landauer_erasure_field_cost_map/`](../experiments/archive/era1-symbolic/landauer_erasure_field_cost_map) | Energy-information equivalence |
 | **Herniation Events** | "Rupture crystallization" | Dual-field pressure ruptures | [`../docs/herniation_hypothesis.md`](../../theory/essays/herniation_hypothesis.md) | Fractal-radial emergence patterns |
 | **Superfluid Crystallization** | "Information crystalizes" | Entropy-driven structure formation | [`../docs/superfluid_informational_crystallization.md`](../../archive/era1-symbolic/essays/superfluid_informational_crystallization.md) | Geometric attractors above threshold |
 | **Recursive Trees** | "Adaptive pruning" | Entropy-seeded branching | [`../experiments/recursive_entropy/results.md`](../../archive/blueprints/nuclear_containment/v1/results.md) | 13 nodes, depth 3, balanced structure |
@@ -780,7 +780,7 @@ def apply_pac_to_navier_stokes(self, fluid_state):
 - Decoherence → Environmental context constraining actualizable potentials
 - Entanglement → Shared effect cones across spatially separated systems
 
-**Our Quantum Validation Results** ([`../experiments/quantum_validation/`](../experiments/archive/era1/quantum_validation)) confirm these connections experimentally.
+**Our Quantum Validation Results** ([`../experiments/quantum_validation/`](../experiments/archive/era1-symbolic/quantum_validation)) confirm these connections experimentally.
 
 ### 7.2 Thermodynamics Integration
 
@@ -791,7 +791,7 @@ def apply_pac_to_navier_stokes(self, fluid_state):
 - Free energy → Available potential for actualization
 - Phase transitions → Threshold actualization events
 
-**Our Landauer Erasure Experiments** ([`../experiments/landauer_erasure_field_cost_map/`](../experiments/archive/era1/landauer_erasure_field_cost_map)) validate energy-information equivalence in PAC context.
+**Our Landauer Erasure Experiments** ([`../experiments/landauer_erasure_field_cost_map/`](../experiments/archive/era1-symbolic/landauer_erasure_field_cost_map)) validate energy-information equivalence in PAC context.
 
 ### 7.3 Relativity Integration
 
@@ -1191,12 +1191,12 @@ S_PAC = 6/√5 ≈ 2.683
 |--------------------|----------------------|-------------|------------------|
 | PAC Conservation | Information Amplification | 15.56x factor | [`../experiments/information_amplification/RESULTS.md`](../../archive/era2-prefield/information_amplification/RESULTS.md) |
 | Balance Operator | MED Navier-Stokes | Ξ = 1.0571 convergence | [`macro_emergence_dynamics/comprehensive_analysis.py`](../../experiments/studies/macro_emergence_dynamics/comprehensive_analysis.py) |
-| Effect Conservation | Quantum Validation | Born rule compliance | [`../experiments/quantum_validation/born_rule/`](../experiments/archive/era1/quantum_validation/born_rule) |
-| Recursive Stability | Recursive Gravity | Multi-scale convergence | [`../experiments/recursive_gravity/`](../experiments/archive/era1/recursive_gravity) |
+| Effect Conservation | Quantum Validation | Born rule compliance | [`../experiments/quantum_validation/born_rule/`](../experiments/archive/era1-symbolic/quantum_validation/born_rule) |
+| Recursive Stability | Recursive Gravity | Multi-scale convergence | [`../experiments/recursive_gravity/`](../experiments/archive/era1-symbolic/recursive_gravity) |
 | Complexity Bounds | MED Universal Bounds | depth ≤ 1, nodes ≤ 3 | [`macro_emergence_dynamics/master_recursive_gravity_experiment.py`](../../experiments/studies/macro_emergence_dynamics/master_recursive_gravity_experiment.py) |
 | Context Dependence | Symbolic Entropy Collapse | Environment-dependent actualization | [`../experiments/symbolic_entropy_collapse/`](../experiments/archive/era1/symbolic_entropy_collapse) |
-| Energy-Information | Landauer Erasure | I/E ratio validation | [`../experiments/landauer_erasure_field_cost_map/`](../experiments/archive/era1/landauer_erasure_field_cost_map) |
-| **Gauge Couplings** | **PAC Confluence Xi** | **α, sin²θ_W, α_s <2% error** | [`../experiments/pac_confluence_xi/`](../experiments/archive/era2/pac_confluence_xi) |
+| Energy-Information | Landauer Erasure | I/E ratio validation | [`../experiments/landauer_erasure_field_cost_map/`](../experiments/archive/era1-symbolic/landauer_erasure_field_cost_map) |
+| **Gauge Couplings** | **PAC Confluence Xi** | **α, sin²θ_W, α_s <2% error** | [`../experiments/pac_confluence_xi/`](../experiments/archive/era2-prefield/pac_confluence_xi) |
 | **Bell Correlations** | **PAC Confluence Xi** | **(2αβ)² = 4/5 exactly** | [`../experiments/pac_confluence_xi/scripts/validated/32_pac_bell_deep_dive.py`](../../archive/era2-prefield/pac_confluence_xi/scripts/validated/32_pac_bell_deep_dive.py) |
 | **Neutrino Mixing** | **PAC Confluence Xi** | **θ₁₂, θ₁₃ from Fibonacci** | [`../experiments/pac_confluence_xi/scripts/validated/35_the_neutrino_key.py`](../../archive/era2-prefield/pac_confluence_xi/scripts/validated/35_the_neutrino_key.py) |
 

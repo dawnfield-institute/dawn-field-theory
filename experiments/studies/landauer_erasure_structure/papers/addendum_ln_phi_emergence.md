@@ -80,4 +80,4 @@ In contrast, γ appears when counting **discrete irregularities** (primes, defec
 
 - [prime_growth_dynamics](../../prime_growth_dynamics/) - γ + ln(φ) decomposition
 - [standard_model_connection](../../standard_model_connection/) - φ in SM parameters
-- [pac_confluence_xi](../../archive/era2/pac_confluence_xi) - Fibonacci constraints
+- [pac_confluence_xi](../../archive/era2-prefield/pac_confluence_xi) - Fibonacci constraints

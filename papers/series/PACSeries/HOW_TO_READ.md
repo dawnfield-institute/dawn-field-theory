@@ -17,7 +17,7 @@ The PACSeries is an evolving research program, not a finished theory. This note 
 
 2. **Failures are reported, not hidden.** Every paper has a "what fails" section. One pre-registered prediction has already been falsified against data (Paper 12, against ~443,000 quasar absorption systems). A framework that can die, and says so, is behaving like physics.
 
-3. **Corrections are logged.** When a result turns out to be a curve-fitting artifact or a tautological test, it is recorded in the Epistemic Corrections Registry (`theory/corrections.md`, repository root) as a *collapse event* — the mechanism by which the framework improves, not something to bury.
+3. **Corrections are logged.** When a result turns out to be a curve-fitting artifact or a tautological test, it is recorded in the Epistemic Corrections Registry (`EPISTEMIC_CORRECTIONS_REGISTRY.md`, repository root) as a *collapse event* — the mechanism by which the framework improves, not something to bury.
 
 4. **Everything is reproducible.** Each paper ships the code, data, and figure-generation that produced its numbers, traced to source (`Code/`, `Data/`, and `Code/trace.yaml`). You do not have to trust the prose; you can run it.
 

@@ -52,7 +52,7 @@ field tensions across a symbolic resonance mesh. This implies:
 
 * [Bifractal Time Emergence](../../../docs/Bifractal%20Time%20Emergence.md): Time branching and symbolic ancestry structure.
 * [Collapse Dynamics in Entropic Fields](../../../docs/Title-%20Collapse%20Dynamics%20in%20Entropic%20Fields-%20A%20Synthesis%20of%20Classical%20and%20Quantum%20Mechanisms%20under%20the%20Dawn%20Framework.md): Non-local collapse surfaces and symbolic resonance topology.
-* [Symbolic Superfluid Collapse PI](../../blueprints/nuclear_containment/v1/results.md): Distributed collapse paths across symbolic layers.
+* [Symbolic Superfluid Collapse PI](../symbolic_superfluid_collapse_pi/results/results.md): Distributed collapse paths across symbolic layers.
 
 ## Interpretation
 

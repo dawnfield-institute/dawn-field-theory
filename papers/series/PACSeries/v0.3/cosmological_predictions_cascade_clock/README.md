@@ -34,8 +34,8 @@ This paper presents the first complete set of beyond-Standard-Model predictions 
 
 ## Source Experiments
 
-- `papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Data/` — 12 BSM prediction scripts (exp_01–exp_12)
-- `experiments/sidecars/midnight/` — 10 infodynamic-mechanism / cascade-clock scripts (exp_01–exp_10)
+- `foundational/experiments/milestone8/` — 12 BSM prediction scripts (exp_01–exp_12)
+- `foundational/experiments/milestone9/` — 10 infodynamic-mechanism / cascade-clock scripts (exp_01–exp_10)
 
 The packaged scripts in `Code/experiments/` are verbatim copies. Milestone 8 scripts import `core.bsm`; Milestone 9 scripts import `core.infodynamics` (which itself pulls `milestone8/core/bsm` in place). Because both milestones ship a `core` package, `reproduce.py` places the *owning* milestone directory on PYTHONPATH per script. See `Code/trace.yaml` for full provenance.
 
@@ -47,7 +47,7 @@ The packaged scripts in `Code/experiments/` are verbatim copies. Milestone 8 scr
 
 ```bash
 # from a checkout of the dawn-field-theory repo, with numpy/scipy/matplotlib installed:
-cd papers/legacy/cognition_index_protocol/v0.3/cosmological_predictions_cascade_clock/Code
+cd foundational/docs/preprints/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code
 python reproduce.py --list      # list experiments
 python reproduce.py             # run all 22
 python reproduce.py m8_07       # run one experiment by id (m8_01..m8_12, m9_01..m9_10)

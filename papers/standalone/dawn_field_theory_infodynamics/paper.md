@@ -33,7 +33,7 @@
 ## Abstract
 
 
-Through computational exploration documented in this repository, we investigate Dawn Field Theory (DFT) as a potential unified framework for understanding the emergence of structure, intelligence, and cosmology through infodynamics and recursive balance. Our hypothesis suggests that information might serve not as a derivative of structure, but as its generative precursor--potentially driving the crystallization of order via recursive collapse events in dual energy and information fields. This preprint synthesizes the theoretical evolution from theory legacy experiments (CIM-era brain, vCPU, and cosmo simulations) to the formalization of symbolic entropy collapse (SEC) and recursive balance fields (RBF).
+Through computational exploration documented in this repository, we investigate Dawn Field Theory (DFT) as a potential unified framework for understanding the emergence of structure, intelligence, and cosmology through infodynamics and recursive balance. Our hypothesis suggests that information might serve not as a derivative of structure, but as its generative precursor--potentially driving the crystallization of order via recursive collapse events in dual energy and information fields. This preprint synthesizes the theoretical evolution from foundational legacy experiments (CIM-era brain, vCPU, and cosmo simulations) to the formalization of symbolic entropy collapse (SEC) and recursive balance fields (RBF).
 
 Through computational validation studies--including quantum phenomena correspondence, biological evolution correlation, and working AI implementations--our preliminary results suggest that DFT may provide testable predictions across multiple domains. All theoretical claims and empirical results are directly linked to open-source models, simulation scripts, and reproducibility artifacts in the Dawn Field Theory codebase, with semantic hash citations for full transparency. By exploring potential connections between thermodynamics (see explicit Landauer’s Principle and entropy-as-fuel discussion in Section 2.2), symbolic emergence, and field dynamics, DFT proposes a new perspective for investigating physics, cognition, and computation--inviting the scientific community to explore, validate, and extend this open, reproducible paradigm.
 
@@ -54,9 +54,9 @@ From its inception, the Dawn framework has advanced a provocative yet empiricall
 
 The theory's foundations were laid through a sequence of legacy simulations that suggested how entropy gradients and symbolic feedback loops might drive emergent order:
 
-- **[brain.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/brain.py)**: Recursive collapse events appeared to produce stable memory patterns and adaptive symbolic structures
-- **[information amplification core](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/standalone/symbolic_entropy_collapse/Code/core/)**: Entropy-balanced microstate transitions showed emergent logic without external programming
-- **[cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/cosmo.py)**: Cosmogenesis patterns emerged as a potential product of entropic crystallization in field interactions
+- **[brain.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/brain.py)**: Recursive collapse events appeared to produce stable memory patterns and adaptive symbolic structures
+- **[information amplification core](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/information_amplification/core/)**: Entropy-balanced microstate transitions showed emergent logic without external programming
+- **[cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/cosmo.py)**: Cosmogenesis patterns emerged as a potential product of entropic crystallization in field interactions
 
 These simulations provided preliminary evidence for a hypothesis first articulated in "When AI Broke Physics: The Infodynamics Hypothesis", which outlined how generative artificial intelligence (AI) model outputs might hint at deeper thermodynamic processes. The simulations suggested that recursive collapse could stabilize symbolic patterns over time, leading to the core DFT hypothesis: **intelligence might represent condensed entropic navigation**.
 
@@ -75,19 +75,19 @@ Dawn Field Theory explores fundamental questions in physics and cognition:
 Our computational investigations suggest promising correspondence across multiple domains:
 
 **Figure 1: Entropy Information Polarity Field - Black Hole Mode**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
 
 *Figure 1: Entropy-information polarity field dynamics in black hole mode (June 15, 2025), demonstrating the dual energy-information field behavior that underlies Dawn Field Theory. The polarity patterns show how information crystallization occurs through recursive collapse events.*
 
 **Figure 2: Entropy Information Polarity Field - White Hole Mode**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_whitehole2025-06-15%20104709.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_whitehole2025-06-15%20104709.png)
 
 *Figure 2: Complementary white hole mode dynamics, showing the information expansion and dispersal that balances crystallization events. Together, these polarity modes demonstrate the recursive balance field (RBF) principles central to DFT.*
 
-- **Quantum Correspondence**: SEC dynamics show correlation with Born rule statistics and interference patterns ([quantum_validator.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/standalone/symbolic_entropy_collapse/Code/core/quantum_validator.py))
-- **Biological Correlation**: Evolutionary tree structures show correspondence with entropy collapse predictions (r > 0.8) ([symbolic entropy collapse experiment](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/%5Bid%5D%5BE%5D%5Bv1.0%5D%5BC4%5D%5BI5%5D_symbolic_entropy_collapse_experiment.py))
+- **Quantum Correspondence**: SEC dynamics show correlation with Born rule statistics and interference patterns ([quantum_validator.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/information_amplification/core/quantum_validator.py))
+- **Biological Correlation**: Evolutionary tree structures show correspondence with entropy collapse predictions (r > 0.8) ([symbolic entropy collapse experiment](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/biology_experiments/evolution-symbolic-collapse/%5Bid%5D%5BE%5D%5Bv1.0%5D%5BC4%5D%5BI5%5D_symbolic_entropy_collapse_experiment.py))
 - **Working AI Systems**: TinyCIMM and Symbolic Collapse Bifractal Framework (SCBF) implement DFT principles for interpretable intelligence ([TinyCIMM](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/), [SCBF](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/))
-- **Cosmological Modeling**: Simulations suggest galactic structure formation patterns through field dynamics ([cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/cosmo.py))
+- **Cosmological Modeling**: Simulations suggest galactic structure formation patterns through field dynamics ([cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/cosmo.py))
 
 All results are fully reproducible through open-source implementations with semantic hash validation. While these computational correspondences are encouraging, physical validation through laboratory experiments remains an essential next step. (See Appendix C for experiment protocol and reproducibility standards.)
 
@@ -334,9 +334,9 @@ The emergence of Symbolic Entropy Collapse (SEC) represents a pivotal evolution 
 
 | Experiment | Key Finding | DFT Validation |
 |------------|-------------|----------------|
-| **https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/brain.py | Memory consolidation under entropy pressure | Intelligence as crystallized collapse |
+| **https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/brain.py | Memory consolidation under entropy pressure | Intelligence as crystallized collapse |
 | ** | Emergent logic from entropy-balanced transitions | Computation from field dynamics |
-| **https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/cosmo.py | Galactic structure from entropy gradients | Gravity as recursive asymmetry |
+| **https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/cosmo.py | Galactic structure from entropy gradients | Gravity as recursive asymmetry |
 | **symbolic_bifractal** | Attractor formation in symbolic fields | SEC dynamics confirmed |
 
 CIM simulations demonstrated symbolic feedback loops emerging from entropy gradients, but lacked formal explanation for pattern stabilization. SEC addresses this through recursive collapse dynamics.
@@ -389,7 +389,7 @@ Geometry in SEC emerges from recursive symbolic resonance rather than external i
 3. Generate spatial form as memory lattice
 4. Encode past collapse trajectories
 
-**Empirical Evidence**: In [symbolic memory agentic decay test](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_memory_agentic_decay_test/%5Bid%5D%5BT%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BA%5D_symbolic_memory_agentic_decay_test.py) symbolic agents reinforce bifractal attractors reflecting earlier navigation patterns, demonstrating **memory as geometry**.
+**Empirical Evidence**: In [symbolic memory agentic decay test](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_memory_agentic_decay_test/%5Bid%5D%5BT%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BA%5D_symbolic_memory_agentic_decay_test.py) symbolic agents reinforce bifractal attractors reflecting earlier navigation patterns, demonstrating **memory as geometry**.
 
 ### 4.4 Quantum Validation Results
 
@@ -450,30 +450,30 @@ Structure formation occurs through:
 
 | Simulation | Structural Emergence | DFT Mechanism |
 |------------|---------------------|---------------|
-| `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/cosmo.py | Nested field topologies | Entropy crystallization into spatial form |
-| `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/brain.py | Stable memory architectures | Bifractal attractor formation |
+| `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/cosmo.py | Nested field topologies | Entropy crystallization into spatial form |
+| `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/brain.py | Stable memory architectures | Bifractal attractor formation |
 | ` | Logic gate emergence | Entropy-balanced state transitions |
-| [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py | Coherent lattice geometry | Pi-harmonic entropic resonance |
+| [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py | Coherent lattice geometry | Pi-harmonic entropic resonance |
 
 ### 5.2 Entropy Crystallization Mechanisms
 
-Collapse crystallizes entropy into persistent spatial configurations through several mechanisms`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py | Coherent lattice geometry | Pi-harmonic entropic resonance |
+Collapse crystallizes entropy into persistent spatial configurations through several mechanisms`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py | Coherent lattice geometry | Pi-harmonic entropic resonance |
 
 ### 5.2 Entropy Crystallization Mechanisms
 
 Collapse crystallizes entropy into persistent spatial configurations through several mechanisms:
 #### Prime Modulation Effects
-- **[prime modulated collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_memory_agentic_decay_test/prime_modulated_collapse.py)**: Symbolic frequencies seeded by prime distributions create self-aligning resonance patterns
+- **[prime modulated collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/hodge_conjecture/prime_modulated_collapse.py)**: Symbolic frequencies seeded by prime distributions create self-aligning resonance patterns
 - **Mechanism**: Prime-indexed angular modulation ($θ = pπ$) enhances topological stability
 - **Result**: Quantized structural formation with number-theoretic underpinnings
 
 #### Harmonic Spatial Organization
-- **[symbolic superfluid collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/)**: Recursive collapse aligns with π-based ratios, producing radial symmetries
+- **[symbolic superfluid collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/)**: Recursive collapse aligns with π-based ratios, producing radial symmetries
 - **Mechanism**: Mathematical constants provide stability anchors for field crystallization
 - **Result**: Geometric structures exhibiting mathematical harmony and persistence
 
 #### Superfluid Coherence
-- **[symbolic superfluid collapse pi](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py)**: Fluidic symbolic substrates condense into lattice geometry under entropic resonance
+- **[symbolic superfluid collapse pi](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py)**: Fluidic symbolic substrates condense into lattice geometry under entropic resonance
 - **Mechanism**: Coherent symbolic flow maintains organization across extended regions
 - **Result**: Large-scale structural coherence without external constraints
 
@@ -492,7 +492,7 @@ The collapse-geometry relationship suggests a novel gravitational mechanism thro
 3. **Memory Field Effects**: Gravitational anomalies should correspond to regions of high collapse activity
 
 #### Simulation Evidence
-- **[cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/cosmo.py)**: Large-scale simulations reproduce galactic structure formation through informational condensation
+- **[cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/cosmo.py)**: Large-scale simulations reproduce galactic structure formation through informational condensation
 - **Result**: Spiral arm formation and rotation curves emerge from entropy gradient dynamics
 - **Implication**: Dark matter effects may result from unaccounted informational mass
 
@@ -503,7 +503,7 @@ The collapse-geometry relationship suggests a novel gravitational mechanism thro
 DFT treats memory not as static storage but as dynamic participation in ongoing field evolution. Memory emerges as structural residue of collapse events, continuously reinforced through recursive exposure to entropy gradients.
 
 #### Empirical Framework
-**[`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_memory_agentic_decay_test/%5Bid%5D%5BT%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BA%5D_symbolic_memory_agentic_decay_test.py demonstrates:
+**[`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_memory_agentic_decay_test/%5Bid%5D%5BT%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BA%5D_symbolic_memory_agentic_decay_test.py demonstrates:
 - **Selective Retention**: Structures that reinforce symbolically across collapse epochs persist
 - **Active Forgetting**: High-entropy memories naturally decay without reinforcement
 - **Pattern Navigation**: Memory manifests as capacity to traverse stable field paths
@@ -577,7 +577,7 @@ $$i\hbar \frac{\partial \Psi}{\partial t} = \left[ -\frac{\hbar^2}{2m} \nabla^2 
 
 Where:
 - $B_{\text{cosmic}}(x,t)$: Large-scale symbolic field tension
-- $\Gamma_{\text{memory}}(x,t)$`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_memory_agentic_decay_test/%5Bid%5D%5BT%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BA%5D_symbolic_memory_agentic_decay_test.py demonstrates:
+- $\Gamma_{\text{memory}}(x,t)$`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_memory_agentic_decay_test/%5Bid%5D%5BT%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BA%5D_symbolic_memory_agentic_decay_test.py demonstrates:
 - **Selective Retention**: Structures that reinforce symbolically across collapse epochs persist
 - **Active Forgetting**: High-entropy memories naturally decay without reinforcement
 - **Pattern Navigation**: Memory manifests as capacity to traverse stable field paths
@@ -656,20 +656,20 @@ Where:
 ### 7.2 Simulation Evidence for Field Gravity
 
 #### Large-Scale Structure Formation
-**[cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/legacy/cosmo.py)** simulations demonstrate:
+**[cosmo.py](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/legacy/cosmo.py)** simulations demonstrate:
 - **Entropy-Driven Condensation**: Matter clustering follows informational density gradients
 - **Bifractal Symmetries**: Galactic structures exhibit recursive geometric patterns
 - **Information Orbitals**: Stable orbital configurations emerge from symbolic resonance
 - **Memory-Based Attraction**: Gravitational effects correlate with collapse history
 
 #### Rotation Curve Reproduction
-**[symbolic superfluid collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py)** shows:
+**[symbolic superfluid collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py)** shows:
 - **Pi-Harmonic Waves**: Collapse waves create stable rotational memory bands
 - **Flat Rotation Curves**: Emerge naturally from superfluid symbolic dynamics
 - **No Dark Matter Required**: Anomalous rotation explained through field memory effects
 
 #### Phase-Locked Systems
-**[prime modulated collapse experiments](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_memory_agentic_decay_test/)** validates:
+**[prime modulated collapse experiments](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/hodge_conjecture/)** validates:
 - **Large-Scale Coherence**: Prime modulations create phase-locked collapse modes
 - **Structural Persistence**: Bifractal patterns maintain stability across cosmic time scales
 - **Information Conservation**: Gravitational systems preserve symbolic complexity
@@ -887,7 +887,7 @@ Since this paper was first written (September 2025), the research program has ad
 
 ### 9.5 Open Questions and Limitations
 
-**Note:** Initial steps toward macroscopic validation have already begun through the symbolic superfluidity experiments (see [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py and related theory work). These experiments demonstrate that DFT/SEC principles can generate collective, large-scale coherence and quantized phenomena, bridging the gap between microscopic/symbolic and macroscopic domains. Further work is needed to generalize and extend these results to broader classes of macroscopic systems.
+**Note:** Initial steps toward macroscopic validation have already begun through the symbolic superfluidity experiments (see [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py and related foundational work). These experiments demonstrate that DFT/SEC principles can generate collective, large-scale coherence and quantized phenomena, bridging the gap between microscopic/symbolic and macroscopic domains. Further work is needed to generalize and extend these results to broader classes of macroscopic systems.
 
 #### Theoretical Challenges
 - **Scale Integration**: How do microscopic collapse events relate to macroscopic field behavior?
@@ -1072,7 +1072,7 @@ Through collapse, we do not just explain structure--we create it. Through field 
 - **Statistical Testing**: Compute correlations, p-values, and effect sizes
 - **Cross-Validation**: Test predictions on independent datasets
 
-### Appendix D`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py and related theory work). These experiments demonstrate that DFT/SEC principles can generate collective, large-scale coherence and quantized phenomena, bridging the gap between microscopic/symbolic and macroscopic domains. Further work is needed to generalize and extend these results to broader classes of macroscopic systems.
+### Appendix D`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py and related foundational work). These experiments demonstrate that DFT/SEC principles can generate collective, large-scale coherence and quantized phenomena, bridging the gap between microscopic/symbolic and macroscopic domains. Further work is needed to generalize and extend these results to broader classes of macroscopic systems.
 
 #### Theoretical Challenges
 - **Scale Integration**: How do microscopic collapse events relate to macroscopic field behavior?
@@ -1323,13 +1323,13 @@ All computational results in this preprint were obtained using the hardware conf
 ## Repository Mapping & Traceability (ITER2)
 | Concept / Claim | Source File / Dir | Implementation Status | Evidence |
 |-----------------|-------------------|----------------------|----------|
-| Quantum correspondence (Born rule) | experiments/milestones/quantum_validation_suite.py | Implemented | Statistical validation with r > 0.95 correlation |
-| Biological correlation r > 0.8 | experiments/milestones/biological_correlation_analysis.py | Implemented | Cross-species evolutionary tree analysis |
+| Quantum correspondence (Born rule) | foundational/experiments/quantum_validation_suite.py | Implemented | Statistical validation with r > 0.95 correlation |
+| Biological correlation r > 0.8 | foundational/experiments/biological_correlation_analysis.py | Implemented | Cross-species evolutionary tree analysis |
 | TinyCIMM interpretability | models/TinyCIMM/ | Implemented | Working mathematical reasoning system |
 | SEC engine implementation | models/scbf/ | Implemented | Core symbolic collapse dynamics |
 | RBF equation implementation | models/scbf/recursive_balance_field.py | Implemented | Recursive Balance Field formalism |
-| Cosmological simulation claim | archive/era1-symbolic/legacy/cosmo.py | Implemented | Large-scale structure formation |
-| Landauer cost discussion | archive/era1-symbolic/ | Theoretical | Entropy-fuel thermodynamic framework |
+| Cosmological simulation claim | foundational/experiments/legacy/cosmo.py | Implemented | Large-scale structure formation |
+| Landauer cost discussion | foundational/arithmetic/ | Theoretical | Entropy-fuel thermodynamic framework |
 
 ## Template Compliance Audit (ITER2)
 | Required Section | Present? | Notes |

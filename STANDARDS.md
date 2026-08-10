@@ -36,7 +36,7 @@ Research repos additionally have `.spec/` where code is spec-driven.
 
 ## 2. Experiment standard
 
-Applies to `dawn-field-theory/experiments/milestones/`, and to any repo carrying
+Applies to `experiments/{milestones,sidecars,studies}/`, and to any repo carrying
 experiments (`dawn-models`, `reality-engine`).
 
 ### 2.1 Required structure
@@ -86,8 +86,8 @@ track what the framework's vocabulary and methods actually were at the time.
 | `era3-pac-formalization-2026q1` | 2026-01 → 2026-04 | PAC/SEC axioms, M1–M5, constants derivation |
 | `era4-milestone-stack-2026q2` | 2026-04 → present | M6–M15 + R; ADE, complement, holonomy |
 
-Era 1–2 experiments live under `experiments/milestones/archive/era1|era2/`.
-Era 3–4 experiments live flat under `experiments/milestones/`.
+Era 1–2 experiments live under `archive/era1-symbolic/` and `archive/era2-prefield/`.
+Era 3–4 experiments live under `experiments/{milestones,sidecars,studies}/`.
 
 **Assigning an era.** Use the date the work *matured* — its last substantive commit —
 not its first. Experiments are frequently opened in one era and concluded in the next
@@ -369,9 +369,10 @@ points back via `source_paths`. Both sides are checked (§9).
 |---|---|
 | Experiment structure + meta.yaml schema | `tools/validate_experiment_structure.py` |
 | Generated index freshness | `tools/generate_experiment_index.py` |
+| Corpus inventory freshness | `tools/generate_inventory.py` |
 | Repo tree map | `tools/generate_path.py` → `map.yaml` |
 | meta.yaml generated zone | `tools/update_meta_yamls.py` |
-| Internal link integrity | `tools/link_checker.py` |
+| Internal link integrity | *(no working tool — `tools/link_checker.py` is dead: it hardcodes an absolute path to a directory that does not exist)* |
 | Citations | `tools/validate_citations.py` |
 | FDO `source_paths` resolve | `/fdo-source-validate` |
 

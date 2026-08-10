@@ -3,31 +3,31 @@ created: '2026-02-15'
 description: Traces code and data files back to their original repository locations
 source_repository: dawn-models + dawn-field-theory
 paper: computational_validation_pac_conservation
-paper_type: theory  # PACSeries Paper 6 — Computational Validation
+paper_type: foundational  # PACSeries Paper 6 — Computational Validation
 
 experiments:
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_01_sec_phase_classification.py
+  - local: experiments/exp_01_sec_phase_classification.py
     source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_02_multi_model_scale.py
     repo: dawn-models
     description: "SEC phase classification with zero-parameter golden ratio boundaries"
     key_result: "Monotonic accuracy: crystallised=100%, ordered=67-83%, transitional=31-48%, chaotic=17-22%"
     paper_sections: [2.2, 3.1]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_02_multi_model_scale.py
+  - local: experiments/exp_02_multi_model_scale.py
     source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_02_multi_model_scale.py
     repo: dawn-models
     description: "Multi-model PAC ratio discrimination across 4 Pythia scales"
     key_result: "Phi enrichment FALSIFIED (softmax artifact). PAC ratio magnitude → correctness at p < 0.0001"
     paper_sections: [3.2, 3.3]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_03_xi_weight_clustering.py
+  - local: experiments/exp_03_xi_weight_clustering.py
     source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_06_xi_weight_clustering.py
     repo: dawn-models
     description: "Xi ≈ 1.057 clustering in trained weight SVD spectra"
     key_result: "2.36× enrichment vs random (χ² = 5511, p ≈ 0); attention > MLP"
     paper_sections: [4]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_04_attention_pac.py
+  - local: experiments/exp_04_attention_pac.py
     source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_07_attention_pac.py
     repo: dawn-models
     description: "Attention head entropy metrics, confident head ratio, cross-architecture universality"
@@ -35,43 +35,43 @@ experiments:
     paper_sections: [5]
     cross_validation: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_10_cross_architecture_universality.py
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_05_pac_conservation.py
+  - local: experiments/exp_05_pac_conservation.py
     source: dawn-models/research/scbf/experiments/token_pac_tree/scripts/exp_12_pac_conservation.py
     repo: dawn-models
     description: "PAC conservation violation during hallucination"
     key_result: "+9.6% uncompensated entropy; GPT-2 compensation ratio = 0.000"
     paper_sections: [6]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_06_tinycimm_conservation.py
+  - local: experiments/exp_06_tinycimm_conservation.py
     source: dawn-models/research/tinycimm/TinyCIMM-Boltzmann/scripts/exp_01_conservation_vs_free.py
     repo: dawn-models
     description: "TinyCIMM 2×2 design: conservation ON/OFF × factual/noise"
     key_result: "Conservation reduces noise violation (p = 0.008); 16× transition shock reduction; no cost to factual (p = 0.42)"
     paper_sections: [7]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_07_landauer_bridge.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/structure_cost_of_erasure/Code/experiments/exp_25_full_stack_validation.py
+  - local: experiments/exp_07_landauer_bridge.py
+    source: dawn-field-theory/foundational/experiments/landauer_erasure_structure/scripts/exp_25_full_stack_validation.py
     repo: dawn-field-theory
     description: "Six-layer Landauer validation chain connecting thermodynamic to computational PAC"
     key_result: "All 6 layers pass: algebraic (machine precision), SEC (0.08%), Landauer (1.6%), gauge hierarchy (p = 1.7×10⁻²⁰)"
     paper_sections: [8.1]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_08_training_convergence.py
+  - local: experiments/exp_08_training_convergence.py
     source: dawn-models/research/scbf/experiments/huggingface_bifractal_validation/
     repo: dawn-models
     description: "Training dynamics converge weight spectra toward φ-structured ratios"
     key_result: "Combined Fisher p = 0.0014; all 4 model scales show convergent trends"
     paper_sections: [8.2]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_09_pac_lazy_formula_mesh.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/balance_constant_decomposition/Data/scripts/exp_21_pac_lazy_formula_mesh.py
+  - local: experiments/exp_09_pac_lazy_formula_mesh.py
+    source: dawn-field-theory/foundational/experiments/milestone3/scripts/exp_21_pac_lazy_formula_mesh.py
     repo: dawn-field-theory
     description: "PAC conservation transfers GAIA architecture to Fibonacci formula space"
     key_result: "4/4 PASS. KL p=0.035, Cohen's d=0.198, 1.32× enrichment. PAC reverses exp_20 wrong direction"
     paper_sections: [8.4]
 
-  - local: papers/series/PACSeries/v0.2/computational_validation_pac_conservation/Code/experiments/exp_10_pac_lazy_signal_anatomy.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/balance_constant_decomposition/Data/scripts/exp_24_pac_lazy_signal_anatomy.py
+  - local: experiments/exp_10_pac_lazy_signal_anatomy.py
+    source: dawn-field-theory/foundational/experiments/milestone3/scripts/exp_24_pac_lazy_signal_anatomy.py
     repo: dawn-field-theory
     description: "Bootstrap and leave-one-out anatomy of formula mesh signal"
     key_result: "1/4 PASS. Bootstrap CI crosses zero; signal concentrated in proton/electron mass ratio. Honest fragile"
@@ -83,11 +83,11 @@ data:
     note: "Each experiment saves timestamped JSON; representative results included"
 
   - local: ../Data/results/exp_09_pac_lazy_formula_mesh_representative.json
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/balance_constant_decomposition/Data/results/exp_21_pac_lazy_formula_mesh_20260218_170712.json
+    source: dawn-field-theory/foundational/experiments/milestone3/results/exp_21_pac_lazy_formula_mesh_20260218_170712.json
     repo: dawn-field-theory
     description: "4/4 PASS: PAC conservation formula mesh discrimination"
 
   - local: ../Data/results/exp_10_pac_lazy_signal_anatomy_representative.json
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/balance_constant_decomposition/Data/results/exp_24_pac_lazy_signal_anatomy_20260218_222915.json
+    source: dawn-field-theory/foundational/experiments/milestone3/results/exp_24_pac_lazy_signal_anatomy_20260218_222915.json
     repo: dawn-field-theory
     description: "1/4 PASS: Signal fragile, bootstrap CI crosses zero"

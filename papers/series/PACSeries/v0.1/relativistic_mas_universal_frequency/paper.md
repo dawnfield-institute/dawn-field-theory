@@ -55,17 +55,17 @@ Recent experiments using the Unified MAS-MED Validation Framework ([`dawn-models
 - Bootstrap analysis confirms **σ < 0.001 Hz** (extreme stability)
 - Both cosmological and ocean systems independently reach **D≈2**
 
-Full validation report: [`dawn-field-theory/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/unified_mas_med_validation_final_report.md)
+Full validation report: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md)
 
 ### 1.3 QBE Historical Validation (December 2025 Discovery)
 
 A remarkable discovery establishes independent validation of the 0.020 Hz frequency:
 
 **Legacy QBE Framework (~March 2025):**
-The original Quantum Balance Equation (QBE) experiments ([`brain.py`](../../../../../archive/era1-symbolic/legacy/brain.py), [`cosmo.py`](../../../../../archive/era1-symbolic/legacy/cosmo.py), [`vcpu.py`](../../../../../archive/era1-symbolic/legacy/vcpu.py)) required an empirical damping coefficient `QPL_damping = 0.02` to achieve stable dynamics. This value was found through empirical tuning, not derived from theory.
+The original Quantum Balance Equation (QBE) experiments ([`brain.py`](../../legacy/brain.py), [`cosmo.py`](../../legacy/cosmo.py), [`vcpu.py`](../../legacy/vcpu.py)) required an empirical damping coefficient `QPL_damping = 0.02` to achieve stable dynamics. This value was found through empirical tuning, not derived from theory.
 
 **PAC Framework (December 2025):**
-PAC dynamics, running with only Ξ = 1.0571 and Klein-Gordon evolution (NO 0.02 parameter input), produce oscillations at **exactly 0.020 Hz** via FFT analysis ([`exp_32_qbe_pac_unification.py`](../../../../../archive/era2-prefield/prime_harmonic_manifold/scripts/exp_32_qbe_pac_unification.py)).
+PAC dynamics, running with only Ξ = 1.0571 and Klein-Gordon evolution (NO 0.02 parameter input), produce oscillations at **exactly 0.020 Hz** via FFT analysis ([`exp_32_qbe_pac_unification.py`](../../experiments/prime_harmonic_manifold/scripts/exp_32_qbe_pac_unification.py)).
 
 **Key Distinction:**
 | Aspect | Legacy QBE | Modern PAC |
@@ -150,7 +150,7 @@ $$f_{rest} = f_{obs} \times (1 + z) \times \frac{\gamma}{\sqrt{1 - \frac{2GM}{rc
 
 ### 3.1 Implementation
 
-Test framework: [`dawn-field-theory/archive/era2-prefield/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era2-prefield/pre_field_recursion/test_relativistic_mas_frequencies.py)
+Test framework: [`dawn-field-theory/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py)
 
 ```python
 @dataclass
@@ -931,23 +931,23 @@ This work builds on the Unified MAS-MED Validation Framework developed at Dawn F
 
 [1] Unified MAS-MED Validation: [`dawn-models/research/GAIA/usecases/unified_mas_med_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/unified_mas_med_validation.py)
 
-[2] Relativistic MAS Test: [`dawn-field-theory/archive/era2-prefield/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era2-prefield/pre_field_recursion/test_relativistic_mas_frequencies.py)
+[2] Relativistic MAS Test: [`dawn-field-theory/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py)
 
 ### Documentation
 
-[3] Final Validation Report: [`dawn-field-theory/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/unified_mas_med_validation_final_report.md)
+[3] Final Validation Report: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md)
 
-[4] MAS-Herniation Theory: [`dawn-field-theory/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/mas_herniation_cosmology_unified.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/mas_herniation_cosmology_unified.md)
+[4] MAS-Herniation Theory: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/mas_herniation_cosmology_unified.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/mas_herniation_cosmology_unified.md)
 
-[5] Validation Status: [`dawn-field-theory/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/gaia_validation_status.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/gaia_validation_status.md)
+[5] Validation Status: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/gaia_validation_status.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/gaia_validation_status.md)
 
 ### PACSeries Related Papers
 
-[6] SEC-MED Framework: [`dawn-field-theory/papers/drafts/PACSeries/[pac][D][v1.0][C2][I5][E]_sec_med_framework_information_amplification_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/PACSeries/%5Bpac%5D%5BD%5D%5Bv1.0%5D%5BC2%5D%5BI5%5D%5BE%5D_sec_med_framework_information_amplification_preprint.md)
+[6] SEC-MED Framework: [`dawn-field-theory/foundational/docs/preprints/drafts/PACSeries/[pac][D][v1.0][C2][I5][E]_sec_med_framework_information_amplification_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/PACSeries/%5Bpac%5D%5BD%5D%5Bv1.0%5D%5BC2%5D%5BI5%5D%5BE%5D_sec_med_framework_information_amplification_preprint.md)
 
-[7] Xi Balance Operator: [`dawn-field-theory/papers/drafts/PACSeries/[pac][D][v1.0][C2][I5][E]_xi_bounded_invariant_universal_balance_operator_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/PACSeries/%5Bpac%5D%5BD%5D%5Bv1.0%5D%5BC2%5D%5BI5%5D%5BE%5D_xi_bounded_invariant_universal_balance_operator_preprint.md)
+[7] Xi Balance Operator: [`dawn-field-theory/foundational/docs/preprints/drafts/PACSeries/[pac][D][v1.0][C2][I5][E]_xi_bounded_invariant_universal_balance_operator_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/PACSeries/%5Bpac%5D%5BD%5D%5Bv1.0%5D%5BC2%5D%5BI5%5D%5BE%5D_xi_bounded_invariant_universal_balance_operator_preprint.md)
 
-[8] GAIA Computational Validation: [`dawn-field-theory/papers/drafts/PACSeries/[pac][D][v1.0][C3][I5][E]_gaia_computational_validation_dawn_field_theory_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/PACSeries/%5Bpac%5D%5BD%5D%5Bv1.0%5D%5BC3%5D%5BI5%5D%5BE%5D_gaia_computational_validation_dawn_field_theory_preprint.md)
+[8] GAIA Computational Validation: [`dawn-field-theory/foundational/docs/preprints/drafts/PACSeries/[pac][D][v1.0][C3][I5][E]_gaia_computational_validation_dawn_field_theory_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/PACSeries/%5Bpac%5D%5BD%5D%5Bv1.0%5D%5BC3%5D%5BI5%5D%5BE%5D_gaia_computational_validation_dawn_field_theory_preprint.md)
 
 ---
 

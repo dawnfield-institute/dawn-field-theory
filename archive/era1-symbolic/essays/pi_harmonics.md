@@ -24,7 +24,7 @@ license: Copyleft (custom Dawn license)
 
 # Abstract
 
-This paper presents a novel experimental demonstration that angular recursion modulated by the constant Pi (π) significantly enhances symbolic collapse coherence in Dawn Field simulations. By simulating two-field interactions under Pi-harmonic and irrational harmonic angular bias, we observe that only Pi modulation yields long-lived, structured attractors. These findings validate the hypothesis that Pi functions as a recursion harmonic controller and support Dawn's post-symbolic collapse logic. The full experiment and structural metrics are documented in [Pi-Harmonic Results](../../blueprints/nuclear_containment/v1/results.md).
+This paper presents a novel experimental demonstration that angular recursion modulated by the constant Pi (π) significantly enhances symbolic collapse coherence in Dawn Field simulations. By simulating two-field interactions under Pi-harmonic and irrational harmonic angular bias, we observe that only Pi modulation yields long-lived, structured attractors. These findings validate the hypothesis that Pi functions as a recursion harmonic controller and support Dawn's post-symbolic collapse logic. The full experiment and structural metrics are documented in [Pi-Harmonic Results](../pi_harmonics/results/results.md).
 
 ---
 
@@ -83,7 +83,7 @@ Full code and parameters in `pi_harmonics.py`
 - **Lifespan**: Pi creates stable, radially symmetric attractors
 - **Density**: Attractors cluster in angular bands only with Pi
 
-(See [Results](../../blueprints/nuclear_containment/v1/results.md) for embedded image and code references)
+(See [Results](../pi_harmonics/results/results.md) for embedded image and code references)
 
 ---
 

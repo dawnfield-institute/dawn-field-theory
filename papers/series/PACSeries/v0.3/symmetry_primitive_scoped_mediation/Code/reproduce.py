@@ -19,17 +19,17 @@ scripts are verbatim copies of the milestone6 + milestone7 experiments and
 import their shared DFT core in place:
 
   * Milestone 7 scripts import ``core.symmetry`` (constants, save_results),
-    which lives at experiments/milestones/milestone9/core.
+    which lives at foundational/experiments/milestone7/core.
   * Milestone 6 scripts import ``scope`` / ``core.scope`` (transfer-matrix
-    infrastructure) from papers/series/PACSeries/v0.3/symmetry_primitive_scoped_mediation/Data/core, and
+    infrastructure) from foundational/experiments/milestone6/core, and
     ``_shared`` (confluent-identity baseline loaders) from
-    experiments/milestones/confluent_identity/scripts.
+    foundational/experiments/confluent_identity/scripts.
 
 Because M6 and M7 both expose a package literally named ``core`` (core.scope
 vs core.symmetry), the two cannot share one PYTHONPATH without colliding.
 reproduce.py therefore sets a *per-experiment* PYTHONPATH from the experiment's
 home milestone, so each verbatim script runs unmodified. reproduce.py locates
-experiments/milestones/ automatically.
+foundational/experiments/ automatically.
 
 A fresh run regenerates timestamped JSON into the experiments' native results
 directories. The frozen snapshot used to write this paper is in
@@ -79,7 +79,7 @@ EXPERIMENTS = {
 
 def find_experiments_root(start: Path):
     for anc in start.resolve().parents:
-        cand = anc / "theory" / "experiments"
+        cand = anc / "foundational" / "experiments"
         if (cand / "milestone7" / "core").is_dir() and (cand / "milestone6" / "core").is_dir():
             return cand
     return None
@@ -118,7 +118,7 @@ def main():
 
     exproot = find_experiments_root(here)
     if exproot is None:
-        print("ERROR: could not locate experiments/milestones/"
+        print("ERROR: could not locate foundational/experiments/"
               "{milestone6,milestone7}/core.\n"
               "This package must be run from inside the dawn-field-theory repo.")
         sys.exit(1)

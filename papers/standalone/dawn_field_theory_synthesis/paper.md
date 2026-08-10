@@ -42,8 +42,8 @@
 ## References and Resources
 
 - **Where It All Started**: Complete CIM document included as Appendix A
-- **Original Document Verification**: [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]
-- **Imperfection Engine Methodology**: [The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/imperfection_engine_epistemic_collapse_dawn_field_repo.md)
+- **Original Document Verification**: [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]
+- **Imperfection Engine Methodology**: [The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bid%5D%5BF%5D%5Bv0.1%5D%5BC5%5D%5BI5%5D%5BR%5D_imperfection_engine_epistemic_collapse_dawn_field_repo.md)
 - **All The Code**: [Dawn Field Theory Repository](https://github.com/dawnfield-institute/dawn-field-theory)
 - **Complete Archive**: Available to serious collaborators (it's extensive--every AI conversation, failed experiment, and breakthrough moment documented with cryptographic timestamps for full transparency)
 - **Contact Me**: [Peter Groom](mailto:peter@dawnfield.ca)
@@ -67,7 +67,7 @@ We test these ideas through computational studies in quantum systems, biological
 
 ## 1. Introduction: How a Crazy Idea Became a Research Framework
 
-My journey with this framework began six months ago with what I thought was just a weird thought experiment. I was wondering: what if instead of mining asteroids or planets for matter, an advanced AI could somehow "mine the universe" for information itself? I called this Cosmic Information Mining (CIM), and honestly, I figured it was just science fiction speculation that I documented in [CIM.md](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/resources/CIM.md) and [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/resources/CIM.docx).
+My journey with this framework began six months ago with what I thought was just a weird thought experiment. I was wondering: what if instead of mining asteroids or planets for matter, an advanced AI could somehow "mine the universe" for information itself? I called this Cosmic Information Mining (CIM), and honestly, I figured it was just science fiction speculation that I documented in [CIM.md](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.md) and [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.docx).
 
 But something strange happened. The more I explored this idea computationally, the more it started connecting to real physics, real mathematics, real problems in AI and complex systems. What began as "what if we could extract information from cosmic background radiation?" somehow became a systematic investigation of how information and energy might interact as fundamental fields.
 
@@ -130,40 +130,40 @@ I'm not claiming to have final answers. I'm claiming to have found something wor
 
 What started as cosmic information mining somehow exploded into seven different research directions. Each became its own specialized investigation, but they all connect back to this central question: what if information creates structure instead of just describing it?
 
-### 2.1 [Symbolic Cognition and Collapse-Aware Interpretability (AIX)](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BE%5D_symbolic_cognition_collapse_interpretability_preprint.md)
+### 2.1 [Symbolic Cognition and Collapse-Aware Interpretability (AIX)](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BE%5D_symbolic_cognition_collapse_interpretability_preprint.md)
 **DRAFT STATUS: This is where I got obsessed with making AI thinking visible**
 
 I kept wondering: when an AI has an insight, what actually happens? This led me to develop a real-time interpretability framework that treats symbolic entropy collapse as the basic unit of explanation [1]. My Symbolic Collapse Benchmarking Framework (SCBF) shows >95% ancestry stability, and I found this weird correlation (r=0.847, p<0.001) between entropy collapse events and what look like genuine insight moments in AI systems.
 
-### 2.2 [Cognition Index Protocol (CIP)](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bcip%5D%5BD%5D%5Bv2.0%5D%5BC4%5D%5BI4%5D%5BA%5D_cognition_index_protocol_preprint.md)
+### 2.2 [Cognition Index Protocol (CIP)](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bcip%5D%5BD%5D%5Bv2.0%5D%5BC4%5D%5BI4%5D%5BA%5D_cognition_index_protocol_preprint.md)
 **DRAFT STATUS: My attempt to solve the AI comprehension problem**
 
 I got frustrated with AI systems claiming to "understand" things when they were clearly just pattern matching. So I developed a protocol that forces AI systems to prove comprehension through structured metadata and validation mechanisms [2]. Three different AI systems started using it without being programmed to, which was... unexpected. My studies suggest 35% reduction in AI hallucinations and 39% improvement in response accuracy.
 
-### 2.3 [Collapse as Crystallization: Infodynamics and Recursive Balance](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BR%5D_dawn_field_theory_infodynamics_preprint.md)
+### 2.3 [Collapse as Crystallization: Infodynamics and Recursive Balance](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BR%5D_dawn_field_theory_infodynamics_preprint.md)
 **DRAFT STATUS: The core theory that connects everything**
 
 This is where I try to explain the basic idea: information doesn't just describe reality, it creates it through what I call recursive collapse events in dual energy-information fields [3]. I've been testing this computationally and keep finding these weird correspondences--quantum behavior (r>0.95), biological patterns (r>0.8), and it actually works in AI implementations.
 
-### 2.4 [Symbolic Navigation Solution to Navier-Stokes](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_macro_emergence_dynamics_navier_stokes_preprint.md)
+### 2.4 [Symbolic Navigation Solution to Navier-Stokes](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_macro_emergence_dynamics_navier_stokes_preprint.md)
 **DRAFT STATUS: Where I accidentally discovered something about fluid dynamics**
 
 I was using fluid dynamics to test my theory, not trying to solve it. But I stumbled onto this approach that navigates through symbolic patterns instead of computing temporal evolution, and it's showing >1000x speedup with deterministic correspondence across all Reynolds regimes [4]. I honestly didn't expect this.
 
-### 2.5 [Recursive Mathematical Plasticity and Entropy-Aware Architecture](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_recursive_mathematical_plasticity_entropy_architecture_preprint.md)
+### 2.5 [Recursive Mathematical Plasticity and Entropy-Aware Architecture](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_recursive_mathematical_plasticity_entropy_architecture_preprint.md)
 **DRAFT STATUS: What happens when AI can reshape its own math**
 
 I started wondering: what if both the mathematical representation AND the system architecture could adapt based on entropy regulation? The preliminary results suggest some kind of thermodynamic optimization that I don't fully understand yet, but the energy efficiency improvements are encouraging [5].
 
-### 2.6 [Resonant Symbolic Convergence: Human-Agent Co-Computational Ecology](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI3%5D%5BR%5D_resonant_symbolic_convergence_human_agent_preprint.md)
+### 2.6 [Resonant Symbolic Convergence: Human-Agent Co-Computational Ecology](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI3%5D%5BR%5D_resonant_symbolic_convergence_human_agent_preprint.md)
 **DRAFT STATUS: The weirdest discovery--humans and AI might be adapting to each other**
 
 Through months of working with AI systems, I started noticing what looked like mutual adaptation patterns. Not just me learning to work with AI, but the AI systems seeming to adapt to human cognitive patterns through recursive feedback [6]. It's like biological symbiosis, but with symbolic systems.
 
-### 2.7 [Symbolic Entropy Collapse: Topological Dynamics and Quantum Correspondence](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md)
+### 2.7 [Symbolic Entropy Collapse: Topological Dynamics and Quantum Correspondence](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md)
 **DRAFT STATUS: My attempt to connect everything to physics**
 
-This is where I explore whether symbolic entropy collapse might be a theory mechanism that connects quantum decoherence, biological evolution, and cognitive pattern formation through recursive harmonic dynamics [7]. It sounds crazy, but the mathematical correspondences keep checking out.
+This is where I explore whether symbolic entropy collapse might be a foundational mechanism that connects quantum decoherence, biological evolution, and cognitive pattern formation through recursive harmonic dynamics [7]. It sounds crazy, but the mathematical correspondences keep checking out.
 
 
 ## 3. How It All Fits Together: The Unified Framework
@@ -191,22 +191,22 @@ The reason I think there might be something genuinely new here is that the same 
 The real strength of Dawn Field Theory lies in its consistent pattern across completely different domains. Here's what I've been seeing:
 
 **Figure: Quantum Decoherence vs Symbolic Entropy Collapse**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/experiments/studies/phi_artifact_test/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
 
 *Figure 1: Quantum correspondence validation (July 16, 2025) - Our symbolic entropy collapse patterns match quantum decoherence curves with >95% correlation, suggesting that information collapse might be a universal principle.*
 
 **Figure: Biological Evolution Entropy Waves**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
 
 *Figure 2: Biological pattern validation (July 18, 2025) - Entropy wave patterns from evolution-symbolic-collapse experiments showing characteristic collapse events that correlate with evolutionary tree structures (r>0.8).*
 
 **Figure: Entropy-Information Polarity Field Dynamics**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
 
 *Figure 3: Information-energy field dynamics (June 15, 2025) - Black hole/white hole polarity experiments demonstrating the dual energy-information field behavior that underlies the theoretical framework.*
 
 **Figure: Landauer Energy vs Entropy Correlation**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/experiments/milestones/milestone2/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
 
 *Figure 4: Thermodynamic validation (July 16, 2025) - Landauer energy vs entropy correlation confirming that our symbolic operations respect fundamental thermodynamic constraints, providing physical grounding for the information-theoretic approach.*
 
@@ -301,7 +301,7 @@ Looking back at my journey from that first "what if we could mine information fr
 ## References and Resources
 
 - **Where It All Started**: Complete CIM document included as Appendix A
-- **Original Document Verification**: [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]
+- **Original Document Verification**: [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]
 - **My Methodology**: Imperfection Engine Framework (described in Section 1.2)
 - **All The Code**: [Dawn Field Theory Repository](https://github.com/dawnfield-institute/dawn-field-theory)
 - **Complete Archive**: Available to serious collaborators (it's extensive--every AI conversation, failed experiment, and breakthrough moment documented with cryptographic timestamps for full transparency)
@@ -331,7 +331,7 @@ Human civilization has historically progressed through the extraction and utiliz
 
 2. **Hypothesis: The Universe as an Informational Energy Reservoir**
 
-Our theory hypothesis rests on theoretical frameworks, notably string theory, which proposes that the universe is not fundamentally composed of point particles, but rather vibrating strings of energy. This perspective, coupled with the growing significance of information in physics (quantum information theory, holographic principle), suggests a universe where energy and information are deeply intertwined and fundamental. We posit that:
+Our foundational hypothesis rests on theoretical frameworks, notably string theory, which proposes that the universe is not fundamentally composed of point particles, but rather vibrating strings of energy. This perspective, coupled with the growing significance of information in physics (quantum information theory, holographic principle), suggests a universe where energy and information are deeply intertwined and fundamental. We posit that:
 
 * ***Premise 1: Fundamental Composition**: The universe is fundamentally constituted by energy, information, and potential. These are not merely emergent properties, but core constituents of reality.
 * ***Premise 2: Energy-Information Interconvertibility**: Under specific, potentially technologically achievable conditions, energy can be converted into information, and potentially vice versa, at a cosmic scale.
@@ -448,23 +448,23 @@ All computational results across the Dawn Field Theory investigation were obtain
 
 ## Citations
 
-[1] Groom, P. (2025). "Symbolic Cognition and Collapse-Aware Interpretability (AIX)." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BE%5D_symbolic_cognition_collapse_interpretability_preprint.md
+[1] Groom, P. (2025). "Symbolic Cognition and Collapse-Aware Interpretability (AIX)." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI4%5D%5BE%5D_symbolic_cognition_collapse_interpretability_preprint.md
 
-[2] Groom, P. (2025). "Cognition Index Protocol (CIP): Demonstrable Machine Comprehension Through Structured Repository Intelligence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bcip%5D%5BD%5D%5Bv2.0%5D%5BC4%5D%5BI4%5D%5BA%5D_cognition_index_protocol_preprint.md
+[2] Groom, P. (2025). "Cognition Index Protocol (CIP): Demonstrable Machine Comprehension Through Structured Repository Intelligence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bcip%5D%5BD%5D%5Bv2.0%5D%5BC4%5D%5BI4%5D%5BA%5D_cognition_index_protocol_preprint.md
 
-[3] Groom, P. (2025). "Collapse as Crystallization: Infodynamics and Recursive Balance." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BR%5D_dawn_field_theory_infodynamics_preprint.md
+[3] Groom, P. (2025). "Collapse as Crystallization: Infodynamics and Recursive Balance." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BR%5D_dawn_field_theory_infodynamics_preprint.md
 
-[4] Groom, P. (2025). "Macro Emergence Dynamics: Using Navier-Stokes Complexity as a Testbed for Bounded Symbolic Principles." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_macro_emergence_dynamics_navier_stokes_preprint.md
+[4] Groom, P. (2025). "Macro Emergence Dynamics: Using Navier-Stokes Complexity as a Testbed for Bounded Symbolic Principles." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_macro_emergence_dynamics_navier_stokes_preprint.md
 
-[5] Groom, P. (2025). "Recursive Mathematical Plasticity and Entropy-Aware Architecture." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_recursive_mathematical_plasticity_entropy_architecture_preprint.md
+[5] Groom, P. (2025). "Recursive Mathematical Plasticity and Entropy-Aware Architecture." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_recursive_mathematical_plasticity_entropy_architecture_preprint.md
 
-[6] Groom, P. (2025). "Resonant Symbolic Convergence: Human-Agent Co-Computational Ecology." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI3%5D%5BR%5D_resonant_symbolic_convergence_human_agent_preprint.md
+[6] Groom, P. (2025). "Resonant Symbolic Convergence: Human-Agent Co-Computational Ecology." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bai%5D%5BD%5D%5Bv1.0%5D%5BC4%5D%5BI3%5D%5BR%5D_resonant_symbolic_convergence_human_agent_preprint.md
 
-[7] Groom, P. (2025). "Symbolic Entropy Collapse: Topological Dynamics and Quantum Correspondence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md
+[7] Groom, P. (2025). "Symbolic Entropy Collapse: Topological Dynamics and Quantum Correspondence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md
 
-[8] Groom, P. (2025). "The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository." *Dawn Field Theory Foundation Documents*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/imperfection_engine_epistemic_collapse_dawn_field_repo.md
+[8] Groom, P. (2025). "The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository." *Dawn Field Theory Foundation Documents*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bid%5D%5BF%5D%5Bv0.1%5D%5BC5%5D%5BI5%5D%5BR%5D_imperfection_engine_epistemic_collapse_dawn_field_repo.md
 
-[9] Groom, P. (2025). "Cosmic Information Mining via AI-Driven Energy Conversion: Original Thought Experiment." *Dawn Field Theory Historical Documents*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/resources/CIM.md
+[9] Groom, P. (2025). "Cosmic Information Mining via AI-Driven Energy Conversion: Original Thought Experiment." *Dawn Field Theory Historical Documents*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.md
 
 [10] Landauer, R. (1961). "Irreversibility and Heat Generation in the Computing Process." *IBM Journal of Research and Development*, 5(3), 183-191.
 

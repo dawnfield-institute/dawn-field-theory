@@ -54,7 +54,6 @@ dawn-field-theory/
   archive/
     README.md
     REPOSITORY_RESTRUCTURE_PLAN.md
-    experiments-era-guide.md
     blueprints/
       LICENSE.md
       README.md
@@ -4417,18 +4416,9 @@ dawn-field-theory/
           mesh_builder.py
           pac_residual_tracker.py
         data/
-          ml-25m.zip
           winequality-red.csv
           winequality-white.csv
           yeast_proteome.tsv
-          ml-25m/
-            README.txt
-            genome-scores.csv
-            genome-tags.csv
-            links.csv
-            movies.csv
-            ratings.csv
-            tags.csv
         journals/
           2026-01-20_hypothesis_commit.md
         results/
@@ -4923,7 +4913,6 @@ dawn-field-theory/
           wealth_gravity_sim.py
   formal/
     README.md
-    arithmetic-README.md
     conjectures/
       README.md
       med-formal-papers/
@@ -6641,11 +6630,9 @@ dawn-field-theory/
       post_m5_roadmap.md
       publication_framework_roadmap.md
   theory/
-    corrections-amplification.md
     corrections.md
     dawn-field-theory.md
     for_ai_labs.md
-    foundational-README.md
     infodynamics.md
     lexicon.yaml
     origin_of_infodynamics.md

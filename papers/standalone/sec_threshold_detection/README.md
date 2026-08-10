@@ -31,7 +31,7 @@ sec_threshold_detection/
 ## Experiment References
 
 The experimental code lives in the main experiments folder:
-- `papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/` - Detection and validation
+- `foundational/experiments/sec_threshold_detection/` - Detection and validation
 
 ## Citation
 

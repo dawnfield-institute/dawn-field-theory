@@ -42,8 +42,8 @@ This paper derives the Lorentz group SO(3,1), the invariant interval, and the sp
 
 ## Source Experiments
 
-- `experiments/milestones/milestone12/` — 13 scripts (exp_01–exp_13): Connection as Primitive
-- `experiments/milestones/milestone13/` — 17 scripts (exp_01–exp_17): Identity as Complement + M13.5 investigation
+- `foundational/experiments/milestone12/` — 13 scripts (exp_01–exp_13): Connection as Primitive
+- `foundational/experiments/milestone13/` — 17 scripts (exp_01–exp_17): Identity as Complement + M13.5 investigation
 
 The packaged scripts in `Code/experiments/` are verbatim copies, kept in per-milestone subdirectories (`milestone12/`, `milestone13/`) because the two milestones share the filename `exp_12_cross_milestone_compatibility.py` and both number 01–13. They import the shared DFT core chain (`identity_complement → connection_geometry → quantum_gravity → foundations`, milestones 13 → 12 → 11 → 10); see `Code/trace.yaml` for full provenance.
 
@@ -58,7 +58,7 @@ Paper 10 enables Paper 11 (Quantum Mechanics from Graph Structure), which builds
 
 ```bash
 # from a checkout of the dawn-field-theory repo, with numpy/scipy/matplotlib installed:
-cd papers/legacy/cognition_index_protocol/v0.3/connection_identity_spacetime/Code
+cd foundational/docs/preprints/PACSeries/v0.3/connection_identity_spacetime/Code
 python reproduce.py --list      # list all 30 experiments
 python reproduce.py             # run all 30
 python reproduce.py 12_03       # run milestone12 exp_03 only

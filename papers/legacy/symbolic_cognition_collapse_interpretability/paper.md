@@ -15,14 +15,14 @@ These preliminary results suggest mechanistic, temporally grounded narratives of
 
 *Note: All experimental results are reproducible through open-source implementations with comprehensive validation protocols documented in the Dawn Field Theory codebase. This work represents ongoing theoretical and computational exploration. While our results are promising, they require independent validation, peer review, and extension beyond computational studies. We present this framework as a research program for community investigation rather than established science.*
 
-All theoretical claims, simulations, and empirical results cite experiments from the open Dawn Field Theory codebase and cross-reference theory documents validated through systematic evaluation.
+All theoretical claims, simulations, and empirical results cite experiments from the open Dawn Field Theory codebase and cross-reference foundational documents validated through systematic evaluation.
 
 ## Keywords
 symbolic entropy collapse; bifractal interpretability; activation ancestry; cognitive diagnostics; TinyCIMM; SCBF; lineage stability; phase alignment; symbolic attractors; entropy-aware benchmarking
 
 ## 1. Introduction
 
-This preprint is part of a series that draws directly from the open Dawn Field Theory codebase. All key concepts, models, and results are cross-referenced with theory documents, simulations, and prior preprints identified through systematic search and validation.
+This preprint is part of a series that draws directly from the open Dawn Field Theory codebase. All key concepts, models, and results are cross-referenced with foundational documents, simulations, and prior preprints identified through systematic search and validation.
 
 ### 1.1 Background and Motivation
 
@@ -490,8 +490,8 @@ Future work should extend these insights to large-scale models and diverse domai
 | Fig. 3 | Main Flow Predictions Live CIMM | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/main_flow_predictions_live_cimm.png | **Available** |
 | Fig. 4 | Turbulent Breakthrough Interpretability Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/turbulent_breakthrough_interpretability.png | **Available** |
 | Fig. 5 | Reynolds Performance Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/reynolds_performance_analysis.png | **Available** |
-| Fig. 6 | Quantum Decoherence vs Symbolic Entropy Collapse | archive/era1-symbolic/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png | **Available** |
-| Fig. 7 | Landauer Energy vs Entropy Correlation | archive/era1-symbolic/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png | **Available** |
+| Fig. 6 | Quantum Decoherence vs Symbolic Entropy Collapse | foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png | **Available** |
+| Fig. 7 | Landauer Energy vs Entropy Correlation | foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png | **Available** |
 
 ## References
 
@@ -578,8 +578,8 @@ Future work should extend these insights to large-scale models and diverse domai
 | Fig. 3 | Main Flow Predictions Live CIMM | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/main_flow_predictions_live_cimm.png | **Available** |
 | Fig. 4 | Turbulent Breakthrough Interpretability Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/turbulent_breakthrough_interpretability.png | **Available** |
 | Fig. 5 | Reynolds Performance Analysis | models/TinyCIMM/TinyCIMM-Navier/experiments/results/live_cimm_experiment_20250818_091023/images/reynolds_performance_analysis.png | **Available** |
-| Fig. 6 | Quantum Decoherence vs Symbolic Entropy Collapse | archive/era1-symbolic/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png | **Available** |
-| Fig. 7 | Landauer Energy vs Entropy Correlation | archive/era1-symbolic/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png | **Available** |
+| Fig. 6 | Quantum Decoherence vs Symbolic Entropy Collapse | foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png | **Available** |
+| Fig. 7 | Landauer Energy vs Entropy Correlation | foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png | **Available** |
 
 ## References
 

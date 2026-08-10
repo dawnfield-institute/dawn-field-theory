@@ -272,9 +272,9 @@ This work builds upon the PAC framework and draws inspiration from the Dawn Fiel
 
 ## References
 
-1. Dawn Field Institute. "Unified PAC Framework." [`unified_pac_framework_comprehensive.md`](../../../../../../formal/derivations/unified_pac_framework_comprehensive.md)
+1. Dawn Field Institute. "Unified PAC Framework." [`unified_pac_framework_comprehensive.md`](unified_pac_framework_comprehensive.md)
 2. Dawn Field Institute. "π-Harmonic Möbius Topology." [`harmonic mobius.md`](../experiments/pre_field_recursion/notes/harmonic_mobius.md)
-3. Dawn Field Institute. "GAIA Validation Results." [`unified_mas_med_validation.py`](../Code/experiments/unified_mas_med_validation.py)
+3. Dawn Field Institute. "GAIA Validation Results." [`unified_mas_med_validation.py`](../../dawn-models/research/GAIA/usecases/unified_mas_med_validation.py)
 
 ---
 

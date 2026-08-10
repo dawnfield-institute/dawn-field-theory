@@ -157,7 +157,7 @@ Our framework demonstrates consistent entropy-reduction principles across domain
 We implement systematic mathematical exploration across numerical bases 2-64, revealing base-dependent entropy patterns and invariant structures:
 
 
-**Implementation Framework** (validated in `archive/era1-symbolic/`):
+**Implementation Framework** (validated in `foundational/arithmetic/`):
 
 ```python
 class RecursiveBaseAnalyzer:
@@ -391,7 +391,7 @@ We propose that genuine intelligence emerges from systems capable of recursive e
 
 ## Discussion
 
-This work demonstrates that recursive mathematical plasticity and entropy-aware architecture are mutually reinforcing. The empirical and theoretical results suggest that minimizing entropy in both mathematical representation and system design leads to more robust, interpretable, and adaptive intelligence. However, the relationship between mathematical and architectural entropy, and the generalizability of these results, require further study. [TRACE: [landauer validation](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/experiments/milestones/milestone2/)]
+This work demonstrates that recursive mathematical plasticity and entropy-aware architecture are mutually reinforcing. The empirical and theoretical results suggest that minimizing entropy in both mathematical representation and system design leads to more robust, interpretable, and adaptive intelligence. However, the relationship between mathematical and architectural entropy, and the generalizability of these results, require further study. [TRACE: [landauer validation](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/)]
 
 ## Alignment & Ethics
 
@@ -636,11 +636,11 @@ class ThermodynamicOptimizer:
 
 **Code Repository**: [Dawn Field Theory GitHub](https://github.com/dawnfield-institute/dawn-field-theory)
 
-**Mathematical Analysis Tools**: Available in `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/recursive_entropy/ and [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/hodge_mapping
+**Mathematical Analysis Tools**: Available in `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/recursive_entropy/ and [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/hodge_mapping
 
-**Architectural Entropy Framework**`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/hodge_mapping
+**Architectural Entropy Framework**`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/hodge_mapping
 
-**Architectural Entropy Framework**)Documented in `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/resources/entropy_minimized_architecture.md and [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/
+**Architectural Entropy Framework**)Documented in `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md and [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/scbf/
 
 **Experimental Protocols**: Complete methodologies available in repository with YAML metadata for reproducible validation
 
@@ -677,8 +677,8 @@ All computational results in this preprint were obtained using the hardware conf
 | Claim / Component | Source Path | TRACE Reference | Status |
 |-------------------|-------------|-----------------|--------|
 | Multi-base analysis engine |  | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/ tools/base_invariant_analysis.py] | **Resolved** |
-| Entropy-aware architecture design | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/resources/entropy_minimized_architecture.md | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/papers/drafts/resources/entropy_minimized_architecture.md | **Available** |
-| Landauer erasure validation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/experiments/milestones/milestone2/ | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/experiments/milestones/milestone2/reference_material/landauer_20250716_123034/ | **Available** |
+| Entropy-aware architecture design | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/docs/preprints/drafts/resources/entropy_minimized_architecture.md | **Available** |
+| Landauer erasure validation | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/ | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/ | **Available** |
 | Mathematical reasoning metrics | https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/ | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/models/TinyCIMM/TinyCIMM-Euler/experiments/experiment_results/fibonacci_ratios_convergence_test/run_20250710_110730/logs/tinycimm_euler_fibonacci_ratios_convergence_test_log.csv | **Available** |
 | Base-invariant pattern detection |  | [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/ tools/base_invariant_analysis.py] | **Available** |
 

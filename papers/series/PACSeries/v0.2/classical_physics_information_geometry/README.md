@@ -23,11 +23,11 @@ This paper demonstrates that the structure of classical electromagnetism — cur
 
 ## Source Experiments
 
-- `experiments/milestones/maxwell_from_pac_sec/` — 5 scripts (wave speed, charge, curl, α, D=3)
-- `experiments/milestones/gravity_from_maxwell_pac/` — 12 scripts (projection duality, hierarchy, N-body)
-- `papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/` — Ξ derivation, Feigenbaum constants
-- `archive/era2-prefield/navier-stokes/` — MED discovery, SEC-NS equivalence
-- `experiments/milestones/milestone2/` — She-Lévêque, Casimir, Mersenne
+- `foundational/experiments/maxwell_from_pac_sec/` — 5 scripts (wave speed, charge, curl, α, D=3)
+- `foundational/experiments/gravity_from_maxwell_pac/` — 12 scripts (projection duality, hierarchy, N-body)
+- `foundational/experiments/sec_threshold_detection/` — Ξ derivation, Feigenbaum constants
+- `foundational/experiments/navier-stokes/` — MED discovery, SEC-NS equivalence
+- `foundational/experiments/milestone2/` — She-Lévêque, Casimir, Mersenne
 
 ## Dependencies
 
@@ -39,7 +39,7 @@ This paper demonstrates that the structure of classical electromagnetism — cur
 ## Reproduction
 
 ```bash
-cd experiments/milestones/maxwell_from_pac_sec/scripts/
+cd foundational/experiments/maxwell_from_pac_sec/scripts/
 python exp_01_sec_wave_speed.py
 python exp_02_charge_quantization.py
 python exp_03_curl_projection.py

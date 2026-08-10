@@ -98,7 +98,7 @@ Location: `cellular_automata_pac_attractors/`
 
 ### Code Traceability
 All code traced back to original experiments via `Code/trace.yaml`:
-- Source: `dawn-field-theory/papers/standalone/cellular_automata_xi_clustering/Code/`
+- Source: `dawn-field-theory/foundational/experiments/cellular_automata_pac_attractors/`
 - Commit: 3af130a (refactor to schema 2.0)
 - Date: 2025-12-20
 

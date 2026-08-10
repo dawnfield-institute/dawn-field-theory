@@ -321,10 +321,10 @@ These systems were designed and trained with no knowledge of Dawn Field Theory. 
 ## References
 
 1. Pythia Analysis: `dawn-models/research/scbf/experiments/journals/001_pythia_phi_convergence.md`
-2. GPT-2 Inference: `archive/era2-prefield/prime_harmonic_manifold/scripts/exp_27_gpt2_entropy_dynamics.py`
-3. GPT-2 Generation: `archive/era2-prefield/prime_harmonic_manifold/scripts/exp_28_generation_sec_dynamics.py`
-4. Journal: `archive/era2-prefield/prime_harmonic_manifold/journals/2025-12-13_sec_ml_refined.md`
-5. Cross-experiment synthesis: `archive/era2-prefield/prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md`
+2. GPT-2 Inference: `foundational/experiments/prime_harmonic_manifold/scripts/exp_27_gpt2_entropy_dynamics.py`
+3. GPT-2 Generation: `foundational/experiments/prime_harmonic_manifold/scripts/exp_28_generation_sec_dynamics.py`
+4. Journal: `foundational/experiments/prime_harmonic_manifold/journals/2025-12-13_sec_ml_refined.md`
+5. Cross-experiment synthesis: `foundational/experiments/prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md`
 
 ---
 

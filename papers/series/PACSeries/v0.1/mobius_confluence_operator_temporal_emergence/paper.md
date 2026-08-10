@@ -732,4 +732,4 @@ The key insight is that recursive PAC dynamics introduce the Φ_PAC amplificatio
 
 *Document Classification: [pac][D][v1.0][C3][I5][E]*
 *Series: PAC Mathematical Foundations, Paper 5*
-*Repository: dawn-field-theory/papers/drafts/PACSeries/*
+*Repository: dawn-field-theory/foundational/docs/preprints/drafts/PACSeries/*

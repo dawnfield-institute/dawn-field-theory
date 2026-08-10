@@ -56,8 +56,8 @@ phenomenon but as a field-tension resolution event. The Haroche experiments embo
 
 These dynamics strongly align with internal Dawn simulations:
 
-* [Recursive Entropy Tree](../../blueprints/nuclear_containment/v1/results.md): Demonstrates symbolic collapse guided by entropy and balance metrics.
-* [Symbolic Superfluid Collapse PI](../../blueprints/nuclear_containment/v1/results.md): Models symbolic attractor stabilization via entropy-modulated field dynamics.
+* [Recursive Entropy Tree](../recursive_entropy/results/results.md): Demonstrates symbolic collapse guided by entropy and balance metrics.
+* [Symbolic Superfluid Collapse PI](../symbolic_superfluid_collapse_pi/results/results.md): Models symbolic attractor stabilization via entropy-modulated field dynamics.
 * [Collapse Dynamics in Entropic Fields](../../../docs/Title-%20Collapse%20Dynamics%20in%20Entropic%20Fields-%20A%20Synthesis%20of%20Classical%20and%20Quantum%20Mechanisms%20under%20the%20Dawn%20Framework.md): Establishes entropic gradients as collapse-inducing physical forces.
 
 ## Simulation Anchors

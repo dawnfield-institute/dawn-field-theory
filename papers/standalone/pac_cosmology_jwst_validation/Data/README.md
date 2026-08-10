@@ -5,7 +5,7 @@ This folder contains JSON results from experiment runs.
 ## Files
 
 Results are copied from the source experiment folder:
-`dawn-field-theory/papers/standalone/pac_cosmology_jwst_validation/Code/results/`
+`dawn-field-theory/foundational/experiments/pac_cosmology_validation/results/`
 
 Key result files:
 - `exp_03b_jwst_redesigned.json` - Forward predictions (main validation)

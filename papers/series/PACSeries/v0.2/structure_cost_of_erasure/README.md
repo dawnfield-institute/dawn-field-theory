@@ -7,7 +7,7 @@
 
 ## Overview
 
-This paper establishes the theory result for the PACSeries: information erasure into multi-mode environments necessarily creates correlational structure. Starting from two undisputed facts—Landauer's principle and the data processing inequality—it derives that erasure creates new inter-mode correlations (ξ) that are topological in character, with collapse efficiency at natural parameters falling near φ-family constants (~2% proximity), consistent with a cross-domain pattern at structural boundaries.
+This paper establishes the foundational result for the PACSeries: information erasure into multi-mode environments necessarily creates correlational structure. Starting from two undisputed facts—Landauer's principle and the data processing inequality—it derives that erasure creates new inter-mode correlations (ξ) that are topological in character, with collapse efficiency at natural parameters falling near φ-family constants (~2% proximity), consistent with a cross-domain pattern at structural boundaries.
 
 ## Key Results
 
@@ -24,7 +24,7 @@ This paper establishes the theory result for the PACSeries: information erasure 
 
 ## Source Experiment
 
-All data and scripts originate from `papers/series/PACSeries/v0.2/structure_cost_of_erasure/Data/` and are traced via [Code/trace.yaml](Code/trace.yaml).
+All data and scripts originate from `foundational/experiments/landauer_erasure_structure/` and are traced via [Code/trace.yaml](Code/trace.yaml).
 
 ### Package Contents
 

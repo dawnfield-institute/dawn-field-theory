@@ -6,9 +6,9 @@ paper: "dawn_field_theory_synthesis"
 trace_date: "2025-12-23"
 
 experiments:
-  - file: "papers/series/PACSeries/v0.1/sec_med_framework_information_amplification/Code/experiments/exp_01_unified_amplification.py"
+  - file: "experiments/exp_01_unified_amplification.py"
     source_repo: "dawn-field-theory"
-    source_path: "archive/era2-prefield/information_amplification/scripts/unified_amplification_framework.py"
+    source_path: "foundational/experiments/information_amplification/unified_amplification_framework.py"
     description: "Unified Information Amplification Framework demonstrating SEC field dynamics"
     verified: true
     results:
@@ -19,34 +19,34 @@ experiments:
       - "SEC Field ranked #1 in weighted analysis"
 
 core_modules:
-  - file: "papers/standalone/dawn_field_theory_synthesis/Code/experiments/core/sec_field_engine.py"
+  - file: "experiments/core/sec_field_engine.py"
     source_repo: "dawn-field-theory"
-    source_path: "papers/standalone/symbolic_entropy_collapse/Code/core/sec_field_engine.py"
+    source_path: "foundational/experiments/information_amplification/core/sec_field_engine.py"
     description: "SEC field dynamics engine"
 
-  - file: "papers/standalone/dawn_field_theory_synthesis/Code/experiments/core/quantum_validator.py"
+  - file: "experiments/core/quantum_validator.py"
     source_repo: "dawn-field-theory"
-    source_path: "papers/standalone/symbolic_entropy_collapse/Code/core/quantum_validator.py"
+    source_path: "foundational/experiments/information_amplification/core/quantum_validator.py"
     description: "Quantum correspondence validation"
 
-  - file: "papers/standalone/dawn_field_theory_synthesis/Code/experiments/core/compression_engine.py"
+  - file: "experiments/core/compression_engine.py"
     source_repo: "dawn-field-theory"
-    source_path: "papers/standalone/symbolic_entropy_collapse/Code/core/compression_engine.py"
+    source_path: "foundational/experiments/information_amplification/core/compression_engine.py"
     description: "Compression analysis for information measurement"
 
-  - file: "papers/standalone/dawn_field_theory_synthesis/Code/experiments/core/baseline_generator.py"
+  - file: "experiments/core/baseline_generator.py"
     source_repo: "dawn-field-theory"
-    source_path: "papers/standalone/symbolic_entropy_collapse/Code/core/baseline_generator.py"
+    source_path: "foundational/experiments/information_amplification/core/baseline_generator.py"
     description: "Baseline generation for controlled comparisons"
 
-  - file: "papers/standalone/dawn_field_theory_synthesis/Code/experiments/core/text_generator.py"
+  - file: "experiments/core/text_generator.py"
     source_repo: "dawn-field-theory"
-    source_path: "papers/standalone/symbolic_entropy_collapse/Code/core/text_generator.py"
+    source_path: "foundational/experiments/information_amplification/core/text_generator.py"
     description: "Text generation utilities"
 
-  - file: "papers/standalone/dawn_field_theory_synthesis/Code/experiments/core/measurement.py"
+  - file: "experiments/core/measurement.py"
     source_repo: "dawn-field-theory"
-    source_path: "papers/standalone/symbolic_entropy_collapse/Code/core/measurement.py"
+    source_path: "foundational/experiments/information_amplification/core/measurement.py"
     description: "Information measurement utilities"
 
 paper_claims_supported:

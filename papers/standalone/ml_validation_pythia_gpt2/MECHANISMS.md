@@ -134,7 +134,7 @@ Location: `prime_harmonic_manifold/` (uses PHM framework for analysis)
 
 ### Code Traceability
 All code traced back to original experiments via `Code/trace.yaml`:
-- Source: `dawn-field-theory/archive/era2-prefield/prime_harmonic_manifold/`
+- Source: `dawn-field-theory/foundational/experiments/prime_harmonic_manifold/`
 - Analysis framework: Prime Harmonic Manifold (PHM)
 - Commit: Available in trace.yaml
 

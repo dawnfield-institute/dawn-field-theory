@@ -6,44 +6,44 @@ paper: sec_med_framework_information_amplification
 paper_type: framework  # Comprehensive SEC/MED framework paper
 
 experiments:
-  - local: papers/series/PACSeries/v0.1/sec_med_framework_information_amplification/Code/experiments/exp_01_unified_amplification.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/unified_amplification_framework.py
+  - local: experiments/exp_01_unified_amplification.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/unified_amplification_framework.py
     repo: dawn-field-theory
     description: Unified 15.56x information amplification demonstration
     key_result: "15.56x amplification ratio, p < 0.001"
 
 core:
   - local: core/__init__.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/core/__init__.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/core/__init__.py
     repo: dawn-field-theory
   
   - local: core/sec_field_engine.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/core/sec_field_engine.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/core/sec_field_engine.py
     repo: dawn-field-theory
     description: SEC field computation engine
 
   - local: core/compression_engine.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/core/compression_engine.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/core/compression_engine.py
     repo: dawn-field-theory
     description: Compression measurement
 
   - local: core/baseline_generator.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/core/baseline_generator.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/core/baseline_generator.py
     repo: dawn-field-theory
     description: Baseline generation for comparison
 
   - local: core/measurement.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/core/measurement.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/core/measurement.py
     repo: dawn-field-theory
     description: Measurement utilities
 
   - local: core/quantum_validator.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/core/quantum_validator.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/core/quantum_validator.py
     repo: dawn-field-theory
     description: Quantum validation utilities
 
   - local: core/text_generator.py
-    source: dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/core/text_generator.py
+    source: dawn-field-theory/foundational/experiments/information_amplification/core/text_generator.py
     repo: dawn-field-theory
     description: Text generation for experiments
 

@@ -273,8 +273,8 @@ Files created:
   - 20_pac_sec_findings.py: This summary document
 
 Reference files:
-  - archive/spike-darkmatter-sec/sec_auto_tuning_engine.py: α = 0.005857 source
-  - archive/spike-darkmatter-sec/README.md: 63% similarity baseline
+  - spikes/darkmatter_SEC_WIP/sec_auto_tuning_engine.py: α = 0.005857 source
+  - spikes/darkmatter_SEC_WIP/README.md: 63% similarity baseline
 
 Key equations:
   α_dark = α_QED × (F₅-1)/F₅ = (1/137.036) × (4/5) = 0.005838

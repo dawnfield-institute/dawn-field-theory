@@ -3,7 +3,7 @@ created: '2026-07-06'
 description: Traces code and data files back to their original repository locations
 source_repository: dawn-field-theory
 paper: cosmological_predictions_cascade_clock
-paper_type: theory  # PACSeries Paper 9 — Cosmological Predictions and the Cascade Clock
+paper_type: foundational  # PACSeries Paper 9 — Cosmological Predictions and the Cascade Clock
 
 # Reproducibility model: repo-relative. Scripts are verbatim copies of the source
 # milestone8 (BSM predictions) and milestone9 (infodynamic mechanism) experiments.
@@ -14,161 +14,161 @@ paper_type: theory  # PACSeries Paper 9 — Cosmological Predictions and the Cas
 #   milestone9 scripts:  from core.infodynamics import ...  (pulls milestone8/core/bsm)
 # See reproduce.py.
 source_core:
-  - experiments/milestones/milestone8/core/bsm.py
-  - experiments/milestones/milestone9/core/infodynamics.py
+  - foundational/experiments/milestone8/core/bsm.py
+  - foundational/experiments/milestone9/core/infodynamics.py
 
 experiments:
   # ---- Milestone 8: BSM predictions & observational contact ----
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_01_depth73_coupling_derivation.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_01_depth73_coupling_derivation.py
+  - local: experiments/exp_01_depth73_coupling_derivation.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_01_depth73_coupling_derivation.py
     repo: dawn-field-theory
     description: "Depth-73 dark matter coupling derivation from the cyclotomic force hierarchy"
     key_result: "73 = Phi_3(F_6) is the unique cyclotomic depth in the dark-gravity gap [32,182]; alpha_73 ~ 1.2e-15 (4/4)"
     paper_sections: [6, 6.1]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_02_dark_matter_mass_spectrum.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_02_dark_matter_mass_spectrum.py
+  - local: experiments/exp_02_dark_matter_mass_spectrum.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_02_dark_matter_mass_spectrum.py
     repo: dawn-field-theory
     description: "Dark matter mass from two independent cascade routes"
     key_result: "Geometric-mean mass 6.44 keV, spread 0.09 orders (v_H*phi^{-73/2} and M_Z*phi^{-34}); X-ray line ~3.2 keV (4/4)"
     paper_sections: [6, 6.2, 6.3]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_03_relic_abundance_production.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_03_relic_abundance_production.py
+  - local: experiments/exp_03_relic_abundance_production.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_03_relic_abundance_production.py
     repo: dawn-field-theory
     description: "Relic abundance and non-thermal production"
     key_result: "Thermal freeze-out excluded; Dodelson-Widrow freeze-in gives Omega_c h^2 = 0.120; free-streaming 0.016 Mpc (warm) (4/4)"
     paper_sections: [6.3]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_04_zprime_395_quantification.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_04_zprime_395_quantification.py
+  - local: experiments/exp_04_zprime_395_quantification.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_04_zprime_395_quantification.py
     repo: dawn-field-theory
     description: "Z' boson at 395 GeV LHC phenomenology"
     key_result: "M_Z' = 395 GeV (M_Z * F_7/F_6), g'/g = 1/13, width 64 MeV; not excluded, 9x safety margin (4/4)"
     paper_sections: [7, 7.1, 7.2]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_05_neutrino_absolute_masses.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_05_neutrino_absolute_masses.py
+  - local: experiments/exp_05_neutrino_absolute_masses.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_05_neutrino_absolute_masses.py
     repo: dawn-field-theory
     description: "Neutrino absolute masses, hierarchy, CP phase"
     key_result: "Normal hierarchy; splitting ratio 17% (PMNS-corrected from 44%); delta_CP = 63.5 deg; sum 0.43 meV (4/4)"
     paper_sections: [11, 11.1, 11.2, 11.3, 11.4]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_06_fibonacci_depth_sweep.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_06_fibonacci_depth_sweep.py
+  - local: experiments/exp_06_fibonacci_depth_sweep.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_06_fibonacci_depth_sweep.py
     repo: dawn-field-theory
     description: "Fibonacci / cyclotomic depth sweep of the force hierarchy"
     key_result: "Cyclotomic Phi_3(F_n) generates the force depths; 7 forces in the [5,7] range; depth 73 unique in the gap (4/4)"
     paper_sections: [6.1, 11.2]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_07_hubble_tension_quantification.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_07_hubble_tension_quantification.py
+  - local: experiments/exp_07_hubble_tension_quantification.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_07_hubble_tension_quantification.py
     repo: dawn-field-theory
     description: "Hubble tension from discrete cascade levels"
     key_result: "H0_local/H0_CMB = phi^{1/6} = 1.0835 at 0.075% from measured; H0 = 73.0 km/s/Mpc; BAO phi^{-1/6} correction (4/4)"
     paper_sections: [4, 4.1, 4.2, 4.4]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_08_cosmological_constant_precision.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_08_cosmological_constant_precision.py
+  - local: experiments/exp_08_cosmological_constant_precision.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_08_cosmological_constant_precision.py
     repo: dawn-field-theory
     description: "Cosmological constant precision via the correction template"
     key_result: "log10(Lambda/Lambda_P) = -122.09 at 0.09 orders; Omega_Lambda = 0.686 at 0.18% from Planck (4/4)"
     paper_sections: [3, 3.1, 3.2, 3.3]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_09_jwst_structure_prediction.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_09_jwst_structure_prediction.py
+  - local: experiments/exp_09_jwst_structure_prediction.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_09_jwst_structure_prediction.py
     repo: dawn-field-theory
     description: "JWST high-redshift structure floor"
     key_result: "Redshift-dependent cascade floor f(z) = f0 exp(-z / (ln phi * N)); z=8 at 16%, z=12 at 4%, zero free parameters (4/4)"
     paper_sections: [12, 12.1, 12.2]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_10_bsm_master_test.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_10_bsm_master_test.py
+  - local: experiments/exp_10_bsm_master_test.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_10_bsm_master_test.py
     repo: dawn-field-theory
     description: "BSM master test — internal consistency, prediction count, falsifiability, exclusion"
     key_result: "0 contradictions, 10 pre-registered falsifiable predictions, 0 excluded; Z' width cross-check (4/4)"
     paper_sections: [12.2, 13, 13.1]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_11_cross_consistency.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_11_cross_consistency.py
+  - local: experiments/exp_11_cross_consistency.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_11_cross_consistency.py
     repo: dawn-field-theory
     description: "Cross-consistency of the N parameter across observables"
     key_result: "N range 2.75 exceeds tolerance 1.5 (FAIL, pre-registered) — motivates the M9 continuous cascade clock (3/4)"
     paper_sections: [12.3]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_12_look_elsewhere.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_12_look_elsewhere.py
+  - local: experiments/exp_12_look_elsewhere.py
+    source: dawn-field-theory/foundational/experiments/milestone8/scripts/exp_12_look_elsewhere.py
     repo: dawn-field-theory
     description: "Look-elsewhere and sensitivity analysis for phi^{1/6}"
     key_result: "phi^{1/6} ranks 2 of 300 (base,n) combinations (phi-family), p = 0.007; CC robust to +/-5% depth (0.56 orders) (4/4)"
     paper_sections: [4.3]
 
   # ---- Milestone 9: the infodynamic mechanism / cascade clock ----
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_01_phi_timing_from_pac.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_01_phi_timing_from_pac.py
+  - local: experiments/exp_01_phi_timing_from_pac.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_01_phi_timing_from_pac.py
     repo: dawn-field-theory
     description: "Phi timing forced by PAC conservation at each cascade level"
     key_result: "Interval ratios E_n/E_{n+1}=phi, handoff S_n=D_{n+1}, cross-scale D_n/S_n=phi exact (<1e-12); 1/phi unique root of g^2+g-1=0 (4/4)"
     paper_sections: [8.4, 8.5]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_02_xi_transition_cost.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_02_xi_transition_cost.py
+  - local: experiments/exp_02_xi_transition_cost.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_02_xi_transition_cost.py
     repo: dawn-field-theory
     description: "Xi as the unique transition cost per cascade boundary"
     key_result: "Xi = gamma + ln(phi) = 1.0584 unique for scale invariance g_out=g_in^2; slope-Xi product 2.200 matches free-fit 2.264 (2.85%) (4/4)"
     paper_sections: [8.3]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_03_slope_correction.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_03_slope_correction.py
+  - local: experiments/exp_03_slope_correction.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_03_slope_correction.py
     repo: dawn-field-theory
     description: "Slope-gap analysis between DFT-constrained and free-fit slopes"
     key_result: "B_DFT = 2.0781 vs B_FREE = 2.264 (8.9% gap); Monte Carlo places B_DFT at 38.6th percentile, in 95% CI (noise) (2/4, honest)"
     paper_sections: [10.1]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_04_sec_temporal_flow.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_04_sec_temporal_flow.py
+  - local: experiments/exp_04_sec_temporal_flow.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_04_sec_temporal_flow.py
     repo: dawn-field-theory
     description: "SEC temporal flow and time-symmetry breaking"
     key_result: "Time symmetry broken, entropy-arrow asymmetry 1.29, logarithmic flow R^2=0.83, max-entropy equilibrium (4/4)"
     paper_sections: [8]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_05_gravity_time_from_cascade.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_05_gravity_time_from_cascade.py
+  - local: experiments/exp_05_gravity_time_from_cascade.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_05_gravity_time_from_cascade.py
     repo: dawn-field-theory
     description: "Gravity-time duality from the cascade"
     key_result: "g_out=g_in^2 exact for phi only; BH proper-time ratio phi^{3/2} exact; cascade-redshift Spearman 1.0; Zeno completion (4/4)"
     paper_sections: [8]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_06_arrow_of_time.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_06_arrow_of_time.py
+  - local: experiments/exp_06_arrow_of_time.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_06_arrow_of_time.py
     repo: dawn-field-theory
     description: "Arrow of time from cascade entropy production"
     key_result: "Entropy production 0.665 nats/level, log arrow R^2=1.0, Loschmidt echo 4.3% spread, monotonic info loss (4/4)"
     paper_sections: [8]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_07_s8_redshift_evolution.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_07_s8_redshift_evolution.py
+  - local: experiments/exp_07_s8_redshift_evolution.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_07_s8_redshift_evolution.py
     repo: dawn-field-theory
     description: "S8 tension resolved by cascade dissipation at redshift"
     key_result: "S8(z=0.35)=0.769 vs 0.768 observed; tension 3.22 sigma -> 0.07 sigma (~98% reduction); leave-one-out PASS blind (4/4)"
     paper_sections: [5, 5.2, 5.3, 5.4]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_08_h0_scale_dependence.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_08_h0_scale_dependence.py
+  - local: experiments/exp_08_h0_scale_dependence.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_08_h0_scale_dependence.py
     repo: dawn-field-theory
     description: "H0 scale dependence from the cascade clock"
     key_result: "Discrete phi^{1/N_floor} gives H0 = 72.98 (0.05 sigma from SH0ES); correct z-ordering of DESI BAO bins; leave-one-out PASS (4/4)"
     paper_sections: [4.4, 8.3]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_09_dark_energy_evolution.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_09_dark_energy_evolution.py
+  - local: experiments/exp_09_dark_energy_evolution.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_09_dark_energy_evolution.py
     repo: dawn-field-theory
     description: "Dark energy equation of state w(z) from the cascade"
     key_result: "w(z=0) = -0.987 (N_physical fix), curvature |d^2w/dz^2| = 0.19, CMB-compatible; DESI w_a tension documented (3/4, honest)"
     paper_sections: [3.3, 10.2]
 
-  - local: papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_10_m9_synthesis.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Code/experiments/exp_10_m9_synthesis.py
+  - local: experiments/exp_10_m9_synthesis.py
+    source: dawn-field-theory/foundational/experiments/milestone9/scripts/exp_10_m9_synthesis.py
     repo: dawn-field-theory
     description: "Milestone 9 synthesis — parameter reduction and prediction registry"
     key_result: "Cascade clock reduces 2 free parameters to 1; t1 = 520 Myr anchors to first stars; 4 new P-type predictions (4/4)"

@@ -55,7 +55,7 @@ cycle (52 → 49 → 52).
 
 ## Source Experiments
 
-- `experiments/milestones/milestone11/` — 13 scripts (exp_01–exp_13).
+- `foundational/experiments/milestone11/` — 13 scripts (exp_01–exp_13).
 
 The packaged scripts in `Code/experiments/` are **verbatim copies**. They import
 the shared DFT core chain (`quantum_gravity → foundations → infodynamics → bsm`,
@@ -74,7 +74,7 @@ individual MAR script — those results enter through the shared constants
 
 ```bash
 # from a checkout of the dawn-field-theory repo, with numpy/scipy/matplotlib installed:
-cd papers/legacy/cognition_index_protocol/v0.3/quantum_gravity_information_conservation/Code
+cd foundational/docs/preprints/PACSeries/v0.3/quantum_gravity_information_conservation/Code
 python reproduce.py --list      # list experiments
 python reproduce.py             # run all 13
 python reproduce.py 05          # run exp_05 only

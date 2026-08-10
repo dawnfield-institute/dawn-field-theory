@@ -35,7 +35,7 @@ I invite you to explore this hypothesis and help me understand its implications.
 
 ### 1.2 Methodological Foundation
 
-All theoretical claims and experimental evidence presented in this work derive from the open Dawn Field Theory repository, ensuring full reproducibility and transparency. Key concepts are cross-referenced with theory documents, computational simulations, and prior preprints through systematic semantic search of the codebase.
+All theoretical claims and experimental evidence presented in this work derive from the open Dawn Field Theory repository, ensuring full reproducibility and transparency. Key concepts are cross-referenced with foundational documents, computational simulations, and prior preprints through systematic semantic search of the codebase.
 
 
 ## 2. Theoretical Framework: Symbolic Resonance and Entropic Co-Agency
@@ -122,7 +122,7 @@ These results demonstrate that symbolic systems naturally develop hierarchical, 
 
 ### 4.1 Experimental Design
 
-To validate our theoretical framework, we conducted a computational experiment simulating symbolic emergence between two agents with complementary biases. This experiment, documented in the theory experiments directory [^5], explores whether language-like structure and symbolic attractors can emerge from simple recursive feedback without hardcoded syntax or grammar rules.
+To validate our theoretical framework, we conducted a computational experiment simulating symbolic emergence between two agents with complementary biases. This experiment, documented in the foundational experiments directory [^5], explores whether language-like structure and symbolic attractors can emerge from simple recursive feedback without hardcoded syntax or grammar rules.
 
 **Agent Configuration:**
 - **Agent A:** 70% novelty bias (prefers unexplored tokens)
@@ -153,7 +153,7 @@ Over time, certain tokens consistently occupied specific roles, suggesting spont
 #### 4.2.3 Entropy Regulation and Stability
 
 **Figure: Entropy Waves from Evolution-Symbolic-Collapse Experiments**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
 
 *Figure 1: Entropy evolution patterns from our most recent symbolic-biological evolution experiments (July 18, 2025), showing characteristic collapse and stabilization cycles that demonstrate the entropy regulation mechanisms underlying symbolic convergence.*
 
@@ -389,7 +389,7 @@ This field exhibits several key properties:
 
 ## Discussion
 
-This work demonstrates that symbolic resonance and entropic field dynamics provide a foundation for adaptive, co-evolutionary human-agent systems. The empirical and theoretical results suggest that mutual adaptation, emergent communication, and entropy-guided evolution are not only possible but naturally arise in well-designed symbolic ecologies. However, the generalizability of these findings and the long-term stability of symbolic convergence require further study. [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/archive/era1-symbolic/symbolic_emergence/
+This work demonstrates that symbolic resonance and entropic field dynamics provide a foundation for adaptive, co-evolutionary human-agent systems. The empirical and theoretical results suggest that mutual adaptation, emergent communication, and entropy-guided evolution are not only possible but naturally arise in well-designed symbolic ecologies. However, the generalizability of these findings and the long-term stability of symbolic convergence require further study. [TRACE: https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/symbolic_emergence/
 
 ## Alignment & Ethics
 
@@ -412,14 +412,14 @@ Resonant symbolic convergence provides a promising foundation for co-evolving hu
 
 ## References
 
-1. Symbolic Bifractal Expansion Experiment. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_bifractal/
+1. Symbolic Bifractal Expansion Experiment. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_bifractal/
 2. GAIA Resonance Mesh Architecture. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/architecture/modules/resonance_mesh.md
-3. Symbolic Ancestry Tracking. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_bifractal/symbolic_bifractal_expansion_v2.py
-4. Symbolic Bifractal Results. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_bifractal/results.md
-5. Symbolic Emergence Experiment. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/
+3. Symbolic Ancestry Tracking. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_bifractal/symbolic_bifractal_expansion_v2.py
+4. Symbolic Bifractal Results. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_bifractal/results.md
+5. Symbolic Emergence Experiment. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_emergence/
 6. GAIA Superfluid Memory. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/architecture/modules/superfluid_memory.md
 7. Resonance Mesh Protocol. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/architecture/modules/resonance_mesh.md
-8. Symbolic Entropy Collapse Theory. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_entropy_collapse/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC1%5D%5BI1%5D_symbolic_entropy_collapse.md
+8. Symbolic Entropy Collapse Theory. Dawn Field Theory Repository, https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_entropy_collapse/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC1%5D%5BI1%5D_symbolic_entropy_collapse.md
 
 
 ### 8.1 Symbolic Resonance as Foundation for Co-Evolving Intelligence
@@ -476,8 +476,8 @@ As we develop these systems, we must remain attentive to the ethical implication
 
 All experiments and models referenced in this preprint are available in the open Dawn Field Theory repository:
 
-- **Symbolic Emergence Experiment:** `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/
-- **Symbolic Bifractal Expansion:** `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_bifractal/
+- **Symbolic Emergence Experiment:** `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_emergence/
+- **Symbolic Bifractal Expansion:** `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_bifractal/
 - **GAIA Resonance Mesh:** `https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/architecture/modules/resonance_mesh.md
 - **TinyCIMM Interpretability Framework:** [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Planck/
 
@@ -488,10 +488,10 @@ Key theoretical documents supporting this framework`](https://https://github.com
 ### Appendix B: Theoretical Framework References
 
 Key theoretical documents supporting this framework:
-- **Symbolic Entropy Collapse Theory:** [symbolic entropy collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_entropy_collapse/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC1%5D%5BI1%5D_symbolic_entropy_collapse.md)
+- **Symbolic Entropy Collapse Theory:** [symbolic entropy collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_entropy_collapse/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC1%5D%5BI1%5D_symbolic_entropy_collapse.md)
 - **Epistemic Field Theory:** [epistemic field theory](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/theory/epistemic_field_theory.md)
 - **Emergent Intelligence Theory:** [emergent intelligence](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/theory/emergent_intelligence.md)
-- **Pi-Harmonic Recursion:** [pi harmonics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/pi_harmonics.md)
+- **Pi-Harmonic Recursion:** [pi harmonics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC4%5D%5BI5%5D_pi_harmonics.md)
 
 ### Appendix C: Citation and Reproducibility
 
@@ -526,7 +526,7 @@ All computational results in this preprint were obtained using the hardware conf
 
 ## References
 
-[^1]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/pi_harmonics.md
+[^1]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC4%5D%5BI5%5D_pi_harmonics.md
 
 ### Appendix C: Citation and Reproducibility
 
@@ -561,9 +561,9 @@ All computational results in this preprint were obtained using the hardware conf
 
 ## References
 
-[^1])Enhanced Information Amplification Framework. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/standalone/symbolic_entropy_collapse/Code/
+[^1])Enhanced Information Amplification Framework. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/information_amplification/
 
-[^2]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/standalone/symbolic_entropy_collapse/Code/
+[^2]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/information_amplification/
 
 [^2])TinyCIMM-Euler Mathematical Reasoning Breakthrough. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/experiments/%5Bid%5D%5BF%5D%5Bv2.0%5D%5BC6%5D%5BI6%5D%5BE%5D_mathematical_reasoning_breakthrough.md
 
@@ -577,16 +577,16 @@ All computational results in this preprint were obtained using the hardware conf
 
 [^5]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/tinycimm_euler.py
 
-[^5])Symbolic Emergence Experiment. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/
+[^5])Symbolic Emergence Experiment. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_emergence/
 
-[^6]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/
+[^6]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_emergence/
 
 [^6])Activation Ancestry Tracking Implementation. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/tinycimm_euler.py#L199
 
 [^7]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/TinyCIMM/TinyCIMM-Euler/tinycimm_euler.py#L199
 
-[^7])Quantum Validation Experiments. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/quantum_validation/
+[^7])Quantum Validation Experiments. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/
 
-[^8]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/quantum_validation/
+[^8]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/
 
-[^8])Symbolic Entropy Collapse Theory. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_entropy_collapse/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC1%5D%5BI1%5D_symbolic_entropy_collapse.md
+[^8])Symbolic Entropy Collapse Theory. Dawn Field Theory Repository, [`https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_entropy_collapse/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC1%5D%5BI1%5D_symbolic_entropy_collapse.md

@@ -365,7 +365,7 @@ The open question from §5.3 — what is the relationship between Ξ and φ? —
 
 All experimental data and code are openly available for independent validation:
 
-**Repository**: `dawn-field-theory/papers/standalone/cellular_automata_xi_clustering/Code/`
+**Repository**: `dawn-field-theory/foundational/experiments/cellular_automata_pac_attractors/`
 
 **Key files**:
 - `results/exp_02_full_sweep_20251220_090809.json` — Initial 256-rule survey
@@ -389,7 +389,7 @@ scipy>=1.7.0
 ### Execution
 
 ```bash
-cd dawn-field-theory/papers/standalone/cellular_automata_xi_clustering/Code
+cd dawn-field-theory/foundational/experiments/cellular_automata_pac_attractors
 python scripts/exp_07_definitive_proof.py
 ```
 
@@ -413,7 +413,7 @@ This preprint connects to the broader Dawn Field Theory research program:
 
 | Preprint | Connection |
 |----------|------------|
-| `dawn_field_theory_infodynamics_preprint.md` | Foundational information dynamics |
+| `[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md` | Foundational information dynamics |
 | `[sec][D][v1.0][C4][I5][E]_golden_ratio_prime_distribution_preprint.md` | φ in number theory, SEC phase transitions |
 | `[pac][D][v1.0][C4][I5][E]_qbe_pac_unification_preprint.md` | Quantum-classical bridge via PAC |
 | `[pac][D][v1.0][C3][I5][E]_gaia_computational_validation_dawn_field_theory_preprint.md` | GAIA neural network validation |

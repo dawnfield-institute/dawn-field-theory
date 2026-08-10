@@ -410,9 +410,9 @@ If 0.020 Hz represents a universal herniation frequency:
 - Cosmological Engine: [`dawn-models/research/GAIA/usecases/cosmological_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/cosmological_validation.py)
 
 ### Theoretical Framework
-- MAS-Herniation Theory: [`dawn-field-theory/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/mas_herniation_cosmology_unified.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/mas_herniation_cosmology_unified.md)
-- Validation Status: [`dawn-field-theory/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/gaia_validation_status.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/gaia_validation_status.md)
-- Pre-Field Recursion: [`dawn-field-theory/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/Pre-Field Recursion.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Documentation/Pre-Field%20Recursion.md)
+- MAS-Herniation Theory: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/mas_herniation_cosmology_unified.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/mas_herniation_cosmology_unified.md)
+- Validation Status: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/gaia_validation_status.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/gaia_validation_status.md)
+- Pre-Field Recursion: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/Pre-Field Recursion.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/Pre-Field%20Recursion.md)
 
 ### Supporting Code
 - Field Engine: [`dawn-models/research/GAIA/src/core/field_engine.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/src/core/field_engine.py)

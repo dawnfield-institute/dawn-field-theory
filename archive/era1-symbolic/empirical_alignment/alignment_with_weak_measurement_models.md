@@ -49,8 +49,8 @@ tensions. Weak measurement offers a direct probe into:
 
 ## Supporting Dawn Simulations and Theory
 
-* [Symbolic Bifractal Collapse](../../blueprints/nuclear_containment/v1/results.md): Reveals intermediate symbolic node structures during recursive collapse.
-* [Recursive Entropy Tree](../../blueprints/nuclear_containment/v1/results.md): Demonstrates the gradient evolution of symbolic pathways pre-collapse.
+* [Symbolic Bifractal Collapse](../symbolic_bifractal/results/results.md): Reveals intermediate symbolic node structures during recursive collapse.
+* [Recursive Entropy Tree](../recursive_entropy/results/results.md): Demonstrates the gradient evolution of symbolic pathways pre-collapse.
 * [Collapse Dynamics in Entropic Fields](../../../docs/Title-%20Collapse%20Dynamics%20in%20Entropic%20Fields-%20A%20Synthesis%20of%20Classical%20and%20Quantum%20Mechanisms%20under%20the%20Dawn%20Framework.md): Frames collapse as field-tension convergence, allowing for intermediate diagnostics.
 
 ## Interpretation

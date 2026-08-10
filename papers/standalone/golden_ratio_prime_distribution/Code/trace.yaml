@@ -42,8 +42,8 @@ files:
 - local: papers\meta.yaml
   source: dawn-field-theory\foundational\experiments\sec_prime_manifold\papers\meta.yaml
   repo: dawn-field-theory
-- local: papers\golden_arithmetic_preprint.md
-  source: dawn-field-theory\foundational\experiments\sec_prime_manifold\papers\golden_arithmetic_preprint.md
+- local: papers\[sec][P][v0.1][C3][I4][E]_golden_arithmetic_preprint.md
+  source: dawn-field-theory\foundational\experiments\sec_prime_manifold\papers\[sec][P][v0.1][C3][I4][E]_golden_arithmetic_preprint.md
   repo: dawn-field-theory
 - local: results\exp_01_baseline_20251209_201520.json
   source: dawn-field-theory\foundational\experiments\sec_prime_manifold\results\exp_01_baseline_20251209_201520.json

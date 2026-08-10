@@ -107,7 +107,7 @@ This approach led us to hypothesize that the 15.56x amplification might represen
 
 - **PAC Engine Implementation**: `temp/PACEngine/core/conservation_math.py` - Conservation enforcement achieving computational precision (≤10⁻¹⁴ residuals) [[2]](#ref-pac-engine)
 - **GAIA Intelligence Studies**: `dawn-models/research/GAIA/src/gaia.py` - Physics-based AI showing improved stability with integrated PAC mathematics [[3]](#ref-gaia)
-- **Mathematical Framework**: `dawn-field-theory/archive/era1-symbolic/unified_pac_framework_comprehensive.md` - Comprehensive theoretical development with computational validation [[4]](#ref-unified-pac)
+- **Mathematical Framework**: `dawn-field-theory/foundational/arithmetic/unified_pac_framework_comprehensive.md` - Comprehensive theoretical development with computational validation [[4]](#ref-unified-pac)
 
 All theoretical frameworks, computational methods, and experimental protocols are available in our open-source repository. We encourage independent replication, critique, and extension of this work by the broader research community.
 
@@ -709,7 +709,7 @@ Combined: Golden ratio operates at both PAC-SEC boundary AND within SEC
 
 #### 4.4.5 Reproducibility
 
-- **Code**: `papers/standalone/golden_ratio_prime_distribution/Code/`
+- **Code**: `foundational/experiments/sec_prime_manifold/`
 - **Key Script**: `scripts/exp_05_fibonacci_resonance.py`
 - **Traces**: `results/exp_05_fibonacci_*.json`
 - **Date**: December 9, 2025
@@ -1276,10 +1276,10 @@ at λ* = 0.9816    from Fibonacci    (Montgomery-Odlyzko)
 
 ### Cross-References
 
-- `papers/standalone/golden_ratio_prime_distribution/Code/` — SEC stress field experiments
-- `archive/era2-prefield/prime_harmonic_manifold/` — Markov eigenvalue experiments  
-- `archive/era2-prefield/pac_confluence_xi/` — Standard Model derivation
-- `experiments/milestones/standard_model_connection/` — Physics mechanism search
+- `foundational/experiments/sec_prime_manifold/` — SEC stress field experiments
+- `foundational/experiments/prime_harmonic_manifold/` — Markov eigenvalue experiments  
+- `foundational/experiments/pac_confluence_xi/` — Standard Model derivation
+- `foundational/experiments/standard_model_connection/` — Physics mechanism search
 - `prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md` — Full synthesis
 
 ---
@@ -1292,13 +1292,13 @@ at λ* = 0.9816    from Fibonacci    (Montgomery-Odlyzko)
 
 <a name="ref-gaia">[3]</a> GAIA Intelligence Architecture with PAC Integration. `dawn-models/research/GAIA/src/gaia.py`. Physics-based AI system achieving 100% test success through integrated PAC mathematics.
 
-<a name="ref-unified-pac">[4]</a> Unified PAC Framework Comprehensive Analysis. `dawn-field-theory/archive/era1-symbolic/unified_pac_framework_comprehensive.md`. Complete theoretical development with computational validation matrix.
+<a name="ref-unified-pac">[4]</a> Unified PAC Framework Comprehensive Analysis. `dawn-field-theory/foundational/arithmetic/unified_pac_framework_comprehensive.md`. Complete theoretical development with computational validation matrix.
 
 <a name="ref-sec">[5]</a> Symbolic Entropy Collapse Experiments. `dawn-field-theory/experiments/symbolic_entropy_collapse/`. Context-dependent actualization pattern validation.
 
-<a name="ref-med">[6]</a> Macro Emergence Dynamics Universal Bounds. `dawn-field-theory/archive/era1-symbolic/macro_emergence_dynamics/`. Universal complexity bounds (depth ≤ 1, nodes ≤ 3) across 1000+ simulations.
+<a name="ref-med">[6]</a> Macro Emergence Dynamics Universal Bounds. `dawn-field-theory/foundational/arithmetic/macro_emergence_dynamics/`. Universal complexity bounds (depth ≤ 1, nodes ≤ 3) across 1000+ simulations.
 
-<a name="ref-balance">[7]</a> Balance Operator Convergence Studies. `dawn-field-theory/archive/era1-symbolic/macro_emergence_dynamics/master_recursive_gravity_experiment.py`. Computational determination of critical balance value Ξ = 1.0571 ± 0.1.
+<a name="ref-balance">[7]</a> Balance Operator Convergence Studies. `dawn-field-theory/foundational/arithmetic/macro_emergence_dynamics/master_recursive_gravity_experiment.py`. Computational determination of critical balance value Ξ = 1.0571 ± 0.1.
 
 ---
 
@@ -1370,7 +1370,7 @@ As of December 2025, PAC/SEC framework has produced **14 confirmed predictions**
 
 3. **Gravitational Wave Connection**: The 0.02 Hz frequency corresponds to the LISA/Chang'e 3/TianGO gravitational wave detection band (0.01-0.05 Hz), where primordial GWs and supermassive BH mergers are expected.
 
-See: [`prime_harmonic_manifold/journals/2025-12-13_predictions_progress_roadmap.md`](../../../archive/era2-prefield/prime_harmonic_manifold/journals/2025-12-13_predictions_progress_roadmap.md)
+See: [`prime_harmonic_manifold/journals/2025-12-13_predictions_progress_roadmap.md`](../../experiments/prime_harmonic_manifold/journals/2025-12-13_predictions_progress_roadmap.md)
 
 ### Appendix C: Implementation Code Traces
 

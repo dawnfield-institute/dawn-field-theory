@@ -43,7 +43,7 @@ not a fixed event. Wheeler’s delayed choice aligns with:
 ## Supporting Dawn Simulations and Theory
 
 * [Bifractal Time Emergence](../../../docs/Bifractal%20Time%20Emergence.md): Recursive causal inversion through symbolic branching.
-* [Recursive Entropy Tree](../../blueprints/nuclear_containment/v1/results.md): Symbolic collapse paths updated dynamically by entropy structure.
+* [Recursive Entropy Tree](../recursive_entropy/results/results.md): Symbolic collapse paths updated dynamically by entropy structure.
 * [Collapse Dynamics in Entropic Fields](../../../docs/Title-%20Collapse%20Dynamics%20in%20Entropic%20Fields-%20A%20Synthesis%20of%20Classical%20and%20Quantum%20Mechanisms%20under%20the%20Dawn%20Framework.md): Collapse surface modulated by field-level recursion, not local events.
 
 ## Interpretation

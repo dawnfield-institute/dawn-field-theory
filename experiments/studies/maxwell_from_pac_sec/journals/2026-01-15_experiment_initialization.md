@@ -321,16 +321,16 @@ Charge quantization is no longer mysterious:
 ## Related Experiments
 
 ### Direct Dependencies
-- [pac_confluence_xi](../../archive/era2/pac_confluence_xi) - sin²θ_W = 3/13
+- [pac_confluence_xi](../../archive/era2-prefield/pac_confluence_xi) - sin²θ_W = 3/13
 - [macro_emergence_dynamics](../../../arithmetic/macro_emergence_dynamics/) - depth≤2, nodes≤3
 - [standard_model_connection](../../standard_model_connection/) - Fibonacci gauge derivation
 - [sec_threshold_detection](../../sec_threshold_detection/) - Ξ = 1+π/55
 
 ### Supporting Evidence  
 - [cellular_automata_pac_attractors](../../cellular_automata_pac_attractors/) - φ at edge-of-chaos
-- [navier-stokes](../../archive/era2/navier-stokes) - SEC wave dynamics
+- [navier-stokes](../../archive/era2-prefield/navier-stokes) - SEC wave dynamics
 - [sec_prime_manifold](../../sec_prime_manifold/) - φ threshold at 0.618432
-- [pre_field_recursion](../../archive/era2/pre_field_recursion) - Möbius topology
+- [pre_field_recursion](../../archive/era2-prefield/pre_field_recursion) - Möbius topology
 
 ### Internal Working Files
 - [internal/maxwell/](../../../../internal/maxwell/) - Original derivation documents

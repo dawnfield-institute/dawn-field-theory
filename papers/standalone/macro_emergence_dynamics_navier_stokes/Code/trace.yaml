@@ -6,9 +6,9 @@ paper: "macro_emergence_dynamics_navier_stokes"
 trace_date: "2025-12-23"
 
 experiments:
-  - file: "papers/standalone/macro_emergence_dynamics_navier_stokes/Code/experiments/exp_01_master_recursive_gravity.py"
+  - file: "experiments/exp_01_master_recursive_gravity.py"
     source_repo: "dawn-field-theory"
-    source_path: "experiments/studies/macro_emergence_dynamics/master_recursive_gravity_experiment.py"
+    source_path: "foundational/arithmetic/macro_emergence_dynamics/master_recursive_gravity_experiment.py"
     description: "Master Recursive Gravity Experiment - 2,500+ line comprehensive MED validation framework"
     verified: true
     results:
@@ -18,7 +18,7 @@ experiments:
       - "Bounded node count: <= 3"
       - "Reynolds regimes: laminar, transitional, turbulent all validated"
 
-  - file: "papers/standalone/macro_emergence_dynamics_navier_stokes/Code/experiments/exp_02_live_cimm_experiment.py"
+  - file: "experiments/exp_02_live_cimm_experiment.py"
     source_repo: "dawn-models"
     source_path: "research/tinycimm/TinyCIMM-Navier/experiments/run_live_cimm_experiment.py"
     description: "TinyCIMM-Navier Live CIMM Experiment - progressive fluid dynamics validation"
@@ -26,7 +26,7 @@ experiments:
     note: "Requires TinyCIMM-Navier module and PyTorch"
 
 support_modules:
-  - file: "papers/standalone/macro_emergence_dynamics_navier_stokes/Code/experiments/tinycimm_navier.py"
+  - file: "experiments/tinycimm_navier.py"
     source_repo: "dawn-models"
     source_path: "research/tinycimm/TinyCIMM-Navier/tinycimm_navier.py"
     description: "TinyCIMM-Navier neural architecture for fluid dynamics"

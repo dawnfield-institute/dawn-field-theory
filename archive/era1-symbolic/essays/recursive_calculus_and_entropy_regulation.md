@@ -31,8 +31,8 @@ We present a rigorous computational framework for modeling the symbolic collapse
 
 Symbolic fields — spatial distributions of discrete information elements — are theory to theories of cognition, computation, and geometry. Recent efforts to bridge recursive information theory with fluidic and geometric metaphors have uncovered pathways to simulate symbolic morphogenesis. This paper introduces a symbolic pruning framework governed by recursive calculus operations, entropy regulation, and Landauer-consistent deletion costs. It builds upon and formally cites:
 
-* [*Symbolic Superfluid Collapse Pi* experiment (2025)](../../blueprints/nuclear_containment/v1/results.md)
-* [*Symbolic Fractal Pruning* experiment (2025)](../../blueprints/nuclear_containment/v1/results.md)
+* [*Symbolic Superfluid Collapse Pi* experiment (2025)](../symbolic_superfluid_collapse_pi/results/results.md)
+* [*Symbolic Fractal Pruning* experiment (2025)](../symbolic_fractal_pruning/results/results.md)
 
 Each provides diagnostic tools, metrics, and principles toward an emergent arithmetic geometry.
 
@@ -81,7 +81,7 @@ Described in full detail in the `symbolic_fractal_pruning.py` source, the simula
 * Tracks entropy, active symbols, symbol persistence
 * Visualizes field state over 20 recursions
 
-See [RESULTS.md (Pruning Summary)](../../blueprints/nuclear_containment/v1/results.md) for full outputs and visualizations, including:
+See [RESULTS.md (Pruning Summary)](../symbolic_fractal_pruning/results/results.md) for full outputs and visualizations, including:
 
 ![Entropy Over Time](../symbolic_fractal_pruning/reference_material/pruning_20250622_163425/entropy_over_time.png)
 
@@ -139,8 +139,8 @@ We propose recursive calculus + entropy as a new language of symbolic geometry. 
 ## References
 
 * Landauer, R. (1961). Irreversibility and Heat Generation in the Computing Process.
-* [Dawn Field Theory Repo – Superfluid Collapse](../../blueprints/nuclear_containment/v1/results.md)
-* [Dawn Field Theory Repo – Fractal Pruning](../../blueprints/nuclear_containment/v1/results.md)
+* [Dawn Field Theory Repo – Superfluid Collapse](../symbolic_superfluid_collapse_pi/results/results.md)
+* [Dawn Field Theory Repo – Fractal Pruning](../symbolic_fractal_pruning/results/results.md)
 
 ## Appendix
 

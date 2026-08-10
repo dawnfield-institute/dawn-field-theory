@@ -489,7 +489,7 @@ Not all results survived scrutiny. The following corrections are part of the evi
 - **Block I (cross-validation)**: Phase-thermo-geometry triangle (exp_28, 4/4 PASS). Spearman r=0.964–0.976. 1/(φ√5) convergent constant (theorem). Independent fibbinoci_thermo data confirms mechanism
 - **Honest falsifications**: exp_19 (Fibonacci-specificity), exp_20 (raw fractal pressure), exp_16 (null space prediction), exp_24 (PAC-Lazy bootstrap CI includes zero)
 - **Key resolution**: PAC-Lazy architecture (from GAIA POCs) transfers to formula space — conservation normalization required, raw counting biased
-- Full details: `experiments/milestones/milestone1/FALSIFICATION_REGISTRY.md`
+- Full details: `foundational/experiments/milestone3/FALSIFICATION_REGISTRY.md`
 
 **Total Evidence Files**:
 - JSON result files: 200+
@@ -658,7 +658,7 @@ The `arithmetic/euclidean_distance_validation/` experiments provide **geometric 
 
 ## Hypotheses Under Investigation
 
-Speculative extensions grounded in established results but not yet at publication standard. Each is tracked with defined validation criteria and contribution status in [PRELIMINARY_RESULTS.md](series/PACSeries/PRELIMINARY_RESULTS.md) — the canonical source for all hypothesis tracking.
+Speculative extensions grounded in established results but not yet at publication standard. Each is tracked with defined validation criteria and contribution status in [PRELIMINARY_RESULTS.md](PACSeries/PRELIMINARY_RESULTS.md) — the canonical source for all hypothesis tracking.
 
 ---
 
@@ -731,7 +731,7 @@ The theory would be **falsified** if:
 
 ```
 dawn-field-theory/
-├── theory/
+├── foundational/
 │   ├── arithmetic/
 │   │   ├── euclidean_distance_validation/     # E=mc² validation
 │   │   └── PACEngine/                          # Core engine
@@ -777,7 +777,7 @@ dawn-models/
 
 **"How does this connect to physics?"**
 → Read: `PACSeries/pac_confluence_xi/paper.md` (SM parameters)
-→ Read: `experiments/studies/standard_model_connection/README.md` (full chain)
+→ Read: `experiments/standard_model_connection/README.md` (full chain)
 → Read: `arithmetic/euclidean_distance_validation/README.md` (E=mc²)
 
 **"Is this validated on real systems?"**
@@ -787,7 +787,7 @@ dawn-models/
 
 **"What's the complete derivation?"**
 → Read: This file (UNIFIED_EVIDENCE.md)
-→ Read: `experiments/studies/standard_model_connection/README.md`
+→ Read: `experiments/standard_model_connection/README.md`
 → Follow the chain: π → Möbius → zeros → primes → SEC → φ → PAC → SM
 
 **"How is this falsifiable?"**

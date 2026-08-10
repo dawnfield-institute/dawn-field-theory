@@ -87,7 +87,7 @@ The number 13 appears throughout:
 
 | Experiment | Key Finding | Maxwell Connection |
 |------------|-------------|-------------------|
-| [pac_confluence_xi](../archive/era2/pac_confluence_xi) | sin²θ_W = F₄/F₇ | EM coupling from Fibonacci |
+| [pac_confluence_xi](../archive/era2-prefield/pac_confluence_xi) | sin²θ_W = F₄/F₇ | EM coupling from Fibonacci |
 | [standard_model_connection](../standard_model_connection/) | Depth 7 uniqueness | Why EM at this recursion level |
 | [macro_emergence_dynamics](../../arithmetic/macro_emergence_dynamics/) | depth≤2, nodes≤3 | Curl emergence, 3D space |
 | [sec_threshold_detection](../sec_threshold_detection/) | Ξ = 1+π/55 | Balance operator in SEC |
@@ -182,18 +182,18 @@ Error: 0.0006%
 ### Direct Dependencies
 | Experiment | Connection |
 |------------|------------|
-| [pac_confluence_xi](../archive/era2/pac_confluence_xi) | sin²θ_W = 3/13 |
+| [pac_confluence_xi](../archive/era2-prefield/pac_confluence_xi) | sin²θ_W = 3/13 |
 | [macro_emergence_dynamics](../../arithmetic/macro_emergence_dynamics/) | depth≤2, nodes≤3 |
 | [standard_model_connection](../standard_model_connection/) | F₇ gauge derivation |
 | [sec_threshold_detection](../sec_threshold_detection/) | Ξ = 1+π/55 |
-| [navier-stokes](../archive/era2/navier-stokes) | SEC wave dynamics |
+| [navier-stokes](../archive/era2-prefield/navier-stokes) | SEC wave dynamics |
 
 ### Supporting Evidence
 | Experiment | Connection |
 |------------|------------|
 | [cellular_automata_pac_attractors](../cellular_automata_pac_attractors/) | φ at edge-of-chaos |
 | [sec_prime_manifold](../sec_prime_manifold/) | φ threshold |
-| [pre_field_recursion](../archive/era2/pre_field_recursion) | Möbius topology |
+| [pre_field_recursion](../archive/era2-prefield/pre_field_recursion) | Möbius topology |
 | [oscillation_attractor_dynamics](../oscillation_attractor_dynamics/) | Prime injection |
 
 ---

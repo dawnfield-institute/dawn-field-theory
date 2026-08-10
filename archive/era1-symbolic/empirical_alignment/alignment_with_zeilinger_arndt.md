@@ -39,9 +39,9 @@ and symbolic pressure. Decoherence suppression maps to:
 
 ## Supporting Dawn Simulations
 
-* [Symbolic Bifractal Collapse](../../blueprints/nuclear_containment/v1/results.md): Symbolic pathways persist and bifurcate under entropic modulation.
-* [Recursive Entropy Tree](../../blueprints/nuclear_containment/v1/results.md): Collapse progression governed by symbolic entropy decay and balance.
-* [Symbolic Superfluid Collapse PI](../../blueprints/nuclear_containment/v1/results.md): Symbolic particles maintain coherence until field pressure thresholds are met.
+* [Symbolic Bifractal Collapse](../symbolic_bifractal/results/results.md): Symbolic pathways persist and bifurcate under entropic modulation.
+* [Recursive Entropy Tree](../recursive_entropy/results/results.md): Collapse progression governed by symbolic entropy decay and balance.
+* [Symbolic Superfluid Collapse PI](../symbolic_superfluid_collapse_pi/results/results.md): Symbolic particles maintain coherence until field pressure thresholds are met.
 
 ## Interpretation
 

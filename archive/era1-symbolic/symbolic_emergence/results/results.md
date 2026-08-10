@@ -4,7 +4,7 @@ CIP-METADATA:
   author: Peter Lorne Groom
   date: 2025-06-30
   version: 1.0
-  location: archive/blueprints/nuclear_containment/v1/results.md
+  location: results.md
   description: |
     This experiment explores the emergence of language-like structure, roles, and symbolic attractors between two simple agents exchanging phrases in a field-based, recursive, entropy-regulated feedback loop. The goal is to observe post-symbolic language formation as a function of recursive feedback and field tension, without any hardcoded syntax, rules, or language model weights.
 ---

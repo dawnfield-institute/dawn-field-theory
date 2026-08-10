@@ -2,9 +2,9 @@
 
 ## What This Is
 
-The core physics repository for Dawn Field Institute. Contains the theoretical framework, 73 experiment directories (752 numbered experiments) across 15 milestones, and published papers for Dawn Field Theory (DFT) — a framework that derives physical constants and dynamics from two information-theoretic axioms: PAC (Potential-Actualization Conservation) and SEC (Symbolic Entropy Collapse).
+The core physics repository for Dawn Field Institute. Contains the theoretical framework, 75 experiments (724 numbered scripts) across 15 milestones, and published papers for Dawn Field Theory (DFT) — a framework that derives physical constants and dynamics from two information-theoretic axioms: PAC (Potential-Actualization Conservation) and SEC (Symbolic Entropy Collapse).
 
-This is the **primary source of truth** for the physics. The Kronos vault's 56 physics FDOs reference experiments and documents in this repo.
+This is the **primary source of truth** for the physics. Lore's physics FDOs reference experiments and documents here via `source_paths`. **kronos is frozen — never write through it.**
 
 ## Architecture
 
@@ -75,7 +75,7 @@ Every experiment under `experiments/{milestones,sidecars,studies}/` must have:
 
 `experiments/spikes/` is exempt by definition.
 
-See `STANDARDS.md` at workspace root for full spec.
+See [`STANDARDS.md`](STANDARDS.md) in this repository for the full spec.
 
 ### Script Naming
 - `exp_01_baseline.py`, `exp_02_scaling.py`, etc.
@@ -137,6 +137,6 @@ open on the field-equation hunt with a standing kill-sentence. Sidecars: **Miles
 
 - Edit `map.yaml` manually (it's generated, ~104KB)
 - Modify `CITATION.cff` without DOI verification
-- Create experiments outside `experiments/milestones/`
+- Create experiments outside `experiments/{milestones,sidecars,studies}/`
 - Create new root-level .md files (use `.changelog/` entries instead)
-- Remove or rename experiment directories without updating Kronos FDO `source_paths`
+- Remove or rename experiment directories without updating the corresponding Lore FDO `source_paths` (and typed-node `slots.sources`) in the same change

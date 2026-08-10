@@ -1,4 +1,4 @@
-# Orrery epistemic audit — dawn-field-theory/experiments/milestones
+# Orrery epistemic audit — dawn-field-theory/foundational/experiments
 
 _A mechanical audit of the claim graph. Two axes, never merged: **status** is the authored verdict (human-owned); **instrumentation** is how legibly the corpus evidences it (measured). Every figure derives from the corpus and regenerates with `orrery report`._
 

@@ -4,7 +4,7 @@ CIP-METADATA:
   author: Peter Lorne Groom
   date: 2025-06-30
   version: 1.0
-  location: archive/blueprints/nuclear_containment/v1/results.md
+  location: results.md
   description: |
     This experiment investigates whether recursive calculus operations (Laplacian, gradient) can prune a complex symbolic field seeded with fractured, non-uniform geometry. The aim is to explore the symbolic analogs of field collapse, entropy regulation, and symbolic morphogenesis — inspired by principles of recursion, balance, and information dynamics.
 ---

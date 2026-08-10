@@ -40,12 +40,12 @@
 ## Visual Overview
 
 **Figure 1: Symbolic Entropy Dynamics from Superfluid Pi Experiments**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/symbolic_entropy.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/symbolic_entropy.png)
 
 *Figure 1: Symbolic entropy evolution patterns from Ï€-harmonic superfluid collapse experiments (June 22, 2025), demonstrating the characteristic collapse-stabilization cycles that define SEC behavior.*
 
 **Figure 2: Entropy Change Rate Analysis**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/entropy_change.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/symbolic_superfluid_collapse_pi/reference_material/20250622_160535_batch/entropy_change.png)
 
 *Figure 2: Rate of entropy change during symbolic collapse events, showing the rapid descent followed by plateau formation that indicates successful symbolic attractor stabilization.*
 
@@ -197,7 +197,7 @@ Several claims from the original September 2025 version of this paper have been 
 ### 4.1 Quantum Decoherence Reproduction
 
 **Figure 3: Quantum Decoherence vs Symbolic Entropy Collapse**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/experiments/studies/phi_artifact_test/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
 
 *Figure 3: Experimental validation of symbolic entropy collapse correspondence with quantum decoherence (July 16, 2025). The entropy trace shows remarkable correspondence with theoretical quantum decoherence curves, achieving correlation >0.95.*
 
@@ -220,12 +220,12 @@ Our most striking empirical result is the precise reproduction of quantum decohe
 ### 4.2 Born Rule Validation
 
 **Figure: Born Rule Entropy Correspondence (p=0.7)**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.7.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.7.png)
 
 *Figure 4: Born rule statistical validation for p=0.7 parameter (July 15, 2025), showing entropy evolution over trials that matches quantum mechanical probability distributions.*
 
 **Figure: Born Rule Entropy Correspondence (p=0.8)**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.8.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/born_rule/reference_material/20250715_113116/entropy_over_trials_0.8.png)
 
 *Figure 5: Born rule validation for p=0.8 parameter, demonstrating SEC's ability to reproduce quantum probability distributions across different parameter regimes.*
 
@@ -248,12 +248,12 @@ These computational correspondences suggest that SEC mechanisms might account fo
 ### 4.3 Thermodynamic Validation
 
 **Figure: Landauer Energy vs Entropy Correlation**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/experiments/milestones/milestone2/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
 
 *Figure 6: Landauer principle validation (July 16, 2025) showing the fundamental relationship between information erasure energy and entropy change in our symbolic systems, confirming thermodynamic consistency.*
 
 **Figure: Entropy Injection Trace**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/experiments/milestones/milestone2/reference_material/landauer_20250716_123034/entropy_injection_trace.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/entropy_injection_trace.png)
 
 *Figure 7: Entropy injection trace during symbolic erasure operations, demonstrating the thermodynamic cost of information processing consistent with Landauer's principle.*
 
@@ -293,7 +293,7 @@ These phenomena suggest that SEC may provide a framework for understanding quant
 
 ### 5.1 Dual-Mode Collapse Invariance
 
-SEC fields were tested in both "classical" (deterministic threshold) and "emergent" (probabilistic with thermal fluctuations) collapse modes. Both modes converge to statistically identical attractor distributions (similarity > 0.95), suggesting SEC attractors are genuine informational invariants independent of specific collapse mechanisms. Full implementation details are available in the repository (`archive/era1-symbolic/symbolic_entropy_collapse/`).
+SEC fields were tested in both "classical" (deterministic threshold) and "emergent" (probabilistic with thermal fluctuations) collapse modes. Both modes converge to statistically identical attractor distributions (similarity > 0.95), suggesting SEC attractors are genuine informational invariants independent of specific collapse mechanisms. Full implementation details are available in the repository (`foundational/experiments/symbolic_entropy_collapse/`).
 
 ### 5.2 Curvature and Entropy Relationships
 
@@ -319,9 +319,9 @@ Our computational studies suggest promising correlations between SEC entropy pat
 
 **Code and Data References:**
 - **Primary Analysis Script**:
-- **Evolutionary Tree Data**: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/
-- **Statistical Results**: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/output/sweep_20250718_111841/
-- **Entropy Wave Analysis**: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_emergence/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png
+- **Evolutionary Tree Data**: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/biology_experiments/evolution-symbolic-collapse/
+- **Statistical Results**: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/
+- **Entropy Wave Analysis**: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png
 
 **Methodology**:
 - Extract branching patterns from phylogenetic trees using `phylo_pattern_extractor.py
@@ -593,9 +593,9 @@ cd dawn-field-theory
 ```
 
 **2. Key Entry Points**
-- **Core SEC Implementation**: `/archive/era1-symbolic/symbolic_entropy_collapse/`
-- **Quantum Validation Suite**: `/experiments/milestones/quantum_validation_suite.py
-- **Biological Correlation Analysis**: `/experiments/milestones/biological_correlation_analysis.py
+- **Core SEC Implementation**: `/foundational/experiments/symbolic_entropy_collapse/`
+- **Quantum Validation Suite**: `/foundational/experiments/quantum_validation_suite.py
+- **Biological Correlation Analysis**: `/foundational/experiments/biological_correlation_analysis.py
 - **SCBF Interpretability Framework**: `/models/scbf/symbolic_entropy_engine.py
 - **TinyCIMM Mathematical Reasoning**: `/models/TinyCIMM/TinyCIMM-Euler/`
 
@@ -615,8 +615,8 @@ print(f"Found {len(attractors)} stable attractors")
 ```
 
 **4. Validation Protocols**
-- Start with `/archive/era1-symbolic/quantum_validation/born_rule/` for quantum correspondence
-- Try `/theory/biology_experiments/evolution-symbolic-collapse/` for biological patterns
+- Start with `/foundational/experiments/quantum_validation/born_rule/` for quantum correspondence
+- Try `/foundational/biology_experiments/evolution-symbolic-collapse/` for biological patterns
 - Explore `/models/scbf/` for cognitive interpretability applications
 
 **5. Contributing Guidelines**
@@ -628,7 +628,7 @@ print(f"Found {len(attractors)} stable attractors")
 **6. Community Resources**
 - **Issues & Discussion**: GitHub repository issues for technical questions
 - **Documentation**: README files in each major directory
-- **Theoretical Background**: Start with this preprint series for theory concepts
+- **Theoretical Background**: Start with this preprint series for foundational concepts
 
 **Common First Projects:**
 1. **Replicate Core Results**: Run quantum validation suite and confirm >0.95 correlation
@@ -719,9 +719,9 @@ The golden ratio partition in SEC mirrors the 4/5 : 1/5 PAC:SEC split:
 ### 10.5 Reproducibility
 
 All experiments traceable via:
-- **Code**: `papers/standalone/golden_ratio_prime_distribution/Code/core/sec_core.py`
-- **Scripts**: `papers/standalone/golden_ratio_prime_distribution/Code/experiments/exp_05_fibonacci_resonance.py`
-- **Traces**: `papers/standalone/golden_ratio_prime_distribution/Figures/exp_05_fibonacci_*.json`
+- **Code**: `foundational/experiments/sec_prime_manifold/core/sec_core.py`
+- **Scripts**: `foundational/experiments/sec_prime_manifold/scripts/exp_05_fibonacci_resonance.py`
+- **Traces**: `foundational/experiments/sec_prime_manifold/results/exp_05_fibonacci_*.json`
 - **Date**: December 9, 2025
 
 ### Appendix F: Hardware Specifications
@@ -754,8 +754,8 @@ All computational results in this preprint were obtained using the hardware conf
 
 **Code Availability**: Complete SEC implementation and validation studies available at:
 - **Primary Repository**: https://github.com/dawnfield-institute/dawn-field-theory
-- **SEC Framework**: `experiments/studies/phi_artifact_test/`
-- **Landauer Validation**: `experiments/milestones/milestone2/`
+- **SEC Framework**: `foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/`
+- **Landauer Validation**: `foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/`
 - **TinyCIMM Integration**: `models/TinyCIMM/TinyCIMM-Euler/experiments/`
 - **SCBF Framework**: `models/scbf/`
 

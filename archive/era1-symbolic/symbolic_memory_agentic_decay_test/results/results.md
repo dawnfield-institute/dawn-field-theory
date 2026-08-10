@@ -4,7 +4,7 @@ CIP-METADATA:
   author: Peter Lorne Groom
   date: 2025-06-30
   version: 1.0
-  location: archive/blueprints/nuclear_containment/v1/results.md
+  location: results.md
   description: |
     This experiment explores the interplay between symbolic memory reinforcement and thermodynamic decay in a spatial field, simulating agentic dynamics. Two reinforcement zones represent “memories” or loci of symbolic attention, while the rest of the field decays over time. An optional control mode allows pure decay comparison.
 ---

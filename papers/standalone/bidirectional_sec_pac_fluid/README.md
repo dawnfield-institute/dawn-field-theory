@@ -22,7 +22,7 @@ bidirectional_sec_pac_fluid/
 ## Experiment References
 
 The experimental code lives in the main experiments folder:
-- `experiments/milestones/pac_dag_fluid/` - PAC-DAG fluid simulations
+- `foundational/experiments/pac_dag_fluid/` - PAC-DAG fluid simulations
 
 ## Reproducibility
 

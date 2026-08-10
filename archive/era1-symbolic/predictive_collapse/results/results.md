@@ -4,7 +4,7 @@ CIP-METADATA:
   author: Peter Lorne Groom
   date: 2025-06-30
   version: 1.0
-  location: archive/blueprints/nuclear_containment/v1/results.md
+  location: results.md
   description: |
     This simulation explores the emergence and propagation of collapse zones within a symbolic-thermodynamic framework. It introduces high-fidelity fields (symbolic potential, entropy, memory, thermodynamics, and causality) evolving under coupled dynamics, forecasting collapse zones over time based on entropy curvature and momentum.
 ---

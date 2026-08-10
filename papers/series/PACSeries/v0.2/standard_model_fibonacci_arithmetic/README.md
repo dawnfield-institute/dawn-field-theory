@@ -29,9 +29,9 @@ This paper demonstrates that a significant subset of Standard Model free paramet
 
 ## Source Experiments
 
-- `experiments/milestones/milestone1/` — 40 scripts (gauge couplings, mass ratios, mixing)
-- `experiments/milestones/milestone2/` — 40 scripts (mass derivations, Casimir, turbulence)
-- `archive/era2-prefield/pac_confluence_xi/` — 45+ scripts (α derivation, Noether, synthesis)
+- `foundational/experiments/milestone1/` — 40 scripts (gauge couplings, mass ratios, mixing)
+- `foundational/experiments/milestone2/` — 40 scripts (mass derivations, Casimir, turbulence)
+- `foundational/experiments/pac_confluence_xi/` — 45+ scripts (α derivation, Noether, synthesis)
 
 ## Dependencies
 
@@ -41,12 +41,12 @@ This paper demonstrates that a significant subset of Standard Model free paramet
 ## Reproduction
 
 ```bash
-cd experiments/milestones/milestone1/validated/
+cd foundational/experiments/milestone1/validated/
 python exp_12_alpha_formula.py
 python exp_18_weinberg_angle.py
 python exp_20_koide_formula.py
 
-cd experiments/milestones/milestone2/mass_derivation/
+cd foundational/experiments/milestone2/mass_derivation/
 python exp_05_tighten_mass.py
 python exp_06_validate_tight.py
 ```

@@ -338,7 +338,7 @@ git log --oneline | grep "PRE-REGISTERED"
 
 ### A.3 Full Code and Data
 
-Available at: `dawn-field-theory/experiments/milestones/milestone1/scripts/`
+Available at: `dawn-field-theory/foundational/experiments/milestone1/scripts/`
 - `exp_39_she_leveque_prediction.py` - Derivation and prediction
 - `exp_40_she_leveque_validation.py` - Validation against data
 

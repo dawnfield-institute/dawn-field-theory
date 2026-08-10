@@ -98,7 +98,7 @@ Infodynamics does not replace quantum field theory or general relativity. It gro
 
 ## 6. Experimental Evidence
 
-The framework is tested across 752 numbered experiments in 73 experiment directories under `experiments/milestones/`. Key experiment families:
+The framework is tested across 724 numbered scripts across 75 experiments under `experiments/milestones/`. Key experiment families:
 
 | Experiment | What It Tests | Result |
 |-----------|---------------|--------|

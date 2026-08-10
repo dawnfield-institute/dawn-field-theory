@@ -52,9 +52,9 @@ and memory encoding within a superfluid-like entropy lattice. In this model:
 
 ## Supporting Dawn Simulations
 
-* [Recursive Gravity & Superfluid Collapse](../../blueprints/nuclear_containment/v1/results.md): Demonstrates macro-order from recursive field feedback, akin to memory-stabilized coherence.
-* [Symbolic Superfluid Collapse PI](../../blueprints/nuclear_containment/v1/results.md): Models symbolic particles crystallizing within attractor-driven entropy flows.
-* [Symbolic Fractal Pruning](../../blueprints/nuclear_containment/v1/results.md): Encodes field selectivity and memory bias in symbolic residues.
+* [Recursive Gravity & Superfluid Collapse](../symbolic_superfluid_collapse_pi/results/results.md): Demonstrates macro-order from recursive field feedback, akin to memory-stabilized coherence.
+* [Symbolic Superfluid Collapse PI](../symbolic_superfluid_collapse_pi/results/results.md): Models symbolic particles crystallizing within attractor-driven entropy flows.
+* [Symbolic Fractal Pruning](../symbolic_fractal_pruning/results/results.md): Encodes field selectivity and memory bias in symbolic residues.
 
 ## Interpretation
 

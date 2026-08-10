@@ -33,7 +33,7 @@ This paper derives the mathematical structure of quantum mechanics — Hilbert s
 
 ## Source Experiments
 
-- `papers/series/PACSeries/v0.3/quantum_mechanics_graph_structure/Data/` — 11 M14 scripts (exp_01–exp_11) + P13–P16 (exp_p13–exp_p16)
+- `foundational/experiments/milestone14/` — 11 M14 scripts (exp_01–exp_11) + P13–P16 (exp_p13–exp_p16)
 
 The packaged scripts in `Code/experiments/` are verbatim copies. They import the shared DFT core chain (`quantum_complement → identity_complement → connection_geometry → quantum_gravity → foundations`, spanning milestones 10–14); see `Code/trace.yaml` for full provenance.
 
@@ -46,7 +46,7 @@ The packaged scripts in `Code/experiments/` are verbatim copies. They import the
 
 ```bash
 # from a checkout of the dawn-field-theory repo, with numpy/scipy/matplotlib installed:
-cd papers/legacy/cognition_index_protocol/v0.3/quantum_mechanics_graph_structure/Code
+cd foundational/docs/preprints/PACSeries/v0.3/quantum_mechanics_graph_structure/Code
 python reproduce.py --list      # list experiments
 python reproduce.py             # run all 15
 python reproduce.py 07          # run exp_07 only  (or: p13, p14, ...)

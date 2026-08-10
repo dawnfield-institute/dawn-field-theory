@@ -51,7 +51,7 @@ My exploration led me to CIP, which addresses these limitations through **measur
 2. **Validation Mechanisms**: Built-in testing systems that verify understanding rather than assuming it, informed by arithmetic identity theory demonstrating computational novelty emergence
 3. **Recursive Improvement**: AI systems iteratively refine comprehension through feedback loops I created, leveraging information amplification principles validated at 46.2x compression ratios with surplus information generation
 4. **Audit Trails**: Complete tracking of comprehension development and validation results
-5. **Universal Applicability**: Domain-agnostic protocols that work across any knowledge type, validated through theory experiments (experiments/studies/euclidean_distance_validation/RESULTS.md)
+5. **Universal Applicability**: Domain-agnostic protocols that work across any knowledge type, validated through foundational experiments (foundational/experiments/information_amplification_proof/RESULTS.md)
 
 I invite you to explore how this framework transforms the relationship between AI systems and knowledge repositories.
 

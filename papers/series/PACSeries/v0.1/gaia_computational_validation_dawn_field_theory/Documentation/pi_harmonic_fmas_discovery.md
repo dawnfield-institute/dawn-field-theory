@@ -130,12 +130,12 @@ But it represents something new: the **fundamental computational frequency** of 
 ## Cross-References
 
 ### Analysis Scripts
-- [`pi_harmonic_fmas_analysis.py`](../../../../../../archive/era2-prefield/pre_field_recursion/scripts/pi_harmonic_fmas_analysis.py) - Complete π-harmonic analysis
-- [`validate_with_real_data.py`](../../../../../../archive/era2-prefield/pre_field_recursion/scripts/validate_with_real_data.py) - Real-world data validation
+- [`pi_harmonic_fmas_analysis.py`](../pi_harmonic_fmas_analysis.py) - Complete π-harmonic analysis
+- [`validate_with_real_data.py`](../validate_with_real_data.py) - Real-world data validation
 
 ### Original Frameworks
-- [`pi_harmonics/`](../../../../../../archive/era1-symbolic/pi_harmonics/) - Original π-harmonic framework
-- [`unified_mas_med_validation.py`](../Code/experiments/unified_mas_med_validation.py) - 100% convergence validation
+- [`pi_harmonics/`](../../pi_harmonics/) - Original π-harmonic framework
+- [`unified_mas_med_validation.py`](../../../../dawn-models/research/GAIA/usecases/unified_mas_med_validation.py) - 100% convergence validation
 
 ### Documentation
 - [`unified_mas_med_validation_final_report.md`](./unified_mas_med_validation_final_report.md) - Computational validation

@@ -4,7 +4,7 @@
 
 Dawn Field Theory (DFT) derives physical constants and dynamics from information-theoretic first principles. The framework rests on two axioms — Potential-Actualization Conservation (PAC) and Symbolic Entropy Collapse (SEC) — from which the Standard Model parameters, coupling constants, and cosmological observables emerge as necessary consequences of recursive conservation under Fibonacci arithmetic.
 
-The theory does not fit parameters to data. It derives them. The fine structure constant to 5.7 ppm. The Weinberg angle as an exact Fibonacci ratio. The Feigenbaum constants to 13 digits. The cosmological constant to 0.09 orders. These results span 752 numbered experiments across 15 milestones, with falsifiable predictions registered for DESI, Euclid, LISA, and the LHC.
+The theory does not fit parameters to data. It derives them. The fine structure constant to 5.7 ppm. The Weinberg angle as an exact Fibonacci ratio. The Feigenbaum constants to 13 digits. The cosmological constant to 0.09 orders. These results span 724 numbered scripts across 15 milestones, with falsifiable predictions registered for DESI, Euclid, LISA, and the LHC.
 
 DFT is an active research program at the Dawn Field Institute. It is not finished. Some results are structural (pass by construction), some predictions have failed (DESI wa), and the framework awaits independent replication and peer review. This document describes what the framework does, what it has produced, and where it stands.
 
@@ -169,7 +169,7 @@ The full argument is in `iddea.md` (workspace root). It derives what was previou
 ```
 dawn-field-theory/
   theory/
-    experiments/        # 73 experiment dirs across 15 milestones
+    experiments/        # 75 experiments across 15 milestones
       milestone1-11/    # Structured experiment directories
       pac_confluence_xi/ # PAC convergence proofs (45+ scripts)
       sec_prime_manifold/ # SEC in number theory

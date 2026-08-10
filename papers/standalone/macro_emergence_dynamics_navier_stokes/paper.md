@@ -63,7 +63,7 @@ macro emergence dynamics; med validation; navier-stokes testbed; bounded symboli
 
 ## 1. Introduction: Navier-Stokes as a MED Development Testbed
 
-We employ the mathematical complexity of Navier-Stokes equations as a rigorous development testbed for Macro Emergence Dynamics (MED) principles, similar to how Hodge theory served as a theory framework for developing Symbolic Entropy Collapse (SEC). This testbed approach allows us to validate bounded complexity principles against one of mathematics' most challenging dynamical systems without claiming to solve the underlying fluid dynamics directly.
+We employ the mathematical complexity of Navier-Stokes equations as a rigorous development testbed for Macro Emergence Dynamics (MED) principles, similar to how Hodge theory served as a foundational framework for developing Symbolic Entropy Collapse (SEC). This testbed approach allows us to validate bounded complexity principles against one of mathematics' most challenging dynamical systems without claiming to solve the underlying fluid dynamics directly.
 
 ### 1.1 MED Development Strategy
 
@@ -370,7 +370,7 @@ This cross-domain coherence suggests the framework might capture fundamental pri
 
 We invite the research community to investigate these promising initial findings:
 - **Independent Replication**: All experimental protocols and implementations are open-source
-- **Theoretical Development**: Mathematical framework requires rigorous theory work
+- **Theoretical Development**: Mathematical framework requires rigorous foundational work
 - **Physical Validation**: Laboratory experiments to test symbolic-physical correspondence
 - **Extension Applications**: Investigation of symbolic approaches to other complex systems
 
@@ -438,7 +438,7 @@ Experimental validation across 1000 test cases demonstrates unprecedented comput
 - Path variance: 0 (perfect reproducibility)
 - Pattern convergence: 100% success rate across all flow conditions
 
-> **Reference**: [Sweep Statistics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era2-prefield/navier-stokes/results/session_20250818_141545_01552189/statistics/sweep_statistics.json)
+> **Reference**: [Sweep Statistics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/statistics/sweep_statistics.json)
 
 ### 4.2 Pattern Structure Analysis
 
@@ -764,19 +764,19 @@ Our preliminary results suggest that symbolic approaches might provide solutions
 
 ## Acknowledgments
 
-This work builds on the theoretical foundations of Dawn Field Theory developed through collaborative research in symbolic entropy collapse, recursive memory systems, and thermodynamic constraint modeling. We acknowledge the contributions of the theory experiments in recursive gravity and entropy dynamics that provided the conceptual framework for this application.
+This work builds on the theoretical foundations of Dawn Field Theory developed through collaborative research in symbolic entropy collapse, recursive memory systems, and thermodynamic constraint modeling. We acknowledge the contributions of the foundational experiments in recursive gravity and entropy dynamics that provided the conceptual framework for this application.
 
 ## References
 
 ### Dawn Field Theory Foundations
 
-1. **Groom, P.** (2025). "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md
+1. **Groom, P.** (2025). "Symbolic Entropy Collapse: Exploring Topological Dynamics, Recursive Harmonics, and Quantum Correspondence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md
 
-2. **Groom, P.** (2025). "Collapse as Crystallization: Infodynamics, Recursive Balance, and the Dawn Field Theory." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BR%5D_dawn_field_theory_infodynamics_preprint.md
+2. **Groom, P.** (2025). "Collapse as Crystallization: Infodynamics, Recursive Balance, and the Dawn Field Theory." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BR%5D_dawn_field_theory_infodynamics_preprint.md
 
-3. **Groom, P.** (2025). "Infodynamics Arithmetic: Formalism for Collapse-Oriented Entropy-Information Dynamics." *Dawn Field Theory Mathematical Foundations*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/infodynamics_arithmetic_v1.md
+3. **Groom, P.** (2025). "Infodynamics Arithmetic: Formalism for Collapse-Oriented Entropy-Information Dynamics." *Dawn Field Theory Mathematical Foundations*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/infodynamics_arithmetic_v1.md
 
-4. **Dawn Field Institute** (2025). "Recursive Mathematical Plasticity and Entropy-Aware Architecture." *Dawn Field Theory Repository*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/papers/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_recursive_mathematical_plasticity_entropy_architecture_preprint.md
+4. **Dawn Field Institute** (2025). "Recursive Mathematical Plasticity and Entropy-Aware Architecture." *Dawn Field Theory Repository*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bm%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI4%5D%5BE%5D_recursive_mathematical_plasticity_entropy_architecture_preprint.md
 
 ### Mathematical Foundations
 
@@ -834,23 +834,23 @@ This work builds on the theoretical foundations of Dawn Field Theory developed t
 
 ### Experimental Validation References
 
-27. **Dawn Field Institute** (2025). "Master Recursive Gravity Experiment: Comprehensive Analysis Results." *Experimental Archive*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/macro_emergence_dynamics/master_recursive_gravity_experiment.py
+27. **Dawn Field Institute** (2025). "Master Recursive Gravity Experiment: Comprehensive Analysis Results." *Experimental Archive*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/macro_emergence_dynamics/master_recursive_gravity_experiment.py
 
-28. **Dawn Field Institute** (2025). "Validated SEC Results: Honest Assessment and Cross-Domain Validation." *Computational Validation*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/macro_emergence_dynamics/computational_validation/validated_results.md
+28. **Dawn Field Institute** (2025). "Validated SEC Results: Honest Assessment and Cross-Domain Validation." *Computational Validation*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/macro_emergence_dynamics/computational_validation/validated_results.md
 
-29. **Dawn Field Institute** (2025). "Universal MED Testing Framework: Statistical Validation Across Parameter Space." *Testing Framework*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/macro_emergence_dynamics/computational_validation/unified_med_testing_framework.py
+29. **Dawn Field Institute** (2025). "Universal MED Testing Framework: Statistical Validation Across Parameter Space." *Testing Framework*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/macro_emergence_dynamics/computational_validation/unified_med_testing_framework.py
 
-30. **Dawn Field Institute** (2025). "Bounded Complexity Regularity Validator: Mathematical Proof Development." *Proof Development*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/formal/conjectures/med-proofs/02_bounded_complexity_regularity.md
+30. **Dawn Field Institute** (2025). "Bounded Complexity Regularity Validator: Mathematical Proof Development." *Proof Development*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/arithmetic/macro_emergence_dynamics/proofs/02_bounded_complexity_regularity.md
 
 ## Appendices
 
 ### Appendix A: Implementation Details
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era2-prefield/navier-stokes/ - Complete implementation available in repository with experimental protocols and validation scripts.
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/ - Complete implementation available in repository with experimental protocols and validation scripts.
 
 ### Appendix B: Statistical Analysis
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era2-prefield/navier-stokes/results/session_20250818_141545_01552189/ - Comprehensive statistical analysis including all performance metrics, distribution analysis, and correlation studies.
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/ - Comprehensive statistical analysis including all performance metrics, distribution analysis, and correlation studies.
 
 ### Appendix C: Reproducibility
 
@@ -872,9 +872,9 @@ Complete hardware specifications and computational environment details are maint
 
 **Code Availability**: Complete MED implementation and Navier-Stokes testbed available at:
 - **Primary Repository**: https://github.com/dawnfield-institute/dawn-field-theory
-- **MED Framework**: `archive/era2-prefield/navier-stokes/`
+- **MED Framework**: `foundational/experiments/navier-stokes/`
 - **TinyCIMM-Navier Implementation**: `models/TinyCIMM/TinyCIMM-Navier/`
-- **Experimental Results**: `archive/era2-prefield/navier-stokes/results/session_20250818_141545_01552189/`
+- **Experimental Results**: `foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/`
 
 **Experimental Protocols**: All experiments include configuration files, random seeds, complete parameter specifications, and comprehensive statistical analysis for reproducible results with semantic hash validation.
 

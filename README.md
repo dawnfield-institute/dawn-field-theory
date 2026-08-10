@@ -38,8 +38,10 @@ computational: derivations, falsification tests, and an honest record of what fa
 | **SEC** — Symbolic Entropy Collapse | ∂S/∂t = α∇I − β∇H | Structure forms where information gradients dominate entropy gradients. |
 
 Two further pillars — **RBF** (geometry, far-from-equilibrium regulation) and **MED**
-(optimization, bounded complexity) — were later shown *not* to be independent axioms:
-Milestone 10 derives all of them from a single operation, self-applied symmetry.
+(optimization, bounded complexity) complete the framework. Milestone 10 showed that PAC,
+SEC and MED are *not* independent axioms: all three fall out of one operation, self-applied
+symmetry. RBF was not part of that derivation; its only milestone test is M7 exp_08, at
+2/4 with two documented failures.
 
 ```
 PAC → φ cascade → ln(φ) per level → Ξ = γ + ln(φ)
@@ -58,8 +60,8 @@ Selected results. The full set, with scores and honest failures, is in
 | sin²θ_W = tan(θ_C) = 3/13 | 0.19% | M1, M5 |
 | Higgs mass, λ = φ/4π | 83 ppm | M5 |
 | μ/e and p/e mass ratios | 5 ppm · 0.0083% | M2 |
-| Feigenbaum constants from closed form | 13 digits | M1 |
-| S8 tension | 3.22σ → 0.07σ | M9 |
+| Feigenbaum constants from closed form | 13 digits | `sec_threshold_detection` |
+| S8 tension | 3.22σ → 0.09σ (blind) | M9 |
 | Planck scale from cascade depth-183 | zero free parameters | M11 |
 
 And three results that are **proven** rather than measured:

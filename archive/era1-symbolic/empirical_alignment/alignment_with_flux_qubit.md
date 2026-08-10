@@ -50,9 +50,9 @@ feedback balance, and recursive stability. Flux qubits demonstrate:
 
 ## Supporting Dawn Simulations
 
-* [Symbolic Superfluid Collapse PI](../../blueprints/nuclear_containment/v1/results.md): Symbolic persistence and bifurcation under field coherence.
-* [Recursive Gravity / Superfluid Collapse](../../blueprints/nuclear_containment/v1/results.md): Structure emergence across spatial scales from feedback recursion.
-* [Symbolic Fractal Pruning](../../blueprints/nuclear_containment/v1/results.md): Collapse initiation governed by entropy geometry, not size.
+* [Symbolic Superfluid Collapse PI](../symbolic_superfluid_collapse_pi/results/results.md): Symbolic persistence and bifurcation under field coherence.
+* [Recursive Gravity / Superfluid Collapse](../symbolic_superfluid_collapse_pi/results/results.md): Structure emergence across spatial scales from feedback recursion.
+* [Symbolic Fractal Pruning](../symbolic_fractal_pruning/results/results.md): Collapse initiation governed by entropy geometry, not size.
 
 ## Interpretation
 

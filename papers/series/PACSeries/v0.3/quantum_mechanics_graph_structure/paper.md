@@ -401,7 +401,7 @@ The orbit Hilbert space resolves the PSD degeneracy of M13, provides a natural B
 
 The single remaining gap — positional quantum mechanics (spatial wavefunctions, double-slit fringes) — points toward the continuum limit of ADE chains as the natural next step (M15: Dynamics as Orbit Flow, fully delivered through P13–P16 for the algebraic sector).
 
-**Source code**: `papers/series/PACSeries/v0.3/quantum_mechanics_graph_structure/Data/` (11 experiments + P13–P16 scripts)
+**Source code**: `foundational/experiments/milestone14/` (11 experiments + P13–P16 scripts)
 
 ---
 

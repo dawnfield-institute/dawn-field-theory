@@ -18,7 +18,7 @@ This package ships inside the dawn-field-theory repository. The experiment
 scripts import the shared DFT core chain
     identity_complement -> connection_geometry -> quantum_gravity -> foundations
 (milestones 13 -> 12 -> 11 -> 10). reproduce.py locates
-experiments/milestones automatically and places milestone12/core and
+foundational/experiments automatically and places milestone12/core and
 milestone13/core on PYTHONPATH; the core modules resolve the rest of the chain
 themselves (each core adds its parent milestone's core), so the verbatim
 scripts run unmodified.
@@ -85,7 +85,7 @@ EXPERIMENTS = {
 def find_experiments_root(start: Path):
     marker = SOURCE_MILESTONES[0]
     for anc in start.resolve().parents:
-        cand = anc / "theory" / "experiments"
+        cand = anc / "foundational" / "experiments"
         if (cand / marker / "core").is_dir():
             return cand
     return None
@@ -103,7 +103,7 @@ def main():
 
     exproot = find_experiments_root(here)
     if exproot is None:
-        print("ERROR: could not locate experiments/milestones/"
+        print("ERROR: could not locate foundational/experiments/"
               f"{SOURCE_MILESTONES[0]}/core.\n"
               "This package must be run from inside the dawn-field-theory repo.")
         sys.exit(1)

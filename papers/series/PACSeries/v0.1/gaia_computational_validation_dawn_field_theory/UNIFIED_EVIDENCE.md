@@ -229,7 +229,7 @@ The theory would be **falsified** if:
 
 ```
 dawn-field-theory/
-├── theory/
+├── foundational/
 │   ├── arithmetic/
 │   │   ├── euclidean_distance_validation/     # E=mc² validation
 │   │   └── PACEngine/                          # Core engine
@@ -275,7 +275,7 @@ dawn-models/
 
 **"How does this connect to physics?"**
 → Read: `PACSeries/pac_confluence_xi/paper.md` (SM parameters)
-→ Read: `experiments/studies/standard_model_connection/README.md` (full chain)
+→ Read: `experiments/standard_model_connection/README.md` (full chain)
 → Read: `arithmetic/euclidean_distance_validation/README.md` (E=mc²)
 
 **"Is this validated on real systems?"**
@@ -285,7 +285,7 @@ dawn-models/
 
 **"What's the complete derivation?"**
 → Read: This file (UNIFIED_EVIDENCE.md)
-→ Read: `experiments/studies/standard_model_connection/README.md`
+→ Read: `experiments/standard_model_connection/README.md`
 → Follow the chain: π → Möbius → zeros → primes → SEC → φ → PAC → SM
 
 **"How is this falsifiable?"**

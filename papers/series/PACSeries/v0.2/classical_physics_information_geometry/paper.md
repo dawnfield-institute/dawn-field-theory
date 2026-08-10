@@ -91,7 +91,7 @@ Here we present five independent arguments, each arriving at $D = 3$ from differ
 
 ### §3.2 Path 1: MED Node Bound
 
-The MED (Macro Emergence Dynamics) constraint, discovered empirically in Navier-Stokes simulations (see §6 and the theory experiments repository), states that all complex flows converge to symbolic patterns with:
+The MED (Macro Emergence Dynamics) constraint, discovered empirically in Navier-Stokes simulations (see §6 and the foundational experiments repository), states that all complex flows converge to symbolic patterns with:
 
 $$\text{depth}(\sigma) \leq 2, \quad \text{nodes}(\sigma) \leq 3$$
 

@@ -466,7 +466,7 @@ SEC dynamics on Möbius manifold with RBF self-regulation (10,000 steps, seed 42
 
 Config: N_modes = 32, dt = 0.01, P_mean = 0.1, rho = 5.0, symmetric collapse modulation, low-k anti mode mixing at φ⁻².
 
-Reproduction: `python papers/series/PACSeries/v0.2/balance_constant_decomposition/Code/experiments/exp_15_mobius_field_dynamics.py` (requires reality-engine on PYTHONPATH).
+Reproduction: `python experiments/exp_15_mobius_field_dynamics.py` (requires reality-engine on PYTHONPATH).
 
 ---
 

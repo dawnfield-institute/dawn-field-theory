@@ -3,69 +3,69 @@ created: '2026-02-10'
 description: Traces code and data files back to their original repository locations
 source_repository: dawn-field-theory
 paper: classical_physics_information_geometry
-paper_type: theory  # PACSeries Paper 5 — classical physics from SEC/MED/PAC
+paper_type: foundational  # PACSeries Paper 5 — classical physics from SEC/MED/PAC
 
 experiments:
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_01_sec_wave_speed.py
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/scripts/exp_01_sec_wave_speed.py
+  - local: experiments/exp_01_sec_wave_speed.py
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/scripts/exp_01_sec_wave_speed.py
     repo: dawn-field-theory
     description: "SEC wave equation → speed of light derivation"
     key_result: "∂²S/∂t² = (αγ+βδ)∇²S with PAC-constrained coefficients gives c exactly"
     paper_sections: [2]
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_02_three_dimensions.py
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/scripts/exp_05_3d_necessity.py
+  - local: experiments/exp_02_three_dimensions.py
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/scripts/exp_05_3d_necessity.py
     repo: dawn-field-theory
     description: "Five independent paths to D=3 spatial dimensions"
     key_result: "MED nodes≤3, curl algebra, Möbius embedding, orbital stability, quaternion uniqueness all require D=3"
     paper_sections: [3]
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_03_curl_projection.py
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/scripts/exp_03_curl_projection.py
+  - local: experiments/exp_03_curl_projection.py
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/scripts/exp_03_curl_projection.py
     repo: dawn-field-theory
     description: "Curl (∇×) emerges from depth-2 MED projection"
     key_result: "Hidden symbolic dimension projects out → gradients become curls; Faraday induction to 10⁻¹⁶"
     paper_sections: [4]
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_04_charge_quantization.py
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/scripts/exp_02_charge_quantization.py
+  - local: experiments/exp_04_charge_quantization.py
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/scripts/exp_02_charge_quantization.py
     repo: dawn-field-theory
     description: "Charge as topological winding number quantization"
     key_result: "q = n·e with n ∈ Z; fractional quark charges from MED node constraint ≤ 3"
     paper_sections: [5]
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_05_sec_navier_stokes.py
-    source: dawn-field-theory/experiments/milestones/gravity_from_maxwell_pac/scripts/exp_01_sec_wave_unification.py
+  - local: experiments/exp_05_sec_navier_stokes.py
+    source: dawn-field-theory/foundational/experiments/gravity_from_maxwell_pac/scripts/exp_01_sec_wave_unification.py
     repo: dawn-field-theory
     description: "SEC–Navier–Stokes structural equivalence"
     key_result: "SEC maps term-by-term onto incompressible NS; MED bounds may constrain regularity"
     paper_sections: [6]
-    cross_validation: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/scripts/exp_04_fibonacci_alpha.py
+    cross_validation: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/scripts/exp_04_fibonacci_alpha.py
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_06_casimir_mersenne.py
-    source: dawn-field-theory/experiments/milestones/gravity_from_maxwell_pac/scripts/exp_02_projection_duality.py
+  - local: experiments/exp_06_casimir_mersenne.py
+    source: dawn-field-theory/foundational/experiments/gravity_from_maxwell_pac/scripts/exp_02_projection_duality.py
     repo: dawn-field-theory
     description: "Casimir 240 = F₃·F₄·F₅·F₆ and Mersenne dimension correspondence"
     key_result: "240 = 2×3×5×8; d=1,3,7 match Mersenne primes M₂,M₃,M₇ via F_{d+1}"
     paper_sections: [7]
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_07_gravity_extension.py
-    source: dawn-field-theory/experiments/milestones/gravity_from_maxwell_pac/scripts/exp_03_f183_hierarchy.py
+  - local: experiments/exp_07_gravity_extension.py
+    source: dawn-field-theory/foundational/experiments/gravity_from_maxwell_pac/scripts/exp_03_f183_hierarchy.py
     repo: dawn-field-theory
     description: "Speculative gravity from symmetric projection at depth 183"
     key_result: "Antisymmetric→curl (EM), symmetric→divergence (gravity); depth 183 = F₇²+F₇+1"
     paper_sections: [8]
-    cross_validation: dawn-field-theory/experiments/milestones/gravity_from_maxwell_pac/scripts/exp_06_gw_speed.py
+    cross_validation: dawn-field-theory/foundational/experiments/gravity_from_maxwell_pac/scripts/exp_06_gw_speed.py
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_08_xi_derivation.py
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/scripts/exp_04_fibonacci_alpha.py
+  - local: experiments/exp_08_xi_derivation.py
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/scripts/exp_04_fibonacci_alpha.py
     repo: dawn-field-theory
     description: "Ξ = 1 + π/55 derivation from SEC collapse rates"
     key_result: "Ξ = 1 + π/F₁₀ ≈ 1.05712; emerges from competing SEC collapse timescales"
     paper_sections: [9]
 
-  - local: papers/series/PACSeries/v0.2/classical_physics_information_geometry/Code/experiments/exp_09_falsification.py
-    source: dawn-field-theory/experiments/milestones/gravity_from_maxwell_pac/scripts/exp_08_falsification.py
+  - local: experiments/exp_09_falsification.py
+    source: dawn-field-theory/foundational/experiments/gravity_from_maxwell_pac/scripts/exp_08_falsification.py
     repo: dawn-field-theory
     description: "Explicit falsification conditions for classical-from-information hypothesis"
     key_result: "Six testable conditions that would refute the framework"
@@ -73,27 +73,27 @@ experiments:
 
 data:
   - local: ../Data/results/exp_01_sec_wave_speed.json
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/results/exp_01_sec_wave_speed_20260115_100600.json
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/results/exp_01_sec_wave_speed_20260115_100600.json
     description: "SEC wave speed derivation — c emerges from symmetric PAC coefficients"
 
   - local: ../Data/results/exp_02_three_dimensions.json
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/results/exp_05_3d_necessity_20260115_101254.json
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/results/exp_05_3d_necessity_20260115_101254.json
     description: "Five independent paths to D=3"
 
   - local: ../Data/results/exp_03_curl_projection.json
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/results/exp_03_curl_projection_20260115_100836.json
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/results/exp_03_curl_projection_20260115_100836.json
     description: "Curl from depth-2 projection — Faraday induction precision"
 
   - local: ../Data/results/exp_04_charge_quantization.json
-    source: dawn-field-theory/experiments/milestones/maxwell_from_pac_sec/results/exp_02_charge_quantization_20260115_100721.json
+    source: dawn-field-theory/foundational/experiments/maxwell_from_pac_sec/results/exp_02_charge_quantization_20260115_100721.json
     description: "Charge winding number quantization"
 
   - local: ../Data/results/exp_05_sec_navier_stokes.json
-    source: dawn-field-theory/experiments/milestones/gravity_from_maxwell_pac/results/exp_01_sec_wave_20260119_145404.json
+    source: dawn-field-theory/foundational/experiments/gravity_from_maxwell_pac/results/exp_01_sec_wave_20260119_145404.json
     description: "SEC–NS structural equivalence mapping"
 
   - local: ../Data/results/exp_07_gravity_extension.json
-    source: dawn-field-theory/experiments/milestones/gravity_from_maxwell_pac/results/exp_03_f183_20260119_145418.json
+    source: dawn-field-theory/foundational/experiments/gravity_from_maxwell_pac/results/exp_03_f183_20260119_145418.json
     description: "Gravity hierarchy at depth 183"
 
 figures:

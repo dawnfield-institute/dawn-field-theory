@@ -14,7 +14,7 @@ Dawn Field Theory explores whether information and entropy are generative founda
 - **SEC** (Symbolic Entropy Collapse): ∂S/∂t = α∇I - β∇H
 - **MED** (Macro Emergence Dynamics): depth ≤ 2, nodes ≤ 3
 
-The PACSeries is the primary publication vehicle. The existing standalone preprints (golden_ratio_prime_distribution, cellular_automata_xi_clustering, etc.) remain as supporting publications and will be updated to reference the PACSeries for theory derivations.
+The PACSeries is the primary publication vehicle. The existing standalone preprints (golden_ratio_prime_distribution, cellular_automata_xi_clustering, etc.) remain as supporting publications and will be updated to reference the PACSeries for foundational derivations.
 
 ### Why consolidate into PACSeries
 
@@ -102,7 +102,7 @@ Renumbered by logical dependency, not historical order.
 **Speculative (labeled as such):**
 - Gauge coupling constants may encode accumulated ξ from topologically distinct interactions
 - ξ(SU(3)) > ξ(SU(2)) > ξ(U(1)) prediction (falsifiable, not yet computed)
-- ~~Θ (thermal re-injection): Dissipated kT ln 2 may re-enter as fresh potential, making PAC cyclic.~~ **STATUS: MODEL-DEPENDENT.** pac_foundations_validation/exp_07 showed different Θ formulas give 36% to 94% efficiency. Cannot claim recycling efficiency without deriving Θ from first principles. See [PRELIMINARY_RESULTS.md](series/PACSeries/PRELIMINARY_RESULTS.md) entry B5 (now marked "Guidance needed").
+- ~~Θ (thermal re-injection): Dissipated kT ln 2 may re-enter as fresh potential, making PAC cyclic.~~ **STATUS: MODEL-DEPENDENT.** pac_foundations_validation/exp_07 showed different Θ formulas give 36% to 94% efficiency. Cannot claim recycling efficiency without deriving Θ from first principles. See [PRELIMINARY_RESULTS.md](PACSeries/PRELIMINARY_RESULTS.md) entry B5 (now marked "Guidance needed").
 
 **Work remaining:**
 - Trim Section 13 (cross-corpus convergence) to short pointers to other PACSeries papers
@@ -321,7 +321,7 @@ First architecture that enforces PAC conservation as a hard constraint, not just
 
 ## Existing Standalone Preprints
 
-These stay as separate publications. Each gets a short update referencing the PACSeries for theory derivations.
+These stay as separate publications. Each gets a short update referencing the PACSeries for foundational derivations.
 
 ### Tier 1 Updates (Core — reference PACSeries directly)
 
@@ -481,7 +481,7 @@ All results that the PACSeries must present with full error bounds:
 
 ### Hypotheses Under Investigation
 
-Speculative extensions that emerged from the derivation chain but don't yet meet the publication bar are tracked in [PRELIMINARY_RESULTS.md](series/PACSeries/PRELIMINARY_RESULTS.md). That document is the canonical source — each entry has defined validation criteria, falsification conditions, and contribution status.
+Speculative extensions that emerged from the derivation chain but don't yet meet the publication bar are tracked in [PRELIMINARY_RESULTS.md](PACSeries/PRELIMINARY_RESULTS.md). That document is the canonical source — each entry has defined validation criteria, falsification conditions, and contribution status.
 
 ---
 

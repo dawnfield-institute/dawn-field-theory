@@ -34,8 +34,8 @@ keywords:
   - resonance phenomena
 related_preprints:
   - "[pac][D][v1.0][C2][I5][E]_xi_bounded_invariant_universal_balance_operator_preprint.md"
-  - "symbolic_entropy_collapse_preprint.md"
-  - "macro_emergence_dynamics_navier_stokes_preprint.md"
+  - "[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
+  - "[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md"
 ```
 
 ---
@@ -1605,7 +1605,7 @@ All computational artifacts and theoretical derivations are available in the rep
 
 The mathematical formulation of Symbolic Entropy Collapse emerged from studying field evolution equations and recognizing a universal collapse pattern.
 
-**SEC Equations** (from [`dawn-field-theory/archive/era1-symbolic/symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_entropy_collapse_preprint.md)):
+**SEC Equations** (from [`dawn-field-theory/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md)):
 
 ```
 ∂S/∂t = -∇²S - β(Ξ)·S·(S - S_critical)  [Collapse equation]
@@ -1662,7 +1662,7 @@ Run 100 independent field evolutions from random initial conditions:
 **Theoretical prediction confirmed**: SEC naturally produces the 89% entropy decrease observed in cosmological evolution, arising from fundamental collapse dynamics rather than fine-tuning.
 
 **Reference**:
-- Theory: [`dawn-field-theory/archive/era1-symbolic/symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/symbolic_entropy_collapse_preprint.md)
+- Theory: [`dawn-field-theory/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md)
 - Experiment: [`dawn-models/research/experiments/entropy_collapse/symbolic_collapse_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/experiments/entropy_collapse/symbolic_collapse_validation.py)
 - Results: `entropy_collapse/results/collapse_statistics.json`
 - Analysis: `entropy_collapse/analysis/critical_behavior.py`
@@ -1671,7 +1671,7 @@ Run 100 independent field evolutions from random initial conditions:
 
 One of the most striking discoveries was the **exact mathematical equivalence** between SEC dynamics and the Navier-Stokes equations of fluid dynamics.
 
-**From** [`dawn-field-theory/archive/era1-symbolic/macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/macro_emergence_dynamics_navier_stokes_preprint.md):
+**From** [`dawn-field-theory/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md):
 
 **Theorem** (SEC-Navier-Stokes Equivalence):
 ```
@@ -1728,8 +1728,8 @@ With matched parameters and boundary conditions.
 **Significance**: Fluid dynamics is not analogous to information dynamics—it *is* information dynamics observed in the velocity field representation. This unifies two apparently disparate areas of physics.
 
 **Reference**:
-- Theory paper: [`dawn-field-theory/archive/era1-symbolic/macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/macro_emergence_dynamics_navier_stokes_preprint.md) (lines 200-480, complete proof)
-- Equivalence proof: [`dawn-field-theory/archive/era1-symbolic/proofs/sec_navier_stokes_equivalence.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/proofs/sec_navier_stokes_equivalence.md)
+- Theory paper: [`dawn-field-theory/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md) (lines 200-480, complete proof)
+- Equivalence proof: [`dawn-field-theory/foundational/docs/proofs/sec_navier_stokes_equivalence.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/proofs/sec_navier_stokes_equivalence.md)
 - Computational validation: [`dawn-models/research/experiments/fluid_equivalence/navier_stokes_comparison.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/experiments/fluid_equivalence/navier_stokes_comparison.py)
 - Results: `fluid_equivalence/results/equivalence_validation.csv`
 
@@ -2033,7 +2033,7 @@ where:
 **Implication**: These are not analogies—they are **manifestations of the same underlying information dynamics** observed through different measurement lenses. Just as electromagnetism unifies electricity and magnetism, SEC-MED-PAC unifies information processing across all domains.
 
 **Reference**:
-- Unified framework: [`dawn-field-theory/archive/era1-symbolic/unified_framework/sec_med_pac_synthesis.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/unified_framework/sec_med_pac_synthesis.md)
+- Unified framework: [`dawn-field-theory/foundational/docs/unified_framework/sec_med_pac_synthesis.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/unified_framework/sec_med_pac_synthesis.md)
 - Cross-domain validation: [`dawn-models/research/experiments/cross_domain_validation/`](https://github.com/dawnfield-institute/dawn-models/tree/main/research/experiments/cross_domain_validation)
 - Comparison analysis: `cross_domain_validation/analysis/pattern_recognition.py`
 
@@ -2041,7 +2041,7 @@ where:
 
 The pre-field recursion experiments (June-September 2024) provide crucial mechanistic insights into how SEC collapse and MED amplification operate at the implementation level, revealing dynamics that GAIA's integrated architecture abstracts away.
 
-**Framework**: [`dawn-field-theory/archive/era2-prefield/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/archive/era2-prefield/pre_field_recursion)
+**Framework**: [`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)
 
 **SEC Collapse Mechanism Revealed** (from `core/transition_dynamics.py`):
 
@@ -2244,7 +2244,7 @@ The pre-field recursion experiments:
 These mechanistic insights strengthen SEC-MED theory by showing the framework's predictions emerge from fundamental recursive information dynamics rather than being artifacts of specific implementations.
 
 **Repository References**:
-- Pre-field code: [`dawn-field-theory/archive/era2-prefield/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/archive/era2-prefield/pre_field_recursion)
+- Pre-field code: [`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)
 - Core dynamics: `core/transition_dynamics.py`, `core/mobius_topology.py`
 - Resonance detection: `core/resonance_detector.py`
 - Results: `results/pre_field_recursion_results_20250930_183326.json`
@@ -2567,10 +2567,10 @@ trans.  closure  connection
 
 ### 9.4 Cross-References
 
-- `papers/standalone/golden_ratio_prime_distribution/Code/` — SEC stress field experiments
-- `archive/era2-prefield/prime_harmonic_manifold/` — Markov eigenvalue experiments
-- `archive/era2-prefield/pac_confluence_xi/` — Standard Model derivation
-- `experiments/milestones/standard_model_connection/` — Physics mechanism search
+- `foundational/experiments/sec_prime_manifold/` — SEC stress field experiments
+- `foundational/experiments/prime_harmonic_manifold/` — Markov eigenvalue experiments
+- `foundational/experiments/pac_confluence_xi/` — Standard Model derivation
+- `foundational/experiments/standard_model_connection/` — Physics mechanism search
 
 ---
 
@@ -2726,7 +2726,7 @@ class SymbolicEntropyCollapseEngine:
 ```
 
 **Experimental Origin**: 
-- Path: [`dawn-field-theory/archive/era1-symbolic/symbolic_entropy_collapse/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/archive/era1-symbolic/symbolic_entropy_collapse)
+- Path: [`dawn-field-theory/foundational/experiments/symbolic_entropy_collapse/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/symbolic_entropy_collapse)
 - Files: `[x][F][v1.0][C1][I1]_symbolic_entropy_engine.py` (original prototype, June 2024)
 - Discovery: S* = 0.184 found through grid search over 10,000 runs
 - Paper Impact: Section 7.2 (SEC validation), Section 2.1 (theory)
@@ -2813,7 +2813,7 @@ class MinimumEntropyDivergenceEngine:
 ```
 
 **Experimental Origin**:
-- Path: [`dawn-field-theory/papers/standalone/symbolic_entropy_collapse/Code/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/papers/standalone/symbolic_entropy_collapse/Code)
+- Path: [`dawn-field-theory/foundational/experiments/information_amplification/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/information_amplification)
 - Files: `unified_amplification_framework.py`, `RESULTS.md`
 - Discovery: Amplification bounds A_max = A_0·exp(ε_max·N) (August 2024)
 - Paper Impact: Section 7.4 (amplification theory validation)
@@ -2825,7 +2825,7 @@ class MinimumEntropyDivergenceEngine:
 
 #### D.3 Navier-Stokes Equivalence (Section 3.3, 7.3)
 
-**Experiment**: [`dawn-field-theory/archive/era2-prefield/navier-stokes/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/archive/era2-prefield/navier-stokes)  
+**Experiment**: [`dawn-field-theory/foundational/experiments/navier-stokes/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/navier-stokes)  
 **File**: `navier_symbolic_engine/src/core/entropy_navigator.py`  
 **Lines**: 1-650 (complete engine)
 
@@ -2878,7 +2878,7 @@ def demonstrate_sec_navier_equivalence(field, viscosity=0.01):
 
 **Born Rule** (Section 7.5.1):
 ```
-Experiment: dawn-field-theory/archive/era1-symbolic/quantum_validation/born_rule/
+Experiment: dawn-field-theory/foundational/experiments/quantum_validation/born_rule/
 File: [m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py
 Lines: 1-420
 
@@ -2902,7 +2902,7 @@ Code snippet:
 
 **Interference** (Section 7.5.2):
 ```
-Experiment: dawn-field-theory/archive/era1-symbolic/quantum_validation/interference/
+Experiment: dawn-field-theory/foundational/experiments/quantum_validation/interference/
 Files: double_slit_sec.py, results/interference_pattern.png
 
 Key Result:
@@ -2915,7 +2915,7 @@ Runtime: ~5 minutes
 
 **Landauer Principle** (Section 7.5.3):
 ```
-Experiment: dawn-field-theory/archive/era1-symbolic/quantum_validation/landauer/
+Experiment: dawn-field-theory/foundational/experiments/quantum_validation/landauer/
 File: landauer_validation.py
 
 Key Result:
@@ -2930,7 +2930,7 @@ Statistical power: N=1000 erasure operations
 
 **DNA Repair** (Section 7.6.1):
 ```
-Experiment: dawn-field-theory/archive/era1-symbolic/symbolic_bifractal/
+Experiment: dawn-field-theory/foundational/experiments/DNA_repair/
 File: DNA_repairer.py
 Lines: 1-380
 
@@ -2960,7 +2960,7 @@ Code:
 
 **Evolution / Fitness** (Section 7.6.2):
 ```
-Experiment: dawn-field-theory/experiments/milestones/evolution/
+Experiment: dawn-field-theory/foundational/experiments/evolution/
 Files: evolution_med_engine.py, fitness_landscapes.py
 
 Key Results:
@@ -3071,7 +3071,7 @@ Contents:
 
 **Experiment Archive**:
 ```
-Path: dawn-field-theory/experiments/milestones/
+Path: dawn-field-theory/foundational/experiments/
 Size: ~18 GB cumulative
 Contents:
   - 15+ experiment folders
@@ -3149,7 +3149,7 @@ pytest -v --cov=src
 
 ```bash
 # Navier-Stokes equivalence (Section 7.3)
-cd dawn-field-theory/archive/era2-prefield/navier-stokes
+cd dawn-field-theory/foundational/experiments/navier-stokes
 python navier_symbolic_engine/src/core/entropy_navigator.py
 # Output: MSE = 0.0087, r = 0.987
 

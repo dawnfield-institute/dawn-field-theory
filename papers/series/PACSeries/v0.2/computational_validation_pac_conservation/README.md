@@ -27,7 +27,7 @@ This paper tests whether PAC conservation — established across mathematics and
 
 - `dawn-models/research/scbf/experiments/token_pac_tree/` — 12 scripts (PAC tree, SEC phase, attention, Xi, conservation)
 - `dawn-models/research/tinycimm/TinyCIMM-Boltzmann/` — 1 script (conservation enforcement)
-- `dawn-field-theory/papers/series/PACSeries/v0.2/structure_cost_of_erasure/Data/` — exp_22–25 (Landauer bridge)
+- `dawn-field-theory/foundational/experiments/landauer_erasure_structure/` — exp_22–25 (Landauer bridge)
 - `dawn-models/research/scbf/experiments/huggingface_bifractal_validation/` — bifractal validation
 
 ## Dependencies

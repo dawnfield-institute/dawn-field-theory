@@ -3,67 +3,67 @@ created: '2026-02-11'
 description: Traces code and data files back to their original repository locations
 source_repository: dawn-field-theory
 paper: feigenbaum_fibonacci_arithmetic
-paper_type: theory  # PACSeries Paper 3 — Feigenbaum constants from Fibonacci arithmetic
+paper_type: foundational  # PACSeries Paper 3 — Feigenbaum constants from Fibonacci arithmetic
 
 experiments:
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_01_feigenbaum_all_constants.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_07_feigenbaum_all_constants.py
+  - local: experiments/exp_01_feigenbaum_all_constants.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_07_feigenbaum_all_constants.py
     repo: dawn-field-theory
     description: "Complete closed-form validation for r∞ (13 digits), δ (8 digits), α (6 digits)"
     key_result: "r∞ rel error 1.16e-14; δ rel error 1.20e-9; α rel error 4.02e-7"
     paper_sections: [2]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_02_statistical_proof.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_09_statistical_proof.py
+  - local: experiments/exp_02_statistical_proof.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_09_statistical_proof.py
     repo: dawn-field-theory
     description: "Exhaustive search of 3.9M triples; only (55,17,52) at 7+ digits"
     key_result: "1 in 280 billion against coincidence; 16.4 surplus digits"
     paper_sections: [4]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_03_renormalization_analysis.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_08_renormalization_analysis.py
+  - local: experiments/exp_03_renormalization_analysis.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_08_renormalization_analysis.py
     repo: dawn-field-theory
     description: "δ as Möbius transform; det = −2F₇π; universal coefficient ≈ 55/36"
     key_result: "Determinant = −26π; base-plus-correction structure"
     paper_sections: [5]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_04_crossratio_mobius.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_10_crossratio_mobius.py
+  - local: experiments/exp_04_crossratio_mobius.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_10_crossratio_mobius.py
     repo: dawn-field-theory
     description: "Cross-ratios of bifurcation cascade at 50-digit precision"
     key_result: "CR limit ≈ 1.16995; gap ratios converge to δ"
     paper_sections: [5.2]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_05_high_precision_validation.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_24_high_precision_validation.py
+  - local: experiments/exp_05_high_precision_validation.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_24_high_precision_validation.py
     repo: dawn-field-theory
     description: "200-digit Möbius perturbation series; coefficient structure"
     key_result: "A₃/A₂ = 6050 = 2F₁₀² exactly; each level adds ~3 digits"
     paper_sections: [6]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_06_theoretical_framework.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_25_theoretical_framework.py
+  - local: experiments/exp_06_theoretical_framework.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_25_theoretical_framework.py
     repo: dawn-field-theory
     description: "M₁₀ fixed-point framework; 1857 = F₁₀F₉ − F₇; self-consistency"
     key_result: "δ derived to 6 digits from Möbius structure alone"
     paper_sections: [6]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_07_rbf_self_closing.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_26_rbf_self_closing_mobius.py
+  - local: experiments/exp_07_rbf_self_closing.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_26_rbf_self_closing_mobius.py
     repo: dawn-field-theory
     description: "RBF self-closing formula: δ = φ^(20/N); converges in 3 iterations"
     key_result: "13 digits of δ; eigenvalue identity 89 − 55φ = 1/φ¹⁰"
     paper_sections: [7]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_08_universality.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_27_universality_generalization.py
+  - local: experiments/exp_08_universality.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_27_universality_generalization.py
     repo: dawn-field-theory
     description: "Δz universal across quadratic-max maps; scale ratio = 4"
     key_result: "Logistic/sine Δz identical to 10⁻¹⁰; r∞ ratio = 4.0"
     paper_sections: [8]
 
-  - local: papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Code/experiments/exp_09_cross_domain_validation.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/scripts/exp_28_conservation_phi_fibonacci_derivation_chain.py
+  - local: experiments/exp_09_cross_domain_validation.py
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/scripts/exp_28_conservation_phi_fibonacci_derivation_chain.py
     repo: dawn-field-theory
     description: "5-domain cross-validation with circularity check"
     key_result: "Joint p = 8.3e-12 (1 in 120B); all 5 domains significant"
@@ -71,31 +71,31 @@ experiments:
 
 data:
   - local: "../Data/results/exp_07_feigenbaum_all_constants_20260106_161706.json"
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/results/exp_07_feigenbaum_all_constants_20260106_161706.json
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/results/exp_07_feigenbaum_all_constants_20260106_161706.json
     experiment: exp_01
 
   - local: "../Data/results/exp_09_statistical_proof_20260106_164302.json"
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/results/exp_09_statistical_proof_20260106_164302.json
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/results/exp_09_statistical_proof_20260106_164302.json
     experiment: exp_02
 
   - local: "../Data/results/exp_08_renormalization_analysis_20260106_162646.json"
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/results/exp_08_renormalization_analysis_20260106_162646.json
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/results/exp_08_renormalization_analysis_20260106_162646.json
     experiment: exp_03
 
   - local: "../Data/results/exp_10_crossratio_mobius_20260106_185922.json"
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/results/exp_10_crossratio_mobius_20260106_185922.json
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/results/exp_10_crossratio_mobius_20260106_185922.json
     experiment: exp_04
 
   - local: "../Data/results/exp_24_high_precision_20260107_141918.json"
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/results/exp_24_high_precision_20260107_141918.json
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/results/exp_24_high_precision_20260107_141918.json
     experiment: exp_05
 
   - local: "../Data/results/exp_25_theoretical_framework_20260107_144129.json"
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/results/exp_25_theoretical_framework_20260107_144129.json
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/results/exp_25_theoretical_framework_20260107_144129.json
     experiment: exp_06
 
   - local: "../Data/results/exp_28_conservation_phi_fibonacci_chain_20260107_164108.json"
-    source: dawn-field-theory/papers/series/PACSeries/v0.2/feigenbaum_fibonacci_arithmetic/Data/results/exp_28_conservation_phi_fibonacci_chain_20260107_164108.json
+    source: dawn-field-theory/foundational/experiments/sec_threshold_detection/results/exp_28_conservation_phi_fibonacci_chain_20260107_164108.json
     experiment: exp_09
 
 figures:

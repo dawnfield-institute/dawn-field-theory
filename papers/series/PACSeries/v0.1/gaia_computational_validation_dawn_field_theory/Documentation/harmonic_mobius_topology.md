@@ -144,8 +144,8 @@ The connection between π-harmonic coupling, Möbius topology, and the observed 
 ## References
 
 - [`test2_fixed.py`](../../test2_fixed.py) - Holonomy validation
-- [`pi_harmonic_fmas_analysis.py`](../../../../../../archive/era2-prefield/pre_field_recursion/scripts/pi_harmonic_fmas_analysis.py) - π-harmonic analysis
-- [`unified_mas_med_validation.py`](../Code/experiments/unified_mas_med_validation.py) - Core validation
+- [`pi_harmonic_fmas_analysis.py`](../../pi_harmonic_fmas_analysis.py) - π-harmonic analysis
+- [`unified_mas_med_validation.py`](../../../../dawn-models/research/GAIA/usecases/unified_mas_med_validation.py) - Core validation
 
 ---
 

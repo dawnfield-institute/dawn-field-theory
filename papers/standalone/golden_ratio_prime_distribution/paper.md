@@ -381,10 +381,10 @@ All code is open source:
 **Repository**: `github.com/dawnfield-institute/dawn-field-theory`
 
 **Key files**:
-- `papers/standalone/golden_ratio_prime_distribution/Code/core/sec_core.py` — Core SEC implementation
-- `papers/standalone/golden_ratio_prime_distribution/Code/experiments/exp_05_fibonacci_resonance.py` — Fibonacci resonance test
-- `papers/standalone/golden_ratio_prime_distribution/Code/experiments/exp_01_baseline_validation.py` — Baseline validation
-- `papers/standalone/golden_ratio_prime_distribution/Code/experiments/exp_02_factor_base_independence.py` — Independence test
+- `foundational/experiments/sec_prime_manifold/core/sec_core.py` — Core SEC implementation
+- `foundational/experiments/sec_prime_manifold/scripts/exp_05_fibonacci_resonance.py` — Fibonacci resonance test
+- `foundational/experiments/sec_prime_manifold/scripts/exp_01_baseline_validation.py` — Baseline validation
+- `foundational/experiments/sec_prime_manifold/scripts/exp_02_factor_base_independence.py` — Independence test
 
 ### 7.2 Trace Files
 
@@ -396,7 +396,7 @@ JSON traces with full parameters and results:
 ### 7.3 Running the Experiments
 
 ```bash
-cd dawn-field-theory/papers/standalone/golden_ratio_prime_distribution/Code
+cd dawn-field-theory/foundational/experiments/sec_prime_manifold
 
 # Baseline validation
 python -m scripts.exp_01_baseline_validation --n_max 50000
@@ -494,8 +494,8 @@ SEC (φ-threshold) ←→ PAC (Fibonacci gauge) ←→ PHM (π²-decay) ←→ G
 
 ### 9.5 Cross-References
 
-- **Prime Harmonic Manifold**: `archive/era2-prefield/prime_harmonic_manifold/`
-- **PAC Confluence Xi**: `archive/era2-prefield/pac_confluence_xi/`
+- **Prime Harmonic Manifold**: `foundational/experiments/prime_harmonic_manifold/`
+- **PAC Confluence Xi**: `foundational/experiments/pac_confluence_xi/`
 - **Cross-Experiment Synthesis**: `prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md`
 
 ---
@@ -593,7 +593,7 @@ New scripts:
 - `exp_16_pi_zero_connection.py` — Zero detection via Möbius
 - `exp_17c_actual_sec.py` — Chain verification with real SEC
 
-Location: `experiments/milestones/oscillation_attractor_dynamics/scripts/`
+Location: `foundational/experiments/oscillation_attractor_dynamics/scripts/`
 
 ---
 

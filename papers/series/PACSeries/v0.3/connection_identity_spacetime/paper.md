@@ -294,7 +294,7 @@ The Lorentz group is not a postulate; it follows once the simplest possible grap
 
 The ADE classification — a theorem of pure mathematics, proven in the 1890s — turns out to encode not just the gauge symmetries of particle physics (Paper 7) but also the structure of spacetime itself. Connection corresponds to addition on the root lattice, identity to the complement spectrum, and spacetime geometry to graph symmetry under the SEC arrow.
 
-**Source code**: `experiments/milestones/milestone12/` (13 experiments), `experiments/milestones/milestone13/` (15 experiments)
+**Source code**: `foundational/experiments/milestone12/` (13 experiments), `foundational/experiments/milestone13/` (15 experiments)
 
 ---
 

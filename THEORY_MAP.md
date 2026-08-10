@@ -33,7 +33,7 @@ SEC: Symbolic Entropy Collapse
               |
               v
 MED: Macro Emergence Dynamics                RBF: Recursive Balance Field
-  depth <= 1, nodes <= 3                       B(x,t) = grad^2(E-I) + ...
+  depth <= 2, nodes <= 3                       B(x,t) = grad^2(E-I) + ...
   (complexity bounds)                          (adaptive geometry)
         |                                            |
         └────────────────┬───────────────────────────┘
@@ -127,7 +127,7 @@ what asserts it, what proves it, what measured it, where it was published.
 | **Xi = gamma + ln(phi), zero free parameters** | **proven** | [theorems](formal/theorems/README.md#the-origin-of-xi) | [M11 exp_09](experiments/milestones/milestone11/) | PACSeries v0.2 |
 | **PAC is spectral confinement (drift 2.4e-15)** | **proven** | [theorems](formal/theorems/README.md#pac-is-spectral-confinement) | [M10 exp_14](experiments/milestones/milestone10/) | — |
 | Planck scale from depth-183, zero free parameters | settled | — | [M11](experiments/milestones/milestone11/) | PACSeries v0.3 |
-| S8 tension 3.22 sigma -> 0.07 sigma | settled | — | [M9](experiments/milestones/milestone9/) | PACSeries v0.3 |
+| S8 tension 3.22 sigma -> 0.09 sigma (blind) | settled | — | [M9](experiments/milestones/milestone9/) | PACSeries v0.3 |
 | **C_6 = -I; theta(m) = m theta_T closed form** | **proven** | [theorems](formal/theorems/README.md#the-holonomy-closed-form) | [M15 exp_04](experiments/milestones/milestone15/) | — |
 | **Connection generator = box momentum operator** | **proven** | [theorems](formal/theorems/README.md#the-connection-generator-is-the-box-momentum-operator) | [M15 exp_06](experiments/milestones/milestone15/) | — |
 | **No isomorphism-invariant PD metric on ADE** | **proven negative** | [theorems](formal/theorems/README.md#psd-degeneracy-is-fundamental--a-proven-impossibility) | [M13.5 exp_16](experiments/milestones/milestone13/) | — |
@@ -159,7 +159,7 @@ multiples of four.
 | **M6** [Scoped mediation](experiments/milestones/milestone6/) | Forces differ by Fibonacci depth | **34/40** | alpha_EM #1 of 10,440 combinations; phi^6 hierarchy; dark sector at depth 73 |
 | **M7** [Symmetry primitive](experiments/milestones/milestone7/) | Symmetry is pre-axiomatic | **37/40** | phi from cross-scale self-reference; emergent 1/phi at R^2 = 0.995 |
 | **M8** [BSM predictions](experiments/milestones/milestone8/) | Pre-register falsifiable predictions | **47/48** | CC at 0.09 orders; 10 predictions, 0 excluded by data |
-| **M9** [Infodynamic mechanism](experiments/milestones/milestone9/) | The cascade is a temporal clock | **37/40** | S8 tension 3.22 sigma -> 0.07 sigma; free parameters 2 -> 1 |
+| **M9** [Infodynamic mechanism](experiments/milestones/milestone9/) | The cascade is a temporal clock | **37/40** | S8 tension 3.22 sigma -> 0.09 sigma (blind); free parameters 2 -> 1 |
 | **M10** [Symmetry self-application](experiments/milestones/milestone10/) | Self-applied symmetry is the unique generative primitive | **64/71** | PAC/SEC/MED shown non-independent; PAC = spectral confinement, drift 2.4e-15 |
 | **M11** [Quantum gravity](experiments/milestones/milestone11/) | Where gravitational response-time is exceeded | **52/52** | Planck from depth-183, zero free parameters; **origin of Xi proven**; no singularity |
 | **M12** [Connection as primitive](experiments/milestones/milestone12/) | Connection = addition = ADE | **49/52** | SU(2) and SU(3) the only Fibonacci-compatible types; Lorentz from SEC complexification |
@@ -199,26 +199,26 @@ Where to find specific physics concepts in the experiments.
 |---------|-------------------|------------|
 | **Alpha (fine structure)** | [M6/exp_09](experiments/milestones/milestone6/), [M8/exp_01](experiments/milestones/milestone8/) | 5.7 ppm, #1 of 10,440 combinations |
 | **Area law** | [M11/exp_04](experiments/milestones/milestone11/) | Information scales as M^2 from gradient |
-| **Arrow of time** | [M9/exp_06](experiments/sidecars/midnight/), [M11/exp_09](experiments/milestones/milestone11/) | Landauer irreversibility |
+| **Arrow of time** | [M9/exp_06](experiments/milestones/milestone9/), [M11/exp_09](experiments/milestones/milestone11/) | Landauer irreversibility |
 | **Born rule** | [quantum_validation/born_rule](archive/era1-symbolic/quantum_validation/born_rule/) | Reproduced from SEC |
 | **Bounce (Planck star)** | [M11/exp_11](experiments/milestones/milestone11/) | t_bounce = 1 t_Planck, constant across masses |
-| **Cascade clock** | [M9/exp_01-03](experiments/sidecars/midnight/) | N(t) = a + (1/ln(phi))*ln(t_lookback) |
+| **Cascade clock** | [M9/exp_01-03](experiments/milestones/milestone9/) | N(t) = a + (1/ln(phi))*ln(t_lookback) |
 | **Casimir effect** | [M2](experiments/milestones/milestone2/) | From PAC recursion |
 | **CKM matrix** | [M5/exp_08](experiments/milestones/milestone5/) | Fibonacci arctangent ratios |
 | **Cosmological constant** | [M8/exp_08](experiments/milestones/milestone8/) | log10(rho_Lambda) = -122.09, 0.09 orders |
-| **D=3 (spatial dimensions)** | [M1](experiments/milestones/milestone1/), [M7/exp_10](experiments/milestones/milestone9/) | D=3 unique from MED/symmetry |
-| **Dark energy (w)** | [M9/exp_09](experiments/sidecars/midnight/) | w(z=0) = -0.987; DESI tension (honest failure) |
+| **D=3 (spatial dimensions)** | [M1](experiments/milestones/milestone1/), [M7/exp_10](experiments/milestones/milestone7/) | D=3 unique from MED/symmetry |
+| **Dark energy (w)** | [M9/exp_09](experiments/milestones/milestone9/) | w(z=0) = -0.987; DESI tension (honest failure) |
 | **Dark matter** | [M6/exp_05](experiments/milestones/milestone6/), [M8/exp_02-03](experiments/milestones/milestone8/) | 6.44 keV, depth 73 |
 | **De-actualization** | [M5/exp_12-13](experiments/milestones/milestone5/) | Completes PAC cycle, 24% drift reduction |
 | **Feigenbaum constants** | [sec_threshold_detection](experiments/studies/sec_threshold_detection/) | r_inf 13 digits, delta 8 digits |
 | **Force hierarchy** | [M6/exp_04](experiments/milestones/milestone6/) | log(alpha_G^-1)/log(alpha_EM^-1) = phi^6 |
 | **Graviton** | [M11/exp_07-08](experiments/milestones/milestone11/) | Spin-2, massless, 2 polarizations from cascade |
-| **Gravity-time duality** | [M9/exp_05](experiments/sidecars/midnight/) | g_out = g_in^2, exact for phi only |
-| **Hawking radiation** | [M11/exp_05](experiments/milestones/milestone11/) | T*M = 1/(8*pi), CV = 7.8e-17 |
+| **Gravity-time duality** | [M9/exp_05](experiments/milestones/milestone9/) | g_out = g_in^2, exact for phi only |
+| **Hawking radiation** | [M11/exp_05](experiments/milestones/milestone11/) | T*M = 1/(8*pi) from cascade geometry; the CV = 7.8e-17 figure was retired by M11's own Round-2 hardening as an algebraic identity (1/(8*pi*M) x M cancelling), not a measurement |
 | **Higgs mass** | [M5/exp_07](experiments/milestones/milestone5/) | lambda = phi/(4*pi), 83 ppm |
-| **Hubble constant** | [M8/exp_07](experiments/milestones/milestone8/), [M9/exp_08](experiments/sidecars/midnight/) | phi^(1/6)*H_CMB, 0.05sigma of SH0ES |
+| **Hubble constant** | [M8/exp_07](experiments/milestones/milestone8/), [M9/exp_08](experiments/milestones/milestone9/) | phi^(1/6)*H_CMB, 0.05sigma of SH0ES |
 | **JWST** | [M8/exp_09](experiments/milestones/milestone8/) | z-dependent cascade floor, z_cascade = ln(phi)*6 |
-| **Koide formula** | [M1](experiments/milestones/milestone1/) | Q = F3/(F3+F2) = 2/3, 0.5 ppm |
+| **Koide formula** | [M1](experiments/milestones/milestone1/) | Q = F3/F4 = 2/3, 0.0009% (9 ppm) |
 | **Kolmogorov -5/3** | [M4](experiments/milestones/milestone4/), [navier-stokes](archive/era2-prefield/navier-stokes/) | From PAC cascade |
 | **Landauer principle** | [landauer_erasure_structure](experiments/studies/landauer_erasure_structure/), [M11/exp_09](experiments/milestones/milestone11/) | A/(A+xi) = ln(phi), grounds cascade |
 | **Lorentz invariance** | [M4](experiments/milestones/milestone4/) | Unique PAC partition |
@@ -231,7 +231,7 @@ Where to find specific physics concepts in the experiments.
 | **Primes** | [sec_prime_manifold](experiments/studies/sec_prime_manifold/), [prime_growth_dynamics](experiments/studies/prime_growth_dynamics/) | SEC stress field separates primes at 1/phi |
 | **RG running** | [M2](experiments/milestones/milestone2/), [M5/exp_05](experiments/milestones/milestone5/) | PAC-consistent renormalization |
 | **Rule 110** | [cellular_automata_pac_attractors](experiments/studies/cellular_automata_pac_attractors/) | P/A = 1.0579, Class IV clusters at Xi |
-| **S8 tension** | [M9/exp_07](experiments/sidecars/midnight/) | 3.22sigma -> 0.07sigma, 98% reduction |
+| **S8 tension** | [M9/exp_07](experiments/milestones/milestone9/) | 3.22sigma -> 0.07sigma, 98% reduction |
 | **She-Leveque** | [navier-stokes](archive/era2-prefield/navier-stokes/) | k = d*F_{d+1}, 14.3x more accurate |
 | **Singularity resolution** | [M11/exp_04](experiments/milestones/milestone11/) | Cascade saturation, Kretschner finite |
 | **Strong force** | [M5/exp_01-05](experiments/milestones/milestone5/) | Already in cascade-depth tiling operator |
@@ -293,4 +293,4 @@ Each module imports its predecessor. The chain ensures consistency — M11 resul
 
 ---
 
-*This map covers 73 experiment directories (752 numbered experiments) across 15 milestones plus sidecars, and 3 spikes. The authoritative per-experiment list is [EXPERIMENTS.md](experiments/EXPERIMENTS.md). Last updated: August 2026.*
+*This map covers 75 experiments (724 numbered scripts) across 15 milestones plus sidecars, and 2 spikes. The authoritative per-experiment list is [EXPERIMENTS.md](experiments/EXPERIMENTS.md). Last updated: August 2026.*

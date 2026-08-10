@@ -99,7 +99,7 @@ If the report isn’t finalized by noon, tell the team to move forward without i
 
 # 4. Experimental Outcomes
 
-See [results.md](../../blueprints/nuclear_containment/v1/results.md) for full experiment output.
+See [results.md](../language_to_logic/results/results.md) for full experiment output.
 
 * Recursion depth: 4 levels
 * Average entropy collapse per segment: \~4.09

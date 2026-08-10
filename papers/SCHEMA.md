@@ -83,7 +83,7 @@ description: "Traces code files back to their original repository locations"
 source_repository: "dawn-field-theory"
 files:
   - local: "core/ca_simulator.py"
-    source: "dawn-field-theory/experiments/milestones/.../core/ca_simulator.py"
+    source: "dawn-field-theory/foundational/experiments/.../core/ca_simulator.py"
     repo: "dawn-field-theory"
 ```
 

@@ -70,7 +70,7 @@ Location: `sec_prime_manifold/`
   - π coherence at σ=1/2: 19× better than e
   - Möbius formula finds 20/20 Riemann zeros
   - Prime distribution controlled by zeros
-- Reference: `experiments/studies/standard_model_connection/README.md`
+- Reference: `experiments/standard_model_connection/README.md`
 
 **SEC Framework**:
 - Paper: `PACSeries/symbolic_entropy_collapse/paper.md` (Zenodo 17024434)
@@ -125,7 +125,7 @@ This is a **critical open question** addressed in ongoing research:
 
 ### Code Traceability
 All code traced back to original experiments via `Code/trace.yaml`:
-- Source: `dawn-field-theory/papers/standalone/golden_ratio_prime_distribution/Code/`
+- Source: `dawn-field-theory/foundational/experiments/sec_prime_manifold/`
 - Experiments: 32 runs validating k=9 criticality
 - Commit: Available in trace.yaml
 

@@ -4,7 +4,7 @@ CIP-METADATA:
   author: Peter Lorne Groom
   date: 2025-06-30
   version: 1.0
-  location: archive/blueprints/nuclear_containment/v1/results.md
+  location: results.md
   description: |
     This simulation visualizes and quantifies the energy cost of erasing symbolic information from a field governed by entropy decay. The goal is to demonstrate Landauer's principle through spatial and thermodynamic dynamics using a stochastic symbolic entropy substrate.
 ---

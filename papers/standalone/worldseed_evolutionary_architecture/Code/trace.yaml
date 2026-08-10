@@ -21,17 +21,17 @@ files:
     description: "Software evolution framework"
 
   # Experiments
-  - local: "papers/standalone/worldseed_evolutionary_architecture/Code/experiments/exp_01_basic_evolution.py"
+  - local: "experiments/exp_01_basic_evolution.py"
     source: "internal/project_worldseed/worldseed_gaia.py"
     repo: "dawn-field-institute"
     description: "Basic evolution engine with mock fitness"
 
-  - local: "papers/standalone/worldseed_evolutionary_architecture/Code/experiments/exp_02_real_gaia_integration.py"
+  - local: "experiments/exp_02_real_gaia_integration.py"
     source: "internal/project_worldseed/run_mini_evolution.py"
     repo: "dawn-field-institute"
     description: "Real GAIA model training and evaluation"
 
-  - local: "papers/standalone/worldseed_evolutionary_architecture/Code/experiments/exp_03_wikitext2_evolution.py"
+  - local: "experiments/exp_03_wikitext2_evolution.py"
     source: "internal/project_worldseed/run_wikitext2_evolution.py"
     repo: "dawn-field-institute"
     description: "Full WikiText-2 benchmark evolution"

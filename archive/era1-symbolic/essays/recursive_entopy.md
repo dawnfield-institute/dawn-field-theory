@@ -27,7 +27,7 @@ related_documents:
 
 This paper presents a validated simulation demonstrating recursive intelligence growth using entropy as a structural seed. Aligned with Dawn Field Theory, this model illustrates how informational recursion under entropy gradients generates symbolic geometry akin to cognition. The simulation confirms the principles of entropy-driven collapse, recursive balance formation, and adaptive memory pruning in a computable context.
 
-*For experiment details, visualizations, and metrics, see [Recursive Entropy Tree: Experiment Results](../../blueprints/nuclear_containment/v1/results.md).*
+*For experiment details, visualizations, and metrics, see [Recursive Entropy Tree: Experiment Results](../recursive_entropy/results/results.md).*
 
 ## 1. Introduction
 
@@ -71,7 +71,7 @@ Two graphs were produced:
 * **Pre-Pruning Tree**: Dense, entropic geometry with fractal growth.
 * **Post-Pruning Tree**: Filtered cognitive structure with improved coherence.
 
-*See [Recursive Entropy Tree: Experiment Results](../../blueprints/nuclear_containment/v1/results.md) for embedded images of both pre- and post-pruning trees.*
+*See [Recursive Entropy Tree: Experiment Results](../recursive_entropy/results/results.md) for embedded images of both pre- and post-pruning trees.*
 
 ### 4.2 Metrics
 
@@ -81,7 +81,7 @@ Two graphs were produced:
 | Max Depth            | [dynamic]  |
 | Avg Branching Factor | [dynamic]  |
 
-*For actual experiment metrics, refer to the summary in [recursive_entropy_2025-06-07_results.txt](../recursive_entropy/reference_material/recursive_entropy_2025-06-07_results.txt) and the [results.md](../../blueprints/nuclear_containment/v1/results.md) file.*
+*For actual experiment metrics, refer to the summary in [recursive_entropy_2025-06-07_results.txt](../recursive_entropy/reference_material/recursive_entropy_2025-06-07_results.txt) and the [results.md](../recursive_entropy/results/results.md) file.*
 
 ### 4.3 Symbolic Trace Sample
 
@@ -101,7 +101,7 @@ A new version introduces thermodynamic realism and symbolic structure vectorizat
 * **Landauer Cost**: Each symbolic branching incurs thermodynamic cost → mirrors physical computation bounds.
 * **Semantic Vector Embedding**: Symbolic tags converted to vector payloads → supports semantic coherence metrics and attractor formation.
 
-*See [Recursive Entropy Tree: Experiment Results](../../blueprints/nuclear_containment/v1/results.md) for discussion of these mechanisms and their impact on the resulting structure.*
+*See [Recursive Entropy Tree: Experiment Results](../recursive_entropy/results/results.md) for discussion of these mechanisms and their impact on the resulting structure.*
 
 ---
 
@@ -109,7 +109,7 @@ A new version introduces thermodynamic realism and symbolic structure vectorizat
 
 This simulation validates that entropy alone can generate recursive cognitive geometry. Adaptive pruning approximates selective memory. No external logic model was required. This aligns with Dawn’s post-symbolic paradigm and offers an experimental unit for recursive intelligence design.
 
-*The results and their significance are further discussed in [Recursive Entropy Tree: Experiment Results](../../blueprints/nuclear_containment/v1/results.md).*
+*The results and their significance are further discussed in [Recursive Entropy Tree: Experiment Results](../recursive_entropy/results/results.md).*
 
 ---
 
@@ -117,7 +117,7 @@ This simulation validates that entropy alone can generate recursive cognitive ge
 
 The Recursive Tree Generator using entropy as seed exemplifies field-born intelligence. It supports the claim that cognition is an emergent property of recursive balance resolution, not symbolic programming.
 
-*For further reading, visualizations, and structural metrics, see [Recursive Entropy Tree: Experiment Results](../../blueprints/nuclear_containment/v1/results.md).*
+*For further reading, visualizations, and structural metrics, see [Recursive Entropy Tree: Experiment Results](../recursive_entropy/results/results.md).*
 data_provenance: verified_in_dawn_simulation_suite
 related_documents:
   - dawn_field_theory.md

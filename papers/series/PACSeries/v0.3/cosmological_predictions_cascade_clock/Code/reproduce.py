@@ -22,8 +22,8 @@ Both milestones ship a `core` package, so the two cannot share a single
 PYTHONPATH entry (the `core` name would collide). reproduce.py therefore places
 the *owning* milestone directory (the parent of its core/) on PYTHONPATH per
 script:
-    papers/series/PACSeries/v0.3/cosmological_predictions_cascade_clock/Data   -> resolves core.bsm
-    experiments/sidecars/midnight   -> resolves core.infodynamics
+    foundational/experiments/milestone8   -> resolves core.bsm
+    foundational/experiments/milestone9   -> resolves core.infodynamics
 so the verbatim scripts run unmodified.
 
 A fresh run regenerates timestamped JSON into this package's Code/results/
@@ -74,7 +74,7 @@ EXPERIMENTS = {
 
 def find_experiments_root(start: Path):
     for anc in start.resolve().parents:
-        cand = anc / "theory" / "experiments"
+        cand = anc / "foundational" / "experiments"
         if all((cand / m / "core").is_dir() for m in SOURCE_MILESTONES):
             return cand
     return None
@@ -92,7 +92,7 @@ def main():
 
     exproot = find_experiments_root(here)
     if exproot is None:
-        print("ERROR: could not locate experiments/milestones/"
+        print("ERROR: could not locate foundational/experiments/"
               f"{{{','.join(SOURCE_MILESTONES)}}}/core.\n"
               "This package must be run from inside the dawn-field-theory repo.")
         sys.exit(1)

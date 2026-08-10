@@ -8,14 +8,16 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 
 | Layer | Holds | Files |
 |---|---|---|
-| [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 17 |
-| [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 22 |
-| [`experiments/`](experiments/) | what was measured | 2638 |
+| [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 15 |
+| [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 21 |
+| [`experiments/`](experiments/) | what was measured | 2630 |
 | [`papers/`](papers/) | what was published | 1446 |
-| [`archive/`](archive/) | lineage, by era — terminal | 5117 |
+| [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 10 |
 
-Tracked files: **9314**
+Tracked files: **9302**
+
+**75 experiments** — 50 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 
 ## On deck
 
@@ -85,8 +87,6 @@ Tracked files: **9314**
 | Experiment | Kind | Status |
 |---|---|---|
 | [`pac_foundations_validation`](experiments/studies/pac_foundations_validation/) | studies | archived |
-| [`infodynamic_gravity`](experiments/spikes/infodynamic_gravity/) | spikes | — |
-| [`n_scale_dependence`](experiments/spikes/n_scale_dependence/) | spikes | — |
 
 ## Legacy
 

@@ -39,8 +39,8 @@ This paper answers *why* Dawn Field Theory works, in two parts. **Part I (Milest
 
 ## Source Experiments
 
-- `experiments/milestones/milestone9/` — 10 M7 scripts (exp_01–exp_10), the symmetry primitive.
-- `papers/series/PACSeries/v0.3/symmetry_primitive_scoped_mediation/Data/` — 10 M6 scripts (exp_01–exp_10) + 2 post-hoc analyses (`analysis_local_asymmetry`, `analysis_xi_multiplicative`), scoped mediation.
+- `foundational/experiments/milestone7/` — 10 M7 scripts (exp_01–exp_10), the symmetry primitive.
+- `foundational/experiments/milestone6/` — 10 M6 scripts (exp_01–exp_10) + 2 post-hoc analyses (`analysis_local_asymmetry`, `analysis_xi_multiplicative`), scoped mediation.
 
 The packaged scripts in `Code/experiments/` are verbatim copies. M7 scripts import `core.symmetry` (milestone7/core); M6 scripts import `scope`/`core.scope` (milestone6/core) and `_shared` (confluent_identity/scripts). Because both milestones ship a package named `core`, `reproduce.py` sets a **per-experiment** PYTHONPATH from each experiment's home milestone. See `Code/trace.yaml` for full provenance.
 
@@ -52,7 +52,7 @@ The packaged scripts in `Code/experiments/` are verbatim copies. M7 scripts impo
 
 ```bash
 # from a checkout of the dawn-field-theory repo, with numpy/scipy/matplotlib installed:
-cd papers/legacy/cognition_index_protocol/v0.3/symmetry_primitive_scoped_mediation/Code
+cd foundational/docs/preprints/PACSeries/v0.3/symmetry_primitive_scoped_mediation/Code
 python reproduce.py --list      # list experiments
 python reproduce.py             # run all 22
 python reproduce.py m6_09       # run one experiment (or: m7_01, m6_al, ...)

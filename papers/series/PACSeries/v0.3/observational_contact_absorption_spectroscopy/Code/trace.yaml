@@ -6,57 +6,57 @@ paper: observational_contact_absorption_spectroscopy
 paper_type: observational  # PACSeries Paper 12 — cascade clock in absorption spectroscopy
 
 experiments:
-  - local: experiments/sidecars/midnight/scripts/exp_01_gravity_gates_entanglement.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_01_gravity_gates_entanglement.py
+  - local: experiments/exp_01_gravity_gates_entanglement.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_01_gravity_gates_entanglement.py
     repo: dawn-field-theory
     description: "Phase-rate field definition and ADE entanglement structure"
     key_result: "Phase-rate well-defined (T1/T2 PASS). ADE structure richer than phi^n prediction."
     paper_sections: [7.3]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_03_photon_archaeology.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_03_photon_archaeology.py
+  - local: experiments/exp_03_photon_archaeology.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_03_photon_archaeology.py
     repo: dawn-field-theory
     description: "Alpha invariance and SEC-encoded line widths"
     key_result: "Alpha 5.7 ppm, line widths vary 220% with cascade, PAC/SEC separation clean"
     paper_sections: [3, 5]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_05_bifractal_mesh_signal.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_05_bifractal_mesh_signal.py
+  - local: experiments/exp_05_bifractal_mesh_signal.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_05_bifractal_mesh_signal.py
     repo: dawn-field-theory
     description: "SDSS DR16 MgII absorber cascade signal — first observational test"
     key_result: "EW spread p=0.007 (later shown z-confound). Population KS p=10^{-42}"
     paper_sections: [7.1]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_07_deep_cascade_probe.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_07_deep_cascade_probe.py
+  - local: experiments/exp_07_deep_cascade_probe.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_07_deep_cascade_probe.py
     repo: dawn-field-theory
     description: "Z-detrending test — kills oscillatory signals"
     key_result: "EW spread drops to p=0.87 after detrend. CIV b-param survives quadratic."
     paper_sections: [7.1]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_08_cascade_panel.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_08_cascade_panel.py
+  - local: experiments/exp_08_cascade_panel.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_08_cascade_panel.py
     repo: dawn-field-theory
     description: "Z-trend-immune tests: periodicity, sharp excess, sightlines, doublet shape"
     key_result: "Sightline-straddling (p~0) and narrow-window doublet (p=10^{-4}) survive"
     paper_sections: [7.1]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_12_smooth_cascade.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_12_smooth_cascade.py
+  - local: experiments/exp_12_smooth_cascade.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_12_smooth_cascade.py
     repo: dawn-field-theory
     description: "The reframing: smooth z-evolution IS the cascade signal"
     key_result: "CIV b vs N(z): R2=0.851. Phi slope costs zero R2. N-binning 5.6% more coherent"
     paper_sections: [3.2, 3.3]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_13_faster_time.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_13_faster_time.py
+  - local: experiments/exp_13_faster_time.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_13_faster_time.py
     repo: dawn-field-theory
     description: "Three signatures of faster time at high cascade level"
     key_result: "Skewness rho=-0.929 p=0.003. Fe/Mg R2=0.89. Ionization complexity p~0."
     paper_sections: [4, 5, 6]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_16_structural_regularity.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_16_structural_regularity.py
+  - local: experiments/exp_16_structural_regularity.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_16_structural_regularity.py
     repo: dawn-field-theory
     description: "Topology IS the regulator — energy CV=0, topology CV=0.36"
     key_result: "Varying energy 10^4x: bound unchanged. Varying topology: 36% change."
@@ -64,15 +64,15 @@ experiments:
 
   # Supporting experiments (not primary but referenced)
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_09_discovery_panel.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_09_discovery_panel.py
+  - local: experiments/exp_09_discovery_panel.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_09_discovery_panel.py
     repo: dawn-field-theory
     description: "Seven-panel discovery analysis: spatial, kinematic, gas state, velocity, SNR, tau, type"
     key_result: "Broad lines 10^7x more responsive. Coupling tightens without adding gas."
     paper_sections: [3.4]
 
-  - local: papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_11_deep_targets.py
-    source: dawn-field-theory/papers/series/PACSeries/v0.3/observational_contact_absorption_spectroscopy/Code/experiments/exp_11_deep_targets.py
+  - local: experiments/exp_11_deep_targets.py
+    source: dawn-field-theory/foundational/experiments/midnight/scripts/exp_11_deep_targets.py
     repo: dawn-field-theory
     description: "CIV z-detrend, spatial dipole, entropy gradients"
     key_result: "CIV signal z-confound (p=0.68). Spatial dipole not significant."
@@ -105,15 +105,15 @@ data:
 
   # Results files
   - local: "../Data/results/exp_12_smooth_cascade.json"
-    source: dawn-field-theory/experiments/milestones/milestone7/results/exp_12_smooth_cascade_20260608_124322.json
+    source: dawn-field-theory/foundational/experiments/midnight/results/exp_12_smooth_cascade_20260608_124322.json
     experiment: exp_12
 
   - local: "../Data/results/exp_13_faster_time.json"
-    source: dawn-field-theory/experiments/milestones/milestone7/results/exp_13_faster_time_20260608_140118.json
+    source: dawn-field-theory/foundational/experiments/midnight/results/exp_13_faster_time_20260608_140118.json
     experiment: exp_13
 
   - local: "../Data/results/exp_16_structural_regularity.json"
-    source: dawn-field-theory/experiments/milestones/milestone7/results/exp_16_structural_regularity_20260608_212808.json
+    source: dawn-field-theory/foundational/experiments/midnight/results/exp_16_structural_regularity_20260608_212808.json
     experiment: exp_16
 
 pre_registration:

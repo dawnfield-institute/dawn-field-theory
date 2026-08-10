@@ -58,7 +58,7 @@ The framework turns on itself and asks *why these axioms*.
 | **M6** Scoped mediation · 34/40 | α_EM formula ranked #1 of 10,440 Fibonacci combinations, 300× better than the next |
 | **M7** The symmetry primitive · 37/40 | Symmetry → self-reference → recursion → ADE → PAC/SEC/MED/RBF |
 | **M8** BSM predictions · 47/48 | 10 pre-registered predictions, 0 excluded by data · CC at 0.09 orders |
-| **M9** The infodynamic mechanism · 37/40 | Cascade clock; S8 tension 3.22σ → 0.07σ; free parameters 2 → 1 |
+| **M9** The infodynamic mechanism · 37/40 | Cascade clock; S8 tension 3.22σ → 0.09σ (blind); free parameters 2 → 1 |
 | **M10** Symmetry self-application · 64/71 | PAC, SEC and MED shown not to be independent axioms — all three fall out of one operation. PAC = spectral confinement, exact to 2.4e-15 |
 | **M11** Quantum gravity · 52/52 | Planck scale from depth-183 with zero free parameters · no singularity · Page curve peaks at 0.5 · **the origin of Ξ proven** |
 | **M12** Connection as primitive · 49/52 | Connection = addition = ADE · SU(2) and SU(3) the only Fibonacci-compatible types · Lorentz from SEC complexification |

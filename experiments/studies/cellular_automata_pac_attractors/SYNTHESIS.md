@@ -99,7 +99,7 @@ SEC λ > λ* (Chaos)     ←→  CA Class III (chaotic)
 ```
 
 ### 2. PAC Confluence Xi
-**Location**: [../pac_confluence_xi/](../archive/era2/pac_confluence_xi)  
+**Location**: [../pac_confluence_xi/](../archive/era2-prefield/pac_confluence_xi)  
 **Key Papers**:
 - [10_PAC_CONFLUENCE_XI_SYNTHESIS.md](../../../archive/era2-prefield/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
 - [11_BELL_RESOLUTION_PAC_SEC_UNIFICATION.md](../../../archive/era2-prefield/pac_confluence_xi/papers/11_BELL_RESOLUTION_PAC_SEC_UNIFICATION.md)
@@ -131,8 +131,8 @@ This is NOT a fitted parameter—it emerges from topology. The CA experiment pro
 | Heavy seed SMBHs at high-z | Class IV rules = computational "seeds" |
 
 ### 4. Pi Harmonics
-**Location**: [../pi_harmonics/](../archive/era1/pi_harmonics)  
-**Results**: [../pi_harmonics/results.md](../../../archive/blueprints/nuclear_containment/v1/results.md)
+**Location**: [../pi_harmonics/](../archive/era1-symbolic/pi_harmonics)  
+**Results**: [../pi_harmonics/results.md](../../../archive/era1-symbolic/pi_harmonics/results/results.md)
 
 | Pi Finding | CA Finding |
 |------------|------------|

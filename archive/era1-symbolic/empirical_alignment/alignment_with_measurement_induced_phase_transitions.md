@@ -52,9 +52,9 @@ within an entropic resonance mesh. In this view, MIPTs mirror:
 
 ## Supporting Dawn Simulations
 
-* [Symbolic Fractal Pruning](../../blueprints/nuclear_containment/v1/results.md): Shows how recursive entropy operations reshape symbolic topology.
-* [Symbolic Bifractal Collapse](../../blueprints/nuclear_containment/v1/results.md): Models recursive ancestry phase interference and resonance clustering.
-* [Recursive Entropy Tree](../../blueprints/nuclear_containment/v1/results.md): Demonstrates symbolic collapse and filtration via entropic gradients.
+* [Symbolic Fractal Pruning](../symbolic_fractal_pruning/results/results.md): Shows how recursive entropy operations reshape symbolic topology.
+* [Symbolic Bifractal Collapse](../symbolic_bifractal/results/results.md): Models recursive ancestry phase interference and resonance clustering.
+* [Recursive Entropy Tree](../recursive_entropy/results/results.md): Demonstrates symbolic collapse and filtration via entropic gradients.
 
 ## Interpretation
 

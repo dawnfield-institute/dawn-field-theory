@@ -51,7 +51,7 @@ This experiment demonstrates that **Maxwell's equations are a level-2 recursion 
 
 ### 1. SEC Wave Dynamics → Speed of Light
 
-**Source**: [navier-stokes](../archive/era2/navier-stokes), [sec_prime_manifold](../sec_prime_manifold/), [sec_threshold_detection](../sec_threshold_detection/)
+**Source**: [navier-stokes](../archive/era2-prefield/navier-stokes), [sec_prime_manifold](../sec_prime_manifold/), [sec_threshold_detection](../sec_threshold_detection/)
 
 The SEC equation describes information-entropy dynamics:
 ```
@@ -112,7 +112,7 @@ Magnetism is literally the "shadow" of the hidden dimension.
 
 ### 3. Fibonacci Gauge → Coupling Constants
 
-**Source**: [pac_confluence_xi](../archive/era2/pac_confluence_xi), [standard_model_connection](../standard_model_connection/), especially [2025-12-07_fibonacci_derivation_breakthrough.md](../standard_model_connection/journals/2025-12-07_fibonacci_derivation_breakthrough.md)
+**Source**: [pac_confluence_xi](../archive/era2-prefield/pac_confluence_xi), [standard_model_connection](../standard_model_connection/), especially [2025-12-07_fibonacci_derivation_breakthrough.md](../standard_model_connection/journals/2025-12-07_fibonacci_derivation_breakthrough.md)
 
 The Standard Model gauge structure maps to Fibonacci:
 ```
@@ -152,7 +152,7 @@ This formula uses:
 
 ### 4. Topology → Charge Quantization
 
-**Source**: [pre_field_recursion](../archive/era2/pre_field_recursion), [internal/maxwell/charge_from_sec_collapse.py](../../../../internal/maxwell/charge_from_sec_collapse.py)
+**Source**: [pre_field_recursion](../archive/era2-prefield/pre_field_recursion), [internal/maxwell/charge_from_sec_collapse.py](../../../../internal/maxwell/charge_from_sec_collapse.py)
 
 The Möbius pre-field has topological structure:
 - 4π phase recovery (explains fermion spin)
@@ -205,7 +205,7 @@ The same F₁₀ = 55 appears in both Feigenbaum and α.
 
 ### 6. Möbius Topology → Non-Orientability
 
-**Source**: [pre_field_recursion](../archive/era2/pre_field_recursion), Möbius theoretical framework
+**Source**: [pre_field_recursion](../archive/era2-prefield/pre_field_recursion), Möbius theoretical framework
 
 The pre-field is Möbius topology:
 - 2D surface embedded in 3D (minimum)
@@ -300,11 +300,11 @@ The number 13 appears everywhere:
 
 | Experiment | What It Provides | How It Connects |
 |------------|------------------|-----------------|
-| [pac_confluence_xi](../archive/era2/pac_confluence_xi) | sin²θ_W = 3/13 | EM-weak mixing from Fibonacci |
+| [pac_confluence_xi](../archive/era2-prefield/pac_confluence_xi) | sin²θ_W = 3/13 | EM-weak mixing from Fibonacci |
 | [macro_emergence_dynamics](../../../arithmetic/macro_emergence_dynamics/) | depth≤2, nodes≤3 | Curl emergence, 3D necessity |
 | [standard_model_connection](../standard_model_connection/) | Fibonacci gauge derivation | F₇ = 13 structure |
 | [sec_threshold_detection](../sec_threshold_detection/) | Ξ = 1+π/55 | SEC balance operator |
-| [navier-stokes](../archive/era2/navier-stokes) | SEC wave dynamics | c from SEC parameters |
+| [navier-stokes](../archive/era2-prefield/navier-stokes) | SEC wave dynamics | c from SEC parameters |
 | [sec_prime_manifold](../sec_prime_manifold/) | φ threshold | Critical dynamics |
 
 ### Supporting Evidence
@@ -312,7 +312,7 @@ The number 13 appears everywhere:
 | Experiment | What It Provides | How It Connects |
 |------------|------------------|-----------------|
 | [cellular_automata_pac_attractors](../cellular_automata_pac_attractors/) | φ at edge-of-chaos | EM at PAC critical point |
-| [pre_field_recursion](../archive/era2/pre_field_recursion) | Möbius topology | Pre-field structure |
+| [pre_field_recursion](../archive/era2-prefield/pre_field_recursion) | Möbius topology | Pre-field structure |
 | [oscillation_attractor_dynamics](../oscillation_attractor_dynamics/) | Prime injection points | Discrete structure |
 | [pac_cosmology_validation](../pac_cosmology_validation/) | Large-scale tests | PAC universality |
 

@@ -6,7 +6,7 @@ paper: "gaia_field_native_intelligence_comprehensive"
 trace_date: "2025-12-22"
 
 experiments:
-  - file: "papers/standalone/gaia_field_native_intelligence_comprehensive/Code/experiments/exp_01_poc001_binary_encoding.py"
+  - file: "experiments/exp_01_poc001_binary_encoding.py"
     source_repo: "dawn-models"
     source_path: "research/GAIA/proof_of_concepts/poc_001_pattern_encoding/scripts/exp_01_binary.py"
     description: "POC-001: Binary pattern encoding for GAIA field representations"
@@ -18,7 +18,7 @@ experiments:
       - "PAC conservation: residual 0.00e+00"
       - "100% survival at 100 evolution steps"
 
-  - file: "papers/standalone/gaia_field_native_intelligence_comprehensive/Code/experiments/exp_02_oracle_distillation.py"
+  - file: "experiments/exp_02_oracle_distillation.py"
     source_repo: "dawn-models"
     source_path: "research/GAIA/proof_of_concepts/poc_020_multi_model_pac/scripts/oracle_distillation.py"
     description: "POC-020: Oracle-bootstrapped hierarchical PAC training with no backprop"
@@ -30,17 +30,17 @@ experiments:
       - "Generation capability with 16.7-52.9% confluence hit rate"
 
 support_modules:
-  - file: "papers/standalone/gaia_field_native_intelligence_comprehensive/Code/experiments/gaia_encoder.py"
+  - file: "experiments/gaia_encoder.py"
     source_repo: "dawn-models"
     source_path: "research/GAIA/proof_of_concepts/poc_001_pattern_encoding/scripts/gaia_encoder.py"
     description: "Core GAIA encoder implementation"
 
-  - file: "papers/standalone/gaia_field_native_intelligence_comprehensive/Code/experiments/utils.py"
+  - file: "experiments/utils.py"
     source_repo: "dawn-models"
     source_path: "research/GAIA/proof_of_concepts/poc_001_pattern_encoding/scripts/utils.py"
     description: "Utility functions for GAIA experiments"
 
-  - file: "archive/era2-prefield/navier-stokes/navier_symbolic_engine/src/experiments/__init__.py"
+  - file: "experiments/__init__.py"
     source_repo: "dawn-models"
     source_path: "research/GAIA/proof_of_concepts/poc_001_pattern_encoding/scripts/__init__.py"
     description: "Module init file"
@@ -60,7 +60,7 @@ paper_claims_supported:
 
 notes: |
   The GAIA paper references 21 POCs. Two key experiments are included here:
-  - POC-001: Binary pattern encoding (theory capability)
+  - POC-001: Binary pattern encoding (foundational capability)
   - POC-020: Oracle distillation (demonstrates backprop-free learning)
   
   Additional POC experiments are available in the full dawn-models repository.

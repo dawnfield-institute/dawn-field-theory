@@ -33,7 +33,7 @@ keywords:
   - computational complexity
 related_preprints:
   - "[pac][D][v1.0][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md"
-  - "symbolic_entropy_collapse_preprint.md"
+  - "[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
 ```
 
 ---
@@ -782,7 +782,7 @@ All computational artifacts referenced below are available in the repository at 
 
 The Xi invariant emerges naturally from the **Recursive Balance Field (RBF)** equations, which provide the fundamental dynamical substrate from which Xi bounds arise.
 
-**RBF Equations** (from [`dawn-field-theory/archive/era1-symbolic/Recursive Balance Field.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/Recursive Balance Field.md)):
+**RBF Equations** (from [`dawn-field-theory/foundational/docs/Recursive Balance Field.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/Recursive Balance Field.md)):
 
 ```
 ∂ψ/∂t = -∇²ψ + λ(ψ - ⟨ψ⟩)  [Balance equation]
@@ -822,7 +822,7 @@ This 5.71% enhancement represents the **computational amplification** beyond pur
 **Implementation details**: The RBF equations are implemented in the CIP Core library with high-precision spectral methods, enabling accurate tracking of Xi evolution over 10,000+ iterations.
 
 **Reference**: 
-- Theory: [`dawn-field-theory/archive/era1-symbolic/Recursive Balance Field.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/archive/era1-symbolic/Recursive Balance Field.md)
+- Theory: [`dawn-field-theory/foundational/docs/Recursive Balance Field.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/Recursive Balance Field.md)
 - Implementation: [`cip-core/cip_core/fields/recursive_balance.py`](https://github.com/dawnfield-institute/cip-core/blob/main/cip_core/fields/recursive_balance.py)
 - Validation tests: [`cip-core/tests/test_recursive_balance_field.py`](https://github.com/dawnfield-institute/cip-core/blob/main/tests/test_recursive_balance_field.py)
 
@@ -937,7 +937,7 @@ The limit Ξ_PAC is independent of:
 
 Our earliest experimental validation of Xi bounds came from **pre-field recursion** experiments (June-September 2024), which independently discovered the same Xi bounds and resonance phenomena through a completely different approach—topological recursion on Möbius manifolds.
 
-**Experiment**: [`dawn-field-theory/archive/era2-prefield/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/archive/era2-prefield/pre_field_recursion)
+**Experiment**: [`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)
 
 **Independent Framework**: The pre-field recursion experiments modeled information flow through recursive Möbius topological transformations, tracking how complexity evolves through depth. This approach was developed independently of the Xi theory, making its convergence to the same bounds particularly significant.
 
@@ -1110,7 +1110,7 @@ The pre-field recursion experiments provide:
 **Reproducibility**: All 100 trials converged to same Ξ_PAC ± 0.0004, demonstrating universality across initial conditions.
 
 **Repository References**: 
-- Core code: [`dawn-field-theory/archive/era2-prefield/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/archive/era2-prefield/pre_field_recursion)
+- Core code: [`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)
 - Main script: `main.py`, `pre_field_recursion_unified.py`
 - Topology module: `core/mobius_topology.py`
 - Resonance detection: `core/resonance_detector.py`
@@ -1122,7 +1122,7 @@ The pre-field recursion experiments provide:
 
 The most striking validation came from **cosmological correlation analysis** connecting Xi oscillations to universal evolution patterns—work that was originally focused on structure formation, not Xi dynamics.
 
-**Theory**: Internal Reorganization from [`dawn-field-theory/theory/Internal Reorganization.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/theory/Internal Reorganization.md)
+**Theory**: Internal Reorganization from [`dawn-field-theory/foundational/Internal Reorganization.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/Internal Reorganization.md)
 
 **Original hypothesis**: Universe undergoes periodic reorganization phases driven by entropy gradients and information flow. Xi was not part of the original theory.
 
@@ -1181,7 +1181,7 @@ Low Xi (Ξ ≈ 1.01):
 **Predictive power**: Xi evolution allows forecasting structure formation events ~5 oscillation periods (≈150 time units) in advance—potentially observable in CMB or large-scale structure data.
 
 **Reference**:
-- Theory: [`dawn-field-theory/theory/Internal Reorganization.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/theory/Internal Reorganization.md) (lines 200-450, cosmological dynamics)
+- Theory: [`dawn-field-theory/foundational/Internal Reorganization.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/Internal Reorganization.md) (lines 200-450, cosmological dynamics)
 - Experiment: [`dawn-models/research/experiments/cosmological_validation/`](https://github.com/dawnfield-institute/dawn-models/tree/main/research/experiments/cosmological_validation)
 - Results: `temp/complete_validation_results.txt` (lines 180-320)
 - Analysis code: `temp/validation_analysis.py`
@@ -1670,7 +1670,7 @@ We have documented extensive computational and mathematical evidence for Xi boun
 6. **Implement** independent codes in other languages/frameworks
 
 **Repository access**:
-- Main theory: [`dawn-field-theory/theory/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/theory) (all docs and proofs)
+- Main theory: [`dawn-field-theory/foundational/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational) (all docs and proofs)
 - GAIA implementation: [`dawn-models/research/GAIA/`](https://github.com/dawnfield-institute/dawn-models/tree/main/research/GAIA) (Python, open-source)
 - PACEngine validation: `temp/PACEngine/` (C++, independent implementation)
 - Experiment data: [`dawn-models/research/experiments/`](https://github.com/dawnfield-institute/dawn-models/tree/main/research/experiments) (all raw results)
@@ -2091,7 +2091,7 @@ def _compute_circle_eigenvalues(self, field):
 
 **1. Pre-Field Recursion Experiment** (June 2024):
 ```
-Path: dawn-field-theory/archive/era2-prefield/pre_field_recursion/
+Path: dawn-field-theory/foundational/experiments/pre_field_recursion/
 Files: 
   - main.py (primary recursion engine)
   - results/pre_field_recursion_results_20250930_183326.json
@@ -2106,7 +2106,7 @@ Paper Impact: Section 6.4 (experimental confirmation of bounds)
 
 **2. Quantum Threshold Validation** (September 2024):
 ```
-Path: dawn-field-theory/experiments/milestones/quantum_threshold/
+Path: dawn-field-theory/foundational/experiments/quantum_threshold/
 Files:
   - quantum_threshold_analyzer.py
   - results/threshold_validation_20240915.json
@@ -2121,7 +2121,7 @@ Paper Impact: Section 6.6 (quantum threshold theory validation)
 
 **3. Hodge Conjecture Exploration** (Various dates):
 ```
-Path: dawn-field-theory/archive/era1-symbolic/symbolic_memory_agentic_decay_test/
+Path: dawn-field-theory/foundational/experiments/hodge_conjecture/
 Files: 11 iterations of prime_modulated_collapse*.py
 
 Key Results:
@@ -2154,7 +2154,7 @@ Paper Impact: Section 6.1 (primary empirical validation)
 | 3.1 | 0.03 Hz oscillation | `field_engine.py:PreFieldResonanceDetector` | FFT analysis |
 | 3.2 | 38× reality gap | `field_engine.py:_compute_reality_gap()` | Logged continuously |
 | 6.1 | r = -0.9996 | `cosmological_validation.py:compute_correlation()` | 527 runs |
-| 6.4 | Convergence to 1.0568 | `archive/era2-prefield/pre_field_recursion/scripts/main.py` | N=500 trials |
+| 6.4 | Convergence to 1.0568 | `experiments/pre_field_recursion/main.py` | N=500 trials |
 | 6.6 | εc = 4.8e-4 | `experiments/quantum_threshold/` | Phase transition |
 
 #### D.4 Independent Cross-Validation: PACEngine
@@ -2217,7 +2217,7 @@ Will archive complete Xi dataset with reproduction instructions.
 ```bash
 # Setup
 git clone https://github.com/dawnfield-institute/dawn-field-theory.git
-cd dawn-field-theory/archive/era2-prefield/pre_field_recursion
+cd dawn-field-theory/foundational/experiments/pre_field_recursion
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install numpy scipy matplotlib
@@ -2364,7 +2364,7 @@ The discrete system frequency **f_discrete = 0.020 Hz** is exactly **2/3 × f_co
 
 ## Acknowledgments
 
-This work builds on the theory PAC framework and earlier explorations of information dynamics. The computational validation was performed using GAIA (Generally Adaptive Intelligence Architecture). Special thanks to the open-source scientific computing community (NumPy, SciPy, Matplotlib).
+This work builds on the foundational PAC framework and earlier explorations of information dynamics. The computational validation was performed using GAIA (Generally Adaptive Intelligence Architecture). Special thanks to the open-source scientific computing community (NumPy, SciPy, Matplotlib).
 
 The geometric interpretation through π-Harmonic Möbius Topology (Paper #4) provides crucial theoretical foundation, showing that Xi bounds emerge from spectral geometry rather than arbitrary computational limits. This unifies the mathematical, topological, and physical aspects of information balance.
 

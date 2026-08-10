@@ -149,8 +149,8 @@ The **cascade** topology (most like physical heat dissipation) produces the high
 |------------|------------|
 | [standard_model_connection](../standard_model_connection/) | φ in SM parameters |
 | [prime_growth_dynamics](../prime_growth_dynamics/) | γ + ln(φ) = Ξ decomposition |
-| [pac_confluence_xi](../archive/era2/pac_confluence_xi) | Fibonacci in coupling constants |
-| [navier-stokes](../archive/era2/navier-stokes) | Ξ ≈ 1.057 emergence |
+| [pac_confluence_xi](../archive/era2-prefield/pac_confluence_xi) | Fibonacci in coupling constants |
+| [navier-stokes](../archive/era2-prefield/navier-stokes) | Ξ ≈ 1.057 emergence |
 | [cellular_automata_pac_attractors](../cellular_automata_pac_attractors/) | φ at edge of chaos |
 
 ---
