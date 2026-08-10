@@ -30,7 +30,7 @@ dawn-field-theory/
 ├── spikes/                   # Exploratory work (not yet promoted to experiments)
 │   ├── darkmatter_SEC_WIP/
 │   └── infodynamic_gravity/
-├── blueprints/               # Speculative applications
+├── archive/blueprints/               # Speculative applications
 ├── citations/                # DOI and citation management
 ├── models/                   # (minimal)
 ├── tools/                    # Utility scripts for repo maintenance

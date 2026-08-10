@@ -17,7 +17,7 @@ contribution:
   title: "Recursive Entropy Operator for Information Amplification"
   description: "Implemented a new entropy-based operator for detecting symbolic field collapse patterns in neural networks, with validation experiments."
   files:
-    - "blueprints/operators/entropy_recursive.py"
+    - "archive/blueprints/operators/entropy_recursive.py"
     - "foundational/experiments/entropy_validation.py"
     - "foundational/docs/entropy_operator_theory.md"
   

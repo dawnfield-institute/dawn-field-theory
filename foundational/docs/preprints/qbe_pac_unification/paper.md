@@ -271,7 +271,7 @@ This unification strengthens Dawn Field Theory by demonstrating internal consist
 ## References
 
 1. Legacy CIMM Experiments: `foundational/experiments/archive/era1/legacy/brain.py`, `cosmo.py`, `vcpu.py`
-2. QBE Theory: `foundational/legacy_docs_archive/Quantum Balance Equation.md`
+2. QBE Theory: `archive/legacy-docs/Quantum Balance Equation.md`
 3. PAC Framework: `foundational/arithmetic/PACEngine/`
 4. GAIA Validation: `dawn-models/research/GAIA/usecases/VALIDATION_RESULTS_FINAL.md`
 5. exp_32: `foundational/experiments/archive/era2/prime_harmonic_manifold/scripts/exp_32_qbe_pac_unification.py`

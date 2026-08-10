@@ -15,7 +15,6 @@ Welcome to the root of it all! 🌱 This is the launchpad for the **core theorie
 * `legacy_docs_archive/` – 🗂️ Historical documents and technical evolution. Dive into the philosophical roots and early drafts that shaped the framework.
 * `lexicon.md` / `lexicon.yaml` – � The evolving dictionary and semantic map of Dawn Field Theory’s key terms and concepts.
 * `meta.yaml` – �️ Directory-level semantic tags and purpose, machine-readable for agents and protocols.
-* `whats_next.md` – 🔮 Roadmap and future research directions for expanding foundational insights.
 
 ---
 
@@ -38,7 +37,8 @@ This directory is the recommended starting point for anyone seeking to engage wi
 2. Dive into [Foundational Experiments](./experiments/README.md) to see theory in action.
 3. Read the [Collapse Geometry Papers](./docs/README.md) for deep theoretical insights.
 4. Browse the [Lexicon](./lexicon.md) for key terms and definitions.
-5. Check [whats_next.md](./whats_next.md) for upcoming research and directions.
+5. Check [roadmaps/](../roadmaps/) for current direction, and
+   [experiments/EXPERIMENTS.md](experiments/EXPERIMENTS.md) for the experiment index.
 
 ---
 

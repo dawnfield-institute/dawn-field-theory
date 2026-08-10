@@ -144,7 +144,7 @@ GAIA (Generalized Architectures for Intelligent Actualization) treats intelligen
 | `foundational/arithmetic/`  | PACEngine — core mathematical tools and conservation math               |
 | `roadmaps/`                 | Current roadmap (M12 planning) and historical planning docs             |
 | `spikes/`                   | Exploratory work not yet promoted to experiments                        |
-| `blueprints/`               | Speculative applications (energy, nuclear containment)                  |
+| `archive/blueprints/`               | Speculative applications (energy, nuclear containment)                  |
 | `citations/`                | DOI registry, contributor citations, and external references            |
 | `resources/`                | Publication registry and supplementary materials                        |
 | `tools/`                    | Utility scripts for repo maintenance                                    |

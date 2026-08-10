@@ -26,22 +26,19 @@ files:
 - LICENSE_APPENDIX.md
 - MISSION.md
 - README.md
-- REGISTRY_TERMS.md
-- REPOSITORY_RESTRUCTURE_PLAN.md
 - STANDARDS.md
 - THEORY_MAP.md
+- TRADE_SECRET_REGISTRY_TEMPLATE.md
 - dawn-field-theory.md
 - for_ai_labs.md
 - infodynamics.md
 - map.yaml
 - origin_of_infodynamics.md
-- schema.yaml
 - timeline.md
 child_directories:
 - .changelog
 - .github
 - archive
-- blueprints
 - citations
 - foundational
 - resources

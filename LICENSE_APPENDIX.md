@@ -152,7 +152,7 @@ For private or internal use not involving conveyance or network provision, attri
 - Still maintain full AGPL-3.0 compliance for Theory Layer
 - **No monetary fees - only accountability obligations**
 
-Nothing in this Section alters, reduces, or delays any AGPL-3.0 obligations (including Corresponding Source and network-use requirements). See also the separate contractual template in `REGISTRY_TERMS.md`.
+Nothing in this Section alters, reduces, or delays any AGPL-3.0 obligations (including Corresponding Source and network-use requirements). See also the separate contractual template in `TRADE_SECRET_REGISTRY_TEMPLATE.md`.
 
 ### 6.2 Registry Structure
 - **Governing Body**: The Dawn Field Institute acts as registry administrator
@@ -161,7 +161,7 @@ Nothing in this Section alters, reduces, or delays any AGPL-3.0 obligations (inc
 - **Voluntary Participation**: Registry participation is entirely optional for proprietary implementations
 - **No Monetary Fees**: Registry participation involves only accountability obligations, not financial payments to the Institute
   
-See `REGISTRY_TERMS.md` for the non-exclusive contractual template governing participant obligations and protections.
+See `TRADE_SECRET_REGISTRY_TEMPLATE.md` for the non-exclusive contractual template governing participant obligations and protections.
 
 ### 6.3 Protection Terms
 - **Duration**: 5-year renewable protection periods

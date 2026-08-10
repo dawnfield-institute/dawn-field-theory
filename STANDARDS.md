@@ -16,7 +16,6 @@ This document is **canonical**. Where it conflicts with anything else, it wins:
 1. `STANDARDS.md` (this file)
 2. Per-repo `CLAUDE.md` — repo-specific context and current state
 3. `.claude/instructions/*.instructions.md` — task-specific operating procedures
-4. `dawn-field-theory/schema.yaml` — *superseded for `meta.yaml`* by §5 below
 
 It was written to close a real gap: `CLAUDE.md` and `.claude/instructions/main.instructions.md`
 both referenced `STANDARDS.md` as the canonical spec, but no such file existed. In its
@@ -171,7 +170,7 @@ Standard practice since 2026-06-11. For any experiment intended as evidence:
 | Location | Purpose | Structure required |
 |---|---|---|
 | `spikes/` | exploratory; may be promoted to an experiment | none |
-| `blueprints/` | speculative applications of settled theory | none |
+| `archive/blueprints/` | speculative applications of settled theory | none |
 | `foundational/experiments/` | structured research | §2 in full |
 | `foundational/experiments/archive/<era>/` | Era 1–2 experiments | as-was; frozen |
 
@@ -196,7 +195,9 @@ outside `foundational/experiments/`.
 
 ## 5. `meta.yaml` — schema v2.1
 
-Supersedes the `meta_yaml` entry in `dawn-field-theory/schema.yaml`. Files declaring
+Replaces the former `schema.yaml` registry, which was removed: it had not been updated
+in 14 months, described a `meta_yaml` shape no file in the repo actually used, and was
+never read by any validator. Files declaring
 `schema_version: "2.0"` remain valid; v2.1 is a superset that names the two zones and adds
 the research fields already in use.
 

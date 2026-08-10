@@ -263,7 +263,7 @@ Exploratory work not yet promoted to experiments. No structure requirements.
 
 | Spike | What It Explores |
 |-------|-----------------|
-| [darkmatter_SEC_WIP](spikes/darkmatter_SEC_WIP/) | Dark matter via SEC (work in progress) |
+| [darkmatter_SEC_WIP](archive/spike-darkmatter-sec/) | Dark matter via SEC (work in progress) |
 | [infodynamic_gravity](spikes/infodynamic_gravity/) | Gravity from infodynamics |
 | [n_scale_dependence](spikes/n_scale_dependence/) | N scale dependence |
 

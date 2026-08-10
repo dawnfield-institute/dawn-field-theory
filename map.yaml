@@ -10,17 +10,15 @@ dawn-field-theory/
   LICENSE_APPENDIX.md
   MISSION.md
   README.md
-  REGISTRY_TERMS.md
-  REPOSITORY_RESTRUCTURE_PLAN.md
   STANDARDS.md
   THEORY_MAP.md
+  TRADE_SECRET_REGISTRY_TEMPLATE.md
   dawn-field-theory.md
   for_ai_labs.md
   infodynamics.md
   map.yaml
   meta.yaml
   origin_of_infodynamics.md
-  schema.yaml
   timeline.md
   .changelog/
     20260106_093000_comprehensive_jwst_validation.md
@@ -60,6 +58,61 @@ dawn-field-theory/
       validate-citations.yml
   archive/
     README.md
+    REPOSITORY_RESTRUCTURE_PLAN.md
+    blueprints/
+      LICENSE.md
+      README.md
+      bias.py
+      cognition_index_protocol.md
+      qsocket.md
+      AI_detection/
+        [cip][experiment][v1.0][2025-06-30]_dawn_field_recursive_fractal_entropy_provenance_pipeline.py
+        [cip][protocol][v1.0][2025-06-30]_dawn_field_protocol_recursive_fractal_entropy_provenance.md
+      balance_based_energy_generation/
+        README.md
+        balance_based_energy_generationv1.py
+        balance_based_energy_generationv2.py
+        carbon_energy_math.md
+        carbon_energy_report.md
+        carbon_energy_strategy_logs.py
+        carbon_energy_theory.md
+        carbon_fuel_profiles.md
+        consumer_energy_blueprint.md
+        production_energy_blueprint.md
+        reference_material/
+          balance_based_energy_generationv1_2025-06-17 213826.png
+          balance_based_energy_generationv2_2025-06-17 213826.png
+          balance_based_energy_generationv2_2025-06-17 213826.txt
+          carbon_energy_strategy_logs2025-06-17
+          carbon_energy_strategy_logs2025-06-17 214113.png
+      nuclear_containment/
+        README.md
+        v1/
+          blueprint.md
+          containment_math.md
+          containment_theory.md
+          containment_triptych_with_metrics.py
+          results.md
+          experimental_archive/
+            Containment2D_HighYield.py
+            Containment2D_HighYield_Reflective.py
+            Containment2D_HighYield_Reflective.yaml
+            improved_entropy_suppression_sim.py
+            nuclear_blast_simulation.py
+            sub_meter.py
+            unfinished_full_containment_sim.py
+          images/
+            containment_triptych.png
+            full_containment_result.png
+            none_containment_result.png
+            shell_only_containment_result.png
+            side_by_side_comparison.png
+            uncontained_blast_control.png
+          reference_material/
+            containment_metrics.csv
+            containment_triptych.png
+        v2/
+          v2_roadmap.md
     devkit-designs/
       README.md
       compression/
@@ -168,6 +221,68 @@ dawn-field-theory/
       random_number/
         RandomNumberTest.py
         random_number.md
+    legacy-docs/
+      AI_Black_Hole_Information_Paper _1_.md
+      AI_Hawking_Radiation_Info_Paper _1_.md
+      AI_J Quantum Measurement_J and the Fabric of Reality.md
+      AI_Newtonian_Quantum_Integration_Paper _1_.md
+      AI_Quantum_Measurement_Whitepaper.md
+      AI_Wavefunction_Collapse_CIMM_Integration _1_.md
+      CIMM _ QBE Cosmological Framework_ Theory and Mathematical Foundations.md
+      CIMM _ QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational Field.md
+      CIMM_Andromeda_Paradox.md
+      CIM_Dissertation_Updated.md
+      DissertationDraft0.0.2.md
+      Document- Intrinsic Structural Metadata _ISM_ _ A New Paradigm in Compression Intelligence.md
+      Entropy_Balanced_Learning_Rate_Integration_Guide.md
+      Quantum Balance Equation revised 2.0.md
+      Quantum Balance Equation.md
+      Quantum Balance Equation_ further insights.md
+      Quantum Balance Equation_Comprehensive Research Archive.md
+      Quantum Balance Observations and Key Findings.md
+      README.md
+      Security Entropy Leak Identifier _SELID__ Full Technical Documentation.md
+      THE PHYSICS UNDERLYING CIMM copy.md
+      THE PHYSICS UNDERLYING CIMM.md
+      The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
+      docx/
+        AI^J Quantum Measurement^J and the Fabric of Reality.docx
+        AI_Black_Hole_Information_Paper (1).docx
+        AI_Hawking_Radiation_Info_Paper (1).docx
+        AI_Newtonian_Quantum_Integration_Paper (1).docx
+        AI_Quantum_Measurement_Whitepaper.docx
+        AI_Wavefunction_Collapse_CIMM_Integration (1).docx
+        CIMM & QBE Cosmological Framework_ Theory and Mathematical Foundations.docx
+        CIMM & QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational Field.docx
+        CIMM_Andromeda_Paradox.docx
+        CIM_Dissertation_Updated.docx
+        DissertationDraft0.0.2.docx
+        Document- Intrinsic Structural Metadata (ISM) — A New Paradigm in Compression Intelligence.docx
+        Entropy-Based Mutation Detection and Repair in Protein Sequences.docx
+        Entropy-Based Repair of BRCA1 Frameshift Mutation (5382insC)(1).docx
+        Entropy_Balanced_Learning_Rate_Integration_Guide.docx
+        Quantum Balance Equation revised 2.0.docx
+        Quantum Balance Equation, further insights.docx
+        Quantum Balance Equation.docx
+        Quantum Balance Equation_Comprehensive Research Archive.docx
+        Quantum Balance Observations and Key Findings.docx
+        Security Entropy Leak Identifier (SELID)_ Full Technical Documentation.docx
+        THE PHYSICS UNDERLYING CIMM copy.docx
+        THE PHYSICS UNDERLYING CIMM.docx
+        The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
+    spike-darkmatter-sec/
+      README.md
+      astro_data_fetcher.py
+      cosmic_web_simple.py
+      darkmatter.py
+      darkmatter_3d_analysis.png
+      darkmatter_3d_cuda.py
+      darkmatter_cosmic_web.py
+      darkmatter_temporal_gradient.py
+      galaxy_temporal_gradient.py
+      sec_auto_tuning_engine.py
+      sec_simulation_based_tuning.py
+      test_astro_fetcher.py
     todo-2025/
       citation_model_draft.md
       roadmap_draft.md
@@ -234,60 +349,6 @@ dawn-field-theory/
           theoretical_framework.md
           thermodynamic_validation.md
           unified_symbolic_engine.md
-  blueprints/
-    LICENSE.md
-    README.md
-    bias.py
-    cognition_index_protocol.md
-    qsocket.md
-    AI_detection/
-      [cip][experiment][v1.0][2025-06-30]_dawn_field_recursive_fractal_entropy_provenance_pipeline.py
-      [cip][protocol][v1.0][2025-06-30]_dawn_field_protocol_recursive_fractal_entropy_provenance.md
-    balance_based_energy_generation/
-      README.md
-      balance_based_energy_generationv1.py
-      balance_based_energy_generationv2.py
-      carbon_energy_math.md
-      carbon_energy_report.md
-      carbon_energy_strategy_logs.py
-      carbon_energy_theory.md
-      carbon_fuel_profiles.md
-      consumer_energy_blueprint.md
-      production_energy_blueprint.md
-      reference_material/
-        balance_based_energy_generationv1_2025-06-17 213826.png
-        balance_based_energy_generationv2_2025-06-17 213826.png
-        balance_based_energy_generationv2_2025-06-17 213826.txt
-        carbon_energy_strategy_logs2025-06-17
-        carbon_energy_strategy_logs2025-06-17 214113.png
-    nuclear_containment/
-      README.md
-      v1/
-        blueprint.md
-        containment_math.md
-        containment_theory.md
-        containment_triptych_with_metrics.py
-        results.md
-        experimental_archive/
-          Containment2D_HighYield.py
-          Containment2D_HighYield_Reflective.py
-          Containment2D_HighYield_Reflective.yaml
-          improved_entropy_suppression_sim.py
-          nuclear_blast_simulation.py
-          sub_meter.py
-          unfinished_full_containment_sim.py
-        images/
-          containment_triptych.png
-          full_containment_result.png
-          none_containment_result.png
-          shell_only_containment_result.png
-          side_by_side_comparison.png
-          uncontained_blast_control.png
-        reference_material/
-          containment_metrics.csv
-          containment_triptych.png
-      v2/
-        v2_roadmap.md
   citations/
     README.md
     contributors-index.json
@@ -308,7 +369,6 @@ dawn-field-theory/
     README.md
     lexicon.md
     lexicon.yaml
-    whats_next.md
     arithmetic/
       README.md
       confluence_operator_recursive_arithmetic.md
@@ -6492,55 +6552,6 @@ dawn-field-theory/
           exp_16_fred_dfa_analysis.py
           prediction_tracker.py
           wealth_gravity_sim.py
-    legacy_docs_archive/
-      AI_Black_Hole_Information_Paper _1_.md
-      AI_Hawking_Radiation_Info_Paper _1_.md
-      AI_J Quantum Measurement_J and the Fabric of Reality.md
-      AI_Newtonian_Quantum_Integration_Paper _1_.md
-      AI_Quantum_Measurement_Whitepaper.md
-      AI_Wavefunction_Collapse_CIMM_Integration _1_.md
-      CIMM _ QBE Cosmological Framework_ Theory and Mathematical Foundations.md
-      CIMM _ QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational Field.md
-      CIMM_Andromeda_Paradox.md
-      CIM_Dissertation_Updated.md
-      DissertationDraft0.0.2.md
-      Document- Intrinsic Structural Metadata _ISM_ _ A New Paradigm in Compression Intelligence.md
-      Entropy_Balanced_Learning_Rate_Integration_Guide.md
-      Quantum Balance Equation revised 2.0.md
-      Quantum Balance Equation.md
-      Quantum Balance Equation_ further insights.md
-      Quantum Balance Equation_Comprehensive Research Archive.md
-      Quantum Balance Observations and Key Findings.md
-      README.md
-      Security Entropy Leak Identifier _SELID__ Full Technical Documentation.md
-      THE PHYSICS UNDERLYING CIMM copy.md
-      THE PHYSICS UNDERLYING CIMM.md
-      The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
-      docx/
-        AI^J Quantum Measurement^J and the Fabric of Reality.docx
-        AI_Black_Hole_Information_Paper (1).docx
-        AI_Hawking_Radiation_Info_Paper (1).docx
-        AI_Newtonian_Quantum_Integration_Paper (1).docx
-        AI_Quantum_Measurement_Whitepaper.docx
-        AI_Wavefunction_Collapse_CIMM_Integration (1).docx
-        CIMM & QBE Cosmological Framework_ Theory and Mathematical Foundations.docx
-        CIMM & QBE Experimental Results_ Simulation of Collapse Epoch and Gravitational Field.docx
-        CIMM_Andromeda_Paradox.docx
-        CIM_Dissertation_Updated.docx
-        DissertationDraft0.0.2.docx
-        Document- Intrinsic Structural Metadata (ISM) — A New Paradigm in Compression Intelligence.docx
-        Entropy-Based Mutation Detection and Repair in Protein Sequences.docx
-        Entropy-Based Repair of BRCA1 Frameshift Mutation (5382insC)(1).docx
-        Entropy_Balanced_Learning_Rate_Integration_Guide.docx
-        Quantum Balance Equation revised 2.0.docx
-        Quantum Balance Equation, further insights.docx
-        Quantum Balance Equation.docx
-        Quantum Balance Equation_Comprehensive Research Archive.docx
-        Quantum Balance Observations and Key Findings.docx
-        Security Entropy Leak Identifier (SELID)_ Full Technical Documentation.docx
-        THE PHYSICS UNDERLYING CIMM copy.docx
-        THE PHYSICS UNDERLYING CIMM.docx
-        The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
   resources/
     publications_registry.yaml
     recursive_structure.png
@@ -6558,19 +6569,6 @@ dawn-field-theory/
     publication_framework_roadmap.md
   spikes/
     RECURSIVE_FRACTAL_ARITHMETIC.md
-    darkmatter_SEC_WIP/
-      README.md
-      astro_data_fetcher.py
-      cosmic_web_simple.py
-      darkmatter.py
-      darkmatter_3d_analysis.png
-      darkmatter_3d_cuda.py
-      darkmatter_cosmic_web.py
-      darkmatter_temporal_gradient.py
-      galaxy_temporal_gradient.py
-      sec_auto_tuning_engine.py
-      sec_simulation_based_tuning.py
-      test_astro_fetcher.py
     infodynamic_gravity/
       MACRO_EMERGENCE_BREAKTHROUGH_REPORT.md
       MACRO_EMERGENCE_REPORT.md
