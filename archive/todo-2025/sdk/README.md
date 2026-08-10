@@ -99,8 +99,8 @@ Built on proven information amplification theory:
 
 ## Getting Started
 
-See [Quick Start Guide](docs/quickstart.md) for installation and basic usage.
-See [Protocol Reference](protocol/specification.md) for complete technical details.
+See [Quick Start Guide](compression/docs/quickstart.md) for installation and basic usage.
+See [Protocol Reference](compression/protocol/specification.md) for complete technical details.
 See [Examples](examples/) for working demonstrations.
 
 ## Research Foundation

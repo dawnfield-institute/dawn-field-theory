@@ -15,7 +15,7 @@ This document outlines a proposed system for modular citation within the Dawn Fi
 
 Motivation
 
-Preserve intellectual authorship for foundational work (Peter Groom).
+Preserve intellectual authorship for theory work (Peter Groom).
 
 Enable fair attribution to contributors for significant pull requests.
 

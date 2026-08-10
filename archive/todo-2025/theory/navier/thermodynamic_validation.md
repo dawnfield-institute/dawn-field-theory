@@ -9,7 +9,7 @@ authors:
 related_files:
   - theoretical_framework.md
   - metrics_and_validation.md
-  - ../foundational/experiments/archive/era1/landauer_erasure_field_cost_map/
+  - ../archive/era1-symbolic/unified_emergence_v2/
 keywords:
   - thermodynamic_validation
   - landauer_principle

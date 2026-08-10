@@ -182,7 +182,7 @@ When queried, a chunk can:
 * [ ] Implement recursive loader and context expander
 * [ ] Prototype backlink generator
 * [ ] Begin embedding generation and vector indexing
-* [ ] Apply FDO to at least 3 foundational documents
+* [ ] Apply FDO to at least 3 theory documents
 * [ ] Construct cognitive graph visualization prototype
 
 ---

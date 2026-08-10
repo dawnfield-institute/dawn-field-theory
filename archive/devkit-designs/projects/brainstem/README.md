@@ -38,7 +38,7 @@ Traditional graph visualization becomes cognitively overwhelming with scale:
 ## 🔧 Our Solution
 
 ### Recursive Tree-Based Fractal Visualization
-Directly implementing the architecture demonstrated in `foundational/experiments/archive/era1/recursive_tree/recursive_tree.py`:
+Directly implementing the architecture demonstrated in `archive/era1-symbolic/recursive_tree/scripts/recursive_tree.py`:
 
 ```
 Knowledge Repository → CIP Parsing → Semantic Analysis → 

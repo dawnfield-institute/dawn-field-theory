@@ -50,7 +50,7 @@ These results suggest that simultaneity is an emergent property of information p
 5. Conclusion
 The Andromeda Paradox is traditionally viewed as a relativistic effect of space-time slicing. However, by introducing quantum interaction rates and entropy flow into the analysis, we demonstrate that simultaneity is a function of information density and motion-induced entropy structuring. This approach not only resolves the paradox but also provides a deeper understanding of time as an emergent informational construct rather than a fundamental property of space-time. Future research could extend this model to quantum gravity and cosmological time evolution.
 6. References
-(To be added, including foundational works on relativity, quantum mechanics, and information theory.)
+(To be added, including theory works on relativity, quantum mechanics, and information theory.)
 ```yaml
 document_title: Resolving the Andromeda Paradox Through Quantum Information and Entropy Structuring
 version: 1.0

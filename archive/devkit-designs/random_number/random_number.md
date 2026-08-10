@@ -83,10 +83,10 @@ Benchmarked against:
 
 ## Navigation
 - [README](../../README.md)
-- [Timeline](../../timeline.md)
+- [Timeline](../../../timeline.md)
 - [Intentions](../../INTENTIONS.md)
-- [License Appendix](../../LICENSE_APPENDIX.md)
+- [License Appendix](../../../LICENSE_APPENDIX.md)
 
 ---
 
-© 2025 Dawn Field Theory. See [LICENSE_APPENDIX.md](../../LICENSE_APPENDIX.md).
+© 2025 Dawn Field Theory. See [LICENSE_APPENDIX.md](../../../LICENSE_APPENDIX.md).

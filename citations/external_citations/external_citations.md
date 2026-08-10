@@ -1,6 +1,6 @@
 ### External Citations for Dawn Field Theory and Related Work
 
-This document collects foundational external works referenced or aligned with the development of Dawn Field Theory, CIMM, SEC, and related concepts.
+This document collects theory external works referenced or aligned with the development of Dawn Field Theory, CIMM, SEC, and related concepts.
 
 #### General Information Theory
 

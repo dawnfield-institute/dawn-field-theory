@@ -7,9 +7,9 @@ date_created: 2025-08-16
 authors:
   - Peter Groom
 related_experiments:
-  - foundational/experiments/archive/era1/recursive_gravity
-  - foundational/experiments/archive/era1/symbolic_entropy_collapse
-  - foundational/experiments/archive/era1/entropy_information_polarity_field
+  - archive/era1-symbolic/recursive_gravity
+  - archive/era1-symbolic/symbolic_entropy_collapse
+  - archive/era1-symbolic/entropy_information_polarity_field
 keywords:
   - navier-stokes
   - symbolic_collapse

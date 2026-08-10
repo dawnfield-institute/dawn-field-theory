@@ -29,5 +29,5 @@ This roadmap covers the formalization and development of recursive mathematics, 
 ---
 
 ## Links
-- [Mathematics Next Steps](../todo/mathmatics_next_steps.md)
-- [Roadmap Draft](../todo/roadmap_draft.md)
+- [Mathematics Next Steps](../papers/resources/mathmatics_next_steps.md)
+- [Roadmap Draft](../archive/todo-2025/roadmap_draft.md)

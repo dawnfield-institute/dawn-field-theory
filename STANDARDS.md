@@ -36,7 +36,7 @@ Research repos additionally have `.spec/` where code is spec-driven.
 
 ## 2. Experiment standard
 
-Applies to `dawn-field-theory/foundational/experiments/`, and to any repo carrying
+Applies to `dawn-field-theory/experiments/milestones/`, and to any repo carrying
 experiments (`dawn-models`, `reality-engine`).
 
 ### 2.1 Required structure
@@ -86,8 +86,8 @@ track what the framework's vocabulary and methods actually were at the time.
 | `era3-pac-formalization-2026q1` | 2026-01 → 2026-04 | PAC/SEC axioms, M1–M5, constants derivation |
 | `era4-milestone-stack-2026q2` | 2026-04 → present | M6–M15 + R; ADE, complement, holonomy |
 
-Era 1–2 experiments live under `foundational/experiments/archive/era1|era2/`.
-Era 3–4 experiments live flat under `foundational/experiments/`.
+Era 1–2 experiments live under `experiments/milestones/archive/era1|era2/`.
+Era 3–4 experiments live flat under `experiments/milestones/`.
 
 **Assigning an era.** Use the date the work *matured* — its last substantive commit —
 not its first. Experiments are frequently opened in one era and concluded in the next
@@ -171,11 +171,11 @@ Standard practice since 2026-06-11. For any experiment intended as evidence:
 |---|---|---|
 | `spikes/` | exploratory; may be promoted to an experiment | none |
 | `archive/blueprints/` | speculative applications of settled theory | none |
-| `foundational/experiments/` | structured research | §2 in full |
-| `foundational/experiments/archive/<era>/` | Era 1–2 experiments | as-was; frozen |
+| `experiments/milestones/` | structured research | §2 in full |
+| `experiments/milestones/archive/<era>/` | Era 1–2 experiments | as-was; frozen |
 
-Promotion path is `spikes/` → `foundational/experiments/`. Never create an experiment
-outside `foundational/experiments/`.
+Promotion path is `spikes/` → `experiments/milestones/`. Never create an experiment
+outside `experiments/milestones/`.
 
 ---
 
@@ -257,7 +257,7 @@ already exist and are not required for new directories.
 
 ## 6. Journal schema
 
-Supersedes `foundational/experiments/JOURNAL_SCHEMA.md` v1.1 and the journal section of
+Supersedes `experiments/milestones/JOURNAL_SCHEMA.md` v1.1 and the journal section of
 `experiment-schema.instructions.md`, which differed on heading format.
 
 **Filename:** `journals/YYYY-MM-DD_descriptive_slug.md` — lowercase, underscores, 3–5 words.

@@ -44,12 +44,12 @@ The Dawn Field Theory repository has grown significantly since v1.0.0, and we're
 ## 🏗️ Proposed Repository Structure
 
 ### 1. **`dawn-field-theory`** (Core Theory Repository)
-**Role:** Pure theory, foundational research, and experimental validation  
+**Role:** Pure theory, theory research, and experimental validation  
 **Proposed License:** AGPL-3.0 + Epistemic Constraint Framework *(current)*
 
 ```
 dawn-field-theory/
-├── foundational/           # Mathematical foundations and theory
+├── theory/           # Mathematical foundations and theory
 ├── citations/             # Research attribution and references  
 ├── cognition_index_protocol/  # CIP specification
 ├── LICENSE + LICENSE_APPENDIX.md
@@ -213,7 +213,7 @@ Each repository will include CIP metadata for cross-repository navigation:
 schema_version: 2.0
 repository_role: sdk  # theory, devkit, models, protocol, infrastructure
 ecosystem_links:
-  theory: "repo://dawn-field-theory/foundational/"
+  theory: "repo://dawn-field-theory/theory/"
   sdk: "repo://fracton-sdk/"
   devkit: "repo://dawn-devkit/"
   models: "repo://dawn-models/"
@@ -284,7 +284,7 @@ We value community input on this restructure. Please share feedback on:
 1. **GitHub Issues**: Open an issue in this repository with your feedback
 2. **Discussions**: Use GitHub Discussions for broader conversations
 3. **Pull Requests**: Propose specific changes to this document
-4. **Direct Contact**: Reach out via the contact methods in [`MISSION.md`](MISSION.md)
+4. **Direct Contact**: Reach out via the contact methods in [`MISSION.md`](../MISSION.md)
 
 ---
 
@@ -337,4 +337,4 @@ This restructure supports our long-term vision of:
 
 **Repository:** https://github.com/dawnfield-institute/dawn-field-theory  
 **License:** AGPL-3.0 + Epistemic Constraint Framework  
-**Contact:** See [`MISSION.md`](MISSION.md) for institutional information
+**Contact:** See [`MISSION.md`](../MISSION.md) for institutional information

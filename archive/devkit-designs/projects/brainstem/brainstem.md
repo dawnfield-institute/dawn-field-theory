@@ -15,8 +15,8 @@ field_scope:
   - ai_native_interfaces
   - knowledge_navigation
 experiment_links:
-  - ../foundational/experiments/archive/era1/recursive_tree/recursive_tree.py
-  - ../foundational/experiments/archive/era1/recursive_tree/results.md
+  - ../archive/era1-symbolic/recursive_tree/recursive_tree.py
+  - ../archive/era1-symbolic/recursive_tree/results.md
 license: Copyleft (custom Dawn license)
 document_status: design_phase
 data_provenance: collaborative_design_session
@@ -46,10 +46,10 @@ tags:
 Current AI-repository interactions suffer from the "cold start" problem - agents must blindly explore file structures without contextual understanding, leading to inefficient knowledge acquisition and missed semantic relationships. The exponential complexity problem (20^4 = 160,000 nodes) makes traditional graph visualization cognitively overwhelming.
 
 ### 1.2 The Solution
-A web-based CIP-MCP interface that provides **recursive tree-based fractal visualization** of knowledge structures, directly implementing the architecture demonstrated in `foundational/experiments/archive/era1/recursive_tree/recursive_tree.py`. This acts as a cognitive brainstem - handling the unconscious knowledge organization that enables higher-level reasoning.
+A web-based CIP-MCP interface that provides **recursive tree-based fractal visualization** of knowledge structures, directly implementing the architecture demonstrated in `archive/era1-symbolic/recursive_tree/scripts/recursive_tree.py`. This acts as a cognitive brainstem - handling the unconscious knowledge organization that enables higher-level reasoning.
 
 ### 1.3 Core Innovation
-**Natural Knowledge Architecture**: Following the recursive tree experiment, repositories should grow organically like biological structures - dense at the core (foundational concepts), branching into specialized domains, with natural pruning at the periphery. Each node represents a directory/concept, each branch represents relationships, and symbolic payloads contain the actual files and metadata.
+**Natural Knowledge Architecture**: Following the recursive tree experiment, repositories should grow organically like biological structures - dense at the core (theory concepts), branching into specialized domains, with natural pruning at the periphery. Each node represents a directory/concept, each branch represents relationships, and symbolic payloads contain the actual files and metadata.
 
 ---
 
@@ -77,7 +77,7 @@ class RepositoryTree:
 ### 2.2 Natural Sparsity Solves Exponential Problem
 
 Unlike forced graph structures, natural knowledge architectures are **inherently sparse**:
-- **Dense core**: 5-10 foundational concepts with high interconnection
+- **Dense core**: 5-10 theory concepts with high interconnection
 - **Primary branches**: 3-5 major domains per core concept
 - **Secondary branches**: 2-4 specializations per domain
 - **Leaf nodes**: Individual implementations (naturally limited)
@@ -370,11 +370,11 @@ class CIPRecursiveGrowthEngine:
 │ │                                         │ │  📋 Branch Context          │ │
 │ │    🌳 Repository Tree (3D)              │ │                             │ │
 │ │                                         │ │  📍 Current Branch:         │ │
-│ │   [Recursive Tree Visualization]        │ │  foundational/experiments/  │ │
+│ │   [Recursive Tree Visualization]        │ │  experiments/milestones/  │ │
 │ │                                         │ │  symbolic_entropy_collapse  │ │
 │ │  Purple branches showing semantic       │ │                             │ │
 │ │  relationships, with concept labels     │ │  🔗 Parent Branch:          │ │  
-│ │  at key nodes. Dual-lobe structure     │ │  foundational/experiments   │ │
+│ │  at key nodes. Dual-lobe structure     │ │  experiments/milestones   │ │
 │ │  clearly visible.                       │ │                             │ │
 │ │                                         │ │  🌿 Child Branches:         │ │
 │ │  🟣 Theory Branches                     │ │  • reference_material/      │ │
@@ -386,7 +386,7 @@ class CIPRecursiveGrowthEngine:
 │ ┌─────────────────────────────────────────┐ │  field_dynamics             │ │
 │ │  🛤️ Growth Path History                │ └─────────────────────────────┘ │
 │ │                                         │                               │ │
-│ │  root → foundational → experiments      │ ┌─────────────────────────────┐ │
+│ │  root → theory → experiments      │ ┌─────────────────────────────┐ │
 │ │      → symbolic_entropy_collapse        │ │  🤖 AI Tree Navigator       │ │
 │ │                                         │ │                             │ │
 │ │  💾 Export Tree  📥 Import Structure    │ │  "I can see you're exploring│ │
@@ -535,7 +535,7 @@ The dual-lobe structure (theory/practice) demonstrates **bifractal organizationa
 - **Ecosystem Visualization**: Show how multiple repositories interconnect
 
 ### 11.2 Biological Metaphors
-- **Root System**: Visualize foundational dependencies below ground
+- **Root System**: Visualize theory dependencies below ground
 - **Seasonal Changes**: Show repository activity cycles
 - **Pruning Tools**: Allow users to trim unnecessary branches
 
@@ -587,4 +587,4 @@ This implementation provides empirical validation for:
 
 ---
 
-*This design document serves as the foundational blueprint for implementing the CIP-MCP Fractal Interface based directly on the recursive tree experiment architecture. It should be treated as a living document that evolves as we learn from implementation and validation against the actual recursive tree results.*
+*This design document serves as the theory blueprint for implementing the CIP-MCP Fractal Interface based directly on the recursive tree experiment architecture. It should be treated as a living document that evolves as we learn from implementation and validation against the actual recursive tree results.*

@@ -25,7 +25,7 @@ Post-symbolic systems can model and extend beyond these limits through:
 ## Systems Under Test
 
 ### Symbolic Baseline (Existing Infrastructure)
-- **MED Navier-Stokes Framework**: `foundational/arithmetic/macro_emergence_dynamics/master_recursive_gravity_experiment.py`
+- **MED Navier-Stokes Framework**: `experiments/studies/macro_emergence_dynamics/master_recursive_gravity_experiment.py`
   - Proven universal bounded complexity (1000+ simulations)
   - Optimized parameters (α=0.005857, ξ=1.0571, ν=0.025000)
   - Comprehensive validation pipeline
@@ -33,14 +33,14 @@ Post-symbolic systems can model and extend beyond these limits through:
 - **SEC Formal Models**: Symbolic entropy collapse with defined operators
 
 ### Post-Symbolic Engines (Enhanced from Legacy)
-- **CosmoV2**: Enhanced from `foundational/experiments/archive/era1/legacy/cosmo.py`
+- **CosmoV2**: Enhanced from `archive/era1-symbolic/legacy/cosmo.py`
   - SHA-256 entropy seeding
   - QPL field memory
   - Thermodynamic actualization
-- **BrainEngine**: Enhanced from `foundational/experiments/archive/era1/legacy/brain.py`
+- **BrainEngine**: Enhanced from `archive/era1-symbolic/legacy/brain.py`
   - Entropic intelligence under collapse tension
   - Adaptive cognitive architectures
-- **vCPU Collapse**: Enhanced from `foundational/experiments/archive/era1/legacy/vcpu.py`
+- **vCPU Collapse**: Enhanced from `archive/era1-symbolic/legacy/vcpu.py`
   - GPU-accelerated entropy balance
   - Emergent logic formation
 

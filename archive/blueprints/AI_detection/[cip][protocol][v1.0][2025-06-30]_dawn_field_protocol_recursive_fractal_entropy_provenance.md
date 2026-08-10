@@ -10,9 +10,9 @@ date: 2025-06-30
 status: DRAFT
 version: 1.0
 repo\_reference:
-\- foundational/experiments/recursive\_entropy
-\- foundational/experiments/symbolic\_bifractal
-\- foundational/devkit/compression
+\- experiments/milestones/recursive\_entropy
+\- experiments/milestones/symbolic\_bifractal
+\- theory/devkit/compression
 keywords:
 \- provenance
 \- fractal dimension
@@ -139,6 +139,6 @@ Recursive, entropy-adaptive field analysis grounded in Dawn Field Theory provide
 
 ## References
 
-* Dawn Field Theory repository (see foundational/experiments, docs)
+* Dawn Field Theory repository (see theory/experiments, docs)
 * Related works on fractal geometry, information theory, and symbolic field modeling
 * \[Additional references tailored as needed for publication]

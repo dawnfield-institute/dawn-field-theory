@@ -74,7 +74,7 @@ const FractalRepository: React.FC = () => {
 ```
 
 #### **Integration Points**
-- **Direct use**: `foundational/experiments/archive/era1/recursive_tree/recursive_tree.py`
+- **Direct use**: `archive/era1-symbolic/recursive_tree/scripts/recursive_tree.py`
 - **CIP Bridge**: Existing CIP v1.0 metadata and navigation
 - **SCBF Audit**: Real-time tracking using existing metrics
 

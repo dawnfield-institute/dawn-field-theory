@@ -1,6 +1,6 @@
 # Nuclear Containment Blueprints
 
-This directory contains the evolving design, theory, and simulation work for **nuclear-scale entropy containment** using the DAWN Field Theory framework. Here you’ll find both foundational experiments and advanced enhancements aimed at stabilizing high-entropy events—such as nuclear detonations—through informatic field control rather than traditional material barriers.
+This directory contains the evolving design, theory, and simulation work for **nuclear-scale entropy containment** using the DAWN Field Theory framework. Here you’ll find both theory experiments and advanced enhancements aimed at stabilizing high-entropy events—such as nuclear detonations—through informatic field control rather than traditional material barriers.
 
 ---
 
@@ -31,7 +31,7 @@ Key ideas:
 ### v1: Baseline Theory & Results
 
 - **Blueprint, Theory, and Math:**  
-  See [`v1/blueprint.md`](v1/blueprint.md), [`v1/containment_theory.md`](v1/containment_theory.md), and [`v1/containment_math.md`](v1/containment_math.md) for the foundational architecture and equations.
+  See [`v1/blueprint.md`](v1/blueprint.md), [`v1/containment_theory.md`](v1/containment_theory.md), and [`v1/containment_math.md`](v1/containment_math.md) for the theory architecture and equations.
 - **Simulations:**  
   - [`containment_triptych_with_metrics.py`](v1/containment_triptych_with_metrics.py): Compares uncontained, late, and pre-primed containment.
   - [`sub_meter.py`](v1/experimental_archive/sub_meter.py): Sub-meter containment and noise resilience.

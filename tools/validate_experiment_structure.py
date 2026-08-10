@@ -19,8 +19,8 @@ import sys
 import yaml
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXPERIMENTS = os.path.join(REPO, "foundational", "experiments")
-ARCHIVE = os.path.join(EXPERIMENTS, "archive")
+EXPERIMENTS = os.path.join(REPO, "experiments")
+ARCHIVE = os.path.join(REPO, "archive")
 
 VALID_STATUS = {"active", "completed", "archived", "falsified"}
 VALID_ERA = {
@@ -132,12 +132,23 @@ def check_structure(exp: str, d: str) -> None:
         warn(exp, f"{len(loose)} loose .py at root (belongs in scripts/): {loose[0]}")
 
 
+# STANDARDS.md section 3: spikes are exploratory and exempt from the experiment
+# standard by definition. They are not validated here.
+GROUPS = ("milestones", "sidecars", "studies")
+
+
 def iter_experiments():
-    for name in sorted(os.listdir(EXPERIMENTS)):
-        d = os.path.join(EXPERIMENTS, name)
-        if not os.path.isdir(d) or name == "archive" or name.startswith("."):
+    for group in GROUPS:
+        gd = os.path.join(EXPERIMENTS, group)
+        if not os.path.isdir(gd):
             continue
-        yield name, d, False
+        for name in sorted(os.listdir(gd)):
+            d = os.path.join(gd, name)
+            if not os.path.isdir(d) or name.startswith("."):
+                continue
+            yield f"{group}/{name}", d, False
+    # Archived experiments live under archive/<era>/ alongside non-experiment
+    # material; only directories carrying a meta.yaml are experiments.
     if os.path.isdir(ARCHIVE):
         for era in sorted(os.listdir(ARCHIVE)):
             era_dir = os.path.join(ARCHIVE, era)
@@ -145,10 +156,9 @@ def iter_experiments():
                 continue
             for name in sorted(os.listdir(era_dir)):
                 d = os.path.join(era_dir, name)
-                if not os.path.isdir(d):
+                if not os.path.isdir(d) or name.startswith("cross_experiment_"):
                     continue
-                # Relocated cross-experiment artifacts, not experiments.
-                if name.startswith("cross_experiment_"):
+                if not os.path.exists(os.path.join(d, "meta.yaml")):
                     continue
                 yield f"{era}/{name}", d, True
 

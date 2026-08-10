@@ -14,11 +14,11 @@ published_preprints:
     status: "draft"
     publication_id: "17024434"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/symbolic_entropy_collapse_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/symbolic_entropy_collapse_preprint.pdf"
+      markdown: "papers/drafts/symbolic_entropy_collapse_preprint.md"
+      pdf: "papers/pdfs/symbolic_entropy_collapse_preprint.pdf"
     repository_mapping:
-      - "foundational/experiments/archive/era1/symbolic_entropy_collapse/"
-      - "foundational/arithmetic/SEC/"
+      - "archive/era1-symbolic/symbolic_entropy_collapse/"
+      - "archive/era1-symbolic/SEC/"
       - "devkit/compression/"
     tags: ["entropy", "collapse", "quantum", "topological", "dynamics"]
     
@@ -28,8 +28,8 @@ published_preprints:
     status: "draft"
     publication_id: "17024220"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/cognition_index_protocol_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/cognition_index_protocol_preprint.pdf"
+      markdown: "papers/drafts/cognition_index_protocol_preprint.md"
+      pdf: "papers/pdfs/cognition_index_protocol_preprint.pdf"
     repository_mapping:
       - "cognition_index_protocol/"
       - "devkit/infrastructure/"
@@ -42,8 +42,8 @@ published_preprints:
     status: "draft"
     publication_id: "17024098"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/symbolic_cognition_collapse_interpretability_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/symbolic_cognition_collapse_interpretability_preprint.pdf"
+      markdown: "papers/drafts/symbolic_cognition_collapse_interpretability_preprint.md"
+      pdf: "papers/pdfs/symbolic_cognition_collapse_interpretability_preprint.pdf"
     repository_mapping:
       - "models/scbf/"
       - "models/TinyCIMM/"
@@ -56,12 +56,12 @@ published_preprints:
     status: "draft"
     publication_id: "17023921"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/resonant_symbolic_convergence_human_agent_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/resonant_symbolic_convergence_human_agent_preprint.pdf"
+      markdown: "papers/drafts/resonant_symbolic_convergence_human_agent_preprint.md"
+      pdf: "papers/pdfs/resonant_symbolic_convergence_human_agent_preprint.pdf"
     repository_mapping:
       - "models/TinyCIMM/"
       - "cognition_index_protocol/"
-      - "foundational/experiments/archive/era1/recursive_gravity/"
+      - "archive/era1-symbolic/recursive_gravity/"
     tags: ["ai", "human-agent", "convergence", "co-computational", "ecology"]
     
   - id: "dawn_field_theory_unified"
@@ -70,11 +70,11 @@ published_preprints:
     status: "draft"
     publication_id: "17024367"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/dawn_field_theory_synthesis_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/dawn_field_theory_synthesis_preprint.pdf"
+      markdown: "papers/drafts/dawn_field_theory_synthesis_preprint.md"
+      pdf: "papers/pdfs/dawn_field_theory_synthesis_preprint.pdf"
     repository_mapping:
-      - "foundational/docs/"
-      - "foundational/arithmetic/"
+      - "archive/era1-symbolic/"
+      - "archive/era1-symbolic/"
       - "infodynamics.md"
       - "dawn-field-theory.md"
     tags: ["cosmic-information", "field-theory", "synthesis", "unified-framework"]
@@ -86,8 +86,8 @@ pending_drafts:
     status: "draft"
     publication_id: "17041188"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/dawn_field_theory_infodynamics_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/dawn_field_theory_infodynamics_preprint.pdf"
+      markdown: "papers/drafts/dawn_field_theory_infodynamics_preprint.md"
+      pdf: "papers/pdfs/dawn_field_theory_infodynamics_preprint.pdf"
     
   - id: "macro_emergence_dynamics"
     title: "Macro Emergence Dynamics: Navier-Stokes Extensions"
@@ -95,8 +95,8 @@ pending_drafts:
     status: "draft"
     publication_id: "17041215"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/macro_emergence_dynamics_navier_stokes_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/macro_emergence_dynamics_navier_stokes_preprint.pdf"
+      markdown: "papers/drafts/macro_emergence_dynamics_navier_stokes_preprint.md"
+      pdf: "papers/pdfs/macro_emergence_dynamics_navier_stokes_preprint.pdf"
     
   - id: "recursive_mathematical_plasticity"
     title: "Recursive Mathematical Plasticity: Entropy Architecture"
@@ -104,8 +104,8 @@ pending_drafts:
     status: "draft"
     publication_id: "17041249"
     local_files:
-      markdown: "foundational/docs/preprints/drafts/recursive_mathematical_plasticity_entropy_architecture_preprint.md"
-      pdf: "foundational/docs/preprints/drafts/pdfs/recursive_mathematical_plasticity_entropy_architecture_preprint.pdf"
+      markdown: "papers/drafts/recursive_mathematical_plasticity_entropy_architecture_preprint.md"
+      pdf: "papers/pdfs/recursive_mathematical_plasticity_entropy_architecture_preprint.pdf"
 
 citation_formats:
   bibtex: |

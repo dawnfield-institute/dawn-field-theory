@@ -6,7 +6,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15783623.svg)](https://zenodo.org/records/15783623)
 
-[Full theory →](./dawn-field-theory.md) · [Infodynamics →](./infodynamics.md) · [For AI Labs →](./for_ai_labs.md)
+[Full theory →](theory/dawn-field-theory.md) · [Infodynamics →](theory/infodynamics.md) · [For AI Labs →](theory/for_ai_labs.md)
 
 ---
 
@@ -16,7 +16,7 @@ This repository supports structured, machine-readable exploration via directory-
 
 * **Entry points:** `map.yaml` and directory-level `meta.yaml` files
 * **Semantic search:** Use `kronos_search` / `kronos_navigate` to explore by concept, experiment, or theory
-* **For AI agents/scrapers:** See [`for_ai_labs.md`](./for_ai_labs.md) for a targeted overview
+* **For AI agents/scrapers:** See [`for_ai_labs.md`](theory/for_ai_labs.md) for a targeted overview
 
 ---
 
@@ -102,7 +102,7 @@ This framework is designed for testing. If any of the following are observed, th
 - Ξ convergence from independent sources is shown to be coincidental
 - Fibonacci-derived Standard Model parameters are numerologically equivalent to alternatives
 
-*These are computational results across 752 numbered experiments in 73 experiment directories. Independent validation and physical experimentation are actively sought. See [UNIFIED_EVIDENCE.md](./foundational/docs/preprints/UNIFIED_EVIDENCE.md) for the complete derivation chain with full statistical details.*
+*These are computational results across 752 numbered experiments in 73 experiment directories. Independent validation and physical experimentation are actively sought. See [UNIFIED_EVIDENCE.md](./papers/UNIFIED_EVIDENCE.md) for the complete derivation chain with full statistical details.*
 
 ---
 
@@ -139,9 +139,9 @@ GAIA (Generalized Architectures for Intelligent Actualization) treats intelligen
 
 | Path                        | Purpose                                                                 |
 | --------------------------- | ----------------------------------------------------------------------- |
-| `foundational/experiments/` | 73 experiments across 15 milestones — the main content ([index](./foundational/experiments/EXPERIMENTS.md)) |
-| `foundational/docs/`        | Theory documents, preprint packages with code/data/figures              |
-| `foundational/arithmetic/`  | PACEngine — core mathematical tools and conservation math               |
+| `experiments/milestones/` | 73 experiments across 15 milestones — the main content ([index](experiments/EXPERIMENTS.md)) |
+| `archive/era1-symbolic/`        | Theory documents, preprint packages with code/data/figures              |
+| `archive/era1-symbolic/`  | PACEngine — core mathematical tools and conservation math               |
 | `roadmaps/`                 | Current roadmap (M12 planning) and historical planning docs             |
 | `spikes/`                   | Exploratory work not yet promoted to experiments                        |
 | `archive/blueprints/`               | Speculative applications (energy, nuclear containment)                  |
@@ -153,11 +153,11 @@ GAIA (Generalized Architectures for Intelligent Actualization) treats intelligen
 
 ## 📚 Recommended Starting Points
 
-1. **[Full Theory Document →](./dawn-field-theory.md)** - The framework, results, milestones, predictions, and honest limitations
-2. **[Infodynamics →](./infodynamics.md)** - The foundational paradigm: information as generator of structure
+1. **[Full Theory Document →](theory/dawn-field-theory.md)** - The framework, results, milestones, predictions, and honest limitations
+2. **[Infodynamics →](theory/infodynamics.md)** - The theory paradigm: information as generator of structure
 3. **[Theory Map →](./THEORY_MAP.md)** - Navigate the derivation chain, find experiments by concept
 4. **[PACSeries Papers →](https://zenodo.org/records/17295103)** - Published papers with complete validation code
-5. [Experiment Index →](./foundational/experiments/EXPERIMENTS.md) - all 73 experiments by status, with scores
+5. [Experiment Index →](experiments/EXPERIMENTS.md) - all 73 experiments by status, with scores
 6. [Environment & Reproducibility →](./ENVIRONMENT.md)
 
 ---
@@ -190,7 +190,7 @@ Maintained by **The Dawn Field Institute**. See [MISSION.md](./MISSION.md) for i
 **Citation & Attribution:**
 - Substantial contributions are automatically cited via our GitHub Actions workflow
 - See [`citations/README.md`](./citations/README.md) for the full citation system
-- External references and foundational literature: [`citations/external_citations/`](./citations/external_citations/)
+- External references and theory literature: [`citations/external_citations/`](./citations/external_citations/)
 
 **Community Channels:**
 - [Visit Dawn Field website for more info](https://dawnfield.ca/)

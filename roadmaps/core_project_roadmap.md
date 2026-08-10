@@ -31,7 +31,7 @@ Building on validated DFT theory foundations with practical implementations:
 - Repository migration and semantic alignment  
 - CIP protocol upgrades and compliance
 - Modularization of codebase and documentation
-- Publication of foundational preprints
+- Publication of theory preprints
 - Launch of GAIA development
 - Integration of XAI and benchmarking frameworks
 - **NEW**: Practical implementation of scaffolded projects
@@ -71,4 +71,4 @@ Building on validated DFT theory foundations with practical implementations:
 - [README](../README.md)
 - [CONTRIBUTION](../CONTRIBUTION.md)
 - [Publication Framework](../todo/left_for_first_release/AIXPreprint_skeleton.md)
-- [CIP Protocol Extensions](../todo/cip_domain_upgrade.md)
+- [CIP Protocol Extensions](../archive/todo-2025/infra/cip_domain_upgrade.md)

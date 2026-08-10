@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the foundational theory and principles behind a novel energy harvesting mechanism using carbon-based materials like graphite, graphene, and carbon nanotubes (CNTs). The approach leverages electromagnetic induction to disrupt the internal informational balance of a lattice, resulting in a controlled energy release. This is governed by entropy regulation models like the Quantum Balance Equation (QBE) and Recursive Balance Field (RBF).
+This document outlines the theory theory and principles behind a novel energy harvesting mechanism using carbon-based materials like graphite, graphene, and carbon nanotubes (CNTs). The approach leverages electromagnetic induction to disrupt the internal informational balance of a lattice, resulting in a controlled energy release. This is governed by entropy regulation models like the Quantum Balance Equation (QBE) and Recursive Balance Field (RBF).
 
 ## Theoretical Foundation
 

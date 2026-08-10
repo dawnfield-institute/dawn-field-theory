@@ -25,7 +25,7 @@
 ## Near-Term: Publications
 
 ### PACSeries v0.3
-Incorporate M4-M11 results into the paper series. Planning doc at `foundational/docs/preprints/PACSeries/v0.3_PLANNING.md`.
+Incorporate M4-M11 results into the paper series. Planning doc at `papers/series/PACSeries/v0.3_PLANNING.md`.
 
 Papers to update or add:
 - Paper 1 (Erasure Cost): Add M11 Landauer universality (contraction rate = ln(b) for any b)
@@ -74,7 +74,7 @@ Prerequisites: M11 results stable, PACSeries v0.3 drafted.
 
 ## Completed (Reference)
 
-- M1-M11 milestone stack (see milestone directories in `foundational/experiments/`)
+- M1-M11 milestone stack (see milestone directories in `experiments/milestones/`)
 - PACSeries v0.2 on Zenodo (DOI: 10.5281/zenodo.15783623)
 - Root document rewrite (April 2026)
 - M11 hardening cycle (4 rounds, 7 tautologies found and fixed)

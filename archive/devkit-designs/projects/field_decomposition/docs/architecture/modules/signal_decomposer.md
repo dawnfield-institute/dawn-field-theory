@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Signal Decomposer is the foundational module of the Field Decomposition system, responsible for breaking down complex input signals into constituent frequency bands and symbolic layers. It employs recursive bandpass filtering with adaptive thresholds to extract meaningful structure from high-entropy signals while preserving information for downstream analysis.
+The Signal Decomposer is the theory module of the Field Decomposition system, responsible for breaking down complex input signals into constituent frequency bands and symbolic layers. It employs recursive bandpass filtering with adaptive thresholds to extract meaningful structure from high-entropy signals while preserving information for downstream analysis.
 
 ## Core Responsibilities
 

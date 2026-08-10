@@ -10,7 +10,7 @@ This is the **primary source of truth** for the physics. The Kronos vault's 56 p
 
 ```
 dawn-field-theory/
-├── foundational/
+├── theory/
 │   ├── experiments/          # 73 experiment directories (THE MAIN CONTENT)
 │   │   ├── milestone1/       # Standard Model parameter derivations
 │   │   ├── milestone2/       # Mass derivations, Navier-Stokes, Koide
@@ -47,16 +47,16 @@ dawn-field-theory/
 | `infodynamics.md` | Infodynamics foundation |
 | `origin_of_infodynamics.md` | Origin story and motivation |
 | `for_ai_labs.md` | AI-targeted overview |
-| `EPISTEMIC_CORRECTIONS_REGISTRY.md` | Honest record of corrections |
+| `theory/corrections.md` | Honest record of corrections |
 | `CITATION.cff` | Citation metadata (requires DOI verification to modify) |
-| `foundational/experiments/EXPERIMENTS.md` | **Generated experiment index** — the authoritative list |
+| `experiments/EXPERIMENTS.md` | **Generated experiment index** — the authoritative list |
 | `STANDARDS.md` | Canonical spec: structure, meta.yaml, journals, scoring, pre-registration |
 | `map.yaml` | Generated repo tree (do not edit manually) |
 
 ## Conventions
 
 ### Experiment Structure (REQUIRED)
-Every experiment in `foundational/experiments/` must have:
+Every experiment in `experiments/milestones/` must have:
 - `meta.yaml` — schema v2.0 metadata
 - `README.md` — hypothesis, status, key results, FDO links
 - `scripts/` — numbered scripts (`exp_NN_name.py`)
@@ -72,7 +72,7 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ### Spikes vs Experiments
 - `spikes/` — exploratory, no structure requirements, may be promoted to experiments
-- `foundational/experiments/` — structured, documented, must meet standards
+- `experiments/milestones/` — structured, documented, must meet standards
 
 ### Status Values for Experiments
 - `active` — currently being worked on
@@ -92,7 +92,7 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **73 experiment directories** (48 live, 25 archived) holding 752 numbered experiments, in `foundational/experiments/` — see `EXPERIMENTS.md`
+- **73 experiment directories** (48 live, 25 archived) holding 752 numbered experiments, in `experiments/milestones/` — see `EXPERIMENTS.md`
   - M11 score: 52/52 (100%) after hardening cycle (52→49→52)
   - M12 score: 49/52 (94%) — connection as primitive, ADE geometry, Lorentz derivation
   - M13 score: 48/52 core (92%) + 5/16 investigation = 53/68 (78%) after M13.5 stress testing + refinement. PSD degeneracy proven fundamental (exp_16: 0/4, no invariant metric can fix it). Random graph paradox partially explained (exp_17: 2/4, density + spectral radius). 7 honest failures total.
@@ -155,6 +155,6 @@ See `STANDARDS.md` at workspace root for full spec.
 
 - Edit `map.yaml` manually (it's generated, ~104KB)
 - Modify `CITATION.cff` without DOI verification
-- Create experiments outside `foundational/experiments/`
+- Create experiments outside `experiments/milestones/`
 - Create new root-level .md files (use `.changelog/` entries instead)
 - Remove or rename experiment directories without updating Kronos FDO `source_paths`

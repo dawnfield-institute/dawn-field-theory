@@ -29,4 +29,4 @@ This roadmap outlines the structure and process for generating release-ready doc
 
 ## Links
 - [AIX Preprint Skeleton](../todo/left_for_first_release/AIXPreprint_skeleton.md)
-- [Publication Framework](../todo/roadmap_draft.md)
+- [Publication Framework](../archive/todo-2025/roadmap_draft.md)

@@ -8,7 +8,7 @@ This paper explores a reinterpretation of the Navier-Stokes equation through the
 
 ## 1. Introduction
 
-The Navier-Stokes equation serves as a foundational tool in classical physics for modeling fluid motion. Despite its effectiveness, challenges in modeling turbulence and non-linear behavior suggest the need for alternative perspectives. This paper introduces a symbolic modeling framework—derived from bifractal collapse theory—that considers fluid dynamics as a macro-scale expression of symbolic recursion and constraint resolution over time.
+The Navier-Stokes equation serves as a theory tool in classical physics for modeling fluid motion. Despite its effectiveness, challenges in modeling turbulence and non-linear behavior suggest the need for alternative perspectives. This paper introduces a symbolic modeling framework—derived from bifractal collapse theory—that considers fluid dynamics as a macro-scale expression of symbolic recursion and constraint resolution over time.
 
 ---
 

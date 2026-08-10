@@ -476,4 +476,4 @@ async def example_agent_flow():
     }
 ```
 
-This CIP Middleware & Tools module provides the foundational infrastructure for protocol-compliant repository navigation, multi-repository traversal, and agentic workflows while maintaining full auditability and security.
+This CIP Middleware & Tools module provides the theory infrastructure for protocol-compliant repository navigation, multi-repository traversal, and agentic workflows while maintaining full auditability and security.

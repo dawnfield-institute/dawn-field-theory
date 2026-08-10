@@ -22,13 +22,13 @@ links:
   - fracton: todo/sdk/fracton.md
   - field_decomp: todo/sdk/field_decomp.md
   - prometheus: todo/sdk/prometheus.md
-  - recursive_tree_experiment: foundational/experiments/archive/era1/recursive_tree/recursive_tree.py
-  - recursive_entropy_experiment: foundational/experiments/archive/era1/recursive_entropy/recursive_entopy.py
-  - fractal_pruning_results: foundational/experiments/archive/era1/symbolic_fractal_pruning/results.md
-  - symbolic_collapse_pruning: foundational/docs/symbolic_collapse_recursive_field_pruning.md
-  - recursive_entropy_docs: foundational/docs/recursive_entopy.md
-  - recursive_tree_docs: foundational/docs/recursive_tree.md
-  - entropy_regulation_calc: foundational/docs/recursive_calculus_and_entropy_regulation.md
+  - recursive_tree_experiment: archive/era1-symbolic/recursive_tree/scripts/recursive_tree.py
+  - recursive_entropy_experiment: archive/era1-symbolic/recursive_entropy/scripts/recursive_entopy.py
+  - fractal_pruning_results: archive/blueprints/nuclear_containment/v1/results.md
+  - symbolic_collapse_pruning: archive/era1-symbolic/essays/symbolic_collapse_recursive_field_pruning.md
+  - recursive_entropy_docs: archive/era1-symbolic/essays/recursive_entopy.md
+  - recursive_tree_docs: archive/era1-symbolic/essays/recursive_tree.md
+  - entropy_regulation_calc: archive/era1-symbolic/essays/recursive_calculus_and_entropy_regulation.md
   - pruning_theory_infodynamics: todo/left_for_first_release/preprints/drafts/DFT_Infodynamics_preprint_draft.md
   - cip_domain_upgrade: todo/infra/cip_domain_upgrade.md
   - kronos: todo/infra/kronos.md

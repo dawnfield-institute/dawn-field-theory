@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Entropy Engine is responsible for measuring multi-dimensional entropy across component assemblies and applying SEC (Signal/Overlap/Noise) classification. It provides the foundational metrics that drive Aletheia's entropy governance and pruning decisions.
+The Entropy Engine is responsible for measuring multi-dimensional entropy across component assemblies and applying SEC (Signal/Overlap/Noise) classification. It provides the theory metrics that drive Aletheia's entropy governance and pruning decisions.
 
 ## Core Responsibilities
 

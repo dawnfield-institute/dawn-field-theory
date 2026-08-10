@@ -81,12 +81,12 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 ---
 
 ## Phase 2: Simulation Emergence (Wrapping Up, June–July 2025)
-- Migration of foundational experiments and documents nearly complete
+- Migration of theory experiments and documents nearly complete
 - Two remaining papers to be uploaded
 - Finalizing AI whitebox testing: TinyCIMM vs classical ML model
 - Preparing for quantum empirical testing phase
 - Ensuring metadata and project organization are consistent across the repository
-- Hardening and documenting foundational experiments
+- Hardening and documenting theory experiments
 - Adding notebook versions of simulations and experiments
 
 ---
@@ -107,7 +107,7 @@ _A phased roadmap for the development and public release of the Dawn Field Theor
 
 ## Phase 4: Model Genesis and Ingestion (Q4 2025)
 - Begin active development of GAIA (Generalized Architectures for Intelligent Actualization)
-- Integrate foundational experiments and devkit tools into GAIA architecture
+- Integrate theory experiments and devkit tools into GAIA architecture
 - Experimental ingestion of simulations into GAIA models
 
 ---

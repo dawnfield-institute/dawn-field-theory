@@ -4,7 +4,7 @@ This folder contains the automated citation infrastructure for tracking and attr
 
 ## Repository Citation
 
-**Primary Citation:** Use the root `CITATION.cff` file for citing the overall repository and Peter Groom's foundational work.
+**Primary Citation:** Use the root `CITATION.cff` file for citing the overall repository and Peter Groom's theory work.
 
 **BibTeX format:**
 ```bibtex
@@ -62,7 +62,7 @@ citations/
 ├── processed/                   # Auto-archived processed citations
 │   ├── README.md
 │   └── [YYYYMMDD-processed-files]
-└── external_citations/          # External/foundational references
+└── external_citations/          # External/theory references
     ├── README.md
     ├── external_citations.md
     ├── citations_bibtex.bib     # External reference BibTeX
@@ -79,7 +79,7 @@ The citation system is powered by two GitHub Actions workflows:
 
 ## External Citations
 
-For foundational and external references that inform Dawn Field Theory, see [`external_citations/README.md`](external_citations/README.md). This includes classical papers in information theory, entropy, complex systems, and related fields that provide theoretical context for the project.
+For theory and external references that inform Dawn Field Theory, see [`external_citations/README.md`](external_citations/README.md). This includes classical papers in information theory, entropy, complex systems, and related fields that provide theoretical context for the project.
 
 ## Integration with Registration Process
 

@@ -1,10 +1,10 @@
 # External Citations & Foundational References
 
-This directory contains citations for external and foundational works that inform Dawn Field Theory development.
+This directory contains citations for external and theory works that inform Dawn Field Theory development.
 
 ## Contents
 
-- **`external_citations.md`** - Structured list of foundational references organized by topic
+- **`external_citations.md`** - Structured list of theory references organized by topic
 - **`citations_bibtex.bib`** - BibTeX entries for all external citations
 - **`citations_apa.txt`** - APA-formatted citations for external references
 
@@ -42,4 +42,4 @@ This directory is separate from the main citation system in `../` which handles:
 - Pull request citations and project contributions
 - Internal project citation management
 
-External citations here are manually curated foundational references that inform the theoretical development of Dawn Field Theory.
+External citations here are manually curated theory references that inform the theoretical development of Dawn Field Theory.

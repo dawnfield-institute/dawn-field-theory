@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate foundational/experiments/EXPERIMENTS.md from meta.yaml.
+"""Generate experiments/EXPERIMENTS.md from meta.yaml.
 
 The index is generated, never hand-maintained. Five documents in this repo once
 claimed five different experiment counts (51 / 61+ / 117+ / 130+ / 170+) against a
@@ -27,8 +27,8 @@ import yaml
 SCORE_RE = re.compile(r"Score\**\s*:\s*\**\s*(\d+\s*/\s*\d+)", re.IGNORECASE)
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXPERIMENTS = os.path.join(REPO, "foundational", "experiments")
-ARCHIVE = os.path.join(EXPERIMENTS, "archive")
+EXPERIMENTS = os.path.join(REPO, "experiments")
+ARCHIVE = os.path.join(REPO, "archive")
 OUT = os.path.join(EXPERIMENTS, "EXPERIMENTS.md")
 
 ERA_TITLES = {
@@ -69,19 +69,24 @@ def read_score(d: str, meta: dict) -> str:
 
 def collect() -> tuple[list[dict], list[dict]]:
     live, archived = [], []
-    for name in sorted(os.listdir(EXPERIMENTS)):
-        d = os.path.join(EXPERIMENTS, name)
-        if not os.path.isdir(d) or name == "archive" or name.startswith("."):
+    for group in ("milestones", "sidecars", "studies"):
+        gd = os.path.join(EXPERIMENTS, group)
+        if not os.path.isdir(gd):
             continue
-        m = read_meta(d)
-        live.append({
-            "dir": name,
-            "path": name,
-            "title": (m.get("title") or name).strip(),
-            "status": m.get("status", "?"),
-            "era": m.get("era", "?"),
-            "score": read_score(d, m),
-        })
+        for name in sorted(os.listdir(gd)):
+            d = os.path.join(gd, name)
+            if not os.path.isdir(d) or name.startswith("."):
+                continue
+            m = read_meta(d)
+            live.append({
+                "dir": name,
+                "kind": group,
+                "path": f"{group}/{name}",
+                "title": (m.get("title") or name).strip(),
+                "status": m.get("status", "?"),
+                "era": m.get("era", "?"),
+                "score": read_score(d, m),
+            })
     if os.path.isdir(ARCHIVE):
         for era in sorted(os.listdir(ARCHIVE)):
             ed = os.path.join(ARCHIVE, era)
@@ -91,10 +96,12 @@ def collect() -> tuple[list[dict], list[dict]]:
                 d = os.path.join(ed, name)
                 if not os.path.isdir(d) or name.startswith("cross_experiment_"):
                     continue
+                if not os.path.exists(os.path.join(d, "meta.yaml")):
+                    continue
                 m = read_meta(d)
                 archived.append({
                     "dir": name,
-                    "path": f"archive/{era}/{name}",
+                    "path": f"../archive/{era}/{name}",
                     "title": (m.get("title") or name).strip(),
                     "status": m.get("status", "?"),
                     "era": m.get("era", era),
@@ -104,10 +111,16 @@ def collect() -> tuple[list[dict], list[dict]]:
 
 
 def table(rows: list[dict]) -> list[str]:
-    out = ["| Experiment | Title | Score |", "|---|---|---|"]
+    has_kind = any(r.get("kind") for r in rows)
+    head = "| Experiment | Kind | Title | Score |" if has_kind else "| Experiment | Title | Score |"
+    sep = "|---|---|---|---|" if has_kind else "|---|---|---|"
+    out = [head, sep]
     for r in rows:
         score = r["score"] or "—"
-        out.append(f"| [`{r['dir']}`]({r['path']}/) | {r['title']} | {score} |")
+        if has_kind:
+            out.append(f"| [`{r['dir']}`]({r['path']}/) | {r.get('kind','—')} | {r['title']} | {score} |")
+        else:
+            out.append(f"| [`{r['dir']}`]({r['path']}/) | {r['title']} | {score} |")
     out.append("")
     return out
 
@@ -135,9 +148,9 @@ def build() -> str:
     L.append("")
     L.append(
         "Eras, lifecycle values, and the archival rule are defined in "
-        "[`STANDARDS.md`](../../STANDARDS.md) §2.2–2.3. Archived work is preserved "
+        "[`STANDARDS.md`](../STANDARDS.md) §2.2–2.3. Archived work is preserved "
         "lineage, not deprecated work — see "
-        "[`archive/README.md`](archive/README.md)."
+        "[`../archive/README.md`](../archive/README.md)."
     )
     L.append("")
 

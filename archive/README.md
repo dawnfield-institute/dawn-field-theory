@@ -2,11 +2,11 @@
 
 Project material from the 2025 era that is no longer live, kept for lineage rather than
 use. Experiments are archived separately, under
-[`foundational/experiments/archive/`](../foundational/experiments/archive/README.md).
+[`experiments/milestones/archive/`](../experiments/milestones/milestone1/README.md).
 
 | Directory | Was | Why it's here |
 |---|---|---|
-| `legacy-docs/` | `foundational/legacy_docs_archive/` | Pre-Dawn-Field whitepapers from the CIMM/QBE period — Quantum Balance Equation drafts, CIMM physics and dissertation material, AI-authored quantum papers. It was filed under `foundational/`, which implied current theory; it predates the theory. 12 of its `.docx` have no markdown twin, so that directory is the only copy of their content. |
+| `legacy-docs/` | `theory/legacy_docs_archive/` | Pre-Dawn-Field whitepapers from the CIMM/QBE period — Quantum Balance Equation drafts, CIMM physics and dissertation material, AI-authored quantum papers. It was filed under `theory/`, which implied current theory; it predates the theory. 12 of its `.docx` have no markdown twin, so that directory is the only copy of their content. |
 | `blueprints/` | `blueprints/` | Speculative applications — nuclear containment, balance-based energy generation, AI detection. No content commit since 2025-06-30. |
 | `spike-darkmatter-sec/` | `spikes/darkmatter_SEC_WIP/` | Cosmic-web and galaxy temporal-gradient simulations. Self-labelled WIP, cold since 2025-09. |
 | `REPOSITORY_RESTRUCTURE_PLAN.md` | repo root | The September 2025 multi-repo split plan, self-declared superseded. Preserved because the split it describes is why `fracton`, `reality-engine` and the rest are separate repos. |

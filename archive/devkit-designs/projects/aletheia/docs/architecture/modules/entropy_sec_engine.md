@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Entropy & SEC Engine serves as the foundational entropy governance system of the Aletheia Foundry, implementing sophisticated entropy analysis, SEC (Structural Entropy Classification) framework integration, and entropy-guided optimization throughout the component synthesis lifecycle. It provides the mathematical foundation for entropy-based decision making, quality assessment, and optimization strategies that ensure all synthesized components maintain optimal entropy characteristics and comply with Dawn Field Theory principles.
+The Entropy & SEC Engine serves as the theory entropy governance system of the Aletheia Foundry, implementing sophisticated entropy analysis, SEC (Structural Entropy Classification) framework integration, and entropy-guided optimization throughout the component synthesis lifecycle. It provides the mathematical foundation for entropy-based decision making, quality assessment, and optimization strategies that ensure all synthesized components maintain optimal entropy characteristics and comply with Dawn Field Theory principles.
 
 ## Core Responsibilities
 

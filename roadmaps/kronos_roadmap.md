@@ -195,6 +195,6 @@ Build a complete FDO ecosystem that demonstrates the practical power of Dawn Fie
 
 ## Links
 - [Kronos Architecture Documentation](../devkit/projects/kronos/docs/architecture/)
-- [FDO Specification](../devkit/projects/kronos/docs/fdo_specification.md)
-- [Implementation Roadmap](../devkit/projects/kronos/docs/implementation_roadmap.md)
-- [Phased Implementation Guide](../devkit/projects/PHASED_ROADMAP.md)
+- [FDO Specification](../archive/devkit-designs/projects/kronos/docs/fdo_specification.md)
+- [Implementation Roadmap](../archive/devkit-designs/projects/kronos/docs/implementation_roadmap.md)
+- [Phased Implementation Guide](../archive/devkit-designs/projects/PHASED_ROADMAP.md)

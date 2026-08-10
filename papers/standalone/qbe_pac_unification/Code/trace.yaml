@@ -1,0 +1,21 @@
+﻿schema_version: '2.0'
+created: '2025-12-20'
+updated: '2025-12-22'
+description: Traces code files back to their original repository locations
+
+source_repositories:
+  - name: dawn-field-theory
+    url: https://github.com/dawn-field-institute/dawn-field-theory
+
+files:
+  - local: papers/standalone/qbe_pac_unification/Code/experiments/exp_01_qbe_pac_unification.py
+    source: dawn-field-theory/archive/era2-prefield/prime_harmonic_manifold/scripts/exp_32_qbe_pac_unification.py
+    description: Tests whether PAC dynamics naturally produce the 0.02 Hz timescale
+    key_results:
+      - "Both PAC and QBE produce 0.020 Hz via FFT"
+      - "PAC theoretical frequency: 0.037 Hz"
+      - "Legacy QBE used 0.02 as empirical damping coefficient"
+
+legacy_exploratory:
+  note: "experiments/exploratory/ and experiments/validated/ contain prior work"
+  source: dawn-field-theory/archive/era2-prefield/pac_confluence_xi/

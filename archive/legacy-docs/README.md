@@ -1,6 +1,6 @@
 # 🗂️ Legacy Docs Archive
 
-Welcome to the **historical archive** of the Dawn Field Theory project. 🕰️ This directory preserves foundational ideas, deprecated drafts, and early exploratory writings that informed the current state of the theory. It's a mix of wild insights, technical depth, and raw creative energy from the early phases of development.
+Welcome to the **historical archive** of the Dawn Field Theory project. 🕰️ This directory preserves theory ideas, deprecated drafts, and early exploratory writings that informed the current state of the theory. It's a mix of wild insights, technical depth, and raw creative energy from the early phases of development.
 
 ## 📁 Contents
 

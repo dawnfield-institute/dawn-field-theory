@@ -1,0 +1,28 @@
+schema_version: '2.1'
+era: era2-prefield-infodynamics-2025h2
+status: completed
+title: 'Macro Emergence Dynamics (MED): Framework and Computational Validation'
+directory_name: macro_emergence_dynamics
+description: 'The MED framework - emergence converging to bounded complexity (depth
+  <= 2, nodes <= 3) - with computational validation and the recursive-gravity experiment.
+  Imported by milestone1 exp_28 (Navier-Stokes MED). Its formal material moved to
+  formal/conjectures/; this is the code and results. The 2025-10 validation run self-reported
+  cosmological FAIL and ocean-wave FAIL with the framework PARTIAL - kept as the honest
+  record.
+
+  '
+tags:
+- med
+- emergence
+- bounded-complexity
+- navier-stokes
+- recursive-gravity
+files:
+- README.md
+- comprehensive_analysis.py
+- master_recursive_gravity_experiment.py
+- ocean_wave_med_test.py
+child_directories:
+- computational_validation
+- insights
+- results

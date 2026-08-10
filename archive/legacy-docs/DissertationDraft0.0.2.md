@@ -127,7 +127,7 @@ Adaptive Computation: QBE minimizes unnecessary entropy expenditure, allowing fo
 Multi-Agent Learning: AI models leveraging QBE can communicate entropy-aware optimization strategies, improving collective decision-making in decentralized AI systems.
 Quantum-AI Hybrid Models: QBE enables AI to optimize quantum information processing workflows, improving coherence preservation and quantum-enhanced decision logic.
 ### Summary
-This chapter reviewed foundational research in entropy-driven AI learning, quantum information theory, and computational intelligence frameworks, providing the necessary context for understanding how QBE extends these models. By incorporating entropy-aware AI optimization, self-structuring intelligence, and quantum-inspired computational methodologies, QBE and CIMM offer a pathway toward advanced AI self-learning frameworks.
+This chapter reviewed theory research in entropy-driven AI learning, quantum information theory, and computational intelligence frameworks, providing the necessary context for understanding how QBE extends these models. By incorporating entropy-aware AI optimization, self-structuring intelligence, and quantum-inspired computational methodologies, QBE and CIMM offer a pathway toward advanced AI self-learning frameworks.
 The next chapter will develop the mathematical formulation of QBE, outlining its computational advantages and integration into AI-based entropy-aware learning models. This mathematical framework will establish the formal foundations for QBE as a self-organizing computational intelligence model, positioning it as a next-generation approach to AI-driven entropy optimization and quantum-inspired self-learning architectures.
 Chapter 3: Mathematical Formulation of QBE
 ### Introduction
@@ -610,7 +610,7 @@ Carroll, S. M. (2019). Something Deeply Hidden: Quantum Worlds and the Emergence
 Penrose, R. (2004). The Road to Reality: A Complete Guide to the Laws of the Universe. Knopf.
 Rovelli, C. (2015). Relational Quantum Mechanics. International Journal of Theoretical Physics, 35(8), 1637-1678.
 QBE and CIMM were developed by the author, and references to their frameworks are derived from internal research, empirical studies, and AI-driven testing methodologies conducted during this dissertation.
-This citations section will continue to be updated as new references and empirical studies emerge to support the foundational claims of the dissertation.
+This citations section will continue to be updated as new references and empirical studies emerge to support the theory claims of the dissertation.
 ```yaml
 document_title: Quantum Balance Equation and CIMM: Dissertation Draft 0.0.2
 version: 0.0.2

@@ -260,4 +260,4 @@ field_decomposition/
 
 ---
 
-*This project advances the state of entropy analysis in symbolic systems and provides foundational tools for next-generation AI interpretability and field-based intelligence systems.*
+*This project advances the state of entropy analysis in symbolic systems and provides theory tools for next-generation AI interpretability and field-based intelligence systems.*

@@ -185,7 +185,7 @@ Kronos ↔ MCP Server ↔ GAIA Resonance
 ### For Implementers
 1. **Study Architecture Specifications**: Deep dive into docs/architecture/
 2. **Review Integration Protocols**: Understand docs/protocols/ specifications
-3. **Examine Existing Foundations**: Build on foundational/ experiment results
+3. **Examine Existing Foundations**: Build on theory/ experiment results
 4. **Plan Implementation Strategy**: Coordinate with cross-project dependencies
 
 ---

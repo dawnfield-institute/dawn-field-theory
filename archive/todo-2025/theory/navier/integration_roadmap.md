@@ -76,7 +76,7 @@ Build and validate fundamental building blocks needed for symbolic pattern navig
 - Hash collision rate < 1 in 10^12
 
 #### 3.2.2 Basic Pattern Templates
-**Purpose**: Create foundational velocity field templates for common flows
+**Purpose**: Create theory velocity field templates for common flows
 
 **Implementation Tasks**:
 - Analytical solution templates (Poiseuille, Couette, Stokes)

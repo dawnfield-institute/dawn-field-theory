@@ -402,4 +402,4 @@ class BridgeConfiguration:
         """Apply runtime configuration updates"""
 ```
 
-This CIP-MCP Bridge module provides the foundational protocol translation layer that enables Brainstem to seamlessly connect CIP-enhanced repositories with MCP-compliant AI systems, forming the critical infrastructure for cognitive knowledge exploration.
+This CIP-MCP Bridge module provides the theory protocol translation layer that enables Brainstem to seamlessly connect CIP-enhanced repositories with MCP-compliant AI systems, forming the critical infrastructure for cognitive knowledge exploration.

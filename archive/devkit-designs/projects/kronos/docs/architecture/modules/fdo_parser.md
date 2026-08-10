@@ -2,7 +2,7 @@
 
 ## Overview
 
-The FDO Parser and Processor is the foundational module of Project Kronos, responsible for parsing Fractal Document Object files, validating their structure, and transforming them into semantic knowledge graphs. This module serves as the entry point for all FDO documents entering the Kronos ecosystem.
+The FDO Parser and Processor is the theory module of Project Kronos, responsible for parsing Fractal Document Object files, validating their structure, and transforming them into semantic knowledge graphs. This module serves as the entry point for all FDO documents entering the Kronos ecosystem.
 
 ## Core Responsibilities
 

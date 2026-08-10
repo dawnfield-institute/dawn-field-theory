@@ -18,8 +18,8 @@ contribution:
   description: "Implemented a new entropy-based operator for detecting symbolic field collapse patterns in neural networks, with validation experiments."
   files:
     - "archive/blueprints/operators/entropy_recursive.py"
-    - "foundational/experiments/entropy_validation.py"
-    - "foundational/docs/entropy_operator_theory.md"
+    - "experiments/milestones/entropy_validation.py"
+    - "archive/era1-symbolic/entropy_operator_theory.md"
   
 type: "implementation"  # Options: implementation, theory, experiment, documentation, validation
 

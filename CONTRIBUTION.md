@@ -3,7 +3,7 @@
 Thank you for your interest in contributing. This is a living, evolving repository—and your contributions matter.
 
 ## TL;DR - Quick Contributor Checklist
-- [ ] Read foundational docs (see Quick Start below)
+- [ ] Read theory docs (see Quick Start below)
 - [ ] Email info@dawnfield.ca to register as contributor  
 - [ ] Join Discord for announcements
 - [ ] **Review publishing boundaries and engagement philosophy (sections below)**
@@ -18,10 +18,10 @@ Thank you for your interest in contributing. This is a living, evolving reposito
 1. **Read the foundations:** 
    - `README.md`, `timeline.md`, and `LICENSE_APPENDIX.md`
    - `infodynamics.md` and `dawn-field-theory.md` (core theory overview)
-   - [`foundational/docs/arithmetic_identity_and_structural_novelty_in_computation.md`](foundational/docs/arithmetic_identity_and_structural_novelty_in_computation.md) (computational novelty thesis)
-   - [`foundational/docs/imperfection_engine_epistemic_collapse_dawn_field_repo.md`](foundational/docs/imperfection_engine_epistemic_collapse_dawn_field_repo.md) (repository philosophy)
+   - [`archive/era2-prefield/essays/arithmetic_identity_and_structural_novelty_in_computation.md`](archive/era2-prefield/essays/arithmetic_identity_and_structural_novelty_in_computation.md) (computational novelty thesis)
+   - [`archive/era1-symbolic/essays/imperfection_engine_epistemic_collapse_dawn_field_repo.md`](archive/era1-symbolic/essays/imperfection_engine_epistemic_collapse_dawn_field_repo.md) (repository philosophy)
 
-2. **Understand the bridges:** Browse [`foundational/docs/bridges/`](foundational/docs/bridges/) to see how Dawn Field Theory connects to existing frameworks (deep learning, AI systems, gradient descent)
+2. **Understand the bridges:** Browse [`archive/era1-symbolic/bridges/`](archive/era1-symbolic/bridges/) to see how Dawn Field Theory connects to existing frameworks (deep learning, AI systems, gradient descent)
 
 3. **Register:** Email info@dawnfield.ca with your background and interests
 
@@ -121,7 +121,7 @@ For substantial contributions, we maintain an automated citation system:
 4. Upon merge, GitHub Actions automatically processes and integrates your citation
 5. Your processed citation file moves to `citations/processed/` for record-keeping
 
-This automated system ensures proper academic attribution while maintaining clear intellectual boundaries for the foundational work.
+This automated system ensures proper academic attribution while maintaining clear intellectual boundaries for the theory work.
 
 ---
 

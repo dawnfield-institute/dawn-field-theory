@@ -5,7 +5,7 @@ For consistent hardware documentation across Dawn Field Theory preprints and exp
 ## Standard Citation Format
 
 ```markdown
-**Hardware Configuration**: All computational results obtained on RTX 3070ti + i9-12th gen laptop platform (see [resources/specs/hardware_timeline.yaml](../../../resources/specs/hardware_timeline.yaml) for complete specifications).
+**Hardware Configuration**: All computational results obtained on RTX 3070ti + i9-12th gen laptop platform (see [resources/specs/hardware_timeline.yaml](hardware_timeline.yaml) for complete specifications).
 ```
 
 ## Performance Context Note
@@ -25,7 +25,7 @@ For consistent hardware documentation across Dawn Field Theory preprints and exp
 ```markdown
 ### Computational Platform and Performance Context
 
-**Hardware Configuration**: All computational results obtained on RTX 3070ti + i9-12th gen laptop platform (see [resources/specs/hardware_timeline.yaml](../../../resources/specs/hardware_timeline.yaml) for complete specifications).
+**Hardware Configuration**: All computational results obtained on RTX 3070ti + i9-12th gen laptop platform (see [resources/specs/hardware_timeline.yaml](hardware_timeline.yaml) for complete specifications).
 
 **Performance Context**: Timing results and computational metrics specific to documented hardware configuration. Relative performance ratios should remain consistent across platforms, while absolute timing will vary with hardware specifications.
 
