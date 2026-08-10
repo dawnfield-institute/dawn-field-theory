@@ -6,12 +6,12 @@ dawn-field-theory/
   CONTRIBUTION.md
   ENVIRONMENT.md
   LICENSE
-  LICENSE_APPENDIX.md
+  MIGRATION.md
   MISSION.md
   README.md
+  ROADMAP.md
   STANDARDS.md
   THEORY_MAP.md
-  TRADE_SECRET_REGISTRY_TEMPLATE.md
   map.yaml
   meta.yaml
   timeline.md
@@ -48,9 +48,7 @@ dawn-field-theory/
   .github/
     pull_request_template.md
     workflows/
-      process-citations.yml
       repo-standards.yml
-      validate-citations.yml
   archive/
     README.md
     REPOSITORY_RESTRUCTURE_PLAN.md
@@ -109,6 +107,13 @@ dawn-field-theory/
             containment_triptych.png
         v2/
           v2_roadmap.md
+    citation-pipeline/
+      README.md
+      example-pr-123-entropy-operator.yaml
+      pr-citation-template.yaml
+      process-citations.yml
+      processed-README.md
+      validate-citations.yml
     devkit-designs/
       README.md
       compression/
@@ -2118,22 +2123,6 @@ dawn-field-theory/
           theoretical_framework.md
           thermodynamic_validation.md
           unified_symbolic_engine.md
-  citations/
-    README.md
-    contributors-index.json
-    contributors_bibtex.bib
-    doi_registry.yaml
-    pr-citation-template.yaml
-    external_citations/
-      README.md
-      citations_apa.txt
-      citations_bibtex.bib
-      external_citations.md
-    pending/
-      README.md
-      example-pr-123-entropy-operator.yaml
-    processed/
-      README.md
   experiments/
     EXPERIMENTS.md
     README.md
@@ -4957,11 +4946,13 @@ dawn-field-theory/
       infodynamics_arithmetic_v1.md
       symbolic_geometry_arithmetic.md
       unified_pac_framework_comprehensive.md
+  legal/
+    LICENSE_APPENDIX.md
+    TRADE_SECRET_REGISTRY_TEMPLATE.md
   papers/
     PREPRINT_UPDATE_PLAN.md
     SCHEMA.md
     UNIFIED_EVIDENCE.md
-    ZENODO_REGISTRY.yaml
     legacy/
       cognition_index_protocol/
         CITATION.md
@@ -5030,6 +5021,20 @@ dawn-field-theory/
       resonant_symbolic_convergence_human_agent_preprint.pdf
       symbolic_cognition_collapse_interpretability_preprint.pdf
       symbolic_entropy_collapse_preprint.pdf
+    registry/
+      README.md
+      ZENODO_REGISTRY.yaml
+      citation_template.md
+      contributors-index.json
+      contributors_bibtex.bib
+      doi_registry.yaml
+      hardware_timeline.yaml
+      publications_registry.yaml
+      external_citations/
+        README.md
+        citations_apa.txt
+        citations_bibtex.bib
+        external_citations.md
     resources/
       CIM.docx
       CIM.md
@@ -6621,21 +6626,16 @@ dawn-field-theory/
           figure_4_concentration_discovery.png
     tex_sources/
       dawn_field_theory_comprehensive_overview.tex
-  resources/
-    publications_registry.yaml
-    recursive_structure.png
-    specs/
-      citation_template.md
-      hardware_timeline.yaml
   roadmaps/
     README.md
-    core_project_roadmap.md
-    current_roadmap.md
-    general_experiments_roadmap.md
-    kronos_roadmap.md
-    math_arithmetic_roadmap.md
-    post_m5_roadmap.md
-    publication_framework_roadmap.md
+    superseded/
+      core_project_roadmap.md
+      current_roadmap.md
+      general_experiments_roadmap.md
+      kronos_roadmap.md
+      math_arithmetic_roadmap.md
+      post_m5_roadmap.md
+      publication_framework_roadmap.md
   theory/
     corrections-amplification.md
     corrections.md
@@ -6646,6 +6646,7 @@ dawn-field-theory/
     lexicon.legacy.md
     lexicon.yaml
     origin_of_infodynamics.md
+    recursive_structure.png
     essays/
       README.md
       base_agnostic_pac_invariants.md

@@ -21,23 +21,22 @@ files:
 - CONTRIBUTION.md
 - ENVIRONMENT.md
 - LICENSE
-- LICENSE_APPENDIX.md
+- MIGRATION.md
 - MISSION.md
 - README.md
+- ROADMAP.md
 - STANDARDS.md
 - THEORY_MAP.md
-- TRADE_SECRET_REGISTRY_TEMPLATE.md
 - map.yaml
 - timeline.md
 child_directories:
 - .changelog
 - .github
 - archive
-- citations
 - experiments
 - formal
+- legal
 - papers
-- resources
 - roadmaps
 - theory
 - tools

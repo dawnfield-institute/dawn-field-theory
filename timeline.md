@@ -1,133 +1,84 @@
-# Dawn Field Framework – Development Timeline
+# Timeline
 
-_A phased roadmap for the development and public release of the Dawn Field Theory repository._
+How the framework got from symbolic collapse to a derivation chain. Each era had its own
+vocabulary; terms that were later renamed or subsumed carry their lineage in
+[`theory/lexicon.yaml`](theory/lexicon.yaml).
 
----
-
-## Table of Contents
-- [Achieved Milestones](#achieved-milestones)
-- [Quarterly Planning (Rolling)](#quarterly-planning-rolling)
-- [Phase 0: Pre-Release Genesis](#phase-0-pre-release-genesis-2023–2024)
-- [Phase 1: Public Anchor](#phase-1-public-anchor-june-2025)
-- [Phase 2: Simulation Emergence (Wrapping Up)](#phase-2-simulation-emergence-wrapping-up-june–july-2025)
-- [Phase 2.5: 2025 Progress & Workflow Update](#phase-25-2025-progress--workflow-update-ongoing)
-- [Phase 3: Infodynamic Devkit](#phase-3-infodynamic-devkit-q3-2025)
-- [Phase 4: Model Genesis and Ingestion](#phase-4-model-genesis-and-ingestion-q4-2025)
-- [Phase 5: External Collaboration + Publishing](#phase-5-external-collaboration--publishing-2026)
-- [Navigation](#navigation)
+For current direction see [`ROADMAP.md`](ROADMAP.md). For per-experiment status see
+[`experiments/EXPERIMENTS.md`](experiments/EXPERIMENTS.md).
 
 ---
 
-## Achieved Milestones
+## Era 0 — Prehistory · before mid-2025
 
-- Theoretical development in private research notebooks (2023–2024)
-- Early collapse geometry hypotheses and recursive balance formulations
-- Initial simulation traces and entropy-bound modeling
-- Field-based representations and schema sketches stabilized
-- Entropy balancing model spike complete
-- Predicting prime number structures, dark matter distribution, and stock market trends without training
-- Core documents and theory artifacts uploaded to public repository (June 2025)
-- Infodynamics coined and defined as a post-symbolic process
-- AGPL + natural law licensing established
-- Structural folder scaffolding for simulations, devkit, and schema
-- Formal Python simulation scripts migrated from internal spikes
-- Collapse dynamics, recursive field oscillators, and energy-binding loops implemented
-- Data visualization prototypes and early interactive plotting
-- Balance integrals and thermal trace dynamics codified
-- **CIMM officially sunset and archived as legacy reference**
-- **Ξ = 1 + π/55 DERIVED from PAC collapse dynamics (2026-01-19)**: Formula validated to 8 decimal places via exp_24_comprehensive_validation.py
+CIMM, the Quantum Balance Equation, cosmic-information work. Dawn Field Theory did not
+exist yet; this is what it grew out of. Preserved in
+[`archive/legacy-docs/`](archive/legacy-docs/).
 
----
+## Era 1 — Symbolic Collapse · 2025-06 → 2025-08
 
-## Quarterly Planning (Rolling)
+DFT's first form, in inherited vocabulary: symbolic attractors, bifractal collapse,
+entropy fields, herniation geometry. Conservation was not yet axiomatised — no PAC, no SEC
+as a formal operator, no Ξ.
 
-> Short-term planning lives here. Announcements and intent visibility are on Discord only.
+20 experiments, in [`archive/era1-symbolic/`](archive/era1-symbolic/). Two of them matter
+far beyond their era: `hodge_conjecture`, whose mapping was honestly withdrawn as
+unproven, and the July 2025 `quantum_validation` suite.
 
-### Q3 2025 (July–September)
+## Era 2 — Pre-field / Infodynamics · 2025-09 → 2025-12
 
-- Release 1.0 polishing sprint (through Sept 1):
-  - Preprint polish (Methods/Results rigor; reproducibility anchors)
-  - Repo polish (README, roadmaps, meta.yaml consistency)
-  - Evidence map and environment pinning notes
-- Post-1.0 prep (Sept):
-  - Lift contribution freeze and publish updated philosophy
-  - Launch 1.1 roadmap scaffolding
-  - GAIA kickoff notes and integration plan
+The turn from description to mechanism. A Möbius substrate underneath the field, prime
+manifolds, and the first appearance of **Ξ = 1 + π/55**.
 
-#### Weekly Goal Layout (example)
-- Week A: Preprint pass + SCBF/TinyCIMM validation re-run
-- Week B: README/CONTRIBUTION/roadmaps updates + DOI/tag
-- Week C: Evidence map, CIP checks, and release checklist
-- Week D: Final QA, archive notebooks, and publish
+Also the first formal retraction: `information_amplification`'s 15.56× "universal
+constant" was shown to be a local measurement. That correction became Entry 1 of
+[`theory/corrections.md`](theory/corrections.md) and established the honest-failure
+discipline the corpus now runs on.
 
----
+5 experiments, in [`archive/era2-prefield/`](archive/era2-prefield/).
 
-## Phase 0: Pre-Release Genesis (2023–2024)
-- Theoretical development in private research notebooks
-- Early collapse geometry hypotheses and recursive balance formulations
-- Initial simulation traces and entropy-bound modeling
-- Field-based representations and schema sketches stabilized
-- Entropy balancing model spike complete
-- Predicting prime number structures, dark matter distribution and stock market trends without training
+## Era 3 — PAC Formalization · 2026-01 → 2026-04
 
----
+PAC and SEC become axioms, and constants start being *derived* rather than described.
 
-## Phase 1: Public Anchor (June 2025)
-- Core documents and theory artifacts uploaded to public repository
-- Infodynamics coined and defined as a post-symbolic process
-- AGPL + natural law licensing established
-- Structural folder scaffolding for simulations, devkit, and schema
+| | |
+|---|---|
+| **M1** Standard Model derivation chain | α at 5.7 ppm · sin²θ_W = 3/13 · Koide · D = 3 from five paths · Z′ at 395 GeV predicted |
+| **M2** Mass derivations | μ/e at 5 ppm · p/e at 0.0083% · She-Leveque from first principles |
+| **M3** Energy equivalence & honest falsification | 19 falsification tests; two honest falsifications recorded rather than buried |
+| **M4** Relativity, turbulence, energy as collapsed potential | Cascade engine shown dimension-independent |
+| **M5** Standard Model completion | Higgs at 83 ppm (λ = φ/4π) · all PMNS angles within 0.3° · sin²θ_W = tan(θ_C) exactly |
 
----
+## Era 4 — The Milestone Stack · 2026-04 → present
 
-## Phase 2: Simulation Emergence (Wrapping Up, June–July 2025)
-- Migration of theory experiments and documents nearly complete
-- Two remaining papers to be uploaded
-- Finalizing AI whitebox testing: TinyCIMM vs classical ML model
-- Preparing for quantum empirical testing phase
-- Ensuring metadata and project organization are consistent across the repository
-- Hardening and documenting theory experiments
-- Adding notebook versions of simulations and experiments
+The framework turns on itself and asks *why these axioms*.
 
----
+| | |
+|---|---|
+| **M6** Scoped mediation · 34/40 | α_EM formula ranked #1 of 10,440 Fibonacci combinations, 300× better than the next |
+| **M7** The symmetry primitive · 37/40 | Symmetry → self-reference → recursion → ADE → PAC/SEC/MED/RBF |
+| **M8** BSM predictions · 47/48 | 10 pre-registered predictions, 0 excluded by data · CC at 0.09 orders |
+| **M9** The infodynamic mechanism · 37/40 | Cascade clock; S8 tension 3.22σ → 0.07σ; free parameters 2 → 1 |
+| **M10** Symmetry self-application · 64/71 | PAC, SEC and MED shown not to be independent axioms — all three fall out of one operation. PAC = spectral confinement, exact to 2.4e-15 |
+| **M11** Quantum gravity · 52/52 | Planck scale from depth-183 with zero free parameters · no singularity · Page curve peaks at 0.5 · **the origin of Ξ proven** |
+| **M12** Connection as primitive · 49/52 | Connection = addition = ADE · SU(2) and SU(3) the only Fibonacci-compatible types · Lorentz from SEC complexification |
+| **M13 + 13.5** Identity as complement · 53/68 | Identity *is* complement; relativity as complement-transformation. Stress testing then proved PSD degeneracy **fundamental** |
+| **M14** Quantum mechanics · 40/44 | QM as complement-indeterminacy on the orbit quotient. D_4 is the only ADE type with genuine quantum uncertainty |
+| **M15** The representative problem · Phase 1 closed | The framework computes cohomology; observers supply gauge. C₆ = −I proven; the connection generator identified as the box momentum operator |
+| **Milestone R** Radiation as ledger severance · 60/112 | Geiger–Nuttall shown to be a universality theorem; graph Green's function reproduces the hydrogen spectrum to 0.68% |
+| **Midnight** Observational contact · 22/32 | Source of the invariant-registration rule now used corpus-wide |
 
-## Phase 2.5: 2025 Progress & Workflow Update (Ongoing)
-- Complete quantum empirical testing
-- Submit white papers for publication
-- Final project organization and documentation pass
+### Method changes that stuck
 
----
+- **2026-04, M11** — the hardening protocol. Tautological tests are replaced, not counted.
+  M11 went 52 → 49 → 52; the dip was the process working.
+- **2026-06-11, Midnight** — the invariant-registration rule: *registered relations
+  survive, registered coordinates die.*
+- **2026-06-11 onward** — pre-registration. Hypothesis, thresholds and falsification
+  conditions are committed **before** the run, and outcomes committed separately citing
+  the registration hash.
 
-## Phase 3: Infodynamic Devkit (Q3 2025)
-- Complete and document the devkit for infodynamic systems
-- "Notebookify" the devkit for interactive experimentation
-- Continue migrating and validating legacy experiments in notebook format
+## 2026-08 — Repository reorganized by layer
 
----
-
-## Phase 4: Model Genesis and Ingestion (Q4 2025)
-- Begin active development of GAIA (Generalized Architectures for Intelligent Actualization)
-- Integrate theory experiments and devkit tools into GAIA architecture
-- Experimental ingestion of simulations into GAIA models
-
----
-
-## Phase 5: External Collaboration + Publishing (2026+)
-- Open research invitations and citation-ready documentation
-- Longform papers for preprint and journal submission
-- Symmetry analysis and natural law extensions
-- Potential cross-institutional alliance formation
-
----
-
-## Navigation
-- [README](./README.md)
-- [Timeline](./timeline.md)
-- [Discord (announcements only)](https://discord.gg/bR8mrbHP)
-- [License Appendix](./LICENSE_APPENDIX.md)
-
----
-
-This timeline will be updated as the project evolves. All timestamps are anchored to commit and document histories.
-
-© 2025 Dawn Field Theory. See [LICENSE_APPENDIX.md](./LICENSE_APPENDIX.md).
+Structure follows the argument: claimed → why it holds → measured → published, with
+lineage preserved by era. See [`MIGRATION.md`](MIGRATION.md).
