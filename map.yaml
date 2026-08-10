@@ -4945,6 +4945,7 @@ dawn-field-theory/
     TRADE_SECRET_REGISTRY_TEMPLATE.md
   papers/
     PREPRINT_UPDATE_PLAN.md
+    README.md
     SCHEMA.md
     UNIFIED_EVIDENCE.md
     meta.yaml
@@ -6693,6 +6694,7 @@ dawn-field-theory/
       post_m5_roadmap.md
       publication_framework_roadmap.md
   theory/
+    README.md
     corrections.md
     dawn-field-theory.md
     for_ai_labs.md

@@ -110,6 +110,7 @@ resources:
   description: Generated PDF outputs
 files:
 - PREPRINT_UPDATE_PLAN.md
+- README.md
 - SCHEMA.md
 - UNIFIED_EVIDENCE.md
 child_directories:

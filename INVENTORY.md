@@ -8,14 +8,14 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 
 | Layer | Holds | Files |
 |---|---|---|
-| [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 15 |
+| [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 16 |
 | [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 21 |
 | [`experiments/`](experiments/) | what was measured | 2630 |
-| [`papers/`](papers/) | what was published | 1508 |
+| [`papers/`](papers/) | what was published | 1509 |
 | [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 11 |
 
-Tracked files: **9366**
+Tracked files: **9368**
 
 **75 experiments** — 50 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 

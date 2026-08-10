@@ -36,6 +36,26 @@ def tracked():
     return [p for p in out.split("\n") if p]
 
 
+def warn_untracked():
+    """Warn about untracked, non-ignored files in counted layers.
+
+    Counts come from `git ls-files`, so this generator must run AFTER `git add`. Running
+    it before staging silently undercounts new files, produces an INVENTORY.md that looks
+    correct locally, and fails CI on the next push with no obvious cause.
+    """
+    out = subprocess.run(
+        ["git", "-c", "core.quotePath=false", "ls-files", "--others", "--exclude-standard"],
+        cwd=REPO, capture_output=True, text=True, check=True).stdout
+    layers = ("theory/", "formal/", "experiments/", "papers/", "archive/", "tools/")
+    stray = [p for p in out.split("\n") if p and p.startswith(layers)]
+    if stray:
+        print(f"warning: {len(stray)} untracked file(s) in counted layers are NOT included "
+              f"in these counts. Stage them and re-run, or CI will report this file stale:",
+              file=sys.stderr)
+        for p in stray[:10]:
+            print(f"  {p}", file=sys.stderr)
+
+
 def count_under(files, prefix):
     return sum(1 for f in files if f == prefix or f.startswith(prefix.rstrip("/") + "/"))
 
@@ -179,6 +199,7 @@ def build():
 
 
 def main() -> int:
+    warn_untracked()
     content = build()
     if "--check" in sys.argv:
         cur = open(OUT, encoding="utf-8").read() if os.path.exists(OUT) else ""
