@@ -518,7 +518,7 @@ This arithmetic is open for reuse, extension, and empirical testing across all d
 - Prime modulation p ∈ {3, 5, 7, 11} produces most stable attractors
 - Non-prime modulation shows 60-80% reduced coherence
 - Angular harmonics θ = pπ enhance topological stability
-- **Experiments**: `foundational/docs/[m][F][v1.0][C4][I5]_pi_harmonics.md`
+- **Experiments**: `foundational/docs/pi_harmonics.md`
 
 ### A.3 Biological and Cognitive Validation
 
@@ -595,7 +595,7 @@ foundational/arithmetic/hodge_mapping/v0.1/
 └── hodge_mapping.md
 
 foundational/docs/
-├── [m][F][v0.1][C5][I5]_symbolic_entropy_collapse_and_hodge_mapping.md
+├── symbolic_entropy_collapse_and_hodge_mapping.md
 └── preprints/drafts/SECPreprint_draft.md
 ```
 

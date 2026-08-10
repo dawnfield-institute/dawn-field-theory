@@ -588,41 +588,41 @@ dawn-field-theory/
     docs/
       FOUNDATIONAL_AMPLIFICATION_CORRECTION.md
       README.md
-      [id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md
-      [id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md
-      [id][F][v1.0][C5][I5][E]_base_agnostic_pac_invariants.md
-      [id][F][v1.0][C5][I5][E]_landauer_erasure_cost_superfluidity_viscosity.md
-      [id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md
-      [id][F][v1.0][C5][I5][E]_phase_shifts_classical_vs_emergent_collapse.md
-      [id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md
-      [id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md
-      [id][F][v1.0][C5][I5][E]_vcpu_empirical_validation_computational_naturalness.md
-      [id][F][v1.0][C5][I5][R]_universe_internal_reorganization_unified_framework.md
-      [id][F][v1.0][C6][I6][E]_feigenbaum_closed_form_discovery.md
-      [id][F][v1.0][C6][I6][E]_observation_dependency_pac_measurement_unified.md
-      [id][F][v1.0][C6][I6][E]_pac_sec_as_information_dynamics.md
-      [id][F][v1.0][C6][I6][E]_tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md
-      [m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md
-      [m][F][v0.1][C5][I5]_symbolic_entropy_collapse_and_hodge_mapping.md
-      [m][F][v1.0][C4][I4]_recursive_tree.md
-      [m][F][v1.0][C4][I4]_super_fluid.md
-      [m][F][v1.0][C4][I5]_bifractal_time_emergence.md
-      [m][F][v1.0][C4][I5]_dawn_field_theory_recursive_balance_field.md
-      [m][F][v1.0][C4][I5]_herniation_hypothesis.md
-      [m][F][v1.0][C4][I5]_pi_harmonics.md
-      [m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md
-      [m][F][v1.0][C4][I5]_recursive_balance_field.md
-      [m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md
-      [m][F][v1.0][C5][I5][R]_recursive_symbol_collapse.md
-      [m][F][v1.1][C4][I5]_recursive_entopy.md
-      [m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
-      [m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md
+      arithmetic_identity_and_structural_novelty_in_computation.md
+      base_agnostic_pac_invariants.md
+      bifractal_time_emergence.md
+      collapse_dynamics_in_entropic_fields.md
+      dawn_field_theory_recursive_balance_field.md
+      feigenbaum_closed_form_discovery.md
+      herniation_hypothesis.md
+      imperfection_engine_epistemic_collapse_dawn_field_repo.md
+      landauer_erasure_cost_superfluidity_viscosity.md
+      observation_dependency_pac_measurement_unified.md
+      pac_confluence_xi_unified_framework.md
+      pac_sec_as_information_dynamics.md
+      phase_shifts_classical_vs_emergent_collapse.md
+      pi_harmonics.md
+      pre_field_recursion_resonance_driven_emergence.md
+      reality_as_herniation_precipitate.md
+      recursive_balance_field.md
+      recursive_calculus_and_entropy_regulation.md
+      recursive_entopy.md
+      recursive_symbol_collapse.md
+      recursive_tree.md
+      super_fluid.md
+      superfluid_informational_crystallization.md
+      symbolic_collapse_recursive_field_pruning.md
+      symbolic_entropy_collapse_and_hodge_mapping.md
+      symbolic_entropy_collapse_geometry_foundation.md
       symmetry_primitive.md
+      tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md
+      universe_internal_reorganization_unified_framework.md
+      vcpu_empirical_validation_computational_naturalness.md
       bridges/
-        [id][A][v1.0][C4][I4]_cimm_modular_ai_systems_bridge.md
-        [id][A][v1.0][C4][I4]_recursive_balance_continual_learning_bridge.md
-        [id][A][v1.0][C4][I4]_symbolic_entropy_collapse_deep_learning_bridge.md
-        [id][A][v2.0][C4][I5]gradient_descent_infodynamics_bridge.md
+        cimm_modular_ai_systems_bridge.md
+        gradient_descent_infodynamics_bridge.md
+        recursive_balance_continual_learning_bridge.md
+        symbolic_entropy_collapse_deep_learning_bridge.md
       docx/
         Alignment of Hiroshima University's Double-Slit Findings with Dawn Field.docx
         DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
@@ -634,15 +634,15 @@ dawn-field-theory/
         Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.docx
       empirical_alignment/
         README.md
-        [m][F][v1.0][C4][I4]_alignment_with_flux_qubit.md
-        [m][F][v1.0][C4][I4]_alignment_with_measurement_induced_phase_transitions.md
-        [m][F][v1.0][C4][I4]_alignment_with_quantum_darwinism.md
-        [m][F][v1.0][C4][I4]_alignment_with_quantum_eraser.md
-        [m][F][v1.0][C4][I4]_alignment_with_serge_haroche.md
-        [m][F][v1.0][C4][I4]_alignment_with_weak_measurement_models.md
-        [m][F][v1.0][C4][I4]_alignment_with_wheelers_delayed_choice.md
-        [m][F][v1.0][C4][I4]_alignment_with_zeilinger_arndt.md
-        [m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md
+        alignment_hiroshima_double_slit.md
+        alignment_with_flux_qubit.md
+        alignment_with_measurement_induced_phase_transitions.md
+        alignment_with_quantum_darwinism.md
+        alignment_with_quantum_eraser.md
+        alignment_with_serge_haroche.md
+        alignment_with_weak_measurement_models.md
+        alignment_with_wheelers_delayed_choice.md
+        alignment_with_zeilinger_arndt.md
       preprints/
         PREPRINT_UPDATE_PLAN.md
         SCHEMA.md
@@ -2032,15 +2032,15 @@ dawn-field-theory/
             results/
               exp_26_pac_violation_20251222_94620.json
         pdfs/
-          [ai][D][v1.0][C4][I3][R]_resonant_symbolic_convergence_human_agent_preprint.pdf
-          [ai][D][v1.0][C4][I4][E]_symbolic_cognition_collapse_interpretability_preprint.pdf
-          [cip][D][v2.0][C4][I4][A]_cognition_index_protocol_preprint.pdf
-          [id][D][v1.0][C3][I5][R]_dawn_field_theory_synthesis_preprint.pdf
-          [id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.pdf
-          [id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.pdf
-          [m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.pdf
-          [m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.pdf
-          [m][F][v1.0][C5][I5]_dawn_field_theory_comprehensive_overview.pdf
+          cognition_index_protocol_preprint.pdf
+          dawn_field_theory_comprehensive_overview.pdf
+          dawn_field_theory_infodynamics_preprint.pdf
+          dawn_field_theory_synthesis_preprint.pdf
+          macro_emergence_dynamics_navier_stokes_preprint.pdf
+          recursive_mathematical_plasticity_entropy_architecture_preprint.pdf
+          resonant_symbolic_convergence_human_agent_preprint.pdf
+          symbolic_cognition_collapse_interpretability_preprint.pdf
+          symbolic_entropy_collapse_preprint.pdf
         potential_actualization_conservation_comprehensive/
           CITATION.md
           LICENSE
@@ -6272,7 +6272,7 @@ dawn-field-theory/
           2025-12-10_run_length_mechanism.md
           2025-12-10_validation_and_harmonic_discovery.md
         papers/
-          [sec][P][v0.1][C3][I4][E]_golden_arithmetic_preprint.md
+          golden_arithmetic_preprint.md
         results/
           exp_01_baseline_20251209_201520.json
           exp_02_independence_20251209_201713.json
@@ -6418,10 +6418,10 @@ dawn-field-theory/
           2025-12-24_evening_experiments.md
           2025-12-24_pi_to_phi_mechanism_integration.md
         papers/
-          [pac][D][v1.0][C4][I5][E]_complete_fibonacci_assignment_preprint.md
-          [pac][D][v1.0][C4][I5][E]_depth_seven_gauge_closure_preprint.md
-          [pac][D][v1.0][C4][I5][E]_fibonacci_gauge_derivation_standard_model_preprint.md
-          [pac][D][v1.0][C4][I5][E]_testable_predictions_protocols_preprint.md
+          complete_fibonacci_assignment_preprint.md
+          depth_seven_gauge_closure_preprint.md
+          fibonacci_gauge_derivation_standard_model_preprint.md
+          testable_predictions_protocols_preprint.md
         results/
           06_2d_turbulence_20251206_135155.json
           07_pac_sec_duality_20251206_140316.json

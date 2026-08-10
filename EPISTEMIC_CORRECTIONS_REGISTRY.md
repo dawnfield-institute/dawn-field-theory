@@ -5,7 +5,7 @@
 
 This document is a living registry of discovered misconceptions, curve-fitting artifacts, and corrected understandings within the Dawn Field Theory framework. It embodies the Imperfection Engine philosophy: collapse events (corrections) are not failures but essential fuel for epistemic evolution.
 
-**Related**: [Imperfection Engine Philosophy](foundational/docs/[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md)
+**Related**: [Imperfection Engine Philosophy](foundational/docs/imperfection_engine_epistemic_collapse_dawn_field_repo.md)
 
 ---
 

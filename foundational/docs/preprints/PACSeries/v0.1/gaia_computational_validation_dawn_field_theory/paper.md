@@ -1150,10 +1150,10 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 - **Finding:** Natural resonances appear at π-based frequencies in field evolution
 - **Reference:** `reference_material/pi_harmonic_results2025-06-17 135126.png`
 - **Connection to GAIA:** Our observed 0.020-0.030 Hz resonance may relate to π/100 ≈ 0.0314, suggesting geometric origin of frequency quantization
-- **Supporting Theory:** `foundational/docs/[m][F][v1.0][C4][I5]_pi_harmonics.md`
+- **Supporting Theory:** `foundational/docs/pi_harmonics.md`
 
 **Pre-Field Recursion Theory (September 30, 2024)**
-- **Location:** `foundational/docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`
+- **Location:** `foundational/docs/pre_field_recursion_resonance_driven_emergence.md`
 - **Finding:** Theoretical prediction of 0.030 Hz resonance and 5.11× post-lock speedup
 - **Reference:** `foundational/experiments/archive/era2/pre_field_recursion/results/pre_field_recursion_results_20250930_183326.json`
 - **Connection to GAIA:** **Direct validation** - GAIA observed 0.020 Hz (within 33% of prediction) and 2.44× measured speedup (48% of theoretical maximum, likely due to late locking)

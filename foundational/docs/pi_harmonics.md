@@ -15,10 +15,10 @@ field_scope:
   - symbolic crystallization
   - entropy dynamics
 related_documents:
-  - "[m][F][v1.0][C4][I5]_pi_harmonics.md"
-  - "[m][F][v1.0][C4][I4]_recursive_tree.md"
-  - "[m][F][v1.0][C4][I5]_bifractal_time_emergence.md"
-  - "[m][F][v1.0][C4][I4]_super_fluid.md"
+  - "pi_harmonics.md"
+  - "recursive_tree.md"
+  - "bifractal_time_emergence.md"
+  - "super_fluid.md"
 license: Copyleft (custom Dawn license)
 ---
 

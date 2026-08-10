@@ -491,7 +491,7 @@ Key theoretical documents supporting this framework:
 - **Symbolic Entropy Collapse Theory:** [symbolic entropy collapse](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era1/symbolic_entropy_collapse/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC1%5D%5BI1%5D_symbolic_entropy_collapse.md)
 - **Epistemic Field Theory:** [epistemic field theory](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/theory/epistemic_field_theory.md)
 - **Emergent Intelligence Theory:** [emergent intelligence](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/models/GAIA/docs/theory/emergent_intelligence.md)
-- **Pi-Harmonic Recursion:** [pi harmonics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC4%5D%5BI5%5D_pi_harmonics.md)
+- **Pi-Harmonic Recursion:** [pi harmonics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/pi_harmonics.md)
 
 ### Appendix C: Citation and Reproducibility
 
@@ -526,7 +526,7 @@ All computational results in this preprint were obtained using the hardware conf
 
 ## References
 
-[^1]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bm%5D%5BF%5D%5Bv1.0%5D%5BC4%5D%5BI5%5D_pi_harmonics.md
+[^1]`](https://https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/pi_harmonics.md
 
 ### Appendix C: Citation and Reproducibility
 

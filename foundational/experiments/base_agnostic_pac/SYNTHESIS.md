@@ -17,7 +17,7 @@ across all numerical bases, while representational entropy varies 20-30%.
 
 This experiment provides the **theoretical foundation** for the Feigenbaum
 closed-form formulas documented in:
-- Paper: `docs/[id][F][v1.0][C6][I6][E]_feigenbaum_closed_form_discovery.md`
+- Paper: `docs/feigenbaum_closed_form_discovery.md`
 - SYNTHESIS: `sec_threshold_detection/SYNTHESIS.md`
 
 **The connection:**

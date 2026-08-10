@@ -24,11 +24,11 @@ linked_experiments:
   - ../experiments/recursive_gravity/
   - ../experiments/landauer_erasure_field_cost_map/
 linked_theory_documents:
-  - ../docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md
-  - ../docs/[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md
-  - ../docs/[m][F][v1.0][C4][I5]_dawn_field_theory_recursive_balance_field.md
-  - ../docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md
-  - ../docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md
+  - ../docs/arithmetic_identity_and_structural_novelty_in_computation.md
+  - ../docs/symbolic_entropy_collapse_geometry_foundation.md
+  - ../docs/dawn_field_theory_recursive_balance_field.md
+  - ../docs/recursive_balance_field.md
+  - ../docs/pre_field_recursion_resonance_driven_emergence.md
   - infodynamics_arithmetic_v1.md
   - ../experiments/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md
 related_frameworks:
@@ -99,7 +99,7 @@ Total_Conservation = Value_Conservation + Complexity_Conservation + Effect_Conse
 
 Where each component appears to follow the fundamental PAC principle but redistributes across different aspects of the system.
 
-**Connection to Herniation Hypothesis**: This discovery connects directly to our earlier herniation hypothesis ([`../docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md`](../docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md)) and reality as herniation precipitate theory ([`../docs/[m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md`](../docs/[m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md)). What we're observing as "information amplification" might be **the crystallization event** - the moment when dual-field pressure ruptures the boundary between potential and actual!
+**Connection to Herniation Hypothesis**: This discovery connects directly to our earlier herniation hypothesis ([`../docs/herniation_hypothesis.md`](../docs/herniation_hypothesis.md)) and reality as herniation precipitate theory ([`../docs/reality_as_herniation_precipitate.md`](../docs/reality_as_herniation_precipitate.md)). What we're observing as "information amplification" might be **the crystallization event** - the moment when dual-field pressure ruptures the boundary between potential and actual!
 
 ### 1.2 Connection to Infodynamics Arithmetic
 
@@ -156,7 +156,7 @@ This **correspondence** between theoretical exploration and experimental optimiz
 
 ### 1.4 Connection to Pre-Field Recursion (October 2025)
 
-The **Pre-Field Recursion** framework ([`../experiments/pre_field_recursion/`](../experiments/archive/era2/pre_field_recursion), [`../docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`](../docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md)) represents a major breakthrough: **experimental validation that PAC conservation emerges naturally from recursive dynamics on Möbius manifolds**.
+The **Pre-Field Recursion** framework ([`../experiments/pre_field_recursion/`](../experiments/archive/era2/pre_field_recursion), [`../docs/pre_field_recursion_resonance_driven_emergence.md`](../docs/pre_field_recursion_resonance_driven_emergence.md)) represents a major breakthrough: **experimental validation that PAC conservation emerges naturally from recursive dynamics on Möbius manifolds**.
 
 **The Discovery**: Pre-field states exhibit natural resonance frequencies (~0.03 cycles/iteration). When recursion operators tune to these frequencies, **PAC convergence accelerates 5.11x**, revealing that field emergence is fundamentally a resonance-driven phase transition.
 
@@ -215,7 +215,7 @@ This experimental work transforms PAC from a theoretical conservation principle 
 
 ### 1.5 Connection to Symbolic Entropy Collapse
 
-The **Symbolic Entropy Collapse** theory ([`../docs/[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md`](../docs/[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md)) describes how geometric structures emerge from entropy gradients.
+The **Symbolic Entropy Collapse** theory ([`../docs/symbolic_entropy_collapse_geometry_foundation.md`](../docs/symbolic_entropy_collapse_geometry_foundation.md)) describes how geometric structures emerge from entropy gradients.
 
 **PAC Theoretical Connection**: Our investigation suggests symbolic collapse might represent **actualization in action**:
 
@@ -234,7 +234,7 @@ Our studies suggest the quantum "measurement problem" might resolve naturally: i
 
 ### 1.6 Connection to Recursive Balance Field Theory
 
-The **Recursive Balance Field** ([`../docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md`](../docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md)) describes stability mechanisms across scales.
+The **Recursive Balance Field** ([`../docs/recursive_balance_field.md`](../docs/recursive_balance_field.md)) describes stability mechanisms across scales.
 
 **PAC Theoretical Foundation**: Our investigation suggests the balance field might represent **the mechanism** that maintains PAC across recursive decompositions:
 
@@ -322,7 +322,7 @@ Not just in value - in **ALL dimensions**. This simple insight revealed that con
 
 > **"Ball-ness isn't IN the ball - it's in relationships: thrower, game, gravity"**
 
-Identity is **relational, not intrinsic**. This connects directly to our herniation hypothesis work ([`../docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md`](../docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md)) - identity emerges at the **rupture point** between energy and information fields!
+Identity is **relational, not intrinsic**. This connects directly to our herniation hypothesis work ([`../docs/herniation_hypothesis.md`](../docs/herniation_hypothesis.md)) - identity emerges at the **rupture point** between energy and information fields!
 
 **Practical Result**: We can now **calculate identity** through I/E ratios:
 ```python
@@ -349,7 +349,7 @@ From child view:  "Information is redistributing" (local amplification!)
 Reality:          Same process, different viewpoints
 ```
 
-**Connection to Superfluid Crystallization**: This connects to our superfluid informational crystallization experiments ([`../docs/[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md`](../docs/[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md)) - what children experience as amplification, the parent field experiences as **crystallization events**!
+**Connection to Superfluid Crystallization**: This connects to our superfluid informational crystallization experiments ([`../docs/superfluid_informational_crystallization.md`](../docs/superfluid_informational_crystallization.md)) - what children experience as amplification, the parent field experiences as **crystallization events**!
 
 ### Reality Doesn't Experience Time: The Universe Frame
 
@@ -498,8 +498,8 @@ assert parent_total == children_total  # Conservation holds!
 | **Recursive Stability** | "Entropy as fuel" | Long-term convergence | [`comprehensive_analysis.py`](macro_emergence_dynamics/comprehensive_analysis.py) | Stable across 10,000+ timesteps |
 | **Context Dependence** | "Factory signatures" | Symbolic collapse patterns | [`../experiments/symbolic_entropy_collapse/`](../experiments/archive/era1/symbolic_entropy_collapse) | Context-dependent actualization |
 | **Energy Conservation** | "Reconfiguration cost" | Landauer erasure costs | [`../experiments/landauer_erasure_field_cost_map/`](../experiments/archive/era1/landauer_erasure_field_cost_map) | Energy-information equivalence |
-| **Herniation Events** | "Rupture crystallization" | Dual-field pressure ruptures | [`../docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md`](../docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md) | Fractal-radial emergence patterns |
-| **Superfluid Crystallization** | "Information crystalizes" | Entropy-driven structure formation | [`../docs/[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md`](../docs/[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md) | Geometric attractors above threshold |
+| **Herniation Events** | "Rupture crystallization" | Dual-field pressure ruptures | [`../docs/herniation_hypothesis.md`](../docs/herniation_hypothesis.md) | Fractal-radial emergence patterns |
+| **Superfluid Crystallization** | "Information crystalizes" | Entropy-driven structure formation | [`../docs/superfluid_informational_crystallization.md`](../docs/superfluid_informational_crystallization.md) | Geometric attractors above threshold |
 | **Recursive Trees** | "Adaptive pruning" | Entropy-seeded branching | [`../experiments/recursive_entropy/results.md`](../experiments/recursive_entropy/results.md) | 13 nodes, depth 3, balanced structure |
 | **Predictive Collapse** | "Collapse forecasting" | Entropy curvature prediction | [`../experiments/predictive_collapse/results.md`](../experiments/predictive_collapse/results.md) | 70+ predicted zones by generation 29 |
 

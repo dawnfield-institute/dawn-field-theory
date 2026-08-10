@@ -722,7 +722,7 @@ This work builds on the PAC framework documented in:
 ### 6.2 SEC and Information Dynamics
 
 Entropy collapse mechanisms from:
-- `[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md`
+- `symbolic_entropy_collapse_preprint.md`
 - Key: $C(S) = S \cdot \exp(-\xi \cdot S)$
 
 ### 6.3 ML Validation

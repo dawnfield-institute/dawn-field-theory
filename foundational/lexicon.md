@@ -45,8 +45,8 @@ tags: [collapse, entropy, symbolic_structure, core]
 status: core
 see_also: [Field Collapse, Collapse Metric]
 related_documents:
-  - foundational/docs/[m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
-  - foundational/docs/[m][F][v1.0][C4][I4]_recursive_tree.md
+  - foundational/docs/collapse_dynamics_in_entropic_fields.md
+  - foundational/docs/recursive_tree.md
 example: "Entropy Collapse is triggered when the entropy gradient exceeds a critical threshold in the simulation field."
 
 ---
@@ -57,8 +57,8 @@ tags: [balance, field_dynamics, quantum_potentials, core]
 status: core
 see_also: [Quantum Potential Layer (QPL), Field Pressure]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md
-  - foundational/docs/[m][F][v1.0][C4][I5]_dawn_field_theory_recursive_balance_field.md
+  - foundational/docs/recursive_balance_field.md
+  - foundational/docs/dawn_field_theory_recursive_balance_field.md
 example: "The recursive balance field adapts dynamically as memory accumulates in the system."
 
 ---
@@ -69,7 +69,7 @@ tags: [symbolic_dynamics, field_geometry, attractors, core]
 status: core
 see_also: [Attractor Density, Semantic Resonance]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I4]_recursive_tree.md
+  - foundational/docs/recursive_tree.md
 example: "Symbolic attractors define the stable points in the recursive field simulation."
 
 ---
@@ -80,7 +80,7 @@ tags: [temporal_symmetry, recursion, experimental]
 status: experimental
 see_also: [Symbolic Recursion]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I5]_bifractal_time_emergence.md
+  - foundational/docs/bifractal_time_emergence.md
 example: "Bifractal collapse is used to simulate time symmetry in recursive models."
 
 ---
@@ -91,7 +91,7 @@ tags: [pi_modulation, angular_recursion, modulation, experimental]
 status: experimental
 see_also: [Fractal Modulation]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I5]_pi_harmonics.md
+  - foundational/docs/pi_harmonics.md
 example: "Pi-harmonic modulation increases coherence in symbolic collapse events."
 
 ---
@@ -102,8 +102,8 @@ tags: [field_rupture, structure_emergence, core]
 status: core
 see_also: [Field Collapse, Superfluid Informational Crystallization]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I5]_herniation_hypothesis.md
-  - foundational/docs/[m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md
+  - foundational/docs/herniation_hypothesis.md
+  - foundational/docs/reality_as_herniation_precipitate.md
 example: "Herniation events are logged when the energy-information boundary is breached."
 
 ---
@@ -125,7 +125,7 @@ tags: [memory_pruning, symbolic_filtering, recursion, core]
 status: core
 see_also: [Symbolic Recursion]
 related_documents:
-  - foundational/docs/[m][F][v1.1][C4][I5]_recursive_entopy.md
+  - foundational/docs/recursive_entopy.md
 example: "Recursive pruning maintains system efficiency by removing redundant nodes."
 
 ---
@@ -136,7 +136,7 @@ tags: [quantum_structure, dual_fields, core]
 status: core
 see_also: [Quantum Potential Layer (QPL)]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I5]_reality_as_herniation_precipitate.md
+  - foundational/docs/reality_as_herniation_precipitate.md
 example: "Quantum-locked nodes are modeled as stable points in the dual-field simulation."
 
 ---
@@ -224,7 +224,7 @@ tags: [hierarchy, segmentation, collapse, core]
 status: core
 see_also: [Entropy Segmentation, Logic Role]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I4]_recursive_tree.md
+  - foundational/docs/recursive_tree.md
 example: "The collapse tree visualizes the recursive breakdown of logic."
 
 ---
@@ -235,7 +235,7 @@ tags: [logic, roles, symbolic_flow, core]
 status: core
 see_also: [Collapse Tree]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I4]_recursive_tree.md
+  - foundational/docs/recursive_tree.md
 example: "Each node in the collapse tree is assigned a logic role."
 
 ---
@@ -268,7 +268,7 @@ tags: [collapse, field_dynamics, convergence, core]
 status: core
 see_also: [Entropy Collapse]
 related_documents:
-  - foundational/docs/[m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
+  - foundational/docs/collapse_dynamics_in_entropic_fields.md
 example: "Field collapse marks the end of the simulation's dynamic phase."
 
 ---
@@ -323,7 +323,7 @@ tags: [superfluidity, crystallization, information, experimental]
 status: experimental
 see_also: [Herniation]
 related_documents:
-  - foundational/docs/[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md
+  - foundational/docs/superfluid_informational_crystallization.md
 example: "Superfluid informational crystallization yields highly ordered patterns."
 
 ---

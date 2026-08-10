@@ -568,4 +568,4 @@ We welcome critique, correction, and collaboration. All methods are open-source 
 
 *Status:* 💡 Exploratory Finding - Statistical Analysis Complete - Theoretical Derivation Open - Independent Validation Invited
 
-*Document ID:* `[id][F][v1.0][C6][I6][E]_feigenbaum_closed_form_discovery`
+*Document ID:* `feigenbaum_closed_form_discovery`

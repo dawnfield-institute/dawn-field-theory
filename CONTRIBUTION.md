@@ -18,8 +18,8 @@ Thank you for your interest in contributing. This is a living, evolving reposito
 1. **Read the foundations:** 
    - `README.md`, `timeline.md`, and `LICENSE_APPENDIX.md`
    - `infodynamics.md` and `dawn-field-theory.md` (core theory overview)
-   - [`foundational/docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md`](foundational/docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md) (computational novelty thesis)
-   - [`foundational/docs/[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md`](foundational/docs/[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md) (repository philosophy)
+   - [`foundational/docs/arithmetic_identity_and_structural_novelty_in_computation.md`](foundational/docs/arithmetic_identity_and_structural_novelty_in_computation.md) (computational novelty thesis)
+   - [`foundational/docs/imperfection_engine_epistemic_collapse_dawn_field_repo.md`](foundational/docs/imperfection_engine_epistemic_collapse_dawn_field_repo.md) (repository philosophy)
 
 2. **Understand the bridges:** Browse [`foundational/docs/bridges/`](foundational/docs/bridges/) to see how Dawn Field Theory connects to existing frameworks (deep learning, AI systems, gradient descent)
 

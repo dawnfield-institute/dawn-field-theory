@@ -34,8 +34,8 @@ keywords:
   - resonance phenomena
 related_preprints:
   - "[pac][D][v1.0][C2][I5][E]_xi_bounded_invariant_universal_balance_operator_preprint.md"
-  - "[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
-  - "[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md"
+  - "symbolic_entropy_collapse_preprint.md"
+  - "macro_emergence_dynamics_navier_stokes_preprint.md"
 ```
 
 ---
@@ -1605,7 +1605,7 @@ All computational artifacts and theoretical derivations are available in the rep
 
 The mathematical formulation of Symbolic Entropy Collapse emerged from studying field evolution equations and recognizing a universal collapse pattern.
 
-**SEC Equations** (from [`dawn-field-theory/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md)):
+**SEC Equations** (from [`dawn-field-theory/foundational/docs/symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/symbolic_entropy_collapse_preprint.md)):
 
 ```
 ∂S/∂t = -∇²S - β(Ξ)·S·(S - S_critical)  [Collapse equation]
@@ -1662,7 +1662,7 @@ Run 100 independent field evolutions from random initial conditions:
 **Theoretical prediction confirmed**: SEC naturally produces the 89% entropy decrease observed in cosmological evolution, arising from fundamental collapse dynamics rather than fine-tuning.
 
 **Reference**:
-- Theory: [`dawn-field-theory/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md)
+- Theory: [`dawn-field-theory/foundational/docs/symbolic_entropy_collapse_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/symbolic_entropy_collapse_preprint.md)
 - Experiment: [`dawn-models/research/experiments/entropy_collapse/symbolic_collapse_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/experiments/entropy_collapse/symbolic_collapse_validation.py)
 - Results: `entropy_collapse/results/collapse_statistics.json`
 - Analysis: `entropy_collapse/analysis/critical_behavior.py`
@@ -1671,7 +1671,7 @@ Run 100 independent field evolutions from random initial conditions:
 
 One of the most striking discoveries was the **exact mathematical equivalence** between SEC dynamics and the Navier-Stokes equations of fluid dynamics.
 
-**From** [`dawn-field-theory/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md):
+**From** [`dawn-field-theory/foundational/docs/macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/macro_emergence_dynamics_navier_stokes_preprint.md):
 
 **Theorem** (SEC-Navier-Stokes Equivalence):
 ```
@@ -1728,7 +1728,7 @@ With matched parameters and boundary conditions.
 **Significance**: Fluid dynamics is not analogous to information dynamics—it *is* information dynamics observed in the velocity field representation. This unifies two apparently disparate areas of physics.
 
 **Reference**:
-- Theory paper: [`dawn-field-theory/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/[m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.md) (lines 200-480, complete proof)
+- Theory paper: [`dawn-field-theory/foundational/docs/macro_emergence_dynamics_navier_stokes_preprint.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/macro_emergence_dynamics_navier_stokes_preprint.md) (lines 200-480, complete proof)
 - Equivalence proof: [`dawn-field-theory/foundational/docs/proofs/sec_navier_stokes_equivalence.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/proofs/sec_navier_stokes_equivalence.md)
 - Computational validation: [`dawn-models/research/experiments/fluid_equivalence/navier_stokes_comparison.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/experiments/fluid_equivalence/navier_stokes_comparison.py)
 - Results: `fluid_equivalence/results/equivalence_validation.csv`

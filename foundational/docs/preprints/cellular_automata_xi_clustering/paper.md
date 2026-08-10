@@ -413,7 +413,7 @@ This preprint connects to the broader Dawn Field Theory research program:
 
 | Preprint | Connection |
 |----------|------------|
-| `[id][D][v1.0][C5][I5][R]_dawn_field_theory_infodynamics_preprint.md` | Foundational information dynamics |
+| `dawn_field_theory_infodynamics_preprint.md` | Foundational information dynamics |
 | `[sec][D][v1.0][C4][I5][E]_golden_ratio_prime_distribution_preprint.md` | φ in number theory, SEC phase transitions |
 | `[pac][D][v1.0][C4][I5][E]_qbe_pac_unification_preprint.md` | Quantum-classical bridge via PAC |
 | `[pac][D][v1.0][C3][I5][E]_gaia_computational_validation_dawn_field_theory_preprint.md` | GAIA neural network validation |

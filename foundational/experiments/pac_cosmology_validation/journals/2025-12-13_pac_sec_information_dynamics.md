@@ -63,7 +63,7 @@ These are the dynamics of information-as-structure, and they should appear every
 ### 18:15 - Documentation
 
 Created:
-- Framework document: `[id][F][v1.0][C6][I6][E]_pac_sec_as_information_dynamics.md`
+- Framework document: `pac_sec_as_information_dynamics.md`
 - This journal entry
 
 ---
@@ -146,7 +146,7 @@ After: "PAC/SEC is information dynamics; black holes are informational systems; 
 ## Documentation Created
 
 1. **Framework document**: Comprehensive explanation of PAC/SEC as information dynamics
-   - Path: `foundational/docs/[id][F][v1.0][C6][I6][E]_pac_sec_as_information_dynamics.md`
+   - Path: `foundational/docs/pac_sec_as_information_dynamics.md`
    - Content: Theoretical foundation, cross-domain evidence, falsification criteria
 
 2. **Journal update**: Added exp_09 and exp_10 results to cosmology validation journal

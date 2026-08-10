@@ -6,7 +6,7 @@ exp_21_pure_ratio_confluence.py
 APPLYING THE BASE-AGNOSTIC PRINCIPLE:
 "Express results as RATIOS to avoid base artifacts"
 
-From [id][F][v1.0][C5][I5][E]_base_agnostic_pac_invariants.md:
+From base_agnostic_pac_invariants.md:
   - PAC = ratios, relationships, the territory
   - SEC = absolute values, representations, the map
 

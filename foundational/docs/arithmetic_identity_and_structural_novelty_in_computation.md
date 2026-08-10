@@ -1,4 +1,4 @@
-# [id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md
+# arithmetic_identity_and_structural_novelty_in_computation.md
 
 ```yaml
 document_title: Arithmetic Identity and Structural Novelty in Computation: A CIP Perspective
@@ -416,9 +416,9 @@ Where P is the probability of successful reconstruction. Higher values indicate 
 - `foundational/experiments/archive/era1/landauer_erasure_field_cost_map/`: Thermodynamic costs of information processing
 
 #### Theoretical Documents
-- `foundational/docs/[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md`
-- `foundational/docs/[m][F][v1.0][C4][I5]_dawn_field_theory_recursive_balance_field.md`
-- `foundational/docs/bridges/[id][A][v1.0][C4][I4]_symbolic_entropy_collapse_deep_learning_bridge.md`
+- `foundational/docs/symbolic_entropy_collapse_geometry_foundation.md`
+- `foundational/docs/dawn_field_theory_recursive_balance_field.md`
+- `foundational/docs/bridges/symbolic_entropy_collapse_deep_learning_bridge.md`
 
 #### Implementation Examples
 - `models/CIMM/`: Cosmic Information Mining framework implementation
@@ -428,7 +428,7 @@ Where P is the probability of successful reconstruction. Higher values indicate 
 ---
 
 **CIP Compliance:**
-- Naming: [id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md
+- Naming: arithmetic_identity_and_structural_novelty_in_computation.md
 - Explicit mapping to CIP and Dawn Field Theory principles
 - Formal, testable, and reproducible argumentation
 - Cross-referenced with experimental validation

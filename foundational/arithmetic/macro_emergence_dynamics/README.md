@@ -20,7 +20,7 @@ MED operates on fields that emerge from **pre-field recursion substrate**:
 
 This connection suggests MED bounded complexity might emerge from **resonance-driven PAC conservation** at the pre-field level.
 
-See: `../experiments/pre_field_recursion/` and `../docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`
+See: `../experiments/pre_field_recursion/` and `../docs/pre_field_recursion_resonance_driven_emergence.md`
 
 ## 🔧 Main Working File
 

@@ -172,7 +172,7 @@ This explains no information destruction: unrealized branches never contributed 
 **The Bottom Line**: 
 > PAC conservation isn't imposed—it **emerges naturally when recursive systems find their resonance**. Reality might be what happens when pre-field computation locks to its natural frequency.
 
-See full paper: [`../../docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`](../../docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md)
+See full paper: [`../../docs/pre_field_recursion_resonance_driven_emergence.md`](../../docs/pre_field_recursion_resonance_driven_emergence.md)
 
 ---
 

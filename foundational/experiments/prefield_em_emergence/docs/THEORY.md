@@ -228,8 +228,8 @@ Different pre-field geometries should produce different effective coupling const
 ## References
 
 ### Internal Documents
-- `[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`
-- `[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md`
+- `pre_field_recursion_resonance_driven_emergence.md`
+- `pac_confluence_xi_unified_framework.md`
 
 ### Background
 - Maxwell, J.C. (1865). "A Dynamical Theory of the Electromagnetic Field"

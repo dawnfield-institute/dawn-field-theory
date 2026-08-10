@@ -25,10 +25,10 @@ links:
   - recursive_tree_experiment: foundational/experiments/archive/era1/recursive_tree/recursive_tree.py
   - recursive_entropy_experiment: foundational/experiments/archive/era1/recursive_entropy/recursive_entopy.py
   - fractal_pruning_results: foundational/experiments/archive/era1/symbolic_fractal_pruning/results.md
-  - symbolic_collapse_pruning: foundational/docs/[id][F][v1.0][C5][I5][E]_symbolic_collapse_recursive_field_pruning.md
-  - recursive_entropy_docs: foundational/docs/[m][F][v1.1][C4][I5]_recursive_entopy.md
-  - recursive_tree_docs: foundational/docs/[m][F][v1.0][C4][I4]_recursive_tree.md
-  - entropy_regulation_calc: foundational/docs/[m][D][v0.9][C3][I3]_recursive_calculus_and_entropy_regulation.md
+  - symbolic_collapse_pruning: foundational/docs/symbolic_collapse_recursive_field_pruning.md
+  - recursive_entropy_docs: foundational/docs/recursive_entopy.md
+  - recursive_tree_docs: foundational/docs/recursive_tree.md
+  - entropy_regulation_calc: foundational/docs/recursive_calculus_and_entropy_regulation.md
   - pruning_theory_infodynamics: todo/left_for_first_release/preprints/drafts/DFT_Infodynamics_preprint_draft.md
   - cip_domain_upgrade: todo/infra/cip_domain_upgrade.md
   - kronos: todo/infra/kronos.md

@@ -38,4 +38,4 @@ This framework explains:
 
 - `sec_threshold_detection/` - Feigenbaum discovery that this explains
 - `prime_harmonic_manifold/` - φ-eigenvalue work
-- `docs/[id][F][v1.0][C5][I5][E]_base_agnostic_pac_invariants.md` - Full documentation
+- `docs/base_agnostic_pac_invariants.md` - Full documentation

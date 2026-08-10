@@ -216,9 +216,9 @@ This experiment validates:
 
 ### Internal
 
-- `[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`
-- `[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md`
-- `[m][F][v1.0][C4][I5]_pi_harmonics.md`
+- `pre_field_recursion_resonance_driven_emergence.md`
+- `pac_confluence_xi_unified_framework.md`
+- `pi_harmonics.md`
 
 ### External
 

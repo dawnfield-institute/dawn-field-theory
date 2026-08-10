@@ -1,6 +1,6 @@
 # Virtual Cognitive Processing Unit: Empirical Validation of Dawn Field Theory Computational Architecture
 
-**Document ID**: [id][F][v1.0][C5][I5][E]_vcpu_empirical_validation_computational_naturalness  
+**Document ID**: vcpu_empirical_validation_computational_naturalness  
 **Version**: 1.0  
 **Confidence**: C5 (High - all predictions confirmed)  
 **Impact**: I5 (High - cross-domain validation)  
@@ -28,9 +28,9 @@ Dawn Field Theory proposes that cognitive processing operates through field-base
 - **Xi Bounds**: 1.0015 ≤ Ξ ≤ 1.0571, equilibrium at 1.028
 
 These predictions arise from theoretical derivations documented in:
-- `[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md`
-- `[m][F][v1.0][C4][I5]_recursive_balance_field.md`
-- `[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md`
+- `pac_confluence_xi_unified_framework.md`
+- `recursive_balance_field.md`
+- `symbolic_entropy_collapse_geometry_foundation.md`
 
 A natural question: if these equations correctly describe cognitive processing, do they produce efficient computation?
 
@@ -225,9 +225,9 @@ That's not a benchmark result. That's evidence.
 ## References
 
 ### Internal Documents
-1. `[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md`
-2. `[m][F][v1.0][C4][I5]_recursive_balance_field.md`
-3. `[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md`
+1. `pac_confluence_xi_unified_framework.md`
+2. `recursive_balance_field.md`
+3. `symbolic_entropy_collapse_geometry_foundation.md`
 4. `dawn-field-theory.md`
 5. `infodynamics.md`
 

@@ -305,7 +305,7 @@ We invite the scientific community to engage with this framework - whether to ex
 - Mathematical framework: `foundational/arithmetic/macro_emergence_dynamics/`
 
 ### Related Theoretical Work
-- Recursive Balance Field Theory: `foundational/docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md`
+- Recursive Balance Field Theory: `foundational/docs/recursive_balance_field.md`
 - Symbolic Entropy Collapse: `foundational/experiments/archive/era1/symbolic_entropy_collapse/`
 - Temporal Negotiation: `foundational/experiments/archive/era1/symbolic_bifractal/`
 - Information Amplification: `foundational/experiments/archive/era2/information_amplification/`

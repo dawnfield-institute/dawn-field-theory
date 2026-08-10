@@ -33,7 +33,7 @@ keywords:
   - computational complexity
 related_preprints:
   - "[pac][D][v1.0][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md"
-  - "[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
+  - "symbolic_entropy_collapse_preprint.md"
 ```
 
 ---

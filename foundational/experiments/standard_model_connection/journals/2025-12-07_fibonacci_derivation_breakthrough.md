@@ -326,7 +326,7 @@ Time oscillates around this geometric center
 Following GenerationHumilityGuidelines.md, four comprehensive preprints were created documenting all Standard Model connection work:
 
 ### Paper 1: Fibonacci Gauge Derivation
-`[pac][D][v1.0][C4][I5][E]_fibonacci_gauge_derivation_standard_model_preprint.md`
+`fibonacci_gauge_derivation_standard_model_preprint.md`
 
 **Core contribution:** Proves Fibonacci constraint emergence from conservation + self-similarity
 - Theorem: r² = r + 1 → φ → Fibonacci (mathematical necessity)
@@ -334,7 +334,7 @@ Following GenerationHumilityGuidelines.md, four comprehensive preprints were cre
 - SU(2) = F₄ = 3, SU(3) = F₆ = 8, Total = F₇ = 13
 
 ### Paper 2: Depth Seven Gauge Closure
-`[pac][D][v1.0][C4][I5][E]_depth_seven_gauge_closure_preprint.md`
+`depth_seven_gauge_closure_preprint.md`
 
 **Core contribution:** Explains why F₇ = 13 is uniquely selected
 - Five independent constraints (minimal completeness, holonomy, phi convergence, magic number, decomposition)
@@ -342,7 +342,7 @@ Following GenerationHumilityGuidelines.md, four comprehensive preprints were cre
 - Fibonacci decomposition: 13 = 8 + 3 + 1 + 1 = SU(3) + SU(2) + U(1)_Y + U(1)_EM
 
 ### Paper 3: Complete Fibonacci Assignment
-`[pac][D][v1.0][C4][I5][E]_complete_fibonacci_assignment_preprint.md`
+`complete_fibonacci_assignment_preprint.md`
 
 **Core contribution:** Fills all gaps in F₁-F₇ assignment
 - F₃ = 2: Chirality/Möbius duality (not SU(2)!)
@@ -350,7 +350,7 @@ Following GenerationHumilityGuidelines.md, four comprehensive preprints were cre
 - F₁ - F₇ complete mapping to physics
 
 ### Paper 4: Testable Predictions
-`[pac][D][v1.0][C4][I5][E]_testable_predictions_protocols_preprint.md`
+`testable_predictions_protocols_preprint.md`
 
 **Core contribution:** 16 specific falsifiable predictions
 - Gauge structure (sin²θ_W, anti-GUT, family structure)

@@ -21,12 +21,12 @@ computational_validation:
 experiment_links:
   - "experiments/infodynamic_gravity/"
   - "arithmetic/macro_emergence_dynamics/"
-  - "docs/[m][F][v1.0][C4][I5]_bifractal_time_emergence.md"
-  - "docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md"
+  - "docs/bifractal_time_emergence.md"
+  - "docs/recursive_balance_field.md"
 related_documents:
   - "experiments/infodynamic_gravity/docs/INFODYNAMIC_SYMMETRY_UNIFIED_FRAMEWORK_v2.0.md"
   - "arithmetic/infodynamics_arithmetic_v1.md"
-  - "docs/[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md"
+  - "docs/superfluid_informational_crystallization.md"
   - "experiments/infodynamic_gravity/VALIDATION_RESULTS_v2.0.md"
 license: MIT
 ---
@@ -860,9 +860,9 @@ We emphasize that this work represents **exploratory investigation** requiring c
 4. **arithmetic/macro_emergence_dynamics/** - MED operator validation
 
 ### Foundational Theoretical Framework:
-5. **[m][F][v1.0][C4][I5]_recursive_balance_field.md** - RBF theory foundation
-6. **[m][F][v1.0][C4][I5]_bifractal_time_emergence.md** - Temporal negotiation mechanics
-7. **[m][F][v1.0][C4][I5]_superfluid_informational_crystallization.md** - Spacetime medium theory
+5. **recursive_balance_field.md** - RBF theory foundation
+6. **bifractal_time_emergence.md** - Temporal negotiation mechanics
+7. **superfluid_informational_crystallization.md** - Spacetime medium theory
 8. **arithmetic/infodynamics_arithmetic_v1.md** - Mathematical operator framework
 
 ### Integration Documents:

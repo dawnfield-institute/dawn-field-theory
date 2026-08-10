@@ -70,4 +70,81 @@ These reference terminology and concepts that have been superseded (CIM/CIMM, he
 
 ---
 
-**Note on filenames:** The `[m][F][v1.0][C4][I5]` prefix convention is a legacy CIP tagging system. `[m]` = markdown, `[F]` = foundational, `[v1.0]` = version, `[C4]` = confidence level, `[I5]` = importance level, `[E]`/`[R]` = experimental/review status. This convention is no longer used for new documents.
+## Filenames: the CIP prefix convention, retired
+
+Documents here once carried a bracket prefix — `[m][F][v1.0][C4][I5][E]_name.md` — from the
+Cognition Index Protocol. **CIP was removed from this repository in February 2026 and the
+prefixes were stripped in August 2026.**
+
+They were retired rather than carried forward for three reasons. The scheme outlived the
+protocol that gave it meaning. Its two surviving legends *disagreed*: this README said
+slot 1 was "markdown" and slot 5 was "importance", while the legend inside
+`pac_confluence_xi_unified_framework.md` said slot 1 was the institute code and slot 5 was
+"impact" — and the file population settles it against this README, since `[m]`, `[id]`,
+`[pac]`, `[cip]` and `[ai]` all appear on `.md`, `.pdf` and `.py` alike, so slot 1 was a
+series code, never a format. The ratings had also escaped their own rubric: the legend
+described a 1–5 scale and four documents carried `[C6][I6]`.
+
+Confidence and impact ratings are **not** preserved as metadata. Carrying forward numbers
+from a scheme whose own documentation contradicts itself would be false precision. Where a
+document states its version and status, that lives in the document.
+
+Archived material keeps its original names. Experiments under
+`../experiments/archive/` and files under `../../archive/` are preserved as-was, because
+the old convention is itself evidence of when the work was done.
+
+### Renamed files
+
+| Was | Now |
+|---|---|
+| `imperfection_engine_epistemic_collapse_dawn_field_repo.md` | [`imperfection_engine_epistemic_collapse_dawn_field_repo.md`](imperfection_engine_epistemic_collapse_dawn_field_repo.md) |
+| `arithmetic_identity_and_structural_novelty_in_computation.md` | [`arithmetic_identity_and_structural_novelty_in_computation.md`](arithmetic_identity_and_structural_novelty_in_computation.md) |
+| `base_agnostic_pac_invariants.md` | [`base_agnostic_pac_invariants.md`](base_agnostic_pac_invariants.md) |
+| `landauer_erasure_cost_superfluidity_viscosity.md` | [`landauer_erasure_cost_superfluidity_viscosity.md`](landauer_erasure_cost_superfluidity_viscosity.md) |
+| `pac_confluence_xi_unified_framework.md` | [`pac_confluence_xi_unified_framework.md`](pac_confluence_xi_unified_framework.md) |
+| `phase_shifts_classical_vs_emergent_collapse.md` | [`phase_shifts_classical_vs_emergent_collapse.md`](phase_shifts_classical_vs_emergent_collapse.md) |
+| `symbolic_collapse_recursive_field_pruning.md` | [`symbolic_collapse_recursive_field_pruning.md`](symbolic_collapse_recursive_field_pruning.md) |
+| `symbolic_entropy_collapse_geometry_foundation.md` | [`symbolic_entropy_collapse_geometry_foundation.md`](symbolic_entropy_collapse_geometry_foundation.md) |
+| `vcpu_empirical_validation_computational_naturalness.md` | [`vcpu_empirical_validation_computational_naturalness.md`](vcpu_empirical_validation_computational_naturalness.md) |
+| `universe_internal_reorganization_unified_framework.md` | [`universe_internal_reorganization_unified_framework.md`](universe_internal_reorganization_unified_framework.md) |
+| `feigenbaum_closed_form_discovery.md` | [`feigenbaum_closed_form_discovery.md`](feigenbaum_closed_form_discovery.md) |
+| `observation_dependency_pac_measurement_unified.md` | [`observation_dependency_pac_measurement_unified.md`](observation_dependency_pac_measurement_unified.md) |
+| `pac_sec_as_information_dynamics.md` | [`pac_sec_as_information_dynamics.md`](pac_sec_as_information_dynamics.md) |
+| `tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md` | [`tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md`](tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md) |
+| `recursive_calculus_and_entropy_regulation.md` | [`recursive_calculus_and_entropy_regulation.md`](recursive_calculus_and_entropy_regulation.md) |
+| `symbolic_entropy_collapse_and_hodge_mapping.md` | [`symbolic_entropy_collapse_and_hodge_mapping.md`](symbolic_entropy_collapse_and_hodge_mapping.md) |
+| `recursive_tree.md` | [`recursive_tree.md`](recursive_tree.md) |
+| `super_fluid.md` | [`super_fluid.md`](super_fluid.md) |
+| `bifractal_time_emergence.md` | [`bifractal_time_emergence.md`](bifractal_time_emergence.md) |
+| `dawn_field_theory_recursive_balance_field.md` | [`dawn_field_theory_recursive_balance_field.md`](dawn_field_theory_recursive_balance_field.md) |
+| `herniation_hypothesis.md` | [`herniation_hypothesis.md`](herniation_hypothesis.md) |
+| `pi_harmonics.md` | [`pi_harmonics.md`](pi_harmonics.md) |
+| `reality_as_herniation_precipitate.md` | [`reality_as_herniation_precipitate.md`](reality_as_herniation_precipitate.md) |
+| `recursive_balance_field.md` | [`recursive_balance_field.md`](recursive_balance_field.md) |
+| `superfluid_informational_crystallization.md` | [`superfluid_informational_crystallization.md`](superfluid_informational_crystallization.md) |
+| `recursive_symbol_collapse.md` | [`recursive_symbol_collapse.md`](recursive_symbol_collapse.md) |
+| `recursive_entopy.md` | [`recursive_entopy.md`](recursive_entopy.md) |
+| `collapse_dynamics_in_entropic_fields.md` | [`collapse_dynamics_in_entropic_fields.md`](collapse_dynamics_in_entropic_fields.md) |
+| `pre_field_recursion_resonance_driven_emergence.md` | [`pre_field_recursion_resonance_driven_emergence.md`](pre_field_recursion_resonance_driven_emergence.md) |
+| `cimm_modular_ai_systems_bridge.md` | [`cimm_modular_ai_systems_bridge.md`](bridges/cimm_modular_ai_systems_bridge.md) |
+| `recursive_balance_continual_learning_bridge.md` | [`recursive_balance_continual_learning_bridge.md`](bridges/recursive_balance_continual_learning_bridge.md) |
+| `symbolic_entropy_collapse_deep_learning_bridge.md` | [`symbolic_entropy_collapse_deep_learning_bridge.md`](bridges/symbolic_entropy_collapse_deep_learning_bridge.md) |
+| `gradient_descent_infodynamics_bridge.md` | [`gradient_descent_infodynamics_bridge.md`](bridges/gradient_descent_infodynamics_bridge.md) |
+| `alignment_with_flux_qubit.md` | [`alignment_with_flux_qubit.md`](empirical_alignment/alignment_with_flux_qubit.md) |
+| `alignment_with_measurement_induced_phase_transitions.md` | [`alignment_with_measurement_induced_phase_transitions.md`](empirical_alignment/alignment_with_measurement_induced_phase_transitions.md) |
+| `alignment_with_quantum_darwinism.md` | [`alignment_with_quantum_darwinism.md`](empirical_alignment/alignment_with_quantum_darwinism.md) |
+| `alignment_with_quantum_eraser.md` | [`alignment_with_quantum_eraser.md`](empirical_alignment/alignment_with_quantum_eraser.md) |
+| `alignment_with_serge_haroche.md` | [`alignment_with_serge_haroche.md`](empirical_alignment/alignment_with_serge_haroche.md) |
+| `alignment_with_weak_measurement_models.md` | [`alignment_with_weak_measurement_models.md`](empirical_alignment/alignment_with_weak_measurement_models.md) |
+| `alignment_with_wheelers_delayed_choice.md` | [`alignment_with_wheelers_delayed_choice.md`](empirical_alignment/alignment_with_wheelers_delayed_choice.md) |
+| `alignment_with_zeilinger_arndt.md` | [`alignment_with_zeilinger_arndt.md`](empirical_alignment/alignment_with_zeilinger_arndt.md) |
+| `alignment_hiroshima_double_slit.md` | [`alignment_hiroshima_double_slit.md`](empirical_alignment/alignment_hiroshima_double_slit.md) |
+| `resonant_symbolic_convergence_human_agent_preprint.pdf` | [`resonant_symbolic_convergence_human_agent_preprint.pdf`](preprints/pdfs/resonant_symbolic_convergence_human_agent_preprint.pdf) |
+| `symbolic_cognition_collapse_interpretability_preprint.pdf` | [`symbolic_cognition_collapse_interpretability_preprint.pdf`](preprints/pdfs/symbolic_cognition_collapse_interpretability_preprint.pdf) |
+| `cognition_index_protocol_preprint.pdf` | [`cognition_index_protocol_preprint.pdf`](preprints/pdfs/cognition_index_protocol_preprint.pdf) |
+| `dawn_field_theory_synthesis_preprint.pdf` | [`dawn_field_theory_synthesis_preprint.pdf`](preprints/pdfs/dawn_field_theory_synthesis_preprint.pdf) |
+| `symbolic_entropy_collapse_preprint.pdf` | [`symbolic_entropy_collapse_preprint.pdf`](preprints/pdfs/symbolic_entropy_collapse_preprint.pdf) |
+| `dawn_field_theory_infodynamics_preprint.pdf` | [`dawn_field_theory_infodynamics_preprint.pdf`](preprints/pdfs/dawn_field_theory_infodynamics_preprint.pdf) |
+| `macro_emergence_dynamics_navier_stokes_preprint.pdf` | [`macro_emergence_dynamics_navier_stokes_preprint.pdf`](preprints/pdfs/macro_emergence_dynamics_navier_stokes_preprint.pdf) |
+| `recursive_mathematical_plasticity_entropy_architecture_preprint.pdf` | [`recursive_mathematical_plasticity_entropy_architecture_preprint.pdf`](preprints/pdfs/recursive_mathematical_plasticity_entropy_architecture_preprint.pdf) |
+| `dawn_field_theory_comprehensive_overview.pdf` | [`dawn_field_theory_comprehensive_overview.pdf`](preprints/pdfs/dawn_field_theory_comprehensive_overview.pdf) |

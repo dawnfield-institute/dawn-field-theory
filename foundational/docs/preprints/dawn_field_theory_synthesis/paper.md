@@ -43,7 +43,7 @@
 
 - **Where It All Started**: Complete CIM document included as Appendix A
 - **Original Document Verification**: [CIM.docx](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.docx) and [ProtonDrive: Original CIM Document - PLACEHOLDER_FOR_PROTONDRIVE_LINK]
-- **Imperfection Engine Methodology**: [The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bid%5D%5BF%5D%5Bv0.1%5D%5BC5%5D%5BI5%5D%5BR%5D_imperfection_engine_epistemic_collapse_dawn_field_repo.md)
+- **Imperfection Engine Methodology**: [The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/imperfection_engine_epistemic_collapse_dawn_field_repo.md)
 - **All The Code**: [Dawn Field Theory Repository](https://github.com/dawnfield-institute/dawn-field-theory)
 - **Complete Archive**: Available to serious collaborators (it's extensive--every AI conversation, failed experiment, and breakthrough moment documented with cryptographic timestamps for full transparency)
 - **Contact Me**: [Peter Groom](mailto:peter@dawnfield.ca)
@@ -462,7 +462,7 @@ All computational results across the Dawn Field Theory investigation were obtain
 
 [7] Groom, P. (2025). "Symbolic Entropy Collapse: Topological Dynamics and Quantum Correspondence." *Dawn Field Theory Preprint Series*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/%5Bid%5D%5BD%5D%5Bv1.0%5D%5BC5%5D%5BI5%5D%5BE%5D_symbolic_entropy_collapse_preprint.md
 
-[8] Groom, P. (2025). "The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository." *Dawn Field Theory Foundation Documents*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/%5Bid%5D%5BF%5D%5Bv0.1%5D%5BC5%5D%5BI5%5D%5BR%5D_imperfection_engine_epistemic_collapse_dawn_field_repo.md
+[8] Groom, P. (2025). "The Imperfection Engine: On Scrutiny, Collapse, and the Recursive Evolution of the Dawn Field Repository." *Dawn Field Theory Foundation Documents*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/imperfection_engine_epistemic_collapse_dawn_field_repo.md
 
 [9] Groom, P. (2025). "Cosmic Information Mining via AI-Driven Energy Conversion: Original Thought Experiment." *Dawn Field Theory Historical Documents*. https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/docs/preprints/drafts/resources/CIM.md
 

@@ -40,7 +40,7 @@ This document maps how the Pre-Field → EM Emergence experiment connects to oth
 
 ## 1. Pre-Field Recursion [v2.2]
 
-**Document:** `[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`
+**Document:** `pre_field_recursion_resonance_driven_emergence.md`
 
 ### What We Inherit
 
@@ -68,7 +68,7 @@ Pre-field recursion predicted resonance at 0.03 Hz. Our SEC operator uses this f
 
 ## 2. PAC Confluence Xi Framework [v1.0]
 
-**Document:** `[id][F][v1.0][C5][I5][E]_pac_confluence_xi_unified_framework.md`
+**Document:** `pac_confluence_xi_unified_framework.md`
 
 ### What We Inherit
 
@@ -110,7 +110,7 @@ At w/R = 0.304 where E/B = φ:
 
 ## 3. π-Harmonics [v1.0]
 
-**Document:** `[m][F][v1.0][C4][I5]_pi_harmonics.md`
+**Document:** `pi_harmonics.md`
 
 ### What We Inherit
 

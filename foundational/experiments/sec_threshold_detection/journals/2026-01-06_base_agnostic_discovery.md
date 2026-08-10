@@ -143,7 +143,7 @@ It appears at Feigenbaum, primes, cellular automata, turbulence because it's a *
 
 ## Files Created
 
-- `foundational/docs/[id][F][v1.0][C5][I5][E]_base_agnostic_pac_invariants.md` - Full documentation
+- `foundational/docs/base_agnostic_pac_invariants.md` - Full documentation
 - `foundational/experiments/base_agnostic_pac/scripts/exp_10_base_agnostic_pac.py` - Core validation
 - `foundational/experiments/base_agnostic_pac/scripts/exp_11_entropy_analysis.py` - Entropy tests
 - `foundational/experiments/base_agnostic_pac/scripts/exp_12_zeckendorf_validation.py` - Base-φ analysis
