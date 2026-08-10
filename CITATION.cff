@@ -16,7 +16,13 @@ url: https://github.com/dawnfield-institute/dawn-field-theory
 license: GPL-3.0-or-later
 version: '2.1'
 date-released: '2026-02-20'
-doi: 10.5281/zenodo.15783623
+# Concept DOI for the repository archive record — always resolves to its newest
+# version. The previous value, 10.5281/zenodo.15783623, was the *version* DOI of the
+# single July 2025 prerelease inside this same family, so every citation pinned to a
+# 2025 snapshot. Verified against the Zenodo API 2026-08-10.
+# To cite the paper series instead, use PACSeries concept DOI 10.5281/zenodo.17295102
+# (latest version 0.3 = 10.5281/zenodo.21228036), which is what README.md advertises.
+doi: 10.5281/zenodo.15595182
 keywords:
 - information theory
 - field dynamics

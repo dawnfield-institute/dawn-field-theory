@@ -61,7 +61,20 @@ speculation — the distinction the series is organised around.
 
 ## Citing
 
-Citation metadata is in [`CITATION.cff`](../CITATION.cff) at the repository root. **Its DOI
-field is pending verification** — the repository has carried conflicting concept-DOI values,
-so check `registry/doi_registry.yaml` against Zenodo before citing rather than trusting
-either file alone.
+There are **two separate Zenodo record families**, and conflating them is what made the
+repository appear to contradict itself. Verified against the Zenodo API on 2026-08-10:
+
+| | Concept DOI | Latest version |
+|---|---|---|
+| **PACSeries** — the paper series | `10.5281/zenodo.17295102` | v0.3 = `…21228036` (2026-07-06) |
+| **Repository archive** — this repo as software | `10.5281/zenodo.15595182` | v1.0_prerelease = `…15783623` (2025-07-01) |
+
+- **To cite the papers**, use the PACSeries concept DOI. That is what
+  [`README.md`](../README.md) advertises, and a concept DOI always resolves to the newest
+  version.
+- **To cite the repository**, use [`CITATION.cff`](../CITATION.cff), which points at the
+  repository-archive concept DOI.
+
+The repository-archive family has had **only one version, from July 2025**. Its
+`CITATION.cff` entry still reads `version: 2.1, date-released: 2026-02-20`, which describes
+a state Zenodo has never been given — cutting a fresh GitHub release would close that gap.
