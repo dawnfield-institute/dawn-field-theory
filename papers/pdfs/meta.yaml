@@ -1,0 +1,24 @@
+schema_version: '2.0'
+directory_name: drafts
+description: 'Drafts and in-progress documents for DFT preprints, including theoretical
+  development, experiment writeups, and supporting materials for Infodynamics and
+  related concepts.
+
+  '
+semantic_scope:
+- infodynamics-drafts
+- dft-preprint-development
+hardware_standard: RTX 3070ti + i9-12gen (see resources/hardware_configuration.md)
+reproducibility_notes: All performance metrics and timing results specific to documented
+  hardware configuration
+files:
+- cognition_index_protocol_preprint.pdf
+- dawn_field_theory_comprehensive_overview.pdf
+- dawn_field_theory_infodynamics_preprint.pdf
+- dawn_field_theory_synthesis_preprint.pdf
+- macro_emergence_dynamics_navier_stokes_preprint.pdf
+- recursive_mathematical_plasticity_entropy_architecture_preprint.pdf
+- resonant_symbolic_convergence_human_agent_preprint.pdf
+- symbolic_cognition_collapse_interpretability_preprint.pdf
+- symbolic_entropy_collapse_preprint.pdf
+child_directories: []

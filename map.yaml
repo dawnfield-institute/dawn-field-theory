@@ -15,6 +15,7 @@ dawn-field-theory/
   THEORY_MAP.md
   map.yaml
   meta.yaml
+  requirements.txt
   timeline.md
   .changelog/
     20260106_093000_comprehensive_jwst_validation.md
@@ -4946,11 +4947,13 @@ dawn-field-theory/
     PREPRINT_UPDATE_PLAN.md
     SCHEMA.md
     UNIFIED_EVIDENCE.md
+    meta.yaml
     legacy/
       cognition_index_protocol/
         CITATION.md
         LICENSE
         README.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -4964,6 +4967,7 @@ dawn-field-theory/
         CITATION.md
         LICENSE
         README.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -4977,6 +4981,7 @@ dawn-field-theory/
         CITATION.md
         LICENSE
         README.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -4991,6 +4996,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -5010,6 +5016,7 @@ dawn-field-theory/
       dawn_field_theory_infodynamics_preprint.pdf
       dawn_field_theory_synthesis_preprint.pdf
       macro_emergence_dynamics_navier_stokes_preprint.pdf
+      meta.yaml
       recursive_mathematical_plasticity_entropy_architecture_preprint.pdf
       resonant_symbolic_convergence_human_agent_preprint.pdf
       symbolic_cognition_collapse_interpretability_preprint.pdf
@@ -5034,6 +5041,7 @@ dawn-field-theory/
       entropy_minimized_architecture.md
       hardware_configuration.md
       mathmatics_next_steps.md
+      meta.yaml
     series/
       PACSeries/
         HOW_TO_READ.md
@@ -5043,6 +5051,7 @@ dawn-field-theory/
         derivation_classification.md
         generate_tex_pdfs.py
         md_to_tex.py
+        meta.yaml
         state_of_the_pac_series.md
         v0.3_PLANNING.md
         v0.1/
@@ -5052,6 +5061,7 @@ dawn-field-theory/
             LICENSE
             README.md
             UNIFIED_EVIDENCE.md
+            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -5070,6 +5080,7 @@ dawn-field-theory/
                 conservation_engine.py
                 emergence_detector.py
                 field_engine.py
+                meta.yaml
                 meta_cognition_layer.py
                 pattern_amplifier.py
                 resonance_mesh.py
@@ -5089,6 +5100,7 @@ dawn-field-theory/
               gaia_validation_status.md
               harmonic_mobius_topology.md
               mas_herniation_cosmology_unified.md
+              meta.yaml
               notes.md
               pi_harmonic_fmas_discovery.md
               unified_mas_med_validation_final_report.md
@@ -5098,6 +5110,7 @@ dawn-field-theory/
             LICENSE
             README.md
             UNIFIED_EVIDENCE.md
+            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -5161,6 +5174,7 @@ dawn-field-theory/
             LICENSE
             README.md
             UNIFIED_EVIDENCE.md
+            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -5168,6 +5182,7 @@ dawn-field-theory/
               trace.yaml
               core/
                 constants.py
+                meta.yaml
                 pac_constraints.py
                 pac_cosmology.py
                 qbe_dynamics.py
@@ -5184,6 +5199,7 @@ dawn-field-theory/
                 exp_08_falsification_criteria.py
                 exp_09_expanded_analysis.py
                 exp_10_uhz1_heavy_seeds.py
+                meta.yaml
             Data/
               results/
                 exp_01_recursion_test_20251213_160229.json
@@ -5209,6 +5225,7 @@ dawn-field-theory/
             LICENSE
             README.md
             UNIFIED_EVIDENCE.md
+            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -5220,6 +5237,7 @@ dawn-field-theory/
                 baseline_generator.py
                 compression_engine.py
                 measurement.py
+                meta.yaml
                 quantum_validator.py
                 sec_field_engine.py
                 text_generator.py
@@ -5227,6 +5245,7 @@ dawn-field-theory/
                 .gitkeep
                 exp_01_unified_amplification.py
                 exp_32_phi_attractor_20251210_163903.json
+                meta.yaml
             Data/
               results/
                 exp_01_baseline_20251209_201520.json
@@ -5261,6 +5280,7 @@ dawn-field-theory/
             LICENSE
             README.md
             UNIFIED_EVIDENCE.md
+            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -5326,6 +5346,7 @@ dawn-field-theory/
           summary.tex
           balance_constant_decomposition/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5378,6 +5399,7 @@ dawn-field-theory/
               fig7_mobius_convergence.png
           classical_physics_information_geometry/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5416,6 +5438,7 @@ dawn-field-theory/
               fig6_xi_derivation.png
           computational_validation_pac_conservation/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5456,6 +5479,7 @@ dawn-field-theory/
               fig6_tinycimm_conservation.png
           feigenbaum_fibonacci_arithmetic/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5492,6 +5516,7 @@ dawn-field-theory/
               fig6_formula_precision.png
           standard_model_fibonacci_arithmetic/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5541,6 +5566,7 @@ dawn-field-theory/
               fig6_prediction_summary.png
           structure_cost_of_erasure/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5601,6 +5627,7 @@ dawn-field-theory/
           README.md
           connection_identity_spacetime/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5683,6 +5710,7 @@ dawn-field-theory/
               fig4_scorecard.png
           cosmological_predictions_cascade_clock/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5745,6 +5773,7 @@ dawn-field-theory/
               fig4_prediction_summary.png
           observational_contact_absorption_spectroscopy/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5783,6 +5812,7 @@ dawn-field-theory/
                 exp_19_ionization_coupling_20260611_82108.json
           quantum_gravity_information_conservation/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5829,6 +5859,7 @@ dawn-field-theory/
               fig4_arrow_of_time.png
           quantum_mechanics_graph_structure/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5884,6 +5915,7 @@ dawn-field-theory/
               fig4_decoherence.png
           symmetry_primitive_scoped_mediation/
             README.md
+            meta.yaml
             paper.md
             paper.pdf
             paper.tex
@@ -5954,6 +5986,7 @@ dawn-field-theory/
         MECHANISMS.md
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           generate_figures.py
@@ -5963,6 +5996,7 @@ dawn-field-theory/
           core/
             ca_simulator.py
             invariant_metrics.py
+            meta.yaml
             pac_embedding.py
           experiments/
             exp_01_baseline_ca.py
@@ -5972,6 +6006,7 @@ dawn-field-theory/
             exp_05_xi_necessity.py
             exp_06_statistical_falsification.py
             exp_07_definitive_proof.py
+            meta.yaml
         Data/
           results/
             exp_01_baseline_20251220_90456.json
@@ -5998,6 +6033,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6018,6 +6054,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6033,6 +6070,7 @@ dawn-field-theory/
               baseline_generator.py
               compression_engine.py
               measurement.py
+              meta.yaml
               quantum_validator.py
               sec_field_engine.py
               text_generator.py
@@ -6058,6 +6096,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6090,12 +6129,14 @@ dawn-field-theory/
         MECHANISMS.md
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
           requirements.txt
           trace.yaml
           core/
+            meta.yaml
             sec_core.py
           experiments/
             exp_01_baseline_validation.py
@@ -6131,6 +6172,7 @@ dawn-field-theory/
             exp_31_xi_lambda_universal.py
             exp_32_phi_attractor.py
             exp_32_phi_attractor_20251210_163903.json
+            meta.yaml
         Data/
           results/
             exp_01_baseline_20251209_201520.json
@@ -6167,6 +6209,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6211,6 +6254,7 @@ dawn-field-theory/
         MECHANISMS.md
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6223,6 +6267,7 @@ dawn-field-theory/
             exp_01_pythia_phi_convergence.py
             exp_02_gpt2_inference_dynamics.py
             exp_03_gpt2_generation_dynamics.py
+            meta.yaml
           results/
             exp_27_gpt2_entropy_20251222_93918.json
             exp_28_generation_sec_20251222_94451.json
@@ -6245,6 +6290,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6252,6 +6298,7 @@ dawn-field-theory/
           trace.yaml
           core/
             constants.py
+            meta.yaml
             pac_constraints.py
             pac_cosmology.py
             qbe_dynamics.py
@@ -6268,6 +6315,7 @@ dawn-field-theory/
             exp_08_falsification_criteria.py
             exp_09_expanded_analysis.py
             exp_10_uhz1_heavy_seeds.py
+            meta.yaml
         Data/
           README.md
           jwst_catalog.json
@@ -6290,6 +6338,7 @@ dawn-field-theory/
             exp_10_uhz1_heavy_seeds_20251213_180336.json
             exp_10_uhz1_heavy_seeds_20251213_180530.json
             exp_10_uhz1_heavy_seeds_20251213_180546.json
+            meta.yaml
         Figures/
           README.md
       pac_necessity_proof/
@@ -6297,6 +6346,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6304,6 +6354,7 @@ dawn-field-theory/
           trace.yaml
           experiments/
             exp_01_pac_necessity.py
+            meta.yaml
             exploratory/
               01_alpha_from_fibonacci.py
               02_fine_structure_derivation.py
@@ -6366,6 +6417,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6380,11 +6432,13 @@ dawn-field-theory/
             visualization.py
           experiments/
             exp_01_information_amplification.py
+            meta.yaml
             core/
               __init__.py
               baseline_generator.py
               compression_engine.py
               measurement.py
+              meta.yaml
               quantum_validator.py
               sec_field_engine.py
               text_generator.py
@@ -6438,6 +6492,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6445,6 +6500,7 @@ dawn-field-theory/
           trace.yaml
           experiments/
             exp_01_qbe_pac_unification.py
+            meta.yaml
             exploratory/
               01_alpha_from_fibonacci.py
               02_fine_structure_derivation.py
@@ -6511,20 +6567,25 @@ dawn-field-theory/
         CITATION.md
         LICENSE
         README.md
+        meta.yaml
         paper.md
         Code/
+          meta.yaml
           she_leveque_prediction.py
           she_leveque_validation.py
         Data/
+          meta.yaml
           predictions.json
           validation_results.json
         Figures/
           README.md
+          meta.yaml
       symbolic_entropy_collapse/
         CITATION.md
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         Code/
           reproduce.py
@@ -6536,6 +6597,7 @@ dawn-field-theory/
             baseline_generator.py
             compression_engine.py
             measurement.py
+            meta.yaml
             quantum_validator.py
             sec_field_engine.py
             text_generator.py
@@ -6588,6 +6650,7 @@ dawn-field-theory/
         LICENSE
         README.md
         UNIFIED_EVIDENCE.md
+        meta.yaml
         paper.md
         paper.pdf
         paper.tex

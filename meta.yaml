@@ -29,6 +29,7 @@ files:
 - STANDARDS.md
 - THEORY_MAP.md
 - map.yaml
+- requirements.txt
 - timeline.md
 child_directories:
 - .changelog

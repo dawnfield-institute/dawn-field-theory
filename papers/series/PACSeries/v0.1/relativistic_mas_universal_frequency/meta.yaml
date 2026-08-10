@@ -1,0 +1,27 @@
+schema_version: '2.0'
+slug: relativistic_mas_universal_frequency
+title: Relativistic Mas Universal Frequency
+category: pac
+status: Draft
+version: '1.0'
+complexity: 4
+impact: 5
+evidence_type: E
+created: '2025-12-20T11:18:58.236120'
+original_filename: '[pac][D][v1.0][C4][I5][E]_relativistic_mas_universal_frequency_preprint.md'
+source_location: PACSeries
+files:
+- CITATION.md
+- LICENSE
+- README.md
+- UNIFIED_EVIDENCE.md
+- paper.md
+code:
+  has_experiments: true
+  trace_file: Code/trace.yaml
+keywords:
+- Dawn Field Theory
+- PAC
+child_directories:
+- Code
+- Data

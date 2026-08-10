@@ -1,0 +1,11 @@
+schema_version: '2.0'
+description: Experiment scripts with built-in tracing
+semantic_scope: experimental_validation
+proficiency_level: research
+files:
+- .gitkeep
+- exp_01_unified_amplification.py
+- exp_32_phi_attractor_20251210_163903.json
+trace_format: JSON with timestamp, git commit, parameters, results, validation
+output_directory: ../results/
+child_directories: []

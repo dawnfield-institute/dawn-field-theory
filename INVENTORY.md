@@ -11,11 +11,11 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 | [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 15 |
 | [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 21 |
 | [`experiments/`](experiments/) | what was measured | 2630 |
-| [`papers/`](papers/) | what was published | 1446 |
+| [`papers/`](papers/) | what was published | 1508 |
 | [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 10 |
 
-Tracked files: **9302**
+Tracked files: **9365**
 
 **75 experiments** — 50 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 

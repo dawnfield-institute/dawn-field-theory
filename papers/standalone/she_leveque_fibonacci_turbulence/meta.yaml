@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Fibonacci Structure in Turbulence Intermittency
+short_title: She-Leveque Fibonacci
+version: '1.0'
+status: preprint
+date_created: '2025-02-03'
+date_updated: '2025-02-03'
+description: 'Pre-registered postdiction showing the She-Leveque turbulence exponents  derive
+  from Fibonacci structure. Achieves 0.47% mean error against  experimental data,
+  14.3× better than K41. Cross-domain validation with  Koide formula (particle physics)
+  shows 2/3 = F₃/F₄ is a universal constant.
+
+  '
+semantic_scope: publication
+proficiency_level: research
+estimated_context_weight: 0.8
+authors:
+- name: Dawn Field Institute
+keywords:
+- turbulence
+- intermittency
+- She-Leveque
+- Fibonacci
+- structure functions
+- PAC conservation
+- Koide formula
+- cross-domain validation
+- Dawn Field Theory
+files:
+- CITATION.md
+- LICENSE
+- README.md
+- paper.md
+child_directories:
+- Code
+- Data
+- Figures
+validation_type: automated
+key_results:
+  mean_error: 0.47%
+  max_error: 1.64%
+  k41_improvement: 14.3×
+  predictions_within_2sigma: 6
+  total_predictions: 6
+git_commits:
+  prediction: 19e4b6b
+  validation: ecdca28
+cross_references:
+- ../macro_emergence_dynamics_navier_stokes
+- ../../experiments/milestone1
+- ../koide_fibonacci_masses

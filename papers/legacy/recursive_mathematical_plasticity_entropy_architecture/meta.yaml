@@ -1,0 +1,25 @@
+schema_version: '2.0'
+slug: recursive_mathematical_plasticity_entropy_architecture
+title: Recursive Mathematical Plasticity Entropy Architecture
+category: m
+status: Draft
+version: '1.0'
+complexity: 5
+impact: 4
+evidence_type: E
+created: '2025-12-20T11:18:56.007832'
+original_filename: '[m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.md'
+source_location: drafts
+files:
+- CITATION.md
+- LICENSE
+- README.md
+- paper.md
+code:
+  has_experiments: true
+  trace_file: Code/trace.yaml
+keywords:
+- Dawn Field Theory
+- M
+child_directories:
+- Code

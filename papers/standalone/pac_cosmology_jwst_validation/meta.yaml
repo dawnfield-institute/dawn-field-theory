@@ -1,0 +1,36 @@
+schema_version: '2.0'
+slug: pac_cosmology_jwst_validation
+title: 'PAC/SEC Framework Applied to JWST High-Redshift Black Holes: Falsification
+  Criteria and Initial Validation'
+category: pac
+status: Draft
+version: '1.0'
+complexity: 5
+impact: 5
+evidence_type: E
+created: '2025-01-05T12:00:00.000000'
+original_filename: pac_cosmology_validation experiment
+source_location: foundational/experiments/pac_cosmology_validation
+files:
+- CITATION.md
+- LICENSE
+- README.md
+- UNIFIED_EVIDENCE.md
+- paper.md
+code:
+  has_experiments: true
+  trace_file: Code/trace.yaml
+keywords:
+- Dawn Field Theory
+- PAC
+- SEC
+- QBE
+- JWST
+- Supermassive black holes
+- High-redshift cosmology
+- Golden ratio
+- Falsification
+child_directories:
+- Code
+- Data
+- Figures

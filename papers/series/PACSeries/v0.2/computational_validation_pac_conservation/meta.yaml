@@ -1,0 +1,36 @@
+schema_version: '2.0'
+description: 'PACSeries Paper 6: Computational Validation of PAC Conservation in Machine
+  Learning Systems'
+semantic_scope: publication
+proficiency_level: research
+estimated_context_weight: 0.9
+validation_type: manual
+files:
+- README.md
+- paper.md
+- paper.pdf
+- paper.tex
+child_directories:
+- Code
+- Data
+- Figures
+source_experiments:
+- dawn-models/research/scbf/experiments/token_pac_tree
+- dawn-models/research/tinycimm/TinyCIMM-Boltzmann
+- dawn-field-theory/foundational/experiments/landauer_erasure_structure
+- dawn-models/research/scbf/experiments/huggingface_bifractal_validation
+- dawn-field-theory/foundational/experiments/milestone3
+key_results:
+- SEC phase → accuracy monotonic across 7 models, 0 free parameters, p < 0.0001
+- Xi clustering 2.36× in trained weights (chi^2 = 5511); attention > MLP
+- Hallucination = +9.6% PAC violation; GPT-2 zero compensation
+- 'TinyCIMM conservation: noise violation p=0.008, 16× shock reduction, no factual
+  cost'
+- 'PAC-Lazy formula mesh: KL p=0.035, d=0.198 (modest); bootstrap CI crosses zero
+  (fragile)'
+series_position: 6
+series_title: PACSeries v0.2
+dependencies:
+- paper_1: structure_cost_of_erasure
+- paper_2: balance_constant_decomposition
+- paper_5: classical_physics_information_geometry

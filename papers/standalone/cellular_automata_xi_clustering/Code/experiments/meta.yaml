@@ -1,0 +1,19 @@
+schema_version: '2.0'
+directory_name: scripts
+description: 'Numbered experiment scripts for CA-PAC attractor validation.
+
+  Each script is self-contained and saves results to ../results/
+
+  '
+semantic_scope:
+- experiment
+- script
+files:
+- exp_01_baseline_ca.py
+- exp_02_full_sweep.py
+- exp_03_attractor_detection.py
+- exp_04_xi_approach_dynamics.py
+- exp_05_xi_necessity.py
+- exp_06_statistical_falsification.py
+- exp_07_definitive_proof.py
+child_directories: []
