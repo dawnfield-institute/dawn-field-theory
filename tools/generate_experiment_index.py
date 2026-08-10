@@ -200,6 +200,12 @@ def main() -> int:
                 existing = f.read()
         if existing != content:
             print("EXPERIMENTS.md is out of date. Run tools/generate_experiment_index.py")
+            import difflib
+            diff = difflib.unified_diff(existing.splitlines(), content.splitlines(),
+                                        fromfile="committed", tofile="regenerated",
+                                        lineterm="", n=1)
+            for line in list(diff)[:60]:
+                print(line)
             return 1
         print("EXPERIMENTS.md is up to date.")
         return 0

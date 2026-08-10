@@ -184,7 +184,15 @@ def main() -> int:
         cur = open(OUT, encoding="utf-8").read() if os.path.exists(OUT) else ""
         if cur != content:
             print("INVENTORY.md is out of date. Run tools/generate_inventory.py")
-            return 1
+            # Print the diff. A gate that only says "stale" is undiagnosable from a CI
+            # log, which matters most when the staleness is platform-dependent and the
+            # committer's machine reports it as current.
+            import difflib
+            diff = difflib.unified_diff(cur.splitlines(), content.splitlines(),
+                                        fromfile="committed", tofile="regenerated",
+                                        lineterm="", n=1)
+            for line in list(diff)[:60]:
+                print(line)
         print("INVENTORY.md is up to date.")
         return 0
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
