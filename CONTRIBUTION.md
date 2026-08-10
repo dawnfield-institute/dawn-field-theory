@@ -3,31 +3,41 @@
 Thank you for your interest in contributing. This is a living, evolving repository—and your contributions matter.
 
 ## TL;DR - Quick Contributor Checklist
-- [ ] Read theory docs (see Quick Start below)
+- [ ] Read README.md and THEORY_MAP.md (see Quick Start below)
 - [ ] Email info@dawnfield.ca to register as contributor  
 - [ ] Join Discord for announcements
 - [ ] **Review publishing boundaries and engagement philosophy (sections below)**
 - [ ] **Say how you want to be credited** in the PR description
 - [ ] Engage through Issues, Discussions, or PRs only
+- [ ] Run `python tools/validate_experiment_structure.py` before opening a PR
 - [ ] Follow the project boundaries set out below
 
 ---
 
 ## Quick Start for New Contributors
 
-1. **Read the foundations:** 
-   - `README.md`, `THEORY_MAP.md`, `ROADMAP.md`, and `legal/LICENSE_APPENDIX.md`
-   - `infodynamics.md` and `dawn-field-theory.md` (core theory overview)
-   - [`archive/era2-prefield/essays/arithmetic_identity_and_structural_novelty_in_computation.md`](archive/era2-prefield/essays/arithmetic_identity_and_structural_novelty_in_computation.md) (computational novelty thesis)
-   - [`archive/era1-symbolic/essays/imperfection_engine_epistemic_collapse_dawn_field_repo.md`](archive/era1-symbolic/essays/imperfection_engine_epistemic_collapse_dawn_field_repo.md) (repository philosophy)
+**Read in this order.** These are current documents; the archive is lineage, not orientation.
 
-2. **Understand the bridges:** Browse [`archive/era1-symbolic/bridges/`](archive/era1-symbolic/bridges/) to see how Dawn Field Theory connects to existing frameworks (deep learning, AI systems, gradient descent)
+1. **[`README.md`](README.md)** — what the framework claims, and what it does *not*.
+2. **[`THEORY_MAP.md`](THEORY_MAP.md)** — the spine. Every load-bearing claim, and where
+   each is proved, measured and published. Start here if you want to check something.
+3. **[`theory/dawn-field-theory.md`](theory/dawn-field-theory.md)** and
+   [`theory/infodynamics.md`](theory/infodynamics.md) — the theory itself.
+4. **[`theory/corrections.md`](theory/corrections.md)** — what was claimed too strongly and
+   withdrawn. Read this early; it tells you how the project handles being wrong.
+5. **[`ROADMAP.md`](ROADMAP.md)** — what is open, and what would falsify it.
+6. **[`STANDARDS.md`](STANDARDS.md)** — structure, scoring, and the pre-registration
+   protocol, before you add anything.
 
-3. **Register:** Email info@dawnfield.ca with your background and interests
+Unfamiliar term? [`theory/lexicon.yaml`](theory/lexicon.yaml) carries every term with the
+era it was coined in and what replaced it — the 2025 vocabulary (herniation, QPL, QBE) is
+kept there as etymology.
 
-4. **Join Discord:** Get access to announcements and contributor discussions
+**Where the lineage lives.** [`archive/`](archive/README.md) holds Era 1–2 work, preserved
+in its original shape. It is worth reading to understand how the framework got here — but
+its vocabulary predates PAC, so read the current documents first or it will mislead you.
 
-5. **Start contributing:** Open Issues for questions, Discussions for theory, PRs for improvements
+**Registering.** Email info@dawnfield.ca with your background and interests.
 
 ---
 
