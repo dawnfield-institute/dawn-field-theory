@@ -165,17 +165,35 @@ Standard practice since 2026-06-11. For any experiment intended as evidence:
 
 ---
 
-## 3. Spikes, blueprints, archive
+## 3. Where work lives
+
+The tree follows the **argument**, not the artifact type. Four layers plus terminal
+lineage:
+
+| Layer | Directory | Holds |
+|---|---|---|
+| What is claimed | `theory/` | framework, constants, lexicon, corrections, current essays |
+| Why it holds | `formal/` | `theorems/`, `derivations/`, `conjectures/` |
+| What was measured | `experiments/` | see below |
+| What was published | `papers/` | `series/`, `standalone/`, `legacy/`, `registry/` |
+| Lineage | `archive/` | terminal, organised by era |
+
+Inside `experiments/`:
 
 | Location | Purpose | Structure required |
 |---|---|---|
-| `spikes/` | exploratory; may be promoted to an experiment | none |
-| `archive/blueprints/` | speculative applications of settled theory | none |
-| `experiments/milestones/` | structured research | §2 in full |
-| `experiments/milestones/archive/<era>/` | Era 1–2 experiments | as-was; frozen |
+| `experiments/milestones/` | the derivation chain, M1–M15 | §2 in full |
+| `experiments/sidecars/` | real programs off the main chain | §2 in full |
+| `experiments/studies/` | standalone thematic investigations | §2 in full |
+| `experiments/spikes/` | exploratory | **none** — exempt by definition |
+| `archive/<era>/` | Era 1–2 experiments | as-was; frozen, never retrofitted |
 
-Promotion path is `spikes/` → `experiments/milestones/`. Never create an experiment
-outside `experiments/milestones/`.
+Promotion path is `experiments/spikes/` → `experiments/studies/`, or a new milestone when
+the work carries its own thesis. Never create an experiment outside `experiments/`.
+
+`formal/theorems/` **indexes** rather than restates: an entry gives the statement, its
+grade, and pointers to the journal that derived it and the experiment that verified it.
+A second copy of a proof is a second thing that can drift.
 
 ---
 

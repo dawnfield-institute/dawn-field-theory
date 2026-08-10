@@ -5,6 +5,7 @@ dawn-field-theory/
   CLAUDE.md
   CONTRIBUTION.md
   ENVIRONMENT.md
+  INVENTORY.md
   LICENSE
   MIGRATION.md
   MISSION.md
@@ -6645,7 +6646,6 @@ dawn-field-theory/
     for_ai_labs.md
     foundational-README.md
     infodynamics.md
-    lexicon.legacy.md
     lexicon.yaml
     origin_of_infodynamics.md
     recursive_structure.png
@@ -6661,6 +6661,7 @@ dawn-field-theory/
   tools/
     converter.py
     generate_experiment_index.py
+    generate_inventory.py
     generate_path.py
     link_checker.py
     link_fixer.py

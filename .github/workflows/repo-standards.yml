@@ -31,6 +31,9 @@ jobs:
       - name: Check experiment index is current
         run: python tools/generate_experiment_index.py --check
 
+      - name: Check inventory is current
+        run: python tools/generate_inventory.py --check
+
       - name: Check generated metadata and map are current
         run: |
           python tools/update_meta_yamls.py > /dev/null
@@ -41,6 +44,7 @@ jobs:
             echo "  python tools/update_meta_yamls.py"
             echo "  python tools/generate_path.py"
             echo "  python tools/generate_experiment_index.py"
+            echo "  python tools/generate_inventory.py"
             echo ""
             git diff --stat
             exit 1
