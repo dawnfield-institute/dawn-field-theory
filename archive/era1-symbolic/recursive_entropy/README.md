@@ -21,4 +21,4 @@ archived
 | recursive_entopy.py | Recursive tree generator using entropy as seed with balance-aware growth, symbolic embedding, adaptive pruning, and thermodynamic cost tracking |
 
 ## References
-- [reference_material/](reference_material/) -- Pre/post-pruning tree visualizations and structural metrics text output
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Pre/post-pruning tree visualizations and structural metrics text output

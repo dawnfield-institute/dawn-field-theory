@@ -21,4 +21,4 @@ archived
 | [id][T][v1.0][C2][I3][E]_landauer_erasure_field_cost_map.py | Simulates symbolic memory erasure in an entropic field to estimate thermodynamic cost via Landauer principle, with temperature scaling and structured vs random field comparison |
 
 ## References
-- [reference_material/](reference_material/) -- Simulation output plots (erasure result, energy curve, field step snapshots) and energy_over_time.csv
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Simulation output plots (erasure result, energy curve, field step snapshots) and energy_over_time.csv

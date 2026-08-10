@@ -27,4 +27,4 @@ archived
 ## References
 - [InfoDyn_Validation_BifractalCollapse_v0.1.yaml](./InfoDyn_Validation_BifractalCollapse_v0.1.yaml) -- Experiment metadata snapshot
 - [InfoDyn_Validation_LineageTrace.tsv](./InfoDyn_Validation_LineageTrace.tsv) -- Ancestry tree lineage trace for all nodes
-- [reference_material/](./reference_material/) -- Visualization outputs and validation artifacts
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Visualization outputs and validation artifacts

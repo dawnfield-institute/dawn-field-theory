@@ -22,4 +22,4 @@ archived
 | language_to_logic.py | Language-to-logic compiler using entropy collapse and recursive segmentation to convert natural language into structured logic flows |
 
 ## References
-- [reference_material/](reference_material/) -- Collapse tree visualizations, logic flow JSON outputs, and experiment reports
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Collapse tree visualizations, logic flow JSON outputs, and experiment reports

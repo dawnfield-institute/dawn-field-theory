@@ -354,4 +354,4 @@ The experiments demonstrate that DFT principles are not just DESCRIPTIVE (patter
 
 - [oscillation_attractor_dynamics](../../oscillation_attractor_dynamics/) - Gap 6 hub, Möbius pairs
 - [sec_prime_manifold](../../sec_prime_manifold/) - φ-threshold
-- [milestone1](../../milestone1/) - PAC/SEC/φ/Ξ formulations
+- [milestone1](../../../milestones/milestone1/) - PAC/SEC/φ/Ξ formulations

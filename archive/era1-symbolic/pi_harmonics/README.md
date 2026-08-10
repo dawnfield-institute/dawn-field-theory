@@ -22,4 +22,4 @@ archived
 | pi_harmonics.yaml | Configuration and metadata for the Pi harmonics simulation parameters |
 
 ## References
-- [reference_material/](reference_material/) -- Pi-harmonic collapse field result images
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Pi-harmonic collapse field result images

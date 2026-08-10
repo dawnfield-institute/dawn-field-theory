@@ -21,4 +21,4 @@ archived
 | [m][E][v1.0][C1][I1]_predictive_collapse_simulation.py | Simulates emergence and propagation of collapse zones using coupled symbolic-thermodynamic fields with entropy curvature-based forecasting |
 
 ## References
-- [reference_material/](reference_material/) -- Forecasted collapse plots, field snapshot composites, CSV data logs, and simulation logs
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Forecasted collapse plots, field snapshot composites, CSV data logs, and simulation logs

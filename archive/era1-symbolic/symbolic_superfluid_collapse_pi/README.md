@@ -21,4 +21,4 @@ archived
 | symbolic_superfluid_collapse_pi.py | Simulates symbolic particles in a superfluid-like field with pi-harmonic modulation, radial attractors, symbolic transition rules, multi-trial statistical logging, and results document generation |
 
 ## References
-- [reference_material/](./reference_material/) -- Batch output visualizations (entropy change, symbolic entropy, particle convergence, average speed) and symbolic transition logs
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Batch output visualizations (entropy change, symbolic entropy, particle convergence, average speed) and symbolic transition logs

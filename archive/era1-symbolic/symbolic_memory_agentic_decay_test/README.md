@@ -21,4 +21,4 @@ archived
 | [id][T][v1.0][C4][I4][A]_symbolic_memory_agentic_decay_test.py | Models symbolic memory reinforcement and decay with directed decay, feedback amplification, field interaction dynamics, overlay visualization, and control mode for pure decay comparison |
 
 ## References
-- [reference_material/](./reference_material/) -- Energy curves, field step snapshots, reinforcement overlay visualizations
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Energy curves, field step snapshots, reinforcement overlay visualizations

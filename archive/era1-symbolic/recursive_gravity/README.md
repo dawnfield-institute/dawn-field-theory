@@ -23,4 +23,4 @@ archived
 | macro_emergence_knn.py | Macro emergence simulation using kNN informational tangling with recursive memory and entropy field overlays |
 
 ## References
-- [reference_material/](reference_material/) -- Simulation output plots for emergent orbit, proto-galactic superfluid, and macro emergence experiments
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Simulation output plots for emergent orbit, proto-galactic superfluid, and macro emergence experiments

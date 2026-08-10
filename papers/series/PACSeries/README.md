@@ -24,7 +24,7 @@ Six papers, restructured by logical dependency. Complete publication packages wi
 | 5 | [Classical Physics from Information Geometry](v0.2/classical_physics_information_geometry/) | Maxwell from PAC/SEC, D=3 from MED |
 | 6 | [Computational Validation](v0.2/computational_validation_pac_conservation/) | GAIA, PAC conservation in ML systems |
 
-### [v0.1/](v0.1/) — Archive (October 2025)
+### [`v0.1/`](../../../archive/era1-symbolic/hodge_mapping/v0.1/) — Archive (October 2025)
 
 Original 5-paper release. Published on Zenodo as record 17295103. Superseded by v0.2 but retained for reference and citation continuity.
 

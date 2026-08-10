@@ -134,7 +134,7 @@ But it represents something new: the **fundamental computational frequency** of 
 - [`validate_with_real_data.py`](../scripts/validate_with_real_data.py) - Real-world data validation
 
 ### Original Frameworks
-- [`pi_harmonics/`](../../pi_harmonics/) - Original π-harmonic framework
+- [`pi_harmonics/`](../../../era1-symbolic/pi_harmonics/) - Original π-harmonic framework
 - [`unified_mas_med_validation.py`](../../../../papers/series/PACSeries/v0.1/gaia_computational_validation_dawn_field_theory/Code/experiments/unified_mas_med_validation.py) - 100% convergence validation
 
 ### Documentation

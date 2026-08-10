@@ -188,7 +188,7 @@ See **[IMPLEMENTATION_PROGRESS.md](IMPLEMENTATION_PROGRESS.md)** for detailed st
 
 - **[UPGRADE_PLAN.md](UPGRADE_PLAN.md)** - Detailed v2.0 specifications
 - **[IMPLEMENTATION_PROGRESS.md](IMPLEMENTATION_PROGRESS.md)** - Current status
-- **[notes/](notes/)** - Theoretical development notes
+- **[`notes/`](../notes/)** - Theoretical development notes
 
 ## 🤝 Contributing
 

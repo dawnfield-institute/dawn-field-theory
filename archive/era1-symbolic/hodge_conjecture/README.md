@@ -29,4 +29,4 @@ Results documented in scripts and unification_plan.md. The experiment progressed
 
 ## References
 - [unification_plan.md](unification_plan.md) -- Plan for unifying arithmetic with geometry and analysis in symbolic field theory
-- [reference_material/](reference_material/) -- Supporting research and analysis outputs
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Supporting research and analysis outputs

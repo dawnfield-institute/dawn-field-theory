@@ -22,4 +22,4 @@ archived
 | symbolic_fractal_pruning.py | Simulates calculus-driven pruning (gradient, Laplacian) of a fractal symbolic field with entropy metrics, symbol persistence tracking, and visual diagnostics |
 
 ## References
-- [reference_material/](./reference_material/) -- Contains pruning output visualizations (entropy over time, active symbol ratio, symbol lifetimes, step snapshots) and pruning_stats.json
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/) -- Contains pruning output visualizations (entropy over time, active symbol ratio, symbol lifetimes, step snapshots) and pruning_stats.json

@@ -110,6 +110,6 @@ Five concrete conditions that would falsify the model:
 
 ## Related
 
-- [milestone1](../../milestone1/) - PAC conservation proofs
+- [milestone1](../../../milestones/milestone1/) - PAC conservation proofs
 - [oscillation_attractor_dynamics](../../oscillation_attractor_dynamics/) - Ξ derivation
 - [GAIA POC Registry](../../../../dawn-models/research/GAIA/proof_of_concepts/POC_REGISTRY.md)

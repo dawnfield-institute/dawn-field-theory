@@ -22,4 +22,4 @@ archived
 
 ## References
 - [[m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md](./[m][F][v1.0][C1][I1]_symbolic_entropy_collapse.md) -- Full theoretical paper with mathematical formulation
-- [reference_material/](./reference_material/)
+- [`reference_material/`](../../blueprints/balance_based_energy_generation/reference_material/)

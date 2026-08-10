@@ -83,7 +83,7 @@ This is also the number of points in the projective plane PG(2,13).
 
 ## Related
 
-- [maxwell_from_pac_sec/](../maxwell_from_pac_sec/)
-- [milestone1/](../milestone1/)
-- [recursive_gravity/](../recursive_gravity/)
-- [standard_model_connection/](../standard_model_connection/)
+- [`maxwell_from_pac_sec/`](../../maxwell_from_pac_sec/)
+- [`milestone1/`](../../../milestones/milestone1/)
+- [`recursive_gravity/`](../../../../archive/era1-symbolic/recursive_gravity/)
+- [`standard_model_connection/`](../../standard_model_connection/)

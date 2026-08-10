@@ -125,7 +125,7 @@ Our computational studies suggest the collapse operators (⊕, ⊗, δ) validate
 
 ### 1.3 Connection to Macro Emergence Dynamics (MED)
 
-Our **MED framework** ([`macro_emergence_dynamics/`](macro_emergence_dynamics/)) achieved a breakthrough by proving **universal bounded complexity** through Navier-Stokes validation:
+Our **MED framework** ([`macro_emergence_dynamics/`](../../experiments/studies/macro_emergence_dynamics/)) achieved a breakthrough by proving **universal bounded complexity** through Navier-Stokes validation:
 
 **Key MED Results**:
 - Universal bounds: depth(S) ≤ 1, nodes(S) ≤ 3 across 1000+ simulations
@@ -492,7 +492,7 @@ assert parent_total == children_total  # Conservation holds!
 | PAC Component | Raw Discovery | Experimental Evidence | Framework | Results |
 |---------------|---------------|---------------------|-----------|---------|
 | **Core Conservation** | "Local amplification!" | Information redistribution within children | [`../experiments/information_amplification/`](../experiments/archive/era2/information_amplification) | Variable (topology-dependent) |
-| **Complexity Redistribution** | "Both sides must be equal" | Universal bounded complexity | [`macro_emergence_dynamics/`](macro_emergence_dynamics/) | depth ≤ 1, nodes ≤ 3 |
+| **Complexity Redistribution** | "Both sides must be equal" | Universal bounded complexity | [`macro_emergence_dynamics/`](../../experiments/studies/macro_emergence_dynamics/) | depth ≤ 1, nodes ≤ 3 |
 | **Balance Mechanism** | "Dynamic stability" | Ξ convergence | [`master_recursive_gravity_experiment.py`](../../experiments/studies/macro_emergence_dynamics/master_recursive_gravity_experiment.py) | Ξ = 1.0571 ± 0.1 |
 | **Effect Conservation** | "Same effect cones" | Born rule compliance | [`../experiments/quantum_validation/born_rule/`](../experiments/archive/era1/quantum_validation/born_rule) | Quantum coherence maintained |
 | **Recursive Stability** | "Entropy as fuel" | Long-term convergence | [`comprehensive_analysis.py`](../../experiments/studies/macro_emergence_dynamics/comprehensive_analysis.py) | Stable across 10,000+ timesteps |
