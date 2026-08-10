@@ -29,7 +29,7 @@ PyTorch is intentionally excluded from requirements.txt to avoid platform wheel 
 
 ## Reproducibility
 
-- Experiments in `experiments/milestones/` are self-contained Python scripts
-- Each experiment directory has a `meta.yaml` with metadata and a `README.md` with results
+- Experiments in `experiments/` are self-contained Python scripts
+- Each experiment root has a `meta.yaml` and a `README.md` with results
 - Prefer running experiments inside a fresh virtual env
 - Pin exact versions in a lock file if you snapshot a result for a preprint
