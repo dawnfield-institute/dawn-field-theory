@@ -48,6 +48,16 @@ dawn-field-theory/
     20260810_004500_repo_reorg_standardization.md
     20260810_120000_layer_reorganization.md
     README.md
+  .claude/
+    skills/
+      dft-experiment/
+        SKILL.md
+      dft-lore-sync/
+        SKILL.md
+      dft-publish-integrity/
+        SKILL.md
+      dft-repo-gates/
+        SKILL.md
   .github/
     pull_request_template.md
     workflows/

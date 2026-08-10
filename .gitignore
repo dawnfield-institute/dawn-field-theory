@@ -141,8 +141,13 @@ cimm.log
 # Ignore internal workspace directory
 /internal/
 
-# Claude local settings
-.claude/
+# Claude local settings stay local; the shared agent skills travel with the repo.
+# Order matters: git will not descend into an excluded directory, so `.claude` must be
+# un-excluded first (it is also caught by `*.claude` above) before anything inside it
+# can be re-included.
+!.claude/
+.claude/*
+!.claude/skills/
 
 # Session research notes
 SESSION_NOTES.md

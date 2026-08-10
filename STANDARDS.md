@@ -22,6 +22,15 @@ both referenced `STANDARDS.md` as the canonical spec, but no such file existed. 
 absence three mutually incompatible `meta.yaml` specs and two overlapping journal specs
 grew up, and nothing validated any of them.
 
+### Why a workspace-wide document lives in this repository
+
+`core_workspace/` is **not a git repo**, so a copy at the workspace root would be
+untracked, unbacked-up, and free to drift from any tracked copy. The canonical copy
+therefore lives here, at `dawn-field-theory/STANDARDS.md`, where it is version-controlled
+and public. Everything that references it — the workspace `CLAUDE.md`,
+`.claude/instructions/main.instructions.md`, and per-repo `CLAUDE.md` files — points at
+that path. **There is exactly one copy; do not create a second.**
+
 ---
 
 ## 1. Workspace layout
@@ -372,10 +381,45 @@ points back via `source_paths`. Both sides are checked (§9).
 | Corpus inventory freshness | `tools/generate_inventory.py` |
 | Repo tree map | `tools/generate_path.py` → `map.yaml` |
 | meta.yaml generated zone | `tools/update_meta_yamls.py` |
-| Internal link integrity | *(no working tool — `tools/link_checker.py` is dead: it hardcodes an absolute path to a directory that does not exist)* |
+| Internal link integrity | `tools/check_links.py` — ceilinged in CI (`--max`), so rot may fall but not rise |
 | Citations | `tools/validate_citations.py` |
-| FDO `source_paths` resolve | `/fdo-source-validate` |
+| FDO `source_paths` resolve | see the `dft-lore-sync` skill (§10) |
 
-Structure, index, and map checks run in CI on push. A standards violation is a CI failure,
-not a style note — that is the mechanism preventing the drift this document was written to
-end.
+`tools/link_checker.py` is superseded by `check_links.py` and is dead — it hardcodes an
+absolute path to a directory that does not exist. It survives only because nothing has
+deleted it yet.
+
+Structure, index, map, and link checks run in CI on push. A standards violation is a CI
+failure, not a style note — that is the mechanism preventing the drift this document was
+written to end.
+
+---
+
+## 10. Agent skills
+
+The conventions in this document are only worth writing if something hands them to whoever
+is doing the work. Skills are that delivery mechanism.
+
+They live in `dawn-field-theory/.claude/skills/<name>/SKILL.md` and are **tracked**, so
+they travel with the repository. `.gitignore` excludes `.claude/` (local settings) with an
+explicit `!.claude/skills/` exception; git will not descend into an excluded directory, so
+that exception has to un-exclude `.claude` itself before it can re-include `skills`.
+
+| Skill | Covers |
+|---|---|
+| `dft-experiment` | experiment structure, meta.yaml zones, scoring, pre-registration |
+| `dft-repo-gates` | the CI gates and the regeneration order |
+| `dft-lore-sync` | vault sync, and the body-replacement / 8KB-truncation traps |
+| `dft-publish-integrity` | frozen packages, DOIs, which record family to cite |
+
+### The rule for writing one
+
+**A skill states the rule, the failure it prevents, and the command that verifies it.**
+Prose that restates this document is not a skill — an agent already has this document. What
+it does not have is the knowledge that `INVENTORY.md` will silently undercount if the
+generators run before `git add`, or that `lore_get` truncates at 8KB and `milestone6-planning-seed`
+sits one byte under that boundary. Earn the content from a failure that actually happened.
+
+This replaces the previous mechanism. The 35 slash commands under
+`core_workspace/.claude/commands/` all loaded their protocol through
+`mcp__kronos__kronos_skill_load`, and kronos is retired — every one was a dead pointer.
