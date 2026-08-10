@@ -41,6 +41,7 @@ python tools/generate_experiment_index.py       # regenerate experiments/EXPERIM
 python tools/generate_inventory.py              # regenerate INVENTORY.md
 python tools/generate_path.py                   # regenerate map.yaml
 python tools/update_meta_yamls.py               # refresh the generated meta.yaml zone
+python tools/check_links.py                     # unresolved relative links, by area
 ```
 
 CI runs all of these and fails on a structural error or a stale generated file. Run the

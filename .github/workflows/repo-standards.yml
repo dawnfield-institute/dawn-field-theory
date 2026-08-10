@@ -34,6 +34,12 @@ jobs:
       - name: Check inventory is current
         run: python tools/generate_inventory.py --check
 
+      # The repo carries known link rot in archived documents, recorded in ROADMAP.md.
+      # The ceiling stops it growing: the count may fall, never rise. If a change
+      # deliberately raises it, raise this number in the same commit and say why.
+      - name: Check link rot has not grown
+        run: python tools/check_links.py --max 200
+
       - name: Check generated metadata and map are current
         run: |
           python tools/update_meta_yamls.py > /dev/null

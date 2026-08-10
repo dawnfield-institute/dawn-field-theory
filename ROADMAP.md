@@ -1,16 +1,20 @@
 # Roadmap
 
-What is being worked, what is open, and what would falsify it.
+What is being worked, what is queued, and what would falsify it.
 
-Status of every experiment is generated in
-[`experiments/EXPERIMENTS.md`](experiments/EXPERIMENTS.md). This file is the *direction* —
-the questions currently open and what answering them would take.
+Three horizons. **Now** is in flight. **Next** is defined and unstarted — each item has a
+stated question and a way to be wrong. **Horizon** is real direction that cannot be closed
+from here, either because it waits on an instrument or because nobody has done the work of
+turning it into a registrable claim yet.
+
+Per-experiment status is generated in
+[`experiments/EXPERIMENTS.md`](experiments/EXPERIMENTS.md). This file is the *direction*.
 
 ---
 
-## On deck
+## Now
 
-### Milestone 15 Phase 2 — is holonomy dynamical?
+### M15 Phase 2 — is holonomy dynamical?
 
 Phase 1 closed 2026-06-12. The affine holonomy is proven in closed form: θ(m) = m·θ_T(m),
 **C₆ = −I as a theorem** (θ(6) = π exactly), cos θ(C₄) = −7/9 from first principles, and
@@ -19,10 +23,10 @@ measurement could flatter it.
 
 Then 2026-07-17 solved the general-k limit: **the connection generator is the
 particle-in-a-box momentum operator**, G[j′,j] = 4jj′/(j′²−j²) for j′−j odd. Registered
-predictions for L₅ and L₆ were confirmed at 6.7×10⁻⁷ and 1.1×10⁻⁶. Both naive candidates —
+predictions for L₅ and L₆ confirmed at 6.7×10⁻⁷ and 1.1×10⁻⁶. Both naive candidates —
 odd-harmonic and Fibonacci — died first, by registered measurement.
 
-Phase 2 asks the only question that matters for whether this is physics:
+Phase 2 asks the only question that decides whether this is physics:
 
 - **(a) ℤ₂ twist classification** across cycle structures, now that the parity mechanism
   is identified.
@@ -35,62 +39,128 @@ Phase 2 asks the only question that matters for whether this is physics:
 **Nearest registrable target:** Ξ = 1 + π/55 derived as a ratio of momentum-operator
 spectra — periodic circle (n²) against anti-periodic Möbius ((n+½)²). If that holds, the
 balance constant and the M15 connection generator are the same operator under two boundary
-twists, and the twist classification and the Ξ story become one result.
+twists, and the twist classification and the Ξ story collapse into one result.
 
 ### Milestone R — propagate the energy-scale fix
 
-60/112 across 27 experiments. The decisive result is exp_24: replacing
-`E_Planck · φ^(−d)` with **`α(d)² · m_mediator`** puts the EM scale at 11.4 ppm of the
-Rydberg and the nuclear scale within 1.75×. That single change resolves **eight** earlier
-failures which all shared one root cause.
+60/112 across 27 experiments. The decisive result is exp_24: replacing `E_Planck · φ^(−d)`
+with **`α(d)² · m_mediator`** puts the EM scale at 11.4 ppm of the Rydberg and the nuclear
+scale within 1.75×. That one change resolves **eight** earlier failures sharing a single
+root cause.
 
-Open: propagate it back through exp_03–09, which were scored against the old scale and
-are currently recorded as failures for a reason now known to be wrong.
+Open: propagate it back through exp_03–09, currently scored against the old scale and
+recorded as failures for a reason now known to be wrong. This is the highest-value
+unfinished work in the corpus — it converts recorded failures into results without
+weakening a threshold, because the threshold never changed; the scale was wrong.
 
-Also standing from Block C: the Geiger–Nuttall law shown to be a **universality theorem**
-for any d-simultaneous-threshold barrier (exp_16, 4/4), with universal exponent
-k = 1.16 ± 0.02 across A, D and E families.
+Also standing from Block C: Geiger–Nuttall shown to be a **universality theorem** for any
+d-simultaneous-threshold barrier (exp_16, 4/4), universal exponent k = 1.16 ± 0.02 across
+A, D and E families.
 
-### Midnight — observational contact
+### Repository — closing Phase 0
 
-22/32. The invariant-registration rule was adopted here and now governs the whole corpus:
-*registered relations survive, registered coordinates die.*
+The layer reorganization is done. Remaining:
+
+- **Publication repackaging** — 11 packages marked `needs_repackage` against 7 current,
+  2 incomplete, 1 ready. The largest single block of stale state in the repo.
+- **Link rot** — 200 unresolved relative links, mostly per-link archaeology inside archived
+  documents whose targets moved or were never committed. Recorded rather than hidden, and
+  now measured by `tools/check_links.py` rather than hand-counted; CI pins the count as a
+  ceiling so the number can fall but not rise. Low priority to reduce, high priority not to
+  add to.
+- **`UNIFIED_EVIDENCE.md`** — 20 copies in five drifted versions across published packages.
+  Frozen artifacts, so the fix is a forward note, not an edit.
+
+---
+
+## Next
+
+Defined, not started. Each carries the question that would close it.
+
+### The orbit-flow direction — announced, renumbered past, never done
+
+Milestone 14's Forward Path announced:
+
+> **Dynamics as Orbit Flow**: Schrodinger equation from SEC-driven orbit flow, Hamiltonian
+> from graph Laplacian restricted to orbit space, time evolution as
+> automorphism-equivariant unitary propagation.
+
+M15 then became The Representative Problem instead, and M15's README records the slot as
+"fulfilled by P13–P16 under Milestone 14." **The two documents disagree**, and P13–P16 are
+propositions with a conjectured propagator — not a derived Schrödinger equation.
+
+Treated here as **open**. It is the one announced direction in the milestone stack that
+was superseded by renumbering rather than by a result. Either it gets derived, or the
+claim that M14 already covered it gets withdrawn into
+[`theory/corrections.md`](theory/corrections.md). Both outcomes are acceptable; the
+current state — announced, assumed done, not done — is not.
+
+### M10 — the finite-size correction
+
+φ^(−1/N) converges to φ, but N = 8 is still 3.3% off and the correction is underived.
+Closes when the correction is derived rather than fitted, or when the convergence is shown
+to be asymptotic-only and the N = 8 gap is accepted as structural.
+
+### M9 — the 8.9% slope gap
+
+Three data points, may be noise. Closes by adding points, not by argument. Until then it
+stays on this list rather than being quietly absorbed into the M9 score.
+
+### M5 — CP violation at 3%
+
+The weakest number in the Standard Model block, and the only one whose error is large
+enough that a competing derivation could plausibly beat it.
+
+---
+
+## Horizon
+
+Real direction that cannot be closed from inside the repository.
+
+### Observational contact
+
+Roughly 60% of M11's tests are structural — internal consistency, not empirical
+validation. The hard tests wait on instruments:
+
+| Prediction | Waits on |
+|---|---|
+| Z′ at 395 GeV (M1) | collider reach |
+| Cosmological-constant and structure-growth predictions (M8, M9) | Euclid |
+| Gravitational-wave signatures (M11) | LISA |
+| High-energy astrophysical tests (M11) | CTA |
+| DESI w(z) tension — w_a = −0.15 predicted vs −0.75 observed | further DESI data releases |
+
+The DESI line is the one that could go badly. It is carried as an open tension rather than
+explained away, and if the observed value holds it is a falsification, not a discrepancy.
+
+**Midnight** (22/32) is the sidecar where observational contact is worked. It is also
+where the invariant-registration rule was adopted — *registered relations survive,
+registered coordinates die* — which now governs the whole corpus.
+
+### Deferred from M11
+
+Spacetime topology change, multi-loop graviton corrections, graviton scattering
+amplitudes, and the LQG/spin-foam connection. Each was scoped and set down deliberately;
+none has a registrable formulation yet. Listing them here is the honest alternative to
+letting them disappear from the record.
 
 ---
 
 ## Known open ends
 
-Carried honestly rather than quietly. Each is a soft spot in otherwise settled work.
+Carried honestly. Each is a soft spot in otherwise settled work.
 
 | Where | What's open |
 |---|---|
-| M5 | CP violation at 3% error — the weakest number in the Standard Model block |
+| M5 | CP violation at 3% error |
 | M6 | exp_03 T2 at R² = 0.67 against a 0.75 threshold — genuine scatter in geometric decay |
-| M9 | 8.9% slope gap (3 data points, may be noise); DESI w(z) tension, w_a = −0.15 vs −0.75 |
+| M9 | 8.9% slope gap; DESI w(z) tension |
+| M10 | φ^(−1/N) at N = 8 still 3.3% off — finite-size correction underived |
 | M13.5 | Coherence limit is **not** universal (exp_15, 0/4) — geometric, not Fibonacci-arithmetic |
 | M13.5 | PSD degeneracy proven **fundamental** (exp_16, 0/4) — no isomorphism-invariant metric can fix it |
-| M10 | φ^(−1/N) converges to φ, but N = 8 is still 3.3% off — finite-size correction underived |
 
 The M13.5 entries are not defects to repair. M15 reclassifies them: class-level content
 passes, representative-level demands fail, and that split *is* the DFT-Hodge conjecture.
-
----
-
-## Repository work
-
-Phase 0 — reorganizing the repository by layer — is largely done. What remains:
-
-- **`formal/theorems/`** — index the proven results (C₆ = −I, the holonomy closed form,
-  PAC as exact eigenvector fixity at 2.4e-15, the origin of Ξ) into the journals that
-  established them.
-- **`THEORY_MAP.md` as the spine** — every claim resolving across all four layers:
-  claimed → derived → tested → published.
-- **`INVENTORY.md`** — generated lifecycle view: on deck / settled / legacy.
-- **Lexicon lineage** — each term carrying the era it was coined in and what it replaced,
-  so the pre-PAC vocabulary reads as etymology rather than clutter.
-- **Lore `source_paths`** — migrate for the August 2026 relocations.
-- **Link rot** — 185 dead links, only a handful mechanically fixable; per-link archaeology
-  in mostly archived documents. Low priority, recorded rather than hidden.
 
 ---
 
@@ -102,9 +172,12 @@ reason unrelated to what it guards is tautological and gets replaced, which is w
 hardening cycles sometimes *lower* a score — M11 went 52 → 49 → 52, and that was the
 process working.
 
-Failures are kept. `theory/corrections.md` is the standing record of what was claimed too
-strongly and later withdrawn.
+Claims register **invariants, never absolute coordinates**.
 
-Superseded roadmaps are in [`roadmaps/`](roadmaps/) — kept because the gap between what
-was predicted and what happened is itself evidence. The April 2026 roadmap forecast
-"M12 = Topology Change"; M12 became Connection as Primitive.
+Failures are kept. [`theory/corrections.md`](theory/corrections.md) is the standing record
+of what was claimed too strongly and later withdrawn.
+
+Superseded roadmaps are in [`roadmaps/`](roadmaps/) — kept because the gap
+between what was predicted and what happened is itself evidence. The April 2026 roadmap
+forecast "M12 = Topology Change"; M12 became Connection as Primitive. The orbit-flow item
+above is on this roadmap precisely so it does not become the next such gap.
