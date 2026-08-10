@@ -4946,6 +4946,8 @@ dawn-field-theory/
       infodynamics_arithmetic_v1.md
       symbolic_geometry_arithmetic.md
       unified_pac_framework_comprehensive.md
+    theorems/
+      README.md
   legal/
     LICENSE_APPENDIX.md
     TRADE_SECRET_REGISTRY_TEMPLATE.md
