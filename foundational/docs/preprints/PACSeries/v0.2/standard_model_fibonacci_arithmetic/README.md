@@ -31,7 +31,7 @@ This paper demonstrates that a significant subset of Standard Model free paramet
 
 - `foundational/experiments/milestone1/` — 40 scripts (gauge couplings, mass ratios, mixing)
 - `foundational/experiments/milestone2/` — 40 scripts (mass derivations, Casimir, turbulence)
-- `foundational/experiments/pac_confluence_xi/` — 45+ scripts (α derivation, Noether, synthesis)
+- `foundational/experiments/archive/era2/pac_confluence_xi/` — 45+ scripts (α derivation, Noether, synthesis)
 
 ## Dependencies
 

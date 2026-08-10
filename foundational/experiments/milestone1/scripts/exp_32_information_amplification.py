@@ -7,7 +7,7 @@ Validates that SEC field dynamics produce genuine information amplification:
 2. Born rule compliance emerges naturally
 3. Attractor formation without predetermined motifs
 
-Source: foundational/experiments/information_amplification/
+Source: foundational/experiments/archive/era2/information_amplification/
 """
 
 import sys

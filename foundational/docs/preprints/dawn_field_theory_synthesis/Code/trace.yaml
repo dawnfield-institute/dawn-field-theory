@@ -8,7 +8,7 @@ trace_date: "2025-12-23"
 experiments:
   - file: "experiments/exp_01_unified_amplification.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/unified_amplification_framework.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/unified_amplification_framework.py"
     description: "Unified Information Amplification Framework demonstrating SEC field dynamics"
     verified: true
     results:
@@ -21,32 +21,32 @@ experiments:
 core_modules:
   - file: "experiments/core/sec_field_engine.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/core/sec_field_engine.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/core/sec_field_engine.py"
     description: "SEC field dynamics engine"
 
   - file: "experiments/core/quantum_validator.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/core/quantum_validator.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/core/quantum_validator.py"
     description: "Quantum correspondence validation"
 
   - file: "experiments/core/compression_engine.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/core/compression_engine.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/core/compression_engine.py"
     description: "Compression analysis for information measurement"
 
   - file: "experiments/core/baseline_generator.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/core/baseline_generator.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/core/baseline_generator.py"
     description: "Baseline generation for controlled comparisons"
 
   - file: "experiments/core/text_generator.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/core/text_generator.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/core/text_generator.py"
     description: "Text generation utilities"
 
   - file: "experiments/core/measurement.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/core/measurement.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/core/measurement.py"
     description: "Information measurement utilities"
 
 paper_claims_supported:

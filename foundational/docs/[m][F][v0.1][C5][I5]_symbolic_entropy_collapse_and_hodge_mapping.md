@@ -122,7 +122,7 @@ Figures illustrate the emergence of attractors under prime-modulated collapse, w
 ![SEC Attractor, $p=7\pi$](../experiments/hodge_conjecture/reference_material/hodge_field/hodge_conjecture2025-06-20%20090250.png)
 
 **Figure 4:** Collapse tree visualization showing recursive ancestry and bifractal pruning paths for a sample symbolic field.  
-![Collapse tree example](../experiments/language_to_logic/reference_material/2025-06-21_102536/testid_1/collapse_tree.png)
+![Collapse tree example](../experiments/archive/era1/language_to_logic/reference_material/2025-06-21_102536/testid_1/collapse_tree.png)
 
 ## Chapter 4: Theoretical Mapping to Hodge Structures
 4.1 Symbolic Cycles and Collapse Dynamics

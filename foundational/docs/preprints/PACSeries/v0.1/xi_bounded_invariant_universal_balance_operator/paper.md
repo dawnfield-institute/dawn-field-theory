@@ -937,7 +937,7 @@ The limit Ξ_PAC is independent of:
 
 Our earliest experimental validation of Xi bounds came from **pre-field recursion** experiments (June-September 2024), which independently discovered the same Xi bounds and resonance phenomena through a completely different approach—topological recursion on Möbius manifolds.
 
-**Experiment**: [`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)
+**Experiment**: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/archive/era2/pre_field_recursion)
 
 **Independent Framework**: The pre-field recursion experiments modeled information flow through recursive Möbius topological transformations, tracking how complexity evolves through depth. This approach was developed independently of the Xi theory, making its convergence to the same bounds particularly significant.
 
@@ -1110,7 +1110,7 @@ The pre-field recursion experiments provide:
 **Reproducibility**: All 100 trials converged to same Ξ_PAC ± 0.0004, demonstrating universality across initial conditions.
 
 **Repository References**: 
-- Core code: [`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)
+- Core code: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/archive/era2/pre_field_recursion)
 - Main script: `main.py`, `pre_field_recursion_unified.py`
 - Topology module: `core/mobius_topology.py`
 - Resonance detection: `core/resonance_detector.py`
@@ -2091,7 +2091,7 @@ def _compute_circle_eigenvalues(self, field):
 
 **1. Pre-Field Recursion Experiment** (June 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/pre_field_recursion/
+Path: dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/
 Files: 
   - main.py (primary recursion engine)
   - results/pre_field_recursion_results_20250930_183326.json
@@ -2121,7 +2121,7 @@ Paper Impact: Section 6.6 (quantum threshold theory validation)
 
 **3. Hodge Conjecture Exploration** (Various dates):
 ```
-Path: dawn-field-theory/foundational/experiments/hodge_conjecture/
+Path: dawn-field-theory/foundational/experiments/archive/era1/hodge_conjecture/
 Files: 11 iterations of prime_modulated_collapse*.py
 
 Key Results:
@@ -2217,7 +2217,7 @@ Will archive complete Xi dataset with reproduction instructions.
 ```bash
 # Setup
 git clone https://github.com/dawnfield-institute/dawn-field-theory.git
-cd dawn-field-theory/foundational/experiments/pre_field_recursion
+cd dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install numpy scipy matplotlib

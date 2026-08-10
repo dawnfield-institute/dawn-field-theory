@@ -1,39 +1,40 @@
-schema_version: "2.0"
-description: "SEC Prime Manifold - Golden ratio emergence in prime distribution via symbolic entropy collapse"
-semantic_scope: "experimental_validation"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+description: SEC Prime Manifold - Golden ratio emergence in prime distribution via
+  symbolic entropy collapse
+semantic_scope: experimental_validation
+proficiency_level: research
 estimated_context_weight: 0.8
-validation_type: "computational"
-
+validation_type: computational
 files:
-  - "[README.md]": "Package overview and quick start"
-  - "[METHODS.md]": "Reproducibility documentation"
-  - "[RESULTS.md]": "Complete results summary"
-  - "[CHANGELOG.md]": "Version history"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - "core/": "SEC implementation modules"
-  - "scripts/": "Experiment scripts with tracing"
-  - "results/": "JSON result traces"
-  - "figures/": "Publication figures"
-  - "papers/": "Preprint drafts"
-  - "journals/": "Discovery logs"
-
+- core
+- journal
+- journals
+- papers
+- results
+- scripts
+- traces
 dependencies:
   internal:
-    - "../pac_confluence_xi/": "PAC-SEC duality connection"
-    - "../standard_model_connection/": "Physics bridge"
-    - "../../arithmetic/euclidean_distance_validation/": "E=mc² emergence"
+  - ../pac_confluence_xi/: PAC-SEC duality connection
+  - ../standard_model_connection/: Physics bridge
+  - ../../arithmetic/euclidean_distance_validation/: E=mc² emergence
   external:
-    - "numpy>=1.20"
-    - "scipy>=1.7"
-    - "matplotlib>=3.5"
-
+  - numpy>=1.20
+  - scipy>=1.7
+  - matplotlib>=3.5
 key_results:
   phi_threshold: 0.618432
   phi_error: 0.000398
   enrichment_top_1pct: 0.675
-  fibonacci_cascade: ["2/3", "1/φ", "3/5"]
-
-status: "active_research"
-created: "2025-12-09"
+  fibonacci_cascade:
+  - 2/3
+  - 1/φ
+  - 3/5
+status: active
+directory_name: sec_prime_manifold
+title: SEC Prime Manifold Experiments
+created: '2025-12-09'

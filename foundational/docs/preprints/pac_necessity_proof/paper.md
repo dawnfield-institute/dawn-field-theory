@@ -320,8 +320,8 @@ This transforms the interpretation of Dawn Field Theory findings. The recurrence
 
 ## References
 
-1. exp_26_pac_violation.py: `foundational/experiments/prime_harmonic_manifold/scripts/exp_26_pac_violation.py`
-2. Journal: `foundational/experiments/prime_harmonic_manifold/journals/2025-12-13_pac_necessity_proof.md`
+1. exp_26_pac_violation.py: `foundational/experiments/archive/era2/prime_harmonic_manifold/scripts/exp_26_pac_violation.py`
+2. Journal: `foundational/experiments/archive/era2/prime_harmonic_manifold/journals/2025-12-13_pac_necessity_proof.md`
 3. SEC Prime Manifold: `foundational/experiments/sec_prime_manifold/`
 4. PAC Confluence Xi: `foundational/arithmetic/PACEngine/`
 5. Pythia Validation: exp_27, exp_28

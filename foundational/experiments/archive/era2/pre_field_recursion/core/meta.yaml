@@ -1,0 +1,53 @@
+schema_version: 2.0
+directory_name: core
+description: Core computational modules for Pre-Field Recursion experimental framework.
+  Contains advanced topology implementations, field simulators, and fundamental computational
+  components.
+semantic_scope:
+- computational_core
+- topology_implementation
+- field_simulation
+- geometric_computation
+- mathematical_foundations
+files:
+- __init__.py
+- adaptive_recursion.py
+- formal_definitions.py
+- mobius_topology.py
+- resonance_detector.py
+- transition_dynamics.py
+modules:
+  mobius_topology:
+    purpose: Advanced Möbius topology implementation with comprehensive analysis capabilities
+    classes:
+    - MobiusTopology: Core Möbius substrate with anti-periodic boundary conditions
+    - TopologyAnalyzer: Analysis tools for topological properties and amplification
+        correlation
+    - TopologyMetrics: Comprehensive metrics for topology characterization
+    capabilities:
+    - anti_periodic_enforcement: Strict Möbius boundary condition implementation
+    - local_structure_analysis: Detailed local geometric property extraction
+    - field_coherence_measurement: Quantitative assessment of field stability
+    - amplification_correlation: Statistical analysis of topology-amplification relationships
+computational_features:
+  geometric_substrate: Möbius topology as foundation for Pre-Field Recursion computation
+  boundary_conditions: Anti-periodic constraints maintaining topological integrity
+  field_dynamics: SEC (Symbolic Entropy Collapse) field behavior on geometric substrate
+  structural_analysis: Comprehensive topology characterization and quality metrics
+mathematical_foundation:
+  topology_theory: Rigorous implementation of Möbius strip mathematical properties
+  differential_geometry: Local curvature and gradient analysis capabilities
+  field_theory: Field dynamics and coherence measurement on curved substrates
+  statistical_analysis: Correlation analysis between geometry and computational behavior
+research_applications:
+  substrate_design: Platform for investigating geometric computation principles
+  amplification_studies: Framework for studying natural information amplification
+    emergence
+  conservation_analysis: Geometric foundation for PAC conservation law investigation
+  universal_constants: Substrate for identifying universal computational constants
+performance_considerations:
+  efficiency: Optimized for repeated experimental runs with statistical analysis
+  precision: High-precision calculations for reliable experimental results
+  scalability: Configurable topology sizes for different experimental requirements
+  stability: Robust implementation maintaining mathematical constraints
+child_directories: []

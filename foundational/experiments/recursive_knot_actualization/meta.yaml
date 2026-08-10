@@ -1,34 +1,38 @@
-schema_version: "2.0"
-description: "Formalizes the hypothesis that partial recursive functions are topological knots - self-referencing without resolution - and that 'partiality' is observer-relative, arising because children are still resolving. Explores Ackermann function as maximum knotting depth before thermodynamic collapse."
-semantic_scope: "research"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: recursive_knot_actualization
+title: Recursive Knot Actualization
+description: Formalizes the hypothesis that partial recursive functions are topological
+  knots - self-referencing without resolution - and that 'partiality' is observer-relative,
+  arising because children are still resolving. Explores Ackermann function as maximum
+  knotting depth before thermodynamic collapse.
+semantic_scope: research
+proficiency_level: research
 estimated_context_weight: 0.7
-validation_type: "automated"
-
+validation_type: automated
 origin:
-  catalyst: "Andy Farmer (Wolfram Institute) - Partial Recursive Functions + Ackermann research"
-  date: "2025-02-04"
-  insight: "Partial recursion as knot, total recursion as actualization, partiality as relational property of unresolved children"
-
+  catalyst: Andy Farmer (Wolfram Institute) - Partial Recursive Functions + Ackermann
+    research
+  date: '2025-02-04'
+  insight: Partial recursion as knot, total recursion as actualization, partiality
+    as relational property of unresolved children
 hypothesis:
-  primary: "Partial recursive functions are topological knots in computation space - dependency cycles that haven't collapsed"
-  secondary: "The Halting Problem is equivalent to asking 'will this knot untie?' from outside the recursive tree"
-  tertiary: "MED bounds (depth ≤ 2, nodes ≤ 3) emerge from Landauer erasure cost on recursive calls"
-
+  primary: Partial recursive functions are topological knots in computation space
+    - dependency cycles that haven't collapsed
+  secondary: The Halting Problem is equivalent to asking 'will this knot untie?' from
+    outside the recursive tree
+  tertiary: MED bounds (depth ≤ 2, nodes ≤ 3) emerge from Landauer erasure cost on
+    recursive calls
 connections:
-  - PAC: "Total recursion = full actualization, children resolved"
-  - SEC: "Collapse is observer-relative, knot resolution depends on reference frame"
-  - MED: "Thermodynamic limit on recursion depth before forced collapse"
-  - Ackermann: "Maximum knotting - escapes primitive recursion but not thermodynamics"
-
+- PAC: Total recursion = full actualization, children resolved
+- SEC: Collapse is observer-relative, knot resolution depends on reference frame
+- MED: Thermodynamic limit on recursion depth before forced collapse
+- Ackermann: Maximum knotting - escapes primitive recursion but not thermodynamics
 files:
-  - "[README.md]": "Experiment overview and hypothesis"
-  - "[SYNTHESIS.md]": "Cross-connections to other experiments"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "scripts"
-    description: "Experiment scripts exploring knot-actualization dynamics"
-  - name: "results"
-    description: "JSON outputs from experiments"
-  - name: "journals"
-    description: "Daily research logs"
+- journals
+- results
+- scripts

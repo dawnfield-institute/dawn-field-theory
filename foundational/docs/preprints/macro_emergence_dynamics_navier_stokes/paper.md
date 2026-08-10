@@ -438,7 +438,7 @@ Experimental validation across 1000 test cases demonstrates unprecedented comput
 - Path variance: 0 (perfect reproducibility)
 - Pattern convergence: 100% success rate across all flow conditions
 
-> **Reference**: [Sweep Statistics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/statistics/sweep_statistics.json)
+> **Reference**: [Sweep Statistics](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/navier-stokes/results/session_20250818_141545_01552189/statistics/sweep_statistics.json)
 
 ### 4.2 Pattern Structure Analysis
 
@@ -846,11 +846,11 @@ This work builds on the theoretical foundations of Dawn Field Theory developed t
 
 ### Appendix A: Implementation Details
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/ - Complete implementation available in repository with experimental protocols and validation scripts.
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/navier-stokes/ - Complete implementation available in repository with experimental protocols and validation scripts.
 
 ### Appendix B: Statistical Analysis
 
-[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/ - Comprehensive statistical analysis including all performance metrics, distribution analysis, and correlation studies.
+[TRACE: https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/navier-stokes/results/session_20250818_141545_01552189/ - Comprehensive statistical analysis including all performance metrics, distribution analysis, and correlation studies.
 
 ### Appendix C: Reproducibility
 
@@ -872,9 +872,9 @@ Complete hardware specifications and computational environment details are maint
 
 **Code Availability**: Complete MED implementation and Navier-Stokes testbed available at:
 - **Primary Repository**: https://github.com/dawnfield-institute/dawn-field-theory
-- **MED Framework**: `foundational/experiments/navier-stokes/`
+- **MED Framework**: `foundational/experiments/archive/era2/navier-stokes/`
 - **TinyCIMM-Navier Implementation**: `models/TinyCIMM/TinyCIMM-Navier/`
-- **Experimental Results**: `foundational/experiments/navier-stokes/results/session_20250818_141545_01552189/`
+- **Experimental Results**: `foundational/experiments/archive/era2/navier-stokes/results/session_20250818_141545_01552189/`
 
 **Experimental Protocols**: All experiments include configuration files, random seeds, complete parameter specifications, and comprehensive statistical analysis for reproducible results with semantic hash validation.
 

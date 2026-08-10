@@ -1,64 +1,55 @@
-schema_version: "2.0"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
 directory_name: cellular_automata_pac_attractors
-description: |
-  Multi-path validation of cellular automata rules as discrete attractor states 
-  in PAC (Potential-Actualization-Conservation) phase space. Tests whether the 
-  same dimensionless invariants emerge from conservation physics, geometric 
-  topology, and information theory frameworks.
-  
-  MAJOR FINDING: Provides definitive evidence for the Conditional Attractor 
-  Hypothesis (CAH) - Ξ ≈ 1.057 is NOT a universal constant but the maximum 
-  sustainable computational asymmetry for closed recursive systems under PAC.
+description: "Multi-path validation of cellular automata rules as discrete attractor\
+  \ states \nin PAC (Potential-Actualization-Conservation) phase space. Tests whether\
+  \ the \nsame dimensionless invariants emerge from conservation physics, geometric\
+  \ \ntopology, and information theory frameworks.\n\nMAJOR FINDING: Provides definitive\
+  \ evidence for the Conditional Attractor \nHypothesis (CAH) - Ξ ≈ 1.057 is NOT a\
+  \ universal constant but the maximum \nsustainable computational asymmetry for closed\
+  \ recursive systems under PAC.\n"
 semantic_scope:
-  - experiment
-  - validation
-  - cellular_automata
-  - pac_attractors
-  - conditional_attractor_hypothesis
+- experiment
+- validation
+- cellular_automata
+- pac_attractors
+- conditional_attractor_hypothesis
 proficiency_level: research
 estimated_context_weight: high
-status: validated
-updated: "2026-01-19"
-
-conditional_attractor_hypothesis: |
-  Ξ ≈ 1.057 emerges when a system is: (1) closed, (2) recursive, 
-  (3) internally conserving, (4) computationally saturated.
-  Rule 110 (Class IV) satisfies all 4 conditions → P/A = 1.0579.
-  Random systems satisfy 0-1 conditions → 0/1000 near Ξ.
-  Fisher exact test: p = 3.5 × 10⁻¹⁰.
-
+status: completed
+title: Cellular Automata as PAC Attractor States
+updated: '2026-01-19'
+conditional_attractor_hypothesis: "Ξ ≈ 1.057 emerges when a system is: (1) closed,\
+  \ (2) recursive, \n(3) internally conserving, (4) computationally saturated.\nRule\
+  \ 110 (Class IV) satisfies all 4 conditions → P/A = 1.0579.\nRandom systems satisfy\
+  \ 0-1 conditions → 0/1000 near Ξ.\nFisher exact test: p = 3.5 × 10⁻¹⁰.\n"
 key_results:
-  - "Rule 110 P/A = 1.0579 (0.07% from Ξ = 1.0571)"
-  - "All top 4 rules closest to Ξ are Class IV (p = 8.58 × 10⁻⁸)"
-  - "Random matrices: 0/1000 near Ξ vs Class IV: 4/6 (42.7× enrichment)"
-  - "Ξ is a conditional attractor, not a universal constant (CAH validated)"
-
+- Rule 110 P/A = 1.0579 (0.07% from Ξ = 1.0571)
+- All top 4 rules closest to Ξ are Class IV (p = 8.58 × 10⁻⁸)
+- 'Random matrices: 0/1000 near Ξ vs Class IV: 4/6 (42.7× enrichment)'
+- Ξ is a conditional attractor, not a universal constant (CAH validated)
 files:
-  - "[README.md]": "Experiment overview and methodology"
-  - "[SYNTHESIS.md]": "Cross-experiment connections and unified findings"
-  - "[requirements.txt]": "Python dependencies"
-
+- README.md
+- SYNTHESIS.md
+- requirements.txt
 child_directories:
-  - core
-  - scripts
-  - results
-  - journals
-
+- core
+- journals
+- results
+- scripts
 dependencies:
   internal:
-    - "../../arithmetic/PACEngine"
-    - "../information_amplification"
-    - "../sec_prime_manifold"
-    - "../oscillation_attractor_dynamics"
+  - ../../arithmetic/PACEngine
+  - ../information_amplification
+  - ../sec_prime_manifold
+  - ../oscillation_attractor_dynamics
   external:
-    - numpy
-    - scipy
-    - matplotlib
-
+  - numpy
+  - scipy
+  - matplotlib
 research_questions:
-  - "Do CA rules cluster non-randomly in PAC phase space?"
-  - "Do the same dimensionless invariants emerge from 3 independent frameworks?"
-  - "Does Rule 110 (edge-of-chaos) show φ-related invariants?"
-  - "Is Ξ a conditional attractor rather than a universal constant? (ANSWERED: YES)"
-
-preregistration_reference: "../../../CA.md"
+- Do CA rules cluster non-randomly in PAC phase space?
+- Do the same dimensionless invariants emerge from 3 independent frameworks?
+- Does Rule 110 (edge-of-chaos) show φ-related invariants?
+- 'Is Ξ a conditional attractor rather than a universal constant? (ANSWERED: YES)'
+preregistration_reference: ../../../CA.md

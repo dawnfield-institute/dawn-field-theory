@@ -1,37 +1,44 @@
-schema: "2.0"
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
 id: midnight
-title: "Midnight: Observational Frontiers of Dawn Field Theory"
+title: 'Midnight: Observational Frontiers of Dawn Field Theory'
+description: 'Exploratory sidecar taking DFT to observational contact. Develops the
+  local phase-rate primitive, the bifractal mesh photon signal, and PAC/SEC separation
+  in SDSS absorption spectroscopy. Home of the invariant-registration rule (registered
+  relations survive, registered coordinates die) adopted across the corpus 2026-06-11.
+  Score 22/32.
+
+  '
 domain: physics
 status: active
+directory_name: midnight
 confidence: 0.3
-created: "2026-06-03"
+created: '2026-06-03'
 tags:
-  - observational-cosmology
-  - photon-archaeology
-  - substrate-independent-life
-  - non-SEC-channels
-  - cosmos-simulation
-  - phase-rate-primitive
-  - entropy-reduction
-  - PAC-conservation
-  - SEC-dynamics
-  - fine-structure-invariance
-  - gravity-entanglement
-  - individuation-conservation
-  - reality-engine
-  - applied-DFT
+- observational-cosmology
+- photon-archaeology
+- substrate-independent-life
+- non-SEC-channels
+- cosmos-simulation
+- phase-rate-primitive
+- entropy-reduction
+- PAC-conservation
+- SEC-dynamics
+- fine-structure-invariance
+- gravity-entanglement
+- individuation-conservation
+- reality-engine
+- applied-DFT
 dependencies:
-  - milestone14
-  - milestone13
-  - milestone12
-  - milestone11
-  - milestone-r
+- milestone14
+- milestone13
+- milestone12
+- milestone11
+- milestone-r
 child_directories:
-  core:
-    description: "Shared modules (empty - experiments not yet started)"
-  scripts:
-    description: "Experiments organized by thread"
-  results:
-    description: "Timestamped JSON outputs"
-  journals:
-    description: "Research logs"
+- core
+- journals
+- results
+- scripts
+files:
+- README.md

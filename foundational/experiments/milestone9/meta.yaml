@@ -1,30 +1,28 @@
-schema_version: "2.0"
-description: >
-  Milestone 9: The Infodynamic Mechanism. 10 experiments across 4 blocks
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+description: 'Milestone 9: The Infodynamic Mechanism. 10 experiments across 4 blocks
   answering WHY DFT works. The cascade clock N(t) = a + (1/ln(phi))*ln(t_lookback)
-  unifies S8, Hubble, and JWST data points into a single monotonic function.
-  Key results: S8 tension reduced 98% (3.22sigma to 0.07sigma), Xi = gamma + ln(phi)
-  is the unique transition cost satisfying scale invariance, SEC breaks time symmetry
-  with logarithmic entropy evolution, parameter reduction from 2 to 1 (t1 anchors
-  to first-star formation). 4 new falsifiable predictions for Euclid, DESI, and TDSL.
-  30/40 tests pass (75%). Failures are informative: clock boundary conditions at
-  short lookback, deterministic cascade too reversible for Loschmidt echo.
-semantic_scope: "research"
-proficiency_level: "research"
-version: "1.0.0"
-status: "active"
-date_created: "2026-04-22"
-date_updated: "2026-04-22"
+  unifies S8, Hubble, and JWST data points into a single monotonic function. Key results:
+  S8 tension reduced 98% (3.22sigma to 0.07sigma), Xi = gamma + ln(phi) is the unique
+  transition cost satisfying scale invariance, SEC breaks time symmetry with logarithmic
+  entropy evolution, parameter reduction from 2 to 1 (t1 anchors to first-star formation).
+  4 new falsifiable predictions for Euclid, DESI, and TDSL. 30/40 tests pass (75%).
+  Failures are informative: clock boundary conditions at short lookback, deterministic
+  cascade too reversible for Loschmidt echo.
 
+  '
+semantic_scope: research
+proficiency_level: research
+version: 1.0.0
+status: completed
+directory_name: milestone9
+title: 'Milestone 9: The Infodynamic Mechanism'
+date_created: '2026-04-22'
+date_updated: '2026-04-22'
 files:
-  - "[README.md]": "Hypothesis, experiment index, key results, scorecard, predictions registry"
-
+- README.md
 child_directories:
-  - name: "core"
-    description: "Shared library (infodynamics.py) extending M8's bsm.py with cascade clock"
-  - name: "scripts"
-    description: "10 experiment scripts (exp_01 through exp_10)"
-  - name: "results"
-    description: "JSON output from experiment runs"
-  - name: "journals"
-    description: "Session research logs"
+- core
+- journals
+- results
+- scripts

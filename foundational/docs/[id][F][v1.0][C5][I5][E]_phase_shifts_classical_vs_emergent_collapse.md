@@ -87,32 +87,32 @@ where \$S\_{info}\$ is the informational entropy, \$M\_{memory}\$ is a memory pe
 
 * **Entropy Over Time:**
 
-  ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/entropy_over_time.png)
+  ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/entropy_over_time.png)
 
   *Symbolic entropy plateaus, then drops sharply—visualizing a critical informational phase shift.*
 
 * **Active Symbol Ratio:**
 
-  ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/active_ratio_over_time.png)
+  ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/active_ratio_over_time.png)
 
 * **Symbol Lifetimes:**
 
-  ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/symbol_lifetimes.png)
+  ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/symbol_lifetimes.png)
 
 * **Collapse Snapshots (Steps 1–10):**
 
   | Step | Snapshot                                                                                                      |
   | ---- | ------------------------------------------------------------------------------------------------------------- |
-  | 1    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_01.png) |
-  | 2    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_02.png) |
-  | 3    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_03.png) |
-  | 4    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_04.png) |
-  | 5    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_05.png) |
-  | 6    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_06.png) |
-  | 7    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_07.png) |
-  | 8    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_08.png) |
-  | 9    | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_09.png) |
-  | 10   | ![](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_10.png) |
+  | 1    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_01.png) |
+  | 2    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_02.png) |
+  | 3    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_03.png) |
+  | 4    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_04.png) |
+  | 5    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_05.png) |
+  | 6    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_06.png) |
+  | 7    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_07.png) |
+  | 8    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_08.png) |
+  | 9    | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_09.png) |
+  | 10   | ![](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_10.png) |
 
 * **Interpretation:** Recursive symbolic pruning triggers abrupt phase transitions, preserves nonlocal memory traces, and generates robust attractors, confirming the theory of discontinuous informational phase shifts.
 

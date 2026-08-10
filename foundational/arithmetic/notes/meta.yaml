@@ -1,11 +1,13 @@
 schema_version: '2.0'
 directory_name: notes
-description: >
-  Research notes and working documents for PAC arithmetic foundations.
+description: 'Research notes and working documents for PAC arithmetic foundations.
   Informal analysis, derivation sketches, and theoretical exploration.
+
+  '
 semantic_scope:
-  - research-notes
-  - pac-arithmetic
-  - working-documents
+- research-notes
+- pac-arithmetic
+- working-documents
 child_directories:
-  - PAC
+- PAC
+files: []

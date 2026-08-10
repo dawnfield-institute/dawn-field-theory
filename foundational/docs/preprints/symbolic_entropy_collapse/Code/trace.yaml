@@ -8,61 +8,61 @@ paper_type: synthesis  # References multiple experiment sources
 
 experiments:
   - local: experiments/exp_01_sec_decoherence.py
-    source: dawn-field-theory/foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/[cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py
+    source: dawn-field-theory/foundational/experiments/archive/era1/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/[cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py
     repo: dawn-field-theory
     description: SEC vs quantum decoherence validation
 
   - local: experiments/exp_02_born_rule.py
-    source: dawn-field-theory/foundational/experiments/quantum_validation/born_rule/[m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py
+    source: dawn-field-theory/foundational/experiments/archive/era1/quantum_validation/born_rule/[m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py
     repo: dawn-field-theory
     description: Born rule emergence from SEC
 
   - local: experiments/exp_03_landauer.py
-    source: dawn-field-theory/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/[id][T][v1.0][C3][I4][E]_landauer_symbolic_erasure_energy_validation.py
+    source: dawn-field-theory/foundational/experiments/archive/era1/quantum_validation/landauer_symbolic_erasure_energy_validation/[id][T][v1.0][C3][I4][E]_landauer_symbolic_erasure_energy_validation.py
     repo: dawn-field-theory
     description: Landauer principle validation via symbolic erasure energy
 
   - local: experiments/exp_04_unified_amplification.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/unified_amplification_framework.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/unified_amplification_framework.py
     repo: dawn-field-theory
     description: 15.56x information amplification framework
 
   - local: experiments/exp_05_superfluid_pi.py
-    source: dawn-field-theory/foundational/experiments/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py
+    source: dawn-field-theory/foundational/experiments/archive/era1/symbolic_superfluid_collapse_pi/symbolic_superfluid_collapse_pi.py
     repo: dawn-field-theory
     description: Pi-harmonic symbolic superfluid collapse
 
 core:
   - local: core/__init__.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/core/__init__.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/core/__init__.py
     repo: dawn-field-theory
   
   - local: core/sec_field_engine.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/core/sec_field_engine.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/core/sec_field_engine.py
     repo: dawn-field-theory
     description: SEC field computation engine
 
   - local: core/compression_engine.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/core/compression_engine.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/core/compression_engine.py
     repo: dawn-field-theory
     description: Compression measurement
 
   - local: core/baseline_generator.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/core/baseline_generator.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/core/baseline_generator.py
     repo: dawn-field-theory
     description: Baseline generation for comparison
 
   - local: core/measurement.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/core/measurement.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/core/measurement.py
     repo: dawn-field-theory
     description: Measurement utilities
 
   - local: core/quantum_validator.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/core/quantum_validator.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/core/quantum_validator.py
     repo: dawn-field-theory
     description: Quantum validation utilities
 
   - local: core/text_generator.py
-    source: dawn-field-theory/foundational/experiments/information_amplification/core/text_generator.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/core/text_generator.py
     repo: dawn-field-theory
     description: Text generation for experiments

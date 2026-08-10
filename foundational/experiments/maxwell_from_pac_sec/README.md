@@ -87,7 +87,7 @@ The number 13 appears throughout:
 
 | Experiment | Key Finding | Maxwell Connection |
 |------------|-------------|-------------------|
-| [pac_confluence_xi](../pac_confluence_xi/) | sin²θ_W = F₄/F₇ | EM coupling from Fibonacci |
+| [pac_confluence_xi](../archive/era2/pac_confluence_xi) | sin²θ_W = F₄/F₇ | EM coupling from Fibonacci |
 | [standard_model_connection](../standard_model_connection/) | Depth 7 uniqueness | Why EM at this recursion level |
 | [macro_emergence_dynamics](../../arithmetic/macro_emergence_dynamics/) | depth≤2, nodes≤3 | Curl emergence, 3D space |
 | [sec_threshold_detection](../sec_threshold_detection/) | Ξ = 1+π/55 | Balance operator in SEC |
@@ -182,18 +182,18 @@ Error: 0.0006%
 ### Direct Dependencies
 | Experiment | Connection |
 |------------|------------|
-| [pac_confluence_xi](../pac_confluence_xi/) | sin²θ_W = 3/13 |
+| [pac_confluence_xi](../archive/era2/pac_confluence_xi) | sin²θ_W = 3/13 |
 | [macro_emergence_dynamics](../../arithmetic/macro_emergence_dynamics/) | depth≤2, nodes≤3 |
 | [standard_model_connection](../standard_model_connection/) | F₇ gauge derivation |
 | [sec_threshold_detection](../sec_threshold_detection/) | Ξ = 1+π/55 |
-| [navier-stokes](../navier-stokes/) | SEC wave dynamics |
+| [navier-stokes](../archive/era2/navier-stokes) | SEC wave dynamics |
 
 ### Supporting Evidence
 | Experiment | Connection |
 |------------|------------|
 | [cellular_automata_pac_attractors](../cellular_automata_pac_attractors/) | φ at edge-of-chaos |
 | [sec_prime_manifold](../sec_prime_manifold/) | φ threshold |
-| [pre_field_recursion](../pre_field_recursion/) | Möbius topology |
+| [pre_field_recursion](../archive/era2/pre_field_recursion) | Möbius topology |
 | [oscillation_attractor_dynamics](../oscillation_attractor_dynamics/) | Prime injection |
 
 ---
@@ -201,7 +201,7 @@ Error: 0.0006%
 ## References
 
 ### Dawn Field Theory
-- [PAC Confluence Xi Synthesis](../pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
+- [PAC Confluence Xi Synthesis](../archive/era2/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
 - [Fibonacci Gauge Derivation](../standard_model_connection/journals/2025-12-07_fibonacci_derivation_breakthrough.md)
 - [MED Depth-2 Insight](../../arithmetic/macro_emergence_dynamics/insights/depth_2_recursion_insight.md)
 - [SEC-Navier-Stokes Equivalence](../../arithmetic/macro_emergence_dynamics/proofs/01_sec_navier_stokes_equivalence.md)

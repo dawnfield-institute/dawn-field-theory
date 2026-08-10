@@ -9,7 +9,7 @@ source_repositories:
 
 files:
   - local: experiments/exp_01_pac_necessity.py
-    source: dawn-field-theory/foundational/experiments/prime_harmonic_manifold/scripts/exp_26_pac_violation.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/prime_harmonic_manifold/scripts/exp_26_pac_violation.py
     description: PAC violation testing - proves PAC is necessary for structure
     key_results:
       - "Correlation PAC deviation vs structure: r=-0.5997, p=0.0085"
@@ -18,4 +18,4 @@ files:
 
 legacy_exploratory:
   note: "experiments/exploratory/ and experiments/validated/ contain prior work from pac_confluence_xi experiments"
-  source: dawn-field-theory/foundational/experiments/pac_confluence_xi/
+  source: dawn-field-theory/foundational/experiments/archive/era2/pac_confluence_xi/

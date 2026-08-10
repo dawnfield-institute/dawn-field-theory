@@ -494,8 +494,8 @@ SEC (φ-threshold) ←→ PAC (Fibonacci gauge) ←→ PHM (π²-decay) ←→ G
 
 ### 9.5 Cross-References
 
-- **Prime Harmonic Manifold**: `foundational/experiments/prime_harmonic_manifold/`
-- **PAC Confluence Xi**: `foundational/experiments/pac_confluence_xi/`
+- **Prime Harmonic Manifold**: `foundational/experiments/archive/era2/prime_harmonic_manifold/`
+- **PAC Confluence Xi**: `foundational/experiments/archive/era2/pac_confluence_xi/`
 - **Cross-Experiment Synthesis**: `prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md`
 
 ---

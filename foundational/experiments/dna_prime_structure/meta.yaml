@@ -1,16 +1,18 @@
-schema_version: "2.0"
-description: "Testing prime-interval patterns in DNA/protein sequences - cross-domain SEC validation"
-semantic_scope: "experiment"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: dna_prime_structure
+title: DNA Prime Structure Experiment
+description: Testing prime-interval patterns in DNA/protein sequences - cross-domain
+  SEC validation
+semantic_scope: experiment
+proficiency_level: research
 files:
-  - "[README.md]": "Experiment overview and hypothesis"
-  - "[SYNTHESIS.md]": "Cross-connections to SEC work"
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "scripts"
-    description: "Experiment scripts"
-  - name: "results"
-    description: "JSON outputs"
-  - name: "data"
-    description: "Downloaded sequence data"
-validation_type: "automated"
+- journals
+- results
+- scripts
+validation_type: automated
 estimated_context_weight: 0.3

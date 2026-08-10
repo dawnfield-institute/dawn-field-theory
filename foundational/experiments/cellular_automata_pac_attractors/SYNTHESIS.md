@@ -99,10 +99,10 @@ SEC λ > λ* (Chaos)     ←→  CA Class III (chaotic)
 ```
 
 ### 2. PAC Confluence Xi
-**Location**: [../pac_confluence_xi/](../pac_confluence_xi/)  
+**Location**: [../pac_confluence_xi/](../archive/era2/pac_confluence_xi)  
 **Key Papers**:
-- [10_PAC_CONFLUENCE_XI_SYNTHESIS.md](../pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
-- [11_BELL_RESOLUTION_PAC_SEC_UNIFICATION.md](../pac_confluence_xi/papers/11_BELL_RESOLUTION_PAC_SEC_UNIFICATION.md)
+- [10_PAC_CONFLUENCE_XI_SYNTHESIS.md](../archive/era2/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
+- [11_BELL_RESOLUTION_PAC_SEC_UNIFICATION.md](../archive/era2/pac_confluence_xi/papers/11_BELL_RESOLUTION_PAC_SEC_UNIFICATION.md)
 
 | PAC-Xi Finding | CA Finding |
 |----------------|------------|
@@ -131,7 +131,7 @@ This is NOT a fitted parameter—it emerges from topology. The CA experiment pro
 | Heavy seed SMBHs at high-z | Class IV rules = computational "seeds" |
 
 ### 4. Pi Harmonics
-**Location**: [../pi_harmonics/](../pi_harmonics/)  
+**Location**: [../pi_harmonics/](../archive/era1/pi_harmonics)  
 **Results**: [../pi_harmonics/results.md](../pi_harmonics/results.md)
 
 | Pi Finding | CA Finding |
@@ -332,7 +332,7 @@ The hypothesis that cellular automata rules are discrete PAC attractor states, w
 ### Internal
 - [SEC Prime Manifold SYNTHESIS](../sec_prime_manifold/SYNTHESIS.md)
 - [PAC Cosmology SYNTHESIS](../pac_cosmology_validation/SYNTHESIS.md)
-- [PAC Confluence Xi Synthesis Paper](../pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
+- [PAC Confluence Xi Synthesis Paper](../archive/era2/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
 - [PAC-SEC Unification Module](../../arithmetic/PACEngine/modules/pac_sec_unification.py)
 - [EDV Experiment 22](../../arithmetic/euclidean_distance_validation/experiments/experiment_22_xi_modulation.py)
 

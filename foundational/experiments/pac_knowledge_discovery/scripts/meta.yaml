@@ -1,12 +1,17 @@
-schema_version: "2.0"
-description: "Experiment scripts for PAC knowledge discovery"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.0'
+description: Experiment scripts for PAC knowledge discovery
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[exp_01_synthetic_validation.py]": "Hide known feature, verify residual detects it"
-
+- exp_01_convergence_bridging.py
+- exp_01_real_data_validation.py
+- exp_02_diverse_branch_mapping.py
+- exp_03_property_convergence.py
+- exp_04_biological_convergence.py
+- exp_05_pac_tree_construction.py
 planned_scripts:
-  - exp_02_cross_domain_convergence.py: "N² analysis across public datasets"
-  - exp_03_residual_clustering.py: "Cluster residuals to count missing children"
-  - exp_04_hypothesis_generator.py: "AI-guided discovery suggestions"
-  - exp_05_acquisition_validation.py: "Add hypothesized data, verify residual decrease"
+- exp_02_cross_domain_convergence.py: N² analysis across public datasets
+- exp_03_residual_clustering.py: Cluster residuals to count missing children
+- exp_04_hypothesis_generator.py: AI-guided discovery suggestions
+- exp_05_acquisition_validation.py: Add hypothesized data, verify residual decrease
+child_directories: []

@@ -9,7 +9,7 @@ Validates that SEC reproduces fundamental quantum mechanical results:
 
 This experiment IMPORTS and RUNS the actual quantum validation code.
 
-Source: foundational/experiments/quantum_validation/
+Source: foundational/experiments/archive/era1/quantum_validation/
 """
 
 import sys
@@ -19,7 +19,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Add paths to import actual quantum validation code
-QV_PATH = Path(__file__).parent.parent.parent / "quantum_validation"
+QV_PATH = Path(__file__).parent.parent.parent / "archive" / "era1" / "quantum_validation"
 BORN_PATH = QV_PATH / "born_rule"
 LANDAUER_PATH = QV_PATH / "landauer_symbolic_erasure_energy_validation"
 INTERFERENCE_PATH = QV_PATH / "symbolic_interference"

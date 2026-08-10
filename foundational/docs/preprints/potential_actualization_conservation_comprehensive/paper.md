@@ -1277,8 +1277,8 @@ at λ* = 0.9816    from Fibonacci    (Montgomery-Odlyzko)
 ### Cross-References
 
 - `foundational/experiments/sec_prime_manifold/` — SEC stress field experiments
-- `foundational/experiments/prime_harmonic_manifold/` — Markov eigenvalue experiments  
-- `foundational/experiments/pac_confluence_xi/` — Standard Model derivation
+- `foundational/experiments/archive/era2/prime_harmonic_manifold/` — Markov eigenvalue experiments  
+- `foundational/experiments/archive/era2/pac_confluence_xi/` — Standard Model derivation
 - `foundational/experiments/standard_model_connection/` — Physics mechanism search
 - `prime_harmonic_manifold/journals/2025-12-12_cross_experiment_synthesis.md` — Full synthesis
 

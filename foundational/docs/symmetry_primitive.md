@@ -447,9 +447,9 @@ The full list of relevant FDOs is in §6. The most important source documents:
 
 - `foundational/experiments/exp_30_arithmetic_dimension_emergence/` — ADE experiments (94/95 checks)
 - `foundational/experiments/confluent_identity/` — CI experiments (38 experiments, 29 phases)
-- `foundational/experiments/pre_field_recursion/` — Pre-field and π-harmonic work
+- `foundational/experiments/archive/era2/pre_field_recursion/` — Pre-field and π-harmonic work
 - `foundational/experiments/minimum_actualization_resolution/` — Harmonic bridge, Ξ separation
-- `foundational/experiments/prime_harmonic_manifold/` — π² eigenvalue decay
+- `foundational/experiments/archive/era2/prime_harmonic_manifold/` — π² eigenvalue decay
 - `foundational/research/symmetry_primitive_corpus_search.md` — (PENDING: being written by research agent job-83493ca57bf7)
 - `foundational/experiments/exp_31_symmetry_primitive/` — (PENDING: being written by experiment agent job-b8d171db7c25)
 

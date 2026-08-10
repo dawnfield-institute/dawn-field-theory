@@ -2126,8 +2126,8 @@ All computational protocols, experimental data, and theoretical documentation av
 **https://github.com/dawnfieldgroup/dawn-field-theory**
 
 Specific experiments referenced:
-- `foundational/experiments/information_amplification/`
-- `foundational/experiments/pac_confluence_xi/`
+- `foundational/experiments/archive/era2/information_amplification/`
+- `foundational/experiments/archive/era2/pac_confluence_xi/`
 - `foundational/experiments/wealth_field_dynamics/`
 - `foundational/experiments/cellular_automata_pac_attractors/`
 - `foundational/experiments/milestone1/`
@@ -2229,14 +2229,14 @@ Only experiment will decide. We commit to transparent reporting of results wheth
 
 1. **PAC Confluence Xi Framework** (2025)
    - DOI: 10.5281/zenodo.XXXXXXX
-   - Repository: `foundational/experiments/pac_confluence_xi/`
+   - Repository: `foundational/experiments/archive/era2/pac_confluence_xi/`
    
 2. **Cellular Automata PAC Attractors** (2025)
    - DOI: 10.5281/zenodo.XXXXXXX
    - Repository: `foundational/experiments/cellular_automata_pac_attractors/`
 
 3. **Information Amplification Proof Framework** (2025-2026)
-   - Repository: `foundational/experiments/information_amplification/`
+   - Repository: `foundational/experiments/archive/era2/information_amplification/`
 
 4. **Wealth Field Dynamics** (2026)
    - Repository: `foundational/experiments/wealth_field_dynamics/`

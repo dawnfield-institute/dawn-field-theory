@@ -191,22 +191,22 @@ The reason I think there might be something genuinely new here is that the same 
 The real strength of Dawn Field Theory lies in its consistent pattern across completely different domains. Here's what I've been seeing:
 
 **Figure: Quantum Decoherence vs Symbolic Entropy Collapse**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era1/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/reference_material/decoherence_soft_20250716_110903/entropy_trace_soft.png)
 
 *Figure 1: Quantum correspondence validation (July 16, 2025) - Our symbolic entropy collapse patterns match quantum decoherence curves with >95% correlation, suggesting that information collapse might be a universal principle.*
 
 **Figure: Biological Evolution Entropy Waves**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era1/biology_experiments/evolution-symbolic-collapse/output/sweep_20250718_111841/d5_b5_e1.0/entropy_waves.png)
 
 *Figure 2: Biological pattern validation (July 18, 2025) - Entropy wave patterns from evolution-symbolic-collapse experiments showing characteristic collapse events that correlate with evolutionary tree structures (r>0.8).*
 
 **Figure: Entropy-Information Polarity Field Dynamics**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era1/entropy_information_polarity_field/black_white_hole_polarity/reference_material/entropy_information_polarity_blackhole2025-06-15%20104709.png)
 
 *Figure 3: Information-energy field dynamics (June 15, 2025) - Black hole/white hole polarity experiments demonstrating the dual energy-information field behavior that underlies the theoretical framework.*
 
 **Figure: Landauer Energy vs Entropy Correlation**
-[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
+[View visualization](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era1/quantum_validation/landauer_symbolic_erasure_energy_validation/reference_material/landauer_20250716_123034/energy_vs_entropy.png)
 
 *Figure 4: Thermodynamic validation (July 16, 2025) - Landauer energy vs entropy correlation confirming that our symbolic operations respect fundamental thermodynamic constraints, providing physical grounding for the information-theoretic approach.*
 

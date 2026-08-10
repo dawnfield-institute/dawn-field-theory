@@ -151,10 +151,10 @@ Our computational studies suggest measuring:
 
 The framework implementation spans:
 - `foundational/arithmetic/` - Core mathematical implementations
-- `foundational/experiments/recursive_gravity/` - Gravitational applications
+- `foundational/experiments/archive/era1/recursive_gravity/` - Gravitational applications
 - `foundational/experiments/infodynamic_gravity/` - Cross-scale validation
-- `foundational/experiments/symbolic_entropy_collapse/` - Fractal processing
-- `foundational/experiments/recursive_tree/` - Structural validation
+- `foundational/experiments/archive/era1/symbolic_entropy_collapse/` - Fractal processing
+- `foundational/experiments/archive/era1/recursive_tree/` - Structural validation
 
 ---
 
@@ -301,18 +301,18 @@ We invite the scientific community to engage with this framework - whether to ex
 ### Computational Implementations
 - Core arithmetic: `foundational/arithmetic/infodynamics_arithmetic_v1.md`
 - Experimental validation: `foundational/experiments/infodynamic_gravity/`
-- Cross-scale studies: `foundational/experiments/unified_emergence_v2/`
+- Cross-scale studies: `foundational/experiments/archive/era1/unified_emergence_v2/`
 - Mathematical framework: `foundational/arithmetic/macro_emergence_dynamics/`
 
 ### Related Theoretical Work
 - Recursive Balance Field Theory: `foundational/docs/[m][F][v1.0][C4][I5]_recursive_balance_field.md`
-- Symbolic Entropy Collapse: `foundational/experiments/symbolic_entropy_collapse/`
-- Temporal Negotiation: `foundational/experiments/symbolic_bifractal/`
-- Information Amplification: `foundational/experiments/information_amplification/`
+- Symbolic Entropy Collapse: `foundational/experiments/archive/era1/symbolic_entropy_collapse/`
+- Temporal Negotiation: `foundational/experiments/archive/era1/symbolic_bifractal/`
+- Information Amplification: `foundational/experiments/archive/era2/information_amplification/`
 
 ### Validation Studies
 - Correlation analysis: `foundational/experiments/infodynamic_gravity/VALIDATION_RESULTS_v2.0.md`
-- Cross-domain testing: `foundational/experiments/unified_emergence_v2/`
+- Cross-domain testing: `foundational/experiments/archive/era1/unified_emergence_v2/`
 - Statistical frameworks: `foundational/arithmetic/macro_emergence_dynamics/computational_validation/`
 
 ---

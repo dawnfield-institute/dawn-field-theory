@@ -81,7 +81,7 @@ Two graphs were produced:
 | Max Depth            | [dynamic]  |
 | Avg Branching Factor | [dynamic]  |
 
-*For actual experiment metrics, refer to the summary in [recursive_entropy_2025-06-07_results.txt](../experiments/recursive_entropy/reference_material/recursive_entropy_2025-06-07_results.txt) and the [results.md](../experiments/recursive_entropy/results.md) file.*
+*For actual experiment metrics, refer to the summary in [recursive_entropy_2025-06-07_results.txt](../experiments/archive/era1/recursive_entropy/reference_material/recursive_entropy_2025-06-07_results.txt) and the [results.md](../experiments/recursive_entropy/results.md) file.*
 
 ### 4.3 Symbolic Trace Sample
 

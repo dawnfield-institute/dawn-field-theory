@@ -492,13 +492,13 @@ This arithmetic is open for reuse, extension, and empirical testing across all d
 - Mean absolute error < 0.02 across probability regimes p ∈ {0.5, 0.7, 0.8}
 - Chi-squared tests consistently yield p-values > 0.05
 - Kullback-Leibler divergence typically < 0.001
-- **Code**: `foundational/experiments/quantum_validation/born_rule/[m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py`
+- **Code**: `foundational/experiments/archive/era1/quantum_validation/born_rule/[m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py`
 
 **Decoherence Curve Matching**:
 - Correlation > 0.95 with theoretical quantum decoherence C(t) = C₀e^(-Γt)
 - Decoherence rates Γ correlate with symbolic entropy parameters
 - Results hold across different field sizes and initial conditions
-- **Code**: `foundational/experiments/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/`
+- **Code**: `foundational/experiments/archive/era1/quantum_validation/symbolic_entropy_collapse_vs_quantum_decoherence/`
 
 **Interference Pattern Generation**:
 - Perfect correlation (r ≈ 1.0) with quantum double-slit predictions
@@ -579,7 +579,7 @@ This arithmetic is open for reuse, extension, and empirical testing across all d
 ### C.1 SEC Core Implementation
 
 ```
-foundational/experiments/quantum_validation/
+foundational/experiments/archive/era1/quantum_validation/
 ├── born_rule/
 │   ├── [m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py
 │   └── results.md

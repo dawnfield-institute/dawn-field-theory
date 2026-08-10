@@ -1,0 +1,21 @@
+schema_version: '2.1'
+era: era1-symbolic-collapse-2025h1
+status: archived
+title: Pi Harmonics
+directory_name: pi_harmonics
+description: 'Pi harmonics experiments and supporting files for foundational research.
+  Includes data, scripts, and analysis outputs.
+
+  '
+semantic_scope:
+- pi harmonics
+- experiments
+- foundational
+files:
+- README.md
+- pi_harmonics.yaml
+child_directories:
+- journals
+- reference_material
+- results
+- scripts

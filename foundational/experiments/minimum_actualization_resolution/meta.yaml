@@ -1,130 +1,131 @@
-schema_version: "2.0"
-description: "Derives Planck scale as minimum viable actualization event (MVAE) from PAC constraints"
-semantic_scope: "research"
-proficiency_level: "research"
-validation_type: "computational"
-status: "active"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+description: Derives Planck scale as minimum viable actualization event (MVAE) from
+  PAC constraints
+semantic_scope: research
+proficiency_level: research
+validation_type: computational
+status: active
+directory_name: minimum_actualization_resolution
+title: Minimum Actualization Resolution
 tags:
-  - planck-scale
-  - pac
-  - mvae
-  - landauer
-  - heisenberg
-  - schwarzschild
-  - xi-floor
-  - eta-pac
-  - phi-proximity
-  - sec-pump
-  - dimensional
-  - euler-gap
-  - binary-uniqueness
-  - ln2
-  - gamma-origin
-  - temporal-euler-gap
-  - entropic-pressure
-  - confluence-period-4
-  - harmonic-bridge
-  - separation-counting-branching
-  - temporal-cascade
-  - pac-eddington-regulator
-  - Li2-identity
-  - digamma
-  - spectral-measure
-  - fibonacci-ratio-coupling
-  - xi-spread
-  - free-streaming
-  - bao-scale
-  - s8-tension
-  - cosmological-prediction
-  - statistical-relativity
-  - global-local-duality
-  - frame-dependence
-  - phase-cycling
-  - cascade-density
-  - gravitational-time-dilation
-  - schwarzschild-metric
-  - mercury-precession
-  - gravitational-waves
-  - local-c-invariance
-  - cascade-general-relativity
-  - gauss-law-information
-  - null-hypothesis
-  - falsification
-  - stress-test
-  - einstein-field-equations
-  - lovelock-theorem
-  - stress-energy-tensor
-  - bianchi-identity
-  - friedmann-equations
-  - cosmological-constant
-  - dark-matter-prediction
-  - birkhoff-theorem
-  - falsification-sweep
-  - circularity-audit
-  - ghost-instability
-  - ostrogradsky
-  - kerr-metric
-  - reissner-nordstrom
-  - limitation-registry
-  - g-sharpening
-  - correction-template
-  - em-gravity-duality
-  - fibonacci-correction
-  - cosmological-constant-attack
-  - omega-lambda
-  - vacuum-energy
-  - med-mode-counting
-  - cascade-cancellation
-  - local-global-tiling
-  - sec-tiling-cost
-  - cosmic-web
-  - correction-template-origin
-  - cascade-boundary-area
-  - cascade-path-counting
-  - weinberg-angle
-  - spin-statistics
-  - perturbative-ratio
-  - four-force-template
-  - strong-coupling
-  - weak-force-actualization
-  - gauge-fibonacci-constraint
-  - alpha-s
-  - higgs-completion
-  - cascade-depth-ordering
-  - parity-violation
-  - asymptotic-freedom
-  - b-hierarchy
-  - strong-template-selection
-  - fundamental-vs-adjoint
-  - open-question-sweep
-  - g-measurement-floor
-  - gauge-group-uniqueness
-  - tree-level-template
-  - sub-integer-depth
-  - round-trip-decomposition
-  - actualization-ratio
-  - local-global-split
-  - field-dynamics
-  - reality-engine-v3
-  - emergent-attractor
-  - boiling-fluctuations
-  - emergent-coupling-constants
-  - euler-mascheroni
-  - golden-ratio-mass-generation
+- planck-scale
+- pac
+- mvae
+- landauer
+- heisenberg
+- schwarzschild
+- xi-floor
+- eta-pac
+- phi-proximity
+- sec-pump
+- dimensional
+- euler-gap
+- binary-uniqueness
+- ln2
+- gamma-origin
+- temporal-euler-gap
+- entropic-pressure
+- confluence-period-4
+- harmonic-bridge
+- separation-counting-branching
+- temporal-cascade
+- pac-eddington-regulator
+- Li2-identity
+- digamma
+- spectral-measure
+- fibonacci-ratio-coupling
+- xi-spread
+- free-streaming
+- bao-scale
+- s8-tension
+- cosmological-prediction
+- statistical-relativity
+- global-local-duality
+- frame-dependence
+- phase-cycling
+- cascade-density
+- gravitational-time-dilation
+- schwarzschild-metric
+- mercury-precession
+- gravitational-waves
+- local-c-invariance
+- cascade-general-relativity
+- gauss-law-information
+- null-hypothesis
+- falsification
+- stress-test
+- einstein-field-equations
+- lovelock-theorem
+- stress-energy-tensor
+- bianchi-identity
+- friedmann-equations
+- cosmological-constant
+- dark-matter-prediction
+- birkhoff-theorem
+- falsification-sweep
+- circularity-audit
+- ghost-instability
+- ostrogradsky
+- kerr-metric
+- reissner-nordstrom
+- limitation-registry
+- g-sharpening
+- correction-template
+- em-gravity-duality
+- fibonacci-correction
+- cosmological-constant-attack
+- omega-lambda
+- vacuum-energy
+- med-mode-counting
+- cascade-cancellation
+- local-global-tiling
+- sec-tiling-cost
+- cosmic-web
+- correction-template-origin
+- cascade-boundary-area
+- cascade-path-counting
+- weinberg-angle
+- spin-statistics
+- perturbative-ratio
+- four-force-template
+- strong-coupling
+- weak-force-actualization
+- gauge-fibonacci-constraint
+- alpha-s
+- higgs-completion
+- cascade-depth-ordering
+- parity-violation
+- asymptotic-freedom
+- b-hierarchy
+- strong-template-selection
+- fundamental-vs-adjoint
+- open-question-sweep
+- g-measurement-floor
+- gauge-group-uniqueness
+- tree-level-template
+- sub-integer-depth
+- round-trip-decomposition
+- actualization-ratio
+- local-global-split
+- field-dynamics
+- reality-engine-v3
+- emergent-attractor
+- boiling-fluctuations
+- emergent-coupling-constants
+- euler-mascheroni
+- golden-ratio-mass-generation
 related_experiments:
-  - landauer_erasure_structure
-  - pac_confluence_xi
-  - sec_threshold_detection
-  - sec_prime_manifold
-  - prime_harmonic_manifold
-  - pi_harmonics
+- landauer_erasure_structure
+- pac_confluence_xi
+- sec_threshold_detection
+- sec_prime_manifold
+- prime_harmonic_manifold
+- pi_harmonics
 estimated_context_weight: 0.8
 files:
-  - "[README.md]": "Overview and results"
+- README.md
 child_directories:
-  - name: "scripts"
-    description: "43 experiment scripts: MVAE derivations (01-05), hardening (06), deep probes (07-10), origin probes (11-13), Euler gap analysis (14-16), temporal & cosmological (17-18), gamma & separation (19-20), cascade & cosmological (21-22), harmonic bridge (23), cascade refinement (24), physical separation (25), Xi spread (26), free-streaming cosmology (27), statistical relativity (28), global-local duality (29), cascade general relativity (30), gravity stress test (31), Einstein field equations (32), falsification sweep (33), G sharpening (34), cosmological constant (35), local-global tiling (36), correction template origin (37), four force template (38), strong template selection (39), open question sweep (40), actualization ratio field dynamics (41), emergent actualization attractor (42), emergent coupling constants (43)"
-  - name: "results"
-    description: "Numerical output data"
-  - name: "journals"
-    description: "Research logs"
+- journals
+- results
+- scripts

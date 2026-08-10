@@ -1,16 +1,27 @@
-schema_version: "2.0"
-description: |
-  Numbered experiment scripts for asymmetric conservation validation.
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.0'
+description: 'Numbered experiment scripts for asymmetric conservation validation.
 
+  '
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[constants.py]": "Shared constants and utilities"
-  - "[exp_01_sync_baseline.py]": "Synchronous PAC baseline (control)"
-  - "[exp_02_async_events.py]": "Asynchronous event-driven PAC"
-  - "[exp_03_delta_buffer.py]": "Delta buffer dynamics study"
-  - "[exp_04_frame_asymmetry.py]": "Frame-dependent asymmetry demonstration"
-  - "[exp_05_xi_from_reconciliation.py]": "Test Ξ emergence from reconciliation"
-  - "[exp_06_gaia_integration.py]": "GAIA PACTree integration analysis"
-  - "[exp_07_falsification.py]": "Falsification tests for the model"
-  - "[run_all_experiments.py]": "Run full experiment suite"
+- constants.py
+- exp_01_sync_baseline.py
+- exp_02_async_events.py
+- exp_03_delta_buffer.py
+- exp_04_frame_asymmetry.py
+- exp_05_xi_from_reconciliation.py
+- exp_06_gaia_integration.py
+- exp_07_falsification.py
+- exp_08_poisson_async.py
+- exp_09_cross_domain.py
+- exp_10_xi_emergence.py
+- exp_11_xi_cv_validation.py
+- exp_12_eigenvalue_proof.py
+- exp_13_sec_xi.py
+- exp_14_sieve_as_local_sec.py
+- exp_15_reconciliation_depth.py
+- exp_16_possibility_pruning.py
+- exp_17_p3_reconciliation.py
+- run_all_experiments.py
+child_directories: []

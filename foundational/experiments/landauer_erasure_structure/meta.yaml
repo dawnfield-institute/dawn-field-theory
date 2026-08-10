@@ -1,36 +1,34 @@
-schema_version: "2.0"
-description: "Landauer erasure experiments demonstrating emergent structure (ξ) from information loss and thermodynamic cascade amplification"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: landauer_erasure_structure
+title: Landauer Erasure Structure Experiments
+description: Landauer erasure experiments demonstrating emergent structure (ξ) from
+  information loss and thermodynamic cascade amplification
+semantic_scope: implementation
+proficiency_level: research
 estimated_context_weight: 0.9
-validation_type: "automated"
-
+validation_type: automated
 files:
-  - "[README.md]": "Experiment overview and key findings"
-  - "[SYNTHESIS.md]": "Cross-connections to PAC framework and standard model"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "scripts"
-    description: "Experiment scripts numbered exp_NN_name.py (11 total)"
-  - name: "results"
-    description: "JSON output files with timestamps"
-  - name: "journals"
-    description: "Daily research logs"
-  - name: "papers"
-    description: "Draft papers and documentation"
-
+- journals
+- papers
+- results
+- scripts
 key_findings:
-  - "ξ (structure creation) is temperature-independent → topological, not thermodynamic"
-  - "PAC conservation: P = A + ξ + Θ (Potential = Actual + Structure + Thermal)"
-  - "A/(A+ξ) ≈ ln(φ) at 0.86% precision - golden ratio emergence in information partitioning"
-  - "Θ re-injects as fuel: cascade produces 53× more ξ than single event (p = 2.75 × 10⁻³⁵)"
-  - "Time = computational density: 69× difference between dense/sparse regimes"
-  - "Nonlinear RBF binding creates emergent ξ beyond linear coupling (p = 2.10 × 10⁻³²)"
-
+- ξ (structure creation) is temperature-independent → topological, not thermodynamic
+- 'PAC conservation: P = A + ξ + Θ (Potential = Actual + Structure + Thermal)'
+- A/(A+ξ) ≈ ln(φ) at 0.86% precision - golden ratio emergence in information partitioning
+- 'Θ re-injects as fuel: cascade produces 53× more ξ than single event (p = 2.75 ×
+  10⁻³⁵)'
+- 'Time = computational density: 69× difference between dense/sparse regimes'
+- Nonlinear RBF binding creates emergent ξ beyond linear coupling (p = 2.10 × 10⁻³²)
 connections:
-  - experiment: "standard_model_connection"
-    relation: "Provides physical mechanism for φ emergence in coupling constants"
-  - experiment: "prime_growth_dynamics"
-    relation: "Shares γ + ln(φ) = Ξ decomposition framework"
-  - experiment: "pac_confluence_xi"
-    relation: "Another domain showing Fibonacci/golden ratio constraints"
+- experiment: standard_model_connection
+  relation: Provides physical mechanism for φ emergence in coupling constants
+- experiment: prime_growth_dynamics
+  relation: Shares γ + ln(φ) = Ξ decomposition framework
+- experiment: pac_confluence_xi
+  relation: Another domain showing Fibonacci/golden ratio constraints

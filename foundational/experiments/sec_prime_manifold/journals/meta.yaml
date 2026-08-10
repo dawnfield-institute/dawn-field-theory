@@ -1,15 +1,12 @@
-schema_version: "2.0"
-description: "Discovery and research journals"
-semantic_scope: "documentation"
-proficiency_level: "research"
-
+schema_version: '2.0'
+description: Discovery and research journals
+semantic_scope: documentation
+proficiency_level: research
 files:
-  - "[2025-12-10_validation_and_harmonic_discovery.md]": "Harmonic analysis session"
-  - "[2025-12-10_run_length_mechanism.md]": "Run length investigation"
-  - "[2025-12-10_phase_transition_criticality.md]": "Criticality analysis"
-  - "[2025-12-10_phase_transition_discovery.md]": "Odd manifold phase transition"
-  - "[2025-12-09_discovery_log.md]": "Initial discovery session"
-
-chronological_order: "descending"
-
-# See ../JOURNAL_SCHEMA.md for full schema specification
+- 2025-12-09_discovery_log.md
+- 2025-12-10_phase_transition_criticality.md
+- 2025-12-10_phase_transition_discovery.md
+- 2025-12-10_run_length_mechanism.md
+- 2025-12-10_validation_and_harmonic_discovery.md
+chronological_order: descending
+child_directories: []

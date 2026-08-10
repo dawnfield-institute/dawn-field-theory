@@ -81,19 +81,19 @@ Empirical data from the Symbolic Fractal Pruning experiment directly validate th
 
 **Entropy Over Time:**
 
-![Entropy Over Time](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/entropy_over_time.png)
+![Entropy Over Time](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/entropy_over_time.png)
 
 The plot shows symbolic entropy plateauing at first, then dropping sharply after recursive balance and symbolic drift are introduced. This directly visualizes entropy collapse in response to pruning (see experiment results).
 
 **Active Symbol Ratio:**
 
-![Active Symbol Ratio](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/active_ratio_over_time.png)
+![Active Symbol Ratio](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/active_ratio_over_time.png)
 
 Demonstrates the decay of active (non-deleted) symbols through recursion, tracking the collapse front as pruning proceeds.
 
 **Symbol Lifetimes:**
 
-![Symbol Lifetimes](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/symbol_lifetimes.png)
+![Symbol Lifetimes](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/symbol_lifetimes.png)
 
 Highlights persistent vs. transient symbols, reflecting memory and recurrence structures within the symbolic field.
 
@@ -103,16 +103,16 @@ Highlights persistent vs. transient symbols, reflecting memory and recurrence st
 | ------ | -------------------------------------------------------------------------------------------------------------------- |
 | Step   | Snapshot                                                                                                             |
 | ------ | ----------                                                                                                           |
-| 1      | ![Step 01](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_01.png) |
-| 2      | ![Step 02](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_02.png) |
-| 3      | ![Step 03](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_03.png) |
-| 4      | ![Step 04](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_04.png) |
-| 5      | ![Step 05](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_05.png) |
-| 6      | ![Step 06](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_06.png) |
-| 7      | ![Step 07](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_07.png) |
-| 8      | ![Step 08](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_08.png) |
-| 9      | ![Step 09](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_09.png) |
-| 10     | ![Step 10](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_10.png) |
+| 1      | ![Step 01](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_01.png) |
+| 2      | ![Step 02](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_02.png) |
+| 3      | ![Step 03](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_03.png) |
+| 4      | ![Step 04](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_04.png) |
+| 5      | ![Step 05](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_05.png) |
+| 6      | ![Step 06](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_06.png) |
+| 7      | ![Step 07](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_07.png) |
+| 8      | ![Step 08](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_08.png) |
+| 9      | ![Step 09](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_09.png) |
+| 10     | ![Step 10](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/step_10.png) |
 
 Collapse fronts and emergent symmetry axes are visually apparent as the field evolves from fractured, high-entropy states to streamlined, pruned attractors.
 

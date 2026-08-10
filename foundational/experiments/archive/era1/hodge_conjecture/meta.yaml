@@ -1,0 +1,26 @@
+schema_version: '2.1'
+era: era1-symbolic-collapse-2025h1
+status: archived
+title: Hodge Conjecture
+directory_name: hodge_conjecture
+description: 'Experiments, code, and results for prime-modulated symbolic collapse
+  and its connection to the Hodge Conjecture. Includes simulation scripts, statistical
+  analysis, and theoretical mapping.
+
+  '
+semantic_scope:
+- hodge_conjecture
+- symbolic_collapse
+- arithmetic_geometry
+- experiment
+- simulation
+- robustness
+- results
+files:
+- README.md
+- unification_plan.md
+child_directories:
+- journals
+- reference_material
+- results
+- scripts

@@ -1,30 +1,31 @@
-schema_version: "2.0"
-description: "Computational exploration of the three-phase emergence pipeline: Phase I (possibility proliferation under MED bounds), Phase II (symbolic entropy collapse), Phase III (recursive smoothing). Tests whether the phase framework resolves open questions across experiments."
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: prime_growth_dynamics_v2
+title: 'Prime Growth Dynamics v2: Multi-Stage Emergence Exploration'
+description: 'Computational exploration of the three-phase emergence pipeline: Phase
+  I (possibility proliferation under MED bounds), Phase II (symbolic entropy collapse),
+  Phase III (recursive smoothing). Tests whether the phase framework resolves open
+  questions across experiments.'
+semantic_scope: implementation
+proficiency_level: research
 estimated_context_weight: 0.7
-validation_type: "automated"
-
+validation_type: automated
 files:
-  - "[README.md]": "Overview with hypotheses, design, success criteria"
-  - "[SYNTHESIS.md]": "Cross-connections to other experiments"
-
+- PRE_STRUCTURAL_EMERGENCE.md
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "core"
-    description: "Reusable library code for phase emergence analysis"
-  - name: "scripts"
-    description: "Numbered experiment scripts"
-  - name: "results"
-    description: "JSON experiment outputs with timestamps"
-  - name: "journals"
-    description: "Daily research logs"
-
+- core
+- journals
+- results
+- scripts
 tags:
-  - phase-emergence
-  - smoothing-dynamics
-  - gamma-lnphi
-  - xi-decomposition
-  - MED-bounds
-  - conserved-memory
-  - PAC
-  - SEC
+- phase-emergence
+- smoothing-dynamics
+- gamma-lnphi
+- xi-decomposition
+- MED-bounds
+- conserved-memory
+- PAC
+- SEC

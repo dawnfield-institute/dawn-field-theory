@@ -1125,20 +1125,20 @@ The GAIA results presented in this paper represent the culmination of **six mont
 Multiple experiments independently explored entropy minimization dynamics, all revealing similar patterns:
 
 **Symbolic Entropy Collapse (June 24, 2024)**
-- **Location:** `foundational/experiments/symbolic_entropy_collapse/`
+- **Location:** `foundational/experiments/archive/era1/symbolic_entropy_collapse/`
 - **Finding:** 3D curvature evolution across multiple random seeds showed consistent collapse patterns
 - **Reference:** `reference_material/20250624_185441/metadata.json`
 - **Connection to GAIA:** The SEC operator C(S) = S·exp(-β·S) was first validated here, showing entropy naturally minimizes while creating persistent structures
 - **Key Metric:** Entropy reduction 85-90% across all seeds (matches GAIA's 89%)
 
 **Symbolic Superfluid Collapse-π (June 22, 2024)**
-- **Location:** `foundational/experiments/symbolic_superfluid_collapse_pi/`
+- **Location:** `foundational/experiments/archive/era1/symbolic_superfluid_collapse_pi/`
 - **Finding:** Zero-entropy states achieved through π-modulated collapse dynamics
 - **Reference:** `reference_material/20250622_160535_batch/RESULTS.md`
 - **Connection to GAIA:** Demonstrates SEC can reach theoretical minimum entropy state, with "particles near center" showing structure crystallization similar to GAIA's amplification patterns
 
 **Black/White Hole Polarity (June 15, 2024)**
-- **Location:** `foundational/experiments/entropy_information_polarity_field/black_white_hole_polarity/`
+- **Location:** `foundational/experiments/archive/era1/entropy_information_polarity_field/black_white_hole_polarity/`
 - **Finding:** Entropy sinks (black holes) and information fountains (white holes) emerge from same dynamics
 - **Reference:** `reference_material/entropy_information_polarity2025-06-15 104709.txt`
 - **Connection to GAIA:** The polarity field between maximum SEC (black hole) and reversed MED (white hole) suggests the Xi balance operator maintains equilibrium between extreme states
@@ -1146,7 +1146,7 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 ### 6.3 Resonance and Frequency Phenomena
 
 **Pi Harmonics (June 17, 2024)**
-- **Location:** `foundational/experiments/pi_harmonics/`
+- **Location:** `foundational/experiments/archive/era1/pi_harmonics/`
 - **Finding:** Natural resonances appear at π-based frequencies in field evolution
 - **Reference:** `reference_material/pi_harmonic_results2025-06-17 135126.png`
 - **Connection to GAIA:** Our observed 0.020-0.030 Hz resonance may relate to π/100 ≈ 0.0314, suggesting geometric origin of frequency quantization
@@ -1155,7 +1155,7 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 **Pre-Field Recursion Theory (September 30, 2024)**
 - **Location:** `foundational/docs/[m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md`
 - **Finding:** Theoretical prediction of 0.030 Hz resonance and 5.11× post-lock speedup
-- **Reference:** `foundational/experiments/pre_field_recursion/results/pre_field_recursion_results_20250930_183326.json`
+- **Reference:** `foundational/experiments/archive/era2/pre_field_recursion/results/pre_field_recursion_results_20250930_183326.json`
 - **Connection to GAIA:** **Direct validation** - GAIA observed 0.020 Hz (within 33% of prediction) and 2.44× measured speedup (48% of theoretical maximum, likely due to late locking)
 
 **Resonance Acceleration Demonstration (October 4, 2024)**
@@ -1171,14 +1171,14 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 ### 6.4 Structure Formation and Amplification
 
 **Symbolic Fractal Pruning (June 22, 2024)**
-- **Location:** `foundational/experiments/symbolic_fractal_pruning/`
+- **Location:** `foundational/experiments/archive/era1/symbolic_fractal_pruning/`
 - **Finding:** Entropy minimization creates persistent fractal structures through selective pruning
 - **Reference:** `reference_material/pruning_20250622_163425/pruning_stats.json`
 - **Connection to GAIA:** MED amplification operates through similar mechanism - high-information patterns survive collapse, low-information patterns dissolve
 - **Key Observation:** "Active ratio" (surviving structures / total) increases over time, matching GAIA's amplification from 558→1072
 
 **Symbolic Memory Agentic Decay (June 30, 2024)**
-- **Location:** `foundational/experiments/symbolic_memory_agentic_decay_test/`
+- **Location:** `foundational/experiments/archive/era1/symbolic_memory_agentic_decay_test/`
 - **Finding:** Energy curves showing systematic decay with structure preservation
 - **Reference:** `reference_material/20250630_100030/energy_over_time.csv`
 - **Connection to GAIA:** Energy decay patterns match GAIA field evolution, with "agentic" behavior possibly related to resonance lock - when system "decides" to accelerate convergence
@@ -1186,21 +1186,21 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 ### 6.5 Quantum Domain Validation
 
 **Born Rule Correspondence (July 15, 2024)**
-- **Location:** `foundational/experiments/quantum_validation/born_rule/`
+- **Location:** `foundational/experiments/archive/era1/quantum_validation/born_rule/`
 - **Finding:** Symbolic entropy collapse reproduces Born rule probability distributions
 - **Reference:** `reference_material/20250715_113116/summary.json`
 - **Result:** r = 0.97 correlation between symbolic predictions and quantum probabilities
 - **Connection to GAIA:** Suggests SEC-MED dynamics may underlie quantum measurement, supporting information-first ontology
 
 **Quantum Interference Patterns (July 21, 2024)**
-- **Location:** `foundational/experiments/quantum_validation/symbolic_interference/`
+- **Location:** `foundational/experiments/archive/era1/quantum_validation/symbolic_interference/`
 - **Finding:** Double-slit interference emerges from symbolic field dynamics
 - **Reference:** `results/interference_test_20250721_121752/parameter_sweep_results.csv`
 - **Result:** MSE < 0.01 between symbolic and quantum interference patterns
 - **Connection to GAIA:** Phase relationships (which create interference) may be manifestations of resonance conditions in information substrate
 
 **Landauer Erasure Validation (July 16, 2024)**
-- **Location:** `foundational/experiments/quantum_validation/landauer_symbolic_erasure_energy_validation/`
+- **Location:** `foundational/experiments/archive/era1/quantum_validation/landauer_symbolic_erasure_energy_validation/`
 - **Finding:** Information erasure follows kT·ln(2) energy cost as predicted by Landauer's principle
 - **Reference:** `reference_material/landauer_20250716_123034/landauer_erasure_results.json`
 - **Connection to GAIA:** Confirms thermodynamic consistency of SEC operations, supporting PAC conservation framework
@@ -1208,13 +1208,13 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 ### 6.6 Biological Domain Applications
 
 **DNA Repair via Entropy Detection (Date Unknown)**
-- **Location:** `foundational/experiments/DNA_repair/`
+- **Location:** `foundational/experiments/archive/era1/DNA_repair/`
 - **Finding:** Genetic mutations detectable as local entropy spikes, repairable through SEC dynamics
 - **Reference:** `reference_material/Entropy-Based Mutation Detection and Repair in Protein Sequences.md`
 - **Connection to GAIA:** Life may use SEC-MED principles for error correction - mutations increase entropy, repair systems minimize it through information crystallization
 
 **Evolution as Entropy Collapse (July 18, 2024)**
-- **Location:** `foundational/experiments/biology_experiments/evolution-symbolic-collapse/`
+- **Location:** `foundational/experiments/archive/era1/biology_experiments/evolution-symbolic-collapse/`
 - **Finding:** Extinction events correlate with entropy spikes; evolution follows SEC patterns
 - **Reference:** `output/sweep_20250718_111841/sweep_provenance.json`
 - **Connection to GAIA:** Biological evolution may be macroscopic SEC - species diversity collapses during extinctions, new structures (species) emerge through MED amplification
@@ -1222,7 +1222,7 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 ### 6.7 Fluid Dynamics Equivalence
 
 **Navier-Stokes via Entropy Navigation (Multiple dates)**
-- **Location:** `foundational/experiments/navier-stokes/`
+- **Location:** `foundational/experiments/archive/era2/navier-stokes/`
 - **Finding:** Fluid dynamics equations emerge from entropy minimization pathfinding
 - **Reference:** `results/COMPREHENSIVE_SUMMARY.md`
 - **Mathematical Proof:** `foundational/arithmetic/macro_emergence_dynamics/proofs/01_sec_navier_stokes_equivalence.md`
@@ -1231,7 +1231,7 @@ Multiple experiments independently explored entropy minimization dynamics, all r
 ### 6.8 Cross-Domain Unified Framework
 
 **Unified Emergence v2 (August 29, 2024)**
-- **Location:** `foundational/experiments/unified_emergence_v2/`
+- **Location:** `foundational/experiments/archive/era1/unified_emergence_v2/`
 - **Finding:** Single framework successfully models gravity, topology, fluids, and cognition
 - **Reference:** `results/20250829_175920_sweep_session_20250829_175919/sweep_analysis.json`
 - **Adapters Validated:**
@@ -1307,7 +1307,7 @@ The pre-field recursion experiments began in June 2024, three months before GAIA
 4. **September 2024**: Full framework documented (`pre_field_recursion/`)
 5. **October 2024**: GAIA validates all pre-field predictions
 
-**Framework Comparison** ([`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)):
+**Framework Comparison** ([`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/archive/era2/pre_field_recursion)):
 
 ```python
 # From validation/compare_with_gaia.py
@@ -1536,7 +1536,7 @@ The convergence is particularly compelling because:
 This pattern of independent discovery is characteristic of fundamental physical laws, not software artifacts.
 
 **Repository References**:
-- Pre-field code: [`dawn-field-theory/foundational/experiments/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/pre_field_recursion)
+- Pre-field code: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/`](https://github.com/dawnfield-institute/dawn-field-theory/tree/main/foundational/experiments/archive/era2/pre_field_recursion)
 - Comparison notebook: `pre_field_recursion/validation/compare_with_gaia.ipynb`
 - Results archive: `pre_field_recursion/results/`
 - Independence tests: `pre_field_recursion/validation/independence_test.py`
@@ -2232,7 +2232,7 @@ The GAIA implementation represents the culmination of 15+ independent experiment
 
 **1. Pre-Field Recursion** (June 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/pre_field_recursion/
+Path: dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/
 Files: main.py, results/pre_field_recursion_results_20250930_183326.json
 Key Finding: Xi convergence to 1.0568 ± 0.0004 observed
 Paper Impact: Paper 1, Section 6.4
@@ -2240,7 +2240,7 @@ Paper Impact: Paper 1, Section 6.4
 
 **2. Symbolic Entropy Collapse** (June-July 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/symbolic_entropy_collapse/
+Path: dawn-field-theory/foundational/experiments/archive/era1/symbolic_entropy_collapse/
 Files: [x][F][v1.0][C1][I1]_symbolic_entropy_engine.py
 Key Finding: SEC operator critical behavior at S* = 0.184
 Paper Impact: Paper 2, Section 7.2
@@ -2248,7 +2248,7 @@ Paper Impact: Paper 2, Section 7.2
 
 **3. Navier-Stokes Equivalence** (July 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/navier-stokes/
+Path: dawn-field-theory/foundational/experiments/archive/era2/navier-stokes/
 Files: navier_symbolic_engine/src/core/entropy_navigator.py
 Key Finding: SEC ↔ N-S equivalence proven computationally (98.7% agreement)
 Paper Impact: Paper 2, Section 7.3
@@ -2256,7 +2256,7 @@ Paper Impact: Paper 2, Section 7.3
 
 **4. Quantum Validation - Born Rule** (July 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/quantum_validation/born_rule/
+Path: dawn-field-theory/foundational/experiments/archive/era1/quantum_validation/born_rule/
 Files: [m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py
 Key Finding: SEC produces Born rule probabilities (r = 0.97 correlation)
 Paper Impact: Paper 2, Section 7.5.1
@@ -2264,7 +2264,7 @@ Paper Impact: Paper 2, Section 7.5.1
 
 **5. Information Amplification** (August 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/information_amplification/
+Path: dawn-field-theory/foundational/experiments/archive/era2/information_amplification/
 Files: unified_amplification_framework.py, RESULTS.md
 Key Finding: Amplification bounds A_max = A_0·exp(ε_max·N)
 Paper Impact: Paper 2, Section 7.4
@@ -2272,7 +2272,7 @@ Paper Impact: Paper 2, Section 7.4
 
 **6. Pi Harmonics Resonance** (June 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/pi_harmonics/
+Path: dawn-field-theory/foundational/experiments/archive/era1/pi_harmonics/
 Files: pi_harmonics.py, results.md
 Key Finding: 0.03 Hz resonance in pi-modulated fields
 Paper Impact: Paper 2, Section 3.3
@@ -2280,7 +2280,7 @@ Paper Impact: Paper 2, Section 3.3
 
 **7. DNA Repair as SEC** (September 2024):
 ```
-Path: dawn-field-theory/foundational/experiments/DNA_repair/
+Path: dawn-field-theory/foundational/experiments/archive/era1/DNA_repair/
 Files: DNA_repairer.py, results.md
 Key Finding: 98.23% repair accuracy matching biological systems
 Paper Impact: Paper 2, Section 7.6.1
@@ -2288,7 +2288,7 @@ Paper Impact: Paper 2, Section 7.6.1
 
 **8. Hodge Conjecture Exploration** (Various):
 ```
-Path: dawn-field-theory/foundational/experiments/hodge_conjecture/
+Path: dawn-field-theory/foundational/experiments/archive/era1/hodge_conjecture/
 Files: prime_modulated_collapse*.py (11 iterations)
 Key Finding: Prime-modulated collapse exhibits Xi bounds
 Paper Impact: Paper 1, Section 6.11 (related validation)

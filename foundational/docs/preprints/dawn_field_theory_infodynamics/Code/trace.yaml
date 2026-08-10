@@ -8,7 +8,7 @@ trace_date: "2025-12-23"
 experiments:
   - file: "experiments/exp_01_brain_recursive_collapse.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/legacy/brain.py"
+    source_path: "foundational/experiments/archive/era1/legacy/brain.py"
     description: "Legacy CIM-era brain simulation showing recursive collapse memory formation"
     requires_cuda: true
     verified: false
@@ -16,7 +16,7 @@ experiments:
 
   - file: "experiments/exp_02_cosmo_entropic_crystallization.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/legacy/cosmo.py"
+    source_path: "foundational/experiments/archive/era1/legacy/cosmo.py"
     description: "Legacy CIM-era cosmological simulation showing entropy crystallization"
     requires_cuda: true
     verified: false
@@ -24,7 +24,7 @@ experiments:
 
   - file: "experiments/exp_03_vcpu_emergent_logic.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/legacy/vcpu.py"
+    source_path: "foundational/experiments/archive/era1/legacy/vcpu.py"
     description: "Virtual CPU demonstrating emergent logic without external programming"
     requires_cuda: true
     verified: true
@@ -35,7 +35,7 @@ experiments:
 
   - file: "experiments/exp_03_symbolic_entropy_collapse.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/symbolic_entropy_collapse/[x][F][v1.0][C1][I1]_symbolic_entropy_engine.py"
+    source_path: "foundational/experiments/archive/era1/symbolic_entropy_collapse/[x][F][v1.0][C1][I1]_symbolic_entropy_engine.py"
     description: "Symbolic entropy collapse engine for SEC dynamics"
     requires_data: true
     verified: false
@@ -43,7 +43,7 @@ experiments:
 
   - file: "experiments/exp_05_quantum_validator.py"
     source_repo: "dawn-field-theory"
-    source_path: "foundational/experiments/information_amplification/core/quantum_validator.py"
+    source_path: "foundational/experiments/archive/era2/information_amplification/core/quantum_validator.py"
     description: "Quantum-inspired validation metrics for Born rule compliance"
     verified: true
     note: "Module - import and use QuantumValidator class"

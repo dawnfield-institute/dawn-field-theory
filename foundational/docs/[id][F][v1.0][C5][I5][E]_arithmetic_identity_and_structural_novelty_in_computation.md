@@ -261,7 +261,7 @@ The dawn-field-theory repository contains extensive experimental validation of t
 
 #### Enhanced Information Amplification Proof Framework (2025-08-28)
 - **Unified Amplification Framework**: Comprehensive validation with rigorous controls and statistical analysis
-  - Located: `foundational/experiments/information_amplification/unified_amplification_framework.py`
+  - Located: `foundational/experiments/archive/era2/information_amplification/unified_amplification_framework.py`
   - **Key finding**: Local SEC field amplification varying with topology in controlled environment
   - **Methodology**: Enhanced with null/shuffled/identity controls, quantum validation, visualization, and theoretical interpretation
   - **Results**: Definitive evidence for field-mediated emergence with perfect control hierarchy validation
@@ -410,10 +410,10 @@ Where P is the probability of successful reconstruction. Higher values indicate 
 
 #### Related Experiments
 - `foundational/experiments/information_amplification_proof/`: **Compression-based weight analysis and information amplification measurement**
-- `foundational/experiments/quantum_validation/born_rule/`: Statistical emergence from symbolic computation
-- `foundational/experiments/symbolic_entropy_collapse/`: Information pattern crystallization
-- `foundational/experiments/recursive_gravity/`: Macro-scale structure emergence from micro-rules
-- `foundational/experiments/landauer_erasure_field_cost_map/`: Thermodynamic costs of information processing
+- `foundational/experiments/archive/era1/quantum_validation/born_rule/`: Statistical emergence from symbolic computation
+- `foundational/experiments/archive/era1/symbolic_entropy_collapse/`: Information pattern crystallization
+- `foundational/experiments/archive/era1/recursive_gravity/`: Macro-scale structure emergence from micro-rules
+- `foundational/experiments/archive/era1/landauer_erasure_field_cost_map/`: Thermodynamic costs of information processing
 
 #### Theoretical Documents
 - `foundational/docs/[id][F][v1.0][C5][I5][E]_symbolic_entropy_collapse_geometry_foundation.md`

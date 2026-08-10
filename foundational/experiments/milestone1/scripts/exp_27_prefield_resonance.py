@@ -10,7 +10,7 @@ Validates that Möbius topology with PAC conservation produces:
 This experiment IMPORTS and RUNS the actual pre_field_recursion code,
 not a simplified simulation.
 
-Source: foundational/experiments/pre_field_recursion/ v2.2
+Source: foundational/experiments/archive/era2/pre_field_recursion/ v2.2
 """
 
 import sys
@@ -20,7 +20,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Add paths to import actual pre_field_recursion code
-PRE_FIELD_PATH = Path(__file__).parent.parent.parent / "pre_field_recursion"
+PRE_FIELD_PATH = Path(__file__).parent.parent.parent / "archive" / "era2" / "pre_field_recursion"
 sys.path.insert(0, str(PRE_FIELD_PATH))
 sys.path.insert(0, str(PRE_FIELD_PATH / "core"))
 

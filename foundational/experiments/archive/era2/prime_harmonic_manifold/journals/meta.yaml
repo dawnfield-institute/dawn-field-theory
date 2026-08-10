@@ -1,0 +1,19 @@
+schema_version: '2.0'
+description: Daily research journals for Prime Harmonic Manifold experiments
+semantic_scope: research_documentation
+proficiency_level: research
+files:
+- 2025-12-11_phi_eigenvalue_discovery.md
+- 2025-12-12_asymptotic_cramer_breakthrough.md
+- 2025-12-12_critical_validation.md
+- 2025-12-12_cross_experiment_synthesis.md
+- 2025-12-12_from_phi_to_pi_squared.md
+- 2025-12-12_scale_validation_correction.md
+- 2025-12-12_whats_next.md
+- 2025-12-13_gpt2_inference_distinction.md
+- 2025-12-13_pac_necessity_proof.md
+- 2025-12-13_predictions_progress_roadmap.md
+- 2025-12-13_qbe_to_pac_unification.md
+- 2025-12-13_sec_ml_refined.md
+chronological_order: descending
+child_directories: []

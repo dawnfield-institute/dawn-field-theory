@@ -1,0 +1,22 @@
+schema_version: '2.1'
+era: era1-symbolic-collapse-2025h1
+status: archived
+title: Symbolic Bifractal
+directory_name: symbolic_bifractal
+description: 'Symbolic bifractal experiments and supporting files for foundational
+  research. Includes data, scripts, and analysis outputs.
+
+  '
+semantic_scope:
+- symbolic bifractal
+- experiments
+- foundational
+files:
+- InfoDyn_Validation_BifractalCollapse_v0.1.yaml
+- InfoDyn_Validation_LineageTrace.tsv
+- README.md
+child_directories:
+- journals
+- reference_material
+- results
+- scripts

@@ -1,0 +1,29 @@
+schema_version: '2.1'
+era: era2-prefield-infodynamics-2025h2
+status: archived
+title: Navier-Stokes Symbolic Engine
+directory_name: navier-stokes
+description: Experimental exploration of symbolic navigation approaches to Navier-Stokes
+  equations. Investigates whether pattern recognition methods might offer alternative
+  computational pathways for fluid dynamics simulation. Contains preliminary computational
+  studies, validation frameworks, and initial performance analysis suggesting potential
+  efficiency improvements that warrant further investigation.
+semantic_scope:
+- navier-stokes
+- symbolic-navigation
+- fluid-dynamics
+- experimental-computation
+- pattern-recognition
+- dawn-field-theory
+- computational-exploration
+- alternative-methods
+files:
+- README.md
+- pytest.ini
+- test_config.yaml
+child_directories:
+- journals
+- navier_symbolic_engine
+- results
+- scripts
+- tests

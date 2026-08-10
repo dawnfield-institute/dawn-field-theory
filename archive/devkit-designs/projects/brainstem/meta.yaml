@@ -1,0 +1,107 @@
+project_name: Brainstem
+project_type: cognitive_interface
+version: '1.0'
+status: design_phase
+complexity: C5
+importance: I5
+description: CIP-MCP Fractal Interface - Web-based cognitive interface connecting
+  human and AI intelligence through fractal visualization and semantic understanding
+authors:
+- Claude (Anthropic)
+- Peter Lorne Groom
+created_date: '2025-08-05'
+last_updated: '2025-08-13'
+tags:
+- brainstem
+- cognitive_interface
+- fractal_visualization
+- cip_protocol
+- mcp_server
+- ai_native_interfaces
+- knowledge_navigation
+- semantic_understanding
+core_capabilities:
+- Fractal tree-based visualization
+- CIP-MCP protocol bridge
+- Semantic knowledge organization
+- Cognitive navigation interface
+- Real-time adaptation
+- Context preservation
+dependencies:
+  internal:
+  - CIP Protocol
+  - MCP Server Infrastructure
+  - Recursive Tree Experiment
+  - Dawn Field Theory
+  external:
+  - Web technologies (HTML5, CSS3, JavaScript)
+  - WebGL for visualization
+  - Node.js/Python backend
+  - Graph visualization libraries
+integration_points:
+- name: CIP Protocol
+  purpose: Metadata parsing and interpretation
+- name: MCP Server
+  purpose: Standards-compliant protocol implementation
+- name: Recursive Tree Experiment
+  purpose: Direct architecture implementation
+- name: Knowledge Management
+  purpose: Repository structure analysis
+problem_solving:
+  cold_start_problem:
+    description: AI agents blindly exploring without context
+    solution: Semantic understanding and contextual navigation
+  exponential_complexity:
+    description: 20^4 = 160,000 nodes overwhelming visualization
+    solution: Recursive tree-based fractal visualization
+architecture_principles:
+- Fractal Navigation
+- Semantic Understanding
+- Progressive Disclosure
+- AI-Native Design
+- Real-Time Adaptation
+- Context Preservation
+roadmap:
+  phase_0:
+  - CIP-MCP bridge implementation
+  - Core fractal visualization engine
+  - Basic cognitive interface layer
+  phase_1:
+  - Repository integration protocols
+  - Advanced semantic understanding
+  - Multi-modal interaction support
+  phase_2:
+  - AI agent integration
+  - Collaborative exploration features
+  - Production deployment
+use_cases:
+- AI agent onboarding and repository understanding
+- Human-AI collaborative exploration
+- Repository management and optimization
+- Research and development pattern discovery
+success_metrics:
+  user_experience:
+  - Onboarding Time Reduction
+  - Context Retention
+  - Navigation Efficiency
+  - Cognitive Load Reduction
+  technical_performance:
+  - Visualization Scalability
+  - Real-Time Responsiveness
+  - Memory Efficiency
+  - Integration Robustness
+  ai_interaction:
+  - Exploration Efficiency
+  - Context Accuracy
+  - Adaptation Speed
+  - Collaboration Effectiveness
+related_documents:
+- ../../todo/infra/brainstem.md
+- ../../todo/infra/cip_domain_upgrade.md
+- ../../foundational/experiments/archive/era1/recursive_tree/
+license: Copyleft (custom Dawn license)
+files:
+- README.md
+- brainstem.md
+child_directories:
+- docs

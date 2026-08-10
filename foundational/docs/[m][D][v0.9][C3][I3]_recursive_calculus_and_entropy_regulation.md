@@ -83,11 +83,11 @@ Described in full detail in the `symbolic_fractal_pruning.py` source, the simula
 
 See [RESULTS.md (Pruning Summary)](../experiments/symbolic_fractal_pruning/results.md) for full outputs and visualizations, including:
 
-![Entropy Over Time](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/entropy_over_time.png)
+![Entropy Over Time](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/entropy_over_time.png)
 
-![Active Symbol Ratio](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/active_ratio_over_time.png)
+![Active Symbol Ratio](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/active_ratio_over_time.png)
 
-![Symbol Lifetimes](../experiments/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/symbol_lifetimes.png)
+![Symbol Lifetimes](../experiments/archive/era1/symbolic_fractal_pruning/reference_material/pruning_20250622_163425/symbol_lifetimes.png)
 
 ## 4. Results
 

@@ -56,7 +56,7 @@ This experiment builds on validated findings from:
 |------------|-------------|------------------|
 | [sec_prime_manifold](../sec_prime_manifold/) | φ emerges at edge of chaos | Test if CA Rule 110 shows same criticality |
 | [oscillation_attractor_dynamics](../oscillation_attractor_dynamics/) | CAH formalization | Cross-validate Ξ emergence conditions |
-| [information_amplification](../information_amplification/) | Attractor detection via potential gradients | Reuse attractor clustering algorithms |
+| [information_amplification](../archive/era2/information_amplification) | Attractor detection via potential gradients | Reuse attractor clustering algorithms |
 | [PACEngine](../../arithmetic/PACEngine/) | Cross-framework validation pipeline | Adapt for CA domain |
 
 ---

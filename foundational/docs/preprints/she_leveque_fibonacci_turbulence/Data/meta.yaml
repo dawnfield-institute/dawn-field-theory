@@ -1,7 +1,8 @@
-schema_version: "2.0"
-description: "Prediction and validation results data"
-semantic_scope: "data"
-proficiency_level: "research"
+schema_version: '2.0'
+description: Prediction and validation results data
+semantic_scope: data
+proficiency_level: research
 files:
-  - "[predictions.json]": "Pre-registered Fibonacci-derived predictions"
-  - "[validation_results.json]": "Comparison against experimental data"
+- predictions.json
+- validation_results.json
+child_directories: []

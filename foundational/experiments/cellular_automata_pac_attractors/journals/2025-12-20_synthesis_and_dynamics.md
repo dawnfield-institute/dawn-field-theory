@@ -201,5 +201,5 @@ GAIA's multi-level PAC hierarchy with weights 1/φ, 1/φ² mirrors:
 
 - [SYNTHESIS.md](../SYNTHESIS.md) — Full cross-experiment connections
 - [SEC Prime Manifold SYNTHESIS](../../sec_prime_manifold/SYNTHESIS.md)
-- [PAC Confluence Xi Synthesis](../../pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
+- [PAC Confluence Xi Synthesis](../../archive/era2/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
 - [PAC-SEC Unification Module](../../../arithmetic/PACEngine/modules/pac_sec_unification.py)

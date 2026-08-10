@@ -16,11 +16,11 @@ files:
     key_result: "Combined p-value = 0.0014 (Fisher's method)"
 
   - local: experiments/exp_02_gpt2_inference_dynamics.py
-    source: dawn-field-theory/foundational/experiments/prime_harmonic_manifold/scripts/exp_27_gpt2_entropy_dynamics.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/prime_harmonic_manifold/scripts/exp_27_gpt2_entropy_dynamics.py
     description: GPT-2 attention entropy analysis during inference
     key_result: "Layer entropy ratio ≈ 1.0 (post-collapse equilibrium)"
 
   - local: experiments/exp_03_gpt2_generation_dynamics.py
-    source: dawn-field-theory/foundational/experiments/prime_harmonic_manifold/scripts/exp_28_generation_sec_dynamics.py
+    source: dawn-field-theory/foundational/experiments/archive/era2/prime_harmonic_manifold/scripts/exp_28_generation_sec_dynamics.py
     description: GPT-2 token selection entropy during generation
     key_result: "Top-50 entropy at selection ≈ 0.25 (< 1/φ = 0.618)"

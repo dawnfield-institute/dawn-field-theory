@@ -1,18 +1,17 @@
-schema_version: "2.0"
-description: "Base-agnostic PAC invariant validation experiments"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: base_agnostic_pac
+title: Base-Agnostic PAC Invariant Validation
+description: Base-agnostic PAC invariant validation experiments
+semantic_scope: implementation
+proficiency_level: research
 estimated_context_weight: 0.7
-validation_type: "automated"
-
+validation_type: automated
 files:
-  - "[README.md]": "Experiment overview and findings"
-  - "[SYNTHESIS.md]": "Cross-connections to Feigenbaum and structure thresholds"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "scripts"
-    description: "Validation scripts for base-agnostic hypothesis"
-  - name: "results"
-    description: "JSON output from experiments"
-  - name: "journals"
-    description: "Research logs"
+- journals
+- results
+- scripts

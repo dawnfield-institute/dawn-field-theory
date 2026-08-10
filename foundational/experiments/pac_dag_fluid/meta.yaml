@@ -1,15 +1,16 @@
-schema_version: "2.0"
-description: "PAC-DAG fluid dynamics experiments - bidirectional SEC on hierarchical structures"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: pac_dag_fluid
+title: PAC-DAG Fluid Dynamics Experiments
+description: PAC-DAG fluid dynamics experiments - bidirectional SEC on hierarchical
+  structures
+semantic_scope: implementation
+proficiency_level: research
 files:
-  - "[exp_01_pac_tree_basic.py]": "Basic PAC tree with SEC field computation"
-  - "[exp_02_pac_tree_blowup.py]": "PAC tree with blow-up operator"
-  - "[exp_03_pac_dag_fluid.py]": "PAC-DAG fluid simulation with conservation"
-  - "[exp_04_spectral_analysis.py]": "Power-law spectrum and Reynolds analysis"
+- README.md
 child_directories:
-  - name: "results"
-    description: "JSON outputs from experiments"
-  - name: "journals"
-    description: "Research logs"
-validation_type: "automated"
+- journals
+- results
+- scripts
+validation_type: automated

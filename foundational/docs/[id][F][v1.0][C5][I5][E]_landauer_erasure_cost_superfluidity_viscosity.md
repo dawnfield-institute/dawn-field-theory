@@ -85,12 +85,12 @@ for step in range(max_steps):
 
 | Step | Field State                                                                                                        |
 | ---- | ------------------------------------------------------------------------------------------------------------------ |
-| 0    | ![](../experiments/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_0.png)  |
-| 1    | ![](../experiments/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_1.png)  |
-| 5    | ![](../experiments/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_5.png)  |
-| 10   | ![](../experiments/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_10.png) |
-| 15   | ![](../experiments/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_15.png) |
-| 20   | ![](../experiments/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_20.png) |
+| 0    | ![](../experiments/archive/era1/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_0.png)  |
+| 1    | ![](../experiments/archive/era1/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_1.png)  |
+| 5    | ![](../experiments/archive/era1/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_5.png)  |
+| 10   | ![](../experiments/archive/era1/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_10.png) |
+| 15   | ![](../experiments/archive/era1/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_15.png) |
+| 20   | ![](../experiments/archive/era1/landauer_erasure_field_cost_map/reference_material/20250630_093247/field_step_20.png) |
 
 #### Energy Curve Over Time
 

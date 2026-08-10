@@ -710,4 +710,4 @@ The correlation suggests consciousness emerges at critical PAC ≈ 1:
 *End of Document - Version 2.2.1 - October 1, 2025*  
 *Updated with Cosmological Parallel Discovery*  
 *Dawn Field Institute - Foundational Theory Series*  
-*Experimental Code: foundational/experiments/pre_field_recursion/*
+*Experimental Code: foundational/experiments/archive/era2/pre_field_recursion/*

@@ -1,0 +1,37 @@
+schema_version: '2.1'
+era: era2-prefield-infodynamics-2025h2
+status: archived
+directory_name: prime_harmonic_manifold
+title: Prime Harmonic Manifold Experiments
+description: Prime Harmonic Manifold - Golden ratio eigenvalue emergence in prime
+  chord dynamics via PAC hierarchy
+semantic_scope: experimental_validation
+proficiency_level: research
+estimated_context_weight: 0.8
+validation_type: computational
+files:
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- figures
+- journals
+- papers
+- results
+- scripts
+dependencies:
+  internal:
+  - ../pac_confluence_xi/: PAC framework and ξ balance
+  - ../sec_prime_manifold/: SEC stress field and φ-threshold
+  - ../standard_model_connection/: Physics bridge
+  external:
+  - numpy>=1.20
+  - scipy>=1.7
+  - sympy>=1.10
+  - matplotlib>=3.5
+key_results:
+  lambda1_phi: λ₁ ≈ 1/φ = 0.618 at coarse-grained scale
+  scale_invariance: Mean λ₁ = 0.6183 across 6 orders of magnitude
+  vocabulary_scaling: Coarse-graining reveals φ, fine-graining reveals determinism
+  mobius_spectrum: φ-harmonic peaks in Möbius function FFT
+  predictive_power: +18.8% improvement over baseline

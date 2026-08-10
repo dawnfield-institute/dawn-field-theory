@@ -8,7 +8,7 @@ Documents the testable Z' prediction from PAC/SEC:
 3. Width: ~64 MeV (narrow)
 4. Cross section: 1/169 of standard Z'
 
-Source: foundational/experiments/pac_confluence_xi/
+Source: foundational/experiments/archive/era2/pac_confluence_xi/
 """
 
 import sys

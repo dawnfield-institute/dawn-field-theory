@@ -31,7 +31,7 @@ This Fibonacci recursion, governing how potential actualizes into observable str
 
 **Status**: ✅ Standard Model derived from Fibonacci arithmetic
 
-The [`../experiments/pac_confluence_xi/`](../experiments/pac_confluence_xi/) experiment demonstrates that the Standard Model of particle physics emerges from PAC conservation.
+The [`../experiments/pac_confluence_xi/`](../experiments/archive/era2/pac_confluence_xi) experiment demonstrates that the Standard Model of particle physics emerges from PAC conservation.
 
 #### Key Results
 
@@ -51,7 +51,7 @@ The apparent Bell tension (S_PAC = 2.683 vs S_exp ≈ 2.79) resolved into a prof
 - The "missing 1/5" appears in neutrino mixing angles as Fibonacci ratios
 - **4/5 + 1/5 = 1**: Charged leptons + neutrinos = complete entanglement
 
-See: [`../experiments/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md`](../experiments/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
+See: [`../experiments/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md`](../experiments/archive/era2/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md)
 
 ---
 

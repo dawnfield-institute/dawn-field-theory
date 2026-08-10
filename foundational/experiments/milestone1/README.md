@@ -355,15 +355,15 @@ python run_all_experiments.py
 
 - [asymmetric_conservation](../asymmetric_conservation/) — **Constant hierarchy (φ vs Ξ), async PAC execution**
 - [phi_artifact_test](../phi_artifact_test/) — Original falsification methodology
-- [pac_confluence_xi](../pac_confluence_xi/) — Ξ discovery and Standard Model derivation
+- [pac_confluence_xi](../archive/era2/pac_confluence_xi) — Ξ discovery and Standard Model derivation
 - [standard_model_connection](../standard_model_connection/) — SM parameter exploration
 - [maxwell_from_pac_sec](../maxwell_from_pac_sec/) — Original Maxwell derivation
-- [pre_field_recursion](../pre_field_recursion/) — Möbius dynamics (exp_27)
+- [pre_field_recursion](../archive/era2/pre_field_recursion) — Möbius dynamics (exp_27)
 - [macro_emergence_dynamics](../../arithmetic/macro_emergence_dynamics/) — N-S MED (exp_28)
 - [euclidean_distance_validation](../../arithmetic/euclidean_distance_validation/) — E=mc² (exp_29)
 - [cellular_automata_pac_attractors](../cellular_automata_pac_attractors/) — CA attractors (exp_30)
-- [quantum_validation](../quantum_validation/) — Quantum tests (exp_31)
-- [information_amplification](../information_amplification/) — SEC amplification (exp_32)
+- [quantum_validation](../archive/era1/quantum_validation) — Quantum tests (exp_31)
+- [information_amplification](../archive/era2/information_amplification) — SEC amplification (exp_32)
 
 ---
 

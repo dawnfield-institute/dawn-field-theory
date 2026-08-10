@@ -26,7 +26,7 @@ This paper demonstrates that the structure of classical electromagnetism — cur
 - `foundational/experiments/maxwell_from_pac_sec/` — 5 scripts (wave speed, charge, curl, α, D=3)
 - `foundational/experiments/gravity_from_maxwell_pac/` — 12 scripts (projection duality, hierarchy, N-body)
 - `foundational/experiments/sec_threshold_detection/` — Ξ derivation, Feigenbaum constants
-- `foundational/experiments/navier-stokes/` — MED discovery, SEC-NS equivalence
+- `foundational/experiments/archive/era2/navier-stokes/` — MED discovery, SEC-NS equivalence
 - `foundational/experiments/milestone2/` — She-Lévêque, Casimir, Mersenne
 
 ## Dependencies

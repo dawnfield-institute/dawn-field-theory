@@ -11,7 +11,7 @@
 This document outlines the roadmap for integrating three independently validated frameworks that have converged on the same fundamental discoveries:
 
 1. **Euclidean Distance Validation** (this framework) - Geometric validation
-2. **Information Amplification** (`foundational/experiments/information_amplification/`) - Quantum validation
+2. **Information Amplification** (`foundational/experiments/archive/era2/information_amplification/`) - Quantum validation
 3. **PAC Series** (`foundational/docs/preprints/drafts/PACSeries/`) - Theoretical predictions
 
 All three frameworks independently discovered:

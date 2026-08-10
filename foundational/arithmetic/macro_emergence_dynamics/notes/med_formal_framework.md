@@ -170,8 +170,8 @@ MED provides unified mathematical framework for:
 
 - Infodynamics Arithmetic v1.0 (foundational/arithmetic/)
 - Symbolic Entropy Collapse experimental validation (foundational/experiments/)
-- Navier-Stokes symbolic engine results (foundational/experiments/navier-stokes/)
-- Quantum correspondence validation (foundational/experiments/quantum_validation/)
+- Navier-Stokes symbolic engine results (foundational/experiments/archive/era2/navier-stokes/)
+- Quantum correspondence validation (foundational/experiments/archive/era1/quantum_validation/)
 - Hodge mapping theory (foundational/arithmetic/hodge_mapping/)
 
 ---

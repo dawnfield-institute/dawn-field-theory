@@ -55,7 +55,7 @@ Recent experiments using the Unified MAS-MED Validation Framework ([`dawn-models
 - Bootstrap analysis confirms **σ < 0.001 Hz** (extreme stability)
 - Both cosmological and ocean systems independently reach **D≈2**
 
-Full validation report: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md)
+Full validation report: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/notes/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/pre_field_recursion/notes/unified_mas_med_validation_final_report.md)
 
 ### 1.3 QBE Historical Validation (December 2025 Discovery)
 
@@ -150,7 +150,7 @@ $$f_{rest} = f_{obs} \times (1 + z) \times \frac{\gamma}{\sqrt{1 - \frac{2GM}{rc
 
 ### 3.1 Implementation
 
-Test framework: [`dawn-field-theory/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py)
+Test framework: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/pre_field_recursion/test_relativistic_mas_frequencies.py)
 
 ```python
 @dataclass
@@ -931,15 +931,15 @@ This work builds on the Unified MAS-MED Validation Framework developed at Dawn F
 
 [1] Unified MAS-MED Validation: [`dawn-models/research/GAIA/usecases/unified_mas_med_validation.py`](https://github.com/dawnfield-institute/dawn-models/blob/main/research/GAIA/usecases/unified_mas_med_validation.py)
 
-[2] Relativistic MAS Test: [`dawn-field-theory/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/test_relativistic_mas_frequencies.py)
+[2] Relativistic MAS Test: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/test_relativistic_mas_frequencies.py`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/pre_field_recursion/test_relativistic_mas_frequencies.py)
 
 ### Documentation
 
-[3] Final Validation Report: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/unified_mas_med_validation_final_report.md)
+[3] Final Validation Report: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/notes/unified_mas_med_validation_final_report.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/pre_field_recursion/notes/unified_mas_med_validation_final_report.md)
 
-[4] MAS-Herniation Theory: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/mas_herniation_cosmology_unified.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/mas_herniation_cosmology_unified.md)
+[4] MAS-Herniation Theory: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/notes/mas_herniation_cosmology_unified.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/pre_field_recursion/notes/mas_herniation_cosmology_unified.md)
 
-[5] Validation Status: [`dawn-field-theory/foundational/experiments/pre_field_recursion/notes/gaia_validation_status.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/pre_field_recursion/notes/gaia_validation_status.md)
+[5] Validation Status: [`dawn-field-theory/foundational/experiments/archive/era2/pre_field_recursion/notes/gaia_validation_status.md`](https://github.com/dawnfield-institute/dawn-field-theory/blob/main/foundational/experiments/archive/era2/pre_field_recursion/notes/gaia_validation_status.md)
 
 ### PACSeries Related Papers
 

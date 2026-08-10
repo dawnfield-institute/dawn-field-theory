@@ -1,0 +1,34 @@
+schema_version: '2.0'
+description: Experiment scripts for Prime Harmonic Manifold
+semantic_scope: experimental_scripts
+proficiency_level: research
+files:
+- exp_01_chord_analysis.py
+- exp_02_eigenvalue_scaling.py
+- exp_03_vocabulary_scaling.py
+- exp_04_mobius_spectrum.py
+- exp_05_motif_enrichment.py
+- exp_06_predictive_power.py
+- exp_07_fibonacci_connection.py
+- exp_08_pac_depth.py
+- exp_09_local_entropy.py
+- exp_10_asymptotic_test.py
+- exp_11_zeta_connection.py
+- exp_12_cramer_comparison.py
+- exp_13_decay_rate.py
+- exp_14_visualization.py
+- exp_15_special_subsequences.py
+- exp_16_robustness.py
+- exp_17_bootstrap.py
+- exp_18_random_models.py
+- exp_19_theoretical.py
+- exp_20_ultra_large.py
+- exp_25_very_large_scale.py
+- exp_26_pac_violation.py
+- exp_27_gpt2_entropy_dynamics.py
+- exp_28_generation_sec_dynamics.py
+- exp_29_legacy_frequency_emergence.py
+- exp_30_pac_enhanced_legacy.py
+- exp_31_klein_gordon_dynamics.py
+- exp_32_qbe_pac_unification.py
+child_directories: []

@@ -448,7 +448,7 @@ This research was conducted within the Dawn Field Theory framework. We thank the
 
 ### Internal Documentation
 
-1. PAC Confluence Xi experimental series (`foundational/experiments/pac_confluence_xi/`)
+1. PAC Confluence Xi experimental series (`foundational/experiments/archive/era2/pac_confluence_xi/`)
 2. PAC Turbulence Theory (`foundational/arithmetic/PACEngine/docs/PAC_TURBULENCE_THEORY.md`)
 3. Bell Resolution documentation (papers/11_BELL_RESOLUTION_PAC_SEC_UNIFICATION.md)
 
@@ -495,9 +495,9 @@ This research was conducted within the Dawn Field Theory framework. We thank the
 
 All computational experiments are documented in:
 
-- `foundational/experiments/pac_confluence_xi/scripts/validated/` — Production code
+- `foundational/experiments/archive/era2/pac_confluence_xi/scripts/validated/` — Production code
 - `foundational/arithmetic/PACEngine/modules/` — PAC mesh and turbulence analysis
-- `foundational/experiments/pac_confluence_xi/data/` — Experimental results
+- `foundational/experiments/archive/era2/pac_confluence_xi/data/` — Experimental results
 
 ---
 

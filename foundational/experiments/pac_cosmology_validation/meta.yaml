@@ -1,62 +1,59 @@
-schema_version: "2.0"
-description: "PAC Cosmology Validation: Testing PAC/SEC/QBE framework against JWST high-z SMBH observations"
-semantic_scope: "validation"
-proficiency_level: "research"
-validation_type: "experimental"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+description: 'PAC Cosmology Validation: Testing PAC/SEC/QBE framework against JWST
+  high-z SMBH observations'
+semantic_scope: validation
+proficiency_level: research
+validation_type: experimental
 estimated_context_weight: 0.8
-
 experiment_type: cosmological_validation
-status: in_progress
-date_started: "2025-12-13"
-
+status: active
+directory_name: pac_cosmology_validation
+title: PAC Cosmology Validation
+date_started: '2025-12-13'
 theoretical_basis:
-  - PAC recursion: "Ψ(k) = Ψ(k+1) + Ψ(k+2) with solution Ψ(k) = φ^(-k)"
-  - QBE: "dI/dt + dE/dt = λ·QPL(t)"
-  - EDV context variance: "7.42× across collapse contexts"
-  - PAC/SEC fractions: "4/5 attraction, 1/5 repulsion"
-
+- PAC recursion: Ψ(k) = Ψ(k+1) + Ψ(k+2) with solution Ψ(k) = φ^(-k)
+- QBE: dI/dt + dE/dt = λ·QPL(t)
+- EDV context variance: 7.42× across collapse contexts
+- PAC/SEC fractions: 4/5 attraction, 1/5 repulsion
 key_constants:
-  phi: 1.618034  # Golden ratio - DERIVED from PAC recursion, not fitted
-  xi: 1.0571     # Balance operator = 1 + π/F₁₀
-  context_variance: 7.42  # From EDV Experiment 4
-  pac_fraction: 0.8  # 4/5 from Fibonacci structure
-  sec_fraction: 0.2  # 1/5 from Fibonacci structure
-
+  phi: 1.618034
+  xi: 1.0571
+  context_variance: 7.42
+  pac_fraction: 0.8
+  sec_fraction: 0.2
 observational_data:
-  source: "JWST surveys (JADES, CEERS, UHZ)"
+  source: JWST surveys (JADES, CEERS, UHZ)
   objects:
-    - name: UHZ-1
-      redshift: 10.073
-      log_m_bh: 7.5
-      log_m_star: 6.85
-    - name: GN-z11
-      redshift: 10.603
-      log_m_bh: 6.2
-      log_m_star: 9.0
-    - name: CEERS-1019
-      redshift: 8.68
-      log_m_bh: 6.95
-      log_m_star: 9.5
-    - name: GLASS-z12
-      redshift: 12.5
-      log_m_bh: 6.0
-      log_m_star: 8.0
-
+  - name: UHZ-1
+    redshift: 10.073
+    log_m_bh: 7.5
+    log_m_star: 6.85
+  - name: GN-z11
+    redshift: 10.603
+    log_m_bh: 6.2
+    log_m_star: 9.0
+  - name: CEERS-1019
+    redshift: 8.68
+    log_m_bh: 6.95
+    log_m_star: 9.5
+  - name: GLASS-z12
+    redshift: 12.5
+    log_m_bh: 6.0
+    log_m_star: 8.0
 files:
-  - "[README.md]": "Experiment overview and methodology"
-  - "[pac_cosmology.py]": "Core PAC cosmology module"
-  - "[constraint_validation.py]": "Tests that PAC constraints are load-bearing"
-  - "[jwst_comparison.py]": "Compare predictions to JWST observations"
-  - "[qbe_dynamics.py]": "QBE energy-information balance implementation"
-
+- PROPOSAL_JWST_UPGRADE.md
+- README.md
+- SYNTHESIS.md
+- UPGRADE_PLAN.md
 child_directories:
-  - core/
-  - scripts/
-  - results/
-  - journals/
-
+- core
+- data
+- journals
+- results
+- scripts
 success_criteria:
-  - "PAC recursion constraint: Violation when φ ≠ 1.618"
-  - "QBE balance: dI/dt + dE/dt consistent with QPL"
-  - "Cross-validation RMSE < 0.5 dex"
-  - "Falsifiable predictions for future z>15 discoveries"
+- 'PAC recursion constraint: Violation when φ ≠ 1.618'
+- 'QBE balance: dI/dt + dE/dt consistent with QPL'
+- Cross-validation RMSE < 0.5 dex
+- Falsifiable predictions for future z>15 discoveries

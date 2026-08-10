@@ -1,45 +1,41 @@
-schema_version: "2.0"
-description: "Investigation of prime ontology: smoothing model (primes as residual roughness), multi-stage emergence framework, and conserved memory theory"
-semantic_scope: "implementation"
-proficiency_level: "research"
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: prime_growth_dynamics
+title: 'Prime Growth Dynamics: Primes as Residual Roughness'
+description: 'Investigation of prime ontology: smoothing model (primes as residual
+  roughness), multi-stage emergence framework, and conserved memory theory'
+semantic_scope: implementation
+proficiency_level: research
 estimated_context_weight: 0.7
-validation_type: "automated"
-
+validation_type: automated
 files:
-  - "[README.md]": "Overview with hypothesis, design, success criteria"
-  - "[SYNTHESIS.md]": "Cross-connections to other experiments"
-  - "[PRE_STRUCTURAL_EMERGENCE.md]": "Working theory document on multi-stage emergence, smoothing, and conserved memory"
-
+- README.md
+- SYNTHESIS.md
 child_directories:
-  - name: "core"
-    description: "Reusable library code for prime growth analysis"
-  - name: "scripts"
-    description: "Numbered experiment scripts"
-  - name: "results"
-    description: "JSON experiment outputs with timestamps"
-  - name: "journals"
-    description: "Daily research logs"
-
+- core
+- journals
+- results
+- scripts
 tags:
-  - primes
-  - smoothing-model
-  - residual-roughness
-  - multi-stage-emergence
-  - conserved-memory
-  - factorization
-  - PAC
-  - SEC
-  - wave-interference
-  - Mertens
-  - gamma
-
+- primes
+- smoothing-model
+- residual-roughness
+- multi-stage-emergence
+- conserved-memory
+- factorization
+- PAC
+- SEC
+- wave-interference
+- Mertens
+- gamma
 origin:
-  source: "Discord conversation with Andy Farmer"
-  date: "2026-02-04"
-  context: "Discussion of milestone2 results led to exploring primes as fundamental base cases"
-
+  source: Discord conversation with Andy Farmer
+  date: '2026-02-04'
+  context: Discussion of milestone2 results led to exploring primes as fundamental
+    base cases
 dependencies:
-  - "../sec_prime_manifold"
-  - "../prime_harmonic_manifold"
-  - "../oscillation_attractor_dynamics"
-  - "../milestone2"
+- ../sec_prime_manifold
+- ../prime_harmonic_manifold
+- ../oscillation_attractor_dynamics
+- ../milestone2

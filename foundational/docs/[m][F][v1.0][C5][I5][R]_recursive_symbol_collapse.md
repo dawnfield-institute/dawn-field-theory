@@ -84,7 +84,7 @@ If the report isn’t finalized by noon, tell the team to move forward without i
 ```
 
 **Collapse Tree:**
-![Collapse Tree](../experiments/language_to_logic/reference_material/2025-06-21_095612/testid_1/collapse_tree.png)
+![Collapse Tree](../experiments/archive/era1/language_to_logic/reference_material/2025-06-21_095612/testid_1/collapse_tree.png)
 
 **Logic Trace:**
 
@@ -194,7 +194,7 @@ We visualized the entropy gradient as a heatmap over the input string, revealing
 * Role boundaries form around local entropy spikes.
 * Deep recursion zones form at nested low-entropy plateaus.
 
-![Field Resonance](../experiments/language_to_logic/reference_material/2025-06-21_102536/testid_1/entropy_heatmap.png)
+![Field Resonance](../experiments/archive/era1/language_to_logic/reference_material/2025-06-21_102536/testid_1/entropy_heatmap.png)
 
 This supports the claim that symbolic collapse follows resonance structures in entropy space.
 

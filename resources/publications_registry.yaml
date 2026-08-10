@@ -17,7 +17,7 @@ published_preprints:
       markdown: "foundational/docs/preprints/drafts/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.md"
       pdf: "foundational/docs/preprints/drafts/pdfs/[id][D][v1.0][C5][I5][E]_symbolic_entropy_collapse_preprint.pdf"
     repository_mapping:
-      - "foundational/experiments/symbolic_entropy_collapse/"
+      - "foundational/experiments/archive/era1/symbolic_entropy_collapse/"
       - "foundational/arithmetic/SEC/"
       - "devkit/compression/"
     tags: ["entropy", "collapse", "quantum", "topological", "dynamics"]
@@ -61,7 +61,7 @@ published_preprints:
     repository_mapping:
       - "models/TinyCIMM/"
       - "cognition_index_protocol/"
-      - "foundational/experiments/recursive_gravity/"
+      - "foundational/experiments/archive/era1/recursive_gravity/"
     tags: ["ai", "human-agent", "convergence", "co-computational", "ecology"]
     
   - id: "dawn_field_theory_unified"
