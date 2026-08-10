@@ -31,9 +31,13 @@ ERA_TITLES = {
 
 
 def tracked():
-    out = subprocess.run(["git", "-c", "core.quotePath=false", "ls-files"],
-                         cwd=REPO, capture_output=True, text=True, check=True).stdout
-    return [p for p in out.split("\n") if p]
+    # -z and an explicit UTF-8 decode: text=True uses the locale codec (cp1252 on
+    # Windows) and mangles non-ASCII paths, which made this tool's counts depend on the
+    # platform it ran on.
+    out = subprocess.run(["git", "-c", "core.quotePath=false", "ls-files", "-z"],
+                         cwd=REPO, capture_output=True, check=True
+                         ).stdout.decode("utf-8", "surrogateescape")
+    return [p for p in out.split("\0") if p]
 
 
 def warn_untracked():
@@ -44,10 +48,12 @@ def warn_untracked():
     correct locally, and fails CI on the next push with no obvious cause.
     """
     out = subprocess.run(
-        ["git", "-c", "core.quotePath=false", "ls-files", "--others", "--exclude-standard"],
-        cwd=REPO, capture_output=True, text=True, check=True).stdout
+        ["git", "-c", "core.quotePath=false", "ls-files", "-z", "--others",
+         "--exclude-standard"],
+        cwd=REPO, capture_output=True, check=True
+        ).stdout.decode("utf-8", "surrogateescape")
     layers = ("theory/", "formal/", "experiments/", "papers/", "archive/", "tools/")
-    stray = [p for p in out.split("\n") if p and p.startswith(layers)]
+    stray = [p for p in out.split("\0") if p and p.startswith(layers)]
     if stray:
         print(f"warning: {len(stray)} untracked file(s) in counted layers are NOT included "
               f"in these counts. Stage them and re-run, or CI will report this file stale:",

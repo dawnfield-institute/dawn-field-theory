@@ -38,7 +38,7 @@ jobs:
       # The ceiling stops it growing: the count may fall, never rise. If a change
       # deliberately raises it, raise this number in the same commit and say why.
       - name: Check link rot has not grown
-        run: python tools/check_links.py --max 200
+        run: python tools/check_links.py --max 201
 
       - name: Check generated metadata and map are current
         run: |

@@ -63,7 +63,7 @@ The layer reorganization is done. Remaining:
 
 - **Publication repackaging** — 11 packages marked `needs_repackage` against 7 current,
   2 incomplete, 1 ready. The largest single block of stale state in the repo.
-- **Link rot** — 200 unresolved relative links, mostly per-link archaeology inside archived
+- **Link rot** — 201 unresolved relative links, mostly per-link archaeology inside archived
   documents whose targets moved or were never committed. Recorded rather than hidden, and
   now measured by `tools/check_links.py` rather than hand-counted; CI pins the count as a
   ceiling so the number can fall but not rise. Low priority to reduce, high priority not to

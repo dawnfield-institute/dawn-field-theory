@@ -32,10 +32,13 @@ EXTERNAL = ("http://", "https://", "mailto:", "ftp://", "//")
 
 
 def _ls_files(*args: str) -> list[str]:
+    # Decode git's output as UTF-8 explicitly. text=True uses the locale codec, which on
+    # Windows is cp1252 and silently mangles non-ASCII paths — after which `git show`
+    # cannot find them again.
     out = subprocess.run(
         ["git", "-c", "core.quotePath=false", "ls-files", "-z", *args],
-        cwd=REPO, capture_output=True, text=True, check=True,
-    ).stdout
+        cwd=REPO, capture_output=True, check=True,
+    ).stdout.decode("utf-8", errors="surrogateescape")
     return [p for p in out.split("\0") if p]
 
 
@@ -60,6 +63,25 @@ def committed_paths() -> set[str]:
     return paths
 
 
+def read_source(rel: str) -> str | None:
+    """Content of a tracked file: working tree if present, otherwise the git index.
+
+    Some tracked paths cannot be materialized on every platform — this repository has
+    five whose names carry mojibake from a double-encoding, and Windows refuses them.
+    Skipping unreadable files would make the count depend on the checkout: they were
+    silently dropped here and counted in CI, so the two disagreed by exactly one link
+    with no visible cause.
+    """
+    full = REPO / rel
+    if full.exists():
+        return full.read_text(encoding="utf-8", errors="replace")
+    blob = subprocess.run(["git", "show", f":{rel}"], cwd=REPO,
+                          capture_output=True, check=False)
+    if blob.returncode != 0:
+        return None
+    return blob.stdout.decode("utf-8", errors="replace")
+
+
 def unresolved(include_changelog: bool) -> list[tuple[str, str, str]]:
     """Return (source_file, link_text, target) for each link that does not resolve."""
     committed = committed_paths()
@@ -67,10 +89,9 @@ def unresolved(include_changelog: bool) -> list[tuple[str, str, str]]:
     for rel in tracked_markdown():
         if not include_changelog and rel.startswith(".changelog/"):
             continue
-        full = REPO / rel
-        if not full.exists():
+        text = read_source(rel)
+        if text is None:
             continue
-        text = full.read_text(encoding="utf-8", errors="replace")
         parent = PurePosixPath(rel).parent
         for label, target in LINK_RE.findall(text):
             link = target.split("#")[0].strip().strip("<>")
