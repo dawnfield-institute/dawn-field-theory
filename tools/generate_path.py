@@ -1,6 +1,14 @@
+"""Generate map.yaml — a plain hierarchical listing of the repository.
+
+Enumerates from `git ls-files` rather than walking the filesystem. This is not a
+performance choice: a filesystem walk has no notion of .gitignore, so it swept the
+gitignored `internal/` tree (600MB, including private material) into a map.yaml that
+is committed to a PUBLIC repo. Tracked files are also the correct semantics for a
+navigation map of the repository.
+"""
 import os
-import yaml
 import re
+import subprocess
 from collections import defaultdict
 
 
@@ -50,22 +58,38 @@ def compress_numbered_files(files):
                     result.append(prefix)
     return result
 
-def build_tree(path):
-    tree = {}
-    entries = sorted(os.listdir(path))
-    files = [e for e in entries if os.path.isfile(os.path.join(path, e))]
-    dirs = [e for e in entries if os.path.isdir(os.path.join(path, e))]
-    # Compress numbered files
-    compressed_files = compress_numbered_files(files)
-    for entry in compressed_files:
-        tree[entry] = None
-    for entry in dirs:
-        if entry.startswith('.') and entry != '.gitignore':
-            continue  # skip hidden files/folders except .gitignore
-        full_path = os.path.join(path, entry)
-        subtree = build_tree(full_path)
-        tree[entry + '/'] = subtree
-    return tree
+def tracked_paths():
+    """Repo-relative paths of every tracked file, gitignored content excluded."""
+    out = subprocess.run(
+        ['git', 'ls-files', '-z'],
+        cwd=REPO_ROOT, capture_output=True, check=True,
+    ).stdout.decode('utf-8', 'replace')
+    return [p for p in out.split('\0') if p]
+
+
+def build_tree(paths):
+    """Nest a flat list of repo-relative paths into {name: subtree | None}."""
+    root = {}
+    dir_files = defaultdict(list)
+    for p in paths:
+        parts = p.split('/')
+        node = root
+        for d in parts[:-1]:
+            node = node.setdefault(d + '/', {})
+        dir_files[id(node)].append(parts[-1])
+
+    def attach(node):
+        files = sorted(dir_files.get(id(node), []))
+        subdirs = {k: v for k, v in node.items() if k.endswith('/')}
+        node.clear()
+        for f in compress_numbered_files(files):
+            node[f] = None
+        for k in sorted(subdirs):
+            node[k] = subdirs[k]
+            attach(subdirs[k])
+        return node
+
+    return attach(root)
 
 def format_tree(tree, indent=0):
     lines = []
@@ -76,9 +100,11 @@ def format_tree(tree, indent=0):
     return lines
 
 def main():
-    tree = {REPO_NAME + '/': build_tree(REPO_ROOT)}
+    tree = {REPO_NAME + '/': build_tree(tracked_paths())}
     lines = format_tree(tree)
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+    # newline pinned: without it this writes CRLF on Windows and LF on Linux, so the
+    # CI freshness check would fail depending on which platform last regenerated.
+    with open(OUTPUT_FILE, 'w', encoding='utf-8', newline='\n') as f:
         for line in lines:
             f.write(line + '\n')
     print(f"map.yaml generated at {OUTPUT_FILE}")

@@ -10,6 +10,7 @@ semantic_scope:
 - automation
 files:
 - converter.py
+- generate_experiment_index.py
 - generate_meta_yamls.py
 - generate_path.py
 - link_checker.py
@@ -17,4 +18,5 @@ files:
 - process_citations.py
 - update_meta_yamls.py
 - validate_citations.py
+- validate_experiment_structure.py
 child_directories: []
