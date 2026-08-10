@@ -81,7 +81,7 @@ def suggest_fix(url):
     fixes = []
     
     # Common missing /experiments/ pattern
-    if '/foundational/' in url and '/experiments/' not in url:
+    if '/theory/' in url and '/experiments/' not in url:
         # Check for specific patterns that need /experiments/
         experiment_patterns = [
             'entropy_information_polarity_field',
@@ -95,7 +95,7 @@ def suggest_fix(url):
         
         for pattern in experiment_patterns:
             if pattern in url:
-                fixed_url = url.replace('/foundational/', '/foundational/experiments/')
+                fixed_url = url.replace('/theory/', '/experiments/milestones/')
                 fixes.append(f"Add /experiments/: {fixed_url}")
                 break
     
@@ -141,7 +141,7 @@ def scan_file(file_path):
 
 def main():
     """Main function to scan all preprint files with multithreading"""
-    drafts_dir = Path("c:/Users/peter/repos/dawn-field-theory/foundational/docs/preprints/drafts")
+    drafts_dir = Path("c:/Users/peter/repos/dawn-field-theory/papers/drafts")
     
     if not drafts_dir.exists():
         print(f"Drafts directory not found: {drafts_dir}")

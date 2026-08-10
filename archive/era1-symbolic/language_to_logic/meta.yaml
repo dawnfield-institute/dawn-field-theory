@@ -1,0 +1,19 @@
+directory: language_to_logic
+parent: experiments
+contains:
+- reference_material/
+- (experiment scripts, e.g., language_to_logic.py)
+description: Experiments and reference outputs for entropy-based language-to-logic
+  symbolic collapse under the Dawn Field Theory framework.
+schema_version: '2.1'
+era: era1-symbolic-collapse-2025h1
+status: archived
+directory_name: language_to_logic
+title: Language to Logic
+files:
+- README.md
+child_directories:
+- journals
+- reference_material
+- results
+- scripts

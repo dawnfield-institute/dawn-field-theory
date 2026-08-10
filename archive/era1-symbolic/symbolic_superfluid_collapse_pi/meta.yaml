@@ -1,0 +1,29 @@
+schema_version: '2.1'
+era: era1-symbolic-collapse-2025h1
+status: archived
+title: Symbolic Superfluid Collapse Pi
+directory_name: symbolic_superfluid_collapse_pi
+description: 'Symbolic superfluid collapse pi experiment and supporting files for
+  Dawn Field Theory. Includes simulation code, data, and analysis outputs.
+
+  '
+directory_info: 'This directory contains the full implementation and results of the
+  symbolic superfluid collapse pi experiment. It includes simulation scripts, configuration
+  files, experiment outputs, and documentation for symbolic field collapse using recursive
+  calculus and entropy regulation. Reference materials and visualizations are organized
+  in subdirectories.
+
+  '
+semantic_scope:
+- symbolic collapse
+- superfluid
+- experiments
+- entropy
+- recursive calculus
+files:
+- README.md
+child_directories:
+- journals
+- reference_material
+- results
+- scripts

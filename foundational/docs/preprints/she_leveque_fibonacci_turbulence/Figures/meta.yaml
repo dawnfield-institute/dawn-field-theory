@@ -1,6 +1,0 @@
-schema_version: "2.0"
-description: "Publication-quality figures for She-Leveque Fibonacci paper"
-semantic_scope: "data"
-proficiency_level: "research"
-files:
-  - "[README.md]": "Figure generation instructions"

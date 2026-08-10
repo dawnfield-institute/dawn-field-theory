@@ -53,5 +53,5 @@ We've shown F₁₀ is optimal, but not WHY the EM hierarchy has 55 levels.
 Qualitative inverse relationship (lower ξ = stronger coupling) is clear. Quantitative match needs work.
 
 ## Related
-- [pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md](foundational/experiments/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md) - Original α derivation
+- [pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md](foundational/experiments/archive/era2/pac_confluence_xi/papers/10_PAC_CONFLUENCE_XI_SYNTHESIS.md) - Original α derivation
 - [prime_growth_dynamics/SYNTHESIS.md](foundational/experiments/prime_growth_dynamics/SYNTHESIS.md) - Smoothing paradigm connection

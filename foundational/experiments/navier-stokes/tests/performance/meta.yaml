@@ -1,9 +1,0 @@
-schema_version: '2.0'
-directory_name: performance
-description: Auto-generated metadata for performance directory.
-semantic_scope:
-- performance
-files:
-- __init__.py
-- test_benchmarks.py
-child_directories: []

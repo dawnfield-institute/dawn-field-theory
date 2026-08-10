@@ -1,0 +1,19 @@
+schema_version: '2.0'
+description: QBE-PAC Unification experiments
+semantic_scope: implementation
+proficiency_level: experimental
+experiments:
+- '[exp_01_qbe_pac_unification.py]': Tests QBE to PAC unification via 0.02 Hz timescale
+key_results:
+  exp_01:
+    finding: Both PAC and QBE dynamics produce 0.020 Hz via FFT analysis
+    pac_theoretical: 0.037 Hz (from Xi = 1.0571)
+    qbe_legacy: 0.02 used as empirical damping coefficient
+    interpretation: 0.02 Hz is an attractor frequency, not simple mass-frequency relation
+    cosmological_significance: 0.02 Hz is in gravitational wave detection band (LISA,
+      Chang'e 3)
+files:
+- exp_01_qbe_pac_unification.py
+child_directories:
+- exploratory
+- validated

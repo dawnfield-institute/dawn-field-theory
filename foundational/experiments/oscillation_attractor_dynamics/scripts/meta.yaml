@@ -1,7 +1,0 @@
-schema_version: "2.0"
-description: "Experiment scripts for oscillation attractor dynamics"
-semantic_scope: "implementation"
-files:
-  - "[exp_01_zero_crossing_detection.py]": "Detect zero-crossings and correlate with primes"
-  - "[exp_02_damping_characterization.py]": "Measure damping rate and compare to constants"
-  - "[exp_03_interval_analysis.py]": "Compare crossing intervals to prime gaps"

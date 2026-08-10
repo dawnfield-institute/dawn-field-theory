@@ -1,0 +1,21 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+description: 'ARCHIVED: Exploratory probes of vision document ideas (Feb 2026)'
+semantic_scope: research
+proficiency_level: research
+estimated_context_weight: 0.1
+validation_type: manual
+status: archived
+directory_name: pac_foundations_validation
+title: PAC Foundations Validation (Archived)
+outcome: 'Most hypotheses not validated. Only H1 (Möbius-Fibonacci) confirmed.
+
+  H1 moved to landauer_erasure_structure/scripts/exp_17_mobius_fibonacci_derivation.py
+
+  Papers unchanged. Scripts removed. This folder is documentation only.
+
+  '
+files:
+- README.md
+- SYNTHESIS.md
+child_directories: []

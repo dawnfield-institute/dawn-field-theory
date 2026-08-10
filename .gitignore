@@ -2,8 +2,8 @@
 *.pyc
 
 # Large dataset files
-foundational/experiments/pac_knowledge_discovery/data/ml-25m/
-foundational/experiments/pac_knowledge_discovery/data/ml-25m.zip
+experiments/studies/pac_knowledge_discovery/data/ml-25m/
+experiments/studies/pac_knowledge_discovery/data/ml-25m.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -149,6 +149,6 @@ SESSION_NOTES.md
 
 # Press build products (ADR-0029, bert): packages are rebuildable from source at the
 # commit recorded in preprints/RELEASES.yaml; canonical copies live on Zenodo.
-foundational/docs/preprints/packages/
-foundational/docs/preprints/.build/
-foundational/docs/preprints/PACSeries.zip
+papers/packages/
+papers/.build/
+papers/PACSeries.zip

@@ -24,8 +24,8 @@ def fix_file_links(file_path):
     
     # Fix 1: Add missing /experiments/ directory
     experiment_patterns = [
-        r'(https://github\.com/dawnfield-institute/dawn-field-theory/blob/main/foundational)/(entropy_information_polarity_field|biology_experiments|quantum_validation|symbolic_superfluid_collapse_pi)',
-        r'(https://github\.com/dawnfield-institute/dawn-field-theory/tree/main/foundational)/(entropy_information_polarity_field|biology_experiments|quantum_validation|symbolic_superfluid_collapse_pi)'
+        r'(https://github\.com/dawnfield-institute/dawn-field-theory/blob/main/theory)/(entropy_information_polarity_field|biology_experiments|quantum_validation|symbolic_superfluid_collapse_pi)',
+        r'(https://github\.com/dawnfield-institute/dawn-field-theory/tree/main/theory)/(entropy_information_polarity_field|biology_experiments|quantum_validation|symbolic_superfluid_collapse_pi)'
     ]
     
     for pattern in experiment_patterns:
@@ -90,7 +90,7 @@ def fix_file_links(file_path):
 
 def main():
     """Main function to fix all preprint files"""
-    drafts_dir = Path("c:/Users/peter/repos/dawn-field-theory/foundational/docs/preprints/drafts")
+    drafts_dir = Path("c:/Users/peter/repos/dawn-field-theory/papers/drafts")
     
     if not drafts_dir.exists():
         print(f"Drafts directory not found: {drafts_dir}")

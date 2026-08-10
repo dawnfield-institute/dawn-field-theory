@@ -1,9 +1,0 @@
-schema_version: "2.0"
-directory_name: journals
-description: |
-  Daily research logs following JOURNAL_SCHEMA.md format.
-  Documents discoveries, decisions, and progress.
-semantic_scope:
-  - documentation
-  - journal
-files: []

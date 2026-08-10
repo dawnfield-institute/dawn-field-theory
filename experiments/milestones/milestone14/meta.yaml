@@ -1,0 +1,39 @@
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+id: milestone14
+title: 'Milestone 14: Quantum Mechanics as Complement-Indeterminacy'
+description: 'Derives quantum mechanics from M13''s complement structure: states live
+  on the orbit Hilbert space L2(V/Aut(G)), which resolves M13''s PSD degeneracy because
+  the orbit-quotient Gram matrix is the identity for every ADE type. Born rule from
+  orbit measure, interference from SEC complexification, measurement as gauge fixing,
+  entanglement from product graphs. D_4 (SO(8) triality, S_3) is the only ADE type
+  with a non-abelian automorphism group and therefore the only one with genuine quantum
+  uncertainty. 11 experiments, 40/44 (91%), 12 registered predictions. Unifies with
+  the July 2025 Quantum Validation suite.
+
+  '
+domain: physics
+status: completed
+directory_name: milestone14
+confidence: 0.7
+created: '2026-05-19'
+tags:
+- quantum mechanics
+- complement indeterminacy
+- orbit hilbert space
+- born rule
+- interference
+- uncertainty
+- gauge structure
+- representation theory
+dependencies:
+- milestone13
+- milestone12
+- milestone11
+child_directories:
+- core
+- results
+- scripts
+files:
+- README.md
+- SYNTHESIS.md

@@ -1,0 +1,52 @@
+schema_version: '2.0'
+id: pacseries-paper-11
+title: Quantum Mechanics from Graph Structure
+subtitle: Deriving the Hilbert space, Born rule, Schrodinger equation, Bell violation,
+  and decoherence from ADE automorphisms without quantum postulates
+author: Peter Groom
+institution: Dawn Field Institute
+series: PACSeries
+paper_number: 11
+version: '1.0'
+status: draft
+date_created: 2026-05
+domain: physics
+tags:
+- quantum-mechanics
+- ADE-graphs
+- orbit-hilbert-space
+- born-rule
+- bell-inequality
+- schrodinger-equation
+- path-integral
+- zeno-effect
+- decoherence
+- einselection
+- automorphism-group
+- PAC-conservation
+dependencies:
+- pacseries-paper-7
+- pacseries-paper-10
+source_experiments:
+- foundational/experiments/milestone14
+key_results:
+  m14_score: 40/44
+  p13_p16_score: 22/22
+  total_score: 62/66
+  nc_d4: 1.2247
+  chsh_d4_x_d4_orbit_laplacian: 2.514
+  chsh_d4_x_d4_ideal_su2: 2.828
+  bell_tsirelson_error: 4.0e-16
+  bell_e7_e8: < 2 (no violation)
+  entanglement_entropy: 0.6931
+  decoherence_formula_match: 1.7e-15
+  double_slit: 1/4 (structural failure — algebraic not positional)
+files:
+- README.md
+- paper.md
+- paper.pdf
+- paper.tex
+child_directories:
+- Code
+- Data
+- Figures

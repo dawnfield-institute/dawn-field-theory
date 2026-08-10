@@ -1,0 +1,16 @@
+schema_version: '2.0'
+description: Core SEC implementation modules
+semantic_scope: implementation
+proficiency_level: technical
+files:
+- .gitkeep
+- __init__.py
+- baseline_generator.py
+- compression_engine.py
+- measurement.py
+- quantum_validator.py
+- sec_field_engine.py
+- text_generator.py
+validation_type: unit_tested
+test_coverage: tests/test_sec_core.py
+child_directories: []

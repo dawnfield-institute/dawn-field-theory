@@ -1,0 +1,23 @@
+schema_version: '2.1'
+era: era1-symbolic-collapse-2025h1
+status: archived
+title: Symbolic Emergence
+directory_name: symbolic_emergence
+description: Simulates the emergence of language-like structure and symbolic attractors
+  between two agents exchanging phrases in a recursive, entropy-regulated feedback
+  loop. Explores post-symbolic language formation without hardcoded syntax or language
+  model weights.
+semantic_scope:
+- symbolic_emergence
+- symbolic_agents
+- language_emergence
+- entropy_regulation
+- recursive_feedback
+- agent_interaction
+- symbolic_roles
+files:
+- README.md
+child_directories:
+- journals
+- results
+- scripts

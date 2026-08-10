@@ -1,0 +1,30 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+title: Gravity from Maxwell via PAC/SEC
+directory_name: gravity_from_maxwell_pac
+description: 'Derives gravity from the same PAC/SEC framework that produces Maxwell''s
+  equations.
+
+  Core hypothesis: Gravity operates at Fibonacci depth 183 (= F₇² + F₇ + 1),
+
+  while EM operates at depth 7. Both are recursive projections of the same pre-field.
+
+  '
+semantic_scope:
+- gravity
+- electromagnetism
+- PAC/SEC unification
+- Fibonacci hierarchy
+- general relativity
+proficiency_level: research
+estimated_context_weight: 0.9
+validation_type: automated
+files:
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- journals
+- results
+- scripts

@@ -1,9 +1,0 @@
-schema_version: "2.0"
-description: "Reusable core modules for PAC knowledge discovery"
-semantic_scope: "implementation"
-proficiency_level: "research"
-files:
-  - "[convergence_analyzer.py]": "N² kNN Jaccard convergence computation, SEC entropy field"
-  - "[pac_residual_tracker.py]": "PAC conservation residual computation and analysis"
-  - "[mesh_builder.py]": "Multi-architecture model ensemble training (MED bounded)"
-  - "[hypothesis_generator.py]": "Unknown children discovery from residual patterns"

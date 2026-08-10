@@ -1,0 +1,24 @@
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+status: active
+directory_name: algebra_geometry_interface
+title: 'Algebra-Geometry Interface: RQM ↔ Ruliad Validation'
+description: Testing whether φ and Ξ emerge at the algebra-geometry interface
+semantic_scope: research
+proficiency_level: research
+estimated_context_weight: 0.8
+validation_type: automated
+files:
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- journals
+- results
+- scripts
+tags:
+- algebra-geometry-duality
+- sophie-germain
+- phi-emergence
+- xi-emergence
+- meta-mathematics

@@ -3,31 +3,41 @@
 Thank you for your interest in contributing. This is a living, evolving repository—and your contributions matter.
 
 ## TL;DR - Quick Contributor Checklist
-- [ ] Read foundational docs (see Quick Start below)
+- [ ] Read README.md and THEORY_MAP.md (see Quick Start below)
 - [ ] Email info@dawnfield.ca to register as contributor  
 - [ ] Join Discord for announcements
 - [ ] **Review publishing boundaries and engagement philosophy (sections below)**
-- [ ] **Review citation guidelines** - see `citations/README.md` for attribution process
+- [ ] **Say how you want to be credited** in the PR description
 - [ ] Engage through Issues, Discussions, or PRs only
-- [ ] Follow project boundaries and [code of conduct](CODE_OF_CONDUCT.md) (if available)
+- [ ] Run `python tools/validate_experiment_structure.py` before opening a PR
+- [ ] Follow the project boundaries set out below
 
 ---
 
 ## Quick Start for New Contributors
 
-1. **Read the foundations:** 
-   - `README.md`, `timeline.md`, and `LICENSE_APPENDIX.md`
-   - `infodynamics.md` and `dawn-field-theory.md` (core theory overview)
-   - [`foundational/docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md`](foundational/docs/[id][F][v1.0][C5][I5][E]_arithmetic_identity_and_structural_novelty_in_computation.md) (computational novelty thesis)
-   - [`foundational/docs/[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md`](foundational/docs/[id][F][v0.1][C5][I5][R]_imperfection_engine_epistemic_collapse_dawn_field_repo.md) (repository philosophy)
+**Read in this order.** These are current documents; the archive is lineage, not orientation.
 
-2. **Understand the bridges:** Browse [`foundational/docs/bridges/`](foundational/docs/bridges/) to see how Dawn Field Theory connects to existing frameworks (deep learning, AI systems, gradient descent)
+1. **[`README.md`](README.md)** — what the framework claims, and what it does *not*.
+2. **[`THEORY_MAP.md`](THEORY_MAP.md)** — the spine. Every load-bearing claim, and where
+   each is proved, measured and published. Start here if you want to check something.
+3. **[`theory/dawn-field-theory.md`](theory/dawn-field-theory.md)** and
+   [`theory/infodynamics.md`](theory/infodynamics.md) — the theory itself.
+4. **[`theory/corrections.md`](theory/corrections.md)** — what was claimed too strongly and
+   withdrawn. Read this early; it tells you how the project handles being wrong.
+5. **[`ROADMAP.md`](ROADMAP.md)** — what is open, and what would falsify it.
+6. **[`STANDARDS.md`](STANDARDS.md)** — structure, scoring, and the pre-registration
+   protocol, before you add anything.
 
-3. **Register:** Email info@dawnfield.ca with your background and interests
+Unfamiliar term? [`theory/lexicon.yaml`](theory/lexicon.yaml) carries every term with the
+era it was coined in and what replaced it — the 2025 vocabulary (herniation, QPL, QBE) is
+kept there as etymology.
 
-4. **Join Discord:** Get access to announcements and contributor discussions
+**Where the lineage lives.** [`archive/`](archive/README.md) holds Era 1–2 work, preserved
+in its original shape. It is worth reading to understand how the framework got here — but
+its vocabulary predates PAC, so read the current documents first or it will mislead you.
 
-5. **Start contributing:** Open Issues for questions, Discussions for theory, PRs for improvements
+**Registering.** Email info@dawnfield.ca with your background and interests.
 
 ---
 
@@ -107,21 +117,19 @@ When citing the Dawn Field Theory repository as a whole, use the provided `CITAT
 ```
 
 ### Contributor Attribution
-For substantial contributions, we maintain an automated citation system:
-- **Process:** Copy `citations/pr-citation-template.yaml` to `citations/pending/` and fill in your details
-- **Automatic Processing:** When your PR is merged, citation data is automatically integrated into the project's citation index
-- **Template:** Use `citations/pr-citation-template.yaml` as your starting point
-- **Criteria:** New experiments, theory extensions, major implementations qualify for citation
-- **Generated Outputs:** Your contribution will appear in the contributors index, BibTeX file, and updated CITATION.cff
 
-**How it works:**
-1. Copy the template to `citations/pending/pr-{PR_NUMBER}-{description}.yaml`
-2. Fill in your contributor info and contribution details
-3. Include the file in your PR
-4. Upon merge, GitHub Actions automatically processes and integrates your citation
-5. Your processed citation file moves to `citations/processed/` for record-keeping
+Substantial contributions are credited. New experiments, theory extensions and major
+implementations qualify.
 
-This automated system ensures proper academic attribution while maintaining clear intellectual boundaries for the foundational work.
+- Say in your PR description how you want to be credited.
+- Credit is recorded in `papers/registry/` (contributors index and BibTeX).
+
+There was an automated pipeline for this — a YAML template dropped into `citations/pending/`
+and processed by GitHub Actions on merge. It was built and tested in August 2025 and never
+processed a single live citation in the eleven months that followed, so it was retired in
+August 2026. It is preserved in [`archive/citation-pipeline/`](./archive/citation-pipeline/)
+rather than deleted, because plumbing that was never used is still a record of what was
+intended.
 
 ---
 
@@ -146,13 +154,15 @@ To help maintain the recursive and epistemic integrity of this repository:
 Please read:
 
 * `README.md`
-* The root and nested `meta.yaml` files
+* The root `meta.yaml` and each experiment root's `meta.yaml`
 * The latest `timeline.md`
-* [`LICENSE_APPENDIX.md`](./LICENSE_APPENDIX.md)
+* [`legal/LICENSE_APPENDIX.md`](./legal/LICENSE_APPENDIX.md)
 
 ### 2. Respect Metadata Schema
 
-Every directory and experiment follows a metadata schema (see `meta.yaml` files). Changes should preserve or extend the semantic integrity of these files.
+Every experiment carries a `meta.yaml` at its root, specified in [`STANDARDS.md`](./STANDARDS.md) §5.
+Per-directory metadata was removed in August 2026 — it was a CIP-era artifact restating what
+`map.yaml` generates. Run `python tools/validate_experiment_structure.py` before opening a PR.
 
 ### 3. Submit Meaningful Contributions
 
@@ -161,7 +171,7 @@ Prioritize:
 * **Experimental validation modules** (e.g., "Added compression-based information amplification test for GPT-4")
 * **Symbolic or entropy-based operators** (e.g., "Implemented SEC collapse detection algorithm for neural networks")
 * **Visualization of field collapse, pruning, or emergence** (e.g., "Created interactive plot showing entropy dynamics in MED experiments")
-* **Recursive design proposals** (structural or functional, e.g., "Proposed self-modifying schema for meta.yaml evolution")
+* **Structural proposals** (e.g. a better way to express claim provenance across layers)
 * **Documentation improvements** (e.g., "Clarified mathematical notation in symbolic entropy collapse preprint")
 * **Replication studies** (e.g., "Reproduced information amplification results with different models/prompts")
 
@@ -172,7 +182,6 @@ Describe how your contribution fits within the recursive growth of the repositor
 ### 5. Citation for Substantial Contributions
 
 For substantial contributions (new experiments, theory extensions, major implementations):
-- **Copy the template**: `citations/pr-citation-template.yaml` to `citations/pending/`
 - **Rename**: Use pattern `pr-{PR_NUMBER}-{short-description}.yaml`
 - **Fill in details**: Your contributor info, contribution description, and affected files
 - **Include in PR**: Add the completed citation YAML to your pull request
@@ -185,7 +194,9 @@ For substantial contributions (new experiments, theory extensions, major impleme
 - ✅ Substantial documentation contributions
 - ❌ Minor bug fixes, typos, or formatting changes
 
-See `citations/README.md` for complete guidelines and examples.
+Contributor credit is recorded in the PR itself and in `papers/registry/`. The automated
+PR-citation pipeline was retired in August 2026 — it was built and tested in 2025 and
+never processed a live citation; it is preserved in `archive/citation-pipeline/`.
 
 ### 6. Community & Code of Conduct
 

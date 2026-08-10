@@ -1,0 +1,21 @@
+# Line endings are normalised here rather than left to each clone's core.autocrlf.
+#
+# Generated artifacts (map.yaml, EXPERIMENTS.md, every meta.yaml) are byte-compared by
+# CI: it regenerates them and fails if anything differs. Without this file the result
+# depends on which platform last ran the generators — Windows writes CRLF, Linux LF —
+# so the gate would flip red for a reason that has nothing to do with content.
+
+* text=auto eol=lf
+
+# Binary — never touch these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.ipynb binary
+*.npy binary
+*.npz binary
+*.docx binary
+*.xlsx binary

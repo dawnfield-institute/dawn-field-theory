@@ -1,0 +1,46 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+directory_name: standard_model_connection
+version: 0.1.0
+status: active
+title: Standard Model Connection Experiments
+date: 2025-12-06
+description: "PAC-Standard Model Physical Connection Experiments\n\nBuilding on PAC\
+  \ Confluence Xi's numerical correspondences, this experiment\nseries seeks to establish\
+  \ genuine physical connections between PAC/Fibonacci\narithmetic and Standard Model\
+  \ physics. The goal is to move from \"these numbers\nmatch\" to \"here's why nature\
+  \ uses these numbers.\"\n\nRESEARCH PRIORITIES:\n\n1. RENORMALIZATION GROUP CONNECTION\n\
+  \   - Map PAC Fibonacci indices to RG energy scales\n   - Test if coupling ratios\
+  \ follow φ^n scaling under RG flow\n   - Predict GUT unification scale from Fibonacci\
+  \ structure\n\n2. CASIMIR EFFECT / VACUUM MODE COUNTING\n   - Apply PAC k⁻² topological\
+  \ spectrum to cavity QED\n   - Derive Casimir force from Fibonacci mode counting\n\
+  \   - Test against precision Casimir measurements\n\n3. TURBULENCE INTERMITTENCY\n\
+  \   - Connect PAC Ξ asymmetry to She-Leveque exponents\n   - Predict intermittency\
+  \ corrections from golden ratio structure\n   - Validate against experimental turbulence\
+  \ data\n\n4. LATTICE QCD / CONFINEMENT\n   - Compare PAC tree structure to QCD flux\
+  \ tubes\n   - Test if confinement energy scaling matches PAC recursion\n\n5. HIGGS\
+  \ SELF-COUPLING PREDICTION\n   - Derive λ from Fibonacci structure\n   - Compare\
+  \ to LHC measurements (currently ~20% uncertainty)\n\n6. NEUTRINO SECTOR\n   - Test\
+  \ mass hierarchy against Fibonacci predictions\n   - Explain mixing angle Fibonacci\
+  \ structure\n\nFALSIFICATION CRITERIA:\n- If RG flow contradicts φ^n scaling → PAC-RG\
+  \ connection fails\n- If Casimir calculations disagree with experiment → mode counting\
+  \ fails\n- If intermittency exponents don't involve φ → turbulence connection fails\n"
+semantic_scope:
+- pac
+- standard model
+- renormalization group
+- casimir effect
+- turbulence
+- lattice qcd
+- higgs coupling
+- neutrino physics
+- physical validation
+files:
+- PHYSICS_ANOMALY_QUEUE.md
+- README.md
+- ROADMAP.md
+child_directories:
+- journals
+- papers
+- results
+- scripts

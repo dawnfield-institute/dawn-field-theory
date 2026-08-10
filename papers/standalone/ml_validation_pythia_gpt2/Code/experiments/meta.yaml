@@ -1,0 +1,29 @@
+schema_version: '2.0'
+description: Machine Learning validation experiments for SEC/PAC dynamics
+semantic_scope: implementation
+proficiency_level: experimental
+experiments:
+- '[exp_01_pythia_phi_convergence.py]': Pythia training dynamics phi-convergence analysis
+    (p=0.0014)
+- '[exp_02_gpt2_inference_dynamics.py]': GPT-2 inference attention entropy analysis
+- '[exp_03_gpt2_generation_dynamics.py]': GPT-2 generation token entropy analysis
+key_results:
+  exp_01:
+    finding: All Pythia models (70M-1B) show convergence toward phi during training
+    significance: Combined p-value = 0.0014 (Fisher's method)
+  exp_02:
+    finding: GPT-2 inference shows entropy ratio ~ 1.0 (equilibrium)
+    interpretation: Post-collapse system using established structure
+  exp_03:
+    finding: 96% of token selections occur below 1/phi entropy threshold
+    interpretation: Generation operates in post-collapse regime
+reproduction_notes:
+- exp_01 downloads ~30GB of Pythia checkpoints from HuggingFace
+- exp_02 and exp_03 only download GPT-2 (~500MB each)
+- Results saved to ../results/ folder with timestamps
+files:
+- .gitkeep
+- exp_01_pythia_phi_convergence.py
+- exp_02_gpt2_inference_dynamics.py
+- exp_03_gpt2_generation_dynamics.py
+child_directories: []

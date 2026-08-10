@@ -64,4 +64,4 @@ The separation of constants suggests Dawn Field Theory has layered structure:
 ## Related
 - [milestone1](../foundational/experiments/milestone1/) - Parent derivation chain
 - [oscillation_attractor_dynamics/exp_24](../foundational/experiments/oscillation_attractor_dynamics/) - Original Ξ derivation
-- [pac_confluence_xi](../foundational/experiments/pac_confluence_xi/) - Ξ in Standard Model
+- [pac_confluence_xi](../foundational/experiments/archive/era2/pac_confluence_xi/) - Ξ in Standard Model

@@ -1,0 +1,42 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+description: PAC-driven discovery of unknown children in informational hierarchies
+  using N² convergence analysis
+semantic_scope: implementation
+proficiency_level: research
+created: '2026-01-20'
+status: active
+directory_name: pac_knowledge_discovery
+title: 'PAC Knowledge Discovery: N² Convergence for Unknown Children Detection'
+hypothesis: 'N² convergence between feature spaces detects PAC conservation structure.
+
+  PAC residuals (f(parent) - Σf(children)) expose missing children.
+
+  SEC entropy field analysis reveals unexplored territory.
+
+  This enables AI-guided discovery of unknown unknowns.
+
+  '
+dependencies:
+- ../arithmetic/PACEngine/
+- ../arithmetic/macro_emergence_dynamics/
+- ../arithmetic/infodynamics_arithmetic_v1.md
+validation_domains:
+- synthetic hierarchies with known missing children
+- public datasets (MovieLens, health, finance)
+- cross-domain generalization tests
+key_constants:
+  convergence_threshold: 0.05
+  xi_balance: 1.0571
+  med_depth_bound: 2
+  med_node_bound: 3
+files:
+- PROPOSAL_APPLIED_DFT.md
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- data
+- journals
+- results
+- scripts

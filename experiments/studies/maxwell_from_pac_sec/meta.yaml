@@ -1,0 +1,36 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: maxwell_from_pac_sec
+title: Maxwell's Equations from PAC/SEC Information Dynamics
+description: Derivation of Maxwell's equations from PAC/SEC information dynamics
+semantic_scope: research
+proficiency_level: research
+estimated_context_weight: 0.9
+validation_type: manual
+experiment_metadata:
+  status: active
+  started: '2026-01-14'
+  hypothesis: Maxwell's E↔B unification is a recursion of the fundamental I↔ℰ (Information↔Energy)
+    unification
+key_results:
+- SEC wave equation yields c² = αγ + βδ
+- Charge = topological SEC collapse with winding number quantization
+- 3D emerges from MED nodes≤3 bound and Möbius embedding requirement
+- Curl structure from depth=2 dimensional projection
+- F₇=13 gauge crystallization explains electromagnetic coupling
+cross_references:
+- ../macro_emergence_dynamics/
+- ../pac_confluence_xi/
+- ../standard_model_connection/
+- ../sec_threshold_detection/
+- ../cellular_automata_pac_attractors/
+- ../../arithmetic/macro_emergence_dynamics/
+files:
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- journals
+- results
+- scripts
