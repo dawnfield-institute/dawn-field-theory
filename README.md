@@ -102,7 +102,7 @@ This framework is designed for testing. If any of the following are observed, th
 - Ξ convergence from independent sources is shown to be coincidental
 - Fibonacci-derived Standard Model parameters are numerologically equivalent to alternatives
 
-*These are computational results across 170+ experiments. Independent validation and physical experimentation are actively sought. See [UNIFIED_EVIDENCE.md](./foundational/docs/preprints/UNIFIED_EVIDENCE.md) for the complete derivation chain with full statistical details.*
+*These are computational results across 752 numbered experiments in 73 experiment directories. Independent validation and physical experimentation are actively sought. See [UNIFIED_EVIDENCE.md](./foundational/docs/preprints/UNIFIED_EVIDENCE.md) for the complete derivation chain with full statistical details.*
 
 ---
 
@@ -139,7 +139,7 @@ GAIA (Generalized Architectures for Intelligent Actualization) treats intelligen
 
 | Path                        | Purpose                                                                 |
 | --------------------------- | ----------------------------------------------------------------------- |
-| `foundational/experiments/` | 117+ experiments across 11 milestones — the main content                |
+| `foundational/experiments/` | 73 experiments across 15 milestones — the main content ([index](./foundational/experiments/EXPERIMENTS.md)) |
 | `foundational/docs/`        | Theory documents, preprint packages with code/data/figures              |
 | `foundational/arithmetic/`  | PACEngine — core mathematical tools and conservation math               |
 | `roadmaps/`                 | Current roadmap (M12 planning) and historical planning docs             |
@@ -157,7 +157,7 @@ GAIA (Generalized Architectures for Intelligent Actualization) treats intelligen
 2. **[Infodynamics →](./infodynamics.md)** - The foundational paradigm: information as generator of structure
 3. **[Theory Map →](./THEORY_MAP.md)** - Navigate the derivation chain, find experiments by concept
 4. **[PACSeries Papers →](https://zenodo.org/records/17295103)** - Published papers with complete validation code
-5. [Foundational Experiments →](./foundational/experiments/README.md) - 117+ experiment folders with scripts, results, journals
+5. [Experiment Index →](./foundational/experiments/EXPERIMENTS.md) - all 73 experiments by status, with scores
 6. [Environment & Reproducibility →](./ENVIRONMENT.md)
 
 ---

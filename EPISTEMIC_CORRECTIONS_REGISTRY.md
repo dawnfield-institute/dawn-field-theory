@@ -44,8 +44,8 @@ No mystery = Natural emergence from PAC redistribution
 
 ### Documents Updated
 - `foundational/arithmetic/unified_pac_framework_comprehensive.md`
-- `foundational/experiments/information_amplification/README.md`
-- `foundational/experiments/information_amplification/RESULTS.md`
+- `foundational/experiments/archive/era2/information_amplification/README.md`
+- `foundational/experiments/archive/era2/information_amplification/RESULTS.md`
 
 ### Key Insight
 **Information amplification is what emerges when PAC children balance properly - not something we force to converge to a predetermined value.**

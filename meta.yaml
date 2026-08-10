@@ -1,43 +1,50 @@
 schema_version: '2.0'
 directory_name: dawn-field-theory
-description: >
-  Dawn Field Theory foundational repository. Core theoretical framework (PAC/SEC/RBF/MED),
-  117+ experiments across 11 milestones, and published papers (PACSeries on Zenodo).
-  Derives physical constants from information-theoretic first principles.
+description: 'Dawn Field Theory foundational repository. Core theoretical framework
+  (PAC/SEC/RBF/MED), 73 experiment directories across 15 milestones, and published
+  papers (PACSeries on Zenodo). Derives physical constants from information-theoretic
+  first principles.
+
+  '
 repository_role: foundational_theory
 semantic_scope:
-  - physics
-  - open_science
-  - field_theory
-  - infodynamics
-  - theoretical_framework
-  - information_theory
+- physics
+- open_science
+- field_theory
+- infodynamics
+- theoretical_framework
+- information_theory
 files:
-  - README.md
-  - CLAUDE.md
-  - CITATION.cff
-  - CONTRIBUTION.md
-  - ENVIRONMENT.md
-  - EPISTEMIC_CORRECTIONS_REGISTRY.md
-  - LICENSE
-  - LICENSE_APPENDIX.md
-  - MISSION.md
-  - REGISTRY_TERMS.md
-  - REPOSITORY_RESTRUCTURE_PLAN.md
-  - dawn-field-theory.md
-  - for_ai_labs.md
-  - infodynamics.md
-  - origin_of_infodynamics.md
-  - timeline.md
-  - map.yaml
-  - meta.yaml
-  - schema.yaml
+- .gitattributes
+- .gitignore
+- CITATION.cff
+- CLAUDE.md
+- CONTRIBUTION.md
+- ENVIRONMENT.md
+- EPISTEMIC_CORRECTIONS_REGISTRY.md
+- LICENSE
+- LICENSE_APPENDIX.md
+- MISSION.md
+- README.md
+- REGISTRY_TERMS.md
+- REPOSITORY_RESTRUCTURE_PLAN.md
+- STANDARDS.md
+- THEORY_MAP.md
+- dawn-field-theory.md
+- for_ai_labs.md
+- infodynamics.md
+- map.yaml
+- origin_of_infodynamics.md
+- schema.yaml
+- timeline.md
 child_directories:
-  - blueprints
-  - citations
-  - foundational
-  - models
-  - resources
-  - roadmaps
-  - spikes
-  - tools
+- .changelog
+- .github
+- archive
+- blueprints
+- citations
+- foundational
+- resources
+- roadmaps
+- spikes
+- tools

@@ -35,19 +35,6 @@ Building on validated DFT theory foundations with practical implementations:
 - Launch of GAIA development
 - Integration of XAI and benchmarking frameworks
 - **NEW**: Practical implementation of scaffolded projects
-- External collaboration and open science initiativesheory – Core Project Roadmap
-
-This roadmap tracks the main repository’s architectural, theoretical, and publication goals. It is updated as the project evolves and links to sub-roadmaps for each major domain.
-
----
-
-## Milestones & Phases
-- Repository migration and semantic alignment
-- CIP protocol upgrades and compliance
-- Modularization of codebase and documentation
-- Publication of foundational preprints
-- Launch of GAIA development
-- Integration of XAI and benchmarking frameworks
 - External collaboration and open science initiatives
 
 ---

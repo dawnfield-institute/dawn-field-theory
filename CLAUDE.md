@@ -2,7 +2,7 @@
 
 ## What This Is
 
-The core physics repository for Dawn Field Institute. Contains the theoretical framework, 170+ experiments across 14 domains, and published papers for Dawn Field Theory (DFT) — a framework that derives physical constants and dynamics from two information-theoretic axioms: PAC (Potential-Actualization Conservation) and SEC (Symbolic Entropy Collapse).
+The core physics repository for Dawn Field Institute. Contains the theoretical framework, 73 experiment directories (752 numbered experiments) across 15 milestones, and published papers for Dawn Field Theory (DFT) — a framework that derives physical constants and dynamics from two information-theoretic axioms: PAC (Potential-Actualization Conservation) and SEC (Symbolic Entropy Collapse).
 
 This is the **primary source of truth** for the physics. The Kronos vault's 56 physics FDOs reference experiments and documents in this repo.
 
@@ -11,7 +11,7 @@ This is the **primary source of truth** for the physics. The Kronos vault's 56 p
 ```
 dawn-field-theory/
 ├── foundational/
-│   ├── experiments/          # 61+ experiment directories (THE MAIN CONTENT)
+│   ├── experiments/          # 73 experiment directories (THE MAIN CONTENT)
 │   │   ├── milestone1/       # Standard Model parameter derivations
 │   │   ├── milestone2/       # Mass derivations, Navier-Stokes, Koide
 │   │   ├── milestone3/       # Quantum validation, Landauer erasure
@@ -49,7 +49,9 @@ dawn-field-theory/
 | `for_ai_labs.md` | AI-targeted overview |
 | `EPISTEMIC_CORRECTIONS_REGISTRY.md` | Honest record of corrections |
 | `CITATION.cff` | Citation metadata (requires DOI verification to modify) |
-| `map.yaml` | Generated CIP navigation map (~104KB, DO NOT edit manually) |
+| `foundational/experiments/EXPERIMENTS.md` | **Generated experiment index** — the authoritative list |
+| `STANDARDS.md` | Canonical spec: structure, meta.yaml, journals, scoring, pre-registration |
+| `map.yaml` | Generated repo tree (do not edit manually) |
 
 ## Conventions
 
@@ -90,7 +92,7 @@ See `STANDARDS.md` at workspace root for full spec.
 
 ## Current State
 
-- **130+ experiments** in `foundational/experiments/`
+- **73 experiment directories** (48 live, 25 archived) holding 752 numbered experiments, in `foundational/experiments/` — see `EXPERIMENTS.md`
   - M11 score: 52/52 (100%) after hardening cycle (52→49→52)
   - M12 score: 49/52 (94%) — connection as primitive, ADE geometry, Lorentz derivation
   - M13 score: 48/52 core (92%) + 5/16 investigation = 53/68 (78%) after M13.5 stress testing + refinement. PSD degeneracy proven fundamental (exp_16: 0/4, no invariant metric can fix it). Random graph paradox partially explained (exp_17: 2/4, density + spectral radius). 7 honest failures total.

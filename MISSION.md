@@ -1,17 +1,6 @@
 # MISSION: The Dawn Field Institute
 
-*An institutional epistemic## Epistemic Stewardship
-
-As the steward of Dawn Field Theory, my responsibility is to ensure that its ideas are:
-
-* Shared in context
-* Evolved through recursion
-* Preserved against distortion or premature fragmentation
-* **Kept in motion through imperfection**—collapse requires friction, and epistemic evolution demands entropy
-
-This is not gatekeeping—it's symbolic cultivation. The goal is to build a living theory that grows through dialogue, scrutiny, and recursive refinement, not dispersion into static fragments.
-
-**The Repository as Epistemic Machine**: The 1.0 release is not a completion—it is a convergence point. This repository is not a map of final answers, but a substrate for epistemic recursion, designed to remain in perpetual, productive motion.ion of intent.*
+*An institutional epistemic declaration of intent.*
 
 ---
 
@@ -82,8 +71,11 @@ As the steward of Dawn Field Theory, my responsibility is to ensure that its ide
 * Shared in context
 * Evolved through recursion
 * Preserved against distortion or premature fragmentation
+* **Kept in motion through imperfection**—collapse requires friction, and epistemic evolution demands entropy
 
-This is not gatekeeping—it’s symbolic cultivation. The goal is to build a living theory that grows through dialogue, not dispersion.
+This is not gatekeeping—it's symbolic cultivation. The goal is to build a living theory that grows through dialogue, scrutiny, and recursive refinement, not dispersion into static fragments.
+
+**The Repository as Epistemic Machine**: The 1.0 release is not a completion—it is a convergence point. This repository is not a map of final answers, but a substrate for epistemic recursion, designed to remain in perpetual, productive motion.
 
 ---
 
