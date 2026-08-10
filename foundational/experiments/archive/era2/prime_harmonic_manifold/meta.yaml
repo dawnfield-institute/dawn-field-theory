@@ -16,7 +16,6 @@ child_directories:
 - core
 - figures
 - journals
-- papers
 - results
 - scripts
 dependencies:

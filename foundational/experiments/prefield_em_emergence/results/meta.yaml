@@ -1,9 +1,0 @@
-schema_version: '2.0'
-description: Output directory for experiment results
-semantic_scope: data
-proficiency_level: research
-files: []
-notes: "Results are saved as JSON files with naming convention:\n  exp_NN_YYYYMMDD_HHMMSS.json\n\
-  \nEach result file contains:\n  - timestamp: When experiment was run\n  - experiment:\
-  \ Experiment identifier\n  - config: Configuration used\n  - results: Key findings\n"
-child_directories: []

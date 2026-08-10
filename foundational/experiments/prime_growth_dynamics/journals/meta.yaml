@@ -1,8 +1,0 @@
-schema_version: '2.0'
-description: Daily research logs documenting progress and discoveries
-semantic_scope: documentation
-proficiency_level: research
-files:
-- 2026-02-05_andy_conversation_origin.md
-- 2026-02-05_even_odd_oscillation_discovery.md
-child_directories: []

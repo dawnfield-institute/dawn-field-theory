@@ -50,6 +50,7 @@ dawn-field-theory/
     20260705_161500_press-package-hygiene.md
     20260706_115131_pacseries-v0.3-packaging.md
     20260717_151300_ade_cascade_round1.md
+    20260810_004500_repo_reorg_standardization.md
     README.md
   .github/
     pull_request_template.md
@@ -61,38 +62,28 @@ dawn-field-theory/
     README.md
     devkit-designs/
       README.md
-      meta.yaml
       compression/
         FractalIntrinsicMetadataCompression.py
         Fractal_ISM_Field_Theory_Compression_Demo.ipynb
         fractal_ism_compression.md
-        meta.yaml
         legacy/
           CompressionTest2.py
           Compression_test1.py
           EntropicCompression_test.py
           compressiondoc.md
-          meta.yaml
       hash_evaluation/
         SELID.py
         SELID_validation.py
-        meta.yaml
-      infrastructure/
-        meta.yaml
       projects/
         IMPLEMENTATION_GUIDE.md
         PHASED_ROADMAP.md
         README.md
-        meta.yaml
         synergy_integration_plan.md
         aletheia/
           README.md
-          meta.yaml
           project_aletheia_design.md
           docs/
-            meta.yaml
             architecture/
-              meta.yaml
               overview.md
               modules/
                 architect_agent.md
@@ -104,23 +95,13 @@ dawn-field-theory/
                 execution_engine.md
                 flow_orchestrator.md
                 mcp_interface.md
-                meta.yaml
                 pruning_controller.md
                 tester_agent.md
-            meta/
-              meta.yaml
-            protocols/
-              meta.yaml
-            theory/
-              meta.yaml
         brainstem/
           README.md
           brainstem.md
-          meta.yaml
           docs/
-            meta.yaml
             architecture/
-              meta.yaml
               overview.md
               modules/
                 cip_mcp_bridge.md
@@ -128,107 +109,71 @@ dawn-field-theory/
                 fractal_visualization_engine.md
                 integration_services.md
                 knowledge_organization_system.md
-                meta.yaml
                 user_ai_interaction_layer.md
-            experiments/
-              meta.yaml
-            protocols/
-              meta.yaml
         field_decomposition/
           README.md
           field_decomp.md
-          meta.yaml
           docs/
             implementation_roadmap.md
-            meta.yaml
             architecture/
-              meta.yaml
               overview.md
               modules/
-                meta.yaml
                 sec_classifier.md
                 signal_decomposer.md
             protocols/
               field_decomposition_protocol.md
-              meta.yaml
         kronos/
           README.md
           kronos.md
-          meta.yaml
           docs/
             fdo_specification.md
             implementation_roadmap.md
-            meta.yaml
             architecture/
-              meta.yaml
               overview.md
               modules/
                 causality_verification_engine.md
                 distributed_clock_synchronizer.md
                 fdo_parser.md
-                meta.yaml
                 temporal_event_processor.md
         mcp_server/
           README.md
-          meta.yaml
           MCP/
             MCP_server_spec_architecturee_draft.md
             auto_llm_infra.md
             mcp_server_detailed_design.md
-            meta.yaml
           docs/
-            meta.yaml
             architecture/
-              meta.yaml
               overview.md
               modules/
                 agentic_orchestrator_provenance.md
                 cip_middleware_tools.md
                 context_processing_engine.md
-                meta.yaml
                 model_registry.md
                 protocol_compliance_engine.md
                 protocol_validator.md
                 session_state_manager.md
-            experiments/
-              meta.yaml
-            theory/
-              meta.yaml
         prometheus/
           README.md
-          meta.yaml
           prometheus.md
           docs/
-            meta.yaml
             architecture/
-              meta.yaml
               overview.md
               modules/
                 differential_privacy_engine.md
                 homomorphic_encryption_service.md
-                meta.yaml
                 privacy_preservation_engine.md
                 real_time_monitoring_engine.md
                 threat_detection_engine.md
                 visualization_dashboard.md
-            experiments/
-              meta.yaml
-            theory/
-              meta.yaml
       random_number/
         RandomNumberTest.py
-        meta.yaml
         random_number.md
-      sdk/
-        meta.yaml
     todo-2025/
       citation_model_draft.md
-      meta.yaml
       roadmap_draft.md
       todolist.md
       biological/
         historical_collapse.md
-        meta.yaml
       infra/
         AWP.md
         AWP_bridge.md
@@ -236,33 +181,23 @@ dawn-field-theory/
         awp_net.md
         cip_domain_upgrade.md
         cip_education_core_platform.md
-        meta.yaml
         ollama_self_hosted_runner.md
       sdk/
         README.md
-        meta.yaml
         compression/
           __init__.py
-          meta.yaml
           requirements.txt
-          adapters/
-            meta.yaml
           core/
             compression_engine.py
-            meta.yaml
           docs/
             architecture.md
-            meta.yaml
             quickstart.md
           examples/
             geometric_compression_demo.py
-            meta.yaml
           protocol/
             cipsc_protocol.py
-            meta.yaml
             specification.md
           validation/
-            meta.yaml
             validation_suite.py
       test_mobius_uniied/
         Möbius–Confluence.md
@@ -284,7 +219,6 @@ dawn-field-theory/
         anomaly_analysis.md
         cosmov2.md
         information_amplification_proof_framework.md
-        meta.yaml
         postsymbolic_vs_symbolic_validation.md
         quantum_EM.md
         navier/
@@ -292,7 +226,6 @@ dawn-field-theory/
           code_architecture.md
           experimental_design.md
           integration_roadmap.md
-          meta.yaml
           metrics_and_validation.md
           navigation_efficiency.md
           next_steps.md
@@ -306,12 +239,10 @@ dawn-field-theory/
     README.md
     bias.py
     cognition_index_protocol.md
-    meta.yaml
     qsocket.md
     AI_detection/
       [cip][experiment][v1.0][2025-06-30]_dawn_field_recursive_fractal_entropy_provenance_pipeline.py
       [cip][protocol][v1.0][2025-06-30]_dawn_field_protocol_recursive_fractal_entropy_provenance.md
-      meta.yaml
     balance_based_energy_generation/
       README.md
       balance_based_energy_generationv1.py
@@ -322,7 +253,6 @@ dawn-field-theory/
       carbon_energy_theory.md
       carbon_fuel_profiles.md
       consumer_energy_blueprint.md
-      meta.yaml
       production_energy_blueprint.md
       reference_material/
         balance_based_energy_generationv1_2025-06-17 213826.png
@@ -330,30 +260,25 @@ dawn-field-theory/
         balance_based_energy_generationv2_2025-06-17 213826.txt
         carbon_energy_strategy_logs2025-06-17
         carbon_energy_strategy_logs2025-06-17 214113.png
-        meta.yaml
     nuclear_containment/
       README.md
-      meta.yaml
       v1/
         blueprint.md
         containment_math.md
         containment_theory.md
         containment_triptych_with_metrics.py
-        meta.yaml
         results.md
         experimental_archive/
           Containment2D_HighYield.py
           Containment2D_HighYield_Reflective.py
           Containment2D_HighYield_Reflective.yaml
           improved_entropy_suppression_sim.py
-          meta.yaml
           nuclear_blast_simulation.py
           sub_meter.py
           unfinished_full_containment_sim.py
         images/
           containment_triptych.png
           full_containment_result.png
-          meta.yaml
           none_containment_result.png
           shell_only_containment_result.png
           side_by_side_comparison.png
@@ -361,48 +286,39 @@ dawn-field-theory/
         reference_material/
           containment_metrics.csv
           containment_triptych.png
-          meta.yaml
       v2/
-        meta.yaml
         v2_roadmap.md
   citations/
     README.md
     contributors-index.json
     contributors_bibtex.bib
     doi_registry.yaml
-    meta.yaml
     pr-citation-template.yaml
     external_citations/
       README.md
       citations_apa.txt
       citations_bibtex.bib
       external_citations.md
-      meta.yaml
     pending/
       README.md
       example-pr-123-entropy-operator.yaml
-      meta.yaml
     processed/
       README.md
-      meta.yaml
   foundational/
     README.md
     lexicon.md
     lexicon.yaml
-    meta.yaml
     whats_next.md
     arithmetic/
       README.md
       confluence_operator_recursive_arithmetic.md
       constants_derivation_lineage.md
       infodynamics_arithmetic_v1.md
-      meta.yaml
       symbolic_geometry_arithmetic.md
       unified_pac_framework_comprehensive.md
       PACEngine/
         README.md
         collect_data.py
-        meta.yaml
         pac_engine.py
         test_conservation.py
         core/
@@ -488,11 +404,9 @@ dawn-field-theory/
         R2_EQUIVALENCE_RESOLUTION.md
         README.md
         RESULTS.md
-        meta.yaml
         requirements.txt
         core/
           embedding_generator.py
-          meta.yaml
           pac_hierarchy.py
         euclidean_distance_validation/
           results/
@@ -537,7 +451,6 @@ dawn-field-theory/
           experiment_23_statistical_validation.py
           experiment_24_sanity_check.py
           experiment_25_conservation_proof.py
-          meta.yaml
         journals/
           2025-12-14_BREAKTHROUGH_SUMMARY.md
           2025-12-14_r2_validation_plan.md
@@ -546,20 +459,15 @@ dawn-field-theory/
           experiment_05_ratio_transformations.png
           experiment_06_emc2_quantification.png
           experiment_07_results.json
-          meta.yaml
         tests/
-          meta.yaml
           test_hierarchy.py
       hodge_mapping/
-        meta.yaml
         v0.1/
           hodge_mapping.md
-          meta.yaml
       macro_emergence_dynamics/
         README.md
         comprehensive_analysis.py
         master_recursive_gravity_experiment.py
-        meta.yaml
         ocean_wave_med_test.py
         computational_validation/
           README.md
@@ -567,54 +475,44 @@ dawn-field-theory/
           complexity_evolution_tracker_fixed.py
           enhanced_pattern_extraction.py
           infodynamics_framework_analysis.md
-          meta.yaml
           pattern_discovery_engine.py
           pragmatic_med_framework.py
           run_refactored_framework.py
           unified_med_testing_framework.py
           validated_results.md
           results/
-            meta.yaml
             unified_med_results_32x32_20250820_95947.json
             unified_med_results_64x64_20250820_95947.json
         formal_papers/
           README.md
           med_mathematical_foundations.md
           med_mathematical_framework_integration_v1.0.md
-          meta.yaml
         insights/
           depth_2_recursion_insight.md
-          meta.yaml
         notes/
           med_formal_framework.md
           med_formal_paper_draft.md
-          meta.yaml
         proofs/
           01_sec_navier_stokes_equivalence.md
           02_bounded_complexity_regularity.md
           03_optimal_parameter_convergence_theorem_v0.1.md
           04_resolution_independence_investigation_v0.2.md
           04_resolution_independence_theorem_v0.1.md
-          meta.yaml
           proof_balance_operator_stability_v0.1.md
           proof_development_plan_v1.0.md
           proof_universal_bounded_complexity_v0.1.md
         results/
-          meta.yaml
           comprehensive_analysis_20250820_155352/
             comprehensive_results.json
             conclusive_report.md
-            meta.yaml
           ocean_wave_med/
             ocean_wave_med_20251006_102512.png
             ocean_wave_med_20251006_102547.png
             ocean_wave_med_20251006_102655.png
             ocean_wave_med_20251006_102738.png
           parameter_study_20250820_135936/
-            meta.yaml
             parameter_study_results_20250820_135936.json
       notes/
-        meta.yaml
         PAC/
           PAC.md
           PAC.py
@@ -659,14 +557,12 @@ dawn-field-theory/
       [m][F][v1.1][C4][I5]_recursive_entopy.md
       [m][F][v2.0][C5][I5]_collapse_dynamics_in_entropic_fields.md
       [m][F][v2.2][C5][I5][E]_pre_field_recursion_resonance_driven_emergence.md
-      meta.yaml
       symmetry_primitive.md
       bridges/
         [id][A][v1.0][C4][I4]_cimm_modular_ai_systems_bridge.md
         [id][A][v1.0][C4][I4]_recursive_balance_continual_learning_bridge.md
         [id][A][v1.0][C4][I4]_symbolic_entropy_collapse_deep_learning_bridge.md
         [id][A][v2.0][C4][I5]gradient_descent_infodynamics_bridge.md
-        meta.yaml
       docx/
         Alignment of Hiroshima University's Double-Slit Findings with Dawn Field.docx
         DAWN FIELD THEORY – TIMESTAMPED SUMMARY.docx
@@ -676,7 +572,6 @@ dawn-field-theory/
         Title- Collapse Dynamics in Entropic Fields- A Synthesis of Classical and Quantum Mechanisms under the Dawn Framework.docx
         Title- Dawn Field Theory- The Recursive Balance Field as a Post-Stoic Potential in Schrödinger_s Equation.docx
         Title- The Recursive Balance Field- A Dynamic Replacement for Stoic Potentials in Schrödinger_s Equation.docx
-        meta.yaml
       empirical_alignment/
         README.md
         [m][F][v1.0][C4][I4]_alignment_with_flux_qubit.md
@@ -688,13 +583,11 @@ dawn-field-theory/
         [m][F][v1.0][C4][I4]_alignment_with_wheelers_delayed_choice.md
         [m][F][v1.0][C4][I4]_alignment_with_zeilinger_arndt.md
         [m][F][v1.0][C4][I5]_alignment_hiroshima_double_slit.md
-        meta.yaml
       preprints/
         PREPRINT_UPDATE_PLAN.md
         SCHEMA.md
         UNIFIED_EVIDENCE.md
         ZENODO_REGISTRY.yaml
-        meta.yaml
         PACSeries/
           HOW_TO_READ.md
           LICENSE
@@ -703,7 +596,6 @@ dawn-field-theory/
           derivation_classification.md
           generate_tex_pdfs.py
           md_to_tex.py
-          meta.yaml
           state_of_the_pac_series.md
           v0.3_PLANNING.md
           v0.1/
@@ -713,7 +605,6 @@ dawn-field-theory/
               LICENSE
               README.md
               UNIFIED_EVIDENCE.md
-              meta.yaml
               paper.md
               Code/
                 reproduce.py
@@ -732,7 +623,6 @@ dawn-field-theory/
                   conservation_engine.py
                   emergence_detector.py
                   field_engine.py
-                  meta.yaml
                   meta_cognition_layer.py
                   pattern_amplifier.py
                   resonance_mesh.py
@@ -752,7 +642,6 @@ dawn-field-theory/
                 gaia_validation_status.md
                 harmonic_mobius_topology.md
                 mas_herniation_cosmology_unified.md
-                meta.yaml
                 notes.md
                 pi_harmonic_fmas_discovery.md
                 unified_mas_med_validation_final_report.md
@@ -762,7 +651,6 @@ dawn-field-theory/
               LICENSE
               README.md
               UNIFIED_EVIDENCE.md
-              meta.yaml
               paper.md
               Code/
                 reproduce.py
@@ -826,7 +714,6 @@ dawn-field-theory/
               LICENSE
               README.md
               UNIFIED_EVIDENCE.md
-              meta.yaml
               paper.md
               Code/
                 reproduce.py
@@ -834,7 +721,6 @@ dawn-field-theory/
                 trace.yaml
                 core/
                   constants.py
-                  meta.yaml
                   pac_constraints.py
                   pac_cosmology.py
                   qbe_dynamics.py
@@ -851,7 +737,6 @@ dawn-field-theory/
                   exp_08_falsification_criteria.py
                   exp_09_expanded_analysis.py
                   exp_10_uhz1_heavy_seeds.py
-                  meta.yaml
               Data/
                 results/
                   exp_01_recursion_test_20251213_160229.json
@@ -877,7 +762,6 @@ dawn-field-theory/
               LICENSE
               README.md
               UNIFIED_EVIDENCE.md
-              meta.yaml
               paper.md
               Code/
                 reproduce.py
@@ -889,7 +773,6 @@ dawn-field-theory/
                   baseline_generator.py
                   compression_engine.py
                   measurement.py
-                  meta.yaml
                   quantum_validator.py
                   sec_field_engine.py
                   text_generator.py
@@ -897,7 +780,6 @@ dawn-field-theory/
                   .gitkeep
                   exp_01_unified_amplification.py
                   exp_32_phi_attractor_20251210_163903.json
-                  meta.yaml
               Data/
                 results/
                   exp_01_baseline_20251209_201520.json
@@ -932,7 +814,6 @@ dawn-field-theory/
               LICENSE
               README.md
               UNIFIED_EVIDENCE.md
-              meta.yaml
               paper.md
               Code/
                 reproduce.py
@@ -998,7 +879,6 @@ dawn-field-theory/
             summary.tex
             balance_constant_decomposition/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1051,7 +931,6 @@ dawn-field-theory/
                 fig7_mobius_convergence.png
             classical_physics_information_geometry/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1090,7 +969,6 @@ dawn-field-theory/
                 fig6_xi_derivation.png
             computational_validation_pac_conservation/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1131,7 +1009,6 @@ dawn-field-theory/
                 fig6_tinycimm_conservation.png
             feigenbaum_fibonacci_arithmetic/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1168,7 +1045,6 @@ dawn-field-theory/
                 fig6_formula_precision.png
             standard_model_fibonacci_arithmetic/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1218,7 +1094,6 @@ dawn-field-theory/
                 fig6_prediction_summary.png
             structure_cost_of_erasure/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1279,7 +1154,6 @@ dawn-field-theory/
             README.md
             connection_identity_spacetime/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1362,7 +1236,6 @@ dawn-field-theory/
                 fig4_scorecard.png
             cosmological_predictions_cascade_clock/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1425,7 +1298,6 @@ dawn-field-theory/
                 fig4_prediction_summary.png
             observational_contact_absorption_spectroscopy/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1464,7 +1336,6 @@ dawn-field-theory/
                   exp_19_ionization_coupling_20260611_82108.json
             quantum_gravity_information_conservation/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1511,7 +1382,6 @@ dawn-field-theory/
                 fig4_arrow_of_time.png
             quantum_mechanics_graph_structure/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1567,7 +1437,6 @@ dawn-field-theory/
                 fig4_decoherence.png
             symmetry_primitive_scoped_mediation/
               README.md
-              meta.yaml
               paper.md
               paper.pdf
               paper.tex
@@ -1637,7 +1506,6 @@ dawn-field-theory/
           MECHANISMS.md
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             generate_figures.py
@@ -1647,7 +1515,6 @@ dawn-field-theory/
             core/
               ca_simulator.py
               invariant_metrics.py
-              meta.yaml
               pac_embedding.py
             experiments/
               exp_01_baseline_ca.py
@@ -1657,7 +1524,6 @@ dawn-field-theory/
               exp_05_xi_necessity.py
               exp_06_statistical_falsification.py
               exp_07_definitive_proof.py
-              meta.yaml
           Data/
             results/
               exp_01_baseline_20251220_90456.json
@@ -1684,7 +1550,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -1705,7 +1570,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -1721,7 +1585,6 @@ dawn-field-theory/
                 baseline_generator.py
                 compression_engine.py
                 measurement.py
-                meta.yaml
                 quantum_validator.py
                 sec_field_engine.py
                 text_generator.py
@@ -1747,7 +1610,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -1780,14 +1642,12 @@ dawn-field-theory/
           MECHANISMS.md
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
             requirements.txt
             trace.yaml
             core/
-              meta.yaml
               sec_core.py
             experiments/
               exp_01_baseline_validation.py
@@ -1823,7 +1683,6 @@ dawn-field-theory/
               exp_31_xi_lambda_universal.py
               exp_32_phi_attractor.py
               exp_32_phi_attractor_20251210_163903.json
-              meta.yaml
           Data/
             results/
               exp_01_baseline_20251209_201520.json
@@ -1860,7 +1719,6 @@ dawn-field-theory/
             CITATION.md
             LICENSE
             README.md
-            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -1874,7 +1732,6 @@ dawn-field-theory/
             CITATION.md
             LICENSE
             README.md
-            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -1888,7 +1745,6 @@ dawn-field-theory/
             CITATION.md
             LICENSE
             README.md
-            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -1903,7 +1759,6 @@ dawn-field-theory/
             LICENSE
             README.md
             UNIFIED_EVIDENCE.md
-            meta.yaml
             paper.md
             Code/
               reproduce.py
@@ -1922,7 +1777,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -1967,7 +1821,6 @@ dawn-field-theory/
           MECHANISMS.md
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -1980,7 +1833,6 @@ dawn-field-theory/
               exp_01_pythia_phi_convergence.py
               exp_02_gpt2_inference_dynamics.py
               exp_03_gpt2_generation_dynamics.py
-              meta.yaml
             results/
               exp_27_gpt2_entropy_20251222_93918.json
               exp_28_generation_sec_20251222_94451.json
@@ -2003,7 +1855,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -2011,7 +1862,6 @@ dawn-field-theory/
             trace.yaml
             core/
               constants.py
-              meta.yaml
               pac_constraints.py
               pac_cosmology.py
               qbe_dynamics.py
@@ -2028,7 +1878,6 @@ dawn-field-theory/
               exp_08_falsification_criteria.py
               exp_09_expanded_analysis.py
               exp_10_uhz1_heavy_seeds.py
-              meta.yaml
           Data/
             README.md
             jwst_catalog.json
@@ -2051,7 +1900,6 @@ dawn-field-theory/
               exp_10_uhz1_heavy_seeds_20251213_180336.json
               exp_10_uhz1_heavy_seeds_20251213_180530.json
               exp_10_uhz1_heavy_seeds_20251213_180546.json
-              meta.yaml
           Figures/
             README.md
         pac_necessity_proof/
@@ -2059,7 +1907,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -2067,7 +1914,6 @@ dawn-field-theory/
             trace.yaml
             experiments/
               exp_01_pac_necessity.py
-              meta.yaml
               exploratory/
                 01_alpha_from_fibonacci.py
                 02_fine_structure_derivation.py
@@ -2135,13 +1981,11 @@ dawn-field-theory/
           [m][D][v1.0][C5][I4][E]_macro_emergence_dynamics_navier_stokes_preprint.pdf
           [m][D][v1.0][C5][I4][E]_recursive_mathematical_plasticity_entropy_architecture_preprint.pdf
           [m][F][v1.0][C5][I5]_dawn_field_theory_comprehensive_overview.pdf
-          meta.yaml
         potential_actualization_conservation_comprehensive/
           CITATION.md
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -2156,13 +2000,11 @@ dawn-field-theory/
               visualization.py
             experiments/
               exp_01_information_amplification.py
-              meta.yaml
               core/
                 __init__.py
                 baseline_generator.py
                 compression_engine.py
                 measurement.py
-                meta.yaml
                 quantum_validator.py
                 sec_field_engine.py
                 text_generator.py
@@ -2216,7 +2058,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -2224,7 +2065,6 @@ dawn-field-theory/
             trace.yaml
             experiments/
               exp_01_qbe_pac_unification.py
-              meta.yaml
               exploratory/
                 01_alpha_from_fibonacci.py
                 02_fine_structure_derivation.py
@@ -2290,7 +2130,6 @@ dawn-field-theory/
           entropy_minimized_architecture.md
           hardware_configuration.md
           mathmatics_next_steps.md
-          meta.yaml
         sec_threshold_detection/
           Paper.md
           README.md
@@ -2298,25 +2137,20 @@ dawn-field-theory/
           CITATION.md
           LICENSE
           README.md
-          meta.yaml
           paper.md
           Code/
-            meta.yaml
             she_leveque_prediction.py
             she_leveque_validation.py
           Data/
-            meta.yaml
             predictions.json
             validation_results.json
           Figures/
             README.md
-            meta.yaml
         symbolic_entropy_collapse/
           CITATION.md
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           Code/
             reproduce.py
@@ -2328,7 +2162,6 @@ dawn-field-theory/
               baseline_generator.py
               compression_engine.py
               measurement.py
-              meta.yaml
               quantum_validator.py
               sec_field_engine.py
               text_generator.py
@@ -2383,7 +2216,6 @@ dawn-field-theory/
           LICENSE
           README.md
           UNIFIED_EVIDENCE.md
-          meta.yaml
           paper.md
           paper.pdf
           paper.tex
@@ -2417,7 +2249,6 @@ dawn-field-theory/
       EXPERIMENTS.md
       JOURNAL_SCHEMA.md
       README.md
-      meta.yaml
       ade_cascade/
         README.md
         meta.yaml
@@ -2441,23 +2272,19 @@ dawn-field-theory/
         meta.yaml
         core/
           complexity_metrics.py
-          meta.yaml
         journals/
           2025-02-05_origin_and_hypothesis.md
-          meta.yaml
         results/
           exp_01_define_metrics_20260205_92848.json
           exp_01_rqm_ruliad_mapping_20260205_93455.json
           exp_02_deep_rqm_sec_20260205_93915.json
           exp_03_deep_pac_ruliad_20260205_94045.json
           exp_03_deep_pac_ruliad_20260205_94049.json
-          meta.yaml
         scripts/
           exp_01_define_metrics.py
           exp_01_rqm_ruliad_mapping.py
           exp_02_deep_rqm_sec.py
           exp_03_deep_pac_ruliad.py
-          meta.yaml
       archive/
         README.md
         era1/
@@ -2471,7 +2298,6 @@ dawn-field-theory/
               Entropy-Based Repair of BRCA1 Frameshift Mutation _5382insC__1_.md
               entropy_mutation_detection.png
               entropy_repair.png
-              meta.yaml
             results/
               results.md
             scripts/
@@ -2481,24 +2307,19 @@ dawn-field-theory/
             meta.yaml
             evolution-symbolic-collapse/
               README.md
-              meta.yaml
               output.txt
               requirements.txt
               results.md
               data/
                 extinctions.csv
-                meta.yaml
                 tree.nwk
               journals/
                 .gitkeep
               output/
-                meta.yaml
                 sweep_20250718_111841/
-                  meta.yaml
                   sweep_provenance.json
                   d3_b3_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2506,7 +2327,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b3_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2514,7 +2334,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b3_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2522,7 +2341,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b4_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2530,7 +2348,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b4_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2538,7 +2355,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b4_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2546,7 +2362,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b5_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2554,7 +2369,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b5_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2562,7 +2376,6 @@ dawn-field-theory/
                     ttest_results.json
                   d3_b5_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2570,7 +2383,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b3_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2578,7 +2390,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b3_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2586,7 +2397,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b3_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2594,7 +2404,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b4_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2602,7 +2411,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b4_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2610,7 +2418,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b4_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2618,7 +2425,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b5_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2626,7 +2432,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b5_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2634,7 +2439,6 @@ dawn-field-theory/
                     ttest_results.json
                   d4_b5_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2642,7 +2446,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b3_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2650,7 +2453,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b3_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2658,7 +2460,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b3_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2666,7 +2467,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b4_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2674,7 +2474,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b4_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2682,7 +2481,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b4_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2690,7 +2488,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b5_e0.4/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2698,7 +2495,6 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b5_e0.7/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
@@ -2706,14 +2502,12 @@ dawn-field-theory/
                     ttest_results.json
                   d5_b5_e1.0/
                     entropy_waves.png
-                    meta.yaml
                     metrics.json
                     provenance.json
                     real_entropy_traces.json
                     sim_entropy_traces.json
                     ttest_results.json
                 sweep_analysis_20250718_113706/
-                  meta.yaml
                   p_value_tree_depth_0.png
                   p_value_tree_depth_1.png
                   p_value_tree_depth_2.png
@@ -2734,7 +2528,6 @@ dawn-field-theory/
             black_white_hole_polarity/
               README.md
               experiment_protocol.md
-              meta.yaml
               results.md
               journals/
                 .gitkeep
@@ -2742,7 +2535,6 @@ dawn-field-theory/
                 entropy_information_polarity2025-06-15 104709.txt
                 entropy_information_polarity_blackhole2025-06-15 104709.png
                 entropy_information_polarity_whitehole2025-06-15 104709.png
-                meta.yaml
               results/
                 .gitkeep
               scripts/
@@ -2754,13 +2546,10 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               hodge_field/
                 hodge_conjecture2025-06-20 90250.png
                 hodge_results.md
-                meta.yaml
               v1/
-                meta.yaml
                 prime_modulated_collapse2025-06-20 90250.png
               v10/
                 analysis_plot_p10_run0.png
@@ -2814,7 +2603,6 @@ dawn-field-theory/
                 analysis_plot_p9_run3.png
                 analysis_plot_p9_run4.png
                 fft_symmetry_vs_index.png
-                meta.yaml
                 modulated_full_analysis.png
                 output.txt
                 peak_count_boxplot.png
@@ -2872,34 +2660,27 @@ dawn-field-theory/
                 analysis_plot_p9_run2.png
                 analysis_plot_p9_run3.png
                 analysis_plot_p9_run4.png
-                meta.yaml
                 output.txt
                 results.md
                 robustness_results.csv
               v2/
-                meta.yaml
                 prime_modulated_collapsev22025-06-20 90250.png
               v3/
-                meta.yaml
                 peak_countsv3.csv
                 prime_modulated_collapsev32025-06-20 90250.png
               v4/
-                meta.yaml
                 peak_symmetry_data.csv
                 prime_modulated_collapsev42025-06-20 90250.png
               v5/
                 fft_symmetry_vs_prime.png
-                meta.yaml
                 peak_symmetry_data.csv
                 prime_modulated_symmetry_analysis.png
               v6/
                 fft_symmetry_vs_prime.png
-                meta.yaml
                 peak_symmetry_data.csv
                 prime_modulated_full_analysis.png
               v7/
                 fft_symmetry_vs_index.png
-                meta.yaml
                 modulated_full_analysis.png
                 peak_symmetry_data.csv
                 results.md
@@ -2955,7 +2736,6 @@ dawn-field-theory/
                 analysis_plot_p9_run3.png
                 analysis_plot_p9_run4.png
                 fft_symmetry_vs_index.png
-                meta.yaml
                 modulated_full_analysis.png
                 robustness_results.csv
               v9/
@@ -3010,7 +2790,6 @@ dawn-field-theory/
                 analysis_plot_p9_run3.png
                 analysis_plot_p9_run4.png
                 fft_symmetry_vs_index.png
-                meta.yaml
                 modulated_full_analysis.png
                 robustness_results.csv
             results/
@@ -3029,7 +2808,6 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               20250630_093247/
                 energy_curve.png
                 energy_over_time.csv
@@ -3041,7 +2819,6 @@ dawn-field-theory/
                 field_step_10.png
                 field_step_15.png
                 field_step_20.png
-                meta.yaml
             results/
               results.md
             scripts/
@@ -3052,124 +2829,81 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
-              2025-06-21_095416/
-                meta.yaml
-                testid_1/
-                  meta.yaml
-                testid_2/
-                  meta.yaml
-                testid_3/
-                  meta.yaml
-                testid_4/
-                  meta.yaml
-                testid_5/
-                  meta.yaml
               2025-06-21_095612/
                 index.json
-                meta.yaml
                 testid_1/
                   collapse_tree.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_2/
                   collapse_tree.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_3/
                   collapse_tree.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_4/
                   collapse_tree.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_5/
                   collapse_tree.png
                   logic_flow.json
-                  meta.yaml
                   report.md
               2025-06-21_102536/
                 index.json
-                meta.yaml
                 testid_1/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_2/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_3/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_4/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_5/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
-              2025-06-21_125818/
-                meta.yaml
-                testid_1/
-                  meta.yaml
-                testid_2/
-                  meta.yaml
-                testid_3/
-                  meta.yaml
-                testid_4/
-                  meta.yaml
-                testid_5/
-                  meta.yaml
               2025-07-07_135536/
                 index.json
-                meta.yaml
                 testid_1/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_2/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_3/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_4/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
                 testid_5/
                   collapse_tree.png
                   entropy_heatmap.png
                   logic_flow.json
-                  meta.yaml
                   report.md
             results/
               results.md
@@ -3191,7 +2925,6 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               pi_harmonic_results2025-06-17 135126.png
             results/
               results.md
@@ -3203,11 +2936,9 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               20250630_090133/
                 forecasted_collapse_data.csv
                 forecasted_collapse_plot.png
-                meta.yaml
                 simulation_log.txt
                 snapshot_generation_29.png
             results/
@@ -3219,15 +2950,12 @@ dawn-field-theory/
             meta.yaml
             born_rule/
               README.md
-              meta.yaml
               results.md
               journals/
                 .gitkeep
               reference_material/
-                meta.yaml
                 20250715_112835/
                   born_rule_comparison.png
-                  meta.yaml
                   summary.json
                 20250715_113116/
                   born_rule_comparison_0.5.png
@@ -3236,7 +2964,6 @@ dawn-field-theory/
                   entropy_over_trials_0.5.png
                   entropy_over_trials_0.7.png
                   entropy_over_trials_0.8.png
-                  meta.yaml
                   summary.json
               results/
                 .gitkeep
@@ -3244,18 +2971,15 @@ dawn-field-theory/
                 [m][Q][v1.0][C5][I1][E]_born_rule_symbolic_entropy_collapse.py
             landauer_symbolic_erasure_energy_validation/
               README.md
-              meta.yaml
               results.md
               journals/
                 .gitkeep
               reference_material/
-                meta.yaml
                 landauer_20250716_123034/
                   adaptive_temperature_trace.png
                   energy_vs_entropy.png
                   entropy_injection_trace.png
                   landauer_erasure_results.json
-                  meta.yaml
                   summary.txt
               results/
                 .gitkeep
@@ -3263,23 +2987,19 @@ dawn-field-theory/
                 [id][T][v1.0][C3][I4][E]_landauer_symbolic_erasure_energy_validation.py
             symbolic_entanglement/
               README.md
-              meta.yaml
               results.md
               journals/
                 .gitkeep
               results/
                 entanglement_emulation_pubready_20250722_131723.zip
-                meta.yaml
               scripts/
                 [id][F][v1.0][C4][I5][Q]_symbolic_entanglement_test.py
             symbolic_entropy_collapse_vs_quantum_decoherence/
               README.md
-              meta.yaml
               results.md
               journals/
                 .gitkeep
               reference_material/
-                meta.yaml
                 decoherence_soft_20250716_110903/
                   coherence_decay_soft.png
                   decoherence_soft_metrics.json
@@ -3287,7 +3007,6 @@ dawn-field-theory/
                   field_snapshot_step0.png
                   field_snapshot_step25.png
                   field_snapshot_step49.png
-                  meta.yaml
                   stability_trace_soft.png
                   stability_vs_quantum.json
               results/
@@ -3296,16 +3015,13 @@ dawn-field-theory/
                 [cip][experiment][v1.0][2025-07-16]_symbolic_entropy_collapse_vs_quantum_decoherence.py
             symbolic_interference/
               README.md
-              meta.yaml
               results.md
               journals/
                 .gitkeep
               results/
-                meta.yaml
                 interference_test_20250721_121752/
                   heatmap_mse.png
                   heatmap_pearson_corr.png
-                  meta.yaml
                   parameter_sweep_results.csv
                   symbolic_vs_quantum_interference_noise0.0_prime1.png
                   symbolic_vs_quantum_interference_noise0.0_prime7.png
@@ -3317,12 +3033,10 @@ dawn-field-theory/
                 [id][T][v1.0][C3][I4][Q]_symbolic_quantum_interference_validation.py
             symbolic_reversability/
               README.md
-              meta.yaml
               results.md
               journals/
                 .gitkeep
               results/
-                meta.yaml
                 results.zip
               scripts/
                 [id][E][v1.0][C4][I5][Q]_symbolic_field_reversibility_experiment.py
@@ -3332,7 +3046,6 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               recursive_entropy_2025-06-07_results.txt
               recursive_entropy_2025-06-07_results1.png
               recursive_entropy_2025-06-07_results2.png
@@ -3347,7 +3060,6 @@ dawn-field-theory/
               .gitkeep
             reference_material/
               macro_emergence_knn_2025-06-07_results.png
-              meta.yaml
               proto_galactic_superfluid_2025-06-07_results.png
               recursive_gravity_2025-06-07_results.png
             results/
@@ -3362,7 +3074,6 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               recursive_tree_2025-06-07_results.png
             results/
               results.md
@@ -3378,7 +3089,6 @@ dawn-field-theory/
             reference_material/
               InfoDyn_Validation_BifractalCollapse_v0.2.yaml
               InfoDyn_Validation_LineageTrace.tsv
-              meta.yaml
               symbolic_bifractal_expansion_v1_2025-06-14 93626.png
               symbolic_bifractal_expansion_v2_2025-06-14 93626.png
             results/
@@ -3402,12 +3112,9 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               20250624_185441/
-                meta.yaml
                 metadata.json
                 Classical/
-                  meta.yaml
                   seed_101/
                     curvature_slice_axis0_step0.png
                     curvature_slice_axis0_step1.png
@@ -3426,7 +3133,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_98.csv
@@ -3453,7 +3159,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_98.csv
@@ -3480,7 +3185,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_98.csv
@@ -3507,7 +3211,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_98.csv
@@ -3534,7 +3237,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_98.csv
@@ -3544,7 +3246,6 @@ dawn-field-theory/
                     symbol_distribution_step_98.png
                     symbol_distribution_step_99.png
                 Emergent/
-                  meta.yaml
                   seed_101/
                     curvature_slice_axis0_step0.png
                     curvature_slice_axis0_step1.png
@@ -3563,7 +3264,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_20.csv
@@ -3590,7 +3290,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_44.csv
@@ -3617,7 +3316,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_98.csv
@@ -3644,7 +3342,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_22.csv
@@ -3671,7 +3368,6 @@ dawn-field-theory/
                     diversity_trace.csv
                     entropy_trace.csv
                     log.txt
-                    meta.yaml
                     symbol_distribution_step_0.csv
                     symbol_distribution_step_1.csv
                     symbol_distribution_step_26.csv
@@ -3690,11 +3386,9 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               pruning_20250622_163425/
                 active_ratio_over_time.png
                 entropy_over_time.png
-                meta.yaml
                 pruning_stats.json
                 step_1.png
                 step_2.png
@@ -3712,7 +3406,6 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               20250630_100030/
                 energy_curve.png
                 energy_over_time.csv
@@ -3721,7 +3414,6 @@ dawn-field-theory/
                 ...
                 field_step_45.png
                 field_step_50.png
-                meta.yaml
             results/
               results.md
             scripts/
@@ -3732,17 +3424,14 @@ dawn-field-theory/
             journals/
               .gitkeep
             reference_material/
-              meta.yaml
               20250622_160040/
                 collapse_diagnostics.png
                 collapse_field.png
                 collapse_logs.csv
-                meta.yaml
               20250622_160535_batch/
                 RESULTS.md
                 average_speed.png
                 entropy_change.png
-                meta.yaml
                 particles_near_center.png
                 symbolic_entropy.png
                 symbolic_transitions.json
@@ -3755,66 +3444,53 @@ dawn-field-theory/
             meta.yaml
             requirements.txt
             docs/
-              meta.yaml
               architecture/
                 api_design.md
                 data_flow.md
                 domain_adapters.md
-                meta.yaml
                 overview.md
                 testing_strategy.md
             journals/
               .gitkeep
             results/
-              meta.yaml
               20250829_175920_sweep_session_20250829_175919/
-                meta.yaml
                 sweep_analysis.json
                 sweep_config.json
                 sweep_report.md
                 sweep_statistics.csv
                 visualizations/
                   domain_field_comparison.png
-                  meta.yaml
                   metric_distributions.png
                   parameter_performance.png
                   statistical_summary.png
             scripts/
               run_validation.py
             src/
-              meta.yaml
               unified_emergence_v2/
                 __init__.py
-                meta.yaml
                 adapters/
                   __init__.py
                   gravity_adapter.py
                   hodge_adapter.py
                   med_adapter.py
-                  meta.yaml
                   navier_adapter.py
                   tinycimm_adapter.py
                 application/
                   __init__.py
                   framework.py
-                  meta.yaml
                   pattern_analyzer.py
                 domain/
                   __init__.py
-                  meta.yaml
                   models.py
                   protocols.py
                 infrastructure/
                   __init__.py
-                  meta.yaml
                   results_repository.py
                   results_repository_enhanced.py
                   statistical_analyzer.py
                   test_runner.py
                   test_runner_old.py
                   test_runner_standalone.py
-                results/
-                  meta.yaml
         era2/
           cross_experiment_journals/
             2025-12-16_gaia_convergence.md
@@ -3822,7 +3498,6 @@ dawn-field-theory/
             beta_investigation.png
             comparative_analysis_20250825_105223.json
             kappa_scaling.png
-            meta.yaml
           information_amplification/
             README.md
             RESULTS.md
@@ -3833,24 +3508,19 @@ dawn-field-theory/
               baseline_generator.py
               compression_engine.py
               measurement.py
-              meta.yaml
               quantum_validator.py
               sec_field_engine.py
               text_generator.py
             journals/
               .gitkeep
             results/
-              meta.yaml
               20250828_123312/
                 experiment_summary.txt
-                meta.yaml
                 unified_results_unified_1756395191.json
                 visualizations/
                   amplification_comparison.png
-                  meta.yaml
                   quantum_metrics_radar.png
               statistical_20250828_122110/
-                meta.yaml
                 run_1_results.json
                 run_2_results.json
                 run_3_results.json
@@ -3867,51 +3537,42 @@ dawn-field-theory/
               .gitkeep
             navier_symbolic_engine/
               README.md
-              meta.yaml
               requirements.txt
               setup.py
               configs/
                 default.yaml
                 high_performance.yaml
-                meta.yaml
                 validation.yaml
               docs/
                 api_reference.md
                 development_guide.md
-                meta.yaml
                 user_guide.md
               examples/
                 cavity_flow.py
                 cylinder_flow.py
-                meta.yaml
                 pipe_flow.py
               src/
-                meta.yaml
                 api/
                   __init__.py
                   config_manager.py
                   engine_interface.py
-                  meta.yaml
                   result_manager.py
                 core/
                   __init__.py
                   entropy_navigator.py
                   memory_tracker.py
-                  meta.yaml
                   pattern_tree.py
                   solution_composer.py
                   thermodynamic_validator.py
                 experiments/
                   __init__.py
                   memory_reversibility.py
-                  meta.yaml
                   reynolds_differentiation.py
                   thermodynamic_compliance.py
                   tree_generation.py
                 patterns/
                   __init__.py
                   laminar_patterns.py
-                  meta.yaml
                   pattern_library.py
                   transitional_patterns.py
                   turbulent_patterns.py
@@ -3919,7 +3580,6 @@ dawn-field-theory/
                   __init__.py
                   entropy_hasher.py
                   field_operations.py
-                  meta.yaml
                   metrics_calculator.py
                   visualization.py
                 validation/
@@ -3927,49 +3587,26 @@ dawn-field-theory/
                   cfd_benchmarks.py
                   classical_solutions.py
                   experimental_data.py
-                  meta.yaml
-              tests/
-                meta.yaml
-                fixtures/
-                  meta.yaml
-                integration/
-                  meta.yaml
-                performance/
-                  meta.yaml
-                unit/
-                  meta.yaml
             results/
               COMPREHENSIVE_SUMMARY.md
               README.md
-              meta.yaml
               session_20250818_141545_01552189/
-                meta.yaml
-                benchmarks/
-                  meta.yaml
                 configs/
-                  meta.yaml
                   test_config.yaml
                 data/
-                  meta.yaml
                   performance_test_results.json
                   unit_test_results.json
                   visualization_test_results.json
-                hashes/
-                  meta.yaml
                 reports/
                   comprehensive_report.json
-                  meta.yaml
                   test_report.md
                 statistics/
-                  meta.yaml
                   sweep_statistics.json
                 sweeps/
-                  meta.yaml
                   parameter_sweep_data.csv
                   parameter_sweep_data.pkl
                   parameter_sweep_results.json
                 visualizations/
-                  meta.yaml
                   velocity_cavity_Re1500.png
                   velocity_channel_Re2000.png
                   velocity_pipe_Re1000.png
@@ -3978,19 +3615,15 @@ dawn-field-theory/
             tests/
               README.md
               __init__.py
-              meta.yaml
               pytest.ini
               integration/
                 __init__.py
-                meta.yaml
                 test_workflow.py
               performance/
                 __init__.py
-                meta.yaml
                 test_benchmarks.py
               unit/
                 __init__.py
-                meta.yaml
                 test_engine.py
                 test_entropy.py
                 test_imports.py
@@ -4137,7 +3770,6 @@ dawn-field-theory/
               __init__.py
               adaptive_recursion.py
               formal_definitions.py
-              meta.yaml
               mobius_topology.py
               resonance_detector.py
               transition_dynamics.py
@@ -4148,7 +3780,6 @@ dawn-field-theory/
               gaia_validation_status.md
               harmonic mobius.md
               mas_herniation_cosmology_unified.md
-              meta.yaml
               notes.md
               pi_harmonic_fmas_discovery.md
               unified_mas_med_validation_final_report.md
@@ -4159,7 +3790,6 @@ dawn-field-theory/
               convergence_v22_resonance_20251001_112535.png
               convergence_v22_resonance_20251001_112604.png
               convergence_v22_resonance_20251001_112724.png
-              meta.yaml
               pre_field_recursion_plots_20250930_144232.png
               pre_field_recursion_plots_20250930_183326.png
               pre_field_recursion_results_20250930_144231.json
@@ -4188,7 +3818,6 @@ dawn-field-theory/
               validate_with_real_data.py
             validation/
               __init__.py
-              meta.yaml
               pac_validation.py
           prime_harmonic_manifold/
             README.md
@@ -4196,7 +3825,6 @@ dawn-field-theory/
             meta.yaml
             core/
               analysis.py
-              meta.yaml
               prime_chords.py
               visualization.py
             figures/
@@ -4218,9 +3846,6 @@ dawn-field-theory/
               2025-12-13_predictions_progress_roadmap.md
               2025-12-13_qbe_to_pac_unification.md
               2025-12-13_sec_ml_refined.md
-              meta.yaml
-            papers/
-              meta.yaml
             results/
               exp_01_chord_analysis_20251211_221238.json
               exp_02_eigenvalue_scaling_20251211_221252.json
@@ -4259,7 +3884,6 @@ dawn-field-theory/
               exp_32_qbe_frequency_derivation.png
               exp_32_qbe_pac_unification_20251213_104831.json
               exp_32_qbe_pac_unification_20251213_104843.json
-              meta.yaml
             scripts/
               exp_01_chord_analysis.py
               exp_02_eigenvalue_scaling.py
@@ -4289,7 +3913,6 @@ dawn-field-theory/
               exp_30_pac_enhanced_legacy.py
               exp_31_klein_gordon_dynamics.py
               exp_32_qbe_pac_unification.py
-              meta.yaml
       asymmetric_conservation/
         README.md
         SYNTHESIS.md
@@ -4298,13 +3921,11 @@ dawn-field-theory/
           __init__.py
           async_pac.py
           event_system.py
-          meta.yaml
           pac_tensors.py
         journals/
           2026-01-22_deep_dive_pac_dynamics.md
           2026-01-22_experiment_creation.md
           2026-02-08_sec_local_pac_global.md
-          meta.yaml
         results/
           exp_01_20260122_161159.json
           exp_02_20260122_161220.json
@@ -4325,7 +3946,6 @@ dawn-field-theory/
           exp_15_reconciliation_depth_20260208_123746.json
           exp_16_possibility_pruning_20260208_123957.json
           exp_17_p3_reconciliation_20260208_124010.json
-          meta.yaml
         scripts/
           constants.py
           exp_01_sync_baseline.py
@@ -4345,7 +3965,6 @@ dawn-field-theory/
           exp_15_reconciliation_depth.py
           exp_16_possibility_pruning.py
           exp_17_p3_reconciliation.py
-          meta.yaml
           run_all_experiments.py
       base_agnostic_pac/
         README.md
@@ -4370,12 +3989,10 @@ dawn-field-theory/
         core/
           ca_simulator.py
           invariant_metrics.py
-          meta.yaml
           pac_embedding.py
         journals/
           2025-12-20_experiment_setup.md
           2025-12-20_synthesis_and_dynamics.md
-          meta.yaml
         results/
           exp_01_baseline_20251220_90456.json
           exp_01_baseline_20251220_90518.json
@@ -4393,7 +4010,6 @@ dawn-field-theory/
           exp_11_xi_crossing_20260106_114049.json
           exp_12_random_baseline_20260106_123751.json
           exp_13_alternative_embeddings_20260106_123740.json
-          meta.yaml
         scripts/
           exp_01_baseline_ca.py
           exp_02_full_sweep.py
@@ -4407,7 +4023,6 @@ dawn-field-theory/
           exp_11_xi_crossing_analysis.py
           exp_12_xi_random_baseline.py
           exp_13_alternative_embeddings.py
-          meta.yaml
       confluent_identity/
         README.md
         VAULT_SYNC_PENDING.md
@@ -4801,14 +4416,10 @@ dawn-field-theory/
         meta.yaml
         core/
           constants.py
-          meta.yaml
           projections.py
         journals/
           2025-01-19_nbody_web_emergence.md
           2026-01-19_experiment_initialization.md
-          meta.yaml
-        papers/
-          meta.yaml
         results/
           exp_01_sec_wave_20260119_145404.json
           exp_03_f183_20260119_145418.json
@@ -4852,7 +4463,6 @@ dawn-field-theory/
           exp_12_power_spectrum_20260119_161638.png
           exp_13_boundary_conditions_20260119_162620.json
           exp_13_boundary_conditions_20260119_162620.png
-          meta.yaml
         scripts/
           exp_01_sec_wave_unification.py
           exp_02_projection_duality.py
@@ -4867,18 +4477,15 @@ dawn-field-theory/
           exp_11_pac_web_3d.py
           exp_12_power_spectrum.py
           exp_13_boundary_conditions.py
-          meta.yaml
       landauer_erasure_structure/
         README.md
         SYNTHESIS.md
         meta.yaml
         journals/
           2026-02-07_cascade_time_computation.md
-          meta.yaml
         papers/
           addendum_ln_phi_emergence.md
           journal.md
-          meta.yaml
         results/
           exp_01_results.json
           exp_04_robustness_test.json
@@ -4919,7 +4526,6 @@ dawn-field-theory/
           exp_25_full_stack_20260214_101340.json
           exp_25_full_stack_20260214_102000.json
           exp_25_full_stack_20260214_102208.json
-          meta.yaml
         scripts/
           capture_results_09_14.py
           exp_01_landauer_xi.py
@@ -4947,33 +4553,26 @@ dawn-field-theory/
           exp_23_precision_tightening.py
           exp_24_cascade_precision.py
           exp_25_full_stack_validation.py
-          meta.yaml
       maxwell_from_pac_sec/
         README.md
         SYNTHESIS.md
         meta.yaml
         core/
           constants.py
-          meta.yaml
         journals/
           2026-01-15_experiment_initialization.md
-          meta.yaml
-        papers/
-          meta.yaml
         results/
           exp_01_sec_wave_speed_20260115_100600.json
           exp_02_charge_quantization_20260115_100805.json
           exp_03_curl_projection_20260115_100926.json
           exp_04_fibonacci_alpha_20260115_101230.json
           exp_05_3d_necessity_20260115_101254.json
-          meta.yaml
         scripts/
           exp_01_sec_wave_speed.py
           exp_02_charge_quantization.py
           exp_03_curl_projection.py
           exp_04_fibonacci_alpha.py
           exp_05_3d_necessity.py
-          meta.yaml
       midnight/
         README.md
         meta.yaml
@@ -5130,12 +4729,10 @@ dawn-field-theory/
         meta.yaml
         journals/
           2026-01-15_milestone1_creation.md
-          meta.yaml
         papers/
           DERIVATION_CHAIN.md
           FALSIFICATION_METHODOLOGY.md
           MILESTONE1_PAPER.md
-          meta.yaml
         results/
           39_she_leveque_prediction_20260203_94324.json
           40_she_leveque_validation_20260203_94606.json
@@ -5160,7 +4757,6 @@ dawn-field-theory/
           exp_36_results.json
           exp_37_results.json
           exp_38_results.json
-          meta.yaml
           milestone1_summary.json
         scripts/
           constants.py
@@ -5204,7 +4800,6 @@ dawn-field-theory/
           exp_38_charge_boundary.py
           exp_39_she_leveque_prediction.py
           exp_40_she_leveque_validation.py
-          meta.yaml
           run_all_experiments.py
       milestone10/
         README.md
@@ -5526,7 +5121,6 @@ dawn-field-theory/
           exp_20_base_agnostic_confluence.py
           exp_21_pure_ratio_confluence.py
           exp_22_unified_pac_electroweak_mass.py
-          meta.yaml
           results/
             exp_01_mass_survey_20260203_162155.json
             exp_02_koide_derivation_20260203_162202.json
@@ -5576,7 +5170,6 @@ dawn-field-theory/
           exp_16_casimir_verification.py
           exp_17_rg_pac.py
           exp_18_rg_fibonacci.py
-          meta.yaml
       milestone3/
         FALSIFICATION_REGISTRY.md
         README.md
@@ -5585,7 +5178,6 @@ dawn-field-theory/
         core/
           __init__.py
           constants.py
-          meta.yaml
           utils.py
           xi_calculator.py
         journals/
@@ -5699,7 +5291,6 @@ dawn-field-theory/
           exp_30_xi_alt_factorial.py
           exp_31_scaling_extrapolation.py
           exp_32_template_richness_audit.py
-          meta.yaml
       milestone4/
         README.md
         SYNTHESIS.md
@@ -6166,7 +5757,6 @@ dawn-field-theory/
           2026-03-15_exp42_emergent_actualization_attractor.md
           2026-03-15_exp43_emergent_coupling_constants.md
           2026-04-18_part_b_bridge_analysis.md
-          meta.yaml
         results/
           exp_01_planck_from_pac.json
           exp_02_xi_global_attractor.json
@@ -6206,7 +5796,6 @@ dawn-field-theory/
           exp_41_actualization_ratio_field_dynamics_20260315_201603.json
           exp_42_emergent_actualization_attractor_20260315_210450.json
           exp_43_emergent_coupling_constants_20260315_212848.json
-          meta.yaml
         scripts/
           exp_01_planck_from_pac.py
           exp_02_xi_global_attractor.py
@@ -6251,7 +5840,6 @@ dawn-field-theory/
           exp_41_actualization_ratio_field_dynamics.py
           exp_42_emergent_actualization_attractor.py
           exp_43_emergent_coupling_constants.py
-          meta.yaml
           results/
             exp_11_gamma_origin_20260312_193133.json
             exp_12_2d_bridge_20260312_193154.json
@@ -6264,11 +5852,9 @@ dawn-field-theory/
         SYNTHESIS.md
         meta.yaml
         core/
-          meta.yaml
           oscillation_engine.py
         journals/
           2025-12-24_primes_as_injection.md
-          meta.yaml
         results/
           exp_01_zero_crossing_20251224_135618.json
           exp_02_causality_20251224_135723.json
@@ -6292,7 +5878,6 @@ dawn-field-theory/
           exp_23e_amplification_twist_gpu_20260119_180850.json
           exp_24_comprehensive_validation_20260119_182209.json
           exp_24_comprehensive_validation_20260119_183612.json
-          meta.yaml
         scripts/
           exp_01_zero_crossing_detection.py
           exp_02_prime_causality.py
@@ -6324,7 +5909,6 @@ dawn-field-theory/
           exp_22b_refined_cah.py
           exp_23e_amplification_twist.py
           exp_24_comprehensive_validation.py
-          meta.yaml
       pac_cosmology_validation/
         PROPOSAL_JWST_UPGRADE.md
         README.md
@@ -6333,7 +5917,6 @@ dawn-field-theory/
         meta.yaml
         core/
           constants.py
-          meta.yaml
           pac_constraints.py
           pac_cosmology.py
           qbe_dynamics.py
@@ -6344,7 +5927,6 @@ dawn-field-theory/
           2025-12-13_framework_design.md
           2025-12-13_pac_sec_information_dynamics.md
           2026-01-06_comprehensive_validation.md
-          meta.yaml
         results/
           exp_01_recursion_test_20251213_160229.json
           exp_01_recursion_test_20251213_160348.json
@@ -6366,7 +5948,6 @@ dawn-field-theory/
           exp_10_uhz1_heavy_seeds_20251213_180546.json
           exp_11_comprehensive_20260106_84650.json
           exp_12_falsification_20260106_84915.json
-          meta.yaml
         scripts/
           exp_01_recursion_test.py
           exp_02_qbe_constraint.py
@@ -6381,7 +5962,6 @@ dawn-field-theory/
           exp_10_uhz1_heavy_seeds.py
           exp_11_comprehensive_validation.py
           exp_12_falsification_analysis.py
-          meta.yaml
       pac_dag_fluid/
         README.md
         meta.yaml
@@ -6415,7 +5995,6 @@ dawn-field-theory/
           convergence_analyzer.py
           hypothesis_generator.py
           mesh_builder.py
-          meta.yaml
           pac_residual_tracker.py
         data/
           winequality-red.csv
@@ -6423,7 +6002,6 @@ dawn-field-theory/
           yeast_proteome.tsv
         journals/
           2026-01-20_hypothesis_commit.md
-          meta.yaml
         results/
           exp_01_convergence_bridging_20260120_214646.json
           exp_01_movielens_validation_20260120_214249.json
@@ -6434,7 +6012,6 @@ dawn-field-theory/
           exp_04_biological_convergence_20260120_220058.json
           exp_04_biological_convergence_20260120_220131.json
           exp_05_pac_tree_20260120_220555.json
-          meta.yaml
         scripts/
           exp_01_convergence_bridging.py
           exp_01_real_data_validation.py
@@ -6442,7 +6019,6 @@ dawn-field-theory/
           exp_03_property_convergence.py
           exp_04_biological_convergence.py
           exp_05_pac_tree_construction.py
-          meta.yaml
       phi_artifact_test/
         BLIND_ANALYSIS_CONCLUSIONS.md
         README.md
@@ -6478,28 +6054,22 @@ dawn-field-theory/
         core/
           __init__.py
           constants.py
-          meta.yaml
           mobius_field.py
           projector.py
           sec_operator.py
         docs/
           POWER_LAW.md
           THEORY.md
-          meta.yaml
         experiments/
           exp_01_basic_validation.py
           exp_02_parameter_sweep.py
           exp_03_deep_dive.py
           exp_04_long_evolution.py
-          meta.yaml
         journals/
           .gitkeep
-        results/
-          meta.yaml
         scripts/
           run_all.py
         tests/
-          meta.yaml
           test_core.py
       prime_growth_dynamics/
         README.md
@@ -6507,11 +6077,9 @@ dawn-field-theory/
         meta.yaml
         core/
           growth_engine.py
-          meta.yaml
         journals/
           2026-02-05_andy_conversation_origin.md
           2026-02-05_even_odd_oscillation_discovery.md
-          meta.yaml
         results/
           exp_01_pac_conservation_20260205_110249.json
           exp_02_growth_direction_20260205_110254.json
@@ -6542,7 +6110,6 @@ dawn-field-theory/
           exp_25_xi_exact_derivation_20260205_171241.json
           exp_26_landauer_delta_k_20260205_171544.json
           exp_27_landauer_cross_validation_20260205_172232.json
-          meta.yaml
         scripts/
           exp_01_pac_conservation.py
           exp_02_growth_direction.py
@@ -6579,18 +6146,15 @@ dawn-field-theory/
           exp_30_results.json
           exp_31_results.json
           exp_31_universal_decomposition.py
-          meta.yaml
       prime_growth_dynamics_v2/
         PRE_STRUCTURAL_EMERGENCE.md
         README.md
         SYNTHESIS.md
         meta.yaml
         core/
-          meta.yaml
           phase_engine.py
         journals/
           2026-02-08_full_experiment_suite.md
-          meta.yaml
         results/
           exp_01_lambda_star_20260208_112943.json
           exp_02_beta_20260208_112947.json
@@ -6604,7 +6168,6 @@ dawn-field-theory/
           exp_10_wilson_fisher_gap_20260208_113806.json
           exp_11_alternation_limit_20260208_113814.json
           exp_12_force_depth_mapping_20260208_113825.json
-          meta.yaml
         scripts/
           exp_01_lambda_star_derivation.py
           exp_02_critical_exponent_beta.py
@@ -6618,32 +6181,27 @@ dawn-field-theory/
           exp_10_wilson_fisher_gap.py
           exp_11_alternation_limit.py
           exp_12_force_depth_mapping.py
-          meta.yaml
       recursive_knot_actualization/
         README.md
         SYNTHESIS.md
         meta.yaml
         journals/
           2025-02-04_initial_formalization.md
-          meta.yaml
         results/
           exp_01_ackermann_fibonacci_20260204_125436.json
           exp_02_landauer_bounded_20260204_125441.json
           exp_02b_relational_collapse_20260204_125857.json
           exp_03_prime_base_cases_20260204_130808.json
-          meta.yaml
         scripts/
           exp_01_ackermann_fibonacci.py
           exp_02_landauer_bounded_recursion.py
           exp_02b_relational_collapse.py
           exp_03_prime_base_cases.py
-          meta.yaml
       sec_prime_manifold/
         README.md
         SYNTHESIS.md
         meta.yaml
         core/
-          meta.yaml
           sec_core.py
         journal/
           2025-12-10_phi_attractor_equilibrium.md
@@ -6653,10 +6211,8 @@ dawn-field-theory/
           2025-12-10_phase_transition_discovery.md
           2025-12-10_run_length_mechanism.md
           2025-12-10_validation_and_harmonic_discovery.md
-          meta.yaml
         papers/
           [sec][P][v0.1][C3][I4][E]_golden_arithmetic_preprint.md
-          meta.yaml
         results/
           exp_01_baseline_20251209_201520.json
           exp_02_independence_20251209_201713.json
@@ -6687,7 +6243,6 @@ dawn-field-theory/
           exp_28_optimal_lambda_20251210_161537.json
           exp_29_phase_transition.png
           exp_29_phase_transition_20251210_161759.json
-          meta.yaml
         scripts/
           exp_01_baseline_validation.py
           exp_02_factor_base_independence.py
@@ -6723,7 +6278,6 @@ dawn-field-theory/
           exp_32_phi_attractor.py
           exp_32_phi_attractor_20251210_163903.json
           exp_33_sec_robustness_no_phi.py
-          meta.yaml
         traces/
           exp_18_why_9_structural_20251210_142915.json
           exp_19_why_size_9_phi_20251210_143034.json
@@ -6797,21 +6351,17 @@ dawn-field-theory/
         README.md
         ROADMAP.md
         meta.yaml
-        data/
-          meta.yaml
         journals/
           003_physics_anomaly_queue.md
           2025-12-06_mobius_fibonacci_chain.md
           2025-12-07_fibonacci_derivation_breakthrough.md
           2025-12-24_evening_experiments.md
           2025-12-24_pi_to_phi_mechanism_integration.md
-          meta.yaml
         papers/
           [pac][D][v1.0][C4][I5][E]_complete_fibonacci_assignment_preprint.md
           [pac][D][v1.0][C4][I5][E]_depth_seven_gauge_closure_preprint.md
           [pac][D][v1.0][C4][I5][E]_fibonacci_gauge_derivation_standard_model_preprint.md
           [pac][D][v1.0][C4][I5][E]_testable_predictions_protocols_preprint.md
-          meta.yaml
         results/
           06_2d_turbulence_20251206_135155.json
           07_pac_sec_duality_20251206_140316.json
@@ -6845,7 +6395,6 @@ dawn-field-theory/
           intermittency_analysis_2025-12-06_132322.json
           intermittency_analysis_2025-12-06_133013.json
           intermittency_analysis_2025-12-06_133708.json
-          meta.yaml
           rg_mapping_results_2025-12-06_132305.json
           rg_mapping_results_2025-12-06_132852.json
           rg_mapping_results_2025-12-06_133649.json
@@ -6885,7 +6434,6 @@ dawn-field-theory/
           30_ca_physics_unification.py
           31_prefield_weinberg_derivation.py
           32_unified_sm_from_pac_fibonacci.py
-          meta.yaml
       wealth_field_dynamics/
         EMPIRICAL_STATUS.md
         PREDICTIONS.md
@@ -6968,7 +6516,6 @@ dawn-field-theory/
       THE PHYSICS UNDERLYING CIMM copy.md
       THE PHYSICS UNDERLYING CIMM.md
       The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.md
-      meta.yaml
       docx/
         AI^J Quantum Measurement^J and the Fabric of Reality.docx
         AI_Black_Hole_Information_Paper (1).docx
@@ -6994,15 +6541,12 @@ dawn-field-theory/
         THE PHYSICS UNDERLYING CIMM copy.docx
         THE PHYSICS UNDERLYING CIMM.docx
         The CIMM Framework_ A Unified Computational Physics Engine for Emergent Intelligence.docx
-        meta.yaml
   resources/
-    meta.yaml
     publications_registry.yaml
     recursive_structure.png
     specs/
       citation_template.md
       hardware_timeline.yaml
-      meta.yaml
   roadmaps/
     README.md
     core_project_roadmap.md
@@ -7010,12 +6554,10 @@ dawn-field-theory/
     general_experiments_roadmap.md
     kronos_roadmap.md
     math_arithmetic_roadmap.md
-    meta.yaml
     post_m5_roadmap.md
     publication_framework_roadmap.md
   spikes/
     RECURSIVE_FRACTAL_ARITHMETIC.md
-    meta.yaml
     darkmatter_SEC_WIP/
       README.md
       astro_data_fetcher.py
@@ -7026,14 +6568,9 @@ dawn-field-theory/
       darkmatter_cosmic_web.py
       darkmatter_temporal_gradient.py
       galaxy_temporal_gradient.py
-      meta.yaml
       sec_auto_tuning_engine.py
       sec_simulation_based_tuning.py
       test_astro_fetcher.py
-      debug_plots/
-        meta.yaml
-      debug_plots_cosmic_web/
-        meta.yaml
     infodynamic_gravity/
       MACRO_EMERGENCE_BREAKTHROUGH_REPORT.md
       MACRO_EMERGENCE_REPORT.md
@@ -7041,7 +6578,6 @@ dawn-field-theory/
       VALIDATION_RESULTS_v2.0.md
       hierarchical_information.png
       infodynamic_validation_results.png
-      meta.yaml
       requirements.txt
       run.py
       scale_dependent_arithmetic.py
@@ -7055,15 +6591,12 @@ dawn-field-theory/
         parameter_investigation.py
         run_experiments.py
         sec_enhanced_cosmic_web.py
-      reference_material/
-        meta.yaml
       results/
         beta_investigation.png
         hierarchical_information.png
         infodynamic_validation_results.png
         kappa_scaling.png
         macro_emergence_comparison.png
-        meta.yaml
         sec_enhanced_cosmic_web.png
         validation_summary.json
       src/
@@ -7106,11 +6639,9 @@ dawn-field-theory/
   tools/
     converter.py
     generate_experiment_index.py
-    generate_meta_yamls.py
     generate_path.py
     link_checker.py
     link_fixer.py
-    meta.yaml
     process_citations.py
     update_meta_yamls.py
     validate_citations.py

@@ -53,7 +53,12 @@ experiment_name/
 └── journals/              # YYYY-MM-DD_slug.md — §6
 ```
 
-`meta.yaml` is required in every subdirectory too, not only the experiment root.
+`meta.yaml` lives at the **experiment root only** — not in `core/`, `scripts/`, `results/`
+or `journals/`. Per-directory metadata was a Cognition Index Protocol artifact; CIP was
+removed in February 2026, and the 429 subdirectory files that survived it only restated
+the directory listing that `map.yaml` already generates. They cost 7% of the repo's file
+count, covered 55% of directories so could never serve as a complete index, and produced
+the `Auto-update meta.yaml` commits that made `git log` useless as a staleness signal.
 
 `core/` supersedes the older `reference_material/` convention. Era 1–2 experiments retain
 `reference_material/` and are **not** retrofitted — the layout is itself era evidence.
@@ -197,6 +202,8 @@ the research fields already in use.
 
 ### 5.1 Two zones
 
+Scope: the repo root and each experiment root. Nowhere else.
+
 **Generated zone** — owned by `tools/update_meta_yamls.py` and CI. Never hand-edit.
 
 | Field | Type |
@@ -207,7 +214,7 @@ the research fields already in use.
 **Authored zone** — owned by humans and agents. CI preserves it (the updater round-trips
 the whole document and rewrites only the generated zone).
 
-### 5.2 Required in every directory
+### 5.2 Required fields
 
 ```yaml
 schema_version: "2.1"

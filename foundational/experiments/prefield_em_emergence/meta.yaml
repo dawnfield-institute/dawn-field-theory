@@ -67,6 +67,5 @@ child_directories:
 - docs
 - experiments
 - journals
-- results
 - scripts
 - tests

@@ -1,7 +1,0 @@
-schema_version: '2.0'
-description: Daily research logs for PAC knowledge discovery experiment
-semantic_scope: documentation
-proficiency_level: research
-files:
-- 2026-01-20_hypothesis_commit.md
-child_directories: []

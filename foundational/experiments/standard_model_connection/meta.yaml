@@ -40,7 +40,6 @@ files:
 - README.md
 - ROADMAP.md
 child_directories:
-- data
 - journals
 - papers
 - results

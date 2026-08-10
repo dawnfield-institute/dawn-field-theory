@@ -1,7 +1,0 @@
-schema_version: '2.0'
-description: Draft papers and theoretical writeups
-semantic_scope: publication
-files:
-- addendum_ln_phi_emergence.md
-- journal.md
-child_directories: []

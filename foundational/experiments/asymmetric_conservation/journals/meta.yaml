@@ -1,9 +1,0 @@
-schema_version: '2.0'
-description: Daily research journals for asymmetric conservation experiment
-semantic_scope: documentation
-proficiency_level: research
-files:
-- 2026-01-22_deep_dive_pac_dynamics.md
-- 2026-01-22_experiment_creation.md
-- 2026-02-08_sec_local_pac_global.md
-child_directories: []

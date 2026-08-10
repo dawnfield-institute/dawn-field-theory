@@ -1,6 +1,0 @@
-schema_version: '2.0'
-description: Daily research logs
-semantic_scope: documentation
-files:
-- 2026-02-07_cascade_time_computation.md
-child_directories: []

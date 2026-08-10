@@ -32,6 +32,5 @@ files:
 child_directories:
 - core
 - journals
-- papers
 - results
 - scripts
