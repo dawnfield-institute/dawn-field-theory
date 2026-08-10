@@ -23,39 +23,66 @@ import subprocess
 import sys
 import urllib.parse
 from collections import Counter
-from pathlib import Path
+import posixpath
+from pathlib import Path, PurePosixPath
 
 REPO = Path(__file__).resolve().parent.parent
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 EXTERNAL = ("http://", "https://", "mailto:", "ftp://", "//")
 
 
-def tracked_markdown() -> list[Path]:
+def _ls_files(*args: str) -> list[str]:
     out = subprocess.run(
-        ["git", "-c", "core.quotePath=false", "ls-files", "-z", "*.md"],
+        ["git", "-c", "core.quotePath=false", "ls-files", "-z", *args],
         cwd=REPO, capture_output=True, text=True, check=True,
     ).stdout
-    return [REPO / p for p in out.split("\0") if p]
+    return [p for p in out.split("\0") if p]
 
 
-def unresolved(include_changelog: bool) -> list[tuple[Path, str, str]]:
+def tracked_markdown() -> list[str]:
+    return _ls_files("*.md")
+
+
+def committed_paths() -> set[str]:
+    """Every tracked file plus every directory implied by one, as repo-relative posix.
+
+    Links are resolved against this rather than against the working tree. The working
+    tree is not what a reader sees on github.com, and checking it makes the result
+    depend on the checkout: Windows resolves case-insensitively, untracked local files
+    resolve as if committed, and the count then differs from CI for reasons that have
+    nothing to do with the links. Resolving against the index is deterministic.
+    """
+    paths = set(_ls_files())
+    for p in list(paths):
+        parts = p.split("/")
+        for i in range(1, len(parts)):
+            paths.add("/".join(parts[:i]))
+    return paths
+
+
+def unresolved(include_changelog: bool) -> list[tuple[str, str, str]]:
     """Return (source_file, link_text, target) for each link that does not resolve."""
-    bad: list[tuple[Path, str, str]] = []
-    for path in tracked_markdown():
-        rel = path.relative_to(REPO).as_posix()
+    committed = committed_paths()
+    bad: list[tuple[str, str, str]] = []
+    for rel in tracked_markdown():
         if not include_changelog and rel.startswith(".changelog/"):
             continue
-        if not path.exists():
+        full = REPO / rel
+        if not full.exists():
             continue
-        text = path.read_text(encoding="utf-8", errors="replace")
+        text = full.read_text(encoding="utf-8", errors="replace")
+        parent = PurePosixPath(rel).parent
         for label, target in LINK_RE.findall(text):
             link = target.split("#")[0].strip().strip("<>")
             if not link or link.lower().startswith(EXTERNAL):
                 continue
             decoded = urllib.parse.unquote(link)
-            resolved = (path.parent / decoded).resolve()
-            if not resolved.exists():
-                bad.append((path, label, link))
+            # posixpath.normpath, not os.path — the answer must not depend on the OS.
+            resolved = posixpath.normpath(str(parent / decoded)).strip("/")
+            if resolved in (".", ""):
+                continue
+            if resolved not in committed:
+                bad.append((rel, label, link))
     return bad
 
 
@@ -70,7 +97,7 @@ def main() -> int:
     args = ap.parse_args()
 
     bad = unresolved(args.changelog)
-    by_area = Counter(p.relative_to(REPO).as_posix().split("/")[0] for p, _, _ in bad)
+    by_area = Counter(rel.split("/")[0] for rel, _, _ in bad)
 
     print(f"unresolved relative links: {len(bad)}"
           f"{'' if args.changelog else '  (.changelog/ excluded)'}")
@@ -79,8 +106,8 @@ def main() -> int:
 
     if args.list:
         print()
-        for path, label, link in sorted(bad, key=lambda b: b[0].as_posix()):
-            print(f"  {path.relative_to(REPO).as_posix()}")
+        for rel, label, link in sorted(bad):
+            print(f"  {rel}")
             print(f"      [{label}] -> {link}")
 
     if args.max is not None and len(bad) > args.max:
@@ -89,6 +116,10 @@ def main() -> int:
         print("New link rot was introduced. Fix the new links, or if the rise is "
               "deliberate, raise the ceiling in .github/workflows/repo-standards.yml "
               "in the same commit.", file=sys.stderr)
+        if not args.list:   # name them, so a CI log is enough to diagnose
+            print("\nUnresolved links:", file=sys.stderr)
+            for rel, label, link in sorted(bad)[:40]:
+                print(f"  {rel}\n      [{label}] -> {link}", file=sys.stderr)
         return 1
     return 0
 
