@@ -10,22 +10,23 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 |---|---|---|
 | [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 16 |
 | [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 21 |
-| [`experiments/`](experiments/) | what was measured | 2630 |
+| [`experiments/`](experiments/) | what was measured | 2633 |
 | [`papers/`](papers/) | what was published | 1509 |
 | [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 11 |
 
-Tracked files: **9372**
+Tracked files: **9375**
 
-**75 experiments** — 50 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
+**76 experiments** — 51 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 
 ## On deck
 
-17 experiments being worked now.
+18 experiments being worked now.
 
 | Experiment | Kind | Title |
 |---|---|---|
 | [`milestone15`](experiments/milestones/milestone15/) | milestones | Milestone 15: The Representative Problem (DFT-Hodge Boundary) |
+| [`milestone16`](experiments/milestones/milestone16/) | milestones | Milestone 16: Relational Locality — How Neighbours Come to Cohere |
 | [`midnight`](experiments/sidecars/midnight/) | sidecars | Midnight: Observational Frontiers of Dawn Field Theory |
 | [`milestone-r`](experiments/sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance |
 | [`ade_cascade`](experiments/studies/ade_cascade/) | studies | ADE Cascade: Re-founding Turbulence on Milestone Machinery |

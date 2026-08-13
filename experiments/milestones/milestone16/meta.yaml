@@ -1,0 +1,47 @@
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+directory_name: milestone16
+name: milestone16
+title: 'Milestone 16: Relational Locality — How Neighbours Come to Cohere'
+description: 'Opened by an empirical dead end in reality-engine: spatial autocorrelation
+  length sits at 1.00 cell - the floor, meaning neighbouring cells are statistically
+  independent - and stayed there under every intervention tried, including removing
+  gravity entirely. Rendering the mass field confirms pixel-level speckle with no
+  connected structure. The claim is that locality is not given by the lattice: coherence
+  between neighbouring regions is a consequence of RELATIONAL identity, and a system
+  whose elements carry intrinsic state cannot produce it at any coupling strength.
+  The framework already holds identity to be relational - M13 (identity IS complement),
+  confluent-identity (identity as weighted confluence of children), M14 (states on
+  the orbit quotient) - but the engine implements none of it. Asks the dynamical question
+  those results leave open.
+
+  '
+status: active
+confidence: 0.3
+pillar: SEC
+hypothesis: 'A dynamics in which a cell''s state is defined by its complement or confluence
+  with neighbours, rather than held intrinsically, produces spatial correlation length
+  above the 1.0-cell floor.
+
+  '
+falsification: 'If a relational-identity dynamics still yields correlation length
+  1.0 across the parameter range, relational identity is not what produces spatial
+  coherence and the incoherence has another cause. Secondary failure: correlation
+  appears only where conservation breaks or the run diverges.
+
+  '
+validation_type: computational
+created: '2026-08-13'
+tags:
+- milestone16
+- relational-identity
+- locality
+- coherence
+- correlation-length
+- complement
+- orbit-quotient
+- reality-engine
+files:
+- README.md
+child_directories:
+- journals

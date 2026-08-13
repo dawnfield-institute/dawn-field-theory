@@ -2,7 +2,7 @@
 
 **Generated file — do not edit by hand.** Regenerate with `python tools/generate_experiment_index.py`.
 
-75 experiments: 50 live (17 active, 32 completed, 1 other) and 25 archived.
+76 experiments: 51 live (18 active, 32 completed, 1 other) and 25 archived.
 
 Eras, lifecycle values, and the archival rule are defined in [`STANDARDS.md`](../STANDARDS.md) §2.2–2.3. Archived work is preserved lineage, not deprecated work — see [`../archive/README.md`](../archive/README.md).
 
@@ -13,6 +13,7 @@ Currently being worked.
 | Experiment | Kind | Title | Score |
 |---|---|---|---|
 | [`milestone15`](milestones/milestone15/) | milestones | Milestone 15: The Representative Problem (DFT-Hodge Boundary) | — |
+| [`milestone16`](milestones/milestone16/) | milestones | Milestone 16: Relational Locality — How Neighbours Come to Cohere | — |
 | [`midnight`](sidecars/midnight/) | sidecars | Midnight: Observational Frontiers of Dawn Field Theory | 22/32 |
 | [`milestone-r`](sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance | 60/112 |
 | [`ade_cascade`](studies/ade_cascade/) | studies | ADE Cascade: Re-founding Turbulence on Milestone Machinery | — |

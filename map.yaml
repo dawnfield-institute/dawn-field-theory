@@ -2509,6 +2509,11 @@ dawn-field-theory/
           exp_04_holonomy_closed_form.py
           exp_05_general_k_limit.py
           exp_06_k56_confirmation.py
+      milestone16/
+        README.md
+        meta.yaml
+        journals/
+          2026-08-13_founding.md
       milestone2/
         README.md
         meta.yaml
