@@ -1,0 +1,57 @@
+schema_version: "3.0"
+type: series
+name: PACSeries
+title_template: "PACSeries Paper {order}: {title}"
+concept_doi: "10.5281/zenodo.17295102"
+
+defaults:
+  authors:
+    - name: "Groom, Peter"
+      affiliation: "Dawn Field Institute"
+  license: "AGPL-3.0"
+  keywords_always:
+    - "Dawn Field Theory"
+    - "PAC conservation"
+    - "symbolic entropy collapse"
+    - "infodynamics"
+
+versions:
+  # ---- prior published version (concept-DOI lineage anchor) --------------
+  - tag: "v0.2"
+    date: "2026-02-23"
+    status: "superseded"
+    record_policy: cumulative
+    zenodo:
+      doi: "10.5281/zenodo.18743674"
+      record_id: 18743674
+
+  # ---- current version being prepared -----------------------------------
+  - tag: "v0.3"
+    date: "2026-07-06"
+    status: "draft"
+    record_policy: cumulative
+    members:
+      - slug: symmetry_primitive_scoped_mediation
+        path: PACSeries/v0.3/symmetry_primitive_scoped_mediation
+        order: 7
+        version: "1.0"
+      - slug: quantum_gravity_information_conservation
+        path: PACSeries/v0.3/quantum_gravity_information_conservation
+        order: 8
+        version: "1.0"
+      - slug: cosmological_predictions_cascade_clock
+        path: PACSeries/v0.3/cosmological_predictions_cascade_clock
+        order: 9
+        version: "1.0"
+      - slug: connection_identity_spacetime
+        path: PACSeries/v0.3/connection_identity_spacetime
+        order: 10
+        version: "1.0"
+      - slug: quantum_mechanics_graph_structure
+        path: PACSeries/v0.3/quantum_mechanics_graph_structure
+        order: 11
+        version: "1.0"
+      - slug: observational_contact_absorption_spectroscopy
+        path: PACSeries/v0.3/observational_contact_absorption_spectroscopy
+        order: 12
+        version: "1.0"

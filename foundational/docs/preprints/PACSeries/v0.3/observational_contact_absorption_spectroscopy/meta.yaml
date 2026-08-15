@@ -1,41 +1,21 @@
-schema_version: '2.0'
-id: pacseries-paper-12
-title: "First Observational Contact: Testing the Cascade Clock Against Quasar Absorption Lines"
-author: Peter Groom
-institution: Dawn Field Institute
-series: PACSeries
-paper_number: 12
-version: "1.0"
+schema_version: '3.0'
+type: paper
+slug: observational_contact_absorption_spectroscopy
+title: 'First Observational Contact: Testing the Cascade Clock Against Quasar Absorption Lines'
+version: '1.0'
 status: draft
-date_created: "2026-06-09"
-domain: physics
-tags:
-  - observational-cosmology
-  - quasar-absorption-lines
-  - cascade-clock
-  - CIV
-  - MgII
-  - velocity-evolution
-  - ionization-redistribution
-  - PAC-conservation
-  - falsifiable-predictions
-dependencies:
-  - pacseries-paper-9  # cascade clock (derivation + mechanism)
-data_sources:
-  - SDSS DR16 MgII Absorber Catalog (159,524 systems)
-  - SDSS DR16 FeII-confirmed MgII Catalog (69,675 systems)
-  - SDSS DR12 CIV Catalog (445,765 systems)
-  - XQR-30 Multi-Ion Catalog (5,764 components)
-pre_registration:
-  commit: "193d1c8e"
-  date: "2026-06-06"
-  repository: "https://github.com/dawnfield-institute/dawn-field-theory"
-key_results:
-  civ_velocity_r2: 0.851
-  halo_virial_r2: 0.778
-  phi_slope_cost: 0.000
-  skewness_p: 0.003
-  fe_mg_r2: 0.89
-  n_ions_ae_plane: 8
-  topology_energy_cv: 0.0000
-  topology_structure_cv: 0.36
+date: '2026-06-09'
+series:
+  name: PACSeries
+  order: 12
+keywords:
+- observational-cosmology
+- quasar-absorption-lines
+- cascade-clock
+- CIV
+- MgII
+- velocity-evolution
+- ionization-redistribution
+- PAC-conservation
+- falsifiable-predictions
+source_experiments: []
