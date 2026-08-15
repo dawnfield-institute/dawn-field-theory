@@ -1,8 +1,0 @@
-schema_version: "2.0"
-description: "Reusable modules for algebraic and geometric complexity metrics"
-semantic_scope: "implementation"
-proficiency_level: "research"
-
-files:
-  - "[complexity_metrics.py]": "Algebraic and geometric complexity definitions"
-  - "[ratio_analyzer.py]": "Cross-experiment ratio computation"

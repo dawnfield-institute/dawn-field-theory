@@ -1,0 +1,28 @@
+schema_version: '2.0'
+slug: potential_actualization_conservation_comprehensive
+title: Potential Actualization Conservation Comprehensive
+category: pac
+status: Draft
+version: '1.0'
+complexity: 5
+impact: 5
+evidence_type: E
+created: '2025-12-20T11:18:57.176702'
+original_filename: '[pac][D][v1.0][C5][I5][E]_potential_actualization_conservation_comprehensive_preprint.md'
+source_location: drafts
+files:
+- CITATION.md
+- LICENSE
+- README.md
+- UNIFIED_EVIDENCE.md
+- paper.md
+code:
+  has_experiments: true
+  trace_file: Code/trace.yaml
+keywords:
+- Dawn Field Theory
+- PAC
+child_directories:
+- Code
+- Data
+- Figures

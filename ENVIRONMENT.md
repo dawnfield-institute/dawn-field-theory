@@ -1,35 +1,69 @@
 # Environment and Reproducibility
 
-This repository targets Python 3.10-3.12 on Windows, macOS, and Linux. Experiments are pure Python with optional GPU acceleration via PyTorch.
+Python 3.10–3.12 on Windows, macOS or Linux. Experiments are pure Python; GPU is optional
+and only used by `reality-engine` and some GAIA work.
 
-## Quick Start (CPU-only)
+## Quick start
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\Activate.ps1 on Windows
+source .venv/bin/activate          # .venv\Scripts\Activate.ps1 on Windows
 pip install --upgrade pip
 pip install -r requirements.txt
-# Install PyTorch separately for your platform:
-# https://pytorch.org/get-started/locally/
 ```
 
-## Dependencies
+That covers the experiments and the repository tooling. **PyTorch is deliberately not in
+`requirements.txt`** — its wheels are platform- and CUDA-specific and cannot be expressed
+portably. Install it separately if you need it:
+<https://pytorch.org/get-started/locally/>
 
-Core experiments use numpy, scipy, matplotlib, and sympy. PyTorch is optional (used by reality-engine and some GAIA experiments).
+## Running an experiment
 
-PyTorch is intentionally excluded from requirements.txt to avoid platform wheel mismatches. Install it per your CUDA/CPU environment.
+Experiments are self-contained. From the repository root:
 
-## Related Repos
+```bash
+python experiments/milestones/milestone15/scripts/exp_04_holonomy_closed_form.py
+```
 
-| Repo | Purpose | Dependencies |
-|------|---------|-------------|
-| `fracton` | PAC math SDK (70+ modules) | numpy, scipy |
-| `reality-engine` | GPU simulator | PyTorch, numpy |
-| `dawn-models` | GAIA ML models | PyTorch, fracton |
+Results are written to that experiment's `results/` as
+`exp_NN_name_YYYYMMDD_HHMMSS.json`. Nothing overwrites a prior run — the timestamp makes
+each result addressable.
+
+On Windows, set `PYTHONIOENCODING=utf-8` before running. Several scripts print ✓ and Greek
+letters, and the default console codepage (cp1252) raises `UnicodeEncodeError` on them —
+which looks like a failed experiment but is only a failed print.
+
+## Repository tooling
+
+```bash
+python tools/validate_experiment_structure.py   # structure + metadata against STANDARDS.md
+python tools/generate_experiment_index.py       # regenerate experiments/EXPERIMENTS.md
+python tools/generate_inventory.py              # regenerate INVENTORY.md
+python tools/generate_path.py                   # regenerate map.yaml
+python tools/update_meta_yamls.py               # refresh the generated meta.yaml zone
+python tools/check_links.py                     # unresolved relative links, by area
+```
+
+CI runs all of these and fails on a structural error or a stale generated file. Run the
+validator before opening a PR.
+
+## Related repos
+
+| Repo | Purpose | Extra dependencies |
+|---|---|---|
+| `fracton` | PAC mathematics library | numpy, scipy |
+| `reality-engine` | GPU simulator | PyTorch |
+| `dawn-models` | GAIA and ML validation | PyTorch, fracton |
 
 ## Reproducibility
 
-- Experiments in `foundational/experiments/` are self-contained Python scripts
-- Each experiment directory has a `meta.yaml` with metadata and a `README.md` with results
-- Prefer running experiments inside a fresh virtual env
-- Pin exact versions in a lock file if you snapshot a result for a preprint
+- Experiments live under `experiments/{milestones,sidecars,studies}/` and each has a
+  `meta.yaml` and a `README.md` carrying its score and honest failures.
+- Prefer a fresh virtual environment.
+- **Pin exact versions in a lock file when you snapshot a result for a preprint.** The
+  floors in `requirements.txt` are for working, not for archiving — a published package
+  should record the versions it actually ran against, and
+  `papers/registry/hardware_timeline.yaml` records the hardware.
+- Archived experiments under `archive/` predate the current layout and may carry their own
+  `requirements.txt`. They are preserved as-run and are not maintained against current
+  dependencies.

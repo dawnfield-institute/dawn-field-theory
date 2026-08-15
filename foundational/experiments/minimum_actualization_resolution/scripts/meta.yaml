@@ -1,9 +1,0 @@
-schema_version: "2.0"
-description: "Experiment scripts for minimum actualization resolution analysis"
-semantic_scope: "implementation"
-files:
-  - "[exp_01_planck_from_pac.py]": "Cascade dynamics on shrinking lattice; three constraints converging on Planck scale"
-  - "[exp_02_xi_global_attractor.py]": "xi as global attractor in cascade dynamics (sub-experiments 2A-2G)"
-  - "[exp_03_planck_to_xi.py]": "Unified derivation connecting Planck scale to xi via recycling bridge eta"
-  - "[exp_04_eta_geometry.py]": "Derive eta_PAC from 3D She-Leveque cascade geometry (k_eff=8)"
-  - "[exp_05_phi_proximity.py]": "l_MVAE proximity to phi and Euler gap analysis"

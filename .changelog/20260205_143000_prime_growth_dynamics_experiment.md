@@ -60,4 +60,4 @@ This sparked questions about how the number line "grows":
 - [milestone2](../foundational/experiments/milestone2/README.md)
 - [sec_prime_manifold](../foundational/experiments/sec_prime_manifold/SYNTHESIS.md)
 - [oscillation_attractor_dynamics](../foundational/experiments/oscillation_attractor_dynamics/SYNTHESIS.md)
-- [prime_harmonic_manifold](../foundational/experiments/prime_harmonic_manifold/SYNTHESIS.md)
+- [prime_harmonic_manifold](../foundational/experiments/archive/era2/prime_harmonic_manifold/SYNTHESIS.md)

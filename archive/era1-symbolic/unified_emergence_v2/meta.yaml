@@ -1,0 +1,27 @@
+schema_version: '2.1'
+era: era1-symbolic-collapse-2025h1
+status: archived
+title: Unified Emergence Framework v2
+directory_name: unified_emergence_v2
+description: Production-grade Unified Emergence Framework v2 with Clean Architecture,
+  implementing statistical validation of emergence patterns across multiple physical
+  domains (MED, gravity, fluid dynamics) with comprehensive parameter sweep capabilities
+  and 87.5% Phase 1 success rate.
+semantic_scope:
+- emergence_detection
+- framework_architecture
+- statistical_validation
+- multi_domain_analysis
+- phase1_production_ready
+- clean_architecture
+- parameter_sweep
+- publication_ready
+files:
+- README.md
+- requirements.txt
+child_directories:
+- docs
+- journals
+- results
+- scripts
+- src

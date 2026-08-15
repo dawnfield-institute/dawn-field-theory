@@ -1,0 +1,34 @@
+schema_version: '2.1'
+era: era2-prefield-infodynamics-2025h2
+status: completed
+title: 'Euclidean Distance Validation: PAC Hierarchy in Embedding Space'
+directory_name: euclidean_distance_validation
+description: 'Validates PAC conservation over embedding geometry: 25 numbered experiments
+  against a pac_hierarchy core, with a conservation proof (experiment_25). Consumed
+  by milestone1 exp_29 (euclidean E=mc^2). Previously filed under archive/era1-symbolic/
+  despite carrying full experiment structure - core/, numbered scripts, tests/, journals/,
+  results/.
+
+  '
+tags:
+- pac
+- embedding
+- conservation
+- euclidean
+- validation
+files:
+- CORRECTIONS_NEEDED.md
+- INTEGRATION_ROADMAP.md
+- METHODS.md
+- PROPOSAL.md
+- R2_EQUIVALENCE_RESOLUTION.md
+- README.md
+- RESULTS.md
+- requirements.txt
+child_directories:
+- core
+- euclidean_distance_validation
+- experiments
+- journals
+- results
+- tests

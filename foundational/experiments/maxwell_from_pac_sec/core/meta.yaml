@@ -1,7 +1,0 @@
-schema_version: "2.0"
-description: "Core reusable modules for SEC-Maxwell simulations"
-semantic_scope: "implementation"
-files:
-  - "[constants.py]": "PAC/SEC fundamental constants"
-  - "[sec_wave.py]": "SEC wave equation solver"
-  - "[charge_topology.py]": "Topological charge model"

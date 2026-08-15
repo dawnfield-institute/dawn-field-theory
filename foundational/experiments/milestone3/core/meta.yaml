@@ -1,8 +1,0 @@
-schema_version: "2.0"
-description: "Shared core module for milestone3 experiments (constants, ξ calculator, utilities)"
-semantic_scope: "implementation"
-files:
-  - "[__init__.py]": "Package init"
-  - "[constants.py]": "Shared mathematical, thermodynamic, and SM reference constants"
-  - "[xi_calculator.py]": "Structure information ξ computation from multi-mode energy dispersals"
-  - "[utils.py]": "Result saving, sieve, timer, experiment header utilities"

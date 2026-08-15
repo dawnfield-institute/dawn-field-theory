@@ -1,0 +1,94 @@
+{
+  "experiment": "exp_16_universality_gn",
+  "timestamp": "2026-05-28T09:49:15.580837",
+  "block": "C",
+  "thesis": "The Geiger-Nuttall scaling log(FPT) ~ d/f(sigma) is a UNIVERSAL property of any barrier requiring d simultaneous threshold exceedances under stochastic noise. Not specific to Coulomb or to ADE -- it is a statistical-mechanical theorem. Analytical prediction: FPT = 1/[erfc(tau/(sigma*sqrt(2)))]^d.",
+  "test_results": {
+    "T1": {
+      "description": "Single curve R^2 > 0.7 across A, D, E types",
+      "n_points": 244,
+      "n_graphs": 10,
+      "combined_r2": 0.7427,
+      "combined_slope": 0.0301,
+      "family_r2s": {
+        "A": 0.7755,
+        "D": 0.7378,
+        "E": 0.7453
+      },
+      "families_present": {
+        "A": 88,
+        "D": 104,
+        "E": 52
+      },
+      "PASS": true
+    },
+    "T2": {
+      "description": "Spearman correlation > 0.8 between predicted and actual FPT",
+      "n_points": 105,
+      "spearman_rho": 0.8977,
+      "log_log_r2": 0.8495,
+      "log_log_slope": 0.3721,
+      "median_ratio_emp_pred": 0.4152,
+      "ratio_iqr": 0.2665,
+      "PASS": true
+    },
+    "T3": {
+      "description": "R^2 > 0.5 for d/sqrt(sigma) at each threshold level",
+      "per_threshold": [
+        {
+          "threshold": 0.005,
+          "n_points": 84,
+          "r2": 0.5759,
+          "slope": 0.0159,
+          "pass": true
+        },
+        {
+          "threshold": 0.008,
+          "n_points": 84,
+          "r2": 0.7312,
+          "slope": 0.0287,
+          "pass": true
+        },
+        {
+          "threshold": 0.012,
+          "n_points": 84,
+          "r2": 0.7195,
+          "slope": 0.0371,
+          "pass": true
+        }
+      ],
+      "n_pass": 3,
+      "n_thresholds": 3,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Consistent k across graph types (std < 0.3*mean)",
+      "per_family": [
+        {
+          "family": "A",
+          "n_points": 108,
+          "best_k": 1.123,
+          "best_r2": 0.9194
+        },
+        {
+          "family": "D",
+          "n_points": 156,
+          "best_k": 1.172,
+          "best_r2": 0.8808
+        },
+        {
+          "family": "E",
+          "n_points": 78,
+          "best_k": 1.172,
+          "best_r2": 0.8792
+        }
+      ],
+      "mean_k": 1.156,
+      "std_k": 0.023,
+      "overall_best_k": 1.172,
+      "overall_best_r2": 0.8896,
+      "PASS": true
+    }
+  },
+  "overall_score": "4/4"
+}

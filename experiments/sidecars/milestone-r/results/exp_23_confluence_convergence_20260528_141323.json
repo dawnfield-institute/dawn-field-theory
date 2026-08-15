@@ -1,0 +1,98 @@
+{
+  "experiment": "exp_23_confluence_convergence",
+  "timestamp": "2026-05-28T14:13:23.922794",
+  "block": "C",
+  "thesis": "Confluence arithmetic predicts per-series convergence rates are ordered by stream position: Lyman (earliest, most robust) converges fastest, Paschen (latest, most sensitive) converges slowest. The 1/k^2 pattern is the confluent attractor where all streams agree.",
+  "test_results": {
+    "T1": {
+      "description": "Per-series convergence exponents ordered",
+      "exponents": {
+        "Lyman": {
+          "p": 4.081445945936805,
+          "r2": 0.9997579829854212,
+          "n_points": 47
+        },
+        "Balmer": {
+          "p": 4.132929452354553,
+          "r2": 0.9994553978121379,
+          "n_points": 46
+        },
+        "Paschen": {
+          "p": 4.190507121346687,
+          "r2": 0.9990322700627147,
+          "n_points": 45
+        },
+        "Brackett": {
+          "p": 4.252417505395101,
+          "r2": 0.9985085314118161,
+          "n_points": 44
+        }
+      },
+      "strictly_decreasing": false,
+      "PASS": false
+    },
+    "T2": {
+      "description": "Exponents follow clean f(m)",
+      "best_fit": "p(m) = 4.022 - -0.057*m",
+      "best_label": "linear",
+      "r2_power": 0.9461,
+      "r2_linear": 0.9983,
+      "r2_log": 0.9434,
+      "best_r2": 0.9983,
+      "PASS": true
+    },
+    "T3": {
+      "description": "Branching sensitivity Paschen > Balmer > Lyman",
+      "branching_data": {
+        "8": {
+          "Lyman": 2.6909,
+          "Balmer": 12.4537,
+          "Paschen": 2.8716
+        }
+      },
+      "ordering_holds": 0,
+      "ordering_total": 1,
+      "PASS": false
+    },
+    "T4": {
+      "description": "Per-series errors converge at large n",
+      "convergence_data": {
+        "10": {
+          "errors_pct": {
+            "Lyman": 0.021456,
+            "Balmer": 0.127885,
+            "Paschen": 0.405889
+          },
+          "max_min_ratio": 18.917
+        },
+        "20": {
+          "errors_pct": {
+            "Lyman": 0.001286,
+            "Balmer": 0.007309,
+            "Paschen": 0.021597
+          },
+          "max_min_ratio": 16.795
+        },
+        "30": {
+          "errors_pct": {
+            "Lyman": 0.000252,
+            "Balmer": 0.001421,
+            "Paschen": 0.004149
+          },
+          "max_min_ratio": 16.458
+        },
+        "50": {
+          "errors_pct": {
+            "Lyman": 3.3e-05,
+            "Balmer": 0.000183,
+            "Paschen": 0.00053
+          },
+          "max_min_ratio": 16.292
+        }
+      },
+      "ratio_at_50": 16.292,
+      "PASS": false
+    }
+  },
+  "overall_score": "1/4"
+}

@@ -1,0 +1,162 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+description: 'Arithmetic Dimension Emergence (ADE) — investigates the hypothesis that
+  arithmetic operations ARE dimensions: addition→line, multiplication→plane, exponentiation→volume,
+  with tetration''s property collapse explaining D=3. Phase 1 validates conformal
+  group generation (inversion as Level 0), Feigenbaum-ADE correspondence, and Li₂
+  identity derivation from first principles. Builds on exp_24 (oscillation attractors),
+  exp_23 (harmonic bridge), and Feigenbaum-Fibonacci closed forms.
+
+  '
+semantic_scope: research
+proficiency_level: research
+version: 1.0.0
+status: active
+directory_name: exp_30_arithmetic_dimension_emergence
+title: Arithmetic Dimension Emergence (ADE)
+date_created: '2026-03-27'
+date_updated: '2026-03-28'
+files:
+- PRELIMINARY_RESULTS.md
+- README.md
+- VAULT_SYNC_PENDING.md
+- test_feigenbaum_decomposition.py
+- test_mode_count.py
+- test_prime_coordinates.py
+- test_recursive_closure.py
+- test_symmetry_generators.py
+child_directories:
+- journals
+- output
+- results
+- scripts
+estimated_context_weight: 0.95
+validation_type: computational
+key_results:
+- Inversion (z→1/z) identified as Level 0 generator — {I,T,D,R} generate full PSL(2,C)
+- Bruhat decomposition M = T(a/c)·D(-1/c²)·I·T(d/c) verified to machine precision
+  (200/200)
+- 'Feigenbaum cascade climbs ADE ladder: L1→L2→L3 via orbit topology, RG is hyperbolic
+  Möbius'
+- Li₂(1/φ) = π²/10 − ln²(φ) verified to 51 digits; polylog ladder Li₀=φ, Li₁=2lnφ
+- ξ = γ + ln(φ) bootstrap cost confirmed to 6 sig figs
+- Tetration fails all Lie group requirements — exp map diverges, no smooth inverse
+- Primes 176× more concentrated in multiplicative coordinates (CV 0.0046 vs 0.807)
+- 2^d+1 = d·F_{d+1} unique at d=3 (verified d=1..500), linked to Mihailescu's theorem
+- 'Prime boundary asymmetry: right-skewed residuals with 141× excess at 4σ — Level
+  2 topology'
+- 'Confluence at x=2: all higher self-applications converge; φ is unique 3-level equilibrium'
+- 'Spacetime signature (1,3) derived via spin map: PSL(2,C)≅SO+(3,1), det(H)=t²-x²-y²-z²'
+- F_183 = 10^37.9 reproduces gravitational hierarchy; 183 = F_7^2 + F_7 + 1
+- Zeckendorf(137) = F_11+F_9+F_7+F_2 — top three odd, contains F_7 (ADE depth)
+- 'Iwasawa decomposition SL(2,C)=KAN maps to ADE levels: K=SU(2)/L3, A=diag/L2, N=tri/L1'
+- U(1)⊂SU(2)⊂SL(2,C) nesting from ADE level hierarchy, couplings correctly ordered
+- SU(3) from d=3 level structure — 3 ADE levels force 8-dim su(3) algebra
+- sin²(θ_W) = 3/13 at 0.19% — d=3 and F_7=13 both ADE-derived
+- log(α_G⁻¹)/log(α_EM⁻¹) ≈ φ⁶ at 0.30% — hierarchy ratio is Fibonacci power
+- 'Born rule forced by ADE: spin map L2, Gleason d≥3, L1/L3 fail normalization/additivity'
+- Entanglement = Level 0 (inversion) boundary topology on composite systems
+- 'FAIL: non-gravitational coupling depths NOT clean Fibonacci — ADE scope boundary'
+- F_4=3 appears in ALL 5 DFT mass predictions (mu/e, tau/e, p/e, Koide Q, sin2tW)
+  — coincidence <0.013%
+- Koide Q = 2/3 = F_3/F_4 at 0.001%; Koide-Foot parametrization recovers all 3 lepton
+  masses to <0.004%
+- Cabibbo angle arctan(3/13) = arctan(F_4/F_7) confirmed at 0.045 deg; CKM hierarchy
+  monotonic
+- 3 copies of SL(2,C) fundamental = 6-dim generation space; block-diagonal SU(2) =
+  weak universality
+- 'Anomaly cancellation per-generation (honest: works for ANY N, not just 3)'
+- 'No 4th generation: tetration 0/3 Lie properties, Higgs mu excludes at >100sigma'
+- Two inequivalent Weyl reps (1/2,0) and (0,1/2) from SL(2,C); epsilon tensor maps
+  between them
+- Chirality = Level 0 (inversion) distinction; parity maps L<->R via gamma^0
+- Clifford algebra verified; Dirac = L+R sum (Level 1); mass couples chiralities
+- SU(2)_L acts only on left-handed block; Level 3 asymmetry (exp!=log) selects chirality
+- 'CPT: P=Level 0, C=Level 2, T=Level 0xLevel 2; all prerequisites from ADE'
+- 'PAC = closure conservation: each ADE level conserves in its own algebra (L1 additive,
+  L2 multiplicative, L3 exponential)'
+- SEC threshold 1/phi from phi^2=phi+1 (L2=L1+L0); partitions structure from noise
+- 'xi = gamma + ln(phi): L1 divergence cost + L2 convergence bound = level transition
+  cost'
+- MED bounds (depth<=2, nodes<=3) from tetration termination — not empirical but arithmetic
+  necessity
+- 'Xi_top = 1+pi/55 = 1.0571 vs xi_pac = 1.0584: two independent routes within 0.12%'
+- 'Full ADE->DFT derivation chain: 9 links, 18 predictions, 0 free parameters'
+- 'RBF components = ADE levels: E=L1 (additive), I=L2 (multiplicative), M=L3 (exponential
+  memory)'
+- 'Mobius band from PSL(2,C) inversion: (u,v)~(u+pi,1-v), non-orientable, pi_1=Z'
+- Antiperiodic /2 = Z_2 Reynolds operator (geometric, not normalization)
+- 'Self-regulation from x=2 confluence: E=I -> B=0, negative feedback, monotonic'
+- 'Conservative dynamics forced by ADE closure: transfer-only is unique PAC-consistent
+  coupling'
+- RBF formula structure derived from ADE (Tier 2); parameters lambda, alpha not derivable
+  (Tier 3)
+- 'PNT from L2 density: x/ln(x) at 8.4% error vs L1 99.7% and L3 364% — only L2 gets
+  the shape'
+- Concentration ratio 7x->20x->59x->176x monotonically from N=10^3 to 10^6, forced
+  by PNT
+- 'Golden self-consistency: fraction below 1/phi = 0.6187 = 1/phi to 0.11%'
+- Markov eigenvalue decay -1/pi^2 best fit among 5 fundamental constants
+- 'Only L2 identifies primes: L1 non-unique (190M partitions), L3 82% composite atoms,
+  L2 = FTA'
+- 'Bertrand postulate as L2 closure completeness: no multiplicative deserts allowed'
+dependencies:
+  internal:
+  - ../oscillation_attractor_dynamics/: Primes as injection points, xi derivation
+      (exp_24)
+  - ../pac_confluence_xi/: Feigenbaum-Fibonacci closed forms
+  - ../minimum_actualization_resolution/: Harmonic bridge constants, Li₂ identity
+      (exp_23)
+  - ../cellular_automata_pac_attractors/: Class IV at xi, computational universality
+  - ../milestone4/: Turbulence 8-mode discovery, Kolmogorov -5/3
+  external:
+  - numpy>=1.24
+  - scipy>=1.10
+  - sympy>=1.12
+  - matplotlib>=3.4
+  - mpmath>=1.3
+tags:
+- arithmetic-dimension-emergence
+- ade
+- conformal-group
+- mobius-transformation
+- tetration
+- hyperoperations
+- dimension-emergence
+- feigenbaum
+- fibonacci
+- golden-ratio
+- primes
+- inversion
+- pac-conservation
+- xi-constant
+- level-0-distinction
+- gauge-structure
+- iwasawa-decomposition
+- born-rule
+- gleason-theorem
+- coupling-hierarchy
+- weinberg-angle
+- fermion-generations
+- koide-formula
+- ckm-matrix
+- cabibbo-angle
+- anomaly-cancellation
+- weyl-spinors
+- chirality
+- clifford-algebra
+- dirac-equation
+- cpt-symmetry
+- pac-sec-bridge
+- sec-threshold
+- euler-mascheroni
+- med-bounds
+- derivation-chain
+- recursive-balance-field
+- mobius-band
+- antiperiodic-modes
+- conservative-dynamics
+- l2-closure-witnesses
+- prime-number-theorem
+- bertrand-postulate
+- golden-self-consistency

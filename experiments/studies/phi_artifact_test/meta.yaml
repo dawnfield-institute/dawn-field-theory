@@ -1,0 +1,22 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+status: completed
+directory_name: phi_artifact_test
+title: φ/Ξ Artifact Test
+description: Tests whether φ appearances in PAC/SEC are artifacts of framework construction
+  vs genuine domain properties
+semantic_scope: validation
+proficiency_level: research
+hypothesis: If φ is baked into PAC/SEC, it will appear even in null domains and disappear
+  under alternative recursions
+falsification_target: PAC/SEC cross-domain φ convergence
+files:
+- BLIND_ANALYSIS_CONCLUSIONS.md
+- README.md
+- REVISED_CONCLUSIONS.md
+child_directories:
+- journals
+- results
+- scripts
+validation_type: automated
+estimated_context_weight: 0.9

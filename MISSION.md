@@ -1,17 +1,6 @@
 # MISSION: The Dawn Field Institute
 
-*An institutional epistemic## Epistemic Stewardship
-
-As the steward of Dawn Field Theory, my responsibility is to ensure that its ideas are:
-
-* Shared in context
-* Evolved through recursion
-* Preserved against distortion or premature fragmentation
-* **Kept in motion through imperfection**—collapse requires friction, and epistemic evolution demands entropy
-
-This is not gatekeeping—it's symbolic cultivation. The goal is to build a living theory that grows through dialogue, scrutiny, and recursive refinement, not dispersion into static fragments.
-
-**The Repository as Epistemic Machine**: The 1.0 release is not a completion—it is a convergence point. This repository is not a map of final answers, but a substrate for epistemic recursion, designed to remain in perpetual, productive motion.ion of intent.*
+*An institutional epistemic declaration of intent.*
 
 ---
 
@@ -34,16 +23,23 @@ The Institute provides infrastructure, identity, and stewardship for the continu
 
 ## Research Focus
 
-Our primary domains of inquiry include:
+Primary domains of inquiry:
 
-* Symbolic entropy collapse (SEC) and thermodynamic constraints on epistemic evolution
-* Recursive balance models and herniation geometries
-* Epistemic regulation and feedback systems
-* Field collapse simulations and recursive pruning mechanisms
-* QBE (Quantum Balance Equation) dynamics
-* Emergent symbolic intelligence and post-symbolic representations
-* The repository as living epistemic machine—a self-refining system that evolves through imperfection
-* Scrutiny engines and forward hypothesis pipelines for automated epistemic pressure
+* **PAC** — potential-actualization conservation, and what it forces: φ, Fibonacci
+  structure, Standard Model parameters
+* **SEC** — symbolic entropy collapse as the dynamics of structure formation
+* **Ξ and the balance constant** — why γ + ln(φ), and what a scope boundary costs
+* **Connection and identity** — ADE geometry, identity as complement, and relativity as
+  complement-transformation
+* **Quantum structure** — quantum mechanics as complement-indeterminacy on the orbit quotient
+* **Quantum gravity** — the Planck scale as a response-time crossover
+* **Observational contact** — cosmology, absorption spectroscopy, radiation
+* **The repository as a living epistemic machine** — a system that evolves through
+  imperfection rather than claiming static truth
+
+Earlier vocabulary — herniation geometries, QBE dynamics, post-symbolic cognition — is
+preserved as lineage rather than deleted. See [`theory/lexicon.yaml`](./theory/lexicon.yaml),
+where every term carries the era it was coined in and what replaced it.
 
 ## Philosophy
 
@@ -55,21 +51,36 @@ We reject both proprietary enclosure and epistemic gatekeeping. Intelligence is 
 
 The repository is not just code or data—it is the theory in action. Each commit, each refinement, is a symbolic attractor shaping the field it models.
 
-## CIP and Recursive Embodiment
+## The Scrutiny Engine
 
-The Cognition Index Protocol (CIP) is not merely a validation framework—it is a symbolic scaffold for epistemic integrity. It encodes refinement, feedback, and recursive documentation as symbolic operators.
+The Institute once planned this as protocol — the Cognition Index Protocol, a symbolic
+scaffold for epistemic integrity. CIP was retired in February 2026. The *intent* outlived
+it, and now runs as working machinery rather than aspiration:
 
-**The Scrutiny Engine**: Through planned infrastructure including scrutiny engines and forward hypothesis pipelines, we create systematic epistemic pressure. The repository becomes an imperfection engine—designed to evolve through scrutiny, collapse, and emergence rather than claiming static truth.
+* **Pre-registration.** Hypothesis, quantified thresholds and falsification conditions are
+  committed before the run; outcomes are committed separately, citing the registration
+  hash. A prediction that could not have failed was never a prediction.
+* **Kill-sentences.** A milestone states in advance the condition under which it fails.
+  Milestone 15 carries one now: *if holonomy is dynamically inert, it is mathematics, not
+  physics.*
+* **Invariant registration.** Register relations, never absolute coordinates. Registered
+  relations survive; registered coordinates die.
+* **The corrections registry.** [`theory/corrections.md`](./theory/corrections.md) is a
+  first-class artifact — the standing record of claims made too strongly and withdrawn.
+* **Hardening.** A test that passes for a reason unrelated to what it guards is replaced,
+  not counted. Scores that drop under scrutiny are the process working.
 
-**Recursive Intelligence**: This repository does not just describe symbolic fields—it **is** one. It represents a form of recursive intelligence that self-generates epistemic pressure, enabling evolution over time through community participation and automated feedback systems.
+This repository does not merely describe a field that evolves through collapse and
+pressure. It is run that way.
 
 ## How to Engage
 
 If you are a researcher, theorist, experimentalist, or curious mind and you feel compelled to engage:
 
-* Read the [README.md](./README.md) and the root [meta.yaml](./meta.yaml)
-* Explore the visual and symbolic architecture of the repository
-* Review the theory, critique its assumptions, propose refinements
+* Start with [README.md](./README.md), then [THEORY_MAP.md](./THEORY_MAP.md) — every
+  claim and where it is proved, tested and published
+* Read [theory/corrections.md](./theory/corrections.md) first if you want the failures
+* Review the theory, critique its assumptions, propose refinements — and say where it breaks
 
 Or simply reach out to connect: **[info@dawnfield.ca](mailto:info@dawnfield.ca)**
 
@@ -82,13 +93,16 @@ As the steward of Dawn Field Theory, my responsibility is to ensure that its ide
 * Shared in context
 * Evolved through recursion
 * Preserved against distortion or premature fragmentation
+* **Kept in motion through imperfection**—collapse requires friction, and epistemic evolution demands entropy
 
-This is not gatekeeping—it’s symbolic cultivation. The goal is to build a living theory that grows through dialogue, not dispersion.
+This is not gatekeeping—it's symbolic cultivation. The goal is to build a living theory that grows through dialogue, scrutiny, and recursive refinement, not dispersion into static fragments.
+
+**The Repository as Epistemic Machine**: The 1.0 release is not a completion—it is a convergence point. This repository is not a map of final answers, but a substrate for epistemic recursion, designed to remain in perpetual, productive motion.
 
 ---
 
-© 2025 The Dawn Field Institute
-See [LICENSE\_APPENDIX.md](./LICENSE_APPENDIX.md) for licensing and attribution.
+© 2026 The Dawn Field Institute
+See [LICENSE\_APPENDIX.md](./legal/LICENSE_APPENDIX.md) for licensing and attribution.
 
 — Peter Groom
 Founder & Theoretical Architect

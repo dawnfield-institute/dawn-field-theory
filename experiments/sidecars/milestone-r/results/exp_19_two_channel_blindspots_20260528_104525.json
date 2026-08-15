@@ -1,0 +1,131 @@
+{
+  "experiment": "exp_19_two_channel_blindspots",
+  "timestamp": "2026-05-28T10:45:25.018974",
+  "block": "C",
+  "thesis": "If the three measurement channels (FPT/JSD/HKS) correspond to PAC/SEC/RBF, then dropping any one axiom creates a SPECIFIC blind spot that the other two cannot cover. Each two-channel pair should fail on a different subset of graphs. This is a structure theorem: you need all three DFT axioms to fully resolve a source.",
+  "test_results": {
+    "T1": {
+      "description": "Each 2-channel pair has blind spots",
+      "results": {
+        "PAC+SEC (FPT+JSD)": {
+          "blind_spots": [],
+          "n_blind": 0,
+          "has_blind_spot": false
+        },
+        "PAC+RBF (FPT+HKS)": {
+          "blind_spots": [],
+          "n_blind": 0,
+          "has_blind_spot": false
+        },
+        "SEC+RBF (JSD+HKS)": {
+          "blind_spots": [],
+          "n_blind": 0,
+          "has_blind_spot": false
+        }
+      },
+      "PASS": false
+    },
+    "T2": {
+      "description": "Different pairs have different blind spots",
+      "comparisons": [
+        {
+          "pair": "PAC+SEC (FPT+JSD) vs PAC+RBF (FPT+HKS)",
+          "identical": true,
+          "overlap": [],
+          "unique_to_each": []
+        },
+        {
+          "pair": "PAC+SEC (FPT+JSD) vs SEC+RBF (JSD+HKS)",
+          "identical": true,
+          "overlap": [],
+          "unique_to_each": []
+        },
+        {
+          "pair": "PAC+RBF (FPT+HKS) vs SEC+RBF (JSD+HKS)",
+          "identical": true,
+          "overlap": [],
+          "unique_to_each": []
+        }
+      ],
+      "PASS": false
+    },
+    "T3": {
+      "description": "3 channels cover all pairs",
+      "blind_spots": [],
+      "PASS": true
+    },
+    "T4": {
+      "description": "Channel roles not interchangeable",
+      "unique_blinds": {
+        "PAC+SEC (FPT+JSD)": [],
+        "PAC+RBF (FPT+HKS)": [],
+        "SEC+RBF (JSD+HKS)": []
+      },
+      "size_variation": 0,
+      "PASS": false
+    }
+  },
+  "overall_score": "1/4",
+  "distance_table": {
+    "A_5 vs D_5": {
+      "PAC+SEC (FPT+JSD)": 2.613,
+      "PAC+RBF (FPT+HKS)": 2.01,
+      "SEC+RBF (JSD+HKS)": 2.898,
+      "ALL (FPT+JSD+HKS)": 3.104
+    },
+    "A_6 vs D_6": {
+      "PAC+SEC (FPT+JSD)": 3.083,
+      "PAC+RBF (FPT+HKS)": 2.891,
+      "SEC+RBF (JSD+HKS)": 2.621,
+      "ALL (FPT+JSD+HKS)": 3.517
+    },
+    "A_6 vs E_6": {
+      "PAC+SEC (FPT+JSD)": 2.445,
+      "PAC+RBF (FPT+HKS)": 1.979,
+      "SEC+RBF (JSD+HKS)": 2.774,
+      "ALL (FPT+JSD+HKS)": 2.966
+    },
+    "D_6 vs E_6": {
+      "PAC+SEC (FPT+JSD)": 2.798,
+      "PAC+RBF (FPT+HKS)": 2.067,
+      "SEC+RBF (JSD+HKS)": 1.968,
+      "ALL (FPT+JSD+HKS)": 2.826
+    },
+    "A_7 vs D_7": {
+      "PAC+SEC (FPT+JSD)": 3.047,
+      "PAC+RBF (FPT+HKS)": 2.905,
+      "SEC+RBF (JSD+HKS)": 2.626,
+      "ALL (FPT+JSD+HKS)": 3.509
+    },
+    "A_7 vs E_7": {
+      "PAC+SEC (FPT+JSD)": 2.736,
+      "PAC+RBF (FPT+HKS)": 2.639,
+      "SEC+RBF (JSD+HKS)": 2.54,
+      "ALL (FPT+JSD+HKS)": 3.233
+    },
+    "D_7 vs E_7": {
+      "PAC+SEC (FPT+JSD)": 1.31,
+      "PAC+RBF (FPT+HKS)": 1.109,
+      "SEC+RBF (JSD+HKS)": 0.824,
+      "ALL (FPT+JSD+HKS)": 1.346
+    },
+    "A_8 vs D_8": {
+      "PAC+SEC (FPT+JSD)": 3.09,
+      "PAC+RBF (FPT+HKS)": 2.931,
+      "SEC+RBF (JSD+HKS)": 2.726,
+      "ALL (FPT+JSD+HKS)": 3.576
+    },
+    "A_8 vs E_8": {
+      "PAC+SEC (FPT+JSD)": 3.423,
+      "PAC+RBF (FPT+HKS)": 3.344,
+      "SEC+RBF (JSD+HKS)": 2.627,
+      "ALL (FPT+JSD+HKS)": 3.86
+    },
+    "D_8 vs E_8": {
+      "PAC+SEC (FPT+JSD)": 1.262,
+      "PAC+RBF (FPT+HKS)": 1.101,
+      "SEC+RBF (JSD+HKS)": 0.767,
+      "ALL (FPT+JSD+HKS)": 1.303
+    }
+  }
+}

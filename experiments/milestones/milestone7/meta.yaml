@@ -1,0 +1,68 @@
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+description: 'Milestone 7: The Symmetry Primitive -- testing whether symmetry (as
+  balance, self-reference) is the pre-axiomatic foundation that generates all of DFT.
+  10 experiments across 4 blocks. Block A: phi from cross-scale self-reference, nothing
+  unstable under multi-scale drive. Block B: Xi = gamma + ln(phi) per boundary, 1/phi
+  attenuation from symmetric closure. Block C: global symmetry requires local asymmetry,
+  symmetry breaking serves global balance. Block D: ADE closure termination, RBF balance,
+  compatibility scorecard, predictions.
+
+  '
+semantic_scope: research
+proficiency_level: research
+version: 2.0.0
+status: completed
+directory_name: milestone7
+title: 'Milestone 7: The Symmetry Primitive'
+date_created: '2026-03-31'
+date_updated: '2026-03-31'
+files:
+- README.md
+child_directories:
+- core
+- results
+- scripts
+estimated_context_weight: 0.9
+validation_type: computational
+key_results:
+- 37/40 (93%) -- symmetry primitive works as both organizing principle AND computational
+  generator
+- 'exp_01: phi from cross-scale relational self-reference (R^2 - R - 1 = 0), generalizes
+  to b-nacci (4/4)'
+- 'exp_02: Nothing unstable under multi-scale drive + conservation, stable under single-scale
+  (4/4)'
+- 'exp_03: Xi = gamma + ln(phi) per boundary crossing, survival = e^{-Xi}, IC invariant
+  CV=0.000 (4/4)'
+- 'exp_04: Emergent 1/phi attenuation from dynamics (R^2=0.995, ratio=0.574), multi-scale
+  closer to phi than 1/2 (4/4)'
+- 'exp_06: 4/5 break types improve PB vs uniform, phi-ratio optimal, cross-topology
+  partial (3/4)'
+- 'exp_09: 100% compatibility with M1-M6, 60% directly illuminated, 12 new derivation
+  paths (4/4)'
+- 'exp_10: Cosmological constant 0.9 orders, neutrino splitting 4.4%, D=3 unique,
+  w=-1+10^{-61} (4/4)'
+- 'exp_08: RBF force proportional to E-I imbalance (r>0.96), 4 memory models tested,
+  none damp (2/4)'
+dependencies:
+  internal:
+  - ../confluent_identity/: Hierarchy, spectral identity, 1/phi attenuation
+  - ../exp_30_arithmetic_dimension_emergence/: ADE levels, PSL(2,C), tetration
+  - ../minimum_actualization_resolution/: Harmonic bridge, Xi decomposition
+  - ../milestone6/: Transfer matrices, scope.py constants
+  - ../milestone5/: SM parameters, Higgs mass
+  - ../pac_confluence_xi/: PAC necessity proof, phi convergence
+  external:
+  - numpy>=1.24
+  - scipy>=1.10
+tags:
+- symmetry-primitive
+- self-reference
+- recursion
+- golden-ratio
+- xi-constant
+- balance
+- global-local-asymmetry
+- symmetry-breaking
+- pre-axiomatic
+- falsification

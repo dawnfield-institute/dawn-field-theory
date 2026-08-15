@@ -1,0 +1,28 @@
+schema_version: '2.0'
+slug: gaia_computational_validation_dawn_field_theory
+title: Gaia Computational Validation Dawn Field Theory
+category: pac
+status: Draft
+version: '1.0'
+complexity: 3
+impact: 5
+evidence_type: E
+created: '2025-12-20T11:18:57.520262'
+original_filename: '[pac][D][v1.0][C3][I5][E]_gaia_computational_validation_dawn_field_theory_preprint.md'
+source_location: PACSeries
+files:
+- CITATION.md
+- LICENSE
+- README.md
+- UNIFIED_EVIDENCE.md
+- paper.md
+code:
+  has_experiments: true
+  trace_file: Code/trace.yaml
+keywords:
+- Dawn Field Theory
+- PAC
+child_directories:
+- Code
+- Data
+- Documentation

@@ -1,0 +1,157 @@
+schema_version: '2.1'
+era: era3-pac-formalization-2026q1
+description: 'Confluent Identity -- Phases 1-29: tests identity emergence in PAC-conservative
+  fluid via discrete Hodge theory. 128x128 periodic lattice (+ 256x256 scale test),
+  38 experiments across 29 phases. Core results: coupling-contribution rho=0.42 (survives
+  size deconfound), CI(f) = Pi_harm @ f is proper projection (5/5 properties), H^1
+  propagates upward. Spectral bandwidth is strongest sensitivity predictor (partial
+  rho=0.44). MI reveals nonlinear coupling (NMI exceeds rho^2 by 0.22) but ceiling
+  is real physics. Frame-relative identity: Δ_entropy rho=-0.79 with coupling (p=0.02),
+  depth-dependent, but n=8 underpowered. Coupling is scale-dependent but pooling helps
+  (reverse Simpson''s). Falsified: Fiedler coherence, H^1-revision, PAC buffer, Hodge
+  orthogonality, Fiedler-entropy, boundary mediation, mid-mode ratio.
+
+  '
+semantic_scope: research
+proficiency_level: research
+version: 12.0.0
+status: active
+directory_name: confluent_identity
+title: 'Confluent Identity -- Phases 1-29: Formation through Falsification'
+date_created: '2026-03-27'
+date_updated: '2026-03-29'
+files:
+- README.md
+- VAULT_SYNC_PENDING.md
+child_directories:
+- results
+- scripts
+estimated_context_weight: 0.9
+validation_type: computational
+key_results:
+- 'Claim 1 (identity = confluence): coupling-contribution Spearman rho=0.42 (uniform),
+  rho=0.50 (eigenvector-weighted)'
+- 'Claim 3 (weight = coupling): 9-cell obstacle causes 1.7x more identity shift than
+  69-cell obstacle'
+- 'Claim 4 (global cascade): 88-97% of field change propagates beyond 10 cells'
+- 'Claim 5 (retroactive recontextualization): 71.5% mean revision, Kalman RTS 4/4
+  verified'
+- 'Formal operator CI(f) = Pi_harm @ f: 7/7 theorems + 5/5 operator properties verified'
+- 'D=3 uniqueness: 2^d+1 = d*F_{d+1} has exactly one solution (d=3), confirmed d=1..200'
+- 'Sheaf cohomology: H^1 propagates upward (10.34->9.12), perturbation creates identity
+  crisis, smoothing resolves'
+- 'Size deconfound: partial rho(coupling, natural | size)=0.42 (p=4.1e-4), permutation
+  p=0.0007'
+- 'FALSIFIED: Fiedler coherence is size proxy (partial rho=+0.07 after deconfound,
+  was -0.32 raw)'
+- 'FALSIFIED: H^1-revision link (rho=0.016 at n=96 sub-partitioned groups, zero signal)'
+- 'FALSIFIED: node removal > Gaussian (ratio 1.02x, sensitivity rankings independent
+  across types)'
+- 'Coupling ceiling: gradient weighting best (partial rho=0.41), below 0.45 target'
+- 'Lambda_2 attenuation: monotonic in all 15 regions, projection stays pristine, 53%
+  show susceptibility peaks'
+- Entropy-Fiedler partial-spectrum positive (partial rho=+0.29), but FULL-SPECTRUM
+  collapses (partial rho=-0.02)
+- 'FALSIFIED: PAC buffer (1/sqrt(N)) — bigger regions MORE sensitive, not less (positive
+  slopes)'
+- 'PARTIALLY FALSIFIED: Hodge orthogonality — perturbation modes not orthogonal (cos~0.47),
+  but topological share structure'
+- Revision driven by perturbation_l2 (rho=0.34) and boundary_coupling (rho=0.33),
+  NOT H^1
+- Size mediates most spectral correlations — Gini, entropy, eff_dim all collapse after
+  size deconfound
+- 'Boundary gradient is real signal: partial rho=-0.30 (p=0.023) after size deconfound,
+  only metric that survives'
+- 'Boundary schemes beat interior by +0.09: boundary_fiedler partial rho=0.39 vs gradient
+  0.30, cross-level consistent'
+- 'FALSIFIED: boundary_area_ratio mediates sensitivity — size retains direct effect
+  (partial rho=0.28)'
+- '256x256 INCONCLUSIVE: 174 regions but abbreviated diffusion yields low-structure
+  field, correlations don''t replicate'
+- 'Spectral bandwidth: strongest sensitivity predictor (partial rho=0.44, p=7e-4),
+  survives size deconfound'
+- 'Nonlinear coupling: NMI=0.47 exceeds Spearman rho^2=0.25 by +0.22, but ceiling
+  is real physics (dCor matches partial_rho)'
+- 'Scale-dependent coupling: per-level range=1.19, but pooled (0.42) beats all individual
+  levels (reverse Simpson''s)'
+- 'FALSIFIED: 256x256 with full 10k-step diffusion — C std=0.0007, initialization
+  problem not convergence'
+- 'Frame-relative identity: Δ_entropy rho=-0.79 with coupling (p=0.02) — strongest
+  single-measure correlation, depth-dependent (rho=-0.76, p=0.027), but n=8 underpowered'
+- 'FALSIFIED: Δ_spectral boundedness (cosine distance [0,2] not [0,1]) and frame augmentation
+  (hurt rather than helped)'
+- 'Coupling ceiling is NOT geometric alignment: eigenbasis cos=0.60, raw cos=0.78,
+  both ABOVE ceiling 0.42. Ceiling = rank-compression information loss'
+- 'FALSIFIED: Delta_self generalizes to all children (rho=0.09, p=0.50 at n=59 vs
+  rho=-0.79 at n=8 dual-role)'
+- 'Conservation IS within-scope: within-parent Delta reduces variance 16% mean; pooled
+  only 3.7%'
+- 'Ceiling update: pooling all 67 children gives partial_rho=0.5753, above parent-(2,1)-only
+  0.42'
+- 'Size confounding = 1/phi^4 universal: mean=0.1501 across 20 seeds, matches tetration
+  penalty 1/phi^4=0.1459 (2.87%)'
+- 'FALSIFIED: partial_rho ~ gamma (Euler-Mascheroni) — seed-42 specific, CV=0.57 across
+  20 seeds'
+- 'Scoped mediation: coupling attenuates monotonically with level distance, mean per-hop
+  ratio=0.730 ~ 1/phi'
+- 'CONFIRMED: 2-hop coupling NOT predictable from 1-hop products (72% error) — levels
+  are recursive closures, not filters'
+- Size-normalized coupling INCREASES with distance — harmonic component concentrates
+  through scope boundaries
+dependencies:
+  internal:
+  - ../pac_dag_fluid/: PAC conservation pattern (exp_03)
+  - ../minimum_actualization_resolution/: Spectral Laplacian pattern (exp_23)
+  - ../hodge_conjecture/: 2D lattice Hodge patterns
+  external:
+  - numpy>=1.24
+  - scipy>=1.10
+  - matplotlib>=3.4
+tags:
+- confluent-identity
+- identity-project
+- hodge-decomposition
+- graph-laplacian
+- spectral-analysis
+- pac-conservation
+- sec-dynamics
+- watershed
+- coupling-weight
+- formal-operator
+- d3-uniqueness
+- projection-operator
+- sheaf-cohomology
+- kalman-smoother
+- eigenvalue-decay
+- partial-correlation
+- size-deconfound
+- multilevel-sheaf
+- fiedler-coherence
+- spectral-revision
+- structured-perturbation
+- node-removal
+- phase-transition
+- coupling-ceiling
+- falsification
+- pac-buffer
+- mode-decomposition
+- revision-driver
+- confluence-complexity
+- boundary-geometry
+- boundary-coupling
+- sensitivity-mediation
+- scale-validation
+- spectral-shape
+- mutual-information
+- distance-correlation
+- nonlinear-coupling
+- frame-relative-identity
+- delta-buffer
+- asymmetric-conservation
+- eigenstructure-ceiling
+- rank-compression
+- phi-constants
+- multiseed-validation
+- scoped-mediation
+- level-attenuation
+- recursive-closure
