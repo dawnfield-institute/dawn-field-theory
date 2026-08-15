@@ -2502,6 +2502,7 @@ dawn-field-theory/
           exp_05_general_k_limit_20260717_150208.json
           exp_05_general_k_limit_20260717_150325.json
           exp_06_k56_confirmation_20260717_171636.json
+          exp_06_k56_confirmation_20260815_133225.json
         scripts/
           exp_01_rapidity_one_form.py
           exp_02_coherence_per_scope.py
@@ -3381,6 +3382,7 @@ dawn-field-theory/
           2026-07-17_ade-cascade-round1-preregistration.md
         results/
           exp_00_baseline_gate_20260717_145830.json
+          exp_00_baseline_gate_20260815_133217.json
           exp_01_diagram_selectivity_20260717_150058.json
           exp_02_affine_vertex_20260717_150243.json
         scripts/
@@ -5063,6 +5065,7 @@ dawn-field-theory/
         generate_tex_pdfs.py
         md_to_tex.py
         meta.yaml
+        series.yaml
         state_of_the_pac_series.md
         v0.3_PLANNING.md
         v0.1/

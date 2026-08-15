@@ -12,6 +12,15 @@ description: 'Real-fluid instrument for the re-founded turbulence program: 2D in
   own pre-registration.
 
   '
+tags:
+- dns
+- navier-stokes
+- pseudo-spectral
+- instrument-qualification
+- taylor-green
+- energy-budget
+- turbulence
+- real-flow
 semantic_scope:
 - navier-stokes
 - pseudo-spectral
