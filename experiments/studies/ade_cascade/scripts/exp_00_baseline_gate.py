@@ -18,7 +18,7 @@ from datetime import datetime
 
 _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE.parent / "core"))
-sys.path.insert(0, str(_HERE.parent.parent / "milestone4" / "core"))
+sys.path.insert(0, str(_HERE.parent.parent.parent / "milestones" / "milestone4" / "core"))
 
 from coupling import dynkin_coupling, legacy_kernel   # noqa: E402
 from utils import energy_cascade, measure_exponent    # noqa: E402

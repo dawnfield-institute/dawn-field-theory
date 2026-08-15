@@ -11,8 +11,8 @@ import sys
 import numpy as np
 from pathlib import Path
 
-_EXPERIMENTS = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(_EXPERIMENTS / "milestone4" / "core"))
+_EXPERIMENTS = Path(__file__).resolve().parent.parent.parent.parent
+sys.path.insert(0, str(_EXPERIMENTS / "milestones" / "milestone4" / "core"))
 
 from utils import energy_cascade, measure_exponent   # noqa: E402
 

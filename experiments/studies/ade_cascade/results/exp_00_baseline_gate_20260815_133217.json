@@ -1,0 +1,14 @@
+{
+  "experiment": "exp_00_baseline_gate",
+  "gates": {
+    "G1_kernel_max_abs_diff": 0.0,
+    "G1_pass": true,
+    "G2_max_scale_diff": 0.0,
+    "G2_pass": true,
+    "G3_mean_exponent": -1.612608473080217,
+    "G3_std": 0.0032522391163493343,
+    "G3_reference": -1.6083,
+    "G3_pass": true
+  },
+  "all_pass": true
+}

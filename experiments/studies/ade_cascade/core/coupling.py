@@ -15,10 +15,10 @@ import numpy as np
 from pathlib import Path
 from collections import deque
 
-_EXPERIMENTS = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(_EXPERIMENTS / "milestone12" / "core"))
-sys.path.insert(0, str(_EXPERIMENTS / "milestone15" / "core"))
-sys.path.insert(0, str(_EXPERIMENTS / "milestone4" / "core"))
+_EXPERIMENTS = Path(__file__).resolve().parent.parent.parent.parent
+sys.path.insert(0, str(_EXPERIMENTS / "milestones" / "milestone12" / "core"))
+sys.path.insert(0, str(_EXPERIMENTS / "milestones" / "milestone15" / "core"))
+sys.path.insert(0, str(_EXPERIMENTS / "milestones" / "milestone4" / "core"))
 
 from connection_geometry import DynkinDiagram    # noqa: E402
 from representative import build_cycle           # noqa: E402

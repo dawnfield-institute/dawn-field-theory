@@ -78,6 +78,7 @@ files:
 - derivation_classification.md
 - generate_tex_pdfs.py
 - md_to_tex.py
+- series.yaml
 - state_of_the_pac_series.md
 - v0.3_PLANNING.md
 child_directories:
