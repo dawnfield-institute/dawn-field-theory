@@ -35,6 +35,12 @@ description: 'Four independent routes hit the same wall and all of them were mea
   '
 status: active
 confidence: 0.35
+score: 3/45
+score_note: 'Block A instrumentation 3/9 (exp_01 passed 3/3, exp_02 and exp_03 open).
+  Blocks B-E unstarted and blocked on A by design: no DFT system is measured until
+  the instruments recover a system whose answer is known.
+
+  '
 pillar: SEC
 hypothesis: 'The structure-forming systems have a critical point, locatable by finite-size
   scaling - run at several system sizes L and the xi/L curves CROSS at the critical
