@@ -194,6 +194,87 @@ def fit_power_law(x, y, min_points: int = 5):
     return float(m), float(1 - ss_res / ss_tot) if ss_tot > 0 else float("nan"), int(ok.sum())
 
 
+def fit_exponential(x, y, min_points: int = 5):
+    """Slope of log y vs x (not log x), with R^2. Returns (rate, r2, n)."""
+    x = np.asarray(x, float)
+    y = np.asarray(y, float)
+    ok = np.isfinite(x) & np.isfinite(y) & (y > 0)
+    if ok.sum() < min_points:
+        return float("nan"), float("nan"), int(ok.sum())
+    xx, ly = x[ok], np.log(y[ok])
+    m, c = np.polyfit(xx, ly, 1)
+    pred = m * xx + c
+    ss_res = ((ly - pred) ** 2).sum()
+    ss_tot = ((ly - ly.mean()) ** 2).sum()
+    return float(m), float(1 - ss_res / ss_tot) if ss_tot > 0 else float("nan"), int(ok.sum())
+
+
+def power_law_or_exponential(x, y):
+    """Which hypothesis fits better? Returns (verdict, r2_power, r2_exp, exponent).
+
+    "Is this a power law" is not answerable without a rival. A power-law fit alone will return
+    some R^2 for almost any decreasing sequence, especially over a short range — the M17
+    calibration found R^2 = 0.967 for a fit to a *sub-critical* percolation distribution that
+    is genuinely exponential. Comparing the two hypotheses on the same data is what makes the
+    question decidable.
+
+    Verdict is "power_law", "exponential", or "ambiguous" when the two R^2 are within 0.01.
+
+    **This is NOT a criticality test, and calibration is what showed it.** On pure forms it is
+    exact — synthetic s^-2 gives R^2 1.0000 against 0.6106, synthetic exp(-s/50) the reverse.
+    But sub-critical percolation at p = 0.40 also reads "power_law" (0.9511 vs 0.8996), and
+    correctly so: a sub-critical cluster distribution is a TRUNCATED power law,
+    n_s ~ s^-tau exp(-s/s_c), and the s^-tau part is still present below the cutoff. Only the
+    cutoff distinguishes critical from sub-critical.
+
+    So a power-law verdict means "there is a scaling regime", not "this system is critical".
+    The critical question is whether the CUTOFF SCALES WITH SYSTEM SIZE, which is what
+    `susceptibility` measures — chi is the cutoff scale, and chi ~ L^(gamma/nu) at criticality
+    and L-independent away from it. Use `cutoff_scaling` for that.
+    """
+    m_p, r2_p, n = fit_power_law(x, y)
+    _, r2_e, _ = fit_exponential(x, y)
+    if not (np.isfinite(r2_p) and np.isfinite(r2_e)):
+        return "undetermined", r2_p, r2_e, m_p
+    if abs(r2_p - r2_e) < 0.01:
+        return "ambiguous", r2_p, r2_e, m_p
+    return ("power_law" if r2_p > r2_e else "exponential"), r2_p, r2_e, m_p
+
+
+def cutoff_scaling(sizes, chis, min_points: int = 2):
+    """Does the avalanche/cluster cutoff grow with system size? The actual criticality test.
+
+    At a critical point there is no characteristic scale, so the cutoff is set only by the
+    system: chi ~ L^(gamma/nu) with a positive exponent. Away from criticality the system has
+    its own intrinsic scale, the cutoff saturates, and chi becomes L-INDEPENDENT.
+
+    Returns (exponent, r2, verdict).
+
+    **The EXPONENT is the measurement; the verdict label is a convenience and is crude.**
+    Calibration on 2D percolation at L = 32/64/128:
+
+        at p_c = 0.5927   exponent 1.603   (exact gamma/nu = 1.792)
+        at p   = 0.50     exponent 0.585
+        at p   = 0.40     exponent 0.225
+
+    p = 0.50 is genuinely sub-critical yet reads "scale-free", and that is correct rather than
+    a fault: at these L the correlation length there is comparable to the box, so the system IS
+    inside its critical region. Finite systems look critical near p_c — that is what a critical
+    region is. The exponent varies smoothly with distance from p_c and converges on gamma/nu,
+    so report it and compare against the calibration, rather than reading the label as a
+    verdict.
+    """
+    e, r2, n = fit_power_law(np.asarray(sizes, float), np.asarray(chis, float),
+                             min_points=min_points)
+    if not np.isfinite(e):
+        return e, r2, "undetermined"
+    if e > 0.5 and (not np.isfinite(r2) or r2 > 0.9):
+        return e, r2, "scale-free"
+    if abs(e) < 0.25:
+        return e, r2, "characteristic-scale"
+    return e, r2, "ambiguous"
+
+
 def finite_size_crossing(param, curves: dict[int, np.ndarray], saturate: float = 0.02):
     """Where do curves measured at different L intersect?
 

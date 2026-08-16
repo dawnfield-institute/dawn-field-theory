@@ -54,11 +54,44 @@ So the first experiment of this milestone deliberately measures nothing new. Thr
 found here, in instruments written by someone who had just spent a day being caught out by
 exactly this, is the argument for the practice rather than against it.
 
+## The test I proposed was insufficient, and calibration showed it
+
+exp_02 was going to ask "is the steady-state event-size distribution a power law?" — the
+self-organized-criticality test, needing no tuned control parameter. Building the discriminator
+first showed that question cannot answer what it was meant to.
+
+`power_law_or_exponential` is exact on pure forms: synthetic s^-2 gives R² 1.0000 against
+0.6106, synthetic exp(-s/50) the reverse. But **sub-critical percolation at p = 0.40 also reads
+"power_law"** (0.9511 vs 0.8996) — and correctly, because a sub-critical cluster distribution is
+a *truncated* power law, n_s ~ s^-tau exp(-s/s_c), with the s^-tau regime still present below
+the cutoff.
+
+**So "is it a power law" does not distinguish critical from sub-critical.** Only the cutoff
+does, and the cutoff scale is exactly what `susceptibility` measures. `cutoff_scaling` is the
+real test: chi ~ L^(gamma/nu) at criticality, chi L-independent away from it.
+
+Calibrated on percolation at L = 32/64/128:
+
+| system | exponent | verdict |
+|---|---|---|
+| at p_c = 0.5927 | **1.603** (exact γ/ν = 1.792) | scale-free |
+| p = 0.50, sub-critical | 0.585 | scale-free |
+| p = 0.40, sub-critical | 0.225 | characteristic-scale |
+
+p = 0.50 reads scale-free while being below p_c, and that is right rather than wrong: at these
+L its correlation length is comparable to the box, so it sits inside the critical region.
+Finite systems look critical near p_c. **The exponent is the measurement; the verdict label is
+crude** — it runs 0.23 → 0.58 → 1.60 approaching p_c and converges on γ/ν.
+
+Recorded because it changes exp_02's design before any run was spent on it: the SOC test is
+the **finite-size scaling of the avalanche cutoff**, not the shape of a single distribution.
+
 ## What is now available
 
 `core/criticality.py`: `order_parameter`, `susceptibility`, `spans`,
 `cluster_size_distribution`, `pooled_cluster_distribution`, `finite_size_crossing`,
-`fit_power_law`, `site_lattice` — all N-D, all exercised by the calibration.
+`fit_power_law`, `fit_exponential`, `power_law_or_exponential`, `cutoff_scaling`,
+`site_lattice` — all N-D, all exercised against a system with exact answers.
 
 That closes four of the seven capability holes named at founding. Still missing: correlation
 length as a *critical* quantity with its own finite-size scaling (the length exists in
@@ -68,6 +101,17 @@ as a reusable instrument.
 ## Next
 
 exp_02 — apply the calibrated instruments to a DFT structure-forming system and ask Q1: does a
-critical point exist at all? The particle substrate is the natural first target, since it is the
-one system in the corpus that produces connected structure at any setting. Registered
-prediction stands: if a crossing exists, it should sit near Ξ.
+critical point exist at all?
+
+Design settled by the calibration above: measure the **avalanche cutoff's scaling with system
+size**, not the shape of one distribution. Run the engine at several L, pool avalanche sizes
+over the steady state, and fit chi against L. An exponent near γ/ν says scale-free; an exponent
+near zero says the system has its own characteristic scale and is not critical.
+
+This needs no control parameter, which sidesteps the problem that `sec_balance` was a *choice*
+rather than a derived analogue of occupation probability — picking it wrong would have produced
+"no crossing" for a boring reason.
+
+One open engineering question: the engines live in `reality-engine` and these instruments live
+here. Cross-repo import or a shared module is a decision to make deliberately rather than by
+accident.
