@@ -1,0 +1,76 @@
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+directory_name: milestone16
+name: milestone16
+title: 'Milestone 16: Relational Locality — How Neighbours Come to Cohere'
+description: 'The reality engine CLUMPS but does not WEB, and this milestone asks
+  why. Measured with calibrated per-direction estimators against a white-noise sampling
+  distribution on the manifold own 128x32 grid (n=40), the engine carries a genuine
+  large-scale component: coherent power fraction 0.1457 +- 0.0105 with quantum pressure
+  off against a noise floor of 0.0722 +- 0.0059, a +12.5 sigma excess still growing
+  at t=3000. But against exp_09 own web criterion it fails everywhere - density CV
+  0.49-0.83 against a required 1.0 and BELOW white noise 0.741, void fraction 0.08-0.26
+  against a required 0.30, is_web False in all eight configurations. Rendering the
+  isolated low-k component shows random blobs indistinguishable from low-passed white
+  noise: no filaments, no voids, no junctions. Re-founded 2026-08-14 (the founding
+  claim that the field was NOISE was an artifact of an uncalibrated estimator, and
+  is retracted). The claim is that spatial structure is the BOUNDARY SET of a tiling
+  of locally-conserving patches: a web is a boundary set, and clumping is what a field
+  does without boundaries. The corpus already holds the pieces - exp_36 Part D derives
+  the cosmic web as a tiling pattern with voids as patch interiors and filaments as
+  boundaries, at coordination cost Xi; asymmetric_conservation supplies P + A + Delta
+  = C with Delta as the unreconciled boundary buffer and Xi as the reconciliation
+  threshold in running code; exp_09-12 already produced a web from local finite-range
+  interactions. The engine has exactly one patch: one global sum, one uniform correction,
+  no boundaries, no reconciliation events. Relational identity (M13 identity-IS-complement,
+  M14 orbit quotient) is retained as the reading - a patch identity is its boundary
+  with the rest - but the tiling is what is testable.
+
+  '
+status: active
+confidence: 0.3
+pillar: PAC
+hypothesis: 'An accumulating LOCAL REFRACTORY - a suppression field that grows multiplicatively
+  where actualization fires and subtracts from the drive at that site, with a per-cell
+  event counter (brain.py QPL) - produces web geometry and more than two scales, where
+  the single global ledger produces only clumping. The engine relation graph is close
+  to complete (spectral Poisson, one global conservation sum, global scalar reductions
+  for time and temperature), and under M13 identity-as-complement a complete graph
+  has exactly ONE identity: remove any vertex of K_n and the remainder is K_(n-1)
+  for every vertex. Every relation is recomputed globally and instantaneously each
+  tick, so no relation is privileged by history and nothing becomes anyone parent
+  - and a hierarchy is a persistent asymmetric relation.
+
+  '
+falsification: 'If an accumulating local refractory leaves the field failing the geometry
+  test - void fraction below 0.30, density CV below 1.0, OR xi_u at the white-noise
+  floor 0.632 - across the registered parameter range, then accumulating local asymmetry
+  is not what produces web geometry in this substrate and the QPL result does not
+  carry from the era-1 collapse field to the v3 engine. The xi condition is not optional:
+  at quantum_pressure_coeff 0.30 the engine already satisfies void 0.605 and CV 1.273
+  while being a CHECKERBOARD with C(1) = -0.358. Passing the differentiation and depth
+  tests while failing geometry COUNTS as the kill sentence firing. Secondary failures:
+  PAC stops closing, coherence only in diverging runs, geometry only at the grid scale.
+  Registered confound: dt remains a single global scalar set by the field most extreme
+  cell, which will damp accumulated per-cell history, so a null result here is weaker
+  than a positive one.
+
+  '
+validation_type: computational
+created: '2026-08-13'
+tags:
+- milestone16
+- tiling
+- patch-conservation
+- locality
+- coherence
+- correlation-length
+- reconciliation-boundary
+- xi
+- cosmic-web
+- relational-identity
+- reality-engine
+files:
+- README.md
+child_directories:
+- journals
