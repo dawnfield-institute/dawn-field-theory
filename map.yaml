@@ -2520,8 +2520,17 @@ dawn-field-theory/
       milestone17/
         README.md
         meta.yaml
+        core/
+          criticality.py
         journals/
+          2026-08-16_exp01_instruments_calibrated.md
           2026-08-16_founding-and-loose-ends-survey.md
+        results/
+          exp_01_calibration_20260816_183602.json
+          exp_01_calibration_20260816_183653.json
+          exp_01_calibration_20260816_183732.json
+        scripts/
+          exp_01_calibrate_on_percolation.py
       milestone2/
         README.md
         meta.yaml

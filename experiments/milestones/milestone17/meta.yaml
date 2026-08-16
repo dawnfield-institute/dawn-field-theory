@@ -70,4 +70,7 @@ tags:
 files:
 - README.md
 child_directories:
+- core
 - journals
+- results
+- scripts
