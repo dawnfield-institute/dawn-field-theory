@@ -2,7 +2,7 @@
 
 **Generated file — do not edit by hand.** Regenerate with `python tools/generate_experiment_index.py`.
 
-77 experiments: 52 live (19 active, 32 completed, 1 other) and 25 archived.
+77 experiments: 52 live (18 active, 32 completed, 2 other) and 25 archived.
 
 Eras, lifecycle values, and the archival rule are defined in [`STANDARDS.md`](../STANDARDS.md) §2.2–2.3. Archived work is preserved lineage, not deprecated work — see [`../archive/README.md`](../archive/README.md).
 
@@ -14,7 +14,6 @@ Currently being worked.
 |---|---|---|---|
 | [`milestone15`](milestones/milestone15/) | milestones | Milestone 15: The Representative Problem (DFT-Hodge Boundary) | — |
 | [`milestone16`](milestones/milestone16/) | milestones | Milestone 16: Relational Locality — How Neighbours Come to Cohere | — |
-| [`milestone17`](milestones/milestone17/) | milestones | Milestone 17: Criticality — the boundary where identity changes scale | 3/45 |
 | [`midnight`](sidecars/midnight/) | sidecars | Midnight: Observational Frontiers of Dawn Field Theory | 22/32 |
 | [`milestone-r`](sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance | 60/112 |
 | [`ade_cascade`](studies/ade_cascade/) | studies | ADE Cascade: Re-founding Turbulence on Milestone Machinery | — |
@@ -77,6 +76,7 @@ Individually superseded, but not part of an archived era, so they remain alongsi
 
 | Experiment | Kind | Title | Score |
 |---|---|---|---|
+| [`milestone17`](milestones/milestone17/) | milestones | Milestone 17: Criticality — the boundary where identity changes scale | 3/45 |
 | [`pac_foundations_validation`](studies/pac_foundations_validation/) | studies | PAC Foundations Validation (Archived) | — |
 
 ## Archive
