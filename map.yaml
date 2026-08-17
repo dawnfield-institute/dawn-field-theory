@@ -47,6 +47,7 @@ dawn-field-theory/
     20260717_151300_ade_cascade_round1.md
     20260810_004500_repo_reorg_standardization.md
     20260810_120000_layer_reorganization.md
+    20260817_170000_m17_founding_observation_retracted.md
     README.md
   .claude/
     skills/
@@ -2517,6 +2518,20 @@ dawn-field-theory/
           2026-08-14_exp01_prereg.md
           2026-08-14_exp01_prereg_v2.md
           2026-08-14_refounding.md
+      milestone17/
+        README.md
+        SYNTHESIS.md
+        meta.yaml
+        core/
+          criticality.py
+        journals/
+          2026-08-16_exp01_instruments_calibrated.md
+          2026-08-16_founding-and-loose-ends-survey.md
+          2026-08-17_the-wall-was-my-instrument.md
+        results/
+          exp_01_calibration_20260816_183732.json
+        scripts/
+          exp_01_calibrate_on_percolation.py
       milestone2/
         README.md
         meta.yaml

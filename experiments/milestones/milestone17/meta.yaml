@@ -1,0 +1,105 @@
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+directory_name: milestone17
+name: milestone17
+title: 'Milestone 17: Criticality — the boundary where identity changes scale'
+description: 'Four independent routes hit the same wall and all of them were measuring
+  the same thing without naming it: distance from a critical point. The v3 field engine
+  over ~40 runs, the v4 particle substrate, the corpus own published 3D web (exp_11),
+  and exp_10 convention swept 0.3 to 2.5 across five seeds - every one gives percolation
+  0.007-0.019 and correlation length pinned at the white-noise floor of 0.63 cells.
+  Correlation length DIVERGES at criticality, so that is not "no structure", it is
+  maximally sub-critical, stated four times.
+
+  The claim is that these limits are critical points - the parameter values at which
+  the correlation length diverges and the SCALE ON WHICH IDENTITY IS DEFINED changes.
+  Under M13 identity-IS-complement, when xi reaches system size a node complement
+  stops being local and becomes global; in cluster language, below p_c there are finite
+  clusters and at p_c the largest becomes system-spanning, so a thing stops being
+  A CLUMP and becomes THE NETWORK. Its identity changes category, not degree.
+
+  Xi is the framework critical point and the corpus has already established this twice,
+  in systems that are not structure-forming: cellular_automata_pac_attractors found
+  the four rules nearest Xi are ALL Wolfram Class IV at p = 8.58e-8 with 42.7x enrichment
+  (Class IV is the edge of chaos - Class II frozen, Class III dissolved, Class IV
+  where structures persist AND transform), and sec_threshold_detection found xi ~
+  1.0571 appears AT PHASE TRANSITIONS cross-domain at p < 0.00001. No DFT structure-forming
+  system has ever been measured relative to it.
+
+  The methodological finding underneath: exp_10 concluded "NO discrete phase transition"
+  from four ONE-POINT statistics - density CV, void fraction, filament fraction, sampled
+  clustering. None is an order parameter and a transition is invisible to all of them.
+  The honest status is not "no criticality" but "criticality was never looked for",
+  because the corpus has no instrument that could see it.
+
+  RETRACTED 2026-08-17 - THE FOUNDING OBSERVATION WAS MY MEASUREMENT ARTIFACT. This
+  milestone opened on a "wall": four routes reaching percolation 0.007-0.019, anchored
+  on exp_11''s published 3D web at 0.0068. exp_11''s web PERCOLATES - 0.385 with is_web
+  True at its own 32^3 binning, and 0.406 +-0.069 at matched sampling across 5/5 seeds.
+  The 0.0068 came from binning 4000 particles onto 64^3, 0.015 particles per cell,
+  where the density field is empty by construction and ANY web reads as disconnected.
+  Also withdrawn: "criticality was never looked for because the corpus had no instrument
+  that could see it" - exp_12, sitting beside exp_11, measured P(k) ~ k^-1.727, SCALE-FREE,
+  cosmic similarity 0.849. The corpus was not measuring the wrong things.
+
+  WHAT SURVIVES: exp_01 and the instruments. Block A was calibrated against 2D site
+  percolation, a system with exact answers, and recovered them (p_c 0.5917 against
+  an exact 0.5927460). It never depended on the retracted claim. The thesis is UNTESTED,
+  not refuted, but the motivating observation is gone, so the milestone needs a reason
+  to exist that is not the retracted wall before Blocks B-E are worth running.
+
+  See journals/2026-08-17_the-wall-was-my-instrument.md.
+
+  '
+status: archived
+confidence: 0.15
+score: 3/45
+score_note: 'Block A instrumentation 3/9 (exp_01 passed 3/3, exp_02 and exp_03 open).
+  exp_01 STANDS - validated against exact known answers, unaffected by the 2026-08-17
+  retraction. Blocks B-E unstarted, now blocked on something stronger than sequencing:
+  the empirical observation that motivated them does not exist. ARCHIVED rather than
+  falsified: the thesis was never tested, only its motivation removed. The instruments
+  are reusable and the question is revivable, but that would be a new founding, not
+  a continuation.
+
+  '
+pillar: SEC
+hypothesis: 'The structure-forming systems have a critical point, locatable by finite-size
+  scaling - run at several system sizes L and the xi/L curves CROSS at the critical
+  parameter value, with the cluster-size distribution going power-law there and exponential
+  away from it - and that critical point sits at Xi, which already marks transitions
+  in Lorenz, in primes and in cellular automata at p < 1e-5. If it does, the framework
+  has predicted the LOCATION of a transition it was not fitted to.
+
+  '
+falsification: 'If xi/L shows no crossing at any system size across the accessible
+  parameter range, and the cluster-size distribution is exponential throughout, the
+  structure-forming systems are generically sub-critical and Xi-at-transitions does
+  not extend to structure formation. Second, weaker failure: a crossing that exists
+  but sits nowhere near Xi answers Q1 yes and Q2 no, separating "the framework has
+  criticality" from "Xi locates it".
+
+  '
+validation_type: computational
+created: '2026-08-16'
+tags:
+- milestone17
+- criticality
+- phase-transition
+- finite-size-scaling
+- critical-exponents
+- percolation
+- edge-of-chaos
+- class-iv
+- xi
+- identity
+- self-organized-criticality
+- reality-engine
+files:
+- README.md
+- SYNTHESIS.md
+child_directories:
+- core
+- journals
+- results
+- scripts
