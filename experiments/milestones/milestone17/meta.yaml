@@ -32,13 +32,34 @@ description: 'Four independent routes hit the same wall and all of them were mea
   The honest status is not "no criticality" but "criticality was never looked for",
   because the corpus has no instrument that could see it.
 
+  RETRACTED 2026-08-17 - THE FOUNDING OBSERVATION WAS MY MEASUREMENT ARTIFACT. This
+  milestone opened on a "wall": four routes reaching percolation 0.007-0.019, anchored on
+  exp_11''s published 3D web at 0.0068. exp_11''s web PERCOLATES - 0.385 with is_web True at
+  its own 32^3 binning, and 0.406 +-0.069 at matched sampling across 5/5 seeds. The 0.0068
+  came from binning 4000 particles onto 64^3, 0.015 particles per cell, where the density
+  field is empty by construction and ANY web reads as disconnected. Also withdrawn:
+  "criticality was never looked for because the corpus had no instrument that could see it"
+  - exp_12, sitting beside exp_11, measured P(k) ~ k^-1.727, SCALE-FREE, cosmic similarity
+  0.849. The corpus was not measuring the wrong things.
+
+  WHAT SURVIVES: exp_01 and the instruments. Block A was calibrated against 2D site
+  percolation, a system with exact answers, and recovered them (p_c 0.5917 against an exact
+  0.5927460). It never depended on the retracted claim. The thesis is UNTESTED, not refuted,
+  but the motivating observation is gone, so the milestone needs a reason to exist that is
+  not the retracted wall before Blocks B-E are worth running.
+
+  See journals/2026-08-17_the-wall-was-my-instrument.md.
+
   '
-status: active
-confidence: 0.35
+status: archived
+confidence: 0.15
 score: 3/45
-score_note: 'Block A instrumentation 3/9 (exp_01 passed 3/3, exp_02 and exp_03 open).
-  Blocks B-E unstarted and blocked on A by design: no DFT system is measured until
-  the instruments recover a system whose answer is known.
+score_note: 'Block A instrumentation 3/9 (exp_01 passed 3/3, exp_02 and exp_03
+  open). exp_01 STANDS - validated against exact known answers, unaffected by the 2026-08-17
+  retraction. Blocks B-E unstarted, now blocked on something stronger than sequencing: the
+  empirical observation that motivated them does not exist. ARCHIVED rather than falsified: the thesis was never
+  tested, only its motivation removed. The instruments are reusable and the
+  question is revivable, but that would be a new founding, not a continuation.
 
   '
 pillar: SEC

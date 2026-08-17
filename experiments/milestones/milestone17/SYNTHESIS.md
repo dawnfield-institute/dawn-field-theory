@@ -123,12 +123,25 @@ instrument are both built, so there is no nature to calibrate against — unless
 system is constructed deliberately. That is why Block A is front-loaded, and why 2D site
 percolation is the target: it is one of very few critical systems with exact results.
 
-**The corpus carries the same exposure, and it is not a criticism.** exp_11's published web does
-not percolate; exp_10's Ξ optimum is not in exp_10's own data. Both used one-point statistics,
-measured correctly. The measurement that would have shown otherwise was not among those taken.
+**And the eleventh fault was mine, in this very section.** The paragraph that stood here said
+"exp_11's published web does not percolate" and proposed a corpus-wide survey on the strength
+of it. It was wrong: that reading binned 4000 particles onto a 64³ grid, 0.015 particles per
+cell, where a *deliberately connected* synthetic web also reads as disconnected. At exp_11's own
+resolution the same run gives percolation 0.385 and `is_web=True`. See the retraction at the top
+of the README.
 
-That generalises into a survey worth running independently of this milestone: **which corpus
-results rest on a relational property but were measured with a one-point statistic?** "Web",
-"structure", "connectivity", "coherence" and "emergence" are relational words; density CV, void
-fraction and entropy are one-point measures. Wherever those meet, there is an untested claim —
-not necessarily a wrong one.
+The failure mode is worth keeping precisely because it inverts the section's own thesis. Every
+fault above was *an instrument reporting structure where there was none*. This one was **an
+instrument reporting no structure where there was some** — and it was more dangerous, because a
+null reads as rigour. I spent hours treating a settled corpus result as falsified when the
+defect was three lines from where I was looking.
+
+**The order of suspects, when a fresh script contradicts something already settled:** my
+implementation, my instrument, my reading of what the original actually claimed, a genuine
+regime difference, and only then the established result. I inverted that order, and the cost was
+a milestone founded on a wall that was never there.
+
+The survey this section originally proposed — "which corpus results rest on a relational
+property but were measured with a one-point statistic?" — is **not** justified by anything here.
+exp_12, sitting beside exp_11, measured P(k) ~ k^−1.727, scale-free, cosmic similarity 0.849.
+The corpus was not measuring the wrong things.

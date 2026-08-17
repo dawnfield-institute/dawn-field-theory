@@ -33,19 +33,47 @@ persist and transform** — gliders holding together while propagating and inter
 
 This is not an analogy laid over critical phenomena. It is what the order parameter does.
 
-## The empirical fact
+## RETRACTED — the "empirical fact" this milestone was founded on
 
-Four independent routes reached one wall, all measuring the same quantity without naming it:
+**2026-08-16. The wall does not exist. It was my measurement.**
 
-| route | percolation | ξ |
-|---|---|---|
-| v3 field engine, ~40 runs, 4 grids, 3 tick counts | 0.007–0.019 | 0.63 (noise floor) |
-| v4 particle substrate, attractive convention | 0.425, spanning only 0.47 of the box | — |
-| **exp_11 — the corpus's own published 3D web** | **0.0068** (noise control 0.0025) | — |
-| exp_10's convention, swept 0.3 → 2.5, 5 seeds | 0.011–0.017 at **every** setting | — |
+This milestone was opened on a claim that four independent routes had triangulated on a
+percolation floor of 0.007–0.019, with **exp_11's published 3D web at 0.0068** as the anchor.
+That reading came from binning 4000 particles onto a 64³ grid — **0.015 particles per cell**.
+At that sampling the density field is empty by construction: the overdense set shatters into
+singletons and *any* web, real or deliberately synthetic, reads as disconnected.
 
-**ξ diverges at criticality.** Every one of these measured ξ at the white-noise floor. That is
-not "no structure" — it is *maximally sub-critical*, stated four times.
+Same run, same physics, same code — read at different binnings:
+
+| res | particles/cell | percolation | `is_web` |
+|---|---|---|---|
+| 16 | 0.98 | **0.472** | True |
+| 24 | 0.29 | 0.433 | True |
+| **32 — exp_11's own binning** | 0.12 | **0.385** | **True** |
+| 48 | 0.036 | 0.281 | False |
+| **64 — where my 0.0068 came from** | **0.015** | 0.062 | False |
+
+**exp_11's cosmic web is real and it percolates.** At matched sampling the 3D substrate gives
+percolation 0.406 ± 0.069 from exp_11's own *uncorrelated lattice* start, with **5/5 seeds**
+passing the web gate.
+
+The tell was in view the whole time: **occupancy read 0.012–0.04 in every one of those runs**,
+and it was printed alongside every percolation value. I never asked whether that occupancy was
+physically attainable. A 3D control settles it independently — a deliberately connected web
+reads 1.000 across occupancy 0.082–0.268, so the instrument was never the problem.
+
+**Consequences for what follows:**
+
+- "ξ at the white-noise floor, maximally sub-critical, stated four times" — **withdrawn**.
+- "criticality was never looked for, because the corpus had no instrument that could see it"
+  — **withdrawn**. The corpus's instrument was sound at the corpus's own resolution.
+- The 2D↔3D difference is not a detail. 2D was doing much of the damage on its own: the
+  filament/sheet/node topology exp_11 targets does not exist in the plane, and site
+  percolation sits at 0.593 in 2D against 0.312 in 3D.
+
+**Rule this cost enough to earn**: match particles-per-cell (`n/res^d ≈ 1`) before reading any
+connectivity statistic, and check every threshold-based measure against a known-connected
+control **at the same occupancy**.
 
 ## What the corpus already established
 
