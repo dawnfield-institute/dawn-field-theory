@@ -10,24 +10,23 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 |---|---|---|
 | [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 16 |
 | [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 21 |
-| [`experiments/`](experiments/) | what was measured | 2643 |
+| [`experiments/`](experiments/) | what was measured | 2645 |
 | [`papers/`](papers/) | what was published | 1509 |
 | [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 11 |
 
-Tracked files: **9385**
+Tracked files: **9388**
 
 **77 experiments** — 52 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 
 ## On deck
 
-19 experiments being worked now.
+18 experiments being worked now.
 
 | Experiment | Kind | Title |
 |---|---|---|
 | [`milestone15`](experiments/milestones/milestone15/) | milestones | Milestone 15: The Representative Problem (DFT-Hodge Boundary) |
 | [`milestone16`](experiments/milestones/milestone16/) | milestones | Milestone 16: Relational Locality — How Neighbours Come to Cohere |
-| [`milestone17`](experiments/milestones/milestone17/) | milestones | Milestone 17: Criticality — the boundary where identity changes scale |
 | [`midnight`](experiments/sidecars/midnight/) | sidecars | Midnight: Observational Frontiers of Dawn Field Theory |
 | [`milestone-r`](experiments/sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance |
 | [`ade_cascade`](experiments/studies/ade_cascade/) | studies | ADE Cascade: Re-founding Turbulence on Milestone Machinery |
@@ -88,6 +87,7 @@ Tracked files: **9385**
 
 | Experiment | Kind | Status |
 |---|---|---|
+| [`milestone17`](experiments/milestones/milestone17/) | milestones | archived |
 | [`pac_foundations_validation`](experiments/studies/pac_foundations_validation/) | studies | archived |
 
 ## Legacy
