@@ -54,13 +54,43 @@ description: 'Four independent routes hit the same wall and all of them were mea
 status: archived
 confidence: 0.15
 score: 3/45
-score_note: 'Block A instrumentation 3/9 (exp_01 passed 3/3, exp_02 and exp_03 open).
-  exp_01 STANDS - validated against exact known answers, unaffected by the 2026-08-17
-  retraction. Blocks B-E unstarted, now blocked on something stronger than sequencing:
-  the empirical observation that motivated them does not exist. ARCHIVED rather than
-  falsified: the thesis was never tested, only its motivation removed. The instruments
-  are reusable and the question is revivable, but that would be a new founding, not
-  a continuation.
+score_note: 'Block A instrumentation 3/9 (exp_01 passed 3/3, exp_02 FAILED 0/3, exp_03
+  open). exp_01 STANDS - validated against exact known answers, unaffected by the
+  2026-08-17 retraction. Blocks B-E unstarted, now blocked on something stronger than
+  sequencing: the empirical observation that motivated them does not exist. ARCHIVED
+  rather than falsified: the thesis was never tested, only its motivation removed.
+  The instruments are reusable and the question is revivable, but that would be a
+  new founding, not a continuation.
+
+  exp_02 (2026-08-27) closes the fourth retracted route and blocks Block B. AT L=256
+  structure.correlation_length reads 0.6296 AT THE EXACT p_c of 2D site percolation
+  against its own documented white-noise floor of 0.6321, with a total dynamic range
+  of 0.003 across p in [0.40, 0.80], and it converges ONTO the floor as resolution
+  improves (0.6111 -> 0.6199 -> 0.6257 -> 0.6296 for L = 32 -> 256). Discrimination
+  power D_A = 0.893 against the connectivity estimator D_B = 7.526. So a system sitting
+  EXACTLY on its critical point reads at the white-noise floor, and the inference
+  "xi at the floor means maximally sub-critical" - the fourth route into the retracted
+  wall, and the only one the 2026-08-17 retraction never examined - never carried
+  the information read out of it. This does NOT say the engine is critical; it removes
+  a piece of evidence that said it was not, leaving Q1 open. A bearing, not a verdict.
+
+  BOTH predictive tests failed and the kill sentence was honoured (STANDARDS 2.7.5).
+  T3: nu = 1.3400 against exact 4/3, a 0.5% recovery, but the REGISTERED claim was
+  the RELATION that nu would run ~10% low like exp_01 gamma/nu and tau, establishing
+  one coherent milestone-wide instrument bias. REFUTED - there is no shared M17 bias,
+  bias belongs to each estimator, and Block B may not apply a blanket correction.
+  T4: alpha at p_c = +1.057 (R2 1.000) and alpha(0.45) = +0.146 pass, but alpha(0.75)
+  = +0.398 against a registered |alpha| < 0.25. Diagnosis, which does not change the
+  score: alpha tracks xi approaching the lattice scale (xi 4.4 -> alpha 0.085; xi
+  1.9 -> alpha 0.398; xi 1.0 -> alpha 0.565), so below xi ~ 2 cells the estimator
+  reports the small-cluster tail growing with L by extreme-value sampling. The SAME
+  failure class as estimator A white-noise floor, at the other end.
+
+  The connectivity instrument does locate p_c to 0.013 unaided, discriminate at 7.5
+  sigma, recover nu to 0.5% and scale as L^1.057. What it lacks is a REGISTERED domain
+  of validity - xi >~ 2 cells is read off this run own data, post hoc. Route forward
+  is a v2 pre-registration (the M16 precedent, prereg v2 superseding v1), placing
+  one control inside the domain and one outside that is REQUIRED to fail.
 
   '
 pillar: SEC

@@ -1,10 +1,10 @@
 # Milestone 17: Criticality — the boundary where identity changes scale
 
-## Score: 3/3 Block A partial (instrumentation) · Blocks B–E unstarted
+## Score: 3/9 Block A (instrumentation) · exp_02 kill sentence FIRED 2026-08-27 · Blocks B–E unstarted
 
 | Block | Experiments | Score | State |
 |---|---|---|---|
-| **A — Instrumentation** | exp_01 – exp_03 | 3/9 | exp_01 passed; A2/A3 open |
+| **A — Instrumentation** | exp_01 – exp_03 | 3/9 | exp_01 passed; **exp_02 FAILED, kill sentence honoured**; exp_03 open |
 | **B — Is there a critical point?** (Q1) | exp_04 – exp_06 | 0/12 | blocked on A |
 | **C — Is it at Ξ?** (Q2) | exp_07 – exp_08 | 0/8 | blocked on B |
 | **D — Self-organized or tuned?** (Q3) | exp_09 – exp_10 | 0/8 | blocked on B |
@@ -108,8 +108,39 @@ No DFT system is measured until this completes.
 | Exp | Question | Score | State |
 |---|---|---|---|
 | 01 | Do the instruments recover 2D site percolation? | **3/3** | **PASS** |
-| 02 | Correlation length as a *scaled* critical quantity — ξ/L crossing | 0/3 | open |
+| 02 | Correlation length as a *scaled* critical quantity — ξ/L crossing | 0/3 | **FAIL — kill sentence fired** |
 | 03 | Edge-of-chaos classifier, calibrated against Wolfram classes | 0/3 | open |
+
+**exp_02 result (2026-08-27).** Two findings, one of which closes the milestone's fourth
+retracted route and one of which blocks Block B.
+
+**The 0.63 inference is dead.** At L = 256, `structure.correlation_length` reads **0.6296 at the
+exact p_c** against its own white-noise floor of 0.6321, and its whole dynamic range over
+p ∈ [0.40, 0.80] is 0.003 wide. It converges *onto* the floor as resolution improves —
+0.6111 → 0.6199 → 0.6257 → 0.6296 for L = 32 → 256. Discrimination power **D_A = 0.893**
+against the connectivity estimator's **D_B = 7.526**. A system sitting exactly on its critical
+point reads at the white-noise floor, so *"ξ at the floor ⇒ maximally sub-critical"* — the
+fourth route into the retracted wall, and the one the 2026-08-17 retraction never examined —
+**never carried the information that was read out of it.** This does not say the engine is
+critical; it removes a piece of evidence that said it was not.
+
+**Both predictive tests failed and the kill sentence is honoured.**
+
+- **T3.** ν = **1.3400** against exact 4/3 — 0.5% high, an excellent recovery — but the
+  *registered* claim was the **relation** that ν would be ~10% low like exp_01's γ/ν and τ,
+  establishing one coherent milestone-wide bias. **Refuted.** There is no shared M17 bias;
+  bias belongs to each estimator. **Block B may not apply a blanket correction.**
+- **T4.** α(p_c) = +1.057 (R² 1.000), α(0.45) = +0.146 ✓, but **α(0.75) = +0.398** ✗ against a
+  registered |α| < 0.25. Diagnosis, which does not change the score: α tracks ξ's approach to
+  the lattice scale (ξ = 4.4 → α 0.085; ξ = 1.9 → α 0.398; ξ = 1.0 → α 0.565). Below **ξ ≈ 2
+  cells** the estimator reports the small-cluster tail, which grows with L by extreme-value
+  sampling. **The same failure class as estimator A's floor, at the other end.**
+
+The connectivity instrument does locate p_c to 0.013 unaided, discriminate at 7.5σ, recover ν to
+0.5%, and scale as L^1.057. What it lacks is a *registered* domain of validity — ξ ≳ 2 cells is
+read off this run's own data, post hoc. A **v2 pre-registration** is the route (the M16 precedent
+where prereg v2 superseded v1), and it must place one control inside the domain and one outside
+that is **required to fail**.
 
 **exp_01 result.** p_c = **0.5917** against an exact 0.5927460 (err 0.0011), located purely by
 where spanning-probability curves for L = 32/64/128 intersect. χ_max ~ L^1.6233 against an exact
@@ -177,6 +208,8 @@ block can close existing open threads rather than adding new ones.**
 | P3 | That critical point sits at Ξ | 2026-08-16 | open (Block C) |
 | P4 | The framework is self-organized-critical — reaches it without tuning | 2026-08-16 | open (Block D) |
 | P5 | M10's φ^(−1/N) correction follows from critical exponents | 2026-08-16 | open (Block E) |
+| P6 | ν shares exp_01's ~10% low finite-size bias, giving M17 one coherent instrument bias | 2026-08-27 | **REFUTED** — ν = 1.3400, 0.5% **high**; bias is per-estimator |
+| P7 | The connectivity length is L-independent (\|α\| < 0.25) at fixed off-critical p | 2026-08-27 | **REFUTED** — α(0.75) = +0.398; resolution floor below ξ ≈ 2 cells |
 
 **Registered invariants**: ξ/L and the **critical exponents**. Exponents are *universal* —
 shared across every system in a universality class regardless of microscopic detail — which
@@ -213,7 +246,8 @@ sits nowhere near Ξ answers Q1 yes and Q2 no, separating "the framework has cri
 | finite-size crossing | **built**, calibrated |
 | power-law vs exponential discriminator | **built** — and shown *insufficient* alone, see below |
 | cutoff scaling (χ ~ L^(γ/ν)) | **built**, calibrated |
-| correlation length as a *scaled* critical quantity | open (exp_02) |
+| correlation length as a *scaled* critical quantity | **built** (exp_02: `connectivity_length`) — recovers p_c, ν and L^1.057 scaling, but **NOT licensed**: no registered domain of validity, resolution floor at ξ ≈ 2 cells |
+| density-autocorrelation ξ as a criticality measure | **shown impossible** (exp_02) — reads the white-noise floor at exact p_c, D_A = 0.893 |
 | edge-of-chaos classifier as a reusable instrument | open (exp_03) |
 
 **A discriminator finding worth carrying**: `power_law_or_exponential` is exact on pure forms
