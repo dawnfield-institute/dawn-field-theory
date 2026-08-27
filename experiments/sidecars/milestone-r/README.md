@@ -6,9 +6,9 @@ Radiation is PAC ledger severance. When a system emits radiation, the PAC conser
 
 The analogy is precise: nuclear ejections look like carbonated water bubble ejections in 0g -- both isotropic, stochastic, driven by internal energy differential, not gravity. Gravity (depth 183) is a spectator at nuclear scales, 37 orders weaker. The "pressure not temperature" mechanism (shift PAC equilibrium rather than brute-force energy input) maps to PAC rebalancing and could lead to more efficient X-ray generation.
 
-## Status: Active | Score: 60/112 (54%)
+## Status: Active | Score: 62/112 (55%)
 
-Predicted: 27/40 (68%). Actual: 60/112 (54%) after 27 experiments. Sidecar milestone -- does not continue M14->M15 chain.
+Predicted: 27/40 (68%). Actual: 62/112 (55%) after 27 experiments. Sidecar milestone -- does not continue M14->M15 chain.
 
 ## Scorecard
 
@@ -16,9 +16,9 @@ Predicted: 27/40 (68%). Actual: 60/112 (54%) after 27 experiments. Sidecar miles
 |-----|------|-------|-------|-------|
 | 01 | Ledger Severance Mechanics | A | 2/4 | PAC conservation exact, independent ledgers exact. Spectral shift coarser than orbits (T2 FAIL), constant across tree depths (T4 FAIL) |
 | 02 | Alpha Decay Discrete Severance | A | 2/4 | T1 tautological (Planck >> MeV), phi-ratio clustering no better than random (T2), relaxation anti-correlates with size (T3). Alpha/proton ratio near phi^0 (T4 PASS) |
-| 03 | Beta Spectrum Unsettled Ledger | A | 2/4 | Cascade is continuous (T1), shape matches Fermi surprisingly well (chi^2=0.37, T2 PASS). Endpoint 19 orders off (T3 FAIL). Settled/unsettled entropy not discriminated (T4 FAIL) |
+| 03 | Beta Spectrum Unsettled Ledger | A | **3/4** | Cascade is continuous (T1), shape matches Fermi surprisingly well (chi^2=0.37, T2 PASS). **T3 PASS 2026-08-27** on the coupling-anchored scale (was: endpoint 19 orders off; old fit hit d=19, the top of its search range). Settled/unsettled entropy not discriminated (T4 FAIL -- graph entropy, not a scale failure). NOTE: the best-fit depth tracks the MEDIATOR CHOICE, not a physical depth -- see the 2026-08-27 journal |
 | 04 | Gamma Equilibration | B | 2/4 | Co-60 ratio found in A_7 at 1.9% (T2 PASS). Line width perfectly correlates with disequilibrium (T4 PASS). Equilibration energy negative for most vertices (T1 FAIL), multi-step incomplete for some graphs (T3 FAIL) |
-| 05 | Hydrogen Spectrum | B | 1/4 | Series grouping correct (T3 PASS). Rydberg 24 orders off (T1), phi^k != 1/n^2 (T2), fine structure 2.7 orders off (T4). As predicted: Coulomb SO(4) not in PAC tree |
+| 05 | Hydrogen Spectrum | B | **2/4** | Series grouping correct (T3 PASS). **T1 PASS 2026-08-27 at 11.4 ppm** via ALPHA_EM_DFT^2*m_e/2 (was: 24 orders off). phi^k != 1/n^2 (T2, structural -- script's own note says expected), fine structure still 486x off with the Rydberg now exact (T4). As predicted: Coulomb SO(4) not in PAC tree |
 | 06 | Xi Cost Scope Counting | B | 3/4 | T1/T2/T4 tautological (all energies round to n=0 at Planck scale). Beta also rounds to 0 (T3 FAIL). **The energy scale problem: E_Planck * phi^(-d) >> MeV for all d < 100** |
 | 07 | Bubble Ejection Analogy | C | 3/4 | Isotropy exact (T1), pressure 10.6x more efficient (T3), gravity 37 orders irrelevant (T4). Ejection timing NOT exponential (T2 FAIL: cascade gives geometric, not Poisson) |
 | 08 | X-ray Equilibrium Shift | C | 3/4 | Bremsstrahlung cutoff works (T2), efficiency gain real at all deltas (T3). Boundary counts tautologically 0 (T1). Transition count formula wrong: severance energies degenerate (T4 FAIL) |
@@ -41,7 +41,7 @@ Predicted: 27/40 (68%). Actual: 60/112 (54%) after 27 experiments. Sidecar miles
 | 25 | Series Sweet Spots | D | **4/4** | **PER-SERIES CONVERGENCE MAP.** Sweet spot ordering confirmed: Lyman(A_5) < Balmer(A_6) < Paschen(A_8) (T1 PASS). Alpha errors < 1.3% at sweet spots (T2 PASS). Convergence exponents predict sweet spots via log(n) ~ 1/p: R^2=0.949 (T3 PASS). Branch departure ordered Paschen>Balmer>Lyman for 3/4 sizes (T4 PASS). **Each series has a minimum rank for convergence, ordered by series index.** |
 | 26 | Channel Completeness | D | 1/4 | **Laplacian determines all channels but they're NOT redundant.** Eigenvector regression: JSD R^2=1.0, HKS R^2=1.0, FPT R^2=0.82-1.0 for 7/11 graphs (T3 PASS). But pairwise |r|>0.6 only 41% (T1 FAIL), ARI 0.12-0.52 (T2 FAIL), effective rank ~2.5 not ≤2 (T4 FAIL). **Key finding: channels are non-linear functions of the same Laplacian, carrying genuinely different information despite shared origin. exp_19's 2-channel sufficiency comes from Laplacian information-richness, not channel redundancy.** |
 | 27 | Bifractal Time Emergence | D | 0/4 | **Honest 0/4 but findings support the thesis.** Dual scaling: 7/7 graphs have R_b→R_f crossover but sigma* doesn't correlate with spectral gap (T1 FAIL: rho=-0.19). Eigenvalue clustering doesn't predict effective rank (T2 FAIL: 1/11). HKS-FPT anti-correlated at |tau|>0.5, violating (0.1,0.9) bound (T3 FAIL: 3/11). HKS is the privileged channel, not FPT (T4 FAIL: CV=1.16). **Key finding: FPT (time proxy) is the LEAST important channel for degree classification — removing it causes zero ARI loss. Time IS not privileged, but the test criterion measured the wrong thing.** |
-| **Total** | | | **60/112** | **54% -- exploratory sidecar** |
+| **Total** | | | **62/112** | **55% -- exploratory sidecar** |
 
 ## Key Finding: The Energy Scale Problem
 
@@ -50,6 +50,36 @@ Predicted: 27/40 (68%). Actual: 60/112 (54%) after 27 experiments. Sidecar miles
 This means the naive "boundary count = energy / Xi * E_scale" formula gives n ≈ 0 for all nuclear/atomic phenomena. The tests that "pass" at depth 3 are tautological: everything rounds to zero.
 
 **What this reveals:** The Fibonacci depth hierarchy correctly orders forces and correctly gives coupling *ratios* (phi^6 for the hierarchy problem, etc.), but the *absolute* energy scale requires an additional ingredient -- likely the mass of the mediator or the energy of the specific transition. The boundary-counting idea needs to be reformulated using coupling constants (dimensionless) rather than absolute energies.
+
+### Update 2026-08-27: the reformulation is also wrong, and the reason is structural
+
+exp_24 did the reformulation this section calls for, replacing `E_Planck * phi^(-d)` with
+`alpha(d)^2 * m_mediator`. Propagating it recovered **two** of its six named test failures
+(exp_03 T3, exp_05 T1 at 11.4 ppm); the other four -- exp_03 T4, exp_04 T1, exp_05 T2/T4 -- have
+no scale term in them at all and cannot move under any rescaling.
+
+Three findings, detailed in `journals/2026-08-27_energy_scale_propagation_and_the_depth_slot.md`:
+
+1. **The (depth, mediator) pair is exactly degenerate.** Since `E ~ phi^(-2d) * m`, scaling the
+   mediator by `r` is identical to shifting depth by `ln(r)/(2 ln phi)`. Every mediator fits the
+   beta endpoints equally well at a shifted depth, so a fitted depth measures the mediator
+   choice, not physics.
+2. **`dft_energy_scale` is valid only for the nuclear case.** It uses
+   `fibonacci_depth_coupling(d) = phi^(-d)/sqrt(5)`, which at EM depth is 72x off the Rydberg;
+   exp_24's own T1 bypasses it and uses `ALPHA_EM_DFT` directly. The one test that does use it
+   sits at 1.75x inside a factor-1000 window.
+3. **Depth is being read out of the wrong slot.** Every DFT constant encodes scale in *which*
+   Fibonacci indices appear and carries phi exactly once -- alpha_EM's phi-power is **-1**, not
+   -13. `fibonacci_depth_coupling` encodes scale as a *power of phi* and drops the indices.
+
+**So an energy scale should carry phi^-1 and a Fibonacci index multiset**, the shape every other
+constant in the corpus already has. `alpha(d)^2 * m` has neither.
+
+**Warning for whoever finishes the propagation (exp_06, exp_08, exp_09):** this section already
+notes that several *passes* are tautological because everything rounds to zero at the Planck
+scale -- exp_06 T1/T2/T4, exp_02 T1, exp_08 T1, exp_09 T4. A correct scale turns those into real
+tests, which can then fail. **The net score may go down**, and that is the correct outcome: a
+test that passes because every input rounds to zero was never evidence.
 
 ## What Works (Structural Results)
 

@@ -24,7 +24,36 @@ def find_repo_root(start_path):
         current = parent
 
 REPO_ROOT = find_repo_root(os.path.dirname(os.path.abspath(__file__)))
-REPO_NAME = os.path.basename(REPO_ROOT)
+
+
+def repo_name(root):
+    """The repository's name, which is NOT the checkout directory's name.
+
+    In a git worktree the checkout is named for the branch's working directory, so
+    `basename(root)` yields e.g. 'dft-m17-exp02' and map.yaml's root label silently changes
+    on every worktree-based commit. Since the workspace convention routes all repo work
+    through dedicated worktrees, that is the normal case rather than the exotic one.
+
+    `.git` is a DIRECTORY in a primary checkout and a FILE in a worktree; in the latter it
+    points at the main checkout's git dir, whose parent is the real repository root.
+    """
+    dot_git = os.path.join(root, '.git')
+    if os.path.isfile(dot_git):
+        try:
+            with open(dot_git, 'r', encoding='utf-8') as fh:
+                line = fh.read().strip()
+            if line.startswith('gitdir:'):
+                gitdir = line.split(':', 1)[1].strip()
+                # .../<main-checkout>/.git/worktrees/<name>  ->  .../<main-checkout>
+                marker = os.path.join('.git', 'worktrees')
+                if marker in gitdir:
+                    return os.path.basename(gitdir.split(marker)[0].rstrip(os.sep))
+        except OSError:
+            pass
+    return os.path.basename(root)
+
+
+REPO_NAME = repo_name(REPO_ROOT)
 OUTPUT_FILE = os.path.join(REPO_ROOT, 'map.yaml')
 
 def compress_numbered_files(files):

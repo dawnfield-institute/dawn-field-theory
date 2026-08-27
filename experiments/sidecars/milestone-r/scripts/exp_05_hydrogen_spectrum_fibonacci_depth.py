@@ -23,7 +23,7 @@ from datetime import datetime
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "core"))
 from radiation_physics import (
     PHI, INV_PHI, XI_BALANCE, PI, LN_PHI,
-    fibonacci_depth_coupling, fib,
+    fibonacci_depth_coupling, fib, ALPHA_EM_DFT, M_ELECTRON_MEV,
     severance_energy, fibonacci_wavelength,
     build_pac_tree, pac_tree_values,
     RYDBERG_EV, LYMAN_ALPHA_EV, BALMER_ALPHA_EV,
@@ -38,25 +38,36 @@ def test_T1_rydberg_from_depth():
     print("\n  T1: Rydberg energy from Xi * coupling(13)")
     results = {'description': 'DFT Rydberg within factor 100 of 13.6 eV'}
 
-    # Method 1: Xi * E_Planck * phi^{-13} in eV
+    # exp_24 supplied the m_e anchor this test was written without ("we don't have m_e in
+    # the DFT chain yet"): Rydberg = alpha_EM^2 * m_e / 2, no Xi. The Xi * E_Planck *
+    # phi^(-13) form below is kept and reported for contrast -- it is 26 orders high, which
+    # is why this test could never pass on it.
+    #
+    # CAREFUL: the EM anchor is ALPHA_EM_DFT, *not* fibonacci_depth_coupling(DEPTH_EM).
+    # They differ by 8.501x because DEPTH_EM = 13 is a Fibonacci INDEX while fdc(d) =
+    # phi^(-d)/sqrt(5) treats d as a phi EXPONENT (alpha_EM sits at fdc-depth ~8.55).
+    # dft_energy_scale() uses fdc and is validated only for the NUCLEAR case, where exp_24
+    # T2 gets 10.4576 MeV; at EM depth it lands 72x off. Do not route EM through it.
     d = DEPTH_EM  # Should be 13
     e_planck_ev = E_PLANCK_GEV * 1e9  # ~1.22e28 eV
-    e_dft = XI_BALANCE * e_planck_ev * PHI ** (-d)
+    e_planck_form_ev = XI_BALANCE * e_planck_ev * PHI ** (-d)      # the retired scale
 
+    e_dft = ALPHA_EM_DFT ** 2 * M_ELECTRON_MEV / 2.0 * 1e6         # MeV -> eV
     log_ratio = abs(np.log10(e_dft / RYDBERG_EV))
 
-    # Method 2: Using fibonacci_depth_coupling
     alpha_dft = fibonacci_depth_coupling(d)
-    # alpha_EM ~ 1/137, and Rydberg = alpha^2 * m_e * c^2 / 2
-    # But we don't have m_e in the DFT chain yet, so just compare scales
 
-    passed = log_ratio < 2.0  # Within factor of 100
+    passed = log_ratio < 2.0  # Within factor of 100 -- threshold UNCHANGED
     results['depth'] = d
     results['e_dft_ev'] = float(e_dft)
+    results['e_planck_form_ev'] = float(e_planck_form_ev)
     results['rydberg_ev'] = float(RYDBERG_EV)
     results['log10_ratio'] = float(log_ratio)
-    results['alpha_dft'] = float(alpha_dft)
+    results['error_ppm'] = float(abs(e_dft - RYDBERG_EV) / RYDBERG_EV * 1e6)
+    results['alpha_dft_fdc'] = float(alpha_dft)
+    results['alpha_em_dft'] = float(ALPHA_EM_DFT)
     results['PASS'] = passed
+    print(f"    retired Planck form: {e_planck_form_ev:.3e} eV")
     print(f"    DFT: {e_dft:.3e} eV, Measured: {RYDBERG_EV} eV")
     print(f"    log10 ratio: {log_ratio:.2f} (need < 2.0)")
     print(f"    -> {'PASS' if passed else 'FAIL'}")

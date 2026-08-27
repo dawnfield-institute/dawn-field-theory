@@ -1,0 +1,93 @@
+{
+  "experiment": "exp_05_hydrogen_spectrum_fibonacci_depth",
+  "timestamp": "2026-08-27T19:09:42.398611",
+  "block": "B",
+  "test_results": {
+    "T1": {
+      "description": "DFT Rydberg within factor 100 of 13.6 eV",
+      "depth": 13,
+      "e_dft_ev": 13.605537702970187,
+      "e_planck_form_ev": 2.4802663678467394e+25,
+      "rydberg_ev": 13.605693009,
+      "log10_ratio": 4.957405452821626e-06,
+      "error_ppm": 11.414782746441102,
+      "alpha_dft_fdc": 0.0008583722609568166,
+      "alpha_em_dft": 0.007297310889743783,
+      "PASS": true
+    },
+    "T2": {
+      "description": "PAC tree ratios agree within 20% of 1/k^2 for k=1..4",
+      "level_values": [
+        1.0,
+        0.6180339887498948,
+        0.3819660112501051,
+        0.23606797749978964,
+        0.1458980337503154
+      ],
+      "ratios_pac": [
+        1.618033988749895,
+        2.6180339887498953,
+        4.236067977499791,
+        6.854101966249687
+      ],
+      "ratios_hydrogen": [
+        1,
+        4,
+        9,
+        16
+      ],
+      "comparisons": [
+        {
+          "level": 1,
+          "pac_ratio": 1.618033988749895,
+          "hydrogen_ratio": 1.0,
+          "error": 0.6180339887498949
+        },
+        {
+          "level": 2,
+          "pac_ratio": 2.6180339887498953,
+          "hydrogen_ratio": 4.0,
+          "error": 0.34549150281252616
+        },
+        {
+          "level": 3,
+          "pac_ratio": 4.236067977499791,
+          "hydrogen_ratio": 9.0,
+          "error": 0.5293257802778011
+        },
+        {
+          "level": 4,
+          "pac_ratio": 6.854101966249687,
+          "hydrogen_ratio": 16.0,
+          "error": 0.5716186271093946
+        }
+      ],
+      "n_match": 0,
+      "PASS": false,
+      "note": "PAC tree gives phi^k scaling, hydrogen gives k^2. Expected to fail."
+    },
+    "T3": {
+      "description": "Transitions group by destination level (Lyman/Balmer/Paschen analog)",
+      "n_series": 4,
+      "series_counts": {
+        "level_0": 4,
+        "level_1": 3,
+        "level_2": 2,
+        "level_3": 1
+      },
+      "lyman_analog_count": 4,
+      "balmer_analog_count": 3,
+      "PASS": true
+    },
+    "T4": {
+      "description": "Splitting magnitude within factor 10 of alpha^2 * 13.6 eV",
+      "fine_structure_ev": 0.0007245215722324865,
+      "correction_factor": 0.025897993698385337,
+      "dft_splitting_ev": 0.3523601518092474,
+      "log10_ratio": 2.686935467543946,
+      "PASS": false,
+      "note": "Correction template modifies coupling, not level structure directly."
+    }
+  },
+  "overall_score": "2/4"
+}
