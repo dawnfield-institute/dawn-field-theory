@@ -36,10 +36,10 @@ from scipy.integrate import quad
 
 MIDNIGHT_ROOT = Path(__file__).resolve().parent.parent
 EXPERIMENTS_ROOT = MIDNIGHT_ROOT.parent
-DATA_ROOT = MIDNIGHT_ROOT.parent.parent.parent.parent / "data"
 
 sys.path.insert(0, str(MIDNIGHT_ROOT / "core"))
 from phase_rate import (
+    DATA_ROOT,
     PHI, INV_PHI, LN_PHI, PI,
     save_midnight_results, _convert_numpy,
 )

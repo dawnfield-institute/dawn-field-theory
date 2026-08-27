@@ -30,9 +30,15 @@ from datetime import datetime
 # Import chain: M14 -> M13 -> M12 -> M11 -> M10 -> M9 -> M8
 # ============================================================
 MR_ROOT = Path(__file__).resolve().parent.parent
-M14_ROOT = MR_ROOT.parent / "milestone14"
-M11_ROOT = MR_ROOT.parent / "milestone11"
-M6_ROOT = MR_ROOT.parent / "milestone6"
+
+# Milestones live under experiments/milestones/, this sidecar under experiments/sidecars/, so
+# the hop is up TWO levels and across -- not `MR_ROOT.parent`, which was correct only before
+# the August 2026 layer reorganization (see MIGRATION.md). Every script here imports through
+# this module, so the stale path made all 27 of them unrunnable.
+MILESTONES = MR_ROOT.parent.parent / "milestones"
+M14_ROOT = MILESTONES / "milestone14"
+M11_ROOT = MILESTONES / "milestone11"
+M6_ROOT = MILESTONES / "milestone6"
 
 sys.path.insert(0, str(M14_ROOT / "core"))
 from quantum_complement import (

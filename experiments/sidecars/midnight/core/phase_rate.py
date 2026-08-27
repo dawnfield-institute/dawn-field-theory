@@ -19,6 +19,7 @@ Provides:
 - save_midnight_results, _convert_numpy: output utilities
 """
 
+import os
 import sys
 import json
 import numpy as np
@@ -26,8 +27,45 @@ from pathlib import Path
 from datetime import datetime
 
 MIDNIGHT_ROOT = Path(__file__).resolve().parent.parent
-M14_ROOT = MIDNIGHT_ROOT.parent / "milestone14"
+
+# Milestones live under experiments/milestones/, this sidecar under experiments/sidecars/,
+# so the hop is up TWO levels and across -- not `MIDNIGHT_ROOT.parent`, which was correct
+# only before the August 2026 layer reorganization (see MIGRATION.md) moved sidecars out of
+# experiments/. Every Midnight script imports through this module, so the stale path made
+# the whole sidecar unrunnable rather than failing in one visible place.
+MILESTONES_ROOT = MIDNIGHT_ROOT.parent.parent / "milestones"
+SIDECARS_ROOT = MIDNIGHT_ROOT.parent
+M14_ROOT = MILESTONES_ROOT / "milestone14"
 sys.path.insert(0, str(M14_ROOT / "core"))
+
+
+def find_data_root():
+    """The shared `data/` directory, resolved by SEARCH rather than by counting parents.
+
+    Scripts here used `MIDNIGHT_ROOT.parent.parent.parent.parent / "data"`, which assumes the
+    repository sits directly inside the workspace. That holds for a primary checkout and is
+    wrong in every git worktree, because a worktree adds a directory level -- and workspace
+    convention routes all repo work through worktrees, so the fragile case is the normal one.
+
+    Walks up looking for a `data/` directory, preferring one that actually carries the
+    catalogues Midnight reads. `DFT_DATA_ROOT` overrides.
+    """
+    override = os.environ.get("DFT_DATA_ROOT")
+    if override:
+        return Path(override)
+    fallback = None
+    here = MIDNIGHT_ROOT
+    for _ in range(8):
+        here = here.parent
+        cand = here / "data"
+        if cand.is_dir():
+            if (cand / "sdss_mgii").is_dir():
+                return cand
+            fallback = fallback or cand
+    return fallback or (MIDNIGHT_ROOT.parent.parent.parent.parent / "data")
+
+
+DATA_ROOT = find_data_root()
 
 from quantum_complement import (
     PHI, INV_PHI, LN_PHI, GAMMA_EM, XI_BALANCE, PI,

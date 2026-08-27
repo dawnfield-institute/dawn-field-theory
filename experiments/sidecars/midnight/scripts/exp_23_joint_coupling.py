@@ -90,10 +90,9 @@ from pathlib import Path
 from scipy.stats import spearmanr
 
 MIDNIGHT_ROOT = Path(__file__).resolve().parent.parent
-DATA_ROOT = MIDNIGHT_ROOT.parent.parent.parent.parent / "data"
 sys.path.insert(0, str(MIDNIGHT_ROOT / "core"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from phase_rate import PHI, LN_PHI, XI_BALANCE, save_midnight_results, _convert_numpy
+from phase_rate import DATA_ROOT, PHI, LN_PHI, XI_BALANCE, save_midnight_results, _convert_numpy
 from exp_19_ionization_coupling import ION_IP, n_at_z
 
 E_H = 27.2          # eV, Hartree (M-R exp_24); used only in the reported ladder

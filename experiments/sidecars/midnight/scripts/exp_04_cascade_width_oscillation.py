@@ -33,7 +33,7 @@ EXPERIMENTS_ROOT = MIDNIGHT_ROOT.parent
 
 sys.path.insert(0, str(MIDNIGHT_ROOT / "core"))
 sys.path.insert(0, str(EXPERIMENTS_ROOT / "milestone-r" / "core"))
-sys.path.insert(0, str(EXPERIMENTS_ROOT / "milestone9" / "core"))
+sys.path.insert(0, str(MIDNIGHT_ROOT.parent.parent / "milestones" / "milestone9" / "core"))
 
 from phase_rate import (
     PHI, INV_PHI, LN_PHI, PI,

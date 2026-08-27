@@ -17,9 +17,8 @@ from scipy.integrate import quad
 from collections import defaultdict
 
 MIDNIGHT_ROOT = Path(__file__).resolve().parent.parent
-DATA_ROOT = MIDNIGHT_ROOT.parent.parent.parent.parent / "data"
 sys.path.insert(0, str(MIDNIGHT_ROOT / "core"))
-from phase_rate import save_midnight_results, _convert_numpy
+from phase_rate import DATA_ROOT, save_midnight_results, _convert_numpy
 
 PHI = (1 + np.sqrt(5)) / 2
 LN_PHI = np.log(PHI)
