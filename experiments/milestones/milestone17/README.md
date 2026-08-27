@@ -116,9 +116,10 @@ where spanning-probability curves for L = 32/64/128 intersect. χ_max ~ L^1.6233
 γ/ν = 1.7917. n_s ~ s^−1.849 against an exact τ = 2.0549, with R² 0.996 at p_c and 0.967 away
 from it — the instrument finds a power law where there is one and not where there isn't.
 
-Exponents run ~10% high in the same direction: expected finite-size bias at L ≤ 128 over three
-sizes. **Any exponent measured on a DFT system carries the same bias and must be compared
-against this calibration, not against textbook values.**
+Exponents run ~10% **low** in the same direction — γ/ν is 9.4% below exact, τ is 10.0% below —
+the expected finite-size bias at L ≤ 128 over three sizes. **Any exponent measured on a DFT
+system carries the same bias and must be compared against this calibration, not against
+textbook values.** (The direction was written up as "high" until exp_02, which depends on it.)
 
 ### Block B — Is there a critical point at all? (Q1) (0/12)
 
