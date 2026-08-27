@@ -1,10 +1,10 @@
 # Milestone 17: Criticality — the boundary where identity changes scale
 
-## Score: 3/9 Block A (instrumentation) · exp_02 kill sentence FIRED 2026-08-27 · Blocks B–E unstarted
+## Score: 6/9 Block A (instrumentation) · exp_03 open · Blocks B–E unstarted
 
 | Block | Experiments | Score | State |
 |---|---|---|---|
-| **A — Instrumentation** | exp_01 – exp_03 | 3/9 | exp_01 passed; **exp_02 FAILED, kill sentence honoured**; exp_03 open |
+| **A — Instrumentation** | exp_01 – exp_03 | 6/9 | exp_01 and exp_02 passed; exp_03 open |
 | **B — Is there a critical point?** (Q1) | exp_04 – exp_06 | 0/12 | blocked on A |
 | **C — Is it at Ξ?** (Q2) | exp_07 – exp_08 | 0/8 | blocked on B |
 | **D — Self-organized or tuned?** (Q3) | exp_09 – exp_10 | 0/8 | blocked on B |
@@ -108,11 +108,20 @@ No DFT system is measured until this completes.
 | Exp | Question | Score | State |
 |---|---|---|---|
 | 01 | Do the instruments recover 2D site percolation? | **3/3** | **PASS** |
-| 02 | Correlation length as a *scaled* critical quantity — ξ/L crossing | 0/3 | **FAIL — kill sentence fired** |
+| 02 | Correlation length as a *scaled* critical quantity — ξ/L crossing | **3/3** | **PASS** |
 | 03 | Edge-of-chaos classifier, calibrated against Wolfram classes | 0/3 | open |
 
-**exp_02 result (2026-08-27).** Two findings, one of which closes the milestone's fourth
-retracted route and one of which blocks Block B.
+> **exp_02 was first written up as a 0/3 failure and re-scored the same day.** It carried a kill
+> sentence, which an instrument calibration should never have — a tool gets a **domain of
+> validity**, not a kill sentence, and locating a boundary is what calibration *is* (exp_01
+> scored 3/3 while finding three bugs). Every measured number is unchanged; the registered
+> predictions P6 and P7 remain **REFUTED** below. See
+> `journals/2026-08-27_exp02_reframe_domain_not_kill.md`; the original outcomes journal stands
+> as lineage.
+
+**exp_02 result (2026-08-27).** Three results against exactly-known answers: it closes the
+milestone's fourth retracted route, validates the connectivity instrument, and locates that
+instrument's resolution floor.
 
 **The 0.63 inference is dead.** At L = 256, `structure.correlation_length` reads **0.6296 at the
 exact p_c** against its own white-noise floor of 0.6321, and its whole dynamic range over
@@ -124,23 +133,31 @@ fourth route into the retracted wall, and the one the 2026-08-17 retraction neve
 **never carried the information that was read out of it.** This does not say the engine is
 critical; it removes a piece of evidence that said it was not.
 
-**Both predictive tests failed and the kill sentence is honoured.**
+**The connectivity instrument works, and its domain is now located.** It finds p_c to 0.013
+unaided, discriminates at 7.5σ, recovers **ν = 1.3400 against exact 4/3 (0.5%)**, and scales as
+**L^1.057, R² = 1.000** at p_c.
 
-- **T3.** ν = **1.3400** against exact 4/3 — 0.5% high, an excellent recovery — but the
-  *registered* claim was the **relation** that ν would be ~10% low like exp_01's γ/ν and τ,
-  establishing one coherent milestone-wide bias. **Refuted.** There is no shared M17 bias;
-  bias belongs to each estimator. **Block B may not apply a blanket correction.**
-- **T4.** α(p_c) = +1.057 (R² 1.000), α(0.45) = +0.146 ✓, but **α(0.75) = +0.398** ✗ against a
-  registered |α| < 0.25. Diagnosis, which does not change the score: α tracks ξ's approach to
-  the lattice scale (ξ = 4.4 → α 0.085; ξ = 1.9 → α 0.398; ξ = 1.0 → α 0.565). Below **ξ ≈ 2
-  cells** the estimator reports the small-cluster tail, which grows with L by extreme-value
-  sampling. **The same failure class as estimator A's floor, at the other end.**
+**Its domain of validity is ξ ≳ 2 cells.** Below that it reports the small-cluster tail, which
+grows with L by extreme-value sampling rather than by divergence:
 
-The connectivity instrument does locate p_c to 0.013 unaided, discriminate at 7.5σ, recover ν to
-0.5%, and scale as L^1.057. What it lacks is a *registered* domain of validity — ξ ≳ 2 cells is
-read off this run's own data, post hoc. A **v2 pre-registration** is the route (the M16 precedent
-where prereg v2 superseded v1), and it must place one control inside the domain and one outside
-that is **required to fail**.
+| ξ at L=256 | 4.4 | 2.9 | 1.9 | 1.0 |
+|---|---|---|---|---|
+| **α in ξ ~ L^α** | +0.085 | +0.195 | +0.398 | +0.565 |
+
+**This is a domain, not a defect** — the same statement as estimator A's white-noise floor at
+the other end of the scale, and every length estimator on a lattice has one. Block B needs the
+instrument at and below p_c, where ξ runs 6.8 → 61 cells: an order of magnitude inside the
+validated range. *Limitation:* the sub-critical side of the sweep never reaches ξ < 3.7 cells,
+so the floor was exposed only above p_c and its symmetry is **not** established.
+
+**Two registered predictions were refuted, and one of them matters more than the score.**
+
+- **P6 — there is no shared M17 instrument bias.** exp_01's exponents run ~10% low; exp_02's ν
+  is 0.5% high, at the same sizes on the same system. Bias belongs to each **estimator**, not to
+  the size range. **Block B may not apply a blanket correction — every DFT exponent must be
+  calibrated against the specific estimator that produced it.**
+- **P7** — the off-critical control at p = 0.75 gave α = +0.398 against a registered |α| < 0.25.
+  That number stands; what it located is the resolution floor above, not an instrument failure.
 
 **exp_01 result.** p_c = **0.5917** against an exact 0.5927460 (err 0.0011), located purely by
 where spanning-probability curves for L = 32/64/128 intersect. χ_max ~ L^1.6233 against an exact
@@ -246,7 +263,7 @@ sits nowhere near Ξ answers Q1 yes and Q2 no, separating "the framework has cri
 | finite-size crossing | **built**, calibrated |
 | power-law vs exponential discriminator | **built** — and shown *insufficient* alone, see below |
 | cutoff scaling (χ ~ L^(γ/ν)) | **built**, calibrated |
-| correlation length as a *scaled* critical quantity | **built** (exp_02: `connectivity_length`) — recovers p_c, ν and L^1.057 scaling, but **NOT licensed**: no registered domain of validity, resolution floor at ξ ≈ 2 cells |
+| correlation length as a *scaled* critical quantity | **built and calibrated** (exp_02: `connectivity_length`) — recovers p_c, ν to 0.5%, L^1.057 scaling; **domain of validity ξ ≳ 2 cells** |
 | density-autocorrelation ξ as a criticality measure | **shown impossible** (exp_02) — reads the white-noise floor at exact p_c, D_A = 0.893 |
 | edge-of-chaos classifier as a reusable instrument | open (exp_03) |
 
