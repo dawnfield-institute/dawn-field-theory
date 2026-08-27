@@ -237,6 +237,39 @@ not a result.
 at **(12, 9)**, and that **no correction anywhere in the corpus has a non-Lucas gap**. Both are
 checkable against constants not used to build the claim.
 
+### TESTED SAME DAY — the selection does not survive
+
+Two further corrections exist in code and are absent from exp_37's list:
+
+| quantity | a | b | n | sign | gap | source |
+|---|---|---|---|---|---|---|
+| Lambda (cosmological constant) | 3 | 5 | 4 | − | **−2** | M8 `exp_08_cosmological_constant_precision.py:84` |
+| dark coupling | 8 | 6 | 4 | − | +2 | M8 `core/bsm.py:208` |
+
+**Negative gaps occur**, so the criterion must be `|gap|`, not signed gap — and that readmits the
+candidate I excluded. `F₃/(4π F₄²)` has gap −1, and |−1| = 1 = L₁ is Lucas. It returns as the
+**best** fit at 0.026%, and four candidates now survive instead of one. **The unique selection was
+an artifact of excluding negative gaps and choosing the {3,4,7} subset after seeing it.**
+
+The constraint is also far weaker than it looked: 1, 2, 3 and 4 are *all* Lucas, so
+P(all five observed gaps Lucas by chance) is 0.095 on a uniform 1–8 range, 0.031 on 1–12.
+
+**Verdict: not established.** No counterexample was found — no gap of 5 or 6 appears anywhere —
+but the data has no power to distinguish "gaps are Lucas" from "gaps are small integers".
+
+**What survives:**
+- exp_37's premise is still wrong independently of any of this: the gaps are **not Fibonacci**,
+  since 4 and 7 are not Fibonacci numbers.
+- **|gap| ∈ {2,3,4,7}, with 5 and 6 never occurring** across five corrections. Weak, but it is
+  the actual observation, and it is what a larger inventory would test.
+- A **documentation discrepancy**: exp_37 lists Omega_Lambda as (a=9, b=5, n=4, +), while M8's
+  code applies (a=3, b=5, n=4, −) to the cosmological constant. Either different quantities or an
+  inconsistency between what is documented and what runs — worth resolving before anyone builds
+  on either.
+
+Nothing in §5 or §6 depends on this. The depth-slot diagnosis and the phi/pi class signature are
+untouched.
+
 ## 8. The framing that makes this a programme
 
 The selection problem is not a precision problem. α_s will never discriminate its own correction.

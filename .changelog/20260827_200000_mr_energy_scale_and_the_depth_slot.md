@@ -63,9 +63,18 @@ Fibonacci ratio, no φ, no π. Fibonacci indices count, φ scales, π closes.
 - **The correction index gaps are Lucas, not Fibonacci.** exp_37 asks "why are index gaps
   themselves Fibonacci?" — 4 and 7 are not Fibonacci. α_EM gap 3, Ω_Λ gap 4, G gap 7, and
   3+4=7: L₂, L₃, L₄. Fibonacci and Lucas are the two independent solutions of the same
-  recursion. Constraining α_s to that gap set uniquely selects `F₁₁/(4π F₈²)` — α_EM's (10,7)
-  shifted to (11,8), gap and n preserved. **Three data points, subset chosen after seeing them:
-  a lead with a mechanism, not a result.** Testable: predicts the next family member at (12,9),
-  and that no corpus correction has a non-Lucas gap.
+  recursion. **Tested the same day and it does not survive.** Two further corrections exist in
+  code and are missing from exp_37's list — Λ at (3,5), gap **−2** (M8 `exp_08` line 84) and the
+  dark coupling at (8,6), gap +2 (M8 `bsm.py` line 208). **Negative gaps occur**, so the
+  criterion must be |gap| — which readmits `F₃/(4π F₄²)` (gap −1, |−1| = L₁) as the *best* fit
+  at 0.026%. Four candidates survive, not one. The unique selection was an artifact of excluding
+  negative gaps and picking the {3,4,7} subset post hoc. The constraint is also weak: 1,2,3,4
+  are all Lucas, so P(all five gaps Lucas by chance) is 0.03–0.10.
+
+  **What survives**: exp_37's premise is still wrong — the gaps are *not* Fibonacci, since 4 and
+  7 are not Fibonacci numbers. And |gap| ∈ {2,3,4,7} with **5 and 6 never occurring** across five
+  corrections, which is the actual observation a larger inventory would test. Also surfaced a
+  documentation discrepancy: exp_37 lists Ω_Λ as (9,5,n=4,+) while M8's code applies (3,5,n=4,−)
+  to the cosmological constant.
 
 Full detail in `experiments/sidecars/milestone-r/journals/2026-08-27_energy_scale_propagation_and_the_depth_slot.md`.
