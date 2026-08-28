@@ -76,7 +76,7 @@ Individually superseded, but not part of an archived era, so they remain alongsi
 
 | Experiment | Kind | Title | Score |
 |---|---|---|---|
-| [`milestone17`](milestones/milestone17/) | milestones | Milestone 17: Criticality — the boundary where identity changes scale | 3/45 |
+| [`milestone17`](milestones/milestone17/) | milestones | Milestone 17: Criticality — the boundary where identity changes scale | 6/45 |
 | [`pac_foundations_validation`](studies/pac_foundations_validation/) | studies | PAC Foundations Validation (Archived) | — |
 
 ## Archive

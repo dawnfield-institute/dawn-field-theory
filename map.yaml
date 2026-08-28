@@ -48,6 +48,8 @@ dawn-field-theory/
     20260810_004500_repo_reorg_standardization.md
     20260810_120000_layer_reorganization.md
     20260817_170000_m17_founding_observation_retracted.md
+    20260827_143000_m17_exp02_correlation_length.md
+    20260827_161500_kill_sentences_bind_theses_not_instruments.md
     20260827_200000_mr_energy_scale_and_the_depth_slot.md
     README.md
   .claude/
@@ -2529,10 +2531,15 @@ dawn-field-theory/
           2026-08-16_exp01_instruments_calibrated.md
           2026-08-16_founding-and-loose-ends-survey.md
           2026-08-17_the-wall-was-my-instrument.md
+          2026-08-27_exp02_outcomes.md
+          2026-08-27_exp02_prereg.md
+          2026-08-27_exp02_reframe_domain_not_kill.md
         results/
           exp_01_calibration_20260816_183732.json
+          exp_02_correlation_length_20260827_142044.json
         scripts/
           exp_01_calibrate_on_percolation.py
+          exp_02_correlation_length.py
       milestone2/
         README.md
         meta.yaml
