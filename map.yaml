@@ -3212,6 +3212,7 @@ dawn-field-theory/
           2026-06-13_exp23-preregistration.md
           2026-06-13_maximal-coherence-connection-primitive.md
           2026-06-14_balance-coherence-qbe-synthesis.md
+          2026-08-28_second_moment_and_panelC.md
         results/
           exp_01_gravity_gates_entanglement_20260603_191349.json
           exp_01_gravity_gates_entanglement_20260603_191710.json
@@ -3224,6 +3225,7 @@ dawn-field-theory/
           exp_04_cascade_width_oscillation_20260827_200249.json
           exp_05_bifractal_mesh_signal_20260606_213355.json
           exp_06_doublet_coherence_20260606_221223.json
+          exp_06_doublet_coherence_20260828_94216.json
           exp_07_deep_cascade_probe_20260606_231758.json
           exp_08_cascade_panel_20260608_91251.json
           exp_09_discovery_panel_20260608_121036.json
@@ -3242,6 +3244,8 @@ dawn-field-theory/
           exp_21_coupling_decoherence_20260611_101553.json
           exp_22_monitoring_regulators_20260611_101349.json
           exp_23_joint_coupling_20260613_212830.json
+          exp_24_panelC_adversarial_replication_20260828_111046.json
+          exp_25_second_moment_structure_20260828_120531.json
         scripts/
           exp_01_gravity_gates_entanglement.py
           exp_02_pac_tree_entanglement.py
@@ -3266,6 +3270,8 @@ dawn-field-theory/
           exp_21_coupling_decoherence.py
           exp_22_monitoring_regulators.py
           exp_23_joint_coupling.py
+          exp_24_panelC_adversarial_replication.py
+          exp_25_second_moment_structure.py
           explore_contrast.py
           explore_inconclusiveness.py
           explore_sign_structure.py
@@ -3342,6 +3348,9 @@ dawn-field-theory/
           exp_27_bifractal_time_emergence.py
     spikes/
       RECURSIVE_FRACTAL_ARITHMETIC.md
+      constant_number_fields/
+        README.md
+        check_fields.py
       infodynamic_gravity/
         MACRO_EMERGENCE_BREAKTHROUGH_REPORT.md
         MACRO_EMERGENCE_REPORT.md
@@ -3407,6 +3416,11 @@ dawn-field-theory/
       n_scale_dependence/
         20260422_cascade_clock.md
         spike_n_vs_scale.py
+      postsymbolic_selection/
+        README.md
+        postsym_redistribute.py
+        postsymbolic_selection.py
+        sink_scale.py
     studies/
       ade_cascade/
         README.md
@@ -3417,6 +3431,7 @@ dawn-field-theory/
         journals/
           2026-07-17_ade-cascade-round1-outcomes.md
           2026-07-17_ade-cascade-round1-preregistration.md
+          2026-08-28_r1_mean_distance_confound.md
         results/
           exp_00_baseline_gate_20260717_145830.json
           exp_01_diagram_selectivity_20260717_150058.json
@@ -6760,6 +6775,7 @@ dawn-field-theory/
       symmetry_primitive.md
       tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md
   tools/
+    audit_prediction_accuracy.py
     check_links.py
     converter.py
     generate_experiment_index.py

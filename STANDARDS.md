@@ -172,6 +172,76 @@ Standard practice since 2026-06-11. For any experiment intended as evidence:
 5. **Kill-sentences stand.** If a milestone declares a condition under which it fails, that
    condition is honoured when met.
 
+### 2.8 Recursive, tautological, circular — three things that look alike
+
+This framework's generative primitive is **self-application** (M10: self-applied symmetry is
+the unique primitive that neither regresses nor produces noise). So DFT results sit
+permanently next to a line that most frameworks never approach, and the words get mixed up in
+both directions: real recursive results get dismissed as circular, and genuinely circular ones
+get defended with *"it's recursive, that's the point."* **"It is recursive" is never by itself
+a defence.**
+
+| | what it is | the test |
+|---|---|---|
+| **Recursive** | Self-reference that is **productive** — it generates distinctions. Has a base case and terminates or converges. | **Vary the input.** Different inputs must give different outputs. |
+| **Tautological** | Self-reference or construction that generates **no** distinction. True for every input, so no outcome could have differed. | **Could any input have changed the verdict?** If no → tautological. |
+| **Circular** | The conclusion was **available to the procedure that produced it**. Unlike a tautology this is not visible on the face of it — it hides in the fitting. | **What could the search see?** If the "emergent" quantity was reachable by the tuning, it did not emerge. |
+
+**The discriminator is discrimination.** A recursion earns its keep by separating cases; a
+tautology cannot separate anything; a circularity separates cases using information it should
+not have had.
+
+Each has a real instance in this corpus:
+
+- **Recursive (valid).** `Ψ(k) = Ψ(k+1) + Ψ(k+2)`, and M13's identity-IS-complement — a
+  vertex's identity is the graph without it. Self-referential, but *different vertices have
+  different complements*, so it discriminates. That is what makes it a definition rather than
+  a restatement.
+- **Tautological (caught, and scores lowered).** Milestone R's `scope_boundary_count`:
+  `E_Planck · φ^(−d)` exceeds every nuclear and atomic energy by 15–24 orders, so the boundary
+  count rounds to zero for *every* physical input. exp_06 T1/T2/T4 and exp_08 T1 "passed"
+  because nothing could have failed. Recorded in that milestone's README as passes that are
+  not evidence.
+- **Circular (withdrawn).** The claim that Ξ ≈ 1.057 "emerged in Navier–Stokes before it was
+  derived". It was grid-searched over a tunable, with `1 + π/55` fitted afterwards
+  (`phi_artifact_test`). The constant did not emerge from the dynamics; it was reachable by
+  the search.
+
+### 2.8.1 A good attack makes a claim *more* falsifiable
+
+The point of attacking your own result is not only to catch errors. The better outcome is that
+a soft claim gets replaced by a hard one — and the tell is that the survivor has **more** ways
+to be wrong than the original did.
+
+Worked example. "Gauge couplings carry exactly one power of φ" classified nine constants and
+correctly predicted a held-out case. It was then killed by one line:
+
+    F3/(F4*phi*F10)  ==  (-1 + sqrt(5))/165        same number, zero phi's written
+
+A φ-count is a property of the chosen notation, so the claim could never die — any
+counterexample is answered by rewriting. What replaced it was **field membership**: mixing
+angles and mass ratios are exactly rational, couplings are not. That is a fact about the
+numbers, invariant under rewriting, and it *can* die — one irrational mass ratio or one
+exactly-rational coupling ends it.
+
+This is the invariant-registration rule (§2.7.2) applied to claims rather than to
+registrations. **A φ-count is a coordinate; field membership is a relation.** In practice, the
+claims that survive scrutiny here are the ones stateable without reference to a representation,
+and the ones that die are the ones that quietly depend on one.
+
+When a result survives an attack, ask what it can now be killed by. If the answer is "nothing",
+the attack did not finish.
+
+Practical consequences:
+
+- A test whose result is invariant under its own inputs is replaced, not counted (§2.6).
+- Before claiming a quantity **emerged**, state what the fitting procedure had access to.
+  "Emergent" and "reachable by the search" are mutually exclusive.
+- A recursion reported as a result must show its **base case** and its termination or fixed
+  point. Self-reference without a base case is not a recursion, it is an unfinished sentence.
+- Near-tautology is a matter of degree and must be reported: a test with a factor-1000
+  acceptance window discriminates weakly even when it is not strictly vacuous.
+
 ---
 
 ## 3. Where work lives
