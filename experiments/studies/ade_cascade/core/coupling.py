@@ -15,10 +15,16 @@ import numpy as np
 from pathlib import Path
 from collections import deque
 
-_EXPERIMENTS = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(_EXPERIMENTS / "milestone12" / "core"))
-sys.path.insert(0, str(_EXPERIMENTS / "milestone15" / "core"))
-sys.path.insert(0, str(_EXPERIMENTS / "milestone4" / "core"))
+# core/coupling.py sits at experiments/studies/ade_cascade/core/, so the experiments root is
+# FOUR levels up, and milestones live under experiments/milestones/. The old expression went
+# three levels (landing on studies/) and looked for studies/milestone12 -- correct only before
+# the August 2026 layer reorganization (MIGRATION.md). This module is imported by every script
+# here, so the stale path made the whole study unrunnable.
+_EXPERIMENTS = Path(__file__).resolve().parents[3]
+_MILESTONES = _EXPERIMENTS / "milestones"
+sys.path.insert(0, str(_MILESTONES / "milestone12" / "core"))
+sys.path.insert(0, str(_MILESTONES / "milestone15" / "core"))
+sys.path.insert(0, str(_MILESTONES / "milestone4" / "core"))
 
 from connection_geometry import DynkinDiagram    # noqa: E402
 from representative import build_cycle           # noqa: E402
