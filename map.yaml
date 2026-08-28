@@ -48,6 +48,9 @@ dawn-field-theory/
     20260810_004500_repo_reorg_standardization.md
     20260810_120000_layer_reorganization.md
     20260817_170000_m17_founding_observation_retracted.md
+    20260827_143000_m17_exp02_correlation_length.md
+    20260827_161500_kill_sentences_bind_theses_not_instruments.md
+    20260827_200000_mr_energy_scale_and_the_depth_slot.md
     README.md
   .claude/
     skills/
@@ -2528,10 +2531,15 @@ dawn-field-theory/
           2026-08-16_exp01_instruments_calibrated.md
           2026-08-16_founding-and-loose-ends-survey.md
           2026-08-17_the-wall-was-my-instrument.md
+          2026-08-27_exp02_outcomes.md
+          2026-08-27_exp02_prereg.md
+          2026-08-27_exp02_reframe_domain_not_kill.md
         results/
           exp_01_calibration_20260816_183732.json
+          exp_02_correlation_length_20260827_142044.json
         scripts/
           exp_01_calibrate_on_percolation.py
+          exp_02_correlation_length.py
       milestone2/
         README.md
         meta.yaml
@@ -3267,12 +3275,16 @@ dawn-field-theory/
         core/
           __init__.py
           radiation_physics.py
+        journals/
+          2026-08-27_energy_scale_propagation_and_the_depth_slot.md
         results/
           exp_01_ledger_severance_mechanics_20260527_170019.json
           exp_02_alpha_decay_discrete_severance_20260527_170031.json
           exp_03_beta_spectrum_unsettled_ledger_20260527_170048.json
+          exp_03_beta_spectrum_unsettled_ledger_20260827_190739.json
           exp_04_gamma_equilibration_20260527_170054.json
           exp_05_hydrogen_spectrum_fibonacci_depth_20260527_170059.json
+          exp_05_hydrogen_spectrum_fibonacci_depth_20260827_190942.json
           exp_06_xi_cost_scope_counting_20260527_170103.json
           exp_07_bubble_ejection_analogy_20260527_170113.json
           exp_08_xray_equilibrium_shift_20260527_170122.json
@@ -3296,6 +3308,7 @@ dawn-field-theory/
           exp_23_confluence_convergence_20260528_141323.json
           exp_24_coupling_energy_scale_20260528_170521.json
           exp_24_coupling_energy_scale_20260528_170636.json
+          exp_24_coupling_energy_scale_20260827_190518.json
           exp_25_series_sweet_spots_20260528_170521.json
           exp_26_channel_completeness_20260528_170642.json
           exp_27_bifractal_time_emergence_20260529_84002.json

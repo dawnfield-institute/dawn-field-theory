@@ -31,10 +31,11 @@ from datetime import datetime
 # ============================================================
 MR_ROOT = Path(__file__).resolve().parent.parent
 
-# Milestones live under experiments/milestones/, this sidecar under experiments/sidecars/, so
-# the hop is up TWO levels and across -- not `MR_ROOT.parent`, which was correct only before
-# the August 2026 layer reorganization (see MIGRATION.md). Every script here imports through
-# this module, so the stale path made all 27 of them unrunnable.
+# Milestones live under experiments/milestones/, this sidecar under experiments/sidecars/,
+# so the hop is up TWO levels and across -- not `MR_ROOT.parent`, which was correct only
+# before the August 2026 layer reorganization (see MIGRATION.md) moved sidecars out of
+# experiments/. Every script here imports through this module, so the stale path made all
+# 27 of them unrunnable rather than failing in one place.
 MILESTONES = MR_ROOT.parent.parent / "milestones"
 M14_ROOT = MILESTONES / "milestone14"
 M11_ROOT = MILESTONES / "milestone11"
@@ -163,6 +164,23 @@ def coupling_boundary_count(energy_mev, depth, mediator_mass_mev):
     if e_scale == 0:
         return float('inf')
     return energy_mev / (XI_BALANCE * e_scale)
+
+
+def severance_energy_coupled(depth, mediator_mass_mev, n_boundaries=1):
+    """Severance energy on the coupling-anchored scale — the exp_24 counterpart to
+    `severance_energy`, which is kept unchanged as lineage.
+
+        E = n_boundaries * Xi * alpha(depth)^2 * m_mediator
+
+    The mediator mass is an ARGUMENT rather than a constant because it is the physics
+    choice at each call site: exp_24 anchors the EM scale on the electron and the nuclear
+    scale on the proton, and gets 11.4 ppm on the Rydberg and 1.75x on the alpha-decay
+    scale respectively. Passing the wrong mediator is the one way to misuse this.
+
+    The Planck form it replaces, E_Planck * phi^(-depth), sits 15-24 orders above every
+    physical scale, which is why no depth in a plausible range could fit anything.
+    """
+    return n_boundaries * XI_BALANCE * dft_energy_scale(depth, mediator_mass_mev)
 
 
 # Results directory

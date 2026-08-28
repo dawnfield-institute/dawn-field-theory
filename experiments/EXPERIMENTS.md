@@ -15,7 +15,7 @@ Currently being worked.
 | [`milestone15`](milestones/milestone15/) | milestones | Milestone 15: The Representative Problem (DFT-Hodge Boundary) | — |
 | [`milestone16`](milestones/milestone16/) | milestones | Milestone 16: Relational Locality — How Neighbours Come to Cohere | — |
 | [`midnight`](sidecars/midnight/) | sidecars | Midnight: Observational Frontiers of Dawn Field Theory | 22/32 |
-| [`milestone-r`](sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance | 60/112 |
+| [`milestone-r`](sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance | 62/112 |
 | [`ade_cascade`](studies/ade_cascade/) | studies | ADE Cascade: Re-founding Turbulence on Milestone Machinery | — |
 | [`algebra_geometry_interface`](studies/algebra_geometry_interface/) | studies | Algebra-Geometry Interface: RQM ↔ Ruliad Validation | — |
 | [`confluent_identity`](studies/confluent_identity/) | studies | Confluent Identity -- Phases 1-29: Formation through Falsification | — |
@@ -76,7 +76,7 @@ Individually superseded, but not part of an archived era, so they remain alongsi
 
 | Experiment | Kind | Title | Score |
 |---|---|---|---|
-| [`milestone17`](milestones/milestone17/) | milestones | Milestone 17: Criticality — the boundary where identity changes scale | 3/45 |
+| [`milestone17`](milestones/milestone17/) | milestones | Milestone 17: Criticality — the boundary where identity changes scale | 6/45 |
 | [`pac_foundations_validation`](studies/pac_foundations_validation/) | studies | PAC Foundations Validation (Archived) | — |
 
 ## Archive

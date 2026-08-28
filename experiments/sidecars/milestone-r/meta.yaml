@@ -9,8 +9,42 @@ description: 'Sidecar milestone testing radiation as PAC ledger severance: when 
   the GN sign problem, with PAC = barrier height and SEC = kinetic energy (exp_15);
   graph Green''s function reproducing the hydrogen spectrum to 0.68% (exp_20); and
   the coupling-anchored energy scale alpha(d)^2 * m_mediator replacing E_Planck *
-  phi^(-d), which fixes eight earlier failures at once (exp_24). Does not continue
-  the M14->M15 chain.
+  phi^(-d) (exp_24). Does not continue the M14->M15 chain.
+
+  UPDATED 2026-08-27, score 60/112 -> 62/112. The exp_24 propagation was blocked,
+  not deferred: the August 2026 layer reorganization broke core/radiation_physics.py
+  path resolution (MR_ROOT.parent / milestone14 now points into sidecars/), so ALL
+  27 scripts were unrunnable. midnight/core/phase_rate.py has the identical break.
+  Also np.trapz, removed in NumPy 2.0 while requirements floors numpy at 1.24.
+
+  exp_24 fixes TWO of its six named test failures, not eight: exp_03 T3 (endpoint,
+  now at depth 7) and exp_05 T1 (Rydberg, 11.4 ppm). exp_03 T4, exp_04 T1 and exp_05
+  T2/T4 contain no scale term and cannot move under any rescaling -- exp_04 T1 fails
+  on a negative SIGN.
+
+  AND THE REFORMULATION IS ITSELF WRONG. (1) The (depth, mediator) pair is exactly
+  degenerate: E ~ phi^(-2d)*m, so scaling m by r equals shifting d by ln(r)/(2 ln
+  phi), and every mediator fits the beta endpoints at a shifted depth -- a fitted
+  depth measures the mediator, not physics. (2) dft_energy_scale uses fibonacci_depth_coupling,
+  which is 72x off at EM depth; the exp_24 T1 test bypasses it for ALPHA_EM_DFT. (3)
+  DEPTH IS IN THE WRONG SLOT: every DFT constant encodes scale in WHICH Fibonacci
+  indices appear and carries phi exactly once -- the alpha_EM phi-power is -1, not
+  -13 -- while fibonacci_depth_coupling encodes scale as a POWER of phi and drops
+  the indices.
+
+  Class signature over 11 constants: phi^-1 iff gauge coupling; pi iff balance or
+  correction term; everything else pure Fibonacci ratio. Leads (labelled, unscored):
+  alpha_s is the only coupling lacking a pi correction and the worst at 1.712% / 2.24
+  sigma; and the correction index gaps are LUCAS, not Fibonacci as exp_37 states --
+  alpha_EM gap 3, Omega_L gap 4, G gap 7, with 3+4=7. Constraining alpha_s to that
+  gap set uniquely selects F11/(4 pi F8^2), which is the alpha_EM (10,7) pair shifted
+  to (11,8). Three data points; a lead, not a result.
+
+  WARNING for exp_06/08/09: several PASSES are tautological at the Planck scale (exp_06
+  T1/T2/T4, exp_02 T1, exp_08 T1, exp_09 T4 -- everything rounds to zero). A correct
+  scale makes them real tests that can fail, so the net score may go DOWN.
+
+  See journals/2026-08-27_energy_scale_propagation_and_the_depth_slot.md.
 
   '
 domain: physics
@@ -36,6 +70,7 @@ dependencies:
 - milestone6
 child_directories:
 - core
+- journals
 - results
 - scripts
 files:
