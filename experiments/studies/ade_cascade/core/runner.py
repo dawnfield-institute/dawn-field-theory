@@ -11,8 +11,11 @@ import sys
 import numpy as np
 from pathlib import Path
 
-_EXPERIMENTS = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(_EXPERIMENTS / "milestone4" / "core"))
+# Same reorg break as core/coupling.py: this file sits at
+# experiments/studies/ade_cascade/core/, so the experiments root is FOUR levels up and
+# milestones live under experiments/milestones/ (MIGRATION.md).
+_EXPERIMENTS = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(_EXPERIMENTS / "milestones" / "milestone4" / "core"))
 
 from utils import energy_cascade, measure_exponent   # noqa: E402
 

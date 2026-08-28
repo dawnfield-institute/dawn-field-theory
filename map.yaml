@@ -3431,15 +3431,18 @@ dawn-field-theory/
         journals/
           2026-07-17_ade-cascade-round1-outcomes.md
           2026-07-17_ade-cascade-round1-preregistration.md
+          2026-08-28_r1_is_a_distance_effect.md
           2026-08-28_r1_mean_distance_confound.md
         results/
           exp_00_baseline_gate_20260717_145830.json
           exp_01_diagram_selectivity_20260717_150058.json
           exp_02_affine_vertex_20260717_150243.json
+          exp_03_distance_vs_topology_20260828_181938.json
         scripts/
           exp_00_baseline_gate.py
           exp_01_diagram_selectivity.py
           exp_02_affine_vertex.py
+          exp_03_distance_vs_topology.py
       algebra_geometry_interface/
         README.md
         SYNTHESIS.md
