@@ -12,6 +12,10 @@ What is missing, and provided here:
     cluster_size_distribution  n_s, power-law at p_c and exponential away from it
     spanning_probability     does a cluster connect opposite faces
     finite_size_crossing     the location where curves for different L intersect
+    connectivity_length      xi from the second moment of finite clusters — the length that
+                             DIVERGES at p_c, added by exp_02 (2026-08-27)
+    scaling_exponent         bare log-log slope, alpha in value ~ L^alpha
+    collapse_residual        finite-size data collapse quality for a trial nu
 
 **Nothing here is trusted until it recovers 2D site percolation.** That system has exact known
 answers, which is rare and is the whole reason it is the calibration target:
@@ -332,6 +336,135 @@ def finite_size_crossing(param, curves: dict[int, np.ndarray], saturate: float =
 
     med = float(np.nanmedian(spread[live]))
     return p_cross, sp, (sp / med if med > 0 else float("nan"))
+
+
+def spanning_labels(occ: np.ndarray) -> set:
+    """Labels of clusters touching both opposite faces along any axis. Any dimension."""
+    lab, n = _label(occ)
+    if n == 0:
+        return set()
+    out: set = set()
+    for ax in range(occ.ndim):
+        lo = set(np.unique(np.take(lab, 0, axis=ax)).tolist())
+        hi = set(np.unique(np.take(lab, occ.shape[ax] - 1, axis=ax)).tolist())
+        out |= (lo & hi)
+    out.discard(0)
+    return out
+
+
+def connectivity_length(occ: np.ndarray, exclude_spanning: bool = True):
+    """Second-moment correlation length from FINITE clusters. Any dimension.
+
+        xi^2 = sum_c 2 Rg_c^2 s_c^2 / sum_c s_c^2
+
+    This is the quantity that DIVERGES at a critical point, and it is not the one
+    `structure.correlation_length` measures. That estimator takes the 1/e decay of the
+    **density-field autocorrelation**; this one takes the second moment of the
+    **pair-connectedness** function — whether two sites lie in the *same cluster*.
+
+    The distinction is the whole reason this function exists. In site percolation the
+    occupancy field is i.i.d. Bernoulli(p) at EVERY p, so its density autocorrelation sits at
+    the white-noise floor of 1 - 1/e = 0.632 even exactly at p_c. A density-autocorrelation
+    floor is therefore **compatible with exact criticality** and cannot be read as evidence of
+    being sub-critical. Connectivity is where criticality lives.
+
+    `exclude_spanning` drops clusters touching opposite faces. This is not cosmetic: above p_c
+    the spanning cluster has Rg ~ L and s ~ L^d, so including it makes xi grow with L for
+    trivial reasons and manufactures a divergence that survives every threshold check. The
+    count of excluded clusters is returned so a caller can assert it is non-zero above p_c
+    rather than trusting that the exclusion fired.
+
+    Returns (xi, n_clusters_used, n_excluded). xi is nan when no finite cluster survives.
+    """
+    lab, n = _label(occ)
+    if n == 0:
+        return float("nan"), 0, 0
+
+    coords = np.argwhere(occ)
+    idx = lab[occ]
+    size = np.bincount(idx, minlength=n + 1).astype(float)
+
+    rg2 = np.zeros(n + 1, dtype=float)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        for d in range(occ.ndim):
+            c = coords[:, d].astype(float)
+            s1 = np.bincount(idx, weights=c, minlength=n + 1)
+            s2 = np.bincount(idx, weights=c * c, minlength=n + 1)
+            rg2 += s2 / size - (s1 / size) ** 2
+
+    keep = np.ones(n + 1, dtype=bool)
+    keep[0] = False                                  # background
+    dropped = 0
+    if exclude_spanning:
+        for c in spanning_labels(occ):
+            if keep[c]:
+                keep[c] = False
+                dropped += 1
+
+    s, r2 = size[keep], rg2[keep]
+    den = float(np.nansum(s * s))
+    if den <= 0:
+        return float("nan"), int(keep.sum()), dropped
+    num = float(np.nansum(2.0 * r2 * s * s))
+    return float(np.sqrt(num / den)), int(keep.sum()), dropped
+
+
+def scaling_exponent(sizes, values):
+    """Fit alpha in value ~ L^alpha. Returns (alpha, r2), nan when underdetermined.
+
+    Separated from `cutoff_scaling` because that function is about chi and carries its own
+    minimum-point policy; this is the bare log-log slope used for BOTH the critical scaling
+    and its off-critical control, so that the two are compared through identical arithmetic.
+    """
+    L = np.asarray(sizes, float)
+    v = np.asarray(values, float)
+    ok = np.isfinite(L) & np.isfinite(v) & (L > 0) & (v > 0)
+    if ok.sum() < 2:
+        return float("nan"), float("nan")
+    x, y = np.log(L[ok]), np.log(v[ok])
+    a, b = np.polyfit(x, y, 1)
+    pred = a * x + b
+    ss_res = float(np.sum((y - pred) ** 2))
+    ss_tot = float(np.sum((y - y.mean()) ** 2))
+    return float(a), (1.0 - ss_res / ss_tot if ss_tot > 0 else float("nan"))
+
+
+def collapse_residual(param, curves: dict[int, np.ndarray], p_c: float, nu: float):
+    """How well do xi/L curves collapse under x = (p - p_c) * L^(1/nu)?
+
+    Finite-size scaling says xi/L is a universal function of that scaling variable, so the
+    right nu makes every L fall on one curve. Residual is the mean spread between curves
+    interpolated onto a common x-grid — lower is a better collapse.
+
+    Returns nan rather than a number when the curves do not overlap in x, which happens for
+    extreme nu and would otherwise return a spuriously perfect zero from an empty overlap.
+    """
+    param = np.asarray(param, float)
+    Ls = sorted(curves)
+    if len(Ls) < 2 or not np.isfinite(nu) or nu <= 0:
+        return float("nan")
+
+    xs, ys = [], []
+    for L in Ls:
+        x = (param - p_c) * (L ** (1.0 / nu))
+        y = np.asarray(curves[L], float)
+        ok = np.isfinite(x) & np.isfinite(y)
+        if ok.sum() < 3:
+            return float("nan")
+        xs.append(x[ok])
+        ys.append(y[ok])
+
+    lo = max(x.min() for x in xs)
+    hi = min(x.max() for x in xs)
+    if not (hi > lo):
+        return float("nan")
+
+    grid = np.linspace(lo, hi, 60)
+    M = np.vstack([np.interp(grid, x, y) for x, y in zip(xs, ys)])
+    scale = float(np.nanmean(M))
+    if not np.isfinite(scale) or scale <= 0:
+        return float("nan")
+    return float(np.nanmean(M.max(axis=0) - M.min(axis=0)) / scale)
 
 
 def site_lattice(L: int, p: float, rng, dims: int = 2) -> np.ndarray:
