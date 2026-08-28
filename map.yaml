@@ -3243,6 +3243,7 @@ dawn-field-theory/
           exp_21_coupling_decoherence_20260611_101553.json
           exp_22_monitoring_regulators_20260611_101349.json
           exp_23_joint_coupling_20260613_212830.json
+          exp_24_panelC_adversarial_replication_20260828_111046.json
         scripts/
           exp_01_gravity_gates_entanglement.py
           exp_02_pac_tree_entanglement.py
@@ -3267,6 +3268,7 @@ dawn-field-theory/
           exp_21_coupling_decoherence.py
           exp_22_monitoring_regulators.py
           exp_23_joint_coupling.py
+          exp_24_panelC_adversarial_replication.py
           explore_contrast.py
           explore_inconclusiveness.py
           explore_sign_structure.py
@@ -3408,6 +3410,11 @@ dawn-field-theory/
       n_scale_dependence/
         20260422_cascade_clock.md
         spike_n_vs_scale.py
+      postsymbolic_selection/
+        README.md
+        postsym_redistribute.py
+        postsymbolic_selection.py
+        sink_scale.py
     studies/
       ade_cascade/
         README.md
@@ -3418,6 +3425,7 @@ dawn-field-theory/
         journals/
           2026-07-17_ade-cascade-round1-outcomes.md
           2026-07-17_ade-cascade-round1-preregistration.md
+          2026-08-28_r1_mean_distance_confound.md
         results/
           exp_00_baseline_gate_20260717_145830.json
           exp_01_diagram_selectivity_20260717_150058.json
