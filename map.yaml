@@ -3348,6 +3348,9 @@ dawn-field-theory/
           exp_27_bifractal_time_emergence.py
     spikes/
       RECURSIVE_FRACTAL_ARITHMETIC.md
+      constant_number_fields/
+        README.md
+        check_fields.py
       infodynamic_gravity/
         MACRO_EMERGENCE_BREAKTHROUGH_REPORT.md
         MACRO_EMERGENCE_REPORT.md
@@ -6772,6 +6775,7 @@ dawn-field-theory/
       symmetry_primitive.md
       tinycimm_navier_macro_emergence_sec_inverse_unified_complexity.md
   tools/
+    audit_prediction_accuracy.py
     check_links.py
     converter.py
     generate_experiment_index.py

@@ -207,6 +207,31 @@ Each has a real instance in this corpus:
   (`phi_artifact_test`). The constant did not emerge from the dynamics; it was reachable by
   the search.
 
+### 2.8.1 A good attack makes a claim *more* falsifiable
+
+The point of attacking your own result is not only to catch errors. The better outcome is that
+a soft claim gets replaced by a hard one — and the tell is that the survivor has **more** ways
+to be wrong than the original did.
+
+Worked example. "Gauge couplings carry exactly one power of φ" classified nine constants and
+correctly predicted a held-out case. It was then killed by one line:
+
+    F3/(F4*phi*F10)  ==  (-1 + sqrt(5))/165        same number, zero phi's written
+
+A φ-count is a property of the chosen notation, so the claim could never die — any
+counterexample is answered by rewriting. What replaced it was **field membership**: mixing
+angles and mass ratios are exactly rational, couplings are not. That is a fact about the
+numbers, invariant under rewriting, and it *can* die — one irrational mass ratio or one
+exactly-rational coupling ends it.
+
+This is the invariant-registration rule (§2.7.2) applied to claims rather than to
+registrations. **A φ-count is a coordinate; field membership is a relation.** In practice, the
+claims that survive scrutiny here are the ones stateable without reference to a representation,
+and the ones that die are the ones that quietly depend on one.
+
+When a result survives an attack, ask what it can now be killed by. If the answer is "nothing",
+the attack did not finish.
+
 Practical consequences:
 
 - A test whose result is invariant under its own inputs is replaced, not counted (§2.6).
