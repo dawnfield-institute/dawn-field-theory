@@ -40,9 +40,8 @@ from scipy.integrate import quad
 from scipy.stats import spearmanr
 
 MIDNIGHT_ROOT = Path(__file__).resolve().parent.parent
-DATA_ROOT = MIDNIGHT_ROOT.parent.parent.parent.parent / "data"
 sys.path.insert(0, str(MIDNIGHT_ROOT / "core"))
-from phase_rate import PHI, LN_PHI, save_midnight_results, _convert_numpy
+from phase_rate import DATA_ROOT, PHI, LN_PHI, save_midnight_results, _convert_numpy
 
 B_DFT = 1.0 / LN_PHI
 A_CLOCK = 1.360
