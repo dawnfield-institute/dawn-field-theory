@@ -20,15 +20,18 @@ import numpy as np
 from pathlib import Path
 from datetime import datetime
 from scipy import stats
+from scipy.integrate import trapezoid  # np.trapz was REMOVED in numpy 2.0; requirements
+                                      # floor numpy>=1.24 admits both, and scipy>=1.10
+                                      # provides this on either.
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "core"))
 from radiation_physics import (
     PHI, INV_PHI, XI_BALANCE, LN_PHI, LN2, PI,
     StochasticCascade,
     discrete_severance_spectrum, continuous_severance_spectrum,
-    scope_boundary_count, severance_energy,
+    scope_boundary_count, severance_energy, severance_energy_coupled,
     build_pac_tree, ade_graphs,
-    BETA_C14, BETA_TRITIUM, BETA_CO60, PLANCK_ENERGY_MEV,
+    BETA_C14, BETA_TRITIUM, BETA_CO60, PLANCK_ENERGY_MEV, M_PROTON_MEV,
     save_mr_results,
 )
 
@@ -96,7 +99,7 @@ def test_T2_beta_spectrum_shape():
 
     # Fermi shape (simplified)
     fermi_shape = bin_centers**2 * (1 - bin_centers)**2
-    fermi_shape = fermi_shape / np.trapz(fermi_shape, bin_centers)  # Normalize
+    fermi_shape = fermi_shape / trapezoid(fermi_shape, bin_centers)  # Normalize
 
     # Chi-squared (reduced)
     nonzero = dft_hist > 0
@@ -131,11 +134,16 @@ def test_T3_beta_endpoint():
         ('Co-60', BETA_CO60),
     ]
 
+    # exp_24: the scale is alpha(depth)^2 * m_mediator, not E_Planck * phi^(-depth). Beta
+    # decay is a NUCLEAR transition, so the mediator is the nucleon -- the same anchor
+    # exp_24 T2 uses for the alpha-decay scale, where it lands within 1.75x. The electron
+    # anchors the EM scale (exp_24 T1, 11.4 ppm on the Rydberg) and is the wrong choice
+    # here. The depth is still SEARCHED, not chosen: only the mediator is a judgement.
     best_depth = None
     best_total_log_error = float('inf')
 
     for d in range(3, 20):
-        e_predicted = severance_energy(d, n_boundaries=1)
+        e_predicted = severance_energy_coupled(d, M_PROTON_MEV, n_boundaries=1)
         if e_predicted <= 0:
             continue
         total_log_error = sum(abs(np.log10(E / e_predicted)) for _, E in test_cases)
@@ -147,7 +155,7 @@ def test_T3_beta_endpoint():
     comparisons = []
     n_within_factor10 = 0
     if best_depth is not None:
-        e_pred = severance_energy(best_depth)
+        e_pred = severance_energy_coupled(best_depth, M_PROTON_MEV)
         for name, e_measured in test_cases:
             log_ratio = abs(np.log10(e_measured / e_pred))
             within = log_ratio < 1.0  # Within factor of 10
