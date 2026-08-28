@@ -1,0 +1,62 @@
+{
+  "experiment": "exp_25_second_moment_structure",
+  "initiative": "midnight",
+  "mode": "exploratory_no_scoring",
+  "n_absorbers": 89613,
+  "n_permutations": 200,
+  "model_contains": "quadratic trend in z only; no cascade term fitted",
+  "control": "shuffled z, one-point distribution preserved",
+  "channels": {
+    "fwhm_discrepancy": {
+      "rho": 0.5851782363977487,
+      "n_bins": 40,
+      "z_score": 3.713606310251945,
+      "p": 0.004975124378109453,
+      "skew": 1.4298115415812103,
+      "excess_kurtosis": 1.7387557467677324,
+      "null_mean": 0.002798311444652908,
+      "null_sd": 0.15682328074070537
+    },
+    "fwhm_ratio": {
+      "rho": 0.4831144465290807,
+      "n_bins": 40,
+      "z_score": 2.933647686604276,
+      "p": 0.004975124378109453,
+      "skew": 6.60652335295857,
+      "excess_kurtosis": 82.38010266307997,
+      "null_mean": 0.009341463414634148,
+      "null_sd": 0.16149621008610038
+    },
+    "log_fwhm_2796": {
+      "rho": 0.23677298311444658,
+      "n_bins": 40,
+      "z_score": 1.6109741944427327,
+      "p": 0.13930348258706468,
+      "skew": -1.1803087899802247,
+      "excess_kurtosis": 2.827176423622186,
+      "null_mean": -0.008590056285178237,
+      "null_sd": 0.15230724380690694
+    },
+    "log_fwhm_product": {
+      "rho": 0.03414634146341464,
+      "n_bins": 40,
+      "z_score": 0.18585869528576276,
+      "p": 0.8706467661691543,
+      "skew": -0.674561595931693,
+      "excess_kurtosis": 0.7638675160664969,
+      "null_mean": 0.00455534709193246,
+      "null_sd": 0.15921232162953272
+    },
+    "log_ew_2796_known_dead": {
+      "rho": -0.050093808630394004,
+      "n_bins": 40,
+      "z_score": -0.42820117992490475,
+      "p": 0.8159203980099502,
+      "skew": -0.27593665369705206,
+      "excess_kurtosis": -0.34022061560374706,
+      "null_mean": 0.017237335834896814,
+      "null_sd": 0.1572418471081722
+    }
+  },
+  "verdict": "second moment of the doublet discrepancy carries cascade structure after mean detrending; EW spread does not; targeted not blind; p floor 0.005"
+}

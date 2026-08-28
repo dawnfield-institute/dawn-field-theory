@@ -3212,6 +3212,7 @@ dawn-field-theory/
           2026-06-13_exp23-preregistration.md
           2026-06-13_maximal-coherence-connection-primitive.md
           2026-06-14_balance-coherence-qbe-synthesis.md
+          2026-08-28_second_moment_and_panelC.md
         results/
           exp_01_gravity_gates_entanglement_20260603_191349.json
           exp_01_gravity_gates_entanglement_20260603_191710.json
@@ -3244,6 +3245,7 @@ dawn-field-theory/
           exp_22_monitoring_regulators_20260611_101349.json
           exp_23_joint_coupling_20260613_212830.json
           exp_24_panelC_adversarial_replication_20260828_111046.json
+          exp_25_second_moment_structure_20260828_120531.json
         scripts/
           exp_01_gravity_gates_entanglement.py
           exp_02_pac_tree_entanglement.py
@@ -3269,6 +3271,7 @@ dawn-field-theory/
           exp_22_monitoring_regulators.py
           exp_23_joint_coupling.py
           exp_24_panelC_adversarial_replication.py
+          exp_25_second_moment_structure.py
           explore_contrast.py
           explore_inconclusiveness.py
           explore_sign_structure.py
