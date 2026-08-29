@@ -2299,6 +2299,8 @@ dawn-field-theory/
         core/
           __init__.py
           quantum_gravity.py
+        journals/
+          2026-08-28_planck_scale_is_imported_not_derived.md
         scripts/
           exp_01_response_time_hierarchy.py
           exp_02_planck_from_negotiation.py
@@ -3351,6 +3353,9 @@ dawn-field-theory/
       constant_number_fields/
         README.md
         check_fields.py
+      dimensional_boundary/
+        README.md
+        check_boundary.py
       infodynamic_gravity/
         MACRO_EMERGENCE_BREAKTHROUGH_REPORT.md
         MACRO_EMERGENCE_REPORT.md
