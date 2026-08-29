@@ -104,6 +104,7 @@ files:
 - results_20260429_171421.json
 child_directories:
 - core
+- journals
 - scripts
 estimated_context_weight: 0.95
 validation_type: computational
