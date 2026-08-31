@@ -35,11 +35,11 @@ Bound to the thesis, not to any instrument: **if E₈-derived spectra do not spl
 orbit boundary (Block C), then φ is not structural in this corpus and this milestone dies.**
 Either failure alone wounds it; both together kill it.
 
-## Scorecard: 0/0 — no experiment run yet
+## Scorecard: 12/12 (Block A complete 2026-08-31; B–E not started)
 
 | Block | Question | Experiments | Score | State |
 |---|---|---|---|---|
-| **A — Instrumentation** | Construct the three foldings against textbook answers | exp_01 – exp_03 | 0/12 | pre-registered |
+| **A — Instrumentation** | Construct the three foldings against textbook answers | exp_01 – exp_03 | **12/12** | complete — see `journals/2026-08-31_blockA_outcomes.md` |
 | **B — The live prediction** | Do corpus E₈-derived spectra split as H₄ ⊕ φH₄? | exp_04 – exp_05 | 0/8 | pre-registered |
 | **C — The Lemma boundary** | Does M13.5's Lemma survive indefinite invariant forms? | exp_06 – exp_07 | 0/8 | blocked on A |
 | **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_08 – exp_09 | 0/8 | **gated on B and C** |
@@ -85,16 +85,21 @@ evidence. The falsifiable content of this milestone is P1–P3.
 
 The non-crystallographic reading arrived by **independent convergence** on 2026-08-31:
 **Andy Farmer** (University of Southampton; WOLF collaboration), working from quadratic
-forms, Eisenstein integers, and exactly-solved lattice models — with no access to this
-corpus, its ADE vocabulary, or PAC/SEC — sent two documents (`GOLDEN_RATIO_ALGEBRA.md`,
+forms, Eisenstein integers, and exactly-solved lattice models — sent two documents (`GOLDEN_RATIO_ALGEBRA.md`,
 `triangular_lattice_analysis_for_peter.md`) that independently identified: the golden
 algebra ℤ[φ] with its canonical form and unit structure; the A₂/Eisenstein lattice as the
 fundamental triangular geometry; the three-way Gaussian/Eisenstein/golden norm
 classification; and Baxter's hard-hexagon critical activity as a golden-integer object
 (z_c = 3 + 5φ, which his own power-reduction rule closes to φ⁵ — a unit, N = −1).
 His pentagonal geometry is H₂ and his icosahedral coordinates are H₃ — the images of this
-corpus's A₄ and D₆ under the foldings above. The independence of his derivation is the
-founding evidence that the convergence is structural, and is recorded in
+corpus's A₄ and D₆ under the foldings above. **Independence, stated accurately (corrected 2026-08-31):** the convergence is *partially*
+independent — Andy had prior exposure to this corpus's φ/ADE claims through the March–April
+2026 WOLF collaboration (the ADE framework and the SEC 1/φ partition were shared with him),
+and his analyses are LLM-assisted, so public material may also inform them. What is
+genuinely independent — and is the founding evidence — is the *route*: A₂/Eisenstein
+lattices, the three-norm classification, and the Baxter connection arrived through classical
+number theory and exactly-solved models, none of which this corpus had used. Convergence of
+routes, not of vocabularies. Recorded in
 `journals/2026-08-31_founding.md`. Block A's deliverable doubles as the validation package
 returned to him.
 

@@ -1,0 +1,42 @@
+{
+ "experiment_id": "exp_02_projection_carries_phi",
+ "registration": "cf886c00",
+ "tests": {
+  "T1": {
+   "n_shells": 2,
+   "counts": [
+    120,
+    120
+   ],
+   "pass": true
+  },
+  "T2": {
+   "ratio": 1.6180339887498951,
+   "phi": 1.618033988749895,
+   "dev": 2.220446049250313e-16,
+   "pass": "True"
+  },
+  "T3": {
+   "n_distinct_entries": 6,
+   "entries": {
+    "-0.223606797750": "(0+-1*sqrt5)/10",
+    "0.000000000000": "(0+0*sqrt5)/1",
+    "0.052786404500": "(5+-2*sqrt5)/10",
+    "0.223606797750": "(0+1*sqrt5)/10",
+    "0.500000000000": "(1+0*sqrt5)/2",
+    "0.947213595500": "(5+2*sqrt5)/10"
+   },
+   "pass": true,
+   "shells_are_H4": [
+    true,
+    true
+   ]
+  },
+  "T4": {
+   "found_direction": true,
+   "ratio": 1.6180342597673691,
+   "pass": "True"
+  }
+ },
+ "score": "4"
+}

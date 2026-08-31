@@ -1,0 +1,50 @@
+{
+ "experiment_id": "exp_01_foldings_exist",
+ "registration": "cf886c00",
+ "tests": {
+  "T1": {
+   "counts": {
+    "A4": 20,
+    "D6": 60,
+    "E8": 240
+   },
+   "pass": true
+  },
+  "T2": {
+   "H2": 10,
+   "H3": 30,
+   "H4": 120,
+   "ratios": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "pass": true
+  },
+  "T3": {
+   "pairs": {
+    "A4->H2": [
+     5,
+     5
+    ],
+    "D6->H3": [
+     10,
+     10
+    ],
+    "E8->H4": [
+     30,
+     30
+    ]
+   },
+   "pass": true
+  },
+  "T4": {
+   "golden_An": [
+    4
+   ],
+   "spectrum_exact": true,
+   "pass": true
+  }
+ },
+ "score": 4
+}
