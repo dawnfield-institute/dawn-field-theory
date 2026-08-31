@@ -35,12 +35,12 @@ Bound to the thesis, not to any instrument: **if E₈-derived spectra do not spl
 orbit boundary (Block C), then φ is not structural in this corpus and this milestone dies.**
 Either failure alone wounds it; both together kill it.
 
-## Scorecard: 12/12 (Block A complete 2026-08-31; B–E not started)
+## Scorecard: 12/13 (Block A complete; Block B exp_04 an honest registered failure)
 
 | Block | Question | Experiments | Score | State |
 |---|---|---|---|---|
 | **A — Instrumentation** | Construct the three foldings against textbook answers | exp_01 – exp_03 | **12/12** | complete — see `journals/2026-08-31_blockA_outcomes.md` |
-| **B — The live prediction** | Do corpus E₈-derived spectra split as H₄ ⊕ φH₄? | exp_04 – exp_05 | 0/8 | pre-registered |
+| **B — Dynamical self-duality** | Does dynamics see the mirror? | exp_04 – exp_05 | 0/1 | exp_04 **FAIL** (sealed 74bcd0df; clean, kill-scope declared); exp_05 in design |
 | **C — The Lemma boundary** | Does M13.5's Lemma survive indefinite invariant forms? | exp_06 – exp_07 | 0/8 | blocked on A |
 | **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_08 – exp_09 | 0/8 | **gated on B and C** |
 | **E — Re-derivations** | φ⁻⁴ (exp_37) and z_c = φ⁵ as units, not magnitudes | exp_10 | 0/4 | blocked on A |
