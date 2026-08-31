@@ -1,0 +1,11 @@
+schema_version: "2.1"
+directory_name: milestone18
+title: "Milestone 18: The Non-Crystallographic Completion"
+description: "Tests whether phi enters DFT as projection rather than magnitude: the ADE-to-H foldings (A4->H2, D6->H3, E8->H4), the E8 phi-split prediction, the indefinite-form boundary of the M13.5 Lemma, and the H3 reach of M15's conjecture."
+status: active
+era: era4-milestone-stack-2026q2
+tags: [milestone18, noncrystallographic, folding, golden-ratio, H4, E8, coxeter]
+created: "2026-08-31"
+confidence: 0.3
+score: "0/0"
+related_experiments: [milestone13, milestone15, milestone-r]
