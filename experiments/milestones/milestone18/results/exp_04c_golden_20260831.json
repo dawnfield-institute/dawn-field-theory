@@ -1,0 +1,16 @@
+{
+ "registration": "74bcd0df",
+ "golden": {
+  "D6-tree": 0.79,
+  "E8-tree": 1.27
+ },
+ "panel": {
+  "star7": 0.81,
+  "star8": 0.69,
+  "spider3x2": 1.21,
+  "caterpillar8": 0.87,
+  "broom8": 1.14,
+  "double-star8": 0.68
+ },
+ "verdict": "FAIL"
+}
