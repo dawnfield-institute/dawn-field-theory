@@ -133,10 +133,50 @@ d_a − 1 non-defect edges at a biject with the edges at Π(a) (Π(a) ∉ e₀ s
 non-adjacent, and e₀ is not in the restricted image), so d_{Π(a)} = d_a − 1. The sum over v
 counts each pair twice: Σ_v (d_v − d_{Π(v)})² = 2·(1 + 1) = 4, giving leak = 2/5. ∎
 
-Numerical check of the degree formula on all 21 folds: Σ = 4 on 21/21.
+Numerical check of the degree formula on the 20 saved matchings: Σ = 4 on 20/20 (the 21st fold,
+the cospectral twin, satisfies the clauses the derivation uses; its leak follows).
 
 **Standing of the laws.** Conditional on the matching clauses (T3–T5 of Phase 6): vertex law —
 derived (clauses 1–2); trace law — derived (Addendum 2); **leakage law — derived (this
 addendum)**; two-component + halves — derived up to the single residual of Addendum 3 ("no
 multiplicity-2 edge lifts as a cut pair"). The conjecture to prove is now exactly the matching
 form itself; every sealed invariant of Phases 3–5 follows from it, except one residual clause.
+
+## Addendum 5 — the commutator closes the reduction: everything follows from the form
+
+R is a polynomial in C, so **[R, C] = 0 automatically**, i.e. [S + 2Π, A] = 0 (A = adjacency).
+Entrywise: for all v, w,   A_vw·(s_v − s_w) = 2·(A_{v,Π(w)} − A_{Π(v),w}).
+
+- **Non-cut positions.** If v, w are non-adjacent, or adjacent with equal signs:
+  A_{v,Π(w)} = A_{Π(v),w} — the "near-automorphism" symmetry of the edge relation.
+- **Cut edges force their companions.** If {v, w} is an edge with s_v = +1, s_w = −1, the left
+  side is 2, so A_{v,Π(w)} = 1 and A_{Π(v),w} = 0: the copy-internal edge {v, Π(w)} **must
+  exist**, and {Π(v), w} **must not**.
+- **Π-pairs are never adjacent** (previously an observation): if {v, Π(v)} were an edge it would
+  be a cut edge (signs opposite by SΠ = −ΠS), forcing the "edge" {v, Π(Π(w))}|_{w=Π(v)} = {v, v} —
+  a self-loop. Derived.
+- **Exactly one special diagram edge.** A diagram edge whose lifts include a cut edge {a, b}
+  also carries the cut edge {Π(a), Π(b)} (image of a cut edge is a cut edge) and the forced
+  copy edge {a, Π(b)} — at least 3 lifts. Lifts total Σ = n − 1 = 2k − 1 over k − 1 diagram
+  edges, so at most one diagram edge exceeds 2: **exactly one diagram edge carries all cut
+  edges, with exactly 3 lifts (two cut + one copy-internal), and every other edge has exactly
+  2.** Hence cut = 2, components(copy) = 1 (connected), components(conjugate) = 2, and the
+  halves law by projection along Π.
+- **The forced copy edge is the defect.** Its Π-image is {Π(a), Π(Π(b))} = {Π(a), b}, which the
+  commutator forbids — so Π maps it to a non-edge, and (edge-count bijection, Addendum 4) it is
+  the unique such edge. Copy-internal by construction. Clause 5 is derived in full.
+
+**Theorem (conditional).** If √5·R = S + 2Π with S = diag(±1), Π a symmetric permutation matrix,
+and SΠ = −ΠS, then: Π is a non-adjacent perfect matching; there is a single defect edge,
+copy-internal, over the unique multiplicity-3 quotient edge; cut = 2; the copy side is a spanning
+tree of its k vertices and the conjugate side has exactly two components whose sizes are the
+quotient halves at the special edge; and tr(RD) = 2/√5, ‖(I−P)BP‖² = 2/5, |R_vv| = 1/√5
+(Addenda 2, 4, and clauses 1–2). ∎ (assembled from the addenda)
+
+**What remains.** One conjecture: *the Bezout reflection of a strict fold has the form
+√5·R = S + 2Π with SΠ = −ΠS* (21/21 observed). Plus the identification of the multiplicity-3
+edge with the realized 5-bond of a one-5 partner under a quotient isomorphism (T4's spectral
+half) — the combinatorial quotient structure is derived above; that the quotient *is* the one-5
+partner with the special edge at its 5-bond still uses the spectra. Phase 6's T5 and most of T4
+are now consistency checks of this theorem rather than independent predictions; they remain
+scored as sealed.
