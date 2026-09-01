@@ -86,3 +86,30 @@ beyond that, high-multiplicity and wide cores distort the off-core sector itself
   (t−2)⁴, 3/14 of (t−2)⁶. The selector is per-fold kernel geometry; open.
 - The exp_12 registered domain is a strict subset of the ii-set (12 ⊂ 18) — gauge-independence of
   the full-P traces was a *sufficient* marker for the clean regime, not the boundary.
+
+## explore_r14 — the selector: B-invariance or uniform mass (exact at n ≤ 14)
+
+Feature hunt over all 61 folds (`explore_r14_selector_hunt.py`, contingency table in the log).
+The clean regime decomposes exactly:
+
+- **If the core kernel is B-invariant (B·Qc = Qc·B, B = 2I − D): every off-core law holds** —
+  16/16 for the modulated vertex law, the trace law, the structure law, and the leak law, across
+  cores (t−2)², (t−2)⁴, (t−2)⁶ and the (t−1)²(t−3)² pair. Zero exceptions. All-leaf-supported
+  kernels are the special case B|_K = 1 (15 of the 16).
+- **The ii-set is exactly {B-invariant} ∪ {uniform kernel mass}**: 16 + 2 = 18. The two
+  non-B-invariant members (dets −44, −284) have Qc_vv ≡ 1/3 on a support of six isolated
+  vertices; uniformity of the kernel's vertex mass substitutes for B-invariance in the vertex
+  and leak laws, while their mixed leak blocks stay open (1/9 + 1/9).
+- One B-invariant fold has non-uniform mass ({1/2, 2/3}, det −256 at 14) and still passes
+  everything — so neither condition contains the other; the union is what matters.
+- Intermediate regime: det −320 at 14 (masses {21/55, 24/55, 39/55, 41/55}, not B-invariant)
+  keeps trace + structure while the vertex/leak pair fails — the laws peel off in layers as the
+  kernel geometry degrades, in the order (vertex ≡ leak) first, then trace/structure, and the
+  off-ledger identity (61/61) never fails.
+
+**Candidate theorems (exploration-grade, stated for a future proof/registration):**
+1. B·Qc = Qc·B ⇒ the four off-core laws hold. (Plausible route: B-invariance splits the whole
+   analysis into the off-core sector, where the fold behaves as a strict fold of corank rank(Qc).)
+2. Qc_vv uniform on support ⇒ the modulated vertex law and the off→off leak law hold.
+3. The off-ledger identity P_off + σP_off = I − Qc holds for every core fold (61/61; should be a
+   two-line consequence of the Ledger theorem — promote to lemma).

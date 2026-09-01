@@ -1,0 +1,69 @@
+n=6 det=     4 F1:0 supp 4(4c,3lf) masses ['2/5', '3/5'] ii:0 iii:1 iv:0
+n=8 det=   -16 F1:0 supp 6(6c,5lf) masses ['6/11', '7/11', '8/11'] ii:0 iii:0 iv:0
+n=10 det=    -4 F1:0 supp 6(6c,3lf) masses ['3/11', '4/11', '5/11'] ii:0 iii:0 iv:1
+n=10 det=   -16 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=10 det=   -36 F1:0 supp 10(1c,4lf) masses ['2/5', '3/11', '3/5', '4/11', '42/55', '47/55', '48/55'] ii:0 iii:0 iv:0
+n=10 det=   -44 F1:0 supp 4(4c,3lf) masses ['2/5', '3/5'] ii:0 iii:1 iv:0
+n=10 det=   -80 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=10 det=   -64 F1:0 supp 8(8c,7lf) masses ['12/19', '14/19', '15/19'] ii:0 iii:0 iv:0
+n=12 det=   -16 F1:0 supp 8(8c,5lf) masses ['10/31', '14/31', '16/31', '18/31', '19/31'] ii:0 iii:0 iv:1
+n=12 det=   -80 F1:0 supp 8(8c,5lf) masses ['12/31', '13/31', '15/31', '17/31', '21/31'] ii:0 iii:0 iv:0
+n=12 det=    16 F1:1 supp 6(6c,6lf) masses ['2/3'] ii:1 iii:1 iv:1
+n=12 det=   -80 F1:0 supp 8(8c,6lf) masses ['10/31', '14/31', '16/31', '18/31', '19/31'] ii:0 iii:0 iv:0
+n=12 det=  -176 F1:0 supp 8(8c,6lf) masses ['10/29', '12/29', '17/29', '19/29'] ii:0 iii:0 iv:1
+n=12 det=   -64 F1:0 supp 8(8c,7lf) masses ['1/2', '2/5', '3/5'] ii:0 iii:1 iv:0
+n=12 det=  -256 F1:1 supp 8(8c,8lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=12 det=   -99 F1:1 supp 8(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=12 det=  -171 F1:0 supp 8(4c,4lf) masses ['2/5', '3/5'] ii:0 iii:1 iv:0
+n=12 det=   -80 F1:0 supp 6(6c,5lf) masses ['6/11', '7/11', '8/11'] ii:0 iii:0 iv:0
+n=12 det=  -176 F1:1 supp 6(6c,6lf) masses ['2/3'] ii:1 iii:1 iv:1
+n=12 det=   256 F1:0 supp 10(10c,9lf) masses ['20/29', '23/29', '24/29'] ii:0 iii:0 iv:0
+n=14 det=   -20 F1:0 supp 8(8c,3lf) masses ['4/19', '5/19', '7/19'] ii:0 iii:0 iv:1
+n=14 det=   -16 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=14 det=   -20 F1:0 supp 6(6c,3lf) masses ['3/11', '4/11', '5/11'] ii:0 iii:0 iv:1
+n=14 det=   -44 F1:0 supp 6(6c,4lf) masses ['1/3'] ii:1 iii:1 iv:1
+n=14 det=  -116 F1:0 supp 8(8c,4lf) masses ['4/19', '5/19', '7/19'] ii:0 iii:0 iv:1
+n=14 det=  -124 F1:0 supp 4(4c,3lf) masses ['2/5', '3/5'] ii:0 iii:1 iv:0
+n=14 det=   -44 F1:0 supp 6(6c,4lf) masses ['2/9', '5/9'] ii:0 iii:1 iv:0
+n=14 det=    64 F1:0 supp 10(10c,7lf) masses ['21/61', '30/61', '33/61', '43/61', '44/61'] ii:0 iii:0 iv:1
+n=14 det=    16 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=14 det=   -80 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=14 det=   -64 F1:0 supp 10(10c,7lf) masses ['38/79', '40/79', '42/79', '46/79', '49/79', '50/79', '55/79'] ii:0 iii:0 iv:0
+n=14 det=   -36 F1:0 supp 12(4c,5lf) masses ['1/2', '27/38', '29/38', '4/19', '5/19', '7/19'] ii:0 iii:0 iv:1
+n=14 det=   176 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=14 det=  -116 F1:0 supp 6(6c,4lf) masses ['3/11', '4/11', '5/11'] ii:0 iii:0 iv:1
+n=14 det=   -44 F1:0 supp 4(4c,3lf) masses ['2/5', '3/5'] ii:0 iii:1 iv:0
+n=14 det=  -176 F1:0 supp 12(4c,4lf) masses ['2/5', '3/5'] ii:0 iii:1 iv:0
+n=14 det=  -304 F1:0 supp 12(4c,6lf) masses ['3/11', '4/11', '5/11', '6/11', '7/11', '8/11'] ii:0 iii:0 iv:0
+n=14 det=  -176 F1:0 supp 12(4c,6lf) masses ['3/11', '4/11', '5/11', '6/11', '7/11', '8/11'] ii:0 iii:0 iv:0
+n=14 det=  -164 F1:0 supp 6(6c,3lf) masses ['3/11', '4/11', '5/11'] ii:0 iii:0 iv:1
+n=14 det=  -284 F1:0 supp 6(6c,4lf) masses ['1/3'] ii:1 iii:1 iv:1
+n=14 det=  -356 F1:0 supp 6(6c,4lf) masses ['3/11', '4/11', '5/11'] ii:0 iii:0 iv:1
+n=14 det=  -284 F1:0 supp 6(6c,4lf) masses ['2/9', '5/9'] ii:0 iii:0 iv:0
+n=14 det=   -64 F1:0 supp 10(10c,7lf) masses ['25/59', '26/59', '35/59', '41/59', '45/59'] ii:0 iii:0 iv:0
+n=14 det=   320 F1:0 supp 10(10c,8lf) masses ['2/5', '3/5', '4/9', '7/9'] ii:0 iii:0 iv:0
+n=14 det=  1024 F1:1 supp 8(8c,8lf) masses ['3/4'] ii:1 iii:1 iv:1
+n=14 det=    64 F1:0 supp 10(10c,8lf) masses ['21/61', '30/61', '33/61', '43/61', '44/61'] ii:0 iii:0 iv:1
+n=14 det=  -320 F1:0 supp 10(10c,8lf) masses ['21/55', '24/55', '39/55', '41/55'] ii:0 iii:1 iv:1
+n=14 det=   320 F1:0 supp 10(10c,9lf) masses ['2/3', '2/5', '3/5'] ii:0 iii:1 iv:0
+n=14 det=  -256 F1:0 supp 14(1c,8lf) masses ['10/19', '2/5', '3/5', '79/95', '8/19', '84/95', '86/95'] ii:0 iii:0 iv:0
+n=14 det=   -80 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=14 det=  -176 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=14 det=  -464 F1:1 supp 4(4c,4lf) masses ['1/2'] ii:1 iii:1 iv:1
+n=14 det=  -256 F1:0 supp 10(10c,9lf) masses ['1/2', '4/9', '7/9'] ii:0 iii:0 iv:0
+n=14 det=   256 F1:0 supp 10(10c,9lf) masses ['1/2', '6/11', '7/11', '8/11'] ii:0 iii:0 iv:0
+n=14 det=  -256 F1:1 supp 10(10c,10lf) masses ['1/2', '2/3'] ii:1 iii:1 iv:1
+n=14 det=  -324 F1:0 supp 14(1c,6lf) masses ['188/209', '191/209', '196/209', '4/19', '5/19', '6/11', '7/11', '8/11'] ii:0 iii:0 iv:0
+n=14 det=    36 F1:0 supp 12(8c,7lf) masses ['1/2', '2/5', '3/5'] ii:0 iii:1 iv:0
+n=14 det=  -144 F1:0 supp 12(8c,8lf) masses ['1/2', '2/5', '3/5'] ii:0 iii:1 iv:0
+n=14 det=  1216 F1:0 supp 8(8c,7lf) masses ['12/19', '14/19', '15/19'] ii:0 iii:0 iv:0
+n=14 det=  1024 F1:1 supp 8(8c,8lf) masses ['3/4'] ii:1 iii:1 iv:1
+n=14 det=  5120 F1:0 supp 12(12c,11lf) masses ['30/41', '34/41', '35/41'] ii:0 iii:0 iv:0
+
+feature -> law contingency (feature-true pass/fail vs feature-false pass/fail):
+     F1 B-invariant core: ii 16/0  vs  2/43 | iii 16/0  vs 14/31 | iv 16/0  vs 15/30
+          supp connected: ii  0/3  vs 18/40 | iii  0/3  vs 30/28 | iv  0/3  vs 31/27
+        all-leaf support: ii 15/0  vs  3/43 | iii 15/0  vs 15/31 | iv 15/0  vs 16/30
+            uniform mass: ii 17/0  vs  1/43 | iii 17/0  vs 13/31 | iv 17/0  vs 14/30
+       mass includes 1/2: ii 12/6  vs  6/37 | iii 15/3  vs 15/28 | iv 13/5  vs 18/25
+DONE
