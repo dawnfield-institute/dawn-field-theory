@@ -125,8 +125,16 @@ found the mixed blocks equal to zero exactly on the B-invariant folds. (The empi
 the core→core block also vanished on all 12 domain folds, including the two non-B-invariant
 ones, is *not* covered by this lemma and remains an observation.)
 
-**What remains open, precisely.** The strict-fold laws themselves: tr(R·D) = 2/√5,
-off→off leak = 2/5, the vertex law diag(√5·R_off) = ±(1 − diag Qc), and the two-component
-structure. Lemmas 1–2 reduce the B-invariant core-fold case to the same statements about the
-off-core sector; they do not yet prove them anywhere. The integrality route (5·b ∈ ℤ[t],
-explore_r10) is the standing suggestion.
+**What remains open, precisely (updated same day — see the r15 journal, Addenda 2–5).** The
+strict-fold laws are no longer independently open: conditional on the matching form
+(√5·R = S + 2Π with SΠ = −ΠS, observed 21/21), the commutator [R, C] = 0 — automatic, R being a
+polynomial in C — derives the non-adjacent matching, the single copy-internal defect, the
+multiplicity pattern with one special edge, cut = 2, the two-component and halves structure, the
+trace law, the leakage law, and the vertex law (r15 journal, assembled theorem in Addendum 5).
+**The open conjecture is the matching form itself**, plus T4's spectral half (that the Π-quotient
+is the one-5 partner with the special edge at its realized 5-bond). For core folds, Lemmas 1–2
+above transfer the frame to the off-core sector; the modulated vertex law and the third clean
+kernel class (exp_14) remain open there. The integrality route (5·b ∈ ℤ[t], explore_r10) is the
+standing suggestion for the matching form: it says the integer matrix 5·b(C) squares to 5I with
+row-norm² = 5, whose integer solutions are a short list of patterns — why the (1, 4) pattern is
+the one realized is the question.
