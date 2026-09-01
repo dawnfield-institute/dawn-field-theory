@@ -1,9 +1,9 @@
-# Phase 6 registration (DRAFT — unsealed, uncomputed): the matching structure at n = 20
+# Phase 6 registration (SEALED): the matching structure at n = 20
 
-**Status:** draft. Sealed when committed with SEALED in the commit message and this heading;
-nothing below runs before that. Scored to the sealed text (§2.6). Lessons 1–6 applied — in
-particular: sufficiency and necessity sealed separately (6), partners quantified (4), even-k
-mechanisms anticipated (5).
+**Status: SEALED 2026-09-01** (the commit carrying this heading; nothing below ran before it).
+Scored to this text (§2.6). Lessons 1–6 applied: sufficiency/necessity separate (6), partners
+quantified (4), even-k mechanisms anticipated (5), counting basis declared per tree (the
+known-answer gate passed on that basis before sealing).
 
 ## What this phase is
 
