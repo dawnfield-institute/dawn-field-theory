@@ -1,0 +1,63 @@
+n=6 det=     4 core[(t - 2)**2] i:True ii:False iii:True iv:False v:False
+n=8 det=   -16 core[(t - 2)**4] i:True ii:False iii:False iv:False v:False
+n=10 det=    -4 core[(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=10 det=   -16 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=10 det=   -36 core[(t - 1)**2,(t - 3)**2,(t - 2)**2] i:True ii:False iii:False iv:False v:False
+n=10 det=   -44 core[(t - 2)**2] i:True ii:False iii:True iv:False v:False
+n=10 det=   -80 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=10 det=   -64 core[(t - 2)**6] i:True ii:False iii:False iv:False v:False
+n=12 det=   -16 core[(t - 2)**4] i:True ii:False iii:False iv:True v:False
+n=12 det=   -80 core[(t - 2)**4] i:True ii:False iii:False iv:False v:False
+n=12 det=    16 core[(t - 2)**4] i:True ii:True iii:True iv:True v:True
+n=12 det=   -80 core[(t - 2)**4] i:True ii:False iii:False iv:False v:False
+n=12 det=  -176 core[(t - 2)**4] i:True ii:False iii:False iv:True v:False
+n=12 det=   -64 core[(t - 2)**4] i:True ii:False iii:True iv:False v:False
+n=12 det=  -256 core[(t - 2)**4] i:True ii:True iii:True iv:True v:True
+n=12 det=   -99 core[(t - 1)**2,(t - 3)**2] i:True ii:True iii:True iv:True v:True
+n=12 det=  -171 core[(t - 1)**2,(t - 3)**2] i:True ii:False iii:True iv:False v:False
+n=12 det=   -80 core[(t - 2)**4] i:True ii:False iii:False iv:False v:False
+n=12 det=  -176 core[(t - 2)**4] i:True ii:True iii:True iv:True v:True
+n=12 det=   256 core[(t - 2)**8] i:True ii:False iii:False iv:False v:False
+n=14 det=   -20 core[(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=14 det=   -16 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=   -20 core[(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=14 det=   -44 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=  -116 core[(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=14 det=  -124 core[(t - 2)**2] i:True ii:False iii:True iv:False v:False
+n=14 det=   -44 core[(t - 2)**2] i:True ii:False iii:True iv:False v:False
+n=14 det=    64 core[(t - 2)**6] i:True ii:False iii:False iv:True v:False
+n=14 det=    16 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=   -80 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=   -64 core[(t - 2)**6] i:True ii:False iii:False iv:False v:False
+n=14 det=   -36 core[(t - 1)**2,(t - 3)**2,(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=14 det=   176 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=  -116 core[(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=14 det=   -44 core[(t - 2)**2] i:True ii:False iii:True iv:False v:False
+n=14 det=  -176 core[(t - 2)**2,(t**2 - 4*t + 2)**2] i:True ii:False iii:True iv:False v:False
+n=14 det=  -304 core[(t - 2)**2,(t**2 - 4*t + 2)**2] i:True ii:False iii:False iv:False v:False
+n=14 det=  -176 core[(t - 2)**2,(t**2 - 4*t + 2)**2] i:True ii:False iii:False iv:False v:False
+n=14 det=  -164 core[(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=14 det=  -284 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=  -356 core[(t - 2)**2] i:True ii:False iii:False iv:True v:False
+n=14 det=  -284 core[(t - 2)**2] i:True ii:False iii:False iv:False v:False
+n=14 det=   -64 core[(t - 2)**6] i:True ii:False iii:False iv:False v:False
+n=14 det=   320 core[(t - 2)**6] i:True ii:False iii:False iv:False v:False
+n=14 det=  1024 core[(t - 2)**6] i:True ii:True iii:True iv:True v:True
+n=14 det=    64 core[(t - 2)**6] i:True ii:False iii:False iv:True v:False
+n=14 det=  -320 core[(t - 2)**6] i:True ii:False iii:True iv:True v:False
+n=14 det=   320 core[(t - 2)**6] i:True ii:False iii:True iv:False v:False
+n=14 det=  -256 core[(t - 2)**6,(t**2 - 4*t + 2)**2] i:True ii:False iii:False iv:False v:False
+n=14 det=   -80 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=  -176 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=  -464 core[(t - 2)**2] i:True ii:True iii:True iv:True v:True
+n=14 det=  -256 core[(t - 2)**6] i:True ii:False iii:False iv:False v:False
+n=14 det=   256 core[(t - 2)**6] i:True ii:False iii:False iv:False v:False
+n=14 det=  -256 core[(t - 2)**6] i:True ii:True iii:True iv:True v:True
+n=14 det=  -324 core[(t - 1)**4,(t - 3)**4,(t - 2)**2] i:True ii:False iii:False iv:False v:False
+n=14 det=    36 core[(t - 1)**2,(t - 3)**2,(t - 2)**2] i:True ii:False iii:True iv:False v:False
+n=14 det=  -144 core[(t - 1)**2,(t - 3)**2,(t - 2)**2] i:True ii:False iii:True iv:False v:False
+n=14 det=  1216 core[(t - 2)**6] i:True ii:False iii:False iv:False v:False
+n=14 det=  1024 core[(t - 2)**6] i:True ii:True iii:True iv:True v:True
+n=14 det=  5120 core[(t - 2)**10] i:True ii:False iii:False iv:False v:False
+TALLY: {'i': 61, 'ii': 18, 'iii': 30, 'iv': 31, 'v': 18, 'total': 61}
+DONE

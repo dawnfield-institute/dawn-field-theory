@@ -57,3 +57,32 @@ per fold: **1/2 on ten folds** — the core kernel is a leaf-difference pair, pr
 −284), whose kernel vectors spread over three vertices. Reading (labelled): the leak selector is
 the core's kernel geometry — a leaf-pair core is fully inert; a wider core stays trace-inert and
 structure-inert but opens the two symmetric mixed leak blocks.
+
+## explore_r13 — scope correction: the core is inert on a domain, not universally
+
+Same day, wider test (`explore_r13_offcore_universal.py`): the off-core objects need no gauge, so
+all five statements were evaluated on **every** core-grade Galois fold at n ≤ 14 — 61 folds,
+including everything exp_12 declared out of domain. Result (tally in
+`explore_r13_offcore_universal.json`):
+
+| statement | holds |
+|---|---|
+| (i) off-ledger identity P_off + σP_off = I − Qc | **61/61** |
+| (ii) modulated vertex law √5·R_off,vv = ±(1 − Qc_vv) | 18/61 |
+| (iii) trace law tr(R_off·D) = 2/√5 | 30/61 |
+| (iv) sign-split structure + diagram halves | 31/61 |
+| (v) off→off leakage block = 2/5 | 18/61 |
+
+Forward correction of this journal's own reading: **"the core is inert" is a domain statement,
+not a universal one.** It holds on the 12 conic-domain folds and on 6 more (the ii-set, 18);
+beyond that, high-multiplicity and wide cores distort the off-core sector itself. What r13 adds:
+
+- **(ii) ⟺ (v) exactly** — the same 18 folds, across all 61. The modulated vertex law and the
+  off→off leak law are empirically one phenomenon; a proof of either should yield the other.
+- **Structure is more robust than trace.** 31 ≠ 30 and the sets differ: several folds keep the
+  full two-component + halves structure while the trace deviates (e.g. n = 10 det −4; n = 14 dets
+  −20, −116, −164, −356). "Structure without trace" is a regime the domain never showed.
+- Core multiplicity does not decide membership: the ii-set has 11/24 of the (t−2)² folds, 3/10 of
+  (t−2)⁴, 3/14 of (t−2)⁶. The selector is per-fold kernel geometry; open.
+- The exp_12 registered domain is a strict subset of the ii-set (12 ⊂ 18) — gauge-independence of
+  the full-P traces was a *sufficient* marker for the clean regime, not the boundary.
