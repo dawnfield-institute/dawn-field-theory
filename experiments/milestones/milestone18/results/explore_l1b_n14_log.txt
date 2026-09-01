@@ -1,0 +1,40 @@
+n=14 det=-25600 orbits=4 (sizes [1, 1, 1, 11])
+   quotient charpoly over Q(sqrt5): (t**2 - 4*t - 5/2 + 5*sqrt(5)/2)*(t**2 - 4*t - 5*sqrt(5)/2 - 5/2)
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-2816 orbits=7 (sizes [1, 1, 1, 1, 2, 4, 4])
+   quotient charpoly over Q(sqrt5): (t - 2)*(t**2 - 4*t + 2)*(t**2 - 4*t - 1/2 + 3*sqrt(5)/2)*(t**2 - 4*t - 3*sqrt(5)/2 - 1/2)
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-1856 orbits=9 (sizes [1, 1, 1, 1, 2, 4, 1, 1, 2])
+   quotient charpoly over Q(sqrt5): (t - 2)*(t**2 - 4*t + 2)*(t**3 + t**2*(-6 - sqrt(5)) + t*(4*sqrt(5) + 10) - 3*sqrt(5) - 4)*(t**3 + t**2*(-6 + sqrt(5)) + t*(10 - 4*sqrt(5)) - 4 + 3*sqrt(5))
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-1280 orbits=7 (sizes [1, 1, 1, 1, 1, 5, 4])
+   quotient charpoly over Q(sqrt5): (t - 2)*(t**3 + t**2*(-6 - sqrt(5)) + t*(8 + 4*sqrt(5)) - sqrt(5))*(t**3 + t**2*(-6 + sqrt(5)) + t*(8 - 4*sqrt(5)) + sqrt(5))
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-900 orbits=10 (sizes [1, 1, 2, 2, 1, 1, 1, 2, 2, 1])
+   quotient charpoly over Q(sqrt5): (t - 2)**2*(t - 5/2 - sqrt(5)/2)*(t - 5/2 + sqrt(5)/2)*(t - 3/2 - sqrt(5)/2)*(t - 3/2 + sqrt(5)/2)*(t**2 - 4*t - sqrt(5))*(t**2 - 4*t + sqrt(5))
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-620 orbits=9 (sizes [1, 2, 2, 2, 2, 1, 2, 1, 1])
+   quotient charpoly over Q(sqrt5): (t - 2)*(t**4 - 8*t**3 + t**2*(19 - sqrt(5)) + t*(-12 + 4*sqrt(5)) - 5*sqrt(5)/2 + 1/2)*(t**4 - 8*t**3 + t**2*(sqrt(5) + 19) + t*(-12 - 4*sqrt(5)) + 1/2 + 5*sqrt(5)/2)
+   golden factors: tree tree=['t - 3/2 + sqrt(5)/2', 't - 3/2 - sqrt(5)/2', 't - 5/2 + sqrt(5)/2', 't - 5/2 - sqrt(5)/2', 't**4 - 8*t**3 + sqrt(5)*t**2 + 19*t**2 - 12*t - 4*sqrt(5)*t + 1/2 + 5*sqrt(5)/2', 't**4 - 8*t**3 - sqrt(5)*t**2 + 19*t**2 - 12*t + 4*sqrt(5)*t - 5*sqrt(5)/2 + 1/2'] quot=['t**4 - 8*t**3 + sqrt(5)*t**2 + 19*t**2 - 12*t - 4*sqrt(5)*t + 1/2 + 5*sqrt(5)/2', 't**4 - 8*t**3 - sqrt(5)*t**2 + 19*t**2 - 12*t + 4*sqrt(5)*t - 5*sqrt(5)/2 + 1/2']
+n=14 det=-576 orbits=10 (sizes [1, 1, 1, 1, 1, 1, 1, 1, 2, 4])
+   quotient charpoly over Q(sqrt5): (t - 2)**2*(t**4 - 8*t**3 + t**2*(35/2 - 3*sqrt(5)/2) + t*(-6 + 6*sqrt(5)) - 3*sqrt(5)/2 + 3/2)*(t**4 - 8*t**3 + t**2*(3*sqrt(5)/2 + 35/2) + t*(-6*sqrt(5) - 6) + 3/2 + 3*sqrt(5)/2)
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-400 orbits=10 (sizes [1, 1, 1, 1, 1, 1, 1, 1, 1, 5])
+   quotient charpoly over Q(sqrt5): (t**5 + t**4*(-10 - sqrt(5)) + t**3*(8*sqrt(5) + 36) + t**2*(-56 - 21*sqrt(5)) + t*(37 + 20*sqrt(5)) - 5*sqrt(5) - 10)*(t**5 + t**4*(-10 + sqrt(5)) + t**3*(36 - 8*sqrt(5)) + t**2*(-56 + 21*sqrt(5)) + t*(37 - 20*sqrt(5)) - 10 + 5*sqrt(5))
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-256 orbits=11 (sizes [1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1])
+   quotient charpoly over Q(sqrt5): (t - 2)*(t**5 + t**4*(-10 - sqrt(5)) + t**3*(8*sqrt(5) + 36) + t**2*(-56 - 20*sqrt(5)) + t*(33 + 16*sqrt(5)) - 2*sqrt(5) - 2)*(t**5 + t**4*(-10 + sqrt(5)) + t**3*(36 - 8*sqrt(5)) + t**2*(-56 + 20*sqrt(5)) + t*(33 - 16*sqrt(5)) - 2 + 2*sqrt(5))
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-144 orbits=7 (sizes [1, 2, 2, 4, 1, 2, 2])
+   quotient charpoly over Q(sqrt5): (t - 3)*(t - 2)*(t - 1)*(t - 2 + sqrt(5))*(t - sqrt(5) - 2)*(t**2 - 4*t + 1)
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=-80 orbits=7 (sizes [1, 2, 2, 2, 4, 2, 1])
+   quotient charpoly over Q(sqrt5): (t - 2)*(t - 5/2 - sqrt(5)/2)*(t - 5/2 + sqrt(5)/2)*(t - 2 + sqrt(5))*(t - 3/2 - sqrt(5)/2)*(t - 3/2 + sqrt(5)/2)*(t - sqrt(5) - 2)
+   golden factors: tree tree=['t - 2 + sqrt(5)', 't - 3/2 + sqrt(5)/2', 't - 3/2 - sqrt(5)/2', 't - 5/2 + sqrt(5)/2', 't - 5/2 - sqrt(5)/2', 't - sqrt(5) - 2', 't**2 - 4*t + sqrt(5)/2 + 3/2', 't**2 - 4*t - sqrt(5)/2 + 3/2'] quot=['t - 2 + sqrt(5)', 't - 3/2 + sqrt(5)/2', 't - 3/2 - sqrt(5)/2', 't - 5/2 + sqrt(5)/2', 't - 5/2 - sqrt(5)/2', 't - sqrt(5) - 2']
+n=14 det=-16 orbits=12 (sizes [1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1])
+   quotient charpoly over Q(sqrt5): (t**2 - 4*t + 1 + sqrt(5))*(t**2 - 4*t - sqrt(5) + 1)*(t**4 - 8*t**3 + t**2*(41/2 - sqrt(5)/2) + t*(-18 + 2*sqrt(5)) - 3*sqrt(5)/2 + 7/2)*(t**4 - 8*t**3 + t**2*(sqrt(5)/2 + 41/2) + t*(-18 - 2*sqrt(5)) + 3*sqrt(5)/2 + 7/2)
+   golden factors: tree EXACTLY those of the quotient
+n=14 det=36 orbits=11 (sizes [1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1])
+   quotient charpoly over Q(sqrt5): (t - 3)*(t - 2)*(t - 1)*(t**4 - 8*t**3 + t**2*(37/2 - sqrt(5)/2) + t*(-10 + 2*sqrt(5)) - 3/2 - sqrt(5)/2)*(t**4 - 8*t**3 + t**2*(sqrt(5)/2 + 37/2) + t*(-10 - 2*sqrt(5)) - 3/2 + sqrt(5)/2)
+   golden factors: tree EXACTLY those of the quotient
+DONE 11 of 13 non-Galois golden trees at n=14 are automorphism-quotient folds

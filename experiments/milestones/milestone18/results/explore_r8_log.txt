@@ -1,0 +1,32 @@
+det=   -400 pairs=1 core=['(t - 2)**4']
+    choice (0,) trRD 0 trPB 1
+det=    -80 pairs=4 core=['(t - 2)**4']
+    choice (0, 0, 0, 0) trRD -sqrt(5)/5 trPB sqrt(5)/10 + 1
+    choice (0, 0, 0, 1) trRD sqrt(5)/5 trPB 1 - sqrt(5)/10
+    choice (0, 0, 1, 0) trRD -42*sqrt(5)/55 trPB 21*sqrt(5)/55 + 1
+    choice (0, 0, 1, 1) trRD -4*sqrt(5)/11 trPB 2*sqrt(5)/11 + 1
+    choice (0, 1, 0, 0) trRD 4*sqrt(5)/11 trPB 1 - 2*sqrt(5)/11
+    choice (0, 1, 0, 1) trRD 42*sqrt(5)/55 trPB 1 - 21*sqrt(5)/55
+    choice (0, 1, 1, 0) trRD -sqrt(5)/5 trPB sqrt(5)/10 + 1
+    choice (0, 1, 1, 1) trRD sqrt(5)/5 trPB 1 - sqrt(5)/10
+det=   -256 pairs=1 core=['(t - 2)**4']
+    choice (0,) trRD 0 trPB 1
+det=    -16 pairs=2 core=['(t - 2)**2']
+    choice (0, 0) trRD -14*sqrt(5)/25 trPB 7*sqrt(5)/25 + 1
+    choice (0, 1) trRD -34*sqrt(5)/25 trPB 1 + 17*sqrt(5)/25
+det=   -256 pairs=1 core=['(t - 2)**4']
+    choice (0,) trRD 0 trPB 1
+det=   -576 pairs=1 core=['(t - 2)**6']
+    choice (0,) trRD 824*sqrt(5)/465 trPB 1 - 412*sqrt(5)/465
+det=   -256 pairs=1 core=['(t - 2)**4']
+    choice (0,) trRD 0 trPB 1
+det=   -620 pairs=3 core=['(t - 2)**2']
+    choice (0, 0, 0) trRD sqrt(5) trPB 1 - sqrt(5)/2
+    choice (0, 0, 1) trRD -sqrt(5) trPB 1 + sqrt(5)/2
+    choice (0, 1, 0) trRD 2*sqrt(5)/5 trPB 1 - sqrt(5)/5
+    choice (0, 1, 1) trRD -8*sqrt(5)/5 trPB 1 + 4*sqrt(5)/5
+det=  -1280 pairs=1 core=['(t - 2)**8']
+    choice (0,) trRD 0 trPB 1
+det= -25600 pairs=1 core=['(t - 2)**10']
+    choice (0,) trRD 112*sqrt(5)/25 trPB 1 - 56*sqrt(5)/25
+DONE
