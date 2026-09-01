@@ -1,0 +1,15 @@
+self-tests passed
+  300 trees  [17s]
+  600 trees  [33s]
+  900 trees  [50s]
+  1200 trees  [67s]
+  1500 trees  [84s]
+  1800 trees  [101s]
+  2100 trees  [118s]
+  2400 trees  [134s]
+  2700 trees  [151s]
+  3000 trees  [168s]
+enumerated 3159 trees on 14 vertices [176s]
+{"T1": true, "T2": true, "T3": true, "T4": true} SCORE 4 /4
+grade counts: {'strict': 0, 'core': 50, 'partial': 153, 'none': 2520}
+DONE
