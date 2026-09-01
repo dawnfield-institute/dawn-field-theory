@@ -1,0 +1,84 @@
+self-tests passed
+  500 trees  [35s]
+  1000 trees  [70s]
+  1500 trees  [105s]
+  2000 trees  [141s]
+  2500 trees  [178s]
+  3000 trees  [215s]
+  3500 trees  [252s]
+  4000 trees  [289s]
+  4500 trees  [325s]
+  5000 trees  [362s]
+  5500 trees  [398s]
+  6000 trees  [434s]
+  6500 trees  [468s]
+  7000 trees  [503s]
+  7500 trees  [538s]
+  8000 trees  [575s]
+  8500 trees  [610s]
+  9000 trees  [645s]
+  9500 trees  [683s]
+  10000 trees  [718s]
+  10500 trees  [753s]
+  11000 trees  [790s]
+  11500 trees  [826s]
+  12000 trees  [861s]
+  12500 trees  [898s]
+  13000 trees  [935s]
+  13500 trees  [970s]
+  14000 trees  [1007s]
+  14500 trees  [1042s]
+  15000 trees  [1077s]
+  15500 trees  [1112s]
+  16000 trees  [1144s]
+  16500 trees  [1177s]
+  17000 trees  [1210s]
+  17500 trees  [1245s]
+  18000 trees  [1278s]
+  18500 trees  [1312s]
+  19000 trees  [1346s]
+enumerated 19320 trees on 16 vertices [1366s]
+grade counts: {'strict': 14, 'core': 103, 'partial': 919, 'none': 15443}
+strict fold det=-31: T3 True T4 True
+strict fold det=-11: T3 True T4 True
+strict fold det=-55: T3 True T4 True
+strict fold det=145: T3 True T4 True
+strict fold det=-71: T3 True T4 True
+strict fold det=-19: T3 True T4 True
+strict fold det=-319: T3 True T4 True
+strict fold det=-239: T3 True T4 False
+strict fold det=-419: T3 True T4 True
+strict fold det=-599: T3 True T4 True
+strict fold det=61: T3 True T4 True
+strict fold det=-59: T3 True T4 True
+strict fold det=-779: T3 True T4 True
+core fold det=9: T5 True T5b True
+core fold det=801: T5 True T5b True
+core fold det=-99: T5 True T5b True
+core fold det=-639: T5 True T5b True
+non-Galois golden det=-3056: pure=True paired=True unexplained=False
+non-Galois golden det=256: pure=True paired=True unexplained=False
+non-Galois golden det=16: pure=True paired=True unexplained=False
+non-Galois golden det=400: pure=True paired=True unexplained=False
+non-Galois golden det=-576: pure=True paired=True unexplained=False
+non-Galois golden det=-304: pure=True paired=True unexplained=False
+non-Galois golden det=-304: pure=True paired=True unexplained=False
+non-Galois golden det=-64: pure=True paired=True unexplained=False
+non-Galois golden det=-711: pure=True paired=True unexplained=False
+non-Galois golden det=10496: pure=True paired=True unexplained=False
+non-Galois golden det=64: pure=True paired=True unexplained=False
+non-Galois golden det=-304: pure=True paired=True unexplained=False
+non-Galois golden det=-1024: pure=True paired=True unexplained=False
+non-Galois golden det=-1216: pure=True paired=True unexplained=False
+non-Galois golden det=80: pure=False paired=True unexplained=False
+non-Galois golden det=-775: pure=False paired=True unexplained=False
+non-Galois golden det=-496: pure=False paired=True unexplained=False
+non-Galois golden det=-1024: pure=True paired=True unexplained=False
+non-Galois golden det=-16384: pure=True paired=True unexplained=False
+non-Galois golden det=-2816: pure=True paired=True unexplained=False
+non-Galois golden det=-77824: pure=True paired=True unexplained=False
+non-Galois golden det=4096: pure=True paired=True unexplained=False
+non-Galois golden det=4096: pure=True paired=True unexplained=False
+non-Galois golden det=-2816: pure=True paired=True unexplained=False
+TESTS: {'T1': True, 'T2': False, 'T3': True, 'T4': False, 'T5': True, 'T5_domain': 4, 'T5_declared': 76, 'T5b': True, 'T6': True, 'strict_count': 14, 'det_law_checks': True}
+SCORE DONE
