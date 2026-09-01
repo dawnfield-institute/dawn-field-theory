@@ -157,3 +157,11 @@ Eisenstein: real symmetric Cartan spectra never pair over ℚ(√−3) (E₈'s p
 irreducible there; A₄'s ℚ(√−3)-factorization is just its ℚ-factorization). The ℤ[ω]
 analogue of the ledger cannot live on Cartan matrices; it would need Hermitian objects. The
 invitation extended in the summary is corrected accordingly.
+
+**Forward correction (same day):** the sentence above — "2cos(π/5) = φ is the only quadratic
+bond weight that is itself a unit of its field" — is false: 2cos(π/12) = √(2+√3) has minimal
+polynomial t⁴ − 4t² + 1 and is a unit. The correct discriminator is degree: among m ≥ 4,
+2cos(π/m) has degree 2 for m ∈ {4, 5, 6} and degree 4 for m ∈ {8, 10, 12}; of the degree-2
+cases only m = 5 has an irrational square (φ² = φ + 1), so only the 5-bond yields a q that
+is genuinely golden (σ(q) ≠ q) with the bond weight inside the field. Caught on re-derivation
+before anything downstream used it.
