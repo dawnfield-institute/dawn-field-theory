@@ -48,8 +48,18 @@ linear and branched — with B = 2I − D the boundary operator and P the copy p
 while the diagram-dependent quantities (‖(I−P)B‖², tr(PC)) vary. Since tr(B) = Σ(2−deg) = 2
 for every tree and P + σP = I, the boundary trace splits between the two golden copies as
 1 ∓ 1/√5 — universally — and 1 − 1/√5 = 2/(2+φ) is Block A's inner-shell radius². The
-coupling of the copies through the boundary is a constant of the field, not of the diagram.
-No proof yet; registered as a prediction in the Phase 3 draft (exp_12 T4/T5).
+coupling of the copies through the boundary is a constant of the fold, not of the diagram.
+
+Reduced by hand: for any strict fold tr(PC) = n (a diagonal-2 diagram on n/2 nodes) and
+tr(P) = n/2, so tr(PA) = 0 exactly and the whole invariant is one scalar,
+**tr(RD) = 2/√5** with R = P − σ(P) — the degree-weighted imbalance between the copies.
+
+And it is a property of Galois folds specifically: on the quotient folds (star₆, the
+12-vertex hubs with pure (t−2)^m cores, where the core traces are gauge-independent)
+tr(RD) = 0 and tr(PB) = 1 exactly — no 1/√5 shift. So tr(RD) is a **diagnostic of the fold
+mechanism**: 2/√5 for a Coxeter-diagram fold, 0 for a symmetry quotient. No proof yet;
+registered in the Phase 3 draft (exp_12 T4–T6), including the diagnostic as a claim that can
+fail in either direction.
 
 ## Recorded, still open
 
