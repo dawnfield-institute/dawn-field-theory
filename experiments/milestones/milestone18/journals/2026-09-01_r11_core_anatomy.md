@@ -41,3 +41,19 @@ seal predates r11). If any n = 16 registered-domain core fold has core-scrambled
 det −464 does at 14), sealed T5b can fail there while the R_off form of the law holds. exp_13 is
 scored to its seal regardless; this note exists so that outcome, if it occurs, is explained by a
 dated prior analysis and not by a post-hoc one.
+
+## explore_r12 — the modulated vertex law (12/12)
+
+The half-Binet observation resolves into an identity. Since P_off·σ(P_off) = 0 and
+P_off + σ(P_off) = I − Qc, the off-core reflection satisfies R_off² = I − Qc; and at every vertex
+of all 12 registered-domain core folds:
+
+**√5 · R_off,vv = ±(1 − Qc_vv)**
+
+— the Binet weight scaled by the off-core mass at that vertex (`explore_r12_modulated_vertex_law.py`).
+The strict vertex law is the Qc = 0 case, so one proof will cover both. The core mass is uniform
+per fold: **1/2 on ten folds** — the core kernel is a leaf-difference pair, precisely the seal's
+"core sits on leaf-difference vectors" — and **1/3 on exactly the two leaking folds** (dets −44,
+−284), whose kernel vectors spread over three vertices. Reading (labelled): the leak selector is
+the core's kernel geometry — a leaf-pair core is fully inert; a wider core stays trace-inert and
+structure-inert but opens the two symmetric mixed leak blocks.
