@@ -83,3 +83,50 @@ vertex law is an integrality statement — diag(b(C)) = ±1/5 with 5b ∈ ℤ[t]
 (t−2)² for cat8; degree-4 products at n = 12). No closed form for b yet; the mod-5 reductions of
 5b show no common factor pattern. The 5-adic structure (everything happens over the ramified
 prime) is the visible thread.
+
+## Two lemmas proved (2026-09-01, evening) — the off-core sector
+
+**Lemma 1 (off-ledger identity).** Let T be a tree with Cartan matrix C whose characteristic
+polynomial is p = r·g, where r ∈ ℚ[t] is the product of the rational irreducible factors and
+g = q·σ(q) with q ∈ ℚ(√5)[t], gcd(q, σq) = 1, and gcd(r, g) = 1. Let Qc be the orthogonal
+projector onto ker r(C) and P_off the Bezout projector for q with the core removed
+(P_off = (v·σq)(C)·(I − Qc), where u·q + v·σq = 1). Then
+
+    P_off + σ(P_off) = I − Qc,   P_off² = P_off,   P_off·σ(P_off) = 0.
+
+*Proof.* (a) Qc is σ-fixed: the minimal polynomial m of C is squarefree; by CRT in ℚ(√5)[t]/(m)
+there is h with h ≡ 1 mod each rational factor of m and h ≡ 0 mod each golden factor, and
+Qc = h(C). σ permutes the golden factors of m and fixes the rational ones, so σ(h) satisfies the
+same interpolation conditions; by uniqueness mod m, σ(h) = h, hence h ∈ ℚ[t] and σ(Qc) = Qc.
+(b) σ(P_off) = (σv·q)(C)·(I − Qc) by (a). The sum is [(v·σq + σv·q)(C)]·(I − Qc). Modulo q:
+v·σq ≡ 1 (Bezout) and σv·q ≡ 0, so the bracket ≡ 1; modulo σq: apply σ to the Bezout identity
+to get σv·q ≡ 1, and v·σq ≡ 0, so again ≡ 1. Since gcd(q, σq) = 1, CRT gives
+v·σq + σv·q ≡ 1 (mod g). Hence the bracket acts as the identity on every eigenspace of C for a
+root of g, and (I − Qc) kills the eigenspaces for roots of r; as spec(C) = roots(r) ⊔ roots(g)
+and C is diagonalizable, the sum is I − Qc. (c) Idempotence and orthogonality: on a root of q
+the factor v·σq evaluates to 1 and σv·q to 0; on a root of σq the reverse; on roots of r both
+are annihilated by (I − Qc). ∎
+
+This upgrades r13's 61/61 observation (i) to a theorem; nothing about the tree beyond the
+factorization shape is used, so it holds at every n.
+
+**Lemma 2 (B-invariant cores contribute no mixed leakage).** With the notation above and
+B = 2I − D, suppose B·Qc = Qc·B. Then for every core line P_v ≤ Qc (P_v·Qc = Qc·P_v = P_v):
+
+    (Qc − P_v)·B·P_off = 0   and   σ(P_off)·B·P_v = 0.
+
+*Proof.* Qc·B·P_off = B·Qc·P_off = 0 since Qc·P_off = 0. Hence
+(Qc − P_v)·B·P_off = (Qc − P_v)·Qc·B·P_off = 0. For the second: B·P_v = B·Qc·P_v = Qc·B·P_v,
+and σ(P_off)·Qc = 0. ∎
+
+Consequently, for a B-invariant core the total leakage ‖(I−P)BP‖² reduces to the off→off block
+plus the core→core block, independent of the core gauge — which is why the r11 block anatomy
+found the mixed blocks equal to zero exactly on the B-invariant folds. (The empirical fact that
+the core→core block also vanished on all 12 domain folds, including the two non-B-invariant
+ones, is *not* covered by this lemma and remains an observation.)
+
+**What remains open, precisely.** The strict-fold laws themselves: tr(R·D) = 2/√5,
+off→off leak = 2/5, the vertex law diag(√5·R_off) = ±(1 − diag Qc), and the two-component
+structure. Lemmas 1–2 reduce the B-invariant core-fold case to the same statements about the
+off-core sector; they do not yet prove them anywhere. The integrality route (5·b ∈ ℤ[t],
+explore_r10) is the standing suggestion.
