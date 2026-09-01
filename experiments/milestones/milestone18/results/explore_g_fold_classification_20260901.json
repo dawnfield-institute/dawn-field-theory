@@ -1,0 +1,37 @@
+{
+ "2": {
+  "one5_diagrams": 1,
+  "golden_trees": 1,
+  "folds": 1,
+  "accidental": 0,
+  "orphan_diagrams": 0
+ },
+ "3": {
+  "one5_diagrams": 1,
+  "golden_trees": 2,
+  "folds": 1,
+  "accidental": 1,
+  "orphan_diagrams": 0
+ },
+ "4": {
+  "one5_diagrams": 3,
+  "golden_trees": 3,
+  "folds": 3,
+  "accidental": 0,
+  "orphan_diagrams": 0
+ },
+ "5": {
+  "one5_diagrams": 6,
+  "golden_trees": 7,
+  "folds": 6,
+  "accidental": 1,
+  "orphan_diagrams": 0
+ },
+ "6": {
+  "one5_diagrams": 15,
+  "golden_trees": 18,
+  "folds": 15,
+  "accidental": 3,
+  "orphan_diagrams": 0
+ }
+}

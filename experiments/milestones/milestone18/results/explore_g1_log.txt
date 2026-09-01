@@ -1,0 +1,12 @@
+self-tests passed
+n=4: 2 trees, 2 with any-field content  [0s]
+n=5: 3 trees, 2 with any-field content  [0s]
+n=6: 6 trees, 4 with any-field content  [1s]
+n=7: 11 trees, 8 with any-field content  [2s]
+n=8: 23 trees, 11 with any-field content  [4s]
+n=9: 47 trees, 26 with any-field content  [9s]
+n=10: 106 trees, 43 with any-field content  [23s]
+n=11: 235 trees, 93 with any-field content  [59s]
+n=12: 551 trees, 192 with any-field content  [155s]
+n=13: 1301 trees, 513 with any-field content  [418s]
+G1 DONE

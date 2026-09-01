@@ -53,3 +53,10 @@ diagram carrying the golden ledger. Recorded, not interpreted.
 is an iff diagnostic for golden content in any graph" claim (GRA V3 §6.2 / Rule 15) is
 falsified by an explicit 8-vertex tree; the theorem remains exact on ADE Cartans.
 Milestone 26/31.
+
+## Forward correction (2026-09-01, Panel G)
+
+The sampled census missed classes. Exhaustive enumeration (`explore_g1_census_exhaustive.py`,
+n ≤ 13) finds strict pairing at n = 4, 8, 12 and core-grade ledgers at n = 6, 8, 10, 12; the
+"n = 8 only" statement above is withdrawn. Sampling at small n is retired in favour of
+enumeration. The score is unchanged.
