@@ -1,0 +1,5 @@
+n=14: 3159 trees, 2723 distinct charpolys  [4s total, 4s in charpoly]
+grading: 152s, extension factorizations needed: 2654/2723
+grade counts (distinct charpolys): {'strict': 0, 'core': 50, 'partial': 153, 'none': 2520}
+MATCHES exp_11 known answer: True
+DONE
