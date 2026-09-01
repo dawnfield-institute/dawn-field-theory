@@ -3,7 +3,7 @@
 **Registration:** `5bc8faff` (Phase 3, `2026-09-01_phase3_registration.md`), scored to the sealed
 text. **Scripts:** `exp_12_part1_resonance.py`, `exp_12_part2_fold_laws.py` (n ≤ 12 and n ≤ 14);
 explorations `explore_r7_two_component_corollary.py`, `explore_l1b_quotient_folds_n14.py`,
-`explore_r8_t6_half_choices.py`. **Results:** `explore_l1b_quotient_folds_n14.json`,
+`explore_r8_t6_half_choices.py`, `explore_r9_mixed_trees.py`. **Results:** `explore_l1b_quotient_folds_n14.json`,
 `explore_r8_t6_half_choices_n14.json`, `exp_12_part1_resonance.json`,
 `exp_12_part2_n12.json`, `exp_12_part2_n14.json`, `explore_r7_two_component_corollary.json`.
 **Verdict: 3/6** (T1, T2, T4 pass; T3, T5, T6 fail as sealed — see each section for scope and
@@ -19,7 +19,7 @@ exhaustive n = 14 list (56 golden trees; 41 Galois folds, 15 without a one-5 par
 | T3 signature split | **FAIL** as sealed | copy = diagram signature 37/37; conjugate definite 34/37 |
 | T4 strict-fold invariant | **PASS** | 7/7 (exp_11 T4: no strict fold at 14, so nothing new to test) |
 | T5 core-fold invariant | **FAIL** as sealed | tr(RD) = 2/√5 on 12/12 of the registered domain; ‖(I−P)BP‖² = 2/5 on 10/12 |
-| T6 quotient diagnostic | **FAIL** as sealed | (0, 1) on 8/11 verified quotient folds; two n = 14 golden trees are neither Galois nor quotient folds |
+| T6 quotient diagnostic | **FAIL** as sealed | (0, 1) on 8/11 verified quotient folds; two n = 14 golden trees fold by both mechanisms on separate automorphism sectors |
 
 **3/6.** Kill relevance (per the seal): none for the milestone kill sentence. T1 and T2 pass, so the
 one-5 conjecture is not retired at n = 14. Each failure has a scope, stated in its section; what
@@ -191,10 +191,18 @@ is exact for trees, in place of automorphism enumeration — the double stars at
 automorphisms). Result: **11 of 13 characteristic-polynomial classes (15 trees) are quotient
 folds. Two are not** — dets −620 and −80. Their quotients carry only part of the golden spectrum;
 the rest lives outside the symmetric sector (for −620 the pair t − 3/2 ± √5/2, t − 5/2 ± √5/2 —
-the A₄/H₂ factors; for −80 a conjugate quadratic pair). These trees are neither Galois folds nor
-quotient folds: **Panel L1b's two-mechanism classification, exclusive and exhaustive at n ≤ 12,
-is not exhaustive at n = 14.** Reading, not established: a Galois fold sitting inside an
-antisymmetric sector of a symmetric tree — a mixed mechanism. Open item.
+the A₄/H₂ factors; for −80 a conjugate quadratic pair). These trees are not quotient folds, so they are
+outside T6's scope. What they are is settled by `explore_r9_mixed_trees.py` (run after scoring):
+restrict the Cartan matrix to the symmetric sector S (span of the orbit indicators) and to S⊥. For
+both trees the golden part of S⊥ is an exact Galois pair q·σ(q), and its eigenvectors are supported
+on two isomorphic subtrees swapped by the automorphism — two A₄ paths for det −620 (spectrum of
+S⊥ = (t−2)·charpoly(A₄)), two D₆ subtrees for det −80 (spectrum of S⊥ = (t−2)³ × D₆'s golden
+quadratics). S carries the quotient's golden factors. **Both mechanisms act, on different
+automorphism sectors:** the trivial sector folds as a quotient, the sign sector folds as a Galois
+fold of the swapped subtree (A₄ → H₂, D₆ → H₃). Refined classification (exploration-grade,
+n ≤ 14): the golden spectrum of a tree decomposes over its automorphism sectors, and each sector's
+golden part is a quotient (trivial sector) or a Galois fold (non-trivial sectors); Panel L1b's
+"Galois fold" and "quotient fold" are the pure cases. Exhaustiveness is restored in this form.
 
 **Evaluation** (pure (t−2)^m cores; P = golden half + half core, as sealed). At n = 14, 8 verified
 quotient-fold trees were evaluable: 5 give (tr(RD), tr(PB)) = (0, 1) — dets −400, −256 (three
