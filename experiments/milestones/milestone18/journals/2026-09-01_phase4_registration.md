@@ -1,7 +1,7 @@
-# Phase 4 registration (DRAFT — unsealed, uncomputed): n = 16, the first fresh strict folds
+# Phase 4 registration (SEALED): n = 16, the first fresh strict folds
 
-**Status:** draft. Sealed when committed with SEALED in the commit message and this heading;
-nothing below runs before that. Scored to the sealed text (§2.6; no relaxation after the run).
+**Status: SEALED 2026-09-01** (the commit carrying this heading; nothing above ran before it).
+Scored to this text (§2.6; no relaxation after the run).
 Written under the exp_12 lessons: every operator is defined by construction here, and the cases
 each recipe cannot reach are enumerated before sealing.
 
@@ -66,7 +66,10 @@ for both.
 - **T6 (PREDICTION — sector classification).** For every golden tree at 16 that is not a Galois
   fold: the golden factors of C on S are exactly the quotient's golden factors, and the golden
   part on S⊥ is either empty (pure quotient fold) or pairs as q·σ(q). Fails if any golden factor
-  on S⊥ does not pair. (Evidence at 14: 11 pure quotient, 2 mixed, 0 unpaired.)
+  on S⊥ does not pair, **and also fails if any non-Galois golden tree has the trivial orbit
+  partition (orbit count = 16)** — such a tree folds by neither mechanism in any sector and is
+  UNEXPLAINED, not vacuously a quotient fold. (Evidence at 14: 11 pure quotient, 2 mixed,
+  0 unpaired, 0 unexplained.)
 
 Consistency checks (theorems, recorded not scored): det(parent) = N(q(0)); signature(copy) =
 signature(diagram); hyperbolic diagram's conjugate definite iff det(parent) < 0.
