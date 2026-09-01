@@ -35,7 +35,7 @@ Bound to the thesis, not to any instrument: **if E₈-derived spectra do not spl
 orbit boundary (Block C), then φ is not structural in this corpus and this milestone dies.**
 Either failure alone wounds it; both together kill it.
 
-## Scorecard: 25/29 — Phase 2 (census pending)
+## Scorecard: 26/31 — Phase 2 run (A 12/12 · B 3/5 · C 6/8 + census 1/2 · E 4/4)
 
 **Kill-sentence status (honest accounting):** clause B (no golden split) is NOT met — the
 split is a theorem in the Cartan channel; clause C (no separating power at the orbit
@@ -48,7 +48,8 @@ unsealed): `journals/2026-09-01_phase2_registration_DRAFT.md`.
 | **A — Instrumentation** | Construct the three foldings against textbook answers | exp_01 – exp_03 | **12/12** | complete — see `journals/2026-08-31_blockA_outcomes.md` |
 | **B — Dynamical self-duality** | Does dynamics see the mirror? | exp_04 – exp_05 | **3/5** | exp_04 FAIL (74bcd0df); exp_05 **3/4** (06073227): rational dynamics is σ-blind (T1 theorem); golden-probe leakage first-order and nonzero, but the sealed "golden coefficient" clause fails — provably, the coefficient is σ-fixed hence rational |
 | **C — The σ-Ledger** | Conjugation = complementation; the knife-edge under duality | exp_06 – exp_07 | **6/8** | exp_06 2/4 (T3/T4 fail AT the mod-5 ramification locus, T4 by impossibility proof); exp_07 **4/4** (5\|n and 5\|(n+1) enumeration predicted and confirmed) |
-| **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_08 – exp_09 | 0/8 | **gated on B and C** |
+| **C-ext — The census** | Which trees are completely σ-paired? | exp_08 | **1/2** | 165 classes, n ≤ 10: exactly two at n = 8 — E₈ and a hyperbolic caterpillar with reducible q; Andy's "iff for any graph" falsified |
+| **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_09 | 0/4 | **gated on B and C** (B closed 3/5 with its scored prediction failing on a self-forbidden clause — gate not yet satisfied) |
 | **E — Re-derivations** | φ⁻⁴ (exp_37) and z_c = φ⁵ as units, not magnitudes | exp_10 | **4/4** | exact (974380c6) |
 
 Block A is front-loaded per M17's rule: no DFT system is measured until the instruments

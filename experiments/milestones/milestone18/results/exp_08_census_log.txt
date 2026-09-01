@@ -1,0 +1,9 @@
+instrument self-test passed
+/Users/petergroom/repos/core_workspace/fracton/.venv/lib/python3.12/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributes changed in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+n=6: 500 labeled / 6 iso classes; Cartan hits=0, A^2 hits=0 (radius>2: 0, <=2: 0)  [0.2s]
+n=7: 500 labeled / 10 iso classes; Cartan hits=0, A^2 hits=0 (radius>2: 0, <=2: 0)  [0.4s]
+n=8: 500 labeled / 22 iso classes; Cartan hits=2, A^2 hits=2 (radius>2: 1, <=2: 1)  [0.9s]
+n=9: 500 labeled / 41 iso classes; Cartan hits=0, A^2 hits=0 (radius>2: 0, <=2: 0)  [2.1s]
+n=10: 500 labeled / 86 iso classes; Cartan hits=0, A^2 hits=0 (radius>2: 0, <=2: 0)  [4.9s]
+CENSUS DONE
