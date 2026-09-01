@@ -60,3 +60,13 @@ branch locus; placement selection is trivial on constructions (the bond is where
 Also settled by the construction: the sector-strict trees (exp_13's det −775) are NOT
 construction parents of one-5 diagrams — the classification's two strict species are
 "construction parents" and "sector-strict", and exp_15's T2 tests exactly that dichotomy.
+
+## Retro-check (explore_r17b): rigidity holds on everything known
+
+Every one of the 21 known strict Galois folds at n ≤ 16 is **graph-isomorphic to a construction
+parent** (21/21). And the n = 16 cospectral pair resolves completely: its two members are the
+constructions of the SAME diagram polynomial at its TWO 5-bond placements — one matches (0, 5)
+with halves [3, 5], the other (1, 4) with halves [1, 7]. Cospectral parents are not a wrinkle;
+they are the construction enumerating placements. At n ≤ 16 the strict classification is
+airtight: **strict trees = construction parents ∪ sector-strict trees**, with zero residue.
+Rigidity at n = 20 is exp_15's sealed T3, in flight.
