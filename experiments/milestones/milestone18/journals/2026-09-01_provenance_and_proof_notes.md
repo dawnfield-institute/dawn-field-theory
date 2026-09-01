@@ -75,3 +75,11 @@ known facts are spectral (b(C) is determined by q); the vertex law lives in the 
 where diagonal entries of polynomials in C count weighted closed walks. A walk-counting argument
 through the tree's bipartite structure (C = 2I − A) is the natural route; not yet done. Status:
 open lemma — 7/7 strict folds.
+
+**explore_r10:** b(t) computed explicitly on all seven strict folds (`explore_r10_b_polynomial.json`).
+Finding: **5·b(t) is an integer polynomial on every fold** (leading coefficient 2 or 4), so the
+vertex law is an integrality statement — diag(b(C)) = ±1/5 with 5b ∈ ℤ[t] — and
+(σq − q)/√5 is a monic integer polynomial on every fold (constant 1 for A₄; (t−3)(t−1) for E₈;
+(t−2)² for cat8; degree-4 products at n = 12). No closed form for b yet; the mod-5 reductions of
+5b show no common factor pattern. The 5-adic structure (everything happens over the ramified
+prime) is the visible thread.
