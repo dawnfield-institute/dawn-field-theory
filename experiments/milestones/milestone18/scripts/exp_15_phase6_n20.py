@@ -40,18 +40,26 @@ def sector_strict(e):
     gP=golden_bases(restricted_charpoly(cart(n,e),Sperp)) if Sperp.shape[1] else []
     if not gP: return True   # all golden in symmetric sector, pure-quotient-like strict
     return all(any(sp.expand(sp.sympify(b).subs(s5,-s5)-sp.sympify(b2))==0 for b2 in gP) for b in gP)
-# stage 1
-t0=time.time(); cnt=0; surv=[]
-XS=(0,1,-1,2,3,-2)
-for T in nx.nonisomorphic_trees(n):
-    e=list(T.edges()); C=2*sp.eye(n)
-    for i,j in e: C[i,j]=C[j,i]=-1
-    p=C.charpoly(t); cnt+=1
-    if all(is_norm(int(p.eval(x))) for x in XS): surv.append((sorted(map(list,e)),sp.expand(p.as_expr())))
-    if cnt%25000==0: print(f"  {cnt} trees, {len(surv)} survivors [{time.time()-t0:.0f}s]",flush=True)
-print(f"n=20: {cnt} trees; survivors {len(surv)} [{time.time()-t0:.0f}s]",flush=True)
-t1=time.time(); strict=[(e,p) for e,p in surv if strict_grade(p)]
-print(f"factorization [{time.time()-t1:.0f}s]; STRICT trees: {len(strict)} on {len({str(p) for _,p in strict})} polynomials",flush=True)
+# stage 1 (checkpointed)
+CKPT=RES/'exp_15_survivors_ckpt.json'
+t0=time.time(); XS=(0,1,-1,2,3,-2)
+if CKPT.exists():
+    d=json.load(open(CKPT)); cnt=d["trees"]; surv=[(e,sp.sympify(ps)) for e,ps in d["surv"]]
+    strict=[(e,sp.sympify(ps)) for e,ps in d["strict"]]
+    print(f"checkpoint loaded: {cnt} trees, {len(surv)} survivors, {len(strict)} strict",flush=True)
+else:
+    cnt=0; surv=[]
+    for T in nx.nonisomorphic_trees(n):
+        e=list(T.edges()); C=2*sp.eye(n)
+        for i,j in e: C[i,j]=C[j,i]=-1
+        p=C.charpoly(t); cnt+=1
+        if all(is_norm(int(p.eval(x))) for x in XS): surv.append((sorted(map(list,e)),sp.expand(p.as_expr())))
+        if cnt%25000==0: print(f"  {cnt} trees, {len(surv)} survivors [{time.time()-t0:.0f}s]",flush=True)
+    print(f"n=20: {cnt} trees; survivors {len(surv)} [{time.time()-t0:.0f}s]",flush=True)
+    t1=time.time(); strict=[(e,p) for e,p in surv if strict_grade(p)]
+    print(f"factorization [{time.time()-t1:.0f}s]; STRICT trees: {len(strict)} on {len({str(p) for _,p in strict})} polynomials",flush=True)
+    json.dump({"trees":cnt,"surv":[(e,str(p)) for e,p in surv],"strict":[(e,str(p)) for e,p in strict]},open(CKPT,'w'))
+    print("checkpoint saved",flush=True)
 # partner map k=10
 partners={}
 for T in nx.nonisomorphic_trees(10):
@@ -61,7 +69,8 @@ for T in nx.nonisomorphic_trees(10):
         for m,(i,j) in enumerate(E): M[i,j]=M[j,i]=(-phi if m==pos else -1)
         q=sp.expand(M.charpoly(t).as_expr())
         partners.setdefault(sp.expand(q*q.subs(s5,-s5)),[]).append((q,E,pos))
-idx={p for _,p in strict}
+idx={str(p) for _,p in strict}
+pkeys={str(tg):tg for tg in partners}
 # T1 properly: every diagram target has a 20-vertex parent — search ALL trees' polys? Only strict
 # trees can be parents of one-5 diagrams (q*sq strict by definition: no rational factors? q may have
 # rational content at k=10 even... k=10 even: no forced core, but individual diagrams CAN have
@@ -69,12 +78,11 @@ idx={p for _,p in strict}
 # We record orphans among STRICT-parent diagrams and check core-grade parents for the rest via the
 # norm screen survivors' full grade. Declare scope: T1 evaluated on survivors + core search below.
 res={"registration":"phase6","n":20,"trees":cnt,"survivors":len(surv),"strict":[{"edges":e,"charpoly":str(p)} for e,p in strict]}
-orphan_cand=[tg for tg in partners if not any(sp.expand(tg-p)==0 for p in idx)]
-core_parents={}
-for e,p in surv:
-    for tg in orphan_cand:
-        if sp.expand(p-tg)==0: core_parents[str(tg)]=e
-still_orphan=[tg for tg in orphan_cand if str(tg) not in core_parents]
+survkeys={}
+for e,p in surv: survkeys.setdefault(str(p),e)
+orphan_cand=[k for k in pkeys if k not in idx]
+core_parents={k:survkeys[k] for k in orphan_cand if k in survkeys}
+still_orphan=[k for k in orphan_cand if k not in core_parents]
 # note: a core-grade parent's charpoly = q*sq exactly only if diagram itself has paired rational...
 print(f"T1: {len(partners)} diagram targets; strict-parented {len(partners)-len(orphan_cand)}; survivor-parented {len(core_parents)}; unresolved {len(still_orphan)}",flush=True)
 res["T1"]={"targets":len(partners),"strict_parented":len(partners)-len(orphan_cand),"survivor_parented":len(core_parents),"unresolved":len(still_orphan)}
@@ -82,10 +90,10 @@ res["T1"]={"targets":len(partners),"strict_parented":len(partners)-len(orphan_ca
 T2=[];T3=[];T4=[];T5=[];T6=[]
 for e,p in strict:
     e2=[tuple(v) for v in e]
-    if not any(sp.expand(p-tg)==0 for tg in partners):
+    if str(p) not in pkeys:
         ss=sector_strict(e2); T2.append({"edges":e,"partnered":False,"sector_strict":ss,"ok":ss}); continue
     T2.append({"edges":e,"partnered":True,"ok":True})
-    plist=[x for tg,x in partners.items() if sp.expand(p-tg)==0][0]
+    plist=partners[pkeys[str(p)]]
     qs=[]
     for q,_,_ in plist:
         if not any(sp.expand(q-q2)==0 for q2 in qs): qs.append(q)
