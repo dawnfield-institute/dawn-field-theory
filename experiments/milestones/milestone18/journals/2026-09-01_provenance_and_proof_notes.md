@@ -138,3 +138,10 @@ kernel class (exp_14) remain open there. The integrality route (5·b ∈ ℤ[t],
 standing suggestion for the matching form: it says the integer matrix 5·b(C) squares to 5I with
 row-norm² = 5, whose integer solutions are a short list of patterns — why the (1, 4) pattern is
 the one realized is the question.
+
+**Same-night update (see `2026-09-02_r17_construction_theorem.md`):** T1's existence half is
+PROVED — parents are branched double covers, decoupling at γ² + γ − 1 = 0 — and the matching form
+is a theorem on construction parents (block-diagonal sector projector). The single remaining
+conjecture is rigidity: every strict Galois fold is a construction parent (exp_15 T3 is its live
+test at n = 20). The row-norm-5 question is thereby answered for constructions: the (1, 4)
+pattern is the 2×2 sheet block of the golden sector projector.
