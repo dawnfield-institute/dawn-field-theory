@@ -141,3 +141,19 @@ shows strict pairing at n = 4, 8, 12 (1, 2, 4 trees) and core-grade ledgers at n
 12; the two 10-vertex folds sat among the 20 of 106 classes sampling never drew. The
 registered 1/2 stands; the "n = 8 only" sentence is withdrawn here.
 
+## Why 5 (the bond question), and the Eisenstein non-analogue
+
+Among the bond types whose cosine generates a quadratic field (m = 5, 8, 10, 12), only the
+5-bond series has simply-laced tree parents: 5/5 one-bond tree diagrams through k = 4 fold
+from trees, against 0/5 for m = 8, 10, 12. Allowing √2 and √3 bonds in the parent recovers
+the classical non-simply-laced foldings — [8] ← the B₄ shape (one √2 bond), [12] ← the F₄
+shape — while [10] has no rank-4 parent even then. So the instrument rediscovers the
+crystallographic folding classification from the tree side, and isolates the fact that
+2cos(π/5) = φ is the only quadratic bond weight that is itself a unit of its field: the
+5-bond is the unique one whose Galois-fold parents are simply-laced (ADE-type). This is the
+exact content behind "Δ_φ = 5 is significant" (Farmer, gap U-GRA-09).
+
+Eisenstein: real symmetric Cartan spectra never pair over ℚ(√−3) (E₈'s polynomial is
+irreducible there; A₄'s ℚ(√−3)-factorization is just its ℚ-factorization). The ℤ[ω]
+analogue of the ledger cannot live on Cartan matrices; it would need Hermitian objects. The
+invitation extended in the summary is corrected accordingly.
