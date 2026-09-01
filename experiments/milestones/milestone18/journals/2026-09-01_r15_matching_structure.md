@@ -111,3 +111,32 @@ So the full package (vertex, trace, two-component, halves) now rests on the matc
 one residual statement: *no multiplicity-2 edge lifts as a cut pair* (equivalently, cut = 2, or
 copy connected — all equivalent given the above). 21/21 observed; not yet derived. The leakage
 value 2/5 remains a separate open reduction.
+
+## Addendum 4 — the leakage law is derived (proposition with proof)
+
+**Proposition.** Assume clauses 1–2 (√5·R = S + 2Π, SΠ = −ΠS, Π a perfect matching with
+non-adjacent pairs) and clause 5's single defect. Then ‖(I−P)BP‖²_F = 2/5.
+
+*Proof.* With P = (I + R)/2 and P idempotent,
+‖(I−P)BP‖² = tr(PB(I−P)BP) = tr(B²P) − tr((BP)²) = ¼[tr B² − tr((BR)²)].
+Expand 5·(BR)² = (BS + 2BΠ)². B and S are diagonal, Π has zero diagonal, so
+tr((BS)²) = tr B², tr(BSBΠ) = 0, and tr((BΠ)²) = Σ_v B_v B_{Π(v)}. Hence
+tr((BR)²) = (1/5)[tr B² + 4·Σ_v B_v B_{Π(v)}], and since B_v = 2 − d_v,
+
+    ‖(I−P)BP‖² = (1/5)[tr B² − Σ_v B_v B_{Π(v)}] = (1/10)·Σ_v (d_v − d_{Π(v)})².
+
+Now the degree ledger. Π (a vertex involution) maps edges injectively; no edge maps **to** the
+defect e₀ = {a, b} (its image would be the non-edge Π(e₀), contradiction), and e₀ maps to a
+non-edge — so Π restricts to a bijection of E∖{e₀} onto itself. For v ∉ {a, b} every edge at v
+corresponds to an edge at Π(v) and conversely: d_{Π(v)} = d_v. For a (and likewise b): the
+d_a − 1 non-defect edges at a biject with the edges at Π(a) (Π(a) ∉ e₀ since pairs are
+non-adjacent, and e₀ is not in the restricted image), so d_{Π(a)} = d_a − 1. The sum over v
+counts each pair twice: Σ_v (d_v − d_{Π(v)})² = 2·(1 + 1) = 4, giving leak = 2/5. ∎
+
+Numerical check of the degree formula on all 21 folds: Σ = 4 on 21/21.
+
+**Standing of the laws.** Conditional on the matching clauses (T3–T5 of Phase 6): vertex law —
+derived (clauses 1–2); trace law — derived (Addendum 2); **leakage law — derived (this
+addendum)**; two-component + halves — derived up to the single residual of Addendum 3 ("no
+multiplicity-2 edge lifts as a cut pair"). The conjecture to prove is now exactly the matching
+form itself; every sealed invariant of Phases 3–5 follows from it, except one residual clause.
