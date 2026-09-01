@@ -154,6 +154,15 @@ Panel L2; re-verified 7/7 here on the exp_12 instrument).
 | 12 | -71 | [2, 4] | [2, 4] | 2 |
 | 12 | -95 | [3, 3] | [3, 3] | 2 |
 
+**Post-scoring extension (explore_r7b_core_fold_structure.py):** on the 12 registered-domain
+core-grade folds, |R_vv| is NOT constant (four values per fold: ±1/√5 plus a second, fold-dependent
+pair), so the vertex law is strict-only; but under the sign split 11/12 show the full structure
+(connected copy, 2-edge cut, two conjugate components with sizes equal to the diagram's halves at
+the 5-bond), and the exception (n = 14, det −464: copy 3 components, cut 6, conjugate 4 components)
+still satisfies components(conj) = components(copy) + 1 and cut = 2·components(copy) — the two
+relations derivable without constancy of |R_vv|. Component relations: 19/19 across strict and
+core-domain folds.
+
 Reading (labelled as such): the conjugate-heavy half of the parent is the diagram with its golden
 bond cut; the copy-heavy half is connected and carries the two cut edges, which sit over the
 5-bond. The lemma is proved; the two 7/7 observations are candidates for a future registration

@@ -1,0 +1,13 @@
+n=10 det=  -16 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 5v (1 comp) conj 5v comps [1, 4] zero 0 cut 2 diagram halves [1, 4]
+n=10 det=  -80 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 5v (1 comp) conj 5v comps [2, 3] zero 0 cut 2 diagram halves [2, 3]
+n=12 det=  -99 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 6v (1 comp) conj 6v comps [1, 5] zero 0 cut 2 diagram halves [1, 5]
+n=14 det=  -16 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [1, 6] zero 0 cut 2 diagram halves [1, 6]
+n=14 det=  -44 trRD=2*sqrt(5)/5 |R_vv| values=['-4*sqrt(5)/15', '-sqrt(5)/5', '4*sqrt(5)/15', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [1, 6] zero 0 cut 2 diagram halves [1, 6]
+n=14 det=   16 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [1, 6] zero 0 cut 2 diagram halves [1, 6]
+n=14 det=  -80 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [2, 5] zero 0 cut 2 diagram halves [2, 5]
+n=14 det=  176 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [1, 6] zero 0 cut 2 diagram halves [1, 6]
+n=14 det= -284 trRD=2*sqrt(5)/5 |R_vv| values=['-4*sqrt(5)/15', '-sqrt(5)/5', '4*sqrt(5)/15', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [2, 5] zero 0 cut 2 diagram halves [2, 5]
+n=14 det=  -80 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [1, 6] zero 0 cut 2 diagram halves [1, 6]
+n=14 det= -176 trRD=2*sqrt(5)/5 |R_vv| values=['-3*sqrt(5)/10', '-sqrt(5)/5', '3*sqrt(5)/10', 'sqrt(5)/5'] copy 7v (1 comp) conj 7v comps [2, 5] zero 0 cut 2 diagram halves [2, 5]
+n=14 det= -464 trRD=2*sqrt(5)/5 |R_vv| values=['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5'] copy 7v (3 comp) conj 7v comps [1, 1, 1, 4] zero 0 cut 6 diagram halves [3, 4]
+DONE

@@ -43,3 +43,35 @@ modes, hence tr(RD) = 0 — the diagnostic.
 Finite: A₁₃ (h=14) √7 only; A₁₄ (h=15) √5 only; D₁₃ (h=24) √2, √3; D₁₄ (h=26) √13 (core) —
 4/4 as predicted by √d ∈ ℚ(ζ_{2h}). Affine D̃₅–D̃₈, Ẽ₆–Ẽ₈: never strict (partial at most), as
 predicted. Remaining exp_12 tests await exp_11's fold list.
+
+## Addendum (after exp_12) — the vertex law |R_vv| = 1/√5 as a rational statement
+
+On a strict fold, P = a(C) with a ∈ ℚ(√5)[t] (the Bezout combination), so R = P − σ(P) =
+(a − σa)(C) = √5·b(C) with **b ∈ ℚ[t]**. R² = I (Panel L2) reads 5·b(t)² ≡ 1 (mod q·σq). The
+vertex law says the **rational** symmetric matrix b(C) has diagonal ±1/5 at every vertex.
+Equivalent forms:
+
+- P_vv = (1 + R_vv)/2 ∈ {(5+√5)/10, (5−√5)/10} = {φ/√5, 1/(φ√5)} — the Binet weights. Every
+  vertex vector splits between the H-copy and its conjugate in Binet proportions; the same pair
+  is the diagonal of the Fibonacci Q-matrix's φ-eigenline projector (the minimal instance of the
+  Complement Identity): φ²/(φ²+1) = φ/√5.
+- Row norms: Σ_w b(C)_vw² = 1/5, so diagonal ±1/5 forces Σ_{w≠v} b(C)_vw² = 4/25 at every vertex.
+- With tr(b(C)) = 0 and tr(b(C)·D) = 2/5 (T4), the sign pattern gives the two-component lemma of
+  explore_r7.
+
+**Scope (explore_r7b):** the vertex law is a *strict-fold* statement. On the 12 registered-domain
+core folds the diagonal of R takes four values — ±1/√5 on most vertices and a second pair
+(±3√5/10, ±4√5/15 or ±√5/10, fold-dependent) on others — while tr(RD) = 2/√5 still holds 12/12.
+The sign-split structure largely survives: 11/12 have a connected copy side, a 2-edge cut, and a
+two-component conjugate side whose sizes equal the diagram's halves at the 5-bond; the exception
+(n = 14, det −464) has copy side in 3 components, cut 6, conjugate side in 4 components — and
+still satisfies components(conj) = components(copy) + 1 and cut = 2·components(copy), the two
+relations the lemma derives without using constancy of |R_vv|. So the component relations are the
+robust part (19/19 strict + core-domain); the vertex law and the halves law are where a proof
+should start, on strict folds.
+
+What a proof needs: why the diagonal of b(C) is constant in absolute value on a strict fold. The
+known facts are spectral (b(C) is determined by q); the vertex law lives in the vertex basis,
+where diagonal entries of polynomials in C count weighted closed walks. A walk-counting argument
+through the tree's bipartite structure (C = 2I − A) is the natural route; not yet done. Status:
+open lemma — 7/7 strict folds.
