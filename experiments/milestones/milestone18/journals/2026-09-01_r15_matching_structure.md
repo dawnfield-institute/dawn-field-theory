@@ -43,3 +43,20 @@ Exploration-grade, 20/20, no counterexample; not registered. Natural Phase 6 mat
 matching form and the mult-3/realized-bond clause as predictions at the next strict tier
 (n = 20), and attempt the proof in parallel — the form is rigid enough that a proof may fall to
 direct computation with the Bezout construction.
+
+## Addendum — the single defect (20/20)
+
+Two further clauses, checked on all 20 folds (pure combinatorics on the saved matchings):
+
+5. **Π maps parent edges to parent edges except exactly one.** The defect edge — a copy-side
+   edge whose Π-image is a non-edge — is unique on every fold.
+6. **The defect edge projects onto the multiplicity-3 edge**, i.e. it sits over the realized
+   5-bond. So Π is an involution of the parent that is an isomorphism everywhere except one
+   edge, and that single failure is where the golden bond lives: the mult-3 edge's three lifts
+   are the defect edge plus the Π-paired couple, and its "missing fourth lift" is exactly the
+   non-edge Π points at.
+
+The conjecture in full: on a strict fold, √5·R = S + 2Π with SΠ = −ΠS; Π is a near-automorphism
+with a single defect; the quotient is the one-5 partner; multiplicity 2 everywhere except 3 over
+the realized bond, whose position the defect marks. One object — the reflection — carries the
+fibers, the diagram, the bond, and the placement.
