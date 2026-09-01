@@ -1,8 +1,10 @@
-# Phase 5 registration (DRAFT — unsealed, uncomputed): the off-core instrument and the selector, out of sample
+# Phase 5 registration (SEALED): the off-core instrument and the selector, out of sample
 
-**Status:** draft. Sealed when committed with SEALED in the commit message and this heading;
-nothing below runs before that. Scored to the sealed text (§2.6). Lessons 1–5 applied: operators
-by construction, unreachable cases enumerated, partners quantified, even-k mechanisms anticipated.
+**Status: SEALED 2026-09-01** (the commit carrying this heading; nothing below ran before it).
+Scored to this text (§2.6). Lessons 1–5 applied: operators by construction, unreachable cases
+enumerated, partners quantified, even-k mechanisms anticipated. Pre-seal self-review: fold count
+corrected to 80; T5's layer-order evidence verified (the 18 clean folds at n ≤ 14 all pass trace
+and structure).
 
 ## What this phase is
 
