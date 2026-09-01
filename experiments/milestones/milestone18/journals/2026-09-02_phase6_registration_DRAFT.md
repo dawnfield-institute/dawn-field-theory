@@ -15,13 +15,15 @@ record.
 
 ## Instruments (by construction)
 
+- Fold objects are counted **per tree**, with per-polynomial tallies reported alongside
+  (cospectral parents exist; the twin at 16 is fold 21/21).
 - **Strict hunt** (`explore_r16b_strict_hunt.py` pipeline at n = 20): enumerate all trees
   (`nx.nonisomorphic_trees(20)`, exhaustive); screen by the norm condition — p = q·σ(q) implies
   p(x) = N(q(x)) is a ℚ(√5)-norm for every rational x, and an integer is a norm iff every prime
   ≡ ±2 (mod 5) divides it to an even power; evaluated at x ∈ {0, ±1, 2, 3, −2}. The screen is a
   proven necessary condition (it cannot lose a strict tree); survivors get the exact ℚ(√5)
-  factorization, and strict = every irreducible factor golden. **Known-answer gate before the
-  run: the pipeline at n = 16 must return exactly the 14 known strict trees.**
+  factorization, and strict = every irreducible factor golden. **Known-answer gate (PASSED before sealing): the pipeline at n = 16 returned the known strict
+  set — 14 distinct polynomials, 15 trees including the cospectral twin, basis declared.**
 - **Partner map at k = 10**: all one-5 diagrams (10-node trees, one marked edge), multi-map
   keyed by q·σ(q), all partners retained.
 - **P, R, matching**: P = Bezout projector for a partner's q; R = P − σ(P); the matching test
@@ -45,10 +47,12 @@ record.
   edges except a single edge covered by 3, and under some isomorphism the multiplicity-3 edge is
   that partner's 5-bond. Fails on any violation.
 - **T5 (the single defect).** On every such fold: Π maps parent edges to parent edges except
-  exactly one, and the defect edge projects onto the multiplicity-3 edge. Fails on any violation.
+  exactly one; the defect edge projects onto the multiplicity-3 edge; **and the defect edge is
+  copy-internal** (both endpoints sign +1). Fails on any violation. (21/21 at n ≤ 16.)
 - **T6 (consequences).** On every such fold: tr(RD) = 2/√5, ‖(I−P)BP‖² = 2/5, |R_vv| = 1/√5 at
-  every vertex. (Implied by T3–T5 plus sign bookkeeping if the reduction argument is right;
-  scored independently so a gap in the reduction is visible as T3–T5 pass / T6 fail.)
+  every vertex. (The trace clause is now a PROVED consequence of T3 + T5 — proposition in the r15 journal — so
+  it doubles as a consistency check; the leakage and vertex clauses are scored on their own
+  merits, the vertex clause being a consequence of T3 alone.)
 
 If no strict tree exists at n = 20, T2–T6 are vacuous and recorded as such (not passed); T1 is
 still scored. Kill scope: none of these touches the milestone kill sentence; failures retire the

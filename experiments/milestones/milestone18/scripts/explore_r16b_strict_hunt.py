@@ -32,5 +32,7 @@ for e,p in surv:
     if strict_grade(p): strict.append({"edges":e,"charpoly":str(p)})
 print(f"exact factorization on survivors: {time.time()-t1:.0f}s; STRICT trees: {len(strict)}",flush=True)
 json.dump(strict,open(RES/f'explore_r16b_strict_n{n}.json','w'),indent=1)
-if n==16: print("VALIDATION (expect 14):", "PASS" if len(strict)==14 else "FAIL",flush=True)
+if n==16:
+    distinct=len({x["charpoly"] for x in strict})
+    print(f"VALIDATION (expect 14 distinct charpolys; exp_13 counted polys, not trees): {'PASS' if distinct==14 else 'FAIL'} ({len(strict)} trees, {distinct} polys)",flush=True)
 print("DONE",flush=True)

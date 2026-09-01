@@ -60,3 +60,33 @@ The conjecture in full: on a strict fold, √5·R = S + 2Π with SΠ = −ΠS; �
 with a single defect; the quotient is the one-5 partner; multiplicity 2 everywhere except 3 over
 the realized bond, whose position the defect marks. One object — the reflection — carries the
 fibers, the diagram, the bond, and the placement.
+
+## Addendum 2 — the trace law reduces to the matching clauses (proposition), and a 21st fold
+
+**Defect side (explore_r15c, 21/21):** the defect edge is copy-internal — both endpoints carry
+sign +1 — on every strict fold known.
+
+**Proposition (trace-law reduction).** Assume clauses 1–2 and 5 (√5·R = S + 2Π, SΠ = −ΠS, Π maps
+edges to edges except the single defect edge, which is copy-internal). Then tr(R·D) = 2/√5.
+*Proof.* tr(R·D) = (1/√5)·Σ_v d_v s_v = (1/√5)·Σ_{edges {a,b}} (s_a + s_b). Π is an involution;
+pair each non-defect edge {a,b} with its image {Π(a), Π(b)} (also an edge, by clause 5). By
+SΠ = −ΠS, s_{Π(a)} = −s_a and s_{Π(b)} = −s_b, so the pair's contributions cancel; a non-defect
+edge fixed by Π would force s_a = −s_b and contributes 0 on its own. The defect edge is the only
+edge left unpaired, and it is copy-internal: contribution s_a + s_b = 2. Hence Σ d_v s_v = 2. ∎
+
+So T6's trace clause is a theorem conditional on the matching clauses; the vertex law already
+follows from clauses 1–2. Still open as reductions: the leakage value 2/5 and the two-component/
+halves structure (the latter is plausibly clause-5 bookkeeping as well; not yet written).
+
+**The 21st fold — cospectral parents (explore_r16b + r15d).** The strict-hunt validation at
+n = 16 found 15 strict *trees* on 14 strict *polynomials*: two non-isomorphic 16-vertex trees
+share one strict characteristic polynomial, so the same one-5 diagram (same q·σq, two cospectral
+placements) has **two non-isomorphic parents**. exp_13 only ever evaluated one tree per
+polynomial; the twin passes the full battery — form, anticommuting signs, single copy-internal
+defect, quotient isomorphic to the diagram, multiplicities [2×6, 3], defect over the mult-3
+edge. Matching-structure record: **21/21**. New phenomenon for the classification: the strict
+fold map is not injective on parents; a diagram can be "heard" by more than one tree.
+
+**Instrument note.** The 15-vs-14 discrepancy was a counting-basis mismatch (exp_13 counted
+distinct polynomials, r16b counted trees). The pipeline's validation line now states its basis.
+Lesson: a known-answer gate must declare the basis it counts in.
