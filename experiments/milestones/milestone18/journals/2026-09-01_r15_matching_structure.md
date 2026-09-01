@@ -90,3 +90,24 @@ fold map is not injective on parents; a diagram can be "heard" by more than one 
 **Instrument note.** The 15-vs-14 discrepancy was a counting-basis mismatch (exp_13 counted
 distinct polynomials, r16b counted trees). The pipeline's validation line now states its basis.
 Lesson: a known-answer gate must declare the basis it counts in.
+
+## Addendum 3 — how far the structure law reduces (written while exp_15 runs)
+
+From the matching clauses alone:
+- SΠ = −ΠS makes the two lifts of any multiplicity-2 diagram edge a Π-pair with **jointly flipped
+  signs**, so each such pair is either {copy-internal, conjugate-internal} or {cut, cut}; a
+  mixed-sign (cut) edge maps to a cut edge.
+- The trace proposition gives Σd_v s_v = 2, hence degree-sum(copy) − degree-sum(conj) = 2, hence
+  e_copy − e_conj = 1 and (r7 lemma) components(conj) = components(copy) + 1,
+  cut = 2·components(copy). Since both sides are nonempty in a tree, cut ≥ 2 — so **at least one
+  Π-pair of lifts is {cut, cut}** by parity.
+- **If exactly one pair is {cut, cut}** — necessarily the mult-3 edge's non-defect pair, since
+  the defect is copy-internal — then the copy side receives one internal lift of every mult-2
+  edge plus the defect: k − 1 edges on k vertices, a spanning tree, hence **connected**; the
+  conjugate side receives k − 2 internal lifts on k vertices, hence **exactly two components**;
+  and the cut is the two lifts over the realized 5-bond, giving the halves law by projection.
+
+So the full package (vertex, trace, two-component, halves) now rests on the matching clauses plus
+one residual statement: *no multiplicity-2 edge lifts as a cut pair* (equivalently, cut = 2, or
+copy connected — all equivalent given the above). 21/21 observed; not yet derived. The leakage
+value 2/5 remains a separate open reduction.
