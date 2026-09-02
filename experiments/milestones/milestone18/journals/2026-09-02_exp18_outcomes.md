@@ -39,3 +39,25 @@ prediction confirmed (T1) and one direction confirmed but not yet separable from
 Kill scope honoured throughout; the construction theorem and the matching laws are untouched.
 Next: the *magnitude* law — whether the asymmetry at the branch is fixed by the degree ledger
 (the same Σ(d_v − d_{Π(v)})² = 4 that fixes the leakage) — is the natural Phase 7d.
+
+## Addendum — explore_r20: the magnitude of the branch asymmetry (exploration)
+
+Script `explore_r20_branch_magnitude.py`, all 68 strict folds at n ≤ 20 (β = 1).
+
+1. **The cut pair has exactly zero asymmetry — a theorem.** The two cut lifts (A,0)–(B,1) and
+   (A,1)–(B,0) of the special bond are Π-images of each other, and their heat-kernel entries are
+   identical: in the golden sector basis ŝ_X(γ) = ((X,0) + γ(X,1))/√(1+γ²), both entries equal
+   Σ_γ γ/(1+γ²) · K^γ_{AB} (the coefficients of (A,0),(B,1) and of (A,1),(B,0) multiply to the
+   same γ/(1+γ²) in each sector). Verified to 40 digits on all 47 folds at n = 20 (max
+   difference below 1e−30). So the sheet asymmetry vanishes *on the bond itself*; the branch is
+   seen through its neighbourhood, not through the glued edges.
+2. **Corollary sharpening T1.** Since cut pairs carry zero asymmetry, the peak pair (distance 0
+   on 68/68) is always a *first-neighbour* pair of the defect — an edge at one of the defect's
+   endpoints other than the defect and the cut, paired with its Π-image on the other sheet.
+   This is where the degree ledger bites: the defect endpoint has one more edge than its
+   partner, so the two sheets first differ there.
+3. **Magnitude is local.** a_max clusters by the defect's degree pair — roughly (2,3): 0.056–0.065,
+   (3,3): 0.063–0.074, (3,4): 0.071–0.077, (4,4): 0.073 — and identical values recur to six
+   digits across n = 12, 16, 20 (e.g. 0.065441, 0.074359, 0.060159), i.e. the branch asymmetry
+   at β = 1 depends only on the branch's neighbourhood out to the kernel's range. A closed form
+   in the local degree data is not yet found; the discrete recurrence says one may exist.
