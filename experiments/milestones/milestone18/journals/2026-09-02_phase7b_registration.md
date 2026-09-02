@@ -1,8 +1,8 @@
-# Phase 7b registration (DRAFT — unsealed, uncomputed): the Π-asymmetry profile
+# Phase 7b registration (SEALED): the Π-asymmetry profile
 
-**Status:** draft. Sealed when committed with SEALED in the commit message and this heading.
-Scored to the sealed text (§2.6). Lessons 1–7 applied — lesson 7 (power from the objects before
-sealing) is applied below explicitly.
+**Status: SEALED 2026-09-02** (the commit carrying this heading; nothing below ran before it).
+Scored to this text (§2.6). Lessons 1–7 applied; pre-seal review verified the binomial quantile
+(Bin(18, 0.10): 99% quantile 5) and the power count (18/21) from the objects alone.
 
 ## The claim under test
 
