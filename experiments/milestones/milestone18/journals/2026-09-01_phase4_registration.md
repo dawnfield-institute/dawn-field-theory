@@ -82,3 +82,7 @@ the n ≤ 12 folds as instances. T5/T5b/T6 failures retire the corresponding ext
 
 Grading 19,320 trees at 16×16: ~30 min (exp_11's 3,159 at n = 14 took 176 s). One-5 diagrams at
 k = 8: 23 trees × 7 edges = 161 polynomials. Bezout projectors at 16×16: minutes per strict fold.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Tests conjectures at n = 16 (the one-5 prediction, the invariants, the two-component structure, the sector classification) — feeds `formal/`.

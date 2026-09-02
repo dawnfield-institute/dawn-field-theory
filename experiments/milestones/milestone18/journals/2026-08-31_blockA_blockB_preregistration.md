@@ -66,3 +66,7 @@ ratio between SETS, invariant under relabeling and rescaling of either set.
 Block A failing = instrument fault; fix and re-run (scores may lower; that is correct
 behaviour). Block B failing WITH Block A green = P1 is false = the thesis is wounded per the
 kill sentence. If Block C subsequently also fails, Milestone 18 dies and says so.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Block A validates instruments (feeds the milestone's `core/`); Block B measures a physical reach (feeds `theory/` via THEORY_MAP and ROADMAP). Mixed by design at founding; later phases are single-layer.

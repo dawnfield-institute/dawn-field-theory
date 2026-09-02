@@ -5,9 +5,10 @@ vertex law (|R_vv| = 1/sqrt5) is the Qc = 0 case. Core-mass values are uniform p
 1/2 (leaf-difference kernel pair) on ten folds, 1/3 (three-vertex kernel vectors) on exactly the
 two folds whose mixed core blocks leak (dets -44, -284) — the leak selector is the kernel geometry."""
 import sys, json, sympy as sp
-sys.argv=['x','14']
-src=open(__file__.replace('explore_r12_modulated_vertex_law.py','exp_12_part2_fold_laws.py')).read().split('res={"registration"')[0]
-exec(src)
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
+from foldlaws import *   # promoted from exp_12_part2 on 2026-09-02
+census, golden, diag = load_context(14)
 rs=lambda x: sp.radsimp(sp.expand(x))
 out=[]; allok=True
 for r in golden:

@@ -41,6 +41,32 @@ spectra — periodic circle (n²) against anti-periodic Möbius ((n+½)²). If t
 balance constant and the M15 connection generator are the same operator under two boundary
 twists, and the twist classification and the Ξ story collapse into one result.
 
+### M18 — is φ structural, or projected?
+
+Founded 2026-08-31 on the thesis that φ enters the corpus as a projection (the foldings
+A₄ → H₂, D₆ → H₃, E₈ → H₄), not a magnitude. In three days the mathematics closed to a single
+conjecture: parents of golden Coxeter diagrams are **branched double covers** whose sheets
+decouple at γ² + γ − 1 = 0 (proven), every strict-fold law is a theorem on those covers
+(proven), and *rigidity* — that every strict fold is such a cover — held 47/47 at n = 20
+without proof. Seven theorems are indexed in [`formal/theorems/`](formal/theorems/README.md);
+the open half is in [`formal/conjectures/m18_open.md`](formal/conjectures/m18_open.md).
+
+The layers are now kept apart: **mathematics** (Phases 3–6, closed to rigidity), **physics**
+(Blocks B and D, Phases 7–7c — the fold's branch is dynamically visible, exp_18 47/47), and
+**instruments** (the exact census and certificate machinery in the milestone's `core/`).
+
+> **Standing kill-sentence.** *If E₈-derived spectra do not split into two φ-scaled families
+> (Block B), and the indefinite golden form adds no separating power at the orbit boundary
+> (Block C), then φ is not structural in this corpus and this milestone dies.* Clause C met,
+> clause B not: wounded, not dead. Block D can neither kill nor rescue it.
+
+**Nearest registrable target:** the Block D registration — the fold *certificate*
+(tr(R·D) = 2/√5 on the Bezout reflection) evaluated on the corpus's own generative operators
+(complete PAC trees, PAC growth trees, M15's unicyclic controls), never on the ADE inputs.
+Drafted, unsealed (`experiments/milestones/milestone18/journals/2026-09-02_blockD_registration_DRAFT.md`);
+opening the gate is a decision, not a computation. P1's registered form is forward-corrected
+there (root-shell radii, not eigenvalue multisets).
+
 ### Milestone R — propagate the energy-scale fix
 
 60/112 across 27 experiments. The decisive result is exp_24: replacing `E_Planck · φ^(−d)`
@@ -158,6 +184,7 @@ Carried honestly. Each is a soft spot in otherwise settled work.
 | M10 | φ^(−1/N) at N = 8 still 3.3% off — finite-size correction underived |
 | M13.5 | Coherence limit is **not** universal (exp_15, 0/4) — geometric, not Fibonacci-arithmetic |
 | M13.5 | PSD degeneracy proven **fundamental** (exp_16, 0/4) — no isomorphism-invariant metric can fix it |
+| M18 | Rigidity unproved (47/47 at n = 20); a third strict species (asymmetric) unidentified; the clean regime's third kernel class; the branch profile's null; the polynomial form of integrality — [`formal/conjectures/m18_open.md`](formal/conjectures/m18_open.md) |
 
 The M13.5 entries are not defects to repair. M15 reclassifies them: class-level content
 passes, representative-level demands fail, and that split *is* the DFT-Hodge conjecture.

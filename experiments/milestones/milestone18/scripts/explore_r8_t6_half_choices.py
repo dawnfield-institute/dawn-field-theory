@@ -3,9 +3,10 @@
 tr(RD) and tr(PB) for EVERY choice of golden half (one factor from each sigma-pair). Tells whether a
 T6 failure is the seal's under-specification (some half gives 0) or genuine (no half gives 0)."""
 import sys, json, itertools, sympy as sp
-sys.argv=['x','14']
-src=open(__file__.replace('explore_r8_t6_half_choices.py','exp_12_part2_fold_laws.py')).read().split('res={"registration"')[0]
-exec(src)
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
+from foldlaws import *   # promoted from exp_12_part2 on 2026-09-02
+census, golden, diag = load_context(14)
 out=[]
 for r in golden:
     n=r["n"]; e=[tuple(x) for x in r["edges"]]; p=charpoly(n,e)

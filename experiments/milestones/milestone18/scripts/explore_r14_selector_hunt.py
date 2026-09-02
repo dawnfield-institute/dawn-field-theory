@@ -8,9 +8,10 @@ folds at n<=14, compute structural features of the core and correlate with r13's
  F5 per-eigenvalue kernel dimensions
 Also records the actual tr(R_off D) when the trace law fails (deviation spectrum)."""
 import sys, json, sympy as sp, networkx as nx
-sys.argv=['x','14']
-src=open(__file__.replace('explore_r14_selector_hunt.py','exp_12_part2_fold_laws.py')).read().split('res={"registration"')[0]
-exec(src)
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
+from foldlaws import *   # promoted from exp_12_part2 on 2026-09-02
+census, golden, diag = load_context(14)
 rs=lambda x: sp.radsimp(sp.expand(x))
 r13={ (r["n"],str(r["edges"])): r for r in json.load(open(RES/'explore_r13_offcore_universal.json'))["rows"] }
 out=[]

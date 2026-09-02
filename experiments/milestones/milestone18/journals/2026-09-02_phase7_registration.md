@@ -66,3 +66,7 @@ any, into a degree artifact until a sharper null is registered.
 ## Compute
 
 21 + ~110 trees at n ≤ 16, one matrix exponential each: seconds.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Measures a physical reach — heat-kernel dynamics at the reinjection port — feeds `theory/` via THEORY_MAP and ROADMAP.

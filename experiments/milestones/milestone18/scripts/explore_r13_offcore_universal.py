@@ -10,9 +10,10 @@ quadratic rational cores). For every Galois fold at n <= 14, checks:
  (iv) sign-split structure: copy connected, cut 2, conjugate two components = diagram halves
  (v) off->off leakage block ||sigma(P_off) B P_off||^2 = 2/5"""
 import sys, json, sympy as sp, networkx as nx
-sys.argv=['x','14']
-src=open(__file__.replace('explore_r13_offcore_universal.py','exp_12_part2_fold_laws.py')).read().split('res={"registration"')[0]
-exec(src)
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
+from foldlaws import *   # promoted from exp_12_part2 on 2026-09-02
+census, golden, diag = load_context(14)
 rs=lambda x: sp.radsimp(sp.expand(x))
 diag2={}
 for k in range(2,8):

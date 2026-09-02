@@ -40,8 +40,7 @@ Either failure alone wounds it; both together kill it.
 **Kill-sentence status (honest accounting):** clause B (no golden split) is NOT met — the
 split is a theorem in the Cartan channel; clause C (no separating power at the orbit
 boundary) IS met — exp_06 T4 proved σ-ledger and orbit quotient irreconcilable at D₆'s
-core. One clause wounds, both kill: **wounded, not dead.** Phase 2 registration (draft,
-unsealed): `journals/2026-09-01_phase2_registration_DRAFT.md`.
+core. One clause wounds, both kill: **wounded, not dead.** Phase 2 registration: `journals/2026-09-01_phase2_registration.md` (sealed 06073227).
 
 | Block | Question | Experiments | Score | State |
 |---|---|---|---|---|
@@ -49,13 +48,37 @@ unsealed): `journals/2026-09-01_phase2_registration_DRAFT.md`.
 | **B — Dynamical self-duality** | Does dynamics see the mirror — and now, the branch? | exp_04 – exp_05, exp_16 – exp_18 | **6/11** | exp_04 FAIL (74bcd0df); exp_05 3/4: rational dynamics is σ-blind (T1 theorem). **Phase 7 / exp_16 1/2** (`journals/2026-09-02_exp16_outcomes.md`): the defect edge of a strict fold is σ-FIXED (√5·R = S + 2Π is an integer matrix), so the σ-blindness theorem no longer forbids the question; T1 (defect distinguished in degree-matched classes under the heat kernel) FAIL — underpowered by design (15/21 folds uninformative; lesson 7), residual direction all-maxima; T2 null calibration PASS. **Phase 7b / exp_17 1/2** (`journals/2026-09-02_exp17_outcomes.md`): Π-asymmetry decays from the defect on 18/18 folds and peaks adjacent to it on 21/21, but at n ≤ 16 the permutation null cannot separate branch from geometry (T1 fail) and the d ≤ 1 null is saturated (T2 pass by one; lesson 8). **Phase 7c / exp_18 1/2 at n = 20** (`journals/2026-09-02_exp18_outcomes.md`): **T1 PASS 47/47** — the sheet-asymmetry peak sits AT the branch on every fold (null expectation 15, quantile 22; β-robust; copy sheet > conjugate 47/47): the first powered dynamical fingerprint of the reinjection port. T2 (profile organized uniquely by the branch vs its neighbours) FAIL as sealed — a null-resolution limit |
 | **C — The σ-Ledger** | Conjugation = complementation; the knife-edge under duality | exp_06 – exp_07 | **6/8** | exp_06 2/4 (T3/T4 fail AT the mod-5 ramification locus, T4 by impossibility proof); exp_07 **4/4** (5\|n and 5\|(n+1) enumeration predicted and confirmed) |
 | **C-ext — The census and the fold laws** | Which trees are completely σ-paired, and what laws do the folds obey? | exp_08, exp_11–exp_15 | **21/29** | exp_08 1/2; exp_11 **4/4** at n = 14 (3939176d); exp_12 **3/6** (4ab2ff35; T3/T5/T6 fail as sealed, each replaced — see journal); exp_13 **5/7** at n = 16 (`journals/2026-09-01_exp13_outcomes.md`): the invariant held on **13/13 fresh strict folds**; T2 fail = the first sector-strict tree (det −775, strict but not a one-5 fold — the r9 mixed mechanism producing strictness); T4 fail = cospectral 5-bond placements (the fold's vertex structure selects the placement; halves law holds under some-partner semantics). Core anatomy (r11–r14): fold laws are off-core laws; modulated vertex law √5·R_off,vv = ±(1−Qc_vv). exp_14 **3/4** (`journals/2026-09-01_exp14_outcomes.md`): off-core instrument reaches all 80 core folds at 16 (0 declared vs 76); Lemma-1 identity proved and checked 80/80; selector sufficiency + layer order confirmed out of sample; the exact-iff clause failed — a third kernel class ((t−2)⁴, masses {2/5, 3/5}) is clean, characterization open. r15 (exploration, 20/20 all strict folds ever found): √5·R = S + 2Π — a signed perfect matching; the Π-quotient IS the one-5 diagram with the realized 5-bond as the unique multiplicity-3 edge; the entire strict-law package reduces to this one conjecture. **Construction theorem** (r17): parents are branched double covers (γ² + γ − 1 = 0 decoupling) — one-5 existence PROVED, every strict law a theorem on constructions. **Phase 6 / exp_15 5/6 at n = 20** (`journals/2026-09-02_exp15_outcomes.md`): 823,065 trees, 66 strict on 64 polynomials; T1 zero orphans at k = 10; **rigidity holds 47/47** (T3–T6 all pass; 6 degenerate partners declared); T2 FAIL = a third strict species — four ASYMMETRIC strict trees (trivial automorphism group, no one-5 partner) |
-| **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_09 | 0/4 | **gated on B and C** (B closed 3/5 with its scored prediction failing on a self-forbidden clause — gate not yet satisfied) |
+| **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_09 | 0/4 | **gated on B and C** — criterion met by exp_18 T1 (gate status below); registration **drafted, unsealed** (`journals/2026-09-02_blockD_registration_DRAFT.md`; inventory `journals/2026-09-02_blockD_operator_inventory.md`); opening is a decision, recorded in the sealing commit |
 | **E — Re-derivations** | φ⁻⁴ (exp_37) and z_c = φ⁵ as units, not magnitudes | exp_10 | **4/4** | exact (974380c6) |
 
 Block A is front-loaded per M17's rule: no DFT system is measured until the instruments
 verify against answers known in advance. Block D is gated on B **and** C so the milestone
 cannot drift into compendium mode — the failure shape it is most exposed to (see Honest
-risks).
+risks). **Gate status (2026-09-02):** exp_18 T1 passed 47/47 against a null computed before the
+run — the Honest-risks criterion ("a result that could have failed and didn't") is met by
+Block B; opening Block D is a decision recorded in the commit that seals its registration, not
+a consequence of this line.
+
+**Theorems filed: 7 · open conjectures: 8** — in [`formal/theorems/`](../../../formal/theorems/README.md)
+and [`formal/conjectures/m18_open.md`](../../../formal/conjectures/m18_open.md). The scorecard
+above counts sealed tests; this line counts proofs. Neither is the other.
+
+## Layers
+
+The milestone's work is kept in three layers, each feeding a different part of the repository
+(STANDARDS §2.7 item 7, on `docs/frame-control-standard`). Every sealed registration carries a
+forward note naming its layer.
+
+- **Mathematics → `formal/`.** Phases 3–6 (exp_11–exp_15): the one-5 conjecture, the fold
+  laws, the off-core instrument, the matching structure. Closed to one conjecture (rigidity);
+  the theorems are indexed, the conjectures filed.
+- **Physics → `theory/`** (via THEORY_MAP and ROADMAP). Blocks B and D; Phases 7–7c
+  (exp_16–exp_18): dynamics at the branch. Block D's registration is drafted and unsealed
+  (`journals/2026-09-02_blockD_registration_DRAFT.md`, with `journals/2026-09-02_blockD_operator_inventory.md`).
+- **Instruments → `core/`.** Block A (the foldings), the census and its known-answer gates
+  (exp_08, exp_11b), the fold-law machinery, the matching and sector extraction — as importable
+  modules (`core/ledger.py`, `folding.py`, `foldlaws.py`, `census.py`, `matching.py`,
+  `sectors.py`), never `exec`'d.
 
 ## Predictions registry
 
@@ -71,11 +94,21 @@ Registered as invariants, never coordinates (STANDARDS §2.7.2):
 3. **P3 (Block E).** exp_37's surviving 1/φ⁴ is re-derivable as a unit norm statement
    (N(φ⁻⁴) = +1) rather than a fitted magnitude.
 
+**Forward note on P1 (2026-09-02; the registered text above is untouched).** P1 conflates two
+scopes: the φ ratio that exp_02 verified is between the *root-shell radii* of the two 600-cells,
+not between elements of an eigenvalue multiset; and the Milestone-R spectral line it names
+stores Laplacian spectra, which over ℚ(√5) are golden-free for A₄, D₆ and E₈ (the golden content
+lives in the Cartan channel — the exp_07 knife-edge). On eigenvalue multisets the true statement
+is the Galois pairing S′ = σ(S) — the Ledger theorem, Block C. P1's ratio form is therefore a
+frame artifact inside a registration (STANDARDS §2.9) and is retired as such; its successor
+prediction is Block D's fold certificate on the corpus's own operators
+(`journals/2026-09-02_blockD_registration_DRAFT.md`). Recorded in `theory/corrections.md` §6.
+
 ## What is postdictive (declared)
 
 The founding observation — that the foldings retro-explain the φ casualty list (M-R exp_02,
-exp_05, exp_06; confluent_identity exp_38; sec_prime_manifold's 1/φ, killed 2026-08-31 as a
-frame artifact, STANDARDS §2.9) — is **postdictive** and is used as a bearing, not as
+exp_05, exp_06; confluent_identity exp_38; sec_prime_manifold's 1/φ, whose headline reading is
+unsupported once the frames are matched — a frame artifact, STANDARDS §2.9) — is **postdictive** and is used as a bearing, not as
 evidence. The falsifiable content of this milestone is P1–P3.
 
 ## Honest risks
@@ -117,6 +150,11 @@ returned to him.
   folding ⇒ conjecture extended; unreachable ⇒ a hole exactly where φ lives.
 - Milestone-R spectral line (exp_20–exp_27) — Block B's data source.
 - STANDARDS §2.9 (frame artifacts) — every block declares its frame at pre-registration.
+
+## FDO Links
+
+- Lore typed node `milestone18-noncrystallographic-completion` (`meta.yaml: fdo`).
+- Related: `milestone15-representative-problem` (Block D is its direct test); the Milestone-R node.
 
 ## Forward path
 

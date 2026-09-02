@@ -32,8 +32,7 @@ def diagrams(k):
             q=sp.expand(M.charpoly(t).as_expr()); tgt=sp.expand(q*q.subs(s5,-s5))
             out.setdefault(tgt,{"q":q,"edges":E,"pos":pos})
     return out
-src12=open(str(Path(__file__).parent/"exp_12_part2_fold_laws.py")).read()
-exec(src12[src12.index("def rational_core_factors"):src12.index("def sig(")])   # rational_core_factors, conic_half, projector_for, invariants
+from foldlaws import rational_core_factors, conic_half, projector_for, invariants   # promoted to core/ 2026-09-02
 def orbits(G):
     def canon(root):
         def rec(v,parent): return "("+"".join(sorted(rec(w,v) for w in G[v] if w!=parent))+")"

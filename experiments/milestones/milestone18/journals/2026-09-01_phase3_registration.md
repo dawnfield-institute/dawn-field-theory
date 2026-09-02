@@ -55,3 +55,7 @@ strict trees are even-k folds). T1/T2 have no theorem forcing them; they are the
 Kill relevance: none for the milestone kill sentence (Block C territory). A T1/T2 failure
 retires the one-5 conjecture at the size it fails; the six verified fold families and the
 resonance law stand (kill scope).
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Tests conjectures (the one-5 prediction; the fold-invariant laws) — feeds `formal/`. Proved parts are indexed in `formal/theorems/README.md`.

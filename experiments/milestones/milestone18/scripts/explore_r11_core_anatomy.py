@@ -7,9 +7,10 @@
     with the 28/45 excess of dets -44/-284 confined to the core blocks?
 Also records tr(R_off D) and the R_off diagonal values."""
 import sys, json, sympy as sp, networkx as nx
-sys.argv=['x','14']
-src=open(__file__.replace('explore_r11_core_anatomy.py','exp_12_part2_fold_laws.py')).read().split('res={"registration"')[0]
-exec(src)
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
+from foldlaws import *   # promoted from exp_12_part2 on 2026-09-02
+census, golden, diag = load_context(14)
 rs=lambda x: sp.radsimp(sp.expand(x))
 diag2={}
 for k in range(2,8):

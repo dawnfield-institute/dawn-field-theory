@@ -51,6 +51,7 @@ dawn-field-theory/
     20260827_143000_m17_exp02_correlation_length.md
     20260827_161500_kill_sentences_bind_theses_not_instruments.md
     20260827_200000_mr_energy_scale_and_the_depth_slot.md
+    20260902_101500_m18_formal_layer.md
     README.md
   .claude/
     skills/
@@ -2542,6 +2543,178 @@ dawn-field-theory/
         scripts/
           exp_01_calibrate_on_percolation.py
           exp_02_correlation_length.py
+      milestone18/
+        .gitignore
+        README.md
+        meta.yaml
+        core/
+          census.py
+          folding.py
+          foldlaws.py
+          ledger.py
+          matching.py
+          sectors.py
+        journals/
+          2026-08-31_blockA_blockB_preregistration.md
+          2026-08-31_blockA_outcomes.md
+          2026-08-31_blockBC_registration_v2.md
+          2026-08-31_exp04_outcomes_FAIL.md
+          2026-08-31_exp06_outcomes.md
+          2026-08-31_exp07_outcomes.md
+          2026-08-31_founding.md
+          2026-08-31_night_exploration_sigma_ledger.md
+          2026-08-31_the_mirror.md
+          2026-09-01_exp05_outcomes.md
+          2026-09-01_exp08_census_outcomes.md
+          2026-09-01_exp10_outcomes.md
+          2026-09-01_exp11_outcomes.md
+          2026-09-01_exp12_outcomes.md
+          2026-09-01_exp13_outcomes.md
+          2026-09-01_exp14_outcomes.md
+          2026-09-01_panel_g_golden_trees.md
+          2026-09-01_panel_l_loose_ends.md
+          2026-09-01_phase2_registration.md
+          2026-09-01_phase3_registration.md
+          2026-09-01_phase4_registration.md
+          2026-09-01_phase5_registration.md
+          2026-09-01_provenance_and_proof_notes.md
+          2026-09-01_r11_core_anatomy.md
+          2026-09-01_r15_matching_structure.md
+          2026-09-02_blockD_operator_inventory.md
+          2026-09-02_blockD_registration_DRAFT.md
+          2026-09-02_exp15_outcomes.md
+          2026-09-02_exp16_outcomes.md
+          2026-09-02_exp17_outcomes.md
+          2026-09-02_exp18_outcomes.md
+          2026-09-02_phase6_registration.md
+          2026-09-02_phase7_registration.md
+          2026-09-02_phase7b_registration.md
+          2026-09-02_phase7c_registration.md
+          2026-09-02_r17_construction_theorem.md
+        results/
+          exp_01_foldings_20260831.json
+          exp_02_projection_20260831.json
+          exp_03_controls_20260831.json
+          exp_04_calibration_20260831.json
+          exp_04b_null_20260831.json
+          exp_04c_golden_20260831.json
+          exp_05_galois_20260901.json
+          exp_06_sigma_ledger_20260831.json
+          exp_07_knife_edge_20260831.json
+          exp_08_census_20260901.json
+          exp_08_census_log.txt
+          exp_10_block_e_20260901.json
+          exp_11_log.txt
+          exp_11_one5_n14.json
+          exp_11b_core_trees_n14.json
+          exp_11b_log.txt
+          exp_12_part1_resonance.json
+          exp_12_part2_n12.json
+          exp_12_part2_n14.json
+          exp_12_part2_n12_20260902_repro.json
+          exp_12_part2_n14_log.txt
+          exp_12_repro_log.txt
+          exp_13_log.txt
+          exp_13_n16.json
+          exp_14_log.txt
+          exp_14_n16.json
+          exp_15_log.txt
+          exp_15_n20.json
+          exp_16_defect_dynamics.json
+          exp_17_pi_asymmetry.json
+          exp_18_branch_fingerprint.json
+          exp_18_null_numbers.json
+          explore_g1_census_20260901.json
+          explore_g1_log.txt
+          explore_g3g4g6_20260901.json
+          explore_g_fold_classification_20260901.json
+          explore_l1b_n14_log.txt
+          explore_l1b_quotient_folds_n14.json
+          explore_r10_b_polynomial.json
+          explore_r10_log.txt
+          explore_r11_core_anatomy.json
+          explore_r11_log.txt
+          explore_r12_log.txt
+          explore_r12_modulated_vertex_law.json
+          explore_r13_log.txt
+          explore_r13_offcore_universal.json
+          explore_r14_log.txt
+          explore_r14_selector_hunt.json
+          explore_r15_matching_n12.json
+          explore_r15_matching_n16.json
+          explore_r15_n16_log.txt
+          explore_r15c_log.txt
+          explore_r16_n14_log.txt
+          explore_r16b_n16_log.txt
+          explore_r16b_strict_n16.json
+          explore_r17_log.txt
+          explore_r18_log.txt
+          explore_r19_log.txt
+          explore_r19_n20_defects.json
+          explore_r20_branch_magnitude.json
+          explore_r20_log.txt
+          explore_r7_two_component_corollary.json
+          explore_r7b_core_fold_structure.json
+          explore_r7b_log.txt
+          explore_r8_log.txt
+          explore_r8_t6_half_choices_n14.json
+          explore_r9_log.txt
+          explore_r9_mixed_trees_n14.json
+        scripts/
+          exp_01_foldings_exist.py
+          exp_02_projection_carries_phi.py
+          exp_03_negative_controls.py
+          exp_04_calibration_controls.py
+          exp_04b_null_distribution.py
+          exp_04c_golden_run.py
+          exp_05_galois_blindness.py
+          exp_06_sigma_ledger.py
+          exp_07_knife_edge.py
+          exp_08_census.py
+          exp_10_block_e_units.py
+          exp_11_one5_n14.py
+          exp_11b_core_trees_n14.py
+          exp_12_part1_resonance.py
+          exp_12_part2_fold_laws.py
+          exp_13_phase4_n16.py
+          exp_14_phase5_offcore_n16.py
+          exp_15_phase6_n20.py
+          exp_16_phase7_defect_dynamics.py
+          exp_17_phase7b_pi_asymmetry.py
+          exp_18_phase7c_branch_fingerprint.py
+          explore_e1_flow.py
+          explore_e2_klein.py
+          explore_g1_census_exhaustive.py
+          explore_g3_g4_g6_geometry.py
+          explore_l1_accidentals.py
+          explore_l1b_quotient_folds.py
+          explore_l1b_quotient_folds_n14.py
+          explore_l2_leakage_coefficients.py
+          explore_l4_mfpt_loose_ends.py
+          explore_r10_b_polynomial.py
+          explore_r11_core_anatomy.py
+          explore_r12_modulated_vertex_law.py
+          explore_r13_offcore_universal.py
+          explore_r14_selector_hunt.py
+          explore_r15_matching_structure.py
+          explore_r15b_placement_check.py
+          explore_r15c_defect_side.py
+          explore_r16_fast_grader.py
+          explore_r16b_strict_hunt.py
+          explore_r17_construction_theorem.py
+          explore_r17b_rigidity_retrocheck.py
+          explore_r18_n20_anatomy.py
+          explore_r19_n20_defects.py
+          explore_r1_complement.py
+          explore_r20_branch_magnitude.py
+          explore_r2_r3.py
+          explore_r4_generalize.py
+          explore_r5_r6.py
+          explore_r6b.py
+          explore_r7_two_component_corollary.py
+          explore_r7b_core_fold_structure.py
+          explore_r8_t6_half_choices.py
+          explore_r9_mixed_trees.py
       milestone2/
         README.md
         meta.yaml
@@ -4987,6 +5160,7 @@ dawn-field-theory/
     README.md
     conjectures/
       README.md
+      m18_open.md
       med-formal-papers/
         README.md
         med_mathematical_foundations.md

@@ -74,3 +74,7 @@ coefficient of the departure.
 
 Ξ-fork forward-correction in two FDOs; sec_prime_manifold and M-R exp_20/21 annotations;
 the reality-engine boundary arm (Peter's lane).
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** exp_05 tests a conjecture about dynamics (σ-blindness, proved as a theorem in outcome); Block E is a re-derivation (feeds `formal/derivations`-grade content indexed in `formal/theorems/`); the census is an instrument validation and a conjecture test (`core/`, `formal/`).

@@ -4,9 +4,10 @@
 tr(RD)=2/sqrt5 held in exp_12 T5. Uses exp_12's projector. Reports |R_vv| values, the copy/conjugate
 vertex split by sign of R_vv, components, cut, and the diagram's halves at its 5-bond."""
 import sys, json, sympy as sp, networkx as nx
-sys.argv=['x','14']
-src=open(__file__.replace('explore_r7b_core_fold_structure.py','exp_12_part2_fold_laws.py')).read().split('res={"registration"')[0]
-exec(src)
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
+from foldlaws import *   # promoted from exp_12_part2 on 2026-09-02
+census, golden, diag = load_context(14)
 rs=lambda x: sp.radsimp(sp.expand(x))
 # rebuild diag with edge/pos info for the 5-bond halves
 diag2={}

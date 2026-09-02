@@ -2,7 +2,7 @@
 Claim to test: sigma(P) = I - P, where P projects onto the H4 subspace of E8
 and sigma is the Q(sqrt5) conjugation applied entrywise."""
 import sys, numpy as np, sympy as sp
-sys.path.insert(0,'/Users/petergroom/repos/core_workspace/worktrees/dft-m18-founding/experiments/milestones/milestone18/core')
+from pathlib import Path; sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
 from folding import e8_roots, E8_SIMPLE, coxeter_element, eigenplane_basis, PHI
 
 W8 = coxeter_element(E8_SIMPLE)

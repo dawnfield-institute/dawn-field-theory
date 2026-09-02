@@ -2,7 +2,7 @@
 """Panel L2 (EXPLORING): exp_05's coefficient ||(I-P)BP||^2 across ALL strict folds n<=12.
 A4 and E8 both gave 2/5. Is it universal, or does it track something?"""
 import sys, json, sympy as sp, networkx as nx
-sys.path.insert(0,'/Users/petergroom/repos/core_workspace/worktrees/dft-m18-founding/experiments/milestones/milestone18/core')
+from pathlib import Path; sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
 from ledger import bezout_proj, simp, cart
 t=sp.Symbol('t'); s5=sp.sqrt(5); phi=(1+s5)/2
 d=json.load(open('/Users/petergroom/repos/core_workspace/worktrees/dft-m18-founding/experiments/milestones/milestone18/results/explore_g1_census_20260901.json'))

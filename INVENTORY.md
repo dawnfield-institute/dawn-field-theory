@@ -9,24 +9,25 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 | Layer | Holds | Files |
 |---|---|---|
 | [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 16 |
-| [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 21 |
-| [`experiments/`](experiments/) | what was measured | 2675 |
+| [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 22 |
+| [`experiments/`](experiments/) | what was measured | 2842 |
 | [`papers/`](papers/) | what was published | 1509 |
 | [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 12 |
 
-Tracked files: **9422**
+Tracked files: **9591**
 
-**77 experiments** — 52 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
+**78 experiments** — 53 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 
 ## On deck
 
-18 experiments being worked now.
+19 experiments being worked now.
 
 | Experiment | Kind | Title |
 |---|---|---|
 | [`milestone15`](experiments/milestones/milestone15/) | milestones | Milestone 15: The Representative Problem (DFT-Hodge Boundary) |
 | [`milestone16`](experiments/milestones/milestone16/) | milestones | Milestone 16: Relational Locality — How Neighbours Come to Cohere |
+| [`milestone18`](experiments/milestones/milestone18/) | milestones | Milestone 18: The Non-Crystallographic Completion |
 | [`midnight`](experiments/sidecars/midnight/) | sidecars | Midnight: Observational Frontiers of Dawn Field Theory |
 | [`milestone-r`](experiments/sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance |
 | [`ade_cascade`](experiments/studies/ade_cascade/) | studies | ADE Cascade: Re-founding Turbulence on Milestone Machinery |

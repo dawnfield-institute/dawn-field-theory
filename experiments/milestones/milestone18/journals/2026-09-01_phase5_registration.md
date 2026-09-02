@@ -61,3 +61,7 @@ claim. The strict-fold laws (13/13 at 16) are untouched by any outcome here.
 ## Compute estimate
 
 80 folds at 16×16, no conic search: comparable to exp_13's stage 2, ~30–60 min.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Validates an instrument (the off-core reflection) and tests the selector conjecture — feeds `core/` and `formal/`.

@@ -97,3 +97,7 @@ point, measuring the existing web metrics (ξ floor, void fraction, density CV).
 M16's clumps-without-web may be structural if the engine's operators sit off the golden-
 bearing boundary condition. This milestone only records the proposal; the engine branch
 belongs to Peter.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Block B measures a physical reach (`theory/`); Block C tests a conjecture — the σ-ledger and its knife-edge — whose proved parts are indexed in `formal/theorems/` and whose open parts are in `formal/conjectures/m18_open.md`.

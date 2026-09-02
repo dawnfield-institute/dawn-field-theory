@@ -51,3 +51,7 @@ are exactly the 3 non-defect pairs with the defect (2,3) recovered.
 Kill scope: a T1/T2 failure kills "the heat-kernel asymmetry between sheets is organized around
 the branch" at n ≤ 16, β = 1; the construction theorem and matching laws are untouched. A pass
 is a *dynamical* fingerprint of the port — the first, if it comes.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Measures a physical reach (the Π-asymmetry profile) — feeds `theory/`.

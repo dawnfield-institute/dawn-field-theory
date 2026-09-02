@@ -41,3 +41,7 @@ Kill scope: T1/T2 failures kill "the heat-kernel sheet asymmetry is organized ar
 at n = 20, β = 1; the construction theorem and the matching laws are untouched. A pass is the
 first dynamical fingerprint of the reinjection port under a null that respects both geometry and
 the construction's symmetry.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Measures a physical reach (the branch fingerprint at n = 20) — feeds `theory/`; its one proved corollary (the cut-lift identity) is indexed in `formal/theorems/README.md`.

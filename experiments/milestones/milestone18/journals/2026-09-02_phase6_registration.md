@@ -63,3 +63,7 @@ corresponding clause at n = 20 and leave the n ≤ 16 record standing.
 Charpoly + norm screen: ~823k trees × ~4 ms ≈ 1 h. Exact factorization on survivors: unknown
 until the screen's selectivity at 20 is seen; the n = 16 validation measures it. Partner map at
 k = 10: ~10³ polynomials. Bezout + matching checks per strict fold at 20×20: minutes each.
+
+---
+
+**Layer (forward note, 2026-09-02, per the re-separation):** Tests the matching-structure conjecture at n = 20 (rigidity) — feeds `formal/`; the construction theorem it confirms is indexed in `formal/theorems/README.md`.
