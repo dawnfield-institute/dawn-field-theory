@@ -7,7 +7,7 @@ in opposite directions. 18 informative folds (as declared pre-seal), β = 1 scor
 |---|---|---|
 | T1 profile: per-fold permutation p ≤ 0.10 | **FAIL** | 0/18 (quantile 5) |
 | T2 peak pair at distance ≤ 1 from the defect | **PASS** | 18/18 (Poisson-binomial quantile 17) |
-| T3 recorded | — | β-robustness: identical counts at β = 1/2, 2 |
+| T3 recorded | — | the copy sheet (s = +1) carries MORE bond occupation than its conjugate on 18/18 informative folds; β-robustness: identical counts at β = 1/2, 2 |
 
 ## Reading T1 honestly
 
