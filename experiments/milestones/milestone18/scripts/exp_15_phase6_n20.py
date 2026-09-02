@@ -97,7 +97,19 @@ for e,p in strict:
     qs=[]
     for q,_,_ in plist:
         if not any(sp.expand(q-q2)==0 for q2 in qs): qs.append(q)
-    C=cart(n,e2); P=bezout_proj(C,qs[0])
+    C=cart(n,e2)
+    K=sp.QQ.algebraic_field(s5)
+    q_good=None
+    for qc in qs:
+        sq=sp.expand(qc.subs(s5,-s5))
+        if sp.gcd(sp.Poly(qc,t,domain=K),sp.Poly(sq,t,domain=K)).degree()==0: q_good=qc; break
+    if q_good is None:
+        # degenerate partner: q shares roots with sigma(q) — sealed P undefined; declared not scored
+        ss=sector_strict(e2)
+        T3.append({"edges":e,"degenerate_partner":True,"sector_strict":ss,"ok":None})
+        print(f"degenerate partner (gcd(q,sq)!=1): sector_strict={ss}",flush=True)
+        continue
+    P=bezout_proj(C,q_good)
     ledger=(simp(P*P-P)==sp.zeros(n,n)) and (simp(P+sigma(P)-sp.eye(n))==sp.zeros(n,n)) and P.rank()==10
     R=simp(P-sigma(P)); S5R=simp(s5*R).applyfunc(sp.nsimplify)
     match={}; form=True
@@ -143,7 +155,8 @@ for e,p in strict:
     print(f"strict fold: T3 {T3[-1]['ok']} T4 {T4[-1]['ok'] if T4 else '-'} T5 {T5[-1]['ok'] if T5 else '-'} T6 {T6[-1]['ok']}",flush=True)
 res.update({"T2":T2,"T3":T3,"T4":T4,"T5":T5,"T6":T6})
 res["tests"]={"T1_zero_orphans":len(still_orphan)==0,
- "T2":all(x["ok"] for x in T2),"T3":all(x["ok"] for x in T3),"T4":all(x["ok"] for x in T4),
+ "T2":all(x["ok"] for x in T2),"T3":all(x["ok"] for x in T3 if x["ok"] is not None),"T4":all(x["ok"] for x in T4),
+ "T3_degenerate_declared":sum(1 for x in T3 if x.get("degenerate_partner")),
  "T5":all(x["ok"] for x in T5),"T6":all(x["ok"] for x in T6),
  "strict_trees":len(strict),"strict_polys":len({str(p) for _,p in strict}),
  "vacuous":len(strict)==0}
