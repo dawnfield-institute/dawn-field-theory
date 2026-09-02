@@ -1,0 +1,1638 @@
+{
+ "registration": "phase7",
+ "folds": [
+  {
+   "n": 4,
+   "edges": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 8,
+   "edges": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     7
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 2,
+    "informative": false
+   }
+  },
+  {
+   "n": 8,
+   "edges": [
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     5,
+     6
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 12,
+   "edges": [
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 2,
+    "informative": false
+   }
+  },
+  {
+   "n": 12,
+   "edges": [
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     8,
+     11
+    ],
+    [
+     9,
+     10
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=0.5": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=2.0": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   }
+  },
+  {
+   "n": 12,
+   "edges": [
+    [
+     0,
+     7
+    ],
+    [
+     0,
+     11
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     9,
+     10
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 12,
+   "edges": [
+    [
+     0,
+     7
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     10,
+     11
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 2,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     15
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 6,
+    "informative": true,
+    "distinguished": false,
+    "max": false,
+    "min": false,
+    "tie": false,
+    "rank": 2
+   },
+   "beta=0.5": {
+    "m": 6,
+    "informative": true,
+    "distinguished": false,
+    "max": false,
+    "min": false,
+    "tie": false,
+    "rank": 2
+   },
+   "beta=2.0": {
+    "m": 6,
+    "informative": true,
+    "distinguished": false,
+    "max": false,
+    "min": false,
+    "tie": false,
+    "rank": 2
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=0.5": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=2.0": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     14
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=0.5": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=2.0": {
+    "m": 4,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     14
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 6,
+    "informative": true,
+    "distinguished": false,
+    "max": false,
+    "min": false,
+    "tie": false,
+    "rank": 2
+   },
+   "beta=0.5": {
+    "m": 6,
+    "informative": true,
+    "distinguished": false,
+    "max": false,
+    "min": false,
+    "tie": false,
+    "rank": 2
+   },
+   "beta=2.0": {
+    "m": 6,
+    "informative": true,
+    "distinguished": false,
+    "max": false,
+    "min": false,
+    "tie": false,
+    "rank": 2
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 2,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 2,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 2,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 2,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=0.5": {
+    "m": 1,
+    "informative": false
+   },
+   "beta=2.0": {
+    "m": 1,
+    "informative": false
+   }
+  },
+  {
+   "n": 16,
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "defect": [
+    0,
+    1
+   ],
+   "beta=1.0": {
+    "m": 3,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=0.5": {
+    "m": 3,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   },
+   "beta=2.0": {
+    "m": 3,
+    "informative": true,
+    "distinguished": true,
+    "max": true,
+    "min": false,
+    "tie": false,
+    "rank": 1
+   }
+  }
+ ],
+ "T1": {
+  "count": 4,
+  "informative": 6,
+  "quantile99": 5,
+  "pass": false,
+  "ties": 0
+ },
+ "T2": {
+  "count": 26,
+  "informative": 51,
+  "quantile99": 34,
+  "pass": true
+ },
+ "T4_beta_robustness": {
+  "1.0": 4,
+  "0.5": 4,
+  "2.0": 4
+ }
+}
