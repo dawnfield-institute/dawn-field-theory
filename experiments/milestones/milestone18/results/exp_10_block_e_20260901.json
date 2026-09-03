@@ -1,0 +1,28 @@
+{
+ "experiment_id": "exp_10_block_e_units",
+ "tests": {
+  "T1": {
+   "N(phi^-4)": "1",
+   "value": 0.14589803375031546,
+   "pass": true
+  },
+  "T2": {
+   "zc==phi^5": true,
+   "zc==5phi+3": true,
+   "N": "-1",
+   "pass": true
+  },
+  "T3": {
+   "n_range": "1..30",
+   "trace=Lucas, offdiag=Fibonacci, both integers": true,
+   "pass": true
+  },
+  "T4": {
+   "sin2thetaW=F4/F7": "3/13",
+   "rational": true,
+   "alpha_factor F3/(F4*phi*F10) rational?": false,
+   "pass": true
+  }
+ },
+ "score": 4
+}

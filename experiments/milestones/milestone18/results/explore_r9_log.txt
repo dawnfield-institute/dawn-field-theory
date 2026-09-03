@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/petergroom/repos/core_workspace/worktrees/dft-m18-founding/experiments/milestones/milestone18/scripts/explore_r9_mixed_trees.py", line 42, in <module>
+    for lam in sp.Poly(b,t).all_roots() if sp.Poly(b,t).degree()<=2 else []:
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/petergroom/repos/core_workspace/fracton/.venv/lib/python3.12/site-packages/sympy/polys/polytools.py", line 3664, in all_roots
+    roots = sympy.polys.rootoftools.CRootOf.all_roots(f, radicals=radicals)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/petergroom/repos/core_workspace/fracton/.venv/lib/python3.12/site-packages/sympy/polys/rootoftools.py", line 419, in all_roots
+    return cls._get_roots("_all_roots", poly, radicals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/petergroom/repos/core_workspace/fracton/.venv/lib/python3.12/site-packages/sympy/polys/rootoftools.py", line 789, in _get_roots
+    return cls._get_roots_qq(method, poly, radicals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/petergroom/repos/core_workspace/fracton/.venv/lib/python3.12/site-packages/sympy/polys/rootoftools.py", line 796, in _get_roots_qq
+    coeff, poly = cls._preprocess_roots(poly)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/petergroom/repos/core_workspace/fracton/.venv/lib/python3.12/site-packages/sympy/polys/rootoftools.py", line 746, in _preprocess_roots
+    raise NotImplementedError(
+NotImplementedError: sorted roots not supported over EX

@@ -1,0 +1,32 @@
+loaded 22 known strict folds at n<=16
+n=4 isomorphic to construction: True
+n=8 isomorphic to construction: True
+n=8 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: False
+
+RIGIDITY RETRO-CHECK: 21/22 known strict folds are construction parents
+twin-pair members found: 1
+Traceback (most recent call last):
+  File "/Users/petergroom/repos/core_workspace/worktrees/dft-m18-founding/experiments/milestones/milestone18/scripts/explore_r17b_rigidity_retrocheck.py", line 54, in <module>
+    for E,pos,k in partners[p_twin]:
+                   ~~~~~~~~^^^^^^^^
+KeyError: t**16 - 32*t**15 + 465*t**14 - 4060*t**13 + 23747*t**12 - 98184*t**11 + 294987*t**10 - 651420*t**9 + 1055734*t**8 - 1236192*t**7 + 1007229*t**6 - 522460*t**5 + 125709*t**4 + 25560*t**3 - 28110*t**2 + 7800*t - 775
+r17b EXIT 1

@@ -1,0 +1,982 @@
+[
+ {
+  "n": 10,
+  "det": -16,
+  "edges": [
+   [
+    0,
+    6
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    9
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   1,
+   4
+  ],
+  "cut": 2,
+  "halves": [
+   1,
+   4
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 10,
+  "det": -80,
+  "edges": [
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    8
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   2,
+   3
+  ],
+  "cut": 2,
+  "halves": [
+   2,
+   3
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 12,
+  "det": -99,
+  "edges": [
+   [
+    0,
+    7
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   1,
+   5
+  ],
+  "cut": 2,
+  "halves": [
+   1,
+   5
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": -16,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    13
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   1,
+   6
+  ],
+  "cut": 2,
+  "halves": [
+   1,
+   6
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": -44,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    13
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ]
+  ],
+  "Roff_diag_values": [
+   "-2*sqrt(5)/15",
+   "-sqrt(5)/5",
+   "2*sqrt(5)/15",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   1,
+   6
+  ],
+  "cut": 2,
+  "halves": [
+   1,
+   6
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "1/9",
+   "off->core": "1/9",
+   "coreconj->core": "0"
+  },
+  "leak_total": "28/45",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": 16,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    13
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    12
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   1,
+   6
+  ],
+  "cut": 2,
+  "halves": [
+   1,
+   6
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": -80,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    12
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   2,
+   5
+  ],
+  "cut": 2,
+  "halves": [
+   2,
+   5
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": 176,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    9,
+    13
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   1,
+   6
+  ],
+  "cut": 2,
+  "halves": [
+   1,
+   6
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": -284,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    12
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "Roff_diag_values": [
+   "-2*sqrt(5)/15",
+   "-sqrt(5)/5",
+   "2*sqrt(5)/15",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   2,
+   5
+  ],
+  "cut": 2,
+  "halves": [
+   2,
+   5
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "1/9",
+   "off->core": "1/9",
+   "coreconj->core": "0"
+  },
+  "leak_total": "28/45",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": -80,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    12
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    12,
+    13
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   1,
+   6
+  ],
+  "cut": 2,
+  "halves": [
+   1,
+   6
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": -176,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    12
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    11
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   2,
+   5
+  ],
+  "cut": 2,
+  "halves": [
+   2,
+   5
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ },
+ {
+  "n": 14,
+  "det": -464,
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    10
+   ]
+  ],
+  "Roff_diag_values": [
+   "-sqrt(5)/10",
+   "-sqrt(5)/5",
+   "sqrt(5)/10",
+   "sqrt(5)/5"
+  ],
+  "zeros": [],
+  "copy_comps": 1,
+  "conj_sizes": [
+   3,
+   4
+  ],
+  "cut": 2,
+  "halves": [
+   3,
+   4
+  ],
+  "halves_match": true,
+  "trRoffD": "2*sqrt(5)/5",
+  "leak_blocks": {
+   "off->off": "2/5",
+   "coreconj->off": "0",
+   "off->core": "0",
+   "coreconj->core": "0"
+  },
+  "leak_total": "2/5",
+  "sum_check": true
+ }
+]

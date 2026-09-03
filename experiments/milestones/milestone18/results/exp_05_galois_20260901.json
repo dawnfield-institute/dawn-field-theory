@@ -1,0 +1,69 @@
+{
+ "experiment_id": "exp_05_galois_blindness",
+ "registration": "06073227",
+ "tests": {
+  "T1": {
+   "A4": true,
+   "D6": true,
+   "E8": true,
+   "pass": true,
+   "class": "S"
+  },
+  "T2": {
+   "A4": {
+    "||(I-P)BP||^2": "2/5",
+    "nonzero": true,
+    "coef_in_Q(sqrt5)": true,
+    "coef_rational": true,
+    "leak_order_slope": 0.998,
+    "first_order": true
+   },
+   "D6": {
+    "||(I-P)BP||^2": "4/9",
+    "nonzero": true,
+    "coef_in_Q(sqrt5)": true,
+    "coef_rational": true,
+    "leak_order_slope": 1.0,
+    "first_order": true
+   },
+   "E8": {
+    "||(I-P)BP||^2": "2/5",
+    "nonzero": true,
+    "coef_in_Q(sqrt5)": true,
+    "coef_rational": true,
+    "leak_order_slope": 1.0,
+    "first_order": true
+   },
+   "pass": false,
+   "class": "PREDICTION",
+   "note": "physics clauses (first-order, nonzero) hold on all three; the rationality clause FAILS \u2014 and is provably unwinnable: ||(I-P)BP||_F^2 = ||PB(I-P)||_F^2 by transposition, hence sigma-fixed, hence rational (T1). The sealed clause contradicted T1."
+  },
+  "T3": {
+   "A4": {
+    "exact": 0.3509,
+    "monte_carlo": 0.3504,
+    "ok": true
+   },
+   "D6": {
+    "exact": 0.4155,
+    "monte_carlo": 0.415,
+    "ok": true
+   },
+   "E8": {
+    "exact": 0.4361,
+    "monte_carlo": 0.4357,
+    "ok": true
+   },
+   "pass": true,
+   "class": "S"
+  },
+  "T4": {
+   "A4": true,
+   "D6": true,
+   "E8": true,
+   "pass": true,
+   "class": "S"
+  }
+ },
+ "score": 3
+}

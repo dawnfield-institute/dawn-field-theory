@@ -1,0 +1,188 @@
+{
+ "registration": "06073227",
+ "per_n": {
+  "6": {
+   "labeled_trees": 500,
+   "iso_classes_seen": 6,
+   "cartan_hit_classes": 0,
+   "a2_hit_classes": 0,
+   "a2_hits_radius_gt2": 0,
+   "a2_hits_radius_le2": 0,
+   "cartan_hit_examples": [],
+   "a2_hit_examples": [],
+   "seconds": 0.2
+  },
+  "7": {
+   "labeled_trees": 500,
+   "iso_classes_seen": 10,
+   "cartan_hit_classes": 0,
+   "a2_hit_classes": 0,
+   "a2_hits_radius_gt2": 0,
+   "a2_hits_radius_le2": 0,
+   "cartan_hit_examples": [],
+   "a2_hit_examples": [],
+   "seconds": 0.4
+  },
+  "8": {
+   "labeled_trees": 500,
+   "iso_classes_seen": 22,
+   "cartan_hit_classes": 2,
+   "a2_hit_classes": 2,
+   "a2_hits_radius_gt2": 1,
+   "a2_hits_radius_le2": 1,
+   "cartan_hit_examples": [
+    [
+     [
+      0,
+      6
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      7
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      5,
+      7
+     ]
+    ]
+   ],
+   "a2_hit_examples": [
+    {
+     "edges": [
+      [
+       0,
+       6
+      ],
+      [
+       2,
+       1
+      ],
+      [
+       5,
+       3
+      ],
+      [
+       6,
+       1
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       4,
+       7
+      ]
+     ],
+     "radius": 2.095294
+    },
+    {
+     "edges": [
+      [
+       2,
+       4
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       6,
+       1
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       3,
+       0
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       5,
+       7
+      ]
+     ],
+     "radius": 1.989044
+    }
+   ],
+   "seconds": 0.9
+  },
+  "9": {
+   "labeled_trees": 500,
+   "iso_classes_seen": 41,
+   "cartan_hit_classes": 0,
+   "a2_hit_classes": 0,
+   "a2_hits_radius_gt2": 0,
+   "a2_hits_radius_le2": 0,
+   "cartan_hit_examples": [],
+   "a2_hit_examples": [],
+   "seconds": 2.1
+  },
+  "10": {
+   "labeled_trees": 500,
+   "iso_classes_seen": 86,
+   "cartan_hit_classes": 0,
+   "a2_hit_classes": 0,
+   "a2_hits_radius_gt2": 0,
+   "a2_hits_radius_le2": 0,
+   "cartan_hit_examples": [],
+   "a2_hit_examples": [],
+   "seconds": 4.9
+  }
+ }
+}

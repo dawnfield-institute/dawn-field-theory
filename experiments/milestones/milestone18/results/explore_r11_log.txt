@@ -1,0 +1,37 @@
+n=10 det=  -16  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 5v (1 comp) | conj comps [1, 4] | cut 2 | halves [1, 4] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=10 det=  -80  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 5v (1 comp) | conj comps [2, 3] | cut 2 | halves [2, 3] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=12 det=  -99  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 6v (1 comp) | conj comps [1, 5] | cut 2 | halves [1, 5] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=14 det=  -16  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [1, 6] | cut 2 | halves [1, 6] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=14 det=  -44  R_off diag values ['-2*sqrt(5)/15', '-sqrt(5)/5', '2*sqrt(5)/15', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [1, 6] | cut 2 | halves [1, 6] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 1/9, off->core: 1/9, coreconj->core: 0 } total=28/45 sum-check=True
+n=14 det=   16  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [1, 6] | cut 2 | halves [1, 6] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=14 det=  -80  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [2, 5] | cut 2 | halves [2, 5] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=14 det=  176  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [1, 6] | cut 2 | halves [1, 6] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=14 det= -284  R_off diag values ['-2*sqrt(5)/15', '-sqrt(5)/5', '2*sqrt(5)/15', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [2, 5] | cut 2 | halves [2, 5] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 1/9, off->core: 1/9, coreconj->core: 0 } total=28/45 sum-check=True
+n=14 det=  -80  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [1, 6] | cut 2 | halves [1, 6] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=14 det= -176  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [2, 5] | cut 2 | halves [2, 5] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+n=14 det= -464  R_off diag values ['-sqrt(5)/10', '-sqrt(5)/5', 'sqrt(5)/10', 'sqrt(5)/5']  zeros 0 (on core support)
+    sign split: copy 7v (1 comp) | conj comps [3, 4] | cut 2 | halves [3, 4] match=True  tr(R_off D)=2*sqrt(5)/5
+    leak blocks: { off->off: 2/5, coreconj->off: 0, off->core: 0, coreconj->core: 0 } total=2/5 sum-check=True
+DONE

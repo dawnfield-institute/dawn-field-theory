@@ -1,0 +1,31 @@
+loaded 22 known strict folds at n<=16
+n=4 isomorphic to construction: True
+n=8 isomorphic to construction: True
+n=8 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=12 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: True
+n=16 isomorphic to construction: False
+
+RIGIDITY RETRO-CHECK: 21/22 known strict folds are construction parents
+cospectral pairs at n=16: 1
+twin-pair members found: 2
+  twin member matches placement (1, 4) halves [1, 7]
+  twin member matches placement (0, 5) halves [3, 5]
+DONE
+r17b EXIT 0

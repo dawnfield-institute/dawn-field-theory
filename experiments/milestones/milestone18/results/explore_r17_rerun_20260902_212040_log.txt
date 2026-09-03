@@ -1,0 +1,9 @@
+(1) charpoly identity: 117/117 placements, k=2..7 [8s]
+   k=2: sqrt5*R == S + 2*Pi (sheet form) exactly: True
+   k=4: sqrt5*R == S + 2*Pi (sheet form) exactly: True
+   k=4: sqrt5*R == S + 2*Pi (sheet form) exactly: True
+   k=6: sqrt5*R == S + 2*Pi (sheet form) exactly: True
+   k=6: sqrt5*R == S + 2*Pi (sheet form) exactly: True
+(2) sheet form verified on 5/5 strict samples, per k: [2, 4, 6]; degenerate placements passed over while sampling: 66
+DONE
+r17 EXIT 0

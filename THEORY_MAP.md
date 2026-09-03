@@ -135,10 +135,22 @@ what asserts it, what proves it, what measured it, where it was published.
 | Coherence limit is universal | **falsified** | — | [M13.5 exp_15](experiments/milestones/milestone13/) (0/4) | — |
 | Holonomy is dynamically active | **open** | — | [M15 Phase 2](experiments/milestones/milestone15/) | — |
 | SEC <-> Navier-Stokes correspondence | **conjecture** | [conjectures](formal/conjectures/README.md) | [ade_cascade](experiments/studies/ade_cascade/) | — |
+| phi enters as a projection, not a magnitude (M18 thesis) | **open** | — | [M18 Blocks A/C](experiments/milestones/milestone18/) | — |
+| **sigma-ledger: conjugation = complementation; charpoly = q·sigma(q) on the one-5 family** | **proven** | [theorems](formal/theorems/README.md#the-σ-ledger-conjugation-is-complementation) | [M18 exp_06/07/12](experiments/milestones/milestone18/) | — |
+| **Every one-5 Coxeter diagram has a tree parent: the branched double cover** | **proven** | [theorems](formal/theorems/README.md#the-construction-theorem-parents-are-branched-double-covers) | [M18 exp_11/13/15](experiments/milestones/milestone18/) (zero orphans, k ≤ 10) | — |
+| **Matching form sqrt5·R = S + 2Pi and the strict-fold laws on constructions** | **proven** | [theorems](formal/theorems/README.md#the-matching-form-and-every-strict-fold-law-on-construction-parents) | [M18 exp_12/13/15](experiments/milestones/milestone18/) (7/7, 13/13, 47/47) | — |
+| **Denominator bound: den(5·b) divides 2^deg(q1)·Res(q0, q1) for the reflection polynomial** | **proven** | [theorems](formal/theorems/README.md#the-denominator-bound-on-the-reflection-polynomial) | [M18 r21b](experiments/milestones/milestone18/) (208/208 halves) | — |
+| Polynomial integrality 5·b(t) ∈ ℤ[t] unconditionally | **falsified** (2026-09-02) | — | [M18 r21](experiments/milestones/milestone18/) (three construction parents at n = 20, den 3; the matrix form stands) | — |
+| Every strict Galois fold is a construction parent (rigidity) | **conjecture** | [conjectures](formal/conjectures/m18_open.md) | [M18 exp_15](experiments/milestones/milestone18/) (47/47 at n = 20) | — |
+| Heat-kernel sheet asymmetry peaks at the fold's branch | settled | — | [M18 exp_18](experiments/milestones/milestone18/) (47/47, sealed null) | — |
+| The fold is physically reached by the corpus's own operators (Block D) | **open** | — | [M18 Block D](experiments/milestones/milestone18/) (registration drafted, gated) | — |
 
 A dash under *Proved* means the result is measured, not derived — the distinction
 [`formal/`](formal/README.md) exists to keep. **Open** carries a standing kill-sentence:
-*if holonomy is dynamically inert, it is mathematics, not physics.*
+*if holonomy is dynamically inert, it is mathematics, not physics.* M18's open rows carry
+theirs: *if E₈-derived spectra do not split into two φ-scaled families and the golden form adds
+no separating power at the orbit boundary, φ is not structural in this corpus* — status
+wounded, not dead (clause C met, clause B not).
 
 ---
 
@@ -166,6 +178,9 @@ multiples of four.
 | **M13 + 13.5** [Identity as complement](experiments/milestones/milestone13/) | Identity *is* complement; relativity as complement-transformation | **53/68** | Definitional parallax; proper time = dt/cosh(eta); PSD degeneracy proven fundamental |
 | **M14** [Quantum mechanics](experiments/milestones/milestone14/) | QM as complement-indeterminacy on the orbit quotient | **40/44** | Born rule from orbit measure; D_4 the only ADE type with genuine uncertainty |
 | **M15** [The representative problem](experiments/milestones/milestone15/) | The framework computes cohomology; observers supply gauge | Phase 1 closed | C_6 = -I proven; connection generator = box momentum operator |
+| **M16** [Relational locality](experiments/milestones/milestone16/) | How neighbours come to cohere | active (re-founded 2026-08-14) | The engine's large-scale component is real (coherent-power excess +12.5 sigma under PAC balance) and has no web geometry; mechanism re-founded |
+| **M17** [Criticality](experiments/milestones/milestone17/) | The corpus's limits are critical points where identity changes scale | 6/9 (Block A) | Instrumentation front-loaded; exp_03 open; Blocks B-E unstarted |
+| **M18** [Non-crystallographic completion](experiments/milestones/milestone18/) | phi enters as a projection (A4->H2, D6->H3, E8->H4), not a magnitude | **49/64** | Construction theorem (parents are branched double covers); rigidity 47/47 at n = 20; the fold's branch is dynamically visible (47/47); seven theorems filed |
 
 ### Sidecars
 
@@ -293,4 +308,4 @@ Each module imports its predecessor. The chain ensures consistency — M11 resul
 
 ---
 
-*This map covers 75 experiments (724 numbered scripts) across 15 milestones plus sidecars, and 2 spikes. The authoritative per-experiment list is [EXPERIMENTS.md](experiments/EXPERIMENTS.md). Last updated: August 2026.*
+*This map covers the experiments across 18 milestones plus sidecars and spikes; the authoritative per-experiment list and count is [EXPERIMENTS.md](experiments/EXPERIMENTS.md) (generated). Last updated: September 2026.*

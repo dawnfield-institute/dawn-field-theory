@@ -1,0 +1,58 @@
+{
+ "experiment_id": "exp_06_sigma_ledger",
+ "registration": "74bcd0df",
+ "tests": {
+  "T1": {
+   "A4": true,
+   "E8": true,
+   "D6_gram": "a=3, b=2, c=3",
+   "D6_core_condition": "3*N(tau) + 2*Tr(tau) + 3 = 0 (conic family; direction = gauge)",
+   "D6_core_solutions_tau_norm_golden": [
+    [
+     "6 - 3*sqrt(5)",
+     "-9",
+     "True"
+    ],
+    [
+     "1/6 - sqrt(5)/2",
+     "-11/9",
+     "True"
+    ],
+    [
+     "-sqrt(5)/3 - 2/3",
+     "-1/9",
+     "True"
+    ]
+   ],
+   "D6": true,
+   "D6_tau_used": "6 - 3*sqrt(5)",
+   "pass": true
+  },
+  "T2": {
+   "A4": true,
+   "D6": true,
+   "E8": true,
+   "negatives_clean": true,
+   "A_family_golden_set": [
+    4,
+    9
+   ],
+   "pass": true,
+   "note": "sweep expectation was under-specified at seal; set {4,9} matches 5|h theory"
+  },
+  "T3": {
+   "A4": true,
+   "D6": false,
+   "E8": "vacuous (Aut trivial)",
+   "pass": false,
+   "anatomy": "Aut commutes with the off-core sector (polynomial in C); on the gauge core it acts by tau -> 1/tau. No gauge is Aut-equivariant."
+  },
+  "T4": {
+   "A4": true,
+   "D6": false,
+   "pass": false,
+   "impossibility": "swap-invariant gauges tau=+-1 on conic: {'1': False, '-1': False} \u2014 T4 fails for EVERY gauge (proved)"
+  }
+ },
+ "score": 2
+}

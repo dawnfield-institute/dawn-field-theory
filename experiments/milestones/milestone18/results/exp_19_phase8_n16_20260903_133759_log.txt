@@ -1,0 +1,22 @@
+exp_19 Phase 8 n=16 workers=6 start 20260903_133759
+n=16: 19320 trees; norm-screen survivors: 706 [7s]
+exact factorization on 594 survivor polynomials: 17s; STRICT trees: 15 on 14 polynomials
+stage 1 done: 19320 trees, 706 survivors, 15 strict on 14 polys [24s]
+partner map k=8: 93 targets [1s]
+  [1/15] parent partnered=True fold_half=1 halves=2 [27s]
+  [2/15] parent partnered=True fold_half=1 halves=1 [27s]
+  [3/15] parent partnered=True fold_half=1 halves=1 [27s]
+  [4/15] parent partnered=True fold_half=1 halves=1 [27s]
+  [5/15] parent partnered=True fold_half=1 halves=4 [27s]
+  [6/15] parent partnered=True fold_half=1 halves=4 [27s]
+  [7/15] parent partnered=True fold_half=1 halves=1 [27s]
+  [8/15] parent partnered=True fold_half=1 halves=1 [27s]
+  [9/15] parent partnered=True fold_half=1 halves=4 [28s]
+  [10/15] parent partnered=True fold_half=1 halves=1 [28s]
+  [11/15] parent partnered=True fold_half=1 halves=1 [28s]
+  [12/15] parent partnered=True fold_half=1 halves=4 [28s]
+  [13/15] parent partnered=True fold_half=1 halves=2 [28s]
+  [14/15] unpartnered partnered=False fold_half=- halves=32 [28s]
+  [15/15] parent partnered=True fold_half=1 halves=2 [28s]
+TESTS: {"T1": {"evaluable": 14, "failures": 0, "ok": true}, "T2": {"fold_halves": 14, "exceptions": 0, "informative": true, "ok": true}, "T3": {"fold_halves": 14, "nonunit": 0, "exceptions": 0, "two_in_den": 0, "res01_values": [1], "informative": false, "ok": null}, "T4": {"nonparents": 1, "false_positives": 0, "sensitivity": "14/14", "informative": false, "ok": null}, "T5": {"asymmetric": 0, "ok": false}, "T6": {"k": 8, "in_scope": true, "orphans": 0, "ok": true}, "errors": 0, "classes": {"parent": 14, "unpartnered": 1}, "strict_trees": 15, "strict_polys": 14, "vacuous": false}
+SCORE DONE

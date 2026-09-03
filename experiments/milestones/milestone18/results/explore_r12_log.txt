@@ -1,0 +1,14 @@
+n=10 det=  -16  identity holds at all vertices: True  core-mass values: ['1/2']
+n=10 det=  -80  identity holds at all vertices: True  core-mass values: ['1/2']
+n=12 det=  -99  identity holds at all vertices: True  core-mass values: ['1/2']
+n=14 det=  -16  identity holds at all vertices: True  core-mass values: ['1/2']
+n=14 det=  -44  identity holds at all vertices: True  core-mass values: ['1/3']
+n=14 det=   16  identity holds at all vertices: True  core-mass values: ['1/2']
+n=14 det=  -80  identity holds at all vertices: True  core-mass values: ['1/2']
+n=14 det=  176  identity holds at all vertices: True  core-mass values: ['1/2']
+n=14 det= -284  identity holds at all vertices: True  core-mass values: ['1/3']
+n=14 det=  -80  identity holds at all vertices: True  core-mass values: ['1/2']
+n=14 det= -176  identity holds at all vertices: True  core-mass values: ['1/2']
+n=14 det= -464  identity holds at all vertices: True  core-mass values: ['1/2']
+IDENTITY sqrt5*R_off,vv = +-(1 - Qc_vv): 12 folds, all pass: True
+DONE

@@ -1,0 +1,11058 @@
+[
+ {
+  "n": 8,
+  "src": "census",
+  "edges": [
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 6,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": "2*t**6 - 24*t**5 + 108*t**4 - 224*t**3 + 210*t**2 - 72*t + 3",
+    "res": "25",
+    "res_factor": "{5: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "src": "census",
+  "edges": [
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 8,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "125",
+    "res_factor": "{5: 3}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "src": "census",
+  "edges": [
+   [
+    0,
+    7
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 10,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "125",
+    "res_factor": "{5: 3}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "src": "census",
+  "edges": [
+   [
+    0,
+    7
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    10
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 10,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "125",
+    "res_factor": "{5: 3}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "src": "census",
+  "edges": [
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "parent": null,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 3,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": "t**3 - 6*t**2 + 8*t",
+    "res": "20",
+    "res_factor": "{2: 2, 5: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 2,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": "-2*t**2 + 8*t - 5",
+    "res": "5",
+    "res_factor": "{5: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 5,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "src": "census",
+  "edges": [
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    5,
+    6
+   ]
+  ],
+  "parent": null,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 5,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": "-t**5 + 10*t**4 - 34*t**3 + 44*t**2 - 14*t - 4",
+    "res": "400",
+    "res_factor": "{2: 4, 5: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 6,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": "2*t**6 - 24*t**5 + 106*t**4 - 208*t**3 + 168*t**2 - 32*t - 7",
+    "res": "25",
+    "res_factor": "{5: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    14
+   ],
+   [
+    12,
+    13
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    14
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    14
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "parent": null,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 9,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "160000",
+    "res_factor": "{2: 8, 5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    13,
+    14
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 10,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    14
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "parent": null,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    14
+   ]
+  ],
+  "parent": null,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 15,
+    "den_b": 205,
+    "den_5b": 41,
+    "fiveb": null,
+    "res": "410000",
+    "res_factor": "{2: 4, 5: 4, 41: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 820,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 205,
+    "den_5b": 41,
+    "fiveb": null,
+    "res": "410000",
+    "res_factor": "{2: 4, 5: 4, 41: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 820,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 205,
+    "den_5b": 41,
+    "fiveb": null,
+    "res": "1050625",
+    "res_factor": "{5: 4, 41: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 410,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    15
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    14
+   ],
+   [
+    12,
+    13
+   ]
+  ],
+  "parent": null,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 15,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "27500",
+    "res_factor": "{2: 2, 5: 4, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "27500",
+    "res_factor": "{2: 2, 5: 4, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "75625",
+    "res_factor": "{5: 4, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    15
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ]
+  ],
+  "parent": null,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 15,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "27500",
+    "res_factor": "{2: 2, 5: 4, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "27500",
+    "res_factor": "{2: 2, 5: 4, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "75625",
+    "res_factor": "{5: 4, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    14
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "parent": null,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   },
+   {
+    "deg_b": 14,
+    "den_b": 305,
+    "den_5b": 61,
+    "fiveb": null,
+    "res": "2325625",
+    "res_factor": "{5: 4, 61: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 610,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 305,
+    "den_5b": 61,
+    "fiveb": null,
+    "res": "610000",
+    "res_factor": "{2: 4, 5: 4, 61: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 305,
+    "den_5b": 61,
+    "fiveb": null,
+    "res": "610000",
+    "res_factor": "{2: 4, 5: 4, 61: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1220,
+    "is_one5_diagram": false
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    14
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    11,
+    12
+   ]
+  ],
+  "parent": null,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 14,
+    "den_b": 155,
+    "den_5b": 31,
+    "fiveb": null,
+    "res": "600625",
+    "res_factor": "{5: 4, 31: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 310,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    13,
+    14
+   ]
+  ],
+  "parent": null,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 15,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "160000",
+    "res_factor": "{2: 8, 5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "625",
+    "res_factor": "{5: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    15,
+    18
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 505,
+    "den_5b": 101,
+    "fiveb": null,
+    "res": "31878125",
+    "res_factor": "{5: 5, 101: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1010,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    15,
+    18
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    15,
+    18
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "src": "census",
+  "edges": [
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "parent": null,
+  "n_halves": 8,
+  "halves": [
+   {
+    "deg_b": 11,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "5500",
+    "res_factor": "{2: 2, 5: 3, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 11,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "968000",
+    "res_factor": "{2: 6, 5: 3, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 7,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": "t**7 - 14*t**6 + 76*t**5 - 200*t**4 + 257*t**3 - 134*t**2 + 3*t + 10",
+    "res": "8000",
+    "res_factor": "{2: 6, 5: 3}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 11,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "5500",
+    "res_factor": "{2: 2, 5: 3, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 10,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "15125",
+    "res_factor": "{5: 3, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 11,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "22000",
+    "res_factor": "{2: 4, 5: 3, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 11,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "22000",
+    "res_factor": "{2: 4, 5: 3, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 10,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "125",
+    "res_factor": "{5: 3}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": true
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    18
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": false,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 125,
+    "den_5b": 25,
+    "fiveb": null,
+    "res": "1953125",
+    "res_factor": "{5: 9}",
+    "res_has_sqrt5": false,
+    "bezout_den": 250,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 125,
+    "den_5b": 25,
+    "fiveb": null,
+    "res": "1953125",
+    "res_factor": "{5: 9}",
+    "res_has_sqrt5": false,
+    "bezout_den": 250,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "12500",
+    "res_factor": "{2: 2, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 20,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 16,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    16
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    16
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 310,
+    "den_5b": 62,
+    "fiveb": null,
+    "res": "-48050000",
+    "res_factor": "{2: 4, 5: 5, 31: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1240,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 310,
+    "den_5b": 62,
+    "fiveb": null,
+    "res": "-48050000",
+    "res_factor": "{2: 4, 5: 5, 31: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1240,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 155,
+    "den_5b": 31,
+    "fiveb": null,
+    "res": "48050000",
+    "res_factor": "{2: 4, 5: 5, 31: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 620,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 155,
+    "den_5b": 31,
+    "fiveb": null,
+    "res": "3003125",
+    "res_factor": "{5: 5, 31: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 310,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    18
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 15,
+    "den_5b": 3,
+    "fiveb": null,
+    "res": "28125",
+    "res_factor": "{3: 2, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 30,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    17
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    17
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 16,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": true,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 655,
+    "den_5b": 131,
+    "fiveb": null,
+    "res": "6550000",
+    "res_factor": "{2: 4, 5: 5, 131: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 2620,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 655,
+    "den_5b": 131,
+    "fiveb": null,
+    "res": "6550000",
+    "res_factor": "{2: 4, 5: 5, 131: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 2620,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 655,
+    "den_5b": 131,
+    "fiveb": null,
+    "res": "53628125",
+    "res_factor": "{5: 5, 131: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1310,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "12500",
+    "res_factor": "{2: 2, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 20,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": true,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 145,
+    "den_5b": 29,
+    "fiveb": null,
+    "res": "-362500",
+    "res_factor": "{2: 2, 5: 5, 29: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 580,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 145,
+    "den_5b": 29,
+    "fiveb": null,
+    "res": "-362500",
+    "res_factor": "{2: 2, 5: 5, 29: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 580,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 145,
+    "den_5b": 29,
+    "fiveb": null,
+    "res": "2628125",
+    "res_factor": "{5: 5, 29: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 290,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 12,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    15,
+    18
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": false,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 1235,
+    "den_5b": 247,
+    "fiveb": null,
+    "res": "-40137500",
+    "res_factor": "{2: 2, 5: 5, 13: 2, 19: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 4940,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 1235,
+    "den_5b": 247,
+    "fiveb": null,
+    "res": "-40137500",
+    "res_factor": "{2: 2, 5: 5, 13: 2, 19: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 4940,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 65,
+    "den_5b": 13,
+    "fiveb": null,
+    "res": "528125",
+    "res_factor": "{5: 5, 13: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 130,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 1235,
+    "den_5b": 247,
+    "fiveb": null,
+    "res": "190653125",
+    "res_factor": "{5: 5, 13: 2, 19: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 2470,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 11,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3200000",
+    "res_factor": "{2: 10, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "378125",
+    "res_factor": "{5: 5, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "378125",
+    "res_factor": "{5: 5, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    18
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 65,
+    "den_5b": 13,
+    "fiveb": null,
+    "res": "528125",
+    "res_factor": "{5: 5, 13: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 130,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    16
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    18
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 65,
+    "den_5b": 13,
+    "fiveb": null,
+    "res": "528125",
+    "res_factor": "{5: 5, 13: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 130,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    16
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 15,
+    "den_5b": 3,
+    "fiveb": null,
+    "res": "28125",
+    "res_factor": "{3: 2, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 30,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    16
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 15,
+    "den_5b": 3,
+    "fiveb": null,
+    "res": "28125",
+    "res_factor": "{3: 2, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 30,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    16
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "378125",
+    "res_factor": "{5: 5, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    16
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    16
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "137500",
+    "res_factor": "{2: 2, 5: 5, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 220,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 55,
+    "den_5b": 11,
+    "fiveb": null,
+    "res": "378125",
+    "res_factor": "{5: 5, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 110,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 2,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3200000",
+    "res_factor": "{2: 10, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    16
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    15
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 250,
+    "den_5b": 50,
+    "fiveb": null,
+    "res": "312500000000",
+    "res_factor": "{2: 8, 5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1000,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 250,
+    "den_5b": 50,
+    "fiveb": null,
+    "res": "312500000000",
+    "res_factor": "{2: 8, 5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1000,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 125,
+    "den_5b": 25,
+    "fiveb": null,
+    "res": "1220703125",
+    "res_factor": "{5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 250,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 25,
+    "den_5b": 5,
+    "fiveb": null,
+    "res": "1220703125",
+    "res_factor": "{5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 50,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    14
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 70,
+    "den_5b": 14,
+    "fiveb": null,
+    "res": "-2450000",
+    "res_factor": "{2: 4, 5: 5, 7: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 280,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 70,
+    "den_5b": 14,
+    "fiveb": null,
+    "res": "-2450000",
+    "res_factor": "{2: 4, 5: 5, 7: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 280,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 35,
+    "den_5b": 7,
+    "fiveb": null,
+    "res": "2450000",
+    "res_factor": "{2: 4, 5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 140,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 35,
+    "den_5b": 7,
+    "fiveb": null,
+    "res": "153125",
+    "res_factor": "{5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 70,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 310,
+    "den_5b": 62,
+    "fiveb": null,
+    "res": "-48050000",
+    "res_factor": "{2: 4, 5: 5, 31: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1240,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 310,
+    "den_5b": 62,
+    "fiveb": null,
+    "res": "-48050000",
+    "res_factor": "{2: 4, 5: 5, 31: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1240,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 155,
+    "den_5b": 31,
+    "fiveb": null,
+    "res": "48050000",
+    "res_factor": "{2: 4, 5: 5, 31: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 620,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 155,
+    "den_5b": 31,
+    "fiveb": null,
+    "res": "3003125",
+    "res_factor": "{5: 5, 31: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 310,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    16
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 30,
+    "den_5b": 6,
+    "fiveb": null,
+    "res": "450000",
+    "res_factor": "{2: 4, 3: 2, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 120,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 30,
+    "den_5b": 6,
+    "fiveb": null,
+    "res": "450000",
+    "res_factor": "{2: 4, 3: 2, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 120,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 15,
+    "den_5b": 3,
+    "fiveb": null,
+    "res": "4050000",
+    "res_factor": "{2: 4, 3: 4, 5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 60,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    13
+   ],
+   [
+    8,
+    17
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 140,
+    "den_5b": 28,
+    "fiveb": null,
+    "res": "9800000",
+    "res_factor": "{2: 6, 5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 560,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 140,
+    "den_5b": 28,
+    "fiveb": null,
+    "res": "9800000",
+    "res_factor": "{2: 6, 5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 560,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 70,
+    "den_5b": 14,
+    "fiveb": null,
+    "res": "39200000",
+    "res_factor": "{2: 8, 5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 280,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 35,
+    "den_5b": 7,
+    "fiveb": null,
+    "res": "153125",
+    "res_factor": "{5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 70,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 200,
+    "den_5b": 40,
+    "fiveb": null,
+    "res": "81920000000",
+    "res_factor": "{2: 20, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 800,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 200,
+    "den_5b": 40,
+    "fiveb": null,
+    "res": "81920000000",
+    "res_factor": "{2: 20, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 800,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 50,
+    "den_5b": 10,
+    "fiveb": null,
+    "res": "320000000",
+    "res_factor": "{2: 12, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 200,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 100,
+    "den_5b": 20,
+    "fiveb": null,
+    "res": "320000000",
+    "res_factor": "{2: 12, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 400,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    15
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 250,
+    "den_5b": 50,
+    "fiveb": null,
+    "res": "12500000000",
+    "res_factor": "{2: 8, 5: 11}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1000,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 250,
+    "den_5b": 50,
+    "fiveb": null,
+    "res": "12500000000",
+    "res_factor": "{2: 8, 5: 11}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1000,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 125,
+    "den_5b": 25,
+    "fiveb": null,
+    "res": "48828125",
+    "res_factor": "{5: 11}",
+    "res_has_sqrt5": false,
+    "bezout_den": 250,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 125,
+    "den_5b": 25,
+    "fiveb": null,
+    "res": "48828125",
+    "res_factor": "{5: 11}",
+    "res_has_sqrt5": false,
+    "bezout_den": 250,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 1250,
+    "den_5b": 250,
+    "fiveb": null,
+    "res": "312500000000",
+    "res_factor": "{2: 8, 5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 5000,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 1250,
+    "den_5b": 250,
+    "fiveb": null,
+    "res": "312500000000",
+    "res_factor": "{2: 8, 5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 5000,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 625,
+    "den_5b": 125,
+    "fiveb": null,
+    "res": "1220703125",
+    "res_factor": "{5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1250,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 625,
+    "den_5b": 125,
+    "fiveb": null,
+    "res": "1220703125",
+    "res_factor": "{5: 13}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1250,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 900,
+    "den_5b": 180,
+    "fiveb": null,
+    "res": "25920000000",
+    "res_factor": "{2: 12, 3: 4, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 3600,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 900,
+    "den_5b": 180,
+    "fiveb": null,
+    "res": "25920000000",
+    "res_factor": "{2: 12, 3: 4, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 3600,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 225,
+    "den_5b": 45,
+    "fiveb": null,
+    "res": "512578125",
+    "res_factor": "{3: 8, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 450,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 25,
+    "den_5b": 5,
+    "fiveb": null,
+    "res": "20000000",
+    "res_factor": "{2: 8, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 100,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    15
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 1,
+  "halves": [
+   {
+    "deg_b": 18,
+    "den_b": 5,
+    "den_5b": 1,
+    "fiveb": null,
+    "res": "3125",
+    "res_factor": "{5: 5}",
+    "res_has_sqrt5": false,
+    "bezout_den": 10,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": true,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 300,
+    "den_5b": 60,
+    "fiveb": null,
+    "res": "233280000000",
+    "res_factor": "{2: 12, 3: 6, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1200,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 300,
+    "den_5b": 60,
+    "fiveb": null,
+    "res": "233280000000",
+    "res_factor": "{2: 12, 3: 6, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1200,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 150,
+    "den_5b": 30,
+    "fiveb": null,
+    "res": "180000000",
+    "res_factor": "{2: 8, 3: 2, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 600,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 75,
+    "den_5b": 15,
+    "fiveb": null,
+    "res": "4613203125",
+    "res_factor": "{3: 10, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 150,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    16
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 4,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 70,
+    "den_5b": 14,
+    "fiveb": null,
+    "res": "-2450000",
+    "res_factor": "{2: 4, 5: 5, 7: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 280,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 70,
+    "den_5b": 14,
+    "fiveb": null,
+    "res": "-2450000",
+    "res_factor": "{2: 4, 5: 5, 7: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 280,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 35,
+    "den_5b": 7,
+    "fiveb": null,
+    "res": "153125",
+    "res_factor": "{5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 70,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 35,
+    "den_5b": 7,
+    "fiveb": null,
+    "res": "2450000",
+    "res_factor": "{2: 4, 5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 140,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": true,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 200,
+    "den_5b": 40,
+    "fiveb": null,
+    "res": "81920000000",
+    "res_factor": "{2: 20, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 800,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 200,
+    "den_5b": 40,
+    "fiveb": null,
+    "res": "81920000000",
+    "res_factor": "{2: 20, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 800,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 50,
+    "den_5b": 10,
+    "fiveb": null,
+    "res": "320000000",
+    "res_factor": "{2: 12, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 200,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 100,
+    "den_5b": 20,
+    "fiveb": null,
+    "res": "320000000",
+    "res_factor": "{2: 12, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 400,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    16
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "parent": false,
+  "n_halves": 32,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 1400,
+    "den_5b": 280,
+    "fiveb": null,
+    "res": "250880000000",
+    "res_factor": "{2: 16, 5: 7, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 5600,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 200,
+    "den_5b": 40,
+    "fiveb": null,
+    "res": "-5242880000000",
+    "res_factor": "{2: 26, 5: 7, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 400,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 200,
+    "den_5b": 40,
+    "fiveb": null,
+    "res": "-5242880000000",
+    "res_factor": "{2: 26, 5: 7, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 400,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 1400,
+    "den_5b": 280,
+    "fiveb": null,
+    "res": "250880000000",
+    "res_factor": "{2: 16, 5: 7, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 5600,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 350,
+    "den_5b": 70,
+    "fiveb": null,
+    "res": "250880000000",
+    "res_factor": "{2: 16, 5: 7, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1400,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 100,
+    "den_5b": 20,
+    "fiveb": null,
+    "res": "-20480000000",
+    "res_factor": "{2: 18, 5: 7, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 400,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 100,
+    "den_5b": 20,
+    "fiveb": null,
+    "res": "-20480000000",
+    "res_factor": "{2: 18, 5: 7, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 400,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 175,
+    "den_5b": 35,
+    "fiveb": null,
+    "res": "3828125",
+    "res_factor": "{5: 7, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 350,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 450,
+    "den_5b": 90,
+    "fiveb": null,
+    "res": "131220000000",
+    "res_factor": "{2: 8, 3: 8, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1800,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 450,
+    "den_5b": 90,
+    "fiveb": null,
+    "res": "131220000000",
+    "res_factor": "{2: 8, 3: 8, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1800,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 225,
+    "den_5b": 45,
+    "fiveb": null,
+    "res": "41518828125",
+    "res_factor": "{3: 12, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 450,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 75,
+    "den_5b": 15,
+    "fiveb": null,
+    "res": "6328125",
+    "res_factor": "{3: 4, 5: 7}",
+    "res_has_sqrt5": false,
+    "bezout_den": 150,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": null
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "src": "r16b",
+  "edges": [
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "parent": null,
+  "n_halves": 32,
+  "halves": [
+   {
+    "deg_b": 15,
+    "den_b": 42350,
+    "den_5b": 8470,
+    "fiveb": null,
+    "res": "23716000000",
+    "res_factor": "{2: 8, 5: 6, 7: 2, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 169400,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 50,
+    "den_5b": 10,
+    "fiveb": null,
+    "res": "-64000000",
+    "res_factor": "{2: 12, 5: 6, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 100,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 6050,
+    "den_5b": 1210,
+    "fiveb": null,
+    "res": "-937024000000",
+    "res_factor": "{2: 12, 5: 6, 11: 4, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 12100,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 42350,
+    "den_5b": 8470,
+    "fiveb": null,
+    "res": "23716000000",
+    "res_factor": "{2: 8, 5: 6, 7: 2, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 169400,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 175,
+    "den_5b": 35,
+    "fiveb": null,
+    "res": "765625",
+    "res_factor": "{5: 6, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 350,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 3025,
+    "den_5b": 605,
+    "fiveb": null,
+    "res": "-30250000",
+    "res_factor": "{2: 4, 5: 6, 11: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 12100,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 15,
+    "den_b": 3025,
+    "den_5b": 605,
+    "fiveb": null,
+    "res": "-30250000",
+    "res_factor": "{2: 4, 5: 6, 11: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 12100,
+    "is_one5_diagram": false
+   },
+   {
+    "deg_b": 14,
+    "den_b": 21175,
+    "den_5b": 4235,
+    "fiveb": null,
+    "res": "11209515625",
+    "res_factor": "{5: 6, 7: 2, 11: 4}",
+    "res_has_sqrt5": false,
+    "bezout_den": 42350,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   },
+   {
+    "declared": "gcd(q,sigma q) non-constant (repeated conjugate pair; half is sigma-fixed)",
+    "deg_b": null,
+    "den_b": null,
+    "den_5b": null,
+    "fiveb": null,
+    "res": null,
+    "res_factor": "0",
+    "res_has_sqrt5": null,
+    "bezout_den": null,
+    "is_one5_diagram": false
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "src": "exp15",
+  "edges": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    14
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "parent": false,
+  "n_halves": 16,
+  "halves": [
+   {
+    "deg_b": 19,
+    "den_b": 385,
+    "den_5b": 77,
+    "fiveb": null,
+    "res": "6737500",
+    "res_factor": "{2: 2, 5: 5, 7: 2, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1540,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 385,
+    "den_5b": 77,
+    "fiveb": null,
+    "res": "1724800000",
+    "res_factor": "{2: 10, 5: 5, 7: 2, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 770,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 10,
+    "den_5b": 2,
+    "fiveb": null,
+    "res": "-3200000",
+    "res_factor": "{2: 10, 5: 5, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 40,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 10,
+    "den_5b": 2,
+    "fiveb": null,
+    "res": "-3200000",
+    "res_factor": "{2: 10, 5: 5, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 40,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 110,
+    "den_5b": 22,
+    "fiveb": null,
+    "res": "-387200000",
+    "res_factor": "{2: 10, 5: 5, 11: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 440,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 110,
+    "den_5b": 22,
+    "fiveb": null,
+    "res": "-387200000",
+    "res_factor": "{2: 10, 5: 5, 11: 2, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 440,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 385,
+    "den_5b": 77,
+    "fiveb": null,
+    "res": "1724800000",
+    "res_factor": "{2: 10, 5: 5, 7: 2, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 770,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 385,
+    "den_5b": 77,
+    "fiveb": null,
+    "res": "6737500",
+    "res_factor": "{2: 2, 5: 5, 7: 2, 11: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1540,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 35,
+    "den_5b": 7,
+    "fiveb": null,
+    "res": "153125",
+    "res_factor": "{5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 70,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 35,
+    "den_5b": 7,
+    "fiveb": null,
+    "res": "39200000",
+    "res_factor": "{2: 8, 5: 5, 7: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 140,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 110,
+    "den_5b": 22,
+    "fiveb": null,
+    "res": "-8800000",
+    "res_factor": "{2: 8, 5: 5, 11: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 440,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 110,
+    "den_5b": 22,
+    "fiveb": null,
+    "res": "-8800000",
+    "res_factor": "{2: 8, 5: 5, 11: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 440,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 110,
+    "den_5b": 22,
+    "fiveb": null,
+    "res": "-8800000",
+    "res_factor": "{2: 8, 5: 5, 11: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 440,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 19,
+    "den_b": 110,
+    "den_5b": 22,
+    "fiveb": null,
+    "res": "-8800000",
+    "res_factor": "{2: 8, 5: 5, 11: 1, -1: 1}",
+    "res_has_sqrt5": false,
+    "bezout_den": 440,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 385,
+    "den_5b": 77,
+    "fiveb": null,
+    "res": "4743200000",
+    "res_factor": "{2: 8, 5: 5, 7: 2, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 1540,
+    "is_one5_diagram": null
+   },
+   {
+    "deg_b": 18,
+    "den_b": 385,
+    "den_5b": 77,
+    "fiveb": null,
+    "res": "18528125",
+    "res_factor": "{5: 5, 7: 2, 11: 2}",
+    "res_has_sqrt5": false,
+    "bezout_den": 770,
+    "is_one5_diagram": null
+   }
+  ]
+ }
+]

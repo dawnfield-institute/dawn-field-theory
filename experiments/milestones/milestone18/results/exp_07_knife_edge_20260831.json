@@ -1,0 +1,126 @@
+{
+ "experiment_id": "exp_07_knife_edge",
+ "registration": "74bcd0df",
+ "tests": {
+  "T1": {
+   "symbolic_in_s_all_trees": true,
+   "pass": true
+  },
+  "T2": {
+   "closed_under_duality": true,
+   "pass": true
+  },
+  "T3": {
+   "paths_s0_s2_iff_5_divides_n": true,
+   "paths_s1_iff_5_divides_n_plus_1": true,
+   "outer_columns_mirror": true,
+   "branched_only_self_dual": true,
+   "outer_content_exploratory": {
+    "path3": false,
+    "path4": true,
+    "path5": false,
+    "path6": false,
+    "path7": false,
+    "path8": false,
+    "path9": false,
+    "path10": false,
+    "path11": false,
+    "path12": false
+   },
+   "pass": true
+  },
+  "T4": {
+   "factorization": "(16*t**4 - 152*t**3 + 489*t**2 - 596*t + 186)*(16*t**4 - 96*t**3 + 167*t**2 - 92*t + 4)/256",
+   "explained": false,
+   "explanation": "FLAGGED: two rational quartics, mechanism not identified",
+   "pass": true
+  }
+ },
+ "sweep": {
+  "path3": {
+   "-1": false,
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false
+  },
+  "path4": {
+   "-1": true,
+   "0": false,
+   "1": true,
+   "2": false,
+   "3": true
+  },
+  "path5": {
+   "-1": false,
+   "0": true,
+   "1": false,
+   "2": true,
+   "3": false
+  },
+  "path6": {
+   "-1": false,
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false
+  },
+  "path7": {
+   "-1": false,
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false
+  },
+  "path8": {
+   "-1": false,
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false
+  },
+  "path9": {
+   "-1": false,
+   "0": false,
+   "1": true,
+   "2": false,
+   "3": false
+  },
+  "path10": {
+   "-1": false,
+   "0": true,
+   "1": false,
+   "2": true,
+   "3": false
+  },
+  "path11": {
+   "-1": false,
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false
+  },
+  "path12": {
+   "-1": false,
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false
+  },
+  "D6": {
+   "-1": false,
+   "0": false,
+   "1": true,
+   "2": false,
+   "3": false
+  },
+  "E8": {
+   "-1": false,
+   "0": false,
+   "1": true,
+   "2": false,
+   "3": false
+  }
+ },
+ "score": 4
+}

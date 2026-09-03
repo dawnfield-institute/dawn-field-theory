@@ -1,0 +1,28 @@
+{
+ "experiment_id": "exp_03_negative_controls",
+ "registration": "cf886c00",
+ "tests": {
+  "T1": {
+   "system": "A5",
+   "phi_splits_found": 0,
+   "pass": true
+  },
+  "T2": {
+   "D5_phi_splits": 0,
+   "E6_root_count": 72,
+   "E6_phi_splits": 0,
+   "pass": true
+  },
+  "T3": {
+   "random_projections": 100,
+   "accidental_phi_splits": 0,
+   "pass": true
+  },
+  "T4": {
+   "scrambles": 20,
+   "splits_destroyed": 20,
+   "pass": true
+  }
+ },
+ "score": 4
+}

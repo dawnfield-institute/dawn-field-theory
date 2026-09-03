@@ -1,0 +1,8 @@
+symbolic map k<=8: 156 keys [22s]
+fast map k<=8: 156 keys [1s]
+same key set: True; q matches (up to conjugation): 156/156
+k=10 targets: 610 (exp_15 sealed: 610) [12s]
+k=11 targets: 1576; k=12 targets: 4074 [182s]
+PARTNER-MAP GATE: PASS
+DONE
+EXIT 0

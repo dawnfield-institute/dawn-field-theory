@@ -16,6 +16,7 @@ This document is a living registry of discovered misconceptions, curve-fitting a
 3. [M11 Hardening Cycle](#3-m11-hardening-cycle-april-2026)
 4. [PACSeries v0.3 Verification Pass](#4-pacseries-v03-verification-pass-july-2026)
 5. [Turbulence/Cascade Stack Audit](#5-turbulencecascade-stack-audit-july-2026)
+6. [P1 Frame Correction — Milestone 18](#6-p1-frame-correction--milestone-18-september-2026)
 
 ---
 
@@ -377,6 +378,40 @@ Each entry in this registry represents a **collapse event** in the Imperfection 
 
 > "Collapse is not destruction but creative resolution—the crystallization of potential into stable pattern."
 
+## 6. P1 Frame Correction — Milestone 18 (September 2026)
+
+### ❌ Previous Misconception
+Milestone 18's registered prediction P1 (Block B, 2026-08-31): "Any E₈-derived eigenvalue multiset
+in the corpus (Milestone-R spectral line) splits into two sub-multisets S, S′ with |S| = |S′| and
+scale ratio φ between matched elements."
+
+### ✅ Corrected Understanding
+Two scopes were conflated. The φ ratio verified by M18 exp_02 is between the **root-shell radii**
+of the two 600-cells in the E₈ → H₄ projection — a root-system statement, not an eigenvalue
+statement. On eigenvalue multisets the true and proved statement is the **Galois pairing**
+S′ = σ(S) (the Ledger theorem, charpoly = q·σ(q)); the matched-element ratios in the E₈ Cartan
+spectrum are {46.9, 1.335, 0.859, 0.874}, not φ. And the Milestone-R spectral line P1 names stores
+graph-**Laplacian** spectra, which over ℚ(√5) carry no golden factor for A₄, D₆ or E₈ — golden
+content lives in the Cartan channel only. P1's ratio form is a frame artifact inside a
+registration (STANDARDS §2.9, `docs/frame-control-standard`).
+
+### Evidence
+- M18 `scripts/exp_02_projection_carries_phi.py` (ratio between shells; exact φ at 2.2×10⁻¹⁶).
+- M18 `journals/2026-08-31_night_exploration_sigma_ledger.md` (Ledger theorem); exp_07 (Laplacian vs Cartan boundary).
+- M18 `journals/2026-09-02_blockD_operator_inventory.md` §"Three findings" (Laplacian grades; Cartan ratios).
+
+### Documents Updated
+- `experiments/milestones/milestone18/README.md` — Predictions registry, forward note on P1 (registered text untouched).
+- `experiments/milestones/milestone18/journals/2026-09-02_blockD_registration_DRAFT.md` — T4.
+
+### Key Insight
+Register the *object* with the *relation*. "A ratio between sets" was representation-free, as
+§2.7 requires, but it named the wrong sets. The successor prediction — the fold certificate
+tr(R·D) = 2/√5 evaluated on the corpus's own generative operators — is Block D's, and it survives
+because the certificate is defined on the operator, not on a spectrum.
+
+---
+
 These corrections don't weaken the framework; they strengthen it by:
 1. Distinguishing genuine findings from artifacts
 2. Providing clearer falsification criteria
@@ -399,8 +434,8 @@ Submit as a PR or issue to trigger the scrutiny engine.
 
 ---
 
-*Registry Version: 1.2*
-*Last Updated: 2026-07-17*
+*Registry Version: 1.3*
+*Last Updated: 2026-09-02*
 *Status: Living Document*
 
 ---

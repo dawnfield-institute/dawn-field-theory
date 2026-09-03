@@ -126,6 +126,90 @@ representative without declaring a frame is ill-posed.
 
 ---
 
+## The σ-ledger: conjugation is complementation
+
+For a rational symmetric operator whose spectrum splits into Galois-conjugate halves over ℚ(√5),
+the spectral projector P onto one half satisfies **σ(P) = I − P, P·σ(P) = 0, (P − σP)² = I** —
+Vieta's relations at operator level; the Fibonacci Q-matrix is the minimal instance. The
+**ledger theorem**: charpoly(C) = q·σ(q) with q the H-partner's polynomial, on exactly
+{A₄, D₆, E₈} within ADE and on every one-5 tree fold beyond it.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-08-31_night_exploration_sigma_ledger.md`](../../experiments/milestones/milestone18/journals/2026-08-31_night_exploration_sigma_ledger.md) · *verified:* M18 exp_06, exp_07 (4/4, registered), exp_12 T2 (68/68)
+
+## Odd-k parents carry a rational core; strict pairing forces even n
+
+Bipartite self-duality of a tree parent forces λ = 2 as a rational root of the diagram polynomial
+when the diagram has an odd number of nodes, so every odd-k fold is core-grade; and q·σ(q) has even
+degree, so a strictly paired tree has even order.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-01_panel_g_golden_trees.md`](../../experiments/milestones/milestone18/journals/2026-09-01_panel_g_golden_trees.md) · *verified:* exp_11 T3/T4 (n = 14: 50 core, 0 strict), exp_15 (n = 20)
+
+## Copy and conjugate signatures; the det-sign rule
+
+With P the projector for the diagram's own polynomial, **signature(copy) = signature(diagram)** and
+**signature(conjugate) = signature(σ-diagram)** (charpoly(σM) = σ(charpoly M)); hence for a
+hyperbolic diagram the conjugate is definite iff det(parent) < 0.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-01_exp12_outcomes.md`](../../experiments/milestones/milestone18/journals/2026-09-01_exp12_outcomes.md) (T3) · *verified:* exp_12 (37/37), exp_13
+
+## The construction theorem: parents are branched double covers
+
+For a one-5 diagram (D, e*), **parent(D, e\*)** — two sheets, trivial over ordinary edges,
+cross-wired with one direct (defect) edge over the 5-bond — satisfies
+**charpoly(parent) = q·σ(q)**: the sheet-mixing subspaces span{(v,0) + γ(v,1)} are invariant iff
+**γ² + γ − 1 = 0**, the two roots give bond weights φ and −1/φ, the sectors are orthogonal, and
+C_parent ≅ Gram(D) ⊕ σ(Gram(D)). **Corollary: every one-5 tree diagram has a tree parent** — the
+existence half of the one-5 conjecture, at every k.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-02_r17_construction_theorem.md`](../../experiments/milestones/milestone18/journals/2026-09-02_r17_construction_theorem.md) · *verified:* 117/117 placements at k ≤ 7; zero orphans at k ≤ 10 (exp_11, exp_13, exp_15)
+
+## The matching form, and every strict-fold law, on construction parents
+
+On a construction parent the Bezout projector is the golden-sector projector, block-diagonal over
+sheet pairs, so **√5·R = S + 2Π** (S = ±1 by sheet, Π the deck transformation) with SΠ = −ΠS. From
+the form and [R, C] = 0 alone: Π is a non-adjacent perfect matching; there is a single copy-internal
+defect edge over the unique multiplicity-3 quotient edge (the realized 5-bond); cut = 2; the copy
+side is a spanning tree and the conjugate side has two components of the diagram's halves; and
+**|R_vv| = 1/√5, tr(RD) = 2/√5, ‖(I−P)BP‖² = (1/10)Σ_v(d_v − d_{Π(v)})² = 2/5**.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-02_r17_construction_theorem.md`](../../experiments/milestones/milestone18/journals/2026-09-02_r17_construction_theorem.md) (Thm 2) and [`milestone18/journals/2026-09-01_r15_matching_structure.md`](../../experiments/milestones/milestone18/journals/2026-09-01_r15_matching_structure.md) (Addenda 2, 4, 5) · *verified:* exp_12 T4 (7/7), exp_13 T3 (13/13), exp_15 T3–T6 (47/47)
+
+## The off-ledger identity, and B-invariant cores
+
+For a core-grade fold with rational-core projector Qc, **P_off + σ(P_off) = I − Qc** (Qc is a
+rational polynomial in C, hence σ-fixed; CRT on the Bezout identity) at every n. If B·Qc = Qc·B
+(B = 2I − D), the two mixed leakage blocks vanish identically.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-01_provenance_and_proof_notes.md`](../../experiments/milestones/milestone18/journals/2026-09-01_provenance_and_proof_notes.md) (Lemmas 1–2) · *verified:* r13 (61/61), exp_14 (80/80)
+
+## The cut lifts of the bond are dynamically identical
+
+Under the heat kernel exp(−βC) the two cut lifts (A,0)–(B,1) and (A,1)–(B,0) of the 5-bond have
+identical entries: both equal Σ_γ γ/(1+γ²)·K^γ_{AB} in the sector basis. The sheet asymmetry
+vanishes on the bond itself and is carried by its first-neighbour pairs.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-02_exp18_outcomes.md`](../../experiments/milestones/milestone18/journals/2026-09-02_exp18_outcomes.md) (r20 addendum) · *verified:* 47/47 at 40 digits (n = 20)
+
+## The denominator bound on the reflection polynomial
+
+**Statement.** Let p = q·σ(q) be a strict Galois fold with q = q₀ − φ·q₁, q₀, q₁ ∈ ℤ[t] (on a
+fold half, the expansion along the realized 5-bond), and let b ∈ ℚ[t] be the reflection polynomial
+R = √5·b(C) from the minimal-degree Bézout identity. Then den(5·b) divides 2^{deg q₁}·Res(q₀, q₁).
+In particular the ramified prime never enters unless 5 | Res(q₀, q₁), and 5·b ∈ ℤ[t] whenever
+Res(q₀, q₁) = ±1.
+
+**Mechanism.** Writing v = a + √5·c, the identity σ(v)q + vσ(q) = 1 has no √5-part and reduces to
+a·(2q₀ − q₁) + 5c·q₁ = 1 over ℚ[t], with 5·b = (5c)·(2q₀ − q₁) + 5a·q₁; uniqueness of the
+minimal pair plus Sylvester's identity for the integer polynomials 2q₀ − q₁ and q₁ gives the bound.
+
+**What it does not say.** The bound is not an equality: polynomial integrality (5·b ∈ ℤ[t]
+unconditionally) is *false* — three construction parents at n = 20 have Res(q₀, q₁) = 9 and
+den(5·b) = 3 while 5·b(C) = S + 2Π is an integer matrix. The exact denominator is an open row.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-02_r21_polynomial_integrality_refuted.md`](../../experiments/milestones/milestone18/journals/2026-09-02_r21_polynomial_integrality_refuted.md) · *verified:* explore_r21b (208/208 halves: rational and ℚ(√5) Bézout agree, bound holds, 5 | den ⇔ 5 | Res)
+
+---
+
 ## What is not here
 
 Results that are **measured** rather than proven live with their experiments — α_EM at

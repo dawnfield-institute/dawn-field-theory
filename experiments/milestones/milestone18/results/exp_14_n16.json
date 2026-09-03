@@ -1,0 +1,6135 @@
+{
+ "registration": "phase5",
+ "rows": [
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     15
+    ]
+   ],
+   "det": -16,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "84/295",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     15
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": -16,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "104/395",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     14
+    ]
+   ],
+   "det": 16,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": -171,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "3/11",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -176,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "92/305",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     14
+    ],
+    [
+     12,
+     15
+    ]
+   ],
+   "det": 80,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     15
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     14
+    ]
+   ],
+   "det": 64,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "3/11",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     14
+    ]
+   ],
+   "det": -80,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "18/59",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     14
+    ]
+   ],
+   "det": -64,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    7,
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     14
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": 9,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     14
+    ],
+    [
+     11,
+     15
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": 304,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "8/31",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     14
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": -16,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "7/31",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": 464,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": -144,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "657/4345",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": 16,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    7,
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     15
+    ]
+   ],
+   "det": -64,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "3/11",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -279,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "16/55",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": -464,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "84/275",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": -16,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "12/55",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     15
+    ]
+   ],
+   "det": 256,
+   "lem1": true,
+   "binv": true,
+   "uniform": false,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     11,
+     14
+    ],
+    [
+     11,
+     15
+    ]
+   ],
+   "det": 1280,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "126/505",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     11,
+     14
+    ]
+   ],
+   "det": 656,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     11,
+     14
+    ]
+   ],
+   "det": 144,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     11,
+     14
+    ]
+   ],
+   "det": 256,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "33/149",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": 176,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "84/295",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ]
+   ],
+   "det": 1024,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ]
+   ],
+   "det": 64,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "16/55",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ]
+   ],
+   "det": 320,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    7,
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     15
+    ]
+   ],
+   "det": -304,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "18/61",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ]
+   ],
+   "det": -256,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     15
+    ]
+   ],
+   "det": -256,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -80,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "8/31",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ]
+   ],
+   "det": -176,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ]
+   ],
+   "det": 256,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "176/725",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": 801,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": -99,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": 144,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "14/61",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": 3344,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": 496,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "42/155",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": 1216,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    7,
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": -304,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "8/29",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": -464,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "42/155",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": 944,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "12/55",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -256,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -576,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "596/5225",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": -496,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": 144,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": -704,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "3/11",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -320,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "12/55",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": -495,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -639,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": 304,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "7/31",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": 16,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": -176,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "8/29",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "det": 2816,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "99/475",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     10,
+     15
+    ]
+   ],
+   "det": 10496,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     14
+    ]
+   ],
+   "det": 2304,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "26/101",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     12
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ]
+   ],
+   "det": 2304,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "118/445",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     14
+    ]
+   ],
+   "det": 4096,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    7,
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ]
+   ],
+   "det": -256,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "34/139",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": 976,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ]
+   ],
+   "det": 976,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     10,
+     11
+    ]
+   ],
+   "det": -176,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     10,
+     13
+    ]
+   ],
+   "det": 2816,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "12/55",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     13
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     11
+    ],
+    [
+     9,
+     12
+    ]
+   ],
+   "det": 1280,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ]
+   ],
+   "det": -256,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": -144,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "214/1475",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [
+    5,
+    7
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": -720,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "84/275",
+   "clean": false,
+   "trace": false,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     13,
+     14
+    ]
+   ],
+   "det": 1216,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    7,
+    8
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ]
+   ],
+   "det": 1024,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     11
+    ]
+   ],
+   "det": 256,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ]
+   ],
+   "det": 5120,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "4/19",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     11
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     13
+    ]
+   ],
+   "det": 4096,
+   "lem1": true,
+   "binv": true,
+   "uniform": false,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     14,
+     15
+    ]
+   ],
+   "det": 729,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": 405,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "12/55",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     12,
+     13
+    ]
+   ],
+   "det": 4464,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "12/55",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     11
+    ]
+   ],
+   "det": 4176,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/25",
+   "clean": false,
+   "trace": true,
+   "struct": false,
+   "zeros": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     11
+    ]
+   ],
+   "det": 15616,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "6/29",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     11
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ]
+   ],
+   "det": 15616,
+   "lem1": true,
+   "binv": true,
+   "uniform": true,
+   "selector": true,
+   "vertex": true,
+   "leak_oo": "2/5",
+   "clean": true,
+   "trace": true,
+   "struct": true,
+   "zeros": [],
+   "q_groupings": 1
+  },
+  {
+   "edges": [
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     9,
+     11
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ]
+   ],
+   "det": 45056,
+   "lem1": true,
+   "binv": false,
+   "uniform": false,
+   "selector": false,
+   "vertex": false,
+   "leak_oo": "56/275",
+   "clean": false,
+   "trace": false,
+   "struct": false,
+   "zeros": [],
+   "q_groupings": 1
+  }
+ ],
+ "tests": {
+  "lemma1_all": true,
+  "T1_selector_iff_clean": false,
+  "T2_selector_implies_trace": true,
+  "T3_selector_implies_structure": true,
+  "T5_layer_order": true,
+  "clean_count": 28,
+  "selector_count": 24,
+  "multi_grouping_declared": 0
+ }
+}

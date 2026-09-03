@@ -1,0 +1,57 @@
+checkpoint loaded: 823065 trees, 14111 survivors, 66 strict
+T1: 610 diagram targets; strict-parented 53; survivor-parented 557; unresolved 0
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+degenerate partner (gcd(q,sq)!=1): sector_strict=True
+degenerate partner (gcd(q,sq)!=1): sector_strict=True
+degenerate partner (gcd(q,sq)!=1): sector_strict=False
+degenerate partner (gcd(q,sq)!=1): sector_strict=False
+degenerate partner (gcd(q,sq)!=1): sector_strict=False
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+degenerate partner (gcd(q,sq)!=1): sector_strict=True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+strict fold: T3 True T4 True T5 True T6 True
+TESTS: {'T1_zero_orphans': True, 'T2': False, 'T3': True, 'T4': True, 'T3_degenerate_declared': 6, 'T5': True, 'T6': True, 'strict_trees': 66, 'strict_polys': 64, 'vacuous': False}
+SCORE DONE

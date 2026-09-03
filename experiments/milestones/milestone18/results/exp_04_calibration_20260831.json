@@ -1,0 +1,47 @@
+{
+ "path3": {
+  "argmax_gap": 2.0,
+  "argmin_mfpt": 2.0,
+  "argmax_ent": 0.05
+ },
+ "path6": {
+  "argmax_gap": 2.0,
+  "argmin_mfpt": 2.0,
+  "argmax_ent": 0.05
+ },
+ "path7": {
+  "argmax_gap": 0.0,
+  "argmin_mfpt": 2.0,
+  "argmax_ent": 0.05
+ },
+ "D5": {
+  "argmax_gap": 2.0,
+  "argmin_mfpt": 1.8,
+  "argmax_ent": 0.05
+ },
+ "E6": {
+  "argmax_gap": 2.0,
+  "argmin_mfpt": 1.5,
+  "argmax_ent": 0.05
+ },
+ "E7": {
+  "argmax_gap": 2.0,
+  "argmin_mfpt": 1.35,
+  "argmax_ent": 0.05
+ },
+ "star6": {
+  "argmax_gap": 2.0,
+  "argmin_mfpt": 2.0,
+  "argmax_ent": 0.05
+ },
+ "rand8a": {
+  "argmax_gap": 1.0,
+  "argmin_mfpt": 0.9,
+  "argmax_ent": 0.05
+ },
+ "rand8b": {
+  "argmax_gap": 1.35,
+  "argmin_mfpt": 1.2,
+  "argmax_ent": 0.7
+ }
+}
