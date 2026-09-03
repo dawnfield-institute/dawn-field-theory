@@ -184,7 +184,7 @@ Carried honestly. Each is a soft spot in otherwise settled work.
 | M10 | φ^(−1/N) at N = 8 still 3.3% off — finite-size correction underived |
 | M13.5 | Coherence limit is **not** universal (exp_15, 0/4) — geometric, not Fibonacci-arithmetic |
 | M13.5 | PSD degeneracy proven **fundamental** (exp_16, 0/4) — no isomorphism-invariant metric can fix it |
-| M18 | Rigidity unproved (47/47 at n = 20); a third strict species (asymmetric) unidentified; the clean regime's third kernel class; the branch profile's null; the polynomial form of integrality — [`formal/conjectures/m18_open.md`](formal/conjectures/m18_open.md) |
+| M18 | Rigidity unproved (47/47 at n = 20); a third strict species (asymmetric) unidentified; the clean regime's third kernel class; the branch profile's null; the exact denominator of the reflection polynomial (polynomial integrality killed 2026-09-02 at n = 20 — three parents with den(5·b) = 3; the bound by the diagram resultant is proved, equality open) — [`formal/conjectures/m18_open.md`](formal/conjectures/m18_open.md) |
 
 The M13.5 entries are not defects to repair. M15 reclassifies them: class-level content
 passes, representative-level demands fail, and that split *is* the DFT-Hodge conjecture.

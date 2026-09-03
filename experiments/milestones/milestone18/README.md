@@ -59,9 +59,13 @@ run — the Honest-risks criterion ("a result that could have failed and didn't"
 Block B; opening Block D is a decision recorded in the commit that seals its registration, not
 a consequence of this line.
 
-**Theorems filed: 7 · open conjectures: 8** — in [`formal/theorems/`](../../../formal/theorems/README.md)
+**Theorems filed: 8 · open conjectures: 8 · killed: 1** — in [`formal/theorems/`](../../../formal/theorems/README.md)
 and [`formal/conjectures/m18_open.md`](../../../formal/conjectures/m18_open.md). The scorecard
-above counts sealed tests; this line counts proofs. Neither is the other.
+above counts sealed tests; this line counts proofs. Neither is the other. The kill (2026-09-02,
+r21): the *polynomial* form of integrality, 5·b(t) ∈ ℤ[t], fails on three construction parents at
+n = 20 (den 3); the matrix form stays a theorem. The eighth theorem, proved the same evening, is
+the denominator bound den(5·b) | 2^{deg q₁}·Res(q₀, q₁) — the ramified prime is controlled
+outright, the unramified ones by the diagram resultant; the exact denominator is the new open row.
 
 ## Layers
 

@@ -190,6 +190,24 @@ vanishes on the bond itself and is carried by its first-neighbour pairs.
 
 > *grade:* derivation · *derived:* [`milestone18/journals/2026-09-02_exp18_outcomes.md`](../../experiments/milestones/milestone18/journals/2026-09-02_exp18_outcomes.md) (r20 addendum) · *verified:* 47/47 at 40 digits (n = 20)
 
+## The denominator bound on the reflection polynomial
+
+**Statement.** Let p = q·σ(q) be a strict Galois fold with q = q₀ − φ·q₁, q₀, q₁ ∈ ℤ[t] (on a
+fold half, the expansion along the realized 5-bond), and let b ∈ ℚ[t] be the reflection polynomial
+R = √5·b(C) from the minimal-degree Bézout identity. Then den(5·b) divides 2^{deg q₁}·Res(q₀, q₁).
+In particular the ramified prime never enters unless 5 | Res(q₀, q₁), and 5·b ∈ ℤ[t] whenever
+Res(q₀, q₁) = ±1.
+
+**Mechanism.** Writing v = a + √5·c, the identity σ(v)q + vσ(q) = 1 has no √5-part and reduces to
+a·(2q₀ − q₁) + 5c·q₁ = 1 over ℚ[t], with 5·b = (5c)·(2q₀ − q₁) + 5a·q₁; uniqueness of the
+minimal pair plus Sylvester's identity for the integer polynomials 2q₀ − q₁ and q₁ gives the bound.
+
+**What it does not say.** The bound is not an equality: polynomial integrality (5·b ∈ ℤ[t]
+unconditionally) is *false* — three construction parents at n = 20 have Res(q₀, q₁) = 9 and
+den(5·b) = 3 while 5·b(C) = S + 2Π is an integer matrix. The exact denominator is an open row.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-02_r21_polynomial_integrality_refuted.md`](../../experiments/milestones/milestone18/journals/2026-09-02_r21_polynomial_integrality_refuted.md) · *verified:* explore_r21b (208/208 halves: rational and ℚ(√5) Bézout agree, bound holds, 5 | den ⇔ 5 | Res)
+
 ---
 
 ## What is not here

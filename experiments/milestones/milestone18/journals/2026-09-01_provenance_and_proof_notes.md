@@ -145,3 +145,14 @@ is a theorem on construction parents (block-diagonal sector projector). The sing
 conjecture is rigidity: every strict Galois fold is a construction parent (exp_15 T3 is its live
 test at n = 20). The row-norm-5 question is thereby answered for constructions: the (1, 4)
 pattern is the 2×2 sheet block of the golden sector projector.
+
+---
+
+**Forward note (2026-09-02, evening — r21).** The integrality lemma above ("5·b(t) is an integer
+polynomial on every fold", explore_r10, 7/7 at n ≤ 12) is **false** in its polynomial form: at
+n = 20 three construction parents, with every strict law holding, have den(5·b) = 3 and
+Res(q, σq) = 3²·5⁵. The matrix form √5·R = S + 2Π ∈ ℤⁿˣⁿ is unaffected (it is the r17 theorem);
+what fails is ℤ[C]'s saturation. The remark that the integrality route is "the standing suggestion
+for the matching form" therefore keeps only its matrix half. A denominator law replaces the
+conjecture: on the fold half, den(5·b) = rad(Res(q₀, q₁)) — 47/47 at n = 20, 21/21 at n ≤ 16.
+See `2026-09-02_r21_polynomial_integrality_refuted.md`.

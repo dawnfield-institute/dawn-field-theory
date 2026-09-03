@@ -52,6 +52,7 @@ dawn-field-theory/
     20260827_161500_kill_sentences_bind_theses_not_instruments.md
     20260827_200000_mr_energy_scale_and_the_depth_slot.md
     20260902_101500_m18_formal_layer.md
+    20260902_210500_m18_polynomial_integrality_refuted.md
     README.md
   .claude/
     skills/
@@ -2591,6 +2592,7 @@ dawn-field-theory/
           2026-09-02_phase7b_registration.md
           2026-09-02_phase7c_registration.md
           2026-09-02_r17_construction_theorem.md
+          2026-09-02_r21_polynomial_integrality_refuted.md
         results/
           exp_01_foldings_20260831.json
           exp_02_projection_20260831.json
@@ -2653,6 +2655,8 @@ dawn-field-theory/
           explore_r19_n20_defects.json
           explore_r20_branch_magnitude.json
           explore_r20_log.txt
+          explore_r21_poly_integrality_20260902.json
+          explore_r21b_rational_reduction_20260902.json
           explore_r7_two_component_corollary.json
           explore_r7b_core_fold_structure.json
           explore_r7b_log.txt
@@ -2707,6 +2711,8 @@ dawn-field-theory/
           explore_r19_n20_defects.py
           explore_r1_complement.py
           explore_r20_branch_magnitude.py
+          explore_r21_poly_integrality.py
+          explore_r21b_rational_reduction.py
           explore_r2_r3.py
           explore_r4_generalize.py
           explore_r5_r6.py
