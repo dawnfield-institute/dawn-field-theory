@@ -2655,6 +2655,8 @@ dawn-field-theory/
           explore_d0b_growth_harness_gate_20260903_190543.json
           explore_d0b_growth_harness_gate_20260903_190816.json
           explore_d0b_harness_log.txt
+          explore_d1_inventory_grades_20260903_230426.json
+          explore_d1_inventory_grades_20260903_230426_log.txt
           explore_g1_census_20260901.json
           explore_g1_log.txt
           explore_g3g4g6_20260901.json
@@ -2735,6 +2737,8 @@ dawn-field-theory/
           explore_d0_certificate_gates.py
           explore_d0b_growth_harness_gate.py
           explore_d1_inventory_grades.py
+          explore_d1b_pac_sector_route.py
+          explore_d1c_null_carriers.py
           explore_e1_flow.py
           explore_e2_klein.py
           explore_g1_census_exhaustive.py
