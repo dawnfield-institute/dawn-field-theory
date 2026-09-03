@@ -55,6 +55,7 @@ dawn-field-theory/
     20260902_210500_m18_polynomial_integrality_refuted.md
     20260902_213000_m18_r22_external_audit_fixes.md
     20260903_090000_m18_r18_addendum.md
+    20260903_113000_m18_phase8_sealed.md
     README.md
   .claude/
     skills/
@@ -2596,6 +2597,7 @@ dawn-field-theory/
           2026-09-02_r17_construction_theorem.md
           2026-09-02_r21_polynomial_integrality_refuted.md
           2026-09-02_r22_external_audit_fixes.md
+          2026-09-03_phase8_registration.md
         results/
           exp_01_foldings_20260831.json
           exp_02_projection_20260831.json
@@ -2629,6 +2631,10 @@ dawn-field-theory/
           exp_17_pi_asymmetry.json
           exp_18_branch_fingerprint.json
           exp_18_null_numbers.json
+          exp_19_ka16_driver_log.txt
+          exp_19_phase8_n16_20260903_133759.json
+          exp_19_phase8_n16_20260903_133759_census.json
+          exp_19_phase8_n16_20260903_133759_log.txt
           explore_g1_census_20260901.json
           explore_g1_log.txt
           explore_g3g4g6_20260901.json
@@ -2670,6 +2676,10 @@ dawn-field-theory/
           explore_r20_log.txt
           explore_r21_poly_integrality_20260902.json
           explore_r21b_rational_reduction_20260902.json
+          explore_r23_gate16_log.txt
+          explore_r23_parallel_census_n16_20260903_110323.json
+          explore_r23b_gate_log.txt
+          explore_r23b_partner_map_gate_20260903_133844.json
           explore_r7_two_component_corollary.json
           explore_r7b_core_fold_structure.json
           explore_r7b_log.txt
@@ -2699,6 +2709,7 @@ dawn-field-theory/
           exp_16_phase7_defect_dynamics.py
           exp_17_phase7b_pi_asymmetry.py
           exp_18_phase7c_branch_fingerprint.py
+          exp_19_phase8_census.py
           explore_e1_flow.py
           explore_e2_klein.py
           explore_g1_census_exhaustive.py
@@ -2726,6 +2737,8 @@ dawn-field-theory/
           explore_r20_branch_magnitude.py
           explore_r21_poly_integrality.py
           explore_r21b_rational_reduction.py
+          explore_r23_parallel_census_gate.py
+          explore_r23b_partner_map_gate.py
           explore_r2_r3.py
           explore_r4_generalize.py
           explore_r5_r6.py

@@ -1,0 +1,9 @@
+  ~5000 trees, 187 survivors [1s]
+  ~10000 trees, 422 survivors [2s]
+  ~15000 trees, 577 survivors [2s]
+  ~20000 trees, 706 survivors [3s]
+n=16: 19320 trees; norm-screen survivors: 706 [3s]
+exact factorization on 594 survivor polynomials: 6s; STRICT trees: 15 on 14 polynomials
+KA16 gate through the PARALLEL path: PASS (15, 14); same 15 edge sets: True [9.2s]
+DONE
+EXIT 0
