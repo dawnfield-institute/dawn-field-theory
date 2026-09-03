@@ -98,3 +98,15 @@ T1 kills rigidity (the row), not the construction theorem. T2/T3 kill the exact-
 as stated; the denominator bound (theorem) stands. T4 kills the certificate reading. T5's failure
 retires "third species" as a persistent class. T6's failure is an instrument alarm. None of the
 six touches the milestone thesis or its kill-sentence; this is the mathematics layer.
+
+---
+
+**Forward note (2026-09-03, during the n = 22 run, before any result was read).** The tree counts in
+§1 are wrong by one index of OEIS A000055: 2,144,505 is the count at n = 21 and 14,828,074 the count
+at n = 23. Verified by direct enumeration on this machine: n = 20 → 823,065 (the sealed Phase 6
+count), n = 21 → 2,144,505, n = 22 → **5,623,756**; hence n = 24 → **39,299,897**. No test, threshold
+or null in §3 depends on the count — the objects are all trees on n vertices and the census
+enumerates them all, reconciling the exact count from the enumeration itself — but the §2 runtime
+estimates were 2.6× too small (≈ 80 min at 22, ≈ 13 h at 24 on eight cores). The sealed text stands
+unedited; this note corrects it. Registration lesson 10: a count quoted in a seal is verified by
+enumeration on the day, not recalled.
