@@ -56,6 +56,7 @@ dawn-field-theory/
     20260902_213000_m18_r22_external_audit_fixes.md
     20260903_090000_m18_r18_addendum.md
     20260903_113000_m18_phase8_sealed.md
+    20260903_160500_m18_exp19_n22_outcomes.md
     README.md
   .claude/
     skills/
@@ -2597,6 +2598,7 @@ dawn-field-theory/
           2026-09-02_r17_construction_theorem.md
           2026-09-02_r21_polynomial_integrality_refuted.md
           2026-09-02_r22_external_audit_fixes.md
+          2026-09-03_exp19_outcomes_n22.md
           2026-09-03_phase8_registration.md
         results/
           exp_01_foldings_20260831.json
@@ -2633,10 +2635,14 @@ dawn-field-theory/
           exp_18_null_numbers.json
           exp_19_ka16_driver_log.txt
           exp_19_n22_driver_log.txt
+          exp_19_n24_driver_log.txt
           exp_19_phase8_n16_20260903_133759.json
           exp_19_phase8_n16_20260903_133759_census.json
           exp_19_phase8_n16_20260903_133759_log.txt
+          exp_19_phase8_n22_20260903_133944.json
+          exp_19_phase8_n22_20260903_133944_census.json
           exp_19_phase8_n22_20260903_133944_log.txt
+          exp_19_phase8_n24_20260903_155724_log.txt
           explore_g1_census_20260901.json
           explore_g1_log.txt
           explore_g3g4g6_20260901.json
