@@ -11,7 +11,7 @@ from ledger import simp, cart, DegenerateFoldError
 t = sp.Symbol('t'); s5 = sp.sqrt(5); phi = (1 + s5) / 2
 K = sp.QQ.algebraic_field(sp.sqrt(5))
 
-__all__ = ["t", "s5", "phi", "K", "sig", "sigma", "grade", "golden_pairs", "rational_cores", "halves", "sector_projector",
+__all__ = ["t", "s5", "phi", "K", "sig", "sigma", "grade", "sector_projector_dm", "golden_pairs", "rational_cores", "halves", "sector_projector",
            "certificate", "class_sectors", "is_regular", "evaluate"]
 
 
@@ -169,3 +169,24 @@ def evaluate(n, edges, q=None):
             rec["halves"].append(dict(q=str(h), declared=str(ex)))
     rec["carrier_some_half"] = any(h.get("carrier") for h in rec["halves"])
     return rec
+
+
+def sector_projector_dm(C, q, p):
+    """Same projector as sector_projector, evaluated with sympy DomainMatrix arithmetic over Q(sqrt5)
+    (Horner on the field matrix; exact; several times faster at n ~ 100). Returns a sympy Matrix.
+    Gated against sector_projector (explore_d0d) before use on the sealed objects."""
+    from sympy.polys.matrices import DomainMatrix
+    n = C.shape[0]
+    Q = sp.Poly(q, t, domain=K)
+    CF, rem = sp.Poly(sp.expand(p), t, domain=K).div(Q)
+    if not rem.is_zero:
+        raise ValueError("q does not divide p over Q(sqrt5)")
+    a, b, g = sp.gcdex(Q, CF)
+    if g.degree() != 0:
+        raise DegenerateFoldError(f"gcd(q, p/q) has degree {g.degree()}")
+    g0 = g.all_coeffs()[0]
+    poly = sp.Poly(sp.expand(((b * CF) / g0).as_expr()), t, domain=K)
+    Cd = DomainMatrix.from_Matrix(C).convert_to(K); I = DomainMatrix.eye(n, K); P = DomainMatrix.zeros((n, n), K)
+    for c in poly.all_coeffs():
+        P = P * Cd + I * K.convert(c)
+    return P.to_Matrix().applyfunc(sp.expand)
