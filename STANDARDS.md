@@ -171,6 +171,15 @@ Standard practice since 2026-06-11. For any experiment intended as evidence:
    predictions registered before measurement count as confirmations.
 5. **Kill-sentences stand.** If a milestone declares a condition under which it fails, that
    condition is honoured when met.
+6. **Declare the frame.** State what is being sampled and what expectation it is compared
+   against, and whether the two occupy the same scope (§2.9). A registration that does not
+   name its frame cannot be checked for the one failure mode replication will not catch.
+7. **Name the layer.** A registration states which layer its outcome feeds — a conjecture
+   test (`formal/`), a physical reach (`theory/`, via `THEORY_MAP.md` and `ROADMAP.md`), or an
+   instrument validation (the experiment's `core/`) — and a result that is *proved* is indexed
+   in `formal/theorems/` in the commit that proves it, never left inside the journal that
+   derived it. Mixed phases are split before sealing. The scorecard counts sealed tests;
+   `formal/` counts theorems; neither is quoted as the other.
 
 ### 2.8 Recursive, tautological, circular — three things that look alike
 
@@ -241,6 +250,55 @@ Practical consequences:
   point. Self-reference without a base case is not a recursion, it is an unfinished sentence.
 - Near-tautology is a matter of degree and must be reported: a test with a factor-1000
   acceptance window discriminates weakly even when it is not strictly vacuous.
+
+### 2.9 Frame artifacts — the fourth thing that looks like a finding
+
+The three failures in §2.8 are all properties of the **procedure**. There is a fourth that is
+a property of the **measurement geometry**, and it survives all three of those tests: it
+discriminates, its verdict depends on its inputs, and the search never saw the answer.
+
+**A frame artifact is what you get when the probe and the observable sit at different scopes.**
+The difference between the two frames is then read as a difference in the thing being studied.
+
+| | the test |
+|---|---|
+| Recursive | Vary the input. |
+| Tautological | Could any input have changed the verdict? |
+| Circular | What could the search see? |
+| **Frame artifact** | **What am I sampling, against what expectation — and are they the same scope?** |
+
+**Replication does not help, and that is the trap.** Frame artifacts are directional and
+perfectly reproducible, so bootstraps, multi-seed runs and independent reruns all *confirm*
+them. Consistency is exactly what a systematic frame error produces. Only a frame control —
+re-run with the scopes matched — can kill one.
+
+Two instances, both caught in 2026-08:
+
+- **`sec_prime_manifold`'s 1/φ threshold.** `frac_E_positive` was measured on the **odd**
+  sublattice while its expectation `Ŝ` was a moving window over **all** integers, with 2 in
+  the factor base. Odd numbers are never divisible by 2, so `I = Ŝ − S` is positive on odds by
+  construction and the fraction clears 1/2 for free. At factor-base size 9 it lands on 0.6187,
+  0.04% from 1/φ. Remove 2 from the basis, or include the evens, and it is 0.505. Sample
+  `n ≡ 2 mod 3` instead and it is 0.661 ≈ 2/3 — **the residue class chooses the constant.**
+  That study's own `SYNTHESIS.md` records the mechanism ("2 must be in factor base — creates
+  the bias that enables asymmetry") without drawing the consequence.
+- **ADE Laplacian redistribution.** All potential started on vertex 0 and entropy was measured
+  over the whole graph, giving a consistent "E-series redistributes faster" across three ranks.
+  But vertex 0 is an *endpoint* in A_n and a *branch node* in E_n — not the same place.
+  Orbit-averaged, the ordering did not survive.
+
+**In a structure with symmetry, a "place" is an automorphism orbit, not an index.**
+
+Practical consequences:
+
+- Declare the frame at pre-registration (§2.7.6): what is sampled, against what expectation.
+- Prefer an initial-condition-free quantity where one exists — then ask whether it is *forced*
+  (§2.8.1). Surviving the frame check does not make a result interesting.
+- A result stable under resampling that has never been re-run with matched frames is
+  **untested, not robust.** Report it that way.
+- When a local quantity is compared against a global expectation, that is not automatically an
+  error — SEC quantities are local and free to fluctuate, and only the global PAC ledger is
+  pinned. The error is leaving it *undeclared*, so a scope mismatch can be read as signal.
 
 ---
 
