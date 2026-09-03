@@ -1,3 +1,6 @@
 exp_19 Phase 8 n=24 workers=8 start 20260903_155724
   ~100000 trees, 1800 survivors [90s]
   ~200000 trees, 3283 survivors [157s]
+  ~300000 trees, 5005 survivors [270s]
+  ~400000 trees, 6514 survivors [460s]
+  ~500000 trees, 8167 survivors [663s]
