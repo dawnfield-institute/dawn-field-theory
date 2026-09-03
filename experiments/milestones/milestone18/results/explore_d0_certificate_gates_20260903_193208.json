@@ -1,0 +1,167 @@
+{
+ "KA1_A4": {
+  "ok": true,
+  "grade": "strict",
+  "trRD": "2*sqrt(5)/5",
+  "leak_oo": "2/5",
+  "vertex": [
+   "1/5"
+  ]
+ },
+ "KA1_E8": {
+  "ok": true,
+  "grade": "strict",
+  "trRD": "2*sqrt(5)/5",
+  "leak_oo": "2/5",
+  "vertex": [
+   "1/5"
+  ]
+ },
+ "KA2_D6": {
+  "ok": true,
+  "projector_equals_exp14": true,
+  "grade": "core",
+  "trRD": "2*sqrt(5)/5",
+  "leak_oo": "6/25",
+  "modulated_vertex_law": false,
+  "core_B_invariant": false,
+  "core_masses": [
+   "2/5",
+   "3/5"
+  ],
+  "clean_regime": false,
+  "note": "draft KA2 expected leak 2/5 + modulated law on D6; exp_14's rule predicts NOT clean -> laws fail; trace law must hold"
+ },
+ "projector_gate_exp13": {
+  "strict_agree": 13,
+  "strict_tried": 13,
+  "core_agree": 80,
+  "core_tried": 80,
+  "ok": true
+ },
+ "KA3": {
+  "ok": true,
+  "grades": {
+   "A5": "none",
+   "D5": "none",
+   "E6": "none",
+   "E7": "none"
+  }
+ },
+ "KA6_C5": {
+  "ok": true,
+  "grade": "partial",
+  "blind": true
+ },
+ "KA5": {
+  "ok": true,
+  "classes": {
+   "-620": [
+    [
+     "H2",
+     "1"
+    ],
+    [
+     "H2",
+     "1"
+    ],
+    [
+     "unclassified",
+     "None"
+    ]
+   ],
+   "-80": [
+    [
+     "unclassified",
+     "None"
+    ],
+    [
+     "H2",
+     "1"
+    ],
+    [
+     "H2",
+     "1"
+    ],
+    [
+     "H3",
+     "1"
+    ]
+   ]
+  }
+ },
+ "KA7": {
+  "ok": true,
+  "detail": {
+   "3": {
+    "grade": "partial",
+    "pairs": [
+     [
+      "t**2 - 4*t + 1 + sqrt(5)",
+      1
+     ]
+    ],
+    "classes": [
+     [
+      "H2",
+      "2"
+     ]
+    ]
+   },
+   "4": {
+    "grade": "partial",
+    "pairs": [
+     [
+      "t**2 - 4*t + 1 + sqrt(5)",
+      1
+     ]
+    ],
+    "classes": [
+     [
+      "H2",
+      "2"
+     ]
+    ]
+   },
+   "5": {
+    "grade": "partial",
+    "pairs": [
+     [
+      "t**2 - 4*t + 1 + sqrt(5)",
+      2
+     ]
+    ],
+    "classes": [
+     [
+      "H2",
+      "2"
+     ]
+    ]
+   }
+  }
+ },
+ "KA4": {
+  "ok": true,
+  "n_asym": 4,
+  "values": [
+   "-206*sqrt(5)/247",
+   "-458*sqrt(5)/1235",
+   "-6*sqrt(5)/65",
+   "34*sqrt(5)/125",
+   "458*sqrt(5)/1235",
+   "6*sqrt(5)/65",
+   "66*sqrt(5)/125"
+  ],
+  "target": [
+   "-206*sqrt(5)/247",
+   "-458*sqrt(5)/1235",
+   "-6*sqrt(5)/65",
+   "34*sqrt(5)/125",
+   "458*sqrt(5)/1235",
+   "6*sqrt(5)/65",
+   "66*sqrt(5)/125"
+  ],
+  "leaks_ne_2_5": true
+ },
+ "ALL": true
+}

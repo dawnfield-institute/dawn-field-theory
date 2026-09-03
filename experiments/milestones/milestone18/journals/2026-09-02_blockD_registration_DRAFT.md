@@ -169,3 +169,15 @@ Thin scored content (T1's positive direction is the only strong test; O2 is wher
 appear); partial-grade territory has no interpretation theorem yet (values are readings until a
 law is sealed); the "H₃ class" identification is a frame choice; n = 511 needs the sector route;
 compendium drift — the object list closes at the seal.
+
+---
+
+**Forward note (2026-09-03, instrument build, before any seal).** §2.8 KA2 as drafted expected D₆ to
+give leak_oo = 2/5 and the modulated vertex law. That expectation was written from the r11 result on
+the n = 12 core folds, and D₆ was never in that record. Building the instrument showed why it cannot
+hold: D₆'s rational core (eigenvalue 2, multiplicity 2, kernel {(a, 0, −a, 0, b, a − b)}) is not
+B-invariant and its vertex masses are not uniform, so by exp_14's clean-regime rule the two off-core
+laws fail on D₆ while the trace law holds. The polynomial-in-C projector reproduces the sealed exp_14
+recipe on D₆ exactly and returns tr = 2/√5, leak_oo = 6/25, law fails — the rule's prediction. KA2 is
+therefore replaced by the sharper gate: on D₆, tr = 2/√5 and (laws hold ⇔ core is clean). Lesson 11
+applied to a gate: a known answer is looked up in the record, not recalled.

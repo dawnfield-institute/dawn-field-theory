@@ -58,6 +58,7 @@ dawn-field-theory/
     20260903_090000_m18_r18_addendum.md
     20260903_113000_m18_phase8_sealed.md
     20260903_160500_m18_exp19_n22_outcomes.md
+    20260903_200000_m18_blockD_instrument.md
     README.md
   .claude/
     skills/
@@ -2555,8 +2556,10 @@ dawn-field-theory/
         meta.yaml
         core/
           census.py
+          certificate.py
           folding.py
           foldlaws.py
+          growth_harness.py
           ledger.py
           matching.py
           sectors.py
@@ -2644,6 +2647,14 @@ dawn-field-theory/
           exp_19_phase8_n22_20260903_133944_census.json
           exp_19_phase8_n22_20260903_133944_log.txt
           exp_19_phase8_n24_20260903_155724_log.txt
+          explore_d0_certificate_gates_20260903_191022.json
+          explore_d0_certificate_gates_20260903_191734.json
+          explore_d0_certificate_gates_20260903_192541.json
+          explore_d0_certificate_gates_20260903_193208.json
+          explore_d0_gates_log.txt
+          explore_d0b_growth_harness_gate_20260903_190543.json
+          explore_d0b_growth_harness_gate_20260903_190816.json
+          explore_d0b_harness_log.txt
           explore_g1_census_20260901.json
           explore_g1_log.txt
           explore_g3g4g6_20260901.json
@@ -2721,6 +2732,9 @@ dawn-field-theory/
           exp_17_phase7b_pi_asymmetry.py
           exp_18_phase7c_branch_fingerprint.py
           exp_19_phase8_census.py
+          explore_d0_certificate_gates.py
+          explore_d0b_growth_harness_gate.py
+          explore_d1_inventory_grades.py
           explore_e1_flow.py
           explore_e2_klein.py
           explore_g1_census_exhaustive.py
