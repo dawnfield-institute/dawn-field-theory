@@ -2,8 +2,8 @@
 """explore_r16b: the strict-hunt pipeline for large n. Sound screen: p strict => p = q*sigma(q)
 => p(x) = N(q(x)) is a Q(sqrt5)-norm for every rational x; an integer is a norm iff every prime
 = +-2 (mod 5) divides it to an even power. Necessary condition — the screen cannot lose a strict
-tree. Survivors get the exact Q(sqrt5) factorization. Validation: n=16 must yield exactly the 14
-known strict trees."""
+tree. Survivors get the exact Q(sqrt5) factorization. Validation: n=16 must yield exactly the 15
+known strict trees on 14 distinct polynomials (one cospectral pair)."""
 import time, sys, json, sympy as sp, networkx as nx
 from pathlib import Path
 t=sp.Symbol('t'); s5=sp.sqrt(5); RES=Path(__file__).parent.parent/"results"
@@ -31,7 +31,7 @@ t1=time.time(); strict=[]
 for e,p in surv:
     if strict_grade(p): strict.append({"edges":e,"charpoly":str(p)})
 print(f"exact factorization on survivors: {time.time()-t1:.0f}s; STRICT trees: {len(strict)}",flush=True)
-json.dump(strict,open(RES/f'explore_r16b_strict_n{n}.json','w'),indent=1)
+json.dump(strict,open(RES/f'explore_r16b_strict_n{n}_{time.strftime("%Y%m%d_%H%M%S")}.json','w'),indent=1)   # append-only: never overwrite the committed census (audit fix 2026-09-02)
 if n==16:
     distinct=len({x["charpoly"] for x in strict})
     print(f"VALIDATION (expect 14 distinct charpolys; exp_13 counted polys, not trees): {'PASS' if distinct==14 else 'FAIL'} ({len(strict)} trees, {distinct} polys)",flush=True)

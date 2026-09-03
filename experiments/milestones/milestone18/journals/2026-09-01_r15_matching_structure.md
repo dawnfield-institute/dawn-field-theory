@@ -180,3 +180,12 @@ half) — the combinatorial quotient structure is derived above; that the quotie
 partner with the special edge at its 5-bond still uses the spectra. Phase 6's T5 and most of T4
 are now consistency checks of this theorem rather than independent predictions; they remain
 scored as sealed.
+
+---
+
+**Forward note (2026-09-02, r22).** The one False in `explore_r15_matching_n16.json` — the det −239
+fold's "5-bond = mult-3 edge" — was an instrument artifact: the script tested against the first
+cospectral placement under a single isomorphism. Point 4 above had already worked out by hand that
+the mult-3 edge sits over the (0,5) placement; the repaired script (every placement, every
+isomorphism; `explore_r15_matching_n16_20260902_212141.json`) returns True on that fold and is
+identical on every other. Found by an external code audit; see `2026-09-02_r22_external_audit_fixes.md`.

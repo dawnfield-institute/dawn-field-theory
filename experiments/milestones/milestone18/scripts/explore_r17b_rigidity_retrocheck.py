@@ -26,10 +26,13 @@ for k in range(2,9):
             for m,(i,j) in enumerate(E): M[i,j]=M[j,i]=(-phi if m==pos else -1)
             q=sp.expand(M.charpoly(t).as_expr())
             partners.setdefault(sp.expand(q*q.subs(s5,-s5)),[]).append((E,pos,k))
-folds=[]
-for f in ('explore_r15_matching_n12.json','explore_r15_matching_n16.json'):
-    for x in json.load(open(RES/f)): folds.append((x["n"],[tuple(v) for v in x["edges"]]))
-folds.append((16,[(0,9),(1,0),(1,2),(1,6),(1,8),(2,3),(3,4),(4,5),(6,7),(9,10),(9,14),(10,11),(11,12),(12,13),(14,15)]))  # the twin
+folds=[]; seen=set()
+def add(n,e):
+    key=(n,tuple(sorted(tuple(sorted(v)) for v in e)))
+    if key not in seen: seen.add(key); folds.append((n,[tuple(v) for v in e]))
+for x in json.load(open(RES/'explore_r15_matching_n12.json')): add(x["n"],x["edges"])
+for x in json.load(open(RES/'explore_r16b_strict_n16.json')): add(16,x["edges"])   # exhaustive n=16 list incl. the cospectral twin (audit fix HIFI-001: no inlined edge list)
+print(f"loaded {len(folds)} known strict folds at n<=16",flush=True)
 tot=0; ok=0
 for n,e in folds:
     p=sp.expand(cart(n,e).charpoly(t).as_expr()); G=nx.Graph(e)
@@ -43,12 +46,18 @@ for n,e in folds:
     print(tag,flush=True)
 print(f"\nRIGIDITY RETRO-CHECK: {ok}/{tot} known strict folds are construction parents",flush=True)
 # twin pair placement comparison
-p_twin=sp.expand(cart(16,folds[-1][1]).charpoly(t).as_expr())
-pair=[(n,e) for n,e in folds if n==16 and sp.expand(cart(16,e).charpoly(t).as_expr()-p_twin)==0]
+# the twin pair = the cospectral pair among the n=16 folds (found, not assumed to be last in the list)
+from collections import defaultdict
+bypoly=defaultdict(list)
+for n,e in folds:
+    if n==16: bypoly[sp.expand(cart(16,e).charpoly(t).as_expr())].append((n,e))
+pairs=[v for v in bypoly.values() if len(v)>1]
+print(f"cospectral pairs at n=16: {len(pairs)}")
+pair=pairs[0] if pairs else []; p_twin=sp.expand(cart(16,pair[0][1]).charpoly(t).as_expr()) if pair else None
 print(f"twin-pair members found: {len(pair)}")
 for n,e in pair:
     G=nx.Graph(e)
-    for E,pos,k in partners[p_twin]:
+    for E,pos,k in partners.get(p_twin,[]):
         if nx.is_isomorphic(G,nx.Graph(build_parent(E,pos,k))):
             DG=nx.Graph(E); DG.remove_edge(*E[pos]); halves=sorted(len(c) for c in nx.connected_components(DG))
             print(f"  twin member matches placement {E[pos]} halves {halves}")

@@ -53,6 +53,7 @@ dawn-field-theory/
     20260827_200000_mr_energy_scale_and_the_depth_slot.md
     20260902_101500_m18_formal_layer.md
     20260902_210500_m18_polynomial_integrality_refuted.md
+    20260902_213000_m18_r22_external_audit_fixes.md
     README.md
   .claude/
     skills/
@@ -2593,6 +2594,7 @@ dawn-field-theory/
           2026-09-02_phase7c_registration.md
           2026-09-02_r17_construction_theorem.md
           2026-09-02_r21_polynomial_integrality_refuted.md
+          2026-09-02_r22_external_audit_fixes.md
         results/
           exp_01_foldings_20260831.json
           exp_02_projection_20260831.json
@@ -2644,13 +2646,23 @@ dawn-field-theory/
           explore_r14_selector_hunt.json
           explore_r15_matching_n12.json
           explore_r15_matching_n16.json
+          explore_r15_matching_n12_20260902_212114.json
+          explore_r15_matching_n16_20260902_212141.json
           explore_r15_n16_log.txt
+          explore_r15_rerun_n12_20260902_212040_log.txt
+          explore_r15_rerun_n16_20260902_212040_log.txt
           explore_r15c_log.txt
           explore_r16_n14_log.txt
           explore_r16b_n16_log.txt
+          explore_r16b_rerun_n16_20260902_212040_log.txt
           explore_r16b_strict_n16.json
+          explore_r16b_strict_n16_20260902_212248.json
           explore_r17_log.txt
+          explore_r17_rerun_20260902_212040_log.txt
+          explore_r17b_rerun2_20260902_212040_log.txt
+          explore_r17b_rerun_20260902_212040_log.txt
           explore_r18_log.txt
+          explore_r18_n20_anatomy.json
           explore_r19_log.txt
           explore_r19_n20_defects.json
           explore_r20_branch_magnitude.json

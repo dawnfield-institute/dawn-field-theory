@@ -1,1 +1,15 @@
 one-5 map: 610 targets [514s]
+(1) two-bond search [47203s]: asymmetric trees matched: 0/3
+    det=-31: two-bond partners 0
+    det=-155: two-bond partners 0
+    det=169: two-bond partners 0
+(2) degenerate-partner trees:
+    det=-475 orbits=12/20 sector_strict=True
+    det=-1375 orbits=16/20 sector_strict=True
+    det=625 orbits=20/20 sector_strict=False
+    det=-1475 orbits=20/20 sector_strict=False
+    det=25 orbits=20/20 sector_strict=False
+    det=2525 orbits=12/20 sector_strict=True
+(3) rigidity at 20: 47/47 evaluable partnered strict trees are construction parents [47204s]
+    cospectral twin pairs among evaluable: 0; placements (halves): []
+DONE

@@ -1,0 +1,14 @@
+  2000 trees, 111 survivors [2s]
+  4000 trees, 199 survivors [4s]
+  6000 trees, 282 survivors [5s]
+  8000 trees, 339 survivors [7s]
+  10000 trees, 422 survivors [9s]
+  12000 trees, 483 survivors [10s]
+  14000 trees, 556 survivors [12s]
+  16000 trees, 610 survivors [13s]
+  18000 trees, 669 survivors [15s]
+n=16: 19320 trees; norm-screen survivors: 706 [16s]
+exact factorization on survivors: 51s; STRICT trees: 15
+VALIDATION (expect 14 distinct charpolys; exp_13 counted polys, not trees): PASS (15 trees, 14 polys)
+DONE
+r16b EXIT 0

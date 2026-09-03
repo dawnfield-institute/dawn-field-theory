@@ -1,0 +1,9 @@
+n=4 det=    5 form S+2Pi:True signs-anticommute:True quotient=diagram:True 5-bond=mult-3 edge:True mults:[3]
+n=8 det=    1 form S+2Pi:True signs-anticommute:True quotient=diagram:True 5-bond=mult-3 edge:True mults:[2, 2, 3]
+n=8 det=  -11 form S+2Pi:True signs-anticommute:True quotient=diagram:True 5-bond=mult-3 edge:True mults:[2, 2, 3]
+n=12 det=  -11 form S+2Pi:True signs-anticommute:True quotient=diagram:True 5-bond=mult-3 edge:True mults:[2, 2, 2, 2, 3]
+n=12 det=  -31 form S+2Pi:True signs-anticommute:True quotient=diagram:True 5-bond=mult-3 edge:True mults:[2, 2, 2, 2, 3]
+n=12 det=  -71 form S+2Pi:True signs-anticommute:True quotient=diagram:True 5-bond=mult-3 edge:True mults:[2, 2, 2, 2, 3]
+n=12 det=  -95 form S+2Pi:True signs-anticommute:True quotient=diagram:True 5-bond=mult-3 edge:True mults:[2, 2, 2, 2, 3]
+DONE
+r15-12 EXIT 0

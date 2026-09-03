@@ -4,7 +4,7 @@ sqrt5*R = S + 2*Pi with S = diag(+-1) and Pi a symmetric permutation (perfect ma
 S*Pi = -Pi*S (matched vertices carry opposite signs). Then |R_vv|=1/sqrt5, R^2=I, and the fold
 structure are corollaries. Also: quotient the parent by Pi and compare pair-adjacency multiplicities
 with the one-5 diagram — is the 5-bond the multiplicity-3 edge?"""
-import json, sys, sympy as sp, networkx as nx
+import json, sys, time, sympy as sp, networkx as nx
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).parent.parent/"core"))
 from ledger import cart, simp, sigma, bezout_proj, t
@@ -18,7 +18,7 @@ for k in range(2,NMAX//2+1):
             M=2*sp.eye(k)
             for m,(i,j) in enumerate(E): M[i,j]=M[j,i]=(-phi if m==pos else -1)
             q=sp.expand(M.charpoly(t).as_expr())
-            partners.setdefault(sp.expand(q*q.subs(s5,-s5)),(q,E,pos))
+            partners.setdefault(sp.expand(q*q.subs(s5,-s5)),[]).append((q,E,pos))   # ALL placements per polynomial (HIFI-010)
 folds=[]
 if NMAX<=13:
     cen=json.load(open(RES/'explore_g1_census_20260901.json'))
@@ -29,9 +29,9 @@ else:
 out=[]
 for n,e,det in folds:
     e=[tuple(v) for v in e]; C=cart(n,e); p=sp.expand(C.charpoly(t).as_expr())
-    q,dE,pos=partners[p]
+    q,dE,pos=partners[p][0]            # the reflection depends on q only (shared by cospectral placements)
     R=simp(bezout_proj(C,q)); R=simp(R-sigma(R))
-    S5R=simp(s5*R).applyfunc(sp.nsimplify)
+    S5R=simp(s5*R)                     # exact; no nsimplify (HIFI-003)
     ok_form=True; match={}
     for v in range(n):
         row=[(w,S5R[v,w]) for w in range(n) if w!=v and S5R[v,w]!=0]
@@ -48,16 +48,17 @@ for n,e,det in folds:
             if pa!=pb: Q.add_edge(pa,pb)
         mult={tuple(sorted((a,b))):0 for a,b in Q.edges()}
         for a,b in Q.edges(): mult[tuple(sorted((a,b)))]+=1
-        DG=nx.Graph(dE)
-        gm=nx.algorithms.isomorphism.GraphMatcher(nx.Graph(list(mult.keys())),DG)
-        quot_ok=gm.is_isomorphic()
-        if quot_ok:
-            iso=gm.mapping  # quotient node -> diagram node
-            fb=tuple(sorted(dE[pos]))
-            m3={k2 for k2,v2 in mult.items() if v2==3}
-            fivebond_mult3=any(tuple(sorted((iso[a],iso[b])))==fb for a,b in m3)
+        QG=nx.Graph(list(mult.keys())); m3={k2 for k2,v2 in mult.items() if v2==3}
+        quot_ok=False; fivebond_mult3=False
+        for _q,_dE,_pos in partners[p]:    # every cospectral placement (HIFI-010) ...
+            gm=nx.algorithms.isomorphism.GraphMatcher(QG,nx.Graph(_dE))
+            if not gm.is_isomorphic(): continue
+            quot_ok=True; fb=tuple(sorted(_dE[_pos]))
+            for iso in gm.isomorphisms_iter():   # ... under every isomorphism (HIFI-005)
+                if any(tuple(sorted((iso[a],iso[b])))==fb for a,b in m3): fivebond_mult3=True; break
+            if fivebond_mult3: break
     print(f"n={n} det={det if det is not None else int(C.det()):>5} form S+2Pi:{ok_form} signs-anticommute:{anti} quotient=diagram:{quot_ok} 5-bond=mult-3 edge:{fivebond_mult3} mults:{sorted(mult.values()) if ok_form else '-'}",flush=True)
     out.append({"n":n,"edges":e,"form":ok_form,"anti":anti,"quotient_iso":quot_ok,"fivebond_mult3":fivebond_mult3,
                 "matching":match if ok_form else None,"multiplicities":sorted(mult.values()) if ok_form else None})
-json.dump(out,open(RES/f'explore_r15_matching_n{NMAX}.json','w'),indent=1,default=str)
+json.dump(out,open(RES/f'explore_r15_matching_n{NMAX}_{time.strftime("%Y%m%d_%H%M%S")}.json','w'),indent=1,default=str)   # append-only; the original run's file is untouched
 print("DONE",flush=True)

@@ -2,6 +2,9 @@
 import sympy as sp
 t = sp.Symbol('t'); PHI = (1+sp.sqrt(5))/2; K = sp.QQ.algebraic_field(sp.sqrt(5))
 
+class DegenerateFoldError(ValueError):
+    """q and sigma(q) share a root: no Bezout projector exists (core-grade or repeated pair). Callers declare, never score."""
+
 def cart(n, edges):
     C = sp.zeros(n, n)
     for i in range(n): C[i, i] = 2
@@ -16,7 +19,9 @@ def _polyval(coeffs, C):
 def bezout_proj(C, q):
     sq = sp.expand(q.subs(sp.sqrt(5), -sp.sqrt(5)))
     Q, SQ = sp.Poly(q, t, domain=K), sp.Poly(sq, t, domain=K)
-    a, b, g = sp.gcdex(Q, SQ); assert g.degree() == 0
+    a, b, g = sp.gcdex(Q, SQ)
+    if g.degree() != 0:
+        raise DegenerateFoldError(f"gcd(q, sigma q) has degree {g.degree()}")
     pp = (b*SQ)/g.all_coeffs()[0]
     return _polyval([sp.expand(c.as_expr()) for c in sp.Poly(pp.as_expr(), t).all_coeffs()], C)
 
@@ -24,7 +29,6 @@ EDGES = {"A4": (4, [(0,1),(1,2),(2,3)]), "D6": (6, [(0,1),(1,2),(2,3),(3,4),(3,5
          "E8": (8, [(i,i+1) for i in range(6)]+[(2,7)])}
 H2q = sp.expand((t-(2-PHI))*(t-(2+PHI)))
 H3 = sp.Matrix([[2,-1,0],[-1,2,-PHI],[0,-PHI,2]])
-H4 = sp.Matrix([[2,-1,0,0],[-1,2,-1,0],[0,-1,2,-1],[0,0,-1,2]]); H4[2,3]=H4[3,2]=-PHI; H4[1,2]=H4[2,1]=-1
 H4 = sp.Matrix([[2,-1,0,0],[-1,2,-1,0],[0,-1,2,-PHI],[0,0,-PHI,2]])
 
 def projector(name, tau=6-3*sp.sqrt(5)):
