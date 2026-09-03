@@ -49,3 +49,28 @@ asymmetric strict trees (new), plus the degenerate-partner overlap awaiting anat
 honoured: nothing here touches the milestone kill sentence; T2's failure retires "exhaustive at
 20" for the two-species classification and replaces it with a three-species one whose third
 member is not yet understood.
+
+---
+
+## Addendum (r18, run 2026-09-02, 13.1 h; filed 2026-09-03) — the third species is not two-bond
+
+`scripts/explore_r18_n20_anatomy.py` → `results/explore_r18_n20_anatomy.json`, `explore_r18_log.txt`.
+
+**(1) Two-bond search — dead, 0/3.** For each asymmetric strict polynomial at n = 20 (dets −31,
+−155, and the cospectral pair at 169; three polynomials on four trees) every tree diagram on
+k = 10 nodes with **two** golden bonds was checked for q·σ(q) equal to the tree's characteristic
+polynomial: no partner exists (610 one-5 targets built in 514 s; the two-bond sweep 47,203 s). So
+the third species does not fold from a two-bond tree diagram. It remains unidentified; non-tree
+diagrams are the next candidate class, and are not yet enumerated.
+
+**(2) The six degenerate-partner trees — anatomy declared.** Orbit counts under the automorphism
+group / sector-strict flag: det −475 (12/20, sector-strict), −1375 (16/20, sector-strict),
+625 (20/20, not), −1475 (20/20, not), 25 (20/20, not), 2525 (12/20, sector-strict). The three
+sector-strict ones have symmetry to fold by; the three with trivial automorphism group (20/20
+orbits) do not, and are the degenerate-partner analogue of the third species.
+
+**(3) Rigidity re-confirmed: 47/47** evaluable partnered strict trees are construction parents;
+no cospectral twin pairs among the evaluable ones at n = 20.
+
+What changes in the record: the strict-classification row in `formal/conjectures/m18_open.md` now
+says "two-bond tree diagrams excluded (r18)". Nothing scored moves.
