@@ -61,6 +61,7 @@ dawn-field-theory/
     20260903_200000_m18_blockD_instrument.md
     20260903_235900_m18_blockD_sealed.md
     20260903_235959_m18_blockD_outcomes.md
+    20260904_120500_m18_phase8_n24.md
     README.md
   .claude/
     skills/
@@ -2609,7 +2610,9 @@ dawn-field-theory/
           2026-09-03_exp09_outcomes.md
           2026-09-03_exp19_outcomes_n22.md
           2026-09-03_phase8_registration.md
+          2026-09-04_exp19_outcomes_n24.md
         results/
+          .gitignore
           exp_01_foldings_20260831.json
           exp_02_projection_20260831.json
           exp_03_controls_20260831.json
@@ -2653,6 +2656,7 @@ dawn-field-theory/
           exp_19_phase8_n22_20260903_133944.json
           exp_19_phase8_n22_20260903_133944_census.json
           exp_19_phase8_n22_20260903_133944_log.txt
+          exp_19_phase8_n24_20260903_155724.json
           exp_19_phase8_n24_20260903_155724_log.txt
           explore_d0_certificate_gates_20260903_191022.json
           explore_d0_certificate_gates_20260903_191734.json

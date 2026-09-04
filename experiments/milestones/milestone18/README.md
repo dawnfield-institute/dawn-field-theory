@@ -35,7 +35,7 @@ Bound to the thesis, not to any instrument: **if E₈-derived spectra do not spl
 orbit boundary (Block C), then φ is not structural in this corpus and this milestone dies.**
 Either failure alone wounds it; both together kill it.
 
-## Scorecard: 51/67 — Phases 3–7c and Block D run (A 12/12 · B 3/5 + 7: 1/2 + 7b: 1/2 + 7c: 1/2 · C 6/8 · C-ext 21/29 · D 2/3 · E 4/4)
+## Scorecard: 55/74 — Phases 3–8 and Block D run (A 12/12 · B 3/5 + 7: 1/2 + 7b: 1/2 + 7c: 1/2 · C 6/8 · C-ext 21/29 · D 2/3 · Phase 8 4/7 · E 4/4)
 
 **Kill-sentence status (honest accounting):** clause B (no golden split) is NOT met — the
 split is a theorem in the Cartan channel; clause C (no separating power at the orbit
@@ -49,6 +49,7 @@ core. One clause wounds, both kill: **wounded, not dead.** Phase 2 registration:
 | **C — The σ-Ledger** | Conjugation = complementation; the knife-edge under duality | exp_06 – exp_07 | **6/8** | exp_06 2/4 (T3/T4 fail AT the mod-5 ramification locus, T4 by impossibility proof); exp_07 **4/4** (5\|n and 5\|(n+1) enumeration predicted and confirmed) |
 | **C-ext — The census and the fold laws** | Which trees are completely σ-paired, and what laws do the folds obey? | exp_08, exp_11–exp_15 | **21/29** | exp_08 1/2; exp_11 **4/4** at n = 14 (3939176d); exp_12 **3/6** (4ab2ff35; T3/T5/T6 fail as sealed, each replaced — see journal); exp_13 **5/7** at n = 16 (`journals/2026-09-01_exp13_outcomes.md`): the invariant held on **13/13 fresh strict folds**; T2 fail = the first sector-strict tree (det −775, strict but not a one-5 fold — the r9 mixed mechanism producing strictness); T4 fail = cospectral 5-bond placements (the fold's vertex structure selects the placement; halves law holds under some-partner semantics). Core anatomy (r11–r14): fold laws are off-core laws; modulated vertex law √5·R_off,vv = ±(1−Qc_vv). exp_14 **3/4** (`journals/2026-09-01_exp14_outcomes.md`): off-core instrument reaches all 80 core folds at 16 (0 declared vs 76); Lemma-1 identity proved and checked 80/80; selector sufficiency + layer order confirmed out of sample; the exact-iff clause failed — a third kernel class ((t−2)⁴, masses {2/5, 3/5}) is clean, characterization open. r15 (exploration, 20/20 all strict folds ever found): √5·R = S + 2Π — a signed perfect matching; the Π-quotient IS the one-5 diagram with the realized 5-bond as the unique multiplicity-3 edge; the entire strict-law package reduces to this one conjecture. **Construction theorem** (r17): parents are branched double covers (γ² + γ − 1 = 0 decoupling) — one-5 existence PROVED, every strict law a theorem on constructions. **Phase 6 / exp_15 5/6 at n = 20** (`journals/2026-09-02_exp15_outcomes.md`): 823,065 trees, 66 strict on 64 polynomials; T1 zero orphans at k = 10; **rigidity holds 47/47** (T3–T6 all pass; 6 degenerate partners declared); T2 FAIL = a third strict species — four ASYMMETRIC strict trees (trivial automorphism group, no one-5 partner) |
 | **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_09 | 2/3 | **RUN 2026-09-03** — sealed `0130ebe0` (`journals/2026-09-03_blockD_registration.md`): T1 reach **FAIL** (0 carriers / 173 live objects: PAC trees d ≤ 8, 166 growth trees, 4 unicyclics), T2b class-without-representative **PASS** (4/4 cells), T4 P1 forward-correction **PASS**; gate T2a held (H₃-type sector first at d = 8). The reach at measured sizes is retired; the mathematics stands. Outcomes `journals/2026-09-03_exp09_outcomes.md` |
+| **Phase 8 — The exhaustive frontier** | Does the strict census keep its laws at n = 22 and n = 24? | exp_19 | **4/7** | **COMPLETE 2026-09-04** — sealed `c8bea46f`. n = 22: 0 strict trees (0/1, `journals/2026-09-03_exp19_outcomes_n22.md`). n = 24: 39,299,897 trees, **257 strict** (4/6, `journals/2026-09-04_exp19_outcomes_n24.md`) — rigidity **168/168** (236/236 overall), ramified boundary 0 exceptions, third species **41**, zero orphans at k = 12; T3 exact denominator **KILLED** (2 enters den), T4 certificate reading **refuted** (9/89 non-parents, all asymmetric). Parity law holds. |
 | **E — Re-derivations** | φ⁻⁴ (exp_37) and z_c = φ⁵ as units, not magnitudes | exp_10 | **4/4** | exact (974380c6) |
 
 Block A is front-loaded per M17's rule: no DFT system is measured until the instruments
@@ -59,7 +60,7 @@ run — the Honest-risks criterion ("a result that could have failed and didn't"
 Block B; opening Block D is a decision recorded in the commit that seals its registration, not
 a consequence of this line.
 
-**Theorems filed: 8 · open conjectures: 8 · killed: 1 · retired: 1 (Block D reach, 2026-09-03)** — in [`formal/theorems/`](../../../formal/theorems/README.md)
+**Theorems filed: 8 · open conjectures: 8 · killed: 2 (polynomial integrality 09-02; exact denominator 09-04) · retired: 1 (Block D reach, 2026-09-03)** — in [`formal/theorems/`](../../../formal/theorems/README.md)
 and [`formal/conjectures/m18_open.md`](../../../formal/conjectures/m18_open.md). The scorecard
 above counts sealed tests; this line counts proofs. Neither is the other. The kill (2026-09-02,
 r21): the *polynomial* form of integrality, 5·b(t) ∈ ℤ[t], fails on three construction parents at
