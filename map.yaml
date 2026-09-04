@@ -60,6 +60,7 @@ dawn-field-theory/
     20260903_160500_m18_exp19_n22_outcomes.md
     20260903_200000_m18_blockD_instrument.md
     20260903_235900_m18_blockD_sealed.md
+    20260903_235959_m18_blockD_outcomes.md
     README.md
   .claude/
     skills/
@@ -2605,6 +2606,7 @@ dawn-field-theory/
           2026-09-02_r21_polynomial_integrality_refuted.md
           2026-09-02_r22_external_audit_fixes.md
           2026-09-03_blockD_registration.md
+          2026-09-03_exp09_outcomes.md
           2026-09-03_exp19_outcomes_n22.md
           2026-09-03_phase8_registration.md
         results/
@@ -2619,6 +2621,8 @@ dawn-field-theory/
           exp_07_knife_edge_20260831.json
           exp_08_census_20260901.json
           exp_08_census_log.txt
+          exp_09_block_d_reach_20260903_235832.json
+          exp_09_block_d_reach_20260903_235832_log.txt
           exp_10_block_e_20260901.json
           exp_11_log.txt
           exp_11_one5_n14.json
@@ -2662,10 +2666,14 @@ dawn-field-theory/
           explore_d0c_pac_sector_certificate_gate_20260903_205259.json
           explore_d0d_gate_log.txt
           explore_d0d_projector_dm_gate_20260903_205342.json
+          explore_d1_devbox_log.txt
+          explore_d1_devbox_log_attempt1.txt
           explore_d1_inventory_grades_20260903_230426.json
           explore_d1_inventory_grades_20260903_230426_log.txt
+          explore_d1b_devbox_log.txt
           explore_d1b_pac_sector_route_20260903_230708.json
           explore_d1b_pac_sector_route_log.txt
+          explore_d1c_devbox_log.txt
           explore_d1c_null_carriers_20260903_234144.json
           explore_d1c_null_carriers_log.txt
           explore_g1_census_20260901.json

@@ -143,7 +143,7 @@ what asserts it, what proves it, what measured it, where it was published.
 | Polynomial integrality 5·b(t) ∈ ℤ[t] unconditionally | **falsified** (2026-09-02) | — | [M18 r21](experiments/milestones/milestone18/) (three construction parents at n = 20, den 3; the matrix form stands) | — |
 | Every strict Galois fold is a construction parent (rigidity) | **conjecture** | [conjectures](formal/conjectures/m18_open.md) | [M18 exp_15](experiments/milestones/milestone18/) (47/47 at n = 20) | — |
 | Heat-kernel sheet asymmetry peaks at the fold's branch | settled | — | [M18 exp_18](experiments/milestones/milestone18/) (47/47, sealed null) | — |
-| The fold is physically reached by the corpus's own operators (Block D) | **open** | — | [M18 Block D](experiments/milestones/milestone18/) (registration drafted, gated) | — |
+| The fold is physically reached by the corpus's own operators (Block D) | **falsified at measured sizes** (2026-09-03) | — | [M18 exp_09](experiments/milestones/milestone18/) (0 carriers / 173 objects: complete PAC trees d ≤ 8, 166 growth trees, 4 unicyclics; the H₂/H₃-type sectors carry no certificate — class without representative) | — |
 
 A dash under *Proved* means the result is measured, not derived — the distinction
 [`formal/`](formal/README.md) exists to keep. **Open** carries a standing kill-sentence:
@@ -180,7 +180,7 @@ multiples of four.
 | **M15** [The representative problem](experiments/milestones/milestone15/) | The framework computes cohomology; observers supply gauge | Phase 1 closed | C_6 = -I proven; connection generator = box momentum operator |
 | **M16** [Relational locality](experiments/milestones/milestone16/) | How neighbours come to cohere | active (re-founded 2026-08-14) | The engine's large-scale component is real (coherent-power excess +12.5 sigma under PAC balance) and has no web geometry; mechanism re-founded |
 | **M17** [Criticality](experiments/milestones/milestone17/) | The corpus's limits are critical points where identity changes scale | 6/9 (Block A) | Instrumentation front-loaded; exp_03 open; Blocks B-E unstarted |
-| **M18** [Non-crystallographic completion](experiments/milestones/milestone18/) | phi enters as a projection (A4->H2, D6->H3, E8->H4), not a magnitude | **49/64** | Construction theorem (parents are branched double covers); rigidity 47/47 at n = 20; the fold's branch is dynamically visible (47/47); seven theorems filed |
+| **M18** [Non-crystallographic completion](experiments/milestones/milestone18/) | phi enters as a projection (A4->H2, D6->H3, E8->H4), not a magnitude | **51/67** | Construction theorem (parents are branched double covers); rigidity 47/47 at n = 20; the fold's branch is dynamically visible (47/47); seven theorems filed |
 
 ### Sidecars
 
