@@ -62,6 +62,7 @@ dawn-field-theory/
     20260903_235900_m18_blockD_sealed.md
     20260903_235959_m18_blockD_outcomes.md
     20260904_120500_m18_phase8_n24.md
+    20260904_150000_m18_two_theorems.md
     README.md
   .claude/
     skills/
@@ -2610,6 +2611,7 @@ dawn-field-theory/
           2026-09-03_exp09_outcomes.md
           2026-09-03_exp19_outcomes_n22.md
           2026-09-03_phase8_registration.md
+          2026-09-04_after_phase8_two_theorems.md
           2026-09-04_exp19_outcomes_n24.md
         results/
           .gitignore
@@ -2734,6 +2736,9 @@ dawn-field-theory/
           explore_r8_t6_half_choices_n14.json
           explore_r9_log.txt
           explore_r9_mixed_trees_n14.json
+          explore_s1_resultant_square_20260904.txt
+          explore_s2_metallic_family_20260904.txt
+          explore_s3_third_species_20260904.txt
         scripts/
           exp_01_foldings_exist.py
           exp_02_projection_carries_phi.py
@@ -2802,6 +2807,9 @@ dawn-field-theory/
           explore_r7b_core_fold_structure.py
           explore_r8_t6_half_choices.py
           explore_r9_mixed_trees.py
+          explore_s1_resultant_square.py
+          explore_s2_metallic_family.py
+          explore_s3_third_species.py
       milestone2/
         README.md
         meta.yaml

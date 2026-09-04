@@ -218,3 +218,29 @@ Results that are **measured** rather than proven live with their experiments —
 [`THEORY_MAP.md`](../../THEORY_MAP.md), where each claim resolves across all four layers.
 
 Attempted and unproven work is in [`../conjectures/`](../conjectures/).
+
+## Forest resultants are perfect squares
+
+For forests F and G, |Res(charpoly F, charpoly G)| is a **perfect square** whenever it is nonzero.
+A forest is bipartite, so its adjacency spectrum is symmetric about 0; the index pairs with
+λ, μ ≠ 0 partition into quadruples {±λ} × {±μ}, each contributing (λ−μ)(λ+μ)(−λ−μ)(−λ+μ) = (λ²−μ²)².
+A one-sided zero eigenvalue of multiplicity m contributes (±det)^m with |det| already a square;
+a two-sided zero makes the resultant vanish. C = 2I − A changes the resultant by a sign only.
+
+**Corollaries.** Res(q₀, q₁) is a perfect square on every fold half, since q₁ = charpoly(D−A−B) and
+q₀ ≡ charpoly(D−e) (mod q₁) are forest polynomials. And two forests that both carry a zero
+eigenvalue have resultant 0 — exactly the degenerate half the census declares and never scores.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-04_after_phase8_two_theorems.md`](../../experiments/milestones/milestone18/journals/2026-09-04_after_phase8_two_theorems.md) §1 · *verified:* `explore_s1` 112/112 adjacency, 120/120 Cartan, control 35/150 on non-bipartite; 236/236 fold halves in the census (exp_19)
+
+## The golden coupling is forced by simple-lacedness
+
+In the construction parent the defect edge's weight w is the only free parameter. The sheet-mixing
+subspaces W_γ = span{(v,0) + γ(v,1)} are invariant iff **γ² + w·γ − 1 = 0**, of discriminant
+**w² + 4**, so the fold field is ℚ(√(w²+4)). It is ℚ(√5) — with γ = 1/φ and bond weights φ and
+−1/φ — **exactly at w = 1**, the simply-laced choice in which the defect edge carries the same weight
+as every other edge of the cover. The family γ² + wγ − 1 = 0 is the metallic means; golden is its
+w = 1 member, and w = 0 is degenerate (rational, no fold). Generalizes the construction theorem,
+whose statement is the w = 1 case.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-04_after_phase8_two_theorems.md`](../../experiments/milestones/milestone18/journals/2026-09-04_after_phase8_two_theorems.md) §2 · *verified:* `explore_s2` symbolic; at w = 1 the construction returns the A₄ path with charpoly(parent) = q·σ(q) exactly

@@ -60,7 +60,7 @@ run — the Honest-risks criterion ("a result that could have failed and didn't"
 Block B; opening Block D is a decision recorded in the commit that seals its registration, not
 a consequence of this line.
 
-**Theorems filed: 8 · open conjectures: 8 · killed: 2 (polynomial integrality 09-02; exact denominator 09-04) · retired: 1 (Block D reach, 2026-09-03)** — in [`formal/theorems/`](../../../formal/theorems/README.md)
+**Theorems filed: 10 · open conjectures: 8 · killed: 2 (polynomial integrality 09-02; exact denominator 09-04) · retired: 1 (Block D reach, 2026-09-03)** — in [`formal/theorems/`](../../../formal/theorems/README.md)
 and [`formal/conjectures/m18_open.md`](../../../formal/conjectures/m18_open.md). The scorecard
 above counts sealed tests; this line counts proofs. Neither is the other. The kill (2026-09-02,
 r21): the *polynomial* form of integrality, 5·b(t) ∈ ℤ[t], fails on three construction parents at
