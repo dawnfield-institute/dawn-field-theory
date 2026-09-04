@@ -402,7 +402,7 @@ registration (STANDARDS §2.9, `docs/frame-control-standard`).
 
 ### Documents Updated
 - `experiments/milestones/milestone18/README.md` — Predictions registry, forward note on P1 (registered text untouched).
-- `experiments/milestones/milestone18/journals/2026-09-02_blockD_registration_DRAFT.md` — T4.
+- `experiments/milestones/milestone18/journals/2026-09-03_blockD_registration.md` — T4.
 
 ### Key Insight
 Register the *object* with the *relation*. "A ratio between sets" was representation-free, as
