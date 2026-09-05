@@ -115,4 +115,10 @@ inside ×1.25 on the first attempt. The same smoke test printed sink-arm structu
 they are in the registration's §0.4, and the expected-direction text moved on their account before
 the seal (T2 "open" → "leaning null"), which is what §0 is for. The aggregator once globbed its own
 output and crashed the second aggregation; the first two scored JSONs in `results/` are the τ\*
-selection on the pre-D grid, the third carries D. None of this touched a threshold.
+selection on the pre-D grid, the third carries D. After the PRs opened, reality-engine's CI failed
+the KA-i convergence check that had passed here at 7.6×: it halved `cfl` over 500 ticks, but the
+Courant step exceeds `dt_ref` until t ≈ 3, so both runs integrated at the same dt and the ratio was
+the chaotic late phase (0.69× and 1.45× on CI, a different number per run). The instrument now
+halves the step itself over the smooth window t ≤ 3 — 2.00× and 2.01× for two halvings,
+deterministic. The energy bound itself held everywhere; the closure residuals and every number in
+this journal come from the ledger, not from that check. None of this touched a threshold.
