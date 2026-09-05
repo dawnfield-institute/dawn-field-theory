@@ -3554,6 +3554,7 @@ dawn-field-theory/
           radiation_physics.py
         journals/
           2026-08-27_energy_scale_propagation_and_the_depth_slot.md
+          2026-09-05_exp28_registration.md
         results/
           exp_01_ledger_severance_mechanics_20260527_170019.json
           exp_02_alpha_decay_discrete_severance_20260527_170031.json
@@ -3617,6 +3618,7 @@ dawn-field-theory/
           exp_25_series_sweet_spots.py
           exp_26_channel_completeness.py
           exp_27_bifractal_time_emergence.py
+          exp_28_dynamical_severance.py
     spikes/
       RECURSIVE_FRACTAL_ARITHMETIC.md
       constant_number_fields/
