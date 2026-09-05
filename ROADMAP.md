@@ -70,17 +70,25 @@ sizes is retired; the mathematics stands; P1's registered form is forward-correc
 **Nearest registrable target:** Phase 8's parity law at n = 24 (census running) and the exact
 denominator of the reflection polynomial (three cases carry the odd-prime half).
 
-### Milestone R — propagate the energy-scale fix
+### Milestone R — the trigger is a core detector; the energy scale is still in the wrong slot
 
-60/112 across 27 experiments. The decisive result is exp_24: replacing `E_Planck · φ^(−d)`
-with **`α(d)² · m_mediator`** puts the EM scale at 11.4 ppm of the Rydberg and the nuclear
-scale within 1.75×. That one change resolves **eight** earlier failures sharing a single
-root cause.
+62/116 across 28 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
+derived severance trigger (exp_15's all-edges overstress) for the first time as a
+*dynamical* step, on reality-engine's v4 particle substrate: `min_j |S_i − S_j| > τ` fires
+only at extrema of the field, and on a structured field the extrema are the collapse cores
+— severance removed the bound, connected part and left the rest hotter and less connected
+than a random subset at the same count (T2 −2.6 σ at the onset τ; a null at n = 4000 where
+half is removed; never above random). The exp_15/16 graph results
+stand (their field was noise); what closes is the entropy-gradient barrier as an amount-free
+*dynamical* sink. Registrable next: a barrier on *under*-stress, and the sign question it
+raises beside exp_14.
 
-Open: propagate it back through exp_03–09, currently scored against the old scale and
-recorded as failures for a reason now known to be wrong. This is the highest-value
-unfinished work in the corpus — it converts recorded failures into results without
-weakening a threshold, because the threshold never changed; the scale was wrong.
+exp_24 replaced `E_Planck · φ^(−d)` with **`α(d)² · m_mediator`** (EM scale at 11.4 ppm of
+the Rydberg). The 2026-08-27 propagation showed it fixes **two** of its six named failures,
+not eight, and that the (depth, mediator) pair is exactly degenerate — a fitted depth
+measures the mediator choice. Open: the energy scale needs a representation that carries
+φ⁻¹ once and a Fibonacci index multiset, which `α(d)² · m` does not; several remaining
+passes are tautological at the Planck scale and may fail once the scale is right.
 
 Also standing from Block C: Geiger–Nuttall shown to be a **universality theorem** for any
 d-simultaneous-threshold barrier (exp_16, 4/4), universal exponent k = 1.16 ± 0.02 across
