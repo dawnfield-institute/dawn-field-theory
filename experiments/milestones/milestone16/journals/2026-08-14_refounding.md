@@ -180,3 +180,14 @@ rather than "nothing happens." That is a target.
 `2026-08-14_exp01_prereg.md` — registered before any patch variant exists. Registered
 invariant ξ/L_patch, four tests, kill sentence, three secondary failure conditions. Its
 control-arm values are the measured numbers above, not remembered ones.
+
+---
+
+**Forward note (2026-09-05).** The exp_10 row in the table above — "Ξ is the *optimal operating
+point* for structural complexity" — was retracted in `reality-engine` on 2026-08-16 and is
+propagated here now. exp_10's reported optimum sits at an endpoint of the swept window in all
+four of its own result files, no metric has a local maximum at Ξ, the re-measurement in exp_10's
+own convention finds no interior optimum in 0.3–2.5 (Ξ beaten 7.70σ), and the runs were in the
+clamp-saturated regime identified 2026-08-28. The Q2 prior drawn from it is withdrawn. This
+journal is not edited; see `gravity_from_maxwell_pac/SYNTHESIS.md` (forward note) and
+`theory/corrections.md` §7.

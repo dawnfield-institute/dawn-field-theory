@@ -508,3 +508,69 @@ No mystery = Natural emergence from PAC redistribution
 
 ---
 *This correction was applied systematically across all theory documents to prevent the perpetuation of the 15.56x universal constant misconception.*
+
+---
+
+## 7. The "Ξ is the optimal operating point" Reading — Retracted (September 2026)
+
+### ❌ Previous Claim
+
+From `experiments/studies/gravity_from_maxwell_pac` exp_10 (2025-01-19), restated as corpus fact
+in the study's `SYNTHESIS.md`, the Milestone 16 README and its refounding journal:
+
+> Ξ ≈ 1.057 is not a phase transition point, but the **optimal operating point** for maximum
+> structural complexity. SEC balance continuously modulates structure.
+
+Evidence behind it: one sweep of `sec_balance` over 0.3–1.3, one seed, 2000 particles, 400 steps,
+four one-point statistics. No numeric score was ever attached.
+
+### ✅ Corrected Understanding
+
+**exp_10 does not distinguish any operating point.** Three independent grounds, the first from
+the study's own committed data:
+
+1. The reported `critical_point` sits at an **endpoint of the swept window in all four** of
+   exp_10's result files — 0.1, 0.2, 1.5, 1.3 for windows starting at 0.1, 0.2, 0.5, 0.3. The
+   optimum tracked the sweep. No metric (density CV, void fraction, filament fraction,
+   clustering, max entropy) has a local maximum at Ξ.
+2. Re-measurement in exp_10's own convention with five seeds swept to 2.5 (reality-engine
+   POC-07 exp_03, 2026-08-16): density CV rises monotonically and is still at the endpoint at
+   2.5; Ξ is beaten by 7.70σ. There is no interior optimum anywhere in 0.3–2.5.
+3. Every run used `dt = 0.05, damping = 0.99, max_speed = 2.0` with an entropy rule that never
+   decays — the regime shown on 2026-08-28 to pin every particle at the speed cap, discarding
+   force magnitude, so that `sec_balance` could not reach the dynamics. Whether it was fully
+   inert in the 2D runs is unmeasured; it does not rescue the reading either way.
+
+The retraction was made in `reality-engine` on 2026-08-16 and not propagated to this repository
+until 2026-09-05. A retracted claim was cited as fact for twenty days.
+
+### Evidence
+
+- `reality-engine/proof_of_concepts/v4/poc_07_particle_substrate/journals/2026-08-16_xi-is-not-the-optimum.md`
+- `reality-engine/proof_of_concepts/v4/poc_07_particle_substrate/results/exp_02_xi_20260816_010504.json`,
+  `exp_03_xi_exp10_20260816_124647.json`
+- `experiments/studies/gravity_from_maxwell_pac/results/exp_10_sweep_20260119_{152216,152409,154217,154450}.json`
+- `reality-engine/.changelog/20260828_215838_clamp_saturation_diagnostic.md`
+
+### Documents Updated
+
+- `experiments/studies/gravity_from_maxwell_pac/SYNTHESIS.md` — forward note under the Key
+  Finding (text preserved). Also records that the script's `SweepConfig` defaults (n = 1500,
+  600 steps, `memory_decay` unread) are not what ran; `main()` sets n = 2000, JSONs record 400.
+- `experiments/milestones/milestone16/README.md` — exp_10 row marked retracted; the Q2 prior
+  ("expect a continuous optimum near Ξ") withdrawn — Q2 starts from no prior.
+- `experiments/milestones/milestone16/journals/2026-08-14_refounding.md` — forward note appended;
+  the journal is not edited.
+
+### What Survives
+
+- The cosmic web itself (exp_09, exp_12), which PACSeries v0.2 cites — untouched.
+- `183 = Φ₃(F₇)` and the GW170817 result from the same study — untouched.
+- **Ξ = γ + ln φ as the canonical constant** (M11 exp_09, THEORY_MAP) — it never rested on exp_10.
+- Milestone 17's framing, which already treated exp_10's four statistics as non-order-parameters
+  and `sec_balance` as a choice rather than a derived occupation probability.
+
+### Not Addressed Here
+
+The separate Ξ_analytic (γ + ln φ) vs Ξ_Fib (1 + π/55) reconciliation drafted 2026-09-01
+(`core_workspace/xi_fork_memo.md`) is a distinct correction awaiting its own call.
