@@ -64,6 +64,7 @@ dawn-field-theory/
     20260904_120500_m18_phase8_n24.md
     20260904_150000_m18_two_theorems.md
     20260905_160500_xi_optimum_retraction_propagated.md
+    20260905_233000_mr_exp28_dynamical_severance.md
     README.md
   .claude/
     skills/
@@ -3554,6 +3555,7 @@ dawn-field-theory/
           radiation_physics.py
         journals/
           2026-08-27_energy_scale_propagation_and_the_depth_slot.md
+          2026-09-05_exp28_outcomes.md
           2026-09-05_exp28_registration.md
         results/
           exp_01_ledger_severance_mechanics_20260527_170019.json
@@ -3590,6 +3592,15 @@ dawn-field-theory/
           exp_25_series_sweet_spots_20260528_170521.json
           exp_26_channel_completeness_20260528_170642.json
           exp_27_bifractal_time_emergence_20260529_84002.json
+          exp_28_dynamical_severance_20260905_230309.json
+          exp_28_dynamical_severance_20260905_230329.json
+          exp_28_dynamical_severance_20260905_230513.json
+          exp_28_dynamical_severance_20260905_230902.json
+          exp_28_dynamical_severance_20260905_232916.json
+          exp_28_dynamical_severance_grid_full_20260905_232915.json
+          exp_28_dynamical_severance_grid_proxy_20260905_230329.json
+          exp_28_dynamical_severance_grid_proxy_20260905_230513.json
+          exp_28_dynamical_severance_grid_proxy_pre_d_20260905_230309.json
         scripts/
           exp_01_ledger_severance_mechanics.py
           exp_02_alpha_decay_discrete_severance.py

@@ -44,14 +44,20 @@ def selftest() -> int:
 
 
 def load_grid(argv):
-    if len(argv) > 1 and argv[1] != "--selftest":
-        path = Path(argv[1])
-    else:
+    """One or more grid JSONs (the proxy grid and the n = 4000 grid are aggregated separately);
+    runs and comparisons are concatenated. No fallback: absent grids raise."""
+    paths = [Path(a) for a in argv[1:] if a != "--selftest"]
+    if not paths:
         cands = sorted(RESULTS.glob("exp_28_dynamical_severance_grid_*.json"))
         if not cands:
             raise SystemExit("no results/exp_28_dynamical_severance_grid_*.json — nothing to score (no fallback)")
-        path = cands[-1]
-    return path, json.loads(path.read_text(encoding="utf-8"))
+        paths = [cands[-1]]
+    grid = {"runs": [], "comparisons": [], "commit": [], "files": []}
+    for p in paths:
+        g = json.loads(p.read_text(encoding="utf-8"))
+        grid["runs"] += g["runs"]; grid["comparisons"] += g["comparisons"]
+        grid["commit"].append(g.get("commit")); grid["files"].append(p.name)
+    return paths[-1], grid
 
 
 def pooled_std(a, b):
@@ -126,14 +132,24 @@ def score(grid: dict) -> dict:
         res["K2_fires"] = res["T2"].get(tau_star, {}).get("ok", False) and res["T4"]["verdict"] == "FAIL"
         per_size[size] = res
     out["per_size"] = per_size
-    # the scorecard: M = 4, scored on the FULL size when present, else the proxy (declared)
-    size = "full" if "full" in per_size else ("proxy" if "proxy" in per_size else None)
-    if size:
-        r = per_size[size]
-        out["scored_size"] = size
-        out["tests"] = {"T1": "PASS" if r["T1_pass"] else "FAIL", "T2": "PASS" if r["T2_pass"] else "FAIL",
-                        "T3": r["T3"]["verdict"], "T4": r["T4"]["verdict"]}
-        out["kills"] = {"K1": r["K1_fires"], "K2": r["K2_fires"]}
+    # the scorecard, M = 4, as the registration words it: T1/T2 pass on the proxy at >= 2 of 3 tau
+    # AND, when the n = 4000 grid is present, at tau* there (a single tau: the >= 2-of-3 rule is
+    # the proxy's); T3/T4 and the kills are read at tau* on the largest size present.
+    if "proxy" in per_size:
+        px = per_size["proxy"]; tau_star = px["tau_star"]
+        t1, t2 = px["T1_pass"], px["T2_pass"]
+        if "full" in per_size:
+            fl = per_size["full"]
+            t1 = t1 and bool(fl["T1"].get(tau_star, {}).get("ok"))
+            t2 = t2 and bool(fl["T2"].get(tau_star, {}).get("ok"))
+            fl["tau_star"] = tau_star          # the proxy selects tau*; the full grid ran only there
+        big = per_size["full"] if "full" in per_size else px
+        out["scored_size"] = "proxy+full" if "full" in per_size else "proxy"
+        out["tau_star"] = tau_star
+        out["tests"] = {"T1": "PASS" if t1 else "FAIL", "T2": "PASS" if t2 else "FAIL",
+                        "T3": big["T3"]["verdict"] if t2 else "UNINFORMATIVE",
+                        "T4": big["T4"]["verdict"] if t2 else "UNINFORMATIVE"}
+        out["kills"] = {"K1": t2 and out["tests"]["T3"] == "FAIL", "K2": t2 and out["tests"]["T4"] == "FAIL"}
         out["score"] = f"{sum(1 for v in out['tests'].values() if v == 'PASS')}/4"
     return out
 
