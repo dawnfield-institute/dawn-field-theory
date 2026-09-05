@@ -1,0 +1,17 @@
+TEST 1: |Res_A(F, G)| a perfect square for forests F, G (nonzero cases)
+   perfect square: 112/112
+   non-squares: []
+
+TEST 2: same in the Cartan channel (C = 2I - A), which is what the fold uses
+   perfect square: 120/120
+   non-squares: []
+
+TEST 3: CONTROL -- non-bipartite graphs should BREAK it
+   perfect square: 35/150  (expect well under 100% if bipartiteness is the cause)
+   non-square examples: [-5744, -32, 1056625, -133500, -17, 5851, 46, 8]
+
+TEST 4: odd-order forests carry a zero eigenvalue; check both parities separately
+   |F| even, |G| even: 86/86
+   |F| even, |G| odd : 61/61
+   |F| odd , |G| even: 48/48
+   |F| odd , |G| odd : 0/0

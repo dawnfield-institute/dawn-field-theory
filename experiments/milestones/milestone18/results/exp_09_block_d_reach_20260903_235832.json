@@ -1,0 +1,3965 @@
+{
+ "registration": "Block D (journals/2026-09-03_blockD_registration.md)",
+ "O1": {
+  "6": {
+   "n": 127,
+   "cells": {
+    "('H2', '2')": [
+     {
+      "q": "t**2 - 4*t + 1 + sqrt(5)",
+      "trRD": "-8*sqrt(5)/5",
+      "leak_oo": "16/5",
+      "leak_total": "16/5",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80"
+      ],
+      "vertex_by_level": {
+       "0": "0",
+       "1": "0",
+       "2": "0",
+       "3": "sqrt(5)/10",
+       "4": "-sqrt(5)/20",
+       "5": "-sqrt(5)/40",
+       "6": "sqrt(5)/80"
+      },
+      "n": "127",
+      "carrier": false
+     },
+     {
+      "q": "t**2 - 4*t - sqrt(5) + 1",
+      "trRD": "8*sqrt(5)/5",
+      "leak_oo": "16/5",
+      "leak_total": "16/5",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80"
+      ],
+      "vertex_by_level": {
+       "0": "0",
+       "1": "0",
+       "2": "0",
+       "3": "-sqrt(5)/10",
+       "4": "sqrt(5)/20",
+       "5": "sqrt(5)/40",
+       "6": "-sqrt(5)/80"
+      },
+      "n": "127",
+      "carrier": false
+     }
+    ]
+   },
+   "carrier": false
+  },
+  "7": {
+   "n": 255,
+   "cells": {
+    "('H2', '2')": [
+     {
+      "q": "t**2 - 4*t + 1 + sqrt(5)",
+      "trRD": "-16*sqrt(5)/5",
+      "leak_oo": "32/5",
+      "leak_total": "32/5",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80"
+      ],
+      "vertex_by_level": {
+       "0": "0",
+       "1": "0",
+       "2": "0",
+       "3": "0",
+       "4": "sqrt(5)/10",
+       "5": "-sqrt(5)/20",
+       "6": "-sqrt(5)/40",
+       "7": "sqrt(5)/80"
+      },
+      "n": "255",
+      "carrier": false
+     },
+     {
+      "q": "t**2 - 4*t - sqrt(5) + 1",
+      "trRD": "16*sqrt(5)/5",
+      "leak_oo": "32/5",
+      "leak_total": "32/5",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80"
+      ],
+      "vertex_by_level": {
+       "0": "0",
+       "1": "0",
+       "2": "0",
+       "3": "0",
+       "4": "-sqrt(5)/10",
+       "5": "sqrt(5)/20",
+       "6": "sqrt(5)/40",
+       "7": "-sqrt(5)/80"
+      },
+      "n": "255",
+      "carrier": false
+     }
+    ]
+   },
+   "carrier": false
+  },
+  "8": {
+   "n": 511,
+   "cells": {
+    "('H2', '2')": [
+     {
+      "q": "t**2 - 4*t + 1 + sqrt(5)",
+      "trRD": "-67*sqrt(5)/10",
+      "leak_oo": "53/4",
+      "leak_total": "sqrt(5)/40 + 107/8",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80",
+       "1089/1310720",
+       "1089/20480",
+       "1089/327680",
+       "1089/81920"
+      ],
+      "vertex_by_level": {
+       "0": "sqrt(5)/10",
+       "1": "-sqrt(5)/20",
+       "2": "-sqrt(5)/40",
+       "3": "sqrt(5)/80",
+       "4": "0",
+       "5": "33*sqrt(5)/320",
+       "6": "-33*sqrt(5)/640",
+       "7": "-33*sqrt(5)/1280",
+       "8": "33*sqrt(5)/2560"
+      },
+      "n": "511",
+      "carrier": false
+     },
+     {
+      "q": "t**2 - 4*t - sqrt(5) + 1",
+      "trRD": "67*sqrt(5)/10",
+      "leak_oo": "53/4",
+      "leak_total": "107/8 - sqrt(5)/40",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80",
+       "1089/1310720",
+       "1089/20480",
+       "1089/327680",
+       "1089/81920"
+      ],
+      "vertex_by_level": {
+       "0": "-sqrt(5)/10",
+       "1": "sqrt(5)/20",
+       "2": "sqrt(5)/40",
+       "3": "-sqrt(5)/80",
+       "4": "0",
+       "5": "-33*sqrt(5)/320",
+       "6": "33*sqrt(5)/640",
+       "7": "33*sqrt(5)/1280",
+       "8": "-33*sqrt(5)/2560"
+      },
+      "n": "511",
+      "carrier": false
+     }
+    ],
+    "('H3', '2')": [
+     {
+      "q": "t**2 - 4*t - 1 + sqrt(5)",
+      "trRD": "-3*sqrt(5)/10",
+      "leak_oo": "9/100",
+      "leak_total": "23*sqrt(5)/200 + 87/200",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/1310720",
+       "1/20",
+       "1/20480",
+       "1/320",
+       "1/327680",
+       "1/80",
+       "1/81920"
+      ],
+      "vertex_by_level": {
+       "0": "sqrt(5)/10",
+       "1": "sqrt(5)/20",
+       "2": "-sqrt(5)/40",
+       "3": "-sqrt(5)/80",
+       "4": "0",
+       "5": "-sqrt(5)/320",
+       "6": "-sqrt(5)/640",
+       "7": "sqrt(5)/1280",
+       "8": "sqrt(5)/2560"
+      },
+      "n": "511",
+      "carrier": false
+     },
+     {
+      "q": "t**2 - 4*t - sqrt(5) - 1",
+      "trRD": "3*sqrt(5)/10",
+      "leak_oo": "9/100",
+      "leak_total": "87/200 - 23*sqrt(5)/200",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/1310720",
+       "1/20",
+       "1/20480",
+       "1/320",
+       "1/327680",
+       "1/80",
+       "1/81920"
+      ],
+      "vertex_by_level": {
+       "0": "-sqrt(5)/10",
+       "1": "-sqrt(5)/20",
+       "2": "sqrt(5)/40",
+       "3": "sqrt(5)/80",
+       "4": "0",
+       "5": "sqrt(5)/320",
+       "6": "sqrt(5)/640",
+       "7": "-sqrt(5)/1280",
+       "8": "-sqrt(5)/2560"
+      },
+      "n": "511",
+      "carrier": false
+     }
+    ],
+    "combined": [
+     {
+      "q": "(t**2 - 4*t - 1 + sqrt(5))*(t**2 - 4*t + 1 + sqrt(5))",
+      "trRD": "-7*sqrt(5)",
+      "leak_oo": "1339/100",
+      "leak_total": "sqrt(5)/10 + 1371/100",
+      "vertex_sq": [
+       "0",
+       "1/20",
+       "1/320",
+       "1/5",
+       "1/80",
+       "289/20480",
+       "289/327680"
+      ],
+      "vertex_by_level": {
+       "0": "sqrt(5)/5",
+       "1": "0",
+       "2": "-sqrt(5)/20",
+       "3": "0",
+       "4": "0",
+       "5": "sqrt(5)/10",
+       "6": "-17*sqrt(5)/320",
+       "7": "-sqrt(5)/40",
+       "8": "17*sqrt(5)/1280"
+      },
+      "n": "511",
+      "carrier": false
+     },
+     {
+      "q": "(t**2 - 4*t + 1 + sqrt(5))*(t**2 - 4*t - sqrt(5) - 1)",
+      "trRD": "-32*sqrt(5)/5",
+      "leak_oo": "336/25",
+      "leak_total": "344/25 - 2*sqrt(5)/25",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80",
+       "289/5120",
+       "289/81920"
+      ],
+      "vertex_by_level": {
+       "0": "0",
+       "1": "-sqrt(5)/10",
+       "2": "0",
+       "3": "sqrt(5)/40",
+       "4": "0",
+       "5": "17*sqrt(5)/160",
+       "6": "-sqrt(5)/20",
+       "7": "-17*sqrt(5)/640",
+       "8": "sqrt(5)/80"
+      },
+      "n": "511",
+      "carrier": false
+     },
+     {
+      "q": "(t**2 - 4*t - 1 + sqrt(5))*(t**2 - 4*t - sqrt(5) + 1)",
+      "trRD": "32*sqrt(5)/5",
+      "leak_oo": "336/25",
+      "leak_total": "2*sqrt(5)/25 + 344/25",
+      "vertex_sq": [
+       "0",
+       "1/1280",
+       "1/20",
+       "1/320",
+       "1/80",
+       "289/5120",
+       "289/81920"
+      ],
+      "vertex_by_level": {
+       "0": "0",
+       "1": "sqrt(5)/10",
+       "2": "0",
+       "3": "-sqrt(5)/40",
+       "4": "0",
+       "5": "-17*sqrt(5)/160",
+       "6": "sqrt(5)/20",
+       "7": "17*sqrt(5)/640",
+       "8": "-sqrt(5)/80"
+      },
+      "n": "511",
+      "carrier": false
+     },
+     {
+      "q": "(t**2 - 4*t - sqrt(5) - 1)*(t**2 - 4*t - sqrt(5) + 1)",
+      "trRD": "7*sqrt(5)",
+      "leak_oo": "1339/100",
+      "leak_total": "1371/100 - sqrt(5)/10",
+      "vertex_sq": [
+       "0",
+       "1/20",
+       "1/320",
+       "1/5",
+       "1/80",
+       "289/20480",
+       "289/327680"
+      ],
+      "vertex_by_level": {
+       "0": "-sqrt(5)/5",
+       "1": "0",
+       "2": "sqrt(5)/20",
+       "3": "0",
+       "4": "0",
+       "5": "-sqrt(5)/10",
+       "6": "17*sqrt(5)/320",
+       "7": "sqrt(5)/40",
+       "8": "-17*sqrt(5)/1280"
+      },
+      "n": "511",
+      "carrier": false
+     }
+    ]
+   },
+   "carrier": false
+  }
+ },
+ "O2": [
+  {
+   "label": "O2 exp_08_grid d1 mc5 s501 #0",
+   "n": 6,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "4",
+     "leak_total": "4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d2 mc3 s200 #0",
+   "n": 8,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "-4*sqrt(5)/11",
+     "leak_oo": "12/55",
+     "leak_total": "207/605 - 27*sqrt(5)/605",
+     "vertex_sq": [
+      "1/5",
+      "1/605",
+      "36/605",
+      "81/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d2 mc3 s200 #20",
+   "n": 8,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "-4*sqrt(5)/11",
+     "leak_oo": "12/55",
+     "leak_total": "207/605 - 27*sqrt(5)/605",
+     "vertex_sq": [
+      "1/5",
+      "1/605",
+      "36/605",
+      "81/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d2 mc3 s200 #17",
+   "n": 9,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "169/100",
+     "leak_total": "181/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d2 mc3 s200 #2",
+   "n": 10,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "4/25",
+     "leak_total": "16/25",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d2 mc3 s200 #69",
+   "n": 9,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "169/100",
+     "leak_total": "181/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc4 s402 #19",
+   "n": 10,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "-32*sqrt(5)/95",
+     "leak_oo": "4/19",
+     "leak_total": "118/361 - 78*sqrt(5)/1805",
+     "vertex_sq": [
+      "1/5",
+      "169/1805",
+      "4/1805",
+      "49/1805"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t - 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d2 mc3 s200 #60",
+   "n": 10,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "4/25",
+     "leak_total": "16/25",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc4 s402 #25",
+   "n": 10,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "-32*sqrt(5)/95",
+     "leak_oo": "4/19",
+     "leak_total": "118/361 - 78*sqrt(5)/1805",
+     "vertex_sq": [
+      "1/5",
+      "169/1805",
+      "4/1805",
+      "49/1805"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t - 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #14",
+   "n": 13,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #2",
+   "n": 12,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "-46*sqrt(5)/145",
+     "leak_oo": "6/29",
+     "leak_total": "264/841 - 34*sqrt(5)/841",
+     "vertex_sq": [
+      "1/5",
+      "64/4205",
+      "81*2**(160/189)*3**(82/189)*5**(32/63)*7**(125/189)/28000",
+      "9/4205"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t - 3/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #41",
+   "n": 12,
+   "grade": "core",
+   "halves": [
+    {
+     "trRD": "-46*sqrt(5)/145",
+     "leak_oo": "6/29",
+     "leak_total": "264/841 - 34*sqrt(5)/841",
+     "vertex_sq": [
+      "1/5",
+      "64/4205",
+      "81*2**(160/189)*3**(82/189)*5**(32/63)*7**(125/189)/28000",
+      "9/4205"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t - 3/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc2 s203 #0",
+   "n": 15,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-3*sqrt(5)/5",
+     "leak_oo": "1",
+     "leak_total": "1",
+     "vertex_sq": [
+      "1/20",
+      "1/320",
+      "1/5",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #3",
+   "n": 12,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "3104/1805",
+     "leak_total": "5714/1805",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + sqrt(5)*t - 2*sqrt(5) + 5"
+    },
+    {
+     "trRD": "-58*sqrt(5)/95",
+     "leak_oo": "2/19",
+     "leak_total": "774*sqrt(5)/1805 + 560/361",
+     "vertex_sq": [
+      "1369/1805",
+      "169/1805",
+      "4/1805",
+      "49/1805",
+      "529/1805"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + sqrt(5)/2 + 5/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #79",
+   "n": 19,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #25",
+   "n": 17,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #56",
+   "n": 17,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #16",
+   "n": 21,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #23",
+   "n": 22,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #11",
+   "n": 23,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #25",
+   "n": 24,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #64",
+   "n": 24,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #32",
+   "n": 24,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #62",
+   "n": 24,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #80",
+   "n": 24,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #1",
+   "n": 26,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #26",
+   "n": 25,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #45",
+   "n": 27,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #96",
+   "n": 25,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "6/11",
+     "leak_total": "186/121 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "16/605",
+      "36/605",
+      "4/45",
+      "4/5445"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**2 + 17*t**2 - 4*sqrt(5)*t - 4*t + sqrt(5)/2 + 3/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #72",
+   "n": 25,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "6/11",
+     "leak_total": "186/121 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "16/605",
+      "36/605",
+      "4/45",
+      "4/5445"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**2 + 17*t**2 - 4*sqrt(5)*t - 4*t + sqrt(5)/2 + 3/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #8",
+   "n": 26,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #33",
+   "n": 26,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d2 mc5 s502 #24",
+   "n": 27,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #33",
+   "n": 28,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #98",
+   "n": 27,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #73",
+   "n": 27,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #71",
+   "n": 28,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #43",
+   "n": 29,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "2**(349/354)*3**(305/354)*5**(341/354)*7**(53/236)/25",
+     "leak_total": "1063/350",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #13",
+   "n": 28,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #12",
+   "n": 29,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #28",
+   "n": 29,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #75",
+   "n": 29,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #49",
+   "n": 29,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "2**(349/354)*3**(305/354)*5**(341/354)*7**(53/236)/25",
+     "leak_total": "1063/350",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #29",
+   "n": 29,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #9",
+   "n": 30,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #70",
+   "n": 30,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc2 s204 #0",
+   "n": 31,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #87",
+   "n": 30,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #13",
+   "n": 30,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #99",
+   "n": 30,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d3 mc3 s300 #55",
+   "n": 31,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #30",
+   "n": 31,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc3 s303 #1",
+   "n": 31,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc4 s403 #12",
+   "n": 35,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #9",
+   "n": 41,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #26",
+   "n": 39,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #1",
+   "n": 40,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #21",
+   "n": 40,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #5",
+   "n": 41,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #33",
+   "n": 41,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "1849/2500",
+     "leak_total": "172049/122500",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #40",
+   "n": 45,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #10",
+   "n": 47,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #38",
+   "n": 47,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #84",
+   "n": 47,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #39",
+   "n": 47,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #89",
+   "n": 48,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #27",
+   "n": 48,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "1/100",
+     "leak_total": "109/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #33",
+   "n": 48,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #23",
+   "n": 49,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #18",
+   "n": 49,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #35",
+   "n": 49,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "6/11",
+     "leak_total": "186/121 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "16/605",
+      "36/605",
+      "4/45",
+      "4/5445"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**2 + 17*t**2 - 4*sqrt(5)*t - 4*t + sqrt(5)/2 + 3/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #35",
+   "n": 50,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #62",
+   "n": 50,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #21",
+   "n": 50,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #4",
+   "n": 50,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #37",
+   "n": 51,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #32",
+   "n": 52,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #48",
+   "n": 51,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "1849/2500",
+     "leak_total": "172049/122500",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #32",
+   "n": 52,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #37",
+   "n": 48,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "311/1100",
+     "leak_total": "22489/12100 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + sqrt(5)*t**2 - 7*sqrt(5)*t/2 + 17*t/2 - sqrt(5)/2 + 3/2"
+    },
+    {
+     "trRD": "29*sqrt(5)/55",
+     "leak_oo": "311/1100",
+     "leak_total": "108*sqrt(5)/605 + 22489/12100",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + sqrt(5)*t**2 - 9*sqrt(5)*t/2 + 17*t/2 - 7/2 + 3*sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #12",
+   "n": 52,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #19",
+   "n": 53,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #90",
+   "n": 54,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #4",
+   "n": 54,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #42",
+   "n": 54,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #43",
+   "n": 54,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #81",
+   "n": 55,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #49",
+   "n": 54,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #53",
+   "n": 56,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #45",
+   "n": 55,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #0",
+   "n": 57,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #44",
+   "n": 59,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #2",
+   "n": 60,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #87",
+   "n": 59,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #74",
+   "n": 60,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #12",
+   "n": 61,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #29",
+   "n": 61,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #13",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #25",
+   "n": 61,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #26",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #13",
+   "n": 56,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "1631/1100",
+     "leak_total": "29749/12100 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + sqrt(5)*t**2 - 7*sqrt(5)*t/2 + 17*t/2 - sqrt(5)/2 + 3/2"
+    },
+    {
+     "trRD": "29*sqrt(5)/55",
+     "leak_oo": "1631/1100",
+     "leak_total": "108*sqrt(5)/605 + 29749/12100",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + sqrt(5)*t**2 - 9*sqrt(5)*t/2 + 17*t/2 - 7/2 + 3*sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #36",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #65",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #62",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #83",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #48",
+   "n": 61,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-sqrt(5)",
+     "leak_oo": "29/25",
+     "leak_total": "41/25 - 4*sqrt(5)/25",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + 3*sqrt(5)*t**2/2 + 37*t**2/2 - 6*sqrt(5)*t - 10*t + 4 + 2*sqrt(5)"
+    },
+    {
+     "trRD": "sqrt(5)/5",
+     "leak_oo": "29/25",
+     "leak_total": "4*sqrt(5)/25 + 41/25",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**2/2 + 37*t**2/2 - 10*t - 2*sqrt(5)*t - 1 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #1",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/64",
+     "leak_total": "199/64",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #66",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "6/11",
+     "leak_total": "186/121 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**2 + 17*t**2 - 4*sqrt(5)*t - 4*t + sqrt(5)/2 + 3/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #61",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #47",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #70",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #25",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-87*sqrt(5)/55",
+     "leak_oo": "9/11",
+     "leak_total": "279/121 - 324*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "16/605",
+      "36/605",
+      "4/45",
+      "4/5445",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**6 - 12*t**5 + 3*sqrt(5)*t**4/2 + 99*t**4/2 - 76*t**3 - 12*sqrt(5)*t**3 + 57*t**2/2 + 51*sqrt(5)*t**2/2 - 18*t - 6*sqrt(5)*t + 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #9",
+   "n": 62,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc2 s200 #0",
+   "n": 63,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-4*sqrt(5)/5",
+     "leak_oo": "8/5",
+     "leak_total": "8/5",
+     "vertex_sq": [
+      "0",
+      "1/1280",
+      "1/20",
+      "1/320",
+      "1/80"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + 2*sqrt(5)*t**2 + 18*t**2 - 8*sqrt(5)*t - 8*t + 2*sqrt(5) + 6"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #41",
+   "n": 63,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #82",
+   "n": 63,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "12769/28900",
+     "leak_total": "33981/28900",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #44",
+   "n": 65,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc4 s404 #45",
+   "n": 64,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #78",
+   "n": 65,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #43",
+   "n": 66,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #13",
+   "n": 66,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "1/100",
+     "leak_total": "109/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #7",
+   "n": 67,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "75/4",
+     "leak_total": "75/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + 3*sqrt(5)*t**2 - 12*sqrt(5)*t + 27*t - 38 + 17*sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #93",
+   "n": 68,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #14",
+   "n": 68,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #44",
+   "n": 68,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #30",
+   "n": 69,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #8",
+   "n": 69,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #16",
+   "n": 70,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #2",
+   "n": 71,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #39",
+   "n": 73,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #51",
+   "n": 73,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc5 s504 #34",
+   "n": 76,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #58",
+   "n": 75,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #64",
+   "n": 77,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "1/100",
+     "leak_total": "109/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #20",
+   "n": 77,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #72",
+   "n": 78,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_07 d5 mc3 s300 #18",
+   "n": 78,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #73",
+   "n": 72,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "839/1100",
+     "leak_total": "5369/2420 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + sqrt(5)*t**2 - 7*sqrt(5)*t/2 + 17*t/2 - sqrt(5)/2 + 3/2"
+    },
+    {
+     "trRD": "29*sqrt(5)/55",
+     "leak_oo": "839/1100",
+     "leak_total": "108*sqrt(5)/605 + 5369/2420",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + sqrt(5)*t**2 - 9*sqrt(5)*t/2 + 17*t/2 - 7/2 + 3*sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #26",
+   "n": 78,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #6",
+   "n": 78,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "6/11",
+     "leak_total": "186/121 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "16/605",
+      "36/605",
+      "4/45",
+      "4/5445"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**2 + 17*t**2 - 4*sqrt(5)*t - 4*t + sqrt(5)/2 + 3/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #0",
+   "n": 79,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #59",
+   "n": 79,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "1/100",
+     "leak_total": "109/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc4 s404 #21",
+   "n": 79,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc5 s504 #10",
+   "n": 80,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #42",
+   "n": 81,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-87*sqrt(5)/55",
+     "leak_oo": "9/11",
+     "leak_total": "279/121 - 324*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "16/605",
+      "36/605",
+      "4/45",
+      "4/5445",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**6 - 12*t**5 + 3*sqrt(5)*t**4/2 + 99*t**4/2 - 76*t**3 - 12*sqrt(5)*t**3 + 57*t**2/2 + 51*sqrt(5)*t**2/2 - 18*t - 6*sqrt(5)*t + 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #24",
+   "n": 82,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #11",
+   "n": 84,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #52",
+   "n": 85,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "6/11",
+     "leak_total": "186/121 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**2 + 17*t**2 - 4*sqrt(5)*t - 4*t + sqrt(5)/2 + 3/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #24",
+   "n": 85,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #27",
+   "n": 85,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "75/4",
+     "leak_total": "75/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**3 - 6*t**2 + 3*sqrt(5)*t**2 - 12*sqrt(5)*t + 27*t - 38 + 17*sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #36",
+   "n": 85,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc3 s304 #43",
+   "n": 87,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #40",
+   "n": 87,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #86",
+   "n": 88,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d5 mc3 s500 #79",
+   "n": 88,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #48",
+   "n": 89,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d5 mc3 s500 #40",
+   "n": 90,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d5 mc3 s500 #97",
+   "n": 91,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #26",
+   "n": 91,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-29*sqrt(5)/55",
+     "leak_oo": "3/11",
+     "leak_total": "93/121 - 108*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 1/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #30",
+   "n": 92,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/2",
+     "leak_total": "25/2",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t**2 - 4*t + 2*sqrt(5)*t - 4*sqrt(5) + 9"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #69",
+   "n": 95,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "49/100",
+     "leak_total": "29/20",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d3 mc5 s503 #5",
+   "n": 95,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #88",
+   "n": 98,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "121/100",
+     "leak_total": "169/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08_grid d4 mc5 s504 #14",
+   "n": 99,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "25/4",
+     "leak_total": "25/4",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #20",
+   "n": 100,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "1/100",
+     "leak_total": "109/100",
+     "vertex_sq": [
+      "0"
+     ],
+     "carrier": false,
+     "q": "t - 2 + sqrt(5)"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O2 exp_08 d4 mc3 s400 #17",
+   "n": 92,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "1139/1100",
+     "leak_total": "7229/2420 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**5 - 10*t**4 + sqrt(5)*t**4 - 7*sqrt(5)*t**3 + 33*t**3 - 33*t**2 + 11*sqrt(5)*t**2 - 21*t/2 + 9*sqrt(5)*t/2 - 1/2 + sqrt(5)/2"
+    },
+    {
+     "trRD": "-58*sqrt(5)/55",
+     "leak_oo": "1139/1100",
+     "leak_total": "7229/2420 - 216*sqrt(5)/605",
+     "vertex_sq": [
+      "0",
+      "1/20",
+      "1/2420",
+      "81/2420",
+      "9/605"
+     ],
+     "carrier": false,
+     "q": "t**5 - 10*t**4 - sqrt(5)*t**4 + 9*sqrt(5)*t**3 + 33*t**3 - 23*sqrt(5)*t**2 - 43*t**2 + 25*sqrt(5)*t/2 + 59*t/2 - 5*sqrt(5)/2 - 11/2"
+    }
+   ],
+   "carrier": false
+  }
+ ],
+ "O3": [
+  {
+   "label": "O3 unicyclic m=9 #3",
+   "n": 9,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "2/5",
+     "leak_total": "2/5",
+     "vertex_sq": [
+      "0",
+      "1/20"
+     ],
+     "carrier": false,
+     "q": "t**2 - 9*t/2 - sqrt(5)*t/2 + sqrt(5) + 4"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O3 unicyclic m=7 #19",
+   "n": 7,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-2*sqrt(5)/5",
+     "leak_oo": "4/5",
+     "leak_total": "4/5",
+     "vertex_sq": [
+      "0",
+      "1/20"
+     ],
+     "carrier": false,
+     "q": "t - 5/2 + sqrt(5)/2"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O3 unicyclic m=9 #7",
+   "n": 9,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "0",
+     "leak_oo": "0",
+     "leak_total": "0",
+     "vertex_sq": [
+      "0",
+      "1/20"
+     ],
+     "carrier": false,
+     "q": "t**2 - 9*t/2 - sqrt(5)*t/2 + sqrt(5) + 4"
+    }
+   ],
+   "carrier": false
+  },
+  {
+   "label": "O3 unicyclic m=9 #1",
+   "n": 9,
+   "grade": "partial",
+   "halves": [
+    {
+     "trRD": "-8*sqrt(5)/15",
+     "leak_oo": "109/120",
+     "leak_total": "sqrt(5)/24 + 139/120",
+     "vertex_sq": [
+      "1/45",
+      "1/720",
+      "121/720",
+      "4/45",
+      "5/144",
+      "9/80"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**3 - 5*sqrt(5)*t**2 + 22*t**2 - 19*t + 5*sqrt(5)*t - 5 + 3*sqrt(5)"
+    },
+    {
+     "trRD": "8*sqrt(5)/15",
+     "leak_oo": "109/120",
+     "leak_total": "139/120 - sqrt(5)/24",
+     "vertex_sq": [
+      "1/45",
+      "1/720",
+      "121/720",
+      "4/45",
+      "5/144",
+      "9/80"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + sqrt(5)*t**3 - 7*sqrt(5)*t**2 + 22*t**2 - 29*t + 13*sqrt(5)*t - 7*sqrt(5) + 15"
+    },
+    {
+     "trRD": "-2*sqrt(5)/3",
+     "leak_oo": "127/180",
+     "leak_total": "sqrt(5)/30 + 43/45",
+     "vertex_sq": [
+      "1/45",
+      "1/720",
+      "289/720",
+      "4/45",
+      "49/720",
+      "5/9",
+      "9/80"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 + 3*sqrt(5)*t**2/2 + 39*t**2/2 - 14*t - 6*sqrt(5)*t + 5 + 3*sqrt(5)"
+    },
+    {
+     "trRD": "2*sqrt(5)/5",
+     "leak_oo": "3/5",
+     "leak_total": "17/20 - sqrt(5)/20",
+     "vertex_sq": [
+      "1/5",
+      "4/5",
+      "5/16",
+      "9/80"
+     ],
+     "carrier": false,
+     "q": "t**4 - 8*t**3 - sqrt(5)*t**2/2 + 39*t**2/2 - 14*t + 2*sqrt(5)*t - 2*sqrt(5)"
+    }
+   ],
+   "carrier": false
+  }
+ ],
+ "T2a": {
+  "6": {
+   "t**2 - 4*t + 1 + sqrt(5)": [
+    "H2",
+    "2"
+   ]
+  },
+  "7": {
+   "t**2 - 4*t + 1 + sqrt(5)": [
+    "H2",
+    "2"
+   ]
+  },
+  "8": {
+   "t**2 - 4*t + 1 + sqrt(5)": [
+    "H2",
+    "2"
+   ],
+   "t**2 - 4*t - 1 + sqrt(5)": [
+    "H3",
+    "2"
+   ]
+  }
+ },
+ "T4": {
+  "i_E8_strict_carrier": true,
+  "ii_exp02_rerun": false,
+  "exp02_tail": "{\n \"T1\": {\n  \"n_shells\": 2,\n  \"counts\": [\n   120,\n   120\n  ],\n  \"pass\": true\n },\n \"T2\": {\n  \"ratio\": 1.6180339887498951,\n  \"phi\": 1.618033988749895,\n  \"dev\": 2.220446049250313e-16,\n  \"pass\": \"True\"\n },\n \"T3\": {\n  \"n_distinct_entries\": 6,\n  \"entries\": {\n   \"-0.223606797750\": \"(0+-1*sqrt5)/10\",\n   \"-0.000000000000\": \"(0+0*sqrt5)/1\",\n   \"0.052786404500\": \"(5+-2*sqrt5)/10\",\n   \"0.223606797750\": \"(0+1*sqrt5)/10\",\n   \"0.500000000000\": \"(1+0*sqrt5)/2\",\n   \"0.947213595500\": \"(5+2*sqrt5)/10\"\n  },\n  \"pass\": true,\n  \"shells_are_H4\": [\n   true,\n   true\n  ]\n },\n \"T4\": {\n  \"found_direction\": true,\n  \"ratio\": 1.6180342597673691,\n  \"pass\": \"True\"\n }\n}\nSCORE 4 /4\n",
+  "exp02_rc": 0
+ },
+ "tests": {
+  "T1": {
+   "live_objects": 173,
+   "carriers": [],
+   "ok": false
+  },
+  "T2a": {
+   "6": {
+    "t**2 - 4*t + 1 + sqrt(5)": [
+     "H2",
+     "2"
+    ]
+   },
+   "7": {
+    "t**2 - 4*t + 1 + sqrt(5)": [
+     "H2",
+     "2"
+    ]
+   },
+   "8": {
+    "t**2 - 4*t + 1 + sqrt(5)": [
+     "H2",
+     "2"
+    ],
+    "t**2 - 4*t - 1 + sqrt(5)": [
+     "H3",
+     "2"
+    ]
+   }
+  },
+  "T2b": {
+   "cells": {
+    "d6:('H2', '2')": false,
+    "d7:('H2', '2')": false,
+    "d8:('H2', '2')": false,
+    "d8:('H3', '2')": false
+   },
+   "ok": true
+  },
+  "T4": {
+   "ok": false,
+   "i": true,
+   "ii": false
+  },
+  "errors": [],
+  "seconds": 369.4
+ }
+}

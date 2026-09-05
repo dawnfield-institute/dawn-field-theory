@@ -1,0 +1,14 @@
+KA1 A4: True {'ok': True, 'grade': 'strict', 'trRD': '2*sqrt(5)/5', 'leak_oo': '2/5', 'vertex': ['1/5']}
+KA1 E8: True {'ok': True, 'grade': 'strict', 'trRD': '2*sqrt(5)/5', 'leak_oo': '2/5', 'vertex': ['1/5']}
+KA2 D6: True {'ok': True, 'projector_equals_exp14': True, 'grade': 'core', 'trRD': '2*sqrt(5)/5', 'leak_oo': '6/25', 'modulated_vertex_law': False, 'core_B_invariant': False, 'core_masses': ['2/5', '3/5'], 'clean_regime': False, 'note': "draft KA2 expected leak 2/5 + modulated law on D6; exp_14's rule predicts NOT clean -> laws fail; trace law must hold"}
+projector gate exp_13: strict 13/13 (vs bezout_proj), core 80/80 (vs exp_14 recipe)
+KA3: {'ok': True, 'grades': {'A5': 'none', 'D5': 'none', 'E6': 'none', 'E7': 'none'}}
+KA6 C5: {'ok': True, 'grade': 'partial', 'blind': True}
+KA5: {'ok': True, 'classes': {'-620': [('H2', '1'), ('H2', '1'), ('unclassified', 'None')], '-80': [('unclassified', 'None'), ('H2', '1'), ('H2', '1'), ('H3', '1')]}}
+KA7 d=3: {'grade': 'partial', 'pairs': [('t**2 - 4*t + 1 + sqrt(5)', 1)], 'classes': [('H2', '2')]} [305s]
+KA7 d=4: {'grade': 'partial', 'pairs': [('t**2 - 4*t + 1 + sqrt(5)', 1)], 'classes': [('H2', '2')]} [308s]
+KA7 d=5: {'grade': 'partial', 'pairs': [('t**2 - 4*t + 1 + sqrt(5)', 2)], 'classes': [('H2', '2')]} [315s]
+KA4: {'ok': True, 'n_asym': 4, 'values': ['-206*sqrt(5)/247', '-458*sqrt(5)/1235', '-6*sqrt(5)/65', '34*sqrt(5)/125', '458*sqrt(5)/1235', '6*sqrt(5)/65', '66*sqrt(5)/125'], 'target': ['-206*sqrt(5)/247', '-458*sqrt(5)/1235', '-6*sqrt(5)/65', '34*sqrt(5)/125', '458*sqrt(5)/1235', '6*sqrt(5)/65', '66*sqrt(5)/125'], 'leaks_ne_2_5': True} [368s]
+CERTIFICATE GATES: PASS [368s]
+DONE
+EXIT 0

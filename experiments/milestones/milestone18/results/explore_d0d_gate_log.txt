@@ -1,0 +1,22 @@
+A4 n=4: 1 tried, 1 agree so far [0s]
+E8 n=8: 2 tried, 2 agree so far [0s]
+exp13#0 n=16: 3 tried, 3 agree so far [1s]
+exp13#1 n=16: 7 tried, 7 agree so far [3s]
+exp13#2 n=16: 11 tried, 11 agree so far [6s]
+exp13#3 n=16: 15 tried, 15 agree so far [8s]
+exp13#4 n=16: 16 tried, 16 agree so far [9s]
+exp13#5 n=16: 20 tried, 20 agree so far [11s]
+exp13#6 n=16: 22 tried, 22 agree so far [12s]
+exp13#7 n=16: 23 tried, 23 agree so far [12s]
+exp13#8 n=16: 24 tried, 24 agree so far [13s]
+exp13#9 n=16: 25 tried, 25 agree so far [14s]
+exp13#10 n=16: 26 tried, 26 agree so far [14s]
+exp13#11 n=16: 28 tried, 28 agree so far [15s]
+exp13#12 n=16: 30 tried, 30 agree so far [17s]
+asym20 n=20: 32 tried, 32 agree so far [19s]
+asym20 n=20: 36 tried, 36 agree so far [24s]
+asym20 n=20: 37 tried, 37 agree so far [25s]
+asym20 n=20: 38 tried, 38 agree so far [26s]
+PROJECTOR-DM GATE: PASS 38/38; Matrix 16.9s vs DomainMatrix 7.0s
+DONE
+EXIT 0

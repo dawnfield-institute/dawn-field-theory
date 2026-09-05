@@ -1,0 +1,14 @@
+O1 d=3 n=15: {'label': 'PAC depth 3', 'n': 15, 'grade': 'partial', 'regular': False, 'n_pairs': 1, 'n_halves': 1, 'classes': [('H2', '2')], 'evaluable': True} [0s]
+O1 d=4 n=31: {'label': 'PAC depth 4', 'n': 31, 'grade': 'partial', 'regular': False, 'n_pairs': 1, 'n_halves': 1, 'classes': [('H2', '2')], 'evaluable': True} [1s]
+O1 d=5 n=63: {'label': 'PAC depth 5', 'n': 63, 'grade': 'partial', 'regular': False, 'n_pairs': 1, 'n_halves': 1, 'classes': [('H2', '2')], 'evaluable': True} [3s]
+O2: 1600 distinct trees; evaluable (grade != none, n<=100): 166; grades: {'strict': 0, 'core': 9, 'partial': 157, 'none': 363, 'not-evaluated(size)': 1071} [562s]
+Traceback (most recent call last):
+  File "/workspace/worktrees/dft-blockd/experiments/milestones/milestone18/scripts/explore_d1_inventory_grades.py", line 53, in <module>
+    from representative import random_unicyclic, cycle_basis_single
+  File "/workspace/worktrees/dft-blockd/experiments/milestones/milestone15/core/representative.py", line 25, in <module>
+    from identity_complement import (   # noqa: E402
+    ...<4 lines>...
+    )
+  File "/workspace/worktrees/dft-blockd/experiments/milestones/milestone13/core/identity_complement.py", line 29, in <module>
+    from scipy.linalg import expm
+ModuleNotFoundError: No module named 'scipy'

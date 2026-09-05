@@ -1,0 +1,7 @@
+asymmetric 41; leak 9; no-leak 32
+  degree-4+ vertex     leak 7/9  no-leak 12/32  Fisher p=0.057
+  degree-5+ vertex     leak 0/9  no-leak 1/32  Fisher p=1.000
+  n_halves == 1        leak 1/9  no-leak 8/32  Fisher p=0.654
+  n_halves >= 8        leak 2/9  no-leak 11/32  Fisher p=0.692
+  leaves >= 8          leak 4/9  no-leak 16/32  Fisher p=1.000
+Bonferroni over 5 looks: nothing below 0.05. NULL — no structural handle yet.

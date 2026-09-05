@@ -1,0 +1,25 @@
+{
+ "n15": {
+  "evaluated": 459,
+  "carriers": 0,
+  "by_grade": {
+   "partial": 459
+  }
+ },
+ "subcubic": {
+  "31": {
+   "evaluated": 5,
+   "carriers": 0,
+   "by_grade": {
+    "partial": 5
+   }
+  },
+  "63": {
+   "evaluated": 9,
+   "carriers": 0,
+   "by_grade": {
+    "partial": 9
+   }
+  }
+ }
+}

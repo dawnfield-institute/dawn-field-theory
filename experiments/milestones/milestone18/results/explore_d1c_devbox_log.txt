@@ -1,0 +1,28 @@
+  n=15: 50 evaluated, 0 carriers [106s]
+  n=15: 100 evaluated, 0 carriers [228s]
+  n=15: 150 evaluated, 0 carriers [338s]
+  n=15: 200 evaluated, 0 carriers [480s]
+  n=15: 250 evaluated, 0 carriers [613s]
+  n=15: 300 evaluated, 0 carriers [745s]
+  n=15: 350 evaluated, 0 carriers [857s]
+  n=15: 400 evaluated, 0 carriers [975s]
+  n=15: 450 evaluated, 0 carriers [1127s]
+null n=15: {'evaluated': 459, 'carriers': 0, 'by_grade': {'partial': 459}} [1155s]
+  subcubic n=31 #1: grade partial, carrier False [1160s]
+  subcubic n=31 #12: grade partial, carrier False [1171s]
+  subcubic n=31 #17: grade partial, carrier False [1180s]
+  subcubic n=31 #20: grade partial, carrier False [1191s]
+  subcubic n=31 #29: grade partial, carrier False [1202s]
+null subcubic n=31: {'evaluated': 5, 'carriers': 0, 'by_grade': {'partial': 5}}
+  subcubic n=63 #0: grade partial, carrier False [1302s]
+  subcubic n=63 #7: grade partial, carrier False [1407s]
+  subcubic n=63 #9: grade partial, carrier False [1508s]
+  subcubic n=63 #10: grade partial, carrier False [1607s]
+  subcubic n=63 #12: grade partial, carrier False [1707s]
+  subcubic n=63 #13: grade partial, carrier False [1815s]
+  subcubic n=63 #14: grade partial, carrier False [1916s]
+  subcubic n=63 #15: grade partial, carrier False [2027s]
+  subcubic n=63 #19: grade partial, carrier False [2076s]
+null subcubic n=63: {'evaluated': 9, 'carriers': 0, 'by_grade': {'partial': 9}}
+DONE
+ALLDONE

@@ -1,0 +1,11 @@
+O1 d=3 n=15: {'label': 'PAC depth 3', 'n': 15, 'grade': 'partial', 'regular': False, 'n_pairs': 1, 'n_halves': 1, 'classes': [('H2', '2')], 'evaluable': True} [0s]
+O1 d=4 n=31: {'label': 'PAC depth 4', 'n': 31, 'grade': 'partial', 'regular': False, 'n_pairs': 1, 'n_halves': 1, 'classes': [('H2', '2')], 'evaluable': True} [1s]
+O1 d=5 n=63: {'label': 'PAC depth 5', 'n': 63, 'grade': 'partial', 'regular': False, 'n_pairs': 1, 'n_halves': 1, 'classes': [('H2', '2')], 'evaluable': True} [3s]
+O2: 1600 distinct trees; evaluable (grade != none, n<=100): 166; grades: {'strict': 0, 'core': 9, 'partial': 157, 'none': 363, 'not-evaluated(size)': 1071} [559s]
+O3: 60 graphs; grades: {'strict': 0, 'core': 0, 'partial': 4, 'none': 56}; evaluable 4 [565s]
+O4: 20 graphs; grades: {'strict': 0, 'core': 0, 'partial': 0, 'none': 20}; evaluable 0 [567s]
+null n=15 exhaustive: {'none': 7282, 'partial': 459} [1223s]
+null subcubic random trees n=31: {'none': 35, 'partial': 5} [1233s]
+null subcubic random trees n=63: {'partial': 9, 'none': 11} [1257s]
+|E| (evaluable, non-blind, grade != none) = 173; halves total = 182
+DONE

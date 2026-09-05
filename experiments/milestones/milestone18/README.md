@@ -35,7 +35,7 @@ Bound to the thesis, not to any instrument: **if E₈-derived spectra do not spl
 orbit boundary (Block C), then φ is not structural in this corpus and this milestone dies.**
 Either failure alone wounds it; both together kill it.
 
-## Scorecard: 49/64 — Phases 3–7c run (A 12/12 · B 3/5 + 7: 1/2 + 7b: 1/2 + 7c: 1/2 · C 6/8 · C-ext 21/29 · E 4/4)
+## Scorecard: 55/74 — Phases 3–8 and Block D run (A 12/12 · B 3/5 + 7: 1/2 + 7b: 1/2 + 7c: 1/2 · C 6/8 · C-ext 21/29 · D 2/3 · Phase 8 4/7 · E 4/4)
 
 **Kill-sentence status (honest accounting):** clause B (no golden split) is NOT met — the
 split is a theorem in the Cartan channel; clause C (no separating power at the orbit
@@ -48,7 +48,8 @@ core. One clause wounds, both kill: **wounded, not dead.** Phase 2 registration:
 | **B — Dynamical self-duality** | Does dynamics see the mirror — and now, the branch? | exp_04 – exp_05, exp_16 – exp_18 | **6/11** | exp_04 FAIL (74bcd0df); exp_05 3/4: rational dynamics is σ-blind (T1 theorem). **Phase 7 / exp_16 1/2** (`journals/2026-09-02_exp16_outcomes.md`): the defect edge of a strict fold is σ-FIXED (√5·R = S + 2Π is an integer matrix), so the σ-blindness theorem no longer forbids the question; T1 (defect distinguished in degree-matched classes under the heat kernel) FAIL — underpowered by design (15/21 folds uninformative; lesson 7), residual direction all-maxima; T2 null calibration PASS. **Phase 7b / exp_17 1/2** (`journals/2026-09-02_exp17_outcomes.md`): Π-asymmetry decays from the defect on 18/18 folds and peaks adjacent to it on 21/21, but at n ≤ 16 the permutation null cannot separate branch from geometry (T1 fail) and the d ≤ 1 null is saturated (T2 pass by one; lesson 8). **Phase 7c / exp_18 1/2 at n = 20** (`journals/2026-09-02_exp18_outcomes.md`): **T1 PASS 47/47** — the sheet-asymmetry peak sits AT the branch on every fold (null expectation 15, quantile 22; β-robust; copy sheet > conjugate 47/47): the first powered dynamical fingerprint of the reinjection port. T2 (profile organized uniquely by the branch vs its neighbours) FAIL as sealed — a null-resolution limit |
 | **C — The σ-Ledger** | Conjugation = complementation; the knife-edge under duality | exp_06 – exp_07 | **6/8** | exp_06 2/4 (T3/T4 fail AT the mod-5 ramification locus, T4 by impossibility proof); exp_07 **4/4** (5\|n and 5\|(n+1) enumeration predicted and confirmed) |
 | **C-ext — The census and the fold laws** | Which trees are completely σ-paired, and what laws do the folds obey? | exp_08, exp_11–exp_15 | **21/29** | exp_08 1/2; exp_11 **4/4** at n = 14 (3939176d); exp_12 **3/6** (4ab2ff35; T3/T5/T6 fail as sealed, each replaced — see journal); exp_13 **5/7** at n = 16 (`journals/2026-09-01_exp13_outcomes.md`): the invariant held on **13/13 fresh strict folds**; T2 fail = the first sector-strict tree (det −775, strict but not a one-5 fold — the r9 mixed mechanism producing strictness); T4 fail = cospectral 5-bond placements (the fold's vertex structure selects the placement; halves law holds under some-partner semantics). Core anatomy (r11–r14): fold laws are off-core laws; modulated vertex law √5·R_off,vv = ±(1−Qc_vv). exp_14 **3/4** (`journals/2026-09-01_exp14_outcomes.md`): off-core instrument reaches all 80 core folds at 16 (0 declared vs 76); Lemma-1 identity proved and checked 80/80; selector sufficiency + layer order confirmed out of sample; the exact-iff clause failed — a third kernel class ((t−2)⁴, masses {2/5, 3/5}) is clean, characterization open. r15 (exploration, 20/20 all strict folds ever found): √5·R = S + 2Π — a signed perfect matching; the Π-quotient IS the one-5 diagram with the realized 5-bond as the unique multiplicity-3 edge; the entire strict-law package reduces to this one conjecture. **Construction theorem** (r17): parents are branched double covers (γ² + γ − 1 = 0 decoupling) — one-5 existence PROVED, every strict law a theorem on constructions. **Phase 6 / exp_15 5/6 at n = 20** (`journals/2026-09-02_exp15_outcomes.md`): 823,065 trees, 66 strict on 64 polynomials; T1 zero orphans at k = 10; **rigidity holds 47/47** (T3–T6 all pass; 6 degenerate partners declared); T2 FAIL = a third strict species — four ASYMMETRIC strict trees (trivial automorphism group, no one-5 partner) |
-| **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_09 | 0/4 | **gated on B and C** — criterion met by exp_18 T1 (gate status below); registration **drafted, unsealed** (`journals/2026-09-02_blockD_registration_DRAFT.md`; inventory `journals/2026-09-02_blockD_operator_inventory.md`); opening is a decision, recorded in the sealing commit |
+| **D — Physical reach** | Is the H₃ class reachable through the folding (M15 test)? | exp_09 | 2/3 | **RUN 2026-09-03** — sealed `0130ebe0` (`journals/2026-09-03_blockD_registration.md`): T1 reach **FAIL** (0 carriers / 173 live objects: PAC trees d ≤ 8, 166 growth trees, 4 unicyclics), T2b class-without-representative **PASS** (4/4 cells), T4 P1 forward-correction **PASS**; gate T2a held (H₃-type sector first at d = 8). The reach at measured sizes is retired; the mathematics stands. Outcomes `journals/2026-09-03_exp09_outcomes.md` |
+| **Phase 8 — The exhaustive frontier** | Does the strict census keep its laws at n = 22 and n = 24? | exp_19 | **4/7** | **COMPLETE 2026-09-04** — sealed `c8bea46f`. n = 22: 0 strict trees (0/1, `journals/2026-09-03_exp19_outcomes_n22.md`). n = 24: 39,299,897 trees, **257 strict** (4/6, `journals/2026-09-04_exp19_outcomes_n24.md`) — rigidity **168/168** (236/236 overall), ramified boundary 0 exceptions, third species **41**, zero orphans at k = 12; T3 exact denominator **KILLED** (2 enters den), T4 certificate reading **refuted** (9/89 non-parents, all asymmetric). Parity law holds. |
 | **E — Re-derivations** | φ⁻⁴ (exp_37) and z_c = φ⁵ as units, not magnitudes | exp_10 | **4/4** | exact (974380c6) |
 
 Block A is front-loaded per M17's rule: no DFT system is measured until the instruments
@@ -59,7 +60,7 @@ run — the Honest-risks criterion ("a result that could have failed and didn't"
 Block B; opening Block D is a decision recorded in the commit that seals its registration, not
 a consequence of this line.
 
-**Theorems filed: 8 · open conjectures: 8 · killed: 1** — in [`formal/theorems/`](../../../formal/theorems/README.md)
+**Theorems filed: 10 · open conjectures: 8 · killed: 2 (polynomial integrality 09-02; exact denominator 09-04) · retired: 1 (Block D reach, 2026-09-03)** — in [`formal/theorems/`](../../../formal/theorems/README.md)
 and [`formal/conjectures/m18_open.md`](../../../formal/conjectures/m18_open.md). The scorecard
 above counts sealed tests; this line counts proofs. Neither is the other. The kill (2026-09-02,
 r21): the *polynomial* form of integrality, 5·b(t) ∈ ℤ[t], fails on three construction parents at
@@ -77,8 +78,9 @@ forward note naming its layer.
   laws, the off-core instrument, the matching structure. Closed to one conjecture (rigidity);
   the theorems are indexed, the conjectures filed.
 - **Physics → `theory/`** (via THEORY_MAP and ROADMAP). Blocks B and D; Phases 7–7c
-  (exp_16–exp_18): dynamics at the branch. Block D's registration is drafted and unsealed
-  (`journals/2026-09-02_blockD_registration_DRAFT.md`, with `journals/2026-09-02_blockD_operator_inventory.md`).
+  (exp_16–exp_18): dynamics at the branch. Block D sealed and run 2026-09-03 (0 carriers / 173;
+  `journals/2026-09-03_blockD_registration.md`, outcomes `journals/2026-09-03_exp09_outcomes.md`;
+  the draft and inventory journals kept as lineage).
 - **Instruments → `core/`.** Block A (the foldings), the census and its known-answer gates
   (exp_08, exp_11b), the fold-law machinery, the matching and sector extraction — as importable
   modules (`core/ledger.py`, `folding.py`, `foldlaws.py`, `census.py`, `matching.py`,
@@ -105,8 +107,9 @@ stores Laplacian spectra, which over ℚ(√5) are golden-free for A₄, D₆ an
 lives in the Cartan channel — the exp_07 knife-edge). On eigenvalue multisets the true statement
 is the Galois pairing S′ = σ(S) — the Ledger theorem, Block C. P1's ratio form is therefore a
 frame artifact inside a registration (STANDARDS §2.9) and is retired as such; its successor
-prediction is Block D's fold certificate on the corpus's own operators
-(`journals/2026-09-02_blockD_registration_DRAFT.md`). Recorded in `theory/corrections.md` §6.
+prediction was Block D's fold certificate on the corpus's own operators
+(sealed `journals/2026-09-03_blockD_registration.md`; run 2026-09-03: 0 carriers of 173 — the successor
+prediction failed cleanly, `journals/2026-09-03_exp09_outcomes.md`). Recorded in `theory/corrections.md` §6.
 
 ## What is postdictive (declared)
 
