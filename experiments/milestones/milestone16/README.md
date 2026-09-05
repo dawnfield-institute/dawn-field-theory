@@ -71,7 +71,7 @@ This is not a new proposal. It is what the corpus already says, assembled:
 | **exp_36** local-global tiling (8/8, zero free parameters) | Part D, verbatim: *"Cosmic web = visible tiling pattern: voids = patch interiors, filaments = boundaries, nodes = multi-boundary junctions."* Local PAC is exact **within** a patch; the observed residual is the SEC cost of coordinating patches, and that cost is **Ξ**. |
 | **`asymmetric_conservation`** (5/5) | `P + A + Δ = C`. Δ is the **unreconciled boundary buffer**, cleared at reconciliation boundaries, over a parent/child hierarchy. `async_pac.py` instantiates `ReconciliationBoundary(delta_threshold=XI)` — Ξ is the reconciliation threshold in running code. |
 | **exp_09 – exp_12** cosmic web | A web already emerged: 5000 particles, finite-range gravity `exp(−r/r₀)/r`, SEC entropy pressure. Void 50%, filament 12%, clustering 0.54, P(k) slope −1.73 — 85% match to the observed matter spectrum, with **no** 1/r². |
-| **exp_10** SEC sweep | **No discrete transition** at Ξ. Ξ is the *optimal operating point* for structural complexity; SEC is continuous control. |
+| **exp_10** SEC sweep | **No discrete transition** at Ξ. Ξ is the *optimal operating point* for structural complexity; SEC is continuous control. **— RETRACTED 2026-08-16, propagated 2026-09-05:** the reported optimum tracked the sweep window in all four of exp_10's own result files, no metric peaks at Ξ, and the re-measurement in exp_10's convention finds no interior optimum in 0.3–2.5 (Ξ beaten 7.70σ). See the forward note in `gravity_from_maxwell_pac/SYNTHESIS.md` and `theory/corrections.md` §7. |
 
 **The engine has exactly one patch.** `src/v3/operators/normalization.py` takes one global sum
 over the whole lattice and adds a single uniform scalar to every cell. No region conserves
@@ -105,7 +105,10 @@ cross exp_09's threshold of void > 0.3 and CV > 1.0, from a control at 0.24 and 
 
 **Q2 — Is there a threshold?** exp_10 supplies a prior, and it is a *negative* one: expect a
 continuous optimum near Ξ and **no** discrete transition. A transition would contradict exp_10
-in a different substrate, which is worth knowing either way. M10's laws-as-equilibria
+in a different substrate, which is worth knowing either way. *(Forward note, 2026-09-05: that
+prior is withdrawn — exp_10 distinguishes no operating point at all (its reported optimum sat at
+a sweep endpoint every time, and its regime was clamp-saturated), so Q2 starts from **no prior**
+rather than a negative one. Nothing scored changes; exp_01 v2 is unrun.)* M10's laws-as-equilibria
 (exp_05–07) is where a genuine threshold would live.
 
 **Q3 — What sets the correlation length?** The candidate is now named: the patch scale. If ξ

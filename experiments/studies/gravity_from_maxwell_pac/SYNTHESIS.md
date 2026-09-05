@@ -237,6 +237,33 @@ produces scale-free cosmic structure, then the 1/r² law is emergent, not fundam
 **Key Finding**: Ξ ≈ 1.057 is not a phase transition point, but the **optimal operating point** 
 for maximum structural complexity. SEC balance continuously modulates structure.
 
+> **Forward correction (2026-09-05) — the "optimal operating point" reading is RETRACTED.**
+> Retracted in `reality-engine` on 2026-08-16
+> (`proof_of_concepts/v4/poc_07_particle_substrate/journals/2026-08-16_xi-is-not-the-optimum.md`)
+> and propagated here now. Three independent grounds:
+> 1. **exp_10's own committed results.** The reported `critical_point` sits at an endpoint of the
+>    swept window in all four `results/exp_10_sweep_20260119_*.json` files — 0.1, 0.2, 1.5, 1.3 for
+>    windows starting at 0.1, 0.2, 0.5, 0.3. The "optimum" tracked the sweep, not the physics. No
+>    metric (density CV, void fraction, filament fraction, clustering, max entropy) has a local
+>    maximum at Ξ; one seed; four one-point statistics.
+> 2. **Re-measurement in exp_10's own convention** (reality-engine POC-07 exp_03, 5 seeds, swept
+>    to 2.5): density CV rises monotonically and is *still at the endpoint* at 2.5; Ξ is beaten by
+>    7.70σ. There is no interior optimum anywhere in 0.3–2.5 for "optimal" to attach to.
+> 3. **The regime was saturated.** Every run used `dt = 0.05, damping = 0.99, max_speed = 2.0` with
+>    an entropy rule that never decays; on 2026-08-28 that regime was shown to pin every particle at
+>    the speed cap, so force magnitude was discarded and `sec_balance` could not reach the dynamics
+>    (`reality-engine/.changelog/20260828_215838_clamp_saturation_diagnostic.md`). Whether it was
+>    fully inert in 2D is unmeasured; it does not rescue the reading either way.
+>
+> Also noted: `SweepConfig`'s defaults in `scripts/exp_10_phase_transition_sweep.py` (n = 1500,
+> 600 steps, `memory_decay` declared but never read by `step()`) are not what ran — `main()` sets
+> n = 2000 and the JSONs record 400 steps. The runs are reproducible from the call site; the
+> dataclass defaults are misleading, not lost.
+>
+> **What survives:** the web itself (exp_09, exp_12 — the results this study is cited for by
+> PACSeries v0.2), `183 = Φ₃(F₇)` and GW170817, and Ξ = γ + ln φ as the canonical constant (M11
+> exp_09, THEORY_MAP), which never rested on exp_10. Registry entry: `theory/corrections.md` §7.
+
 ---
 
 ### exp_11: 3D Cosmic Web
