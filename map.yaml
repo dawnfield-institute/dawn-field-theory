@@ -58,6 +58,11 @@ dawn-field-theory/
     20260903_090000_m18_r18_addendum.md
     20260903_113000_m18_phase8_sealed.md
     20260903_160500_m18_exp19_n22_outcomes.md
+    20260903_200000_m18_blockD_instrument.md
+    20260903_235900_m18_blockD_sealed.md
+    20260903_235959_m18_blockD_outcomes.md
+    20260904_120500_m18_phase8_n24.md
+    20260904_150000_m18_two_theorems.md
     README.md
   .claude/
     skills/
@@ -2555,10 +2560,13 @@ dawn-field-theory/
         meta.yaml
         core/
           census.py
+          certificate.py
           folding.py
           foldlaws.py
+          growth_harness.py
           ledger.py
           matching.py
+          pac_sectors.py
           sectors.py
         journals/
           2026-08-31_blockA_blockB_preregistration.md
@@ -2599,9 +2607,14 @@ dawn-field-theory/
           2026-09-02_r17_construction_theorem.md
           2026-09-02_r21_polynomial_integrality_refuted.md
           2026-09-02_r22_external_audit_fixes.md
+          2026-09-03_blockD_registration.md
+          2026-09-03_exp09_outcomes.md
           2026-09-03_exp19_outcomes_n22.md
           2026-09-03_phase8_registration.md
+          2026-09-04_after_phase8_two_theorems.md
+          2026-09-04_exp19_outcomes_n24.md
         results/
+          .gitignore
           exp_01_foldings_20260831.json
           exp_02_projection_20260831.json
           exp_03_controls_20260831.json
@@ -2613,6 +2626,8 @@ dawn-field-theory/
           exp_07_knife_edge_20260831.json
           exp_08_census_20260901.json
           exp_08_census_log.txt
+          exp_09_block_d_reach_20260903_235832.json
+          exp_09_block_d_reach_20260903_235832_log.txt
           exp_10_block_e_20260901.json
           exp_11_log.txt
           exp_11_one5_n14.json
@@ -2643,7 +2658,30 @@ dawn-field-theory/
           exp_19_phase8_n22_20260903_133944.json
           exp_19_phase8_n22_20260903_133944_census.json
           exp_19_phase8_n22_20260903_133944_log.txt
+          exp_19_phase8_n24_20260903_155724.json
           exp_19_phase8_n24_20260903_155724_log.txt
+          explore_d0_certificate_gates_20260903_191022.json
+          explore_d0_certificate_gates_20260903_191734.json
+          explore_d0_certificate_gates_20260903_192541.json
+          explore_d0_certificate_gates_20260903_193208.json
+          explore_d0_gates_log.txt
+          explore_d0b_growth_harness_gate_20260903_190543.json
+          explore_d0b_growth_harness_gate_20260903_190816.json
+          explore_d0b_harness_log.txt
+          explore_d0c_gate_log.txt
+          explore_d0c_pac_sector_certificate_gate_20260903_205259.json
+          explore_d0d_gate_log.txt
+          explore_d0d_projector_dm_gate_20260903_205342.json
+          explore_d1_devbox_log.txt
+          explore_d1_devbox_log_attempt1.txt
+          explore_d1_inventory_grades_20260903_230426.json
+          explore_d1_inventory_grades_20260903_230426_log.txt
+          explore_d1b_devbox_log.txt
+          explore_d1b_pac_sector_route_20260903_230708.json
+          explore_d1b_pac_sector_route_log.txt
+          explore_d1c_devbox_log.txt
+          explore_d1c_null_carriers_20260903_234144.json
+          explore_d1c_null_carriers_log.txt
           explore_g1_census_20260901.json
           explore_g1_log.txt
           explore_g3g4g6_20260901.json
@@ -2698,6 +2736,9 @@ dawn-field-theory/
           explore_r8_t6_half_choices_n14.json
           explore_r9_log.txt
           explore_r9_mixed_trees_n14.json
+          explore_s1_resultant_square_20260904.txt
+          explore_s2_metallic_family_20260904.txt
+          explore_s3_third_species_20260904.txt
         scripts/
           exp_01_foldings_exist.py
           exp_02_projection_carries_phi.py
@@ -2709,6 +2750,7 @@ dawn-field-theory/
           exp_06_sigma_ledger.py
           exp_07_knife_edge.py
           exp_08_census.py
+          exp_09_block_d_reach.py
           exp_10_block_e_units.py
           exp_11_one5_n14.py
           exp_11b_core_trees_n14.py
@@ -2721,6 +2763,13 @@ dawn-field-theory/
           exp_17_phase7b_pi_asymmetry.py
           exp_18_phase7c_branch_fingerprint.py
           exp_19_phase8_census.py
+          explore_d0_certificate_gates.py
+          explore_d0b_growth_harness_gate.py
+          explore_d0c_pac_sector_certificate_gate.py
+          explore_d0d_projector_dm_gate.py
+          explore_d1_inventory_grades.py
+          explore_d1b_pac_sector_route.py
+          explore_d1c_null_carriers.py
           explore_e1_flow.py
           explore_e2_klein.py
           explore_g1_census_exhaustive.py
@@ -2758,6 +2807,9 @@ dawn-field-theory/
           explore_r7b_core_fold_structure.py
           explore_r8_t6_half_choices.py
           explore_r9_mixed_trees.py
+          explore_s1_resultant_square.py
+          explore_s2_metallic_family.py
+          explore_s3_third_species.py
       milestone2/
         README.md
         meta.yaml

@@ -60,12 +60,15 @@ The layers are now kept apart: **mathematics** (Phases 3–6, closed to rigidity
 > (Block C), then φ is not structural in this corpus and this milestone dies.* Clause C met,
 > clause B not: wounded, not dead. Block D can neither kill nor rescue it.
 
-**Nearest registrable target:** the Block D registration — the fold *certificate*
-(tr(R·D) = 2/√5 on the Bezout reflection) evaluated on the corpus's own generative operators
-(complete PAC trees, PAC growth trees, M15's unicyclic controls), never on the ADE inputs.
-Drafted, unsealed (`experiments/milestones/milestone18/journals/2026-09-02_blockD_registration_DRAFT.md`);
-opening the gate is a decision, not a computation. P1's registered form is forward-corrected
-there (root-shell radii, not eigenvalue multisets).
+**Block D ran 2026-09-03** (sealed `0130ebe0`; `experiments/milestones/milestone18/journals/2026-09-03_exp09_outcomes.md`):
+the fold *certificate* (tr(R·D) = 2/√5 on the Bezout reflection), evaluated on the corpus's own
+generative operators — complete PAC trees to n = 511, 166 growth trees, M15's unicyclic controls —
+found **0 carriers of 173**. The H₂- and H₃-type sectors are present in the PAC family; their fold
+representative is not (M15's class-pass / representative-fail shape). The physics reach at measured
+sizes is retired; the mathematics stands; P1's registered form is forward-corrected there.
+
+**Nearest registrable target:** Phase 8's parity law at n = 24 (census running) and the exact
+denominator of the reflection polynomial (three cases carry the odd-prime half).
 
 ### Milestone R — propagate the energy-scale fix
 
@@ -184,7 +187,7 @@ Carried honestly. Each is a soft spot in otherwise settled work.
 | M10 | φ^(−1/N) at N = 8 still 3.3% off — finite-size correction underived |
 | M13.5 | Coherence limit is **not** universal (exp_15, 0/4) — geometric, not Fibonacci-arithmetic |
 | M13.5 | PSD degeneracy proven **fundamental** (exp_16, 0/4) — no isomorphism-invariant metric can fix it |
-| M18 | Rigidity unproved (47/47 at n = 20); a third strict species (asymmetric) unidentified; the clean regime's third kernel class; the branch profile's null; the exact denominator of the reflection polynomial (polynomial integrality killed 2026-09-02 at n = 20 — three parents with den(5·b) = 3; the bound by the diagram resultant is proved, equality open) — [`formal/conjectures/m18_open.md`](formal/conjectures/m18_open.md) |
+| M18 | Rigidity unproved (47/47 at n = 20); a third strict species (asymmetric) unidentified; Block D reach retired at measured sizes (0/173, 2026-09-03); the clean regime's third kernel class; the branch profile's null; the exact denominator of the reflection polynomial (polynomial integrality killed 2026-09-02 at n = 20 — three parents with den(5·b) = 3; the bound by the diagram resultant is proved, equality open) — [`formal/conjectures/m18_open.md`](formal/conjectures/m18_open.md) |
 
 The M13.5 entries are not defects to repair. M15 reclassifies them: class-level content
 passes, representative-level demands fail, and that split *is* the DFT-Hodge conjecture.

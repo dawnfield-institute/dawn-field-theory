@@ -1,0 +1,3 @@
+# Raw census dumps: large regenerable intermediates, never committed (n=24 is 220 MB).
+# The scored output is exp_19_phase8_n<N>_<ts>.json; the dump is the survivor list behind it.
+*_census.json

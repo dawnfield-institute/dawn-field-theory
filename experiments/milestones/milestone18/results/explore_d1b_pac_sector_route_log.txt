@@ -1,0 +1,10 @@
+sector-route gate d=3 (n=15): equals direct charpoly = True; multiplicities {4: 1, 3: 1, 2: 2, 1: 4} [0s]
+sector-route gate d=4 (n=31): equals direct charpoly = True; multiplicities {5: 1, 4: 1, 3: 2, 2: 4, 1: 8} [0s]
+sector-route gate d=5 (n=63): equals direct charpoly = True; multiplicities {6: 1, 5: 1, 4: 2, 3: 4, 2: 8, 1: 16} [0s]
+PAC depth 3 (n=15): grade partial; golden pairs 1: {'t**2 - 4*t + 1 + sqrt(5)': (1, [('H2', '2')], [(4, 1)])}; rational {'t': 1, 't - 4': 1, 't - 2': 5, 't**2 - 4*t + 2': 2} [0s]
+PAC depth 4 (n=31): grade partial; golden pairs 1: {'t**2 - 4*t + 1 + sqrt(5)': (1, [('H2', '2')], [(4, 1)])}; rational {'t - 2': 11, 't**2 - 4*t - 2': 1, 't**2 - 4*t + 2': 5, 't': 2, 't - 4': 2} [0s]
+PAC depth 5 (n=63): grade partial; golden pairs 1: {'t**2 - 4*t + 1 + sqrt(5)': (2, [('H2', '2')], [(4, 2)])}; rational {'t**6 - 12*t**5 + 50*t**4 - 80*t**3 + 24*t**2 + 32*t - 8': 1, 't - 2': 21, 't**2 - 4*t - 2': 1, 't**2 - 4*t + 2': 9, 't': 4, 't - 4': 4} [1s]
+PAC depth 6 (n=127): grade partial; golden pairs 1: {'t**2 - 4*t + 1 + sqrt(5)': (4, [('H2', '2')], [(4, 4)])}; rational {'t': 9, 't - 4': 9, 't - 2': 43, 't**4 - 8*t**3 + 16*t**2 - 8': 1, 't**6 - 12*t**5 + 50*t**4 - 80*t**3 + 24*t**2 + 32*t - 8': 1, 't**2 - 4*t - 2': 2, 't**2 - 4*t + 2': 18} [1s]
+PAC depth 7 (n=255): grade partial; golden pairs 1: {'t**2 - 4*t + 1 + sqrt(5)': (8, [('H2', '2')], [(4, 8)])}; rational {'t**2 - 4*t + 2': 37, 't**6 - 12*t**5 + 48*t**4 - 64*t**3 - 12*t**2 + 48*t + 8': 1, 't': 17, 't - 4': 17, 't - 2': 85, 't**4 - 8*t**3 + 16*t**2 - 8': 1, 't**6 - 12*t**5 + 50*t**4 - 80*t**3 + 24*t**2 + 32*t - 8': 2, 't**2 - 4*t - 2': 4} [3s]
+PAC depth 8 (n=511): grade partial; golden pairs 2: {'t**2 - 4*t + 1 + sqrt(5)': (17, [('H2', '2')], [(9, 1), (4, 16)]), 't**2 - 4*t - 1 + sqrt(5)': (1, [('H3', '2')], [(9, 1)])}; rational {'t - 2': 171, 't**2 - 4*t + 2': 73, 't**6 - 12*t**5 + 48*t**4 - 64*t**3 - 12*t**2 + 48*t + 8': 1, 't': 34, 't - 4': 34, 't**4 - 8*t**3 + 16*t**2 - 8': 2, 't**6 - 12*t**5 + 50*t**4 - 80*t**3 + 24*t**2 + 32*t - 8': 4, 't**2 - 4*t - 2': 8} [8s]
+DONE

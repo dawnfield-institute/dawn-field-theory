@@ -169,3 +169,49 @@ Thin scored content (T1's positive direction is the only strong test; O2 is wher
 appear); partial-grade territory has no interpretation theorem yet (values are readings until a
 law is sealed); the "H₃ class" identification is a frame choice; n = 511 needs the sector route;
 compendium drift — the object list closes at the seal.
+
+---
+
+**Forward note (2026-09-03, instrument build, before any seal).** §2.8 KA2 as drafted expected D₆ to
+give leak_oo = 2/5 and the modulated vertex law. That expectation was written from the r11 result on
+the n = 12 core folds, and D₆ was never in that record. Building the instrument showed why it cannot
+hold: D₆'s rational core (eigenvalue 2, multiplicity 2, kernel {(a, 0, −a, 0, b, a − b)}) is not
+B-invariant and its vertex masses are not uniform, so by exp_14's clean-regime rule the two off-core
+laws fail on D₆ while the trace law holds. The polynomial-in-C projector reproduces the sealed exp_14
+recipe on D₆ exactly and returns tr = 2/√5, leak_oo = 6/25, law fails — the rule's prediction. KA2 is
+therefore replaced by the sharper gate: on D₆, tr = 2/√5 and (laws hold ⇔ core is clean). Lesson 11
+applied to a gate: a known answer is looked up in the record, not recalled.
+
+---
+
+## Pre-seal numbers, computed 2026-09-03 (draft §5 "[compute from objects before sealing]" — done; still unsealed)
+
+Instrument: `core/certificate.py`, gated (`explore_d0`: KA1–KA7 PASS; projector recipe identical to
+`bezout_proj` on 13/13 strict and to the sealed exp_14 recipe on 80/80 core folds). O2 harness
+(`core/growth_harness.py`, `explore_d0b`): reproduces exp_07/exp_08 on 31/31 seeds — O2 is the original
+object. **No certificate was computed on any O1–O4 object.** Files: `results/explore_d1_inventory_grades_20260903_230426.json`,
+`explore_d1b_pac_sector_route_20260903_230708.json`, `explore_d1c_null_carriers_20260903_234144.json`.
+
+| object | evaluable (grade ≠ none, non-regular) | grades | notes |
+|---|---|---|---|
+| O1 complete PAC trees d = 3…8 | 6 (n = 15, 31, 63, 127, 255, 511) | partial at every depth | one H₂-type pair (t² − 4t + 1 ± √5, scale² 2) at d ≤ 7; **at d = 8 the first H₃-type pair (t² − 4t − 1 ± √5, scale² 2) from the k = 9 radial sector, multiplicity 1** — the √2-path table's prediction, obtained by the sector route (gate: equals the direct charpoly at d = 3, 4, 5). d = 6–8 by sectors only. |
+| O2 PAC growth trees | 166 of 1,600 distinct trees (529 have n ≤ 100; 1,071 too large for exact evaluation — declared) | core 9 · partial 157 · none 363 | replay bit-exact on integer metrics; 10⁻¹⁷ leaf-sum residual vs the live engine (summation order) |
+| O3 M15 unicyclic controls | 4 of 60 | partial 4 · none 56 | |
+| O4 M13 density sweep | **0 of 20** | none 20 | **unreachable — no golden content; declared, not scored** |
+| **\|E\|** | **173** evaluable objects, 182 halves | | |
+
+**Nulls (certificate computed on the null population, some-half semantics):** every partial tree on 15
+vertices, exhaustive — **0 carriers / 459**; random degree-≤3 trees, seed 20260903 — **0 / 5 at n = 31,
+0 / 9 at n = 63**. Grade base rates: 459 / 7,741 partial at 15 (5.9 %); 5 / 40 at 31; 9 / 20 at 63.
+Null carrier rate ≤ 0.6 % (95 %, 0 of 473).
+
+**Consequences for the tests as drafted (to be fixed in the sealed text):**
+- T1 (reach) is informative: 173 objects against a null ≤ 0.6 %; one carrier is a signal, zero is a
+  clean negative. Carrier = the full pair (tr(R·D) = 2/√5 AND leak_oo = 2/5) on some half.
+- T2a is now a known answer (sector route) → sealed as a **gate**, not a scored prediction.
+- T2b remains the live prediction: the H₂/H₃-type sectors of O1 carry no certificate (class-pass /
+  representative-fail). Expected direction stated: pass; the surprise direction is a carrier.
+- T3 null: the numbers above; recorded, not scored.
+- T4 (P1 forward-correction): unchanged.
+- O4 is declared unreachable in the object list; O2 is the 529 evaluable-size trees, of which 166
+  carry golden content.

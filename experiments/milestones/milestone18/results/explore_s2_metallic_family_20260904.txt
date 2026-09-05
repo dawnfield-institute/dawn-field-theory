@@ -1,0 +1,22 @@
+invariance condition: Eq(gamma**2 + gamma*w - 1, 0)   <-- r17 has w=1: Eq(gamma**2 + gamma - 1, 0)
+discriminant in gamma: w**2 + 4  => the fold's field is Q(sqrt(w^2+4))
+   w=0: disc=4   field=Q(sqrt4)  gamma=[-1, 1]   (degenerate: rational)
+   w=1: disc=5   field=Q(sqrt5)  gamma=[-1/2 + sqrt(5)/2, -sqrt(5)/2 - 1/2]   <== GOLDEN, simply-laced
+   w=2: disc=8   field=Q(sqrt8)  gamma=[-1 + sqrt(2), -sqrt(2) - 1]
+   w=3: disc=13  field=Q(sqrt13)  gamma=[-3/2 + sqrt(13)/2, -sqrt(13)/2 - 3/2]
+   w=4: disc=20  field=Q(sqrt20)  gamma=[-2 + sqrt(5), -sqrt(5) - 2]
+   w=5: disc=29  field=Q(sqrt29)  gamma=[-5/2 + sqrt(29)/2, -sqrt(29)/2 - 5/2]
+   w=6: disc=40  field=Q(sqrt40)  gamma=[-3 + sqrt(10), -sqrt(10) - 3]
+
+parent(H2) charpoly factorisation by defect weight:
+   w=0: p = (t - 3)**2*(t - 1)**2
+        over Q(sqrt4): factor degrees [1, 1]  -> does not split into two halves
+   w=1: p = (t**2 - 5*t + 5)*(t**2 - 3*t + 1)
+        over Q(sqrt5): factor degrees [1, 1, 1, 1]  -> does not split into two halves
+   w=2: p = (t**2 - 6*t + 7)*(t**2 - 2*t - 1)
+        over Q(sqrt8): factor degrees [1, 1, 1, 1]  -> does not split into two halves
+   w=3: p = (t**2 - 7*t + 9)*(t**2 - t - 3)
+        over Q(sqrt13): factor degrees [1, 1, 1, 1]  -> does not split into two halves
+
+  w=1 check: charpoly(parent) == q*sigma(q) ? True
+  and parent(H2) at w=1 is the A4 path: [-1, -1, -1, 0, 0, 0]
