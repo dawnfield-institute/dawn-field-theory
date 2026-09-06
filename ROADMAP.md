@@ -72,7 +72,7 @@ denominator of the reflection polynomial (three cases carry the odd-prime half).
 
 ### Milestone R — the trigger is a core detector; the energy scale is still in the wrong slot
 
-62/116 across 28 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
+65/120 across 29 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
 derived severance trigger (exp_15's all-edges overstress) for the first time as a
 *dynamical* step, on reality-engine's v4 particle substrate: `min_j |S_i − S_j| > τ` fires
 only at extrema of the field, and on a structured field the extrema are the collapse cores
@@ -82,6 +82,20 @@ half is removed; never above random). The exp_15/16 graph results
 stand (their field was noise); what closes is the entropy-gradient barrier as an amount-free
 *dynamical* sink. Registrable next: a barrier on *under*-stress, and the sign question it
 raises beside exp_14.
+
+**exp_29 (2026-09-06, 3/4, sealed `43e4ebc9`)** found where exp_28's zero came from — the substrate
+had no PAC ledger, and the SEC pressure's entropy ratchet created eleven binding energies from
+nothing — and added the ledger: a per-particle potential budget paying for entropy growth at
+the pair-energy price, the total `KE + U + E_SEC + ΣP` conserved. The substrate is then bound
+(KE/|U| ≈ 0.5) and a web survives at both sizes, 4.8–5.7 σ over the unbounded engine — but the
+registered κ = 0.5 arm fails the 2 σ bar against gravity alone (0.2 σ on the proxy, 1.1 σ at
+n = 4000), and the kill fired as registered: the mapping is retired as the object that holds
+structure beyond gravity at κ = 0.5 with the proxy deciding; the ledger stays as an instrument.
+Unscored, post hoc: at n = 4000, κ = 1 holds more web than gravity alone in every seed (2.8 σ)
+and κ = 2 less; on the proxy, whose pressure range exceeds half its box, the engine never adds.
+**Registrable next: R1b** — κ = 1 at n = 4000 on fresh seeds, the box-to-range ratio declared,
+the proxy retired as a decider for pressure-range questions; then R2, severance on a substrate
+that is now actually bound; the pressure's *form* stays a candidate behind R1b.
 
 exp_24 replaced `E_Planck · φ^(−d)` with **`α(d)² · m_mediator`** (EM scale at 11.4 ppm of
 the Rydberg). The 2026-08-27 propagation showed it fixes **two** of its six named failures,

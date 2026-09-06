@@ -16,7 +16,7 @@ Currently being worked.
 | [`milestone16`](milestones/milestone16/) | milestones | Milestone 16: Relational Locality — How Neighbours Come to Cohere | — |
 | [`milestone18`](milestones/milestone18/) | milestones | Milestone 18: The Non-Crystallographic Completion | 55/74 |
 | [`midnight`](sidecars/midnight/) | sidecars | Midnight: Observational Frontiers of Dawn Field Theory | 22/32 |
-| [`milestone-r`](sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance | 62/116 |
+| [`milestone-r`](sidecars/milestone-r/) | sidecars | Milestone R: Radiation as Ledger Severance | 65/120 |
 | [`ade_cascade`](studies/ade_cascade/) | studies | ADE Cascade: Re-founding Turbulence on Milestone Machinery | — |
 | [`algebra_geometry_interface`](studies/algebra_geometry_interface/) | studies | Algebra-Geometry Interface: RQM ↔ Ruliad Validation | — |
 | [`confluent_identity`](studies/confluent_identity/) | studies | Confluent Identity -- Phases 1-29: Formation through Falsification | — |
