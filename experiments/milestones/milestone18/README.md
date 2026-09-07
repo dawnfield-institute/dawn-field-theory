@@ -150,6 +150,15 @@ routes, not of vocabularies. Recorded in
 `journals/2026-08-31_founding.md`. Block A's deliverable doubles as the validation package
 returned to him.
 
+A second exchange (2026-09-06, his "3 is everything") is recorded in
+`journals/2026-09-06_the_lattice_end_and_the_scaling_end.md`: degree two is forced by
+symmetry and the triangle is quadratic too; 3 comes first exactly (smallest discriminant of any
+number field; S₃ the smallest non-abelian group, M14's origin of quantum uncertainty); and what
+separates his 3 from this corpus's 5 is imaginary against real — a finite unit group that can
+only rotate against a fundamental unit φ that scales, which is the cascade. They meet in E₈
+(h = 30 = 2·3·5; strict over √3, √5, √15) and at the affine boundary (2, 3, 6), where exp_12
+measured the golden pairing dying. Exposition, not a result.
+
 ## Dependencies
 
 - M13/M13.5 (identity-IS-complement; the PSD Lemma) — Block C attacks the Lemma's premise.
