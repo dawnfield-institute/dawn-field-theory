@@ -28,7 +28,7 @@ Currently being worked.
 | [`minimum_actualization_resolution`](studies/minimum_actualization_resolution/) | studies | Minimum Actualization Resolution | — |
 | [`pac_cosmology_validation`](studies/pac_cosmology_validation/) | studies | PAC Cosmology Validation | — |
 | [`pac_knowledge_discovery`](studies/pac_knowledge_discovery/) | studies | PAC Knowledge Discovery: N² Convergence for Unknown Children Detection | — |
-| [`prime_gap_ledger`](studies/prime_gap_ledger/) | studies | The Prime Gap Ledger: the loop, the gap and the delta | 0/3 |
+| [`prime_gap_ledger`](studies/prime_gap_ledger/) | studies | The Prime Gap Ledger: the loop, the gap and the delta | 3/7 |
 | [`sec_prime_manifold`](studies/sec_prime_manifold/) | studies | SEC Prime Manifold Experiments | — |
 | [`standard_model_connection`](studies/standard_model_connection/) | studies | Standard Model Connection Experiments | — |
 | [`wealth_field_dynamics`](studies/wealth_field_dynamics/) | studies | Wealth Field Dynamics: Non-Equilibrium Analysis | — |

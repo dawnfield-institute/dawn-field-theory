@@ -155,8 +155,13 @@ def score(out):
     if len(cc) >= 2:
         vals = [x["c"] for x in cc]; mean = float(np.mean(vals)); spread = max(vals) - min(vals); tol = max(3 * max(x["se_c"] for x in cc if x["se_c"] == x["se_c"]), 0.25 * abs(mean))
         ratio = (max(vals) / min(vals)) if (min(vals) > 0 or max(vals) < 0) else float("inf")
-        r3 = "CONVERGED" if spread <= tol else ("KILL" if ratio > 2 else "INCONCLUSIVE")
-        tests["R3"] = dict(verdict=r3, cells=cc, mean=mean, spread=spread, tol=tol, max_over_min=ratio)
+        # The seal states a CONVERGED clause and a KILL clause without precedence. The first scored run gave CONVERGED
+        # precedence when both fired (spread 0.073 ≤ tol 0.108 and max/min 2.11 > 2 on two noisy flip cells); corrected
+        # toward the seal: both firing is INCONCLUSIVE, said so, with the cells on the record.
+        conv, kill = spread <= tol, ratio > 2
+        r3 = "INCONCLUSIVE" if (conv and kill) else ("CONVERGED" if conv else ("KILL" if kill else "INCONCLUSIVE"))
+        tests["R3"] = dict(verdict=r3, cells=cc, mean=mean, spread=spread, tol=tol, max_over_min=ratio, converged_clause=conv, kill_clause=kill,
+                           note=("both the CONVERGED and the KILL clause fire — the seal gives no precedence — INCONCLUSIVE" if (conv and kill) else ""))
     else:
         tests["R3"] = dict(verdict="INCONCLUSIVE", cells=cc, note="fewer than two resolved cells")
     # R4 ------------------------------------------------------------------------------------------------------------------
