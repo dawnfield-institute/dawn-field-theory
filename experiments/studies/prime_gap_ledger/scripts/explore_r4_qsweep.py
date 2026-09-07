@@ -16,7 +16,8 @@ import numpy as np
 HERE = Path(__file__).parent; ROOT = HERE.parent; sys.path.insert(0, str(ROOT / "core")); import rough as R
 RES = ROOT / "results"; ts = time.strftime("%Y%m%d_%H%M%S")
 SEED, W, L = 20260908, 32, 2_000_000
-DEPTHS = (25000, 50000, 141422)
+import os
+DEPTHS = tuple(int(v) for v in os.environ.get('R4_DEPTHS', '25000,50000,141422').split(','))
 def phi(q):
     n = 1
     for p, a in R.factor_int(q).items(): n *= (p - 1) * p ** (a - 1)

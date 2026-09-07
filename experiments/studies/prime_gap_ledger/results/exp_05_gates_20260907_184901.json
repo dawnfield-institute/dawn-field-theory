@@ -1,0 +1,281 @@
+{
+ "script": "exp_05_gates.py",
+ "generated": "20260907_184901",
+ "seed": 20260909,
+ "depths": [
+  90,
+  360,
+  1440,
+  5760,
+  23040,
+  92160
+ ],
+ "windows": 40,
+ "L": 2000000,
+ "nbins": 18,
+ "pool": [
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  15,
+  16,
+  17,
+  19,
+  20,
+  21,
+  23,
+  24,
+  25,
+  27,
+  28,
+  29,
+  31,
+  32,
+  33,
+  35,
+  36,
+  37,
+  39,
+  40,
+  41,
+  43,
+  44,
+  45,
+  47,
+  48,
+  49,
+  51,
+  52,
+  53,
+  55,
+  56,
+  57,
+  59,
+  60
+ ],
+ "train": [
+  3,
+  4,
+  7,
+  8,
+  11,
+  12,
+  15,
+  16,
+  19,
+  20,
+  23,
+  24,
+  27,
+  28,
+  31,
+  32,
+  35,
+  36,
+  39,
+  40,
+  43,
+  44,
+  47,
+  48,
+  51,
+  52,
+  55,
+  56,
+  59,
+  60
+ ],
+ "heldout": [
+  5,
+  9,
+  13,
+  17,
+  21,
+  25,
+  29,
+  33,
+  37,
+  41,
+  45,
+  49,
+  53,
+  57
+ ],
+ "all_pass": true,
+ "gates": {
+  "G1": {
+   "claim": "round 1's exact q=3 loop deficits reproduce",
+   "value": {
+    "k=3": "5/12",
+    "k=4": "223/552",
+    "k=6": "2860783/8291520"
+   },
+   "status": "PASS"
+  },
+  "G2": {
+   "claim": "delta_2q == delta_q exactly for odd q (42 cases) -- justifies the pool's exclusion",
+   "value": "42/42",
+   "status": "PASS"
+  },
+  "G3": {
+   "claim": "sampler unbiased against the enumerated exact value at y=19",
+   "value": {
+    "3": {
+     "exact": 0.30756372224832706,
+     "sampled": 0.30753921943421997,
+     "sigma": 1.03
+    },
+    "5": {
+     "exact": 0.6383340798212419,
+     "sampled": 0.6383492451007972,
+     "sigma": 0.71
+    },
+    "7": {
+     "exact": 0.8796367908689708,
+     "sampled": 0.8796961561316431,
+     "sigma": 1.8
+    }
+   },
+   "status": "PASS"
+  },
+  "G4": {
+   "claim": "the declared seed reproduces delta bit for bit",
+   "value": {
+    "3": 0.15350595240756532,
+    "5": 0.38723183342366
+   },
+   "status": "PASS"
+  },
+  "G5": {
+   "claim": "train/test split is mechanical (every 3rd modulus), disjoint, and covers the pool",
+   "value": {
+    "pool": 44,
+    "train": 30,
+    "heldout": 14,
+    "heldout_moduli": [
+     5,
+     9,
+     13,
+     17,
+     21,
+     25,
+     29,
+     33,
+     37,
+     41,
+     45,
+     49,
+     53,
+     57
+    ]
+   },
+   "status": "PASS"
+  },
+  "G6": {
+   "claim": "no extrapolation: held-out phi/gbar lies inside the training range at every depth",
+   "value": {
+    "90": {
+     "train": [
+      0.2495,
+      7.2369
+     ],
+     "heldout": [
+      0.4991,
+      6.4883
+     ],
+     "inside": true
+    },
+    "360": {
+     "train": [
+      0.1908,
+      5.5325
+     ],
+     "heldout": [
+      0.3815,
+      4.9601
+     ],
+     "inside": true
+    },
+    "1440": {
+     "train": [
+      0.1544,
+      4.4778
+     ],
+     "heldout": [
+      0.3088,
+      4.0146
+     ],
+     "inside": true
+    },
+    "5760": {
+     "train": [
+      0.1297,
+      3.7609
+     ],
+     "heldout": [
+      0.2594,
+      3.3719
+     ],
+     "inside": true
+    },
+    "23040": {
+     "train": [
+      0.1118,
+      3.2419
+     ],
+     "heldout": [
+      0.2236,
+      2.9065
+     ],
+     "inside": true
+    },
+    "92160": {
+     "train": [
+      0.0982,
+      2.8487
+     ],
+     "heldout": [
+      0.1965,
+      2.554
+     ],
+     "inside": true
+    }
+   },
+   "status": "PASS"
+  },
+  "G7": {
+   "claim": "mean gap == 1/mertens_product (gbar's definition is the measured one)",
+   "value": {
+    "k=2": 3.0,
+    "k=3": 3.75,
+    "k=4": 4.375,
+    "k=5": 4.8125,
+    "k=6": 5.213542,
+    "k=7": 5.539388,
+    "k=8": 5.847132
+   },
+   "status": "PASS"
+  },
+  "G8": {
+   "claim": "the fit is fully specified before the run and has no free choices left",
+   "value": {
+    "bins": 18,
+    "edges": "linspace(min, max) of the TRAINING x only",
+    "statistic": "mean of delta per bin",
+    "interpolation": "linear between bin centres, clipped to the end bins",
+    "x_primary": "phi(q)/gbar",
+    "x_control": "q/gbar",
+    "gbar": "exp(EULER_GAMMA)*log(y)",
+    "tolerance": "R1 passes if heldout_rms <= 1.5 * train_rms; KILL if > 2.0 *",
+    "note": "no held-out cell is measured until after the seal commit"
+   },
+   "status": "PASS"
+  }
+ }
+}

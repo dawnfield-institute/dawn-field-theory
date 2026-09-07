@@ -140,11 +140,76 @@ with q, so matching δ forces matching q and hence matching φ — everywhere ex
 is unmeasurable. **No experiment in this object separates "β is φ-indexed" from "β is a shadow of the
 δ-level."** Deeper sieving does not help; it needs every prime ≤ y, and y ~ 10⁹ is ~5·10⁷ primes per window.
 
+## §5b Instrument note — the enumerated loop's transition matrix should be cyclic
+
+The recorded exact deficits carry a convention artifact. Their denominators all have one large prime factor,
+and it is always **φ(P)/2 − 1**: 3, 23, 239, 2879, 46079 for φ(P) = 8, 48, 480, 5760, 92160 — five for five.
+It is not arithmetic. It is the boundary term of a *linear* transition matrix applied to a **loop**.
+
+Closing the loop (appending the wrap transition, last → first) removes it entirely:
+
+| k | φ(P) | linear (round 1) | cyclic |
+|---|---|---|---|
+| 3 | 8 | 5/12 | **1/2** |
+| 4 | 48 | 223/552 | **5/12** |
+| 5 | 480 | 1429/3824 | **3/8** |
+| 6 | 5760 | 2860783/8291520 | **497/1440** |
+| 7 | 92160 | 76581569/235924480 | **831/2560** |
+
+Every cyclic denominator is 5-smooth; the linear ones are not. The mismatch is conceptual as well as
+cosmetic: this study defines its global object as "bounded, **boundaryless**", and a gap as the loop *cut
+open*. `exp_01` used cyclic gaps (`gaps_of(off, P)`, which carries the wrap) with a linear transition matrix —
+the local object's convention applied to the global one.
+
+**Scope: nothing scored moves.** Every scored cell in rounds 1–3 used *sampled* loops, which are genuine arcs
+with two ends, where the linear matrix is correct. The artifact is confined to the enumerated exact rationals,
+which the README already carries as recorded and not claimed, and its size is O(1/φ(P)) — 17 % at k = 3,
+0.03 % by k = 6, negligible above. exp_04's own G1 deliberately reproduces the **linear** values, because the
+gate's job is to match the record as it stands, not as it should have been written.
+
+A future round that quotes an enumerated-loop rational should quote the cyclic one and say which convention it
+used. This is STANDARDS §2.9 in its own small way: the convention chose the constant.
+
 ## §6 What is not claimed
 
 No closed form for β_q. No statement that β is or is not φ-indexed — only that this object cannot decide it.
 Nothing about the primes: all of this is the loop's own profile, and whether the primes inherit any of it is
 untouched. Nothing above y = 141,422. No physics; nothing here touches φ, Ξ or any milestone.
+
+## §6b The exploring that opened round 5 — δ collapses on φ(q)/ḡ
+
+The round's failure is instructive: **β was the wrong object.** β is a local log-log slope on a curve that
+approaches a bound, so its value depends on where along the curve the cell sits. That is why it is inseparable
+from the δ-level: they are two coordinates on one curve. The question "is β indexed by φ or by δ-level" was
+malformed.
+
+Fitting δ itself instead, over a grid of 44 moduli × 6 depths (y = 60 … 141,422, ḡ = e^γ log y varying by a
+factor 2.90; 264 cells), a single smooth curve in **φ(q)/ḡ** carries the family:
+
+| scaling variable | R² of one smooth curve |
+|---|---|
+| **φ(q)/ḡ** | **0.9272** |
+| q/ḡ | 0.8354 |
+| φ(q) | 0.8339 |
+| q | 0.7862 |
+
+The control is the evidence, not the R²: **the collapse variable absorbs both of its inputs.** Residuals off
+the φ/ḡ curve carry no remaining correlation with φ (t = +0.67) or with log y (t = +0.60) across 264 cells.
+A spurious collapse fails exactly there.
+
+What survives is structured, and by something interpretable: **ω(q), the number of distinct prime factors**
+(corr +0.359, t = +6.21; q itself +0.198, q/φ +0.215). That is the singular-series shape — whether q divides
+a gap carries an enhancement ∏_{p|q}(p−1)/(p−2), so how many distinct primes build q should matter beyond the
+size of its unit group. Bulk set by the unit group against the gap scale; correction set by how composite the
+modulus is.
+
+**This also lifts round 4's binding constraint.** Fitting δ directly rather than a slope of δ uses every cell,
+saturated ones included — the δ < 0.5 cut existed only because differentiating near a bound is unstable. G7's
+feasibility failure therefore does not bind on a collapse test, and no deeper sieving, no y ~ 10¹¹ depths and
+no strike-sampling are required to run it.
+
+Registered as round 5 (exp_05). **Found by looking at exp_04's data, and disclosed as postdiction in that
+seal's §0.** Nothing in this section is registered or scored.
 
 ## §7 Forward note
 
