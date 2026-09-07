@@ -32,7 +32,37 @@ claim the round was built to test is not established.
 the primes sit slightly *above* F across the scored cells. Unexplained here. It is not the ω(q) effect, which
 is a correlation rather than an offset, and it is 24× the median cell SE.
 
-## Instrument note — R2's guard was the wrong guard
+## CORRECTION filed 2026-09-07 (same night) — the instrument note below is WRONG
+
+**The section that follows was mistaken and is retained only as the record of the error.** It claimed R2 was
+"dead at the seal" with signal 0.83× noise. That comparison put the *per-cell* prediction shift (0.0255)
+against the *per-cell* residual (0.0308). The test does not work per cell — it compares two rms values over
+117 cells, so the relevant spread is the sampling spread of that difference, **0.0023**, not 0.0308. I
+compared the wrong two numbers.
+
+**R2 had roughly 4σ of power, and it returned a real result.** Simulating at the observed residual scale:
+
+| hypothesis | predicted | observed | |
+|---|---|---|---|
+| y_eff is the true depth | rms(y) ≈ 0.0509 | 0.0398 | **−4.8σ** |
+| y is the true depth | rms(y_eff) − rms(y) ≈ +0.0100 | +0.0013 | **−3.7σ** |
+
+**Both named depths are excluded.** The primes read at neither y nor y_eff; the minimising depth sits between
+them — a scan over the scored cells puts it at roughly 40 % of the way from y to y_eff in log at all three
+decades (6,652 / 20,584 / 71,448 against y = 4,473 / 14,143 / 44,722 and y_eff = 10,429 / 38,321 / 139,891).
+That is a substantive constraint on round 3's reading, not a null.
+
+Two caveats on that constraint, both real. First, depth and a constant offset are **degenerate**: allowing an
+offset moves the best depth below y and swings the offset to −0.022, while the rms improves by under 0.001. So
+"the depth is between" holds only at zero offset. Second, this whole comparison runs through F, and F is the
+18-bin estimator, which is itself poor (see the same-night finding that a one-parameter `tanh(1.30 x)` beats it
+on both training and held-out cells). A better F could move the location.
+
+**R2's verdict is unchanged: INCONCLUSIVE**, as sealed — the rule required rms(y_eff) < rms(y) at ≥ 3σ, and it
+was not. Only the diagnosis changes. The registered §4 guard on the shift's existence was, as it happens,
+adequate; my post-hoc power argument against it was the error.
+
+## Instrument note — SUPERSEDED, see the correction above
 
 The registration's §4 required |log y_eff / log y − 1| > 0.02 so that the control could distinguish the two
 depths. It passed comfortably: 0.1007, 0.1043, 0.1065 at m = 7, 8, 9. **The guard was still wrong.** What
@@ -89,10 +119,11 @@ Round 3's ρ_q = 0 is untouched: it measures a ratio against the loop at y and n
 
 Layer: arithmetic. Two things this opens:
 
-1. **Redo R2 with power, not existence.** The comparison needs two depths whose predictions differ by ≫ the
-   residual. Either read at a position where F is steep (small φ/ḡ) or compare y_eff against a deliberately
-   distant depth rather than the unshifted y. This is the round that would actually test round 3's shift
-   against F, and it is cheap.
+1. **Locate the depth, do not re-run the two-way comparison.** The correction above shows R2 had power and
+   excluded both named depths; the open question is therefore *where* the primes read, not whether y beats
+   y_eff. That needs the depth/offset degeneracy broken and a better F — a one-parameter `tanh(a·x)` beats the
+   18-bin estimator on both training and held-out loop cells, so the residual this comparison runs through is
+   inflated by my own choice of estimator.
 2. **The +0.0115 offset.** A constant offset between the primes and the loop's own curve is exactly the shape
    of a residual the study has chased before (round 1's ε ≈ 0.0095 at the primes). Whether these are the same
    object is not established and would need its own registration — but it is the obvious next question.
