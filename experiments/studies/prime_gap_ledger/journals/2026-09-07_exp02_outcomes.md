@@ -69,6 +69,19 @@ unseen at m ≥ 6.
 The value c ≈ 0.10 (a coordinate; R3 did not converge by the seal's letter). Any statement about u < 2 beyond "a
 different regime". Anything about x > 2·10⁹. No physics; nothing here touches φ, Ξ, or any milestone.
 
+## Forward corrections (2026-09-07, late — from the round-3 design review; the verdicts above are untouched)
+
+1. **The q = 10 "replication channel" was an identity.** Every consecutive-prime gap is even, so the transition mod
+   10 is the transition mod 5: δ₁₀ ≡ δ₅ to the last digit (exp_03 G2 states it). "The q = 10 channel replicates every
+   sign" replicated nothing. Withdrawn as a check; the numbers stand.
+2. **R4's reading is superseded.** The deeper-shell modulation is the uniform loop's own depth profile: δ_q on the loop
+   falls with depth as (log y)^{−β_q} with a modulus-dependent β_q, and the primes' arc is the loop read at the
+   density-matched depth y_eff; that reproduces r_q, the shell differences and the flip cells without a free parameter
+   (exp_03 registration §0, gate G7). The tranche did not modulate the residual; the loop did. Whether anything is left
+   is exp_03's question.
+3. **R3's "c converged"** was the same drift: c ≈ β₃δ₃(1 + d/2) = 0.117, 0.108, 0.100 at m = 7, 8, 9 — a slow
+   function of y, read as constant inside a 25 % tolerance.
+
 ## Forward note
 
 Layer: arithmetic. The sentence for the record: **the consecutive-prime residue bias of Lemke Oliver and

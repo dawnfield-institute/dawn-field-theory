@@ -4843,6 +4843,7 @@ dawn-field-theory/
           2026-09-07_exp01_registration.md
           2026-09-07_exp02_outcomes.md
           2026-09-07_exp02_registration.md
+          2026-09-07_exp03_registration.md
           2026-09-07_exploring_position_along_the_loop.md
         results/
           exp_00_gates_20260907_114418.json
@@ -4857,12 +4858,16 @@ dawn-field-theory/
           exp_02_position_of_the_read_main_20260907_133111.json
           exp_02_position_of_the_read_main_20260907_132740_log.txt
           exp_02_position_of_the_read_main_20260907_133111_log.txt
+          exp_03_gates_20260907_170520.json
+          exp_03_gates_20260907_170831.json
           explore_r2_position_20260907_125700.json
         scripts/
           exp_00_gates.py
           exp_01_cascade_truncation.py
           exp_02_gates.py
           exp_02_position_of_the_read.py
+          exp_03_density_matched_loop.py
+          exp_03_gates.py
           explore_r2_position_along_the_loop.py
       prime_growth_dynamics/
         README.md

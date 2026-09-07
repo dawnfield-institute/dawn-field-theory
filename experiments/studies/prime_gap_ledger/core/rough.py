@@ -208,6 +208,89 @@ def arc_integral_omega(u_top, u_bottom, table=None):
     return math.exp(EULER_GAMMA) * (2.0 * omega_at(u_top, table) - omega_at(u_bottom, table))
 
 
+def y_eff_from_density(density, primes):
+    """The depth whose exact Mertens product ∏_{p ≤ y}(1 − 1/p) equals `density`, on the prime grid: returns the bracketing
+    primes (p_lo, p_hi) with M(p_lo) ≥ density > M(p_hi) and both products, and y_eff = the bracket end nearer in log M.
+    No leading-order formula anywhere (round 3, the density-matched loop)."""
+    M, prev_p, prev_M = 1.0, None, 1.0
+    for p in primes:
+        M_new = M * (1.0 - 1.0 / float(p))
+        if M_new < density:
+            lo = int(prev_p) if prev_p is not None else 1
+            near_lo = abs(math.log(M) - math.log(density)) <= abs(math.log(M_new) - math.log(density))
+            return dict(p_lo=lo, p_hi=int(p), M_lo=M, M_hi=M_new, y_eff=(lo if near_lo else int(p)),
+                        mismatch_log=min(abs(math.log(M) - math.log(density)), abs(math.log(M_new) - math.log(density))))
+        M, prev_p = M_new, p
+    raise ValueError("density below the Mertens product of the whole prime list")
+
+
+def chunked_read(N, L, chunk, ps, Q, keep_parts=True):
+    """Read [N, N + L) in chunks of `chunk` with the residue CARRIED across chunk boundaries, so the transition count is
+    exactly n − 1. Returns per q the total transition matrix, per-chunk deficits (for the de-trended scatter), per-chunk
+    densities and the log of each chunk's midpoint (the de-trending abscissa)."""
+    Tq = {q: 0 for q in Q}
+    parts = {q: [] for q in Q}
+    dens, logpos = [], []
+    last = {q: None for q in Q}
+    n = 0
+    j = 0
+    while j < L:
+        Nj = N + j
+        Lj = min(chunk, L - j)
+        off = segmented_rough(window_residues(Nj, ps), ps, Lj)
+        n += len(off)
+        dens.append(len(off) / Lj)
+        logpos.append(math.log(Nj + Lj / 2))
+        for q in Q:
+            r = residues_mod(off, Nj % q, q)
+            if keep_parts:
+                parts[q].append(diagonal_deficit(transition_matrix(r, q)))
+            if last[q] is not None and len(r) > 0:
+                Tq[q] = Tq[q] + transition_matrix(np.array([last[q], int(r[0])]), q)
+            if len(r) > 1:
+                Tq[q] = Tq[q] + transition_matrix(r, q)
+            if len(r) > 0:
+                last[q] = int(r[-1])
+        del off
+        j += Lj
+    return dict(n=n, T=Tq, parts=parts, dens=dens, logpos=logpos, density=n / L,
+                transitions={q: int(np.asarray(Tq[q]).sum()) for q in Q})
+
+
+def detrended_se_log(values, positions):
+    """SE of the mean after removing a linear trend in the given positions (log N): the noise about the trend."""
+    v = np.asarray(values, dtype=float)
+    x = np.asarray(positions, dtype=float)
+    m = np.isfinite(v)
+    v, x = v[m], x[m]
+    n = len(v)
+    if n < 4:
+        return scatter_se(v, detrend=False)
+    coef = np.polyfit(x, v, 1)
+    resid = v - np.polyval(coef, x)
+    return float(math.sqrt(float(resid @ resid) / (n - 2)) / math.sqrt(n))
+
+
+def loop_read(ps, W, Lw, Q, rng):
+    """The uniform loop at depth max(ps), read in W CRT-uniform windows of length Lw: δ_q pooled, SE from the window
+    scatter (windows are at random positions — no trend), n and density."""
+    Tq = {q: 0 for q in Q}
+    parts = {q: [] for q in Q}
+    n = 0
+    for _ in range(W):
+        res = loop_residues(ps, rng)
+        off = segmented_rough(res, ps, Lw)
+        d = dict(zip((int(p) for p in ps), res))
+        n += len(off)
+        for q in Q:
+            r = residues_mod(off, n_mod_q_from_draws(q, d, rng), q)
+            T = transition_matrix(r, q)
+            Tq[q] = Tq[q] + T
+            parts[q].append(diagonal_deficit(T))
+    return dict(delta={q: diagonal_deficit(Tq[q]) for q in Q}, se={q: scatter_se(parts[q], detrend=False) for q in Q},
+                n=n, density=n / (W * Lw), W=W, L=Lw)
+
+
 def scatter_se(values, detrend=True):
     """Standard error of the mean from the scatter of window estimates. Consecutive windows along an arc carry a
     systematic drift (the bias falls slowly with position — Lemke Oliver–Soundararajan), which is not noise on the
