@@ -4849,6 +4849,7 @@ dawn-field-theory/
           2026-09-07_exp04_exploring_the_loop_depth_profile.md
           2026-09-07_exp05_outcomes.md
           2026-09-07_exp05_registration.md
+          2026-09-07_exp06_registration.md
           2026-09-07_exploring_position_along_the_loop.md
         results/
           exp_00_gates_20260907_114418.json
@@ -4872,6 +4873,7 @@ dawn-field-theory/
           exp_04_gates_20260907_182007.json
           exp_05_collapse_20260907_185245.json
           exp_05_gates_20260907_184901.json
+          exp_06_gates_20260907_190634.json
           explore_r2_position_20260907_125700.json
           explore_r4_cyclic_convention_20260907_184406.json
           explore_r4_cyclic_convention_20260907_184448.json
@@ -4890,6 +4892,8 @@ dawn-field-theory/
           exp_04_gates.py
           exp_05_collapse.py
           exp_05_gates.py
+          exp_06_gates.py
+          exp_06_primes_inherit.py
           explore_r2_position_along_the_loop.py
           explore_r4_cyclic_convention.py
           explore_r4_loop_depth_profile.py
