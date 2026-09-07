@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 5/9 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 5/9 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`)
 
 ## The thesis
 
@@ -73,6 +73,36 @@ loop's bias read at the density-matched depth y^{1/ratio}; the delta between the
 of the read, and nothing else, to one part in a thousand at 10¹⁰. Andy Farmer's tranche beyond position: none resolved.
 Forward corrections to round 2 are filed in its outcomes (the q = 10 channel was an identity; R4's reading superseded).
 
+## Round 4 — exp_04, the loop's own depth profile (EXPLORING; no seal, no score)
+
+Asked whether the loop's smooth-depth profile δ_q(y) ~ (log y)^{−β_q} has a closed form, which would remove
+round 3's last fitted input. It does not close, and the round is filed as a null with three results that stand
+(`journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`):
+
+- **δ_{2q} = δ_q exactly, for odd q** — proved (units are odd, so CRT fixes the residue mod 2q from the residue
+  mod q; the transition matrix is a padded relabelling) and verified 42/42. Round 3's "δ₁₀ ≡ δ₅" forward
+  correction is the q = 5 instance of this. **q and 2q for odd q are never independent cells.**
+- **δ_q → 0, not 1 − φ(q)/q.** The null is a product of marginals over the φ(q) *unit* classes, so independence
+  gives exactly zero; δ₃ passes through 1/3 and keeps falling. δ_q is distance from independence.
+- **The power law holds over four decades** — R² ≥ 0.994 across twelve depths, y = 60 … 141,422, no break and no
+  loss of monotonicity anywhere in range.
+
+**A candidate was raised and killed by its own control.** On the six-modulus anchor set β appeared to sort by
+φ(q) rather than q (q = 5 cyclic and q = 8 Klein agreeing at 0.35σ; one common β rejected at χ²/dof = 8.55).
+It is false. Holding φ *exactly* fixed and varying δ — possible because φ is non-monotone in q — β is flat in
+no class (χ²/dof = 10.9 to 332.6; at φ = 24 it runs 0.332 → 0.142 across five moduli of equal totient). In the
+anchor set φ and the δ-level were collinear at 0.995 and the correlation was read off the wrong variable.
+
+δ-level does not absorb everything either: q = 11 and q = 15 sit at δ = 0.541 and 0.554 but β = 0.531 and
+0.759, about 14σ apart. Pooled over 44 moduli β falls monotonically with δ (corr −0.84 / −0.97, no sign
+change). **β is dominated by the δ-level with residual modulus structure, and at collinearity 0.977 neither is
+isolable here.** Gate **G7 FAIL** independently: held-out classes never clear saturation at reachable depth
+(matching δ = 0.40 at q = 21 needs y ~ 10^11.4).
+
+The second candidate from round 3's forward note — the depth-shift law at moduli with a prime factor above y —
+is **vacuous** and was not run: the mean gap e^γ log y is below y at every depth, so those moduli are saturated
+by construction and the mechanism never runs.
+
 ## What round 1 recorded (not claimed — its seal did not score it)
 
 **The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
@@ -109,6 +139,9 @@ statistics.
 | `scripts/exp_02_position_of_the_read.py` | round 2: R1–R4 at positions u_top = log 2N / log y from 1.75 to 7, depths m = 6..9, W = 200 at the flip cells, verdicts CONFIRM / CONVERGED / KILL / INCONCLUSIVE |
 | `scripts/exp_03_gates.py` | round 3 gates G1–G8 (lift invariance; exact reproducibility of round 2; the 10¹⁰ decade's count against sympy's π; chunk carry; fresh loops; de-trended scatter; the density-matched prediction against round 2; the y_eff solver) |
 | `scripts/exp_03_density_matched_loop.py` | round 3: ρ_q at the primes' arc and along the curve, m = 8..10 (the 10¹⁰ decade chunked with residue carry), loops of 200 windows at y and at y_eff; precedence KILL → CONVERGED → INCONCLUSIVE |
+| `scripts/explore_r4_loop_depth_profile.py` | exploring (disclosed): the loop's own δ_q(y) — `--mode enumerated` gives exact rationals on the enumerable loops k ≤ 9, `--mode sampled` the twelve-depth sweep to y = 141,422 |
+| `scripts/explore_r4_qsweep.py` | exploring (disclosed): δ_q over q = 3..60 (2·odd excluded by the theorem) at three depths — supplies the two controlled comparisons, β at fixed φ with δ varying and β at matched δ with the modulus varying |
+| `scripts/exp_04_gates.py` | round 4 gates G1–G8 (the record's exact rationals; the δ_{2q} = δ_q theorem; class independence; mean gap = 1/Mertens; sampler unbiasedness; reproducibility; **G7 saturation feasibility — FAILED, no seal written**) |
 
 ## Discipline
 

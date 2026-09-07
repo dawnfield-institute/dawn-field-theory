@@ -1,0 +1,595 @@
+{
+ "mode": "exploring",
+ "registered": false,
+ "generated": "20260907_180221",
+ "note": "unregistered exploration; disclosed in the round-4 seal's postdiction section",
+ "depths": {
+  "2": {
+   "k": 2,
+   "y": 3,
+   "P": "6",
+   "units": 2,
+   "density": 0.3333333333333333,
+   "mertens": 0.3333333333333333,
+   "mean_gap": 3.0,
+   "inv_mertens": 3.0,
+   "wrap_note": "gaps cyclic (incl. wrap); transition matrix linear, as round 1",
+   "seconds": 0.0,
+   "q": {
+    "3": {
+     "q": 3,
+     "phi": 2,
+     "exact": "None",
+     "delta": NaN,
+     "limit": 0.33333333333333337,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": NaN,
+     "beta_local": NaN
+    },
+    "6": {
+     "q": 6,
+     "phi": 2,
+     "exact": "None",
+     "delta": NaN,
+     "limit": 0.6666666666666667,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": NaN,
+     "beta_local": NaN
+    }
+   }
+  },
+  "3": {
+   "k": 3,
+   "y": 5,
+   "P": "30",
+   "units": 8,
+   "density": 0.26666666666666666,
+   "mertens": 0.26666666666666666,
+   "mean_gap": 3.75,
+   "inv_mertens": 3.75,
+   "wrap_note": "gaps cyclic (incl. wrap); transition matrix linear, as round 1",
+   "seconds": 0.0,
+   "q": {
+    "3": {
+     "q": 3,
+     "phi": 2,
+     "exact": "5/12",
+     "delta": 0.4166666666666667,
+     "limit": 0.33333333333333337,
+     "p_q_divides_gap": 0.25,
+     "identity_uniform": 0.5,
+     "marginal_gap": -0.08333333333333331,
+     "beta_local": NaN
+    },
+    "5": {
+     "q": 5,
+     "phi": 4,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.19999999999999996,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "6": {
+     "q": 6,
+     "phi": 2,
+     "exact": "5/12",
+     "delta": 0.4166666666666667,
+     "limit": 0.6666666666666667,
+     "p_q_divides_gap": 0.25,
+     "identity_uniform": 0.5,
+     "marginal_gap": -0.08333333333333331,
+     "beta_local": NaN
+    },
+    "10": {
+     "q": 10,
+     "phi": 4,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.6,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "15": {
+     "q": 15,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.4666666666666667,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "30": {
+     "q": 30,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.7333333333333334,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    }
+   }
+  },
+  "4": {
+   "k": 4,
+   "y": 7,
+   "P": "210",
+   "units": 48,
+   "density": 0.22857142857142856,
+   "mertens": 0.22857142857142856,
+   "mean_gap": 4.375,
+   "inv_mertens": 4.375,
+   "wrap_note": "gaps cyclic (incl. wrap); transition matrix linear, as round 1",
+   "seconds": 0.0,
+   "q": {
+    "3": {
+     "q": 3,
+     "phi": 2,
+     "exact": "223/552",
+     "delta": 0.40398550724637683,
+     "limit": 0.33333333333333337,
+     "p_q_divides_gap": 0.2916666666666667,
+     "identity_uniform": 0.41666666666666663,
+     "marginal_gap": -0.0126811594202898,
+     "beta_local": 0.16280422208099682
+    },
+    "5": {
+     "q": 5,
+     "phi": 4,
+     "exact": "229/276",
+     "delta": 0.8297101449275363,
+     "limit": 0.19999999999999996,
+     "p_q_divides_gap": 0.041666666666666664,
+     "identity_uniform": 0.8333333333333334,
+     "marginal_gap": -0.0036231884057971175,
+     "beta_local": 0.9833234682544953
+    },
+    "6": {
+     "q": 6,
+     "phi": 2,
+     "exact": "223/552",
+     "delta": 0.40398550724637683,
+     "limit": 0.6666666666666667,
+     "p_q_divides_gap": 0.2916666666666667,
+     "identity_uniform": 0.41666666666666663,
+     "marginal_gap": -0.0126811594202898,
+     "beta_local": 0.16280422208099682
+    },
+    "7": {
+     "q": 7,
+     "phi": 6,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.1428571428571429,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "10": {
+     "q": 10,
+     "phi": 4,
+     "exact": "229/276",
+     "delta": 0.8297101449275363,
+     "limit": 0.6,
+     "p_q_divides_gap": 0.041666666666666664,
+     "identity_uniform": 0.8333333333333334,
+     "marginal_gap": -0.0036231884057971175,
+     "beta_local": 0.9833234682544953
+    },
+    "14": {
+     "q": 14,
+     "phi": 6,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.5714285714285714,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "15": {
+     "q": 15,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.4666666666666667,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "21": {
+     "q": 21,
+     "phi": 12,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.4285714285714286,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "30": {
+     "q": 30,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.7333333333333334,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "35": {
+     "q": 35,
+     "phi": 24,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.3142857142857143,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    }
+   }
+  },
+  "5": {
+   "k": 5,
+   "y": 11,
+   "P": "2310",
+   "units": 480,
+   "density": 0.2077922077922078,
+   "mertens": 0.2077922077922078,
+   "mean_gap": 4.8125,
+   "inv_mertens": 4.8125,
+   "wrap_note": "gaps cyclic (incl. wrap); transition matrix linear, as round 1",
+   "seconds": 0.0,
+   "q": {
+    "3": {
+     "q": 3,
+     "phi": 2,
+     "exact": "1429/3824",
+     "delta": 0.3736924686192469,
+     "limit": 0.33333333333333337,
+     "p_q_divides_gap": 0.3125,
+     "identity_uniform": 0.375,
+     "marginal_gap": -0.0013075313807531241,
+     "beta_local": 0.37319369259339935
+    },
+    "5": {
+     "q": 5,
+     "phi": 4,
+     "exact": "1433/1912",
+     "delta": 0.7494769874476988,
+     "limit": 0.19999999999999996,
+     "p_q_divides_gap": 0.0625,
+     "identity_uniform": 0.75,
+     "marginal_gap": -0.0005230125523012497,
+     "beta_local": 0.4869292253151908
+    },
+    "6": {
+     "q": 6,
+     "phi": 2,
+     "exact": "1429/3824",
+     "delta": 0.3736924686192469,
+     "limit": 0.6666666666666667,
+     "p_q_divides_gap": 0.3125,
+     "identity_uniform": 0.375,
+     "marginal_gap": -0.0013075313807531241,
+     "beta_local": 0.37319369259339935
+    },
+    "7": {
+     "q": 7,
+     "phi": 6,
+     "exact": "18641/19120",
+     "delta": 0.9749476987447698,
+     "limit": 0.1428571428571429,
+     "p_q_divides_gap": 0.004166666666666667,
+     "identity_uniform": 0.975,
+     "marginal_gap": -5.230125523014717e-05,
+     "beta_local": 0.12147496282460139
+    },
+    "10": {
+     "q": 10,
+     "phi": 4,
+     "exact": "1433/1912",
+     "delta": 0.7494769874476988,
+     "limit": 0.6,
+     "p_q_divides_gap": 0.0625,
+     "identity_uniform": 0.75,
+     "marginal_gap": -0.0005230125523012497,
+     "beta_local": 0.4869292253151908
+    },
+    "11": {
+     "q": 11,
+     "phi": 10,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.09090909090909094,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "14": {
+     "q": 14,
+     "phi": 6,
+     "exact": "18641/19120",
+     "delta": 0.9749476987447698,
+     "limit": 0.5714285714285714,
+     "p_q_divides_gap": 0.004166666666666667,
+     "identity_uniform": 0.975,
+     "marginal_gap": -5.230125523014717e-05,
+     "beta_local": 0.12147496282460139
+    },
+    "15": {
+     "q": 15,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.4666666666666667,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "21": {
+     "q": 21,
+     "phi": 12,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.4285714285714286,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "22": {
+     "q": 22,
+     "phi": 10,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.5454545454545454,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "30": {
+     "q": 30,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.7333333333333334,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "33": {
+     "q": 33,
+     "phi": 20,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.3939393939393939,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "35": {
+     "q": 35,
+     "phi": 24,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.3142857142857143,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    }
+   }
+  },
+  "6": {
+   "k": 6,
+   "y": 13,
+   "P": "30030",
+   "units": 5760,
+   "density": 0.1918081918081918,
+   "mertens": 0.1918081918081918,
+   "mean_gap": 5.213541666666667,
+   "inv_mertens": 5.213541666666667,
+   "wrap_note": "gaps cyclic (incl. wrap); transition matrix linear, as round 1",
+   "seconds": 0.0,
+   "q": {
+    "3": {
+     "q": 3,
+     "phi": 2,
+     "exact": "2860783/8291520",
+     "delta": 0.3450251582339547,
+     "limit": 0.33333333333333337,
+     "p_q_divides_gap": 0.32743055555555556,
+     "identity_uniform": 0.3451388888888889,
+     "marginal_gap": -0.00011373065493419654,
+     "beta_local": 1.1851371106452255
+    },
+    "5": {
+     "q": 5,
+     "phi": 4,
+     "exact": "961513/1381920",
+     "delta": 0.6957805082783374,
+     "limit": 0.19999999999999996,
+     "p_q_divides_gap": 0.07604166666666666,
+     "identity_uniform": 0.6958333333333333,
+     "marginal_gap": -5.282505499593082e-05,
+     "beta_local": 1.1038498509096242
+    },
+    "6": {
+     "q": 6,
+     "phi": 2,
+     "exact": "2860783/8291520",
+     "delta": 0.3450251582339547,
+     "limit": 0.6666666666666667,
+     "p_q_divides_gap": 0.32743055555555556,
+     "identity_uniform": 0.3451388888888889,
+     "marginal_gap": -0.00011373065493419654,
+     "beta_local": 1.1851371106452255
+    },
+    "7": {
+     "q": 7,
+     "phi": 6,
+     "exact": "2596829/2763840",
+     "delta": 0.9395728406854231,
+     "limit": 0.1428571428571429,
+     "p_q_divides_gap": 0.010069444444444445,
+     "identity_uniform": 0.9395833333333333,
+     "marginal_gap": -1.049264791019855e-05,
+     "beta_local": 0.5487740655827988
+    },
+    "10": {
+     "q": 10,
+     "phi": 4,
+     "exact": "961513/1381920",
+     "delta": 0.6957805082783374,
+     "limit": 0.6,
+     "p_q_divides_gap": 0.07604166666666666,
+     "identity_uniform": 0.6958333333333333,
+     "marginal_gap": -5.282505499593082e-05,
+     "beta_local": 1.1038498509096242
+    },
+    "11": {
+     "q": 11,
+     "phi": 10,
+     "exact": "1652545/1658304",
+     "delta": 0.9965271747520358,
+     "limit": 0.09090909090909094,
+     "p_q_divides_gap": 0.00034722222222222224,
+     "identity_uniform": 0.9965277777777778,
+     "marginal_gap": -6.030257420075458e-07,
+     "beta_local": 0.05165562429914812
+    },
+    "13": {
+     "q": 13,
+     "phi": 12,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.07692307692307687,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "14": {
+     "q": 14,
+     "phi": 6,
+     "exact": "2596829/2763840",
+     "delta": 0.9395728406854231,
+     "limit": 0.5714285714285714,
+     "p_q_divides_gap": 0.010069444444444445,
+     "identity_uniform": 0.9395833333333333,
+     "marginal_gap": -1.049264791019855e-05,
+     "beta_local": 0.5487740655827988
+    },
+    "15": {
+     "q": 15,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.4666666666666667,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "21": {
+     "q": 21,
+     "phi": 12,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.4285714285714286,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "22": {
+     "q": 22,
+     "phi": 10,
+     "exact": "1652545/1658304",
+     "delta": 0.9965271747520358,
+     "limit": 0.5454545454545454,
+     "p_q_divides_gap": 0.00034722222222222224,
+     "identity_uniform": 0.9965277777777778,
+     "marginal_gap": -6.030257420075458e-07,
+     "beta_local": 0.05165562429914812
+    },
+    "26": {
+     "q": 26,
+     "phi": 12,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.5384615384615384,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    },
+    "30": {
+     "q": 30,
+     "phi": 8,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.7333333333333334,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "33": {
+     "q": 33,
+     "phi": 20,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.3939393939393939,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "35": {
+     "q": 35,
+     "phi": 24,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.3142857142857143,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": -0.0
+    },
+    "39": {
+     "q": 39,
+     "phi": 24,
+     "exact": "1",
+     "delta": 1.0,
+     "limit": 0.3846153846153846,
+     "p_q_divides_gap": 0.0,
+     "identity_uniform": 1.0,
+     "marginal_gap": 0.0,
+     "beta_local": NaN
+    }
+   }
+  }
+ }
+}
