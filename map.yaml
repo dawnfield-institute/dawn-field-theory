@@ -64,6 +64,7 @@ dawn-field-theory/
     20260904_120500_m18_phase8_n24.md
     20260904_150000_m18_two_theorems.md
     20260905_160500_xi_optimum_retraction_propagated.md
+    20260907_120500_prime_gap_ledger.md
     README.md
   .claude/
     skills/
@@ -4837,10 +4838,15 @@ dawn-field-theory/
         core/
           rough.py
         journals/
+          2026-09-07_exp01_outcomes.md
           2026-09-07_exp01_registration.md
         results/
           exp_00_gates_20260907_114418.json
           exp_00_gates_20260907_114513.json
+          exp_01_cascade_truncation_main_20260907_114927.json
+          exp_01_cascade_truncation_main_20260907_115156.json
+          exp_01_cascade_truncation_main_20260907_114927_log.txt
+          exp_01_cascade_truncation_main_20260907_115156_log.txt
         scripts/
           exp_00_gates.py
           exp_01_cascade_truncation.py

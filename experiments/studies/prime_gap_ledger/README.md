@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 0/3 (registered, not run)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 0/3 (run 2026-09-07; three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`)
 
 ## The thesis
 
@@ -28,13 +28,26 @@ repelled, the bias vanishing globally). What is registered is what none of them 
 
 | | relation | verdict |
 |---|---|---|
-| R1 | the mean-rescaled gap **shape** delta Δ(u; m) obeys a drift law across decades (successive-decade differences shrink at every evaluable live u) | — |
-| R2 | the residue bias is a truncation phenomenon: the consecutive-survivor diagonal deficit δ(u; m) obeys the same drift law, decreases across decades at u = 2 (the primes), and meets the loop's own value at the deepest live u | — |
-| R3 | the termination depth (max least-prime-factor over a gap's interior) against a matched null of random composites is scale-free | — |
+| R1 | the mean-rescaled gap **shape** delta Δ(u; m) obeys a drift law across decades (successive-decade differences shrink at every evaluable live u) | **INCONCLUSIVE** — at u ≥ 3 the shapes agree within noise in every decade (converged, which the rule cannot confirm); at u ≤ 2.5 the metric is a bin-edge artifact for lattice gaps |
+| R2 | the residue bias is a truncation phenomenon: the consecutive-survivor diagonal deficit δ(u; m) obeys the same drift law, decreases across decades at u = 2 (the primes), and meets the loop's own value at the deepest live u | **INCONCLUSIVE** — (a) CONFIRM at all six live u, (b) CONFIRM (0.176 → 0.103 from 10⁵ to 10⁹), (c) meets to 1e-4 in every decade but two floors sit below 1e-4 |
+| R3 | the termination depth (max least-prime-factor over a gap's interior) against a matched null of random composites is scale-free | **INCONCLUSIVE** — ρ = 0.93, 0.95, 0.95, 0.96 (10⁶..10⁹), converged within floors from 10⁷ |
 
 Live cells are those where the loop's period exceeds the window; where it does not, window = loop
-exactly (a gate). The raw gap histogram is not compared — its delta is Buchstab's density ratio in
-disguise — only shapes are. Floors are half-splits, reported per cell.
+exactly (a gate). Floors are half-splits, reported per cell.
+
+## What the run recorded (not claimed — the seal did not score it)
+
+**The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
+consecutive-survivor deficit mod 3 in the window equals the primorial loop's deficit at that depth to a
+thousandth, whatever the decade (y = 100: 0.2217, 0.2243, 0.2225, 0.2232, 0.2231 across five decades against
+the loop's 0.2231). **At the primes themselves the loop over-predicts by a constant:** at y = ⌈√(2x)⌉ the
+loop's deficit exceeds the primes' by 0.0093, 0.0098, 0.0099, 0.0088 for x = 10⁶, 10⁷, 10⁸, 10⁹. So the
+Lemke Oliver–Soundararajan bias is the loop's bias at the truncation depth minus a scale-free residual
+ε(u) — zero for u ≥ 2.5, about 0.003 at u = 2.25, about 0.0095 at u = 2 — the local/global delta of the
+transition structure, the same shape as Buchstab's delta for the density. The loop's exact deficits at
+q = 3 are 5/12, 223/552, 2860783/8291520, … (k = 3, 4, 6, …). Gap interiors are smoother than random
+composites of their decade (ρ ≈ 0.95). These are the objects of round 2, with a CONVERGED verdict class,
+a lattice shape metric and a tolerance on "meets" — the three instrument lessons of this round.
 
 ## Lineage, and what is deliberately not reused
 

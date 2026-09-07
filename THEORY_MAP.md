@@ -83,6 +83,7 @@ The unique stable fixed point of PAC recursion. Selected by b^2 - b - 1 = 0 (gra
 | Force hierarchy | [milestone6/exp_04](experiments/milestones/milestone6/) | phi^6 = strong/EM ratio |
 | Neural networks | [ml_validation_pythia_gpt2](papers/standalone/ml_validation_pythia_gpt2/) | phi-crossing at step 512 |
 | Prime stress field | [sec_prime_manifold](experiments/studies/sec_prime_manifold/) | 1/phi threshold |
+| The prime gap ledger: the consecutive-prime residue bias equals the primorial loop's bias at the truncation depth minus a scale-free residual ε(u) (≈ 0.0095 at u = 2, 10⁶–10⁹) | prime_gap_ledger (2026-09-07) | **recorded, not registered** — exp_01 scored 0/3 by its sealed rules (converged quantities and a lattice-metric artifact); the loop's exact biases and the y-only collapse are on the record; round 2 registers ε(u) |
 | Cellular automata | [cellular_automata_pac_attractors](experiments/studies/cellular_automata_pac_attractors/) | P/A = 1.0579 at Rule 110 |
 | Artifact test | [phi_artifact_test](experiments/studies/phi_artifact_test/) | Not an artifact |
 

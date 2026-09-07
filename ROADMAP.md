@@ -188,6 +188,7 @@ Carried honestly. Each is a soft spot in otherwise settled work.
 | M13.5 | Coherence limit is **not** universal (exp_15, 0/4) — geometric, not Fibonacci-arithmetic |
 | M13.5 | PSD degeneracy proven **fundamental** (exp_16, 0/4) — no isomorphism-invariant metric can fix it |
 | M18 | Rigidity unproved (47/47 at n = 20); a third strict species (asymmetric) unidentified; Block D reach retired at measured sizes (0/173, 2026-09-03); the clean regime's third kernel class; the branch profile's null; the exact denominator of the reflection polynomial (polynomial integrality killed 2026-09-02 at n = 20 — three parents with den(5·b) = 3; the bound by the diagram resultant is proved, equality open) — [`formal/conjectures/m18_open.md`](formal/conjectures/m18_open.md) |
+| prime_gap_ledger | Founded 2026-09-07 (exp_01 sealed `9213386c`, 0/3 by its rules). Recorded: the window's consecutive-residue bias depends on the sieve depth alone and equals the primorial loop's exact bias; at the primes the loop over-predicts by a scale-free residual ε(u) ≈ 0.0095 at u = 2 (10⁶–10⁹). Round 2: register ε(u) with a CONVERGED verdict class; a lattice shape metric (match depth, not rescale); R3 with a tolerance — [`experiments/studies/prime_gap_ledger/`](experiments/studies/prime_gap_ledger/) |
 
 The M13.5 entries are not defects to repair. M15 reclassifies them: class-level content
 passes, representative-level demands fail, and that split *is* the DFT-Hodge conjecture.

@@ -99,7 +99,9 @@ for m in args.decades:
                 if lp["P"] % q == 0:
                     e = R.diagonal_deficit_exact(Tm); exact[q] = str(e); out["exact_loop_bias"][f"k={k},q={q}"] = str(e)
         n_gl = int(len(gl)); del gl
-        cell = dict(m=m, u=u, y=y, k=k, P=str(P) if P < 10**30 else f"~1e{len(str(P))-1}", periodic=periodic, live=not periodic,
+        # P(y) has thousands of digits at large y: report its size from the bit length (str(P) hits Python's 4300-digit
+        # limit — run 1 of 2026-09-07 died here at m = 8, u = 2; display only, no registered quantity involved)
+        cell = dict(m=m, u=u, y=y, k=k, P=str(P) if P < 10**30 else f"~1e{int(P.bit_length() * 0.30103)}", periodic=periodic, live=not periodic,
                     loop=lp["kind"], survivors=n_surv, gaps_loop=n_gl, density_ratio=(n_surv / Lw) / R.mertens_product(ps),
                     delta_shape=R.tv(sh, shl), floor_shape=max(floor_local, floor_loop),
                     deficit_local=dl, deficit_loop=dloop, floor_deficit={q: max(floor_dl[q], floor_dloop[q]) for q in R.Q_LIST},
