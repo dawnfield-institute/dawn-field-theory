@@ -1,0 +1,150 @@
+{
+ "script": "exp_07_gates.py",
+ "generated": "20260907_195941",
+ "seed": 20260911,
+ "m": 10,
+ "a": 1.2998,
+ "pool": [
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  15,
+  16,
+  17,
+  19,
+  20,
+  21,
+  23,
+  24,
+  25,
+  27,
+  28,
+  29,
+  31,
+  32,
+  33,
+  35,
+  36,
+  37,
+  39,
+  40,
+  41,
+  43,
+  44,
+  45,
+  47,
+  48,
+  49,
+  51,
+  52,
+  53,
+  55,
+  56,
+  57,
+  59,
+  60
+ ],
+ "loop_train_rms": 0.037334688179106464,
+ "loop_heldout_rms": 0.03043030774440292,
+ "binned_heldout_rms": 0.03249742139318397,
+ "y": 141422,
+ "y_eff": 510299,
+ "density": 0.0427154205,
+ "n": 427154205,
+ "all_pass": true,
+ "gates": {
+  "G1": {
+   "claim": "a is fitted on loop TRAINING moduli only and generalises to the loop's held-out moduli",
+   "value": {
+    "a": 1.2998,
+    "train_rms": 0.037334688179106464,
+    "heldout_rms": 0.03043030774440292,
+    "ratio": 0.8150679496349075
+   },
+   "status": "PASS"
+  },
+  "G2": {
+   "claim": "the closed form beats the 18-bin F on the loop's held-out cells, before any prime is touched",
+   "value": {
+    "tanh_heldout": 0.03043030774440292,
+    "binned_heldout": 0.03249742139318397,
+    "improvement": 0.0020671136487810486
+   },
+   "status": "PASS"
+  },
+  "G3": {
+   "claim": "the m=10 read IS the primes (count == primepi difference)",
+   "value": {
+    "n": 427154205,
+    "primepi": 427154205
+   },
+   "status": "PASS"
+  },
+  "G4": {
+   "claim": "chunk carry exact at m=10: transitions == n - 1",
+   "value": {
+    "transitions": 427154204,
+    "n_minus_1": 427154204
+   },
+   "status": "PASS"
+  },
+  "G5": {
+   "claim": "y_eff solver consistent at m=10",
+   "value": {
+    "y": 141422,
+    "y_eff": 510299,
+    "density": 0.0427154205,
+    "mertens_at_y_eff": 0.042715462033458475,
+    "rel": 9.72329383436968e-07,
+    "bracket": {
+     "p_lo": 510299,
+     "p_hi": 510311
+    }
+   },
+   "status": "PASS"
+  },
+  "G6": {
+   "claim": "gbar(y_eff) is the measured mean gap within 2% at m=10",
+   "value": {
+    "mean_gap": 23.41074928666569,
+    "gbar_y_eff": 23.408193275005733,
+    "rel": 0.00010919303467507494
+   },
+   "status": "PASS"
+  },
+  "G7": {
+   "claim": "POWER: the depth comparison resolves at >=3 sigma by simulation over the actual cell count",
+   "value": {
+    "mean_separation_in_prediction": 0.029019770538050084,
+    "expected_cell_residual": 0.03043030774440292,
+    "n_cells": 44,
+    "expected_rms_gap": 0.013936031016120598,
+    "sampling_spread": 0.003624493239492426,
+    "power_sigma": 3.844959859291171,
+    "note": "exp_06's error was comparing per-cell signal to per-cell residual; this simulates the sampling spread of the rms difference over the actual number of cells"
+   },
+   "status": "PASS"
+  },
+  "G8": {
+   "claim": "all thresholds fixed here, before any m=10 delta_q exists",
+   "value": {
+    "a": 1.2998,
+    "form": "tanh(a * phi(q)/gbar)",
+    "free_parameters_at_the_primes": 0,
+    "R1": "CONFIRM if rms(primes at m=10) <= 1.5 * the loop's held-out rms; KILL if > 2.5 *",
+    "R2": "the closed form must beat the 18-bin F on the m=10 primes, >=3 sigma paired bootstrap",
+    "R3": "lambda(m=10) within 0.15 of 0.652 (linear trend on m=7,8,9: 0.799, 0.750, 0.701); KILL if outside [0.35, 0.95]",
+    "lambda_forecast": 0.652,
+    "lambda_tol": 0.15,
+    "seed": 20260911
+   },
+   "status": "PASS"
+  }
+ }
+}
