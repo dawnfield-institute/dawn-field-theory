@@ -1,0 +1,61 @@
+n=3: 1 unicyclic graphs (A001429 1) [0s enumeration]
+n=3 done [0s]: bal: survivors 0 screened 0 strict 0; tw: survivors 0 screened 0 strict 0; T2 1/1 superset (1 equal, 0 exceptions)
+n=4: 2 unicyclic graphs (A001429 2) [0s enumeration]
+n=4 done [0s]: bal: survivors 0 screened 0 strict 0; tw: survivors 1 screened 1 strict 0; T2 2/2 superset (1 equal, 0 exceptions)
+n=5: 5 unicyclic graphs (A001429 5) [0s enumeration]
+n=5 done [0s]: bal: survivors 0 screened 0 strict 0; tw: survivors 0 screened 0 strict 0; T2 5/5 superset (4 equal, 0 exceptions)
+n=6: 13 unicyclic graphs (A001429 13) [0s enumeration]
+n=6 done [2s]: bal: survivors 3 screened 0 strict 0 golden-survivors 1; tw: survivors 4 screened 0 strict 0 golden-survivors 1; T2 10/13 superset (9 equal, 3 exceptions)
+n=7: 33 unicyclic graphs (A001429 33) [0s enumeration]
+n=7 done [5s]: bal: survivors 2 screened 0 strict 0; tw: survivors 2 screened 0 strict 0; T2 28/33 superset (23 equal, 5 exceptions)
+n=8: 89 unicyclic graphs (A001429 89) [0s enumeration]
+   STRICT n=8 bal edges=[(0, 5), (1, 0), (1, 2), (2, 3), (3, 4), (3, 6), (5, 6), (6, 7)]
+   STRICT n=8 bal edges=[(0, 5), (1, 0), (1, 2), (1, 4), (1, 6), (2, 3), (5, 6), (6, 7)]
+   STRICT n=8 tw edges=[(0, 5), (1, 0), (1, 2), (1, 4), (2, 3), (2, 5), (5, 6), (6, 7)]
+n=8 done [17s]: bal: survivors 12 screened 2 strict 2; tw: survivors 18 screened 7 strict 1; T2 74/89 superset (61 equal, 15 exceptions)
+n=9: 240 unicyclic graphs (A001429 240) [0s enumeration]
+n=9 done [55s]: bal: survivors 5 screened 0 strict 0; tw: survivors 5 screened 0 strict 0; T2 221/240 superset (179 equal, 19 exceptions)
+n=10: 657 unicyclic graphs (A001429 657) [1s enumeration]
+   500/657 [150s] survivors 55/68 strict 0/0
+n=10 done [185s]: bal: survivors 60 screened 10 strict 0 golden-survivors 19; tw: survivors 74 screened 13 strict 0 golden-survivors 18; T2 587/657 superset (470 equal, 70 exceptions)
+n=11: 1806 unicyclic graphs (A001429 1806) [2s enumeration]
+   500/1806 [2s] survivors 11/11 strict 0/0
+   1000/1806 [2s] survivors 19/19 strict 0/0
+   1500/1806 [2s] survivors 21/21 strict 0/0
+n=11 done [2s]: bal: survivors 21 screened 0 strict 0; tw: survivors 21 screened 0 strict 0
+n=12: 5026 unicyclic graphs (A001429 5026) [5s enumeration]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (2, 3), (3, 4), (4, 5), (4, 11), (5, 6), (7, 8), (8, 9), (9, 10), (10, 11)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (2, 3), (3, 4), (4, 5), (4, 6), (5, 10), (7, 8), (8, 9), (9, 10), (9, 11)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (2, 3), (2, 6), (3, 4), (3, 10), (4, 5), (7, 8), (8, 9), (9, 10), (9, 11)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (2, 3), (2, 6), (3, 4), (3, 8), (4, 5), (7, 8), (7, 11), (8, 9), (9, 10)]
+   STRICT n=12 tw edges=[(0, 7), (1, 0), (1, 2), (2, 3), (2, 6), (3, 4), (3, 10), (4, 5), (7, 8), (7, 11), (8, 9), (9, 10)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (1, 6), (1, 8), (2, 3), (3, 4), (4, 5), (7, 8), (8, 9), (9, 10), (10, 11)]
+   STRICT n=12 tw edges=[(0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (2, 7), (3, 4), (4, 5), (7, 8), (8, 9), (9, 10), (10, 11)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (2, 9), (3, 4), (4, 5), (7, 8), (8, 9), (9, 10), (10, 11)]
+   STRICT n=12 tw edges=[(0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (3, 4), (3, 8), (4, 5), (7, 8), (8, 9), (9, 10), (10, 11)]
+   STRICT n=12 tw edges=[(0, 3), (0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (3, 4), (4, 5), (7, 8), (8, 9), (8, 11), (9, 10)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (3, 4), (4, 5), (4, 9), (7, 8), (8, 9), (8, 11), (9, 10)]
+   500/5026 [7s] survivors 116/135 strict 7/4
+   1000/5026 [7s] survivors 149/174 strict 7/4
+   1500/5026 [7s] survivors 152/177 strict 7/4
+   2000/5026 [7s] survivors 159/185 strict 7/4
+   STRICT n=12 bal edges=[(0, 8), (1, 0), (1, 2), (1, 7), (2, 3), (2, 5), (2, 6), (3, 4), (5, 9), (8, 9), (9, 10), (10, 11)]
+   STRICT n=12 tw edges=[(0, 7), (1, 0), (1, 2), (2, 3), (2, 5), (2, 6), (3, 4), (5, 8), (7, 8), (7, 11), (8, 9), (9, 10)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (1, 6), (1, 8), (2, 3), (2, 5), (3, 4), (7, 8), (8, 9), (8, 11), (9, 10)]
+   STRICT n=12 tw edges=[(0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (2, 5), (2, 7), (3, 4), (7, 8), (8, 9), (8, 11), (9, 10)]
+   STRICT n=12 bal edges=[(0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (2, 5), (2, 9), (3, 4), (7, 8), (8, 9), (8, 11), (9, 10)]
+   STRICT n=12 tw edges=[(0, 7), (1, 0), (1, 2), (1, 6), (2, 3), (2, 5), (3, 4), (3, 8), (7, 8), (8, 9), (8, 11), (9, 10)]
+   STRICT n=12 tw edges=[(0, 7), (1, 0), (1, 2), (1, 6), (1, 8), (2, 3), (2, 5), (3, 4), (7, 8), (7, 10), (8, 9), (10, 11)]
+   STRICT n=12 bal edges=[(0, 6), (0, 10), (1, 0), (1, 2), (2, 3), (2, 5), (3, 4), (5, 7), (6, 7), (7, 8), (8, 9), (10, 11)]
+   2500/5026 [8s] survivors 212/247 strict 11/8
+   STRICT n=12 bal edges=[(0, 7), (0, 11), (1, 0), (1, 2), (1, 5), (1, 8), (2, 3), (3, 4), (5, 6), (7, 8), (8, 9), (9, 10)]
+   STRICT n=12 tw edges=[(0, 7), (0, 11), (1, 0), (1, 2), (1, 5), (2, 3), (2, 7), (3, 4), (5, 6), (7, 8), (8, 9), (9, 10)]
+   3000/5026 [9s] survivors 233/274 strict 12/9
+   3500/5026 [9s] survivors 240/284 strict 12/9
+   4000/5026 [9s] survivors 250/297 strict 12/9
+   4500/5026 [9s] survivors 250/297 strict 12/9
+   5000/5026 [9s] survivors 253/301 strict 12/9
+n=12 done [9s]: bal: survivors 253 screened 25 strict 12; tw: survivors 301 screened 37 strict 9
+TESTS: {"T1": {"informative": true, "exceptions": {}, "strict_per_n": {"3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 3, "9": 0, "10": 0, "11": 0, "12": 21}, "strict_per_class": {"bal": {"3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 2, "9": 0, "10": 0, "11": 0, "12": 12}, "tw": {"3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 1, "9": 0, "10": 0, "11": 0, "12": 9}}, "ok": true}, "T2": {"informative": true, "evaluated": 1040, "exceptions": 112, "equal": 748, "ok": false}, "T3": {"informative": true, "survivors": 141, "golden_survivors": 39, "sizes": [6, 10], "ok": false}}
+wrote results/exp_20_signed_unicyclic_n3to12_20260907_100350.json [275.5s]
+SCORE DONE

@@ -244,3 +244,44 @@ w = 1 member, and w = 0 is degenerate (rational, no fold). Generalizes the const
 whose statement is the w = 1 case.
 
 > *grade:* derivation · *derived:* [`milestone18/journals/2026-09-04_after_phase8_two_theorems.md`](../../experiments/milestones/milestone18/journals/2026-09-04_after_phase8_two_theorems.md) §2 · *verified:* `explore_s2` symbolic; at w = 1 the construction returns the A₄ path with charpoly(parent) = q·σ(q) exactly
+
+## The signed cycle: the twist selects the odd exponents and doubles the conductor
+
+A signed cycle C_n has exactly two switching classes, decided by the sign product ε round the loop
+(Zaslavsky). **Balanced** (ε = +1) is the ordinary cycle, adjacency spectrum 2cos(2πj/n); **twisted**
+(ε = −1, the Möbius class) has spectrum 2cos((2j+1)π/n): the even and odd halves of the orientation
+double cover C_{2n}, so charpoly(C_{2n}^bal) = charpoly(C_n^bal)·charpoly(C_n^tw), and det C_tw = 4 for
+every n. In the Cartan channel the balanced cycle pairs over ℚ(√d) iff cond(d) | n and the twisted
+cycle iff cond(d) | 2n (Kronecker–Weber on the conductors of the factors Ψ_m); the twisted cycle is
+**strict over exactly one field, √2, exactly when 4 | n**, and core over every other field it pairs
+over when n is even; the balanced cycle is never strict and never core — its constant null vector is a
+simple zero mode (the affine null vector, the reason exp_12 found affine diagrams never strict), while
+the twisted cycle has none (positive definite, λ_min = 4 sin²(π/2n)). For odd n the classes coincide up
+to A ↦ −A. The first non-tree instance of the field-resonance law, and the exact finite form of M15's
+"periodic n² against anti-periodic (n + ½)²".
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-07_blockF_registration.md`](../../experiments/milestones/milestone18/journals/2026-09-07_blockF_registration.md) Theorem 1 · *verified:* `explore_f0` KA-3 (double cover n ≤ 15, det 4 n ≤ 30), KA-4, KA-6 (392 grade cells at the predicted grade, 40 positive)
+
+## The Möbius holonomy relation: C₆ = −I becomes I under the twist
+
+On a cycle with M15's complement-frame transport (Procrustes on adjacent pairs), the holonomy of the
+twisted class is the balanced class's composed with −1 up to a diagonal sign conjugation:
+**H_tw = ε·S·H_bal·S⁻¹**. The transport is switching-invariant; the complement of a cycle vertex is a
+signed path, trivialised by a switching unique up to a global sign; on the shared support the two
+trivialisations differ by the sign of the next edge, the polar factor is odd (polar(−M) = −polar(M)),
+and the signs multiply round the loop to ε. Hence the rotation angles go θ ↦ π − θ, det H_tw =
+(−1)^k det H_bal, ‖H_tw − I‖² + ‖H_bal − I‖² = 4k, and at (m, k) = (6, 2) M15's theorem C₆ = −I
+becomes **H_tw = I**. M15 exp_05 K3's universal det H = +1 is the balanced class; the twisted class
+reconciles in even k and fails to in odd k. Per-edge transport determinants are eigenvector-sign-gauge
+dependent — only their parity round the loop is an invariant (a forward note to K3's recorded counts).
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-07_blockF_registration.md`](../../experiments/milestones/milestone18/journals/2026-09-07_blockF_registration.md) Theorem 2 · *verified:* `explore_f0` KA-1 (M15's 38 K3 rows on their invariants), KA-2 (switching invariance 4.8e-15), KA-5 (74 cells, 0 failures; deficit at (6, 2) = 1.9e-15)
+
+## The cover doubles the cyclomatic number
+
+The branched double cover of a diagram with V nodes and E edges (two lifts of every ordinary edge,
+three of the bond) has 2V vertices and 2E + 1 edges, so its cyclomatic number is 2(E − V + 1): a
+construction parent is a tree **iff** its diagram is. No non-tree diagram, twisted or not, has a tree
+parent; the third strict species is not reached through signed or unicyclic diagrams.
+
+> *grade:* derivation · *derived:* [`milestone18/journals/2026-09-07_blockF_registration.md`](../../experiments/milestones/milestone18/journals/2026-09-07_blockF_registration.md) Theorem 3 · *verified:* by count (r17's construction: 2(E − 1) + 3 edges on 2V vertices)

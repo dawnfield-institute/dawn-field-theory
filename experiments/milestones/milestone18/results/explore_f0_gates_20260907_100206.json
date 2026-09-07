@@ -1,0 +1,449 @@
+{
+ "gates": {
+  "KA-1": {
+   "rows": 38,
+   "mismatch": [],
+   "raw_count_differs": [
+    {
+     "k": 2,
+     "m": 12,
+     "got": 6,
+     "rec": 4
+    },
+    {
+     "k": 2,
+     "m": 14,
+     "got": 6,
+     "rec": 8
+    },
+    {
+     "k": 2,
+     "m": 18,
+     "got": 8,
+     "rec": 10
+    },
+    {
+     "k": 2,
+     "m": 20,
+     "got": 8,
+     "rec": 10
+    },
+    {
+     "k": 2,
+     "m": 22,
+     "got": 12,
+     "rec": 16
+    },
+    {
+     "k": 2,
+     "m": 24,
+     "got": 12,
+     "rec": 10
+    },
+    {
+     "k": 2,
+     "m": 26,
+     "got": 10,
+     "rec": 18
+    },
+    {
+     "k": 3,
+     "m": 6,
+     "got": 4,
+     "rec": 0
+    },
+    {
+     "k": 3,
+     "m": 14,
+     "got": 10,
+     "rec": 4
+    },
+    {
+     "k": 3,
+     "m": 18,
+     "got": 10,
+     "rec": 12
+    },
+    {
+     "k": 3,
+     "m": 20,
+     "got": 12,
+     "rec": 10
+    },
+    {
+     "k": 3,
+     "m": 22,
+     "got": 14,
+     "rec": 10
+    },
+    {
+     "k": 3,
+     "m": 26,
+     "got": 8,
+     "rec": 14
+    },
+    {
+     "k": 3,
+     "m": 28,
+     "got": 18,
+     "rec": 16
+    },
+    {
+     "k": 4,
+     "m": 11,
+     "got": 4,
+     "rec": 6
+    },
+    {
+     "k": 4,
+     "m": 15,
+     "got": 8,
+     "rec": 6
+    },
+    {
+     "k": 4,
+     "m": 17,
+     "got": 6,
+     "rec": 8
+    },
+    {
+     "k": 4,
+     "m": 19,
+     "got": 8,
+     "rec": 6
+    },
+    {
+     "k": 4,
+     "m": 21,
+     "got": 6,
+     "rec": 8
+    },
+    {
+     "k": 4,
+     "m": 25,
+     "got": 10,
+     "rec": 12
+    },
+    {
+     "k": 4,
+     "m": 27,
+     "got": 8,
+     "rec": 10
+    }
+   ],
+   "pass": true
+  },
+  "KA-2": {
+   "cases": [
+    {
+     "case": "C12 twisted",
+     "k": 3,
+     "max_dev": 4.773959005888173e-15
+    },
+    {
+     "case": "C9 twisted",
+     "k": 2,
+     "max_dev": 2.4424906541753444e-15
+    },
+    {
+     "case": "unicyclic n=9 twisted",
+     "k": 2,
+     "max_dev": 1.4432899320127035e-15
+    }
+   ],
+   "max_dev_charpoly": 0,
+   "max_dev_holonomy": 4.773959005888173e-15,
+   "pass": true
+  },
+  "KA-3": {
+   "cover_fail": [],
+   "det_fail": [],
+   "pass": true
+  },
+  "KA-4": {
+   "max_zero_mode": 0.0,
+   "max_lambda_min_dev": 1.8041124150158794e-15,
+   "pass": true
+  },
+  "KA-5": {
+   "cells": 74,
+   "fail": [],
+   "degenerate_declared": [],
+   "H_tw_at_6_2_deficit": 1.871008536903836e-15,
+   "H_bal_at_6_2_deficit": 2.828427124746191,
+   "pass": true
+  },
+  "KA-6": {
+   "cells": 392,
+   "positive": [
+    {
+     "n": 4,
+     "class": "tw",
+     "d": 2,
+     "grade": "strict"
+    },
+    {
+     "n": 5,
+     "class": "bal",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 5,
+     "class": "tw",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 6,
+     "class": "tw",
+     "d": 3,
+     "grade": "core"
+    },
+    {
+     "n": 8,
+     "class": "bal",
+     "d": 2,
+     "grade": "partial"
+    },
+    {
+     "n": 8,
+     "class": "tw",
+     "d": 2,
+     "grade": "strict"
+    },
+    {
+     "n": 10,
+     "class": "bal",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 10,
+     "class": "tw",
+     "d": 5,
+     "grade": "core"
+    },
+    {
+     "n": 12,
+     "class": "bal",
+     "d": 3,
+     "grade": "partial"
+    },
+    {
+     "n": 12,
+     "class": "tw",
+     "d": 2,
+     "grade": "strict"
+    },
+    {
+     "n": 12,
+     "class": "tw",
+     "d": 3,
+     "grade": "core"
+    },
+    {
+     "n": 12,
+     "class": "tw",
+     "d": 6,
+     "grade": "core"
+    },
+    {
+     "n": 13,
+     "class": "bal",
+     "d": 13,
+     "grade": "partial"
+    },
+    {
+     "n": 13,
+     "class": "tw",
+     "d": 13,
+     "grade": "partial"
+    },
+    {
+     "n": 14,
+     "class": "tw",
+     "d": 7,
+     "grade": "core"
+    },
+    {
+     "n": 15,
+     "class": "bal",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 15,
+     "class": "tw",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 16,
+     "class": "bal",
+     "d": 2,
+     "grade": "partial"
+    },
+    {
+     "n": 16,
+     "class": "tw",
+     "d": 2,
+     "grade": "strict"
+    },
+    {
+     "n": 18,
+     "class": "tw",
+     "d": 3,
+     "grade": "core"
+    },
+    {
+     "n": 20,
+     "class": "bal",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 20,
+     "class": "tw",
+     "d": 2,
+     "grade": "strict"
+    },
+    {
+     "n": 20,
+     "class": "tw",
+     "d": 5,
+     "grade": "core"
+    },
+    {
+     "n": 24,
+     "class": "bal",
+     "d": 2,
+     "grade": "partial"
+    },
+    {
+     "n": 24,
+     "class": "bal",
+     "d": 3,
+     "grade": "partial"
+    },
+    {
+     "n": 24,
+     "class": "bal",
+     "d": 6,
+     "grade": "partial"
+    },
+    {
+     "n": 24,
+     "class": "tw",
+     "d": 2,
+     "grade": "strict"
+    },
+    {
+     "n": 24,
+     "class": "tw",
+     "d": 3,
+     "grade": "core"
+    },
+    {
+     "n": 24,
+     "class": "tw",
+     "d": 6,
+     "grade": "core"
+    },
+    {
+     "n": 25,
+     "class": "bal",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 25,
+     "class": "tw",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 26,
+     "class": "bal",
+     "d": 13,
+     "grade": "partial"
+    },
+    {
+     "n": 26,
+     "class": "tw",
+     "d": 13,
+     "grade": "core"
+    },
+    {
+     "n": 28,
+     "class": "bal",
+     "d": 7,
+     "grade": "partial"
+    },
+    {
+     "n": 28,
+     "class": "tw",
+     "d": 2,
+     "grade": "strict"
+    },
+    {
+     "n": 28,
+     "class": "tw",
+     "d": 7,
+     "grade": "core"
+    },
+    {
+     "n": 30,
+     "class": "bal",
+     "d": 5,
+     "grade": "partial"
+    },
+    {
+     "n": 30,
+     "class": "tw",
+     "d": 3,
+     "grade": "core"
+    },
+    {
+     "n": 30,
+     "class": "tw",
+     "d": 5,
+     "grade": "core"
+    },
+    {
+     "n": 30,
+     "class": "tw",
+     "d": 15,
+     "grade": "core"
+    }
+   ],
+   "fail": [],
+   "n_positive": 40,
+   "pass": true
+  },
+  "KA-7": {
+   "counts": {
+    "3": 1,
+    "4": 2,
+    "5": 5,
+    "6": 13,
+    "7": 33,
+    "8": 89,
+    "9": 240,
+    "10": 657,
+    "11": 1806
+   },
+   "pass": true
+  },
+  "KA-8": {
+   "trees": 200,
+   "cells": 1400,
+   "grade_mismatch": [],
+   "charpoly_mismatch": 0,
+   "pass": true
+  }
+ },
+ "m15_anchor": "experiments/milestones/milestone15/results/exp_05_general_k_limit_20260717_150325.json",
+ "all_pass": true,
+ "seconds": 81.8
+}
