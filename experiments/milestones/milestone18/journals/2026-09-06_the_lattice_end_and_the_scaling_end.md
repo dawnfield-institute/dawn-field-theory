@@ -134,6 +134,27 @@ clock — should appear in it, while any system that shows them has a real unit 
 Invariant, not coordinate; falsifiable by one crystalline system with a cascade signature. Not
 registered here; recorded so the consolidation quest finds it.
 
+## Forward correction (2026-09-07): the 13x⁴ was the phasor's, and there the argument is valid
+
+The second batch (five documents, 2026-09-07) answers the question above. The polynomial
+13x⁴ − 12x³ + 14x² − 12x + 13 is the minimal polynomial of the *unimodular phasor*
+u = z/z̄ with z = (1 + √3) + i, not of a tangent — checked: |u| = 1, P(u) = 0 to 3 × 10⁻¹⁵,
+2cos θ = (6 + 8√3)/13, θ/τ = 0.11169…, and uⁿ never returns within 2 × 10⁻⁵ of 1 for n ≤ 10⁵.
+Applied to the phasor the argument is exactly right: a root of unity is an algebraic integer, a
+leading coefficient 13 says u is not one, so u is not a root of unity and θ/τ is irrational
+(Kronecker 1857, in the abelian field ℚ(ζ₁₂) where every conjugate of a unimodular element is
+unimodular). My caution stands only against the tangent form, where tan 30° = 1/√3 with
+minimal polynomial 3x² − 1 is the counterexample; TEST-01's remedy, read as a statement about
+the phasor, is correct. Recorded as a correction to §"TEST-01" above.
+
+Two further checks on the batch. His "universal unit-defect identity" 1 − cos θ = ½·u⁻¹ holds
+at 30° (2 − √3 = (2 + √3)⁻¹) and 36° (2 − φ = φ⁻²) and **fails at 45°** (1 − √2/2 = 0.293
+against ½(3 − 2√2) = 0.086): it is the classical fact that 2 − 2cos(τ/n) = |1 − ζₙ|² is a
+unit iff 1 − ζₙ is, iff n is not a prime power (Φₙ(1) = p for n = pᵏ, 1 otherwise) — true at
+n = 6, 10, 12, 15, 30, 60, false at n = 4, 5, 7, 8, 9. And the "algebraic scar" √3/2 is the
+ratio of the covolumes of ℤ[ω] and ℤ[i], which is √|disc ℤ[ω]| / √|disc ℤ[i]| = √3/√4 — the
+Eisenstein field's own discriminant, not an artefact of the frame it is measured in.
+
 ## Housekeeping found on the way
 
 The theory overview states MED's bound as depth ≤ 1 where the lexicon and THEORY_MAP say
