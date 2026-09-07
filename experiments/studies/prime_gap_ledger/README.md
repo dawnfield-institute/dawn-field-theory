@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 10/15 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`; exp_06 2/3 — `journals/2026-09-07_exp06_outcomes.md`)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 11/18 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`; exp_06 2/3 — `journals/2026-09-07_exp06_outcomes.md`; exp_07 1/3 — `journals/2026-09-07_exp07_outcomes.md`)
 
 ## The thesis
 
@@ -148,6 +148,30 @@ is present and unexplained.
 right guard is a *power* condition — F(x_eff) − F(x_y) must exceed the residual. It was 0.0255 against 0.0308,
 so R2 was dead at the seal and its guard could not see it. Same class as exp_04's G7 saturation failure.
 
+## Round 7 — exp_07, the closed form and the depth forecast (`journals/2026-09-07_exp07_registration.md`, sealed b43dca3f): 1/3
+
+Replaced the 18-bin F with a **one-parameter closed form** `tanh(a·φ(q)/ḡ)`, constrained by the asymptotics
+(0 at the origin, linear leaving it, → 1), `a` = 1.2998 fitted on the loop's training moduli and frozen at the
+seal. Tested against a fresh decade: the 427,154,205 primes of [10¹⁰, 2·10¹⁰).
+
+| | relation | verdict |
+|---|---|---|
+| R1 | the closed form predicts the 10¹⁰ primes, zero further freedom | **CONFIRM** — rms 0.0402 against the sealed 0.0457 |
+| R2 | it beats the 18-bin F on those cells | **INCONCLUSIVE** — 0.0402 vs 0.0636, but 2.14σ, under the sealed 3σ |
+| R3 | λ(m=10) within 0.15 of the forecast 0.652 | **INCONCLUSIVE** — measured 0.6446, but the minimum is not resolved below y_eff |
+
+**R3 is the instructive one.** The forecast landed to 0.0074 against a tolerance of 0.15 — and it does not
+count. The registered §4 guard requires the scan minimum to sit below *both* endpoints by more than the
+bootstrap spread; it clears y by 0.0051 but y_eff by only 0.0015, under a spread of 0.0039. λ is unresolved to
+about ±0.3, so hitting the forecast carries no information. **The apparent bullseye is a broad minimum, not a
+confirmed prediction**, and the guard is the only reason it is not written up as one.
+
+Two corrections to earlier rounds came out of it. exp_06's unexplained **+0.0115 offset halves to +0.0054**
+under the better estimator — much of it was my binning, not the object. And the registration's claim that the
+18-bin F was a poor estimator is **only half right**: within its own fitted domain it scores 0.0457 against the
+closed form's 0.0421, a modest gap. Its real defect was having a domain at all, which cost exp_06 five moduli
+per decade. Recorded, never scored: the primes prefer `a` = 1.3465, 3.6 % above the loop's.
+
 ## What round 1 recorded (not claimed — its seal did not score it)
 
 **The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
@@ -191,6 +215,8 @@ statistics.
 | `scripts/exp_05_collapse.py` | round 5: R1–R3 on 44 moduli × 6 fresh depths, F binned on training moduli only, paired bootstrap for R2, numpy-only |
 | `scripts/exp_06_gates.py` | round 6 gates G1–G8 (all PASS; the decades read for counts, densities, y_eff and transition counts ONLY — no δ formed before the seal) |
 | `scripts/exp_06_primes_inherit.py` | round 6: the sealed F evaluated at φ(q)/ḡ(y_eff) against the primes of 10⁷, 10⁸, 10⁹; zero free parameters |
+| `scripts/exp_07_gates.py` | round 7 gates G1–G8 (all PASS; **G7 is a POWER gate** — the depth comparison resolves at 3.84σ by simulating the sampling spread over the actual cell count, which is exp_06's error fixed at the gate) |
+| `scripts/exp_07_closed_form.py` | round 7: `tanh(a·φ/ḡ)` with `a` frozen from the loop, against the 10¹⁰ primes; the depth scan and its resolution guard |
 | `scripts/exp_04_gates.py` | round 4 gates G1–G8 (the record's exact rationals; the δ_{2q} = δ_q theorem; class independence; mean gap = 1/Mertens; sampler unbiasedness; reproducibility; **G7 saturation feasibility — FAILED, no seal written**) |
 
 ## Discipline
