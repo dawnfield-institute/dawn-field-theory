@@ -64,6 +64,7 @@ dawn-field-theory/
     20260904_120500_m18_phase8_n24.md
     20260904_150000_m18_two_theorems.md
     20260905_160500_xi_optimum_retraction_propagated.md
+    20260907_103000_m18_block_f_signed_cycle.md
     README.md
   .claude/
     skills/
@@ -2616,6 +2617,7 @@ dawn-field-theory/
           2026-09-04_after_phase8_two_theorems.md
           2026-09-04_exp19_outcomes_n24.md
           2026-09-07_blockF_registration.md
+          2026-09-07_exp20_outcomes.md
           2026-09-07_local_global_delta.md
         results/
           .gitignore
@@ -2664,6 +2666,10 @@ dawn-field-theory/
           exp_19_phase8_n22_20260903_133944_log.txt
           exp_19_phase8_n24_20260903_155724.json
           exp_19_phase8_n24_20260903_155724_log.txt
+          exp_20_signed_unicyclic_n13to14_20260907_100352.json
+          exp_20_signed_unicyclic_n13to14_20260907_100352_log.txt
+          exp_20_signed_unicyclic_n3to12_20260907_100350.json
+          exp_20_signed_unicyclic_n3to12_20260907_100350_log.txt
           explore_d0_certificate_gates_20260903_191022.json
           explore_d0_certificate_gates_20260903_191734.json
           explore_d0_certificate_gates_20260903_192541.json
