@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 8/12 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 10/15 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`; exp_06 2/3 — `journals/2026-09-07_exp06_outcomes.md`)
 
 ## The thesis
 
@@ -125,6 +125,29 @@ depths remain). Bin sensitivity recorded, never scored: 0.0446 at 12 bins, 0.036
 at 18. A postdiction confirmed out of sample — found in exp_04's data, tested on fresh depths, a fresh seed and
 a mechanical split. Says nothing yet about the primes.
 
+## Round 6 — exp_06, do the primes inherit the collapse? (`journals/2026-09-07_exp06_registration.md`, sealed 863d8081): 2/3
+
+**The study's first a priori prediction.** F was sealed in exp_05 fitted on loop cells only — no prime involved
+at any stage — and y_eff is *solved* from the arc's measured density, so δ_q(primes) = F(φ(q)/ḡ(y_eff)) has
+**zero free parameters**. Gate G2 confirmed the read is genuinely the primes: counts match sympy's `primepi`
+difference exactly at all three decades (606,028 / 5,317,482 / 47,374,753).
+
+| | relation | verdict |
+|---|---|---|
+| R1 | the primes inherit F, nothing tuned | **CONFIRM** — rms 0.0412 against the sealed tolerance 0.0692 (KILL 0.1038), over 117 scored cells |
+| R2 | the depth shift does the work (positive control) | **INCONCLUSIVE** — 0.0412 with ḡ(y_eff) against 0.0398 with ḡ(y), −0.43σ; unresolved, point estimate marginally favouring the *unshifted* depth |
+| R3 | the ω(q) structure persists at the primes | **CONFIRM** — corr **+0.597**, t = +7.98, against corr with q of −0.030 |
+
+**The sentence, with its limit:** a curve fitted entirely on the loop predicts the consecutive-prime residue
+bias at 39 moduli across three decades to rms 0.041 with nothing tuned — but because ḡ(y) predicts as well as
+ḡ(y_eff), this establishes that the primes lie on F *at approximately the right place*, **not** that round 3's
+depth shift is what puts them there. A systematic offset of **+0.0115** (28 % of rms, 24× the median cell SE)
+is present and unexplained.
+
+**Instrument lesson filed:** R2's registered guard required the shift to *exist* (>0.02; it was 0.10). The
+right guard is a *power* condition — F(x_eff) − F(x_y) must exceed the residual. It was 0.0255 against 0.0308,
+so R2 was dead at the seal and its guard could not see it. Same class as exp_04's G7 saturation failure.
+
 ## What round 1 recorded (not claimed — its seal did not score it)
 
 **The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
@@ -166,6 +189,8 @@ statistics.
 | `scripts/explore_r4_cyclic_convention.py` | exploring (disclosed): the enumerated loop's transition matrix should be cyclic — the linear one injects φ(P)/2 − 1 into every denominator; `2860783/8291520` is `497/1440` |
 | `scripts/exp_05_gates.py` | round 5 gates G1–G8 (all PASS: the record; the δ_{2q} identity; sampler unbiasedness; seed reproducibility; a mechanical disjoint split; no extrapolation; ḡ = 1/Mertens; the fit fully specified) |
 | `scripts/exp_05_collapse.py` | round 5: R1–R3 on 44 moduli × 6 fresh depths, F binned on training moduli only, paired bootstrap for R2, numpy-only |
+| `scripts/exp_06_gates.py` | round 6 gates G1–G8 (all PASS; the decades read for counts, densities, y_eff and transition counts ONLY — no δ formed before the seal) |
+| `scripts/exp_06_primes_inherit.py` | round 6: the sealed F evaluated at φ(q)/ḡ(y_eff) against the primes of 10⁷, 10⁸, 10⁹; zero free parameters |
 | `scripts/exp_04_gates.py` | round 4 gates G1–G8 (the record's exact rationals; the δ_{2q} = δ_q theorem; class independence; mean gap = 1/Mertens; sampler unbiasedness; reproducibility; **G7 saturation feasibility — FAILED, no seal written**) |
 
 ## Discipline
