@@ -4840,6 +4840,7 @@ dawn-field-theory/
         journals/
           2026-09-07_exp01_outcomes.md
           2026-09-07_exp01_registration.md
+          2026-09-07_exploring_position_along_the_loop.md
         results/
           exp_00_gates_20260907_114418.json
           exp_00_gates_20260907_114513.json
@@ -4847,9 +4848,11 @@ dawn-field-theory/
           exp_01_cascade_truncation_main_20260907_115156.json
           exp_01_cascade_truncation_main_20260907_114927_log.txt
           exp_01_cascade_truncation_main_20260907_115156_log.txt
+          explore_r2_position_20260907_125700.json
         scripts/
           exp_00_gates.py
           exp_01_cascade_truncation.py
+          explore_r2_position_along_the_loop.py
       prime_growth_dynamics/
         README.md
         SYNTHESIS.md
