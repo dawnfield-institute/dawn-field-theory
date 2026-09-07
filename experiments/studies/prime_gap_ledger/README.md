@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 5/9 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 8/12 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`)
 
 ## The thesis
 
@@ -103,6 +103,28 @@ The second candidate from round 3's forward note — the depth-shift law at modu
 is **vacuous** and was not run: the mean gap e^γ log y is below y at every depth, so those moduli are saturated
 by construction and the mechanism never runs.
 
+## Round 5 — exp_05, the collapse (`journals/2026-09-07_exp05_registration.md`, sealed 5d6acfc6): 3/3
+
+Round 4's failure was diagnostic: β is a local slope on a curve approaching a bound, so it is set by where on
+the curve a cell sits and can never be a constant of the modulus. **β was the wrong object.** Fitting δ itself,
+the whole family is one curve read at **φ(q)/ḡ** — the size of the unit group against the mean gap ḡ = e^γ log y.
+
+| | relation | verdict |
+|---|---|---|
+| R1 | the collapse generalises: F fitted on 30 training moduli predicts the 14 held-out | **CONFIRM** — held-out rms 0.0346 vs training 0.0564 (ratio 0.614; CONFIRM ≤ 1.5) |
+| R2 | the variable is φ/ḡ, not q/ḡ (positive control) | **CONFIRM** — 0.0346 vs 0.0986, a factor 2.85, at 9.68σ; orderings Spearman 0.852, below the 0.99 guard |
+| R3 | the residual is structured by ω(q), sign registered in advance | **CONFIRM** — corr +0.686, t = +7.78, while corr with q is −0.027 |
+
+**The sentence:** the loop's departure from residue-independence, at every modulus and depth, is one curve read
+at φ(q)/ḡ; depth and modulus enter only through that ratio, and the only thing left over is **how many distinct
+primes build the modulus** — the singular-series shape ∏_{p|q}(p−1)/(p−2), not the modulus itself.
+
+Registered threat §7.2 fired and was handled as sealed: at y = 90 the measured mean gap missed e^γ log y by
+2.63 %, over the 2 % bar, so those 44 cells are recorded and not scored (150 train + 70 held-out over five
+depths remain). Bin sensitivity recorded, never scored: 0.0446 at 12 bins, 0.0364 at 24, against 0.0346 sealed
+at 18. A postdiction confirmed out of sample — found in exp_04's data, tested on fresh depths, a fresh seed and
+a mechanical split. Says nothing yet about the primes.
+
 ## What round 1 recorded (not claimed — its seal did not score it)
 
 **The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
@@ -141,6 +163,9 @@ statistics.
 | `scripts/exp_03_density_matched_loop.py` | round 3: ρ_q at the primes' arc and along the curve, m = 8..10 (the 10¹⁰ decade chunked with residue carry), loops of 200 windows at y and at y_eff; precedence KILL → CONVERGED → INCONCLUSIVE |
 | `scripts/explore_r4_loop_depth_profile.py` | exploring (disclosed): the loop's own δ_q(y) — `--mode enumerated` gives exact rationals on the enumerable loops k ≤ 9, `--mode sampled` the twelve-depth sweep to y = 141,422 |
 | `scripts/explore_r4_qsweep.py` | exploring (disclosed): δ_q over q = 3..60 (2·odd excluded by the theorem) at three depths — supplies the two controlled comparisons, β at fixed φ with δ varying and β at matched δ with the modulus varying |
+| `scripts/explore_r4_cyclic_convention.py` | exploring (disclosed): the enumerated loop's transition matrix should be cyclic — the linear one injects φ(P)/2 − 1 into every denominator; `2860783/8291520` is `497/1440` |
+| `scripts/exp_05_gates.py` | round 5 gates G1–G8 (all PASS: the record; the δ_{2q} identity; sampler unbiasedness; seed reproducibility; a mechanical disjoint split; no extrapolation; ḡ = 1/Mertens; the fit fully specified) |
+| `scripts/exp_05_collapse.py` | round 5: R1–R3 on 44 moduli × 6 fresh depths, F binned on training moduli only, paired bootstrap for R2, numpy-only |
 | `scripts/exp_04_gates.py` | round 4 gates G1–G8 (the record's exact rationals; the δ_{2q} = δ_q theorem; class independence; mean gap = 1/Mertens; sampler unbiasedness; reproducibility; **G7 saturation feasibility — FAILED, no seal written**) |
 
 ## Discipline
