@@ -17,6 +17,19 @@ This package documents the discovery that **Symbolic Entropy Collapse (SEC)** ap
 | Factor base independence | 2.1x | detects primes outside basis |
 | Fibonacci cascade | 2/3 → 1/φ → 3/5 | through F_n sizes |
 
+## Frame-artifact control (STANDARDS §2.9 worked instance, 2026-08-31; annotated here 2026-09-07)
+
+The 1/φ threshold above is a **frame artifact**: `frac(E>0)` was measured on the odd sublattice while
+its expectation Ŝ is a moving window over all integers with 2 in the factor base, so `I = Ŝ − S` is
+positive on odds by construction. The control (recorded in `STANDARDS.md` §2.9 and
+`.changelog/20260831_134905_frame_artifacts_standard.md`): odds at factor-base size 9 give 0.6187;
+include the evens, 0.505; remove 2 from the basis, 0.501; sample n ≡ 2 (mod 3) instead, 0.661 ≈ 2/3 —
+**the residue class chooses the constant.** The mechanism is this study's own (`SYNTHESIS.md`: "2 must be
+in factor base — creates the bias that enables asymmetry"); the consequence is that the headline reading
+is unsupported. What stands: the parity mechanism and the run-length ledger; the 1/φ value at size 9 is
+not special. This annotation was the follow-up the 08-31 changelog left open. Successor study, built on
+none of these statistics: `../prime_gap_ledger/`.
+
 ## Quick Start
 
 ```bash

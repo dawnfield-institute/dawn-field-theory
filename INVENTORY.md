@@ -10,18 +10,18 @@ The whole corpus at a glance. Per-experiment detail is in [`experiments/EXPERIME
 |---|---|---|
 | [`theory/`](theory/) | what is claimed — framework, constants, lexicon, corrections, essays | 16 |
 | [`formal/`](formal/) | why it holds — theorems, derivations, conjectures | 22 |
-| [`experiments/`](experiments/) | what was measured | 2926 |
+| [`experiments/`](experiments/) | what was measured | 2934 |
 | [`papers/`](papers/) | what was published | 1509 |
 | [`archive/`](archive/) | lineage, by era — terminal | 5121 |
 | [`tools/`](tools/) | generators and validators | 12 |
 
-Tracked files: **9687**
+Tracked files: **9695**
 
-**78 experiments** — 53 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
+**79 experiments** — 54 live, 25 archived. Plus 2 spikes, exempt from the experiment standard (STANDARDS.md §3).
 
 ## On deck
 
-19 experiments being worked now.
+20 experiments being worked now.
 
 | Experiment | Kind | Title |
 |---|---|---|
@@ -41,6 +41,7 @@ Tracked files: **9687**
 | [`minimum_actualization_resolution`](experiments/studies/minimum_actualization_resolution/) | studies | Minimum Actualization Resolution |
 | [`pac_cosmology_validation`](experiments/studies/pac_cosmology_validation/) | studies | PAC Cosmology Validation |
 | [`pac_knowledge_discovery`](experiments/studies/pac_knowledge_discovery/) | studies | PAC Knowledge Discovery: N² Convergence for Unknown Children Detection |
+| [`prime_gap_ledger`](experiments/studies/prime_gap_ledger/) | studies | The Prime Gap Ledger: the loop, the gap and the delta |
 | [`sec_prime_manifold`](experiments/studies/sec_prime_manifold/) | studies | SEC Prime Manifold Experiments |
 | [`standard_model_connection`](experiments/studies/standard_model_connection/) | studies | Standard Model Connection Experiments |
 | [`wealth_field_dynamics`](experiments/studies/wealth_field_dynamics/) | studies | Wealth Field Dynamics: Non-Equilibrium Analysis |

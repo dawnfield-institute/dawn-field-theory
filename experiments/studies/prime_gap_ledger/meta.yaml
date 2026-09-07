@@ -1,0 +1,33 @@
+schema_version: '2.1'
+era: era4-milestone-stack-2026q2
+status: active
+title: 'The Prime Gap Ledger: the loop, the gap and the delta'
+directory_name: prime_gap_ledger
+description: 'A prime gap is the sieve by primes up to sqrt(p) truncating: a local,
+  self-terminating cascade with two ends. The global object is the loop of units mod
+  the primorial P(y): bounded, boundaryless, in CRT coordinates; sampled CRT-uniformly.
+  The delta between the y-rough numbers of a window and the loop, as a function of
+  the cascade depth u = log x / log y, is the object. Known theorems (Mertens, Buchstab,
+  Hardy-Littlewood, Lemke Oliver-Soundararajan) are gates; three registered relations
+  (a drift law for the gap shape, the residue bias as a truncation phenomenon, the
+  termination depth against a matched null) are scored CONFIRM / KILL / INCONCLUSIVE.
+  Founded 2026-09-07 from Peter''s reading; deliverable to Andy Farmer.'
+tags:
+- primes
+- prime-gaps
+- primorial
+- sieve
+- Buchstab
+- Hardy-Littlewood
+- residue-bias
+- pre-registration
+- local-global
+created: '2026-09-07'
+score: 0/3
+files:
+- README.md
+child_directories:
+- core
+- journals
+- results
+- scripts

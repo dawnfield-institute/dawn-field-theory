@@ -4831,6 +4831,19 @@ dawn-field-theory/
           run_all.py
         tests/
           test_core.py
+      prime_gap_ledger/
+        README.md
+        meta.yaml
+        core/
+          rough.py
+        journals/
+          2026-09-07_exp01_registration.md
+        results/
+          exp_00_gates_20260907_114418.json
+          exp_00_gates_20260907_114513.json
+        scripts/
+          exp_00_gates.py
+          exp_01_cascade_truncation.py
       prime_growth_dynamics/
         README.md
         SYNTHESIS.md

@@ -2,7 +2,7 @@
 
 **Generated file — do not edit by hand.** Regenerate with `python tools/generate_experiment_index.py`.
 
-78 experiments: 53 live (19 active, 32 completed, 2 other) and 25 archived.
+79 experiments: 54 live (20 active, 32 completed, 2 other) and 25 archived.
 
 Eras, lifecycle values, and the archival rule are defined in [`STANDARDS.md`](../STANDARDS.md) §2.2–2.3. Archived work is preserved lineage, not deprecated work — see [`../archive/README.md`](../archive/README.md).
 
@@ -28,6 +28,7 @@ Currently being worked.
 | [`minimum_actualization_resolution`](studies/minimum_actualization_resolution/) | studies | Minimum Actualization Resolution | — |
 | [`pac_cosmology_validation`](studies/pac_cosmology_validation/) | studies | PAC Cosmology Validation | — |
 | [`pac_knowledge_discovery`](studies/pac_knowledge_discovery/) | studies | PAC Knowledge Discovery: N² Convergence for Unknown Children Detection | — |
+| [`prime_gap_ledger`](studies/prime_gap_ledger/) | studies | The Prime Gap Ledger: the loop, the gap and the delta | 0/3 |
 | [`sec_prime_manifold`](studies/sec_prime_manifold/) | studies | SEC Prime Manifold Experiments | — |
 | [`standard_model_connection`](studies/standard_model_connection/) | studies | Standard Model Connection Experiments | — |
 | [`wealth_field_dynamics`](studies/wealth_field_dynamics/) | studies | Wealth Field Dynamics: Non-Equilibrium Analysis | — |
