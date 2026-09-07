@@ -1,0 +1,405 @@
+"""prime_gap_ledger core — y-rough numbers in a window and on the loop of units mod a primorial.
+
+The objects (registration: journals/2026-09-07_exp01_registration.md):
+  LOCAL  — the y-rough integers (coprime to every prime ≤ y) in the window [N, N + L). For N = 10^m,
+           L = 10^m and y ≥ sqrt(2·10^m) these are exactly the primes of the decade.
+  GLOBAL — the loop of units mod P(y) = ∏_{p ≤ y} p: bounded, boundaryless, in CRT coordinates. It is
+           sampled CRT-UNIFORMLY: draw N mod p independently and uniformly for every p ≤ y and sieve a
+           segment of length L with those residues. A segment at an explicit huge integer N is NOT
+           uniform on the loop — it sits on the number line at depth u = log N / log y — so residues
+           are drawn, never derived from an offset. For k ≤ 9 primes the whole loop is enumerated.
+One sieve routine serves both: segmented_rough(residues, primes, L). Depth is u = log x / log y.
+Everything is numpy and exact integers; nothing here knows about φ, Ξ or Fibonacci.
+"""
+import math
+from fractions import Fraction
+import numpy as np
+
+EULER_GAMMA = 0.5772156649015329
+LOOP_ENUM_KMAX = 9                     # P_9 = 223,092,870 (0.22 GB alive array); k = 10 is 6.5 GB — excluded
+G_MAX = 200                            # fixed gap cap with an overflow bin (a data-dependent cap is a knob)
+SCALED_EDGES = np.round(np.arange(0.0, 6.0 + 1e-9, 0.1), 3)   # gap / mean-gap bins, fixed; overflow beyond 6
+U_GRID = (6.0, 5.0, 4.5, 4.0, 3.5, 3.0, 2.5, 2.25, 2.0)
+Q_LIST = (3, 4, 10)
+
+__all__ = ["EULER_GAMMA", "LOOP_ENUM_KMAX", "G_MAX", "SCALED_EDGES", "U_GRID", "Q_LIST", "odd_sieve",
+           "primes_upto", "primorial", "phi_of_primorial", "segmented_rough", "window_residues",
+           "loop_residues", "loop_enumerate", "gaps_of", "gap_hist", "scaled_hist", "tv", "mertens_product",
+           "buchstab_omega", "omega_at", "transition_matrix", "diagonal_deficit", "diagonal_deficit_exact",
+           "residues_mod", "n_mod_q_from_draws", "depth_y", "lpf_table", "termination_depths", "null_depths",
+           "pair_count_formula", "loop_sample"]
+
+
+# ---- primes and the sieve ------------------------------------------------------------------------------------
+def odd_sieve(X):
+    """Primes ≤ X as int64 (odd-only sieve; index i ↔ 2i + 1). 2·10^8 in ~5 s, 0.1 GB."""
+    X = int(X)
+    n = (X - 1) // 2 + 1
+    s = np.ones(n, dtype=bool)
+    s[0] = False
+    for p in range(3, math.isqrt(X) + 1, 2):
+        if s[p >> 1]:
+            s[(p * p) >> 1::p] = False
+    return np.concatenate(([2], 2 * np.flatnonzero(s) + 1)).astype(np.int64)
+
+
+def primes_upto(primes, y):
+    return primes[primes <= y]
+
+
+def primorial(ps):
+    P = 1
+    for p in ps:
+        P *= int(p)
+    return P
+
+
+def phi_of_primorial(ps):
+    f = 1
+    for p in ps:
+        f *= int(p) - 1
+    return f
+
+
+def segmented_rough(residues, primes, L):
+    """Offsets k ∈ [0, L) with N + k coprime to every prime in `primes`, given residues[i] = N mod primes[i].
+    Σ L/p ≈ 3L slice writes. Used identically for the window (residues of N) and the loop (drawn residues)."""
+    alive = np.ones(int(L), dtype=bool)
+    for p, r in zip(primes, residues):
+        p = int(p)
+        alive[(-int(r)) % p::p] = False
+    return np.flatnonzero(alive)
+
+
+def window_residues(N, primes):
+    return [int(N) % int(p) for p in primes]
+
+
+def loop_residues(primes, rng):
+    """CRT-uniform point on the loop: an independent uniform residue per prime."""
+    return [int(rng.integers(0, int(p))) for p in primes]
+
+
+def loop_enumerate(primes_k):
+    """The whole loop of units mod P_k as offsets in [0, P_k) (k ≤ LOOP_ENUM_KMAX)."""
+    assert len(primes_k) <= LOOP_ENUM_KMAX, "loop enumeration is capped at k = 9"
+    P = primorial(primes_k)
+    return segmented_rough([0] * len(primes_k), primes_k, P), P
+
+
+def loop_sample(primes_y, L, W, rng):
+    """W CRT-uniform windows of length L on the loop mod P(y). Returns a list of (offsets, draws) where draws
+    maps each prime to its drawn residue (needed to know N mod q for q | P(y))."""
+    out = []
+    for _ in range(W):
+        res = loop_residues(primes_y, rng)
+        out.append((segmented_rough(res, primes_y, L), dict(zip((int(p) for p in primes_y), res))))
+    return out
+
+
+# ---- gaps and histograms ------------------------------------------------------------------------------------------
+def gaps_of(offsets, period=None):
+    """Consecutive differences; on the loop (period given) the wrap-around gap closes the cycle."""
+    g = np.diff(offsets)
+    if period is not None and len(offsets) >= 1:
+        g = np.append(g, int(period) - int(offsets[-1]) + int(offsets[0]))   # one unit: its gap is the whole period
+    return g
+
+
+def gap_hist(g, G=G_MAX):
+    """Probability vector over gaps 1..G plus one overflow bin (position G ↔ gaps > G)."""
+    gc = np.minimum(g, G + 1)
+    h = np.bincount(gc, minlength=G + 2)[1:].astype(float)
+    return h / h.sum()
+
+
+def scaled_hist(g, edges=SCALED_EDGES):
+    """The SHAPE: gaps in units of the sample's own mean gap, fixed edges, overflow beyond the last edge."""
+    s = g / float(np.mean(g))
+    full = np.append(edges, edges[-1] + 0.1)
+    h, _ = np.histogram(np.minimum(s, edges[-1] + 0.05), bins=full)
+    return h / h.sum()
+
+
+def tv(h1, h2):
+    return 0.5 * float(np.abs(np.asarray(h1) - np.asarray(h2)).sum())
+
+
+# ---- the density words: Mertens and Buchstab -------------------------------------------------------------------------
+def mertens_product(primes):
+    """∏_{p ≤ y} (1 − 1/p): the loop's density, exactly (as a float of an exact rational)."""
+    num, den = 1, 1
+    for p in primes:
+        p = int(p)
+        num *= p - 1
+        den *= p
+    return num / den
+
+
+def buchstab_omega(u_max=8.0, h=1e-3):
+    """ω(u) on a grid: ω(u) = 1/u on [1, 2]; (u ω(u))' = ω(u − 1) for u > 2 (trapezoid). ω(2) = ½, ω(∞) → e^{−γ}."""
+    grid = np.arange(1.0, u_max + h / 2, h)
+    w = np.empty_like(grid)
+    n1 = int(round(1.0 / h))
+    for i, u in enumerate(grid):
+        if u <= 2.0 + 1e-12:
+            w[i] = 1.0 / u
+        else:
+            w[i] = (grid[i - 1] * w[i - 1] + 0.5 * h * (w[i - 1 - n1] + w[i - n1])) / u
+    return grid, w
+
+
+def omega_at(u, table=None):
+    grid, w = table if table is not None else buchstab_omega()
+    return float(np.interp(u, grid, w))
+
+
+# ---- residues and transitions --------------------------------------------------------------------------------------
+def residues_mod(offsets, n_mod_q, q):
+    return ((offsets % q) + n_mod_q) % q
+
+
+def factor_int(q):
+    """{p: a} for a small positive integer q (trial division)."""
+    f, p, q = {}, 2, int(q)
+    while p * p <= q:
+        while q % p == 0:
+            f[p] = f.get(p, 0) + 1
+            q //= p
+        p += 1
+    if q > 1:
+        f[q] = f.get(q, 0) + 1
+    return f
+
+
+def crt(residues, moduli):
+    """Chinese remainder for pairwise coprime moduli."""
+    M = 1
+    for m in moduli:
+        M *= int(m)
+    x = 0
+    for r, m in zip(residues, moduli):
+        Mi = M // int(m)
+        x += int(r) * Mi * pow(Mi, -1, int(m))
+    return x % M
+
+
+def n_mod_q_from_draws(q, draws, rng):
+    """N mod q for a CRT-uniform loop point given draws[p] = N mod p for the sieving primes. For q = ∏ pᵃ each factor's
+    residue is the draw at p lifted UNIFORMLY to mod pᵃ (the loop mod lcm(q, P(y)) is still CRT-uniform — the deeper
+    shells of a sieving prime are unconstrained by a squarefree sieve); a prime of q that is not a sieving prime gets
+    a uniform residue. q = 3: the draw at 3; q = 4: the draw at 2 lifted to {r, r + 2}; q = 10: CRT of the draws at 2
+    and 5; q = 8, 9, 25: lifts to the second and third shells (round 2, exp_02)."""
+    res, mods = [], []
+    for p, a in factor_int(q).items():
+        pa = p ** a
+        if p in draws:
+            r = int(draws[p]) + p * int(rng.integers(0, pa // p))
+        else:
+            r = int(rng.integers(0, pa))
+        res.append(r)
+        mods.append(pa)
+    return crt(res, mods)
+
+
+def arc_integral_omega(u_top, u_bottom, table=None):
+    """The arc [N, 2N) at depth y has local/loop density ratio e^{γ}·[2ω(u_top) − ω(u_bottom)] to leading order
+    (Buchstab's Φ integrated over the arc), u_top = log 2N / log y, u_bottom = log N / log y."""
+    return math.exp(EULER_GAMMA) * (2.0 * omega_at(u_top, table) - omega_at(u_bottom, table))
+
+
+def y_eff_from_density(density, primes):
+    """The depth whose exact Mertens product ∏_{p ≤ y}(1 − 1/p) equals `density`, on the prime grid: returns the bracketing
+    primes (p_lo, p_hi) with M(p_lo) ≥ density > M(p_hi) and both products, and y_eff = the bracket end nearer in log M.
+    No leading-order formula anywhere (round 3, the density-matched loop)."""
+    M, prev_p, prev_M = 1.0, None, 1.0
+    for p in primes:
+        M_new = M * (1.0 - 1.0 / float(p))
+        if M_new < density:
+            lo = int(prev_p) if prev_p is not None else 1
+            near_lo = abs(math.log(M) - math.log(density)) <= abs(math.log(M_new) - math.log(density))
+            return dict(p_lo=lo, p_hi=int(p), M_lo=M, M_hi=M_new, y_eff=(lo if near_lo else int(p)),
+                        mismatch_log=min(abs(math.log(M) - math.log(density)), abs(math.log(M_new) - math.log(density))))
+        M, prev_p = M_new, p
+    raise ValueError("density below the Mertens product of the whole prime list")
+
+
+def chunked_read(N, L, chunk, ps, Q, keep_parts=True):
+    """Read [N, N + L) in chunks of `chunk` with the residue CARRIED across chunk boundaries, so the transition count is
+    exactly n − 1. Returns per q the total transition matrix, per-chunk deficits (for the de-trended scatter), per-chunk
+    densities and the log of each chunk's midpoint (the de-trending abscissa)."""
+    Tq = {q: 0 for q in Q}
+    parts = {q: [] for q in Q}
+    dens, logpos = [], []
+    last = {q: None for q in Q}
+    n = 0
+    j = 0
+    while j < L:
+        Nj = N + j
+        Lj = min(chunk, L - j)
+        off = segmented_rough(window_residues(Nj, ps), ps, Lj)
+        n += len(off)
+        dens.append(len(off) / Lj)
+        logpos.append(math.log(Nj + Lj / 2))
+        for q in Q:
+            r = residues_mod(off, Nj % q, q)
+            if keep_parts:
+                parts[q].append(diagonal_deficit(transition_matrix(r, q)))
+            if last[q] is not None and len(r) > 0:
+                Tq[q] = Tq[q] + transition_matrix(np.array([last[q], int(r[0])]), q)
+            if len(r) > 1:
+                Tq[q] = Tq[q] + transition_matrix(r, q)
+            if len(r) > 0:
+                last[q] = int(r[-1])
+        del off
+        j += Lj
+    return dict(n=n, T=Tq, parts=parts, dens=dens, logpos=logpos, density=n / L,
+                transitions={q: int(np.asarray(Tq[q]).sum()) for q in Q})
+
+
+def detrended_se_log(values, positions):
+    """SE of the mean after removing a linear trend in the given positions (log N): the noise about the trend."""
+    v = np.asarray(values, dtype=float)
+    x = np.asarray(positions, dtype=float)
+    m = np.isfinite(v)
+    v, x = v[m], x[m]
+    n = len(v)
+    if n < 4:
+        return scatter_se(v, detrend=False)
+    coef = np.polyfit(x, v, 1)
+    resid = v - np.polyval(coef, x)
+    return float(math.sqrt(float(resid @ resid) / (n - 2)) / math.sqrt(n))
+
+
+def loop_read(ps, W, Lw, Q, rng):
+    """The uniform loop at depth max(ps), read in W CRT-uniform windows of length Lw: δ_q pooled, SE from the window
+    scatter (windows are at random positions — no trend), n and density."""
+    Tq = {q: 0 for q in Q}
+    parts = {q: [] for q in Q}
+    n = 0
+    for _ in range(W):
+        res = loop_residues(ps, rng)
+        off = segmented_rough(res, ps, Lw)
+        d = dict(zip((int(p) for p in ps), res))
+        n += len(off)
+        for q in Q:
+            r = residues_mod(off, n_mod_q_from_draws(q, d, rng), q)
+            T = transition_matrix(r, q)
+            Tq[q] = Tq[q] + T
+            parts[q].append(diagonal_deficit(T))
+    return dict(delta={q: diagonal_deficit(Tq[q]) for q in Q}, se={q: scatter_se(parts[q], detrend=False) for q in Q},
+                n=n, density=n / (W * Lw), W=W, L=Lw)
+
+
+def scatter_se(values, detrend=True):
+    """Standard error of the mean from the scatter of window estimates. Consecutive windows along an arc carry a
+    systematic drift (the bias falls slowly with position — Lemke Oliver–Soundararajan), which is not noise on the
+    arc's average; a linear trend in window index is removed first (detrend=True; needs ≥ 4 windows), so the SE is the
+    noise about the trend (residual std / √n, n − 2 dof)."""
+    v = np.asarray(values, dtype=float)
+    v = v[np.isfinite(v)]
+    n = len(v)
+    if n < 2:
+        return float("nan")
+    if detrend and n >= 4:
+        x = np.arange(n, dtype=float)
+        coef = np.polyfit(x, v, 1)
+        resid = v - np.polyval(coef, x)
+        return float(math.sqrt(float(resid @ resid) / (n - 2)) / math.sqrt(n))
+    return float(v.std(ddof=1) / math.sqrt(n))
+
+
+def transition_matrix(res, q):
+    """Counts T[a, b] of consecutive residues a → b."""
+    idx = res[:-1] * q + res[1:]
+    return np.bincount(idx, minlength=q * q).reshape(q, q)
+
+
+def diagonal_deficit(T):
+    """Relative deficit of the diagonal mass against the product-of-marginals null: 1 − Σ_a T[a,a] / Σ_a row_a col_a / n."""
+    T = np.asarray(T, dtype=float)
+    n = T.sum()
+    if n == 0:
+        return float("nan")
+    row, col = T.sum(1), T.sum(0)
+    expected = float((row * col).sum() / n)
+    if expected == 0.0:                       # too few transitions for the null to have any diagonal mass: undefined
+        return float("nan")
+    return 1.0 - float(np.trace(T)) / expected
+
+
+def diagonal_deficit_exact(T):
+    """The same, as an exact rational (for enumerated loops); None where undefined."""
+    T = [[int(v) for v in r] for r in np.asarray(T)]
+    q = len(T)
+    n = sum(map(sum, T))
+    row = [sum(r) for r in T]
+    col = [sum(T[a][b] for a in range(q)) for b in range(q)]
+    expected_num = sum(row[a] * col[a] for a in range(q))
+    if n == 0 or expected_num == 0:
+        return None
+    return 1 - Fraction(sum(T[a][a] for a in range(q))) / Fraction(expected_num, n)
+
+
+def pair_count_formula(g, primes_k):
+    """Exact count of units r mod P_k with r + g also a unit: ∏_{p | g} (p − 1) · ∏_{p ∤ g} (p − 2) (the CRT product
+    behind the Hardy–Littlewood weight)."""
+    c = 1
+    for p in primes_k:
+        p = int(p)
+        c *= (p - 1) if g % p == 0 else (p - 2)
+    return c
+
+
+# ---- depth and the cascade ---------------------------------------------------------------------------------------------
+def depth_y(x, u):
+    """y for depth u: x^{1/u}; at u = 2 exactly, y = ⌈sqrt(2x)⌉ so that the window's y-rough numbers are the primes."""
+    if abs(u - 2.0) < 1e-12:
+        return math.isqrt(2 * int(x)) + 1
+    return int(round(float(x) ** (1.0 / u)))
+
+
+def lpf_table(N, L, primes_sqrt):
+    """Least prime factor of N + k, k ∈ [0, L), among the given primes (decreasing order: the smallest prime writes last).
+    0 where no listed prime divides — the primes of the window when primes_sqrt reaches sqrt(N + L)."""
+    t = np.zeros(int(L), dtype=np.uint16 if int(np.max(primes_sqrt)) < 65536 else np.uint32)
+    for p in np.asarray(primes_sqrt)[::-1]:
+        p = int(p)
+        t[(-int(N)) % p::p] = p
+    return t
+
+
+def termination_depths(prime_offsets, table):
+    """max lpf over each interior (p_i, p_{i+1}); prime positions hold 0 so the max is over the composites."""
+    return np.maximum.reduceat(table, prime_offsets)[:-1]
+
+
+def null_depths(interior_counts, table, rng, chunk=20_000_000):
+    """Matched null: for each gap with c interior integers, the max lpf of c independent composites of the same window.
+    Composites are drawn as uniform offsets with the primes rejected (no index array of the composites is materialised,
+    so the window can be 10^9 long)."""
+    Lt = len(table)
+    out = np.empty(len(interior_counts), dtype=np.uint32)
+    i = 0
+    n = len(interior_counts)
+    while i < n:
+        j = i
+        tot = 0
+        while j < n and tot + int(interior_counts[j]) <= chunk:
+            tot += int(interior_counts[j])
+            j += 1
+        if j == i:
+            j = i + 1
+            tot = int(interior_counts[i])
+        cs = interior_counts[i:j]
+        parts, have = [], 0
+        while have < tot:
+            cand = table[rng.integers(0, Lt, size=int(1.1 * (tot - have)) + 64)]
+            cand = cand[cand > 0]
+            parts.append(cand)
+            have += len(cand)
+        vals = np.concatenate(parts)[:tot]
+        starts = np.concatenate(([0], np.cumsum(cs)[:-1])).astype(np.int64)
+        out[i:j] = np.maximum.reduceat(vals, starts)
+        i = j
+    return out
