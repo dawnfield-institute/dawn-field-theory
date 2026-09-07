@@ -159,17 +159,71 @@ def residues_mod(offsets, n_mod_q, q):
     return ((offsets % q) + n_mod_q) % q
 
 
+def factor_int(q):
+    """{p: a} for a small positive integer q (trial division)."""
+    f, p, q = {}, 2, int(q)
+    while p * p <= q:
+        while q % p == 0:
+            f[p] = f.get(p, 0) + 1
+            q //= p
+        p += 1
+    if q > 1:
+        f[q] = f.get(q, 0) + 1
+    return f
+
+
+def crt(residues, moduli):
+    """Chinese remainder for pairwise coprime moduli."""
+    M = 1
+    for m in moduli:
+        M *= int(m)
+    x = 0
+    for r, m in zip(residues, moduli):
+        Mi = M // int(m)
+        x += int(r) * Mi * pow(Mi, -1, int(m))
+    return x % M
+
+
 def n_mod_q_from_draws(q, draws, rng):
-    """N mod q for a CRT-uniform loop point given the drawn residues N mod p. q = 3: the draw at 3. q = 10: CRT of the
-    draws at 2 and 5. q = 4: the draw at 2 lifts to two classes mod 4 — pick one uniformly (the loop mod 2P(y))."""
-    if q == 3:
-        return draws[3]
-    if q == 10:
-        r2, r5 = draws[2], draws[5]
-        return next(v for v in range(10) if v % 2 == r2 and v % 5 == r5)
-    if q == 4:
-        return draws[2] + 2 * int(rng.integers(0, 2))
-    raise ValueError(q)
+    """N mod q for a CRT-uniform loop point given draws[p] = N mod p for the sieving primes. For q = ∏ pᵃ each factor's
+    residue is the draw at p lifted UNIFORMLY to mod pᵃ (the loop mod lcm(q, P(y)) is still CRT-uniform — the deeper
+    shells of a sieving prime are unconstrained by a squarefree sieve); a prime of q that is not a sieving prime gets
+    a uniform residue. q = 3: the draw at 3; q = 4: the draw at 2 lifted to {r, r + 2}; q = 10: CRT of the draws at 2
+    and 5; q = 8, 9, 25: lifts to the second and third shells (round 2, exp_02)."""
+    res, mods = [], []
+    for p, a in factor_int(q).items():
+        pa = p ** a
+        if p in draws:
+            r = int(draws[p]) + p * int(rng.integers(0, pa // p))
+        else:
+            r = int(rng.integers(0, pa))
+        res.append(r)
+        mods.append(pa)
+    return crt(res, mods)
+
+
+def arc_integral_omega(u_top, u_bottom, table=None):
+    """The arc [N, 2N) at depth y has local/loop density ratio e^{γ}·[2ω(u_top) − ω(u_bottom)] to leading order
+    (Buchstab's Φ integrated over the arc), u_top = log 2N / log y, u_bottom = log N / log y."""
+    return math.exp(EULER_GAMMA) * (2.0 * omega_at(u_top, table) - omega_at(u_bottom, table))
+
+
+def scatter_se(values, detrend=True):
+    """Standard error of the mean from the scatter of window estimates. Consecutive windows along an arc carry a
+    systematic drift (the bias falls slowly with position — Lemke Oliver–Soundararajan), which is not noise on the
+    arc's average; a linear trend in window index is removed first (detrend=True; needs ≥ 4 windows), so the SE is the
+    noise about the trend (residual std / √n, n − 2 dof)."""
+    v = np.asarray(values, dtype=float)
+    v = v[np.isfinite(v)]
+    n = len(v)
+    if n < 2:
+        return float("nan")
+    if detrend and n >= 4:
+        x = np.arange(n, dtype=float)
+        coef = np.polyfit(x, v, 1)
+        resid = v - np.polyval(coef, x)
+        return float(math.sqrt(float(resid @ resid) / (n - 2)) / math.sqrt(n))
+    return float(v.std(ddof=1) / math.sqrt(n))
 
 
 def transition_matrix(res, q):
