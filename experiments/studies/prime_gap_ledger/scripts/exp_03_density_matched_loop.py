@@ -92,7 +92,8 @@ def score(out):
     def evaluate(cells_spec, label, sign_check_u3=False):
         """cells_spec: list of (m, u). KILL (resolved shell-ordered ρ difference, same sign across the spec's cells on ≥ 2
         ladders; or wrong sign at u = 3) → CONVERGED (every resolved unsaturated cell within tolerance) → INCONCLUSIVE."""
-        rows = []; ladder_signs = {lad: [] for lad in LADDERS}; wrong_sign = 0; unresolved = 0; within_all = True; n_eval = 0
+        # ladder keys are strings: the first main run computed every cell and then died serialising tuple keys (kept)
+        rows = []; ladder_signs = {str(lad): [] for lad in LADDERS}; wrong_sign = 0; unresolved = 0; within_all = True; n_eval = 0
         for (m, u) in cells_spec:
             c = cell(m, u)
             if c is None: continue
@@ -110,7 +111,7 @@ def score(out):
                 a, b = c["q"][str(lad[0])], c["q"][str(lad[1])]
                 if a["saturated"] or b["saturated"]: continue
                 D = b["rho"] - a["rho"]; seD = math.sqrt(a["se_rho"] ** 2 + b["se_rho"] ** 2)
-                ladder_signs[lad].append(dict(m=m, u=u, D=D, se=seD, resolved=abs(D) >= 3 * seD, sign=int(np.sign(D))))
+                ladder_signs[str(lad)].append(dict(m=m, u=u, D=D, se=seD, resolved=abs(D) >= 3 * seD, sign=int(np.sign(D))))
         # KILL: on ≥ 2 ladders, every cell of the spec has a resolved difference of the same sign
         kill_ladders = [lad for lad, ls in ladder_signs.items() if len(ls) >= 2 and all(x["resolved"] for x in ls) and len({x["sign"] for x in ls}) == 1]
         kill = len(kill_ladders) >= 2 or wrong_sign >= 2

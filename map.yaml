@@ -66,6 +66,7 @@ dawn-field-theory/
     20260905_160500_xi_optimum_retraction_propagated.md
     20260907_120500_prime_gap_ledger.md
     20260907_133500_prime_gap_ledger_exp2.md
+    20260907_173000_prime_gap_ledger_exp3.md
     README.md
   .claude/
     skills/
@@ -4843,6 +4844,7 @@ dawn-field-theory/
           2026-09-07_exp01_registration.md
           2026-09-07_exp02_outcomes.md
           2026-09-07_exp02_registration.md
+          2026-09-07_exp03_outcomes.md
           2026-09-07_exp03_registration.md
           2026-09-07_exploring_position_along_the_loop.md
         results/
@@ -4858,6 +4860,10 @@ dawn-field-theory/
           exp_02_position_of_the_read_main_20260907_133111.json
           exp_02_position_of_the_read_main_20260907_132740_log.txt
           exp_02_position_of_the_read_main_20260907_133111_log.txt
+          exp_03_density_matched_loop_main_20260907_171126.json
+          exp_03_density_matched_loop_main_20260907_171834.json
+          exp_03_density_matched_loop_main_20260907_171126_log.txt
+          exp_03_density_matched_loop_main_20260907_171834_log.txt
           exp_03_gates_20260907_170520.json
           exp_03_gates_20260907_170831.json
           explore_r2_position_20260907_125700.json

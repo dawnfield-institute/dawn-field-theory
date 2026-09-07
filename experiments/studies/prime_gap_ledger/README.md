@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 3/7 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 5/9 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`)
 
 ## The thesis
 
@@ -54,6 +54,25 @@ primes' value to the loop's within half a unit of depth and plateaus to 10⁵⁰
 bias at √(2x) minus one tenth of Buchstab's density deficit, sign included. The residual is the position of the read,
 and it changes sign where ω(u) crosses e^{−γ}. Full curves in the outcomes journal.
 
+## Round 3 — exp_03, the density-matched loop (`journals/2026-09-07_exp03_registration.md`, sealed ff63f8d5): 2/2
+
+Round 2's shell modulation was re-posed by the design review before it was registered: the uniform loop's own δ_q
+falls with depth as (log y)^{−β_q} with a modulus-dependent β_q, and the primes' arc is the loop read at the effective
+depth y_eff whose exact Mertens product equals the arc's density — that reproduces every residual of rounds 1–2, shells
+and flip included, with no free parameter. The registered quantity is what the model leaves: ρ_q = r_q − r_q^eff, the
+departure of the primes' p-adic gap profile from the density-matched loop (Lemke Oliver–Soundararajan evaluated exactly).
+
+| | relation | verdict |
+|---|---|---|
+| R1 | ρ_q = 0 at the primes' arc (10⁹, 10¹⁰; moduli 3, 9, 4, 8, 16, 5, 7) | **CONVERGED** — 14 cells, none beyond 1.5σ, none using more than half its tolerance; no shell-ordered difference resolved (±0.001 in r at 10¹⁰) |
+| R2 | ρ_q = 0 along the curve and through the flip (u = 2.1, 2.25, 3 at 10¹⁰), with the flip's sign predicted from the depth shift alone | **CONVERGED** — 21 cells, none beyond 1.7σ; at u = 3 the predicted negative residual matches at every modulus (e.g. q = 3: −0.0069 observed, −0.0067 predicted) |
+
+**The depth shift is Buchstab's density ratio exactly**: log y_eff / log y = 1/ratio to four decimals in all fifteen
+cells. **The sentence:** the consecutive-prime residue bias at every modulus, shells included, equals the primorial
+loop's bias read at the density-matched depth y^{1/ratio}; the delta between the primes and the loop is the position
+of the read, and nothing else, to one part in a thousand at 10¹⁰. Andy Farmer's tranche beyond position: none resolved.
+Forward corrections to round 2 are filed in its outcomes (the q = 10 channel was an identity; R4's reading superseded).
+
 ## What round 1 recorded (not claimed — its seal did not score it)
 
 **The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
@@ -88,6 +107,8 @@ statistics.
 | `scripts/explore_r2_position_along_the_loop.py` | exploring (disclosed): a fixed-depth read slid from the origin outward, 10⁴…10⁵⁰ |
 | `scripts/exp_02_gates.py` | round 2 gates G1–G6 (arc-integral Buchstab; fresh-seed loop vs round 1; de-trended scatter; exact reproducibility; the equidistribution plateau; prime-power lifts vs enumerated loops) |
 | `scripts/exp_02_position_of_the_read.py` | round 2: R1–R4 at positions u_top = log 2N / log y from 1.75 to 7, depths m = 6..9, W = 200 at the flip cells, verdicts CONFIRM / CONVERGED / KILL / INCONCLUSIVE |
+| `scripts/exp_03_gates.py` | round 3 gates G1–G8 (lift invariance; exact reproducibility of round 2; the 10¹⁰ decade's count against sympy's π; chunk carry; fresh loops; de-trended scatter; the density-matched prediction against round 2; the y_eff solver) |
+| `scripts/exp_03_density_matched_loop.py` | round 3: ρ_q at the primes' arc and along the curve, m = 8..10 (the 10¹⁰ decade chunked with residue carry), loops of 200 windows at y and at y_eff; precedence KILL → CONVERGED → INCONCLUSIVE |
 
 ## Discipline
 
