@@ -1,6 +1,9 @@
 # Note — the sieve recursion: what closes, what does not, and which Möbius is in the way
 
 **Date:** 2026-09-08 · **Status:** EXPLORING, unregistered, unscored · **Mode:** a failed derivation, written down.
+**SUPERSEDED IN PART, same day** — its forward path (a second-order resolvent would close it) is retracted;
+see `2026-09-08_note_two_closed_branches_and_a_correction.md` §3. The derived merge operator, the exact
+first-moment result and the two-poset Möbius reading stand.
 Peter's framing: see it as a recursive closing rather than a sum. The framing is correct and productive. The
 derivation still does not close, and the failure localises the obstruction precisely, which is why it is filed.
 
