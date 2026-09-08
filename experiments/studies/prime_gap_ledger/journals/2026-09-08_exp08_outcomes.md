@@ -56,9 +56,7 @@ tracking and fixed predictions is 0.0257 at u = 2.0 but ≤ 0.0023 at six positi
 contribute noise to the paired bootstrap with no signal. Averaged over the grid, the effective contrast is
 roughly a third of what the signal-carrying positions alone would give.
 
-**Correlated resampling.** The bootstrap resamples 484 *cells* as if independent, but the 44 cells at a given
-position share one window and one set of sieving primes. The effective sample size is nearer 11 than 484, so
-the sampling spread is understated and σ with it.
+**~~Correlated resampling.~~ — RETRACTED, see the correction below.**
 
 Observed advantage 0.00120, against G7's predicted 0.00207 — 58 %.
 
@@ -67,6 +65,44 @@ aggregate (exp_06, corrected in `aace9b3d`); an under-sampled position grid (exp
 and now dilution plus correlated resampling. The common fault is computing power against an idealisation of
 the design rather than against the design as built. A future power gate should simulate **the actual
 resampling procedure on the actual grid**, not an i.i.d. abstraction of it.
+
+
+## CORRECTION filed 2026-09-08 (same day) — the "correlated resampling" cause is FALSE, and the real one is a result
+
+**Retracted.** I claimed above that the bootstrap understated its spread because the 44 cells at a position
+share a window. **Measured, it does not:** the intra-class correlation of the residual within a position is
+**ICC = −0.023**, effective sample size **484.0 of 484 cells**. Cells within a position are independent and the
+cell-level bootstrap was correct. I asserted a plausible mechanism without measuring it — the same failure as
+exp_06's "underpowered" claim, which is now twice.
+
+**The measured causes are two, and the second is a finding.**
+
+**(a) Dilution**, as stated — 5 of 11 positions carry a resolvable shift.
+
+**(b) The model over-shifts.** Regressing each position's mean residual on its log depth shift:
+
+```
+corr(log_shift, mean residual) = +0.897    t = +6.09 on 9 df    SIGNIFICANT
+slope = +0.0098 per unit log-shift
+best-fit tracking fraction alpha = 0.812   (0 = fixed depth, 1 = full y_eff tracking)
+    rms at alpha = 1 (as registered)  0.03517
+    rms at alpha = 0.812              0.03510
+    rms at alpha = 0 (fixed)          0.03637
+```
+
+The density-solved y_eff moves the prediction roughly 20 % too far. That is why R3 was weak: the **rms is
+nearly blind** to α (0.03517 vs 0.03510) while the **residual-vs-shift correlation is overwhelming** (t = 6.09).
+R3 was measuring the insensitive statistic.
+
+**This converges with exp_07 from an independent direction.** exp_07 measured λ = 0.6446 at the primes of the
+10¹⁰ decade (unresolved — its guard failed). exp_08 gives α = 0.812 from position-tracking on a y = 4473 loop.
+Different objects, different statistics, both short of 1.0: **the true effective depth sits below the
+density-solved y_eff.**
+
+**Status of this finding: EXPLORING, post-hoc.** It was found by analysing exp_08's residuals after the run.
+Nothing here is scored, and R3's verdict stands as INCONCLUSIVE. It identifies the depth-sensitive observable
+exp_07's forward note asked for — the regression of per-position mean residual on the shift, not an rms over
+moduli — and that is what a next round should register.
 
 ## What this round does and does not establish
 
