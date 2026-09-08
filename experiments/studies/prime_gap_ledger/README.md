@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 11/18 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`; exp_06 2/3 — `journals/2026-09-07_exp06_outcomes.md`; exp_07 1/3 — `journals/2026-09-07_exp07_outcomes.md`)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 12/21 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`; exp_06 2/3 — `journals/2026-09-07_exp06_outcomes.md`; exp_07 1/3 — `journals/2026-09-07_exp07_outcomes.md`; exp_08 1/3 — `journals/2026-09-08_exp08_outcomes.md`)
 
 ## The thesis
 
@@ -172,6 +172,32 @@ under the better estimator — much of it was my binning, not the object. And th
 closed form's 0.0421, a modest gap. Its real defect was having a domain at all, which cost exp_06 five moduli
 per decade. Recorded, never scored: the primes prefer `a` = 1.3465, 3.6 % above the loop's.
 
+## Round 8 — exp_08, is the coherence transition just the depth moving? (`journals/2026-09-08_exp08_registration.md`, sealed 1fd25acf): 1/3
+
+Round 2 found in exploring mode that the bias climbs from the primes' value to the loop's "within half a unit
+of depth". This round asked whether that transition is an independent phenomenon or **entirely the effective
+depth moving**: δ_q(u) = F_c(φ(q)/ḡ(y_eff(u))), F_c sealed in exp_07, y_eff solved from each position's density,
+**zero free parameters**. Eleven positions, N = 10⁷ to 8·10²¹.
+
+| | relation | verdict |
+|---|---|---|
+| R1 | position is depth | **CONFIRM** — rms 0.0352 against the sealed 0.0533; mean signed residual ≈ 0 at **every** position |
+| R2 | the transition is universal across moduli | **INCONCLUSIVE** — sd of C_q(u) = 0.1624 against a 0.15 bar (KILL 0.35) |
+| R3 | positive control: tracking beats a fixed depth | **INCONCLUSIVE** — 0.0352 vs 0.0364, only 1.75σ |
+
+**The mechanism, and its limit.** Round 2's coherence transition now has a cause: it is Buchstab's ω(u)
+relaxing to e^{−γ}. The gates measured the density ratio tracking e^γω(u) to ≤ 0.4 % at every scored position,
+the depth shift decaying from +0.119 at u = 2 through zero at u ≈ 2.5, then ringing slightly negative and
+damping — the classical oscillation, arriving in a measurement that never assumed it. And R1 tracks it with no
+bias anywhere across fifteen orders of magnitude in N. But **R3 could not show that tracking beats ignoring**,
+so R1 rests on the fit being good rather than on the control separating.
+
+**Third power-estimation failure in three rounds, each different.** G7 promised 4.07σ and delivered 1.75:
+6 of 11 positions sit at y_eff ≈ y and dilute the contrast, and the bootstrap resampled 484 cells as
+independent when the 44 at each position share one window. Recorded with the earlier two (per-cell vs
+aggregate, exp_06 `aace9b3d`; an under-sampled grid, this round's own first gate run). The common fault is
+computing power against an idealisation of the design rather than the design as built.
+
 ## What round 1 recorded (not claimed — its seal did not score it)
 
 **The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
@@ -217,6 +243,8 @@ statistics.
 | `scripts/exp_06_primes_inherit.py` | round 6: the sealed F evaluated at φ(q)/ḡ(y_eff) against the primes of 10⁷, 10⁸, 10⁹; zero free parameters |
 | `scripts/exp_07_gates.py` | round 7 gates G1–G8 (all PASS; **G7 is a POWER gate** — the depth comparison resolves at 3.84σ by simulating the sampling spread over the actual cell count, which is exp_06's error fixed at the gate) |
 | `scripts/exp_07_closed_form.py` | round 7: `tanh(a·φ/ḡ)` with `a` frozen from the loop, against the 10¹⁰ primes; the depth scan and its resolution guard |
+| `scripts/exp_08_gates.py` | round 8 gates G1–G8 (all PASS; G6 **demoted to recorded** — it gated on the per-cell criterion invalidated by exp_06's correction; the u-grid was resampled after the first run under-sampled the transition) |
+| `scripts/exp_08_position_is_depth.py` | round 8: the sealed F_c at y_eff(u) across eleven positions, N = 10⁷ … 8·10²¹ |
 | `scripts/exp_04_gates.py` | round 4 gates G1–G8 (the record's exact rationals; the δ_{2q} = δ_q theorem; class independence; mean gap = 1/Mertens; sampler unbiasedness; reproducibility; **G7 saturation feasibility — FAILED, no seal written**) |
 
 ## Discipline
