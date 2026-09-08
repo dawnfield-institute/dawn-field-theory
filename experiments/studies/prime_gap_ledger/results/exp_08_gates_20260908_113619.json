@@ -1,0 +1,392 @@
+{
+ "script": "exp_08_gates.py",
+ "generated": "20260908_113619",
+ "seed": 20260912,
+ "y": 4473,
+ "L": 2000000,
+ "a": 1.2998,
+ "loop_heldout_rms": 0.03043030774440292,
+ "exps": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "pool": [
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  15,
+  16,
+  17,
+  19,
+  20,
+  21,
+  23,
+  24,
+  25,
+  27,
+  28,
+  29,
+  31,
+  32,
+  33,
+  35,
+  36,
+  37,
+  39,
+  40,
+  41,
+  43,
+  44,
+  45,
+  47,
+  48,
+  49,
+  51,
+  52,
+  53,
+  55,
+  56,
+  57,
+  59,
+  60
+ ],
+ "positions": {
+  "0": {
+   "N": "20007729",
+   "u_target": 2.0,
+   "u": 2.0,
+   "n": 119315,
+   "density": 0.0596575,
+   "ratio": 0.8946413816694858,
+   "buchstab_pred": 0.890536208995197,
+   "rel_err": 0.004609776259317629,
+   "y_eff": 12149,
+   "log_shift": 0.11886861471032639
+  },
+  "1": {
+   "N": "46372198",
+   "u_target": 2.1,
+   "u": 2.099999998735676,
+   "n": 124026,
+   "density": 0.062013,
+   "ratio": 0.9299651510953328,
+   "buchstab_pred": 0.9289651310851894,
+   "rel_err": 0.0010764882089548812,
+   "y_eff": 8501,
+   "log_shift": 0.07639051174436728
+  },
+  "2": {
+   "N": "107477505",
+   "u_target": 2.2,
+   "u": 2.2000000000319684,
+   "n": 127840,
+   "density": 0.06392,
+   "ratio": 0.9585630828699415,
+   "buchstab_pred": 0.9571819815315161,
+   "rel_err": 0.0014428827172609292,
+   "y_eff": 6421,
+   "log_shift": 0.04300767521253235
+  },
+  "3": {
+   "N": "379234126",
+   "u_target": 2.35,
+   "u": 2.350000000113541,
+   "n": 131409,
+   "density": 0.0657045,
+   "ratio": 0.9853239686862963,
+   "buchstab_pred": 0.985353403037172,
+   "rel_err": 2.9871872147526662e-05,
+   "y_eff": 5077,
+   "log_shift": 0.015068285168081008
+  },
+  "4": {
+   "N": "1338126728",
+   "u_target": 2.5,
+   "u": 2.500000000010046,
+   "n": 133297,
+   "density": 0.0666485,
+   "ratio": 0.9994804697850014,
+   "buchstab_pred": 1.0012940883832724,
+   "rel_err": 0.0018112746487890913,
+   "y_eff": 4483,
+   "log_shift": 0.0002656661879836264
+  },
+  "5": {
+   "N": "4721577039",
+   "u_target": 2.65,
+   "u": 2.6500000000087915,
+   "n": 134502,
+   "density": 0.067251,
+   "ratio": 1.0085157366409017,
+   "buchstab_pred": 1.0086753074749775,
+   "rel_err": 0.0001581984141906485,
+   "y_eff": 4139,
+   "log_shift": -0.009232313029176598
+  },
+  "6": {
+   "N": "16660073570",
+   "u_target": 2.8,
+   "u": 2.8000000000035414,
+   "n": 134671,
+   "density": 0.0673355,
+   "ratio": 1.0097829234447582,
+   "buchstab_pred": 1.0099868346868452,
+   "rel_err": 0.0002018949505914085,
+   "y_eff": 4099,
+   "log_shift": -0.010387605133814315
+  },
+  "7": {
+   "N": "89494571817",
+   "u_target": 3.0,
+   "u": 3.0,
+   "n": 134049,
+   "density": 0.0670245,
+   "ratio": 1.0051190761548245,
+   "buchstab_pred": 1.0052059514034768,
+   "rel_err": 8.64253226226484e-05,
+   "y_eff": 4261,
+   "log_shift": -0.005776412188903901
+  },
+  "8": {
+   "N": "5985440853839",
+   "u_target": 3.5,
+   "u": 3.500000000000009,
+   "n": 133344,
+   "density": 0.066672,
+   "ratio": 0.9998328826831153,
+   "buchstab_pred": 0.9988768477219397,
+   "rel_err": 0.0009571099413866005,
+   "y_eff": 4481,
+   "log_shift": 0.00021258039078864144
+  },
+  "9": {
+   "N": "26772876939219872",
+   "u_target": 4.5,
+   "u": 4.5,
+   "n": 133330,
+   "density": 0.066665,
+   "ratio": 0.999727908628358,
+   "buchstab_pred": 1.0000535803128736,
+   "rel_err": 0.0003256542358597367,
+   "y_eff": 4481,
+   "log_shift": 0.00021258039078864144
+  },
+  "10": {
+   "N": "8009278384708170809344",
+   "u_target": 6.0,
+   "u": 6.0,
+   "n": 133500,
+   "density": 0.06675,
+   "ratio": 1.001002593578983,
+   "buchstab_pred": 1.0000003844826069,
+   "rel_err": 0.001002208711044343,
+   "y_eff": 4441,
+   "log_shift": -0.0008541406727926582
+  }
+ },
+ "all_pass": true,
+ "gates": {
+  "G1": {
+   "claim": "F_c and a load from the sealed exp_07 gate file",
+   "value": {
+    "a": 1.2998,
+    "source": "exp_07_gates_20260907_195941.json",
+    "loop_heldout_rms": 0.03043030774440292
+   },
+   "status": "PASS"
+  },
+  "G2": {
+   "claim": "density ratio tracks Buchstab e^gamma*omega(u) within 5% for u>=2",
+   "value": {
+    "0": {
+     "u": 2.0,
+     "ratio": 0.8946,
+     "buchstab": 0.8905,
+     "rel": 0.0046
+    },
+    "1": {
+     "u": 2.1,
+     "ratio": 0.93,
+     "buchstab": 0.929,
+     "rel": 0.0011
+    },
+    "2": {
+     "u": 2.2,
+     "ratio": 0.9586,
+     "buchstab": 0.9572,
+     "rel": 0.0014
+    },
+    "3": {
+     "u": 2.35,
+     "ratio": 0.9853,
+     "buchstab": 0.9854,
+     "rel": 0.0
+    },
+    "4": {
+     "u": 2.5,
+     "ratio": 0.9995,
+     "buchstab": 1.0013,
+     "rel": 0.0018
+    },
+    "5": {
+     "u": 2.65,
+     "ratio": 1.0085,
+     "buchstab": 1.0087,
+     "rel": 0.0002
+    },
+    "6": {
+     "u": 2.8,
+     "ratio": 1.0098,
+     "buchstab": 1.01,
+     "rel": 0.0002
+    },
+    "7": {
+     "u": 3.0,
+     "ratio": 1.0051,
+     "buchstab": 1.0052,
+     "rel": 0.0001
+    },
+    "8": {
+     "u": 3.5,
+     "ratio": 0.9998,
+     "buchstab": 0.9989,
+     "rel": 0.001
+    },
+    "9": {
+     "u": 4.5,
+     "ratio": 0.9997,
+     "buchstab": 1.0001,
+     "rel": 0.0003
+    },
+    "10": {
+     "u": 6.0,
+     "ratio": 1.001,
+     "buchstab": 1.0,
+     "rel": 0.001
+    }
+   },
+   "status": "PASS"
+  },
+  "G4": {
+   "claim": "y_eff solver resolves at every position (grid covers y_eff, which exceeds y near the origin)",
+   "value": {
+    "0": 12149,
+    "1": 8501,
+    "2": 6421,
+    "3": 5077,
+    "4": 4483,
+    "5": 4139,
+    "6": 4099,
+    "7": 4261,
+    "8": 4481,
+    "9": 4481,
+    "10": 4441
+   },
+   "status": "PASS"
+  },
+  "G3": {
+   "claim": "the transition exists: the depth shift is large near the origin and decays as u grows",
+   "value": {
+    "shift_nearest": 0.11886861471032639,
+    "shift_farthest": -0.0008541406727926582,
+    "all_shifts": [
+     0.1189,
+     0.0764,
+     0.043,
+     0.0151,
+     0.0003,
+     -0.0092,
+     -0.0104,
+     -0.0058,
+     0.0002,
+     0.0002,
+     -0.0009
+    ]
+   },
+   "status": "PASS"
+  },
+  "G5": {
+   "claim": "delta_2q == delta_q exactly for odd q (42 cases)",
+   "value": "42/42",
+   "status": "PASS"
+  },
+  "G6": {
+   "claim": "RECORDED not gated: the per-cell prediction span vs the per-cell residual (see note; G7 is the test)",
+   "value": {
+    "mean_prediction_span": 0.025849350956332104,
+    "expected_per_cell_residual": 0.03043030774440292,
+    "ratio": 0.8494607144118219,
+    "note": "sub-residual per cell; resolves only in aggregate (G7). No per-cell claim is supported.",
+    "superseded_criterion": "span > per-cell residual -- invalid, see exp_06 correction aace9b3d"
+   },
+   "status": "PASS"
+  },
+  "G7": {
+   "claim": "POWER: the fixed-depth control separates from the tracking model at >=3 sigma over the actual cells",
+   "value": {
+    "n_cells": 484,
+    "mean_abs_separation": 0.005527217904579693,
+    "expected_rms_gap": 0.0021857841235716647,
+    "sampling_spread": 0.0005051678791666649,
+    "power_sigma": 4.326847002183468
+   },
+   "status": "PASS"
+  },
+  "G8": {
+   "claim": "all thresholds fixed here, before any delta at any position is formed",
+   "value": {
+    "a": 1.2998,
+    "y": 4473,
+    "L": 2000000,
+    "positions": [
+     "2.0",
+     "2.1",
+     "2.2",
+     "2.35",
+     "2.5",
+     "2.65",
+     "2.8",
+     "3.0",
+     "3.5",
+     "4.5",
+     "6.0"
+    ],
+    "free_parameters": 0,
+    "scored_positions": [
+     "2.0",
+     "2.1",
+     "2.2",
+     "2.35",
+     "2.5",
+     "2.65",
+     "2.8",
+     "3.0",
+     "3.5",
+     "4.5",
+     "6.0"
+    ],
+    "R1": "CONFIRM if rms(scored positions, u>=2) <= 1.75 * exp_07's loop held-out rms; KILL if > 3.0 *",
+    "R2": "the coherence curve C_q(u) collapses across moduli: spread at matched u <= 0.15; KILL > 0.35",
+    "R3": "positive control: the fixed-depth model must be WORSE, >=3 sigma paired bootstrap",
+    "loop_heldout_rms": 0.03043030774440292,
+    "seed": 20260912
+   },
+   "status": "PASS"
+  }
+ }
+}
