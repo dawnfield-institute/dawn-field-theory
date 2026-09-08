@@ -94,7 +94,49 @@ That F is derivable. That the resolvent is a useful approximation for δ (it is 
 depth). Anything about the correlation structure beyond its sign and that it is the single obstruction. No
 physics; every "φ" is Euler's totient.
 
-## Forward
+
+## Refinement (same day) — the deletion model is fine, the correlation DECAYS, and the error ACCUMULATES
+
+Three follow-up measurements sharpen the diagnosis above.
+
+**The deletion model is not the flaw.** The resolvent assumes each unit is deleted independently at rate 1/p,
+where reality deletes by residue mod p — arithmetic and periodic. Applying both to the *same* enumerated loop:
+
+| k | p | TV(actual deletion, random deletion) | TV(actual, f_k) |
+|---|---|---|---|
+| 4 | 11 | 0.0930 | 0.0746 |
+| 6 | 17 | 0.0046 | 0.0365 |
+| 8 | 23 | 0.0012 | 0.0258 |
+
+By k = 8 random thinning reproduces arithmetic deletion twenty times more closely than doing nothing. The
+independence-of-deletion assumption is sound; the renewal assumption on **gaps** is what fails, as stated.
+
+**But the gap correlation decays.** Consecutive gaps are negatively correlated — a long gap is followed by a
+short one — and the magnitude falls with depth:
+
+| k | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|
+| corr(g_i, g_{i+1}) | −0.270 | −0.295 | −0.248 | −0.210 | −0.187 | −0.170 | −0.159 |
+| corr · ḡ | −1.013 | −1.289 | −1.194 | −1.094 | −1.033 | −0.997 | −0.973 |
+
+Roughly like 1/ḡ. **corr·ḡ is NOT claimed to be −1**: it wanders through unity rather than settling on it, and
+two points near 1.0 after a non-monotone approach is exactly the weak signal this study has been burned by
+twice today. What is claimed is only that the correlation **decays toward zero as the sieve deepens**, so the
+renewal assumption is *asymptotic*, not wrong. That is why the single-step improvement ratio climbs (1.5 → 3.3)
+rather than flattening.
+
+**And the iteration failure is accumulation, not a large per-step error.** At y = 141,422 the correlation is
+only ≈ −0.05, yet the iterated δ₃ was off by +0.153. The resolution: iterating from k = 9 to y = 997 applies
+the operator ~150 times, and the error grows roughly logarithmically in the step count — +0.081 at ~16 steps,
++0.111 at ~30, +0.131 at ~62, +0.153 at ~152. **The resolvent is a good one-step operator and a bad long
+iteration.**
+
+**Revised forward.** The second-order (pair-correlated) resolvent proposed above is still the right move, but
+its payoff is now predictable rather than speculative: it should remove an O(1/ḡ) per-step bias whose
+accumulation is the entire observed failure. Whether that is enough over 150 steps is the open question, and
+it is answerable on the enumerable loops already in hand.
+
+## Forward (superseded by the refinement above)
 
 The renewal assumption is the whole gap. A round that measured the **two-gap joint distribution** on
 enumerable loops — and asked whether a second-order (pair-correlated) resolvent closes where the first-order
