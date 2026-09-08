@@ -219,7 +219,15 @@ artifact (STANDARDS §2.9's worked instance: the residue class chooses the const
 `asymmetric_conservation`'s "PAC exact at every sieve step" defines composites as N − 1 − primes, an
 identity (§2.8). Milestone 3's "prime cascade reachability" is a wave-coverage model whose Fibonacci-gap
 clause has no matched null. `prime_growth_dynamics_v2` exp_06 found the gap-6 hub against a Cramér
-reference at N = 5·10⁵. None of φ, Ξ or Fibonacci enters this study; nothing here leans on those
+reference at N = 5·10⁵.
+**`prime_harmonic_manifold`** (Era 2, archived) is the closest prior art and was missing from this list
+until 2026-09-08: it established that prime gap *pairs* form a Markov chain whose leading eigenvalue
+decays at −1/π² per log-decade, irreproducible by shuffled gaps, with the memory significant at chord
+length 2 and absent at 4 — prior art on this study's own renewal obstruction (see
+`journals/2026-09-08_note_lineage_the_cascade_cost_and_the_markov_prior_art.md`). Cited, not built on:
+different objects and statistics, and its refuted λ₁ = 1/φ claim is the sibling of `sec_prime_manifold`'s
+frame artifact.
+None of φ, Ξ or Fibonacci enters this study; nothing here leans on those
 statistics.
 
 ## Scripts
