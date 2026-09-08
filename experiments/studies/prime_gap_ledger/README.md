@@ -1,6 +1,6 @@
 # The Prime Gap Ledger: the loop, the gap and the delta
 
-**Status**: active · **Founded**: 2026-09-07 · **Score**: 12/21 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`; exp_06 2/3 — `journals/2026-09-07_exp06_outcomes.md`; exp_07 1/3 — `journals/2026-09-07_exp07_outcomes.md`; exp_08 1/3 — `journals/2026-09-08_exp08_outcomes.md`)
+**Status**: active · **Founded**: 2026-09-07 · **Score**: 14/24 (exp_01 0/3, three INCONCLUSIVE by the sealed rules — `journals/2026-09-07_exp01_outcomes.md`; exp_02 3/4 — `journals/2026-09-07_exp02_outcomes.md`; exp_03 2/2 — `journals/2026-09-07_exp03_outcomes.md`; exp_04 EXPLORING — no seal, no score, `journals/2026-09-07_exp04_exploring_the_loop_depth_profile.md`; exp_05 3/3 — `journals/2026-09-07_exp05_outcomes.md`; exp_06 2/3 — `journals/2026-09-07_exp06_outcomes.md`; exp_07 1/3 — `journals/2026-09-07_exp07_outcomes.md`; exp_08 1/3 — `journals/2026-09-08_exp08_outcomes.md`; exp_09 2/3 — `journals/2026-09-08_exp09_outcomes.md`)
 
 ## The thesis
 
@@ -198,6 +198,35 @@ independent when the 44 at each position share one window. Recorded with the ear
 aggregate, exp_06 `aace9b3d`; an under-sampled grid, this round's own first gate run). The common fault is
 computing power against an idealisation of the design rather than the design as built.
 
+## Round 9 — exp_09, is F's residual real structure or our sampling? (`journals/2026-09-08_exp09_registration.md`, sealed 79358696): 2/3
+
+**A new instrument.** `core/exact_gaps.py` derives the loop's gap distribution *exactly*, by inclusion–exclusion
+over the interior positions with T(A) = ∏(p − |A mod p|) an exact k-tuple count — the Boolean-lattice Möbius
+inversion this study named as its obstruction, computed rather than avoided. Verified against the enumerated
+loop to **4.6 × 10⁻¹⁵**. δ_q therefore becomes derivable, and F testable against a derivation rather than a
+measurement.
+
+| | relation | verdict |
+|---|---|---|
+| R1 | the residual is real structure, not sampling | **CONFIRM** — rms **0.05220** (CONFIRM ≥ 0.01826, KILL ≤ 0.00913) |
+| R2 | the ω(q) structure is real | **INCONCLUSIVE** — guard fired: only two distinct ω values on the pool |
+| R3 | truncation is not driving it | **CONFIRM** — 2.96 % change between G = 36 and G = 40 |
+
+**The answer, from a control cleaner than the registered threshold:** measuring δ by *sampling at the identical
+cells* gives rms 0.05219 against the exact 0.05220 — agreement to five decimals, mean per-cell difference
+0.000163. At 24 windows δ is measured to ~1.6 × 10⁻⁴ while the residual is 0.052, **320× larger**. Sampling
+noise was never a plausible explanation, and this round's own premise — that the two were confounded — was
+wrong. **F_c is genuinely incomplete**, systematically over-predicting by −0.0092.
+
+Two of my errors are on the record with it. R1's thresholds referenced a *different grid* (exp_07's
+y = 360…92,160, 14 moduli), so its 1.715 ratio does not mean the residual grew — the verdict survives only
+because the KILL is rejected 5.7-fold and the control above needs no reference grid. And R2's guard caught a
+design limitation I created: capping q ≤ 30 for truncation cost left ω with two values (61 cells at 1, 26 at
+2), so the relation could not be tested at all. The effect is visible (corr +0.608, t = +7.07, matching exp_05
+and exp_06 in sign) and remains neither confirmed nor refuted.
+
+Recorded, never scored: the best-fit a on exact values is 1.26225 against the frozen 1.29980.
+
 ## What round 1 recorded (not claimed — its seal did not score it)
 
 **The window's residue bias depends on the depth y alone.** At every depth from y = 13 to y = 4,000 the
@@ -253,6 +282,9 @@ statistics.
 | `scripts/exp_07_closed_form.py` | round 7: `tanh(a·φ/ḡ)` with `a` frozen from the loop, against the 10¹⁰ primes; the depth scan and its resolution guard |
 | `scripts/exp_08_gates.py` | round 8 gates G1–G8 (all PASS; G6 **demoted to recorded** — it gated on the per-cell criterion invalidated by exp_06's correction; the u-grid was resampled after the first run under-sampled the transition) |
 | `scripts/exp_08_position_is_depth.py` | round 8: the sealed F_c at y_eff(u) across eleven positions, N = 10⁷ … 8·10²¹ |
+| `core/exact_gaps.py` | **the exact instrument**: the loop's gap distribution by inclusion–exclusion over interior positions, k-tuple counts, no approximation; verified to 4.6e-15 against enumeration |
+| `scripts/exp_09_gates.py` | round 9 gates G1–G8 (all PASS; G7 simulates the ACTUAL t-test on the ACTUAL ω vector — the power lesson from three earlier failures) |
+| `scripts/exp_09_exact_residual.py` | round 9: exact δ_q vs the frozen F_c, with a measured tail above G and a G = 36/40 truncation control |
 | `scripts/exp_04_gates.py` | round 4 gates G1–G8 (the record's exact rationals; the δ_{2q} = δ_q theorem; class independence; mean gap = 1/Mertens; sampler unbiasedness; reproducibility; **G7 saturation feasibility — FAILED, no seal written**) |
 
 ## Discipline
