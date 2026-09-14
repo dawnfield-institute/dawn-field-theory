@@ -64,12 +64,9 @@ dawn-field-theory/
     20260904_120500_m18_phase8_n24.md
     20260904_150000_m18_two_theorems.md
     20260905_160500_xi_optimum_retraction_propagated.md
-<<<<<<< HEAD
-    20260907_103000_m18_block_f_signed_cycle.md
-=======
     20260905_233000_mr_exp28_dynamical_severance.md
     20260906_180000_mr_exp29_pac_ledger.md
->>>>>>> origin/main
+    20260907_103000_m18_block_f_signed_cycle.md
     README.md
   .claude/
     skills/
@@ -2621,13 +2618,10 @@ dawn-field-theory/
           2026-09-03_phase8_registration.md
           2026-09-04_after_phase8_two_theorems.md
           2026-09-04_exp19_outcomes_n24.md
-<<<<<<< HEAD
+          2026-09-06_the_lattice_end_and_the_scaling_end.md
           2026-09-07_blockF_registration.md
           2026-09-07_exp20_outcomes.md
           2026-09-07_local_global_delta.md
-=======
-          2026-09-06_the_lattice_end_and_the_scaling_end.md
->>>>>>> origin/main
         results/
           .gitignore
           exp_01_foldings_20260831.json
