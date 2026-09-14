@@ -108,3 +108,49 @@ synthetic grids in the scratchpad (pass-shaped, fail-shaped, incomplete); never 
 No run before the seal; fifteen runs after it, in their own directory. SP5 was mis-registered (see
 above). No threshold moved after any result; the kill fires by the letter and this journal was
 written once, from the scored JSON.
+
+## Post-mortem (2026-09-14, after the score — exploring, not predicting)
+
+Peter's question after the score: the prediction's direction was right, so why did it fail? Computed
+after the fact on all thirty runs of exp_29 and exp_30 (saved positions, every mark) and a nine-run κ
+sweep on seeds 1–3 run for this purpose ({0.25, 0.75, 1.25}, reality-engine `results/full_explore/`).
+None of it is scored; all of it went into exp_31's registration as disclosed priors.
+
+**1. Gravity alone is a seed-dependent plateau, not a transient.** Within every gravity-only run the
+window is flat (spread 0.06–0.17); between seeds the plateau sits anywhere in 0.31–0.68, set by how
+the cold jittered lattice fragmented. R1b drew three high seeds.
+
+**2. The design threw away its own pairing.** The first mark is identical across arms for a given seed:
+the seed fixes the jitter and the mass draw, so every seedwise comparison is one initial condition
+under different physics. The registered bar (margin over the pooled per-seed σ, unpaired, n = 3) is a
+Cohen's d > 2 requirement. Paired over six seeds, κ = 0.5 lifts percolation by +0.14 ± 0.02 (6/6,
+t 6.0) and κ = 1 by +0.20 ± 0.07 (5/6, t 2.9).
+
+**3. Occupancy was never matched.** κ = 1's overdense set (cells above twice the mean) is 60 % larger
+than gravity's (0.15 vs 0.09 of cells); at a stricter cut (three or more particles) its lift vanishes
+(+0.03 ± 0.08, 3/6) while κ = 0.5's survives (+0.11 ± 0.03, 6/6). A fatter set percolates more easily
+for reasons that are not structure — `structure.py` says so in its own docstring.
+
+**4. The instrument deposits a random draw on the boundary it reads.** The recorded field is mass
+nearest-grid-point, masses 1 ± 0.1, at ~1 particle per cell; "twice the mean" is 1.95 and a
+two-particle cell sums to 2 ± 0.14. Redrawing the masses on the SAME positions moves percolation by
+0.012 (κ ≤ 0.5), 0.027 (κ = 1), 0.054 (κ = 1.5). The masses were not in the sidecar (they are now).
+
+**The mechanism, at matched occupancy** (connectivity of the densest q of cells on a cloud-in-cell
+count field, the instrument exp_31 introduces): **κ = 0.5 is gravity's web, better connected at every
+cut** — q = 0.05 / 0.10 / 0.20 lifts of +0.11 / +0.14 / +0.10, each 6/6, with contrast, occupancy and
+void fraction unchanged from gravity's. **κ = 1 is a fatter, smoother web with a broken spine** — body
++0.27 (6/6) but the densest 5 % below gravity in 3/6, contrast halved, void fraction down. The
+registered statistic read the fat web as "more percolation" and was twice as noisy there.
+
+**The κ curve (seeds 1–3):** 0.25 nearly inert; **0.5–0.75 a connective plateau** (net pressure work
+−4 P₀); **1 the fattening regime** (−0.9 P₀); **≥ 1.25 the edge** — net work positive in every seed
+(+0.08 to +0.14 P₀), the spine collapsed (−0.47), the body still standing at 1.25 and gone by 2. The
+edge is between κ = 1 and 1.25, not 1 and 1.5 as "the edge" above reads it.
+
+**What this changes.** "Bound-maker, not structure-adder" was too strong as a reading of this round: the
+honest one is a modest, consistent lift of ~0.1–0.15 at κ = 0.5 at matched occupancy, in every seed,
+that no test so far was specified to detect. Pointing at κ = 0.5 now is itself post hoc; it is a
+registrable prediction with an honest prior, not a result, and exp_31 registers it paired, at matched
+occupancy, on six fresh seeds (`journals/2026-09-14_exp31_registration.md`). The kill above stands as
+sealed.
