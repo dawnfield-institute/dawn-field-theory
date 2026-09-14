@@ -77,7 +77,7 @@ denominator of the reflection polynomial (three cases carry the odd-prime half).
 
 ### Milestone R — the trigger is a core detector; the energy scale is still in the wrong slot
 
-65/120 across 29 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
+68/124 across 30 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
 derived severance trigger (exp_15's all-edges overstress) for the first time as a
 *dynamical* step, on reality-engine's v4 particle substrate: `min_j |S_i − S_j| > τ` fires
 only at extrema of the field, and on a structured field the extrema are the collapse cores
@@ -98,9 +98,22 @@ n = 4000), and the kill fired as registered: the mapping is retired as the objec
 structure beyond gravity at κ = 0.5 with the proxy deciding; the ledger stays as an instrument.
 Unscored, post hoc: at n = 4000, κ = 1 holds more web than gravity alone in every seed (2.8 σ)
 and κ = 2 less; on the proxy, whose pressure range exceeds half its box, the engine never adds.
-**Registrable next: R1b** — κ = 1 at n = 4000 on fresh seeds, the box-to-range ratio declared,
-the proxy retired as a decider for pressure-range questions; then R2, severance on a substrate
-that is now actually bound; the pressure's *form* stays a candidate behind R1b.
+R1b registered that number on fresh seeds as exp_30.
+
+**exp_30 (2026-09-14, 3/4, sealed `a4ab7a68`)** ran R1b: κ = 1 at n = 4000 on seeds {4, 5, 6}, the
+box-to-range ratio declared as a condition (3.0 ≥ 3; the proxy retired), a new arm κ = 1.5 whose
+position was predicted before it ran. **The kill fires**: κ = 1 holds 0.851 / 0.572 / 0.793 against
+gravity alone 0.645 / 0.631 / 0.684 — 2/3 seedwise, 0.8 σ. The arm reproduced its mean; the control
+moved (gravity alone 0.65 ± 0.03 on the fresh seeds, 0.44 ± 0.15 on seeds 1–3) — the 2.8 σ was
+gravity's two low seeds. Retired: the mapping as a structure-adder. Kept, and reproduced at every
+seed: the ledger as a bound-maker (KE/|U| ≈ ⅓ at κ = 1; 0.43 at κ = 1.5, exactly where the virial
+arithmetic put it) and the web's survival over the unbounded engine. Descriptive, unscored: the web
+goes where the bounded pressure's net work turns positive, between κ = 1 (−0.8 to −1.4 P₀) and
+κ = 1.5 (+0.2 P₀); over six seeds the ledgered arms sit above gravity in 11/12 pairs at 1.0–1.6 σ,
+and the best-looking arm moved from κ = 1 to κ = 0.5 between seed sets — not chased.
+**Registrable next: R2** — severance on the bound substrate at n = 4000, κ = 1 (κ = 0.5 for margin
+below the edge is the registration's call), fresh seeds, the box-to-range condition carried; the
+edge as a side-claim. The pressure's *form* is the only lead for anything that adds structure.
 
 exp_24 replaced `E_Planck · φ^(−d)` with **`α(d)² · m_mediator`** (EM scale at 11.4 ppm of
 the Rydberg). The 2026-08-27 propagation showed it fixes **two** of its six named failures,
