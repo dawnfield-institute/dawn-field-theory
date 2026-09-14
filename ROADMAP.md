@@ -77,7 +77,7 @@ denominator of the reflection polynomial (three cases carry the odd-prime half).
 
 ### Milestone R — the trigger is a core detector; the energy scale is still in the wrong slot
 
-68/124 across 30 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
+71/128 across 31 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
 derived severance trigger (exp_15's all-edges overstress) for the first time as a
 *dynamical* step, on reality-engine's v4 particle substrate: `min_j |S_i − S_j| > τ` fires
 only at extrema of the field, and on a structured field the extrema are the collapse cores
@@ -111,9 +111,21 @@ arithmetic put it) and the web's survival over the unbounded engine. Descriptive
 goes where the bounded pressure's net work turns positive, between κ = 1 (−0.8 to −1.4 P₀) and
 κ = 1.5 (+0.2 P₀); over six seeds the ledgered arms sit above gravity in 11/12 pairs at 1.0–1.6 σ,
 and the best-looking arm moved from κ = 1 to κ = 0.5 between seed sets — not chased.
-**Registrable next: R2** — severance on the bound substrate at n = 4000, κ = 1 (κ = 0.5 for margin
-below the edge is the registration's call), fresh seeds, the box-to-range condition carried; the
-edge as a side-claim. The pressure's *form* is the only lead for anything that adds structure.
+exp_30's post-mortem then found the test mis-specified (unpaired d > 2 at n = 3 on a paired design;
+unmatched occupancy; a mass draw on the threshold) and exp_31 re-asked the question.
+
+**exp_31 (2026-09-14, 3/4, sealed `b8ff9125`, pushed before any run)** — paired on seed, connectivity at
+fixed occupancy on a count deposit (reality-engine `5f5d690`), six fresh seeds, κ ∈ {0, 0.5, 1, 1.25, ∞}.
+**The ledgered engine at κ = 0.5 adds connectivity to gravity's web**: +0.065 ± 0.015, 6/6, paired t 4.4,
+with contrast, occupancy and void fraction unchanged from gravity's; the legacy percolation lifts
++0.092 (t 6.1, 6/6) at the very budget exp_29 registered — its claim was right and its bar could not
+see it. κ = 1's signature predicted from six seeds held on six others (body up, spine down, contrast
+halved, 6/6 each) and the edge sits between κ = 1 (net pressure work −0.8 to −1.2 P₀) and 1.25 (+0.08
+to +0.15; spine collapsed). T2's spine clause saturated (gravity's densest 5 % already one component
+on three seeds) and failed as registered — a design error of the registration, recorded.
+**Registrable next: R2** — severance on the ledgered substrate at n = 4000, **κ = 0.5** (bound at
+KE/|U| ≈ ½, gravity's web better connected, three steps below the edge), fresh seeds, paired, the
+connectivity statistic and the box-to-range condition carried. The adder question is closed, answered.
 
 exp_24 replaced `E_Planck · φ^(−d)` with **`α(d)² · m_mediator`** (EM scale at 11.4 ppm of
 the Rydberg). The 2026-08-27 propagation showed it fixes **two** of its six named failures,
