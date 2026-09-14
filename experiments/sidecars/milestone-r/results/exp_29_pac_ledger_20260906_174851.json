@@ -1,0 +1,117 @@
+{
+ "gates": {
+  "transfer_residual_le_1e-6": true,
+  "closure_pac_le_0.05": true,
+  "all_finite": true,
+  "at_cap_le_0.02": true
+ },
+ "per_size": {
+  "proxy": {
+   "vacuous": {
+    "budget_never_binds": false,
+    "gravity_structures": "True",
+    "floor": {
+     "percolation_mean": 0.05074705358320923,
+     "percolation_std": 0.013964681688179636,
+     "xi_u_mean": 0.5670937798357263,
+     "xi_u_std": 0.016579797788694416,
+     "occupancy_mean": 0.07819999999999999,
+     "draws": 20
+    }
+   },
+   "T1": {
+    "perc_k05": [
+     0.7582797385786516,
+     0.7637078855059981,
+     0.5086621611798524
+    ],
+    "perc_B0": [
+     0.10067037928582726,
+     0.08693189026767519,
+     0.06148821930276864
+    ],
+    "perc_G0": [
+     0.688175121347267,
+     0.817024988517133,
+     0.4285934365840297
+    ],
+    "seedwise_vs_B0": [
+     true,
+     true,
+     true
+    ],
+    "seedwise_vs_G0": [
+     true,
+     false,
+     true
+    ],
+    "margin_B0": 0.5938530988027437,
+    "std_B0": 0.10398641311735915,
+    "margin_G0": 0.032285412938690805,
+    "std_G0": 0.17374567886567488,
+    "ok": false
+   },
+   "T2": {
+    "ke_over_u_max_k05": [
+     0.5081472839826167,
+     0.5289149747551559,
+     0.496373271437521
+    ],
+    "ke_over_u_max_k1": [
+     0.31720150056161606,
+     0.3522513233886723,
+     0.3245046016419052
+    ],
+    "ok": true
+   },
+   "T3": {
+    "per_seed": [
+     true,
+     true,
+     true
+    ],
+    "ok": true
+   },
+   "T4": {
+    "net_creation_le_p0": true,
+    "work_within_allowance": true,
+    "bound_frac_max_k05": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "ok": true
+   }
+  }
+ },
+ "tests": {
+  "T1": "FAIL",
+  "T2": "PASS",
+  "T3": "PASS",
+  "T4": "PASS"
+ },
+ "kill": {
+  "mapping_dies": true
+ },
+ "vacuous": {
+  "proxy": {
+   "budget_never_binds": false,
+   "gravity_structures": "True",
+   "floor": {
+    "percolation_mean": 0.05074705358320923,
+    "percolation_std": 0.013964681688179636,
+    "xi_u_mean": 0.5670937798357263,
+    "xi_u_std": 0.016579797788694416,
+    "occupancy_mean": 0.07819999999999999,
+    "draws": 20
+   }
+  }
+ },
+ "score": "3/4",
+ "grid_files": [
+  "exp_29_pac_ledger_grid_proxy_20260906_174850.json"
+ ],
+ "reality_engine_commits": [
+  "78d59b3"
+ ]
+}
