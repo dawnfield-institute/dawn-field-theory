@@ -64,6 +64,9 @@ dawn-field-theory/
     20260904_120500_m18_phase8_n24.md
     20260904_150000_m18_two_theorems.md
     20260905_160500_xi_optimum_retraction_propagated.md
+    20260905_233000_mr_exp28_dynamical_severance.md
+    20260906_180000_mr_exp29_pac_ledger.md
+    20260907_103000_m18_block_f_signed_cycle.md
     20260907_120500_prime_gap_ledger.md
     20260907_133500_prime_gap_ledger_exp2.md
     20260907_173000_prime_gap_ledger_exp3.md
@@ -2572,6 +2575,7 @@ dawn-field-theory/
           matching.py
           pac_sectors.py
           sectors.py
+          signed.py
         journals/
           2026-08-31_blockA_blockB_preregistration.md
           2026-08-31_blockA_outcomes.md
@@ -2617,6 +2621,10 @@ dawn-field-theory/
           2026-09-03_phase8_registration.md
           2026-09-04_after_phase8_two_theorems.md
           2026-09-04_exp19_outcomes_n24.md
+          2026-09-06_the_lattice_end_and_the_scaling_end.md
+          2026-09-07_blockF_registration.md
+          2026-09-07_exp20_outcomes.md
+          2026-09-07_local_global_delta.md
         results/
           .gitignore
           exp_01_foldings_20260831.json
@@ -2664,6 +2672,10 @@ dawn-field-theory/
           exp_19_phase8_n22_20260903_133944_log.txt
           exp_19_phase8_n24_20260903_155724.json
           exp_19_phase8_n24_20260903_155724_log.txt
+          exp_20_signed_unicyclic_n13to14_20260907_100352.json
+          exp_20_signed_unicyclic_n13to14_20260907_100352_log.txt
+          exp_20_signed_unicyclic_n3to12_20260907_100350.json
+          exp_20_signed_unicyclic_n3to12_20260907_100350_log.txt
           explore_d0_certificate_gates_20260903_191022.json
           explore_d0_certificate_gates_20260903_191734.json
           explore_d0_certificate_gates_20260903_192541.json
@@ -2686,6 +2698,8 @@ dawn-field-theory/
           explore_d1c_devbox_log.txt
           explore_d1c_null_carriers_20260903_234144.json
           explore_d1c_null_carriers_log.txt
+          explore_f0_gates_20260907_95646.json
+          explore_f0_gates_20260907_100206.json
           explore_g1_census_20260901.json
           explore_g1_log.txt
           explore_g3g4g6_20260901.json
@@ -2767,6 +2781,7 @@ dawn-field-theory/
           exp_17_phase7b_pi_asymmetry.py
           exp_18_phase7c_branch_fingerprint.py
           exp_19_phase8_census.py
+          exp_20_signed_unicyclic.py
           explore_d0_certificate_gates.py
           explore_d0b_growth_harness_gate.py
           explore_d0c_pac_sector_certificate_gate.py
@@ -2776,6 +2791,7 @@ dawn-field-theory/
           explore_d1c_null_carriers.py
           explore_e1_flow.py
           explore_e2_klein.py
+          explore_f0_gates.py
           explore_g1_census_exhaustive.py
           explore_g3_g4_g6_geometry.py
           explore_l1_accidentals.py
@@ -3557,6 +3573,10 @@ dawn-field-theory/
           radiation_physics.py
         journals/
           2026-08-27_energy_scale_propagation_and_the_depth_slot.md
+          2026-09-05_exp28_outcomes.md
+          2026-09-05_exp28_registration.md
+          2026-09-06_exp29_outcomes.md
+          2026-09-06_exp29_registration.md
         results/
           exp_01_ledger_severance_mechanics_20260527_170019.json
           exp_02_alpha_decay_discrete_severance_20260527_170031.json
@@ -3592,6 +3612,19 @@ dawn-field-theory/
           exp_25_series_sweet_spots_20260528_170521.json
           exp_26_channel_completeness_20260528_170642.json
           exp_27_bifractal_time_emergence_20260529_84002.json
+          exp_28_dynamical_severance_20260905_230309.json
+          exp_28_dynamical_severance_20260905_230329.json
+          exp_28_dynamical_severance_20260905_230513.json
+          exp_28_dynamical_severance_20260905_230902.json
+          exp_28_dynamical_severance_20260905_232916.json
+          exp_28_dynamical_severance_grid_full_20260905_232915.json
+          exp_28_dynamical_severance_grid_proxy_20260905_230329.json
+          exp_28_dynamical_severance_grid_proxy_20260905_230513.json
+          exp_28_dynamical_severance_grid_proxy_pre_d_20260905_230309.json
+          exp_29_pac_ledger_20260906_174851.json
+          exp_29_pac_ledger_20260906_180850.json
+          exp_29_pac_ledger_grid_full_20260906_180850.json
+          exp_29_pac_ledger_grid_proxy_20260906_174850.json
         scripts/
           exp_01_ledger_severance_mechanics.py
           exp_02_alpha_decay_discrete_severance.py
@@ -3620,6 +3653,8 @@ dawn-field-theory/
           exp_25_series_sweet_spots.py
           exp_26_channel_completeness.py
           exp_27_bifractal_time_emergence.py
+          exp_28_dynamical_severance.py
+          exp_29_pac_ledger.py
     spikes/
       RECURSIVE_FRACTAL_ARITHMETIC.md
       constant_number_fields/

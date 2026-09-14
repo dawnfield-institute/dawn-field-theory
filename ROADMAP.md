@@ -29,7 +29,12 @@ odd-harmonic and Fibonacci — died first, by registered measurement.
 Phase 2 asks the only question that decides whether this is physics:
 
 - **(a) ℤ₂ twist classification** across cycle structures, now that the parity mechanism
-  is identified.
+  is identified. **Started 2026-09-07 as M18 Block F** (exp_20): on a cycle the twist is the
+  signed graph's switching class, and everything on the pure cycle is a theorem — the twist
+  selects the odd exponents, K3's universal det H = +1 is the balanced class only, and
+  C₆ = −I becomes H = I under the twist ([`formal/theorems/`](formal/theorems/README.md#the-signed-cycle-the-twist-selects-the-odd-exponents-and-doubles-the-conductor)).
+  The live question moved to the first class where nothing forces the answer (signed
+  unicyclic graphs, `experiments/milestones/milestone18/journals/2026-09-07_blockF_registration.md`).
 - **(b) The field-equation hunt** — does cascade ledger density *source* holonomy, and is
   the coupling φ-structured? Candidate substrate: the ADE-coupled cascade.
 
@@ -70,17 +75,39 @@ sizes is retired; the mathematics stands; P1's registered form is forward-correc
 **Nearest registrable target:** Phase 8's parity law at n = 24 (census running) and the exact
 denominator of the reflection polynomial (three cases carry the odd-prime half).
 
-### Milestone R — propagate the energy-scale fix
+### Milestone R — the trigger is a core detector; the energy scale is still in the wrong slot
 
-60/112 across 27 experiments. The decisive result is exp_24: replacing `E_Planck · φ^(−d)`
-with **`α(d)² · m_mediator`** puts the EM scale at 11.4 ppm of the Rydberg and the nuclear
-scale within 1.75×. That one change resolves **eight** earlier failures sharing a single
-root cause.
+65/120 across 29 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
+derived severance trigger (exp_15's all-edges overstress) for the first time as a
+*dynamical* step, on reality-engine's v4 particle substrate: `min_j |S_i − S_j| > τ` fires
+only at extrema of the field, and on a structured field the extrema are the collapse cores
+— severance removed the bound, connected part and left the rest hotter and less connected
+than a random subset at the same count (T2 −2.6 σ at the onset τ; a null at n = 4000 where
+half is removed; never above random). The exp_15/16 graph results
+stand (their field was noise); what closes is the entropy-gradient barrier as an amount-free
+*dynamical* sink. Registrable next: a barrier on *under*-stress, and the sign question it
+raises beside exp_14.
 
-Open: propagate it back through exp_03–09, currently scored against the old scale and
-recorded as failures for a reason now known to be wrong. This is the highest-value
-unfinished work in the corpus — it converts recorded failures into results without
-weakening a threshold, because the threshold never changed; the scale was wrong.
+**exp_29 (2026-09-06, 3/4, sealed `43e4ebc9`)** found where exp_28's zero came from — the substrate
+had no PAC ledger, and the SEC pressure's entropy ratchet created eleven binding energies from
+nothing — and added the ledger: a per-particle potential budget paying for entropy growth at
+the pair-energy price, the total `KE + U + E_SEC + ΣP` conserved. The substrate is then bound
+(KE/|U| ≈ 0.5) and a web survives at both sizes, 4.8–5.7 σ over the unbounded engine — but the
+registered κ = 0.5 arm fails the 2 σ bar against gravity alone (0.2 σ on the proxy, 1.1 σ at
+n = 4000), and the kill fired as registered: the mapping is retired as the object that holds
+structure beyond gravity at κ = 0.5 with the proxy deciding; the ledger stays as an instrument.
+Unscored, post hoc: at n = 4000, κ = 1 holds more web than gravity alone in every seed (2.8 σ)
+and κ = 2 less; on the proxy, whose pressure range exceeds half its box, the engine never adds.
+**Registrable next: R1b** — κ = 1 at n = 4000 on fresh seeds, the box-to-range ratio declared,
+the proxy retired as a decider for pressure-range questions; then R2, severance on a substrate
+that is now actually bound; the pressure's *form* stays a candidate behind R1b.
+
+exp_24 replaced `E_Planck · φ^(−d)` with **`α(d)² · m_mediator`** (EM scale at 11.4 ppm of
+the Rydberg). The 2026-08-27 propagation showed it fixes **two** of its six named failures,
+not eight, and that the (depth, mediator) pair is exactly degenerate — a fitted depth
+measures the mediator choice. Open: the energy scale needs a representation that carries
+φ⁻¹ once and a Fibonacci index multiset, which `α(d)² · m` does not; several remaining
+passes are tautological at the Planck scale and may fail once the scale is right.
 
 Also standing from Block C: Geiger–Nuttall shown to be a **universality theorem** for any
 d-simultaneous-threshold barrier (exp_16, 4/4), universal exponent k = 1.16 ± 0.02 across
