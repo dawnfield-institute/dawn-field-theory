@@ -107,3 +107,13 @@ the next scorer exercise uses a grid produced by the real aggregator on real run
 was registered on a statistic that saturates; that is a design error of the registration, recorded
 in §5 of the next one. No threshold moved after any result. This journal was written once, from the
 scored JSON.
+
+## Correction (2026-09-14, night)
+
+The registration's §0.4 and this journal's process notes say the mass draw "is now saved in the
+sidecar". For the thirty runs of this round that is **false**: the one-line change lived uncommitted
+in another worktree (it is in the exploratory κ-sweep runs on seeds 1–3, and in every run from
+reality-engine `feat/v4-ledger-virial` onward), and the exp_31 runs at `5f5d690` carry positions
+only. Nothing scored here depends on it — the scored observable is the count deposit, which needs
+no masses — but the legacy `percolation` marks of these runs cannot be reproduced from their
+sidecars. The sealed text stands as sealed; this note is the record.

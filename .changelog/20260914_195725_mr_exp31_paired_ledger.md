@@ -36,7 +36,8 @@ registration design error, recorded.
 - README (row 31, finding 44, one honest-failure row, P41; 71/128), meta.yaml, THEORY_MAP, ROADMAP;
   generated indexes
 - Companion: reality-engine `feat/v4-pac-ledger-r1c` — instrument `5f5d690`, results `6322387`
-  (`results/full_r1c/`, positions and masses in the sidecars); the exploratory sweep in
+  (`results/full_r1c/`, positions in the sidecars — NOT masses, corrected same day in the outcomes
+  journal); the exploratory sweep in
   `results/full_explore/` on `feat/v4-pac-ledger-r1b`
 
 ## Process
