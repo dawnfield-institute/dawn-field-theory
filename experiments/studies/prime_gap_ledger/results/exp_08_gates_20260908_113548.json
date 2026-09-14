@@ -1,0 +1,356 @@
+{
+ "script": "exp_08_gates.py",
+ "generated": "20260908_113548",
+ "seed": 20260912,
+ "y": 4473,
+ "L": 2000000,
+ "a": 1.2998,
+ "loop_heldout_rms": 0.03043030774440292,
+ "exps": [
+  5,
+  6,
+  7,
+  8,
+  10,
+  12,
+  16,
+  22,
+  30,
+  45
+ ],
+ "pool": [
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  15,
+  16,
+  17,
+  19,
+  20,
+  21,
+  23,
+  24,
+  25,
+  27,
+  28,
+  29,
+  31,
+  32,
+  33,
+  35,
+  36,
+  37,
+  39,
+  40,
+  41,
+  43,
+  44,
+  45,
+  47,
+  48,
+  49,
+  51,
+  52,
+  53,
+  55,
+  56,
+  57,
+  59,
+  60
+ ],
+ "positions": {
+  "5": {
+   "N": "1e5",
+   "u": 1.3696382811332133,
+   "n": 146213,
+   "density": 0.0731065,
+   "ratio": 1.096326533445422,
+   "buchstab_pred": 1.3003963614153236,
+   "rel_err": 0.15692894414730318,
+   "y_eff": 2113,
+   "log_shift": -0.0892180735833169
+  },
+  "6": {
+   "N": "1e6",
+   "u": 1.643565937359856,
+   "n": 138318,
+   "density": 0.069159,
+   "ratio": 1.037128664709047,
+   "buchstab_pred": 1.0836635996678143,
+   "rel_err": 0.04294223315522655,
+   "y_eff": 3319,
+   "log_shift": -0.0354987357907004
+  },
+  "7": {
+   "N": "1e7",
+   "u": 1.9174935935864985,
+   "n": 123481,
+   "density": 0.0617405,
+   "ratio": 0.9258786611065647,
+   "buchstab_pred": 0.9288544926717891,
+   "rel_err": 0.003203765055455158,
+   "y_eff": 8819,
+   "log_shift": 0.08075947335051814
+  },
+  "8": {
+   "N": "1e8",
+   "u": 2.1914212498131413,
+   "n": 127406,
+   "density": 0.063703,
+   "ratio": 0.9553088871724636,
+   "buchstab_pred": 0.9550977937365901,
+   "rel_err": 0.00022101761438240034,
+   "y_eff": 6659,
+   "log_shift": 0.0473374702453313
+  },
+  "10": {
+   "N": "1e10",
+   "u": 2.7392765622664266,
+   "n": 134576,
+   "density": 0.067288,
+   "ratio": 1.009070599501762,
+   "buchstab_pred": 1.010062775375747,
+   "rel_err": 0.0009822912973066868,
+   "y_eff": 4129,
+   "log_shift": -0.00952008595503373
+  },
+  "12": {
+   "N": "1e12",
+   "u": 3.287131874719712,
+   "n": 133492,
+   "density": 0.066746,
+   "ratio": 1.0009426084048358,
+   "buchstab_pred": 0.9994428527719967,
+   "rel_err": 0.0015005916833358414,
+   "y_eff": 4441,
+   "log_shift": -0.0008541406727926582
+  },
+  "16": {
+   "N": "1e16",
+   "u": 4.382842499626283,
+   "n": 133206,
+   "density": 0.066603,
+   "ratio": 0.9987981384290786,
+   "buchstab_pred": 1.000084598361942,
+   "rel_err": 0.0012863511096665996,
+   "y_eff": 4513,
+   "log_shift": 0.0010591235726895576
+  },
+  "22": {
+   "N": "1e22",
+   "u": 6.026408436986139,
+   "n": 133211,
+   "density": 0.0666055,
+   "ratio": 0.9988356291629206,
+   "buchstab_pred": 1.0000003439716274,
+   "rel_err": 0.0011647144080781245,
+   "y_eff": 4513,
+   "log_shift": 0.0010591235726895576
+  },
+  "30": {
+   "N": "1e30",
+   "u": 8.217829686799279,
+   "n": 133495,
+   "density": 0.0667475,
+   "ratio": 1.000965102845141,
+   "buchstab_pred": 1.0000000259808541,
+   "rel_err": 0.0009650768392132973,
+   "y_eff": 4441,
+   "log_shift": -0.0008541406727926582
+  },
+  "45": {
+   "N": "1e45",
+   "u": 12.32674453019892,
+   "n": 133320,
+   "density": 0.06666,
+   "ratio": 0.9996529271606741,
+   "buchstab_pred": 1.0000000260682218,
+   "rel_err": 0.0003470988984994427,
+   "y_eff": 4483,
+   "log_shift": 0.0002656661879836264
+  }
+ },
+ "all_pass": false,
+ "gates": {
+  "G1": {
+   "claim": "F_c and a load from the sealed exp_07 gate file",
+   "value": {
+    "a": 1.2998,
+    "source": "exp_07_gates_20260907_195941.json",
+    "loop_heldout_rms": 0.03043030774440292
+   },
+   "status": "PASS"
+  },
+  "G2": {
+   "claim": "density ratio tracks Buchstab e^gamma*omega(u) within 5% for u>=2",
+   "value": {
+    "5": {
+     "u": 1.37,
+     "ratio": 1.0963,
+     "buchstab": 1.3004,
+     "rel": 0.1569
+    },
+    "6": {
+     "u": 1.64,
+     "ratio": 1.0371,
+     "buchstab": 1.0837,
+     "rel": 0.0429
+    },
+    "7": {
+     "u": 1.92,
+     "ratio": 0.9259,
+     "buchstab": 0.9289,
+     "rel": 0.0032
+    },
+    "8": {
+     "u": 2.19,
+     "ratio": 0.9553,
+     "buchstab": 0.9551,
+     "rel": 0.0002
+    },
+    "10": {
+     "u": 2.74,
+     "ratio": 1.0091,
+     "buchstab": 1.0101,
+     "rel": 0.001
+    },
+    "12": {
+     "u": 3.29,
+     "ratio": 1.0009,
+     "buchstab": 0.9994,
+     "rel": 0.0015
+    },
+    "16": {
+     "u": 4.38,
+     "ratio": 0.9988,
+     "buchstab": 1.0001,
+     "rel": 0.0013
+    },
+    "22": {
+     "u": 6.03,
+     "ratio": 0.9988,
+     "buchstab": 1.0,
+     "rel": 0.0012
+    },
+    "30": {
+     "u": 8.22,
+     "ratio": 1.001,
+     "buchstab": 1.0,
+     "rel": 0.001
+    },
+    "45": {
+     "u": 12.33,
+     "ratio": 0.9997,
+     "buchstab": 1.0,
+     "rel": 0.0003
+    }
+   },
+   "status": "PASS"
+  },
+  "G4": {
+   "claim": "y_eff solver resolves at every position (grid covers y_eff, which exceeds y near the origin)",
+   "value": {
+    "5": 2113,
+    "6": 3319,
+    "7": 8819,
+    "8": 6659,
+    "10": 4129,
+    "12": 4441,
+    "16": 4513,
+    "22": 4513,
+    "30": 4441,
+    "45": 4483
+   },
+   "status": "PASS"
+  },
+  "G3": {
+   "claim": "the transition exists: the depth shift is large near the origin and decays as u grows",
+   "value": {
+    "shift_nearest": -0.0892180735833169,
+    "shift_farthest": 0.0002656661879836264,
+    "all_shifts": [
+     -0.0892,
+     -0.0355,
+     0.0808,
+     0.0473,
+     -0.0095,
+     -0.0009,
+     0.0011,
+     0.0011,
+     -0.0009,
+     0.0003
+    ]
+   },
+   "status": "PASS"
+  },
+  "G5": {
+   "claim": "delta_2q == delta_q exactly for odd q (42 cases)",
+   "value": "42/42",
+   "status": "PASS"
+  },
+  "G6": {
+   "claim": "RECORDED not gated: the per-cell prediction span vs the per-cell residual (see note; G7 is the test)",
+   "value": {
+    "mean_prediction_span": 0.019760313083828644,
+    "expected_per_cell_residual": 0.03043030774440292,
+    "ratio": 0.649362906540542,
+    "note": "sub-residual per cell; resolves only in aggregate (G7). No per-cell claim is supported.",
+    "superseded_criterion": "span > per-cell residual -- invalid, see exp_06 correction aace9b3d"
+   },
+   "status": "PASS"
+  },
+  "G7": {
+   "claim": "POWER: the fixed-depth control separates from the tracking model at >=3 sigma over the actual cells",
+   "value": {
+    "n_cells": 308,
+    "mean_abs_separation": 0.0018981385245214711,
+    "expected_rms_gap": 0.00038261126246130474,
+    "sampling_spread": 0.0002681993879757141,
+    "power_sigma": 1.4265926009344616
+   },
+   "status": "FAIL"
+  },
+  "G8": {
+   "claim": "all thresholds fixed here, before any delta at any position is formed",
+   "value": {
+    "a": 1.2998,
+    "y": 4473,
+    "L": 2000000,
+    "positions": [
+     "1e5",
+     "1e6",
+     "1e7",
+     "1e8",
+     "1e10",
+     "1e12",
+     "1e16",
+     "1e22",
+     "1e30",
+     "1e45"
+    ],
+    "free_parameters": 0,
+    "scored_positions": [
+     "1e8",
+     "1e10",
+     "1e12",
+     "1e16",
+     "1e22",
+     "1e30",
+     "1e45"
+    ],
+    "R1": "CONFIRM if rms(scored positions, u>=2) <= 1.75 * exp_07's loop held-out rms; KILL if > 3.0 *",
+    "R2": "the coherence curve C_q(u) collapses across moduli: spread at matched u <= 0.15; KILL > 0.35",
+    "R3": "positive control: the fixed-depth model must be WORSE, >=3 sigma paired bootstrap",
+    "loop_heldout_rms": 0.03043030774440292,
+    "seed": 20260912
+   },
+   "status": "PASS"
+  }
+ }
+}

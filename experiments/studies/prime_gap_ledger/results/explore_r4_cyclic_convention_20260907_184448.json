@@ -1,0 +1,357 @@
+{
+ "mode": "exploring",
+ "registered": false,
+ "generated": "20260907_184448",
+ "claim": "the enumerated loop's transition matrix should be cyclic; the linear one injects phi(P)/2 - 1",
+ "scope": "nothing scored moves \u2014 scored cells used sampled loops, which are true arcs",
+ "depths": {
+  "3": {
+   "k": 3,
+   "y": 5,
+   "P": "30",
+   "phi_P": 8,
+   "q": {
+    "3": {
+     "q": 3,
+     "linear": "5/12",
+     "cyclic": "1/2",
+     "linear_denom_factors": {
+      "2": 2,
+      "3": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 1
+     },
+     "linear_largest_prime": 3,
+     "phi_half_minus_1": 3,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "3": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.08333333333333333
+    },
+    "5": {
+     "q": 5,
+     "linear": "1",
+     "cyclic": "1",
+     "linear_denom_factors": {},
+     "cyclic_denom_factors": {},
+     "linear_largest_prime": 1,
+     "phi_half_minus_1": 3,
+     "boundary_term_divides_linear_denom": false,
+     "boundary_term_factors": {
+      "3": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.0
+    }
+   }
+  },
+  "4": {
+   "k": 4,
+   "y": 7,
+   "P": "210",
+   "phi_P": 48,
+   "q": {
+    "3": {
+     "q": 3,
+     "linear": "223/552",
+     "cyclic": "5/12",
+     "linear_denom_factors": {
+      "2": 3,
+      "3": 1,
+      "23": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 2,
+      "3": 1
+     },
+     "linear_largest_prime": 23,
+     "phi_half_minus_1": 23,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "23": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.012681159420289856
+    },
+    "5": {
+     "q": 5,
+     "linear": "229/276",
+     "cyclic": "5/6",
+     "linear_denom_factors": {
+      "2": 2,
+      "3": 1,
+      "23": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 1,
+      "3": 1
+     },
+     "linear_largest_prime": 23,
+     "phi_half_minus_1": 23,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "23": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.0036231884057971015
+    },
+    "7": {
+     "q": 7,
+     "linear": "1",
+     "cyclic": "1",
+     "linear_denom_factors": {},
+     "cyclic_denom_factors": {},
+     "linear_largest_prime": 1,
+     "phi_half_minus_1": 23,
+     "boundary_term_divides_linear_denom": false,
+     "boundary_term_factors": {
+      "23": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.0
+    }
+   }
+  },
+  "5": {
+   "k": 5,
+   "y": 11,
+   "P": "2310",
+   "phi_P": 480,
+   "q": {
+    "3": {
+     "q": 3,
+     "linear": "1429/3824",
+     "cyclic": "3/8",
+     "linear_denom_factors": {
+      "2": 4,
+      "239": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 3
+     },
+     "linear_largest_prime": 239,
+     "phi_half_minus_1": 239,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "239": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.001307531380753138
+    },
+    "5": {
+     "q": 5,
+     "linear": "1433/1912",
+     "cyclic": "3/4",
+     "linear_denom_factors": {
+      "2": 3,
+      "239": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 2
+     },
+     "linear_largest_prime": 239,
+     "phi_half_minus_1": 239,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "239": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.0005230125523012552
+    },
+    "7": {
+     "q": 7,
+     "linear": "18641/19120",
+     "cyclic": "39/40",
+     "linear_denom_factors": {
+      "2": 4,
+      "5": 1,
+      "239": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 3,
+      "5": 1
+     },
+     "linear_largest_prime": 239,
+     "phi_half_minus_1": 239,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "239": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 5.230125523012552e-05
+    }
+   }
+  },
+  "6": {
+   "k": 6,
+   "y": 13,
+   "P": "30030",
+   "phi_P": 5760,
+   "q": {
+    "3": {
+     "q": 3,
+     "linear": "2860783/8291520",
+     "cyclic": "497/1440",
+     "linear_denom_factors": {
+      "2": 6,
+      "3": 2,
+      "5": 1,
+      "2879": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 5,
+      "3": 2,
+      "5": 1
+     },
+     "linear_largest_prime": 2879,
+     "phi_half_minus_1": 2879,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "2879": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 0.00011373065493419783
+    },
+    "5": {
+     "q": 5,
+     "linear": "961513/1381920",
+     "cyclic": "167/240",
+     "linear_denom_factors": {
+      "2": 5,
+      "3": 1,
+      "5": 1,
+      "2879": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 4,
+      "3": 1,
+      "5": 1
+     },
+     "linear_largest_prime": 2879,
+     "phi_half_minus_1": 2879,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "2879": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 5.2825054995947666e-05
+    },
+    "7": {
+     "q": 7,
+     "linear": "2596829/2763840",
+     "cyclic": "451/480",
+     "linear_denom_factors": {
+      "2": 6,
+      "3": 1,
+      "5": 1,
+      "2879": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 5,
+      "3": 1,
+      "5": 1
+     },
+     "linear_largest_prime": 2879,
+     "phi_half_minus_1": 2879,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "2879": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 1.0492647910153989e-05
+    }
+   }
+  },
+  "7": {
+   "k": 7,
+   "y": 17,
+   "P": "510510",
+   "phi_P": 92160,
+   "q": {
+    "3": {
+     "q": 3,
+     "linear": "76581569/235924480",
+     "cyclic": "831/2560",
+     "linear_denom_factors": {
+      "2": 10,
+      "5": 1,
+      "11": 1,
+      "59": 1,
+      "71": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 9,
+      "5": 1
+     },
+     "linear_largest_prime": 71,
+     "phi_half_minus_1": 46079,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "11": 1,
+      "59": 1,
+      "71": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 7.328616343670653e-06
+    },
+    "5": {
+     "q": 5,
+     "linear": "78241711/117962240",
+     "cyclic": "849/1280",
+     "linear_denom_factors": {
+      "2": 9,
+      "5": 1,
+      "11": 1,
+      "59": 1,
+      "71": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 8,
+      "5": 1
+     },
+     "linear_largest_prime": 71,
+     "phi_half_minus_1": 46079,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "11": 1,
+      "59": 1,
+      "71": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 3.6537115605807417e-06
+    },
+    "7": {
+     "q": 7,
+     "linear": "642985663/707773440",
+     "cyclic": "6977/7680",
+     "linear_denom_factors": {
+      "2": 10,
+      "3": 1,
+      "5": 1,
+      "11": 1,
+      "59": 1,
+      "71": 1
+     },
+     "cyclic_denom_factors": {
+      "2": 9,
+      "3": 1,
+      "5": 1
+     },
+     "linear_largest_prime": 71,
+     "phi_half_minus_1": 46079,
+     "boundary_term_divides_linear_denom": true,
+     "boundary_term_factors": {
+      "11": 1,
+      "59": 1,
+      "71": 1
+     },
+     "cyclic_is_5_smooth": true,
+     "abs_diff": 9.93255694929722e-07
+    }
+   }
+  }
+ }
+}

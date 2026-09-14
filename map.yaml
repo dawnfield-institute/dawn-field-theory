@@ -67,6 +67,9 @@ dawn-field-theory/
     20260905_233000_mr_exp28_dynamical_severance.md
     20260906_180000_mr_exp29_pac_ledger.md
     20260907_103000_m18_block_f_signed_cycle.md
+    20260907_120500_prime_gap_ledger.md
+    20260907_133500_prime_gap_ledger_exp2.md
+    20260907_173000_prime_gap_ledger_exp3.md
     README.md
   .claude/
     skills/
@@ -4866,6 +4869,98 @@ dawn-field-theory/
           run_all.py
         tests/
           test_core.py
+      prime_gap_ledger/
+        README.md
+        meta.yaml
+        core/
+          exact_gaps.py
+          rough.py
+        journals/
+          2026-09-07_exp01_outcomes.md
+          2026-09-07_exp01_registration.md
+          2026-09-07_exp02_outcomes.md
+          2026-09-07_exp02_registration.md
+          2026-09-07_exp03_outcomes.md
+          2026-09-07_exp03_registration.md
+          2026-09-07_exp04_exploring_the_loop_depth_profile.md
+          2026-09-07_exp05_outcomes.md
+          2026-09-07_exp05_registration.md
+          2026-09-07_exp06_outcomes.md
+          2026-09-07_exp06_registration.md
+          2026-09-07_exp07_outcomes.md
+          2026-09-07_exp07_registration.md
+          2026-09-07_exploring_position_along_the_loop.md
+          2026-09-08_exp08_outcomes.md
+          2026-09-08_exp08_registration.md
+          2026-09-08_exp09_outcomes.md
+          2026-09-08_exp09_registration.md
+          2026-09-08_note_F_below_x_0085_is_extrapolation.md
+          2026-09-08_note_lineage_the_cascade_cost_and_the_markov_prior_art.md
+          2026-09-08_note_the_sieve_recursion_and_where_it_fails.md
+          2026-09-08_note_two_closed_branches_and_a_correction.md
+        results/
+          exp_00_gates_20260907_114418.json
+          exp_00_gates_20260907_114513.json
+          exp_01_cascade_truncation_main_20260907_114927.json
+          exp_01_cascade_truncation_main_20260907_115156.json
+          exp_01_cascade_truncation_main_20260907_114927_log.txt
+          exp_01_cascade_truncation_main_20260907_115156_log.txt
+          exp_02_gates_20260907_132239.json
+          exp_02_gates_20260907_132456.json
+          exp_02_position_of_the_read_main_20260907_132740.json
+          exp_02_position_of_the_read_main_20260907_133111.json
+          exp_02_position_of_the_read_main_20260907_132740_log.txt
+          exp_02_position_of_the_read_main_20260907_133111_log.txt
+          exp_03_density_matched_loop_main_20260907_171126.json
+          exp_03_density_matched_loop_main_20260907_171834.json
+          exp_03_density_matched_loop_main_20260907_171126_log.txt
+          exp_03_density_matched_loop_main_20260907_171834_log.txt
+          exp_03_gates_20260907_170520.json
+          exp_03_gates_20260907_170831.json
+          exp_04_gates_20260907_182007.json
+          exp_05_collapse_20260907_185245.json
+          exp_05_gates_20260907_184901.json
+          exp_06_gates_20260907_190634.json
+          exp_06_primes_inherit_20260907_191016.json
+          exp_07_closed_form_20260907_202055.json
+          exp_07_gates_20260907_195941.json
+          exp_08_gates_20260908_113449.json
+          exp_08_gates_20260908_113548.json
+          exp_08_gates_20260908_113619.json
+          exp_08_position_is_depth_20260908_114208.json
+          exp_09_exact_residual_20260908_132440.json
+          exp_09_gates_20260908_132216.json
+          exp_09_gates_20260908_132250.json
+          explore_r2_position_20260907_125700.json
+          explore_r4_cyclic_convention_20260907_184406.json
+          explore_r4_cyclic_convention_20260907_184448.json
+          explore_r4_loop_depth_20260907_180221.json
+          explore_r4_loop_depth_20260907_180254.json
+          explore_r4_qsweep_20260907_182819.json
+          explore_r4_qsweep_20260907_184511.json
+          explore_r4_sampled_depth_20260907_180653.json
+        scripts/
+          exp_00_gates.py
+          exp_01_cascade_truncation.py
+          exp_02_gates.py
+          exp_02_position_of_the_read.py
+          exp_03_density_matched_loop.py
+          exp_03_gates.py
+          exp_04_gates.py
+          exp_05_collapse.py
+          exp_05_gates.py
+          exp_06_gates.py
+          exp_06_primes_inherit.py
+          exp_07_closed_form.py
+          exp_07_gates.py
+          exp_08_gates.py
+          exp_08_position_is_depth.py
+          exp_09_exact_residual.py
+          exp_09_gates.py
+          explore_r2_position_along_the_loop.py
+          explore_r4_cyclic_convention.py
+          explore_r4_loop_depth_profile.py
+          explore_r4_qsweep.py
       prime_growth_dynamics/
         README.md
         SYNTHESIS.md

@@ -1,0 +1,202 @@
+{
+ "script": "exp_09_gates.py",
+ "generated": "20260908_132250",
+ "seed": 20260913,
+ "depths": [
+  23,
+  47,
+  97,
+  199,
+  401
+ ],
+ "G": 40,
+ "moduli": [
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  15,
+  16,
+  17,
+  19,
+  20,
+  21,
+  23,
+  24,
+  25,
+  27,
+  28,
+  29
+ ],
+ "a": 1.2998,
+ "loop_heldout_rms": 0.03043030774440292,
+ "exact_mass": {
+  "23": 1.0000000000000138,
+  "47": 0.9999598562606832,
+  "97": 0.999414897805037,
+  "199": 0.9968314434816766,
+  "401": 0.9920508401864875
+ },
+ "all_pass": true,
+ "gates": {
+  "G1": {
+   "claim": "derived gap distribution reproduces the enumerated loop (k=9) exactly",
+   "value": {
+    "max_abs_diff": 4.596740489645138e-15,
+    "captured_mass": 1.0000000000000138
+   },
+   "status": "PASS"
+  },
+  "G2": {
+   "claim": "derived delta_q matches the enumerated loop at y=23 within 5e-3 (hybrid: exact + measured tail)",
+   "value": {
+    "3": {
+     "derived": 0.294502,
+     "enumerated": 0.294502,
+     "diff": -0.0
+    },
+    "5": {
+     "derived": 0.620168,
+     "enumerated": 0.620168,
+     "diff": -0.0
+    },
+    "7": {
+     "derived": 0.85582,
+     "enumerated": 0.85582,
+     "diff": -0.0
+    },
+    "9": {
+     "derived": 0.934743,
+     "enumerated": 0.934743,
+     "diff": -0.0
+    },
+    "11": {
+     "derived": 0.975719,
+     "enumerated": 0.975719,
+     "diff": -0.0
+    },
+    "13": {
+     "derived": 0.997474,
+     "enumerated": 0.997474,
+     "diff": -0.0
+    }
+   },
+   "status": "PASS"
+  },
+  "G3": {
+   "claim": "truncation controlled: exact mass > 0.97 at every depth, remainder measured",
+   "value": {
+    "23": {
+     "exact_mass": 1.0,
+     "tail_mass": 0,
+     "gbar": 6.113
+    },
+    "47": {
+     "exact_mass": 0.99996,
+     "tail_mass": 3.5e-05,
+     "gbar": 7.21
+    },
+    "97": {
+     "exact_mass": 0.999415,
+     "tail_mass": 0.000592,
+     "gbar": 8.311
+    },
+    "199": {
+     "exact_mass": 0.996831,
+     "tail_mass": 0.003207,
+     "gbar": 9.625
+    },
+    "401": {
+     "exact_mass": 0.992051,
+     "tail_mass": 0.007916,
+     "gbar": 10.771
+    }
+   },
+   "status": "PASS"
+  },
+  "G4": {
+   "claim": "F_c and a load from the sealed exp_07 gate file, never refitted",
+   "value": {
+    "a": 1.2998,
+    "loop_heldout_rms": 0.03043030774440292
+   },
+   "status": "PASS"
+  },
+  "G5": {
+   "claim": "delta_2q == delta_q exactly for odd q (42 cases)",
+   "value": "42/42",
+   "status": "PASS"
+  },
+  "G6": {
+   "claim": "x-range recorded, including cells below the x~0.085 extrapolation wall",
+   "value": {
+    "n_cells": 105,
+    "x_min": 0.1857,
+    "x_max": 4.5805,
+    "n_below_extrapolation_wall": 0,
+    "note": "see journals/2026-09-08_note_F_below_x_0085_is_extrapolation.md"
+   },
+   "status": "PASS"
+  },
+  "G7": {
+   "claim": "POWER on the ACTUAL grid: if the omega effect is real at its reported size, R2 resolves at >=3 sigma",
+   "value": {
+    "n_cells": 105,
+    "assumed_correlation": 0.6,
+    "median_t": 7.710073249158711,
+    "fraction_reaching_3sigma": 1.0,
+    "note": "simulates the actual t-test on the actual omega vector, not an i.i.d. abstraction"
+   },
+   "status": "PASS"
+  },
+  "G8": {
+   "claim": "all thresholds fixed here, before any residual is formed",
+   "value": {
+    "a": 1.2998,
+    "form": "tanh(a*phi(q)/gbar)",
+    "gbar": "1/mertens_product (exact, not the asymptotic e^gamma log y)",
+    "R1": "the residual is REAL STRUCTURE, not sampling noise: CONFIRM if rms(exact delta - F_c) >= 0.60 * the loop's held-out rms 0.03043 = 0.01826; KILL if <= 0.30 * = 0.00913, which would mean the residual was mostly our sampling and F is near-exact",
+    "R2": "the omega(q) correlation on EXACT values, >=3 sigma, sign registered positive",
+    "R3": "truncation control: the residual changes by < 20% between G=36 and G=40",
+    "depths": [
+     23,
+     47,
+     97,
+     199,
+     401
+    ],
+    "moduli": [
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     15,
+     16,
+     17,
+     19,
+     20,
+     21,
+     23,
+     24,
+     25,
+     27,
+     28,
+     29
+    ],
+    "G": 40,
+    "seed": 20260913
+   },
+   "status": "PASS"
+  }
+ }
+}

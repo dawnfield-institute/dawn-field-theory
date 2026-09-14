@@ -1,0 +1,346 @@
+{
+ "script": "exp_06_gates.py",
+ "generated": "20260907_190634",
+ "seed": 20260910,
+ "decades": [
+  7,
+  8,
+  9
+ ],
+ "pool": [
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  15,
+  16,
+  17,
+  19,
+  20,
+  21,
+  23,
+  24,
+  25,
+  27,
+  28,
+  29,
+  31,
+  32,
+  33,
+  35,
+  36,
+  37,
+  39,
+  40,
+  41,
+  43,
+  44,
+  45,
+  47,
+  48,
+  49,
+  51,
+  52,
+  53,
+  55,
+  56,
+  57,
+  59,
+  60
+ ],
+ "exp05_source": "exp_05_collapse_20260907_185245.json",
+ "exp05_heldout_rms": 0.03459265462394738,
+ "decade_gate_data": {
+  "7": {
+   "N": 10000000,
+   "y": 4473,
+   "n": 606028,
+   "primepi_expected": 606028,
+   "count_matches": true,
+   "transitions": 606027,
+   "carry_exact": true,
+   "density": 0.0606028,
+   "y_eff": 10429,
+   "mertens_at_y_eff": 0.06060506661570764,
+   "density_vs_mertens_rel": 3.740117135905304e-05,
+   "mean_gap": 16.50088774776083,
+   "e_gamma_log_y_eff": 16.47909766763964,
+   "gbar_rel_err": 0.001322285998946544,
+   "bracket": {
+    "p_lo": 10429,
+    "p_hi": 10433,
+    "mismatch_log": 3.7400471951887226e-05
+   }
+  },
+  "8": {
+   "N": 100000000,
+   "y": 14143,
+   "n": 5317482,
+   "primepi_expected": 5317482,
+   "count_matches": true,
+   "transitions": 5317481,
+   "carry_exact": true,
+   "density": 0.05317482,
+   "y_eff": 38321,
+   "mertens_at_y_eff": 0.053174452848634354,
+   "density_vs_mertens_rel": 6.9046094682287395e-06,
+   "mean_gap": 18.805893466117986,
+   "e_gamma_log_y_eff": 18.796998958377134,
+   "gbar_rel_err": 0.0004731876487596339,
+   "bracket": {
+    "p_lo": 38317,
+    "p_hi": 38321,
+    "mismatch_log": 6.904633311322073e-06
+   }
+  },
+  "9": {
+   "N": 1000000000,
+   "y": 44722,
+   "n": 47374753,
+   "primepi_expected": 47374753,
+   "count_matches": true,
+   "transitions": 47374752,
+   "carry_exact": true,
+   "density": 0.047374753,
+   "y_eff": 139891,
+   "mertens_at_y_eff": 0.04737462220652996,
+   "density_vs_mertens_rel": 2.7608264266968416e-06,
+   "mean_gap": 21.10828947224274,
+   "e_gamma_log_y_eff": 21.10324818390432,
+   "gbar_rel_err": 0.00023888684312888724,
+   "bracket": {
+    "p_lo": 139883,
+    "p_hi": 139891,
+    "mismatch_log": 2.7608302453074884e-06
+   }
+  }
+ },
+ "domain": {
+  "7": {
+   "x_range": [
+    0.1214,
+    3.5196
+   ],
+   "F_domain": [
+    0.2492,
+    5.3815
+   ],
+   "n_inside": 39,
+   "outside": [
+    3,
+    4,
+    5,
+    8,
+    12
+   ]
+  },
+  "8": {
+   "x_range": [
+    0.1064,
+    3.0856
+   ],
+   "F_domain": [
+    0.2492,
+    5.3815
+   ],
+   "n_inside": 39,
+   "outside": [
+    3,
+    4,
+    5,
+    8,
+    12
+   ]
+  },
+  "9": {
+   "x_range": [
+    0.0948,
+    2.7484
+   ],
+   "F_domain": [
+    0.2492,
+    5.3815
+   ],
+   "n_inside": 39,
+   "outside": [
+    3,
+    4,
+    5,
+    8,
+    12
+   ]
+  }
+ },
+ "all_pass": true,
+ "gates": {
+  "G1": {
+   "claim": "F loads from the sealed exp_05 result (exp_05_collapse_20260907_185245.json) and is non-degenerate",
+   "value": {
+    "bins": 15,
+    "x_range": [
+     0.2492,
+     5.3815
+    ],
+    "F_range": 0.7023,
+    "monotone": true,
+    "exp05_heldout_rms": 0.03459265462394738
+   },
+   "status": "PASS"
+  },
+  "G2": {
+   "claim": "the read at u=2 IS the primes (count == primepi difference)",
+   "value": {
+    "7": {
+     "n": 606028,
+     "expected": 606028
+    },
+    "8": {
+     "n": 5317482,
+     "expected": 5317482
+    },
+    "9": {
+     "n": 47374753,
+     "expected": 47374753
+    }
+   },
+   "status": "PASS"
+  },
+  "G3": {
+   "claim": "chunk carry exact: transitions == n - 1 at every decade",
+   "value": {
+    "7": 606027,
+    "8": 5317481,
+    "9": 47374752
+   },
+   "status": "PASS"
+  },
+  "G5": {
+   "claim": "y_eff solver consistent: mertens_product(y_eff) reproduces the measured density < 1e-3",
+   "value": {
+    "7": {
+     "y_eff": 10429,
+     "rel": 3.74e-05
+    },
+    "8": {
+     "y_eff": 38321,
+     "rel": 6.9e-06
+    },
+    "9": {
+     "y_eff": 139891,
+     "rel": 2.76e-06
+    }
+   },
+   "status": "PASS"
+  },
+  "G7": {
+   "claim": "gbar(y_eff) is the measured mean gap within 2% at every decade",
+   "value": {
+    "7": {
+     "mean_gap": 16.5009,
+     "gbar": 16.4791,
+     "rel": 0.00132
+    },
+    "8": {
+     "mean_gap": 18.8059,
+     "gbar": 18.797,
+     "rel": 0.00047
+    },
+    "9": {
+     "mean_gap": 21.1083,
+     "gbar": 21.1032,
+     "rel": 0.00024
+    }
+   },
+   "status": "PASS"
+  },
+  "G4": {
+   "claim": "delta_2q == delta_q exactly for odd q (42 cases)",
+   "value": "42/42",
+   "status": "PASS"
+  },
+  "G6": {
+   "claim": "F's domain covers >=20 moduli per decade (those outside are recorded, never scored)",
+   "value": {
+    "7": {
+     "x_range": [
+      0.1214,
+      3.5196
+     ],
+     "F_domain": [
+      0.2492,
+      5.3815
+     ],
+     "n_inside": 39,
+     "outside": [
+      3,
+      4,
+      5,
+      8,
+      12
+     ]
+    },
+    "8": {
+     "x_range": [
+      0.1064,
+      3.0856
+     ],
+     "F_domain": [
+      0.2492,
+      5.3815
+     ],
+     "n_inside": 39,
+     "outside": [
+      3,
+      4,
+      5,
+      8,
+      12
+     ]
+    },
+    "9": {
+     "x_range": [
+      0.0948,
+      2.7484
+     ],
+     "F_domain": [
+      0.2492,
+      5.3815
+     ],
+     "n_inside": 39,
+     "outside": [
+      3,
+      4,
+      5,
+      8,
+      12
+     ]
+    }
+   },
+   "status": "PASS"
+  },
+  "G8": {
+   "claim": "the comparison is fully specified here, before any delta_q at any decade is formed",
+   "value": {
+    "prediction": "delta_q(primes) = F(phi(q)/gbar(y_eff)), F from the sealed exp_05 bins, y_eff from density",
+    "free_parameters": 0,
+    "R1": "CONFIRM if rms(measured - predicted) <= 2.0 * exp_05 heldout rms; KILL if > 3.0 *",
+    "exp05_heldout_rms": 0.03459265462394738,
+    "R2": "positive control: gbar(y) in place of gbar(y_eff) must do WORSE, >=3 sigma paired bootstrap",
+    "R3": "the omega(q) residual persists at the primes with the SAME registered sign: positive, >=3 sigma",
+    "pool": "q in [3,60] excluding 2*odd; moduli outside F's domain or saturated are recorded, never scored",
+    "seed": 20260910,
+    "decades": [
+     7,
+     8,
+     9
+    ]
+   },
+   "status": "PASS"
+  }
+ }
+}
