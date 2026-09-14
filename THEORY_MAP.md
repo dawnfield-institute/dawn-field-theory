@@ -190,7 +190,7 @@ Real programs that do not continue the M14 -> M15 chain.
 
 | | Thesis | Score | Key results |
 |---|---|---|---|
-| **R** [Radiation as ledger severance](experiments/sidecars/milestone-r/) | Radiation is PAC ledger severance | **60/112** | Geiger-Nuttall shown to be a universality theorem; graph Green's function reproduces the hydrogen spectrum to 0.68%; energy scale fixed by alpha(d)^2 m_mediator |
+| **R** [Radiation as ledger severance](experiments/sidecars/milestone-r/) | Radiation is PAC ledger severance | **62/116** | Geiger-Nuttall shown to be a universality theorem; graph Green's function reproduces the hydrogen spectrum to 0.68%; energy scale fixed by alpha(d)^2 m_mediator; **exp_28 (2026-09-05, 0/4): the all-edges overstress trigger, run dynamically on reality-engine's v4 substrate, fires at the extrema of the entropy field — the collapse cores — and removes structure at the onset (T2 −2.6 σ at proxy τ = 20; a null at n = 4000 where half is removed; never above a random subset); C4.1 option 3 closed** |
 | **Midnight** [Observational contact](experiments/sidecars/midnight/) | Take DFT to observational data | **22/32** | Phase-rate primitive; PAC/SEC separation in SDSS; source of the invariant-registration rule |
 
 ---

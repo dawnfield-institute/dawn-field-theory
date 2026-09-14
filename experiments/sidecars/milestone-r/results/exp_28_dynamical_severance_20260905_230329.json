@@ -1,0 +1,190 @@
+{
+ "gates": {
+  "closure_max_le_1e-5": true,
+  "all_finite": true,
+  "at_cap_le_0.02": true
+ },
+ "tests": {
+  "T1": "FAIL",
+  "T2": "FAIL",
+  "T3": "UNINFORMATIVE",
+  "T4": "UNINFORMATIVE"
+ },
+ "kills": {
+  "K1": false,
+  "K2": false
+ },
+ "notes": [],
+ "per_size": {
+  "proxy": {
+   "T1": {
+    "5.0": {
+     "per_seed": [
+      true,
+      true,
+      true
+     ],
+     "ok": false
+    },
+    "10.0": {
+     "per_seed": [
+      true,
+      true,
+      true
+     ],
+     "ok": false
+    },
+    "20.0": {
+     "per_seed": [
+      false,
+      true,
+      false
+     ],
+     "ok": false
+    }
+   },
+   "T2": {
+    "5.0": {
+     "S_perc": [
+      0.11575941430184011,
+      0.10123547838851847,
+      0.2477203127521091
+     ],
+     "B0_perc_matched": [
+      0.09548372013728841,
+      0.17454618625534196,
+      0.21204086876923137
+     ],
+     "seedwise": [
+      true,
+      false,
+      true
+     ],
+     "pooled_std": 0.07090176525508117,
+     "margin": -0.005785189906464677,
+     "ok": false
+    },
+    "10.0": {
+     "S_perc": [
+      0.09212047212047211,
+      0.10592074447247506,
+      0.08748474356338969
+     ],
+     "B0_perc_matched": [
+      0.07904145852879199,
+      0.19157816966428703,
+      0.08457227268515824
+     ],
+     "seedwise": [
+      true,
+      false,
+      true
+     ],
+     "pooled_std": 0.045366274985296294,
+     "margin": -0.023221980240633475,
+     "ok": false
+    },
+    "20.0": {
+     "S_perc": [
+      0.09050288402723464,
+      0.08435907042855997,
+      0.09092380076937293
+     ],
+     "B0_perc_matched": [
+      0.12298506456311498,
+      0.11323799553165034,
+      0.09935039187795211
+     ],
+     "seedwise": [
+      false,
+      false,
+      false
+     ],
+     "pooled_std": 0.008791510790566637,
+     "margin": -0.02326256558251663,
+     "ok": false
+    }
+   },
+   "vacuous": {
+    "5.0": {
+     "vacuous": true,
+     "sev_frac": [
+      0.744,
+      0.763,
+      0.831
+     ],
+     "n_ret_t10": [
+      292,
+      286,
+      181
+     ]
+    },
+    "10.0": {
+     "vacuous": true,
+     "sev_frac": [
+      0.416,
+      0.502,
+      0.396
+     ],
+     "n_ret_t10": [
+      584,
+      498,
+      604
+     ]
+    },
+    "20.0": {
+     "vacuous": false,
+     "sev_frac": [
+      0.061,
+      0.1,
+      0.059
+     ],
+     "n_ret_t10": [
+      939,
+      900,
+      941
+     ]
+    }
+   },
+   "T1_pass": false,
+   "T2_pass": false,
+   "tau_star": 10.0,
+   "T3": {
+    "tau_star": 10.0,
+    "S_perc": [],
+    "other_perc": [],
+    "seedwise": [],
+    "pooled_std": NaN,
+    "margin": NaN,
+    "verdict": "UNINFORMATIVE"
+   },
+   "T4": {
+    "tau_star": 10.0,
+    "S_perc": [
+     0.09212047212047211,
+     0.10592074447247506,
+     0.08748474356338969
+    ],
+    "other_perc": [
+     0.09048867627294324,
+     0.10623102327752303,
+     0.0991939048725656
+    ],
+    "seedwise": [
+     true,
+     false,
+     false
+    ],
+    "pooled_std": 0.008779460667726495,
+    "margin": -0.003462548088898329,
+    "verdict": "UNINFORMATIVE"
+   },
+   "K1_fires": false,
+   "K2_fires": false
+  }
+ },
+ "scored_size": "proxy",
+ "score": "0/4",
+ "grid_file": "exp_28_dynamical_severance_grid_proxy_20260905_230329.json",
+ "reality_engine_commit": "2c2dd17"
+}
