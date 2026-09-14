@@ -29,7 +29,12 @@ odd-harmonic and Fibonacci — died first, by registered measurement.
 Phase 2 asks the only question that decides whether this is physics:
 
 - **(a) ℤ₂ twist classification** across cycle structures, now that the parity mechanism
-  is identified.
+  is identified. **Started 2026-09-07 as M18 Block F** (exp_20): on a cycle the twist is the
+  signed graph's switching class, and everything on the pure cycle is a theorem — the twist
+  selects the odd exponents, K3's universal det H = +1 is the balanced class only, and
+  C₆ = −I becomes H = I under the twist ([`formal/theorems/`](formal/theorems/README.md#the-signed-cycle-the-twist-selects-the-odd-exponents-and-doubles-the-conductor)).
+  The live question moved to the first class where nothing forces the answer (signed
+  unicyclic graphs, `experiments/milestones/milestone18/journals/2026-09-07_blockF_registration.md`).
 - **(b) The field-equation hunt** — does cascade ledger density *source* holonomy, and is
   the coupling φ-structured? Candidate substrate: the ADE-coupled cascade.
 
