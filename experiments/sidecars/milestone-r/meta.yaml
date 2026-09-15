@@ -3,7 +3,7 @@ era: era4-milestone-stack-2026q2
 id: milestone-r
 title: 'Milestone R: Radiation as Ledger Severance'
 description: 'Sidecar milestone testing radiation as PAC ledger severance: when a
-  system emits, the conservation ledger splits into two independent branches. 31 experiments,
+  system emits, the conservation ledger splits into two independent branches. 32 experiments (exp_32 unscored),
   71/128 (55%). Key results: the Geiger-Nuttall law shown to be a universality theorem
   for any d-simultaneous-threshold barrier (exp_16); the stress barrier resolving
   the GN sign problem, with PAC = barrier height and SEC = kinetic energy (exp_15);

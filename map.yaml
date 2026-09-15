@@ -72,6 +72,7 @@ dawn-field-theory/
     20260907_173000_prime_gap_ledger_exp3.md
     20260914_171549_mr_exp30_ledger_r1b.md
     20260914_195725_mr_exp31_paired_ledger.md
+    20260915_120804_mr_exp32_edge.md
     README.md
   .claude/
     skills/
@@ -3583,6 +3584,8 @@ dawn-field-theory/
           2026-09-14_exp30_registration.md
           2026-09-14_exp31_outcomes.md
           2026-09-14_exp31_registration.md
+          2026-09-15_exp32_outcomes.md
+          2026-09-15_exp32_registration.md
         results/
           exp_01_ledger_severance_mechanics_20260527_170019.json
           exp_02_alpha_decay_discrete_severance_20260527_170031.json
@@ -3635,6 +3638,9 @@ dawn-field-theory/
           exp_30_ledger_r1b_grid_full_20260914_171516.json
           exp_31_paired_ledger_20260914_195725.json
           exp_31_paired_ledger_grid_full_20260914_195725.json
+          exp_32_edge_grid_double_20260915_120556.json
+          exp_32_edge_grid_fine_20260915_111854.json
+          exp_32_edge_grid_g_20260915_113317.json
         scripts/
           exp_01_ledger_severance_mechanics.py
           exp_02_alpha_decay_discrete_severance.py
@@ -3667,6 +3673,7 @@ dawn-field-theory/
           exp_29_pac_ledger.py
           exp_30_ledger_r1b.py
           exp_31_paired_ledger.py
+          exp_32_edge.py
     spikes/
       RECURSIVE_FRACTAL_ARITHMETIC.md
       constant_number_fields/
