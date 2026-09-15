@@ -130,7 +130,8 @@ def score(grids):
     for s in SEEDS:
         same = brackets[s] is not None and medbr[s] is not None and abs(brackets[s] - medbr[s]) <= 0.05 + 1e-9
         if brackets[s] is None: t2.append(False); continue
-        i = FINE.index(brackets[s] - 0.025); frac_step = 0.5 * (res["fine"][s]["frac"][i] + res["fine"][s]["frac"][i + 1])
+        i = min(range(len(FINE) - 1), key=lambda j: abs(FINE[j] - (brackets[s] - 0.025)))   # the bracket's lower grid point (float-safe; a 1.2000000000000002 must not crash the seal)
+        frac_step = 0.5 * (res["fine"][s]["frac"][i] + res["fine"][s]["frac"][i + 1])
         t2.append(bool(same and T2_FRAC_BAND[0] <= frac_step <= T2_FRAC_BAND[1]))
     res["T2"] = dict(median_bracket=medbr, per_seed=t2, ok=bool(all(t2)))
     # T3: the gravity arms — sign at 1.00 negative and at 1.25 positive, 3/3 for each g
