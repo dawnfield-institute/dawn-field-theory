@@ -3583,6 +3583,7 @@ dawn-field-theory/
           2026-09-14_exp30_registration.md
           2026-09-14_exp31_outcomes.md
           2026-09-14_exp31_registration.md
+          2026-09-15_exp32_registration.md
         results/
           exp_01_ledger_severance_mechanics_20260527_170019.json
           exp_02_alpha_decay_discrete_severance_20260527_170031.json
@@ -3667,6 +3668,7 @@ dawn-field-theory/
           exp_29_pac_ledger.py
           exp_30_ledger_r1b.py
           exp_31_paired_ledger.py
+          exp_32_edge.py
     spikes/
       RECURSIVE_FRACTAL_ARITHMETIC.md
       constant_number_fields/
