@@ -77,7 +77,7 @@ denominator of the reflection polynomial (three cases carry the odd-prime half).
 
 ### Milestone R — the trigger is a core detector; the energy scale is still in the wrong slot
 
-71/128 across 31 experiments. **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
+71/128 across 32 experiments (exp_32 unscored). **exp_28 (2026-09-05, 0/4, sealed `bf833113`)** ran the
 derived severance trigger (exp_15's all-edges overstress) for the first time as a
 *dynamical* step, on reality-engine's v4 particle substrate: `min_j |S_i − S_j| > τ` fires
 only at extrema of the field, and on a structured field the extrema are the collapse cores
@@ -126,6 +126,17 @@ on three seeds) and failed as registered — a design error of the registration,
 **Registrable next: R2** — severance on the ledgered substrate at n = 4000, **κ = 0.5** (bound at
 KE/|U| ≈ ½, gravity's web better connected, three steps below the edge), fresh seeds, paired, the
 connectivity statistic and the box-to-range condition carried. The adder question is closed, answered.
+
+**exp_32 (2026-09-15, UNSCORED, sealed `091ddab2`)** — the edge as a number. The sign change of the pressure's
+net work between κ = 1 and 1.25 was put in the ledger's arithmetic (W_p = T − ΔE_SEC; the edge is where the
+compression ratio E_SEC(end)/T crosses 1) and a scaling argument said it cannot depend on the couplings — the
+pair coupling cancels **exactly** (bit-identical runs at half Ξ/φ; reality-engine spec R4′). Registered on
+fresh seeds: a fine sweep, gravity arms, a size arm. The sealed identity gate was set below the integrator's
+documented truncation and fired on 29/36 runs: unscored, my error. Unofficially: a single sign change on
+every seed at κ_c ≈ 1.17 (seed spread ~0.1); gravity leaves it in place 12/12 across g 0.75–3.0; one seed's
+edge is a step higher at n = 8000. **Registrable next: exp_32b** with the gate at the documented floor and
+κ_c reported with its spread; **R2's form is open** — the local-edge severance trigger's design pass showed
+whole-particle severance cascades and amputates the remnant (reality-engine POC-13).
 
 exp_24 replaced `E_Planck · φ^(−d)` with **`α(d)² · m_mediator`** (EM scale at 11.4 ppm of
 the Rydberg). The 2026-08-27 propagation showed it fixes **two** of its six named failures,
