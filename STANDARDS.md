@@ -180,6 +180,26 @@ Standard practice since 2026-06-11. For any experiment intended as evidence:
    in `formal/theorems/` in the commit that proves it, never left inside the journal that
    derived it. Mixed phases are split before sealing. The scorecard counts sealed tests;
    `formal/` counts theorems; neither is quoted as the other.
+8. **Map before bit.** A pre-registration returns *one bit* at high cost, and it is the right
+   instrument only when the room is already mapped well enough to aim. Reaching for it while still
+   learning the system is not rigour — it is navigating the dark by throwing knives. **State the
+   mode.** A registration names what prior exploration established and why one bit is worth its
+   cost; if that cannot be filled, the round is exploration and gets a map, not a threshold.
+   *The trigger to watch for is a recent burn:* a milestone just embarrassed by a bad measurement
+   is exactly when apparatus gets over-built, because caution feels like the lesson.
+9. **A kill names the next move, never a halt.** A kill sentence binds a **thesis** — a claim about
+   nature — and says what the programme does instead when it fires. A sentence ending in "stop
+   trying" is a gate, not a commitment device. An *instrument* never gets a kill at all; it gets a
+   **domain of validity**, because the question for a tool is not whether it works but where.
+10. **Measure what the instrument resolves before setting any bar on it.** A threshold below the
+    instrument's floor invalidates the round rather than the claim, and a threshold with no prior is
+    a coin flip wearing a number. Run the existing runs through a resolution probe and put the
+    measured floors in §0 beside the thresholds. **Measure per arm, not pooled** — a tail that
+    belongs to one arm disappears into a pooled summary. The same rule applies one level up: a test's
+    own false-positive rate and power are measurable before sealing, and belong in the registration.
+11. **Drive every abort path before sealing.** The paths that declare a run void are the ones a seal
+    rests on, and a single happy-path run never reaches them. A void check that crashes instead of
+    reporting, or a kill branch that was never executed, is a kill that will not fire when needed.
 
 ### 2.8 Recursive, tautological, circular — three things that look alike
 
